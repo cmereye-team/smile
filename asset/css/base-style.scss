@@ -1,0 +1,205 @@
+// common
+body {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 15px;
+  ul {
+    list-style-type: none;
+  }
+  .gradient_font {
+    display: inline-block;
+    background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient_title_bg {
+    display: inline-block;
+    background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
+    color: #ffffff;
+  }
+  h2 {  
+    text-align: center;
+    border-left: 2px solid #dfdfdf;
+    border-right: 2px solid #dfdfdf; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 0;
+      border-top: 2px solid #dfdfdf;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0;
+      border-top: 2px solid #dfdfdf;
+    }
+  }
+}  
+      
+// pc端
+@media (min-width: 768px) {
+body {font-family: "Noto Sans HK", sans-serif !important;min-width: 1200px;}
+caption {font-family: "Noto Sans HK", sans-serif !important;}
+h3 {font-family: "Noto Sans HK", sans-serif !important;}
+div {font-family: "Noto Sans HK", sans-serif !important;}
+a {font-family: "Noto Sans HK", sans-serif !important;}
+td {font-family: "Noto Sans HK", sans-serif !important;}
+ 
+span {font-family: "Noto Sans HK", sans-serif !important;}
+h2 {font-family: "Noto Sans HK", sans-serif !important;}
+div {font-family: "Noto Sans HK", sans-serif !important;}
+
+.nav-language{margin-left: 26px;}
+.nav-bookingservice{min-width:129px;text-align:center;}
+  .pc_page_container {
+    max-width: 1280px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+  .page_container {
+    max-width: 1280px !important;
+  }
+  .main_banner {
+    .banner {
+      max-width: 1280px;
+      margin: auto;
+      background-position: center;
+    }
+    .section {
+
+    }
+  }
+  .mbShow {
+    display: none !important;
+  }
+  body {
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+    h2 {
+      margin-bottom: 3vw;
+      padding: 0 1vw;
+      border-left: 2px solid #dfdfdf;
+      border-right: 2px solid #dfdfdf;
+      &::before {
+        width: 6vw;
+        height: 0;
+        border-top: 2px solid #dfdfdf;
+        left: -6.1vw;
+      }
+      &::after {
+        width: 6vw;
+        height: 0;
+        border-top: 2px solid #dfdfdf;
+        right: -6.1vw;
+      }
+    }
+
+    h3,
+    .h3 {
+      font-size: 1.2vw;
+      font-weight: 400;
+    }
+
+    .gradient_title_bg {
+      padding: 0.2vw 0.5vw;
+    }
+  }
+}
+
+// mb端
+
+@media (max-width: 768px) {
+  body {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  caption {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  h3 {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  div {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+
+  a {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  td {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  p {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  span {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  h2 {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  div {
+    font-family: "Noto Sans HK", sans-serif !important;
+  }
+  .page_container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  // 立即预约按钮
+  .btn-yuyue {
+    border: 1px solid transparent;
+    border-radius: 99px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to right, #fff, #fff),
+      linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
+    padding: 2.5vw 5vw;
+    span {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 71% */
+
+      text-align: center;
+      letter-spacing: 0.1em;
+
+      background: linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  .pcShow {
+    display: none !important;
+  }
+  body {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 30px;
+      padding: 0 9px;
+      border-left: 1px solid #dfdfdf;
+      border-right: 1px solid #dfdfdf;
+      &::before {
+        width: 15vw;
+        height: 0;
+        border-top: 1px solid #dfdfdf;
+        left: -15vw;
+      }
+      &::after {
+        width: 15vw;
+        height: 0;
+        border-top: 1px solid #dfdfdf;
+        right: -15vw;
+      }
+    }
+  }
+}
