@@ -316,11 +316,11 @@ export default {
   methods: {
     //判断是否打开
     judgeActive(data) {
-      console.log(data);
+      // console.log(data);
       return this.activeNames.indexOf(data);
     },
     handleChange(val) {
-      console.log(val);
+      // console.log(val);
     },
     exchangeTab(index) {
       // 点击tab切换

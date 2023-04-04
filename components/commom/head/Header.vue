@@ -34,10 +34,8 @@
                     <nuxt-link to="/group-profile"> 集團及中心簡介</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="1-2">
-                    <nuxt-link to="/our-medical-team"
-                      >醫生團隊</nuxt-link
-                    ></el-menu-item
-                  >
+                    <nuxt-link to="/our-medical-team">醫生團隊</nuxt-link>
+                  </el-menu-item>
                   <el-menu-item index="1-3">
                     <nuxt-link to="/medical-equipment">中心設備</nuxt-link>
                   </el-menu-item>
@@ -178,8 +176,8 @@
         <div class="flex items-center nav-language group relative">
           <img src="../../../asset/image/common/Vector.png" alt="" />
           <ul class="nav-language-box absolute top-10   hidden group-hover:block  "   >
-<li><a href="###">繁</a> </li>
-<li><a href="###">简</a> </li>
+            <li><a href="###">繁</a> </li>
+            <li><a href="###">简</a> </li>
           </ul>
         </div>
 
@@ -494,7 +492,7 @@ menu.addEventListener("mouseleave", () => {
 </script>
 <style lang="scss">
 .ball { position: fixed; pointer-events: none; z-index:9999; width: 20px; height: 20px; background-color: #f5f7fa; border-radius: 50%; mix-blend-mode: difference; left: 0;top: 0;}
- .nav {position: relative;}
+ .nav {position: relative; z-index: 99;}
 .menu-line {
   height: 1px;
   width: 50px;
@@ -768,6 +766,9 @@ $active_gradient: #4570b6;
 }
 // mb
 @media (max-width: 768px) {
+  .ball{
+    display: none;
+  }
   .el-menu-vertical-demo .el-menu-item a {
     display: block !important;
   }

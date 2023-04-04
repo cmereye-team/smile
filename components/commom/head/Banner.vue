@@ -35,18 +35,18 @@ export default {
 
       h3 {
         font-family: 'Noto Sans HK';
-font-style: normal;
-font-weight: 500;
-font-size: 38px;
- 
-/* identical to box height, or 87% */
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.15em;
-
-color: #4570B6;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 38px;
+              
+        /* identical to box height, or 87% */
+              
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.15em;
+              
+        color: #4570B6;
       }
       p {
         font-family: "Noto Sans JP";

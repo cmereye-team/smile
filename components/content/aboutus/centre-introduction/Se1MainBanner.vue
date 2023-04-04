@@ -74,7 +74,7 @@ body .gradient_font {
     color: #4570b6;
   }
   .section {
-    height: 76vw;
+    height: 350px;
   }
   .des_box {
     padding-left: 28px;

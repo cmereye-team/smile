@@ -327,7 +327,7 @@ h2 {
       height: 528px;
       position: relative;
       background: #fff;
-      margin-bottom: 136px;
+      margin-bottom: 70px;
       .top-equip {
         z-index: 10;
         display: flex;

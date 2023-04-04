@@ -1,21 +1,20 @@
 <template>
   <div class="Se2ComIntro">
     <div class="company page_container">
-        <div class='company_tit'>
-          <p class="text_blue">香港希瑪國際眼科醫療集團</p>
-          <p class="text_blue2">（簡稱：希瑪眼科，股份代碼：3309.HK）</p>
-
-        </div>
+      <div class='company_tit'>
+        <p class="text_blue">香港希瑪國際眼科醫療集團</p>
+        <p class="text_blue2">（簡稱：希瑪眼科，股份代碼：3309.HK）</p>
+      </div>
       <p>
-        由眼科醫生林順潮教授於2012年創辦，總部設於香港，旗下擁有15間醫療機構<br/>包括香港中環眼科中心
-        旺角中心，和沙田、銅鑼灣、觀塘、元朗和荃灣診所<br />還有內地深圳、北京、上海、昆明，惠州和珠海的分院<br />
-        集團員工人數超過900人，是香港首間大型連鎖上市眼科集團
+        由眼科醫生林順潮教授於2012年創辦<br class="mbShow"/><span class="pcShow">，</span>總部設於香港，旗下擁有15間醫療機構<br/>包括香港中環眼科中心<br class="mbShow"/>
+        旺角中心，和沙田、銅鑼灣、觀塘、元朗和<br class="mbShow"/>荃灣診所<br class="pcShow" />還有內地深圳、北京<br class="mbShow"/><span class="pcShow">、</span>上海、昆明，惠州和珠海的分院<br />
+        集團員工人數超過900人<span class="pcShow">，</span><br class="mbShow"/>是香港首間大型連鎖上市眼科集團
       </p>
       <p class="mag_top">
-        <span style="margin-bottom:10px;">希瑪眼科中心</span> <br />
-        擴展至全港擁有10間眼科診所、4間微笑矯視中心、 2間視光中心<br />
-        以及2間嘉賓眼科專科及激光矯視手術中心（希瑪全資附屬公司）<br />
-        眼科診所及中心遍佈港、九、新界，交通便利，環境舒適
+        <span style="margin-bottom:10px;">希瑪眼科中心</span><br />
+        擴展至全港擁有10間眼科診所、<br class="mbShow"/>4間微笑矯視中心、 2間視光中心<br />
+        以及2間嘉賓眼科專科及激光矯視手術中心<br class="mbShow"/>（希瑪全資附屬公司）<br class="pcShow" />
+        眼科診所及<br class="mbShow"/>中心遍佈港、九、新界<br class="mbShow"/><span class="pcShow">，</span>交通便利，環境舒適
       </p>
       <a class="more_lin">了解更多</a>
     </div>
@@ -65,7 +64,6 @@
                 <i>Pioneering <em>R</em>esearch</i>
               </p>
             </li>
-
             <div class="xima">
               <span>希瑪</span>
               <p>
@@ -75,9 +73,9 @@
           </ul>
           <div class="award_text">
             <h4>憑藉醫療技術和服務聲譽，我們榮獲：</h4>
-             <p>2020年港股「最佳價值醫藥及醫療股公司」大獎</p>
+            <p>2020年港股「最佳價值醫藥及醫療股公司」大獎</p>
             <p>2019年大健康產業創新獎</p>
-          <p>2018年香港上市公開招股認購超過1500倍 (全港十大之一)</p>
+            <p>2018年香港上市公開招股認購超過1500倍 (全港十大之一)</p>
           </div>
         </div>
       </div>
@@ -100,23 +98,22 @@
       </div>
     </div>
 
-     <div class="md:flex mbShow page_container img_box">
-        <img
-          class="flex-1"
-          src="../../../../asset/image/about-us/centre-introduction/award1.jpg"
-          alt
-        />
-        <img
-          class="flex-1"
-          src="../../../../asset/image/about-us/centre-introduction/award2.jpg"
-          alt
-        />
-        <img
-          class="flex-1"
-          src="../../../../asset/image/about-us/centre-introduction/award3.jpg"
-          alt
-        />
-      </div>
+    <div class="md:flex mbShow page_container img_box">
+       <img
+         class="flex-1"
+         src="../../../../asset/image/about-us/centre-introduction/award1.jpg"
+         alt
+       />
+       <img
+         class="flex-1"
+         src="../../../../asset/image/about-us/centre-introduction/award2.jpg"
+         alt
+       />
+       <img
+         class="flex-1"
+         src="../../../../asset/image/about-us/centre-introduction/award3.jpg"
+         alt
+       />
     </div>
   </div>
 </template>
@@ -230,8 +227,14 @@ export default {
 }
 // pc
 @media only screen and (min-width: 768px) {
-  .company_tit{    transform: translateY(-10px);display: inline-block;background: #fff;}
-    .company_tit p{line-height:1.5 !important; }
+.company_tit{
+  transform: translateY(-10px);
+  display: inline-block;
+  background: #fff;
+}
+.company_tit p{
+  line-height:1.5 !important; 
+}
 .Se2ComIntro .section_text .xima>span{font-size:40px !important;}
 
   .more_lin {
@@ -516,7 +519,7 @@ export default {
           }
         }
         .award_text {
-
+          
         }
       }
     }
@@ -525,6 +528,9 @@ export default {
 
 // mb
 @media only screen and (max-width: 768px) {
+  .company_tit{
+    transform: translateY(-12px);
+  }
   .Se2ComIntro{
     position: relative;
   }
@@ -536,8 +542,11 @@ export default {
   }
   .more_lin {
     position: absolute;
-    width: 110px;
-    height: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
     background: #4570b6;
     border-radius: 0px;
     color: #d9eaed;
@@ -546,10 +555,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 0;
-    left: 100px;
-    text-align: center;
-    bottom: -15px;
+    bottom: -20px;
     font-size: 14px;
     padding: 5px;
     white-space: pre;
@@ -559,8 +565,8 @@ export default {
     // position: absolute;
     background: url(https://static.cmereye.com/imgs/2023/03/a76a352cd7da7d4e.png) no-repeat;
     background-size: 93% 100%;
-    width: 239px;
-    height: 149px;
+    width: 260px;
+    height: 139px;
     margin-left: 37px;
     margin-top: 37px;
     /* right: 364px; */
@@ -568,7 +574,7 @@ export default {
     right: 0;
     p {
       text-align: center;
-      padding: 10px 0;
+      padding: 10px 0 0 5px;
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
@@ -581,21 +587,20 @@ export default {
       align-items: center;
       text-align: center;
       letter-spacing: 0.1em;
-
       color: #6d6e71;
     }
   }
   .img_box {
-        display: flex;
+    display: flex;
     flex-direction: column;
     width: 254px;
     position: absolute;
     bottom: -444px;
-        left: 20px;
+    left: 20px;
   }
   .booking {
     p {
-      font-size: 60px !important;
+      font-size: 40px !important;
       font-family: "Baskervville" !important;
     }
     font-family: "Baskervville" !important;
@@ -606,8 +611,9 @@ export default {
     align-items: center;
     letter-spacing: 0.05em;
     color: rgba(174, 213, 231, 0.5);
-    margin-bottom: 70px;
-    margin-left: 48px;
+    // margin-bottom: 70px;
+    // margin-left: 18vw;
+    margin: 50px 0 20px 20vw;
   }
   .box {
     position: relative;
@@ -620,12 +626,10 @@ export default {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 700;
-
       line-height: 33px;
       display: flex;
       align-items: center;
       letter-spacing: 16px;
-
       background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -633,8 +637,8 @@ export default {
       text-fill-color: transparent;
       writing-mode: tb-rl;
       position: absolute;
-      top: 29px;
-      left: 20px;
+      top: 20px;
+      left: 30px;
     }
   }
 
@@ -646,10 +650,10 @@ export default {
     background-position: bottom;
     margin: 70px auto;
     text-align: center;
-    height: 622px;
+    // height: 622px;
     margin: 0 30px;
     margin-bottom: 30px;
-    padding: 0 17px !important;
+    padding: 0 17px 50px !important;
     .mag_top {
       margin-top: 30px;
     }
@@ -671,7 +675,7 @@ export default {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 23px;
       /* or 128% */
       text-align: center;
@@ -680,7 +684,7 @@ export default {
       letter-spacing: 0.12em;
 
       color: #4570b6;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
     span {
       font-family: "Noto Sans HK";
@@ -698,11 +702,11 @@ export default {
     p {
       font-family: "Noto Sans HK";
       font-style: normal;
-      font-weight: 400;
+      // font-weight: 300;
       font-size: 14px;
       line-height: 30px;
       /* or 200% */
-
+      font-weight: 300;
       align-items: center;
       text-align: center;
       letter-spacing: 0.1em;
@@ -716,6 +720,10 @@ export default {
   }
   .award_text {
     padding: 20px 20px 40px 20px;
+    h4{
+      font-weight: 500;
+      font-size: 20px !important;
+    }
   }
   //集团介绍 cmmer 中间部分
   .Se2ComIntro {
@@ -740,8 +748,8 @@ export default {
       }
     }
     .content {
-          margin-left: 4px;
-    margin-right: 14px;
+        margin-left: 4px;
+        margin-right: 14px;
       p {
         font-family: "Noto Sans HK";
         font-style: normal;
@@ -764,17 +772,17 @@ export default {
         margin: 20px 0;
         padding-left: 10px;
         li {
+          margin-top: 30px;
           p {
             font-family: "Noto Sans HK";
             font-style: normal;
             font-weight: 300;
-            font-size: 8.7px;
+            font-size: 6px;
             line-height: 18px;
             /* or 207% */
-
             text-align: justify;
             letter-spacing: 0.1em;
-            padding-left: 21px;
+            padding-left: 10px;
             color: #4570b6;
           }
           span {
@@ -782,15 +790,18 @@ export default {
             font-style: normal;
             font-weight: 700;
             font-size: 30px;
-            line-height: 26px;
             /* or 44% */
             padding: 10px;
             letter-spacing: 0.1em;
-            width: 9vw;
+            width: 15vw;
+            display: inline-block;
+            text-align: end;
           }
         }
       }
       .xima {
+        margin-top: 30px;
+        display: flex;
         span {
           font-family: "Noto Sans HK";
           font-style: normal;
@@ -798,9 +809,11 @@ export default {
           font-size: 30px;
           line-height: 20px;
           /* or 44% */
-          padding: 10px;
+          // padding: 10px;
           letter-spacing: 0.1em;
-          width: 9vw;
+          width: 10vw;
+          margin-left: 5vw;
+          display: inline-block;
         }
         p {
           font-family: "Noto Sans HK";
@@ -809,7 +822,8 @@ export default {
           font-size: 8.7px;
           line-height: 26px;
           /* or 207% */
-          padding-left: 21px;
+          padding-left: 10px;
+          flex: 1;
           text-align: justify;
           letter-spacing: 0.08em;
         }

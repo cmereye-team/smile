@@ -117,11 +117,11 @@ export default {
   methods: {
     //判断是否打开
     judgeActive(data) {
-      console.log(data);
+      // console.log(data);
       return this.activeNames.indexOf(data);
     },
     handleChange(val) {
-      console.log(val);
+      // console.log(val);
     },
     exchangeTab(index) {
       // 点击tab切换
@@ -237,10 +237,11 @@ p {
   display: block;
 }
 
-.memu {
-  margin-top: 180px;
-}
+
 @media screen and (max-width: 768px) {
+  .memu {
+    margin-top: 90px;
+  }
   .mb-width {
     width: 72vw;
   }
@@ -315,6 +316,9 @@ p {
     padding: 0 2vw;
     justify-content: space-between;
     width: 1280px;
+  }
+  .memu {
+    margin-top: 180px;
   }
 }
 </style>

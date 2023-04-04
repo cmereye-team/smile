@@ -2,7 +2,14 @@
   <div class="container">
     <div class="online footer mbShow">
       <div class="foot">
-        <div class="box">
+        <div class="box" v-for="item in footerLists" :key="item.title" @click="handleFoot(item)">
+          <img
+            :src="item.img"
+            alt=""
+          />
+          <p>{{item.title}}</p>
+        </div>
+        <!-- <div class="box">
           <img
             src="https://static.cmereye.com/imgs/2023/03/4f2e7a260618edb4.png"
             alt=""
@@ -29,7 +36,7 @@
             alt=""
           />
           <p>預約服務</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -37,11 +44,49 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      footerLists:[
+        {
+          type: 'fun',
+          link:'',
+          img:'https://static.cmereye.com/imgs/2023/03/4f2e7a260618edb4.png',
+          title: '致電查詢'
+        },
+        {
+          type: 'fun',
+          link:'',
+          img:'https://static.cmereye.com/imgs/2023/03/935a17da94382a86.png',
+          title: '線上對話'
+        },
+        {
+          type: 'href',
+          link:'https://wa.me/85260610511',
+          img:'https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png',
+          title: 'Whatsapp'
+        },
+        {
+          type: 'link',
+          link:'/booking',
+          img:'https://static.cmereye.com/imgs/2023/03/aa60fde6a44f6099.png',
+          title: '預約服務'
+        }
+      ]
+    };
   },
   mounted() {},
   created() {},
-  methods: {},
+  methods: {
+    handleFoot(data){
+      // console.log('点击的foot内容: ---->',data)
+      if(data.type === 'link'){
+        this.$router.push({
+          path: data.link,
+        });
+      }else if(data.type === 'href'){
+        window.open(data.link)
+      }
+    }
+  },
   watch: {},
 };
 </script>

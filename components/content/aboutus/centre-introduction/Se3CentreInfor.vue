@@ -381,8 +381,6 @@ export default {
         }
         .link {
           margin-top: 1.8vw;
-          a {
-          }
         }
         ul {
           padding-left: 1vw;
