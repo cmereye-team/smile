@@ -37,7 +37,7 @@
                 </div> -->
                 <div
                   class="team-description"
-                  v-for="infoitem in doctorItem.doctorInfo"
+                  v-for="infoitem in doctorItem.doctorInfo" :key="infoitem"
                 >
                   <p>{{ infoitem.info }}</p>
                 </div>

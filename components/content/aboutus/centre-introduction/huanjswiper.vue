@@ -64,7 +64,7 @@
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
-            <p>銅鑼灣</p>
+            <p>旺角</p>
           </div>
           <div class="address">
             <img
