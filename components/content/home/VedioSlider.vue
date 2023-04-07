@@ -4,7 +4,7 @@
 
     <div class="vedio_slider page_container">
       <div class="video_title">
-        <p>個案分享</p>
+        <p>{{ $t('home.VedioSlider.p') }}</p>
       </div>
       <div class="booking">
         <p>
@@ -25,7 +25,7 @@
           >
             <div class="swiper_di">
               <img :src="banner.src" />
-              <nuxt-link class="link_des" :to="banner.link"></nuxt-link>
+              <nuxt-link class="link_des" :to="localePath(banner.link)"></nuxt-link>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@
             :key="index"
           >
             <img :src="banner.src" />
-            <nuxt-link class="link_des" :to="banner.link"></nuxt-link>
+            <nuxt-link class="link_des" :to="localePath(banner.link)"></nuxt-link>
           </div>
         </div>
         <div class="swiper-button-prev flex items-center justify-center">
@@ -57,7 +57,7 @@
       </div>
 
       <a class="link_more" href="/video" style="cursor: pointer"
-        ><span>觀看更多</span></a
+        ><span>{{ $t('home.VedioSlider.span') }}</span></a
       >
     </div>
   </div>

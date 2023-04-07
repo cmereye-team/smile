@@ -1,7 +1,7 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>矯視前停 con 知多啲</h2>
+      <h2>{{$t('notice.eyeExam.preorthoptic.h2')}}</h2>
     </div>
     <div>
       <div class="flex justify-center pcShow">
@@ -16,7 +16,7 @@
             src="https://static.cmereye.com/imgs/2022/12/c07c6b4f21d225d5.png"
             alt=""
           />
-          <span class="pt-3">前台登記及<br class="pcShow" />初步眼睛檢查</span>
+          <span class="pt-3" v-html="$t('notice.eyeExam.preorthoptic.arrowOne.span1')"></span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
@@ -29,7 +29,7 @@
             src="https://static.cmereye.com/imgs/2022/12/7b3798d7b61abfb9.png"
             alt=""
           />
-          <span class="pt-3">詳細屈光檢查</span>
+          <span class="pt-3">{{$t('notice.eyeExam.preorthoptic.arrowOne.span2')}}</span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
@@ -42,7 +42,7 @@
             src="https://static.cmereye.com/imgs/2022/12/2f2d444c97114450.png"
             alt=""
           />
-          <span class="pt-3">散曈</span>
+          <span class="pt-3">{{$t('notice.eyeExam.preorthoptic.arrowOne.span3')}}</span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
@@ -55,7 +55,7 @@
             src="https://static.cmereye.com/imgs/2022/12/032341e288d255ad.png"
             alt=""
           />
-          <span class="pt-3">全面眼底檢查</span>
+          <span class="pt-3">{{$t('notice.eyeExam.preorthoptic.arrowOne.span4')}}</span>
         </div>
         <div class="arrow-two">
           <div class="Inappropriate">
@@ -66,8 +66,8 @@
               />
             </div>
             <div class="Inappropriate-box">
-              <span>不合適</span>
-              <p>應盡快接受相關治療</p>
+              <span>{{$t('notice.eyeExam.preorthoptic.arrowTwo.span1')}}</span>
+              <p>{{$t('notice.eyeExam.preorthoptic.arrowTwo.p1')}}</p>
             </div>
           </div>
           <div class="appropriate">
@@ -78,25 +78,14 @@
               />
             </div>
             <div class="appropriate-box">
-              <span>合適</span>
-              <p>預約第二次檢查及<br />同日矯視</p>
+              <span>{{$t('notice.eyeExam.preorthoptic.arrowTwo.span2')}}</span>
+              <p v-html="$t('notice.eyeExam.preorthoptic.arrowTwo.p2')"></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-col mb-10 beizhu">
-        <p>備註：</p>
-        <p>1. 基本檢查包括：屈光檢查、電腦驗光、眼壓、角膜厚度等</p>
-        <p>
-          2.
-          詳細眼底檢查包括：淚水分泌測試、瞳孔測量、角膜地形掃描及像差、雙眼內皮細胞分析、散瞳眼底檢查、光學相干斷層掃描(如需要)、<br />掃描激光眼底檢查(如需要)
-        </p>
-        <p>3. 散瞳/ 放大瞳孔後：</p>
-        <p>·觀看近物時視野變得模糊</p>
-        <p>·有輕微畏光情況，可帶備太陽眼鏡</p>
-        <p>·切勿駕駛</p>
-        <p>·請帶備太陽眼鏡</p>
-        <p>·放大瞳孔的效果一般會在4至6小時後消失</p>
+      <div class="flex flex-col mb-10 beizhu" v-html="$t('notice.eyeExam.preorthoptic.remark')">
+
       </div>
       <div class="flex justify-center">
         <a href="#" class="mbShow">
@@ -108,7 +97,7 @@
                 style="width: 12vw"
               />
               <div class="flex flex-col justify-center" style="padding: 0 10px">
-                <span>立即預約 / 查詢</span>
+                <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
                 <span>6061 0511</span>
               </div>
             </div>
@@ -136,7 +125,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .beizhu {
     margin-bottom: 85px;
-    p {
+    /deep/ p {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
@@ -160,7 +149,7 @@ h2 {
         width: 94px;
         margin: auto;
       }
-      span {
+      /deep/ span {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;
@@ -255,7 +244,7 @@ h2 {
         background-clip: text;
         text-fill-color: transparent;
       }
-      p {
+      /deep/ p {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;
@@ -373,7 +362,7 @@ h2 {
     .preorth {
       display: flex;
       align-items: center;
-      span {
+      /deep/ span {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;

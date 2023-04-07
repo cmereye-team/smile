@@ -38,11 +38,11 @@
     </div>
     <div class="text_ev page_container">
       <div class="box">
-        <h3>中心環境舒適寬敞、地點便利</h3>
+        <h3>{{$t('aboutUs.centreIntroduction.huanjswiper.h3')}}</h3>
         <p>
-          希望為客人提供安心自在的優質矯視服務，我們亦著重整體感官體驗，位於尖沙咀
+          {{$t('aboutUs.centreIntroduction.huanjswiper.p1')}}
           K11 ATELIER
-          的旗艦店更配合時尚、寬敞及醉人海景，同樣配備齊全設備，致力提供最舒適、專業及優質的矯視服務。
+          {{$t('aboutUs.centreIntroduction.huanjswiper.p2')}}
         </p>
         <div class="address_box">
           <div class="address">
@@ -50,14 +50,14 @@
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
-            <p>中環</p>
+            <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p3')}}</p>
           </div>
           <div class="address">
             <img
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
-            <p>銅鑼灣</p>
+            <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p4')}}</p>
           </div>
           <div class="address">
             <img
@@ -81,7 +81,7 @@
 
 <script>
 export default {
-  name: "image",
+  name: "",
 
   data() {
     return {

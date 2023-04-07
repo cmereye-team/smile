@@ -2,7 +2,7 @@
   <div class="main_footer" v-if="screenWidth > 768">
     <div class="section flex justify-between page_container px-0">
       <div class="logo_footer">
-        <nuxt-link to="/"
+        <nuxt-link :to="localePath('/')"
           ><img
             class="foot_logo"
             src="../../../asset/image/common/Logo.svg"
@@ -21,8 +21,8 @@
             </div>
           </div>
 
-          ©2022 香港希瑪微笑矯視中心 <br />版權所有 <span>私隱政策</span> |
-          <span>免責條款</span>
+          ©2022 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}} <span>{{$t('home.footer.span3')}}</span> |
+          <span>{{$t('home.footer.span4')}}</span>
         </div>
       </div>
       <div class="flex">
@@ -32,14 +32,14 @@
             v-for="(navItem, index) in navList"
             :key="index"
           >
-            <nuxt-link :to="navItem.link" class="main_nav">
+            <nuxt-link :to="localePath(navItem.link)" class="main_nav">
               <div class="mian_nav_text font-black text-xl">
                 {{ navItem.main_nav }}
               </div>
             </nuxt-link>
             <ul class="child_menu">
               <li v-for="(childItem, index) in navItem.child_list" :key="index">
-                <nuxt-link :to="childItem.link" class="text-xl">{{
+                <nuxt-link :to="localePath(childItem.link)" class="text-xl">{{
                   childItem.child_item
                 }}</nuxt-link>
               </li>
@@ -51,14 +51,14 @@
           </li> -->
         </ul>
         <div class="mb-10">
-          <nuxt-link class="main_nav text-xl" to="/free"
+          <nuxt-link class="main_nav text-xl" :to="localePath('/free')"
             ><div class="mian_nav_text font-black text-xl">
-              收費詳情
+              {{$t('home.headers.feeConsultation')}}
             </div></nuxt-link
           >
-          <nuxt-link class="main_nav text-xl mt-6 block" to="/contactus"
+          <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/contactus')"
             ><div class="mian_nav_text font-black text-xl">
-              聯絡我們
+              {{$t('home.headers.contactUs')}}
             </div></nuxt-link
           >
         </div>
@@ -85,8 +85,8 @@
         </div>
 
         <div class="copyright">
-          ©2022 香港希瑪微笑矯視中心 <br />版權所有 <span>私隱政策</span> |
-          <span>免責條款</span>
+          ©2022 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}} <span>{{$t('home.footer.span3')}}</span> |
+          <span>{{$t('home.footer.span4')}}</span>
         </div>
       </div>
     </div>
@@ -100,29 +100,29 @@ export default {
       activeName: "1",
       navList: [
         {
-          main_nav: "關於希瑪",
+          main_nav: this.$t('home.headers.aboutSmile'),
           link: "#",
           child_list: [
             {
-              child_item: "集團及中心簡介",
+              child_item: this.$t('home.headers.aboutSmileChild_1'),
               link: "/about-us/centre-introduction",
             },
             {
-              child_item: "醫生團隊",
+              child_item: this.$t('home.headers.aboutSmileChild_2'),
               link: "/about-us/medical-team",
             },
             {
-              child_item: "中心設備",
+              child_item: this.$t('home.headers.aboutSmileChild_3'),
               link: "/about-us/medical-equipment",
             },
           ],
         },
         {
-          main_nav: "矯視服務",
+          main_nav: this.$t('home.headers.orthopedicServices'),
           link: "#",
           child_list: [
             {
-              child_item: "SMILE 微笑激光矯視",
+              child_item: this.$t('home.headers.orthopedicServicesChild_1'),
               link: "/service/relex_smile",
             },
             {
@@ -130,80 +130,80 @@ export default {
               link: "/service/CLEAR_Vision",
             },
             {
-              child_item: "LASIK 激光矯視",
+              child_item: this.$t('home.headers.orthopedicServicesChild_3'),
               link: "/service/LASIK",
             },
             {
-              child_item: "ICL植入式隱形眼鏡",
+              child_item: this.$t('home.headers.orthopedicServicesChild_4'),
               link: "/service/ICL",
             },
           ],
         },
         {
-          main_nav: "診症須知",
+          main_nav: this.$t('home.headers.diagnosisInstructions'),
           link: "#",
           child_list: [
             {
-              child_item: "眼睛檢查及矯視前",
+              child_item: this.$t('home.headers.diagnosisInstructionsChild_1'),
               link: "/Notice/eyeExam",
             },
             {
-              child_item: "矯視流程",
+              child_item: this.$t('home.headers.diagnosisInstructionsChild_2'),
               link: "/Notice/techProcess",
             },
             {
-              child_item: "矯視後覆診",
+              child_item: this.$t('home.headers.diagnosisInstructionsChild_3'),
               link: "/Notice/Followdiag",
             },
           ],
         },
         {
-          main_nav: "常見問題",
+          main_nav: this.$t('home.headers.commonProblem'),
           link: "/FreQuestions",
           child_list: [
             {
-              child_item: "SMILE 微笑激光矯視",
+              child_item: this.$t('home.headers.commonProblemChild_1'),
               link: "/FreQuestions#faq-smile",
             },
             {
-              child_item: "LASIK激光矯視",
+              child_item: this.$t('home.headers.commonProblemChild_2'),
               link: "/FreQuestions#faq-lasik",
             },
             {
-              child_item: "ICL植入式隱形眼鏡",
+              child_item: this.$t('home.headers.commonProblemChild_3'),
               link: "/FreQuestions#faq-icl",
             },
             {
-              child_item: "CLEAR-Vision",
+              child_item: this.$t('home.headers.commonProblemChild_4'),
               link: "/FreQuestions#faq-presbyopia",
             },
           ],
         },
         {
-          main_nav: "眼科資訊",
+          main_nav: this.$t('home.headers.ophthalmicConsultation'),
           link: "#",
           child_list: [
             {
-              child_item: "個案分享及矯視資訊影片",
+              child_item: this.$t('home.headers.ophthalmicConsultationChild_1'),
               link: "/ophthalmicInfo/shareVideos",
             },
             {
-              child_item: "媒體報導",
+              child_item: this.$t('home.headers.ophthalmicConsultationChild_2'),
               link: "/ophthalmicInfo/mediaCov",
             },
           ],
         },
 
         {
-          main_nav: "預約服務",
+          main_nav: this.$t('home.headers.reservationService'),
           link: "#",
           child_list: [
             {
-              child_item: "矯視前檢查",
+              child_item: this.$t('home.headers.reservationServiceChild_1'),
               link: "/eye-checkup",
             },
             {
-              child_item: "講座",
+              child_item: this.$t('home.headers.reservationServiceChild_2'),
               link: "/ophthalmicInfo/AppointForm",
             },
           ],

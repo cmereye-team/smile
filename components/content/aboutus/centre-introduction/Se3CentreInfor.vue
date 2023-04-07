@@ -5,7 +5,7 @@
         <p>CENTER</p>
       </div>
       <div class="serve_title">
-        <p>中心簡介</p>
+        <p>{{$t('aboutUs.centreIntroduction.Se3CentreInfor.p')}}</p>
       </div>
       <div class="md:flex pcShow page_container img_box">
         <img
@@ -23,12 +23,12 @@
       </div>
       <div class="section_text shadow-lg">
         <p>
-          <span>希瑪微笑矯視中心</span><br />
-          是上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心。<br />
-          中心團隊由最早將LASIK矯視技術引進香港的林順潮教授帶領，加上12名眼科專科醫生、多名註冊視光師及護士組成。<br />
-          醫生經驗豐富，其中有3名為「香港十大傑出青年」，在安全、技術各方面都有良好口碑。<br />
-          作為率先引入激光矯視技術的眼科中心，中心符合FDA激光矯視標準：設有符合國際標準的無菌手術室，配備先進的眼科檢查和矯視儀器；為客人作全面、準確的眼科檢查，並根據不同情況定制嚴格且有針對性的矯視方案。<br />
-          中心秉持「度身訂造」原則，提供品質服務：包括SMILE微笑激光矯視、LASIK激光矯視、植入式隱形眼鏡(ICL)，及人工晶體置換術，舒緩有近視、遠視、散光、老花以及白內障客人的困擾，讓客人改善視力，實踐「希．望見美好」的理想。
+          <span>{{$t('aboutUs.centreIntroduction.Se3CentreInfor.span1')}}</span><br />
+          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span2')}}<br />
+          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span3')}}<br />
+          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span4')}}<br />
+          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span5')}}<br />
+          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span6')}}
         </p>
       </div>
     </div>

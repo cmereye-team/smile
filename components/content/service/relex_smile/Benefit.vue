@@ -1,7 +1,7 @@
 <template>
   <div class="benefit section pc_page_container">
     <div class="flex justify-center md:mt-28 mt-10 page_container">
-      <h2>SMILE 微笑激光矯視的好處</h2>
+      <h2>{{$t('service.relexSmile.benefit.h2')}}</h2>
     </div>
     <div class="benefit_content">
       <ul
@@ -32,27 +32,27 @@ export default {
       benefitList: [
         {
           index: require("@/asset/image/service/relex_smile/benefit_index1.svg"),
-          des: "無需製造角膜瓣",
+          des: this.$t('service.relexSmile.benefit.des1'),
         },
         {
           index: require("@/asset/image/service/relex_smile/benefit_index2.svg"),
-          des: "最快術後翌日生活、工作",
+          des: this.$t('service.relexSmile.benefit.des2'),
         },
         {
           index: require("@/asset/image/service/relex_smile/benefit_index3.svg"),
-          des: "4至5分鐘",
+          des: this.$t('service.relexSmile.benefit.des3'),
         },
         {
           index: require("@/asset/image/service/relex_smile/benefit_index4.svg"),
-          des: "減低術後眼乾及感染情況",
+          des: this.$t('service.relexSmile.benefit.des4'),
         },
         {
           index: require("@/asset/image/service/relex_smile/benefit_index5.svg"),
-          des: "傷口只有約2mm",
+          des: this.$t('service.relexSmile.benefit.des5'),
         },
         {
           index: require("@/asset/image/service/relex_smile/benefit_index6.svg"),
-          des: "視力改善顯著",
+          des: this.$t('service.relexSmile.benefit.des6'),
         },
       ],
     };

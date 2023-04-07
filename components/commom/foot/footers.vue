@@ -50,13 +50,13 @@ export default {
           type: 'fun',
           link:'',
           img:'https://static.cmereye.com/imgs/2023/03/4f2e7a260618edb4.png',
-          title: '致電查詢'
+          title: this.$t('home.footer.title1')
         },
         {
           type: 'fun',
           link:'',
           img:'https://static.cmereye.com/imgs/2023/03/935a17da94382a86.png',
-          title: '線上對話'
+          title: this.$t('home.footer.title2')
         },
         {
           type: 'href',
@@ -68,7 +68,7 @@ export default {
           type: 'link',
           link:'/booking',
           img:'https://static.cmereye.com/imgs/2023/03/aa60fde6a44f6099.png',
-          title: '預約服務'
+          title: this.$t('home.footer.title3')
         }
       ]
     };

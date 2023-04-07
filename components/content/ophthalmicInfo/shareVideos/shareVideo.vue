@@ -1,7 +1,7 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>個案分享及矯視資訊影片</h2>
+      <h2>{{$t('home.headers.ophthalmicConsultationChild_1')}}</h2>
     </div>
     <div class="tab flex justify-center" id="tab">
       <ul>
@@ -31,7 +31,17 @@
         </div>
         <div v-if="currentTitleIndex === 0">
           <div class="media-buju">
-            <div class="media-box">
+            <div class="media-box" v-for="(item_1_1,index_1_1) in mediaBujuLists_1_1" :key="index_1_1">
+              <a :href="item_1_1.link">
+                <img
+                  :src="item_1_1.img"
+                  alt=""
+                />
+                <div class="meida" v-html="item_1_1.meida">
+                </div>
+              </a>
+            </div>
+            <!-- <div class="media-box">
               <a href="https://youtu.be/2t7JjTab4xA">
                 <img
                   src="https://smile.hkcmereye.com/wp-content/uploads/2021/01/200814_lam_cover.jpg"
@@ -77,7 +87,7 @@
                   <span>植入式隱形眼鏡 - 媽媽 Tiff Poon</span>
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -97,7 +107,7 @@
                     class="flex flex-col justify-center"
                     style="padding: 0 10px"
                   >
-                    <span>立即預約 / 查詢</span>
+                    <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -107,7 +117,17 @@
         </div>
         <div v-else-if="currentTitleIndex === 1">
           <div class="media-buju">
-            <div class="media-box">
+            <div class="media-box" v-for="(item_1_2,index_1_2) in mediaBujuLists_1_2" :key="index_1_2">
+              <a :href="item_1_2.link">
+                <img
+                  :src="item_1_2.img"
+                  alt=""
+                />
+                <div class="meida" v-html="item_1_2.meida">
+                </div>
+              </a>
+            </div>
+            <!-- <div class="media-box">
               <a href="https://youtu.be/gRKFwHXBAzc">
                 <img
                   src="https://smile.hkcmereye.com/wp-content/uploads/2023/02/7916734434_95270280400_1675237466957_Lok-Hei_Thumnail-16-9-copy-1.jpg"
@@ -382,7 +402,7 @@
                   <span>微笑矯視 - Dickson</span>
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -402,7 +422,7 @@
                     class="flex flex-col justify-center"
                     style="padding: 0 10px"
                   >
-                    <span>立即預約 / 查詢</span>
+                    <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -415,7 +435,17 @@
         </div>
         <div v-else>
           <div class="media-buju">
-            <div class="media-box">
+            <div class="media-box" v-for="(item_1_4,index_1_4) in mediaBujuLists_1_4" :key="index_1_4">
+              <a :href="item_1_4.link">
+                <img
+                  :src="item_1_4.img"
+                  alt=""
+                />
+                <div class="meida" v-html="item_1_4.meida">
+                </div>
+              </a>
+            </div>
+            <!-- <div class="media-box">
               <a href="https://youtu.be/0-mlyxrBaus">
                 <img
                   src="https://smile.hkcmereye.com/wp-content/uploads/2020/07/20200706_Animation_ICLHD_V2.jpg"
@@ -483,7 +513,7 @@
                   <span>SMILE後幾時先可以化眼妝💡</span>
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -503,7 +533,7 @@
                     class="flex flex-col justify-center"
                     style="padding: 0 10px"
                   >
-                    <span>立即預約 / 查詢</span>
+                    <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -526,7 +556,17 @@
         </div>
         <div v-if="currentTitleIndex === 0">
           <div class="media-buju">
-            <div class="media-box">
+            <div class="media-box" v-for="(item_2_1,index_2_1) in mediaBujuLists_2_1" :key="index_2_1">
+              <a :href="item_2_1.link">
+                <img
+                  :src="item_2_1.img"
+                  alt=""
+                />
+                <div class="meida" v-html="item_2_1.meida">
+                </div>
+              </a>
+            </div>
+            <!-- <div class="media-box">
               <a href="https://www.youtube.com/watch?v=1xDkEkhtDCY"></a>
               <img
                 src="	https://smile.hkcmereye.com/wp-content/uploads/2020/12/Phil-Lam-ICL.png"
@@ -568,7 +608,7 @@
                   <span>植入式隱形眼鏡 - 媽媽 Tiff Poon</span>
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -588,7 +628,7 @@
                     class="flex flex-col justify-center"
                     style="padding: 0 10px"
                   >
-                    <span>立即預約 / 查詢</span>
+                    <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -598,7 +638,17 @@
         </div>
         <div v-else-if="currentTitleIndex === 1">
           <div class="media-buju">
-            <div class="media-box">
+            <div class="media-box" v-for="(item_2_2,index_2_2) in mediaBujuLists_2_2" :key="index_2_2">
+              <a :href="item_2_2.link">
+                <img
+                  :src="item_2_2.img"
+                  alt=""
+                />
+                <div class="meida" v-html="item_2_2.meida">
+                </div>
+              </a>
+            </div>
+            <!-- <div class="media-box">
               <a href="https://youtu.be/qBsPhkIaVfo"></a>
               <img
                 src="	https://smile.hkcmereye.com/wp-content/uploads/2022/05/Thumbnail_1.jpg"
@@ -799,7 +849,7 @@
                   <span>微笑矯視 - Mandy 文荻 (完整版)</span>
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -819,7 +869,7 @@
                     class="flex flex-col justify-center"
                     style="padding: 0 10px"
                   >
-                    <span>立即預約 / 查詢</span>
+                    <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -832,7 +882,17 @@
         </div>
         <div v-else>
           <div class="media-buju">
-            <div class="media-box">
+            <div class="media-box" v-for="(item_2_4,index_2_4) in mediaBujuLists_2_4" :key="index_2_4">
+              <a :href="item_2_4.link">
+                <img
+                  :src="item_2_4.img"
+                  alt=""
+                />
+                <div class="meida" v-html="item_2_4.meida">
+                </div>
+              </a>
+            </div>
+            <!-- <div class="media-box">
               <a href="https://youtu.be/0-mlyxrBaus">
                 <img
                   src="https://smile.hkcmereye.com/wp-content/uploads/2020/07/20200706_Animation_ICLHD_V2.jpg"
@@ -900,7 +960,7 @@
                   <span>SMILE後幾時先可以化眼妝💡</span>
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -920,7 +980,7 @@
                     class="flex flex-col justify-center"
                     style="padding: 0 10px"
                   >
-                    <span>立即預約 / 查詢</span>
+                    <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -940,21 +1000,36 @@ export default {
       list: [
         {
           id: 1,
-          title: "精華版",
+          title: this.$t('ophthalmicInfo.shareVideos.tabList.title1'),
         },
         {
           id: 2,
-          title: "完整版",
+          title: this.$t('ophthalmicInfo.shareVideos.tabList.title2'),
         },
       ],
       currentTitleIndex: 0,
       title: [
-        "ICL植入式隱形眼鏡",
-        "Smile 微笑矯視",
-        "LASIK 激光矯視",
-        "矯視知多D",
+        ...this.$t('ophthalmicInfo.shareVideos.tabControlItem.title')
       ],
       currentIndex: 0, // 当前点击的tab的索引
+      mediaBujuLists_1_1: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_1')
+      ],
+      mediaBujuLists_1_2: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_2')
+      ],
+      mediaBujuLists_1_4: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_4')
+      ],
+      mediaBujuLists_2_1: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_1')
+      ],
+      mediaBujuLists_2_2: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_2')
+      ],
+      mediaBujuLists_2_4: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_4')
+      ]
     };
   },
   created() {},
@@ -1121,7 +1196,7 @@ span {
       display: flex;
       justify-content: center;
       margin-top: 16px;
-      span {
+      /deep/ span {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 500;

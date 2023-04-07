@@ -1,7 +1,7 @@
 <template>
   <div class="tab flex justify-center page_container flex-col" id="tab">
     <div class="flex justify-center">
-      <h2>收費詳情</h2>
+      <h2>{{$t('home.headers.feeConsultation')}}</h2>
     </div>
 
     <div class="tab-control">
@@ -17,16 +17,16 @@
       </div>
     </div>
     <div v-if="currentTitleIndex === 0" class="flex flex-col items-center">
-      <div class="md:mt-10" id="smile"><h2 style="margin-bottom: 0 !important;">Smile 微笑矯視</h2></div>
+      <div class="md:mt-10" id="smile"><h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title1')}}</h2></div>
       <div class="table-1-box">
-        <table summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
           <thead>
             <tr>
-              <th><p>單眼</p></th>
-              <th><p>雙眼</p></th>
+              <th><p>{{$t('chargeDetail.p1')}}</p></th>
+              <th><p>{{$t('chargeDetail.p2')}}</p></th>
             </tr>
           </thead>
 
@@ -36,19 +36,19 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
               <td><span>$20,000*</span></td>
             </tr>
             <tr>
-              <td colspan="4" class="free">術前檢查費用 $100^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>*指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期</span><br />
-        <span>^完成矯視後可退回術前檢查費用</span>
+        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20 taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
@@ -61,61 +61,61 @@
                 src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
                 alt=""
               />
-              <span>眼科專科醫生檢查</span>
+              <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
                 alt=""
               />
-              <span>術前檢查費用</span>
+              <span>{{$t('chargeDetail.span5')}}</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
                 alt=""
               />
-              <span>術後3次覆診<i style="font-size: 14px;">#</i> </span>
+              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i> </span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
                 alt=""
               />
-              <span>增進手術<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span7')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
                 alt=""
               />
-              <span>無限視光檢查<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
                 alt=""
               />
-              <span>手術當日藥費</span>
+              <span>{{$t('chargeDetail.span9')}}</span>
             </div>
           </div>
         </div>
         <span
-          >#需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費</span
+          >{{$t('chargeDetail.span3')}}</span
         >
       </div>
-       <div class="md:mt-10" id="ICL"><h2 style="margin-bottom: 0 !important;">ICL植入式隱形眼鏡</h2></div>
+       <div class="md:mt-10" id="ICL"><h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title2')}}</h2></div>
       <div class="table-1-box pcShow">
-        <table summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
           <thead>
             <tr>
-              <th><p>單眼 (不帶散光)</p></th>
-              <th><p>單眼 (帶散光)</p></th>
-              <th><p>雙眼 (不帶散光)</p></th>
-              <th><p>雙眼 (帶散光)</p></th>
+              <th><p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p4')}})</p></th>
+              <th><p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p5')}})</p></th>
+              <th><p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p4')}})</p></th>
+              <th><p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p5')}})</p></th>
             </tr>
           </thead>
 
@@ -127,7 +127,7 @@
               <td><span>$95,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$38,000*</span></td>
@@ -136,22 +136,22 @@
               <td><span>$72,000*</span></td>
             </tr>
             <tr>
-              <td colspan="4" class="free">術前檢查費用 $500^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $500^</td>
             </tr>
           </tbody>
         </table>
-        <span>*指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期</span><br />
-        <span>^完成矯視後可退回術前檢查費用</span>
+        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="table-1-box mbShow">
-        <table summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
           <thead>
             <tr>
-              <th><p>單眼</p></th>
-              <th><p>雙眼</p></th>
+              <th><p>{{$t('chargeDetail.p1')}}</p></th>
+              <th><p>{{$t('chargeDetail.p2')}}</p></th>
             </tr>
           </thead>
 
@@ -161,24 +161,24 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
               <td><span>$20,000*</span></td>
             </tr>
             <tr>
-              <td colspan="4" class="free">術前檢查費用 $100^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="table-1-box mbShow">
-        <table summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <thead>
             <tr>
-              <th><p>單眼</p></th>
-              <th><p>雙眼</p></th>
+              <th><p>{{$t('chargeDetail.p1')}}</p></th>
+              <th><p>{{$t('chargeDetail.p2')}}</p></th>
             </tr>
           </thead>
 
@@ -188,19 +188,19 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
               <td><span>$20,000*</span></td>
             </tr>
             <tr>
-              <td colspan="4" class="free">術前檢查費用 $100^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>*指定信用卡（東亞/渣打/滙豐）可享6/12/18/24個月免息分期</span><br />
-        <span>*完成矯視後可退回術前檢查費用</span>
+        <span>{{$t('chargeDetail.span11')}}</span><br />
+        <span>*{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20 taoc_boxs">
         <div class="mt-20 taoc_box taoc_box_2">
@@ -213,46 +213,46 @@
                 src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
                 alt=""
               />
-              <span>眼科專科醫生檢查</span>
+              <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
                 alt=""
               />
-              <span>術前檢查費用 </br>（藥費另外收費）</span>
+              <span>{{$t('chargeDetail.span5')}} </br>（{{$t('chargeDetail.span10')}}）</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
                 alt=""
               />
-              <span>術後3次覆診<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
                 alt=""
               />
-              <span>無限視光檢查<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
             </div>
           </div>
         </div>
         <span class="shoufei"
-          >#需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費</span
+          >{{$t('chargeDetail.span3')}}</span
         >
       </div>
 
-      <div class="md:mt-10" id="LASIK"><h2 style="margin-bottom: 0 !important;">LASIK 激光矯視</h2></div>
+      <div class="md:mt-10" id="LASIK"><h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3')}}</h2></div>
        <div class="table-1-box">
-        <table summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
           <thead>
             <tr>
-              <th><p>單眼</p></th>
-              <th><p>雙眼</p></th>
+              <th><p>{{$t('chargeDetail.p1')}}</p></th>
+              <th><p>{{$t('chargeDetail.p2')}}</p></th>
             </tr>
           </thead>
 
@@ -262,19 +262,19 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
               <td><span>$20,000*</span></td>
             </tr>
             <tr>
-              <td colspan="4" class="free">術前檢查費用 $100^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>*指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期</span><br />
-        <span>^完成矯視後可退回術前檢查費用</span>
+        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20 taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
@@ -287,55 +287,55 @@
                 src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
                 alt=""
               />
-              <span>眼科專科醫生檢查</span>
+              <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
                 alt=""
               />
-              <span>術前檢查費用</span>
+              <span>{{$t('chargeDetail.span5')}}</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
                 alt=""
               />
-              <span>術後3次覆診<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
                 alt=""
               />
-              <span>增進手術<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span7')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
                 alt=""
               />
-              <span>無限視光檢查<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
                 alt=""
               />
-              <span>手術當日藥費</span>
+              <span>{{$t('chargeDetail.span9')}}</span>
             </div>
           </div>
         </div>
         <span
-          >#需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費</span
+          >{{$t('chargeDetail.span3')}}</span
         >
       </div>
 
       <div class="md:mt-10" id="Clear-Vision"><h2 style="margin-bottom: 0 !important;">Clear-Vision  激光矯視</h2></div>
       <div class="table-box_four pcShow">
-<table  summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+<table  :summary="$t('chargeDetail.captionTitle')" class="gdp">
         <caption >
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
         <colgroup>
           <col width="70" style="width: 50pt" />
@@ -345,18 +345,18 @@
         <tbody>
           <tr height="19">
             <td class="boder-none"></td>
-            <td rowspan="2" class="et2 table-head-blue"><span>單焦點人工晶體 <br>(不帶散光)</span></td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>單焦點人工晶體 <br>(散光)</span></td>
+            <td rowspan="2" class="et2 table-head-blue"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</span></td>
+            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p5')}})</span></td>
             <td colspan="2" rowspan="2" class="et2 table-head-blue">
-              <span>多焦點人工晶體<br>(不帶散光)</span>
+              <span>{{$t('chargeDetail.span13')}}<br>({{$t('chargeDetail.p4')}})</span>
             </td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>多焦點人工晶體<br> (散光)</span></td>
+            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span13')}}<br> ({{$t('chargeDetail.p5')}})</span></td>
           </tr>
           <tr height="10">
             <!-- <td class="boder-none"></td> -->
           </tr>
           <tr height="19" class="jiage">
-            <td class="danyan" style="width: 73px !important;"><span class="text">單眼</span></td>
+            <td class="danyan" style="width: 73px !important;"><span class="text">{{$t('chargeDetail.p1')}}</span></td>
             <td class><span>$18,000 - $35,000</span></td>
             <td colspan="2" class="et4"><span>$23,000 - $41,000</span></td>
             <td colspan="2" class="et4"><span>$26,000 - $51,000</span></td>
@@ -364,7 +364,7 @@
           </tr>
           <tr height="19" class="free">
             <td class="boder-none"></td>
-            <td colspan="7" class="et2"><span>術前檢查費用 $600</span></td>
+            <td colspan="7" class="et2"><span>{{$t('chargeDetail.span5')}} $600</span></td>
           </tr>
         </tbody>
       </table>
@@ -372,12 +372,12 @@
      <div class="table-1-box mbShow">
         <table  class="gdp">
            <caption>
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
           <thead>
             <tr>
-              <th style="padding: 12px 0;"><p>單焦點人工晶體 <br>(不帶散光)</p></th>
-              <th style="padding: 12px 0;"><p>單焦點人工晶體<br> (帶散光)</p></th>
+              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</p></th>
+              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}}<br> ({{$t('chargeDetail.p5')}})</p></th>
             </tr>
           </thead>
 
@@ -400,8 +400,8 @@
                 </div></td>
             </tr>
             <tr>
-                <th style="border-radius: 0 !important;padding: 12px 0;"><p>多焦點人工晶體 <br>(不帶散光)</p></th>
-              <th style="border-radius: 0 !important; padding: 12px 0;"><p>多焦點人工晶體 <br>(帶散光)</p></th>
+                <th style="border-radius: 0 !important;padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p4')}})</p></th>
+              <th style="border-radius: 0 !important; padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p5')}})</p></th>
             </tr>
            <tr >
               <td>
@@ -421,7 +421,7 @@
                 </div></td>
             </tr>
             <tr>
-              <td colspan="4" class="free" style="padding: 10px 0;">術前檢查費用 $600</td>
+              <td colspan="4" class="free" style="padding: 10px 0;">{{$t('chargeDetail.span5')}} $600</td>
             </tr>
           </tbody>
         </table>
@@ -432,14 +432,14 @@
     </div>
     <div v-else-if="currentTitleIndex === 2" class="flex flex-col items-center">
       <div class="table-1-box">
-        <table summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
           <thead>
             <tr>
-              <th><p>單眼</p></th>
-              <th><p>雙眼</p></th>
+              <th><p>{{$t('chargeDetail.p1')}}</p></th>
+              <th><p>{{$t('chargeDetail.p2')}}</p></th>
             </tr>
           </thead>
 
@@ -449,19 +449,19 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
               <td><span>$20,000*</span></td>
             </tr>
             <tr>
-              <td colspan="4" class="free">術前檢查費用 $100^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>*指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期</span><br />
-        <span>^完成矯視後可退回術前檢查費用</span>
+        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20">
         <div class="md:mt-20 mt-10 taoc_box">
@@ -474,55 +474,55 @@
                 src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
                 alt=""
               />
-              <span>眼科專科醫生檢查</span>
+              <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
                 alt=""
               />
-              <span>術前檢查費用</span>
+              <span>{{$t('chargeDetail.span5')}}</span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
                 alt=""
               />
-              <span>術後3次覆診<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
                 alt=""
               />
-              <span>增進手術<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span7')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
                 alt=""
               />
-              <span>無限視光檢查<i style="font-size: 14px;">#</i></span>
+              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
             </div>
             <div class="box">
               <img
                 src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
                 alt=""
               />
-              <span>手術當日藥費</span>
+              <span>{{$t('chargeDetail.span9')}}</span>
             </div>
           </div>
         </div>
         <span
-          >#需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費</span
+          >{{$t('chargeDetail.span3')}}</span
         >
       </div>
     </div>
     <div v-else class="flex flex-col items-center">
       <div class="table-box_four pcShow">
-<table  summary="本診所價目清晰，絕無其他額外收費" class="gdp">
+<table  :summary="$t('chargeDetail.captionTitle')" class="gdp">
         <caption >
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
         <colgroup>
           <col width="70" style="width: 50pt" />
@@ -532,18 +532,18 @@
         <tbody>
           <tr height="19">
             <td class="boder-none"></td>
-            <td rowspan="2" class="et2 table-head-blue"><span>單焦點人工晶體 <br>(不帶散光)</span></td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>單焦點人工晶體 <br>(散光)</span></td>
+            <td rowspan="2" class="et2 table-head-blue"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</span></td>
+            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p5')}})</span></td>
             <td colspan="2" rowspan="2" class="et2 table-head-blue">
-              <span>多焦點人工晶體<br>(不帶散光)</span>
+              <span>{{$t('chargeDetail.span13')}}<br>({{$t('chargeDetail.p4')}})</span>
             </td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>多焦點人工晶體<br> (散光)</span></td>
+            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span13')}}<br> ({{$t('chargeDetail.p5')}})</span></td>
           </tr>
           <tr height="10">
             <!-- <td class="boder-none"></td> -->
           </tr>
           <tr height="19" class="jiage">
-            <td class="danyan" style="width: 73px !important;"><span class="text">單眼</span></td>
+            <td class="danyan" style="width: 73px !important;"><span class="text">{{$t('chargeDetail.p1')}}</span></td>
             <td class><span>$18,000 - $35,000</span></td>
             <td colspan="2" class="et4"><span>$23,000 - $41,000</span></td>
             <td colspan="2" class="et4"><span>$26,000 - $51,000</span></td>
@@ -551,7 +551,7 @@
           </tr>
           <tr height="19" class="free">
             <td class="boder-none"></td>
-            <td colspan="7" class="et2"><span>術前檢查費用 $600</span></td>
+            <td colspan="7" class="et2"><span>{{$t('chargeDetail.span5')}} $600</span></td>
           </tr>
         </tbody>
       </table>
@@ -559,12 +559,12 @@
      <div class="table-1-box mbShow">
         <table  class="gdp">
            <caption>
-            本診所價目清晰，絕無其他額外收費
+            {{$t('chargeDetail.captionTitle')}}
           </caption>
           <thead>
             <tr>
-              <th style="padding: 12px 0;"><p>單焦點人工晶體 <br>(不帶散光)</p></th>
-              <th style="padding: 12px 0;"><p>單焦點人工晶體<br> (帶散光)</p></th>
+              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</p></th>
+              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}}<br> ({{$t('chargeDetail.p5')}})</p></th>
             </tr>
           </thead>
 
@@ -587,8 +587,8 @@
                 </div></td>
             </tr>
             <tr>
-                <th style="border-radius: 0 !important;padding: 12px 0;"><p>多焦點人工晶體 <br>(不帶散光)</p></th>
-              <th style="border-radius: 0 !important; padding: 12px 0;"><p>多焦點人工晶體 <br>(帶散光)</p></th>
+                <th style="border-radius: 0 !important;padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p4')}})</p></th>
+              <th style="border-radius: 0 !important; padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p5')}})</p></th>
             </tr>
            <tr >
               <td>
@@ -608,7 +608,7 @@
                 </div></td>
             </tr>
             <tr>
-              <td colspan="4" class="free" style="padding: 10px 0;">術前檢查費用 $600</td>
+              <td colspan="4" class="free" style="padding: 10px 0;">{{$t('chargeDetail.span5')}} $600</td>
             </tr>
           </tbody>
         </table>
@@ -624,19 +624,19 @@ export default {
       action:0,
       currentTitleIndex: 0,
       title: [
-        "Smile 微笑矯視",
-        "ICL植入式隱形眼鏡",
-        "LASIK 激光矯視",
+        this.$t('chargeDetail.title1'),
+        this.$t('chargeDetail.title2'),
+        this.$t('chargeDetail.title3'),
         "Clear-Vision",
       ],
       list: [
         {
           id: 1,
-          title: "收費詳情",
+          title: this.$t('chargeDetail.title5'),
         },
         {
           id: 2,
-          title: "消費券詳情",
+          title: this.$t('chargeDetail.title6'),
         },
       ],
       currentIndex: 1, // 当前点击的tab的索引

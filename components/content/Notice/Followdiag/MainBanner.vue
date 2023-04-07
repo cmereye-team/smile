@@ -1,7 +1,7 @@
 <template>
   <div class="main_banner">
     <banner class="banner"> <template #title>
-        矯視後覆診
+      {{$t('notice.followdiag.followDiago.h2')}}
       </template>
     </banner>
   </div>

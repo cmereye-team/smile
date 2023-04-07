@@ -2,7 +2,7 @@
   <div class="main_banner">
     <banner class="banner">
       <template #title>
-        個案分享及矯視資訊影片
+        {{$t('home.headers.ophthalmicConsultationChild_1')}}
       </template>
     </banner>
   </div>

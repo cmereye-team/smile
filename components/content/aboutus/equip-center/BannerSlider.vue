@@ -2,7 +2,7 @@
   <div class="main_banner">
     <banner class="banner">
       <template #title>
-        中心設備
+        {{$t('home.headers.aboutSmileChild_3')}}
       </template>
 
     </banner>

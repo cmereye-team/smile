@@ -11,7 +11,8 @@
           rel="noopener noreferrer"
         >
           <h3 class="title">SMILE</h3>
-          <p>1000 度近視<br />500 度散光</p>
+          <!-- <p>1000 度近視<br />500 度散光</p> -->
+          <p v-html="$t('home.CorrectionService.p1')"></p>
           <span class="morelink">了解更多</span>
           <img
             class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"
@@ -28,10 +29,11 @@
           rel="noopener noreferrer"
         >
           <h3 class="title">LASIK</h3>
-          <p>
+          <p v-html="$t('home.CorrectionService.p2')"></p>
+          <!-- <p>
             1500 度近視 <br />
             600 度遠視/散光
-          </p>
+          </p> -->
           <span class="morelink">了解更多</span>
           <img
             class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"
@@ -48,7 +50,8 @@
           rel="noopener noreferrer"
         >
           <h3 class="title">ICL</h3>
-          <p>1800 度近視<br />1000 度遠視<br />600 度散光</p>
+          <p v-html="$t('home.CorrectionService.p3')"></p>
+          <!-- <p>1800 度近視<br />1000 度遠視<br />600 度散光</p> -->
           <span class="morelink">了解更多</span>
           <img
             class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"
@@ -65,7 +68,8 @@
           rel="noopener noreferrer"
         >
           <h3 class="title">CLEAR-Vision</h3>
-          <p>39 歲以上<br />同時有近視／遠視／<br />散光問題</p>
+          <p v-html="$t('home.CorrectionService.p4')"></p>
+          <!-- <p>39 歲以上<br />同時有近視／遠視／<br />散光問題</p> -->
           <span class="morelink">了解更多</span>
           <img
             class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"

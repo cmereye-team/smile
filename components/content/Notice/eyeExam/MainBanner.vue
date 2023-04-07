@@ -2,7 +2,7 @@
   <div class="main_banner">
     <banner class="banner"> 
       <template #title>
-        眼睛檢查及矯視前
+        {{$t('home.headers.diagnosisInstructionsChild_1')}}
       </template>
     </banner>
 

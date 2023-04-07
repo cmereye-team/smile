@@ -1,7 +1,7 @@
 <template>
   <div class="main_banner">
     <banner class="banner">  <template #title>
-        預約服務
+      {{$t('home.headers.reservationService')}}
       </template> </banner>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="benefit section pc_page_container">
     <div class="flex justify-center md:mt-28 mt-10 page_container">
-      <h2>LASIK 激光矯視的好處</h2>
+      <h2>{{$t('service.lasik.benefit.h2')}}</h2>
     </div>
     <div class="benefit_content">
       <ul
@@ -32,19 +32,19 @@ export default {
       benefitList: [
         {
           index: require("@/asset/image/service/CLEAR_Vision/one.png"),
-          des: "最快術後數天可如常生活、工作",
+          des: this.$t('service.lasik.benefit.des1'),
         },
         {
           index: require("@/asset/image/service/CLEAR_Vision/two.png"),
-          des: "大約10至15分鐘完成",
+          des: this.$t('service.lasik.benefit.des2'),
         },
         {
           index: require("@/asset/image/service/LASIK/three.png"),
-          des: "快捷、安全、少有不適",
+          des: this.$t('service.lasik.benefit.des3'),
         },
         {
           index: require("@/asset/image/service/LASIK/four.png"),
-          des: "視力改善滿意度高",
+          des: this.$t('service.lasik.benefit.des4'),
         },
       ],
     };

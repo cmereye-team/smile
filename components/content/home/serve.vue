@@ -5,26 +5,26 @@
     </div>
     <div class="pcShow flex md:justify-end flex-col items-center md:flex-row">
       <div class="serve_title">
-        <p>預約服務</p>
+        <p>{{$t('home.headers.reservationService')}}</p>
       </div>
       <div class="serve-box serve-check" @click="serveForm2">
         <img
           src="https://static.cmereye.com/imgs/2023/03/508bd47a29791e21.jpg"
           alt=""
         />
-        <p class="serve_details">術前眼睛檢查</p>
+        <p class="serve_details">{{$t('home.serve.p1')}}</p>
       </div>
       <div class="serve-box ml-5 yuye" @click="serveForm">
         <img
           src="https://static.cmereye.com/imgs/2023/03/c5a46c2325efaff7.jpg"
           alt=""
         />
-        <p class="serve_details">講座</p>
+        <p class="serve_details">{{$t('home.serve.p2')}}</p>
       </div>
     </div>
     <div class="mbShow flex md:justify-end flex-col items-center md:flex-row">
       <div class="serve_title">
-        <p>預約服務</p>
+        <p>{{$t('home.headers.reservationService')}}</p>
       </div>
       <div class="serve-box serve-check" @click="serveForm2">
         <img

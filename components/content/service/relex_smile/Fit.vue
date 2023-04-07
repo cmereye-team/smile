@@ -1,12 +1,12 @@
 <template>
   <div class="fit">
     <div class="section page_container">
-      <h3 class="gradient_title_bg">你適合接受SMILE 微笑矯視嗎？</h3>
+      <h3 class="gradient_title_bg">{{ $t('service.relexSmile.fit.h3') }}</h3>
       <div class="fit_des flex justify-between pcShow">
         <ul class="fit_des_first">
           <li v-for="(item1, index) in fitList1" :key="index">
             <strong>{{ item1 }}</strong>
-            <div v-html="text"></div>
+            <!-- <div v-html="text"></div> -->
           </li>
         </ul>
         <ul>
@@ -22,7 +22,7 @@
               <ul>
                 <li v-for="(item1, index) in fitList1" :key="index">
                   <strong>{{ item1 }}</strong>
-                  <div v-html="text"></div>
+                  <!-- <div v-html="text"></div> -->
                 </li>
               </ul>
             </div>
@@ -57,16 +57,10 @@ export default {
         },
       },
       fitList1: [
-        "1,000度以下近視，\n500度以下散光眼球 ",
-        "發育成熟，近視度數穩定 ",
-        " 角膜厚度正常",
-        "角膜沒受感染，\n例如發炎或曾受傷",
+        ...this.$t('service.relexSmile.fit.fitList1')
       ],
       fitList2: [
-        "沒有患上眼疾，\n如青光眼或視網膜疾病 ",
-        "沒有患上自體免疫疾病，\n如風濕性關節炎或紅斑狼瘡 ",
-        " 不需要長期服用類固醇",
-        " 非懷孕",
+        ...this.$t('service.relexSmile.fit.fitList2')
       ],
     };
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>媒體報導</h2>
+      <h2>{{ $t('home.headers.ophthalmicConsultationChild_2') }}</h2>
     </div>
     <div class="media-buju">
       <div class="media-box">
@@ -14,11 +14,11 @@
           />
           <div class="meida">
             <div class="meida-data">
-              <span class="icon">矯視</span>
+              <span class="icon">{{ $t('media.media1.title') }}</span>
               <span class="data">02.02.2019</span>
             </div>
             <p>
-              任何人都適合矯視？手術有風險嗎？一文了解SMILE微笑激光矯視手術過程、風險
+              {{ $t('media.media1.content') }}
             </p>
           </div>
         </a>
@@ -33,11 +33,11 @@
           />
           <div class="meida">
             <div class="meida-data">
-              <span class="icon">白內障</span>
+              <span class="icon">{{ $t('media.media2.title') }}</span>
               <span class="data">07.01.2020</span>
             </div>
             <p>
-              50歲以上？視力模糊、有重影？一文了解白內障4大成因、徵狀和手術過程
+              {{ $t('media.media2.content') }}
             </p>
           </div>
         </a>
@@ -52,10 +52,10 @@
           />
           <div class="meida">
             <div class="meida-data">
-              <span class="icon">醫家話你知</span>
+              <span class="icon">{{ $t('media.media3.title') }}</span>
               <span class="data">02.02.2019</span>
             </div>
-            <p>香港人易啲深近視？做完激光矯視都可能有嚴重眼疾</p>
+            <p>{{ $t('media.media3.content') }}</p>
           </div>
         </a>
       </div>
@@ -73,7 +73,7 @@
               style="width: 12vw"
             />
             <div class="flex flex-col justify-center" style="padding: 0 10px">
-              <span>立即預約 / 查詢</span>
+              <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
               <span>6061 0511</span>
             </div>
           </div>

@@ -4,28 +4,28 @@
       <div class="md:flex justify-center table-box pcShow">
         <table class="gdp">
           <caption>
-            服務熱線
+            {{$t('contactUs.serveTable.title')}}
           </caption>
           <thead>
             <tr>
-              <th>服務中心</th>
-              <th>電話熱線</th>
+              <th>{{$t('contactUs.serveTable.th1')}}</th>
+              <th>{{$t('contactUs.serveTable.th2')}}</th>
               <th>WhatsApp</th>
             </tr>
           </thead>
           <tbody>
             <tr style="background-color: #f3fcfe">
-              <td>希瑪林順潮眼科中心</td>
+              <td>{{$t('contactUs.serveTable.h3_1')}}</td>
               <td>3956 2026</td>
               <td>6489 1907</td>
             </tr>
             <tr>
-              <td>希瑪微笑激光矯視中心</td>
+              <td>{{$t('contactUs.serveTable.h3_2')}}</td>
               <td>3892 5099</td>
               <td>9796 2992</td>
             </tr>
             <tr>
-              <td>希瑪眼科視光中心</td>
+              <td>{{$t('contactUs.serveTable.h3_3')}}</td>
               <td>3892 5089</td>
               <td>6918 0511</td>
             </tr>
@@ -33,9 +33,9 @@
         </table>
       </div>
       <div class="mbShow table-box-mb">
-        <div class="serve"><p>服務熱線</p></div>
+        <div class="serve"><p>{{$t('contactUs.serveTable.title')}}</p></div>
         <div class="box-mb">
-          <h3>希瑪林順潮眼科中心</h3>
+          <h3>{{$t('contactUs.serveTable.h3_1')}}</h3>
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="box-mb">
-          <h3>希瑪微笑激光矯視中心</h3>
+          <h3>{{$t('contactUs.serveTable.h3_2')}}</h3>
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="box-mb">
-          <h3>希瑪眼科視光中心</h3>
+          <h3>{{$t('contactUs.serveTable.h3_3')}}</h3>
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"

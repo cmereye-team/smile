@@ -3,19 +3,17 @@
     <banner class="banner">
       <template v-slot:title class="title">
         <div class="pcShow">
-          <p style="font-size: 28px">SMILE微笑激光矯視</p>
+          <p style="font-size: 28px">{{$t('service.relexSmile.mainBanner.p')}}</p>
           <span>(Small Incision Lenticule Extraction)</span>
         </div>
         <div class="mbShow banner_serve">
-          <p>SMILE微笑激光矯視</p>
+          <p>{{$t('service.relexSmile.mainBanner.p')}}</p>
           <span>(Small Incision Lenticule Extraction)</span>
         </div>
       </template>
       <template v-slot:des>
         <div class="pcShow">
-          是突破性全新近視矯正技術，比傳統的LASIK激光矯視更安全、微創。本中心的SMILE微笑矯視使用Carl
-          Zeiss
-          VisuMax激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-4mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。
+          {{$t('service.relexSmile.mainBanner.span')}}
         </div></template
       >
     </banner>

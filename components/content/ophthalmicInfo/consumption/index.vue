@@ -1,7 +1,7 @@
 <template>
   <div class="page_container serve-page">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>消費券詳情</h2>
+      <h2>{{$t('consumptionVoucher.h2')}}</h2>
     </div>
     <div class="flex md:flex-row justify-around md:mt-10 flex-col">
       <iframe
@@ -21,7 +21,7 @@
               style="width: 12vw"
             />
             <div class="flex flex-col justify-center" style="padding: 0 10px">
-              <span>立即預約 / 查詢</span>
+              <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
               <span>6061 0511</span>
             </div>
           </div>

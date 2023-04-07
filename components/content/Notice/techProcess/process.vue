@@ -1,16 +1,25 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>矯視流程</h2>
+      <h2>{{$t('notice.techProcess.process.h2')}}</h2>
     </div>
     <div class="text-center process-text mb-20">
       <span
-        >經過詳細的眼睛檢查和診症，醫護人員會告知客人是否適合矯視，才進行矯視程序。</span
+        >{{$t('notice.techProcess.process.span1')}}</span
       >
     </div>
     <div>
       <div class="flex my-10 process-step justify-around">
-        <div class="step-box">
+        <div class="step-box" v-for="(item, index) in stepLists" :key="index">
+          <div class="step">
+            <img
+              :src="item.img"
+              alt=""
+            />
+          </div>
+          <div class="step-txt"><span>{{item.text}}</span></div>
+        </div>
+        <!-- <div class="step-box">
           <div class="step">
             <img
               src="https://static.cmereye.com/imgs/2022/12/06d8dc6309843ceb.png"
@@ -45,7 +54,7 @@
             />
           </div>
           <div class="step-txt"><span>矯視療程</span></div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -54,7 +63,26 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      stepLists: [
+        {
+          img: 'https://static.cmereye.com/imgs/2022/12/06d8dc6309843ceb.png',
+          text: this.$t('notice.techProcess.process.span2')
+        },
+        {
+          img: 'https://static.cmereye.com/imgs/2022/12/720c63a2c77fa1fd.png',
+          text: this.$t('notice.techProcess.process.span3')
+        },
+        {
+          img: 'https://static.cmereye.com/imgs/2022/12/8783c894fe4331d9.png',
+          text: this.$t('notice.techProcess.process.span4')
+        },
+        {
+          img: 'https://static.cmereye.com/imgs/2022/12/02280dc75fddbd20.png',
+          text: this.$t('notice.techProcess.process.span5')
+        }
+      ]
+    };
   },
   created() {},
   methods: {},

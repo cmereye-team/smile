@@ -1,7 +1,7 @@
 <template>
   <div class="page_container serve-page">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>預約服務</h2>
+      <h2>{{$t('home.headers.reservationService')}}</h2>
     </div>
     <div class="flex md:justify-center flex-col items-center md:flex-row">
       <div class="serve-box">
@@ -29,7 +29,7 @@
               style="width: 12vw"
             />
             <div class="flex flex-col justify-center" style="padding: 0 10px">
-              <span>立即預約 / 查詢</span>
+              <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
               <span>6061 0511</span>
             </div>
           </div>

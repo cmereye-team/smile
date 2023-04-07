@@ -1,7 +1,7 @@
 <template>
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>合適對象</h2>
+      <h2>{{$t('service.clearVision.suitable.h2')}}</h2>
     </div>
     <div class="flex justify-evenly suit_box mt-10">
       <div class="flex flex-col items-center suitable">
@@ -9,28 +9,28 @@
           src="https://static.cmereye.com/imgs/2022/12/6d192401e3e64882.png"
           alt=""
         />
-        <span>40歲或以上</span>
+        <span>{{$t('service.clearVision.suitable.span1')}}</span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/324ad7198a9d2632.png"
           alt=""
         />
-        <span>熱愛運動</span>
+        <span>{{$t('service.clearVision.suitable.span2')}}</span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/d2407e6ff4b3b56c.png"
           alt=""
         />
-        <span>佩戴多副矯正度數眼鏡<br />(近視、遠視、散光、老花)</span>
+        <span v-html="$t('service.clearVision.suitable.span3')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/af544fe01cbe5d65.png"
           alt=""
         />
-        <span>不愛佩戴眼鏡或<br />隱形眼鏡</span>
+        <span v-html="$t('service.clearVision.suitable.span4')"></span>
       </div>
     </div>
     <a href="#" class="mbShow">
@@ -42,7 +42,7 @@
             style="width: 12vw"
           />
           <div class="flex flex-col justify-center" style="padding: 0 10px">
-            <span>立即預約 / 查詢</span>
+            <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
             <span>6061 0511</span>
           </div>
         </div>
@@ -67,7 +67,7 @@ h2 {
   .suit_box {
     margin-bottom: 190px;
     .suitable {
-      span {
+      /deep/ span {
         padding: 28px 0;
         font-family: "Noto Sans HK";
         font-style: normal;
@@ -105,7 +105,7 @@ h2 {
       max-width: 60%;
     }
     .suitable {
-      span {
+      /deep/ span {
         padding: 28px 0;
         font-family: "Noto Sans HK";
         font-style: normal;

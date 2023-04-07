@@ -5,7 +5,7 @@
     </div>
     <div class="aspiration">
       <div class="serve_title">
-        <p>用戶心聲</p>
+        <p>{{$t('home.aspiration.p1')}}</p>
       </div>
       <div class="heart-box heart-box-1">
         <img
@@ -14,10 +14,10 @@
         />
         <div class="heart-text">
           <div class="person">
-            <p>姜咏鑫 Ada</p>
+            <p>{{$t('home.aspiration.p2')}} Ada</p>
           </div>
           <div class="box">
-            <span>每一次擘大眼都懷疑自己係咪唔記得除con既感覺</span>
+            <span>{{$t('home.aspiration.span1')}}</span>
           </div>
         </div>
       </div>
@@ -28,10 +28,10 @@
         />
         <div class="heart-text">
           <div class="box">
-            <span>從未試過24hrs<br />都睇得清！</span>
+            <span>{{$t('home.aspiration.span2_1')}}<br />{{$t('home.aspiration.span2_2')}}</span>
           </div>
           <div class="person">
-            <p>胡鴻鈞 Hubert</p>
+            <p>{{$t('home.aspiration.p3')}} Hubert</p>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
             <p>唐浩然 Jacky</p>
           </div>
           <div class="box">
-            <span>唔駛再戴con/眼鏡<br />演戲更自在！</span>
+            <span>{{$t('home.aspiration.span3_1')}}<br />{{$t('home.aspiration.span3_2')}}</span>
           </div>
         </div>
       </div>
@@ -56,10 +56,10 @@
         />
         <div class="heart-text">
           <div class="person">
-            <p>陳欣妍 Shirley</p>
+            <p>{{$t('home.aspiration.p4')}} Shirley</p>
           </div>
           <div class="box">
-            <span>以後可以戴唔會縮細我眼睛既平光鏡！</span>
+            <span>{{$t('home.aspiration.span4')}}</span>
           </div>
         </div>
       </div>

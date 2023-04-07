@@ -6,12 +6,12 @@
         :key="index"
         class="nav_item md:flex"
       >
-        <nuxt-link :to="navItem.link" class="main_nav">
+        <nuxt-link :to="localePath(navItem.link)" class="main_nav">
           <div class="mian_nav_text font-black">{{ navItem.main_nav }}</div>
         </nuxt-link>
         <ul class="child_nav flex flex-col gap-2">
           <li v-for="(childItem, index) in navItem.child_list" :key="index">
-            <nuxt-link :to="childItem.link">{{
+            <nuxt-link :to="localePath(childItem.link)">{{
               childItem.child_item
             }}</nuxt-link>
           </li>
@@ -20,7 +20,7 @@
     </ul>
     <div class="contact">
       <div class="contact_text md:flex md:justify-center md:items-center">
-        立即預約 <span>6061 0511</span>
+        {{$t('home.navbar')}} <span>6061 0511</span>
       </div>
     </div>
   </div>

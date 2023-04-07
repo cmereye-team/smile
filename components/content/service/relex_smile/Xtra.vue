@@ -3,28 +3,22 @@
     <div class="xtra_title page_container">
       <div class="flex justify-center mt-8 md:mt-0">
         <h2 class="flex-col">
-          SMILE XTRA角膜膠原交聯術<span>Comeal Collagen Cross-Linking</span>
+          {{$t('service.relexSmile.xtra.h2')}}<span>Comeal Collagen Cross-Linking</span>
         </h2>
       </div>
-      <p>(可與SMILE微笑激光矯視同時進行)</p>
+      <p>{{$t('service.relexSmile.xtra.p1')}}</p>
     </div>
 
     <ul class="xtra_des">
       <li>
-        <h3 class="gradient_title_bg">什麼是SMILE XTRA？</h3>
-        <p>
-          透過在角膜局部加入維生素B2,再經紫外線V2照射,使角膜裡面的膠原蛋白緊扣,
-          <br />
-          令角膜變得更加堅韌和穩定,降低角膜降弧／變形／反彈的寬度
+        <h3 class="gradient_title_bg">{{$t('service.relexSmile.xtra.h3_1')}}</h3>
+        <p v-html="$t('service.relexSmile.xtra.p2')">
         </p>
       </li>
 
       <li>
-        <h3 class="gradient_title_bg">我需要接受SMILE XTRA角膜膠原交聯術?</h3>
-        <p>
-          如果你的眼晴度數較深、角膜比較薄，希望加強角膜以減低度數反彈機會，<br />經醫生評估後均可接受SMILE
-          XTRA角膜膠原交聯術。
-        </p>
+        <h3 class="gradient_title_bg">{{$t('service.relexSmile.xtra.h3_2')}}</h3>
+        <p v-html="$t('service.relexSmile.xtra.p3')"></p>
       </li>
     </ul>
     <a href="#" class="mbShow">
@@ -36,7 +30,7 @@
             style="width: 12vw"
           />
           <div class="flex flex-col justify-center" style="padding: 0 10px">
-            <span>立即預約 / 查詢</span>
+            <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
             <span>6061 0511</span>
           </div>
         </div>
@@ -184,7 +178,7 @@ export default {
         font-size: 15px;
         padding: 8px;
       }
-      p {
+      /deep/ p {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 400;

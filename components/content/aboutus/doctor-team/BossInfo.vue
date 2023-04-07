@@ -11,27 +11,27 @@
                 alt
               />
               <div class="boss_text_name my-3 mbShow">
-                <h3>香港希瑪國際眼科醫療集團創辦人</h3>
-                <span>林順潮醫生</span>
+                <h3>{{ $t('aboutUs.medicalTeam.bossInfo.h3') }}</h3>
+                <span>{{ $t('aboutUs.medicalTeam.bossInfo.span') }}</span>
               </div>
             </div>
           </div>
         </div>
         <div class="text_box">
           <div class="pcShow">
-            <h3>香港希瑪國際眼科醫療集團創辦人</h3>
+            <h3>{{ $t('aboutUs.medicalTeam.bossInfo.h3') }}</h3>
             <br />
-            <span>林順潮醫生</span>
+            <span>{{ $t('aboutUs.medicalTeam.bossInfo.span') }}</span>
           </div>
           <p>
-            創辦人林順潮教授是亞太眼科主要領導者之一， <br class="pcShow" />
-            連續3屆被評為「世界眼科100位最具影響力人物之一」，<br
+            {{ $t('aboutUs.medicalTeam.bossInfo.p1_1') }}<br class="pcShow" />
+            {{ $t('aboutUs.medicalTeam.bossInfo.p1_2') }}<br
               class="pcShow"
             />
-            並獲「世界十大傑出青年」、「香港十大傑出青年」、<br
+            {{ $t('aboutUs.medicalTeam.bossInfo.p1_3') }}<br
               class="pcShow"
             />
-            「亞太最佳眼科臨床教授獎」、「亞太眼科傑出成就獎」、「亞太眼科學術最高成就獎」等殊榮。
+            {{ $t('aboutUs.medicalTeam.bossInfo.p1_4') }}
           </p>
           <div class="rong_menu">
             <ul class="child_menu">
@@ -51,27 +51,27 @@ export default {
     return {
       child_list: [
         {
-          child_item: "香港大學內外全科醫學士",
+          child_item: this.$t('aboutUs.medicalTeam.bossInfo.li1'),
           link: "",
         },
         {
-          child_item: " 香港醫學專科學院院士(眼科) ",
+          child_item: this.$t('aboutUs.medicalTeam.bossInfo.li2'),
           link: "",
         },
         {
-          child_item: "  香港眼科醫學院院士 ",
+          child_item: this.$t('aboutUs.medicalTeam.bossInfo.li3'),
           link: "",
         },
         {
-          child_item: "  英國愛丁堡皇家外科醫學院院士(眼科) ",
+          child_item: this.$t('aboutUs.medicalTeam.bossInfo.li4'),
           link: "",
         },
         {
-          child_item: "  英國皇家眼科學院院士",
+          child_item: this.$t('aboutUs.medicalTeam.bossInfo.li5'),
           link: "",
         },
         {
-          child_item: "  香港中文大學醫學博士",
+          child_item: this.$t('aboutUs.medicalTeam.bossInfo.li6'),
           link: "",
         },
       ],

@@ -1,7 +1,7 @@
 <template>
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>合適對象</h2>
+      <h2>{{$t('service.lasik.suitable.h2')}}</h2>
     </div>
     <div class="flex justify-evenly suit_box mt-10">
       <div class="flex flex-col items-center suitable">
@@ -9,35 +9,35 @@
           src="https://static.cmereye.com/imgs/2022/12/6c23e8f2d3399087.png"
           alt=""
         />
-        <span>近視1,500度以下<br />遠視 / 散光600度以下</span>
+        <span v-html="$t('service.lasik.suitable.span1')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/a8d803f942bc4256.png"
           alt=""
         />
-        <span>投考或從事紀律部隊/<br />航空業界人士</span>
+        <span v-html="$t('service.lasik.suitable.span2')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/324ad7198a9d2632.png"
           alt=""
         />
-        <span>熱愛運動</span>
+        <span v-html="$t('service.lasik.suitable.span3')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/d2407e6ff4b3b56c.png"
           alt=""
         />
-        <span>不愛戴隱形眼鏡或<br />眼鏡人士</span>
+        <span v-html="$t('service.lasik.suitable.span4')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/af544fe01cbe5d65.png"
           alt=""
         />
-        <span>擔心長期配戴隱形眼鏡<br />影響眼睛健康人士</span>
+        <span v-html="$t('service.lasik.suitable.span5')"></span>
       </div>
     </div>
     <a href="#" class="mbShow">
@@ -49,7 +49,7 @@
             style="width: 12vw"
           />
           <div class="flex flex-col justify-center" style="padding: 0 10px">
-            <span>立即預約 / 查詢</span>
+            <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
             <span>6061 0511</span>
           </div>
         </div>

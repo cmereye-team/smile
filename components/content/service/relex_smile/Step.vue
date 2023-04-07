@@ -1,17 +1,15 @@
 <template>
   <div class="step section page_container">
     <div class="flex justify-center md:mt-28 mbShow">
-      <h2>微笑矯視</h2>
+      <h2>{{$t('service.relexSmile.step.h2_1')}}</h2>
     </div>
     <div class="mbShow mb-10">
       <p style="text-align: justify">
-        突破性全新近視矯正技術，比傳統的LASIK激光矯視更安全、微創。本中心的
-        SMILE 微笑矯視使用 Carl Zeiss VisuMax
-        激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-4mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。
+        {{$t('service.relexSmile.step.h2_1')}}
       </p>
     </div>
     <div class="flex justify-center md:mt-28">
-      <h2>矯正步驟</h2>
+      <h2>{{$t('service.relexSmile.step.p')}}</h2>
     </div>
 
     <ul class="step_list flex justify-between items-center">
@@ -29,15 +27,15 @@ export default {
       stepList: [
         {
           src: require("@/asset/image/service/relex_smile/Step1.png"),
-          des: "以全飛秒激光直接切割角膜中層",
+          des: this.$t('service.relexSmile.step.des1'),
         },
         {
           src: require("@/asset/image/service/relex_smile/Step2.png"),
-          des: "製作一個約2-4mm的小切口",
+          des: this.$t('service.relexSmile.step.des2'),
         },
         {
           src: require("@/asset/image/service/relex_smile/Step3.png"),
-          des: "將切割了的角膜透鏡從切口抽出",
+          des:this.$t('service.relexSmile.step.des3'),
         },
       ],
     };

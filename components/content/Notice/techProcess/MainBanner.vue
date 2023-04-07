@@ -1,7 +1,7 @@
 <template>
   <div class="main_banner">
     <banner class="banner"> <template #title>
-    矯視流程
+      {{$t('notice.techProcess.process.h2')}}
       </template>
     </banner>
   </div>

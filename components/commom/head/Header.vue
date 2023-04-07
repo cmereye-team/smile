@@ -4,7 +4,7 @@
 
     <div class="header flex-between">
       <div class="left">
-        <nuxt-link to="/">
+        <nuxt-link :to="localePath('/')">
           <img class="head_logo" src="@/asset/image/common/Logo.svg" alt=""
         /></nuxt-link>
       </div>
@@ -31,13 +31,13 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="1-1">
-                    <nuxt-link to="/group-profile"> 集團及中心簡介</nuxt-link>
+                    <nuxt-link :to="localePath('/group-profile')"> 集團及中心簡介</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="1-2">
-                    <nuxt-link to="/our-medical-team">醫生團隊</nuxt-link>
+                    <nuxt-link :to="localePath('/our-medical-team')">醫生團隊</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="1-3">
-                    <nuxt-link to="/medical-equipment">中心設備</nuxt-link>
+                    <nuxt-link :to="localePath('/medical-equipment')">中心設備</nuxt-link>
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
@@ -47,22 +47,22 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="2-1">
-                    <nuxt-link to="/vision-correction/relex-smile">
+                    <nuxt-link :to="localePath('/vision-correction/relex-smile')">
                       SMILE 微笑激光矯視</nuxt-link
                     >
                   </el-menu-item>
                   <el-menu-item index="2-2">
-                    <nuxt-link to="/vision-correction-presbyopia"
+                    <nuxt-link :to="localePath('/vision-correction-presbyopia')"
                       >CMER CLEAR-Vision</nuxt-link
                     ></el-menu-item
                   >
                   <el-menu-item index="2-3">
-                    <nuxt-link to="/vision-correction-lasik"
+                    <nuxt-link :to="localePath('/vision-correction-lasik')"
                       >LASIK 激光矯視</nuxt-link
                     >
                   </el-menu-item>
                   <el-menu-item index="2-4">
-                    <nuxt-link to="/vision-correction-icl"
+                    <nuxt-link :to="localePath('/vision-correction-icl')"
                       >ICL植入式隱形眼鏡</nuxt-link
                     >
                   </el-menu-item>
@@ -74,20 +74,20 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="3-1">
-                    <nuxt-link to="/patient-info"> 眼睛檢查及矯視前</nuxt-link>
+                    <nuxt-link :to="localePath('/patient-info')"> 眼睛檢查及矯視前</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="3-2">
-                    <nuxt-link to="/flow-of-vision-correction"
+                    <nuxt-link :to="localePath('/flow-of-vision-correction')"
                       >矯視流程</nuxt-link
                     ></el-menu-item
                   >
                   <el-menu-item index="3-3">
-                    <nuxt-link to="/post-corrective-care">矯視後覆診</nuxt-link>
+                    <nuxt-link :to="localePath('/post-corrective-care')">矯視後覆診</nuxt-link>
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-menu-item index="4">
-                <nuxt-link to="/FreQuestions"><span>常見問題</span></nuxt-link>
+                <nuxt-link :to="localePath('/FreQuestions')"><span>常見問題</span></nuxt-link>
               </el-menu-item>
               <el-submenu index="5">
                 <template slot="title">
@@ -95,21 +95,21 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="5-1">
-                    <nuxt-link to="/video"> 個案分享及矯視資訊影片</nuxt-link>
+                    <nuxt-link :to="localePath('/video')"> 個案分享及矯視資訊影片</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="5-2">
-                    <nuxt-link to="/media">媒體報導</nuxt-link></el-menu-item
+                    <nuxt-link :to="localePath('/media')">媒體報導</nuxt-link></el-menu-item
                   >
                 </el-menu-item-group>
               </el-submenu>
               <el-menu-item index="6">
-                <nuxt-link to="/charge-detail"><span>收費詳情</span></nuxt-link>
+                <nuxt-link :to="localePath('/charge-detail')"><span>收費詳情</span></nuxt-link>
               </el-menu-item>
               <el-menu-item index="7">
-                <nuxt-link to="/contact-us"><span>聯絡我們</span></nuxt-link>
+                <nuxt-link :to="localePath('/contact-us')"><span>聯絡我們</span></nuxt-link>
               </el-menu-item>
               <el-menu-item index="8">
-                <nuxt-link to="/booking"><span>預約服務</span></nuxt-link>
+                <nuxt-link :to="localePath('/booking')"><span>預約服務</span></nuxt-link>
               </el-menu-item>
             </el-menu>
           </el-row>
@@ -149,7 +149,7 @@
             :class="navItem.child_list.length !== 0 ? 'main_after' : ''" 
           >
             <nuxt-link
-              :to="navItem.link"
+              :to="localePath(navItem.link)"
               :class="
                 navItem.child_list.length !== 0 ? 'main_nav_after' : 'main_nav'
               "
@@ -162,22 +162,24 @@
               v-if="navItem.child_list.length > 0"
             >
               <li v-for="(childItem, index) in navItem.child_list" :key="index">
-                <nuxt-link :to="childItem.link" class="text-base">{{
-                  childItem.child_item
+                <nuxt-link :to="localePath(childItem.link)" class="text-base">{{
+                  `· ` +childItem.child_item
                 }}</nuxt-link>
               </li>
               <li></li>
             </ul>
           </li>
         </ul>
-        <nuxt-link to="/booking" class="text-base ll_box nav-bookingservice  pcShow"
-          >預約服務</nuxt-link
+        <nuxt-link :to="localePath('/booking')" class="text-base ll_box nav-bookingservice  pcShow"
+          >{{$t('home.headers.reservationService')}}</nuxt-link
         >
         <div class="flex items-center nav-language group relative">
           <img src="../../../asset/image/common/Vector.png" alt="" />
           <ul class="nav-language-box absolute top-10   hidden group-hover:block  "   >
-            <li><a href="###">繁</a> </li>
-            <li><a href="###">简</a> </li>
+            <!-- <li><a href="###">繁</a> </li>
+            <li><a href="###">简</a> </li> -->
+            <li><nuxt-link :to="switchLocalePath('hk')">繁</nuxt-link></li>
+            <li><nuxt-link :to="switchLocalePath('cn')">简</nuxt-link></li>
           </ul>
         </div>
 
@@ -196,7 +198,7 @@
                 class="p-1"
               />
               <div class="p-1 text-left">
-                <h3 class="text-xl font-normal">立即預約</h3>
+                <h3 class="text-xl font-normal">{{$t('home.navbar')}}</h3>
                 <p class="text-base text-center">6061 0511</p>
               </div>
             </div>
@@ -251,102 +253,102 @@ export default {
       
       navList: [
         {
-          main_nav: "關於希瑪",
+          main_nav: this.$t('home.headers.aboutSmile'),
           link: "",
           child_list: [
             {
-              child_item: "· 集團及中心簡介",
+              child_item: this.$t('home.headers.aboutSmileChild_1'),
               link: "/group-profile",
             },
             {
-              child_item: "· 醫生團隊",
+              child_item: this.$t('home.headers.aboutSmileChild_2'),
               link: "/our-medical-team",
             },
             {
-              child_item: "· 中心設備",
+              child_item: this.$t('home.headers.aboutSmileChild_3'),
               link: "/medical-equipment",
             },
           ],
         },
         {
-          main_nav: "矯視服務",
+          main_nav: this.$t('home.headers.orthopedicServices'),
           link: "",
           child_list: [
             {
-              child_item: "· SMILE 微笑激光矯視",
+              child_item: this.$t('home.headers.orthopedicServicesChild_1'),
               link: "/vision-correction/relex-smile",
             },
             {
-              child_item: "· CMER CLEAR-Vision",
+              child_item: this.$t('home.headers.orthopedicServicesChild_2'),
               link: "/vision-correction-presbyopia",
             },
             {
-              child_item: "· LASIK 激光矯視",
+              child_item: this.$t('home.headers.orthopedicServicesChild_3'),
               link: "/vision-correction-lasik",
             },
             {
-              child_item: "· ICL植入式隱形眼鏡",
+              child_item: this.$t('home.headers.orthopedicServicesChild_4'),
               link: "/vision-correction-icl",
             },
           ],
         },
         {
-          main_nav: "診症須知",
+          main_nav: this.$t('home.headers.diagnosisInstructions'),
           link: "",
           child_list: [
             {
-              child_item: "· 眼睛檢查及矯視前",
+              child_item: this.$t('home.headers.diagnosisInstructionsChild_1'),
               link: "/patient-info",
             },
             {
-              child_item: "· 矯視流程",
+              child_item: this.$t('home.headers.diagnosisInstructionsChild_2'),
               link: "/flow-of-vision-correction",
             },
             {
-              child_item: "· 矯視後覆診",
+              child_item: this.$t('home.headers.diagnosisInstructionsChild_3'),
               link: "/post-corrective-care",
             },
           ],
         },
         {
-          main_nav: "常見問題",
+          main_nav: this.$t('home.headers.commonProblem'),
           link: "",
           child_list: [
             {
-              child_item: "· SMILE 微笑激光矯視",
+              child_item: this.$t('home.headers.commonProblemChild_1'),
               link: "/FreQuestions#faq-smile",
             },
             {
-              child_item: "· LASIK激光矯視",
+              child_item: this.$t('home.headers.commonProblemChild_2'),
               link: "/FreQuestions#faq-lasik",
             },
             {
-              child_item: "· ICL植入式隱形眼鏡",
+              child_item: this.$t('home.headers.commonProblemChild_3'),
               link: "/FreQuestions#faq-icl",
             },
             {
-              child_item: "· CLEAR-Vision",
+              child_item: this.$t('home.headers.commonProblemChild_4'),
               link: "/FreQuestions#faq-presbyopia",
             },
           ],
         },
         {
-          main_nav: "眼科資訊",
+          main_nav: this.$t('home.headers.ophthalmicConsultation'),
           link: "",
           child_list: [
             {
-              child_item: "· 個案分享及矯視資訊影片",
+              child_item: this.$t('home.headers.ophthalmicConsultationChild_1'),
               link: "/video",
             },
             {
-              child_item: "· 媒體報導",
+              child_item: this.$t('home.headers.ophthalmicConsultationChild_2'),
               link: "/media",
             },
           ],
         },
 
         {
-          main_nav: "收費詳情",
+          main_nav: this.$t('home.headers.feeConsultation'),
           link: "/charge-detail",
           child_list: [],
         },
@@ -356,7 +358,7 @@ export default {
         //   child_list: [],
         // },
         {
-          main_nav: "聯絡我們",
+          main_nav: this.$t('home.headers.contactUs'),
           link: "/contact-us",
           child_list: [],
         },
@@ -370,9 +372,11 @@ export default {
   },
   created() {
     this.handleSelect();
+    
   },
   mounted() {
     this.pointinit();
+    console.log('i18n------->',this.$i18n)
 
    // 获取菜单和菜单底部的横线元素
 const menu = document.querySelector(".nav ");
@@ -511,7 +515,7 @@ $active_gradient: #4570b6;
 @media (min-width: 768px) {
   .main_after .nuxt-link-active .mian_nav_text {color: #4570B6 !important;}
   
- 
+  
 
   .nav {
     display: flex;
@@ -762,6 +766,12 @@ $active_gradient: #4570b6;
       color: #4570b6;
       transform: translate3d(100%, 0, 0);
     }
+  }
+  .nav-language{
+    z-index: 99;
+  }
+  .nav-language-box{
+    width: 50px;
   }
 }
 // mb

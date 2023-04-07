@@ -2,103 +2,26 @@
   <div class="tab flex justify-center page_container md:mb-28" id="tab">
     <div class="justify-center memu">
       <div class="flex justify-center">
-        <h2 id="faq-icl">ICL植入式隱形眼鏡</h2>
+        <h2 id="faq-icl">{{$t('home.headers.commonProblemChild_3')}}</h2>
       </div>
       <el-collapse v-model="activeNames" @change="handleChange">
         <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
-        <el-collapse-item name="1">
+        <el-collapse-item v-for="(item,index) in lists" :key="index+1" :name="`${index+1}`">
           <template slot="title">
             <div class="contents">
               <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('1') !== -1 ? 'title2' : 'title1'"></i>
+              <i :class="judgeActive(`${index+1}`) !== -1 ? 'title2' : 'title1'"></i>
               <div class="mb-width">
-                <p :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">
-                  ICL植入式隱形眼鏡的適用矯正範圍是？
+                <p :class="judgeActive(`${index+1}`) !== -1 ? 'p2' : 'p1'">
+                  {{item.title}}
                 </p>
               </div>
             </div>
             <i
-              :class="judgeActive('1') !== -1 ? 'downArrow2' : 'downArrow1'"
+              :class="judgeActive(`${index+1}`) !== -1 ? 'downArrow2' : 'downArrow1'"
             ></i>
           </template>
-          <div>
-            ICL植入式隱形眼鏡可用於矯正近視1800度以下、遠視1000度以下和散光600度以下。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="2">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('2') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">
-                  別人能看出我眼中的ICL植入式隱形眼鏡嗎？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('2') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            由於晶體的位置位於眼內虹膜和晶狀體之間，所以外觀上看不出來。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="3">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('3') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">
-                  ICL植入式隱形眼鏡後是否會有異物感？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('3') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            ICL植入式隱形眼鏡可以與眼球達到高度生物相容，既不會引起炎症也不會有異物感。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="4">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('4') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">
-                  術後多久可以正常工作和生活？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('4') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            ICL復原期短，矯正後第一天即可享受清晰視力，醫生屆時會提供具體建議。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="5">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('5') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('5') !== -1 ? 'p2' : 'p1'">
-                  為甚麼ICL植入式隱形眼鏡會比SMILE微笑激光矯視及LASIK激光矯視貴呢?
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('5') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            我們中心使用的人工晶體均來自瑞士個體化訂製，是國際眼科高科技優質產品，跟自動化程度較大的SMILE微笑激光矯視和LASIK激光矯力，ICL對醫生的技術要求會更高。
+          <div v-html="item.content">
           </div>
         </el-collapse-item>
       </el-collapse>
@@ -111,6 +34,23 @@ export default {
     return {
       activeNames: ["1"],
       currentIndex: 1, // 当前点击的tab的索引
+      lists: [
+        {
+          ...this.$t('freQuestios.thirtProblem.problem1')
+        },
+        {
+          ...this.$t('freQuestios.thirtProblem.problem2'),
+        },
+        {
+          ...this.$t('freQuestios.thirtProblem.problem3')
+        },
+        {
+          ...this.$t('freQuestios.thirtProblem.problem4')
+        },
+        {
+          ...this.$t('freQuestios.thirtProblem.problem5')
+        }
+      ]
     };
   },
   created() {},

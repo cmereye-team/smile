@@ -2,19 +2,19 @@
   <div class="Se2ComIntro">
     <div class="company page_container">
       <div class='company_tit'>
-        <p class="text_blue">香港希瑪國際眼科醫療集團</p>
-        <p class="text_blue2">（簡稱：希瑪眼科，股份代碼：3309.HK）</p>
+        <p class="text_blue">{{$t('aboutUs.centreIntroduction.Se2ComIntro.p1')}}</p>
+        <p class="text_blue2">（{{$t('aboutUs.centreIntroduction.Se2ComIntro.p2')}}）</p>
       </div>
       <p>
-        由眼科醫生林順潮教授於2012年創辦<br class="mbShow"/><span class="pcShow">，</span>總部設於香港，旗下擁有15間醫療機構<br/>包括香港中環眼科中心<br class="mbShow"/>
-        旺角中心，和沙田、銅鑼灣、觀塘、元朗和<br class="mbShow"/>荃灣診所<br class="pcShow" />還有內地深圳、北京<br class="mbShow"/><span class="pcShow">、</span>上海、昆明，惠州和珠海的分院<br />
-        集團員工人數超過900人<span class="pcShow">，</span><br class="mbShow"/>是香港首間大型連鎖上市眼科集團
+        {{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_1')}}<br class="mbShow"/><span class="pcShow">，</span>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_2')}}<br/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_3')}}<br class="mbShow"/>
+        {{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_4')}}<br class="mbShow"/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_5')}}<br class="pcShow" />{{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_6')}}<br class="mbShow"/><span class="pcShow">、</span>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_7')}}<br />
+        {{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_8')}}<span class="pcShow">，</span><br class="mbShow"/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p3_9')}}
       </p>
       <p class="mag_top">
-        <span style="margin-bottom:10px;">希瑪眼科中心</span><br />
-        擴展至全港擁有10間眼科診所、<br class="mbShow"/>4間微笑矯視中心、 2間視光中心<br />
-        以及2間嘉賓眼科專科及激光矯視手術中心<br class="mbShow"/>（希瑪全資附屬公司）<br class="pcShow" />
-        眼科診所及<br class="mbShow"/>中心遍佈港、九、新界<br class="mbShow"/><span class="pcShow">，</span>交通便利，環境舒適
+        <span style="margin-bottom:10px;">{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_1')}}</span><br />
+        {{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_2')}}<br class="mbShow"/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_3')}}<br />
+        {{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_4')}}<br class="mbShow"/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_5')}}<br class="pcShow" />
+        {{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_6')}}<br class="mbShow"/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_7')}}<br class="mbShow"/><span class="pcShow">，</span>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_8')}}
       </p>
       <a class="more_lin">了解更多</a>
     </div>
@@ -23,15 +23,15 @@
         <p>VISION</p>
       </div>
       <div class="serve_title">
-        <p>經營理念</p>
+        <p>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p5')}}</p>
       </div>
 
       <div class="section_text md:flex shadow-lg">
         <div class="details_box">
           <p>
-            我們的集團名稱 <br />正正反映著我們的<br
+            {{$t('aboutUs.centreIntroduction.Se2ComIntro.p6_1')}} <br />{{$t('aboutUs.centreIntroduction.Se2ComIntro.p6_2')}}<br
               class="pcShow"
-            />理念與執著！
+            />{{$t('aboutUs.centreIntroduction.Se2ComIntro.p6_3')}}
           </p>
         </div>
         <div class="content mx-12 md:mx-0">
@@ -39,43 +39,43 @@
             <li>
               <span>C</span>
               <p>
-                 <i>專業臨床服務</i>
+                 <i>{{$t('aboutUs.centreIntroduction.Se2ComIntro.i1')}}</i>
                 <i>Professional <em>C</em>linical Services</i>
               </p>
             </li>
             <li>
               <span>M</span>
               <p>
-                 <i>現代化管理</i>
+                 <i>{{$t('aboutUs.centreIntroduction.Se2ComIntro.i2')}}</i>
                 <i>Modern <em>M</em>anagement</i>
               </p>
             </li>
             <li>
               <span>E</span>
               <p>
-                <i>優質教育</i>
+                <i>{{$t('aboutUs.centreIntroduction.Se2ComIntro.i3')}}</i>
                 <i>Quality <em>E</em>ducation</i>
               </p>
             </li>
             <li>
               <span>R</span>
               <p>
-                <i>開創性科研</i>
+                <i>{{$t('aboutUs.centreIntroduction.Se2ComIntro.i4')}}</i>
                 <i>Pioneering <em>R</em>esearch</i>
               </p>
             </li>
             <div class="xima">
-              <span>希瑪</span>
+              <span>{{$t('aboutUs.centreIntroduction.Se2ComIntro.span')}}</span>
               <p>
-                「希」望為眼睛帶來希望之光；「希瑪」與「喜瑪」同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意希瑪眼科憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念
+                {{$t('aboutUs.centreIntroduction.Se2ComIntro.p7')}}
               </p>
             </div>
           </ul>
           <div class="award_text">
-            <h4>憑藉醫療技術和服務聲譽，我們榮獲：</h4>
-            <p>2020年港股「最佳價值醫藥及醫療股公司」大獎</p>
-            <p>2019年大健康產業創新獎</p>
-            <p>2018年香港上市公開招股認購超過1500倍 (全港十大之一)</p>
+            <h4>{{$t('aboutUs.centreIntroduction.Se2ComIntro.h4')}}</h4>
+            <p>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p8')}}</p>
+            <p>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p9')}}</p>
+            <p>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p10')}}</p>
           </div>
         </div>
       </div>

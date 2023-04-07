@@ -1,32 +1,30 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>矯視後覆診</h2>
+      <h2>{{$t('notice.followdiag.followDiago.h2')}}</h2>
     </div>
     <div class="time-box">
       <div class="one">
         <div class="piont"></div>
-        <span>翌日</span>
+        <span>{{$t('notice.followdiag.followDiago.span1')}}</span>
       </div>
       <div class="two">
         <div class="piont"></div>
-        <span>一星期</span>
+        <span>{{$t('notice.followdiag.followDiago.span2')}}</span>
       </div>
       <div class="three">
         <div class="piont"></div>
-        <span>一個月</span>
+        <span>{{$t('notice.followdiag.followDiago.span3')}}</span>
       </div>
       <div class="four">
         <div class="piont"></div>
         <div class="arrow"></div>
-        <span>三個月</span>
+        <span>{{$t('notice.followdiag.followDiago.span4')}}</span>
       </div>
       <div class="five">
         <div class="piont"></div>
 
-        <span
-          >六個月<br />
-          （或按醫生之需要覆診指示）</span
+        <span v-html="$t('notice.followdiag.followDiago.span5')"></span
         >
       </div>
     </div>

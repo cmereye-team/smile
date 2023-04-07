@@ -1,3 +1,7 @@
+
+import i18n from "./plugins/i18n"
+
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -77,6 +81,10 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      '@nuxtjs/i18n',
+       i18n
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包

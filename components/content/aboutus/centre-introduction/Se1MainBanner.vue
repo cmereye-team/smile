@@ -4,10 +4,10 @@
       <div class="des_box">
         <h3 class="gradient_font">
           <div class="pcShow">
-            <p class="title_cer">集團及中心簡介</p>
+            <p class="title_cer">{{$t('home.headers.aboutSmileChild_1')}}</p>
           </div>
           <div class="mbShow banner_serve">
-            <p class="title_cer" style="">集團及中心簡介</p>
+            <p class="title_cer" style="">{{$t('home.headers.aboutSmileChild_1')}}</p>
           </div>
         </h3>
         <!-- <p>

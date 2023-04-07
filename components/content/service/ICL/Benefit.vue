@@ -1,7 +1,7 @@
 <template>
   <div class="benefit section pc_page_container">
     <div class="flex justify-center md:mt-28 mt-10 page_container">
-      <h2>ICL植入式隱形眼鏡的好處</h2>
+      <h2>{{$t('service.icl.benefit.h2')}}</h2>
     </div>
     <div class="benefit_content">
       <ul
@@ -33,33 +33,33 @@ export default {
       benefitList: [
         {
           index: require("@/asset/image/service/ICL/one.png"),
-          des: "最高可矯正1800度近視",
-          towdes: "1000度遠視、600度散光",
+          des: this.$t('service.icl.benefit.benefit1.des'),
+          towdes: this.$t('service.icl.benefit.benefit1.towdes')
         },
         {
           index: require("@/asset/image/service/ICL/two.png"),
-          des: "在FDA研究中，高達99%客人",
-          towdes: "滿意視力改善效果",
+          des: this.$t('service.icl.benefit.benefit2.des'),
+          towdes: this.$t('service.icl.benefit.benefit2.towdes')
         },
         {
           index: require("@/asset/image/service/ICL/three.png"),
-          des: "微創，手術時間短，復原期短",
-          towdes: "最快5 – 10分鐘內完成矯視",
+          des: this.$t('service.icl.benefit.benefit3.des'),
+          towdes: this.$t('service.icl.benefit.benefit3.towdes')
         },
         {
           index: require("@/asset/image/service/ICL/four.png"),
-          des: "不用切除角膜組織",
-          towdes: "",
+          des: this.$t('service.icl.benefit.benefit4.des'),
+          towdes: ""
         },
         {
           index: require("@/asset/image/service/ICL/five.png"),
-          des: "沒有乾眼症的副作",
-          towdes: "",
+          des: this.$t('service.icl.benefit.benefit5.des'),
+          towdes: ""
         },
         {
           index: require("@/asset/image/service/ICL/six.png"),
-          des: "是一項可還原技術",
-          towdes: "客人可按需要選擇取出ICL",
+          des: this.$t('service.icl.benefit.benefit6.des'),
+          towdes: this.$t('service.icl.benefit.benefit6.towdes')
         },
       ],
     };

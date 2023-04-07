@@ -2,7 +2,7 @@
   <div class="main_banner">
     <banner class="banner">
       <template #title>
-        媒體報導
+        {{ $t('home.headers.ophthalmicConsultationChild_2') }}
       </template>
     </banner>
   </div>

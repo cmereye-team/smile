@@ -1,7 +1,7 @@
 <template>
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-20 mt-10">
-      <h2>更多ICL植入式隱形眼鏡真實個案分享</h2>
+      <h2>{{$t('service.icl.share.h2')}}</h2>
     </div>
     <div class="flex mb-28 pcShow justify-center">
       <div class="px-2">
@@ -62,7 +62,7 @@
             style="width: 12vw"
           />
           <div class="flex flex-col justify-center" style="padding: 0 10px">
-            <span>立即預約 / 查詢</span>
+            <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
             <span>6061 0511</span>
           </div>
         </div>

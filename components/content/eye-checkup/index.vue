@@ -4,35 +4,35 @@
  
 
     <div class="flex justify-center md:mt-14 mt-10">   
-      <h2>預約術前眼睛檢查</h2>
+      <h2>{{$t('eyeCheckup.h2')}}</h2>
     </div>
     <div class="jianc">
       <div class="jianc_box">
         <div class="box_text">
-          <h3>線上預約術前眼睛檢查</h3>
+          <h3>{{$t('eyeCheckup.h3')}}</h3>
           <p>
-            請注意:
-            到診檢查前，應停止佩戴隱形眼鏡，防止角膜被擠壓，影響量度數據。
+            {{$t('eyeCheckup.p1')}}
+            {{$t('eyeCheckup.p2')}}
           </p>
           <p>
-            · 軟性隱形眼鏡 (不含散光)：7天前停止佩戴<br />
-            · 軟性隱形眼鏡 (含散光)：14天前停止佩戴<br />
-            · 硬性隱形眼鏡：30天前停止佩戴<br />
-            · 矯視隱形眼鏡：90天前停止佩戴
+            · {{$t('eyeCheckup.p3')}}<br />
+            · {{$t('eyeCheckup.p4')}}<br />
+            · {{$t('eyeCheckup.p5')}}<br />
+            · {{$t('eyeCheckup.p6')}}
           </p>
           <p class="md:mt-5">
-            全面術前眼睛檢查項目包括：<br />
-            屈光檢查<br />
-            · Sirius: 角膜結構及瞳孔測量<br />
-            · Pentacam:360全面角膜結構測量<br />
-            · 淚水分泌測試<br />
-            · OCT:黃斑及視網膜掃描 (如有需要)<br />
-            · SLO:360全面眼底檢查<br />
-            · 醫生會診：眼睛狀況評估及矯視方案建議
+            {{$t('eyeCheckup.p7')}}：<br />
+            {{$t('eyeCheckup.p8')}}<br />
+            · {{$t('eyeCheckup.p9')}}<br />
+            · {{$t('eyeCheckup.p10')}}<br />
+            · {{$t('eyeCheckup.p11')}}<br />
+            · {{$t('eyeCheckup.p12')}}<br />
+            · {{$t('eyeCheckup.p13')}}<br />
+            · {{$t('eyeCheckup.p14')}}
           </p>
           <p class="md:mt-5">
-            術前眼睛檢查費用︰星期一至六 $100<br />
-            *若成功預約矯視，會退回術前檢查費用<br />
+            {{$t('eyeCheckup.p15')}}<br />
+            {{$t('eyeCheckup.p16')}}<br />
           </p>
           
             <a
@@ -40,7 +40,7 @@
               href=" https://wa.me/85260610511"
               target="_blank"
               ><span
-                ><button class="button_size_4">立即WhatsApp預約</button></span
+                ><button class="button_size_4">{{$t('eyeCheckup.button')}}</button></span
               ></a
             >
           

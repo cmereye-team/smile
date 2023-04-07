@@ -1,14 +1,14 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>人工晶體</h2>
+      <h2>{{$t('service.clearVision.manMade.h2')}}</h2>
     </div>
     <div class="mbShow">
       <span>
-        坊間稱之為人工晶體置換術。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，一次過解決近視、遠視、散光、老花等問題。 </span
+        {{$t('service.clearVision.manMade.span1')}} </span
       ><br />
       <span>
-        希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業咨詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁之晶體。
+        {{$t('service.clearVision.manMade.span2')}}
       </span>
     </div>
     <div class="madeBox1">
@@ -17,7 +17,7 @@
         alt=""
       />
       <span
-        >多焦距人工晶體以多個細小壓環把進入眼睛的光線分為兩至三束主要光線，產生不同焦點，形成遠、中、近的影像，讓眼睛可以不依靠眼內肌肉對焦，藉此解決近視、遠視、散光、老花等視力問題。</span
+        >{{$t('service.clearVision.manMade.span3')}}</span
       >
     </div>
     <div class="madeBox2">
@@ -26,7 +26,7 @@
         alt=""
       />
       <span
-        >除了多焦距人工晶體外，亦有基本的單焦距人工晶體、散光多焦距人工晶體等選項。建議請先預約檢查諮詢眼科專科醫生專業意見，再選擇合適自己的人工晶體。</span
+        >{{$t('service.clearVision.manMade.span4')}}</span
       >
     </div>
   </div>

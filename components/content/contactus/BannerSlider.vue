@@ -2,7 +2,7 @@
   <div class="main_banner">
     <banner class="banner">
       <template #title>
-        聯絡我們
+        {{ $t('home.headers.contactUs') }}
       </template>
     </banner>
   </div>

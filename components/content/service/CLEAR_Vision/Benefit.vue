@@ -1,7 +1,7 @@
 <template>
   <div class="benefit section pc_page_container">
     <div class="flex justify-center md:mt-28 mt-10 page_container">
-      <h2>人工晶體置換術的好處</h2>
+      <h2>{{$t('service.clearVision.benefit.h2')}}</h2>
     </div>
     <div class="benefit_content">
       <ul
@@ -32,27 +32,27 @@ export default {
       benefitList: [
         {
           index: require("@/asset/image/service/CLEAR_Vision/one.png"),
-          des: "最快術後一天可如常生活或工作",
+          des: this.$t('service.clearVision.benefit.p1'),
         },
         {
           index: require("@/asset/image/service/CLEAR_Vision/two.png"),
-          des: "大約10至15分鐘完成",
+          des: this.$t('service.clearVision.benefit.p2'),
         },
         {
           index: require("@/asset/image/service/CLEAR_Vision/three.png"),
-          des: "不需依賴眼鏡/隱形眼鏡",
+          des: this.$t('service.clearVision.benefit.p3'),
         },
         {
           index: require("@/asset/image/service/CLEAR_Vision/four.png"),
-          des: "不易出現排斥情況",
+          des: this.$t('service.clearVision.benefit.p4'),
         },
         {
           index: require("@/asset/image/service/CLEAR_Vision/five.png"),
-          des: "同時處理近視、遠視、散光、老花等問題",
+          des: this.$t('service.clearVision.benefit.p5'),
         },
         {
           index: require("@/asset/image/service/CLEAR_Vision/six.png"),
-          des: "根據個人眼睛實際狀況和生活需要，製訂合適的矯視方案",
+          des: this.$t('service.clearVision.benefit.p6'),
         },
       ],
     };

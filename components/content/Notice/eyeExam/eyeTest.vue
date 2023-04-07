@@ -1,14 +1,11 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-14 mt-10">
-      <h2>眼睛檢查及矯視前</h2>
+      <h2>{{$t('home.headers.diagnosisInstructionsChild_1')}}</h2>
     </div>
     <div>
       <div class="text-center eyeText">
-        <span
-          >由於隱形眼鏡有機會把角膜擠壓，令量度出來的數據不準確，<br />故進行眼睛檢查及矯視前，請提前停止佩戴。<br />
-          <strong>以下為不同隱形眼鏡的停止佩戴日數：</strong></span
-        >
+        <span v-html="$t('notice.eyeExam.eyeTest')"></span>
       </div>
       <div class="flex my-10 eyeTestBox justify-center">
         <div>
@@ -56,7 +53,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .eyeText {
-    span {
+    /deep/ span {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
@@ -69,7 +66,7 @@ h2 {
 
       color: #000000;
     }
-    strong {
+    /deep/ strong {
       font-weight: 700;
     }
   }

@@ -2,122 +2,24 @@
   <div class="tab flex justify-center page_container md:mb-28 pb-28" id="tab">
     <div class="justify-center memu">
       <div class="flex justify-center">
-        <h2 id="faq-presbyopia">CLEAR-Vision</h2>
+        <h2 id="faq-presbyopia">{{$t('home.headers.commonProblemChild_4')}}</h2>
       </div>
       <el-collapse v-model="activeNames" @change="handleChange">
-        <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
-        <el-collapse-item name="1">
+        <el-collapse-item v-for="(item,index) in lists" :key="index+1" :name="`${index+1}`">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('1') !== -1 ? 'title2' : 'title1'"></i>
+              <i :class="judgeActive(`${index+1}`) !== -1 ? 'title2' : 'title1'"></i>
               <div class="mb-width">
-                <p :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">
-                  如何判斷哪種老花矯視方式適合我？
+                <p :class="judgeActive(`${index+1}`) !== -1 ? 'p2' : 'p1'">
+                  {{item.title}}
                 </p>
               </div>
             </div>
             <i
-              :class="judgeActive('1') !== -1 ? 'downArrow2' : 'downArrow1'"
+              :class="judgeActive(`${index+1}`) !== -1 ? 'downArrow2' : 'downArrow1'"
             ></i>
           </template>
-          <div>
-            醫生會為你進行全面的檢查與溝通，來評估何種老花矯視是否適合你。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="2">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('2') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">
-                  有近視就不會出現老花？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('2') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            老花是眼睛機能衰退的自然現象，由於眼睛晶體逐漸硬化及眼內肌肉老化令晶體的變焦功能衰退所致，令人看近物時難以聚焦，模糊視野。一般人約在40至50歲左右就會開始出現老花症狀，故有近視的人也會有老花。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="3">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('3') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">
-                  何時做三焦晶體植入術比較好？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('3') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            三焦晶體主要用於40至50歲老花眼人群。如客人覺得老花眼已經影響正常生活或閱讀，需配戴老花眼鏡，此時，三焦晶體便是矯正遠中近視力的不錯選擇。而最合適自己的老花矯視方案，還是需由醫生進行全面檢查後制定。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="4">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('4') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">
-                  老花等於遠視嗎？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('4') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            在光學上，老花是遠視的一種，但它們的成因不同。遠視主要成因是眼球過短，令景物聚焦了在視網膜後面。至於老花，則是由於晶體退化變硬，失去彈性及連繫著晶狀體的韌帶老化，令晶體的偏置功能下降，使近物時難以聚焦，出現模糊感。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="5">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('5') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('5') !== -1 ? 'p2' : 'p1'">
-                  老花可以預防嗎？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('5') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            現時尚未有有效的方法去防止其出現或惡化，但保持良好的用眼習慣有助減輕老花的徵狀和所造成的困擾。
-          </div>
-        </el-collapse-item>
-        <el-collapse-item name="6">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
-              <i :class="judgeActive('6') !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive('6') !== -1 ? 'p2' : 'p1'">
-                  術後視力多久可以恢復？
-                </p>
-              </div>
-            </div>
-            <i
-              :class="judgeActive('6') !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div>
-            治療完成後第二天你就可以獲得良好的近距離視力，不戴老花鏡也可以輕鬆閱讀。中、遠距離的視力恢復通常在術後一週達到。之後經過數周，你的視野將會更清晰，並逐步適應多焦視覺狀態。
+          <div v-html="item.content">
           </div>
         </el-collapse-item>
       </el-collapse>
@@ -130,6 +32,26 @@ export default {
     return {
       activeNames: ["1"],
       currentIndex: 1, // 当前点击的tab的索引
+      lists: [
+        {
+          ...this.$t('freQuestios.fourProblem.problem1')
+        },
+        {
+          ...this.$t('freQuestios.fourProblem.problem2'),
+        },
+        {
+          ...this.$t('freQuestios.fourProblem.problem3')
+        },
+        {
+          ...this.$t('freQuestios.fourProblem.problem4')
+        },
+        {
+          ...this.$t('freQuestios.fourProblem.problem5')
+        },
+        {
+          ...this.$t('freQuestios.fourProblem.problem6')
+        }
+      ]
     };
   },
   created() {},

@@ -1,7 +1,7 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>LASIK 激光矯視原理</h2>
+      <h2>{{$t('service.lasik.principle.h2')}}</h2>
     </div>
     <div>
       <div class="flex pincile_box">
@@ -50,8 +50,7 @@
       </div>
       <div class="text-center md:mt-14 mt-5 pincile">
         <span class="text-pincile"
-          >LASIK (Laser-Assisted in Situ
-          Keratomileusis)是準分子激光原位角膜磨鑲術，通過激光「打磨」角膜，改變角膜弧度，從而矯正視力。過程中，醫生會先用飛秒激光製作角膜瓣；掀開角膜瓣後，用準分子激光進行角膜切削，再把角膜瓣復位，從而矯正視力。</span
+          >{{$t('service.lasik.principle.span')}}</span
         >
       </div>
     </div>

@@ -3,18 +3,18 @@
     <banner class="banner">
       <template v-slot:title class="title">
         <div class="pcShow">
-          <p style="font-size: 28px">LASIK 激光矯視</p>
+          <p style="font-size: 28px">{{$t('service.lasik.mainBanner.p')}}</p>
 
           <span>(Laser-Assisted in Situ Keratomileusis)</span>
         </div>
         <div class="mbShow banner_serve">
-          <p>LASIK 激光矯視</p>
+          <p>{{$t('service.lasik.mainBanner.p')}}</p>
           <span>(Laser-Assisted in Situ Keratomileusis)</span>
         </div>
       </template>
       <template v-slot:des>
         <div class="pcShow">
-          超過20年的歷史，也是流行的矯視方式；利用激光技術，重塑角膜弧度以改善眼睛折射光線能力，從而矯正視力，減低客人對眼鏡和隱形眼鏡的依賴。
+          {{$t('service.lasik.mainBanner.span')}}
         </div></template
       >
     </banner>

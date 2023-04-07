@@ -146,7 +146,7 @@
       </el-table>
     </div>
     <div class="flex flex-col items-center md:mb-48 mb-20 font">
-      <h3>營業時間</h3>
+      <h3>{{$t('contactUs.h3')}}</h3>
       <div class="flex md:mt-0 mt-5">
         <div class="time-box">
           <p class="text-blue">星期一至五</p>
@@ -158,7 +158,7 @@
           <p>09:30—13:30</p>
         </div>
         <div class="time-box">
-          <p class="text-blue">星期日及公眾假期</p>
+          <p class="text-blue">{{$t('contactUs.p')}}</p>
           <p>休息</p>
         </div>
       </div>
@@ -181,92 +181,91 @@ export default {
       list: [
         {
           id: 1,
-          title: "矯視中心",
+          title: this.$t('contactUs.title1'),
         },
         {
           id: 2,
-          title: "眼科診所",
+          title: this.$t('contactUs.title2'),
         },
       ],
       currentIndex: 0, // 当前点击的tab的索引
       tableData: [
         {
           number: "3956 2026",
-          name: "中 環",
-          address: "畢打街1-3號中建大廈1512室 (港鐵站G出口，置地廣場樓上)",
+          name: this.$t('contactUs.googleMap.name1'),
+          address: this.$t('contactUs.googleMap.address1')
         },
         {
           number: "3956 2026",
-          name: "銅鑼灣",
-          address: "百德新街2-20號恒隆中心1614 -15室 (港鐵站E出口)",
+          name: this.$t('contactUs.googleMap.name2'),
+          address: this.$t('contactUs.googleMap.address2')
         },
         {
           number: "3892 5099",
           name: "旺 角",
-          address: "彌敦道625及639號雅蘭中心一期702室 (港鐵站E1出口)",
+          address: this.$t('contactUs.googleMap.address3')
         },
         {
           number: "3892 5089",
           name: "尖沙咀",
-          address: "梳士巴利道18-24號K11 ATELIER辦公大樓1906室 (K11 Musea附近)",
+          address: this.$t('contactUs.googleMap.address4')
         },
       ],
       tableData2: [
         {
           number: "852 3956 2026",
-          name: "中 環",
-          address: "畢打街1-3號中建大廈1515室",
+          name: this.$t('contactUs.googleMap.name1'),
+          address: this.$t('contactUs.googleMap.address5')
         },
         {
           number: "852 3956 2026",
-          name: "中 環",
-          address: "皇后大道中33號萬邦行1908室",
+          name: this.$t('contactUs.googleMap.name1'),
+          address: this.$t('contactUs.googleMap.address6')
         },
         {
           number: "852 3956 2026",
           name: "旺 角",
-          address: "彌敦道625及639號雅蘭中心一期1208室",
+          address: this.$t('contactUs.googleMap.address7')
         },
         {
           number: "852 3956 2026",
           name: "尖沙咀",
-          address:
-            "梳士巴利道18-24號K11 ATELIER辦公大樓1906室（K11 MUSEA附近）",
+          address:this.$t('contactUs.googleMap.address8')
         },
         {
           number: "852 3956 2026",
-          name: "銅鑼灣",
-          address: "百德新街2-20號恒隆中心1614-15室",
+          name: this.$t('contactUs.googleMap.name2'),
+          address: this.$t('contactUs.googleMap.address9')
         },
         {
           number: "852 3956 2026",
-          name: "觀塘",
-          address: "開源道79號鱷魚恤中心16樓1601室",
+          name: this.$t('contactUs.googleMap.name3'),
+          address: this.$t('contactUs.googleMap.address10')
         },
         {
           number: "852 3956 2026",
-          name: "沙田 (百佳Fusion 側)",
-          address: "沙田正街11-17號偉華中心2樓5A號鋪",
+          name: this.$t('contactUs.googleMap.name4'),
+          address: this.$t('contactUs.googleMap.address11')
         },
         {
           number: "852 3956 2026",
           name: "沙田",
-          address: "沙田正街11-17號偉華中心2樓1C—1F號鋪",
+          address: this.$t('contactUs.googleMap.address12')
         },
         {
           number: "852 3956 2026",
-          name: "元朗（恆香老餅家對面）",
-          address: "元朗青山公路45及47號誠信商業大廈地鋪",
+          name: this.$t('contactUs.googleMap.name6'),
+          address: this.$t('contactUs.googleMap.address13')
         },
         {
           number: "852 3956 2026",
-          name: "荃灣",
-          address: "荃灣沙咀道255號思源樓地下",
+          name: this.$t('contactUs.googleMap.name7'),
+          address: this.$t('contactUs.googleMap.address14')
         },
         {
           number: "852 3956 2026",
-          name: "將軍澳",
-          address: "將軍澳運亨路1號新都城中心一期地下55-56號鋪（寶琳站B2出口）",
+          name: this.$t('contactUs.googleMap.name8'),
+          address: this.$t('contactUs.googleMap.address15')
         },
       ],
       currentRow: null,
@@ -306,12 +305,12 @@ export default {
     handleCurrentChange(val) {
       console.log("选中的数据===", val);
       if (val) {
-        if (val.name === "中 環") {
+        if (val.name === this.$t('contactUs.googleMap.name1')) {
           // console.log('111');
           // this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.916441744428!2d114.15517681541506!3d22.28115484921899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064c2535f5f%3A0x4dea0a6fb9200b96!2z5Lit5bu65aSn5Y6m!5e0!3m2!1szh-CN!2shk!4v1655775720953!5m2!1szh-CN!2shk";
-        } else if (val.name === "銅鑼灣") {
+        } else if (val.name === this.$t('contactUs.googleMap.name2')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.941143350186!2d114.18374661541512!3d22.280219249252834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404005424497791%3A0xdaf428542325f6ad!2sHang%20Lung%20Centre!5e0!3m2!1szh-CN!2shk!4v1655776105411!5m2!1szh-CN!2shk";
@@ -331,12 +330,12 @@ export default {
     handleCurrentChange2(val) {
       console.log("选中的数据===", val);
       if (val) {
-        if (val.address === "畢打街1-3號中建大廈1515室") {
+        if (val.address === this.$t('contactUs.googleMap.address5')) {
           // console.log('111');
           // this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9148087323383!2d114.15744169999999!3d22.281216699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064c3cc78a7%3A0x38c2621ef4ab9ea1!2z6aaZ5riv5biM55Gq55y856eR5Lit5b-DIC0g5Lit55Kw!5e0!3m2!1szh-CN!2shk!4v1676968793043!5m2!1szh-CN!2shk";
-        } else if (val.address === "皇后大道中33號萬邦行1908室") {
+        } else if (val.address === this.$t('contactUs.googleMap.address6')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1845.9428206110742!2d114.1559985!3d22.2823214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064baa4a041%3A0x32d7f3fd9e2cf282!2z5Lit55Kw5pit6ZqG6KGXNi0xNuiZn-S4h-mCpuihjA!5e0!3m2!1szh-CN!2shk!4v1676968818229!5m2!1szh-CN!2shk";
@@ -348,15 +347,15 @@ export default {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5529601065123!2d114.17553319999999!3d22.2949178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400f1bd7327f5%3A0x5ec80492a99301e9!2sK11%20Atelier!5e0!3m2!1szh-CN!2shk!4v1676968715848!5m2!1szh-CN!2shk";
-        } else if (val.name === "銅鑼灣") {
+        } else if (val.name === this.$t('contactUs.googleMap.name2')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9429161793923!2d114.18601489999999!3d22.280152099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404005423edff73%3A0x46b41406f44c9570!2z5biM55Gq55y856eR5Lit5b-DLemKhemRvOeBow!5e0!3m2!1szh-CN!2shk!4v1676969257334!5m2!1szh-CN!2shk";
-        } else if (val.name === "觀塘") {
+        } else if (val.name === this.$t('contactUs.googleMap.name3')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3691.1367811398727!2d114.225003!3d22.3106662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401d7e74ae007%3A0xc96f0bbd8b762dd4!2z6aaZ5riv5biM546b55y856eR5Lit5b-DLeinguWhmA!5e0!3m2!1szh-CN!2shk!4v1676969438657!5m2!1szh-CN!2shk";
-        } else if (val.name === "沙田 (百佳Fusion 側)") {
+        } else if (val.name === this.$t('contactUs.googleMap.name4')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.27146809291!2d114.1874026!3d22.3811213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340407ac4958e33b%3A0x449a54b4ca085085!2z6aaZ5riv5biM55Gq55y856eR5Lit5b-DLeaymeeUsCjnrKzkuIDplpMp!5e0!3m2!1szh-CN!2shk!4v1676969477703!5m2!1szh-CN!2shk";
@@ -364,15 +363,15 @@ export default {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.27146809291!2d114.1874026!3d22.3811213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340407ac4958e33b%3A0x449a54b4ca085085!2z6aaZ5riv5biM55Gq55y856eR5Lit5b-DLeaymeeUsCjnrKzkuIDplpMp!5e0!3m2!1szh-CN!2shk!4v1676969531200!5m2!1szh-CN!2shk";
-        } else if (val.name === "元朗（恆香老餅家對面）") {
+        } else if (val.name === this.$t('contactUs.googleMap.name6')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.5847871717187!2d114.0305542!3d22.4446486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f0a0d1fbff7d%3A0xb0f89659853f4a58!2z6aaZ5riv5biM55Gq55y856eR5Lit5b-DLeWFg-aclw!5e0!3m2!1szh-CN!2shk!4v1676969589764!5m2!1szh-CN!2shk";
-        } else if (val.name === "荃灣") {
+        } else if (val.name === this.$t('contactUs.googleMap.name7')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.5639480653226!2d114.1162646!3d22.370087899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f8ec4df07333%3A0xbf2aba680d839acf!2z5oCd5rqQ5qW8!5e0!3m2!1szh-CN!2shk!4v1676969619202!5m2!1szh-CN!2shk";
-        } else if (val.name === "將軍澳") {
+        } else if (val.name === this.$t('contactUs.googleMap.name8')) {
           this.iframeLoad();
           this.address =
             "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d922.7127657451344!2d114.2569743!3d22.3214718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404040bda677991%3A0xbd229a46b24f56b5!2sMCP%20ONE!5e0!3m2!1szh-CN!2shk!4v1676969661037!5m2!1szh-CN!2shk";
