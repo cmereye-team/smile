@@ -35,7 +35,8 @@ module.exports = {
             ophthalmicConsultationChild_2: '媒体报道',
 
             reservationServiceChild_1: '矫视前检查',
-            reservationServiceChild_2: '讲座'
+            reservationServiceChild_2: '讲座',
+            togLang: '选择语言'
         },
         CorrectionService: {
             p1: '1000 度近视<br />500 度散光',

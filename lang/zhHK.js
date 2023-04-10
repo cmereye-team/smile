@@ -35,7 +35,9 @@ module.exports = {
             ophthalmicConsultationChild_2: '媒體報導',
 
             reservationServiceChild_1: '矯視前檢查',
-            reservationServiceChild_2: '講座'
+            reservationServiceChild_2: '講座',
+
+            togLang: '選擇語言'
         },
         CorrectionService: {
             p1: '1000 度近視<br />500 度散光',

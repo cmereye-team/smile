@@ -117,15 +117,19 @@
         </el-drawer>
         <el-drawer :visible.sync="langDrawer" direction="btt" :with-header="false" size="30%">
           <div class="langBox-title">
-            选择语言
+            {{ $t('home.headers.togLang') }}
           </div>
           <div class="langBox">
-            <div :class="['langBox-in','text-center', $i18n.locale === 'hk' ? 'langBoxClass' : '']">
-              <nuxt-link :to="switchLocalePath('hk')">繁体</nuxt-link>
-            </div>
-            <div :class="['langBox-in','text-center', $i18n.locale === 'cn' ? 'langBoxClass' : '']">
-              <nuxt-link :to="switchLocalePath('cn')">简体</nuxt-link>
-            </div>
+            <nuxt-link :class="['langBox-in','text-center', $i18n.locale === 'hk' ? 'langBoxClass' : '']" :to="switchLocalePath('hk')">
+              <!-- <div> -->
+                繁体
+              <!-- </div> -->
+            </nuxt-link>
+            <nuxt-link :class="['langBox-in','text-center', $i18n.locale === 'cn' ? 'langBoxClass' : '']" :to="switchLocalePath('cn')">
+              <!-- <div> -->
+                简体
+              <!-- </div> -->
+            </nuxt-link>
           </div>
         </el-drawer>
       </div>
@@ -547,7 +551,7 @@ $active_gradient: #4570b6;
     margin-bottom: 10px;
   }
   .langBox-in:first-child{
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .mbHeaderBox{
     display: flex;
