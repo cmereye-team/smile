@@ -56,7 +56,7 @@ export default {
 }
 @media (max-width: 768px) {
   .banner {
-    height: 400px !important;
+    height: 390px !important;
   }
   .section {
     height: 102vw !important;

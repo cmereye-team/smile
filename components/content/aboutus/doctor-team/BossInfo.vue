@@ -1,10 +1,10 @@
 <template>
-  <div class="BossInfor">
+  <div class="BossInfor page_container">
     <div class="environment page_container">
-      <div class="md:flex md:justify-center">
+      <div class="md:flex">
         <div class="img_box">
           <div class="flex justify-center">
-            <div>
+            <div class="img_box_in">
               <img
                 class="boss_img"
                 src="@/asset/image/about-us/doctor-team/boss.jpg"
@@ -99,18 +99,25 @@ export default {
 
 @media only screen and (min-width: 768px) {
   .BossInfor {
-    background: linear-gradient(#f3fcfe 0 0) bottom/100% 48% no-repeat;
+    background: linear-gradient(#f3fcfe 0 0) bottom/100% 40% no-repeat;
     .environment {
+      // width: 1065px;
+      width: 80%;
+      padding-top: 70px;
+      box-sizing: border-box;
       .img_box {
-        .boss_img {
-          margin-top: 73px;
+        width: 433px;
+        div{
+          width: 100%;
         }
       }
       .text_box {
-        // width: 50vw;
-        padding: 73px 0 0 88px;
+        // width: 622px;
+        flex: 1;
+        box-sizing: border-box;
+        padding: 90px 0 0 50px;
         h3 {
-          font-weight: 1000;
+          font-weight: 700;
           margin-bottom: 10px;
           font-size: 20px;
         }
@@ -135,7 +142,7 @@ export default {
           text-fill-color: transparent;
         }
         p {
-          padding: 64px 0;
+          padding: 35px 0 50px;
           font-family: "Noto Sans HK";
           font-style: normal;
           font-weight: 300;
@@ -144,7 +151,7 @@ export default {
           text-align: justify;
           letter-spacing: 0.1em;
           color: #000000;
-          width: 80%;
+          // width: 95%;
         }
         ul {
           list-style: square;
@@ -163,26 +170,26 @@ export default {
         }
         .child_menu {
           color: #4570b6;
-          padding-left: 1vw;
-          padding-bottom: 85px;
+          padding-left: 30px;
+          padding-bottom: 65px;
         }
       }
-      .slider {
-        background: #f3fcfe;
-        height: 20vw;
-      }
     }
+  }
+  .boss_img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
   .BossInfor {
     background: linear-gradient(#f3fcfe 0 0) bottom/100% 22% no-repeat;
     .boss_img {
-      width: 65vw;
+      width: 80vw;
     }
     .text_box {
+      // width: 80vw;
       p {
-        margin: 0 51px;
+        // margin: 0 51px;
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;
@@ -205,10 +212,11 @@ export default {
       }
       .child_menu {
         color: #4570b6;
-        padding-left: 1vw;
+        padding-left: 30px;
       }
       .rong_menu {
-        padding: 20px 69px;
+        // padding: 20px 69px;
+        padding: 20px 0;
       }
     }
     .boss_text_name {
@@ -223,6 +231,7 @@ export default {
         /* or 167% */
         letter-spacing: 0.1em;
         color: #4570b6;
+        margin-top: 10px;
       }
       span {
         font-family: "Noto Sans HK";
@@ -240,8 +249,6 @@ export default {
         background-clip: text;
         text-fill-color: transparent;
       }
-    }
-    .child_menu {
     }
   }
 }

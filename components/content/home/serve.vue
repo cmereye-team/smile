@@ -54,10 +54,12 @@ export default {
   created() {},
   methods: {
     serveForm2() {
-      this.$router.replace("/eye-checkup");
+      // this.$router.replace("/eye-checkup");
+      this.localePath('/eye-checkup')
     },
     serveForm() {
-      this.$router.replace("/ophthalmicInfo/AppointForm");
+      // this.$router.replace("/ophthalmicInfo/AppointForm");
+      this.localePath('/ophthalmicInfo/AppointForm')
     },
   },
 };

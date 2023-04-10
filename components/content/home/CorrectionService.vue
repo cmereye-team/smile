@@ -6,7 +6,7 @@
     <div class="smileService">
       <div class="smileSerItem group">
         <a
-          href="/vision-correction/relex-smile/"
+          :href="'/vision-correction/relex-smile/'|checkUrl($i18n)"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -24,7 +24,7 @@
 
       <div class="smileSerItem group">
         <a
-          href="/vision-correction-lasik/"
+          :href="'/vision-correction-lasik/'|checkUrl($i18n)"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,7 +45,7 @@
 
       <div class="smileSerItem group">
         <a
-          href="/vision-correction-icl/"
+          :href="'/vision-correction-icl/'|checkUrl($i18n)"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -63,7 +63,7 @@
 
       <div class="smileSerItem group">
         <a
-          href="/vision-correction-presbyopia/"
+          :href="'/vision-correction-presbyopia/'|checkUrl($i18n)"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -83,6 +83,14 @@
 </template>
 <script>
 export default {
+  filters: {
+    checkUrl(_url,$i18n){
+      if($i18n.locale === 'cn'){
+        var newUrl = `/cn${_url}`
+      }
+      return newUrl || _url
+    }
+  },
   data() {
     return {};
   },
@@ -245,7 +253,7 @@ export default {
   .smileService .smileSerItem {
     width: 65%;
     height: 42vw;
-    margin-bottom: 90px;transform: translateX(20px);
+    margin-bottom: 85px;transform: translateX(20px);
   }
   .smileService .smileSerItem:nth-child(1){margin-top: 25px;}
   .smileService .smileSerItem:last-child{margin-bottom: 55px;}

@@ -47,8 +47,8 @@ export default {
     return {
       footerLists:[
         {
-          type: 'fun',
-          link:'',
+          type: 'tel',
+          link: '',
           img:'https://static.cmereye.com/imgs/2023/03/4f2e7a260618edb4.png',
           title: this.$t('home.footer.title1')
         },
@@ -73,7 +73,9 @@ export default {
       ]
     };
   },
-  mounted() {},
+  mounted() {
+
+  },
   created() {},
   methods: {
     handleFoot(data){
@@ -84,10 +86,12 @@ export default {
         });
       }else if(data.type === 'href'){
         window.open(data.link)
+      }else if(data.type === 'tel'){
+        window.location.href = 'tel:60610511'
       }
     }
   },
-  watch: {},
+  watch: {}
 };
 </script>
 <style lang="scss" scoped>
@@ -119,7 +123,6 @@ export default {
         margin-top: 16px;
         text-align: center;
         letter-spacing: 0.1em;
-
         color: #d9eaed;
       }
     }
@@ -135,7 +138,7 @@ export default {
   .container {
     position: fixed;
     bottom: 0;
-    z-index: 10;
+    z-index: 99;
     padding: 0;
     overflow-y: hidden;
     // display: flex;

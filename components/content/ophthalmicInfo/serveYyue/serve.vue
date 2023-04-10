@@ -47,7 +47,8 @@ export default {
   created() {},
   methods: {
     serveForm() {
-      this.$router.replace("/ophthalmicInfo/AppointForm");
+      // this.$router.replace("/ophthalmicInfo/AppointForm");
+      this.localePath('/ophthalmicInfo/AppointForm')
     },
   },
 };

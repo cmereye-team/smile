@@ -21,8 +21,9 @@
             </div>
           </div>
 
-          ©2022 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}} <span>{{$t('home.footer.span3')}}</span> |
-          <span>{{$t('home.footer.span4')}}</span>
+          ©2022 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}} 
+          <span><nuxt-link :to="localePath('/privacy-policy')">{{$t('home.footer.span3')}}</nuxt-link></span> |
+          <span><nuxt-link :to="localePath('/disclaimer')">{{$t('home.footer.span4')}}</nuxt-link></span>
         </div>
       </div>
       <div class="flex">
@@ -85,8 +86,9 @@
         </div>
 
         <div class="copyright">
-          ©2022 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}} <span>{{$t('home.footer.span3')}}</span> |
-          <span>{{$t('home.footer.span4')}}</span>
+          ©2022 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}} 
+          <span><nuxt-link :to="localePath('/privacy-policy')">{{$t('home.footer.span3')}}</nuxt-link></span> |
+          <span><nuxt-link :to="localePath('/disclaimer')">{{$t('home.footer.span4')}}</nuxt-link></span>
         </div>
       </div>
     </div>

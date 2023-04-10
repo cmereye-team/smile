@@ -235,7 +235,7 @@ export default {
 // pc
 @media (min-width: 768px) {
   p {
-    font-size: 16px !important;
+    font-size: 14px !important;
     white-space: pre;
   }
   .doctor_list {
@@ -275,10 +275,10 @@ export default {
     align-items: center;
     text-align: center;
     -webkit-box-pack: center;
-
+    height: calc( 100% - 20px );
     width: 100%;
     .overlay {
-      width: auto;
+      width: 100%;
       text-align: center;
       z-index: 999;
       box-shadow: -2px 2px 15px rgb(194, 226, 255);
@@ -353,7 +353,7 @@ export default {
     }
   }
   .img_con {
-    padding-bottom: 148px;
+    margin-bottom: 148px;
     h3 {
       padding: 0.8vw 0.5vw;
       margin-top: -1vw;
@@ -423,6 +423,7 @@ export default {
     -webkit-box-pack: center;
     padding: 0 27px;
     width: 100%;
+    height: calc( 100% - 20px );
     .overlay {
       width: 100%;
       text-align: center;
@@ -502,11 +503,12 @@ export default {
   //   }
   // }
   .img_con {
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
+    margin-bottom: 50px;
     h3 {
       padding: 3vw 3vw;
-      margin-top: -1vw;
-      margin-left: -1vw;
+      margin-top: -6vw;
+      margin-left: -6vw;
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 500;

@@ -210,7 +210,7 @@ body .gradient_font {
   padding: 70px 0;
   .link_more {
     position: absolute;
-    z-index: 999;
+    z-index: 90;
     bottom: 54px;
     left: 113px;
     width: 129px;
@@ -491,7 +491,7 @@ body .gradient_font {
   .vedio_slider {
     .link_more {
       position: absolute;
-      z-index: 999;
+      z-index: 90;
       bottom: 45px;
       left: 32px;
       width: 129px;

@@ -154,7 +154,7 @@ export default {
   }
   .swiper-button-prev,
   .swiper-button-next {
-    top: 64%;
+    top: 80%;
   }
   .address_box {
     margin-top: 40px;
@@ -195,17 +195,17 @@ export default {
     }
   }
   .firstDiv {
-    height: 860px;
+    height: 650px;
     position: relative;
     background: linear-gradient(180deg, #fff 64%, #d7eaf3 0);
   }
 
   .centerDiv {
     width: 900px;
-    height: 800px;
+    height: 650px;
     position: absolute;
     /* left: 510px; */
-    top: 200px;
+    top: 50px;
     left: 0;
     right: 0;
     /* display: flex; */
@@ -259,7 +259,7 @@ export default {
   }
   .swiper-button-prev,
   .swiper-button-next {
-    top: 126%;
+    top: 220px;
   }
   .address_box {
     display: grid;
@@ -268,6 +268,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     padding-left: 55px;
+    margin-top: 20px;
   }
   .address {
     margin-top: 10px;
@@ -282,6 +283,7 @@ export default {
     align-items: center;
   }
   .text_ev {
+    padding-top: 20px;
     h3 {
       font-family: "Noto Sans HK";
       font-style: normal;
@@ -297,15 +299,15 @@ export default {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
-      font-size: 17px;
-      line-height: 42px;
+      font-size: 16px;
+      line-height: 30px;
       /* or 43% */
       color: #6d6e71;
       letter-spacing: 0.1em;
     }
   }
   .firstDiv {
-    height: 346px;
+    height: 285px;
     position: relative;
     background: linear-gradient(180deg, #fff 64%, #d7eaf3 0);
   }
@@ -317,7 +319,7 @@ export default {
     height: 171px !important;
     position: absolute;
     /* left: 510px; */
-    top: 70px;
+    top: 25px;
     left: 0;
     right: 0;
     /* display: flex; */
@@ -327,6 +329,7 @@ export default {
   }
 
   .thumb-example {
+    position: relative;
     background-color: transparent;
   }
 
