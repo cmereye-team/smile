@@ -8,7 +8,8 @@
           <img class="head_logo" src="@/asset/image/common/Logo.svg" alt=""
         /></nuxt-link>
       </div>
-      <div class="mbShow">
+      <div class="mbShow mbHeaderBox">
+        <img src="../../../asset/image/common/Vector.png" class="mr-5" alt="" @click="langDrawer = true"/>
         <button @click="drawer = true">
           <img
             src="https://static.cmereye.com/imgs/2022/12/31d945d3f5d8d4df.png"
@@ -27,28 +28,28 @@
             >
               <el-submenu index="1">
                 <template slot="title">
-                  <span>關於希瑪</span>
+                  <span>{{$t('home.headers.aboutSmile')}}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="1-1">
-                    <nuxt-link :to="localePath('/group-profile')"> 集團及中心簡介</nuxt-link>
+                    <nuxt-link :to="localePath('/group-profile')"> {{$t('home.headers.aboutSmileChild_1')}}</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="1-2">
-                    <nuxt-link :to="localePath('/our-medical-team')">醫生團隊</nuxt-link>
+                    <nuxt-link :to="localePath('/our-medical-team')">{{$t('home.headers.aboutSmileChild_2')}}</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="1-3">
-                    <nuxt-link :to="localePath('/medical-equipment')">中心設備</nuxt-link>
+                    <nuxt-link :to="localePath('/medical-equipment')">{{$t('home.headers.aboutSmileChild_3')}}</nuxt-link>
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-submenu index="2">
                 <template slot="title">
-                  <span>矯視服務</span>
+                  <span>{{$t('home.headers.orthopedicServices')}}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="2-1">
                     <nuxt-link :to="localePath('/vision-correction/relex-smile')">
-                      SMILE 微笑激光矯視</nuxt-link
+                      {{$t('home.headers.orthopedicServicesChild_1')}}</nuxt-link
                     >
                   </el-menu-item>
                   <el-menu-item index="2-2">
@@ -58,61 +59,74 @@
                   >
                   <el-menu-item index="2-3">
                     <nuxt-link :to="localePath('/vision-correction-lasik')"
-                      >LASIK 激光矯視</nuxt-link
+                      >{{$t('home.headers.orthopedicServicesChild_3')}}</nuxt-link
                     >
                   </el-menu-item>
                   <el-menu-item index="2-4">
                     <nuxt-link :to="localePath('/vision-correction-icl')"
-                      >ICL植入式隱形眼鏡</nuxt-link
+                      >{{$t('home.headers.orthopedicServicesChild_4')}}</nuxt-link
                     >
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-submenu index="3">
                 <template slot="title">
-                  <span>診症須知</span>
+                  <span>{{$t('home.headers.diagnosisInstructions')}}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="3-1">
-                    <nuxt-link :to="localePath('/patient-info')"> 眼睛檢查及矯視前</nuxt-link>
+                    <nuxt-link :to="localePath('/patient-info')"> {{$t('home.headers.diagnosisInstructionsChild_1')}}</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="3-2">
                     <nuxt-link :to="localePath('/flow-of-vision-correction')"
-                      >矯視流程</nuxt-link
+                      >{{$t('home.headers.diagnosisInstructionsChild_2')}}</nuxt-link
                     ></el-menu-item
                   >
                   <el-menu-item index="3-3">
-                    <nuxt-link :to="localePath('/post-corrective-care')">矯視後覆診</nuxt-link>
+                    <nuxt-link :to="localePath('/post-corrective-care')">{{$t('home.headers.diagnosisInstructionsChild_3')}}</nuxt-link>
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-menu-item index="4">
-                <nuxt-link :to="localePath('/FreQuestions')"><span>常見問題</span></nuxt-link>
+                <nuxt-link :to="localePath('/FreQuestions')"><span>{{$t('home.headers.commonProblem')}}</span></nuxt-link>
               </el-menu-item>
               <el-submenu index="5">
                 <template slot="title">
-                  <span>眼科資訊</span>
+                  <span>{{$t('home.headers.ophthalmicConsultation')}}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="5-1">
-                    <nuxt-link :to="localePath('/video')"> 個案分享及矯視資訊影片</nuxt-link>
+                    <nuxt-link :to="localePath('/video')"> {{$t('home.headers.ophthalmicConsultationChild_1')}}</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="5-2">
-                    <nuxt-link :to="localePath('/media')">媒體報導</nuxt-link></el-menu-item
+                    <nuxt-link :to="localePath('/media')"> {{$t('home.headers.ophthalmicConsultationChild_2')}}</nuxt-link></el-menu-item
                   >
                 </el-menu-item-group>
               </el-submenu>
               <el-menu-item index="6">
-                <nuxt-link :to="localePath('/charge-detail')"><span>收費詳情</span></nuxt-link>
+                <nuxt-link :to="localePath('/charge-detail')"><span>{{$t('home.headers.feeConsultation')}}</span></nuxt-link>
               </el-menu-item>
               <el-menu-item index="7">
-                <nuxt-link :to="localePath('/contact-us')"><span>聯絡我們</span></nuxt-link>
+                <nuxt-link :to="localePath('/contact-us')"><span>{{$t('home.headers.contactUs')}}</span></nuxt-link>
               </el-menu-item>
               <el-menu-item index="8">
-                <nuxt-link :to="localePath('/booking')"><span>預約服務</span></nuxt-link>
+                <nuxt-link :to="localePath('/booking')"><span>{{$t('home.headers.reservationService')}}</span></nuxt-link>
               </el-menu-item>
             </el-menu>
           </el-row>
+        </el-drawer>
+        <el-drawer :visible.sync="langDrawer" direction="btt" :with-header="false" size="30%">
+          <div class="langBox-title">
+            选择语言
+          </div>
+          <div class="langBox">
+            <div :class="['langBox-in','text-center', $i18n.locale === 'hk' ? 'langBoxClass' : '']">
+              <nuxt-link :to="switchLocalePath('hk')">繁体</nuxt-link>
+            </div>
+            <div :class="['langBox-in','text-center', $i18n.locale === 'cn' ? 'langBoxClass' : '']">
+              <nuxt-link :to="switchLocalePath('cn')">简体</nuxt-link>
+            </div>
+          </div>
         </el-drawer>
       </div>
       <!-- <div class="right flex link_more link_pc_more">
@@ -175,11 +189,11 @@
         >
         <div class="flex items-center nav-language group relative">
           <img src="../../../asset/image/common/Vector.png" alt="" />
-          <ul class="nav-language-box absolute top-10   hidden group-hover:block  "   >
+          <ul class="nav-language-box absolute top-10   hidden group-hover:block -left-5"   >
             <!-- <li><a href="###">繁</a> </li>
             <li><a href="###">简</a> </li> -->
-            <li><nuxt-link :to="switchLocalePath('hk')">繁</nuxt-link></li>
-            <li><nuxt-link :to="switchLocalePath('cn')">简</nuxt-link></li>
+            <li :class="$i18n.locale === 'hk' ? 'langBoxClass' : ''"><nuxt-link :to="switchLocalePath('hk')">繁</nuxt-link></li>
+            <li :class="$i18n.locale === 'cn' ? 'langBoxClass' : ''"><nuxt-link :to="switchLocalePath('cn')">简</nuxt-link></li>
           </ul>
         </div>
 
@@ -236,6 +250,7 @@ export default {
     return {
       openeds: ["1"],
       drawer: false,
+      langDrawer: false,
       socialInfoList: [
         {
           link: "",
@@ -376,7 +391,7 @@ export default {
   },
   mounted() {
     this.pointinit();
-    console.log('i18n------->',this.$i18n)
+    // console.log('i18n------->',this.$i18n.locale)
 
    // 获取菜单和菜单底部的横线元素
 const menu = document.querySelector(".nav ");
@@ -508,8 +523,37 @@ menu.addEventListener("mouseleave", () => {
 
 
 $active_gradient: #4570b6;
-
-
+.langBoxClass{
+    color: #fff !important;
+    background: #4570b6 !important;
+  }
+  .langBox-title{
+    color: #6D6E71;
+    text-align: center;
+    line-height: 40px;
+  }
+  .langBox{
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .langBox-in{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .langBox-in:first-child{
+    margin-top: 50px;
+  }
+  .mbHeaderBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 // pc
 @media (min-width: 768px) {
@@ -771,8 +815,22 @@ $active_gradient: #4570b6;
     z-index: 99;
   }
   .nav-language-box{
-    width: 50px;
+    // width: 100px;
+    li{
+      width: 70px;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      background: #fff;
+      color: #000;
+      text-align: center;
+    }
+    li:hover{
+      color: #fff;
+      background: #4570b6;
+    }
   }
+  
 }
 // mb
 @media (max-width: 768px) {

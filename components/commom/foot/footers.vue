@@ -135,7 +135,7 @@ export default {
   .container {
     position: fixed;
     bottom: 0;
-    z-index: 9999;
+    z-index: 10;
     padding: 0;
     overflow-y: hidden;
     // display: flex;
