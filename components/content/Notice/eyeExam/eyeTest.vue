@@ -58,8 +58,8 @@ h2 {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 20px;
+      line-height: 35px;
       /* or 167% */
 
       text-align: center;
@@ -68,7 +68,7 @@ h2 {
       color: #6D6E71;
     }
     /deep/ strong {
-      font-weight: 700;
+      // font-weight: 700;
     }
   }
 }
@@ -97,7 +97,7 @@ h2 {
 
     color: #6D6E71;
     strong {
-      font-weight: 800;
+      // font-weight: 800;
     }
   }
 }

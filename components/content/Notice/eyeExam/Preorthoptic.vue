@@ -130,7 +130,7 @@ h2 {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
-      font-size: 18px;
+      font-size: 17px;
       line-height: 30px;
       /* or 200% */
 
@@ -154,8 +154,8 @@ h2 {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 35px;
         /* or 200% */
 
         letter-spacing: 0.1em;
@@ -326,7 +326,7 @@ h2 {
       font-family: "Noto Sans HK";
       font-style: normal;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 20px;
       /* or 125% */
 
@@ -367,7 +367,7 @@ h2 {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
         /* or 125% */
 
@@ -381,6 +381,20 @@ h2 {
   .arrow {
     padding: 40px 0;
     transform: rotate(90deg);
+  }
+  .beizhu {
+    /deep/ p {
+      font-family: "Noto Sans HK";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 23px;
+      /* or 200% */
+
+      letter-spacing: 0.1em;
+
+      color: #6D6E71;
+    }
   }
 }
 </style>

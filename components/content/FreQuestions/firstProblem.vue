@@ -338,10 +338,12 @@ p {
   }
 
   .el-collapse-item__content {
-    font-weight: 400;
-    font-size: 19px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
     padding: 20px;
-    background-color: #dfdfdf;
+    color: #6D6E71;
+    // background-color: #dfdfdf;
   }
 }
 </style>

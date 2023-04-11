@@ -788,7 +788,7 @@ th {
   /*左表头的圆角*/
 }
 </style>
-<style lang="scss">
+<style lang="scss" >
 .el-collapse-item__header.is-active {
   background-color: #4570b6 !important;
   color: #fff !important;
@@ -811,7 +811,7 @@ i {
   font-weight: 400;
   font-size: 19px;
   padding: 2vw;
-  background-color: #dfdfdf;
+  // background-color: #dfdfdf;
 }
 @media screen and (min-width: 768px) {
   .taoc_box_2 .box{

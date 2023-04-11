@@ -301,7 +301,7 @@ export default {
       }
     }
   }
-  .mian_nav_text_child:hover{
+  .mian_nav_text:hover,.mian_nav_text_child:hover{
     color: rgb(75, 75, 255) !important;
   }
 }
