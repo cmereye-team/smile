@@ -65,6 +65,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
 }
 @media screen and (min-width: 768px) {
   .benefit_list li:nth-child(5) p {
@@ -88,7 +89,7 @@ h2 {
       height: auto;
     }
     .benefit_light {
-      top: 10vw;
+      top: 7vw;
       right: 0;
       z-index: 1;
       height: auto;
@@ -97,9 +98,11 @@ h2 {
   .benefit_list {
     background: url("https://static.cmereye.com/imgs/2022/12/28f52524aa3c4538.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
+    background-size: 65% 80%;
     text-align: right;
     background-position-y: 3vw;
+    background-position-x: 5vw;
     margin-right: 304px;
     height: auto;
     margin-top: 3vw;
@@ -113,7 +116,7 @@ h2 {
         font-size: 17px;
         line-height: 31px;
         letter-spacing: 0.1em;
-        color: #000000;
+        color: #6D6E71;
       }
       img {
         height: 90px;
@@ -136,7 +139,7 @@ h2 {
     }
     li:nth-child(6) {
       margin-left: 520px;
-      padding-bottom: 123px;
+      // padding-bottom: 50px;
     }
   }
 }
@@ -215,17 +218,17 @@ h2 {
   .benefit_list {
     background: url(https://static.cmereye.com/imgs/2022/12/a2c6adf210ffc920.jpg)
       no-repeat;
-    background-size: 73% 68%;
+    background-size: 73% 50%;
     margin-top: 48vw;
-    height: 149vw;
-    margin-bottom: 10px;
+    // height: 200vw;
+    margin-bottom: 20px;
     background-position: left;
     background-position-y: 117px;
     li {
       img {
         width: 33vw;
       }
-      margin-bottom: 18px;
+        margin-bottom: 18px;
       p {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -233,7 +236,8 @@ h2 {
         font-size: 14px;
         text-align: right;
         letter-spacing: 0.1em;
-        color: #000000;
+        // color: #000000;
+        color: #6D6E71;
       }
     }
   }
@@ -258,6 +262,7 @@ h2 {
   }
   .benefit_list li:nth-child(6) {
     margin-left: 39vw;
+    padding-bottom: 5vw;
   }
   .benefit_content .benefit_light {
     top: -14vw;

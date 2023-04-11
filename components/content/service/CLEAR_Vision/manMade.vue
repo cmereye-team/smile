@@ -45,6 +45,8 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
+
 }
 @media screen and (min-width: 768px) {
   .madeBox1 {

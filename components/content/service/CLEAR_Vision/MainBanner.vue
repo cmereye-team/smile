@@ -1,22 +1,21 @@
 <template>
   <div class="main_banner">
     <banner class="banner">
-      <template v-slot:title class="title">
+      <template v-slot:title>
         <div class="pcShow">
           <p style="font-size: 28px">CMER CLEAR-Vision</p>
 
           <span>(C-MER Lens Exchange Achieving Renewed Vision)</span>
         </div>
         <div class="mbShow banner_serve">
-          <p>CMER CLEAR-Vision</p>
-          <span
-            >(C-MER Lens Exchange Achieving<br />
-            Renewed Vision)</span
-          >
+          <p>CMER</p>
+          <p>CLEAR-Vision</p>
+          <span>C-MER Lens Exchange</span>
+          <span>Achieving Renewed Vision</span>
         </div>
       </template>
       <template v-slot:des>
-        <div class="pcShow">
+        <div class="pcShow desBox">
           {{$t('service.clearVision.mainBanner.span')}}
         </div></template
       >
@@ -68,6 +67,7 @@ export default {
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+      display: block;
     }
   }
   .section {
@@ -85,12 +85,23 @@ export default {
     margin: 0 auto;
     margin-bottom: 10vw;
   }
+  
 }
 
 @media screen and (min-width: 768px) {
   .banner {
     background-image: url("https://static.cmereye.com/imgs/2023/03/9a5638da4be73377.jpg");
     // background-position-x: right !important;
+  }
+  p{
+    font-size: 28px;
+    font-weight: 700 !important;
+  }
+  .desBox{
+    max-width: 600px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
   }
 }
 </style>
