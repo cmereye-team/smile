@@ -65,6 +65,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 19px;
+  color: #4570B6;
 }
 @media only screen and (max-width: 768px) {
   p {

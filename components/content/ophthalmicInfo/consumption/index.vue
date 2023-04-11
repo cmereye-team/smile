@@ -68,6 +68,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
 }
 ::v-deep .el-input__inner {
   border-radius: 10px;

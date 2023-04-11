@@ -1056,6 +1056,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
 }
 
 .tables {

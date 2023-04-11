@@ -678,6 +678,7 @@ export default {
 }
 h2 {
   font-size: 25px;
+  color: #4570B6;
 }
 span {
   font-size: 14px;
