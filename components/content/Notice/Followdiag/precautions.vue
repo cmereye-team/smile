@@ -75,7 +75,7 @@ h2 {
       font-size: 18px;
       line-height: 30px;
       letter-spacing: 0.1em;
-      color: #000000;
+      color: #6D6E71;
     }
     /deep/ p {
       font-family: "Noto Sans HK";
@@ -87,7 +87,7 @@ h2 {
 
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
   }
 }

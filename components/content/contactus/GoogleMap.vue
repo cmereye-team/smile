@@ -434,7 +434,7 @@ li {
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #000000;
+    color: #6D6E71;
     margin-bottom: 42px;
   }
   .time-box {
@@ -462,7 +462,7 @@ li {
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #000000;
+    color: #6D6E71;
   }
   .time-box {
     padding: 0 7px;

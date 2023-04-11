@@ -613,7 +613,7 @@ $active_gradient: #4570b6;
 
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
     .child_menu {
       li a {
@@ -626,7 +626,7 @@ $active_gradient: #4570b6;
 
         letter-spacing: 0.2em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }

@@ -224,7 +224,7 @@ export default {
       text-align: justify;
       letter-spacing: 0.05em;
 
-      color: #000000;
+      color: #6D6E71;
     }
   }
   .Se3CentreInfor .award .img_box[data-v-0c113b80] {
@@ -286,7 +286,7 @@ export default {
 
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
       h3 {
         font-size: 18px;

@@ -207,7 +207,7 @@ export default {
     text-align: justify;
     letter-spacing: 0.1em;
 
-    color: #000000;
+    color: #6D6E71;
   }
   .Se2ComIntro {
     .section_text {

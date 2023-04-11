@@ -64,7 +64,7 @@ h2 {
       text-align: center;
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
     /deep/ strong {
       font-weight: 700;
@@ -94,7 +94,7 @@ h2 {
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #000000;
+    color: #6D6E71;
     strong {
       font-weight: 800;
     }

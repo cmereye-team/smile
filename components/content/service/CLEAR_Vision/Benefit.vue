@@ -236,7 +236,7 @@ h2 {
         font-size: 14px;
         text-align: right;
         letter-spacing: 0.1em;
-        // color: #000000;
+        // color: #6D6E71;
         color: #6D6E71;
       }
     }

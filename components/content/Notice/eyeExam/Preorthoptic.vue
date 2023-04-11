@@ -135,7 +135,7 @@ h2 {
 
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
   }
 
@@ -159,7 +159,7 @@ h2 {
 
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
     .preorth:nth-child(5) img {
@@ -217,7 +217,7 @@ h2 {
 
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }
@@ -254,7 +254,7 @@ h2 {
 
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }
@@ -297,7 +297,7 @@ h2 {
 
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
   }
 
@@ -331,7 +331,7 @@ h2 {
 
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
   }
   .arrow-two {
@@ -373,7 +373,7 @@ h2 {
         text-align: center;
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }

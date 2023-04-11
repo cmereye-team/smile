@@ -153,7 +153,7 @@ export default {
           line-height: 28px;
           text-align: justify;
           letter-spacing: 0.1em;
-          color: #000000;
+          color: #6D6E71;
           // width: 95%;
         }
         ul {
@@ -202,7 +202,7 @@ export default {
         padding: 6px 2px 25px 2px;
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
       ul {
         list-style: square;

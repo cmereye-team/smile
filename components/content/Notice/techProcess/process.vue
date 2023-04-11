@@ -160,7 +160,7 @@ h2 {
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #000000;
+    color: #6D6E71;
   }
 }
 @media screen and (max-width: 768px) {

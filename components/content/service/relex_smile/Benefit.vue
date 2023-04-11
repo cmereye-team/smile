@@ -121,7 +121,7 @@ h2{
         font-size: 17px;
         line-height: 31px;
         letter-spacing: 0.1em;
-        color: #000000;
+        color: #6D6E71;
       }
       img {
         height: 90px;
@@ -212,7 +212,7 @@ h2{
         font-size: 15px;
         text-align: right;
         letter-spacing: 0.1em;
-        color: #000000;
+        color: #6D6E71;
         white-space: pre;
       }
     }
