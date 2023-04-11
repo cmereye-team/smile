@@ -102,11 +102,12 @@ h2{
     }
   }
   .benefit_list {
-    background: url(/_nuxt/asset/image/service/relex_smile/benefit_bg.png);
+    background: url('https://static.cmereye.com/imgs/2022/12/28f52524aa3c4538.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 65% 80%;
     text-align: right;
     background-position-y: 3vw;
+    background-position-x: 5vw;
     margin-right: 304px;
     height: auto;
     margin-top: 3vw;

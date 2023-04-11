@@ -57,7 +57,7 @@
               {{$t('home.headers.feeConsultation')}}
             </div></nuxt-link
           >
-          <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/contactus')"
+          <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/contact-us')"
             ><div class="mian_nav_text font-black text-xl">
               {{$t('home.headers.contactUs')}}
             </div></nuxt-link

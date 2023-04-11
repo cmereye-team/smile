@@ -95,7 +95,7 @@ export default {
           ]
         }, {
           main_nav: "聯絡我們",
-          link: "/contactus",
+          link: "/contact-us",
           child_list: [
             {
               child_item: "",
