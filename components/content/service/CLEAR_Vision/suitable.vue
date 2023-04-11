@@ -112,7 +112,7 @@ h2 {
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
-        line-height: 35px;
+        line-height: 25px;
         /* or 136% */
 
         text-align: center;

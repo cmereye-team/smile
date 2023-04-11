@@ -25,6 +25,8 @@
         />
         <span v-html="$t('service.icl.suitable.span3')"></span>
       </div>
+    </div>
+    <div class="flex justify-evenly suit_box mt-5">
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/d2407e6ff4b3b56c.png"
@@ -61,6 +63,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
 }
 @media screen and (min-width: 768px) {
   .suit_box {
@@ -71,18 +74,21 @@ h2 {
       height: 100px;
     }
     .suitable {
+      width: 200px;
+      display: flex;
+      justify-content: center;
       /deep/ span {
+        width: 100%;
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 35px;
         /* or 125% */
         padding-top: 28px;
         text-align: center;
         letter-spacing: 0.1em;
-
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }
@@ -117,13 +123,13 @@ h2 {
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
-        line-height: 15px;
+        line-height: 25px;
         /* or 136% */
 
         text-align: center;
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }

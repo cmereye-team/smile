@@ -1,7 +1,7 @@
 <template>
   <div class="main_banner">
     <banner class="banner">
-      <template v-slot:title class="title">
+      <template v-slot:title>
         <div class="pcShow">
           <p style="font-size: 28px">{{$t('service.icl.mainBanner.p1')}}</p>
 
