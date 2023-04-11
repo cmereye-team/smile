@@ -5,13 +5,12 @@
     </div>
     <div class="mbShow mb-10">
       <p style="text-align: justify">
-        {{$t('service.relexSmile.step.h2_1')}}
+        {{$t('service.relexSmile.step.p')}}
       </p>
     </div>
     <div class="flex justify-center md:mt-28">
-      <h2>{{$t('service.relexSmile.step.p')}}</h2>
+      <h2>{{$t('service.relexSmile.step.h2_2')}}</h2>
     </div>
-
     <ul class="step_list flex justify-between items-center">
       <li v-for="(stepItem, index) in stepList" :key="index">
         <img :src="stepItem.src" alt="" />
@@ -71,12 +70,18 @@ export default {
 }
 h2 {
   font-size: 25px;
+  font-weight: 500;
+  color: #4570B6;
 }
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
-
+  p{
+    line-height: 30px;
+    line-height: 30px;
+    color: #6D6E71;
+  }
   .step_list {
     text-align: center;
     display: flex;

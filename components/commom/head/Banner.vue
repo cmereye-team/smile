@@ -3,7 +3,7 @@
     <div class="des_box">
       <h3 class="gradient_font">
         <slot name="title"></slot>
-      </h3> 
+      </h3>
       <p>
         <slot name="des"></slot>
       </p>
@@ -13,9 +13,7 @@
 <script>
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
   created() {},
   methods: {},
@@ -34,19 +32,19 @@ export default {
       margin-bottom: 75px;
 
       h3 {
-        font-family: 'Noto Sans HK';
+        font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 500;
         font-size: 38px;
-              
+
         /* identical to box height, or 87% */
-              
+
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.15em;
-              
-        color: #4570B6;
+
+        color: #4570b6;
       }
       p {
         font-family: "Noto Sans JP";
@@ -70,22 +68,18 @@ export default {
   .des_box {
     padding-left: 28px;
     h3 {
-      font-family: 'Noto Sans HK';
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 40px;
-/* or 143% */
+      font-family: "Noto Sans HK";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 40px;
+      /* or 143% */
 
-display: flex;
-align-items: center;
-letter-spacing: 0.15em;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.15em;
 
-color: #4570B6;
-
-
-
-     
+      color: #4570b6;
     }
     span {
       font-size: 11px;

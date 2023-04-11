@@ -349,8 +349,6 @@ export default {
     margin: 0 auto;
     text-align: center;
     flex-wrap: wrap;
-    img {
-    }
   }
   .img_con {
     margin-bottom: 148px;
@@ -485,25 +483,9 @@ export default {
     margin: 0 auto;
     text-align: center;
     flex-wrap: wrap;
-    img {
-    }
   }
 
-  // .img_con {
-  //   padding-bottom: 13vw;
-  //   h3 {
-  //     padding: 0.2vw 0.5vw;
-  //     font-size: 4.8vw;
-  //     margin-top: -3vw;
-  //     margin-left: -2vw;
-  //     letter-spacing: 0.1em;
-  //     span {
-  //       font-size: 1.4vw;
-  //     }
-  //   }
-  // }
   .img_con {
-    // padding-bottom: 50px;
     margin-bottom: 50px;
     h3 {
       padding: 3vw 3vw;

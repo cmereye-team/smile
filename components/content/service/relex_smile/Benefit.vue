@@ -63,6 +63,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2{
+  color: #4570B6;
+  font-weight: 500;
+  font-size: 25px;
+}
 @media screen and (min-width: 768px) {
   .pc_page_container {
     max-width: 1280px !important;

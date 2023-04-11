@@ -867,10 +867,6 @@ $active_gradient: #4570b6;
         position: absolute;
         border-top: 2px #dfdfdf solid;
       }
-      &::before {
-      }
-      &::after {
-      }
     }
     .language_list {
       padding: 0 18px;

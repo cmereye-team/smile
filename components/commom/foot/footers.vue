@@ -141,8 +141,6 @@ export default {
     z-index: 99;
     padding: 0;
     overflow-y: hidden;
-    // display: flex;
-    // justify-content: center;
   }
   a {
     margin: 0;
@@ -150,7 +148,6 @@ export default {
   }
   .face-button1 {
     width: 50%;
-    // height: 60px;
     line-height: 56px;
     display: block;
     font-size: 20px;
@@ -163,11 +160,9 @@ export default {
     margin: 0 !important;
     background-color: #57b2f3;
     border-radius: 18px 18px 0 0;
-    // background: white;
   }
   .face-button {
     width: 50%;
-    // height: 60px;
     line-height: 56px;
     display: block;
     font-size: 20px;
@@ -181,7 +176,6 @@ export default {
     background-color: #9bd0f5;
     color: #fff;
     border-radius: 18px 18px 0 0;
-    // background: white;
   }
 }
 </style>

@@ -63,25 +63,28 @@ export default {
       h2 {
         margin-bottom: 0;
         font-size: 26px;
+        color: #4570B6;
         span {
           font-size: 26px;
         }
       }
       p {
-        font-weight: 900;
+        font-weight: 500;
         font-size: 17px;
         color: rgba(155, 155, 155, 1);
       }
     }
     .xtra_des {
-      font-weight: 900;
+      // font-weight: 900;
       margin-top: 4vw;
       h3 {
         margin-bottom: 2vw;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 500;
       }
       p {
-        font-size: 17px;
+        font-weight: 300;
+        font-size: 20px;
       }
       li:nth-child(1) {
         margin-bottom: 5vw;
@@ -140,10 +143,11 @@ export default {
     padding-bottom: 14vw;
     padding-top: 5vw;
     .xtra_title {
+      margin-bottom: 30px;
       h2 {
         font-family: "Noto Sans JP";
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
         line-height: 18px;
         /* or 112% */
@@ -151,7 +155,7 @@ export default {
         text-align: center;
         letter-spacing: 0.1em;
         margin-bottom: 0px;
-        color: #444343;
+        color: #4570B6;
         span {
           font-size: 14px;
         }
@@ -170,18 +174,19 @@ export default {
       }
     }
     .xtra_des {
-      font-weight: 900;
+      // font-weight: 900;
       margin-top: 4vw;
       padding: 0 16px;
       h3 {
         margin-bottom: 2vw;
-        font-size: 15px;
+        font-size: 17px;
         padding: 8px;
+        font-weight: 500;
       }
       /deep/ p {
         font-family: "Noto Sans HK";
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 14px;
         line-height: 25px;
         /* or 250% */

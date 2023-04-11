@@ -158,7 +158,7 @@ export default {
     background-image: url("https://static.cmereye.com/imgs/2022/12/a8f5b0b92f86d0e6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 84vw;
+    height: 100vw;
     position: relative;
     .section {
       margin-top: 0;
@@ -185,41 +185,44 @@ export default {
         margin-top: 71px;
         ul {
           li {
+            max-width: 160px;
+            height: 50px;
             font-family: "Noto Sans HK";
             font-style: normal;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 20px;
             /* or 62% */
             letter-spacing: 0.1em;
-            color: #000000;
+            color: #6D6E71;
             // white-space: nowrap;
             margin-bottom: 4vw;
+            margin-top: 4vw;
             position: relative;
             z-index: 9;
             &::before {
               content: " ";
               position: absolute;
               background: rgba(129, 219, 236, 0.3);
-              width: 6vw;
-              height: 6vw;
+              width:8vw;
+              height: 8vw;
               border-radius: 100%;
-              top: -1.2vw;
-              left: -1.3vw;
+              top: -2vw;
+              left: -3vw;
               z-index: -1;
             }
           }
           li:nth-child(1) {
-            margin-left: 0vw;
-          }
-          li:nth-child(2) {
             margin-left: 3vw;
           }
+          li:nth-child(2) {
+            margin-left: 9vw;
+          }
           li:nth-child(3) {
-            margin-left: 6vw;
+            margin-left: 15vw;
           }
           li:nth-child(4) {
-            margin-left: 8vw;
+            margin-left: 21vw;
           }
         }
         ul:nth-child(2) {
@@ -234,9 +237,9 @@ export default {
     width: 12.5vw;
     height: 6.7vw;
     background-image: url(https://static.cmereye.com/imgs/2022/12/43871fde827f43df.png);
-    bottom: 13vw;
+    bottom: 5vw;
     /* left: 0; */
-    right: 16vw;
+    right: 5vw;
     /* top: 0; */
     background-size: 100%;
     background-repeat: no-repeat;

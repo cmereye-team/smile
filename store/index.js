@@ -1,23 +1,43 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import app from './modules/app'
+// import Vue from 'vue'
+// import Vuex from 'vuex'
+// import app from './modules/app'
 
-import getters from './getters'
+// import getters from './getters'
 
-Vue.use(Vuex)
-const store = () => {  
-  return new Vuex.Store({
-    modules: {
-      app
-    },
-    getters
-  })
+// Vue.use(Vuex)
+// const store = () => {  
+//   return new Vuex.Store({
+//     modules: {
+//       app
+//     },
+//     getters,
+//   })
+// }
+
+
+
+import Cookies from 'js-cookie'
+// export const namespaced = true,
+export const state =()=> ({
+  windowHeight: Cookies.get('windowHeight')
+})
+export const mutations =  {
+  HEIGHT_SET(state, height) {
+    Cookies.set('windowHeight', height)
+    state.windowHeight = height
+  }
 }
-// const store = new Vuex.Store({
-//   modules: {
-//     app
-//   },
-//   getters
-// })
+export const actions = {
+  SetHeight({ commit }, height) {
+    commit('HEIGHT_SET', height)
+  }
+}
 
-export default store
+export const getters = {
+  windowHeight(state){
+    return state.app.windowHeight
+  } 
+}
+
+
+// export default store
