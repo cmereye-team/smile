@@ -7,10 +7,11 @@
         ref="bannerSwiper"
       >
         <div class="swiper-wrapper">
-          <div class="swiper-slide slide-1"></div>
-          <div class="swiper-slide slide-2"></div>
+          <nuxt-link class="swiper-slide slide-1" :to="localePath('/vision-correction/relex-smile')">
+          </nuxt-link>
+          <nuxt-link class="swiper-slide slide-2" :to="localePath('/vision-correction-presbyopia')">
+          </nuxt-link>
         </div>
-        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
     </div>
   </div>
@@ -28,9 +29,6 @@ export default {
   },
   created() {},
   methods: {
-    bannerClick() {
-      console.log("12");
-    },
   },
 };
 </script>
@@ -48,7 +46,7 @@ export default {
     height: 480px !important;
   }
   .slide-1 {
-    background-image: url("https://static.cmereye.com/imgs/2023/04/5282e5a618555ea6.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2023/04/47b5b8d44b95666e.jpg");
   }
   .slide-2 {
     background-image: url("https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg");

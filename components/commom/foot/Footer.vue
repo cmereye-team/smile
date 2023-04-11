@@ -40,7 +40,7 @@
             </nuxt-link>
             <ul class="child_menu">
               <li v-for="(childItem, index) in navItem.child_list" :key="index">
-                <nuxt-link :to="localePath(childItem.link)" class="text-xl">{{
+                <nuxt-link :to="localePath(childItem.link)" class="text-xl mian_nav_text_child">{{
                   childItem.child_item
                 }}</nuxt-link>
               </li>
@@ -53,12 +53,12 @@
         </ul>
         <div class="mb-10">
           <nuxt-link class="main_nav text-xl" :to="localePath('/free')"
-            ><div class="mian_nav_text font-black text-xl">
+            ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
               {{$t('home.headers.feeConsultation')}}
             </div></nuxt-link
           >
           <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/contact-us')"
-            ><div class="mian_nav_text font-black text-xl">
+            ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
               {{$t('home.headers.contactUs')}}
             </div></nuxt-link
           >
@@ -294,11 +294,15 @@ export default {
         margin-top: 3vw;
         text-align: center;
         font-size: 12px;font-weight:300;
+        transform: scale(.8);
         span {
           border-bottom: 1px solid;  font-size: 12px;
         }
       }
     }
+  }
+  .mian_nav_text_child:hover{
+    color: rgb(75, 75, 255) !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -343,6 +347,7 @@ export default {
   }
   .copyright {
     margin-top: 3vw;
+    transform: scale(.6);
     span {
       border-bottom: 1px solid;
     }

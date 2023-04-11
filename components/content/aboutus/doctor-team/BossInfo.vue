@@ -94,6 +94,9 @@ export default {
       display: inline-block;
       color: #4570b6;
     }
+    p{
+      color: #6d6e71 !important;
+    }
   }
 }
 

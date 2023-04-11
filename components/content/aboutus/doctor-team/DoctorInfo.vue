@@ -231,6 +231,11 @@ export default {
 .doctor {
   padding-top: 2vw;
 }
+h2{
+  color: #4570b6;
+  font-weight: 500;
+  font-size: 25px;
+}
 
 // pc
 @media (min-width: 768px) {
@@ -306,6 +311,7 @@ export default {
       color: #4570b6;
       font-weight: 500;
       line-height: 24px;
+      white-space: normal;
     }
     .overlay::before {
       content: "";
