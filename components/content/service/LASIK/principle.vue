@@ -70,6 +70,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
 }
 @media screen and (min-width: 768px) {
   .pincile_box {
@@ -87,8 +88,9 @@ h2 {
 
     text-align: center;
     letter-spacing: 0.1em;
-
-    color: #000000;
+    max-width: 70% !important;
+    display: inline-block;
+    color: #6D6E71;
   }
 }
 @media screen and (max-width: 768px) {

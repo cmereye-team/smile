@@ -48,6 +48,9 @@ h2 {
   color: #4570B6;
 
 }
+span{
+  color: #6D6E71;
+}
 @media screen and (min-width: 768px) {
   .madeBox1 {
     display: flex;
@@ -67,7 +70,7 @@ h2 {
 
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
       margin: 0 10px;
     }
   }
@@ -91,7 +94,7 @@ h2 {
 
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
       margin: 0 10px;
     }
   }
@@ -125,7 +128,7 @@ h2 {
       // text-align: center;
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
   }
   .madeBox2 {
@@ -149,7 +152,7 @@ h2 {
       // text-align: center;
       letter-spacing: 0.1em;
 
-      color: #000000;
+      color: #6D6E71;
     }
   }
 }

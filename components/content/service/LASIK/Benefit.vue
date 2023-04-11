@@ -57,6 +57,10 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
+}
+p{
+  color: #6D6E71;
 }
 @media screen and (min-width: 768px) {
   .benefit_list li:nth-child(5) p {
@@ -89,9 +93,10 @@ h2 {
   .benefit_list {
     background: url("https://static.cmereye.com/imgs/2022/12/28f52524aa3c4538.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 65% 100%;
     text-align: right;
     background-position-y: 3vw;
+    background-position-x: 5vw;
     margin-right: 304px;
     height: auto;
     margin-top: 3vw;
@@ -105,7 +110,6 @@ h2 {
         font-size: 17px;
         line-height: 31px;
         letter-spacing: 0.1em;
-        color: #000000;
       }
       img {
         height: 90px;
@@ -194,7 +198,6 @@ h2 {
         font-size: 14px;
         text-align: right;
         letter-spacing: 0.1em;
-        color: #000000;
       }
     }
   }

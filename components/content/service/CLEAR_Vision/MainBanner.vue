@@ -97,6 +97,9 @@ export default {
     font-size: 28px;
     font-weight: 700 !important;
   }
+  span{
+    letter-spacing: 1px;
+  }
   .desBox{
     max-width: 600px;
     font-weight: 300;

@@ -71,7 +71,7 @@ export default {
       p {
         font-weight: 500;
         font-size: 17px;
-        color: rgba(155, 155, 155, 1);
+        color: #6D6E71;
       }
     }
     .xtra_des {
@@ -85,6 +85,7 @@ export default {
       p {
         font-weight: 300;
         font-size: 20px;
+        color: #6D6E71;
       }
       li:nth-child(1) {
         margin-bottom: 5vw;
@@ -194,7 +195,7 @@ export default {
         text-align: center;
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
       li:nth-child(1) {
         margin-bottom: 5vw;

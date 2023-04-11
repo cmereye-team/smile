@@ -1,19 +1,20 @@
 <template>
   <div class="main_banner">
     <banner class="banner">
-      <template v-slot:title class="title">
+      <template v-slot:title>
         <div class="pcShow">
           <p style="font-size: 28px">{{$t('service.lasik.mainBanner.p')}}</p>
 
-          <span>(Laser-Assisted in Situ Keratomileusis)</span>
+          <span>Laser-Assisted in Situ Keratomileusis</span>
         </div>
         <div class="mbShow banner_serve">
           <p>{{$t('service.lasik.mainBanner.p')}}</p>
-          <span>(Laser-Assisted in Situ Keratomileusis)</span>
+          <span>Laser-Assisted in Situ</span>
+          <span>Keratomileusis</span>
         </div>
       </template>
       <template v-slot:des>
-        <div class="pcShow">
+        <div class="pcShow desBox">
           {{$t('service.lasik.mainBanner.span')}}
         </div></template
       >
@@ -65,6 +66,7 @@ export default {
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+      display: block;
     }
   }
   .section {
@@ -87,6 +89,21 @@ export default {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: url("https://static.cmereye.com/imgs/2023/03/98166c99909ffcca.jpg");
+  }
+  p{
+    font-size: 28px !important;
+    font-weight: 700 !important;
+  }
+  span{
+    letter-spacing: 1px;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+  }
+  .desBox{
+    max-width: 550px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
   }
 }
 </style>

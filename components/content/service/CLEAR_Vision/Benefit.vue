@@ -160,7 +160,7 @@ h2 {
     flex-direction: column;
     align-items: flex-end;
     margin-left: 27vw !important;
-    width: 50vw;
+    width: 60vw;
   }
   .benefit_list li:nth-child(6) img {
     width: 39vw;

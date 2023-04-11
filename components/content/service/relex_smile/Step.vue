@@ -58,7 +58,7 @@ export default {
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #000000;
+    color: #6D6E71;
   }
   li {
     padding: 0 20px;
@@ -100,7 +100,7 @@ h2 {
         text-align: center;
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
     img {

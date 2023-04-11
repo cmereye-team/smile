@@ -1,7 +1,7 @@
 <template>
   <div class="main_banner">
     <banner class="banner">
-      <template v-slot:title class="title">
+      <template v-slot:title>
         <div class="pcShow">
           <p style="font-size: 28px">{{$t('service.relexSmile.mainBanner.p')}}</p>
           <span>(Small Incision Lenticule Extraction)</span>
@@ -34,6 +34,9 @@ export default {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: url("https://static.cmereye.com/imgs/2023/03/edaaa3deb3e5303a.jpg");
+  }
+  span{
+    letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 768px) {

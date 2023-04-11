@@ -69,6 +69,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
+  color: #4570B6;
 }
 @media screen and (min-width: 768px) {
   .suit_box {
@@ -84,13 +85,13 @@ h2 {
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 35px;
         /* or 125% */
         padding-top: 28px;
         text-align: center;
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }
@@ -125,13 +126,13 @@ h2 {
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
-        line-height: 15px;
+        line-height: 35px;
         /* or 136% */
 
         text-align: center;
         letter-spacing: 0.1em;
 
-        color: #000000;
+        color: #6D6E71;
       }
     }
   }
