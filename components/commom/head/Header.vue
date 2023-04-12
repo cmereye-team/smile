@@ -259,10 +259,10 @@
             <!-- <li><a href="###">繁</a> </li>
             <li><a href="###">简</a> </li> -->
             <li :class="$i18n.locale === 'hk' ? 'langBoxClass' : ''">
-              <nuxt-link :to="switchLocalePath('hk')">繁</nuxt-link>
+              <nuxt-link :to="switchLocalePath('hk')" class="w-full h-full block">繁</nuxt-link>
             </li>
             <li :class="$i18n.locale === 'cn' ? 'langBoxClass' : ''">
-              <nuxt-link :to="switchLocalePath('cn')">简</nuxt-link>
+              <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link>
             </li>
           </ul>
         </div>

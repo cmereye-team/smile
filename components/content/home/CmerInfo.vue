@@ -1,6 +1,24 @@
 <template>
-  <div class="">
-    <div class="big_img cmer page_container pcShow"></div>
+  <div class="cmerInfo">
+    <!-- <div class="big_img cmer page_container pcShow"></div> -->
+    <div class="pcShow page_container cmerInfo-in">
+      <img
+        src="https://static.cmereye.com/imgs/2023/03/03fa96e5afcde673.jpg"
+        alt=""
+      />
+      <img
+        src="https://static.cmereye.com/imgs/2023/03/c4d569a753127906.jpg"
+        alt=""
+      />
+      <img
+        src="https://static.cmereye.com/imgs/2023/03/55e2cbaf1de3bb66.jpg"
+        alt=""
+      />
+      <img
+        src="https://static.cmereye.com/imgs/2023/03/350f7db95fd29b92.png"
+        alt=""
+      />
+    </div>
     <div class="mbShow" style="margin-bottom: 50px">
       <img
         src="https://static.cmereye.com/imgs/2023/03/03fa96e5afcde673.jpg"
@@ -37,6 +55,21 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media only screen and (min-width: 768px) {
+  .cmerInfo-in{
+    width: 100%;
+    display: flex;
+    padding: 0 0 70px 0;
+    flex-wrap: wrap;
+    img{
+      width: 50%;
+      display: inline-block;
+      transition: all .3s;
+    }
+    img:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px rgba(0,0,0,.8);
+    }
+  }
   .big_img {
     background: url("https://static.cmereye.com/imgs/2023/03/66aad7076ba61921.jpg")
       no-repeat;
