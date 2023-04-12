@@ -146,7 +146,7 @@ h2 {
       text-align: justify;
       letter-spacing: 0.06em;
 
-      color: #6D6E71;
+      color: #000000;
     }
     .meida {
       padding: 10px 13px;
@@ -231,7 +231,7 @@ h2 {
       text-align: justify;
       letter-spacing: 0.06em;
 
-      color: #6D6E71;
+      color: #000000;;
     }
     .meida {
       padding: 10px 13px;

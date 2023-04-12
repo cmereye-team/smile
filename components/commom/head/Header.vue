@@ -1,7 +1,5 @@
 <template>
   <div class="section_header page_container px-0">
-    
-
     <div class="header flex-between">
       <div class="left">
         <nuxt-link :to="localePath('/')">
@@ -9,7 +7,12 @@
         /></nuxt-link>
       </div>
       <div class="mbShow mbHeaderBox">
-        <img src="../../../asset/image/common/Vector.png" class="mr-5" alt="" @click="langDrawer = true"/>
+        <img
+          src="../../../asset/image/common/Vector.png"
+          class="mr-5"
+          alt=""
+          @click="langDrawer = true"
+        />
         <button @click="drawer = true">
           <img
             src="https://static.cmereye.com/imgs/2022/12/31d945d3f5d8d4df.png"
@@ -28,28 +31,38 @@
             >
               <el-submenu index="1">
                 <template slot="title">
-                  <span>{{$t('home.headers.aboutSmile')}}</span>
+                  <span>{{ $t("home.headers.aboutSmile") }}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="1-1">
-                    <nuxt-link :to="localePath('/group-profile')"> {{$t('home.headers.aboutSmileChild_1')}}</nuxt-link>
+                    <nuxt-link :to="localePath('/group-profile')">
+                      {{ $t("home.headers.aboutSmileChild_1") }}</nuxt-link
+                    >
                   </el-menu-item>
                   <el-menu-item index="1-2">
-                    <nuxt-link :to="localePath('/our-medical-team')">{{$t('home.headers.aboutSmileChild_2')}}</nuxt-link>
+                    <nuxt-link :to="localePath('/our-medical-team')">{{
+                      $t("home.headers.aboutSmileChild_2")
+                    }}</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="1-3">
-                    <nuxt-link :to="localePath('/medical-equipment')">{{$t('home.headers.aboutSmileChild_3')}}</nuxt-link>
+                    <nuxt-link :to="localePath('/medical-equipment')">{{
+                      $t("home.headers.aboutSmileChild_3")
+                    }}</nuxt-link>
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-submenu index="2">
                 <template slot="title">
-                  <span>{{$t('home.headers.orthopedicServices')}}</span>
+                  <span>{{ $t("home.headers.orthopedicServices") }}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="2-1">
-                    <nuxt-link :to="localePath('/vision-correction/relex-smile')">
-                      {{$t('home.headers.orthopedicServicesChild_1')}}</nuxt-link
+                    <nuxt-link
+                      :to="localePath('/vision-correction/relex-smile')"
+                    >
+                      {{
+                        $t("home.headers.orthopedicServicesChild_1")
+                      }}</nuxt-link
                     >
                   </el-menu-item>
                   <el-menu-item index="2-2">
@@ -58,76 +71,123 @@
                     ></el-menu-item
                   >
                   <el-menu-item index="2-3">
-                    <nuxt-link :to="localePath('/vision-correction-lasik')"
-                      >{{$t('home.headers.orthopedicServicesChild_3')}}</nuxt-link
-                    >
+                    <nuxt-link :to="localePath('/vision-correction-lasik')">{{
+                      $t("home.headers.orthopedicServicesChild_3")
+                    }}</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="2-4">
-                    <nuxt-link :to="localePath('/vision-correction-icl')"
-                      >{{$t('home.headers.orthopedicServicesChild_4')}}</nuxt-link
-                    >
+                    <nuxt-link :to="localePath('/vision-correction-icl')">{{
+                      $t("home.headers.orthopedicServicesChild_4")
+                    }}</nuxt-link>
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-submenu index="3">
                 <template slot="title">
-                  <span>{{$t('home.headers.diagnosisInstructions')}}</span>
+                  <span>{{ $t("home.headers.diagnosisInstructions") }}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="3-1">
-                    <nuxt-link :to="localePath('/patient-info')"> {{$t('home.headers.diagnosisInstructionsChild_1')}}</nuxt-link>
+                    <nuxt-link :to="localePath('/patient-info')">
+                      {{
+                        $t("home.headers.diagnosisInstructionsChild_1")
+                      }}</nuxt-link
+                    >
                   </el-menu-item>
                   <el-menu-item index="3-2">
-                    <nuxt-link :to="localePath('/flow-of-vision-correction')"
-                      >{{$t('home.headers.diagnosisInstructionsChild_2')}}</nuxt-link
-                    ></el-menu-item
+                    <nuxt-link :to="localePath('/flow-of-vision-correction')">{{
+                      $t("home.headers.diagnosisInstructionsChild_2")
+                    }}</nuxt-link></el-menu-item
                   >
                   <el-menu-item index="3-3">
-                    <nuxt-link :to="localePath('/post-corrective-care')">{{$t('home.headers.diagnosisInstructionsChild_3')}}</nuxt-link>
+                    <nuxt-link :to="localePath('/post-corrective-care')">{{
+                      $t("home.headers.diagnosisInstructionsChild_3")
+                    }}</nuxt-link>
                   </el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-menu-item index="4">
-                <nuxt-link :to="localePath('/FreQuestions')"><span>{{$t('home.headers.commonProblem')}}</span></nuxt-link>
+                <nuxt-link :to="localePath('/FreQuestions')"
+                  ><span>{{
+                    $t("home.headers.commonProblem")
+                  }}</span></nuxt-link
+                >
               </el-menu-item>
               <el-submenu index="5">
                 <template slot="title">
-                  <span>{{$t('home.headers.ophthalmicConsultation')}}</span>
+                  <span>{{ $t("home.headers.ophthalmicConsultation") }}</span>
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="5-1">
-                    <nuxt-link :to="localePath('/video')"> {{$t('home.headers.ophthalmicConsultationChild_1')}}</nuxt-link>
+                    <nuxt-link :to="localePath('/video')">
+                      {{
+                        $t("home.headers.ophthalmicConsultationChild_1")
+                      }}</nuxt-link
+                    >
                   </el-menu-item>
                   <el-menu-item index="5-2">
-                    <nuxt-link :to="localePath('/media')"> {{$t('home.headers.ophthalmicConsultationChild_2')}}</nuxt-link></el-menu-item
+                    <nuxt-link :to="localePath('/media')">
+                      {{
+                        $t("home.headers.ophthalmicConsultationChild_2")
+                      }}</nuxt-link
+                    ></el-menu-item
                   >
                 </el-menu-item-group>
               </el-submenu>
               <el-menu-item index="6">
-                <nuxt-link :to="localePath('/charge-detail')"><span>{{$t('home.headers.feeConsultation')}}</span></nuxt-link>
+                <nuxt-link :to="localePath('/charge-detail')"
+                  ><span>{{
+                    $t("home.headers.feeConsultation")
+                  }}</span></nuxt-link
+                >
               </el-menu-item>
               <el-menu-item index="7">
-                <nuxt-link :to="localePath('/contact-us')"><span>{{$t('home.headers.contactUs')}}</span></nuxt-link>
+                <nuxt-link :to="localePath('/contact-us')"
+                  ><span>{{ $t("home.headers.contactUs") }}</span></nuxt-link
+                >
               </el-menu-item>
               <el-menu-item index="8">
-                <nuxt-link :to="localePath('/booking')"><span>{{$t('home.headers.reservationService')}}</span></nuxt-link>
+                <nuxt-link :to="localePath('/booking')"
+                  ><span>{{
+                    $t("home.headers.reservationService")
+                  }}</span></nuxt-link
+                >
               </el-menu-item>
             </el-menu>
           </el-row>
         </el-drawer>
-        <el-drawer :visible.sync="langDrawer" direction="btt" :with-header="false" size="30%">
+        <el-drawer
+          :visible.sync="langDrawer"
+          direction="btt"
+          :with-header="false"
+          size="30%"
+        >
           <div class="langBox-title">
-            {{ $t('home.headers.togLang') }}
+            {{ $t("home.headers.togLang") }}
           </div>
           <div class="langBox">
-            <nuxt-link :class="['langBox-in','text-center', $i18n.locale === 'hk' ? 'langBoxClass' : '']" :to="switchLocalePath('hk')">
+            <nuxt-link
+              :class="[
+                'langBox-in',
+                'text-center',
+                $i18n.locale === 'hk' ? 'langBoxClass' : '',
+              ]"
+              :to="switchLocalePath('hk')"
+            >
               <!-- <div> -->
-                繁体
+              繁体
               <!-- </div> -->
             </nuxt-link>
-            <nuxt-link :class="['langBox-in','text-center', $i18n.locale === 'cn' ? 'langBoxClass' : '']" :to="switchLocalePath('cn')">
+            <nuxt-link
+              :class="[
+                'langBox-in',
+                'text-center',
+                $i18n.locale === 'cn' ? 'langBoxClass' : '',
+              ]"
+              :to="switchLocalePath('cn')"
+            >
               <!-- <div> -->
-                简体
+              简体
               <!-- </div> -->
             </nuxt-link>
           </div>
@@ -151,20 +211,18 @@
     </div>
 
     <div class="md: flex items-center">
-      <div class="nav_bar section hidden md:flex md:justify-between"  >
-
+      <div class="nav_bar section hidden md:flex md:justify-between">
         <!-- gsap   移动动画-->
- 
-<!-- gsap   移动动画 end-->
-        <ul class="nav md:flex md:justify-around grid gap-8"  >
-          <div class="menu-line"></div>
 
+        <!-- gsap   移动动画 end-->
+        <ul class="nav md:flex md:justify-around grid gap-8">
+          <div class="menu-line"></div>
 
           <li
             v-for="(navItem, index) in navList"
             :key="index"
             class="nav_item text-lg md:flex flex-col"
-            :class="navItem.child_list.length !== 0 ? 'main_after' : ''" 
+            :class="navItem.child_list.length !== 0 ? 'main_after' : ''"
           >
             <nuxt-link
               :to="localePath(navItem.link)"
@@ -179,28 +237,35 @@
               class="child_nav flex flex-col"
               v-if="navItem.child_list.length > 0"
             >
-              <li v-for="(childItem, index) in navItem.child_list" :key="index">
+              <li v-for="(childItem, childIndex) in navItem.child_list" :key="childIndex">
                 <nuxt-link :to="localePath(childItem.link)" class="text-base">{{
-                  `· ` +childItem.child_item
+                  `· ` + childItem.child_item
                 }}</nuxt-link>
               </li>
               <li></li>
             </ul>
           </li>
         </ul>
-        <nuxt-link :to="localePath('/booking')" class="text-base ll_box nav-bookingservice  pcShow"
-          >{{$t('home.headers.reservationService')}}</nuxt-link
+        <nuxt-link
+          :to="localePath('/booking')"
+          class="text-base ll_box nav-bookingservice pcShow"
+          >{{ $t("home.headers.reservationService") }}</nuxt-link
         >
         <div class="flex items-center nav-language group relative">
           <img src="../../../asset/image/common/Vector.png" alt="" />
-          <ul class="nav-language-box absolute top-10   hidden group-hover:block -left-5"   >
+          <ul
+            class="nav-language-box absolute top-10 hidden group-hover:block -left-5"
+          >
             <!-- <li><a href="###">繁</a> </li>
             <li><a href="###">简</a> </li> -->
-            <li :class="$i18n.locale === 'hk' ? 'langBoxClass' : ''"><nuxt-link :to="switchLocalePath('hk')">繁</nuxt-link></li>
-            <li :class="$i18n.locale === 'cn' ? 'langBoxClass' : ''"><nuxt-link :to="switchLocalePath('cn')">简</nuxt-link></li>
+            <li :class="$i18n.locale === 'hk' ? 'langBoxClass' : ''">
+              <nuxt-link :to="switchLocalePath('hk')">繁</nuxt-link>
+            </li>
+            <li :class="$i18n.locale === 'cn' ? 'langBoxClass' : ''">
+              <nuxt-link :to="switchLocalePath('cn')">简</nuxt-link>
+            </li>
           </ul>
         </div>
-
       </div>
       <div class="contact">
         <a href="https://api.whatsapp.com/send/?phone=85260610511">
@@ -216,7 +281,7 @@
                 class="p-1"
               />
               <div class="p-1 text-left">
-                <h3 class="text-xl font-normal">{{$t('home.navbar')}}</h3>
+                <h3 class="text-xl font-normal">{{ $t("home.navbar") }}</h3>
                 <p class="text-base text-center">6061 0511</p>
               </div>
             </div>
@@ -225,30 +290,20 @@
       </div>
     </div>
 
-<!-- gsap   指针动画-->
+    <!-- gsap   指针动画-->
     <div class="ball"></div>
-<!-- gsap   指针动画 end-->
-
- 
-
-
-
+    <!-- gsap   指针动画 end-->
   </div>
 
   <!-- </div> -->
 </template>
 <script>
 // gsap plugins
-import gsap from 'gsap'
- 
-
+import gsap from "gsap";
 
 export default {
-  
   styleResources: {
-    scss: [
-      '~/assets/css/base-style.scss'
-    ]
+    scss: ["~/assets/css/base-style.scss"],
   },
   data() {
     return {
@@ -269,105 +324,104 @@ export default {
           img: require("@/asset/image/common/YT.svg"),
         },
       ],
-      
       navList: [
         {
-          main_nav: this.$t('home.headers.aboutSmile'),
+          main_nav: this.$t("home.headers.aboutSmile"),
           link: "",
           child_list: [
             {
-              child_item: this.$t('home.headers.aboutSmileChild_1'),
+              child_item: this.$t("home.headers.aboutSmileChild_1"),
               link: "/group-profile",
             },
             {
-              child_item: this.$t('home.headers.aboutSmileChild_2'),
+              child_item: this.$t("home.headers.aboutSmileChild_2"),
               link: "/our-medical-team",
             },
             {
-              child_item: this.$t('home.headers.aboutSmileChild_3'),
+              child_item: this.$t("home.headers.aboutSmileChild_3"),
               link: "/medical-equipment",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.orthopedicServices'),
+          main_nav: this.$t("home.headers.orthopedicServices"),
           link: "",
           child_list: [
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_1'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_1"),
               link: "/vision-correction/relex-smile",
             },
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_2'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_2"),
               link: "/vision-correction-presbyopia",
             },
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_3'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_3"),
               link: "/vision-correction-lasik",
             },
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_4'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_4"),
               link: "/vision-correction-icl",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.diagnosisInstructions'),
+          main_nav: this.$t("home.headers.diagnosisInstructions"),
           link: "",
           child_list: [
             {
-              child_item: this.$t('home.headers.diagnosisInstructionsChild_1'),
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
               link: "/patient-info",
             },
             {
-              child_item: this.$t('home.headers.diagnosisInstructionsChild_2'),
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
               link: "/flow-of-vision-correction",
             },
             {
-              child_item: this.$t('home.headers.diagnosisInstructionsChild_3'),
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
               link: "/post-corrective-care",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.commonProblem'),
+          main_nav: this.$t("home.headers.commonProblem"),
           link: "",
           child_list: [
             {
-              child_item: this.$t('home.headers.commonProblemChild_1'),
+              child_item: this.$t("home.headers.commonProblemChild_1"),
               link: "/FreQuestions#faq-smile",
             },
             {
-              child_item: this.$t('home.headers.commonProblemChild_2'),
+              child_item: this.$t("home.headers.commonProblemChild_2"),
               link: "/FreQuestions#faq-lasik",
             },
             {
-              child_item: this.$t('home.headers.commonProblemChild_3'),
+              child_item: this.$t("home.headers.commonProblemChild_3"),
               link: "/FreQuestions#faq-icl",
             },
             {
-              child_item: this.$t('home.headers.commonProblemChild_4'),
+              child_item: this.$t("home.headers.commonProblemChild_4"),
               link: "/FreQuestions#faq-presbyopia",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.ophthalmicConsultation'),
+          main_nav: this.$t("home.headers.ophthalmicConsultation"),
           link: "",
           child_list: [
             {
-              child_item: this.$t('home.headers.ophthalmicConsultationChild_1'),
+              child_item: this.$t("home.headers.ophthalmicConsultationChild_1"),
               link: "/video",
             },
             {
-              child_item: this.$t('home.headers.ophthalmicConsultationChild_2'),
+              child_item: this.$t("home.headers.ophthalmicConsultationChild_2"),
               link: "/media",
             },
           ],
         },
 
         {
-          main_nav: this.$t('home.headers.feeConsultation'),
+          main_nav: this.$t("home.headers.feeConsultation"),
           link: "/charge-detail",
           child_list: [],
         },
@@ -377,7 +431,7 @@ export default {
         //   child_list: [],
         // },
         {
-          main_nav: this.$t('home.headers.contactUs'),
+          main_nav: this.$t("home.headers.contactUs"),
           link: "/contact-us",
           child_list: [],
         },
@@ -387,135 +441,127 @@ export default {
         //   child_list: [],
         // },
       ],
+      actIndex: 0
     };
   },
   created() {
-    this.handleSelect();
-    
+    // this.handleSelect();
   },
   mounted() {
     this.pointinit();
     // console.log('i18n------->',this.$i18n.locale)
 
-   // 获取菜单和菜单底部的横线元素
-const menu = document.querySelector(".nav ");
-const menuLine = document.querySelector(".menu-line");
+    // 获取菜单和菜单底部的横线元素
+    const menu = document.querySelector(".nav ");
+    const menuLine = document.querySelector(".menu-line");
 
-// 创建GSAP动画
-gsap.to(menuLine, {
-  duration: 0.3,
-  scaleX: 0,
-  transformOrigin: "right",
-  ease: "power1.inOut"
-});
+    // 创建GSAP动画
+    gsap.to(menuLine, {
+      duration: 0.3,
+      scaleX: 0,
+      transformOrigin: "right",
+      ease: "power1.inOut",
+    });
 
-menu.addEventListener("mousemove", e => {
-  // 获取鼠标在菜单中的位置
-  const xPos = e.clientX - menu.offsetLeft;
-  
-  // 更新菜单底部横线的位置和宽度
-  gsap.to(menuLine, {
-    duration: 0.3,
-    scaleX: 1,
-    left: xPos,
-    transformOrigin: "left",
-    ease: "power1.inOut"
-  });
-});
+    menu.addEventListener("mousemove", (e) => {
+      // 获取鼠标在菜单中的位置
+      const xPos = e.clientX - menu.offsetLeft;
 
-menu.addEventListener("mouseleave", () => {
-  // 鼠标离开菜单后，隐藏菜单底部横线
-  gsap.to(menuLine, {
-    duration: 0.3,
-    scaleX: 0,
-    transformOrigin: "right",
-    ease: "power1.inOut"
-  });
-});
+      // 更新菜单底部横线的位置和宽度
+      gsap.to(menuLine, {
+        duration: 0.3,
+        scaleX: 1,
+        left: xPos,
+        transformOrigin: "left",
+        ease: "power1.inOut",
+      });
+    });
 
-
+    menu.addEventListener("mouseleave", () => {
+      // 鼠标离开菜单后，隐藏菜单底部横线
+      gsap.to(menuLine, {
+        duration: 0.3,
+        scaleX: 0,
+        transformOrigin: "right",
+        ease: "power1.inOut",
+      });
+    });
   },
-  onMounted(){
-
-},
   methods: {
+    pointinit() {
+      // mousemove ball
+      // 指针小球跟随效果
+      gsap.set(".ball", { xPercent: -65, yPercent: -65 });
+      const ball = document.querySelector(".ball");
+      const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+      const mouse = { x: pos.x, y: pos.y };
+      const speed = 0.35;
+      const xSet = gsap.quickSetter(ball, "x", "px");
+      const ySet = gsap.quickSetter(ball, "y", "px");
 
-
-    
-    pointinit(){
- // mousemove ball 
- // 指针小球跟随效果
- gsap.set(".ball", {xPercent: -65, yPercent: -65});
- const ball = document.querySelector(".ball");
- const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
- const mouse = { x: pos.x, y: pos.y };
- const speed = 0.35;
- const xSet = gsap.quickSetter(ball, "x", "px");
- const ySet = gsap.quickSetter(ball, "y", "px");
- 
- window.addEventListener("mousemove", e => {    
-   mouse.x = e.x;
-   mouse.y = e.y;  
- });
- gsap.ticker.add(() => {
-   // adjust speed for higher refresh monitors
-   const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio()); 
-   pos.x += (mouse.x - pos.x) * dt;
-   pos.y += (mouse.y - pos.y) * dt;
-   xSet(pos.x);
-   ySet(pos.y);
- });
- // 指针小球跟随效果 end
- // 指针小球hover效果  **
- const ahrefbtn = document.querySelectorAll("a");
- ahrefbtn.forEach((a) => {
-   a.addEventListener("pointerenter", handleMouseEnter);
-   a.addEventListener("pointerleave", handleMouseLeave);
- });
- function handleMouseEnter() {
-   gsap.to(".ball", {
-     duration: 0.3,
-     scale: 3,
-     opacity: 0,
-     ease: "Power3.easeOut"
-   });
- };
- function handleMouseLeave() {
-   gsap.to(".ball", {
-     duration: 0.3,
-     scale: 1,
-     opacity: 1,
-     ease: "Power3.easeOut"
-   });
- };
- // 指针小球hover效果 end **
- // mousemove ball end
- 
- 
+      window.addEventListener("mousemove", (e) => {
+        mouse.x = e.x;
+        mouse.y = e.y;
+      });
+      gsap.ticker.add(() => {
+        // adjust speed for higher refresh monitors
+        const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
+        pos.x += (mouse.x - pos.x) * dt;
+        pos.y += (mouse.y - pos.y) * dt;
+        xSet(pos.x);
+        ySet(pos.y);
+      });
+      // 指针小球跟随效果 end
+      // 指针小球hover效果  **
+      const ahrefbtn = document.querySelectorAll("a");
+      ahrefbtn.forEach((a) => {
+        a.addEventListener("pointerenter", handleMouseEnter);
+        a.addEventListener("pointerleave", handleMouseLeave);
+      });
+      function handleMouseEnter() {
+        gsap.to(".ball", {
+          duration: 0.3,
+          scale: 3,
+          opacity: 0,
+          ease: "Power3.easeOut",
+        });
+      }
+      function handleMouseLeave() {
+        gsap.to(".ball", {
+          duration: 0.3,
+          scale: 1,
+          opacity: 1,
+          ease: "Power3.easeOut",
+        });
+      }
+      // 指针小球hover效果 end **
+      // mousemove ball end
     },
 
     handleSelect(index, indexPath) {
-      console.log("===", index, indexPath);
-    },
-    isActive(path) {
-      const matched = this.$route.matched
-      for (let i = 0; i < matched.length; i++) {
-        if (matched[i].path === path) {
-          return true
-        }
-      }
-      return false
+      // console.log("===", index, indexPath);
+      this.actIndex = index
     }
   },
-  
-
- 
-
 };
 </script>
 <style lang="scss">
-.ball { position: fixed; pointer-events: none; z-index:9999; width: 20px; height: 20px; background-color: #f5f7fa; border-radius: 50%; mix-blend-mode: difference; left: 0;top: 0;}
- .nav {position: relative; z-index: 99;}
+.ball {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  background-color: #f5f7fa;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  left: 0;
+  top: 0;
+}
+.nav {
+  position: relative;
+  z-index: 99;
+}
 .menu-line {
   height: 1px;
   width: 50px;
@@ -525,45 +571,44 @@ menu.addEventListener("mouseleave", () => {
   left: 0;
 }
 
-
 $active_gradient: #4570b6;
-.langBoxClass{
-    color: #fff !important;
-    background: #4570b6 !important;
-  }
-  .langBox-title{
-    color: #6D6E71;
-    text-align: center;
-    line-height: 40px;
-  }
-  .langBox{
-    padding-top: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .langBox-in{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    margin-bottom: 10px;
-  }
-  .langBox-in:first-child{
-    margin-top: 40px;
-  }
-  .mbHeaderBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.langBoxClass {
+  color: #fff !important;
+  background: #4570b6 !important;
+}
+.langBox-title {
+  color: #6d6e71;
+  text-align: center;
+  line-height: 40px;
+}
+.langBox {
+  padding-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.langBox-in {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.langBox-in:first-child {
+  margin-top: 40px;
+}
+.mbHeaderBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 // pc
 @media (min-width: 768px) {
-  .main_after .nuxt-link-active .mian_nav_text {color: #4570B6 !important;}
-  
-  
+  .main_after .nuxt-link-active .mian_nav_text {
+    color: #4570b6 !important;
+  }
 
   .nav {
     display: flex;
@@ -613,7 +658,7 @@ $active_gradient: #4570b6;
 
       letter-spacing: 0.1em;
 
-      color: #6D6E71;
+      color: #6d6e71;
     }
     .child_menu {
       li a {
@@ -626,13 +671,13 @@ $active_gradient: #4570b6;
 
         letter-spacing: 0.2em;
 
-        color: #6D6E71;
+        color: #6d6e71;
       }
     }
   }
 
   .mian_nav_text {
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: "Noto Sans HK", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -641,17 +686,16 @@ $active_gradient: #4570b6;
 
     letter-spacing: 0.2em;
 
-    color: #6D6E71;
+    color: #6d6e71;
   }
   .main_after {
     .nuxt-link-exact-active {
-      background: #6D6E71 !important;
+      background: #6d6e71 !important;
       -webkit-background-clip: text !important;
       -webkit-text-fill-color: transparent !important;
       background-clip: text !important;
       text-fill-color: transparent !important;
     }
-    
   }
 
   .child_nav {
@@ -664,7 +708,7 @@ $active_gradient: #4570b6;
       -webkit-text-fill-color: transparent;
     }
     a {
-      font-family: 'Noto Sans HK', sans-serif;
+      font-family: "Noto Sans HK", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
@@ -815,12 +859,12 @@ $active_gradient: #4570b6;
       transform: translate3d(100%, 0, 0);
     }
   }
-  .nav-language{
+  .nav-language {
     z-index: 99;
   }
-  .nav-language-box{
+  .nav-language-box {
     // width: 100px;
-    li{
+    li {
       width: 70px;
       display: block;
       height: 40px;
@@ -829,16 +873,15 @@ $active_gradient: #4570b6;
       color: #000;
       text-align: center;
     }
-    li:hover{
+    li:hover {
       color: #fff;
       background: #4570b6;
     }
   }
-  
 }
 // mb
 @media (max-width: 768px) {
-  .ball{
+  .ball {
     display: none;
   }
   .el-menu-vertical-demo .el-menu-item a {

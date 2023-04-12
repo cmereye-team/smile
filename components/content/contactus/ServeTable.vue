@@ -208,7 +208,7 @@ export default {
       font-size: 17px;
       line-height: 18px;
       /* identical to box height, or 138% */
-      padding-top: 13px;
+      padding-top: 20px;
       text-align: center;
       letter-spacing: 0.15em;
 
@@ -219,7 +219,7 @@ export default {
       text-fill-color: transparent;
     }
     .phone-box {
-      padding: 11px 0;
+      padding: 11px 0 20px;
       img {
         margin-right: 9px;
       }

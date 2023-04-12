@@ -145,7 +145,7 @@
         </el-table-column>
       </el-table>
     </div>
-    <div class="flex flex-col items-center md:mb-48 mb-20 font">
+    <div class="flex flex-col items-center md:mb-30 mb-20 font">
       <h3>{{$t('contactUs.h3')}}</h3>
       <div class="flex md:mt-0 mt-5">
         <div class="time-box">
@@ -434,7 +434,7 @@ li {
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #6D6E71;
+    color: #000000;
     margin-bottom: 42px;
   }
   .time-box {
@@ -462,10 +462,11 @@ li {
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #6D6E71;
+    color: #000000;
   }
   .time-box {
-    padding: 0 7px;
+    font-size: 9px;
+    padding: 0 10px;
     border-right: 1px solid #ddd;
     text-align: center;
   }

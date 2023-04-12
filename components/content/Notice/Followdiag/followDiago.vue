@@ -47,6 +47,9 @@ h2 {
   color: #4570B6;
 }
 @media screen and (min-width: 768px) {
+  span{
+    font-size: 16px;
+  }
   .five {
     display: flex;
     flex-direction: column;
@@ -99,19 +102,6 @@ h2 {
       height: 20px;
       background-color: transparent;
     }
-    // .piont::after {
-    //   background: linear-gradient(229.22deg, #4e81bf 6.93%, #62a5d1 93.07%);
-    //   content: "";
-    //   display: inline-block;
-    //   height: 3px;
-    //   left: 14px;
-    //   position: absolute;
-    //   top: 13px;
-    //   bottom: 0;
-    //   display: flex;
-    //   text-align: center;
-    //   width: 192px;
-    // }
   }
   .three {
     position: relative;
@@ -257,19 +247,6 @@ h2 {
       height: 20px;
       background-color: transparent;
     }
-    // .piont::after {
-    //   background: linear-gradient(229.22deg, #4e81bf 6.93%, #62a5d1 93.07%);
-    //   content: "";
-    //   display: inline-block;
-    //   height: 3px;
-    //   left: 14px;
-    //   position: absolute;
-    //   top: 13px;
-    //   bottom: 0;
-    //   display: flex;
-    //   text-align: center;
-    //   width: 192px;
-    // }
   }
   .three {
     margin-bottom: 96px;

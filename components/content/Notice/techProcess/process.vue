@@ -19,42 +19,6 @@
           </div>
           <div class="step-txt"><span>{{item.text}}</span></div>
         </div>
-        <!-- <div class="step-box">
-          <div class="step">
-            <img
-              src="https://static.cmereye.com/imgs/2022/12/06d8dc6309843ceb.png"
-              alt=""
-            />
-          </div>
-          <div class="step-txt"><span>屈光檢查</span></div>
-        </div>
-        <div class="step-box">
-          <div class="step">
-            <img
-              src="https://static.cmereye.com/imgs/2022/12/720c63a2c77fa1fd.png"
-              alt=""
-            />
-          </div>
-          <div class="step-txt"><span>術前準備</span></div>
-        </div>
-        <div class="step-box">
-          <div class="step">
-            <img
-              src="https://static.cmereye.com/imgs/2022/12/8783c894fe4331d9.png"
-              alt=""
-            />
-          </div>
-          <div class="step-txt"><span>預約翌日覆診</span></div>
-        </div>
-        <div class="step-box">
-          <div class="step">
-            <img
-              src="https://static.cmereye.com/imgs/2022/12/02280dc75fddbd20.png"
-              alt=""
-            />
-          </div>
-          <div class="step-txt"><span>矯視療程</span></div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -162,6 +126,10 @@ h2 {
     letter-spacing: 0.1em;
 
     color: #6D6E71;
+    span{
+      font-size: 20px !important;
+      font-weight: 300;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -253,6 +221,9 @@ h2 {
         right: 0;
       }
     }
+  }
+  .process-text {
+    color: #6D6E71;
   }
 }
 </style>

@@ -93,6 +93,20 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .text-box-detail{
+    /deep/ strong {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 20px;
+      color: #6D6E71;
+    }
+    /deep/ p {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 20px;
+      color: #6D6E71;
+    }
+  }
   h2 {
     font-size: 16px;
   }

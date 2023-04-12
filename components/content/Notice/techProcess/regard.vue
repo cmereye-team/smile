@@ -174,8 +174,8 @@ h2 {
         font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 30px;
         /* or 125% */
         white-space: pre;
         text-align: center;
@@ -183,6 +183,12 @@ h2 {
 
         color: #6D6E71;
       }
+    }
+    
+  }
+  .regard-box:first-child{
+    .regard:last-child{
+      margin: 0;
     }
   }
 }
