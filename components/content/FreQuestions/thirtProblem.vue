@@ -4,7 +4,6 @@
       <div class="flex justify-center">
         <h2 id="faq-icl">{{$t('home.headers.commonProblemChild_3')}}</h2>
       </div>
-      <client-only>
       <el-collapse v-model="activeNames" @change="handleChange">
         <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item v-for="(item,index) in lists" :key="index+1" :name="`${index+1}`">
@@ -26,7 +25,6 @@
           </div>
         </el-collapse-item>
       </el-collapse>
-      </client-only>
     </div>
   </div>
 </template>
