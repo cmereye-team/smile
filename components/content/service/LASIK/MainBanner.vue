@@ -88,7 +88,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/03/98166c99909ffcca.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2023/03/98166c99909ffcca.jpg") 100% 100%;
   }
   p{
     font-size: 28px !important;

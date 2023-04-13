@@ -194,7 +194,7 @@ h2 {
     line-height: 52px;
     display: flex;
     align-items: center;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.05em;
 
     color: rgba(174, 213, 231, 0.5);
     margin-bottom: 20px;

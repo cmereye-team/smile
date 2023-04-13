@@ -214,6 +214,17 @@ export default {
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo15') },
           ],
         },
+        {
+          src: require("@/asset/image/about-us/doctor-team/doctor14.jpg"),
+          des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor14'),
+          doctorName: "鄒樂韻醫生",
+          doctorInfo: [
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo8') },
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo14') },
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo15') },
+          ],
+        },
       ],
     };
   },
@@ -225,7 +236,7 @@ export default {
 .img_con {
   h3 {
     background: linear-gradient(#4570b6, #81dbec);
-    z-index: 9999;
+    z-index: 98;
   }
 }
 .doctor {
@@ -285,7 +296,7 @@ h2{
     .overlay {
       width: 100%;
       text-align: center;
-      z-index: 999;
+      z-index: 98;
       box-shadow: -2px 2px 15px rgb(194, 226, 255);
       background: #fff;
       height: 100%;

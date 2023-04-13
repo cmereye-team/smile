@@ -2,7 +2,7 @@
 module.exports = {
 
     home: {
-        name: '立即预约',
+        navbar: '立即預約',
         headers: {
             aboutSmile: '关于希玛',
             orthopedicServices: '矫视服务',
@@ -332,6 +332,7 @@ module.exports = {
                 doctor11: '陈伟乐',
                 doctor12: '梁苑珊',
                 doctor13: '邹枢韵',
+                doctor14: '邹乐韻',
                 doctorInfo1: '香港中文大学內外全科医学士',
                 doctorInfo2: '新加坡国立大学医学硕士(眼科)',
                 doctorInfo3: '英国格拉斯哥皇家外科医学院院士',

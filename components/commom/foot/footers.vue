@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="footerBox">
     <div class="online footer mbShow">
       <div class="foot">
         <div class="box" v-for="item in footerLists" :key="item.title" @click="handleFoot(item)">
@@ -53,8 +53,8 @@ export default {
           title: this.$t('home.footer.title1')
         },
         {
-          type: 'fun',
-          link:'',
+          type: 'href',
+          link:'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&lng=big5&oname=CS_Katherine&r=&rf1=https%3A//smile.hkcmereye&rf2=.com/&p=https%3A//smile.hkcmereye.com/&cid=26ad3fcc05fa407b81167bda7abd1c92&sid=26ad3fcc05fa407b81167bda7abd1c92',
           img:'https://static.cmereye.com/imgs/2023/03/935a17da94382a86.png',
           title: this.$t('home.footer.title2')
         },
@@ -98,6 +98,7 @@ export default {
 //mb
 @media only screen and (max-width: 760px) {
   .foot {
+    width: 100%;
     display: flex;
     height: 102px;
     background: #4570b6;
@@ -135,11 +136,13 @@ export default {
       width: 6vw;
     }
   }
-  .container {
+  .footerBox {
     position: fixed;
     bottom: 0;
-    z-index: 99;
+    left: 0;
+    z-index: 998;
     padding: 0;
+    width: 100vw;
     overflow-y: hidden;
   }
   a {

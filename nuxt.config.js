@@ -59,15 +59,14 @@ export default {
     'asset/css/base-style.scss',
     'asset/css/tailwind.css',
     'element-ui/lib/theme-chalk/index.css',
-    { src: "swiper/dist/css/swiper.css" }
-
+    { src: "swiper/dist/css/swiper.css" },
+    { src: "animate.css/animate.css" }
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: "~/plugins/vue-swiper.js", ssr: false },
     { src:  "~plugins/element-ui/element-ui.js", ssr: false }
-   
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

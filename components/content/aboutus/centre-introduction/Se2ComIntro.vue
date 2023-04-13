@@ -795,7 +795,7 @@ export default {
             letter-spacing: 0.1em;
             width: 15vw;
             display: inline-block;
-            text-align: end;
+            text-align: center ;
           }
         }
       }

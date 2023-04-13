@@ -195,11 +195,11 @@ export default {
           name: this.$t('contactUs.googleMap.name1'),
           address: this.$t('contactUs.googleMap.address1')
         },
-        {
-          number: "3956 2026",
-          name: this.$t('contactUs.googleMap.name2'),
-          address: this.$t('contactUs.googleMap.address2')
-        },
+        // {
+        //   number: "3956 2026",
+        //   name: this.$t('contactUs.googleMap.name2'),
+        //   address: this.$t('contactUs.googleMap.address2')
+        // },
         {
           number: "3892 5099",
           name: "旺 角",

@@ -131,6 +131,7 @@ body .gradient_font {
   .banner {
     background: url("https://static.cmereye.com/imgs/2022/11/c8e8452497d5f740.jpg")
       no-repeat;
+      
   }
 }
 @media (max-width: 768px) {
@@ -142,6 +143,8 @@ body .gradient_font {
   .banner {
     background: url("https://static.cmereye.com/imgs/2022/11/14b67f3baff1fe81.jpg")
       no-repeat;
+      background-size: cover !important;
+    background-repeat: no-repeat;
   }
 }
 </style>

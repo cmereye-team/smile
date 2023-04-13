@@ -1,9 +1,9 @@
 <template>
 
-  <div>
+  <div class="pages">
     <Header />
     
-   <BannerSlider />
+    <BannerSlider />
     <CorrectionService />
     <CmerInfo />
     <aspiration />

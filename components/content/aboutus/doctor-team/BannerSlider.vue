@@ -31,7 +31,7 @@ export default {
     margin-bottom: 10vw;
   }
   .banner {
-  background: url("https://static.cmereye.com/imgs/2022/12/efa3ddacc9443355.png") no-repeat;
-}
+    background: url("https://static.cmereye.com/imgs/2022/12/efa3ddacc9443355.png") no-repeat;
+  }
 }
 </style>

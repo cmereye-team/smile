@@ -411,7 +411,7 @@ export default {
       font-family: "Baskervville" !important;
       font-style: normal;
       font-weight: 400;
-      font-size: 40px !important;
+      font-size: 10.6vw !important;
       line-height: 52px;
       display: flex;
       align-items: center;

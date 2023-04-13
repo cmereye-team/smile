@@ -64,6 +64,8 @@ export default {
 @media screen and (max-width: 768px) {
   .section {
     height: 76vw;
+    background-size: cover !important;
+    background-repeat: no-repeat;
   }
   .des_box {
     padding-left: 28px;

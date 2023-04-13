@@ -37,6 +37,9 @@ export default {
     margin-bottom: 10vw;
     
 }
+/deep/ h3{
+  font-size: 20px !important;
+}
 
 }
 

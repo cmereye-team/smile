@@ -21,19 +21,17 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 768px) {
   .banner {
-    background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_pc.avif")
-      no-repeat;
+    background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_pc.avif") no-repeat;
   }
 }
 @media (max-width: 768px) {
   .section {
-    width: 100vw;
+    width: 100;
     margin: 0 auto;
     margin-bottom: 10vw;
   }
   .banner {
-    background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_mb.avif")
-      no-repeat;
+    background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_mb.avif") no-repeat;
   }
 }
 </style>
