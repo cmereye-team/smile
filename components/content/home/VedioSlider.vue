@@ -56,9 +56,9 @@
         </div>
       </div>
 
-      <a class="link_more" href="/video" style="cursor: pointer"
-        ><span>{{ $t('home.VedioSlider.span') }}</span></a
-      >
+      <nuxt-link class="link_more" :to="localePath('video')" style="cursor: pointer">
+        <span>{{ $t('home.VedioSlider.span') }}</span>
+      </nuxt-link>
     </div>
   </div>
 </template>
