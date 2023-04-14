@@ -481,8 +481,8 @@ export default {
               padding-left: 28px;
               i{font-style: normal;
               em{font-style: normal;
-    font-weight: 400;
-    border-bottom: 1px solid;}
+                font-weight: 400;
+                border-bottom: 1px solid;}
               }
               i:first-child{font-weight:400;}
               i:last-child{font-size:18px;}
@@ -517,9 +517,6 @@ export default {
               padding-left: 36px;
             }
           }
-        }
-        .award_text {
-          
         }
       }
     }
@@ -689,8 +686,8 @@ export default {
     span {
       font-family: "Noto Sans HK";
       font-style: normal;
-      font-weight: 800;
-      font-size: 19px;
+      font-weight: 500;
+      font-size: 17px;
       line-height: 30px;
       /* or 167% */
       align-items: center;
@@ -721,8 +718,12 @@ export default {
   .award_text {
     padding: 20px 20px 40px 20px;
     h4{
-      font-weight: 500;
-      font-size: 20px !important;
+      font-weight: 500 !important;
+      font-size: 14px !important;
+    }
+    p{
+      font-weight: 300;
+      font-size: 14px !important;
     }
   }
   //集团介绍 cmmer 中间部分
@@ -741,28 +742,32 @@ export default {
       }
       
       p{
-        i{    display: block;
-        font-style: normal;    text-align: left;}
-        i:last-child{font-size:10px;}
-        
+        i{    
+          display: block;
+          font-style: normal;
+          text-align: left;
+        }
+        i:last-child{
+          font-size:10px;
+        }
       }
     }
     .content {
         margin-left: 4px;
         margin-right: 14px;
-      p {
-        font-family: "Noto Sans HK";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 15px !important;
-        line-height: 23px !important;
-        /* or 164% */
+        &>p {
+          font-family: "Noto Sans HK";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 15px !important;
+          line-height: 23px !important;
+          /* or 164% */
 
-        text-align: justify;
-        letter-spacing: 0.1em;
+          text-align: justify;
+          letter-spacing: 0.1em;
 
-        color: #6D6E71;
-      }
+          color: #6D6E71;
+        }
       h4 {
         font-size: 17px;
         font-weight: 300;
@@ -819,7 +824,7 @@ export default {
           font-family: "Noto Sans HK";
           font-style: normal;
           font-weight: 300;
-          font-size: 8.7px;
+          font-size: 14px;
           line-height: 26px;
           /* or 207% */
           padding-left: 10px;
