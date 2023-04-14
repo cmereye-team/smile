@@ -53,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 .banner{
   width: 100vw;
-  
+  overflow: hidden;
 }
 .swiper-wrapper{
   img{

@@ -140,7 +140,7 @@ export default {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 998;
+    z-index: 2001;
     padding: 0;
     width: 100vw;
     overflow-y: hidden;

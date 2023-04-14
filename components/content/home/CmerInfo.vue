@@ -3,39 +3,47 @@
     <!-- <div class="big_img cmer page_container pcShow"></div> -->
     <div class="pcShow page_container cmerInfo-in">
       <img
+        class="wow animate__fadeInLeft"
         src="https://static.cmereye.com/imgs/2023/03/03fa96e5afcde673.jpg"
         alt=""
       />
       <img
+        class="wow animate__fadeInRight"
         src="https://static.cmereye.com/imgs/2023/03/c4d569a753127906.jpg"
         alt=""
       />
       <img
+        class="wow animate__fadeInLeft"
         src="https://static.cmereye.com/imgs/2023/03/55e2cbaf1de3bb66.jpg"
         alt=""
       />
       <img
+        class="wow animate__fadeInRight"
         src="https://static.cmereye.com/imgs/2023/03/350f7db95fd29b92.png"
         alt=""
       />
     </div>
     <div class="mbShow" style="margin-bottom: 50px">
       <img
+        class="wow animate__jackInTheBox"
         src="https://static.cmereye.com/imgs/2023/03/03fa96e5afcde673.jpg"
         alt=""
         style="width: 100%"
       />
       <img
+        class="wow animate__jackInTheBox"
         src="https://static.cmereye.com/imgs/2023/03/c4d569a753127906.jpg"
         alt=""
         style="width: 100%"
       />
       <img
+        class="wow animate__jackInTheBox"
         src="https://static.cmereye.com/imgs/2023/03/55e2cbaf1de3bb66.jpg"
         alt=""
         style="width: 100%"
       />
       <img
+        class="wow animate__jackInTheBox"
         src="https://static.cmereye.com/imgs/2023/03/350f7db95fd29b92.png"
         alt=""
         style="width: 100%"

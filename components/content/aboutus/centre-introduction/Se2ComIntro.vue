@@ -16,7 +16,7 @@
         {{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_4')}}<br class="mbShow"/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_5')}}<br class="pcShow" />
         {{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_6')}}<br class="mbShow"/>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_7')}}<br class="mbShow"/><span class="pcShow">，</span>{{$t('aboutUs.centreIntroduction.Se2ComIntro.p4_8')}}
       </p>
-      <a class="more_lin">了解更多</a>
+      <nuxt-link :to="localePath('/contact-us')" class="more_lin">了解更多</nuxt-link>
     </div>
     <div class="page_container box">
       <div class="booking">

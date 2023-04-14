@@ -487,6 +487,14 @@ export default {
         ease: "power1.inOut",
       });
     });
+    this.$nextTick(()=>{
+      if(process.browser){
+        new WOW({ //可以添加自定义内容
+            animateClass: 'animate__animated',
+            offset: 200
+        }).init()
+      }
+    })
   },
   methods: {
     pointinit() {

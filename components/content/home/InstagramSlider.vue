@@ -101,9 +101,9 @@ export default {
         screenWidth: {
           handler: function (val, oldVal) {
             if (val < 768) {
-              console.log('屏幕宽度小于768px')
+              // console.log('屏幕宽度小于768px')
             } else {
-              console.log('屏幕宽度大于768px')
+              // console.log('屏幕宽度大于768px')
             }
           },
           immediate: true

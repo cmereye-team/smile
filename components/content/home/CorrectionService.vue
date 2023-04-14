@@ -27,9 +27,9 @@
   </div>
 </template>
 <script>
-if(process.browser){
-  var {WOW} = require('wowjs')
-}
+// if(process.browser){
+//   var {WOW} = require('wowjs')
+// }
 export default {
   filters: {
     checkUrl(_url,$i18n){
@@ -67,13 +67,13 @@ export default {
   },
   created() {},
   mounted(){
-    this.$nextTick(()=>{
-      if(process.browser){
-        new WOW({ //可以添加自定义内容
-            animateClass: 'animate__animated'
-        }).init()
-      }
-    })
+    // this.$nextTick(()=>{
+    //   if(process.browser){
+    //     new WOW({ //可以添加自定义内容
+    //         animateClass: 'animate__animated'
+    //     }).init()
+    //   }
+    // })
   },
   methods: {
     toItemPages(_url){
