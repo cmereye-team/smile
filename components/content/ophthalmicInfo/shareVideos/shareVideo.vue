@@ -604,9 +604,14 @@ span {
     background-color: #f3fcfe;
     display: block;
   }
+  .tab-control {
+    align-items: center;
+    flex-direction: column;
+  }
   .tab-control .tab-control-item {
     border-bottom: 1px solid #666;
     width: 181px;
+    text-align: center;
   }
   .tab-control .tab-control-item span {
     font-family: "Noto Sans HK";

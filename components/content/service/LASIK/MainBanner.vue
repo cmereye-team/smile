@@ -3,7 +3,7 @@
     <banner class="banner">
       <template v-slot:title>
         <div class="pcShow">
-          <p style="font-size: 28px">{{$t('service.lasik.mainBanner.p')}}</p>
+          <h3 style="font-size: 28px">{{$t('service.lasik.mainBanner.p')}}</h3>
 
           <span>Laser-Assisted in Situ Keratomileusis</span>
         </div>

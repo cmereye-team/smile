@@ -3,7 +3,7 @@
     <banner class="banner">
       <template v-slot:title>
         <div class="pcShow">
-          <p style="font-size: 28px">{{$t('service.icl.mainBanner.p1')}}</p>
+          <h3 style="font-size: 28px">{{$t('service.icl.mainBanner.p1')}}</h3>
 
           <span>(ICL implantable contact lenses)</span>
         </div>
@@ -89,6 +89,9 @@ export default {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: url("https://static.cmereye.com/imgs/2023/03/3ae2a090156712d6.jpg");
+  }
+  span{
+    font-size: 14px;
   }
 }
 </style>

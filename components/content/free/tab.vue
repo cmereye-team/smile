@@ -788,7 +788,7 @@ th {
   /*左表头的圆角*/
 }
 </style>
-<style lang="scss" >
+<style lang="scss" scoped>
 .el-collapse-item__header.is-active {
   background-color: #4570b6 !important;
   color: #fff !important;

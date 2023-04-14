@@ -3,7 +3,7 @@
     <banner class="banner">
       <template v-slot:title>
         <div class="pcShow">
-          <p style="font-size: 28px">{{$t('service.relexSmile.mainBanner.p')}}</p>
+          <h3 style="font-size: 28px">{{$t('service.relexSmile.mainBanner.p')}}</h3>
           <span>(Small Incision Lenticule Extraction)</span>
         </div>
         <div class="mbShow banner_serve">
@@ -37,6 +37,7 @@ export default {
   }
   span{
     letter-spacing: 1px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {

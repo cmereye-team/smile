@@ -99,6 +99,7 @@ export default {
   }
   span{
     letter-spacing: 1px;
+    font-size: 14px;
   }
   .desBox{
     max-width: 600px;

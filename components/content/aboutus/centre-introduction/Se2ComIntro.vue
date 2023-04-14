@@ -480,9 +480,10 @@ export default {
               color: #6d6e71;
               padding-left: 28px;
               i{font-style: normal;
-              em{font-style: normal;
-                font-weight: 400;
-                border-bottom: 1px solid;}
+                em{font-style: normal;
+                  font-weight: 400;
+                  border-bottom: 1px solid;
+                }
               }
               i:first-child{font-weight:400;}
               i:last-child{font-size:18px;}
@@ -747,8 +748,15 @@ export default {
           font-style: normal;
           text-align: left;
         }
+        i:first-child{
+          font-size: 14px;
+          font-weight: 400;
+          margin-top: 2px;
+        }
         i:last-child{
           font-size:10px;
+          font-weight: 300;
+          padding-top: 5px;
         }
       }
     }
