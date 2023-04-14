@@ -19,7 +19,7 @@
             alt=""
           />
         </button>
-        <el-drawer :visible.sync="drawer" :with-header="false" size="60%">
+        <el-drawer v-show="drawer" :visible.sync="drawer" :with-header="false" size="60%">
           <div style="padding: 10px">
             <img class="head_logo" src="@/asset/image/common/Logo.svg" alt="" />
           </div>
@@ -158,6 +158,7 @@
         </el-drawer>
         <el-drawer
           :visible.sync="langDrawer"
+          v-show="drawer"
           direction="btt"
           :with-header="false"
           size="30%"
@@ -210,7 +211,7 @@
       </div> -->
     </div>
 
-    <div class="md: flex items-center">
+    <div class="md:flex items-center pcShow">
       <div class="nav_bar section hidden md:flex md:justify-between">
         <!-- gsap   移动动画-->
 
@@ -962,6 +963,7 @@ $active_gradient: #4570b6;
 @media screen and (max-width: 768px) {
   // 移动端
   .header {
+    min-height: 18vw;
     margin: 3vw 0;
   }
   .link_more {

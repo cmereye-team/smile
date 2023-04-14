@@ -5,12 +5,12 @@
     </div> -->
     <div class="smileService">
       <div class="smileSerItemBox wow animate__flipInY" v-for="(item,index) in lists" :key="index">
-        <div class="smileSerItem group">
-          <a
+        <div class="smileSerItem group" @click="toItemPages(item.href)">
+          <!-- <a
             :href="item.href | checkUrl($i18n)"
             target="_blank"
             rel="noopener noreferrer"
-          >
+          > -->
             <h3 class="title">{{item.title}}</h3>
             <p v-html="item.content"></p>
             <!-- <p>39 歲以上<br />同時有近視／遠視／<br />散光問題</p> -->
@@ -20,7 +20,7 @@
               src="https://static.cmereye.com/imgs/2023/03/8462fdf2330efa37.png"
               alt=""
             />
-          </a>
+          <!-- </a> -->
         </div>
       </div>
     </div>
@@ -75,7 +75,12 @@ export default {
       }
     })
   },
-  methods: {},
+  methods: {
+    toItemPages(_url){
+      let url = `${this.$i18n.locale === 'cn' ? '/cn' : ''}${_url}`
+      this.$router.push(url);
+    }
+  },
 };
 </script>
 

@@ -26,14 +26,16 @@
       <div class="serve_title">
         <p>{{$t('home.headers.reservationService')}}</p>
       </div>
-      <div class="serve-box serve-check" @click="serveForm2">
+      <div class="serve-box serve-check">
         <img
           src="https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg"
           alt=""
+          @click="serveForm2"
         />
         <img
           src="https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg "
           alt=""
+          @click="serveForm"
         />
       </div>
       <!-- <div class="serve-box ml-5 yuye" @click="serveForm">
@@ -54,12 +56,18 @@ export default {
   created() {},
   methods: {
     serveForm2() {
+      console.log(this.$i18n)
+      let url = `${this.$i18n.locale === 'cn' ? '/cn' : ''}/eye-checkup`
+      this.$router.push(url)
       // this.$router.replace("/eye-checkup");
-      this.localePath('/eye-checkup')
+      // this.localePath('/eye-checkup')
     },
     serveForm() {
       // this.$router.replace("/ophthalmicInfo/AppointForm");
-      this.localePath('/ophthalmicInfo/AppointForm')
+      // this.localePath('/ophthalmicInfo/AppointForm')
+      let url = `${this.$i18n.locale === 'cn' ? '/cn' : ''}/booking`
+      this.$router.push(url)
+      // this.localePath('/booking')
     },
   },
 };

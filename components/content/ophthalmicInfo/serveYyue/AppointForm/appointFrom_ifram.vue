@@ -1,6 +1,6 @@
 <template>
-  <div class="page_container serve-page">
-    <iframe width="100%" height="2600" src="https://smile.hkcmereye.com/bookingifram"></iframe>
+  <div class="bookingifram">
+    <iframe width="100%" height="1600" src="https://smile.hkcmereye.com/bookingifram"></iframe>
   </div>
 </template>
 
@@ -19,5 +19,6 @@ export default {
 <style lang="scss" scoped>
  
 @media screen and (min-width: 768px) { }
-@media screen and (max-width: 768px) { }
+@media screen and (max-width: 768px) { 
+}
 </style>
