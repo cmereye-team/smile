@@ -38,6 +38,24 @@ module.exports = {
             reservationServiceChild_2: '讲座',
             togLang: '选择语言'
         },
+        cmerInfo: [
+          {
+            h4: '超过<br class="mbShow"/><strong>30,000</strong>支',
+            span: '眼睛完成微笑矫视'
+          },
+          {
+            h4: '<strong>16</strong>位',
+            span: '眼科专科医生'
+          },
+          {
+            h4: '第<strong>1</strong>间',
+            span: '香港上市眼科中心'
+          },
+          {
+            h4: '<strong>8,000</strong>尺',
+            span: '宽敞、舒适中心环境'
+          }
+        ],
         CorrectionService: {
             p1: '1000 度近视<br />500 度散光',
             p2: '1500 度近视 <br />600 度远视/散光',
@@ -333,6 +351,7 @@ module.exports = {
                 doctor12: '梁苑珊',
                 doctor13: '邹枢韵',
                 doctor14: '邹乐韻',
+                doctor15: '尹浩柟',
                 doctorInfo1: '香港中文大学內外全科医学士',
                 doctorInfo2: '新加坡国立大学医学硕士(眼科)',
                 doctorInfo3: '英国格拉斯哥皇家外科医学院院士',

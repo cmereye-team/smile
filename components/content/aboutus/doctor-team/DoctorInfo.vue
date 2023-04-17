@@ -215,6 +215,17 @@ export default {
           ],
         },
         {
+          src: require("@/asset/image/about-us/doctor-team/doctor15.jpg"),
+          des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor15'),
+          doctorName: "尹浩柟醫生",
+          doctorInfo: [
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo8') },
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo14') },
+            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo15') },
+          ],
+        },
+        {
           src: require("@/asset/image/about-us/doctor-team/doctor14.jpg"),
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor14'),
           doctorName: "鄒樂韻醫生",

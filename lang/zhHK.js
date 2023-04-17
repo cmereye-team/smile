@@ -39,6 +39,24 @@ module.exports = {
 
             togLang: '選擇語言'
         },
+        cmerInfo: [
+          {
+            h4: `超過<br class="mbShow"/><strong>30,000</strong>隻`,
+            span: '眼睛完成微笑矯視'
+          },
+          {
+            h4: '<strong>16</strong>位',
+            span: '眼科專科醫生'
+          },
+          {
+            h4: '第<strong>1</strong>間',
+            span: '香港上市眼科中心'
+          },
+          {
+            h4: '<strong>8,000</strong>尺',
+            span: '寬敞、舒適中心環境'
+          }
+        ],
         CorrectionService: {
             p1: '1000 度近視<br />500 度散光',
             p2: '1500 度近視 <br />600 度遠視/散光',
@@ -334,6 +352,7 @@ module.exports = {
                 doctor12: '梁苑珊',
                 doctor13: '鄒樞韻',
                 doctor14: '鄒樂韻',
+                doctor15: '尹浩柟',
                 doctorInfo1: '香港中文大學內外全科醫學士',
                 doctorInfo2: '新加坡國立大學醫學碩士(眼科)',
                 doctorInfo3: '英國格拉斯哥皇家外科醫學院院士',
