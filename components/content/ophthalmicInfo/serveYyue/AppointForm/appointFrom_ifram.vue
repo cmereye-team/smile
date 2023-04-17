@@ -1,6 +1,6 @@
 <template>
   <div class="bookingifram">
-    <iframe width="100%" height="1600" src="https://smile.hkcmereye.com/bookingifram"></iframe>
+    <iframe width="100%" height="1600" src="https://smilecms.hkcmereye.com/bookingifram"></iframe>
   </div>
 </template>
 
