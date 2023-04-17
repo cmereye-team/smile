@@ -259,11 +259,19 @@
           >
             <!-- <li><a href="###">繁</a> </li>
             <li><a href="###">简</a> </li> -->
-            <li :class="$i18n.locale === 'hk' ? 'langBoxClass' : ''">
+            <!-- <li :class="$i18n.locale === 'hk' ? 'langBoxClass' : ''">
               <nuxt-link :to="switchLocalePath('hk')" class="w-full h-full block">繁</nuxt-link>
             </li>
             <li :class="$i18n.locale === 'cn' ? 'langBoxClass' : ''">
               <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link>
+            </li> -->
+            <li @click="handleLang('hk')">
+              繁
+              <!-- <nuxt-link :to="switchLocalePath('hk')" class="w-full h-full block">繁</nuxt-link> -->
+            </li>
+            <li @click="handleLang('cn')">
+              简
+              <!-- <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link> -->
             </li>
           </ul>
         </div>
@@ -550,6 +558,22 @@ export default {
     handleSelect(index, indexPath) {
       // console.log("===", index, indexPath);
       this.actIndex = index
+    },
+    handleLang(_type){
+      // console.log('当前的语言类型： --->',this.$i18n.locale)
+      if(this.$i18n.locale === _type) return
+      // console.log('点击的语言类型： --->',_type)
+      // console.log('路径打印',this.switchLocalePath(_type))
+      let _path = this.switchLocalePath(_type)
+      this.$router.push(_path)
+      var _text = ''
+      if(_type === 'cn'){
+        _text = '微软雅黑'
+      }else if(
+        _text = 'Noto Sans HK'
+      )
+      // console.log('准备设置的字体： ===>',_text)
+      document.documentElement.style.setProperty("--font_family_hk",_text);  //"Noto Sans HK"
     }
   },
 };

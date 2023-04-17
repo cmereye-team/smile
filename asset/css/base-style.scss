@@ -1,6 +1,15 @@
+
+// $font_family_hk:  var(--font_family_hk);
+$font_family_yh: "微软雅黑";
+
+:root{
+  --font_family_hk:  var(--font_family_hk);
+}
+
+
 // common
 body {
-  font-family: "Noto Sans HK", sans-serif;
+  font-family: var(--font_family_hk), sans-serif;
   font-size: 15px;
   ul {
     list-style-type: none;
@@ -41,16 +50,16 @@ body {
       
 // pc端
 @media (min-width: 768px) {
-body {font-family: "Noto Sans HK", sans-serif !important;min-width: 1200px;}
-caption {font-family: "Noto Sans HK", sans-serif !important;}
-h3 {font-family: "Noto Sans HK", sans-serif !important;}
-div {font-family: "Noto Sans HK", sans-serif !important;}
-a {font-family: "Noto Sans HK", sans-serif !important;}
-td {font-family: "Noto Sans HK", sans-serif !important;}
+body {font-family: var(--font_family_hk), sans-serif !important;min-width: 1200px;}
+caption {font-family:  var(--font_family_hk), sans-serif !important;}
+h3 {font-family:  var(--font_family_hk), sans-serif !important;}
+div {font-family:  var(--font_family_hk), sans-serif !important;}
+a {font-family:  var(--font_family_hk), sans-serif !important;}
+td {font-family:  var(--font_family_hk), sans-serif !important;}
  
-span {font-family: "Noto Sans HK", sans-serif !important;}
-h2 {font-family: "Noto Sans HK", sans-serif !important;}
-div {font-family: "Noto Sans HK", sans-serif !important;}
+span {font-family:  var(--font_family_hk), sans-serif !important;}
+h2 {font-family:  var(--font_family_hk), sans-serif !important;}
+div {font-family:  var(--font_family_hk), sans-serif !important;}
 
 .nav-language{margin-left: 26px;}
 .nav-bookingservice{min-width:129px;text-align:center;}
@@ -116,35 +125,35 @@ div {font-family: "Noto Sans HK", sans-serif !important;}
 
 @media (max-width: 768px) {
   body {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   caption {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   h3 {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   div {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
 
   a {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   td {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   p {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   span {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   h2 {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   div {
-    font-family: "Noto Sans HK", sans-serif !important;
+    font-family:  var(--font_family_hk), sans-serif !important;
   }
   .page_container {
     padding-left: 1.25rem !important;
