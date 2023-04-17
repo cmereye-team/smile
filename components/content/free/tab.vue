@@ -106,8 +106,8 @@
         </div>
         <span>{{$t('chargeDetail.span3')}}</span>
       </div>
-      <div class="tabBtn" @click="toWhatsapp">
-        <span>立即预约</span>
+      <div class="pcShow tabBtn" @click="toWhatsapp">
+        <span>{{ $t("home.navbar") }}</span>
       </div>
 
       <div class="md:mt-10" id="ICL">
@@ -292,8 +292,8 @@
         </div>
         <span class="shoufei">{{$t('chargeDetail.span3')}}</span>
       </div>
-      <div class="tabBtn" @click="toWhatsapp">
-        <span>立即预约</span>
+      <div class="pcShow tabBtn" @click="toWhatsapp">
+        <span>{{ $t("home.navbar") }}</span>
       </div>
 
       <div class="md:mt-10" id="LASIK">
@@ -385,8 +385,8 @@
         </div>
         <span>{{$t('chargeDetail.span3')}}</span>
       </div>
-      <div class="tabBtn" @click="toWhatsapp">
-        <span>立即预约</span>
+      <div class="pcShow tabBtn" @click="toWhatsapp">
+        <span>{{ $t("home.navbar") }}</span>
       </div>
 
       <div class="md:mt-10" id="Clear-Vision">
@@ -550,8 +550,8 @@
           </tbody>
         </table>
       </div>
-      <div class="tabBtn" @click="toWhatsapp">
-        <span>立即预约</span>
+      <div class="pcShow tabBtn" @click="toWhatsapp">
+        <span>{{ $t("home.navbar") }}</span>
       </div>
     </div>
     <div v-else-if="currentTitleIndex === 1" class="flex flex-col items-center"></div>

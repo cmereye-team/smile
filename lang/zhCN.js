@@ -2,7 +2,7 @@
 module.exports = {
 
     home: {
-        navbar: '立即預約',
+        navbar: '立即预约',
         headers: {
             aboutSmile: '关于希玛',
             orthopedicServices: '矫视服务',
