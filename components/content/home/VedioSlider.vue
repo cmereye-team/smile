@@ -72,11 +72,11 @@ export default {
       banners: [
         {
           src: require("../../../asset/image/home/video.png"),
-          link: "https://www.youtube.com/watch?v=5ihrzFvOy38",
+          link: "https://www.youtube.com/watch?v=L5GFWM7Fxqs",
         },
         {
           src: require("../../../asset/image/home/video_2.png"),
-          link: "https://www.youtube.com/watch?v=L5GFWM7Fxqs",
+          link: "https://youtu.be/oHDOFYMEUsk",
         },
         {
           src: require("../../../asset/image/home/veido_3.png"),
