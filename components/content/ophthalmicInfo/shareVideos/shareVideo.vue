@@ -32,7 +32,7 @@
         <div v-if="currentTitleIndex === 0">
           <div class="media-buju">
             <div class="media-box" v-for="(item_1_1,index_1_1) in mediaBujuLists_1_1" :key="index_1_1">
-              <a :href="item_1_1.link">
+              <a :href="item_1_1.link" target="_Blank">
                 <img
                   :src="item_1_1.img"
                   alt=""
@@ -71,7 +71,7 @@
         <div v-else-if="currentTitleIndex === 1">
           <div class="media-buju">
             <div class="media-box" v-for="(item_1_2,index_1_2) in mediaBujuLists_1_2" :key="index_1_2">
-              <a :href="item_1_2.link">
+              <a :href="item_1_2.link" target="_Blank">
                 <img
                   :src="item_1_2.img"
                   alt=""
@@ -114,7 +114,7 @@
         <div v-else>
           <div class="media-buju">
             <div class="media-box" v-for="(item_1_4,index_1_4) in mediaBujuLists_1_4" :key="index_1_4">
-              <a :href="item_1_4.link">
+              <a :href="item_1_4.link" target="_Blank">
                 <img
                   :src="item_1_4.img"
                   alt=""
@@ -167,7 +167,7 @@
         <div v-if="currentTitleIndex === 0">
           <div class="media-buju">
             <div class="media-box" v-for="(item_2_1,index_2_1) in mediaBujuLists_2_1" :key="index_2_1">
-              <a :href="item_2_1.link">
+              <a :href="item_2_1.link" target="_Blank">
                 <img
                   :src="item_2_1.img"
                   alt=""
@@ -207,7 +207,7 @@
         <div v-else-if="currentTitleIndex === 1">
           <div class="media-buju">
             <div class="media-box" v-for="(item_2_2,index_2_2) in mediaBujuLists_2_2" :key="index_2_2">
-              <a :href="item_2_2.link">
+              <a :href="item_2_2.link" target="_Blank">
                 <img
                   :src="item_2_2.img"
                   alt=""
@@ -250,7 +250,7 @@
         <div v-else>
           <div class="media-buju">
             <div class="media-box" v-for="(item_2_4,index_2_4) in mediaBujuLists_2_4" :key="index_2_4">
-              <a :href="item_2_4.link">
+              <a :href="item_2_4.link" target="_Blank">
                 <img
                   :src="item_2_4.img"
                   alt=""
