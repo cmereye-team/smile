@@ -17,37 +17,50 @@
       </div>
     </div>
     <div v-if="currentTitleIndex === 0" class="flex flex-col items-center">
-      <div class="md:mt-10" id="smile"><h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title1')}}</h2></div>
+      <div class="md:mt-10" id="smile">
+        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title1')}}</h2>
+      </div>
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
           <thead>
             <tr>
-              <th><p>{{$t('chargeDetail.p1')}}</p></th>
-              <th><p>{{$t('chargeDetail.p2')}}</p></th>
+              <th>
+                <p>{{$t('chargeDetail.p1')}}</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}}</p>
+              </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td><span>$15,000</span></td>
-              <td><span>$29,000</span></td>
+              <td>
+                <span>$15,000</span>
+              </td>
+              <td>
+                <span>$29,000</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
-              <td><span>$12,500*</span></td>
-              <td><span>$20,000*</span></td>
+              <td>
+                <span>$12,500*</span>
+              </td>
+              <td>
+                <span>$20,000*</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>{{$t('chargeDetail.span1')}}</span>
+        <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20 taoc_boxs">
@@ -57,115 +70,143 @@
           </div>
           <div class="icon-box">
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
               <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
               <span>{{$t('chargeDetail.span5')}}</span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i> </span>
+              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <span>
+                {{$t('chargeDetail.span6')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span7')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <span>
+                {{$t('chargeDetail.span7')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <span>
+                {{$t('chargeDetail.span8')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
               <span>{{$t('chargeDetail.span9')}}</span>
             </div>
           </div>
         </div>
-        <span
-          >{{$t('chargeDetail.span3')}}</span
-        >
+        <span>{{$t('chargeDetail.span3')}}</span>
       </div>
-       <div class="md:mt-10" id="ICL"><h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title2')}}</h2></div>
+      <div class="tabBtn" @click="toWhatsapp">
+        <span>立即预约</span>
+      </div>
+
+      <div class="md:mt-10" id="ICL">
+        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title2')}}</h2>
+      </div>
       <div class="table-1-box pcShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
           <thead>
             <tr>
-              <th><p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p4')}})</p></th>
-              <th><p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p5')}})</p></th>
-              <th><p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p4')}})</p></th>
-              <th><p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p5')}})</p></th>
+              <th>
+                <p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p4')}})</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p5')}})</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p4')}})</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p5')}})</p>
+              </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td><span>$45,000</span></td>
-              <td><span>$50,000</span></td>
-              <td><span>$85,000</span></td>
-              <td><span>$95,000</span></td>
+              <td>
+                <span>$45,000</span>
+              </td>
+              <td>
+                <span>$50,000</span>
+              </td>
+              <td>
+                <span>$85,000</span>
+              </td>
+              <td>
+                <span>$95,000</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
-              <td><span>$38,000*</span></td>
-              <td><span>$42,000*</span></td>
-              <td><span>$67,000*</span></td>
-              <td><span>$72,000*</span></td>
+              <td>
+                <span>$38,000*</span>
+              </td>
+              <td>
+                <span>$42,000*</span>
+              </td>
+              <td>
+                <span>$67,000*</span>
+              </td>
+              <td>
+                <span>$72,000*</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $500^</td>
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>{{$t('chargeDetail.span1')}}</span>
+        <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
           <thead>
             <tr>
-              <th><p>{{$t('chargeDetail.p1')}}</p></th>
-              <th><p>{{$t('chargeDetail.p2')}}</p></th>
+              <th>
+                <p>{{$t('chargeDetail.p1')}}</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}}</p>
+              </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td><span>$15,000</span></td>
-              <td><span>$29,000</span></td>
+              <td>
+                <span>$15,000</span>
+              </td>
+              <td>
+                <span>$29,000</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
-              <td><span>$12,500*</span></td>
-              <td><span>$20,000*</span></td>
+              <td>
+                <span>$12,500*</span>
+              </td>
+              <td>
+                <span>$20,000*</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
@@ -177,29 +218,42 @@
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <thead>
             <tr>
-              <th><p>{{$t('chargeDetail.p1')}}</p></th>
-              <th><p>{{$t('chargeDetail.p2')}}</p></th>
+              <th>
+                <p>{{$t('chargeDetail.p1')}}</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}}</p>
+              </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td><span>$15,000</span></td>
-              <td><span>$29,000</span></td>
+              <td>
+                <span>$15,000</span>
+              </td>
+              <td>
+                <span>$29,000</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
-              <td><span>$12,500*</span></td>
-              <td><span>$20,000*</span></td>
+              <td>
+                <span>$12,500*</span>
+              </td>
+              <td>
+                <span>$20,000*</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span11')}}</span><br />
+        <span>{{$t('chargeDetail.span11')}}</span>
+        <br />
         <span>*{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20 taoc_boxs">
@@ -209,71 +263,83 @@
           </div>
           <div class="icon-box">
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
               <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span5')}} </br>（{{$t('chargeDetail.span10')}}）</span>
+              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
+              <span>
+                {{$t('chargeDetail.span5')}}
+                <br />
+                （{{$t('chargeDetail.span10')}}）
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <span>
+                {{$t('chargeDetail.span6')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <span>
+                {{$t('chargeDetail.span8')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
           </div>
         </div>
-        <span class="shoufei"
-          >{{$t('chargeDetail.span3')}}</span
-        >
+        <span class="shoufei">{{$t('chargeDetail.span3')}}</span>
+      </div>
+      <div class="tabBtn" @click="toWhatsapp">
+        <span>立即预约</span>
       </div>
 
-      <div class="md:mt-10" id="LASIK"><h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3')}}</h2></div>
-       <div class="table-1-box">
+      <div class="md:mt-10" id="LASIK">
+        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3')}}</h2>
+      </div>
+      <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
           <thead>
             <tr>
-              <th><p>{{$t('chargeDetail.p1')}}</p></th>
-              <th><p>{{$t('chargeDetail.p2')}}</p></th>
+              <th>
+                <p>{{$t('chargeDetail.p1')}}</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}}</p>
+              </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td><span>$15,000</span></td>
-              <td><span>$29,000</span></td>
+              <td>
+                <span>$15,000</span>
+              </td>
+              <td>
+                <span>$29,000</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
-              <td><span>$12,500*</span></td>
-              <td><span>$20,000*</span></td>
+              <td>
+                <span>$12,500*</span>
+              </td>
+              <td>
+                <span>$20,000*</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>{{$t('chargeDetail.span1')}}</span>
+        <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20 taoc_boxs">
@@ -283,184 +349,254 @@
           </div>
           <div class="icon-box">
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
               <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
               <span>{{$t('chargeDetail.span5')}}</span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <span>
+                {{$t('chargeDetail.span6')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span7')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <span>
+                {{$t('chargeDetail.span7')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <span>
+                {{$t('chargeDetail.span8')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
               <span>{{$t('chargeDetail.span9')}}</span>
             </div>
           </div>
         </div>
-        <span
-          >{{$t('chargeDetail.span3')}}</span
-        >
+        <span>{{$t('chargeDetail.span3')}}</span>
+      </div>
+      <div class="tabBtn" @click="toWhatsapp">
+        <span>立即预约</span>
       </div>
 
-      <div class="md:mt-10" id="Clear-Vision"><h2 style="margin-bottom: 0 !important;">Clear-Vision  激光矯視</h2></div>
+      <div class="md:mt-10" id="Clear-Vision">
+        <h2 style="margin-bottom: 0 !important;">Clear-Vision 激光矯視</h2>
+      </div>
       <div class="table-box_four pcShow">
-<table  :summary="$t('chargeDetail.captionTitle')" class="gdp">
-        <caption >
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
-        <colgroup>
-          <col width="70" style="width: 50pt" />
-          <col width="140" style="width: 105pt" />
-          <col width="72" style="width: 54pt" span="6" />
-        </colgroup>
-        <tbody>
-          <tr height="19">
-            <td class="boder-none"></td>
-            <td rowspan="2" class="et2 table-head-blue"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</span></td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p5')}})</span></td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue">
-              <span>{{$t('chargeDetail.span13')}}<br>({{$t('chargeDetail.p4')}})</span>
-            </td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span13')}}<br> ({{$t('chargeDetail.p5')}})</span></td>
-          </tr>
-          <tr height="10">
-            <!-- <td class="boder-none"></td> -->
-          </tr>
-          <tr height="19" class="jiage">
-            <td class="danyan" style="width: 73px !important;"><span class="text">{{$t('chargeDetail.p1')}}</span></td>
-            <td class><span>$18,000 - $35,000</span></td>
-            <td colspan="2" class="et4"><span>$23,000 - $41,000</span></td>
-            <td colspan="2" class="et4"><span>$26,000 - $51,000</span></td>
-            <td colspan="2" class="et4"><span>$31,000 - $51,000</span></td>
-          </tr>
-          <tr height="19" class="free">
-            <td class="boder-none"></td>
-            <td colspan="7" class="et2"><span>{{$t('chargeDetail.span5')}} $600</span></td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-     <div class="table-1-box mbShow">
-        <table  class="gdp">
-           <caption>
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
-          <thead>
-            <tr>
-              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</p></th>
-              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}}<br> ({{$t('chargeDetail.p5')}})</p></th>
-            </tr>
-          </thead>
-
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <colgroup>
+            <col width="70" style="width: 50pt" />
+            <col width="140" style="width: 105pt" />
+            <col width="72" style="width: 54pt" span="6" />
+          </colgroup>
           <tbody>
-            <tr >
-              <td>
-                <div  class="my-5">
-              <span>$18,000 </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $35,000</span>
-                </div></td>
-              <td> <div  class="my-5">
-              <span>$23,000  </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $41,000</span>
-                </div></td>
+            <tr height="19">
+              <td class="boder-none"></td>
+              <td rowspan="2" class="et2 table-head-blue">
+                <span>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </span>
+              </td>
+              <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
+                <span>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </span>
+              </td>
+              <td colspan="2" rowspan="2" class="et2 table-head-blue">
+                <span>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </span>
+              </td>
+              <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
+                <span>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </span>
+              </td>
             </tr>
-            <tr>
-                <th style="border-radius: 0 !important;padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p4')}})</p></th>
-              <th style="border-radius: 0 !important; padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p5')}})</p></th>
+            <tr height="10">
+              <!-- <td class="boder-none"></td> -->
             </tr>
-           <tr >
-              <td>
-                <div  class="my-5">
-              <span>$26,000 </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $51,000</span>
-                </div></td>
-              <td> <div  class="my-5">
-              <span>$31,000  </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $51,000</span>
-                </div></td>
+            <tr height="19" class="jiage">
+              <td class="danyan" style="width: 73px !important;">
+                <span class="text">{{$t('chargeDetail.p1')}}</span>
+              </td>
+              <td class>
+                <span>$18,000 - $35,000</span>
+              </td>
+              <td colspan="2" class="et4">
+                <span>$23,000 - $41,000</span>
+              </td>
+              <td colspan="2" class="et4">
+                <span>$26,000 - $51,000</span>
+              </td>
+              <td colspan="2" class="et4">
+                <span>$31,000 - $51,000</span>
+              </td>
             </tr>
-            <tr>
-              <td colspan="4" class="free" style="padding: 10px 0;">{{$t('chargeDetail.span5')}} $600</td>
+            <tr height="19" class="free">
+              <td class="boder-none"></td>
+              <td colspan="7" class="et2">
+                <span>{{$t('chargeDetail.span5')}} $600</span>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
-    </div>
-    <div v-else-if="currentTitleIndex === 1" class="flex flex-col items-center">
-      
-    </div>
-    <div v-else-if="currentTitleIndex === 2" class="flex flex-col items-center">
-      <div class="table-1-box">
-        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
+      <div class="table-1-box mbShow">
+        <table class="gdp">
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
           <thead>
             <tr>
-              <th><p>{{$t('chargeDetail.p1')}}</p></th>
-              <th><p>{{$t('chargeDetail.p2')}}</p></th>
+              <th style="padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </p>
+              </th>
+              <th style="padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </p>
+              </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td><span>$15,000</span></td>
-              <td><span>$29,000</span></td>
+              <td>
+                <div class="my-5">
+                  <span>$18,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$35,000</span>
+                </div>
+              </td>
+              <td>
+                <div class="my-5">
+                  <span>$23,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$41,000</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th style="border-radius: 0 !important;padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </p>
+              </th>
+              <th style="border-radius: 0 !important; padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </p>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <div class="my-5">
+                  <span>$26,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$51,000</span>
+                </div>
+              </td>
+              <td>
+                <div class="my-5">
+                  <span>$31,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$51,000</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                colspan="4"
+                class="free"
+                style="padding: 10px 0;"
+              >{{$t('chargeDetail.span5')}} $600</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabBtn" @click="toWhatsapp">
+        <span>立即预约</span>
+      </div>
+    </div>
+    <div v-else-if="currentTitleIndex === 1" class="flex flex-col items-center"></div>
+    <div v-else-if="currentTitleIndex === 2" class="flex flex-col items-center">
+      <div class="table-1-box">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <thead>
+            <tr>
+              <th>
+                <p>{{$t('chargeDetail.p1')}}</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}}</p>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <span>$15,000</span>
+              </td>
+              <td>
+                <span>$29,000</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至30.4.2023）</td>
             </tr>
             <tr>
-              <td><span>$12,500*</span></td>
-              <td><span>$20,000*</span></td>
+              <td>
+                <span>$12,500*</span>
+              </td>
+              <td>
+                <span>$20,000*</span>
+              </td>
             </tr>
             <tr>
               <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span1')}}</span><br />
+        <span>{{$t('chargeDetail.span1')}}</span>
+        <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
       <div class="pb-20">
@@ -470,145 +606,198 @@
           </div>
           <div class="icon-box">
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
               <span>{{$t('chargeDetail.span4')}}</span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
               <span>{{$t('chargeDetail.span5')}}</span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span6')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <span>
+                {{$t('chargeDetail.span6')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span7')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <span>
+                {{$t('chargeDetail.span7')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
-                alt=""
-              />
-              <span>{{$t('chargeDetail.span8')}}<i style="font-size: 14px;">#</i></span>
+              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <span>
+                {{$t('chargeDetail.span8')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
             </div>
             <div class="box">
-              <img
-                src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
               <span>{{$t('chargeDetail.span9')}}</span>
             </div>
           </div>
         </div>
-        <span
-          >{{$t('chargeDetail.span3')}}</span
-        >
+        <span>{{$t('chargeDetail.span3')}}</span>
       </div>
     </div>
     <div v-else class="flex flex-col items-center">
       <div class="table-box_four pcShow">
-<table  :summary="$t('chargeDetail.captionTitle')" class="gdp">
-        <caption >
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
-        <colgroup>
-          <col width="70" style="width: 50pt" />
-          <col width="140" style="width: 105pt" />
-          <col width="72" style="width: 54pt" span="6" />
-        </colgroup>
-        <tbody>
-          <tr height="19">
-            <td class="boder-none"></td>
-            <td rowspan="2" class="et2 table-head-blue"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</span></td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p5')}})</span></td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue">
-              <span>{{$t('chargeDetail.span13')}}<br>({{$t('chargeDetail.p4')}})</span>
-            </td>
-            <td colspan="2" rowspan="2" class="et2 table-head-blue-2"><span>{{$t('chargeDetail.span13')}}<br> ({{$t('chargeDetail.p5')}})</span></td>
-          </tr>
-          <tr height="10">
-            <!-- <td class="boder-none"></td> -->
-          </tr>
-          <tr height="19" class="jiage">
-            <td class="danyan" style="width: 73px !important;"><span class="text">{{$t('chargeDetail.p1')}}</span></td>
-            <td class><span>$18,000 - $35,000</span></td>
-            <td colspan="2" class="et4"><span>$23,000 - $41,000</span></td>
-            <td colspan="2" class="et4"><span>$26,000 - $51,000</span></td>
-            <td colspan="2" class="et4"><span>$31,000 - $51,000</span></td>
-          </tr>
-          <tr height="19" class="free">
-            <td class="boder-none"></td>
-            <td colspan="7" class="et2"><span>{{$t('chargeDetail.span5')}} $600</span></td>
-          </tr>
-        </tbody>
-      </table>
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <colgroup>
+            <col width="70" style="width: 50pt" />
+            <col width="140" style="width: 105pt" />
+            <col width="72" style="width: 54pt" span="6" />
+          </colgroup>
+          <tbody>
+            <tr height="19">
+              <td class="boder-none"></td>
+              <td rowspan="2" class="et2 table-head-blue">
+                <span>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </span>
+              </td>
+              <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
+                <span>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </span>
+              </td>
+              <td colspan="2" rowspan="2" class="et2 table-head-blue">
+                <span>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </span>
+              </td>
+              <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
+                <span>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </span>
+              </td>
+            </tr>
+            <tr height="10">
+              <!-- <td class="boder-none"></td> -->
+            </tr>
+            <tr height="19" class="jiage">
+              <td class="danyan" style="width: 73px !important;">
+                <span class="text">{{$t('chargeDetail.p1')}}</span>
+              </td>
+              <td class>
+                <span>$18,000 - $35,000</span>
+              </td>
+              <td colspan="2" class="et4">
+                <span>$23,000 - $41,000</span>
+              </td>
+              <td colspan="2" class="et4">
+                <span>$26,000 - $51,000</span>
+              </td>
+              <td colspan="2" class="et4">
+                <span>$31,000 - $51,000</span>
+              </td>
+            </tr>
+            <tr height="19" class="free">
+              <td class="boder-none"></td>
+              <td colspan="7" class="et2">
+                <span>{{$t('chargeDetail.span5')}} $600</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-     <div class="table-1-box mbShow">
-        <table  class="gdp">
-           <caption>
-            {{$t('chargeDetail.captionTitle')}}
-          </caption>
+      <div class="table-1-box mbShow">
+        <table class="gdp">
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
           <thead>
             <tr>
-              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}} <br>({{$t('chargeDetail.p4')}})</p></th>
-              <th style="padding: 12px 0;"><p>{{$t('chargeDetail.span12')}}<br> ({{$t('chargeDetail.p5')}})</p></th>
+              <th style="padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </p>
+              </th>
+              <th style="padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span12')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </p>
+              </th>
             </tr>
           </thead>
 
           <tbody>
-            <tr >
+            <tr>
               <td>
-                <div  class="my-5">
-              <span>$18,000 </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $35,000</span>
-                </div></td>
-              <td> <div  class="my-5">
-              <span>$23,000  </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $41,000</span>
-                </div></td>
+                <div class="my-5">
+                  <span>$18,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$35,000</span>
+                </div>
+              </td>
+              <td>
+                <div class="my-5">
+                  <span>$23,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$41,000</span>
+                </div>
+              </td>
             </tr>
             <tr>
-                <th style="border-radius: 0 !important;padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p4')}})</p></th>
-              <th style="border-radius: 0 !important; padding: 12px 0;"><p>{{$t('chargeDetail.span13')}} <br>({{$t('chargeDetail.p5')}})</p></th>
-            </tr>
-           <tr >
-              <td>
-                <div  class="my-5">
-              <span>$26,000 </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $51,000</span>
-                </div></td>
-              <td> <div  class="my-5">
-              <span>$31,000  </span>
-              <div style="margin:10px 0">
-                <span >｜</span>
-              </div>
-             <span> $51,000</span>
-                </div></td>
+              <th style="border-radius: 0 !important;padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p4')}})
+                </p>
+              </th>
+              <th style="border-radius: 0 !important; padding: 12px 0;">
+                <p>
+                  {{$t('chargeDetail.span13')}}
+                  <br />
+                  ({{$t('chargeDetail.p5')}})
+                </p>
+              </th>
             </tr>
             <tr>
-              <td colspan="4" class="free" style="padding: 10px 0;">{{$t('chargeDetail.span5')}} $600</td>
+              <td>
+                <div class="my-5">
+                  <span>$26,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$51,000</span>
+                </div>
+              </td>
+              <td>
+                <div class="my-5">
+                  <span>$31,000</span>
+                  <div style="margin:10px 0">
+                    <span>｜</span>
+                  </div>
+                  <span>$51,000</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                colspan="4"
+                class="free"
+                style="padding: 10px 0;"
+              >{{$t('chargeDetail.span5')}} $600</td>
             </tr>
           </tbody>
         </table>
@@ -621,39 +810,39 @@ export default {
   data() {
     return {
       activeNames: ["1"],
-      action:0,
+      action: 0,
       currentTitleIndex: 0,
       title: [
-        this.$t('chargeDetail.title1'),
-        this.$t('chargeDetail.title2'),
-        this.$t('chargeDetail.title3'),
-        "Clear-Vision",
+        this.$t("chargeDetail.title1"),
+        this.$t("chargeDetail.title2"),
+        this.$t("chargeDetail.title3"),
+        "Clear-Vision"
       ],
       list: [
         {
           id: 1,
-          title: this.$t('chargeDetail.title5'),
+          title: this.$t("chargeDetail.title5")
         },
         {
           id: 2,
-          title: this.$t('chargeDetail.title6'),
-        },
+          title: this.$t("chargeDetail.title6")
+        }
       ],
-      currentIndex: 1, // 当前点击的tab的索引
+      currentIndex: 1 // 当前点击的tab的索引
     };
   },
   created() {},
   methods: {
     titelclick(index) {
-      this.action = index
-      if(index === 0){
-        window.location.href='/charge-detail#smile'
-      }else if(index === 1){
-  window.location.href='/charge-detail#ICL'
-      }else if(index === 2){
-  window.location.href='/charge-detail#LASIK'
-      }else{  window.location.href='/charge-detail#Clear-Vision'
-
+      this.action = index;
+      if (index === 0) {
+        window.location.href = "/charge-detail#smile";
+      } else if (index === 1) {
+        window.location.href = "/charge-detail#ICL";
+      } else if (index === 2) {
+        window.location.href = "/charge-detail#LASIK";
+      } else {
+        window.location.href = "/charge-detail#Clear-Vision";
       }
     },
     //判断是否打开
@@ -669,7 +858,10 @@ export default {
       this.currentIndex = index;
       // console.log(index);
     },
-  },
+    toWhatsapp(){
+      window.open('https://api.whatsapp.com/send/?phone=85260610511')
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -678,7 +870,7 @@ export default {
 }
 h2 {
   font-size: 25px;
-  color: #4570B6;
+  color: #4570b6;
 }
 span {
   font-size: 14px;
@@ -813,46 +1005,61 @@ i {
   padding: 2vw;
   // background-color: #dfdfdf;
 }
+.tabBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+  span{
+    width: 110px;
+    border: 1px solid #D9EAED;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #4570B6;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
 @media screen and (min-width: 768px) {
-  .taoc_box_2 .box{
-    
-      margin-top: 35px !important;
-    
+  .taoc_box_2 .box {
+    margin-top: 35px !important;
   }
-  .box:nth-child(1) img{
-      height: 85px;
-  }
-  .box:nth-child(2) img{
+  .box:nth-child(1) img {
     height: 85px;
   }
-  .box:nth-child(3) img{
-      height: 85px;
-  }
-  .box:nth-child(4) img{
-
+  .box:nth-child(2) img {
     height: 85px;
   }
-  .box:nth-child(5) img{
-
+  .box:nth-child(3) img {
     height: 85px;
   }
-  .box:nth-child(6) img{
-
+  .box:nth-child(4) img {
+    height: 85px;
+  }
+  .box:nth-child(5) img {
+    height: 85px;
+  }
+  .box:nth-child(6) img {
     height: 85px;
   }
 
-  .table-box_four{
+  .table-box_four {
     margin-top: 60px;
     margin-bottom: 100px;
-    .table-head-blue{
-      background-color: #5082C0;
-      border-right: 0.5px solid #B3B1B2 !important;
+    .table-head-blue {
+      background-color: #5082c0;
+      border-right: 0.5px solid #b3b1b2 !important;
       border-top: none !important;
       border-left: none !important;
       border-radius: 10px 10px 0px 0px;
       height: 68px !important;
-      span{
-        font-family: 'Noto Sans HK';
+      span {
+        font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -862,18 +1069,18 @@ i {
         text-align: center;
         letter-spacing: 0.05em;
 
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
-    .table-head-blue-2{
-      background-color: #60A1CF;;
-      border-right: 0.5px solid #B3B1B2 !important;
+    .table-head-blue-2 {
+      background-color: #60a1cf;
+      border-right: 0.5px solid #b3b1b2 !important;
       border-top: none !important;
       border-left: none !important;
       border-radius: 10px 10px 0px 0px;
       height: 68px !important;
-      span{
-        font-family: 'Noto Sans HK';
+      span {
+        font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -883,21 +1090,21 @@ i {
         text-align: center;
         letter-spacing: 0.05em;
 
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
-    .boder-none{
-          border: none !important;
-          background-color:#fff !important;
-          width: 103px !important;
+    .boder-none {
+      border: none !important;
+      background-color: #fff !important;
+      width: 103px !important;
     }
-    .danyan{
+    .danyan {
       width: 73px !important;
-      background-color: #5082C0;
+      background-color: #5082c0;
       border-radius: 10px 0px 0px 10px;
       border: none !important;
-      .text{
-        font-family: 'Noto Sans HK';
+      .text {
+        font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -907,12 +1114,12 @@ i {
         text-align: center;
         letter-spacing: 0.05em;
 
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
-    .jiage{
-      span{
-        font-family: 'Noto Sans HK';
+    .jiage {
+      span {
+        font-family: "Noto Sans HK";
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -925,38 +1132,34 @@ i {
         color: #444343;
       }
     }
-    .free{
-      .et2{
-      background-color: #78CBE4;
-      // border: 0.5px solid #B3B1B2;
-      border-radius: 0px 0px 10px 10px;
-      span{
-        font-family: 'Noto Sans HK';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 15px;
-        /* identical to box height, or 83% */
+    .free {
+      .et2 {
+        background-color: #78cbe4;
+        // border: 0.5px solid #B3B1B2;
+        border-radius: 0px 0px 10px 10px;
+        span {
+          font-family: "Noto Sans HK";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 15px;
+          /* identical to box height, or 83% */
 
-        text-align: center;
-        letter-spacing: 0.05em;
+          text-align: center;
+          letter-spacing: 0.05em;
 
-        color: #FFFFFF;
+          color: #ffffff;
+        }
       }
-      }
-     
     }
   }
-
-
-
 
   .tab {
     margin: 50px auto;
     margin-top: 100px;
   }
-  .taoc_box_2{
-    .box{
+  .taoc_box_2 {
+    .box {
       margin-top: 42px;
     }
     width: 553px !important;
@@ -965,20 +1168,20 @@ i {
       grid-template-columns: repeat(2, 1fr) !important;
       justify-items: center;
     }
-    .box span{
-          line-height: 20px !important;
+    .box span {
+      line-height: 20px !important;
     }
-    .shoufei{
-      font-family: 'Noto Sans HK';
-font-style: normal;
-font-weight: 350;
-font-size: 13px;
-line-height: 20px;
-/* identical to box height, or 154% */
+    .shoufei {
+      font-family: "Noto Sans HK";
+      font-style: normal;
+      font-weight: 350;
+      font-size: 13px;
+      line-height: 20px;
+      /* identical to box height, or 154% */
 
-letter-spacing: 0.06em;
+      letter-spacing: 0.06em;
 
-color: #444343;
+      color: #444343;
     }
   }
   .taoc_box {
@@ -1092,10 +1295,9 @@ color: #444343;
 
     color: #ffffff;
   }
-  .taoc_boxs{
+  .taoc_boxs {
     span {
       letter-spacing: 0.02rem;
-
     }
   }
   .table-1-box {
@@ -1185,12 +1387,12 @@ color: #444343;
   }
 }
 @media screen and (max-width: 768px) {
-  td{
+  td {
     padding: 10px;
   }
-  .taoc_box_2{
-    .box span{
-          line-height: 21px !important;
+  .taoc_box_2 {
+    .box span {
+      line-height: 21px !important;
     }
   }
   .tab {

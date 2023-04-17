@@ -572,7 +572,8 @@ export default {
       }else if(
         _text = 'Noto Sans HK'
       )
-      // console.log('准备设置的字体： ===>',_text)
+      console.log('准备设置的字体： ===>',_text)
+      // console.log(document.documentElement.style)
       document.documentElement.style.setProperty("--font_family_hk",_text);  //"Noto Sans HK"
     }
   },
