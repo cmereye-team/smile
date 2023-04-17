@@ -8,14 +8,14 @@
           <span>{{$t('home.cmerInfo[0].span')}}</span>
         </div>
       </div>
-      <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/group-profile')">
+      <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
         <img src="https://static.cmereye.com/imgs/2023/04/88bdeb6b94c2375d.jpg" />
         <div>
           <h4 v-html="$t('home.cmerInfo[1].h4')"></h4>
           <span>{{$t('home.cmerInfo[1].span')}}</span>
         </div>
       </div>
-      <div class="wow animate__fadeInLeft cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
+      <div class="wow animate__fadeInLeft cmerInfo-in-box" @click="handleInfo('/group-profile')">
         <img src="https://static.cmereye.com/imgs/2023/04/69dd6f45ce4fdb12.jpg" />
         <div>
           <h4 v-html="$t('home.cmerInfo[2].h4')"></h4>
@@ -38,17 +38,17 @@
           <span>{{$t('home.cmerInfo[0].span')}}</span>
         </div>
       </div>
-      <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
+      <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/group-profile')">
         <img src="https://static.cmereye.com/imgs/2023/04/60d92825498a1a12.jpg" />
         <div>
-          <h4 v-html="$t('home.cmerInfo[1].h4')"></h4>
+          <h4 v-html="$t('home.cmerInfo[2].h4')"></h4>
           <span>{{$t('home.cmerInfo[2].span')}}</span>
         </div>
       </div>
-      <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/group-profile')">
+      <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
         <img src="https://static.cmereye.com/imgs/2023/04/3caa4f0732ba738c.jpg" />
         <div>
-          <h4 v-html="$t('home.cmerInfo[2].h4')"></h4>
+          <h4 v-html="$t('home.cmerInfo[1].h4')"></h4>
           <span>{{$t('home.cmerInfo[1].span')}}</span>
         </div>
       </div>

@@ -22,6 +22,7 @@
             class="swiper-slide"
             v-for="(banner, index) in banners"
             :key="index"
+            @click="toVideoDetail(banner.link)"
           >
             <div class="swiper_di">
               <img :src="banner.src" />
@@ -43,6 +44,7 @@
             class="swiper-slide"
             v-for="(banner, index) in banners"
             :key="index"
+            @click="toVideoDetail(banner.link)"
           >
             <img :src="banner.src" />
             <nuxt-link class="link_des" :to="localePath(banner.link)"></nuxt-link>
@@ -70,17 +72,17 @@ export default {
       banners: [
         {
           src: require("../../../asset/image/home/video.png"),
-          link: "",
+          link: "https://youtu.be/beGIk4tkS7Y",
           // des: "微笑矯視 - Shirley 陳欣妍",
         },
         {
           src: require("../../../asset/image/home/video_2.png"),
-          link: "",
+          link: "https://www.youtube.com/watch?v=5ihrzFvOy38",
           // des: "植入式隱形眼鏡 - Serene 林宣妤",
         },
         {
           src: require("../../../asset/image/home/veido_3.png"),
-          link: "",
+          link: "https://www.youtube.com/watch?v=L5GFWM7Fxqs",
           // des: "微笑矯視 - Dominic 何浩文",
         },
       ],
@@ -157,7 +159,11 @@ export default {
       };
     }
   },
-  methods: {},
+  methods: {
+    toVideoDetail(_url){
+      window.open(_url)
+    }
+  },
 };
 </script>
 <style>
