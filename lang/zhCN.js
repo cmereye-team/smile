@@ -26,7 +26,7 @@ module.exports = {
             diagnosisInstructionsChild_2: '矫视流程',
             diagnosisInstructionsChild_3: '矫视后复诊',
 
-            commonProblemChild_1: 'MILE 微笑激光矫视',
+            commonProblemChild_1: 'SMILE 微笑激光矫视',
             commonProblemChild_2: 'LASIK 激光矫视',
             commonProblemChild_3: 'ICL植入式隐形眼镜',
             commonProblemChild_4: 'CLEAR-Vision',

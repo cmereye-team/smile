@@ -383,15 +383,15 @@ export default {
     span {
       font-family: var(--font_family);
       font-style: normal;
-      font-weight: 500;
-      font-size: 23px;
+      // font-weight: 500;
+      // font-size: 23px;
       line-height: 30px;
       /* or 167% */
       align-items: center;
       text-align: center;
       letter-spacing: 0.1em;
       margin-top: 30px;
-      color: #4570b6;
+      // color: #4570b6;
     }
     p {
       font-family: var(--font_family);
@@ -687,7 +687,7 @@ export default {
     span {
       font-family: var(--font_family);
       font-style: normal;
-      font-weight: 500;
+      // font-weight: 500;
       font-size: 17px;
       line-height: 30px;
       /* or 167% */
@@ -695,7 +695,7 @@ export default {
       text-align: center;
       letter-spacing: 0.1em;
       margin-top: 30px;
-      color: #4570b6;
+      // color: #4570b6;
     }
     p {
       font-family: var(--font_family);
