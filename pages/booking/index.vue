@@ -5,6 +5,7 @@
 
     <MainBanner />
     <AppointForm />
+    <!-- <serve /> -->
 
     <Footer />
     <footers />
@@ -19,9 +20,10 @@ import footers from "@/components/commom/foot/footers.vue";
 import MainBanner from "@/components/content/ophthalmicInfo/serveYyue/MainBanner.vue";
 import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom_ifram.vue";
 // import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom.vue";
+import serve from "@/components/content/ophthalmicInfo/serveYyue/serve.vue"
 
 export default {
-  components: { Header, Navbar, Footer, MainBanner, AppointForm, footers },
+  components: { Header, Navbar, Footer, MainBanner, AppointForm, footers ,serve},
   head() {
     return {
       title: "預約講座 - 香港希瑪微笑矯視中心",

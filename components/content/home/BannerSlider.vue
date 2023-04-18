@@ -59,9 +59,9 @@ export default {
         },
         {
           link: '/vision-correction-presbyopia',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
+          pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/7a2b26fa29e337a3.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
-          mb_cnImg: 'https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg',
+          mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/a7280ee58048f45f.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg'
 
         }

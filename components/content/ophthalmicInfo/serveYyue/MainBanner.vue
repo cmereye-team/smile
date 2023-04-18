@@ -38,6 +38,7 @@ export default {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: url("https://static.cmereye.com/static/lkximg/smile_image/bg.avif");
+    // background-image: url("https://static.cmereye.com/imgs/2023/04/afb19d1dfcd15553.jpg");
   }
 }
 </style>

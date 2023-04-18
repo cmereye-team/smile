@@ -4,14 +4,14 @@
       <h2>{{$t('home.headers.reservationService')}}</h2>
     </div>
     <div class="flex md:justify-center flex-col items-center md:flex-row">
-      <div class="serve-box">
+      <div class="serve-box" @click="serveForm('/eye-checkup')">
         <img
           src="https://static.cmereye.com/imgs/2023/01/a1441d1e7e65eb40.png"
           alt=""
         />
         <p>術前眼睛檢查</p>
       </div>
-      <div class="serve-box" @click="serveForm">
+      <div class="serve-box" @click="serveForm('/ophthalmicInfo/AppointForm')">
         <img
           src="https://static.cmereye.com/imgs/2023/01/df076d9e71e08870.png"
           alt=""
@@ -46,9 +46,10 @@ export default {
   },
   created() {},
   methods: {
-    serveForm() {
+    serveForm(_url) {
       // this.$router.replace("/ophthalmicInfo/AppointForm");
-      this.localePath('/ophthalmicInfo/AppointForm')
+      let _path = this.localePath(_url)
+      this.$router.push(_path);
     },
   },
 };
