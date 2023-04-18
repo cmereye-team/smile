@@ -424,7 +424,7 @@ li {
     font-size: 18px !important;
   }
   h3 {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -452,7 +452,7 @@ li {
     font-weight: 700;
   }
   h3 {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

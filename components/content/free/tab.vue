@@ -914,7 +914,7 @@ p {
   margin-bottom: 0px;
 }
 .gdp caption {
-  font-family: "Noto Sans HK";
+  font-family: var(--font_family);
   font-style: normal;
   font-weight: 350;
   font-size: 13px;
@@ -1059,7 +1059,7 @@ i {
       border-radius: 10px 10px 0px 0px;
       height: 68px !important;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1080,7 +1080,7 @@ i {
       border-radius: 10px 10px 0px 0px;
       height: 68px !important;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1104,7 +1104,7 @@ i {
       border-radius: 10px 0px 0px 10px;
       border: none !important;
       .text {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -1119,7 +1119,7 @@ i {
     }
     .jiage {
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -1138,7 +1138,7 @@ i {
         // border: 0.5px solid #B3B1B2;
         border-radius: 0px 0px 10px 10px;
         span {
-          font-family: "Noto Sans HK";
+          font-family: var(--font_family);
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
@@ -1172,7 +1172,7 @@ i {
       line-height: 20px !important;
     }
     .shoufei {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 350;
       font-size: 13px;
@@ -1202,7 +1202,7 @@ i {
       align-items: center;
       margin-top: 49px;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -1224,7 +1224,7 @@ i {
       justify-content: center;
       align-items: center;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1243,7 +1243,7 @@ i {
     background: #ffcccc;
     font-weight: 700;
     text-align: center;
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1266,7 +1266,7 @@ i {
     text-align: center;
   }
   .table-1-box table tr td span {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1279,7 +1279,7 @@ i {
     color: #444343;
   }
   .gdp th p {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1305,7 +1305,7 @@ i {
     margin-top: 60px;
     margin-bottom: 40px;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 350;
       font-size: 13px;
@@ -1323,7 +1323,7 @@ i {
   .tab-control .active {
     background-color: #ffffff;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -1348,7 +1348,7 @@ i {
     .tab-control-item {
       padding: 0 30px;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1409,7 +1409,7 @@ i {
       align-items: center;
       margin-top: 49px;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -1431,7 +1431,7 @@ i {
       justify-content: center;
       align-items: center;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1450,7 +1450,7 @@ i {
     background: #ffcccc;
     font-weight: 700;
     text-align: center;
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1473,7 +1473,7 @@ i {
     text-align: center;
   }
   .table-1-box table tr td span {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1486,7 +1486,7 @@ i {
     color: #444343;
   }
   .gdp th p {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1506,7 +1506,7 @@ i {
     margin: 0 auto;
     margin-top: 20px;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 350;
       font-size: 13px;
@@ -1524,7 +1524,7 @@ i {
   .tab-control .active {
     background-color: #ffffff;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -1552,7 +1552,7 @@ i {
       padding: 0 30px;
       text-align: center;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 18px;

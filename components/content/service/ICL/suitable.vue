@@ -79,7 +79,7 @@ h2 {
       justify-content: center;
       /deep/ span {
         width: 100%;
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
@@ -119,7 +119,7 @@ h2 {
       min-width: calc((100% - 10px) / 2);
       /deep/ span {
         padding: 28px 0;
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 14px;

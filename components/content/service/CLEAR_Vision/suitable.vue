@@ -70,7 +70,7 @@ h2 {
     .suitable {
       /deep/ span {
         padding: 28px 0;
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
@@ -108,7 +108,7 @@ h2 {
     .suitable {
       /deep/ span {
         padding: 28px 0;
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 14px;

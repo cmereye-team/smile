@@ -61,7 +61,7 @@ span{
     }
     span {
       flex: 0.5;
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 15px;
@@ -85,7 +85,7 @@ span{
     }
     span {
       flex: 0.5;
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 15px;
@@ -118,7 +118,7 @@ span{
       margin-top: 40px;
     }
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 15px;
@@ -142,7 +142,7 @@ span{
       margin-bottom: 40px;
     }
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 15px;

@@ -98,7 +98,7 @@ export default {
   .section_text {
     background: #fff;
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 20px !important;
@@ -164,7 +164,7 @@ export default {
       p {
         font-size: 43px !important;
       }
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
 
@@ -197,7 +197,7 @@ export default {
     box-shadow: 0px 0px 20px rgba(174, 213, 231, 0.75);
   }
   .Se2ComIntro .section_text .content p {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -281,7 +281,7 @@ export default {
       p {
         font-size: 28px !important;
       }
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
 

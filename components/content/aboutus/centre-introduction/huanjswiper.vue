@@ -173,7 +173,7 @@ export default {
       margin: 0 174px;
     }
     h3 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 23px;
@@ -184,7 +184,7 @@ export default {
       color: #4570b6;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 20px;
@@ -285,7 +285,7 @@ export default {
   .text_ev {
     padding-top: 20px;
     h3 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 17px;
@@ -296,7 +296,7 @@ export default {
       color: #4570b6;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 16px;

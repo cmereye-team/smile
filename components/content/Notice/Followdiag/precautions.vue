@@ -70,7 +70,7 @@ h2 {
   .text-box-detail {
     margin-bottom: 96px;
     /deep/ strong {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -79,7 +79,7 @@ h2 {
       color: #6D6E71;
     }
     /deep/ p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 350;
       font-size: 16px;

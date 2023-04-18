@@ -366,7 +366,7 @@ h2 {
 .tab-control .active {
   background-color: #ffffff;
   span {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -391,7 +391,7 @@ h2 {
   .tab-control-item {
     padding: 0 30px;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -424,7 +424,7 @@ span {
   .tab-control-item {
     padding: 0 30px;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -502,7 +502,7 @@ span {
       justify-content: center;
       margin-top: 16px;
       /deep/ span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -525,7 +525,7 @@ span {
     background: linear-gradient(104.24deg, #5184c1 5.95%, #7cd3e8 114.4%);
     cursor: pointer;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -556,7 +556,7 @@ span {
     padding: 10px 0;
     margin-top: 12px;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -614,7 +614,7 @@ span {
     text-align: center;
   }
   .tab-control .tab-control-item span {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

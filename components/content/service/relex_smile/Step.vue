@@ -90,7 +90,7 @@ h2 {
       margin-top: 5vw;
 
       strong {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 15px;

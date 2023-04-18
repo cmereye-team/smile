@@ -116,7 +116,7 @@ export default {
         width: 28px;
       }
       p {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 10px;

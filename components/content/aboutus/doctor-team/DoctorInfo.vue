@@ -384,7 +384,7 @@ h2{
       padding: 0.8vw 0.5vw;
       margin-top: -1vw;
       margin-left: -1vw;
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 26px;
@@ -519,7 +519,7 @@ h2{
       padding: 3vw 3vw;
       margin-top: -6vw;
       margin-left: -6vw;
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 26px;

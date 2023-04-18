@@ -190,7 +190,7 @@ p {
     font-size: 16px;
   }
   p {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 700;
     font-size: 15px;

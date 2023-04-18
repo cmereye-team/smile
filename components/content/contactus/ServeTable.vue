@@ -134,7 +134,7 @@ export default {
     margin-bottom: 2vw;
   }
   .gdp caption {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -184,7 +184,7 @@ export default {
     margin-right: 5px;
     .serve {
       p {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -202,7 +202,7 @@ export default {
   .box-mb {
     border-top: 1px solid #dfdfdf;
     h3 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
@@ -224,7 +224,7 @@ export default {
         margin-right: 9px;
       }
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 14px;

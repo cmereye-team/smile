@@ -560,21 +560,21 @@ export default {
       this.actIndex = index
     },
     handleLang(_type){
-      // console.log('当前的语言类型： --->',this.$i18n.locale)
+      console.log('当前的语言类型： --->',this.$i18n.locale)
       if(this.$i18n.locale === _type) return
-      // console.log('点击的语言类型： --->',_type)
+      console.log('点击的语言类型： --->',_type)
       // console.log('路径打印',this.switchLocalePath(_type))
       let _path = this.switchLocalePath(_type)
       this.$router.push(_path)
       var _text = ''
       if(_type === 'cn'){
         _text = '微软雅黑'
-      }else if(
+      }else(
         _text = 'Noto Sans HK'
       )
       console.log('准备设置的字体： ===>',_text)
       // console.log(document.documentElement.style)
-      document.documentElement.style.setProperty("--font_family_hk",_text);  //"Noto Sans HK"
+      document.documentElement.style.setProperty( "--font_family" , _text );  //var(--font_family)
     }
   },
 };
@@ -652,7 +652,7 @@ $active_gradient: #4570b6;
     margin-left: 26px;
     background: #4570b6;
     border-radius: 0px;
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -683,7 +683,7 @@ $active_gradient: #4570b6;
   }
   .main_footer {
     .main_nav .mian_nav_text {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -696,7 +696,7 @@ $active_gradient: #4570b6;
     }
     .child_menu {
       li a {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
@@ -711,7 +711,7 @@ $active_gradient: #4570b6;
   }
 
   .mian_nav_text {
-    font-family: "Noto Sans HK", sans-serif;
+    font-family: var(--font_family), sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -742,7 +742,7 @@ $active_gradient: #4570b6;
       -webkit-text-fill-color: transparent;
     }
     a {
-      font-family: "Noto Sans HK", sans-serif;
+      font-family: var(--font_family), sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 16px;

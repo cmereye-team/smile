@@ -79,7 +79,7 @@ h2 {
     justify-content: center;
   }
   .text-pincile {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -101,7 +101,7 @@ h2 {
     font-size: 16px;
   }
   .text-pincile {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;

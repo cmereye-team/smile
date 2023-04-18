@@ -110,7 +110,7 @@ h2 {
     background: linear-gradient(104.24deg, #5184c1 5.95%, #7cd3e8 114.4%);
     cursor: pointer;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -161,7 +161,7 @@ h2 {
       border-radius: 3px;
       padding: 5px;
 
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -174,7 +174,7 @@ h2 {
       color: #fbfbf6;
     }
     .data {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -198,7 +198,7 @@ h2 {
     margin: 0 auto;
     padding: 10px 0;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -246,7 +246,7 @@ h2 {
       border-radius: 3px;
       padding: 5px;
 
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -259,7 +259,7 @@ h2 {
       color: #fbfbf6;
     }
     .data {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 14px;

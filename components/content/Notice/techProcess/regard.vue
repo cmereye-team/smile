@@ -171,7 +171,7 @@ h2 {
         height: 110px;
       }
       /deep/ span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
@@ -255,7 +255,7 @@ h2 {
         height: 110px;
       }
       /deep/ span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 16px;

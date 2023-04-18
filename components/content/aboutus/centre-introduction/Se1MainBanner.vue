@@ -79,7 +79,7 @@ body .gradient_font {
   .des_box {
     padding-left: 28px;
     h3 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 800;
       font-size: 17px;
@@ -98,7 +98,7 @@ body .gradient_font {
       font-size: 11px;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 10px;
@@ -114,7 +114,7 @@ body .gradient_font {
 <style lang="scss" scoped>
 @media (min-width: 768px) {
   .title_cer {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 500;
     font-size: 38px;

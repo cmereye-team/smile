@@ -97,7 +97,7 @@ export default {
 // }
 .title_heart {
   h2 {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -134,7 +134,7 @@ export default {
   }
   .serve_title {
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 43px !important;
@@ -425,7 +425,7 @@ export default {
   }
   .serve_title {
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 28px !important;

@@ -221,7 +221,7 @@ body .gradient_font {
     background: #4570b6;
     border-radius: 0px;
     transition: all 0.5s;
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -308,7 +308,7 @@ body .gradient_font {
     margin-bottom: 20px;
   }
   .video_title {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 43px;
@@ -337,7 +337,7 @@ body .gradient_font {
   }
   .vedio_box {
     h2 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 25px;
@@ -379,7 +379,7 @@ body .gradient_font {
     margin-bottom: 20px;
   }
   .video_title {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -440,7 +440,7 @@ body .gradient_font {
   }
   .video_title {
     h2 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
@@ -502,7 +502,7 @@ body .gradient_font {
       background: #4570b6;
       border-radius: 0px;
       transition: all 0.5s;
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 20px;

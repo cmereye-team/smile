@@ -32,7 +32,7 @@ export default {
       margin-bottom: 75px;
 
       h3 {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 500;
         font-size: 38px;
@@ -70,7 +70,7 @@ export default {
   .des_box {
     padding-left: 28px;
     h3 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 28px;
@@ -87,7 +87,7 @@ export default {
       font-size: 11px;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 10px;

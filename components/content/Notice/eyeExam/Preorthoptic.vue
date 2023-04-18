@@ -127,7 +127,7 @@ h2 {
   .beizhu {
     margin-bottom: 85px;
     /deep/ p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 17px;
@@ -151,7 +151,7 @@ h2 {
         margin: auto;
       }
       /deep/ span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
@@ -193,7 +193,7 @@ h2 {
       background-color: #fff2f2;
       padding: 10px;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -209,7 +209,7 @@ h2 {
         text-fill-color: transparent;
       }
       p {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
@@ -230,7 +230,7 @@ h2 {
       padding: 10px;
       width: 186px;
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -246,7 +246,7 @@ h2 {
         text-fill-color: transparent;
       }
       /deep/ p {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
@@ -273,7 +273,7 @@ h2 {
     padding: 10px;
     width: 70%;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -289,7 +289,7 @@ h2 {
       text-fill-color: transparent;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
@@ -307,7 +307,7 @@ h2 {
     padding: 10px;
     // width: 186px;
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -323,7 +323,7 @@ h2 {
       text-fill-color: transparent;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -364,7 +364,7 @@ h2 {
       display: flex;
       align-items: center;
       /deep/ span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -384,7 +384,7 @@ h2 {
   }
   .beizhu {
     /deep/ p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 13px;

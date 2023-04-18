@@ -120,7 +120,7 @@ export default {
 <style lang="scss" scoped>
 @media only screen and (min-width: 768px) {
   h2 {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -214,7 +214,7 @@ export default {
   }
   .intro {
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -277,7 +277,7 @@ export default {
 
     .text_box {
       p {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 14px;

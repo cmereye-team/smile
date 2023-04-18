@@ -187,7 +187,7 @@ export default {
           li {
             max-width: 160px;
             height: 50px;
-            font-family: "Noto Sans HK";
+            font-family: var(--font_family);
             font-style: normal;
             font-weight: 400;
             font-size: 14px;

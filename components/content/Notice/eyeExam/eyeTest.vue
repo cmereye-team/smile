@@ -55,7 +55,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .eyeText {
     /deep/ span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 20px;
@@ -85,7 +85,7 @@ h2 {
     }
   }
   .eyeText {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;

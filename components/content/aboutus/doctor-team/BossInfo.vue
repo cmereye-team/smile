@@ -125,7 +125,7 @@ export default {
           font-size: 20px;
         }
         span {
-          font-family: "Noto Sans HK";
+          font-family: var(--font_family);
           font-style: normal;
           font-weight: 700;
           font-size: 30px;
@@ -146,7 +146,7 @@ export default {
         }
         p {
           padding: 35px 0 50px;
-          font-family: "Noto Sans HK";
+          font-family: var(--font_family);
           font-style: normal;
           font-weight: 300;
           font-size: 18px;
@@ -159,7 +159,7 @@ export default {
         ul {
           list-style: square;
           li {
-            font-family: "Noto Sans HK";
+            font-family: var(--font_family);
             font-style: normal;
             font-weight: 300;
             font-size: 20px;
@@ -193,7 +193,7 @@ export default {
       // width: 80vw;
       p {
         // margin: 0 51px;
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
@@ -226,7 +226,7 @@ export default {
       display: flex;
       flex-direction: column;
       h3 {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -237,7 +237,7 @@ export default {
         margin-top: 10px;
       }
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;

@@ -38,7 +38,7 @@ export default {
   .banner_serve {
     margin-bottom: 49px;
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
@@ -56,7 +56,7 @@ export default {
       padding-top: 0;
     }
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 12px;

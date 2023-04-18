@@ -198,7 +198,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 h2 {
-  font-family: "Noto Sans HK";
+  font-family: var(--font_family);
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -274,7 +274,7 @@ h2 {
         margin-bottom: 13px;
       }
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -367,7 +367,7 @@ h2 {
         margin-bottom: 13px;
       }
       span {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 500;
         font-size: 17px;

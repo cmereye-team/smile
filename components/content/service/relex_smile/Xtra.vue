@@ -185,7 +185,7 @@ export default {
         font-weight: 500;
       }
       /deep/ p {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
         font-size: 14px;

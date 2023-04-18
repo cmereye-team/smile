@@ -177,7 +177,7 @@ export default {
     .content {
       text-align: justify;
       p {
-        font-family: "Noto Sans HK";
+        font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
 
@@ -205,7 +205,7 @@ export default {
           align-content: center;
           color: #4570b6;
           span {
-            font-family: "Noto Sans HK";
+            font-family: var(--font_family);
             font-style: normal;
             font-weight: 700;
             font-size: 45px;
@@ -267,7 +267,7 @@ export default {
     p {
       text-align: center;
 
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
 
@@ -316,7 +316,7 @@ export default {
       p {
         font-size: 43px !important;
       }
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
 
@@ -352,7 +352,7 @@ export default {
       margin-top: 30px;
     }
     .text_blue {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 23px !important;
@@ -366,7 +366,7 @@ export default {
       color: #4570b6;
     }
     .text_blue2 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 16.5px;
@@ -381,7 +381,7 @@ export default {
       margin-bottom: 10px;
     }
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 23px;
@@ -394,7 +394,7 @@ export default {
       color: #4570b6;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 20px;
@@ -420,7 +420,7 @@ export default {
   }
   .Se2ComIntro .section_text .content p {
   
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 300;
 
@@ -465,7 +465,7 @@ export default {
                   margin-left: -4px;
             }
             p {
-              font-family: "Noto Sans HK";
+              font-family: var(--font_family);
               font-style: normal;
               font-weight: 300;
 
@@ -502,7 +502,7 @@ export default {
               padding-right: 8px;
             }
             p {
-              font-family: "Noto Sans HK";
+              font-family: var(--font_family);
               font-style: normal;
               font-weight: 300;
 
@@ -573,7 +573,7 @@ export default {
     p {
       text-align: center;
       padding: 10px 0 0 5px;
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 15px;
@@ -621,7 +621,7 @@ export default {
       p {
         font-size: 33px !important;
       }
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       line-height: 33px;
@@ -656,7 +656,7 @@ export default {
       margin-top: 30px;
     }
     .text_blue {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -670,7 +670,7 @@ export default {
       color: #4570b6;
     }
     .text_blue2 {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 12px;
@@ -685,7 +685,7 @@ export default {
       margin-bottom: 10px;
     }
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 500;
       font-size: 17px;
@@ -698,7 +698,7 @@ export default {
       color: #4570b6;
     }
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       // font-weight: 300;
       font-size: 14px;
@@ -764,7 +764,7 @@ export default {
         margin-left: 4px;
         margin-right: 14px;
         &>p {
-          font-family: "Noto Sans HK";
+          font-family: var(--font_family);
           font-style: normal;
           font-weight: 300;
           font-size: 15px !important;
@@ -787,7 +787,7 @@ export default {
         li {
           margin-top: 30px;
           p {
-            font-family: "Noto Sans HK";
+            font-family: var(--font_family);
             font-style: normal;
             font-weight: 300;
             font-size: 6px;
@@ -799,7 +799,7 @@ export default {
             color: #4570b6;
           }
           span {
-            font-family: "Noto Sans HK";
+            font-family: var(--font_family);
             font-style: normal;
             font-weight: 700;
             font-size: 30px;
@@ -816,7 +816,7 @@ export default {
         margin-top: 30px;
         display: flex;
         span {
-          font-family: "Noto Sans HK";
+          font-family: var(--font_family);
           font-style: normal;
           font-weight: 700;
           font-size: 30px;
@@ -829,7 +829,7 @@ export default {
           display: inline-block;
         }
         p {
-          font-family: "Noto Sans HK";
+          font-family: var(--font_family);
           font-style: normal;
           font-weight: 300;
           font-size: 14px;

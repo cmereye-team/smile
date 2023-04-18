@@ -115,7 +115,7 @@ h2 {
     border-bottom: 0.5px solid #4570b6;
   }
   .process-text {
-    font-family: "Noto Sans HK";
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 300;
     font-size: 15px;

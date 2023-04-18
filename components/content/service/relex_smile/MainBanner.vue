@@ -43,7 +43,7 @@ export default {
 @media screen and (max-width: 768px) {
   .banner_serve {
     p {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
       font-size: 20px !important;
@@ -61,7 +61,7 @@ export default {
       padding-top: 0;
     }
     span {
-      font-family: "Noto Sans HK";
+      font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
       font-size: 12px;
