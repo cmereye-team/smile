@@ -4,19 +4,19 @@
       <h2>{{$t('service.icl.share.h2')}}</h2>
     </div>
     <div class="flex mb-28 pcShow justify-center">
-      <div class="px-2">
+      <div class="px-2" @click="shareForm('https://www.youtube.com/watch?v=5ihrzFvOy38')">
         <img
           src="https://static.cmereye.com/imgs/2022/12/431d01020917af25.jpg"
           alt=""
         />
       </div>
-      <div class="px-2">
+      <div class="px-2" @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')">
         <img
           src="https://static.cmereye.com/imgs/2022/12/cc1809d5c22d674e.jpg"
           alt=""
         />
       </div>
-      <div class="px-2">
+      <div class="px-2" @click="shareForm('https://www.youtube.com/watch?v=2t7JjTab4xA')">
         <img
           src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
           alt=""
@@ -26,7 +26,7 @@
     <div class="mbShow">
       <div v-swiper:mySwiper="swiperOption" class="swiperWrap">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" @click="shareForm('https://www.youtube.com/watch?v=5ihrzFvOy38')">
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2022/12/431d01020917af25.jpg"
@@ -34,7 +34,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')">
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2022/12/cc1809d5c22d674e.jpg"
@@ -42,7 +42,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" @click="shareForm('https://www.youtube.com/watch?v=2t7JjTab4xA')">
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
@@ -86,7 +86,11 @@ export default {
     };
   },
   created() {},
-  methods: {},
+  methods: {
+    shareForm(_url){
+      window.open(_url)
+    }
+  },
 };
 </script>
 <style lang="scss" scoped>
