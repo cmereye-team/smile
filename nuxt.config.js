@@ -83,10 +83,13 @@ export default {
   modules: [
     [
       '@nuxtjs/i18n',
-       i18n
+       i18n,
+      '@nuxtjs/gtm',
     ]
   ],
-
+  gtm: {
+    id: 'GTM-5M8VLLM'
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包
   build: {
     vendor: ['element-ui']

@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/i18n": "^7.3.1",
     "animate.css": "^4.1.1",
     "core-js": "^3.19.3",
