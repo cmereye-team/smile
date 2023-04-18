@@ -155,7 +155,8 @@
         </div>
         <div class="time-box">
           <p class="text-blue">星期六</p>
-          <p>09:30—13:30</p>
+          <p>09:30—17:30</p>
+          <p>09:30—14:00(尖沙咀)</p>
         </div>
         <div class="time-box">
           <p class="text-blue">{{$t('contactUs.p')}}</p>
