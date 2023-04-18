@@ -29,10 +29,11 @@ export default {
   }
 }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2022/12/6ae626caf51ed54f.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2023/04/146dc755eefe28e3.jpg");
     background-position: top;
     background-size: 100%;
     width: 100vw;
+    height: 100vw;
     margin: 0 auto;
     margin-bottom: 10vw;
     
@@ -46,7 +47,7 @@ export default {
 @media screen and (min-width:768px){
 
   .banner {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/f749408bdb90b101.jpg");
+  background-image: url("https://static.cmereye.com/imgs/2023/04/2e60183c2e439f40.jpg");
 }
 }
 
