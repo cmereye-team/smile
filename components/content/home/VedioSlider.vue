@@ -290,6 +290,9 @@ body .gradient_font {
   @apply transition duration-500  ease-in-out transform  hover:scale-105 hover:-translate-x-1 hover:-translate-y-1;
 }
 @media screen and (min-width: 768px) {
+  .swiper-slide{
+    cursor: pointer;
+  }
   .booking {
     p {
       font-family: "Baskervville" !important;

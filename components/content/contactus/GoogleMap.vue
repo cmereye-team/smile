@@ -146,7 +146,7 @@
       </el-table>
     </div>
     <div class="flex flex-col items-center md:mb-30 mb-20 font">
-      <h3>{{$t('contactUs.h3')}}</h3>
+      <h2>{{$t('contactUs.h3')}}</h2>
       <div class="flex md:mt-0 mt-5">
         <div class="time-box">
           <p class="text-blue">星期一至五</p>
@@ -416,6 +416,7 @@ li {
 }
 .text-blue {
   color: #4570b6;
+  font-size: 16px;
 }
 @media only screen and (min-width: 768px) {
   .font {
@@ -424,24 +425,27 @@ li {
   ::deep .cell {
     font-size: 18px !important;
   }
-  h3 {
+  h2 {
     font-family: var(--font_family);
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
-    line-height: 20px;
+    // line-height: 20px;
     /* identical to box height, or 125% */
 
     text-align: center;
     letter-spacing: 0.1em;
 
-    color: #000000;
+    // color: #000000;
+    color: #4570b6;
     margin-bottom: 42px;
   }
   .time-box {
     padding: 0 48px;
     border-right: 1px solid #ddd;
     text-align: center;
+    color: #6D6E71;
+    font-size: 15px;
   }
   .time-box:nth-child(3) {
     border-right: none;
@@ -450,23 +454,25 @@ li {
 @media only screen and (max-width: 768px) {
   .text-blue {
     color: #4570b6;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 14px;
   }
-  h3 {
+  h2 {
     font-family: var(--font_family);
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    // line-height: 15px;
     /* identical to box height, or 125% */
 
     text-align: center;
     letter-spacing: 0.1em;
-
-    color: #000000;
+    color: #4570b6;
+    // color: #000000;
   }
   .time-box {
-    font-size: 9px;
+    font-size: 14px;
+    font-weight: 300;
     padding: 0 10px;
     border-right: 1px solid #ddd;
     text-align: center;

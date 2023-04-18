@@ -90,6 +90,7 @@ export default {
       display: inline-block;
       position: relative;
       transition: all .3s;
+      cursor: pointer;
       img{
         width: 100%;
         display: inline-block;
