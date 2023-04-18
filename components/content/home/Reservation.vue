@@ -10,31 +10,31 @@
           class="inner_box md:flex items-center justify-between page_container py-8 page_container"
         >
           <img
-            src="@/asset/image/about-us/centre-introduction/s3_award1.png"
+            src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award1.png"
             alt
           />
           <img
-            src="@/asset/image/about-us/centre-introduction/s3_award2.png"
+            src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award2.png"
             alt
           />
           <img
-            src="@/asset/image/about-us/centre-introduction/s3_award3.png"
+            src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award3.png"
             alt
           />
           <img
-            src="@/asset/image/about-us/centre-introduction/s3_award4.png"
+            src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award4.png"
             alt
           />
           <img
-            src="@/asset/image/about-us/centre-introduction/s3_award5.png"
+            src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award5.png"
             alt
           />
           <img
-            src="@/asset/image/about-us/centre-introduction/s3_award6.png"
+            src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award6.png"
             alt
           />
           <img
-            src="@/asset/image/about-us/centre-introduction/s3_award7.png"
+            src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award7.png"
             alt
           />
         </div>
@@ -79,22 +79,22 @@ export default {
     return {
       banner_award: [
         {
-          src: require("@/asset/image/about-us/centre-introduction/s3_award1.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award1.png"
         },
         {
-          src: require("@/asset/image/about-us/centre-introduction/s3_award2.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award2.png"
         },
         {
-          src: require("@/asset/image/about-us/centre-introduction/s3_award3.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award3.png"
         },
         {
-          src: require("@/asset/image/about-us/centre-introduction/s3_award4.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award4.png"
         },
         {
-          src: require("@/asset/image/about-us/centre-introduction/s3_award5.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award5.png"
         },
         {
-          src: require("@/asset/image/about-us/centre-introduction/s3_award6.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award6.png"
         },
       ],
       swiperOptionaward: {

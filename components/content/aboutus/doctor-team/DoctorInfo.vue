@@ -61,7 +61,7 @@ export default {
     return {
       doctorList: [
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor01.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor01.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor1'),
           doctorName: "李佑榮醫生",
           doctorInfo: [
@@ -75,7 +75,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor02.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor02.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor2'),
           doctorInfo: [
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo1') },
@@ -86,7 +86,7 @@ export default {
           doctorName: "黎浩樺醫生",
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor03.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor03.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor3'),
           doctorInfo: [
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
@@ -97,7 +97,7 @@ export default {
           doctorName: "李德倫醫生",
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor04.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor04.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor4'),
           doctorInfo: [
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
@@ -108,7 +108,7 @@ export default {
           doctorName: "黃禮文醫生",
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor05.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor05.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor5'),
           doctorName: "張瀞之醫生",
           doctorInfo: [
@@ -121,7 +121,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor06.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor06.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor6'),
           doctorName: "林寶生醫生",
           doctorInfo: [
@@ -132,7 +132,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor07.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor07.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor7'),
           doctorName: "林己明醫生",
           doctorInfo: [
@@ -143,7 +143,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor08.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor08.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor8'),
           doctorName: "范愷醫生",
           doctorInfo: [
@@ -156,7 +156,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor09.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor09.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor9'),
           doctorName: "李琬微醫生",
           doctorInfo: [
@@ -169,7 +169,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor10.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor10.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor10'),
           doctorName: "邱俊源醫生",
           doctorInfo: [
@@ -180,7 +180,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor11.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor11.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor11'),
           doctorName: "陳偉樂醫生",
           doctorInfo: [
@@ -192,7 +192,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor12.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor12.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor12'),
           doctorName: "梁苑珊醫生",
           doctorInfo: [
@@ -204,7 +204,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor13.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor13.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor13'),
           doctorName: "鄒樞韻醫生",
           doctorInfo: [
@@ -215,7 +215,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor15.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor15.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor15'),
           doctorName: "尹浩柟醫生",
           doctorInfo: [
@@ -226,7 +226,7 @@ export default {
           ],
         },
         {
-          src: require("@/asset/image/about-us/doctor-team/doctor14.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor14.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor14'),
           doctorName: "鄒樂韻醫生",
           doctorInfo: [

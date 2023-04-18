@@ -7,7 +7,7 @@
             <div class="img_box_in">
               <img
                 class="boss_img"
-                src="@/asset/image/about-us/doctor-team/boss.jpg"
+                src="https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/boss.jpg"
                 alt
               />
               <div class="boss_text_name my-3 mbShow">

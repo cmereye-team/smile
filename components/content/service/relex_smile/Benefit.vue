@@ -14,12 +14,12 @@
       </ul>
       <img
         class="benefit_img benefit_eye"
-        src="@/asset/image/service/relex_smile/benefit_eye.jpg"
+        src="https://static.cmereye.com/imgs/smile/images/service/relex_smile/benefit_eye.jpg"
         alt=""
       />
       <img
         class="benefit_img benefit_light"
-        src="@/asset/image/service/relex_smile/benefit_light.jpg"
+        src="https://static.cmereye.com/imgs/smile/images/service/relex_smile/benefit_light.jpg"
         alt=""
       />
     </div>

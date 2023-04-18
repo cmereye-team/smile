@@ -71,15 +71,15 @@ export default {
       screenWidth: "", //屏幕宽度
       banners: [
         {
-          src: require("../../../asset/image/home/video.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/home/video.png",
           link: "https://www.youtube.com/watch?v=L5GFWM7Fxqs",
         },
         {
-          src: require("../../../asset/image/home/video_2.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/home/video_2.png",
           link: "https://youtu.be/oHDOFYMEUsk",
         },
         {
-          src: require("../../../asset/image/home/veido_3.png"),
+          src: "https://static.cmereye.com/imgs/smile/images/home/veido_3.png",
           link: "https://youtu.be/beGIk4tkS7Y",
         },
       ],

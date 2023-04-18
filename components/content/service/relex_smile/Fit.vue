@@ -79,7 +79,7 @@ export default {
   .fit {
     max-width: 1280px;
     margin: auto;
-    background-image: url("@/asset/image/service/relex_smile/fit_bg.jpg");
+    background-image: url("https://static.cmereye.com/imgs/smile/images/service/relex_smile/fit_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 44vw;

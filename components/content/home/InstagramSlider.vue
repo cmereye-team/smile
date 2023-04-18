@@ -36,12 +36,12 @@ export default {
     return {
       screenWidth: '',//屏幕宽度
       banners: [
-        { src: require("../../../asset/image/home/ins_s1.jpg"), link: "" },
-        { src: require("../../../asset/image/home/ins_s2.jpg"), link: "" },
-        { src: require("../../../asset/image/home/ins_s3.jpg"), link: "" },
-        { src: require("../../../asset/image/home/ins_s4.jpg"), link: "" },
-        { src: require("../../../asset/image/home/ins_s5.jpg"), link: "" },
-        { src: require("../../../asset/image/home/ins_s6.jpg"), link: "" },
+        { src: "https://static.cmereye.com/imgs/smile/images/home/ins_s1.jpg", link: "" },
+        { src: "https://static.cmereye.com/imgs/smile/images/home/ins_s2.jpg", link: "" },
+        { src: "https://static.cmereye.com/imgs/smile/images/home/ins_s3.jpg", link: "" },
+        { src: "https://static.cmereye.com/imgs/smile/images/home/ins_s4.jpg", link: "" },
+        { src: "https://static.cmereye.com/imgs/smile/images/home/ins_s5.jpg", link: "" },
+        { src: "https://static.cmereye.com/imgs/smile/images/home/ins_s6.jpg", link: "" },
       ],
       swiperOptionMb:{
         loop: true,

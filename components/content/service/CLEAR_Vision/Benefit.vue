@@ -19,7 +19,7 @@
       />
       <img
         class="benefit_img benefit_light"
-        src="@/asset/image/service/relex_smile/benefit_light.jpg"
+        src="https://static.cmereye.com/imgs/smile/images/service/relex_smile/benefit_light.jpg"
         alt=""
       />
     </div>

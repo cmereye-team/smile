@@ -54,13 +54,13 @@ export default {
     return {
       banners: [
         {
-          src: require("../../../../asset/image/about-us/centre-introduction/award1.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg",
         },
         {
-          src: require("../../../../asset/image/about-us/centre-introduction/award2.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg",
         },
         {
-          src: require("../../../../asset/image/about-us/centre-introduction/award3.jpg"),
+          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg",
         },
       ],
       swiperOptionMb: {

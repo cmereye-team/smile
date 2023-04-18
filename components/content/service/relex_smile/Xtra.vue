@@ -53,7 +53,7 @@ export default {
     max-width: 1280px;
     margin: auto;
     text-align: center;
-    background: url(("~/asset/image/service/relex_smile/xtra_bg.jpg"));
+    background: url(("https://static.cmereye.com/imgs/smile/images/service/relex_smile/xtra_bg.jpg"));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -138,7 +138,7 @@ export default {
   }
   .xtra {
     text-align: center;
-    background: url(("~/asset/image/service/relex_smile/xtra_bg.jpg"));
+    background: url(("https://static.cmereye.com/imgs/smile/images/service/relex_smile/xtra_bg.jpg"));
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 14vw;
