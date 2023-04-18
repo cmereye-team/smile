@@ -733,7 +733,7 @@ $active_gradient: #4570b6;
   }
 
   .child_nav {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.137);
 
     li:hover a {

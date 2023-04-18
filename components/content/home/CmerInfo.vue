@@ -121,10 +121,10 @@ export default {
           color: #6D6E71;
         }
       }
-      &:nth-of-type(1)>div,&:nth-of-type(2)>div{
+      &:nth-of-type(1)>div,&:nth-of-type(3)>div{
         left: 25px;
       }
-      &:nth-of-type(3)>div,&:nth-of-type(4)>div{
+      &:nth-of-type(2)>div,&:nth-of-type(4)>div{
         right: 25px;
         text-align: right;
       }
