@@ -194,7 +194,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .regard-think-two {
     display: flex;
@@ -212,6 +212,7 @@ h2 {
     .regard-box .regard {
       margin: 0 64px;
       margin-bottom: 10vw;
+      margin-top: 10vw;
     }
   }
   .regard-think {
@@ -223,16 +224,16 @@ h2 {
     border: 3px solid #d9e9ec;
     border-radius: 30px;
     display: flex;
-    padding: 31px;
+    padding: 31px 0 31px 31px;
     justify-content: center;
     margin-bottom: 39px;
+    position: relative;
     .title {
       font-family: "Noto Sans JP";
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
       line-height: 40px;
-      /* or 133% */
       width: min-content;
       text-align: center;
       letter-spacing: 0.1em;
@@ -244,6 +245,7 @@ h2 {
       text-fill-color: transparent;
       position: absolute;
       left: 10vw;
+      top: 12vw;
     }
     .regard {
       display: flex;
