@@ -47,7 +47,7 @@
         </div>
         <div class="box_img">
           <img
-            src="https://smile.hkcmereye.com/wp-content/uploads/2020/05/5.19%E6%9C%AF%E5%89%8D%E6%A3%80%E6%9F%A5%E6%B5%81%E7%A8%8B-%E7%A1%AE%E7%A8%BF-01-1.png"
+            src="https://smilecms.hkcmereye.com/wp-content/uploads/2020/05/5.19%E6%9C%AF%E5%89%8D%E6%A3%80%E6%9F%A5%E6%B5%81%E7%A8%8B-%E7%A1%AE%E7%A8%BF-01-1.png"
             alt=""
           />
         </div>
