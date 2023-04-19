@@ -65,7 +65,7 @@ export default {
     serveForm() {
       // this.$router.replace("/ophthalmicInfo/AppointForm");
       // this.localePath('/ophthalmicInfo/AppointForm')
-      let url = `${this.$i18n.locale === 'cn' ? '/cn' : ''}/booking`
+      let url = `${this.$i18n.locale === 'cn' ? '/cn' : ''}/ophthalmicInfo/AppointForm`
       this.$router.push(url)
       // this.localePath('/booking')
     },

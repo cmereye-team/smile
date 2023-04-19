@@ -16,7 +16,8 @@ import Navbar from "@/components/commom/head/Navbar.vue";
 import Footer from "@/components/commom/foot/Footer.vue";
 
 import MainBanner from "@/components/content/ophthalmicInfo/serveYyue/MainBanner.vue";
-import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom.vue";
+// import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom.vue";
+import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom_ifram.vue";
 
 export default {
   components: { Header, Navbar, Footer, MainBanner, AppointForm },

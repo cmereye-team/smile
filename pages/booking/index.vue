@@ -4,8 +4,8 @@
     <Navbar />
 
     <MainBanner />
-    <AppointForm />
-    <!-- <serve /> -->
+    <!-- <AppointForm /> -->
+    <serve />
 
     <Footer />
     <footers />

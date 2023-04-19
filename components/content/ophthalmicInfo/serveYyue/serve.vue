@@ -9,14 +9,14 @@
           src="https://static.cmereye.com/imgs/2023/01/a1441d1e7e65eb40.png"
           alt=""
         />
-        <p>術前眼睛檢查</p>
+        <p>{{$t('home.serve.p1')}}</p>
       </div>
       <div class="serve-box" @click="serveForm('/ophthalmicInfo/AppointForm')">
         <img
           src="https://static.cmereye.com/imgs/2023/01/df076d9e71e08870.png"
           alt=""
         />
-        <p>講座</p>
+        <p>{{$t('home.serve.p2')}}</p>
       </div>
     </div>
     <div class="flex justify-center my-10">
@@ -115,7 +115,7 @@ h2 {
       text-align: center;
       letter-spacing: 0.1em;
 
-      color: #444343;
+      color: #6D6E71;
     }
   }
 }
@@ -163,7 +163,7 @@ h2 {
       text-align: center;
       letter-spacing: 0.1em;
       margin-top: 15px;
-      color: #444343;
+      color: #6D6E71;
     }
     img {
       width: 32%;
