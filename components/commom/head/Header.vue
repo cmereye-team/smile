@@ -503,7 +503,7 @@ export default {
         }).init()
       }
     })
-    this.taginits()
+    // this.taginits()
     
   },
   methods: {
