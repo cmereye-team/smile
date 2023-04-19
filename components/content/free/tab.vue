@@ -20,6 +20,7 @@
       <div class="md:mt-10" id="smile">
         <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title1')}}</h2>
       </div>
+      <!--Smile  微笑矯視 -->
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>{{$t('chargeDetail.captionTitle')}}</caption>
@@ -113,6 +114,7 @@
       <div class="md:mt-10" id="ICL">
         <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title2')}}</h2>
       </div>
+      <!-- ICL植入式隱形眼鏡 -->
       <div class="table-1-box pcShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>{{$t('chargeDetail.captionTitle')}}</caption>
@@ -170,7 +172,7 @@
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span1')}}</span>
+        <span>{{$t('chargeDetail.span11')}}</span>
         <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
@@ -180,10 +182,10 @@
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}}</p>
+                <p>{{$t('chargeDetail.p1') + `(${$t('chargeDetail.p4')}`}}</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}}</p>
+                <p>{{$t('chargeDetail.p2') + `(${$t('chargeDetail.p4')}`}}</p>
               </th>
             </tr>
           </thead>
@@ -191,10 +193,10 @@
           <tbody>
             <tr>
               <td>
-                <span>$15,000</span>
+                <span>$45,000</span>
               </td>
               <td>
-                <span>$29,000</span>
+                <span>$85,000</span>
               </td>
             </tr>
             <tr>
@@ -202,14 +204,14 @@
             </tr>
             <tr>
               <td>
-                <span>$12,500*</span>
+                <span>$38,000*</span>
               </td>
               <td>
-                <span>$20,000*</span>
+                <span>$67,000*</span>
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $500^</td>
             </tr>
           </tbody>
         </table>
@@ -219,10 +221,10 @@
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}}</p>
+                <p>{{$t('chargeDetail.p1') + `(${$t('chargeDetail.p5')})`}}</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}}</p>
+                <p>{{$t('chargeDetail.p2') + `(${$t('chargeDetail.p5')})`}}</p>
               </th>
             </tr>
           </thead>
@@ -230,10 +232,10 @@
           <tbody>
             <tr>
               <td>
-                <span>$15,000</span>
+                <span>$50,000</span>
               </td>
               <td>
-                <span>$29,000</span>
+                <span>$42,000</span>
               </td>
             </tr>
             <tr>
@@ -241,14 +243,14 @@
             </tr>
             <tr>
               <td>
-                <span>$12,500*</span>
+                <span>$95,000*</span>
               </td>
               <td>
-                <span>$20,000*</span>
+                <span>$72,000*</span>
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $500^</td>
             </tr>
           </tbody>
         </table>
@@ -277,7 +279,7 @@
             <div class="box">
               <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
               <span>
-                {{$t('chargeDetail.span6')}}
+                {{$t('chargeDetail.span14')}}
                 <i style="font-size: 14px;">#</i>
               </span>
             </div>
@@ -295,7 +297,7 @@
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
-
+      <!-- LASIK 激光矯視 -->
       <div class="md:mt-10" id="LASIK">
         <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3')}}</h2>
       </div>
@@ -316,10 +318,10 @@
           <tbody>
             <tr>
               <td>
-                <span>$15,000</span>
+                <span>$14,000</span>
               </td>
               <td>
-                <span>$29,000</span>
+                <span>$22,000</span>
               </td>
             </tr>
             <tr>
@@ -388,9 +390,9 @@
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
-
+      <!-- Clear-Vision -->
       <div class="md:mt-10" id="Clear-Vision">
-        <h2 style="margin-bottom: 0 !important;">Clear-Vision 激光矯視</h2>
+        <h2 style="margin-bottom: 0 !important;">Clear-Vision</h2>
       </div>
       <div class="table-box_four pcShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -440,7 +442,7 @@
                 <span class="text">{{$t('chargeDetail.p1')}}</span>
               </td>
               <td class>
-                <span>$18,000 - $35,000</span>
+                <span>$20,000 - $35,000</span>
               </td>
               <td colspan="2" class="et4">
                 <span>$23,000 - $41,000</span>
@@ -487,7 +489,7 @@
             <tr>
               <td>
                 <div class="my-5">
-                  <span>$18,000</span>
+                  <span>$20,000</span>
                   <div style="margin:10px 0">
                     <span>｜</span>
                   </div>
@@ -692,7 +694,7 @@
                 <span class="text">{{$t('chargeDetail.p1')}}</span>
               </td>
               <td class>
-                <span>$18,000 - $35,000</span>
+                <span>$20,000 - $35,000</span>
               </td>
               <td colspan="2" class="et4">
                 <span>$23,000 - $41,000</span>
@@ -739,7 +741,7 @@
             <tr>
               <td>
                 <div class="my-5">
-                  <span>$18,000</span>
+                  <span>$20,000</span>
                   <div style="margin:10px 0">
                     <span>｜</span>
                   </div>
