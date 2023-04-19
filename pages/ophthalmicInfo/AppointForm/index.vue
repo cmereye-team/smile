@@ -15,7 +15,7 @@ import Header from "@/components/commom/head/Header.vue";
 import Navbar from "@/components/commom/head/Navbar.vue";
 import Footer from "@/components/commom/foot/Footer.vue";
 
-import MainBanner from "@/components/content/ophthalmicInfo/serveYyue/MainBanner.vue";
+import MainBanner from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/MainBanner.vue";
 // import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom.vue";
 import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom_ifram.vue";
 

@@ -1,9 +1,10 @@
 <template>
   <div class="main_banner">
     <banner class="banner">
-      <template #title>
+      <!-- <template #title>
         {{$t('home.headers.reservationService')}}
-      </template> </banner>
+      </template>  -->
+    </banner>
   </div>
 </template>
 <script>
