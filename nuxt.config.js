@@ -18,8 +18,8 @@ export default {
       },
        // Google Analytics Code
        {
-        // src: "https://www.googletagmanager.com/gtag/js?id=G-FN8KFBR9XM",
-        src: "https://www.googletagmanager.com/gtag/js?id=GTM-5M8VLLM",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-FN8KFBR9XM",
+        // src: "https://www.googletagmanager.com/gtag/js?id=GTM-5M8VLLM",
         async: true,
       },
       // Import analitics.js file
