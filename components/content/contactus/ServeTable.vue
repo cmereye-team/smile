@@ -17,7 +17,7 @@
             <tr style="background-color: #f3fcfe">
               <td>{{$t('contactUs.serveTable.h3_1')}}</td>
               <td>3956 2026</td>
-              <td>6489 1907</td>
+              <td>9345 1508</td>
             </tr>
             <tr>
               <td>{{$t('contactUs.serveTable.h3_2')}}</td>
@@ -49,7 +49,7 @@
               src="https://static.cmereye.com/imgs/2023/01/e18c1e32dde853ea.png"
               alt=""
             />
-            <span> 6489 1907 </span>
+            <span> 9345 1508 </span>
           </div>
         </div>
         <div class="box-mb">

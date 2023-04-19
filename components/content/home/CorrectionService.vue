@@ -124,6 +124,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     h3 {
       position: absolute;
       top: -40px;
