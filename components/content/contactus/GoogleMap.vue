@@ -147,7 +147,7 @@
     </div>
     <div class="flex flex-col items-center md:mb-30 mb-20 font">
       <h2>{{$t('contactUs.h3')}}</h2>
-      <div class="flex md:mt-0 mt-5">
+      <div class="flex md:mt-0 mt-5" v-if="currentIndex === 0">
         <div class="time-box">
           <p class="text-blue">星期一至五</p>
           <p>09:00—19:00</p>
@@ -160,6 +160,23 @@
           <!-- <p>09:30—13:30</p> -->
           <!-- <p>09:30—17:30</p>
           <p>09:30—14:00(尖沙咀)</p> -->
+        </div>
+        <div class="time-box">
+          <p class="text-blue">{{$t('contactUs.p')}}</p>
+          <p>休息</p>
+        </div>
+      </div>
+      <div class="flex md:mt-0 mt-5" v-if="currentIndex === 1">
+        <div class="time-box">
+          <p class="text-blue">星期一至五</p>
+          <p>09:30—13:30</p>
+          <p>14:30—19:00</p>
+        </div>
+        <div class="time-box">
+          <p class="text-blue">星期六</p>
+          <p>09:30—13:30</p>
+          <!-- <p>09:30—17:30</p> -->
+          <p>09:30—14:00(尖沙咀)</p>
         </div>
         <div class="time-box">
           <p class="text-blue">{{$t('contactUs.p')}}</p>
