@@ -9,10 +9,11 @@
       </div>
       <div class="serve-box serve-check" @click="serveForm2">
         <img
+          class="serve-examineImg"
           src="https://static.cmereye.com/imgs/2023/03/508bd47a29791e21.jpg"
           alt=""
         />
-        <p class="serve_details">{{$t('home.serve.p1')}}</p>
+        <p class="serve_details serve-examineImg">{{$t('home.serve.p1')}}</p>
       </div>
       <div class="serve-box ml-5 yuye" @click="serveForm">
         <img
@@ -31,9 +32,11 @@
         <img
           src="https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg"
           alt=""
+          class="serve-examineImg"
           @click="serveForm2"
         />
         <img
+          class="serve-lectureImg"
           src="https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg "
           alt=""
           @click="serveForm"
