@@ -210,6 +210,10 @@ p {
 .memu {
   margin-top: 5vw;
 }
+/deep/ .el-collapse-item__header.is-active {
+    background-color: #4570b6 !important;
+    color: #fff !important;
+  }
 @media screen and (max-width: 768px) {
   .mb-width {
     width: 72vw;
@@ -265,8 +269,7 @@ p {
     background-size: 50%;
   }
 }
-</style>
-<style lang="scss" scoped>
+
 @media screen and (min-width: 768px) {
   ::v-deep .el-collapse-item__header {
     font-weight: 400;
@@ -290,10 +293,7 @@ p {
 </style>
 <style lang="scss">
 @media screen and (max-width: 768px) {
-  .el-collapse-item__header.is-active {
-    background-color: #4570b6 !important;
-    color: #fff !important;
-  }
+  
   i {
     justify-content: space-between;
   }
@@ -326,10 +326,6 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
-  .el-collapse-item__header.is-active {
-    background-color: #4570b6 !important;
-    color: #fff !important;
-  }
   i {
     justify-content: space-between;
   }

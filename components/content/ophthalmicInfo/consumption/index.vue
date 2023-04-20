@@ -3,16 +3,78 @@
     <div class="flex justify-center md:mt-28 mt-10">
       <h2>{{$t('consumptionVoucher.h2')}}</h2>
     </div>
-    <div class="flex md:flex-row justify-around md:mt-10 flex-col">
+    <!-- <div class="flex md:flex-row justify-around md:mt-10 flex-col">
       <iframe
         src="https://smilecms.hkcmereye.com/%E6%B6%88%E8%B2%BB%E5%88%B8%E8%A9%B3%E6%83%85/"
         frameborder="0"
         class="iframe"
       ></iframe>
+    </div> -->
+    <div class="pageContent">
+      <div class="content-text">
+        為配合政府消費券政策，希瑪林順潮眼科中心、希瑪微笑矯視中心及希瑪眼科視光中心現已接受八達通、拍住賞Tap & Go、AlipayHK、WeChat Pay HK、PayMe、BoC Pay之付款方式，讓顧客能把消費券用在醫療服務上。
+      </div>
+      <div class="content-imgLists">
+        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/1200px-Octopus_Logo_201709-1-1.png" alt=""></div>
+        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/Asset-54-3.png" alt=""></div>
+        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/tap-1.png" alt=""></div>
+        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/logo-wechatpayhk-col-1-1.png" alt=""></div>
+        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/PayMe-Logo.png" alt=""></div>
+        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/bocpay_logo.png" alt=""></div>
+      </div>
+      <div class="content-tables">
+        <div class="title">
+          如有任何疑問，歡迎向我們的客戶服務員查詢：
+        </div>
+        <div class="tables">
+          <el-table
+            :data="tableData"
+            
+            border
+            :row-class-name="tableRowClassName"
+            style="width: 100%">
+            <el-table-column
+              header-align="center"
+              prop="tableData_1"
+              label="服务中心">
+            </el-table-column>
+            <el-table-column
+              header-align="center"
+              prop="tableData_2"
+              label="电话热线">
+            </el-table-column>
+            <el-table-column
+              header-align="center"
+              prop="tableData_3"
+              label="whatsapp">
+            </el-table-column>
+          </el-table>
+        </div>
+      </div>
+      <div class="content-tables">
+        <div class="title">
+          常見問題
+        </div>
+        <div class="tabLists">
+          <el-collapse accordion>
+            <el-collapse-item title="1  使用消費券後，可用其他付款方式付清餘額嗎？" name="1">
+              <div>可以</div>
+            </el-collapse-item>
+            <el-collapse-item title="2  使用消費券會影響產品或服務本有的折扣優惠嗎？" name="2">
+              <div>使用消費券，客人仍可享有指定產品或服務本有的折扣。</div>
+            </el-collapse-item>
+            <el-collapse-item title="3  消費劵有限制可購買的產品或服務嗎？" name="3">
+              <div>沒有。消費劵可在希瑪林順潮眼科中心、希瑪微笑激光矯視中心及希瑪眼科視光中心的任何產品或服務上使用。</div>
+            </el-collapse-item>
+            <el-collapse-item title="4  可多人為同一帳單付款嗎？" name="4">
+              <div>可以，只要結帳時所有付款人同時在場，我們的服務員會為您們安排收款。</div>
+            </el-collapse-item>
+          </el-collapse>
+        </div>
+      </div>
     </div>
-
     <div class="flex justify-center my-10">
-      <a href="#" class="mbShow">
+      <a href="https://api.whatsapp.com/send/?phone=85260610511" class="mbShow">
         <button>
           <div class="flex btn-yuyue">
             <img
@@ -35,233 +97,144 @@
 export default {
   data() {
     return {
-      options: [
-        {
-          value: "选项1",
-          label: "黄金糕",
-        },
-        {
-          value: "选项2",
-          label: "双皮奶",
-        },
-        {
-          value: "选项3",
-          label: "蚵仔煎",
-        },
-        {
-          value: "选项4",
-          label: "龙须面",
-        },
-        {
-          value: "选项5",
-          label: "北京烤鸭",
-        },
-      ],
-      value: "",
+      tableData:[{
+          tableData_1: '希瑪林順潮眼科中心',
+          tableData_2: '3956 2026',
+          tableData_3: '6489 1907'
+        }, {
+          tableData_1: '希瑪微笑激光矯視中心',
+          tableData_2: '3892 5099',
+          tableData_3: '9796 2992'
+        }, {
+          tableData_1: '希瑪眼科視光中心',
+          tableData_2: '3892 5089',
+          tableData_3: '6918 0511'
+        }]
     };
   },
   created() {},
-  methods: {},
+  methods: {
+    tableRowClassName({row, rowIndex}) {
+        if (rowIndex === 0 || rowIndex === 2) {
+          return 'warning-row';
+        }
+        return '';
+      }
+  },
 };
 </script>
-
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
   color: #4570B6;
 }
-::v-deep .el-input__inner {
-  border-radius: 10px;
+.pageContent{
+  width: 100%;
 }
-::v-deep .el-icon-arrow-up:before {
-  color: #ff161600;
-  background: url("https://static.cmereye.com/imgs/2023/01/918ee2a9b3b07245.png")
-    no-repeat scroll right center transparent;
+.content-text{
+  font-size: 20px;
+  color: #6D6E71;
 }
-
-@media screen and (min-width: 768px) {
-  .iframe {
-    width: 100%;
-    // height: calc(100vh + 300px);
-    height: 1440px;
-  }
-  .btn {
-    button {
-      background: linear-gradient(90.24deg, #4b7bbc 10.22%, #7ed7ea 100%);
-      border-radius: 30px;
-      width: 100%;
-      padding: 12px 0;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      span {
-        font-family: "Noto Sans JP";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 10px;
-        /* or 77% */
-
-        text-align: center;
-        letter-spacing: 0.1em;
-
-        color: #ffffff;
-      }
-    }
-  }
-  .form {
-    width: 572px;
-    height: 305px;
-    background: linear-gradient(
-      115.71deg,
-      rgba(75, 123, 188, 0.2) 6.52%,
-      rgba(126, 215, 234, 0.2) 97.76%
-    );
-    border-radius: 10px;
-    padding-top: 27px;
-    margin: 84px auto 0 auto;
-  }
-  .serve-page {
-    margin-bottom: 129px;
-  }
-  .more-btn {
+.content-imgLists{
+  display: flex;
+  padding: 70px 0;
+  &>div{
+    flex: 1;
     display: flex;
     justify-content: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 13px 23px;
-    margin: 0 auto;
-    background: linear-gradient(104.24deg, #5184c1 5.95%, #7cd3e8 114.4%);
-    cursor: pointer;
-    span {
-      font-family: var(--font_family);
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      /* identical to box height, or 125% */
-
-      letter-spacing: 0.1em;
-
-      color: #ffffff;
-    }
-  }
-  .serve-box {
-    width: 315px;
-    height: 288px;
-    border: 2px solid #4570b6;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 50px;
-    margin-top: 40px;
-    p {
-      font-family: "Noto Sans JP";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      /* identical to box height, or 150% */
-      margin-top: 36px;
-      text-align: center;
-      letter-spacing: 0.1em;
-
-      color: #444343;
+    padding: 30px;
+    box-sizing: border-box;
+    img{
+      width: 100%;
     }
+    &:last-child>img{
+      width: 60%;
+    } 
   }
+}
+.content-tables{
+  margin-bottom: 70px;
+  .title{
+    color: #20377F;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  .tables{
+    margin-top: 20px;
+  }
+  .tabLists{
+    margin-top: 50px;
+    border-left: 1px solid #ccc;
+  }
+}
+/deep/ .has-gutter>tr>.el-table__cell>.cell{
+  font-size: 16px;
+  color: #20377F;
+}
+/deep/ .el-table .warning-row {
+  background: #d2d2d29e;
+}
+/deep/ .el-collapse-item__header{
+  font-size: 21px;
+  border-bottom: none;
+  text-indent: 20px;
+  background-color: #fff;
+}
+/deep/ .el-collapse-item__header.is-active{
+  color: #20377F;
+}
+/deep/ .el-collapse-item.is-active{
+  border-left: 3px solid #20377F;
+}
+/deep/ .el-collapse{
+  border-top:  none;
+}
+/deep/ .el-collapse-item__content{
+  border-bottom: none;
+}
+/deep/ .el-collapse-item{
+  margin-top: 30px;
+  text-decoration: 20px;
+}
+/deep/ .el-collapse-item__wrap{
+  border-bottom: none;
+}
+/deep/ .el-collapse-item__header:hover{
+  background: #eceff8;
 }
 @media screen and (max-width: 768px) {
-  .iframe {
-    width: 100%;
-    // height: calc(100vh + 300px);
-    height: 1440px;
+  /deep/ .el-collapse-item__header{
+    font-size: 20px;
+    line-height: 30px;
+    text-indent: 0;
+    padding-left: 20px;
   }
-  .btn {
-    button {
-      background: linear-gradient(90.24deg, #4b7bbc 10.22%, #7ed7ea 100%);
-      border-radius: 30px;
-      width: 100%;
-      padding: 12px 0;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      span {
-        font-family: "Noto Sans JP";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 10px;
-        /* or 77% */
-
-        text-align: center;
-        letter-spacing: 0.1em;
-
-        color: #ffffff;
-      }
-    }
+  /deep/ .el-collapse-item__content>div{
+    font-size: 20px;
   }
-  .form {
-    width: 342px;
-    height: 423px;
-    background: linear-gradient(
-      115.71deg,
-      rgba(75, 123, 188, 0.2) 6.52%,
-      rgba(126, 215, 234, 0.2) 97.76%
-    );
-    border-radius: 10px;
-    padding-top: 27px;
-    margin: 84px auto 0 auto;
+  /deep/ .el-collapse-item__content{
+    padding-top: 30px;
+    padding-left: 30px;
   }
-  h2 {
-    font-size: 16px;
-  }
-  .more-btn {
-    background: linear-gradient(104.24deg, #5184c1 5.95%, #7cd3e8 114.4%);
-    width: 40%;
-    margin: 0 auto;
-    padding: 10px 0;
-    span {
-      font-family: var(--font_family);
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      /* identical to box height, or 125% */
-
-      letter-spacing: 0.1em;
-
-      color: #ffffff;
-    }
-  }
-  .serve-box {
-    width: 215px;
-    height: 188px;
-    border: 2px solid #4570b6;
-    border-radius: 10px;
-    display: flex;
+  .content-imgLists{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 50px;
-    margin-top: 40px;
-    p {
-      font-family: "Noto Sans JP";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 30px;
-      /* identical to box height, or 150% */
-
-      text-align: center;
-      letter-spacing: 0.1em;
-      margin-top: 15px;
-      color: #444343;
+    padding: 50px 0;
+    &>div{
+      // width: 80px;
+      margin-top: 30px;
+      img{
+        width: 60%;
+      }
+      &:last-child>img{
+        width: 40%;
+      }   
     }
-    img {
-      width: 32%;
+  }
+  .content-tables{
+    .title{
+      font-size: 20px;
     }
   }
 }

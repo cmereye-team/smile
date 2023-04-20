@@ -72,6 +72,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+/deep/ .el-collapse-item__header.is-active {
+    background-color: #4570b6 !important;
+    color: #fff !important;
+  }
 h2 {
   font-size: 25px;
   color: #4570B6;
