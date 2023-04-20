@@ -16,10 +16,11 @@
       </div>
       <div class="serve-box ml-5 yuye" @click="serveForm">
         <img
+          class="serve-lectureImg"
           src="https://static.cmereye.com/imgs/2023/03/c5a46c2325efaff7.jpg"
           alt=""
         />
-        <p class="serve_details">{{$t('home.serve.p2')}}</p>
+        <p class="serve_details serve-lectureImg">{{$t('home.serve.p2')}}</p>
       </div>
     </div>
     <div class="mbShow flex md:justify-end flex-col items-center md:flex-row">
