@@ -2,30 +2,30 @@
   <div class="cmerInfo">
     <div class="pcShow page_container cmerInfo-in">
       <div class="wow animate__fadeInLeft cmerInfo-in-box" @click="handleInfo('/vision-correction/relex-smile')">
-        <img src="https://static.cmereye.com/imgs/2023/04/748ab80a564d55b8.jpg" />
-        <div>
+        <img class="cmerInfoTagClick_1" src="https://static.cmereye.com/imgs/2023/04/748ab80a564d55b8.jpg" />
+        <div class="cmerInfoTagClick_1">
           <h4 v-html="$t('home.cmerInfo[0].h4')"></h4>
           <span>{{$t('home.cmerInfo[0].span')}}</span>
         </div>
       </div>
       
       <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/group-profile')">
-        <img src="https://static.cmereye.com/imgs/2023/04/69dd6f45ce4fdb12.jpg" />
-        <div>
+        <img class="cmerInfoTagClick_2" src="https://static.cmereye.com/imgs/2023/04/69dd6f45ce4fdb12.jpg" />
+        <div class="cmerInfoTagClick_2">
           <h4 v-html="$t('home.cmerInfo[2].h4')"></h4>
           <span>{{$t('home.cmerInfo[2].span')}}</span>
         </div>
       </div>
       <div class="wow animate__fadeInLeft cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
-        <img src="https://static.cmereye.com/imgs/2023/04/88bdeb6b94c2375d.jpg" />
-        <div>
+        <img class="cmerInfoTagClick_3" src="https://static.cmereye.com/imgs/2023/04/88bdeb6b94c2375d.jpg" />
+        <div class="cmerInfoTagClick_3">
           <h4 v-html="$t('home.cmerInfo[1].h4')"></h4>
           <span>{{$t('home.cmerInfo[1].span')}}</span>
         </div>
       </div>
       <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/contact-us')">
-        <img src="https://static.cmereye.com/imgs/2023/04/e8d6af0160cfc439.jpg" />
-        <div>
+        <img class="cmerInfoTagClick_4" src="https://static.cmereye.com/imgs/2023/04/e8d6af0160cfc439.jpg" />
+        <div class="cmerInfoTagClick_4">
           <h4 v-html="$t('home.cmerInfo[3].h4')"></h4>
           <span>{{$t('home.cmerInfo[3].span')}}</span>
         </div>
@@ -34,7 +34,7 @@
     <div class="mbShow page_container cmerInfo-in">
       <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/vision-correction/relex-smile')">
         <img src="https://static.cmereye.com/imgs/2023/04/1b9fffce0077e770.jpg" />
-        <div>
+        <div class="cmerInfoTagClick">
           <h4 v-html="$t('home.cmerInfo[0].h4')"></h4>
           <span>{{$t('home.cmerInfo[0].span')}}</span>
         </div>
@@ -47,15 +47,15 @@
         </div>
       </div>
       <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
-        <img src="https://static.cmereye.com/imgs/2023/04/3caa4f0732ba738c.jpg" />
-        <div>
+        <img class="cmerInfoTagClick" src="https://static.cmereye.com/imgs/2023/04/3caa4f0732ba738c.jpg" />
+        <div class="cmerInfoTagClick">
           <h4 v-html="$t('home.cmerInfo[1].h4')"></h4>
           <span>{{$t('home.cmerInfo[1].span')}}</span>
         </div>
       </div>
       <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/contact-us')">
         <img src="https://static.cmereye.com/imgs/2023/04/285b92be603d3f08.jpg" />
-        <div>
+        <div class="cmerInfoTagClick">
           <h4 v-html="$t('home.cmerInfo[3].h4')"></h4>
           <span>{{$t('home.cmerInfo[3].span')}}</span>
         </div>
