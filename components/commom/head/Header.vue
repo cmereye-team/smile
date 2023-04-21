@@ -223,7 +223,7 @@
         <!-- gsap   移动动画-->
 
         <!-- gsap   移动动画 end-->
-        <ul class="nav md:flex md:justify-around grid gap-8">
+        <ul class="nav md:flex md:justify-around grid gap-4">
           <div class="menu-line"></div>
 
           <li
@@ -441,11 +441,11 @@ export default {
           link: "/charge-detail",
           child_list: [],
         },
-        // {
-        //   main_nav: "消費券詳情",
-        //   link: "/consumption-voucher",
-        //   child_list: [],
-        // },
+        {
+          main_nav: this.$t("home.headers.consumptionVoucher"),
+          link: "/consumption-voucher",
+          child_list: [],
+        },
         {
           main_nav: this.$t("home.headers.contactUs"),
           link: "/contact-us",
