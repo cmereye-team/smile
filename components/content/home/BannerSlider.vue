@@ -14,7 +14,7 @@
             <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
           </nuxt-link> -->
           <nuxt-link v-for="(banner,index) in bannerLists" :key="index" class="swiper-slide" :to="localePath(banner.link)">
-            <img :src="banner[`pc_${$i18n.locale}Img`]" alt="">
+            <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
           </nuxt-link>
         </div>
       </div>
@@ -33,7 +33,7 @@
             <img src="https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg" alt="">
           </nuxt-link> -->
           <nuxt-link v-for="(banner,index) in bannerLists" :key="index" class="swiper-slide" :to="localePath(banner.link)">
-            <img :src="banner[`mb_${$i18n.locale}Img`]" alt="">
+            <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
           </nuxt-link>
         </div>
       </div>
@@ -52,6 +52,7 @@ export default {
       bannerLists: [
         {
           link: '/vision-correction/relex-smile',
+          className: 'banner_1',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/f2112504122c3a75.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/04/47b5b8d44b95666e.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/4b25734d8dbba59a.jpg',
@@ -59,6 +60,7 @@ export default {
         },
         {
           link: '/vision-correction-presbyopia',
+          className: 'banner_2',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/7a2b26fa29e337a3.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/a7280ee58048f45f.jpg',

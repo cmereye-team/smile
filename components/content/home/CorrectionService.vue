@@ -5,18 +5,19 @@
     </div> -->
     <div class="smileService">
       <div class="smileSerItemBox wow animate__flipInY" v-for="(item,index) in lists" :key="index">
-        <div class="smileSerItem group" @click="toItemPages(item.href)">
+        <div :class="['smileSerItem','group',item.className]" @click="toItemPages(item.href)">
           <!-- <a
             :href="item.href | checkUrl($i18n)"
             target="_blank"
             rel="noopener noreferrer"
           > -->
-            <h3 class="title">{{item.title}}</h3>
-            <p v-html="item.content"></p>
+            <h3 :class="['title',item.className]">{{item.title}}</h3>
+            <p :class="item.className" v-html="item.content"></p>
             <!-- <p>39 歲以上<br />同時有近視／遠視／<br />散光問題</p> -->
-            <span class="morelink">了解更多</span>
+            <span :class="['morelink',item.className]">了解更多</span>
             <img
               class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-2"
+              :class="item.className"
               src="https://static.cmereye.com/imgs/2023/03/8462fdf2330efa37.png"
               alt=""
             />
@@ -45,22 +46,26 @@ export default {
         {
           title: 'SMILE',
           content: this.$t('home.CorrectionService.p1'),
-          href: '/vision-correction/relex-smile/'
+          href: '/vision-correction/relex-smile/',
+          className: 'indexNavSMILE'
         },
         {
           title: 'LASIK',
           content: this.$t('home.CorrectionService.p2'),
-          href: '/vision-correction-lasik/'
+          href: '/vision-correction-lasik/',
+          className: 'indexNavLASIK'
         },
         {
           title: 'ICL',
           content: this.$t('home.CorrectionService.p3'),
-          href: '/vision-correction-icl/'
+          href: '/vision-correction-icl/',
+          className: 'indexNavICL'
         },
         {
           title: 'CLEAR-Vision',
           content: this.$t('home.CorrectionService.p4'),
-          href: '/vision-correction-presbyopia/'
+          href: '/vision-correction-presbyopia/',
+          className: 'indexNavCLEARVISION'
         }
       ]
     };
