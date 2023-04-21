@@ -10,6 +10,7 @@ module.exports = {
             commonProblem: '常见问题',
             ophthalmicConsultation: '眼科咨询',
             feeConsultation: '收费详情',
+            consumptionVoucher: '消费券详情',
             contactUs: '联络我们',
             reservationService: '预约服务',
 
@@ -1155,6 +1156,25 @@ module.exports = {
                   meida: `<span>SMILE后幾时先可以化眼妆💡</span>`
               }
           ]
+        },
+        consumption: {
+          title: '消费券详情',
+          contentText: '为配合政府消费券政策，希玛林顺潮眼科中心、希玛微笑矫视中心及希玛眼科视光中心现已接受八达通、拍住赏Tap & Go、AlipayHK、WeChat Pay HK、PayMe、BoC Pay之付款方式，让顾客能把消费券用在医疗服务上。',
+          tableTitle: '如有任何疑问，欢迎向我们的客户服务员查询：',
+          tableColumn_1: '服务中心',
+          tableColumn_2: '电话热线',
+          tableData_1: '希玛林顺潮眼科中心',
+          tableData_2: '希玛微笑激光矫视中心',
+          tableData_3: '希玛眼科视光中心',
+          QATitle: '常见问题',
+          Q_1: '1  使用消费券后，可用其他付款方式付清余额吗？',
+          Q_2: '2  使用消费券会影响产品或服务本有的折扣优惠吗？',
+          Q_3: '3  消费劵有限制可购买的产品或服务吗？',
+          Q_4: '4  可多人为同一帐单付款吗？',
+          A_1: '可以',
+          A_2: '使用消费券，客人仍可享有指定产品或服务本有的折扣。',
+          A_3: '没有。消费劵可在希玛林顺潮眼科中心、希玛微笑激光矫视中心及希玛眼科视光中心的任何产品或服务上使用。',
+          A_4: '可以，只要结账时所有付款人同时在场，我们的服务员会为您们安排收款。'
         }
     },
     privacyPolicy: {

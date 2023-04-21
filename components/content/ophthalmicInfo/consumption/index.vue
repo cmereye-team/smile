@@ -1,7 +1,7 @@
 <template>
   <div class="page_container serve-page">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>{{$t('consumptionVoucher.h2')}}</h2>
+      <h2>{{$t('ophthalmicInfo.consumption.title')}}</h2>
     </div>
     <!-- <div class="flex md:flex-row justify-around md:mt-10 flex-col">
       <iframe
@@ -12,7 +12,7 @@
     </div> -->
     <div class="pageContent">
       <div class="content-text">
-        為配合政府消費券政策，希瑪林順潮眼科中心、希瑪微笑矯視中心及希瑪眼科視光中心現已接受八達通、拍住賞Tap & Go、AlipayHK、WeChat Pay HK、PayMe、BoC Pay之付款方式，讓顧客能把消費券用在醫療服務上。
+        {{$t('ophthalmicInfo.consumption.contentText')}}
       </div>
       <div class="content-imgLists">
         <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/1200px-Octopus_Logo_201709-1-1.png" alt=""></div>
@@ -24,24 +24,24 @@
       </div>
       <div class="content-tables">
         <div class="title">
-          如有任何疑問，歡迎向我們的客戶服務員查詢：
+          <!-- 如有任何疑問，歡迎向我們的客戶服務員查詢： -->
+          {{$t('ophthalmicInfo.consumption.tableTitle')}}
         </div>
         <div class="tables">
           <el-table
             :data="tableData"
-            
             border
             :row-class-name="tableRowClassName"
             style="width: 100%">
             <el-table-column
               header-align="center"
               prop="tableData_1"
-              label="服务中心">
+              :label="$t('ophthalmicInfo.consumption.tableColumn_1')">
             </el-table-column>
             <el-table-column
               header-align="center"
               prop="tableData_2"
-              label="电话热线">
+              :label="$t('ophthalmicInfo.consumption.tableColumn_2')">
             </el-table-column>
             <el-table-column
               header-align="center"
@@ -53,21 +53,34 @@
       </div>
       <div class="content-tables">
         <div class="title">
-          常見問題
+          <!-- 常見問題 -->
+          {{$t('ophthalmicInfo.consumption.QATitle')}}
         </div>
         <div class="tabLists">
           <el-collapse accordion>
-            <el-collapse-item title="1  使用消費券後，可用其他付款方式付清餘額嗎？" name="1">
-              <div>可以</div>
+            <el-collapse-item :title="$t('ophthalmicInfo.consumption.Q_1')" name="1">
+              <div>
+                <!-- 可以 -->
+                {{$t('ophthalmicInfo.consumption.A_1')}}
+              </div>
             </el-collapse-item>
-            <el-collapse-item title="2  使用消費券會影響產品或服務本有的折扣優惠嗎？" name="2">
-              <div>使用消費券，客人仍可享有指定產品或服務本有的折扣。</div>
+            <el-collapse-item :title="$t('ophthalmicInfo.consumption.Q_2')" name="2">
+              <div>
+                <!-- 使用消費券，客人仍可享有指定產品或服務本有的折扣。 -->
+                {{$t('ophthalmicInfo.consumption.A_2')}}
+              </div>
             </el-collapse-item>
-            <el-collapse-item title="3  消費劵有限制可購買的產品或服務嗎？" name="3">
-              <div>沒有。消費劵可在希瑪林順潮眼科中心、希瑪微笑激光矯視中心及希瑪眼科視光中心的任何產品或服務上使用。</div>
+            <el-collapse-item :title="$t('ophthalmicInfo.consumption.Q_3')" name="3">
+              <div>
+                <!-- 沒有。消費劵可在希瑪林順潮眼科中心、希瑪微笑激光矯視中心及希瑪眼科視光中心的任何產品或服務上使用。 -->
+                {{$t('ophthalmicInfo.consumption.A_3')}}
+              </div>
             </el-collapse-item>
-            <el-collapse-item title="4  可多人為同一帳單付款嗎？" name="4">
-              <div>可以，只要結帳時所有付款人同時在場，我們的服務員會為您們安排收款。</div>
+            <el-collapse-item :title="$t('ophthalmicInfo.consumption.Q_4')" name="4">
+              <div>
+                <!-- 可以，只要結帳時所有付款人同時在場，我們的服務員會為您們安排收款。 -->
+                {{$t('ophthalmicInfo.consumption.A_4')}}
+              </div>
             </el-collapse-item>
           </el-collapse>
         </div>
@@ -98,15 +111,15 @@ export default {
   data() {
     return {
       tableData:[{
-          tableData_1: '希瑪林順潮眼科中心',
+          tableData_1: this.$t('ophthalmicInfo.consumption.tableData_1'),
           tableData_2: '3956 2026',
           tableData_3: '6489 1907'
         }, {
-          tableData_1: '希瑪微笑激光矯視中心',
+          tableData_1: this.$t('ophthalmicInfo.consumption.tableData_2'),
           tableData_2: '3892 5099',
           tableData_3: '9796 2992'
         }, {
-          tableData_1: '希瑪眼科視光中心',
+          tableData_1: this.$t('ophthalmicInfo.consumption.tableData_3'),
           tableData_2: '3892 5089',
           tableData_3: '6918 0511'
         }]

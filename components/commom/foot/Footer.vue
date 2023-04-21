@@ -57,6 +57,11 @@
               {{$t('home.headers.feeConsultation')}}
             </div></nuxt-link
           >
+          <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/consumption-voucher')"
+            ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
+              {{$t('home.headers.consumptionVoucher')}}
+            </div></nuxt-link
+          >
           <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/contact-us')"
             ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
               {{$t('home.headers.contactUs')}}

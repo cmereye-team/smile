@@ -142,11 +142,18 @@
                 >
               </el-menu-item>
               <el-menu-item index="7">
+                <nuxt-link :to="localePath('/consumption-voucher')"
+                  ><span>{{
+                    $t("home.headers.consumptionVoucher")
+                  }}</span></nuxt-link
+                >
+              </el-menu-item>
+              <el-menu-item index="8">
                 <nuxt-link :to="localePath('/contact-us')"
                   ><span>{{ $t("home.headers.contactUs") }}</span></nuxt-link
                 >
               </el-menu-item>
-              <el-menu-item index="8">
+              <el-menu-item index="9">
                 <nuxt-link :to="localePath('/booking')"
                   ><span>{{
                     $t("home.headers.reservationService")
