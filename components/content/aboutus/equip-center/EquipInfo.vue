@@ -67,7 +67,7 @@ export default {
           ...this.$t('aboutUs.medicalEquipment.equiCon1')
         },
         {
-          href: "https://static.cmereye.com/imgs/2022/12/c02bca547710c859.jpg",
+          href: "https://static.cmereye.com/imgs/2023/04/01124b4e13ce8ac6.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon2')
         },
         {
@@ -324,7 +324,7 @@ h2 {
       height: 528px;
       position: relative;
       background: #fff;
-      margin-bottom: 136px;
+      margin-bottom: 100px;
       .top-equip {
         z-index: 10;
         display: flex;

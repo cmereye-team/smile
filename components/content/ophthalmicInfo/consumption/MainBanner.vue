@@ -1,9 +1,9 @@
 <template>
-  <div class="main_banner">
+  <div class="main_banner" @click="toConsumptionVoucher">
     <banner class="banner">
       <template #title>
         <!-- {{ $t('home.headers.ophthalmicConsultationChild_2') }} -->
-        消费券详情
+        <!-- 消费券详情 -->
       </template>
     </banner>
   </div>
@@ -16,7 +16,12 @@ export default {
     return {};
   },
   created() { },
-  methods: {}
+  methods: {
+    toConsumptionVoucher(){
+      let _path = this.localePath('/consumption-voucher')
+      this.$router.push(_path)
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -30,7 +35,7 @@ export default {
   }
 }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/04/57f11ecb499e2b25.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2023/04/17a68f3a305077b9.jpg");
     background-position: top;
     background-size: 100%;
     width: 100vw;
@@ -45,8 +50,9 @@ export default {
 @media screen and (min-width:768px){
 
   .banner {
-  background-image: url("https://static.cmereye.com/imgs/2023/04/2994861390bba46b.jpg");
-}
+    background-image: url("https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg");
+    cursor: pointer;
+  }
 }
 
 </style>

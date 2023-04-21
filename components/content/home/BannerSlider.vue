@@ -65,7 +65,14 @@ export default {
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/a7280ee58048f45f.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg'
-
+        },
+        {
+          link: '/consumption-voucher',
+          className: 'banner_3',
+          pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/d87721cc7012fdd9.jpg',
+          pc_hkImg: 'https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg',
+          mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/eef9ad4d737ba85d.jpg',
+          mb_hkImg: 'https://static.cmereye.com/imgs/2023/04/17a68f3a305077b9.jpg'
         }
       ]
     }
