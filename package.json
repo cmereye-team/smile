@@ -11,6 +11,7 @@
   "dependencies": {
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/sitemap": "^2.4.0",
     "animate.css": "^4.1.1",
     "core-js": "^3.19.3",
     "element-ui": "^2.15.9",

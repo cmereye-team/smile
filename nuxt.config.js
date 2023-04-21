@@ -1,6 +1,6 @@
 
 import i18n from "./plugins/i18n"
-
+import sitemap from './plugins/sitemap'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -86,8 +86,10 @@ export default {
       '@nuxtjs/i18n',
        i18n,
       '@nuxtjs/gtm',
+      '@nuxtjs/sitemap'
     ]
   ],
+  sitemap,
   gtm: {
     id: 'GTM-5M8VLLM'
   },
