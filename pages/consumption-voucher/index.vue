@@ -3,7 +3,7 @@
     <Header />
     <Navbar />
 
-    <!-- <MainBanner /> -->
+    <MainBanner />
     <AppointForm />
 
     <Footer />

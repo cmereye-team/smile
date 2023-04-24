@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Navbar />
+    <MainBanner />
     <Tab />
     <Footer />
     <footers />
@@ -14,8 +15,9 @@ import Navbar from "@/components/commom/head/Navbar.vue";
 import Footer from "@/components/commom/foot/Footer.vue";
 import Tab from "@/components/content/free/tab.vue";
 import footers from "@/components/commom/foot/footers.vue";
+import MainBanner from "@/components/content/ophthalmicInfo/consumption/MainBanner.vue";
 
-export default { components: { Header, Navbar, Footer, Tab, footers } };
+export default { components: { Header, Navbar, Footer, Tab, footers,MainBanner } };
 </script>
 
 <style lang="scss" scoped>

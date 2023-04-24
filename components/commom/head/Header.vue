@@ -438,14 +438,18 @@ export default {
 
         {
           main_nav: this.$t("home.headers.feeConsultation"),
-          link: "/charge-detail",
-          child_list: [],
+          link: "",
+          child_list: [
+            {
+              child_item: this.$t("home.headers.feeConsultation"),
+              link: "/charge-detail"
+            },
+            {
+              child_item: this.$t("home.headers.consumptionVoucher"),
+              link: "/consumption-voucher"
+            },
+          ],
         },
-        // {
-        //   main_nav: this.$t("home.headers.consumptionVoucher"),
-        //   link: "/consumption-voucher",
-        //   child_list: [],
-        // },
         {
           main_nav: this.$t("home.headers.contactUs"),
           link: "/contact-us",
