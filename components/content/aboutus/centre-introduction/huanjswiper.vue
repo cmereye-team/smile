@@ -265,9 +265,9 @@ export default {
     display: grid;
     justify-items: start;
     grid-auto-flow: row;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    padding-left: 55px;
+    // padding-left: 55px;
     margin-top: 20px;
   }
   .address {
