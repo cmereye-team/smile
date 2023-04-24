@@ -52,13 +52,13 @@
             />
             <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p3')}}</p>
           </div>
-          <div class="address">
+          <!-- <div class="address">
             <img
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
             <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p4')}}</p>
-          </div>
+          </div> -->
           <div class="address">
             <img
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
