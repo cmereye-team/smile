@@ -162,10 +162,10 @@ export default {
     border-radius: 18px 18px 0 0;
   }
   .footer-coupon{
-    width: 87px;
-    height: 87px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    bottom: 200px;
+    bottom: 180px;
     right: 15px;
     background: #4570B6;
     z-index: 9990;
@@ -181,8 +181,8 @@ export default {
       align-items: center;
       justify-content: center;
       img{
-        width: 37px;
-        height: 37px;
+        width: 25px;
+        // height: 25px;
       }
       span{
         display: block;
@@ -191,7 +191,7 @@ export default {
         color:#fff;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 10px;
         line-height: 17px;
       }
     }
