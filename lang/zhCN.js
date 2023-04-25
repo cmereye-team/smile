@@ -37,6 +37,10 @@ module.exports = {
 
             reservationServiceChild_1: '矫视前检查',
             reservationServiceChild_2: '讲座',
+
+            coupon: '消费券',
+            preferential: '优惠',
+
             togLang: '选择语言'
         },
         cmerInfo: [

@@ -9,34 +9,15 @@
           />
           <p>{{item.title}}</p>
         </div>
-        <!-- <div class="box">
-          <img
-            src="https://static.cmereye.com/imgs/2023/03/4f2e7a260618edb4.png"
-            alt=""
-          />
-          <p>致電查詢</p>
-        </div>
-        <div class="box">
-          <img
-            src="https://static.cmereye.com/imgs/2023/03/935a17da94382a86.png"
-            alt=""
-          />
-          <p>線上對話</p>
-        </div>
-        <div class="box">
-          <img
-            src="https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png"
-            alt=""
-          />
-          <p>Whatsapp</p>
-        </div>
-        <div class="box">
-          <img
-            src="https://static.cmereye.com/imgs/2023/03/aa60fde6a44f6099.png"
-            alt=""
-          />
-          <p>預約服務</p>
-        </div> -->
+      </div>
+      <div class="footer-coupon">
+        <nuxt-link :to="localePath('/consumption-voucher')">
+          <div><img src="@/asset/image/common/Layer_1.png" alt=""></div>
+          <div>
+            <span>{{$t('home.headers.coupon')}}</span>
+            <span>{{$t('home.headers.preferential')}}</span>
+          </div>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -143,7 +124,7 @@ export default {
     z-index: 2001;
     padding: 0;
     width: 100vw;
-    overflow-y: hidden;
+    // overflow-y: hidden;
   }
   a {
     margin: 0;
@@ -179,6 +160,42 @@ export default {
     background-color: #9bd0f5;
     color: #fff;
     border-radius: 18px 18px 0 0;
+  }
+  .footer-coupon{
+    width: 87px;
+    height: 87px;
+    position: absolute;
+    bottom: 200px;
+    right: 15px;
+    background: #4570B6;
+    z-index: 9990;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    div{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 37px;
+        height: 37px;
+      }
+      span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color:#fff;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
   }
 }
 </style>

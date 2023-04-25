@@ -304,6 +304,36 @@
           </button>
         </a>
       </div>
+      <div class="contact">
+        <a :href="localePath('/consumption-voucher')">
+          <button class="link_more shadow-lg">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="flex">
+              <img src="@/asset/image/common/Layer_1.png" alt="">
+              <div class="p-1 text-left">
+                <h3 class="text-xl font-normal">了解</h3>
+                <p class="text-base text-center">{{$t('home.headers.coupon') + $t('home.headers.preferential')}}</p>
+              </div>
+            </div>
+          </button>
+        </a>
+      </div>
+      <!-- <div class="contact-coupon">
+        <nuxt-link :to="'/charge-detail'">
+          <div class="couponBox">
+            <div class="couponBox-l">
+              <img src="@/asset/image/common/Layer_1.png" alt="">
+            </div>
+            <div class="couponBox-r">
+              <span>了解</span>
+              <span>消費券優惠</span>
+            </div>
+          </div>
+        </nuxt-link>
+      </div> -->
     </div>
 
     <!-- gsap   指针动画-->
@@ -1025,6 +1055,92 @@ $active_gradient: #4570b6;
   }
   .link_more {
     display: none;
+  }
+}
+</style>
+
+<style lang="scss" scoped>
+.contact:last-child{
+  top: calc(66% + 120px);
+  .link_more{
+    div {
+      text-align: center;
+      align-items: center;
+      img{
+        width: 44px;
+        height: 44px;
+      }
+    }
+  }
+}
+.contact-coupon{
+  width: 172px;
+  height: 64px;
+  position: fixed;
+  top: calc(66% + 120px);
+  right: 9%;
+  // background: #4570B6;
+  background: #6eb9db;
+  border-radius: 32px;
+  z-index: 999;
+  overflow: hidden;
+  .couponBox{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    // z-index: 1000;
+    position: relative;
+    &-l{
+        img{
+          width: 44px;
+          height: 44px;
+        }
+    }
+    &-r{
+      color: #fff;
+      span{
+        display: block;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+  }
+  .couponBox:hover {
+    animation: ani_coupon 8s linear infinite;
+    border: none;
+  }
+  @keyframes ani_coupon {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  .couponBox::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .couponBox::before {
+    content: "";
+    background: #4570b6;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  .couponBox:hover::before {
+    color: #4570b6;
+    transform: translate3d(100%, 0, 0);
   }
 }
 </style>

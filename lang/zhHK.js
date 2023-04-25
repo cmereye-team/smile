@@ -38,6 +38,9 @@ module.exports = {
             reservationServiceChild_1: '矯視前檢查',
             reservationServiceChild_2: '講座',
 
+            coupon: '消費券',
+            preferential: '優惠',
+
             togLang: '選擇語言'
         },
         cmerInfo: [
