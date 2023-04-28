@@ -53,10 +53,10 @@ export default {
         {
           link: '/vision-correction/relex-smile',
           className: 'banner_1',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/f2112504122c3a75.jpg',
-          pc_hkImg: 'https://static.cmereye.com/imgs/2023/04/47b5b8d44b95666e.jpg',
-          mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/4b25734d8dbba59a.jpg',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/04/4b25734d8dbba59a.jpg'
+          pc_cnImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682649064388452.jpg',
+          pc_hkImg: 'https://yk.smilecmer.com/static/upload/image/20230428/1682649259269361.jpg',
+          mb_cnImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682648975806679.jpg',
+          mb_hkImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682648839900139.jpg'
         },
         {
           link: '/vision-correction-presbyopia',
