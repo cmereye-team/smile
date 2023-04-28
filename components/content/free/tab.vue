@@ -45,7 +45,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至5.6.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_1')}} 即日至5.6.2023</td>
             </tr>
             <tr>
               <td>
@@ -299,7 +299,7 @@
       </div>
       <!-- LASIK 激光矯視 -->
       <div class="md:mt-10" id="LASIK">
-        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3_1')}}</h2>
+        <h2 class="LASIK-h2" style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3_1')}}</h2>
       </div>
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -582,7 +582,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至5.6.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_1')}} 即日至5.6.2023</td>
             </tr>
             <tr>
               <td>
@@ -1594,6 +1594,16 @@ i {
   }
   .tab-control .tab-control-item:nth-child(4)::after {
     height: 0;
+  }
+  .LASIK-h2{
+    &::before{
+      width: 5vw;
+      left: -5vw;
+    }
+    &::after{
+      width: 5vw;
+      right: -5vw;
+    }
   }
 }
 </style>
