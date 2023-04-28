@@ -299,7 +299,7 @@
       </div>
       <!-- LASIK 激光矯視 -->
       <div class="md:mt-10" id="LASIK">
-        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3')}}</h2>
+        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3_1')}}</h2>
       </div>
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
