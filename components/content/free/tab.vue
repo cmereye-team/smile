@@ -235,7 +235,7 @@
                 <span>$50,000</span>
               </td>
               <td>
-                <span>$42,000</span>
+                <span>$95,000*</span>
               </td>
             </tr>
             <tr>
@@ -243,7 +243,7 @@
             </tr>
             <tr>
               <td>
-                <span>$95,000*</span>
+                <span>$42,000</span>
               </td>
               <td>
                 <span>$72,000*</span>
