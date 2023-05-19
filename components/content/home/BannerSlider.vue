@@ -16,6 +16,25 @@
           <nuxt-link v-for="(banner,index) in bannerLists" :key="index" class="swiper-slide" :to="localePath(banner.link)">
             <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
           </nuxt-link>
+          <!-- <div class="anim">
+            <div class="a"></div>
+            <div class="b">
+              <div class="b1">SMILE PRO</div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="c">
+              <div>可能是現實最快完成矯視的方法</div>
+              <div>仲有限時優惠，立即瞭解更多</div>
+            </div>
+            <div class="d">
+              <div class="d1"></div>
+              <div class="d2"></div>
+              <div class="d3"></div>
+            </div>
+            <div class="e"></div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -32,7 +51,7 @@
           <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
             <img src="https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg" alt="">
           </nuxt-link> -->
-          <nuxt-link v-for="(banner,index) in bannerLists" :key="index" class="swiper-slide" :to="localePath(banner.link)">
+          <nuxt-link v-for="(banner,index) in bannerLists.filter(item=>item.mb_cnImg !== '')" :key="index" class="swiper-slide" :to="localePath(banner.link)">
             <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
           </nuxt-link>
         </div>
@@ -50,6 +69,14 @@ export default {
         autoplay: true
       },
       bannerLists: [
+        {
+          link: '',
+          className: 'banner_4',
+          pc_cnImg: 'https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg',
+          pc_hkImg: 'https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
+          mb_cnImg: '',
+          mb_hkImg: ''
+        },
         {
           link: '/vision-correction/relex-smile',
           className: 'banner_1',
@@ -77,6 +104,15 @@ export default {
       ]
     }
   },
+  filters:{
+    a(_lists){
+      let newLists = []
+      if(_lists.length){
+        newLists = _lists.filter(item=>item.mb_cnImg === '')
+      }
+      return newLists
+    }
+  },
   created() {},
   methods: {
   },
@@ -86,6 +122,146 @@ export default {
 .banner{
   width: 100vw;
   overflow: hidden;
+}
+.anim{
+  width: 100%;
+  height: 1000px;
+  background: rgb(66, 66, 66);
+  .a{
+    width: 100px;
+    height: 50px;
+    background: rgb(255, 199, 199);
+    margin: 30px auto;
+  }
+  .b{
+    width: 100%;
+    .b1{
+      font-size: 70px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      transform: skewX(-30deg);
+    }
+  }
+  .c{
+    width: 550px;
+    height: 80px;
+    margin: 0 auto;
+    &>div{
+      width: 100%;
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600;
+      overflow: hidden;
+      animation: c_anima 3s linear 3s infinite;
+      white-space: nowrap;
+    }
+  }
+  .d{
+    width: 200px;
+    height: 400px;
+    margin: 20px auto;
+    background: rgb(194, 194, 194);
+    animation: d_anima 6s linear infinite;
+    position: relative;
+    .d1{
+      width: 100px;
+      height: 60px;
+      background: rgb(255, 214, 214);
+      position: absolute;
+      right: -50px;
+      top: 30px;
+      transform: rotate(20deg);
+      animation: d1_anima 6s linear 0.6s infinite;
+      opacity: 0;
+    }
+    .d1{
+      width: 100px;
+      height: 60px;
+      background: rgb(255, 214, 214);
+      position: absolute;
+      right: -50px;
+      top: 30px;
+      transform: rotate(20deg);
+      // animation: d1_anima 6s linear 0.6s infinite;
+      // opacity: 0;
+    }
+    .d1{
+      width: 100px;
+      height: 60px;
+      background: rgb(255, 214, 214);
+      position: absolute;
+      right: -50px;
+      top: 30px;
+      transform: rotate(20deg);
+      // animation: d1_anima 6s linear 0.6s infinite;
+      // opacity: 0;
+    }
+  }
+  @keyframes c_anima {
+    0%{
+      width: 0;
+      overflow: hidden;
+    }
+    100%{
+      width: 100%;
+      display: none;
+    }
+  }
+  @keyframes d1_anima {
+    0%{
+      right: -50px;
+      top: 30px;
+      opacity: 1;
+    }
+    20%{
+      right: -50px;
+      top: 30px;
+      opacity: 1;
+    }
+    40%{
+      right: -40px;
+      top: 35px;
+      opacity: 1;
+    }
+    60%{
+      right: -30px;
+      top: 30px;
+      opacity: 1;
+    }
+    70%{
+      right: -40px;
+      top: 35px;
+      opacity: 1;
+    }
+    100%{
+      right: -50px;
+      top: 30px;
+      opacity: 1;
+    }
+  }
+  @keyframes d_anima {
+    0%{
+      transform: translateX(500px);
+      opacity: 0;
+    }
+    2.5%{
+      transform: translateX(250px);
+      opacity: 1;
+    }
+    5%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    50%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
 }
 .swiper-wrapper{
   img{
