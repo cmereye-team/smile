@@ -13,9 +13,15 @@
           <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
             <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
           </nuxt-link> -->
-          <nuxt-link v-for="(banner,index) in bannerLists" :key="index" class="swiper-slide" :to="localePath(banner.link)">
-            <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
-          </nuxt-link>
+          <section v-for="(banner,index) in bannerLists" :key="index" class="swiper-slide">
+            <nuxt-link v-if="banner.isRouterPath" :to="localePath(banner.link)">
+              <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
+            </nuxt-link>
+            <a v-else :href="banner.link">
+              <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
+            </a>
+          </section>
+          
           <!-- <div class="anim">
             <div class="a"></div>
             <div class="b">
@@ -75,7 +81,8 @@ export default {
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
           mb_cnImg: '',
-          mb_hkImg: ''
+          mb_hkImg: '',
+          isRouterPath: false
         },
         {
           link: '/vision-correction/relex-smile',
@@ -83,7 +90,8 @@ export default {
           pc_cnImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682649064388452.jpg',
           pc_hkImg: 'https://yk.smilecmer.com/static/upload/image/20230428/1682649259269361.jpg',
           mb_cnImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682648975806679.jpg',
-          mb_hkImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682648839900139.jpg'
+          mb_hkImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682648839900139.jpg',
+          isRouterPath: true
         },
         {
           link: '/vision-correction-presbyopia',
@@ -91,7 +99,8 @@ export default {
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/7a2b26fa29e337a3.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/a7280ee58048f45f.jpg',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg'
+          mb_hkImg: 'https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg',
+          isRouterPath: true
         },
         {
           link: '/consumption-voucher',
@@ -99,7 +108,8 @@ export default {
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/d87721cc7012fdd9.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/eef9ad4d737ba85d.jpg',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/04/17a68f3a305077b9.jpg'
+          mb_hkImg: 'https://static.cmereye.com/imgs/2023/04/17a68f3a305077b9.jpg',
+          isRouterPath: true
         }
       ]
     }
