@@ -70,7 +70,7 @@ export default {
       },
       bannerLists: [
         {
-          link: '',
+          link: 'https://api.whatsapp.com/send/?phone=85260610511',
           className: 'banner_4',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
