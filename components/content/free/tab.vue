@@ -161,7 +161,7 @@
                 <span>$42,000*</span>
               </td>
               <td>
-                <span>$64,800</span>
+                <span>$64,000</span>
               </td>
               <td>
                 <span>$68,000</span>
@@ -207,7 +207,7 @@
                 <span>$38,000*</span>
               </td>
               <td>
-                <span>$64,800</span>
+                <span>$64,000</span>
               </td>
             </tr>
             <tr>

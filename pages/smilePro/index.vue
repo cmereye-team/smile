@@ -92,17 +92,140 @@
           <h2>名人用家個案</h2>
         </div>
         <div class="smilePro-cases-in">
-            <div class="smilePro-cases-in-box">
-                <img src="https://static.cmereye.com/imgs/2023/05/444e690917f7719d.jpg" />
-                <div>微笑矯視 - Shirley 陳欣妍</div>
+            <a href="https://youtu.be/oHDOFYMEUsk">
+                <div class="smilePro-cases-in-box">
+                    <img src="https://static.cmereye.com/imgs/2023/05/444e690917f7719d.jpg" />
+                    <div>微笑矯視 - Shirley 陳欣妍</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=5ihrzFvOy38">
+                <div class="smilePro-cases-in-box">
+                    <img src="https://static.cmereye.com/imgs/2023/05/9e8f394a8a4cd8cf.jpg" />
+                    <div>植入式隱形眼鏡 - Serene 林宣妤</div>
+                </div>
+            </a>
+            <a href="https://youtu.be/AJz2E7jEYqY">
+                <div class="smilePro-cases-in-box">
+                    <img src="https://static.cmereye.com/imgs/2023/05/4d46826756514953.jpg" />
+                    <div>微笑矯視 - Dominic 何浩文</div>
+                </div>
+            </a>
+        </div>
+        <div class="smilePro-cases-btn">
+            <nuxt-link to="/">
+                <div class="smileProBtn">
+                    瞭解更多
+                </div>
+            </nuxt-link>
+        </div>
+    </div>
+
+    <div class="smilePro-prove page_container">
+        <div class="smilePro-prove-title flex justify-center md:mt-28 mt-10">
+          <h2>用家見證</h2>
+        </div>
+        <div class="smilePro-prove-in pcShow">
+            <div
+              class="swiper smileProSwiper"
+              v-swiper:smileProSwiper="smileProSwiperOption"
+              ref="smileProSwiper"
+            >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide smileProSwiper-in">
+                        <div class="smileProSwiper-in-name">Macy, 文員</div>
+                        <div class="smileProSwiper-in-context">
+                            <span>第一次做眼部手術，</span>
+                            <span>本身好緊張，但醫生同職員都</span>
+                            <span>
+                                <span class="focus">好細心</span>
+                                <span>講解同鼓勵我，</span>
+                            </span>
+                            <span>令我好安心</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide smileProSwiper-in">
+                        <div class="smileProSwiper-in-name">Agnes, 行政人員</div>
+                        <div class="smileProSwiper-in-context">
+                            <span>一直擔心做完需要好耐先回復</span>
+                            <span>正常生活，原來做完</span>
+                            <span><span class="focus">第 2 日已經睇得清</span>,</span>
+                            <span>如常生活架喇!</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide smileProSwiper-in">
+                        <div class="smileProSwiper-in-name">Vivien, 家庭主婦</div>
+                        <div class="smileProSwiper-in-context">
+                            <span>我係好怕痛既人黎，</span>
+                            <span>
+                                <span>但真係</span>
+                                <span class="focus">完全無痛!</span>
+                            </span>
+                            <span>會推薦比朋友!</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide smileProSwiper-in">
+                        <div class="smileProSwiper-in-name">阿聲, 咖啡師</div>
+                        <div class="smileProSwiper-in-context">
+                            <span>做完<span class="focus"> SMILE PRO </span></span>
+                            <span class="smallLineHeight">好似重新感受世界咁! 只係</span>
+                            <span class="smallLineHeight"><span class="smallFocus">短短 10 秒</span>就有咁大改</span>
+                            <span class="smallLineHeight">變, 好後悔自己 無早 d 做!</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="smilePro-cases-in-box">
-                <img src="https://static.cmereye.com/imgs/2023/05/9e8f394a8a4cd8cf.jpg" />
-                <div>植入式隱形眼鏡 - Serene 林宣妤</div>
+            <div class="smileProSwiper-prev"></div>
+            <div class="smileProSwiper-next"></div>
+        </div>
+        <div class="smilePro-prove-in mbShow">
+            <div class="smilePro-prove-in-box">
+                <div class="smileProSwiper-in">
+                    <div class="smileProSwiper-in-name">Macy, 文員</div>
+                    <div class="smileProSwiper-in-context">
+                        <span>第一次做眼部手術，</span>
+                        <span>本身好緊張，但醫生同職員都</span>
+                        <span>
+                            <span class="focus">好細心</span>
+                            <span>講解同鼓勵我，</span>
+                        </span>
+                        <span>令我好安心</span>
+                    </div>
+                </div>
             </div>
-            <div class="smilePro-cases-in-box">
-                <img src="https://static.cmereye.com/imgs/2023/05/4d46826756514953.jpg" />
-                <div>微笑矯視 - Dominic 何浩文</div>
+            <div class="smilePro-prove-in-box">
+                <div class="smileProSwiper-in">
+                    <div class="smileProSwiper-in-name">Agnes, 行政人員</div>
+                    <div class="smileProSwiper-in-context">
+                        <span>一直擔心做完需要好耐先回復</span>
+                        <span>正常生活，原來做完</span>
+                        <span><span class="focus">第 2 日已經睇得清</span>,</span>
+                        <span>如常生活架喇!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="smilePro-prove-in-box">
+                <div class="smileProSwiper-in">
+                    <div class="smileProSwiper-in-name">Vivien, 家庭主婦</div>
+                    <div class="smileProSwiper-in-context">
+                        <span>我係好怕痛既人黎，</span>
+                        <span>
+                            <span>但真係</span>
+                            <span class="focus">完全無痛!</span>
+                        </span>
+                        <span>會推薦比朋友!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="smilePro-prove-in-box">
+                <div class="smileProSwiper-in">
+                    <div class="smileProSwiper-in-name">阿聲, 咖啡師</div>
+                    <div class="smileProSwiper-in-context">
+                        <span>做完<span class="focus"> SMILE PRO </span></span>
+                        <span class="smallLineHeight">好似重新感受世界咁! 只係</span>
+                        <span class="smallLineHeight"><span class="smallFocus">短短 10 秒</span>就有咁大改</span>
+                        <span class="smallLineHeight">變, 好後悔自己 無早 d 做!</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -124,21 +247,39 @@ export default {
   components: { Header, Navbar, Footer, MainBanner, footers },
   head() {
     return {
-      title: "smilePro - 香港希瑪微笑矯視中心",
+      title: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "smilePro - 香港希瑪微笑矯視中心",
+          content: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "smilePro - 香港希瑪微笑矯視中心",
+          content: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
         },
       ],
     };
   },
+  data(){
+    return{
+        smileProSwiperOption: {
+          loop: true,
+          autoplay: true,
+          loopedSlides: 4, // looped slides should be the same
+        //   spaceBetween: 0,
+          navigation: {
+            nextEl: ".smileProSwiper-next",
+            prevEl: ".smileProSwiper-prev",
+          },
+        //   centeredSlides: true,
+          slidesPerView: "auto",
+        //   touchRatio: 0.2,
+        //   slideToClickedSlide: true,
+        },
+      }
+  }
 };
 </script>
 
@@ -236,7 +377,7 @@ export default {
     }
 }
 .smilePro-features{
-    background: url(https://static.cmereye.com/imgs/2023/05/006918ac3ee0a0bd.jpg);
+    background: url(https://static.cmereye.com/imgs/2023/05/006918ac3ee0a0bd.jpg)no-repeat;
     background-size: 100% 100%;
     height: 600px;
     margin-top: 71px;
@@ -342,8 +483,10 @@ export default {
     &-in{
         margin-top: 53px;
         display: flex;
-        &-box{
+        a{
             flex: 1;
+        }
+        &-box{
             font-family: var(--font_family);
             font-style: normal;
             font-weight: 300;
@@ -352,8 +495,292 @@ export default {
             text-align: center;
             letter-spacing: 0.1em;
             color: #6D6E71;
+            cursor: pointer;
             &>div{
                 margin-top: 17.83px;
+            }
+        }
+    }
+    &-btn{
+        margin-top: 88px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.smilePro-prove{
+    margin-top: 98px;
+    margin-bottom: 136px;
+    &-title{
+        h2{
+            font-family: var(--font_family);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.1em;
+            color: #4570B6;
+        }
+    }
+    &-in{
+        margin-top: 40px;
+        position: relative;
+        .smileProSwiper{
+            padding: 0 50px;
+        }
+        .smileProSwiper-in{
+            width: 272.67px;
+            height: 272.67px;
+            border: 1px solid;
+            border-image: linear-gradient(-45deg, #81DBEC, #4C7CBD) 1;
+            margin-left: 25px;
+            position: relative;
+            &-name{
+                position: absolute;
+                font-family: 'Inter' !important;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                height: 33px;
+                line-height: 33px;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+                transform: translateX(-50%);
+                left: 0;
+                top: 26px;
+                background: linear-gradient(91.62deg, #5992C8 6.27%, #81DBEC 99.02%);
+                padding: 0 10px;
+            }
+            &-context{
+                margin-top: 94px;
+                &>span{
+                    display: block;
+                }
+                span{
+                    font-family: 'Inter' !important;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 38px;
+                    text-align: center;
+                    color: #6D6E71;
+                    letter-spacing: 0.06em;
+                    &.focus{
+                        font-weight: 700;
+                        font-size: 30px;
+                        color: #4570B6;
+                    }
+                    &.smallFocus{
+                        color: #4570B6;
+                    }
+                    &.smallLineHeight{
+                        line-height: 25px;
+                    }
+                }
+            }
+            &::before{
+                content: '';
+                background: url(https://static.cmereye.com/imgs/2023/05/9df0253b408ec7a0.png);
+                position: absolute;
+                left: 12px;
+                top: 69px;
+                width: 46px;
+                height: 29px;
+            }
+            &::after{
+                content: '';
+                background: url(https://static.cmereye.com/imgs/2023/05/ba3b731c77500bc4.png);
+                right: 12px;
+                bottom: 18px;
+                position: absolute;
+                width: 46px;
+                height: 29px;
+            }
+            &:nth-of-type(odd){
+                margin-top: 80px;
+                .smileProSwiper-in-name{
+                    top: auto;
+                    bottom: 24px;
+                }
+                .smileProSwiper-in-context{
+                    margin-top: 78px;
+                }
+                &::before{
+                    top: 47px;
+                }
+                &::after{
+                    bottom: 47px;
+                }
+            }
+        }
+        .smileProSwiper-next {
+          background-image: url("https://static.cmereye.com/imgs/2023/03/bcc35245d4a0fe42.png");
+          background-size: 100% 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -80px;
+          width: 17px;
+          height: 30px;
+        }
+        .smileProSwiper-prev {
+          background-image: url("https://static.cmereye.com/imgs/2023/03/c1cc233620b64f31.png");
+          background-size: 100% 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -80px;
+          width: 17px;
+          height: 30px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .smilePro-desc{
+        &-title{
+            h2{
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        &-in{
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &-box{
+                width: 48%;
+                &>div{
+                    margin-top: 22px;
+                    padding-bottom: 23px;
+                    span{
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .smilePro-descVideo{
+        margin-top: 10px;
+        &-title{
+            span{
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        &-in{
+            margin-top: 35px;
+            height: 125px;
+        }
+    }
+    .smilePro-contrast{
+
+    }
+    .smilePro-features{
+        margin: 50px 30px;
+        background-size: auto 240px;
+        padding: 0 !important;
+        background-position: left bottom;
+        height: 370px;
+        &-box{
+            width: 100%;
+            margin-right: 0;
+        }
+        &-title{
+            width: 188px;
+            height: 36.68px;
+            font-size: 16px;
+            margin-top: 0;
+        }
+        &-context{
+            margin-top: 20px;
+            span{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        &-lists{
+            margin-top: 32px;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            &-in{
+                width: 110px;
+                margin-top: 26px;
+                span{
+                    &:first-child{
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                    &:last-child{
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .smilePro-cases{
+        margin-top: 50px;
+        &-title{
+            h2{
+                font-size: 18px;
+            }
+        }
+        &-in{
+            margin-top: 10px;
+            flex-direction: column;
+            a{
+                width: 100%;
+            }
+            &-box{
+                margin-bottom: 28px;
+                &>div{
+                    margin-top: 14.53px;
+                }
+            }
+        }
+    }
+    .smilePro-prove{
+        margin-top: 44px;
+        &-title{
+            h2{
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        &-in{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            .smileProSwiper-in{
+                width: 200px;
+                height: 200px;
+                margin-bottom: 50px;
+                &:nth-of-type(odd){
+                    margin-top: 0;
+                    .smileProSwiper-in-name{
+                        // top: auto;
+                        // bottom: 24px;
+                    }
+                    .smileProSwiper-in-context{
+                        // margin-top: 78px;
+                    }
+                    &::before{
+                        // top: 47px;
+                    }
+                    &::after{
+                        // bottom: 47px;
+                    }
+                }
+            }
+            &-box{
+                .smileProSwiper-in{
+                    margin-top: 0;
+                }
+                &-box:nth-of-type(odd){
+                     
+                }
             }
         }
     }
