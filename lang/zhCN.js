@@ -384,6 +384,7 @@ module.exports = {
         p2: '双眼',
         td1: '优惠',
         td1_1: 'Smile 矫视迎接微笑季节优惠',
+        td1_2: 'CMER SMILE PRO限定优惠',
         td2: '术前检查费用',
         span1: '*指定信用卡（东亚/渣打/汇丰）可享6/12个月免息分期',
         span2: '^完成矫视后可退回术前检查费用',
@@ -401,18 +402,20 @@ module.exports = {
         span12: '单焦点人工晶体',
         span13: '多焦点人工晶体',
         span14: '术后5次复诊',
+        span15: 'Premium套餐价格',
 
         p3: '带散光',
         p4: '不带散光',
         p5: '散光',
 
-        title1:'Smile 微笑矫视',
+        title1:'SMILE 微笑矫视',
         title2:'ICL植入式隐形眼镜',
         title3_1:'LASIK 激光矫视/TPRK经上皮激光角膜切削手术',
         title3:'LASIK 激光矫视',
         title4:'Clear-Vision',
         title5:'收费详情',
-        title6:'消费券详情'
+        title6:'消费券详情',
+        title7:'SMILE Pro微笑激光矫视'
     },
     consumptionVoucher: {
         h2: '消费券详情',
@@ -1385,6 +1388,274 @@ module.exports = {
             h3_2: '我需要接受SMILE XTRA角膜胶原交联术?',
             p3: `如果你的眼晴度数较深、角膜比较薄，希望加強角膜以减低度数反弹机会，<br />经医生评估后均可接受SMILE
             XTRA角膜胶原交联术。`
+          }
+        },
+        smilePro: {
+          smileProDesc: {
+            title: '以下描述符合你吗?',
+            desc: [
+              {
+                span1: '生活受近视或/',
+                span2: '及散光困扰',
+              },
+              {
+                span1: '担心矫视过程，',
+                span2: '眼睛无法对焦太久',
+              },
+              {
+                span1: '追求更佳手术体验感',
+              },
+              {
+                span1: '暗室瞳孔直径偏大',
+              }
+            ]
+          },
+          smileProDescVideo: {
+            title: '如你符合以上描述，你应考虑选择',
+          },
+          smileProContrast: {
+            title: '一图看清SMILE, ',
+            smileProBtn: '预约咨询',
+            tableData: {
+              thead: ['矫视技术','Smile','Smile Pro','ICL'],
+              tbody: [
+                [
+                    {
+                        text: '技术'
+                    },
+                    {
+                        text: '激光; 微创'
+                    },
+                    {
+                        text: '晶体植入; 无须切削角膜'
+                    },
+                ],
+                [
+                    {
+                        text: '术中定位',
+                    },
+                    {
+                        text: '手动调整'
+                    },
+                    {
+                        text: '自动调整'
+                    },
+                    {
+                        text: '不适用',
+                    },
+                ],
+                [
+                    {
+                        text: '使用的设备',
+                    },
+                    {
+                        text: 'Carl Zeiss Visumax 全飞秒激光3.0系统'
+                    },
+                    {
+                        text: 'ZEISS VISUMAX 800 SMILE®pro'
+                    },
+                    {
+                        text: 'EVO Visian ICL(可植入式隐形屈光晶体)',
+                    },
+                ],
+                [
+                    {
+                        text: '切口大小',
+                    },
+                    {
+                        text: '2-4mm'
+                    },
+                    {
+                        text: '~3mm',
+                    },
+                ],
+                [
+                    {
+                        text: '激光時間',
+                    },
+                    {
+                        text: '23秒'
+                    },
+                    {
+                        text: '10秒'
+                    },
+                    {
+                        text: '不适用',
+                    },
+                ],
+                [
+                    {
+                        text: '康复时间/速度',
+                    },
+                    {
+                        text: '1日'
+                    }
+                ],
+                [
+                    {
+                        text: '可改善度数范围',
+                    },
+                    {
+                        text: '1,000度以下近视,500度以下散光'
+                    },
+                    {
+                        text: '1800度近视1000度远视、600度散光以内',
+                    },
+                ],
+                [
+                    {
+                        text: '适合的群众',
+                    },
+                    {
+                        text: '近视或散光人士'
+                    },
+                    {
+                        text: '高度近视、远视或/及散光人士',
+                    },
+                ],
+                [
+                    {
+                        text: '近视度数稳定'
+                    },
+                    {
+                        text: '因角膜厚度偏薄/或异常而不适合接受激光矫视人士',
+                    },
+                ],
+                [
+                    {
+                        text: '角膜厚度正常'
+                    },
+                    {
+                        text: '/',
+                    },
+                ],
+                [
+                    {
+                        text: '沒有患上眼疾'
+                    },
+                    {
+                        text: '/',
+                    },
+                ],
+                [
+                    {
+                        text: '没有患上自体免疫疾病'
+                    },
+                    {
+                        text: '/',
+                    },
+                ],
+                [
+                    {
+                        text: '热爱运动/注重仪表人士'
+                    },
+                ],
+                [
+                    {
+                        text: '希望减低对眼镜或隐形眼镜依赖的人士'
+                    },
+                ],
+                [
+                    {
+                        text: '因佩戴隐形眼镜导致干眼症人士'
+                    },
+                ],
+                [
+                    {
+                        colspan: '1',
+                        text: '/'
+                    },
+                    {
+                        text: '对微笑矫视手术惧怕人士',
+                    },
+                    {
+                        text: '/',
+                    },
+                ],
+                [
+                    {
+                        colspan: '1',
+                        text: '/'
+                    },
+                    {
+                        text: '着重过程体验感人士',
+                    },
+                    {
+                        text: '/',
+                    },
+                ],
+                [
+                    {
+                        text: '/',
+                    },
+                    {
+                        text: '担心眼睛无法对焦太久人士',
+                    },
+                    {
+                        text: '/',
+                    },
+                ]
+              ]
+            }
+          },
+          smileProFeatures:{
+            title: 'SMILE PRO三大特点',
+            context: '以德国蔡司光学与诺贝尔奖激光技术进行矫视',
+            lists: [
+              {
+                span1: '极小光点',
+                span2: '4-2mm微创切口'
+              },{
+                span1: '极低能量',
+                span2: '复原时间相对快'
+              },{
+                span1: '极速脉冲',
+                span2: '过程短而精准'
+              }
+            ]
+          },
+          smileProCases: {
+            title: '名人用家个案',
+            div1: '微笑矫视 - Shirley 陈欣妍',
+            div2: '植入式隐形眼镜 - Serene 林宣妤',
+            div3: '微笑矫视 - Dominic 何浩文',
+            smileProBtn: '了解更多'
+          },
+          smileProProve: {
+            title: '用家见证',
+            lists: [
+              {
+                name: 'Macy, 文员',
+                span1: '第一次做眼部手术，',
+                span2: '本身好紧张，但医生同职员都',
+                span3: '好细心',
+                span4: '讲解同鼓励我，',
+                span5: '令我好安心',
+              },
+              {
+                name: 'Agnes, 行政人員',
+                span1: '一直担心做完需要好耐先回复',
+                span2: '正常生活，原來做完',
+                span3: '第 2 日已经看得清',
+                span4: '如常生活架喇!',
+              },
+              {
+                name: 'Vivien, 家庭主妇',
+                span1: '我是好怕痛的人黎，',
+                span2: '但真是',
+                span3: '完全无痛!',
+                span4: '会推荐给朋友!',
+              },
+              {
+                name: '阿声， 咖啡师',
+                span1: '做完',
+                span2: ' SMILE PRO ',
+                span3: '好似重新感受世界咁! 只是',
+                span4: '短短 10 秒',
+                span5: '就有咁大改',
+                span6: '变, 好后悔自己没早点做!',
+              }
+            ]
           }
         }
     }

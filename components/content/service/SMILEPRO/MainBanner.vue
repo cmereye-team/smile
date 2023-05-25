@@ -1,6 +1,6 @@
 <template>
-  <div class="main_banner">
-    <banner class="banner">
+  <div class="main_banner" @click="toWhatApp">
+    <banner :class="['banner',`${$i18n.locale}BgImg`]">
       <template v-slot:title>
         <div class="pcShow">
           <!-- <p style="font-size: 28px">CMER CLEAR-Vision</p> -->
@@ -30,13 +30,18 @@ export default {
     return {};
   },
   created() {},
-  methods: {},
+  methods: {
+    toWhatApp(){
+      window.location.href= 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解(W-02) Smile Pro矯視'
+    }
+  },
 };
 </script>
 <style lang="scss" scoped>
 @media screen and (max-width: 768px) {
   .banner_serve {
     margin-bottom: 49px;
+    cursor: pointer;
     p {
       font-family: var(--font_family);
       font-style: normal;
@@ -78,19 +83,30 @@ export default {
     }
   }
   .banner {
-    background-image: url("https://wap.smilecmer.com/static/upload/image/20230428/1682648839900139.jpg");
-    background-size: 100%;
+    // background-size: 100%;
     width: 100vw;
     margin: 0 auto;
+    height: 100vw;
     margin-bottom: 10vw;
+    &.hkBgImg{
+      background-image: url("https://static.cmereye.com/imgs/2023/05/479724d0765e3081.jpg");
+    }
+    &.cnBgImg{
+      background-image: url("https://static.cmereye.com/imgs/2023/05/cdc2573b0440d1fa.jpg");
+    }
   }
   
 }
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg");
     // background-position-x: right !important;
+    &.hkBgImg{
+      background-image: url("https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg");
+    }
+    &.cnBgImg{
+      background-image: url("https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg");
+    }
   }
   p{
     font-size: 28px;

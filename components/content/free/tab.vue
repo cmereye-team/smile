@@ -111,6 +111,57 @@
         <span>{{ $t("home.navbar") }}</span>
       </div>
 
+      <div class="md:mt-10" id="smilePro">
+        <h2 class="LASIK-h2" style="margin-bottom: 0 !important;">{{$t('chargeDetail.title7')}}</h2>
+      </div>
+      <!-- smilePro -->
+      <div class="pb-20 table-1-box">
+        <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
+          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <thead>
+            <tr>
+              <th>
+                <p>{{$t('chargeDetail.p1')}}</p>
+              </th>
+              <th>
+                <p>{{$t('chargeDetail.p2')}}</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span>$18,000</span>
+              </td>
+              <td>
+                <span>$29,800</span>
+                <span class="block" style="font-size: 16px;">{{$t('chargeDetail.span15')}}</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_2')}} 即日至30.6.2023</td>
+            </tr>
+            <tr>
+              <td>
+                <span>$16,500</span>
+              </td>
+              <td>
+                <span>$27,800</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
+            </tr>
+          </tbody>
+        </table>
+        <span>{{$t('chargeDetail.span1')}}</span>
+        <br />
+        <span>^{{$t('chargeDetail.span2')}}</span>
+      </div>
+      <div class="pcShow tabBtn" @click="toWhatsapp">
+        <span>{{ $t("home.navbar") }}</span>
+      </div>
+      
       <div class="md:mt-10" id="ICL">
         <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title2')}}</h2>
       </div>
@@ -557,7 +608,8 @@
       </div>
     </div>
     <div v-else-if="currentTitleIndex === 1" class="flex flex-col items-center"></div>
-    <div v-else-if="currentTitleIndex === 2" class="flex flex-col items-center">
+    <div v-else-if="currentTitleIndex === 2" class="flex flex-col items-center"></div>
+    <div v-else-if="currentTitleIndex === 3" class="flex flex-col items-center">
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>{{$t('chargeDetail.captionTitle')}}</caption>
@@ -816,6 +868,7 @@ export default {
       currentTitleIndex: 0,
       title: [
         this.$t("chargeDetail.title1"),
+        this.$t("chargeDetail.title7"),
         this.$t("chargeDetail.title2"),
         this.$t("chargeDetail.title3"),
         "Clear-Vision"
@@ -840,8 +893,10 @@ export default {
       if (index === 0) {
         window.location.href = "/charge-detail#smile";
       } else if (index === 1) {
-        window.location.href = "/charge-detail#ICL";
+        window.location.href = "/charge-detail#smilePro";
       } else if (index === 2) {
+        window.location.href = "/charge-detail#ICL";
+      } else if (index === 3) {
         window.location.href = "/charge-detail#LASIK";
       } else {
         window.location.href = "/charge-detail#Clear-Vision";
@@ -1348,7 +1403,7 @@ i {
     padding: 40px 0;
     cursor: pointer;
     .tab-control-item {
-      padding: 0 30px;
+      padding: 0 0 0 30px;
       span {
         font-family: var(--font_family);
         font-style: normal;
@@ -1384,7 +1439,7 @@ i {
   .section_text {
     margin: 1vw 0;
   }
-  .tab-control .tab-control-item:nth-child(4)::after {
+  .tab-control .tab-control-item:last-child::after {
     height: 0;
   }
 }
@@ -1569,11 +1624,12 @@ i {
       hr {
         width: 172px;
         border-color: #000;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        // margin-top: 10px;
+        // margin-bottom: 10px;
+        margin: 10px auto;
       }
     }
-    .tab-control-item:nth-child(4) hr {
+    .tab-control-item:last-child hr {
       display: none;
     }
     .tab-control-item {
