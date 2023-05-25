@@ -65,6 +65,15 @@
                       }}</nuxt-link
                     >
                   </el-menu-item>
+                  <!-- <el-menu-item index="2-1">
+                    <nuxt-link
+                      :to="localePath('/smilePro')"
+                    >
+                      {{
+                        $t("home.headers.orthopedicServicesChild_5")
+                      }}</nuxt-link
+                    >
+                  </el-menu-item> -->
                   <el-menu-item index="2-2">
                     <nuxt-link :to="localePath('/vision-correction-presbyopia')"
                       >CMER CLEAR-Vision</nuxt-link
@@ -397,6 +406,10 @@ export default {
               child_item: this.$t("home.headers.orthopedicServicesChild_1"),
               link: "/vision-correction/relex-smile",
             },
+            // {
+            //   child_item: this.$t("home.headers.orthopedicServicesChild_5"),
+            //   link: "/smilePro",
+            // },
             {
               child_item: this.$t("home.headers.orthopedicServicesChild_2"),
               link: "/vision-correction-presbyopia",

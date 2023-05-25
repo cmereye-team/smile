@@ -86,7 +86,7 @@ export default {
     // background-size: 100%;
     width: 100vw;
     margin: 0 auto;
-    height: 100vw;
+    height: 100vw !important;
     margin-bottom: 10vw;
     &.hkBgImg{
       background-image: url("https://static.cmereye.com/imgs/2023/05/479724d0765e3081.jpg");

@@ -43,7 +43,7 @@
             <span>SMILE PRO!</span>
         </div>
         <div class="smilePro-descVideo-in">
-
+            <img src="https://static.cmereye.com/imgs/2023/05/822d9485daa1f2fa.jpg" /> 
         </div>
     </div>
 
@@ -182,7 +182,7 @@
                         <div class="smileProSwiper-in-name">{{$t('service.smilePro.smileProProve.lists[3].name')}}</div>
                         <div class="smileProSwiper-in-context">
                             <span>{{$t('service.smilePro.smileProProve.lists[3].span1')}}<span class="focus">{{$t('service.smilePro.smileProProve.lists[3].span2')}}</span></span>
-                            <span class="smallLineHeight">{{$t('service.smilePro.smileProProve.lists[3].span3')}}! 只係</span>
+                            <span class="smallLineHeight">{{$t('service.smilePro.smileProProve.lists[3].span3')}}</span>
                             <span class="smallLineHeight"><span class="smallFocus">{{$t('service.smilePro.smileProProve.lists[3].span4')}}</span>{{$t('service.smilePro.smileProProve.lists[3].span5')}}</span>
                             <span class="smallLineHeight">{{$t('service.smilePro.smileProProve.lists[3].span6')}}</span>
                         </div>
@@ -617,8 +617,11 @@ export default {
     &-in{
         margin-top: 88px;
         width: 100%;
-        height: 484px;
+        // height: 484px;
         background: rgb(255, 253, 243);
+        img{
+            width: 100%;
+        }
     }
 }
 .smilePro-contrast{
@@ -812,6 +815,7 @@ export default {
 }
 .smilePro-cases{
     padding: 0;
+    display: none;
     &-title{
         h2{
             font-family: var(--font_family);
@@ -1017,6 +1021,9 @@ export default {
         &-in{
             margin-top: 35px;
             height: 125px;
+            img{
+                width: 100%;
+            }
         }
     }
     .smilePro-contrast{

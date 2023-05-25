@@ -22,6 +22,7 @@ module.exports = {
             orthopedicServicesChild_2: 'CMER CLEAR-Vision',
             orthopedicServicesChild_3: 'LASIK 激光矯視',
             orthopedicServicesChild_4: 'ICL植入式隱形眼鏡',
+            orthopedicServicesChild_5: 'SMILE Pro微笑激光矯視',
 
             diagnosisInstructionsChild_1: '眼睛檢查及矯視前',
             diagnosisInstructionsChild_2: '矯視流程',
@@ -1516,7 +1517,7 @@ module.exports = {
                 ],
                 [
                     {
-                        text: '近視度數穩定'
+                        text: '角膜厚度正常'
                     },
                     {
                         text: '因角膜厚度偏薄/或異常而不適合接受激光矯視人士',
@@ -1524,7 +1525,7 @@ module.exports = {
                 ],
                 [
                     {
-                        text: '角膜厚度正常'
+                        text: '近視度數穩定'
                     },
                     {
                         text: '/',
