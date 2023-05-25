@@ -89,10 +89,10 @@ export default {
     height: 100vw !important;
     margin-bottom: 10vw;
     &.hkBgImg{
-      background-image: url("https://static.cmereye.com/imgs/2023/05/479724d0765e3081.jpg");
+      background-image: url("https://static.cmereye.com/imgs/2023/05/46220615c3718658.jpg");
     }
     &.cnBgImg{
-      background-image: url("https://static.cmereye.com/imgs/2023/05/cdc2573b0440d1fa.jpg");
+      background-image: url("https://static.cmereye.com/imgs/2023/05/9b71688220cc08a3.jpg");
     }
   }
   
