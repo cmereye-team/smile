@@ -199,8 +199,10 @@
             </div>
           </div>
         </div>
-        <span>{{$t('chargeDetail.span3')}}</span>
-        <span>{{$t('chargeDetail.span16')}}</span>
+        <div>
+          <p><span>{{$t('chargeDetail.span3')}}</span></p>
+          <p><span>{{$t('chargeDetail.span16')}}</span></p>
+        </div>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
