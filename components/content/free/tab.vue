@@ -158,6 +158,50 @@
         <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
       </div>
+      <div class="pb-20 taoc_boxs">
+        <div class="md:mt-20 mt-10 taoc_box">
+          <div class="titel">
+            <span>套餐包括</span>
+          </div>
+          <div class="icon-box">
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
+              <span>{{$t('chargeDetail.span4')}}</span>
+            </div>
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
+              <span>{{$t('chargeDetail.span5')}}</span>
+            </div>
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <span>
+                {{$t('chargeDetail.span14')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
+            </div>
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <span>
+                {{$t('chargeDetail.span7')}}
+                <i style="font-size: 14px;">#</i>
+              </span>
+            </div>
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <span>
+                {{$t('chargeDetail.span8')}}
+                <i style="font-size: 14px;">*</i>
+              </span>
+            </div>
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
+              <span>{{$t('chargeDetail.span9')}}</span>
+            </div>
+          </div>
+        </div>
+        <span>{{$t('chargeDetail.span3')}}</span>
+        <span>{{$t('chargeDetail.span16')}}</span>
+      </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
