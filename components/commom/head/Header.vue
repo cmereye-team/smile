@@ -406,10 +406,10 @@ export default {
               child_item: this.$t("home.headers.orthopedicServicesChild_1"),
               link: "/vision-correction/relex-smile",
             },
-            // {
-            //   child_item: this.$t("home.headers.orthopedicServicesChild_5"),
-            //   link: "/smilePro",
-            // },
+            {
+              child_item: this.$t("home.headers.orthopedicServicesChild_5"),
+              link: "/smilePro",
+            },
             {
               child_item: this.$t("home.headers.orthopedicServicesChild_2"),
               link: "/vision-correction-presbyopia",

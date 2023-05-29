@@ -132,10 +132,10 @@ export default {
               child_item: this.$t('home.headers.orthopedicServicesChild_1'),
               link: "/service/relex_smile",
             },
-            // {
-            //   child_item: this.$t('home.headers.orthopedicServicesChild_5'),
-            //   link: "/smilePro",
-            // },
+            {
+              child_item: this.$t('home.headers.orthopedicServicesChild_5'),
+              link: "/smilePro",
+            },
             {
               child_item: "CMER CLEAR-Vision",
               link: "/service/CLEAR_Vision",
