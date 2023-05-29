@@ -199,9 +199,9 @@
             </div>
           </div>
         </div>
-        <div>
-          <p><span>{{$t('chargeDetail.span3')}}</span></p>
-          <p><span>{{$t('chargeDetail.span16')}}</span></p>
+        <div class="smile_pro_notice">
+          <span>{{$t('chargeDetail.span3')}}</span>
+          <span>{{$t('chargeDetail.span16')}}</span>
         </div>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
@@ -1107,6 +1107,18 @@ i {
   font-size: 19px;
   padding: 2vw;
   // background-color: #dfdfdf;
+}
+.smile_pro_notice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--font_family);
+  font-style: normal;
+  font-weight: 350;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: .02rem;
+  color: #444343;
 }
 .tabBtn{
   width: 100%;
