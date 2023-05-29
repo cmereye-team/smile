@@ -618,7 +618,7 @@ export default {
     &-in{
         margin-top: 88px;
         width: 100%;
-        // height: 484px;
+        height: 484px;
         background: rgb(255, 253, 243);
         img{
             width: 100%;
