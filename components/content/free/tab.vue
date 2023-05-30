@@ -131,7 +131,7 @@
           <tbody>
             <tr>
               <td>
-                <span>$18,000</span>
+                <span>$24,000</span>
               </td>
               <td>
                 <span>$29,800</span>
