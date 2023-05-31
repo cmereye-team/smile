@@ -155,6 +155,13 @@ module.exports = {
             }
         },
         medicalEquipment: {
+          equiCon25:{
+            title: "ZEISS VISUMAX 800",
+            title2: "SMILE®pro",
+            content:
+              "SMall Incision Lenticule Extraction (SMILE 微笑激光矯視) 透過使用飛秒激光，在角膜內注入極微細的激光氣泡，直接切割角膜的中層部分，同時會開一個2毫米的小切口，醫生將已切割的角膜部份從切口取出，令角膜弧度改變以達至矯視效果。",
+            from: "資料及圖片來源： Carl Zeiss",
+          },
           equiCon1:{
             title: "Carl Zeiss Visumax",
             title2: "全飛秒激光3.0系統",

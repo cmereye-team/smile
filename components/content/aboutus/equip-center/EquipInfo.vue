@@ -63,6 +63,10 @@ export default {
     return {
       equi_con: [
         {
+          href: "https://static.cmereye.com/imgs/2023/05/69f740310b86facd.png",
+          ...this.$t('aboutUs.medicalEquipment.equiCon25')
+        },
+        {
           href: "https://static.cmereye.com/imgs/2022/12/c02bca547710c859.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon1')
         },
