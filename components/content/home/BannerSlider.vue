@@ -76,6 +76,15 @@ export default {
       },
       bannerLists: [
         {
+          link: 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解SMILE PRO首批用家限定優惠',
+          className: 'banner_5',
+          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/15fb69bb2972084d.jpg',
+          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/fafaa16c2fefee9f.jpg',
+          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/c778636bdc92a1b2.jpg',
+          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/90f03c94953b46b5.jpg',
+          isRouterPath: false
+        },
+        {
           link: 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解(W-02) Smile Pro矯視',
           className: 'banner_4',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg',
