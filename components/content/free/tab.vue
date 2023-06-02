@@ -45,7 +45,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_1')}} 即日至5.6.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_1')}} 即日至6.6.2023</td>
             </tr>
             <tr>
               <td>
@@ -248,7 +248,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至5.6.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至6.6.2023）</td>
             </tr>
             <tr>
               <td>
@@ -297,7 +297,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至5.6.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至6.6.2023）</td>
             </tr>
             <tr>
               <td>
@@ -336,7 +336,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至5.6.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至6.6.2023）</td>
             </tr>
             <tr>
               <td>
@@ -422,7 +422,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至5.6.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至6.6.2023）</td>
             </tr>
             <tr>
               <td>
