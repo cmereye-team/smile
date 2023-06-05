@@ -1,11 +1,7 @@
 <template>
   <div class="main_banner">
     <div class="banner pcShow">
-      <div
-        class="swiper gallery-top"
-        v-swiper:pcBannerSwiper="swiperOptionTop"
-        ref="bannerSwiper"
-      >
+      <div class="swiper gallery-top" v-swiper:pcBannerSwiper="swiperOptionTop" ref="bannerSwiper">
         <div class="swiper-wrapper">
           <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
             <img src="https://static.cmereye.com/imgs/2023/04/47b5b8d44b95666e.jpg" alt="">
@@ -13,7 +9,7 @@
           <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
             <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
           </nuxt-link> -->
-          <section v-for="(banner,index) in bannerLists" :key="index" class="swiper-slide">
+          <section v-for="(banner, index) in bannerLists" :key="index" class="swiper-slide">
             <nuxt-link v-if="banner.isRouterPath" :to="localePath(banner.link)">
               <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
             </nuxt-link>
@@ -21,7 +17,7 @@
               <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
             </a>
           </section>
-          
+
           <!-- <div class="anim">
             <div class="a"></div>
             <div class="b">
@@ -45,11 +41,7 @@
       </div>
     </div>
     <div class="banner mbShow">
-      <div
-        class="swiper gallery-top"
-        v-swiper:mbBannerSwiper="swiperOptionTop"
-        ref="bannerSwiper"
-      >
+      <div class="swiper gallery-top" v-swiper:mbBannerSwiper="swiperOptionTop" ref="bannerSwiper">
         <div class="swiper-wrapper">
           <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
             <img src="https://static.cmereye.com/imgs/2023/04/4b25734d8dbba59a.jpg" alt="">
@@ -57,7 +49,8 @@
           <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
             <img src="https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg" alt="">
           </nuxt-link> -->
-          <nuxt-link v-for="(banner,index) in bannerLists.filter(item=>item.mb_cnImg !== '')" :key="index" class="swiper-slide" :to="localePath(banner.link)">
+          <nuxt-link v-for="(banner, index) in bannerLists.filter(item => item.mb_cnImg !== '')" :key="index"
+            class="swiper-slide" :to="localePath(banner.link)">
             <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
           </nuxt-link>
         </div>
@@ -67,7 +60,7 @@
 </template>
 <script>
 export default {
-  components: { },
+  components: {},
   data() {
     return {
       swiperOptionTop: {
@@ -75,6 +68,15 @@ export default {
         autoplay: true
       },
       bannerLists: [
+        {
+          link: '/vision-correction/relex-smile',
+          className: 'banner_1',
+          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/833e0ca5e0b77f70.png',
+          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/b44d352069ea5391.png',
+          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/5e734e2dc3ccfca2.png',
+          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/c62027f16584ea9f.png',
+          isRouterPath: true
+        },
         {
           link: 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解SMILE PRO首批用家限定優惠',
           className: 'banner_5',
@@ -92,15 +94,6 @@ export default {
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/05/cdc2573b0440d1fa.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/05/479724d0765e3081.jpg',
           isRouterPath: false
-        },
-        {
-          link: '/vision-correction/relex-smile',
-          className: 'banner_1',
-          pc_cnImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682649064388452.jpg',
-          pc_hkImg: 'https://yk.smilecmer.com/static/upload/image/20230428/1682649259269361.jpg',
-          mb_cnImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682648975806679.jpg',
-          mb_hkImg: 'https://wap.smilecmer.com/static/upload/image/20230428/1682648839900139.jpg',
-          isRouterPath: true
         },
         {
           link: '/vision-correction-presbyopia',
@@ -123,38 +116,42 @@ export default {
       ]
     }
   },
-  filters:{
-    a(_lists){
+  filters: {
+    a(_lists) {
       let newLists = []
-      if(_lists.length){
-        newLists = _lists.filter(item=>item.mb_cnImg === '')
+      if (_lists.length) {
+        newLists = _lists.filter(item => item.mb_cnImg === '')
       }
       return newLists
     }
   },
-  created() {},
+  created() { },
   methods: {
   },
 };
 </script>
 <style lang="scss" scoped>
-.banner{
+.banner {
   width: 100vw;
   overflow: hidden;
 }
-.anim{
+
+.anim {
   width: 100%;
   height: 1000px;
   background: rgb(66, 66, 66);
-  .a{
+
+  .a {
     width: 100px;
     height: 50px;
     background: rgb(255, 199, 199);
     margin: 30px auto;
   }
-  .b{
+
+  .b {
     width: 100%;
-    .b1{
+
+    .b1 {
       font-size: 70px;
       font-weight: 700;
       color: #fff;
@@ -162,11 +159,13 @@ export default {
       transform: skewX(-30deg);
     }
   }
-  .c{
+
+  .c {
     width: 550px;
     height: 80px;
     margin: 0 auto;
-    &>div{
+
+    &>div {
       width: 100%;
       color: #fff;
       font-size: 35px;
@@ -176,14 +175,16 @@ export default {
       white-space: nowrap;
     }
   }
-  .d{
+
+  .d {
     width: 200px;
     height: 400px;
     margin: 20px auto;
     background: rgb(194, 194, 194);
     animation: d_anima 6s linear infinite;
     position: relative;
-    .d1{
+
+    .d1 {
       width: 100px;
       height: 60px;
       background: rgb(255, 214, 214);
@@ -194,7 +195,8 @@ export default {
       animation: d1_anima 6s linear 0.6s infinite;
       opacity: 0;
     }
-    .d1{
+
+    .d1 {
       width: 100px;
       height: 60px;
       background: rgb(255, 214, 214);
@@ -205,7 +207,8 @@ export default {
       // animation: d1_anima 6s linear 0.6s infinite;
       // opacity: 0;
     }
-    .d1{
+
+    .d1 {
       width: 100px;
       height: 60px;
       background: rgb(255, 214, 214);
@@ -217,73 +220,87 @@ export default {
       // opacity: 0;
     }
   }
+
   @keyframes c_anima {
-    0%{
+    0% {
       width: 0;
       overflow: hidden;
     }
-    100%{
+
+    100% {
       width: 100%;
       display: none;
     }
   }
+
   @keyframes d1_anima {
-    0%{
+    0% {
       right: -50px;
       top: 30px;
       opacity: 1;
     }
-    20%{
+
+    20% {
       right: -50px;
       top: 30px;
       opacity: 1;
     }
-    40%{
+
+    40% {
       right: -40px;
       top: 35px;
       opacity: 1;
     }
-    60%{
+
+    60% {
       right: -30px;
       top: 30px;
       opacity: 1;
     }
-    70%{
+
+    70% {
       right: -40px;
       top: 35px;
       opacity: 1;
     }
-    100%{
+
+    100% {
       right: -50px;
       top: 30px;
       opacity: 1;
     }
   }
+
   @keyframes d_anima {
-    0%{
+    0% {
       transform: translateX(500px);
       opacity: 0;
     }
-    2.5%{
+
+    2.5% {
       transform: translateX(250px);
       opacity: 1;
     }
-    5%{
+
+    5% {
       transform: translateX(0px);
       opacity: 1;
     }
-    50%{
+
+    50% {
       transform: translateX(0px);
       opacity: 1;
     }
-    100%{
+
+    100% {
       transform: translateX(0px);
       opacity: 1;
     }
   }
 }
-.swiper-wrapper{
-  img{
+
+.swiper-wrapper {
+  img {
     width: 100%;
   }
 }
