@@ -1687,7 +1687,7 @@ module.exports = {
           title1: '喜歡你微笑',
           title2: '動人套餐',
           text1: 'SMILE PRO 療程 1次',
-          text2: 'M22 療程 1次（醫生治療）',
+          text2: '眼睛護理Spa療程1次',
           weeding_price: '婚展限定：$27,800',
           price: '(原價$39,800)'
         },
