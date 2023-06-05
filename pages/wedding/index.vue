@@ -165,7 +165,7 @@ export default {
             </div>
         </div>
 
-        <div class="wedding-features page_container">
+        <div class="wedding-features page_container"  style="margin-bottom:50px;">
             <div class="wedding-features-cowrd">
                 <div v-for="(item, index) in wayList" :key="index">
                     <div>
@@ -196,15 +196,17 @@ export default {
                 </div>
                 <div> >{{ $t('service.wedding.text_t2') }}!&it; </div>
             </div>
-            <a class="wedding-features-images" href=""></a>
-            <a class="wedding-features-images-mb" href=""></a>
-            <div class="wedding-features-table" style="margin-bottom: 0;">
+            <div>
+                <a class="wedding-features-images" href=""></a>
+                <a class="wedding-features-images-mb" href=""></a>
+            </div>
+            <div class="wedding-features-table" style="margin-bottom: 0;display: none;">
                 <div>
                     {{ $t('service.wedding.text_p4') }}
                     <!-- 溫馨提示: 現在經網上登記預約，可獲取精美小禮品一份。(先到先得，送完即止) -->
                 </div>
             </div>
-            <div class="wedding-features-table">
+            <div class="wedding-features-table" style="display: none;">
                 <div style="margin:0;"></div>
                 <div>
                     <div>
@@ -1142,9 +1144,11 @@ export default {
                     line-height: 40px;
                 }
             }
-            &>div:nth-child(1){
-                margin-top:0px !important;
+
+            &>div:nth-child(1) {
+                margin-top: 0px !important;
             }
+
             &>div:nth-child(2) {
                 margin: 0;
             }
