@@ -230,8 +230,8 @@
           </ul>
         </div>
       </div>
-      <div class="contact contact_hunzhan">
-        <a href="https://api.whatsapp.com/send/?phone=85260610511&text=我想了解微笑矯視婚展活動">
+      <!-- <div class="contact contact_hunzhan">
+        <a href="./wedding">
           <button class="link_more shadow-lg">
             <span></span>
             <span></span>
@@ -244,7 +244,7 @@
             </div>
           </button>
         </a>
-      </div>
+      </div> -->
       <div class="contact">
         <a href="https://api.whatsapp.com/send/?phone=85260610511">
           <button class="link_more shadow-lg">

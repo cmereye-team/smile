@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="footer-coupon footer_coupon_mb">
-        <a :href="'https://api.whatsapp.com/send/?phone=85260610511&text=我想登記婚展活動留座'">
+        <a href="./wedding">
           <div>
             <span>{{$t('home.headers.weeding_btn')}}</span>
           </div>
