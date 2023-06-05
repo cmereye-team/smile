@@ -124,7 +124,12 @@ export default {
                 },
             ]
         }
-    }
+    },
+    methods: {
+        goToWhatsApp(){
+            window.location.href= 'https://api.whatsapp.com/send/?phone=85260610511&text=我想登記婚展活動留座'
+        }
+    },
 };
 </script>
   
@@ -158,7 +163,8 @@ export default {
                     <div>
                         <p v-for="(text, i) in item.text" :key="i">{{ text }}</p>
                     </div>
-                    <div>{{ item.weeding_price }}</div>
+                    <!-- <div>{{ item.weeding_price }}</div> -->
+                    <div>{{ $t('service.wedding.weeding_price_1') }}</div>
                     <div>{{ item.price }}</div>
                 </div>
             </div>
@@ -197,11 +203,11 @@ export default {
                     {{ $t('service.wedding.text_p3') }}
                     <!-- 講座參加人數有限，登記留座可獲免費門票(先到先得，送完即止) -->
                 </div>
-                <div> >{{ $t('service.wedding.text_t2') }}!&it; </div>
+                <div @click="goToWhatsApp()" style="cursor: pointer;"> >{{ $t('service.wedding.text_t2') }}!&it; </div>
             </div>
             <div>
-                <a class="wedding-features-images" href=""></a>
-                <a class="wedding-features-images-mb" href=""></a>
+                <a class="wedding-features-images" href="https://instagram.com/cmer_smile?igshid=NTc4MTIwNjQ2YQ=="></a>
+                <a class="wedding-features-images-mb" href="https://instagram.com/cmer_smile?igshid=NTc4MTIwNjQ2YQ=="></a>
             </div>
             <div class="wedding-features-table" style="margin-bottom: 0;display: none;">
                 <div>
@@ -378,7 +384,7 @@ export default {
             }
 
             &>div:nth-child(2) {
-                margin-top: 49px;
+                margin-top: 40px;
             }
 
             &>div:nth-child(3) {
@@ -390,7 +396,7 @@ export default {
                 line-height: 30px;
                 text-align: center;
                 color: #404040;
-                letter-spacing: 0.05em;
+                letter-spacing: -0.01em;
             }
 
             &>div:nth-child(4) {

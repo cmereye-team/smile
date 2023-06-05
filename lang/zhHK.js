@@ -41,6 +41,7 @@ module.exports = {
 
       coupon: '消費券',
       preferential: '優惠',
+      weeding_btn:'婚展活動',
 
       togLang: '選擇語言'
     },
@@ -1676,10 +1677,11 @@ module.exports = {
       text_p3: '講座參加人數有限，登記留座可獲免費門票(先到先得，送完即止)',
       text_p4: '溫馨提示: 現在經網上登記預約，可獲取精美小禮品一份。(先到先得，送完即止)',
       text_t1: '適合人士',
-      text_t2: '適合人士',
+      text_t2: '立即登記',
       table_th1: '講座時間',
       table_th2: '內容',
       btn1: '瞭解更多',
+      weeding_price_1:'婚展限定價稍後公佈',
       combo: [
         {
           title1: '喜歡你微笑',

@@ -41,6 +41,7 @@ module.exports = {
 
       coupon: '消费券',
       preferential: '优惠',
+      weeding_btn:'婚展活动',
 
       togLang: '选择语言'
     },
@@ -1675,10 +1676,11 @@ module.exports = {
       text_p3: '讲座参加人数有限，登记留座可获免费门票(先到先得，送完即止)',
       text_p4: '温馨提示: 现在经网上登记预约，可获取精美小礼品一份。(先到先得，送完即止)',
       text_t1: '适合人士',
-      text_t2: '适合人士',
+      text_t2: '立即登记',
       table_th1: '讲座时间',
       table_th2: '内容',
       btn1: '了解更多',
+      weeding_price_1:'婚展限定价稍后公布',
       combo: [
         {
           title1: '喜欢你微笑',
