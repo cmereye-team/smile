@@ -33,8 +33,8 @@ export default {
   methods: {
     // 跳转设置
     toWhatApp(){
-      // window.location.href= 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解(W-02) Smile Pro矯視'
-      console.log('111');
+      window.location.href= 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解微笑矯視婚展活動'
+      // console.log('111');
     }
   },
 };

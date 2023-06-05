@@ -67,6 +67,7 @@ export default {
             wayList: [
                 {
                     img: 'https://static.cmereye.com/imgs/2023/06/fe9d92e84cacab75.png',
+                    link:'https://smile.hkcmereye.com/smilePro',
                     title: this.$t('service.wedding.wayList[0].title'),
                     corwd: [
                         this.$t('service.wedding.wayList[0].corwd1'),
@@ -76,6 +77,7 @@ export default {
                 },
                 {
                     img: 'https://static.cmereye.com/imgs/2023/06/1985453cc43ee3ee.jpg',
+                    link:'https://smile.hkcmereye.com/vision-correction/relex-smile',
                     title: this.$t('service.wedding.wayList[1].title'),
                     corwd: [
                         this.$t('service.wedding.wayList[1].corwd1'),
@@ -85,6 +87,7 @@ export default {
                 },
                 {
                     img: 'https://static.cmereye.com/imgs/2023/06/a06414efa23a2be4.jpg',
+                    link:'https://smile.hkcmereye.com/vision-correction-icl',
                     title: this.$t('service.wedding.wayList[2].title'),
                     corwd: [
                         this.$t('service.wedding.wayList[2].corwd1'),
@@ -181,7 +184,7 @@ export default {
                                 <p v-for="(corwd, i) in item.corwd" :key="i">{{ corwd }}</p>
                             </div>
                         </div>
-                        <a href="#" target="_blank">
+                        <a :href="item.link" target="_blank">
                             <div>
                                 {{ $t('service.wedding.btn1') }}
                             </div>
