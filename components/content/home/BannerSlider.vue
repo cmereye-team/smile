@@ -68,11 +68,13 @@ export default {
         autoplay: true
       },
       bannerLists: [
+        
+      
         {
           link: '/vision-correction/relex-smile',
           className: 'banner_1',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/833e0ca5e0b77f70.png',
-          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/b44d352069ea5391.png',
+          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/1d1cc0e12cce1efd.jpg',
+          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/7d58764d6824a694.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/5e734e2dc3ccfca2.png',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/c62027f16584ea9f.png',
           isRouterPath: true
