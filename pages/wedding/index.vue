@@ -67,7 +67,7 @@ export default {
             wayList: [
                 {
                     img: 'https://static.cmereye.com/imgs/2023/06/fe9d92e84cacab75.png',
-                    link:'https://smile.hkcmereye.com/smilePro',
+                    link: 'https://smile.hkcmereye.com/smilePro',
                     title: this.$t('service.wedding.wayList[0].title'),
                     corwd: [
                         this.$t('service.wedding.wayList[0].corwd1'),
@@ -77,7 +77,7 @@ export default {
                 },
                 {
                     img: 'https://static.cmereye.com/imgs/2023/06/1985453cc43ee3ee.jpg',
-                    link:'https://smile.hkcmereye.com/vision-correction/relex-smile',
+                    link: 'https://smile.hkcmereye.com/vision-correction/relex-smile',
                     title: this.$t('service.wedding.wayList[1].title'),
                     corwd: [
                         this.$t('service.wedding.wayList[1].corwd1'),
@@ -87,7 +87,7 @@ export default {
                 },
                 {
                     img: 'https://static.cmereye.com/imgs/2023/06/a06414efa23a2be4.jpg',
-                    link:'https://smile.hkcmereye.com/vision-correction-icl',
+                    link: 'https://smile.hkcmereye.com/vision-correction-icl',
                     title: this.$t('service.wedding.wayList[2].title'),
                     corwd: [
                         this.$t('service.wedding.wayList[2].corwd1'),
@@ -126,8 +126,8 @@ export default {
         }
     },
     methods: {
-        goToWhatsApp(){
-            window.location.href= 'https://api.whatsapp.com/send/?phone=85260610511&text=我想登記婚展活動留座'
+        goToWhatsApp() {
+            window.open('https://api.whatsapp.com/send/?phone=85260610511&text=我想登記婚展活動留座') 
         }
     },
 };
@@ -174,7 +174,7 @@ export default {
             </div>
         </div>
 
-        <div class="wedding-features page_container"  style="margin-bottom:50px;">
+        <div class="wedding-features page_container" style="margin-bottom:50px;">
             <div class="wedding-features-cowrd">
                 <div v-for="(item, index) in wayList" :key="index">
                     <div>
@@ -203,7 +203,7 @@ export default {
                     {{ $t('service.wedding.text_p3') }}
                     <!-- 講座參加人數有限，登記留座可獲免費門票(先到先得，送完即止) -->
                 </div>
-                <div @click="goToWhatsApp()" style="cursor: pointer;"> >{{ $t('service.wedding.text_t2') }}!&it; </div>
+                <div @click="goToWhatsApp()" style="cursor: pointer;"> {{ $t('service.wedding.text_t2') }}</div>
             </div>
             <div>
                 <a class="wedding-features-images" href="https://instagram.com/cmer_smile?igshid=NTc4MTIwNjQ2YQ=="></a>
@@ -703,9 +703,19 @@ export default {
         }
 
         &>div:nth-child(2) {
-            color: #4570B6;
-            font-size: 36px;
-            line-height: 50px;
+            color: #fff;
+            width: 176px;
+            height: 61px;
+            border-radius: 30px;
+            background: #4570B6;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
     }
 

@@ -1688,7 +1688,7 @@ module.exports = {
           text1: 'SMILE PRO 疗程 1次',
           text2: '眼睛护理Spa疗程1次',
           weeding_price: '婚展限定：$27,800',
-          price: '(原价$39,800)'
+          price: '(原价$40,800)'
         },
         {
           title1: '情人眼里岀微',
