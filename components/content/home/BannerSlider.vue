@@ -75,8 +75,7 @@ export default {
           className: 'banner_1',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/1d1cc0e12cce1efd.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/7d58764d6824a694.jpg',
-          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/5e734e2dc3ccfca2.png',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/c62027f16584ea9f.png',
+          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/b8748c8ca795e2f7.jpg',
           isRouterPath: true
         },
         {
@@ -93,8 +92,8 @@ export default {
           className: 'banner_4',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
-          mb_cnImg: 'https://static.cmereye.com/imgs/2023/05/cdc2573b0440d1fa.jpg',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/05/479724d0765e3081.jpg',
+          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/5617084c28916bb2.jpg',
+          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/2f47a87064825e90.jpg',
           isRouterPath: false
         },
         {
