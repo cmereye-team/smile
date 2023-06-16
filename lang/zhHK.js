@@ -35,6 +35,7 @@ module.exports = {
 
       ophthalmicConsultationChild_1: '個案分享及矯視資訊影片',
       ophthalmicConsultationChild_2: '媒體報導',
+      ophthalmicConsultationChild_3: '婚展專區',
 
       reservationServiceChild_1: '矯視前檢查',
       reservationServiceChild_2: '講座',
@@ -67,7 +68,8 @@ module.exports = {
       p1: '1000 度近視<br />500 度散光',
       p2: '1500 度近視 <br />600 度遠視/散光',
       p3: '1800 度近視<br />1000 度遠視<br />600 度散光',
-      p4: '39 歲以上<br />同時有近視／遠視／<br />散光問題'
+      p4: '39 歲以上<br />同時有近視／遠視／<br />散光問題',
+      p5: '擔心眼睛<br />無法對焦太久'
     },
     aspiration: {
       p1: '用戶心聲',

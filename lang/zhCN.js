@@ -35,6 +35,7 @@ module.exports = {
 
       ophthalmicConsultationChild_1: '个案分享及矫视资讯影片',
       ophthalmicConsultationChild_2: '媒体报道',
+      ophthalmicConsultationChild_3: '婚展专区',
 
       reservationServiceChild_1: '矫视前检查',
       reservationServiceChild_2: '讲座',
@@ -67,7 +68,8 @@ module.exports = {
       p1: '1000 度近视<br />500 度散光',
       p2: '1500 度近视 <br />600 度远视/散光',
       p3: '1800 度近视<br />1000 度远视<br />600 度散光',
-      p4: '39 岁以上<br />同时有近视／远视／<br />散光问题'
+      p4: '39 岁以上<br />同时有近视／远视／<br />散光问题',
+      p5: '担心眼睛<br />无法对焦太久'
     },
     aspiration: {
       p1: '用户心声',
