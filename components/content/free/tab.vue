@@ -60,6 +60,8 @@
             </tr>
           </tbody>
         </table>
+        <span>^{{$t('chargeDetail.span17')}}</span>
+        <br />
         <span>{{$t('chargeDetail.span1')}}</span>
         <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
@@ -154,6 +156,8 @@
             </tr>
           </tbody>
         </table>
+        <span>^{{$t('chargeDetail.span17')}}</span>
+        <br />
         <span>{{$t('chargeDetail.span1')}}</span>
         <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
@@ -269,6 +273,8 @@
             </tr>
           </tbody>
         </table>
+        <span>^{{$t('chargeDetail.span17')}}</span>
+        <br />
         <span>{{$t('chargeDetail.span11')}}</span>
         <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
@@ -437,6 +443,8 @@
             </tr>
           </tbody>
         </table>
+        <span>^{{$t('chargeDetail.span17')}}</span>
+        <br />
         <span>{{$t('chargeDetail.span1')}}</span>
         <br />
         <span>^{{$t('chargeDetail.span2')}}</span>
@@ -559,6 +567,7 @@
             </tr>
           </tbody>
         </table>
+        <span style="margin-left: 110px;">^{{$t('chargeDetail.span17')}}</span>
       </div>
       <div class="table-1-box mbShow">
         <table class="gdp">

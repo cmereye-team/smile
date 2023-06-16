@@ -185,15 +185,7 @@ export default {
 
 }
 
-.smileSerItemBox:nth-child(2) {
-  .smileSerItem {
-    h3 {
-      font-size: 40px;
-    }
-  }
-}
-
-.smileSerItemBox:last-child {
+.smileSerItemBox {
   .smileSerItem {
     h3 {
       font-size: 34px;
@@ -319,7 +311,7 @@ export default {
         h3 {
           top: -9vw;
           left: -11vw;
-          font-size: 50px;
+          font-size: 34px;
         }
 
         .morelink {
@@ -351,13 +343,5 @@ export default {
     }
 
   }
-
-  .smileSerItemBox:last-child {
-    .smileSerItem {
-      h3 {
-        font-size: 34px;
-      }
-    }
-  }
-
-}</style>
+}
+</style>
