@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Record time and author
         run: |
-          echo "$(TZ='Asia/Shanghai' date +'%Y-%m-%d-%H-%M'): $(git log -1 --pretty=format:'%an')" >> time.md
+          echo "时间： $(TZ='Asia/Shanghai' date +'%Y-%m-%d-%H ：%M') | 提交者： $(git log -1 --pretty=format:'%an') | 修改原因：$(git log -1 --pretty=format:'%s') " >> time.md
           echo "" >> time.md
       - name: Commit changes
         run: |
