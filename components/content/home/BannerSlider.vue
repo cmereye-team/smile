@@ -71,10 +71,10 @@ export default {
         {
           link: '/wedding',
           className: 'banner_6',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/68b4b466bf252807.jpg',
-          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/3a056529f3d1d65a.jpg',
-          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/caafa2f5e78497da.jpg',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/ff152d829c1c52e0.jpg',
+          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/d0e98210d1c49623.jpg',
+          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/f55adf72cdf554d9.jpg',
+          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/d9699a7ebe4da8e3.jpg',
+          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/d9699a7ebe4da8e3.jpg',
           isRouterPath: true
         },
         {
