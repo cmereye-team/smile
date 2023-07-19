@@ -68,15 +68,15 @@ export default {
         autoplay: true
       },
       bannerLists: [
-        {
-          link: '/wedding',
-          className: 'banner_6',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/d0e98210d1c49623.jpg',
-          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/f55adf72cdf554d9.jpg',
-          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/d9699a7ebe4da8e3.jpg',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/d9699a7ebe4da8e3.jpg',
-          isRouterPath: true
-        },
+        // {
+        //   link: '/wedding',
+        //   className: 'banner_6',
+        //   pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/d0e98210d1c49623.jpg',
+        //   pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/f55adf72cdf554d9.jpg',
+        //   mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/d9699a7ebe4da8e3.jpg',
+        //   mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/d9699a7ebe4da8e3.jpg',
+        //   isRouterPath: true
+        // },
         {
           link: '/vision-correction/relex-smile',
           className: 'banner_1',
