@@ -427,10 +427,10 @@ export default {
               child_item: this.$t("home.headers.ophthalmicConsultationChild_2"),
               link: "/media",
             },
-            {
-              child_item: this.$t("home.headers.ophthalmicConsultationChild_3"),
-              link: "/wedding",
-            },
+            // {
+            //   child_item: this.$t("home.headers.ophthalmicConsultationChild_3"),
+            //   link: "/wedding",
+            // },
           ],
         },
 
