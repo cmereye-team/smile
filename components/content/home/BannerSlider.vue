@@ -69,21 +69,12 @@ export default {
       },
       bannerLists: [
         {
-          link: 'https://smile.hkcmereye.com/vision-correction/relex-smile',
-          className: 'banner_6',
+          link: '/vision-correction/relex-smile',
+          className: 'banner_1',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/07/16c9bbd0a2d47839.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/07/ed5bac2d94d32c3b.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/07/d9f55f7de0ce3890.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/07/43f38bca9b9f2baa.jpg',
-          isRouterPath: false
-        },
-        {
-          link: '/vision-correction/relex-smile',
-          className: 'banner_1',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/1d1cc0e12cce1efd.jpg',
-          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/7d58764d6824a694.jpg',
-          mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/b8748c8ca795e2f7.jpg',
-          mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/c62027f16584ea9f.png',
           isRouterPath: true
         },
         {
