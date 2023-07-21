@@ -71,7 +71,7 @@ export default {
         {
           link: '/vision-correction/relex-smile',
           className: 'banner_1',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/07/f1b5972883516825.jpg',
+          pc_cnImg: 'https://static.cmereye.com/static/loffee/imgs/2023_07_1689913503763.avif',
           pc_hkImg: 'https://static.cmereye.com/static/loffee/imgs/2023_07_1689913503764.avif',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/07/d9f55f7de0ce3890.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/07/43f38bca9b9f2baa.jpg',
