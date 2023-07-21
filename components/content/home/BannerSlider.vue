@@ -10,9 +10,9 @@
             <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
           </nuxt-link> -->
           <section v-for="(banner, index) in bannerLists" :key="index" class="swiper-slide">
-            <nuxt-link v-if="banner.isRouterPath" :to="localePath(banner.link)">
+            <a v-if="banner.isRouterPath" :to="localePath(banner.link)">
               <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
-            </nuxt-link>
+            </a>
             <a v-else :href="banner.link">
               <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
             </a>
@@ -72,7 +72,7 @@ export default {
           link: '/vision-correction/relex-smile',
           className: 'banner_1',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/07/f1b5972883516825.jpg',
-          pc_hkImg: 'https://static.cmereye.com/imgs/2023/07/ad7ded2c2a6463b7.jpg',
+          pc_hkImg: 'https://static.cmereye.com/static/loffee/imgs/2023_07_1689913503764.avif',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/07/d9f55f7de0ce3890.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/07/43f38bca9b9f2baa.jpg',
           isRouterPath: true
