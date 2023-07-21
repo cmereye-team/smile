@@ -78,7 +78,7 @@ export default {
           isRouterPath: true
         },
         {
-          link: 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解SMILE PRO首批用家限定優惠',
+          link: '/smilePro',
           className: 'banner_5',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/15fb69bb2972084d.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/fafaa16c2fefee9f.jpg',
