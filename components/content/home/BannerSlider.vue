@@ -80,8 +80,8 @@ export default {
         {
           link: '/smilePro',
           className: 'banner_5',
-          pc_cnImg: 'https://static.cmereye.com/imgs/2023/06/15fb69bb2972084d.jpg',
-          pc_hkImg: 'https://static.cmereye.com/imgs/2023/06/fafaa16c2fefee9f.jpg',
+          pc_cnImg: 'https://static.cmereye.com/static/loffee/imgs/050623_1280-480SC.avif',
+          pc_hkImg: 'https://static.cmereye.com/static/loffee/imgs/050623_1280-480TC.avif',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/c778636bdc92a1b2.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/90f03c94953b46b5.jpg',
           isRouterPath: true
