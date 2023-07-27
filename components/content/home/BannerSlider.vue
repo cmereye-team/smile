@@ -10,10 +10,10 @@
             <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
           </nuxt-link> -->
           <section v-for="(banner, index) in bannerLists" :key="index" class="swiper-slide">
-            <a v-if="banner.isRouterPath" :to="localePath(banner.link)">
+            <a v-if="banner.isRouterPath" :href="banner.link">
               <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
             </a>
-            <a v-else :href="banner.link">
+            <a v-else :href="localePath(banner.link)">
               <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
             </a>
           </section>
@@ -49,13 +49,21 @@
           <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
             <img src="https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg" alt="">
           </nuxt-link> -->
-          <nuxt-link v-for="(banner, index) in bannerLists.filter(item => item.mb_cnImg !== '')" :key="index"
+          <!-- <nuxt-link v-for="(banner, index) in bannerLists.filter(item => item.mb_cnImg !== '')" :key="index"
             class="swiper-slide" :to="localePath(banner.link)">
             <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
-          </nuxt-link>
+          </nuxt-link> -->
+          <section v-for="(banner, index) in bannerLists.filter(item => item.mb_cnImg !== '')" :key="index" class="swiper-slide">
+            <a v-if="banner.isRouterPath" :href="banner.link">
+              <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
+            </a>
+            <a v-else :href="localePath(banner.link)">
+              <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
+            </a>
+          </section>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
 </template>
 <script>
@@ -75,7 +83,7 @@ export default {
           pc_hkImg: 'https://static.cmereye.com/static/loffee/imgs/2023_07_1689913503764.avif',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/07/d9f55f7de0ce3890.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/07/43f38bca9b9f2baa.jpg',
-          isRouterPath: true
+          isRouterPath: false
         },
         {
           link: '/smilePro',
@@ -84,7 +92,7 @@ export default {
           pc_hkImg: 'https://static.cmereye.com/static/loffee/imgs/050623_1280-480TC.avif',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/c778636bdc92a1b2.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/90f03c94953b46b5.jpg',
-          isRouterPath: true
+          isRouterPath: false
         },
         {
           link: 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解(W-02) Smile Pro矯視',
@@ -93,7 +101,7 @@ export default {
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/5617084c28916bb2.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/2f47a87064825e90.jpg',
-          isRouterPath: false
+          isRouterPath: true
         },
         {
           link: '/vision-correction-presbyopia',
@@ -102,7 +110,7 @@ export default {
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/a7280ee58048f45f.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg',
-          isRouterPath: true
+          isRouterPath: false
         },
         {
           link: '/consumption-voucher',
@@ -111,7 +119,7 @@ export default {
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/eef9ad4d737ba85d.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/04/17a68f3a305077b9.jpg',
-          isRouterPath: true
+          isRouterPath: false
         }
       ]
     }
