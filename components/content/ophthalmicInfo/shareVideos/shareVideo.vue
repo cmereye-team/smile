@@ -17,7 +17,7 @@
             <span>{{ item }}</span>
           </div>
         </div>
-        <div v-if="currentTitleIndex === 0">
+        <div v-if="currentTitleIndex === 1">
           <div class="media-buju">
             <div class="media-box" v-for="(item_1_1, index_1_1) in mediaBujuLists_1_1" :key="index_1_1">
               <a :href="item_1_1.link" target="_Blank">
@@ -46,7 +46,7 @@
             </a>
           </div>
         </div>
-        <div v-else-if="currentTitleIndex === 1">
+        <div v-else-if="currentTitleIndex === 0">
           <div class="media-buju">
             <div class="media-box" v-for="(item_1_2, index_1_2) in mediaBujuLists_1_2" :key="index_1_2">
               <a :href="item_1_2.link" target="_Blank">
@@ -117,7 +117,7 @@
             <span>{{ item }}</span>
           </div>
         </div>
-        <div v-if="currentTitleIndex === 0">
+        <div v-if="currentTitleIndex === 1">
           <div class="media-buju">
             <div class="media-box" v-for="(item_2_1, index_2_1) in mediaBujuLists_2_1" :key="index_2_1">
               <a :href="item_2_1.link" target="_Blank">
@@ -147,7 +147,7 @@
             </a>
           </div>
         </div>
-        <div v-else-if="currentTitleIndex === 1">
+        <div v-else-if="currentTitleIndex === 0">
           <div class="media-buju">
             <div class="media-box" v-for="(item_2_2, index_2_2) in mediaBujuLists_2_2" :key="index_2_2">
               <a :href="item_2_2.link" target="_Blank">
