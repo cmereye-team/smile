@@ -365,7 +365,7 @@ export default {
                     },
                     {
                         colspan: '1',
-                        text: '~3mm',
+                        text: '~2mm',
                         className: 'bg2'
                     },
                 ],
