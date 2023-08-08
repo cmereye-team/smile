@@ -864,13 +864,14 @@ module.exports = {
   ophthalmicInfo: {
     shareVideos: {
       tabList: {
+        title3: '所有影片',
         title1: '精華版',
-        title2: '完整版'
+        title2: '完整版',
       },
       tabControlItem: {
         title: [
-          "ICL植入式隱形眼鏡",
           "Smile 微笑矯視",
+          "ICL植入式隱形眼鏡",
           "LASIK 激光矯視",
           "矯視知多D",
         ]
@@ -892,6 +893,10 @@ module.exports = {
           link: 'https://youtu.be/e-c_qRuvWTA',
           img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/01/Tiff-poon.jpg',
           meida: `<span>植入式隱形眼鏡 - 媽媽 Tiff Poon</span>`
+        }, {
+          link: 'https://www.youtube.com/watch?v=IQpaEi58v1E&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=10',
+          img: 'https://static.cmereye.com/imgs/2023/08/435ff83ed8fbf4f3.jpg',
+          meida: `<span>植入式隱形眼鏡-麥沛東小劇場</span>`
         }
       ],
       mediaBujuLists_1_2: [
