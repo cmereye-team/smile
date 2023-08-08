@@ -42,7 +42,7 @@ module.exports = {
 
       coupon: '消費券',
       preferential: '優惠',
-      weeding_btn:'婚展活動',
+      weeding_btn: '婚展活動',
 
       togLang: '選擇語言'
     },
@@ -878,6 +878,10 @@ module.exports = {
       },
       mediaBujuLists_1_1: [
         {
+          link: 'https://www.youtube.com/watch?v=IQpaEi58v1E&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=10',
+          img: 'https://static.cmereye.com/imgs/2023/08/435ff83ed8fbf4f3.jpg',
+          meida: `<span>植入式隱形眼鏡-麥沛東小劇場</span>`
+        }, {
           link: 'https://youtu.be/2t7JjTab4xA',
           img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/01/200814_lam_cover.jpg',
           meida: `<span>植入式隱形眼鏡 - Phil 林奕匡</span>`
@@ -893,11 +897,7 @@ module.exports = {
           link: 'https://youtu.be/e-c_qRuvWTA',
           img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/01/Tiff-poon.jpg',
           meida: `<span>植入式隱形眼鏡 - 媽媽 Tiff Poon</span>`
-        }, {
-          link: 'https://www.youtube.com/watch?v=IQpaEi58v1E&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=10',
-          img: 'https://static.cmereye.com/imgs/2023/08/435ff83ed8fbf4f3.jpg',
-          meida: `<span>植入式隱形眼鏡-麥沛東小劇場</span>`
-        }
+        },
       ],
       mediaBujuLists_1_2: [
         {
@@ -1690,7 +1690,7 @@ module.exports = {
       table_th1: '講座時間',
       table_th2: '內容',
       btn1: '瞭解更多',
-      weeding_price_1:'婚展限定價稍後公佈',
+      weeding_price_1: '婚展限定價稍後公佈',
       combo: [
         {
           title1: '喜歡你微笑',

@@ -212,104 +212,35 @@
         </div>
       </div>
       <div class="tables" v-else>
-        <div class="tab-control">
-          <div class="tab-control-item" v-for="(item, index) in title" :key="item"
-            :class="{ active: currentTitleIndex === index }" @click="titelclick(index)">
-            <span>{{ item }}</span>
-          </div>
-        </div>
-        <div v-if="currentTitleIndex === 0">
-          <div class="media-buju">
-            <div class="media-box" v-for="(item_2_1, index_2_1) in mediaBujuLists_3_1" :key="index_2_1">
-              <a :href="item_2_1.link" target="_Blank">
-                <img :src="item_2_1.img" alt="" />
-                <div class="meida" v-html="item_2_1.meida">
-                </div>
-              </a>
-            </div>
-          </div>
-          <a href="https://www.youtube.com/@cmersmileeyecenter6303">
-            <div class="flex justify-center more-btn">
-              <span>更多影片</span>
-            </div>
-          </a>
-          <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
-              <button>
-                <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
-                    <span>6061 0511</span>
-                  </div>
-                </div>
-              </button>
+        <div style="height: 30px;"></div>
+        <div class="media-buju">
+          <div class="media-box" v-for="(item_2_1, index_2_1) in mediaBujuLists_3_1" :key="index_2_1">
+            <a :href="item_2_1.link" target="_Blank">
+              <img :src="item_2_1.img" alt="" />
+              <div class="meida" v-html="item_2_1.meida">
+              </div>
             </a>
           </div>
         </div>
-        <div v-else-if="currentTitleIndex === 1">
-          <div class="media-buju">
-            <div class="media-box" v-for="(item_2_2, index_2_2) in mediaBujuLists_3_2" :key="index_2_2">
-              <a :href="item_2_2.link" target="_Blank">
-                <img :src="item_2_2.img" alt="" />
-                <div class="meida" v-html="item_2_2.meida">
+        <a href="https://www.youtube.com/@cmersmileeyecenter6303">
+          <div class="flex justify-center more-btn">
+            <span>更多影片</span>
+          </div>
+        </a>
+        <div class="flex justify-center my-10">
+          <a href="#" class="mbShow">
+            <button>
+              <div class="flex btn-yuyue">
+                <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
+                <div class="flex flex-col justify-center" style="padding: 0 10px">
+                  <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                  <span>6061 0511</span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </button>
+          </a>
+        </div>
 
-          </div>
-          <a href="https://www.youtube.com/@cmersmileeyecenter6303">
-            <div class="flex justify-center more-btn">
-              <span>更多影片</span>
-            </div>
-          </a>
-          <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
-              <button>
-                <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
-                    <span>6061 0511</span>
-                  </div>
-                </div>
-              </button>
-            </a>
-          </div>
-        </div>
-        <div v-else-if="currentTitleIndex === 2">
-           精彩內容即將更新，密切留意！
-        </div>
-        <div v-else>
-          <div class="media-buju">
-            <div class="media-box" v-for="(item_2_4, index_2_4) in mediaBujuLists_3_4" :key="index_2_4">
-              <a :href="item_2_4.link" target="_Blank">
-                <img :src="item_2_4.img" alt="" />
-                <div class="meida" v-html="item_2_4.meida">
-                </div>
-              </a>
-            </div>
-
-          </div>
-          <a href="https://www.youtube.com/@cmersmileeyecenter6303">
-            <div class="flex justify-center more-btn">
-              <span>更多影片</span>
-            </div>
-          </a>
-          <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
-              <button>
-                <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
-                    <span>6061 0511</span>
-                  </div>
-                </div>
-              </button>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -358,12 +289,8 @@ export default {
       ],
       // 所有影片
       mediaBujuLists_3_1: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_1'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_1')
-      ],
-      mediaBujuLists_3_2: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_2'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_2')
-      ],
-      mediaBujuLists_3_4: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_1'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_1'),
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_2'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_2'),
         ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_4'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_4')
       ]
     };
