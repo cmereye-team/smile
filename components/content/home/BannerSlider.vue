@@ -81,6 +81,7 @@ export default {
           className: 'banner_1',
           pc_cnImg: 'https://static.cmereye.com/static/loffee/imgs/2023_07_1689913503763.avif',
           pc_hkImg: 'https://static.cmereye.com/static/loffee/imgs/2023_07_1689913503764.avif',
+          pc_enImg: 'https://static.cmereye.com/static/loffee/imgs/2023_07_1689913503764.avif',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/07/d9f55f7de0ce3890.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/07/43f38bca9b9f2baa.jpg',
           isRouterPath: false
@@ -90,6 +91,7 @@ export default {
           className: 'banner_5',
           pc_cnImg: 'https://static.cmereye.com/static/loffee/imgs/050623_1280-480SC.avif',
           pc_hkImg: 'https://static.cmereye.com/static/loffee/imgs/050623_1280-480TC.avif',
+          pc_enImg: 'https://static.cmereye.com/static/loffee/imgs/050623_1280-480TC.avif',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/c778636bdc92a1b2.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/90f03c94953b46b5.jpg',
           isRouterPath: false
@@ -99,6 +101,7 @@ export default {
           className: 'banner_4',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
+          pc_enImg: 'https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/06/5617084c28916bb2.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/06/2f47a87064825e90.jpg',
           isRouterPath: true
@@ -108,6 +111,7 @@ export default {
           className: 'banner_2',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/7a2b26fa29e337a3.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
+          pc_enImg: 'https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/a7280ee58048f45f.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg',
           isRouterPath: false
@@ -117,6 +121,7 @@ export default {
           className: 'banner_3',
           pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/d87721cc7012fdd9.jpg',
           pc_hkImg: 'https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg',
+          pc_enImg: 'https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg',
           mb_cnImg: 'https://static.cmereye.com/imgs/2023/04/eef9ad4d737ba85d.jpg',
           mb_hkImg: 'https://static.cmereye.com/imgs/2023/04/17a68f3a305077b9.jpg',
           isRouterPath: false
