@@ -371,6 +371,7 @@ export default {
   created() { },
   methods: {
     titelclick(index) {
+      console.log(index);
       this.currentTitleIndex = index;
     },
     //判断是否打开
