@@ -57,7 +57,6 @@
           <img src="../../../asset/image/common/right-white.svg" alt="" />
         </div>
       </div>
-
       <nuxt-link class="link_more" :to="localePath('video')" style="cursor: pointer">
         <span>{{ $t('home.VedioSlider.span') }}</span>
       </nuxt-link>
@@ -66,6 +65,7 @@
 </template>
 <script>
 export default {
+ 
   data() {
     return {
       screenWidth: "", //屏幕宽度
@@ -119,11 +119,11 @@ export default {
         }
       ],
       swiperOptionMb: {
-        direction: "vertical",
+        direction:"vertical",
+        loop: true,
+        centeredSlides: true,
+        spaceBetween: 35,
         slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 30,
-        mousewheelControl: true,
         pagination: {
           el: ".swiper-pagination",
           dynamicBullets: true,
@@ -131,6 +131,9 @@ export default {
         navigation: {
           nextEl: ".swiper-button-next", //下一页dom节点
           prevEl: ".swiper-button-prev", //前一页dom节点
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
         },
         on: {
           slideChange() {
@@ -396,11 +399,14 @@ body .gradient_font {
     padding: 30px;
     width: 80%;
     right: 0;
+  
+    height: 180vw;
+    max-height: 180vw;
   }
   .vedio_slider {
     position: relative;
 
-    height: 210vw;
+    height: 170vw;
   }
   .booking {
     margin-left: 60px;
