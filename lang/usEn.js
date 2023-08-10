@@ -42,7 +42,7 @@ module.exports = {
 
       coupon: '消費券',
       preferential: '優惠',
-      weeding_btn:'婚展活動',
+      weeding_btn: '婚展活動',
 
       togLang: '選擇語言'
     },
@@ -115,7 +115,7 @@ module.exports = {
         p3_7: 'Shanghai, Kunming, Huizhou, Jieyang and Zhuhai in the Mainland.',
         p3_8: 'and have more than 900 employees,',
         p3_9: 'With an honor to be the first listed ophthalmology group in Hong Kong,',
-        p4_1: 'C-MER Eye Care Centers', 
+        p4_1: 'C-MER Eye Care Centers',
         p4_2: 'We have expanded our business in Hong Kong, including 10 eye care centers,',
         p4_3: '4 SMILE refractive centers, 2 vision centers',
         p4_4: 'and 2 Champion Eye & Refractive Surgery Centre ',
@@ -1685,7 +1685,7 @@ module.exports = {
       table_th1: '講座時間',
       table_th2: '內容',
       btn1: '瞭解更多',
-      weeding_price_1:'婚展限定價稍後公佈',
+      weeding_price_1: '婚展限定價稍後公佈',
       combo: [
         {
           title1: '喜歡你微笑',
@@ -1768,5 +1768,4 @@ module.exports = {
       ]
     }
   }
-
 }
