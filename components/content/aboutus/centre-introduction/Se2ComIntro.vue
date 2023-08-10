@@ -343,7 +343,7 @@ export default {
     background-size: 100% 95%;
     margin: 70px auto;
     text-align: center;
-    height: 441px;
+    // height: 441px;
     max-width: 1004px!important;
     width: auto;
     // background-position-y: -30;
