@@ -57,7 +57,6 @@
           <img src="../../../asset/image/common/right-white.svg" alt="" />
         </div>
       </div>
-
       <nuxt-link class="link_more" :to="localePath('video')" style="cursor: pointer">
         <span>{{ $t('home.VedioSlider.span') }}</span>
       </nuxt-link>
@@ -66,6 +65,7 @@
 </template>
 <script>
 export default {
+ 
   data() {
     return {
       screenWidth: "", //屏幕宽度
@@ -81,14 +81,49 @@ export default {
         {
           src: "https://static.cmereye.com/imgs/smile/images/home/veido_3.png",
           link: "https://youtu.be/beGIk4tkS7Y",
+        },        {
+          src: 'https://static.cmereye.com/imgs/2023/08/6ee7800e03ae4969.jpg',
+          link: 'https://www.youtube.com/watch?v=qBsPhkIaVfo',
         },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/435ff83ed8fbf4f3.jpg',
+          link: 'https://www.youtube.com/watch?v=IQpaEi58v1E&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=10',
+        },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/f365550b8ef5c296.jpg',
+          link: 'https://www.youtube.com/watch?v=gRKFwHXBAzc',
+        },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/6f51f1a1f3960431.jpg',
+          link: 'https://www.youtube.com/watch?v=c6dwJ1Cbgxw&list=PLWVonQr1f7XjXu6TpwCe4O4FObpvNAr4W&index=8',
+        },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/6e09727035f3d564.jpg',
+          link: 'https://www.youtube.com/watch?v=inD-CATvEl4&list=PLWVonQr1f7XjXu6TpwCe4O4FObpvNAr4W&index=42',
+        },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/0438578fdfa8c322.jpg',
+          link: 'https://www.youtube.com/watch?v=T3K97UlXpHg',
+        },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/a19d77a42c97bea4.jpg',
+          link: 'https://www.youtube.com/watch?v=87SuKdfCmgg',
+        },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/17749e5722a43f96.jpg',
+          link: 'https://www.youtube.com/watch?v=5ihrzFvOy38&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=6',
+        },
+        {
+          src: 'https://static.cmereye.com/imgs/2023/08/c587dd17175185f5.jpg',
+          link: 'https://www.youtube.com/watch?v=pNdhPiqPzT0',
+        }
       ],
       swiperOptionMb: {
-        direction: "vertical",
+        direction:"vertical",
+        loop: true,
+        centeredSlides: true,
+        spaceBetween: 35,
         slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 30,
-        mousewheelControl: true,
         pagination: {
           el: ".swiper-pagination",
           dynamicBullets: true,
@@ -96,6 +131,9 @@ export default {
         navigation: {
           nextEl: ".swiper-button-next", //下一页dom节点
           prevEl: ".swiper-button-prev", //前一页dom节点
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
         },
         on: {
           slideChange() {
@@ -361,11 +399,14 @@ body .gradient_font {
     padding: 30px;
     width: 80%;
     right: 0;
+  
+    height: 180vw;
+    max-height: 180vw;
   }
   .vedio_slider {
     position: relative;
 
-    height: 210vw;
+    height: 170vw;
   }
   .booking {
     margin-left: 60px;
