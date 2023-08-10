@@ -227,10 +227,10 @@
               简
               <!-- <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link> -->
             </li>
-            <li @click="handleLang('en')">
-              Eng
+            <!-- <li @click="handleLang('en')"> -->
+              <!-- Eng -->
               <!-- <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link> -->
-            </li>
+            <!-- </li> -->
           </ul>
         </div>
       </div>

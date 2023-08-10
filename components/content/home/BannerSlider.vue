@@ -9,6 +9,7 @@
           <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
             <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
           </nuxt-link> -->
+
           <section v-for="(banner, index) in bannerLists" :key="index" class="swiper-slide">
             <a v-if="banner.isRouterPath" :href="banner.link">
               <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
@@ -166,8 +167,8 @@ export default {
                 pc_hkImg: `https://admin.hkcmereye.com/${item.pic}`,
                 mb_hkImg: `https://admin.hkcmereye.com/${item.mobilepic}`,
                 gid: item.gid,
-                link: '/vision-correction/relex-smile',
-                isRouterPath: false
+                link: item.link,
+                isRouterPath: item.title == 'link' ? true : false
               }
             })
           });
@@ -183,8 +184,8 @@ export default {
                 pc_cnImg: `https://admin.hkcmereye.com/${item.pic}`,
                 mb_cnImg: `https://admin.hkcmereye.com/${item.mobilepic}`,
                 gid: item.gid,
-                link: '/vision-correction/relex-smile',
-                isRouterPath: false
+                link: item.link,
+                isRouterPath: item.title == 'link' ? true : false
               }
             })
           });
@@ -200,14 +201,17 @@ export default {
                 pc_enImg: `https://admin.hkcmereye.com/${item.pic}`,
                 mb_enImg: `https://admin.hkcmereye.com/${item.mobilepic}`,
                 gid: item.gid,
-                link: '/vision-correction/relex-smile',
-                isRouterPath: false
+                link: item.link,
+                isRouterPath: item.title == 'link' ? true : false
               }
             })
-          });
+          })
       }
       this.bannerLists = List
-      this.optionList = List.length
+      this.$nextTick(() => {
+        this.optionList = List.length
+      })
+      console.log(List,'bannerrrrrrrrrrrr');
     }
   },
 };
