@@ -211,7 +211,6 @@ export default {
       this.$nextTick(() => {
         this.optionList = List.length
       })
-      console.log(List,'bannerrrrrrrrrrrr');
     }
   },
 };

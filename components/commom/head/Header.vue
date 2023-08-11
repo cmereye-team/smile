@@ -28,7 +28,7 @@
                   <el-menu-item index="1-2">
                     <nuxt-link :to="localePath('/our-medical-team')">{{
                       $t("home.headers.aboutSmileChild_2")
-                    }}</nuxt-link>
+                    }}--</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="1-3">
                     <nuxt-link :to="localePath('/medical-equipment')">{{
@@ -186,7 +186,7 @@
         <!-- gsap   移动动画-->
 
         <!-- gsap   移动动画 end-->
-        <ul class="nav md:flex md:justify-around grid gap-8">
+        <ul class="nav md:flex md:justify-around grid" :class="[$i18n.locale == 'en' ? 'gap-0 pl-8' : 'gap-8 pl-0']">
           <div class="menu-line"></div>
 
           <li v-for="(navItem, index) in navList" :key="index" class="nav_item text-lg md:flex flex-col"
@@ -196,7 +196,8 @@
               <div class="mian_nav_text font-black">{{ navItem.main_nav }}</div>
             </nuxt-link>
 
-            <ul class="child_nav flex flex-col" v-if="navItem.child_list.length > 0">
+            <ul :style="{ top: $i18n.locale == 'en' ? '36px' : '10px' }" class="child_nav flex flex-col"
+              v-if="navItem.child_list.length > 0">
               <li v-for="(childItem, childIndex) in navItem.child_list" :key="childIndex">
                 <nuxt-link :to="localePath(childItem.link)" class="text-base">{{
                   `· ` + childItem.child_item
@@ -228,8 +229,8 @@
               <!-- <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link> -->
             </li>
             <!-- <li @click="handleLang('en')"> -->
-              <!-- Eng -->
-              <!-- <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link> -->
+            <!-- Eng -->
+            <!-- <nuxt-link :to="switchLocalePath('cn')" class="w-full h-full block">简</nuxt-link> -->
             <!-- </li> -->
           </ul>
         </div>
@@ -764,6 +765,7 @@ $active_gradient: #4570b6;
     letter-spacing: 0.2em;
 
     color: #6d6e71;
+    text-align: center;
   }
 
   .main_after {

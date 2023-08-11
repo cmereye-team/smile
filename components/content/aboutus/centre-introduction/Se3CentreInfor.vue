@@ -5,30 +5,22 @@
         <p>CENTER</p>
       </div>
       <div class="serve_title">
-        <p>{{$t('aboutUs.centreIntroduction.Se3CentreInfor.p')}}</p>
+        <p>{{ $t('aboutUs.centreIntroduction.Se3CentreInfor.p') }}</p>
       </div>
       <div class="md:flex pcShow page_container img_box">
-        <img
-          class="flex-1"
-          src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg"
-          alt
-        />
+        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
       </div>
       <div class="md:flex mbShow page_container img_box">
-        <img
-          class="flex-1"
-          src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg"
-          alt
-        />
+        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
       </div>
       <div class="section_text shadow-lg">
         <p>
-          <span>{{$t('aboutUs.centreIntroduction.Se3CentreInfor.span1')}}</span><br class="pcShow" />
-          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span2')}}<br />
-          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span3')}}<br />
-          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span4')}}<br />
-          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span5')}}<br />
-          {{$t('aboutUs.centreIntroduction.Se3CentreInfor.span6')}}
+          <span>{{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span1') }}</span><br class="pcShow" />
+          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span2') }}<br />
+          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span3') }}<br />
+          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span4') }}<br />
+          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span5') }}<br />
+          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span6') }}
         </p>
       </div>
     </div>
@@ -75,7 +67,7 @@ export default {
       },
     };
   },
-  created() {},
+  created() { },
   methods: {},
 };
 </script>
@@ -84,6 +76,7 @@ export default {
 // comon
 .Se2ComIntro {
   margin: 120px 0 0 0;
+
   h4 {
     background: linear-gradient(90.57deg, #4570b6 0%, #81dbec 100%);
     -webkit-background-clip: text;
@@ -91,12 +84,15 @@ export default {
     background-clip: text;
     -ms-writing-mode: tb-lr;
   }
+
   // background: url("https://static.cmereye.com/imgs/2022/11/97761e71d0339c78.png")
   //   no-repeat;
   background-position-y: 70%;
   background-size: 100%;
+
   .section_text {
     background: #fff;
+
     p {
       font-family: var(--font_family);
       font-style: normal;
@@ -108,6 +104,7 @@ export default {
 
       color: #6d6e71;
     }
+
     span {
       font-weight: 500;
       font-size: 23px !important;
@@ -115,6 +112,7 @@ export default {
       display: block;
       color: #4570b6;
     }
+
     h1 {
       color: #4570b6;
       background: linear-gradient(90.57deg, #4570b6 0%, #81dbec 100%);
@@ -124,13 +122,14 @@ export default {
       -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
     }
-    
+
   }
 }
+
 // pc
 @media only screen and (min-width: 768px) {
-  
-  
+
+
   .img_box {
     display: flex;
     flex-direction: column;
@@ -140,6 +139,7 @@ export default {
     margin-top: -38px;
     padding-right: 30px;
   }
+
   .booking {
     p {
       font-size: 60px !important;
@@ -156,14 +156,17 @@ export default {
     margin-bottom: 70px;
     margin-left: 60px;
   }
+
   .box {
     position: relative;
   }
+
   .box {
     .serve_title {
       p {
         font-size: 43px !important;
       }
+
       font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
@@ -185,17 +188,20 @@ export default {
     }
   }
 
-  
+
   p {
     font-size: 15px !important;
 
     line-height: 1.7 !important;
   }
+
   .Se2ComIntro .section_text {
-    max-width: 738px;height:678px;
+    max-width: 738px;
+    height: 1070px;
     margin-left: 424px;
     box-shadow: 0px 0px 20px rgba(174, 213, 231, 0.75);
   }
+
   .Se2ComIntro .section_text .content p {
     font-family: var(--font_family);
     font-style: normal;
@@ -209,9 +215,11 @@ export default {
 
     color: #6D6E71;
   }
+
   .Se2ComIntro {
     .section_text {
       padding: 49px;
+
       h1 {
         font-weight: 900;
         letter-spacing: 0.5vw;
@@ -225,13 +233,16 @@ export default {
   .Se2ComIntro {
     margin-bottom: 30px;
   }
+
   .page_container {
     padding: 0 !important;
   }
+
   .Se2ComIntro .section_text {
     margin-right: 70px;
     box-shadow: 0px 0px 20px rgba(174, 213, 231, 0.75);
   }
+
   .Se2ComIntro .section_text p {
     padding: 34px;
     font-style: normal;
@@ -239,16 +250,19 @@ export default {
     font-size: 17px !important;
     line-height: 30px !important;
   }
-  .section_text p{
+
+  .section_text p {
     margin-top: -60px;
     font-size: 14px !important;
     padding-top: 70px !important;
     padding-right: 20px !important;
-    span{
+
+    span {
       font-size: 16px !important;
       // margin-bottom: 0 !important;
     }
   }
+
   .img_box {
     display: flex;
     flex-direction: column;
@@ -257,6 +271,7 @@ export default {
     /* margin-top: -38px; */
     width: 285px;
   }
+
   .booking {
     p {
       font-size: 40px !important;
@@ -273,14 +288,17 @@ export default {
     margin-bottom: 10px;
     margin-left: 70px;
   }
+
   .box {
     position: relative;
   }
+
   .box {
     .serve_title {
       p {
         font-size: 28px !important;
       }
+
       font-family: var(--font_family);
       font-style: normal;
       font-weight: 700;
@@ -302,16 +320,19 @@ export default {
     }
   }
 
-  
+
   h2 {
     font-size: 14px;
   }
+
   .award_text {
     padding-bottom: 32px;
   }
+
   //集团介绍 cmmer 中间部分
   .Se2ComIntro {
     margin-top: 480px;
+
     .section_text {
       h1 {
         position: absolute;
@@ -325,5 +346,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>
