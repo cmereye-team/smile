@@ -1,7 +1,7 @@
 <template>
   <div class="section flex justify-start items-center">
     <div class="des_box">
-      <h3 class="gradient_font">
+      <h3 :class="$i18n.locale == 'en' ? 'gradient_font_en' : 'gradient_font'">
         <slot name="title"></slot>
       </h3>
       <p>
@@ -15,7 +15,7 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() { },
   methods: {},
 };
 </script>
@@ -26,6 +26,7 @@ export default {
     background-size: cover !important;
     background-repeat: no-repeat;
     padding-left: 164px;
+
     .des_box {
       width: 648px;
 
@@ -46,6 +47,7 @@ export default {
 
         color: #4570b6;
       }
+
       p {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -61,14 +63,17 @@ export default {
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .section {
     height: 76vw;
     background-size: cover !important;
     background-repeat: no-repeat;
   }
+
   .des_box {
     padding-left: 28px;
+
     h3 {
       font-family: var(--font_family);
       font-style: normal;
@@ -83,9 +88,11 @@ export default {
 
       color: #4570b6;
     }
+
     span {
       font-size: 11px;
     }
+
     p {
       font-family: var(--font_family);
       font-style: normal;

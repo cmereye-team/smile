@@ -1,42 +1,27 @@
 <template>
   <div class="section">
-    <div
-      class="flex justify-center equip md:pt-20 md:pb-0 py-10 page_container"
-    >
-      <h2>{{$t('home.headers.aboutSmileChild_3')}}</h2>
+    <div class="flex justify-center equip md:pt-20 md:pb-0 py-10 page_container">
+      <h2>{{ $t('home.headers.aboutSmileChild_3') }}</h2>
     </div>
     <div class="bacground-equi">
-      <img
-        src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png"
-        alt=""
-      />
+      <img src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
     </div>
     <div class="bacground-equi-right pcShow">
-      <img
-        src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png"
-        alt=""
-      />
+      <img src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
     </div>
     <div class="equ_center_box page_container">
-      <div class="equ_center" v-for="(item, index) in equi_con" :key="index">
-        <div class="top-equip">
+      <div class="equ_center" :class="$i18n.locale == 'en' ? 'equ_center_en_mobi' : ''" v-for="(item, index) in equi_con"
+        :key="index">
+        <div class="top-equip" style="font-size: ;">
           <img :src="item.href" alt="" class="equi" />
           <span>{{ item.title }}</span>
           <span>{{ item.title2 }}</span>
-          <img
-            src="https://static.cmereye.com/imgs/2022/12/fab80faf49dedcb8.png"
-            alt=""
-            class="arrow"
-            @click="showContainer(index)"
-          />
+          <img src="https://static.cmereye.com/imgs/2022/12/fab80faf49dedcb8.png" alt="" class="arrow"
+            @click="showContainer(index)" />
         </div>
         <div class="equip-container">
-          <img
-            src="https://static.cmereye.com/imgs/2022/12/fab80faf49dedcb8.png"
-            alt=""
-            class="arrow-contain"
-            @click="showEqui(index)"
-          />
+          <img src="https://static.cmereye.com/imgs/2022/12/fab80faf49dedcb8.png" alt="" class="arrow-contain"
+            @click="showEqui(index)" />
           <div class="equip-text">
             <span>
               {{ item.content }}
@@ -50,10 +35,7 @@
       </div>
     </div>
     <div class="bacground-equi-bottom pcShow">
-      <img
-        src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png"
-        alt=""
-      />
+      <img src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
     </div>
   </div>
 </template>
@@ -165,7 +147,7 @@ export default {
       ]
     }
   },
-  created() {},
+  created() { },
   methods: {
     showContainer(id) {
       // console.log("id",id);
@@ -213,19 +195,27 @@ h2 {
 
   color: #444343;
 }
+
 .arrow-contain {
   cursor: pointer;
 }
+
 // mb
 @media (max-width: 768px) {
+  .equip-text::-webkit-scrollbar {
+    width: 1px;
+  }
+
   .bacground-equi {
     position: absolute;
     z-index: -1;
   }
+
   .equ_center_box {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .equ_center {
       display: flex;
       flex-direction: column;
@@ -236,6 +226,7 @@ h2 {
       position: relative;
       background: #fff;
       margin-bottom: 70px;
+
       .top-equip {
         z-index: 10;
         display: flex;
@@ -244,6 +235,7 @@ h2 {
         height: 528px;
         background: #fff;
       }
+
       .equip-container {
         display: none;
         opacity: 1;
@@ -252,15 +244,19 @@ h2 {
         align-items: center;
         height: 528px;
         background: #fff;
+
         .equip-text {
           padding: 25px;
           display: flex;
           flex-direction: column;
+          overflow-y: auto;
+
           span {
             font-size: 14px;
           }
         }
       }
+
       .blue {
         position: absolute;
         right: -10px;
@@ -269,14 +265,17 @@ h2 {
         height: 398px;
         background: linear-gradient(180deg, #4570b6 0%, #81dbec 100%);
       }
+
       .arrow {
         position: absolute;
         bottom: 3px;
         cursor: pointer;
       }
+
       .equi {
         margin-bottom: 13px;
       }
+
       span {
         font-family: var(--font_family);
         font-style: normal;
@@ -291,26 +290,40 @@ h2 {
         color: #4570b6;
       }
     }
+
+    .equ_center_en_mobi {
+      span {
+        font-size: 14px;
+      }
+    }
   }
 }
+
 // pc
 @media (min-width: 768px) {
+  .equip-text::-webkit-scrollbar {
+    width: 1px;
+  }
+
   .bacground-equi-right {
     position: absolute;
     right: 0;
     bottom: -3000px;
     z-index: -1;
   }
+
   .bacground-equi-bottom {
     position: absolute;
     left: 0;
     bottom: -5000px;
     z-index: -1;
   }
+
   .bacground-equi {
     position: absolute;
     z-index: -1;
   }
+
   .equ_center_box {
     display: grid;
     justify-items: center;
@@ -318,6 +331,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     width: 1280px;
     position: relative;
+
     .equ_center {
       margin-top: 20px;
       display: flex;
@@ -329,6 +343,7 @@ h2 {
       position: relative;
       background: #fff;
       margin-bottom: 100px;
+
       .top-equip {
         z-index: 10;
         display: flex;
@@ -337,6 +352,7 @@ h2 {
         height: 528px;
         background: #fff;
       }
+
       .equip-container {
         display: none;
         opacity: 1;
@@ -345,15 +361,19 @@ h2 {
         align-items: center;
         height: 528px;
         background: #fff;
+
         .equip-text {
-          padding: 25px;
+          padding: 20px 25px 15px 25px;
           display: flex;
           flex-direction: column;
+          overflow-y: auto;
+
           span {
             font-size: 14px;
           }
         }
       }
+
       .blue {
         position: absolute;
         right: -10px;
@@ -362,14 +382,17 @@ h2 {
         height: 398px;
         background: linear-gradient(180deg, #4570b6 0%, #81dbec 100%);
       }
+
       .arrow {
         position: absolute;
         bottom: 3px;
         cursor: pointer;
       }
+
       .equi {
         margin-bottom: 13px;
       }
+
       span {
         font-family: var(--font_family);
         font-style: normal;

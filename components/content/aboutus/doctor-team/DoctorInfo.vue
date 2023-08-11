@@ -1,30 +1,22 @@
 <template>
   <div>
     <div class="bac-diqiu pcShow">
-      <img
-        src="https://static.cmereye.com/imgs/2022/12/9c96ba7bca90639a.png"
-        alt=""
-      />
+      <img src="https://static.cmereye.com/imgs/2022/12/9c96ba7bca90639a.png" alt="" />
     </div>
     <div class="page_container">
       <div class="flex justify-center doctor">
-        <h2>{{$t('aboutUs.medicalTeam.DoctorInfo.h2')}}</h2>
+        <h2>{{ $t('aboutUs.medicalTeam.DoctorInfo.h2') }}</h2>
       </div>
 
-      <ul
-        class="doctor_list static flex flex-col md:justify-around items-center md:flex-row"
-      >
-        <li
-          v-for="(doctorItem, index) in doctorList"
-          :key="index"
-          class="team-li"
-        >
+      <ul class="doctor_list static flex flex-col md:justify-around items-center md:flex-row">
+        <li v-for="(doctorItem, index) in doctorList" :key="index" class="team-li">
           <div class="team-box">
-            <div class="img_con">
+            <div class="img_con" :class="$i18n.locale == 'en' ? 'img_con img_con_en' : 'img_con'">
               <img :src="doctorItem.src" alt="" />
               <div class="flex items-center">
                 <h3 class="text-white font-black">
-                  {{ doctorItem.des }}&nbsp;<span>{{$t('aboutUs.medicalTeam.DoctorInfo.span')}}</span>
+                  {{ doctorItem.des }}&nbsp;<span :style="{ display: $i18n.locale == 'en' ? 'none' : 'inline' }">{{
+                    $t('aboutUs.medicalTeam.DoctorInfo.span') }}</span>
                 </h3>
               </div>
             </div>
@@ -35,10 +27,7 @@
                     <a class="team-name"> {{ doctorItem.doctorName }}</a>
                   </h3>
                 </div> -->
-                <div
-                  class="team-description"
-                  v-for="infoitem in doctorItem.doctorInfo" :key="infoitem"
-                >
+                <div class="team-description" v-for="infoitem in doctorItem.doctorInfo" :key="infoitem">
                   <p>{{ infoitem.info }}</p>
                 </div>
               </div>
@@ -48,10 +37,7 @@
       </ul>
     </div>
     <div class="bac-foot-diqiu pcShow">
-      <img
-        src="https://static.cmereye.com/imgs/2022/12/7170402a61209e2d.png"
-        alt=""
-      />
+      <img src="https://static.cmereye.com/imgs/2022/12/7170402a61209e2d.png" alt="" />
     </div>
   </div>
 </template>
@@ -239,7 +225,7 @@ export default {
       ],
     };
   },
-  created() {},
+  created() { },
   methods: {},
 };
 </script>
@@ -250,10 +236,12 @@ export default {
     z-index: 98;
   }
 }
+
 .doctor {
   padding-top: 2vw;
 }
-h2{
+
+h2 {
   color: #4570b6;
   font-weight: 500;
   font-size: 25px;
@@ -265,18 +253,23 @@ h2{
     font-size: 14px !important;
     white-space: pre;
   }
+
   .doctor_list {
     padding: 0 30px;
   }
+
   .team-li:hover .team-box::before {
     width: 0px !important;
   }
+
   .team-box:hover .team-info {
     opacity: 1;
   }
+
   .team-box {
     position: relative;
   }
+
   .team-box::before {
     content: "";
     width: 54px;
@@ -288,6 +281,7 @@ h2{
     top: -17px;
     right: 1px;
   }
+
   .team-info {
     position: absolute;
     opacity: 0;
@@ -302,8 +296,9 @@ h2{
     align-items: center;
     text-align: center;
     -webkit-box-pack: center;
-    height: calc( 100% - 20px );
+    height: calc(100% - 20px);
     width: 100%;
+
     .overlay {
       width: 100%;
       text-align: center;
@@ -319,6 +314,7 @@ h2{
       justify-content: center;
       padding: 0 15px;
     }
+
     .team-name {
       font-size: 20px;
       color: #ffffff;
@@ -327,6 +323,7 @@ h2{
       text-transform: uppercase;
       margin-bottom: 5px;
     }
+
     .team-description p {
       font-size: 12px;
       font-family: "Open Sans";
@@ -335,6 +332,7 @@ h2{
       line-height: 24px;
       white-space: normal;
     }
+
     .overlay::before {
       content: "";
       width: 44px;
@@ -345,6 +343,7 @@ h2{
       display: block;
       color: grey;
     }
+
     .overlay::after {
       content: "";
       width: 44px;
@@ -356,17 +355,20 @@ h2{
       color: grey;
     }
   }
+
   .bac-diqiu {
     position: absolute;
     width: 58vw;
     display: flex;
     z-index: -1;
   }
+
   .bac-foot-diqiu {
     right: 0;
     z-index: -1;
     position: absolute;
     margin-top: -25vw;
+
     img {
       width: 20vw;
     }
@@ -378,8 +380,10 @@ h2{
     text-align: center;
     flex-wrap: wrap;
   }
+
   .img_con {
     margin-bottom: 148px;
+
     h3 {
       padding: 0.8vw 0.5vw;
       margin-top: -1vw;
@@ -394,34 +398,48 @@ h2{
       letter-spacing: 0.1em;
 
       color: #ffffff;
+
       span {
         font-size: 20px;
       }
     }
   }
+
+  .img_con_en {
+    h3 {
+      font-size: 16px;
+    }
+  }
 }
+
 @media (max-width: 768px) {
   .doctor {
     padding-top: 10vw;
   }
+
   .doctor_list {
     width: 80vw;
     margin: 0 auto;
     text-align: center;
     flex-wrap: wrap;
+
     img {
       width: 62vw;
     }
   }
+
   .team-li:hover .team-box::before {
     width: 0px !important;
   }
+
   .team-box:hover .team-info {
     opacity: 1;
   }
+
   .team-box {
     position: relative;
   }
+
   .team-box::before {
     content: "";
     width: 54px;
@@ -433,6 +451,7 @@ h2{
     top: -17px;
     right: 1px;
   }
+
   .team-info {
     position: absolute;
     opacity: 0;
@@ -449,11 +468,13 @@ h2{
     -webkit-box-pack: center;
     padding: 0 27px;
     width: 100%;
-    height: calc( 100% - 20px );
+    height: calc(100% - 20px);
+
     .overlay {
       width: 100%;
       text-align: center;
     }
+
     .team-name {
       font-size: 20px;
       color: #ffffff;
@@ -462,6 +483,7 @@ h2{
       text-transform: uppercase;
       margin-bottom: 5px;
     }
+
     .team-description p {
       font-size: 12px;
       font-family: "Open Sans";
@@ -469,6 +491,7 @@ h2{
       font-weight: 500;
       line-height: 24px;
     }
+
     .overlay::before {
       content: "";
       width: 44px;
@@ -479,6 +502,7 @@ h2{
       display: block;
       color: grey;
     }
+
     .overlay::after {
       content: "";
       width: 44px;
@@ -490,17 +514,20 @@ h2{
       color: grey;
     }
   }
+
   .bac-diqiu {
     position: absolute;
     width: 58vw;
     display: flex;
     z-index: -1;
   }
+
   .bac-foot-diqiu {
     right: 0;
     z-index: -1;
     position: absolute;
     margin-top: -25vw;
+
     img {
       width: 20vw;
     }
@@ -515,6 +542,7 @@ h2{
 
   .img_con {
     margin-bottom: 50px;
+
     h3 {
       padding: 3vw 3vw;
       margin-top: -6vw;
@@ -529,9 +557,17 @@ h2{
       letter-spacing: 0.1em;
 
       color: #ffffff;
+
       span {
         font-size: 20px;
       }
+    }
+  }
+
+  .img_con_en {
+    h3 {
+      font-size: 12px;
+      max-width: 216px;
     }
   }
 }

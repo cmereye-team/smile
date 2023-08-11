@@ -20,6 +20,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  
   .gradient_title_bg {
     display: inline-block;
     background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
@@ -210,5 +211,9 @@ div {font-family:  var(--font_family), sans-serif !important;}
         right: -15vw;
       }
     }
+  }
+  
+  .gradient_font_en {
+    max-width: 200px;
   }
 }
