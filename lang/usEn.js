@@ -136,7 +136,8 @@ module.exports = {
         h4: 'With our medical technology and service reputation, we received：',
         p8: '-over 1500 times public offering subscription in the Hong Kong stock market in 2018',
         p9: '-China Healthcare Industry Award in 2019',
-        p10: '-The 4th CSRC of The Most Valuable Pharmaceutical Enterprise in 2020'
+        p10: '-The 4th CSRC of The Most Valuable Pharmaceutical Enterprise in 2020',
+        rt_btn: 'learn more'
       },
       Se3CentreInfor: {
         p: '',

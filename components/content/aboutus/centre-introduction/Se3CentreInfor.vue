@@ -197,7 +197,7 @@ export default {
 
   .Se2ComIntro .section_text {
     max-width: 738px;
-    height: 1070px;
+    height: 1100px;
     margin-left: 424px;
     box-shadow: 0px 0px 20px rgba(174, 213, 231, 0.75);
   }

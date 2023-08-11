@@ -26,7 +26,7 @@
           class="mbShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_7') }}<br class="mbShow" /><span
           class="pcShow">，</span>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_8') }}
       </p>
-      <nuxt-link :to="localePath('/contact-us')" class="more_lin">了解更多</nuxt-link>
+      <nuxt-link :to="localePath('/contact-us')" class="more_lin">{{ $t('aboutUs.centreIntroduction.Se2ComIntro.rt_btn') }}</nuxt-link>
     </div>
     <div class="page_container box">
       <div class="booking">
@@ -246,7 +246,7 @@ export default {
 
   .more_lin {
     position: absolute;
-    width: 110px;
+    width: 120px;
     height: 46px;
     background: #4570b6;
     border-radius: 0px;
