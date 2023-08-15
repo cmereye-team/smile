@@ -164,8 +164,8 @@ export default {
             List = res.data.map((item, index) => {
               return {
                 className: `banner_${index + 1}`,
-                pc_hkImg: `https://admin.hkcmereye.com/${item.pic}`,
-                mb_hkImg: `https://admin.hkcmereye.com/${item.mobilepic}`,
+                pc_hkImg: `https://admin.hkcmereye.com${item.pic}`,
+                mb_hkImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
                 link: item.link,
                 isRouterPath: item.title == 'link' ? true : false
@@ -181,8 +181,8 @@ export default {
             List = res.data.map((item, index) => {
               return {
                 className: `banner_${index + 1}`,
-                pc_cnImg: `https://admin.hkcmereye.com/${item.pic}`,
-                mb_cnImg: `https://admin.hkcmereye.com/${item.mobilepic}`,
+                pc_cnImg: `https://admin.hkcmereye.com${item.pic}`,
+                mb_cnImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
                 link: item.link,
                 isRouterPath: item.title == 'link' ? true : false
@@ -198,8 +198,8 @@ export default {
             List = res.data.map((item, index) => {
               return {
                 className: `banner_${index + 1}`,
-                pc_enImg: `https://admin.hkcmereye.com/${item.pic}`,
-                mb_enImg: `https://admin.hkcmereye.com/${item.mobilepic}`,
+                pc_enImg: `https://admin.hkcmereye.com${item.pic}`,
+                mb_enImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
                 link: item.link,
                 isRouterPath: item.title == 'link' ? true : false

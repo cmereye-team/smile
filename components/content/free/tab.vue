@@ -45,7 +45,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至14.8.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至15.9.2023</td>
             </tr>
             <tr>
               <td>
@@ -141,7 +141,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至31.8.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至15.9.2023</td>
             </tr>
             <tr>
               <td>
@@ -252,7 +252,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至 14.8.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至 15.9.2023</td>
             </tr>
             <tr>
               <td>
@@ -428,7 +428,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至14.8.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至15.9.2023</td>
             </tr>
             <tr>
               <td>

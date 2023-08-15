@@ -149,13 +149,13 @@
       <h2>{{$t('contactUs.h3')}}</h2>
       <div class="flex md:mt-0 mt-5" v-if="currentIndex === 0">
         <div class="time-box">
-          <p class="text-blue">星期一至五</p>
+          <p class="text-blue">{{$t('contactUs.mon')}}</p>
           <p>09:00—19:00</p>
           <!-- <p>09:30—13:30</p>
           <p>14:30—19:00</p> -->
         </div>
         <div class="time-box">
-          <p class="text-blue">星期六</p>
+          <p class="text-blue">{{$t('contactUs.saturday')}}</p>
           <p>09:00—18:00</p>
           <!-- <p>09:30—13:30</p> -->
           <!-- <p>09:30—17:30</p>
@@ -163,24 +163,24 @@
         </div>
         <div class="time-box">
           <p class="text-blue">{{$t('contactUs.p')}}</p>
-          <p>休息</p>
+          <p>{{$t('contactUs.closed')}}</p>
         </div>
       </div>
       <div class="flex md:mt-0 mt-5" v-if="currentIndex === 1">
         <div class="time-box">
-          <p class="text-blue">星期一至五</p>
+          <p class="text-blue">{{$t('contactUs.mon')}}</p>
           <p>09:30—13:30</p>
           <p>14:30—19:00</p>
         </div>
         <div class="time-box">
-          <p class="text-blue">星期六</p>
+          <p class="text-blue">{{$t('contactUs.saturday')}}</p>
           <p>09:30—13:30</p>
           <!-- <p>09:30—17:30</p> -->
-          <p>09:30—14:00(尖沙咀)</p>
+          <p>09:30—14:00({{ $t('contactUs.googleMap.name9') }})</p>
         </div>
         <div class="time-box">
           <p class="text-blue">{{$t('contactUs.p')}}</p>
-          <p>休息</p>
+          <p>{{$t('contactUs.closed')}}</p>
         </div>
       </div>
     </div>
@@ -223,12 +223,12 @@ export default {
         // },
         {
           number: "3892 5099",
-          name: "旺 角",
+          name: this.$t('contactUs.googleMap.name9'),
           address: this.$t('contactUs.googleMap.address3')
         },
         {
           number: "3892 5089",
-          name: "尖沙咀",
+          name: this.$t('contactUs.googleMap.name10'),
           address: this.$t('contactUs.googleMap.address4')
         },
       ],
@@ -245,12 +245,12 @@ export default {
         },
         {
           number: "852 3956 2026",
-          name: "旺 角",
+          name: this.$t('contactUs.googleMap.name9'),
           address: this.$t('contactUs.googleMap.address7')
         },
         {
           number: "852 3956 2026",
-          name: "尖沙咀",
+          name:this.$t('contactUs.googleMap.name10'),
           address:this.$t('contactUs.googleMap.address8')
         },
         {
@@ -270,7 +270,7 @@ export default {
         },
         {
           number: "852 3956 2026",
-          name: "沙田",
+          name: this.$t('contactUs.googleMap.name5'),
           address: this.$t('contactUs.googleMap.address12')
         },
         {

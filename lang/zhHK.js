@@ -440,6 +440,9 @@ module.exports = {
   },
   contactUs: {
     h3: '營業時間',
+    mon: '星期一至五',
+    saturday: '星期六',
+    closed: '休息',
     p: '星期日及公眾假期',
     title1: '矯視中心',
     title2: '眼科診所',
@@ -452,6 +455,8 @@ module.exports = {
       name6: '元朗（恆香老餅家對面）',
       name7: '荃灣',
       name8: '將軍澳',
+      name9: '旺 角',
+      name10: '尖沙咀',
       address1: '畢打街1-3號中建大廈1512室 (港鐵站G出口，置地廣場樓上)',
       address2: '百德新街2-20號恒隆中心1614 -15室 (港鐵站E出口)',
       address3: '彌敦道625及639號雅蘭中心一期702室 (港鐵站E1出口)',
@@ -1221,8 +1226,8 @@ module.exports = {
     p6: '本集團會起用第三者內容供應商及服務供應商，並提供接駁其他網站之連結。此等第三者可於用戶使用其服務時收集有關用戶之個人資料。此等第三者將依其私隱政策行事，而我們的《私隱政策聲明》及《個人資料收集聲明》並不涵蓋該等第三者。',
     p7: `用戶如對我們之私隱政策及慣例有任何疑問，請電郵<a
         style="color: #25395e"
-        href=" mailto:marketing@cmereye.com"
-        >marketing@cmereye.com</a
+        href=" mailto:info@hkcmer.com"
+        >info@hkcmer.com</a
       >致希瑪眼科醫療控股有限公司。`,
     p8: '個人資料收集聲明',
     p9: '本聲明乃遵照《個人資料(私隱)條例》(第486章)的要求而發出，通知閣下收集資料的目的、閣下同意我們如何使用這些資料及閣下的權利。本聲明會不時更改，故請定期查閱。閣下登記使用我們之服務及每次登入我們網站，即表示同意接受當時生效之個人資料收集聲明。',
@@ -1238,14 +1243,14 @@ module.exports = {
     p19: '資料之查閱',
     p20: `閣下有權根據《個人資料（私隱）條例》(第486章)的規定，要求查閱或更正閣下之個人資料。如有任何查閱或更正資料的要求，請電郵至<a
         style="color: #25395e"
-        href=" mailto:marketing@cmereye.com"
-        >marketing@cmereye.com</a
+        href=" mailto:info@hkcmer.com"
+        >info@hkcmer.com</a
       >。 此乃中文譯本，如有任何爭議，一切以英文為準。`,
     p21: '希瑪眼科醫療控股有限公司保留隨時更改、刪除或補充此條款及細則之權利，而不作另行通知。',
     p22: `希瑪眼科醫療控股有限公司感謝貴客戶長期支持，我們不時與貴客戶分享希瑪眼科醫療控股有限公司的各種最新資訊。如貴客戶不願意收取希瑪眼科醫療控股有限公司的直接促銷材料及/或資訊，可以電郵至：<a
         style="color: #25395e"
-        href=" mailto:marketing@cmereye.com"
-        >marketing@cmereye.com</a
+        href=" mailto:info@hkcmer.com"
+        >info@hkcmer.com</a
       >。`,
     p23: '此乃中文譯本，如有任何爭議，一切以英文為準。'
   },

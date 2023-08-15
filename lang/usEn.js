@@ -439,42 +439,47 @@ module.exports = {
     subscribe: '立即預約'
   },
   contactUs: {
-    h3: '營業時間',
-    p: '星期日及公眾假期',
-    title1: '矯視中心',
-    title2: '眼科診所',
+    h3: 'Opening Hours',
+    mon: 'Monday to Friday',
+    saturday: 'Saturday',
+    p: 'Sundays and public holidays',
+    closed: 'Closed',
+    title1: 'SMILE Refractive Center',
+    title2: 'Eye Center',
     googleMap: {
-      name1: "中 環",
-      name2: "銅鑼灣",
-      name3: '觀塘',
-      name4: '沙田 (百佳Fusion 側)',
-      name5: "沙田",
-      name6: '元朗（恆香老餅家對面）',
-      name7: '荃灣',
-      name8: '將軍澳',
-      address1: '畢打街1-3號中建大廈1512室 (港鐵站G出口，置地廣場樓上)',
+      name1: "Central",
+      name2: "Causeway Bay",
+      name3: 'Kwun Tong',
+      name4: 'Sha Tin (ParknShop Fusion)',
+      name5: "Sha Tin",
+      name6: 'Yuen Long (Opposite to Hang Heung Cake Shop)',
+      name7: 'Tsuen Wan',
+      name8: 'Tseung Kwan O',
+      name9: 'Mong Kok',
+      name10: 'Tsim Sha Tsui',
+      address1: 'Room 1512, Central Building, 1-3 Pedder Street, Central（Exit G, Central MTR Station, upstairs at The Landmark）',
       address2: '百德新街2-20號恒隆中心1614 -15室 (港鐵站E出口)',
-      address3: '彌敦道625及639號雅蘭中心一期702室 (港鐵站E1出口)',
-      address4: '梳士巴利道18-24號K11 ATELIER辦公大樓1906室 (K11 Musea附近)',
-      address5: '畢打街1-3號中建大廈1515室',
-      address6: '皇后大道中33號萬邦行1908室',
-      address7: '彌敦道625及639號雅蘭中心一期1208室',
-      address8: '梳士巴利道18-24號K11 ATELIER辦公大樓1906室（K11 MUSEA附近）',
-      address9: '百德新街2-20號恒隆中心1614-15室',
-      address10: '開源道79號鱷魚恤中心16樓1601室',
-      address11: '沙田正街11-17號偉華中心2樓5A號鋪',
-      address12: '沙田正街11-17號偉華中心2樓1C—1F號鋪',
-      address13: '元朗青山公路45及47號誠信商業大廈地鋪',
-      address14: '荃灣沙咀道255號思源樓地下',
-      address15: '將軍澳運亨路1號新都城中心一期地下55-56號鋪（寶琳站B2出口）'
+      address3: 'Room 702, One Grand Tower, 625 and 639 Nathan Road, Mong Kok （Mong Kok MTR Station Exit E1）',
+      address4: 'Room 1906, K11 ATELIER Victoria Dockside, 18-24 Salisbury Road, Tsim Sha Tsui（Tsim Sha Tsui MTR Station Exit J2）',
+      address5: 'Suite 1515, Central Building, 1-3 Pedder Street',
+      address6: 'Room 1908, Melbourne Plaza, 33 Queen’s Road Central',
+      address7: 'Room 1208, One Grand Tower, 625 and 639 Nathan Road',
+      address8: 'Room 1906, 19/F, K11 ATELIER, 18-24 Salisbury Road (near K11 MUSEA)',
+      address9: 'Room 1614-15, Hang Lung Centre, 2-20 Paterson Street',
+      address10: 'Room 1601, 16/F, Crocodile Centre, 79 Hoi Yuen Road',
+      address11: 'Shop 5A, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street',
+      address12: 'Shop 1C—1F, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street',
+      address13: 'G/F, Sing Shun Building, 45 & 47 Castle Peak Road, Yuen Long',
+      address14: 'G/F, Sze Yuen Mansion, No. 255 Sha Tsui Road',
+      address15: 'Shop G55-56, G/F, Metro City Phase I, 1 Wan Hang Road (Po Lam MTR Station, Exit B2)'
     },
     serveTable: {
-      title: '服務熱線',
-      th1: '服務中心',
-      th2: '電話熱線',
-      h3_1: '希瑪眼科中心',
-      h3_2: '希瑪微笑矯視中心',
-      h3_3: '希瑪眼科視光中心'
+      title: 'Hotline',
+      th1: 'Service Center',
+      th2: 'Hotline',
+      h3_1: 'CMER Dennis Lam & Partners Eye Center',
+      h3_2: 'CMER SMILE Refractive Center',
+      h3_3: 'CMER VISION Center'
     }
   },
   disclaimer: {
@@ -1216,8 +1221,8 @@ module.exports = {
     p6: '本集團會起用第三者內容供應商及服務供應商，並提供接駁其他網站之連結。此等第三者可於用戶使用其服務時收集有關用戶之個人資料。此等第三者將依其私隱政策行事，而我們的《私隱政策聲明》及《個人資料收集聲明》並不涵蓋該等第三者。',
     p7: `用戶如對我們之私隱政策及慣例有任何疑問，請電郵<a
         style="color: #25395e"
-        href=" mailto:marketing@cmereye.com"
-        >marketing@cmereye.com</a
+        href=" mailto:info@hkcmer.com"
+        >info@hkcmer.com</a
       >致希瑪眼科醫療控股有限公司。`,
     p8: '個人資料收集聲明',
     p9: '本聲明乃遵照《個人資料(私隱)條例》(第486章)的要求而發出，通知閣下收集資料的目的、閣下同意我們如何使用這些資料及閣下的權利。本聲明會不時更改，故請定期查閱。閣下登記使用我們之服務及每次登入我們網站，即表示同意接受當時生效之個人資料收集聲明。',
@@ -1233,14 +1238,14 @@ module.exports = {
     p19: '資料之查閱',
     p20: `閣下有權根據《個人資料（私隱）條例》(第486章)的規定，要求查閱或更正閣下之個人資料。如有任何查閱或更正資料的要求，請電郵至<a
         style="color: #25395e"
-        href=" mailto:marketing@cmereye.com"
-        >marketing@cmereye.com</a
+        href=" mailto:info@hkcmer.com"
+        >info@hkcmer.com</a
       >。 此乃中文譯本，如有任何爭議，一切以英文為準。`,
     p21: '希瑪眼科醫療控股有限公司保留隨時更改、刪除或補充此條款及細則之權利，而不作另行通知。',
     p22: `希瑪眼科醫療控股有限公司感謝貴客戶長期支持，我們不時與貴客戶分享希瑪眼科醫療控股有限公司的各種最新資訊。如貴客戶不願意收取希瑪眼科醫療控股有限公司的直接促銷材料及/或資訊，可以電郵至：<a
         style="color: #25395e"
-        href=" mailto:marketing@cmereye.com"
-        >marketing@cmereye.com</a
+        href=" mailto:info@hkcmer.com"
+        >info@hkcmer.com</a
       >。`,
     p23: '此乃中文譯本，如有任何爭議，一切以英文為準。'
   },
