@@ -18,17 +18,19 @@
         v-if="screenWidth > 768"
       >
         <div class="swiper-wrapper">
-          <div
+          <!-- 改div 为a标签   用href 替代@click -->
+          <a
             class="swiper-slide"
             v-for="(banner, index) in banners"
             :key="index"
-            @click="toVideoDetail(banner.link)"
+            :href="banner.link"
+            target="_blank"
           >
             <div class="swiper_di">
               <img :src="banner.src" />
               <nuxt-link class="link_des" :to="localePath(banner.link)"></nuxt-link>
             </div>
-          </div>
+          </a>
         </div>
         <div class="swiper-button-prev flex items-center justify-center">
           <img src="../../../asset/image/common/left-white.svg" alt="" />
