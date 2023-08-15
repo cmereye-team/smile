@@ -471,7 +471,7 @@ body .gradient_font {
       font-size: 1.3vw;
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
         border-radius: 10px;
         // border: 2px solid #81dbec;
         border-radius: 10px;
