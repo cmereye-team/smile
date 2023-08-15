@@ -45,7 +45,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至15.9.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }} 15.9.2023</td>
             </tr>
             <tr>
               <td>
@@ -69,7 +69,7 @@
       <div class="pb-20 taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>套餐包括</span>
+            <span>{{$t('chargeDetail.span18')}}</span>
           </div>
           <div class="icon-box">
             <div class="box">
@@ -141,7 +141,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至15.9.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}31.8.2023</td>
             </tr>
             <tr>
               <td>
@@ -165,7 +165,7 @@
       <div class="pb-20 taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>套餐包括</span>
+            <span>{{$t('chargeDetail.span18')}}</span>
           </div>
           <div class="icon-box">
             <div class="box">
@@ -252,7 +252,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至 15.9.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }} 15.9.2023</td>
             </tr>
             <tr>
               <td>
@@ -303,7 +303,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至10.7.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（{{ $t('chargeDetail.td1_4') }}10.7.2023）</td>
             </tr>
             <tr>
               <td>
@@ -342,7 +342,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（即日至6.6.2023）</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（{{ $t('chargeDetail.td1_4') }}6.6.2023）</td>
             </tr>
             <tr>
               <td>
@@ -364,7 +364,7 @@
       <div class="pb-20 taoc_boxs">
         <div class="mt-20 taoc_box taoc_box_2">
           <div class="titel">
-            <span>套餐包括</span>
+            <span>{{$t('chargeDetail.span18')}}</span>
           </div>
           <div class="icon-box">
             <div class="box">
@@ -428,7 +428,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至15.9.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}15.9.2023</td>
             </tr>
             <tr>
               <td>
@@ -452,7 +452,7 @@
       <div class="pb-20 taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>套餐包括</span>
+            <span>{{$t('chargeDetail.span18')}}</span>
           </div>
           <div class="icon-box">
             <div class="box">
@@ -689,7 +689,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} 即日至5.6.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}5.6.2023</td>
             </tr>
             <tr>
               <td>
@@ -711,7 +711,7 @@
       <div class="pb-20">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>套餐包括</span>
+            <span>{{$t('chargeDetail.span18')}}</span>
           </div>
           <div class="icon-box">
             <div class="box">
@@ -1137,7 +1137,8 @@ i {
   height: 50px;
   margin-bottom: 20px;
   span{
-    width: 110px;
+    width: fit-content;
+    padding: 0 5px;
     border: 1px solid #D9EAED;
     height: 46px;
     line-height: 46px;
@@ -1311,10 +1312,11 @@ i {
   .taoc_box {
     margin: 0 auto;
     width: 789px;
-    height: 431px;
+    // height: 431px;
     background: #f5fdff;
     border: 0.5px solid #b3b1b2;
     border-radius: 10px;
+    padding-bottom: 15px;
     .icon-box {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1330,7 +1332,7 @@ i {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 10px;
+        line-height: 16px;
         /* or 50% */
         margin-top: 25px;
         text-align: center;

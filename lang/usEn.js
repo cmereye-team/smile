@@ -2,7 +2,7 @@
 module.exports = {
 
   home: {
-    navbar: '立即預約',
+    navbar: 'Book NOW',
     headers: {
       aboutSmile: 'About Us',
       orthopedicServices: 'Vision Correction',
@@ -391,52 +391,54 @@ module.exports = {
     }
   },
   chargeDetail: {
-    captionTitle: '本診所價目清晰，絕無其他額外收費',
-    p1: '單眼',
-    p2: '雙眼',
+    captionTitle: 'All prices are listed as below. No additional charges.',
+    p1: 'Monocular',
+    p2: 'Binocular',
     td1: '由你決定的微笑時刻優惠',
     td1_1: '由你決定的微笑時刻優惠',
     td1_2: 'CMER SMILE PRO限定優惠',
-    td1_3: '讓眼睛享受清爽夏日優惠',
-    td2: '術前檢查費用',
-    span1: '*指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期',
-    span2: '^完成矯視後可退回術前檢查費用',
-    span3: '#需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費',
-    span17: '以上為非指定醫生價錢',
+    td1_3: 'Discount',
+    td1_4: 'from now until',
+    td2: 'Presurgery examination fee',
+    span1: '*Designated credit card enjoys 6/12 months Interest-free installment',
+    span2: '^Refund of presurgery examination fee after completion of vision correction surgery',
+    span3: '#It has to be completed within one year after the surgery. If it exceeds one year, another appointment needs to be scheduled, and the consultation fee will be charged at the regular (non-corrective package) rate.',
+    span17: 'The above is the price for non-designated doctors ',
 
-    span4: '眼科專科醫生檢查',
-    span5: '術前檢查費用',
-    span6: '術後3次覆診',
-    span7: '增進手術',
-    span8: '無限視光檢查',
-    span9: '手術當日藥費',
-    span10: '藥費另外收費',
+    span18: 'Plan includes',
+    span4: 'Eye examination by ophthalmologist',
+    span5: 'Preoperative examination fee',
+    span6: '3 follow-up consultations',
+    span7: 'Enhancement',
+    span8: 'Unlimited Refractive examination',
+    span9: 'Medicine fee for the day of correction',
+    span10: '',
 
-    span11: '*指定信用卡（東亞/渣打/滙豐）可享6/12/18/24/36個月免息分期',
-    span12: '單焦點人工晶體',
-    span13: '多焦點人工晶體',
-    span14: '術後5次覆診',
-    span15: 'Premium套餐價格',
-    span16: '*需要術後兩年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費',
+    span11: '*Designated credit card enjoys 6/12/18/24/36 months Interest-free installment',
+    span12: 'Single-focal IOL',
+    span13: 'Astigmatic Single-focal IOL',
+    span14: '5 follow-up consultations',
+    span15: '',
+    span16: '*It has to be completed within two years after the surgery. If it exceeds one year, another appointment needs to be scheduled, and the consultation fee will be charged at the regular (non-corrective package) rate.',
 
     p3: '帶散光',
-    p4: '不帶散光',
-    p5: '散光',
+    p4: 'without astigmatism',
+    p5: 'with astigmatism',
 
-    title1: 'SMILE 微笑激光矯視',
-    title2: 'ICL植入式隱形眼鏡',
-    title3_1: 'LASIK 激光矯視/TPRK經上皮激光角膜切削手術',
-    title3: 'LASIK 激光矯視',
+    title1: 'SMILE',
+    title2: 'ICL',
+    title3_1: 'LASIK',
+    title3: 'LASIK',
     title4: 'Clear-Vision',
     title5: '收費詳情',
     title6: '消費券詳情',
-    title7: 'SMILE Pro微笑激光矯視'
+    title7: 'SMILE PRO'
 
   },
   consumptionVoucher: {
     h2: '消費券詳情',
     query: '查詢',
-    subscribe: '立即預約'
+    subscribe: 'Book NOW'
   },
   contactUs: {
     h3: 'Opening Hours',
