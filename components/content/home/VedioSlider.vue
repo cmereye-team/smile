@@ -42,15 +42,16 @@
       </div>
       <div v-swiper:mySwiper="swiperOptionMb" class="swiperWrap" v-else>
         <div class="swiper-wrapper">
-          <div
+          <a
             class="swiper-slide"
             v-for="(banner, index) in banners"
             :key="index"
-            @click="toVideoDetail(banner.link)"
+            :href="banner.link"
+            target="_blank"
           >
             <img :src="banner.src" />
             <nuxt-link class="link_des" :to="localePath(banner.link)"></nuxt-link>
-          </div>
+          </a>
         </div>
         <div class="swiper-button-prev flex items-center justify-center">
           <img src="../../../asset/image/common/left-white.svg" alt="" />
