@@ -39,7 +39,11 @@
     <div class="text_ev page_container">
       <div class="box">
         <h3>{{$t('aboutUs.centreIntroduction.huanjswiper.h3')}}</h3>
-        <p>
+        <p
+        :style="{
+          textAlign: $i18n.locale === 'en' ? 'justify' : 'inherit',
+        }"
+        >
           {{$t('aboutUs.centreIntroduction.huanjswiper.p1')}}
           K11 ATELIER
           {{$t('aboutUs.centreIntroduction.huanjswiper.p2')}}

@@ -5,22 +5,48 @@
         <p>CENTER</p>
       </div>
       <div class="serve_title">
-        <p>{{ $t('aboutUs.centreIntroduction.Se3CentreInfor.p') }}</p>
+        <p>{{ $t("aboutUs.centreIntroduction.Se3CentreInfor.p") }}</p>
       </div>
       <div class="md:flex pcShow page_container img_box">
-        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
+        <img
+          class="flex-1"
+          src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg"
+          alt
+        />
       </div>
       <div class="md:flex mbShow page_container img_box">
-        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
+        <img
+          class="flex-1"
+          src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg"
+          alt
+        />
       </div>
-      <div class="section_text shadow-lg">
-        <p>
-          <span>{{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span1') }}</span><br class="pcShow" />
-          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span2') }}<br />
-          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span3') }}<br />
-          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span4') }}<br />
-          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span5') }}<br />
-          {{ $t('aboutUs.centreIntroduction.Se3CentreInfor.span6') }}
+      <div
+        class="section_text shadow-lg"
+        :style="{
+          maxWidth: $i18n.locale === 'en' ? '888px' : '738px',
+          marginLeft: $i18n.locale === 'en' ? '280px' : '424px',
+          height: $i18n.locale === 'en' ? '960px' : '780px',
+        }"
+      >
+        <p :style="{
+          textAlign: $i18n.locale === 'en' ? 'justify' : 'initial',
+        }">
+          <span>{{
+            $t("aboutUs.centreIntroduction.Se3CentreInfor.span1")
+          }}</span
+          ><br class="pcShow" />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span2") }}<br />
+          <br :style="{
+          display: $i18n.locale === 'en' ? 'inlineBlock' : '780px',
+        }"  />
+          <br :style="{
+          height: $i18n.locale === 'en' ? '960px' : '780px',
+        }" />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span3") }}<br />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span4") }}<br />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span5") }}<br />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span6") }}
         </p>
       </div>
     </div>
@@ -67,7 +93,7 @@ export default {
       },
     };
   },
-  created() { },
+  created() {},
   methods: {},
 };
 </script>
@@ -122,14 +148,11 @@ export default {
       -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
     }
-
   }
 }
 
 // pc
 @media only screen and (min-width: 768px) {
-
-
   .img_box {
     display: flex;
     flex-direction: column;
@@ -188,7 +211,6 @@ export default {
     }
   }
 
-
   p {
     font-size: 15px !important;
 
@@ -197,7 +219,7 @@ export default {
 
   .Se2ComIntro .section_text {
     max-width: 738px;
-    height: 1100px;
+    height: 780px;
     margin-left: 424px;
     box-shadow: 0px 0px 20px rgba(174, 213, 231, 0.75);
   }
@@ -213,7 +235,7 @@ export default {
     text-align: justify;
     letter-spacing: 0.1em;
 
-    color: #6D6E71;
+    color: #6d6e71;
   }
 
   .Se2ComIntro {
@@ -320,7 +342,6 @@ export default {
     }
   }
 
-
   h2 {
     font-size: 14px;
   }
@@ -346,4 +367,5 @@ export default {
       }
     }
   }
-}</style>
+}
+</style>
