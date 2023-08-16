@@ -203,7 +203,14 @@ h2 {
 // mb
 @media (max-width: 768px) {
   .equip-text::-webkit-scrollbar {
-    width: 1px;
+    width: 12px;
+    border-radius: 15px;
+    background: #ccc
+  }
+  .equip-text::-webkit-scrollbar-thumb {
+      background-color: #4570b6;
+      border-radius: 5px;
+      height: 30px;
   }
 
   .bacground-equi {
@@ -302,7 +309,14 @@ h2 {
 // pc
 @media (min-width: 768px) {
   .equip-text::-webkit-scrollbar {
-    width: 1px;
+    width: 12px;
+    border-radius: 15px;
+    background: #ccc
+  }
+  .equip-text::-webkit-scrollbar-thumb {
+      background-color: #4570b6;
+      border-radius: 5px;
+      height: 30px;
   }
 
   .bacground-equi-right {

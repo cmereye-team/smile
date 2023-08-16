@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-        <span>{{$t('chargeDetail.span3')}}</span>
+        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
@@ -285,10 +285,10 @@
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1') + `(${$t('chargeDetail.p4')}`}}</p>
+                <p>{{$t('chargeDetail.p1')}} <br /> ({{ $t('chargeDetail.p4') }})</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2') + `(${$t('chargeDetail.p4')}`}}</p>
+                <p>{{$t('chargeDetail.p2')}} <br /> ({{ $t('chargeDetail.p4') }})</p>
               </th>
             </tr>
           </thead>
@@ -324,10 +324,10 @@
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1') + `(${$t('chargeDetail.p5')})`}}</p>
+                <p>{{$t('chargeDetail.p1')}} <br /> ({{ $t('chargeDetail.p5') }})</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2') + `(${$t('chargeDetail.p5')})`}}</p>
+                <p>{{$t('chargeDetail.p2')}} <br /> ({{ $t('chargeDetail.p5') }})</p>
               </th>
             </tr>
           </thead>
@@ -395,7 +395,7 @@
             </div>
           </div>
         </div>
-        <span class="shoufei">{{$t('chargeDetail.span3')}}</span>
+        <span class="icl_smile shoufei">{{$t('chargeDetail.span3')}}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
@@ -490,7 +490,7 @@
             </div>
           </div>
         </div>
-        <span>{{$t('chargeDetail.span3')}}</span>
+        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
@@ -567,7 +567,7 @@
             </tr>
           </tbody>
         </table>
-        <span style="margin-left: 110px;">^{{$t('chargeDetail.span17')}}</span>
+        <span class="vision_smile" style="">^{{$t('chargeDetail.span17')}}</span>
       </div>
       <div class="table-1-box mbShow">
         <table class="gdp">
@@ -945,16 +945,24 @@ export default {
   methods: {
     titelclick(index) {
       this.action = index;
-      if (index === 0) {
-        window.location.href = "/charge-detail#smile";
-      } else if (index === 1) {
-        window.location.href = "/charge-detail#smilePro";
-      } else if (index === 2) {
-        window.location.href = "/charge-detail#ICL";
-      } else if (index === 3) {
-        window.location.href = "/charge-detail#LASIK";
+      let lang_sign = ''
+      if (this.$i18n.locale === 'cn') {
+        lang_sign = '/cn/'
+      } else if ( this.$i18n.locale === 'en') {
+        lang_sign = '/en/'
       } else {
-        window.location.href = "/charge-detail#Clear-Vision";
+        lang_sign = '/'
+      }
+      if (index === 0) {
+        window.location.href = `${lang_sign}charge-detail#smile`;
+      } else if (index === 1) {
+        window.location.href = `${lang_sign}charge-detail#smilePro`;
+      } else if (index === 2) {
+        window.location.href =`${lang_sign}charge-detail#ICL`;
+      } else if (index === 3) {
+        window.location.href = `${lang_sign}charge-detail#LASIK`;
+      } else {
+        window.location.href = `${lang_sign}charge-detail#Clear-Vision`;
       }
     },
     //判断是否打开
@@ -1117,6 +1125,29 @@ i {
   padding: 2vw;
   // background-color: #dfdfdf;
 }
+.notice_smile {
+  display: inline-block;
+  max-width: 780px;
+  padding: 0 5px;
+  color: #6D6E71;
+  font-size: 13px;
+  line-height: 20px;
+}
+.icl_smile {
+  display: inline-block;
+  max-width: 550px;
+  padding: 0 5px;
+  color: #6D6E71;
+  font-size: 13px;
+  line-height: 20px;
+}
+.vision_smile {
+  margin-left: 110px;
+  color: #6D6E71;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
 .smile_pro_notice {
   display: flex;
   flex-direction: column;
@@ -1125,9 +1156,14 @@ i {
   font-style: normal;
   font-weight: 350;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: .02rem;
   color: #444343;
+  max-width: 780px;
+  padding: 0 5px;
+  &>span:nth-child(2) {
+    margin-top: 5px;
+  }
 }
 .tabBtn{
   width: 100%;
@@ -1408,7 +1444,7 @@ i {
     font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
     /* or 83% */
     background-image: -webkit-linear-gradient(
@@ -1424,6 +1460,7 @@ i {
   .taoc_boxs {
     span {
       letter-spacing: 0.02rem;
+      display: inline-block;
     }
   }
   .table-1-box {
@@ -1615,7 +1652,7 @@ i {
     font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
     /* or 83% */
     background-image: -webkit-linear-gradient(

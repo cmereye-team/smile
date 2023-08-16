@@ -1,47 +1,75 @@
 <template>
   <div class="Se2ComIntro">
-    <div class="company page_container">
-      <div class='company_tit'>
-        <p class="text_blue">{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p1') }}</p>
-        <p class="text_blue2">（{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p2') }}）</p>
+    <div class="company page_container"   :style="{paddingLeft: $i18n.locale == 'en' ?  '83px':'1rem',paddingRight: $i18n.locale == 'en' ?  '83px':'1rem'}">
+      <div class="company_tit">
+        <p class="text_blue">
+          {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p1") }}
+        </p>
+        <p class="text_blue2">
+          （{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p2") }}）
+        </p>
       </div>
-      <p>
-        {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_1') }}<br class="mbShow" /><span
-          class="pcShow">，</span>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_2') }}<br />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_3') }}<br
-          class="mbShow" />
-        {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_4') }}<br
-          class="mbShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_5') }}<br
-          class="pcShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_6') }}<br class="mbShow" /><span
-          class="pcShow">、</span>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_7') }}<br />
-        {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_8') }}<span class="pcShow">，</span><br
-          class="mbShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p3_9') }}
+      <p :style="{textAlign: $i18n.locale == 'en' ?  'justify':'center'}">
+        {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_1")
+        }}<br class="mbShow" :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" /><span class="pcShow">，</span
+        >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_2")
+        }}<br
+          :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+        />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_3")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />
+        {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_4")
+        }}<br
+          :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+          class="mbShow"
+        />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_5")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="pcShow" />{{
+          $t("aboutUs.centreIntroduction.Se2ComIntro.p3_6")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" /><span class="pcShow">、</span
+        >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_7") }}<br  :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />
+        {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_8")
+        }}<span class="pcShow">，</span><br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />{{
+          $t("aboutUs.centreIntroduction.Se2ComIntro.p3_9")
+        }}
       </p>
       <p class="mag_top">
-        <span style="margin-bottom:10px;">{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_1') }}</span><br />
-        {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_2') }}<br
-          class="mbShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_3') }}<br />
-        {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_4') }}<br
-          class="mbShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_5') }}<br class="pcShow" />
-        {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_6') }}<br
-          class="mbShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_7') }}<br class="mbShow" /><span
-          class="pcShow">，</span>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p4_8') }}
+        <span style="margin-bottom: 10px">{{
+          $t("aboutUs.centreIntroduction.Se2ComIntro.p4_1")
+        }}</span
+        ><br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />
+        {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_2")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow"/>{{
+          $t("aboutUs.centreIntroduction.Se2ComIntro.p4_3")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />
+        {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_4")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />{{
+          $t("aboutUs.centreIntroduction.Se2ComIntro.p4_5")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="pcShow" />
+        {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_6")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />{{
+          $t("aboutUs.centreIntroduction.Se2ComIntro.p4_7")
+        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" /><span class="pcShow">，</span
+        >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_8") }}
       </p>
-      <nuxt-link :to="localePath('/contact-us')" class="more_lin">{{ $t('aboutUs.centreIntroduction.Se2ComIntro.rt_btn') }}</nuxt-link>
+      <nuxt-link :to="localePath('/contact-us')" class="more_lin">{{
+        $t("aboutUs.centreIntroduction.Se2ComIntro.rt_btn")
+      }}</nuxt-link>
     </div>
     <div class="page_container box">
       <div class="booking">
         <p>VISION</p>
       </div>
       <div class="serve_title">
-        <p>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p5') }}</p>
+        <p>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p5") }}</p>
       </div>
 
       <div class="section_text md:flex shadow-lg">
         <div class="details_box">
           <p>
-            {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p6_1') }}
-            <br />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p6_2') }}<br
-              class="pcShow" />{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p6_3') }}
+            {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p6_1") }}
+            <br />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p6_2")
+            }}<br class="pcShow" />{{
+              $t("aboutUs.centreIntroduction.Se2ComIntro.p6_3")
+            }}
           </p>
         </div>
         <div class="content mx-12 md:mx-0">
@@ -49,63 +77,89 @@
             <li>
               <span>C</span>
               <p>
-                <i>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.i1') }}</i>
+                <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i1") }}</i>
                 <i>Professional <em>C</em>linical Services</i>
               </p>
             </li>
             <li>
               <span>M</span>
               <p>
-                <i>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.i2') }}</i>
+                <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i2") }}</i>
                 <i>Modern <em>M</em>anagement</i>
               </p>
             </li>
             <li>
               <span>E</span>
               <p>
-                <i>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.i3') }}</i>
+                <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i3") }}</i>
                 <i>Quality <em>E</em>ducation</i>
               </p>
             </li>
             <li>
               <span>R</span>
               <p>
-                <i>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.i4') }}</i>
+                <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i4") }}</i>
                 <i>Pioneering <em>R</em>esearch</i>
               </p>
             </li>
             <div class="xima">
-              <span>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.span') }}</span>
+              <span>{{
+                $t("aboutUs.centreIntroduction.Se2ComIntro.span")
+              }}</span>
               <p>
-                {{ $t('aboutUs.centreIntroduction.Se2ComIntro.p7') }}
+                {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p7") }}
               </p>
             </div>
           </ul>
           <div class="award_text">
-            <h4 :style="{letterSpacing: $i18n.locale == 'en' ? '1.8px' : '0.2vw' }">{{ $t('aboutUs.centreIntroduction.Se2ComIntro.h4') }}</h4>
-            <p>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p8') }}</p>
-            <p>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p9') }}</p>
-            <p>{{ $t('aboutUs.centreIntroduction.Se2ComIntro.p10') }}</p>
+            <h4
+              :style="{
+                letterSpacing: $i18n.locale == 'en' ? '1.8px' : '0.2vw',
+              }"
+            >
+              {{ $t("aboutUs.centreIntroduction.Se2ComIntro.h4") }}
+            </h4>
+            <p>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p8") }}</p>
+            <p>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p9") }}</p>
+            <p>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p10") }}</p>
           </div>
         </div>
       </div>
       <div class="md:flex pcShow page_container img_box">
-        <img class="flex-1" src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
-          alt />
-        <img class="flex-1" src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
-          alt />
-        <img class="flex-1" src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
-          alt />
+        <img
+          class="flex-1"
+          src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
+          alt
+        />
+        <img
+          class="flex-1"
+          src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
+          alt
+        />
+        <img
+          class="flex-1"
+          src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
+          alt
+        />
       </div>
     </div>
 
     <div class="md:flex mbShow page_container img_box">
-      <img class="flex-1" src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
-        alt />
-      <img class="flex-1" src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
-        alt />
-      <img class="flex-1" src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
-        alt />
+      <img
+        class="flex-1"
+        src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
+        alt
+      />
+      <img
+        class="flex-1"
+        src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
+        alt
+      />
+      <img
+        class="flex-1"
+        src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
+        alt
+      />
     </div>
   </div>
 </template>
@@ -136,7 +190,7 @@ export default {
       },
     };
   },
-  created() { },
+  created() {},
   methods: {},
 };
 </script>
@@ -240,7 +294,7 @@ export default {
     line-height: 1.5 !important;
   }
 
-  .Se2ComIntro .section_text .xima>span {
+  .Se2ComIntro .section_text .xima > span {
     font-size: 40px !important;
   }
 
@@ -265,7 +319,8 @@ export default {
 
   .details_box {
     position: absolute;
-    background: url("https://static.cmereye.com/imgs/2023/03/a76a352cd7da7d4e.png") no-repeat;
+    background: url("https://static.cmereye.com/imgs/2023/03/a76a352cd7da7d4e.png")
+      no-repeat;
     background-size: 100% 100%;
     width: 202px;
     height: 153px;
@@ -278,7 +333,6 @@ export default {
       font-family: var(--font_family);
       font-style: normal;
       font-weight: 300;
-
 
       line-height: 30px !important;
       /* or 200% */
@@ -353,7 +407,8 @@ export default {
 
   .company {
     position: relative;
-    background: url(https://static.cmereye.com/imgs/2023/03/0d3dadae028b6e8a.png) no-repeat;
+    background: url(https://static.cmereye.com/imgs/2023/03/0d3dadae028b6e8a.png)
+      no-repeat;
     background-size: 100% 95%;
     margin: 70px auto;
     text-align: center;
@@ -442,7 +497,6 @@ export default {
   }
 
   .Se2ComIntro .section_text .content p {
-
     font-family: var(--font_family);
     font-style: normal;
     font-weight: 300;
@@ -468,7 +522,6 @@ export default {
       }
 
       .content {
-
         h4 {
           font-size: 20px;
           margin-top: 40px;
@@ -478,11 +531,11 @@ export default {
         .link {
           margin-top: 1.8vw;
 
-          a {}
+          a {
+          }
         }
 
         ul {
-
           li {
             display: flex;
             align-items: center;
@@ -611,7 +664,8 @@ export default {
 
   .details_box {
     // position: absolute;
-    background: url(https://static.cmereye.com/imgs/2023/03/a76a352cd7da7d4e.png) no-repeat;
+    background: url(https://static.cmereye.com/imgs/2023/03/a76a352cd7da7d4e.png)
+      no-repeat;
     background-size: 93% 100%;
     width: 260px;
     height: 139px;
@@ -699,7 +753,8 @@ export default {
 
   .company {
     position: relative;
-    background: url("https://static.cmereye.com/imgs/2023/03/bb1a387f486a992b.png") no-repeat;
+    background: url("https://static.cmereye.com/imgs/2023/03/bb1a387f486a992b.png")
+      no-repeat;
     background-size: 100% 98%;
     background-position: bottom;
     margin: 70px auto;
@@ -833,7 +888,7 @@ export default {
       margin-left: 4px;
       margin-right: 14px;
 
-      &>p {
+      & > p {
         font-family: var(--font_family);
         font-style: normal;
         font-weight: 300;
@@ -844,7 +899,7 @@ export default {
         text-align: justify;
         letter-spacing: 0.1em;
 
-        color: #6D6E71;
+        color: #6d6e71;
       }
 
       h4 {
@@ -921,4 +976,5 @@ export default {
       }
     }
   }
-}</style>
+}
+</style>

@@ -466,9 +466,13 @@ li {
     text-align: center;
     color: #6D6E71;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .time-box:nth-child(3) {
     border-right: none;
+    max-width: 280px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -496,6 +500,7 @@ li {
     padding: 0 10px;
     border-right: 1px solid #ddd;
     text-align: center;
+    flex: 1;
   }
   .time-box:nth-child(3) {
     border-right: none;
@@ -509,7 +514,8 @@ li {
     text-align: center !important;
     display: flex;
     justify-content: center;
-    font-size: 18px !important;
+    font-size: 16px !important;
+    line-height: 20px;
   }
 }
 @media only screen and (max-width: 768px) {

@@ -289,7 +289,7 @@ export default {
       font-style: normal;
       font-weight: 500;
       font-size: 17px;
-      line-height: 52px;
+      line-height: 1.4;
       /* or 43% */
       letter-spacing: 0.1em;
       margin-top: 10px;
@@ -304,6 +304,7 @@ export default {
       /* or 43% */
       color: #6d6e71;
       letter-spacing: 0.1em;
+      margin-top: 5px;
     }
   }
   .firstDiv {
