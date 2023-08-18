@@ -1,7 +1,7 @@
 <template>
   <div class="main_banner">
     <div class="smile-banner">
-      <img src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" alt="">
+      <img data-src="https://static.cmereye.com/imgs/2023/08/1f0f4cb2d113be1f.jpg" src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" alt="">
       <div>
         <div class="title">{{$t('service.relexSmile.mainBanner.p')}}</div>
         <div class="text">Small Incision Lenticule Extraction</div>
@@ -92,6 +92,20 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
-
+  .smile-banner{
+    width: auto;
+    border-radius: 44px;
+    margin: 24px 30px;
+    height: 0;
+    padding-bottom: calc(100% - 60px);
+    &>img{
+      height: 100%;
+      width: 200%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 </style>

@@ -194,7 +194,7 @@
               <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
               <span>
                 {{$t('chargeDetail.span8')}}
-                <i style="font-size: 14px;">*</i>
+                <i style="font-size: 14px;">#</i>
               </span>
             </div>
             <div class="box">
@@ -205,7 +205,7 @@
         </div>
         <div class="smile_pro_notice">
           <span>{{$t('chargeDetail.span3')}}</span>
-          <span>{{$t('chargeDetail.span16')}}</span>
+          <!-- <span>{{$t('chargeDetail.span16')}}</span> -->
         </div>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">

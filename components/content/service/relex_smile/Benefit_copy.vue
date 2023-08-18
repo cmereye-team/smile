@@ -24,16 +24,22 @@
       />
     </div> -->
     <div class="benefit-bg">
+      <div class="benefit-t">
+        <img src="https://static.cmereye.com/imgs/2023/08/223c37697c582ed6.jpg" alt="">
+        <span>SMILE</span>
+        <span>微笑激光</span>
+      </div>
       <div class="benefit-in">
         <div class="title">
           {{$t('service.relexSmile.benefit.h2')}}
         </div>
         <div class="benefit-in-lists">
           <div class="listIn" v-for="(benefitItem, index) in benefitList" :key="index">
-            <div>
+            <div class="listIn-t">
               <img :src="benefitItem.index" alt="" class="index" />
-              <p>{{ benefitItem.des }}</p>
+              <p>{{benefitItem.text}}</p>
             </div>
+            <div class="listIn-b">{{benefitItem.des}}</div>
           </div>
         </div>
       </div>
@@ -47,26 +53,32 @@ export default {
       benefitList: [
         {
           index: 'https://static.cmereye.com/imgs/2023/08/25d132c30d6fd581.jpg',
+          text: '手術簡單',
           des: this.$t('service.relexSmile.benefit.des1'),
         },
         {
           index: 'https://static.cmereye.com/imgs/2023/08/c542f7fb196d561b.jpg',
+          text: '術後復原快',
           des: this.$t('service.relexSmile.benefit.des2'),
         },
         {
           index: 'https://static.cmereye.com/imgs/2023/08/c3f16aa0ab1631c3.jpg',
+          text: '手術時間短',
           des: this.$t('service.relexSmile.benefit.des3'),
         },
         {
           index: 'https://static.cmereye.com/imgs/2023/08/b50a60057195d7bc.jpg',
+          text: '術後影響少',
           des: this.$t('service.relexSmile.benefit.des4'),
         },
         {
           index: 'https://static.cmereye.com/imgs/2023/08/1e99a0e8eec63d14.jpg',
+          text: '微創',
           des: this.$t('service.relexSmile.benefit.des5'),
         },
         {
           index: 'https://static.cmereye.com/imgs/2023/08/6e2bdbcdd6c2ba35.jpg',
+          text: '效果穩定',
           des: this.$t('service.relexSmile.benefit.des6'),
         },
       ],
@@ -81,13 +93,40 @@ export default {
 .benefit{
   width: 100%;
   overflow: hidden;
-  margin-top: 105px;
+  padding-top: 105px;
   &-bg{
-    padding: 202px 0 148px;
+    padding: 202px 0 92px;
     width: 150%;
     margin-left: -25%;
     border-radius: 50% 50% 0 0;
     background: rgba(199, 232, 239, 0.2);
+    position: relative;
+  }
+  &-t{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+    width: 307px;
+    height: 307px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    img{
+      margin-top: 50px;
+      margin-bottom: 11px;
+    }
+    span{
+      color: #4570B6;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 50px; /* 166.667% */
+      letter-spacing: 7.5px;
+    }
   }
   &-in{
     width: 100%;
@@ -122,14 +161,34 @@ export default {
       justify-content: space-between;
       .listIn{
         width: 307px;
-        height: 307px;
         margin-bottom: 56px;
-        &>div{
-          // width: 80%;
-          // height: 0;
-          // padding-bottom: 80%;
-          // background: #fff;
-          // border-radius: 50%;
+        &-t{
+          width: 100%;
+          height: 307px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #fff;
+          border-radius: 50%;
+          p{
+            color: #4570B6;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 20px; /* 80% */
+            letter-spacing: 8.75px;
+            margin-top: 43px;
+          }
+        }
+        &-b{
+          color: #6D6E71;
+          text-align: center;
+          font-size: 23px;
+          font-weight: 300;
+          line-height: 35px; /* 152.174% */
+          letter-spacing: 10.35px;
+          max-width: 80%;
+          margin: 16px auto 0;
         }
       }
     }
