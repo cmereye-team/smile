@@ -3,29 +3,33 @@
     <div class="section_text md:flex justify-center">
       <div class="md:flex justify-center table-box pcShow">
         <table class="gdp">
-          <caption>
-            {{$t('contactUs.serveTable.title')}}
+          <caption
+            :style="{ color: $i18n.locale === 'en' ? '#6d6e76' : '#444343' }"
+          >
+            {{
+              $t("contactUs.serveTable.title")
+            }}
           </caption>
           <thead>
             <tr>
-              <th>{{$t('contactUs.serveTable.th1')}}</th>
-              <th>{{$t('contactUs.serveTable.th2')}}</th>
+              <th>{{ $t("contactUs.serveTable.th1") }}</th>
+              <th>{{ $t("contactUs.serveTable.th2") }}</th>
               <th>WhatsApp</th>
             </tr>
           </thead>
           <tbody>
             <tr style="background-color: #f3fcfe">
-              <td>{{$t('contactUs.serveTable.h3_1')}}</td>
+              <td>{{ $t("contactUs.serveTable.h3_1") }}</td>
               <td>3956 2026</td>
               <td>9345 1508</td>
             </tr>
             <tr>
-              <td>{{$t('contactUs.serveTable.h3_2')}}</td>
+              <td>{{ $t("contactUs.serveTable.h3_2") }}</td>
               <td>3892 5099</td>
               <td>9796 2992</td>
             </tr>
             <tr>
-              <td>{{$t('contactUs.serveTable.h3_3')}}</td>
+              <td>{{ $t("contactUs.serveTable.h3_3") }}</td>
               <td>3892 5089</td>
               <td>6918 0511</td>
             </tr>
@@ -33,9 +37,11 @@
         </table>
       </div>
       <div class="mbShow table-box-mb">
-        <div class="serve"><p>{{$t('contactUs.serveTable.title')}}</p></div>
+        <div class="serve">
+          <p>{{ $t("contactUs.serveTable.title") }}</p>
+        </div>
         <div class="box-mb">
-          <h3>{{$t('contactUs.serveTable.h3_1')}}</h3>
+          <h3>{{ $t("contactUs.serveTable.h3_1") }}</h3>
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
@@ -53,7 +59,7 @@
           </div>
         </div>
         <div class="box-mb">
-          <h3>{{$t('contactUs.serveTable.h3_2')}}</h3>
+          <h3>{{ $t("contactUs.serveTable.h3_2") }}</h3>
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
@@ -71,7 +77,7 @@
           </div>
         </div>
         <div class="box-mb">
-          <h3>{{$t('contactUs.serveTable.h3_3')}}</h3>
+          <h3>{{ $t("contactUs.serveTable.h3_3") }}</h3>
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
@@ -136,7 +142,7 @@ export default {
   .gdp caption {
     font-family: var(--font_family);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 30px;
     /* identical to box height, or 120% */
@@ -163,6 +169,10 @@ export default {
 }
 // pc
 @media only screen and (min-width: 768px) {
+  .Se2ComIntro .gdp th {
+    font-size: 15px;
+    font-weight: 400;
+  }
   .Se2ComIntro .gdp td {
     font-size: 20px;
   }
@@ -234,7 +244,7 @@ export default {
         text-align: center;
         letter-spacing: 0.1em;
 
-        color: #6D6E71;
+        color: #6d6e71;
       }
     }
   }
