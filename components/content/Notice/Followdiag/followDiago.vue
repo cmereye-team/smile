@@ -5,25 +5,24 @@
     </div>
     <div class="time-box">
       <div class="one">
-        <div class="piont"></div>
+        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
         <span>{{$t('notice.followdiag.followDiago.span1')}}</span>
       </div>
       <div class="two">
-        <div class="piont"></div>
+        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
         <span>{{$t('notice.followdiag.followDiago.span2')}}</span>
       </div>
       <div class="three">
-        <div class="piont"></div>
+        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
         <span>{{$t('notice.followdiag.followDiago.span3')}}</span>
       </div>
       <div class="four">
-        <div class="piont"></div>
-        <div class="arrow"></div>
+        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
+        <div class="arrow" :class="[$i18n.locale == 'en' ? 'arrowEng arrow' : 'arrow']"></div>
         <span>{{$t('notice.followdiag.followDiago.span4')}}</span>
       </div>
       <div class="five">
-        <div class="piont"></div>
-
+        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
         <span v-html="$t('notice.followdiag.followDiago.span5')"></span
         >
       </div>
@@ -102,6 +101,32 @@ h2 {
       height: 20px;
       background-color: transparent;
     }
+    .arrowEng {
+      background: linear-gradient(229.22deg, #4e81bf 6.93%, #62a5d1 93.07%);
+      content: "";
+      display: inline-block;
+      height: 3px;
+      left: 140px;
+      position: absolute;
+      top: 13px;
+      bottom: 0;
+      display: flex;
+      text-align: center;
+      width: 224px;
+    }
+    .arrowEng::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      right: 0px;
+      border-color: #4b7bbc;
+      border-style: solid;
+      border-width: 3px 3px 0 0;
+      transform: rotate(45deg);
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+    }
   }
   .three {
     position: relative;
@@ -127,6 +152,10 @@ h2 {
       display: flex;
       text-align: center;
       width: 192px;
+    }
+    .piontEng::after {
+      left: 140px;
+      width: 223px;
     }
   }
   .two {
@@ -154,6 +183,10 @@ h2 {
       text-align: center;
       width: 192px;
     }
+    .piontEng::after {
+      left: 136px;
+      width: 226px;
+    }
   }
   .one {
     position: relative;
@@ -179,6 +212,10 @@ h2 {
       width: 172px;
       display: flex;
       text-align: center;
+    }
+    .piontEng::after {
+      left: 140px;
+      width: 227px;
     }
   }
 

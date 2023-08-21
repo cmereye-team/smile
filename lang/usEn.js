@@ -814,44 +814,44 @@ module.exports = {
     },
     followdiag: {
       followDiago: {
-        h2: '矯視後覆診',
-        span1: '翌日',
-        span2: '一星期',
-        span3: '一個月',
-        span4: '三個月',
-        span5: `六個月<br />
-            （或按醫生之需要覆診指示）`
+        h2: `Post-operative Examination`,
+        span1: 'The day after treatment day',
+        span2: 'One week after treatment day',
+        span3: '1 month after treatment day',
+        span4: '3 months after treatment day',
+        span5: `6 months after treatment day <br />
+        (follow doctor's instructions)`
       },
       precautions: {
-        h2_1: '視後護理及注意事項',
-        h2_2: '矯視後護理',
-        detail: `<strong>矯視後當天內：</strong>
+        h2_1: 'Post-operative Care & Notice',
+        h2_2: 'Post-operative Care',
+        detail: `<strong>Day of treatment：</strong>
             <p>
-              ·矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少。
+              ·Discomfort such as watering eyes or a little foreign body sensation after normal vision is normal. The discomfort gradually decreases after two to three hours.
             </p>
-            <p>·按醫生指示定時服藥或滴眼藥水，維持四星期。</p>
-            <p>·避免揉擦眼睛</p>
+            <p>·Take your medicine or eye drops regularly as directed by your doctor for four weeks.</p>
+            <p>·Avoid rubbing your eyes</p>
             <br />
-            <strong>矯視後一星期內：</strong>
-            <p>·避免梘水、自來水或污水進入眼睛</p>
-            <p>·避免使用眼部化妝品</p>
+            <strong>One week after：</strong>
+            <p>·Avoid soap water, tap water or sewage entering the eyes</p>
+            <p>·Avoid applying eye makeup</p>
             <br />
-            <strong>矯視後一個月內：</strong>
-            <p>如有需要可配戴太陽眼鏡以防止紫外線的刺激或沙塵入眼</p>
-            <p>不可進行水上活動或浸熱水浴</p>
-            <p>不可進行碰撞性運動，如足球、籃球等</p>
+            <strong>One month after：</strong>
+            <p>Wear sunglasses if necessary, to prevent UV irritation or sand from getting into your eyes</p>
+            <p>No water activities or hot baths</p>
+            <p>Do not play collision sports, such as football, basketball, etc.</p>
             <br />
-            <p>*任何時候若眼睛突然出現劇痛或視力明顯下降等情況，必須盡快求醫。</p>`
+            <p>*nytime you have sudden pain in your eyes or a significant decrease in vision, you must contact your doctor as soon as possible.</p>`
       }
     },
     techProcess: {
       process: {
-        h2: '矯視流程',
-        span1: '經過詳細的眼睛檢查和診症，醫護人員會告知客人是否適合矯視，才進行矯視程序。',
-        span2: '屈光檢查',
-        span3: '術前準備',
-        span4: '預約翌日覆診',
-        span5: '矯視療程'
+        h2: 'Process of vision correction',
+        span1: 'After detailed eye examinations and consultations, our medical staff will inform you if you are suitable for vision correction',
+        span2: 'Refractive Test',
+        span3: 'Preparation for operation',
+        span4: 'schedule follow-up consultation',
+        span5: 'Vision correction'
       },
       regard: {
         h2: '注意事項',

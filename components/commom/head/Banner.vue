@@ -1,7 +1,7 @@
 <template>
   <div class="section flex justify-start items-center">
     <div class="des_box">
-      <h3 :class="$i18n.locale == 'en' ? 'gradient_font_en' : 'gradient_font'">
+      <h3 :class="$i18n.locale == 'en' ? 'gradient_font_en' : 'gradient_font'" :style="{maxWidth: $i18n.locale == 'en' && $route.path == '/en/post-corrective-care' ? '350px' :'initial' }">
         <slot name="title"></slot>
       </h3>
       <p>
