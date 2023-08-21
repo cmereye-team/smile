@@ -12,13 +12,12 @@
     <ul class="xtra_des">
       <li>
         <h3 class="gradient_title_bg">{{$t('service.relexSmile.xtra.h3_1')}}</h3>
-        <p v-html="$t('service.relexSmile.xtra.p2')">
+        <p :class="[$i18n.locale == 'en' ? 'pc_smile_xtra':'']" v-html="$t('service.relexSmile.xtra.p2')">
         </p>
       </li>
-
       <li>
         <h3 class="gradient_title_bg">{{$t('service.relexSmile.xtra.h3_2')}}</h3>
-        <p v-html="$t('service.relexSmile.xtra.p3')"></p>
+        <p :class="[$i18n.locale == 'en' ? 'pc_smile_xtra':'']" v-html="$t('service.relexSmile.xtra.p3')"></p>
       </li>
     </ul>
     <a href="#" class="mbShow">
@@ -90,7 +89,15 @@ export default {
       li:nth-child(1) {
         margin-bottom: 5vw;
       }
+      .pc_smile_xtra {
+      max-width: 810px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 1.8px;
     }
+    }
+    
   }
 }
 

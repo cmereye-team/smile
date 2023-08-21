@@ -5,9 +5,20 @@
     </div>
     <div class="benefit_content">
       <ul
+        v-if="$i18n.locale !== 'en'"
         class="benefit_list flex flex-col items-start justify-start page_container"
       >
-        <li v-for="(benefitItem, index) in benefitList" :key="index" class="">
+        <li v-for="(benefitItem, index) in benefitList" :key="index" :class="$i18n.locale === 'en' ? 'benefitList' + (index + 1): ''">
+          <img :src="benefitItem.index" alt="" class="index" />
+          <p>{{ benefitItem.des }}</p>
+        </li>
+      </ul>
+      <ul
+      v-else
+        class="benefit_list flex flex-col items-start justify-start page_container"
+        :class="[$i18n.locale == 'en' ? 'benefit_list_eng benefit_list':'benefit_list']"
+      >
+        <li v-for="(benefitItem, index) in benefitList_eng" :key="index" :class="$i18n.locale === 'en' ? 'benefitList' + (index + 1): ''">
           <img :src="benefitItem.index" alt="" class="index" />
           <p>{{ benefitItem.des }}</p>
         </li>
@@ -30,6 +41,32 @@ export default {
   data() {
     return {
       benefitList: [
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/old-one.png"),
+          des: this.$t('service.clearVision.benefit.p1'),
+        },
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/old-two.png"),
+          des: this.$t('service.clearVision.benefit.p2'),
+        },
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/old-three.png"),
+          des: this.$t('service.clearVision.benefit.p3'),
+        },
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/old-four.png"),
+          des: this.$t('service.clearVision.benefit.p4'),
+        },
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/old-five.png"),
+          des: this.$t('service.clearVision.benefit.p5'),
+        },
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/old-six.png"),
+          des: this.$t('service.clearVision.benefit.p6'),
+        },
+      ],
+      benefitList_eng:[
         {
           index: require("@/asset/image/service/CLEAR_Vision/one.png"),
           des: this.$t('service.clearVision.benefit.p1'),
@@ -73,6 +110,44 @@ h2 {
   }
   .benefit_list li:nth-child(6) p {
     width: 64%;
+  }
+  .benefitList1 {
+    p {
+      max-width: 370px;
+      text-align: left;
+    }
+  }
+  .benefitList2 {
+    p {
+      max-width: 345px;
+      text-align: left;
+    }
+  }
+  .benefitList3 {
+    p {
+      max-width: 310px;
+      text-align: left;
+    }
+  }
+  .benefitList4 {
+    p {
+      max-width: 250px;
+      text-align: left;
+    }
+  }
+  .benefitList5 {
+    p {
+      width: 100% !important;
+      max-width: 420px;
+      text-align: left;
+    }
+  }
+  .benefitList6 {
+    p {
+      width: 100% !important;
+      max-width: 480px;
+      text-align: left;
+    }
   }
   .section {
     margin-bottom: 0;
@@ -126,7 +201,7 @@ h2 {
       margin-left: 0vw;
     }
     li:nth-child(2) {
-      margin-left: 165px;
+      margin-left: 260px;
     }
     li:nth-child(3) {
       margin-left: 32px;
@@ -141,6 +216,9 @@ h2 {
       margin-left: 520px;
       // padding-bottom: 50px;
     }
+  }
+  .benefit_list_eng {
+    padding-bottom: 130px
   }
 }
 

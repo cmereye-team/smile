@@ -3,8 +3,7 @@
     <banner class="banner">
       <template v-slot:title>
         <div class="pcShow">
-          <p style="font-size: 28px">CMER CLEAR-Vision</p>
-
+          <p style="font-size: 28px" :style="{color: $i18n.locale == 'en' ? '#4570B6':'#9b9b9b'}">CMER CLEAR-Vision</p>
           <span>(C-MER Lens Exchange Achieving Renewed Vision)</span>
         </div>
         <div class="mbShow banner_serve">
@@ -102,10 +101,10 @@ export default {
     font-size: 14px;
   }
   .desBox{
-    max-width: 600px;
+    max-width: 100%;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 </style>

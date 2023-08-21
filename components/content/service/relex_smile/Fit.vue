@@ -2,15 +2,15 @@
   <div class="fit">
     <div class="section page_container">
       <h3 class="gradient_title_bg">{{ $t('service.relexSmile.fit.h3') }}</h3>
-      <div class="fit_des flex justify-between pcShow">
-        <ul class="fit_des_first">
+      <div class="fit_des flex justify-between pcShow" :class="[$i18n.locale == 'en' ? 'fit_des_eng':'fit_des']">
+        <ul class="fit_des_first"  :class="[$i18n.locale == 'en' ? 'fit_des_first_eng':'fit_des_first']">
           <li v-for="(item1, index) in fitList1" :key="index">
             <strong>{{ item1 }}</strong>
             <!-- <div v-html="text"></div> -->
           </li>
         </ul>
         <ul>
-          <li v-for="(item2, index) in fitList2" :key="index">
+          <li v-for="(item2, index) in fitList2" :key="index" :class="[$i18n.locale == 'en' ? 'fitList':'']">
             <strong>{{ item2 }}</strong>
           </li>
         </ul>
@@ -97,10 +97,20 @@ export default {
       .fit_des_first {
         margin-right: 100px;
       }
+      .fit_des_first_eng {
+        margin-right: 20px;
+        li:nth-child(1) {
+          max-width: 275px;
+        }
+        li:nth-child(4) {
+          max-width: 315px;
+        }
+      }
       .fit_des {
         margin-left: 5vw;
         ul {
           li {
+            max-width: 240px;
             white-space: pre-wrap;
             margin-bottom: 4vw;
             position: relative;
@@ -144,6 +154,30 @@ export default {
         }
         ul:nth-child(2) {
           margin-top: 5vw;
+        }
+      }
+      .fit_des_eng {
+        ul:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+      .fitList {
+        li:nth-child(1) {
+          max-width: 225px;
+        }
+        li:nth-child(2) {
+          max-width: 285px;
+        }
+        li:nth-child(3) {
+          max-width: 230px;
+        }
+        li:nth-child(4) {
+          max-width: 185px;
+        }
+        strong{
+          font-size: 18px !important;
+          line-height: 26px !important;
+          letter-spacing: 1.8px;
         }
       }
     }

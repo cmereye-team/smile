@@ -3,7 +3,7 @@
     <banner class="banner">
       <template v-slot:title>
         <div class="pcShow">
-          <h3 style="font-size: 28px">{{$t('service.relexSmile.mainBanner.p')}}</h3>
+          <h3 style="font-size: 28px" :style="{lineHeight: $i18n.locale == 'en' ? '1':'initial'}">{{$t('service.relexSmile.mainBanner.p')}}</h3>
           <span>(Small Incision Lenticule Extraction)</span>
         </div>
         <div class="mbShow banner_serve">

@@ -1,22 +1,22 @@
 <template>
   <div class="page_container suitable_box">
-    <div class="flex justify-center md:mt-28 mt-10">
+    <div class="flex justify-center" :class="[$i18n.locale == 'en' ? '': 'md:mt-28 mt-10']">
       <h2>{{$t('service.clearVision.suitable.h2')}}</h2>
     </div>
-    <div class="flex justify-evenly suit_box mt-10">
+    <div class="flex justify-evenly suit_box mt-10" :style="{marginBottom: $i18n.locale == 'en' ? '130px' : '190px'}">
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/6d192401e3e64882.png"
           alt=""
         />
-        <span>{{$t('service.clearVision.suitable.span1')}}</span>
+        <span v-html="$t('service.clearVision.suitable.span1')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/324ad7198a9d2632.png"
           alt=""
         />
-        <span>{{$t('service.clearVision.suitable.span2')}}</span>
+        <span v-html="$t('service.clearVision.suitable.span2')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
@@ -81,6 +81,7 @@ h2 {
         letter-spacing: 0.1em;
 
         color: #6D6E71;
+        min-width: 280px;
       }
     }
   }

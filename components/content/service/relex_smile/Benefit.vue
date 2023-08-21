@@ -5,9 +5,17 @@
     </div>
     <div class="benefit_content">
       <ul
-        class="benefit_list flex flex-col items-start justify-start page_container"
+        class="benefit_list flex flex-col items-start justify-start page_container" v-if="$i18n.locale !== 'en'"
       >
         <li v-for="(benefitItem, index) in benefitList" :key="index">
+          <img :src="benefitItem.index" alt="" class="index" />
+          <p>{{ benefitItem.des }}</p>
+        </li>
+      </ul>
+      <ul
+        class="benefit_list flex flex-col items-start justify-start page_container benefit_list_eng" v-else
+      >
+        <li v-for="(benefitItem, index) in benefitList_eng" :key="index">
           <img :src="benefitItem.index" alt="" class="index" />
           <p>{{ benefitItem.des }}</p>
         </li>
@@ -52,6 +60,32 @@ export default {
         },
         {
           index: require("@/asset/image/service/relex_smile/benefit_index6.svg"),
+          des: this.$t('service.relexSmile.benefit.des6'),
+        },
+      ],
+      benefitList_eng: [
+        {
+          index: require("@/asset/image/service/relex_smile/benefit_index1.png"),
+          des: this.$t('service.relexSmile.benefit.des1'),
+        },
+        {
+          index: require("@/asset/image/service/relex_smile/benefit_index2.png"),
+          des: this.$t('service.relexSmile.benefit.des2'),
+        },
+        {
+          index: require("@/asset/image/service/relex_smile/benefit_index3.png"),
+          des: this.$t('service.relexSmile.benefit.des3'),
+        },
+        {
+          index: require("@/asset/image/service/relex_smile/benefit_index4.png"),
+          des: this.$t('service.relexSmile.benefit.des4'),
+        },
+        {
+          index: require("@/asset/image/service/relex_smile/benefit_index5.png"),
+          des: this.$t('service.relexSmile.benefit.des5'),
+        },
+        {
+          index: require("@/asset/image/service/relex_smile/benefit_index6.png"),
           des: this.$t('service.relexSmile.benefit.des6'),
         },
       ],
@@ -145,6 +179,15 @@ h2{
     li:nth-child(6) {
       margin-left: 520px;
       padding-bottom: 123px;
+    }
+  }
+  .benefit_list_eng {
+    padding-bottom: 50px;
+    li {
+      p {
+        max-width: 380px;
+        text-align: left;
+      }
     }
   }
 }

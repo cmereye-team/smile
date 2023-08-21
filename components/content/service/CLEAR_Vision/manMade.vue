@@ -57,7 +57,9 @@ span{
     flex-direction: row;
     justify-content: center;
     img {
-      max-width: 20vw;
+      max-width: 100%;
+      height: 100%;
+      padding-right: 30px;
     }
     span {
       flex: 0.5;
@@ -72,6 +74,7 @@ span{
 
       color: #6D6E71;
       margin: 0 10px;
+      text-align: justify;
     }
   }
   .madeBox2 {
@@ -81,7 +84,9 @@ span{
     justify-content: center;
     flex-direction: row-reverse;
     img {
-      max-width: 20vw;
+      max-width: 100%;
+      height: 100%;
+      padding-left: 30px;
     }
     span {
       flex: 0.5;
@@ -96,6 +101,7 @@ span{
 
       color: #6D6E71;
       margin: 0 10px;
+      text-align: justify;
     }
   }
 }

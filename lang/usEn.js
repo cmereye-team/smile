@@ -18,11 +18,11 @@ module.exports = {
       aboutSmileChild_2: 'Medical Team',
       aboutSmileChild_3: 'Medical Equipment',
 
-      orthopedicServicesChild_1: 'SMILE 微笑激光矯視',
+      orthopedicServicesChild_1: 'ReLEx SMILE',
       orthopedicServicesChild_2: 'CMER CLEAR-Vision',
-      orthopedicServicesChild_3: 'LASIK 激光矯視',
-      orthopedicServicesChild_4: 'ICL植入式隱形眼鏡',
-      orthopedicServicesChild_5: 'SMILE Pro微笑激光矯視',
+      orthopedicServicesChild_3: 'LASIK',
+      orthopedicServicesChild_4: 'ICL',
+      orthopedicServicesChild_5: 'SMILE Pro',
 
       diagnosisInstructionsChild_1: 'Eye examination & Presurgery',
       diagnosisInstructionsChild_2: 'Process of vision correction',
@@ -1257,31 +1257,30 @@ module.exports = {
   service: {
     clearVision: {
       benefit: {
-        h2: '人工晶體置換術的好處',
-        p1: '最快術後一天可如常生活或工作',
-        p2: '大約10至15分鐘完成',
-        p3: '不需依賴眼鏡/隱形眼鏡',
-        p4: '不易出現排斥情況',
-        p5: '同時處理近視、遠視、散光、老花等問題',
-        p6: '根據個人眼睛實際狀況和生活需要，製訂合適的矯視方案'
+        h2: 'Advantages of Presbyopia Correction',
+        p1: 'Able to resume daily activities as early as the next day after surgery',
+        p2: 'Takes approximately 10 to 15 minutes to complete',
+        p3: 'No need to rely on eyeglasses/contact lenses',
+        p4: 'Less prone to rejection',
+        p5: 'Deal with myopia, hyperopia, astigmatism, presbyopia and other problems simultaneously',
+        p6: `According to the condition of the patient's eyes and the daily life need to formulate a suitable vision correction plan`
       },
       mainBanner: {
-        span: `坊間稱之為人工晶體置換術。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，一次過解決近視、遠視、散光、老花等問題。
-            希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業咨詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁`
+        span: `Commonly known as artificial lens replacement surgery, it aims to bring a brand new feeling to the patient's vision by replacing the natural lens with an artificial one, solving the problems of myopia, hyperopia, astigmatism, presbyopia, and more all at once. At the CMER SMILE Vision Correction Center, we tailor-made a customized correction plan to each patient's eye condition, profession, and lifestyle needs. After professional consultation, an ophthalmologist selects and implants a suitable artificial lens for the patient's visual needs, replacing the original aged or cloudy lens.`
       },
       manMade: {
-        h2: '人工晶體',
-        span1: '坊間稱之為人工晶體置換術。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，一次過解決近視、遠視、散光、老花等問題。',
-        span2: '希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業咨詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁之晶體。',
-        span3: `多焦距人工晶體以多個細小壓環把進入眼睛的光線分為兩至三束主要光線，產生不同焦點，形成遠、中、近的影像，讓眼睛可以不依靠眼內肌肉對焦，藉此解決近視、遠視、散光、老花等視力問題。`,
-        span4: `除了多焦距人工晶體外，亦有基本的單焦距人工晶體、散光多焦距人工晶體等選項。建議請先預約檢查諮詢眼科專科醫生專業意見，再選擇合適自己的人工晶體。`
+        h2: 'Artificial lens',
+        span1: `Commonly known as artificial lens replacement surgery, it aims to bring a brand new feeling to the patient's vision by replacing the natural lens with an artificial one, solving the problems of myopia, hyperopia, astigmatism, presbyopia, and more all at once. `,
+        span2: ` At the CMER SMILE Vision Correction Center, we tailor-made a customized correction plan to each patient's eye condition, profession, and lifestyle needs. After professional consultation, an ophthalmologist selects and implants a suitable artificial lens for the patient's visual needs, replacing the original aged or cloudy lens.`,
+        span3: `Multifocal artificial lenses use multiple small rings to divide incoming light into two to three main beams, generating different focal points to form images for distant, intermediate, and near vision. They allow the eyes to see clearly without relying on intraocular muscles to focus, thereby solving vision problems such as myopia, hyperopia, astigmatism, presbyopia, and more.`,
+        span4: `In addition to multifocal artificial lenses, there are basic single-focus artificial lenses, astigmatic multifocal lenses, and other options. We recommend making an appointment for an examination and consulting with an ophthalmologist for professional advice before choosing the appropriate artificial lens for oneself.`
       },
       suitable: {
-        h2: '合適對象',
-        span1: '40歲或以上',
-        span2: '熱愛運動',
-        span3: `佩戴多副矯正度數眼鏡<br />(近視、遠視、散光、老花)`,
-        span4: `不愛佩戴眼鏡或<br />隱形眼鏡`
+        h2: 'Who is suitable?',
+        span1: '40 years<br /> old or <br />above',
+        span2: 'love<br /> sports',
+        span3: `Wearing multiple pairs of<br /> corrective glasses for <br />different vision problems<br />(myopia, hyperopia,<br /> astigmatism, presbyopia)`,
+        span4: `Do not like<br /> wearing<br /> eyeglasses or<br /> contact lenses `
       }
     },
     icl: {
@@ -1365,55 +1364,50 @@ module.exports = {
     },
     relexSmile: {
       benefit: {
-        h2: 'SMILE 微笑激光矯視的好處',
-        des1: '無需製造角膜瓣',
-        des2: '最快術後翌日生活、工作',
-        des3: '4至5分鐘',
-        des4: '減低術後眼乾及感染情況',
-        des5: '傷口只有約2mm',
-        des6: '視力改善顯著'
+        h2: 'Advantages of ReLEx SMILE',
+        des1: 'No need to create a corneal flap',
+        des2: 'Able to resume daily life as early as the next day after surgery',
+        des3: 'The operation process time is 4-5 minutes',
+        des4: 'lower chance of getting postoperative dry eyes and',
+        des5: 'The wound is only about 2mm',
+        des6: 'Significant improvement in vision'
       },
       fit: {
-        h3: '你適合接受SMILE 微笑矯視嗎？',
+        h3: 'Who is suitable for SMILE?',
         fitList1: [
-          "1,000度以下近視，\n500度以下散光眼球 ",
-          "發育成熟，近視度數穩定 ",
-          " 角膜厚度正常",
-          "角膜沒受感染，\n例如發炎或曾受傷",
+          "Having below 1,000 degree myopia and/or 500 degree astigmatism ",
+          "Mature development, stable myopia",
+          "Having normal corneal thickness",
+          "The cornea is not infected, such as inflammation or previous injury",
         ],
         fitList2: [
-          "沒有患上眼疾，\n如青光眼或視網膜疾病 ",
-          "沒有患上自體免疫疾病，\n如風濕性關節炎或紅斑狼瘡 ",
-          " 不需要長期服用類固醇",
-          " 非懷孕"
+          "No eye disease, such as glaucoma or retinal disease ",
+          "Do not suffer from an autoimmune disease, such as rheumatoid arthritis or lupus",
+          "Does not require long-term steroid use",
+          "non pregnant"
         ]
       },
       mainBanner: {
-        p: 'SMILE微笑激光矯視',
-        span: `是突破性全新近視矯正技術，比傳統的LASIK激光矯視更安全、微創。本中心的SMILE微笑矯視使用Carl
-            Zeiss
-            VisuMax激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-4mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。`
+        p: 'ReLEx SMILE',
+        span: `Smile is a breakthrough new myopia correction technology that is safer and less invasive than traditional LASIK laser correction. Our center's SMILE (Small Incision Lenticule Extraction) uses the latest 3.0 system from Carl Zeiss VisuMax laser. The principle is to create a corneal tissue membrane with a full femtosecond laser scan without opening the corneal flap. The membrane is then removed through a small incision of 2-4mm to achieve vision correction. This technology can correct myopia, astigmatism, and presbyopia, reducing our dependence on glasses for our clients`
       },
       step: {
         h2_1: '微笑矯視',
         p: `突破性全新近視矯正技術，比傳統的LASIK激光矯視更安全、微創。本中心的
             SMILE 微笑矯視使用 Carl Zeiss VisuMax
             激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-4mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。`,
-        h2_2: '矯正步驟',
-        des1: '以全飛秒激光直接切割角膜中層',
-        des2: '製作一個約2-4mm的小切口',
-        des3: '將切割了的角膜透鏡從切口抽出'
+        h2_2: 'Steps of Smile',
+        des1: 'Direct cutting of the corneal mid-layer using',
+        des2: 'Make a small incision of approximately 2-4mm',
+        des3: 'Extract the cut corneal lens from the incision'
       },
       xtra: {
-        h2: 'SMILE XTRA角膜膠原交聯術',
-        p1: '(可與SMILE微笑激光矯視同時進行)',
-        h3_1: '什麼是SMILE XTRA？',
-        p2: `透過在角膜局部加入維生素B2,再經紫外線V2照射,使角膜裡面的膠原蛋白緊扣,
-            <br />
-            令角膜變得更加堅韌和穩定,降低角膜降弧／變形／反彈的寬度`,
-        h3_2: '我需要接受SMILE XTRA角膜膠原交聯術?',
-        p3: `如果你的眼晴度數較深、角膜比較薄，希望加強角膜以減低度數反彈機會，<br />經醫生評估後均可接受SMILE
-            XTRA角膜膠原交聯術。`,
+        h2: 'SMILE XTRA',
+        p1: '(It can be performed during the performance of Smile)',
+        h3_1: 'What is SMILE XTRA ?',
+        p2: `By adding vitamin B2 to the local area of the cornea and then exposing it to UV-V2, the collagen proteins inside the cornea are tightly bound, making the cornea more robust and stable, reducing the width of corneal sagging/deformation/rebound`,
+        h3_2: 'Do I need SMILE XTRA ?',
+        p3: `If you have a high degree of myopia and thin corneas and wish to strengthen your cornea to reduce the chances of regression, you will be eligible for SMILE XTRA corneal collagen cross-linking after evaluation by a doctor.`,
         p4: `透過在角膜局部加入維生素B2,再經紫外線V2照射,使角膜裡面的膠原蛋白緊扣,令角膜變得更加堅韌和穩定,降低角膜降弧／變形／反彈的寬度`,
         h5_2: '我需要接受SMILE XTRA?',
         p5: `如果你的眼晴度數較深、角膜比較薄，希望加強角膜以減低度數反彈機會，經醫生評估後均可接受SMILE XTRA角膜膠原交聯術。`
