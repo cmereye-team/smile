@@ -4,10 +4,10 @@
       <h2>{{$t('notice.techProcess.regard.h2')}}</h2>
     </div>
     <div class="regard-think">
-      <div class="regard-box text-center">
-        <span class="title">{{$t('notice.techProcess.regard.span1')}}</span>
+      <div class="regard-box text-center" :class="[$i18n.locale == 'en' ? 'regard-box regard-boxEng':'regard-box']">
+        <span class="title" :class="[$i18n.locale == 'en' ? 'title titleEng':'title']">{{$t('notice.techProcess.regard.span1')}}</span>
         <div class="md:flex">
-          <div class="regard">
+          <div class="regard" :class="[$i18n.locale == 'en' ? 'regard regardEng':'regard']">
             <img
               src="https://static.cmereye.com/imgs/2022/12/5281757b67f8c8b9.png"
               alt=""
@@ -25,8 +25,8 @@
           </div>
         </div>
       </div>
-      <div class="regard-box text-center">
-        <span class="title">{{$t('notice.techProcess.regard.title1')}}</span>
+      <div class="regard-box text-center" :class="[$i18n.locale == 'en' ? 'regard-box regard-boxEng':'regard-box']">
+        <span class="title" :class="[$i18n.locale == 'en' ? 'title titleEng':'title']">{{$t('notice.techProcess.regard.title1')}}</span>
         <div class="md:flex">
           <div class="regard">
             <img
@@ -48,39 +48,39 @@
       </div>
     </div>
     <div class="regard-think-two">
-      <div class="regard-box text-center">
-        <span class="title">{{$t('notice.techProcess.regard.title2')}}</span>
-        <div class="regard">
+      <div class="regard-box text-center" :class="[$i18n.locale == 'en' ? 'regard-box regard-boxEng':'regard-box']">
+        <span class="title" :class="[$i18n.locale == 'en' ? 'title titleEng':'title']">{{$t('notice.techProcess.regard.title2')}}</span>
+        <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
             src="https://static.cmereye.com/imgs/2022/12/0db6827e5b69e9fb.png"
             alt=""
             class="mb-5 ml-3"
           />
-          <span>{{$t('notice.techProcess.regard.span6')}}</span>
+          <span v-html="$t('notice.techProcess.regard.span6')"></span>
         </div>
-        <div class="regard">
+        <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
             src="https://static.cmereye.com/imgs/2022/12/8ef325fa917c3496.png"
             alt=""
             class="mb-5"
           />
-          <span>{{$t('notice.techProcess.regard.span7')}}</span>
+          <span v-html="$t('notice.techProcess.regard.span7')"></span>
         </div>
-        <div class="regard">
+        <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
             src="https://static.cmereye.com/imgs/2022/12/368b6b768066c0eb.png"
             alt=""
             class="mb-5"
           />
-          <span>{{$t('notice.techProcess.regard.span8')}}</span>
+          <span v-html="$t('notice.techProcess.regard.span8')"></span>
         </div>
-        <div class="regard">
+        <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
             src="https://static.cmereye.com/imgs/2022/12/eb4f9240aa44c41f.png"
             alt=""
             class="mb-5"
           />
-          <span>{{$t('notice.techProcess.regard.span9')}}</span>
+          <span v-html="$t('notice.techProcess.regard.span9')"></span>
         </div>
       </div>
     </div>
@@ -131,6 +131,9 @@ h2 {
     .regard-box .regard {
       margin: 0 64px;
     }
+    .boxRegardEng {
+      margin: 0 35px !important;
+    }
   }
   .regard-think {
     display: flex;
@@ -142,6 +145,7 @@ h2 {
     display: flex;
     width: 50%;
     padding: 31px;
+    position: relative;
     .title {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -160,6 +164,12 @@ h2 {
       text-fill-color: transparent;
       word-wrap: break-word;
       width: 50px;
+    }
+    .titleEng {
+      width: 147px;
+      position: absolute;
+      left: 13px;
+      top: 15px;
     }
     .regard {
       margin: 0 45px;
@@ -184,13 +194,18 @@ h2 {
         color: #6D6E71;
       }
     }
-    
+    .regardEng {
+      margin: 0;
+    }
   }
   .regard-box:first-child{
     .regard:last-child{
       margin: 0;
     }
   }
+  .regard-boxEng {
+      justify-content: flex-end;
+    }
 }
 @media screen and (max-width: 768px) {
   h2 {
@@ -214,6 +229,7 @@ h2 {
       margin-bottom: 10vw;
       margin-top: 10vw;
     }
+    
   }
   .regard-think {
     display: flex;

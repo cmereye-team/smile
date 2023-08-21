@@ -848,24 +848,24 @@ module.exports = {
       process: {
         h2: 'Process of vision correction',
         span1: 'After detailed eye examinations and consultations, our medical staff will inform you if you are suitable for vision correction',
-        span2: 'Refractive Test',
-        span3: 'Preparation for operation',
-        span4: 'schedule follow-up consultation',
-        span5: 'Vision correction'
+        span2: `Refractive <br /> Test`,
+        span3: `Preparation for <br /> operation`,
+        span4: `schedule follow-<br />up consultation`,
+        span5: `Vision<br /> correction`
       },
       regard: {
-        h2: '注意事項',
-        span1: '矯視前',
-        span2: `預先洗頭<br />避免術後雙眼入水`,
-        span3: `穿著寬鬆、開扣的襯衫<br />避免術後換衣服會觸碰雙眼`,
-        title1: '請勿便用',
-        span4: '眼部化妝品',
-        span5: `任何香水、香薰或<br />揮發性用品`,
-        title2: '矯視過程中',
-        span6: '不要郁動和說話',
-        span7: '放鬆心情，不要緊張',
-        span8: '請遵照醫生指示',
-        span9: '建議由親友陪同'
+        h2: 'Precautions',
+        span1: 'Before surgery',
+        span2: `Wash your hair in <br /> advance to avoid <br />  water getting into <br />  your eyes after<br />  surgery`,
+        span3: `Wear loose and <br />  comfortable clothing <br /> to avoid any touch of <br /> the eyes when <br /> changing clothes <br /> after the surgery`,
+        title1: 'Do not use',
+        span4: 'eye make-up',
+        span5: `perfume, cologne <br />  or any volatile <br />  products`,
+        title2: 'During surgery',
+        span6: `Do not move<br />  and talk during <br />  the surgery`,
+        span7: `Relax your body <br />  and mind`,
+        span8: `Follow doctor's <br /> instructions`,
+        span9: `friend or family <br />  member's company <br /> is recommended`
       }
     }
   },

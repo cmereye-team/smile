@@ -17,7 +17,7 @@
               alt=""
             />
           </div>
-          <div class="step-txt"><span>{{item.text}}</span></div>
+          <div class="step-txt" :class="[$i18n.locale == 'en' ? 'step-txt step-txt-eng':'step-txt']"><span v-html="item.text"></span></div>
         </div>
       </div>
     </div>
@@ -95,6 +95,9 @@ h2 {
     background-clip: text;
     white-space: pre;
   }
+}
+.step-txt-eng {
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .step-box {
