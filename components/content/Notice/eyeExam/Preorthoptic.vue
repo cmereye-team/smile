@@ -16,7 +16,7 @@
             src="https://static.cmereye.com/imgs/2022/12/c07c6b4f21d225d5.png"
             alt=""
           />
-          <span class="pt-3" v-html="$t('notice.eyeExam.preorthoptic.arrowOne.span1')"></span>
+          <span class="pt-3" :style="{textAlign: $i18n.locale === 'en' ? 'center' : 'left' }" v-html="$t('notice.eyeExam.preorthoptic.arrowOne.span1')"></span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
@@ -29,7 +29,7 @@
             src="https://static.cmereye.com/imgs/2022/12/7b3798d7b61abfb9.png"
             alt=""
           />
-          <span class="pt-3">{{$t('notice.eyeExam.preorthoptic.arrowOne.span2')}}</span>
+          <span class="pt-3" :style="{textAlign: $i18n.locale == 'en' ? 'center' : 'left' }">{{$t('notice.eyeExam.preorthoptic.arrowOne.span2')}}</span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
@@ -37,12 +37,12 @@
             alt=""
           />
         </div>
-        <div class="preorth flex justify-evenly flex-col justify-center">
+        <div class="preorth flex justify-evenly flex-col justify-center" :class="[$i18n.locale === 'en'? ' preorth':'preorth']">
           <img
             src="https://static.cmereye.com/imgs/2022/12/2f2d444c97114450.png"
             alt=""
           />
-          <span class="pt-3">{{$t('notice.eyeExam.preorthoptic.arrowOne.span3')}}</span>
+          <span class="pt-3" :style="{textAlign: $i18n.locale === 'en' ? 'center' : 'left' }">{{$t('notice.eyeExam.preorthoptic.arrowOne.span3')}}</span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
@@ -50,12 +50,12 @@
             alt=""
           />
         </div>
-        <div class="preorth flex justify-evenly flex-col justify-center">
+        <div class="preorth flex justify-evenly flex-col justify-center" :class="[$i18n.locale === 'en' ? 'preorthEng preorth':'preorth']">
           <img
             src="https://static.cmereye.com/imgs/2022/12/032341e288d255ad.png"
             alt=""
           />
-          <span class="pt-3">{{$t('notice.eyeExam.preorthoptic.arrowOne.span4')}}</span>
+          <span class="pt-3" :style="{textAlign: $i18n.locale === 'en' ? 'center' : 'left' }">{{$t('notice.eyeExam.preorthoptic.arrowOne.span4')}}</span>
         </div>
         <div class="arrow-two">
           <div class="Inappropriate">
@@ -149,6 +149,7 @@ h2 {
       img {
         width: 94px;
         margin: auto;
+        margin-bottom: 10px;
       }
       /deep/ span {
         font-family: var(--font_family);
@@ -161,15 +162,22 @@ h2 {
         letter-spacing: 0.1em;
 
         color: #6D6E71;
+        max-width: 140px;
       }
     }
+    .preorth:nth-child(1) /deep/ span {
+      max-width: 175px;
+    }
     .preorth:nth-child(5) img {
-      margin-bottom: 10px;
-      width: 45px;
       margin: auto;
+      margin-bottom: 30px;
+      width: 45px;
     }
     .preorth:nth-child(7) img {
-      margin-bottom: 42px;
+      margin-bottom: 35px;
+    }
+    .preorthEng:nth-child(7) img {
+      margin-bottom: 60px;
     }
   }
   .arrow-two {

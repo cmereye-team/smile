@@ -24,9 +24,9 @@ module.exports = {
       orthopedicServicesChild_4: 'ICL植入式隱形眼鏡',
       orthopedicServicesChild_5: 'SMILE Pro微笑激光矯視',
 
-      diagnosisInstructionsChild_1: '眼睛檢查及矯視前',
-      diagnosisInstructionsChild_2: '矯視流程',
-      diagnosisInstructionsChild_3: '矯視後覆診',
+      diagnosisInstructionsChild_1: 'Eye examination & Presurgery',
+      diagnosisInstructionsChild_2: 'Process of vision correction',
+      diagnosisInstructionsChild_3: 'Post-operative Examination',
 
       commonProblemChild_1: 'SMILE 微笑激光矯視',
       commonProblemChild_2: 'LASIK 激光矯視',
@@ -781,35 +781,38 @@ module.exports = {
   notice: {
     eyeExam: {
       eyeTest: `<span
-          >由於隱形眼鏡有機會把角膜擠壓，令量度出來的數據不準確，<br />故進行眼睛檢查及矯視前，請提前停止佩戴。<br />
-          <strong>以下為不同隱形眼鏡的停止佩戴日數：</strong></span
+          >
+          As contact lenses have the potential to compress the cornea <br />
+          and affect the accuracy of measurement results, patient <br />
+          must stop wearing them before undergoing eye examination <br />
+          and correction.<br />
+          <strong>The following are the recommended number of days to stop <br /> wearing different types of contact lenses:</strong></span
         >`,
       preorthoptic: {
-        h2: '矯視前停 con 知多啲',
+        h2: 'Knowledge to Acquire Before You Stop Wearing Contact Lenses',
         arrowOne: {
-          span1: `前台登記及<br class="pcShow" />初步眼睛檢查`,
-          span2: `詳細屈光檢查`,
-          span3: `散曈`,
-          span4: `全面眼底檢查`
+          span1: `Registration & Preliminary Eye Examination`,
+          span2: `Refractive Test`,
+          span3: `Pupil Dilation`,
+          span4: `Retinal Examination`
         },
         arrowTwo: {
-          span1: '不合適',
-          p1: '應盡快接受相關治療',
-          span2: '合適',
-          p2: `預約第二次檢查及<br />同日矯視`
+          span1: 'Ineligible',
+          p1: 'Receive eye treatment as soon as possible, if needed',
+          span2: 'Eligible',
+          p2: `Schedule for secondary eye examination and vision correction on the same day`
         },
-        remark: `<p>備註：</p>
-            <p>1. 基本檢查包括：屈光檢查、電腦驗光、眼壓、角膜厚度等</p>
+        remark: `<p>Remark:</p>
+            <p>1. Preliminary Examination includes refractive test, autorefraction, intraocular pressure measurement, corneal thickness measurement and etc.</p>
             <p>
-              2.
-              詳細眼底檢查包括：淚水分泌測試、瞳孔測量、角膜地形掃描及像差、雙眼內皮細胞分析、散瞳眼底檢查、光學相干斷層掃描(如需要)、<br />掃描激光眼底檢查(如需要)
+              2. Comprehensive Fundus Examination includes Schirmer's test, pupil size measurement, corneal topography, endothelial cell count, mydriasis and fundus examination, optical coherence tomography (if needed), scanning laser ophthalmoscopy (if needed) and etc.
             </p>
-            <p>3. 散瞳/ 放大瞳孔後：</p>
-            <p>·觀看近物時視野變得模糊</p>
-            <p>·有輕微畏光情況，可帶備太陽眼鏡</p>
-            <p>·切勿駕駛</p>
-            <p>·請帶備太陽眼鏡</p>
-            <p>·放大瞳孔的效果一般會在4至6小時後消失</p>`
+            <p>3. Pupil Dilation:</p>
+            <p>-Vision blurs when viewing near objects</p>
+            <p>-Having slight photophobia</p>
+            <p>-Do not drive afterward</p>
+            <p>-Please bring sunglasses</p>
+            <p>-The effect generally disappears after 4 to 6 hours</p>`
       }
     },
     followdiag: {
