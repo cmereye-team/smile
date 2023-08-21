@@ -13,7 +13,7 @@
         營業時間
       </div>
       <div class="businessHours-img">
-        <img src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg" alt="">
+        <img data-src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg" srcset="https://static.cmereye.com/imgs/2023/08/c80ae8a53c8e5a0b.jpg 768w,https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg" src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg" alt="">
       </div>
       <div class="businessHours-time">
         <div class="listIn" v-for="(timer,index) in businessHours" :key="index">
@@ -54,8 +54,8 @@ import Footer from "@/components/commom/foot/Footer.vue";
 import MainBanner from "@/components/content/service/relex_smile/MainBanner_copy.vue";
 import Step from "@/components/content/service/relex_smile/Step_copy.vue";
 import Benefit from "@/components/content/service/relex_smile/Benefit_copy.vue";
-import Fit from "@/components/content/service/relex_smile/Fit.vue";
-import Xtra from "@/components/content/service/relex_smile/Xtra.vue";
+import Fit from "@/components/content/service/relex_smile/Fit_copy.vue";
+import Xtra from "@/components/content/service/relex_smile/Xtra_copy.vue";
 import footers from "@/components/commom/foot/footers.vue";
 
 export default {
@@ -255,6 +255,92 @@ export default {
         font-weight: 500;
         line-height: 40px; /* 173.913% */
         letter-spacing: 2.3px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .businessHours{
+    &-title{
+      font-size: 20px;
+      padding-bottom: 22px;
+      line-height: 23.305px; /* 116.525% */
+      letter-spacing: 5px;
+      &::before{
+        height: 4px;
+        border-radius: 2px;
+      }
+    }
+    &-img{
+      width: auto;
+      margin: 28px 30px 34px;
+      img{
+        width: 100%;
+        border-radius: 30px;
+      }
+    }
+    &-time{
+      flex-wrap: wrap;
+      padding: 0 30px;
+      .listIn{
+        min-width: 32px;
+        max-width: 32px;
+        margin-right: 20px;
+        margin-bottom: 26px;
+        display: flex;
+        flex-direction: column;
+        &:first-child{
+          width: 58px;
+          max-width: 58px;
+        }
+        &:nth-of-type(7){
+          margin-left: 78px;
+        }
+        
+        &-name{
+          line-height: 180%;
+          height: auto;
+          border-bottom: none;
+        }
+        &-context{
+          flex: 1;
+          height: auto;
+          line-height: 180%;
+          border-bottom: none;
+          span{
+            white-space: pre-wrap;
+            &.context2{
+
+            }
+            &.context4{
+              transform: rotate(130.167deg);
+            }
+          }
+        }
+        &:last-child{
+          .listIn-name{
+            line-height: 140%;
+          }
+        }
+      }
+    }
+    &-address{
+      justify-content: space-around;
+      margin: 23px 0 51px;
+      &>div{
+        flex-direction: column;
+        &:not(:last-child){
+          margin-right: 0;
+        }
+        img{
+          width: 25px;
+          margin-right: 0;
+        }
+        span{
+          font-size: 20px;
+          line-height: 40px; /* 200% */
+          letter-spacing: 2px;
+        }
       }
     }
   }

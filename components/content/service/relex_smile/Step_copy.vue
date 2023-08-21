@@ -1,13 +1,5 @@
 <template>
   <div class="step section page_container">
-    <!-- <div class="flex justify-center md:mt-28 mbShow">
-      <h2>{{$t('service.relexSmile.step.h2_1')}}</h2>
-    </div> -->
-    <!-- <div class="mbShow mb-10">
-      <p style="text-align: justify">
-        {{$t('service.relexSmile.step.p')}}
-      </p>
-    </div> -->
     <div class="step-in">
       {{$t('service.relexSmile.step.h2_2')}}
     </div>
@@ -72,7 +64,6 @@ export default {
   width: 100%;
   max-width: 1175px;
   margin: 41px auto 0;
-  // text-align: center;
   .text {
     color: #6D6E71;
     text-align: center;
@@ -84,56 +75,37 @@ export default {
     margin: 0 auto;
   }
   li {
-    // padding: 0 35px;
     img{
       border-radius: 29px;
       margin-bottom: 26px;
     }
   }
-  // img {
-  //   width: 25vw;
-  //   margin-bottom: 2vw;
-  // }
-}
-h2 {
-  font-size: 25px;
-  font-weight: 500;
-  color: #4570B6;
 }
 @media screen and (max-width: 768px) {
-  h2 {
-    font-size: 18px;
-  }
-  p{
-    line-height: 30px;
-    line-height: 30px;
-    color: #6D6E71;
+  .step{
+    margin-top: 45px;
+    width: auto;
+    padding: 0 30px;
+    &-in{
+      font-size: 20px;
+      line-height: 23.305px; /* 116.525% */
+      letter-spacing: 5px;
+      padding-bottom: 21px;
+    }
   }
   .step_list {
-    text-align: center;
-    display: flex;
     flex-direction: column;
-    li {
-      margin-top: 5vw;
-
-      strong {
-        font-family: var(--font_family);
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 16px;
-        /* identical to box height, or 133% */
-
-        text-align: center;
-        letter-spacing: 0.1em;
-
-        color: #6D6E71;
-      }
-    }
-    img {
+    margin: 32px auto 0;
+    .text{
+      font-size: 15px;
+      line-height: 30px; /* 200% */
+      letter-spacing: 3.75px;
       width: 100%;
-      margin: 0 auto;
-      margin-bottom: 2vw;
+    }
+    li{
+      &:not(:last-child){
+        margin-bottom: 30px;
+      }
     }
   }
 }

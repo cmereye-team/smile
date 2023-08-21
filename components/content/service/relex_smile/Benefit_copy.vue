@@ -31,7 +31,8 @@
       </div>
       <div class="benefit-in">
         <div class="title">
-          {{$t('service.relexSmile.benefit.h2')}}
+          <!-- {{$t('service.relexSmile.benefit.h2')}} -->
+          矯視的好處
         </div>
         <div class="benefit-in-lists">
           <div class="listIn" v-for="(benefitItem, index) in benefitList" :key="index">
@@ -199,7 +200,69 @@ export default {
 //   font-weight: 500;
 //   font-size: 25px;
 // }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .benefit{
+    &-bg{
+      padding: 116px 0 45px;
+      width: 300%;
+      margin-left: -100%;
+    }
+    &-t{
+      width: 171px;
+      height: 171px;
+      img{
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      span{
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 5px;
+      }
+    }
+    &-in{
+      width: calc(100% / 3);
+      padding: 0 30px;
+      .title{
+        font-size: 20px;
+        line-height: 23.305px; /* 116.525% */
+        letter-spacing: 5px;
+        padding-bottom: 21px;
+        &::after{
+          height: 4px;
+          border-radius: 2px;
+        }
+      }
+      &-lists{
+        .listIn{
+          width: 155px;
+          margin-bottom: 23px;
+          &-t{
+            height: 155px;
+            width: 155px;
+            img{
+              max-width: 40%;
+              max-height: calc(100% / 3);
+            }
+            p{
+              font-size: 18px;
+              line-height: 20px; /* 111.111% */
+              letter-spacing: 3.6px;
+              margin-top: 20px;
+            }
+          }
+          &-b{
+            font-size: 15px;
+            line-height: 18px; /* 120% */
+            letter-spacing: 3px;
+            margin: 9px auto 0;
+          }
+        }
+      }
+    }
+  }
+}
+  // {
   // .pc_page_container {
   //   max-width: 1280px !important;
   //   margin-left: auto;
@@ -278,7 +341,7 @@ export default {
   //     padding-bottom: 123px;
   //   }
   // }
-}
+// }
 
 @media screen and (max-width: 768px) {
   // .section {

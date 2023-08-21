@@ -9,7 +9,7 @@
       </div>
       <div class="fit-r-b">
         <div class="listBox">
-          <div class="listIn" v-for="(item, index) in fitList1" :key="index">
+          <div class="listIn" v-for="(item, index) in fitList" :key="index">
             <div class="listIn-svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="54" height="33" viewBox="0 0 54 33" fill="none">
                 <g clip-path="url(#clip0_3570_7898)">
@@ -30,7 +30,7 @@
             <div class="listIn-text">{{ item }}</div>
           </div>
         </div>
-        <div class="listBox">
+        <!-- <div class="listBox">
           <div class="listIn" v-for="(item, index) in fitList2" :key="index">
             <div class="listIn-svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="54" height="33" viewBox="0 0 54 33" fill="none">
@@ -51,7 +51,7 @@
             </div>
             <div class="listIn-text">{{ item }}</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- <div class="section page_container">
@@ -104,12 +104,16 @@ export default {
           dynamicBullets: true,
         },
       },
-      fitList1: [
-        ...this.$t('service.relexSmile.fit.fitList1')
-      ],
-      fitList2: [
-        ...this.$t('service.relexSmile.fit.fitList2')
-      ],
+      fitList: [
+        '1,000 度以下近視\n500 度以下散光',
+        '沒有患上眼疾\n如青光眼或視網膜疾病',
+        '發育成熟\n近視度數穩定',
+        '沒有患上自體免疫疾病\n如風濕性關節炎或紅斑狼瘡',
+        '角膜厚度正常',
+        '不需要長期服用類固醇',
+        '角膜沒受感染\n例如發炎或曾受傷',
+        '非懷孕'
+      ]
     };
   },
   created() {
@@ -162,17 +166,20 @@ export default {
       }
     }
     &-b{
-      display: flex;
       .listBox{
-        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         &:not(:last-child){
           margin-right: 40px;
         }
         .listIn{
+          width: 50%;
           display: flex;
           align-items: center;
-          &:not(:last-child){
-            margin-bottom: 72px;
+          margin-bottom: 72px;
+          &:nth-of-type(odd){
+            width: 40%;
           }
           &-svg{
             margin-right: 6px;
@@ -183,6 +190,7 @@ export default {
             font-weight: 400;
             line-height: 35px; /* 175% */
             letter-spacing: 1px;
+            white-space: pre-wrap;
           }
         }
       }
@@ -264,6 +272,61 @@ export default {
 // }
 
 @media screen and (max-width: 768px) {
+  .fit{
+    flex-direction: column;
+    width: auto;
+    margin: 50px 30px 30px;
+    &-r{
+      margin-left: 0;
+      &-t{
+        margin-bottom: 43px;
+        margin-top: 30px;
+        &>div{
+          height: 54px;
+          line-height: 120%;
+          letter-spacing: 5.4px;
+          font-size: 18px;
+          padding: 0 52px;
+          border-radius: 27px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::before{
+            width: 16px;
+            height: 26px;
+            bottom: -13px;
+            left: 36px;
+            border-left: 8px solid #4570B6;
+            border-right: 8px solid transparent;
+            border-top: 13px solid transparent;
+            border-bottom: 13px solid transparent;
+          }
+        }
+      }
+      &-b{
+        .listBox{
+          .listIn{
+            width: 100%;
+            margin-bottom: 21px;
+            &:nth-of-type(odd){
+              width: 100%;
+            }
+            &-svg{
+              margin-right: 26px;
+              margin-left: 36px;
+              width: 44px;
+              height: 28px;
+            }
+            &-text{
+              font-size: 16px;
+              line-height: 22px; /* 137.5% */
+              letter-spacing: 1.6px;
+            }
+          }
+        }
+      }
+    }
+  }
   // .fitList2 ul li:nth-child(2) {
   //   white-space: break-spaces !important;
   // }

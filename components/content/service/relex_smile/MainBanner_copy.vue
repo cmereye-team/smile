@@ -1,9 +1,9 @@
 <template>
   <div class="main_banner">
     <div class="smile-banner">
-      <img data-src="https://static.cmereye.com/imgs/2023/08/1f0f4cb2d113be1f.jpg" src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" alt="">
+      <img data-src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" srcset="https://static.cmereye.com/imgs/2023/08/1f0f4cb2d113be1f.jpg 768w, https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" alt="">
       <div>
-        <div class="title">{{$t('service.relexSmile.mainBanner.p')}}</div>
+        <div class="title">SMILE {{'\n'}}微笑激光矯視</div>
         <div class="text">Small Incision Lenticule Extraction</div>
       </div>
     </div>
@@ -96,15 +96,35 @@ export default {
     width: auto;
     border-radius: 44px;
     margin: 24px 30px;
-    height: 0;
-    padding-bottom: calc(100% - 60px);
-    &>img{
-      height: 100%;
-      width: 200%;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+    &>div{
+      max-width: 120px;
+      .title{
+        font-size: 14px;
+        line-height: 21.952px; /* 156.802% */
+        letter-spacing: 3.5px;
+        white-space: pre-wrap;
+      }
+      .text{
+        font-size: 10px;
+        line-height: 18.816px; /* 188.163% */
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+  .smile-banner-context{
+    width: auto;
+    margin: 50px 30px 0;
+    .title{
+      font-size: 20px;
+      line-height: 23.305px; /* 116.525% */
+      letter-spacing: 5px;
+      padding-bottom: 21px;
+    }
+    .context{
+      margin-top: 26px;
+      font-size: 15px;
+      line-height: 30px; /* 200% */
+      letter-spacing: 4.5px;
     }
   }
 }

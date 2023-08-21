@@ -31,10 +31,10 @@
               </defs>
             </svg>
           </div>
-          <div v-html="$t('service.relexSmile.xtra.p2')"></div>
+          <div v-html="$t('service.relexSmile.xtra.p4')"></div>
         </div>
         <div class="listIn">
-          <div>{{$t('service.relexSmile.xtra.h3_2')}}</div>
+          <div>{{$t('service.relexSmile.xtra.h5_2')}}</div>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 136 136" fill="none">
               <g clip-path="url(#clip0_3575_7995)">
@@ -50,7 +50,7 @@
               </defs>
             </svg>
           </div>
-          <div v-html="$t('service.relexSmile.xtra.p3')"></div>
+          <div v-html="$t('service.relexSmile.xtra.p5')"></div>
         </div>
       </div>
       <div class="xtra-in-btn">
@@ -263,7 +263,67 @@ export default {
 //   }
 // }
 
-// @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .xtra{
+    margin-bottom: 50px;
+    &-in{
+      width: 300%;
+      margin-left: -100%;
+      padding: 19px 0 53px;
+      &-title{
+        &>div{
+          &:nth-of-type(1){
+            font-size: 20px;
+            letter-spacing: 5px;
+          }
+          &:nth-of-type(2){
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 23px;
+          }
+          &:nth-of-type(3){
+            margin-top: 23px;
+            font-size: 16px;
+            letter-spacing: 4px;
+          }
+        }
+      }
+      &-lists{
+        width: calc(100% / 3);
+        flex-direction: column;
+        margin: 38px auto 20px;
+        padding: 0 30px;
+        .listIn{
+          &:first-child{
+            margin-bottom: 34px;
+          }
+          &>div{
+            &:nth-of-type(1){
+              height: 43px;
+              line-height: 43px;
+              font-size: 16px;
+              letter-spacing: 4px;
+              min-width: 100%;
+              margin-bottom: 23px;
+            }
+            &:nth-of-type(3){
+              margin-top: 27px;
+              font-size: 15px;
+              line-height: 30px; /* 200% */
+              letter-spacing: 4.5px;
+            }
+          }
+        }
+      }
+      &-btn{
+        span{
+          &::after{
+
+          }
+        }
+      }
+    }
+  }
 //   .btn-yuyue {
 //     img {
 //       width: auto !important;
@@ -371,5 +431,5 @@ export default {
 //       }
 //     }
 //   }
-// }
+}
 </style>
