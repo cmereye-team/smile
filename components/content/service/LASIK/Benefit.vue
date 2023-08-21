@@ -5,9 +5,19 @@
     </div>
     <div class="benefit_content">
       <ul
+      v-if="$i18n.locale !== 'en'"
         class="benefit_list flex flex-col items-start justify-start page_container"
       >
         <li v-for="(benefitItem, index) in benefitList" :key="index">
+          <img :src="benefitItem.index" alt="" class="index" />
+          <p>{{ benefitItem.des }}</p>
+        </li>
+      </ul>
+      <ul
+      v-else
+        class="benefit_list flex flex-col items-start justify-start page_container"
+      >
+        <li v-for="(benefitItem, index) in benefitList_eng" :key="index" :class="[$i18n.locale == 'en' ? `benefit_list${index + 1}`: '']">
           <img :src="benefitItem.index" alt="" class="index" />
           <p>{{ benefitItem.des }}</p>
         </li>
@@ -47,6 +57,24 @@ export default {
           des: this.$t('service.lasik.benefit.des4'),
         },
       ],
+      benefitList_eng: [
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/one.png"),
+          des: this.$t('service.lasik.benefit.des1'),
+        },
+        {
+          index: require("@/asset/image/service/CLEAR_Vision/two.png"),
+          des: this.$t('service.lasik.benefit.des2'),
+        },
+        {
+          index: require("@/asset/image/service/LASIK/three.png"),
+          des: this.$t('service.lasik.benefit.des3'),
+        },
+        {
+          index: require("@/asset/image/service/LASIK/four.png"),
+          des: this.$t('service.lasik.benefit.des4'),
+        },
+      ],
     };
   },
   created() {},
@@ -68,6 +96,34 @@ p{
   }
   .benefit_list li:nth-child(6) p {
     width: 86%;
+  }
+  .benefit_list1 {
+    p {
+      max-width: 330px;
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+  .benefit_list2 {
+    p {
+      max-width: 320px;
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+  .benefit_list3 {
+    p {
+      max-width: 420px;
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+  .benefit_list4 {
+    p {
+      max-width: 480px;
+      text-align: left;
+      padding-left: 40px;
+    }
   }
   .section {
     margin-bottom: 0;

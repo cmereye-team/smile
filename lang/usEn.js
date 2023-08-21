@@ -1338,28 +1338,27 @@ module.exports = {
     },
     lasik: {
       benefit: {
-        h2: 'LASIK 激光矯視的好處',
-        des1: '最快術後數天可如常生活、工作',
-        des2: '大約10至15分鐘完成',
-        des3: '快捷、安全、少有不適',
-        des4: '視力改善滿意度高'
+        h2: 'Advantages of choosing LASIK',
+        des1: 'Patients can resume their normal daily activities and work as early as a few days after the surgery',
+        des2: 'Takes approximately 10 to 15 minutes to complete',
+        des3: 'Fast, safe, and with minimal discomfort',
+        des4: 'High satisfaction rates in vision improvement'
       },
       mainBanner: {
-        p: 'LASIK 激光矯視',
-        span: '超過20年的歷史，也是流行的矯視方式；利用激光技術，重塑角膜弧度以改善眼睛折射光線能力，從而矯正視力，減低客人對眼鏡和隱形眼鏡的依賴。'
+        p: 'LASIK',
+        span: `With a history of over 20 years, it is also a popular method of vision correction surgery. It uses laser technology to reshape the corneal curvature to improve the eye's ability to refract light. Thus, it helps reduce the reliance on glasses and contact lenses.`
       },
       suitable: {
-        h2: '合適對象',
-        span1: `近視1,500度以下<br />遠視 / 散光600度以下`,
-        span2: `投考或從事紀律部隊/<br />航空業界人士`,
-        span3: `熱愛運動`,
-        span4: `不愛戴隱形眼鏡或<br />眼鏡人士`,
-        span5: `擔心長期配戴隱形眼鏡<br />影響眼睛健康人士`
+        h2: 'Who is suitable?',
+        span1: `People who have<br /> below -15.00 D<br /> myopia and -6.00 D<br /> CYL. hyperopia/<br />astigmatism`,
+        span2: `People who want<br /> to or are engaged <br />in disciplined <br />services / aviation<br /> industry`,
+        span3: `love sports`,
+        span4: `Do not like<br /> wearing contact <br />lenses or<br /> eyeglasses`,
+        span5: `concern about eye <br /> health`
       },
       principle: {
-        h2: 'LASIK 激光矯視原理',
-        span: `LASIK (Laser-Assisted in Situ
-              Keratomileusis)是準分子激光原位角膜磨鑲術，通過激光「打磨」角膜，改變角膜弧度，從而矯正視力。過程中，醫生會先用飛秒激光製作角膜瓣；掀開角膜瓣後，用準分子激光進行角膜切削，再把角膜瓣復位，從而矯正視力。`
+        h2: 'LASIK',
+        span: `LASIK stands for Laser-Assisted in Situ Keratomileusis, a procedure that uses lasers to reshape the cornea and correct vision. During the process, the surgeon firstly uses a femtosecond laser to create a corneal flap. After lifting the flap, an excimer laser is used to reshape the cornea, and the flap is then repositioned to correct the vision.`
       }
     },
     relexSmile: {
