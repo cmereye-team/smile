@@ -1285,55 +1285,52 @@ module.exports = {
     },
     icl: {
       benefit: {
-        h2: 'ICL植入式隱形眼鏡的好處',
+        h2: 'Advantages of choosing ICL',
         benefit1: {
-          des: '最高可矯正1800度近視',
-          towdes: '1000度遠視、600度散光'
+          des: `This can correct up to 1800 degrees of <br />myopia,1000 degrees of hyperopia, and`, 
+          towdes: '600 degrees of astigmatism.'
         },
         benefit2: {
-          des: '在FDA研究中，高達99%客人',
-          towdes: '滿意視力改善效果'
+          des: `In FDA studies, up to 99% of <br />patients reported satisfaction with`,
+          towdes: 'their vision improvement results.'
         },
         benefit3: {
-          des: '微創，手術時間短，復原期短',
-          towdes: '最快5 – 10分鐘內完成矯視'
+          des: `Minimally invasive with short surgical time<br /> and recovery period,correction can be`,
+          towdes: 'completed in as little as 5-10 minutes.'
         },
         benefit4: {
-          des: '不用切除角膜組織',
+          des: 'No need to remove corneal tissue',
           towdes: ''
         },
         benefit5: {
-          des: '沒有乾眼症的副作',
+          des: 'No side effects of dry eye',
           towdes: ''
         },
         benefit6: {
-          des: '是一項可還原技術',
-          towdes: '客人可按需要選擇取出ICL'
+          des: 'ICL is a reversible technology, and patients can',
+          towdes: 'choose to have their ICL removed as needed.' 
         }
       },
       film: {
-        h2: 'ICL 植入式隱形眼鏡介紹影片',
+        h2: 'Introduction videos of ICL',
         title1: '【真正隱形嘅隱形眼鏡 - ICL🤩】',
         title2: '#邊款矯視適合您💡'
       },
       mainBanner: {
-        p1: 'ICL植入式隱形眼鏡',
-        p2: `植入式隱形眼鏡Implantable Contact Lens
-            (ICL)，又名後房型可植入式隱形屈光晶體植入手術，專為深度近視、遠視、散光客人而設。手術過程無須切削角膜，把ICL
-            晶體植入眼內，便可獲取高清視力。
-            植入式隱形眼鏡以非激光原理，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料，矯正高度近視、遠視及散光。ICL植入式隱形眼鏡的矯視過程：通過術前檢查後，醫生首先會在客人眼睛上滴麻醉眼藥水，再在角膜製作一個約2毫米的小切口。然後，醫生會將摺疊了的晶體植入眼球和定位，就如將隱形眼鏡直接戴在眼睛上，達到矯正視力的效果。一般手術過程大約5至10分鐘，術後無需縫針，一般矯視後第二天已能恢復視力。`
+        p1: 'ICL',
+        p2: `The Implantable Contact Lens (ICL), also known as posterior chamber phakic intraocular lens implantation, is specifically designed for patients with severe myopia, hyperopia, and astigmatism. The surgery process does not require corneal cutting. Instead, the ICL lens is implanted into the eye to achieve better vision. Using non-laser technology, the implantable contact lens corrects high myopia, hyperopia, and astigmatism with innovative technology and biocompatible, flexible, and UV-protective crystal materials.The correction process for implantable contact lenses involves a preoperative examination. The doctor first applies anesthetic eye drops to the patient's eye and then creates a small incision of about 3 millimeters in the cornea. The folded lens is then implanted into the eyeball and positioned by the doctor, similar to wearing contact lenses directly on the eye, to achieve the desired vision correction effect. The entire procedure generally takes about 5 to 10 minutes, and there is no need for stitches after surgery. Generally, vision can be restored as early as the next day after correction.`
       },
       share: {
-        h2: '更多ICL植入式隱形眼鏡真實個案分享'
+        h2: 'More ICL implantable contact lens real case to share'
       },
       suitable: {
-        h2: '合適對象',
-        span1: `高度近視、遠視或<br />深度數散光人士`,
-        span2: `投考紀律部隊/<br />航空業界人士`,
-        span3: `熱愛運動/注<br />重儀表人士`,
-        span4: `希望減低對眼鏡<br />或隱形眼鏡依賴的人士`,
-        span5: `因佩戴隱形眼鏡導<br />致乾眼症人士`,
-        span6: `因角膜厚度偏薄而<br />不適合接受激光矯視人士`
+        h2: 'Who is suitable?',
+        span1: `Individuals with<br /> high myopia, <br />hyperopia, or <br />severe astigmatism`,
+        span2: `People who want<br /> to or are engaged <br />in disciplined <br />services / aviation <br />industry`,
+        span3: `love sports/<br />care about<br /> appearance`,
+        span4: `Individuals who<br /> wish to reduce<br /> their dependence <br />on glasses or <br />contact lenses`,
+        span5: `Individuals who<br /> suffer from dry eyeo<br /> syndrome causedo<br /> by wearing contacto<br /> lenses`,
+        span6: `Individuals who are<br /> not suitable for laser<br /> correction due to thin <br />corneal`
       }
     },
     lasik: {

@@ -5,16 +5,24 @@
       $i18n.locale == 'en' && $route.path == '/en/vision-correction-presbyopia'
         ? 'section_vision_eng'
         : 'section',
+      $i18n.locale == 'en' && $route.path == '/en/vision-correction-icl'
+        ? 'section_vision_eng_icl'
+        : 'section',
     ]"
   >
     <div
       class="des_box"
-      :class="
+      :class="[
         $i18n.locale == 'en' &&
         $route.path == '/en/vision-correction/relex-smile'
           ? 'des_box_eng'
           : 'des_box'
-      "
+      ,
+        $i18n.locale == 'en' &&
+        $route.path == '/en/vision-correction-icl'
+          ? 'des_box_eng_icl'
+          : 'des_box'
+          ]"
     >
       <h3
         :class="$i18n.locale == 'en' ? 'gradient_font_en' : 'gradient_font'"
@@ -92,11 +100,27 @@ export default {
         font-weight: 300;
       }
     }
+    .des_box_eng_icl {
+      margin-bottom: 0;
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.8px;
+        font-weight: 300;
+      }
+    }
   }
   .section_vision_eng {
     padding-left: 92px;
     .des_box {
       width: 680px;
+      margin-bottom: 0;
+    }
+  }
+  .section_vision_eng_icl {
+    padding-left: 50px;
+    .des_box {
+      width: 780px;
       margin-bottom: 0;
     }
   }

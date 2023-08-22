@@ -4,7 +4,6 @@
       <template v-slot:title>
         <div class="pcShow">
           <h3 style="font-size: 28px">{{$t('service.icl.mainBanner.p1')}}</h3>
-
           <span>(ICL implantable contact lenses)</span>
         </div>
         <div class="mbShow banner_serve">

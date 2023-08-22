@@ -5,11 +5,22 @@
     </div>
     <div class="benefit_content">
       <ul
+      v-if="$i18n.locale !== 'en'"
         class="benefit_list flex flex-col items-start justify-start page_container"
       >
         <li v-for="(benefitItem, index) in benefitList" :key="index">
           <img :src="benefitItem.index" alt="" class="index" />
           <p>{{ benefitItem.des }}</p>
+          <p>{{ benefitItem.towdes }}</p>
+        </li>
+      </ul>
+      <ul
+      v-else
+        class="benefit_list flex flex-col items-start justify-start page_container"
+      >
+        <li v-for="(benefitItem, index) in benefitList_eng" :key="index" :class="[$i18n.locale == 'en' ? `benefit_list${index + 1}`: '']">
+          <img :src="benefitItem.index" alt="" class="index" />
+          <p v-html="$t(benefitItem.des)"></p>
           <p>{{ benefitItem.towdes }}</p>
         </li>
       </ul>
@@ -62,6 +73,38 @@ export default {
           towdes: this.$t('service.icl.benefit.benefit6.towdes')
         },
       ],
+      benefitList_eng: [
+        {
+          index: require("@/asset/image/service/ICL/new-one.png"),
+          des: this.$t('service.icl.benefit.benefit1.des'),
+          towdes: this.$t('service.icl.benefit.benefit1.towdes')
+        },
+        {
+          index: require("@/asset/image/service/ICL/new-two.png"),
+          des: this.$t('service.icl.benefit.benefit2.des'),
+          towdes: this.$t('service.icl.benefit.benefit2.towdes')
+        },
+        {
+          index: require("@/asset/image/service/ICL/new-three.png"),
+          des: this.$t('service.icl.benefit.benefit3.des'),
+          towdes: this.$t('service.icl.benefit.benefit3.towdes')
+        },
+        {
+          index: require("@/asset/image/service/ICL/new-four.png"),
+          des: this.$t('service.icl.benefit.benefit4.des'),
+          towdes: ""
+        },
+        {
+          index: require("@/asset/image/service/ICL/new-five.png"),
+          des: this.$t('service.icl.benefit.benefit5.des'),
+          towdes: ""
+        },
+        {
+          index: require("@/asset/image/service/ICL/new-six.png"),
+          des: this.$t('service.icl.benefit.benefit6.des'),
+          towdes: this.$t('service.icl.benefit.benefit6.towdes')
+        },
+      ],
     };
   },
   created() {},
@@ -80,6 +123,30 @@ h2 {
   }
   .benefit_list li:nth-child(6) p {
     width: 100%;
+  }
+  .benefit_list1 {
+    p {
+      text-align: left;
+      padding-left: 50px;
+    }
+  }
+  .benefit_list2 {
+    p {
+      text-align: left;
+      padding-left: 30px;
+    }
+  }
+  .benefit_list3 {
+    p {
+      text-align: left;
+      padding-left: 50px;
+    }
+  }
+  .benefit_list6 {
+    p {
+      text-align: left;
+      padding-left: 100px;
+    }
   }
   .section {
     margin-bottom: 0;

@@ -41,19 +41,19 @@ export default {
     return {
       benefitList: [
         {
-          index: require("@/asset/image/service/CLEAR_Vision/one.png"),
+          index: require("@/asset/image/service/CLEAR_Vision/old-one.png"),
           des: this.$t('service.lasik.benefit.des1'),
         },
         {
-          index: require("@/asset/image/service/CLEAR_Vision/two.png"),
+          index: require("@/asset/image/service/CLEAR_Vision/old-two.png"),
           des: this.$t('service.lasik.benefit.des2'),
         },
         {
-          index: require("@/asset/image/service/LASIK/three.png"),
+          index: require("@/asset/image/service/LASIK/old-three.png"),
           des: this.$t('service.lasik.benefit.des3'),
         },
         {
-          index: require("@/asset/image/service/LASIK/four.png"),
+          index: require("@/asset/image/service/LASIK/old-four.png"),
           des: this.$t('service.lasik.benefit.des4'),
         },
       ],
