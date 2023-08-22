@@ -67,7 +67,7 @@
           <p>
             {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p6_1") }}
             <br />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p6_2")
-            }}<br class="pcShow" />{{
+            }}<br class="pcShow" :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />{{
               $t("aboutUs.centreIntroduction.Se2ComIntro.p6_3")
             }}
           </p>
@@ -75,21 +75,21 @@
         <div class="content mx-12 md:mx-0">
           <ul>
             <li>
-              <span>C</span>
+              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">C</span>
               <p>
                 <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i1") }}</i>
                 <i>Professional <em>C</em>linical Services</i>
               </p>
             </li>
             <li>
-              <span>M</span>
+              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">M</span>
               <p>
                 <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i2") }}</i>
                 <i>Modern <em>M</em>anagement</i>
               </p>
             </li>
             <li>
-              <span>E</span>
+              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">E</span>
               <p>
                 <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i3") }}</i>
                 <i>Quality <em>E</em>ducation</i>
@@ -103,10 +103,14 @@
               </p>
             </li>
             <div class="xima">
-              <span>{{
+              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">{{
                 $t("aboutUs.centreIntroduction.Se2ComIntro.span")
               }}</span>
-              <p>
+              <p :style="{
+                paddingLeft: $i18n.locale == 'en' ? '60px' : '30px',
+                maxWidth: $i18n.locale == 'en' ? '570px' : '',
+                fontSize: $i18n.locale == 'en' ? '16px' : '20px'
+              }">
                 {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p7") }}
               </p>
             </div>
@@ -119,9 +123,9 @@
             >
               {{ $t("aboutUs.centreIntroduction.Se2ComIntro.h4") }}
             </h4>
-            <p>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p8") }}</p>
-            <p>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p9") }}</p>
-            <p>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p10") }}</p>
+            <p :style="{fontSize: $i18n.locale == 'en' ? '18px': '20px'}">{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p8") }}</p>
+            <p :style="{fontSize: $i18n.locale == 'en' ? '18px': '20px'}">{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p9") }}</p>
+            <p :style="{fontSize: $i18n.locale == 'en' ? '18px': '20px'}">{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p10") }}</p>
           </div>
         </div>
       </div>
