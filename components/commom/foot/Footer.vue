@@ -1,7 +1,7 @@
 <template>
   <div class="main_footer" v-if="screenWidth > 768">
     <div class="section flex justify-between page_container px-0">
-      <div class="logo_footer">
+      <div class="logo_footer" :style="{minWidth: $i18n.locale == 'en' ? '250px': ''}">
         <nuxt-link :to="localePath('/')"
           ><img
             class="foot_logo"
@@ -29,7 +29,8 @@
       <div class="flex">
         <ul class="main_menu flex">
           <li
-            class="ml-24 mb-10"
+            class="mb-10"
+            :class="[$i18n.locale == 'en' ? 'ml-16' : 'ml-24']"
             v-for="(navItem, index) in navList"
             :key="index"
           >
@@ -58,12 +59,12 @@
             </div></nuxt-link
           >
           <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/consumption-voucher')"
-            ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
+            ><div class="mian_nav_text font-black text-xl mian_nav_text_child" :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' :'']">
               {{$t('home.headers.consumptionVoucher')}}
             </div></nuxt-link
           >
           <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/contact-us')"
-            ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
+            ><div class="mian_nav_text font-black text-xl mian_nav_text_child" :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' :'']">
               {{$t('home.headers.contactUs')}}
             </div></nuxt-link
           >
@@ -312,6 +313,13 @@ export default {
   }
   .mian_nav_text:hover,.mian_nav_text_child:hover{
     color: rgb(75, 75, 255) !important;
+  }
+  .mian_nav_text_eng {
+    font-weight: 300  !important;
+    font-size: 15px  !important;
+    line-height: 18px  !important;
+    letter-spacing: 0.2em !important;
+    display: initial;
   }
 }
 @media screen and (max-width: 768px) {

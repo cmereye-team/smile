@@ -1193,10 +1193,8 @@ module.exports = {
       ]
     },
     consumption: {
-      title: 'Divit’s Lucky Draw Details',
-      contentText: `FPS by divit is now available for payment in C-MER Smile Refractive Center.
-      From now until 13 Nov 2023, pay with FPS by divit to enter the divit 300,000 miles giveaway. For every HKD 100 spent per order, you receive 10 entries. You can win 20,000 miles every week and a grand prize of 40,000 miles.The more you purchase, the more chances to win! Bonus: sign up as a divit member and get an extra entry.
-      Don't miss out on a chance to win miles when enjoying the refractive service!`,
+      title: 'Details of consumption voucher',
+      contentText: `In accordance with the government's consumer voucher policy, C-MER Eye Center, C-MER SMILE Refractive Center, and C-MER Vision Center now accept Octopus Card, Tap & Go, AlipayHK, WeChat Pay HK, PayMe, and BoC Pay as payment methods, allowing customers to use their consumption vouchers for medical services.`,
       tableTitle: 'If you have any questions, please feel free to contact our customer service representatives for assistance.',
       tableColumn_1: 'Centers',
       tableColumn_2: 'Hotlines',

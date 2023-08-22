@@ -4,8 +4,11 @@
       <p>BOOKING</p>
     </div>
     <div class="pcShow flex md:justify-end flex-col items-center md:flex-row">
-      <div class="serve_title" :style="{display: $i18n.locale == 'en'? 'none':'block'}">
-        <p>{{$t('home.headers.reservationService')}}</p>
+      <div
+        class="serve_title"
+        :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }"
+      >
+        <p>{{ $t("home.headers.reservationService") }}</p>
       </div>
       <div class="serve-box serve-check" @click="serveForm2">
         <img
@@ -13,7 +16,7 @@
           src="https://static.cmereye.com/imgs/2023/03/508bd47a29791e21.jpg"
           alt=""
         />
-        <p class="serve_details serve-examineImg">{{$t('home.serve.p1')}}</p>
+        <p class="serve_details serve-examineImg">{{ $t("home.serve.p1") }}</p>
       </div>
       <div class="serve-box ml-5 yuye" @click="serveForm">
         <img
@@ -21,12 +24,12 @@
           src="https://static.cmereye.com/imgs/2023/03/c5a46c2325efaff7.jpg"
           alt=""
         />
-        <p class="serve_details serve-lectureImg">{{$t('home.serve.p2')}}</p>
+        <p class="serve_details serve-lectureImg">{{ $t("home.serve.p2") }}</p>
       </div>
     </div>
     <div class="mbShow flex md:justify-end flex-col items-center md:flex-row">
       <div class="serve_title">
-        <p>{{$t('home.headers.reservationService')}}</p>
+        <p>{{ $t("home.headers.reservationService") }}</p>
       </div>
       <div class="serve-box serve-check">
         <img
@@ -60,17 +63,19 @@ export default {
   created() {},
   methods: {
     serveForm2() {
-      console.log(this.$i18n)
-      let url = `${this.$i18n.locale === 'cn' ? '/cn' : ''}/eye-checkup`
-      this.$router.push(url)
+      console.log(this.$i18n);
+      let url = `${this.$i18n.locale === "cn" ? "/cn" : ""}/eye-checkup`;
+      this.$router.push(url);
       // this.$router.replace("/eye-checkup");
       // this.localePath('/eye-checkup')
     },
     serveForm() {
       // this.$router.replace("/ophthalmicInfo/AppointForm");
       // this.localePath('/ophthalmicInfo/AppointForm')
-      let url = `${this.$i18n.locale === 'cn' ? '/cn' : ''}/ophthalmicInfo/AppointForm`
-      this.$router.push(url)
+      let url = `${
+        this.$i18n.locale === "cn" ? "/cn" : ""
+      }/ophthalmicInfo/AppointForm`;
+      this.$router.push(url);
       // this.localePath('/booking')
     },
   },
@@ -83,7 +88,7 @@ export default {
 }
 h2 {
   font-size: 25px;
-  color: #4570B6;
+  color: #4570b6;
 }
 .serve-box {
   cursor: pointer;
@@ -189,14 +194,14 @@ h2 {
     width: 80%;
     height: auto;
   }
-  .serve-box>img{
+  .serve-box > img {
     margin-top: 40px;
   }
   // .serve-box:nth-child(2) {
-    // position: absolute;
-    // width: 80%;
-    // right: 0;
-    // bottom: 0;
+  // position: absolute;
+  // width: 80%;
+  // right: 0;
+  // bottom: 0;
   // }
   .booking {
     font-family: "Baskervville" !important;
