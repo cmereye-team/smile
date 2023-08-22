@@ -196,7 +196,7 @@
               <div class="mian_nav_text font-black">{{ navItem.main_nav }}</div>
             </nuxt-link>
 
-            <ul :style="{ top: $i18n.locale == 'en' ? '36px' : '10px' }" class="child_nav flex flex-col"
+            <ul :style="{ top: $i18n.locale == 'en' ? '36px' : '20px' }" class="child_nav flex flex-col"
               v-if="navItem.child_list.length > 0">
               <li v-for="(childItem, childIndex) in navItem.child_list" :key="childIndex">
                 <nuxt-link :to="localePath(childItem.link)" class="text-base">{{

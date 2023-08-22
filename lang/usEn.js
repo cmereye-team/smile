@@ -10,7 +10,7 @@ module.exports = {
       commonProblem: 'FAQ',
       ophthalmicConsultation: 'More Info',
       feeConsultation: 'Charge Details',
-      consumptionVoucher: 'Divit’s Lucky Draw Details',
+      consumptionVoucher: 'Details of consumption voucher',
       contactUs: 'Contact Us',
       reservationService: 'Book NOW',
 
@@ -33,7 +33,7 @@ module.exports = {
       commonProblemChild_3: 'Implantable Collamer Lens (ICL)',
       commonProblemChild_4: 'CLEAR-Vision',
 
-      ophthalmicConsultationChild_1: 'Cases sharing & other information videos',
+      ophthalmicConsultationChild_1: 'Cases Sharing & Videos',
       ophthalmicConsultationChild_2: 'Media',
       ophthalmicConsultationChild_3: '婚展專區',
 
@@ -875,8 +875,9 @@ module.exports = {
   ophthalmicInfo: {
     shareVideos: {
       tabList: {
-        title1: '精華版',
-        title2: '完整版'
+        title1: 'Edited Version',
+        title2: 'Full version',
+        title3: 'All'
       },
       tabControlItem: {
         title: [
