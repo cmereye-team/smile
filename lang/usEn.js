@@ -65,11 +65,11 @@ module.exports = {
       }
     ],
     CorrectionService: {
-      p1: '1000 度近視<br />500 度散光',
-      p2: '1500 度近視 <br />600 度遠視/散光',
-      p3: '1800 度近視<br />1000 度遠視<br />600 度散光',
-      p4: '39 歲以上<br />同時有近視／遠視／<br />散光問題',
-      p5: '擔心眼睛<br />無法對焦太久'
+      p1: '-10.00 D myopia  <br />-5.00 D CYL.  <br />astigmatism',
+      p2: '-15.00D myopia<br /> +6.00D hyperopia<br />  -6.00D CYL.<br /> astigmatism',
+      p3: '18.00D myopia<br />+10.00D hyperopia<br /> -6.00D CYL. <br />astigmatism',
+      p4: 'aged 39 or above<br /> suffered from <br />myopia / hyperopia <br />/ astigmatism',
+      p5: "They worry that<br /> they won't be<br /> able to focus<br /> for too long"
     },
     aspiration: {
       p1: '用戶心聲',
