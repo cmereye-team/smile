@@ -4,8 +4,11 @@
       <p>COMMENTS</p>
     </div>
     <div class="aspiration">
-      <div class="serve_title">
-        <p>{{$t('home.aspiration.p1')}}</p>
+      <div
+        class="serve_title"
+        :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }"
+      >
+        <p>{{ $t("home.aspiration.p1") }}</p>
       </div>
       <div class="heart-box heart-box-1 wow animate__bounceIn">
         <img
@@ -14,10 +17,10 @@
         />
         <div class="heart-text">
           <div class="person">
-            <p>{{$t('home.aspiration.p2')}} Ada</p>
+            <p>{{ $t("home.aspiration.p2") }} Ada</p>
           </div>
-          <div class="box">
-            <span>{{$t('home.aspiration.span1')}}</span>
+          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '245px':'235px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'235px'}">
+            <span>{{ $t("home.aspiration.span1") }}</span>
           </div>
         </div>
       </div>
@@ -27,11 +30,15 @@
           alt=""
         />
         <div class="heart-text">
-          <div class="box">
-            <span>{{$t('home.aspiration.span2_1')}}<br />{{$t('home.aspiration.span2_2')}}</span>
+          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '255px':'160px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'160px'}">
+            <span
+              >{{ $t("home.aspiration.span2_1") }}<br />{{
+                $t("home.aspiration.span2_2")
+              }}</span
+            >
           </div>
           <div class="person">
-            <p>{{$t('home.aspiration.p3')}} Hubert</p>
+            <p>{{ $t("home.aspiration.p3") }} Hubert</p>
           </div>
         </div>
       </div>
@@ -44,8 +51,12 @@
           <div class="person">
             <p>唐浩然 Jacky</p>
           </div>
-          <div class="box">
-            <span>{{$t('home.aspiration.span3_1')}}<br />{{$t('home.aspiration.span3_2')}}</span>
+          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '245px':'180px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'180px'}">
+            <span
+              >{{ $t("home.aspiration.span3_1") }}<br />{{
+                $t("home.aspiration.span3_2")
+              }}</span
+            >
           </div>
         </div>
       </div>
@@ -56,10 +67,10 @@
         />
         <div class="heart-text">
           <div class="person">
-            <p>{{$t('home.aspiration.p4')}} Shirley</p>
+            <p>{{ $t("home.aspiration.p4") }} Shirley</p>
           </div>
-          <div class="box">
-            <span>{{$t('home.aspiration.span4')}}</span>
+          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '280px':'194px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'194px'}">
+            <span>{{ $t("home.aspiration.span4") }}</span>
           </div>
         </div>
       </div>
@@ -211,7 +222,7 @@ export default {
         padding: 10px;
         border-bottom: 1px solid #5a93c9;
         width: 235px;
-    height: 70px;
+        height: 70px;
 
         line-height: 18px;
 
@@ -396,9 +407,15 @@ export default {
     }
   }
 
-  .heart-box .heart-text .person p{height: 32px; display: flex; align-items: center;font-size: 20px;}
-  .heart-box .heart-text .box span{text-align: left;}
-
+  .heart-box .heart-text .person p {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  .heart-box .heart-text .box span {
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -457,11 +474,13 @@ export default {
     height: 308vw;
     flex-direction: column;
   }
-  .heart-box>img{width: 60.7vw;}
+  .heart-box > img {
+    width: 60.7vw;
+  }
   .heart-box-1 {
     position: absolute;
     right: 10px;
-    top: 40px; 
+    top: 40px;
     .heart-text {
       position: absolute;
       bottom: 36px;
@@ -515,7 +534,8 @@ export default {
       position: absolute;
       right: -9vw;
       z-index: 10;
-      bottom: -5vw;display:flex;
+      bottom: -5vw;
+      display: flex;
       flex-direction: column-reverse;
       .person {
         z-index: 10;
@@ -538,10 +558,9 @@ export default {
         padding: 6px;
         border-bottom: 1px solid #5a93c9;
         width: 25vw;
-      
-    
+
         background: #fff;
-       
+
         z-index: -1;
         span {
           font-family: "Inter";
@@ -561,7 +580,7 @@ export default {
     position: absolute;
     top: 164vw;
     right: 10px;
-    
+
     display: flex;
     justify-content: center;
     .heart-text {
@@ -618,9 +637,9 @@ export default {
       display: flex;
       flex-flow: column;
       bottom: -8vw;
-    left: -4vw;
+      left: -4vw;
       z-index: 10;
-      
+
       .person {
         z-index: 10;
       }
@@ -642,7 +661,7 @@ export default {
         padding: 6px;
         border-bottom: 1px solid #5a93c9;
         width: 132px;
-     
+
         top: -54px;
         background: #fff;
         left: -51px;

@@ -3,7 +3,7 @@
     <!--  -->
 
     <div class="vedio_slider page_container">
-      <div class="video_title">
+      <div class="video_title" :style="{display: $i18n.locale == 'en'? 'none':'block'}">
         <p>{{ $t('home.VedioSlider.p') }}</p>
       </div>
       <div class="booking">

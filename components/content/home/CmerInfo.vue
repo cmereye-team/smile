@@ -8,7 +8,7 @@
           <span class="cmerInfoTagClick_1">{{$t('home.cmerInfo[0].span')}}</span>
         </div>
       </div>
-      
+        
       <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/group-profile')">
         <img class="cmerInfoTagClick_2" src="https://static.cmereye.com/imgs/2023/04/69dd6f45ce4fdb12.jpg" />
         <div>

@@ -21,24 +21,24 @@ module.exports = {
       orthopedicServicesChild_1: 'ReLEx SMILE',
       orthopedicServicesChild_2: 'CMER CLEAR-Vision',
       orthopedicServicesChild_3: 'LASIK',
-      orthopedicServicesChild_4: 'ICL',
+      orthopedicServicesChild_4: 'Implantable Collamer Lens (ICL)',
       orthopedicServicesChild_5: 'SMILE Pro',
 
       diagnosisInstructionsChild_1: 'Eye examination & Presurgery',
       diagnosisInstructionsChild_2: 'Process of vision correction',
       diagnosisInstructionsChild_3: 'Post-operative Examination',
 
-      commonProblemChild_1: 'SMILE 微笑激光矯視',
-      commonProblemChild_2: 'LASIK 激光矯視',
-      commonProblemChild_3: 'ICL植入式隱形眼鏡',
+      commonProblemChild_1: 'ReLEx SMILE',
+      commonProblemChild_2: 'LASIK',
+      commonProblemChild_3: 'Implantable Collamer Lens (ICL)',
       commonProblemChild_4: 'CLEAR-Vision',
 
-      ophthalmicConsultationChild_1: '個案分享及矯視資訊影片',
-      ophthalmicConsultationChild_2: '媒體報導',
+      ophthalmicConsultationChild_1: 'Cases sharing & other information videos',
+      ophthalmicConsultationChild_2: 'Media',
       ophthalmicConsultationChild_3: '婚展專區',
 
-      reservationServiceChild_1: '矯視前檢查',
-      reservationServiceChild_2: '講座',
+      reservationServiceChild_1: 'Pre-surgery examination',
+      reservationServiceChild_2: 'seminar',
 
       coupon: '消費券',
       preferential: '優惠',
@@ -48,20 +48,20 @@ module.exports = {
     },
     cmerInfo: [
       {
-        h4: `超過<br class="mbShow"/><strong>30,000</strong>隻`,
-        span: '眼睛完成微笑矯視'
+        h4: `Over<br class="mbShow"/><strong>30,000</strong>Eyes`,
+        span: 'Have completed smile Incision Lenticule Extraction'
       },
       {
-        h4: '<strong>16</strong>位',
-        span: '眼科專科醫生'
+        h4: '<strong>16</strong>',
+        span: 'ophthalmologists'
       },
       {
-        h4: '第<strong>1</strong>間',
-        span: '香港上市眼科中心'
+        h4: 'The<strong>First</strong>', 
+        span: 'Hong Kong-listed ophthalmic center'
       },
       {
-        h4: '<strong>8,000</strong>尺',
-        span: '寬敞、舒適中心環境'
+        h4: '<strong>8,000</strong>Square Feet',
+        span: 'A spacious and comfortable center environment spanning'
       }
     ],
     CorrectionService: {
@@ -76,20 +76,20 @@ module.exports = {
       p2: '姜咏鑫',
       p3: '胡鴻鈞',
       p4: '陳欣妍',
-      span1: '每一次擘大眼都懷疑自己係咪唔記得除con既感覺',
-      span2_1: '從未試過24hrs',
-      span2_2: '都睇得清！',
-      span3_1: '唔駛再戴con/眼鏡',
-      span3_2: '演戲更自在！',
-      span4: '以後可以戴唔會縮細我眼睛既平光鏡！'
+      span1: 'Every time I open my eyes, I wonder if I forgot to remove my contact lenses',
+      span2_1: 'I have never experienced being able to see clearly for whole day long until now',
+      span2_2: '',
+      span3_1: 'It feels more comfortable not to wear contact lenses/glasses while acting!',
+      span3_2: '',
+      span4: "I can wear non-prescription glasses that won't make my eyes look smaller in the coming days"
     },
     VedioSlider: {
       p: '個案分享',
-      span: '觀看更多'
+      span: 'More'
     },
     serve: {
-      p1: '術前眼睛檢查',
-      p2: '講座'
+      p1: 'Pre-surgery eye examination',
+      p2: 'seminar'
     },
     footer: {
       span1: '香港希瑪微笑矯視中心',

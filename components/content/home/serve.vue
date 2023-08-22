@@ -4,7 +4,7 @@
       <p>BOOKING</p>
     </div>
     <div class="pcShow flex md:justify-end flex-col items-center md:flex-row">
-      <div class="serve_title">
+      <div class="serve_title" :style="{display: $i18n.locale == 'en'? 'none':'block'}">
         <p>{{$t('home.headers.reservationService')}}</p>
       </div>
       <div class="serve-box serve-check" @click="serveForm2">

@@ -12,7 +12,7 @@
             rel="noopener noreferrer"
           > -->
           <h3 :class="['title', item.className]">{{ item.title }}</h3>
-          <p :class="item.className" v-html="item.content"></p>
+          <p :class="[item.className, $i18n.locale== 'en' ? 'p_style':'']" v-html="item.content"></p>
           <!-- <p>39 歲以上<br />同時有近視／遠視／<br />散光問題</p> -->
           <span :class="['morelink', item.className]">{{ $i18n.locale === 'en' ? 'learn more': '了解更多' }}</span>
           <img class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-2"
@@ -196,9 +196,14 @@ export default {
 
 @media only screen and (min-width: 768px) {
   p {
-    font-size: 20px !important;
+    font-size: 20px;
   }
-
+  .p_style {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.8px !important;
+  }
   .section {
     padding-top: 45px;
   }
