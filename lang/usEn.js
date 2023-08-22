@@ -10,7 +10,7 @@ module.exports = {
       commonProblem: 'FAQ',
       ophthalmicConsultation: 'More Info',
       feeConsultation: 'Charge Details',
-      consumptionVoucher: '消費券詳情',
+      consumptionVoucher: 'Divit’s Lucky Draw Details',
       contactUs: 'Contact Us',
       reservationService: 'Book NOW',
 
@@ -1193,23 +1193,25 @@ module.exports = {
       ]
     },
     consumption: {
-      title: '消費券詳情',
-      contentText: '為配合政府消費券政策，希瑪林順潮眼科中心、希瑪微笑矯視中心及希瑪眼科視光中心現已接受八達通、拍住賞Tap & Go、AlipayHK、WeChat Pay HK、PayMe、BoC Pay之付款方式，讓顧客能把消費券用在醫療服務上。',
-      tableTitle: '如有任何疑問，歡迎向我們的客戶服務員查詢：',
-      tableColumn_1: '服務中心',
-      tableColumn_2: '電話熱線',
-      tableData_1: '希瑪林順潮眼科中心',
-      tableData_2: '希瑪微笑激光矯視中心',
-      tableData_3: '希瑪眼科視光中心',
-      QATitle: '常見問題',
-      Q_1: '1  使用消費券後，可用其他付款方式付清餘額嗎？',
-      Q_2: '2  使用消費券會影響產品或服務本有的折扣優惠嗎？',
-      Q_3: '3  消費劵有限制可購買的產品或服務嗎？',
-      Q_4: '4  可多人為同一帳單付款嗎？',
-      A_1: '可以',
-      A_2: '使用消費券，客人仍可享有指定產品或服務本有的折扣。',
-      A_3: '沒有。消費劵可在希瑪林順潮眼科中心、希瑪微笑激光矯視中心及希瑪眼科視光中心的任何產品或服務上使用。',
-      A_4: '可以，只要結帳時所有付款人同時在場，我們的服務員會為您們安排收款。'
+      title: 'Divit’s Lucky Draw Details',
+      contentText: `FPS by divit is now available for payment in C-MER Smile Refractive Center.
+      From now until 13 Nov 2023, pay with FPS by divit to enter the divit 300,000 miles giveaway. For every HKD 100 spent per order, you receive 10 entries. You can win 20,000 miles every week and a grand prize of 40,000 miles.The more you purchase, the more chances to win! Bonus: sign up as a divit member and get an extra entry.
+      Don't miss out on a chance to win miles when enjoying the refractive service!`,
+      tableTitle: 'If you have any questions, please feel free to contact our customer service representatives for assistance.',
+      tableColumn_1: 'Centers',
+      tableColumn_2: 'Hotlines',
+      tableData_1: 'C-MER Eye Center',
+      tableData_2: 'C-MER SMILE Refractive Center',
+      tableData_3: 'C-MER Vision Center',
+      QATitle: 'FAQ',
+      Q_1: '1  Can I settle the remaining balance with other payment methods after using the consumption vouchers?',
+      Q_2: '2  Will using consumption vouchers affect the existing discounts or promotions on products or services?',
+      Q_3: '3  Are there any restrictions on the products or services that can be purchased with the consumption vouchers?',
+      Q_4: '4  Is it possible for multiple people to make payment for the same bill?',
+      A_1: 'Yes',
+      A_2: 'Customers can still enjoy the existing discounts on designated products or services when using consumption vouchers.',
+      A_3: 'No, there are no restrictions. The consumption vouchers can be used for any products or services at C-MER Eye Center, C-MER SMILE Refractive Center, and C-MER Vision Center.',
+      A_4: 'Yes, as long as all payment parties are present during checkout, our staff will arrange the payment for you.'
     }
   },
   privacyPolicy: {

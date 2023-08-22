@@ -766,6 +766,9 @@ $active_gradient: #4570b6;
 
     color: #6d6e71;
     text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
   }
 
   .main_after {

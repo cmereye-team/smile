@@ -194,6 +194,9 @@ h2 {
   border-bottom: none;
   text-indent: 20px;
   background-color: #fff;
+  height: auto;
+  line-height: 1.4;
+  padding-left: 20px;
 }
 /deep/ .el-collapse-item__header.is-active{
   color: #20377F;
