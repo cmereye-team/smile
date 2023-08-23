@@ -11,6 +11,7 @@ module.exports = {
       ophthalmicConsultation: '眼科資訊',
       feeConsultation: '收費詳情',
       consumptionVoucher: '消費券詳情',
+      consumptionDivit: 'DIVIT收費詳情',
       contactUs: '聯絡我們',
       reservationService: '預約服務',
 
@@ -1212,6 +1213,20 @@ module.exports = {
       A_2: '使用消費券，客人仍可享有指定產品或服務本有的折扣。',
       A_3: '沒有。消費劵可在希瑪林順潮眼科中心、希瑪微笑激光矯視中心及希瑪眼科視光中心的任何產品或服務上使用。',
       A_4: '可以，只要結帳時所有付款人同時在場，我們的服務員會為您們安排收款。'
+    },
+    divit:{
+      title: 'Divit贏里數詳情',
+      contentText: '希瑪微笑矯視中心現可接受FPS by divit付款了!',
+      contentText0_1:'由即日起至2023年11月13日，使用FPS by divit付款即可參加divit的30萬里數大激賞活動。單次每消費港幣100元，即可獲10次抽獎機會。每週都有機會贏取2萬里數，更有機會贏取4萬里數大獎!購買金額越多，獲獎機會越高。現在還有額外福利：註冊成為divit會員，可以獲得額外一次抽獎機會!',
+      contentText0:'切勿錯過告別鏡片兼贏取里數的機會!',
+      contentText1: 'FPS by divit付款平台只適用於尖沙咀矯視中心',
+      contentText2: '尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室 (K11 Musea附近)',
+      tableTitle: '如有任何疑問，歡迎向我們的客戶服務員查詢：',
+      tableColumn_1: '服務中心',
+      tableColumn_2: '電話熱線',
+      tableData_1: '希瑪林順潮眼科中心',
+      tableData_2: '希瑪微笑激光矯視中心',
+      tableData_3: '希瑪眼科視光中心',
     }
   },
   privacyPolicy: {

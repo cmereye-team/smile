@@ -11,6 +11,7 @@ module.exports = {
       ophthalmicConsultation: 'More Info',
       feeConsultation: 'Charge Details',
       consumptionVoucher: 'Details of consumption voucher',
+      consumptionDivit: 'DIVIT',
       contactUs: 'Contact Us',
       reservationService: 'Book NOW',
 
@@ -1211,6 +1212,20 @@ module.exports = {
       A_2: 'Customers can still enjoy the existing discounts on designated products or services when using consumption vouchers.',
       A_3: 'No, there are no restrictions. The consumption vouchers can be used for any products or services at C-MER Eye Center, C-MER SMILE Refractive Center, and C-MER Vision Center.',
       A_4: 'Yes, as long as all payment parties are present during checkout, our staff will arrange the payment for you.'
+    },
+    divit:{
+      title: 'Divit’s Lucky Draw Details',
+      contentText: 'FPS by divit is now available for payment in C-MER Smile Refractive Center.',
+      contentText0_1:'From now until 13 Nov 2023, pay with FPS by divit to enter the divit 300,000 miles giveaway. For every HKD 100 spent per order, you receive 10 entries. You can win 20,000 miles every week and a grand prize of 40,000 miles.The more you purchase, the more chances to win! Bonus: sign up as a divit member and get an extra entry.',
+      contentText0: `Don't miss out on a chance to win miles when enjoying the refractive service!`,
+      contentText1: 'FPS by divit is available in Tsim Sha Tsui Refractive Center only',
+      contentText2: 'Room 1906, K11 ATELIER Victoria Dockside, 18-24 Salisbury Road, Tsim Sha Tsui（Tsim Sha Tsui MTR Station Exit J2）',
+      tableTitle: 'If you have any questions, please feel free to contact our customer service representatives for assistance.',
+      tableColumn_1: 'Centers',
+      tableColumn_2: 'Hotlines',
+      tableData_1: 'C-MER Eye Center',
+      tableData_2: 'C-MER SMILE Refractive Center',
+      tableData_3: 'C-MER Vision Center',
     }
   },
   privacyPolicy: {

@@ -451,6 +451,10 @@ export default {
               child_item: this.$t("home.headers.consumptionVoucher"),
               link: "/consumption-voucher"
             },
+            {
+              child_item: this.$t("home.headers.consumptionDivit"),
+              link: "/divit",
+            },
           ],
         },
         {

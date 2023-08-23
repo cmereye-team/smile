@@ -11,6 +11,7 @@ module.exports = {
       ophthalmicConsultation: '眼科咨询',
       feeConsultation: '收费详情',
       consumptionVoucher: '消费券详情',
+      consumptionDivit: 'DIVIT收费详情',
       contactUs: '联络我们',
       reservationService: '预约服务',
 
