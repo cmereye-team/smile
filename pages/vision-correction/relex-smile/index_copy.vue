@@ -17,7 +17,7 @@
       </div>
       <div class="businessHours-time">
         <div class="listIn" v-for="(timer,index) in businessHours" :key="index">
-          <div class="listIn-name">{{timer.name}}</div>
+          <div class="listIn-name">{{timer.name}} <sup :style="{display: index == 0 ? 'inline': 'none',color:index == 0 ? '#4570B6': '',fontWeight:  index == 0 ? '500': ''}">#</sup></div>
           <div class="listIn-context">
             <span class="context1" v-if="timer.type === '1'">{{timer.context}}</span>
             <span class="context2" v-if="timer.type === '2'"></span>
@@ -47,16 +47,16 @@
 </template>
 
 <script>
-import Header from "@/components/commom/head/Header.vue";
-import Navbar from "@/components/commom/head/Navbar.vue";
-import Footer from "@/components/commom/foot/Footer.vue";
+import Header from "@/components/commom/new_head/Header.vue";
+import Navbar from "@/components/commom/new_head/Navbar.vue";
+import Footer from "@/components/commom/new_foot/Footer.vue";
 
 import MainBanner from "@/components/content/service/relex_smile/MainBanner_copy.vue";
 import Step from "@/components/content/service/relex_smile/Step_copy.vue";
 import Benefit from "@/components/content/service/relex_smile/Benefit_copy.vue";
 import Fit from "@/components/content/service/relex_smile/Fit_copy.vue";
 import Xtra from "@/components/content/service/relex_smile/Xtra_copy.vue";
-import footers from "@/components/commom/foot/footers.vue";
+import footers from "@/components/commom/new_foot/footers.vue";
 
 export default {
   components: {

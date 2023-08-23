@@ -1,15 +1,55 @@
 <template>
   <div class="main_banner">
     <div class="smile-banner">
-      <img data-src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" srcset="https://static.cmereye.com/imgs/2023/08/1f0f4cb2d113be1f.jpg 768w, https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg" alt="">
-      <div>
-        <div class="title">SMILE {{'\n'}}微笑激光矯視</div>
+      <img
+        data-src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg"
+        srcset="
+          https://static.cmereye.com/imgs/2023/08/1f0f4cb2d113be1f.jpg 768w,
+          https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg
+        "
+        src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg"
+        alt=""
+      />
+      <div class="title_box">
+        <div class="title">SMILE {{ "\n" }}微笑激光矯視</div>
         <div class="text">Small Incision Lenticule Extraction</div>
+      </div>
+      <div class="pathLink">
+        <a
+          ><span
+            ><img
+              src="https://static.cmereye.com/imgs/2023/08/c55d953491658b89.png"
+              alt="" /></span
+          ><span>眼 科 資 訊</span></a
+        >
+        <a href="/charge-detail"
+          ><span
+            ><img
+              src="https://static.cmereye.com/imgs/2023/08/5fc1029d0c3be696.png"
+              alt="" /></span
+          ><span>收 費 詳 情</span></a
+        >
+        <a
+        href="/video"
+          ><span
+            ><img
+              src="https://static.cmereye.com/imgs/2023/08/d01b9ea547b7a087.png"
+              alt="" /></span
+          ><span>矯 視 資 訊 影 片</span></a
+        >
+        <a
+        href="/video"
+          ><span
+            ><img
+              src="https://static.cmereye.com/imgs/2023/08/be8c7e62e5be9d69.png"
+              alt="" /></span
+          ><span>個 案 分 享</span></a
+        >
       </div>
     </div>
     <div class="smile-banner-context">
       <div class="title">矯正原理</div>
-      <div class="context">{{$t('service.relexSmile.mainBanner.span')}}</div>
+      <div class="context">{{ $t("service.relexSmile.mainBanner.span") }}</div>
     </div>
   </div>
 </template>
@@ -25,30 +65,30 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.smile-banner{
+.smile-banner {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   border-radius: 61px;
   overflow: hidden;
   position: relative;
-  &>img{
+  & > img {
     width: 100%;
   }
-  &>div{
+  & > div:nth-child(2) {
     position: absolute;
     left: 6.1%;
     top: 50%;
     transform: translateY(-50%);
-    .title{
-      color: #4570B6;
+    .title {
+      color: #4570b6;
       font-size: 30px;
       font-weight: 700;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
-    .text{
-      color: #4570B6;
+    .text {
+      color: #4570b6;
       font-size: 15px;
       font-weight: 500;
       // line-height: 43.5px; /* 290% */
@@ -56,12 +96,48 @@ export default {
     }
   }
 }
-.smile-banner-context{
+.pathLink {
+  display: flex;
+  padding: 20px 30px;
+  border-radius:0 0 0 60px;
+  background: #FFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: auto;
+
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    & > span:nth-child(1) {
+      min-width: 40px;
+      min-height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & > span:nth-child(2) {
+      margin-top: 10px;
+      writing-mode: vertical-rl;
+      color: #6D6E71;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.4px;
+    }
+  }
+}
+.smile-banner-context {
   width: 100%;
   max-width: 940px;
   margin: 120px auto 0;
-  .title{
-    color: #4570B6;
+  .title {
+    color: #4570b6;
     font-size: 30px;
     font-weight: 500;
     line-height: 30px; /* 100% */
@@ -69,9 +145,9 @@ export default {
     text-align: center;
     position: relative;
     padding-bottom: 30px;
-    &::after{
-      content: '';
-      background: #A6E1D6;
+    &::after {
+      content: "";
+      background: #a6e1d6;
       width: 39px;
       height: 5px;
       border-radius: 3px;
@@ -81,9 +157,9 @@ export default {
       transform: translateX(-50%);
     }
   }
-  .context{
+  .context {
     margin-top: 45px;
-    color: #6D6E71;
+    color: #6d6e71;
     text-align: center;
     font-size: 20px;
     font-weight: 300;
@@ -92,40 +168,43 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
-  .smile-banner{
+  .smile-banner {
     width: auto;
     border-radius: 44px;
     margin: 24px 30px;
-    &>div{
+    & > div {
       max-width: 120px;
-      .title{
+      .title {
         font-size: 14px;
         line-height: 21.952px; /* 156.802% */
         letter-spacing: 3.5px;
         white-space: pre-wrap;
       }
-      .text{
+      .text {
         font-size: 10px;
         line-height: 18.816px; /* 188.163% */
         letter-spacing: 0.3px;
       }
     }
   }
-  .smile-banner-context{
+  .smile-banner-context {
     width: auto;
     margin: 50px 30px 0;
-    .title{
+    .title {
       font-size: 20px;
       line-height: 23.305px; /* 116.525% */
       letter-spacing: 5px;
       padding-bottom: 21px;
     }
-    .context{
+    .context {
       margin-top: 26px;
       font-size: 15px;
       line-height: 30px; /* 200% */
       letter-spacing: 4.5px;
     }
+  }
+  .pathLink {
+    display: none;
   }
 }
 </style>
