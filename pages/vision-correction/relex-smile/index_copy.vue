@@ -178,6 +178,7 @@ export default {
     margin: 34px auto 71px;
     img{
       border-radius: 47px;
+      margin: auto;
     }
   }
   &-time{
