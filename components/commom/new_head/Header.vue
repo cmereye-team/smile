@@ -231,8 +231,10 @@
         </ul>
       </div> -->
     </div>
-    <div class="md:flex items-center pcShow ">
-      <div class="nav_bar section hidden md:flex md:justify-between items-center">
+    <div class="md:flex items-center pcShow">
+      <div
+        class="nav_bar section hidden md:flex md:justify-between items-center"
+      >
         <!-- gsap   移动动画-->
 
         <!-- gsap   移动动画 end-->
@@ -1123,7 +1125,7 @@ $active_gradient: #4570b6;
     flex-direction: column;
     justify-content: center;
 
-    &>div{
+    & > div {
       & > i {
         display: inline-block;
         width: 60%;
@@ -1151,9 +1153,10 @@ $active_gradient: #4570b6;
   .link_more {
     display: none;
   }
-}
-.menu_pc {
-  display: none;
+
+  .menu_pc {
+    display: none;
+  }
 }
 .flex-between {
   @apply flex items-center justify-between;
