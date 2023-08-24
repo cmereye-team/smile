@@ -13,60 +13,6 @@
           />
         </nuxt-link>
       </div>
-      <!-- <div class="flex">
-        <ul class="main_menu flex">
-          <li
-            class="mb-10"
-            :class="[$i18n.locale == 'en' ? 'ml-16' : 'ml-24']"
-            v-for="(navItem, index) in navList"
-            :key="index"
-          >
-            <nuxt-link :to="localePath(navItem.link)" class="main_nav">
-              <div class="mian_nav_text font-black text-xl">
-                {{ navItem.main_nav }}
-              </div>
-            </nuxt-link>
-            <ul class="child_menu">
-              <li v-for="(childItem, index) in navItem.child_list" :key="index">
-                <nuxt-link
-                  :to="localePath(childItem.link)"
-                  class="text-xl mian_nav_text_child"
-                  >{{ childItem.child_item }}</nuxt-link
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="mb-10">
-          <nuxt-link class="main_nav text-xl" :to="localePath('/free')">
-            <div class="mian_nav_text font-black text-xl mian_nav_text_child">
-              {{ $t("home.headers.feeConsultation") }}
-            </div>
-          </nuxt-link>
-          <nuxt-link
-            class="main_nav text-xl mt-6 block"
-            :to="localePath('/consumption-voucher')"
-          >
-            <div
-              class="mian_nav_text font-black text-xl mian_nav_text_child"
-              :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' : '']"
-            >
-              {{ $t("home.headers.consumptionVoucher") }}
-            </div>
-          </nuxt-link>
-          <nuxt-link
-            class="main_nav text-xl mt-6 block"
-            :to="localePath('/contact-us')"
-          >
-            <div
-              class="mian_nav_text font-black text-xl mian_nav_text_child"
-              :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' : '']"
-            >
-              {{ $t("home.headers.contactUs") }}
-            </div>
-          </nuxt-link>
-        </div>
-      </div> -->
       <div class="pathLink">
         <DetailOption :group="groupList" />
         <DetailOption :group="OrthopedicList" />
@@ -114,34 +60,63 @@
   </div>
   <div class="main_footer" v-else-if="screenWidth < 768">
     <div class="section flex justify-between">
-      <div class="w-4/6 mbMenu m-auto">
-        <div class="flex justify-center">
-          <div class="iocn">
-            <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
+      <div class="mbMenu">
+        <div class="mb_footer_eng">
+          <div
+            class="logo_footer m-auto"
+            :style="{ minWidth: $i18n.locale == 'en' ? '250px' : '' }"
+          >
+            <nuxt-link :to="localePath('/')">
+              <img
+                class="foot_logo"
+                src="../../../asset/image/common/Logo.svg"
+                alt=""
+              />
+            </nuxt-link>
           </div>
-          <div class="iocn">
-            <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
+          <div class="pathLink">
+            <DetailOption :group="groupList" />
+            <DetailOption :group="OrthopedicList" />
+            <DetailOption :group="diagnosisInstructionsList" />
+            <DetailOption :group="faq" />
+            <DetailOption :group="contactUs" />
+            <DetailOption :group="ophthalmicConsultation" />
+            <DetailOption :group="reservationService" />
+            <DetailOption :group="video" />
+            <DetailOption :group="share" />
           </div>
-          <div class="iocn">
-            <a href=""><img src="@/asset/image/common/youtube.png" alt="" /></a>
+          <div class="flex justify-center items-center m-auto">
+            <div class="iocn">
+              <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
+            </div>
+            <div class="iocn">
+              <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
+            </div>
+            <div class="iocn">
+              <a href=""
+                ><img src="@/asset/image/common/youtube.png" alt=""
+              /></a>
+            </div>
           </div>
         </div>
-
-        <div class="copyright">
-          ©2023 {{ $t("home.footer.span1") }} <br />{{
-            $t("home.footer.span2")
-          }}
-          <span
-            ><nuxt-link :to="localePath('/privacy-policy')">{{
-              $t("home.footer.span3")
-            }}</nuxt-link></span
-          >
-          |
-          <span
-            ><nuxt-link :to="localePath('/disclaimer')">{{
-              $t("home.footer.span4")
-            }}</nuxt-link></span
-          >
+        <div class="footer-bottom m-auto">
+          <p>
+            <span
+              >©2023 {{ $t("home.footer.span1")
+              }}{{ $t("home.footer.span2") }}</span
+            >
+            <span>
+              <nuxt-link :to="localePath('/privacy-policy')">{{
+                $t("home.footer.span3")
+              }}</nuxt-link>
+            </span>
+            |
+            <span>
+              <nuxt-link :to="localePath('/disclaimer')">{{
+                $t("home.footer.span4")
+              }}</nuxt-link>
+            </span>
+          </p>
         </div>
       </div>
     </div>
@@ -274,11 +249,11 @@ export default {
         ],
       },
       video: {
-        main_nav: '矯視資訊影片',
+        main_nav: "矯視資訊影片",
         link: "/video",
       },
       share: {
-        main_nav: '個案分享',
+        main_nav: "個案分享",
         link: "/video",
       },
       navList: [
@@ -453,7 +428,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    &>div {
+    & > div {
       padding: 15px 20px;
     }
   }
@@ -485,10 +460,10 @@ export default {
   }
 
   .main_footer {
-    background: url('https://static.cmereye.com/imgs/2023/08/dc5cf7af0b7775a9.png');
+    background: url("https://static.cmereye.com/imgs/2023/08/dc5cf7af0b7775a9.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     padding: 2.4vw 0 0;
     position: relative;
     width: 120%;
@@ -538,9 +513,21 @@ export default {
   }
 
   .mbMenu {
-    padding: 20px 0;
+    padding-top: 20px;
   }
 
+  .pathLink {
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    & > div {
+      width: 50%;
+      margin-bottom: 15px;
+    }
+  }
   ::v-deep .el-collapse-item__header {
     font-weight: 400;
     font-size: 19px;
@@ -551,10 +538,17 @@ export default {
     text-align: center;
     display: flex;
   }
-
+  .mb_footer_eng {
+    width: 100%;
+    background: url("https://static.cmereye.com/imgs/2023/08/c005b62af9cd22c1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    padding: 15px 0;
+  }
   .main_footer {
-    background: #f3fcfe;
-    padding: 5.5vw 0 2vw;
+    // background: #f3fcfe;
+    // padding-top: 5.5vw;
     margin-bottom: 100px;
 
     .section {
@@ -572,6 +566,24 @@ export default {
     span {
       border-bottom: 1px solid;
     }
+  }
+  .foot_logo {
+    margin: auto;
+  }
+  .footer-bottom {
+    margin: auto;
+    background: #fff;
+    padding: 15px 0;
+    color: #6d6e71;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 1.2px;
+    width: 180%;
+    margin-left: -40%;
+    transform: scale(0.9);
   }
 }
 </style>

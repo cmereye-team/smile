@@ -277,12 +277,12 @@ export default {
   &-address {
     display: flex;
     justify-content: center;
-    margin: 54px 0 59px;
-    margin: 80%;
+    margin: 54px auto 59px;
 
     & > div {
       display: flex;
       align-items: center;
+      
       &:not(:last-child) {
         margin-right: 100px;
       }
@@ -402,19 +402,18 @@ export default {
   }
   .businessHours-time::-webkit-scrollbar {
     height: 5px;
-    border-radius: 5px;
-    background-color: #D9D9D9;
   }
   /*定义滚动条轨道：内阴影+圆角*/
   .businessHours-time::-webkit-scrollbar-track {
     border-radius: 5px;
-    height: 5px;
+    height: 3px;
     background: #D9D9D9;
   }
   .businessHours-time::-webkit-scrollbar-thumb {
     width: 184px;
-    height: 5px;
-    border-radius: 5px;
+    height: 3px;
+    border-radius: 3px;
+    border: #A6E1D6;
     background-color: #A6E1D6 !important;
   }
 }
