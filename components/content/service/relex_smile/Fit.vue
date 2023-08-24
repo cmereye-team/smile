@@ -1,27 +1,27 @@
 <template>
   <div class="fit">
-    <div class="section page_container">
+    <div class="section page_container" :class="[$i18n.locale == 'en' ? 'section section_eng': 'section']">
       <h3 class="gradient_title_bg">{{ $t('service.relexSmile.fit.h3') }}</h3>
       <div class="fit_des flex justify-between pcShow" :class="[$i18n.locale == 'en' ? 'fit_des_eng':'fit_des']">
         <ul class="fit_des_first"  :class="[$i18n.locale == 'en' ? 'fit_des_first_eng':'fit_des_first']">
           <li v-for="(item1, index) in fitList1" :key="index">
-            <strong>{{ item1 }}</strong>
+            <strong v-html="item1"></strong>
             <!-- <div v-html="text"></div> -->
           </li>
         </ul>
         <ul>
           <li v-for="(item2, index) in fitList2" :key="index" :class="[$i18n.locale == 'en' ? 'fitList':'']">
-            <strong>{{ item2 }}</strong>
+            <strong v-html="item2"></strong>
           </li>
         </ul>
       </div>
-      <div class="fit_des flex justify-between mbShow">
-        <div v-swiper:mySwiper="swiperOptionMb" class="swiperWrap">
+      <div class="flex justify-between mbShow" :class="[$i18n.locale == 'en' ? 'fit_des fit_des_eng':'fit_des']">
+        <div v-swiper:mySwiper="swiperOptionMb" class="swiperWrap" v-if="$i18n.locale !== 'en'">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <ul>
                 <li v-for="(item1, index) in fitList1" :key="index">
-                  <strong>{{ item1 }}</strong>
+                  <strong v-html="item1"></strong>
                   <!-- <div v-html="text"></div> -->
                 </li>
               </ul>
@@ -29,13 +29,32 @@
             <div class="swiper-slide fitList2">
               <ul>
                 <li v-for="(item2, index) in fitList2" :key="index">
-                  <strong>{{ item2 }}</strong>
+                  <strong v-html="item2"></strong>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
+        <!--英文版 ⬇️ -->
+        <div v-swiper:mySwiper="swiperOptionMb" class="swiperWrap" v-else>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul>
+                <li v-for="(item1, index) in fitList1_eng" :key="index" style="height: auto;">
+                  <span v-html="item1"></span>
+                  <!-- <div v-html="text"></div> -->
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide fitList2">
+              <ul>
+                <li v-for="(item2, index) in fitList2_eng" :key="index">
+                  <span v-html="item2"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <!-- <ul>
           <li v-for="(item2,index) in fitList2" :key="index"><strong>{{item2}}</strong></li>
         </ul> -->
@@ -59,7 +78,13 @@ export default {
       fitList1: [
         ...this.$t('service.relexSmile.fit.fitList1')
       ],
+      fitList1_eng: [
+        ...this.$t('service.relexSmile.fit.fitList1')
+      ],
       fitList2: [
+        ...this.$t('service.relexSmile.fit.fitList2')
+      ],
+      fitList2_eng:[
         ...this.$t('service.relexSmile.fit.fitList2')
       ],
     };
@@ -110,7 +135,7 @@ export default {
         margin-left: 5vw;
         ul {
           li {
-            max-width: 240px;
+            max-width: 260px;
             white-space: pre-wrap;
             margin-bottom: 4vw;
             position: relative;
@@ -194,10 +219,11 @@ export default {
     background-size: cover;
     height: 100vw;
     position: relative;
+    margin-bottom: 50px;
     .section {
       margin-top: 0;
+      padding: 5vw 0;
       padding-left: 46%;
-      padding-top: 5vw;
       h3 {
         padding: 14px;
         position: absolute;
@@ -215,24 +241,24 @@ export default {
         color: #ffffff;
       }
       .fit_des {
-        margin-left: 29vw;
+        margin-left: 25vw;
         margin-top: 71px;
         ul {
           li {
-            max-width: 160px;
+            max-width: 240px;
             height: 50px;
             font-family: var(--font_family);
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            /* or 62% */
-            letter-spacing: 0.1em;
-            color: #6D6E71;
-            // white-space: nowrap;
             margin-bottom: 4vw;
             margin-top: 4vw;
             position: relative;
+
+            color: #6D6E71;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 1.4px;
+
             z-index: 9;
             &::before {
               content: " ";
@@ -263,6 +289,13 @@ export default {
           margin-top: 5vw;
         }
       }
+      .fit_des_eng {
+        margin-left: 25vw;
+        margin-top: 71px;
+      }
+    }
+    .section_eng {
+      margin-top: 50vw;
     }
   }
   .fit::before {

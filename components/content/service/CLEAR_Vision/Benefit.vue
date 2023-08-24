@@ -1,16 +1,16 @@
 <template>
   <div class="benefit section pc_page_container">
     <div class="flex justify-center md:mt-28 mt-10 page_container">
-      <h2>{{$t('service.clearVision.benefit.h2')}}</h2>
+      <h2 v-html="$t('service.clearVision.benefit.h2')"></h2>
     </div>
     <div class="benefit_content">
       <ul
         v-if="$i18n.locale !== 'en'"
-        class="benefit_list flex flex-col items-start justify-start page_container"
+        class="benefit_list flex flex-col items-start justify-start page_container benefit_list_eng"
       >
         <li v-for="(benefitItem, index) in benefitList" :key="index" :class="$i18n.locale === 'en' ? 'benefitList' + (index + 1): ''">
           <img :src="benefitItem.index" alt="" class="index" />
-          <p>{{ benefitItem.des }}</p>
+          <p v-html="benefitItem.des"></p>
         </li>
       </ul>
       <ul
@@ -20,7 +20,7 @@
       >
         <li v-for="(benefitItem, index) in benefitList_eng" :key="index" :class="$i18n.locale === 'en' ? 'benefitList' + (index + 1): ''">
           <img :src="benefitItem.index" alt="" class="index" />
-          <p>{{ benefitItem.des }}</p>
+          <p v-html="benefitItem.des"></p>
         </li>
       </ul>
       <img
@@ -182,7 +182,7 @@ h2 {
     height: auto;
     margin-top: 3vw;
     li {
-      margin: 0.5vw 0;
+      margin: 0;
       z-index: 11;
       p {
         font-family: "Noto Sans JP";
@@ -201,19 +201,21 @@ h2 {
       margin-left: 0vw;
     }
     li:nth-child(2) {
-      margin-left: 260px;
+      margin: 30px 0;
+      margin-left: 225px;
     }
     li:nth-child(3) {
-      margin-left: 32px;
+      margin-left: 0vw;
     }
     li:nth-child(4) {
-      margin-left: 402px;
+      margin-left: 500px;
     }
     li:nth-child(5) {
-      margin-left: 140px;
+      margin: 30px 0;
+      margin-left: 225px;
     }
     li:nth-child(6) {
-      margin-left: 520px;
+      margin-left: 500px;
       // padding-bottom: 50px;
     }
   }
@@ -223,31 +225,31 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .benefit_list li:nth-child(1) {
-    margin-top: 27px;
-  }
-  .benefit_list li:nth-child(2) {
-    margin-top: 10px;
-  }
-  .benefit_list li:nth-child(3) {
-    margin-left: 9px !important;
-    margin-top: 10px;
-  }
-  .benefit_list li:nth-child(6) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: 27vw !important;
-    width: 60vw;
-  }
-  .benefit_list li:nth-child(6) img {
-    width: 39vw;
-  }
+  // .benefit_list li:nth-child(1) {
+  //   margin-top: 27px;
+  // }
+  // .benefit_list li:nth-child(2) {
+  //   margin-top: 10px;
+  // }
+  // .benefit_list li:nth-child(3) {
+  //   margin-left: 9px !important;
+  //   margin-top: 10px;
+  // }
+  // .benefit_list li:nth-child(6) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-end;
+  //   margin-left: 27vw !important;
+  //   width: 60vw;
+  // }
+  // .benefit_list li:nth-child(6) img {
+  //   width: 39vw;
+  // }
 
-  .benefit_list li:nth-child(5) {
-    margin-left: 12vw !important;
-    margin-top: -3vw !important;
-  }
+  // .benefit_list li:nth-child(5) {
+  //   margin-left: 12vw !important;
+  //   margin-top: -3vw !important;
+  // }
   .section {
     margin-bottom: 0;
   }
@@ -290,13 +292,13 @@ h2 {
     right: 3vw !important;
     top: -49vw !important;
   }
-  .benefit_list li:nth-child(5) p {
-    width: 60%;
-  }
+  // .benefit_list li:nth-child(5) p {
+  //   width: 60%;
+  // }
   .benefit_list {
     background: url(https://static.cmereye.com/imgs/2022/12/a2c6adf210ffc920.jpg)
       no-repeat;
-    background-size: 73% 50%;
+    background-size: 70% 80%;
     margin-top: 48vw;
     // height: 200vw;
     margin-bottom: 20px;
@@ -304,9 +306,9 @@ h2 {
     background-position-y: 117px;
     li {
       img {
-        width: 33vw;
+        // width: 33vw;
       }
-        margin-bottom: 18px;
+        // margin-bottom: 18px;
       p {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -319,29 +321,55 @@ h2 {
       }
     }
   }
-  .benefit_list li:nth-child(1) {
-    margin-left: 2vw;
-    z-index: 11;
+  .benefit_list_eng {
+    position: relative;
+    z-index: 99;
+    li {
+      width: 60%;
+      margin: 15px 0;
+      p {
+        text-align: left;
+      }
+    }
+    li:nth-child(even) {
+      margin-left: 30%;
+    }
+    li:nth-child(2) {
+      width: 70%;
+      p {
+        max-width: 240px;
+      }
+    }
+    li:nth-child(5) {
+      width: 70%;
+    }
+    li:nth-child(6) {
+      width: 70%;
+    }
   }
-  .benefit_list li:nth-child(2) {
-    margin-left: 18vw;
-    z-index: 11;
-  }
-  .benefit_list li:nth-child(3) {
-    margin-left: 7vw;
-  }
-  .benefit_list li:nth-child(4) {
-    margin-left: 39vw;
-    margin-top: -3vw;
-  }
-  .benefit_list li:nth-child(5) {
-    margin-left: 18vw;
-    margin-top: -2vw;
-  }
-  .benefit_list li:nth-child(6) {
-    margin-left: 39vw;
-    padding-bottom: 5vw;
-  }
+  // .benefit_list li:nth-child(1) {
+  //   margin-left: 2vw;
+  //   z-index: 11;
+  // }
+  // .benefit_list li:nth-child(2) {
+  //   margin-left: 18vw;
+  //   z-index: 11;
+  // }
+  // .benefit_list li:nth-child(3) {
+  //   margin-left: 7vw;
+  // }
+  // .benefit_list li:nth-child(4) {
+  //   margin-left: 39vw;
+  //   margin-top: -3vw;
+  // }
+  // .benefit_list li:nth-child(5) {
+  //   margin-left: 18vw;
+  //   margin-top: -2vw;
+  // }
+  // .benefit_list li:nth-child(6) {
+  //   margin-left: 39vw;
+  //   padding-bottom: 5vw;
+  // }
   .benefit_content .benefit_light {
     top: -14vw;
     right: 0;

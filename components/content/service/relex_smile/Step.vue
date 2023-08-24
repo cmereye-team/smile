@@ -1,6 +1,6 @@
 <template>
   <div class="step section page_container">
-    <div class="flex justify-center md:mt-28 mbShow">
+    <div class="flex justify-center md:mt-28 mbShow" :style="{display: $i18n.locale == 'en' ? 'none': 'block'}">
       <h2>{{$t('service.relexSmile.step.h2_1')}}</h2>
     </div>
     <div class="mbShow mb-10">

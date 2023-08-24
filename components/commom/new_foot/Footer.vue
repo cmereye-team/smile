@@ -114,7 +114,7 @@
   </div>
   <div class="main_footer" v-else-if="screenWidth < 768">
     <div class="section flex justify-between">
-      <div class="w-4/6 mbMenu">
+      <div class="w-4/6 mbMenu m-auto">
         <div class="flex justify-center">
           <div class="iocn">
             <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>

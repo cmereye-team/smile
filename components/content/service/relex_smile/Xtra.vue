@@ -3,7 +3,8 @@
     <div class="xtra_title page_container">
       <div class="flex justify-center mt-8 md:mt-0">
         <h2 class="flex-col">
-          {{$t('service.relexSmile.xtra.h2')}}<span>Comeal Collagen Cross-Linking</span>
+          {{$t('service.relexSmile.xtra.h2')}}
+          <span>Comeal Collagen Cross-Linking</span>
         </h2>
       </div>
       <p>{{$t('service.relexSmile.xtra.p1')}}</p>
@@ -50,7 +51,6 @@ export default {
 @media screen and (min-width: 768px) {
   .xtra {
     max-width: 1280px;
-    margin: auto;
     text-align: center;
     background: url(("https://static.cmereye.com/imgs/smile/images/service/relex_smile/xtra_bg.jpg"));
     background-repeat: no-repeat;
@@ -58,6 +58,7 @@ export default {
     background-position: center;
     height: 46vw;
     padding-top: 5vw;
+    margin: 100px auto;
     .xtra_title {
       h2 {
         margin-bottom: 0;

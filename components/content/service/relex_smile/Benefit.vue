@@ -146,7 +146,7 @@ h2{
     height: auto;
     margin-top: 3vw;
     li {
-      margin: 0.5vw 0;
+      margin: 0;
       z-index: 11;
       p {
         font-family: "Noto Sans JP";
@@ -161,30 +161,49 @@ h2{
         height: 90px;
       }
     }
-    li:nth-child(1) {
-      margin-left: 0vw;
-    }
-    li:nth-child(2) {
-      margin-left: 165px;
-    }
-    li:nth-child(3) {
-      margin-left: 32px;
-    }
-    li:nth-child(4) {
-      margin-left: 402px;
-    }
-    li:nth-child(5) {
-      margin-left: 140px;
-    }
-    li:nth-child(6) {
-      margin-left: 520px;
-      padding-bottom: 123px;
-    }
   }
   .benefit_list_eng {
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     li {
       p {
+        max-width: 380px;
+        text-align: left;
+      }
+    }
+    li:nth-child(2) {
+      margin: 34px 0;
+      margin-left: 165px;
+      p {
+        max-width: 360px;
+        text-align: left;
+      }
+    }
+    li:nth-child(3) {
+      p {
+        max-width: 240px;
+        text-align: left;
+      }
+    }
+    li:nth-child(4) {
+      margin-left: 440px;
+      margin-top: -70px;
+      p {
+        max-width: 380px;
+        text-align: left;
+      }
+    }
+    li:nth-child(5) {
+      margin: 34px 0;
+      margin-left: 165px;
+      p {
+        max-width: 380px;
+        text-align: left;
+      }
+    }
+    li:nth-child(6) {
+      margin-left: 440px;
+      p {
+        margin-left: 20px;
         max-width: 380px;
         text-align: left;
       }
@@ -245,7 +264,7 @@ h2{
     margin-bottom: 58px;
     li {
       img {
-        height: 11vw;
+        height: 10vw;
       }
       margin-bottom: 10px;
       p {
@@ -287,6 +306,63 @@ h2{
     right: 0;
     z-index: 1;
     height: 60vw;
+  }
+  .benefit_list_eng {
+    padding-bottom: 50px;
+    li {
+      margin-left: 4vw;
+      margin-top: 1vw;
+      p {
+        max-width: 160px;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    }
+    li:nth-child(2) {
+      margin-left: 24vw;
+      margin-top: 1vw;
+      p {
+        max-width: 200px;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    }
+    li:nth-child(3) {
+      margin-left: 4vw;
+      margin-top: 1vw;
+      p {
+        max-width: 200px;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    }
+    li:nth-child(4) {
+      margin-left: 24vw;
+      margin-top: 1vw;
+      p {
+        max-width: 230px;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    }
+    li:nth-child(5) {
+      margin-left: 4vw;
+      margin-top: 1vw;
+      p {
+        max-width: 250px;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    }
+    li:nth-child(6) {
+      margin-left: 24vw;
+      margin-top: 1vw;
+      p {
+        max-width: 220px;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    }
   }
 }
 </style>

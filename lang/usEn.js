@@ -3,6 +3,7 @@ module.exports = {
 
   home: {
     navbar: 'Book NOW',
+    divit: `More About<br />  Divit’s Lucky<br />  Draw`,
     headers: {
       aboutSmile: 'About Us',
       orthopedicServices: 'Vision Correction',
@@ -44,6 +45,7 @@ module.exports = {
       coupon: '消費券',
       preferential: '優惠',
       weeding_btn: '婚展活動',
+      coupon_all: 'Details of<br /> Consumption <br />Voucher',
 
       togLang: '選擇語言'
     },
@@ -97,9 +99,9 @@ module.exports = {
       span2: '版權所有',
       span3: '私隱政策',
       span4: '免責條款',
-      title1: '致電查詢',
-      title2: '線上對話',
-      title3: '預約服務'
+      title1: 'Call Now',
+      title2: 'Chat Now',
+      title3: 'Booking'
     }
   },
   aboutUs: {
@@ -438,7 +440,7 @@ module.exports = {
   },
   consumptionVoucher: {
     h2: '消費券詳情',
-    query: '查詢',
+    query: 'Inquire',
     subscribe: 'Book NOW'
   },
   contactUs: {
@@ -1273,12 +1275,12 @@ module.exports = {
   service: {
     clearVision: {
       benefit: {
-        h2: 'Advantages of Presbyopia Correction',
-        p1: 'Able to resume daily activities as early as the next day after surgery',
-        p2: 'Takes approximately 10 to 15 minutes to complete',
-        p3: 'No need to rely on eyeglasses/contact lenses',
-        p4: 'Less prone to rejection',
-        p5: 'Deal with myopia, hyperopia, astigmatism, presbyopia and other problems simultaneously',
+        h2: `Advantages of <br /> Presbyopia Correction`,
+        p1: `Able to resume daily activities as early as the next day after surgery`,
+        p2: `Takes approximately 10 to 15 minutes to complete`,
+        p3: `No need to rely on eyeglasses/contact lenses`,
+        p4: `Less prone to rejection`,
+        p5: `Deal with myopia, hyperopia,<br /> astigmatism, presbyopia and <br />other problems simultaneously`,
         p6: `According to the condition of the patient's eyes and the daily life need to formulate a suitable vision correction plan`
       },
       mainBanner: {
@@ -1293,8 +1295,8 @@ module.exports = {
       },
       suitable: {
         h2: 'Who is suitable?',
-        span1: '40 years<br /> old or <br />above',
-        span2: 'love<br /> sports',
+        span1: '40 years<br /> old <br /> or above',
+        span2: 'love<br /> Sports',
         span3: `Wearing multiple pairs of<br /> corrective glasses for <br />different vision problems<br />(myopia, hyperopia,<br /> astigmatism, presbyopia)`,
         span4: `Do not like<br /> wearing<br /> eyeglasses or<br /> contact lenses `
       }
@@ -1387,14 +1389,14 @@ module.exports = {
       fit: {
         h3: 'Who is suitable for SMILE?',
         fitList1: [
-          "Having below 1,000 degree myopia and/or 500 degree astigmatism ",
-          "Mature development, stable myopia",
-          "Having normal corneal thickness",
-          "The cornea is not infected, such as inflammation or previous injury",
+          `Having below 1,000<br class="mbShow"/> degree myopia and/or 500 <br class="mbShow"/>degree astigmatism `,
+          `The cornea is not infected, <br class="mbShow"/>such as inflammation or<br class="mbShow"/> previous injury`,
+          `Mature development, <br class="mbShow"/>stable myopia`,
+          `Having normal <br class="mbShow"/>corneal thickness`,
         ],
         fitList2: [
-          "No eye disease, such as glaucoma or retinal disease ",
           "Do not suffer from an autoimmune disease, such as rheumatoid arthritis or lupus",
+          "No eye disease, such as glaucoma or retinal disease ",
           "Does not require long-term steroid use",
           "non pregnant"
         ]
@@ -1405,9 +1407,7 @@ module.exports = {
       },
       step: {
         h2_1: '微笑矯視',
-        p: `突破性全新近視矯正技術，比傳統的LASIK激光矯視更安全、微創。本中心的
-            SMILE 微笑矯視使用 Carl Zeiss VisuMax
-            激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-4mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。`,
+        p: `Smile is a breakthrough new myopia correction technology that is safer and less invasive than traditional LASIK laser correction. Our center's SMILE (Small Incision Lenticule Extraction) uses the latest 3.0 system from Carl Zeiss VisuMax laser. The principle is to create a corneal tissue membrane with a full femtosecond laser scan without opening the corneal flap. The membrane is then removed through a small incision of 2-4mm to achieve vision correction. This technology can correct myopia, astigmatism, and presbyopia, reducing our dependence on glasses for our clients`,
         h2_2: 'Steps of Smile',
         des1: 'Direct cutting of the corneal mid-layer using',
         des2: 'Make a small incision of approximately 2-4mm',

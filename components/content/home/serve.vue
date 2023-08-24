@@ -28,19 +28,20 @@
       </div>
     </div>
     <div class="mbShow flex md:justify-end flex-col items-center md:flex-row">
-      <div class="serve_title">
+      <div class="serve_title" :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }">
         <p>{{ $t("home.headers.reservationService") }}</p>
       </div>
       <div class="serve-box serve-check">
         <img
-          src="https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg"
+          :src="$i18n.locale == 'en' ? 'https://static.cmereye.com/imgs/2023/08/572656ab3d644c46.png':'https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg'" 
           alt=""
           class="serve-examineImg"
           @click="serveForm2"
         />
+
         <img
           class="serve-lectureImg"
-          src="https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg "
+          :src="$i18n.locale == 'en' ? 'https://static.cmereye.com/imgs/2023/08/677cb694ddc4a1f1.png':'https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg'"
           alt=""
           @click="serveForm"
         />
@@ -60,7 +61,7 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() { },
   methods: {
     serveForm2() {
       console.log(this.$i18n);

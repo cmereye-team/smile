@@ -8,7 +8,7 @@
         </div>
         <div class="mbShow banner_serve">
           <p>{{$t('service.relexSmile.mainBanner.p')}}</p>
-          <span>(Small Incision Lenticule Extraction)</span>
+          <span :style="{display: $i18n.locale == 'en' ? 'none': 'block'}">(Small Incision Lenticule Extraction)</span>
         </div>
       </template>
       <template v-slot:des>

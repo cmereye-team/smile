@@ -1,15 +1,17 @@
 <template>
   <div class="page_container">
-    <div class="flex justify-center md:mt-28 mt-10">
+    <div class="flex justify-center md:mt-28 mt-10" :class="[$i18n.locale == 'en' ? 'isSHowTitle':'']">
       <h2>{{$t('service.clearVision.manMade.h2')}}</h2>
     </div>
     <div class="mbShow">
-      <span>
+      <p :class="[$i18n.locale == 'en' ? 'textStyleEng':'']"><span>
         {{$t('service.clearVision.manMade.span1')}} </span
-      ><br />
-      <span>
+      ></p>
+      <p :class="[$i18n.locale == 'en' ? 'textStyleEng':'']">
+        <span>
         {{$t('service.clearVision.manMade.span2')}}
       </span>
+      </p>
     </div>
     <div class="madeBox1">
       <img
@@ -135,6 +137,7 @@ span{
       letter-spacing: 0.1em;
 
       color: #6D6E71;
+      text-align: justify;
     }
   }
   .madeBox2 {
@@ -159,7 +162,19 @@ span{
       letter-spacing: 0.1em;
 
       color: #6D6E71;
+      text-align: justify;
     }
+  }
+  .isSHowTitle {
+    display: none;
+  }
+  .textStyleEng {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: #6D6E71;
+    text-align: justify;
   }
 }
 </style>

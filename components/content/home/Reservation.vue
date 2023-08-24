@@ -7,7 +7,7 @@
 
       <div class="img_box">
         <div
-          class="inner_box md:flex items-center justify-between page_container py-8 page_container"
+          class="inner_box md:flex items-center justify-between page_container pt-20 pb-8 page_container"
         >
           <img
             src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/s3_award1.png"

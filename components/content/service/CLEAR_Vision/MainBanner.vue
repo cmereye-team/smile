@@ -83,6 +83,7 @@ export default {
     width: 100vw;
     margin: 0 auto;
     margin-bottom: 10vw;
+    padding-left: 20px;
   }
   
 }

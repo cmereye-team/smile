@@ -250,6 +250,24 @@
           </button>
         </a>
       </div> -->
+      <div class="contact contact_divit">
+        <a href="https://api.whatsapp.com/send/?phone=85260610511">
+          <button class="link_more shadow-lg">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="flex items-center justify-evenly">
+              <img src="https://static.cmereye.com/imgs/2023/08/d119c3b5973e2b97.png"
+                style="max-width: 38px;max-height: 45px;" class="p-1" />
+              <div class="p-1 text-left">
+                <h3 class="text-xs font-normal text-center" v-html="$t('home.divit')" ></h3>
+                <!-- <p class="text-base text-center">6061 0511</p> -->
+              </div>
+            </div>
+          </button>
+        </a>
+      </div>
       <div class="contact">
         <a href="https://api.whatsapp.com/send/?phone=85260610511">
           <button class="link_more shadow-lg">
@@ -257,12 +275,12 @@
             <span></span>
             <span></span>
             <span></span>
-            <div class="flex">
+            <div class="flex items-center justify-evenly">
               <img src="https://www.ameraesthetics.com/template/default/static/images/whatapps.svg"
                 style="max-width: 38px" class="p-1" />
               <div class="p-1 text-left">
-                <h3 class="text-xl font-normal">{{ $t("home.navbar") }}</h3>
-                <p class="text-base text-center">6061 0511</p>
+                <h3 class="text-sm font-normal text-center">{{ $t("home.navbar") }} <br />6061 0511</h3>
+                <!-- <p class="text-base text-center">6061 0511</p> -->
               </div>
             </div>
           </button>
@@ -276,11 +294,11 @@
             <span></span>
             <span></span>
             <span></span>
-            <div class="flex">
+            <div class="flex items-center justify-evenly">
               <img src="@/asset/image/common/Layer_1.png" alt="">
               <div class="p-1 text-left">
-                <h3 class="text-xl font-normal">了解</h3>
-                <p class="text-base text-center">{{ $t('home.headers.coupon') + $t('home.headers.preferential') }}</p>
+                <h3 class="text-xs font-normal text-center" v-html="$t('home.headers.coupon_all')"></h3>
+                <!-- <p class="text-base text-center">{{ $t('home.headers.coupon') + $t('home.headers.preferential') }}</p> -->
               </div>
             </div>
           </button>
@@ -912,8 +930,8 @@ $active_gradient: #4570b6;
 
       text-align: center;
       // border-radius: 10vw;
-      width: 170px;
-      height: 60px;
+      width: 180px;
+      height: 70px;
     }
 
     .link_more:hover {
@@ -962,17 +980,17 @@ $active_gradient: #4570b6;
       transform: translate3d(100%, 0, 0);
     }
   }
-
-  .contact_hunzhan {
-    top: calc(66% - 120px);
+  
+  .contact_divit {
+    top: calc(66% - 120px) !important;
 
     .link_more {
-      background: #EDB4BE;
+      background:linear-gradient(193deg, #545454 9.90%, #847b3e 63.54%, #c0bca8 100%) !important;
     }
   }
 
-  .contact_hunzhan .link_more::before {
-    background: #E88597;
+  .contact_divit .link_more::before {
+    background: linear-gradient(193deg, #000 9.90%, #7C7021 63.54%, #FEE332 100%) !important;
   }
 
   .nav-language {
