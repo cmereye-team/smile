@@ -26,13 +26,13 @@
       </div>
       <div class="copyright">
         <div class="flex md:mb-5 justify-center items-center">
-          <div class="iocn mr-5 mb-1">
+          <div class="iocn">
             <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
           </div>
-          <div class="iocn mr-5 mb-1">
+          <div class="iocn pc_icon">
             <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
           </div>
-          <div class="iocn mb-1">
+          <div class="iocn">
             <a href=""><img src="@/asset/image/common/youtube.png" alt="" /></a>
           </div>
         </div>
@@ -410,10 +410,8 @@ export default {
 <style lang="scss" scoped>
 //pc
 @media screen and (min-width: 768px) {
-  .mbMenu {
-    .iocn {
-      padding: 10px;
-    }
+  .pc_icon {
+    margin: 0 24px;
   }
 
   .logo_footer {

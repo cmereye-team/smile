@@ -1133,7 +1133,7 @@ $active_gradient: #4570b6;
         flex-direction: column;
         margin: 10px auto;
         background: #fff;
-        height: 5px;
+        height: 3px;
         border-radius: 5px;
       }
     }

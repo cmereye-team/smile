@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="xtra-in-btn">
-        <span>了解更多</span>
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=85260610511&text=想了解SMILE XTRA角膜膠原交聯術">了解更多</a>
       </div>
     </div>
     <!-- <div class="xtra_title page_container">
@@ -101,7 +101,11 @@ export default {
     return {};
   },
   created() {},
-  methods: {},
+  methods: {
+    goWhatsapp(){
+      window.location.href = "https://api.whatsapp.com/send/?phone=85260610511&text=想了解SMILE XTRA角膜膠原交聯術"
+    }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -196,7 +200,7 @@ export default {
       }
     }
     &-btn{
-      span{
+      a{
         cursor: pointer;
         width: 200px;
         display: block;
