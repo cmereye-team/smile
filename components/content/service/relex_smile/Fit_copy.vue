@@ -133,11 +133,12 @@ export default {
     flex: 1;
     img{
       border: 50px;
+      width: 88%;
     }
   }
   &-r{
     flex: 1;
-    margin-left:8%;
+    // margin-left:8%;
     &-t{
       margin-bottom: 52px;
       &>div{
@@ -177,7 +178,7 @@ export default {
           width: 50%;
           display: flex;
           align-items: center;
-          margin-bottom: 72px;
+          margin-bottom: 46px;
           &:nth-of-type(odd){
             width: 40%;
           }
@@ -193,89 +194,25 @@ export default {
             white-space: pre-wrap;
           }
         }
+        .listIn:nth-child(7),
+        .listIn:nth-child(8)  {
+          margin-bottom: 0;
+        }
       }
     }
   }
 }
-// @media screen and (min-width: 768px) {
-//   h2 {
-//     font-size: 25px;
-//   }
-//   .fit {
-//     max-width: 1280px;
-//     margin: auto;
-//     .section {
-//       margin-top: 0;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-end;
-//       padding-top: 5vw;
-//       h3 {
-//         font-size: 25px;
-//         margin-bottom: 4.5vw;
-//         margin-right: 200px;
-//       }
-//       .fit_des_first {
-//         margin-right: 100px;
-//       }
-//       .fit_des {
-//         margin-left: 5vw;
-//         ul {
-//           li {
-//             white-space: pre-wrap;
-//             margin-bottom: 4vw;
-//             position: relative;
-//             z-index: 9;
-//             strong {
-//               font-family: "Noto Sans JP";
-//               font-style: normal;
-//               font-weight: 400;
-//               font-size: 17px;
-//               line-height: 25px;
-//               /* or 167% */
-
-//               letter-spacing: 0.1em;
-
-//               color: #6D6E71;
-//             }
-//             &::before {
-//               content: " ";
-//               position: absolute;
-//               background: rgba(129, 219, 236, 0.3);
-//               width: 3vw;
-//               height: 3vw;
-//               border-radius: 100%;
-//               top: -1.2vw;
-//               left: -1.3vw;
-//               z-index: -1;
-//             }
-//           }
-//           li:nth-child(1) {
-//             margin-left: -2vw;
-//           }
-//           li:nth-child(2) {
-//             margin-left: 0;
-//           }
-//           li:nth-child(3) {
-//             margin-left: 2vw;
-//           }
-//           li:nth-child(4) {
-//             margin-left: 4vw;
-//           }
-//         }
-//         ul:nth-child(2) {
-//           margin-top: 5vw;
-//         }
-//       }
-//     }
-//   }
-// }
 
 @media screen and (max-width: 768px) {
   .fit{
     flex-direction: column;
     width: auto;
     margin: 50px 30px 30px;
+    &-l{
+      img{
+        margin: auto;
+      }
+    }
     &-r{
       margin-left: 0;
       &-t{
@@ -323,104 +260,15 @@ export default {
               letter-spacing: 1.6px;
             }
           }
+          .listIn:nth-child(7) {
+            margin-bottom: 21px;
+          }
+          .listIn:nth-child(8) {
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
-  // .fitList2 ul li:nth-child(2) {
-  //   white-space: break-spaces !important;
-  // }
-  // .fit {
-  //   background-image: url("https://static.cmereye.com/imgs/2022/12/a8f5b0b92f86d0e6.jpg");
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   height: 100vw;
-  //   position: relative;
-  //   .section {
-  //     margin-top: 0;
-  //     padding-left: 46%;
-  //     padding-top: 5vw;
-  //     h3 {
-  //       padding: 14px;
-  //       position: absolute;
-  //       right: 0;
-  //       font-family: "Noto Sans JP";
-  //       font-style: normal;
-  //       font-weight: 500;
-  //       font-size: 13px;
-  //       line-height: 5px;
-  //       /* or 38% */
-
-  //       text-align: center;
-  //       letter-spacing: 0.1em;
-
-  //       color: #ffffff;
-  //     }
-  //     .fit_des {
-  //       margin-left: 29vw;
-  //       margin-top: 71px;
-  //       ul {
-  //         li {
-  //           max-width: 160px;
-  //           height: 50px;
-  //           font-family: var(--font_family);
-  //           font-style: normal;
-  //           font-weight: 400;
-  //           font-size: 14px;
-  //           line-height: 20px;
-  //           /* or 62% */
-  //           letter-spacing: 0.1em;
-  //           color: #6D6E71;
-  //           // white-space: nowrap;
-  //           margin-bottom: 4vw;
-  //           margin-top: 4vw;
-  //           position: relative;
-  //           z-index: 9;
-  //           &::before {
-  //             content: " ";
-  //             position: absolute;
-  //             background: rgba(129, 219, 236, 0.3);
-  //             width:8vw;
-  //             height: 8vw;
-  //             border-radius: 100%;
-  //             top: -2vw;
-  //             left: -3vw;
-  //             z-index: -1;
-  //           }
-  //         }
-  //         li:nth-child(1) {
-  //           margin-left: 3vw;
-  //         }
-  //         li:nth-child(2) {
-  //           margin-left: 9vw;
-  //         }
-  //         li:nth-child(3) {
-  //           margin-left: 15vw;
-  //         }
-  //         li:nth-child(4) {
-  //           margin-left: 21vw;
-  //         }
-  //       }
-  //       ul:nth-child(2) {
-  //         margin-top: 5vw;
-  //       }
-  //     }
-  //   }
-  // }
-  // .fit::before {
-  //   position: absolute;
-  //   content: "";
-  //   width: 12.5vw;
-  //   height: 6.7vw;
-  //   background-image: url(https://static.cmereye.com/imgs/2022/12/43871fde827f43df.png);
-  //   bottom: 5vw;
-  //   /* left: 0; */
-  //   right: 5vw;
-  //   /* top: 0; */
-  //   background-size: 100%;
-  //   background-repeat: no-repeat;
-  //   -webkit-animation: translateX 1s ease-in-out alternate infinite;
-  //   animation: translateX 1s ease-in-out alternate infinite;
-  // }
 }
 </style>

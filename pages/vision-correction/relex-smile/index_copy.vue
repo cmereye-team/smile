@@ -9,34 +9,71 @@
     <Fit />
     <Xtra />
     <div class="businessHours">
-      <div class="businessHours-title">
-        營業時間
-      </div>
+      <div class="businessHours-title">營業時間</div>
       <div class="businessHours-img">
-        <img data-src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg" srcset="https://static.cmereye.com/imgs/2023/08/c80ae8a53c8e5a0b.jpg 768w,https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg" src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg" alt="">
+        <img
+          data-src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg"
+          srcset="
+            https://static.cmereye.com/imgs/2023/08/c80ae8a53c8e5a0b.jpg 768w,
+            https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg
+          "
+          src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg"
+          alt=""
+        />
       </div>
       <div class="businessHours-time">
-        <div class="listIn" v-for="(timer,index) in businessHours" :key="index">
-          <div class="listIn-name">{{timer.name}} <sup :style="{display: index == 0 ? 'inline': 'none',color:index == 0 ? '#4570B6': '',fontWeight:  index == 0 ? '500': ''}">#</sup></div>
+        <div
+          class="listIn"
+          v-for="(timer, index) in businessHours"
+          :key="index"
+        >
+          <div class="listIn-name">
+            {{ timer.name }}
+            <sup
+              :style="{
+                display: index == 0 ? 'inline' : 'none',
+                color: index == 0 ? '#4570B6' : '',
+                fontWeight: index == 0 ? '500' : '',
+              }"
+              >#</sup
+            >
+          </div>
           <div class="listIn-context">
-            <span class="context1" v-if="timer.type === '1'">{{timer.context}}</span>
+            <span class="context1" v-if="timer.type === '1'">{{
+              timer.context
+            }}</span>
             <span class="context2" v-if="timer.type === '2'"></span>
-            <span class="context3" v-if="timer.type === '3'">{{timer.context}}</span>
-            <span class="context4" v-if="timer.type === '4'"></span>
+            <span class="context3" v-if="timer.type === '3'">{{
+              timer.context
+            }}</span>
+            <span
+              class="context4"
+              v-if="timer.type === '4'"
+              :class="`timer${index + 1}`"
+            ></span>
           </div>
         </div>
       </div>
       <div class="businessHours-address">
         <div>
-          <img src="https://static.cmereye.com/imgs/2023/08/c4adc90ee0266d51.png" alt="">
+          <img
+            src="https://static.cmereye.com/imgs/2023/08/c4adc90ee0266d51.png"
+            alt=""
+          />
           <span>中環</span>
         </div>
         <div>
-          <img src="https://static.cmereye.com/imgs/2023/08/c4adc90ee0266d51.png" alt="">
+          <img
+            src="https://static.cmereye.com/imgs/2023/08/c4adc90ee0266d51.png"
+            alt=""
+          />
           <span>旺角</span>
         </div>
         <div>
-          <img src="https://static.cmereye.com/imgs/2023/08/c4adc90ee0266d51.png" alt="">
+          <img
+            src="https://static.cmereye.com/imgs/2023/08/c4adc90ee0266d51.png"
+            alt=""
+          />
           <span>尖沙咀</span>
         </div>
       </div>
@@ -89,57 +126,57 @@ export default {
       ],
     };
   },
-  data(){
+  data() {
     return {
       businessHours: [
         {
-          type: '1',
-          name: '營業時間',
-          context: '9:00-19:00'
+          type: "1",
+          name: "營業時間",
+          context: "9:00-19:00",
         },
         {
-          type: '2',
-          name: '星期一',
-          context: ''
+          type: "2",
+          name: "星期一",
+          context: "",
         },
         {
-          type: '2',
-          name: '星期二',
-          context: ''
+          type: "2",
+          name: "星期二",
+          context: "",
         },
         {
-          type: '2',
-          name: '星期三',
-          context: ''
+          type: "2",
+          name: "星期三",
+          context: "",
         },
         {
-          type: '2',
-          name: '星期四',
-          context: ''
+          type: "2",
+          name: "星期四",
+          context: "",
         },
         {
-          type: '2',
-          name: '星期五',
-          context: ''
+          type: "2",
+          name: "星期五",
+          context: "",
         },
         {
-          type: '3',
-          name: '星期六',
-          context: '9:00-18:00'
+          type: "3",
+          name: "星期六",
+          context: "9:00-18:00",
         },
         {
-          type: '4',
-          name: '星期日',
-          context: ''
+          type: "4",
+          name: "星期日",
+          context: "",
         },
         {
-          type: '4',
-          name: '公眾假期',
-          context: ''
-        }
-      ]
-    }
-  }
+          type: "4",
+          name: "公眾假期",
+          context: "",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -147,12 +184,12 @@ export default {
 // .section.vedio_box {
 //   margin-top: 0;
 // }
-.businessHours{
+.businessHours {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  &-title{
-    color: #4570B6;
+  &-title {
+    color: #4570b6;
     font-size: 30px;
     font-weight: 500;
     line-height: 30px; /* 100% */
@@ -160,9 +197,9 @@ export default {
     text-align: center;
     position: relative;
     padding-bottom: 30px;
-    &::after{
-      content: '';
-      background: #A6E1D6;
+    &::after {
+      content: "";
+      background: #a6e1d6;
       width: 39px;
       height: 5px;
       border-radius: 3px;
@@ -172,86 +209,88 @@ export default {
       transform: translateX(-50%);
     }
   }
-  &-img{
+  &-img {
     width: 100%;
     max-width: 1000px;
     margin: 34px auto 71px;
-    img{
+    img {
       border-radius: 47px;
       margin: auto;
     }
   }
-  &-time{
+  &-time {
     display: flex;
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
-    .listIn{
+    .listIn {
       flex: 1;
-      &:first-child{
+      &:first-child {
         flex: 1.5;
       }
-      &-name{
-        color: #6B6B6B;
+      &-name {
+        color: #6b6b6b;
         font-size: 17px;
         font-weight: 300;
         // line-height: 180%; /* 30.6px */
         line-height: 54px;
         height: 54px;
         letter-spacing: 2.04px;
-        border-bottom: 2px solid #F5F4F4;
+        border-bottom: 2px solid #f5f4f4;
         text-align: center;
       }
-      &-context{
+      &-context {
         line-height: 54px;
         height: 54px;
-        border-bottom: 2px solid #F5F4F4;
+        border-bottom: 2px solid #f5f4f4;
         display: flex;
         align-items: center;
         justify-content: center;
-        span{
-          color: #4570B6;
+        span {
+          color: #4570b6;
           font-size: 17px;
           font-weight: 400;
           letter-spacing: 1.7px;
           white-space: nowrap;
-          &.context1{
-            color: #6B6B6B;
+          &.context1 {
+            color: #6b6b6b;
           }
-          &.context2{
+          &.context2 {
             width: 14px;
             height: 14px;
             display: block;
             border-radius: 50%;
-            background-color: #4570B6;
+            background-color: #4570b6;
           }
-          &.context4{
+          &.context4 {
             width: 36px;
             height: 4px;
             display: block;
             border-radius: 2px;
-            background-color: #4570B6;
+            background-color: #4570b6;
             transform: rotate(150.642deg);
           }
         }
       }
     }
   }
-  &-address{
+  &-address {
     display: flex;
     justify-content: center;
     margin: 54px 0 59px;
-    &>div{
+    margin: 80%;
+
+    & > div {
       display: flex;
       align-items: center;
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: 100px;
       }
-      img{
+      img {
         margin-right: 9px;
       }
-      span{
-        color: #6D6E71;
+      span {
+        color: #6d6e71;
         font-size: 23px;
         font-weight: 500;
         line-height: 40px; /* 173.913% */
@@ -261,89 +300,122 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
-  .businessHours{
-    &-title{
+  .businessHours {
+    &-title {
       font-size: 20px;
       padding-bottom: 22px;
       line-height: 23.305px; /* 116.525% */
       letter-spacing: 5px;
-      &::before{
+      &::before {
         height: 4px;
         border-radius: 2px;
       }
     }
-    &-img{
+    &-img {
       width: auto;
       margin: 28px 30px 34px;
-      img{
+      img {
         width: 100%;
         border-radius: 30px;
       }
     }
-    &-time{
-      flex-wrap: wrap;
-      padding: 0 30px;
-      .listIn{
-        min-width: 32px;
-        max-width: 32px;
-        margin-right: 20px;
-        margin-bottom: 26px;
+    &-time {
+      // flex-wrap: nowrap;
+      width: 84%;
+      max-width: 1280px;
+      // padding: 0 30px;
+      overflow-x: scroll;
+
+      .listIn {
+        // min-width: 32px;
+        // max-width: 32px;
+        // margin-right: 20px;
+        // margin-bottom: 26px;
         display: flex;
         flex-direction: column;
-        &:first-child{
-          width: 58px;
-          max-width: 58px;
-        }
-        &:nth-of-type(7){
-          margin-left: 78px;
-        }
-        
-        &-name{
+        min-width: 110px;
+        align-items: center;
+        // &:first-child{
+        // width: 58px;
+        // max-width: 58px;
+        // }
+        // &:nth-of-type(7){
+        // margin-left: 78px;
+        // }
+
+        &-name {
           line-height: 180%;
           height: auto;
           border-bottom: none;
+          letter-spacing: 0;
+          width: fit-content;
+          white-space: nowrap;
+          width: 100%;
+          padding-bottom: 15px;
         }
-        &-context{
+        &-context {
           flex: 1;
           height: auto;
           line-height: 180%;
+          min-height: 30px;
           border-bottom: none;
-          span{
-            white-space: pre-wrap;
-            &.context2{
-
+          width: 100%;
+          padding: 15px 0;
+          border-top: 2.83px solid #f5f4f4;
+          border-bottom: 2.83px solid #f5f4f4;
+          margin-bottom: 20px;
+          span {
+            // white-space: pre-wrap;
+            &.context2 {
             }
-            &.context4{
-              transform: rotate(130.167deg);
+            &.context4 {
+              // transform: rotate(130.167deg);
             }
           }
         }
-        &:last-child{
-          .listIn-name{
-            line-height: 140%;
+        &:last-child {
+          .listIn-name {
+            // line-height: 140%;
           }
         }
       }
     }
-    &-address{
-      justify-content: space-around;
-      margin: 23px 0 51px;
-      &>div{
+    &-address {
+      justify-content: space-evenly;
+      margin: 23px auto 51px;
+      & > div {
         flex-direction: column;
-        &:not(:last-child){
+        &:not(:last-child) {
           margin-right: 0;
         }
-        img{
+        img {
           width: 25px;
           margin-right: 0;
         }
-        span{
+        span {
           font-size: 20px;
           line-height: 40px; /* 200% */
           letter-spacing: 2px;
         }
       }
     }
+  }
+  .businessHours-time::-webkit-scrollbar {
+    height: 5px;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+  }
+  /*定义滚动条轨道：内阴影+圆角*/
+  .businessHours-time::-webkit-scrollbar-track {
+    border-radius: 5px;
+    height: 5px;
+    background: #D9D9D9;
+  }
+  .businessHours-time::-webkit-scrollbar-thumb {
+    width: 184px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #A6E1D6 !important;
   }
 }
 </style>

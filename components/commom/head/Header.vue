@@ -251,7 +251,7 @@
         </a>
       </div> -->
       <div class="contact contact_divit">
-        <a href="https://api.whatsapp.com/send/?phone=85260610511">
+        <a :href="localePath('/divit')">
           <button class="link_more shadow-lg">
             <span></span>
             <span></span>

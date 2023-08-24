@@ -12,7 +12,7 @@ module.exports = {
       ophthalmicConsultation: '眼科資訊',
       feeConsultation: '收費詳情',
       consumptionVoucher: '消費券詳情',
-      consumptionDivit: 'DIVIT收費詳情',
+      consumptionDivit: 'FPS by divit 詳情',
       contactUs: '聯絡我們',
       reservationService: '預約服務',
 

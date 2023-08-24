@@ -103,9 +103,11 @@ export default {
       width: 100%;
     }
     li{
-      &:not(:last-child){
-        margin-bottom: 30px;
-      }
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    li:last-child{
+      margin-bottom: 0;
     }
   }
 }

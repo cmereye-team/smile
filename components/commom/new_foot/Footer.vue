@@ -485,7 +485,10 @@ export default {
   }
 
   .main_footer {
-    background: #c7e8ef33;
+    background: url('https://static.cmereye.com/imgs/2023/08/dc5cf7af0b7775a9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     padding: 2.4vw 0 0;
     position: relative;
     width: 120%;

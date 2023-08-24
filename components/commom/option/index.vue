@@ -84,7 +84,7 @@ export default {
     display: block;
   }
   a:hover {
-    color: #fff;
+    color: #4570B6;
   }
   .title:hover{
     color: #4570B6;
