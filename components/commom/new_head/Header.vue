@@ -289,22 +289,16 @@
             />
           </div>
         </div>
-        <div class="menu_pc">
-          <div><i></i><i></i><i></i></div>
-        </div>
         <nuxt-link
           style="display: none"
           :to="localePath('/booking')"
           class="text-base ll_box nav-bookingservice pcShow"
           >{{ $t("home.headers.reservationService") }}</nuxt-link
         >
-        <div
-          style="display: none"
-          class="flex items-center nav-language group relative"
-        >
+        <div class="flex items-center nav-language group relative">
           <img src="../../../asset/image/common/Vector.png" alt="" />
           <ul
-            class="nav-language-box absolute top-10 hidden group-hover:block -left-5"
+            class="nav-language-box absolute top-5 hidden group-hover:block -left-5"
           >
             <!-- <li><a href="###">繁</a> </li>
             <li><a href="###">简</a> </li> -->
@@ -328,66 +322,50 @@
             <!-- </li> -->
           </ul>
         </div>
+        <div class="menu_pc">
+          <div><i></i><i></i><i></i></div>
+        </div>
       </div>
-      <!-- <div class="contact contact_hunzhan">
-        <a href="./wedding">
-          <button class="link_more shadow-lg">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="flex">
-              <div class="p-1 text-left" style="padding-left: 33px;">
-                <h3 class="text-xl font-normal">{{ $t('home.headers.weeding_btn') }}</h3>
-              </div>
-            </div>
-          </button>
-        </a>
-      </div> -->
-      <div class="contact">
-        <a href="https://api.whatsapp.com/send/?phone=85260610511">
-          <button class="link_more shadow-lg">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="flex">
+
+      <div class="sidebar_contact">
+        <div>
+          <a href="https://api.whatsapp.com/send/?phone=85260610511" target="_blank">
+            <div>
               <img
-                src="https://www.ameraesthetics.com/template/default/static/images/whatapps.svg"
-                style="max-width: 38px"
-                class="p-1"
-              />
-              <div class="p-1 text-left">
-                <h3 class="text-xl font-normal">{{ $t("home.navbar") }}</h3>
-                <p class="text-base text-center">6061 0511</p>
-              </div>
+                  src="https://static.cmereye.com/imgs/2023/08/8403ced7dc2e7c7f.png"
+                  class="p-1"
+                />
             </div>
-          </button>
-        </a>
-      </div>
-      <div class="contact">
-        <a
-          :href="'https://api.whatsapp.com/send/?phone=85260610511&text=%E6%83%B3%E4%BA%86%E8%A7%A3(W-01)SMILE%E5%BE%AE%E7%AC%91%E7%9F%AF%E8%A6%96%E6%B6%88%E8%B2%BB%E5%8D%B7%E6%94%B6%E8%B2%BB%E8%A9%B3%E6%83%85'"
-        >
-          <button class="link_more shadow-lg">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="flex">
-              <img src="@/asset/image/common/Layer_1.png" alt="" />
-              <div class="p-1 text-left">
-                <h3 class="text-xl font-normal">了解</h3>
-                <p class="text-base text-center">
-                  {{
-                    $t("home.headers.coupon") + $t("home.headers.preferential")
-                  }}
-                </p>
-              </div>
+            <div><span>了解更多</span></div>
+          </a>
+        </div>
+        <div>
+          <a href="https://api.whatsapp.com/send/?phone=85260610511" target="_blank">
+            <div>
+              <img
+                  src="https://static.cmereye.com/imgs/2023/08/8814d9fb19e5dd7a.png"
+                  class="p-1"
+                />
             </div>
-          </button>
-        </a>
+            <div><span>快速預約</span></div>
+          </a>
+        </div>
+        <div>
+          <a
+            :href="localePath('/consumption-voucher')"
+            target="_blank"
+          >
+          <div>
+              <img
+                  src="https://static.cmereye.com/imgs/2023/08/9938e31284f5eda3.png"
+                  class="p-1"
+                />
+            </div>
+            <div><span>消費券優惠</span></div>
+          </a>
+        </div>
       </div>
+
       <!-- <div class="contact-coupon">
         <nuxt-link :to="'/charge-detail'">
           <div class="couponBox">
@@ -984,105 +962,38 @@ $active_gradient: #4570b6;
       margin: 5px 0;
     }
   }
-
-  .contact {
+  .sidebar_contact {
     position: fixed;
     right: 9%;
     letter-spacing: 0.1em;
     top: 66%;
-    cursor: pointer;
-    z-index: 999;
-    font-weight: 600;
-    white-space: nowrap;
-
-    .link_more {
-      outline: none;
-      cursor: pointer;
-      border: none;
-      margin: 0;
-      font-family: inherit;
-      font-size: inherit;
-      position: relative;
-      display: inline-block;
-      letter-spacing: 0.05rem;
-      font-weight: 700;
-      font-size: 17px;
-      border-radius: 500px;
-      overflow: hidden;
-      background: #6eb9db;
-      color: #f3fcfe;
-      // background: #4570b6;
-      // transition: all 0.5s;
-      // color: white;
-      // display: block;
-      padding: 0 0.5vw;
-      margin: 0 auto;
-
-      text-align: center;
-      // border-radius: 10vw;
-      width: 170px;
-      height: 60px;
-    }
-
-    .link_more:hover {
-      animation: ani 8s linear infinite;
-      border: none;
-    }
-
-    @keyframes ani {
-      0% {
-        background-position: 0%;
-      }
-
-      100% {
-        background-position: 400%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &>div {
+      a {
+        color: #4570B6;
+        text-align: center;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 3.4px;
       }
     }
-
-    .link_more::before,
-    .link_more::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
+    &>div:nth-child(even){
+      padding: 20px 0;
     }
-
-    .link_more div {
-      position: relative;
-      z-index: 10;
-      transition: color 0.4s;
-    }
-
-    .link_more::before {
-      content: "";
-      background: #4570b6;
-
-      width: 120%;
-      left: -10%;
-      transform: skew(30deg);
-      transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-    }
-
-    .link_more:hover::before {
-      color: #4570b6;
-      transform: translate3d(100%, 0, 0);
+    &>div:last-child {
+      a>div:nth-child(2){
+        max-width: 80px;
+        text-align: center;
+        margin: auto;
+      }
     }
   }
-
-  .contact_hunzhan {
-    top: calc(66% - 120px);
-
-    .link_more {
-      background: #edb4be;
-    }
-  }
-
-  .contact_hunzhan .link_more::before {
-    background: #e88597;
-  }
-
   .nav-language {
     z-index: 99;
   }
@@ -1109,7 +1020,7 @@ $active_gradient: #4570b6;
     & > div:nth-child(1) {
       display: flex;
       align-items: center;
-      padding: 0 20px;
+      padding: 0 10px;
       & > a {
         padding: 0 10px;
       }
@@ -1143,6 +1054,9 @@ $active_gradient: #4570b6;
 // mb
 @media (max-width: 768px) {
   .ball {
+    display: none;
+  }
+  .sidebar_contact {
     display: none;
   }
 

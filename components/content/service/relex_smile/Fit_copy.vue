@@ -244,6 +244,7 @@ export default {
         .listBox{
           .listIn{
             width: 100%;
+            min-height: 50px;
             margin-bottom: 21px;
             &:nth-of-type(odd){
               width: 100%;

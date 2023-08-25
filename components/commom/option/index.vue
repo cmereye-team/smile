@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="optiond" :class="[group.child_list && group.child_list.length > 0 ? '':'noChild']">
+    <div class="optiond">
       <a class="title" :href="group.link">
         <div>
           {{ group.main_nav }}
@@ -125,9 +125,7 @@ export default {
       }
     }
   }
-  .noChild {
-    margin-left: 0 !important;
-  }
+
   .nav {
     color: #6d6e71;
     text-align: center;

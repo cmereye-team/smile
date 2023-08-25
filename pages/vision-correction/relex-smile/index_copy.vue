@@ -396,6 +396,11 @@ export default {
           font-size: 20px;
           line-height: 40px; /* 200% */
           letter-spacing: 2px;
+          min-width: 68px;
+          margin: auto;
+          display: flex;
+          text-align: center;
+          justify-content: center;
         }
       }
     }

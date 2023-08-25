@@ -16,13 +16,14 @@
       </div>
       <div class="pathLink">
         <a
+        :href="localePath('/media')"
           ><span
             ><img
               src="https://static.cmereye.com/imgs/2023/08/c55d953491658b89.png"
               alt="" /></span
           ><span>眼 科 資 訊</span></a
         >
-        <a href="/charge-detail"
+        <a :href="localePath('/charge-detail')"
           ><span
             ><img
               src="https://static.cmereye.com/imgs/2023/08/5fc1029d0c3be696.png"
@@ -30,7 +31,7 @@
           ><span>收 費 詳 情</span></a
         >
         <a
-        href="/video"
+        :href="localePath('/video')"
           ><span
             ><img
               src="https://static.cmereye.com/imgs/2023/08/d01b9ea547b7a087.png"
@@ -38,7 +39,7 @@
           ><span>矯 視 資 訊 影 片</span></a
         >
         <a
-        href="/video"
+        :href="localePath('/video')"
           ><span
             ><img
               src="https://static.cmereye.com/imgs/2023/08/be8c7e62e5be9d69.png"
@@ -131,6 +132,11 @@ export default {
       letter-spacing: 2.4px;
     }
   }
+  a:nth-child(1) {
+    & > span:nth-child(2) {
+      margin-left: -5px;
+    }
+  }
 }
 .smile-banner-context {
   width: 100%;
@@ -172,7 +178,7 @@ export default {
     width: auto;
     border-radius: 44px;
     margin: 24px 30px;
-    & > div {
+    & > div:nth-child(2) {
       max-width: 120px;
       .title {
         font-size: 14px;
