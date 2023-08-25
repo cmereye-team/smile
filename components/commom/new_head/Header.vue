@@ -295,7 +295,7 @@
           class="text-base ll_box nav-bookingservice pcShow"
           >{{ $t("home.headers.reservationService") }}</nuxt-link
         >
-        <div class="flex items-center nav-language group relative">
+        <div class="flex items-center nav-language-new group relative">
           <img src="../../../asset/image/common/Vector.png" alt="" />
           <ul
             class="nav-language-box absolute top-5 hidden group-hover:block -left-5"
