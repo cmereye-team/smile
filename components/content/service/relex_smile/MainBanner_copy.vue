@@ -173,6 +173,9 @@ export default {
     letter-spacing: 6px;
   }
 }
+.main_banner {
+  margin-top: 110px;
+}
 @media screen and (max-width: 768px) {
   .smile-banner {
     width: auto;

@@ -326,7 +326,7 @@
           <div><i></i><i></i><i></i></div>
         </div>
       </div>
-
+      <!-- 右边悬浮按钮 -->
       <div class="sidebar_contact">
         <div>
           <a href="https://api.whatsapp.com/send/?phone=85260610511" target="_blank">
@@ -802,6 +802,15 @@ $active_gradient: #4570b6;
 
   .section_header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    margin: auto;
+    max-width: 100%;
+    z-index: 999;
+    width: 1280px;
   }
 
   .link_pc_more {
@@ -1053,6 +1062,17 @@ $active_gradient: #4570b6;
 
 // mb
 @media (max-width: 768px) {
+  .section_header {
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
   .ball {
     display: none;
   }

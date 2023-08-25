@@ -65,7 +65,8 @@ export default {
     return {};
   },
   mounted() {
-    this.addEventListener("touchstart", function () {});
+    // const body_t = document.getElementsByTagName('body');
+    // body_t.addEventListener("touchstart", function () {});
     // document.body.addEventListener('touchstart', function(){ });
   },
   methods: {},
