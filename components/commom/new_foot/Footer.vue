@@ -134,7 +134,7 @@ export default {
       activeName: "1",
       groupList: {
         main_nav: this.$t("home.headers.aboutSmile"),
-        link: "#",
+        link: "",
         child_list: [
           {
             child_item: this.$t("home.headers.aboutSmileChild_1"),
@@ -152,7 +152,7 @@ export default {
       },
       OrthopedicList: {
         main_nav: this.$t("home.headers.orthopedicServices"),
-        link: "#",
+        link: "",
         child_list: [
           {
             child_item: this.$t("home.headers.orthopedicServicesChild_1"),
@@ -178,7 +178,7 @@ export default {
       },
       diagnosisInstructionsList: {
         main_nav: this.$t("home.headers.diagnosisInstructions"),
-        link: "#",
+        link: "",
         child_list: [
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
@@ -196,7 +196,7 @@ export default {
       },
       faq: {
         main_nav: this.$t("home.headers.commonProblem"),
-        link: "/FreQuestions",
+        link: "",
         child_list: [
           {
             child_item: this.$t("home.headers.commonProblemChild_1"),
@@ -222,7 +222,7 @@ export default {
       },
       ophthalmicConsultation: {
         main_nav: this.$t("home.headers.ophthalmicConsultation"),
-        link: "#",
+        link: "",
         child_list: [
           {
             child_item: this.$t("home.headers.ophthalmicConsultationChild_1"),
@@ -236,7 +236,7 @@ export default {
       },
       reservationService: {
         main_nav: this.$t("home.headers.reservationService"),
-        link: "#",
+        link: "",
         child_list: [
           {
             child_item: this.$t("home.headers.reservationServiceChild_1"),
@@ -476,7 +476,7 @@ export default {
       max-width: 100%;
     }
   }
-
+  
   .mian_nav_text:hover,
   .mian_nav_text_child:hover {
     color: rgb(75, 75, 255) !important;

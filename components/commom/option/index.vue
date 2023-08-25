@@ -1,30 +1,58 @@
 <template>
   <div>
     <div class="optiond">
-      <a class="title" :href="group.link">
-        <div>
-          {{ group.main_nav }}
-          <span v-if="group.child_list && group.child_list.length > 0"
-            ><img
-              src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
-              alt=""
-          /></span>
-        </div>
-        <div
-          class="isBlock"
-          v-if="group.child_list && group.child_list.length > 0"
-        >
-          <div class="nav">
-            <a
-              v-for="(item, index) in group.child_list"
-              :key="index"
-              :href="item.link"
-            >
-              {{ item.child_item }}</a
-            >
+      <div v-if="group.link !== '' && group.link.length > 0">
+        <a class="title" :href="group.link">
+          <div>
+            {{ group.main_nav }}
+            <span v-if="group.child_list && group.child_list.length > 0"
+              ><img
+                src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                alt=""
+            /></span>
           </div>
-        </div>
-      </a>
+          <div
+            class="isBlock"
+            v-if="group.child_list && group.child_list.length > 0"
+          >
+            <div class="nav">
+              <a
+                v-for="(item, index) in group.child_list"
+                :key="index"
+                :href="item.link"
+              >
+                {{ item.child_item }}</a
+              >
+            </div>
+          </div>
+        </a>
+      </div>
+      <div v-else>
+        <a class="title">
+          <div>
+            {{ group.main_nav }}
+            <span v-if="group.child_list && group.child_list.length > 0"
+              ><img
+                src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                alt=""
+            /></span>
+          </div>
+          <div
+            class="isBlock"
+            v-if="group.child_list && group.child_list.length > 0"
+          >
+            <div class="nav">
+              <a
+                v-for="(item, index) in group.child_list"
+                :key="index"
+                :href="item.link"
+              >
+                {{ item.child_item }}</a
+              >
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -35,6 +63,10 @@ export default {
   props: ["group"],
   data() {
     return {};
+  },
+  mounted() {
+    this.addEventListener("touchstart", function () {});
+    // document.body.addEventListener('touchstart', function(){ });
   },
   methods: {},
 };
@@ -144,6 +176,9 @@ export default {
   }
   .isBlock {
     display: none;
+  }
+  a {
+    -webkit-tap-highlight-color: transparent;
   }
   .title:hover .isBlock {
     display: block;
