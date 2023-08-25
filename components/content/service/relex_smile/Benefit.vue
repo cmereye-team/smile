@@ -5,7 +5,7 @@
     </div>
     <div class="benefit_content">
       <ul
-        class="benefit_list flex flex-col items-start justify-start page_container" v-if="$i18n.locale !== 'en'"
+        class="benefit_list flex flex-col items-start justify-start page_container benefit_list_cn" v-if="$i18n.locale !== 'en'"
       >
         <li v-for="(benefitItem, index) in benefitList" :key="index">
           <img :src="benefitItem.index" alt="" class="index" />
@@ -39,27 +39,27 @@ export default {
     return {
       benefitList: [
         {
-          index: require("@/asset/image/service/relex_smile/benefit_index1.svg"),
+          index: require("@/asset/image/service/relex_smile/one.png"),
           des: this.$t('service.relexSmile.benefit.des1'),
         },
         {
-          index: require("@/asset/image/service/relex_smile/benefit_index2.svg"),
+          index: require("@/asset/image/service/relex_smile/two.png"),
           des: this.$t('service.relexSmile.benefit.des2'),
         },
         {
-          index: require("@/asset/image/service/relex_smile/benefit_index3.svg"),
+          index: require("@/asset/image/service/relex_smile/three.png"),
           des: this.$t('service.relexSmile.benefit.des3'),
         },
         {
-          index: require("@/asset/image/service/relex_smile/benefit_index4.svg"),
+          index: require("@/asset/image/service/relex_smile/four.png"),
           des: this.$t('service.relexSmile.benefit.des4'),
         },
         {
-          index: require("@/asset/image/service/relex_smile/benefit_index5.svg"),
+          index: require("@/asset/image/service/relex_smile/five.png"),
           des: this.$t('service.relexSmile.benefit.des5'),
         },
         {
-          index: require("@/asset/image/service/relex_smile/benefit_index6.svg"),
+          index: require("@/asset/image/service/relex_smile/six.png"),
           des: this.$t('service.relexSmile.benefit.des6'),
         },
       ],
@@ -149,16 +149,62 @@ h2{
       margin: 0;
       z-index: 11;
       p {
-        font-family: "Noto Sans JP";
+        font-size: 20px;
         font-style: normal;
         font-weight: 300;
-        font-size: 17px;
-        line-height: 31px;
-        letter-spacing: 0.1em;
+        line-height: 35px; /* 175% */
+        letter-spacing: 2px;
         color: #6D6E71;
       }
       img {
         height: 90px;
+      }
+    }
+  }
+  .benefit_list_cn {
+    padding-bottom: 150px;
+    li {
+      p {
+        max-width: 380px;
+        text-align: left;
+      }
+    }
+    li:nth-child(2) {
+      margin: 34px 0;
+      margin-left: 165px;
+      p {
+        max-width: 360px;
+        text-align: left;
+      }
+    }
+    li:nth-child(3) {
+      p {
+        max-width: 240px;
+        text-align: left;
+      }
+    }
+    li:nth-child(4) {
+      margin-left: 440px;
+      margin-top: -70px;
+      p {
+        max-width: 380px;
+        text-align: left;
+      }
+    }
+    li:nth-child(5) {
+      margin: 34px 0;
+      margin-left: 165px;
+      p {
+        max-width: 380px;
+        text-align: left;
+      }
+    }
+    li:nth-child(6) {
+      margin-left: 440px;
+      p {
+        margin-left: 20px;
+        max-width: 380px;
+        text-align: left;
       }
     }
   }
