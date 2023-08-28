@@ -23,6 +23,7 @@
           v-show="drawer"
           :visible.sync="drawer"
           :with-header="false"
+          :modal="false"
           size="60%"
         >
           <div style="padding: 10px">
@@ -182,6 +183,7 @@
           v-show="drawer"
           direction="btt"
           :with-header="false"
+          :modal="false"
           size="30%"
         >
           <div class="langBox-title">
