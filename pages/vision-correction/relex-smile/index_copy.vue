@@ -184,10 +184,9 @@ export default {
 // .section.vedio_box {
 //   margin-top: 0;
 // }
+
 .businessHours {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  
   &-title {
     color: #4570b6;
     font-size: 30px;
@@ -300,6 +299,9 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
+  .smile {
+  background: #fff;
+}
   .businessHours {
     &-title {
       font-size: 20px;

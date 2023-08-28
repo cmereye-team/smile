@@ -579,8 +579,6 @@ export default {
     font-weight: 400;
     line-height: 20px; /* 166.667% */
     letter-spacing: 1.2px;
-    width: 180%;
-    margin-left: -40%;
     transform: scale(0.9);
   }
 }
