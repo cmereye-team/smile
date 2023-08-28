@@ -184,7 +184,7 @@
           direction="btt"
           :with-header="false"
           :modal="false"
-          size="30%"
+          size="40%"
         >
           <div class="langBox-title">
             {{ $t("home.headers.togLang") }}
@@ -324,7 +324,7 @@
             <!-- </li> -->
           </ul>
         </div>
-        <div class="menu_pc">
+        <div class="menu_pc" @click="menuList = true">
           <div><i></i><i></i><i></i></div>
         </div>
       </div>
@@ -367,7 +367,7 @@
           </a>
         </div>
       </div>
-
+      
       <!-- <div class="contact-coupon">
         <nuxt-link :to="'/charge-detail'">
           <div class="couponBox">
@@ -382,7 +382,41 @@
         </nuxt-link>
       </div> -->
     </div>
-
+    <el-drawer
+          :visible.sync="menuList"
+          v-show="drawer"
+          direction="ttb"
+          :with-header="false"
+          size="75%"
+        >
+          1<br/>
+          1<br/>
+          1<br/>
+          1<br/>
+          1<br/>
+          1<br/>
+          1<br/>
+          1<br/>
+          1<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          21<br/>
+          321<br/>
+          321<br/>
+          321<br/>
+          321<br/>
+          321<br/>
+          321<br/>
+          321<br/>
+          321<br/>
+        </el-drawer>
     <!-- gsap   指针动画-->
     <div class="ball"></div>
     <!-- gsap   指针动画 end-->
@@ -403,6 +437,7 @@ export default {
       openeds: ["1"],
       drawer: false,
       langDrawer: false,
+      menuList:false,
       socialInfoList: [
         {
           link: "",
