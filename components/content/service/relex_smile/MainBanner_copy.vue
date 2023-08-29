@@ -174,7 +174,7 @@ export default {
   }
 }
 .main_banner {
-  margin-top: 110px;
+  margin-top: 118px;
 }
 @media screen and (max-width: 768px) {
   .smile-banner {
