@@ -138,7 +138,7 @@
         </div> -->
       </div>
       <el-drawer class="drawers" :visible.sync="menuList" v-show="menuList" direction="ttb" :with-header="false"
-        size="75%" :modal="false" :wrapperClosable="true">
+        size="60%" :modal="false" :wrapperClosable="true">
         <div>
           <div class="header header_drawer flex-between">
             <div class="left">
@@ -231,6 +231,8 @@
                   </div>
                   <DetailOption :group="share" />
                 </div>
+                <!-- ⬇️ 方便样式布局 增加内容可刻删除 -->
+                <div style="opacity: 0;"></div>
               </div>
               <div>
                 <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
@@ -888,6 +890,7 @@ $active_gradient: #4570b6;
 
 // pc
 @media (min-width: 768px) {
+  
   .main_after .nuxt-link-active .mian_nav_text {
     color: #4570b6 !important;
   }
@@ -1525,13 +1528,14 @@ $active_gradient: #4570b6;
       &>div:nth-child(1) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         &>div {
-          min-width: 220px;
+          min-width: 230px;
           padding: 20px 0;
           border-bottom: 1px solid #6d6e7180;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
 
           &>div:nth-child(1) {
             margin-right: 20px;
