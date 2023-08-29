@@ -1296,7 +1296,7 @@ module.exports = {
       suitable: {
         h2: 'Who is suitable?',
         span1: '40 years<br /> old <br /> or above',
-        span2: 'love<br /> Sports',
+        span2: 'Love<br /> Sports',
         span3: `Wearing multiple pairs of<br /> corrective glasses for <br />different vision problems<br />(myopia, hyperopia,<br /> astigmatism, presbyopia)`,
         span4: `Do not like<br /> wearing<br /> eyeglasses or<br /> contact lenses `
       }
@@ -1367,9 +1367,9 @@ module.exports = {
         h2: 'Who is suitable?',
         span1: `People who have<br /> below -15.00 D<br /> myopia and -6.00 D<br /> CYL. hyperopia/<br />astigmatism`,
         span2: `People who want<br /> to or are engaged <br />in disciplined <br />services / aviation<br /> industry`,
-        span3: `love sports`,
+        span3: `Love sports`,
         span4: `Do not like<br /> wearing contact <br />lenses or<br /> eyeglasses`,
-        span5: `concern about eye <br /> health`
+        span5: `Concern about eye <br /> health`
       },
       principle: {
         h2: 'LASIK',
