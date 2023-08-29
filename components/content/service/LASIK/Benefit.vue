@@ -260,19 +260,35 @@ p{
   .benefit_list li:nth-child(1) {
     margin-left: 2vw;
     z-index: 11;
+    p {
+      max-width: 267px;
+      text-align: left;
+    }
   }
   .benefit_list li:nth-child(2) {
     margin-left: 19vw;
     z-index: 11;
     margin-top: 7vw;
+    p {
+      max-width: 215px;
+      text-align: left;
+    }
   }
   .benefit_list li:nth-child(3) {
     margin-left: 9vw;
     margin-top: 7vw;
+    p {
+      max-width: 195px;
+      text-align: left;
+    }
   }
   .benefit_list li:nth-child(4) {
     margin-left: 46vw;
     margin-top: 0vw;
+    p {
+      max-width: 155px;
+      text-align: left;
+    }
   }
   .benefit_content .benefit_light {
     top: -14vw;

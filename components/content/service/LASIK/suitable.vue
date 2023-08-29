@@ -1,6 +1,6 @@
 <template>
   <div class="page_container suitable_box">
-    <div class="flex justify-center md:mt-28 mt-10">
+    <div class="flex justify-center md:mt-28" :class="[$i18n.locale == 'en' ? 'mt-36':'mt-10']">
       <h2>{{$t('service.lasik.suitable.h2')}}</h2>
     </div>
     <div class="flex justify-evenly suit_box mt-10">
@@ -133,6 +133,12 @@ h2 {
         letter-spacing: 0.1em;
 
         color: #6D6E71;
+        min-height: 231px;
+      }
+    }
+    .suitable:last-child {
+      span {
+        min-height: 131px;
       }
     }
   }
