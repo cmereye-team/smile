@@ -1339,13 +1339,13 @@ module.exports = {
         p2: `The Implantable Contact Lens (ICL), also known as posterior chamber phakic intraocular lens implantation, is specifically designed for patients with severe myopia, hyperopia, and astigmatism. The surgery process does not require corneal cutting. Instead, the ICL lens is implanted into the eye to achieve better vision. Using non-laser technology, the implantable contact lens corrects high myopia, hyperopia, and astigmatism with innovative technology and biocompatible, flexible, and UV-protective crystal materials.The correction process for implantable contact lenses involves a preoperative examination. The doctor first applies anesthetic eye drops to the patient's eye and then creates a small incision of about 3 millimeters in the cornea. The folded lens is then implanted into the eyeball and positioned by the doctor, similar to wearing contact lenses directly on the eye, to achieve the desired vision correction effect. The entire procedure generally takes about 5 to 10 minutes, and there is no need for stitches after surgery. Generally, vision can be restored as early as the next day after correction.`
       },
       share: {
-        h2: 'More ICL implantable contact lens real case to share'
+        h2: `More ICL implantable <br /> contact lens real case to share`
       },
       suitable: {
         h2: 'Who is suitable?',
         span1: `Individuals with<br /> high myopia, <br />hyperopia, or <br />severe astigmatism`,
         span2: `People who want<br /> to or are engaged <br />in disciplined <br />services / aviation <br />industry`,
-        span3: `love sports/<br />care about<br /> appearance`,
+        span3: `Love sports/<br />care about<br /> appearance`,
         span4: `Individuals who<br /> wish to reduce<br /> their dependence <br />on glasses or <br />contact lenses`,
         span5: `Individuals who<br /> suffer from dry eyeo<br /> syndrome causedo<br /> by wearing contacto<br /> lenses`,
         span6: `Individuals who are<br /> not suitable for laser<br /> correction due to thin <br />corneal`

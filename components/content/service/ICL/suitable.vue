@@ -1,6 +1,6 @@
 <template>
   <div class="page_container suitable_box">
-    <div class="flex justify-center md:mt-28 mt-10">
+    <div class="flex justify-center md:mt-28"  :class="[$i18n.locale == 'en' ? 'mt-56':'mt-10']">
       <h2>{{$t('service.icl.suitable.h2')}}</h2>
     </div>
     <div class="flex justify-evenly suit_box mt-5">
@@ -25,8 +25,8 @@
         />
         <span v-html="$t('service.icl.suitable.span3')"></span>
       </div>
-    </div>
-    <div class="flex justify-evenly suit_box mt-5">
+    <!-- </div>
+    <div class="flex justify-evenly suit_box mt-5"> -->
       <div class="flex flex-col items-center suitable">
         <img
           src="https://static.cmereye.com/imgs/2022/12/d2407e6ff4b3b56c.png"
@@ -70,6 +70,10 @@ h2 {
     // margin-bottom: 190px;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 225px;
+    justify-content: space-between;
+
     img {
       height: 100px;
     }
@@ -130,6 +134,7 @@ h2 {
         letter-spacing: 0.1em;
 
         color: #6D6E71;
+        min-height: 180px;
       }
     }
   }

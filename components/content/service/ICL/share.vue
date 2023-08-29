@@ -1,7 +1,7 @@
 <template>
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-20 mt-10">
-      <h2>{{$t('service.icl.share.h2')}}</h2>
+      <h2 v-html="$t('service.icl.share.h2')"></h2>
     </div>
     <div class="flex mb-28 pcShow justify-center">
       <div class="px-2" @click="shareForm('https://www.youtube.com/watch?v=5ihrzFvOy38')">
