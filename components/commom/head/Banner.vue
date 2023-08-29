@@ -30,12 +30,22 @@
           ]"
     >
       <h3
-        :class="$i18n.locale == 'en' ? 'gradient_font_en' : 'gradient_font'"
+        :class="[
+          $i18n.locale == 'en' ? 'gradient_font_en' : 'gradient_font',
+          $i18n.locale == 'en' ? 'gradient_process_en' : 'gradient_font',
+        ]"
         :style="{
           maxWidth:
             $i18n.locale == 'en' && $route.path == '/en/post-corrective-care'
               ? '350px'
               : 'initial',
+              maxWidth: $i18n.locale == 'en' && $route.path == '/en/patient-info'
+              ? '300px'
+              : 'initial',
+              maxWidth: $i18n.locale == 'en' && $route.path == '/en/flow-of-vision-correction'
+              ? '170px'
+              : 'initial',
+              lineHeight:$i18n.locale == 'en' && $route.path == '/en/patient-info' ? '1.2':'42px',
         }"
       >
         <slot name="title"></slot>
@@ -135,6 +145,22 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
+  .gradient_process_en {
+    background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    padding-left: 25px;
+  }
+  .des_box_info {
+    color: #4570B6;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px; /* 86.842% */
+    letter-spacing: 5.7px;
+    padding-left: 25px;
+  }
   .section {
     height: 76vw;
     background-size: cover !important;

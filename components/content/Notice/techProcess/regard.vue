@@ -172,7 +172,7 @@ h2 {
       top: 15px;
     }
     .regard {
-      margin: 0 45px;
+      margin: 0 35px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -208,6 +208,10 @@ h2 {
     }
 }
 @media screen and (max-width: 768px) {
+  .regard-boxEng >div:nth-child(2) {
+      padding-top: 140px;
+    }
+
   h2 {
     font-size: 18px;
   }
@@ -285,6 +289,14 @@ h2 {
 
         color: #6D6E71;
       }
+    }
+  }
+  .regard-boxEng {
+    padding: 0;
+    .title {
+      top: 6vw;
+      left: 8px;
+      min-width: 140px;
     }
   }
 }

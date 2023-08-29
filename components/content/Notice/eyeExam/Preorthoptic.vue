@@ -65,19 +65,28 @@
                 alt=""
               />
             </div>
-            <div class="Inappropriate-box">
+            <div class="Inappropriate-box" :class="[
+              $i18n.locale == 'en' ? 'Inappropriate-box Inappropriate-box-eng' :'Inappropriate-box'
+            ]"
+            >
               <span>{{$t('notice.eyeExam.preorthoptic.arrowTwo.span1')}}</span>
               <p>{{$t('notice.eyeExam.preorthoptic.arrowTwo.p1')}}</p>
             </div>
           </div>
           <div class="appropriate">
-            <div class="flex flex-col justify-center mt-1 mx-5 arrow-botom">
+            <div class="flex flex-col justify-center mt-1 mx-5" 
+            :class="[
+              $i18n.locale == 'en' ? 'arrow-botom arrow-botom_eng': 'arrow-botom'
+            ]"
+            >
               <img
                 src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
                 alt=""
               />
             </div>
-            <div class="appropriate-box">
+            <div :class="[
+              $i18n.locale == 'en' ? 'appropriate-box appropriate-box-eng' :'appropriate-box'
+            ]">
               <span>{{$t('notice.eyeExam.preorthoptic.arrowTwo.span2')}}</span>
               <p v-html="$t('notice.eyeExam.preorthoptic.arrowTwo.p2')"></p>
             </div>
@@ -280,6 +289,13 @@ h2 {
     background-color: #fff2f2;
     padding: 10px;
     width: 70%;
+    margin: auto;
+    min-width: 138px;
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     span {
       font-family: var(--font_family);
       font-style: normal;
@@ -309,10 +325,19 @@ h2 {
       color: #6D6E71;
     }
   }
-
+  .Inappropriate-box-eng {
+    margin: auto;
+    min-width: 138px;
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .appropriate-box {
     background-color: #eefbf2;
     padding: 10px;
+    width: 70%;
+    margin: auto;
     // width: 186px;
     span {
       font-family: var(--font_family);
@@ -343,6 +368,10 @@ h2 {
       color: #6D6E71;
     }
   }
+  .appropriate-box-eng {
+    width: 70%;
+    margin: auto;
+  }
   .arrow-two {
     display: flex;
     .arrow-top {
@@ -358,6 +387,9 @@ h2 {
       img {
         max-width: 20vw;
       }
+    }
+    .arrow-botom_eng {
+      padding: 30px 30px;
     }
   }
   .preorth_box {

@@ -17,7 +17,7 @@
               alt=""
             />
           </div>
-          <div class="step-txt" :class="[$i18n.locale == 'en' ? 'step-txt step-txt-eng':'step-txt']"><span v-html="item.text"></span></div>
+          <div :class="[$i18n.locale == 'en' ? 'step-txt step-txt-eng':'step-txt']"><span v-html="item.text"></span></div>
         </div>
       </div>
     </div>
@@ -100,6 +100,11 @@ h2 {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
+  .step-txt-eng {
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 30px;
+  }
   .step-box {
     position: relative;
     width: 165px;
@@ -122,13 +127,13 @@ h2 {
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    line-height: 25px;
-    /* or 167% */
-
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #6D6E71;
+    max-width: 68%;
+    margin: auto;
+    padding-bottom: 15px;
     span{
       font-size: 20px !important;
       font-weight: 300;
@@ -136,6 +141,11 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .step-txt-eng {
+    text-align: center !important;
+    margin-top: -15px;
+    margin-left: 15px;
+  }
   .step-txt {
     position: absolute;
     top: 51px;
@@ -206,22 +216,14 @@ h2 {
       width: 100%;
       margin-bottom: 41px;
     }
-    .step-box:nth-child(2) {
-      display: flex;
-      padding-right: 18vw;
-      justify-content: flex-end;
-      .step-txt {
-        position: absolute;
-        right: 0;
-      }
-    }
+    .step-box:nth-child(2),
     .step-box:nth-child(4) {
       display: flex;
-      padding-right: 18vw;
+      padding-right: 40vw;
       justify-content: flex-end;
       .step-txt {
         position: absolute;
-        right: 0;
+        right: -70px;
       }
     }
   }

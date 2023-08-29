@@ -32,7 +32,7 @@ export default {
   }
 }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/04/c73569113123a333.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2023/08/606f562eb345de5c.png");
     background-position: top;
     background-size: 100%;
     width: 100vw;
