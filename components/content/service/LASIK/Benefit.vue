@@ -266,9 +266,10 @@ p{
     }
   }
   .benefit_list li:nth-child(2) {
-    margin-left: 19vw;
+    margin-left: 23vw;
     z-index: 11;
-    margin-top: 7vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     p {
       max-width: 215px;
       text-align: left;
@@ -276,14 +277,15 @@ p{
   }
   .benefit_list li:nth-child(3) {
     margin-left: 9vw;
-    margin-top: 7vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     p {
       max-width: 195px;
       text-align: left;
     }
   }
   .benefit_list li:nth-child(4) {
-    margin-left: 46vw;
+    margin-left: 36vw;
     margin-top: 0vw;
     p {
       max-width: 155px;

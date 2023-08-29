@@ -35,6 +35,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and (max-width: 768px) {
+  .main_banner {
+    margin-top: 23vw;
+  }
   .banner_serve {
     p {
       font-family: var(--font_family);
@@ -83,6 +86,7 @@ export default {
     width: 100vw;
     margin: 0 auto;
     margin-bottom: 10vw;
+    padding-left: 25px;
   }
 }
 

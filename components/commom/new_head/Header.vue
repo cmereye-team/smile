@@ -1569,7 +1569,7 @@ $active_gradient: #4570b6;
   // 移动端
   .header {
     min-height: 18vw;
-    margin: 3vw 8vw !important;
+    margin: 3vw  0 !important;
   }
 
   .link_more {
