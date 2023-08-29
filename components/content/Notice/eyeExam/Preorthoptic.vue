@@ -1,7 +1,7 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>{{$t('notice.eyeExam.preorthoptic.h2')}}</h2>
+      <h2 v-html="$t('notice.eyeExam.preorthoptic.h2')"></h2>
     </div>
     <div>
       <div class="flex justify-center pcShow">

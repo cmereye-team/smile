@@ -18,6 +18,11 @@
           ? 'des_box_eng'
           : 'des_box'
       ,
+      $i18n.locale == 'en' &&
+        $route.path == '/en/patient-info'
+          ? 'des_box_info'
+          : 'des_box'
+      ,
         $i18n.locale == 'en' &&
         $route.path == '/en/vision-correction-icl'
           ? 'des_box_eng_icl'
@@ -108,6 +113,10 @@ export default {
         letter-spacing: 0.8px;
         font-weight: 300;
       }
+    }
+    .des_box_info {
+      width: fit-content;
+      max-width: 420px;
     }
   }
   .section_vision_eng {

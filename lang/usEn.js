@@ -792,7 +792,7 @@ module.exports = {
           <strong>The following are the recommended number of days to stop <br /> wearing different types of contact lenses:</strong></span
         >`,
       preorthoptic: {
-        h2: 'Knowledge to Acquire Before You Stop Wearing Contact Lenses',
+        h2: `Knowledge to Acquire Before You Stop <br /> Wearing Contact Lenses`,
         arrowOne: {
           span1: `Registration & Preliminary Eye Examination`,
           span2: `Refractive Test`,

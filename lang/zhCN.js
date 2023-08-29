@@ -787,7 +787,7 @@ module.exports = {
           <strong>以下为不同隐形眼镜的停止佩戴日数：</strong></span
         >`,
       preorthoptic: {
-        h2: '矫视前停 con 知多啲',
+        h2: `矫视前停 con 知多啲`,
         arrowOne: {
           span1: `前台登记及<br class="pcShow" />初步眼睛检查`,
           span2: `详细屈光检查`,
