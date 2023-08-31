@@ -75,7 +75,7 @@
             <div class="box">
             </div>
             <!-- 上下两个空盒子为了布局   有内容就删掉 -->
-            <div class="box">
+            <div class="box box-img-mb">
               <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
               <span>{{$t('chargeDetail.title8')}}</span>
             </div>
@@ -178,11 +178,11 @@
             <span>{{$t('chargeDetail.span18')}}</span>
           </div>
           <div class="icon-box icon-box1">
-            <div class="box">
+            <div class="box box-img-mb">
               <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
               <span>{{$t('chargeDetail.title8')}}</span>
             </div>
-            <div class="box">
+            <div class="box box-img-mb">
               <img src="https://static.cmereye.com/imgs/2023/08/87e7b35ebbb3bec5.png" alt />
               <span>{{$t('chargeDetail.title9')}}</span>
             </div>
@@ -478,7 +478,7 @@
           <div class="icon-box">
             <div class="box">
             </div>
-            <div class="box">
+            <div class="box box-img-mb">
               <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
               <span>{{$t('chargeDetail.title8')}}</span>
             </div>
@@ -1583,6 +1583,11 @@ i {
   }
 }
 @media screen and (max-width: 768px) {
+  .box-img-mb {
+    & >img {
+      max-width: 35%;
+    }
+  }
   td {
     padding: 10px;
   }
