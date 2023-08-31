@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 @media screen and (max-width: 768px) {
   .main_banner {
-    margin-top: 23vw;
+    // margin-top: 23vw;
   }
   .banner_serve {
     p {
