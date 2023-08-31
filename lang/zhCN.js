@@ -400,8 +400,8 @@ module.exports = {
     td1: '由你决定的微笑时刻优惠',
     td1_1: '由你决定的微笑时刻优惠',
     td1_2: 'CMER SMILE PRO限定优惠',
-    td1_3: '让眼睛享受清爽夏日优惠 即日至',
-    td1_4: '即日至',
+    td1_3: '限时优惠',
+    td1_4: '由',
     td2: '术前检查费用',
     span1: '*指定信用卡（东亚/渣打/汇丰）可享6/12个月免息分期',
     span2: '^完成矫视后可退回术前检查费用',
@@ -435,7 +435,9 @@ module.exports = {
     title4: 'Clear-Vision',
     title5: '收费详情',
     title6: '消费券详情',
-    title7: 'SMILE Pro微笑激光矫视'
+    title7: 'SMILE Pro微笑激光矫视',
+    title8: '眼睛水润护理1次',
+    title9: '术后眼部彩光护理1次'
   },
   consumptionVoucher: {
     h2: '消费券详情',

@@ -45,14 +45,14 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }} 15.9.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }} 1.9.2023起</td>
             </tr>
             <tr>
               <td>
-                <span>$12,500*</span>
+                <span>$12,000*</span>
               </td>
               <td>
-                <span>$20,000*</span>
+                <span>$19,500*</span>
               </td>
             </tr>
             <tr>
@@ -73,6 +73,15 @@
           </div>
           <div class="icon-box">
             <div class="box">
+            </div>
+            <!-- 上下两个空盒子为了布局   有内容就删掉 -->
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
+              <span>{{$t('chargeDetail.title8')}}</span>
+            </div>
+            <div class="box">
+            </div>
+            <div class="box">
               <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
               <span>{{$t('chargeDetail.span4')}}</span>
             </div>
@@ -91,7 +100,7 @@
               <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
               <span>
                 {{$t('chargeDetail.span7')}}
-                <i style="font-size: 14px;">#</i>
+                <i style="font-size: 14px;">##</i>
               </span>
             </div>
             <div class="box">
@@ -107,7 +116,8 @@
             </div>
           </div>
         </div>
-        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span>
+        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span> <br />
+        <span class="notice_smile">{{$t('chargeDetail.span19')}}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
@@ -141,14 +151,14 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}31.8.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}1.9.2023起</td>
             </tr>
             <tr>
               <td>
-                <span>$16,500</span>
+                <span>$16,500*</span>
               </td>
               <td>
-                <span>$27,800</span>
+                <span>$27,300</span>
               </td>
             </tr>
             <tr>
@@ -166,6 +176,16 @@
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
             <span>{{$t('chargeDetail.span18')}}</span>
+          </div>
+          <div class="icon-box icon-box1">
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
+              <span>{{$t('chargeDetail.title8')}}</span>
+            </div>
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/08/87e7b35ebbb3bec5.png" alt />
+              <span>{{$t('chargeDetail.title9')}}</span>
+            </div>
           </div>
           <div class="icon-box">
             <div class="box">
@@ -187,14 +207,14 @@
               <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
               <span>
                 {{$t('chargeDetail.span7')}}
-                <i style="font-size: 14px;">#</i>
+                <i style="font-size: 14px;">##</i>
               </span>
             </div>
             <div class="box">
               <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
               <span>
                 {{$t('chargeDetail.span8')}}
-                <i style="font-size: 14px;">#</i>
+                <i style="font-size: 14px;">##</i>
               </span>
             </div>
             <div class="box">
@@ -205,6 +225,7 @@
         </div>
         <div class="smile_pro_notice">
           <span>{{$t('chargeDetail.span3')}}</span>
+          <span>{{$t('chargeDetail.span19')}}</span>
           <!-- <span>{{$t('chargeDetail.span16')}}</span> -->
         </div>
       </div>
@@ -252,7 +273,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }} 15.9.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }} 1.9.2023起</td>
             </tr>
             <tr>
               <td>
@@ -428,14 +449,14 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}15.9.2023</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}1.9.2023起</td>
             </tr>
             <tr>
               <td>
-                <span>$12,500*</span>
+                <span>$12,000*</span>
               </td>
               <td>
-                <span>$20,000*</span>
+                <span>$19,500*</span>
               </td>
             </tr>
             <tr>
@@ -456,6 +477,14 @@
           </div>
           <div class="icon-box">
             <div class="box">
+            </div>
+            <div class="box">
+              <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
+              <span>{{$t('chargeDetail.title8')}}</span>
+            </div>
+            <div class="box">
+            </div>
+            <div class="box">
               <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
               <span>{{$t('chargeDetail.span4')}}</span>
             </div>
@@ -474,7 +503,7 @@
               <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
               <span>
                 {{$t('chargeDetail.span7')}}
-                <i style="font-size: 14px;">#</i>
+                <i style="font-size: 14px;">##</i>
               </span>
             </div>
             <div class="box">
@@ -490,7 +519,8 @@
             </div>
           </div>
         </div>
-        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span>
+        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span><br />
+        <span class="notice_smile">{{$t('chargeDetail.span19')}}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
@@ -1357,6 +1387,9 @@ i {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
+    }
+    .icon-box1 {
+      grid-template-columns: repeat(2, 1fr);
     }
     .box {
       display: flex;

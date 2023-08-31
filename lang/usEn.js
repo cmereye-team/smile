@@ -435,8 +435,9 @@ module.exports = {
     title4: 'Clear-Vision',
     title5: '收費詳情',
     title6: '消費券詳情',
-    title7: 'SMILE PRO'
-
+    title7: 'SMILE PRO',
+    title8: '眼睛水润护理1次',
+    title9: '术后眼部彩光护理1次'
   },
   consumptionVoucher: {
     h2: '消費券詳情',
