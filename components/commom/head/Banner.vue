@@ -16,18 +16,14 @@
         $i18n.locale == 'en' &&
         $route.path == '/en/vision-correction/relex-smile'
           ? 'des_box_eng'
-          : 'des_box'
-      ,
-      $i18n.locale == 'en' &&
-        $route.path == '/en/patient-info'
+          : 'des_box',
+        $i18n.locale == 'en' && $route.path == '/en/patient-info'
           ? 'des_box_info'
-          : 'des_box'
-      ,
-        $i18n.locale == 'en' &&
-        $route.path == '/en/vision-correction-icl'
+          : 'des_box',
+        $i18n.locale == 'en' && $route.path == '/en/vision-correction-icl'
           ? 'des_box_eng_icl'
-          : 'des_box'
-          ]"
+          : 'des_box',
+      ]"
     >
       <h3
         :class="[
@@ -39,13 +35,23 @@
             $i18n.locale == 'en' && $route.path == '/en/post-corrective-care'
               ? '350px'
               : 'initial',
-              maxWidth: $i18n.locale == 'en' && $route.path == '/en/patient-info'
+          maxWidth:
+            $i18n.locale == 'en' && $route.path == '/en/patient-info'
               ? '300px'
               : 'initial',
-              maxWidth: $i18n.locale == 'en' && $route.path == '/en/flow-of-vision-correction'
-              ? '170px'
+          maxWidth:
+            $i18n.locale == 'en' &&
+            $route.path == '/en/flow-of-vision-correction'
+              ? '240px'
               : 'initial',
-              lineHeight:$i18n.locale == 'en' && $route.path == '/en/patient-info' ? '1.2':'42px',
+          maxWidth:
+            $i18n.locale == 'en' && $route.path == '/en/post-corrective-care'
+              ? '220px'
+              : 'initial',
+          lineHeight:
+            $i18n.locale == 'en' && $route.path == '/en/patient-info'
+              ? '1.2'
+              : '42px',
         }"
       >
         <slot name="title"></slot>
@@ -90,7 +96,9 @@ export default {
         text-align: center;
         letter-spacing: 0.15em;
 
-        color: #4570b6;
+        background: linear-gradient(90.57deg, #4570b6 0, #81dbec 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       p {
@@ -153,7 +161,7 @@ export default {
     padding-left: 25px;
   }
   .des_box_info {
-    color: #4570B6;
+    color: #4570b6;
     font-size: 38px;
     font-style: normal;
     font-weight: 500;

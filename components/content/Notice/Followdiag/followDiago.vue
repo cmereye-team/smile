@@ -1,30 +1,47 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>{{$t('notice.followdiag.followDiago.h2')}}</h2>
+      <h2>{{ $t("notice.followdiag.followDiago.h2") }}</h2>
     </div>
     <div class="time-box">
       <div class="one">
-        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
-        <span>{{$t('notice.followdiag.followDiago.span1')}}</span>
+        <div
+          class="piont"
+          :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"
+        ></div>
+        <span>{{ $t("notice.followdiag.followDiago.span1") }}</span>
       </div>
       <div class="two">
-        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
-        <span>{{$t('notice.followdiag.followDiago.span2')}}</span>
+        <div
+          class="piont"
+          :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"
+        ></div>
+        <span>{{ $t("notice.followdiag.followDiago.span2") }}</span>
       </div>
       <div class="three">
-        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
-        <span>{{$t('notice.followdiag.followDiago.span3')}}</span>
+        <div
+          class="piont"
+          :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"
+        ></div>
+        <span>{{ $t("notice.followdiag.followDiago.span3") }}</span>
       </div>
       <div class="four">
-        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
-        <div class="arrow" :class="[$i18n.locale == 'en' ? 'arrowEng arrow' : 'arrow']"></div>
-        <span>{{$t('notice.followdiag.followDiago.span4')}}</span>
+        <div
+          class="piont"
+          :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"
+        ></div>
+        <div
+          class="arrow"
+          :class="[$i18n.locale == 'en' ? 'arrowEng arrow' : 'arrow']"
+        ></div>
+        <span>{{ $t("notice.followdiag.followDiago.span4") }}</span>
       </div>
       <div class="five">
-        <div class="piont" :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"></div>
-        <span v-html="$t('notice.followdiag.followDiago.span5')"></span
-        >
+        <div
+          class="piont"
+          :class="[$i18n.locale == 'en' ? 'piontEng piont' : 'piont']"
+        ></div>
+        <span v-html="$t('notice.followdiag.followDiago.span5')"></span>
       </div>
     </div>
   </div>
@@ -43,10 +60,10 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
-  color: #4570B6;
+  color: #4570b6;
 }
 @media screen and (min-width: 768px) {
-  span{
+  span {
     font-size: 16px;
   }
   .five {
@@ -86,7 +103,7 @@ h2 {
       bottom: 0;
       display: flex;
       text-align: center;
-      width: 192px;
+      width: 278px;
     }
     .arrow::after {
       content: "";
@@ -259,7 +276,8 @@ h2 {
     }
     span {
       position: absolute;
-      margin-right: 92px;
+      margin-right: 150px;
+      max-width: 150px;
     }
     .arrow {
       background: linear-gradient(229.22deg, #4e81bf 6.93%, #62a5d1 93.07%);
@@ -267,9 +285,9 @@ h2 {
       display: inline-block;
       height: 3px;
       position: absolute;
-      width: 86px;
+      width: 110px;
       transform: matrix(0, 1, 1, 0, 0, 0);
-      top: 53px;
+      top: 65px;
     }
     .arrow::after {
       content: "";
@@ -292,7 +310,8 @@ h2 {
     align-items: center;
     span {
       position: absolute;
-      margin-left: 92px;
+      margin-left: 150px;
+      max-width: 150px;
     }
     .piont {
       background: #62a5d1;
@@ -323,7 +342,8 @@ h2 {
     align-items: center;
     span {
       position: absolute;
-      margin-right: 92px;
+      margin-right: 150px;
+      max-width: 150px;
     }
     .piont {
       position: relative;
@@ -361,7 +381,8 @@ h2 {
     }
     span {
       position: absolute;
-      margin-left: 92px;
+      margin-left: 150px;
+      max-width: 150px;
     }
     .piont::after {
       background: linear-gradient(229.22deg, #7ed7ea 6.93%, #7ed7ea 93.07%);

@@ -10,7 +10,7 @@
         <p>{{ $t("ophthalmicInfo.divit.contentText0") }}</p>
         <p><span>*</span>{{ $t("ophthalmicInfo.divit.contentText1") }}</p>
         <p>
-          <span
+          <span :class="[$i18n.locale == 'en' ? 'text-center_p5' : '']"
             ><img
               src="https://static.cmereye.com/imgs/2023/08/cb312fef9fc20f9f.png"
               alt="" /></span
@@ -191,6 +191,9 @@ h2 {
   background: #eceff8;
 }
 @media screen and (max-width: 768px) {
+  .text-center_p5 {
+    margin-top: 3%;
+  }
   h2 {
     font-size: 25px;
     color: #4570b6;
@@ -223,9 +226,21 @@ h2 {
     }
 
     p:last-child {
-      align-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
       span {
         margin-right: 10px;
+        margin-top: 4%;
+      }
+    }
+  }
+}
+@media screen and (min-dith: 768px) {
+  .text-center_p5 {
+    p {
+      span {
+        // margin-top: -25%;
       }
     }
   }
