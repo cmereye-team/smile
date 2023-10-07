@@ -21,15 +21,15 @@
             ><img
               src="https://static.cmereye.com/imgs/2023/08/c55d953491658b89.png"
               alt="" /></span
-          ><span>眼 科 資 訊</span></a
+          ><span>媒 體 報 導</span></a
         >
-        <a :href="localePath('/charge-detail')"
+        <!-- <a :href="localePath('/charge-detail')"
           ><span
             ><img
               src="https://static.cmereye.com/imgs/2023/08/5fc1029d0c3be696.png"
               alt="" /></span
           ><span>收 費 詳 情</span></a
-        >
+        > -->
         <a
         :href="localePath('/video')"
           ><span

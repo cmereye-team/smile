@@ -222,31 +222,11 @@ export default {
       },
       ophthalmicConsultation: {
         main_nav: this.$t("home.headers.ophthalmicConsultation"),
-        link: "",
-        child_list: [
-          {
-            child_item: this.$t("home.headers.ophthalmicConsultationChild_1"),
-            link: "/ophthalmicInfo/shareVideos",
-          },
-          {
-            child_item: this.$t("home.headers.ophthalmicConsultationChild_2"),
-            link: "/ophthalmicInfo/mediaCov",
-          },
-        ],
+        link: "/ophthalmicInfo/mediaCov",
       },
       reservationService: {
-        main_nav: this.$t("home.headers.reservationService"),
-        link: "",
-        child_list: [
-          {
-            child_item: this.$t("home.headers.reservationServiceChild_1"),
-            link: "/eye-checkup",
-          },
-          {
-            child_item: this.$t("home.headers.reservationServiceChild_2"),
-            link: "/ophthalmicInfo/AppointForm",
-          },
-        ],
+        main_nav: this.$t("home.headers.feeConsultation"),
+        link: "/free",
       },
       video: {
         main_nav: "矯視資訊影片",
@@ -427,7 +407,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     & > div {
-      padding: 15px 20px;
+      padding: 15px 23px;
     }
   }
   .copyright {

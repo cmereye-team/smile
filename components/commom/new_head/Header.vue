@@ -4,10 +4,16 @@
       <div class="header flex-between">
         <div class="left">
           <nuxt-link :to="localePath('/')">
-            <img class="head_logo" src="@/asset/image/common/Logo.svg" alt="" /></nuxt-link>
+            <img class="head_logo" src="@/asset/image/common/Logo.svg" alt=""
+          /></nuxt-link>
         </div>
         <div class="mbShow mbHeaderBox mb_menu">
-          <img src="../../../asset/image/common/Vector.png" class="mr-5" alt="" @click="langDrawer = true" />
+          <img
+            src="../../../asset/image/common/Vector.png"
+            class="mr-5"
+            alt=""
+            @click="langDrawer = true"
+          />
           <div @click="drawer = true"><i></i><i></i><i></i></div>
         </div>
         <!-- <div class="right flex link_more link_pc_more">
@@ -27,48 +33,79 @@
         </div> -->
       </div>
       <div class="md:flex items-center pcShow">
-        <div class="nav_bar section hidden md:flex md:justify-between items-center">
+        <div
+          class="nav_bar section hidden md:flex md:justify-between items-center"
+        >
           <!-- gsap   移动动画-->
           <!-- gsap   移动动画 end-->
-          <ul class="nav md:flex md:justify-around grid" :class="[$i18n.locale == 'en' ? 'gap-0 pl-8' : 'gap-8 pl-0']">
+          <ul
+            class="nav md:flex md:justify-around grid"
+            :class="[$i18n.locale == 'en' ? 'gap-0 pl-8' : 'gap-8 pl-0']"
+          >
             <div class="menu-line"></div>
 
-            <li v-for="(navItem, index) in navList" :key="index" class="nav_item text-lg md:flex flex-col"
-              :class="navItem.child_list.length !== 0 ? 'main_after' : ''">
-              <nuxt-link :to="localePath(navItem.link)" :class="navItem.child_list.length !== 0
-                  ? 'main_nav_after'
-                  : 'main_nav'
-                ">
+            <li
+              v-for="(navItem, index) in navList"
+              :key="index"
+              class="nav_item text-lg md:flex flex-col"
+              :class="navItem.child_list.length !== 0 ? 'main_after' : ''"
+            >
+              <nuxt-link
+                :to="localePath(navItem.link)"
+                :class="
+                  navItem.child_list.length !== 0
+                    ? 'main_nav_after'
+                    : 'main_nav'
+                "
+              >
                 <div class="mian_nav_text font-black">
                   {{ navItem.main_nav }}
                 </div>
               </nuxt-link>
 
-              <ul :style="{ top: $i18n.locale == 'en' ? '36px' : '20px' }" class="child_nav flex flex-col"
-                v-if="navItem.child_list.length > 0">
-                <li v-for="(childItem, childIndex) in navItem.child_list" :key="childIndex">
-                  <nuxt-link :to="localePath(childItem.link)" class="text-base">{{ `· ` + childItem.child_item
-                  }}</nuxt-link>
+              <ul
+                :style="{ top: $i18n.locale == 'en' ? '36px' : '20px' }"
+                class="child_nav flex flex-col"
+                v-if="navItem.child_list.length > 0"
+              >
+                <li
+                  v-for="(childItem, childIndex) in navItem.child_list"
+                  :key="childIndex"
+                >
+                  <nuxt-link
+                    :to="localePath(childItem.link)"
+                    class="text-base"
+                    >{{ `· ` + childItem.child_item }}</nuxt-link
+                  >
                 </li>
                 <li></li>
               </ul>
             </li>
           </ul>
           <div class="new_header">
-            <div>
+            <a href="tel: +85260610511" target="_blank" class="new_about">預約服務</a>
+            <div class="new_a_div">
               <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
               <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
-              <a href=""><img src="@/asset/image/common/youtube.png" alt="" /></a>
+              <a href=""
+                ><img src="@/asset/image/common/youtube.png" alt=""
+              /></a>
             </div>
-            <div>
+            <!-- <div>
               <img src="https://static.cmereye.com/imgs/2023/08/88c40669a540c35c.png" alt="+85260610511" />
-            </div>
+            </div> -->
           </div>
-          <nuxt-link style="display: none" :to="localePath('/booking')"
-            class="text-base ll_box nav-bookingservice pcShow">{{ $t("home.headers.reservationService") }}</nuxt-link>
+          <nuxt-link
+            style="display: none"
+            :to="localePath('/booking')"
+            class="text-base ll_box nav-bookingservice pcShow"
+            >{{ $t("home.headers.reservationService") }}</nuxt-link
+          >
           <div class="flex items-center nav-language-new group relative">
             <img src="../../../asset/image/common/Vector.png" alt="" />
-            <ul class="nav-language-box absolute top-5 hidden group-hover:block -left-5">
+            <ul
+              class="nav-language-box absolute top-5 hidden group-hover:block -left-5"
+            >
               <!-- <li><a href="###">繁</a> </li>
               <li><a href="###">简</a> </li> -->
               <!-- <li :class="$i18n.locale === 'hk' ? 'langBoxClass' : ''">
@@ -98,17 +135,29 @@
         <!-- 右边悬浮按钮 -->
         <div class="sidebar_contact">
           <div>
-            <a href="https://api.whatsapp.com/send/?phone=85260610511" target="_blank">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85260610511"
+              target="_blank"
+            >
               <div>
-                <img src="https://static.cmereye.com/imgs/2023/08/8403ced7dc2e7c7f.png" class="p-1" />
+                <img
+                  src="https://static.cmereye.com/imgs/2023/08/8403ced7dc2e7c7f.png"
+                  class="p-1"
+                />
               </div>
               <div><span>了解更多</span></div>
             </a>
           </div>
           <div>
-            <a href="https://api.whatsapp.com/send/?phone=85260610511" target="_blank">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85260610511"
+              target="_blank"
+            >
               <div>
-                <img src="https://static.cmereye.com/imgs/2023/08/8814d9fb19e5dd7a.png" class="p-1" />
+                <img
+                  src="https://static.cmereye.com/imgs/2023/08/8814d9fb19e5dd7a.png"
+                  class="p-1"
+                />
               </div>
               <div><span>快速預約</span></div>
             </a>
@@ -116,7 +165,10 @@
           <div>
             <a :href="localePath('/consumption-voucher')" target="_blank">
               <div>
-                <img src="https://static.cmereye.com/imgs/2023/08/9938e31284f5eda3.png" class="p-1" />
+                <img
+                  src="https://static.cmereye.com/imgs/2023/08/9938e31284f5eda3.png"
+                  class="p-1"
+                />
               </div>
               <div><span>消費券優惠</span></div>
             </a>
@@ -137,27 +189,49 @@
           </nuxt-link>
         </div> -->
       </div>
-      <el-drawer class="drawers" :visible.sync="menuList" v-show="menuList" direction="ttb" :with-header="false"
-        size="60%" :modal="false" :wrapperClosable="true">
+      <el-drawer
+        class="drawers"
+        :visible.sync="menuList"
+        v-show="menuList"
+        direction="ttb"
+        :with-header="false"
+        size="60%"
+        :modal="false"
+        :wrapperClosable="true"
+      >
         <div>
           <div class="header header_drawer flex-between">
             <div class="left">
               <nuxt-link :to="localePath('/')">
-                <img class="head_logo" src="@/asset/image/common/Logo.svg" alt="" /></nuxt-link>
+                <img
+                  class="head_logo"
+                  src="@/asset/image/common/Logo.svg"
+                  alt=""
+              /></nuxt-link>
             </div>
             <div class="md:flex items-center pcShow">
-              <div class="nav_bar section hidden md:flex md:justify-between items-center">
+              <div
+                class="nav_bar section hidden md:flex md:justify-between items-center"
+              >
                 <div class="new_header">
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/88c40669a540c35c.png" alt="+85260610511" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/88c40669a540c35c.png"
+                      alt="+85260610511"
+                    />
                   </div>
                 </div>
-                <nuxt-link style="display: none" :to="localePath('/booking')"
-                  class="text-base ll_box nav-bookingservice pcShow">{{ $t("home.headers.reservationService")
-                  }}</nuxt-link>
+                <nuxt-link
+                  style="display: none"
+                  :to="localePath('/booking')"
+                  class="text-base ll_box nav-bookingservice pcShow"
+                  >{{ $t("home.headers.reservationService") }}</nuxt-link
+                >
                 <div class="flex items-center nav-language-new group relative">
                   <img src="../../../asset/image/common/Vector.png" alt="" />
-                  <ul class="nav-language-box absolute top-5 hidden group-hover:block -left-5">
+                  <ul
+                    class="nav-language-box absolute top-5 hidden group-hover:block -left-5"
+                  >
                     <li @click="handleLang('hk')">繁</li>
                     <li @click="handleLang('cn')">简</li>
                   </ul>
@@ -173,165 +247,247 @@
           </div>
           <div class="header_body">
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/08/b1035ba58b188832.png" alt="" />
+              <img
+                src="https://static.cmereye.com/imgs/2023/08/b1035ba58b188832.png"
+                alt=""
+              />
             </div>
             <div>
               <div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/97fdbaefbeb84e3b.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/97fdbaefbeb84e3b.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="groupList" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/a0f496310fe0a27d.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/a0f496310fe0a27d.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="OrthopedicList" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/1370a57f2695de69.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/1370a57f2695de69.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="diagnosisInstructionsList" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/fdd73f4b13f9769d.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/fdd73f4b13f9769d.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="faq" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/45aaf2ec213e6ad6.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/45aaf2ec213e6ad6.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="contactUs" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/d82c6bcf4534cfff.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/d82c6bcf4534cfff.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="ophthalmicConsultation" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/afc6cffac8f0f99f.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/afc6cffac8f0f99f.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="reservationService" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/471b48c37f66cda3.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/471b48c37f66cda3.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="video" />
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/08/c55d953491658b89.png" alt="" />
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/08/c55d953491658b89.png"
+                      alt=""
+                    />
                   </div>
                   <DetailOption :group="share" />
                 </div>
                 <!-- ⬇️ 方便样式布局 增加内容可刻删除 -->
-                <div style="opacity: 0;"></div>
+                <div style="opacity: 0"></div>
               </div>
               <div>
-                <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
+                <a href=""
+                  ><img src="@/asset/image/common/fbook.png" alt=""
+                /></a>
                 <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
-                <a href=""><img src="@/asset/image/common/youtube.png" alt="" /></a>
+                <a href=""
+                  ><img src="@/asset/image/common/youtube.png" alt=""
+                /></a>
               </div>
             </div>
           </div>
         </div>
       </el-drawer>
-      <el-drawer v-show="drawer" :visible.sync="drawer" :with-header="false" :modal="false" size="100%">
+      <el-drawer
+        v-show="drawer"
+        :visible.sync="drawer"
+        :with-header="false"
+        :modal="false"
+        size="100%"
+      >
         <div class="mb_menu_close">
           <div style="padding: 10px">
             <img class="head_logo" src="@/asset/image/common/Logo.svg" alt="" />
           </div>
           <div>
-            <img src="../../../asset/image/common/Vector.png" class="mr-5" alt="" @click="langDrawer = true" />
+            <img
+              src="../../../asset/image/common/Vector.png"
+              class="mr-5"
+              alt=""
+              @click="langDrawer = true"
+            />
             <div @click="drawer = false"><i></i><i></i></div>
           </div>
         </div>
         <div class="mb_menu_list">
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/08/6fad924059f2fcad.png" alt="" />
+            <img
+              src="https://static.cmereye.com/imgs/2023/08/6fad924059f2fcad.png"
+              alt=""
+            />
           </div>
           <div>
             <div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/f3ea64aa54bc98cb.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/f3ea64aa54bc98cb.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="groupList" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/844235e03d62a012.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/844235e03d62a012.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="OrthopedicList" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/2d9505273f4129f4.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/2d9505273f4129f4.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="diagnosisInstructionsList" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/f7cf9aa336bd09b6.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/f7cf9aa336bd09b6.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="faq" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/89b4f7b30d53ebe8.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/89b4f7b30d53ebe8.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="contactUs" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/d116e79aee23450b.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/d116e79aee23450b.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="ophthalmicConsultation" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/dbdaee641342c88f.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/dbdaee641342c88f.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="reservationService" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/a0cc6ca85ae706c8.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/a0cc6ca85ae706c8.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="video" />
               </div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/08/0c66b448f1429c1d.png" alt="" />
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/08/0c66b448f1429c1d.png"
+                    alt=""
+                  />
                 </div>
                 <DetailOption :group="share" />
               </div>
             </div>
-          
           </div>
         </div>
         <div class="mb_menu_footer">
           <div>
             <nuxt-link :to="localePath('/')">
-              <img class="foot_logo" src="../../../asset/image/common/Logo.svg" alt="" />
+              <img
+                class="foot_logo"
+                src="../../../asset/image/common/Logo.svg"
+                alt=""
+              />
             </nuxt-link>
             <div>
               <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
               <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
-              <a href=""><img src="@/asset/image/common/youtube.png" alt="" /></a>
+              <a href=""
+                ><img src="@/asset/image/common/youtube.png" alt=""
+              /></a>
             </div>
           </div>
           <div>
             <p>
-              <span>©2023 {{ $t("home.footer.span1")
-              }}{{ $t("home.footer.span2") }}</span>
+              <span
+                >©2023 {{ $t("home.footer.span1")
+                }}{{ $t("home.footer.span2") }}</span
+              >
               <span>
                 <nuxt-link :to="localePath('/privacy-policy')">{{
                   $t("home.footer.span3")
@@ -347,26 +503,38 @@
           </div>
         </div>
       </el-drawer>
-      <el-drawer :visible.sync="langDrawer" v-show="langDrawer" direction="btt" :with-header="false" :modal="false"
-        size="40%">
+      <el-drawer
+        :visible.sync="langDrawer"
+        v-show="langDrawer"
+        direction="btt"
+        :with-header="false"
+        :modal="false"
+        size="40%"
+      >
         <div class="langBox-title">
           {{ $t("home.headers.togLang") }}
         </div>
         <div class="langBox">
-          <nuxt-link :class="[
-            'langBox-in',
-            'text-center',
-            $i18n.locale === 'hk' ? 'langBoxClass' : '',
-          ]" :to="switchLocalePath('hk')">
+          <nuxt-link
+            :class="[
+              'langBox-in',
+              'text-center',
+              $i18n.locale === 'hk' ? 'langBoxClass' : '',
+            ]"
+            :to="switchLocalePath('hk')"
+          >
             <!-- <div> -->
             繁体
             <!-- </div> -->
           </nuxt-link>
-          <nuxt-link :class="[
-            'langBox-in',
-            'text-center',
-            $i18n.locale === 'cn' ? 'langBoxClass' : '',
-          ]" :to="switchLocalePath('cn')">
+          <nuxt-link
+            :class="[
+              'langBox-in',
+              'text-center',
+              $i18n.locale === 'cn' ? 'langBoxClass' : '',
+            ]"
+            :to="switchLocalePath('cn')"
+          >
             <!-- <div> -->
             简体
             <!-- </div> -->
@@ -890,7 +1058,6 @@ $active_gradient: #4570b6;
 
 // pc
 @media (min-width: 768px) {
-  
   .main_after .nuxt-link-active .mian_nav_text {
     color: #4570b6 !important;
   }
@@ -1107,7 +1274,7 @@ $active_gradient: #4570b6;
     flex-direction: column;
     align-items: center;
 
-    &>div {
+    & > div {
       a {
         color: #4570b6;
         text-align: center;
@@ -1120,12 +1287,12 @@ $active_gradient: #4570b6;
       }
     }
 
-    &>div:nth-child(even) {
+    & > div:nth-child(even) {
       padding: 20px 0;
     }
 
-    &>div:last-child {
-      a>div:nth-child(2) {
+    & > div:last-child {
+      a > div:nth-child(2) {
         max-width: 80px;
         text-align: center;
         margin: auto;
@@ -1138,7 +1305,6 @@ $active_gradient: #4570b6;
   }
 
   .nav-language-box {
-
     // width: 100px;
     li {
       width: 70px;
@@ -1158,38 +1324,57 @@ $active_gradient: #4570b6;
 
   .new_header {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       display: flex;
       align-items: center;
       padding: 0 10px;
-
-      &>a {
-        padding: 0 10px;
-      }
     }
+  }
+  .new_a_div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    & > a {
+      padding: 0 10px;
+    }
+  }
 
-    padding-right: 10px;
+  .new_about {
+    border-radius: 17px;
+    background: #76c8e2;
+    color: #fff;
+    text-align: center;
+    font-family: "Noto Sans HK";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.75px;
+    margin: 0 20px;
+    padding: 10px 20px;
   }
 
   .menu_pc {
-    width: 76px;
-    height: 76px;
+    width: 46px;
+    height: 46px;
     background: #4570b6;
-    border-radius: 23px;
+    border-radius: 43px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    &>div {
-      &>i {
+    & > div {
+      & > i {
         display: inline-block;
-        width: 60%;
+        width: 50%;
         display: flex;
         flex-direction: column;
-        margin: 10px auto;
+        margin: 6px auto;
         background: #fff;
-        height: 3px;
+        height: 2px;
         border-radius: 5px;
       }
     }
@@ -1206,7 +1391,7 @@ $active_gradient: #4570b6;
     justify-content: center;
     cursor: pointer;
 
-    &>span {
+    & > span {
       display: inline-block;
       width: 28px;
       height: 3px;
@@ -1215,11 +1400,11 @@ $active_gradient: #4570b6;
       border-radius: 3px;
     }
 
-    &>span:nth-child(1) {
+    & > span:nth-child(1) {
       transform: rotate(-45deg);
     }
 
-    &>span:nth-child(2) {
+    & > span:nth-child(2) {
       transform: rotate(45deg);
     }
   }
@@ -1231,7 +1416,7 @@ $active_gradient: #4570b6;
     display: flex;
     align-items: center;
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       width: 41px;
       height: 41px;
       background: #4570b6;
@@ -1241,7 +1426,7 @@ $active_gradient: #4570b6;
       justify-content: center;
       align-items: center;
 
-      &>i {
+      & > i {
         display: inline-block;
         width: 55%;
         height: 3px;
@@ -1249,7 +1434,7 @@ $active_gradient: #4570b6;
         border-radius: 3px;
       }
 
-      &>i:nth-child(2) {
+      & > i:nth-child(2) {
         margin: 5px 0;
       }
     }
@@ -1267,11 +1452,11 @@ $active_gradient: #4570b6;
     align-items: center;
     justify-content: space-between;
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       display: flex;
       align-items: center;
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         width: 41px;
         height: 41px;
         background: #4570b6;
@@ -1281,7 +1466,7 @@ $active_gradient: #4570b6;
         justify-content: center;
         align-items: center;
 
-        &>i {
+        & > i {
           display: inline-block;
           width: 55%;
           height: 3px;
@@ -1290,12 +1475,12 @@ $active_gradient: #4570b6;
           position: relative;
         }
 
-        &>i:nth-child(1) {
+        & > i:nth-child(1) {
           transform: rotate(45deg);
           top: 1.5px;
         }
 
-        &>i:nth-child(2) {
+        & > i:nth-child(2) {
           transform: rotate(-45deg);
           top: -1.5px;
         }
@@ -1306,23 +1491,23 @@ $active_gradient: #4570b6;
   .mb_menu_list {
     margin: 0 17px;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       margin: 12px 0;
     }
 
-    &>div:nth-child(2) {
-      &>div:nth-child(1) {
+    & > div:nth-child(2) {
+      & > div:nth-child(1) {
         display: flex;
         flex-wrap: wrap;
         padding-left: 20px;
 
-        &>div {
+        & > div {
           display: flex;
           align-items: flex-start;
           padding: 10px 0;
           max-width: 42%;
 
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             min-width: 22px;
             display: flex;
             align-items: center;
@@ -1331,7 +1516,7 @@ $active_gradient: #4570b6;
           }
         }
 
-        &>div:nth-child(odd) {
+        & > div:nth-child(odd) {
           margin-right: 20px;
         }
 
@@ -1340,12 +1525,12 @@ $active_gradient: #4570b6;
         }
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        &>a:nth-child(2) {
+        & > a:nth-child(2) {
           margin: 0 24px;
         }
       }
@@ -1355,7 +1540,7 @@ $active_gradient: #4570b6;
   .mb_menu_footer {
     margin-bottom: 64px;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       padding: 25px 0;
       display: flex;
       flex-direction: column;
@@ -1363,17 +1548,17 @@ $active_gradient: #4570b6;
       background: url("https://static.cmereye.com/imgs/2023/08/d6f27536cde86418.png");
       background-size: 100%, 100%;
       background-repeat: no-repeat;
-      &>div:nth-child(2){
+      & > div:nth-child(2) {
         margin-top: 24px;
         display: flex;
         align-items: center;
-        &>a:nth-child(2){
+        & > a:nth-child(2) {
           margin: 0 12px;
         }
       }
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1514,30 +1699,30 @@ $active_gradient: #4570b6;
     margin-top: 136px;
     justify-content: space-between;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       flex: 1;
       margin-right: 60px;
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
-        &>div {
+        & > div {
           min-width: 230px;
           padding: 20px 0;
           border-bottom: 1px solid #6d6e7180;
           display: flex;
           align-items: flex-start;
 
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             margin-right: 20px;
             display: flex;
             align-items: center;
@@ -1546,12 +1731,12 @@ $active_gradient: #4570b6;
           }
         }
 
-        &>div:nth-child(odd) {
+        & > div:nth-child(odd) {
           margin-right: 42px;
         }
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         display: flex;
         align-items: center;
         margin-top: 40px;
@@ -1565,11 +1750,10 @@ $active_gradient: #4570b6;
 }
 
 @media screen and (max-width: 768px) {
-
   // 移动端
   .header {
     min-height: 18vw;
-    margin: 3vw  0 !important;
+    margin: 3vw 0 !important;
   }
 
   .link_more {
