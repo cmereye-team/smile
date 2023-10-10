@@ -36,7 +36,7 @@
         </div>
         <div class="benefit-in-lists">
           <div class="listIn" v-for="(benefitItem, index) in benefitList" :key="index">
-            <div class="listIn-t">
+            <div class="listIn-t img_style">
               <img :src="benefitItem.index" alt="" class="index" />
               <p>{{benefitItem.text}}</p>
             </div>
@@ -53,32 +53,32 @@ export default {
     return {
       benefitList: [
         {
-          index: 'https://static.cmereye.com/imgs/2023/08/25d132c30d6fd581.jpg',
+          index: 'https://static.cmereye.com/imgs/2023/10/354142daabe14d8c.png',
           text: '手術簡單',
           des: this.$t('service.relexSmile.benefit.des1'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/08/c542f7fb196d561b.jpg',
+          index: 'https://static.cmereye.com/imgs/2023/10/66ecab04a32b9de6.png',
           text: '術後復原快',
           des: this.$t('service.relexSmile.benefit.des2'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/08/c3f16aa0ab1631c3.jpg',
+          index: 'https://static.cmereye.com/imgs/2023/10/02557c41a9f23654.png',
           text: '手術時間短',
           des: this.$t('service.relexSmile.benefit.des3'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/08/b50a60057195d7bc.jpg',
+          index: 'https://static.cmereye.com/imgs/2023/10/0ae516b4778a67d1.png',
           text: '術後影響少',
           des: this.$t('service.relexSmile.benefit.des4'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/08/1e99a0e8eec63d14.jpg',
+          index: 'https://static.cmereye.com/imgs/2023/10/cf3f4cd33d880c99.png',
           text: '微創',
           des: this.$t('service.relexSmile.benefit.des5'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/08/6e2bdbcdd6c2ba35.jpg',
+          index: 'https://static.cmereye.com/imgs/2023/10/615a8a469b1bfa28.png',
           text: '效果穩定',
           des: this.$t('service.relexSmile.benefit.des6'),
         },
@@ -168,7 +168,7 @@ export default {
           height: 307px;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: space-evenly;
           align-items: center;
           background: #fff;
           border-radius: 50%;
@@ -176,9 +176,10 @@ export default {
             color: #4570B6;
             font-size: 25px;
             font-weight: 700;
-            line-height: 20px; /* 80% */
+            line-height: 1.1; /* 80% */
             letter-spacing: 8.75px;
-            margin-top: 43px;
+            // margin-top: 43px;
+            min-height: 30px;
           }
         }
         &-b{
@@ -200,6 +201,32 @@ export default {
 //   font-weight: 500;
 //   font-size: 25px;
 // }
+@media screen and (min-width:768px) {
+  .img_style {
+    & > img {
+      width: 50%;
+      margin: 0 auto;
+    }
+    & > img:nth-child(1) {
+      max-width: 120px;
+    }
+    & > img:nth-child(2) {
+      max-width: 120px;
+    }
+    & > img:nth-child(3) {
+      max-width: 120px;
+    }
+    & > img:nth-child(4) {
+      max-width: 130px;
+    }
+    & > img:nth-child(5) {
+      max-width: 125px;
+    }
+    & > img:nth-child(6) {
+      max-width: 100px;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .benefit{
     &-bg{

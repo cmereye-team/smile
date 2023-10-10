@@ -95,7 +95,7 @@ export default {
     & > div:nth-child(1) {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       & > span {
         margin-left: 5px;
       }
@@ -115,6 +115,20 @@ export default {
     width: fit-content;
     padding: 10px 0;
     display: flex;
+    &> a {
+      position: relative;
+    }
+    & > a::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: #4570B6;
+      border-radius: 50%;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
   .isBlock {
     display: none;

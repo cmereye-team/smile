@@ -141,7 +141,7 @@
             >
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/08/8403ced7dc2e7c7f.png"
+                  src="https://static.cmereye.com/imgs/2023/10/8b12264e93b22e9c.png"
                   class="p-1"
                 />
               </div>
@@ -155,7 +155,7 @@
             >
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/08/8814d9fb19e5dd7a.png"
+                  src="https://static.cmereye.com/imgs/2023/10/09c8d2399ccf421a.png"
                   class="p-1"
                 />
               </div>
@@ -166,7 +166,7 @@
             <a :href="localePath('/consumption-voucher')" target="_blank">
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/08/9938e31284f5eda3.png"
+                  src="https://static.cmereye.com/imgs/2023/10/25ef70fdd54019c0.png"
                   class="p-1"
                 />
               </div>
@@ -1269,7 +1269,7 @@ $active_gradient: #4570b6;
     position: fixed;
     right: 9%;
     letter-spacing: 0.1em;
-    top: 66%;
+    bottom: 16%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1284,11 +1284,15 @@ $active_gradient: #4570b6;
         font-weight: 300;
         line-height: normal;
         letter-spacing: 3.4px;
+        img {
+          width: 50%;
+          margin: auto;
+        }
       }
     }
 
     & > div:nth-child(even) {
-      padding: 20px 0;
+      padding: 60px 0;
     }
 
     & > div:last-child {

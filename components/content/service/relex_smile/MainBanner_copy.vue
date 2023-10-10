@@ -2,12 +2,12 @@
   <div class="main_banner">
     <div class="smile-banner">
       <img
-        data-src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg"
+        data-src="https://static.cmereye.com/imgs/2023/10/5f9649b99482ebc1.png"
         srcset="
-          https://static.cmereye.com/imgs/2023/08/1f0f4cb2d113be1f.jpg 768w,
-          https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg
+          https://static.cmereye.com/imgs/2023/10/62bb3cec28a0360a.png 768w,
+          https://static.cmereye.com/imgs/2023/10/5f9649b99482ebc1.png
         "
-        src="https://static.cmereye.com/imgs/2023/08/ba5cb23d3ef65120.jpg"
+        src="https://static.cmereye.com/imgs/2023/10/5f9649b99482ebc1.png"
         alt=""
       />
       <div class="title_box">
@@ -19,7 +19,7 @@
         :href="localePath('/media')"
           ><span
             ><img
-              src="https://static.cmereye.com/imgs/2023/08/c55d953491658b89.png"
+              src="https://static.cmereye.com/static/loffee/svg/9621.svg"
               alt="" /></span
           ><span>媒 體 報 導</span></a
         >
@@ -34,7 +34,7 @@
         :href="localePath('/video')"
           ><span
             ><img
-              src="https://static.cmereye.com/imgs/2023/08/d01b9ea547b7a087.png"
+              src="https://static.cmereye.com/static/loffee/svg/9631.svg"
               alt="" /></span
           ><span>矯 視 資 訊 影 片</span></a
         >
@@ -42,7 +42,7 @@
         :href="localePath('/video')"
           ><span
             ><img
-              src="https://static.cmereye.com/imgs/2023/08/be8c7e62e5be9d69.png"
+              src="https://static.cmereye.com/static/loffee/svg/9641.svg"
               alt="" /></span
           ><span>個 案 分 享</span></a
         >

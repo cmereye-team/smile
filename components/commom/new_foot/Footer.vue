@@ -440,7 +440,7 @@ export default {
   .main_footer {
     background: url("https://static.cmereye.com/imgs/2023/08/dc5cf7af0b7775a9.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 
     padding: 2.4vw 0 0;
     position: relative;
@@ -451,6 +451,9 @@ export default {
     & > div {
       max-width: 1280px;
       margin: auto;
+    }
+    & > .copyright {
+      margin-top: 50px;
     }
     & > div:last-child {
       max-width: 100%;

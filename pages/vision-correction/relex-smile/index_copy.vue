@@ -22,7 +22,21 @@
         />
       </div>
       <div class="businessHours-time">
-        <div
+        <!-- <div>  -->
+          <div>
+            <div>星期一至五</div>
+            <div>9:00-19:00</div>
+          </div>
+          <div>
+            <div>星期六</div>
+            <div>9:00-18:00</div>
+          </div>
+          <div>
+            <div>星期日及公眾假期</div>
+            <div>休息</div>
+          </div>
+        <!-- </div> -->
+        <!-- <div
           class="listIn"
           v-for="(timer, index) in businessHours"
           :key="index"
@@ -52,7 +66,7 @@
               :class="`timer${index + 1}`"
             ></span>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="businessHours-address">
         <div>
@@ -219,59 +233,89 @@ export default {
   }
   &-time {
     display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
-    .listIn {
-      flex: 1;
-      &:first-child {
-        flex: 1.5;
-      }
-      &-name {
-        color: #6b6b6b;
+    &> div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px 40px;
+      border-left: 2px solid #F5F4F4;
+      & >div:nth-child(1) {
+        color: #4570B6;
+        font-family: 'Noto Sans';
         font-size: 17px;
+        font-style: normal;
         font-weight: 300;
-        // line-height: 180%; /* 30.6px */
-        line-height: 54px;
-        height: 54px;
+        line-height: 180%; /* 30.6px */
         letter-spacing: 2.04px;
-        border-bottom: 2px solid #f5f4f4;
-        text-align: center;
       }
-      &-context {
-        line-height: 54px;
-        height: 54px;
-        border-bottom: 2px solid #f5f4f4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        span {
-          color: #4570b6;
-          font-size: 17px;
-          font-weight: 400;
-          letter-spacing: 1.7px;
-          white-space: nowrap;
-          &.context1 {
-            color: #6b6b6b;
-          }
-          &.context2 {
-            width: 14px;
-            height: 14px;
-            display: block;
-            border-radius: 50%;
-            background-color: #4570b6;
-          }
-          &.context4 {
-            width: 36px;
-            height: 4px;
-            display: block;
-            border-radius: 2px;
-            background-color: #4570b6;
-            transform: rotate(150.642deg);
-          }
-        }
-      }
+      & >div:nth-child(2) {
+        color: #6B6B6B;
+        font-family: 'Yuanti TC';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 30.6px */
+        letter-spacing: 1.7px;
+      } 
     }
+    &> div:last-child {
+      padding: 25px 13px;
+      border-right: 2px solid #F5F4F4;
+    }
+    // .listIn {
+    //   flex: 1;
+    //   &:first-child {
+    //     flex: 1.5;
+    //   }
+    //   &-name {
+    //     color: #6b6b6b;
+    //     font-size: 17px;
+    //     font-weight: 300;
+    //     // line-height: 180%; /* 30.6px */
+    //     line-height: 54px;
+    //     height: 54px;
+    //     letter-spacing: 2.04px;
+    //     border-bottom: 2px solid #f5f4f4;
+    //     text-align: center;
+    //   }
+    //   &-context {
+    //     line-height: 54px;
+    //     height: 54px;
+    //     border-bottom: 2px solid #f5f4f4;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     span {
+    //       color: #4570b6;
+    //       font-size: 17px;
+    //       font-weight: 400;
+    //       letter-spacing: 1.7px;
+    //       white-space: nowrap;
+    //       &.context1 {
+    //         color: #6b6b6b;
+    //       }
+    //       &.context2 {
+    //         width: 14px;
+    //         height: 14px;
+    //         display: block;
+    //         border-radius: 50%;
+    //         background-color: #4570b6;
+    //       }
+    //       &.context4 {
+    //         width: 36px;
+    //         height: 4px;
+    //         display: block;
+    //         border-radius: 2px;
+    //         background-color: #4570b6;
+    //         transform: rotate(150.642deg);
+    //       }
+    //     }
+    //   }
+    // }
   }
   &-address {
     display: flex;
@@ -322,65 +366,94 @@ export default {
       }
     }
     &-time {
-      // flex-wrap: nowrap;
-      width: 84%;
-      max-width: 1280px;
-      // padding: 0 30px;
-      overflow-x: scroll;
-
-      .listIn {
-        // min-width: 32px;
-        // max-width: 32px;
-        // margin-right: 20px;
-        // margin-bottom: 26px;
-        display: flex;
-        flex-direction: column;
-        min-width: 110px;
-        align-items: center;
-        // &:first-child{
-        // width: 58px;
-        // max-width: 58px;
-        // }
-        // &:nth-of-type(7){
-        // margin-left: 78px;
-        // }
-
-        &-name {
-          line-height: 180%;
-          height: auto;
-          border-bottom: none;
-          letter-spacing: 0;
-          width: fit-content;
-          white-space: nowrap;
-          width: 100%;
-          padding-bottom: 15px;
-        }
-        &-context {
-          flex: 1;
-          height: auto;
-          line-height: 180%;
-          min-height: 30px;
-          border-bottom: none;
-          width: 100%;
-          padding: 15px 0;
-          border-top: 2.83px solid #f5f4f4;
-          border-bottom: 2.83px solid #f5f4f4;
-          margin-bottom: 20px;
-          span {
-            // white-space: pre-wrap;
-            &.context2 {
-            }
-            &.context4 {
-              // transform: rotate(130.167deg);
-            }
-          }
-        }
-        &:last-child {
-          .listIn-name {
-            // line-height: 140%;
-          }
-        }
+      &> div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 12px;
+      border-left: 2px solid #F5F4F4;
+      & >div:nth-child(1) {
+        color: #4570B6;
+        font-family: 'Noto Sans';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 180%; /* 30.6px */
+        letter-spacing: 2.04px;
       }
+      & >div:nth-child(2) {
+        color: #6B6B6B;
+        font-family: 'Yuanti TC';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 30.6px */
+        letter-spacing: 1.7px;
+      } 
+    }
+    &> div:last-child {
+      padding: 5px 8px;
+      border-right: 2px solid #F5F4F4;
+    }
+      // flex-wrap: nowrap;
+      // width: 84%;
+      // max-width: 1280px;
+      // padding: 0 30px;
+      // overflow-x: scroll;
+
+      // .listIn {
+      //   // min-width: 32px;
+      //   // max-width: 32px;
+      //   // margin-right: 20px;
+      //   // margin-bottom: 26px;
+      //   display: flex;
+      //   flex-direction: column;
+      //   min-width: 110px;
+      //   align-items: center;
+      //   // &:first-child{
+      //   // width: 58px;
+      //   // max-width: 58px;
+      //   // }
+      //   // &:nth-of-type(7){
+      //   // margin-left: 78px;
+      //   // }
+
+      //   &-name {
+      //     line-height: 180%;
+      //     height: auto;
+      //     border-bottom: none;
+      //     letter-spacing: 0;
+      //     width: fit-content;
+      //     white-space: nowrap;
+      //     width: 100%;
+      //     padding-bottom: 15px;
+      //   }
+      //   &-context {
+      //     flex: 1;
+      //     height: auto;
+      //     line-height: 180%;
+      //     min-height: 30px;
+      //     border-bottom: none;
+      //     width: 100%;
+      //     padding: 15px 0;
+      //     border-top: 2.83px solid #f5f4f4;
+      //     border-bottom: 2.83px solid #f5f4f4;
+      //     margin-bottom: 20px;
+      //     span {
+      //       // white-space: pre-wrap;
+      //       &.context2 {
+      //       }
+      //       &.context4 {
+      //         // transform: rotate(130.167deg);
+      //       }
+      //     }
+      //   }
+      //   &:last-child {
+      //     .listIn-name {
+      //       // line-height: 140%;
+      //     }
+      //   }
+      // }
     }
     &-address {
       justify-content: space-evenly;
