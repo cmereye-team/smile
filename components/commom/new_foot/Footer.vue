@@ -61,6 +61,18 @@
   <div class="main_footer" v-else-if="screenWidth < 768">
     <div class="section flex justify-between">
       <div class="mbMenu">
+        <div class="pathLink">
+            <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'" />
+            <DetailOption :group="OrthopedicList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'" />
+            <DetailOption :group="diagnosisInstructionsList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'" />
+            <DetailOption :group="faq"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'" />
+            <DetailOption :group="contactUs"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png'" />
+            <DetailOption :group="ophthalmicConsultation"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'" />
+            <DetailOption :group="reservationService" :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'" />
+            <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"  />
+            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'" />
+          </div>
+        </div>
         <div class="mb_footer_eng">
           <div
             class="logo_footer m-auto"
@@ -73,17 +85,6 @@
                 alt=""
               />
             </nuxt-link>
-          </div>
-          <div class="pathLink">
-            <DetailOption :group="groupList" />
-            <DetailOption :group="OrthopedicList" />
-            <DetailOption :group="diagnosisInstructionsList" />
-            <DetailOption :group="faq" />
-            <DetailOption :group="contactUs" />
-            <DetailOption :group="ophthalmicConsultation" />
-            <DetailOption :group="reservationService" />
-            <DetailOption :group="video" />
-            <DetailOption :group="share" />
           </div>
           <div class="flex justify-center items-center m-auto">
             <div class="iocn">
@@ -459,7 +460,7 @@ export default {
       max-width: 100%;
     }
   }
-  
+
   .mian_nav_text:hover,
   .mian_nav_text_child:hover {
     color: rgb(75, 75, 255) !important;
@@ -498,15 +499,24 @@ export default {
   }
 
   .pathLink {
-    padding-top: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
     margin: auto;
+    margin-bottom: 30px;
+    align-items: flex-start;
     & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 50%;
       margin-bottom: 15px;
+      & > div:nth-child(1) {
+        max-width: 22px;
+        max-height: 21px;
+        margin-right: 10px;
+      }
     }
   }
   ::v-deep .el-collapse-item__header {
@@ -520,12 +530,14 @@ export default {
     display: flex;
   }
   .mb_footer_eng {
-    width: 100%;
     background: url("https://static.cmereye.com/imgs/2023/08/c005b62af9cd22c1.png");
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 50%;
-    padding: 15px 0;
+    background-size: 100% 100%;
+    padding: 23px 0;
+    position: relative;
+    width: 120%;
+    border-radius: 100% 100% 0 0;
+    margin-left: -10%;
   }
   .main_footer {
     // background: #f3fcfe;
