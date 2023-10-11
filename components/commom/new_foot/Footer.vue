@@ -537,7 +537,11 @@ export default {
     position: relative;
     width: 120%;
     border-radius: 100% 100% 0 0;
-    margin-left: -10%;
+    &>div:nth-child(2) {
+      &>div:nth-child(2) {
+        padding: 0 15px;
+      }
+    }
   }
   .main_footer {
     // background: #f3fcfe;
@@ -561,7 +565,7 @@ export default {
     }
   }
   .foot_logo {
-    margin: auto;
+    margin: 23px  auto;
   }
   .footer-bottom {
     margin: auto;

@@ -110,12 +110,17 @@ export default {
     display: flex;
     flex-direction: column;
     z-index: 10;
-    & > div:nth-child(1) {
+    & > div:nth-child(2) {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
-      & > span {
-        margin-left: 5px;
+      flex-direction: column;
+      & > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        & > span {
+          margin-left: 5px;
+        }
       }
     }
   }
@@ -174,9 +179,9 @@ export default {
     text-align: center;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.8px;
+    letter-spacing: 2.1px;
     display: flex;
     flex-direction: row;
     z-index: 10;
@@ -186,7 +191,7 @@ export default {
       margin-right: 10px;
     }
     & > div:nth-child(2) {
-      min-width: 120px;
+      min-width: 130px;
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
@@ -206,9 +211,9 @@ export default {
     text-align: center;
     font-size: 12px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.8px;
     line-height: 2;
     flex-direction: column;
     align-items: flex-start;
@@ -219,7 +224,7 @@ export default {
     & > a {
       position: relative;
     }
-    &>a::before {
+    & > a::before {
       content: "";
       width: 3px;
       height: 3px;
