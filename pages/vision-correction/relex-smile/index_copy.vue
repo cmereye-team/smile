@@ -468,7 +468,7 @@ export default {
           margin-right: 0;
         }
         span {
-          font-size: 20px;
+          font-size: 14px;
           line-height: 40px; /* 200% */
           letter-spacing: 2px;
           min-width: 68px;
