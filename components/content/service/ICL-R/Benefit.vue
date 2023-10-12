@@ -53,12 +53,12 @@
     </div>
     <div class="activity-banner">
       <img
-        data-src="https://static.cmereye.com/imgs/2023/10/46c01fa33ae6b8a3.png"
+        data-src="https://static.cmereye.com/imgs/2023/10/d8f632ef45e5ea1a.png"
         srcset="
-          https://static.cmereye.com/imgs/2023/10/8c25281411e76b97.png 768w,
-          https://static.cmereye.com/imgs/2023/10/46c01fa33ae6b8a3.png
+          https://static.cmereye.com/imgs/2023/10/8be50e08625d9ded.png 768w,
+          https://static.cmereye.com/imgs/2023/10/d8f632ef45e5ea1a.png
         "
-        src="https://static.cmereye.com/imgs/2023/10/46c01fa33ae6b8a3.png"
+        src="https://static.cmereye.com/imgs/2023/10/d8f632ef45e5ea1a.png"
         alt=""
       />
     </div>
