@@ -267,6 +267,8 @@ export default {
           &-t{
             height: 155px;
             width: 155px;
+            padding-top: 5px;
+            justify-content: center;
             img{
               max-width: 40%;
               max-height: calc(100% / 3);
