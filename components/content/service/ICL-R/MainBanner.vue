@@ -79,7 +79,7 @@ export default {
     background-position: top;
     background-size: 114%;
     width: 100vw;
-    margin: 94px auto 0;
+    margin: auto 0;
     margin-bottom: 11vw;
     padding-left: 25px;
     /* background: no-repeat; */
