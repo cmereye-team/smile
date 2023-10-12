@@ -250,6 +250,19 @@
           </button>
         </a>
       </div> -->
+      <!-- 临时注销上线放开 -->
+      <!-- <div class="contact contact_icl-r">
+        <a :href="localePath('/icl-r')">
+          <button class="link_more shadow-lg">
+            <div class="flex items-center justify-evenly">
+              <div class="p-1 text-left">
+                <img src="https://static.cmereye.com/imgs/2023/10/b99823c00b4de6ee.png" alt="">
+                <h3 class="text-xs font-normal text-center icl-r-size">ICL <br class="pcShow" />星級矯視講座</h3>
+              </div>
+            </div>
+          </button>
+        </a>
+      </div> -->
       <div class="contact contact_divit">
         <a :href="localePath('/divit')">
           <button class="link_more shadow-lg">
@@ -980,7 +993,34 @@ $active_gradient: #4570b6;
       transform: translate3d(100%, 0, 0);
     }
   }
-  
+  .contact_icl-r {
+    top: calc(66% - 290px) !important;
+    right: 10.2%;
+    
+    .link_more {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #09C09C 0%, #09C09C 100%) !important;
+    }
+    img {
+      width: 60%;
+      margin: auto;
+    }
+    .icl-r-size {
+      color: #FFF;
+      text-align: center;
+      font-family: 'Inter';
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 3.4px;
+    }
+  }
+  .contact_icl-r  .link_more::before {
+    background: linear-gradient(90deg, #98CEC3 0%, #98CEC3 100%) !important;
+  }
   .contact_divit {
     top: calc(66% - 120px) !important;
 
