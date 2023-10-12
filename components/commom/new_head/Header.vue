@@ -197,7 +197,7 @@
         v-show="menuList"
         direction="ttb"
         :with-header="false"
-        size="65%"
+        size="60%"
         :modal="false"
         :wrapperClosable="true"
       >
@@ -1588,7 +1588,7 @@ $active_gradient: #4570b6;
 
 .header {
   // width: 100vw;
-  margin: 0 auto;
+  margin: 0 auto !important;
 
   .right {
     .social_list {
@@ -1661,14 +1661,14 @@ $active_gradient: #4570b6;
   .header_drawer {
     margin: 0 auto;
     max-width: 1280px;
-    padding: 30px 0;
+    padding: 30px 0 !important;
   }
 
   .header_body {
     display: flex;
     max-width: 1280px;
     margin: auto;
-    margin-top: 136px;
+    margin-top: 114px;
     justify-content: space-between;
 
     & > div:nth-child(1) {
