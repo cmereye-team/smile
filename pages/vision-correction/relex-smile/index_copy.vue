@@ -382,7 +382,7 @@ export default {
       &:not(:last-child) {
         margin-right: 100px;
       }
-      img {
+      div:nth-child(1) {
         margin-right: 9px;
       }
       span {
