@@ -12,10 +12,9 @@
         <p>現場參加人士將專享以</p>
         <p>會場優惠價預約進行ICL。</p>
         <p>
-          由於今次活動只招待已
-          <br class="mbShow" />預約人士，<span>名額有限</span>，記得
+          由於今次活動只招待<br class="mbShow" />已預約人士，<span>名額有限</span>，
         </p>
-        <p>握機會預約!</p>
+        <p>記得握機會預約!</p>
       </div>
     </div>
     <a href="/icl-r" class="mbShow discounts-btn">立&nbsp;即&nbsp;預&nbsp;約</a>
@@ -142,7 +141,7 @@ export default {
         display: inline-block;
         border-radius: 500px;
         overflow: hidden;
-        background: #0fedc9;
+        background: #11DBBA;
       }
 
       .link_more:hover {
@@ -287,7 +286,7 @@ export default {
       border-radius: 62px;
     }
     .discounts-btn:active {
-      background: #0fedc9;
+      background: #11DBBA;
     }
   }
 }
