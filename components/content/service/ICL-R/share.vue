@@ -18,11 +18,9 @@
         <p>握機會預約!</p>
       </div>
     </div>
-    <a  href="/icl-r" class="mbShow discounts-btn">立&nbsp;即&nbsp;預&nbsp;約</a>
+    <a href="/icl-r" class="mbShow discounts-btn">立&nbsp;即&nbsp;預&nbsp;約</a>
     <div class="pcShow discounts-contact">
-      <a
-        href="/icl-r"
-      >
+      <a href="/icl-r">
         <button class="link_more shadow-lg">
           <span></span>
           <span></span>
@@ -75,6 +73,18 @@ export default {
         rgba(59, 173, 108, 0.03) 100%
       );
       width: fit-content;
+      position: relative;
+      z-index: 1;
+    }
+    .discounts-title::before {
+      content: "";
+      background: url("https://static.cmereye.com/imgs/2023/10/1c2a6b0b7fa551ec.png");
+      position: absolute;
+      top: -130%;
+      z-index: 5;
+      width: 380px;
+      height: 525px;
+      right: 0;
     }
     .discounts-content {
       position: relative;
@@ -219,6 +229,17 @@ export default {
       line-height: 30px; /* 85.714% */
       letter-spacing: 7px;
       margin: 78px auto 84px;
+      position: relative;
+    }
+    .discounts-title::before {
+      content: "";
+      background: url("https://static.cmereye.com/imgs/2023/10/d44e053d9499c9de.png");
+      position: absolute;
+      top: -70%;
+      z-index: 5;
+      width: 136px;
+      height: 188px;
+      right: -5%;
     }
     .discounts-content {
       padding: 0 10px;
@@ -266,7 +287,7 @@ export default {
       border-radius: 62px;
     }
     .discounts-btn:active {
-      background: #0FEDC9;
+      background: #0fedc9;
     }
   }
 }
