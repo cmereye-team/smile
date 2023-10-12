@@ -557,6 +557,7 @@ export default {
     // background: #f3fcfe;
     // padding-top: 5.5vw;
     margin-bottom: 100px;
+    overflow: hidden;
 
     .section {
       display: flex;
