@@ -18,7 +18,7 @@
         <p>握機會預約!</p>
       </div>
     </div>
-    <a  href="/icl-r" class="mbShow discounts-btn">立即預約</a>
+    <a  href="/icl-r" class="mbShow discounts-btn">立&nbsp;即&nbsp;預&nbsp;約</a>
     <div class="pcShow discounts-contact">
       <a
         href="/icl-r"
@@ -31,7 +31,7 @@
           <div class="flex items-center justify-evenly">
             <div class="p-1 text-left">
               <h3 class="text-xs font-normal text-center discounts-h3">
-                立即預約
+                立&nbsp;即&nbsp;預&nbsp;約
               </h3>
               <!-- <p class="text-base text-center">{{ $t('home.headers.coupon') + $t('home.headers.preferential') }}</p> -->
             </div>
@@ -144,8 +144,7 @@ export default {
         font-style: normal;
         font-weight: 700;
         line-height: 1.1;
-        letter-spacing: 20px;
-        padding: 24px 47px;
+        padding: 24px 64px;
         margin: 0 auto;
         text-align: center;
         width: fit-content;
@@ -262,9 +261,8 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 30px; /* 100% */
-      letter-spacing: 9px;
       border-radius: 62px;
     }
     .discounts-btn:active {
