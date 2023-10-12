@@ -55,7 +55,7 @@
       <img
         data-src="https://static.cmereye.com/imgs/2023/10/20a796f241e7ad83.png"
         srcset="
-        https://static.cmereye.com/imgs/2023/10/b96ae46e6b26c3d4.png 768w,
+          https://static.cmereye.com/imgs/2023/10/b96ae46e6b26c3d4.png 768w,
           https://static.cmereye.com/imgs/2023/10/20a796f241e7ad83.png
         "
         src="https://static.cmereye.com/imgs/2023/10/20a796f241e7ad83.png"
@@ -247,6 +247,10 @@ export default {
         // padding: 0 35px;
         position: relative;
         & > div:nth-child(1) {
+          min-height: 58px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           & > img {
             width: 50%;
             margin: auto;
@@ -304,8 +308,8 @@ export default {
     }
     .activity-support {
       & > div:nth-child(1) {
-        color: #3B786C;
-        font-family: 'Noto Sans HK';
+        color: #3b786c;
+        font-family: "Noto Sans HK";
         font-size: 30px;
         font-style: normal;
         font-weight: 600;
