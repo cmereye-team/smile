@@ -172,7 +172,7 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     max-width: fit-content;
-    margin: auto;
+    // margin: auto;
   }
   .title {
     color: #6d6e71;
@@ -184,14 +184,16 @@ export default {
     letter-spacing: 2.1px;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     z-index: 10;
     & > div:nth-child(1) {
+      width: 22px;
       max-width: 22px;
       max-height: 21px;
       margin-right: 10px;
     }
     & > div:nth-child(2) {
-      min-width: 130px;
+      min-width: 100px;
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
@@ -213,14 +215,14 @@ export default {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.2px;
     line-height: 2;
     flex-direction: column;
     align-items: flex-start;
     width: fit-content;
     padding: 10px 0;
     display: flex;
-    min-width: 150px;
+    // min-width: 150px;
     & > a {
       position: relative;
     }

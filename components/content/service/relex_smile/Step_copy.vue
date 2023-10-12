@@ -41,7 +41,7 @@ export default {
   &-in{
     color: #4570B6;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 30px; /* 100% */
     letter-spacing: 7.5px;
     padding-bottom: 30px;

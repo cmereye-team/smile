@@ -83,7 +83,9 @@
             </li>
           </ul>
           <div class="new_header">
-            <a href="tel: +85260610511" target="_blank" class="new_about">預約服務</a>
+            <a href="tel: +85260610511" target="_blank" class="new_about"
+              >預約服務</a
+            >
             <div class="new_a_div">
               <a href=""><img src="@/asset/image/common/fbook.png" alt="" /></a>
               <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
@@ -195,7 +197,7 @@
         v-show="menuList"
         direction="ttb"
         :with-header="false"
-        size="60%"
+        size="65%"
         :modal="false"
         :wrapperClosable="true"
       >
@@ -214,11 +216,19 @@
                 class="nav_bar section hidden md:flex md:justify-between items-center"
               >
                 <div class="new_header">
-                  <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/08/88c40669a540c35c.png"
-                      alt="+85260610511"
-                    />
+                  <a href="tel: +85260610511" target="_blank" class="new_about"
+                    >預約服務</a
+                  >
+                  <div class="new_a_div">
+                    <a href=""
+                      ><img src="@/asset/image/common/fbook.png" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="@/asset/image/common/ins.png" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="@/asset/image/common/youtube.png" alt=""
+                    /></a>
                   </div>
                 </div>
                 <nuxt-link
@@ -257,7 +267,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/97fdbaefbeb84e3b.png"
+                      src="https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png"
                       alt=""
                     />
                   </div>
@@ -266,7 +276,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/a0f496310fe0a27d.png"
+                      src="https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png"
                       alt=""
                     />
                   </div>
@@ -275,7 +285,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/1370a57f2695de69.png"
+                      src="https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png"
                       alt=""
                     />
                   </div>
@@ -284,7 +294,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/fdd73f4b13f9769d.png"
+                      src="https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png"
                       alt=""
                     />
                   </div>
@@ -293,7 +303,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/45aaf2ec213e6ad6.png"
+                      src="https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png"
                       alt=""
                     />
                   </div>
@@ -302,7 +312,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/d82c6bcf4534cfff.png"
+                      src="https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png"
                       alt=""
                     />
                   </div>
@@ -311,7 +321,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/afc6cffac8f0f99f.png"
+                      src="https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png"
                       alt=""
                     />
                   </div>
@@ -320,7 +330,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/471b48c37f66cda3.png"
+                      src="https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png"
                       alt=""
                     />
                   </div>
@@ -329,7 +339,7 @@
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/08/c55d953491658b89.png"
+                      src="https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png"
                       alt=""
                     />
                   </div>
@@ -338,7 +348,7 @@
                 <!-- ⬇️ 方便样式布局 增加内容可刻删除 -->
                 <div style="opacity: 0"></div>
               </div>
-              <div>
+              <!-- <div>
                 <a href=""
                   ><img src="@/asset/image/common/fbook.png" alt=""
                 /></a>
@@ -346,7 +356,7 @@
                 <a href=""
                   ><img src="@/asset/image/common/youtube.png" alt=""
                 /></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -380,88 +390,61 @@
             />
           </div>
           <div>
-            <div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/f3ea64aa54bc98cb.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="groupList" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/844235e03d62a012.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="OrthopedicList" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/2d9505273f4129f4.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="diagnosisInstructionsList" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/f7cf9aa336bd09b6.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="faq" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/89b4f7b30d53ebe8.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="contactUs" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/d116e79aee23450b.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="ophthalmicConsultation" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/dbdaee641342c88f.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="reservationService" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/a0cc6ca85ae706c8.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="video" />
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/0c66b448f1429c1d.png"
-                    alt=""
-                  />
-                </div>
-                <DetailOption :group="share" />
-              </div>
+            <div class="mb_menu_style">
+              <DetailOption
+                :group="groupList"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'"
+              />
+
+              <DetailOption
+                :group="OrthopedicList"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'"
+              />
+
+              <DetailOption
+                :group="diagnosisInstructionsList"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'"
+              />
+
+              <DetailOption
+                :group="faq"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'"
+              />
+
+              <DetailOption
+                :group="contactUs"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png'"
+              />
+
+              <DetailOption
+                :group="ophthalmicConsultation"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'"
+              />
+
+              <DetailOption
+                :group="reservationService"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'"
+              />
+
+              <DetailOption
+                :group="video"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"
+              />
+
+              <DetailOption
+                :group="share"
+                :pcOrMobile="'mobile'"
+                :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'"
+              />
+              <div style="minWidth:140px"></div>
             </div>
           </div>
         </div>
@@ -805,31 +788,11 @@ export default {
       },
       ophthalmicConsultation: {
         main_nav: this.$t("home.headers.ophthalmicConsultation"),
-        link: "",
-        child_list: [
-          {
-            child_item: this.$t("home.headers.ophthalmicConsultationChild_1"),
-            link: "/ophthalmicInfo/shareVideos",
-          },
-          {
-            child_item: this.$t("home.headers.ophthalmicConsultationChild_2"),
-            link: "/ophthalmicInfo/mediaCov",
-          },
-        ],
+        link: "/ophthalmicInfo/mediaCov",
       },
       reservationService: {
-        main_nav: this.$t("home.headers.reservationService"),
-        link: "",
-        child_list: [
-          {
-            child_item: this.$t("home.headers.reservationServiceChild_1"),
-            link: "/eye-checkup",
-          },
-          {
-            child_item: this.$t("home.headers.reservationServiceChild_2"),
-            link: "/ophthalmicInfo/AppointForm",
-          },
-        ],
+        main_nav: this.$t("home.headers.feeConsultation"),
+        link: "/free",
       },
       video: {
         main_nav: "矯視資訊影片",
@@ -1493,36 +1456,40 @@ $active_gradient: #4570b6;
   }
 
   .mb_menu_list {
-    margin: 0 17px;
 
     & > div:nth-child(1) {
       margin: 12px 0;
+      margin: 0 17px;
     }
 
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 20px;
+        // padding-left: 20px;
+        justify-content: center;
+        align-items: flex-start;
 
         & > div {
           display: flex;
           align-items: flex-start;
           padding: 10px 0;
-          max-width: 42%;
+          justify-content: center;
+          // max-width: 42%;
+          flex: 1;
 
           & > div:nth-child(1) {
             min-width: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 10px;
+            // margin-right: 10px;
           }
         }
 
-        & > div:nth-child(odd) {
-          margin-right: 20px;
-        }
+        // & > div:nth-child(odd) {
+        //   margin-right: 20px;
+        // }
 
         a {
           -webkit-tap-highlight-color: transparent;
@@ -1694,6 +1661,7 @@ $active_gradient: #4570b6;
   .header_drawer {
     margin: 0 auto;
     max-width: 1280px;
+    padding: 30px 0;
   }
 
   .header_body {

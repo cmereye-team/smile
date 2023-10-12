@@ -145,7 +145,7 @@ export default {
   .title {
     color: #4570b6;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 30px; /* 100% */
     letter-spacing: 7.5px;
     text-align: center;

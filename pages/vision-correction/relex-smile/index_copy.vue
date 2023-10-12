@@ -257,7 +257,7 @@ export default {
         font-family: 'Yuanti TC';
         font-size: 17px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 180%; /* 30.6px */
         letter-spacing: 1.7px;
       } 
@@ -386,7 +386,7 @@ export default {
         font-family: 'Yuanti TC';
         font-size: 12px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 180%; /* 30.6px */
         letter-spacing: 1.7px;
       } 
@@ -464,7 +464,7 @@ export default {
           margin-right: 0;
         }
         img {
-          width: 25px;
+          width: 19px;
           margin-right: 0;
         }
         span {

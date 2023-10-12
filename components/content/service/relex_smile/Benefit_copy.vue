@@ -136,7 +136,7 @@ export default {
     .title{
       color: #4570B6;
       font-size: 30px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 30px; /* 100% */
       letter-spacing: 7.5px;
       text-align: center;
@@ -175,7 +175,7 @@ export default {
           p{
             color: #4570B6;
             font-size: 25px;
-            font-weight: 700;
+            font-weight: 500;
             line-height: 1.1; /* 80% */
             letter-spacing: 8.75px;
             // margin-top: 43px;

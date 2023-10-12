@@ -4,7 +4,7 @@
       <div class="xtra-in-title">
         <div>{{$t('service.relexSmile.xtra.h2')}}</div>
         <div>Comeal Collagen Cross-Linking</div>
-        <div>{{$t('service.relexSmile.xtra.p1')}}</div>
+        <div class="xtra-collagen">{{$t('service.relexSmile.xtra.p1')}}</div>
       </div>
       <div class="xtra-in-lists">
         <div class="listIn">
@@ -153,7 +153,7 @@ export default {
           margin-top: 20px;
           color: #6D6E71;
           font-size: 20px;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 20px; /* 100% */
           letter-spacing: 5px;
           text-align: center;

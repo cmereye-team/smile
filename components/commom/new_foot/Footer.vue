@@ -60,9 +60,22 @@
   </div>
   <div class="main_footer" v-else-if="screenWidth < 768">
     <div class="section flex justify-between">
-      <div class="mbMenu">
-        <div class="pathLink">
-            <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'" />
+      <div class="mb_footer_eng">
+        <div
+          class="logo_footer m-auto"
+          :style="{ minWidth: $i18n.locale == 'en' ? '250px' : '' }"
+        >
+          <nuxt-link :to="localePath('/')">
+            <img
+              class="foot_logo"
+              src="../../../asset/image/common/Logo.svg"
+              alt=""
+            />
+          </nuxt-link>
+        </div>
+        <div class="mbMenu">
+          <div class="pathLink">
+            <!-- <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'" />
             <DetailOption :group="OrthopedicList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'" />
             <DetailOption :group="diagnosisInstructionsList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'" />
             <DetailOption :group="faq"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'" />
@@ -70,21 +83,17 @@
             <DetailOption :group="ophthalmicConsultation"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'" />
             <DetailOption :group="reservationService" :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'" />
             <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"  />
-            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'" />
-          </div>
-        </div>
-        <div class="mb_footer_eng">
-          <div
-            class="logo_footer m-auto"
-            :style="{ minWidth: $i18n.locale == 'en' ? '250px' : '' }"
-          >
-            <nuxt-link :to="localePath('/')">
-              <img
-                class="foot_logo"
-                src="../../../asset/image/common/Logo.svg"
-                alt=""
-              />
-            </nuxt-link>
+            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'" /> -->
+            <DetailOption :group="groupList" />
+            <DetailOption :group="OrthopedicList" />
+            <DetailOption :group="diagnosisInstructionsList" />
+            <DetailOption :group="faq" />
+            <DetailOption :group="contactUs" />
+            <DetailOption :group="ophthalmicConsultation" />
+            <DetailOption :group="reservationService" />
+            <DetailOption :group="video" />
+            <DetailOption :group="share" />
+            <div></div>
           </div>
           <div class="flex justify-center items-center m-auto">
             <div class="iocn">
@@ -502,7 +511,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-bottom: 30px;
     align-items: flex-start;
@@ -510,7 +519,8 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50%;
+      // width: 50%;
+      flex: 1;
       margin-bottom: 15px;
       & > div:nth-child(1) {
         max-width: 22px;
@@ -533,12 +543,12 @@ export default {
     background: url("https://static.cmereye.com/imgs/2023/08/c005b62af9cd22c1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 23px 0;
+    padding: 23px 29%;
     position: relative;
-    width: 120%;
+    width: 150%;
     border-radius: 100% 100% 0 0;
-    &>div:nth-child(2) {
-      &>div:nth-child(2) {
+    & > div:nth-child(2) {
+      & > div:nth-child(2) {
         padding: 0 15px;
       }
     }
@@ -565,7 +575,7 @@ export default {
     }
   }
   .foot_logo {
-    margin: 23px  auto;
+    margin: 23px auto;
   }
   .footer-bottom {
     margin: auto;
