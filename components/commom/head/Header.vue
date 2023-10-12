@@ -250,7 +250,7 @@
           </button>
         </a>
       </div> -->
-      <div class="contact contact_icl-r">
+     <!-- <div class="contact contact_icl-r">
         <a :href="localePath('/icl-r')">
           <button class="link_more shadow-lg">
             <div class="flex items-center justify-evenly">
@@ -261,7 +261,7 @@
             </div>
           </button>
         </a>
-      </div>
+      </div> -->
       <div class="contact contact_divit">
         <a :href="localePath('/divit')">
           <button class="link_more shadow-lg">
