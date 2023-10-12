@@ -738,7 +738,7 @@ module.exports = {
       },
       problem5: {
         title: '为什么ICL植入式隐形眼镜会比SMILE微笑激光矫视及LASIK激光矫视贵呢?',
-        content: `我们中心使用的人工晶体均来自瑞士个体化订制，是国际眼科高科技优质产品，跟自动化程度较大的SMILE微笑激光矫视和LASIK激光矫力，ICL对医生的技术要求会更高。`
+        content: `我们中心使用的人工晶体均来自瑞士个体化订制，是国际眼科高科技优质产品，跟自动化程度较大的SMILE微笑激光矫视和LASIK激光矫视，ICL对医生的技术要求会更高。`
       }
     },
     fourProblem: {
