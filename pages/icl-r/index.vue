@@ -17,7 +17,7 @@
 <script>
 import Header from "@/components/commom/head/Header.vue";
 import Navbar from "@/components/commom/head/Navbar.vue";
-import Footer from "@/components/commom/foot/Footer.vue";
+import Footer from "@/components/commom/foot/Footer-Icl-R.vue";
 
 import MainBanner from "@/components/content/service/ICL-R/MainBanner.vue";
 import film from "@/components/content/service/ICL-R/film.vue";

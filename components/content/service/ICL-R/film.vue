@@ -52,7 +52,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 30px; /* 100% */
       letter-spacing: 9px;
     }
@@ -62,7 +62,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 20px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 30px; /* 150% */
       letter-spacing: 1px;
       margin-top: 76px;
