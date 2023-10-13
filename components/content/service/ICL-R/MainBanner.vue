@@ -76,12 +76,13 @@ export default {
   .banner {
     background: url('https://static.cmereye.com/imgs/2023/10/a628cbd5bae55fe9.png')
       no-repeat;
-    background-position: top;
+    // background-position: top;
     background-size: 114%;
     width: 100vw;
     margin: auto 0;
     margin-bottom: 11vw;
     padding-left: 25px;
+    height: 390px;
     /* background: no-repeat; */
   }
 }
