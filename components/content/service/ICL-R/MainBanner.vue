@@ -82,7 +82,7 @@ export default {
     margin: auto 0;
     margin-bottom: 11vw;
     padding-left: 25px;
-    height: 390px;
+    height: 390px !important;
     /* background: no-repeat; */
   }
 }
