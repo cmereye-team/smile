@@ -74,7 +74,7 @@ export default {
     }
   }
   .banner {
-    background: url('https://static.cmereye.com/imgs/2023/10/898b0a4378f93152.jpg')
+    background: url('https://static.cmereye.com/imgs/2023/10/a628cbd5bae55fe9.png')
       no-repeat;
     background-position: top;
     background-size: 114%;
@@ -88,7 +88,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/10/6117d244179fa10b.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2023/10/a2f514c07ee10289.png");
   }
   span{
     font-size: 14px;
