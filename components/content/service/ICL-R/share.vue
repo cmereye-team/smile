@@ -21,9 +21,9 @@
         <p class="pcShow"><span>名額有限</span>，記得握機會預約!</p>
       </div>
     </div>
-    <a href="/icl-event" class="mbShow discounts-btn">立&nbsp;即&nbsp;預&nbsp;約</a>
+    <a href="https://bit.ly/ICL-B01" class="mbShow discounts-btn">立&nbsp;即&nbsp;預&nbsp;約</a>
     <div class="pcShow discounts-contact">
-      <a href="/icl-event">
+      <a href="https://bit.ly/ICL-B01">
         <button class="link_more shadow-lg">
           <span></span>
           <span></span>
