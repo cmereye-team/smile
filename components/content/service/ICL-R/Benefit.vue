@@ -23,7 +23,7 @@
         </div>
         <div>
           <span>時間</span> <span class="mbShow">:</span>
-          <span>14：00－16：00</span>
+          <span>14:00－16:00</span>
         </div>
       </div>
       <div>
