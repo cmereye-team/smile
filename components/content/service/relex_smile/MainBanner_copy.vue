@@ -50,7 +50,7 @@
     </div>
     <div class="smile-banner-context">
       <div class="title">矯正原理</div>
-      <div class="context">{{ $t("service.relexSmile.mainBanner.span") }}</div>
+      <div class="context" v-html="$t('service.relexSmile.mainBanner.span')"></div>
     </div>
   </div>
 </template>

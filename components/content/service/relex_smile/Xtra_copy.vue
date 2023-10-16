@@ -165,14 +165,14 @@ export default {
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      max-width: 1280px;
+      max-width: 1380px;
       margin: 80px auto;
       .listIn{
         display: flex;
         flex-direction: column;
         align-items: center;
         flex: 1;
-        max-width: 420px;
+        max-width: 720px;
         &>div{
           &:nth-of-type(1){
             color: #FFF;
