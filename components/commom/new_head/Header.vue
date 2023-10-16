@@ -370,7 +370,7 @@
           <div class="header_body">
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/08/b1035ba58b188832.png"
+                src="https://static.cmereye.com/imgs/2023/10/224d72c8093ad89a.png"
                 alt=""
               />
             </div>
