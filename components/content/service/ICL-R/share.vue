@@ -15,7 +15,7 @@
           由於今次活動只招待已預<br class="mbShow" />約人士，<span
             class="mbShow"
             >名額有限</span
-          >，
+          ><span class="mbShow" style="color:#3b786c;">，</span>
         </p>
         <p class="mbShow">記得握機會預約!</p>
         <p class="pcShow"><span>名額有限</span>，記得握機會預約!</p>
