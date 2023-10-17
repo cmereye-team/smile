@@ -18,17 +18,22 @@
 </template>
 
 <script>
-import Header from "../components/commom/head/Header.vue";
-import Navbar from "../components/commom/head/Navbar.vue";
+// import Header from "../components/commom/head/Header.vue";
+// import Navbar from "../components/commom/head/Navbar.vue";
 import BannerSlider from "../components/content/home/BannerSlider.vue";
 import CorrectionService from "../components/content/home/CorrectionService.vue";
 import VedioSlider from "../components/content/home/VedioSlider.vue";
 import Reservation from "../components/content/home/Reservation.vue";
 import serve from "../components/content/home/serve.vue";
-import Footer from "../components/commom/foot/Footer.vue";
+// import Footer from "../components/commom/foot/Footer.vue";
 import CmerInfo from "../components/content/home/CmerInfo.vue";
 import aspiration from "../components/content/home/aspiration.vue";
 import footers from "@/components/commom/foot/footers.vue";
+
+
+import Header from "@/components/commom/new_head/Header.vue";
+import Navbar from "@/components/commom/new_head/Navbar.vue";
+import Footer from "@/components/commom/new_foot/Footer.vue";
 
 export default {
   components: {

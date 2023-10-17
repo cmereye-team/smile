@@ -83,7 +83,7 @@
             </li>
           </ul>
           <div class="new_header">
-            <a href="tel: +85260610511" target="_blank" class="new_about"
+            <a href="https://smile.hkcmereye.com/booking" target="_blank" class="new_about"
               >預約服務</a
             >
             <div class="new_a_div">

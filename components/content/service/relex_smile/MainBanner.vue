@@ -12,8 +12,7 @@
         </div>
       </template>
       <template v-slot:des>
-        <div class="pcShow">
-          {{$t('service.relexSmile.mainBanner.span')}}
+        <div class="pcShow" v-html="$t('service.relexSmile.mainBanner.span')">
         </div></template
       >
     </banner>
@@ -38,6 +37,9 @@ export default {
   span{
     letter-spacing: 1px;
     font-size: 14px;
+  }
+  .des_box {
+    width: 655px;
   }
 }
 @media screen and (max-width: 768px) {
