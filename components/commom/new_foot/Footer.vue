@@ -146,7 +146,7 @@
           </div>
           <div class="flex justify-center items-center m-auto">
             <div class="iocn">
-              <a href="">
+              <a href="https://www.facebook.com/CMER.SMILE">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
@@ -162,7 +162,7 @@
               </a>
             </div>
             <div class="iocn">
-              <a href="">
+              <a href="https://www.instagram.com/cmer_smile/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -186,7 +186,7 @@
               </a>
             </div>
             <div class="iocn">
-              <a href="">
+              <a href="https://www.youtube.com/@cmersmileeyecenter6303">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"

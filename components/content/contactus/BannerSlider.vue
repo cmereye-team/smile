@@ -33,6 +33,7 @@ export default {
   }
   .banner {
     background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_mb.avif") no-repeat;
+    margin-top: 24vw;
   }
 }
 </style>

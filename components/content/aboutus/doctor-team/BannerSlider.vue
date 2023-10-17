@@ -32,6 +32,7 @@ export default {
   }
   .banner {
     background: url("https://static.cmereye.com/imgs/2022/12/efa3ddacc9443355.png") no-repeat;
+    margin-top: 24vw;
   }
 }
 </style>

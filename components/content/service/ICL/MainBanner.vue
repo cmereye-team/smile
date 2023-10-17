@@ -83,6 +83,7 @@ export default {
     margin-bottom: 11vw;
     padding-left: 25px;
     /* background: no-repeat; */
+    margin-top: 24vw;
   }
 }
 

@@ -87,6 +87,7 @@ export default {
     margin: 0 auto;
     margin-bottom: 10vw;
     padding-left: 25px;
+    margin-top: 24vw;
   }
 }
 

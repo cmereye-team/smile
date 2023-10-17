@@ -216,10 +216,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@media screen and( max-width:768px) {
+  .banner {
+    margin-top: 24vw;
+  }
+}
 .banner {
   width: 100vw;
   overflow: hidden;
-  margin-top: 24vw;
 }
 
 .anim {

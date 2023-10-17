@@ -74,7 +74,7 @@ export default {
     }
   }
   .banner {
-    background: url('https://static.cmereye.com/imgs/2023/10/a628cbd5bae55fe9.png')
+    background: url('https://static.cmereye.com/imgs/2023/10/cecc6c79545afe0e.jpg')
       no-repeat;
     // background-position: top;
     // background-size: 114%;
@@ -90,8 +90,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/10/a2f514c07ee10289.png");
-
+    background-image: url("https://admin.hkcmereye.com/static/upload/image/20231017/1697533806115118.jpg");
   }
   span{
     font-size: 14px;

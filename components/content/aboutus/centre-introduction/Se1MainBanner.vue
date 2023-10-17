@@ -139,6 +139,7 @@ body .gradient_font {
     width: 100vw;
     margin: 0 auto;
     margin-bottom: 10vw;
+    margin-top: 24vw;
   }
   .banner {
     background: url("https://static.cmereye.com/imgs/2022/11/14b67f3baff1fe81.jpg")

@@ -94,6 +94,7 @@ export default {
     &.cnBgImg{
       background-image: url("https://static.cmereye.com/imgs/2023/05/9b71688220cc08a3.jpg");
     }
+    margin-top: 24vw;
   }
   
 }

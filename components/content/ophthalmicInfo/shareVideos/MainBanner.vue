@@ -36,6 +36,7 @@ export default {
     height: 100vw;
     margin: 0 auto;
     margin-bottom: 10vw;
+    margin-top: 24vw;
     
 }
 /deep/ h3{
