@@ -77,11 +77,12 @@ export default {
     background: url('https://static.cmereye.com/imgs/2023/10/a628cbd5bae55fe9.png')
       no-repeat;
     // background-position: top;
-    background-size: 114%;
-    width: 100vw;
-    margin: auto 0;
-    margin-bottom: 11vw;
-    padding-left: 25px;
+    // background-size: 114%;
+    // width: 100vw;
+    // margin: auto 0;
+    // margin-bottom: 11vw;
+    // padding-left: 25px;
+    margin-top: 24vw;
     height: 390px !important;
     /* background: no-repeat; */
   }
@@ -90,6 +91,7 @@ export default {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: url("https://static.cmereye.com/imgs/2023/10/a2f514c07ee10289.png");
+
   }
   span{
     font-size: 14px;

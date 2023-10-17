@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Header from "@/components/commom/head/Header.vue";
-import Navbar from "@/components/commom/head/Navbar.vue";
-import Footer from "@/components/commom/foot/Footer.vue";
+import Header from "@/components/commom/new_head/Header.vue";
+import Navbar from "@/components/commom/new_head/Navbar.vue";
+import Footer from "@/components/commom/new_foot/Footer.vue";
 import BannerSlider from "@/components/content/contactus/BannerSlider.vue";
 import ServeTable from "@/components/content/contactus/ServeTable.vue";
 import GoogleMap from "@/components/content/contactus/GoogleMap.vue";

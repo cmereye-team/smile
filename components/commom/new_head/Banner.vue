@@ -54,6 +54,7 @@ export default {
 @media screen and (min-width: 768px) {
   .section {
     height: 480px;
+    margin-top: 0;
     background-size: cover !important;
     background-repeat: no-repeat;
     padding-left: 164px;

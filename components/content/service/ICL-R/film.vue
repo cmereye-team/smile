@@ -4,9 +4,9 @@
     <div class="bg-title">活動簡介</div>
     <div class="bg-text">
       <p>
-        視力對生活和工作有多重要?正受高度近視、<br class="mbShow" />遠視或深度數散光困擾的你有認真思考過嗎?<br />
+        視力對生活和工作有多重要?<br />正受高度近視、遠視或深度數散光困擾的你有<br class="mbShow" />認真思考過嗎?<br />
       </p>
-      透過今次活動，各ICL植入式隱形眼鏡真實用家<br class="mbShow" />會以過來人身份分享整個歷程，讓你重新思考<br class="mbShow" />視力對生活和職業的重要性!
+      透過今次活動，ICL植入式隱形眼鏡真實用家<br class="mbShow" />——Serene 林宣妤及麥沛東，<br />會以過來人身份分享整個歷程，<br class="mbShow" />讓你重新思考視力對生活和職業的重要性!
     </div>
     <img class="mbShow" style="margin-top: -60px;" src="https://static.cmereye.com/imgs/2023/10/e2264d2d11f2efdd.png" alt="">
   </div>
@@ -102,9 +102,6 @@ export default {
       font-style: normal;
       font-weight: 500;
       line-height: 30px; /* 187.5% */
-      &> p {
-        margin-bottom: 30px;
-      }
     }
   }
 }

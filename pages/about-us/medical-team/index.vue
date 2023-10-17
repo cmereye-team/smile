@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Header from "@/components/commom/head/Header.vue";
-import Navbar from "@/components/commom/head/Navbar.vue";
-import Footer from "@/components/commom/foot/Footer.vue";
+import Header from "@/components/commom/new_head/Header.vue";
+import Navbar from "@/components/commom/new_head/Navbar.vue";
+import Footer from "@/components/commom/new_foot/Footer.vue";
 import BannerSlider from "@/components/content/aboutus/doctor-team/BannerSlider.vue";
 import bossInfo from "@/components/content/aboutus/doctor-team/BossInfo.vue";
 import DoctorInfo from "@/components/content/aboutus/doctor-team/DoctorInfo.vue";

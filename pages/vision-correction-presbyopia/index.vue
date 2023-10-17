@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import Header from "@/components/commom/head/Header.vue";
-import Navbar from "@/components/commom/head/Navbar.vue";
-import Footer from "@/components/commom/foot/Footer.vue";
+// import Header from "@/components/commom/head/Header.vue";
+// import Navbar from "@/components/commom/head/Navbar.vue";
+// import Footer from "@/components/commom/foot/Footer.vue";
 import footers from "@/components/commom/foot/footers.vue";
 
 import MainBanner from "@/components/content/service/CLEAR_Vision/MainBanner.vue";
@@ -25,6 +25,9 @@ import Benefit from "@/components/content/service/CLEAR_Vision/Benefit.vue";
 
 import suitable from "@/components/content/service/CLEAR_Vision/suitable.vue";
 
+import Header from "@/components/commom/new_head/Header.vue";
+import Navbar from "@/components/commom/new_head/Navbar.vue";
+import Footer from "@/components/commom/new_foot/Footer.vue";
 export default {
   components: {
     Header,

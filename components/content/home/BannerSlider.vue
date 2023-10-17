@@ -219,6 +219,7 @@ export default {
 .banner {
   width: 100vw;
   overflow: hidden;
+  margin-top: 24vw;
 }
 
 .anim {
