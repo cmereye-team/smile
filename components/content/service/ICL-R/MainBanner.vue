@@ -90,7 +90,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("https://admin.hkcmereye.com/static/upload/image/20231017/1697533806115118.jpg");
+    background-image: url("https://admin.hkcmereye.com/static/upload/image/20231018/1697612807975677.jpg");
   }
   span{
     font-size: 14px;

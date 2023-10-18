@@ -462,6 +462,9 @@
               />
             </div>
             <div>
+              <linkMenu />
+            </div>
+            <!-- <div>
               <div>
                 <div>
                   <div>
@@ -954,19 +957,8 @@
                   </div>
                   <DetailOption :group="share" />
                 </div>
-                <!-- ⬇️ 方便样式布局 增加内容可刻删除 -->
-                <div style="opacity: 0"></div>
               </div>
-              <!-- <div>
-                <a href=""
-                  ><img src="@/asset/image/common/fbook.png" alt=""
-                /></a>
-                <a href=""><img src="@/asset/image/common/ins.png" alt="" /></a>
-                <a href=""
-                  ><img src="@/asset/image/common/youtube.png" alt=""
-                /></a>
-              </div> -->
-            </div>
+            </div> -->
           </div>
         </div>
       </el-drawer>
@@ -1067,8 +1059,12 @@
               />
             </nuxt-link>
             <div>
-              <a href="https://www.facebook.com/CMER.SMILE"><img src="@/asset/image/common/fbook.png" alt="" /></a>
-              <a href="https://www.instagram.com/cmer_smile/"><img src="@/asset/image/common/ins.png" alt="" /></a>
+              <a href="https://www.facebook.com/CMER.SMILE"
+                ><img src="@/asset/image/common/fbook.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/cmer_smile/"
+                ><img src="@/asset/image/common/ins.png" alt=""
+              /></a>
               <a href="https://www.youtube.com/@cmersmileeyecenter6303"
                 ><img src="@/asset/image/common/youtube.png" alt=""
               /></a>
@@ -1143,6 +1139,7 @@
 </template>
 <script>
 import DetailOption from "@/components/commom/option/index.vue";
+import linkMenu from "@/components/commom/option/index-link.vue";
 // gsap plugins
 import gsap from "gsap";
 
@@ -1152,6 +1149,7 @@ export default {
   },
   components: {
     DetailOption,
+    linkMenu,
   },
   data() {
     return {
@@ -1959,7 +1957,7 @@ $active_gradient: #4570b6;
     height: 52px;
     background: #4570b6;
     border-radius: 43px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
   .menu_pc_close {
     margin-left: 10px;
@@ -2109,7 +2107,7 @@ $active_gradient: #4570b6;
       margin: 12px 0;
       margin: 0 17px;
       display: flex;
-      justify-content:center;
+      justify-content: center;
     }
 
     & > div:nth-child(2) {
@@ -2327,49 +2325,51 @@ $active_gradient: #4570b6;
       flex: 1;
       margin-right: 60px;
     }
-
     & > div:nth-child(2) {
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      & > div:nth-child(1) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        & > div {
-          min-width: 230px;
-          padding: 20px 0;
-          border-bottom: 1px solid #6d6e7180;
-          display: flex;
-          align-items: flex-start;
-
-          & > div:nth-child(1) {
-            margin-right: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 38px;
-          }
-        }
-
-        & > div:nth-child(odd) {
-          margin-right: 42px;
-        }
-      }
-
-      & > div:nth-child(2) {
-        display: flex;
-        align-items: center;
-        margin-top: 40px;
-
-        a:nth-child(2) {
-          margin: 0 24px;
-        }
-      }
     }
+    // & > div:nth-child(2) {
+    //   flex: 1;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+
+    //   & > div:nth-child(1) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+
+    //     & > div {
+    //       min-width: 230px;
+    //       padding: 20px 0;
+    //       border-bottom: 1px solid #6d6e7180;
+    //       display: flex;
+    //       align-items: flex-start;
+
+    //       & > div:nth-child(1) {
+    //         margin-right: 20px;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         min-width: 38px;
+    //       }
+    //     }
+
+    //     & > div:nth-child(odd) {
+    //       margin-right: 42px;
+    //     }
+    //   }
+
+    //   & > div:nth-child(2) {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-top: 40px;
+
+    //     a:nth-child(2) {
+    //       margin: 0 24px;
+    //     }
+    //   }
+    // }
   }
 }
 
