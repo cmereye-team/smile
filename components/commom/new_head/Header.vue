@@ -1339,15 +1339,15 @@ export default {
           },
           {
             child_item: "CMER CLEAR-Vision",
-            link: "/vision-correction/CLEAR_Vision",
+            link: "/vision-correction-presbyopia",
           },
           {
             child_item: this.$t("home.headers.orthopedicServicesChild_3"),
-            link: "/vision-correction/LASIK",
+            link: "/vision-correction-lasik",
           },
           {
             child_item: this.$t("home.headers.orthopedicServicesChild_4"),
-            link: "/vision-correction/ICL",
+            link: "/vision-correction-icl",
           },
         ],
       },
@@ -1954,7 +1954,13 @@ $active_gradient: #4570b6;
       }
     }
   }
-
+  .menu_pc:hover {
+    width: 52px;
+    height: 52px;
+    background: #4570b6;
+    border-radius: 43px;
+    transition: all .3s;
+  }
   .menu_pc_close {
     margin-left: 10px;
     width: 41px;
@@ -2102,9 +2108,13 @@ $active_gradient: #4570b6;
     & > div:nth-child(1) {
       margin: 12px 0;
       margin: 0 17px;
+      display: flex;
+      justify-content:center;
     }
 
     & > div:nth-child(2) {
+      width: 85%;
+      margin: auto;
       & > div:nth-child(1) {
         display: flex;
         flex-wrap: wrap;
