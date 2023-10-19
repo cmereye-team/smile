@@ -53,11 +53,11 @@
     </div>
     <div class="activity-banner">
       <img
-        data-src="https://static.cmereye.com/imgs/2023/10/470439f8e45d8777.png"
+        data-src="https://static.cmereye.com/imgs/2023/10/c840f99d925fbea6.png"
         srcset="
-        https://static.cmereye.com/imgs/2023/10/a4e6b2d198f2ae32.png 768w,
-          https://static.cmereye.com/imgs/2023/10/470439f8e45d8777.png"
-        src="https://static.cmereye.com/imgs/2023/10/470439f8e45d8777.png"
+        https://static.cmereye.com/imgs/2023/10/d8860a8c86c76dbe.png 768w,
+          https://static.cmereye.com/imgs/2023/10/c840f99d925fbea6.png"
+        src="https://static.cmereye.com/imgs/2023/10/c840f99d925fbea6.png"
         alt="星級家用"
       />
     </div>
