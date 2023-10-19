@@ -272,10 +272,10 @@ export default {
             child_item: "CMER CLEAR-Vision",
             link: "/vision-correction-presbyopia",
           },
-          {
-            child_item: this.$t("home.headers.orthopedicServicesChild_3"),
-            link: "/vision-correction-lasik",
-          },
+          // {
+          //   child_item: this.$t("home.headers.orthopedicServicesChild_3"),
+          //   link: "/vision-correction-lasik",
+          // },
           {
             child_item: this.$t("home.headers.orthopedicServicesChild_4"),
             link: "/vision-correction-icl",
