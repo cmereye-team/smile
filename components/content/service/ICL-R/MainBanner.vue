@@ -74,7 +74,7 @@ export default {
     }
   }
   .banner {
-    background: url('https://static.cmereye.com/imgs/2023/10/cecc6c79545afe0e.jpg')
+    background: url('https://admin.hkcmereye.com/static/upload/image/20231019/1697719206413755.jpg')
       no-repeat;
     // background-position: top;
     // background-size: 114%;
