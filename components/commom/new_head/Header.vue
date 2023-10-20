@@ -96,7 +96,7 @@
                   <div class="flex items-center justify-evenly">
                     <div class="text-left">
                       <h3 class="text-xs font-normal text-center discounts-h3">
-                        立即預約
+                        立&nbsp;即&nbsp;預&nbsp;約
                       </h3>
                     </div>
                   </div>
@@ -1194,7 +1194,7 @@ $active_gradient: #4570b6;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        letter-spacing: 6.75px;
+        //letter-spacing: 6.75px;
         padding: 10px 20px;
       }
       @keyframes ani {
