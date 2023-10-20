@@ -1176,7 +1176,7 @@ $active_gradient: #4570b6;
         display: inline-block;
         border-radius: 500px;
         overflow: hidden;
-        background: #76C8E2;
+        background: #43619B;
       }
 
       .link_more:hover {
@@ -1225,7 +1225,7 @@ $active_gradient: #4570b6;
 
       .link_more::before {
         content: "";
-        background: linear-gradient(193deg,  #43619B 0%, #43619B 100%);
+        background: linear-gradient(193deg,  #76C8E2 0%, #76C8E2 100%);
 
         width: 120%;
         left: -10%;
