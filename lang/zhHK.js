@@ -402,6 +402,7 @@ module.exports = {
     td1_2: 'CMER SMILE PRO限定優惠',
     td1_3: '享受無鏡生活限時優惠 ',
     td1_4: '由',
+    td1_5: '限時優惠 由即日起',
     td2: '術前檢查費用',
     span1: '*指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期',
     span2: '^完成矯視後可退回術前檢查費用',
@@ -1412,7 +1413,7 @@ module.exports = {
       },
       mainBanner: {
         p: 'SMILE微笑激光矯視',
-        span: `是突破性全新近視矯正技術，比傳統的LASIK激光矯視更安全、微創。 
+        span: `是突破性全新近視矯正技術，比傳統的LASIK激光矯視更安全、微創。
         <br class="PcShow" />本中心的SMILE微笑矯視使用CarlZeiss
             VisuMax激光最新3.0系統，<br class="PcShow" />
             原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，<br class="PcShow" />

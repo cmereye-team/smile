@@ -23,7 +23,7 @@
     </div>
     <a href="https://bit.ly/ICL-B01" class="mbShow discounts-btn">立&nbsp;即&nbsp;預&nbsp;約</a>
     <div class="pcShow discounts-contact">
-      <a href="https://bit.ly/ICL-B01">
+      <a href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICL-B01)%20%E5%B8%8C%E7%91%AAICL%E8%AC%9B%E5%BA%A7%E6%B4%BB%E5%8B%95" target="_blank">
         <button class="link_more shadow-lg">
           <span></span>
           <span></span>
@@ -32,7 +32,7 @@
           <div class="flex items-center justify-evenly">
             <div class="p-1 text-left">
               <h3 class="text-xs font-normal text-center discounts-h3">
-                立&nbsp;即&nbsp;預&nbsp;約
+                預&nbsp;約&nbsp;講&nbsp;座
               </h3>
               <!-- <p class="text-base text-center">{{ $t('home.headers.coupon') + $t('home.headers.preferential') }}</p> -->
             </div>
@@ -40,6 +40,7 @@
         </button>
       </a>
     </div>
+    <a class="detail-icl" href="/vision-correction-icl">詳細了解ICL>>></a>
   </div>
 </template>
 <script>
@@ -129,7 +130,7 @@ export default {
       }
     }
     .discounts-contact {
-      margin: 130px auto 310px;
+      margin: 130px auto 75px;
       letter-spacing: 0.1em;
       cursor: pointer;
       z-index: 999;
@@ -205,6 +206,21 @@ export default {
       }
     }
   }
+  .detail-icl {
+    color: #09C09C;
+    font-family: Noto Sans HK;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 66.667% */
+    letter-spacing: 11.25px;
+    margin: 75px auto 310px;
+  }
+  .detail-icl:hover {
+    color: #00d5b3;
+    transition: all 0.5s;
+    font-size: 48px;
+  }
 }
 @media screen and (max-width: 768px) {
   .pcShow {
@@ -212,6 +228,8 @@ export default {
   }
 
   .discounts {
+    margin-top: 56px;
+    margin-bottom: 26px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,8 +296,8 @@ export default {
       }
     }
     .discounts-btn {
-      margin-top: 85px;
-      margin-bottom: 150px;
+      margin-top: 56px;
+      margin-bottom: 26px;
       padding: 16px 41px;
       background: #09c09c;
       color: #fff;
@@ -293,6 +311,17 @@ export default {
     .discounts-btn:active {
       background: #11dbba;
     }
+  }
+
+  .detail-icl {
+    margin: 26px auto 56px;
+    color: #09C09C;
+    font-family: Noto Sans HK;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 176.471% */
+    letter-spacing: 4.25px;
   }
 }
 </style>
