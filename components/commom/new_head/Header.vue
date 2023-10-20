@@ -83,26 +83,26 @@
             </li>
           </ul>
           <div class="new_header">
-            <a :href="localePath('/booking')" target="_blank" class="new_about"
-              >預約服務</a
-            >
-<!--            <div class="pcShow discounts-contact">-->
-<!--              <a :href="localePath('/booking')" target="_blank">-->
-<!--                <button class="link_more shadow-lg">-->
-<!--                  <span></span>-->
-<!--                  <span></span>-->
-<!--                  <span></span>-->
-<!--                  <span></span>-->
-<!--                  <div class="flex items-center justify-evenly">-->
-<!--                    <div class="p-1 text-left">-->
-<!--                      <h3 class="text-xs font-normal text-center discounts-h3">-->
-<!--                        立即預約-->
-<!--                      </h3>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </button>-->
-<!--              </a>-->
-<!--            </div>-->
+<!--            <a :href="localePath('/booking')" target="_blank" class="new_about"-->
+<!--              >預約服務</a-->
+<!--            >-->
+            <div class="pcShow discounts-contact">
+              <a :href="localePath('/booking')" target="_blank">
+                <button class="link_more shadow-lg">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="flex items-center justify-evenly">
+                    <div class="text-left">
+                      <h3 class="text-xs font-normal text-center discounts-h3">
+                        立即預約
+                      </h3>
+                    </div>
+                  </div>
+                </button>
+              </a>
+            </div>
 
             <div class="new_a_div">
               <a href="https://www.facebook.com/CMER.SMILE">
@@ -1156,87 +1156,91 @@ $active_gradient: #4570b6;
     display: flex;
     align-items: center;
   }
-  .discounts-contact {
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    z-index: 999;
-    font-weight: 600;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .link_more {
-      outline: none;
+  .new_header {
+    .discounts-contact {
+      letter-spacing: 0.1em;
       cursor: pointer;
-      border: none;
-      margin: 0;
-      position: relative;
-      display: inline-block;
-      border-radius: 500px;
-      overflow: hidden;
-      background: #76C8E2;
-    }
+      z-index: 999;
+      font-weight: 600;
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    .link_more:hover {
-      animation: ani 8s linear infinite;
-      border: none;
-    }
-    .discounts-h3 {
-      text-align: center;
-      width: fit-content;
-      border-radius: 17px;
-      color: #fff;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 6.75px;
-      padding: 10px 20px;
-    }
-    @keyframes ani {
-      0% {
-        background-position: 0%;
+      .link_more {
+        outline: none;
+        cursor: pointer;
+        border: none;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+        border-radius: 500px;
+        overflow: hidden;
+        background: #76C8E2;
       }
 
-      100% {
-        background-position: 400%;
+      .link_more:hover {
+        animation: ani 8s linear infinite;
+        border: none;
       }
-    }
+      .discounts-h3 {
+        text-align: center;
+        width: fit-content;
+        border-radius: 17px;
+        color: #fff;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 6.75px;
+        padding: 10px 20px;
+      }
+      @keyframes ani {
+        0% {
+          background-position: 0%;
+        }
 
-    .link_more::before,
-    .link_more::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
+        100% {
+          background-position: 400%;
+        }
+      }
 
-    .link_more div {
-      position: relative;
-      z-index: 10;
-      transition: color 0.4s;
-    }
+      .link_more::before,
+      .link_more::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
 
-    .link_more::before {
-      content: "";
-      background: #09c09c;
+      .link_more div {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+      }
 
-      width: 120%;
-      left: -10%;
-      transform: skew(30deg);
-      transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-    }
+      .link_more::before {
+        content: "";
+        background: linear-gradient(193deg,  #43619B 0%, #43619B 100%);
 
-    .link_more:hover::before {
-      color: #09c09c;
-      transform: translate3d(100%, 0, 0);
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+      }
+
+      .link_more:hover::before {
+        color: #09c09c;
+        transform: translate3d(100%, 0, 0);
+      }
     }
   }
+
+
   .ll_box {
     margin-left: 26px;
     background: #4570b6;
