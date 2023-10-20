@@ -449,14 +449,14 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }}1.9.2023起</td>
+              <td colspan="4" id="blue">{{$t('chargeDetail.td1_5')}}</td>
             </tr>
             <tr>
               <td>
                 <span>$12,000*</span>
               </td>
               <td>
-                <span>$19,500*</span>
+                <span>$19,000*</span>
               </td>
             </tr>
             <tr>
