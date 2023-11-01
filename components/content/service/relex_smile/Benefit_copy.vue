@@ -1,28 +1,5 @@
 <template>
   <div class="benefit section">
-    <!-- <div class="flex justify-center md:mt-28 mt-10 page_container">
-      <h2>{{$t('service.relexSmile.benefit.h2')}}</h2>
-    </div>
-    <div class="benefit_content">
-      <ul
-        class="benefit_list flex flex-col items-start justify-start page_container"
-      >
-        <li v-for="(benefitItem, index) in benefitList" :key="index">
-          <img :src="benefitItem.index" alt="" class="index" />
-          <p>{{ benefitItem.des }}</p>
-        </li>
-      </ul>
-      <img
-        class="benefit_img benefit_eye"
-        src="https://static.cmereye.com/imgs/smile/images/service/relex_smile/benefit_eye.jpg"
-        alt=""
-      />
-      <img
-        class="benefit_img benefit_light"
-        src="https://static.cmereye.com/imgs/smile/images/service/relex_smile/benefit_light.jpg"
-        alt=""
-      />
-    </div> -->
     <div class="benefit-bg">
       <div class="benefit-t">
         <img src="https://static.cmereye.com/imgs/2023/08/223c37697c582ed6.jpg" alt="">
