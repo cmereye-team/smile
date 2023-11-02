@@ -3,7 +3,7 @@
     <div class="flex justify-center md:mt-28 mt-10">
       <div class="title-content" v-html="$t('service.icl.film.h2')"></div>
     </div>
-    <div class="flex justify-around flex-col md:flex-row mt-20">
+    <div class="icl-youtube-video flex justify-around flex-col md:flex-row mt-20">
       <iframe
         class="pcShow"
         width="500"
@@ -27,7 +27,7 @@
       <iframe
         class="mbShow"
         width="100%"
-        height="321"
+        height="230"
         src="https://www.youtube.com/embed/0-mlyxrBaus"
         :title="$t('service.icl.film.title1')"
         frameborder="0"
@@ -124,6 +124,9 @@ h2 {
     height: 0;
     border-top: 1px solid #dfdfdf;
     left: -15vw;
+  }
+  .icl-youtube-video {
+    margin-top: 30px;
   }
 }
 </style>

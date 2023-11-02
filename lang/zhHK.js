@@ -1319,12 +1319,12 @@ module.exports = {
         des8: `鏡片柔軟靈活 <br /> 易於植入`
       },
       step: {
-        h2: '植入式隱形眼鏡植入過程',
-        des1: `通過術前檢查後，醫生先在<br />客人眼睛上滴麻醉眼藥水。`,
-        des2: `在角膜製作一個約2毫米的 <br />小開口，將摺疊的晶體植入<br />眼球。`,
-        des3: `植入晶體後，醫生會調整晶<br />體的位置，確保在適宜的位<br />置再定位。`,
-        des4: `手術結束後，需按醫生指示 <br />滴眼藥水。一般矯視後第二<br />天已能恢復視力。`,
-        des5: `完成手術後，需按指示定期<br />覆診以追蹤視力。`,
+        h2: `植入式隱形眼鏡<br class="mbShow" />植入過程`,
+        des1: `通過術前檢查後，<br class="mbShow" />醫生先在<br class="pcShow" />客人眼睛<br class="mbShow" />上滴麻醉眼藥水。`,
+        des2: `在角膜製作一個約2<br class="mbShow" />毫米的 <br class="pcShow" />小開口，將摺<br class="mbShow" />疊的晶體植入<br class="pcShow" />眼球。`,
+        des3: `植入晶體後，醫生<br class="mbShow" />會調整晶<br class="pcShow" />體的位<br class="mbShow" />置，確保在適宜的<br class="mbShow" />位<br class="pcShow" />置再定位。`,
+        des4: `手術結束後，需按醫<br class="mbShow" />生指示 <br class="pcShow" />滴眼藥水。一<br class="mbShow" />般矯視後第二<br class="pcShow" />天已能<br class="mbShow" />恢復視力。`,
+        des5: `完成手術後，需按<br class="mbShow" />指示定期<br class="pcShow" />覆診以追<br class="mbShow" />蹤視力。`,
       },
       benefit: {
         h2: 'ICL植入式隱形眼鏡的好處',
@@ -1382,7 +1382,7 @@ module.exports = {
         span3: `熱愛運動/注<br />重儀表人士`,
         span4: `希望減低對眼鏡<br />或隱形眼鏡依賴的人士`,
         span5: `因佩戴隱形眼鏡導<br />致乾眼症人士`,
-        span6: `因角膜厚度偏薄而<br />不適合接受激光矯視人士`
+        span6: `因角膜厚度偏薄而<br />不適合接受激光矯視<br class="mbShow" />人士`
       }
     },
     lasik: {

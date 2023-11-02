@@ -1,16 +1,20 @@
 <template>
   <div class="step section page_container">
-    <div class="step-in">
-      {{$t('service.icl.step.h2')}}
-    </div>
-    <ul class="step_list step_list-one flex justify-between">
+    <div class="step-in" v-html="$t('service.icl.step.h2')"></div>
+    <ul class="pcShow step_list step_list-one flex justify-between">
       <li v-for="(stepItem, index) in stepList1" :key="index">
         <img :src="stepItem.src" alt="" />
         <div class="text" v-html="stepItem.des"></div>
       </li>
     </ul>
-    <ul class="step_list flex justify-between">
+    <ul class="pcShow step_list flex justify-between">
       <li v-for="(stepItem, index) in stepList" :key="index">
+        <img :src="stepItem.src" alt="" />
+        <div class="text" v-html="stepItem.des"></div>
+      </li>
+    </ul>
+    <ul class="mbShow icl-process-list">
+      <li v-for="(stepItem, index) in [...stepList1, ...stepList]" :key="index">
         <img :src="stepItem.src" alt="" />
         <div class="text" v-html="stepItem.des"></div>
       </li>
@@ -24,25 +28,25 @@ export default {
       stepList1: [
         {
           src: "https://static.cmereye.com/imgs/2023/10/82cda8d37241ea01.png",
-          des: this.$t('service.icl.step.des1'),
+          des: this.$t("service.icl.step.des1"),
         },
         {
           src: "https://static.cmereye.com/imgs/2023/10/f4e8010e0f012d44.png",
-          des: this.$t('service.icl.step.des2'),
+          des: this.$t("service.icl.step.des2"),
         },
       ],
       stepList: [
         {
           src: "https://static.cmereye.com/imgs/2023/10/83a8ffe937202478.png",
-          des: this.$t('service.icl.step.des1'),
+          des: this.$t("service.icl.step.des3"),
         },
         {
           src: "https://static.cmereye.com/imgs/2023/10/b202e5feefba01ba.png",
-          des: this.$t('service.icl.step.des2'),
+          des: this.$t("service.icl.step.des4"),
         },
         {
           src: "https://static.cmereye.com/imgs/2023/10/f6dc1e56bb938c10.png",
-          des:this.$t('service.icl.step.des3'),
+          des: this.$t("service.icl.step.des5"),
         },
       ],
     };
@@ -55,10 +59,10 @@ export default {
 .page_container {
   padding: 0;
 }
-.step{
+.step {
   margin-top: 85px;
-  &-in{
-    color: #4570B6;
+  &-in {
+    color: #4570b6;
     font-size: 30px;
     font-weight: 400;
     line-height: 30px; /* 100% */
@@ -66,9 +70,9 @@ export default {
     padding-bottom: 30px;
     position: relative;
     text-align: center;
-    &::after{
-      content: '';
-      background: #A6E1D6;
+    &::after {
+      content: "";
+      background: #a6e1d6;
       width: 39px;
       height: 5px;
       border-radius: 3px;
@@ -84,7 +88,7 @@ export default {
   max-width: 1280px;
   margin: 55px auto 0;
   .text {
-    color: #6D6E71;
+    color: #6d6e71;
     text-align: center;
     font-size: 20px;
     font-weight: 300;
@@ -94,7 +98,7 @@ export default {
     margin: 0 auto;
   }
   li {
-    img{
+    img {
       border-radius: 29px;
       margin-bottom: 26px;
     }
@@ -106,32 +110,40 @@ export default {
   margin-bottom: 60px;
 }
 @media screen and (max-width: 768px) {
-  .step{
-    margin-top: 45px;
-    width: auto;
-    padding: 0 30px;
-    &-in{
+  .step {
+    &-in {
+      color: #4570B6;
+      text-align: center;
+      font-family: Noto Sans HK;
       font-size: 20px;
-      line-height: 23.305px; /* 116.525% */
+      font-style: normal;
+      font-weight: 500;
+      line-height: 23.305px;
       letter-spacing: 5px;
-      padding-bottom: 21px;
     }
   }
-  .step_list {
-    flex-direction: column;
-    margin: 32px auto 0;
-    .text{
-      font-size: 15px;
-      line-height: 30px; /* 200% */
-      letter-spacing: 3.75px;
-      width: 100%;
-    }
-    li{
-      margin: auto;
-      margin-bottom: 30px;
-    }
-    li:last-child{
-      margin-bottom: 0;
+  .icl-process-list {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      width: 160px;
+      margin: 0 6px 30px;
+      img {
+        border-radius: 20px;
+      }
+      .text {
+        margin-top: 20px;
+        color: #6D6E71;
+        text-align: center;
+        font-family: Noto Sans HK;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 4.2px;
+      }
     }
   }
 }

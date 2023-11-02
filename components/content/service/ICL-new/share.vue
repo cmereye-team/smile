@@ -83,7 +83,7 @@
         </div>
       </div>
     </div>
-    <a href="#" class="mbShow">
+    <a href="#" class="mbShow" style="display: none">
       <button>
         <div class="flex btn-yuyue">
           <img
@@ -249,6 +249,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
+    &>div:nth-child(1) {
+      margin-bottom: 40px;
+    }
   }
 
   h2 {
@@ -294,6 +298,39 @@ h2 {
 
         color: #6d6e71;
       }
+    }
+  }
+  .title-content {
+    position: relative;
+    padding-bottom: 15px;
+    color: #4570B6;
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23.305px; /* 116.525% */
+    letter-spacing: 5px;
+    &::after {
+      content: "";
+      background: #a6e1d6;
+      width: 39px;
+      height: 5px;
+      border-radius: 3px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+  .share-img {
+    margin-bottom: 30px;
+  }
+  :deep(.swiper-wrapper) {
+    display: flex;
+    flex-direction: column;
+    &>div:nth-child(2) {
+      margin: 30px 0;
     }
   }
 }
