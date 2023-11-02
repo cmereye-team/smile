@@ -182,7 +182,7 @@ export default {
     border-radius: 44px;
     margin: 24px 30px;
     & > div:nth-child(2) {
-      max-width: 120px;
+      max-width: 123px;
       .title {
         font-size: 14px;
         line-height: 21.952px; /* 156.802% */
