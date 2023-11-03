@@ -360,7 +360,7 @@
         v-show="menuList"
         direction="ttb"
         :with-header="false"
-        size="60%"
+        size="65%"
         :modal="false"
         :wrapperClosable="true"
       >
@@ -1148,6 +1148,11 @@ $active_gradient: #4570b6;
 
 // pc
 @media (min-width: 768px) {
+  :deep(.el-drawer__body) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main_after .nuxt-link-active .mian_nav_text {
     color: #4570b6 !important;
   }
