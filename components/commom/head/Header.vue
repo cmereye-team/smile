@@ -746,6 +746,7 @@ $active_gradient: #4570b6;
 
   .section_header {
     display: flex;
+    margin: 0 auto;
   }
 
   .link_pc_more {
@@ -995,7 +996,7 @@ $active_gradient: #4570b6;
   .contact_icl-r {
     top: calc(66% - 290px) !important;
     right: 10.2%;
-    
+
     .link_more {
       width: 120px;
       height: 120px;

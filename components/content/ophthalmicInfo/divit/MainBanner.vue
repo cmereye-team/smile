@@ -39,7 +39,7 @@ export default {
     background-size: 100%;
     width: 100vw;
     height: 100vw;
-    margin: 0 auto;
+    margin: 24vw auto 11vw;
     margin-bottom: 10vw;
   }
   .banner_eng {
@@ -54,6 +54,9 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+  .main_banner {
+    margin-top: 130px;
+  }
   .banner {
     background-image: url("https://static.cmereye.com/imgs/2023/08/a5ffa7a66b536560.png");
     cursor: pointer;

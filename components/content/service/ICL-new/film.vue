@@ -1,6 +1,6 @@
 <template>
   <div class="page_container">
-    <div class="flex justify-center md:mt-28 mt-10">
+    <div class="film-top flex justify-center">
       <div class="title-content" v-html="$t('service.icl.film.h2')"></div>
     </div>
     <div class="icl-youtube-video flex justify-around flex-col md:flex-row mt-20">
@@ -64,6 +64,9 @@ h2 {
   color: #4570B6;
 }
 @media screen and (min-width: 768px) {
+  .film-top {
+    margin-top: 70px;
+  }
   .title-content {
     color: #4570b6;
     font-size: 30px;
@@ -86,6 +89,9 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
+  .film-top {
+    margin-top: 32px;
+  }
   .title-content {
     text-align: center;
     position: relative;

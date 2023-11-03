@@ -60,7 +60,7 @@ export default {
   padding: 0;
 }
 .step {
-  margin-top: 85px;
+  margin-top: 70px;
   &-in {
     color: #4570b6;
     font-size: 30px;
