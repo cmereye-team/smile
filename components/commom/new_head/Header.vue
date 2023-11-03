@@ -328,7 +328,26 @@
             </a>
           </div>
           <div>
-            <a :href="localePath('/consumption-voucher')" target="_blank">
+            <a :href="localePath('/divit')">
+              <div class="divit-pc">
+                <svg xmlns="http://www.w3.org/2000/svg" width="67" height="79" viewBox="0 0 67 79" fill="none">
+                  <g clip-path="url(#clip0_4326_2094)">
+                    <path d="M0.822289 45.5136V65.1909L22.9747 77.7719L66.1777 52.0672V26.527L22.9747 0.822266L0.822289 13.4033V33.5246" stroke="#4570B6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.822289 33.5247H22.2429V25.9761L42.4794 39.7412" stroke="#A6E1D6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.822289 45.5136H22.2429V53.0622C28.9856 48.6219 35.7366 44.1815 42.4794 39.7494" stroke="#A6E1D6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4326_2094">
+                      <rect width="67" height="78.5943" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div><span>了解<br /> Divit贏里數</span></div>
+            </a>
+          </div>
+          <div>
+            <a :href="localePath('/consumption-voucher')">
               <div>
                 <img
                   src="https://static.cmereye.com/imgs/2023/10/25ef70fdd54019c0.png"
@@ -1148,6 +1167,11 @@ $active_gradient: #4570b6;
 
 // pc
 @media (min-width: 768px) {
+  .divit-pc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   :deep(.el-drawer__body) {
     display: flex;
     flex-direction: column;
