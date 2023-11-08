@@ -40,7 +40,7 @@
           <!-- gsap   移动动画 end-->
           <ul
             class="nav md:flex md:justify-around grid"
-            :class="[$i18n.locale == 'en' ? 'gap-0 pl-8' : 'gap-8 pl-0']"
+            :class="[$i18n.locale == 'en' ? 'gap-0 pl-8' : 'gap-4 pl-0']"
           >
             <div class="menu-line"></div>
 
@@ -833,6 +833,11 @@ export default {
         //     },
         //   ],
         // },
+        {
+          main_nav: this.$t("home.headers.feeConsultation"),
+          link: "/free",
+          child_list: [],
+        },
         {
           main_nav: this.$t("home.headers.contactUs"),
           link: "/contact-us",
