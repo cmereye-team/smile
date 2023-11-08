@@ -1470,7 +1470,7 @@ $active_gradient: #4570b6;
 
   .sidebar_contact {
     position: fixed;
-    right: 9%;
+    right: 8%;
     letter-spacing: 0.1em;
     bottom: 16%;
     display: flex;
@@ -1495,7 +1495,7 @@ $active_gradient: #4570b6;
     }
 
     & > div:nth-child(even) {
-      padding: 60px 0;
+      padding: 30px 0;
     }
 
     & > div:last-child {
