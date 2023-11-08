@@ -35,7 +35,7 @@ export default {
         },
         {
           index: 'https://static.cmereye.com/imgs/2023/10/bc9ad07eb1783b27.png',
-          text: '減少乾眼情況',
+          text: '減少 <br /> 乾眼情況',
           des: this.$t('service.icl.benefit_new.des2'),
         },
         {
@@ -59,12 +59,12 @@ export default {
           des: this.$t('service.icl.benefit_new.des6'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/68873db7725e3cbf.png',
+          index: 'https://static.cmereye.com/imgs/2023/10/b5cdf3ffb2f8a069.png',
           text: '手術與恢<br />復皆快速',
           des: this.$t('service.icl.benefit_new.des7'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/b5cdf3ffb2f8a069.png',
+          index: 'https://static.cmereye.com/imgs/2023/10/68873db7725e3cbf.png',
           text: '柔軟服貼',
           des: this.$t('service.icl.benefit_new.des8'),
         },
@@ -248,15 +248,17 @@ export default {
       }
     }
     .img_style {
-      &>div:nth-child(1) {
+      &>div{
         width: 88px;
         height: 55px;
         display: flex;
         align-items: center;
         justify-content: center;
-        img {
-          width: 100%;
-          height: auto;
+        &>div:nth-child(1) {
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
@@ -291,7 +293,7 @@ export default {
               line-height: 20px; /* 111.111% */
               letter-spacing: 3.6px;
               margin-top: 20px;
-              min-height: auto;
+              min-height: 40px;
             }
           }
           &-b{
@@ -300,6 +302,72 @@ export default {
             letter-spacing: 3px;
             margin: 9px auto 0;
           }
+        }
+      }
+    }
+  }
+  .benefit-in-lists {
+    &>div:nth-child(1){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 86px;
+          height: auto;
+        }
+      }
+    }
+    &>div:nth-child(2){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 72px;
+          height: auto;
+        }
+      }
+    }
+    &>div:nth-child(3){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 64px;
+          height: auto;
+        }
+      }
+    }
+    &>div:nth-child(4){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 72px;
+          height: auto;
+        }
+      }
+    }
+    &>div:nth-child(5){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 74px;
+          height: auto;
+        }
+      }
+    }
+    &>div:nth-child(6){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 83px;
+          height: auto;
+        }
+      }
+    }
+    &>div:nth-child(7){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 71px;
+          height: auto;
+        }
+      }
+    }
+    &>div:nth-child(8){
+      &>div:nth-child(1) {
+        &>div:nth-child(1){
+          width: 81px;
+          height: auto;
         }
       }
     }
