@@ -211,7 +211,7 @@
           </div>
         </div>
         <!-- 右边悬浮按钮 -->
-        <div class="sidebar_contact">
+        <div class="sidebar_contact" :class="[isShowFloat === true ? 'sidebar_contact_width' : '']">
           <div>
             <a :href="localePath('/icl-event')">
               <div class="flex justify-center">
@@ -954,6 +954,7 @@ export default {
         link: "/video",
       },
       actIndex: 0,
+      isShowFloat: false,
     };
   },
   created() {
@@ -1008,7 +1009,16 @@ export default {
       }
       this.taginits();
     });
+    this.getScrollTop()
   },
+
+  // watch: {
+  //   isShowFloat:{
+  //     handler(val){
+  //       console.log(val,'P1030')
+  //     },
+  //   }
+  // },
   methods: {
     pointinit() {
       // mousemove ball
@@ -1100,6 +1110,20 @@ export default {
       gtag("js", new Date());
       gtag("config", "G-FN8KFBR9XM");
     },
+    getScrollTop (){
+      let  that = this
+      let timer
+      window.addEventListener("scroll", function(event) {
+        if (event.deltaY !== 0) {
+           clearTimeout(timer)
+          // 页面正在滚动
+          that.isShowFloat = true
+        }
+        timer = setTimeout(()=>{
+          that.isShowFloat = false
+        },3500)
+      }, { passive: true });
+    }
   },
 };
 </script>
@@ -1477,10 +1501,12 @@ $active_gradient: #4570b6;
     position: fixed;
     right: 8%;
     letter-spacing: 0.1em;
-    bottom: 16%;
+    top: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     & > div {
       a {
@@ -2021,6 +2047,46 @@ $active_gradient: #4570b6;
 
   .link_more {
     display: none;
+  }
+}
+
+// 区间 1440px 到 768px
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .sidebar_contact {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .1em;
+    position: fixed;
+    right: 0;
+    bottom: 40px;
+    top: auto;
+    padding: 20px 0;
+    border-radius: 25px 0 0 25px;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    height: 0px;
+    width: 0px;
+
+    & > div {
+      width: 100%;
+      height: auto;
+      background: rgba(255,255,255,0.9);
+    }
+    &>div:first-child{
+      padding-top: 20px;
+      border-radius: 25px 0 0 0;
+    }
+    &>div:last-child {
+      padding-bottom: 20px;
+      border-radius: 0 0 0 25px;
+    }
+    & > div:nth-child(even) {
+      padding: 24px 0;
+    }
+  }
+  .sidebar_contact_width {
+    width: 162px;
+    height: auto;
   }
 }
 </style>
