@@ -2064,6 +2064,7 @@ $active_gradient: #4570b6;
     border-radius: 25px 0 0 25px;
     justify-content: center;
     transition: all 0.3s ease-in-out;
+    transform: translateX(2vw) scale(0.7);
     height: 0px;
     width: 0px;
 
