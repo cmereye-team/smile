@@ -40,7 +40,7 @@
           <!-- gsap   移动动画 end-->
           <ul
             class="nav md:flex md:justify-around grid"
-            :class="[$i18n.locale == 'en' ? 'gap-0 pl-8' : 'gap-4 pl-0']"
+            :class="[$i18n.locale == 'en' ? 'gap-0 pl-8' : 'gap-6 pl-0']"
           >
             <div class="menu-line"></div>
 
@@ -1358,7 +1358,7 @@ $active_gradient: #4570b6;
     font-family: var(--font_family), sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     /* identical to box height, or 156% */
 
