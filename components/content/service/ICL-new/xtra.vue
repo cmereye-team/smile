@@ -573,6 +573,9 @@ export default {
       width: 171px;
       height: 171px;
       top: 5%;
+      &>div:nth-child(1) {
+        margin-top: -5px;
+      }
       & > div:nth-child(2) {
         color: #4570b6;
         text-align: center;
@@ -583,17 +586,22 @@ export default {
         line-height: 35px; /* 175% */
         letter-spacing: 5px;
         margin-top: -12px;
+        span {
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: 1.6px;
+        }
       }
     }
   }
   .xtra-in-lists {
     .lists-box {
       & > div {
-        width: 165px;
+        width: 42vw;
         margin: 36px 0 0 0;
         & > div:nth-child(1) {
-          width: 155px;
-          height: 155px;
+          width: 39.75vw;
+          height: 39.75vw;
           & > div:nth-child(1) {
             display: flex;
             align-items: center;

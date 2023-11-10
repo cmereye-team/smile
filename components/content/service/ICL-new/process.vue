@@ -128,7 +128,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     li {
-      width: 160px;
+      width: 41vw;
       margin: 0 6px 30px;
       img {
         border-radius: 20px;
@@ -142,7 +142,7 @@ export default {
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
-        letter-spacing: 3px;
+        letter-spacing: 2.7px;
       }
     }
   }
