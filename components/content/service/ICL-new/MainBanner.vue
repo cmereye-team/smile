@@ -221,7 +221,7 @@ export default {
     }
   }
   .smile-banner-context2 {
-    margin: 45px 30px 0;
+    margin: 45px 10px 0;
   }
   .pathLink {
     display: none;

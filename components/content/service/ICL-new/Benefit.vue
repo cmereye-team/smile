@@ -2,7 +2,7 @@
   <div class="benefit section">
     <div class="benefit-bg">
       <div class="benefit-t">
-        <span>為何要選擇 <br class="mbShow" />EVO Visian ICL</span>
+        <span>EVO Visian ICL鏡片 <br class="mbShow" />7大特色</span>
         <p>
           EVO Visian ICL以STAAR<br class="mbShow" />Surgical 專用的生物相容Collamer<br class="mbShow" />專利材質製成。<br class="pcShow" /> 這種材質含有自然存在<br class="mbShow" />於體內的膠原蛋白。EVO Visian ICL<br class="mbShow" /> Collamer 技術的獨<br class="pcShow" />特優勢使其成為<br class="mbShow" />視力矯正鏡片的理想材質，其中包含抗<br class="mbShow" />紫外線功能。
         </p>
@@ -29,26 +29,6 @@ export default {
     return {
       benefitList: [
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/683c3efc8f1a1816.png',
-          text: '生物相容性',
-          des: this.$t('service.icl.benefit_new.des1'),
-        },
-        {
-          index: 'https://static.cmereye.com/imgs/2023/10/bc9ad07eb1783b27.png',
-          text: '減少 <br /> 乾眼情況',
-          des: this.$t('service.icl.benefit_new.des2'),
-        },
-        {
-          index: 'https://static.cmereye.com/imgs/2023/10/5c0e935ae66f9ba5.png',
-          text: '可取出',
-          des: this.$t('service.icl.benefit_new.des3'),
-        },
-        {
-          index: 'https://static.cmereye.com/imgs/2023/10/5f64ef3498736cd2.png',
-          text: '夜間視力',
-          des: this.$t('service.icl.benefit_new.des4'),
-        },
-        {
           index: 'https://static.cmereye.com/imgs/2023/10/78d6a053fa22996a.png',
           text: '紫外線防護',
           des: this.$t('service.icl.benefit_new.des5'),
@@ -67,6 +47,26 @@ export default {
           index: 'https://static.cmereye.com/imgs/2023/10/68873db7725e3cbf.png',
           text: '柔軟服貼',
           des: this.$t('service.icl.benefit_new.des8'),
+        },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/683c3efc8f1a1816.png',
+          text: '生物相容性',
+          des: this.$t('service.icl.benefit_new.des1'),
+        },
+        // {
+        //   index: 'https://static.cmereye.com/imgs/2023/10/bc9ad07eb1783b27.png',
+        //   text: '減少 <br /> 乾眼情況',
+        //   des: this.$t('service.icl.benefit_new.des2'),
+        // },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/5c0e935ae66f9ba5.png',
+          text: '可取出',
+          des: this.$t('service.icl.benefit_new.des3'),
+        },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/5f64ef3498736cd2.png',
+          text: '夜間視力',
+          des: this.$t('service.icl.benefit_new.des4'),
         },
       ],
     };
@@ -205,6 +205,14 @@ export default {
       justify-content: center;
     }
   }
+  .benefit-in-lists {
+    &>div:nth-child(5) {
+      margin-left: 150px;
+    }
+    &>div:last-child {
+      margin-right: 150px;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .benefit{
@@ -307,6 +315,9 @@ export default {
     }
   }
   .benefit-in-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     &>div:nth-child(1){
       &>div:nth-child(1) {
         &>div:nth-child(1){
@@ -347,15 +358,15 @@ export default {
         }
       }
     }
+    // &>div:nth-child(6){
+    //   &>div:nth-child(1) {
+    //     &>div:nth-child(1){
+    //       width: 83px;
+    //       height: auto;
+    //     }
+    //   }
+    // }
     &>div:nth-child(6){
-      &>div:nth-child(1) {
-        &>div:nth-child(1){
-          width: 83px;
-          height: auto;
-        }
-      }
-    }
-    &>div:nth-child(7){
       &>div:nth-child(1) {
         &>div:nth-child(1){
           width: 71px;
@@ -363,7 +374,7 @@ export default {
         }
       }
     }
-    &>div:nth-child(8){
+    &>div:nth-child(7){
       &>div:nth-child(1) {
         &>div:nth-child(1){
           width: 81px;

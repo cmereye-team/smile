@@ -1292,6 +1292,24 @@ module.exports = {
       }
     },
     icl: {
+      benefit_new: {
+        des1: `ICL镜片由含 <br /> 有胶原蛋白材 <br />质制成，与眼 <br />球互相兼容`,
+        des2: `过程无须切削角 <br />膜，减低引发干 <br />眼症的机会`,
+        des3: `可按需要选择取 <br />出镜片`,
+        des4: `提供绝佳夜间 <br />视力`,
+        des5: `镜片有紫外线 <br />防护功能`,
+        des6: `ICL镜片既可永 <br />久存放眼内亦可 <br />还原`,
+        des7: `手术时间短，复原 <br />期短，手术过程仅 <br />需20-30分钟`,
+        des8: `镜片柔软灵活 <br /> 易于植入`
+      },
+      step: {
+        h2: `植入式隐形眼镜<br class="mbShow" />植入过程`,
+        des1: `进行手术前，<br class="mbShow" />医生先在<br class="pcShow" />客人眼睛<br class="mbShow" />上滴麻醉眼药水。`,
+        des2: `在角膜制作一个约3<br class="mbShow" />毫米的 <br class="pcShow" />小开口，将摺<br class="mbShow" />叠的晶体植入<br class="pcShow" />眼球。`,
+        des3: `植入晶体后，医生<br class="mbShow" />会调整晶<br class="pcShow" />体的位<br class="mbShow" />置，确保在适宜的<br class="mbShow" />位<br class="pcShow" />置再定位。`,
+        des4: `手术结束后，需按医<br class="mbShow" />生指示 <br class="pcShow" />滴眼药水。一<br class="mbShow" />般矫视后第二<br class="pcShow" />天已能<br class="mbShow" />恢复视力。`,
+        des5: `完成手术后，需按<br class="mbShow" />指示定期<br class="pcShow" />覆诊以追<br class="mbShow" />踪视力。`,
+      },
       benefit: {
         h2: 'ICL植入式隐形眼镜的好处',
         benefit1: {

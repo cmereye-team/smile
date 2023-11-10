@@ -11,7 +11,7 @@
         <div>ICL <br />植入式</div>
       </div>
       <div class="xtra-in-lists">
-        <div class="title-content">矯視的好處</div>
+        <div class="title-content">ICL矯視的好處</div>
         <div class="lists-box">
           <div>
             <div>
@@ -76,7 +76,8 @@
               </div>
               <div>術後復原快</div>
             </div>
-            <div>最高可矯正1800度<br />近視、1000度遠<br />視、600度散光</div>
+            
+            <div>手術以微創技術進<br />行，術後復原期短</div>
           </div>
           <div>
             <div>
@@ -151,7 +152,7 @@
               </div>
               <div>手術時間短</div>
             </div>
-            <div>在FDA研究中，<br />高達99%客人<br />滿意視力改善效果</div>
+            <div>最快20-30分鐘<br />內完成矯視</div>
           </div>
           <div>
             <div>
@@ -188,9 +189,7 @@
               </div>
               <div>爲生活<br class="mbShow" />帶來便利</div>
             </div>
-            <div>
-              微創，手術時間<br />短，復原期短<br />最快20-30分鐘<br />內完成矯視
-            </div>
+            <div>矯視後可減低對眼鏡<br />或隱形眼鏡的依賴</div>
           </div>
           <div>
             <div>
@@ -226,7 +225,7 @@
               </div>
               <div>物料安全</div>
             </div>
-            <div>不用切除角膜組織</div>
+            <div>2005年已通過美國<br />FDA認證</div>
           </div>
           <div>
             <div>
@@ -261,9 +260,9 @@
                   />
                 </svg>
               </div>
-              <div>預防白内障</div>
+              <div>不會導致乾眼症</div>
             </div>
-            <div>沒有乾眼症的副作</div>
+            <div>過程無須切削角膜<br />減低引發乾眼症的機會</div>
           </div>
           <div>
             <div>
@@ -413,7 +412,7 @@ export default {
         flex-wrap: wrap;
         justify-content: space-between;
         & > div {
-          width: 307px;
+          width: 340px;
           margin: 50px auto;
           & > div:nth-child(1) {
             width: 307px;
