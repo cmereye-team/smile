@@ -260,7 +260,7 @@
                   />
                 </svg>
               </div>
-              <div>不會導致<br class="mbShow" />乾眼症</div>
+              <div>不會導致<br />乾眼症</div>
             </div>
             <div>
               過程無須切削角<br class="mbShow" />膜
@@ -336,7 +336,7 @@
                   />
                 </svg>
               </div>
-              <div>度身訂造<br class="mbShow" />治療方案</div>
+              <div>度身訂造<br />治療方案</div>
             </div>
             <div>是一項可還原技術<br />客人可按需要選擇<br />取出ICL</div>
           </div>
@@ -441,8 +441,9 @@ export default {
               font-size: 25px;
               font-style: normal;
               font-weight: 700;
-              line-height: 20px; /* 80% */
-              letter-spacing: 6.25px;
+              line-height: 30px; /* 120% */
+              letter-spacing: 8.75px;
+              text-align: center;
             }
           }
           & > div:nth-child(2) {
