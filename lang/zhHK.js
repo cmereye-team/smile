@@ -1320,7 +1320,7 @@ module.exports = {
       },
       step: {
         h2: `植入式隱形眼鏡<br class="mbShow" />植入過程`,
-        des1: `進行手術前，<br class="mbShow" />醫生先在<br class="pcShow" />客人眼睛<br class="mbShow" />上滴麻醉眼藥水。`,
+        des1: `進行手術前，<br class="mbShow" />醫生先在客人<br class="pcShow" />眼睛<br class="mbShow" />上滴麻醉眼藥水。`,
         des2: `在角膜製作一個約3<br class="mbShow" />毫米的 <br class="pcShow" />小開口，將摺<br class="mbShow" />疊的晶體植入<br class="pcShow" />眼球。`,
         des3: `植入晶體後，醫生<br class="mbShow" />會調整晶<br class="pcShow" />體的位<br class="mbShow" />置，確保在適宜的<br class="mbShow" />位<br class="pcShow" />置再定位。`,
         des4: `手術結束後，需按醫<br class="mbShow" />生指示 <br class="pcShow" />滴眼藥水。一<br class="mbShow" />般矯視後第二<br class="pcShow" />天已能<br class="mbShow" />恢復視力。`,
@@ -1383,13 +1383,12 @@ module.exports = {
       },
       suitable: {
         h2: '合適對象',
-        span1: `高度近視、遠視或<br />深度數散光人士`,
+        span1: `高度近視、<br class="pcShow" />遠視或深度數散光人士`,
         span2: `投考紀律部隊/<br />航空業界人士`,
-        span3: `熱愛運動/注<br />重儀表人士`,
+        span3: `熱愛運動/<br />注重儀表人士`,
         span4: `希望減低對眼鏡<br />或隱形眼鏡依賴的人士`,
-        span5: `因佩戴隱形眼鏡導<br />致乾眼症人士`,
+        span5: `因佩戴隱形眼鏡<br />導致乾眼症人士`,
         span6: `因角膜厚度偏薄<br class="mbShow" />/角膜形狀欠佳<br class="pcShow" />而不適<br class="mbShow" />合接受激光矯視人士`
-                
       }
     },
     lasik: {
