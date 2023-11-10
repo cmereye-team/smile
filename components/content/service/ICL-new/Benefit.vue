@@ -271,7 +271,7 @@ export default {
     }
     &-in{
       width: calc(100% / 3);
-      padding: 0 30px;
+      padding: 0 15px;
       margin: 0 auto;
       .title{
         font-size: 20px;
