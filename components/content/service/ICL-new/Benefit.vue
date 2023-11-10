@@ -285,11 +285,11 @@ export default {
       }
       &-lists{
         .listIn{
-          width: 155px;
+          width: 39.75vw;
           margin-bottom: 23px;
           &-t{
-            height: 155px;
-            width: 155px;
+            height: 39.75vw;
+            width: 39.75vw;
             padding-top: 5px;
             justify-content: center;
             img{
