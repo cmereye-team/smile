@@ -216,9 +216,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@media screen and( max-width:768px) {
+@media screen and( max-width:950px) {
   .banner {
     margin-top: 24vw;
+  }
+}
+@media screen and( min-width:768px) and (max-width:950px) {
+  .banner {
+    margin-top: 10vw;
   }
 }
 .banner {
@@ -392,6 +397,23 @@ export default {
 .swiper-wrapper {
   img {
     width: 100%;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .main_banner {
+    .banner {
+      max-width: 720px;
+      margin-left: -60px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main_banner {
+     .banner {
+       max-width: 900px;
+       margin: 0 auto;
+       margin-top: 130px;
+     }
   }
 }
 </style>

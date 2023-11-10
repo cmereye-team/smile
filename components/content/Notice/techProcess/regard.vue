@@ -233,7 +233,7 @@ h2 {
       margin-bottom: 10vw;
       margin-top: 10vw;
     }
-    
+
   }
   .regard-think {
     display: flex;

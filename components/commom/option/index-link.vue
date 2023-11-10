@@ -762,7 +762,7 @@ export default {
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   .nav:hover {
     color: #4570b6;
   }

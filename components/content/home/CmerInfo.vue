@@ -8,7 +8,7 @@
           <span class="cmerInfoTagClick_1">{{$t('home.cmerInfo[0].span')}}</span>
         </div>
       </div>
-        
+
       <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/group-profile')">
         <img class="cmerInfoTagClick_2" src="https://static.cmereye.com/imgs/2023/04/69dd6f45ce4fdb12.jpg" />
         <div>
@@ -177,4 +177,21 @@ export default {
     }
   }
 }
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .cmerInfo-in {
+    max-width: 900px !important;
+    margin: 0 auto;
+    margin-left: -50px;
+  }
+  .cmerInfo-in-box {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .cmerInfo-in {
+    max-width: 900px !important;
+    margin: 0 auto;
+  }
+}
+
 </style>

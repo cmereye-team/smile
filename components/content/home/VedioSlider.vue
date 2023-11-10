@@ -68,7 +68,7 @@
 </template>
 <script>
 export default {
- 
+
   data() {
     return {
       screenWidth: "", //屏幕宽度
@@ -402,7 +402,7 @@ body .gradient_font {
     padding: 30px;
     width: 80%;
     right: 0;
-  
+
     height: 180vw;
     max-height: 180vw;
   }
@@ -430,10 +430,10 @@ body .gradient_font {
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-  
-    display: flex;  
+
+    display: flex;
     align-items: center;
-    
+
 
     background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
     -webkit-background-clip: text;
@@ -572,6 +572,45 @@ body .gradient_font {
         font-size: 20px;
       }
     }
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .page_container {
+    max-width: 900px !important;
+    margin: 0 auto;
+    transform: scale(0.8);
+    margin-left: -150px;
+    padding: 0;
+  }
+  .video_title {
+    font-size: 37px;
+  }
+  .booking {
+    font-size: 50px;
+  }
+  .bg_swiper {
+    margin-left: 100px !important;
+  }
+  .swiper_di {
+    width: 256px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .page_container {
+    max-width: 900px !important;
+    margin: 0 auto;
+  }
+  .video_title {
+    font-size: 37px;
+  }
+  .booking {
+    font-size: 50px;
+  }
+  .bg_swiper {
+    margin-left: 100px !important;
+  }
+  .swiper_di {
+    width: 256px;
   }
 }
 </style>

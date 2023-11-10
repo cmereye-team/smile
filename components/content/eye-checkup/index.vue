@@ -1,9 +1,9 @@
 <template>
  <div class="page_container">
 
- 
 
-    <div class="flex justify-center md:mt-14 mt-10">   
+
+    <div class="flex justify-center md:mt-14 mt-10">
       <h2>{{$t('eyeCheckup.h2')}}</h2>
     </div>
     <div class="jianc">
@@ -34,7 +34,7 @@
             {{$t('eyeCheckup.p15')}}<br />
             {{$t('eyeCheckup.p16')}}<br />
           </p>
-          
+
             <a
               class="gtm-yysqjj btn"
               href=" https://wa.me/85260610511"
@@ -43,7 +43,7 @@
                 ><button class="button_size_4">{{$t('eyeCheckup.button')}}</button></span
               ></a
             >
-          
+
         </div>
         <div class="box_img">
           <img
@@ -58,14 +58,14 @@
 
 <script>
 
- 
+
 export default {
   data() {
     return {};
   },
   created() {},
   methods: {},
- 
+
 };
 </script>
 

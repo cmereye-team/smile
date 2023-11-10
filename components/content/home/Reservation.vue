@@ -296,4 +296,27 @@ export default {
     }
   }
 }
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .Se3CentreInfor {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-left: -160px;
+  }
+  .inner_box {
+    img {
+      width: 120px !important;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .Se3CentreInfor {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .inner_box {
+    img {
+      width: 120px !important;
+    }
+  }
+}
 </style>

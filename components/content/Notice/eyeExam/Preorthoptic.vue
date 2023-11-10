@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="appropriate">
-            <div class="flex flex-col justify-center mt-1 mx-5" 
+            <div class="flex flex-col justify-center mt-1 mx-5"
             :class="[
               $i18n.locale == 'en' ? 'arrow-botom arrow-botom_eng': 'arrow-botom'
             ]"

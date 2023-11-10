@@ -33,7 +33,7 @@
       </div>
       <div class="serve-box serve-check">
         <img
-          :src="$i18n.locale == 'en' ? 'https://static.cmereye.com/imgs/2023/08/572656ab3d644c46.png':'https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg'" 
+          :src="$i18n.locale == 'en' ? 'https://static.cmereye.com/imgs/2023/08/572656ab3d644c46.png':'https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg'"
           alt=""
           class="serve-examineImg"
           @click="serveForm2"
@@ -261,6 +261,56 @@ h2 {
       letter-spacing: 0.1em;
 
       color: #ffffff;
+    }
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .page_container {
+    max-width: 900px !important;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 55px;
+    margin-left: -60px;
+  }
+  .booking {
+    font-size: 40px;
+  }
+  .serve_title {
+    font-size: 28px;
+  }
+  .serve-box {
+    width: 325px;
+    .serve_details{
+      font-size: 24px;
+      right: 12px;
+      bottom: 12px;
+    }
+  }
+  .serve-page {
+    &>div:nth-child(2) {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .page_container {
+    max-width: 900px !important;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 55px;
+  }
+  .booking {
+    font-size: 50px;
+  }
+  .serve_title {
+    font-size: 37px;
+  }
+  .serve-box {
+    .serve_details{
+      font-size: 24px;
+      right: 12px;
+      bottom: 12px;
     }
   }
 }

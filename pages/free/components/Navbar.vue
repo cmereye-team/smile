@@ -190,4 +190,4 @@ $active_gradient: linear-gradient(#81dbec, #4570b6);
 // mb
 @media (max-width: 768px) {
 }
-</style> 
+</style>

@@ -495,7 +495,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 //pc
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 950px) {
   .pc_icon {
     margin: 0 24px;
   }
@@ -579,7 +580,7 @@ export default {
     display: initial;
   }
 }
-
+// mb
 @media screen and (max-width: 768px) {
   .mbMenu {
     .iocn {
@@ -688,4 +689,149 @@ export default {
     transform: scale(0.9);
   }
 }
+
+// 补充样式分段
+@media screen and (min-width: 768px) and (max-width: 950px)   {
+  .mbMenu {
+    .iocn {
+      padding: 10px;
+    }
+  }
+
+  ::v-deep .el-collapse-item__content {
+    font-weight: 400;
+    font-size: 19px;
+    padding: 2vw;
+    background-color: #f3fcfe;
+    display: contents;
+
+    div {
+      background-color: #f3fdff !important;
+    }
+  }
+
+  .mbMenu {
+    padding-top: 20px;
+  }
+
+  .pathLink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // width: 50%;
+      flex: 1;
+      margin-bottom: 15px;
+      & > div:nth-child(1) {
+        max-width: 22px;
+        max-height: 21px;
+        margin-right: 10px;
+      }
+    }
+  }
+  ::v-deep .el-collapse-item__header {
+    font-weight: 400;
+    font-size: 19px;
+    height: 59px;
+    background-color: #f3fdff;
+    padding: 0 2vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+  .mb_footer_eng {
+    background: url("https://static.cmereye.com/imgs/2023/08/c005b62af9cd22c1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 23px 29%;
+    position: relative;
+    width: 150%;
+    border-radius: 100% 100% 0 0;
+    & > div:nth-child(2) {
+      & > div:nth-child(2) {
+        padding: 0 15px;
+      }
+    }
+  }
+  .main_footer {
+    // background: #f3fcfe;
+    // padding-top: 5.5vw;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .copyright {
+    margin-top: 3vw;
+    transform: scale(0.6);
+
+    span {
+      border-bottom: 1px solid;
+    }
+  }
+  .foot_logo {
+    margin: 23px auto;
+  }
+  .footer-bottom {
+    margin: auto;
+    background: #fff;
+    padding: 15px 0;
+    color: #6d6e71;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 1.2px;
+    transform: scale(0.9);
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .footer_new{
+    margin-left: -60px;
+    overflow: initial;
+  }
+  .main_footer{
+    width: 140%;
+    margin-left: -20%;
+    padding: 6.4vw 0 0;
+  }
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main_footer  {
+    div {
+      max-width: 900px;
+    }
+  }
+ .footer_new {
+   display: flex;
+   flex-direction: column;
+   overflow: initial;
+   margin: 0 auto;
+   align-items: center;
+ }
+  .main_footer{
+    width: 100%;
+    padding: 4.4vw 0 0;
+    min-height: 100%;
+    margin: 0 -10%;
+  }
+}
+
+
+
 </style>

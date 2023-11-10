@@ -2,7 +2,7 @@
 
   <div class="pages">
     <Header />
-    
+
     <BannerSlider />
     <CorrectionService />
     <CmerInfo />
@@ -13,7 +13,7 @@
 
     <Footer />
     <footers />
-  
+
   </div>
 </template>
 
@@ -71,4 +71,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .pages {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+</style>

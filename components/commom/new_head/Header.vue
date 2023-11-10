@@ -83,9 +83,9 @@
             </li>
           </ul>
           <div class="new_header">
-<!--            <a :href="localePath('/booking')" target="_blank" class="new_about"-->
-<!--              >預約服務</a-->
-<!--            >-->
+            <!--            <a :href="localePath('/booking')" target="_blank" class="new_about"-->
+            <!--              >預約服務</a-->
+            <!--            >-->
             <div class="pcShow discounts-contact">
               <a :href="localePath('/booking')" target="_blank">
                 <button class="link_more shadow-lg">
@@ -211,7 +211,10 @@
           </div>
         </div>
         <!-- 右边悬浮按钮 -->
-        <div class="sidebar_contact" :class="[isShowFloat === true ? 'sidebar_contact_width' : '']">
+        <div
+          class="sidebar_contact"
+          :class="[isShowFloat === true ? 'sidebar_contact_width' : '']"
+        >
           <div>
             <a :href="localePath('/icl-event')">
               <div class="flex justify-center">
@@ -330,20 +333,49 @@
           <div>
             <a :href="localePath('/divit')">
               <div class="divit-pc">
-                <svg xmlns="http://www.w3.org/2000/svg" width="67" height="79" viewBox="0 0 67 79" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="67"
+                  height="79"
+                  viewBox="0 0 67 79"
+                  fill="none"
+                >
                   <g clip-path="url(#clip0_4326_2094)">
-                    <path d="M0.822289 45.5136V65.1909L22.9747 77.7719L66.1777 52.0672V26.527L22.9747 0.822266L0.822289 13.4033V33.5246" stroke="#4570B6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M0.822289 33.5247H22.2429V25.9761L42.4794 39.7412" stroke="#A6E1D6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M0.822289 45.5136H22.2429V53.0622C28.9856 48.6219 35.7366 44.1815 42.4794 39.7494" stroke="#A6E1D6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path
+                      d="M0.822289 45.5136V65.1909L22.9747 77.7719L66.1777 52.0672V26.527L22.9747 0.822266L0.822289 13.4033V33.5246"
+                      stroke="#4570B6"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M0.822289 33.5247H22.2429V25.9761L42.4794 39.7412"
+                      stroke="#A6E1D6"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M0.822289 45.5136H22.2429V53.0622C28.9856 48.6219 35.7366 44.1815 42.4794 39.7494"
+                      stroke="#A6E1D6"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </g>
                   <defs>
                     <clipPath id="clip0_4326_2094">
-                      <rect width="67" height="78.5943" fill="white"/>
+                      <rect width="67" height="78.5943" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
               </div>
-              <div><span>了解<br /> Divit贏里數</span></div>
+              <div>
+                <span
+                  >了解<br />
+                  Divit贏里數</span
+                >
+              </div>
             </a>
           </div>
           <div>
@@ -1009,7 +1041,7 @@ export default {
       }
       this.taginits();
     });
-    this.getScrollTop()
+    this.getScrollTop();
   },
 
   // watch: {
@@ -1110,20 +1142,24 @@ export default {
       gtag("js", new Date());
       gtag("config", "G-FN8KFBR9XM");
     },
-    getScrollTop (){
-      let  that = this
-      let timer
-      window.addEventListener("scroll", function(event) {
-        if (event.deltaY !== 0) {
-           clearTimeout(timer)
-          // 页面正在滚动
-          that.isShowFloat = true
-        }
-        timer = setTimeout(()=>{
-          that.isShowFloat = false
-        },3500)
-      }, { passive: true });
-    }
+    getScrollTop() {
+      let that = this;
+      let timer;
+      window.addEventListener(
+        "scroll",
+        function (event) {
+          if (event.deltaY !== 0) {
+            clearTimeout(timer);
+            // 页面正在滚动
+            that.isShowFloat = true;
+          }
+          timer = setTimeout(() => {
+            that.isShowFloat = false;
+          }, 3500);
+        },
+        { passive: true }
+      );
+    },
   },
 };
 </script>
@@ -1195,7 +1231,7 @@ $active_gradient: #4570b6;
 }
 
 // pc
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .divit-pc {
     display: flex;
     align-items: center;
@@ -1234,7 +1270,7 @@ $active_gradient: #4570b6;
         display: inline-block;
         border-radius: 500px;
         overflow: hidden;
-        background: #43619B;
+        background: #43619b;
       }
 
       .link_more:hover {
@@ -1283,7 +1319,7 @@ $active_gradient: #4570b6;
 
       .link_more::before {
         content: "";
-        background: linear-gradient(193deg,  #76C8E2 0%, #76C8E2 100%);
+        background: linear-gradient(193deg, #76c8e2 0%, #76c8e2 100%);
 
         width: 120%;
         left: -10%;
@@ -1297,7 +1333,6 @@ $active_gradient: #4570b6;
       }
     }
   }
-
 
   .ll_box {
     margin-left: 26px;
@@ -1684,7 +1719,7 @@ $active_gradient: #4570b6;
 }
 
 // mb
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .mb_menu_style {
     margin-top: 20px;
   }
@@ -1937,147 +1972,390 @@ $active_gradient: #4570b6;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 950px) {
   .header {
-    // margin: 20px auto;
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-    align-content: center;
-
-    .right {
-      .social_list {
-        margin-right: 130px;
-        position: relative;
-
-        &::before,
-        &::after {
-          width: 100px;
-          height: 0;
-        }
-
-        &::before {
-          left: -130px;
-          top: 10px;
-        }
-
-        &::after {
-          right: -130px;
-          top: 10px;
-        }
-
-        img {
-          width: 1.5vw;
-        }
-      }
-    }
-  }
-
-  .header_drawer {
-    margin: 0 auto;
-    max-width: 1280px;
-    padding: 30px 0 !important;
-  }
-
-  .header_body {
-    display: flex;
-    max-width: 1280px;
-    margin: auto;
-    margin-top: 114px;
-    justify-content: space-between;
-
-    & > div:nth-child(1) {
-      flex: 1;
-      margin-right: 60px;
-    }
-    & > div:nth-child(2) {
-      flex: 1;
-    }
-    // & > div:nth-child(2) {
-    //   flex: 1;
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-
-    //   & > div:nth-child(1) {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-
-    //     & > div {
-    //       min-width: 230px;
-    //       padding: 20px 0;
-    //       border-bottom: 1px solid #6d6e7180;
-    //       display: flex;
-    //       align-items: flex-start;
-
-    //       & > div:nth-child(1) {
-    //         margin-right: 20px;
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //         min-width: 38px;
-    //       }
-    //     }
-
-    //     & > div:nth-child(odd) {
-    //       margin-right: 42px;
-    //     }
-    //   }
-
-    //   & > div:nth-child(2) {
-    //     display: flex;
-    //     align-items: center;
-    //     margin-top: 40px;
-
-    //     a:nth-child(2) {
-    //       margin: 0 24px;
-    //     }
-    //   }
-    // }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  // 移动端
-  .header {
-    min-height: 18vw;
-    margin: 3vw !important;
+    min-height: 10vw;
+    margin: 0 3vw !important;
+    width: 100%;
   }
 
   .link_more {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .mb_menu_style {
+    margin-top: 20px;
+  }
+  .foot_logo {
+    max-width: 139px;
+  }
+  .mb_menu {
+    display: flex;
+    align-items: center;
 
-// 区间 1440px 到 768px
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+    & > div:nth-child(2) {
+      width: 41px;
+      height: 41px;
+      background: #4570b6;
+      border-radius: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & > i {
+        display: inline-block;
+        width: 55%;
+        height: 3px;
+        background: #fff;
+        border-radius: 3px;
+      }
+
+      & > i:nth-child(2) {
+        margin: 5px 0;
+      }
+    }
+  }
+  :deep(.el-drawer) {
+    background: palegoldenrod;
+  }
+  :deep(.el-drawer)::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .mb_menu_close {
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+
+      & > div:nth-child(2) {
+        width: 41px;
+        height: 41px;
+        background: #4570b6;
+        border-radius: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > i {
+          display: inline-block;
+          width: 55%;
+          height: 3px;
+          background: #fff;
+          border-radius: 3px;
+          position: relative;
+        }
+
+        & > i:nth-child(1) {
+          transform: rotate(45deg);
+          top: 1.5px;
+        }
+
+        & > i:nth-child(2) {
+          transform: rotate(-45deg);
+          top: -1.5px;
+        }
+      }
+    }
+  }
+
+  .mb_menu_list {
+    & > div:nth-child(1) {
+      margin: 12px 0;
+      margin: 0 17px;
+      display: flex;
+      justify-content: center;
+    }
+
+    & > div:nth-child(2) {
+      width: 85%;
+      margin: auto;
+      & > div:nth-child(1) {
+        display: flex;
+        flex-wrap: wrap;
+        // padding-left: 20px;
+        justify-content: center;
+        align-items: flex-start;
+
+        & > div {
+          display: flex;
+          align-items: flex-start;
+          padding: 10px 0;
+          justify-content: center;
+          // max-width: 42%;
+          flex: 1;
+
+          & > div:nth-child(1) {
+            min-width: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // margin-right: 10px;
+          }
+        }
+
+        // & > div:nth-child(odd) {
+        //   margin-right: 20px;
+        // }
+
+        a {
+          -webkit-tap-highlight-color: transparent;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > a:nth-child(2) {
+          margin: 0 24px;
+        }
+      }
+    }
+  }
+
+  .mb_menu_footer {
+    margin-bottom: 64px;
+
+    & > div:nth-child(1) {
+      padding: 25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url("https://static.cmereye.com/imgs/2023/08/d6f27536cde86418.png");
+      background-size: 100%, 100%;
+      background-repeat: no-repeat;
+      & > div:nth-child(2) {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        & > a:nth-child(2) {
+          margin: 0 12px;
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      color: #6d6e71;
+      text-align: center;
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 222.222% */
+      letter-spacing: 0.9px;
+    }
+  }
+
+  .section_header {
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .ball {
+    display: none;
+  }
+
   .sidebar_contact {
+    display: none;
+  }
+
+  .el-menu-vertical-demo .el-menu-item a {
+    display: block !important;
+  }
+
+  .link_more {
+    display: none;
+  }
+
+  .menu_pc {
+    display: none;
+  }
+
+  .drawers {
+    display: none !important;
+  }
+}
+
+// 区间 900px 到 1024px
+// 内容靠左边     浮动靠右边
+@media (min-width: 950px) and (max-width: 1024px) {
+  .section_header {
+    max-width: 900px;
+    margin: 0 auto 0 0;
+    padding: 0 20px;
+  }
+  .nav {
+    & > li:nth-child(2),
+    & > li:nth-child(3) {
+      width: 45%;
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    flex-wrap: wrap;
+    & > .nav_item:hover {
+      .child_nav {
+        z-index: 9;
+      }
+    }
+  }
+  .gap-6 {
+    gap: 0.2rem;
+  }
+  .mian_nav_text {
+    font-size: 12px;
+  }
+  .menu_pc {
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+  }
+  .sidebar_contact {
+    border-radius: 25px 0 0 25px;
+    bottom: 0;
+    display: block;
+    letter-spacing: 0.1em;
+    transform: translate(1vw,-50%) scale(0.6);
+    top: 50%;
+    right: 0;
+  }
+  .mian_nav_text {
+    font-size: 14px;
+  }
+  .header_body {
+    display: flex;
+    padding: 20px 0;
+    &>div{
+      flex: 1;
+      padding: 0 10px;
+    }
+  }
+  .link-menu {
+    &>div {
+      padding: 0 5px;
+      .title {
+        min-height: 80px;
+      }
+      &> a {
+        min-height: 80px;
+      }
+    }
+  }
+}
+// 区间 1440px 到 900px
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .header_body {
+    display: flex;
+    padding: 20px 0;
+    &>div{
+      flex: 1;
+      padding: 0 10px;
+    }
+  }
+  .link-menu {
+    &>div {
+      padding: 0 5px;
+      .title {
+        min-height: 80px;
+      }
+      &> a {
+        min-height: 80px;
+      }
+    }
+  }
+  .section_header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .nav {
+    & > li:nth-child(2),
+    & > li:nth-child(3) {
+      width: 45%;
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    flex-wrap: wrap;
+    & > .nav_item:hover {
+      .child_nav {
+        z-index: 9;
+      }
+    }
+  }
+  .gap-6 {
+    gap: 0.3rem;
+  }
+  .new_header {
+    & > div:nth-child(1) {
+      padding: 0 5px;
+    }
+    a {
+      padding: 0 5px;
+    }
+  }
+  .menu_pc {
+    min-width: 38px;
+    min-height: 38px;
+    width: 38px;
+    height: 38px;
+  }
+  .sidebar_contact {
+    border-radius: 25px 0 0 25px;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    letter-spacing: .1em;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    padding: 20px 0;
     position: fixed;
     right: 0;
-    bottom: 40px;
-    top: auto;
-    padding: 20px 0;
-    border-radius: 25px 0 0 25px;
-    justify-content: center;
+    top: 50%;
+    transform: translate(0vw, -50%) scale(0.7);
     transition: all 0.3s ease-in-out;
-    transform: translateX(2vw) scale(0.7);
-    height: 0px;
-    width: 0px;
+    width: 6.25vw;
+    height: auto;
 
     & > div {
       width: 100%;
       height: auto;
-      background: rgba(255,255,255,0.9);
+      background: rgba(255, 255, 255, 0.9);
+      a {
+        font-size: 1.05vw;
+        .divit-pc {
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
     }
-    &>div:first-child{
+    & > div:first-child {
       padding-top: 20px;
       border-radius: 25px 0 0 0;
     }
-    &>div:last-child {
+    & > div:last-child {
       padding-bottom: 20px;
       border-radius: 0 0 0 25px;
     }
@@ -2085,8 +2363,49 @@ $active_gradient: #4570b6;
       padding: 24px 0;
     }
   }
-  .sidebar_contact_width {
-    width: 162px;
+  //.sidebar_contact_width {
+  //  width: 162px;
+  //  height: auto;
+  //}
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .header_body {
+    display: flex;
+    padding: 30px 0;
+    &>div{
+      flex: 1;
+      padding: 0 10px;
+    }
+  }
+  .link-menu {
+    &>div {
+      padding: 0 5px;
+      .title {
+        min-height: 80px;
+      }
+      &> a {
+        min-height: 80px;
+      }
+    }
+  }
+  .flex-between {
+    padding: 0 50px;
+  }
+  .sidebar_contact {
+    border-radius: 25px 0 0 25px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    padding: 20px 0;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%) scale(0.85);
+    transition: all 0.3s ease-in-out;
+    width: 5.8vw;
     height: auto;
   }
 }

@@ -178,7 +178,132 @@ export default {
 </script>
 <style lang="scss" scoped>
 //mb
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
+  .foot {
+    width: 100%;
+    display: flex;
+    height: 102px;
+    background: #4570b6;
+    justify-content: center;
+    align-items: center;
+    .box {
+      height: 62%;
+      width: 95px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-right: 0.5px solid #d9eaed;
+      img {
+        width: 28px;
+      }
+      p {
+        font-family: var(--font_family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #d9eaed;
+      }
+    }
+    .box:nth-child(4) {
+      border: 0;
+    }
+  }
+  .face-primary {
+    .what {
+      width: 6vw;
+    }
+  }
+  .footerBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    padding: 0;
+    width: 100vw;
+    // overflow-y: hidden;
+  }
+  a {
+    margin: 0;
+    padding: 0 !important;
+  }
+  .face-button1 {
+    width: 50%;
+    line-height: 56px;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin: 0 !important;
+    background-color: #57b2f3;
+    border-radius: 18px 18px 0 0;
+  }
+  .face-button {
+    width: 50%;
+    line-height: 56px;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    float: left;
+    margin: 0 !important;
+    background-color: #9bd0f5;
+    color: #fff;
+    border-radius: 18px 18px 0 0;
+  }
+  .footer-coupon{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 220px;
+    right: 15px;
+    background: #4570B6;
+    z-index: 9990;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    div{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 25px;
+        // height: 25px;
+      }
+      span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color:#fff;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 17px;
+      }
+    }
+
+  }
+  .footer_coupon_mb{
+    background: #98CEC3;
+    top: -100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 950px)   {
   .foot {
     width: 100%;
     display: flex;

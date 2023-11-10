@@ -349,4 +349,73 @@ export default {
 
   }
 }
+
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .section {
+    max-width: 900px !important;
+    margin: 0 auto;
+    margin-left: -150px;
+    transform: scale(0.8);
+  }
+  .smileSerItemBox {
+    width: 20%;
+    padding: 30px 0 30px 30px;
+    overflow: initial;
+    &>div:nth-child(1) {
+      h3 {
+        font-size: 24px;
+        line-height: 35px;
+        top: -20px;
+        left: -25px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .smileSerItem {
+      .morelink {
+        bottom: -0.5vw;
+        right: -1vw;
+      }
+      .morelink_img {
+        bottom: -10px;
+        right: -1.5vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .section {
+    max-width: 900px !important;
+    margin: 0 auto;
+  }
+  .smileSerItemBox {
+    width: 20%;
+    padding: 30px 0 30px 30px;
+    overflow: initial;
+    &>div:nth-child(1) {
+      h3 {
+        font-size: 24px;
+        line-height: 35px;
+        top: -20px;
+        left: -25px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .smileSerItem {
+      .morelink {
+        bottom: -0.5vw;
+        right: -1vw;
+      }
+      .morelink_img {
+        bottom: -10px;
+        right: -1.5vw;
+      }
+    }
+  }
+}
 </style>

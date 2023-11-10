@@ -20,16 +20,16 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .gradient_title_bg {
     display: inline-block;
     background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
     color: #ffffff;
   }
-  h2 {  
+  h2 {
     text-align: center;
     border-left: 2px solid #dfdfdf;
-    border-right: 2px solid #dfdfdf; 
+    border-right: 2px solid #dfdfdf;
     position: relative;
     display: flex;
     align-items: center;
@@ -47,17 +47,17 @@ body {
       border-top: 2px solid #dfdfdf;
     }
   }
-}  
-      
+}
+
 // pc端
-@media (min-width: 768px) {
+@media (min-width: 950px) {
 body {font-family: var(--font_family), sans-serif !important;min-width: 1200px;}
 caption {font-family:  var(--font_family), sans-serif !important;}
 h3 {font-family:  var(--font_family), sans-serif !important;}
 div {font-family:  var(--font_family), sans-serif !important;}
 a {font-family:  var(--font_family), sans-serif !important;}
 td {font-family:  var(--font_family), sans-serif !important;}
- 
+
 span {font-family:  var(--font_family), sans-serif !important;}
 h2 {font-family:  var(--font_family), sans-serif !important;}
 div {font-family:  var(--font_family), sans-serif !important;}
@@ -125,7 +125,6 @@ div {font-family:  var(--font_family), sans-serif !important;}
 }
 
 // mb端
-
 @media (max-width: 768px) {
   body {
     font-family:  var(--font_family), sans-serif !important;
@@ -169,7 +168,7 @@ div {font-family:  var(--font_family), sans-serif !important;}
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     background-image: linear-gradient(to right, #fff, #fff),
-      linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
+    linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
     padding: 2.5vw 5vw;
     span {
       font-family: "Noto Sans JP";
@@ -216,8 +215,108 @@ div {font-family:  var(--font_family), sans-serif !important;}
       }
     }
   }
-  
+
   .gradient_font_en {
     max-width: 200px;
   }
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  body {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  caption {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  h3 {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  div {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+
+  a {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  td {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  p {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  span {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  h2 {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  div {
+    font-family:  var(--font_family), sans-serif !important;
+  }
+  .page_container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  // 立即预约按钮
+  .btn-yuyue {
+    border: 1px solid transparent;
+    border-radius: 99px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to right, #fff, #fff),
+    linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
+    padding: 2.5vw 5vw;
+    span {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 71% */
+
+      text-align: center;
+      letter-spacing: 0.1em;
+
+      background: linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  .main_banner {
+    // margin-top: 23vw;
+  }
+  .pcShow {
+    display: none !important;
+  }
+  body {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 30px;
+      padding: 0 9px;
+      border-left: 1px solid #dfdfdf;
+      border-right: 1px solid #dfdfdf;
+      &::before {
+        width: 15vw;
+        height: 0;
+        border-top: 1px solid #dfdfdf;
+        left: -15vw;
+      }
+      &::after {
+        width: 15vw;
+        height: 0;
+        border-top: 1px solid #dfdfdf;
+        right: -15vw;
+      }
+    }
+  }
+
+  .gradient_font_en {
+    max-width: 200px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body {font-family: var(--font_family), sans-serif !important;min-width: 900px;}
 }

@@ -38,7 +38,7 @@ body .gradient_font {
 @media screen and (min-width: 768px) {
   .section {
     height: 480px;
-     
+
     background-size: cover !important;
     background-repeat: no-repeat;
     padding-left: 63px;
@@ -131,7 +131,7 @@ body .gradient_font {
   .banner {
     background: url("https://static.cmereye.com/imgs/2022/11/c8e8452497d5f740.jpg")
       no-repeat;
-      
+
   }
 }
 @media (max-width: 768px) {

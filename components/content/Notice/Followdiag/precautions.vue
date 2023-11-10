@@ -29,7 +29,7 @@
       <h2>{{$t('notice.followdiag.precautions.h2_2')}}</h2>
     </div>
     <div class="text-box-detail" v-html="$t('notice.followdiag.precautions.detail')">
-      
+
     </div>
     <div class="flex justify-center my-10">
       <a href="#" class="mbShow">

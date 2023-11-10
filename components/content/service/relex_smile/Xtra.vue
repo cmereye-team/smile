@@ -98,7 +98,7 @@ export default {
       letter-spacing: 1.8px;
     }
     }
-    
+
   }
 }
 

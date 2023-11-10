@@ -293,7 +293,7 @@ p {
 </style>
 <style lang="scss">
 @media screen and (max-width: 768px) {
-  
+
   i {
     justify-content: space-between;
   }

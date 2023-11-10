@@ -19,7 +19,14 @@
           <div class="person">
             <p>{{ $t("home.aspiration.p2") }} Ada</p>
           </div>
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '245px':'235px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'235px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '245px' : '235px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '235px',
+            }"
+          >
             <span>{{ $t("home.aspiration.span1") }}</span>
           </div>
         </div>
@@ -30,7 +37,14 @@
           alt=""
         />
         <div class="heart-text">
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '255px':'160px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'160px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '255px' : '160px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '160px',
+            }"
+          >
             <span
               >{{ $t("home.aspiration.span2_1") }}<br />{{
                 $t("home.aspiration.span2_2")
@@ -51,7 +65,14 @@
           <div class="person">
             <p>唐浩然 Jacky</p>
           </div>
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '245px':'180px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'180px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '245px' : '180px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '180px',
+            }"
+          >
             <span
               >{{ $t("home.aspiration.span3_1") }}<br />{{
                 $t("home.aspiration.span3_2")
@@ -69,7 +90,14 @@
           <div class="person">
             <p>{{ $t("home.aspiration.p4") }} Shirley</p>
           </div>
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '280px':'194px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'194px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '280px' : '194px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '194px',
+            }"
+          >
             <span>{{ $t("home.aspiration.span4") }}</span>
           </div>
         </div>
@@ -678,6 +706,278 @@ export default {
           color: #6d6e71;
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1024px) {
+  .serve_title {
+    left: -30px;
+  }
+  .aspiration {
+    height: 285px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .page_container {
+    max-width: 900px !important;
+    margin: 0 auto;
+    transform: scale(0.8);
+    margin-left: -150px;
+  }
+  .heart-box {
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  .heart-box {
+    .heart-text {
+      .person {
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          height: auto;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-1 {
+    position: relative;
+    left: auto;
+    bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      bottom: 15px;
+      left: -5px;
+      .box {
+        width: 160px !important;
+        height: auto !important;
+        left: 10px;
+        span {
+          font-size: 12px !important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-2 {
+    position: relative;
+    left: auto;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      right: -60px;
+      top: 20px;
+      .box {
+        width: 120px!important;
+        height: auto!important;
+        left: -20px;
+        span {
+          font-size: 12px!important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-3 {
+    position: relative;
+    right: auto;
+    bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      bottom: 15px;
+      left: -15px;
+      .box {
+        width: 135px!important;
+        height: auto!important;
+        left: 50px;
+        span {
+          font-size: 12px!important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-4 {
+    position: relative;
+    right: auto;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      left: -30px;
+      top: 20px;
+      .box {
+        width: 140px!important;
+        height: auto!important;
+        left: -40px;
+        span {
+          font-size: 12px!important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .serve_title {
+    p {
+      font-size: 37px !important;
+      line-height: 1.2;
+    }
+  }
+  .booking {
+    p {
+      font-size: 50px !important;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .serve_title {
+    left: -30px;
+  }
+  .aspiration {
+    height: 285px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .page_container {
+    max-width: 900px !important;
+    margin: 0 auto;
+  }
+  .heart-box {
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  .heart-box {
+    .heart-text {
+      .person {
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          height: auto;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-1 {
+    position: relative;
+    left: auto;
+    bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      bottom: 15px;
+      left: -5px;
+      .box {
+        width: 160px !important;
+        height: auto !important;
+        left: 10px;
+        span {
+          font-size: 12px !important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-2 {
+    position: relative;
+    left: auto;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      right: -60px;
+      top: 20px;
+     .box {
+        width: 120px!important;
+        height: auto!important;
+        left: -20px;
+        span {
+          font-size: 12px!important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-3 {
+    position: relative;
+    right: auto;
+    bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      bottom: 15px;
+      left: -15px;
+     .box {
+        width: 135px!important;
+        height: auto!important;
+        left: 50px;
+        span {
+          font-size: 12px!important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .heart-box-4 {
+    position: relative;
+    right: auto;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .heart-text {
+      left: -30px;
+      top: 20px;
+    .box {
+        width: 140px!important;
+        height: auto!important;
+        left: -40px;
+        span {
+          font-size: 12px!important;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .serve_title {
+    p {
+      font-size: 37px !important;
+      line-height: 1.2;
+    }
+  }
+  .booking {
+    p {
+      font-size: 50px !important;
     }
   }
 }

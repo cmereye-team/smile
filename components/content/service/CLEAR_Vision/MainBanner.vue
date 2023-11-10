@@ -86,7 +86,7 @@ export default {
     padding-left: 20px;
     margin-top: 24vw;
   }
-  
+
 }
 
 @media screen and (min-width: 768px) {

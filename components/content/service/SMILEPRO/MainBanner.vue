@@ -96,7 +96,7 @@ export default {
     }
     margin-top: 24vw;
   }
-  
+
 }
 
 @media screen and (min-width: 768px) {
