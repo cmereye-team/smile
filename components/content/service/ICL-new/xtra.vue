@@ -8,7 +8,7 @@
             alt="icl"
           />
         </div>
-        <div>ICL <br />植入式</div>
+        <div>ICL <br /> <span>植入式隱形眼鏡</span> </div>
       </div>
       <div class="xtra-in-lists">
         <div class="title-content">ICL矯視的好處</div>
@@ -265,7 +265,7 @@
             <div>
               過程無須切削角<br class="mbShow" />膜
               <span class="mbShow">，</span>
-              <br class="pcShow" />減低引發乾眼<br class="mbShow" />症的機會
+              <br class="pcShow" />因此不會導<br class="mbShow" />致乾眼症
             </div>
           </div>
           <div>
@@ -389,6 +389,10 @@ export default {
       font-weight: 400;
       line-height: 50px; /* 166.667% */
       letter-spacing: 7.5px;
+      span {
+        font-size: 28px;
+        letter-spacing: 5.04px;
+      }
     }
   }
   &-in {
