@@ -260,9 +260,9 @@
                   />
                 </svg>
               </div>
-              <div>不會導致乾眼症</div>
+              <div>不會導致<br class="mbShow" />乾眼症</div>
             </div>
-            <div>過程無須切削角膜<br />減低引發乾眼症的機會</div>
+            <div>過程無須切削角<br class="mbShow" />膜 <span class="mbShow">，</span> <br class="pcShow" />減低引發乾眼<br class="mbShow" />症的機會</div>
           </div>
           <div>
             <div>
@@ -534,8 +534,8 @@ export default {
       &-lists {
         width: calc(100% / 3);
         flex-direction: column;
-        margin: 88px auto 20px;
-        padding: 0 30px;
+        margin: 88px auto 65px;
+        padding: 0 20px;
         .listIn {
           &:first-child {
             margin-bottom: 34px;
@@ -580,16 +580,17 @@ export default {
         font-weight: 400;
         line-height: 35px; /* 175% */
         letter-spacing: 5px;
+        margin-top: -12px;
       }
     }
   }
   .xtra-in-lists {
     .lists-box > div {
-      width: 155px;
-      margin: 36px 0;
+      width: 165px;
+      margin: 36px 0 0 0;
       & > div:nth-child(1) {
-        width: 155px;
-        height: 155px;
+        width: 165px;
+        height: 165px;
         & > div:nth-child(1) {
           width: 76px;
           height: 68px;
@@ -602,6 +603,7 @@ export default {
           font-weight: 700;
           line-height: 20px; /* 111.111% */
           letter-spacing: 3.6px;
+          text-align: center;
         }
       }
       & > div:nth-child(2) {
@@ -618,10 +620,10 @@ export default {
     }
   }
   .xtra-in-lists .lists-box > div:nth-of-type(2) {
-    margin: 36px 0;
+    margin: 36px 0 0 0;
   }
   .xtra-in-lists .lists-box > div:nth-of-type(5) {
-    margin: 36px 0;
+    margin: 36px 0 0 0;
   }
   .xtra-in-lists .lists-box > div > div:nth-child(1) > div:nth-child(1) {
     width: 49px;
