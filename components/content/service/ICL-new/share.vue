@@ -4,10 +4,12 @@
       <div v-html="$t('service.icl.share.h2')" class="title-content"></div>
     </div>
     <div class="share-img">
-      <img
-        src="https://static.cmereye.com/imgs/2023/10/d33a83515c64bf26.png"
-        alt=""
-      />
+      <a href="https://www.youtube.com/watch?v=B12IjJ3tFHE" target="_blank">
+        <img
+          src="https://static.cmereye.com/imgs/2023/10/d33a83515c64bf26.png"
+          alt=""
+        />
+      </a>
     </div>
     <div class="pcShow swiper-pc-share">
       <div v-swiper:mySwiper="swiperOption1" class="swiperWrap">
@@ -143,7 +145,8 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-button-next,.swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     position: absolute;
     top: 50%;
     width: 37px;
@@ -155,7 +158,7 @@ h2 {
     -webkit-background-size: 27px 44px;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
   .swiper-button-next {
     background-image: url("https://static.cmereye.com/imgs/2023/11/a7c0239f4c5321f8.png");
@@ -209,6 +212,9 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    img {
+      border-radius: 47px;
+    }
   }
   .suit_box {
     margin-bottom: 190px;
@@ -250,7 +256,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       margin-bottom: 40px;
     }
   }
@@ -303,7 +309,7 @@ h2 {
   .title-content {
     position: relative;
     padding-bottom: 15px;
-    color: #4570B6;
+    color: #4570b6;
     text-align: center;
     font-family: Noto Sans HK;
     font-size: 20px;
@@ -329,7 +335,7 @@ h2 {
   :deep(.swiper-wrapper) {
     display: flex;
     flex-direction: column;
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin: 30px 0;
     }
   }

@@ -1383,12 +1383,12 @@ module.exports = {
       },
       suitable: {
         h2: '合適對象',
-        span1: `高度近視、<br class="pcShow" />遠視或深度數散光人士`,
+        span1: `高度近視、<br />遠視或深度數散光人士`,
         span2: `投考紀律部隊/<br />航空業界人士`,
         span3: `熱愛運動/<br />注重儀表人士`,
         span4: `希望減低對眼鏡<br />或隱形眼鏡依賴的人士`,
         span5: `因佩戴隱形眼鏡<br />導致乾眼症人士`,
-        span6: `因角膜厚度偏薄<br class="mbShow" />/角膜形狀欠佳<br class="pcShow" />而不適<br class="mbShow" />合接受激光矯視人士`
+        span6: `因角膜厚度偏薄/<br class="mbShow" />角膜形狀欠佳<br class="pcShow" />而不適<br class="mbShow" />合接受激光矯視人士`
       }
     },
     lasik: {

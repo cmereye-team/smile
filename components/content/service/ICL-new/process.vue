@@ -138,11 +138,11 @@ export default {
         color: #6D6E71;
         text-align: center;
         font-family: Noto Sans HK;
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
-        letter-spacing: 4.2px;
+        letter-spacing: 3px;
       }
     }
   }

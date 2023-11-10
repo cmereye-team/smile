@@ -76,7 +76,7 @@
               </div>
               <div>術後復原快</div>
             </div>
-            
+
             <div>手術以微創技術進<br />行，術後復原期短</div>
           </div>
           <div>
@@ -262,7 +262,11 @@
               </div>
               <div>不會導致<br class="mbShow" />乾眼症</div>
             </div>
-            <div>過程無須切削角<br class="mbShow" />膜 <span class="mbShow">，</span> <br class="pcShow" />減低引發乾眼<br class="mbShow" />症的機會</div>
+            <div>
+              過程無須切削角<br class="mbShow" />膜
+              <span class="mbShow">，</span>
+              <br class="pcShow" />減低引發乾眼<br class="mbShow" />症的機會
+            </div>
           </div>
           <div>
             <div>
@@ -558,12 +562,6 @@ export default {
           }
         }
       }
-      &-btn {
-        span {
-          &::after {
-          }
-        }
-      }
     }
   }
   .xtra {
@@ -585,37 +583,89 @@ export default {
     }
   }
   .xtra-in-lists {
-    .lists-box > div {
-      width: 165px;
-      margin: 36px 0 0 0;
-      & > div:nth-child(1) {
+    .lists-box {
+      & > div {
         width: 165px;
-        height: 165px;
+        margin: 36px 0 0 0;
         & > div:nth-child(1) {
-          width: 76px;
-          height: 68px;
+          width: 155px;
+          height: 155px;
+          & > div:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          & > div:nth-child(2) {
+            color: #4570b6;
+            font-family: Noto Sans HK;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px; /* 111.111% */
+            letter-spacing: 3.6px;
+            text-align: center;
+          }
         }
         & > div:nth-child(2) {
-          color: #4570b6;
-          font-family: Noto Sans HK;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 20px; /* 111.111% */
-          letter-spacing: 3.6px;
+          margin-top: 10px;
+          color: #6d6e71;
           text-align: center;
+          font-family: Noto Sans HK;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 22px; /* 146.667% */
+          letter-spacing: 3px;
+        }
+      }
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            width: 62.702px;
+            height: 64.856px;
+          }
         }
       }
       & > div:nth-child(2) {
-        margin-top: 10px;
-        color: #6d6e71;
-        text-align: center;
-        font-family: Noto Sans HK;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 22px; /* 146.667% */
-        letter-spacing: 3px;
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            width: 65px;
+            height: 59px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            width: 59.101px;
+            height: 57.818px;
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            width: 54.314px;
+            height: 64.671px;
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            width: 79px;
+            height: 54px;
+          }
+        }
+      }
+      & > div:nth-child(6) {
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            width: 49.313px;
+            height: 65.268px;
+          }
+        }
       }
     }
   }
@@ -625,9 +675,9 @@ export default {
   .xtra-in-lists .lists-box > div:nth-of-type(5) {
     margin: 36px 0 0 0;
   }
-  .xtra-in-lists .lists-box > div > div:nth-child(1) > div:nth-child(1) {
-    width: 49px;
-    height: 65px;
-  }
+  // .xtra-in-lists .lists-box > div > div:nth-child(1) > div:nth-child(1) {
+  //   width: 49px;
+  //   height: 65px;
+  // }
 }
 </style>

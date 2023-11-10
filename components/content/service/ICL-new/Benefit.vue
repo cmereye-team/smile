@@ -251,8 +251,8 @@ export default {
         font-weight: 300;
         color: #6D6E71;
         font-size: 15px;
-        line-height: 22px; /* 146.667% */
-        letter-spacing: 3px;
+        line-height: 30px; /* 200% */
+        letter-spacing: 4.5px;
       }
     }
     .img_style {
@@ -306,8 +306,8 @@ export default {
           }
           &-b{
             font-size: 15px;
-            line-height: 18px; /* 120% */
-            letter-spacing: 3px;
+            line-height: 22px; /* 120% */
+            letter-spacing: 2.25px;
             margin: 9px auto 0;
           }
         }
