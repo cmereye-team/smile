@@ -263,8 +263,7 @@
               <div>不會導致<br />乾眼症</div>
             </div>
             <div>
-              過程無須切削角<br class="mbShow" />膜
-              <span class="mbShow">，</span>
+              過程無須切削角<br class="mbShow" />膜，
               <br class="pcShow" />因此不會導<br class="mbShow" />致乾眼症
             </div>
           </div>
