@@ -2237,7 +2237,7 @@ $active_gradient: #4570b6;
     bottom: 0;
     display: block;
     letter-spacing: 0.1em;
-    transform: translate(1vw,-50%) scale(0.6);
+    transform: translate(1vw, -50%) scale(0.6);
     top: 50%;
     right: 0;
   }
@@ -2247,18 +2247,18 @@ $active_gradient: #4570b6;
   .header_body {
     display: flex;
     padding: 20px 0;
-    &>div{
+    & > div {
       flex: 1;
       padding: 0 10px;
     }
   }
   .link-menu {
-    &>div {
+    & > div {
       padding: 0 5px;
       .title {
         min-height: 80px;
       }
-      &> a {
+      & > a {
         min-height: 80px;
       }
     }
@@ -2269,18 +2269,18 @@ $active_gradient: #4570b6;
   .header_body {
     display: flex;
     padding: 20px 0;
-    &>div{
+    & > div {
       flex: 1;
       padding: 0 10px;
     }
   }
   .link-menu {
-    &>div {
+    & > div {
       padding: 0 5px;
       .title {
         min-height: 80px;
       }
-      &> a {
+      & > a {
         min-height: 80px;
       }
     }
@@ -2373,25 +2373,30 @@ $active_gradient: #4570b6;
   .header_body {
     display: flex;
     padding: 30px 0;
-    &>div{
+    margin: 0 70px;
+    & > div {
       flex: 1;
       padding: 0 10px;
     }
   }
   .link-menu {
-    &>div {
+    & > div {
       padding: 0 5px;
       .title {
         min-height: 80px;
       }
-      &> a {
+      & > a {
         min-height: 80px;
       }
     }
   }
-  .flex-between {
-    padding: 0 50px;
+  .el-drawer__body {
+    .flex-between {
+      padding: 0 50px;
+      margin: 20px auto;
+    }
   }
+
   .sidebar_contact {
     border-radius: 25px 0 0 25px;
     bottom: 0;
