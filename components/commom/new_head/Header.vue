@@ -1499,14 +1499,15 @@ $active_gradient: #4570b6;
 
   .sidebar_contact {
     position: fixed;
-    right: 8%;
+    right: 1.04vw;
     letter-spacing: 0.1em;
-    top: 0;
+    top: 50%;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    transform: translateY(-50%);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
 
     & > div {
       a {

@@ -1320,11 +1320,24 @@ module.exports = {
         }
       },
       film: {
-        h2: 'ICL 植入式隐形眼镜介紹影片',
+        h2: 'ICL 植入式隐形眼镜<br class="mbShow" />介紹影片',
         title1: '【真正隐形嘅隐形眼镜 - ICL🤩】',
         title2: '#边款矫视适合您💡'
       },
       mainBanner: {
+        span: `
+        植入式隐形眼镜Implantable Contact Lens (ICL)，又名后房型可植入式隐形 <br class="pcShow" />
+        屈光晶体植入手术，专为深度近视、远视、散光客人而设。<br />
+        手术过程无须切削角膜，把ICL 晶体植入眼内，便可获取高清视力。 植入式隐形眼 <br class="pcShow" />
+        镜以非激光原理，用创新技术和具生物兼容特质、柔软及具紫外线防护的晶体材料， <br class="pcShow" />
+        矫正高度近视、远视及散光。
+        `,
+        span2: `
+        希玛自创办以来与STAAR Surgical<br class="mbShow" />公司建立良好的合作关系逾10年。<br />
+        2023年，STAAR Surgical公司对希<br class="mbShow" />玛眼科集团的医疗技术、手术质量及服<br class="mbShow" />务作出<br class="pcShow" />
+        认可，宣布将希玛微笑矫视中心<br class="mbShow" />设立为首间官方认证EVO ICL 国际培<br class="mbShow" />训中心。 <br />
+        希玛微笑矫视中心往后会继续致力于<br class="mbShow" />ICL方面发展，成为大众选择ICL植入<br class="mbShow" />式隐形眼<br class="pcShow" />镜的首选!
+        `,
         p1: 'ICL植入式隐形眼镜',
         p2: `植入式隐形眼镜Implantable Contact Lens
             (ICL)，又名后房型可植入式隐形屈光晶体植入手术，专为深度近视、远视、散光客人而设。手术过程无须切削角膜，把ICL

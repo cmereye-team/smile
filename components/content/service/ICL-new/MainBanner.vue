@@ -52,6 +52,10 @@
       <div class="title">植入式隱形眼鏡</div>
       <div class="context" v-html="$t('service.icl.mainBanner.span')"></div>
     </div>
+    <div class="smile-banner-context smile-banner-context2">
+      <div class="title">為何選擇希瑪?</div>
+      <div class="context" v-html="$t('service.icl.mainBanner.span2')"></div>
+    </div>
   </div>
 </template>
 <script>
@@ -138,6 +142,7 @@ export default {
     }
   }
 }
+
 .smile-banner-context {
   width: 100%;
   max-width: 980px;
@@ -172,6 +177,9 @@ export default {
     line-height: 35px; /* 175% */
     letter-spacing: 6px;
   }
+}
+.smile-banner-context2 {
+  margin: 78px auto 0;
 }
 .main_banner {
   margin-top: 130px;
@@ -211,6 +219,9 @@ export default {
       line-height: 30px; /* 200% */
       letter-spacing: 4.5px;
     }
+  }
+  .smile-banner-context2 {
+    margin: 45px 30px 0;
   }
   .pathLink {
     display: none;
