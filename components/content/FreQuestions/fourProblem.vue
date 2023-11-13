@@ -1,8 +1,8 @@
 <template>
-  <div class="tab flex justify-center page_container md:mb-28 pb-28" id="tab">
+  <div class="tab flex justify-center page_container md:mb-28 pb-28" id="faq-presbyopia">
     <div class="justify-center memu">
       <div class="flex justify-center">
-        <h2 id="faq-presbyopia">{{$t('home.headers.commonProblemChild_4')}}</h2>
+        <h2>{{$t('home.headers.commonProblemChild_4')}}</h2>
       </div>
       <el-collapse v-model="activeNames" @change="handleChange">
         <el-collapse-item v-for="(item,index) in lists" :key="index+1" :name="`${index+1}`">
@@ -186,7 +186,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .memu {
-    margin-top: 90px;
+    margin-top: 25vw;
   }
   .mb-width {
     width: 72vw;

@@ -1,9 +1,9 @@
 <template>
-  <div class="tab flex justify-center page_container" id="tab">
+  <div class="tab flex justify-center page_container" id="faq-smile">
     <div class="justify-center memu">
       <div class="flex justify-center">
         <!-- <a href="#faq-presbyopia"> -->
-        <h2 id="faq-smile">{{$t('home.headers.commonProblemChild_1')}}</h2>
+        <h2>{{$t('home.headers.commonProblemChild_1')}}</h2>
         <!-- </a> -->
       </div>
       <el-collapse v-model="activeNames" @change="handleChange">
@@ -173,7 +173,7 @@ span {
 }
 .tab {
   // margin-top: 10% !important;
-  margin: 0px auto;
+  margin: 0 auto ;
 }
 ul {
   margin: 0;
@@ -208,7 +208,7 @@ p {
 }
 
 .memu {
-  margin-top: 5vw;
+  margin-top: 25vw;
 }
 /deep/ .el-collapse-item__header.is-active {
     background-color: #4570b6 !important;

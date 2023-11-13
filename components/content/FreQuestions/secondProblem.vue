@@ -1,8 +1,8 @@
 <template>
-  <div class="tab flex justify-center page_container" id="tab">
+  <div class="tab flex justify-center page_container" id="faq-lasik">
     <div class="justify-center memu">
       <div class="flex justify-center">
-        <h2 id="faq-lasik">{{$t('home.headers.commonProblemChild_2')}}</h2>
+        <h2>{{$t('home.headers.commonProblemChild_2')}}</h2>
       </div>
       <el-collapse v-model="activeNames" @change="handleChange">
         <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
@@ -174,7 +174,7 @@ span {
 }
 .tab {
   // margin-top: 10% !important;
-  margin: 0px auto;
+  margin:  0 auto;
 }
 ul {
   margin: 0;
@@ -211,7 +211,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .memu {
-    margin-top: 90px;
+    margin-top: 25vw;
   }
   .mb-width {
     width: 72vw;
