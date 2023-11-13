@@ -2,7 +2,7 @@
   <div>
     <div class="optiond">
       <div v-if="group.link !== '' && group.link.length > 0">
-        <a class="title" :href="group.link">
+        <nuxt-link class="title" :to="localePath(group.link)">
           <div>
             <img
               v-if="pcOrMobile === 'mobile' && dataSrc.length > 0"
@@ -24,17 +24,17 @@
               v-if="group.child_list && group.child_list.length > 0"
             >
               <div class="nav">
-                <a
+                <nuxt-link
                   v-for="(item, index) in group.child_list"
                   :key="index"
-                  :href="item.link"
+                  :to="localePath(item.link)"
                 >
-                  {{ item.child_item }}</a
+                  {{ item.child_item }}</nuxt-link
                 >
               </div>
             </div>
           </div>
-        </a>
+        </nuxt-link>
       </div>
       <div v-else>
         <a class="title">
@@ -59,13 +59,12 @@
               v-if="group.child_list && group.child_list.length > 0"
             >
               <div class="nav">
-                <a
+                <nuxt-link
                   v-for="(item, index) in group.child_list"
+                  :to="item.link"
                   :key="index"
-                  :href="item.link"
-                >
-                  {{ item.child_item }}</a
-                >
+                >{{ item.child_item }}
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -211,7 +210,7 @@ export default {
   .nav {
     color: #6d6e71;
     text-align: center;
-    font-size: 12px;
+    font-size: 3.078vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -219,7 +218,7 @@ export default {
     line-height: 2;
     flex-direction: column;
     align-items: flex-start;
-    width: fit-content;
+    width: max-content;
     padding: 10px 0;
     display: flex;
     // min-width: 150px;
