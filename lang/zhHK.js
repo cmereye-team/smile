@@ -1359,7 +1359,7 @@ module.exports = {
         title2: '#邊款矯視適合您💡'
       },
       mainBanner: {
-        span: `植入式隱形眼鏡Implantable Contact Lens (ICL)，又名後房型可植入式隱形 <br class="pcShow" />屈光晶體植入手術，專為深度近視、遠視、散光客人而設。<br />手術過程無須切削角膜，把ICL 晶體植入眼內，便可獲取高清視力。 植入式隱形眼 <br class="pcShow" />鏡以非激光原理，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料， <br class="pcShow" />矯正高度近視、遠視及散光。`,
+        span: `植入式隱形眼鏡Implantable Contact Lens (ICL)，又名後房型可植入式隱形<br class="pcShow" />屈光晶體植入手術，專為深度近視、遠視、散光客人而設。<br />手術過程無須切削角膜，把ICL晶體植入眼內，便可獲取高清視力。植入式隱形眼<br class="pcShow" />鏡以非激光原理，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料，<br class="pcShow" />矯正高度近視、遠視及散光。`,
         span2: `希瑪自創辦以來與STAAR Surgical<br class="mbShow" />公司建立良好的合作關係逾10年。<br />2023年，STAAR Surgical公司對希<br class="mbShow" />瑪眼科集團的醫療技術、手術品質及服<br class="mbShow" />務作出<br class="pcShow" />認可，宣佈將希瑪微笑矯視中心<br class="mbShow" />設立為首間官方認證EVO ICL 國際培<br class="mbShow" />訓中心。<br />希瑪微笑矯視中心往後會繼續致力於<br class="mbShow" />ICL方面發展，成為大眾選擇ICL植入<br class="mbShow" />式隱形眼<br class="pcShow" />鏡的首選!`,
         p1: 'ICL植入式隱形眼鏡',
         p2: `植入式隱形眼鏡Implantable Contact Lens
