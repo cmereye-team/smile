@@ -1310,10 +1310,10 @@ module.exports = {
     icl: {
       benefit_new: {
         des1: `ICL鏡片由含有<br class="mbShow" />膠<br class="pcShow" />原蛋白材質製<br class="mbShow" />成，<br class="pcShow" />與眼球互相<br class="mbShow" />兼容`,
-        des2: `過程無須切削角 <br />膜，減低引發乾 <br />眼症的機會`,
-        des3: `可按需要選擇取 <br class="pcShow"  />出鏡片`,
-        des4: `提供絕佳夜間 <br />視力`,
-        des5: `鏡片有紫外線 <br />防護功能`,
+        des2: `過程無須切削角<br />膜，減低引發乾 <br />眼症的機會`,
+        des3: `可按需要選擇取<br />出鏡片`,
+        des4: `提供絕佳夜間<br />視力`,
+        des5: `鏡片有紫外線<br />防護功能`,
         des6: `ICL鏡片既可永<br class="pcShow" />久<br class="mbShow" />存放眼內亦可<br class="pcShow" />還原`,
         des7: `手術時間短，復<br class="pcShow" />原<br class="mbShow" />期短，手術過<br class="pcShow" />程最<br class="mbShow" />快只需<br class="pcShow" />20-30分鐘`,
         des8: `鏡片柔軟靈活 <br /> 易於植入`
@@ -1321,7 +1321,7 @@ module.exports = {
       step: {
         h2: `植入式隱形眼鏡<br class="mbShow" />植入過程`,
         des1: `進行手術前，<br class="mbShow" />醫生先在客人<br class="pcShow" />眼睛<br class="mbShow" />上滴麻醉眼藥水。`,
-        des2: `在角膜製作一個約3<br class="mbShow" />毫米的 <br class="pcShow" />小開口，將摺<br class="mbShow" />疊的晶體植入<br class="pcShow" />眼球。`,
+        des2: `在角膜製作一個約3<br class="mbShow" />毫米的<br class="pcShow" />小開口，將摺<br class="mbShow" />疊的晶體植入<br class="pcShow" />眼球。`,
         des3: `植入晶體後，醫生<br class="mbShow" />會調整晶<br class="pcShow" />體的位<br class="mbShow" />置，確保在適宜的<br class="mbShow" />位<br class="pcShow" />置再定位。`,
         des4: `手術結束後，需按醫<br class="mbShow" />生指示<br class="pcShow" />滴眼藥水。一<br class="mbShow" />般矯視後第二<br class="pcShow" />天已能<br class="mbShow" />恢復視力。`,
         des5: `完成手術後，需按<br class="mbShow" />指示定期<br class="pcShow" />覆診以追<br class="mbShow" />蹤視力。`,
@@ -1372,7 +1372,7 @@ module.exports = {
       },
       suitable: {
         h2: '合適對象',
-        span1: `高度近<br />遠視或深度數散光人士`,
+        span1: `高度近遠視或<br />深度數散光人士`,
         span2: `投考紀律部隊/<br />航空業界人士`,
         span3: `熱愛運動/<br />注重儀表人士`,
         span4: `希望減低對眼鏡<br />或隱形眼鏡依賴的人士`,
