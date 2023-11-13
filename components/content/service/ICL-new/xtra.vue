@@ -573,7 +573,7 @@ export default {
       height: 171px;
       top: 5%;
       &>div:nth-child(1) {
-        margin-top: -5px;
+        margin-top: -35px;
       }
       & > div:nth-child(2) {
         color: #4570b6;
@@ -584,7 +584,7 @@ export default {
         font-weight: 400;
         line-height: 35px; /* 175% */
         letter-spacing: 5px;
-        margin-top: -12px;
+        margin-top: -20px;
         span {
           font-size: 16px;
           line-height: 30px;

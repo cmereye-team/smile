@@ -320,7 +320,7 @@ export default {
     &>div:nth-child(1){
       &>div:nth-child(1) {
         &>div:nth-child(1){
-          width: 86px;
+          width: 72px;
           height: auto;
         }
       }
@@ -330,6 +330,10 @@ export default {
         &>div:nth-child(1){
           width: 72px;
           height: auto;
+          padding: 5px 0;
+        }
+        &>p{
+          margin-top: 25px;
         }
       }
     }
@@ -354,6 +358,7 @@ export default {
         &>div:nth-child(1){
           width: 74px;
           height: auto;
+          padding: 8px 0;
         }
       }
     }
