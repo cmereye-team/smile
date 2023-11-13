@@ -215,7 +215,7 @@
           class="sidebar_contact"
           :class="[isShowFloat === true ? 'sidebar_contact_width' : '']"
         >
-          <div>
+          <div class="icl-event">
             <a :href="localePath('/icl-event')">
               <div class="flex justify-center">
                 <svg
@@ -1480,6 +1480,9 @@ $active_gradient: #4570b6;
       .child_nav {
         position: absolute;
         top: 10px;
+        li a {
+          justify-content: flex-start;
+        }
       }
     }
 
@@ -1627,7 +1630,7 @@ $active_gradient: #4570b6;
     line-height: normal;
     letter-spacing: 6.75px;
     margin: 0 20px;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
   }
 
   .menu_pc {
@@ -1653,8 +1656,8 @@ $active_gradient: #4570b6;
     }
   }
   .menu_pc:hover {
-    width: 52px;
-    height: 52px;
+    width: 40px;
+    height: 40px;
     background: #4570b6;
     border-radius: 43px;
     transition: all 0.3s;
@@ -2266,6 +2269,16 @@ $active_gradient: #4570b6;
 }
 // 区间 1440px 到 900px
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .sidebar_contact {
+    .icl-event {
+      a {
+        div:nth-child(1) {
+          width: 70%;
+          margin: auto;
+        }
+      }
+    }
+  }
   .header_body {
     display: flex;
     padding: 20px 0;
@@ -2342,11 +2355,10 @@ $active_gradient: #4570b6;
     & > div {
       width: 100%;
       height: auto;
-      background: rgba(255, 255, 255, 0.9);
       a {
         font-size: 1.05vw;
         .divit-pc {
-          width: 70%;
+          width: 50%;
           margin: 0 auto;
         }
       }
