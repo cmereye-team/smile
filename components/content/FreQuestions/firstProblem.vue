@@ -208,13 +208,16 @@ p {
 }
 
 .memu {
-  margin-top: 25vw;
+  margin-top: 10vw;
 }
 /deep/ .el-collapse-item__header.is-active {
     background-color: #4570b6 !important;
     color: #fff !important;
   }
 @media screen and (max-width: 768px) {
+  .memu {
+  margin-top: 25vw;
+}
   .mb-width {
     width: 72vw;
   }
