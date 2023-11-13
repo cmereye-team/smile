@@ -250,18 +250,18 @@
           </button>
         </a>
       </div> -->
-      <div class="contact contact_icl-r">
-        <a :href="localePath('/icl-event')">
-          <button class="link_more shadow-lg">
-            <div class="flex items-center justify-evenly">
-              <div class="p-1 text-left">
-                <img src="https://static.cmereye.com/imgs/2023/10/b99823c00b4de6ee.png" alt="">
-                <h3 class="text-xs font-normal text-center icl-r-size">ICL <br class="pcShow" />星級矯視講座</h3>
-              </div>
-            </div>
-          </button>
-        </a>
-      </div>
+<!--      <div class="contact contact_icl-r">-->
+<!--        <a :href="localePath('/icl-event')">-->
+<!--          <button class="link_more shadow-lg">-->
+<!--            <div class="flex items-center justify-evenly">-->
+<!--              <div class="p-1 text-left">-->
+<!--                <img src="https://static.cmereye.com/imgs/2023/10/b99823c00b4de6ee.png" alt="">-->
+<!--                <h3 class="text-xs font-normal text-center icl-r-size">ICL <br class="pcShow" />星級矯視講座</h3>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </button>-->
+<!--        </a>-->
+<!--      </div>-->
       <div class="contact contact_divit">
         <a :href="localePath('/divit')">
           <button class="link_more shadow-lg">

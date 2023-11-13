@@ -2,7 +2,7 @@
 
   <div class="pages">
     <Header />
-    
+
     <BannerSlider />
     <CorrectionService />
     <CmerInfo />
@@ -13,7 +13,7 @@
 
     <Footer />
     <footers />
-  
+
   </div>
 </template>
 

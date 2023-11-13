@@ -59,7 +59,7 @@ module.exports = {
         span: 'ophthalmologists'
       },
       {
-        h4: 'The<strong>First</strong>', 
+        h4: 'The<strong>First</strong>',
         span: 'Hong Kong-listed ophthalmic center'
       },
       {
@@ -1306,7 +1306,7 @@ module.exports = {
       benefit: {
         h2: 'Advantages of choosing ICL',
         benefit1: {
-          des: `This can correct up to 1800 degrees of <br />myopia,1000 degrees of hyperopia, and`, 
+          des: `This can correct up to 1800 degrees of <br />myopia,1000 degrees of hyperopia, and`,
           towdes: '600 degrees of astigmatism.'
         },
         benefit2: {
@@ -1327,7 +1327,7 @@ module.exports = {
         },
         benefit6: {
           des: 'ICL is a reversible technology, and patients can',
-          towdes: 'choose to have their ICL removed as needed.' 
+          towdes: 'choose to have their ICL removed as needed.'
         }
       },
       film: {
