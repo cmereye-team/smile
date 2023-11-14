@@ -8,7 +8,10 @@
             alt="icl"
           />
         </div>
-        <div>ICL <br /> <span>植入式隱形眼鏡</span> </div>
+        <div>
+          ICL <br />
+          <span>植入式隱形眼鏡</span>
+        </div>
       </div>
       <div class="xtra-in-lists">
         <div class="title-content">ICL矯視的好處</div>
@@ -263,7 +266,9 @@
               <div>不會導致<br />乾眼症</div>
             </div>
             <div>
-              過程無須切削角<br class="mbShow" />膜，<br class="pcShow" />因此不會導<br class="mbShow" />致乾眼症
+              過程無須切削角<br class="mbShow" />膜，<br
+                class="pcShow"
+              />因此不會導<br class="mbShow" />致乾眼症
             </div>
           </div>
           <div>
@@ -460,7 +465,13 @@ export default {
             letter-spacing: 10.35px;
           }
         }
-
+        & > div:nth-child(4) {
+          &>div:nth-child(1) {
+            &>div:nth-child(1) {
+              height: auto;
+            }
+          }
+        }
         & > div:nth-of-type(2) {
           margin: 50px 92px;
         }
@@ -572,7 +583,7 @@ export default {
       width: 171px;
       height: 171px;
       top: 5%;
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         margin-top: -35px;
       }
       & > div:nth-child(2) {
