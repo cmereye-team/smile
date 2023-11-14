@@ -226,7 +226,7 @@ export default {
     }
     &-in{
       width: calc(100% / 3);
-      padding: 0 30px;
+      padding: 0 3.846vw;
       .title{
         font-size: 20px;
         line-height: 23.305px; /* 116.525% */
@@ -239,11 +239,11 @@ export default {
       }
       &-lists{
         .listIn{
-          width: 155px;
+          width: 39.75vw;
           margin-bottom: 23px;
           &-t{
-            height: 155px;
-            width: 155px;
+            height: 39.75vw;
+            width: 39.75vw;
             padding-top: 5px;
             justify-content: center;
             img{
@@ -251,14 +251,14 @@ export default {
               max-height: calc(100% / 3);
             }
             p{
-              font-size: 18px;
+              font-size: 4.615vw;
               line-height: 20px; /* 111.111% */
-              letter-spacing: 3.6px;
+              letter-spacing: 0.01vw;
               margin-top: 20px;
             }
           }
           &-b{
-            font-size: 15px;
+            font-size: 3.846vw;
             line-height: 18px; /* 120% */
             letter-spacing: 3px;
             margin: 9px auto 0;

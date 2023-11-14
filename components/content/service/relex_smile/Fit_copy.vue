@@ -222,7 +222,7 @@ export default {
           height: 54px;
           line-height: 120%;
           letter-spacing: 5.4px;
-          font-size: 18px;
+          font-size: 4.615vw;
           padding: 0 52px;
           border-radius: 27px;
           display: flex;
@@ -250,13 +250,16 @@ export default {
               width: 100%;
             }
             &-svg{
-              margin-right: 26px;
-              margin-left: 36px;
-              width: 44px;
+              margin-right: 6.6667vw;
+              margin-left: 9.23vw;
+              width: 11.28vw;
               height: 28px;
+              svg {
+                width: 100%;
+              }
             }
             &-text{
-              font-size: 16px;
+              font-size: 4.10vw;
               line-height: 22px; /* 137.5% */
               letter-spacing: 1.6px;
             }
