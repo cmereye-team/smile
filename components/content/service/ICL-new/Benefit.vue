@@ -28,27 +28,27 @@ export default {
     return {
       benefitList: [
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/78d6a053fa22996a.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9789.svg',
           text: '紫外線防護',
           des: this.$t('service.icl.benefit_new.des5'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/bbfc63d1ec0411f0.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9788.svg',
           text: '與時俱進的 <br /> 靈活度',
           des: this.$t('service.icl.benefit_new.des6'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/b5cdf3ffb2f8a069.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9787.svg',
           text: '手術與恢<br />復皆快速',
           des: this.$t('service.icl.benefit_new.des7'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/68873db7725e3cbf.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9792.svg',
           text: '柔軟服貼',
           des: this.$t('service.icl.benefit_new.des8'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/683c3efc8f1a1816.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9782.svg',
           text: '生物相容性',
           des: this.$t('service.icl.benefit_new.des1'),
         },
@@ -58,12 +58,12 @@ export default {
         //   des: this.$t('service.icl.benefit_new.des2'),
         // },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/5c0e935ae66f9ba5.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9790.svg',
           text: '可取出',
           des: this.$t('service.icl.benefit_new.des3'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/5f64ef3498736cd2.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9785.svg',
           text: '夜間視力',
           des: this.$t('service.icl.benefit_new.des4'),
         },
@@ -350,6 +350,7 @@ export default {
         &>div:nth-child(1){
           width: 72px;
           height: auto;
+          padding: 5px 0;
         }
       }
     }
