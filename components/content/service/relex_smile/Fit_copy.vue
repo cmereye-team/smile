@@ -260,7 +260,7 @@ export default {
             }
             &-text{
               font-size: 4.10vw;
-              line-height: 22px; /* 137.5% */
+              line-height: 5.641vw; /* 137.5% */
               letter-spacing: 1.6px;
             }
           }

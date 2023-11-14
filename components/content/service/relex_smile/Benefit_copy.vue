@@ -259,7 +259,7 @@ export default {
           }
           &-b{
             font-size: 3.846vw;
-            line-height: 18px; /* 120% */
+            line-height: 4.615vw; /* 120% */
             letter-spacing: 3px;
             margin: 9px auto 0;
           }
