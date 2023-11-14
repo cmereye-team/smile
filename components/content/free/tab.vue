@@ -1,7 +1,7 @@
 <template>
   <div class="tab flex justify-center page_container flex-col" id="tab">
     <div class="flex justify-center">
-      <h2>{{$t('home.headers.feeConsultation')}}</h2>
+      <h2>{{ $t("home.headers.feeConsultation") }}</h2>
     </div>
 
     <div class="tab-control">
@@ -18,19 +18,29 @@
     </div>
     <div v-if="currentTitleIndex === 0" class="flex flex-col items-center">
       <div class="md:mt-10" id="smile">
-        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title1')}}</h2>
+        <div>
+          <div class="pcShow" style="min-height: 140px"></div>
+          <div class="mbShow" style="min-height: 110px"></div>
+        </div>
+        <h2 style="margin-bottom: 0 !important">
+          {{ $t("chargeDetail.title1") }}
+        </h2>
       </div>
       <!--Smile  微笑矯視 -->
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}}</p>
+                <p>{{ $t("chargeDetail.p1") }}</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}}</p>
+                <p>{{ $t("chargeDetail.p2") }}</p>
               </th>
             </tr>
           </thead>
@@ -45,7 +55,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_5')}}</td>
+              <td colspan="4" id="blue">{{ $t("chargeDetail.td1_5") }}</td>
             </tr>
             <tr>
               <td>
@@ -56,87 +66,118 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
+              <td colspan="4" class="free">
+                {{ $t("chargeDetail.span5") }} $100^
+              </td>
             </tr>
           </tbody>
         </table>
-        <span>^{{$t('chargeDetail.span17')}}</span>
+        <span>^{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{$t('chargeDetail.span1')}}</span>
+        <span>{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span>^{{$t('chargeDetail.span2')}}</span>
+        <span>^{{ $t("chargeDetail.span2") }}</span>
       </div>
-      <div class="pb-20 taoc_boxs">
+      <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>{{$t('chargeDetail.span18')}}</span>
+            <span>{{ $t("chargeDetail.span18") }}</span>
           </div>
           <div class="icon-box">
-            <div class="box">
-            </div>
+            <div class="box"></div>
             <!-- 上下两个空盒子为了布局   有内容就删掉 -->
             <div class="box box-img-mb">
-              <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
-              <span>{{$t('chargeDetail.title8')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.title8") }}</span>
+            </div>
+            <div class="box"></div>
+            <div class="box">
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span4") }}</span>
             </div>
             <div class="box">
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span5") }}</span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
-              <span>{{$t('chargeDetail.span4')}}</span>
-            </div>
-            <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
-              <span>{{$t('chargeDetail.span5')}}</span>
-            </div>
-            <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span6')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span6") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span7')}}
-                <i style="font-size: 14px;">##</i>
+                {{ $t("chargeDetail.span7") }}
+                <i style="font-size: 14px">##</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span8')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span8") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
-              <span>{{$t('chargeDetail.span9')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span9") }}</span>
             </div>
           </div>
         </div>
-        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span> <br />
-        <span class="notice_smile">{{$t('chargeDetail.span19')}}</span>
+        <span class="notice_smile">{{ $t("chargeDetail.span3") }}</span> <br />
+        <span class="notice_smile">{{ $t("chargeDetail.span19") }}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
 
       <div class="md:mt-10" id="smilePro">
-        <h2 class="LASIK-h2" style="margin-bottom: 0 !important;">{{$t('chargeDetail.title7')}}</h2>
+        <div>
+          <div class="pcShow" style="min-height: 140px"></div>
+          <div class="mbShow" style="min-height: 110px"></div>
+        </div>
+        <h2 class="LASIK-h2" style="margin-bottom: 0 !important">
+          {{ $t("chargeDetail.title7") }}
+        </h2>
       </div>
       <!-- smilePro -->
-      <div class="pb-20 table-1-box">
+      <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}}</p>
+                <p>{{ $t("chargeDetail.p1") }}</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}}</p>
+                <p>{{ $t("chargeDetail.p2") }}</p>
               </th>
             </tr>
           </thead>
@@ -147,11 +188,13 @@
               </td>
               <td>
                 <span>$29,800</span>
-                <span class="block" style="font-size: 16px;">{{$t('chargeDetail.span15')}}</span>
+                <span class="block" style="font-size: 16px">{{
+                  $t("chargeDetail.span15")
+                }}</span>
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_5')}}</td>
+              <td colspan="4" id="blue">{{ $t("chargeDetail.td1_5") }}</td>
             </tr>
             <tr>
               <td>
@@ -162,70 +205,96 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
+              <td colspan="4" class="free">
+                {{ $t("chargeDetail.span5") }} $100^
+              </td>
             </tr>
           </tbody>
         </table>
-        <span>^{{$t('chargeDetail.span17')}}</span>
+        <span>^{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{$t('chargeDetail.span1')}}</span>
+        <span>{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span>^{{$t('chargeDetail.span2')}}</span>
+        <span>^{{ $t("chargeDetail.span2") }}</span>
       </div>
-      <div class="pb-20 taoc_boxs">
+      <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>{{$t('chargeDetail.span18')}}</span>
+            <span>{{ $t("chargeDetail.span18") }}</span>
           </div>
           <div class="icon-box icon-box1">
             <div class="box box-img-mb">
-              <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
-              <span>{{$t('chargeDetail.title8')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.title8") }}</span>
             </div>
             <div class="box box-img-mb">
-              <img src="https://static.cmereye.com/imgs/2023/08/87e7b35ebbb3bec5.png" alt />
-              <span>{{$t('chargeDetail.title9')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/08/87e7b35ebbb3bec5.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.title9") }}</span>
             </div>
           </div>
           <div class="icon-box">
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
-              <span>{{$t('chargeDetail.span4')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span4") }}</span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
-              <span>{{$t('chargeDetail.span5')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span5") }}</span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span14')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span14") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span7')}}
-                <i style="font-size: 14px;">##</i>
+                {{ $t("chargeDetail.span7") }}
+                <i style="font-size: 14px">##</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span8')}}
-                <i style="font-size: 14px;">##</i>
+                {{ $t("chargeDetail.span8") }}
+                <i style="font-size: 14px">##</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
-              <span>{{$t('chargeDetail.span9')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span9") }}</span>
             </div>
           </div>
         </div>
         <div class="smile_pro_notice">
-          <span>{{$t('chargeDetail.span3')}}</span>
-          <span>{{$t('chargeDetail.span19')}}</span>
+          <span>{{ $t("chargeDetail.span3") }}</span>
+          <span>{{ $t("chargeDetail.span19") }}</span>
           <!-- <span>{{$t('chargeDetail.span16')}}</span> -->
         </div>
       </div>
@@ -234,25 +303,35 @@
       </div>
 
       <div class="md:mt-10" id="ICL">
-        <h2 style="margin-bottom: 0 !important;">{{$t('chargeDetail.title2')}}</h2>
+        <div>
+          <div class="pcShow" style="min-height: 140px"></div>
+          <div class="mbShow" style="min-height: 110px"></div>
+        </div>
+        <h2 style="margin-bottom: 0 !important">
+          {{ $t("chargeDetail.title2") }}
+        </h2>
       </div>
       <!-- ICL植入式隱形眼鏡 -->
       <div class="table-1-box pcShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p4')}})</p>
+                <p>{{ $t("chargeDetail.p1") }} ({{ $t("chargeDetail.p4") }})</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p1')}} ({{$t('chargeDetail.p5')}})</p>
+                <p>{{ $t("chargeDetail.p1") }} ({{ $t("chargeDetail.p5") }})</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p4')}})</p>
+                <p>{{ $t("chargeDetail.p2") }} ({{ $t("chargeDetail.p4") }})</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}} ({{$t('chargeDetail.p5')}})</p>
+                <p>{{ $t("chargeDetail.p2") }} ({{ $t("chargeDetail.p5") }})</p>
               </th>
             </tr>
           </thead>
@@ -273,7 +352,10 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_3')}} {{ $t('chargeDetail.td1_4') }} 1.9.2023起</td>
+              <td colspan="4" id="blue">
+                {{ $t("chargeDetail.td1_3") }}
+                {{ $t("chargeDetail.td1_4") }} 1.9.2023起
+              </td>
             </tr>
             <tr>
               <td>
@@ -290,26 +372,38 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $500^</td>
+              <td colspan="4" class="free">
+                {{ $t("chargeDetail.span5") }} $500^
+              </td>
             </tr>
           </tbody>
         </table>
-        <span>^{{$t('chargeDetail.span17')}}</span>
+        <span>^{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{$t('chargeDetail.span11')}}</span>
+        <span>{{ $t("chargeDetail.span11") }}</span>
         <br />
-        <span>^{{$t('chargeDetail.span2')}}</span>
+        <span>^{{ $t("chargeDetail.span2") }}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}} <br /> ({{ $t('chargeDetail.p4') }})</p>
+                <p>
+                  {{ $t("chargeDetail.p1") }} <br />
+                  ({{ $t("chargeDetail.p4") }})
+                </p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}} <br /> ({{ $t('chargeDetail.p4') }})</p>
+                <p>
+                  {{ $t("chargeDetail.p2") }} <br />
+                  ({{ $t("chargeDetail.p4") }})
+                </p>
               </th>
             </tr>
           </thead>
@@ -324,7 +418,11 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（{{ $t('chargeDetail.td1_4') }}10.7.2023）</td>
+              <td colspan="4" id="blue">
+                {{ $t("chargeDetail.td1") }}（{{
+                  $t("chargeDetail.td1_4")
+                }}10.7.2023）
+              </td>
             </tr>
             <tr>
               <td>
@@ -335,7 +433,9 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $500^</td>
+              <td colspan="4" class="free">
+                {{ $t("chargeDetail.span5") }} $500^
+              </td>
             </tr>
           </tbody>
         </table>
@@ -345,10 +445,16 @@
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}} <br /> ({{ $t('chargeDetail.p5') }})</p>
+                <p>
+                  {{ $t("chargeDetail.p1") }} <br />
+                  ({{ $t("chargeDetail.p5") }})
+                </p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}} <br /> ({{ $t('chargeDetail.p5') }})</p>
+                <p>
+                  {{ $t("chargeDetail.p2") }} <br />
+                  ({{ $t("chargeDetail.p5") }})
+                </p>
               </th>
             </tr>
           </thead>
@@ -363,7 +469,11 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1')}}（{{ $t('chargeDetail.td1_4') }}6.6.2023）</td>
+              <td colspan="4" id="blue">
+                {{ $t("chargeDetail.td1") }}（{{
+                  $t("chargeDetail.td1_4")
+                }}6.6.2023）
+              </td>
             </tr>
             <tr>
               <td>
@@ -374,67 +484,91 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $500^</td>
+              <td colspan="4" class="free">
+                {{ $t("chargeDetail.span5") }} $500^
+              </td>
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span11')}}</span>
+        <span>{{ $t("chargeDetail.span11") }}</span>
         <br />
-        <span>*{{$t('chargeDetail.span2')}}</span>
+        <span>*{{ $t("chargeDetail.span2") }}</span>
       </div>
-      <div class="pb-20 taoc_boxs">
+      <div class="taoc_boxs">
         <div class="mt-20 taoc_box taoc_box_2">
           <div class="titel">
-            <span>{{$t('chargeDetail.span18')}}</span>
+            <span>{{ $t("chargeDetail.span18") }}</span>
           </div>
           <div class="icon-box">
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
-              <span>{{$t('chargeDetail.span4')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span4") }}</span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span5')}}
+                {{ $t("chargeDetail.span5") }}
                 <br />
-                （{{$t('chargeDetail.span10')}}）
+                （{{ $t("chargeDetail.span10") }}）
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span14')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span14") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span8')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span8") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
           </div>
         </div>
-        <span class="icl_smile shoufei">{{$t('chargeDetail.span3')}}</span>
+        <span class="icl_smile shoufei">{{ $t("chargeDetail.span3") }}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
       <!-- LASIK 激光矯視 -->
       <div class="md:mt-10" id="LASIK">
-        <h2 class="LASIK-h2" style="margin-bottom: 0 !important;">{{$t('chargeDetail.title3_1')}}</h2>
+        <div>
+          <div class="pcShow" style="min-height: 140px"></div>
+          <div class="mbShow" style="min-height: 110px"></div>
+        </div>
+        <h2 class="LASIK-h2" style="margin-bottom: 0 !important">
+          {{ $t("chargeDetail.title3_1") }}
+        </h2>
       </div>
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}}</p>
+                <p>{{ $t("chargeDetail.p1") }}</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}}</p>
+                <p>{{ $t("chargeDetail.p2") }}</p>
               </th>
             </tr>
           </thead>
@@ -449,7 +583,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_5')}}</td>
+              <td colspan="4" id="blue">{{ $t("chargeDetail.td1_5") }}</td>
             </tr>
             <tr>
               <td>
@@ -460,78 +594,108 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
+              <td colspan="4" class="free">
+                {{ $t("chargeDetail.span5") }} $100^
+              </td>
             </tr>
           </tbody>
         </table>
-        <span>^{{$t('chargeDetail.span17')}}</span>
+        <span>^{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{$t('chargeDetail.span1')}}</span>
+        <span>{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span>^{{$t('chargeDetail.span2')}}</span>
+        <span>^{{ $t("chargeDetail.span2") }}</span>
       </div>
-      <div class="pb-20 taoc_boxs">
+      <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>{{$t('chargeDetail.span18')}}</span>
+            <span>{{ $t("chargeDetail.span18") }}</span>
           </div>
           <div class="icon-box">
-            <div class="box">
-            </div>
+            <div class="box"></div>
             <div class="box box-img-mb">
-              <img src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png" alt />
-              <span>{{$t('chargeDetail.title8')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/08/76b2fd7c873432e1.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.title8") }}</span>
+            </div>
+            <div class="box"></div>
+            <div class="box">
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span4") }}</span>
             </div>
             <div class="box">
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span5") }}</span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
-              <span>{{$t('chargeDetail.span4')}}</span>
-            </div>
-            <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
-              <span>{{$t('chargeDetail.span5')}}</span>
-            </div>
-            <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span6')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span6") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span7')}}
-                <i style="font-size: 14px;">##</i>
+                {{ $t("chargeDetail.span7") }}
+                <i style="font-size: 14px">##</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span8')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span8") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
-              <span>{{$t('chargeDetail.span9')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span9") }}</span>
             </div>
           </div>
         </div>
-        <span class="notice_smile">{{$t('chargeDetail.span3')}}</span><br />
-        <span class="notice_smile">{{$t('chargeDetail.span19')}}</span>
+        <span class="notice_smile">{{ $t("chargeDetail.span3") }}</span
+        ><br />
+        <span class="notice_smile">{{ $t("chargeDetail.span19") }}</span>
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
       <!-- Clear-Vision -->
       <div class="md:mt-10" id="Clear-Vision">
-        <h2 style="margin-bottom: 0 !important;">Clear-Vision</h2>
+        <div>
+          <div class="pcShow" style="min-height: 140px"></div>
+          <div class="mbShow" style="min-height: 110px"></div>
+        </div>
+        <h2 style="margin-bottom: 0 !important">Clear-Vision</h2>
       </div>
       <div class="table-box_four pcShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <colgroup>
             <col width="70" style="width: 50pt" />
             <col width="140" style="width: 105pt" />
@@ -542,30 +706,30 @@
               <td class="boder-none"></td>
               <td rowspan="2" class="et2 table-head-blue">
                 <span>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </span>
               </td>
               <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
                 <span>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </span>
               </td>
               <td colspan="2" rowspan="2" class="et2 table-head-blue">
                 <span>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </span>
               </td>
               <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
                 <span>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </span>
               </td>
             </tr>
@@ -573,8 +737,8 @@
               <!-- <td class="boder-none"></td> -->
             </tr>
             <tr height="19" class="jiage">
-              <td class="danyan" style="width: 73px !important;">
-                <span class="text">{{$t('chargeDetail.p1')}}</span>
+              <td class="danyan" style="width: 73px !important">
+                <span class="text">{{ $t("chargeDetail.p1") }}</span>
               </td>
               <td class>
                 <span>$20,000 - $35,000</span>
@@ -592,30 +756,36 @@
             <tr height="19" class="free">
               <td class="boder-none"></td>
               <td colspan="7" class="et2">
-                <span>{{$t('chargeDetail.span5')}} $600</span>
+                <span>{{ $t("chargeDetail.span5") }} $600</span>
               </td>
             </tr>
           </tbody>
         </table>
-        <span class="vision_smile" style="">^{{$t('chargeDetail.span17')}}</span>
+        <span class="vision_smile" style=""
+          >^{{ $t("chargeDetail.span17") }}</span
+        >
       </div>
       <div class="table-1-box mbShow">
         <table class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
-              <th style="padding: 12px 0;">
+              <th style="padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </p>
               </th>
-              <th style="padding: 12px 0;">
+              <th style="padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </p>
               </th>
             </tr>
@@ -626,7 +796,7 @@
               <td>
                 <div class="my-5">
                   <span>$20,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$35,000</span>
@@ -635,7 +805,7 @@
               <td>
                 <div class="my-5">
                   <span>$23,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$41,000</span>
@@ -643,18 +813,18 @@
               </td>
             </tr>
             <tr>
-              <th style="border-radius: 0 !important;padding: 12px 0;">
+              <th style="border-radius: 0 !important; padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </p>
               </th>
-              <th style="border-radius: 0 !important; padding: 12px 0;">
+              <th style="border-radius: 0 !important; padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </p>
               </th>
             </tr>
@@ -662,7 +832,7 @@
               <td>
                 <div class="my-5">
                   <span>$26,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$51,000</span>
@@ -671,7 +841,7 @@
               <td>
                 <div class="my-5">
                   <span>$31,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$51,000</span>
@@ -679,11 +849,9 @@
               </td>
             </tr>
             <tr>
-              <td
-                colspan="4"
-                class="free"
-                style="padding: 10px 0;"
-              >{{$t('chargeDetail.span5')}} $600</td>
+              <td colspan="4" class="free" style="padding: 10px 0">
+                {{ $t("chargeDetail.span5") }} $600
+              </td>
             </tr>
           </tbody>
         </table>
@@ -692,19 +860,29 @@
         <span>{{ $t("home.navbar") }}</span>
       </div>
     </div>
-    <div v-else-if="currentTitleIndex === 1" class="flex flex-col items-center"></div>
-    <div v-else-if="currentTitleIndex === 2" class="flex flex-col items-center"></div>
+    <div
+      v-else-if="currentTitleIndex === 1"
+      class="flex flex-col items-center"
+    ></div>
+    <div
+      v-else-if="currentTitleIndex === 2"
+      class="flex flex-col items-center"
+    ></div>
     <div v-else-if="currentTitleIndex === 3" class="flex flex-col items-center">
       <div class="table-1-box">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
               <th>
-                <p>{{$t('chargeDetail.p1')}}</p>
+                <p>{{ $t("chargeDetail.p1") }}</p>
               </th>
               <th>
-                <p>{{$t('chargeDetail.p2')}}</p>
+                <p>{{ $t("chargeDetail.p2") }}</p>
               </th>
             </tr>
           </thead>
@@ -719,7 +897,10 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{$t('chargeDetail.td1_5')}} {{ $t('chargeDetail.td1_4') }}5.6.2023</td>
+              <td colspan="4" id="blue">
+                {{ $t("chargeDetail.td1_5") }}
+                {{ $t("chargeDetail.td1_4") }}5.6.2023
+              </td>
             </tr>
             <tr>
               <td>
@@ -730,62 +911,86 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" class="free">{{$t('chargeDetail.span5')}} $100^</td>
+              <td colspan="4" class="free">
+                {{ $t("chargeDetail.span5") }} $100^
+              </td>
             </tr>
           </tbody>
         </table>
-        <span>{{$t('chargeDetail.span1')}}</span>
+        <span>{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span>^{{$t('chargeDetail.span2')}}</span>
+        <span>^{{ $t("chargeDetail.span2") }}</span>
       </div>
-      <div class="pb-20">
+      <div class=" ">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>{{$t('chargeDetail.span18')}}</span>
+            <span>{{ $t("chargeDetail.span18") }}</span>
           </div>
           <div class="icon-box">
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png" alt />
-              <span>{{$t('chargeDetail.span4')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1ec75abea01070d2.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span4") }}</span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png" alt />
-              <span>{{$t('chargeDetail.span5')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/c0f749ea1b2c488f.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span5") }}</span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/aa210b095705a9b2.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span6')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span6") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/1cfef0fbde2b4cdb.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span7')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span7") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png" alt />
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/523fa3d1f9f21b0b.png"
+                alt
+              />
               <span>
-                {{$t('chargeDetail.span8')}}
-                <i style="font-size: 14px;">#</i>
+                {{ $t("chargeDetail.span8") }}
+                <i style="font-size: 14px">#</i>
               </span>
             </div>
             <div class="box">
-              <img src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png" alt />
-              <span>{{$t('chargeDetail.span9')}}</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/01/68d11f0b9181e1a4.png"
+                alt
+              />
+              <span>{{ $t("chargeDetail.span9") }}</span>
             </div>
           </div>
         </div>
-        <span>{{$t('chargeDetail.span3')}}</span>
+        <span>{{ $t("chargeDetail.span3") }}</span>
       </div>
     </div>
     <div v-else class="flex flex-col items-center">
       <div class="table-box_four pcShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <colgroup>
             <col width="70" style="width: 50pt" />
             <col width="140" style="width: 105pt" />
@@ -796,30 +1001,30 @@
               <td class="boder-none"></td>
               <td rowspan="2" class="et2 table-head-blue">
                 <span>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </span>
               </td>
               <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
                 <span>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </span>
               </td>
               <td colspan="2" rowspan="2" class="et2 table-head-blue">
                 <span>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </span>
               </td>
               <td colspan="2" rowspan="2" class="et2 table-head-blue-2">
                 <span>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </span>
               </td>
             </tr>
@@ -827,8 +1032,8 @@
               <!-- <td class="boder-none"></td> -->
             </tr>
             <tr height="19" class="jiage">
-              <td class="danyan" style="width: 73px !important;">
-                <span class="text">{{$t('chargeDetail.p1')}}</span>
+              <td class="danyan" style="width: 73px !important">
+                <span class="text">{{ $t("chargeDetail.p1") }}</span>
               </td>
               <td class>
                 <span>$20,000 - $35,000</span>
@@ -846,7 +1051,7 @@
             <tr height="19" class="free">
               <td class="boder-none"></td>
               <td colspan="7" class="et2">
-                <span>{{$t('chargeDetail.span5')}} $600</span>
+                <span>{{ $t("chargeDetail.span5") }} $600</span>
               </td>
             </tr>
           </tbody>
@@ -854,21 +1059,25 @@
       </div>
       <div class="table-1-box mbShow">
         <table class="gdp">
-          <caption>{{$t('chargeDetail.captionTitle')}}</caption>
+          <caption>
+            {{
+              $t("chargeDetail.captionTitle")
+            }}
+          </caption>
           <thead>
             <tr>
-              <th style="padding: 12px 0;">
+              <th style="padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </p>
               </th>
-              <th style="padding: 12px 0;">
+              <th style="padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span12')}}
+                  {{ $t("chargeDetail.span12") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </p>
               </th>
             </tr>
@@ -879,7 +1088,7 @@
               <td>
                 <div class="my-5">
                   <span>$20,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$35,000</span>
@@ -888,7 +1097,7 @@
               <td>
                 <div class="my-5">
                   <span>$23,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$41,000</span>
@@ -896,18 +1105,18 @@
               </td>
             </tr>
             <tr>
-              <th style="border-radius: 0 !important;padding: 12px 0;">
+              <th style="border-radius: 0 !important; padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p4')}})
+                  ({{ $t("chargeDetail.p4") }})
                 </p>
               </th>
-              <th style="border-radius: 0 !important; padding: 12px 0;">
+              <th style="border-radius: 0 !important; padding: 12px 0">
                 <p>
-                  {{$t('chargeDetail.span13')}}
+                  {{ $t("chargeDetail.span13") }}
                   <br />
-                  ({{$t('chargeDetail.p5')}})
+                  ({{ $t("chargeDetail.p5") }})
                 </p>
               </th>
             </tr>
@@ -915,7 +1124,7 @@
               <td>
                 <div class="my-5">
                   <span>$26,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$51,000</span>
@@ -924,7 +1133,7 @@
               <td>
                 <div class="my-5">
                   <span>$31,000</span>
-                  <div style="margin:10px 0">
+                  <div style="margin: 10px 0">
                     <span>｜</span>
                   </div>
                   <span>$51,000</span>
@@ -932,11 +1141,9 @@
               </td>
             </tr>
             <tr>
-              <td
-                colspan="4"
-                class="free"
-                style="padding: 10px 0;"
-              >{{$t('chargeDetail.span5')}} $600</td>
+              <td colspan="4" class="free" style="padding: 10px 0">
+                {{ $t("chargeDetail.span5") }} $600
+              </td>
             </tr>
           </tbody>
         </table>
@@ -956,39 +1163,39 @@ export default {
         this.$t("chargeDetail.title7"),
         this.$t("chargeDetail.title2"),
         this.$t("chargeDetail.title3"),
-        "Clear-Vision"
+        "Clear-Vision",
       ],
       list: [
         {
           id: 1,
-          title: this.$t("chargeDetail.title5")
+          title: this.$t("chargeDetail.title5"),
         },
         {
           id: 2,
-          title: this.$t("chargeDetail.title6")
-        }
+          title: this.$t("chargeDetail.title6"),
+        },
       ],
-      currentIndex: 1 // 当前点击的tab的索引
+      currentIndex: 1, // 当前点击的tab的索引
     };
   },
   created() {},
   methods: {
     titelclick(index) {
       this.action = index;
-      let lang_sign = ''
-      if (this.$i18n.locale === 'cn') {
-        lang_sign = '/cn/'
-      } else if ( this.$i18n.locale === 'en') {
-        lang_sign = '/en/'
+      let lang_sign = "";
+      if (this.$i18n.locale === "cn") {
+        lang_sign = "/cn/";
+      } else if (this.$i18n.locale === "en") {
+        lang_sign = "/en/";
       } else {
-        lang_sign = '/'
+        lang_sign = "/";
       }
       if (index === 0) {
         window.location.href = `${lang_sign}charge-detail#smile`;
       } else if (index === 1) {
         window.location.href = `${lang_sign}charge-detail#smilePro`;
       } else if (index === 2) {
-        window.location.href =`${lang_sign}charge-detail#ICL`;
+        window.location.href = `${lang_sign}charge-detail#ICL`;
       } else if (index === 3) {
         window.location.href = `${lang_sign}charge-detail#LASIK`;
       } else {
@@ -1008,10 +1215,10 @@ export default {
       this.currentIndex = index;
       // console.log(index);
     },
-    toWhatsapp(){
-      window.open('https://api.whatsapp.com/send/?phone=85260610511')
-    }
-  }
+    toWhatsapp() {
+      window.open("https://api.whatsapp.com/send/?phone=85260610511");
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -1159,7 +1366,7 @@ i {
   display: inline-block;
   max-width: 780px;
   padding: 0 5px;
-  color: #6D6E71;
+  color: #6d6e71;
   font-size: 13px;
   line-height: 20px;
 }
@@ -1167,13 +1374,13 @@ i {
   display: inline-block;
   max-width: 550px;
   padding: 0 5px;
-  color: #6D6E71;
+  color: #6d6e71;
   font-size: 13px;
   line-height: 20px;
 }
 .vision_smile {
   margin-left: 110px;
-  color: #6D6E71;
+  color: #6d6e71;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -1187,30 +1394,30 @@ i {
   font-weight: 350;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: .02rem;
+  letter-spacing: 0.02rem;
   color: #444343;
   max-width: 780px;
   padding: 0 5px;
-  &>span:nth-child(2) {
+  & > span:nth-child(2) {
     margin-top: 5px;
   }
 }
-.tabBtn{
+.tabBtn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   margin-bottom: 20px;
-  span{
+  span {
     width: fit-content;
     padding: 0 5px;
-    border: 1px solid #D9EAED;
+    border: 1px solid #d9eaed;
     height: 46px;
     line-height: 46px;
     text-align: center;
     letter-spacing: 0.15em;
-    color: #4570B6;
+    color: #4570b6;
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;
@@ -1584,7 +1791,7 @@ i {
 }
 @media screen and (max-width: 768px) {
   .box-img-mb {
-    & >img {
+    & > img {
       max-width: 35%;
     }
   }
@@ -1795,12 +2002,12 @@ i {
   .tab-control .tab-control-item:nth-child(4)::after {
     height: 0;
   }
-  .LASIK-h2{
-    &::before{
+  .LASIK-h2 {
+    &::before {
       width: 5vw;
       left: -5vw;
     }
-    &::after{
+    &::after {
       width: 5vw;
       right: -5vw;
     }
