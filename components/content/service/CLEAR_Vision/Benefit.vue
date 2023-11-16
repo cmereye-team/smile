@@ -106,10 +106,10 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .benefit_list li:nth-child(5) p {
-    width: 61%;
+    width: 100%;
   }
   .benefit_list li:nth-child(6) p {
-    width: 64%;
+    width: 100%;
   }
   .benefitList1 {
     p {
