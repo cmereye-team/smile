@@ -574,6 +574,24 @@ body .gradient_font {
     }
   }
 }
+@media screen and (min-width: 767px) and (max-width:959px) {
+  .swiper_di {
+    width: 220px;
+  }
+  .bg_swiper {
+    margin-left: 55px !important;
+  }
+  .booking {
+    p {
+      font-size: 6.4vw;
+      line-height: 6.4vw;
+    }
+  }
+  .video_title {
+    left: 0;
+  }
+  
+}
 @media screen and (min-width: 950px) and (max-width: 1024px) {
   .page_container {
     max-width: 900px !important;

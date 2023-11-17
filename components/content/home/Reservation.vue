@@ -118,7 +118,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 951px) {
   h2 {
     font-family: var(--font_family);
     font-style: normal;
@@ -195,7 +195,7 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 949px) {
   .img_box {
     .inner_box {
       display: flex;
@@ -295,6 +295,22 @@ export default {
       }
     }
   }
+}
+@media screen and (min-width: 767px) and (max-width: 949px) {
+  .award {
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 10px;
+      .img_box {
+        margin: 70px 0;
+
+        .inner_box {
+          img {
+            width: 10vw;
+          }
+        }
+      }
+    }
 }
 @media screen and (min-width: 950px) and (max-width: 1024px) {
   .Se3CentreInfor {
