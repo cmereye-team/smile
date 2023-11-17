@@ -1314,17 +1314,17 @@ module.exports = {
         des3: `可按需要選擇取<br />出鏡片`,
         des4: `提供絕佳夜間<br />視力`,
         des5: `鏡片有紫外線<br />防護功能`,
-        des6: `ICL鏡片既可永<br class="pcShow" />久<br class="mbShow" />存放眼內亦可<br class="pcShow" />還原`,
-        des7: `手術時間短，復<br class="pcShow" />原<br class="mbShow" />期短，手術過<br class="pcShow" />程最<br class="mbShow" />快只需<br class="pcShow" />20-30分鐘`,
+        des6: `ICL鏡片既可永久<br />存放眼內亦可還原`,
+        des7: `手術時間短<span class="mbShow" >，</span><br class="pcShow" />復原<br class="mbShow" />期短，手術過程<br class="pcShow" />最<br class="mbShow" />快只需20-30分鐘`,
         des8: `鏡片柔軟靈活 <br /> 易於植入`
       },
       step: {
         h2: `植入式隱形眼鏡<br class="mbShow" />植入過程`,
         des1: `進行手術前，<br class="mbShow" />醫生先在客人<br class="pcShow" />眼睛<br class="mbShow" />上滴麻醉眼藥水。`,
         des2: `在角膜製作一個約3<br class="mbShow" />毫米的<br class="pcShow" />小開口，將摺<br class="mbShow" />疊的晶體植入<br class="pcShow" />眼球。`,
-        des3: `植入晶體後，醫生<br class="mbShow" />會調整晶<br class="pcShow" />體的位<br class="mbShow" />置，確保在適宜的<br class="mbShow" />位<br class="pcShow" />置再定位。`,
-        des4: `手術結束後，需按醫<br class="mbShow" />生指示<br class="pcShow" />滴眼藥水。<br class="mbShow" />一般矯視後第二<br class="pcShow" /><br class="mbShow" />天已能恢復視力。`,
-        des5: `完成手術後，需按<br class="mbShow" />指示定期<br class="pcShow" />覆診以追<br class="mbShow" />蹤視力。`,
+        des3: `植入晶體後，醫生<br class="mbShow" />會調整晶體<br class="pcShow" />的位<br class="mbShow" />置，確保在適宜的<br class="mbShow" />位置<br class="pcShow" />再定位。`,
+        des4: `手術結束後，需按醫<br class="mbShow" />生指示<br class="pcShow" />滴眼藥水。<br class="mbShow" />一般矯視後<br class="pcShow" />第二天已<br class="mbShow" />能恢復視力。`,
+        des5: `完成手術後，需按<br class="mbShow" />指示<br class="pcShow" />定期覆診以追<br class="mbShow" />蹤視力。`,
       },
       benefit: {
         h2: 'ICL植入式隱形眼鏡的好處',

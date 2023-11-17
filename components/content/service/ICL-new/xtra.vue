@@ -80,7 +80,7 @@
               <div>術後復原快</div>
             </div>
 
-            <div>手術以微創技術進<br />行，術後復原期短</div>
+            <div>手術以微創技術進<br class="mbShow" />行，<br class="pcShow" />術後復原期短</div>
           </div>
           <div>
             <div>

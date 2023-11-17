@@ -157,11 +157,11 @@ export default {
       flex-wrap: wrap;
       justify-content: space-between;
       .listIn{
-        width: 260px;
+        width: 290px;
         margin-bottom: 56px;
         &-t{
           width: 100%;
-          height: 260px;
+          height: 290px;
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
