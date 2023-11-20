@@ -76,7 +76,7 @@
         <br />
         <span>·{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span19") }}</span>
+        <span>{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
@@ -217,7 +217,7 @@
         <br />
         <span>·{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span19") }}</span>
+        <span>{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
@@ -386,7 +386,7 @@
         <br />
         <span>·{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span19") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
+        <span>{{ $t("chargeDetail.span21") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -608,7 +608,7 @@
         <br />
         <span>·{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span19") }}</span>
+        <span>{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
