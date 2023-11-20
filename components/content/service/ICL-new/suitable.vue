@@ -325,7 +325,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .btn-subscribe {
-    margin: 53px auto 63px;
+    margin: 33px auto 125px;
     background: #A5E1D7;
     border-radius: 49px;
     width: fit-content;
@@ -410,7 +410,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .btn-subscribe {
-    margin: 36px auto 36px;
+    margin: 16px auto 16px;
     background: #A5E1D7;
     border-radius: 49px;
     width: fit-content;
