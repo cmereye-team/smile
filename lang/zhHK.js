@@ -1309,9 +1309,9 @@ module.exports = {
     },
     icl: {
       benefit_new: {
-        des1: `ICL鏡片由含有<br class="mbShow" />膠<br class="pcShow" />原蛋白材質製<br class="mbShow" />成，<br class="pcShow" />與眼球互相<br class="mbShow" />兼容`,
+        des1: `ICL鏡片由含有<br class="mbShow" /><br class="pcShow" />膠原蛋白材質製<br class="mbShow" />成，<br class="pcShow" />與眼球互相<br class="mbShow" />兼容`,
         des2: `過程無須切削角<br />膜，減低引發乾 <br />眼症的機會`,
-        des3: `可按需要選擇取<br />出鏡片`,
+        des3: `可按需要<br />選擇取出鏡片`,
         des4: `提供絕佳夜間<br />視力`,
         des5: `鏡片有紫外線<br />防護功能`,
         des6: `ICL鏡片既可永久<br />存放眼內亦可還原`,
