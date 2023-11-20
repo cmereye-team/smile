@@ -86,7 +86,7 @@ export default {
           ]
         }, {
           main_nav: "收費詳情",
-          link: "/free",
+          link: "/fee",
           child_list: [
             {
               child_item: "",
@@ -190,4 +190,4 @@ $active_gradient: linear-gradient(#81dbec, #4570b6);
 // mb
 @media (max-width: 768px) {
 }
-</style> 
+</style>

@@ -52,7 +52,7 @@
           </li> -->
         </ul>
         <div class="mb-10">
-          <nuxt-link class="main_nav text-xl" :to="localePath('/free')"
+          <nuxt-link class="main_nav text-xl" :to="localePath('/fee')"
             ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
               {{$t('home.headers.feeConsultation')}}
             </div></nuxt-link

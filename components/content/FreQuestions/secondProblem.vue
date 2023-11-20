@@ -5,7 +5,7 @@
         <h2>{{$t('home.headers.commonProblemChild_2')}}</h2>
       </div>
       <el-collapse v-model="activeNames" @change="handleChange">
-        <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
+        <!-- <img src="@/asset/image/fee/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item v-for="(item,index) in lists" :key="index+1" :name="`${index+1}`">
           <template slot="title">
             <div class="contents">

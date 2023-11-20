@@ -332,7 +332,7 @@ export default {
       },
       reservationService: {
         main_nav: this.$t("home.headers.feeConsultation"),
-        link: "/free",
+        link: "/fee",
       },
       video: {
         main_nav: "矯視資訊影片",

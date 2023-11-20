@@ -623,7 +623,7 @@ export default {
       },
       reservationService: {
         main_nav: this.$t("home.headers.feeConsultation"),
-        link: "/free",
+        link: "/fee",
       },
       share: {
         main_nav: "個案分享",

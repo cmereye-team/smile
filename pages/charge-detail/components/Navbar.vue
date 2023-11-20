@@ -104,7 +104,7 @@ export default {
         },
         {
           main_nav: "收費詳情",
-          link: "/free",
+          link: "/fee",
           child_list: [
             {
               child_item: "",
