@@ -72,13 +72,13 @@
             </tr>
           </tbody>
         </table>
-        <span>^{{ $t("chargeDetail.span17") }}</span>
-        <br />
         <span>{{ $t("chargeDetail.span1") }}</span>
+        <br />
+        <span>·{{ $t("chargeDetail.span17") }}</span>
         <br />
         <span>{{ $t("chargeDetail.span19") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span18") }}</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
@@ -213,13 +213,13 @@
             </tr>
           </tbody>
         </table>
-        <span>^{{ $t("chargeDetail.span17") }}</span>
-        <br />
         <span>{{ $t("chargeDetail.span1") }}</span>
+        <br />
+        <span>·{{ $t("chargeDetail.span17") }}</span>
         <br />
         <span>{{ $t("chargeDetail.span19") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span18") }}</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
@@ -382,11 +382,11 @@
             </tr>
           </tbody>
         </table>
-        <span>^{{ $t("chargeDetail.span17") }}</span>
-        <br />
         <span>{{ $t("chargeDetail.span11") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span19") }}</span><span>{{ $t("chargeDetail.span18") }}</span>
+        <span>·{{ $t("chargeDetail.span17") }}</span>
+        <br />
+        <span>{{ $t("chargeDetail.span19") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -604,13 +604,13 @@
             </tr>
           </tbody>
         </table>
-        <span>^{{ $t("chargeDetail.span17") }}</span>
-        <br />
         <span>{{ $t("chargeDetail.span1") }}</span>
+        <br />
+        <span>·{{ $t("chargeDetail.span17") }}</span>
         <br />
         <span>{{ $t("chargeDetail.span19") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span18") }}</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
@@ -768,7 +768,7 @@
           </tbody>
         </table>
         <span class="vision_smile" style=""
-          >^{{ $t("chargeDetail.span17") }}</span
+          >·{{ $t("chargeDetail.span17") }}</span
         >
       </div>
       <div class="table-1-box mbShow">
