@@ -304,6 +304,9 @@
         <span v-html="$t('service.icl.suitable.span6')"></span>
       </div>
     </div>
+    <div class="btn-subscribe">
+      <a href="https://api.whatsapp.com/send/?phone=85260610511" target="_blank">預約咨詢</a>
+    </div>
   </div>
 </template>
 <script>
@@ -321,6 +324,30 @@ h2 {
   color: #4570b6;
 }
 @media screen and (min-width: 768px) {
+  .btn-subscribe {
+    margin: 53px auto 63px;
+    background: #A5E1D7;
+    border-radius: 49px;
+    width: fit-content;
+    color: #FFF;
+
+    a {
+      margin: 15px 36px;
+      text-align: center;
+      font-family: Noto Sans HK;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 80% */
+      letter-spacing: 7.5px;
+      display: inline-block;
+      padding-left: 7px;
+    }
+  }
+  .btn-subscribe:hover {
+    transform: scale(1.05) ;
+    transition: all .3s ease-in-out;
+  }
   .page_container {
     padding: 0;
   }
@@ -382,6 +409,26 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .btn-subscribe {
+    margin: 36px auto 36px;
+    background: #A5E1D7;
+    border-radius: 49px;
+    width: fit-content;
+    color: #FFF;
+
+    a {
+      margin: 8.5px 14.6px;
+      text-align: center;
+      font-family: Noto Sans HK;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
+      padding-left: 7px;
+      display: inline-block;
+    }
+  }
   .title-content {
     color: #4570b6;
     text-align: center;
