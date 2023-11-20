@@ -41,6 +41,15 @@
               alt=""
             />
           </div>
+          <div
+            class="swiper-slide"
+            @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
+          >
+            <img
+              src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -185,6 +194,7 @@ h2 {
     width: 100%;
     img {
       width: 100%;
+      min-height: 231px;
     }
   }
   .title-content {
