@@ -91,6 +91,17 @@
               />
             </div>
           </div>
+          <div
+            class="swiper-slide"
+            @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
+          >
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
