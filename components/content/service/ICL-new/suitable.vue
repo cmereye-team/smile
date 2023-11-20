@@ -305,7 +305,7 @@
       </div>
     </div>
     <div class="btn-subscribe">
-      <a href="https://api.whatsapp.com/send/?phone=85260610511" target="_blank">預約咨詢</a>
+      <a href="https://api.whatsapp.com/send/?phone=85260610511&text=我想預約(W-03)%20ICL植入式隱形眼鏡術前檢查" target="_blank">預約咨詢</a>
     </div>
   </div>
 </template>
