@@ -25,6 +25,15 @@
           </div>
           <div
             class="swiper-slide"
+            @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
+          >
+            <img
+              src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide"
             @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')"
           >
             <img
@@ -38,15 +47,6 @@
           >
             <img
               src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
-              alt=""
-            />
-          </div>
-          <div
-            class="swiper-slide"
-            @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
-          >
-            <img
-              src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
               alt=""
             />
           </div>
@@ -71,6 +71,17 @@
           </div>
           <div
             class="swiper-slide"
+            @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
+          >
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
             @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')"
           >
             <div>
@@ -87,17 +98,6 @@
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-            @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
-          >
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
                 alt=""
               />
             </div>

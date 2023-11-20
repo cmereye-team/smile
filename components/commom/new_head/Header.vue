@@ -1941,7 +1941,7 @@ $active_gradient: #4570b6;
 @media (min-width: 768px) {
   .header {
     // margin: 20px auto;
-    margin-left: 0;
+    margin-left: auto;
     display: flex;
     align-items: center;
     align-content: center;
