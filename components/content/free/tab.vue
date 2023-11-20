@@ -74,9 +74,9 @@
         </table>
         <span>{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span>·{{ $t("chargeDetail.span17") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span21") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
@@ -215,9 +215,9 @@
         </table>
         <span>{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span>·{{ $t("chargeDetail.span17") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span21") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
@@ -384,9 +384,9 @@
         </table>
         <span>{{ $t("chargeDetail.span11") }}</span>
         <br />
-        <span>·{{ $t("chargeDetail.span17") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span21") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -606,9 +606,9 @@
         </table>
         <span>{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span>·{{ $t("chargeDetail.span17") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>{{ $t("chargeDetail.span21") }}</span>
+        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
@@ -768,7 +768,7 @@
           </tbody>
         </table>
         <span class="vision_smile" style=""
-          >·{{ $t("chargeDetail.span17") }}</span
+          ><strong>·</strong>{{ $t("chargeDetail.span17") }}</span
         >
       </div>
       <div class="table-1-box mbShow">
@@ -1430,6 +1430,9 @@ i {
   }
 }
 @media screen and (min-width: 768px) {
+  .free-point {
+    
+  }
   .taoc_box_2 .box {
     margin-top: 35px !important;
   }
