@@ -20,7 +20,7 @@
           <tbody>
             <tr style="background-color: #f3fcfe">
               <td>{{ $t("contactUs.serveTable.h3_1") }}</td>
-              <td>3956 2026</td>
+              <td>3892 5099</td>
               <td>9345 1508</td>
             </tr>
             <tr>
@@ -30,7 +30,7 @@
             </tr>
             <tr>
               <td>{{ $t("contactUs.serveTable.h3_3") }}</td>
-              <td>3892 5089</td>
+              <td>3892 5099</td>
               <td>6918 0511</td>
             </tr>
           </tbody>
@@ -48,7 +48,7 @@
               src="https://static.cmereye.com/imgs/2023/01/ed5d72922187f32e.jpg"
               alt=""
             />
-            <span class="mr-10"> 3956 2026 </span>
+            <span class="mr-10"> 3892 5099 </span>
 
             <img
               style="width: 17px; height: 17px"
@@ -84,7 +84,7 @@
               src="https://static.cmereye.com/imgs/2023/01/ed5d72922187f32e.jpg"
               alt=""
             />
-            <span class="mr-10"> 3892 5089</span>
+            <span class="mr-10"> 3892 5099</span>
 
             <img
               style="width: 17px; height: 17px"
