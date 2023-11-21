@@ -212,7 +212,7 @@ export default {
       currentIndex: 0, // 当前点击的tab的索引
       tableData: [
         {
-          number: "3956 2026",
+          number: "3956 5099",
           name: this.$t('contactUs.googleMap.name1'),
           address: this.$t('contactUs.googleMap.address1')
         },
@@ -227,7 +227,7 @@ export default {
           address: this.$t('contactUs.googleMap.address3')
         },
         {
-          number: "3892 5089",
+          number: "3892 5099",
           name: this.$t('contactUs.googleMap.name10'),
           address: this.$t('contactUs.googleMap.address4')
         },
