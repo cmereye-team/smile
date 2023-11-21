@@ -4,30 +4,33 @@
     <Navbar />
 
     <MainBanner />
-    <film />
     <Benefit />
+    <film />
+    <process />
+    <xtar />
     <suitable />
     <share />
-
+    
+    <BusinessHours />
     <Footer />
     <footers />
   </div>
 </template>
 
 <script>
-// import Header from "@/components/commom/head/Header.vue";
-// import Navbar from "@/components/commom/head/Navbar.vue";
-// import Footer from "@/components/commom/foot/Footer.vue";
 import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
+import BusinessHours from "@/components/commom/business/business-hours.vue";
 
-import MainBanner from "@/components/content/service/ICL/MainBanner.vue";
-import film from "@/components/content/service/ICL/film.vue";
-import Benefit from "@/components/content/service/ICL/Benefit.vue";
-import suitable from "@/components/content/service/ICL/suitable.vue";
-import share from "@/components/content/service/ICL/share.vue";
+import MainBanner from "@/components/content/service/ICL-new/MainBanner.vue";
+import film from "@/components/content/service/ICL-new/film.vue";
+import Benefit from "@/components/content/service/ICL-new/Benefit.vue";
+import suitable from "@/components/content/service/ICL-new/suitable.vue";
+import share from "@/components/content/service/ICL-new/share.vue";
 import footers from "@/components/commom/foot/footers.vue";
+import process from "@/components/content/service/ICL-new/process.vue"
+import xtar from '@/components/content/service/ICL-new/xtra.vue'
 
 export default {
   components: {
@@ -37,9 +40,12 @@ export default {
     MainBanner,
     film,
     Benefit,
+    process,
+    xtar,
     suitable,
     share,
     footers,
+    BusinessHours,
   },
   head() {
     return {
