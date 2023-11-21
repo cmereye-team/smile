@@ -59,10 +59,10 @@
             </tr>
             <tr>
               <td>
-                <span>$12,000*</span>
+                <span>$12,000<sup>^</sup></span>
               </td>
               <td>
-                <span>$19,000*</span>
+                <span>$19,000<sup>^</sup></span>
               </td>
             </tr>
             <tr>
@@ -72,11 +72,11 @@
             </tr>
           </tbody>
         </table>
-        <span>&nbsp;<strong>*</strong>&nbsp;{{ $t("chargeDetail.span1") }}</span>
+        <span>&nbsp;^&nbsp;{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
+        <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span>
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
@@ -200,10 +200,10 @@
             </tr>
             <tr>
               <td>
-                <span>$16,500*</span>
+                <span>$16,500<sup>^</sup></span>
               </td>
               <td>
-                <span>$26,800*</span>
+                <span>$26,800<sup>^</sup></span>
               </td>
             </tr>
             <tr>
@@ -213,11 +213,11 @@
             </tr>
           </tbody>
         </table>
-        <span>&nbsp;<strong>*</strong>&nbsp;{{ $t("chargeDetail.span1") }}</span>
+        <span>&nbsp;^&nbsp;{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
+        <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span>
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
@@ -363,16 +363,16 @@
             </tr>
             <tr>
               <td>
-                <span>$38,000*</span>
+                <span>$38,000<sup>^</sup></span>
               </td>
               <td>
-                <span>$42,000*</span>
+                <span>$42,000<sup>^</sup></span>
               </td>
               <td>
-                <span>$64,000*</span>
+                <span>$64,000<sup>^</sup></span>
               </td>
               <td>
-                <span>$68,000*</span>
+                <span>$68,000<sup>^</sup></span>
               </td>
             </tr>
             <tr>
@@ -382,11 +382,11 @@
             </tr>
           </tbody>
         </table>
-        <span>&nbsp;<strong>*</strong>&nbsp;{{ $t("chargeDetail.span11") }}</span>
+        <span>&nbsp;^&nbsp;{{ $t("chargeDetail.span11") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
+        <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span21") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -591,10 +591,10 @@
             </tr>
             <tr>
               <td>
-                <span>$12,000*</span>
+                <span>$12,000<sup>^</sup></span>
               </td>
               <td>
-                <span>$19,000*</span>
+                <span>$19,000<sup>^</sup></span>
               </td>
             </tr>
             <tr>
@@ -604,11 +604,11 @@
             </tr>
           </tbody>
         </table>
-        <span>&nbsp;<strong>*</strong>&nbsp;{{ $t("chargeDetail.span1") }}</span>
+        <span>&nbsp;^&nbsp;{{ $t("chargeDetail.span1") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span17") }}</span>
+        <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span><strong>·</strong>{{ $t("chargeDetail.span21") }}</span>
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span21") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
