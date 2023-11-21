@@ -19,7 +19,7 @@
             @click="shareForm('https://www.youtube.com/watch?v=5ihrzFvOy38')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2022/12/431d01020917af25.jpg"
+              src="https://static.cmereye.com/imgs/2023/11/43b8892a6122243e.png"
               alt=""
             />
           </div>
@@ -28,16 +28,7 @@
             @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="swiper-slide"
-            @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')"
-          >
-            <img
-              src="https://static.cmereye.com/imgs/2022/12/cc1809d5c22d674e.jpg"
+              src="https://static.cmereye.com/imgs/2023/11/84f74f7c64dbf4e3.png"
               alt=""
             />
           </div>
@@ -46,10 +37,20 @@
             @click="shareForm('https://www.youtube.com/watch?v=2t7JjTab4xA')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
+              src="https://static.cmereye.com/imgs/2023/11/c02181abc25dbd8f.png"
               alt=""
             />
           </div>
+          <div
+            class="swiper-slide"
+            @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')"
+          >
+            <img
+              src="https://static.cmereye.com/imgs/2023/11/2ffe61c23d75bf69.png"
+              alt=""
+            />
+          </div>
+
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -64,7 +65,7 @@
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2022/12/431d01020917af25.jpg"
+                src="https://static.cmereye.com/imgs/2023/11/43b8892a6122243e.png"
                 alt=""
               />
             </div>
@@ -75,18 +76,7 @@
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/11/8f7fe6edb4aada62.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-            @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')"
-          >
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/cc1809d5c22d674e.jpg"
+                src="https://static.cmereye.com/imgs/2023/11/84f74f7c64dbf4e3.png"
                 alt=""
               />
             </div>
@@ -97,7 +87,18 @@
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
+                src="https://static.cmereye.com/imgs/2023/11/c02181abc25dbd8f.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')"
+          >
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/11/2ffe61c23d75bf69.png"
                 alt=""
               />
             </div>
@@ -205,7 +206,6 @@ h2 {
     width: 100%;
     img {
       width: 100%;
-      min-height: 231px;
     }
   }
   .title-content {
@@ -358,6 +358,9 @@ h2 {
     flex-direction: column;
     & > div:nth-child(2) {
       margin: 30px 0;
+    }
+    & > div:nth-child(3) {
+      margin-bottom: 30px;
     }
   }
 }
