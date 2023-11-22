@@ -99,9 +99,10 @@ h2 {
   }
   .jianc_box {
     display: flex;
+    padding: 0 90px;
   }
   .box_text {
-    flex: 0.8;
+    flex: 0.7;
     p {
       padding-top: 10px;
     }
