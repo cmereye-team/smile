@@ -87,7 +87,7 @@
 <!--              >預約服務</a-->
 <!--            >-->
             <div class="pcShow discounts-contact">
-              <a :href="localePath('/booking')" target="_blank">
+              <a :href="localePath('/booking')">
                 <button class="link_more shadow-lg">
                   <span></span>
                   <span></span>
