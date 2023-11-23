@@ -423,22 +423,21 @@
             </tr>
             <tr>
               <td colspan="4" id="blue">
-                {{ $t("chargeDetail.td1") }}（{{
-                  $t("chargeDetail.td1_4")
-                }}10.7.2023）
+                {{ $t("chargeDetail.td1_3") }}
+                {{ $t("chargeDetail.td1_4") }} 1.9.2023起
               </td>
             </tr>
             <tr>
               <td>
-                <span>$38,000*</span>
+                <span>$38,000<sup>^</sup></span>
               </td>
               <td>
-                <span>$64,000</span>
+                <span>$64,000<sup>^</sup></span>
               </td>
             </tr>
             <tr>
               <td colspan="4" class="free">
-                {{ $t("chargeDetail.span5") }} $500^
+                {{ $t("chargeDetail.span5") }} $500
               </td>
             </tr>
           </tbody>
@@ -469,34 +468,37 @@
                 <span>$50,000</span>
               </td>
               <td>
-                <span>$95,000*</span>
+                <span>$95,000</span>
               </td>
             </tr>
             <tr>
               <td colspan="4" id="blue">
-                {{ $t("chargeDetail.td1") }}（{{
-                  $t("chargeDetail.td1_4")
-                }}6.6.2023）
+                {{ $t("chargeDetail.td1_3") }}
+                {{ $t("chargeDetail.td1_4") }} 1.9.2023起
               </td>
             </tr>
             <tr>
               <td>
-                <span>$42,000</span>
+                <span>$42,000<sup>^</sup></span>
               </td>
               <td>
-                <span>$68,000</span>
+                <span>$68,000<sup>^</sup></span>
               </td>
             </tr>
             <tr>
               <td colspan="4" class="free">
-                {{ $t("chargeDetail.span5") }} $500^
+                {{ $t("chargeDetail.span5") }} $500
               </td>
             </tr>
           </tbody>
         </table>
-        <span><strong>*</strong>{{ $t("chargeDetail.span11") }}</span>
+        <span>&nbsp;<sup>^</sup>&nbsp;{{ $t("chargeDetail.span11") }}</span>
         <br />
-        <span>*{{ $t("chargeDetail.span2") }}</span>
+        <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
+        <br />
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span21") }}</span>
+        <br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="taoc_boxs">
         <div class="mt-20 taoc_box taoc_box_2">
@@ -861,6 +863,8 @@
             </tr>
           </tbody>
         </table>
+        <span class="vision_smile" style="margin-left:0;"><strong>·</strong>{{ $t("chargeDetail.span17") }}</span
+        >
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
