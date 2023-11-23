@@ -164,7 +164,7 @@ export default {
       }else if(data.type === 'href'){
         window.open(data.link)
       }else if(data.type === 'tel'){
-        window.location.href = 'tel:60610511'
+        window.location.href = 'tel:38925099'
       }
     }
   },
