@@ -335,11 +335,11 @@ export default {
         link: "/fee",
       },
       video: {
-        main_nav: "矯視資訊影片",
+        main_nav: this.$t("home.headers.videos"),
         link: "/video",
       },
       share: {
-        main_nav: "個案分享",
+        main_nav: this.$t("home.headers.casesSharing"),
         link: "/video",
       },
       navList: [

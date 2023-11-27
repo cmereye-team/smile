@@ -6,7 +6,7 @@
     <ul class="step_list flex justify-between">
       <li v-for="(stepItem, index) in stepList" :key="index">
         <img :src="stepItem.src" alt="" />
-        <div class="text">{{ stepItem.des }}</div>
+        <div :class="[$i18n.locale === 'en'? 'textEng text' : 'text'  ]" v-html="stepItem.des"></div>
       </li>
     </ul>
   </div>
@@ -101,6 +101,16 @@ export default {
       line-height: 30px; /* 200% */
       letter-spacing: 3.75px;
       width: 100%;
+    }
+    .textEng {
+      color: #6D6E71;
+      text-align: center;
+      font-family: Noto Sans HK;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 25px; /* 166.667% */
+      letter-spacing: 1.5px;
     }
     li{
       margin: auto;

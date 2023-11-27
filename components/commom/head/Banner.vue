@@ -77,11 +77,11 @@ export default {
     height: 480px;
     background-size: cover !important;
     background-repeat: no-repeat;
-    padding-left: 164px;
+    padding-left: 50px;
 
     .des_box {
-      width: 648px;
-      margin-bottom: 75px;
+      width: 930px;
+      margin-bottom: 35px;
 
       h3 {
         font-family: var(--font_family);
@@ -105,8 +105,8 @@ export default {
         font-family: "Noto Sans JP";
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 1.6;
         /* or 200% */
         margin-top: 12px;
         letter-spacing: 0.1em;

@@ -8,7 +8,7 @@
         <div>{{ $t('service.relexSmile.fit.h3') }}</div>
       </div>
       <div class="fit-r-b">
-        <div class="listBox">
+        <div :class="[$i18n.locale === 'en' ? 'listBox listBoxEng' : 'listBox']">
           <div class="listIn" v-for="(item, index) in fitList" :key="index">
             <div class="listIn-svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="54" height="33" viewBox="0 0 54 33" fill="none">
@@ -27,7 +27,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="listIn-text">{{ item }}</div>
+            <div class="listIn-text" v-html="item"></div>
           </div>
         </div>
         <!-- <div class="listBox">
@@ -105,14 +105,7 @@ export default {
         },
       },
       fitList: [
-        '1,000 度以下近視\n500 度以下散光',
-        '沒有患上眼疾\n如青光眼或視網膜疾病',
-        '發育成熟\n近視度數穩定',
-        '沒有患上自體免疫疾病\n如風濕性關節炎或紅斑狼瘡',
-        '角膜厚度正常',
-        '不需要長期服用類固醇',
-        '角膜沒受感染\n例如發炎或曾受傷',
-        '非懷孕'
+        ...this.$t('service.relexSmile.fit.fitList')
       ]
     };
   },
@@ -197,6 +190,25 @@ export default {
         .listIn:nth-child(7),
         .listIn:nth-child(8)  {
           margin-bottom: 0;
+        }
+      }
+      .listBoxEng {
+        .listIn {
+          &:nth-of-type(odd){
+            width: 50%;
+          }
+          &-svg{
+            margin-right: 10px;
+          }
+          &-text{
+            color: #6D6E71;
+            font-family: Noto Sans HK;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 144.444% */
+            letter-spacing: 1.8px;
+          }
         }
       }
     }

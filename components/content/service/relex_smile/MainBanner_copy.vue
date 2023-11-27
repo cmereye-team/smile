@@ -11,7 +11,8 @@
         alt=""
       />
       <div class="title_box">
-        <div class="title">SMILE {{ "\n" }}微笑激光矯視</div>
+        <div class="title" v-if="$i18n.locale !== 'en' ">SMILE {{ "\n" }}微笑激光矯視</div>
+        <div class="title" v-else>SMILE</div>
         <div class="text">Small Incision Lenticule Extraction</div>
       </div>
       <div class="pathLink">
@@ -50,7 +51,7 @@
     </div>
     <div class="smile-banner-context">
       <div class="title">矯正原理</div>
-      <div class="context" v-html="$t('service.relexSmile.mainBanner.span')"></div>
+      <div :class="[$i18n.locale === 'en'? 'contextEng context' : 'context']" v-html="$t('service.relexSmile.mainBanner.span')"></div>
     </div>
   </div>
 </template>
@@ -210,6 +211,16 @@ export default {
       font-size: 15px;
       line-height: 30px; /* 200% */
       letter-spacing: 4.5px;
+    }
+    .contextEng {
+      color: #6D6E71;
+      text-align: center;
+      font-family: Noto Sans HK;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px; /* 166.667% */
+      letter-spacing: 1.8px;
     }
   }
   .pathLink {

@@ -45,7 +45,7 @@
             <div class="menu-line"></div>
 
             <li
-              v-for="(navItem, index) in navList"
+              v-for="(navItem, index) in $i18n.locale === 'en'? navListEng :  navList"
               :key="index"
               class="nav_item text-lg md:flex flex-col"
               :class="navItem.child_list.length !== 0 ? 'main_after' : ''"
@@ -848,6 +848,140 @@ export default {
         //   link: "/booking",
         //   child_list: [],
         // },
+      ],
+      navListEng: [
+        {
+          main_nav: this.$t("home.headers.aboutSmile"),
+          link: "",
+          child_list: [
+            {
+              child_item: this.$t("home.headers.aboutSmileChild_1"),
+              link: "/group-profile",
+            },
+            {
+              child_item: this.$t("home.headers.aboutSmileChild_2"),
+              link: "/our-medical-team",
+            },
+            {
+              child_item: this.$t("home.headers.aboutSmileChild_3"),
+              link: "/medical-equipment",
+            },
+          ],
+        },
+        {
+          main_nav: this.$t("home.headers.orthopedicServices"),
+          link: "",
+          child_list: [
+            {
+              child_item: this.$t("home.headers.orthopedicServicesChild_1"),
+              link: "/vision-correction/relex-smile",
+            },
+            {
+              child_item: this.$t("home.headers.orthopedicServicesChild_5"),
+              link: "/smilePro",
+            },
+            {
+              child_item: this.$t("home.headers.orthopedicServicesChild_2"),
+              link: "/vision-correction-presbyopia",
+            },
+            {
+              child_item: this.$t("home.headers.orthopedicServicesChild_3"),
+              link: "/vision-correction-lasik",
+            },
+            {
+              child_item: this.$t("home.headers.orthopedicServicesChild_4"),
+              link: "/vision-correction-icl/index-del",
+            },
+          ],
+        },
+        {
+          main_nav: this.$t("home.headers.diagnosisInstructions"),
+          link: "",
+          child_list: [
+            {
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
+              link: "/patient-info",
+            },
+            {
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
+              link: "/flow-of-vision-correction",
+            },
+            {
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
+              link: "/post-corrective-care",
+            },
+          ],
+        },
+        {
+          main_nav: this.$t("home.headers.commonProblem"),
+          link: "",
+          child_list: [
+            {
+              child_item: this.$t("home.headers.commonProblemChild_1"),
+              link: "/FreQuestions#faq-smile",
+            },
+            {
+              child_item: this.$t("home.headers.commonProblemChild_2"),
+              link: "/FreQuestions#faq-lasik",
+            },
+            {
+              child_item: this.$t("home.headers.commonProblemChild_3"),
+              link: "/FreQuestions#faq-icl",
+            },
+            {
+              child_item: this.$t("home.headers.commonProblemChild_4"),
+              link: "/FreQuestions#faq-presbyopia",
+            },
+          ],
+        },
+        // ⬇️ 眼科咨询
+        // {
+        //   main_nav: this.$t("home.headers.ophthalmicConsultation"),
+        //   link: "",
+        //   child_list: [
+        //     {
+        //       child_item: this.$t("home.headers.ophthalmicConsultationChild_1"),
+        //       link: "/video",
+        //     },
+        //     {
+        //       child_item: this.$t("home.headers.ophthalmicConsultationChild_2"),
+        //       link: "/media",
+        //     },
+        // {
+        //   child_item: this.$t("home.headers.ophthalmicConsultationChild_3"),
+        //   link: "/wedding",
+        // },
+        // ],
+        // },
+        // ⬇️ 收费详情
+        // {
+        //   main_nav: this.$t("home.headers.feeConsultation"),
+        //   link: "",
+        //   child_list: [
+        //     {
+        //       child_item: this.$t("home.headers.feeConsultation"),
+        //       link: "/charge-detail"
+        //     },
+        //     {
+        //       child_item: this.$t("home.headers.consumptionVoucher"),
+        //       link: "/consumption-voucher"
+        //     },
+        //     {
+        //       child_item: this.$t("home.headers.consumptionDivit"),
+        //       link: "/divit",
+        //     },
+        //   ],
+        // },
+        {
+          main_nav: this.$t("home.headers.feeConsultation"),
+          link: "/fee",
+          child_list: [],
+        },
+        {
+          main_nav: this.$t("home.headers.contactUs"),
+          link: "/contact-us",
+          child_list: [],
+        },
       ],
       groupList: {
         main_nav: this.$t("home.headers.aboutSmile"),

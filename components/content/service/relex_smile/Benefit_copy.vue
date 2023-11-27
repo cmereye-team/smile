@@ -4,20 +4,19 @@
       <div class="benefit-t">
         <img src="https://static.cmereye.com/imgs/2023/08/223c37697c582ed6.jpg" alt="">
         <span>SMILE</span>
-        <span>微笑激光</span>
+        <span :style="$i18n.locale === 'en' ? 'display: none;' : '' " >微笑激光</span>
       </div>
       <div class="benefit-in">
         <div class="title">
-          <!-- {{$t('service.relexSmile.benefit.h2')}} -->
-          矯視的好處
+          {{$t('service.relexSmile.benefit.h2')}}
         </div>
         <div class="benefit-in-lists">
-          <div class="listIn" v-for="(benefitItem, index) in benefitList" :key="index">
+          <div class="listIn" v-for="(benefitItem, index) in $i18n.locale === 'en' ?  benefitListEng : benefitList" :key="index">
             <div class="listIn-t img_style">
               <img :src="benefitItem.index" alt="" class="index" />
-              <p>{{benefitItem.text}}</p>
+              <p :class="[ $i18n.locale === 'en' ? 'img-style-eng' :'' ]">{{benefitItem.text}}</p>
             </div>
-            <div class="listIn-b">{{benefitItem.des}}</div>
+            <div :class="[ $i18n.locale === 'en' ? 'listInEng-b' :'listIn-b' ]" v-html="benefitItem.des"></div>
           </div>
         </div>
       </div>
@@ -35,7 +34,7 @@ export default {
           des: this.$t('service.relexSmile.benefit.des1'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/10/66ecab04a32b9de6.png',
+          index: 'https://static.cmereye.com/imgs/2023/11/b7c2ae0052ddab4b.png',
           text: '術後復原快',
           des: this.$t('service.relexSmile.benefit.des2'),
         },
@@ -57,6 +56,38 @@ export default {
         {
           index: 'https://static.cmereye.com/imgs/2023/10/615a8a469b1bfa28.png',
           text: '效果穩定',
+          des: this.$t('service.relexSmile.benefit.des6'),
+        },
+      ],
+      benefitListEng: [
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/354142daabe14d8c.png',
+          text: 'Simple Process',
+          des: this.$t('service.relexSmile.benefit.des1'),
+        },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/11/b7c2ae0052ddab4b.png',
+          text: 'Speedy Recovery',
+          des: this.$t('service.relexSmile.benefit.des2'),
+        },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/02557c41a9f23654.png',
+          text: 'Short Process',
+          des: this.$t('service.relexSmile.benefit.des3'),
+        },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/0ae516b4778a67d1.png',
+          text: 'Minimal Postoperative Impact',
+          des: this.$t('service.relexSmile.benefit.des4'),
+        },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/cf3f4cd33d880c99.png',
+          text: 'Minimally Invasive Surgery',
+          des: this.$t('service.relexSmile.benefit.des5'),
+        },
+        {
+          index: 'https://static.cmereye.com/imgs/2023/10/615a8a469b1bfa28.png',
+          text: 'Stable Effect',
           des: this.$t('service.relexSmile.benefit.des6'),
         },
       ],
@@ -173,6 +204,29 @@ export default {
     }
   }
 }
+.img-style-eng {
+  color: #4570B6;
+  text-align: center;
+  font-family: Noto Sans HK;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 35px !important; /* 140% */
+  letter-spacing: 3.75px !important;
+  width: min-content;
+  min-height: 80px !important;
+}
+.listInEng-b {
+  color: #6D6E71;
+  text-align: center;
+  font-family: Noto Sans HK;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 35px !important; /* 175% */
+  letter-spacing: 2px !important;
+  width: 90% !important;
+}
 // h2{
 //   color: #4570B6;
 //   font-weight: 500;
@@ -205,6 +259,39 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
+  .img-style-eng {
+    color: #4570B6;
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 16px !important; 
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 20px !important; /* 125% */
+    letter-spacing: 1.6px !important;
+    min-height: 45px !important;
+    width: min-content;
+  }
+  .listInEng-b {
+    width: 90% !important;
+    color: #6D6E71;
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 15px !important;
+    font-style: normal;
+    font-weight: 300 !important;
+    line-height: 20px !important; /* 133.333% */
+    letter-spacing: 1.5px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-in-lists {
+    &>div:nth-child(4) {
+      .listInEng-b {
+        text-wrap: nowrap!important;
+      }
+    }
+  }
   .benefit{
     &-bg{
       padding: 116px 0 45px;

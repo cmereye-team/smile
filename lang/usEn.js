@@ -15,6 +15,8 @@ module.exports = {
       consumptionDivit: 'DIVIT',
       contactUs: 'Contact Us',
       reservationService: 'Book NOW',
+      videos:'Videos',
+      casesSharing:'Cases Sharing',
 
       aboutSmileChild_1: 'About the Group & Center',
       aboutSmileChild_2: 'Medical Team',
@@ -101,7 +103,17 @@ module.exports = {
       span4: '免責條款',
       title1: 'Call Now',
       title2: 'Chat Now',
-      title3: 'Booking'
+      title3: 'Booking',
+      businessHours: {
+        title:'Business Hours',
+        weekday: 'Monday-Friday',
+        saturday: 'Saturday',
+        publicHolidayAndSunday: `Sundays and <br /> Public Holidays`,
+        rest:'Rest',
+        center:'Central',
+        mongKok:'Mong Kok',
+        tsimShaTsui:'Tsim Sha Tsui'
+      }
     }
   },
   aboutUs: {
@@ -402,10 +414,12 @@ module.exports = {
     td1_2: 'CMER SMILE PRO限定優惠',
     td1_3: 'Discount',
     td1_4: 'from now until',
+    td1_5: "Discount",
     td2: 'Presurgery examination fee',
-    span1: '* Designated credit card enjoys 6/12 months Interest-fee installment',
-    span2: '^ Refund of presurgery examination fee after completion of vision correction surgery',
+    span1: 'Designated credit card enjoys 6/12 months Interest-fee installment',
+    span2: 'Refund of presurgery examination fee after completion of vision correction surgery',
     span3: '# It has to be completed within one year after the surgery. If it exceeds one year, another appointment needs to be scheduled, and the consultation fee will be charged at the regular (non-corrective package) rate.',
+    span19: "## It has to be completed within two year after the surgery. If it exceeds one year, another appointment needs to be scheduled, and the consultation fee will be charged at the regular (non-corrective package) rate.",
     span17: 'The above is the price for non-designated doctors ',
 
     span18: 'Plan includes',
@@ -415,14 +429,16 @@ module.exports = {
     span7: 'Enhancement',
     span8: 'Unlimited Refractive examination',
     span9: 'Medicine fee for the day of correction',
-    span10: '',
+    span10: 'Medicine is extra',
 
-    span11: '* Designated credit card enjoys 6/12/18/24/36 months Interest-fee installment',
+    span11: 'Designated credit card enjoys 6/12/18/24/36 months Interest-fee installment',
     span12: 'Single-focal IOL',
     span13: 'Astigmatic Single-focal IOL',
     span14: '5 follow-up consultations',
-    span15: '',
-    span16: '* It has to be completed within two years after the surgery. If it exceeds one year, another appointment needs to be scheduled, and the consultation fee will be charged at the regular (non-corrective package) rate.',
+    span15: 'Premium',
+    span16: 'It has to be completed within two years after the surgery. If it exceeds one year, another appointment needs to be scheduled, and the consultation fee will be charged at the regular (non-corrective package) rate.',
+    span21: "Surgery charges include the preoperative examination fee of HKD$100. ",
+    span20: "If there is no surgery scheduled, the preoperative examination fee will be charged separately.",
 
     p3: '帶散光',
     p4: 'without astigmatism',
@@ -436,8 +452,8 @@ module.exports = {
     title5: '收費詳情',
     title6: '消費券詳情',
     title7: 'SMILE PRO',
-    title8: '眼睛水润护理1次',
-    title9: '术后眼部彩光护理1次'
+    title8: 'Dry Eye Oxygen Spa Service 1 time',
+    title9: 'Postoperative IPL Eye Care Service 1 time'
   },
   consumptionVoucher: {
     h2: '消費券詳情',
@@ -1380,27 +1396,25 @@ module.exports = {
     relexSmile: {
       benefit: {
         h2: 'Advantages of ReLEx SMILE',
-        des1: 'No need to create a corneal flap',
-        des2: 'Able to resume daily life as early as the next day after surgery',
-        des3: 'The operation process time is 4-5 minutes',
-        des4: 'lower chance of getting postoperative dry eyes and',
-        des5: 'The wound is only about 2mm',
-        des6: 'Significant improvement in vision'
+        des1: `No need to create a corneal flap`,
+        des2: `Able to resume daily life as early as the next day after surgery`,
+        des3: `The operation process time is 4-5 minutes`,
+        des4: `lower chance of <br /> getting postoperative <br /> dry eyes and  <br class="mbShow" />infection`,
+        des5: `The wound is only <br class="pcShow" /> about 2mm`,
+        des6: `Significant improvement in visio`
       },
       fit: {
         h3: 'Who is suitable for SMILE?',
-        fitList1: [
-          `Having below 1,000<br class="mbShow"/> degree myopia and/or 500 <br class="mbShow"/>degree astigmatism `,
-          `The cornea is not infected, <br class="mbShow"/>such as inflammation or<br class="mbShow"/> previous injury`,
-          `Mature development, <br class="mbShow"/>stable myopia`,
-          `Having normal <br class="mbShow"/>corneal thickness`,
+        fitList: [
+          `Having below 1,000<br /> degree myopia and/or<br />500 degree astigmatism `,
+          `No eye disease, such as <br /> glaucoma or retinal disease `,
+          `Mature development, <br />stable myopia`,
+          `Do not suffer from an<br /> autoimmune disease,<br />such as rheumatoid<br />arthritis or lupus`,
+          `Having normal<br />corneal thickness`,
+          `Does not require<br class="mbShow"/>long-<br class="pcShow"/>term steroid use`,
+          `The cornea is not<br class="pcShow"/>infected,<br class="mbShow"/>such as<br class="pcShow"/>inflammation or<br />previous injury`,
+          `non pregnan`
         ],
-        fitList2: [
-          "Do not suffer from an autoimmune disease, such as rheumatoid arthritis or lupus",
-          "No eye disease, such as glaucoma or retinal disease ",
-          "Does not require long-term steroid use",
-          "non pregnant"
-        ]
       },
       mainBanner: {
         p: 'ReLEx SMILE',
@@ -1410,20 +1424,20 @@ module.exports = {
         h2_1: '微笑矯視',
         p: `Smile is a breakthrough new myopia correction technology that is safer and less invasive than traditional LASIK laser correction. Our center's SMILE (Small Incision Lenticule Extraction) uses the latest 3.0 system from Carl Zeiss VisuMax laser. The principle is to create a corneal tissue membrane with a full femtosecond laser scan without opening the corneal flap. The membrane is then removed through a small incision of 2-4mm to achieve vision correction. This technology can correct myopia, astigmatism, and presbyopia, reducing our dependence on glasses for our clients`,
         h2_2: 'Steps of Smile',
-        des1: 'Direct cutting of the corneal mid-layer using',
-        des2: 'Make a small incision of approximately 2-4mm',
-        des3: 'Extract the cut corneal lens from the incision'
+        des1: `Direct cutting of the<br class="mbShow" />corneal mid-layer using`,
+        des2: `Make a small incision of<br class="mbShow" />approximately 2-4mm`,
+        des3: `Extract the cut corneal lens from the<br class="mbShow" />incision`
       },
       xtra: {
         h2: 'SMILE XTRA',
-        p1: '(It can be performed during the performance of Smile)',
+        p1: `(It can be performed during<br class="mbShow" />the performance of Smile)`,
         h3_1: 'What is SMILE XTRA ?',
         p2: `By adding vitamin B2 to the local area of the cornea and then exposing it to UV-V2, the collagen proteins inside the cornea are tightly bound, making the cornea more robust and stable, reducing the width of corneal sagging/deformation/rebound`,
         h3_2: 'Do I need SMILE XTRA ?',
         p3: `If you have a high degree of myopia and thin corneas and wish to strengthen your cornea to reduce the chances of regression, you will be eligible for SMILE XTRA corneal collagen cross-linking after evaluation by a doctor.`,
-        p4: `透過在角膜局部加入維生素B2,再經紫外線V2照射,使角膜裡面的膠原蛋白緊扣,令角膜變得更加堅韌和穩定,降低角膜降弧／變形／反彈的寬度`,
-        h5_2: '我需要接受SMILE XTRA?',
-        p5: `如果你的眼晴度數較深、角膜比較薄，希望加強角膜以減低度數反彈機會，經醫生評估後均可接受SMILE XTRA角膜膠原交聯術。`
+        p4: `By adding vitamin B2 to the local area of<br />the cornea and then exposing it to UV<br class="mbShow" />-V2,<br class="pcShow" />the collagen proteins inside the<br class="mbShow"/>cornea are<br class="pcShow"/>tightly bound, making the<br class="mbShow"/>cornea more<br class="pcShow"/>robust and stable, reducing<br class="mbShow"/>the width of<br class="pcShow" />corneal sagging/<br class="mbShow" />deformation/rebound`,
+        h5_2: 'Do I need SMILE XTRA?',
+        p5: `If you have a high degree of myopia and<br class="mbShow"/>thin<br class="pcShow" />corneas and wish to strengthen your<br class="mbShow"/>cornea<br class="pcShow"/>to reduce the chances of<br class="mbShow"/>regression, you will<br class="pcShow"/>be eligible for SMILE<br class="mbShow"/>XTRA corneal collagen<br class="pcShow"/>cross-linking after<br class="mbShow"/>evaluation by a doctor.`
       }
     },
     smilePro: {

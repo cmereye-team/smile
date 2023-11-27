@@ -358,7 +358,7 @@
             <tr>
               <td colspan="4" id="blue">
                 {{ $t("chargeDetail.td1_3") }}
-                {{ $t("chargeDetail.td1_4") }} 1.9.2023起
+                {{ $t("chargeDetail.td1_4") }} 1.9.2023 <span :style="$i18n.locale == 'en' ? 'display: none' : ''">起</span>
               </td>
             </tr>
             <tr>
@@ -1318,6 +1318,8 @@ th {
   width: 280px;
   border-top: solid 1px #dfdfdf;
   border-left: solid 1px #dfdfdf;
+  font-size: 18px;
+  letter-spacing: 0.9px;
 }
 
 .gdp th {

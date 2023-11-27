@@ -9,7 +9,7 @@
     <Fit />
     <Xtra />
     <div class="businessHours">
-      <div class="businessHours-title">營業時間</div>
+      <div class="businessHours-title">{{ $t('home.footer.businessHours.title') }}</div>
       <div class="businessHours-img">
         <img
           data-src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg"
@@ -24,16 +24,16 @@
       <div class="businessHours-time">
         <!-- <div>  -->
         <div>
-          <div>星期一至五</div>
+          <div>{{ $t('home.footer.businessHours.weekday') }}</div>
           <div>9:00-19:00</div>
         </div>
         <div>
-          <div>星期六</div>
+          <div>{{ $t('home.footer.businessHours.saturday') }}</div>
           <div>9:00-18:00</div>
         </div>
         <div>
-          <div>星期日及公眾假期</div>
-          <div>休息</div>
+          <div v-html="$t('home.footer.businessHours.publicHolidayAndSunday')"></div>
+          <div>{{ $t('home.footer.businessHours.rest') }}</div>
         </div>
         <!-- </div> -->
         <!-- <div
@@ -92,7 +92,7 @@
               />
             </svg>
           </div>
-          <span>中環</span>
+          <span>{{ $t('home.footer.businessHours.center') }}</span>
         </div>
         <div>
           <div>
@@ -117,7 +117,7 @@
               />
             </svg>
           </div>
-          <span>旺角</span>
+          <span>{{  $t('home.footer.businessHours.mongKok') }}</span>
         </div>
         <div>
           <div>
@@ -142,7 +142,7 @@
               />
             </svg>
           </div>
-          <span>尖沙咀</span>
+          <span>{{ $t('home.footer.businessHours.tsimShaTsui') }}</span>
         </div>
       </div>
     </div>
@@ -304,6 +304,7 @@ export default {
         font-weight: 300;
         line-height: 180%; /* 30.6px */
         letter-spacing: 2.04px;
+        text-align: center;
       }
       & > div:nth-child(2) {
         color: #6b6b6b;
@@ -512,6 +513,7 @@ export default {
       justify-content: space-evenly;
       margin: 23px auto 51px;
       & > div {
+        min-width: 100px;
         flex-direction: column;
         &:not(:last-child) {
           margin-right: 0;
