@@ -1890,7 +1890,7 @@ i {
 
     border-radius: 0px 0px 10px 10px;
     font-weight: 700;
-    color: #373c38;
+    color: #ffffff;
     text-align: center;
   }
   .table-1-box table tr td span {
