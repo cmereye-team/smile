@@ -224,7 +224,7 @@ export default {
           }
 
           &:nth-of-type(3) {
-            margin-top: 57px;
+            // margin-top: 57px;
             color: #6D6E71;
             text-align: center;
             font-size: 20px;
@@ -233,6 +233,19 @@ export default {
             /* 175% */
             letter-spacing: 5px;
           }
+        }
+      }
+      .listInEng {
+        &>div:last-child {
+          margin-top: 35px;
+          color: #6D6E71;
+          text-align: center;
+          font-family: Noto Sans HK;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 30px; /* 166.667% */
+          letter-spacing: 1.8px;
         }
       }
     }

@@ -4,7 +4,7 @@
       <img src="https://static.cmereye.com/imgs/2023/08/7a6327e26c0399a6.jpg" alt="">
     </div>
     <div class="fit-r">
-      <div class="fit-r-t">
+      <div :class="[$i18n.locale === 'en'? 'fit-r-tEng fit-r-t' : 'fit-r-t']">
         <div>{{ $t('service.relexSmile.fit.h3') }}</div>
       </div>
       <div class="fit-r-b">
@@ -157,6 +157,11 @@ export default {
           border-top: 12px solid transparent;
           border-bottom: 12px solid transparent;
         }
+      }
+    }
+    &-tEng {
+      &>div{
+        letter-spacing: 2.5px;
       }
     }
     &-b{

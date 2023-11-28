@@ -1454,7 +1454,7 @@ module.exports = {
     },
     relexSmile: {
       benefit: {
-        h2: "矯視的好處",
+        h2: `矯視的好處`,
         des1: `無需製造角膜瓣`,
         des2: `最快術後翌日 \n生活、工作`,
         des3: `4至5分鐘`,

@@ -1454,7 +1454,7 @@ module.exports = {
     },
     relexSmile: {
       benefit: {
-        h2: "SMILE 微笑激光矫视的好处",
+        h2: `矫视的好处`,
         des1: `无需制造角膜瓣`,
         des2: `最快术后翌日 \n生活、工作`,
         des3: `4至5分钟`,

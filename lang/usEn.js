@@ -1395,25 +1395,25 @@ module.exports = {
     },
     relexSmile: {
       benefit: {
-        h2: 'Advantages of ReLEx SMILE',
-        des1: `No need to create a corneal flap`,
-        des2: `Able to resume daily life as early as the next day after surgery`,
-        des3: `The operation process time is 4-5 minutes`,
-        des4: `lower chance of <br /> getting postoperative <br /> dry eyes and  <br class="mbShow" />infection`,
-        des5: `The wound is only <br class="pcShow" /> about 2mm`,
-        des6: `Significant improvement in visio`
+        h2: 'Advantages of<br class="mbShow" />ReLEx SMILE',
+        des1: `No need to create a<br class="mbShow" />corneal flap`,
+        des2: `Able to resume<br class="mbShow" />daily life as early<br class="mbShow" />as the next day<br class="mbShow" />after surgery`,
+        des3: `The operation<br class="mbShow" />process time is<br class="mbShow" />4-5 minutes`,
+        des4: `lower chance of<br />getting postoperative<br />dry eyes and<br class="mbShow" />infection`,
+        des5: `The wound is only<br />about 2mm`,
+        des6: `Significant<br class="mbShow" />improvement<br class="mbShow" />in vision`
       },
       fit: {
         h3: 'Who is suitable for SMILE?',
         fitList: [
-          `Having below 1,000<br /> degree myopia and/or<br />500 degree astigmatism `,
-          `No eye disease, such as <br /> glaucoma or retinal disease `,
+          `Having below 1,000<br />degree myopia and/or<br />500 degree astigmatism `,
+          `No eye disease, such as <br />glaucoma or retinal disease `,
           `Mature development, <br />stable myopia`,
-          `Do not suffer from an<br /> autoimmune disease,<br />such as rheumatoid<br />arthritis or lupus`,
+          `Do not suffer from an<br />autoimmune disease,<br />such as rheumatoid<br />arthritis or lupus`,
           `Having normal<br />corneal thickness`,
           `Does not require<br class="mbShow"/>long-<br class="pcShow"/>term steroid use`,
           `The cornea is not<br class="pcShow"/>infected,<br class="mbShow"/>such as<br class="pcShow"/>inflammation or<br />previous injury`,
-          `non pregnan`
+          `Non pregnan`
         ],
       },
       mainBanner: {

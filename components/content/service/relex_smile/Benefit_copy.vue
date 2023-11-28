@@ -7,8 +7,7 @@
         <span :style="$i18n.locale === 'en' ? 'display: none;' : '' " >微笑激光</span>
       </div>
       <div class="benefit-in">
-        <div class="title">
-          {{$t('service.relexSmile.benefit.h2')}}
+        <div class="title" v-html="$t('service.relexSmile.benefit.h2')">
         </div>
         <div class="benefit-in-lists">
           <div class="listIn" v-for="(benefitItem, index) in $i18n.locale === 'en' ?  benefitListEng : benefitList" :key="index">
@@ -286,6 +285,9 @@ export default {
     align-items: center;
   }
   .benefit-in-lists {
+    &>div:nth-child(1),
+    &>div:nth-child(3),
+    &>div:nth-child(5),
     &>div:nth-child(4) {
       .listInEng-b {
         text-wrap: nowrap!important;

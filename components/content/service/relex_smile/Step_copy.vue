@@ -74,6 +74,17 @@ export default {
     width: 70%;
     margin: 0 auto;
   }
+  .textEng {
+    color: #6D6E71;
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px; /* 175% */
+    letter-spacing: 2px;
+    width: 80%;
+  }
   li {
     img{
       border-radius: 29px;

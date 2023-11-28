@@ -173,6 +173,16 @@ export default {
     line-height: 35px; /* 175% */
     letter-spacing: 6px;
   }
+  .contextEng {
+    color: #6D6E71;
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 166.667% */
+    letter-spacing: 1.8px;
+  }
 }
 .main_banner {
   margin-top: 130px;
