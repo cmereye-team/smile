@@ -95,9 +95,9 @@
                   <span></span>
                   <div class="flex items-center justify-evenly">
                     <div class="text-left">
-                      <h3 class="text-xs font-normal text-center discounts-h3">
-                        立&nbsp;即&nbsp;預&nbsp;約
-                      </h3>
+                      <h3 v-if="$i18n.locale == 'hk'" class="text-xs font-normal text-center discounts-h3"> 立&nbsp;即&nbsp;預&nbsp;約 </h3>
+                      <h3 v-else-if="$i18n.locale == 'cn'" class="text-xs font-normal text-center discounts-h3"> 立&nbsp;即&nbsp;预&nbsp;约 </h3>
+                      <h3 v-else class="text-xs font-normal text-center discounts-h3"> Book&nbsp;Now </h3>
                     </div>
                   </div>
                 </button>
@@ -774,6 +774,11 @@ export default {
           ],
         },
         {
+          main_nav: this.$t("home.headers.feeConsultation"),
+          link: "/fee",
+          child_list: [],
+        },
+        {
           main_nav: this.$t("home.headers.commonProblem"),
           link: "",
           child_list: [
@@ -833,11 +838,6 @@ export default {
         //     },
         //   ],
         // },
-        {
-          main_nav: this.$t("home.headers.feeConsultation"),
-          link: "/fee",
-          child_list: [],
-        },
         {
           main_nav: this.$t("home.headers.contactUs"),
           link: "/contact-us",
@@ -913,6 +913,11 @@ export default {
           ],
         },
         {
+          main_nav: this.$t("home.headers.feeConsultation"),
+          link: "/fee",
+          child_list: [],
+        },
+        {
           main_nav: this.$t("home.headers.commonProblem"),
           link: "",
           child_list: [
@@ -972,11 +977,6 @@ export default {
         //     },
         //   ],
         // },
-        {
-          main_nav: this.$t("home.headers.feeConsultation"),
-          link: "/fee",
-          child_list: [],
-        },
         {
           main_nav: this.$t("home.headers.contactUs"),
           link: "/contact-us",
@@ -1249,7 +1249,7 @@ export default {
       let timer
       window.addEventListener("scroll", function(event) {
         if (event.deltaY !== 0) {
-           clearTimeout(timer)
+            clearTimeout(timer)
           // 页面正在滚动
           that.isShowFloat = true
         }
@@ -1330,6 +1330,14 @@ $active_gradient: #4570b6;
 
 // pc
 @media (min-width: 768px) {
+  .nav_bar > ul > li:nth-child(2)  {
+    .mian_nav_text {
+      width: max-content;
+    }
+  }
+  .nav_bar > ul > li:nth-child(6)  {
+    margin: 0 10px;
+  }
   .divit-pc {
     display: flex;
     align-items: center;
