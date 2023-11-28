@@ -18,7 +18,7 @@ export default {
   created() { },
   methods: {
     toConsumptionVoucher(){
-      let _path = this.localePath('/consumption-voucher')
+      let _path = this.localePath('/')
       this.$router.push(_path)
     }
   }

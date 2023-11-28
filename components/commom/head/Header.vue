@@ -123,7 +123,7 @@
                 }}</span></nuxt-link>
               </el-menu-item>
               <el-menu-item index="7">
-                <nuxt-link :to="localePath('/consumption-voucher')"><span>{{
+                <nuxt-link :to="localePath('/')"><span>{{
                   $t("home.headers.consumptionVoucher")
                 }}</span></nuxt-link>
               </el-menu-item>
@@ -479,7 +479,7 @@ export default {
             },
             {
               child_item: this.$t("home.headers.consumptionVoucher"),
-              link: "/consumption-voucher"
+              link: "/"
             },
             {
               child_item: this.$t("home.headers.consumptionDivit"),

@@ -126,7 +126,7 @@ export default {
         //   isRouterPath: false
         // },
         // {
-        //   link: '/consumption-voucher',
+        //   link: '/',
         //   className: 'banner_3',
         //   pc_cnImg: 'https://static.cmereye.com/imgs/2023/04/d87721cc7012fdd9.jpg',
         //   pc_hkImg: 'https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg',
