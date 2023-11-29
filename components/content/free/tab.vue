@@ -203,7 +203,7 @@
                 <span>$16,500<sup>^</sup></span>
               </td>
               <td>
-                <span>$26,800<sup>^</sup></span>
+                <span>$26,000<sup>^</sup></span>
               </td>
             </tr>
             <tr>
