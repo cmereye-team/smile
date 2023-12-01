@@ -310,7 +310,7 @@
               <img src="@/asset/image/common/Layer_1.png" alt="">
               <div class="p-1 text-left">
                 <h3 class="text-xs font-normal text-center" v-html="$t('home.headers.coupon_all')"></h3>
-                <!-- <p class="text-base text-center">{{ $t('home.headers.coupon') + $t('home.headers.preferential') }}</p> -->
+                <p class="text-base text-center">{{ $t('home.headers.coupon') + $t('home.headers.preferential') }}</p>
               </div>
             </div>
           </button>
