@@ -203,7 +203,7 @@
                 <span>$16,500<sup>^</sup></span>
               </td>
               <td>
-                <span>$26,800<sup>^</sup></span>
+                <span>$26,000<sup>^</sup></span>
               </td>
             </tr>
             <tr>
@@ -1892,7 +1892,7 @@ i {
 
     border-radius: 0px 0px 10px 10px;
     font-weight: 700;
-    color: #373c38;
+    color: #ffffff;
     text-align: center;
   }
   .table-1-box table tr td span {

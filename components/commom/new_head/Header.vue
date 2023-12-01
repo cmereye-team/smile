@@ -299,7 +299,7 @@
 <!--              </div>-->
 <!--            </a>-->
 <!--          </div>-->
-          <div>
+          <!-- <div>
             <a
               href="https://api.whatsapp.com/send/?phone=85260610511"
               target="_blank"
@@ -312,7 +312,7 @@
               </div>
               <div><span>了解更多</span></div>
             </a>
-          </div>
+          </div> -->
           <div>
             <a
               href="https://api.whatsapp.com/send/?phone=85260610511"
@@ -346,8 +346,8 @@
               <div><span>了解<br /> Divit贏里數</span></div>
             </a>
           </div>
-          <div>
-            <a :href="localePath('/consumption-voucher')">
+          <!-- <div>
+            <a :href="localePath('/')">
               <div>
                 <img
                   src="https://static.cmereye.com/imgs/2023/10/25ef70fdd54019c0.png"
@@ -356,7 +356,7 @@
               </div>
               <div><span>消費券優惠</span></div>
             </a>
-          </div>
+          </div> -->
         </div>
 
         <!-- <div class="contact-coupon">
@@ -830,7 +830,7 @@ export default {
         //     },
         //     {
         //       child_item: this.$t("home.headers.consumptionVoucher"),
-        //       link: "/consumption-voucher"
+        //       link: "/"
         //     },
         //     {
         //       child_item: this.$t("home.headers.consumptionDivit"),
@@ -1646,10 +1646,10 @@ $active_gradient: #4570b6;
     top: 50%;
     bottom: 0;
     transform: translateY(-50%);
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     // align-items: center;
-    // justify-content: center;
 
     & > div {
       a {
@@ -2201,7 +2201,7 @@ $active_gradient: #4570b6;
     letter-spacing: .1em;
     position: fixed;
     right: 0;
-    bottom: 40px;
+    bottom: calc(50% - 130px);
     top: auto;
     padding: 20px 0;
     border-radius: 25px 0 0 25px;

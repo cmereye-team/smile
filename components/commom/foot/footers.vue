@@ -104,17 +104,17 @@
 <!--          </div>-->
 <!--        </a>-->
 <!--      </div>-->
-      <div class="footer-coupon">
+      <!-- <div class="footer-coupon">
         <a
           :href="'https://api.whatsapp.com/send/?phone=85260610511&text=%E6%83%B3%E4%BA%86%E8%A7%A3(W-01)SMILE%E5%BE%AE%E7%AC%91%E7%9F%AF%E8%A6%96%E6%B6%88%E8%B2%BB%E5%8D%B7%E6%94%B6%E8%B2%BB%E8%A9%B3%E6%83%85'"
         >
           <div><img src="@/asset/image/common/Layer_1.png" alt="" /></div>
           <div>
             <span v-html="$t('home.headers.coupon_all')"></span>
-            <!-- <span>{{$t('home.headers.preferential')}}</span> -->
+            <span>{{$t('home.headers.preferential')}}</span>
           </div>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
