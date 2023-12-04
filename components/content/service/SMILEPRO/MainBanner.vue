@@ -1,6 +1,6 @@
 <template>
   <div class="main_banner" @click="toWhatApp">
-    <banner :class="['banner',`${$i18n.locale}BgImg`]">
+    <banner :class="['banner',`${$i18n.locale}BgImg`]"  v-if="$i18n.locale !== 'en'">
       <template v-slot:title>
         <div class="pcShow">
           <!-- <p style="font-size: 28px">CMER CLEAR-Vision</p> -->
@@ -20,6 +20,17 @@
         </div></template
       >
     </banner>
+    <div v-else class="engBanner"> 
+      <img
+        data-src="https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/smile/May_2023_SMILEPRO_Banner-copy_Web-SC-copy.1kbs8nji6ow0.png"
+        srcset="
+        https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/smile/Web-TC-Mobile@2x-100.6m56g5p1sy80.jpg 768w,
+          https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/smile/May_2023_SMILEPRO_Banner-copy_Web-SC-copy.1kbs8nji6ow0.png
+        "
+        src="https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/smile/May_2023_SMILEPRO_Banner-copy_Web-SC-copy.1kbs8nji6ow0.png"
+        alt=""
+      />
+    </div>
   </div>
 </template>
 <script>
@@ -96,10 +107,22 @@ export default {
     }
     margin-top: 24vw;
   }
-  
+  .engBanner  {
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .engBanner {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+  }
   .banner {
     // background-position-x: right !important;
     &.hkBgImg{

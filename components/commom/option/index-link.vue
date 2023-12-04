@@ -314,7 +314,7 @@
             />
           </svg>
         </div>
-        <div class="font-title">個案分享</div>
+        <div class="font-title">{{$t('home.headers.videos')}}</div>
       </nuxt-link>
     </div>
     <div>
@@ -571,7 +571,7 @@
             />
           </svg>
         </div>
-        <div class="font-title">矯視資訊影片</div>
+        <div class="font-title">{{ $t('home.headers.casesSharing') }}</div>
       </nuxt-link>
     </div>
   </div>
@@ -626,7 +626,7 @@ export default {
         link: "/fee",
       },
       share: {
-        main_nav: "個案分享",
+        main_nav: this.$t("home.headers.casesSharing"),
         link: "/video",
       },
       OrthopedicList: {
@@ -682,7 +682,7 @@ export default {
         link: "/ophthalmicInfo/mediaCov",
       },
       video: {
-        main_nav: "矯視資訊影片",
+        main_nav: this.$t("home.headers.videos"),
         link: "/video",
       },
     };

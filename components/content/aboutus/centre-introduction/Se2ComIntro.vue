@@ -1,6 +1,12 @@
 <template>
   <div class="Se2ComIntro">
-    <div class="company page_container"   :style="{paddingLeft: $i18n.locale == 'en' ?  '83px':'1rem',paddingRight: $i18n.locale == 'en' ?  '83px':'1rem'}">
+    <div
+      class="company page_container"
+      :style="{
+        paddingLeft: $i18n.locale == 'en' ? '83px' : '1rem',
+        paddingRight: $i18n.locale == 'en' ? '83px' : '1rem',
+      }"
+    >
       <div class="company_tit">
         <p class="text_blue">
           {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p1") }}
@@ -9,45 +15,62 @@
           （{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p2") }}）
         </p>
       </div>
-      <p :style="{textAlign: $i18n.locale == 'en' ?  'justify':'center'}">
+      <p v-if="$i18n.locale === 'en'" class="english_text" v-html="$t('aboutUs.centreIntroduction.Se2ComIntro.p3')"></p>
+      <p v-else>
         {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_1")
-        }}<br class="mbShow" :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" /><span class="pcShow">，</span
+        }}<br class="mbShow" /><span class="pcShow">，</span
         >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_2")
         }}<br
           :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
         />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_3")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />
+        }}<br class="mbShow" />
         {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_4")
         }}<br
           :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
           class="mbShow"
         />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_5")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="pcShow" />{{
+        }}<br class="pcShow" />{{
           $t("aboutUs.centreIntroduction.Se2ComIntro.p3_6")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" /><span class="pcShow">、</span
-        >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_7") }}<br  :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />
+        }}<br class="mbShow" /><span class="pcShow">、</span
+        >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_7") }}<br />
         {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p3_8")
-        }}<span class="pcShow">，</span><br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />{{
+        }}<span class="pcShow">，</span><br class="mbShow" />{{
           $t("aboutUs.centreIntroduction.Se2ComIntro.p3_9")
         }}
       </p>
-      <p class="mag_top">
+      <div v-if="$i18n.locale === 'en'">
+        <div class="pInTitle" v-html="$t('aboutUs.centreIntroduction.Se2ComIntro.p4')"></div>
+        <p class="english_text-p4" v-html="$t('aboutUs.centreIntroduction.Se2ComIntro.p4_1_1')"></p>
+      </div>
+      <p v-else class="mag_top">
         <span style="margin-bottom: 10px">{{
           $t("aboutUs.centreIntroduction.Se2ComIntro.p4_1")
         }}</span
-        ><br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />
+        ><br :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }" />
         {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_2")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow"/>{{
-          $t("aboutUs.centreIntroduction.Se2ComIntro.p4_3")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />
+        }}<br
+          :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+          class="mbShow"
+        />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_3")
+        }}<br :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }" />
         {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_4")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />{{
-          $t("aboutUs.centreIntroduction.Se2ComIntro.p4_5")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="pcShow" />
+        }}<br
+          :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+          class="mbShow"
+        />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_5")
+        }}<br
+          :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+          class="pcShow"
+        />
         {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_6")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" />{{
-          $t("aboutUs.centreIntroduction.Se2ComIntro.p4_7")
-        }}<br :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" class="mbShow" /><span class="pcShow">，</span
+        }}<br
+          :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+          class="mbShow"
+        />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_7")
+        }}<br
+          :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+          class="mbShow"
+        /><span class="pcShow">，</span
         >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p4_8") }}
       </p>
       <nuxt-link :to="localePath('/contact-us')" class="more_lin">{{
@@ -67,29 +90,39 @@
           <p>
             {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p6_1") }}
             <br />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p6_2")
-            }}<br class="pcShow" :style="{display: $i18n.locale == 'en' ? 'none' : 'initial'}" />{{
-              $t("aboutUs.centreIntroduction.Se2ComIntro.p6_3")
-            }}
+            }}<br
+              class="pcShow"
+              :style="{ display: $i18n.locale == 'en' ? 'none' : 'initial' }"
+            />{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p6_3") }}
           </p>
         </div>
         <div class="content mx-12 md:mx-0">
           <ul>
             <li>
-              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">C</span>
+              <span
+                :style="{ lineHeight: $i18n.locale == 'en' ? '50px' : '20px' }"
+                >C</span
+              >
               <p>
                 <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i1") }}</i>
                 <i>Professional <em>C</em>linical Services</i>
               </p>
             </li>
             <li>
-              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">M</span>
+              <span
+                :style="{ lineHeight: $i18n.locale == 'en' ? '50px' : '20px' }"
+                >M</span
+              >
               <p>
                 <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i2") }}</i>
                 <i>Modern <em>M</em>anagement</i>
               </p>
             </li>
             <li>
-              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">E</span>
+              <span
+                :style="{ lineHeight: $i18n.locale == 'en' ? '50px' : '20px' }"
+                >E</span
+              >
               <p>
                 <i>{{ $t("aboutUs.centreIntroduction.Se2ComIntro.i3") }}</i>
                 <i>Quality <em>E</em>ducation</i>
@@ -103,14 +136,17 @@
               </p>
             </li>
             <div class="xima">
-              <span :style="{lineHeight: $i18n.locale == 'en' ? '50px' : '20px'}">{{
-                $t("aboutUs.centreIntroduction.Se2ComIntro.span")
-              }}</span>
-              <p :style="{
-                paddingLeft: $i18n.locale == 'en' ? '60px' : '30px',
-                maxWidth: $i18n.locale == 'en' ? '570px' : '',
-                fontSize: $i18n.locale == 'en' ? '16px' : '20px'
-              }">
+              <span
+                :style="{ lineHeight: $i18n.locale == 'en' ? '50px' : '20px' }"
+                >{{ $t("aboutUs.centreIntroduction.Se2ComIntro.span") }}</span
+              >
+              <p
+                :style="{
+                  paddingLeft: $i18n.locale == 'en' ? '60px' : '30px',
+                  maxWidth: $i18n.locale == 'en' ? '570px' : '',
+                  fontSize: $i18n.locale == 'en' ? '16px' : '20px',
+                }"
+              >
                 {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p7") }}
               </p>
             </div>
@@ -123,9 +159,15 @@
             >
               {{ $t("aboutUs.centreIntroduction.Se2ComIntro.h4") }}
             </h4>
-            <p :style="{fontSize: $i18n.locale == 'en' ? '18px': '20px'}">{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p8") }}</p>
-            <p :style="{fontSize: $i18n.locale == 'en' ? '18px': '20px'}">{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p9") }}</p>
-            <p :style="{fontSize: $i18n.locale == 'en' ? '18px': '20px'}">{{ $t("aboutUs.centreIntroduction.Se2ComIntro.p10") }}</p>
+            <p :style="{ fontSize: $i18n.locale == 'en' ? '18px' : '20px' }">
+              {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p8") }}
+            </p>
+            <p :style="{ fontSize: $i18n.locale == 'en' ? '18px' : '20px' }">
+              {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p9") }}
+            </p>
+            <p :style="{ fontSize: $i18n.locale == 'en' ? '18px' : '20px' }">
+              {{ $t("aboutUs.centreIntroduction.Se2ComIntro.p10") }}
+            </p>
           </div>
         </div>
       </div>
@@ -623,6 +665,7 @@ export default {
       }
     }
   }
+
 }
 
 // mb
@@ -764,9 +807,9 @@ export default {
     margin: 70px auto;
     text-align: center;
     // height: 622px;
-    margin: 0 30px;
+    // margin: 0 20px;
     margin-bottom: 30px;
-    padding: 0 17px 50px !important;
+    // padding: 0 10px 50px !important;
 
     .mag_top {
       margin-top: 30px;
@@ -979,6 +1022,42 @@ export default {
         }
       }
     }
+  }
+  .company_tit {
+    &>p {
+      margin:0 20px;
+    }
+    &>p:nth-child(1) {
+      padding: 0 55px;
+    }
+  }
+  .english_text,
+  .english_text-p4 {
+    color: #6D6E71;
+    text-align: justify !important;
+    font-family: Noto Sans HK;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 178.571% */
+    letter-spacing: 0.7px;
+    margin: 0 20px;
+    padding: 0 10px;
+  }
+  .english_text-p4 {
+    margin: 0;
+    padding-bottom: 41px;
+  }
+  .pInTitle {
+    color: #4570B6;
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 176.471% */
+    letter-spacing: 1.7px;
+    margin: 20px 0 5px;
   }
 }
 </style>

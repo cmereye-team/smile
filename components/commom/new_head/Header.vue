@@ -324,7 +324,7 @@
                   class="p-1"
                 />
               </div>
-              <div><span>快速預約</span></div>
+              <div><span>{{ $t('home.headers.reservationService') }}</span></div>
             </a>
           </div>
           <div>
@@ -343,7 +343,8 @@
                   </defs>
                 </svg>
               </div>
-              <div><span>了解<br /> Divit贏里數</span></div>
+              <div v-if="$i18n.locale === 'en'" class="engDivit pcShow"><span>Details of<br />Divit</span></div>
+              <div v-else><span>了解<br /> Divit贏里數</span></div>
             </a>
           </div>
           <!-- <div>
@@ -399,7 +400,7 @@
               >
                 <div class="new_header">
                   <a href="tel: +85260610511" target="_blank" class="new_about"
-                    >預約服務</a
+                    >{{ $t('home.headers.reservationService') }}</a
                   >
                   <div class="new_a_div">
                     <a href="https://www.facebook.com/CMER.SMILE">
@@ -1080,11 +1081,11 @@ export default {
         link: "/fee",
       },
       video: {
-        main_nav: "矯視資訊影片",
+        main_nav: this.$t("home.headers.videos"),
         link: "/video",
       },
       share: {
-        main_nav: "個案分享",
+        main_nav: this.$t("home.headers.casesSharing"),
         link: "/video",
       },
       actIndex: 0,
@@ -1823,6 +1824,18 @@ $active_gradient: #4570b6;
   }
   .contact_icl-r .link_more::before {
     background: linear-gradient(90deg, #98cec3 0%, #98cec3 100%) !important;
+  }
+  .engDivit {
+    color: #4570B6;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.55px;
+    margin-left: -10px;
+    text-wrap: nowrap;
   }
 }
 

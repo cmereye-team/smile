@@ -46,7 +46,7 @@
               : 'initial',
           maxWidth:
             $i18n.locale == 'en' && $route.path == '/en/post-corrective-care'
-              ? '220px'
+              ? '380px'
               : 'initial',
           lineHeight:
             $i18n.locale == 'en' && $route.path == '/en/patient-info'

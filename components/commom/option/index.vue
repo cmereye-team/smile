@@ -63,7 +63,7 @@
               <div :class="[$i18n.locale === 'en'? 'navEng nav ' : 'nav']">
                 <nuxt-link
                   v-for="(item, index) in group.child_list"
-                  :to="item.link"
+                  :to="localePath(item.link)"
                   :key="index"
                 >{{ item.child_item }}
                 </nuxt-link>
@@ -186,6 +186,10 @@ export default {
   }
 }
 @media screen and (max-width: 789px) {
+  .engWidth {
+    min-width: 130px;
+    text-align: left;
+  }
   .optiond {
     display: flex;
     flex-direction: column;
@@ -220,6 +224,11 @@ export default {
       & > div:nth-child(1) {
         display: flex;
         align-items: center;
+        &>div:nth-child(2) {
+        &>img {
+            min-width: 17px;
+          }
+        }
         & > span {
           margin-left: 5px;
         }

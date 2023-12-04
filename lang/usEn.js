@@ -121,8 +121,9 @@ module.exports = {
       Se2ComIntro: {
         p1: 'Hong Kong C-MER Eye Care Holdings Ltd.',
         p2: 'Referred to as: C-MER Stock code: 03309.HK',
-        p3_1: 'C-MER was founded by ophthalmologist Professor Dennis Lam in 2012',
-        p3_2: 'is headquartered in Hong Kong，we own 15 medical institutions',
+        p3: `C-MER was founded by ophthalmologist Professor Dennis Lam in 2012, is headquartered in Hong Kong. With an honor to be the first listed ophthalmology group in Hong Kong, we own 15 medical institutions and have more than 900 employees, including Centers in Central and Mong Kok, and four clinics in Shatin, Causeway Bay, Kwun Tong and Yuen Long and Tsuen Wan, as well as branch hospitals in Shenzhen, Beijing, Shanghai, Kunming, Huizhou, Jieyang and Zhuhai in the Mainland.`,
+        p3_1: 'C-MER was founded by ophthalmologist Professor Dennis Lam in 2012,',
+        p3_2: ' is headquartered in Hong Kong，we own 15 medical institutions',
         p3_3: 'including Centers in Central',
         p3_4: 'and Mong Kok, and four clinics in Shatin, Causeway Bay, Kwun Tong and Yuen Long',
         p3_5: 'and Tsuen Wan,',
@@ -131,6 +132,8 @@ module.exports = {
         p3_8: 'and have more than 900 employees,',
         p3_9: 'With an honor to be the first listed ophthalmology group in Hong Kong,',
         p4_1: 'C-MER Eye Care Centers',
+        p4: 'C-MER Eye Care Centers',
+        p4_1_1: 'We have expanded our business in Hong Kong, including 10 eye care centers, 4 SMILE refractive centers, 2 vision centers and 2 Champion Eye & Refractive Surgery Centre (CMER wholly owned subsidiaries),which are located in Hong Kong Island, Kowloon and New Territories. The locations are all convenient to reach and the environments are comfortable.',
         p4_2: 'We have expanded our business in Hong Kong, including 10 eye care centers,',
         p4_3: '4 SMILE refractive centers, 2 vision centers',
         p4_4: 'and 2 Champion Eye & Refractive Surgery Centre ',
@@ -1442,75 +1445,84 @@ module.exports = {
     },
     smilePro: {
       smileProDesc: {
-        title: '以下描述符合你嗎?',
+        title: 'Do the following descriptions resonate with you?',
         desc: [
           {
-            span1: '生活受近視或/',
-            span2: '及散光困擾',
+            span1: 'Struggling with/',
+            span2: 'nearsightedness',   
+            span3: 'and/or astigmatism', 
+            span4: 'in daily life', 
           },
           {
-            span1: '擔心矯視過程，',
-            span2: '眼睛無法對焦太久',
+            span1: 'Concerned about',
+            span2: 'the ability of your',
+            span3: 'eyes to focus for',
+            span4: 'extended periods',
+            span5: 'during the vision',
+            span6: 'correction process',
           },
           {
-            span1: '追求更佳手術體驗感',
+            span1: 'Seeking a better',
+            span2: 'surgical experience',
           },
           {
-            span1: '暗室瞳孔直徑偏大',
+            span1: 'Have larger pupil',
+            span2: 'diameter in dimly lit',
+            span3: 'environments',
           }
         ]
       },
       smileProDescVideo: {
-        title: '如你符合以上描述，你應考慮選擇',
+        title: 'If yes, you should consider choosing',
       },
       smileProContrast: {
-        title: '一圖看清SMILE, ',
-        smileProBtn: '預約咨詢',
+        title: 'The differences between',
+        smileProBtn: 'Make Appointment',
         tableData: {
-          thead: ['矯視技術', 'Smile', 'Smile Pro', 'ICL'],
+          thead: ['Vision Correction Technologies', 'Smile', 'Smile Pro', 'ICL'],
           tbody: [
             [
               {
-                text: '技術'
+                text: 'Technologies'
               },
               {
-                text: '激光; 微創'
+                text: 'Laser; Minimal invasion'
               },
               {
-                text: '晶體植入; 無須切削角膜'
-              },
-            ],
-            [
-              {
-                text: '術中定位',
-              },
-              {
-                text: '手動調整'
-              },
-              {
-                text: '自動調整'
-              },
-              {
-                text: '不適用',
+                text: "lens implantation; cornea layer's removal is not necessary"
               },
             ],
             [
               {
-                text: '使用的設備',
+                text: 'Centration',
               },
               {
-                text: 'Carl Zeiss Visumax 全飛秒激光3.0系統'
+                text: 'Manual'
+              },
+              {
+                text: 'Automatic'
+              },
+              {
+                text: 'Not Applicable',
+              },
+            ],
+            [
+              {
+                text: 'Equipment',
+              },
+              {
+                text: 'Carl Zeiss Visumax 3.0'
               },
               {
                 text: 'ZEISS VISUMAX 800 SMILE®pro'
               },
               {
-                text: 'EVO Visian ICL(可植入式隱形屈光晶體)',
+                text: 'EVO Visian ICL',
               },
             ],
             [
               {
-                text: '切口大小',
+                text: 'Size of small incision',
               },
               {
                 text: '2-4mm'
@@ -1521,59 +1533,59 @@ module.exports = {
             ],
             [
               {
-                text: '激光時間',
+                text: 'Laser Time',
               },
               {
-                text: '23秒'
+                text: '23 Second'
               },
               {
-                text: '10秒'
+                text: '10 Second'
               },
               {
-                text: '不適用',
+                text: 'Not Applicable',
               },
             ],
             [
               {
-                text: '康復時間/速度',
+                text: 'Recovery time/Speed',
               },
               {
-                text: '1日'
+                text: '1 Day'
               }
             ],
             [
               {
-                text: '可改善度數範圍',
+                text: 'Correctable range',
               },
               {
-                text: '1,000度以下近視，500度以下散光'
+                text: 'Having -10.00 D myopia or above and/or 500 diopters astigmatism or below'
               },
               {
-                text: '1800度近視1000度遠視、600度散光以內',
-              },
-            ],
-            [
-              {
-                text: '適合的群眾',
-              },
-              {
-                text: '近視或散光人士'
-              },
-              {
-                text: '高度近視、遠視或/及散光人士',
+                text: 'Within -18.00 D myopia, +10.00 D hyperopia, and 600 diopters astigmatism',
               },
             ],
             [
               {
-                text: '角膜厚度正常'
+                text: 'Suitable for the following demographics',
               },
               {
-                text: '因角膜厚度偏薄/或異常而不適合接受激光矯視人士',
+                text: 'Suitable for individuals with myopia and astigmatism'
+              },
+              {
+                text: 'Suitable for individuals with high myopia, hyperopia, and/or astigmatism',
               },
             ],
             [
               {
-                text: '近視度數穩定'
+                text: 'Normal corneal thickness'
+              },
+              {
+                text: 'Individuals who is not suitable for laser vision correction due to thin or abnormal corneal thickness',
+              },
+            ],
+            [
+              {
+                text: 'Stable myopia prescription'
               },
               {
                 text: '/',
@@ -1581,7 +1593,7 @@ module.exports = {
             ],
             [
               {
-                text: '沒有患上眼疾'
+                text: 'No eye diseases'
               },
               {
                 text: '/',
@@ -1589,7 +1601,7 @@ module.exports = {
             ],
             [
               {
-                text: '沒有患上自體免疫疾病'
+                text: 'No autoimmune diseases'
               },
               {
                 text: '/',
@@ -1597,17 +1609,17 @@ module.exports = {
             ],
             [
               {
-                text: '熱愛運動/注重儀表人士'
+                text: 'Sports enthusiasts/appearance-conscious individuals'
               },
             ],
             [
               {
-                text: '希望減低對眼鏡或隱形眼鏡依賴的人士'
+                text: 'Wishing to reduce dependency on glasses or contact lenses'
               },
             ],
             [
               {
-                text: '因佩戴隱形眼鏡導致乾眼症人士'
+                text: 'ndividuals experiencing dry eyes due to contact lens wear'
               },
             ],
             [
@@ -1616,7 +1628,7 @@ module.exports = {
                 text: '/'
               },
               {
-                text: '對微笑矯視手術懼怕人士',
+                text: 'Individuals who are afraid of SMILE vision correction surgery',
               },
               {
                 text: '/',
@@ -1628,7 +1640,7 @@ module.exports = {
                 text: '/'
               },
               {
-                text: '著重過程體驗感人士',
+                text: 'Individuals who prioritize the experience during the process',
               },
               {
                 text: '/',
@@ -1639,7 +1651,7 @@ module.exports = {
                 text: '/',
               },
               {
-                text: '擔心眼睛無法對焦太久人士',
+                text: 'Individuals concerned about the ability of their eyes to focus for extended periods',
               },
               {
                 text: '/',
@@ -1649,18 +1661,18 @@ module.exports = {
         }
       },
       smileProFeatures: {
-        title: 'SMILE PRO三大特點',
-        context: '以德國蔡司光學與諾貝爾獎激光技術進行矯視',
+        title: 'SMILE PRO 3 characteristics',
+        context: 'ZEISS VISUMAX 800 SMILE®pro Vision correction using German Zeiss optics and Nobel Prize-winning laser technology',
         lists: [
           {
-            span1: '極小光點',
-            span2: '4-2mm微創切口'
+            span1: 'Ultra-small laser spot',
+            span2: '2-4mm Minimal invasive incision'
           }, {
-            span1: '極低能量',
-            span2: '復原時間相對快'
+            span1: 'Ultra-low energy',
+            span2: 'Relatively speedy recovery'
           }, {
-            span1: '極速脈衝',
-            span2: '過程短而精準'
+            span1: 'Ultra-fast pulses',
+            span2: 'Short and precise procedure'
           }
         ]
       },
@@ -1672,38 +1684,45 @@ module.exports = {
         smileProBtn: '瞭解更多'
       },
       smileProProve: {
-        title: '用家見證',
+        title: 'Testimonials from users',
         lists: [
           {
-            name: 'Macy, 文員',
-            span1: '第一次做眼部手術，',
-            span2: '本身好緊張，但醫生同職員都',
-            span3: '好細心',
-            span4: '講解同鼓勵我，',
-            span5: '令我好安心',
+            name: 'Macy, Clerk',
+            span1: 'This is my first time having eye',
+            span2: 'surgery. I was so nervous at',
+            span3: 'first, but with the doctor and',
+            span4: "staff's explanation and",
+            span5: 'encouragement, I felt relieved',
+            span6: 'afterward.',
           },
           {
-            name: 'Agnes, 行政人員',
-            span1: '一直擔心做完需要好耐先回復',
-            span2: '正常生活，原來做完',
-            span3: '第 2 日已經睇得清',
-            span4: '如常生活架喇!',
+            name: 'Agnes, Administrator',
+            span1: 'I have been worried',
+            span2: 'that it takes long time',
+            span3: 'to recover after the',
+            span4: 'surgery. I did not',
+            span5: 'expect to see clearly',
+            span6: 'the next day after the',
+            span7: 'surgery but it did!'
           },
           {
-            name: 'Vivien, 家庭主婦',
-            span1: '我係好怕痛既人黎，',
-            span2: '但真係',
-            span3: '完全無痛!',
-            span4: '會推薦比朋友!',
+            name: 'Vivien, Housewife',
+            span1: 'I am senstive to pain',
+            span2: 'but the process',
+            span3: 'caused no pain at all. I',
+            span4: 'will definitely',
+            span5: 'recommend it to my',
+            span6: 'friends.',
           },
           {
-            name: '阿聲, 咖啡師',
-            span1: '做完',
-            span2: ' SMILE PRO ',
-            span3: '好似重新感受世界咁! 只係',
-            span4: '短短 10 秒',
-            span5: '就有咁大改',
-            span6: '變, 好後悔自己 無早 d 做!',
+            name: 'Sing, Barista',
+            span1: 'After undergone the SMILE',
+            span2: 'Pro surgery, it is a whole',
+            span3: 'new world to me! I never',
+            span4: 'expected to have such a big',
+            span5: 'change with 10 Second laser',
+            span6: 'time. Should have done it',
+            span7: 'earlier!'
           }
         ]
       }

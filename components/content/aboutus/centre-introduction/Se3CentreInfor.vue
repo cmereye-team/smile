@@ -25,7 +25,7 @@
         class="section_text shadow-lg"
         :style="{
           maxWidth: $i18n.locale === 'en' ? '888px' : '738px',
-          marginLeft: $i18n.locale === 'en' ? '280px' : '0',
+          marginLeft: $i18n.locale === 'en' ? '10px' : '0',
           height: $i18n.locale === 'en' ? '960px' : '920px',
         }"
       >
