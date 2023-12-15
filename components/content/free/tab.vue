@@ -358,7 +358,7 @@
             <tr>
               <td colspan="4" id="blue">
                 {{ $t("chargeDetail.td1_3") }}
-                {{ $t("chargeDetail.td1_4") }} 1.9.2023 <span :style="$i18n.locale == 'en' ? 'display: none' : ''">起</span>
+                {{ $t("chargeDetail.td1_4") }} 1.9.2023 <span :style="$i18n.locale == 'en' ? 'display: none' : ''" :class="[$i18n.locale !== 'en' ? 'span22_icl':'']">起</span>
               </td>
             </tr>
             <tr>
@@ -386,7 +386,7 @@
         <br />
         <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span21") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span22") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -1436,6 +1436,16 @@ i {
   }
 }
 @media screen and (min-width: 768px) {
+  .span22_icl {
+    font-family: var(--font_family);
+    // font-style: normal;
+    font-weight: 500;
+    font-size: 15px !important;
+    // line-height: 15px;
+    // text-align: center;
+    letter-spacing: 0.05em !important;
+    color: #fb5e5e !important;
+  }
   .free-point {
     
   }

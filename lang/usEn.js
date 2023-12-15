@@ -441,6 +441,7 @@ module.exports = {
     span15: 'Premium',
     span16: 'It has to be completed within two years after the surgery. If it exceeds one year, another appointment needs to be scheduled, and the consultation fee will be charged at the regular (non-corrective package) rate.',
     span21: "Surgery charges include the preoperative examination fee of HKD$100. ",
+    span22: "Surgery charges include the preoperative examination fee of HKD$500. ",
     span20: "If there is no surgery scheduled, the preoperative examination fee will be charged separately.",
 
     p3: '帶散光',
