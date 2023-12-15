@@ -136,7 +136,8 @@ export default {
         //   isRouterPath: false
         // }
       ],
-      optionList: 0
+      optionList: 0,
+      link: 'https://api.whatsapp.com/send/?phone=85260610511&amp;text=我想了解(W-Xmas01) Smile Pro矯視聖誕優惠 将连接中的&amp; 用js 替换为 &    '
     }
   },
   filters: {
@@ -150,11 +151,11 @@ export default {
   },
   created() {
     this.getBannerList()
-
   },
   methods: {
     async getBannerList() {
       let List = []
+      let that = this
       if (this.$i18n.locale === 'hk') {
         await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/1/num${this.num}`)
           .then(function (response) {
@@ -167,7 +168,7 @@ export default {
                 pc_hkImg: `https://admin.hkcmereye.com${item.pic}`,
                 mb_hkImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
-                link: item.link,
+                link: that.replaceAmp(item.link),
                 isRouterPath: item.title == 'link' ? true : false
               }
             })
@@ -184,7 +185,7 @@ export default {
                 pc_cnImg: `https://admin.hkcmereye.com${item.pic}`,
                 mb_cnImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
-                link: item.link,
+                link: that.replaceAmp(item.link),
                 isRouterPath: item.title == 'link' ? true : false
               }
             })
@@ -201,7 +202,7 @@ export default {
                 pc_enImg: `https://admin.hkcmereye.com${item.pic}`,
                 mb_enImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
-                link: item.link,
+                link: that.replaceAmp(item.link),
                 isRouterPath: item.title == 'link' ? true : false
               }
             })
@@ -211,16 +212,24 @@ export default {
       this.$nextTick(() => {
         this.optionList = List.length
       })
+    },
+    // 转换 &amp;
+    replaceAmp(str) {
+      if (str.indexOf('&amp;') > -1) {
+        str = str.replace(/&amp;/g, '&')
+      }
+      return str
     }
   },
 };
 </script>
 <style lang="scss" scoped>
-@media screen and( max-width:768px) {
+@media screen and(max-width:768px) {
   .banner {
     margin-top: 24vw;
   }
 }
+
 .banner {
   width: 100vw;
   overflow: hidden;
