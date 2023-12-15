@@ -496,7 +496,7 @@
         <br />
         <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span21") }}</span>
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span22") }}</span>
         <br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("chargeDetail.span20") }}</span>
       </div>
