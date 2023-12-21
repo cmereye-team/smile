@@ -15,8 +15,8 @@ module.exports = {
       consumptionDivit: 'DIVIT',
       contactUs: 'Contact Us',
       reservationService: 'Book NOW',
-      videos:'Videos',
-      casesSharing:'Cases Sharing',
+      videos: 'Videos',
+      casesSharing: 'Cases Sharing',
 
       aboutSmileChild_1: 'About the Group & Center',
       aboutSmileChild_2: 'Medical Team',
@@ -105,14 +105,14 @@ module.exports = {
       title2: 'Chat Now',
       title3: 'Booking',
       businessHours: {
-        title:'Business Hours',
+        title: 'Business Hours',
         weekday: 'Monday-Friday',
         saturday: 'Saturday',
         publicHolidayAndSunday: `Sundays and <br /> Public Holidays`,
-        rest:'Rest',
-        center:'Central',
-        mongKok:'Mong Kok',
-        tsimShaTsui:'Tsim Sha Tsui'
+        rest: 'Rest',
+        center: 'Central',
+        mongKok: 'Mong Kok',
+        tsimShaTsui: 'Tsim Sha Tsui'
       }
     }
   },
@@ -586,205 +586,190 @@ module.exports = {
   freQuestios: {
     firstProblem: {
       problem1: {
-        title: 'SMILE微笑激光矯視後可達至零度近視的效果？',
-        content: `有很多人以為矯視後會達致零度近視或散光，甚或較術前配戴眼鏡或隱型眼鏡有更清晰的視力，但其實這是錯誤的觀念。<br />
-          矯視成功標準：如達到矯視前定立的目標度數的＋/－75度之內屬成功；低於＋/－75度屬正常視力範圍。<br />
-          據文獻統計，矯視後3個月度數＋/－100度以內的成功率接近100%；若矯視後度數超＋/－100度，可選擇進行增進治療。<br />`
+        title: 'After SMILE, will I obtain zero degrees of myopia or astigmatism?',
+        content: `Many people think that zero myopia or astigmatism will be achieved after vision correction, or the vision will be even clearer vision than wearing glasses or contact lenses, but this is a wrong concept.<br />
+        Successful criteria for vision correction: If the outcome is within +/- 75 degrees of the target, this is a successful outcome. When the refraction is less than +/- 75 degrees, the vision is usually within the normal range.<br />
+        According to evidence, a refraction of +/- 100 degrees at 3 months after surgery is seen in nearly 100%; if over +/- 100 degrees is noted after surgery, enhancement treatment would be an option.<br />`
       },
       problem2: {
-        title: '接受SMILE微笑激光矯視後會反彈嗎？',
-        content: `醫生建議客人如半年內的視力度數穩定才接受矯視。SMILE微笑激光矯視切口較小，角膜較完整，一般來說反彈的機會較低。然而，度數突然變化可由其他原因引起，應及早諮詢醫生。`
+        title: 'Any fluctuation after SMILE?',
+        content: `Ophthalmologists suggest that it’s better to undergo SMILE with at least 6 months of stable refraction. Generally, a smaller incision is made during SMILE, and the structure of the cornea remains more stable with lower chances of fluctuation postoperatively. Please consult your ophthalmologist as early as possible if you have a sudden visual change that might be caused by other issues.`
       },
       problem3: {
-        title: '如我適合做SMILE微笑激光矯視，是否可以立即安排矯視？',
-        content: `我們建議客人至少接受兩天的全面眼睛檢查，才能以準確數據去制定適切的矯視方案。因此客人在接受第一天眼睛檢查前，先停止佩戴隱形眼鏡一段時間。<br />
-          · 軟性隱形眼鏡 (不含散光)：停戴至少一星期<br />
-            · 軟性隱形眼鏡 (含散光)：停戴至少兩星期<br />
-            · 硬性隱形眼鏡：停戴至少一個月<br />
-            · 矯視隱形眼鏡：停戴至少三個月<br />
-            · 接受第一天檢查後，最快可預約第二天眼睛檢查及同日矯視。`
+        title: 'If I am a good candidate for SMILE, can I get the correction done immediately?',
+        content: `Our clinic suggests that since we need at least 2 days to conduct comprehensive eye examinations so that we can obtain correct data and design a personalized vision correction plan for you, please make your appointment early.
+        Please stop wearing contact lenses before eye checkup:<br />
+          Soft contact lenses (excluding astigmatism): Stop wearing them for at least one week<br />
+            Soft contact lenses (including astigmatism): Stop wearing them for at least two weeks<br />
+            Rigid contact lenses: Stop wearing them for at least one month<br />
+            Ortho-K lenses: Stop wearing them for at least three months<br />
+            *after the first eye check-up, the pre-operation examination and vision correction could be conducted on the same following day.`
       },
       problem4: {
-        title: 'SMILE微笑激光矯視和LASIK激光矯視有何分別？',
-        content: `SMILE微笑激光矯視是嶄新激光矯視技術，改良了LASIK激光矯視的限制。例如LASIK激光矯視需要在角膜上切一片角膜薄片(Corneal
-            flap，或稱角膜瓣)
-            才能進行矯視，因此切口較SMILE微笑激光矯視大。而SMILE微笑激光矯視只需要切開一個2-4mm的小切口，無需揭開角膜瓣，切口面積減少近80
-            %。因此，術後眼乾情況及感染機會較低，康復時間較快，亦大大降低了角膜瓣移位的問題。`
+        title: 'What are the differences between SMILE and LASIK?',
+        content: `SMILE is an advanced laser correction technology that improves the limitations of LASIK. For example, LASIK requires the creation of a corneal flap, so the incision is larger than SMILE. SMILE only has a small incision of 2-4mm, without creating a corneal flap, so the incision area is reduced by nearly 80% as compared to LASIK. Therefore, it lowers the chances of getting dry eye, infection, and corneal flap displacement. At the same time, recovery time is shortened.`
       },
       problem5: {
-        title: '進行SMILE微笑激光矯視會疼痛嗎？',
-        content: `醫生會用麻醉眼藥水減低眼睛的敏感和疼痛感，因此客人不會有太大感覺。矯視過程最快能在5分鐘內完成，少有不適。`
+        title: 'Will it be painful during the SMILE surgery?',
+        content: `Anesthetic eye drops are placed into your eye to numb the eyeball, so there is usually no pain experienced during the procedure. The surgery in both eyes is usually completed in less than 15 minutes.`
       },
       problem6: {
-        title: '進行SMILE微笑激光矯視過程要多久？',
-        content: `SMILE微笑激光矯視最快一般能在5分鐘內完成，事前的準備及檢查需時，矯視當日客人需在中心逗留大概2至3小時。`
+        title: 'How long does SMILE take?',
+        content: `Usually, the procedure itself only takes about 15 minutes. However, you will need to stay for around 2 hours for pre-operative preparations and examinations on the day of surgery.`
       },
       problem7: {
-        title: '相對LASIK激光矯視，SMILE微笑激光矯視歷史較短，是否有足夠臨床經驗？',
-        content: `SMILE微笑激光矯視在全球有累積超過200萬成功案例。SMILE為德國蔡司先進技術，於2011年得到歐盟認可，並2016年獲美國FDA的認可，FDA
-            臨床結果顯示安全穩定和有效性極高。88%的客人在術後6個月的裸眼視力達到1.0以上。`
+        title: 'Compared to LASIK, SMILE is a relatively new technology. What is the clinical evidence on SMILE?',
+        content: `More than 2 million successful SMILE surgeries have been done worldwide. It is an advanced technology from Zeiss in Germany. It was approved by the European Union in 2011 and approved by the US FDA in 2016. The clinical results of the FDA data found that SMILE is safe, stable, and highly effective. Meanwhile, 88% of guests had unaided eyesight above 1.0 at 6 months after surgery.`
       },
       problem8: {
-        title: '接受SMILE微笑激光矯視後會否提早出現老花？',
-        content: `老花是由晶體老化或睫狀肌鬆弛所致，是正常眼睛衰退現象，一般在40-50歲左右出現，與矯視沒太大關係。`
+        title: 'Will I have presbyopia earlier if I had SMILE done?',
+        content: `Presbyopia happens when the crystalline lens hardens and loses its elasticity at the age around 40-50. It is an unavoidable age-related condition and has nothing to do with SMILE.`
       },
       problem9: {
-        title: '有不適合接受SMILE微笑激光矯視的個案嗎？',
-        content: `一般而言，不適合接受激光矯視人士包括：<br />
-            · 眼球發育未完成，近視度數未穩定<br />
-            · 角膜太薄或度數過深<br />
-            · 淚液分泌過少<br />
-            · 患有眼疾如青光眼或視網膜疾病<br />
-            · 角膜有感染，例如發炎或曾受傷<br />
-            · 患有自體免疫疾病，例如：風濕性關節炎或紅斑狼瘡<br />
-            · 需要長期服用類固醇<br />
-            · 懷孕婦女`
+        title: 'Who is not suitable for SMILE?',
+        content: `People who：<br />
+            -have unstable refraction<br />
+            -have thin cornea, or severely nearsighted / farsighted<br />
+            -are suffering from severe dry eye<br />
+            -have a history of glaucoma or retinal problems<br />
+            -have infection on cornea, such as inflammation or previous trauma<br />
+            -have immune system disease, such as rheumatoid arthritis or lupus<br />
+            -are in need of long-term steroid intake<br />
+            -are pregnant`
       },
       problem10: {
-        title: '在醫院接受SMILE微笑激光矯視會否較佳？',
-        content: `SMILE微笑激光矯視是一項微創技術，只用麻醉眼藥水而不需全身麻醉，亦不需留院觀察。本診所設有多間國際標準的無菌手術室、擁有先進檢測和矯視儀器，安全、可靠。`
+        title: 'Is it a better idea to receive SMILE in a hospital?',
+        content: `SMILE is a minimally invasive technology, which does not require general anesthesia. Only anesthetic eye drops are placed into your eye and you don’t need to stay after surgery. Our clinic is equipped with aseptic operation rooms with surgical instruments and advanced examination machines that meet international standards. The whole process is safe and reliable.`
       },
       problem11: {
-        title: 'SMILE微笑激光矯視有風險嗎？',
-        content: `所有手術都帶有風險，相對而言，矯視風險較為低。一般不理想的術後情況有：矯正不足/過度、夜視能力降低、眩光和乾眼等。然而，因矯視引起的併發症不常見，在極少的情況下，有機會發生角膜層間發炎、細菌感染等。`
+        title: 'Are there any risks in SMILE?',
+        content: `Risks come with all surgeries and they are relatively low with vision correction. The common risks are under-correction or over-correction, night vision worsens, dry eyes, halos, and dry eyes, etc. Complications after vision correction are uncommon. Under rare circumstances, complications like corneal infection or bacterial infection may occur.`
       },
       problem12: {
-        title: '矯視技術如此先進，為甚麼有許多醫生仍佩戴眼鏡？',
-        content: `根據白內障及矯視手術期刊(Journal of Cataract and
-            RefractiveSurgery)於2016年的一項調查，眼科醫生比一般大眾接受矯視的比例高出接近5倍，顯示許多眼科專科醫生對矯視技術表示信任，並已接受矯視，擺脫眼鏡束縛。`
+        title: 'Why are there still many ophthalmologists wearing glasses given that advanced and mature vision correction surgeries are available nowadays?',
+        content: `According to a survey from the Journal of Cataract and Refractive Surgery in 2016, ophthalmologists were nearly 5 times more likely to receive vision correction than the general public. Many ophthalmologists chose to get rid of glasses by getting vision correction done.`
       },
       problem13: {
-        title: '接受過SMILE微笑激光矯視，之後仍可以接受其他眼部手術嗎？',
-        content: `可以，SMILE微笑激光矯視只改變角膜弧度，並不會對其他眼部組織構成影響。`
+        title: 'Can I still have other eye surgeries after SMILE if necessary?',
+        content: `Yes. SMILE only changes the curvature of your cornea and other parts of the eyes are not involved and will not be affected.`
       },
       problem14: {
-        title: '甚麼人需要接受SMILE Xtra或角膜膠原交聯術 (Cross-linking)？',
-        content: `SMILE
-            Xtra是一種角膜膠原交聯術，它適用於角膜過薄、度數過深、懷疑有潛在錐形角膜風險的客人。眼科專科醫生會為客人進行評估，決定是否有需要額外進行角膜膠原交聯術，才進行矯視。醫生會為客人的眼睛滴上核黃素
-            (一種維生素)
-            眼溶液，然後以UVA燈照射眼睛，以達成角膜交聯，強化角膜。<br />
-            角膜膠原交聯術可與SMILE微笑激光矯視同時進行。`
+        title: 'What type of patients need SMILE Xtra or collagen cross-linking surgery?',
+        content: `SMILE Xtra is a type of corneal cross-linking surgery. It is suitable for patients: whose cornea is too thin, who have severe myopia, hyperopia, and astigmatism, or who are suspected of being at risk of keratoconus. Your surgeon will evaluate your conditions and decide if you need Xtra cross-linking surgery together with your vision correction surgery or not. Usually, riboflavin eye drops will be applied to your eyes and your eyes will be exposed to UVA light to strengthen your cornea. Cross-linking surgery can be simultaneously completed with SMILE.`
       }
     },
     secondProblem: {
       problem1: {
-        title: '進行LASIK激光矯視過程要多久？',
-        content: `LASIK激光矯視過程每隻眼大概10分鐘，但因事前的準備及檢查需時，矯視當日患者需於中心逗留大概兩至三小時。`
+        title: 'How long does LASIK take?',
+        content: `It usually takes 20 minutes for both eyes. However, we suggest you stay for 2-3 hours for pre-operative preparations and examinations.`
       },
       problem2: {
-        title: '進行LASIK激光矯視疼痛嗎？',
-        content: `醫生會使用麻醉眼藥水來減低眼睛的敏感度，因此患者不會有太大感覺。`
+        title: 'Is it painless during LASIK?',
+        content: `Anesthetic eye drops are placed into your eye to numb them, so there is usually no pain during the procedure.`
       },
       problem3: {
-        title: '接受LASIK激光矯視後會否提早出現老花？',
-        content: `老花是正常現象，一般人在40歲-50歲後便會出現，由於晶體老化或睫狀肌鬆弛，與矯視沒太大關係。`
+        title: 'Will I have presbyopia earlier if I had LASIK done?',
+        content: `Presbyopia happens when the crystalline lens hardens and loses its elasticity at the age around 40-50. It is an unavoidable age-related condition and has nothing to do with vision correction.`
       },
       problem4: {
-        title: '有不適合接受LASIK激光矯視的個案嗎？',
-        content: `一般而言，不適合接受激光矯視的人士包括：<br />
-          · 眼球發育未完成，近視度數未穩定 <br />
-          · 角膜太薄或度數過深<br />
-          · 淚液分泌過少<br />
-          · 患有眼疾如青光眼或視網膜疾病<br />
-          · 角膜有感染，例如發炎或曾受傷<br />
-          · 患有自體免疫疾病而病及眼睛，例如風濕性關節炎或姐斑狼瘡<br />
-          · 需要長期服用類固醇 · 懷孕婦女`
+        title: 'Who is not suitable for LASIK?',
+        content: `People who：<br />
+        -have unstable refraction<br />
+        -have thin cornea, or severely nearsighted / farsighted<br />
+        -are suffering from severe dry eye<br />
+        -have a history of glaucoma or retinal problems<br />
+        -have infection on cornea, such as inflammation or previous trauma<br />
+        -have immune system disease, such as rheumatoid arthritis or lupus<br />
+        -are in need of long-term steroid intake<br />
+        -are pregnant`
       },
       problem5: {
-        title: '在醫院接受LASIK激光矯視會否較佳？',
-        content: `LASIK激光矯視是項微創療程，不需全身麻醉，只用麻醉眼藥水，正常情況也不需留院觀察。本診所設有多間國際標準的無菌手術室、先進的檢測和矯視儀器，絕對安全、可靠。`
+        title: 'Is it a better idea to receive LASIK treatment in a hospital?',
+        content: `LASIK is a minimally invasive technology, which does not require general anesthesia. Only anesthetic eye drops are placed into your eye and you don’t need to stay after surgery. Our clinic is equipped with aseptic operation rooms with surgical instruments and advanced examination machines that meet international standards. The whole process is safe and reliable.`
       },
       problem6: {
-        title: 'LASIK激光矯視有風險嗎？',
-        content: `所有手術都帶有風險，相對而言矯視風險較為低。一般常見的情況是：矯正不足/
-          過度、夜視能力降低、眩光和乾眼等。因矯視而引起的併發症不常見，在極少的情況下有機會發生角膜層板問題、細菌感染等。`
+        title: 'Are there any risks in LASIK?',
+        content: `Risks come with all surgeries and they are relatively low with vision correction. The common risks are under-correction or over-correction, night vision worsens, dry eyes, halos, and dry eyes, etc. Complications after vision correction are uncommon. Under rare circumstances, complications like corneal infection or bacterial infection may occur.`
       },
       problem7: {
-        title: '如在LASIK激光矯視過程當中貶眼，會影響矯視效果嗎？',
-        content: `不會，醫生會局部麻醉患者雙眼，並使用儀器固定眼睛，在醫護人員的溫馨提示下，患者可安心接受矯視。`
+        title: 'If I blink during the process of LASIK, will it affect the outcome?',
+        content: `No, anesthetic eye drops are placed into your eye and an instrument will be used to prevent the lids from blinking. Your doctor will guide you through the process with clear instructions.`
       },
       problem8: {
-        title: '接受LASIK激光矯視當晚，可看電視或使用電腦嗎？',
-        content: `可以，但由於術後當天眼睛會比較疲累，醫生建議首24小時術後請回家閉目休息或睡覺4-6小時，仰卧為佳，並戴上本中心提供的護眼罩，以免碰傷眼角膜。。`
+        title: 'Can I use the computer or watch TV immediately after LASIK?',
+        content: `Basically yes. However, we suggest that it is better to sleep for 4-6 hours or take one day off after surgery. A supine position is highly recommended, our clinic will provide you with an eye shield to protect your cornea during your sleep.`
       },
       problem9: {
-        title: '接受LASIK激光矯視後，當天可搭飛機嗎？',
-        content: `理論上是可以的，激光矯視後的眼睛，不會受氣壓所影響，搭飛機是沒有問題的。不過，主診醫生一般都會建議患者在矯視後翌日覆診一次，以確保安全。`
+        title: 'Can I fly on the same day after LASIK?',
+        content: `Basically yes. Eyes undergone laser surgery will not be affected by air pressure; therefore, it is OK to get on the plane. However, we highly suggest a follow-up visit the next day after surgery to make sure everything is OK.`
       },
       problem10: {
-        title: '接受LASIK激光矯視後，當天可以洗頭嗎？',
-        content: `醫生建議即日不要洗頭，避免不小心有污水入眼。若果污水入眼，可使用由醫生配方的眼藥水，並儘快跟診所聯絡作跟進。`
+        title: 'Can I wash my hair the same day after LASIK?',
+        content: `We do not recommend washing your hair the same day after surgery to avoid non-sterile water from getting into your eyes. If non-sterile water does get into your eyes, please use the eye drops we prescribed and contact us as early as possible.`
       },
       problem11: {
-        title: '接受LASIK激光矯視前後需要戒口嗎？',
-        content: `不需要，激光矯視和進食並無任何關係。`
+        title: 'Any diet restriction before or after LASIK?',
+        content: `No, you can have your normal diet.`
       },
       problem12: {
-        title: '斜視能做LASIK激光矯視嗎？',
-        content: `斜視手術與激光矯視本身並不衝突，
-          我們建議18歲以下患者戴眼鏡去矯正斜視。
-          18歲以上的需個別考慮情況。對於調節性斜視，可考慮先做視力矯正，再治療斜視。針對這種情況，如果不希望佩戴眼鏡提高視力便建議可以做激光矯視。其他情況的斜視，因為斜視本身的問題已明顯影響患者生活質量，且做近視眼矯視並不會改善原有的斜視情況，就不會給予首選推薦。`
+        title: 'Can I get LASIK done if I have squint?',
+        content: `Theoretically, there is no conflict between squint surgery and LASIK. However, we recommend patients under 18 years old to wear glasses to improve their squint. For squint patients over 18 years old, please consult your ophthalmologist before any surgical plan. For patients with accommodative squint, it’s an option to get vision correction surgery first and then get your squint corrected later if you do not want to wear glasses. For patients with other types of squint, since the squint itself might have already impacted your quality of life and getting vision correction surgery will not benefit your squint situation, therefore we don’t recommend you to have vision correction.`
       },
       problem13: {
-        title: '接受過激光矯視，之後仍可以接受其他眼部手術嗎？',
-        content: `可以， LASIK激光矯視只改變角膜弧度，沒有影響眼部其他組織。`
+        title: 'Can I still have other eye surgeries after LASIK if necessary?',
+        content: `Yes. LASIK only changes the curvature of your cornea and other parts of the eyes are not involved.`
       },
       problem14: {
-        title: '哪類型的患者，需要接受LASIK Xtra 或角膜膠原交聯術(Cross-linking)？',
-        content: `LASIK Xtra
-          是一種角膜膠原交聯術，它適用於角膜太薄、度數過深、患有錐形角膜或角膜退化的患者。眼科醫生會評估患者是否需要額外進行角膜膠原交聯術，才進行矯視。醫生會為患耆眼睛滴上核黃素
-          (一種維生素)
-          眼溶液，然後以UVA燈照射眼睛，以達成角膜交聯，增加角膜強度，有效降低患者角膜擴張的風險。<br />
-
-          角膜膠原交聯術可與LASIK激光矯視同時進行，一般來說，先進行前者，隨後便可進行矯視。`
+        title: 'What types of patients are required to have LASIK Xtra or Cross-linking surgery?',
+        content: `LASIK Xtra is a type of corneal cross-linking surgery. It is suitable for patients: whose cornea is too thin, who have severe myopia, hyperopia, and astigmatism, or who are suspected of being at risk of keratoconus. Your surgeon will evaluate your conditions and decide if you need Xtra cross-linking surgery together with your vision correction surgery or not. Usually, riboflavin eye drops will be applied to your eyes and your eyes will be exposed to UVA light to strengthen your cornea. Cross-linking surgery can be simultaneously completed with LASIK.`
       }
     },
     thirtProblem: {
       problem1: {
-        title: 'ICL植入式隱形眼鏡的適用矯正範圍是？',
-        content: `ICL植入式隱形眼鏡可用於矯正近視1800度以下、遠視1000度以下和散光600度以下。`
+        title: 'What is the corrective range of ICL implantable contact lenses?',
+        content: `ICL implantable contact lenses can be used to correct myopia up to 1800 degrees, hyperopia up to 1000 degrees, and astigmatism up to 600 degrees.`
       },
       problem2: {
-        title: '別人能看出我眼中的ICL植入式隱形眼鏡嗎？',
-        content: `由於晶體的位置位於眼內虹膜和晶狀體之間，所以外觀上看不出來。`
+        title: 'Can others see the ICL implantable contact lenses in my eyes?',
+        content: `As the position of the ICL is between the iris and the natural lens in the eye, it is not visible to others.`
       },
       problem3: {
-        title: 'ICL植入式隱形眼鏡後是否會有異物感？',
-        content: `ICL植入式隱形眼鏡可以與眼球達到高度生物相容，既不會引起炎症也不會有異物感。`
+        title: 'Will I feel any foreign body sensation after ICL implanted contact lenses?',
+        content: `ICL implantable contact lenses are highly biocompatible and neither causes inflammation or foreign body sensation.`
       },
       problem4: {
-        title: '術後多久可以正常工作和生活？',
-        content: `ICL復原期短，矯正後第一天即可享受清晰視力，醫生屆時會提供具體建議。`
+        title: 'How long can I resume my normal work after surgery?',
+        content: `ICL has a short recovery period and allows clients to have clear vision on the first day after correction. Doctors will provide specific recommendations.`
       },
       problem5: {
-        title: '為甚麼ICL植入式隱形眼鏡會比SMILE微笑激光矯視及LASIK激光矯視貴呢?',
-        content: `我們中心使用的人工晶體均來自瑞士個體化訂製，是國際眼科高科技優質產品，跟自動化程度較大的SMILE微笑激光矯視和LASIK激光矯力，ICL對醫生的技術要求會更高。`
+        title: 'Why are ICL implantable contact lenses more expensive than SMILE and LASIK??',
+        content: `These artificial lenses used in our center are individually made in Switzerland. They are highly specialized ophthalmic products that meet international excellence. Compared with laser-dependent vision correction like SMILE and LASIK, ICL demands more skills and expertise from doctors.`
       }
     },
     fourProblem: {
       problem1: {
-        title: '如何判斷哪種老花矯視方式適合我？',
-        content: `醫生會為你進行全面的檢查與溝通，來評估何種老花矯視是否適合你。`
+        title: 'How to determine which presbyopia correction method is suitable for me?',
+        content: `The doctor will conduct a comprehensive examination to assess a suitable presbyopia correction plan for you.`
       },
       problem2: {
-        title: '有近視就不會出現老花？',
-        content: `老花是眼睛機能衰退的自然現象，由於眼睛晶體逐漸硬化及眼內肌肉老化令晶體的變焦功能衰退所致，令人看近物時難以聚焦，模糊視野。一般人約在40至50歲左右就會開始出現老花症狀，故有近視的人也會有老花。`
+        title: 'Will I have presbyopia if I am nearsighted?',
+        content: `Presbyopia is a natural phenomenon of degenerating eye function. Due to the gradual hardening of the natural lens and the aging of ciliary muscles in the eye, the focusing function of the lens deteriorates, making it difficult to focus and causing blurry vision when looking at close objects. Most people begin to experience presbyopia around the age of 40 to 50, so even people with myopia will have presbyopia.`
       },
       problem3: {
-        title: '何時做三焦晶體植入術比較好？',
-        content: `三焦晶體主要用於40至50歲老花眼人群。如客人覺得老花眼已經影響正常生活或閱讀，需配戴老花眼鏡，此時，三焦晶體便是矯正遠中近視力的不錯選擇。而最合適自己的老花矯視方案，還是需由醫生進行全面檢查後制定。`
+        title: 'What is the best time to have multi-focal lens implantation?',
+        content: `Trifocal lenses are mainly used in improving presbyopia around the age of 40 to 50. If you think presbyopia has already affected your normal life and you need to wear reading glasses while reading, multi-focal lens implantation is a good choice for you. Again, the most suitable presbyopia correction plan needs to be formulated by a doctor after a comprehensive examination.`
       },
       problem4: {
-        title: '老花等於遠視嗎？',
-        content: `在光學上，老花是遠視的一種，但它們的成因不同。遠視主要成因是眼球過短，令景物聚焦了在視網膜後面。至於老花，則是由於晶體退化變硬，失去彈性及連繫著晶狀體的韌帶老化，令晶體的偏置功能下降，使近物時難以聚焦，出現模糊感。`
+        title: 'Is presbyopia equal to hyperopia?',
+        content: `Optically, presbyopia is a type of hyperopia, but they have different causes. The main cause of hyperopia due to the shortened eyeball, causing images to focus behind the retina. As for presbyopia, it is due to the degeneration and hardening of your natural lens.  The natural lens loses its elasticity and the ciliary muscle connected to the lens also loses its elasticity, which reduces the focusing function of the lens, making it difficult to focus when viewing near objects.`
       },
       problem5: {
-        title: '老花可以預防嗎？',
-        content: `現時尚未有有效的方法去防止其出現或惡化，但保持良好的用眼習慣有助減輕老花的徵狀和所造成的困擾。`
+        title: 'Can presbyopia be prevented?',
+        content: `At present, there is no effective way to prevent presbyopia from appearing or worsening, but maintaining good habits can help alleviate the symptoms and predicaments caused by presbyopia.`
       },
       problem6: {
-        title: '術後視力多久可以恢復？',
-        content: `治療完成後第二天你就可以獲得良好的近距離視力，不戴老花鏡也可以輕鬆閱讀。中、遠距離的視力恢復通常在術後一週達到。之後經過數周，你的視野將會更清晰，並逐步適應多焦視覺狀態。`
+        title: 'How long does it take to restore vision after surgery?',
+        content: `You can get good near vision the next day after treatment, and you are supposed to read without reading glasses. Intermediate and distant distance vision recovery usually in around one week after surgery. After a few weeks, your vision will become clearer and gradually adapt to multifocal vision.`
       }
     }
   },
@@ -1236,10 +1221,10 @@ module.exports = {
       A_3: 'No, there are no restrictions. The consumption vouchers can be used for any products or services at C-MER Eye Center, C-MER SMILE Refractive Center, and C-MER Vision Center.',
       A_4: 'Yes, as long as all payment parties are present during checkout, our staff will arrange the payment for you.'
     },
-    divit:{
+    divit: {
       title: 'Divit’s Lucky Draw Details',
       contentText: 'FPS by divit is now available for payment in C-MER Smile Refractive Center.',
-      contentText0_1:'From now until 13 Nov 2023, pay with FPS by divit to enter the divit 300,000 miles giveaway. For every HKD 100 spent per order, you receive 10 entries. You can win 20,000 miles every week and a grand prize of 40,000 miles.The more you purchase, the more chances to win! Bonus: sign up as a divit member and get an extra entry.',
+      contentText0_1: 'From now until 13 Nov 2023, pay with FPS by divit to enter the divit 300,000 miles giveaway. For every HKD 100 spent per order, you receive 10 entries. You can win 20,000 miles every week and a grand prize of 40,000 miles.The more you purchase, the more chances to win! Bonus: sign up as a divit member and get an extra entry.',
       contentText0: `Don't miss out on a chance to win miles when enjoying the refractive service!`,
       contentText1: 'FPS by divit is available in Tsim Sha Tsui Refractive Center only',
       contentText2: 'Room 1906, K11 ATELIER Victoria Dockside, 18-24 Salisbury Road, Tsim Sha Tsui（Tsim Sha Tsui MTR Station Exit J2）',
@@ -1450,9 +1435,9 @@ module.exports = {
         desc: [
           {
             span1: 'Struggling with/',
-            span2: 'nearsightedness',   
-            span3: 'and/or astigmatism', 
-            span4: 'in daily life', 
+            span2: 'nearsightedness',
+            span3: 'and/or astigmatism',
+            span4: 'in daily life',
           },
           {
             span1: 'Concerned about',
