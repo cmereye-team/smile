@@ -399,9 +399,10 @@
                 class="nav_bar section hidden md:flex md:justify-between items-center"
               >
                 <div class="new_header">
-                  <a href="tel: +85260610511" target="_blank" class="new_about"
+                  <!-- <a href="tel: +85260610511" target="_blank" class="new_about"
                     >{{ $t('home.headers.reservationService') }}</a
-                  >
+                  > -->
+                  <nuxt-link to="/booking" class="new_about">{{ $t('home.headers.reservationService') }}</nuxt-link>
                   <div class="new_a_div">
                     <a href="https://www.facebook.com/CMER.SMILE">
                       <svg
@@ -1725,7 +1726,7 @@ $active_gradient: #4570b6;
   }
 
   .new_about {
-    border-radius: 17px;
+    border-radius: 25px;
     background: #76c8e2;
     color: #fff;
     text-align: center;
