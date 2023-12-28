@@ -10,7 +10,7 @@
       v-else
       width="100%"
       height="1600"
-      src="https://smilecms.hkcmereye.com/bookingifram"
+      :src="newUrl"
     ></iframe>
   </div>
 </template>
@@ -18,10 +18,19 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      randomNum:0,
+      url:'https://smilecms.hkcmereye.com/bookingifram',
+      newUrl:'',
+    };
   },
   created() {},
   methods: {},
+  mounted() {
+    // 生成随机两位数
+    this.randomNum = Math.floor(Math.random() * 100);
+    this.newUrl = this.url + '?t=' + this.randomNum;
+  }
 };
 </script>
 
