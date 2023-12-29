@@ -418,6 +418,7 @@ module.exports = {
     td1_3: 'Discount',
     td1_4: 'from now until',
     td1_5: "Discount",
+    td1_5_1:'31.1.2024',
     td2: 'Presurgery examination fee',
     span1: 'Designated credit card enjoys 6/12 months Interest-fee installment',
     span2: 'Refund of presurgery examination fee after completion of vision correction surgery',
