@@ -89,7 +89,7 @@
       <div class="footer-bottom">
         <p>
           <span
-            >©2023 {{ $t("home.footer.span1")
+            >©2024 {{ $t("home.footer.span1")
             }}{{ $t("home.footer.span2") }}</span
           >
           <span>
@@ -229,7 +229,7 @@
         <div class="footer-bottom m-auto">
           <p>
             <span
-              >©2023 {{ $t("home.footer.span1")
+              >©2024 {{ $t("home.footer.span1")
               }}{{ $t("home.footer.span2") }}</span
             >
             <span>
