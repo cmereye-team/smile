@@ -2,12 +2,13 @@
   <div>
     <Header />
     <div class="pagebody">
-    <Navbar />
-    <BannerSlider />
-    <ServeTable />
-    <GoogleMap />
-    <Footer />
-    <footers /></div>
+      <Navbar />
+      <BannerSlider />
+      <ServeTable />
+      <GoogleMap />
+      <Footer />
+      <footers />
+    </div>
   </div>
 </template>
 

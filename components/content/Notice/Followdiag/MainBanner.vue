@@ -36,6 +36,8 @@ export default {
     margin: 0 auto;
     margin-bottom: 10vw;
     margin-top: 24vw;
+    font-size: 20px;
+    padding: 0 20px;
 }
 
 }

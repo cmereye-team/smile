@@ -27,9 +27,12 @@ export default {
 }
 @media (max-width: 768px) {
   .section {
-    width: 100;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10vw;
+    height: 100vw;
+    padding: 0 20px;
+    font-size: 20px;
   }
   .banner {
     background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_mb.avif") no-repeat;

@@ -88,6 +88,8 @@ export default {
     margin-bottom: 10vw;
     padding-left: 25px;
     margin-top: 24vw;
+    padding: 0 20px;
+    height: 100vw;
   }
 }
 

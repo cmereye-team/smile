@@ -170,7 +170,7 @@ export default {
     padding-left: 25px;
   }
   .section {
-    height: 76vw;
+    // height: 76vw;
     background-size: cover !important;
     background-repeat: no-repeat;
   }
