@@ -689,15 +689,15 @@
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
-      <!-- Clear-Vision -->
-      <div class="md:mt-10" id="Clear-Vision">
+      <!-- Clear-Vision 2024-02-01 删除 start -->
+      <!-- <div class="md:mt-10" id="Clear-Vision">
         <div>
           <div class="pcShow" style="min-height: 140px"></div>
           <div class="mbShow" style="min-height: 110px"></div>
         </div>
         <h2 style="margin-bottom: 0 !important">Clear-Vision</h2>
-      </div>
-      <div class="table-box_four pcShow">
+      </div> -->
+      <!-- <div class="table-box_four pcShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
           <caption>
             {{
@@ -742,7 +742,7 @@
               </td>
             </tr>
             <tr height="10">
-              <!-- <td class="boder-none"></td> -->
+              <td class="boder-none"></td>
             </tr>
             <tr height="19" class="jiage">
               <td class="danyan" style="width: 73px !important">
@@ -772,8 +772,8 @@
         <span class="vision_smile" style=""
           ><strong>·</strong>{{ $t("chargeDetail.span17") }}</span
         >
-      </div>
-      <div class="table-1-box mbShow">
+      </div> -->
+      <!-- <div class="table-1-box mbShow">
         <table class="gdp">
           <caption>
             {{
@@ -865,10 +865,10 @@
         </table>
         <span class="vision_smile" style="margin-left:0;"><strong>·</strong>{{ $t("chargeDetail.span17") }}</span
         >
-      </div>
-      <div class="pcShow tabBtn" @click="toWhatsapp">
+      </div> -->
+      <!-- <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
-      </div>
+      </div> 2024-02-01 删除 end  -->
     </div>
     <div
       v-else-if="currentTitleIndex === 1"
@@ -1173,7 +1173,7 @@ export default {
         this.$t("chargeDetail.title7"),
         this.$t("chargeDetail.title2"),
         this.$t("chargeDetail.title3"),
-        "Clear-Vision",
+        // "Clear-Vision",
       ],
       list: [
         {
@@ -1208,9 +1208,10 @@ export default {
         window.location.href = `${lang_sign}charge-detail#ICL`;
       } else if (index === 3) {
         window.location.href = `${lang_sign}charge-detail#LASIK`;
-      } else {
-        window.location.href = `${lang_sign}charge-detail#Clear-Vision`;
-      }
+      } 
+      // else {
+      //   window.location.href = `${lang_sign}charge-detail#Clear-Vision`;
+      // }
     },
     //判断是否打开
     judgeActive(data) {
