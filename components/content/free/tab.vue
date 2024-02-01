@@ -1817,7 +1817,7 @@ i {
 }
 @media screen and (max-width: 768px) {
   ::v-deep .section {
-    height: 100vw;
+    height: 100vw !important;
   }
   .box-img-mb {
     & > img {
