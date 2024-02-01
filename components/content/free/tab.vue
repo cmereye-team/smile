@@ -1816,6 +1816,9 @@ i {
   }
 }
 @media screen and (max-width: 768px) {
+  ::v-deep .section {
+    height: 100vw;
+  }
   .box-img-mb {
     & > img {
       max-width: 35%;
