@@ -196,7 +196,7 @@
               </td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">{{ $t("chargeDetail.td1_5") }}{{ $t("chargeDetail.td1_5_1") }}</td>
+              <td colspan="4" id="blue">{{ $t("chargeDetail.td1_5") }}</td>
             </tr>
             <tr>
               <td>
