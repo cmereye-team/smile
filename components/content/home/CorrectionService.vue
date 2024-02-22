@@ -141,8 +141,8 @@ export default {
 
     h3 {
       position: absolute;
-      top: -40px;
-      left: -40px;
+      top: -32px;
+      // left: -40px;
       font-family: "Baskervville" !important;
       letter-spacing: 1px;
       font-style: normal;
@@ -188,7 +188,7 @@ export default {
 .smileSerItemBox {
   .smileSerItem {
     h3 {
-      font-size: 34px;
+      font-size: 28px;
     }
   }
 }
@@ -311,12 +311,12 @@ export default {
         width: 65%;
         height: 42vw;
         margin-bottom: 85px;
-        transform: translateX(20px);
+        // transform: translateX(20px);
 
         h3 {
-          top: -9vw;
-          left: -11vw;
-          font-size: 34px;
+          top: -8vw;
+          // left: -11vw;
+          font-size: 30px;
         }
 
         .morelink {
