@@ -24,9 +24,10 @@
       <div
         class="section_text shadow-lg"
         :style="{
-          maxWidth: $i18n.locale === 'en' ? '888px' : '738px',
-          marginLeft: $i18n.locale === 'en' ? '10px' : '530px',
-          height: $i18n.locale === 'en' ? '960px' : '920px',
+          maxWidth: $i18n.locale === 'en' ? '888px' : '330px',
+          marginLeft: $i18n.locale === 'en' ? '10px' : '65px',
+          height: $i18n.locale === 'en' ? '960px' : 'auto',
+          marginRight: $i18n.locale === 'en' ? '70px' : '0',
         }"
       >
         <p :style="{
