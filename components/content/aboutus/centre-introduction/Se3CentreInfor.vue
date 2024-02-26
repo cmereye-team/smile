@@ -8,42 +8,55 @@
         <p>{{ $t("aboutUs.centreIntroduction.Se3CentreInfor.p") }}</p>
       </div>
       <div class="md:flex pcShow page_container img_box">
-        <img
-          class="flex-1"
-          src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg"
-          alt
-        />
+        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
       </div>
       <div class="md:flex mbShow page_container img_box">
-        <img
-          class="flex-1"
-          src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg"
-          alt
-        />
+        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
       </div>
-      <div
-        class="section_text shadow-lg"
-        :style="{
-          maxWidth: $i18n.locale === 'en' ? '888px' : '330px',
-          marginLeft: $i18n.locale === 'en' ? '10px' : '65px',
-          height: $i18n.locale === 'en' ? '960px' : 'auto',
-          marginRight: $i18n.locale === 'en' ? '70px' : '0',
-        }"
-      >
+      <div class="pcShow section_text shadow-lg" :style="{
+        maxWidth: $i18n.locale === 'en' ? '888px' : 'max-content',
+        marginLeft: $i18n.locale === 'en' ? '10px' : '65px',
+        height: $i18n.locale === 'en' ? '960px' : 'auto',
+        marginLeft: $i18n.locale === 'en' ? '70px' : '0',
+      }">
         <p :style="{
           textAlign: $i18n.locale === 'en' ? 'justify' : 'initial',
         }">
           <span>{{
             $t("aboutUs.centreIntroduction.Se3CentreInfor.span1")
-          }}</span
-          ><br class="pcShow" />
+          }}</span><br class="pcShow" />
           {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span2") }}<br />
           <br :style="{
-          display: $i18n.locale === 'en' ? 'inlineBlock' : '780px',
-        }"  />
+            display: $i18n.locale === 'en' ? 'inlineBlock' : '780px',
+          }" />
           <br :style="{
-          height: $i18n.locale === 'en' ? '960px' : '780px',
-        }" />
+            height: $i18n.locale === 'en' ? '960px' : '780px',
+          }" />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span3") }}<br />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span4") }}<br />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span5") }}<br />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span6") }}
+        </p>
+      </div>
+      <div class="mbShow section_text shadow-lg" :style="{
+        maxWidth: $i18n.locale === 'en' ? '888px' : '330px',
+        marginLeft: $i18n.locale === 'en' ? '10px' : '65px',
+        height: $i18n.locale === 'en' ? '960px' : 'auto',
+        marginLeft: $i18n.locale === 'en' ? '70px' : '0',
+      }">
+        <p :style="{
+          textAlign: $i18n.locale === 'en' ? 'justify' : 'initial',
+        }">
+          <span>{{
+            $t("aboutUs.centreIntroduction.Se3CentreInfor.span1")
+          }}</span><br class="pcShow" />
+          {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span2") }}<br />
+          <br :style="{
+            display: $i18n.locale === 'en' ? 'inlineBlock' : '780px',
+          }" />
+          <br :style="{
+            height: $i18n.locale === 'en' ? '960px' : '780px',
+          }" />
           {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span3") }}<br />
           {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span4") }}<br />
           {{ $t("aboutUs.centreIntroduction.Se3CentreInfor.span5") }}<br />
@@ -52,25 +65,20 @@
       </div>
     </div>
 
-    <!-- <div class="mbShow">
-      <div v-swiper:mySwiper="swiperOptionMb" class="swiperWrap">
-        <div class="swiper-wrapper">
-          <div
-            class="swiper-slide"
-            v-for="(banner, index) in banners"
-            :key="index"
-          >
-            <img :src="banner.src" />
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <div class="mbShow mb_top">
+      <mbSwiper />
+    </div>
   </div>
 </template>
 <script>
+import mbSwiper from './huanjswiper.vue';
 export default {
+  components: {
+    mbSwiper,
+  },
   data() {
     return {
+      isScreen: '',
       banners: [
         {
           src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg",
@@ -94,8 +102,14 @@ export default {
       },
     };
   },
-  created() {},
-  methods: {},
+  created() {
+  },
+  methods: {
+    geiScreen() {
+      // 获取当前屏幕大小
+      this.isScreen = screen.clientWidth > 768 ? 'pc' : 'mb';
+    }
+  },
 };
 </script>
 
@@ -154,6 +168,10 @@ export default {
 
 // pc
 @media only screen and (min-width: 768px) {
+  .mbShow {
+    display: none !important;
+  }
+
   .img_box {
     display: flex;
     flex-direction: column;
@@ -253,6 +271,14 @@ export default {
 
 // mb
 @media only screen and (max-width: 768px) {
+  .mb_top {
+    margin-top: 50px;
+  }
+
+  .pcShow {
+    display: none !important;
+  }
+
   .Se2ComIntro {
     margin-bottom: 30px;
   }
