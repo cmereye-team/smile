@@ -65,9 +65,9 @@
       </div>
     </div>
 
-    <div class="mbShow mb_top">
+    <!-- <div class="mbShow mb_top">
       <mbSwiper />
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
