@@ -533,7 +533,6 @@
           </div>
           <div>
             <div class="mb_menu_style">
-              +
               <DetailOption
                 :group="groupList"
                 :pcOrMobile="'mobile'"
