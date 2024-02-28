@@ -1774,7 +1774,7 @@ i {
     padding: 40px 0;
     cursor: pointer;
     .tab-control-item {
-      padding: 0 0 0 30px;
+      padding: 0 0 0 18px;
       span {
         font-family: var(--font_family);
         font-style: normal;
