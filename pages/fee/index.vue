@@ -17,7 +17,17 @@ import Tab from "@/components/content/free/tab.vue";
 import footers from "@/components/commom/foot/footers.vue";
 import MainBanner from "@/components/content/ophthalmicInfo/consumption/MainBanner.vue";
 
-export default { components: { Header, Navbar, Footer, Tab, footers,MainBanner } };
+export default {
+  components: { Header, Navbar, Footer, Tab, footers, MainBanner },
+  head() {
+    return {
+      title: "收費詳情 - 香港希瑪微笑矯視中心",
+      link: [
+        { rel: 'canonical', href: 'https://smile.hkcmereye.com/fee' }
+      ]
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
