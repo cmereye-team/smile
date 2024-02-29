@@ -9,7 +9,7 @@
 
     <Footer />
 
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -21,7 +21,27 @@ import MainBanner from "@/components/content/Notice/Followdiag/MainBanner.vue";
 import followDiago from "@/components/content/Notice/Followdiag/followDiago.vue";
 import precautions from "@/components/content/Notice/Followdiag/precautions.vue";
 
-export default { components: { Header, Navbar, Footer, MainBanner, followDiago, precautions} }
+export default {
+
+  components: { Header, Navbar, Footer, MainBanner, followDiago, precautions },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/Notice/Followdiag",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/Notice/Followdiag",
+    }
+  },
+  head() {
+    return {
+      title: "矯視後覆診 - 香港希瑪微笑矯視中心",
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/Notice/Followdiag" },
+        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/Notice/Followdiag" },
+        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/Notice/Followdiag" },
+      ]
+    };
+  },
+}
 </script>
 
 

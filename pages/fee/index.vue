@@ -19,11 +19,20 @@ import MainBanner from "@/components/content/ophthalmicInfo/consumption/MainBann
 
 export default {
   components: { Header, Navbar, Footer, Tab, footers, MainBanner },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/fee",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/fee",
+    }
+  },
   head() {
     return {
       title: "收費詳情 - 香港希瑪微笑矯視中心",
       link: [
-        { rel: 'canonical', href: 'https://smile.hkcmereye.com/fee' }
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/fee" },
+        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/fee" },
+        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/fee" },
       ]
     };
   },

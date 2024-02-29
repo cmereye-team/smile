@@ -41,6 +41,12 @@ export default {
     swiperhj,
     footers,
   },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/group-profile",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/group-profile",
+    }
+  },
   head() {
     return {
       title: "集團簡介 - 香港希瑪微笑矯視中心",
@@ -56,6 +62,12 @@ export default {
           content: "香港希瑪微笑矯視中心",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/group-profile" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/group-profile" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/group-profile" },
+      ]
     };
   },
 };

@@ -32,6 +32,12 @@ export default {
     precautions,
     footers,
   },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/post-corrective-care",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/post-corrective-care",
+    }
+  },
   head() {
     return {
       title: "術後護理 - 香港希瑪微笑矯視中心",
@@ -47,6 +53,12 @@ export default {
           content: "術後護理 - 香港希瑪微笑矯視中心",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/post-corrective-care" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/post-corrective-care" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/post-corrective-care" },
+      ]
     };
   },
 };

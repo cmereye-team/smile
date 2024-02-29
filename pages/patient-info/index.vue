@@ -32,6 +32,12 @@ export default {
     Preorthoptic,
     footers,
   },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/patient-info",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/patient-info",
+    }
+  },
   head() {
     return {
       title: "診症須知 - 香港希瑪微笑矯視中心",
@@ -47,6 +53,13 @@ export default {
           content: "診症須知 - 香港希瑪微笑矯視中心",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/patient-info" },
+        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/patient-info" },
+        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/patient-info" },
+
+      ]
     };
   },
 };

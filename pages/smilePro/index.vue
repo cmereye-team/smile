@@ -276,27 +276,28 @@
                             {{ $t('service.smilePro.smileProProve.lists[3].name') }}</div>
                         <div
                             :class="[$i18n.locale === 'en' ? 'smileProSwiper-in-context smileProSwiper-in-contextEng1' : 'smileProSwiper-in-context']">
-                            <span v-if="$i18n.locale!== 'en'">{{ $t('service.smilePro.smileProProve.lists[3].span1') }}<span
-                                    :class="[$i18n.locale === 'en' ? '' : 'focus']">{{
-                                        $t('service.smilePro.smileProProve.lists[3].span2') }}</span></span>
-                            <span v-if="$i18n.locale!== 'en'" :class="[$i18n.locale === 'en' ? '' : 'smallLineHeight']">{{
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[3].span1')
+                            }}<span :class="[$i18n.locale === 'en' ? '' : 'focus']">{{
+    $t('service.smilePro.smileProProve.lists[3].span2') }}</span></span>
+                            <span v-if="$i18n.locale !== 'en'" :class="[$i18n.locale === 'en' ? '' : 'smallLineHeight']">{{
                                 $t('service.smilePro.smileProProve.lists[3].span3') }}</span>
-                            <span v-if="$i18n.locale!== 'en'" :class="[$i18n.locale === 'en' ? '' : 'smallLineHeight']"><span
+                            <span v-if="$i18n.locale !== 'en'"
+                                :class="[$i18n.locale === 'en' ? '' : 'smallLineHeight']"><span
                                     :class="$i18n.locale === 'en' ? '' : 'smallFocus'">{{
                                         $t('service.smilePro.smileProProve.lists[3].span4') }}</span>{{
         $t('service.smilePro.smileProProve.lists[3].span5') }}</span>
-                            <span v-if="$i18n.locale!== 'en'" :class="[$i18n.locale === 'en' ? '' : 'smallLineHeight']">{{
+                            <span v-if="$i18n.locale !== 'en'" :class="[$i18n.locale === 'en' ? '' : 'smallLineHeight']">{{
                                 $t('service.smilePro.smileProProve.lists[3].span6') }}</span>
 
-                                <p  v-if="$i18n.locale === 'en'">
-                                    {{ $t('service.smilePro.smileProProve.lists[3].span1') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[3].span2') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[3].span3') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[3].span4') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[3].span5') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[3].span6') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[3].span7') }}
-                                </p>
+                            <p v-if="$i18n.locale === 'en'">
+                                {{ $t('service.smilePro.smileProProve.lists[3].span1') }}
+                                {{ $t('service.smilePro.smileProProve.lists[3].span2') }}
+                                {{ $t('service.smilePro.smileProProve.lists[3].span3') }}
+                                {{ $t('service.smilePro.smileProProve.lists[3].span4') }}
+                                {{ $t('service.smilePro.smileProProve.lists[3].span5') }}
+                                {{ $t('service.smilePro.smileProProve.lists[3].span6') }}
+                                {{ $t('service.smilePro.smileProProve.lists[3].span7') }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -308,22 +309,25 @@
                             {{ $t('service.smilePro.smileProProve.lists[0].name') }}</div>
                         <div
                             :class="[$i18n.locale === 'en' ? 'smileProSwiper-in-context smileProSwiper-in-contextEng1' : 'smileProSwiper-in-context']">
-                            <span v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[0].span1') }}</span>
-                            <span v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[0].span2') }}</span>
-                            <span v-if="$i18n.locale!== 'en'" >
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[0].span1')
+                            }}</span>
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[0].span2')
+                            }}</span>
+                            <span v-if="$i18n.locale !== 'en'">
                                 <span :class="[$i18n.locale === 'en' ? '' : 'focus']">{{
                                     $t('service.smilePro.smileProProve.lists[0].span3') }}</span>
                                 <span>{{ $t('service.smilePro.smileProProve.lists[0].span4') }}</span>
                             </span>
-                            <span v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[0].span5') }}</span>
-                            <p  v-if="$i18n.locale === 'en'">
-                                    {{ $t('service.smilePro.smileProProve.lists[0].span1') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[0].span2') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[0].span3') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[0].span4') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[0].span5') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[0].span6') }}
-                                </p>
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[0].span5')
+                            }}</span>
+                            <p v-if="$i18n.locale === 'en'">
+                                {{ $t('service.smilePro.smileProProve.lists[0].span1') }}
+                                {{ $t('service.smilePro.smileProProve.lists[0].span2') }}
+                                {{ $t('service.smilePro.smileProProve.lists[0].span3') }}
+                                {{ $t('service.smilePro.smileProProve.lists[0].span4') }}
+                                {{ $t('service.smilePro.smileProProve.lists[0].span5') }}
+                                {{ $t('service.smilePro.smileProProve.lists[0].span6') }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -335,21 +339,24 @@
                             {{ $t('service.smilePro.smileProProve.lists[1].name') }}</div>
                         <div
                             :class="[$i18n.locale === 'en' ? 'smileProSwiper-in-context smileProSwiper-in-contextEng1' : 'smileProSwiper-in-context']">
-                            <span  v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[1].span1') }}</span>
-                            <span  v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[1].span2') }}</span>
-                            <span  v-if="$i18n.locale!== 'en'" ><span :class="[$i18n.locale === 'en' ? '' : 'focus']">{{
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[1].span1')
+                            }}</span>
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[1].span2')
+                            }}</span>
+                            <span v-if="$i18n.locale !== 'en'"><span :class="[$i18n.locale === 'en' ? '' : 'focus']">{{
                                 $t('service.smilePro.smileProProve.lists[1].span3')
                             }}</span>,</span>
-                            <span  v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[1].span4') }}!</span>
-                            <p  v-if="$i18n.locale === 'en'">
-                                    {{ $t('service.smilePro.smileProProve.lists[1].span1') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[1].span2') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[1].span3') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[1].span4') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[1].span5') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[1].span6') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[1].span7') }}
-                                </p>
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[1].span4')
+                            }}!</span>
+                            <p v-if="$i18n.locale === 'en'">
+                                {{ $t('service.smilePro.smileProProve.lists[1].span1') }}
+                                {{ $t('service.smilePro.smileProProve.lists[1].span2') }}
+                                {{ $t('service.smilePro.smileProProve.lists[1].span3') }}
+                                {{ $t('service.smilePro.smileProProve.lists[1].span4') }}
+                                {{ $t('service.smilePro.smileProProve.lists[1].span5') }}
+                                {{ $t('service.smilePro.smileProProve.lists[1].span6') }}
+                                {{ $t('service.smilePro.smileProProve.lists[1].span7') }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -361,21 +368,23 @@
                             {{ $t('service.smilePro.smileProProve.lists[2].name') }}</div>
                         <div
                             :class="[$i18n.locale === 'en' ? 'smileProSwiper-in-context smileProSwiper-in-contextEng1' : 'smileProSwiper-in-context']">
-                            <span  v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[2].span1') }}</span>
-                            <span  v-if="$i18n.locale!== 'en'" >
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[2].span1')
+                            }}</span>
+                            <span v-if="$i18n.locale !== 'en'">
                                 <span>{{ $t('service.smilePro.smileProProve.lists[2].span2') }}</span>
                                 <span :class="[$i18n.locale === 'en' ? '' : 'focus']">{{
                                     $t('service.smilePro.smileProProve.lists[2].span3') }}</span>
                             </span>
-                            <span  v-if="$i18n.locale!== 'en'" >{{ $t('service.smilePro.smileProProve.lists[2].span4') }}</span>
-                            <p  v-if="$i18n.locale === 'en'">
-                                    {{ $t('service.smilePro.smileProProve.lists[2].span1') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[2].span2') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[2].span3') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[2].span4') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[2].span5') }}
-                                    {{ $t('service.smilePro.smileProProve.lists[2].span6') }}
-                                </p>
+                            <span v-if="$i18n.locale !== 'en'">{{ $t('service.smilePro.smileProProve.lists[2].span4')
+                            }}</span>
+                            <p v-if="$i18n.locale === 'en'">
+                                {{ $t('service.smilePro.smileProProve.lists[2].span1') }}
+                                {{ $t('service.smilePro.smileProProve.lists[2].span2') }}
+                                {{ $t('service.smilePro.smileProProve.lists[2].span3') }}
+                                {{ $t('service.smilePro.smileProProve.lists[2].span4') }}
+                                {{ $t('service.smilePro.smileProProve.lists[2].span5') }}
+                                {{ $t('service.smilePro.smileProProve.lists[2].span6') }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -401,6 +410,13 @@ import MainBanner from "@/components/content/service/SMILEPRO/MainBanner.vue";
 
 export default {
     components: { Header, Navbar, Footer, MainBanner, footers },
+
+    data() {
+        return {
+            canonicalHref: "https://smile.hkcmereye.com/smilePro",
+            canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
+        }
+    },
     head() {
         return {
             title: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
@@ -416,6 +432,12 @@ export default {
                     content: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
                 },
             ],
+            link: [
+                { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+                { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/smilePro" },
+                { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/smilePro" },
+                { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/smilePro" },
+            ]
         };
     },
     data() {
@@ -2253,7 +2275,7 @@ export default {
 
         .smileProSwiper-in-contextEng1 {
             p {
-                width: 100%!important;
+                width: 100% !important;
                 color: #6D6E71 !important;
                 text-align: center !important;
                 font-family: Inter !important;
@@ -2270,9 +2292,10 @@ export default {
             .smileProSwiper-in-nameEngMb {
                 right: -16px !important;
             }
-            .smileProSwiper-in-contextEng1  {
+
+            .smileProSwiper-in-contextEng1 {
                 p {
-                    padding: 0 16px!important;
+                    padding: 0 16px !important;
                 }
             }
         }
@@ -2281,9 +2304,10 @@ export default {
             .smileProSwiper-in-nameEngMb {
                 right: -18px !important;
             }
-            .smileProSwiper-in-contextEng1  {
+
+            .smileProSwiper-in-contextEng1 {
                 p {
-                    padding: 0 15px!important;
+                    padding: 0 15px !important;
                 }
             }
         }
@@ -2292,9 +2316,10 @@ export default {
             .smileProSwiper-in-nameEngMb {
                 right: 14px !important;
             }
-            .smileProSwiper-in-contextEng1  {
+
+            .smileProSwiper-in-contextEng1 {
                 p {
-                    padding: 0 16px!important;
+                    padding: 0 16px !important;
                 }
             }
         }
@@ -2303,11 +2328,13 @@ export default {
             .smileProSwiper-in-nameEngMb {
                 right: 2px !important;
             }
-            .smileProSwiper-in-contextEng1  {
+
+            .smileProSwiper-in-contextEng1 {
                 p {
                     padding: 0 30px !important;
                 }
             }
         }
     }
-}</style>
+}
+</style>

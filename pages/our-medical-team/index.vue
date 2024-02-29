@@ -30,6 +30,12 @@ export default {
     DoctorInfo,
     footers,
   },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/our-medical-team",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/our-medical-team",
+    }
+  },
   head() {
     return {
       title: "醫生團隊 - 香港希瑪微笑矯視中心",
@@ -45,6 +51,12 @@ export default {
           content: "香港希瑪微笑矯視中心",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/our-medical-team" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/our-medical-team" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/our-medical-team" },
+      ]
     };
   },
 };

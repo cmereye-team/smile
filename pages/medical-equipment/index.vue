@@ -19,6 +19,12 @@ import footers from "@/components/commom/foot/footers.vue";
 
 export default {
   components: { Header, Navbar, Footer, BannerSlider, EquipInfo, footers },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/medical-equipment",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/medical-equipment",
+    }
+  },
   head() {
     return {
       title: "中心設備 - 香港希瑪微笑矯視中心",
@@ -34,6 +40,12 @@ export default {
           content: "中心設備 - 香港希瑪微笑矯視中心",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/medical-equipment" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/medical-equipment" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/medical-equipment" },
+      ]
     };
   },
 };

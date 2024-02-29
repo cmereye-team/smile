@@ -25,6 +25,12 @@ import shareVideo from "@/components/content/ophthalmicInfo/shareVideos/shareVid
 
 export default {
   components: { Header, Navbar, Footer, MainBanner, shareVideo, footers },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/video",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/video",
+    }
+  },
   head() {
     return {
       title: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
@@ -40,6 +46,12 @@ export default {
           content: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/video" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/video" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/video" },
+      ]
     };
   },
 };

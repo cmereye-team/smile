@@ -64,7 +64,19 @@ export default {
             "ICL植入式隱形眼鏡, 矯視價錢 香港, 矯視 收費, 香港矯視, 視力矯正, 眼鏡, 隱形眼鏡, 眼科手術, 眼睛健康, 近視, 遠視, 散光, 投考紀律部隊, 微笑激光矯視, 乾眼, ICL 價錢, ICL 收費",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/vision-correction-icl" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/vision-correction-icl" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/vision-correction-icl" },
+      ]
     };
+  },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/vision-correction-icl",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-icl",
+    }
   },
 };
 </script>

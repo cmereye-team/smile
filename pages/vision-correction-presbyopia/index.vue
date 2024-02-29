@@ -39,6 +39,12 @@ export default {
     suitable,
     footers,
   },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/vision-correction-presbyopia",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-presbyopia",
+    }
+  },
   head() {
     return {
       title: "老花矯視 - 香港希瑪微笑矯視中心",
@@ -56,6 +62,12 @@ export default {
             "老花矯視, 老花矯視 價錢,老花矯視 收費, 老花矯視 推薦, 老花激光矯視 香港, 老花矯視 香港, 老花矯視 原理, 老花, 老花治療, 眼睛老化, 眼睛疲勞, 白內障, 人工晶體, 激光矯視",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/vision-correction-presbyopia" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/vision-correction-presbyopia" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/vision-correction-presbyopia" },
+      ]
     };
   },
 };

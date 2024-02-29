@@ -72,6 +72,12 @@ import footers from "@/components/commom/foot/footers.vue";
 
 export default {
   components: { Header, Navbar, Footer, footers },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/privacy-policy",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/privacy-policy",
+    }
+  },
   head() {
     return {
       title: "私隱政策 - 香港希瑪微笑矯視中心",
@@ -87,6 +93,12 @@ export default {
           content: "以下是希瑪眼科醫療控股有限公司與其附屬公 […]",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/privacy-policy" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/privacy-policy" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/privacy-policy" },
+      ]
     };
   },
 };

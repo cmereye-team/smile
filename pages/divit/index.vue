@@ -36,7 +36,19 @@ export default {
           content: "消費券詳情 - 香港希瑪微笑矯視中心",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/divit" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/divit" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/divit" },
+      ]
     };
+  },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/divit",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/divit",
+    }
   },
 };
 </script>

@@ -31,6 +31,23 @@ export default {
     Se3CentreInfor,
     footers,
   },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/about-us/centre-introduction",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/about-us/centre-introduction",
+    }
+  },
+  head() {
+    return {
+      title: "集團及中心簡介 - 香港希瑪微笑矯視中心",
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/about-us/centre-introduction" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/about-us/centre-introduction" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/about-us/centre-introduction" },
+      ]
+    };
+  },
 };
 </script>
 

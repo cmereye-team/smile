@@ -5,12 +5,12 @@
 
     <MainBanner />
     <media />
-    
+
 
     <Footer />
     <footers />
 
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -23,7 +23,27 @@ import MainBanner from "@/components/content/ophthalmicInfo/mediaCov/MainBanner.
 import media from "@/components/content/ophthalmicInfo/mediaCov/media.vue";
 
 
-export default { components: { Header, Navbar, Footer, MainBanner,footers, media} }
+export default {
+  components: { Header, Navbar, Footer, MainBanner, footers, media },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/ophthalmicInfo/mediaCov",
+    }
+  },
+  head() {
+    return {
+      title: "媒體報導 - 香港希瑪微笑矯視中心",
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov" },
+        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov" },
+        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/ophthalmicInfo/mediaCov" },
+      ]
+    };
+  },
+}
+
 </script>
 
 

@@ -32,6 +32,12 @@ export default {
     fourProblem,
     footers,
   },
+  data() {
+    return {
+      canonicalHref: "https://smile.hkcmereye.com/FreQuestions",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/FreQuestions",
+    }
+  },
   head() {
     return {
       title: "常見問題 ",
@@ -47,6 +53,12 @@ export default {
           content: "常見問題",
         },
       ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/FreQuestions" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/FreQuestions" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/FreQuestions" },
+      ]
     };
   },
 };
