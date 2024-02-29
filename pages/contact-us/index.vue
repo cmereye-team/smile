@@ -34,11 +34,13 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/contact-us",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/contact-us",
+      browserTitle: "聯絡我們 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "联系我们 - 香港希玛微笑矫视中心",
     }
   },
   head() {
     return {
-      title: "聯絡我們 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",

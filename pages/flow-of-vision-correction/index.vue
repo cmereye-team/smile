@@ -25,7 +25,7 @@ export default {
   components: { Header, Navbar, Footer, MainBanner, process, regard, footers },
   head() {
     return {
-      title: "矯視流程 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",
@@ -50,6 +50,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/flow-of-vision-correction",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/flow-of-vision-correction",
+      browserTitle: "矯視流程 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "矫视流程 - 香港希玛微笑矫视中心",
     }
   },
 };

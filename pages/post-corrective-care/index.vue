@@ -36,11 +36,13 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/post-corrective-care",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/post-corrective-care",
+      browserTitle: "術後護理 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "术后护理 - 香港希玛微笑矫视中心",
     }
   },
   head() {
     return {
-      title: "術後護理 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",

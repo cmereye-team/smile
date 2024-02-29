@@ -42,11 +42,13 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-lasik",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-lasik",
+      browserTitle: "LASIK激光矯視 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "LASIK激光矫视 - 香港希玛微笑矫视中心",
     }
   },
   head() {
     return {
-      title: "LASIK激光矯視 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",

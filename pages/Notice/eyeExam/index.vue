@@ -28,11 +28,13 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/Notice/eyeExam",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/Notice/eyeExam",
+      browserTitle: "眼睛檢查及矯視前 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "眼睛检查及矫视前 - 香港希玛微笑矫视中心",
     }
   },
   head() {
     return {
-      title: "眼睛檢查及矯視前 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       link: [
         { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
         { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/Notice/eyeExam" },

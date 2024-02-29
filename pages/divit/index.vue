@@ -23,7 +23,7 @@ export default {
   components: { Header, Navbar, Footer, MainBanner, AppointForm, footers },
   head() {
     return {
-      title: "消費券詳情 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",
@@ -48,6 +48,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/divit",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/divit",
+      browserTitle: "消費券詳情 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "消费券详情 - 香港希玛微笑矫视中心",
     }
   },
 };

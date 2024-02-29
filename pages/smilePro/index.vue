@@ -415,11 +415,13 @@ export default {
         return {
             canonicalHref: "https://smile.hkcmereye.com/smilePro",
             canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
+            browserTitle: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
+            browserTitleCn: "SMILE PRO 微笑矫视 - 香港希玛微笑矫视中心",
         }
     },
     head() {
         return {
-            title: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
+            title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
             meta: [
                 {
                     hid: "description",

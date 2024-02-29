@@ -23,11 +23,13 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/fee",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/fee",
+      browserTitle: "收費詳情 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "收费详情 - 香港希玛微笑矫视中心",
     }
   },
   head() {
     return {
-      title: "收費詳情 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       link: [
         { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
         { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/fee" },

@@ -177,7 +177,7 @@ export default {
   },
   head() {
     return {
-      title: "SMILE 微笑激光矯視 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",
@@ -204,6 +204,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/vision-correction/relex-smile",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction/relex-smile",
+      browserTitle: "中心設備 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "中心设备 - 香港希玛微笑矫视中心",
       businessHours: [
         {
           type: "1",

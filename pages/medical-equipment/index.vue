@@ -23,11 +23,13 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/medical-equipment",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/medical-equipment",
+      browserTitle: "中心設備 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "中心设备 - 香港希玛微笑矫视中心",
     }
   },
   head() {
     return {
-      title: "中心設備 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",

@@ -36,11 +36,13 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/patient-info",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/patient-info",
+      browserTitle: "診症須知 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "诊症须知 - 香港希玛微笑矫视中心",
     }
   },
   head() {
     return {
-      title: "診症須知 - 香港希瑪微笑矯視中心",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",

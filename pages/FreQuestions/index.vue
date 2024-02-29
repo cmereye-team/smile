@@ -36,11 +36,14 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/FreQuestions",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/FreQuestions",
+      browserTitle: "常見問題",
+      browserTitleCn: "常见问题",
     }
   },
   head() {
     return {
       title: "常見問題 ",
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",
