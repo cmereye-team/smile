@@ -32,8 +32,8 @@ export default {
     background-position: top;
     background-size: 100%;
     width: 100vw;
-    margin: 0 auto;
-    margin-bottom: 10vw;
+    height: 100vw;
+    margin: 22vw auto 5vw;
   }
 }
 
