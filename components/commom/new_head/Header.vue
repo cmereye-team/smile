@@ -2097,10 +2097,11 @@ $active_gradient: #4570b6;
 @media (min-width: 768px) {
   .header {
     // margin: 20px auto;
-    margin-left: auto;
+    // margin-left: auto;
     display: flex;
     align-items: center;
     align-content: center;
+    margin: 0 auto 0 0;
 
     .right {
       .social_list {
