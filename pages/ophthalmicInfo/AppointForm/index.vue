@@ -4,7 +4,8 @@
     <Navbar />
 
     <MainBanner />
-    <AppointForm />
+    <!-- <AppointForm /> -->
+    <newChoose />
 
     <Footer />
     <footers />
@@ -20,9 +21,10 @@ import footers from "@/components/commom/foot/footers.vue";
 import MainBanner from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/MainBanner.vue";
 // import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom.vue";
 import AppointForm from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/appointFrom_ifram.vue";
+import newChoose from "@/components/content/ophthalmicInfo/serveYyue/AppointForm/new-choose.vue";
 
 export default {
-  components: { Header, Navbar, Footer, MainBanner, AppointForm, footers },
+  components: { Header, Navbar, Footer, MainBanner, AppointForm, footers,newChoose },
 };
 </script>
 

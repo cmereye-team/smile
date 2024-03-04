@@ -13,9 +13,9 @@
         </div>
         <div>
           <div class="bookingifram_box">
-            <iframe v-if="$i18n.locale === 'en'" width="100%" height="1600"
+            <iframe v-if="$i18n.locale === 'en'" width="100%" height="1260"
               src="https://smilecms.hkcmereye.com/en/bookingiframeng"></iframe>
-            <iframe v-else width="100%" height="1600" src="https://smilecms.hkcmereye.com/bookingifram"></iframe>
+            <iframe v-else width="100%" height="1260" src="https://smilecms.hkcmereye.com/bookingifram"></iframe>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
           <div><img src="https://static.cmereye.com/imgs/2024/03/0ce0fa2767c8e691.jpg" alt="预约时间"></div>
         </div>
         <div class="bookingifram_box">
-          <iframe v-if="$i18n.locale === 'en'" width="100%" height="1140"
+          <iframe v-if="$i18n.locale === 'en'" width="100%" height="1260"
             src="https://smilecms.hkcmereye.com/en/bookingiframeng"></iframe>
           <iframe v-else width="100%" height="1260" src="https://smilecms.hkcmereye.com/bookingifram"></iframe>
         </div>
