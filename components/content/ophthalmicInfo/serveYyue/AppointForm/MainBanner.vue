@@ -1,9 +1,9 @@
 <template>
   <div class="main_banner">
     <banner class="banner">
-      <!-- <template #title>
-        {{$t('home.headers.reservationService')}}
-      </template>  -->
+      <template #title>
+        {{ $t("home.headers.reservationService") }}
+      </template>
     </banner>
   </div>
 </template>
@@ -20,13 +20,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and (max-width: 768px) {
-  .section {
+  ::v-deep(.section) {
     .des_box {
       width: 60.5vw !important;
       letter-spacing: 0.2vw;
       margin-top: -1vw;
+      padding-left: 40px;
+      font-size: 30px;
     }
   }
+
   .banner {
     background-image: url("https://static.cmereye.com/static/lkximg/smile_image/mb-bg.avif");
     background-position: top;
