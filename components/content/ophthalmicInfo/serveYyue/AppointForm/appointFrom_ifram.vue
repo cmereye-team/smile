@@ -2,7 +2,7 @@
   <div>
     <div class="page_container bookingifram pc_show">
       <div class="right_container">
-        <div><img src="https://static.cmereye.com/imgs/2024/03/55c69a5f7b227ac9.png" alt="预约时间"></div>
+        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2024/02/3%E6%9C%881.jpg" alt="预约时间"></div>
       </div>
       <div class="left_container">
         <div>
@@ -76,7 +76,7 @@ export default {
     display: flex;
     padding: 20px 0;
     flex-direction: column;
-
+    position: relative;
   }
 
   .left_container {
@@ -90,7 +90,10 @@ export default {
   }
 
   .right_container {
-    width: 100%;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
 
     &>img {
       width: 100%;
