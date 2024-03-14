@@ -43,7 +43,7 @@ export default {
   },
   head() {
     return {
-      title: "ICL植入式隱形眼鏡 - 香港希瑪微笑矯視中心",
+      title: "希瑪活動-ZEISSxCMER SMILE pro微笑矯視講座 - 香港希瑪微笑矯視中心",
       meta: [
         {
           hid: "description",
