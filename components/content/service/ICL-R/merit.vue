@@ -11,7 +11,7 @@
           </div>
           <p class="merriweather">ZEISS</p>
           <p class="merriweather">SMILE<sup>®</sup>Pro</p>
-          <p class="merriweather">優點</p>
+          <p>優點</p>
         </div>
         <div>
           <div v-for="item in meritList" :key="item.id">
@@ -144,7 +144,7 @@ export default {
           font-family: "Noto Sans HK";
           font-size: 35px;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 600;
           line-height: 40px; /* 57.143% */
           letter-spacing: 7px;
           min-height: 90px;

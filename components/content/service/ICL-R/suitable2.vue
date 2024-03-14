@@ -169,6 +169,7 @@ export default {
 
         & > div:nth-child(1) {
           width: 275px;
+          margin-bottom: 40px;
           & > img {
             width: 100%;
           }
@@ -178,7 +179,7 @@ export default {
           font-family: "Noto Sans HK";
           font-size: 35px;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 600;
           line-height: 40px; /* 57.143% */
           letter-spacing: 5.25px;
           text-align: center;
@@ -361,7 +362,7 @@ export default {
         & > p:nth-child(4) {
           color: #5d85c3;
           font-family: "Noto Sans HK";
-          font-size: 6.41vw;
+          font-size: 25px;
           font-style: normal;
           font-weight: 500;
           line-height: 7.692vw; /* 120% */
@@ -381,7 +382,9 @@ export default {
           display: flex;
           flex-direction: column;
           align-items: center;
-
+          &>div:nth-child(1) {
+            margin-bottom: 10px;
+          }
           & > div:nth-child(2) {
             min-height: 50px;
             align-items: center;

@@ -29,7 +29,7 @@
           class="merriweather-bold"
           >SMILE</span
         ><sup class="merriweather-bold">®</sup
-        ><span class="merriweather-bold">Pro</span>
+        ><span class="merriweather-bold">pro</span>
       </div>
       <div class="bg-feature">
         <div>
@@ -47,7 +47,9 @@
       </div>
       <div class="bg-content">
         ZEISS
-        SMILE®pro微笑矯視是由德國引進的最新矯視科技，以德國蔡司光學與諾貝爾獎激光技術進行；是SMILE微笑激光矯視的升級版。<br class="mbShow"/>其原理與SMILE相同，但激光頻率更快，而且配備輔助導航功能，令矯視過程更快，更精準。
+        SMILE®pro微笑矯視是由德國引進的最新矯視科技，以德國蔡司光學與諾貝爾獎激光技術進行；是SMILE微笑激光矯視的升級版。<br
+          class="mbShow"
+        />其原理與SMILE相同，但激光頻率更快，而且配備輔助導航功能，令矯視過程更快，更精準。
       </div>
     </div>
   </div>
@@ -64,11 +66,11 @@ export default {
           img: "https://static.cmereye.com/imgs/2024/03/56cfa2166e117a03.png",
           text: `新一代<br/>矯視科技`,
         },
-        {
-          id: 2,
-          img: "https://static.cmereye.com/imgs/2024/03/e7e2d0f5818c4023.png",
-          text: `10秒<br/>激光時間`,
-        },
+        // {
+        //   id: 2,
+        //   img: "https://static.cmereye.com/imgs/2024/03/e7e2d0f5818c4023.png",
+        //   text: `10秒<br/>激光時間`,
+        // },
         {
           id: 3,
           img: "https://static.cmereye.com/imgs/2024/03/b868f8f82a5f884a.png",
@@ -114,8 +116,8 @@ export default {
       font-weight: 700;
       line-height: 40px; /* 100% */
       letter-spacing: 12px;
-      & > span:nth-child(2),
-      & > span:nth-child(4) {
+      & > span:nth-child(3),
+      & > span:nth-child(5) {
         color: #5d85c3;
         font-size: 70px;
         line-height: 40px; /* 57.143% */
@@ -347,7 +349,7 @@ export default {
     letter-spacing: 2.8px;
   }
   .bg-photo {
-    margin: 85px auto 0;
+    margin: 40px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,14 +361,15 @@ export default {
         color: #5d85c3;
         font-size: 45px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 65px; /* 88.889% */
         letter-spacing: 6.75px;
       }
       & > sup {
-        top: -3em;
-        left: -0.8em;
+        top: -2em;
+        left: -0.5em;
         color: #5d85c3;
+        font-size: 16px;
       }
       & > span:nth-child(1) {
         color: #5d85c3;

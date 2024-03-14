@@ -81,7 +81,7 @@ export default {
     align-items: center;
     max-width: 1280px;
     .activity-content {
-      padding: 50px 102px 40px;
+      padding: 0px 102px 40px;
       color: #6d6e71;
       text-align: center;
       font-family: "Noto Sans HK";
@@ -92,28 +92,27 @@ export default {
       letter-spacing: 6px;
     }
     .activity-title {
-      padding: 10px 124px;
+      padding: 10px 124px 25px;
       color: #5d85c3;
       font-family: "Noto Sans HK";
       font-size: 40px;
       font-style: normal;
       font-weight: 500;
-      line-height: 30px; /* 75% */
+      line-height: 40px; /* 75% */
       letter-spacing: 10px;
-      margin-bottom: 92px;
+      margin-bottom: 55px;
       position: relative;
     }
     .activity-title::before {
       content: "";
-      display: block;
-      width: 39px;
-      height: 4px;
       background: #a6e1d6;
-      border-radius: 5px;
+      width: 39px;
+      height: 5px;
+      border-radius: 3px;
       position: absolute;
-      bottom: -10px;
       left: 50%;
-      transform: translateX(-70%);
+      bottom: 0;
+      transform: translateX(-50%);
     }
     .activity-time {
       margin-bottom: 40px;
@@ -150,15 +149,15 @@ export default {
             text-align: center;
           }
           & > div:nth-child(2) {
-            min-height: 84px;
+            min-height: 104px;
             display: flex;
             align-items: center;
             color: #5d85c3;
             font-family: "Noto Sans HK";
             font-size: 40px;
             font-style: normal;
-            font-weight: 700;
-            line-height: 42px; /* 75% */
+            font-weight: 600;
+            line-height: 54px; /* 75% */
             letter-spacing: 6px;
             text-align: center;
           }
@@ -208,12 +207,11 @@ export default {
     .activity-title {
       margin-top: 11.538vw;
       margin-bottom: 3.846vw;
-
       color: #5d85c3;
       font-family: "Noto Sans HK";
       font-size: 7.692vw;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 7.692vw; /* 100% */
       letter-spacing: 1.923vw;
       position: relative;
@@ -245,7 +243,6 @@ export default {
       margin-top: 5.641vw;
       margin-bottom: 1.026vw;
       width: 100%;
-      padding: 0 1.282vw;
       & > div {
         display: flex;
         align-items: center;
@@ -253,12 +250,10 @@ export default {
         border-top: 2px solid rgba(59, 120, 108, 0.3);
         padding: 6.154vw 0;
         & > div:nth-child(1) {
-          width: 16.41vw;
-          min-width: 10.256vw;
-          display: flex;
-          justify-content: center;
-          margin-right: 2.846vw;
-          padding-left: 1.538vw;
+        //   display: flex;
+        //   justify-content: center;
+          // margin-right: 2.846vw;
+          // margin-left: 1.538vw;
         }
         & > div:nth-child(2) {
           & > div:nth-child(1) {
@@ -273,12 +268,37 @@ export default {
           & > div:nth-child(2) {
             color: #5d85c3;
             font-family: "Noto Sans HK";
-            font-size: 30px;
+            font-size: 7.692vw;
             font-style: normal;
-            font-weight: 700;
-            line-height: 35px; /* 116.667% */
-            letter-spacing: 4.5px;
+            font-weight: 600;
+            line-height: 8.974vw; /* 116.667% */
+            letter-spacing: 1.154vw;
           }
+        }
+      }
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          width: 17.436vw;
+          &>img {
+            width: 100%;
+          }
+        }
+        &>div:nth-child(2) {
+          margin-left: 2.564vw;
+          margin-top: -1.282vw;
+        }
+      }
+      &>div:nth-child(2) {
+        &>div:nth-child(1) {
+          width: 17.436vw;
+          height: 17.692vw;
+          &>img {
+            width: 100%; // 17.436v;
+          }
+        }
+        &>div:nth-child(2) {
+          margin-left: 2.564vw;
+          margin-top: -1.282vw;
         }
       }
       & > div:nth-child(3) {
@@ -288,7 +308,8 @@ export default {
           width: 12.821vw;
         }
         & > div:nth-child(2) {
-          margin-left: 0.513vw;
+          margin-left: 2.564vw;
+          margin-top: -1.282vw;
         }
       }
     }
