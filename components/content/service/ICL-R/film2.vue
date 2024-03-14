@@ -104,7 +104,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 85px auto 0;
+    margin: 0 auto;
     & > .bg-title {
       width: fit-content;
       color: #5d85c3;

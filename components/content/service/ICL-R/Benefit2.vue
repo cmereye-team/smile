@@ -1,6 +1,6 @@
 <template>
   <div class="activity">
-    <div class="activity-title">活動詳情</div>
+    <div class="activity-title">活動簡介</div>
     <div class="activity-content">
       為了讓大眾對最新的矯視技術——ZEISS
       SMILE®pro微笑矯視有更深入認識，希瑪微笑矯視中心將與德國蔡司ZEISS合作舉辦講座活動。透過今次活動中，兩位希瑪微笑閃亮大使的真實分享及眼科醫生的技術講解，令大眾重新思考視力對生活的重要性。
@@ -216,6 +216,19 @@ export default {
       font-weight: 700;
       line-height: 7.692vw; /* 100% */
       letter-spacing: 1.923vw;
+      position: relative;
+      padding-bottom: 22px;
+    }
+    .activity-title::before {
+      content: "";
+      background: #a6e1d6;
+      width: 39px;
+      height: 5px;
+      border-radius: 3px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
     }
     .activity-content {
       color: #6d6e71;
@@ -274,7 +287,7 @@ export default {
         & > div:nth-child(1) {
           width: 12.821vw;
         }
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           margin-left: 0.513vw;
         }
       }
@@ -282,7 +295,7 @@ export default {
     .activity-banner {
       width: 335px;
       padding-bottom: 6.154vw;
-      border-bottom: 2px solid #3B786C;
+      border-bottom: 2px solid #3b786c;
       img {
         width: 100%;
         padding: 5px 0;

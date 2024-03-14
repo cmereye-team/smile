@@ -58,12 +58,12 @@ export default {
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/03/06b9d83ebbb63bc3.png",
+          img: "https://static.cmereye.com/imgs/2024/03/c39f57c9e9069e24.png",
           text: `游嘉欣`,
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/03/c39f57c9e9069e24.png",
+          img: "https://static.cmereye.com/imgs/2024/03/06b9d83ebbb63bc3.png",
           text: `胡瀞詩`,
         },
         {
@@ -109,7 +109,7 @@ export default {
     margin: 0 auto 0;
   }
   .bg-photo {
-    background: #c7e8ef80;
+    background: #dbedf180;
     border-radius: 0 0 50% 50%;
     width: 150%;
     margin-left: -25%;
@@ -316,10 +316,13 @@ export default {
   }
 
   .bg-photo {
-    background: #c7e8ef80;
-    border-radius: 0 0 50% 50%;
-    width: 300%;
-    margin-left: -100%;
+    // background: #c7e8ef80;
+    // border-radius: 0 0 50% 50%;
+    background: url("https://static.cmereye.com/imgs/2024/03/90eaca0e1675b6be.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // width: 300%;
+    // margin-left: -100%;
 
     .nav-four {
       display: flex;
