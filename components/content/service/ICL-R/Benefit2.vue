@@ -62,7 +62,7 @@ export default {
           id: 3,
           img: "https://static.cmereye.com/imgs/2024/03/4e6ddf0a49ba55b4.png",
           title: "地點",
-          text: `香港康得思酒店<br />(朗豪坊）`,
+          text: `香港康得思酒店<br />&nbsp;&nbsp;(朗豪坊）`,
         },
       ],
     };
@@ -160,6 +160,7 @@ export default {
             line-height: 54px; /* 75% */
             letter-spacing: 6px;
             text-align: center;
+            padding-left: 6px;
           }
         }
       }

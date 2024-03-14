@@ -150,6 +150,7 @@ export default {
           min-height: 90px;
           display: flex;
           align-items: center;
+          padding-left: 7px;
         }
       }
     }
@@ -207,7 +208,7 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 6.41025vw;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 35px; /* 140% */
         letter-spacing: 0.9615vw;
       }
