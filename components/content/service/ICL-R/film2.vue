@@ -140,6 +140,7 @@ export default {
         flex: 6;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         & > div {
           width: 300px;
