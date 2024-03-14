@@ -1,7 +1,7 @@
 <template>
   <div class="main_banner">
-    <banner class="banner">
-      <!-- <template v-slot:title>
+    <!-- <banner class="banner"> -->
+    <!-- <template v-slot:title>
         <div class="pcShow">
           <h3 style="font-size: 28px">{{$t('service.icl.mainBanner.p1')}}</h3>
           <span>(ICL implantable contact lenses)</span>
@@ -16,7 +16,16 @@
           {{$t('service.icl.mainBanner.p2')}}
         </div></template
       > -->
-    </banner>
+    <!-- </banner> -->
+    <img
+      data-src="https://static.cmereye.com/imgs/2024/03/a40fb571fac88f83.png"
+      srcset="
+        https://static.cmereye.com/imgs/2024/03/1e33264668477fdf.png 768w,
+        https://static.cmereye.com/imgs/2024/03/a40fb571fac88f83.png
+      "
+      src="https://static.cmereye.com/imgs/2024/03/a40fb571fac88f83.png"
+      alt=""
+    />
   </div>
 </template>
 
@@ -32,68 +41,26 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@media screen and (max-width: 768px) {
-  .banner_serve {
-    p {
-      font-family: var(--font_family);
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 23px;
-      /* or 115% */
-
-      letter-spacing: 0.08em;
-
-      background: linear-gradient(90.24deg, #4570b6 12.21%, #81dbec 87.2%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-      padding-bottom: 5px;
-      padding-top: 0;
-    }
-    span {
-      font-family: var(--font_family);
-      font-style: normal;
-      font-weight: 300;
-      font-size: 12px;
-      line-height: 23px;
-      letter-spacing: 0.08em;
-      background: linear-gradient(90.24deg, #4570b6 12.21%, #81dbec 87.2%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-    }
-  }
-  .section {
-    .des_box {
-      width: 60.5vw !important;
-      letter-spacing: 0.2vw;
-      margin-top: -1vw;
-    }
-  }
-  .banner {
-    background: url('https://admin.hkcmereye.com/static/upload/image/20231019/1697719206413755.jpg')
-      no-repeat;
-    // background-position: top;
-    // background-size: 114%;
-    // width: 100vw;
-    // margin: auto 0;
-    // margin-bottom: 11vw;
-    // padding-left: 25px;
-    margin-top: 24vw;
-    height: 390px !important;
-    /* background: no-repeat; */
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .banner {
-    background-image: url("https://admin.hkcmereye.com/static/upload/image/20231019/1697719197278788.jpg");
-  }
-  span{
-    font-size: 14px;
+  .main_banner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    border-radius: 61px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 130px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main_banner {
+    margin-top: 110px;
+    width: 100%;
+    &>img {
+      width: 100%;
+    }
+  }
+}
+
+
 </style>
