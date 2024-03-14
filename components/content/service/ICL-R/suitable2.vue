@@ -260,6 +260,7 @@ export default {
         font-weight: 500;
         line-height: 40px; /* 160% */
         letter-spacing: 3.75px;
+        padding-left: 3.75px;
       }
       & > span:nth-child(2) {
         font-size: 35px;
@@ -267,6 +268,7 @@ export default {
         font-weight: 500;
         line-height: 40px;
         letter-spacing: 10.5px;
+        padding-left: 10.5px;
       }
     }
     @keyframes ani {
