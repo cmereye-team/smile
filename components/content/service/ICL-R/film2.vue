@@ -66,15 +66,15 @@ export default {
           img: "https://static.cmereye.com/imgs/2024/03/56cfa2166e117a03.png",
           text: `新一代<br/>矯視科技`,
         },
-        // {
-        //   id: 2,
-        //   img: "https://static.cmereye.com/imgs/2024/03/e7e2d0f5818c4023.png",
-        //   text: `10秒<br/>激光時間`,
-        // },
+        {
+          id: 2,
+          img: "https://static.cmereye.com/imgs/2024/03/e7e2d0f5818c4023.png",
+          text: `10秒<br/>激光時間`,
+        },
         {
           id: 3,
           img: "https://static.cmereye.com/imgs/2024/03/b868f8f82a5f884a.png",
-          text: `視軸輔助<br/>導航功能`,
+          text: `視軸<br/>輔助導航`,
         },
         {
           id: 4,
@@ -113,7 +113,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 40px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 40px; /* 100% */
       letter-spacing: 12px;
       & > span:nth-child(3),
@@ -183,7 +183,7 @@ export default {
     letter-spacing: 0.1em;
     cursor: pointer;
     z-index: 99;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
     display: flex;
     flex-direction: column;
@@ -288,7 +288,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 25px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 120%; /* 160% */
       letter-spacing: 5px;
     }
@@ -298,7 +298,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 35px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 40px; /* 160% */
       letter-spacing: 10.5px;
     }
@@ -361,7 +361,7 @@ export default {
         color: #5d85c3;
         font-size: 45px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 65px; /* 88.889% */
         letter-spacing: 6.75px;
       }
@@ -376,7 +376,7 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 30px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 40px; /* 133.333% */
         letter-spacing: 9px;
         white-space: nowrap;
@@ -392,7 +392,7 @@ export default {
     font-family: Noto Sans HK;
     font-size: 25px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 30px; /* 120% */
     letter-spacing: 7.5px;
     border-radius: 35px;

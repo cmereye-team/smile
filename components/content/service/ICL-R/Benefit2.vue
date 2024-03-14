@@ -143,7 +143,7 @@ export default {
             font-family: "Noto Sans";
             font-size: 25px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 500;
             line-height: 180%; /* 45px */
             letter-spacing: 3.75px;
             text-align: center;
@@ -156,7 +156,7 @@ export default {
             font-family: "Noto Sans HK";
             font-size: 40px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 54px; /* 75% */
             letter-spacing: 6px;
             text-align: center;
@@ -211,7 +211,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 7.692vw;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 7.692vw; /* 100% */
       letter-spacing: 1.923vw;
       position: relative;
@@ -261,7 +261,7 @@ export default {
             font-family: "Noto Sans HK";
             font-size: 20px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 500;
             line-height: 180%; /* 36px */
             letter-spacing: 3px;
           }
@@ -270,7 +270,7 @@ export default {
             font-family: "Noto Sans HK";
             font-size: 7.692vw;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 8.974vw; /* 116.667% */
             letter-spacing: 1.154vw;
           }

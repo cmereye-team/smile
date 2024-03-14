@@ -74,7 +74,7 @@ export default {
         {
           id: 5,
           img: "https://static.cmereye.com/imgs/2024/03/4f01a2fe8f53518f.png",
-          text: `ZEISS<br class="mbShow" />SMILE<sup>®</sup>pro<br />技術講解`,
+          text: `ZEISS<br class="mbShow" /> SMILE<sup>®</sup>pro<br />技術講解`,
         },
         {
           id: 6,
@@ -179,7 +179,7 @@ export default {
           font-family: "Noto Sans HK";
           font-size: 35px;
           font-style: normal;
-          font-weight: 600;
+          font-weight: 500;
           line-height: 40px; /* 57.143% */
           letter-spacing: 5.25px;
           text-align: center;
@@ -199,7 +199,7 @@ export default {
           font-family: "Noto Sans HK";
           font-size: 35px;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 500;
           line-height: 45px; /* 57.143% */
           letter-spacing: 5.25px;
           text-align: center;
@@ -210,6 +210,11 @@ export default {
           letter-spacing: 1px;
         }
       }
+      &>div:nth-child(6) {
+        &>div:nth-child(2) {
+          letter-spacing: 3.4px;  
+        } 
+      }
     }
   }
   .discounts-contact {
@@ -217,7 +222,7 @@ export default {
     letter-spacing: 0.1em;
     cursor: pointer;
     z-index: 99;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
     display: flex;
     flex-direction: column;
@@ -252,14 +257,14 @@ export default {
       & > span:nth-child(1) {
         font-size: 25px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 40px; /* 160% */
         letter-spacing: 3.75px;
       }
       & > span:nth-child(2) {
         font-size: 35px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 40px;
         letter-spacing: 10.5px;
       }
@@ -382,6 +387,7 @@ export default {
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-top: 2.564vw;
           &>div:nth-child(1) {
             margin-bottom: 10px;
           }
@@ -423,7 +429,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 25px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 120%; /* 160% */
       letter-spacing: 5px;
     }
@@ -433,7 +439,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 35px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 40px; /* 160% */
       letter-spacing: 10.5px;
     }
