@@ -122,6 +122,8 @@ export default {
         font-size: 70px;
         line-height: 40px; /* 57.143% */
         letter-spacing: 10.5px;
+        position: relative;
+        bottom: -2px;
       }
       & > sup {
         vertical-align: text-top;
