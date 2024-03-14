@@ -23,7 +23,7 @@
     </div>
     <div class="pcShow discounts-contact">
       <a
-        href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICL-B01)%20%E5%B8%8C%E7%91%AAICL%E8%AC%9B%E5%BA%A7%E6%B4%BB%E5%8B%95"
+        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(Event-SPT02)%20CMERxZEISS%20SMILE%C2%AEPro%E8%AC%9B%E5%BA%A7%E5%88%86%E4%BA%AB"
         target="_blank"
       >
         <button class="link_more shadow-lg">
@@ -38,7 +38,7 @@
       </a>
     </div>
     <a
-      href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICL-B01)%20%E5%B8%8C%E7%91%AAICL%E8%AC%9B%E5%BA%A7%E6%B4%BB%E5%8B%95"
+      href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(Event-SPT02)%20CMERxZEISS%20SMILE%C2%AEPro%E8%AC%9B%E5%BA%A7%E5%88%86%E4%BA%AB"
       target="_blank"
       class="mbShow discounts-contact"
     >
