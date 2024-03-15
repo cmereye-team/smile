@@ -9,8 +9,8 @@
               alt="優點"
             />
           </div>
-          <p class="merriweather">ZEISS</p>
-          <p class="merriweather">SMILE<sup>®</sup>Pro</p>
+          <p>ZEISS</p>
+          <p>SMILE<sup>®</sup>Pro</p>
           <p>優點</p>
         </div>
         <div>
@@ -55,12 +55,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
-.merriweather {
-  font-family: "Merriweather", serif !important;
-  font-weight: 700;
-  font-style: normal;
-}
+// @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+// .merriweather {
+//   font-family: "Merriweather", serif !important;
+//   font-weight: 700;
+//   font-style: normal;
+// }
+@import url('../../../../asset/css/stylesheet.css');
 @media screen and (min-width: 768px) {
   .merit {
     overflow: hidden;
@@ -103,6 +104,8 @@ export default {
       & > p:nth-child(2),
       & > p:nth-child(3) {
         padding-bottom: 15px;
+        font-family: "Merriweather" !important;
+        font-weight: bold;
       }
       & > p:nth-child(4) {
         color: #5d85c3;
@@ -201,6 +204,8 @@ export default {
         font-weight: 700;
         line-height: 30px; /* 150% */
         letter-spacing: 4px;
+        font-family: "Merriweather" !important;
+        font-weight: bold;
       }
       & > p:nth-child(4) {
         color: #5d85c3;

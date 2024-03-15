@@ -25,11 +25,8 @@
         <span>WhatsApp</span><span>報名</span>
       </a>
       <div class="bg-title">
-        <span>一圖認識</span><br class="mbShow" /><span
-          class="merriweather-bold"
-          >SMILE</span
-        ><sup class="merriweather-bold">®</sup
-        ><span class="merriweather-bold">pro</span>
+        <span>一圖認識</span><br class="mbShow" /><span>SMILE</span><sup>®</sup
+        ><span>pro</span>
       </div>
       <div class="bg-feature">
         <div>
@@ -90,12 +87,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
-.merriweather-bold {
-  font-family: "Merriweather", serif !important;
-  font-weight: 700;
-  font-style: normal;
-}
+@import url('../../../../asset/css/stylesheet.css');
+// @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+// .merriweather-bold {
+// font-family: "Merriweather", serif !important;
+// font-weight: 700;/
+// font-style: normal;
+// }
+// @font-face {
+//   font-family: "Merriweather" !important;
+//   src: url("../../../../static/fonts/Merriweather-Bold.woff2") format("woff2"),
+//     url("@/static/fonts/Merriweather-Bold.woff2") format("woff");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 @media screen and (min-width: 768px) {
   .mbShow {
     display: none !important;
@@ -124,12 +131,15 @@ export default {
         letter-spacing: 10.5px;
         position: relative;
         bottom: -2px;
+        font-family: "Merriweather" !important;
+        font-weight: bold;
       }
       & > sup {
         vertical-align: text-top;
         top: -0.5em;
         left: -0.5em;
         letter-spacing: -10px;
+        font-family: "Merriweather" !important;
       }
     }
     & > .bg-feature {
@@ -368,12 +378,16 @@ export default {
         font-weight: 500;
         line-height: 65px; /* 88.889% */
         letter-spacing: 6.75px;
+        font-family: "Merriweather" !important;
+        font-weight: bold;
       }
       & > sup {
         top: -2em;
         left: -0.5em;
         color: #5d85c3;
         font-size: 16px;
+        font-family: "Merriweather" !important;
+        font-weight: bold;
       }
       & > span:nth-child(1) {
         color: #5d85c3;
