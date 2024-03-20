@@ -45,7 +45,9 @@
             <div class="menu-line"></div>
 
             <li
-              v-for="(navItem, index) in $i18n.locale === 'en'? navListEng :  navList"
+              v-for="(navItem, index) in $i18n.locale === 'en'
+                ? navListEng
+                : navList"
               :key="index"
               class="nav_item text-lg md:flex flex-col"
               :class="navItem.child_list.length !== 0 ? 'main_after' : ''"
@@ -83,9 +85,9 @@
             </li>
           </ul>
           <div class="new_header">
-<!--            <a :href="localePath('/booking')" target="_blank" class="new_about"-->
-<!--              >預約服務</a-->
-<!--            >-->
+            <!--            <a :href="localePath('/booking')" target="_blank" class="new_about"-->
+            <!--              >預約服務</a-->
+            <!--            >-->
             <div class="pcShow discounts-contact">
               <a :href="localePath('/booking')">
                 <button class="link_more shadow-lg">
@@ -95,9 +97,24 @@
                   <span></span>
                   <div class="flex items-center justify-evenly">
                     <div class="text-left">
-                      <h3 v-if="$i18n.locale == 'hk'" class="text-xs font-normal text-center discounts-h3"> 立&nbsp;即&nbsp;預&nbsp;約 </h3>
-                      <h3 v-else-if="$i18n.locale == 'cn'" class="text-xs font-normal text-center discounts-h3"> 立&nbsp;即&nbsp;预&nbsp;约 </h3>
-                      <h3 v-else class="text-xs font-normal text-center discounts-h3"> Book&nbsp;Now </h3>
+                      <h3
+                        v-if="$i18n.locale == 'hk'"
+                        class="text-xs font-normal text-center discounts-h3"
+                      >
+                        立&nbsp;即&nbsp;預&nbsp;約
+                      </h3>
+                      <h3
+                        v-else-if="$i18n.locale == 'cn'"
+                        class="text-xs font-normal text-center discounts-h3"
+                      >
+                        立&nbsp;即&nbsp;预&nbsp;约
+                      </h3>
+                      <h3
+                        v-else
+                        class="text-xs font-normal text-center discounts-h3"
+                      >
+                        Book&nbsp;Now
+                      </h3>
                     </div>
                   </div>
                 </button>
@@ -211,108 +228,110 @@
           </div>
         </div>
         <!-- 右边悬浮按钮 -->
-        <div class="sidebar_contact" :class="[isShowFloat === true ? 'sidebar_contact_width' : '']">
-<!--          <div>-->
-<!--            <a :href="localePath('/icl-event')">-->
-<!--              <div class="flex justify-center">-->
-<!--                <svg-->
-<!--                  xmlns="http://www.w3.org/2000/svg"-->
-<!--                  width="93"-->
-<!--                  height="60"-->
-<!--                  viewBox="0 0 93 60"-->
-<!--                  fill="none"-->
-<!--                >-->
-<!--                  <path-->
-<!--                    d="M5.90593 9.12586C6.37012 9.12586 6.74642 8.74709 6.74642 8.27985C6.74642 7.81261 6.37012 7.43384 5.90593 7.43384C5.44173 7.43384 5.06543 7.81261 5.06543 8.27985C5.06543 8.74709 5.44173 9.12586 5.90593 9.12586Z"-->
-<!--                    stroke="#4570B6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M87.2193 51.7213C87.6835 51.7213 88.0598 51.3425 88.0598 50.8753C88.0598 50.4081 87.6835 50.0293 87.2193 50.0293C86.7552 50.0293 86.3788 50.4081 86.3788 50.8753C86.3788 51.3425 86.7552 51.7213 87.2193 51.7213Z"-->
-<!--                    stroke="#4570B6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M46.4066 51.5642C58.4864 51.5642 68.279 41.7073 68.279 29.5483C68.279 17.3892 58.4864 7.53235 46.4066 7.53235C34.3267 7.53235 24.5341 17.3892 24.5341 29.5483C24.5341 41.7073 34.3267 51.5642 46.4066 51.5642Z"-->
-<!--                    stroke="#A6E1D6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M77.153 3.87268C82.8997 10.8375 86.3594 19.7895 86.3594 29.5678C86.3594 39.3461 82.9388 48.1997 77.2312 55.1448"-->
-<!--                    stroke="#A6E1D6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M15.66 55.2433C9.91339 48.2785 6.45367 39.3265 6.45367 29.5482C6.45367 19.7699 9.8743 10.9163 15.5819 3.97119"-->
-<!--                    stroke="#A6E1D6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M21.3284 30.3942C21.7926 30.3942 22.1689 30.0154 22.1689 29.5482C22.1689 29.0809 21.7926 28.7021 21.3284 28.7021C20.8642 28.7021 20.4879 29.0809 20.4879 29.5482C20.4879 30.0154 20.8642 30.3942 21.3284 30.3942Z"-->
-<!--                    stroke="#4570B6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M71.4842 30.3942C71.9484 30.3942 72.3247 30.0154 72.3247 29.5482C72.3247 29.0809 71.9484 28.7021 71.4842 28.7021C71.02 28.7021 70.6437 29.0809 70.6437 29.5482C70.6437 30.0154 71.02 30.3942 71.4842 30.3942Z"-->
-<!--                    stroke="#4570B6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M71.6407 3.9317C71.6407 3.9317 70.1357 5.87949 63.2162 5.87949C56.2968 5.87949 54.4204 3.87268 47.2273 3.87268C40.0342 3.87268 38.1577 5.87949 31.2383 5.87949C24.3189 5.87949 22.8138 3.9317 22.8138 3.9317"-->
-<!--                    stroke="#4570B6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M71.6407 55.3023C71.6407 55.3023 70.1357 53.3545 63.2162 53.3545C56.2968 53.3545 54.4204 55.3613 47.2273 55.3613C40.0342 55.3613 38.1577 53.3545 31.2383 53.3545C24.3189 53.3545 22.8138 55.3023 22.8138 55.3023"-->
-<!--                    stroke="#4570B6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                  <path-->
-<!--                    d="M90.9136 47.6289C90.9136 47.6289 90.8745 47.5896 90.8354 47.5305C90.8159 47.4912 90.7768 47.4518 90.7572 47.4322C90.2295 46.7042 88.5289 44.0875 88.5289 39.9558C88.5289 35.0371 88.4116 29.5676 88.4116 29.5676C88.4116 29.5676 88.5289 24.0784 88.5289 19.1794C88.5289 15.0477 90.2295 12.431 90.7572 11.703C90.7768 11.6637 90.8159 11.644 90.8354 11.6046C90.894 11.5456 90.9136 11.5063 90.9136 11.5063V11.4866C91.5 10.6996 91.8518 9.71587 91.8518 8.65344C91.8518 6.01704 89.7212 3.8725 87.102 3.8725C67.9465 4.34469 58.7793 2.33788 58.7793 2.33788C55.5736 1.51154 51.2148 1 46.4259 1C41.637 1 37.2782 1.51154 34.0726 2.33788C34.0726 2.33788 24.9053 4.34469 5.74978 3.8725C3.13056 3.8725 1 6.01704 1 8.65344C1 9.71587 1.35184 10.6996 1.93823 11.4866V11.5063C1.93823 11.5063 1.97732 11.5456 2.01641 11.6046C2.03596 11.644 2.07505 11.6833 2.0946 11.703C2.62235 12.431 4.32289 15.0477 4.32289 19.1794C4.32289 24.098 4.44017 29.5676 4.44017 29.5676C4.44017 29.5676 4.32289 35.0568 4.32289 39.9558C4.32289 44.0875 2.62235 46.7042 2.0946 47.4322C2.07505 47.4715 2.03596 47.4912 2.01641 47.5305C1.95778 47.5896 1.93823 47.6289 1.93823 47.6289V47.6486C1.35184 48.4356 1 49.4193 1 50.4817C1 53.1181 3.13056 55.2627 5.74978 55.2627C24.9053 54.7905 34.0726 56.7973 34.0726 56.7973C37.2782 57.6236 41.637 58.1352 46.4259 58.1352C51.2148 58.1352 55.5736 57.6236 58.7793 56.7973C58.7793 56.7973 67.9465 54.7905 87.102 55.2627C89.7212 55.2627 91.8518 53.1181 91.8518 50.4817C91.8518 49.4193 91.5 48.4356 90.9136 47.6289Z"-->
-<!--                    stroke="#4570B6"-->
-<!--                    stroke-width="2"-->
-<!--                    stroke-miterlimit="10"-->
-<!--                    stroke-linecap="round"-->
-<!--                  />-->
-<!--                </svg>-->
-<!--              </div>-->
-<!--              <div>-->
-<!--                <span>ICL<br />星級矯視講座</span>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--          </div>-->
-          <!-- <div>
-            <a
-              href="https://api.whatsapp.com/send/?phone=85260610511"
-              target="_blank"
-            >
+        <div
+          class="sidebar_contact"
+          :class="[isShowFloat === true ? 'sidebar_contact_width' : '']"
+        >
+          <!--          <div>-->
+          <!--            <a :href="localePath('/icl-event')">-->
+          <!--              <div class="flex justify-center">-->
+          <!--                <svg-->
+          <!--                  xmlns="http://www.w3.org/2000/svg"-->
+          <!--                  width="93"-->
+          <!--                  height="60"-->
+          <!--                  viewBox="0 0 93 60"-->
+          <!--                  fill="none"-->
+          <!--                >-->
+          <!--                  <path-->
+          <!--                    d="M5.90593 9.12586C6.37012 9.12586 6.74642 8.74709 6.74642 8.27985C6.74642 7.81261 6.37012 7.43384 5.90593 7.43384C5.44173 7.43384 5.06543 7.81261 5.06543 8.27985C5.06543 8.74709 5.44173 9.12586 5.90593 9.12586Z"-->
+          <!--                    stroke="#4570B6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M87.2193 51.7213C87.6835 51.7213 88.0598 51.3425 88.0598 50.8753C88.0598 50.4081 87.6835 50.0293 87.2193 50.0293C86.7552 50.0293 86.3788 50.4081 86.3788 50.8753C86.3788 51.3425 86.7552 51.7213 87.2193 51.7213Z"-->
+          <!--                    stroke="#4570B6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M46.4066 51.5642C58.4864 51.5642 68.279 41.7073 68.279 29.5483C68.279 17.3892 58.4864 7.53235 46.4066 7.53235C34.3267 7.53235 24.5341 17.3892 24.5341 29.5483C24.5341 41.7073 34.3267 51.5642 46.4066 51.5642Z"-->
+          <!--                    stroke="#A6E1D6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M77.153 3.87268C82.8997 10.8375 86.3594 19.7895 86.3594 29.5678C86.3594 39.3461 82.9388 48.1997 77.2312 55.1448"-->
+          <!--                    stroke="#A6E1D6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M15.66 55.2433C9.91339 48.2785 6.45367 39.3265 6.45367 29.5482C6.45367 19.7699 9.8743 10.9163 15.5819 3.97119"-->
+          <!--                    stroke="#A6E1D6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M21.3284 30.3942C21.7926 30.3942 22.1689 30.0154 22.1689 29.5482C22.1689 29.0809 21.7926 28.7021 21.3284 28.7021C20.8642 28.7021 20.4879 29.0809 20.4879 29.5482C20.4879 30.0154 20.8642 30.3942 21.3284 30.3942Z"-->
+          <!--                    stroke="#4570B6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M71.4842 30.3942C71.9484 30.3942 72.3247 30.0154 72.3247 29.5482C72.3247 29.0809 71.9484 28.7021 71.4842 28.7021C71.02 28.7021 70.6437 29.0809 70.6437 29.5482C70.6437 30.0154 71.02 30.3942 71.4842 30.3942Z"-->
+          <!--                    stroke="#4570B6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M71.6407 3.9317C71.6407 3.9317 70.1357 5.87949 63.2162 5.87949C56.2968 5.87949 54.4204 3.87268 47.2273 3.87268C40.0342 3.87268 38.1577 5.87949 31.2383 5.87949C24.3189 5.87949 22.8138 3.9317 22.8138 3.9317"-->
+          <!--                    stroke="#4570B6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M71.6407 55.3023C71.6407 55.3023 70.1357 53.3545 63.2162 53.3545C56.2968 53.3545 54.4204 55.3613 47.2273 55.3613C40.0342 55.3613 38.1577 53.3545 31.2383 53.3545C24.3189 53.3545 22.8138 55.3023 22.8138 55.3023"-->
+          <!--                    stroke="#4570B6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                  <path-->
+          <!--                    d="M90.9136 47.6289C90.9136 47.6289 90.8745 47.5896 90.8354 47.5305C90.8159 47.4912 90.7768 47.4518 90.7572 47.4322C90.2295 46.7042 88.5289 44.0875 88.5289 39.9558C88.5289 35.0371 88.4116 29.5676 88.4116 29.5676C88.4116 29.5676 88.5289 24.0784 88.5289 19.1794C88.5289 15.0477 90.2295 12.431 90.7572 11.703C90.7768 11.6637 90.8159 11.644 90.8354 11.6046C90.894 11.5456 90.9136 11.5063 90.9136 11.5063V11.4866C91.5 10.6996 91.8518 9.71587 91.8518 8.65344C91.8518 6.01704 89.7212 3.8725 87.102 3.8725C67.9465 4.34469 58.7793 2.33788 58.7793 2.33788C55.5736 1.51154 51.2148 1 46.4259 1C41.637 1 37.2782 1.51154 34.0726 2.33788C34.0726 2.33788 24.9053 4.34469 5.74978 3.8725C3.13056 3.8725 1 6.01704 1 8.65344C1 9.71587 1.35184 10.6996 1.93823 11.4866V11.5063C1.93823 11.5063 1.97732 11.5456 2.01641 11.6046C2.03596 11.644 2.07505 11.6833 2.0946 11.703C2.62235 12.431 4.32289 15.0477 4.32289 19.1794C4.32289 24.098 4.44017 29.5676 4.44017 29.5676C4.44017 29.5676 4.32289 35.0568 4.32289 39.9558C4.32289 44.0875 2.62235 46.7042 2.0946 47.4322C2.07505 47.4715 2.03596 47.4912 2.01641 47.5305C1.95778 47.5896 1.93823 47.6289 1.93823 47.6289V47.6486C1.35184 48.4356 1 49.4193 1 50.4817C1 53.1181 3.13056 55.2627 5.74978 55.2627C24.9053 54.7905 34.0726 56.7973 34.0726 56.7973C37.2782 57.6236 41.637 58.1352 46.4259 58.1352C51.2148 58.1352 55.5736 57.6236 58.7793 56.7973C58.7793 56.7973 67.9465 54.7905 87.102 55.2627C89.7212 55.2627 91.8518 53.1181 91.8518 50.4817C91.8518 49.4193 91.5 48.4356 90.9136 47.6289Z"-->
+          <!--                    stroke="#4570B6"-->
+          <!--                    stroke-width="2"-->
+          <!--                    stroke-miterlimit="10"-->
+          <!--                    stroke-linecap="round"-->
+          <!--                  />-->
+          <!--                </svg>-->
+          <!--              </div>-->
+          <!--              <div>-->
+          <!--                <span>ICL<br />星級矯視講座</span>-->
+          <!--              </div>-->
+          <!--            </a>-->
+          <!--          </div>-->
+          <div>
+            <a :href="localePath('/smilepro-event')">
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/10/8b12264e93b22e9c.png"
+                  src="https://static.cmereye.com/imgs/2024/03/ad4af21430a88d0f.png"
                   class="p-1"
                 />
               </div>
-              <div><span>了解更多</span></div>
+              <div>
+                <span>CMERxZEISS<br />講座活動詳情</span>
+              </div>
             </a>
-          </div> -->
+          </div>
           <div>
             <a
               href="https://api.whatsapp.com/send/?phone=85260610511"
@@ -324,27 +343,60 @@
                   class="p-1"
                 />
               </div>
-              <div><span>{{ $t('home.headers.reservationService') }}</span></div>
+              <div>
+                <span>{{ $t("home.headers.reservationService") }}</span>
+              </div>
             </a>
           </div>
           <div>
             <a :href="localePath('/divit')">
               <div class="divit-pc">
-                <svg xmlns="http://www.w3.org/2000/svg" width="67" height="79" viewBox="0 0 67 79" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="67"
+                  height="79"
+                  viewBox="0 0 67 79"
+                  fill="none"
+                >
                   <g clip-path="url(#clip0_4326_2094)">
-                    <path d="M0.822289 45.5136V65.1909L22.9747 77.7719L66.1777 52.0672V26.527L22.9747 0.822266L0.822289 13.4033V33.5246" stroke="#4570B6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M0.822289 33.5247H22.2429V25.9761L42.4794 39.7412" stroke="#A6E1D6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M0.822289 45.5136H22.2429V53.0622C28.9856 48.6219 35.7366 44.1815 42.4794 39.7494" stroke="#A6E1D6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path
+                      d="M0.822289 45.5136V65.1909L22.9747 77.7719L66.1777 52.0672V26.527L22.9747 0.822266L0.822289 13.4033V33.5246"
+                      stroke="#4570B6"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M0.822289 33.5247H22.2429V25.9761L42.4794 39.7412"
+                      stroke="#A6E1D6"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M0.822289 45.5136H22.2429V53.0622C28.9856 48.6219 35.7366 44.1815 42.4794 39.7494"
+                      stroke="#A6E1D6"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </g>
                   <defs>
                     <clipPath id="clip0_4326_2094">
-                      <rect width="67" height="78.5943" fill="white"/>
+                      <rect width="67" height="78.5943" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
               </div>
-              <div v-if="$i18n.locale === 'en'" class="engDivit pcShow"><span>Details of<br />Divit</span></div>
-              <div v-else><span>了解<br /> Divit贏里數</span></div>
+              <div v-if="$i18n.locale === 'en'" class="engDivit pcShow">
+                <span>Details of<br />Divit</span>
+              </div>
+              <div v-else>
+                <span
+                  >了解<br />
+                  Divit贏里數</span
+                >
+              </div>
             </a>
           </div>
           <!-- <div>
@@ -402,7 +454,9 @@
                   <!-- <a href="tel: +85260610511" target="_blank" class="new_about"
                     >{{ $t('home.headers.reservationService') }}</a
                   > -->
-                  <nuxt-link to="/booking" class="new_about">{{ $t('home.headers.reservationService') }}</nuxt-link>
+                  <nuxt-link to="/booking" class="new_about">{{
+                    $t("home.headers.reservationService")
+                  }}</nuxt-link>
                   <div class="new_a_div">
                     <a href="https://www.facebook.com/CMER.SMILE">
                       <svg
@@ -1145,7 +1199,7 @@ export default {
       }
       this.taginits();
     });
-    this.getScrollTop()
+    this.getScrollTop();
   },
 
   // watch: {
@@ -1246,20 +1300,24 @@ export default {
       gtag("js", new Date());
       gtag("config", "G-FN8KFBR9XM");
     },
-    getScrollTop (){
-      let  that = this
-      let timer
-      window.addEventListener("scroll", function(event) {
-        if (event.deltaY !== 0) {
-            clearTimeout(timer)
-          // 页面正在滚动
-          that.isShowFloat = true
-        }
-        timer = setTimeout(()=>{
-          that.isShowFloat = false
-        },3500)
-      }, { passive: true });
-    }
+    getScrollTop() {
+      let that = this;
+      let timer;
+      window.addEventListener(
+        "scroll",
+        function (event) {
+          if (event.deltaY !== 0) {
+            clearTimeout(timer);
+            // 页面正在滚动
+            that.isShowFloat = true;
+          }
+          timer = setTimeout(() => {
+            that.isShowFloat = false;
+          }, 3500);
+        },
+        { passive: true }
+      );
+    },
   },
 };
 </script>
@@ -1332,12 +1390,12 @@ $active_gradient: #4570b6;
 
 // pc
 @media (min-width: 768px) {
-  .nav_bar > ul > li:nth-child(2)  {
+  .nav_bar > ul > li:nth-child(2) {
     .mian_nav_text {
       width: max-content;
     }
   }
-  .nav_bar > ul > li:nth-child(6)  {
+  .nav_bar > ul > li:nth-child(6) {
     margin: 0 10px;
   }
   .divit-pc {
@@ -1378,7 +1436,7 @@ $active_gradient: #4570b6;
         display: inline-block;
         border-radius: 500px;
         overflow: hidden;
-        background: #43619B;
+        background: #43619b;
       }
 
       .link_more:hover {
@@ -1427,7 +1485,7 @@ $active_gradient: #4570b6;
 
       .link_more::before {
         content: "";
-        background: linear-gradient(193deg,  #76C8E2 0%, #76C8E2 100%);
+        background: linear-gradient(193deg, #76c8e2 0%, #76c8e2 100%);
 
         width: 120%;
         left: -10%;
@@ -1441,7 +1499,6 @@ $active_gradient: #4570b6;
       }
     }
   }
-
 
   .ll_box {
     margin-left: 26px;
@@ -1827,7 +1884,7 @@ $active_gradient: #4570b6;
     background: linear-gradient(90deg, #98cec3 0%, #98cec3 100%) !important;
   }
   .engDivit {
-    color: #4570B6;
+    color: #4570b6;
     text-align: center;
     font-family: Inter;
     font-size: 17px;
@@ -2213,7 +2270,7 @@ $active_gradient: #4570b6;
   .sidebar_contact {
     display: flex;
     flex-direction: column;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     position: fixed;
     right: 0;
     bottom: calc(50% - 130px);
@@ -2229,13 +2286,13 @@ $active_gradient: #4570b6;
     & > div {
       width: 100%;
       height: auto;
-      background: rgba(255,255,255,0.9);
+      background: rgba(255, 255, 255, 0.9);
     }
-    &>div:first-child{
+    & > div:first-child {
       padding-top: 20px;
       border-radius: 25px 0 0 0;
     }
-    &>div:last-child {
+    & > div:last-child {
       padding-bottom: 20px;
       border-radius: 0 0 0 25px;
     }
