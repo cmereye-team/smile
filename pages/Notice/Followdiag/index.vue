@@ -8,7 +8,7 @@
     <precautions />
 
     <Footer />
-
+    <footers />
   </div>
 </template>
 
@@ -16,34 +16,60 @@
 import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
-
+import footers from "@/components/commom/foot/footers.vue";
 import MainBanner from "@/components/content/Notice/Followdiag/MainBanner.vue";
 import followDiago from "@/components/content/Notice/Followdiag/followDiago.vue";
 import precautions from "@/components/content/Notice/Followdiag/precautions.vue";
 
 export default {
-
-  components: { Header, Navbar, Footer, MainBanner, followDiago, precautions },
+  components: {
+    Header,
+    Navbar,
+    Footer,
+    MainBanner,
+    followDiago,
+    footers,
+    precautions,
+  },
   data() {
     return {
       canonicalHref: "https://smile.hkcmereye.com/Notice/Followdiag",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/Notice/Followdiag",
       browserTitle: "矯視後覆診 - 香港希瑪微笑矯視中心",
       browserTitleCn: "矫视后覆诊 - 香港希玛微笑矫视中心",
-    }
+    };
   },
   head() {
     return {
-      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
       link: [
-        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/Notice/Followdiag" },
-        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/Notice/Followdiag" },
-        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/Notice/Followdiag" },
-      ]
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/Notice/Followdiag",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/Notice/Followdiag",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/Notice/Followdiag",
+        },
+      ],
     };
   },
-}
+};
 </script>
 
 
