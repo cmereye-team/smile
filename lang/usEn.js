@@ -57,11 +57,11 @@ module.exports = {
         span: 'Have completed smile Incision Lenticule Extraction'
       },
       {
-        h4: '<strong>16</strong>',
+        h4: '<strong>11</strong>',
         span: 'ophthalmologists'
       },
       {
-        h4: 'The<strong>First</strong>',
+        h4: 'The<strong>Three</strong>',
         span: 'Hong Kong-listed ophthalmic center'
       },
       {
@@ -71,7 +71,7 @@ module.exports = {
     ],
     CorrectionService: {
       p1: '-10.00 D myopia  <br />-5.00 D CYL.  <br />astigmatism',
-      p2: '-15.00D myopia<br /> +6.00D hyperopia<br />  -6.00D CYL.<br /> astigmatism',
+      p2: '-14.00D myopia<br /> +6.00D hyperopia<br />  -6.00D CYL.<br /> astigmatism',
       p3: '18.00D myopia<br />+10.00D hyperopia<br /> -6.00D CYL. <br />astigmatism',
       p4: 'aged 39 or above<br /> suffered from <br />myopia / hyperopia <br />/ astigmatism',
       p5: "They worry that<br /> they won't be<br /> able to focus<br /> for too long"

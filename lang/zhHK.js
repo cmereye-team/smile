@@ -55,11 +55,11 @@ module.exports = {
         span: "眼睛完成微笑矯視",
       },
       {
-        h4: "<strong>16</strong>位",
+        h4: "<strong>11</strong>位",
         span: "眼科專科醫生",
       },
       {
-        h4: "第<strong>1</strong>間",
+        h4: "第<strong>3</strong>間",
         span: "香港上市眼科中心",
       },
       {
@@ -69,7 +69,7 @@ module.exports = {
     ],
     CorrectionService: {
       p1: "1000 度近視<br />500 度散光",
-      p2: "1500 度近視 <br />600 度遠視/散光",
+      p2: "1400 度近視 <br />600 度遠視/散光",
       p3: "1800 度近視<br />1000 度遠視<br />600 度散光",
       p4: "39 歲以上<br />同時有近視／遠視／<br />散光問題",
       p5: "擔心眼睛<br />無法對焦太久",
