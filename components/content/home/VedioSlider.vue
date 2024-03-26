@@ -3,8 +3,11 @@
     <!--  -->
 
     <div class="vedio_slider page_container">
-      <div class="video_title" :style="{display: $i18n.locale == 'en'? 'none':'block'}">
-        <p>{{ $t('home.VedioSlider.p') }}</p>
+      <div
+        class="video_title"
+        :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }"
+      >
+        <h2>{{ $t("home.VedioSlider.p") }}</h2>
       </div>
       <div class="booking">
         <p>
@@ -28,7 +31,10 @@
           >
             <div class="swiper_di">
               <img :src="banner.src" />
-              <nuxt-link class="link_des" :to="localePath(banner.link)"></nuxt-link>
+              <nuxt-link
+                class="link_des"
+                :to="localePath(banner.link)"
+              ></nuxt-link>
             </div>
           </a>
         </div>
@@ -50,7 +56,10 @@
             target="_blank"
           >
             <img :src="banner.src" />
-            <nuxt-link class="link_des" :to="localePath(banner.link)"></nuxt-link>
+            <nuxt-link
+              class="link_des"
+              :to="localePath(banner.link)"
+            ></nuxt-link>
           </a>
         </div>
         <div class="swiper-button-prev flex items-center justify-center">
@@ -60,15 +69,18 @@
           <img src="../../../asset/image/common/right-white.svg" alt="" />
         </div>
       </div>
-      <nuxt-link class="link_more" :to="localePath('video')" style="cursor: pointer">
-        <span>{{ $t('home.VedioSlider.span') }}</span>
+      <nuxt-link
+        class="link_more"
+        :to="localePath('video')"
+        style="cursor: pointer"
+      >
+        <span>{{ $t("home.VedioSlider.span") }}</span>
       </nuxt-link>
     </div>
   </div>
 </template>
 <script>
 export default {
- 
   data() {
     return {
       screenWidth: "", //屏幕宽度
@@ -84,45 +96,46 @@ export default {
         {
           src: "https://static.cmereye.com/imgs/smile/images/home/veido_3.png",
           link: "https://youtu.be/beGIk4tkS7Y",
-        },        {
-          src: 'https://static.cmereye.com/imgs/2023/08/6ee7800e03ae4969.jpg',
-          link: 'https://www.youtube.com/watch?v=qBsPhkIaVfo',
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/435ff83ed8fbf4f3.jpg',
-          link: 'https://www.youtube.com/watch?v=IQpaEi58v1E&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=10',
+          src: "https://static.cmereye.com/imgs/2023/08/6ee7800e03ae4969.jpg",
+          link: "https://www.youtube.com/watch?v=qBsPhkIaVfo",
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/f365550b8ef5c296.jpg',
-          link: 'https://www.youtube.com/watch?v=gRKFwHXBAzc',
+          src: "https://static.cmereye.com/imgs/2023/08/435ff83ed8fbf4f3.jpg",
+          link: "https://www.youtube.com/watch?v=IQpaEi58v1E&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=10",
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/6f51f1a1f3960431.jpg',
-          link: 'https://www.youtube.com/watch?v=c6dwJ1Cbgxw&list=PLWVonQr1f7XjXu6TpwCe4O4FObpvNAr4W&index=8',
+          src: "https://static.cmereye.com/imgs/2023/08/f365550b8ef5c296.jpg",
+          link: "https://www.youtube.com/watch?v=gRKFwHXBAzc",
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/6e09727035f3d564.jpg',
-          link: 'https://www.youtube.com/watch?v=inD-CATvEl4&list=PLWVonQr1f7XjXu6TpwCe4O4FObpvNAr4W&index=42',
+          src: "https://static.cmereye.com/imgs/2023/08/6f51f1a1f3960431.jpg",
+          link: "https://www.youtube.com/watch?v=c6dwJ1Cbgxw&list=PLWVonQr1f7XjXu6TpwCe4O4FObpvNAr4W&index=8",
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/0438578fdfa8c322.jpg',
-          link: 'https://www.youtube.com/watch?v=T3K97UlXpHg',
+          src: "https://static.cmereye.com/imgs/2023/08/6e09727035f3d564.jpg",
+          link: "https://www.youtube.com/watch?v=inD-CATvEl4&list=PLWVonQr1f7XjXu6TpwCe4O4FObpvNAr4W&index=42",
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/a19d77a42c97bea4.jpg',
-          link: 'https://www.youtube.com/watch?v=87SuKdfCmgg',
+          src: "https://static.cmereye.com/imgs/2023/08/0438578fdfa8c322.jpg",
+          link: "https://www.youtube.com/watch?v=T3K97UlXpHg",
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/17749e5722a43f96.jpg',
-          link: 'https://www.youtube.com/watch?v=5ihrzFvOy38&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=6',
+          src: "https://static.cmereye.com/imgs/2023/08/a19d77a42c97bea4.jpg",
+          link: "https://www.youtube.com/watch?v=87SuKdfCmgg",
         },
         {
-          src: 'https://static.cmereye.com/imgs/2023/08/c587dd17175185f5.jpg',
-          link: 'https://www.youtube.com/watch?v=pNdhPiqPzT0',
-        }
+          src: "https://static.cmereye.com/imgs/2023/08/17749e5722a43f96.jpg",
+          link: "https://www.youtube.com/watch?v=5ihrzFvOy38&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=6",
+        },
+        {
+          src: "https://static.cmereye.com/imgs/2023/08/c587dd17175185f5.jpg",
+          link: "https://www.youtube.com/watch?v=pNdhPiqPzT0",
+        },
       ],
       swiperOptionMb: {
-        direction:"vertical",
+        direction: "vertical",
         loop: true,
         centeredSlides: true,
         spaceBetween: 35,
@@ -198,9 +211,9 @@ export default {
     }
   },
   methods: {
-    toVideoDetail(_url){
-      window.open(_url)
-    }
+    toVideoDetail(_url) {
+      window.open(_url);
+    },
   },
 };
 </script>
@@ -331,7 +344,7 @@ body .gradient_font {
   @apply transition duration-500  ease-in-out transform  hover:scale-105 hover:-translate-x-1 hover:-translate-y-1;
 }
 @media screen and (min-width: 768px) {
-  .swiper-slide{
+  .swiper-slide {
     cursor: pointer;
   }
   .booking {
@@ -373,6 +386,32 @@ body .gradient_font {
 
     left: -11px;
   }
+  h2 {
+    font-family: var(--font_family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px !important;
+    line-height: 62px !important;
+    display: flex;
+    align-items: center;
+
+    letter-spacing: 18px;
+
+    background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    writing-mode: tb-rl;
+    border: none;
+    padding: 0;
+  }
+  h2:before {
+    content: none;
+  }
+  h2:after {
+    content: none;
+  }
   .swiperWrap {
     padding: 34px 50px;
   }
@@ -402,7 +441,7 @@ body .gradient_font {
     padding: 30px;
     width: 80%;
     right: 0;
-  
+
     height: 180vw;
     max-height: 180vw;
   }
@@ -430,10 +469,9 @@ body .gradient_font {
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-  
-    display: flex;  
+
+    display: flex;
     align-items: center;
-    
 
     background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
     -webkit-background-clip: text;
@@ -442,11 +480,37 @@ body .gradient_font {
     text-fill-color: transparent;
     writing-mode: tb-rl;
     position: absolute;
-
     top: 10px;
-
     left: 30px;
-     p{    letter-spacing: 11px;}
+    h2 {
+      font-family: var(--font_family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 43px !important;
+      line-height: 62px;
+      display: flex;
+      align-items: center;
+
+      letter-spacing: 18px;
+
+      background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      writing-mode: tb-rl;
+      border: none;
+      padding: 0;
+    }
+    h2:before {
+      content: none;
+    }
+    h2:after {
+      content: none;
+    }
+    h2 {
+      letter-spacing: 11px;
+    }
   }
   .swiper-slide {
     height: auto !important;

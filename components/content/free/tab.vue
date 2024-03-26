@@ -12,7 +12,7 @@
         :class="{ active: action === index }"
         @click="titelclick(index)"
       >
-        <span>{{ item }}</span>
+        <h2>{{ item }}</h2>
         <hr class="mbShow" />
       </div>
     </div>
@@ -83,7 +83,7 @@
       <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>{{ $t("chargeDetail.span18") }}</span>
+            <h3>{{ $t("chargeDetail.span18") }}</h3>
           </div>
           <div class="icon-box">
             <div class="box"></div>
@@ -224,7 +224,7 @@
       <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>{{ $t("chargeDetail.span18") }}</span>
+            <h3>{{ $t("chargeDetail.span18") }}</h3>
           </div>
           <div class="icon-box icon-box1">
             <div class="box box-img-mb">
@@ -358,7 +358,12 @@
             <tr>
               <td colspan="4" id="blue">
                 {{ $t("chargeDetail.td1_3") }}
-                {{ $t("chargeDetail.td1_4") }} 1.9.2023 <span :style="$i18n.locale == 'en' ? 'display: none' : ''" :class="[$i18n.locale !== 'en' ? 'span22_icl':'']">起</span>
+                {{ $t("chargeDetail.td1_4") }} 1.9.2023
+                <span
+                  :style="$i18n.locale == 'en' ? 'display: none' : ''"
+                  :class="[$i18n.locale !== 'en' ? 'span22_icl' : '']"
+                  >起</span
+                >
               </td>
             </tr>
             <tr>
@@ -386,7 +391,8 @@
         <br />
         <span>&nbsp;<sup>1</sup>&nbsp;{{ $t("chargeDetail.span17") }}</span>
         <br />
-        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span22") }}</span><span>{{ $t("chargeDetail.span20") }}</span>
+        <span>&nbsp;<sup>2</sup>&nbsp;{{ $t("chargeDetail.span22") }}</span
+        ><span>{{ $t("chargeDetail.span20") }}</span>
       </div>
       <div class="table-1-box mbShow">
         <table :summary="$t('chargeDetail.captionTitle')" class="gdp">
@@ -503,7 +509,7 @@
       <div class="taoc_boxs">
         <div class="mt-20 taoc_box taoc_box_2">
           <div class="titel">
-            <span>{{ $t("chargeDetail.span18") }}</span>
+            <h3>{{ $t("chargeDetail.span18") }}</h3>
           </div>
           <div class="icon-box">
             <div class="box">
@@ -617,7 +623,7 @@
       <div class="taoc_boxs">
         <div class="md:mt-20 mt-10 taoc_box">
           <div class="titel">
-            <span>{{ $t("chargeDetail.span18") }}</span>
+            <h3>{{ $t("chargeDetail.span18") }}</h3>
           </div>
           <div class="icon-box">
             <div class="box"></div>
@@ -862,7 +868,8 @@
             </tr>
           </tbody>
         </table>
-        <span class="vision_smile" style="margin-left:0;"><strong>·</strong>{{ $t("chargeDetail.span17") }}</span
+        <span class="vision_smile" style="margin-left: 0"
+          ><strong>·</strong>{{ $t("chargeDetail.span17") }}</span
         >
       </div>
       <div class="pcShow tabBtn" @click="toWhatsapp">
@@ -1207,8 +1214,7 @@ export default {
         window.location.href = `${lang_sign}charge-detail#ICL`;
       } else if (index === 3) {
         window.location.href = `${lang_sign}charge-detail#LASIK`;
-      } 
-      else {
+      } else {
         window.location.href = `${lang_sign}charge-detail#Clear-Vision`;
       }
     },
@@ -1447,7 +1453,6 @@ i {
     color: #fb5e5e !important;
   }
   .free-point {
-    
   }
   .taoc_box_2 .box {
     margin-top: 35px !important;
@@ -1650,7 +1655,7 @@ i {
       display: flex;
       justify-content: center;
       align-items: center;
-      span {
+      h3 {
         font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
@@ -1774,8 +1779,9 @@ i {
     padding: 40px 0;
     cursor: pointer;
     .tab-control-item {
+      position: relative;
       padding: 0 0 0 18px;
-      span {
+      h2 {
         font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
@@ -1785,15 +1791,25 @@ i {
 
         text-align: center;
         letter-spacing: 0.1em;
-
+        margin-bottom: 0;
         color: #444343;
+        padding: 0;
+        border: none;
+      }
+      h2:before {
+        content: none;
+      }
+      h2:after {
+        content: none;
       }
     }
     .tab-control-item::after {
       content: "";
-      margin-left: 34px;
+      margin-left: 95%;
       padding-left: 0;
       border-left: 1px solid #000;
+      position: absolute;
+      top: 0;
       height: 17px;
       display: inline-block;
       vertical-align: middle;
@@ -1866,7 +1882,7 @@ i {
       display: flex;
       justify-content: center;
       align-items: center;
-      span {
+      h3 {
         font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
@@ -1987,18 +2003,26 @@ i {
     .tab-control-item {
       padding: 0 30px;
       text-align: center;
-      span {
+      h2 {
         font-family: var(--font_family);
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 15px;
         /* identical to box height, or 83% */
+        border: none;
+        margin-bottom: 0;
         padding: 10px 0;
         text-align: center;
         letter-spacing: 0.1em;
 
         color: #444343;
+      }
+      h2:before {
+        content: none;
+      }
+      h2:after {
+        content: none;
       }
       hr {
         width: 172px;
@@ -2006,6 +2030,22 @@ i {
         // margin-top: 10px;
         // margin-bottom: 10px;
         margin: 10px auto;
+      }
+    }
+    .active {
+      h2 {
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        background: linear-gradient(90.69deg, #5082c0 8.74%, #78cbe4 95.29%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-family: var(--font_family);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 15px;
+        text-align: center;
       }
     }
     .tab-control-item:last-child hr {

@@ -11,13 +11,14 @@
         alt=""
       />
       <div class="title_box">
-        <div class="title" v-if="$i18n.locale !== 'en' ">SMILE {{ "\n" }}微笑激光矯視</div>
-        <div class="title" v-else>SMILE</div>
-        <div class="text">Small Incision Lenticule Extraction</div>
+        <h1 class="title" v-if="$i18n.locale !== 'en'">
+          SMILE {{ "\n" }}微笑激光矯視
+        </h1>
+        <h1 class="title" v-else>SMILE</h1>
+        <h1 class="text">Small Incision Lenticule Extraction</h1>
       </div>
       <div class="pathLink">
-        <a
-        :href="localePath('/media')"
+        <a :href="localePath('/media')"
           ><span
             ><img
               src="https://static.cmereye.com/static/loffee/svg/9621.svg"
@@ -31,16 +32,14 @@
               alt="" /></span
           ><span>收 費 詳 情</span></a
         > -->
-        <a
-        :href="localePath('/video')"
+        <a :href="localePath('/video')"
           ><span
             ><img
               src="https://static.cmereye.com/static/loffee/svg/9631.svg"
               alt="" /></span
           ><span>矯 視 資 訊 影 片</span></a
         >
-        <a
-        :href="localePath('/video')"
+        <a :href="localePath('/video')"
           ><span
             ><img
               src="https://static.cmereye.com/static/loffee/svg/9641.svg"
@@ -50,8 +49,11 @@
       </div>
     </div>
     <div class="smile-banner-context">
-      <div class="title">矯正原理</div>
-      <div :class="[$i18n.locale === 'en'? 'contextEng context' : 'context']" v-html="$t('service.relexSmile.mainBanner.span')"></div>
+      <h2 class="title">矯正原理</h2>
+      <div
+        :class="[$i18n.locale === 'en' ? 'contextEng context' : 'context']"
+        v-html="$t('service.relexSmile.mainBanner.span')"
+      ></div>
     </div>
   </div>
 </template>
@@ -101,13 +103,12 @@ export default {
 .pathLink {
   display: flex;
   padding: 20px 30px;
-  border-radius:0 0 0 60px;
-  background: #FFF;
+  border-radius: 0 0 0 60px;
+  background: #fff;
   position: absolute;
   right: 0;
   top: 0;
   left: auto;
-
 
   a {
     display: flex;
@@ -124,7 +125,7 @@ export default {
     & > span:nth-child(2) {
       margin-top: 10px;
       writing-mode: vertical-rl;
-      color: #6D6E71;
+      color: #6d6e71;
       text-align: center;
       font-size: 16px;
       font-style: normal;
@@ -151,6 +152,8 @@ export default {
     letter-spacing: 7.5px;
     text-align: center;
     position: relative;
+    padding: 0;
+    border: none;
     padding-bottom: 30px;
     &::after {
       content: "";
@@ -163,6 +166,9 @@ export default {
       bottom: 0;
       transform: translateX(-50%);
     }
+    &::before {
+      content: none;
+    }
   }
   .context {
     margin-top: 45px;
@@ -174,7 +180,7 @@ export default {
     letter-spacing: 6px;
   }
   .contextEng {
-    color: #6D6E71;
+    color: #6d6e71;
     text-align: center;
     font-family: Noto Sans HK;
     font-size: 18px;
@@ -214,8 +220,11 @@ export default {
       font-size: 20px;
       line-height: 23.305px; /* 116.525% */
       letter-spacing: 5px;
+      padding: 0;
+      border: none;
       padding-bottom: 21px;
     }
+
     .context {
       margin-top: 26px;
       font-size: 15px;
@@ -223,7 +232,7 @@ export default {
       letter-spacing: 4.5px;
     }
     .contextEng {
-      color: #6D6E71;
+      color: #6d6e71;
       text-align: center;
       font-family: Noto Sans HK;
       font-size: 18px;

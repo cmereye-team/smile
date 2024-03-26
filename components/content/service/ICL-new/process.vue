@@ -1,6 +1,6 @@
 <template>
   <div class="step section page_container">
-    <div class="step-in" v-html="$t('service.icl.step.h2')"></div>
+    <h2 class="step-in" v-html="$t('service.icl.step.h2')"></h2>
     <ul class="pcShow step_list step_list-one flex justify-between">
       <li v-for="(stepItem, index) in stepList1" :key="index">
         <img :src="stepItem.src" alt="" />
@@ -67,6 +67,8 @@ export default {
     font-weight: 400;
     line-height: 30px; /* 100% */
     letter-spacing: 7.5px;
+    padding: 0;
+    border: none;
     padding-bottom: 30px;
     position: relative;
     text-align: center;
@@ -80,6 +82,9 @@ export default {
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+    }
+    &::before{
+      content: none;
     }
   }
 }

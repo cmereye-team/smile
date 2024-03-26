@@ -8,7 +8,7 @@
         class="serve_title"
         :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }"
       >
-        <p>{{ $t("home.aspiration.p1") }}</p>
+        <h2>{{ $t("home.aspiration.p1") }}</h2>
       </div>
       <div class="heart-box heart-box-1 wow animate__bounceIn">
         <img
@@ -17,9 +17,16 @@
         />
         <div class="heart-text">
           <div class="person">
-            <p>{{ $t("home.aspiration.p2") }} Ada</p>
+            <h3>{{ $t("home.aspiration.p2") }} Ada</h3>
           </div>
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '245px':'235px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'235px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '245px' : '235px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '235px',
+            }"
+          >
             <span>{{ $t("home.aspiration.span1") }}</span>
           </div>
         </div>
@@ -30,7 +37,14 @@
           alt=""
         />
         <div class="heart-text">
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '255px':'160px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'160px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '255px' : '160px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '160px',
+            }"
+          >
             <span
               >{{ $t("home.aspiration.span2_1") }}<br />{{
                 $t("home.aspiration.span2_2")
@@ -38,7 +52,7 @@
             >
           </div>
           <div class="person">
-            <p>{{ $t("home.aspiration.p3") }} Hubert</p>
+            <h3>{{ $t("home.aspiration.p3") }} Hubert</h3>
           </div>
         </div>
       </div>
@@ -49,9 +63,16 @@
         />
         <div class="heart-text">
           <div class="person">
-            <p>唐浩然 Jacky</p>
+            <h3>唐浩然 Jacky</h3>
           </div>
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '245px':'180px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'180px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '245px' : '180px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '180px',
+            }"
+          >
             <span
               >{{ $t("home.aspiration.span3_1") }}<br />{{
                 $t("home.aspiration.span3_2")
@@ -67,9 +88,16 @@
         />
         <div class="heart-text">
           <div class="person">
-            <p>{{ $t("home.aspiration.p4") }} Shirley</p>
+            <h3>{{ $t("home.aspiration.p4") }} Shirley</h3>
           </div>
-          <div class="box" :style="{maxWidth: $i18n.locale == 'en' ? '280px':'194px',height: $i18n.locale == 'en' ?'max-content':'70px',width: $i18n.locale == 'en' ?  'max-content':'194px'}">
+          <div
+            class="box"
+            :style="{
+              maxWidth: $i18n.locale == 'en' ? '280px' : '194px',
+              height: $i18n.locale == 'en' ? 'max-content' : '70px',
+              width: $i18n.locale == 'en' ? 'max-content' : '194px',
+            }"
+          >
             <span>{{ $t("home.aspiration.span4") }}</span>
           </div>
         </div>
@@ -144,7 +172,7 @@ export default {
     }
   }
   .serve_title {
-    p {
+    h2 {
       font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
@@ -161,6 +189,14 @@ export default {
       background-clip: text;
       text-fill-color: transparent;
       writing-mode: tb-rl;
+      border: none;
+      padding: 0;
+    }
+    h2:before {
+      content: none;
+    }
+    h2:after {
+      content: none;
     }
 
     position: absolute;
@@ -204,7 +240,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
@@ -258,7 +294,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
@@ -312,7 +348,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
@@ -366,7 +402,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
@@ -407,7 +443,7 @@ export default {
     }
   }
 
-  .heart-box .heart-text .person p {
+  .heart-box .heart-text .person h3 {
     height: 32px;
     display: flex;
     align-items: center;
@@ -441,12 +477,12 @@ export default {
     }
   }
   .serve_title {
-    p {
+    h2 {
       font-family: var(--font_family);
       font-style: normal;
       font-weight: 400;
       font-size: 28px !important;
-      line-height: 55px;
+      line-height: 55px !important;
       display: flex;
       align-items: center;
 
@@ -458,8 +494,15 @@ export default {
       background-clip: text;
       text-fill-color: transparent;
       writing-mode: tb-rl;
+      padding: 0;
+      border: none;
     }
-
+    h2:before {
+      content: none;
+    }
+    h2:after {
+      content: none;
+    }
     position: absolute;
 
     top: -34px;
@@ -489,7 +532,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
@@ -540,7 +583,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
@@ -591,7 +634,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
@@ -643,7 +686,7 @@ export default {
       .person {
         z-index: 10;
       }
-      p {
+      h3 {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;

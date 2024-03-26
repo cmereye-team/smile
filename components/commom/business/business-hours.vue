@@ -1,6 +1,6 @@
 <template>
   <div class="businessHours">
-    <div class="businessHours-title">營業時間</div>
+    <h2 class="businessHours-title">營業時間</h2>
     <div class="businessHours-img">
       <img
         data-src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg"
@@ -15,15 +15,15 @@
     <div class="businessHours-time">
       <!-- <div>  -->
       <div>
-        <div>星期一至五</div>
+        <h3>星期一至五</h3>
         <div>9:00-19:00</div>
       </div>
       <div>
-        <div>星期六</div>
+        <h3>星期六</h3>
         <div>9:00-18:00</div>
       </div>
       <div>
-        <div>星期日及公眾假期</div>
+        <h3>星期日及公眾假期</h3>
         <div>休息</div>
       </div>
       <!-- </div> -->
@@ -83,7 +83,7 @@
             />
           </svg>
         </div>
-        <span>中環</span>
+        <h3>中環</h3>
       </div>
       <div>
         <div>
@@ -108,7 +108,7 @@
             />
           </svg>
         </div>
-        <span>旺角</span>
+        <h3>旺角</h3>
       </div>
       <div>
         <div>
@@ -133,7 +133,7 @@
             />
           </svg>
         </div>
-        <span>尖沙咀</span>
+        <h3>尖沙咀</h3>
       </div>
     </div>
   </div>
@@ -238,7 +238,7 @@ export default {
       align-items: center;
       padding: 25px 40px;
       border-left: 2px solid #f5f4f4;
-      & > div:nth-child(1) {
+      & > h3:nth-child(1) {
         color: #4570b6;
         font-family: "Noto Sans";
         font-size: 17px;
@@ -327,7 +327,7 @@ export default {
       div:nth-child(1) {
         margin-right: 9px;
       }
-      span {
+      h3 {
         color: #6d6e71;
         font-size: 23px;
         font-weight: 500;
@@ -364,7 +364,7 @@ export default {
         align-items: center;
         padding: 5px 12px;
         border-left: 2px solid #f5f4f4;
-        & > div:nth-child(1) {
+        & > h3:nth-child(1) {
           color: #4570b6;
           font-family: "Noto Sans";
           font-size: 12px;
@@ -455,7 +455,7 @@ export default {
         &:not(:last-child) {
           margin-right: 0;
         }
-        span {
+        h3 {
           font-size: 14px;
           line-height: 40px; /* 200% */
           letter-spacing: 2px;

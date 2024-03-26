@@ -5,7 +5,7 @@
     </div>
     <div class="fit-r">
       <div :class="[$i18n.locale === 'en'? 'fit-r-tEng fit-r-t' : 'fit-r-t']">
-        <div>{{ $t('service.relexSmile.fit.h3') }}</div>
+        <h2>{{ $t('service.relexSmile.fit.h3') }}</h2>
       </div>
       <div class="fit-r-b">
         <div :class="[$i18n.locale === 'en' ? 'listBox listBoxEng' : 'listBox']">
@@ -134,7 +134,7 @@ export default {
     // margin-left:8%;
     &-t{
       margin-bottom: 52px;
-      &>div{
+      &>h2{
         color: #FFF;
         text-align: center;
         font-size: 20px;
@@ -156,6 +156,9 @@ export default {
           border-right: 14px solid transparent;
           border-top: 12px solid transparent;
           border-bottom: 12px solid transparent;
+        }
+        &:after{
+          content: none;
         }
       }
     }

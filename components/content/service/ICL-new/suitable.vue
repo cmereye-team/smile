@@ -4,7 +4,7 @@
       class="flex justify-center md:mt-28"
       :class="[$i18n.locale == 'en' ? 'mt-56' : 'mt-10']"
     >
-      <div class="title-content">{{ $t("service.icl.suitable.h2") }}</div>
+      <h2 class="title-content">{{ $t("service.icl.suitable.h2") }}</h2>
     </div>
     <div class="flex justify-evenly suit_box mt-20">
       <div class="flex flex-col items-center suitable">
@@ -305,7 +305,11 @@
       </div>
     </div>
     <div class="btn-subscribe">
-      <a href="https://api.whatsapp.com/send/?phone=85260610511&text=我想預約(W-03)%20ICL植入式隱形眼鏡術前檢查" target="_blank">預約咨詢</a>
+      <a
+        href="https://api.whatsapp.com/send/?phone=85260610511&text=我想預約(W-03)%20ICL植入式隱形眼鏡術前檢查"
+        target="_blank"
+        >預約咨詢</a
+      >
     </div>
   </div>
 </template>
@@ -326,10 +330,10 @@ h2 {
 @media screen and (min-width: 768px) {
   .btn-subscribe {
     margin: 33px auto 125px;
-    background: #A5E1D7;
+    background: #a5e1d7;
     border-radius: 49px;
     width: fit-content;
-    color: #FFF;
+    color: #fff;
 
     a {
       margin: 15px 36px;
@@ -345,8 +349,8 @@ h2 {
     }
   }
   .btn-subscribe:hover {
-    transform: scale(1.05) ;
-    transition: all .3s ease-in-out;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
   }
   .page_container {
     padding: 0;
@@ -358,6 +362,8 @@ h2 {
     line-height: 50px;
     text-align: center;
     position: relative;
+    padding: 0;
+    border: none;
     padding-bottom: 15px;
     &::after {
       content: "";
@@ -369,6 +375,9 @@ h2 {
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+    }
+    &::before {
+      content: none;
     }
   }
   .suit_box {
@@ -411,10 +420,10 @@ h2 {
 @media screen and (max-width: 768px) {
   .btn-subscribe {
     margin: 16px auto 16px;
-    background: #A5E1D7;
+    background: #a5e1d7;
     border-radius: 49px;
     width: fit-content;
-    color: #FFF;
+    color: #fff;
 
     a {
       margin: 8.5px 14.6px;

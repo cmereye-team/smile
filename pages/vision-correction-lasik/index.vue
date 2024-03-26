@@ -8,6 +8,7 @@
     <Benefit />
     <suitable />
 
+    <BusinessHours />
     <Footer />
     <footers />
   </div>
@@ -21,6 +22,7 @@ import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import footers from "@/components/commom/foot/footers.vue";
+import BusinessHours from "@/components/commom/business/business-hours.vue";
 
 import MainBanner from "@/components/content/service/LASIK/MainBanner.vue";
 import principle from "@/components/content/service/LASIK/principle.vue";
@@ -37,6 +39,7 @@ export default {
     Benefit,
     suitable,
     footers,
+    BusinessHours,
   },
   data() {
     return {

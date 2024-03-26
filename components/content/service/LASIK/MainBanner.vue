@@ -3,19 +3,21 @@
     <banner class="banner">
       <template v-slot:title>
         <div class="pcShow">
-          <h3 style="font-size: 28px">{{$t('service.lasik.mainBanner.p')}}</h3>
+          <h1 style="font-size: 28px">
+            {{ $t("service.lasik.mainBanner.p") }}
+          </h1>
 
-          <span>Laser-Assisted in Situ Keratomileusis</span>
+          <h1 class="main_title_h1">Laser-Assisted in Situ Keratomileusis</h1>
         </div>
         <div class="mbShow banner_serve">
-          <p>{{$t('service.lasik.mainBanner.p')}}</p>
+          <p>{{ $t("service.lasik.mainBanner.p") }}</p>
           <span>Laser-Assisted in Situ</span>
           <span>Keratomileusis</span>
         </div>
       </template>
       <template v-slot:des>
         <div class="pcShow desBox">
-          {{$t('service.lasik.mainBanner.span')}}
+          {{ $t("service.lasik.mainBanner.span") }}
         </div></template
       >
     </banner>
@@ -97,20 +99,34 @@ export default {
   .banner {
     background-image: url("https://static.cmereye.com/imgs/2023/03/98166c99909ffcca.jpg");
   }
-  p{
+  p {
     font-size: 28px !important;
     font-weight: 700 !important;
   }
-  span{
+  span {
     letter-spacing: 1px;
     font-weight: 500 !important;
     font-size: 14px !important;
   }
-  .desBox{
+  .desBox {
     max-width: 550px;
     font-weight: 300;
     font-size: 20px;
     line-height: 35px;
+  }
+  .main_title_h1 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
   }
 }
 </style>

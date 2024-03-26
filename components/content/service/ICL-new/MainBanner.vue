@@ -11,17 +11,16 @@
         alt=""
       />
       <div class="title_box">
-        <div class="title">ICL {{ "\n" }}植入式隱形眼鏡</div>
-        <div class="text">(ICL implantable contact lenses)</div>
+        <h1 class="title">ICL {{ "\n" }}植入式隱形眼鏡</h1>
+        <h1 class="text">(ICL implantable contact lenses)</h1>
       </div>
       <div class="pathLink">
-        <a
-          :href="localePath('/media')"
-        ><span
-        ><img
-          src="https://static.cmereye.com/static/loffee/svg/9621.svg"
-          alt="" /></span
-        ><span>媒 體 報 導</span></a
+        <a :href="localePath('/media')"
+          ><span
+            ><img
+              src="https://static.cmereye.com/static/loffee/svg/9621.svg"
+              alt="" /></span
+          ><span>媒 體 報 導</span></a
         >
         <!-- <a :href="localePath('/charge-detail')"
           ><span
@@ -30,34 +29,36 @@
               alt="" /></span
           ><span>收 費 詳 情</span></a
         > -->
-        <a
-          :href="localePath('/video')"
-        ><span
-        ><img
-          src="https://static.cmereye.com/static/loffee/svg/9631.svg"
-          alt="" /></span
-        ><span>矯 視 資 訊 影 片</span></a
+        <a :href="localePath('/video')"
+          ><span
+            ><img
+              src="https://static.cmereye.com/static/loffee/svg/9631.svg"
+              alt="" /></span
+          ><span>矯 視 資 訊 影 片</span></a
         >
-        <a
-          :href="localePath('/video')"
-        ><span
-        ><img
-          src="https://static.cmereye.com/static/loffee/svg/9641.svg"
-          alt="" /></span
-        ><span>個 案 分 享</span></a
+        <a :href="localePath('/video')"
+          ><span
+            ><img
+              src="https://static.cmereye.com/static/loffee/svg/9641.svg"
+              alt="" /></span
+          ><span>個 案 分 享</span></a
         >
       </div>
     </div>
     <div class="smile-banner-context">
-      <div class="title">植入式隱形眼鏡</div>
+      <h2 class="title">植入式隱形眼鏡</h2>
       <div class="context" v-html="$t('service.icl.mainBanner.span')"></div>
     </div>
     <div class="smile-banner-context smile-banner-context2">
-      <div class="title">為何選擇希瑪?</div>
+      <h2 class="title">為何選擇希瑪?</h2>
       <div class="context" v-html="$t('service.icl.mainBanner.span2')"></div>
     </div>
     <div class="btn-subscribe">
-      <a href="https://api.whatsapp.com/send/?phone=85260610511&text=我想預約(W-03)%20ICL植入式隱形眼鏡術前檢查" target="_blank">預約咨詢</a>
+      <a
+        href="https://api.whatsapp.com/send/?phone=85260610511&text=我想預約(W-03)%20ICL植入式隱形眼鏡術前檢查"
+        target="_blank"
+        >預約咨詢</a
+      >
     </div>
   </div>
 </template>
@@ -89,14 +90,14 @@ export default {
     top: 50%;
     transform: translateY(-50%);
     .title {
-      color: #FFF;
+      color: #fff;
       font-size: 30px;
       font-weight: 700;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
     .text {
-      color: #FFF;
+      color: #fff;
       font-size: 15px;
       font-weight: 500;
       // line-height: 43.5px; /* 290% */
@@ -107,13 +108,12 @@ export default {
 .pathLink {
   display: flex;
   padding: 20px 30px;
-  border-radius:0 0 0 60px;
-  background: #FFF;
+  border-radius: 0 0 0 60px;
+  background: #fff;
   position: absolute;
   right: 0;
   top: 0;
   left: auto;
-
 
   a {
     display: flex;
@@ -130,7 +130,7 @@ export default {
     & > span:nth-child(2) {
       margin-top: 10px;
       writing-mode: vertical-rl;
-      color: #6D6E71;
+      color: #6d6e71;
       text-align: center;
       font-size: 16px;
       font-style: normal;
@@ -159,6 +159,8 @@ export default {
     text-align: center;
     position: relative;
     padding-bottom: 30px;
+    border: none;
+    padding: 0;
     &::after {
       content: "";
       background: #a6e1d6;
@@ -167,9 +169,12 @@ export default {
       border-radius: 3px;
       position: absolute;
       left: 50%;
-      bottom: 0;
+      bottom: -15px;
       transform: translateX(-50%);
     }
+  }
+  .title:before {
+    content: none;
   }
   .context {
     margin-top: 45px;
@@ -189,10 +194,10 @@ export default {
 }
 .btn-subscribe {
   margin: 53px auto 63px;
-  background: #A5E1D7;
+  background: #a5e1d7;
   border-radius: 49px;
   width: fit-content;
-  color: #FFF;
+  color: #fff;
 
   a {
     margin: 15px 36px;
@@ -208,16 +213,16 @@ export default {
   }
 }
 .btn-subscribe:hover {
-  transform: scale(1.05) ;
-  transition: all .3s ease-in-out;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .btn-subscribe {
     margin: 36px auto 36px;
-    background: #A5E1D7;
+    background: #a5e1d7;
     border-radius: 49px;
     width: fit-content;
-    color: #FFF;
+    color: #fff;
 
     a {
       margin: 8.5px 14.6px;
@@ -258,6 +263,14 @@ export default {
       line-height: 23.305px; /* 116.525% */
       letter-spacing: 5px;
       padding-bottom: 21px;
+      padding: 0;
+      border: none;
+    }
+    .title:after {
+      bottom: -15px;
+    }
+    .title::before {
+      content: none;
     }
     .context {
       margin-top: 26px;

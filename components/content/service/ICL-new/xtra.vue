@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="xtra-in-lists">
-        <div class="title-content">ICL矯視的好處</div>
+        <h2 class="title-content">ICL矯視的好處</h2>
         <div class="lists-box">
           <div>
             <div>
@@ -77,7 +77,7 @@
                   />
                 </svg>
               </div>
-              <div>術後復原快</div>
+              <h3>術後復原快</h3>
             </div>
 
             <div>手術以微創技術進<br class="mbShow" />行<span class="mbShow">，</span><br class="pcShow" />術後復原期短</div>
@@ -153,7 +153,7 @@
                   </defs>
                 </svg>
               </div>
-              <div>手術時間短</div>
+              <h3>手術時間短</h3>
             </div>
             <div>最快20-30分鐘<br />內完成矯視</div>
           </div>
@@ -190,7 +190,7 @@
                   />
                 </svg>
               </div>
-              <div>爲生活<br class="mbShow" />帶來便利</div>
+              <h3>爲生活<br class="mbShow" />帶來便利</h3>
             </div>
             <div>矯視後可減低對眼鏡<br />或隱形眼鏡的依賴</div>
           </div>
@@ -226,7 +226,7 @@
                   />
                 </svg>
               </div>
-              <div>物料安全</div>
+              <h3>物料安全</h3>
             </div>
             <div>2005年已通過美國<br />FDA認證</div>
           </div>
@@ -263,7 +263,7 @@
                   />
                 </svg>
               </div>
-              <div>不會導致<br />乾眼症</div>
+              <h3>不會導致<br />乾眼症</h3>
             </div>
             <div>
               過程無須切削角<br class="mbShow" />膜，<br
@@ -339,7 +339,7 @@
                   />
                 </svg>
               </div>
-              <div>度身訂造<br />治療方案</div>
+              <h3>度身訂造<br />治療方案</h3>
             </div>
             <div>是一項可還原技術<br />客人可按需要選擇<br />取出ICL</div>
           </div>
@@ -434,7 +434,7 @@ export default {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            & > div:nth-child(1) {
+            & > h3:nth-child(1) {
               width: 130px;
               height: 130px;
               display: flex;
@@ -509,6 +509,8 @@ export default {
     line-height: 50px;
     text-align: center;
     position: relative;
+    padding: 0;
+    border: none;
     padding-bottom: 15px;
     &::after {
       content: "";
@@ -520,6 +522,9 @@ export default {
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+    }
+    &::before{
+      content: none;
     }
   }
 }

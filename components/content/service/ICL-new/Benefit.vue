@@ -2,7 +2,7 @@
   <div class="benefit section">
     <div class="benefit-bg">
       <div class="benefit-t">
-        <span>EVO Visian ICL鏡片 <br class="mbShow" />7大特色</span>
+        <h2>EVO Visian ICL鏡片 <br class="mbShow" />7大特色</h2>
         <p>EVO Visian ICL以STAAR<br class="mbShow" />&nbsp;Surgical 專用的生物相容Collamer<br class="mbShow" />專利材質製成。<br class="pcShow" />這種材質含有自然存在<br class="mbShow" />於體內的膠原蛋白。EVO Visian ICL<br class="mbShow" />Collamer 技術的獨<br class="pcShow" />特優勢使其成為<br class="mbShow" />視力矯正鏡片的理想材質，其中包含抗<br class="mbShow" />紫外線功能。
         </p>
       </div>
@@ -13,7 +13,7 @@
               <div>
                 <img :src="benefitItem.index" alt="" class="index" />
               </div>
-              <p v-html="benefitItem.text"></p>
+              <h3 v-html="benefitItem.text"></h3>
             </div>
             <div class="listIn-b" v-html="benefitItem.des"></div>
           </div>
@@ -92,7 +92,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    span {
+    h2 {
       color: #4570B6;
       font-family: Noto Sans HK;
       font-size: 30px;
@@ -102,8 +102,10 @@ export default {
       letter-spacing: 7.5px;
       margin-bottom: 74px;
       position: relative;
+      border: none;
+      padding: 0;
     }
-    span:after {
+    h2:after {
       position: absolute;
       content: '';
       background: #A6E1D6;
@@ -113,6 +115,9 @@ export default {
       bottom: -29px;
       transform: translateX(-50%);
       left: 50%;
+    }
+    h2::before{
+      content: none;
     }
     p {
       color: #6D6E71;
@@ -168,7 +173,7 @@ export default {
           align-items: center;
           background: #fff;
           border-radius: 50%;
-          p{
+          h3{
             color: #4570B6;
             font-size: 25px;
             font-weight: 500;
@@ -233,15 +238,20 @@ export default {
         margin-top: 20px;
         margin-bottom: 5px;
       }
-      span{
+      h2{
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 5px;
         text-align: center;
         margin-bottom: 40px;
+        padding: 0;
+        border: none;
       }
-      span:after {
+      h2:after {
         bottom: -15px;
+      }
+      h2::before{
+        content: none;
       }
       p {
         text-align: center;
@@ -295,7 +305,7 @@ export default {
             img{
               max-width: 100%;
             }
-            p{
+            h3{
               font-size: 18px;
               line-height: 20px; /* 111.111% */
               letter-spacing: 3.6px;

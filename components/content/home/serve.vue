@@ -8,7 +8,7 @@
         class="serve_title"
         :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }"
       >
-        <p>{{ $t("home.headers.reservationService") }}</p>
+        <h2>{{ $t("home.headers.reservationService") }}</h2>
       </div>
       <div class="serve-box serve-check" @click="serveForm2">
         <img
@@ -16,7 +16,7 @@
           src="https://static.cmereye.com/imgs/2023/03/508bd47a29791e21.jpg"
           alt=""
         />
-        <p class="serve_details serve-examineImg">{{ $t("home.serve.p1") }}</p>
+        <h3 class="serve_details serve-examineImg">{{ $t("home.serve.p1") }}</h3>
       </div>
       <div class="serve-box ml-5 yuye" @click="serveForm">
         <img
@@ -24,16 +24,23 @@
           src="https://static.cmereye.com/imgs/2023/03/c5a46c2325efaff7.jpg"
           alt=""
         />
-        <p class="serve_details serve-lectureImg">{{ $t("home.serve.p2") }}</p>
+        <h3 class="serve_details serve-lectureImg">{{ $t("home.serve.p2") }}</h3>
       </div>
     </div>
     <div class="mbShow flex md:justify-end flex-col items-center md:flex-row">
-      <div class="serve_title" :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }">
-        <p>{{ $t("home.headers.reservationService") }}</p>
+      <div
+        class="serve_title"
+        :style="{ display: $i18n.locale == 'en' ? 'none' : 'block' }"
+      >
+        <h3>{{ $t("home.headers.reservationService") }}</h3>
       </div>
       <div class="serve-box serve-check">
         <img
-          :src="$i18n.locale == 'en' ? 'https://static.cmereye.com/imgs/2023/08/572656ab3d644c46.png':'https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg'" 
+          :src="
+            $i18n.locale == 'en'
+              ? 'https://static.cmereye.com/imgs/2023/08/572656ab3d644c46.png'
+              : 'https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg'
+          "
           alt=""
           class="serve-examineImg"
           @click="serveForm2"
@@ -41,7 +48,11 @@
 
         <img
           class="serve-lectureImg"
-          :src="$i18n.locale == 'en' ? 'https://static.cmereye.com/imgs/2023/08/677cb694ddc4a1f1.png':'https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg'"
+          :src="
+            $i18n.locale == 'en'
+              ? 'https://static.cmereye.com/imgs/2023/08/677cb694ddc4a1f1.png'
+              : 'https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg'
+          "
           alt=""
           @click="serveForm"
         />
@@ -61,7 +72,7 @@ export default {
   data() {
     return {};
   },
-  created() { },
+  created() {},
   methods: {
     serveForm2() {
       console.log(this.$i18n);
@@ -154,6 +165,30 @@ h2 {
     position: absolute;
     top: 16px;
     left: -11px;
+    h2 {
+      font-family: var(--font_family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 43px !important;
+      line-height: 62px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 18px;
+      background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      writing-mode: tb-rl;
+      border: none;
+      padding: 0;
+    }
+    h2:before {
+      content: none;
+    }
+    h2:after {
+      content: none;
+    }
   }
   .more-btn {
     display: flex;

@@ -1,7 +1,7 @@
 <template>
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-20 mt-10">
-      <div v-html="$t('service.icl.share.h2')" class="title-content"></div>
+      <h2 v-html="$t('service.icl.share.h2')" class="title-content"></h2>
     </div>
     <div class="share-img">
       <a href="https://www.youtube.com/watch?v=B12IjJ3tFHE" target="_blank">
@@ -50,7 +50,6 @@
               alt=""
             />
           </div>
-
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -215,6 +214,8 @@ h2 {
     line-height: 50px;
     text-align: center;
     position: relative;
+    padding: 0;
+    border: none;
     padding-bottom: 15px;
     &::after {
       content: "";
@@ -226,6 +227,9 @@ h2 {
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+    }
+    &::before {
+      content: none;
     }
   }
   .share-img {

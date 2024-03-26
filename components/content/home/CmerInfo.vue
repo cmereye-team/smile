@@ -4,7 +4,7 @@
       <div class="wow animate__fadeInLeft cmerInfo-in-box" @click="handleInfo('/vision-correction/relex-smile')">
         <img class="cmerInfoTagClick_1" src="https://static.cmereye.com/imgs/2023/04/748ab80a564d55b8.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_1" v-html="$t('home.cmerInfo[0].h4')"></h4>
+          <h3 class="cmerInfoTagClick_1" v-html="$t('home.cmerInfo[0].h4')"></h3>
           <span class="cmerInfoTagClick_1">{{$t('home.cmerInfo[0].span')}}</span>
         </div>
       </div>
@@ -12,21 +12,21 @@
       <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/group-profile')">
         <img class="cmerInfoTagClick_2" src="https://static.cmereye.com/imgs/2023/04/69dd6f45ce4fdb12.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_2" v-html="$t('home.cmerInfo[2].h4')"></h4>
+          <h3 class="cmerInfoTagClick_2" v-html="$t('home.cmerInfo[2].h4')"></h3>
           <span class="cmerInfoTagClick_2">{{$t('home.cmerInfo[2].span')}}</span>
         </div>
       </div>
       <div class="wow animate__fadeInLeft cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
         <img class="cmerInfoTagClick_3" src="https://static.cmereye.com/imgs/2023/04/88bdeb6b94c2375d.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_3" v-html="$t('home.cmerInfo[1].h4')"></h4>
+          <h3 class="cmerInfoTagClick_3" v-html="$t('home.cmerInfo[1].h4')"></h3>
           <span class="cmerInfoTagClick_3">{{$t('home.cmerInfo[1].span')}}</span>
         </div>
       </div>
       <div class="wow animate__fadeInRight cmerInfo-in-box" @click="handleInfo('/contact-us')">
         <img class="cmerInfoTagClick_4" src="https://static.cmereye.com/imgs/2023/04/e8d6af0160cfc439.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_4" v-html="$t('home.cmerInfo[3].h4')"></h4>
+          <h3 class="cmerInfoTagClick_4" v-html="$t('home.cmerInfo[3].h4')"></h3>
           <span class="cmerInfoTagClick_4">{{$t('home.cmerInfo[3].span')}}</span>
         </div>
       </div>
@@ -35,28 +35,28 @@
       <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/vision-correction/relex-smile')">
         <img class="cmerInfoTagClick_1" src="https://static.cmereye.com/imgs/2023/04/1b9fffce0077e770.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_1" v-html="$t('home.cmerInfo[0].h4')"></h4>
+          <h3 class="cmerInfoTagClick_1" v-html="$t('home.cmerInfo[0].h4')"></h3>
           <span class="cmerInfoTagClick_1">{{$t('home.cmerInfo[0].span')}}</span>
         </div>
       </div>
       <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/group-profile')">
         <img class="cmerInfoTagClick_2" src="https://static.cmereye.com/imgs/2023/04/60d92825498a1a12.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_2" v-html="$t('home.cmerInfo[2].h4')"></h4>
+          <h3 class="cmerInfoTagClick_2" v-html="$t('home.cmerInfo[2].h4')"></h3>
           <span class="cmerInfoTagClick_2">{{$t('home.cmerInfo[2].span')}}</span>
         </div>
       </div>
       <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/our-medical-team')">
         <img class="cmerInfoTagClick_3" src="https://static.cmereye.com/imgs/2023/04/3caa4f0732ba738c.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_3" v-html="$t('home.cmerInfo[1].h4')"></h4>
+          <h3 class="cmerInfoTagClick_3" v-html="$t('home.cmerInfo[1].h4')"></h3>
           <span class="cmerInfoTagClick_3">{{$t('home.cmerInfo[1].span')}}</span>
         </div>
       </div>
       <div class="wow animate__jackInTheBox cmerInfo-in-box" @click="handleInfo('/contact-us')">
         <img class="cmerInfoTagClick_4" src="https://static.cmereye.com/imgs/2023/04/285b92be603d3f08.jpg" />
         <div>
-          <h4 class="cmerInfoTagClick_4" v-html="$t('home.cmerInfo[3].h4')"></h4>
+          <h3 class="cmerInfoTagClick_4" v-html="$t('home.cmerInfo[3].h4')"></h3>
           <span class="cmerInfoTagClick_4">{{$t('home.cmerInfo[3].span')}}</span>
         </div>
       </div>
@@ -102,7 +102,7 @@ export default {
       &>div{
         position: absolute;
         bottom: 15px;
-        h4{
+        h3{
           letter-spacing: 0.1em;
           background: linear-gradient(180deg, #4B7BBC 0%, #7ED7EA 100%);
           -webkit-background-clip: text;
@@ -146,7 +146,7 @@ export default {
       &>div{
         position: absolute;
         bottom: 15px;
-        h4{
+        h3{
           letter-spacing: 0.1em;
           background: linear-gradient(180deg, #4B7BBC 0%, #7ED7EA 100%);
           -webkit-background-clip: text;

@@ -1,7 +1,7 @@
 <template>
   <div class="page_container">
     <div class="film-top flex justify-center">
-      <div class="title-content" v-html="$t('service.icl.film.h2')"></div>
+      <h2 class="title-content" v-html="$t('service.icl.film.h2')"></h2>
     </div>
     <div class="icl-youtube-video flex justify-around flex-col md:flex-row mt-20">
       <iframe
@@ -74,7 +74,9 @@ h2 {
     line-height: 50px;
     text-align: center;
     position: relative;
+    padding: 0;
     padding-bottom: 15px;
+    border: none;
     &::after {
       content: "";
       background: #a6e1d6;
@@ -86,6 +88,9 @@ h2 {
       bottom: 0;
       transform: translateX(-50%);
     }
+    &::before{
+      content: none;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -95,6 +100,8 @@ h2 {
   .title-content {
     text-align: center;
     position: relative;
+    padding: 0;
+    border: none;
     padding-bottom: 15px;
     color: #4570B6;
     text-align: center;
@@ -114,6 +121,9 @@ h2 {
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+    }
+    &::before{
+      content: none;
     }
   }
   h2 {
