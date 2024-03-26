@@ -2,7 +2,7 @@
   <div>
     <div class="page_container bookingifram pc_show">
       <div class="right_container">
-        <div><img src="https://smilecms.hkcmereye.com/wp-content/uploads/2024/02/3%E6%9C%881.jpg" alt="预约时间"></div>
+        <div><img src="https://static.cmereye.com/imgs/2024/03/43863b410156e6b8.png" alt="预约2时间"></div>
       </div>
       <div class="left_container">
         <div>
@@ -26,7 +26,7 @@
     <div class="mb_show page_container">
       <div>
         <div class="mb_img">
-          <div><img src="https://static.cmereye.com/imgs/2024/03/0ce0fa2767c8e691.jpg" alt="预约时间"></div>
+          <div><img src="https://static.cmereye.com/imgs/2024/03/43863b410156e6b8.png" alt="预约1时间"></div>
         </div>
         <div class="bookingifram_box">
           <div class="text—mb">
@@ -85,7 +85,7 @@ export default {
     padding: 10px 0 41px;
     margin-right: 10px;
     box-sizing: border-box;
-    height: fit-content;
+    height: 3200px;
     width: 100%;
   }
 
