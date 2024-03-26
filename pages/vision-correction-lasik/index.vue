@@ -60,7 +60,8 @@ export default {
         {
           hid: "keywords",
           name: "keywords",
-          content: "lasik,lasik 激光矯視,激光 手術,lasik 散光,激光 矯 視 手術",
+          content:
+            "lasik,lasik 激光矯視,激光 手術,lasik 散光,激光 矯 視 手術,LASIK激光矯視, 激光矯視 價錢, 激光矯視 香港, 視力矯正, 眼睛健康, 激光矯視, 深近視, 眼睛檢查",
         },
       ],
       link: [
