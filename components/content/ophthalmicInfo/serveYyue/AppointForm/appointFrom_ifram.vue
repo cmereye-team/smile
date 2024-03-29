@@ -2,7 +2,7 @@
   <div>
     <div class="page_container bookingifram pc_show">
       <div class="right_container">
-        <div><img src="https://static.cmereye.com/imgs/2024/03/43863b410156e6b8.png" alt="预约2时间"></div>
+        <div><img src="https://static.cmereye.com/imgs/2024/03/02f3f72357ec0111.jpg" alt="预约2时间"></div>
       </div>
       <div class="left_container">
         <div>
@@ -26,7 +26,7 @@
     <div class="mb_show page_container">
       <div>
         <div class="mb_img">
-          <div><img src="https://static.cmereye.com/imgs/2024/03/43863b410156e6b8.png" alt="预约1时间"></div>
+          <div><img src="https://static.cmereye.com/imgs/2024/03/02f3f72357ec0111.jpg" alt="预约1时间"></div>
         </div>
         <div class="bookingifram_box">
           <div class="text—mb">
