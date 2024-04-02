@@ -173,7 +173,7 @@ h2 {
       line-height: 62px;
       display: flex;
       align-items: center;
-      letter-spacing: 18px;
+      letter-spacing: 16px;
       background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

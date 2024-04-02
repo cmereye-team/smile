@@ -238,7 +238,7 @@ export default {
       &-t{
         margin-bottom: 43px;
         margin-top: 30px;
-        &>div{
+        &>h2{
           height: 54px;
           line-height: 120%;
           letter-spacing: 5.4px;

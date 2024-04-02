@@ -13,7 +13,7 @@
       <div class="xtra-in-lists">
         <div :class="[$i18n.locale === 'en' ? 'listInEng listIn ' : 'listIn']">
           <h3>{{ $t("service.relexSmile.xtra.h3_1") }}</h3>
-          <div></div>
+          <!-- <div></div> -->
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -283,6 +283,9 @@ export default {
             letter-spacing: 5px;
           }
         }
+        & > div:nth-child(3) {
+              margin-top: 20px;
+            }
       }
       .listInEng {
         & > div:last-child {
@@ -431,15 +434,17 @@ export default {
 
           & > div {
             &:nth-of-type(1) {
-              height: 43px;
-              line-height: 43px;
+              // height: 43px;
+              // line-height: 43px;
               font-size: 16px;
               letter-spacing: 4px;
               min-width: 100%;
               margin-bottom: 23px;
+              display: flex;
+              justify-content: center;
             }
-
-            &:nth-of-type(3) {
+            &:nth-of-type(3),
+            &:nth-of-type(2) {
               margin-top: 27px;
               font-size: 15px;
               line-height: 30px;

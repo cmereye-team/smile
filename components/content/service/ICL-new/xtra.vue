@@ -79,7 +79,6 @@
               </div>
               <h3>術後復原快</h3>
             </div>
-
             <div>手術以微創技術進<br class="mbShow" />行<span class="mbShow">，</span><br class="pcShow" />術後復原期短</div>
           </div>
           <div>
@@ -434,14 +433,14 @@ export default {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            & > h3:nth-child(1) {
+            & > div:nth-child(1) {
               width: 130px;
               height: 130px;
               display: flex;
               align-items: center;
               justify-content: center;
             }
-            & > div:nth-child(2) {
+            & > h3{
               margin-top: 22px;
               color: #4570b6;
               font-family: Noto Sans HK;
@@ -623,7 +622,7 @@ export default {
             justify-content: center;
           }
 
-          & > div:nth-child(2) {
+          & > h3 {
             color: #4570b6;
             font-family: Noto Sans HK;
             font-size: 18px;
