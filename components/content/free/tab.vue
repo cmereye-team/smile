@@ -769,7 +769,7 @@
             <tr height="19" class="free">
               <td class="boder-none"></td>
               <td colspan="7" class="et2">
-                <span>{{ $t("chargeDetail.span5") }} $600</span>
+                <span>{{ $t("chargeDetail.span5") }} $650</span>
               </td>
             </tr>
           </tbody>
@@ -863,7 +863,7 @@
             </tr>
             <tr>
               <td colspan="4" class="free" style="padding: 10px 0">
-                {{ $t("chargeDetail.span5") }} $600
+                {{ $t("chargeDetail.span5") }} $650
               </td>
             </tr>
           </tbody>
