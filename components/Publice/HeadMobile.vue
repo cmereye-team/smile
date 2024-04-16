@@ -15,37 +15,262 @@
           />
         </svg>
       </div>
-      <div><i></i><i></i><i></i></div>
+      <div @click="langDrawer = !langDrawer"><i></i><i></i><i></i></div>
     </div>
     <div class="langBox" v-if="langBox">
       <nuxt-link
-        :class="[
-          'text-center',
-          $i18n.locale === 'hk' ? 'langBoxClass' : '',
-        ]"
+        :class="['text-center', $i18n.locale === 'hk' ? 'langBoxClass' : '']"
         :to="switchLocalePath('hk')"
       >
         繁体
       </nuxt-link>
       <nuxt-link
-        :class="[
-          'text-center',
-          $i18n.locale === 'cn' ? 'langBoxClass' : '',
-        ]"
+        :class="['text-center', $i18n.locale === 'cn' ? 'langBoxClass' : '']"
         :to="switchLocalePath('cn')"
       >
         简体
       </nuxt-link>
     </div>
+    <div class="mb_menu_box" v-if="langDrawer">
+      <div class="mb_menu_close">
+        <div style="padding: 10px">
+          <img class="head_logo" src="@/asset/image/common/Logo.svg" alt="" />
+        </div>
+        <div>
+          <img
+            src="../../asset/image/common/Vector.png"
+            class="mr-5"
+            alt=""
+            @click="langDrawer = true"
+          />
+          <div @click="langDrawer = false"><i></i><i></i></div>
+        </div>
+      </div>
+      <div class="mb_menu_list">
+        <div>
+          <img
+            src="https://static.cmereye.com/imgs/2023/08/6fad924059f2fcad.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="mb_menu_style">
+            <DetailOption
+              :group="groupList"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'"
+            />
+
+            <DetailOption
+              :group="OrthopedicList"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'"
+            />
+
+            <DetailOption
+              :group="diagnosisInstructionsList"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'"
+            />
+
+            <DetailOption
+              :group="faq"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'"
+            />
+
+            <DetailOption
+              :group="contactUs"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png'"
+            />
+
+            <DetailOption
+              :group="ophthalmicConsultation"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'"
+            />
+
+            <DetailOption
+              :group="reservationService"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'"
+            />
+
+            <DetailOption
+              :group="video"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"
+            />
+
+            <DetailOption
+              :group="share"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'"
+            />
+            <div style="minwidth: 140px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mb_menu_footer">
+        <div>
+          <nuxt-link :to="localePath('/')">
+            <img
+              class="foot_logo"
+              src="../../asset/image/common/Logo.svg"
+              alt=""
+            />
+          </nuxt-link>
+          <div>
+            <a href="https://www.facebook.com/CMER.SMILE"
+              ><img src="@/asset/image/common/fbook.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com/cmer_smile/"
+              ><img src="@/asset/image/common/ins.png" alt=""
+            /></a>
+            <a href="https://www.youtube.com/@cmersmileeyecenter6303"
+              ><img src="@/asset/image/common/youtube.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div>
+          <p>
+            <span
+              >©2023 {{ $t("home.footer.span1")
+              }}{{ $t("home.footer.span2") }}</span
+            >
+            <span>
+              <nuxt-link :to="localePath('/privacy-policy')">{{
+                $t("home.footer.span3")
+              }}</nuxt-link>
+            </span>
+            |
+            <span>
+              <nuxt-link :to="localePath('/disclaimer')">{{
+                $t("home.footer.span4")
+              }}</nuxt-link>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import DetailOption from "@/components/commom/option/index.vue";
 export default {
+  components: {
+    DetailOption,
+  },
   data() {
     return {
       langBox: false,
       langDrawer: false,
+      groupList: {
+        main_nav: this.$t("home.headers.aboutSmile"),
+        link: "",
+        child_list: [
+          {
+            child_item: this.$t("home.headers.aboutSmileChild_1"),
+            link: "/group-profile",
+          },
+          {
+            child_item: this.$t("home.headers.aboutSmileChild_2"),
+            link: "/our-medical-team",
+          },
+          {
+            child_item: this.$t("home.headers.aboutSmileChild_3"),
+            link: "/medical-equipment",
+          },
+        ],
+      },
+      OrthopedicList: {
+        main_nav: this.$t("home.headers.orthopedicServices"),
+        link: "",
+        child_list: [
+          {
+            child_item: this.$t("home.headers.orthopedicServicesChild_1"),
+            link: "/vision-correction/relex-smile",
+          },
+          {
+            child_item: this.$t("home.headers.orthopedicServicesChild_5"),
+            link: "/smilePro",
+          },
+          {
+            child_item: "CMER CLEAR-Vision",
+            link: "/vision-correction-presbyopia",
+          },
+          {
+            child_item: this.$t("home.headers.orthopedicServicesChild_3"),
+            link: "/vision-correction-lasik",
+          },
+          {
+            child_item: this.$t("home.headers.orthopedicServicesChild_4"),
+            link: "/vision-correction-icl",
+          },
+        ],
+      },
+      diagnosisInstructionsList: {
+        main_nav: this.$t("home.headers.diagnosisInstructions"),
+        link: "",
+        child_list: [
+          {
+            child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
+            link: "/Notice/eyeExam",
+          },
+          {
+            child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
+            link: "/Notice/techProcess",
+          },
+          {
+            child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
+            link: "/Notice/Followdiag",
+          },
+        ],
+      },
+      faq: {
+        main_nav: this.$t("home.headers.commonProblem"),
+        link: "",
+        child_list: [
+          {
+            child_item: this.$t("home.headers.commonProblemChild_1"),
+            link: "/FreQuestions#faq-smile",
+          },
+          {
+            child_item: this.$t("home.headers.commonProblemChild_2"),
+            link: "/FreQuestions#faq-lasik",
+          },
+          {
+            child_item: this.$t("home.headers.commonProblemChild_3"),
+            link: "/FreQuestions#faq-icl",
+          },
+          {
+            child_item: this.$t("home.headers.commonProblemChild_4"),
+            link: "/FreQuestions#faq-presbyopia",
+          },
+        ],
+      },
+      contactUs: {
+        main_nav: this.$t("home.headers.contactUs"),
+        link: "/contact-us",
+      },
+      ophthalmicConsultation: {
+        main_nav: this.$t("home.headers.ophthalmicConsultation"),
+        link: "/ophthalmicInfo/mediaCov",
+      },
+      reservationService: {
+        main_nav: this.$t("home.headers.feeConsultation"),
+        link: "/fee",
+      },
+      video: {
+        main_nav: this.$t("home.headers.videos"),
+        link: "/video",
+      },
+      share: {
+        main_nav: this.$t("home.headers.casesSharing"),
+        link: "/video",
+      },
     };
   },
 };
@@ -55,8 +280,18 @@ export default {
 @media screen and (min-width: 768px) {
 }
 @media screen and (max-width: 767px) {
-  .HeadMobile{
+  .HeadMobile {
     position: relative;
+  }
+  .mb_menu_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
   }
   .mbHeaderBox {
     display: flex;
@@ -117,9 +352,143 @@ export default {
     border-radius: 5px;
     border: 1px solid #4570b6;
     padding-top: 0;
-    &>a {
+    & > a {
       width: 100%;
       padding: 10px 0;
+    }
+  }
+  .mb_menu_close {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+
+      & > div:nth-child(2) {
+        width: 41px;
+        height: 41px;
+        background: #4570b6;
+        border-radius: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > i {
+          display: inline-block;
+          width: 55%;
+          height: 3px;
+          background: #fff;
+          border-radius: 3px;
+          position: relative;
+        }
+
+        & > i:nth-child(1) {
+          transform: rotate(45deg);
+          top: 1.5px;
+        }
+
+        & > i:nth-child(2) {
+          transform: rotate(-45deg);
+          top: -1.5px;
+        }
+      }
+    }
+  }
+
+  .mb_menu_list {
+    & > div:nth-child(1) {
+      margin: 12px 0;
+      margin: 0 17px;
+      display: flex;
+      justify-content: center;
+    }
+
+    & > div:nth-child(2) {
+      width: 85%;
+      margin: auto;
+      & > div:nth-child(1) {
+        display: flex;
+        flex-wrap: wrap;
+        // padding-left: 20px;
+        justify-content: center;
+        align-items: flex-start;
+
+        & > div {
+          display: flex;
+          align-items: flex-start;
+          padding: 10px 0;
+          justify-content: center;
+          // max-width: 42%;
+          flex: 1;
+
+          & > div:nth-child(1) {
+            min-width: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // margin-right: 10px;
+          }
+        }
+
+        // & > div:nth-child(odd) {
+        //   margin-right: 20px;
+        // }
+
+        a {
+          -webkit-tap-highlight-color: transparent;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > a:nth-child(2) {
+          margin: 0 24px;
+        }
+      }
+    }
+  }
+
+  .mb_menu_footer {
+    margin-bottom: 64px;
+
+    & > div:nth-child(1) {
+      padding: 25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url("https://static.cmereye.com/imgs/2023/08/d6f27536cde86418.png");
+      background-size: 100%, 100%;
+      background-repeat: no-repeat;
+      & > div:nth-child(2) {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        & > a:nth-child(2) {
+          margin: 0 12px;
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      color: #6d6e71;
+      text-align: center;
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 222.222% */
+      letter-spacing: 0.9px;
     }
   }
 }
