@@ -149,7 +149,7 @@ export default {
   :deep(.PcShow) {
     display: none !important;
   }
-  :deep(.context) {
+  .context{
     color: #6d6e71 !important;
     text-align: center;
     font-family: "Noto Sans HK";

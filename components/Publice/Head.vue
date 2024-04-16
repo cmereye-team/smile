@@ -1,17 +1,22 @@
 <template>
   <div class="head">
     <HeadLeft />
-    <HeadRight v-if="!isMobile" />
+    <div>
+      <HeadRight v-if="!isMobile" />
+      <HeadMobile v-else />
+    </div>
   </div>
 </template>
 
 <script>
 import HeadLeft from "../Publice/HeadLeft.vue";
 import HeadRight from "../Publice/HeadRight.vue";
+import HeadMobile from "../Publice/HeadMobile.vue";
 export default {
   components: {
     HeadLeft,
     HeadRight,
+    HeadMobile,
   },
   data() {
     return {
@@ -63,6 +68,9 @@ export default {
     z-index: 99;
     background: #fff;
     padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 </style>
