@@ -11,7 +11,13 @@
 
 <style lang="scss" scoped>
 @media screen and (min-width:768px) {
+  .Banner{
+    margin-top: 145px;
+  }
 }
 @media screen and (max-width:767px) {
+  .Banner{
+    margin-top: 80px;
+  }
 }
 </style>
