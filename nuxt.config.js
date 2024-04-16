@@ -95,7 +95,7 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包
   build: {
-    vendor: ['element-ui']
+    vendor: ['element-ui'],
   }
   
 }

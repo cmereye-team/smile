@@ -196,6 +196,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .businessHours {
+  position: relative;
+  z-index: -1;
   &-title {
     color: #4570b6;
     font-size: 30px;
