@@ -13,8 +13,8 @@
 @media screen and (min-width:768px) {
   .Banner{
     margin: 0 auto;
-    margin-top: 145px;
     max-width: 1270px;
+    margin-top: 145px;
   }
 }
 @media screen and (max-width:767px) {
