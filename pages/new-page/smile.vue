@@ -59,10 +59,6 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
-  .banner-box {
-    max-width: 1270px;
-    margin: 0 auto 0;
-  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/97c8be06acc98273.png")
       no-repeat;
