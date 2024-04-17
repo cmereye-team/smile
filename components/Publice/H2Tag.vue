@@ -29,6 +29,13 @@ export default {
 :deep(h2) {
   border: none;
 }
+h2::before {
+  content: none;
+  border: none;
+}
+h2 {
+  border: none;
+}
 @media screen and (min-width: 768px) {
   h2 {
     padding-bottom: 22px;
