@@ -1159,64 +1159,67 @@
           <div>用家見證</div>
         </div>
         <div class="swiper-wrap-box">
-          <!-- <div class="swiper-slide" href="" target="_blank">
+          <div>
             <div>
-              <div class="speech">
-                第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                  >好細心</span
-                >講解同鼓勵我，<br />令我好安心
+              <div>
+                <div class="speech">
+                  第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
+                    >好細心</span
+                  >講解同鼓勵我，<br />令我好安心
+                </div>
+                <div class="name-title">Macy, 文員</div>
               </div>
-              <div class="name-title">Macy, 文員</div>
             </div>
+            <div>
+              <div>
+                <div class="speech">
+                  一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
+                    >第 2 日已經睇得清，</span
+                  ><br />如常生活架喇!
+                </div>
+                <div class="name-title">Agnes, 行政人員</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="speech">
+                  我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
+                  ><br />會推薦比朋友
+                </div>
+                <div class="name-title">Vivien, 家庭主婦</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="speech">
+                  做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
+                  10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
+                </div>
+                <div class="name-title">阿聲, 咖啡師</div>
+              </div>
+            </div>
+            <!-- <div>
+              <div>
+                <div class="speech">
+                  第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
+                    >好細心</span
+                  >講解同鼓勵我，<br />令我好安心
+                </div>
+                <div class="name-title">Macy, 文員</div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="speech">
+                  一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
+                    >第 2 日已經睇得清，</span
+                  ><br />如常生活架喇!
+                </div>
+                <div class="name-title">Agnes, 行政人員</div>
+              </div>
+            </div> -->
           </div>
-          <div class="swiper-slide" href="" target="_blank">
-            <div>
-              <div class="speech">
-                一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
-                  >第 2 日已經睇得清，</span
-                ><br />如常生活架喇!
-              </div>
-              <div class="name-title">Agnes, 行政人員</div>
-            </div>
-          </div>
-          <div class="swiper-slide" href="" target="_blank">
-            <div>
-              <div class="speech">
-                我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
-                ><br />會推薦比朋友
-              </div>
-              <div class="name-title">Vivien, 家庭主婦</div>
-            </div>
-          </div>
-          <div class="swiper-slide" href="" target="_blank">
-            <div>
-              <div class="speech">
-                做完<br /><span>SMILE PRO</span>好似重新感受世界咁! 只係<br />短短
-                10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
-              </div>
-              <div class="name-title">阿聲, 咖啡師</div>
-            </div>
-          </div>
-          <div class="swiper-slide" href="" target="_blank">
-            <div>
-              <div class="speech">
-                第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                  >好細心</span
-                >講解同鼓勵我，<br />令我好安心
-              </div>
-              <div class="name-title">Macy, 文員</div>
-            </div>
-          </div>
-          <div class="swiper-slide" href="" target="_blank">
-            <div>
-              <div class="speech">
-                一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
-                  >第 2 日已經睇得清，</span
-                ><br />如常生活架喇!
-              </div>
-              <div class="name-title">Agnes, 行政人員</div>
-            </div>
-          </div> -->
+
           <!-- <div class="swiper-button-prev flex items-center justify-center">
             <img src="../../asset/image/common/left-white.svg" alt="" />
           </div>
@@ -1239,11 +1242,6 @@ import Banner from "@/components/Publice/Banner.vue";
 import footers from "@/components/commom/new_foot/footers.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 
-// import 'swiper/scss';
-
-// import 'swiper/scss/pagination';
-// import { Swiper, SwiperSlide } from 'swiper/vue';
-// import { Pagination } from 'swiper/modules';
 export default {
   components: {
     Head,
@@ -1252,8 +1250,6 @@ export default {
     footers,
     Banner,
     H2Tag,
-    // Swiper,
-    //   SwiperSlide,
   },
   data() {
     return {
@@ -1316,17 +1312,17 @@ export default {
         ],
       ],
       isMobile: false,
-      swiperOptionTop: {
-        loop: true,
-        autoplay: true,
-        observer: true,
-        observeParents: true,
-        onSlideChangeEnd: function (swiper) {
-          swiper.update();
-          mySwiper.startAutoplay();
-          mySwiper.reLoop();
-        },
-      },
+      // swiperOptionTop: {
+      //   loop: true,
+      //   autoplay: true,
+      //   observer: true,
+      //   observeParents: true,
+      //   onSlideChangeEnd: function (swiper) {
+      //     swiper.update();
+      //     mySwiper.startAutoplay();
+      //     mySwiper.reLoop();
+      //   },
+      // },
       swiperOption: {
         loop: true,
         centeredSlides: true,
@@ -1352,7 +1348,6 @@ export default {
           },
         },
       },
-      // modules: [Pagination],
     };
   },
   mounted() {
@@ -1817,6 +1812,7 @@ export default {
     width: 150%;
     margin-left: -25%;
     margin-top: 150px;
+    margin-bottom: 100px;
     border-radius: 0 0 50% 50%;
     background: rgba(199, 232, 239, 0.2);
     position: relative;
@@ -1863,14 +1859,79 @@ export default {
       }
     }
   }
-  .bg_swiper {
-    background: rgba(174, 213, 231, 0.7);
-  }
-  .swiperWrap {
-    padding: 34px 50px;
-  }
+
   .swiper-wrap-box {
     position: relative;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        width: 275px;
+        height: 315px;
+        border-radius: 30px;
+        background: #e4f6f3;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & > div:nth-child(1) {
+            background: url("https://static.cmereye.com/imgs/2024/04/daee7b87d3147b65.png")
+              no-repeat;
+            background-size: 100% 100%;
+            padding: 30px 0;
+            height: 235px;
+            color: #487f82;
+
+            text-align: center;
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 222.222% */
+            letter-spacing: 1.08px;
+            & > span {
+              color: #fff;
+              font-family: "Inter";
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 40px;
+              letter-spacing: 1.8px;
+            }
+          }
+          & > div:nth-child(2) {
+            color: #487f82;
+            text-align: center;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.2px;
+            padding-bottom: 35px;
+            padding-top: 15px;
+          }
+        }
+      }
+      & > div:nth-child(even) {
+        & > div {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          & > div:nth-child(1) {
+            background: url("https://static.cmereye.com/imgs/2024/04/31dab7e674bfb580.png")
+              no-repeat;
+            background-size: 100% 100%;
+            height: 235px;
+            padding: 30px 0;
+          }
+          & > div:nth-child(2) {
+            padding-top: 35px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
   }
   :deep(.swiper-button-next) {
     right: -5%;
@@ -1880,6 +1941,9 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  .smile-pro {
+    overflow: hidden;
+  }
   :deep(.PcShow) {
     display: none !important;
   }
@@ -2366,6 +2430,272 @@ export default {
   .arr {
     & > span:nth-child(2) {
       font-size: 10px;
+    }
+  }
+  .smile-pro-trait {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    & > div {
+      background: #c7e8ef33;
+      border-radius: 50% 50% 0 0;
+      width: 300%;
+      margin-left: -100%;
+      padding: 110px 0 53px;
+      & > div {
+        width: 100vw;
+        margin: 0 auto;
+      }
+      & > div:nth-child(1) {
+        position: absolute;
+        top: -13%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 170px;
+        height: 170px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & > div:nth-child(1) {
+          margin-left: 28%;
+        }
+        & > div:nth-child(2) {
+          margin-top: 10px;
+          color: #4570b6;
+          font-family: "Noto Sans HK";
+          font-size: 18px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 100% */
+          letter-spacing: 5px;
+          position: relative;
+        }
+      }
+      & > div:nth-child(2) {
+        margin-bottom: 50px;
+        padding: 0 24px;
+        color: #4570b6;
+
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 150% */
+        letter-spacing: 5px;
+        & > p {
+          text-align: center;
+        }
+      }
+      & > div:nth-child(3) {
+        padding: 0 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & > div {
+          margin-bottom: 30px;
+          & > div:nth-child(1) {
+            width: 155px;
+            height: 155px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            & > div:nth-child(1) {
+              width: 75px;
+              height: 75px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              & > svg {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            & > div:nth-child(2) {
+              margin-top: 15px;
+              color: #4570b6;
+
+              font-family: "Noto Sans HK";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px; /* 111.111% */
+              letter-spacing: 3.6px;
+            }
+          }
+          & > div:nth-child(2) {
+            color: #6d6e71;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px; /* 146.667% */
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+  }
+  .smile-pro-share {
+    margin-top: 50px;
+    padding: 0 30px;
+    & > div:nth-child(2) {
+      & > a {
+        display: flex;
+        flex-direction: column;
+        & > div:nth-child(2) {
+          margin-top: 14px;
+          color: #6d6e71;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 10px; /* 71.429% */
+          letter-spacing: 1.4px;
+
+          margin-bottom: 28px;
+        }
+      }
+    }
+  }
+  .smile-pro-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    & > a {
+      color: #fff;
+
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
+      background: #4570b6;
+      border-radius: 55px;
+      padding: 17px 55px;
+    }
+  }
+  .smile-pro-evaluate {
+    position: relative;
+    overflow: hidden;
+    & > div {
+      width: 300%;
+      padding: 116px 0 45px;
+      border-radius: 50% 50% 0 0;
+      background: rgba(199, 232, 239, 0.2);
+      margin-left: -100%;
+      margin-top: 150px;
+
+      & > div:nth-child(1) {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 170px;
+        height: 170px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & > div:nth-child(2) {
+          margin-top: 20px;
+          color: #4570b6;
+
+          font-family: "Noto Sans HK";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 100% */
+          letter-spacing: 5px;
+          padding-bottom: 20px;
+          position: relative;
+        }
+        & > div:nth-child(2)::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 3px;
+          border-radius: 3px;
+          background: #a6e1d6;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  .swiper-wrap-box {
+    display: flex;
+    justify-content: center;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & > div {
+        width: 205px;
+        height: 215px;
+        border-radius: 30px;
+        margin-left: -32%;
+        margin-right: auto;
+        background: #e4f6f3;
+        margin-bottom: 24px;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & > div:nth-child(1) {
+            background: url("https://static.cmereye.com/imgs/2024/04/daee7b87d3147b65.png")
+              no-repeat;
+            background-size: 100% 100%;
+            padding: 20px 0;
+            height: 175px;
+            color: #487f82;
+
+            text-align: center;
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 222.222% */
+            & > span {
+              color: #fff;
+              font-family: "Inter";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 40px;
+            }
+          }
+          & > div:nth-child(2) {
+            color: #487f82;
+            text-align: center;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.2px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+      & > div:nth-child(even) {
+        margin-right: -32%;
+        margin-left: auto;
+      }
     }
   }
 }
