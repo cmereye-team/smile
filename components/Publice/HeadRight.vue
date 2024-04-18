@@ -21,7 +21,7 @@
         </div>
         <div>3892 5099</div>
       </div>
-      <div>預約服務</div>
+      <nuxt-link to="/booking">預約服務</nuxt-link>
       <div class="language">
         <!-- <div class="language-icon">
           <svg
@@ -263,7 +263,8 @@ a {
       line-height: normal;
       letter-spacing: 3px;
     }
-    & > div:nth-child(2) {
+    & > a:nth-child(2) {
+      margin-left: 20px;
       cursor: pointer;
       color: #fff;
       text-align: center;
@@ -277,8 +278,8 @@ a {
       border-radius: 17px;
       background: #4570b6;
     }
-    & > div:nth-child(2):hover {
-      box-shadow: 3px 5px 5px #adadad;
+    & > a:nth-child(2):hover {
+      box-shadow: 0px 0px 5px 2px #adadad;
     }
   }
   .header-bottom {
