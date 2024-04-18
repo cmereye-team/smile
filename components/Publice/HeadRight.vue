@@ -2,7 +2,7 @@
 <template>
   <div class="HeaderRight">
     <div class="header-top" v-if="isMobile === false">
-      <div>
+      <a href="tel:3892 5099 ">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
           </svg>
         </div>
         <div>3892 5099</div>
-      </div>
+      </a>
       <nuxt-link to="/booking">預約服務</nuxt-link>
       <div class="language">
         <!-- <div class="language-icon">
@@ -246,7 +246,7 @@ a {
       align-items: center;
       margin-left: 20px;
     }
-    & > div:nth-child(1) {
+    & > a:nth-child(1) {
       display: flex;
       align-items: center;
       & > div:nth-child(1) {
