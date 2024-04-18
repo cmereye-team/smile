@@ -162,22 +162,22 @@ export default {
           childList: [
             {
               id: 1,
-              path: "/FreQuestion#faq-smile",
+              path: "/FreQuestions#faq-smile",
               name: "SMILE 微笑激光矯視",
             },
             {
               id: 2,
-              path: "/FreQuestion#faq-lasik",
+              path: "/FreQuestions#faq-lasik",
               name: "LASIK 激光矯視",
             },
             {
               id: 3,
-              path: "/FreQuestion#faq-icl",
+              path: "/FreQuestions#faq-icl",
               name: "ICL植入式隱形眼鏡",
             },
             {
               id: 4,
-              path: "/FreQuestion#faq-presbyopia",
+              path: "/FreQuestions#faq-presbyopia",
               name: "CLEAR-Vision",
             },
           ],
