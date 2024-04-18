@@ -65,7 +65,7 @@
     <div class="header-bottom">
       <div v-for="item in menuList" :key="item.id">
         <nuxt-link
-          :to="item.childType ? item.path : '/'"
+          :to="item.path"
           :class="[item.childType ? 'child-menu' : '']"
           >{{ item.name }}</nuxt-link
         >
@@ -94,17 +94,17 @@ export default {
           childList: [
             {
               id: 1,
-              path: "",
+              path: "/group-profile",
               name: "集團及中心簡介",
             },
             {
               id: 2,
-              path: "",
+              path: "/our-medical-team",
               name: "醫生團隊",
             },
             {
               id: 3,
-              path: "",
+              path: "/medical-equipment",
               name: "中心設備",
             },
           ],
@@ -117,40 +117,40 @@ export default {
           childList: [
             {
               id: 1,
-              path: "",
+              path: "/vision-correction/relex-smile",
               name: "SMILE 微笑激光矯視",
             },
             {
               id: 2,
-              path: "",
+              path: "/smilePro",
               name: "SMILE Pro微笑激光矯視",
             },
             {
               id: 3,
-              path: "",
+              path: "/vision-correction-presbyopia",
               name: "CMER CLEAR-Vision",
             },
             {
               id: 4,
-              path: "",
+              path: "/vision-correction-lasik",
               name: "LASIK 激光矯視",
             },
             {
               id: 5,
-              path: "",
+              path: "/vision-correction-icl",
               name: "ICL植入式隱形眼鏡",
             },
           ],
         },
         {
           id: 3,
-          path: "",
+          path: "/patient-info",
           name: "診症須知",
           childType: false,
         },
         {
           id: 4,
-          path: "",
+          path: "/fee",
           name: "收費詳情",
           childType: false,
         },
@@ -162,29 +162,29 @@ export default {
           childList: [
             {
               id: 1,
-              path: "",
+              path: "/FreQuestion#faq-smile",
               name: "SMILE 微笑激光矯視",
             },
             {
               id: 2,
-              path: "",
+              path: "/FreQuestion#faq-lasik",
               name: "LASIK 激光矯視",
             },
             {
               id: 3,
-              path: "",
+              path: "/FreQuestion#faq-icl",
               name: "ICL植入式隱形眼鏡",
             },
             {
               id: 4,
-              path: "",
+              path: "/FreQuestion#faq-presbyopia",
               name: "CLEAR-Vision",
             },
           ],
         },
         {
           id: 6,
-          path: "",
+          path: "/contact-us",
           name: "聯絡我們",
           childType: false,
         },

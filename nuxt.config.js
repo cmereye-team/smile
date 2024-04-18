@@ -1,8 +1,10 @@
 
 import i18n from "./plugins/i18n"
 import sitemap from './plugins/sitemap'
+import router from './router/index.js'
 
 export default {
+  router,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '香港希瑪微笑矯視中心',
@@ -17,7 +19,7 @@ export default {
           body:true
       },
        // Google Analytics Code
-       {
+      {
         src: "https://www.googletagmanager.com/gtag/js?id=G-FN8KFBR9XM",
         // src: "https://www.googletagmanager.com/gtag/js?id=GTM-5M8VLLM",
         async: true,

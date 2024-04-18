@@ -1,10 +1,10 @@
 <template>
-  <div class="HeaderLeft">
+  <nuxt-link to="/" class="HeaderLeft">
     <img
       src="https://static.cmereye.com/imgs/2024/04/d7d03bab77d64807.png"
       alt="希瑪微笑矯視中心"
     />
-  </div>
+  </nuxt-link>
 </template>
 
 <style lang="scss" scoped>
