@@ -4,6 +4,9 @@
     <div>
       <HeadRight v-if="!isMobile" />
       <HeadMobile v-else />
+      <div class="sidebar">
+        <Sidebar />
+      </div>
     </div>
   </div>
 </template>
@@ -12,11 +15,13 @@
 import HeadLeft from "../Publice/HeadLeft.vue";
 import HeadRight from "../Publice/HeadRight.vue";
 import HeadMobile from "../Publice/HeadMobile.vue";
+import Sidebar from "../Publice/Sidebar.vue";
 export default {
   components: {
     HeadLeft,
     HeadRight,
     HeadMobile,
+    Sidebar
   },
   data() {
     return {
@@ -44,6 +49,12 @@ export default {
 
 <style lang="scss">
 @media screen and (min-width: 768px) {
+  .sidebar{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .head {
     display: flex;
     justify-content: space-between;
