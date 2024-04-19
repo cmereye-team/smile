@@ -1,11 +1,13 @@
 <template>
-  <div class="head">
-    <HeadLeft />
-    <div>
-      <HeadRight v-if="!isMobile" />
-      <HeadMobile v-else />
-      <div class="sidebar">
-        <Sidebar />
+  <div class="head-bg">
+    <div class="head">
+      <HeadLeft />
+      <div>
+        <HeadRight v-if="!isMobile" />
+        <HeadMobile v-else />
+        <div class="sidebar-box" v-if="!isMobile">
+          <Sidebar />
+        </div>
       </div>
     </div>
   </div>
@@ -21,7 +23,7 @@ export default {
     HeadLeft,
     HeadRight,
     HeadMobile,
-    Sidebar
+    Sidebar,
   },
   data() {
     return {
@@ -49,7 +51,16 @@ export default {
 
 <style lang="scss">
 @media screen and (min-width: 768px) {
-  .sidebar{
+  .head-bg{
+    background: #fff;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .sidebar-box {
     position: fixed;
     right: 0;
     top: 50%;
@@ -62,12 +73,6 @@ export default {
     max-width: 1270px;
     margin: 0 auto;
     padding: 25px 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background: #fff;
-    z-index: 99;
   }
 }
 @media screen and (max-width: 767px) {

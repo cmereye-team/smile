@@ -168,7 +168,7 @@ h2 {
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 37px;
     height: 51px;
     margin-top: -22px;

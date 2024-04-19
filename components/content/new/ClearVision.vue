@@ -616,7 +616,7 @@ export default {
       }
     }
     & > div:nth-child(3) {
-      margin-top: 200px;
+      margin-top: 60px;
     }
     & > div:last-child {
       margin-top: 80px;

@@ -60,7 +60,7 @@
       </div> -->
     </div>
     <div class="businessHours-address">
-      <div>
+      <a href="https://maps.app.goo.gl/JYfFVpG5BVThSMNk7" target="_blank">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,8 +84,8 @@
           </svg>
         </div>
         <h3>中環</h3>
-      </div>
-      <div>
+      </a>
+      <a href="https://maps.app.goo.gl/Ujy6ZEsqpmQUvL8o7" target="_blank">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -109,8 +109,8 @@
           </svg>
         </div>
         <h3>旺角</h3>
-      </div>
-      <div>
+      </a>
+      <a href="https://maps.app.goo.gl/D71VbmfYaxufGroL6" target="_blank">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@
           </svg>
         </div>
         <h3>尖沙咀</h3>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -197,7 +197,7 @@ export default {
 <style lang="scss" scoped>
 .businessHours {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   &-title {
     color: #4570b6;
     font-size: 30px;
@@ -319,7 +319,7 @@ export default {
     justify-content: center;
     margin: 54px auto 59px;
 
-    & > div {
+    & > a {
       display: flex;
       align-items: center;
 
@@ -452,7 +452,7 @@ export default {
     &-address {
       justify-content: space-evenly;
       margin: 23px auto 51px;
-      & > div {
+      & > a {
         flex-direction: column;
         &:not(:last-child) {
           margin-right: 0;

@@ -1,8 +1,8 @@
 
 <template>
   <div class="Sidebar">
-    <div @click="sidebar = !sidebar">了 解 更 多 ・ 預約</div>
-    <div :class="sidebar ? 'sidebar-open' : 'sidebar-close'">
+    <div>了 解 更 多 ・ 預約</div>
+    <div>
       <nuxt-link to="/ophthalmicInfo/AppointForm">
         <div>
           <svg
@@ -200,6 +200,11 @@ export default {
   .Sidebar {
     display: flex;
     align-items: flex-start;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(76%);
+    transition: all 0.3s ease-in-out;
     & > div:nth-child(1) {
       width: 64px;
       border-radius: 25px 0 0 25px;
@@ -209,7 +214,7 @@ export default {
       color: #fff;
 
       text-align: center;
-      font-family: Inter;
+      font-family: "Inter";
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
@@ -219,6 +224,13 @@ export default {
       cursor: pointer;
     }
     & > div:nth-child(2) {
+      padding: 30px 18px;
+      background: #fff;
+      border-radius: 0 0 25px 25px;
+      box-shadow: -2px 0px 7px rgba(69, 112, 182, 0.25);
+      transition: all 0.3s ease-in-out;
+      // position: absolute;
+      // right: -310%;
       & > a {
         width: 160px;
         height: 140px;
@@ -264,19 +276,8 @@ export default {
       }
     }
   }
-  .sidebar-close {
-    width: 0;
-    padding: 0;
-    & > a {
-      display: none;
-    }
-    transition: all 0.3s ease-in-out;
-  }
-  .sidebar-open {
-    padding: 30px 18px;
-    background: #fff;
-    border-radius: 0 0 25px 25px;
-    box-shadow: -2px 0px 7px rgba(69, 112, 182, 0.25);
+  .Sidebar:hover {
+    transform: translateY(-50%) translateX(0);
     transition: all 0.3s ease-in-out;
   }
 }

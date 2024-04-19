@@ -1078,7 +1078,7 @@
     <div class="smile-pro-share">
       <H2Tag :title="titleName1" />
       <div>
-        <a>
+        <a href="https://www.youtube.com/watch?v=oHDOFYMEUsk" target="_blank">
           <div>
             <img
               src="https://static.cmereye.com/imgs/2024/04/3ba8ba8af5746941.png"
@@ -1087,7 +1087,10 @@
           </div>
           <div>微笑矯視 - Shirley 陳欣妍</div>
         </a>
-        <a>
+        <a
+          href="https://www.youtube.com/watch?v=5ihrzFvOy38&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=7"
+          target="_blank"
+        >
           <div>
             <img
               src="https://static.cmereye.com/imgs/2024/04/c344195a95c8460a.png"
@@ -1096,7 +1099,7 @@
           </div>
           <div>植入式隱形眼鏡 - Serene 林宣妤</div>
         </a>
-        <a>
+        <a href="https://www.youtube.com/watch?v=L5GFWM7Fxqs" target="_blank">
           <div>
             <img
               src="https://static.cmereye.com/imgs/2024/04/c8ef22d49c9a4ca1.png"
@@ -1158,74 +1161,89 @@
           </div>
           <div>用家見證</div>
         </div>
-        <div class="swiper-wrap-box">
-          <div>
-            <div>
-              <div>
-                <div class="speech">
-                  第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                    >好細心</span
-                  >講解同鼓勵我，<br />令我好安心
+        <div class="pcShow swiper-pc-share">
+          <div v-swiper:mySwiper="swiperOption1" class="swiperWrap">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
+                      >好細心</span
+                    >講解同鼓勵我，<br />令我好安心
+                  </div>
+                  <div class="name-title">Macy, 文員</div>
                 </div>
-                <div class="name-title">Macy, 文員</div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
+                      >第 2 日已經睇得清，</span
+                    ><br />如常生活架喇!
+                  </div>
+                  <div class="name-title">Agnes, 行政人員</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
+                    ><br />會推薦比朋友
+                  </div>
+                  <div class="name-title">Vivien, 家庭主婦</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
+                    10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
+                  </div>
+                  <div class="name-title">阿聲, 咖啡師</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
+                    ><br />會推薦比朋友
+                  </div>
+                  <div class="name-title">Vivien, 家庭主婦</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
+                      >好細心</span
+                    >講解同鼓勵我，<br />令我好安心
+                  </div>
+                  <div class="name-title">Macy, 文員</div>
+                </div>
               </div>
             </div>
-            <div>
-              <div>
-                <div class="speech">
-                  一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
-                    >第 2 日已經睇得清，</span
-                  ><br />如常生活架喇!
-                </div>
-                <div class="name-title">Agnes, 行政人員</div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div class="speech">
-                  我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
-                  ><br />會推薦比朋友
-                </div>
-                <div class="name-title">Vivien, 家庭主婦</div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div class="speech">
-                  做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
-                  10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
-                </div>
-                <div class="name-title">阿聲, 咖啡師</div>
-              </div>
-            </div>
-            <!-- <div>
-              <div>
-                <div class="speech">
-                  第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                    >好細心</span
-                  >講解同鼓勵我，<br />令我好安心
-                </div>
-                <div class="name-title">Macy, 文員</div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div class="speech">
-                  一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
-                    >第 2 日已經睇得清，</span
-                  ><br />如常生活架喇!
-                </div>
-                <div class="name-title">Agnes, 行政人員</div>
-              </div>
-            </div> -->
           </div>
-
-          <!-- <div class="swiper-button-prev flex items-center justify-center">
-            <img src="../../asset/image/common/left-white.svg" alt="" />
+          <div class="swiper-button-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="32"
+              viewBox="0 0 20 32"
+              fill="none"
+            >
+              <path
+                d="M1 1L18 16.5556L1 31"
+                stroke="#4570B6"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
           </div>
-          <div class="swiper-button-next flex items-center justify-center">
-            <img src="../../asset/image/common/right-white.svg" alt="" />
-          </div> -->
+          <div class="swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" viewBox="0 0 20 32" fill="none">
+  <path d="M19 1L2 16.5556L19 31" stroke="#4570B6" stroke-width="2" stroke-linecap="round"/>
+</svg>
+          </div>
         </div>
       </div>
     </div>
@@ -1312,17 +1330,7 @@ export default {
         ],
       ],
       isMobile: false,
-      // swiperOptionTop: {
-      //   loop: true,
-      //   autoplay: true,
-      //   observer: true,
-      //   observeParents: true,
-      //   onSlideChangeEnd: function (swiper) {
-      //     swiper.update();
-      //     mySwiper.startAutoplay();
-      //     mySwiper.reLoop();
-      //   },
-      // },
+
       swiperOption: {
         loop: true,
         centeredSlides: true,
@@ -1348,7 +1356,21 @@ export default {
           },
         },
       },
+      swiperOption1: {
+        slidesPerView: "auto",
+        spaceBetween: 50,
+        slidesPerView: "4",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
     };
+  },
+  methods: {
+    shareForm(_url) {
+      window.open(_url);
+    },
   },
   mounted() {
     window.addEventListener("resize", () => {
@@ -1392,6 +1414,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding-left: 70px;
+    padding-top: 10%;
     & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
@@ -1411,6 +1434,44 @@ export default {
       letter-spacing: 0.45px;
     }
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 37px;
+    height: 51px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 27px 44px;
+    -webkit-background-size: 27px 44px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .swiper-button-next {
+    background-image: none;
+    right: -50px;
+  }
+  .swiper-button-prev {
+    background-image: none;
+    left: -50px;
+  }
+
+  // .swiper-wrapper {
+  //   & > div {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //   }
+  // }
+  .swiper-pc-share {
+    max-width: 1270px;
+    position: relative;
+    margin: 0 auto;
+  }
+
   .smilePro-desc {
     max-width: 1270px;
     margin: 0 auto;
@@ -1860,78 +1921,80 @@ export default {
     }
   }
 
-  .swiper-wrap-box {
-    position: relative;
-    & > div {
-      display: flex;
-      justify-content: space-between;
-      & > div {
-        width: 275px;
-        height: 315px;
-        border-radius: 30px;
-        background: #e4f6f3;
-        & > div {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          & > div:nth-child(1) {
-            background: url("https://static.cmereye.com/imgs/2024/04/daee7b87d3147b65.png")
-              no-repeat;
-            background-size: 100% 100%;
-            padding: 30px 0;
-            height: 235px;
-            color: #487f82;
+  // .swiper-wrap-box {
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-direction: column;
+  // }
 
-            text-align: center;
-            font-family: "Inter";
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 40px; /* 222.222% */
-            letter-spacing: 1.08px;
-            & > span {
-              color: #fff;
-              font-family: "Inter";
-              font-size: 28px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 40px;
-              letter-spacing: 1.8px;
-            }
-          }
-          & > div:nth-child(2) {
-            color: #487f82;
-            text-align: center;
-            font-family: "Inter";
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 1.2px;
-            padding-bottom: 35px;
-            padding-top: 15px;
-          }
-        }
-      }
-      & > div:nth-child(even) {
-        & > div {
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: space-between;
-          & > div:nth-child(1) {
-            background: url("https://static.cmereye.com/imgs/2024/04/31dab7e674bfb580.png")
-              no-repeat;
-            background-size: 100% 100%;
-            height: 235px;
-            padding: 30px 0;
-          }
-          & > div:nth-child(2) {
-            padding-top: 35px;
-            padding-bottom: 15px;
-          }
-        }
+  .swiper-two {
+    width: 275px;
+    height: 315px;
+    border-radius: 30px;
+    background: #e4f6f3;
+  }
+  .swiper-two-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & > div:nth-child(1) {
+      background: url("https://static.cmereye.com/imgs/2024/04/daee7b87d3147b65.png")
+        no-repeat;
+      background-size: 100% 100%;
+      padding: 30px 0;
+      height: 235px;
+      color: #487f82;
+
+      text-align: center;
+      font-family: "Inter";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 222.222% */
+      letter-spacing: 1.08px;
+      & > span {
+        color: #fff;
+        font-family: "Inter";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 1.8px;
       }
     }
+    & > div:nth-child(2) {
+      color: #487f82;
+      text-align: center;
+      font-family: "Inter";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      padding-bottom: 35px;
+      padding-top: 15px;
+    }
+  }
+  .swiper-wrapper > div:nth-child(even) {
+    & > div {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      & > div:nth-child(1) {
+        background: url("https://static.cmereye.com/imgs/2024/04/31dab7e674bfb580.png")
+          no-repeat;
+        background-size: 100% 100%;
+        height: 235px;
+        padding: 30px 0;
+      }
+      & > div:nth-child(2) {
+        padding-top: 35px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .even-style {
   }
   :deep(.swiper-button-next) {
     right: -5%;
