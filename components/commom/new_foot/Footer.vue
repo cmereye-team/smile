@@ -698,7 +698,7 @@ export default {
   .footer-bottom {
     margin: auto;
     background: #fff;
-    padding: 15px 0;
+    padding: 15px;
     color: #6d6e71;
     text-align: center;
     font-size: 12px;
@@ -706,7 +706,10 @@ export default {
     font-weight: 400;
     line-height: 20px; /* 166.667% */
     letter-spacing: 1.2px;
-    transform: scale(0.9);
+    // transform: scale(0.9);
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 100vw;
   }
 }
 </style>

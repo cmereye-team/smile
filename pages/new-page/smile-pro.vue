@@ -11,7 +11,7 @@
     </Banner>
     <div class="smilePro-desc page_container">
       <div class="smilePro-desc-title flex justify-center md:mt-28 mt-10">
-        <h2>{{ $t("service.smilePro.smileProDesc.title") }}</h2>
+        <H2Tag :title="[$t('service.smilePro.smileProDesc.title')]" />
       </div>
       <div class="smilePro-desc-in">
         <div class="smilePro-desc-in-box">
@@ -1161,8 +1161,11 @@
           </div>
           <div>用家見證</div>
         </div>
-        <div class="pcShow swiper-pc-share">
-          <div v-swiper:mySwiper="swiperOption1" class="swiperWrap">
+        <div class="swiper-pc-share">
+          <div
+            v-swiper:mySwiper="isMobile ? '' : swiperOption1"
+            class="swiperWrap"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
@@ -1223,7 +1226,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next">
+          <div v-if="!isMobile" class="swiper-button-next">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1239,10 +1242,21 @@
               />
             </svg>
           </div>
-          <div class="swiper-button-prev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" viewBox="0 0 20 32" fill="none">
-  <path d="M19 1L2 16.5556L19 31" stroke="#4570B6" stroke-width="2" stroke-linecap="round"/>
-</svg>
+          <div v-if="!isMobile" class="swiper-button-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="32"
+              viewBox="0 0 20 32"
+              fill="none"
+            >
+              <path
+                d="M19 1L2 16.5556L19 31"
+                stroke="#4570B6"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
           </div>
         </div>
       </div>
@@ -1330,32 +1344,6 @@ export default {
         ],
       ],
       isMobile: false,
-
-      swiperOption: {
-        loop: true,
-        centeredSlides: true,
-        spaceBetween: 50,
-        slidesPerView: "4",
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next", //下一页dom节点
-          prevEl: ".swiper-button-prev", //前一页dom节点
-        },
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-        on: {
-          slideChange() {
-            console.log("onSlideChangeEnd", this);
-          },
-          tap() {
-            console.log("onTap", this);
-          },
-        },
-      },
       swiperOption1: {
         slidesPerView: "auto",
         spaceBetween: 50,
@@ -1781,7 +1769,7 @@ export default {
           color: #4570b6;
 
           text-align: center;
-          font-family: "Noto Sans";
+          font-family: "Noto Sans HK";
           font-size: 30px;
           font-style: normal;
           font-weight: 400;
@@ -1790,15 +1778,16 @@ export default {
         }
       }
       & > div:nth-child(2) {
-        color: #4570b6;
-
-        text-align: center;
-        font-family: "Noto Sans";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 40px; /* 133.333% */
-        letter-spacing: 7.5px;
+        & > P {
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40px; /* 133.333% */
+          letter-spacing: 7.5px;
+        }
       }
       & > div:nth-child(3) {
         margin-top: 85px;
@@ -1820,7 +1809,7 @@ export default {
               font-family: "Noto Sans HK";
               font-size: 25px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: 400;
               line-height: 20px; /* 80% */
               letter-spacing: 8.75px;
             }
@@ -1904,18 +1893,6 @@ export default {
           line-height: 30px; /* 100% */
           letter-spacing: 7.5px;
           padding-bottom: 20px;
-          position: relative;
-        }
-        & > div:nth-child(2)::after {
-          content: "";
-          position: absolute;
-          width: 30px;
-          height: 3px;
-          border-radius: 3px;
-          background: #a6e1d6;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
         }
       }
     }
@@ -1950,7 +1927,7 @@ export default {
       font-family: "Inter";
       font-size: 18px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 40px; /* 222.222% */
       letter-spacing: 1.08px;
       & > span {
@@ -1958,7 +1935,7 @@ export default {
         font-family: "Inter";
         font-size: 28px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 40px;
         letter-spacing: 1.8px;
       }
@@ -1969,7 +1946,7 @@ export default {
       font-family: "Inter";
       font-size: 20px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       letter-spacing: 1.2px;
       padding-bottom: 35px;
@@ -1994,8 +1971,7 @@ export default {
       }
     }
   }
-  .even-style {
-  }
+
   :deep(.swiper-button-next) {
     right: -5%;
   }
@@ -2028,6 +2004,7 @@ export default {
     margin: 24px 30px;
     border-radius: 44px;
     margin-top: 80px;
+    padding-top: 25%;
 
     display: flex;
     align-items: flex-start;
@@ -2532,7 +2509,7 @@ export default {
           font-size: 18px;
           text-align: center;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 24px; /* 100% */
           letter-spacing: 5px;
           position: relative;
@@ -2547,7 +2524,7 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 20px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 30px; /* 150% */
         letter-spacing: 5px;
         & > p {
@@ -2560,7 +2537,7 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
         & > div {
-          margin-bottom: 30px;
+          margin: 0 15px 30px 15px;
           & > div:nth-child(1) {
             width: 155px;
             height: 155px;
@@ -2608,26 +2585,63 @@ export default {
     }
   }
   .smile-pro-share {
-    margin-top: 50px;
-    padding: 0 30px;
-    & > div:nth-child(2) {
-      & > a {
-        display: flex;
-        flex-direction: column;
-        & > div:nth-child(2) {
-          margin-top: 14px;
-          color: #6d6e71;
-          text-align: center;
-          font-family: "Noto Sans HK";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 10px; /* 71.429% */
-          letter-spacing: 1.4px;
+    width: 100%;
+    padding: 0 24px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>div:nth-child(odd){
+      margin-left: -12%;
+    }
+    &>div:nth-child(even){
+      margin-right: -12%;
+    }
+  }
+  .swiper-two {
+    width: 205px;
+    height: 215px;
+    margin-bottom: 22px;
+    border-radius: 30px;
+    background: #e4f6f3;
+  }
+  .swiper-two-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & > div:nth-child(1) {
+      background: url("https://static.cmereye.com/imgs/2024/04/daee7b87d3147b65.png")
+        no-repeat;
+      background-size: 100% 100%;
+      padding: 10px 0;
+      height: 170px;
+      color: #487f82;
 
-          margin-bottom: 28px;
-        }
+      text-align: center;
+      font-family: "Inter";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 222.222% */
+      & > span {
+        color: #fff;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
       }
+    }
+    & > div:nth-child(2) {
+      color: #487f82;
+      text-align: center;
+      font-family: "Inter";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.2px;
     }
   }
   .smile-pro-btn {
@@ -2650,6 +2664,7 @@ export default {
     }
   }
   .smile-pro-evaluate {
+    margin-bottom: 50px;
     position: relative;
     overflow: hidden;
     & > div {
@@ -2684,18 +2699,6 @@ export default {
           line-height: 24px; /* 100% */
           letter-spacing: 5px;
           padding-bottom: 20px;
-          position: relative;
-        }
-        & > div:nth-child(2)::after {
-          content: "";
-          position: absolute;
-          width: 30px;
-          height: 3px;
-          border-radius: 3px;
-          background: #a6e1d6;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
         }
       }
     }

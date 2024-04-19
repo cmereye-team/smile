@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>CMER<br />CLEAR-Vision<br />老花矯視</p>
+          <p>CMER<br />CLEAR-Vision<br v-if="!isMobile" />老花矯視</p>
           <p>(C-MER Lens Exchange Achieving Renewed Vision)</p>
         </div>
       </template>
@@ -34,7 +34,25 @@ export default {
     newClearVision
   },
   data() {
-    return {};
+    return {
+            isMobile: false,
+    };
+  },
+    mounted() {
+    // 获取屏幕宽度
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    });
+
+    if (window.innerWidth < 768) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   },
 };
 </script>
@@ -93,7 +111,7 @@ export default {
     justify-content: center;
     padding-left: 20px;
     & > p {
-      max-width: 110px;
+      max-width: 140px;
     }
     & > p:nth-child(1) {
       color: #fff;

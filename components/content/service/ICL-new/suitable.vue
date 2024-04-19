@@ -4,7 +4,7 @@
       class="flex justify-center md:mt-28"
       :class="[$i18n.locale == 'en' ? 'mt-56' : 'mt-10']"
     >
-      <h2 class="title-content">{{ $t("service.icl.suitable.h2") }}</h2>
+      <H2Tag :title="[$t('service.icl.suitable.h2')]" />
     </div>
     <div class="flex justify-evenly suit_box mt-20">
       <div class="flex flex-col items-center suitable">
@@ -314,7 +314,11 @@
   </div>
 </template>
 <script>
+import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
+  components: {
+    H2Tag,
+  },
   data() {
     return {};
   },

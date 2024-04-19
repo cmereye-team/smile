@@ -54,7 +54,7 @@ h2 {
     content: "";
     background: #a6e1d6;
     width: 39px;
-    height: 5px;
+    height: 8px;
     border-radius: 3px;
     position: absolute;
     left: 50%;
@@ -81,8 +81,8 @@ h2 {
   h2::after {
     content: "";
     background: #a6e1d6;
-    width: 20px;
-    height: 3px;
+    width: 37px !important;
+    height: 7px !important;
     border-radius: 3px;
     position: absolute;
     left: 50%;

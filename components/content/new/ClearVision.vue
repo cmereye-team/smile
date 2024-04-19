@@ -131,9 +131,7 @@
               </div>
               <div>術後復原快</div>
             </div>
-            <div>
-              <span>最快術後一天可如常</span><span>生活或工作</span>
-            </div>
+            <div><span>最快術後一天可如常</span><span>生活或工作</span></div>
           </div>
           <div>
             <div>
@@ -576,7 +574,11 @@ export default {
     & > div {
       margin-top: 60px;
     }
+
     & > div:nth-child(1) {
+      :deep(h2) {
+        margin-bottom: 30px;
+      }
       & > div:nth-child(2) {
         padding: 0 150px;
         color: #6d6e71;
@@ -593,6 +595,8 @@ export default {
       }
     }
     & > div:nth-child(2) {
+      margin-top: 70px;
+      margin-bottom: 180px;
       & > div:nth-child(2) {
         & > div:nth-child(1) {
           margin: 50px auto;
@@ -708,6 +712,21 @@ export default {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            & > div:nth-child(2) {
+              margin-top: 30px;
+              color: #4570b6;
+              text-align: center;
+              font-family: "Noto Sans HK";
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1.2; /* 80% */
+              letter-spacing: 8.75px;
+              height: 65px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
           }
           & > div:nth-child(2) {
             margin-top: 15px;
@@ -736,7 +755,10 @@ export default {
   }
   .clear-vision {
     & > div:nth-child(1) {
-      margin-bottom: 30px;
+      margin-top: 35px;
+      :deep(h2) {
+        margin-bottom: 55px;
+      }
       & > div:nth-child(2) {
         color: #6d6e71;
 
@@ -753,6 +775,7 @@ export default {
       }
     }
     & > div:nth-child(2) {
+      margin-top: 65px;
       margin-bottom: 150px;
       & > div:nth-child(2) {
         & > div:nth-child(1) {
@@ -803,6 +826,42 @@ export default {
             line-height: 25px; /* 178.571% */
             letter-spacing: 0.7px;
             padding: 0 14px;
+          }
+        }
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            width: 105px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        & > div:nth-child(3) {
+          & > div:nth-child(1) {
+            width: 100px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        & > div:nth-child(4) {
+          & > div:nth-child(1) {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         }
       }
@@ -886,7 +945,7 @@ export default {
               font-family: "Noto Sans HK";
               font-size: 18px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: 400;
               line-height: 20px; /* 111.111% */
               letter-spacing: 3.6px;
               display: flex;
@@ -907,14 +966,14 @@ export default {
             letter-spacing: 3px;
           }
         }
-        &>div:nth-child(4) {
-          &>div:nth-child(2){
+        & > div:nth-child(4) {
+          & > div:nth-child(2) {
             padding: 0 24px;
             letter-spacing: 10px;
           }
         }
-        &>div:nth-child(5) {
-          &>div:nth-child(2){
+        & > div:nth-child(5) {
+          & > div:nth-child(2) {
             padding: 0 16px;
           }
         }

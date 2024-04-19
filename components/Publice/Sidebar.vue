@@ -1,7 +1,7 @@
 
 <template>
   <div class="Sidebar">
-    <div>了 解 更 多 ・ 預約</div>
+    <div>了 解 更 多 ・ 預 約</div>
     <div>
       <nuxt-link to="/ophthalmicInfo/AppointForm">
         <div>

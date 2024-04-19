@@ -284,8 +284,18 @@ export default {
           }
         }
         & > div:nth-child(3) {
-              margin-top: 20px;
-            }
+          margin: 0 auto;
+          margin-top: 20px;
+          max-width: 430px;
+          color: #6d6e71;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 35px; /* 175% */
+          letter-spacing: 5px;
+        }
       }
       .listInEng {
         & > div:last-child {
@@ -443,7 +453,6 @@ export default {
               display: flex;
               justify-content: center;
             }
-            &:nth-of-type(3),
             &:nth-of-type(2) {
               margin-top: 27px;
               font-size: 15px;
@@ -451,6 +460,17 @@ export default {
               /* 200% */
               letter-spacing: 4.5px;
             }
+          }
+          & > div:nth-child(3) {
+            color: #6d6e71;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 200% */
+            letter-spacing: 4.5px;
+            padding: 0 30px;
           }
         }
 

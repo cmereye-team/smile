@@ -10,11 +10,11 @@
         </div>
         <div>
           ICL <br />
-          <span>植入式隱形眼鏡</span>
+          <span>矯視的好處</span>
         </div>
       </div>
       <div class="xtra-in-lists">
-        <h2 class="title-content">ICL矯視的好處</h2>
+        <h2 v-if="!isMobile" class="title-content">ICL矯視的好處</h2>
         <div class="lists-box">
           <div>
             <div>
@@ -79,7 +79,11 @@
               </div>
               <h3>術後復原快</h3>
             </div>
-            <div>手術以微創技術進<br class="mbShow" />行<span class="mbShow">，</span><br class="pcShow" />術後復原期短</div>
+            <div>
+              手術以微創技術進<br class="mbShow" />行<span class="mbShow"
+                >，</span
+              ><br class="pcShow" />術後復原期短
+            </div>
           </div>
           <div>
             <div>
@@ -350,7 +354,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      isMobile: false,
+    };
   },
   created() {},
   methods: {
@@ -358,6 +364,22 @@ export default {
       window.location.href =
         "https://api.whatsapp.com/send/?phone=85260610511&text=想了解SMILE XTRA角膜膠原交聯術";
     },
+  },
+  mounted() {
+    // 获取屏幕宽度
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    });
+
+    if (window.innerWidth < 768) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   },
 };
 </script>
@@ -440,7 +462,7 @@ export default {
               align-items: center;
               justify-content: center;
             }
-            & > h3{
+            & > h3 {
               margin-top: 22px;
               color: #4570b6;
               font-family: Noto Sans HK;
@@ -465,8 +487,8 @@ export default {
           }
         }
         & > div:nth-child(4) {
-          &>div:nth-child(1) {
-            &>div:nth-child(1) {
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
               height: auto;
             }
           }
@@ -522,7 +544,7 @@ export default {
       bottom: 0;
       transform: translateX(-50%);
     }
-    &::before{
+    &::before {
       content: none;
     }
   }
@@ -556,7 +578,7 @@ export default {
       &-lists {
         width: calc(100% / 3);
         flex-direction: column;
-        margin: 88px auto 65px;
+        margin: 35px auto 65px;
         padding: 0 20px;
         .listIn {
           &:first-child {
@@ -589,15 +611,16 @@ export default {
       top: 5%;
       & > div:nth-child(1) {
         margin-top: -35px;
+        margin-bottom: 10px;
       }
       & > div:nth-child(2) {
         color: #4570b6;
         text-align: center;
-        font-family: Noto Sans;
+        font-family: "Noto Sans HK";
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 35px; /* 175% */
+        line-height: 20px; /* 175% */
         letter-spacing: 5px;
         margin-top: -20px;
         span {
@@ -627,7 +650,7 @@ export default {
             font-family: Noto Sans HK;
             font-size: 18px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             line-height: 20px; /* 111.111% */
             letter-spacing: 3.6px;
             text-align: center;

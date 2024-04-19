@@ -1,7 +1,7 @@
 <template>
   <div class="page_container suitable_box">
-    <div class="flex justify-center md:mt-20 mt-10">
-      <h2 v-html="$t('service.icl.share.h2')" class="title-content"></h2>
+    <div class="flex justify-center md:mt-20 mt-10 share-suitable_box">
+      <H2Tag :title="['更多ICL植入式','隱形眼鏡真實個案分享']" class="title-content" />
     </div>
     <div class="share-img">
       <a href="https://www.youtube.com/watch?v=B12IjJ3tFHE" target="_blank">
@@ -127,12 +127,16 @@
   </div>
 </template>
 <script>
+import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
+  components:{
+    H2Tag
+  },
   data() {
     return {
       swiperOption1: {
         slidesPerView: "auto",
-        spaceBetween: 10,
+        spaceBetween: 40,
         slidesPerView: "3",
         navigation: {
           nextEl: ".swiper-button-next",
@@ -182,11 +186,11 @@ h2 {
   }
   .swiper-button-next {
     background-image: url("https://static.cmereye.com/imgs/2023/11/a7c0239f4c5321f8.png");
-    right: -50px;
+    right: -70px;
   }
   .swiper-button-prev {
     background-image: url("https://static.cmereye.com/imgs/2023/11/4333213c7ff5339b.png");
-    left: -50px;
+    left: -70px;
   }
 
   .swiper-wrapper {
@@ -197,7 +201,7 @@ h2 {
     }
   }
   .swiper-pc-share {
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 55px auto 85px;
     position: relative;
   }
@@ -336,12 +340,13 @@ h2 {
     padding-bottom: 15px;
     color: #4570b6;
     text-align: center;
-    font-family: Noto Sans HK;
+    font-family: 'Noto Sans HK';
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 23.305px; /* 116.525% */
     letter-spacing: 5px;
+    margin-bottom: 0 !important;
     &::after {
       content: "";
       background: #a6e1d6;
@@ -354,6 +359,12 @@ h2 {
       transform: translateX(-50%);
     }
   }
+  .suitable_box{
+    &>div:nth-child(1){
+      margin-bottom: 25px !important;
+    }
+  }
+
   .share-img {
     margin-bottom: 30px;
   }

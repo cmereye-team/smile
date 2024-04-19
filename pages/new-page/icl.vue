@@ -257,6 +257,12 @@ export default {
     letter-spacing: 7.5px;
   }
 }
+:deep(.mt-20){
+  margin-top: 0;
+}
+:deep(.share-img){
+  margin-top: 0;
+}
 .characteristic{
   width: 100%;
   max-width: 1920px;
@@ -324,7 +330,7 @@ export default {
           font-family: "Noto Sans HK";
           font-size: 25px;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 400;
           line-height: 30px; /* 120% */
           letter-spacing: 8.75px;
           height: 90px;
@@ -425,7 +431,7 @@ export default {
           }
           h4{
             font-size: 18px;
-            font-weight: 700;
+            font-weight: 400;
             line-height: 20px; /* 111.111% */
             letter-spacing: 3.6px;
             width: 114px;
@@ -458,6 +464,12 @@ export default {
       line-height: 20px; /* 100% */
       letter-spacing: 6px;
     }
+  }
+  :deep(.film-top){
+    margin-top: 40px;
+  }
+  :deep(.title-content){
+    font-weight: 400;
   }
 }
 </style>

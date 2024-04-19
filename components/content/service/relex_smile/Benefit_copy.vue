@@ -334,8 +334,10 @@ export default {
       }
     }
     &-in {
-      width: calc(100% / 3);
-      padding: 0 3.846vw;
+      // width: calc(100% / 3);
+      // padding: 0 3.846vw;
+      width: 100vw;
+      padding: 0 25px;
       .title {
         font-size: 20px;
         line-height: 23.305px; /* 116.525% */
@@ -349,9 +351,13 @@ export default {
         }
       }
       &-lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 40px 20px;
         .listIn {
           width: 39.75vw;
-          margin-bottom: 23px;
+          margin-bottom: 0;
           &-t {
             height: 39.75vw;
             width: 39.75vw;
@@ -373,6 +379,11 @@ export default {
             line-height: 4.615vw; /* 120% */
             letter-spacing: 3px;
             margin: 9px auto 0;
+          }
+        }
+        .listIn:nth-child(1){
+          &>div:nth-child(2){
+            padding: 0 20px;
           }
         }
       }
