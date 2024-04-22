@@ -204,6 +204,12 @@ export const $router = [
     title: 'icl',
     component: resolve('pages/new-page/icl.vue')
   },
+  {
+    path: '/new-fee',
+    name: 'new-page/icl',
+    title: 'icl',
+    component: resolve('pages/new-page/fee.vue')
+  },
 ]
 
 
