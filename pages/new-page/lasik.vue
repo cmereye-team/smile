@@ -20,10 +20,11 @@
       <div class="principle-top">
         <!-- v-if="!isMobile" -->
         <img
-          src="https://static.cmereye.com/imgs/2024/04/a91ceb907e18b158.png"
+          src="../../asset/image/service/LASIK/lasik-teyory.svg"
           alt="LASIK激光矯視原理"
           title="LASIK激光矯視原理"
         />
+        
         <h3>
           LASIK<br />
           激光矯視原理
