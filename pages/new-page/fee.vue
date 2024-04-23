@@ -1686,7 +1686,9 @@
       </div>
     </div>
     <div v-if="isMobile" class="fee-table-container">
-      <a target="_blank" href="https://api.whatsapp.com/send/?phone=85260610511">立即預約</a>
+      <a target="_blank" href="https://api.whatsapp.com/send/?phone=85260610511"
+        >立即預約</a
+      >
     </div>
     <businessHours />
     <Footer />
@@ -2053,15 +2055,20 @@ export default {
         padding: 25px 0 20px;
       }
     }
+    & > div:nth-child(2) {
+      padding: 0 !important;
+    }
     & > div:nth-child(2),
     & > div:nth-child(4) {
       background: #eff5ff;
       & > div {
         padding: 30px 0 18px;
-        border-right: #cbd2de 2px solid;
         color: #4570b6;
       }
       & > div:nth-child(2) {
+        border-left: #cbd2de 2px solid;
+      }
+      & > div:nth-child(1) {
         border: none;
       }
     }
