@@ -149,6 +149,10 @@ export default {
           font-weight: 500;
           line-height: 40px; /* 250% */
           letter-spacing: 0.8px;
+          &>div{
+            line-height: 1;
+            padding: 10px 0;
+          }
         }
         & > div:nth-child(3) {
           color: #b64545;
@@ -221,6 +225,7 @@ export default {
         font-style: normal;
         font-weight: 700;
         letter-spacing: 1px;
+        padding: 0 !important;
         & > div:nth-child(1) {
           padding: 8px 0;
           background: #8ba9da;
@@ -230,6 +235,10 @@ export default {
           padding: 8px 0;
           background: #8cdbcc;
         }
+      }
+      & > div:nth-child(2),
+      & > div:nth-child(4) {
+        padding: 0 !important;
       }
       & > div:nth-child(2),
       & > div:nth-child(4) {
@@ -244,6 +253,7 @@ export default {
         letter-spacing: 0.8px;
         & > div {
           padding: 8px 0;
+          line-height: 40px; /* 250% */
         }
         & > div:nth-child(1) {
           border-right: 2px solid #cbd2de;
@@ -252,14 +262,14 @@ export default {
 
       & > div:nth-child(3) {
         background: #fff;
-        padding: 8px 0;
+        padding: 10px 0;
         color: #b64545;
         text-align: center;
         font-family: "Noto Sans HK";
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
-        line-height: 40px; /* 266.667% */
+        line-height: 40px !important; /* 266.667% */
         letter-spacing: 0.75px;
       }
       & > div:nth-child(5) {
