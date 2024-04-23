@@ -19,12 +19,13 @@
     <div class="principle">
       <div class="principle-top">
         <!-- v-if="!isMobile" -->
-        <img
-          src="../../asset/image/service/LASIK/lasik-teyory.svg"
-          alt="LASIK激光矯視原理"
-          title="LASIK激光矯視原理"
-        />
-        
+        <div>
+          <img
+            src="../../asset/image/service/LASIK/lasik-teyory.svg"
+            alt="LASIK激光矯視原理"
+            title="LASIK激光矯視原理"
+          />
+        </div>
         <h3>
           LASIK<br />
           激光矯視原理
@@ -255,6 +256,18 @@ export default {
     font-weight: 300;
     line-height: 35px; /* 175% */
     letter-spacing: 6px;
+  }
+}
+.principle-top {
+  & > div:nth-child(1) {
+    width: 108px;
+    height: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > img {
+      width: 100%;
+    }
   }
 }
 .principle {
@@ -545,6 +558,18 @@ export default {
       letter-spacing: 4.5px;
       margin-top: 28px;
       padding: 0 25px;
+    }
+  }
+  .principle-top {
+    & > div:nth-child(1) {
+      width: 85px;
+      height: 85px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > img {
+        width: 100%;
+      }
     }
   }
   .principle {

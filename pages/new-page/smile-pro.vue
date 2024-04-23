@@ -1205,25 +1205,6 @@
                   <div class="name-title">阿聲, 咖啡師</div>
                 </div>
               </div>
-              <div class="swiper-slide swiper-two">
-                <div class="swiper-two-box">
-                  <div class="speech">
-                    我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
-                    ><br />會推薦比朋友
-                  </div>
-                  <div class="name-title">Vivien, 家庭主婦</div>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-two">
-                <div class="swiper-two-box">
-                  <div class="speech">
-                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                      >好細心</span
-                    >講解同鼓勵我，<br />令我好安心
-                  </div>
-                  <div class="name-title">Macy, 文員</div>
-                </div>
-              </div>
             </div>
           </div>
           <div v-if="!isMobile" class="swiper-button-next">
@@ -1910,6 +1891,7 @@ export default {
     height: 315px;
     border-radius: 30px;
     background: #e4f6f3;
+    margin: 0 20px;
   }
   .swiper-two-box {
     display: flex;
@@ -2475,7 +2457,7 @@ export default {
   .smile-pro-trait {
     position: relative;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 140px;
     & > div {
       background: #c7e8ef33;
       border-radius: 50% 50% 0 0;

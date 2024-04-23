@@ -14,7 +14,7 @@
       <H2Tag :title="['收費詳情']" />
       <div class="fee-tag">
         <div @click="scrollToSection('tag-smile')" href="#" class="fee-smile">
-          SMILE 微笑激光矯視 {{ isMobile }}
+          SMILE 微笑激光矯視
         </div>
         <div
           @click="scrollToSection('tag-smile-pro')"
@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="fee-context" id="tag-smile">
-      <H2Tag :title="['SMILE 微笑激光矯視']" />
+      <H2Tag :title="['SMILE 微笑激光矯視價錢']" />
       <div>
         <p>本診所價目清晰，絕無其他額外收費</p>
         <div v-if="!isMobile">
@@ -465,7 +465,7 @@
       </FeeSetMeal>
     </div>
     <div class="fee-context" id="tag-smile-pro">
-      <H2Tag :title="['SMILE Pro微笑激光矯視']" />
+      <H2Tag :title="['SMILE Pro微笑激光矯視價錢']" />
       <div>
         <p>本診所價目清晰，絕無其他額外收費</p>
         <div v-if="!isMobile">
@@ -954,7 +954,7 @@
       </FeeSetMeal>
     </div>
     <div class="fee-context" id="tag-icl">
-      <H2Tag :title="['ICL植入式隱形眼鏡']" />
+      <H2Tag :title="['ICL植入式隱形眼鏡價錢']" />
       <div>
         <p>本診所價目清晰，絕無其他額外收費</p>
         <div class="fee-context-table3" v-if="!isMobile">
@@ -1657,7 +1657,7 @@
       </FeeSetMeal>
     </div>
     <div class="fee-context" id="tag-clear-vision">
-      <H2Tag :title="['Clear-Vision(老花手術)']" />
+      <H2Tag :title="['Clear-Vision(老花手術)價錢']" />
       <div>
         <p>本診所價目清晰，絕無其他額外收費</p>
         <div v-if="!isMobile" class="fee-context-table3 fee-context-table4">

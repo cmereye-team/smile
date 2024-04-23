@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="xtra-in-lists">
-        <h2 v-if="!isMobile" class="title-content">ICL矯視的好處</h2>
+        <h2 v-if="isTitleShow" class="title-content">ICL矯視的好處</h2>
         <div class="lists-box">
           <div>
             <div>
@@ -356,9 +356,17 @@ export default {
   data() {
     return {
       isMobile: false,
+      isTitleShow:false,
     };
   },
-  created() {},
+  created() {
+    // 获取当前路由
+    console.log(this.$route,'router');
+    if (this.$route.path == 'icl') {
+      this.isTitleShow = false
+    }
+    
+  },
   methods: {
     goWhatsapp() {
       window.location.href =

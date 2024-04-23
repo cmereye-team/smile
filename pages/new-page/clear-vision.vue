@@ -72,6 +72,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding-left: 70px;
+    padding-top: 10%;
     & > p:nth-child(1) {
       color: #fff;
       font-family: "Noto Sans HK";

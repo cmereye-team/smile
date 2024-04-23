@@ -10,7 +10,6 @@ export default {
   props: ["title"],
   // 获取传入的数据
   created() {
-    console.log(this.title);
   },
   // 计算属性
   methods: {},
