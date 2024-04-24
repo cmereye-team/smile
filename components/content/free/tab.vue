@@ -17,7 +17,7 @@
       </div>
     </div>
     <div v-if="currentTitleIndex === 0" class="flex flex-col items-center">
-      <div class="md:mt-10" id="smile">
+      <div class="md:mt-10" id="smile-tag">
         <div>
           <div class="pcShow" style="min-height: 140px"></div>
           <div class="mbShow" style="min-height: 110px"></div>
@@ -156,7 +156,7 @@
         <span>{{ $t("home.navbar") }}</span>
       </div>
 
-      <div class="md:mt-10" id="smilePro">
+      <div class="md:mt-10" id="smilePro-tag">
         <div>
           <div class="pcShow" style="min-height: 140px"></div>
           <div class="mbShow" style="min-height: 110px"></div>
@@ -306,7 +306,7 @@
         <span>{{ $t("home.navbar") }}</span>
       </div>
 
-      <div class="md:mt-10" id="ICL">
+      <div class="md:mt-10" id="ICL-tag">
         <div>
           <div class="pcShow" style="min-height: 140px"></div>
           <div class="mbShow" style="min-height: 110px"></div>
@@ -558,7 +558,7 @@
         <span>{{ $t("home.navbar") }}</span>
       </div>
       <!-- LASIK 激光矯視 -->
-      <div class="md:mt-10" id="LASIK">
+      <div class="md:mt-10" id="LASIK-tag">
         <div>
           <div class="pcShow" style="min-height: 140px"></div>
           <div class="mbShow" style="min-height: 110px"></div>
@@ -695,7 +695,7 @@
       <div class="pcShow tabBtn" @click="toWhatsapp">
         <span>{{ $t("home.navbar") }}</span>
       </div>
-      <div class="md:mt-10" id="Clear-Vision">
+      <div class="md:mt-10" id="Clear-Vision-tag">
         <div>
           <div class="pcShow" style="min-height: 140px"></div>
           <div class="mbShow" style="min-height: 110px"></div>
@@ -1207,15 +1207,15 @@ export default {
         lang_sign = "/";
       }
       if (index === 0) {
-        window.location.href = `${lang_sign}charge-detail#smile`;
+        window.location.href = `${lang_sign}fee#smile-tag`;
       } else if (index === 1) {
-        window.location.href = `${lang_sign}charge-detail#smilePro`;
+        window.location.href = `${lang_sign}fee#smilePro-tag`;
       } else if (index === 2) {
-        window.location.href = `${lang_sign}charge-detail#ICL`;
+        window.location.href = `${lang_sign}fee#ICL-tag`;
       } else if (index === 3) {
-        window.location.href = `${lang_sign}charge-detail#LASIK`;
+        window.location.href = `${lang_sign}fee#LASIK-tag`;
       } else {
-        window.location.href = `${lang_sign}charge-detail#Clear-Vision`;
+        window.location.href = `${lang_sign}fee#Clear-Vision-tag`;
       }
     },
     //判断是否打开
