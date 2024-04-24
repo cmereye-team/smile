@@ -1,7 +1,10 @@
 <template>
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-20 mt-10 share-suitable_box">
-      <H2Tag :title="['更多ICL植入式','隱形眼鏡真實個案分享']" class="title-content" />
+      <H2Tag
+        :title="['更多ICL植入式', '隱形眼鏡真實個案分享']"
+        class="title-content"
+      />
     </div>
     <div class="share-img">
       <a href="https://www.youtube.com/watch?v=B12IjJ3tFHE" target="_blank">
@@ -129,8 +132,8 @@
 <script>
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
-  components:{
-    H2Tag
+  components: {
+    H2Tag,
   },
   data() {
     return {
@@ -211,6 +214,14 @@ h2 {
       width: 100%;
     }
   }
+  :deep(.title-content) {
+    display: flex;
+    flex-direction: column;
+    span {
+      line-height: 50px; /* 166.667% */
+      letter-spacing: 7.5px;
+    }
+  }
   .title-content {
     color: #4570b6;
     font-size: 30px;
@@ -237,7 +248,7 @@ h2 {
     }
   }
   .share-img {
-    margin: 70px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,7 +351,7 @@ h2 {
     padding-bottom: 15px;
     color: #4570b6;
     text-align: center;
-    font-family: 'Noto Sans HK';
+    font-family: "Noto Sans HK";
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -359,8 +370,8 @@ h2 {
       transform: translateX(-50%);
     }
   }
-  .suitable_box{
-    &>div:nth-child(1){
+  .suitable_box {
+    & > div:nth-child(1) {
       margin-bottom: 25px !important;
     }
   }

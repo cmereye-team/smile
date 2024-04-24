@@ -40,7 +40,7 @@
             <h4>{{item.title}}</h4>
           </div>
           <div class="text">
-            <p>{{item.text}}</p>
+            <p><span v-for="el,index in item.text" :key="index">{{el}}</span></p>
           </div>
         </div>
       </div>
@@ -90,37 +90,37 @@ export default {
         {
           img: 'https://static.cmereye.com/imgs/2024/04/e8b1b4b4e7337083.png',
           title: '紫外線防護',
-          text: '鏡片有紫外線防護功能'
+          text: ['鏡片有紫外線','防護功能']
         },
         {
           img: 'https://static.cmereye.com/imgs/2024/04/b3fc1aae883e10c5.png',
           title: '與時俱進的靈活度',
-          text: 'ICL鏡片既可永久存放眼內亦可還原'
+          text: ['ICL鏡片既可永久','存放眼內亦可還原']
         },
         {
           img: 'https://static.cmereye.com/imgs/2024/04/9c2e5ca8b04dfc42.png',
           title: '手術與恢復皆快速',
-          text: '手術時間短復原期短，手術過程最快只需20-30分鐘'
+          text: ['手術時間短','復原期短，手術過程','最快只需20-30分鐘']
         },
         {
           img: 'https://static.cmereye.com/imgs/2024/04/d6dc807847e807c6.png',
           title: '柔軟服貼',
-          text: '鏡片柔軟靈活易於植入'
+          text: ['鏡片柔軟靈活','易於植入']
         },
         {
           img: 'https://static.cmereye.com/imgs/2024/04/78bb710a2eee5ce3.png',
           title: '生物相容性',
-          text: 'ICL鏡片由含有膠原蛋白材質製成，與眼球互相兼容'
+          text: ['ICL鏡片由含有','膠原蛋白材質製成，','與眼球互相兼容']
         },
         {
           img: 'https://static.cmereye.com/imgs/2024/04/bb006854352668ac.png',
           title: '可取出',
-          text: '可按需要選擇取出鏡片'
+          text: ['可按需要','選擇取出鏡片']
         },
         {
           img: 'https://static.cmereye.com/imgs/2024/04/4fe5d9f2a1065ba4.png',
           title: '夜間視力',
-          text: '提供絕佳夜間視力'
+          text: ['提供絕佳夜間視力']
         }
       ],
       benefits:[
@@ -203,6 +203,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding-left: 70px;
+    padding-bottom: 7%;
     & > p:nth-child(1) {
       color: #fff;
       font-family: "Noto Sans HK";
@@ -347,7 +348,11 @@ export default {
         line-height: 35px; /* 152.174% */
         letter-spacing: 6.9px;
         margin-top: 20px;
-        width: 240px;
+        p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
       }
     }
   }
@@ -445,6 +450,9 @@ export default {
           letter-spacing: 2.25px;
           width: 90%;
           max-width: 130px;
+          &>P{
+            display: inline-block;
+          }
         }
         &:last-child{
           .text{

@@ -1588,6 +1588,7 @@ export default {
           line-height: 30px;
           display: flex;
           align-items: center;
+          letter-spacing: 3px;
         }
       }
       & > div:nth-child(1) {

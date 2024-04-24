@@ -416,6 +416,7 @@ h2 {
         text-align: center;
         letter-spacing: 0.1em;
         color: #6d6e71;
+        letter-spacing: 5px;
       }
     }
   }
