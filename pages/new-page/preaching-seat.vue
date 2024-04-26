@@ -1,0 +1,571 @@
+<template>
+  <div class="preaching-seat">
+    <Head />
+    <Banner class="banner-box">
+      <template #banner>
+        <div class="banner-img">
+          <p>講座</p>
+          <p>Lecture</p>
+        </div>
+      </template>
+    </Banner>
+    <div class="lecture-box">
+      <div class="lecture-title">
+        <div>
+          <div class="title-img">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="38"
+                height="68"
+                viewBox="0 0 38 68"
+                fill="none"
+              >
+                <path
+                  d="M19.2806 16.6316C23.321 16.6316 26.5964 13.3562 26.5964 9.31578C26.5964 5.27539 23.321 2 19.2806 2C15.2402 2 11.9648 5.27539 11.9648 9.31578C11.9648 13.3562 15.2402 16.6316 19.2806 16.6316Z"
+                  stroke="#A6E1D6"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.31445 30.3962V24.7659C8.31445 23.6808 8.74551 22.6401 9.51281 21.8728C10.2801 21.1055 11.3208 20.6744 12.4059 20.6744H25.9749C27.06 20.6744 28.1007 21.1055 28.868 21.8728C29.6353 22.6401 30.0664 23.6808 30.0664 24.7659V30.1642"
+                  stroke="#A6E1D6"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.2412 20.9306L19.1968 29.0403L21.8105 20.7596"
+                  stroke="#A6E1D6"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M25.6934 65.7501H12.6984L5.74902 38.8441H32.6428L25.6934 65.7501Z"
+                  stroke="#4570B6"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M36.3927 30.3967H2V38.8483H36.3927V30.3967Z"
+                  stroke="#4570B6"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div>講座</div>
+          </div>
+          <div class="lecture-content">
+            <div>
+              <p>SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，</p>
+              <p>CMER CLEAR-VISION 老花講座！</p>
+            </div>
+            <div>
+              <p>中環診所：中環畢打街1-3號中建大廈1512室</p>
+              <p>旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室</p>
+              <p>旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室</p>
+              <p>
+                尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室
+              </p>
+            </div>
+            <div class="lecture-form">
+              <el-form ref="form" :model="form" label-width="180px">
+                <el-form-item label="選擇地點">
+                  <el-select
+                    v-model="form.place"
+                    placeholder="選擇地點"
+                    @change="changeLocation"
+                    clearable
+                  >
+                    <el-option
+                      label="Smile Pro 講座-尖沙咀"
+                      value="smilerProTsui"
+                    ></el-option>
+                    <el-option
+                      label="Smile講座-中環"
+                      value="smileCentral"
+                    ></el-option>
+                    <el-option
+                      label="Smile講座-旺角"
+                      value="smileMongKok"
+                    ></el-option>
+                    <el-option
+                      label="老花講座-中環"
+                      value="clearVisionCentral"
+                    ></el-option>
+                    <el-option
+                      label="老花講座-旺角"
+                      value="clearVisionMongKok"
+                    ></el-option>
+                  </el-select>
+                </el-form-item>
+                <el-form-item label="预約日期" v-if="form.place !== ''">
+                  <el-date-picker
+                    v-model="form.data1"
+                    type="date"
+                    :picker-options="startPickerOptions"
+                    placeholder="预約日期"
+                    format=" MM 月 dd 日 yyyy 年"
+                    value-format="timestamp"
+                    clearable
+                  >
+                  </el-date-picker>
+                </el-form-item>
+              </el-form>
+              <p v-if="form.place && form.data1" class="form-data">
+                您正預約在
+                <span>{{ nowDayTime }}{{ morningOrAfternoon }}</span> 的
+                <span>{{ getName(form.place).nowDay }}</span> 全飛秒SMILE
+                微笑激光矯視講座請填寫以下表格:
+              </p>
+              <el-form
+                ref="form"
+                :model="form1"
+                label-width="180px"
+                v-if="form.place && form.data1"
+              >
+                <el-form-item label="預留位置：">
+                  <el-select v-model="form1.number" placeholder="0" clearable>
+                    <el-option
+                      v-for="(option, i) in 10"
+                      :label="option"
+                      :value="option"
+                      :key="i"
+                    ></el-option>
+                  </el-select>
+                </el-form-item>
+
+                <el-form-item label="性別：">
+                  <el-select v-model="form1.sex" placeholder="---" clearable>
+                    <el-option label="---" value="null"></el-option>
+                    <el-option label="女" value="0"></el-option>
+                    <el-option label="男" value="1"></el-option>
+                  </el-select>
+                </el-form-item>
+                <el-form-item label="年齡：">
+                  <el-select v-model="form1.age" placeholder="請選挥" clearable>
+                    <el-option
+                      label="17歲或以下"
+                      value="17歲或以下"
+                    ></el-option>
+                    <el-option label="18-25歲" value="18-25歲"></el-option>
+                    <el-option label="26-35歲" value="26-35歲"></el-option>
+                    <el-option label="36-45歲" value="36-45歲"></el-option>
+                    <el-option label="46-55歲" value="46-55歲"></el-option>
+                    <el-option
+                      label="56歲或以上"
+                      value="56歲或以上"
+                    ></el-option>
+                  </el-select>
+                </el-form-item>
+                <el-form-item label="聨络電話：">
+                  <el-input
+                    placeholder="請填寫"
+                    type="number"
+                    v-model="form1.tel"
+                    clearable
+                  ></el-input>
+                </el-form-item>
+                <el-form-item label="電鄂地址：">
+                  <el-input
+                    placeholder="請填寫"
+                    type="email"
+                    v-model="form1.email"
+                    clearable
+                  ></el-input>
+                </el-form-item>
+                <el-form-item label="從何得知：">
+                  <el-select v-model="form1.resource" placeholder="請選挥">
+                    <el-option
+                      label="Google搜尋引擎"
+                      value="Google搜尋引擎"
+                    ></el-option>
+                    <el-option
+                      label="Yahoo搜尋引擎"
+                      value="Yahoo搜尋引擎"
+                    ></el-option>
+                    <el-option label="Facebook" value="Facebook"></el-option>
+                    <el-option label="Instagram" value="Instagram"></el-option>
+                    <el-option label="YouTube" value="YouTube"></el-option>
+                    <el-option label="討論區" value="討論區"></el-option>
+                    <el-option label="報章" value="報章"></el-option>
+                    <el-option label="診所單張" value="診所單張"></el-option>
+                    <el-option label="親友介紹" value="親友介紹"></el-option>
+                    <el-option label="員工介紹" value="員工介紹"></el-option>
+                    <el-option label="其他" value="其他"></el-option>
+                  </el-select>
+                </el-form-item>
+                <el-form-item>
+                  <el-button type="primary" @click="onSubmit"
+                    >立即创建</el-button
+                  >
+                </el-form-item>
+              </el-form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lecture-image">
+        <img
+          src="https://static.cmereye.com/imgs/2024/04/42da8402ce3070f6.png"
+          alt="4-5月份"
+        />
+      </div>
+    </div>
+    <businessHours />
+    <Footer />
+    <footers />
+  </div>
+</template>
+<script>
+import Head from "@/components/Publice/Head.vue";
+import Footer from "@/components/commom/new_foot/Footer.vue";
+import businessHours from "@/components/commom/business/business-hours.vue";
+import Banner from "@/components/Publice/Banner.vue";
+import footers from "@/components/commom/new_foot/footers.vue";
+import H2Tag from "@/components/Publice/H2Tag.vue";
+export default {
+  components: {
+    Head,
+    Footer,
+    businessHours,
+    footers,
+    Banner,
+    H2Tag,
+  },
+  data() {
+    return {
+      form: {
+        place: "",
+        data1: "",
+      },
+      form1: {
+        number: "",
+        sex: "",
+        age: "",
+        tel: "",
+        email: "",
+        resource: "",
+      },
+      morningOrAfternoon: "",
+      nowDayTime: "",
+      allowedDates: [],
+      startPickerOptions: {
+        disabledDate: (time) => this.disabledDate(time),
+      },
+    };
+  },
+  methods: {
+    onSubmit() {
+      console.log({...this.form,...this.form1});
+      console.log("submit!");
+    },
+    disabledDate(time) {
+      const year = time.getFullYear();
+      const month = String(time.getMonth() + 1).padStart(2, "0");
+      const day = String(time.getDate()).padStart(2, "0");
+      const ym = `${year}-${month}-${day}`;
+      //把所有年月和需要建立的月份匹配，把匹配上的返回出去，让月份选择器可选
+      return !this.allowedDates.includes(ym);
+    },
+    changeLocation() {
+      //  在选定地址的时候 给allowedDates 赋值  数组为当前月份可选择日期
+      switch (this.form.place) {
+        case "smilerProTsui":
+          this.allowedDates = ["2024-05-04", "2024-05-18"];
+          break;
+        case "smileCentral":
+          this.allowedDates = [
+            "2024-05-08",
+            "2024-05-11",
+            "2024-05-22",
+            "2024-05-25",
+            "2024-05-29",
+          ];
+          break;
+        case "smileMongKok":
+          this.allowedDates = [
+            "2024-05-04",
+            "2024-05-09",
+            "2024-05-11",
+            "2024-05-14",
+            "2024-05-18",
+            "2024-05-23",
+            "2024-05-25",
+            "2024-05-28",
+          ];
+          break;
+        case "clearVisionCentral":
+          this.allowedDates = [];
+          break;
+        case "clearVisionMongKok":
+          this.allowedDates = [
+            "2024-05-02",
+            "2024-05-07",
+            "2024-05-16",
+            "2024-05-21",
+            "2024-05-30",
+          ];
+          break;
+        default:
+          break;
+      }
+    },
+    timestampToWeekday(timestamp) {
+      const date = new Date(timestamp); // 时间戳通常是秒为单位的，而 Date 构造函数需要毫秒为单位的参数
+      const dayOfWeek = date.getDay();
+      // 获取当前年月日的字符串表示
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      // 根据星期几返回对应的中文表示
+      const weekdays = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+      // 返回格式化后的字符串
+      const nowDay = `${month}月${day}日${year}年`;
+      const weekday = weekdays[dayOfWeek];
+      return {
+        nowDay,
+        weekday,
+      };
+    },
+    getName(name) {
+      const { nowDay, weekday } = this.timestampToWeekday(this.form.data1);
+      this.nowDayTime = nowDay
+      switch (name) {
+        case "smilerProTsui":
+          if (weekday == "周六") {
+            this.morningOrAfternoon = "2:30 下午";
+          }
+          return "Smile Pro 講座-尖沙咀";
+        case "smileCentral":
+          if (weekday == "周三") {
+            this.morningOrAfternoon = "1:30 下午";
+          } else if (weekday == "周六") {
+            this.morningOrAfternoon = "3:30 下午";
+          }
+          return "Smile講座-中環";
+        case "smileMongKok":
+          this.morningOrAfternoon = "2:30 下午";
+          if (weekday == "周二") {
+            this.morningOrAfternoon = "1:30 下午";
+          } else if (weekday == "周四") {
+            this.morningOrAfternoon = "6:30 下午";
+          } else if (weekday == "周六") {
+            this.morningOrAfternoon = "2:30 下午";
+          }
+          return "Smile講座-旺角";
+        case "clearVisionCentral":
+          this.morningOrAfternoon = "";
+          return "老花講座-中環";
+        case "clearVisionMongKok":
+          if (weekday == "周二") {
+            this.morningOrAfternoon = "1:30 下午";
+          } else if (weekday == "周四") {
+            this.morningOrAfternoon = "6:30 下午";
+          }
+          return "老花講座-旺角";
+        default:
+          break;
+      }
+    },
+    formatDate(time) {
+      const year = date.getFullYear();
+      const month = String(time.getMonth() + 1).padStart(2, "0");
+      const day = String(time.getDate()).padStart(2, "0");
+      return `${year}-${month}-${day}`;
+    },
+  },
+  mounted() {},
+};
+</script>
+<style lang="scss" scoped>
+@media screen and (min-width: 768px) {
+  .banner-img {
+    background: url("https://static.cmereye.com/imgs/2024/04/c26ba48972f2997c.png")
+      no-repeat;
+    background-size: 100% 100%;
+    height: 616px;
+    width: 100%;
+    border-radius: 55px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    margin-bottom: 30px;
+    & > p:nth-child(1) {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50.75px; /* 169.167% */
+      letter-spacing: 7.5px;
+    }
+    & > p:nth-child(2) {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 43.5px; /* 290% */
+      letter-spacing: 0.45px;
+    }
+  }
+  .preaching-seat {
+    overflow: hidden;
+  }
+  .lecture-box {
+    margin-top: 175px;
+  }
+  .lecture-title {
+    background: url("https://static.cmereye.com/imgs/2024/04/03634579600959fb.png")
+      no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: auto;
+    padding: 0 0 85px;
+    position: relative;
+    & > div {
+      max-width: 1270px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .title-img {
+    // position: absolute;
+    // top: -25%;
+    // left: 50%;
+    // transform: translateX(-50%);
+    transform: translateY(-50%);
+    width: 307px;
+    height: 307px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .lecture-content {
+    margin-top: -5%;
+    & > div:nth-child(1),
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    & > div:nth-child(1) {
+      p {
+        color: #4570b6;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px; /* 225% */
+        letter-spacing: 6px;
+      }
+    }
+    & > div:nth-child(2) {
+      margin-top: 20px;
+      P {
+        color: #6d6e71;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 45px; /* 225% */
+        letter-spacing: 6px;
+      }
+    }
+  }
+  .lecture-form {
+    margin: 50px auto 0;
+  }
+  :deep(.el-form) {
+    max-width: 870px;
+    margin: 0 auto;
+  }
+  .lecture-image {
+    display: flex;
+    justify-content: center;
+    margin: 85px 0;
+    & > img {
+      width: 952px;
+    }
+  }
+  .form-data {
+    color: #6d6e71;
+    font-family: "Noto Sans HK";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 45px;
+    letter-spacing: 6px;
+    max-width: 870px;
+    margin: 55px auto;
+    border: 1px dashed #dadada;
+    border-right: none;
+    border-left: none;
+    padding: 10px 0;
+    span {
+      color: #4570b6;
+      font-weight: 700;
+    }
+  }
+  :deep(.el-select) {
+    width: 100%;
+  }
+  :deep(.el-date-editor) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-img {
+    background: url("https://static.cmereye.com/imgs/2024/04/d226e2e185d53c48.png")
+      no-repeat;
+    background-size: 100% 100%;
+    height: 330px;
+    margin: 24px 30px;
+    border-radius: 44px;
+    margin-top: 80px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    & > p {
+      max-width: 150px;
+    }
+    & > p:nth-child(1) {
+      color: #fff;
+      font-family: "Noto Sans HK";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px; /* 169.167% */
+      letter-spacing: 3.5px;
+    }
+    & > p:nth-child(2) {
+      color: #fff;
+      font-family: "Noto Sans HK";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px; /* 290% */
+      letter-spacing: 0.3px;
+    }
+  }
+}
+</style>

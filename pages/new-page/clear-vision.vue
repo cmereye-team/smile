@@ -22,7 +22,7 @@ import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import footers from "@/components/commom/new_foot/footers.vue";
 
-import newClearVision from '../../components/content/new/ClearVision.vue'
+import newClearVision from '@/components/content/new/ClearVision.vue'
 
 export default {
   components: {
