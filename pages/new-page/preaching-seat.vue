@@ -94,10 +94,10 @@
                       label="Smile講座-旺角"
                       value="smileMongKok"
                     ></el-option>
-                    <el-option
+                    <!-- <el-option
                       label="老花講座-中環"
                       value="clearVisionCentral"
-                    ></el-option>
+                    ></el-option> -->
                     <el-option
                       label="老花講座-旺角"
                       value="clearVisionMongKok"
@@ -108,6 +108,7 @@
                   <el-date-picker
                     v-model="form.data1"
                     type="date"
+                    popper-class="date-picker-class"
                     :picker-options="startPickerOptions"
                     placeholder="预約日期"
                     format=" MM 月 dd 日 yyyy 年"
@@ -119,17 +120,18 @@
               </el-form>
               <p v-if="form.place && form.data1" class="form-data">
                 您正預約在
-                <span>{{ nowDayTime }}{{ morningOrAfternoon }}</span> 的
-                <span>{{ getName(form.place).nowDay }}</span> 全飛秒SMILE
+                <span>{{ nowDayTime }} {{ morningOrAfternoon }}</span> 的
+                <span>{{ getName(form.place) }}</span> 全飛秒SMILE
                 微笑激光矯視講座請填寫以下表格:
               </p>
               <el-form
                 ref="form"
                 :model="form1"
+                class="form1"
                 label-width="180px"
                 v-if="form.place && form.data1"
               >
-                <el-form-item label="預留位置：">
+                <el-form-item label="預留位置">
                   <el-select v-model="form1.number" placeholder="0" clearable>
                     <el-option
                       v-for="(option, i) in 10"
@@ -140,14 +142,14 @@
                   </el-select>
                 </el-form-item>
 
-                <el-form-item label="性別：">
+                <el-form-item label="性別">
                   <el-select v-model="form1.sex" placeholder="---" clearable>
                     <el-option label="---" value="null"></el-option>
                     <el-option label="女" value="0"></el-option>
                     <el-option label="男" value="1"></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="年齡：">
+                <el-form-item label="年齡">
                   <el-select v-model="form1.age" placeholder="請選挥" clearable>
                     <el-option
                       label="17歲或以下"
@@ -163,7 +165,7 @@
                     ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="聨络電話：">
+                <el-form-item label="聨络電話">
                   <el-input
                     placeholder="請填寫"
                     type="number"
@@ -171,7 +173,7 @@
                     clearable
                   ></el-input>
                 </el-form-item>
-                <el-form-item label="電鄂地址：">
+                <el-form-item label="電郵地址">
                   <el-input
                     placeholder="請填寫"
                     type="email"
@@ -179,8 +181,12 @@
                     clearable
                   ></el-input>
                 </el-form-item>
-                <el-form-item label="從何得知：">
-                  <el-select v-model="form1.resource" placeholder="請選挥">
+                <el-form-item label="從何得知">
+                  <el-select
+                    v-model="form1.resource"
+                    placeholder="請選挥"
+                    clearable
+                  >
                     <el-option
                       label="Google搜尋引擎"
                       value="Google搜尋引擎"
@@ -200,9 +206,9 @@
                     <el-option label="其他" value="其他"></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item>
+                <el-form-item label-width="0">
                   <el-button type="primary" @click="onSubmit"
-                    >立即创建</el-button
+                    >提交預約</el-button
                   >
                 </el-form-item>
               </el-form>
@@ -260,18 +266,51 @@ export default {
       },
     };
   },
+  computed: {},
   methods: {
     onSubmit() {
-      console.log({...this.form,...this.form1});
-      console.log("submit!");
+      // 对预留位置、联络电话校验不能为空，判断邮件格式是否正确
+      if (
+        this.form1.number == "" ||
+        this.form1.tel == "" ||
+        this.form1.resource == ""
+      ) {
+        console.log(1);
+        this.$message({
+          message: "请檢查預留位置、聯絡電話、來源資料不能為空！",
+          type: "warning",
+        });
+        return;
+      }
+      // 正則匹配郵件格式
+      if (
+        this.form1.email !== "" &&
+        (!this.form1.email.includes("@") || !this.form1.email.includes(".com"))
+      ) {
+        this.$message({
+          message: "請檢查郵件格式是否正確！",
+          type: "warning",
+        });
+        return;
+      }
+
+      this.$message({
+          message: "预约已提交！",
+          type: "success",
+        });
+      console.log({ ...this.form, ...this.form1 });
     },
     disabledDate(time) {
-      const year = time.getFullYear();
-      const month = String(time.getMonth() + 1).padStart(2, "0");
-      const day = String(time.getDate()).padStart(2, "0");
-      const ym = `${year}-${month}-${day}`;
-      //把所有年月和需要建立的月份匹配，把匹配上的返回出去，让月份选择器可选
-      return !this.allowedDates.includes(ym);
+      try {
+        const year = time.getFullYear();
+        const month = String(time.getMonth() + 1).padStart(2, "0");
+        const day = String(time.getDate()).padStart(2, "0");
+        const ym = `${year}-${month}-${day}`;
+        //把所有年月和需要建立的月份匹配，把匹配上的返回出去，让月份选择器可选
+        return !this.allowedDates.includes(ym);
+      } catch (error) {
+        console.error("disabledDate encountered an error:", error);
+      }
     },
     changeLocation() {
       //  在选定地址的时候 给allowedDates 赋值  数组为当前月份可选择日期
@@ -315,6 +354,14 @@ export default {
         default:
           break;
       }
+      this.form.data1 = "";
+      this.morningOrAfternoon = "";
+      this.form1.number = "";
+      this.form1.sex = "";
+      this.form1.age = "";
+      this.form1.tel = "";
+      this.form1.email = "";
+      this.form1.resource = "";
     },
     timestampToWeekday(timestamp) {
       const date = new Date(timestamp); // 时间戳通常是秒为单位的，而 Date 构造函数需要毫秒为单位的参数
@@ -335,7 +382,7 @@ export default {
     },
     getName(name) {
       const { nowDay, weekday } = this.timestampToWeekday(this.form.data1);
-      this.nowDayTime = nowDay
+      this.nowDayTime = nowDay;
       switch (name) {
         case "smilerProTsui":
           if (weekday == "周六") {
@@ -350,7 +397,6 @@ export default {
           }
           return "Smile講座-中環";
         case "smileMongKok":
-          this.morningOrAfternoon = "2:30 下午";
           if (weekday == "周二") {
             this.morningOrAfternoon = "1:30 下午";
           } else if (weekday == "周四") {
@@ -383,6 +429,54 @@ export default {
   mounted() {},
 };
 </script>
+
+<style lang="scss">
+.date-picker-class {
+  .el-picker-panel__content {
+    .el-date-table {
+      .el-date-table__row {
+        .available {
+          & > div {
+            background: #b6e2eb;
+            color: #fff;
+          }
+          & > div:hover {
+            background: #4570b6;
+            color: #fff;
+            text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+          }
+        }
+        td {
+          & > div {
+            background: #b6e2eb;
+            color: #fff;
+          }
+          & > div:hover {
+            background: #4570b6;
+            color: #fff;
+            text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+      .disabled {
+        & > div {
+          background-color: #f5f7fa !important;
+          color: #c0c4cc !important;
+        }
+        & > div:hover {
+          background-color: #f5f7fa !important;
+          color: #c0c4cc !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .el-picker-panel {
+    left: 52px !important;
+  }
+}
+</style>
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   .banner-img {
@@ -529,6 +623,66 @@ export default {
   :deep(.el-date-editor) {
     width: 100%;
   }
+  :deep(.el-form-item__label) {
+    color: #fff;
+    background: #4570b6;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans HK";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5; /* 100% */
+    letter-spacing: 6px;
+    position: relative;
+    z-index: 9;
+    padding: 0;
+  }
+  :deep(.el-input__inner) {
+    border-radius: 100px;
+    border: 2px solid #4570b6;
+    background: #fff;
+    color: #87898c;
+    font-family: "Noto Sans HK";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5; /* 100% */
+    letter-spacing: 6px;
+    padding: 23px 0 23px 60px;
+  }
+  :deep(.el-form-item__content) {
+    left: -50px;
+  }
+  :deep(.form1) {
+    & > div:last-child {
+      display: flex;
+      justify-content: center;
+      .el-form-item__content {
+        padding-left: 50px;
+      }
+    }
+  }
+  :deep(.el-button) {
+    color: #fff;
+    background: #4570b6;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans HK";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5;
+    letter-spacing: 6px;
+    padding: 0 60px;
+  }
+  :deep(.el-button:hover) {
+    box-shadow: 0px 0px 8px 6px #d5d5d5f7;
+  }
 }
 @media screen and (max-width: 767px) {
   .banner-img {
@@ -566,6 +720,164 @@ export default {
       line-height: 18px; /* 290% */
       letter-spacing: 0.3px;
     }
+  }
+  .lecture-title {
+    background: url(https://static.cmereye.com/imgs/2024/04/d7625f69f04ff1b8.png)
+      no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    background-position: center;
+    padding: 0 30px 40px;
+    position: relative;
+    margin-top: 100px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title-img {
+        transform: translateY(-50%);
+        width: 170px;
+        height: 170px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .lecture-content {
+        margin-top: -50px;
+        & > div:nth-child(1) {
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px; /* 214.286% */
+          letter-spacing: 0.7px;
+        }
+        & > div:nth-child(2) {
+          margin-bottom: 50px;
+          color: #6d6e71;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 25px; /* 208.333% */
+          letter-spacing: 0.6px;
+          & > p:nth-child(2) {
+            padding: 0 40px;
+          }
+          & > p:nth-child(3) {
+            padding: 0 55px;
+          }
+          & > p:nth-child(4) {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  .form-data {
+    padding: 0 30px;
+    color: #6d6e71;
+    font-family: "Noto Sans HK";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    span {
+      color: #4570b6;
+    }
+  }
+  .form1 {
+    margin-top: 20px;
+  }
+  :deep(.el-form-item__label) {
+    width: 120px !important;
+    color: #fff;
+    background: #4570b6;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans HK";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5; /* 125% */
+    letter-spacing: 0.8px;
+    position: relative;
+    z-index: 9;
+    padding: 0;
+  }
+  :deep(.el-form) {
+    width: 100%;
+    padding: 0 30px;
+  }
+  :deep(.el-input__inner) {
+    border-radius: 100px;
+    border: 2px solid #4570b6;
+    background: #fff;
+    color: #c0c4cc;
+    font-family: "Noto Sans HK";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5; /* 142.857% */
+    letter-spacing: 0.7px;
+    padding: 18px 0 18px 50px;
+  }
+  .lecture-form {
+    width: 100vw;
+  }
+  .lecture-image {
+    width: 312px;
+    margin: 0 auto;
+    & > img {
+      width: 100%;
+    }
+  }
+  :deep(.el-form-item__content) {
+    margin-left: 180px !important;
+    width: 275px;
+    left: -100px;
+  }
+  :deep(.form1) {
+    & > div:last-child {
+      display: flex;
+      justify-content: center;
+      .el-form-item__content {
+        padding-left: 30px;
+      }
+    }
+  }
+  :deep(.el-button) {
+    color: #fff;
+    background: #4570b6;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans HK";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5;
+    letter-spacing: 6px;
+    padding: 0 60px;
+  }
+  :deep(.el-button:hover) {
+    box-shadow: 0px 0px 8px 6px #d5d5d5f7;
+  }
+  :deep(.el-select) {
+    width: 100%;
+  }
+  :deep(.el-date-editor) {
+    width: 100%;
   }
 }
 </style>
