@@ -282,7 +282,7 @@ export default {
         });
         return;
       }
-      // 正則匹配郵件格式
+      // 郵件不为空，檢查郵箱格式
       if (
         this.form1.email !== "" &&
         (!this.form1.email.includes("@") || !this.form1.email.includes(".com"))
