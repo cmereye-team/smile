@@ -222,6 +222,12 @@ export const $router = [
     name: 'preaching-seat',
     title: 'preaching-seat',
     component: resolve('pages/new-page/preaching-seat.vue')
+  },
+  {
+    path: '/doctor-team',
+    name: 'doctor-team',
+    title: 'doctor-team',
+    component: resolve('pages/new-page/doctor-team.vue')
   }
 ]
 

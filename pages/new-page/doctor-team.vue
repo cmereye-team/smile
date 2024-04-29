@@ -1,0 +1,454 @@
+<template>
+  <div class="doctor-team">
+    <Head />
+    <Banner class="banner-box">
+      <template #banner>
+        <div class="banner-img">
+          <p>醫生團隊</p>
+          <p>Doctor team</p>
+        </div>
+      </template>
+    </Banner>
+    <div class="doctor-team-box">
+      <div class="doctor-team-content">
+        <div>
+          <img
+            src="https://static.cmereye.com/imgs/2024/04/1395086f2ba74e80.png"
+            alt="林順潮醫生"
+          />
+        </div>
+        <div>
+          <div>
+            <p>香港希瑪國際眼科醫療集團創辦人</p>
+            <p>林順潮醫生</p>
+          </div>
+          <div>
+            <p>創辦人林順潮教授是亞太眼科主要領導者之一，連續3屆被評</p>
+            <p>為「世界眼科100位最具影響力人物之一」，並獲</p>
+            <p>「世界十大傑出青年」、「香港十大傑出青年」、</p>
+            <p>「亞太最佳眼科臨床教授獎」、「亞太眼科傑出成就獎」、</p>
+            <p>「亞太眼科學術最高成就獎」等殊榮。</p>
+          </div>
+          <div>
+            <span>香港大學內外全科醫學士</span>
+            <span>香港醫學專科學院院士(眼科)</span>
+            <span>香港眼科醫學院院士</span>
+            <span>英國愛丁堡皇家外科醫學院院士(眼科)</span>
+            <span>英國皇家眼科學院院士</span>
+            <span>香港中文大學醫學博士</span>
+          </div>
+        </div>
+      </div>
+      <div class="doctor-team-member">
+        <div>
+          <div v-for="doctor in doctorList" :key="doctor.id">
+            <div><img :src="doctor.img" :alt="doctor.name" /></div>
+            <div>
+              <div>{{ doctor.name }}<span>醫生</span></div>
+              <div>
+                <span v-for="(item, index) in doctor.title" :key="index">{{
+                  item
+                }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <businessHours />
+    <Footer />
+    <footers />
+  </div>
+</template>
+
+<script>
+import Head from "@/components/Publice/Head.vue";
+import Footer from "@/components/commom/new_foot/Footer.vue";
+import businessHours from "@/components/commom/business/business-hours.vue";
+import Banner from "@/components/Publice/Banner.vue";
+import footers from "@/components/commom/new_foot/footers.vue";
+import H2Tag from "@/components/Publice/H2Tag.vue";
+export default {
+  components: {
+    Head,
+    Footer,
+    businessHours,
+    footers,
+    Banner,
+    H2Tag,
+  },
+  data() {
+    return {
+      doctorList: [
+        {
+          id: 1,
+          name: "李佑榮",
+          img: "https://static.cmereye.com/imgs/2024/04/e4fe994560f1f0cb.png",
+          title: [
+            "香港中文大學內外全科醫學士",
+            "香港醫學專科學院院士(眼科)",
+            "香港眼科醫學院院士",
+            "英國愛丁堡皇家外科醫學院院士",
+            "香港外科醫學院院士",
+            "香港中文大學流行病學與生物統計學理學碩士",
+            "香港中文大學流行病學與生物統計學士後文憑",
+          ],
+        },
+        {
+          id: 2,
+          name: "黎浩樺",
+          img: "https://static.cmereye.com/imgs/2024/04/4fa9ad28827023df.png",
+          title: [
+            "香港中文大學內外全科醫學士",
+            "香港眼科醫學院院士",
+            "香港醫學專科學院院士(眼科)",
+            "英國愛丁堡皇家外科醫學院院員",
+          ],
+        },
+        {
+          id: 3,
+          name: "李德倫",
+          img: "https://static.cmereye.com/imgs/2024/04/35a8ebff87489352.png",
+          title: [
+            "香港醫學專科學院院士(眼科)",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港中文大學內外全科醫學士",
+            "香港眼科醫學院院士",
+          ],
+        },
+        {
+          id: 4,
+          name: "黃禮文",
+          img: "https://static.cmereye.com/imgs/2024/04/23dd6d5e7647a6b5.png",
+          title: [
+            "香港大學內外全科醫學士",
+            "英國愛丁堡皇家外科醫學院院員(眼科)",
+            "香港眼科醫學院院士",
+            "香港醫學專科學院院士(眼科)",
+          ],
+        },
+        {
+          id: 5,
+          name: "張瀞之",
+          img: "https://static.cmereye.com/imgs/2024/04/5dea1f2a9eaa115d.png",
+          title: [
+            "香港大學內外全科醫學士",
+            "香港眼科醫學院院士",
+            "香港醫學專科學院院士(眼科)",
+            "英國愛丁堡皇家外科醫學院院士(眼科)",
+            "英國格拉斯哥皇家外科醫學院院士",
+            "英國愛丁堡皇家外科醫學院院員",
+          ],
+        },
+        {
+          id: 6,
+          name: "林寶生",
+          img: "https://static.cmereye.com/imgs/2024/04/d2d8ef48f7e7d66f.png",
+          title: [
+            "香港中文大學內外全科醫學士",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港眼科醫學院院士",
+            "香港醫學專科學院院士(眼科)",
+          ],
+        },
+        {
+          id: 7,
+          name: "林己明",
+          img: "https://static.cmereye.com/imgs/2024/04/12f6f365602dfa65.png",
+          title: [
+            "香港大學內外全科醫學士",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港醫學專科學院院士(眼科)",
+            "香港眼科醫學院院士",
+          ],
+        },
+        {
+          id: 8,
+          name: "范  愷",
+          img: "https://static.cmereye.com/imgs/2024/04/97a0a764a2e54197.png",
+          title: [
+            "香港大學內外全科醫學士",
+            "香港醫學專科學院院士(眼科)",
+            "香港眼科醫學院院士",
+            "英國愛丁堡皇家外科醫學院院士(眼科)",
+            "英國皇家眼科學院院士",
+            "新加坡國立大學醫學碩士(眼科)",
+          ],
+        },
+        {
+          id: 9,
+          name: "陳偉樂",
+          img: "https://static.cmereye.com/imgs/2024/04/49af412bf2fd0d24.png",
+          title: [
+            "香港大學內外全科醫學士",
+            "香港眼科醫學院院士",
+            "香港醫學專科學院院士(眼科)",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港中文大學醫療管理學理學碩士",
+          ],
+        },
+        {
+          id: 10,
+          name: "梁苑珊",
+          img: "https://static.cmereye.com/imgs/2024/04/a7d90bf031d2130e.png",
+          title: [
+            "澳洲雪梨大學內外全科醫學士",
+            "新加坡國立大學醫學眼科碩士",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港眼科醫學院院士",
+            "香港醫學專科學院院士(眼科)",
+          ],
+        },
+        {
+          id: 11,
+          name: "鄒樞韻",
+          img: "https://static.cmereye.com/imgs/2024/04/3b91d69903c22a94.png",
+          title: [
+            "香港大學內外全科醫學士",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港醫學專科學院院士(眼科)",
+            "香港眼科醫學院院士",
+          ],
+        },
+        {
+          id: 12,
+          name: "尹浩柟",
+          img: "https://static.cmereye.com/imgs/2024/04/ead4bc971df33b27.jpg",
+          title: [
+            "香港大學內外全科醫學士",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港醫學專科學院院士(眼科)",
+            "香港眼科醫學院院士",
+          ],
+        },
+        {
+          id: 13,
+          name: "鄒樂韻",
+          img: "https://static.cmereye.com/imgs/2024/04/acf4c8b8523d5e99.jpg",
+          title: [
+            "香港大學內外全科醫學士",
+            "英國愛丁堡皇家外科醫學院院員",
+            "香港醫學專科學院院士(眼科)",
+            "香港眼科醫學院院士",
+          ],
+        },
+      ],
+    };
+  },
+};
+</script>
+<style lang="scss" scoped>
+@media screen and (min-width: 768px) {
+  .banner-img {
+    background: url("https://static.cmereye.com/imgs/2024/04/323517741e434c1d.png")
+      no-repeat;
+    background-size: 100% 100%;
+    height: 616px;
+    width: 100%;
+    border-radius: 55px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    & > p:nth-child(1) {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 50.75px; /* 169.167% */
+      letter-spacing: 7.5px;
+    }
+    & > p:nth-child(2) {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 43.5px; /* 290% */
+      letter-spacing: 0.45px;
+      margin-top: -10px;
+    }
+  }
+  .doctor-team {
+    overflow: hidden;
+  }
+  .doctor-team-box {
+    margin-bottom: 125px;
+  }
+  .doctor-team-content {
+    max-width: 1270px;
+    margin: 85px auto 0;
+    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+    & > div:nth-child(2) {
+      margin-left: 65px;
+      max-width: 700px;
+      & > div:nth-child(1) {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 133.333% */
+        letter-spacing: 9px;
+        & > p:nth-child(2) {
+          line-height: 50px;
+        }
+      }
+      & > div:nth-child(2) {
+        margin: 40px 0;
+        color: #6d6e71;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 35px; /* 175% */
+        letter-spacing: 6px;
+      }
+      & > div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px; /* 175% */
+        letter-spacing: 6px;
+        margin-left: 10px;
+        & > span {
+          position: relative;
+        }
+        & > span::before {
+          content: "";
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #4570b6;
+          position: absolute;
+          top: 50%;
+          left: -10px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  .doctor-team-member {
+    background: url("https://static.cmereye.com/imgs/2024/04/7f498c9a45d803a7.png")
+      no-repeat;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: 200px auto 0;
+    padding: 225px 0 55px;
+    & > div {
+      max-width: 1520px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 115px 0;
+      & > div {
+        display: flex;
+        & > div:nth-child(1) {
+          position: relative;
+          & > img {
+            position: relative;
+            z-index: 5;
+          }
+        }
+        & > div:nth-child(1)::before {
+          content: "";
+          position: absolute;
+          background: url("https://static.cmereye.com/imgs/2024/04/1d334823d7753246.png")
+            no-repeat;
+          width: 292px;
+          display: inline-block;
+          height: 386px;
+          background-size: 100% 100%;
+          background-position: center;
+          z-index: 1;
+          left: -10px;
+          top: -12px;
+        }
+        & > div:nth-child(2) {
+          background: #fff;
+          border-radius: 0px 40px 0px 20px;
+          padding-left: 30px;
+          padding-right: 5px;
+          position: relative;
+          z-index: 3;
+          min-width: 348px;
+          & > div:nth-child(1) {
+            margin-top: 75px;
+            margin-bottom: 15px;
+            color: #4570b6;
+            font-family: "Noto Sans HK";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 80% */
+            letter-spacing: 2.5px;
+            span {
+              font-size: 16px;
+              letter-spacing: 1.6px;
+            }
+          }
+          & > div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            color: #4570b6;
+            font-family: "Noto Sans HK";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-img {
+    background: url("https://static.cmereye.com/imgs/2024/04/c58f958bc4b6ee29.png")
+      no-repeat;
+    background-size: 100% 100%;
+    height: 330px;
+    margin: 24px 30px 55px;
+    border-radius: 44px;
+    padding-left: 10px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    & > p {
+      max-width: 110px;
+    }
+    & > p:nth-child(1) {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 21px; /* 169.167% */
+      letter-spacing: 0.7px;
+    }
+    & > p:nth-child(2) {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px; /* 290% */
+      letter-spacing: 0.5px;
+    }
+  }
+}
+</style>

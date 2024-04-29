@@ -77,7 +77,7 @@
               <el-form ref="form" :model="form" label-width="180px">
                 <el-form-item label="選擇地點">
                   <el-select
-                    v-model="form.place"
+                    v-model="form.address"
                     placeholder="選擇地點"
                     @change="changeLocation"
                     clearable
@@ -104,9 +104,9 @@
                     ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="预約日期" v-if="form.place !== ''">
+                <el-form-item label="预約日期" v-if="form.address !== ''">
                   <el-date-picker
-                    v-model="form.data1"
+                    v-model="form.subdate"
                     type="date"
                     popper-class="date-picker-class"
                     :picker-options="startPickerOptions"
@@ -118,10 +118,10 @@
                   </el-date-picker>
                 </el-form-item>
               </el-form>
-              <p v-if="form.place && form.data1" class="form-data">
+              <p v-if="form.address && form.subdate" class="form-data">
                 您正預約在
                 <span>{{ nowDayTime }} {{ morningOrAfternoon }}</span> 的
-                <span>{{ getName(form.place) }}</span> 全飛秒SMILE
+                <span>{{ getName(form.address) }}</span> 全飛秒SMILE
                 微笑激光矯視講座請填寫以下表格:
               </p>
               <el-form
@@ -129,10 +129,14 @@
                 :model="form1"
                 class="form1"
                 label-width="180px"
-                v-if="form.place && form.data1"
+                v-if="form.address && form.subdate"
               >
                 <el-form-item label="預留位置">
-                  <el-select v-model="form1.number" placeholder="0" clearable>
+                  <el-select
+                    v-model="form1.numberSeat"
+                    placeholder="0"
+                    clearable
+                  >
                     <el-option
                       v-for="(option, i) in 10"
                       :label="option"
@@ -168,8 +172,8 @@
                 <el-form-item label="聨络電話">
                   <el-input
                     placeholder="請填寫"
-                    type="number"
-                    v-model="form1.tel"
+                    type="numberSeat"
+                    v-model="form1.telphoneNumber"
                     clearable
                   ></el-input>
                 </el-form-item>
@@ -183,7 +187,7 @@
                 </el-form-item>
                 <el-form-item label="從何得知">
                   <el-select
-                    v-model="form1.resource"
+                    v-model="form1.source"
                     placeholder="請選挥"
                     clearable
                   >
@@ -247,16 +251,16 @@ export default {
   data() {
     return {
       form: {
-        place: "",
-        data1: "",
+        address: "",
+        subdate: "",
       },
       form1: {
-        number: "",
+        numberSeat: "",
         sex: "",
         age: "",
-        tel: "",
+        telphoneNumber: "",
         email: "",
-        resource: "",
+        source: "",
       },
       morningOrAfternoon: "",
       nowDayTime: "",
@@ -271,11 +275,10 @@ export default {
     onSubmit() {
       // 对预留位置、联络电话校验不能为空，判断邮件格式是否正确
       if (
-        this.form1.number == "" ||
-        this.form1.tel == "" ||
-        this.form1.resource == ""
+        this.form1.numberSeat == "" ||
+        this.form1.telphoneNumber == "" ||
+        this.form1.source == ""
       ) {
-        console.log(1);
         this.$message({
           message: "请檢查預留位置、聯絡電話、來源資料不能為空！",
           type: "warning",
@@ -293,12 +296,7 @@ export default {
         });
         return;
       }
-
-      this.$message({
-          message: "预约已提交！",
-          type: "success",
-        });
-      console.log({ ...this.form, ...this.form1 });
+      this.submitForm();
     },
     disabledDate(time) {
       try {
@@ -313,8 +311,10 @@ export default {
       }
     },
     changeLocation() {
+      this.clearFrom();
       //  在选定地址的时候 给allowedDates 赋值  数组为当前月份可选择日期
-      switch (this.form.place) {
+      // allowedDates 每个地区的日期每个月都可以更改
+      switch (this.form.address) {
         case "smilerProTsui":
           this.allowedDates = ["2024-05-04", "2024-05-18"];
           break;
@@ -354,14 +354,6 @@ export default {
         default:
           break;
       }
-      this.form.data1 = "";
-      this.morningOrAfternoon = "";
-      this.form1.number = "";
-      this.form1.sex = "";
-      this.form1.age = "";
-      this.form1.tel = "";
-      this.form1.email = "";
-      this.form1.resource = "";
     },
     timestampToWeekday(timestamp) {
       const date = new Date(timestamp); // 时间戳通常是秒为单位的，而 Date 构造函数需要毫秒为单位的参数
@@ -381,7 +373,8 @@ export default {
       };
     },
     getName(name) {
-      const { nowDay, weekday } = this.timestampToWeekday(this.form.data1);
+      // morningOrAfternoon 可以随着日期不同更改赋值
+      const { nowDay, weekday } = this.timestampToWeekday(this.form.subdate);
       this.nowDayTime = nowDay;
       switch (name) {
         case "smilerProTsui":
@@ -424,6 +417,66 @@ export default {
       const month = String(time.getMonth() + 1).padStart(2, "0");
       const day = String(time.getDate()).padStart(2, "0");
       return `${year}-${month}-${day}`;
+    },
+    async submitForm() {
+      let dataList = new FormData();
+      let _dataList = { ...this.form, ...this.form1 };
+      _dataList.address = this.getName(_dataList.address);
+      _dataList.sex = _dataList.sex == "0" ? "女" : "男";
+      _dataList.subdate = `${this.getYearMonthDay(_dataList.subdate)} ${
+        this.morningOrAfternoon
+      }`;
+      for (const key in _dataList) {
+        dataList.append(key, _dataList[key]);
+      }
+
+      this.$confirm("此操作将提交信息, 是否继续?", "提示", {
+        confirmButtonText: "提交",
+        cancelButtonText: "取消",
+        type: "warning",
+      })
+        .then(() => {
+          fetch("https://admin.hkcmereye.com/api.php/cms/addmsg", {
+            method: "POST",
+            body: dataList,
+          })
+            .then((res) => res.json())
+            .then((res) => {
+              if (res.code === 1) {
+                this.$message({
+                  message: "预约已提交！",
+                  type: "success",
+                });
+                this.clearFrom();
+                this.form.address = "";
+              }
+            });
+        })
+        .catch(() => {
+          this.$message({
+            message: "已取消",
+            type: "info",
+          });
+        });
+    },
+    clearFrom() {
+      // this.form.address = "";
+      this.form.subdate = "";
+      this.morningOrAfternoon = "";
+      this.form1.numberSeat = "";
+      this.form1.sex = "";
+      this.form1.age = "";
+      this.form1.telphoneNumber = "";
+      this.form1.email = "";
+      this.form1.source = "";
+    },
+    getYearMonthDay(times) {
+      // 通过时间戳获取 年 月 日
+      let date = new Date(times);
+      let year = date.getFullYear();
+      let month = date.getMonth() + 1;
+      let day = date.getDate();
+      return year + "-" + month + "-" + day;
     },
   },
   mounted() {},
