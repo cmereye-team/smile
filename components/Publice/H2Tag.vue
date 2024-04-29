@@ -65,7 +65,7 @@ h2 {
   h2 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     span {
       color: #4570b6;
       text-align: center;
@@ -81,7 +81,7 @@ h2 {
     content: "";
     background: #a6e1d6;
     width: 37px !important;
-    height: 7px !important;
+    height: 5px !important;
     border-radius: 3px;
     position: absolute;
     left: 50%;

@@ -1981,7 +1981,7 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 30px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 40px;
       }
       & > div:last-child {
@@ -2226,7 +2226,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 14px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 21px; /* 169.167% */
       letter-spacing: 0.7px;
     }
@@ -2266,7 +2266,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 16px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 20px; /* 125% */
       letter-spacing: 0.8px;
     }
@@ -2337,7 +2337,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 20px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 30px; /* 150% */
       letter-spacing: 1px;
       background: #4570b6;

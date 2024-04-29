@@ -406,6 +406,9 @@ export default {
       }
     }
   }
+  :deep(h2) {
+    padding-bottom: 32px;
+  }
 }
 .suitable_object {
   :deep(h2)::after {

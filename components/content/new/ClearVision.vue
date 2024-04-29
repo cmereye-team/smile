@@ -578,6 +578,7 @@ export default {
     & > div:nth-child(1) {
       :deep(h2) {
         margin-bottom: 30px;
+        padding-bottom: 32px;
       }
       & > div:nth-child(2) {
         padding: 0 150px;
@@ -595,6 +596,9 @@ export default {
       }
     }
     & > div:nth-child(2) {
+      :deep(h2) {
+        padding-bottom: 32px;
+      }
       margin-top: 70px;
       margin-bottom: 180px;
       & > div:nth-child(2) {
