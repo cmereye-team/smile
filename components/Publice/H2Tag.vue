@@ -37,7 +37,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   h2 {
-    padding-bottom: 22px;
+    padding-bottom: 32px;
 
     span {
       color: #4570b6;

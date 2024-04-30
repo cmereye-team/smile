@@ -3,7 +3,7 @@
     <!-- 双月份展示 添加    margin-bottom: 260px; 月份删除 -->
     <div class="page_container bookingifram pc_show" style="margin-bottom: 260px;">
       <div class="right_container">
-        <div><img src="https://static.cmereye.com/imgs/2024/04/42da8402ce3070f6.png" alt="预约2时间"></div>
+        <div><img src="https://static.cmereye.com/imgs/2024/04/51c26fd913afae99.png" alt="预约2时间"></div>
       </div>
       <div class="left_container">
         <div>
@@ -27,7 +27,7 @@
     <div class="mb_show page_container">
       <div>
         <div class="mb_img">
-          <div><img src="https://static.cmereye.com/imgs/2024/04/42da8402ce3070f6.png" alt="预约1时间"></div>
+          <div><img src="https://static.cmereye.com/imgs/2024/04/51c26fd913afae99.png" alt="预约1时间"></div>
         </div>
         <div class="bookingifram_box">
           <div class="text—mb">
@@ -86,7 +86,8 @@ export default {
     padding: 10px 0 41px;
     margin-right: 10px;
     box-sizing: border-box;
-    height: 3200px;
+    // height: 3200px;
+    height: 2000px;
     width: 100%;
   }
 
