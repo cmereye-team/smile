@@ -41,6 +41,50 @@
       </div>
       <div class="doctor-team-member">
         <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="47"
+              height="56"
+              viewBox="0 0 47 56"
+              fill="none"
+            >
+              <ellipse
+                cx="25.5677"
+                cy="2.71589"
+                rx="2.61364"
+                ry="2.44318"
+                fill="#A6E1D6"
+              />
+              <ellipse
+                cx="10.932"
+                cy="2.71589"
+                rx="2.61364"
+                ry="2.44318"
+                fill="#A6E1D6"
+              />
+              <path
+                d="M9.87684 2.39702C6.21976 2.63988 -0.606778 4.72844 1.34366 11.1398C3.78171 19.1541 12.3149 31.1755 18.0037 31.5397C23.6924 31.904 35.07 14.4184 35.4763 10.047C35.8827 5.67558 31.0066 1.30417 26.1305 2.39702"
+                stroke="#A6E1D6"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17.7412 31.4588C17.7413 39.3045 16.7662 55.2947 30.7408 54.9958C44.7154 54.6969 42.9278 37.4365 42.5216 29.5908"
+                stroke="#4570B6"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M46.0004 26.3333C46.0004 27.8775 44.6404 29.2424 42.8185 29.2424C40.9967 29.2424 39.6367 27.8775 39.6367 26.3333C39.6367 24.7891 40.9967 23.4242 42.8185 23.4242C44.6404 23.4242 46.0004 24.7891 46.0004 26.3333Z"
+                stroke="#4570B6"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <div><span>眼科</span><span>醫療團隊</span></div>
+        </div>
+        <div>
           <div v-for="doctor in doctorList" :key="doctor.id">
             <div><img :src="doctor.img" :alt="doctor.name" /></div>
             <div>
@@ -345,7 +389,36 @@ export default {
     background-position: center;
     margin: 200px auto 0;
     padding: 225px 0 55px;
-    & > div {
+    position: relative;
+    & > div:nth-child(1) {
+      position: absolute;
+      top: -160px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 307px;
+      height: 307px;
+      & > div:nth-child(2) {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #4570b6;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px; /* 166.667% */
+        letter-spacing: 7.5px;
+      }
+    }
+    & > div:nth-child(2) {
       max-width: 1520px;
       margin: 0 auto;
       display: flex;
@@ -448,6 +521,199 @@ export default {
       font-weight: 500;
       line-height: 18px; /* 290% */
       letter-spacing: 0.5px;
+    }
+  }
+  .doctor-team-content {
+    padding: 0 30px;
+    & > div:nth-child(2) {
+      & > div:nth-child(1) {
+        color: #4570b6;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.8px;
+      }
+      & > div:nth-child(2) {
+        & > p {
+          display: inline;
+        }
+        color: #6d6e71;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px; /* 214.286% */
+        letter-spacing: 0.7px;
+      }
+      & > div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        color: #4570b6;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 214.286% */
+        letter-spacing: 0.7px;
+        & > span::before {
+          content: "·";
+          color: #4570b6;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .doctor-team-member {
+    background: url("https://static.cmereye.com/imgs/2024/04/7f498c9a45d803a7.png")
+      no-repeat;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 150px 24px 15px;
+    margin-top: 150px;
+    margin-bottom: 55px;
+    position: relative;
+    & > div:nth-child(1) {
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 170px;
+      & > div:nth-child(2) {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #4570b6;
+        text-align: center;
+        font-family: "Noto Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.7px;
+      }
+    }
+    & > div:nth-child(2) {
+      & > div {
+        margin-bottom: 35px;
+        display: flex;
+        position: relative;
+        & > div:nth-child(1) {
+          flex: 4.5;
+          width: 148px;
+          border-radius: 0 25px;
+          overflow: hidden;
+          & > img {
+            width: 100%;
+            position: relative;
+            z-index: 5;
+          }
+        }
+        & > div:nth-child(1)::before {
+          content: "";
+          background: url(https://static.cmereye.com/imgs/2024/04/e4ed6628ef1d18a5.png)
+            no-repeat;
+          background-size: 100% 95%;
+          width: 161px;
+          height: 224px;
+          display: inline-block;
+          position: absolute;
+          z-index: 1;
+          left: -8px;
+          top: -10px;
+        }
+        & > div:nth-child(2) {
+          flex: 5.5;
+          background: #fff;
+          box-sizing: border-box;
+          position: relative;
+          z-index: 2;
+          left: -6px;
+          border-radius: 0 40px;
+          padding-left: 20px;
+          min-height: 210px;
+          top: -10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          & > div:nth-child(1) {
+            color: #4570b6;
+            font-family: "Noto Sans HK";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 100% */
+            letter-spacing: 1px;
+            & > span {
+              font-size: 14px;
+              letter-spacing: 0.7px;
+            }
+          }
+          & > div:nth-child(2) {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            color: #4570b6;
+
+            font-family: "Noto Sans HK";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 200% */
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+      & > div:nth-child(even) {
+        flex-direction: row-reverse;
+        & > div:nth-child(1) {
+          border-radius: 25px 0 25px 0;
+          overflow: hidden;
+          & > img {
+            background: #7a94a4;
+          }
+        }
+        & > div:nth-child(1)::before {
+          content: "";
+          background: url(https://static.cmereye.com/imgs/2024/04/3bdb9371c294cb1d.png)
+            no-repeat;
+          background-size: 100% 95%;
+          width: 161px;
+          height: 224px;
+          display: inline-block;
+          position: absolute;
+          z-index: 1;
+          left: auto;
+          top: -10px;
+          right: -8px;
+        }
+        & > div:nth-child(2) {
+          flex: 5.5;
+          background: #fff;
+          box-sizing: border-box;
+          position: relative;
+          z-index: 2;
+          left: auto;
+          right: -8px;
+          border-radius: 40px 0;
+          padding-left: -5px;
+          padding-right: 20px;
+        }
+      }
     }
   }
 }
