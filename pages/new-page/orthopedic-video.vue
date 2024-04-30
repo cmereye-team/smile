@@ -10,7 +10,7 @@
       </template>
     </Banner>
     <div class="share-video">
-      <H2Tag :title="['矯正步驟']" />
+      <H2Tag :title="['個案分享及矯視資訊影片']" />
       <shareVideo />
     </div>
     <businessHours />
