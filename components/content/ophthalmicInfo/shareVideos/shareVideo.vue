@@ -1,29 +1,45 @@
 <template>
   <div class="page_container">
     <div class="flex justify-center md:mt-28 mt-10">
-      <h2>{{ $t('home.headers.ophthalmicConsultationChild_1') }}</h2>
+      <h2>{{ $t("home.headers.ophthalmicConsultationChild_1") }}</h2>
     </div>
     <div class="tab flex justify-center" id="tab">
       <ul>
-        <li @click="exchangeTab(index)" :class="currentIndex == index ? 'active' : ''" :key="item.id"
-          v-for="(item, index) in list">
+        <li
+          @click="exchangeTab(index)"
+          :class="currentIndex == index ? 'active' : ''"
+          :key="item.id"
+          v-for="(item, index) in list"
+        >
           <p>{{ item.title }}</p>
         </li>
       </ul>
-      <div v-if="currentIndex == 1 ? true : false" class="justify-center tables">
+      <div
+        v-if="currentIndex == 1 ? true : false"
+        class="justify-center tables"
+        :class="`tab-index-${currentIndex}`"
+      >
         <div class="tab-control">
-          <div class="tab-control-item" v-for="(item, index) in title" :key="item"
-            :class="{ active: currentTitleIndex === index }" @click="titelclick(index)">
+          <div
+            class="tab-control-item"
+            v-for="(item, index) in title"
+            :key="item"
+            :class="{ active: currentTitleIndex === index }"
+            @click="titelclick(index)"
+          >
             <span>{{ item }}</span>
           </div>
         </div>
         <div v-if="currentTitleIndex === 1">
           <div class="media-buju">
-            <div class="media-box" v-for="(item_1_1, index_1_1) in mediaBujuLists_1_1" :key="index_1_1">
+            <div
+              class="media-box"
+              v-for="(item_1_1, index_1_1) in mediaBujuLists_1_1"
+              :key="index_1_1"
+            >
               <a :href="item_1_1.link" target="_Blank">
                 <img :src="item_1_1.img" alt="" />
-                <div class="meida" v-html="item_1_1.meida">
-                </div>
+                <div class="meida" v-html="item_1_1.meida"></div>
               </a>
             </div>
           </div>
@@ -36,9 +52,20 @@
             <a href="#" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                  <img
+                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                    alt=""
+                    style="width: 12vw"
+                  />
+                  <div
+                    class="flex flex-col justify-center"
+                    style="padding: 0 10px"
+                  >
+                    <span>{{
+                      $t("consumptionVoucher.subscribe") +
+                      "/" +
+                      $t("consumptionVoucher.query")
+                    }}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -48,14 +75,16 @@
         </div>
         <div v-else-if="currentTitleIndex === 0">
           <div class="media-buju">
-            <div class="media-box" v-for="(item_1_2, index_1_2) in mediaBujuLists_1_2" :key="index_1_2">
+            <div
+              class="media-box"
+              v-for="(item_1_2, index_1_2) in mediaBujuLists_1_2"
+              :key="index_1_2"
+            >
               <a :href="item_1_2.link" target="_Blank">
                 <img :src="item_1_2.img" alt="" />
-                <div class="meida" v-html="item_1_2.meida">
-                </div>
+                <div class="meida" v-html="item_1_2.meida"></div>
               </a>
             </div>
-
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -66,9 +95,20 @@
             <a href="#" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                  <img
+                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                    alt=""
+                    style="width: 12vw"
+                  />
+                  <div
+                    class="flex flex-col justify-center"
+                    style="padding: 0 10px"
+                  >
+                    <span>{{
+                      $t("consumptionVoucher.subscribe") +
+                      "/" +
+                      $t("consumptionVoucher.query")
+                    }}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -81,14 +121,16 @@
         </div>
         <div v-else>
           <div class="media-buju">
-            <div class="media-box" v-for="(item_1_4, index_1_4) in mediaBujuLists_1_4" :key="index_1_4">
+            <div
+              class="media-box"
+              v-for="(item_1_4, index_1_4) in mediaBujuLists_1_4"
+              :key="index_1_4"
+            >
               <a :href="item_1_4.link" target="_Blank">
                 <img :src="item_1_4.img" alt="" />
-                <div class="meida" v-html="item_1_4.meida">
-                </div>
+                <div class="meida" v-html="item_1_4.meida"></div>
               </a>
             </div>
-
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -99,9 +141,20 @@
             <a href="#" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                  <img
+                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                    alt=""
+                    style="width: 12vw"
+                  />
+                  <div
+                    class="flex flex-col justify-center"
+                    style="padding: 0 10px"
+                  >
+                    <span>{{
+                      $t("consumptionVoucher.subscribe") +
+                      "/" +
+                      $t("consumptionVoucher.query")
+                    }}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -110,23 +163,34 @@
           </div>
         </div>
       </div>
-      <div class="tables" v-else-if="currentIndex == 2 ? true : false">
+      <div
+        class="tables"
+        v-else-if="currentIndex == 2 ? true : false"
+        :class="`tab-index-${currentIndex}`"
+      >
         <div class="tab-control">
-          <div class="tab-control-item" v-for="(item, index) in title" :key="item"
-            :class="{ active: currentTitleIndex === index }" @click="titelclick(index)">
+          <div
+            class="tab-control-item"
+            v-for="(item, index) in title"
+            :key="item"
+            :class="{ active: currentTitleIndex === index }"
+            @click="titelclick(index)"
+          >
             <span>{{ item }}</span>
           </div>
         </div>
         <div v-if="currentTitleIndex === 1">
           <div class="media-buju">
-            <div class="media-box" v-for="(item_2_1, index_2_1) in mediaBujuLists_2_1" :key="index_2_1">
+            <div
+              class="media-box"
+              v-for="(item_2_1, index_2_1) in mediaBujuLists_2_1"
+              :key="index_2_1"
+            >
               <a :href="item_2_1.link" target="_Blank">
                 <img :src="item_2_1.img" alt="" />
-                <div class="meida" v-html="item_2_1.meida">
-                </div>
+                <div class="meida" v-html="item_2_1.meida"></div>
               </a>
             </div>
-
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -137,9 +201,20 @@
             <a href="#" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                  <img
+                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                    alt=""
+                    style="width: 12vw"
+                  />
+                  <div
+                    class="flex flex-col justify-center"
+                    style="padding: 0 10px"
+                  >
+                    <span>{{
+                      $t("consumptionVoucher.subscribe") +
+                      "/" +
+                      $t("consumptionVoucher.query")
+                    }}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -149,14 +224,16 @@
         </div>
         <div v-else-if="currentTitleIndex === 0">
           <div class="media-buju">
-            <div class="media-box" v-for="(item_2_2, index_2_2) in mediaBujuLists_2_2" :key="index_2_2">
+            <div
+              class="media-box"
+              v-for="(item_2_2, index_2_2) in mediaBujuLists_2_2"
+              :key="index_2_2"
+            >
               <a :href="item_2_2.link" target="_Blank">
                 <img :src="item_2_2.img" alt="" />
-                <div class="meida" v-html="item_2_2.meida">
-                </div>
+                <div class="meida" v-html="item_2_2.meida"></div>
               </a>
             </div>
-
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -167,9 +244,20 @@
             <a href="#" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                  <img
+                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                    alt=""
+                    style="width: 12vw"
+                  />
+                  <div
+                    class="flex flex-col justify-center"
+                    style="padding: 0 10px"
+                  >
+                    <span>{{
+                      $t("consumptionVoucher.subscribe") +
+                      "/" +
+                      $t("consumptionVoucher.query")
+                    }}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -182,14 +270,16 @@
         </div>
         <div v-else>
           <div class="media-buju">
-            <div class="media-box" v-for="(item_2_4, index_2_4) in mediaBujuLists_2_4" :key="index_2_4">
+            <div
+              class="media-box"
+              v-for="(item_2_4, index_2_4) in mediaBujuLists_2_4"
+              :key="index_2_4"
+            >
               <a :href="item_2_4.link" target="_Blank">
                 <img :src="item_2_4.img" alt="" />
-                <div class="meida" v-html="item_2_4.meida">
-                </div>
+                <div class="meida" v-html="item_2_4.meida"></div>
               </a>
             </div>
-
           </div>
           <a href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
@@ -200,9 +290,20 @@
             <a href="#" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
-                  <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                  <div class="flex flex-col justify-center" style="padding: 0 10px">
-                    <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                  <img
+                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                    alt=""
+                    style="width: 12vw"
+                  />
+                  <div
+                    class="flex flex-col justify-center"
+                    style="padding: 0 10px"
+                  >
+                    <span>{{
+                      $t("consumptionVoucher.subscribe") +
+                      "/" +
+                      $t("consumptionVoucher.query")
+                    }}</span>
                     <span>6061 0511</span>
                   </div>
                 </div>
@@ -212,13 +313,16 @@
         </div>
       </div>
       <div class="tables" v-else>
-        <div style="height: 30px;"></div>
+        <div style="height: 30px" :class="`tab-index-${currentIndex}`"></div>
         <div class="media-buju">
-          <div class="media-box" v-for="(item_2_1, index_2_1) in mediaBujuLists_3_1" :key="index_2_1">
+          <div
+            class="media-box"
+            v-for="(item_2_1, index_2_1) in mediaBujuLists_3_1"
+            :key="index_2_1"
+          >
             <a :href="item_2_1.link" target="_Blank">
               <img :src="item_2_1.img" alt="" />
-              <div class="meida" v-html="item_2_1.meida">
-              </div>
+              <div class="meida" v-html="item_2_1.meida"></div>
             </a>
           </div>
         </div>
@@ -231,16 +335,26 @@
           <a href="#" class="mbShow">
             <button>
               <div class="flex btn-yuyue">
-                <img src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png" alt="" style="width: 12vw" />
-                <div class="flex flex-col justify-center" style="padding: 0 10px">
-                  <span>{{ $t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query') }}</span>
+                <img
+                  src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                  alt=""
+                  style="width: 12vw"
+                />
+                <div
+                  class="flex flex-col justify-center"
+                  style="padding: 0 10px"
+                >
+                  <span>{{
+                    $t("consumptionVoucher.subscribe") +
+                    "/" +
+                    $t("consumptionVoucher.query")
+                  }}</span>
                   <span>6061 0511</span>
                 </div>
               </div>
             </button>
           </a>
         </div>
-
       </div>
     </div>
   </div>
@@ -253,49 +367,50 @@ export default {
       list: [
         {
           id: 3,
-          title: this.$t('ophthalmicInfo.shareVideos.tabList.title3'),
+          title: this.$t("ophthalmicInfo.shareVideos.tabList.title3"),
         },
         {
           id: 1,
-          title: this.$t('ophthalmicInfo.shareVideos.tabList.title1'),
+          title: this.$t("ophthalmicInfo.shareVideos.tabList.title1"),
         },
         {
           id: 2,
-          title: this.$t('ophthalmicInfo.shareVideos.tabList.title2'),
+          title: this.$t("ophthalmicInfo.shareVideos.tabList.title2"),
         },
       ],
       currentTitleIndex: 0,
-      title: [
-        ...this.$t('ophthalmicInfo.shareVideos.tabControlItem.title')
-      ],
+      title: [...this.$t("ophthalmicInfo.shareVideos.tabControlItem.title")],
       currentIndex: 0, // 当前点击的tab的索引
       mediaBujuLists_1_1: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_1')
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_1"),
       ],
       mediaBujuLists_1_2: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_2')
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_2"),
       ],
       mediaBujuLists_1_4: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_4')
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_4"),
       ],
       mediaBujuLists_2_1: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_1')
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1"),
       ],
       mediaBujuLists_2_2: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_2')
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_2"),
       ],
       mediaBujuLists_2_4: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_4')
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_4"),
       ],
       // 所有影片
       mediaBujuLists_3_1: [
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_1'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_1'),
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_2'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_2'),
-        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_4'), ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_4')
-      ]
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_1"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_2"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_2"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_4"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_4"),
+      ],
     };
   },
-  created() { },
+  created() {},
   methods: {
     titelclick(index) {
       console.log(index);
@@ -320,7 +435,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
-  color: #4570B6;
+  color: #4570b6;
 }
 
 .tables {

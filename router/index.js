@@ -174,7 +174,7 @@ export const $router = [
     component: resolve('pages/vision-correction-icl/index.vue'),
     // component: resolve('pages/new-page/icl.vue')
   },
-    // 新版本路由
+  // 新版本路由
   {
     path: '/smile',
     name: 'new-page/smile',
@@ -228,7 +228,15 @@ export const $router = [
     name: 'doctor-team',
     title: 'doctor-team',
     component: resolve('pages/new-page/doctor-team.vue')
+  },
+  {
+    path: '/orthopedic-video',
+    name: 'orthopedic-video',
+    title: 'orthopedic-video',
+    component: resolve('pages/new-page/orthopedic-video.vue')
   }
+
+
 ]
 
 
