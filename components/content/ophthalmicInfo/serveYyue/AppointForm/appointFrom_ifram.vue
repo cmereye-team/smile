@@ -3,7 +3,11 @@
     <!-- 双月份展示 添加    margin-bottom: 260px; 月份删除 -->
     <div class="page_container bookingifram pc_show" style="margin-bottom: 260px;">
       <div class="right_container">
-        <div><img src="https://static.cmereye.com/imgs/2024/04/51c26fd913afae99.png" alt="预约2时间"></div>
+        <div class="pc_right_img">
+          <img src="https://static.cmereye.com/imgs/2024/05/c83bc174dc22083a.jpg" alt="中環">
+          <img src="https://static.cmereye.com/imgs/2024/05/9e56ff2e1edcde7b.jpg" alt="旺角">
+          <img src="https://static.cmereye.com/imgs/2024/05/e32cabcdd306bb24.jpg" alt="尖沙咀">
+        </div>
       </div>
       <div class="left_container">
         <div>
@@ -27,7 +31,11 @@
     <div class="mb_show page_container">
       <div>
         <div class="mb_img">
-          <div><img src="https://static.cmereye.com/imgs/2024/04/51c26fd913afae99.png" alt="预约1时间"></div>
+          <div class="mb_right_img">
+            <img src="https://static.cmereye.com/imgs/2024/05/c83bc174dc22083a.jpg" alt="中環">
+          <img src="https://static.cmereye.com/imgs/2024/05/9e56ff2e1edcde7b.jpg" alt="旺角">
+          <img src="https://static.cmereye.com/imgs/2024/05/e32cabcdd306bb24.jpg" alt="尖沙咀">
+          </div>
         </div>
         <div class="bookingifram_box">
           <div class="text—mb">
@@ -72,7 +80,10 @@ export default {
   .mb_show {
     display: none !important;
   }
-
+  .pc_right_img{
+    display: flex;
+    flex-direction: column;
+  }
   .bookingifram {
     display: flex;
     padding: 20px 0;
@@ -130,7 +141,10 @@ export default {
   .pc_show {
     display: none !important;
   }
-
+  .mb_right_img{
+    display: flex;
+    flex-direction: column;
+  }
   .bookingifram {
     padding: 0 !important;
   }
