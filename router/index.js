@@ -234,6 +234,18 @@ export const $router = [
     name: 'orthopedic-video',
     title: 'orthopedic-video',
     component: resolve('pages/new-page/orthopedic-video.vue')
+  },
+  {
+    path: '/media-coverage',
+    name: 'media-coverage',
+    title: 'media-coverage',
+    component: resolve('pages/new-page/media-coverage.vue')
+  },
+  {
+    path: '/new-contact-us',
+    name: 'contact-us',
+    title: 'contact-us',
+    component: resolve('pages/new-page/contact-us.vue')
   }
 
 
