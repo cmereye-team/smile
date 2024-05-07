@@ -11,11 +11,12 @@
       </template>
     </Banner>
     <div class="smile-banner-context">
-      <h2 class="title">矯正原理</h2>
-      <div
-        :class="[$i18n.locale === 'en' ? 'contextEng context' : 'context']"
-        v-html="$t('service.relexSmile.mainBanner.span')"
-      ></div>
+      <H2Tag :title="['SMILE', '矯正原理']" />
+      <div>
+        SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用
+        Carl Zeiss VisuMax
+        激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-4mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。
+      </div>
     </div>
     <Step />
     <Benefit />
@@ -27,6 +28,7 @@
   </div>
 </template>
 <script>
+import H2Tag from "@/components/Publice/H2Tag.vue";
 import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
@@ -38,7 +40,6 @@ import Benefit from "@/components/content/service/relex_smile/Benefit_copy.vue";
 import Fit from "@/components/content/service/relex_smile/Fit_copy.vue";
 import Xtra from "@/components/content/service/relex_smile/Xtra_copy.vue";
 
-
 export default {
   components: {
     Head,
@@ -47,6 +48,7 @@ export default {
     footers,
     Banner,
     Step,
+    H2Tag,
     Benefit,
     Fit,
     Xtra,
@@ -93,52 +95,55 @@ export default {
   }
   .smile-banner-context {
     width: 100%;
-    max-width: 940px;
-    margin: 120px auto 0;
-    .title {
-      color: #4570b6;
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 30px; /* 100% */
-      letter-spacing: 7.5px;
-      text-align: center;
-      position: relative;
-      padding: 0;
-      border: none;
-      padding-bottom: 30px;
-      &::after {
-        content: "";
-        background: #a6e1d6;
-        width: 39px;
-        height: 5px;
-        border-radius: 3px;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-      }
-      &::before {
-        content: none;
+    max-width: 970px;
+    margin: 85px auto 0;
+
+    color: #6d6e71;
+
+    text-align: center;
+    font-family: "Noto Sans HK";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px; /* 175% */
+    letter-spacing: 6px;
+    :deep(h2) {
+      margin-bottom: 35px;
+    }
+  }
+  :deep(.benefit) {
+    .benefit-in-lists {
+      .listIn-t {
+        h3 {
+          letter-spacing: 6.25px;
+        }
       }
     }
-    .context {
-      margin-top: 45px;
-      color: #6d6e71;
-      text-align: center;
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 35px; /* 175% */
-      letter-spacing: 6px;
+  }
+  :deep(.xtra) {
+    .xtra-in-title {
+      h2:nth-child(2) {
+        letter-spacing: 0;
+      }
     }
-    .contextEng {
-      color: #6d6e71;
-      text-align: center;
-      font-family: Noto Sans HK;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 30px; /* 166.667% */
-      letter-spacing: 1.8px;
+    .xtra-in-lists {
+      & > div {
+        h3 {
+          margin-bottom: 20px !important;
+        }
+        & > div:nth-child(2) {
+          width: 193px;
+          height: 193px;
+          border-radius: 50%;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        & > div:nth-child(3) {
+          margin-top: 25px !important;
+        }
+      }
     }
   }
 }
@@ -146,15 +151,10 @@ export default {
   :deep(.PcShow) {
     display: none !important;
   }
-  .context{
-    color: #6d6e71 !important;
-    text-align: center;
-    font-family: "Noto Sans HK";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 30px; /* 200% */
-    letter-spacing: 4.5px;
+  :deep(h2) {
+    & > span:nth-child(1) {
+      display: none;
+    }
   }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/000c5714e8ad1fa2.png")
@@ -192,52 +192,103 @@ export default {
       letter-spacing: 0.3px;
     }
   }
+  :deep(.xtra) {
+    .xtra-in-title {
+      h2 {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 5px;
+      }
+      h2:nth-child(2) {
+        letter-spacing: 0;
+      }
+    }
+    .xtra-collagen {
+      color: #6d6e71;
+
+      font-family: "Noto Sans HK";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 125% */
+      letter-spacing: 4px;
+    }
+    .xtra-in-lists {
+      width: 100%;
+      margin: 18px auto 20px;
+      & > div {
+        width: 100%;
+        & > h3 {
+          min-width: 330px !important;
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 16px !important;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 125% */
+          letter-spacing: 4px !important;
+        }
+        & > div:nth-child(2) {
+          margin-bottom: 0;
+          width: 137px;
+          height: 137px;
+          background: #fff;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 137px;
+          & > svg {
+            width: 78%;
+          }
+        }
+        & > div:nth-child(3) {
+          color: #6d6e71;
+
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; /* 200% */
+          letter-spacing: 4.5px;
+          padding: 0 55px;
+        }
+      }
+      & > div:nth-child(2) {
+        & > div:nth-child(3) {
+          padding: 0 45px;
+        }
+      }
+    }
+  }
+  :deep(.benefit) {
+    .benefit-in-lists {
+      .listIn-t {
+        h3 {
+          letter-spacing: 3.6px;
+        }
+      }
+    }
+  }
 
   .smile-banner-context {
     width: auto;
-    margin: 50px 30px 0;
-    .title {
-      color: #4570b6;
-      font-family: "Noto Sans HK";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 23.305px; /* 116.525% */
-      letter-spacing: 5px;
-      border: none;
-      padding-bottom: 22px;
-    }
-    .title::before{
-      content: none;
-    }
-    .title::after {
-      content: "";
-      background: #a6e1d6;
-      width: 39px;
-      height: 5px;
-      border-radius: 3px;
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-    }
+    margin: 50px 24px 0;
 
-    .context {
-      margin-top: 26px;
-      font-size: 15px;
-      line-height: 30px; /* 200% */
-      letter-spacing: 4.5px;
-    }
-    .contextEng {
-      color: #6d6e71;
-      text-align: center;
-      font-family: Noto Sans HK;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 30px; /* 166.667% */
-      letter-spacing: 1.8px;
-    }
+    color: #6d6e71;
+    text-align: center;
+    font-family: "Noto Sans HK";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 200% */
+    letter-spacing: 4.5px;
   }
 }
 </style>
