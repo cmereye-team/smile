@@ -84,16 +84,7 @@
           : 'smilePro-descVideo page_container',
       ]"
     >
-      <h2
-        :class="[
-          $i18n.locale === 'en'
-            ? 'smilePro-descVideoEng-titleEng'
-            : 'smilePro-descVideo-title',
-        ]"
-      >
-        <span>{{ $t("service.smilePro.smileProDescVideo.title") }}</span>
-        <span>SMILE PRO!</span>
-      </h2>
+      <H2Tag :title="['如你符合以上描述，', '你應考慮選擇SMILE PRO!']" />
       <div class="smilePro-descVideo-in">
         <!-- <img src="https://static.cmereye.com/imgs/2023/05/822d9485daa1f2fa.jpg" />  -->
         <iframe
@@ -937,10 +928,30 @@
       <div>
         <div>
           <div>
-            <img
-              src="https://static.cmereye.com/imgs/2024/04/e2bfbe7e0cab8f33.png"
-              alt="三大特點"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="37"
+              height="38"
+              viewBox="0 0 37 38"
+              fill="none"
+            >
+              <path
+                d="M18.4428 37.1698C14.798 37.1735 11.2341 36.096 8.20178 34.0738C5.16949 32.0515 2.80513 29.1753 1.4078 25.809C0.010466 22.4428 -0.357041 18.7377 0.351768 15.1625C1.06058 11.5873 2.81385 8.30272 5.38979 5.72419C7.96573 3.14566 11.2486 1.38908 14.823 0.676673C18.3975 -0.0357348 22.103 0.328043 25.4706 1.72198C28.8383 3.11593 31.7169 5.47739 33.7422 8.50765C35.7675 11.5379 36.8485 15.1008 36.8485 18.7455C36.8194 23.6198 34.8714 28.2863 31.4265 31.7347C27.9816 35.1831 23.317 37.1357 18.4428 37.1698ZM18.4428 3.10161C15.3487 3.10161 12.3241 4.01911 9.75149 5.73808C7.17886 7.45706 5.17374 9.90031 3.98969 12.7589C2.80563 15.6174 2.49583 18.7629 3.09946 21.7975C3.70308 24.8321 5.19302 27.6196 7.38086 29.8075C9.56871 31.9953 12.3562 33.4852 15.3908 34.0889C18.4254 34.6925 21.5709 34.3827 24.4295 33.1986C27.288 32.0146 29.7313 30.0095 31.4502 27.4368C33.1692 24.8642 34.0867 21.8396 34.0867 18.7455C34.0769 14.5995 32.4256 10.6261 29.4939 7.69442C26.5622 4.76274 22.5888 3.1114 18.4428 3.10161Z"
+                fill="#4570B6"
+              />
+              <path
+                d="M12.4373 15.7615C13.9114 15.7615 15.1064 14.5665 15.1064 13.0924C15.1064 11.6183 13.9114 10.4233 12.4373 10.4233C10.9632 10.4233 9.76823 11.6183 9.76823 13.0924C9.76823 14.5665 10.9632 15.7615 12.4373 15.7615Z"
+                fill="#A6E1D6"
+              />
+              <path
+                d="M24.0776 15.7615C25.5517 15.7615 26.7467 14.5665 26.7467 13.0924C26.7467 11.6183 25.5517 10.4233 24.0776 10.4233C22.6035 10.4233 21.4085 11.6183 21.4085 13.0924C21.4085 14.5665 22.6035 15.7615 24.0776 15.7615Z"
+                fill="#A6E1D6"
+              />
+              <path
+                d="M18.6095 29.7372C16.2829 29.7303 14.0294 28.9234 12.2272 27.4519C10.425 25.9805 9.18369 23.9339 8.71157 21.6557C8.62333 21.4631 8.58027 21.2529 8.58567 21.0412C8.59107 20.8294 8.64479 20.6217 8.74273 20.4339C8.84066 20.2461 8.98023 20.0831 9.15076 19.9575C9.3213 19.8318 9.51829 19.7468 9.7267 19.7089C9.93511 19.671 10.1494 19.6812 10.3533 19.7388C10.5571 19.7964 10.7451 19.8998 10.9029 20.0411C11.0607 20.1825 11.1841 20.358 11.2637 20.5543C11.3433 20.7506 11.3769 20.9625 11.3621 21.1738C11.7572 22.7854 12.6814 24.2179 13.9869 25.2421C15.2925 26.2663 16.9038 26.8229 18.5632 26.8229C20.2225 26.8229 21.8339 26.2663 23.1394 25.2421C24.4449 24.2179 25.3692 22.7854 25.7642 21.1738C25.7974 20.9938 25.8662 20.8223 25.9667 20.6694C26.0672 20.5164 26.1973 20.3851 26.3493 20.2832C26.5013 20.1813 26.6721 20.1108 26.8518 20.076C27.0314 20.0411 27.2162 20.0425 27.3953 20.0802C27.7506 20.1603 28.0611 20.375 28.2615 20.6791C28.462 20.9833 28.5368 21.3532 28.4704 21.7113C27.9916 23.9747 26.7518 26.0057 24.9576 27.466C23.1633 28.9264 20.9229 29.7279 18.6095 29.7372Z"
+                fill="#A6E1D6"
+              />
+            </svg>
           </div>
           <div>
             <p>SMILE PRO</p>
@@ -1542,7 +1553,7 @@ export default {
     }
 
     &-in {
-      margin-top: 88px;
+      margin-top: 0;
       width: 100%;
       height: 484px;
       background: rgb(255, 253, 243);
@@ -1745,7 +1756,20 @@ export default {
         align-items: center;
         justify-content: center;
         & > div:nth-child(1) {
-          margin-left: 45px;
+          margin-left: 0;
+          position: relative;
+        }
+        & > div:nth-child(1)::after {
+          content: "PRO";
+          position: absolute;
+          top: -10%;
+          right: -100%;
+          color: #4570b6;
+          font-family: Inter;
+          font-size: 12.59px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
         & > div:nth-child(2) {
           color: #4570b6;
@@ -2121,7 +2145,7 @@ export default {
   }
 
   .smilePro-descVideo {
-    margin-top: 66px;
+    margin-top: 30px;
     h2 {
       font-family: var(--font_family);
       font-style: normal;
@@ -2164,9 +2188,9 @@ export default {
     }
 
     &-in {
-      margin-top: 88px;
+      margin-top: 0;
       width: 100%;
-      height: 484px;
+      height: 194px;
       background: rgb(255, 253, 243);
 
       img {
@@ -2483,7 +2507,20 @@ export default {
         align-items: center;
         justify-content: center;
         & > div:nth-child(1) {
-          margin-left: 28%;
+          margin-left: 0;
+          position: relative;
+        }
+        & > div:nth-child(1)::after {
+          content: "PRO";
+          position: absolute;
+          top: -10%;
+          right: -70%;
+          color: #4570b6;
+          font-family: Inter;
+          font-size: 12.59px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
         & > div:nth-child(2) {
           margin-top: 10px;
@@ -2568,17 +2605,36 @@ export default {
     }
   }
   .smile-pro-share {
+    margin-top: 50px;
     width: 100%;
     padding: 0 24px;
+    & > div:nth-child(2) {
+      & > a {
+        display: block;
+        margin-bottom: 30px;
+        & > div:nth-child(2) {
+          color: #6d6e71;
+
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1; /* 71.429% */
+          letter-spacing: 1.4px;
+          margin-top: 14px;
+        }
+      }
+    }
   }
   .swiper-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &>div:nth-child(odd){
+    & > div:nth-child(odd) {
       margin-left: -12%;
     }
-    &>div:nth-child(even){
+    & > div:nth-child(even) {
       margin-right: -12%;
     }
   }

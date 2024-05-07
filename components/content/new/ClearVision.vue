@@ -721,7 +721,7 @@ export default {
               color: #4570b6;
               text-align: center;
               font-family: "Noto Sans HK";
-              font-size: 22px;
+              font-size: 25px;
               font-style: normal;
               font-weight: 700;
               line-height: 1.2; /* 80% */
@@ -949,7 +949,7 @@ export default {
               font-family: "Noto Sans HK";
               font-size: 18px;
               font-style: normal;
-              font-weight: 400;
+              font-weight: 600;
               line-height: 20px; /* 111.111% */
               letter-spacing: 3.6px;
               display: flex;
@@ -972,13 +972,12 @@ export default {
         }
         & > div:nth-child(4) {
           & > div:nth-child(2) {
-            padding: 0 24px;
-            letter-spacing: 10px;
+            padding: 0px 35px;
           }
         }
         & > div:nth-child(5) {
           & > div:nth-child(2) {
-            padding: 0 16px;
+            padding: 0 14px;
           }
         }
       }

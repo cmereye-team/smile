@@ -250,6 +250,17 @@ export default {
       letter-spacing: 0.45px;
     }
   }
+  :deep(.xtra) {
+    .lists-box {
+      & > div {
+        & > div:nth-child(1) {
+          & > h3 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
 }
 .laser_technology {
   margin-top: 85px;
@@ -488,6 +499,20 @@ export default {
             width: 100%;
             max-width: 100%;
           }
+        }
+      }
+    }
+  }
+  :deep(.xtra) {
+    .lists-box {
+      & > div {
+        & > div:nth-child(1) {
+          & > h3 {
+            font-weight: 600;
+          }
+        }
+        & > div:nth-child(2) {
+          font-size: 14px;
         }
       }
     }
