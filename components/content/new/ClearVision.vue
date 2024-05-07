@@ -285,7 +285,7 @@
               <div>物料安全</div>
             </div>
             <div>
-              <span>不易出現排斥情況</span>
+              <span>不易出現<br v-if="isMobile" />排斥情況</span>
             </div>
           </div>
           <div>
