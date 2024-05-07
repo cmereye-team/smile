@@ -18,8 +18,7 @@
           (ICL)，又名後房型可植入式隱形屈光晶體植入手術，專為深度近視、遠視、散光客人而設。
         </p>
         <p>
-          手術過程無須切削角膜，把ICL 晶體植入眼內，便可獲取高清視力。
-          植入式隱形眼鏡以非激光原理，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料，矯正高度近視、遠視及散光。
+          手術過程無須切削角膜，把ICL晶體植入眼內，便可獲取高清視力。植入式隱形眼鏡以非激光原理，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料，矯正高度近視、遠視及散光。
         </p>
       </div>
     </div>
@@ -323,7 +322,7 @@ export default {
     z-index: -1;
   }
   &-text {
-    max-width: 958px;
+    max-width: 960px;
     margin: 58px auto 0;
     p {
       color: #6d6e71;
@@ -453,7 +452,7 @@ export default {
     }
     &-text {
       margin: 41px auto 0;
-      padding: 0 25px;
+      padding: 0 20px;
       p {
         font-size: 15px;
         font-weight: 300;

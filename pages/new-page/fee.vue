@@ -773,7 +773,7 @@
                   />
                 </svg>
               </div>
-              <div>術後5次覆診 ##</div>
+              <div>術後5次覆診 #</div>
             </div>
             <div>
               <div>
@@ -898,7 +898,7 @@
                   />
                 </svg>
               </div>
-              <div>無限視光檢查 #</div>
+              <div>無限視光檢查 ##</div>
             </div>
             <div>
               <div>
@@ -985,10 +985,13 @@
         </div>
         <FeeTableMobile v-else :typeNumber="2" />
         <div v-if="!isMobile">
-          <p><sup>^</sup>指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期</p>
+          <p>
+            <sup>^</sup
+            >指定信用卡（東亞/渣打/滙豐）可享6/12/18/24/36個月免息分期
+          </p>
           <p><sup>1</sup>以上為非指定醫生價錢</p>
           <p>
-            <sup>2</sup>矯視費用已包括術前檢查費用 $100；&nbsp;&nbsp;<br />若沒有預約進行矯視，需另外繳付術前檢查費用
+            <sup>2</sup>矯視費用已包括術前檢查費用 $500；&nbsp;&nbsp;<br />&nbsp;若沒有預約進行矯視，需另外繳付術前檢查費用
           </p>
         </div>
       </div>
@@ -1224,7 +1227,7 @@
                   />
                 </svg>
               </div>
-              <div><span>無限視光檢查 ##</span></div>
+              <div><span>無限視光檢查 #</span></div>
             </div>
           </div>
         </template>
@@ -1685,8 +1688,11 @@
         </div>
       </div>
     </div>
-    <div v-if="isMobile" class="fee-table-container">
-      <a target="_blank" href="https://api.whatsapp.com/send/?phone=85260610511"
+    <div class="fee-table-container">
+      <a
+        class="meal-btn"
+        target="_blank"
+        href="https://api.whatsapp.com/send/?phone=85260610511"
         >立即預約</a
       >
     </div>
@@ -1910,7 +1916,7 @@ export default {
         margin: 16px auto 34px;
       }
       & > div:nth-child(3) {
-        max-width: 740px;
+        max-width: 760px;
         margin: 0 auto;
       }
     }
@@ -2190,11 +2196,28 @@ export default {
         letter-spacing: 2.4px;
         display: flex;
         flex-direction: column;
-        & > span:nth-child(2) {
-          font-size: 16px;
-          letter-spacing: 1.6px;
-        }
       }
+    }
+  }
+  .fee-table-container {
+    margin-bottom: 80px;
+    & > a {
+      margin: 0 auto;
+      margin-top: 55px;
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 7.5px;
+      background: #4570b6;
+      width: -moz-max-content;
+      width: max-content;
+      border-radius: 100px;
+      display: block;
+      padding: 12px 53px;
     }
   }
 }

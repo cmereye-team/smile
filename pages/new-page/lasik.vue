@@ -161,7 +161,7 @@ export default {
       suitable_object: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
-          text: ["近視1,400度以下", "遠視 / 散光600度以下"],
+          text: ["近視1,400度以下", "遠視/散光600度以下"],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
@@ -247,7 +247,7 @@ export default {
   &-in {
     margin: 45px auto 0;
     width: 100%;
-    max-width: 941px;
+    max-width: 945px;
     color: #6d6e71;
     text-align: center;
     font-family: "Noto Sans HK";
@@ -560,7 +560,7 @@ export default {
       line-height: 30px; /* 200% */
       letter-spacing: 4.5px;
       margin-top: 28px;
-      padding: 0 25px;
+      padding: 0 20px;
     }
   }
   .principle-top {
