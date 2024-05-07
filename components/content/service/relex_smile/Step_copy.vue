@@ -1,8 +1,9 @@
 <template>
   <div class="step section page_container">
-    <h2 class="step-in">
+    <!-- <h2 class="step-in">
       {{ $t("service.relexSmile.step.h2_2") }}
-    </h2>
+    </h2> -->
+    <H2Tag :title="[`${$t('service.relexSmile.step.h2_2')}`]" />
     <ul class="step_list flex justify-between">
       <li v-for="(stepItem, index) in stepList" :key="index">
         <img :src="stepItem.src" alt="" />
@@ -15,7 +16,11 @@
   </div>
 </template>
 <script>
+import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
+  components: {
+    H2Tag,
+  },
   data() {
     return {
       stepList: [

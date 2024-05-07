@@ -11,7 +11,7 @@
       </template>
     </Banner>
     <div class="smile-banner-context">
-      <H2Tag :title="['SMILE', '矯正原理']" />
+      <H2Tag :title="['SMILE矯正原理']" />
       <div>
         SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用
         Carl Zeiss VisuMax
@@ -150,11 +150,6 @@ export default {
 @media screen and (max-width: 767px) {
   :deep(.PcShow) {
     display: none !important;
-  }
-  :deep(h2) {
-    & > span:nth-child(1) {
-      display: none;
-    }
   }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/000c5714e8ad1fa2.png")
