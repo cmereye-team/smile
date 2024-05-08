@@ -4,8 +4,8 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>{{  }}</p>
-          <p>{{  }}</p>
+          <p>{{}}</p>
+          <p>{{}}</p>
         </div>
       </template>
     </Banner>
@@ -29,6 +29,27 @@ export default {
     footers,
     Banner,
     H2Tag,
+  },
+  data() {
+    return {
+      isMobile: false,
+    };
+  },
+  mounted() {
+    // 获取屏幕宽度
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    });
+
+    if (window.innerWidth < 768) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   },
 };
 </script>

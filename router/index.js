@@ -246,9 +246,21 @@ export const $router = [
     name: 'contact-us',
     title: 'contact-us',
     component: resolve('pages/new-page/contact-us.vue')
+  },
+  {
+    path: '/follow-up-consultation',
+    name: 'follow-up-consultation',
+    title: 'follow-up-consultation',
+    component: resolve('pages/new-page/follow-up-consultation.vue')
+  },
+  {
+    path: '/vision-correction',
+    name: 'vision-correction',
+    title: 'vision-correction',
+    component: resolve('pages/new-page/vision-correction.vue')
   }
 
-
+  
 ]
 
 
