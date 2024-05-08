@@ -258,6 +258,18 @@ export const $router = [
     name: 'vision-correction',
     title: 'vision-correction',
     component: resolve('pages/new-page/vision-correction.vue')
+  },
+  {
+    path: '/common-problem',
+    name: 'common-problem',
+    title: 'common-problem',
+    component: resolve('pages/new-page/common-problem.vue')
+  },
+  {
+    path: '/eye-examination',
+    name: 'eye-examination',
+    title: 'eye-examination',
+    component: resolve('pages/new-page/eye-examination.vue')
   }
 
   
