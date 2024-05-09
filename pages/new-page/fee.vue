@@ -1684,7 +1684,7 @@
         </div>
         <FeeTableMobile v-else :typeNumber="3" :price2="priceClearList" />
         <div>
-          <p>以上為非指定醫生價錢</p>
+          <p style="text-align: center;">以上為非指定醫生價錢</p>
         </div>
       </div>
     </div>
@@ -1894,7 +1894,6 @@ export default {
         font-weight: 300;
         line-height: 30px; /* 150% */
         letter-spacing: 5px;
-        text-align: center;
       }
       & > p {
         text-align: center;
