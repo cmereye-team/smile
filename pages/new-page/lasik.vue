@@ -104,7 +104,12 @@
               </p>
             </div>
             <div class="text mbText" v-if="index === 4">
-              <p v-for="(textItem, textIndex) in item.text" :key="textIndex">
+              <p v-for="(textItem, textIndex) in item.mbText" :key="textIndex">
+                {{ textItem }}
+              </p>
+            </div>
+            <div class="text mbText" v-if="index === 0">
+              <p v-for="(textItem, textIndex) in item.mbText" :key="textIndex">
                 {{ textItem }}
               </p>
             </div>
@@ -162,6 +167,7 @@ export default {
         {
           img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
           text: ["近視1,400度以下", "遠視/散光600度以下"],
+          mbText: ["近視1,400度以下", "遠視/散光600度", "以下"],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
@@ -178,7 +184,7 @@ export default {
         {
           img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
           text: ["擔心長期配戴隱形眼鏡", "影響眼睛健康人士"],
-          mbText: ["不愛佩戴眼鏡或", "隱形眼鏡"],
+          mbText: ["擔心長期配戴", "隱形眼鏡影響眼睛", "健康人士"],
         },
       ],
       isMobile: false,
@@ -688,8 +694,8 @@ export default {
         width: 50%;
         margin-top: 39px;
         .box {
-          width: 155px;
-          height: 155px;
+          width: 39.7vw;
+          height: 39.7vw;
         }
         .image {
           max-height: 40%;
@@ -700,7 +706,7 @@ export default {
         }
         .text {
           margin-top: 10px;
-          font-size: 14px;
+          font-size: 3.5vw;
           font-weight: 300;
           line-height: 20px; /* 178.571% */
           letter-spacing: 1.4px;
@@ -709,6 +715,10 @@ export default {
         &:nth-of-type(1) {
           .text {
             max-width: 80%;
+            display: none;
+          }
+          .mbText {
+            display: block;
           }
         }
         &:nth-of-type(5) {
