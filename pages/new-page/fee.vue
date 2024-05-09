@@ -976,15 +976,15 @@
           <div>
             <div>$38,000^</div>
             <div>$42,000^</div>
-            <div>$64,000</div>
-            <div>$68,000</div>
+            <div>$64,000^</div>
+            <div>$68,000^</div>
           </div>
           <div>
             <div>術前檢查費用 $500</div>
           </div>
         </div>
         <FeeTableMobile v-else :typeNumber="2" />
-        <div v-if="!isMobile">
+        <div>
           <p>
             <sup>^</sup
             >指定信用卡（東亞/渣打/滙豐）可享6/12/18/24/36個月免息分期
@@ -1684,7 +1684,7 @@
         </div>
         <FeeTableMobile v-else :typeNumber="3" :price2="priceClearList" />
         <div>
-          <p style="text-align: center;">以上為非指定醫生價錢</p>
+          <p style="text-align: center">以上為非指定醫生價錢</p>
         </div>
       </div>
     </div>
@@ -2324,6 +2324,19 @@ export default {
     :deep(h2) {
       span {
         letter-spacing: 1px;
+      }
+    }
+  }
+  #tag-icl {
+    & > div:nth-child(2) {
+      & > div:nth-child(3) {
+        color: #6d6e71;
+        font-family: "Noto Sans HK";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; /* 166.667% */
+        letter-spacing: 0.6px;
       }
     }
   }

@@ -87,7 +87,7 @@
         <div>術前檢查費用 $650</div>
       </div>
     </div>
-    <div v-if="typeNumber !== 3">
+    <div v-if="typeNumber === 1">
       <p>^ 指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期</p>
       <p><sup>1</sup>以上為非指定醫生價錢</p>
       <p>
@@ -149,7 +149,7 @@ export default {
           font-weight: 500;
           line-height: 40px; /* 250% */
           letter-spacing: 0.8px;
-          &>div{
+          & > div {
             line-height: 1;
             padding: 10px 0;
           }
@@ -322,13 +322,13 @@ export default {
         }
       }
     }
-    &>div:nth-child(2),
-    &>div:nth-child(4){
+    & > div:nth-child(2),
+    & > div:nth-child(4) {
       padding: 12px 0;
-      background: #F4F8FF;
+      background: #f4f8ff;
     }
 
-    &>div:nth-child(5){
+    & > div:nth-child(5) {
       padding: 12px 0;
     }
   }
