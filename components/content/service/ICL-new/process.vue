@@ -151,6 +151,7 @@ export default {
         font-weight: 300;
         line-height: 20px; /* 142.857% */
         letter-spacing: 2.7px;
+        text-wrap: nowrap;
       }
     }
     & > li:last-child {

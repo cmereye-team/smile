@@ -36,8 +36,8 @@
       <div v-if="typeNumber == 2" class="fee-table2">
         <div>
           <div>
-            <div>單眼<br />不帶散光</div>
-            <div>單眼<br />帶散光</div>
+            <div>單眼<br />(不帶散光)</div>
+            <div>單眼<br />(帶散光)</div>
           </div>
           <div>
             <div>$45,000</div>
@@ -52,8 +52,8 @@
         </div>
         <div>
           <div>
-            <div>雙眼<br />不帶散光</div>
-            <div>雙眼<br />帶散光</div>
+            <div>雙眼<br />(不帶散光)</div>
+            <div>雙眼<br />(帶散光)</div>
           </div>
           <div>
             <div>$85,000</div>
@@ -61,8 +61,8 @@
           </div>
           <div>限時優惠 由即日起</div>
           <div>
-            <div>$64,000</div>
-            <div>$68,000</div>
+            <div>$64,000^</div>
+            <div>$68,000^</div>
           </div>
           <div>術前檢查費用 $500</div>
         </div>
