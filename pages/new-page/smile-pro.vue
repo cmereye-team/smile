@@ -1089,40 +1089,40 @@
     <div class="smile-pro-share">
       <H2Tag :title="titleName1" />
       <div>
-        <a href="https://www.youtube.com/watch?v=oHDOFYMEUsk" target="_blank">
+        <a href="https://youtu.be/r4rbUUVtjzM" target="_blank">
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/04/3ba8ba8af5746941.png"
+              src="https://static.cmereye.com/imgs/2024/05/886347330efd4cb0.png"
               alt="名人用家檔案"
             />
           </div>
-          <div>微笑矯視 - Shirley 陳欣妍</div>
+          <div>米姬 Maggie</div>
         </a>
         <a
-          href="https://www.youtube.com/watch?v=5ihrzFvOy38&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=7"
+          href="https://youtu.be/kVEJ-PN4AJo"
           target="_blank"
         >
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/04/c344195a95c8460a.png"
+              src="https://static.cmereye.com/imgs/2024/05/8f5a563be87127f9.png"
               alt="名人用家檔案"
             />
           </div>
-          <div>植入式隱形眼鏡 - Serene 林宣妤</div>
+          <div>應智越  细猫</div>
         </a>
-        <a href="https://www.youtube.com/watch?v=L5GFWM7Fxqs" target="_blank">
+        <a href="https://youtu.be/4InLMjTa3rI" target="_blank">
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/04/c8ef22d49c9a4ca1.png"
+              src="https://static.cmereye.com/imgs/2024/05/0b225fff24d654e5.png"
               alt="名人用家檔案"
             />
           </div>
-          <div>微笑矯視 - Dominic 何浩文</div>
+          <div>Cindy Wong</div>
         </a>
       </div>
       <div class="smile-pro-btn">
         <a
-          href="https://api.whatsapp.com/send/?phone=85260610511"
+          href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg"
           target="_blank"
           rel="noopener noreferrer"
           >瞭解更多</a
@@ -1320,7 +1320,7 @@ export default {
           ["角膜自然", "癒合需時間"],
           ["date", "數天"],
           ["date", "數天"],
-          ["date+1", "數天至數月"],
+          ["date+1", "數周至數月"],
         ],
         [
           ["術後不適感"],

@@ -61,9 +61,7 @@
           </div>
           <div class="text">
             <p>
-              <span v-for="(el, index) in item.text" :key="index">{{
-                el
-              }}</span>
+              <span v-for="(el, index) in item.text" :key="index" v-html="el"></span>
             </p>
           </div>
         </div>
@@ -125,7 +123,7 @@ export default {
         {
           img: "https://static.cmereye.com/imgs/2024/04/9c2e5ca8b04dfc42.png",
           title: "手術與恢復皆快速",
-          text: ["手術時間短", "復原期短，手術過程", "最快只需20-30分鐘"],
+          text: ["手術時間短<br />", "復原期短，手術過程", "最快只需20-30分鐘"],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/d6dc807847e807c6.png",
@@ -497,6 +495,13 @@ export default {
           .text {
             width: 100%;
             max-width: 100%;
+          }
+        }
+      }
+      &>div:nth-child(3) {
+        &>div:nth-child(2){
+          &>p{
+
           }
         }
       }

@@ -336,10 +336,10 @@
           <div>
             <div>
               <p>
-                每一次擘大眼都<br /><span
-                  >懷疑自己係咪唔記<br v-if="isMobile == false" /><span
-                    >得除Con</span
-                  ><br v-if="isMobile == false" /></span
+                每一次擘大眼都<br />
+                <span
+                  >懷疑自己係咪唔記<br />
+                  得除Con</span
                 >既感覺
               </p>
             </div>
@@ -1082,22 +1082,23 @@ export default {
           justify-content: center;
           p {
             color: #fff;
+            text-align: center;
             font-family: Inter;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
-            line-height: 1.4;
-            letter-spacing: 0.9px;
+            line-height: 1.8; /* 222.222% */
+            letter-spacing: 1.44px;
             text-align: center;
             span {
               color: #fff;
               text-align: center;
               font-family: Inter;
-              font-size: 30px;
+              font-size: 23px;
               font-style: normal;
               font-weight: 600;
-              line-height: 1; /* 166.667% */
-              letter-spacing: 1.5px;
+              line-height: 1;
+              letter-spacing: 1.84px;
             }
           }
         }
@@ -1558,7 +1559,7 @@ export default {
               }
             }
             & > div:nth-child(1)::after {
-              content: '';
+              content: "";
               position: absolute;
               left: 9px;
               top: 0px;
