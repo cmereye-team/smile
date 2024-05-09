@@ -358,6 +358,9 @@ export default {
     & > div {
       & > div:nth-child(1) {
         background: transparent;
+        & > div:nth-child(1) {
+          top: 0 !important;
+        }
       }
       & > div:nth-child(2) {
         display: none;
@@ -433,7 +436,10 @@ export default {
   }
   .group-profile-swiper {
     max-width: 1270px;
-    margin: 0 auto;
+    margin: 85px auto 0;
+    :deep(h2) {
+      margin-bottom: 50px;
+    }
     & > div:nth-child(3) {
       padding: 0 170px;
       & > div:nth-child(2) {
@@ -696,6 +702,9 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  .group-profile-box{
+    margin-bottom: 65px;
+  }
   .group-profile-explain {
     padding: 0 30px;
     & > div {
@@ -723,6 +732,183 @@ export default {
         & > div:nth-child(4) {
           padding: 0 30px;
         }
+      }
+    }
+  }
+  .group-profile-award {
+    background: url("https://static.cmereye.com/imgs/2024/05/1306a3173c344666.png")
+      no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0 50px;
+    position: relative;
+    margin-top: 125px;
+    & > div {
+      padding: 0 10px;
+      & > div:nth-child(1) {
+        position: absolute;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 171px;
+        height: 171px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & > div:nth-child(2) {
+          color: #4570b6;
+          font-family: "Noto Sans HK";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 23.305px; /* 116.525% */
+          letter-spacing: 1px;
+          padding-bottom: 10px;
+          position: relative;
+        }
+        & > div:nth-child(2)::after {
+          content: "";
+          width: 30px;
+          height: 3.8px;
+          background: #a6e1d6;
+          border-radius: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+          & > div {
+            width: 80px;
+            & > img {
+              width: 100%;
+            }
+          }
+        }
+        & > div:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+  :deep(.swiper-element) {
+    & > div {
+      & > div:nth-child(1) {
+        background: transparent;
+        height: 215px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        & > div:nth-child(1) {
+          top: 0 !important;
+          & > div {
+            & > div:nth-child(2) {
+              display: none;
+            }
+            & > div:nth-child(3),
+            & > div:nth-child(4) {
+              top: 55%;
+            }
+          }
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  .group-profile-swiper {
+    margin-top: 55px;
+    & > div:nth-child(3) {
+      padding: 0 30px;
+      & > div:nth-child(2) {
+        margin-top: 30px;
+      }
+    }
+  }
+  .swiper-small-title {
+    color: #4570b6;
+    font-family: "Noto Sans HK";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    text-align: center;
+  }
+  .swiper-small-text {
+    color: #6d6e71;
+    text-align: center;
+    font-family: "Noto Sans HK";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 0.7px;
+  }
+  .group-profile-center {
+    background: url("https://static.cmereye.com/imgs/2024/05/3667677d419ec9a0.png")
+      no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 0 50px;
+    margin-top: 120px;
+    position: relative;
+    & > div {
+      padding: 0 20px;
+      & > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 50%;
+        width: 171px;
+        height: 171px;
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 20px;
+        & > div:nth-child(1) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & > svg {
+            width: 65%;
+          }
+        }
+        & > div:nth-child(2) {
+          margin-top: 8px;
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 35px; /* 175% */
+          letter-spacing: 1px;
+        }
+      }
+      & > div:nth-child(2) {
+        & > div {
+          margin-top: 32px;
+        }
+        color: #6d6e71;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px; /* 214.286% */
+        letter-spacing: 0.7px;
       }
     }
   }

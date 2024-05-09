@@ -14,7 +14,7 @@
         <H2Tag :title="['矯視中心服務']" />
         <div>
           <div v-for="item in bgReferralServiceImg" :key="item.id">
-            <div><img :src="item.img" :alt="服务" /></div>
+            <div><img :src="item.img" alt="服务" /></div>
             <div>
               <div>
                 <span
