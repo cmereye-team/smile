@@ -83,7 +83,7 @@ export default {
       bottom: 0;
       transform: translateX(-50%);
     }
-    &::before{
+    &::before {
       content: none;
     }
   }
@@ -117,7 +117,7 @@ export default {
 @media screen and (max-width: 768px) {
   .step {
     &-in {
-      color: #4570B6;
+      color: #4570b6;
       text-align: center;
       font-family: Noto Sans HK;
       font-size: 20px;
@@ -129,26 +129,32 @@ export default {
   }
   .icl-process-list {
     margin-top: 36px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // flex-wrap: wrap;
     justify-content: center;
     li {
-      width: 41vw;
+      width: 40.7vw;
       margin: 0 6px 30px;
       img {
         border-radius: 20px;
+        width: 100%;
       }
       .text {
         margin-top: 20px;
-        color: #6D6E71;
+        color: #6d6e71;
         text-align: center;
         font-family: Noto Sans HK;
-        font-size: 14px;
+        font-size: 3.5vw;
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
         letter-spacing: 2.7px;
       }
+    }
+    & > li:last-child {
+      margin-left: 55%;
     }
   }
 }

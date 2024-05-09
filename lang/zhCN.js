@@ -1351,8 +1351,8 @@ module.exports = {
       },
       step: {
         h2: `植入式隐形眼镜<br class="mbShow" />植入过程`,
-        des1: `进行手术前，<br class="mbShow" />医生先在客人<br class="pcShow" />眼睛<br class="mbShow" />上滴麻醉眼药水。`,
-        des2: `在角膜制作一个约3<br class="mbShow" />毫米的<br class="pcShow" />小开口，将摺<br class="mbShow" />叠的晶体植入<br class="pcShow" />眼球。`,
+        des1: `进行手术前，医生<br class="mbShow" />先在客人<br class="pcShow" />眼睛上滴<br class="mbShow" />麻醉眼药水。`,
+        des2: `在角膜制作一个约<br class="mbShow" />3毫米的<br class="pcShow" />小开口，将摺<br class="mbShow" />叠的晶体植入<br class="pcShow" />眼球。`,
         des3: `植入晶体后，医生<br class="mbShow" />会调整晶体<br class="pcShow" />的位<br class="mbShow" />置，确保在适宜的<br class="mbShow" />位置<br class="pcShow" />再定位。`,
         des4: `手术结束后，需按医<br class="mbShow" />生指示<br class="pcShow" />滴眼药水。<br class="mbShow" />一般矫视后<br class="pcShow" />第二天已<br class="mbShow" />能恢复视力。`,
         des5: `完成手术后，需按<br class="mbShow" />指示<br class="pcShow" />定期覆诊以追<br class="mbShow" />踪视力。`,

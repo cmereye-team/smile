@@ -104,7 +104,7 @@
               </p>
             </div>
             <div class="text mbText" v-if="index === 4">
-              <p v-for="(textItem, textIndex) in item.mbText" :key="textIndex">
+              <p v-for="(textItem, textIndex) in item.text" :key="textIndex">
                 {{ textItem }}
               </p>
             </div>
