@@ -270,6 +270,12 @@ export const $router = [
     name: 'eye-examination',
     title: 'eye-examination',
     component: resolve('pages/new-page/eye-examination.vue')
+  },
+  {
+    path: '/new-group-profile',
+    name: 'group-profile',
+    title: 'group-profile',
+    component: resolve('pages/new-page/group-profile.vue')
   }
 
   

@@ -1894,6 +1894,7 @@ export default {
         font-weight: 300;
         line-height: 30px; /* 150% */
         letter-spacing: 5px;
+        text-align: center;
       }
       & > p {
         text-align: center;

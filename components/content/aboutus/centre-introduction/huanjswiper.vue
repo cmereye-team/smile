@@ -38,15 +38,15 @@
     </div>
     <div class="text_ev page_container">
       <div class="box">
-        <h3>{{$t('aboutUs.centreIntroduction.huanjswiper.h3')}}</h3>
+        <h3>{{ $t("aboutUs.centreIntroduction.huanjswiper.h3") }}</h3>
         <p
-        :style="{
-          textAlign: $i18n.locale === 'en' ? 'justify' : 'inherit',
-        }"
+          :style="{
+            textAlign: $i18n.locale === 'en' ? 'justify' : 'inherit',
+          }"
         >
-          {{$t('aboutUs.centreIntroduction.huanjswiper.p1')}}
+          {{ $t("aboutUs.centreIntroduction.huanjswiper.p1") }}
           K11 ATELIER
-          {{$t('aboutUs.centreIntroduction.huanjswiper.p2')}}
+          {{ $t("aboutUs.centreIntroduction.huanjswiper.p2") }}
         </p>
         <div class="address_box">
           <div class="address">
@@ -54,7 +54,7 @@
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
-            <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p3')}}</p>
+            <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p3") }}</p>
           </div>
           <!-- <div class="address">
             <img
@@ -68,14 +68,14 @@
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
-            <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p5')}}</p>
+            <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p5") }}</p>
           </div>
           <div class="address">
             <img
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
-            <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p6')}}</p>
+            <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p6") }}</p>
           </div>
         </div>
       </div>
@@ -102,10 +102,10 @@ export default {
       swiperOptionThumbs: {
         autoplay: true,
         loop: true,
-        loopedSlides: 8, // looped slides should be the same
-        spaceBetween: 0,
-        centeredSlides: true,
-        slidesPerView: "auto",
+        loopedSlides: 4, // looped slides should be the same
+        spaceBetween: 10,
+        // centeredSlides: true,
+        slidesPerView: "4",
         touchRatio: 0.2,
         slideToClickedSlide: true,
         // slidesPerView: 3,
@@ -159,6 +159,7 @@ export default {
   .swiper-button-prev,
   .swiper-button-next {
     top: 80%;
+    background-size: 27px 70%;
   }
   .address_box {
     margin-top: 40px;
@@ -226,6 +227,7 @@ export default {
   .swiper-slide {
     background-size: cover;
     background-position: center;
+    border-radius: 47px;
   }
   .gallery-top {
     height: 80%;
@@ -239,6 +241,7 @@ export default {
   .gallery-thumbs .swiper-slide {
     width: 20%;
     height: 100%;
+    border-radius: 20px;
   }
   .gallery-thumbs .swiper-slide-active {
     opacity: 1;
