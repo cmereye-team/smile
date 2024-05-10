@@ -295,7 +295,7 @@
     </div>
     <businessHours />
     <Footer />
-    <footers />
+    <FooterMobile />
   </div>
 </template>
 <script>
@@ -303,7 +303,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import footers from "@/components/commom/new_foot/footers.vue";
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import swiperhj from "@/components/content/aboutus/centre-introduction/huanjswiper.vue";
 export default {
@@ -311,7 +311,7 @@ export default {
     Head,
     Footer,
     businessHours,
-    footers,
+    FooterMobile,
     Banner,
     H2Tag,
     swiperhj,
@@ -702,7 +702,7 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
-  .group-profile-box{
+  .group-profile-box {
     margin-bottom: 65px;
   }
   .group-profile-explain {
@@ -921,6 +921,7 @@ export default {
     }
   }
   .explain-second {
+    position: relative;
     padding: 0 18px;
     & > div {
       margin-top: 27px;
@@ -984,6 +985,15 @@ export default {
         letter-spacing: 0.65px;
       }
     }
+  }
+  .explain-second::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 2px;
+    height: 70%;
+    background: linear-gradient(to bottom, #4570b6, #81DBEC); /* 渐变色 */
   }
   .small-title {
     color: #4570b6;

@@ -850,7 +850,7 @@
     </div>
     <businessHours />
     <Footer />
-    <footers />
+    <FooterMobile />
   </div>
 </template>
 <script>
@@ -858,14 +858,14 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import footers from "@/components/commom/new_foot/footers.vue";
+import FooterMobile from '@/components/Publice/FooterMobile.vue'
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
     Head,
     Footer,
     businessHours,
-    footers,
+    FooterMobile,
     Banner,
     H2Tag,
   },
@@ -1218,12 +1218,13 @@ export default {
       letter-spacing: 0.7px;
     }
     & > div:nth-child(3) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+      gap: 0 50px;
       background: url("https://static.cmereye.com/imgs/2024/05/8b3fee68cf89cdf9.png")
         no-repeat;
-      background-size: auto;
+      background-size: 85% 100%;
       width: 100%;
       background-position-x: right;
       margin-top: 140px;
@@ -1234,8 +1235,8 @@ export default {
         justify-content: center;
         align-items: center;
         & > div:nth-child(1) {
-          width: 70%;
-          height: 70%;
+          width: 22.3vw;
+          height: 25.9vw;
           & > img,
           & > svg {
             width: 100%;
@@ -1246,7 +1247,7 @@ export default {
           color: #4570b6;
           text-align: right;
           font-family: "Noto Sans HK";
-          font-size: 16px;
+          font-size: 4.1vw;
           font-style: normal;
           font-weight: 400;
           line-height: 20px; /* 125% */

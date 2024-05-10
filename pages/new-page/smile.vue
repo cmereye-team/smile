@@ -24,7 +24,7 @@
     <Xtra />
     <businessHours />
     <Footer />
-    <footers />
+    <FooterMobile />
   </div>
 </template>
 <script>
@@ -33,7 +33,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import footers from "@/components/commom/new_foot/footers.vue";
+import FooterMobile from '@/components/Publice/FooterMobile.vue'
 
 import Step from "@/components/content/service/relex_smile/Step_copy.vue";
 import Benefit from "@/components/content/service/relex_smile/Benefit_copy.vue";
@@ -45,7 +45,7 @@ export default {
     Head,
     Footer,
     businessHours,
-    footers,
+    FooterMobile,
     Banner,
     Step,
     H2Tag,
