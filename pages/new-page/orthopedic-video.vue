@@ -24,7 +24,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import shareVideo from "@/components/content/ophthalmicInfo/shareVideos/shareVideo.vue";
 
@@ -61,6 +61,9 @@ export default {
     .active {
       border-bottom: 2px solid #4570b6 !important;
     }
+    .tab-control .active {
+      border-bottom: none !important;
+    }
     & > div:nth-child(2) {
       padding: 0 !important;
       & > div:nth-child(2) {
@@ -74,18 +77,28 @@ export default {
         & > li {
           border-bottom: 2px solid #4570b694;
           border-image: none;
+          height: 85px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           P {
             color: #4570b6;
             background-image: none;
             -webkit-background-clip: unset;
             -webkit-text-fill-color: unset;
+            font-family: "Noto Sans HK";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 100% */
+            letter-spacing: 7.5px;
           }
         }
       }
       .tables {
         max-width: 1270px;
         width: 100%;
-        margin: 52px auto 0;
+        margin: 85px auto 0;
 
         & > div:nth-child(2) {
           width: 100%;
@@ -104,14 +117,15 @@ export default {
               }
               & > div {
                 max-width: 392px;
+                margin-top: 0;
                 span {
-                  color: #6d6e71;
+                  color: #6d6e71 !important;
                   text-align: center;
                   font-family: "Noto Sans HK";
                   font-size: 30px;
                   font-style: normal;
                   font-weight: 500;
-                  line-height: 1.8; /* 166.667% */
+                  line-height: 50px; /* 166.667% */
                   letter-spacing: 7.5px;
                 }
               }
@@ -142,14 +156,15 @@ export default {
         }
         .meida {
           max-width: 392px;
+          margin-top: 0px;
           span {
-            color: #6d6e71;
+            color: #6d6e71 !important;
             text-align: center;
             font-family: "Noto Sans HK";
             font-size: 30px;
             font-style: normal;
             font-weight: 500;
-            line-height: 1.8; /* 166.667% */
+            line-height: 50px; /* 166.667% */
             letter-spacing: 7.5px;
           }
         }
@@ -211,13 +226,16 @@ export default {
     margin-top: 85px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {3
+  .share-video{
+    margin-bottom: 55px;
+  }
   :deep(.share-video) {
     h2 {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
     .active {
-      border-bottom: 2px solid #4570b6 !important;
+      border-bottom: none !important;
       background: #4570b6 !important;
       P {
         color: #fff !important;
@@ -237,11 +255,19 @@ export default {
           border-bottom: 2px solid #4570b694;
           border-image: none;
           line-height: 85px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           P {
             color: #4570b6;
             background-image: none;
             -webkit-background-clip: unset;
             -webkit-text-fill-color: unset;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 150% */
+            letter-spacing: 1px;
           }
         }
       }
@@ -287,9 +313,26 @@ export default {
         }
       }
       .tab-control {
+        & > div {
+          border-bottom: none;
+          position: relative;
+        }
+        & > div::before {
+          content: "";
+          position: absolute;
+          left: -10px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #b3dfd6;
+        }
         .active {
+          border-bottom: none !important;
+          background: #fff !important;
           span {
-            color: #fff;
+            color: #4570b6 !important;
             -webkit-text-fill-color: unset;
             background-clip: unset;
             background: none;

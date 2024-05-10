@@ -104,13 +104,13 @@
                     ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="预約日期" v-if="form.address !== ''">
+                <el-form-item label="預約日期" v-if="form.address !== ''">
                   <el-date-picker
                     v-model="form.subdate"
                     type="date"
                     popper-class="date-picker-class"
                     :picker-options="startPickerOptions"
-                    placeholder="预約日期"
+                    placeholder="預約日期"
                     format=" MM 月 dd 日 yyyy 年"
                     value-format="timestamp"
                     clearable
@@ -154,7 +154,7 @@
                   </el-select>
                 </el-form-item>
                 <el-form-item label="年齡">
-                  <el-select v-model="form1.age" placeholder="請選挥" clearable>
+                  <el-select v-model="form1.age" placeholder="請選擇" clearable>
                     <el-option
                       label="17歲或以下"
                       value="17歲或以下"
@@ -169,7 +169,7 @@
                     ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="聨络電話">
+                <el-form-item label="聯絡電話">
                   <el-input
                     placeholder="請填寫"
                     type="numberSeat"
@@ -188,7 +188,7 @@
                 <el-form-item label="從何得知">
                   <el-select
                     v-model="form1.source"
-                    placeholder="請選挥"
+                    placeholder="請選擇"
                     clearable
                   >
                     <el-option
@@ -237,7 +237,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
@@ -268,6 +268,7 @@ export default {
       startPickerOptions: {
         disabledDate: (time) => this.disabledDate(time),
       },
+      isMobile: false,
     };
   },
   computed: {},
@@ -479,7 +480,22 @@ export default {
       return year + "-" + month + "-" + day;
     },
   },
-  mounted() {},
+  mounted() {
+    // 获取屏幕宽度
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    });
+
+    if (window.innerWidth < 768) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
+  },
 };
 </script>
 
@@ -601,6 +617,17 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    & > div:nth-child(2) {
+      margin-top: 10px;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 50px; /* 166.667% */
+      letter-spacing: 7.5px;
+    }
   }
   .lecture-content {
     margin-top: -5%;
@@ -756,7 +783,7 @@ export default {
       max-width: 150px;
     }
     & > p:nth-child(1) {
-      color: #fff;
+      color: #4570b6;
       font-family: "Noto Sans HK";
       font-size: 14px;
       font-style: normal;
@@ -765,7 +792,7 @@ export default {
       letter-spacing: 3.5px;
     }
     & > p:nth-child(2) {
-      color: #fff;
+      color: #4570b6;
       font-family: "Noto Sans HK";
       font-size: 10px;
       font-style: normal;
@@ -778,17 +805,19 @@ export default {
     background: url(https://static.cmereye.com/imgs/2024/04/d7625f69f04ff1b8.png)
       no-repeat;
     background-size: 100% 100%;
-    width: 100vw;
-    background-position: center;
-    padding: 0 30px 40px;
-    position: relative;
+    width: 100%;
     margin-top: 100px;
+    padding: 115px 0 40px;
+    position: relative;
     & > div {
       display: flex;
       flex-direction: column;
       align-items: center;
       .title-img {
-        transform: translateY(-50%);
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 170px;
         height: 170px;
         background: #fff;
@@ -797,9 +826,26 @@ export default {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        & > div:nth-child(1) {
+          position: relative;
+          top: 15px;
+        }
+        & > div:nth-child(2) {
+          margin-top: 15px;
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 35px; /* 175% */
+          letter-spacing: 1px;
+          position: relative;
+          top: 3px;
+        }
       }
       .lecture-content {
-        margin-top: -50px;
+        // margin-top: -50px;
         & > div:nth-child(1) {
           color: #4570b6;
           text-align: center;

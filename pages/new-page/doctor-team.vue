@@ -110,7 +110,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
@@ -450,10 +450,11 @@ export default {
         }
         & > div:nth-child(2) {
           background: #fff;
-          border-radius: 0px 40px 0px 20px;
-          padding-left: 30px;
+          border-radius: 0px 40px 0px 40px;
+          padding-left: 40px;
           padding-right: 5px;
           position: relative;
+          left: -15px;
           z-index: 3;
           min-width: 348px;
           & > div:nth-child(1) {
@@ -469,6 +470,7 @@ export default {
             span {
               font-size: 16px;
               letter-spacing: 1.6px;
+              margin-left: 10px;
             }
           }
           & > div:nth-child(2) {
@@ -527,6 +529,7 @@ export default {
     padding: 0 30px;
     & > div:nth-child(2) {
       & > div:nth-child(1) {
+        margin: 40px auto;
         color: #4570b6;
         text-align: center;
         font-family: "Noto Sans HK";
@@ -614,6 +617,7 @@ export default {
         & > div:nth-child(1) {
           flex: 4.5;
           width: 148px;
+          min-width: 148px;
           border-radius: 0 25px;
           overflow: hidden;
           & > img {
@@ -631,24 +635,26 @@ export default {
           height: 224px;
           display: inline-block;
           position: absolute;
-          z-index: 1;
-          left: -8px;
-          top: -10px;
+          z-index: 2;
+          left: -6px;
+          top: -7px;
         }
         & > div:nth-child(2) {
           flex: 5.5;
           background: #fff;
           box-sizing: border-box;
           position: relative;
-          z-index: 2;
-          left: -6px;
-          border-radius: 0 40px;
-          padding-left: 20px;
+          z-index: 1;
+          left: -20px;
+          border-radius: 0 40px 0 20px;
+          padding-left: 40px;
           min-height: 210px;
           top: -10px;
           display: flex;
           flex-direction: column;
           justify-content: center;
+          box-sizing: border-box;
+          padding-right: 0;
 
           & > div:nth-child(1) {
             color: #4570b6;
@@ -661,10 +667,11 @@ export default {
             & > span {
               font-size: 14px;
               letter-spacing: 0.7px;
+              margin-left: 8px;
             }
           }
           & > div:nth-child(2) {
-            margin-top: 10px;
+            margin-top: 5px;
             display: flex;
             flex-direction: column;
             color: #4570b6;
@@ -696,22 +703,29 @@ export default {
           height: 224px;
           display: inline-block;
           position: absolute;
-          z-index: 1;
+          z-index: 2;
           left: auto;
-          top: -10px;
-          right: -8px;
+          top: -8px;
+          right: -6px;
         }
         & > div:nth-child(2) {
           flex: 5.5;
           background: #fff;
           box-sizing: border-box;
           position: relative;
-          z-index: 2;
+          z-index: 1;
           left: auto;
           right: -8px;
-          border-radius: 40px 0;
-          padding-left: -5px;
-          padding-right: 20px;
+          border-radius: 20px 0 40px 0;
+          padding-left: 20px;
+          padding-right: 15px;
+        }
+      }
+      & > div:nth-child(1) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            line-height: 18px;
+          }
         }
       }
     }

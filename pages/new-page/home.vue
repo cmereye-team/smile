@@ -718,7 +718,7 @@ import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 export default {
   components: {
     Head,
@@ -1090,6 +1090,8 @@ export default {
             line-height: 1.8; /* 222.222% */
             letter-spacing: 1.44px;
             text-align: center;
+            position: relative;
+            top: -8px;
             span {
               color: #fff;
               text-align: center;
@@ -1140,6 +1142,10 @@ export default {
           background: url("https://static.cmereye.com/imgs/2024/04/0e5b1cb6c5baedf9.png")
             no-repeat;
           background-size: 100% 100%;
+          & > p {
+            position: relative;
+            top: 8px;
+          }
         }
         & > div:nth-child(2) {
           position: absolute;
