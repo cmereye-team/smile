@@ -276,6 +276,12 @@ export const $router = [
     name: 'group-profile',
     title: 'group-profile',
     component: resolve('pages/new-page/group-profile.vue')
+  },
+  {
+    path: '/new-equipment',
+    name: 'new-equipment',
+    title: 'new-equipment',
+    component: resolve('pages/new-page/equipment.vue')
   }
 
   

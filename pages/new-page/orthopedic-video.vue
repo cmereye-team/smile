@@ -226,7 +226,7 @@ export default {
     margin-top: 85px;
   }
 }
-@media screen and (max-width: 767px) {3
+@media screen and (max-width: 767px) {
   .share-video{
     margin-bottom: 55px;
   }
