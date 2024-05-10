@@ -250,14 +250,16 @@ export const $router = [
   {
     path: '/follow-up-consultation',
     name: 'follow-up-consultation',
+    // 矯視後覆診
     title: 'follow-up-consultation',
-    component: resolve('pages/new-page/follow-up-consultation.vue')
+    component: resolve('pages/new-page/follow-up-consultation.vue') 
   },
   {
     path: '/vision-correction',
     name: 'vision-correction',
     title: 'vision-correction',
     component: resolve('pages/new-page/vision-correction.vue')
+    // 矯視流程
   },
   {
     path: '/common-problem',
@@ -282,7 +284,14 @@ export const $router = [
     name: 'new-equipment',
     title: 'new-equipment',
     component: resolve('pages/new-page/equipment.vue')
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    title: 'blog',
+    component: resolve('pages/new-page/blog.vue')
   }
+
 
   
 ]
