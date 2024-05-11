@@ -872,7 +872,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@font-face {
+  font-family: "Orbitron";
+  src: url("https://static.cmereye.com/static/font/Orbitron-Bold-900.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 .orbitron-nine {
   font-family: "Orbitron", sans-serif !important;
   font-optical-sizing: auto;
@@ -1004,6 +1011,12 @@ export default {
       }
       & > div:nth-child(1) {
         & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            span {
+              position: relative;
+              top: -6px;
+            }
+          }
           & > a {
             top: 15px;
           }
@@ -1012,6 +1025,10 @@ export default {
       & > div:nth-child(2) {
         margin: 0 128px;
         & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            position: relative;
+            top: -18px;
+          }
           & > a {
             top: 8px;
           }
@@ -1019,6 +1036,12 @@ export default {
       }
       & > div:nth-child(3) {
         & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            span {
+              position: relative;
+              top: -6px;
+            }
+          }
           & > a {
             top: 13px;
           }
@@ -1028,6 +1051,12 @@ export default {
         margin-right: 64px;
         margin-top: 12px;
         & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            span {
+              position: relative;
+              top: -6px;
+            }
+          }
           & > a {
             top: 4px;
           }
@@ -1036,6 +1065,12 @@ export default {
       & > div:nth-child(5) {
         margin-left: 64px;
         & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            span {
+              position: relative;
+              top: -4px;
+            }
+          }
           & > a {
             top: 2px;
           }

@@ -178,117 +178,117 @@ export const $router = [
   {
     path: '/smile',
     name: 'new-page/smile',
-    title: 'smile',
+    title: 'SMILE 微笑激光矯視',
     component: resolve('pages/new-page/smile.vue')
   },
   {
     path: '/smile-pro',
     name: 'new-page/smile-pro',
-    title: 'smile-pro',
+    title: 'SMILE-Pro  微笑激光矯視',
     component: resolve('pages/new-page/smile-pro.vue')
   },
   {
     path: '/clear-vision',
     name: 'new-page/clear-vision',
-    title: 'cmer clear-vision',
+    title: 'CMER CLEAR-Vision',
     component: resolve('pages/new-page/clear-vision.vue')
   },
   {
     path: '/lasik',
     name: 'new-page/lasik',
-    title: 'lasik',
+    title: 'LASIK 激光矯視',
     component: resolve('pages/new-page/lasik.vue')
   },
   {
     path: '/icl',
     name: 'new-page/icl',
-    title: 'icl',
+    title: 'ICL 植入式隱形眼鏡',
     component: resolve('pages/new-page/icl.vue')
   },
   {
     path: '/new-fee',
-    name: 'new-page/icl',
-    title: 'icl',
+    name: 'new-page/fee',
+    title: '收費詳情',
     component: resolve('pages/new-page/fee.vue')
   },
   {
     path: '/new-home',
     name: 'new-home',
-    title: 'home',
+    title: '主页',
     component: resolve('pages/new-page/home.vue')
   },
   {
     path: '/preaching-seat',
     name: 'preaching-seat',
-    title: 'preaching-seat',
+    title: '講座',
     component: resolve('pages/new-page/preaching-seat.vue')
   },
   {
     path: '/doctor-team',
     name: 'doctor-team',
-    title: 'doctor-team',
+    title: '醫生團隊',
     component: resolve('pages/new-page/doctor-team.vue')
   },
   {
     path: '/orthopedic-video',
     name: 'orthopedic-video',
-    title: 'orthopedic-video',
+    title: '矯視資訊影片',
     component: resolve('pages/new-page/orthopedic-video.vue')
   },
   {
     path: '/media-coverage',
     name: 'media-coverage',
-    title: 'media-coverage',
+    title: '媒體報導',
     component: resolve('pages/new-page/media-coverage.vue')
   },
   {
     path: '/new-contact-us',
     name: 'contact-us',
-    title: 'contact-us',
+    title: '聯絡我們',
     component: resolve('pages/new-page/contact-us.vue')
   },
   {
     path: '/follow-up-consultation',
     name: 'follow-up-consultation',
     // 矯視後覆診
-    title: 'follow-up-consultation',
+    title: '矯視後覆診',
     component: resolve('pages/new-page/follow-up-consultation.vue') 
   },
   {
     path: '/vision-correction',
     name: 'vision-correction',
-    title: 'vision-correction',
+    title: '矯視流程',
     component: resolve('pages/new-page/vision-correction.vue')
     // 矯視流程
   },
   {
     path: '/common-problem',
     name: 'common-problem',
-    title: 'common-problem',
+    title: '常見問題',
     component: resolve('pages/new-page/common-problem.vue')
   },
   {
     path: '/eye-examination',
     name: 'eye-examination',
-    title: 'eye-examination',
+    title: '眼睛檢查及矯視前',
     component: resolve('pages/new-page/eye-examination.vue')
   },
   {
     path: '/new-group-profile',
     name: 'group-profile',
-    title: 'group-profile',
+    title: '集團簡介',
     component: resolve('pages/new-page/group-profile.vue')
   },
   {
     path: '/new-equipment',
     name: 'new-equipment',
-    title: 'new-equipment',
+    title: '中心設備',
     component: resolve('pages/new-page/equipment.vue')
   },
   {
     path: '/blog',
     name: 'blog',
-    title: 'blog',
+    title: '科普知識',
     component: resolve('pages/new-page/blog.vue')
   }
 
