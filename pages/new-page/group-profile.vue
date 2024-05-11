@@ -531,6 +531,7 @@ export default {
     & > div:nth-child(5) {
       display: flex;
       align-items: center;
+      margin-bottom: 20px;
       & > div:nth-child(1) {
         color: #4570b6;
         font-family: "Noto Sans HK";
@@ -557,6 +558,7 @@ export default {
       }
     }
     & > div:nth-child(5) {
+      margin-bottom: 0;
       & > div:nth-child(1) {
         writing-mode: vertical-rl; /* 从右向左垂直书写 */
         text-orientation: upright; /* 保持文字正立 */
@@ -685,7 +687,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -939,6 +941,7 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 0 3px;
       }
       & > div:nth-child(2) {
         color: #4570b6;
@@ -954,9 +957,11 @@ export default {
 
     & > div:nth-child(5) {
       & > div:nth-child(1) {
+        font-size: 35px;
         writing-mode: vertical-rl; /* 从右向左垂直书写 */
         text-orientation: upright; /* 保持文字正立 */
         white-space: nowrap; /* 避免换行 */
+        padding: 0;
       }
       & > div:nth-child(2) {
         padding-right: 4px;

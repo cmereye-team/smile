@@ -1,5 +1,5 @@
 <template>
-  <div v-if="screenWidth > 768" class="footer_new">
+  <div v-if="!isMobile" class="footer_new">
     <div class="main_footer">
       <div
         class="logo_footer"
@@ -107,7 +107,7 @@
       </div>
     </div>
   </div>
-  <div class="main_footer" v-else-if="screenWidth < 768">
+  <div class="main_footer" v-else-if="isMobile">
     <div class="section flex justify-between">
       <div class="mb_footer_eng">
         <div
@@ -257,7 +257,6 @@ export default {
   },
   data() {
     return {
-      screenWidth: "", //屏幕宽度
       activeName: "1",
       groupList: {
         main_nav: this.$t("home.headers.aboutSmile"),
@@ -477,30 +476,8 @@ export default {
           ],
         },
       ],
+      isMobile: false,
     };
-  },
-  watch: {
-    screenWidth: {
-      handler: function (val, oldVal) {
-        if (val < 768) {
-          // console.log("屏幕宽度小于768px");
-        } else {
-          // console.log("屏幕宽度大于768px");
-        }
-      },
-      immediate: true,
-    },
-  },
-  created() {
-    if (process.client) {
-      this.screenWidth = document.body.clientWidth;
-      // console.log('this.screenWidth===',this.screenWidth);
-      window.onresize = () => {
-        return () => {
-          this.screenWidth = document.body.clientWidth;
-        };
-      };
-    }
   },
   methods: {
     changeCollapse() {
@@ -511,6 +488,22 @@ export default {
         });
       }
     },
+  },
+  mounted() {
+    // 获取屏幕宽度
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    });
+
+    if (window.innerWidth < 768) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   },
 };
 </script>

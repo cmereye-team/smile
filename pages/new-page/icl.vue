@@ -233,7 +233,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -301,7 +301,7 @@ export default {
 }
 .characteristic {
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -312,8 +312,10 @@ export default {
     width: 200%;
     height: 0;
     padding-bottom: 200%;
-    background: rgba(199, 232, 239, 0.2);
-    border-radius: 50%/40%;
+    // background: rgba(199, 232, 239, 0.2);
+    // border-radius: 50%/40%;
+    background: url(https://static.cmereye.com/imgs/2024/05/e102853c2e3b96d4.png) no-repeat;
+    background-size: 100% 100%;
     top: 0;
     left: 50%;
     transform: translateX(-50%);

@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>眼睛檢查及矯視前</p>
+          <p>眼睛檢查<br v-if="isMobile" />及矯視前</p>
           <p>Eye examination and before vision correction</p>
         </div>
       </template>
@@ -2176,6 +2176,7 @@ export default {
         }
       }
       & > div:nth-child(2) {
+        margin-top: 32px;
         display: flex;
         justify-content: space-between;
         & > div {
@@ -2287,7 +2288,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }

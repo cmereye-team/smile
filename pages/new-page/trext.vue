@@ -73,7 +73,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }

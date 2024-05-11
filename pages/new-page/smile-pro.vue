@@ -1400,7 +1400,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -2316,7 +2316,7 @@ export default {
 
     & > div:last-child {
       & > div {
-        border-radius: 0 0 50px 50px;
+        // border-radius: 0 0 50px 50px;
       }
     }
     & > div:nth-child(odd) {

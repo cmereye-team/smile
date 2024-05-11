@@ -143,7 +143,88 @@
               <div>眼睛完成微笑矯視</div>
             </div>
             <div>
-              <div>
+              <div v-if="isMobile">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="94"
+                  viewBox="0 0 80 94"
+                  fill="none"
+                >
+                  <path
+                    d="M37.531 37.8485L36.591 38.4527C34.5047 39.7941 33.901 42.5833 35.246 44.6581L44.3629 58.6915C45.7118 60.7625 48.5164 61.3629 50.6027 60.0253L51.5465 59.4211C53.6289 58.0835 54.2365 55.2905 52.8876 53.2157L43.7745 39.1861C42.4257 37.1151 39.6172 36.5109 37.5348 37.8523L37.531 37.8485Z"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M29.0028 43.3283L28.059 43.9325C25.9727 45.2701 25.3728 48.0631 26.7178 50.1379L35.8348 64.1674C37.1836 66.2384 39.9882 66.8426 42.0745 65.5012L43.0145 64.897C45.1008 63.5556 45.7045 60.7664 44.3557 58.6917L35.2387 44.6583C33.8937 42.5835 31.0852 41.9869 29.0028 43.3245V43.3283Z"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M64.967 49.7466L64.9058 16.394C64.9058 13.5707 62.5827 11.2603 59.7475 11.2603H58.6623C55.8233 11.2603 53.5039 13.5707 53.5039 16.394V35.5688"
+                    stroke="#A6E1D6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M46.0524 32.373L45.1125 32.9772C43.0262 34.3186 42.4225 37.1116 43.7675 39.1826L50.844 50.0734C52.1928 52.1482 54.9974 52.7486 57.0837 51.4072L58.0275 50.803C60.11 49.4616 60.7137 46.6724 59.3687 44.5976L52.296 33.7068C50.951 31.632 48.1387 31.0316 46.0563 32.373H46.0524Z"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M26.1758 48.937L27.5743 72.3412L35.5411 89.7034C38.8234 91.1056 44.7956 93.1576 52.4759 92.9904C59.2123 92.8422 64.4853 91.0524 67.6262 89.7072C67.6262 89.7072 73.5259 77.5928 75.6236 73.656C77.7175 69.7192 81.5042 56.8562 76.3458 53.4856C73.9424 51.9124 62.8232 49.1992 62.8232 49.1992C62.8232 49.1992 60.3051 48.329 59.0862 50.4912C57.5349 53.2538 57.8215 56.423 60.1561 58.304L66.0902 62.4042L65.0547 66.7438C60.5573 71.2392 56.0638 75.7346 51.5665 80.2262"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.41525 17.5449C8.18341 16.9464 9.13501 15.0379 8.5407 13.2821C7.94639 11.5263 6.03123 10.5881 4.26306 11.1866C2.4949 11.7851 1.54331 13.6936 2.13762 15.4494C2.73193 17.2052 4.64709 18.1434 6.41525 17.5449Z"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M30.8098 9.28782C32.5779 8.68933 33.5295 6.7808 32.9352 5.025C32.3409 3.2692 30.4258 2.33102 28.6576 2.92951C26.8894 3.52801 25.9378 5.43654 26.5321 7.19234C27.1265 8.94814 29.0416 9.88632 30.8098 9.28782Z"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M6.41699 17.5471L13.5949 28.2041L32.8505 21.6863L30.8111 9.2901"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M9.00835 14.6565L15.0472 15.848L15.9107 8.31493"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M27.7561 8.31085L23.6824 12.9252L18.4189 7.46606"
+                    stroke="#4570B6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M17.5598 7.75413C19.3279 7.15564 20.2795 5.2471 19.6852 3.49131C19.0909 1.73551 17.1758 0.797326 15.4076 1.39582C13.6394 1.99432 12.6878 3.90285 13.2821 5.65865C13.8765 7.41445 15.7916 8.35263 17.5598 7.75413Z"
+                    stroke="#A6E1D6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+              </div>
+              <div v-else>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -824,7 +905,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -910,6 +991,8 @@ export default {
             font-weight: 300;
             line-height: 35px; /* 152.174% */
             letter-spacing: 10.35px;
+            position: relative;
+            top: 10px;
           }
           & > div:nth-child(1),
           & > div:nth-child(2) {
@@ -919,14 +1002,44 @@ export default {
           }
         }
       }
+      & > div:nth-child(1) {
+        & > div:nth-child(2) {
+          & > a {
+            top: 15px;
+          }
+        }
+      }
       & > div:nth-child(2) {
         margin: 0 128px;
+        & > div:nth-child(2) {
+          & > a {
+            top: 8px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > a {
+            top: 13px;
+          }
+        }
       }
       & > div:nth-child(4) {
         margin-right: 64px;
+        margin-top: 12px;
+        & > div:nth-child(2) {
+          & > a {
+            top: 4px;
+          }
+        }
       }
       & > div:nth-child(5) {
         margin-left: 64px;
+        & > div:nth-child(2) {
+          & > a {
+            top: 2px;
+          }
+        }
       }
     }
     & > a {
@@ -969,7 +1082,7 @@ export default {
         background: #fff;
         border-radius: 50%;
         position: absolute;
-        top: -25%;
+        top: -19%;
         left: 50%;
         transform: translateX(-50%);
         & > div:nth-child(2) {
@@ -1441,6 +1554,15 @@ export default {
           }
         }
       }
+      & > div:nth-child(1),
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > a {
+            position: relative;
+            top: 8px;
+          }
+        }
+      }
       & > div:nth-child(2) {
         & > div:nth-child(2) {
           & > div:nth-child(1) {
@@ -1454,6 +1576,10 @@ export default {
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             line-height: 1.2;
+          }
+          & > a {
+            position: relative;
+            top: -4px;
           }
         }
       }

@@ -47,13 +47,14 @@ h2 {
       font-weight: 500;
       line-height: 30px; /* 100% */
       letter-spacing: 7.5px;
+      padding-left: 5px;
     }
   }
   h2::after {
     content: "";
     background: #a6e1d6;
     width: 39px;
-    height: 8px;
+    height: 5px;
     border-radius: 3px;
     position: absolute;
     left: 50%;

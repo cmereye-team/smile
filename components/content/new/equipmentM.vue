@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div @click="getListArray" v-if="moreBtn" class="more-btn">获取更多</div>
+    <div @click="getListArray" v-if="moreBtn" class="more-btn">觀看更多</div>
   </div>
 </template>
 <script>

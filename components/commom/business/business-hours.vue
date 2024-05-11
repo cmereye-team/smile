@@ -1,15 +1,16 @@
 <template>
   <div class="businessHours">
-    <h2 class="businessHours-title">營業時間</h2>
+    <H2Tag :title="['營業時間']" />
     <div class="businessHours-img">
       <img
-        data-src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg"
-        srcset="
-        https://static.cmereye.com/imgs/2023/08/c80ae8a53c8e5a0b.jpg 768w,
-        https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg
-      "
+        v-if="isMobile"
+        src="https://static.cmereye.com/imgs/2024/05/8e0638222f3e432d.jpg"
+        alt="营业环境"
+      />
+      <img
+        v-else
         src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg"
-        alt=""
+        alt="营业环境"
       />
     </div>
     <div class="businessHours-time">
@@ -140,7 +141,11 @@
 </template>
 
 <script>
+import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
+  components: {
+    H2Tag,
+  },
   data() {
     return {
       businessHours: [
@@ -190,7 +195,41 @@ export default {
           context: "",
         },
       ],
+      isMobile: false,
+      mounted() {
+        // 获取屏幕宽度
+        window.addEventListener("resize", () => {
+          if (window.innerWidth < 768) {
+            this.isMobile = true;
+          } else {
+            this.isMobile = false;
+          }
+        });
+
+        if (window.innerWidth < 768) {
+          this.isMobile = true;
+        } else {
+          this.isMobile = false;
+        }
+      },
     };
+  },
+  isMobile: false,
+  mounted() {
+    // 获取屏幕宽度
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 768) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    });
+
+    if (window.innerWidth < 768) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   },
 };
 </script>
@@ -245,7 +284,7 @@ export default {
         font-family: "Noto Sans";
         font-size: 17px;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 180%; /* 30.6px */
         letter-spacing: 2.04px;
       }
@@ -328,10 +367,13 @@ export default {
       }
       div:nth-child(1) {
         margin-right: 9px;
+        padding-left: 6px;
       }
       h3 {
         color: #6d6e71;
+        font-family: "Noto Sans HK";
         font-size: 23px;
+        font-style: normal;
         font-weight: 500;
         line-height: 40px; /* 173.913% */
         letter-spacing: 2.3px;
@@ -371,7 +413,7 @@ export default {
           font-family: "Noto Sans";
           font-size: 12px;
           font-style: normal;
-          font-weight: 300;
+          font-weight: 400;
           line-height: 180%; /* 30.6px */
           letter-spacing: 2.04px;
         }

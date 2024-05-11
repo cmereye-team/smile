@@ -300,7 +300,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -456,7 +456,8 @@ export default {
           position: relative;
           left: -15px;
           z-index: 3;
-          min-width: 348px;
+          // min-width: 348px;
+          min-width: 405.5px;
           & > div:nth-child(1) {
             margin-top: 75px;
             margin-bottom: 15px;
@@ -572,7 +573,7 @@ export default {
     }
   }
   .doctor-team-member {
-    background: url("https://static.cmereye.com/imgs/2024/04/7f498c9a45d803a7.png")
+    background: url("https://static.cmereye.com/imgs/2024/05/c4109fd202815835.png")
       no-repeat;
     width: 100vw;
     background-size: 100% 100%;
@@ -655,6 +656,7 @@ export default {
           justify-content: center;
           box-sizing: border-box;
           padding-right: 0;
+          min-width: 219px;
 
           & > div:nth-child(1) {
             color: #4570b6;
@@ -687,6 +689,7 @@ export default {
       }
       & > div:nth-child(even) {
         flex-direction: row-reverse;
+   
         & > div:nth-child(1) {
           border-radius: 25px 0 25px 0;
           overflow: hidden;
@@ -719,6 +722,7 @@ export default {
           border-radius: 20px 0 40px 0;
           padding-left: 20px;
           padding-right: 15px;
+          min-width: 208px;
         }
       }
       & > div:nth-child(1) {

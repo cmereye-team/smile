@@ -34,7 +34,7 @@
       <div class="principle-img">
         <div class="principle-img-in">
           <img
-            src="https://static.cmereye.com/imgs/2024/04/3f3ad58f7379f6a7.png"
+            src="https://static.cmereye.com/imgs/2024/05/1f20b33e3e858609.png"
             alt=""
           />
         </div>
@@ -127,7 +127,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 
 export default {
@@ -229,7 +229,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -278,7 +278,7 @@ export default {
 }
 .principle {
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -289,12 +289,13 @@ export default {
     width: 200%;
     height: 0;
     padding-bottom: 200%;
-    background: rgba(199, 232, 239, 0.2);
-    border-radius: 50%/40%;
+    background: url(https://static.cmereye.com/imgs/2024/05/18206225b503de8f.png)
+      no-repeat;
+    background-size: 100% 100%;
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
+    z-index: 1;
   }
   &-top {
     width: 307px;
@@ -306,6 +307,8 @@ export default {
     background: #fff;
     border-radius: 50%;
     margin: 0 auto;
+    z-index: 3;
+    position: relative;
     h3 {
       color: #4570b6;
       text-align: center;
@@ -424,7 +427,7 @@ export default {
     font-weight: 400;
   }
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: 0 auto 85px;
   overflow: hidden;
   position: relative;
@@ -435,8 +438,11 @@ export default {
     width: 200%;
     height: 0;
     padding-bottom: 200%;
-    background: rgba(199, 232, 239, 0.2);
-    border-radius: 50%/40%;
+    // background: rgba(199, 232, 239, 0.2);
+    // border-radius: 50%/40%;
+    background: url(https://static.cmereye.com/imgs/2024/05/53bf2271c231b37d.png)
+      no-repeat;
+    background-size: 100% 100%;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -597,8 +603,10 @@ export default {
       h3 {
         font-size: 20px;
         font-weight: 400;
-        line-height: 35px; /* 175% */
+        line-height: 25px; /* 175% */
         letter-spacing: 5px;
+        position: relative;
+        top: -10px;
       }
     }
     &-img {
@@ -727,6 +735,14 @@ export default {
           }
           .mbText {
             display: block;
+          }
+        }
+      }
+      &-in:nth-child(4){
+        .image{
+          max-width: 68px;
+          img{
+            max-width: 100%;
           }
         }
       }

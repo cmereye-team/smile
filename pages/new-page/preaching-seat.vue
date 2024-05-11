@@ -221,10 +221,9 @@
         </div>
       </div>
       <div class="lecture-image">
-        <img
-          src="https://static.cmereye.com/imgs/2024/04/42da8402ce3070f6.png"
-          alt="4-5月份"
-        />
+        <img src="https://static.cmereye.com/imgs/2024/05/981dfa415874c150.jpg" alt="中环">
+        <img src="https://static.cmereye.com/imgs/2024/05/64e0883e9e270804.jpg" alt="旺角">
+        <img src="https://static.cmereye.com/imgs/2024/05/2027bf78dad52c96.jpg" alt="尖沙咀">
       </div>
     </div>
     <businessHours />
@@ -567,7 +566,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -673,6 +672,8 @@ export default {
   .lecture-image {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 85px 0;
     & > img {
       width: 952px;

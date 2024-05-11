@@ -915,7 +915,7 @@ export default {
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    padding: 160px 0 100px;
+    padding: 200px 0 100px;
     margin-top: 240px;
     position: relative;
     & > div {
@@ -923,7 +923,7 @@ export default {
       margin: 0 auto;
       & > div:nth-child(1) {
         position: absolute;
-        top: -12%;
+        top: -8%;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -1092,7 +1092,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }

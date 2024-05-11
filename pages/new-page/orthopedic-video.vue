@@ -132,6 +132,29 @@ export default {
             }
           }
         }
+        & > a {
+          background: #4570b6 !important;
+          height: auto;
+          width: 100%;
+          display: flex;
+          width: fit-content;
+          margin: 0 auto;
+          border-radius: 100px;
+          padding: 17px 150px;
+          & > div {
+            & > span {
+              color: #fff;
+              text-align: center;
+              font-family: "Noto Sans HK";
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 30px; /* 100% */
+              letter-spacing: 7.5px;
+            }
+            background: transparent !important;
+          }
+        }
       }
       .tab-control {
         .active {
@@ -207,7 +230,7 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 50.75px; /* 169.167% */
       letter-spacing: 7.5px;
     }
@@ -227,7 +250,7 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
-  .share-video{
+  .share-video {
     margin-bottom: 55px;
   }
   :deep(.share-video) {
@@ -306,6 +329,31 @@ export default {
                 }
               }
             }
+          }
+        }
+        & > a {
+          background: #4570b6 !important;
+          height: auto;
+          width: 100%;
+          display: flex;
+          margin: 0 auto;
+          border-radius: 100px;
+          padding: 10px 100px;
+          & > div {
+            & > span {
+              color: #fff;
+              text-align: center;
+              font-family: "Noto Sans HK";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 30px; /* 150% */
+              letter-spacing: 1px;
+            }
+            background: transparent !important;
+            width: 100%;
+            margin-top: 0;
+            margin: 0 auto;
           }
         }
         .media-buju {

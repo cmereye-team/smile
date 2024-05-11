@@ -210,6 +210,7 @@ h2 {
   }
   .swiper-slide {
     width: 100%;
+    cursor: pointer;
     img {
       width: 100%;
     }

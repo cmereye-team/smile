@@ -100,6 +100,9 @@ export default {
   .faq {
     padding: 0 30px;
   }
+  :deep(.el-collapse){
+    border:none
+  }
   :deep(.el-collapse-item__arrow) {
     display: block;
   }
