@@ -417,7 +417,7 @@ module.exports = {
     td1_3: "享受无镜生活限时优惠 ",
     td1_4: "由",
     td1_5: "限时优惠 由即日起",
-    td1_5_1:'至31.1.2024',
+    td1_5_1: '至31.1.2024',
     td2: "术前检查费用",
     span1: "*指定信用卡（东亚/渣打/滙丰）可享6/12个月免息分期",
     span2: "^完成矫视后可退回术前检查费用",
@@ -896,6 +896,7 @@ module.exports = {
       tabControlItem: {
         title: [
           "Smile 微笑矫视",
+          "SMILE PRO 微笑矫视 ",
           "ICL植入式隐形眼镜",
           "LASIK 激光矫视",
           "矫视知多D",
@@ -929,6 +930,11 @@ module.exports = {
         },
       ],
       mediaBujuLists_1_2: [
+        {
+          link: "https://youtu.be/85OX0uADWEw",
+          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          meida: `<span>微笑矫视 - 胡瀞诗Ceci Wu</span>`,
+        },
         {
           link: "https://youtu.be/gRKFwHXBAzc",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2023/02/7916734434_95270280400_1675237466957_Lok-Hei_Thumnail-16-9-copy-1.jpg",
@@ -1085,6 +1091,92 @@ module.exports = {
           meida: `<span>SMILE后几时先可以化眼妆💡</span>`,
         },
       ],
+      mediaBujuLists_1_3: [
+        {
+          link: "https://youtu.be/Oagx6REZNIU",
+          img: "https://static.cmereye.com/imgs/2024/05/de057cc981178252.png",
+          meida: `<span>SMILE PRO微笑矫视-应智越 细猫</span>`,
+        },
+        {
+          link: "https://youtu.be/pEZotzT-TeU",
+          img: "https://static.cmereye.com/imgs/2024/05/b3a64f2297aa5d56.png",
+          meida: `<span>SMILE PRO微笑矫视-Mina</span>`,
+        },
+        {
+          link: "https://youtu.be/g9XwsIASJa4",
+          img: "https://static.cmereye.com/imgs/2024/05/c165a2c28ef7f91d.png",
+          meida: `<span>SMILE PRO微笑矫视-米姬Maggie</span>`,
+        },
+        {
+          link: "https://youtu.be/I6Yv4PTTSC4",
+          img: "https://static.cmereye.com/imgs/2024/05/aafe36df241e686b.png",
+          meida: `<span>SMILE PRO微笑矫视-Cindy Wong</span>`,
+        },
+        {
+          link: "https://youtu.be/Habf2htLhbQ",
+          img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
+          meida: `<span>SMILE PRO微笑矫视-刘学铭</span>`,
+        },
+        {
+          link: "https://youtu.be/cLVfjeX3WwA",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE PRO微笑矫视-Jimmy</span>`,
+        },
+        {
+          link: "https://youtu.be/iHBGkRh-CXw",
+          img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
+          meida: `<span>SMILE PRO微笑矫视-Sandy To</span>`,
+        },
+        {
+          link: "https://youtu.be/N1Uar7xC_vk",
+          img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
+          meida: `<span>SMILE PRO微笑矫视-莎比亚</span>`,
+        },
+      ],
+
+      mediaBujuLists_2_3: [
+        {
+          link: "https://youtu.be/1p5Qm_772jI",
+          img: "https://static.cmereye.com/imgs/2024/05/5570a3ebeac02ae6.png",
+          meida: `<span>SMILE PRO微笑矫视-应智越 细猫</span>`,
+        },
+        {
+          link: "https://youtu.be/4ELnbQjUCsA",
+          img: "https://static.cmereye.com/imgs/2024/05/e2ad3164b4b70c64.png",
+          meida: `<span>SMILE PRO微笑矫视-Mina</span>`,
+        },
+        {
+          link: "https://youtu.be/r4rbUUVtjzM",
+          img: "https://static.cmereye.com/imgs/2024/05/0ba23b592be25e40.png",
+          meida: `<span>SMILE PRO微笑矫视-米姬Maggie</span>`,
+        },
+        {
+          link: "https://youtu.be/kVEJ-PN4AJo",
+          img: "https://static.cmereye.com/imgs/2024/05/bb90fa03cbfbc945.png",
+          meida: `<span>SMILE PRO微笑矫视-Cindy Wong</span>`,
+        },
+        {
+          link: "https://youtu.be/33vCgmDh-UQ",
+          img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
+          meida: `<span>SMILE PRO微笑矫视-刘学铭</span>`,
+        },
+        {
+          link: "https://youtu.be/jO_h9YqCJzs",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE PRO微笑矫视-Jimmy</span>`,
+        },
+        {
+          link: "https://youtu.be/iHBGkRh-CXw",
+          img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
+          meida: `<span>SMILE PRO微笑矫视-Sandy To</span>`,
+        },
+        {
+          link: "https://youtu.be/jBAIJeUQGz0",
+          img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
+          meida: `<span>SMILE PRO微笑矫视-莎比亚</span>`,
+        }
+      ],
+
       mediaBujuLists_2_1: [
         {
           link: "https://www.youtube.com/watch?v=1xDkEkhtDCY",
@@ -1108,6 +1200,22 @@ module.exports = {
         },
       ],
       mediaBujuLists_2_2: [
+        {
+          link: "https://youtu.be/qBsPhkIaVfo",
+          img: "https://static.cmereye.com/imgs/2024/05/7f62a4ec1d4e73cc.png",
+          meida: `<span>SMILE 微笑矫视-李伟志</span>`,
+        },
+        {
+          link: "https://youtu.be/JCzzO4Y0kko",
+          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          meida: `<span>SMILE 微笑矫视-胡瀞诗Ceci Wu</span>`,
+        },
+        {
+          link: "https://youtu.be/1WR18ptmCuQ",
+          img: "https://static.cmereye.com/imgs/2024/05/3be8dd3495a5bc22.png",
+          meida: `<span>SMILE 微笑矫视-麦秋成</span>`,
+        },
+
         {
           link: "https://youtu.be/qBsPhkIaVfo",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/05/Thumbnail_1.jpg",

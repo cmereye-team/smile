@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        <a href="" target="_blank" rel="noopener noreferrer">診症須知</a>
+        <nuxt-link to="/eye-examination">診症須知</nuxt-link>
       </div>
       <div class="home-contact-us">
         <div>
@@ -139,7 +139,7 @@
                   />
                 </svg>
               </div>
-              <div>超過<span>30,000</span>隻</div>
+              <div>超過<span>35,000</span>隻</div>
               <div>眼睛完成微笑矯視</div>
             </div>
             <div>
@@ -458,7 +458,7 @@
           </div>
           <div>
             <div>
-              <p>以後可以戴<br /><span>唔會縮細我眼睛</span><br />既平光鏡！</p>
+              <p>以後可以戴<br /><span>唔會縮細我眼睛</span><br />嘅平光鏡！</p>
             </div>
             <div>
               <img
@@ -573,7 +573,7 @@
           </p>
         </div>
         <div>
-          <div>
+          <nuxt-link to="/ophthalmicInfo/AppointForm">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -611,8 +611,8 @@
               </svg>
             </div>
             <div>講座</div>
-          </div>
-          <div>
+          </nuxt-link>
+          <nuxt-link to="/patient-info">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -750,7 +750,7 @@
               </svg>
             </div>
             <div>術前眼睛檢查</div>
-          </div>
+          </nuxt-link>
         </div>
       </div>
       <div class="home-award">
@@ -845,7 +845,7 @@ export default {
           id: 5,
           img: "https://static.cmereye.com/imgs/2024/04/2ab718080c0c7c14.png",
           title: ["Clear-", "Vision"],
-          desc: ["39歲以上", " 同時有近視/遠視/", "散光問題"],
+          desc: ["39以上有老花", " 同時有近視/遠視/", "散光問題"],
           link: "/clear-vision",
         },
       ],
@@ -1428,7 +1428,7 @@ export default {
       margin-top: 75px;
       display: flex;
       justify-content: space-evenly;
-      & > div {
+      & > a {
         width: 395px;
         height: 275px;
         display: flex;
@@ -1450,16 +1450,16 @@ export default {
           letter-spacing: 7px;
         }
       }
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         background: #4570b6;
         & > div:nth-child(2) {
           color: #fff;
         }
       }
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         border: 4px solid #4570b6;
       }
-      & > div:hover {
+      & > a:hover {
         box-shadow: 0px 0px 4px 3px rgba(69, 112, 182, 0.72941);
       }
     }
@@ -1998,7 +1998,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      & > div {
+      & > a {
         margin-top: 35px;
         width: 239.6px;
         height: 167.476px;
@@ -2019,7 +2019,7 @@ export default {
           letter-spacing: 4px;
         }
       }
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         background: #4570b6;
         box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.1);
         & > div:nth-child(1) {
@@ -2033,7 +2033,7 @@ export default {
           color: #fff;
         }
       }
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         & > div:nth-child(1) {
           width: 96px;
           & > svg {

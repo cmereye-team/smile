@@ -16,7 +16,7 @@
       </div>
       <div>
         <H2Tag :title="['LASIK 激光矯視']" />
-        <Faq :faqLink="'/smile-pro'" :faqList="lasikList" />
+        <Faq :faqLink="'/vision-correction-lasik'" :faqList="lasikList" />
       </div>
       <div>
         <H2Tag :title="['ICL植入式隱形眼鏡']" />

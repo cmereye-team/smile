@@ -1760,7 +1760,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
@@ -2107,6 +2107,9 @@ export default {
       line-height: 35px; /* 175% */
       letter-spacing: 6px;
     }
+    p:last-child{
+      padding-left: 35px;
+    }
   }
   .eye-examination-before {
     max-width: 1270px;
@@ -2363,7 +2366,9 @@ export default {
         letter-spacing: 0.7px;
       }
       & > div:nth-child(3) {
-        background: url("https://static.cmereye.com/imgs/2024/05/9973d9fa73406252.png")
+        max-width: 340px;
+        margin: 0 auto;
+        background: url("https://static.cmereye.com/imgs/2024/05/dd43a1e9c57d5539.png")
           no-repeat;
         background-size: 100% 100%;
         width: 90%;
@@ -2380,8 +2385,8 @@ export default {
               align-items: center;
               & > div:nth-child(1) {
                 background: #fff;
-                width: 135px;
-                height: 135px;
+                width: 34.6vw;
+                height: 34.6vw;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -2399,17 +2404,17 @@ export default {
                   color: #4570b6;
                   text-align: center;
                   font-family: "Noto Sans HK";
-                  font-size: 16px;
+                  font-size: 4.1vw;
                   font-style: normal;
                   font-weight: 700;
-                  line-height: 20px; /* 125% */
+                  line-height: 5.12vw; /* 125% */
                   letter-spacing: 3.2px;
                 }
                 & > div:nth-child(2) {
                   color: #6d6e71;
                   text-align: center;
                   font-family: "Noto Sans HK";
-                  font-size: 12px;
+                  font-size: 3.08vw;
                   font-style: normal;
                   font-weight: 300;
                   line-height: 25px; /* 208.333% */
@@ -2437,7 +2442,7 @@ export default {
             padding: 0 6px;
             position: relative;
             top: 40px;
-            &>div:nth-child(3){
+            & > div:nth-child(3) {
               position: relative;
               top: 25px;
               left: 50%;
@@ -2559,6 +2564,8 @@ export default {
           }
         }
         & > div:nth-child(2) {
+          position: relative;
+          top: -8px;
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans";
@@ -2570,15 +2577,17 @@ export default {
         }
       }
       & > div:nth-child(2) {
+        max-width: 330px;
+        margin: 0 auto;
         margin-top: 160px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background: url("https://static.cmereye.com/imgs/2024/05/070c5fa8ccea4044.png")
+        background: url("https://static.cmereye.com/imgs/2024/05/a037790c713021bf.png")
           no-repeat;
-        width: 100%;
         height: 276px;
         background-position: right;
+        background-size: 276px 276px;
         position: relative;
 
         & > div {

@@ -4,12 +4,8 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p v-if="!isMobile">矯視流程</p>
-          <p v-else>眼睛檢查<br />及矯視前</p>
-          <p v-if="!isMobile">Vision correction process</p>
-          <p v-else>
-            Eye examination<br />and before<br />vision<br />correction
-          </p>
+          <p>矯視流程</p>
+          <p>Vision correction <br v-if="isMobile" />process</p>
         </div>
       </template>
     </Banner>
@@ -242,7 +238,38 @@
             <div class="warn-text">矯視前</div>
             <div>
               <div>
-                <div>
+                <div v-if="isMobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="135"
+                    height="135"
+                    viewBox="0 0 135 135"
+                    fill="none"
+                  >
+                    <circle cx="67.5" cy="67.5" r="67.5" fill="white" />
+                    <path
+                      d="M30.2242 83.6418C30.2242 69.7117 41.5355 58.3788 55.4392 58.3788C62.1751 58.3788 68.507 61.0065 73.2698 65.7784C78.0327 70.5504 80.6554 76.8944 80.6554 83.6431V112.367C80.6554 114.022 79.3118 115.367 77.6617 115.367H64.5837V109.357C67.5851 107.851 70.1849 105.738 72.144 103.205C73.1761 101.872 78.2189 94.773 76.123 85.9231C74.5552 79.3051 69.5897 74.0548 65.3638 71.7875C62.6829 70.3486 60.1045 69.9655 58.1036 70.7064C54.9706 71.8687 54.2602 75.2221 53.5738 78.4651C52.8317 81.9683 52.0643 85.592 48.7413 87.9837C46.249 89.7777 43.6112 89.9059 41.2835 90.0188C38.8052 90.1394 36.2421 90.2637 34.9162 92.6668C34.1209 94.1069 34.0373 95.9974 34.6718 98.1341C35.9749 102.516 40.0387 107.248 44.5533 109.641C45.2005 109.983 45.878 110.292 46.5758 110.559V115.366H33.2179C31.5666 115.366 30.2242 114.019 30.2242 112.366V83.6418ZM33.2179 118.596H48.1904C49.0807 118.596 49.8025 117.873 49.8025 116.981V109.411C49.8025 108.704 49.3441 108.08 48.6716 107.87C47.7598 107.584 46.8822 107.219 46.0641 106.785C41.8154 104.533 38.6723 100.263 37.7643 97.2104C37.3869 95.9428 37.378 94.8834 37.7402 94.2287C38.1556 93.4763 39.1358 93.3558 41.4418 93.2441C43.9391 93.1223 47.3584 92.9574 50.6244 90.6063C54.9617 87.485 55.9419 82.8552 56.7296 79.1351C57.3666 76.1242 57.8288 74.2527 59.2244 73.7351C60.3299 73.3252 62.013 73.6526 63.8429 74.6346C67.4318 76.5594 71.6501 81.0281 72.9862 86.6679C74.7427 94.0853 70.4699 100.096 69.5961 101.225C67.7547 103.604 65.2372 105.553 62.3144 106.858C61.7331 107.118 61.3595 107.696 61.3595 108.334V116.982C61.3595 117.874 62.0814 118.597 62.9716 118.597H77.6617C81.0898 118.597 83.8796 115.802 83.8796 112.367V83.6431C83.8796 76.0316 80.9213 68.8768 75.5493 63.4946C70.1773 58.1124 63.0362 55.1484 55.4392 55.1484C39.7575 55.1472 27 67.9303 27 83.6418V112.366C27 115.801 29.7898 118.596 33.2179 118.596Z"
+                      fill="#4570B6"
+                    />
+                    <path
+                      d="M89.657 30.4028C90.37 30.6185 91.1374 30.3165 91.5135 29.6719L97.5706 19.302H103.067L95.3646 32.4887C95.0252 33.0698 95.0809 33.8006 95.5051 34.3233C98.295 37.7605 98.932 42.4817 97.2667 46.5063L76.7842 34.4946C79.7919 30.6311 84.8701 28.9576 89.657 30.4015V30.4028ZM73.6714 36.4131L97.1236 50.1668C97.3794 50.3165 97.6593 50.3889 97.9366 50.3889C98.49 50.3889 99.0295 50.1021 99.3296 49.5895C102.322 44.4687 102.032 38.0194 98.6876 33.1954L107.269 18.5052C107.56 18.0053 107.564 17.3874 107.276 16.8862C106.989 16.3838 106.456 16.0742 105.878 16.0742H96.6462C96.0737 16.0742 95.5444 16.3787 95.2544 16.8736L89.3429 26.9922C82.9781 25.6371 76.4347 28.4856 73.094 34.2053C72.6444 34.9755 72.9027 35.9639 73.6714 36.4156V36.4131Z"
+                      fill="#A6E1D6"
+                    />
+                    <path
+                      d="M75.8391 58.9517C76.5939 59.3907 77.5614 59.1319 77.9983 58.3757C78.4365 57.6195 78.2237 54.8281 78.2237 54.8281C78.2237 54.8281 75.7011 56.0309 75.2642 56.7884C74.826 57.5446 75.0844 58.514 75.8391 58.9517Z"
+                      fill="#A6E1D6"
+                    />
+                    <path
+                      d="M76.3503 47.2976C76.7872 46.5414 76.5757 43.75 76.5757 43.75C76.5757 43.75 74.0544 44.9528 73.6162 45.7103C73.1793 46.4665 73.4364 47.4359 74.1911 47.8736C74.9459 48.3126 75.9134 48.0538 76.3503 47.2976Z"
+                      fill="#A6E1D6"
+                    />
+                    <path
+                      d="M84.5533 53.1308C84.1151 53.887 84.3734 54.8563 85.1282 55.2941C85.883 55.7318 86.8505 55.4742 87.2874 54.718C87.7243 53.9618 87.5128 51.1718 87.5128 51.1718C87.5128 51.1718 84.9914 52.3746 84.5533 53.1308Z"
+                      fill="#A6E1D6"
+                    />
+                  </svg>
+                </div>
+                <div v-else>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="149"
@@ -275,7 +302,90 @@
                 <div>預先洗頭<br />避免術後雙眼入水</div>
               </div>
               <div>
-                <div>
+                <div v-if="isMobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="136"
+                    height="135"
+                    viewBox="0 0 136 135"
+                    fill="none"
+                  >
+                    <ellipse cx="68" cy="67.5" rx="68" ry="67.5" fill="white" />
+                    <path
+                      d="M74.2672 22.4688V33.3211L67.8212 42.0155L61.3752 33.3211V22.4688L52.7839 26.816V42.0155H82.8584V27.2017L74.2672 22.4688Z"
+                      stroke="#4570B6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M74.268 22.4688H61.376"
+                      stroke="url(#paint0_linear_5253_3268)"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M67.822 52.868C69.0068 52.868 69.9672 51.8972 69.9672 50.6996C69.9672 49.5021 69.0068 48.5312 67.822 48.5312C66.6372 48.5312 65.6768 49.5021 65.6768 50.6996C65.6768 51.8972 66.6372 52.868 67.822 52.868Z"
+                      fill="#A6E1D6"
+                    />
+                    <path
+                      d="M67.822 63.7196C69.0068 63.7196 69.9672 62.7488 69.9672 61.5512C69.9672 60.3536 69.0068 59.3828 67.822 59.3828C66.6372 59.3828 65.6768 60.3536 65.6768 61.5512C65.6768 62.7488 66.6372 63.7196 67.822 63.7196Z"
+                      fill="#A6E1D6"
+                    />
+                    <path
+                      d="M67.822 74.5829C69.0068 74.5829 69.9672 73.612 69.9672 72.4145C69.9672 71.2169 69.0068 70.2461 67.822 70.2461C66.6372 70.2461 65.6768 71.2169 65.6768 72.4145C65.6768 73.612 66.6372 74.5829 67.822 74.5829Z"
+                      fill="#F5F5F5"
+                    />
+                    <path
+                      d="M67.822 85.4344C69.0068 85.4344 69.9672 84.4636 69.9672 83.266C69.9672 82.0685 69.0068 81.0977 67.822 81.0977C66.6372 81.0977 65.6768 82.0685 65.6768 83.266C65.6768 84.4636 66.6372 85.4344 67.822 85.4344Z"
+                      fill="#F5F5F5"
+                    />
+                    <path
+                      d="M67.822 96.2977C69.0068 96.2977 69.9672 95.3269 69.9672 94.1293C69.9672 92.9318 69.0068 91.9609 67.822 91.9609C66.6372 91.9609 65.6768 92.9318 65.6768 94.1293C65.6768 95.3269 66.6372 96.2977 67.822 96.2977Z"
+                      fill="#A6E1D6"
+                    />
+                    <path
+                      d="M67.822 107.149C69.0068 107.149 69.9672 106.178 69.9672 104.981C69.9672 103.783 69.0068 102.812 67.822 102.812C66.6372 102.812 65.6768 103.783 65.6768 104.981C65.6768 106.178 66.6372 107.149 67.822 107.149Z"
+                      fill="#A6E1D6"
+                    />
+                    <path
+                      d="M39.8906 57.2148L43.7582 72.8418C45.4497 79.691 45.4497 86.853 43.7582 93.7021L39.8906 109.329C58.2695 113.614 77.3703 113.614 95.7492 109.329L91.8816 93.7021C90.1901 86.853 90.1901 79.691 91.8816 72.8418L95.7492 57.2148"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M50.6285 28.9844L36.1688 37.1054C33.1057 38.8255 31.0636 41.9426 30.7026 45.4662C29.5268 56.9336 27 82.8084 27 93.0457C27 96.0376 29.4031 98.4666 32.3734 98.4666H35.6016"
+                      stroke="#4570B6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M85.0049 28.9844L99.4646 37.1054C102.528 38.8255 104.57 41.9426 104.931 45.4662C106.107 56.9336 108.633 82.8084 108.633 93.0457C108.633 96.0376 106.23 98.4666 103.26 98.4666H100.042"
+                      stroke="#4570B6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_5253_3268"
+                        x1="67.822"
+                        y1="22.4688"
+                        x2="67.8144"
+                        y2="50.6231"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#4D7EBE" />
+                        <stop offset="1" stop-color="#7ACEE6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div v-else>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="165"
@@ -352,7 +462,67 @@
             <div class="warn-text">請勿使用</div>
             <div>
               <div>
-                <div>
+                <div v-if="isMobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="135"
+                    height="135"
+                    viewBox="0 0 135 135"
+                    fill="none"
+                  >
+                    <circle cx="67.5" cy="67.5" r="67.5" fill="white" />
+                    <path
+                      d="M43.5657 102.001C41.7095 103.857 38.7163 103.857 36.8601 102.001L32.3897 97.5304C31.4956 96.6364 31 95.4313 31 94.1776C31 92.924 31.4956 91.7092 32.3897 90.8249L57.4919 65.7227L68.6679 76.8986L43.5657 102.001Z"
+                      stroke="#4570B6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M103.712 30.6758L66.4424 67.9647"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M95.8115 30.6758L103.712 38.5767"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M76.8408 49.6484L84.7417 57.5494"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M89.4834 33.832L100.552 44.9011"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M84.7412 38.5781L95.8103 49.6472"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M80.0002 43.3165L91.0693 54.3856"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div v-else>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="154"
@@ -414,7 +584,33 @@
                 <div>眼部化妝品</div>
               </div>
               <div>
-                <div>
+                <div v-if="isMobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="136"
+                    height="135"
+                    viewBox="0 0 136 135"
+                    fill="none"
+                  >
+                    <ellipse cx="68" cy="67.5" rx="68" ry="67.5" fill="white" />
+                    <path
+                      d="M40.755 58.6847C31.944 63.7715 26 73.2384 26 84.1188C26 93.9739 30.885 102.674 38.3474 108H72.6526C80.115 102.664 85 93.9639 85 84.1188C85 73.2483 79.056 63.7715 70.245 58.6847M59.1863 40.0198V29H51.8138V40.0198M59.1862 34.5149H67.7375C70.0052 34.5149 72.2729 34.933 74.3708 35.7692M33.3725 84.1188C33.3725 75.9759 37.798 68.8683 44.3813 65.0457M46.2794 45.5346H64.7206V56.5544H46.2794V45.5346Z"
+                      stroke="#4570B6"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <ellipse
+                      cx="91.5"
+                      cy="42"
+                      rx="15.5"
+                      ry="15"
+                      stroke="#A6E1D6"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+                <div v-else>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="144"
@@ -858,7 +1054,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
@@ -1118,7 +1314,7 @@ export default {
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    padding: 105px 0 30px;
+    padding: 125px 0 30px;
     position: relative;
     & > div {
       padding: 0 15px;
@@ -1170,10 +1366,9 @@ export default {
               display: flex;
               justify-content: center;
               align-items: center;
-              & > img,
               & > svg {
-                width: 50%;
-                height: 50%;
+                width: 100%;
+                height: 100%;
               }
             }
             & > div:nth-child(2) {
@@ -1189,8 +1384,41 @@ export default {
           }
         }
       }
-
       & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 90px;
+                height: 90px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 90px;
+                height: 93.776px;
+              }
+            }
+          }
+          & > div:nth-child(3) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 75.329px;
+                height: 83.859px;
+              }
+            }
+          }
+          & > div:nth-child(4) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 68.302px;
+                height: 91.07px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -1201,11 +1429,14 @@ export default {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* 300% */
+    line-height: 70px; /* 300% */
     letter-spacing: 1px;
   }
   .vision-correction-step {
     padding: 0 20px;
+    max-width: 350px;
+    margin: 0 auto;
+
     & > div:nth-child(2) {
       padding: 0 10px;
       color: #6d6e71;
@@ -1221,37 +1452,70 @@ export default {
       display: grid;
       grid-template-rows: auto auto;
       grid-template-columns: auto auto;
-      gap: 0 50px;
-      background: url("https://static.cmereye.com/imgs/2024/05/8b3fee68cf89cdf9.png")
+      background: url("https://static.cmereye.com/imgs/2024/05/61742a5580b893b3.png")
         no-repeat;
-      background-size: 85% 100%;
+      background-size: 253px 238px;
       width: 100%;
       background-position-x: right;
-      margin-top: 140px;
       padding-bottom: 40px;
+      max-width: 297px;
+      margin: auto;
+      margin-right: 10px;
+      margin-top: 140px;
       & > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         & > div:nth-child(1) {
-          width: 22.3vw;
-          height: 25.9vw;
-          & > img,
-          & > svg {
-            width: 100%;
-            height: 100%;
-          }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 101px;
+          height: 96px;
         }
         & > div:nth-child(2) {
           color: #4570b6;
           text-align: right;
           font-family: "Noto Sans HK";
-          font-size: 4.1vw;
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 20px; /* 125% */
           letter-spacing: 0.8px;
+          text-wrap: nowrap;
+        }
+      }
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          & > svg {
+            width: 87.622px;
+            height: 101.799px;
+          }
+        }
+      }
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > img {
+            width: 93.35px;
+            height: 84.998px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(1) {
+          & > svg {
+            width: 96px;
+            height: 100px;
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(1) {
+          & > svg {
+            width: 88.288px;
+            height: 49.158px;
+          }
         }
       }
       & > div:nth-child(1),

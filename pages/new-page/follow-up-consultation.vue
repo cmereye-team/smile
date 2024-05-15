@@ -874,7 +874,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
@@ -981,7 +981,7 @@ export default {
               min-height: max-content;
               height: 60px;
               display: flex;
-              align-items: center;
+              align-items: flex-start;
               justify-content: center;
               margin-top: 30px;
             }
@@ -1015,7 +1015,7 @@ export default {
               min-height: max-content;
               height: 120px;
               display: flex;
-              align-items: center;
+              align-items: flex-start;
               justify-content: center;
               margin-top: 30px;
             }
@@ -1218,7 +1218,8 @@ export default {
     margin-top: 150px;
     position: relative;
     & > div {
-      padding: 0 20px;
+      // padding: 0 20px;
+
       & > div:nth-child(1) {
         position: absolute;
         top: -5%;
@@ -1243,12 +1244,72 @@ export default {
           letter-spacing: 1px;
         }
       }
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 101.072px;
+                height: 84.346px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 45.728px;
+                height: 95.04px;
+              }
+            }
+          }
+          & > div:nth-child(3) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 66.637px;
+                height: 71.767px;
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 125.599px;
+                height: 55.441px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 96.27px;
+                height: 94.405px;
+              }
+            }
+          }
+          & > div:nth-child(3) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 76.581px;
+                height: 76.863px;
+              }
+            }
+          }
+        }
+      }
       & > div:nth-child(2),
       & > div:nth-child(4) {
         & > div:nth-child(2) {
-          display: flex;
-          flex-wrap: wrap;
+          max-width: 390px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 50px 20px;
           justify-content: center;
+          padding: 0 20px;
           & > div {
             display: flex;
             flex-direction: column;
@@ -1262,10 +1323,6 @@ export default {
               display: flex;
               justify-content: center;
               align-items: center;
-              & > svg {
-                width: 52%;
-                height: 55%;
-              }
             }
             & > div:nth-child(2) {
               color: #6d6e71;
@@ -1282,15 +1339,19 @@ export default {
               justify-content: center;
             }
           }
-          & > :last-child {
-            margin-top: 50px;
+          & > div:last-child {
+            position: relative;
+            left: 60%;
           }
         }
       }
 
       & > div:nth-child(3) {
         & > div:nth-child(2) {
+          max-width: 390px;
+          margin: 0 auto;
           display: flex;
+          gap: 0 35px;
           justify-content: space-evenly;
           & > div {
             & > div:nth-child(1) {
@@ -1301,10 +1362,6 @@ export default {
               display: flex;
               justify-content: center;
               align-items: center;
-              & > svg {
-                width: 52%;
-                height: 55%;
-              }
             }
             & > div:nth-child(2) {
               color: #6d6e71;
@@ -1319,6 +1376,22 @@ export default {
               display: flex;
               align-items: center;
               justify-content: center;
+            }
+          }
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 80.853px;
+                height: 81.717px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > svg {
+                width: 91.011px;
+                height: 91.662px;
+              }
             }
           }
         }
@@ -1346,15 +1419,20 @@ export default {
   }
   .step-follow {
     & > div:nth-child(2) {
+      max-width: 328px;
+      margin: 0 auto;
       position: relative;
-      padding: 0 30px;
+      // padding: 0 30px;
       margin-top: 105px;
       & > div:nth-child(1) {
-        background: url("https://static.cmereye.com/imgs/2024/05/3bc1a0c23f703795.png")
+        background: url("https://static.cmereye.com/imgs/2024/05/07feb20f2f951a2d.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 100%;
         height: 221px;
+        width: 302px;
+        background-position: center;
+        margin: auto;
+        margin-right: 0;
       }
       & > div:nth-child(2) {
         width: 100%;
@@ -1389,13 +1467,29 @@ export default {
             letter-spacing: 0.8px;
           }
         }
-
-        & > div:nth-child(5),
-        & > div:nth-child(6) {
+        & > div:nth-child(1) {
+          margin-left: -45px;
+        }
+        & > div:nth-child(2) {
+          margin-left: 0;
+        }
+        & > div:nth-child(3) {
+          margin-left: 30px;
+        }
+        & > div:nth-child(5) {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           margin-left: -50px;
+          & > div:nth-child(2) {
+            margin-left: 10px;
+          }
+        }
+        & > div:nth-child(6) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: -20px;
           & > div:nth-child(2) {
             margin-left: 10px;
           }

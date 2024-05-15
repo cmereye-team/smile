@@ -5,7 +5,7 @@
       <template #banner>
         <div class="banner-img">
           <p>中心設備</p>
-          <p>Central equipment</p>
+          <p>Central <br v-if="isMobile" />equipment</p>
         </div>
       </template>
     </Banner>

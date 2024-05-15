@@ -20,13 +20,13 @@
             <div>
               <div class="small-title">希瑪眼科中心</div>
               <div class="small-text">
-                希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、
+                希瑪眼科中心擴展至全港擁有10間眼科診所、3間微笑矯視中心、
                 2間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心（希瑪全資附屬公司）。眼科診所及中心遍佈港、九、新界，交通便利，環境舒適。
               </div>
             </div>
             <div>
               <span>有關希瑪眼科中心資料，詳情請瀏覽: </span
-              ><span>www.hkcmereye.com</span>
+              ><a href="https://www.hkcmereye.com" target="_blank" ref="noopener noreferrer">www.hkcmereye.com</a>
             </div>
             <div>
               <div class="small-title">經營理念</div>
@@ -65,7 +65,7 @@
               </div>
             </div>
             <div>
-              <div>希瑪</div>
+              <div style="letter-spacing: 25px">希瑪</div>
               <div>
                 「希」望為眼睛帶來希望之光；「希瑪」 與 「喜瑪」
                 同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意希瑪眼科憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念
@@ -175,8 +175,7 @@
           <div>
             <div class="swiper-small-title">希瑪微笑矯視中心位於</div>
             <div class="swiper-small-text">
-              中環中建大廈、旺角雅蘭中心、銅鑼灣恆隆中心，尖沙咀K11
-              ATELIER地鐵站直達，交通便利易達。
+              中環中建大廈、旺角雅蘭中心、尖沙咀K11 ATELIER辦公大樓，地鐵站直達，交通便利易達。
             </div>
           </div>
           <div>
@@ -443,7 +442,7 @@ export default {
     & > div:nth-child(3) {
       padding: 0 170px;
       & > div:nth-child(2) {
-        margin-top: 38px;
+        margin-top: 20px;
       }
     }
   }
@@ -537,10 +536,10 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 50px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.4; /* 40% */
         letter-spacing: 5px;
-        min-width: 70px;
+        min-width: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -620,7 +619,8 @@ export default {
       font-weight: 300;
       line-height: 35px; /* 175% */
       letter-spacing: 6px;
-      & > span:nth-child(2) {
+      & > a {
+        text-decoration: none;
         color: #4570b6;
         font-family: "Noto Sans HK";
         font-size: 20px;
@@ -764,14 +764,14 @@ export default {
           font-family: "Noto Sans HK";
           font-size: 20px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 23.305px; /* 116.525% */
           letter-spacing: 1px;
           padding-bottom: 10px;
           position: relative;
         }
         & > div:nth-child(2)::after {
-          content: "";
+          content: none;
           width: 30px;
           height: 3.8px;
           background: #a6e1d6;
@@ -900,6 +900,8 @@ export default {
         }
       }
       & > div:nth-child(2) {
+        max-width: 350px;
+        margin: 0 auto;
         & > div {
           margin-top: 32px;
         }
@@ -936,7 +938,7 @@ export default {
         font-weight: 700;
         line-height: 20px; /* 44.444% */
         letter-spacing: 2.25px;
-        min-width: 60px;
+        min-width: 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -998,7 +1000,7 @@ export default {
     top: 5px;
     width: 2px;
     height: 70%;
-    background: linear-gradient(to bottom, #4570b6, #81DBEC); /* 渐变色 */
+    background: linear-gradient(to bottom, #4570b6, #81dbec); /* 渐变色 */
   }
   .small-title {
     color: #4570b6;

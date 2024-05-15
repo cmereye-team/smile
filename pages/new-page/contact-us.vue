@@ -327,7 +327,12 @@
             }}</span>
           </div>
           <div>
-            <div>
+            <div v-if="isMobile">
+              <span v-for="(el, index) in item.mobileAddress" :key="index">{{
+                el
+              }}</span>
+            </div>
+            <div v-else>
               <span v-for="(el, index) in item.address" :key="index">{{
                 el
               }}</span>
@@ -424,12 +429,14 @@ export default {
           id: 1,
           title: ["中環", "希瑪微笑矯視中心"],
           address: ["畢打街1-3號中建大廈1512室", "(港鐵站G出口，置地廣場樓上)"],
+          mobileAddress: ["畢打街1-3號中建大廈1512室", "(港鐵站G出口，置地廣場樓上)"],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.914943384991!2d114.15266089678956!3d22.281211600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064e98df11d%3A0x56ad3d7801270f90!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUg5Lit55Kw6Ki65omA!5e0!3m2!1szh-CN!2sus!4v1714981663044!5m2!1szh-CN!2sus",
         },
         {
           id: 2,
           title: ["旺角", "希瑪微笑矯視中心"],
           address: ["彌敦道625及639號雅蘭中心", "一期702室 (港鐵站E1出口)"],
+          mobileAddress: ["彌敦道625及639號雅蘭中心", "一期702室 (港鐵站E1出口)"],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.939721193468!2d114.1676123864893!3d22.31811935853382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401adf20dec01%3A0x281d567d00c579d9!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUg5pe66KeS6Ki65omA!5e0!3m2!1szh-CN!2sus!4v1714979807484!5m2!1szh-CN!2sus",
         },
         {
@@ -438,6 +445,11 @@ export default {
           address: [
             "梳士巴利道18-24號K11 ATELIER",
             "辦公大樓1906室 (K11 Musea附近)",
+          ],
+          mobileAddress: [
+            "梳士巴利道18-24號",
+            "K11 ATELIER辦公大樓1906室",
+            "(K11 Musea附近)",
           ],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5534673298257!2d114.17108219678954!3d22.294898600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401f0afd81927%3A0xa2a84e559299307!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUtIOWwluaymeWSgOiouuaJgA!5e0!3m2!1szh-CN!2sus!4v1714979889532!5m2!1szh-CN!2sus",
         },
@@ -683,7 +695,7 @@ export default {
           font-family: "Noto Sans HK";
           font-size: 30px;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 400;
           line-height: 2.8; /* 133.333% */
           letter-spacing: 4.5px;
         }
@@ -712,7 +724,7 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 30px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 2.8; /* 133.333% */
         letter-spacing: 4.5px;
       }
@@ -892,7 +904,10 @@ export default {
         border-right: 1px solid #e2eaf7;
       }
       & > div:nth-child(2) {
+        padding-right: 15px;
         display: flex;
+        justify-content: center;
+        position: relative;
         & > div:nth-child(1) {
           color: #4570b6;
           text-align: center;
@@ -900,17 +915,20 @@ export default {
           font-size: 10px;
           font-style: normal;
           font-weight: 400;
-          line-height: 13px; /* 130% */
+          line-height: 15px; /* 130% */
           display: flex;
           flex-direction: column;
-          flex: 9;
+          letter-spacing: 0.5px;
         }
         & > div:nth-child(2) {
           & > svg {
             width: 13px;
             height: 100%;
           }
-          flex: 1;
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
     }
@@ -954,7 +972,7 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 20px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 3; /* 200% */
         letter-spacing: 1px;
         border-right: 1px solid #5b7bb0;
@@ -967,7 +985,7 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 20px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.1; /* 100% */
         letter-spacing: 2px;
       }
@@ -976,20 +994,20 @@ export default {
     & > div:nth-child(3),
     & > div:nth-child(4) {
       border-bottom: 1px solid #e2eaf7;
+      background: #fff;
       & > div:nth-child(1) {
         color: #4570b6;
         text-align: center;
         font-family: "Noto Sans HK";
         font-size: 16px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 20px; /* 125% */
         letter-spacing: 0.8px;
         border-right: 1px solid #e2eaf7;
       }
       & > div:nth-child(2) {
         color: #4570b6;
-
         text-align: center;
         font-family: "Noto Sans HK";
         font-size: 16px;

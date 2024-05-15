@@ -143,7 +143,7 @@ export default {
       border-radius: 10px;
       background: #4570b6;
       width: 45.38vw;
-      height: 20.51vw;
+      height: 16.51vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -154,7 +154,7 @@ export default {
       font-size: 3.6vw;
       font-style: normal;
       font-weight: 500;
-      line-height: 25px; /* 178.571% */
+      line-height: 20px; /* 178.571% */
       letter-spacing: 0.7px;
     }
   }
@@ -196,10 +196,10 @@ export default {
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 10px;
+      font-size: 9px;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.2; /* 214.286% */
+      line-height: 1.1;
       width: 100%;
     }
     padding-top: 36px;
@@ -210,7 +210,7 @@ export default {
     height: 43.58vw;
     margin: 0 auto;
     background: #fff;
-    padding: 15px 11px 30px;
+    padding-bottom: 12.82vw;
     justify-content: center;
   }
   .equipment-remark-hide {

@@ -26,7 +26,7 @@ import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-import shareVideo from "@/components/content/ophthalmicInfo/shareVideos/shareVideo.vue";
+import shareVideo from "@/components/content/new/shareVideo.vue";
 
 export default {
   components: {
@@ -98,7 +98,7 @@ export default {
       .tables {
         max-width: 1270px;
         width: 100%;
-        margin: 85px auto 0;
+        margin: 85px auto 75px;
 
         & > div:nth-child(2) {
           width: 100%;
