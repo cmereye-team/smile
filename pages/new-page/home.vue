@@ -470,6 +470,7 @@
           </div>
         </div>
       </div>
+      <div></div>
       <div class="home-facebook-user">
         <div>
           <div>
@@ -497,26 +498,67 @@
             </div>
             <div>Facebook<br />用户評分</div>
           </div>
-          <div>
-            <div>
-              <div>
-                <div>Wylie Kwong</div>
+          <div class="home-facebook--container">
+            <el-carousel
+              v-if="isMobile"
+              indicator-position="none"
+              ref="carousel"
+              autoplay="false"
+              arrow="never"
+            >
+              <el-carousel-item
+                v-for="(item, index) in evaluateList"
+                :key="index"
+                class="home-facebook-user-item-carousel"
+              >
                 <div>
-                  <span>Good service and outcome</span><span>2月1日12:07</span>
+                  <div>{{ item.name }}</div>
+                  <div>
+                    <span>{{ item.commit }}</span
+                    ><span>{{ item.date }}</span>
+                  </div>
+                  <div v-if="item.name !== ''">
+                    <img src="@/asset/image/new/home/10775.png" alt="" />
+                  </div>
                 </div>
-                <div><img src="@/asset/image/new/home/10775.png" alt="" /></div>
-              </div>
-              <div>
-                <div>Wylie Kwong</div>
-                <div>
-                  <span>Good service and outcome</span><span>2月1日12:07</span>
+              </el-carousel-item>
+            </el-carousel>
+            <el-carousel
+              v-else
+              indicator-position="none"
+              ref="carousel"
+              autoplay="false"
+              arrow="never"
+            >
+              <el-carousel-item
+                v-for="(item, index) in groupedData"
+                :key="index"
+                class="home-facebook-user-item-carousel"
+              >
+                <div class="home-facebook-user-item">
+                  <div>{{ item[0].name }}</div>
+                  <div>
+                    <span>{{ item[0].commit }}</span
+                    ><span>{{ item[0].date }}</span>
+                  </div>
+                  <div>
+                    <img src="@/asset/image/new/home/10775.png" alt="" />
+                  </div>
                 </div>
-                <div><img src="@/asset/image/new/home/10775.png" alt="" /></div>
-              </div>
-            </div>
-
-            <div>
-              <div>
+                <div v-if="item[1].name !== ''" class="home-facebook-user-item">
+                  <div>{{ item[1].name || "" }}</div>
+                  <div>
+                    <span>{{ item[1].commit }}</span
+                    ><span>{{ item[1].date }}</span>
+                  </div>
+                  <div>
+                    <img src="@/asset/image/new/home/10775.png" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+            </el-carousel>
+            <div class="home-facebook-user-item-carousel-btn">
+              <div @click="prev">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -538,7 +580,7 @@
                   />
                 </svg>
               </div>
-              <div>
+              <div @click="next">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -810,6 +852,23 @@ export default {
     BannerSlider,
     H2Tag,
   },
+  computed: {
+    groupedData() {
+      const grouped = [];
+      if (this.evaluateList % 2 !== 0 && !this.isMobile) {
+        this.evaluateList.push({
+          name: "",
+          commit: "",
+          date: "",
+        });
+      }
+      for (let i = 0; i < this.evaluateList.length; i += 2) {
+        const pair = [this.evaluateList[i], this.evaluateList[i + 1]];
+        grouped.push(pair);
+      }
+      return grouped;
+    },
+  },
   data() {
     return {
       bgReferralServiceImg: [
@@ -850,6 +909,122 @@ export default {
         },
       ],
       isMobile: false,
+      evaluateList: [
+        {
+          name: "Wylie Kwong",
+          date: "2月1日12:07",
+          commit: "Good service and outcome",
+        },
+        {
+          name: "Kathy Cheung",
+          date: "5月3日11:42",
+          commit:
+            "Really good experience overall! Clear explanation before, during and after operation.Staff was friendly and patient! Already recommended CMER to my family members",
+        },
+        {
+          name: "Marco Lau",
+          date: "4月24日11:41",
+          commit:
+            "Very professional service, clear explanation from the doctor and great follow up! Highly recommended!",
+        },
+        {
+          name: "Kei Kei Tam",
+          date: "3月27日 15:44",
+          commit:
+            "The service here is excellence with comprehensive assessment and follow up.The surgeon is professional with good explanation of procedures and great surgical outcome.I would definitely recommend this clinic for smile!",
+        },
+        {
+          name: "Rosangel Li",
+          date: "4月30日18:26",
+          commit: "Smooth surgery, kind nurses and doctor.Recommend!",
+        },
+        {
+          name: "覃森仲",
+          date: "3月21日17:55",
+          commit: "非常耐心讲解，满意！",
+        },
+        {
+          name: "Helen Tsui",
+          date: "3月2日11:07",
+          commit:
+            "The procedure was very professional and would definitely recommend to my friends.",
+        },
+        {
+          name: "Gary Wong",
+          date: "3月6日15:45",
+          commit: "Excellent services and the doctor has been perfect.",
+        },
+        {
+          name: "June Wong",
+          date: "1月10日12:30",
+          commit:
+            "My son had a great experience and they provided a very supportive environment for his recovery.",
+        },
+        {
+          name: "Siu Chun Wong",
+          date: "1月22日15:46",
+          commit: "好满意服务 医生姑娘都很好",
+        },
+        {
+          name: "Bear Teddy",
+          date: "2023年12月18日17:40",
+          commit:
+            "Everything has been great and handled professionally.Im glad that my vision has been greatly improved.Would definately recommend this clinic to everyone.",
+        },
+        {
+          name: "Stephanie Man",
+          date: "2023年8月12日  16:16",
+          commit:
+            "The doctors and the staff are amazing - felt very cared for throughout the process, both pre - op and post - op.Dr Chow and the nurses are very professional and know how to ease the patients’ anxiety.",
+        },
+        {
+          name: "歐陽彥",
+          date: "2023年11月22日  16:43",
+          commit: "服务态度非常好，手术总算成功",
+        },
+        {
+          name: "Kalok Tang",
+          date: "2023年11月15日  10:37",
+          commit:
+            "the checking is good and the process is smooth that I don’t have any uncomfortable after doing the surgery.The doctor gave suggestions in details and I had a good experience.",
+        },
+        {
+          name: "周軒軒",
+          date: "2023年7月25日 12:36",
+          commit: "做完手术后看清了很多东西！没有帶眼镜的烦恼！服务态度",
+        },
+        {
+          name: "Grace Leung",
+          date: "2023年6月9日  16:45",
+          commit: "医生服务很好，很亲切，详细解答疑问。",
+        },
+        {
+          name: "崔劍",
+          date: "2023年11月9日 11:26",
+          commit: "Smooth procedures and good effects.",
+        },
+        {
+          name: "司徒露嬅",
+          date: "2023年11月28日  11:04",
+          commit: "Doctor Chow is nice.The nurses are also very nice.",
+        },
+        {
+          name: "Jane Ross",
+          date: "2023年11月27日 12:42",
+          commit:
+            "Thanks for providing the professional service! Highly recommended!!!",
+        },
+        {
+          name: "Twining Snow",
+          date: "2023年10月11日  15:35",
+          commit: "The result is absolutely amazing!",
+        },
+        {
+          name: "Quanxiang Xian",
+          date: "2023年7月6日  11:39",
+          commit: "Smile 激光手术，效果不错，推荐",
+        },
+      ],
     };
   },
   mounted() {
@@ -867,6 +1042,14 @@ export default {
     } else {
       this.isMobile = false;
     }
+  },
+  methods: {
+    prev() {
+      this.$refs.carousel.prev();
+    },
+    next() {
+      this.$refs.carousel.next();
+    },
   },
 };
 </script>
@@ -1341,67 +1524,70 @@ export default {
           letter-spacing: 7.5px;
         }
       }
-      & > div:nth-child(2) {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        & > div {
-          display: flex;
-          justify-content: space-between;
-        }
-        & > div:nth-child(1) {
-          width: 100%;
-          & > div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: #fff;
-            border-radius: 65px;
-            padding: 22px 0;
-            & > div:nth-child(1) {
-              color: #4570b6;
+    }
+  }
+  .home-facebook-user-item-carousel {
+    display: flex;
+  }
+  .home-facebook-user-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > div:nth-child(1) {
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans";
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 5.25px;
+    }
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column !important;
+      width: 585px;
+      height: 245px;
+      padding: 40px 0 10px;
+      background-position: center;
+      background: url(@/asset/image/new/home/11046.png) no-repeat;
+      background-size: 100% 100%;
+      color: #487f82;
 
-              text-align: center;
-              font-family: "Noto Sans";
-              font-size: 35px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-              letter-spacing: 5.25px;
-            }
-            & > div:nth-child(2) {
-              display: flex;
-              flex-direction: column;
-              width: 585px;
-              height: 165px;
-              padding: 60px 0 40px;
-              background-position: center;
-              background: url(@/asset/image/new/home/11046.png) no-repeat;
-              background-size: 100% 100%;
-              color: #487f82;
-
-              text-align: center;
-              font-family: "Noto Sans";
-              font-size: 28px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-              letter-spacing: 2.8px;
-            }
-            & > div:nth-child(3) {
-              margin-top: 7px;
-            }
-          }
-        }
-        & > div:nth-child(2) {
-          margin-top: 55px;
-          width: 400px;
-          & > div {
-            cursor: pointer;
-          }
-        }
+      text-align: center;
+      font-family: "Noto Sans";
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      // 文本超过3行 省略
+      & > span:nth-child(1) {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
       }
+      letter-spacing: 2.8px;
+    }
+    & > div:nth-child(3) {
+      margin-top: 7px;
+    }
+  }
+  .home-facebook--container {
+    position: relative;
+  }
+  .home-facebook-user-item-carousel-btn {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    & > div {
+      margin: 0 120px;
+      cursor: pointer;
     }
   }
   .home-service {
@@ -1902,82 +2088,165 @@ export default {
           letter-spacing: 3.5px;
         }
       }
+    }
+  }
+  :deep(.el-carousel__container) {
+    height: 230px;
+  }
+  .home-facebook-user-item-carousel {
+    & > div {
+      border-radius: 34px;
+      background: #fff;
+      width: 283px;
+      height: 208px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      & > div:nth-child(1) {
+        color: #4570b6;
+        text-align: center;
+        font-family: "Noto Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        margin-bottom: 3px;
+      }
       & > div:nth-child(2) {
-        position: relative;
+        background-position: center;
+        background: url(@/asset/image/new/home/11046.png) no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 22px 0 8px;
+        width: 283px;
+        height: 122px;
 
-        & > div:nth-child(1) {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          & > div {
-            width: 283px;
-            height: 208px;
-            border-radius: 34px;
-            background: #fff;
-            padding: 11px 0 0;
-            & > div:nth-child(1) {
-              color: #4570b6;
-              text-align: center;
-              font-family: "Noto Sans";
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-              letter-spacing: 2.4px;
-              margin-bottom: 3px;
-            }
-            & > div:nth-child(2) {
-              background-position: center;
-              background: url(@/asset/image/new/home/11046.png) no-repeat;
-              background-size: 100% 100%;
-              display: flex;
-              flex-direction: column;
-              padding: 32px 0 16px;
-
-              & > span:nth-child(1) {
-                color: #487f82;
-                text-align: center;
-                font-family: "Noto Sans";
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 25px; /* 138.889% */
-                letter-spacing: 2.7px;
-              }
-              & > span:nth-child(2) {
-                color: #487f82;
-                text-align: center;
-                font-family: "Noto Sans";
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: 1.4px;
-              }
-            }
-            & > div:nth-child(3) {
-              width: 214px;
-              margin: 5px auto 0;
-              & > img {
-                width: 100%;
-              }
-            }
-          }
-          & > div:nth-child(2) {
-            display: none;
-          }
+        & > span:nth-child(1) {
+          color: #487f82;
+          text-align: center;
+          font-family: "Noto Sans";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 25px; /* 138.889% */
+          letter-spacing: 2.7px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          -webkit-line-clamp: 3;
         }
-        & > div:nth-child(2) {
-          margin-top: 45px;
-          display: flex;
-          justify-content: space-around;
-          svg {
-            width: 14px;
-          }
+        & > span:nth-child(2) {
+          color: #487f82;
+          text-align: center;
+          font-family: "Noto Sans";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 1.4px;
+        }
+      }
+      & > div:nth-child(3) {
+        width: 214px;
+        margin: 5px auto 0;
+        & > img {
+          width: 100%;
         }
       }
     }
   }
+  .home-facebook-user-item-carousel-btn {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    & > div {
+      width: 7.712px;
+      height: 18.645px;
+      margin: 0 75px;
+      & > svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  // & > div:nth-child(2) {
+  //       position: relative;
+
+  //       & > div:nth-child(1) {
+  //         display: flex;
+  //         flex-direction: column;
+  //         align-items: center;
+  //         & > div {
+  //           width: 283px;
+  //           height: 208px;
+  //           border-radius: 34px;
+  //           background: #fff;
+  //           padding: 11px 0 0;
+  //           & > div:nth-child(1) {
+  //             color: #4570b6;
+  //             text-align: center;
+  //             font-family: "Noto Sans";
+  //             font-size: 16px;
+  //             font-style: normal;
+  //             font-weight: 500;
+  //             line-height: normal;
+  //             letter-spacing: 2.4px;
+  //             margin-bottom: 3px;
+  //           }
+  //           & > div:nth-child(2) {
+  //             background-position: center;
+  //             background: url(@/asset/image/new/home/11046.png) no-repeat;
+  //             background-size: 100% 100%;
+  //             display: flex;
+  //             flex-direction: column;
+  //             padding: 32px 0 16px;
+
+  //             & > span:nth-child(1) {
+  //               color: #487f82;
+  //               text-align: center;
+  //               font-family: "Noto Sans";
+  //               font-size: 18px;
+  //               font-style: normal;
+  //               font-weight: 500;
+  //               line-height: 25px; /* 138.889% */
+  //               letter-spacing: 2.7px;
+  //             }
+  //             & > span:nth-child(2) {
+  //               color: #487f82;
+  //               text-align: center;
+  //               font-family: "Noto Sans";
+  //               font-size: 14px;
+  //               font-style: normal;
+  //               font-weight: 500;
+  //               line-height: normal;
+  //               letter-spacing: 1.4px;
+  //             }
+  //           }
+  //           & > div:nth-child(3) {
+  //             width: 214px;
+  //             margin: 5px auto 0;
+  //             & > img {
+  //               width: 100%;
+  //             }
+  //           }
+  //         }
+  //         & > div:nth-child(2) {
+  //           display: none;
+  //         }
+  //       }
+  //       & > div:nth-child(2) {
+  //         margin-top: 45px;
+  //         display: flex;
+  //         justify-content: space-around;
+  //         svg {
+  //           width: 14px;
+  //         }
+  //       }
+  //     }
   .home-service {
     margin-top: 60px;
     & > div {
