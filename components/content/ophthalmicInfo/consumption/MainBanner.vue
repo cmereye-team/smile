@@ -35,7 +35,7 @@ export default {
   }
 }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/04/17a68f3a305077b9.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2024/04/819f03987bcb2783.png");
     background-position: top;
     background-size: 100%;
     width: 100vw;
@@ -50,7 +50,7 @@ export default {
 @media screen and (min-width:768px){
 
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/04/ed662418ca7b972a.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2024/04/1f675e433a2f0f10.png");
     cursor: pointer;
   }
 }
