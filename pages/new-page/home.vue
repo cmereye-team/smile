@@ -500,7 +500,7 @@
           </div>
           <div class="home-facebook--container">
             <el-carousel
-              v-if="isMobile"
+              v-show="isMobile"
               indicator-position="none"
               ref="carousel"
               arrow="never"
@@ -523,7 +523,7 @@
               </el-carousel-item>
             </el-carousel>
             <el-carousel
-              v-else
+            v-show="!isMobile"
               indicator-position="none"
               ref="carousel"
               arrow="never"
