@@ -498,7 +498,13 @@
             </div>
             <div>Facebook<br />用户評分</div>
           </div>
-          <div class="home-facebook--container">
+          <div v-if="isMobile">
+            <CarouselList :list=evaluateList />
+          </div>
+          <div v-else>
+            <CarouselListPc :list=evaluateList />
+          </div>
+          <!-- <div class="home-facebook--container">
             <el-carousel
               v-show="isMobile"
               indicator-position="none"
@@ -601,7 +607,7 @@
                 </svg>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="home-service">
@@ -840,6 +846,8 @@ import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
+import CarouselList  from '@/components/content/new/CarouselList.vue'
+import CarouselListPc from '@/components/content/new/CarouselListPc.vue'
 export default {
   components: {
     Head,
@@ -849,23 +857,8 @@ export default {
     Banner,
     BannerSlider,
     H2Tag,
-  },
-  computed: {
-    groupedData() {
-      const grouped = [];
-      if (this.evaluateList % 2 !== 0 && !this.isMobile) {
-        this.evaluateList.push({
-          name: "",
-          commit: "",
-          date: "",
-        });
-      }
-      for (let i = 0; i < this.evaluateList.length; i += 2) {
-        const pair = [this.evaluateList[i], this.evaluateList[i + 1]];
-        grouped.push(pair);
-      }
-      return grouped;
-    },
+    CarouselList,
+    CarouselListPc
   },
   data() {
     return {
