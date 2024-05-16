@@ -100,10 +100,10 @@ export default {
     height: 100vw !important;
     margin-bottom: 10vw;
     &.hkBgImg{
-      background-image: url("https://static.cmereye.com/imgs/2023/05/46220615c3718658.jpg");
+      background-image: url("https://static.cmereye.com/imgs/2024/05/a505608f9bc955db.jpg");
     }
     &.cnBgImg{
-      background-image: url("https://static.cmereye.com/imgs/2023/05/9b71688220cc08a3.jpg");
+      background-image: url("https://static.cmereye.com/imgs/2024/05/2a5a27ab125727ab.jpg");
     }
     margin-top: 24vw;
   }
@@ -126,10 +126,10 @@ export default {
   .banner {
     // background-position-x: right !important;
     &.hkBgImg{
-      background-image: url("https://static.cmereye.com/imgs/2023/05/f98c9fee4d7f0f66.jpg");
+      background-image: url("https://static.cmereye.com/imgs/2024/05/a25bc2e5da5de26b.jpg");
     }
     &.cnBgImg{
-      background-image: url("https://static.cmereye.com/imgs/2023/05/9f295eeb364d5c18.jpg");
+      background-image: url("https://static.cmereye.com/imgs/2024/05/9a404db4b48ed2b0.jpg");
     }
   }
   p{
