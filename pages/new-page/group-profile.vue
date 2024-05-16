@@ -455,6 +455,7 @@ export default {
     font-weight: 500;
     line-height: 35px; /* 140% */
     letter-spacing: 7.5px;
+    margin-bottom: 20px;
   }
   .swiper-small-text {
     color: #6d6e71;

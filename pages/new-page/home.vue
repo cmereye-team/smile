@@ -523,7 +523,7 @@
               </el-carousel-item>
             </el-carousel>
             <el-carousel
-            v-show="!isMobile"
+              v-show="!isMobile"
               indicator-position="none"
               ref="carousel"
               arrow="never"
@@ -1061,11 +1061,16 @@ export default {
   font-style: normal;
   font-display: swap;
 }
-.orbitron-nine {
-  font-family: "Orbitron", sans-serif !important;
-  font-optical-sizing: auto;
-  font-weight: 900;
+@font-face {
+  font-family: "Orbitron-bold";
+  src: url("https://static.cmereye.com/static/font/Orbitron-Bold-700.woff2")
+    format("woff2");
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+.orbitron-nine {
+  font-family: "Orbitron-bold", sans-serif !important;
 }
 @media screen and (min-width: 768px) {
   .home {
@@ -1489,7 +1494,7 @@ export default {
     background: url(@/asset/image/new/home/110425.png) no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    padding: 210px 0 100px;
+    padding: 210px 0 120px;
     margin-top: 160px;
     margin-bottom: 85px;
     position: relative;
@@ -1508,7 +1513,7 @@ export default {
         align-items: center;
         flex-direction: column;
         position: absolute;
-        top: -15%;
+        top: -20%;
         left: 50%;
         transform: translateX(-50%);
         & > div:nth-child(2) {
@@ -1526,12 +1531,16 @@ export default {
   }
   .home-facebook-user-item-carousel {
     display: flex;
+    gap: 0 120px;
   }
   .home-facebook-user-item {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 65px;
+    background: #fff;
+    max-width: 580px;
     & > div:nth-child(1) {
       color: #4570b6;
       text-align: center;
@@ -1545,7 +1554,7 @@ export default {
     & > div:nth-child(2) {
       display: flex;
       flex-direction: column !important;
-      width: 585px;
+      width: 100%;
       height: 245px;
       padding: 40px 0 10px;
       background-position: center;
