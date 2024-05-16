@@ -503,7 +503,7 @@
               v-if="isMobile"
               indicator-position="none"
               ref="carousel"
-              autoplay="false"
+              :autoplay=isAuto
               arrow="never"
             >
               <el-carousel-item
@@ -527,7 +527,7 @@
               v-else
               indicator-position="none"
               ref="carousel"
-              autoplay="false"
+              :autoplay=isAuto
               arrow="never"
             >
               <el-carousel-item
@@ -1025,6 +1025,7 @@ export default {
           commit: "Smile 激光手术，效果不错，推荐",
         },
       ],
+      isAuto:false
     };
   },
   mounted() {
