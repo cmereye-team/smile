@@ -9,8 +9,8 @@
         <div class="home-facebook-user-item">
           <div>{{ item[0].name }}</div>
           <div>
-            <span>{{ item[0].commit }}</span
-            ><span>{{ item[0].date }}</span>
+            <span>{{ item[0].commit }}</span>
+            <!--  <span>{{ item[0].date }}</span>-->
           </div>
           <div>
             <img src="@/asset/image/new/home/10775.png" alt="" />
@@ -19,8 +19,8 @@
         <div v-if="item[1].name !== ''" class="home-facebook-user-item">
           <div>{{ item[1].name || "" }}</div>
           <div>
-            <span>{{ item[1].commit }}</span
-            ><span>{{ item[1].date }}</span>
+            <span>{{ item[1].commit }}</span>
+            <!--  <span>{{ item[1].date }}</span> -->
           </div>
           <div>
             <img src="@/asset/image/new/home/10775.png" alt="" />
@@ -168,8 +168,8 @@ export default {
       display: flex;
       flex-direction: column !important;
       width: 100%;
-      height: 245px;
-      padding: 40px 0 10px;
+      height: 185px;
+      padding: 40px 5px 10px;
       background-position: center;
       background: url(@/asset/image/new/home/11046.png) no-repeat;
       background-size: 100% 100%;
@@ -180,15 +180,16 @@ export default {
       font-size: 28px;
       font-style: normal;
       font-weight: 500;
-      line-height: normal;
+      line-height: 1.2;
       // 文本超过3行 省略
       & > span:nth-child(1) {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 4;
       }
       letter-spacing: 2.8px;
+      justify-content: center;
     }
     & > div:nth-child(3) {
       margin-top: 7px;

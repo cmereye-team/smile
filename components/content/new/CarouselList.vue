@@ -14,7 +14,8 @@
           <div>{{ item.name }}</div>
           <div>
             <span>{{ item.commit }}</span
-            ><span>{{ item.date }}</span>
+            >
+            <!-- <span>{{ item.date }}</span> -->
           </div>
           <div>
             <img src="@/asset/image/new/home/10775.png" alt="" />
@@ -159,9 +160,10 @@ export default {
         background-size: 100% 100%;
         display: flex;
         flex-direction: column;
-        padding: 22px 0 8px;
+        padding: 22px 5px 8px;
         width: 283px;
         height: 122px;
+        justify-content: center;
 
         & > span:nth-child(1) {
           color: #487f82;
@@ -170,12 +172,12 @@ export default {
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
-          line-height: 25px; /* 138.889% */
+          line-height: 22px; /* 138.889% */
           letter-spacing: 2.7px;
           display: -webkit-box;
           -webkit-box-orient: vertical;
           overflow: hidden;
-          -webkit-line-clamp: 3;
+          -webkit-line-clamp: 4;
         }
         & > span:nth-child(2) {
           color: #487f82;

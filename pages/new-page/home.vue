@@ -499,10 +499,10 @@
             <div>Facebook<br />用户評分</div>
           </div>
           <div v-if="isMobile">
-            <CarouselList :list=evaluateList />
+            <CarouselList :list="evaluateList" />
           </div>
           <div v-else>
-            <CarouselListPc :list=evaluateList />
+            <CarouselListPc :list="evaluateList" />
           </div>
           <!-- <div class="home-facebook--container">
             <el-carousel
@@ -846,8 +846,8 @@ import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
-import CarouselList  from '@/components/content/new/CarouselList.vue'
-import CarouselListPc from '@/components/content/new/CarouselListPc.vue'
+import CarouselList from "@/components/content/new/CarouselList.vue";
+import CarouselListPc from "@/components/content/new/CarouselListPc.vue";
 export default {
   components: {
     Head,
@@ -858,7 +858,7 @@ export default {
     BannerSlider,
     H2Tag,
     CarouselList,
-    CarouselListPc
+    CarouselListPc,
   },
   data() {
     return {
@@ -932,7 +932,7 @@ export default {
         {
           name: "覃森仲",
           date: "3月21日17:55",
-          commit: "非常耐心讲解，满意！",
+          commit: "非常耐心講解，滿意！",
         },
         {
           name: "Helen Tsui",
@@ -954,7 +954,7 @@ export default {
         {
           name: "Siu Chun Wong",
           date: "1月22日15:46",
-          commit: "好满意服务 医生姑娘都很好",
+          commit: "好滿意服務 醫生姑娘都很好",
         },
         {
           name: "Bear Teddy",
@@ -964,30 +964,30 @@ export default {
         },
         {
           name: "Stephanie Man",
-          date: "2023年8月12日  16:16",
+          date: "2023年8月12日  16:16",
           commit:
             "The doctors and the staff are amazing - felt very cared for throughout the process, both pre - op and post - op.Dr Chow and the nurses are very professional and know how to ease the patients’ anxiety.",
         },
         {
           name: "歐陽彥",
-          date: "2023年11月22日  16:43",
-          commit: "服务态度非常好，手术总算成功",
+          date: "2023年11月22日  16:43",
+          commit: "服務態度非常好，手術總算成功",
         },
         {
           name: "Kalok Tang",
-          date: "2023年11月15日  10:37",
+          date: "2023年11月15日  10:37",
           commit:
             "the checking is good and the process is smooth that I don’t have any uncomfortable after doing the surgery.The doctor gave suggestions in details and I had a good experience.",
         },
         {
           name: "周軒軒",
           date: "2023年7月25日 12:36",
-          commit: "做完手术后看清了很多东西！没有帶眼镜的烦恼！服务态度",
+          commit: "做完手術後看清了很多東西！沒有帶眼鏡的煩惱！服務態度",
         },
         {
           name: "Grace Leung",
-          date: "2023年6月9日  16:45",
-          commit: "医生服务很好，很亲切，详细解答疑问。",
+          date: "2023年6月9日  16:45",
+          commit: "醫生服務很好，很親切，詳細解答疑問。",
         },
         {
           name: "崔劍",
@@ -996,7 +996,7 @@ export default {
         },
         {
           name: "司徒露嬅",
-          date: "2023年11月28日  11:04",
+          date: "2023年11月28日  11:04",
           commit: "Doctor Chow is nice.The nurses are also very nice.",
         },
         {
@@ -1007,13 +1007,13 @@ export default {
         },
         {
           name: "Twining Snow",
-          date: "2023年10月11日  15:35",
+          date: "2023年10月11日  15:35",
           commit: "The result is absolutely amazing!",
         },
         {
           name: "Quanxiang Xian",
-          date: "2023年7月6日  11:39",
-          commit: "Smile 激光手术，效果不错，推荐",
+          date: "2023年7月6日  11:39",
+          commit: "Smile 鐳射手術，效果不錯，推薦",
         },
       ],
     };
@@ -1487,7 +1487,7 @@ export default {
     background: url(@/asset/image/new/home/110425.png) no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    padding: 210px 0 120px;
+    padding: 210px 0 200px;
     margin-top: 160px;
     margin-bottom: 85px;
     position: relative;
