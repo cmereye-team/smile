@@ -29,7 +29,7 @@
                   e
                 }}</span>
               </div>
-              <nuxt-link :to="item.link">了解更多></nuxt-link>
+              <nuxt-link :to="item.link">了解更多&gt;</nuxt-link>
             </div>
           </div>
         </div>
