@@ -117,6 +117,14 @@
         </div>
       </div>
     </div>
+    <div class="smile-pro-btn">
+      <a
+        href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-07)%20LASIK%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+        target="_blank"
+        rel="noopener noreferrer"
+        >預約咨詢</a
+      >
+    </div>
     <businessHours />
     <Footer />
     <FooterMobile />
@@ -211,6 +219,26 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  .smile-pro-btn {
+    margin: 85px auto;
+    display: flex;
+    justify-content: center;
+    & > a {
+      margin: 0 auto;
+      width: fit-content;
+      background: #4570b6;
+      border-radius: 50px;
+      padding: 16px 50px;
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
+    }
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/8764882bb5d61bd6.webp")
       no-repeat;
@@ -528,6 +556,25 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  .smile-pro-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    & > a {
+      color: #fff;
+
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
+      background: #4570b6;
+      border-radius: 55px;
+      padding: 17px 55px;
+    }
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/6fdcba3b3d5247bc.webp")
       no-repeat;
@@ -738,10 +785,10 @@ export default {
           }
         }
       }
-      &-in:nth-child(4){
-        .image{
+      &-in:nth-child(4) {
+        .image {
           max-width: 68px;
-          img{
+          img {
             max-width: 100%;
           }
         }

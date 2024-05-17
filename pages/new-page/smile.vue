@@ -17,10 +17,26 @@
         Carl Zeiss VisuMax
         激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-4mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。
       </div>
+      <div class="smile-pro-btn">
+        <a
+          href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+          target="_blank"
+          rel="noopener noreferrer"
+          >預約諮詢</a
+        >
+      </div>
     </div>
     <Step />
     <Benefit />
     <Fit />
+    <div class="smile-pro-btn">
+      <a
+        href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+        target="_blank"
+        rel="noopener noreferrer"
+        >預約諮詢</a
+      >
+    </div>
     <Xtra />
     <businessHours />
     <Footer />
@@ -33,7 +49,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 
 import Step from "@/components/content/service/relex_smile/Step_copy.vue";
 import Benefit from "@/components/content/service/relex_smile/Benefit_copy.vue";
@@ -144,6 +160,26 @@ export default {
           margin-top: 25px !important;
         }
       }
+    }
+  }
+  .smile-pro-btn {
+    margin: 85px auto;
+    display: flex;
+    justify-content: center;
+    & > a {
+      margin: 0 auto;
+      width: fit-content;
+      background: #4570b6;
+      border-radius: 50px;
+      padding: 16px 50px;
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
     }
   }
 }
@@ -271,7 +307,25 @@ export default {
       }
     }
   }
+  .smile-pro-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    & > a {
+      color: #fff;
 
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
+      background: #4570b6;
+      border-radius: 55px;
+      padding: 17px 55px;
+    }
+  }
   .smile-banner-context {
     width: auto;
     margin: 50px 24px 0;

@@ -917,7 +917,7 @@
       </div>
       <div class="smile-pro-btn">
         <a
-          href="https://api.whatsapp.com/send/?phone=85260610511"
+          href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
           target="_blank"
           rel="noopener noreferrer"
           >預約咨詢</a
@@ -1098,17 +1098,14 @@
           </div>
           <div>米姬 Maggie</div>
         </a>
-        <a
-          href="https://youtu.be/4InLMjTa3rI"
-          target="_blank"
-        >
+        <a href="https://youtu.be/4InLMjTa3rI" target="_blank">
           <div>
             <img
               src="https://static.cmereye.com/imgs/2024/05/8f5a563be87127f9.png"
               alt="名人用家檔案"
             />
           </div>
-          <div>應智越  细猫</div>
+          <div>應智越 细猫</div>
         </a>
         <a href="https://youtu.be/kVEJ-PN4AJo" target="_blank">
           <div>
@@ -1122,7 +1119,7 @@
       </div>
       <div class="smile-pro-btn">
         <a
-          href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg"
+          href="https://www.youtube.com/watch?v=iHBGkRh-CXw&list=PLWVonQr1f7XhXd4GDFI3zRtOe9RHb1jdb"
           target="_blank"
           rel="noopener noreferrer"
           >瞭解更多</a
@@ -1253,6 +1250,14 @@
         </div>
       </div>
     </div>
+    <div class="smile-pro-btn">
+      <a
+        href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+        target="_blank"
+        rel="noopener noreferrer"
+        >預約咨詢</a
+      >
+    </div>
     <businessHours />
     <Footer />
     <FooterMobile />
@@ -1263,7 +1268,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 
 export default {

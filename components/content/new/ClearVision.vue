@@ -7,8 +7,9 @@
           隨著年紀增長，人們可能會遇到老花的問題，這是一種影響近視力的視力狀況。由於在眼睛中的晶狀體彈性降低，使眼睛調節焦距的能力下降，導致看近處物體時會出現視覺模糊。
         </p>
         <p>
-          老花並非疾病，而是隨著年齡增長而自然出現的現象。一般在40歲開始出現，到60歲時會達到較為穩定的狀態。為了改善老花帶來的視力問題，人們可以選擇配戴老花眼鏡、使用隱形眼鏡或接受老花矯視手術等方式，這些方法都可幫助改善近距離的視力，使日常生活中的閱讀和近距離工作變得更加容易。
+          老花並非疾病，而是隨著年齡增長而自然出現的現象。一般在40歲開始出現，到60歲時會達到較為穩定的狀態。為了改善老花帶來的視力問題，人們可以選擇配戴老花眼鏡、使用隱形眼鏡或接受老花矯視手術等方式，這些方法都可幫助改善近距離的視力，使日常生活中的閱讀和近距離工作變得更加容易，而進行老花矯視更是受大眾歡迎的選項。
         </p>
+        <H2Tag style="margin-top: 60px" :title="['CMER CLEAR-Vision']" />
         <p>
           坊間稱之為人工晶體置換術。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，一次過解決近視、遠視、散光、老花等問題。
           希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業咨詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
@@ -32,6 +33,14 @@
             除了多焦距人工晶體外，亦有基本的單焦距人工晶體、散光多焦距人工晶體等選項。建議請先預約檢查諮詢眼科專科醫生專業意見，再選擇合適自己的人工晶體。
           </p>
         </div>
+      </div>
+      <div class="smile-pro-btn">
+        <a
+          href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+          target="_blank"
+          rel="noopener noreferrer"
+          >預約咨詢</a
+        >
       </div>
     </div>
     <div class="vision-max">
@@ -648,6 +657,26 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  .smile-pro-btn {
+    margin: 85px auto;
+    display: flex;
+    justify-content: center;
+    & > a {
+      margin: 0 auto;
+      width: fit-content;
+      background: #4570b6;
+      border-radius: 50px;
+      padding: 16px 50px;
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
+    }
+  }
   .clear-vision {
     overflow: hidden;
   }
@@ -837,6 +866,25 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  .smile-pro-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    & > a {
+      color: #fff;
+
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 100% */
+      letter-spacing: 6px;
+      background: #4570b6;
+      border-radius: 55px;
+      padding: 17px 55px;
+    }
+  }
   .clear-vision {
     overflow: hidden;
   }
