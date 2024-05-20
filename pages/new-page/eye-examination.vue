@@ -420,9 +420,9 @@
           <div>
             <img
               src="https://static.cmereye.com/imgs/2024/05/dd886a41ef768306.png"
-              alt="Sir ius: 角膜結構及瞳孔測量"
+              alt="Sirius: 角膜結構及瞳孔測量"
             />
-            <div>Sir ius:<br />角膜結構及瞳孔測量</div>
+            <div>Sirius:<br />角膜結構及瞳孔測量</div>
           </div>
           <div>
             <img

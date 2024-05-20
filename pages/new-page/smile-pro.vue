@@ -994,7 +994,7 @@
               </div>
               <div>極小光點</div>
             </div>
-            <div>2-4mm微創切口</div>
+            <div>2-2.5mm微創切口</div>
           </div>
           <div>
             <div>

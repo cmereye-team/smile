@@ -158,7 +158,7 @@ export default {
         {
           img: "https://static.cmereye.com/imgs/2024/04/c8c583239e65a1a7.png",
           title: "手術時間短",
-          text: "大約10至15分鐘完成",
+          text: "大約20至30分鐘完成",
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/515c3b6fb8d3871d.png",
