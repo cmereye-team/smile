@@ -365,7 +365,7 @@ export default {
       // 根据星期几返回对应的中文表示
       const weekdays = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
       // 返回格式化后的字符串
-      const nowDay = `${month}月${day}日${year}年`;
+      const nowDay = `${year}年${month}月${day}日`;
       const weekday = weekdays[dayOfWeek];
       return {
         nowDay,

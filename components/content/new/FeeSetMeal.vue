@@ -13,7 +13,7 @@
       </div>
       <a
         class="meal-btn"
-        href="https://api.whatsapp.com/send/?phone=85260610511"
+        :href="link"
         target="_blank"
         rel="noopener noreferrer"
         >立即預約</a
@@ -33,6 +33,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    link:{
+      type: String,
+      default: 'https://api.whatsapp.com/send/?phone=85260610511'
+    }
   },
   data() {
     return {};
