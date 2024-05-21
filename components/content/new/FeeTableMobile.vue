@@ -48,7 +48,7 @@
             <div>$38,000^</div>
             <div>$42,000^</div>
           </div>
-          <div>術前檢查費用 $100</div>
+          <div>術前檢查費用 $500</div>
         </div>
         <div>
           <div>
