@@ -1098,14 +1098,14 @@
           </div>
           <div>米姬 Maggie</div>
         </a>
-        <a href="https://youtu.be/4InLMjTa3rI" target="_blank">
+        <a href="https://youtu.be/1p5Qm_772jI" target="_blank">
           <div>
             <img
               src="https://static.cmereye.com/imgs/2024/05/8f5a563be87127f9.png"
               alt="名人用家檔案"
             />
           </div>
-          <div>應智越 细猫</div>
+          <div>應智越 細猫</div>
         </a>
         <a href="https://youtu.be/kVEJ-PN4AJo" target="_blank">
           <div>
