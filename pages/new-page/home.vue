@@ -1665,7 +1665,7 @@ export default {
     background: url("https://static.cmereye.com/imgs/2024/04/819f03987bcb2783.png")
       no-repeat;
     background-size: 100% 100%;
-    height: 330px;
+    height: 84.6vw;
     margin: 24px 30px 55px;
     border-radius: 44px;
     padding-left: 10px;
