@@ -110,7 +110,7 @@
                     fill="#85A6D7"
                   />
                 </svg>
-                <div>9796 2992</div>
+                <div>6940 8569</div>
               </div>
             </div>
             <div>
@@ -241,7 +241,7 @@
                       fill="#86D7CA"
                     />
                   </svg>
-                  <div>9796 2992</div>
+                  <div>6940 8569</div>
                 </div>
               </div>
             </div>

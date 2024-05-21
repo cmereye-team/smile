@@ -122,7 +122,7 @@
       >
         <a
           target="_blank"
-          href="https://api.whatsapp.com/send/?phone=85260610511&text=想了解SMILE XTRA角膜膠原交聯術"
+          href="https://api.whatsapp.com/send/?phone=85269408569&text=想了解SMILE XTRA角膜膠原交聯術"
         >
           {{ $i18n.locale === "en" ? "Learn More" : "了解更多" }}</a
         >

@@ -37,7 +37,11 @@
       </div>
     </div>
     <div class="whatsappBtn">
-      <a target="_blank" href="https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-03)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5">預約咨詢</a>
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+        >預約咨詢</a
+      >
     </div>
     <div class="characteristic">
       <H2Tag :title="['EVO Visian ICL鏡片', '7大特色']" />
@@ -61,7 +65,11 @@
           </div>
           <div class="text">
             <p>
-              <span v-for="(el, index) in item.text" :key="index" v-html="el"></span>
+              <span
+                v-for="(el, index) in item.text"
+                :key="index"
+                v-html="el"
+              ></span>
             </p>
           </div>
         </div>
@@ -83,7 +91,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -314,7 +322,8 @@ export default {
     padding-bottom: 200%;
     // background: rgba(199, 232, 239, 0.2);
     // border-radius: 50%/40%;
-    background: url(https://static.cmereye.com/imgs/2024/05/e102853c2e3b96d4.png) no-repeat;
+    background: url(https://static.cmereye.com/imgs/2024/05/e102853c2e3b96d4.png)
+      no-repeat;
     background-size: 100% 100%;
     top: 0;
     left: 50%;
@@ -500,10 +509,9 @@ export default {
           }
         }
       }
-      &>div:nth-child(3) {
-        &>div:nth-child(2){
-          &>p{
-
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > p {
           }
         }
       }

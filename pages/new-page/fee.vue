@@ -1711,7 +1711,7 @@ import FooterMobile from '@/components/Publice/FooterMobile.vue'
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import FeeSetMeal from "@/components/content/new/FeeSetMeal.vue";
 import FeeTableMobile from "@/components/content/new/FeeTableMobile.vue";
-import Lasik from "./lasik.vue";
+// import Lasik from "./lasik.vue";
 export default {
   components: {
     Head,
@@ -1726,11 +1726,11 @@ export default {
   data() {
     return {
       isMobile: false,
-      smileLink:'https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-08)%20SMILE%E5%BE%AE%E7%AC%91%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96',
-      smileProLink:'https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-09)%20SMILE%20Pro%E5%BE%AE%E7%AC%91%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96',
-      iclLink:'https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-10)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1',
-      lasikLink:'https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-11)%20LASIK%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96/TPRK',
-      clearVision:'https://api.whatsapp.com/send/?phone=85260610511&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-12)%20Clear-Vision(%E8%80%81%E8%8A%B1%E6%89%8B%E8%A1%93)',
+      smileLink:'https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-08)%20SMILE%E5%BE%AE%E7%AC%91%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96',
+      smileProLink:'https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-09)%20SMILE%20Pro%E5%BE%AE%E7%AC%91%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96',
+      iclLink:'https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-10)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1',
+      lasikLink:'https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-11)%20LASIK%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96/TPRK',
+      clearVision:'https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-12)%20Clear-Vision(%E8%80%81%E8%8A%B1%E6%89%8B%E8%A1%93)',
       priceSmileList: [
         [["$15,000"], ["$29,000"]],
         [["$12,000^"], ["$19,000^"]],
