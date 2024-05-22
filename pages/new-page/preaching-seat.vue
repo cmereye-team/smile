@@ -260,6 +260,7 @@ export default {
         telphoneNumber: "",
         email: "",
         source: "",
+        siteSource:''
       },
       morningOrAfternoon: "",
       nowDayTime: "",
@@ -418,7 +419,12 @@ export default {
       const day = String(time.getDate()).padStart(2, "0");
       return `${year}-${month}-${day}`;
     },
+    getUrl(){
+      // 获取当前页面url
+      return window.location.href;
+    },
     async submitForm() {
+      this.form1.siteSource = this.getUrl();
       let dataList = new FormData();
       let _dataList = { ...this.form, ...this.form1 };
       _dataList.address = this.getName(_dataList.address);
@@ -469,6 +475,7 @@ export default {
       this.form1.telphoneNumber = "";
       this.form1.email = "";
       this.form1.source = "";
+      this.form1.siteSource = "";
     },
     getYearMonthDay(times) {
       // 通过时间戳获取 年 月 日
