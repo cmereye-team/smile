@@ -1178,15 +1178,6 @@
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
-                    10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
-                  </div>
-                  <div class="name-title">阿聲, 咖啡師</div>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-two">
-                <div class="swiper-two-box">
-                  <div class="speech">
                     第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
                       >好細心</span
                     >講解同鼓勵我，<br />令我好安心
@@ -1220,6 +1211,16 @@
                     10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
                   </div>
                   <div class="name-title">阿聲, 咖啡師</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
+                      >好細心</span
+                    >講解同鼓勵我，<br />令我好安心
+                  </div>
+                  <div class="name-title">Macy, 文員</div>
                 </div>
               </div>
             </div>
