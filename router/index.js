@@ -7,7 +7,8 @@ export const $router = [
     path: '/',
     name: 'home',
     title: '主页',
-    component: resolve('pages/index.vue'),
+    component: resolve('pages/new-page/home.vue')
+    // component: resolve('pages/index.vue'),
   },
   {
     path: '/group-profile',
@@ -49,7 +50,8 @@ export const $router = [
     path: '/fee',
     name: 'fee',
     title: '收費詳情',
-    component: resolve('pages/fee/index.vue'),
+    // component: resolve('pages/fee/index.vue'),
+    component: resolve('pages/new-page/fee.vue')
   },
   {
     path: '/FreQuestions',
@@ -83,7 +85,8 @@ export const $router = [
     path: '/contact-us',
     name: 'contact-us',
     title: '聯絡我們',
-    component: resolve('pages/contact-us/index.vue')
+    // component: resolve('pages/contact-us/index.vue')
+    component: resolve('pages/new-page/contact-us.vue')
   },
   {
     path: '/booking',
@@ -100,8 +103,9 @@ export const $router = [
   {
     path: '/ophthalmicInfo/AppointForm',
     name: 'ophthalmicInfo/AppointForm',
-    title: '關於我們',
-    component: resolve('pages/ophthalmicInfo/AppointForm/index.vue')
+    title: '講座',
+    // component: resolve('pages/ophthalmicInfo/AppointForm/index.vue')
+    component: resolve('pages/new-page/preaching-seat.vue')
   },
   {
     path: '/smilepro-event',
@@ -143,36 +147,36 @@ export const $router = [
     path: '/vision-correction/relex-smile',
     name: 'vision-correction/relex-smile',
     title: 'SMILE 微笑激光矯視',
-    component: resolve('pages/vision-correction/relex-smile/index.vue'),
-    // component: resolve('pages/new-page/smile.vue')
+    // component: resolve('pages/vision-correction/relex-smile/index.vue'),
+    component: resolve('pages/new-page/smile.vue')
   },
   {
     path: '/smilePro',
     name: 'smilePro',
     title: 'SMILE Pro 微笑激光矯視',
-    component: resolve('pages/smilePro/index.vue'),
-    // component: resolve('pages/new-page/smile-pro.vue')
+    // component: resolve('pages/smilePro/index.vue'),
+    component: resolve('pages/new-page/smile-pro.vue')
   },
   {
     path: '/vision-correction-presbyopia',
     name: 'vision-correction-presbyopia',
     title: 'CMER CLEAR-Vision',
-    component: resolve('pages/vision-correction-presbyopia/index.vue'),
-    // component: resolve('pages/new-page/clear-vision.vue')
+    // component: resolve('pages/vision-correction-presbyopia/index.vue'),
+    component: resolve('pages/new-page/clear-vision.vue')
   },
   {
     path: '/vision-correction-lasik',
     name: 'vision-correction-lasik',
     title: 'LASIK 激光矯視',
-    component: resolve('pages/vision-correction-lasik/index.vue'),
-    // component: resolve('pages/new-page/lasik.vue')
+    // component: resolve('pages/vision-correction-lasik/index.vue'),
+    component: resolve('pages/new-page/lasik.vue')
   },
   {
     path: '/vision-correction-icl',
     name: 'vision-correction-icl',
     title: 'ICL 植入式隱形眼鏡',
-    component: resolve('pages/vision-correction-icl/index.vue'),
-    // component: resolve('pages/new-page/icl.vue')
+    // component: resolve('pages/vision-correction-icl/index.vue'),
+    component: resolve('pages/new-page/icl.vue')
   },
   // 新版本路由
   {
@@ -291,9 +295,6 @@ export const $router = [
     title: '科普知識',
     component: resolve('pages/new-page/blog.vue')
   }
-
-
-  
 ]
 
 

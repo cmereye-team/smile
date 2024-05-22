@@ -34,10 +34,6 @@ export default {
       {
         src: 'https://unpkg.com/vue-i18n/dist/vue-i18n.js'
       },
-    
-
-
-      
     ],
     meta: [
       { charset: 'utf-8' },
