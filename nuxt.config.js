@@ -10,15 +10,15 @@ export default {
     title: '香港希瑪微笑矯視中心',
     htmlAttrs: {
       lang: 'zh-HK',
-      
+
     },
     script: [
       {
         src:
           "https://mqj.zoosnet.net/JS/LsJS.aspx?siteid=MQJ40126824&amp;float=1&amp;lng=big5",
-          body:true
+        body: true
       },
-       // Google Analytics Code
+      // Google Analytics Code
       {
         src: "https://www.googletagmanager.com/gtag/js?id=G-FN8KFBR9XM",
         // src: "https://www.googletagmanager.com/gtag/js?id=GTM-5M8VLLM",
@@ -44,12 +44,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/static/favicon.ico' },
-      { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true},
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap' },
-    
+
     ]
-  },   
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -65,8 +65,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: "~/plugins/vue-swiper.js", ssr: false },
-    { src:  "~plugins/element-ui/element-ui.js", ssr: false },
-    { src:  "~plugins/wow.js", ssr: false }
+    { src: "~plugins/element-ui/element-ui.js", ssr: false },
+    { src: "~plugins/wow.js", ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -82,7 +82,7 @@ export default {
   modules: [
     [
       '@nuxtjs/i18n',
-       i18n,
+      i18n,
       '@nuxtjs/gtm',
       '@nuxtjs/sitemap'
     ]
@@ -94,6 +94,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包
   build: {
     vendor: ['element-ui'],
+  },
+  config: {
+    nuxt: {
+      host: '0.0.0.0',
+    }
   }
-  
 }

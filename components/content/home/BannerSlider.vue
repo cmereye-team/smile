@@ -137,7 +137,8 @@ export default {
         // }
       ],
       optionList: 0,
-      link: 'https://api.whatsapp.com/send/?phone=85260610511&amp;text=我想了解(W-Xmas01) Smile Pro矯視聖誕優惠 将连接中的&amp; 用js 替换为 &    '
+      link: 'https://api.whatsapp.com/send/?phone=85260610511&amp;text=我想了解(W-Xmas01) Smile Pro矯視聖誕優惠 将连接中的&amp; 用js 替换为 &    ',
+      num:5
     }
   },
   filters: {
@@ -157,7 +158,7 @@ export default {
       let List = []
       let that = this
       if (this.$i18n.locale === 'hk') {
-        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/1/num${this.num}`)
+        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/1/num/${this.num}`)
           .then(function (response) {
             return response.json();
           })
@@ -174,7 +175,7 @@ export default {
             })
           });
       } else if (this.$i18n.locale === 'cn') {
-        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/2/num${this.num}`)
+        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/2/num/${this.num}`)
           .then(function (response) {
             return response.json();
           })
@@ -191,7 +192,7 @@ export default {
             })
           });
       } else {
-        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/3/num${this.num}`)
+        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/3/num/${this.num}`)
           .then(function (response) {
             return response.json();
           })

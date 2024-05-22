@@ -1089,15 +1089,15 @@ export default {
         child_list: [
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
-            link: "/Notice/eyeExam",
+            link: "/patient-info",
           },
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
-            link: "/Notice/techProcess",
+            link: "/flow-of-vision-correction",
           },
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
-            link: "/Notice/Followdiag",
+            link: "/post-corrective-care",
           },
         ],
       },

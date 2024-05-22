@@ -1,7 +1,10 @@
 <template>
   <div class="main_footer" v-if="screenWidth > 768">
     <div class="section flex justify-between page_container px-0">
-      <div class="logo_footer" :style="{minWidth: $i18n.locale == 'en' ? '250px': ''}">
+      <div
+        class="logo_footer"
+        :style="{ minWidth: $i18n.locale == 'en' ? '250px' : '' }"
+      >
         <nuxt-link :to="localePath('/')"
           ><img
             class="foot_logo"
@@ -21,9 +24,20 @@
             </div>
           </div>
 
-          ©2023 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}}
-          <span><nuxt-link :to="localePath('/privacy-policy')">{{$t('home.footer.span3')}}</nuxt-link></span> |
-          <span><nuxt-link :to="localePath('/disclaimer')">{{$t('home.footer.span4')}}</nuxt-link></span>
+          ©2023 {{ $t("home.footer.span1") }} <br />{{
+            $t("home.footer.span2")
+          }}
+          <span
+            ><nuxt-link :to="localePath('/privacy-policy')">{{
+              $t("home.footer.span3")
+            }}</nuxt-link></span
+          >
+          |
+          <span
+            ><nuxt-link :to="localePath('/disclaimer')">{{
+              $t("home.footer.span4")
+            }}</nuxt-link></span
+          >
         </div>
       </div>
       <div class="flex">
@@ -41,9 +55,11 @@
             </nuxt-link>
             <ul class="child_menu">
               <li v-for="(childItem, index) in navItem.child_list" :key="index">
-                <nuxt-link :to="localePath(childItem.link)" class="text-xl mian_nav_text_child">{{
-                  childItem.child_item
-                }}</nuxt-link>
+                <nuxt-link
+                  :to="localePath(childItem.link)"
+                  class="text-xl mian_nav_text_child"
+                  >{{ childItem.child_item }}</nuxt-link
+                >
               </li>
             </ul>
           </li>
@@ -54,17 +70,25 @@
         <div class="mb-10">
           <nuxt-link class="main_nav text-xl" :to="localePath('/fee')"
             ><div class="mian_nav_text font-black text-xl mian_nav_text_child">
-              {{$t('home.headers.feeConsultation')}}
+              {{ $t("home.headers.feeConsultation") }}
             </div></nuxt-link
           >
           <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/')"
-            ><div class="mian_nav_text font-black text-xl mian_nav_text_child" :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' :'']">
-              {{$t('home.headers.consumptionVoucher')}}
+            ><div
+              class="mian_nav_text font-black text-xl mian_nav_text_child"
+              :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' : '']"
+            >
+              {{ $t("home.headers.consumptionVoucher") }}
             </div></nuxt-link
           >
-          <nuxt-link class="main_nav text-xl mt-6 block" :to="localePath('/contact-us')"
-            ><div class="mian_nav_text font-black text-xl mian_nav_text_child" :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' :'']">
-              {{$t('home.headers.contactUs')}}
+          <nuxt-link
+            class="main_nav text-xl mt-6 block"
+            :to="localePath('/contact-us')"
+            ><div
+              class="mian_nav_text font-black text-xl mian_nav_text_child"
+              :class="[$i18n.locale == 'en' ? 'mian_nav_text_eng' : '']"
+            >
+              {{ $t("home.headers.contactUs") }}
             </div></nuxt-link
           >
         </div>
@@ -91,9 +115,20 @@
         </div>
 
         <div class="copyright">
-          ©2023 {{$t('home.footer.span1')}} <br />{{$t('home.footer.span2')}}
-          <span><nuxt-link :to="localePath('/privacy-policy')">{{$t('home.footer.span3')}}</nuxt-link></span> |
-          <span><nuxt-link :to="localePath('/disclaimer')">{{$t('home.footer.span4')}}</nuxt-link></span>
+          ©2023 {{ $t("home.footer.span1") }} <br />{{
+            $t("home.footer.span2")
+          }}
+          <span
+            ><nuxt-link :to="localePath('/privacy-policy')">{{
+              $t("home.footer.span3")
+            }}</nuxt-link></span
+          >
+          |
+          <span
+            ><nuxt-link :to="localePath('/disclaimer')">{{
+              $t("home.footer.span4")
+            }}</nuxt-link></span
+          >
         </div>
       </div>
     </div>
@@ -107,33 +142,33 @@ export default {
       activeName: "1",
       navList: [
         {
-          main_nav: this.$t('home.headers.aboutSmile'),
+          main_nav: this.$t("home.headers.aboutSmile"),
           link: "#",
           child_list: [
             {
-              child_item: this.$t('home.headers.aboutSmileChild_1'),
+              child_item: this.$t("home.headers.aboutSmileChild_1"),
               link: "/about-us/centre-introduction",
             },
             {
-              child_item: this.$t('home.headers.aboutSmileChild_2'),
+              child_item: this.$t("home.headers.aboutSmileChild_2"),
               link: "/about-us/medical-team",
             },
             {
-              child_item: this.$t('home.headers.aboutSmileChild_3'),
+              child_item: this.$t("home.headers.aboutSmileChild_3"),
               link: "/about-us/medical-equipment",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.orthopedicServices'),
+          main_nav: this.$t("home.headers.orthopedicServices"),
           link: "#",
           child_list: [
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_1'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_1"),
               link: "/service/relex_smile",
             },
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_5'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_5"),
               link: "/smilePro",
             },
             {
@@ -141,80 +176,80 @@ export default {
               link: "/service/CLEAR_Vision",
             },
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_3'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_3"),
               link: "/service/LASIK",
             },
             {
-              child_item: this.$t('home.headers.orthopedicServicesChild_4'),
+              child_item: this.$t("home.headers.orthopedicServicesChild_4"),
               link: "/service/ICL",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.diagnosisInstructions'),
+          main_nav: this.$t("home.headers.diagnosisInstructions"),
           link: "#",
           child_list: [
             {
-              child_item: this.$t('home.headers.diagnosisInstructionsChild_1'),
-              link: "/Notice/eyeExam",
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
+              link: "/patient-info",
             },
             {
-              child_item: this.$t('home.headers.diagnosisInstructionsChild_2'),
-              link: "/Notice/techProcess",
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
+              link: "/flow-of-vision-correction",
             },
             {
-              child_item: this.$t('home.headers.diagnosisInstructionsChild_3'),
-              link: "/Notice/Followdiag",
+              child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
+              link: "/post-corrective-care",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.commonProblem'),
+          main_nav: this.$t("home.headers.commonProblem"),
           link: "/FreQuestions",
           child_list: [
             {
-              child_item: this.$t('home.headers.commonProblemChild_1'),
+              child_item: this.$t("home.headers.commonProblemChild_1"),
               link: "/FreQuestions#faq-smile",
             },
             {
-              child_item: this.$t('home.headers.commonProblemChild_2'),
+              child_item: this.$t("home.headers.commonProblemChild_2"),
               link: "/FreQuestions#faq-lasik",
             },
             {
-              child_item: this.$t('home.headers.commonProblemChild_3'),
+              child_item: this.$t("home.headers.commonProblemChild_3"),
               link: "/FreQuestions#faq-icl",
             },
             {
-              child_item: this.$t('home.headers.commonProblemChild_4'),
+              child_item: this.$t("home.headers.commonProblemChild_4"),
               link: "/FreQuestions#faq-presbyopia",
             },
           ],
         },
         {
-          main_nav: this.$t('home.headers.ophthalmicConsultation'),
+          main_nav: this.$t("home.headers.ophthalmicConsultation"),
           link: "#",
           child_list: [
             {
-              child_item: this.$t('home.headers.ophthalmicConsultationChild_1'),
+              child_item: this.$t("home.headers.ophthalmicConsultationChild_1"),
               link: "/ophthalmicInfo/shareVideos",
             },
             {
-              child_item: this.$t('home.headers.ophthalmicConsultationChild_2'),
+              child_item: this.$t("home.headers.ophthalmicConsultationChild_2"),
               link: "/ophthalmicInfo/mediaCov",
             },
           ],
         },
 
         {
-          main_nav: this.$t('home.headers.reservationService'),
+          main_nav: this.$t("home.headers.reservationService"),
           link: "#",
           child_list: [
             {
-              child_item: this.$t('home.headers.reservationServiceChild_1'),
+              child_item: this.$t("home.headers.reservationServiceChild_1"),
               link: "/eye-checkup",
             },
             {
-              child_item: this.$t('home.headers.reservationServiceChild_2'),
+              child_item: this.$t("home.headers.reservationServiceChild_2"),
               link: "/ophthalmicInfo/AppointForm",
             },
           ],
@@ -287,7 +322,12 @@ export default {
       justify-content: space-between;
       .main_menu {
         letter-spacing: 0.2vw;
-        li:nth-child(4),li:nth-child(5),li:nth-child(6){margin-bottom: 0;margin-top: 30px;}
+        li:nth-child(4),
+        li:nth-child(5),
+        li:nth-child(6) {
+          margin-bottom: 0;
+          margin-top: 30px;
+        }
 
         .child_menu {
           li {
@@ -296,27 +336,32 @@ export default {
               color: #4570b6;
             }
           }
-          li:last-child{margin-bottom: 0;}
+          li:last-child {
+            margin-bottom: 0;
+          }
         }
       }
       .copyright {
         margin-top: 3vw;
         text-align: center;
-        font-size: 12px;font-weight:300;
-        transform: scale(.8);
+        font-size: 12px;
+        font-weight: 300;
+        transform: scale(0.8);
         span {
-          border-bottom: 1px solid;  font-size: 12px;
+          border-bottom: 1px solid;
+          font-size: 12px;
         }
       }
     }
   }
-  .mian_nav_text:hover,.mian_nav_text_child:hover{
+  .mian_nav_text:hover,
+  .mian_nav_text_child:hover {
     color: rgb(75, 75, 255) !important;
   }
   .mian_nav_text_eng {
-    font-weight: 300  !important;
-    font-size: 15px  !important;
-    line-height: 18px  !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
     letter-spacing: 0.2em !important;
     display: initial;
   }
@@ -363,7 +408,7 @@ export default {
   }
   .copyright {
     margin-top: 3vw;
-    transform: scale(.6);
+    transform: scale(0.6);
     span {
       border-bottom: 1px solid;
     }

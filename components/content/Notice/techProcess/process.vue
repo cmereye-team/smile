@@ -223,7 +223,7 @@ h2 {
       justify-content: flex-end;
       .step-txt {
         position: absolute;
-        right: -70px;
+        right: 40px;
       }
     }
   }

@@ -1,11 +1,14 @@
 <template>
   <div class="head-bg">
-    <div class="head">
+    <div class="head mbShow">
+      <HeadLeft />
+      <HeadMobile />
+    </div>
+    <div class="head pcShow">
       <HeadLeft />
       <div>
-        <HeadRight v-if="!isMobile" />
-        <HeadMobile v-else />
-        <div class="sidebar-box" v-if="!isMobile">
+        <HeadRight />
+        <div class="sidebar-box">
           <Sidebar />
         </div>
       </div>
@@ -27,7 +30,7 @@ export default {
   },
   data() {
     return {
-      isMobile: false,
+      isMobile: true,
     };
   },
   mounted() {
@@ -51,7 +54,10 @@ export default {
 
 <style lang="scss">
 @media screen and (min-width: 768px) {
-  .head-bg{
+  .mbShow {
+    display: none;
+  }
+  .head-bg {
     background: #fff;
     width: 100%;
     z-index: 99;
@@ -76,6 +82,9 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  .pcShow {
+    display: none;
+  }
   .head {
     position: fixed;
     top: 0;
