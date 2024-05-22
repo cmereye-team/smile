@@ -221,9 +221,11 @@
         </div>
       </div>
       <div class="lecture-image">
-        <img src="https://static.cmereye.com/imgs/2024/05/981dfa415874c150.jpg" alt="中环">
-        <img src="https://static.cmereye.com/imgs/2024/05/64e0883e9e270804.jpg" alt="旺角">
-        <img src="https://static.cmereye.com/imgs/2024/05/2027bf78dad52c96.jpg" alt="尖沙咀">
+        <img src="https://static.cmereye.com/imgs/2024/05/981dfa415874c150.jpg" alt="5月 中环">
+        <img src="https://static.cmereye.com/imgs/2024/05/64e0883e9e270804.jpg" alt="5月 旺角">
+        <img src="https://static.cmereye.com/imgs/2024/05/2027bf78dad52c96.jpg" alt="5月 尖沙咀">
+        <img src="https://static.cmereye.com/imgs/2024/05/639cffecb86c07c3.jpg" alt="6月 中环">
+        <img src="https://static.cmereye.com/imgs/2024/05/c1b697f1200bf2f3.jpg" alt="6月 旺角">
       </div>
     </div>
     <businessHours />
@@ -317,27 +319,38 @@ export default {
       // allowedDates 每个地区的日期每个月都可以更改
       switch (this.form.address) {
         case "smilerProTsui":
-          this.allowedDates = ["2024-05-04", "2024-05-18"];
+          this.allowedDates = [];
           break;
         case "smileCentral":
           this.allowedDates = [
-            "2024-05-08",
-            "2024-05-11",
             "2024-05-22",
             "2024-05-25",
             "2024-05-29",
+            "2024-06-01",
+            "2024-06-05",
+            "2024-06-08",
+            "2024-06-12",
+            "2024-06-15",
+            "2024-06-19",
+            "2024-06-22",
+            "2024-06-26",
+            "2024-06-29",
           ];
           break;
         case "smileMongKok":
           this.allowedDates = [
-            "2024-05-04",
-            "2024-05-09",
-            "2024-05-11",
-            "2024-05-14",
-            "2024-05-18",
             "2024-05-23",
             "2024-05-25",
             "2024-05-28",
+            "2024-06-01",
+            "2024-06-06",
+            "2024-06-08",
+            "2024-06-11",
+            "2024-06-15",
+            "2024-06-20",
+            "2024-06-22",
+            "2024-06-25",
+            "2024-06-29",
           ];
           break;
         case "clearVisionCentral":
@@ -345,11 +358,12 @@ export default {
           break;
         case "clearVisionMongKok":
           this.allowedDates = [
-            "2024-05-02",
-            "2024-05-07",
-            "2024-05-16",
             "2024-05-21",
             "2024-05-30",
+            "2024-06-04",
+            "2024-06-13",
+            "2024-06-18",
+            "2024-06-27",
           ];
           break;
         default:
