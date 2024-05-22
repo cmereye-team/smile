@@ -221,14 +221,39 @@
         </div>
       </div>
       <div class="lecture-image">
-        <img src="https://static.cmereye.com/imgs/2024/05/981dfa415874c150.jpg" alt="5月 中环">
-        <img src="https://static.cmereye.com/imgs/2024/05/64e0883e9e270804.jpg" alt="5月 旺角">
-        <img src="https://static.cmereye.com/imgs/2024/05/2027bf78dad52c96.jpg" alt="5月 尖沙咀">
-        <img src="https://static.cmereye.com/imgs/2024/05/639cffecb86c07c3.jpg" alt="6月 中环">
-        <img src="https://static.cmereye.com/imgs/2024/05/c1b697f1200bf2f3.jpg" alt="6月 旺角">
+        <img
+          src="https://static.cmereye.com/imgs/2024/05/981dfa415874c150.jpg"
+          alt="5月 中环"
+        />
+        <img
+          src="https://static.cmereye.com/imgs/2024/05/64e0883e9e270804.jpg"
+          alt="5月 旺角"
+        />
+        <img
+          src="https://static.cmereye.com/imgs/2024/05/2027bf78dad52c96.jpg"
+          alt="5月 尖沙咀"
+        />
+        <img
+          src="https://static.cmereye.com/imgs/2024/05/639cffecb86c07c3.jpg"
+          alt="6月 中环"
+        />
+        <img
+          src="https://static.cmereye.com/imgs/2024/05/c1b697f1200bf2f3.jpg"
+          alt="6月 旺角"
+        />
       </div>
     </div>
     <businessHours />
+    <div class="dialog-win" v-if="test">
+      <div>
+        <h3>提交信息, 是否继续?</h3>
+        <div>
+          <button @click="submitForm()">确认提交</button>
+          <button @click="isOpenDialog(1)">取消</button>
+        </div>
+        <div @click="isOpenDialog(1)"><i></i><i></i></div>
+      </div>
+    </div>
     <Footer />
     <FooterMobile />
   </div>
@@ -251,6 +276,7 @@ export default {
   },
   data() {
     return {
+      test: false,
       form: {
         address: "",
         subdate: "",
@@ -262,7 +288,7 @@ export default {
         telphoneNumber: "",
         email: "",
         source: "",
-        siteSource:''
+        siteSource: "",
       },
       morningOrAfternoon: "",
       nowDayTime: "",
@@ -275,6 +301,19 @@ export default {
   },
   computed: {},
   methods: {
+    isOpenDialog(index) {
+      // index ==0  1  0开 1关
+      if (index == 0) {
+        this.test = true;
+      } else {
+        this.test = false;
+        this.$message({
+          showClose: true,
+          message: "您已取消提交！",
+          type: "warning",
+        });
+      }
+    },
     onSubmit() {
       // 对预留位置、联络电话校验不能为空，判断邮件格式是否正确
       if (
@@ -299,7 +338,7 @@ export default {
         });
         return;
       }
-      this.submitForm();
+      this.isOpenDialog(0);
     },
     disabledDate(time) {
       try {
@@ -433,7 +472,7 @@ export default {
       const day = String(time.getDate()).padStart(2, "0");
       return `${year}-${month}-${day}`;
     },
-    getUrl(){
+    getUrl() {
       // 获取当前页面url
       return window.location.href;
     },
@@ -449,28 +488,25 @@ export default {
       for (const key in _dataList) {
         dataList.append(key, _dataList[key]);
       }
-
-      this.$confirm("此操作将提交信息, 是否继续?", "提示", {
-        confirmButtonText: "提交",
-        cancelButtonText: "取消",
-        type: "warning",
+      this.submitAffirm(dataList);
+    },
+    async submitAffirm(dataList) {
+      await fetch("https://admin.hkcmereye.com/api.php/cms/addmsg", {
+        method: "POST",
+        body: dataList,
       })
-        .then(() => {
-          fetch("https://admin.hkcmereye.com/api.php/cms/addmsg", {
-            method: "POST",
-            body: dataList,
-          })
-            .then((res) => res.json())
-            .then((res) => {
-              if (res.code === 1) {
-                this.$message({
-                  message: "预约已提交！",
-                  type: "success",
-                });
-                this.clearFrom();
-                this.form.address = "";
-              }
+        .then((res) => res.json())
+        .then((res) => {
+          if (res.code === 1) {
+            this.$message({
+              showClose: true,
+              message: "講座預約已提交成功！",
+              type: "success",
             });
+            this.clearFrom();
+            this.form.address = "";
+            this.test = false;
+          }
         })
         .catch(() => {
           this.$message({
@@ -568,6 +604,72 @@ export default {
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  .dialog-win {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > div {
+      border-radius: 15px;
+      border: #4570b6 1px solid;
+      box-shadow: 0px 0px 8px 6px #d5d5d5f7;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      width: 50%;
+      position: relative;
+      & > div:nth-child(2) {
+        padding: 0 6.5vw 50px 6.5vw;
+        margin-top: 60px;
+        display: flex;
+        align-content: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+      }
+    }
+    h3 {
+      padding: 0 20px;
+      display: flex;
+      width: 100%;
+      padding-top: 20px;
+      border-bottom: 2px solid #8f8f8f;
+    }
+
+    button {
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px; /* 150% */
+      letter-spacing: 1px;
+      padding: 5px 15px;
+      border-radius: 5px;
+      min-height: 40px;
+    }
+    button:hover{
+      box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    }
+    button:nth-child(1) {
+      background: #4570b6;
+      color: #fff;
+    }
+    button:nth-child(2) {
+      background: #eece9f;
+      color: #fff;
+      margin-left: 20px;
+    }
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/c26ba48972f2997c.png")
       no-repeat;
@@ -788,6 +890,69 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  .dialog-win {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > div {
+      border-radius: 15px;
+      border: #4570b6 1px solid;
+      box-shadow: 0px 0px 8px 6px #d5d5d5f7;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      width: 80%;
+      position: relative;
+      h3 {
+        color: #474747;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 2px;
+        padding: 8px 15px;
+        border-bottom: 1px solid #87898c80;
+      }
+      & > div:nth-child(2) {
+        margin-top: 30px;
+        padding: 0 6.5vw 6.5vw 6.5vw;
+        button {
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px; /* 150% */
+          letter-spacing: 1px;
+          padding: 5px 15px;
+          border-radius: 5px;
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+        }
+        button:nth-child(1) {
+          background: #4570b6;
+          color: #fff;
+        }
+        button:nth-child(2) {
+          background: #eece9f;
+          color: #fff;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/d226e2e185d53c48.png")
       no-repeat;
@@ -824,7 +989,7 @@ export default {
       letter-spacing: 0.3px;
     }
   }
-  .lecture-box{
+  .lecture-box {
     position: relative;
     margin-bottom: 55px;
   }
@@ -946,7 +1111,7 @@ export default {
   }
   :deep(.el-input__inner) {
     border-radius: 100px;
-    border: .5vw solid #4570b6;
+    border: 0.5vw solid #4570b6;
     background: #fff;
     color: #c0c4cc;
     font-family: "Noto Sans HK";
@@ -1007,5 +1172,8 @@ export default {
   :deep(.el-date-editor) {
     width: 100%;
   }
+}
+:deep(.el-message-box) {
+  width: 310px !important;
 }
 </style>
