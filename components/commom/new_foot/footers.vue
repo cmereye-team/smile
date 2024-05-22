@@ -113,7 +113,7 @@
       <!--          </div>-->
       <!--        </a>-->
       <!--      </div>-->
-      <div class="footer-coupon">
+      <!-- <div class="footer-coupon">
         <a :href="localePath('/smilepro-event')">
           <div>
             <svg
@@ -213,11 +213,11 @@
               </g>
             </svg>
           </div>
-          <!-- <div>
+          <div>
             <span>CMERxZEISS<br />講座活動詳情</span>
-          </div> -->
+          </div>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

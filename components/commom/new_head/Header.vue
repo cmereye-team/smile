@@ -319,7 +319,7 @@
           <!--              </div>-->
           <!--            </a>-->
           <!--          </div>-->
-          <div>
+          <!-- <div>
             <a :href="localePath('/smilepro-event')">
               <div>
                 <img
@@ -331,7 +331,7 @@
                 <span>CMERxZEISS<br />講座活動詳情</span>
               </div>
             </a>
-          </div>
+          </div> -->
           <div>
             <a
               href="https://api.whatsapp.com/send/?phone=85260610511"
