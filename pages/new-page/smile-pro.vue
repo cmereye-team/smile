@@ -1936,7 +1936,7 @@ export default {
     height: 315px;
     border-radius: 30px;
     background: #e4f6f3;
-    margin: 0 10px;
+    margin: 0;
   }
   .swiper-two-box {
     display: flex;
