@@ -562,7 +562,7 @@ export default {
 }
 @media screen and (max-width: 767px) {
   .el-picker-panel {
-    left: 52px !important;
+    left: 32px !important;
   }
 }
 </style>
@@ -605,7 +605,9 @@ export default {
     overflow: hidden;
   }
   .lecture-box {
+    margin: 0 auto;
     margin-top: 175px;
+    position: relative;
   }
   .lecture-title {
     background: url("https://static.cmereye.com/imgs/2024/04/03634579600959fb.png")
@@ -614,7 +616,6 @@ export default {
     width: 100vw;
     height: auto;
     padding: 0 0 85px;
-    position: relative;
     & > div {
       max-width: 1270px;
       margin: 0 auto;
@@ -823,6 +824,10 @@ export default {
       letter-spacing: 0.3px;
     }
   }
+  .lecture-box{
+    position: relative;
+    margin-bottom: 55px;
+  }
   .lecture-title {
     background: url(https://static.cmereye.com/imgs/2024/04/d7625f69f04ff1b8.png)
       no-repeat;
@@ -830,14 +835,13 @@ export default {
     width: 100%;
     margin-top: 100px;
     padding: 115px 0 40px;
-    position: relative;
     & > div {
       display: flex;
       flex-direction: column;
       align-items: center;
       .title-img {
         position: absolute;
-        top: -20%;
+        top: -4%;
         left: 50%;
         transform: translateX(-50%);
         width: 170px;
@@ -872,10 +876,10 @@ export default {
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 14px;
+          font-size: 3.5vw;
           font-style: normal;
           font-weight: 700;
-          line-height: 30px; /* 214.286% */
+          line-height: 7.5vw; /* 214.286% */
           letter-spacing: 0.7px;
         }
         & > div:nth-child(2) {
@@ -883,10 +887,10 @@ export default {
           color: #6d6e71;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 12px;
+          font-size: 3.1vw;
           font-style: normal;
           font-weight: 300;
-          line-height: 25px; /* 208.333% */
+          line-height: 6.4vw; /* 208.333% */
           letter-spacing: 0.6px;
           & > p:nth-child(2) {
             padding: 0 40px;
@@ -918,7 +922,7 @@ export default {
     margin-top: 20px;
   }
   :deep(.el-form-item__label) {
-    width: 120px !important;
+    width: 30.76vw !important;
     color: #fff;
     background: #4570b6;
     border-radius: 55px;
@@ -926,46 +930,49 @@ export default {
     justify-content: center;
     align-items: center;
     font-family: "Noto Sans HK";
-    font-size: 16px;
+    font-size: 4.1vw;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5; /* 125% */
     letter-spacing: 0.8px;
     position: relative;
+    height: 10.5vw;
     z-index: 9;
     padding: 0;
   }
   :deep(.el-form) {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 5.6vw;
   }
   :deep(.el-input__inner) {
     border-radius: 100px;
-    border: 2px solid #4570b6;
+    border: .5vw solid #4570b6;
     background: #fff;
     color: #c0c4cc;
     font-family: "Noto Sans HK";
-    font-size: 14px;
+    font-size: 3.6vw;
     font-style: normal;
     font-weight: 400;
     line-height: 2.5; /* 142.857% */
     letter-spacing: 0.7px;
-    padding: 18px 0 18px 50px;
+    padding: 4.5vw 0 4.5vw 12.89vw;
+    height: 10.5vw;
   }
   .lecture-form {
     width: 100vw;
   }
   .lecture-image {
-    width: 312px;
+    width: 80vw;
     margin: 0 auto;
     & > img {
       width: 100%;
     }
   }
   :deep(.el-form-item__content) {
-    margin-left: 180px !important;
-    width: 275px;
-    left: -100px;
+    margin-left: 46.15vw !important;
+    width: 70.5vw;
+    line-height: 10.5vw;
+    left: -25.6vw;
   }
   :deep(.form1) {
     & > div:last-child {
