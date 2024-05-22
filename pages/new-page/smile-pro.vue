@@ -1171,10 +1171,19 @@
         </div>
         <div class="swiper-pc-share">
           <div
-            v-swiper:mySwiper="isMobile ? '' : swiperOption1"
+            v-swiper:mySwiper="swiperOption1"
             class="swiperWrap"
           >
             <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
+                    10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
+                  </div>
+                  <div class="name-title">阿聲, 咖啡師</div>
+                </div>
+              </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
@@ -1215,7 +1224,7 @@
               </div>
             </div>
           </div>
-          <div v-if="!isMobile" class="swiper-button-next">
+          <div v-if="!isMobile" class="swiper-button-next" @click="nextEl()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1231,7 +1240,7 @@
               />
             </svg>
           </div>
-          <div v-if="!isMobile" class="swiper-button-prev">
+          <div v-if="!isMobile" class="swiper-button-prev" @click="prevEl()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1342,7 +1351,6 @@ export default {
       ],
       isMobile: false,
       swiperOption1: {
-        slidesPerView: "auto",
         spaceBetween: 50,
         slidesPerView: "4",
         navigation: {
@@ -1355,6 +1363,13 @@ export default {
   methods: {
     shareForm(_url) {
       window.open(_url);
+    },
+    nextEl() {
+      this.mySwiper.slideNext()
+      console.log(1);
+    },
+    prevEl() {
+      this.mySwiper.slidePrev()
     },
   },
   mounted() {
@@ -1921,7 +1936,7 @@ export default {
     height: 315px;
     border-radius: 30px;
     background: #e4f6f3;
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .swiper-two-box {
     display: flex;
@@ -1966,7 +1981,7 @@ export default {
     }
   }
   .swiper-wrapper{
-    margin-left: 60px;
+    // margin-left: 60px;
   }
   .swiper-wrapper > div:nth-child(even) {
     & > div {

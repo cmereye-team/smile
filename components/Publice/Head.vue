@@ -33,7 +33,40 @@ export default {
       isMobile: true,
     };
   },
+  methods: {
+    taginits() {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5M8VLLM");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FN8KFBR9XM");
+    },
+  },
   mounted() {
+    this.$nextTick(() => {
+      if (process.browser) {
+        new WOW({
+          //可以添加自定义内容
+          animateClass: "animate__animated",
+          offset: 200,
+        }).init();
+      }
+      this.taginits();
+    });
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
