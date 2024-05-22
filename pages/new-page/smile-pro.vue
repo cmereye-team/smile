@@ -1965,6 +1965,9 @@ export default {
       padding-top: 15px;
     }
   }
+  .swiper-wrapper{
+    margin-left: 60px;
+  }
   .swiper-wrapper > div:nth-child(even) {
     & > div {
       display: flex;
