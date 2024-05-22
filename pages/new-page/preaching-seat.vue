@@ -82,9 +82,13 @@
                     @change="changeLocation"
                     clearable
                   >
-                    <el-option
+                    <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
                       value="smilerProTsui"
+                    ></el-option> -->
+                    <el-option
+                      label="Smile Pro 講座-旺角"
+                      value="smileProMongKok"
                     ></el-option>
                     <el-option
                       label="Smile講座-中環"
@@ -383,15 +387,17 @@ export default {
             "2024-05-28",
             "2024-06-01",
             "2024-06-06",
-            "2024-06-08",
             "2024-06-11",
             "2024-06-15",
             "2024-06-20",
-            "2024-06-22",
             "2024-06-25",
             "2024-06-29",
           ];
           break;
+        case "smileProMongKok":
+          this.allowedDates = ["2024-06-08", "2024-06-22"];
+          break;
+
         case "clearVisionCentral":
           this.allowedDates = [];
           break;
@@ -431,11 +437,16 @@ export default {
       const { nowDay, weekday } = this.timestampToWeekday(this.form.subdate);
       this.nowDayTime = nowDay;
       switch (name) {
-        case "smilerProTsui":
+        // case "smilerProTsui":
+        //   if (weekday == "周六") {
+        //     this.morningOrAfternoon = "2:30 下午";
+        //   }
+        //   return "Smile Pro 講座-尖沙咀";
+        case "smileProMongKok":
           if (weekday == "周六") {
             this.morningOrAfternoon = "2:30 下午";
           }
-          return "Smile Pro 講座-尖沙咀";
+          return "Smile Pro 講座-旺角";
         case "smileCentral":
           if (weekday == "周三") {
             this.morningOrAfternoon = "1:30 下午";
@@ -657,7 +668,7 @@ export default {
       border-radius: 5px;
       min-height: 40px;
     }
-    button:hover{
+    button:hover {
       box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
     }
     button:nth-child(1) {
