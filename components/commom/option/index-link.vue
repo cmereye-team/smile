@@ -152,7 +152,9 @@
                 </defs>
               </svg>
             </div>
-            <div class="font-title">{{ $t("home.headers.diagnosisInstructions") }}</div>
+            <div class="font-title">
+              {{ $t("home.headers.diagnosisInstructions") }}
+            </div>
             <div class="img-margin">
               <img
                 src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
@@ -171,7 +173,10 @@
           >
         </div>
       </div>
-      <nuxt-link to="/contact-us" class="flex flex-row items-center nuxt-link-tag">
+      <nuxt-link
+        to="/contact-us"
+        class="flex flex-row items-center nuxt-link-tag"
+      >
         <div class="svg-max-width">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -314,7 +319,7 @@
             />
           </svg>
         </div>
-        <div class="font-title">{{$t('home.headers.videos')}}</div>
+        <div class="font-title">{{ $t("home.headers.videos") }}</div>
       </nuxt-link>
     </div>
     <div>
@@ -382,7 +387,9 @@
                 </defs>
               </svg>
             </div>
-            <div class="font-title">{{ $t("home.headers.orthopedicServices") }}</div>
+            <div class="font-title">
+              {{ $t("home.headers.orthopedicServices") }}
+            </div>
             <div class="img-margin">
               <img
                 src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
@@ -490,7 +497,9 @@
             />
           </svg>
         </div>
-        <div class="font-title">{{ $t("home.headers.ophthalmicConsultation") }}</div>
+        <div class="font-title">
+          {{ $t("home.headers.ophthalmicConsultation") }}
+        </div>
       </nuxt-link>
       <nuxt-link to="/video" class="flex flex-row items-center nuxt-link-tag">
         <div class="svg-max-width">
@@ -571,7 +580,7 @@
             />
           </svg>
         </div>
-        <div class="font-title">{{ $t('home.headers.casesSharing') }}</div>
+        <div class="font-title">{{ $t("home.headers.casesSharing") }}</div>
       </nuxt-link>
     </div>
   </div>
@@ -634,12 +643,12 @@ export default {
         link: "",
         child_list: [
           {
-            child_item: this.$t("home.headers.orthopedicServicesChild_1"),
-            link: "/vision-correction/relex-smile",
-          },
-          {
             child_item: this.$t("home.headers.orthopedicServicesChild_5"),
             link: "/smilePro",
+          },
+          {
+            child_item: this.$t("home.headers.orthopedicServicesChild_1"),
+            link: "/vision-correction/relex-smile",
           },
           {
             child_item: "CMER CLEAR-Vision",
@@ -699,9 +708,10 @@ export default {
   .link-menu {
     display: flex;
     justify-content: space-evenly;
-    &>div {
+    & > div {
       min-width: 240px;
-      &>div,&>a {
+      & > div,
+      & > a {
         padding: 22px 0;
         border-bottom: 1px solid #6d6e7180;
       }

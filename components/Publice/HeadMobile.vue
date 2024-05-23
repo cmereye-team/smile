@@ -190,12 +190,12 @@ export default {
         link: "",
         child_list: [
           {
-            child_item: this.$t("home.headers.orthopedicServicesChild_1"),
-            link: "/vision-correction/relex-smile",
-          },
-          {
             child_item: this.$t("home.headers.orthopedicServicesChild_5"),
             link: "/smilePro",
+          },
+          {
+            child_item: this.$t("home.headers.orthopedicServicesChild_1"),
+            link: "/vision-correction/relex-smile",
           },
           {
             child_item: "CMER CLEAR-Vision",

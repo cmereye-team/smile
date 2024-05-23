@@ -115,15 +115,15 @@ export default {
           name: "矯視服務",
           childType: true,
           childList: [
+          {
+              id: 2,
+              path: "/smilePro",
+              name: "SMILE Pro微笑激光矯視",
+            },
             {
               id: 1,
               path: "/vision-correction/relex-smile",
               name: "SMILE 微笑激光矯視",
-            },
-            {
-              id: 2,
-              path: "/smilePro",
-              name: "SMILE Pro微笑激光矯視",
             },
             {
               id: 3,
