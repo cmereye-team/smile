@@ -49,7 +49,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -66,7 +66,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -92,7 +92,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -109,7 +109,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -138,7 +138,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -155,7 +155,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -184,7 +184,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -201,7 +201,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -244,7 +244,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -261,7 +261,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -287,7 +287,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -304,7 +304,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -330,7 +330,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -347,7 +347,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -376,7 +376,7 @@
             </div>
           </a>
           <div class="flex justify-center my-10">
-            <a href="#" class="mbShow">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -393,7 +393,7 @@
                       "/" +
                       $t("consumptionVoucher.query")
                     }}</span>
-                    <span>6061 0511</span>
+                    <span>6940 8569</span>
                   </div>
                 </div>
               </button>
@@ -421,7 +421,7 @@
           </div>
         </a>
         <div class="flex justify-center my-10">
-          <a href="#" class="mbShow">
+          <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
             <button>
               <div class="flex btn-yuyue">
                 <img
@@ -438,7 +438,7 @@
                     "/" +
                     $t("consumptionVoucher.query")
                   }}</span>
-                  <span>6061 0511</span>
+                  <span>6940 8569</span>
                 </div>
               </div>
             </button>

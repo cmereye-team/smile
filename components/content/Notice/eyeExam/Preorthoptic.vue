@@ -97,7 +97,7 @@
 
       </div>
       <div class="flex justify-center">
-        <a href="#" class="mbShow">
+        <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
           <button>
             <div class="flex btn-yuyue">
               <img
@@ -107,7 +107,7 @@
               />
               <div class="flex flex-col justify-center" style="padding: 0 10px">
                 <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
-                <span>6061 0511</span>
+                <span>6940 8569</span>
               </div>
             </div>
           </button>

@@ -240,7 +240,7 @@ export default {
         },
         {
           type: "href",
-          link: "https://wa.me/85260610511",
+          link: "https://wa.me/85269408569",
           img: "https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png",
           title: "Whatsapp",
         },

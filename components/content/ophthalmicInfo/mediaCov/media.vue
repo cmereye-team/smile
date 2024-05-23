@@ -74,7 +74,7 @@
             />
             <div class="flex flex-col justify-center" style="padding: 0 10px">
               <span>{{$t('consumptionVoucher.subscribe') + '/' + $t('consumptionVoucher.query')}}</span>
-              <span>6061 0511</span>
+              <span>6940 8569</span>
             </div>
           </div>
         </button>
