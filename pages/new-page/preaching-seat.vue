@@ -1,5 +1,5 @@
 <template>
-  <div class="preaching-seat">
+  <div class="preaching-seat" v-loading.fullscreen.lock="fullscreenLoading">
     <Head />
     <Banner class="banner-box">
       <template #banner>
@@ -149,7 +149,13 @@
                     ></el-option>
                   </el-select>
                 </el-form-item>
-
+                <el-form-item label="姓名">
+                  <el-input
+                    placeholder="請填寫姓名"
+                    v-model="form1.name"
+                    clearable
+                  ></el-input>
+                </el-form-item>
                 <el-form-item label="性別">
                   <el-select v-model="form1.sex" placeholder="---" clearable>
                     <el-option label="---" value="null"></el-option>
@@ -280,6 +286,7 @@ export default {
   },
   data() {
     return {
+      fullscreenLoading: false,
       test: false,
       form: {
         address: "",
@@ -287,6 +294,7 @@ export default {
       },
       form1: {
         numberSeat: "",
+        name: "",
         sex: "",
         age: "",
         telphoneNumber: "",
@@ -322,6 +330,7 @@ export default {
       // 对预留位置、联络电话校验不能为空，判断邮件格式是否正确
       if (
         this.form1.numberSeat == "" ||
+        this.form1.name == "" ||
         this.form1.telphoneNumber == "" ||
         this.form1.source == ""
       ) {
@@ -342,6 +351,7 @@ export default {
         });
         return;
       }
+      console.log(this.form1, this.form, "form");
       this.isOpenDialog(0);
     },
     disabledDate(time) {
@@ -432,11 +442,11 @@ export default {
         weekday,
       };
     },
-    getName(name) {
+    getName(nameAddress) {
       // morningOrAfternoon 可以随着日期不同更改赋值
       const { nowDay, weekday } = this.timestampToWeekday(this.form.subdate);
       this.nowDayTime = nowDay;
-      switch (name) {
+      switch (nameAddress) {
         // case "smilerProTsui":
         //   if (weekday == "周六") {
         //     this.morningOrAfternoon = "2:30 下午";
@@ -491,6 +501,7 @@ export default {
       this.form1.siteSource = this.getUrl();
       let dataList = new FormData();
       let _dataList = { ...this.form, ...this.form1 };
+      console.log(_dataList);
       _dataList.address = this.getName(_dataList.address);
       _dataList.sex = _dataList.sex == "0" ? "女" : "男";
       _dataList.subdate = `${this.getYearMonthDay(_dataList.subdate)} ${
@@ -502,6 +513,7 @@ export default {
       this.submitAffirm(dataList);
     },
     async submitAffirm(dataList) {
+      this.fullscreenLoading = true;
       await fetch("https://admin.hkcmereye.com/api.php/cms/addmsg", {
         method: "POST",
         body: dataList,
@@ -514,6 +526,7 @@ export default {
               message: "講座預約已提交成功！",
               type: "success",
             });
+            this.fullscreenLoading = false;
             this.clearFrom();
             this.form.address = "";
             this.test = false;
@@ -531,6 +544,7 @@ export default {
       this.form.subdate = "";
       this.morningOrAfternoon = "";
       this.form1.numberSeat = "";
+      this.form1.name = "";
       this.form1.sex = "";
       this.form1.age = "";
       this.form1.telphoneNumber = "";
