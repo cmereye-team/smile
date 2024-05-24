@@ -587,24 +587,29 @@ export default {
       .el-date-table__row {
         .available {
           & > div {
-            background: #b6e2eb;
+            background: #4570b6;
             color: #fff;
           }
           & > div:hover {
-            background: #4570b6;
+            background: #b6e2eb;
             color: #fff;
             text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
           }
         }
         td {
           & > div {
-            background: #b6e2eb;
+            background: #4570b6;
             color: #fff;
           }
           & > div:hover {
-            background: #4570b6;
+            background: #b6e2eb;
             color: #fff;
             text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+          }
+        }
+        .today{
+          span{
+            color: #444;
           }
         }
       }
