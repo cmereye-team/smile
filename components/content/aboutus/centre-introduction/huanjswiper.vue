@@ -70,13 +70,13 @@
             />
             <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p5") }}</p>
           </div>
-          <div class="address">
+          <!-- <div class="address">
             <img
               src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
             <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p6") }}</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -270,9 +270,9 @@ export default {
   }
   .address_box {
     display: grid;
-    justify-items: start;
+    justify-items: center;
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     // padding-left: 55px;
     margin-top: 20px;
