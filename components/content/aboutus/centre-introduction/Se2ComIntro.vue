@@ -813,6 +813,7 @@ export default {
 
     .mag_top {
       margin-top: 30px;
+      padding-bottom: 30px;
     }
 
     .text_blue {

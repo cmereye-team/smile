@@ -111,7 +111,7 @@
         </div>
         <h3>旺角</h3>
       </a>
-      <a href="https://maps.app.goo.gl/D71VbmfYaxufGroL6" target="_blank">
+      <!-- <a href="https://maps.app.goo.gl/D71VbmfYaxufGroL6" target="_blank">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@
           </svg>
         </div>
         <h3>尖沙咀</h3>
-      </a>
+      </a> -->
     </div>
   </div>
 </template>

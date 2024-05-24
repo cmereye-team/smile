@@ -435,24 +435,24 @@ export default {
         {
           id: 2,
           title: ["旺角", "希瑪微笑矯視中心"],
-          address: ["彌敦道625及639號雅蘭中心", "一期702室 (港鐵站E1出口)"],
-          mobileAddress: ["彌敦道625及639號雅蘭中心", "一期702室 (港鐵站E1出口)"],
+          address: ["彌敦道625及639號雅蘭中心", "一期1725B室 (港鐵站E1出口)"],
+          mobileAddress: ["彌敦道625及639號雅蘭中心", "一期1725B室 (港鐵站E1出口)"],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.939721193468!2d114.1676123864893!3d22.31811935853382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401adf20dec01%3A0x281d567d00c579d9!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUg5pe66KeS6Ki65omA!5e0!3m2!1szh-CN!2sus!4v1714979807484!5m2!1szh-CN!2sus",
         },
-        {
-          id: 3,
-          title: ["尖沙咀", "希瑪微笑矯視中心"],
-          address: [
-            "梳士巴利道18-24號K11 ATELIER",
-            "辦公大樓1906室 (K11 Musea附近)",
-          ],
-          mobileAddress: [
-            "梳士巴利道18-24號",
-            "K11 ATELIER辦公大樓1906室",
-            "(K11 Musea附近)",
-          ],
-          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5534673298257!2d114.17108219678954!3d22.294898600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401f0afd81927%3A0xa2a84e559299307!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUtIOWwluaymeWSgOiouuaJgA!5e0!3m2!1szh-CN!2sus!4v1714979889532!5m2!1szh-CN!2sus",
-        },
+        // {
+        //   id: 3,
+        //   title: ["尖沙咀", "希瑪微笑矯視中心"],
+        //   address: [
+        //     "梳士巴利道18-24號K11 ATELIER",
+        //     "辦公大樓1906室 (K11 Musea附近)",
+        //   ],
+        //   mobileAddress: [
+        //     "梳士巴利道18-24號",
+        //     "K11 ATELIER辦公大樓1906室",
+        //     "(K11 Musea附近)",
+        //   ],
+        //   src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5534673298257!2d114.17108219678954!3d22.294898600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401f0afd81927%3A0xa2a84e559299307!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUtIOWwluaymeWSgOiouuaJgA!5e0!3m2!1szh-CN!2sus!4v1714979889532!5m2!1szh-CN!2sus",
+        // },
       ],
       mapEyeList: [
         {
