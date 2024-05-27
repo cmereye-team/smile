@@ -13,7 +13,7 @@
       <div class="home-referral-service">
         <H2Tag :title="['矯視中心服務']" />
         <div>
-          <div v-for="item in bgReferralServiceImg" :key="item.id">
+          <nuxt-link :to="item.link" v-for="item in bgReferralServiceImg" :key="item.id">
             <div><img :src="item.img" alt="服务" /></div>
             <div>
               <div>
@@ -31,7 +31,7 @@
               </div>
               <nuxt-link :to="item.link">了解更多&gt;</nuxt-link>
             </div>
-          </div>
+          </nuxt-link>
         </div>
         <nuxt-link to="/eye-examination">診症須知</nuxt-link>
       </div>
@@ -1133,7 +1133,7 @@ export default {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      & > div {
+      & > a {
         position: relative;
         & > div:nth-child(2) {
           position: absolute;
@@ -1188,7 +1188,7 @@ export default {
           }
         }
       }
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             span {
@@ -1201,7 +1201,7 @@ export default {
           }
         }
       }
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         margin: 0 128px;
         & > div:nth-child(2) {
           & > div:nth-child(1) {
@@ -1213,7 +1213,7 @@ export default {
           }
         }
       }
-      & > div:nth-child(3) {
+      & > a:nth-child(3) {
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             span {
@@ -1226,7 +1226,7 @@ export default {
           }
         }
       }
-      & > div:nth-child(4) {
+      & > a:nth-child(4) {
         margin-right: 64px;
         margin-top: 12px;
         & > div:nth-child(2) {
@@ -1241,7 +1241,7 @@ export default {
           }
         }
       }
-      & > div:nth-child(5) {
+      & > a:nth-child(5) {
         margin-left: 64px;
         & > div:nth-child(2) {
           & > div:nth-child(1) {
