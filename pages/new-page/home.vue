@@ -1719,7 +1719,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      & > div {
+      & > a {
         margin-bottom: 55px;
         position: relative;
         & > div:nth-child(1) {
@@ -1775,8 +1775,8 @@ export default {
           }
         }
       }
-      & > div:nth-child(1),
-      & > div:nth-child(3) {
+      & > a:nth-child(1),
+      & > a:nth-child(3) {
         & > div:nth-child(2) {
           & > a {
             position: relative;
@@ -1784,7 +1784,7 @@ export default {
           }
         }
       }
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             line-height: 1.2;
@@ -1793,7 +1793,7 @@ export default {
           }
         }
       }
-      & > div:nth-child(5) {
+      & > a:nth-child(5) {
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             line-height: 1.2;
