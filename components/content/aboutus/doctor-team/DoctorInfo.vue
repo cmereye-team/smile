@@ -212,7 +212,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor14.jpg",
+          src: "https://static.cmereye.com/imgs/2024/05/4442519761e80030.png",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor14'),
           doctorName: "鄒樂韻醫生",
           doctorInfo: [

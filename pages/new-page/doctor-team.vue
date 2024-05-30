@@ -257,7 +257,7 @@ export default {
         {
           id: 12,
           name: "尹浩柟",
-          img: "https://static.cmereye.com/imgs/2024/04/ead4bc971df33b27.jpg",
+          img: "https://static.cmereye.com/imgs/2024/05/5e65910e0c55b6a4.png",
           title: [
             "香港大學內外全科醫學士",
             "英國愛丁堡皇家外科醫學院院員",
@@ -268,7 +268,7 @@ export default {
         {
           id: 13,
           name: "鄒樂韻",
-          img: "https://static.cmereye.com/imgs/2024/04/acf4c8b8523d5e99.jpg",
+          img: "https://static.cmereye.com/imgs/2024/05/3f1a1dea7d3a56a9.png",
           title: [
             "香港大學內外全科醫學士",
             "英國愛丁堡皇家外科醫學院院員",

@@ -303,13 +303,13 @@
       <div class="maps-title">
         <div
           @click="switchMode(0)"
-          :class="[isSmile == true ? 'maps-title-active' : '']"
+          :class="[isSmile == true ? 'maps-title-active-left' : '']"
         >
           矯視中心
         </div>
         <div
           @click="switchMode(1)"
-          :class="[isSmile == false ? 'maps-title-active' : '']"
+          :class="[isSmile == false ? 'maps-title-active-right' : '']"
         >
           眼科診所
         </div>
@@ -408,7 +408,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
@@ -429,14 +429,20 @@ export default {
           id: 1,
           title: ["中環", "希瑪微笑矯視中心"],
           address: ["畢打街1-3號中建大廈1512室", "(港鐵站G出口，置地廣場樓上)"],
-          mobileAddress: ["畢打街1-3號中建大廈1512室", "(港鐵站G出口，置地廣場樓上)"],
+          mobileAddress: [
+            "畢打街1-3號中建大廈1512室",
+            "(港鐵站G出口，置地廣場樓上)",
+          ],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.914943384991!2d114.15266089678956!3d22.281211600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064e98df11d%3A0x56ad3d7801270f90!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUg5Lit55Kw6Ki65omA!5e0!3m2!1szh-CN!2sus!4v1714981663044!5m2!1szh-CN!2sus",
         },
         {
           id: 2,
           title: ["旺角", "希瑪微笑矯視中心"],
           address: ["彌敦道625及639號雅蘭中心", "一期1725B室 (港鐵站E1出口)"],
-          mobileAddress: ["彌敦道625及639號雅蘭中心", "一期1725B室 (港鐵站E1出口)"],
+          mobileAddress: [
+            "彌敦道625及639號雅蘭中心",
+            "一期1725B室 (港鐵站E1出口)",
+          ],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.939721193468!2d114.1676123864893!3d22.31811935853382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401adf20dec01%3A0x281d567d00c579d9!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUg5pe66KeS6Ki65omA!5e0!3m2!1szh-CN!2sus!4v1714979807484!5m2!1szh-CN!2sus",
         },
         // {
@@ -508,7 +514,7 @@ export default {
         },
         {
           id: 9,
-          title: ["元朗", "香港希瑪眼科中心",'(恆香老餅家對面)'],
+          title: ["元朗", "香港希瑪眼科中心", "(恆香老餅家對面)"],
           address: ["元朗青山公路45及47號誠信商業大廈地鋪"],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.5847871717187!2d114.0305542!3d22.4446486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f0a0d1fbff7d%3A0xb0f89659853f4a58!2z6aaZ5riv5biM55Gq55y856eR5Lit5b-DLeWFg-aclw!5e0!3m2!1szh-CN!2shk!4v1676969589764!5m2!1szh-CN!2shk",
         },
@@ -589,7 +595,6 @@ export default {
   }
   .maps-title {
     display: flex;
-    background: #8cdbcc;
     & > div {
       flex: 1;
       display: flex;
@@ -605,10 +610,17 @@ export default {
     }
     & > div:nth-child(1) {
       border-right: 2px solid #5b7bb0;
+      background: #8ba9da;
+    }
+    & > div:nth-child(2) {
+      background: #8cdbcc;
     }
   }
-  .maps-title-active {
-    background: #8ba9da;
+  .maps-title-active-left {
+    background: #3c65a7 !important;
+  }
+  .maps-title-active-right {
+    background: #309683 !important;
   }
   .maps-paper {
     & > div {
@@ -851,8 +863,12 @@ export default {
       }
     }
   }
-  .maps-title-active {
-    background: #8ba9da;
+
+  .maps-title-active-left {
+    background: #3c65a7 !important;
+  }
+  .maps-title-active-right {
+    background: #309683 !important;
   }
   .maps-paper-item {
     background: #b0cbf985;
@@ -861,7 +877,6 @@ export default {
     margin: 0 20px;
     margin-top: 40px;
     display: flex;
-    background: #98d9d1;
     & > div {
       flex: 1;
       display: flex;
@@ -876,7 +891,11 @@ export default {
       letter-spacing: 1px;
     }
     & > div:nth-child(1) {
-      border-right: 1px solid #4570b6;
+      border-right: 2px solid #5b7bb0;
+      background: #8ba9da;
+    }
+    & > div:nth-child(2) {
+      background: #8cdbcc;
     }
   }
   .maps-paper {
