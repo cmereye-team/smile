@@ -4,12 +4,12 @@
     <div class="businessHours-img">
       <img
         v-if="isMobile"
-        src="https://static.cmereye.com/imgs/2024/05/8e0638222f3e432d.jpg"
+        src="https://static.cmereye.com/imgs/2024/05/b4675a061bce149a.jpg"
         alt="营业环境"
       />
       <img
         v-else
-        src="https://static.cmereye.com/imgs/2023/08/70477a2ee40bcc2c.jpg"
+        src="https://static.cmereye.com/imgs/2024/05/b4675a061bce149a.jpg"
         alt="营业环境"
       />
     </div>

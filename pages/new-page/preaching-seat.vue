@@ -113,11 +113,13 @@
                   <el-date-picker
                     v-model="form.subdate"
                     type="date"
+                    ref="subdate"
                     popper-class="date-picker-class"
                     :picker-options="startPickerOptions"
                     placeholder="預約日期"
                     format=" MM 月 dd 日 yyyy 年"
                     value-format="timestamp"
+                    @focus="focusSubDate"
                     clearable
                   >
                   </el-date-picker>
@@ -233,18 +235,6 @@
       </div>
       <div class="lecture-image">
         <img
-          src="https://static.cmereye.com/imgs/2024/05/981dfa415874c150.jpg"
-          alt="5月 中环"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/05/64e0883e9e270804.jpg"
-          alt="5月 旺角"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/05/2027bf78dad52c96.jpg"
-          alt="5月 尖沙咀"
-        />
-        <img
           src="https://static.cmereye.com/imgs/2024/05/639cffecb86c07c3.jpg"
           alt="6月 中环"
         />
@@ -310,6 +300,7 @@ export default {
         disabledDate: (time) => this.disabledDate(time),
       },
       isMobile: false,
+      nowDayMonth: new Date().getMonth() + 1,
     };
   },
   computed: {},
@@ -361,6 +352,17 @@ export default {
         const month = String(time.getMonth() + 1).padStart(2, "0");
         const day = String(time.getDate()).padStart(2, "0");
         const ym = `${year}-${month}-${day}`;
+
+        // 获取当前年月日
+        const now = new Date();
+        const nowYear = now.getFullYear();
+        const nowMonth = String(now.getMonth() + 1).padStart(2, "0");
+        const nowDay = String(now.getDate()).padStart(2, "0");
+        const nowYm = `${nowYear}-${nowMonth}-${nowDay}`;
+        if (ym < nowYm) {
+          return true;
+        }
+
         //把所有年月和需要建立的月份匹配，把匹配上的返回出去，让月份选择器可选
         return !this.allowedDates.includes(ym);
       } catch (error) {
@@ -377,9 +379,6 @@ export default {
           break;
         case "smileCentral":
           this.allowedDates = [
-            "2024-05-22",
-            "2024-05-25",
-            "2024-05-29",
             "2024-06-01",
             "2024-06-05",
             "2024-06-08",
@@ -393,9 +392,6 @@ export default {
           break;
         case "smileMongKok":
           this.allowedDates = [
-            "2024-05-23",
-            "2024-05-25",
-            "2024-05-28",
             "2024-06-01",
             "2024-06-06",
             "2024-06-11",
@@ -414,8 +410,6 @@ export default {
           break;
         case "clearVisionMongKok":
           this.allowedDates = [
-            "2024-05-21",
-            "2024-05-30",
             "2024-06-04",
             "2024-06-13",
             "2024-06-18",
@@ -561,6 +555,45 @@ export default {
       let day = date.getDate();
       return year + "-" + month + "-" + day;
     },
+    focusSubDate() {
+      const arr = [];
+      // 获取 type="button"  aria-label="前一年"
+      setTimeout(() => {
+        const elements = document.querySelectorAll(
+          'button[type="button"][aria-label="前一年"]'
+        );
+        const elements1 = document.querySelectorAll(
+          'button[type="button"][aria-label="上个月"]'
+        );
+        const elements2 = document.querySelectorAll(
+          'button[type="button"][aria-label="后一年"]'
+        );
+        const elements3 = document.querySelectorAll(
+          'button[type="button"][aria-label="下个月"]'
+        );
+        const buttonSpans = document.querySelectorAll('span[role="button"]');
+        buttonSpans.forEach((item) => {
+          item.style.color = "#303133";
+          item.style.disabled = true;
+          item.style.cursor = "no-drop";
+        });
+
+        // elements elements1 切换年份直接禁用
+        elements[0].style.color = "#303133";
+        elements[0].style.disabled = true;
+        elements[0].style.cursor = "no-drop";
+        elements1[0].style.color = "#303133";
+        elements1[0].style.disabled = true;
+        elements1[0].style.cursor = "no-drop";
+
+        elements2[0].style.color = "#303133";
+        elements2[0].style.disabled = true;
+        elements2[0].style.cursor = "no-drop";
+        // elements3[0].style.color = "#303133";
+        // elements3[0].style.disabled = true;
+        // elements3[0].style.cursor = "no-drop";
+      }, 500);
+    },
   },
   mounted() {
     // 获取屏幕宽度
@@ -608,8 +641,8 @@ export default {
             text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
           }
         }
-        .today{
-          span{
+        .today {
+          span {
             color: #444;
           }
         }
@@ -626,7 +659,15 @@ export default {
       }
     }
   }
+  // .el-date-picker__header {
+  //   & > button:nth-child(1):hover,
+  //   & > button:nth-child(2):hover {
+  //     color: #303133 !important;
+  //     cursor: no-drop;
+  //   }
+  // }
 }
+
 @media screen and (max-width: 767px) {
   .el-picker-panel {
     left: 32px !important;
