@@ -11,7 +11,7 @@
     </Banner>
     <div class="smilePro-desc page_container md:mt-28 mt-10">
       <div class="smilePro-desc-one">
-        為慶祝希瑪微笑矯視中心旺角新址開張，由即日起，只要於2024年6月30日或之前完成SMILE
+        為慶祝希瑪微笑矯視中心旺角新址開張，由即日起，只要於<span>2024年6月30日或之前</span>完成SMILE
         Pro微笑激光矯視都可享開張矯視限時優惠! 想了解詳情就聯絡我們查詢
       </div>
       <div class="smilePro-desc-title flex justify-center">
@@ -1541,6 +1541,9 @@ export default {
       font-weight: 300;
       line-height: 35px;
       letter-spacing: 6px;
+      & > span {
+        font-weight: bold;
+      }
     }
     &-title {
       h2 {
@@ -2188,6 +2191,9 @@ export default {
       font-weight: 300;
       line-height: 30px;
       letter-spacing: 4.5px;
+      & > span {
+        font-weight: bold;
+      }
     }
     &-title {
       h2 {
