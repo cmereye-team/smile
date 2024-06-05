@@ -1078,7 +1078,7 @@ export default {
       align-items: center;
       .title-img {
         position: absolute;
-        top: -4%;
+        top: -80px;
         left: 50%;
         transform: translateX(-50%);
         width: 170px;

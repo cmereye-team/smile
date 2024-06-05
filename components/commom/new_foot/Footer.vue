@@ -264,15 +264,15 @@ export default {
         child_list: [
           {
             child_item: this.$t("home.headers.aboutSmileChild_1"),
-            link: "/about-us/centre-introduction",
+            link: "/group-profile",
           },
           {
             child_item: this.$t("home.headers.aboutSmileChild_2"),
-            link: "/about-us/medical-team",
+            link: "/our-medical-team",
           },
           {
             child_item: this.$t("home.headers.aboutSmileChild_3"),
-            link: "/about-us/medical-equipment",
+            link: "/medical-equipment",
           },
         ],
       },

@@ -117,7 +117,7 @@
           <nuxt-link :to="localePath('/')">
             <img
               class="foot_logo"
-              src="../../asset/image/common/Logo.svg"
+              src="@/asset/image/common/Logo.svg"
               alt=""
             />
           </nuxt-link>

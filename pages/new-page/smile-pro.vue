@@ -1170,10 +1170,59 @@
           <div>用家見證</div>
         </div>
         <div class="swiper-pc-share">
-          <div
-            v-swiper:mySwiper="swiperOption1"
-            class="swiperWrap"
-          >
+          <div v-if="isMobile">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
+                      >好細心</span
+                    >講解同鼓勵我，<br />令我好安心
+                  </div>
+                  <div class="name-title">Macy, 文員</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
+                      >第 2 日已經睇得清，</span
+                    ><br />如常生活架喇!
+                  </div>
+                  <div class="name-title">Agnes, 行政人員</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
+                    ><br />會推薦比朋友
+                  </div>
+                  <div class="name-title">Vivien, 家庭主婦</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
+                    10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
+                  </div>
+                  <div class="name-title">阿聲, 咖啡師</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-two">
+                <div class="swiper-two-box">
+                  <div class="speech">
+                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
+                      >好細心</span
+                    >講解同鼓勵我，<br />令我好安心
+                  </div>
+                  <div class="name-title">Macy, 文員</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-else v-swiper:mySwiper="swiperOption1" class="swiperWrap">
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
@@ -1366,11 +1415,11 @@ export default {
       window.open(_url);
     },
     nextEl() {
-      this.mySwiper.slideNext()
+      this.mySwiper.slideNext();
       console.log(1);
     },
     prevEl() {
-      this.mySwiper.slidePrev()
+      this.mySwiper.slidePrev();
     },
   },
   mounted() {
@@ -1981,7 +2030,7 @@ export default {
       padding-top: 15px;
     }
   }
-  .swiper-wrapper{
+  .swiper-wrapper {
     // margin-left: 60px;
   }
   .swiper-wrapper > div:nth-child(even) {
@@ -2656,10 +2705,15 @@ export default {
     flex-direction: column;
     align-items: center;
     & > div:nth-child(odd) {
-      margin-left: -12%;
+      // margin-left: -12%;
+      margin: 0 auto 22px 0;
     }
     & > div:nth-child(even) {
-      margin-right: -12%;
+      // margin-right: -12%;
+      margin: 0 0 22px auto;
+    }
+    & > :last-child {
+      display: none;
     }
   }
   .swiper-two {
@@ -2707,7 +2761,7 @@ export default {
       letter-spacing: 1.2px;
     }
   }
-  .smile-pro-btn-mb{
+  .smile-pro-btn-mb {
     margin-bottom: 55px;
   }
   .smile-pro-btn {
@@ -2734,13 +2788,11 @@ export default {
     position: relative;
     overflow: hidden;
     & > div {
-      width: 300%;
       padding: 116px 0 45px;
-      border-radius: 50% 50% 0 0;
-      background: rgba(199, 232, 239, 0.2);
-      margin-left: -100%;
       margin-top: 150px;
-
+      background: url("https://static.cmereye.com/imgs/2024/06/a0f6edbe46fe7811.png")
+        no-repeat;
+      background-size: 100% 100%;
       & > div:nth-child(1) {
         position: absolute;
         top: 60px;
@@ -2765,6 +2817,12 @@ export default {
           line-height: 24px; /* 100% */
           letter-spacing: 5px;
           padding-bottom: 20px;
+        }
+      }
+      & > div:nth-child(2) {
+        & > div {
+          box-sizing: border-box;
+          padding: 0 30px;
         }
       }
     }
