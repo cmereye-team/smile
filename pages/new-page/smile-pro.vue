@@ -9,8 +9,12 @@
         </div>
       </template>
     </Banner>
-    <div class="smilePro-desc page_container">
-      <div class="smilePro-desc-title flex justify-center md:mt-28 mt-10">
+    <div class="smilePro-desc page_container md:mt-28 mt-10">
+      <div class="smilePro-desc-one">
+        為慶祝希瑪微笑矯視中心旺角新址開張，由即日起，只要於2024年6月30日或之前完成SMILE
+        Pro微笑激光矯視都可享開張矯視限時優惠! 想了解詳情就聯絡我們查詢
+      </div>
+      <div class="smilePro-desc-title flex justify-center">
         <H2Tag :title="[$t('service.smilePro.smileProDesc.title')]" />
       </div>
       <div class="smilePro-desc-in">
@@ -1524,8 +1528,20 @@ export default {
 
   .smilePro-desc {
     max-width: 1270px;
-    margin: 0 auto;
-
+    margin-right: auto;
+    margin-left: auto;
+    &-one {
+      max-width: 980px;
+      margin: 85px auto 55px;
+      color: #6d6e71;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 35px;
+      letter-spacing: 6px;
+    }
     &-title {
       h2 {
         font-family: var(--font_family);
@@ -2161,6 +2177,18 @@ export default {
     }
   }
   .smilePro-desc {
+    &-one {
+      width: auto;
+      margin: 50px 24px 35px;
+      color: #6d6e71;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 4.5px;
+    }
     &-title {
       h2 {
         font-family: var(--font_family);
