@@ -895,10 +895,10 @@ module.exports = {
       },
       tabControlItem: {
         title: [
-          "Smile 微笑矫视",
           "SMILE PRO 微笑矫视 ",
+          "Smile 微笑矫视",
           "ICL植入式隐形眼镜",
-          "LASIK 激光矫视",
+          // "LASIK 激光矫视",
           "矫视知多D",
         ],
       },

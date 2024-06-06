@@ -30,50 +30,7 @@
             <span>{{ item }}</span>
           </div>
         </div>
-        <div v-if="currentTitleIndex === 3">
-          <div class="media-buju">
-            <div
-              class="media-box"
-              v-for="(item_1_1, index_1_1) in mediaBujuLists_1_1"
-              :key="index_1_1"
-            >
-              <a :href="item_1_1.link" target="_Blank">
-                <img :src="item_1_1.img" alt="" />
-                <div class="meida" v-html="item_1_1.meida"></div>
-              </a>
-            </div>
-          </div>
-          <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
-            <div class="flex justify-center more-btn">
-              <span>更多影片</span>
-            </div>
-          </a>
-          <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
-              <button>
-                <div class="flex btn-yuyue">
-                  <img
-                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
-                    alt=""
-                    style="width: 12vw"
-                  />
-                  <div
-                    class="flex flex-col justify-center"
-                    style="padding: 0 10px"
-                  >
-                    <span>{{
-                      $t("consumptionVoucher.subscribe") +
-                      "/" +
-                      $t("consumptionVoucher.query")
-                    }}</span>
-                    <span>6940 8569</span>
-                  </div>
-                </div>
-              </button>
-            </a>
-          </div>
-        </div>
-        <div v-else-if="currentTitleIndex === 0">
+        <div v-if="currentTitleIndex === 0">
           <div class="media-buju">
             <div
               class="media-box"
@@ -86,11 +43,11 @@
               </a>
             </div>
           </div>
-          <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
+          <!-- <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
               <span>更多影片</span>
             </div>
-          </a>
+          </a> -->
           <div class="flex justify-center my-10">
             <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
@@ -129,14 +86,14 @@
               </a>
             </div>
           </div>
-          <a
+          <!-- <a
             class="a-more-btn"
             href="https://www.youtube.com/@cmersmileeyecenter6303"
           >
             <div class="flex justify-center more-btn">
               <span>更多影片</span>
             </div>
-          </a>
+          </a> -->
           <div class="flex justify-center my-10">
             <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
@@ -163,7 +120,47 @@
           </div>
         </div>
         <div v-else-if="currentTitleIndex === 2">
-           精彩內容即將更新，密切留意！
+          <div class="media-buju">
+            <div
+              class="media-box"
+              v-for="(item_1_1, index_1_1) in mediaBujuLists_1_1"
+              :key="index_1_1"
+            >
+              <a :href="item_1_1.link" target="_Blank">
+                <img :src="item_1_1.img" alt="" />
+                <div class="meida" v-html="item_1_1.meida"></div>
+              </a>
+            </div>
+          </div>
+          <!-- <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
+            <div class="flex justify-center more-btn">
+              <span>更多影片</span>
+            </div>
+          </a> -->
+          <div class="flex justify-center my-10">
+            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+              <button>
+                <div class="flex btn-yuyue">
+                  <img
+                    src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                    alt=""
+                    style="width: 12vw"
+                  />
+                  <div
+                    class="flex flex-col justify-center"
+                    style="padding: 0 10px"
+                  >
+                    <span>{{
+                      $t("consumptionVoucher.subscribe") +
+                      "/" +
+                      $t("consumptionVoucher.query")
+                    }}</span>
+                    <span>6940 8569</span>
+                  </div>
+                </div>
+              </button>
+            </a>
+          </div>
         </div>
         <div v-else>
           <div class="media-buju">
@@ -178,11 +175,11 @@
               </a>
             </div>
           </div>
-          <a class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
+          <!-- <a class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
               <span>更多影片</span>
             </div>
-          </a>
+          </a> -->
           <div class="flex justify-center my-10">
             <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
@@ -225,7 +222,7 @@
             <span>{{ item }}</span>
           </div>
         </div>
-        <div v-if="currentTitleIndex === 0">
+        <div v-if="currentTitleIndex === 1">
           <div class="media-buju">
             <div
               class="media-box"
@@ -238,11 +235,11 @@
               </a>
             </div>
           </div>
-          <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
+          <!-- <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
               <span>更多影片</span>
             </div>
-          </a>
+          </a> -->
           <div class="flex justify-center my-10">
             <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
@@ -268,7 +265,7 @@
             </a>
           </div>
         </div>
-        <div v-else-if="currentTitleIndex === 1">
+        <div v-else-if="currentTitleIndex === 0">
           <div class="media-buju">
             <div
               class="media-box"
@@ -281,11 +278,11 @@
               </a>
             </div>
           </div>
-          <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
+          <!-- <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
               <span>更多影片</span>
             </div>
-          </a>
+          </a> -->
           <div class="flex justify-center my-10">
             <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
@@ -324,11 +321,11 @@
               </a>
             </div>
           </div>
-          <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
+          <!-- <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
               <span>更多影片</span>
             </div>
-          </a>
+          </a> -->
           <div class="flex justify-center my-10">
             <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
@@ -354,9 +351,9 @@
             </a>
           </div>
         </div>
-        <div v-else-if="currentTitleIndex === 3">
+        <!-- <div v-else-if="currentTitleIndex === 3">
            精彩內容即將更新，密切留意！
-        </div>
+        </div> -->
         <div v-else>
           <div class="media-buju">
             <div
@@ -370,11 +367,11 @@
               </a>
             </div>
           </div>
-          <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
+          <!-- <a  class="a-more-btn" href="https://www.youtube.com/@cmersmileeyecenter6303">
             <div class="flex justify-center more-btn">
               <span>更多影片</span>
             </div>
-          </a>
+          </a> -->
           <div class="flex justify-center my-10">
             <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
               <button>
