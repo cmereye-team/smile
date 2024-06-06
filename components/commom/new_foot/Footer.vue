@@ -27,7 +27,7 @@
       <div class="copyright">
         <div class="flex md:mb-5 justify-center items-center">
           <div class="iocn">
-            <a href="">
+            <a href="https://www.facebook.com/CMER.SMILE/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -43,7 +43,7 @@
             </a>
           </div>
           <div class="iocn pc_icon">
-            <a href="">
+            <a href="https://www.instagram.com/cmer_smile/?hl=en" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -67,7 +67,7 @@
             </a>
           </div>
           <div class="iocn">
-            <a href="">
+            <a href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg?view_as=public" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"

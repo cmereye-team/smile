@@ -86,7 +86,7 @@
         </div>
         <h3>中環</h3>
       </a>
-      <a href="https://maps.app.goo.gl/Ujy6ZEsqpmQUvL8o7" target="_blank">
+      <a href="https://maps.app.goo.gl/J2Y6TQXVaUQPioPp7" target="_blank">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
