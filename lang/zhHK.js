@@ -931,16 +931,6 @@ module.exports = {
       ],
       mediaBujuLists_1_2: [
         {
-          link: "https://youtu.be/85OX0uADWEw",
-          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
-          meida: `<span>微笑矯視 - 胡瀞詩Ceci Wu（精華版）</span>`,
-        },
-        {
-          link: "https://youtu.be/cLVfjeX3WwA",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
-          meida: `<span>SMILE 微笑矯視-Jimmy（精華版）</span>`,
-        },
-        {
           link: "https://youtu.be/gRKFwHXBAzc",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2023/02/7916734434_95270280400_1675237466957_Lok-Hei_Thumnail-16-9-copy-1.jpg",
           meida: `<span
@@ -1059,6 +1049,18 @@ module.exports = {
           meida: `<span>微笑矯視 - Dickson</span>`,
         },
       ],
+      mediaBujuLists_1_2_1: [
+        {
+          link: "https://youtu.be/85OX0uADWEw",
+          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          meida: `<span>微笑矯視 - 胡瀞詩Ceci Wu（精華版）</span>`,
+        },
+        {
+          link: "https://youtu.be/cLVfjeX3WwA",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE 微笑矯視-Jimmy（精華版）</span>`,
+        },
+      ],
       mediaBujuLists_1_4: [
         {
           link: "https://youtu.be/0-mlyxrBaus",
@@ -1130,16 +1132,6 @@ module.exports = {
       ],
       mediaBujuLists_2_1: [
         {
-          link: "https://youtu.be/B12IjJ3tFHE",
-          img: "https://static.cmereye.com/imgs/2024/06/39341ae0c9762d92.png",
-          meida: `<span>植入式隱形眼鏡- 麥沛東（完整版）</span>`,
-        },
-        {
-          link: "https://youtu.be/r0yDL98l0Zo",
-          img: "https://static.cmereye.com/imgs/2024/06/5236038dbb63e3f6.png",
-          meida: `<span>植入式隱形眼鏡- 麥沛東（完整版）</span>`,
-        },
-        {
           link: "https://www.youtube.com/watch?v=1xDkEkhtDCY",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2020/12/Phil-Lam-ICL.png",
           meida: `<span>植入式隱形眼鏡 - Phil 林奕匡(完整版)</span>`,
@@ -1158,6 +1150,18 @@ module.exports = {
           link: "https://youtu.be/rs4ErPXrs94",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/02/tiff.jpg",
           meida: `<span>植入式隱形眼鏡 - 媽媽 Tiff Poon</span>`,
+        },
+      ],
+      mediaBujuLists_2_1_1: [
+        {
+          link: "https://youtu.be/B12IjJ3tFHE",
+          img: "https://static.cmereye.com/imgs/2024/06/39341ae0c9762d92.png",
+          meida: `<span>植入式隱形眼鏡- 麥沛東（完整版）</span>`,
+        },
+        {
+          link: "https://youtu.be/r0yDL98l0Zo",
+          img: "https://static.cmereye.com/imgs/2024/06/5236038dbb63e3f6.png",
+          meida: `<span>植入式隱形眼鏡- 麥沛東（完整版）</span>`,
         },
       ],
       mediaBujuLists_2_3: [
@@ -1199,19 +1203,9 @@ module.exports = {
       ],
       mediaBujuLists_2_2: [
         {
-          link: "https://youtu.be/JCzzO4Y0kko",
-          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
-          meida: `<span>SMILE 微笑矯視-胡瀞詩Ceci Wu (完整版)</span>`,
-        },
-        {
           link: "https://youtu.be/qBsPhkIaVfo",
           img: "https://static.cmereye.com/imgs/2024/05/7f62a4ec1d4e73cc.png",
           meida: `<span>SMILE 微笑矯視-李偉志</span>`,
-        },
-        {
-          link: "https://youtu.be/cLVfjeX3WwA",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
-          meida: `<span>SMILE 微笑矯視-Jimmy（精華版）</span>`,
         },
         {
           link: "https://youtu.be/1WR18ptmCuQ",
@@ -1302,6 +1296,18 @@ module.exports = {
           link: "https://youtu.be/05NSqdF7nz0",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2020/12/Mandy_Thumbnail_Full.jpg",
           meida: `<span>微笑矯視 - Mandy 文荻 (完整版)</span>`,
+        },
+      ],
+      mediaBujuLists_2_2_1: [
+        {
+          link: "https://youtu.be/JCzzO4Y0kko",
+          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          meida: `<span>SMILE 微笑矯視-胡瀞詩Ceci Wu (完整版)</span>`,
+        },
+        {
+          link: "https://youtu.be/jO_h9YqCJzs",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE 微笑矯視-Jimmy (完整版)</span>`,
         },
       ],
       mediaBujuLists_2_4: [

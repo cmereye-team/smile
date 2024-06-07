@@ -931,22 +931,10 @@ module.exports = {
       ],
       mediaBujuLists_1_2: [
         {
-          link: "https://youtu.be/85OX0uADWEw",
-          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
-          meida: `<span>微笑矫视 - 胡瀞诗Ceci Wu</span>`,
-        },
-        {
-          link: "https://youtu.be/jO_h9YqCJzs",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
-          meida: `<span>SMILE PRO微笑矫视-Jimmy (精华版)</span>`,
-        },
-        {
           link: "https://youtu.be/gRKFwHXBAzc",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2023/02/7916734434_95270280400_1675237466957_Lok-Hei_Thumnail-16-9-copy-1.jpg",
-          meida: `<span
-  >微笑矫视 - 尹焯熙 Wan Cheuk Hei<br />
-  黄启乐 Wong Kai Lok</span
-  >`,
+          meida: `<span>微笑矫视 - 尹焯熙 Wan Cheuk Hei<br />
+              黄启乐 Wong Kai Lok</span>`,
         },
         {
           link: "ttps://youtu.be/Ce1hzfbtgjY",
@@ -1059,6 +1047,18 @@ module.exports = {
           meida: `<span>微笑矫视 - Dickson</span>`,
         },
       ],
+      mediaBujuLists_1_2_1: [
+        {
+          link: "https://youtu.be/85OX0uADWEw",
+          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          meida: `<span>微笑矫视 - 胡瀞诗Ceci Wu（精华版）</span>`,
+        },
+        {
+          link: "https://youtu.be/cLVfjeX3WwA",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE 微笑矫视-Jimmy（精华版）</span>`,
+        },
+      ],
       mediaBujuLists_1_4: [
         {
           link: "https://youtu.be/0-mlyxrBaus",
@@ -1078,7 +1078,7 @@ module.exports = {
         {
           link: "https://youtu.be/vkChPa7aMg8",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/02/mom-crying-YT-TN_v3-01.jpg",
-          meida: `<span>妈妈不能掉眼泪？！</span>`,
+          meida: `<span>妈妈🤰不能掉眼泪🤭😬😳？！</span>`,
         },
         {
           link: "ttps://youtu.be/Girz4x96wLo",
@@ -1115,17 +1115,51 @@ module.exports = {
         {
           link: "https://youtu.be/Habf2htLhbQ",
           img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
-          meida: `<span>SMILE PRO微笑矫视-刘学铭（精華版）</span>`,
+          meida: `<span>SMILE PRO微笑矫视-刘学铭（精华版）</span>`,
         },
         {
           link: "https://youtu.be/iHBGkRh-CXw",
           img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
-          meida: `<span>SMILE PRO微笑矫视-Sandy To（精華版）</span>`,
+          meida: `<span>SMILE PRO微笑矫视-Sandy To（精华版）</span>`,
         },
         {
           link: "https://youtu.be/N1Uar7xC_vk",
           img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
-          meida: `<span>SMILE PRO微笑矫视-莎比亚（精華版）</span>`,
+          meida: `<span>SMILE PRO微笑矫视-莎比亚（精华版）</span>`,
+        },
+      ],
+      mediaBujuLists_2_1: [
+        {
+          link: "https://www.youtube.com/watch?v=1xDkEkhtDCY",
+          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2020/12/Phil-Lam-ICL.png",
+          meida: `<span>植入式隐形眼镜 - Phil 林奕匡(完整版)</span>`,
+        },
+        {
+          link: "https://youtu.be/CEbbKFeFdnc",
+          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/kwan-gor-cover-minjp-scaled.jpg",
+          meida: `<span>植入式隐形眼镜 - KwanGor 吴业坤(完整版)</span>`,
+        },
+        {
+          link: "https://www.youtube.com/watch?v=iz-9KBthuFw",
+          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/04/Serene-Lim-%E6%9E%97%E5%AE%A3%E5%A6%A4.png",
+          meida: `<span>植入式隐形眼镜 - Serene 林宣妤(完整版)</span>`,
+        },
+        {
+          link: "https://youtu.be/rs4ErPXrs94",
+          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/02/tiff.jpg",
+          meida: `<span>植入式隐形眼镜 - 妈妈 Tiff Poon</span>`,
+        },
+      ],
+      mediaBujuLists_2_1_1: [
+        {
+          link: "https://youtu.be/B12IjJ3tFHE",
+          img: "https://static.cmereye.com/imgs/2024/06/39341ae0c9762d92.png",
+          meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
+        },
+        {
+          link: "https://youtu.be/r0yDL98l0Zo",
+          img: "https://static.cmereye.com/imgs/2024/06/5236038dbb63e3f6.png",
+          meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
         },
       ],
       mediaBujuLists_2_3: [
@@ -1152,78 +1186,34 @@ module.exports = {
         {
           link: "https://youtu.be/33vCgmDh-UQ",
           img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
-          meida: `<span>SMILE PRO微笑矫视-刘学铭 (完整版)</span>`,
+          meida: `<span>SMILE PRO微笑矫视-刘学铭（完整版）</span>`,
         },
         {
           link: "https://youtu.be/iHBGkRh-CXw",
           img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
-          meida: `<span>SMILE PRO微笑矫视-Sandy To (完整版)</span>`,
+          meida: `<span>SMILE PRO微笑矫视-Sandy To（完整版）</span>`,
         },
         {
           link: "https://youtu.be/jBAIJeUQGz0",
           img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
-          meida: `<span>SMILE PRO微笑矫视-莎比亚 (完整版)</span>`,
+          meida: `<span>SMILE PRO微笑矫视-莎比亚（完整版）</span>`,
         }
       ],
-
-      mediaBujuLists_2_1: [
-        {
-          link: "https://youtu.be/B12IjJ3tFHE",
-          img: "https://static.cmereye.com/imgs/2024/06/39341ae0c9762d92.png",
-          meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
-        },
-        {
-          link: "https://youtu.be/r0yDL98l0Zo",
-          img: "https://static.cmereye.com/imgs/2024/06/5236038dbb63e3f6.png",
-          meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
-        },
-        {
-          link: "https://www.youtube.com/watch?v=1xDkEkhtDCY",
-          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2020/12/Phil-Lam-ICL.png",
-          meida: `<span>植入式隐形眼镜 - Phil 林奕匡(完整版)</span>`,
-        },
-        {
-          link: "https://youtu.be/CEbbKFeFdnc",
-          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/kwan-gor-cover-minjp-scaled.jpg",
-          meida: `<span>植入式隐形眼镜 - KwanGor 吴业坤(完整版)</span>`,
-        },
-        {
-          link: "https://www.youtube.com/watch?v=iz-9KBthuFw",
-          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/04/Serene-Lim-%E6%9E%97%E5%AE%A3%E5%A6%A4.png",
-          meida: `<span>植入式隐形眼镜 - Serene 林宣妤(完整版)</span>`,
-        },
-        {
-          link: "https://youtu.be/rs4ErPXrs94",
-          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/02/tiff.jpg",
-          meida: `<span>植入式隐形眼镜 - 妈妈 Tiff Poon</span>`,
-        },
-      ],
       mediaBujuLists_2_2: [
-        {
-          link: "https://youtu.be/jO_h9YqCJzs",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
-          meida: `<span>SMILE 微笑矫视-Jimmy (精华版)</span>`,
-        },
         {
           link: "https://youtu.be/qBsPhkIaVfo",
           img: "https://static.cmereye.com/imgs/2024/05/7f62a4ec1d4e73cc.png",
           meida: `<span>SMILE 微笑矫视-李伟志</span>`,
         },
         {
-          link: "https://youtu.be/JCzzO4Y0kko",
-          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
-          meida: `<span>SMILE 微笑矫视-胡瀞诗Ceci Wu (完整版)</span>`,
-        },
-        {
           link: "https://youtu.be/1WR18ptmCuQ",
           img: "https://static.cmereye.com/imgs/2024/05/3be8dd3495a5bc22.png",
           meida: `<span>SMILE 微笑矫视-麦秋成</span>`,
         },
-
         {
           link: "https://youtu.be/qBsPhkIaVfo",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/05/Thumbnail_1.jpg",
-          meida: `<span>微笑矫视 - Ka Yan Yau 游嘉欣 (完整版)</span>`,
+          meida: `<span>微笑矫视 - Ka Yan Yau 游嘉欣(完整版)</span>`,
         },
         {
           link: "https://youtu.be/JCzzO4Y0kko",
@@ -1232,7 +1222,7 @@ module.exports = {
         },
         {
           link: "https://youtu.be/1WR18ptmCuQ",
-          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/07/Aka-Chio%E8%B6%99%E6%85%A7%E7%8F%8A%E9%83%BD%E5%81%9A%E5%92%97SMILE%E5%95%A6.jpg",
+          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/07/Aka-Chio-%E8%B6%99%E6%85%A7%E7%8F%8A%E9%83%BD%E5%81%9A%E5%92%97SMILE%E5%95%A6.jpg",
           meida: `<span>Aka Chio 赵慧珊 (完整版)</span>`,
         },
         {
@@ -1306,6 +1296,18 @@ module.exports = {
           meida: `<span>微笑矫视 - Mandy 文荻 (完整版)</span>`,
         },
       ],
+      mediaBujuLists_2_2_1: [
+        {
+          link: "https://youtu.be/JCzzO4Y0kko",
+          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          meida: `<span>SMILE 微笑矫视-胡瀞诗Ceci Wu (完整版)</span>`,
+        },
+        {
+          link: "https://youtu.be/jO_h9YqCJzs",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE 微笑矫视-Jimmy (完整版)</span>`,
+        },
+      ],
       mediaBujuLists_2_4: [
         {
           link: "https://youtu.be/0-mlyxrBaus",
@@ -1325,7 +1327,7 @@ module.exports = {
         {
           link: "https://youtu.be/vkChPa7aMg8",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/02/mom-crying-YT-TN_v3-01.jpg",
-          meida: `<span>妈妈不能掉眼泪？！</span>`,
+          meida: `<span>妈妈🤰不能掉眼泪🤭😬😳？！</span>`,
         },
         {
           link: "https://youtu.be/Girz4x96wLo",
@@ -1338,6 +1340,7 @@ module.exports = {
           meida: `<span>SMILE后几时先可以化眼妆💡</span>`,
         },
       ],
+
     },
     consumption: {
       title: "消费券详情",

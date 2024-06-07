@@ -514,9 +514,6 @@ export default {
       mediaBujuLists_1_1: [
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_1"),
       ],
-      mediaBujuLists_1_2: [
-        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_2"),
-      ],
       mediaBujuLists_1_3: [
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_3"),
       ],
@@ -524,10 +521,16 @@ export default {
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_4"),
       ],
       mediaBujuLists_2_1: [
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1_1"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1"),
       ],
       mediaBujuLists_2_2: [
-        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_2"),
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_2_1'),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_2")
+      ],
+      mediaBujuLists_1_2: [
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_2_1'),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_2")
       ],
       mediaBujuLists_2_3: [
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_3"),
@@ -536,14 +539,27 @@ export default {
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_4"),
       ],
       // 所有影片
+      /**
+       * mediaBujuLists_1_3 Smile PRO 微笑矯視 精华版 
+       * mediaBujuLists_1_2 SMILE 微笑矯視 精华版
+       * mediaBujuLists_1_1 icl 植入式隱形眼鏡
+       * mediaBujuLists_1_4 矯視知多D 精华版
+       * mediaBujuLists_2_3 Smile Pro 微笑矯視  完整版
+       * mediaBujuLists_2_2 Smile 微笑矯視  完整版
+       * mediaBujuLists_2_1 ICL植入式隱形眼鏡 完整版
+       * mediaBujuLists_2_4 矯視知多D 完整版
+       * **/ 
       mediaBujuLists_3_1: [
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_3"),
-        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_2"),
-        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_1"),
-        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_4"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_3"),
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_1_2_1'),
+        ...this.$t('ophthalmicInfo.shareVideos.mediaBujuLists_2_2_1'),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1_1"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_2"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_2"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_1"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1"),
+        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_4"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_4"),
       ],
       onePushList: [],
