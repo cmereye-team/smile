@@ -1158,26 +1158,36 @@ module.exports = {
         {
           link: "https://youtu.be/33vCgmDh-UQ",
           img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
-          meida: `<span>SMILE PRO微笑矫视-刘学铭</span>`,
+          meida: `<span>SMILE PRO微笑矫视-刘学铭 (完整版)</span>`,
         },
         {
           link: "https://youtu.be/jO_h9YqCJzs",
           img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
-          meida: `<span>SMILE PRO微笑矫视-Jimmy</span>`,
+          meida: `<span>SMILE PRO微笑矫视-Jimmy (完整版)</span>`,
         },
         {
           link: "https://youtu.be/iHBGkRh-CXw",
           img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
-          meida: `<span>SMILE PRO微笑矫视-Sandy To</span>`,
+          meida: `<span>SMILE PRO微笑矫视-Sandy To (完整版)</span>`,
         },
         {
           link: "https://youtu.be/jBAIJeUQGz0",
           img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
-          meida: `<span>SMILE PRO微笑矫视-莎比亚</span>`,
+          meida: `<span>SMILE PRO微笑矫视-莎比亚 (完整版)</span>`,
         }
       ],
 
       mediaBujuLists_2_1: [
+        {
+          link: "https://youtu.be/B12IjJ3tFHE",
+          img: "https://static.cmereye.com/imgs/2024/06/39341ae0c9762d92.png",
+          meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
+        },
+        {
+          link: "https://youtu.be/r0yDL98l0Zo",
+          img: "https://static.cmereye.com/imgs/2024/06/5236038dbb63e3f6.png",
+          meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
+        },
         {
           link: "https://www.youtube.com/watch?v=1xDkEkhtDCY",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2020/12/Phil-Lam-ICL.png",
@@ -1208,7 +1218,7 @@ module.exports = {
         {
           link: "https://youtu.be/JCzzO4Y0kko",
           img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
-          meida: `<span>SMILE 微笑矫视-胡瀞诗Ceci Wu</span>`,
+          meida: `<span>SMILE 微笑矫视-胡瀞诗Ceci Wu (完整版)</span>`,
         },
         {
           link: "https://youtu.be/1WR18ptmCuQ",

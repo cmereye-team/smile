@@ -30,7 +30,8 @@
             <span>{{ item }}</span>
           </div>
         </div>
-        <div v-if="currentTitleIndex === 0">
+        <div v-if="currentTitleIndex === 1">
+          <!-- SMILE 微笑矯視 精华版-->
           <div class="media-buju">
             <div
               class="media-box"
@@ -49,7 +50,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -73,7 +78,8 @@
             </a>
           </div>
         </div>
-        <div v-else-if="currentTitleIndex === 1">
+        <div v-else-if="currentTitleIndex === 0">
+          <!-- Smile PRO 微笑矯視 精华版 -->
           <div class="media-buju">
             <div
               class="media-box"
@@ -95,7 +101,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -120,6 +130,7 @@
           </div>
         </div>
         <div v-else-if="currentTitleIndex === 2">
+          <!-- icl 植入式隱形眼鏡 -->
           <div class="media-buju">
             <div
               class="media-box"
@@ -138,7 +149,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -163,6 +178,7 @@
           </div>
         </div>
         <div v-else>
+          <!-- 矯視知多D 精华版 -->
           <div class="media-buju">
             <div
               class="media-box"
@@ -181,7 +197,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -223,6 +243,7 @@
           </div>
         </div>
         <div v-if="currentTitleIndex === 1">
+          <!-- Smile 微笑矯視  完整版-->
           <div class="media-buju">
             <div
               class="media-box"
@@ -241,7 +262,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -266,6 +291,7 @@
           </div>
         </div>
         <div v-else-if="currentTitleIndex === 0">
+          <!-- Smile Pro 微笑矯視  完整版-->
           <div class="media-buju">
             <div
               class="media-box"
@@ -284,7 +310,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -309,6 +339,7 @@
           </div>
         </div>
         <div v-else-if="currentTitleIndex === 2">
+          <!-- ICL植入式隱形眼鏡 完整版 -->
           <div class="media-buju">
             <div
               class="media-box"
@@ -327,7 +358,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -355,6 +390,7 @@
            精彩內容即將更新，密切留意！
         </div> -->
         <div v-else>
+          <!-- 矯視知多D 完整版 -->
           <div class="media-buju">
             <div
               class="media-box"
@@ -373,7 +409,11 @@
             </div>
           </a> -->
           <div class="flex justify-center my-10">
-            <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+            <a
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+              target="_blank"
+              class="mbShow"
+            >
               <button>
                 <div class="flex btn-yuyue">
                   <img
@@ -403,7 +443,7 @@
         <div class="media-buju">
           <div
             class="media-box"
-            v-for="(item_2_1, index_2_1) in mediaBujuLists_3_1"
+            v-for="(item_2_1, index_2_1) in onePushList"
             :key="index_2_1"
           >
             <a :href="item_2_1.link" target="_Blank">
@@ -412,13 +452,17 @@
             </a>
           </div>
         </div>
-        <a href="https://www.youtube.com/@cmersmileeyecenter6303">
+        <a @click="getVideoList" v-if="allListOver">
           <div class="flex justify-center more-btn">
             <span>更多影片</span>
           </div>
         </a>
         <div class="flex justify-center my-10">
-          <a href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座" target="_blank" class="mbShow">
+          <a
+            href="https://api.whatsapp.com/send/?phone=85269408569&text=我想預約/查詢(MW-01) 術前檢查/矯視講座"
+            target="_blank"
+            class="mbShow"
+          >
             <button>
               <div class="flex btn-yuyue">
                 <img
@@ -502,13 +546,28 @@ export default {
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_4"),
       ],
+      onePushList: [],
+      nowList: 0,
+      allListOver: true,
     };
   },
-  created() {},
+  created() {
+    this.getVideoList();
+  },
   methods: {
     titelclick(index) {
       console.log(index);
       this.currentTitleIndex = index;
+    },
+    // 获取总视频数 默认展示9条  点击查看更多新增9条 直到加载完全部
+    getVideoList() {
+      this.nowList = this.onePushList.length;
+      this.onePushList = [
+        ...this.mediaBujuLists_3_1.slice(0, this.nowList + 9),
+      ];
+      if (this.nowList >= this.mediaBujuLists_3_1.length) {
+        this.allListOver = false;
+      }
     },
     //判断是否打开
     judgeActive(data) {
@@ -729,6 +788,7 @@ span {
     }
   }
   .a-more-btn {
+    cursor: pointer;
     background: #4570b6 !important;
     height: auto;
     width: 100%;
@@ -836,7 +896,7 @@ span {
 
   .tab-control .tab-control-item {
     border-bottom: 1px solid #666;
-    width: 181px;
+    width: max-content;
     text-align: center;
   }
 

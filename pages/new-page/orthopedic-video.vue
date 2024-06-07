@@ -409,9 +409,9 @@ export default {
           }
         }
       }
-      .tab-index-0 {
-        display: none;
-      }
+      // .tab-index-0 {
+      //   display: none;
+      // }
       .tab-index-1 .tab-index-2 {
         .tab-control {
           display: flex !important;
