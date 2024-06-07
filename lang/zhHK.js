@@ -936,6 +936,11 @@ module.exports = {
           meida: `<span>微笑矯視 - 胡瀞詩Ceci Wu（精華版）</span>`,
         },
         {
+          link: "https://youtu.be/cLVfjeX3WwA",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE 微笑矯視-Jimmy（精華版）</span>`,
+        },
+        {
           link: "https://youtu.be/gRKFwHXBAzc",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2023/02/7916734434_95270280400_1675237466957_Lok-Hei_Thumnail-16-9-copy-1.jpg",
           meida: `<span
@@ -962,11 +967,6 @@ module.exports = {
           link: "https://youtu.be/JD5GGTg01to",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/07/Thumnail_%E8%83%A1%E9%B4%BB%E9%88%9E-Hubert-Wu.jpg",
           meida: `<span>微笑矯視 - Hubert Wu 胡鴻鈞</span>`,
-        },
-        {
-          link: "https://youtu.be/1WR18ptmCuQ",
-          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/07/Aka-Chio-%E8%B6%99%E6%85%A7%E7%8F%8A%E9%83%BD%E5%81%9A%E5%92%97SMILE%E5%95%A6.jpg",
-          meida: `<span>Aka Chio 趙慧珊 (完整版)</span>`,
         },
         {
           link: "https://youtu.be/o2n03FVGWbk",
@@ -1115,22 +1115,17 @@ module.exports = {
         {
           link: "https://youtu.be/Habf2htLhbQ",
           img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
-          meida: `<span>SMILE PRO微笑矯視-劉學銘</span>`,
-        },
-        {
-          link: "https://youtu.be/cLVfjeX3WwA",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
-          meida: `<span>SMILE PRO微笑矯視-Jimmy</span>`,
+          meida: `<span>SMILE PRO微笑矯視-劉學銘（精華版）</span>`,
         },
         {
           link: "https://youtu.be/iHBGkRh-CXw",
           img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
-          meida: `<span>SMILE PRO微笑矯視-Sandy To</span>`,
+          meida: `<span>SMILE PRO微笑矯視-Sandy To（精華版）</span>`,
         },
         {
           link: "https://youtu.be/N1Uar7xC_vk",
           img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
-          meida: `<span>SMILE PRO微笑矯視-莎比亞</span>`,
+          meida: `<span>SMILE PRO微笑矯視-莎比亞（精華版）</span>`,
         },
       ],
       mediaBujuLists_2_1: [
@@ -1192,11 +1187,6 @@ module.exports = {
           meida: `<span>SMILE PRO微笑矯視-劉學銘（完整版）</span>`,
         },
         {
-          link: "https://youtu.be/jO_h9YqCJzs",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
-          meida: `<span>SMILE PRO微笑矯視-Jimmy（完整版）</span>`,
-        },
-        {
           link: "https://youtu.be/iHBGkRh-CXw",
           img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
           meida: `<span>SMILE PRO微笑矯視-Sandy To（完整版）</span>`,
@@ -1209,14 +1199,19 @@ module.exports = {
       ],
       mediaBujuLists_2_2: [
         {
+          link: "https://youtu.be/JCzzO4Y0kko",
+          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          meida: `<span>SMILE 微笑矯視-胡瀞詩Ceci Wu (完整版)</span>`,
+        },
+        {
           link: "https://youtu.be/qBsPhkIaVfo",
           img: "https://static.cmereye.com/imgs/2024/05/7f62a4ec1d4e73cc.png",
           meida: `<span>SMILE 微笑矯視-李偉志</span>`,
         },
         {
-          link: "https://youtu.be/JCzzO4Y0kko",
-          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
-          meida: `<span>SMILE 微笑矯視-胡瀞詩Ceci Wu (完整版)</span>`,
+          link: "https://youtu.be/cLVfjeX3WwA",
+          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          meida: `<span>SMILE 微笑矯視-Jimmy（精華版）</span>`,
         },
         {
           link: "https://youtu.be/1WR18ptmCuQ",
@@ -1235,7 +1230,7 @@ module.exports = {
         },
         {
           link: "https://youtu.be/1WR18ptmCuQ",
-          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/07/Aka-Chio%E8%B6%99%E6%85%A7%E7%8F%8A%E9%83%BD%E5%81%9A%E5%92%97SMILE%E5%95%A6.jpg",
+          img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/07/Aka-Chio-%E8%B6%99%E6%85%A7%E7%8F%8A%E9%83%BD%E5%81%9A%E5%92%97SMILE%E5%95%A6.jpg",
           meida: `<span>Aka Chio 趙慧珊 (完整版)</span>`,
         },
         {

@@ -115,7 +115,7 @@ export default {
           name: "矯視服務",
           childType: true,
           childList: [
-          {
+            {
               id: 2,
               path: "/smilePro",
               name: "SMILE Pro微笑激光矯視",
@@ -191,6 +191,23 @@ export default {
       ],
     };
   },
+  methods: {
+    handleLang(_type) {
+      console.log("当前的语言类型： --->", this.$i18n.locale);
+      if (this.$i18n.locale === _type) return;
+      console.log("点击的语言类型： --->", _type);
+      // console.log('路径打印',this.switchLocalePath(_type))
+      let _path = this.switchLocalePath(_type);
+      this.$router.push(_path);
+      var _text = "";
+      if (_type === "cn") {
+        _text = "微软雅黑";
+      } else _text = "Noto Sans HK";
+      console.log("准备设置的字体： ===>", _text);
+      // console.log(document.documentElement.style)
+      document.documentElement.style.setProperty("--font_family", _text); //var(--font_family)
+    },
+  },
   mounted() {
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
@@ -215,21 +232,21 @@ a {
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  .language-list{
+  .language-list {
     position: absolute;
     background: #fff;
     z-index: 10;
     border: 1px solid #4471b7;
     border-radius: 10px;
     overflow: hidden;
-    &>li{
+    & > li {
       min-width: 80px;
       color: #4471b7;
       display: flex;
       justify-content: center;
       font-size: 20px;
     }
-    &>li:hover{
+    & > li:hover {
       background: #4471b7;
       color: #fff;
     }
