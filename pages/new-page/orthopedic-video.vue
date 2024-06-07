@@ -60,6 +60,16 @@ export default {
     }
     .active {
       border-bottom: 2px solid #4570b6 !important;
+      background: #4570b6 !important;
+      & > p {
+        color: #fff !important;
+      }
+    }
+    .tab-control {
+      .active {
+        border-bottom: none !important;
+        background: transparent !important;
+      }
     }
     .tab-control .active {
       border-bottom: none !important;
