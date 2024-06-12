@@ -939,7 +939,7 @@ module.exports = {
                 >`,
         },
         {
-          link: "ttps://youtu.be/Ce1hzfbtgjY",
+          link: "https://youtu.be/Ce1hzfbtgjY",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2022/05/YauYau.jpg",
           meida: `<span>微笑矯視 - Ka Yan Yau 游嘉欣</span>`,
         },
@@ -1001,7 +1001,7 @@ module.exports = {
         {
           link: "https://www.youtube.com/watch?v=L5GFWM7Fxqs",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2021/07/Fanial_0714-01-01.jpg",
-          meida: `span>微笑矯視 - Dominic 何浩文</span>`,
+          meida: `<span>微笑矯視 - Dominic 何浩文</span>`,
         },
         {
           link: "https://youtu.be/A23Jmg0WluY",
@@ -1083,7 +1083,7 @@ module.exports = {
           meida: `<span>媽媽🤰不能掉眼淚🤭😬😳？！</span>`,
         },
         {
-          link: "ttps://youtu.be/Girz4x96wLo",
+          link: "https://youtu.be/Girz4x96wLo",
           img: "https://smilecms.hkcmereye.com/wp-content/uploads/2020/11/Smile_Green.jpg",
           meida: `<span>SMILE後可以戴有色隱形眼鏡嗎💡</span>`,
         },
@@ -1120,7 +1120,7 @@ module.exports = {
           meida: `<span>SMILE PRO微笑矯視-劉學銘（精華版）</span>`,
         },
         {
-          link: "https://youtu.be/iHBGkRh-CXw",
+          link: "https://youtu.be/SvBWSkyXidU",
           img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
           meida: `<span>SMILE PRO微笑矯視-Sandy To（精華版）</span>`,
         },
@@ -1203,12 +1203,12 @@ module.exports = {
       ],
       mediaBujuLists_2_2: [
         {
-          link: "https://youtu.be/qBsPhkIaVfo",
+          link: "https://youtu.be/inD-CATvEl4",
           img: "https://static.cmereye.com/imgs/2024/05/7f62a4ec1d4e73cc.png",
           meida: `<span>SMILE 微笑矯視-李偉志</span>`,
         },
         {
-          link: "https://youtu.be/1WR18ptmCuQ",
+          link: "https://youtu.be/sw1fxUXMqes",
           img: "https://static.cmereye.com/imgs/2024/05/3be8dd3495a5bc22.png",
           meida: `<span>SMILE 微笑矯視-麥秋成</span>`,
         },
@@ -1300,7 +1300,7 @@ module.exports = {
       ],
       mediaBujuLists_2_2_1: [
         {
-          link: "https://youtu.be/JCzzO4Y0kko",
+          link: "https://youtu.be/Z9s3c5Thu7w",
           img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
           meida: `<span>SMILE 微笑矯視-胡瀞詩Ceci Wu (完整版)</span>`,
         },

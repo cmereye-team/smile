@@ -560,7 +560,7 @@ export default {
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_1"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_1"),
         ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_1_4"),
-        ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_4"),
+        // ...this.$t("ophthalmicInfo.shareVideos.mediaBujuLists_2_4"),
       ],
       onePushList: [],
       nowList: 0,
