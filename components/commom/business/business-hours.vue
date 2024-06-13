@@ -61,7 +61,7 @@
       </div> -->
     </div>
     <div class="businessHours-address">
-      <a href="https://maps.app.goo.gl/JYfFVpG5BVThSMNk7" target="_blank">
+      <a href="https://maps.app.goo.gl/xDKuhwM7gA9vvbSx8" target="_blank">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
