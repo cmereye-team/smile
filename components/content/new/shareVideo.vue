@@ -746,7 +746,7 @@ span {
   }
 
   .media-buju {
-    display: grid;
+    display: grid !important;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 1fr);
     width: 1200px;
