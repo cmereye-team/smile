@@ -126,16 +126,16 @@ export default {
 
 <style lang="scss" scoped>
 .slide-1 {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/c84f05c91befdb22.jpg");
+  background-image: url("https://static.cmereye.com/imgs/2024/06/d7bc3c3602b91d11.jpg");
 }
 .slide-2 {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/4f7d2ce27afb7c2f.jpg");
+  background-image: url("https://static.cmereye.com/imgs/2024/06/225f78a9419e18c9.jpg");
 }
 .slide-3 {
   background-image: url("https://static.cmereye.com/imgs/2023/03/8654b03f75e2cd4b.jpg");
 }
 .slide-4 {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/eb3214d4994e6988.jpg");
+  background-image: url("https://static.cmereye.com/imgs/2024/06/5bae94148ed686da.jpg");
 }
 .slide-5 {
   background-image: url("https://static.cmereye.com/imgs/2023/03/990a811af868c7ed.jpg");

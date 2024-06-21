@@ -9,12 +9,12 @@ export const $router = [
     title: '主页',
     component: resolve('pages/new-page/home.vue')
   },
-  {
-    path: '/group-profile',
-    name: 'group-profile',
-    title: '集團及中心簡介',
-    component: resolve('pages/group-profile/index.vue'),
-  },
+  // {
+  //   path: '/group-profile',
+  //   name: 'group-profile',
+  //   title: '集團及中心簡介',
+  //   component: resolve('pages/group-profile/index.vue'),
+  // },
   {
     path: '/our-medical-team',
     name: 'our-medical-team',
@@ -279,7 +279,7 @@ export const $router = [
     component: resolve('pages/new-page/eye-examination.vue')
   },
   {
-    path: '/new-group-profile',
+    path: '/group-profile',
     name: 'group-profile',
     title: '集團簡介',
     component: resolve('pages/new-page/group-profile.vue')

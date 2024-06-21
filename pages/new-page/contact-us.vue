@@ -479,15 +479,15 @@ export default {
           address: ["彌敦道625及639號雅蘭中心", "一期1208室"],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.943834766614!2d114.1694325!3d22.317963799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401acb8062ea5%3A0x570a84988a127e1f!2z6aaZ5riv5biM55Gq55y856eR5Lit5b-DLeaXuuinkg!5e0!3m2!1szh-CN!2shk!4v1676968856537!5m2!1szh-CN!2shk",
         },
-        {
-          id: 4,
-          title: ["尖沙咀", "香港希瑪眼科中心"],
-          address: [
-            "梳士巴利道18-24號K11 ATELIER",
-            "辦公大樓1906室（K11 MUSEA附近）",
-          ],
-          src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5529601065123!2d114.17553319999999!3d22.2949178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400f1bd7327f5%3A0x5ec80492a99301e9!2sK11%20Atelier!5e0!3m2!1szh-CN!2shk!4v1676968715848!5m2!1szh-CN!2shk",
-        },
+        // {
+        //   id: 4,
+        //   title: ["尖沙咀", "香港希瑪眼科中心"],
+        //   address: [
+        //     "梳士巴利道18-24號K11 ATELIER",
+        //     "辦公大樓1906室（K11 MUSEA附近）",
+        //   ],
+        //   src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5529601065123!2d114.17553319999999!3d22.2949178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400f1bd7327f5%3A0x5ec80492a99301e9!2sK11%20Atelier!5e0!3m2!1szh-CN!2shk!4v1676968715848!5m2!1szh-CN!2shk",
+        // },
         {
           id: 5,
           title: ["銅鑼灣", "香港希瑪眼科中心"],
