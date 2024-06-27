@@ -16,6 +16,7 @@
         SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用
         Carl Zeiss VisuMax
         激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。
+        <p>（推廣活動/限時優惠不可與其他優惠/禮遇同時使用）</p>
       </div>
       <div class="smile-pro-btn">
         <a
@@ -111,7 +112,7 @@ export default {
   }
   .smile-banner-context {
     width: 100%;
-    max-width: 970px;
+    max-width: 980px;
     margin: 85px auto 0;
 
     color: #6d6e71;

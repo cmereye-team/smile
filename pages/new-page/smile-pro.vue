@@ -13,7 +13,9 @@
       <div class="smilePro-desc-one">
         為慶祝希瑪微笑矯視中心旺角新址開張，由即日起，只要於<span>2024年6月30日或之前</span>完成SMILE
         Pro微笑激光矯視都可享開張矯視限時優惠! 想了解詳情就聯絡我們查詢
+        <p>（推廣活動/限時優惠不可與其他優惠/禮遇同時使用）</p>
       </div>
+      
       <div class="smilePro-desc-title flex justify-center">
         <H2Tag :title="[$t('service.smilePro.smileProDesc.title')]" />
       </div>
