@@ -242,6 +242,14 @@
           src="https://static.cmereye.com/imgs/2024/05/c1b697f1200bf2f3.jpg"
           alt="6月 旺角"
         />
+        <img
+          src="https://static.cmereye.com/imgs/2024/06/99c110635e7f84ab.jpg"
+          alt="7月 中环"
+        />
+        <img
+          src="https://static.cmereye.com/imgs/2024/06/a726fef83100580f.jpg"
+          alt="7月 旺角"
+        />
       </div>
     </div>
     <businessHours />
@@ -375,45 +383,51 @@ export default {
       // allowedDates 每个地区的日期每个月都可以更改
       switch (this.form.address) {
         case "smilerProTsui":
+          // smile 尖沙咀
           this.allowedDates = [];
           break;
         case "smileCentral":
+          // smile 中环
           this.allowedDates = [
-            "2024-06-01",
-            "2024-06-05",
-            "2024-06-08",
-            "2024-06-12",
-            "2024-06-15",
-            "2024-06-19",
-            "2024-06-22",
-            "2024-06-26",
             "2024-06-29",
+            "2024-07-03",
+            "2024-07-06",
+            "2024-07-10",
+            "2024-07-13",
+            "2024-07-17",
+            "2024-07-20",
+            "2024-07-24",
+            "2024-07-27",
+            "2024-07-31",
           ];
           break;
         case "smileMongKok":
+          // smile 旺角
           this.allowedDates = [
-            "2024-06-01",
-            "2024-06-06",
-            "2024-06-11",
-            "2024-06-15",
-            "2024-06-20",
-            "2024-06-25",
-            "2024-06-29",
+            "2024-07-04",
+            "2024-07-06",
+            "2024-07-09",
+            "2024-07-18",
+            "2024-07-20",
+            "2024-07-23",
           ];
           break;
         case "smileProMongKok":
-          this.allowedDates = ["2024-06-08", "2024-06-22"];
+          // smilePro 旺角
+          this.allowedDates = ["2024-07-13", "2024-07-27"];
           break;
-
         case "clearVisionCentral":
+          // clearVision 中环
           this.allowedDates = [];
           break;
         case "clearVisionMongKok":
+          // clearVision 旺角
           this.allowedDates = [
-            "2024-06-04",
-            "2024-06-13",
-            "2024-06-18",
-            "2024-06-27",
+            "2024-07-02",
+            "2024-07-11",
+            "2024-07-16",
+            "2024-07-25",
+            "2024-07-30",
           ];
           break;
         default:
