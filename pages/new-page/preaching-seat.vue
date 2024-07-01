@@ -234,19 +234,13 @@
         </div>
       </div>
       <div class="lecture-image">
-        <!-- <img
-          src="https://static.cmereye.com/imgs/2024/05/639cffecb86c07c3.jpg"
-          alt="6月 中环"
-        />
         <img
-          src="https://static.cmereye.com/imgs/2024/05/c1b697f1200bf2f3.jpg"
-          alt="6月 旺角"
-        /> -->
-        <img
+          v-if="getNowMonth() == 7"
           src="https://static.cmereye.com/imgs/2024/06/99c110635e7f84ab.jpg"
           alt="7月 中环"
         />
         <img
+          v-if="getNowMonth() == 7"
           src="https://static.cmereye.com/imgs/2024/06/a726fef83100580f.jpg"
           alt="7月 旺角"
         />
@@ -606,6 +600,12 @@ export default {
         // elements3[0].style.disabled = true;
         // elements3[0].style.cursor = "no-drop";
       }, 500);
+    },
+    getNowMonth() {
+      // 获取当前月份
+      const date = new Date();
+      const month = date.getMonth() + 1;
+      return month;
     },
   },
   mounted() {
