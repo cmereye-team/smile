@@ -234,14 +234,14 @@
         </div>
       </div>
       <div class="lecture-image">
-        <img
+        <!-- <img
           src="https://static.cmereye.com/imgs/2024/05/639cffecb86c07c3.jpg"
           alt="6月 中环"
         />
         <img
           src="https://static.cmereye.com/imgs/2024/05/c1b697f1200bf2f3.jpg"
           alt="6月 旺角"
-        />
+        /> -->
         <img
           src="https://static.cmereye.com/imgs/2024/06/99c110635e7f84ab.jpg"
           alt="7月 中环"
@@ -389,7 +389,6 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-06-29",
             "2024-07-03",
             "2024-07-06",
             "2024-07-10",
