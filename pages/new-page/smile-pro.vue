@@ -1347,7 +1347,7 @@ export default {
   data() {
     return {
       titleName: ["一圖看清SMILE,", "SMILE PRO, ICL大不同"],
-      titleName1: ["名人用家檔案"],
+      titleName1: ["真實明星用家個案分享"],
       contrastTable: [
         [
           [""],

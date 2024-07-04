@@ -12,7 +12,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide slide-1"></div>
               <div class="swiper-slide slide-2"></div>
-              <div class="swiper-slide slide-3"></div>
+              <div class="swiper-slide slide-6"></div>
               <div class="swiper-slide slide-4"></div>
               <div class="swiper-slide slide-5"></div>
             </div>
@@ -26,7 +26,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide slide-1"></div>
               <div class="swiper-slide slide-2"></div>
-              <div class="swiper-slide slide-3"></div>
+              <div class="swiper-slide slide-6"></div>
               <div class="swiper-slide slide-4"></div>
               <div class="swiper-slide slide-5"></div>
             </div>
@@ -92,7 +92,7 @@ export default {
       swiperOptionTop: {
         loop: true,
         autoplay: true,
-        loopedSlides: 8, // looped slides should be the same
+        loopedSlides: 4, // looped slides should be the same
         spaceBetween: 10,
         navigation: {
           nextEl: ".swiper-button-next",
@@ -100,8 +100,8 @@ export default {
         },
       },
       swiperOptionThumbs: {
-        autoplay: true,
         loop: true,
+        autoplay: true,
         loopedSlides: 4, // looped slides should be the same
         spaceBetween: 10,
         // centeredSlides: true,
@@ -132,13 +132,16 @@ export default {
   background-image: url("https://static.cmereye.com/imgs/2024/06/225f78a9419e18c9.jpg");
 }
 .slide-3 {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/8654b03f75e2cd4b.jpg");
+  background-image: url("https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg");
 }
 .slide-4 {
   background-image: url("https://static.cmereye.com/imgs/2024/06/5bae94148ed686da.jpg");
 }
 .slide-5 {
   background-image: url("https://static.cmereye.com/imgs/2023/03/990a811af868c7ed.jpg");
+}
+.slide-6 {
+  background-image: url("https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg");
 }
 @media screen and (min-width: 768px) {
   .box:nth-child(1) img {
