@@ -13,7 +13,11 @@
       <div class="home-referral-service">
         <H2Tag :title="['矯視中心服務']" />
         <div>
-          <nuxt-link :to="item.link" v-for="item in bgReferralServiceImg" :key="item.id">
+          <nuxt-link
+            :to="item.link"
+            v-for="item in bgReferralServiceImg"
+            :key="item.id"
+          >
             <div><img :src="item.img" alt="服务" /></div>
             <div>
               <div>
@@ -827,6 +831,10 @@
           />
           <img
             src="https://static.cmereye.com/imgs/2024/04/16b586d7718ac0a6.png"
+            alt=""
+          />
+          <img
+            src="https://static.cmereye.com/imgs/2024/07/8fab0d4a7e7ef4ac.png"
             alt=""
           />
         </div>
@@ -1656,6 +1664,11 @@ export default {
     & > div {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      & > img {
+        width: 131.843px;
+        height: 132px;
+      }
     }
     max-width: 1270px;
   }
@@ -2322,24 +2335,13 @@ export default {
     margin-top: 55px;
     margin-bottom: 55px;
     & > div {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       padding: 0 30px;
-      justify-content: center;
-
+      gap: 0 18px;
       img {
         width: 68px;
         height: 68px;
-      }
-      & > img:nth-child(2) {
-        margin-left: 18px;
-      }
-      & > img:nth-child(3) {
-        margin: 0 18px;
-      }
-
-      & > img:nth-child(6) {
-        margin: 0 18px;
       }
     }
   }
