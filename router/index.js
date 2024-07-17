@@ -18,14 +18,14 @@ export const $router = [
   {
     path: '/our-medical-team',
     name: 'our-medical-team',
-    title: '醫療團隊222',
-    component: resolve('pages/our-medical-team/index.vue'),
+    title: '醫療團隊',
+    component: resolve('pages/new-page/doctor-team.vue'),
   },
   {
     path: '/medical-equipment',
     name: 'medical-equipment',
     title: '中心設備',
-    component: resolve('pages/medical-equipment/index.vue'),
+    component: resolve('pages/new-page/equipment.vue'),
   },
   {
     path: '/patient-info',
