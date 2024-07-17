@@ -23,11 +23,10 @@
             <p>林順潮醫生</p>
           </div>
           <div>
-            <p>創辦人林順潮教授是亞太眼科主要領導者之一，連續3屆被評</p>
-            <p>為「世界眼科100位最具影響力人物之一」，並獲</p>
-            <p>「世界十大傑出青年」、「香港十大傑出青年」、</p>
-            <p>「亞太最佳眼科臨床教授獎」、「亞太眼科傑出成就獎」、</p>
-            <p>「亞太眼科學術最高成就獎」等殊榮。</p>
+            <span>創辦人林順潮教授是亞太眼科主要領導者之一，連續3屆被評<br class="pcShow" />為「世界眼科100位最具影響力人物之一」，並獲</span>
+            <span>「世界十大傑出青年」、「香港十大傑出青年」、</span>
+            <span>「亞太最佳眼科臨床教授獎」、「亞太眼科傑出成就獎」、</span>
+            <span>「亞太眼科學術最高成就獎」等殊榮。</span>
           </div>
           <div>
             <span>香港大學內外全科醫學士</span>
@@ -351,6 +350,8 @@ export default {
         font-weight: 300;
         line-height: 35px; /* 175% */
         letter-spacing: 6px;
+        display: flex;
+        flex-direction: column;
       }
       & > div:nth-child(3) {
         display: flex;
@@ -689,7 +690,7 @@ export default {
       }
       & > div:nth-child(even) {
         flex-direction: row-reverse;
-   
+
         & > div:nth-child(1) {
           border-radius: 25px 0 25px 0;
           overflow: hidden;
