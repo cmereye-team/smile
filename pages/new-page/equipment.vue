@@ -230,15 +230,17 @@ export default {
       font-style: normal;
       font-weight: 400;
       line-height: 30px; /* 214.286% */
-      width: 312px;
+      width: 90%;
     }
     width: 100%;
-    padding-top: 36px;
+    padding-top: 10px;
     position: absolute;
     top: 0;
     z-index: 5;
     max-width: 387px;
-    height: 440px;
+    height: 100%;
+    max-height: 340px;
+    overflow-y: auto;
     background: #fff;
   }
   .equipment-remark-hide {

@@ -153,10 +153,10 @@ export default {
           name: "李德倫",
           img: "https://static.cmereye.com/imgs/2024/04/35a8ebff87489352.png",
           title: [
-            "香港醫學專科學院院士(眼科)",
+            "香港大學內外全科醫學士",
             "英國愛丁堡皇家外科醫學院院員",
-            "香港中文大學內外全科醫學士",
             "香港眼科醫學院院士",
+            "香港醫學專科學院院士(眼科)",
           ],
         },
         {
@@ -618,8 +618,8 @@ export default {
         position: relative;
         & > div:nth-child(1) {
           flex: 4.5;
-          width: 148px;
-          min-width: 148px;
+          width: 37.49vw;
+          min-width: 37.49vw;
           border-radius: 0 25px;
           overflow: hidden;
           & > img {
@@ -633,8 +633,8 @@ export default {
           background: url(https://static.cmereye.com/imgs/2024/04/e4ed6628ef1d18a5.png)
             no-repeat;
           background-size: 100% 95%;
-          width: 161px;
-          height: 224px;
+          width: 41.28vw;
+          height: 57.43vw;
           display: inline-block;
           position: absolute;
           z-index: 2;
@@ -650,25 +650,25 @@ export default {
           left: -20px;
           border-radius: 0 40px 0 20px;
           padding-left: 40px;
-          min-height: 210px;
+          min-height: 53.84vw;
           top: -10px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           box-sizing: border-box;
           padding-right: 0;
-          min-width: 219px;
+          min-width: 56.15vw;
 
           & > div:nth-child(1) {
             color: #4570b6;
             font-family: "Noto Sans HK";
-            font-size: 20px;
+            font-size: 5.12vw;
             font-style: normal;
             font-weight: 500;
-            line-height: 20px; /* 100% */
+            line-height: 5.12vw; /* 100% */
             letter-spacing: 1px;
             & > span {
-              font-size: 14px;
+              font-size: 3.58vw;
               letter-spacing: 0.7px;
               margin-left: 8px;
             }
@@ -680,10 +680,10 @@ export default {
             color: #4570b6;
 
             font-family: "Noto Sans HK";
-            font-size: 10px;
+            font-size: 2.56vw;
             font-style: normal;
             font-weight: 400;
-            line-height: 20px; /* 200% */
+            line-height: 5.12vw; /* 200% */
             letter-spacing: 0.5px;
           }
         }
@@ -703,8 +703,8 @@ export default {
           background: url(https://static.cmereye.com/imgs/2024/04/3bdb9371c294cb1d.png)
             no-repeat;
           background-size: 100% 95%;
-          width: 161px;
-          height: 224px;
+          width: 41.28vw;
+          height: 57.43vw;
           display: inline-block;
           position: absolute;
           z-index: 2;
@@ -721,9 +721,9 @@ export default {
           left: auto;
           right: -8px;
           border-radius: 20px 0 40px 0;
-          padding-left: 20px;
-          padding-right: 15px;
-          min-width: 208px;
+          padding-left: 5.12vw;
+          padding-right: 3.84vw;
+          min-width: 53.33vw;
         }
       }
       & > div:nth-child(1) {

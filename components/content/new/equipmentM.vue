@@ -154,8 +154,8 @@ export default {
       font-size: 3.6vw;
       font-style: normal;
       font-weight: 500;
-      line-height: 20px; /* 178.571% */
-      letter-spacing: 0.7px;
+      line-height: 5.12vw; /* 178.571% */
+      letter-spacing: 0.18vw;
     }
   }
   .equipment-name-up {
@@ -186,32 +186,47 @@ export default {
     }
   }
   .equipment-remark {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     opacity: 1;
     transition: all 0.5s;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     & > div {
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 9px;
+      font-size: 2.3vw;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.1;
+      line-height: 1.4;
       width: 100%;
+      padding-top: 10px;
+      height: max-content;
+      box-sizing: border-box;
     }
-    padding-top: 36px;
+    padding-top: 10px;
     position: absolute;
     top: 0;
     z-index: 3;
-    width: 38.46vw;
-    height: 43.58vw;
+    width: 90%;
+    height: 100%;
+    max-height: 35.89vw;
+    overflow-y: auto;
     margin: 0 auto;
     background: #fff;
-    padding-bottom: 12.82vw;
+    // padding-bottom: 12.82vw;
     justify-content: center;
+  }
+  // .equipment-remark  修改纵向滚动条
+  .equipment-remark::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+  }
+
+  .equipment-remark::-webkit-scrollbar-track {
+    background-color: #cbd5e1;
+    border-radius: 10px;
   }
   .equipment-remark-hide {
     opacity: 0;
