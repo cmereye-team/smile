@@ -373,7 +373,7 @@ export default [
   },
   {
     id: 12,
-    img: "https://static.cmereye.com/imgs/2024/05/8d48fd9571a47602.png",
+    img: "https://static.cmereye.com/imgs/2024/05/9215afd7f26f11e5.png",
     name: [
       "德國蔡司免散瞳彩色",
       "眼底照相機(VISUCAM500)"
@@ -384,7 +384,7 @@ export default [
   },
   {
     id: 13,
-    img: "https://static.cmereye.com/imgs/2024/05/9215afd7f26f11e5.png",
+    img: "https://static.cmereye.com/imgs/2024/05/8d48fd9571a47602.png",
     name: [
       "A型及B型超聲波掃描儀",
       "（Quantel Compact Touch）"
