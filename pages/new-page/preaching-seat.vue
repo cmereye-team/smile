@@ -235,16 +235,6 @@
       </div>
       <div class="lecture-image">
         <img
-          v-if="getNowMonth() == 7"
-          src="https://static.cmereye.com/imgs/2024/06/99c110635e7f84ab.jpg"
-          alt="7月 中环"
-        />
-        <img
-          v-if="getNowMonth() == 7"
-          src="https://static.cmereye.com/imgs/2024/06/a726fef83100580f.jpg"
-          alt="7月 旺角"
-        />
-        <img
           src="https://static.cmereye.com/imgs/2024/07/e2abd9f68f0861de.jpg"
           alt="8月 中环"
         />
@@ -391,9 +381,6 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-07-24",
-            "2024-07-27",
-            "2024-07-31",
             "2024-08-03",
             "2024-08-07",
             "2024-08-10",
@@ -408,7 +395,6 @@ export default {
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2024-07-23",
             "2024-08-01",
             "2024-08-06",
             "2024-08-10",
@@ -421,7 +407,6 @@ export default {
         case "smileProMongKok":
           // smilePro 旺角
           this.allowedDates = [
-            "2024-07-27",
             "2024-08-03",
             "2024-08-17",
             "2024-08-31",
@@ -434,8 +419,6 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2024-07-25",
-            "2024-07-30",
             "2024-08-08",
             "2024-08-13",
             "2024-08-22",
