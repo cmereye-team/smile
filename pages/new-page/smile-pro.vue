@@ -10,10 +10,10 @@
       </template>
     </Banner>
     <div class="smilePro-desc page_container md:mt-28 mt-10">
-      <div class="smilePro-desc-one">
+      <!-- <div class="smilePro-desc-one">
         由於反應非常熱烈，現延長開張優惠!由即日起，只要於<span>2024年8月31日或之前</span>完成SMILE Pro微笑激光矯視都可享開張矯視限時優惠!(優惠名額: 300位)<br />想了解詳情就聯絡我們查詢
         <p>(推廣活動不可與其他優惠同時使用，本公司保留最終決定權)</p>
-      </div>
+      </div> -->
 
       <div class="smilePro-desc-title flex justify-center">
         <H2Tag :title="[$t('service.smilePro.smileProDesc.title')]" />
