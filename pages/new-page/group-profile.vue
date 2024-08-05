@@ -260,7 +260,7 @@
                 <img :src="ele" alt="獲得獎項" />
               </div>
             </div>
-            <div>
+            <!-- <div>
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +293,7 @@
                   />
                 </svg>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -325,7 +325,7 @@ export default {
     return {
       isMobile: false,
       imgList: [
-        "https://static.cmereye.com/imgs/2024/05/3c37342a42929463.png",
+        "https://static.cmereye.com/imgs/2024/08/2dc8e2cd2f95150f.png",
         "https://static.cmereye.com/imgs/2024/05/9fb7b59c6d134014.png",
         "https://static.cmereye.com/imgs/2024/05/86e300274d8bc4ef.png",
         "https://static.cmereye.com/imgs/2024/05/788333406bba2c0f.png",
@@ -333,6 +333,8 @@ export default {
         "https://static.cmereye.com/imgs/2024/05/402f4a682ca2394a.png",
         "https://static.cmereye.com/imgs/2024/05/16b586d7718ac0a6.png",
         "https://static.cmereye.com/imgs/2024/07/8fab0d4a7e7ef4ac.png",
+        "https://static.cmereye.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
+        "https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png"
       ],
     };
   },
@@ -429,12 +431,15 @@ export default {
 
       & > div:nth-child(2) {
         position: relative;
-
+        max-width: 1270px;
+        margin: 0 auto;
         & > div:nth-child(1) {
           display: flex;
           justify-content: center;
+          flex-wrap: wrap;
 
           & > div {
+            display: flex;
             position: relative;
             z-index: 5;
             margin: 0 8.7px;
@@ -875,7 +880,8 @@ export default {
 
           & > div {
             width: 80px;
-
+            display: flex;
+            align-items: center;
             & > img {
               width: 100%;
             }

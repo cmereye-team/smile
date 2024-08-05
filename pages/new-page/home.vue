@@ -806,7 +806,7 @@
       <div class="home-award">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/04/3c37342a42929463.png"
+            src="https://static.cmereye.com/imgs/2024/08/2dc8e2cd2f95150f.png"
             alt=""
           />
           <img
@@ -835,6 +835,16 @@
           />
           <img
             src="https://static.cmereye.com/imgs/2024/07/8fab0d4a7e7ef4ac.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://static.cmereye.com/imgs/2024/08/a1b0a5b199d5b9a7.png"
+            alt=""
+          />
+          <img
+            src="https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png"
             alt=""
           />
         </div>
@@ -1661,15 +1671,23 @@ export default {
   .home-award {
     margin: 0 auto;
     margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
     & > div {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 0 12px;
       align-items: center;
       & > img {
-        width: 131.843px;
-        height: 132px;
+        width: max-content;
+        height: max-content;
       }
     }
+    & > div:nth-child(2) {
+      gap: 0 32px;
+    }
+
     max-width: 1270px;
   }
 }
@@ -2342,6 +2360,17 @@ export default {
       img {
         width: 68px;
         height: 68px;
+      }
+    }
+    & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 20px;
+      img {
+        width: max-content;
+        max-width: 69px;
+        height: max-content;
       }
     }
   }
