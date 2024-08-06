@@ -2367,6 +2367,7 @@ export default {
       align-items: center;
       justify-content: center;
       gap: 0 20px;
+      margin-top: 10px;
       img {
         width: max-content;
         max-width: 69px;

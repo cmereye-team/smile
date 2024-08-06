@@ -383,7 +383,7 @@ export default {
     background: url("https://static.cmereye.com/imgs/2024/05/93c994737098887c.png")
       no-repeat;
     background-size: 100% 100%;
-    padding: 240px 0 200px;
+    padding: 230px 0 100px;
     margin-top: 185px;
     position: relative;
 
@@ -875,9 +875,13 @@ export default {
         & > div:nth-child(1) {
           display: flex;
           flex-wrap: wrap;
+          // grid-template-columns: repeat(4, 1fr);
           justify-content: center;
           gap: 5px 15px;
-
+          // 设置第二三行间隙 
+          & > div:nth-child(n + 9) {
+            margin-top: 10px;
+          }
           & > div {
             width: 80px;
             display: flex;
