@@ -1673,7 +1673,7 @@ export default {
     margin-bottom: 55px;
     display: flex;
     flex-direction: column;
-    gap: 30px 0;
+    gap: 20px 0;
     & > div {
       display: flex;
       justify-content: center;
