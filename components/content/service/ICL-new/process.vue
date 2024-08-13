@@ -136,6 +136,8 @@ export default {
     grid-template-rows: repeat(2, 1fr);
     // flex-wrap: wrap;
     justify-content: center;
+    max-width: 85.65vw;
+    margin: 0 auto;
     li {
       width: 40.7vw;
       margin: 0 6px 30px;
