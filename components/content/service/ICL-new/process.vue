@@ -116,6 +116,8 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .step {
+    box-sizing: border-box;
+    padding: 0 25px !important;
     &-in {
       color: #4570b6;
       text-align: center;
