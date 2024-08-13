@@ -37,7 +37,7 @@
         </nuxt-link>
       </div>
       <div v-else>
-        <a class="title">
+        <div class="title">
           <div>
             <img
               v-if="pcOrMobile === 'mobile' && dataSrc.length > 0"
@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>

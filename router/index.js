@@ -126,12 +126,12 @@ export const $router = [
     title: '矯視資訊影片',
     component: resolve('pages/new-page/orthopedic-video.vue')
   },
-  // {
-  //   path: '/ophthalmicInfo/mediaCov',
-  //   name: 'ophthalmicInfo/mediaCov',
-  //   title: '媒體報導',
-  //   component: resolve('pages/ophthalmicInfo/mediaCov/index.vue')
-  // },
+  {
+    path: '/ophthalmicInfo/mediaCov',
+    name: 'ophthalmicInfo/mediaCov',
+    title: '媒體報導',
+    component: resolve('pages/ophthalmicInfo/mediaCov/index.vue')
+  },
   {
     path: '/privacy-policy',
     name: 'privacy-policy',

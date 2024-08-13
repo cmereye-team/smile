@@ -90,7 +90,7 @@
               :pcOrMobile="'mobile'"
               :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'"
             />
-
+            
             <DetailOption
               :group="reservationService"
               :pcOrMobile="'mobile'"
