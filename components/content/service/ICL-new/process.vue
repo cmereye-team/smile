@@ -131,16 +131,17 @@ export default {
   }
   .icl-process-list {
     margin-top: 36px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    // flex-wrap: wrap;
+    display: flex;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px 12px;
     max-width: 85.65vw;
     margin: 0 auto;
     li {
       width: 40.7vw;
-      margin: 0 6px 30px;
+      // margin: 0 6px 30px;
       img {
         border-radius: 20px;
         width: 100%;
@@ -158,9 +159,9 @@ export default {
         text-wrap: nowrap;
       }
     }
-    & > li:last-child {
-      margin-left: 55%;
-    }
+    // & > li:last-child {
+    //   margin-left: 55%;
+    // }
   }
 }
 </style>
