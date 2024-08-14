@@ -217,6 +217,12 @@ export const $router = [
     component: resolve('pages/new-page/fee.vue')
   },
   {
+    path: '/new-fee2',
+    name: 'new-page/fee2',
+    title: '收費詳情',
+    component: resolve('pages/new-page/new-fee.vue')
+  },
+  {
     path: '/new-home',
     name: 'new-home',
     title: '主页',
