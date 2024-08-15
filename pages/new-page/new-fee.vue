@@ -853,6 +853,7 @@ export default {
     & > div:nth-child(9) {
       width: 132px;
       max-width: 132px;
+      background: #fff;
     }
 
     & > div {
