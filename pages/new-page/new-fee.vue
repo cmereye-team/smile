@@ -7,7 +7,7 @@
       </template>
     </Banner>
     <H2Tag :title="['收費詳情']" />
-    <p class="title_sub">本診所價目清晰，絕無其他額外收費</p>
+    <p class="title_sub">本診所絕無其他額外收費</p>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div></div>
