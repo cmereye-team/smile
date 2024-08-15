@@ -46,11 +46,11 @@ export const $router = [
     component: resolve('pages/post-corrective-care/index.vue'),
   },
   {
-    path: '/fee',
-    name: 'fee',
-    title: '收費詳情',
+    // path: '/fee',
+    // name: 'fee',
+    // title: '收費詳情',
     // component: resolve('pages/fee/index.vue'),
-    component: resolve('pages/new-page/fee.vue')
+    // component: resolve('pages/new-page/new-fee.vue')
   },
   {
     path: '/FreQuestions',
@@ -214,14 +214,14 @@ export const $router = [
     path: '/new-fee',
     name: 'new-page/fee',
     title: '收費詳情',
-    component: resolve('pages/new-page/fee.vue')
-  },
-  {
-    path: '/new-fee2',
-    name: 'new-page/fee2',
-    title: '收費詳情',
     component: resolve('pages/new-page/new-fee.vue')
   },
+  // {
+  //   path: '/new-fee2',
+  //   name: 'new-page/fee2',
+  //   title: '收費詳情',
+  //   component: resolve('pages/new-page/new-fee.vue')
+  // },
   {
     path: '/new-home',
     name: 'new-home',
