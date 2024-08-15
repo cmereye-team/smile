@@ -46,11 +46,11 @@ export const $router = [
     component: resolve('pages/post-corrective-care/index.vue'),
   },
   {
-    // path: '/fee',
-    // name: 'fee',
-    // title: '收費詳情',
-    // component: resolve('pages/fee/index.vue'),
-    // component: resolve('pages/new-page/new-fee.vue')
+    path: '/fee',
+    name: 'fee',
+    title: '收費詳情',
+    component: resolve('pages/fee/index.vue'),
+    component: resolve('pages/new-page/new-fee.vue')
   },
   {
     path: '/FreQuestions',
@@ -210,12 +210,12 @@ export const $router = [
     title: 'ICL 植入式隱形眼鏡',
     component: resolve('pages/new-page/icl.vue')
   },
-  {
-    path: '/new-fee',
-    name: 'new-page/fee',
-    title: '收費詳情',
-    component: resolve('pages/new-page/new-fee.vue')
-  },
+  // {
+  //   path: '/new-fee',
+  //   name: 'new-page/fee',
+  //   title: '收費詳情',
+  //   component: resolve('pages/new-page/new-fee.vue')
+  // },
   // {
   //   path: '/new-fee2',
   //   name: 'new-page/fee2',
