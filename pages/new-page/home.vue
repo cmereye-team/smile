@@ -422,10 +422,7 @@
             <div>
               <p>
                 每一次擘大眼都<br />
-                <span
-                  >懷疑自己係咪唔記<br />
-                  得除Con</span
-                >既感覺
+                <span>懷疑自己係咪唔記得除</span>Con既感覺
               </p>
             </div>
             <div>
@@ -450,15 +447,15 @@
           </div>
           <div>
             <div>
-              <p><span>唔駛再戴Con/眼鏡</span><br />演戲更自在！</p>
+              <p><span>做完SMILE Pro</span><br />上舞台都唔會驚光</p>
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/04/0fbe5a8b2ffa83de.png"
+                src="https://static.cmereye.com/imgs/2024/08/ac1afdd9e25b4791.png"
                 alt=""
               />
             </div>
-            <div>唐浩然 Jacky</div>
+            <div>細貓</div>
           </div>
           <div>
             <div>

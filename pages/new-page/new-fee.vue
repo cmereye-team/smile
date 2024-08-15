@@ -7,6 +7,7 @@
       </template>
     </Banner>
     <H2Tag :title="['收費詳情']" />
+    <p class="title_sub">本診所價目清晰，絕無其他額外收費</p>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div></div>
@@ -32,19 +33,19 @@
           <div>限時優惠 由即日起</div>
         </div>
         <div>
-          <div>$12,000^</div>
+          <div>$12,000<sup>^</sup></div>
         </div>
         <div>
-          <div>$16,500^</div>
+          <div>$16,500<sup>^</sup></div>
         </div>
         <div>
           <div>不帶散光</div>
-          <div>$38,000^</div>
+          <div>$38,000<sup>^^</sup></div>
           <div>帶散光</div>
-          <div>$42,000^</div>
+          <div>$42,000<sup>^^</sup></div>
         </div>
         <div>
-          <div>$12,000^</div>
+          <div>$12,000<sup>^</sup></div>
         </div>
         <div>
           <div>價錢(雙眼)</div>
@@ -54,16 +55,16 @@
           <div>$19,000^</div>
         </div>
         <div>
-          <div>$26,000^</div>
+          <div>$26,000<sup>^</sup></div>
         </div>
         <div>
           <div>不帶散光</div>
-          <div>$64,000</div>
+          <div>$64,000<sup>^^</sup></div>
           <div>帶散光</div>
-          <div>$68,000</div>
+          <div>$68,000<sup>^^</sup></div>
         </div>
         <div>
-          <div>$19,000^</div>
+          <div>$19,000<sup>^</sup></div>
         </div>
         <div>
           <div>術前檢查費用</div>
@@ -139,19 +140,40 @@
           <div>術後覆診</div>
         </div>
         <div>
-          <div>3次#</div>
+          <div>3次<sup>#</sup></div>
         </div>
         <div>
-          <div>5次#</div>
+          <div>5次<sup>#</sup></div>
         </div>
         <div>
-          <div>5次#</div>
+          <div>5次<sup>#</sup></div>
         </div>
         <div>
-          <div>3次#</div>
+          <div>3次<sup>#</sup></div>
         </div>
         <div>
-          <div>增進手術##</div>
+          <div>增進手術</div>
+        </div>
+        <div>
+          <div>
+            <img src="../../asset/image/free/blue.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="../../asset/image/free/blue.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="line_green"><span></span></div>
+        </div>
+        <div>
+          <div>
+            <img src="../../asset/image/free/blue.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div>無限視光檢查</div>
         </div>
         <div>
           <div>
@@ -173,30 +195,7 @@
             <img src="../../asset/image/free/blue.svg" alt="" />
           </div>
         </div>
-        <div>
-          <div>無限視光檢查#</div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/green.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
-          </div>
-        </div>
-        <div>
+        <!-- <div>
           <div>手術當日藥費</div>
         </div>
         <div>
@@ -219,7 +218,7 @@
           <div>
             <img src="../../asset/image/free/blue.svg" alt="" />
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="clear_vision">
         <div></div>
@@ -234,8 +233,8 @@
           <span>(不帶散光)</span>
         </div>
         <div>
-          <span>$20,000 - $35,000</span>
-          <span>(不帶散光)</span>
+          <span>$23,000 - $41,000</span>
+          <span>(帶散光)</span>
         </div>
         <div>
           <span>多焦點</span>
@@ -243,12 +242,12 @@
           <span>(單眼)</span>
         </div>
         <div>
-          <span>$20,000 - $35,000</span>
+          <span>$26,000 - $51,000</span>
           <span>(不帶散光)</span>
         </div>
         <div>
-          <span>$20,000 - $35,000</span>
-          <span>(不帶散光)</span>
+          <span>$31,000 - $51,000</span>
+          <span>(帶散光)</span>
         </div>
         <div>術前檢查費用</div>
         <div>$650</div>
@@ -259,23 +258,29 @@
     </div>
     <div class="ellipse_explain_bg">
       <div class="ellipse_explain">
+        <p>以上為非指定醫生價錢</p>
         <p>
-          ^ 指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期 1
-          以上為非指定醫生價錢
-        </p>
-        <p>
-          2 矯視費用已包括術前檢查費用 $100；
-          <br />&nbsp;&nbsp;&nbsp;若沒有預約進行矯視，需另外繳付術前檢查費用
-        </p>
-        <br />
-        <p>
+          ^指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期<br />
+          矯視費用已包括術前檢查費用
+          $100(若沒有預約進行矯視，需另外繳付術前檢查費用)<br />
           #需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費
         </p>
+        <br />
         <p>
-          ##需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費
+          SMILE、SMILE Pro微笑激光矯視及LASIK
+          激光矯視/TPRK經上皮激光角膜切削手術的增進手術需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。
         </p>
         <br />
-        <p>以上為非指定醫生價錢</p>
+        <p>
+          SMILE微笑激光矯視、  LASIK
+          激光矯視/TPRK經上皮激光角膜切削手術及ICL植入式隱形眼鏡的無限視光檢查需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費；SMILE
+          Pro微笑激光矯視的無限視光檢查需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。
+        </p>
+        <p>
+          SMILE、SMILE Pro微笑激光矯視及LASIK
+          激光矯視/TPRK經上皮激光角膜切削手術當日藥費已包括在矯視套餐收費內，
+          ICL植入式隱形眼鏡的藥費需另外收費。
+        </p>
       </div>
     </div>
     <businessHours />
@@ -335,9 +340,24 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  .fee {
+    :deep(h2) {
+      margin-bottom: 20px;
+    }
+  }
   .table_new_fee {
     max-width: 1270px;
-    margin: 20px auto 95px;
+    margin: 85px auto 95px;
+  }
+  .title_sub {
+    color: #6d6e71;
+    text-align: center;
+    font-family: "Noto Sans HK";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 5px;
   }
   .table_new_fee_box {
     display: grid;
@@ -503,13 +523,33 @@ export default {
       font-style: normal;
       font-weight: 400;
       line-height: 40px;
+      width: 525px;
+      max-width: 525px;
+    }
+    & > div:nth-child(1),
+    & > div:nth-child(3),
+    & > div:nth-child(6),
+    & > div:nth-child(9) {
+      background: #fff;
+      width: 209px;
+      max-width: 209px;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px; /* 140% */
+      letter-spacing: 4px;
     }
   }
   .clear_vision > div:nth-child(2),
   .clear_vision > div:nth-child(10) {
+    width: 100%;
+    max-width: 100%;
     grid-column: span 2;
   }
   .line_green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & > span {
       width: 28px;
       height: 3px;
@@ -518,6 +558,9 @@ export default {
     }
   }
   .line_blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & > span {
       width: 28px;
       height: 3px;
@@ -605,6 +648,16 @@ export default {
   .table_new_fee {
     overflow: scroll;
     margin: 0 20px 30px;
+  }
+  .title_sub {
+    color: #6d6e71;
+    text-align: center;
+    font-family: "Noto Sans HK";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 4px;
   }
   .table_new_fee::-webkit-scrollbar {
     width: 0; /* 对于垂直滚动条 */
@@ -812,6 +865,9 @@ export default {
     max-width: 100%;
   }
   .line_green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & > span {
       width: 28px;
       height: 3px;
@@ -820,6 +876,9 @@ export default {
     }
   }
   .line_blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & > span {
       width: 28px;
       height: 3px;
