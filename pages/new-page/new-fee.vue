@@ -6,8 +6,10 @@
         <div class="banner-img"></div>
       </template>
     </Banner>
-    <H2Tag :title="['收費詳情']" />
-    <p class="title_sub">本診所絕無其他額外收費</p>
+    <div class="new_title_style">
+      <H2Tag :title="['收費詳情']" />
+      <p class="title_sub">本診所絕無其他額外收費</p>
+    </div>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div></div>
@@ -349,6 +351,16 @@ export default {
   .table_new_fee {
     max-width: 1270px;
     margin: 85px auto 95px;
+  }
+  .new_title_style {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 130px;
+  }
+  .fee-table-container{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 200px;
   }
   .title_sub {
     color: #6d6e71;
