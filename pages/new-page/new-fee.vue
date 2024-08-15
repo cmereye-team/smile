@@ -276,6 +276,7 @@
           激光矯視/TPRK經上皮激光角膜切削手術及ICL植入式隱形眼鏡的無限視光檢查需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費；SMILE
           Pro微笑激光矯視的無限視光檢查需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。
         </p>
+        <br />
         <p>
           SMILE、SMILE Pro微笑激光矯視及LASIK
           激光矯視/TPRK經上皮激光角膜切削手術當日藥費已包括在矯視套餐收費內，
@@ -887,7 +888,7 @@ export default {
     }
   }
   .ellipse_explain_bg {
-    background: url("https://static.cmereye.com/imgs/2024/08/5ab20bf23c624b99.png")
+    background: url("https://static.cmereye.com/imgs/2024/08/523108db1c129793.png")
       no-repeat;
     background-size: 100% 100%;
     // padding: 75px 0;
