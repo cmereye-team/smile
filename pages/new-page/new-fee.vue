@@ -256,7 +256,7 @@
       </div>
     </div>
     <div class="fee-table-container">
-      <a class="meal-btn" target="_blank">立即預約</a>
+      <a class="meal-btn" target="_blank" href="https://api.whatsapp.com/send/?phone=85260610511&text&type=phone_number&app_absent=0">立即預約</a>
     </div>
     <div class="ellipse_explain_bg">
       <div class="ellipse_explain">
@@ -357,7 +357,7 @@ export default {
     margin: 0 auto;
     padding-left: 130px;
   }
-  .fee-table-container{
+  .fee-table-container {
     max-width: 1270px;
     margin: 0 auto;
     padding-left: 200px;
@@ -653,7 +653,7 @@ export default {
       width: max-content;
       border-radius: 100px;
       display: block;
-      padding: 12px 53px;
+      padding: 12px 53px 14px 53px;
     }
   }
 }
@@ -981,7 +981,7 @@ export default {
       letter-spacing: 1px;
       background: #4570b6;
       border-radius: 100px;
-      padding: 5px 30px;
+      padding: 5px 30px 6px 30px;
     }
   }
 }
