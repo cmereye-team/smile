@@ -91,7 +91,7 @@
           <div>1次</div>
         </div>
         <div>
-          <div class="line_blue"><span></span></div>
+          <div class="line_green"><span></span></div>
         </div>
         <div>
           <div>1次</div>
@@ -101,7 +101,7 @@
           <div>彩光護理</div>
         </div>
         <div>
-          <div class="line_green"><span></span></div>
+          <div class="line_blue"><span></span></div>
         </div>
         <div>
           <div>1次</div>
@@ -646,9 +646,14 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  .fee {
+    :deep(h2) {
+      margin-bottom: 15px;
+    }
+  }
   .table_new_fee {
     overflow: scroll;
-    margin: 0 20px 30px;
+    margin: 50px 20px 30px;
   }
   .title_sub {
     color: #6d6e71;
