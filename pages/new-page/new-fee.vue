@@ -653,7 +653,7 @@ export default {
       width: max-content;
       border-radius: 100px;
       display: block;
-      padding: 12px 53px 14px 59px;
+      padding: 12px 53px 14px 62px;
     }
   }
 }
