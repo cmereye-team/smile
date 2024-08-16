@@ -12,192 +12,203 @@
     </div>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
-        <div></div>
-        <div>
-          <div>SMILE</div>
-          <div>微笑激光矯視</div>
-        </div>
-        <div>
-          <div>SMILE Pro</div>
-          <div>微笑激光矯視</div>
-        </div>
-        <div>
-          <div>ICL</div>
-          <div>植入式隱形眼鏡</div>
-        </div>
-        <div>
-          <div>LASIK激光矯視/</div>
-          <div>TPRK經上皮激光</div>
-          <div>角膜切削手術</div>
-        </div>
-        <div>
-          <div>價錢(單眼)</div>
-          <div>限時優惠 由即日起</div>
-        </div>
-        <div>
-          <div>$12,000<sup>^</sup></div>
-        </div>
-        <div>
-          <div>$16,500<sup>^</sup></div>
-        </div>
-        <div>
-          <div>不帶散光</div>
-          <div>$38,000<sup>^^</sup></div>
-          <div>帶散光</div>
-          <div>$42,000<sup>^^</sup></div>
-        </div>
-        <div>
-          <div>$12,000<sup>^</sup></div>
-        </div>
-        <div>
-          <div>價錢(雙眼)</div>
-          <div>限時優惠 由即日起</div>
-        </div>
-        <div>
-          <div>$19,000^</div>
-        </div>
-        <div>
-          <div>$26,000<sup>^</sup></div>
-        </div>
-        <div>
-          <div>不帶散光</div>
-          <div>$64,000<sup>^^</sup></div>
-          <div>帶散光</div>
-          <div>$68,000<sup>^^</sup></div>
-        </div>
-        <div>
-          <div>$19,000<sup>^</sup></div>
-        </div>
-        <div>
-          <div>術前檢查費用</div>
-        </div>
-        <div>
-          <div>$100</div>
-        </div>
-        <div>
-          <div>$100</div>
-        </div>
-        <div>
-          <div>$500</div>
-        </div>
-        <div>
-          <div>$100</div>
-        </div>
-        <div>
-          <div>眼睛水潤護理</div>
-        </div>
-        <div>
-          <div>1次</div>
-        </div>
-        <div>
-          <div>1次</div>
-        </div>
-        <div>
-          <div class="line_green"><span></span></div>
-        </div>
-        <div>
-          <div>1次</div>
-        </div>
-        <div>
-          <div>術後眼部</div>
-          <div>彩光護理</div>
-        </div>
-        <div>
-          <div class="line_blue"><span></span></div>
-        </div>
-        <div>
-          <div>1次</div>
-        </div>
-        <div>
-          <div class="line_green"><span></span></div>
-        </div>
-        <div>
-          <div class="line_blue"><span></span></div>
-        </div>
-        <div>
-          <div>眼科專科醫生</div>
-          <div>檢查</div>
-        </div>
-        <div>
+        <div class="table_left">
+          <div></div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>價錢(單眼)</div>
+            <div>限時優惠 由即日起</div>
+          </div>
+          <div>
+            <div>價錢(雙眼)</div>
+            <div>限時優惠 由即日起</div>
+          </div>
+          <div>
+            <div>術前檢查費用</div>
+          </div>
+          <div>
+            <div>眼睛水潤護理</div>
+          </div>
+          <div>
+            <div>術後眼部</div>
+            <div>彩光護理</div>
+          </div>
+          <div>
+            <div>眼科專科醫生</div>
+            <div>檢查</div>
+          </div>
+          <div>
+            <div>術後覆診</div>
+          </div>
+          <div>
+            <div>增進手術</div>
+          </div>
+          <div>
+            <div>無限視光檢查</div>
           </div>
         </div>
-        <div>
+        <div class="table_right">
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>SMILE</div>
+            <div>微笑激光矯視</div>
           </div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/green.svg" alt="" />
+            <div>SMILE Pro</div>
+            <div>微笑激光矯視</div>
           </div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>ICL</div>
+            <div>植入式隱形眼鏡</div>
           </div>
-        </div>
-        <div>
-          <div>術後覆診</div>
-        </div>
-        <div>
-          <div>3次<sup>#</sup></div>
-        </div>
-        <div>
-          <div>5次<sup>#</sup></div>
-        </div>
-        <div>
-          <div>5次<sup>#</sup></div>
-        </div>
-        <div>
-          <div>3次<sup>#</sup></div>
-        </div>
-        <div>
-          <div>增進手術</div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>LASIK激光矯視/</div>
+            <div>TPRK經上皮激光</div>
+            <div>角膜切削手術</div>
           </div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>$12,000<sup>^</sup></div>
           </div>
-        </div>
-        <div>
-          <div class="line_green"><span></span></div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>$16,500<sup>^</sup></div>
           </div>
-        </div>
-        <div>
-          <div>無限視光檢查</div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>不帶散光</div>
+            <div>$38,000<sup>^^</sup></div>
+            <div>帶散光</div>
+            <div>$42,000<sup>^^</sup></div>
           </div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>$12,000<sup>^</sup></div>
           </div>
-        </div>
-        <div>
+
           <div>
-            <img src="../../asset/image/free/green.svg" alt="" />
+            <div>$19,000^</div>
           </div>
-        </div>
-        <div>
           <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
+            <div>$26,000<sup>^</sup></div>
           </div>
-        </div>
-        <!-- <div>
+          <div>
+            <div>不帶散光</div>
+            <div>$64,000<sup>^^</sup></div>
+            <div>帶散光</div>
+            <div>$68,000<sup>^^</sup></div>
+          </div>
+          <div>
+            <div>$19,000<sup>^</sup></div>
+          </div>
+
+          <div>
+            <div>$100</div>
+          </div>
+          <div>
+            <div>$100</div>
+          </div>
+          <div>
+            <div>$500</div>
+          </div>
+          <div>
+            <div>$100</div>
+          </div>
+
+          <div>
+            <div>1次</div>
+          </div>
+          <div>
+            <div>1次</div>
+          </div>
+          <div>
+            <div class="line_green"><span></span></div>
+          </div>
+          <div>
+            <div>1次</div>
+          </div>
+
+          <div>
+            <div class="line_blue"><span></span></div>
+          </div>
+          <div>
+            <div>1次</div>
+          </div>
+          <div>
+            <div class="line_green"><span></span></div>
+          </div>
+          <div>
+            <div class="line_blue"><span></span></div>
+          </div>
+
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/green.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div>3次<sup>#</sup></div>
+          </div>
+          <div>
+            <div>5次<sup>#</sup></div>
+          </div>
+          <div>
+            <div>5次<sup>#</sup></div>
+          </div>
+          <div>
+            <div>3次<sup>#</sup></div>
+          </div>
+
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div class="line_green"><span></span></div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/green.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <!-- <div>
           <div>手術當日藥費</div>
         </div>
         <div>
@@ -221,42 +232,52 @@
             <img src="../../asset/image/free/blue.svg" alt="" />
           </div>
         </div> -->
+        </div>
       </div>
       <div class="clear_vision">
-        <div></div>
-        <div>Clear-Vision(老花手術)</div>
-        <div>
-          <span>單焦點</span>
-          <span>人工晶體價錢</span>
-          <span>(單眼)</span>
+        <div class="clear_vision_left">
+          <div></div>
+          <div>
+            <span>單焦點</span>
+            <span>人工晶體價錢</span>
+            <span>(單眼)</span>
+          </div>
+          <div>
+            <span>多焦點</span>
+            <span>人工晶體價錢</span>
+            <span>(單眼)</span>
+          </div>
+          <div>術前檢查費用</div>
         </div>
-        <div>
-          <span>$20,000 - $35,000</span>
-          <span>(不帶散光)</span>
+        <div class="clear_vision_right">
+          <div>Clear-Vision(老花矯視)</div>
+          <div>
+            <span>$20,000 - $35,000</span>
+            <span>(不帶散光)</span>
+          </div>
+          <div>
+            <span>$23,000 - $41,000</span>
+            <span>(帶散光)</span>
+          </div>
+          <div>
+            <span>$26,000 - $51,000</span>
+            <span>(不帶散光)</span>
+          </div>
+          <div>
+            <span>$31,000 - $51,000</span>
+            <span>(帶散光)</span>
+          </div>
+          <div>$650</div>
         </div>
-        <div>
-          <span>$23,000 - $41,000</span>
-          <span>(帶散光)</span>
-        </div>
-        <div>
-          <span>多焦點</span>
-          <span>人工晶體價錢</span>
-          <span>(單眼)</span>
-        </div>
-        <div>
-          <span>$26,000 - $51,000</span>
-          <span>(不帶散光)</span>
-        </div>
-        <div>
-          <span>$31,000 - $51,000</span>
-          <span>(帶散光)</span>
-        </div>
-        <div>術前檢查費用</div>
-        <div>$650</div>
       </div>
     </div>
     <div class="fee-table-container">
-      <a class="meal-btn" target="_blank" href="https://api.whatsapp.com/send/?phone=85260610511&text&type=phone_number&app_absent=0">立即預約</a>
+      <a
+        class="meal-btn"
+        target="_blank"
+        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-14)%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96"
+        >立即預約</a
+      >
     </div>
     <div class="ellipse_explain_bg">
       <div class="ellipse_explain">
@@ -373,9 +394,28 @@ export default {
     letter-spacing: 5px;
   }
   .table_new_fee_box {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 9px 7px;
+    display: flex;
+    gap: 0 7px;
+  }
+  .table_left {
+    display: flex;
+    flex-direction: column;
+    gap: 9px 0;
+    width: 209px;
+    max-width: 209px;
+    & > div:nth-child(1) {
+      margin-top: 3px;
+      height: 150.5px;
+    }
+    & > div:nth-child(2),
+    & > div:nth-child(3) {
+      height: 180.5px;
+    }
+    & > div:nth-child(4),
+    & > div:nth-child(5) {
+      height: 70.5px;
+    }
+
     & > div {
       border-radius: 14px;
       overflow: hidden;
@@ -384,8 +424,7 @@ export default {
       justify-content: center;
       align-items: center;
       padding: 14px 0;
-    }
-    & > div:nth-child(5n + 1) {
+      margin-top: 3px;
       & > div {
         color: #4570b6;
         text-align: center;
@@ -397,8 +436,8 @@ export default {
         letter-spacing: 5px;
       }
     }
-    & > div:nth-child(6),
-    & > div:nth-child(11) {
+    & > div:nth-child(2),
+    & > div:nth-child(3) {
       & > div:nth-child(2) {
         color: #b64545;
         text-align: center;
@@ -410,7 +449,65 @@ export default {
         letter-spacing: 2px;
       }
     }
-    & > div:nth-child(5n + 2) {
+  }
+  .table_right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px 7px;
+
+    & > div {
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 0;
+    }
+    & > div:nth-child(1) {
+      border-radius: 25px;
+      background: #d7eef6;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px; /* 116.667% */
+      letter-spacing: 6px;
+    }
+    & > div:nth-child(2),
+    & > div:nth-child(4) {
+      border-radius: 25px;
+      background: #719ad8;
+    }
+    & > div:nth-child(3) {
+      border-radius: 25px;
+      background: #86d2c4;
+    }
+    & > div:nth-child(2),
+    & > div:nth-child(4),
+    & > div:nth-child(3) {
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px; /* 116.667% */
+      letter-spacing: 5px;
+    }
+    & > div:nth-child(21),
+    & > div:nth-child(22),
+    & > div:nth-child(23),
+    & > div:nth-child(24),
+    & > div:nth-child(25),
+    & > div:nth-child(26),
+    & > div:nth-child(27),
+    & > div:nth-child(28) {
+      height: 98px;
+    }
+    & > div:nth-child(4n + 1) {
       border-radius: 14px;
       background: #fafcfc;
       width: 240px;
@@ -424,7 +521,7 @@ export default {
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
-    & > div:nth-child(5n + 3) {
+    & > div:nth-child(4n + 2) {
       border-radius: 14px;
       background: #f1f5fc;
       width: 240px;
@@ -438,7 +535,7 @@ export default {
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
-    & > div:nth-child(5n + 4) {
+    & > div:nth-child(4n + 3) {
       border-radius: 14px;
       background: #fafcfc;
       width: 277px;
@@ -452,7 +549,7 @@ export default {
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
-    & > div:nth-child(5n + 5) {
+    & > div:nth-child(4n + 4) {
       border-radius: 14px;
       background: #f1f5fc;
       width: 277px;
@@ -466,46 +563,55 @@ export default {
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
-    & > div:nth-child(2) {
-      border-radius: 25px;
-      background: #d7eef6;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 35px; /* 116.667% */
-      letter-spacing: 6px;
-    }
-    & > div:nth-child(3),
-    & > div:nth-child(5) {
-      border-radius: 25px;
-      background: #719ad8;
-    }
-    & > div:nth-child(4) {
-      border-radius: 25px;
-      background: #86d2c4;
-    }
-    & > div:nth-child(3),
-    & > div:nth-child(5),
-    & > div:nth-child(4) {
-      color: #fff;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 35px; /* 116.667% */
-      letter-spacing: 5px;
-    }
   }
   .clear_vision {
     margin-top: 8px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 8px 6px;
-    & > div:nth-child(2) {
+  }
+  .clear_vision_left {
+    width: 209px;
+    & > div:nth-child(1) {
+      background: transparent;
+      margin-bottom: 8px;
+      height: 62px;
+    }
+    & > div:nth-child(2),
+    & > div:nth-child(3) {
+      height: 139px;
+    }
+    & > div:nth-child(4) {
+      height: 67px;
+    }
+    & > div {
+      background: #fff;
+      width: 209px;
+      max-width: 209px;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px; /* 140% */
+      letter-spacing: 4px;
+
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px; /* 140% */
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .clear_vision_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 6px;
+    & > div:nth-child(1) {
       border-radius: 10px;
       background: #cca9dd;
       margin-bottom: 8px;
@@ -517,9 +623,6 @@ export default {
       font-weight: 500;
       line-height: 30px; /* 100% */
       letter-spacing: 4.5px;
-    }
-    & > div:nth-child(1) {
-      background: transparent;
     }
     & > div {
       border-radius: 14px;
@@ -539,26 +642,15 @@ export default {
       width: 525px;
       max-width: 525px;
     }
-    & > div:nth-child(1),
-    & > div:nth-child(3),
-    & > div:nth-child(6),
-    & > div:nth-child(9) {
-      background: #fff;
-      width: 209px;
-      max-width: 209px;
-      font-size: 25px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 35px; /* 140% */
-      letter-spacing: 4px;
-    }
   }
-  .clear_vision > div:nth-child(2),
-  .clear_vision > div:nth-child(10) {
+
+  .clear_vision_right > div:nth-child(1),
+  .clear_vision_right > div:nth-child(6) {
     width: 100%;
     max-width: 100%;
     grid-column: span 2;
   }
+
   .line_green {
     display: flex;
     align-items: center;
@@ -665,7 +757,7 @@ export default {
   }
   .table_new_fee {
     overflow: scroll;
-    margin: 50px 20px 30px;
+    margin: 50px 12px 30px;
   }
   .title_sub {
     color: #6d6e71;
@@ -689,15 +781,41 @@ export default {
   }
 
   .table_new_fee_box {
-    width: 724.332px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 9px 7px;
-    margin-left: 20px;
-    margin-right: 20px;
-    img {
-      width: 20px;
-      height: 20px;
+    display: flex;
+    gap: 0 4px;
+    width: 582px;
+  }
+  .table_left {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 3.66px 3.65px;
+    width: 134px;
+    min-width: 134px;
+    background: #fff;
+    & > div:nth-child(1) {
+      margin-top: 0;
+      height: 90.42px;
+    }
+    & > div:nth-child(2),
+    & > div:nth-child(3) {
+      height: 103.4px;
+    }
+    & > div:nth-child(4),
+    & > div:nth-child(5),
+    & > div:nth-child(8) {
+      height: 40.8px;
+    }
+    & > div:nth-child(6),
+    & > div:nth-child(7) {
+      height: 78px;
+    }
+
+    & > div:nth-child(10),
+    & > div:nth-child(9) {
+      height: 24px;
     }
     & > div {
       border-radius: 14px;
@@ -706,35 +824,58 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 5px 0;
-    }
-    & > div:nth-child(5n + 1) {
-      width: 134px;
+      padding: 0 0;
+      margin-bottom: 0;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 218.75% */
+      letter-spacing: 3.2px;
       & > div {
-        color: #4570b6;
-        text-align: center;
-        font-family: "Noto Sans HK";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px; /* 156.25% */
-        letter-spacing: 3.2px;
+        display: inline;
+        line-height: 1;
+      }
+      & > div:nth-child(1) {
+        margin-bottom: 3px;
       }
     }
-    & > div:nth-child(6),
-    & > div:nth-child(11) {
+    & > div:nth-child(2),
+    & > div:nth-child(3) {
       & > div:nth-child(2) {
         color: #b64545;
         text-align: center;
         font-family: "Noto Sans HK";
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 350;
-        line-height: 25px; /* 208.333% */
-        letter-spacing: 1.2px;
+        line-height: 20px; /* 285.714% */
+        letter-spacing: 1.4px;
       }
     }
-    & > div:nth-child(5n + 2) {
+  }
+  .table_right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.66px 3.65px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    & > div {
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0;
+    }
+    & > div:nth-child(4n + 1) {
       border-radius: 14px;
       background: #fafcfc;
       width: 132.348px;
@@ -748,7 +889,7 @@ export default {
       line-height: 40px; /* 250% */
       letter-spacing: 2.4px;
     }
-    & > div:nth-child(5n + 3) {
+    & > div:nth-child(4n + 2) {
       border-radius: 14px;
       background: #f1f5fc;
       width: 132.348px;
@@ -762,7 +903,7 @@ export default {
       line-height: 22px; /* 250% */
       letter-spacing: 2.4px;
     }
-    & > div:nth-child(5n + 4) {
+    & > div:nth-child(4n + 3) {
       border-radius: 14px;
       background: #fafcfc;
       width: 152.752px;
@@ -776,7 +917,7 @@ export default {
       line-height: 22px; /* 250% */
       letter-spacing: 2.4px;
     }
-    & > div:nth-child(5n + 5) {
+    & > div:nth-child(4n + 4) {
       border-radius: 14px;
       background: #f1f5fc;
       width: 152.752px;
@@ -790,7 +931,8 @@ export default {
       line-height: 40px; /* 250% */
       letter-spacing: 2.4px;
     }
-    & > div:nth-child(2) {
+
+    & > div:nth-child(1) {
       border-radius: 12px;
       background: #d7eef6;
       color: #4570b6;
@@ -801,19 +943,20 @@ export default {
       font-weight: 700;
       line-height: 25px; /* 156.25% */
       letter-spacing: 2.4px;
+      height: 90.42px;
     }
-    & > div:nth-child(3),
-    & > div:nth-child(5) {
+    & > div:nth-child(2),
+    & > div:nth-child(4) {
       border-radius: 12px;
       background: #719ad8;
     }
-    & > div:nth-child(4) {
+    & > div:nth-child(3) {
       border-radius: 12px;
       background: #86d2c4;
     }
-    & > div:nth-child(3),
-    & > div:nth-child(5),
-    & > div:nth-child(4) {
+    & > div:nth-child(2),
+    & > div:nth-child(4),
+    & > div:nth-child(3) {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
@@ -822,16 +965,82 @@ export default {
       font-weight: 700;
       line-height: 25px; /* 156.25% */
       letter-spacing: 2.4px;
+      height: 90.42px;
+    }
+
+    & > div:nth-child(5),
+    & > div:nth-child(6),
+    & > div:nth-child(7),
+    & > div:nth-child(8),
+    & > div:nth-child(9),
+    & > div:nth-child(10),
+    & > div:nth-child(11),
+    & > div:nth-child(12) {
+      height: 103.4px;
+    }
+
+    & > div:nth-child(21),
+    & > div:nth-child(22),
+    & > div:nth-child(23),
+    & > div:nth-child(24),
+    & > div:nth-child(25),
+    & > div:nth-child(26),
+    & > div:nth-child(27),
+    & > div:nth-child(28) {
+      height: 78px;
+    }
+    & > div:nth-child(n + 33) {
+      height: 24px;
     }
   }
+
   .clear_vision {
-    margin: 20px;
-    width: 724.332px;
-    margin-top: 4px;
+    margin-top: 8px;
+    display: flex;
+    gap: 8px 6px;
+    width: 582px;
+  }
+  .clear_vision_left {
+    position: sticky;
+    left: 0;
+    width: 134px;
+    z-index: 10;
+    background: #fff;
+    & > div:nth-child(1) {
+      background: transparent;
+      margin-bottom: 8px;
+      height: 42px;
+    }
+    & > div:nth-child(2),
+    & > div:nth-child(3) {
+      height: 85.88px;
+    }
+    & > div:nth-child(4) {
+      height: 65px;
+    }
+    & > div {
+      width: 132px;
+      max-width: 132px;
+
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; /* 156.25% */
+      letter-spacing: 2.4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .clear_vision_right {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 4.35px 3.5px;
-    & > div:nth-child(2) {
+    & > div:nth-child(1) {
       border-radius: 10px;
       background: #cca9dd;
       margin-bottom: 4px;
@@ -843,19 +1052,8 @@ export default {
       font-weight: 500;
       line-height: 30px; /* 187.5% */
       letter-spacing: 2.4px;
+      height: 42px;
     }
-    & > div:nth-child(1) {
-      background: transparent;
-    }
-    & > div:nth-child(1),
-    & > div:nth-child(3),
-    & > div:nth-child(6),
-    & > div:nth-child(9) {
-      width: 132px;
-      max-width: 132px;
-      background: #fff;
-    }
-
     & > div {
       width: 289.512px;
       max-width: 289.512px;
@@ -875,9 +1073,17 @@ export default {
       line-height: 24px; /* 250% */
       letter-spacing: 2.4px;
     }
+    // 2 - 6
+    & > div:nth-child(2),
+    & > div:nth-child(3),
+    & > div:nth-child(4),
+    & > div:nth-child(5),
+    & > div:nth-child(6) {
+      height: 85.88px;
+    }
   }
-  .clear_vision > div:nth-child(2),
-  .clear_vision > div:nth-child(10) {
+  .clear_vision_right > div:nth-child(1),
+  .clear_vision_right > div:nth-child(6) {
     // 独占两列
     grid-column: span 2;
     width: 100%;
