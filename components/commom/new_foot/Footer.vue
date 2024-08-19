@@ -43,7 +43,10 @@
             </a>
           </div>
           <div class="iocn pc_icon">
-            <a href="https://www.instagram.com/cmer_smile/?hl=en" target="_blank">
+            <a
+              href="https://www.instagram.com/cmer_smile/?hl=en"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -67,7 +70,10 @@
             </a>
           </div>
           <div class="iocn">
-            <a href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg?view_as=public" target="_blank">
+            <a
+              href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg?view_as=public"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -285,6 +291,10 @@ export default {
             link: "/smilePro",
           },
           {
+            child_item: this.$t("home.headers.orthopedicServicesChild_4"),
+            link: "/vision-correction-icl",
+          },
+          {
             child_item: this.$t("home.headers.orthopedicServicesChild_1"),
             link: "/vision-correction/relex-smile",
           },
@@ -296,10 +306,6 @@ export default {
           //   child_item: this.$t("home.headers.orthopedicServicesChild_3"),
           //   link: "/vision-correction-lasik",
           // },
-          {
-            child_item: this.$t("home.headers.orthopedicServicesChild_4"),
-            link: "/vision-correction-icl",
-          },
         ],
       },
       diagnosisInstructionsList: {

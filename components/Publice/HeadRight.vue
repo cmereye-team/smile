@@ -121,6 +121,11 @@ export default {
               name: "SMILE Pro微笑激光矯視",
             },
             {
+              id: 5,
+              path: "/vision-correction-icl",
+              name: "ICL植入式隱形眼鏡",
+            },
+            {
               id: 1,
               path: "/vision-correction/relex-smile",
               name: "SMILE 微笑激光矯視",
@@ -134,11 +139,6 @@ export default {
               id: 4,
               path: "/vision-correction-lasik",
               name: "LASIK 激光矯視",
-            },
-            {
-              id: 5,
-              path: "/vision-correction-icl",
-              name: "ICL植入式隱形眼鏡",
             },
           ],
         },

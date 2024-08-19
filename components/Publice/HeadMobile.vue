@@ -90,7 +90,7 @@
               :pcOrMobile="'mobile'"
               :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'"
             />
-            
+
             <DetailOption
               :group="reservationService"
               :pcOrMobile="'mobile'"
@@ -115,11 +115,7 @@
       <div class="mb_menu_footer">
         <div>
           <nuxt-link :to="localePath('/')">
-            <img
-              class="foot_logo"
-              src="@/asset/image/common/Logo.svg"
-              alt=""
-            />
+            <img class="foot_logo" src="@/asset/image/common/Logo.svg" alt="" />
           </nuxt-link>
           <div>
             <a href="https://www.facebook.com/CMER.SMILE"
@@ -194,6 +190,10 @@ export default {
             link: "/smilePro",
           },
           {
+            child_item: this.$t("home.headers.orthopedicServicesChild_4"),
+            link: "/vision-correction-icl",
+          },
+          {
             child_item: this.$t("home.headers.orthopedicServicesChild_1"),
             link: "/vision-correction/relex-smile",
           },
@@ -204,10 +204,6 @@ export default {
           {
             child_item: this.$t("home.headers.orthopedicServicesChild_3"),
             link: "/vision-correction-lasik",
-          },
-          {
-            child_item: this.$t("home.headers.orthopedicServicesChild_4"),
-            link: "/vision-correction-icl",
           },
         ],
       },
