@@ -6,7 +6,7 @@
       <template #banner>
         <div class="banner-img">
           <p>LASIK<br v-if="isMobile" />激光矯視</p>
-          <p>Laser-Assisted<br v-if="isMobile" />in Situ Keratomileusis</p>
+          <p>Laser-Assisted <br v-if="isMobile" />in Situ Keratomileusis</p>
         </div>
       </template>
     </Banner>

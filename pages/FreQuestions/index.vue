@@ -3,9 +3,9 @@
     <Header />
     <Navbar />
     <firstProblem />
-    <secondProblem />
+    <!-- <secondProblem />
     <thirtProblem />
-    <fourProblem />
+    <fourProblem /> -->
     <Footer />
     <footers />
   </div>
