@@ -865,6 +865,12 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .vision-max-width {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .smile-pro-btn {
     margin-top: 25px;

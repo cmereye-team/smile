@@ -1204,6 +1204,7 @@ export default {
         }
       }
       & > a:nth-child(1) {
+        margin: 0 2.765vw;
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             span {
@@ -1217,7 +1218,7 @@ export default {
         }
       }
       & > a:nth-child(2) {
-        margin: 0 128px;
+        margin: 0 2.765vw;
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             position: relative;
@@ -1244,6 +1245,7 @@ export default {
       & > a:nth-child(4) {
         margin-right: 64px;
         margin-top: 12px;
+        margin-left: 64px;
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             span {
@@ -1257,7 +1259,7 @@ export default {
         }
       }
       & > a:nth-child(5) {
-        margin-left: 64px;
+        margin-left: 0;
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             span {
@@ -1688,6 +1690,30 @@ export default {
     max-width: 1270px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .home-referral-service,
+  .home-referral {
+    max-width: 99.21875vw !important;
+  }
+  .home-contact-us {
+    max-width: 99.21875vw !important;
+  }
+  .home-share {
+    max-width: 99.21875vw !important;
+  }
+  .home-facebook-user {
+    & > div {
+      max-width: 99.21875vw !important;
+    }
+  }
+  .home-award {
+    max-width: 99.21875vw !important;
+  }
+  .home-service {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/819f03987bcb2783.png")

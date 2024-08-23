@@ -33,7 +33,7 @@ import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from '@/components/Publice/FooterMobile.vue'
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   name: "media-coverage",
@@ -194,6 +194,12 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .media-coverage-box {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .media-coverage-box {
     margin-bottom: 65px;

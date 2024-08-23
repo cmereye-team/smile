@@ -321,7 +321,7 @@ export default {
     margin-bottom: 125px;
   }
   .doctor-team-content {
-    max-width: 1270px;
+      max-width: 1270px;
     margin: 85px auto 0;
     padding-left: 80px;
     display: flex;
@@ -490,6 +490,12 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .doctor-team-content  {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/c58f958bc4b6ee29.png")

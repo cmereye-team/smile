@@ -406,11 +406,7 @@ export default {
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = [
-            "2024-08-03",
-            "2024-08-17",
-            "2024-08-31",
-          ];
+          this.allowedDates = ["2024-08-03", "2024-08-17", "2024-08-31"];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -976,6 +972,14 @@ export default {
     box-shadow: 0px 0px 8px 6px #d5d5d5f7;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .lecture-title {
+    & > div {
+      max-width: 99.21875vw !important;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .dialog-win {
     position: fixed;

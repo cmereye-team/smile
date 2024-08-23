@@ -1434,6 +1434,20 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .follow-up-nursing {
+    & > div {
+      max-width: 99.21875vw !important;
+    }
+  }
+  .follow-up-announcements {
+    max-width: 99.21875vw !important;
+  }
+  .step-follow {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .follow-up-box {
     margin-bottom: 50px;

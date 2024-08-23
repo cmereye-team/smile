@@ -289,7 +289,7 @@
         </p>
         <p>
           ^^指定信用卡（東亞/渣打/滙豐）可享6/12/18/24/36個月免息分期<br />
-          矯視費用已包括術前檢查費用 
+          矯視費用已包括術前檢查費用
           $500 (若沒有預約進行矯視，需另外繳付術前檢查費用)<br />
           #需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費
         </p>
@@ -754,6 +754,21 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .table_new_fee {
+    max-width: 99.21875vw !important;
+  }
+  .new_title_style {
+    max-width: 99.21875vw !important;
+  }
+  .fee-table-container {
+    max-width: 99.21875vw !important;
+  }
+  .ellipse_explain {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .fee {
     :deep(h2) {

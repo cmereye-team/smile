@@ -334,7 +334,7 @@ export default {
         "https://static.cmereye.com/imgs/2024/05/16b586d7718ac0a6.png",
         "https://static.cmereye.com/imgs/2024/07/8fab0d4a7e7ef4ac.png",
         "https://static.cmereye.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
-        "https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png"
+        "https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png",
       ],
     };
   },
@@ -779,6 +779,26 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .group-profile-award {
+    & > div {
+      & > div:nth-child(2) {
+        max-width: 99.21875vw !important;
+      }
+    }
+  }
+  .group-profile-swiper {
+    max-width: 99.21875vw !important;
+  }
+  .center-bg {
+    max-width: 99.21875vw !important;
+  }
+  .group-profile-explain {
+    & > div {
+      max-width: 99.21875vw !important;
+    }
+  }
+}
 
 @media screen and (max-width: 767px) {
   .group-profile-box {
@@ -878,7 +898,7 @@ export default {
           // grid-template-columns: repeat(4, 1fr);
           justify-content: center;
           gap: 5px 15px;
-          // 设置第二三行间隙 
+          // 设置第二三行间隙
           & > div:nth-child(n + 9) {
             margin-top: 10px;
           }

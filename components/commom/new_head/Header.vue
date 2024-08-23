@@ -109,11 +109,18 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1270px;
+      max-width: 1270px;
     margin: 0 auto;
     padding: 25px 0;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .head {
+    max-width: 99.21875vw !important;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .pcShow {
     display: none;

@@ -38,9 +38,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .faq {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .faq {
-    max-width: 1270px;
+      max-width: 1270px;
     margin: 0 auto;
   }
   :deep(.el-collapse-item__arrow) {

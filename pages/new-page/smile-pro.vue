@@ -2079,6 +2079,36 @@ export default {
     left: -5%;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .swiper-pc-share {
+    max-width: 99.21875vw !important;
+  }
+
+  .smilePro-desc {
+    max-width: 99.21875vw !important;
+  }
+
+  .smilePro-descVideo {
+    max-width: 99.21875vw !important;
+  }
+  .smilePro-table {
+    max-width: 99.21875vw !important;
+  }
+  .smile-pro-trait {
+    & > div {
+      max-width: 99.21875vw !important;
+    }
+  }
+  .smile-pro-share {
+    max-width: 99.21875vw !important;
+  }
+  .smile-pro-evaluate {
+    & > div {
+      max-width: 99.21875vw !important;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .smile-pro {
     overflow: hidden;

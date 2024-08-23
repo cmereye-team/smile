@@ -2107,7 +2107,7 @@ export default {
       line-height: 35px; /* 175% */
       letter-spacing: 6px;
     }
-    p:last-child{
+    p:last-child {
       padding-left: 35px;
     }
   }
@@ -2307,6 +2307,15 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .eye-examination-plan {
+    max-width: 99.21875vw !important;
+  }
+  .eye-examination-before {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .eye-examination-box {
     margin-bottom: 55px;

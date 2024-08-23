@@ -134,7 +134,7 @@ export default {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 85px 50px;
-    max-width: 1270px;
+      max-width: 1270px;
     margin: 0 auto 85px;
     & > a {
       max-width: 383px;
@@ -236,6 +236,12 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .blog-list {
+    max-width: 99.21875vw !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .blog-list {
     display: flex;
