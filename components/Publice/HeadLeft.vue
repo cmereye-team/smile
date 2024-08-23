@@ -223,6 +223,8 @@
   .HeaderLeft {
     width: 237px;
     height: 75px;
+    max-width: 237px;
+    max-height: 75px;
     & > svg {
       width: 100%;
       height: 100%;
@@ -233,6 +235,8 @@
   .HeaderLeft {
     width: 158px;
     height: 50px;
+    max-width: 158px;
+    max-height: 50px;
     & > svg {
       width: 100%;
       height: 100%;
