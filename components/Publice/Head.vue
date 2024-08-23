@@ -86,6 +86,14 @@ export default {
 </script>
 
 <style lang="scss">
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .mbShow {
     display: none;
@@ -109,7 +117,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-      max-width: 1270px;
+    max-width: 1270px;
     margin: 0 auto;
     padding: 25px 0;
   }
