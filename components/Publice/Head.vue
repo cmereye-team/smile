@@ -117,7 +117,7 @@ export default {
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .head {
-    max-width: 1024px;
+    max-width: 1024px !important;
   }
 }
 
