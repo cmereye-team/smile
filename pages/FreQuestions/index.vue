@@ -277,7 +277,7 @@ export default {
 <style lang="scss" scoped>
 .questions {
   max-width: 1280px;
-  margin: 10vw auto 0;
+  margin: 0 auto 10vw;
   & > div {
     padding-top: 10vw;
   }
