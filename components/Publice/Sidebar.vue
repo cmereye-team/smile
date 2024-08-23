@@ -199,11 +199,11 @@ export default {
 @media screen and (min-width: 768px) {
   .Sidebar {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     position: fixed;
     top: 50%;
     right: 0;
-    transform: translateY(-50%) translateX(76%);
+    transform: translateY(-45%) translateX(76%);
     transition: all 0.3s ease-in-out;
     & > div:nth-child(1) {
       width: 64px;
@@ -279,6 +279,11 @@ export default {
   .Sidebar:hover {
     transform: translateY(-50%) translateX(0);
     transition: all 0.3s ease-in-out;
+  }
+}
+@media screen and (min-height: 400px) and (max-height: 680px) {
+  .Sidebar{
+    transform: translateY(-45%) translateX(68%) scale(0.7);
   }
 }
 @media screen and (max-width: 767px) {

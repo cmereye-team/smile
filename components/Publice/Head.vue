@@ -86,7 +86,7 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .mbShow {
     display: none;
   }
@@ -114,6 +114,13 @@ export default {
     padding: 25px 0;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .head {
+    max-width: 1024px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .pcShow {
     display: none;
