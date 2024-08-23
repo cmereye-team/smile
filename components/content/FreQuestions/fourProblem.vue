@@ -9,10 +9,8 @@
           <template slot="title">
             <div class="contents">
               <i :class="judgeActive(`${index+1}`) !== -1 ? 'title2' : 'title1'"></i>
-              <div class="mb-width">
-                <p :class="judgeActive(`${index+1}`) !== -1 ? 'p2' : 'p1'">
-                  {{item.title}}
-                </p>
+              <div :class="judgeActive(`${index+1}`) !== -1 ? 'p2' : 'p1'" class="mb-width">
+                {{item.title}}
               </div>
             </div>
             <i
@@ -85,7 +83,8 @@ h2 {
   display: flex;
 }
 .p2 {
-  background-image: -webkit-linear-gradient(bottom, #fff, #fff);
+  // background-image: -webkit-linear-gradient(bottom, #fff, #fff);
+  background-image: -webkit-linear-gradient(bottom, transparent, transparent);
 }
 .title1 {
   display: inline-block;
