@@ -5,9 +5,24 @@
     <div>
       <div class="home-referral">
         <H2Tag :title="['希瑪微笑矯視中心']" />
-        <div>
+        <!-- <div>
           香港希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心。團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。於香港擁有3間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。提供一站式眼科專科醫療及矯視服務，包括：SMILE
           微笑激光矯視、LASIK激光矯視、ICL植入式隱形眼鏡、老花矯視等。
+        </div> -->
+        <div>
+          <p>
+            香港希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心。
+          </p>
+          <p>
+            中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。
+          </p>
+          <p>
+            於香港擁有2間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。
+          </p>
+          <p>
+            提供一站式眼科專科醫療及矯視服務，包括：SMILE
+            Pro微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。
+          </p>
         </div>
       </div>
       <div class="home-referral-service">
@@ -1137,7 +1152,7 @@ export default {
       font-weight: 300;
       line-height: 35px; /* 175% */
       letter-spacing: 6px;
-      padding: 0 154px;
+      padding: 0 145px;
     }
   }
   .home-referral-service {
@@ -1763,7 +1778,9 @@ export default {
       font-weight: 300;
       line-height: 30px; /* 214.286% */
       letter-spacing: 0.7px;
-      max-width: 330px;
+      // max-width: 330px;
+      box-sizing: border-box;
+      padding: 0 7.692vw;
       margin: 0 auto;
     }
   }
