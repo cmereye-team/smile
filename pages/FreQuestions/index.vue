@@ -335,6 +335,12 @@ export default {
   height: 42px;
   width: 40px;
 }
+:deep(.el-icon-arrow-right:before) {
+  content: none !important;
+}
+:deep(.el-icon-arrow-right:after) {
+  content: none !important;
+}
 :deep(.el-collapse-item .is-active::after) {
   position: absolute;
   content: "";
