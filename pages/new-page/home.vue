@@ -1151,7 +1151,7 @@ export default {
       font-style: normal;
       font-weight: 300;
       line-height: 35px; /* 175% */
-      letter-spacing: 6px;
+      letter-spacing: 4px;
       padding: 0 145px;
     }
   }
