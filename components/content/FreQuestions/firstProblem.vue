@@ -3,28 +3,42 @@
     <div class="justify-center memu">
       <div class="flex justify-center">
         <!-- <a href="#faq-presbyopia"> -->
-        <h2>{{$t('home.headers.commonProblemChild_1')}}</h2>
+        <h2>{{ $t("home.headers.commonProblemChild_1") }}</h2>
         <!-- </a> -->
       </div>
-      <el-collapse v-model="activeNames" @change="handleChange">
-        <!-- <img src="@/asset/image/fee/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
-        <el-collapse-item v-for="(item,index) in lists" :key="index+1" :name="`${index+1}`">
-          <template slot="title">
-            <div class="contents">
-              <!-- <img src="@/asset/image/fee/Q.png" alt=""> -->
-              <i :class="judgeActive(`${index+1}`) !== -1 ? 'title2' : 'title1'"></i>
-              <div :class="judgeActive(`${index+1}`) !== -1 ? 'p2' : 'p1'" class="mb-width">
-                {{item.title}}
+      <client-only>
+        <el-collapse v-model="activeNames" @change="handleChange">
+          <el-collapse-item
+            v-for="(item, index) in lists"
+            :key="index + 1"
+            :name="`${index + 1}`"
+          >
+            <template slot="title">
+              <div class="contents">
+                <i
+                  :class="
+                    judgeActive(`${index + 1}`) !== -1 ? 'title2' : 'title1'
+                  "
+                ></i>
+                <div
+                  :class="judgeActive(`${index + 1}`) !== -1 ? 'p2' : 'p1'"
+                  class="mb-width"
+                >
+                  {{ item.title }}
+                </div>
               </div>
-            </div>
-            <i
-              :class="judgeActive(`${index+1}`) !== -1 ? 'downArrow2' : 'downArrow1'"
-            ></i>
-          </template>
-          <div v-html="item.content">
-          </div>
-        </el-collapse-item>
-      </el-collapse>
+              <i
+                :class="
+                  judgeActive(`${index + 1}`) !== -1
+                    ? 'downArrow2'
+                    : 'downArrow1'
+                "
+              ></i>
+            </template>
+            <div v-html="item.content"></div>
+          </el-collapse-item>
+        </el-collapse>
+      </client-only>
     </div>
   </div>
 </template>
@@ -36,48 +50,48 @@ export default {
       currentIndex: 1, // 当前点击的tab的索引
       lists: [
         {
-          ...this.$t('freQuestios.firstProblem.problem1')
+          ...this.$t("freQuestios.firstProblem.problem1"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem2'),
+          ...this.$t("freQuestios.firstProblem.problem2"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem3')
+          ...this.$t("freQuestios.firstProblem.problem3"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem4')
+          ...this.$t("freQuestios.firstProblem.problem4"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem5')
+          ...this.$t("freQuestios.firstProblem.problem5"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem6')
+          ...this.$t("freQuestios.firstProblem.problem6"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem7')
+          ...this.$t("freQuestios.firstProblem.problem7"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem8')
+          ...this.$t("freQuestios.firstProblem.problem8"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem9')
+          ...this.$t("freQuestios.firstProblem.problem9"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem10')
+          ...this.$t("freQuestios.firstProblem.problem10"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem11')
+          ...this.$t("freQuestios.firstProblem.problem11"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem12')
+          ...this.$t("freQuestios.firstProblem.problem12"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem13')
+          ...this.$t("freQuestios.firstProblem.problem13"),
         },
         {
-          ...this.$t('freQuestios.firstProblem.problem14')
-        }
-      ]
+          ...this.$t("freQuestios.firstProblem.problem14"),
+        },
+      ],
     };
   },
   created() {},
@@ -101,7 +115,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-size: 25px;
-  color: #4570B6;
+  color: #4570b6;
 }
 .contents {
   display: flex;
@@ -172,7 +186,7 @@ span {
 }
 .tab {
   // margin-top: 10% !important;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 ul {
   margin: 0;
@@ -210,13 +224,13 @@ p {
   margin-top: 10vw;
 }
 /deep/ .el-collapse-item__header.is-active {
-    background-color: #4570b6 !important;
-    color: #fff !important;
-  }
+  background-color: #4570b6 !important;
+  color: #fff !important;
+}
 @media screen and (max-width: 768px) {
   .memu {
-  margin-top: 25vw;
-}
+    margin-top: 25vw;
+  }
   .mb-width {
     width: 72vw;
   }
@@ -293,9 +307,8 @@ p {
   }
 }
 </style>
-<style lang="scss">
+<style lang="scss" scoped>
 @media screen and (max-width: 768px) {
-
   i {
     justify-content: space-between;
   }
@@ -324,7 +337,7 @@ p {
 
     letter-spacing: 0.1em;
 
-    color: #6D6E71;
+    color: #6d6e71;
   }
 }
 @media screen and (min-width: 768px) {
@@ -340,7 +353,7 @@ p {
     font-size: 20px;
     line-height: 35px;
     padding: 20px;
-    color: #6D6E71;
+    color: #6d6e71;
     // background-color: #dfdfdf;
   }
 }
