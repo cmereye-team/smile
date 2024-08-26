@@ -242,6 +242,14 @@
           src="https://static.cmereye.com/imgs/2024/07/29e77fdc6923e030.jpg"
           alt="8月 旺角"
         />
+        <img
+          src="https://static.cmereye.com/imgs/2024/08/6d024e7e48e19947.jpg"
+          alt="9月 中环"
+        />
+        <img
+          src="https://static.cmereye.com/imgs/2024/08/b544afa210d8f2ef.jpg"
+          alt="9月 旺角"
+        />
       </div>
     </div>
     <businessHours />
@@ -381,32 +389,32 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-08-03",
-            "2024-08-07",
-            "2024-08-10",
-            "2024-08-14",
-            "2024-08-17",
-            "2024-08-21",
-            "2024-08-24",
             "2024-08-28",
             "2024-08-31",
+            "2024-09-04",
+            "2024-09-07",
+            "2024-09-11",
+            "2024-09-14",
+            "2024-09-21",
+            "2024-09-25",
+            "2024-09-28",
           ];
           break;
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2024-08-01",
-            "2024-08-06",
-            "2024-08-10",
-            "2024-08-15",
-            "2024-08-20",
-            "2024-08-24",
             "2024-08-29",
+            "2024-09-03",
+            "2024-09-12",
+            "2024-09-14",
+            "2024-09-17",
+            "2024-09-26",
+            "2024-09-28",
           ];
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = ["2024-08-03", "2024-08-17", "2024-08-31"];
+          this.allowedDates = ["2024-08-31", "2024-09-07", "2024-09-21"];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -415,10 +423,11 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2024-08-08",
-            "2024-08-13",
-            "2024-08-22",
             "2024-08-27",
+            "2024-09-05",
+            "2024-09-10",
+            "2024-09-19",
+            "2024-09-24",
           ];
           break;
         default:

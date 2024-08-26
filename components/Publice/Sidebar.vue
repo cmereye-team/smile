@@ -277,13 +277,17 @@ export default {
     }
   }
   .Sidebar:hover {
-    transform: translateY(-50%) translateX(0);
+    transform: translateY(-50%) translateX(0) scale(0.7);
     transition: all 0.3s ease-in-out;
   }
 }
 @media screen and (min-height: 400px) and (max-height: 680px) {
-  .Sidebar{
-    transform: translateY(-45%) translateX(68%) scale(0.7);
+  .Sidebar {
+    transform:translateY(-38%) translateX(68%) scale(0.7);
+  }
+  .Sidebar:hover {
+    transform: translateY(-38%) translateX(15%) scale(0.7);
+    transition: all 0.3s ease-in-out;
   }
 }
 @media screen and (max-width: 767px) {

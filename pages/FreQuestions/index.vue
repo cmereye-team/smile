@@ -425,8 +425,8 @@ export default {
     left: 5px;
     top: 10px;
     display: inline-block;
-    height: 21px;
-    width: 20px;
+    height: 16px;
+    width: 15px;
   }
   :deep(.el-collapse-item__header::after) {
     position: absolute;
@@ -437,8 +437,10 @@ export default {
     right: 5px;
     top: 10px;
     display: inline-block;
-    height: 21px;
-    width: 20px;
+    height: 16px;
+    width: 15px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   :deep(.el-collapse-item .is-active::before) {
     position: absolute;
@@ -450,6 +452,8 @@ export default {
     display: inline-block;
     height: 21px;
     width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   :deep(.el-collapse-item .is-active::after) {
     position: absolute;
@@ -457,7 +461,9 @@ export default {
     background-image: url(https://static.cmereye.com/imgs/2024/08/9c5ad08127153afd.png);
     background-repeat: no-repeat;
     right: 10px;
-    top: 25px;
+    // top: 18px;
+    top: 50%;
+    transform: translateY(-50%);
     display: inline-block;
     height: 2px;
     width: 12px;
