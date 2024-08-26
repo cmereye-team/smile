@@ -2,10 +2,13 @@
   <div>
     <Header />
     <Navbar />
-    <firstProblem />
-    <secondProblem />
-    <thirtProblem />
-    <fourProblem />
+    <!-- <firstProblem /> -->
+    <!-- <secondProblem /> -->
+    <!-- <thirtProblem /> -->
+    <!-- <fourProblem /> -->
+    <div style="margin: 100px auto;">
+      <newProblem />
+    </div>
     <Footer />
     <footers />
   </div>

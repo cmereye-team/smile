@@ -5,57 +5,65 @@
     <div class="questions">
       <div id="faq-smile">
         <H2Tag :title="['SMILE 微笑激光矯視']" />
-        <el-collapse v-model="activeName" accordion>
-          <el-collapse-item
-            v-for="(item, index) in lists"
-            :key="index"
-            :name="`${index + 1}`"
-          >
-            <template slot="title">
-              <div>{{ item.title }}</div>
-            </template>
-            <div v-html="item.content"></div>
-          </el-collapse-item>
-        </el-collapse>
+        <client-only>
+          <el-collapse v-model="activeName" accordion>
+            <el-collapse-item
+              v-for="(item, index) in lists"
+              :key="index"
+              :name="`${index + 1}`"
+            >
+              <template slot="title">
+                <div>{{ item.title }}</div>
+              </template>
+              <div v-html="item.content"></div>
+            </el-collapse-item>
+          </el-collapse>
+        </client-only>
       </div>
       <div id="faq-lasik">
         <H2Tag :title="['LASIK 激光矯視']" />
-        <el-collapse v-model="activeNameTwo" accordion>
-          <el-collapse-item
-            v-for="(item, index) in listsTwo"
-            :key="index"
-            :title="item.title"
-            :name="`${index + 1}`"
-          >
-            <div v-html="item.content"></div>
-          </el-collapse-item>
-        </el-collapse>
+        <client-only>
+          <el-collapse v-model="activeNameTwo" accordion>
+            <el-collapse-item
+              v-for="(item, index) in listsTwo"
+              :key="index"
+              :title="item.title"
+              :name="`${index + 1}`"
+            >
+              <div v-html="item.content"></div>
+            </el-collapse-item>
+          </el-collapse>
+        </client-only>
       </div>
       <div id="faq-icl">
         <H2Tag :title="['ICL植入式隱形眼鏡']" />
-        <el-collapse v-model="activeNameThree" accordion>
-          <el-collapse-item
-            v-for="(item, index) in listsThree"
-            :key="index"
-            :title="item.title"
-            :name="`${index + 1}`"
-          >
-            <div v-html="item.content"></div>
-          </el-collapse-item>
-        </el-collapse>
+        <client-only>
+          <el-collapse v-model="activeNameThree" accordion>
+            <el-collapse-item
+              v-for="(item, index) in listsThree"
+              :key="index"
+              :title="item.title"
+              :name="`${index + 1}`"
+            >
+              <div v-html="item.content"></div>
+            </el-collapse-item>
+          </el-collapse>
+        </client-only>
       </div>
       <div id="faq-presbyopia">
         <H2Tag :title="['CLEAR-Vision']" />
-        <el-collapse v-model="activeNameFour" accordion>
-          <el-collapse-item
-            v-for="(item, index) in listsFour"
-            :key="index"
-            :title="item.title"
-            :name="`${index + 1}`"
-          >
-            <div v-html="item.content"></div>
-          </el-collapse-item>
-        </el-collapse>
+        <client-only>
+          <el-collapse v-model="activeNameFour" accordion>
+            <el-collapse-item
+              v-for="(item, index) in listsFour"
+              :key="index"
+              :title="item.title"
+              :name="`${index + 1}`"
+            >
+              <div v-html="item.content"></div>
+            </el-collapse-item>
+          </el-collapse>
+        </client-only>
       </div>
     </div>
 
