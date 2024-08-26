@@ -381,7 +381,7 @@ export default {
     box-sizing: border-box;
     padding: 0 25px;
     & > div {
-      padding-top: 10vw;
+      padding-top: 22vw;
     }
   }
   :deep(.el-collapse-item__header) {
