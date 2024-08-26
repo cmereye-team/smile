@@ -13,7 +13,7 @@
           <p>
             希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心。
           </p>
-          <p style="white-space: nowrap;">
+          <p style="white-space: nowrap">
             中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。
           </p>
           <p>
@@ -1153,6 +1153,9 @@ export default {
       line-height: 35px; /* 175% */
       letter-spacing: 4px;
       padding: 0 145px;
+      & > p:nth-child(2) {
+        white-space: nowrap;
+      }
     }
   }
   .home-referral-service {
@@ -1782,6 +1785,9 @@ export default {
       box-sizing: border-box;
       padding: 0 7.692vw;
       margin: 0 auto;
+      & > p:nth-child(2) {
+        white-space: pre-wrap;
+      }
     }
   }
   .home-referral-service {
