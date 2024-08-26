@@ -1786,7 +1786,8 @@ export default {
       padding: 0 7.692vw;
       margin: 0 auto;
       & > p:nth-child(2) {
-        white-space: pre-wrap;
+        white-space: normal;
+        
       }
     }
   }
