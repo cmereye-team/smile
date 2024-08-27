@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/97c8be06acc98273.png")
+    background: url("https://statichk.cmermedical.com/smile/97c8be06acc98273.webp")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;

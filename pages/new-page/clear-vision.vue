@@ -88,7 +88,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/1b1ed51fa0655e61.png")
+    background: url("https://statichk.cmermedical.com/smile/vision-correction-presbyopia/1b1ed51fa0655e61.webp")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;

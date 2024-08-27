@@ -253,7 +253,7 @@
 export default [
   {
     id: 1,
-    img: "https://static.cmereye.com/imgs/2024/05/590ceebe95a7c289.png",
+    img: "https://statichk.cmermedical.com/smile/medical-equipment/590ceebe95a7c289.jpg",
     name: [
       "ZEISS VISUMAX 800",
       "SMILE®pro"
@@ -384,7 +384,7 @@ export default [
   },
   {
     id: 13,
-    img: "https://static.cmereye.com/imgs/2024/05/8d48fd9571a47602.png",
+    img: "https://statichk.cmermedical.com/smile/medical-equipment/8d48fd9571a47602.webp",
     name: [
       "A型及B型超聲波掃描儀",
       "（Quantel Compact Touch）"
@@ -395,7 +395,7 @@ export default [
   },
   {
     id: 14,
-    img: "https://static.cmereye.com/imgs/2024/05/5aacde002af24ada.png",
+    img: "https://statichk.cmermedical.com/smile/medical-equipment/5aacde002af24ada.webp",
     name: [
       "全視網膜掃描相機",
       "（Optos Daytona）"
@@ -450,7 +450,7 @@ export default [
   },
   {
     id: 19,
-    img: "https://static.cmereye.com/imgs/2024/05/2a24a1b68dc187d6.png",
+    img: "https://statichk.cmermedical.com/smile/medical-equipment/2a24a1b68dc187d6.webp",
     name: [
       "ELLEX Integre pro scan",
       "眼底鐳射治療儀"
@@ -493,7 +493,7 @@ export default [
   },
   {
     id: 23,
-    img: "https://static.cmereye.com/imgs/2024/05/a50ca0c214529046.png",
+    img: "https://statichk.cmermedical.com/smile/medical-equipment/a50ca0c214529046.webp",
     name: [
       "徠卡Proveo8融合光學",
       "眼科手術顯微鏡"

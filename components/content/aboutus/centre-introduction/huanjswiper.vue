@@ -138,7 +138,7 @@ export default {
   background-image: url("https://static.cmereye.com/imgs/2024/06/5bae94148ed686da.jpg");
 }
 .slide-5 {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/990a811af868c7ed.jpg");
+  background-image: url("https://statichk.cmermedical.com/smile/group-profile/990a811af868c7ed.webp");
 }
 .slide-6 {
   background-image: url("https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg");
