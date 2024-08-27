@@ -50,7 +50,7 @@ export default {
 @media screen and (min-width:768px){
 
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2024/04/1f675e433a2f0f10.png");
+    background-image: url("https://statichk.cmermedical.com/smile/1f675e433a2f0f10.webp");
     cursor: pointer;
   }
 }

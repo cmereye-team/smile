@@ -49,7 +49,7 @@ export default {
 @media screen and (min-width:768px){
 
   .banner {
-  background-image: url("https://static.cmereye.com/imgs/2023/04/345a419b3bd30f8c.jpg");
+  background-image: url("https://statichk.cmermedical.com/smile/patient-info/345a419b3bd30f8c.webp");
 }
 }
 

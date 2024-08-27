@@ -9,7 +9,7 @@
     <div class="share-img">
       <a href="https://www.youtube.com/watch?v=B12IjJ3tFHE" target="_blank">
         <img
-          src="https://static.cmereye.com/imgs/2023/10/d33a83515c64bf26.png"
+          src="https://statichk.cmermedical.com/smile/vision-correction-icl/d33a83515c64bf26.webp"
           alt=""
         />
       </a>
@@ -31,7 +31,7 @@
             @click="shareForm('https://youtu.be/CEbbKFeFdnc')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/11/84f74f7c64dbf4e3.png"
+              src="https://statichk.cmermedical.com/smile/vision-correction-icl/84f74f7c64dbf4e3.webp"
               alt=""
             />
           </div>
@@ -78,7 +78,7 @@
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/11/84f74f7c64dbf4e3.png"
+                src="https://statichk.cmermedical.com/smile/vision-correction-icl/84f74f7c64dbf4e3.webp"
                 alt=""
               />
             </div>

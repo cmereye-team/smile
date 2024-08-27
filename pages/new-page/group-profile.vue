@@ -97,7 +97,7 @@
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/4977e6813fbfb150.png"
+                src="https://statichk.cmermedical.com/smile/group-profile/4977e6813fbfb150.jpg"
               />
             </div>
             <div>
@@ -743,7 +743,7 @@ export default {
   }
 
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/e90f833293170c68.png")
+    background: url("https://statichk.cmermedical.com/smile/e90f833293170c68.webp")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;
