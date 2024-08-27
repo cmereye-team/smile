@@ -2379,7 +2379,7 @@ export default {
         & > div:nth-child(1) {
           width: 100%;
           justify-content: flex-start;
-          padding-left: 50px;
+          padding-left: 40px;
           & > span {
             text-align: center;
           }
@@ -2527,8 +2527,8 @@ export default {
         background: url("https://static.cmereye.com/imgs/2024/04/d6dfb1330ac0b608.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 33px;
-        height: 39px;
+        width: 27px;
+        height: 30px;
       }
     }
 
@@ -2537,8 +2537,8 @@ export default {
         background: url("https://static.cmereye.com/imgs/2024/04/88f64b1206664fef.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 40px;
-        height: 24px;
+        width: 28px;
+        height: 16px;
       }
     }
     & > div:nth-child(4) {
@@ -2546,8 +2546,8 @@ export default {
         background: url("https://static.cmereye.com/imgs/2024/04/71b81da21fc7abbd.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 36px;
-        height: 24px;
+        width: 28px;
+        height: 18px;
       }
     }
     & > div:nth-child(5) {
@@ -2555,8 +2555,8 @@ export default {
         background: url("https://static.cmereye.com/imgs/2024/04/fa1e26f2351c4846.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 40px;
-        height: 20px;
+        width: 28px;
+        height: 16px;
       }
     }
     & > div:nth-child(6) {
@@ -2569,8 +2569,8 @@ export default {
         background: url("https://static.cmereye.com/imgs/2024/04/5299029494bc7b25.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
       }
     }
     & > div:nth-child(7) {
@@ -2578,8 +2578,8 @@ export default {
         background: url("https://static.cmereye.com/imgs/2024/04/8bc752b3c0b7a1aa.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 30px;
-        height: 34px;
+        width: 26px;
+        height: 28px;
       }
     }
     & > div:nth-child(8) {
@@ -2601,8 +2601,8 @@ export default {
         background: url("https://static.cmereye.com/imgs/2024/04/68d2e10f0f3e4452.png")
           no-repeat;
         background-size: 100% 100%;
-        width: 38px;
-        height: 38px;
+        width: 30px;
+        height: 30px;
       }
     }
 
