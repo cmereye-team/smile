@@ -1457,7 +1457,7 @@ export default {
     overflow: hidden;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/97390f8ba27fb627.png")
+    background: url("https://statichk.cmermedical.com/smile/97390f8ba27fb627.webp")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;

@@ -13,7 +13,7 @@
       <div class="doctor-team-content">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/04/1395086f2ba74e80.png"
+            src="https://statichk.cmermedical.com/smile/our-medical-team/1395086f2ba74e80.webp"
             alt="林順潮醫生"
           />
         </div>
@@ -126,7 +126,7 @@ export default {
         {
           id: 1,
           name: "李佑榮",
-          img: "https://static.cmereye.com/imgs/2024/04/e4fe994560f1f0cb.png",
+          img: "https://statichk.cmermedical.com/smile/our-medical-team/e4fe994560f1f0cb.webp",
           title: [
             "香港中文大學內外全科醫學士",
             "香港醫學專科學院院士(眼科)",
@@ -283,7 +283,7 @@ export default {
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/323517741e434c1d.png")
+    background: url("https://statichk.cmermedical.com/smile/323517741e434c1d.webp")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;

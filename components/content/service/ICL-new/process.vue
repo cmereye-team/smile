@@ -27,25 +27,25 @@ export default {
     return {
       stepList1: [
         {
-          src: "https://static.cmereye.com/imgs/2023/10/82cda8d37241ea01.png",
+          src: "https://statichk.cmermedical.com/smile/vision-correction-icl/82cda8d37241ea01.webp",
           des: this.$t("service.icl.step.des1"),
         },
         {
-          src: "https://static.cmereye.com/imgs/2023/10/f4e8010e0f012d44.png",
+          src: "https://statichk.cmermedical.com/smile/vision-correction-icl/f4e8010e0f012d44.webp",
           des: this.$t("service.icl.step.des2"),
         },
       ],
       stepList: [
         {
-          src: "https://static.cmereye.com/imgs/2023/10/83a8ffe937202478.png",
+          src: "https://statichk.cmermedical.com/smile/vision-correction-icl/83a8ffe937202478.webp",
           des: this.$t("service.icl.step.des3"),
         },
         {
-          src: "https://static.cmereye.com/imgs/2023/10/b202e5feefba01ba.png",
+          src: "https://statichk.cmermedical.com/smile/vision-correction-icl/b202e5feefba01ba.webp",
           des: this.$t("service.icl.step.des4"),
         },
         {
-          src: "https://static.cmereye.com/imgs/2023/10/f6dc1e56bb938c10.png",
+          src: "https://statichk.cmermedical.com/smile/vision-correction-icl/f6dc1e56bb938c10.webp",
           des: this.$t("service.icl.step.des5"),
         },
       ],
