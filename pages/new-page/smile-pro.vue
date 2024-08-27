@@ -2349,7 +2349,7 @@ export default {
       & > div {
         width: calc((100% - 110px) / 3);
         display: flex;
-        padding: 12px 0;
+        padding: 14px 0;
         & > div:nth-child(1) {
           width: 85px;
           display: flex;
@@ -2570,7 +2570,7 @@ export default {
           no-repeat;
         background-size: 100% 100%;
         width: 40px;
-        width: 40px;
+        height: 40px;
       }
     }
     & > div:nth-child(7) {
@@ -2579,7 +2579,7 @@ export default {
           no-repeat;
         background-size: 100% 100%;
         width: 30px;
-        width: 34px;
+        height: 34px;
       }
     }
     & > div:nth-child(8) {
@@ -2593,7 +2593,7 @@ export default {
           no-repeat;
         background-size: 100% 100%;
         width: 24px;
-        width: 22px;
+        height: 22px;
       }
     }
     & > div:nth-child(9) {
@@ -2613,6 +2613,9 @@ export default {
     }
   }
   .arr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     & > span:nth-child(2) {
       font-size: 10px;
     }
