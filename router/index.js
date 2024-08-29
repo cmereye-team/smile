@@ -49,7 +49,7 @@ export const $router = [
     path: '/fee',
     name: 'fee',
     title: '收費詳情',
-    component: resolve('pages/fee/index.vue'),
+    // component: resolve('pages/fee/index.vue'),
     component: resolve('pages/new-page/new-fee.vue')
   },
   {

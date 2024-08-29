@@ -537,6 +537,29 @@ export default {
       isMobile: false,
     };
   },
+  head() {
+    return {
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "聯絡我們 - 香港希瑪微笑矯視中心",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "聯絡我們 - 香港希瑪微笑矯視中心",
+        },
+      ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/contact-us" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/contact-us" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/contact-us" },
+      ]
+    };
+  },
   methods: {
     getIframeLink(i, kind) {
       console.log(i, kind, "pO");

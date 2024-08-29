@@ -198,6 +198,50 @@ export default {
       isMobile: false,
     };
   },
+  head() {
+    return {
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "LASIK激光矯視術是一種已超過30年歷史的矯視方法，其運作原理是利用激光重新塑形角膜表面，改變其弧度，以達到改善視力的目的。立即了解更多。",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "lasik,lasik 激光矯視,激光 手術,lasik 散光,激光 矯 視 手術,LASIK激光矯視, 激光矯視 價錢, 激光矯視 香港, 視力矯正, 眼睛健康, 激光矯視, 深近視, 眼睛檢查",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/vision-correction-lasik",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/vision-correction-lasik",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/vision-correction-lasik",
+        },
+      ],
+    };
+  },
   mounted() {
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
