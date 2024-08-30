@@ -149,6 +149,10 @@ export default {
   },
   data() {
     return {
+      canonicalHref: "https://smile.hkcmereye.com/vision-correction-lasik",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-lasik",
+      browserTitle: "LASIK激光矯視 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "LASIK激光矫视 - 香港希玛微笑矫视中心",
       benefits: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/71f07f2e49ae92d7.png",

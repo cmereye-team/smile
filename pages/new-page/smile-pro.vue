@@ -1346,6 +1346,10 @@ export default {
   },
   data() {
     return {
+      canonicalHref: "https://smile.hkcmereye.com/smilePro",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
+      browserTitle: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "SMILE PRO 微笑矫视 - 香港希玛微笑矫视中心",
       titleName: ["一圖看清SMILE,", "SMILE PRO, LASIK大不同"],
       titleName1: ["真實明星用家個案分享"],
       contrastTable: [

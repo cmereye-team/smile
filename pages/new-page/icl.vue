@@ -243,6 +243,10 @@ export default {
           mbText: ["不愛佩戴眼鏡或", "隱形眼鏡"],
         },
       ],
+      canonicalHref: "https://smile.hkcmereye.com/vision-correction-icl",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-icl",
+      browserTitle: "ICL植入式隱形眼鏡 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "ICL植入式隐形眼镜 - 香港希玛微笑矫视中心",
     };
   },
   mounted() {

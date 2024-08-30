@@ -70,7 +70,14 @@ export default {
     Xtra,
   },
   data() {
-    return {};
+    return {
+      canonicalHref:
+        "https://smile.hkcmereye.com/vision-correction/relex-smile",
+      canonicalHrefCN:
+        "https://smile.hkcmereye.com/cn/vision-correction/relex-smile",
+      browserTitle: "SMILE 微笑激光矯視 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "SMILE 微笑激光矫视 - 香港希玛微笑矫视中心",
+    };
   },
   head() {
     return {

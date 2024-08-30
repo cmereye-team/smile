@@ -44,6 +44,11 @@ export default {
   data() {
     return {
       isMobile: false,
+      canonicalHref: "https://smile.hkcmereye.com/vision-correction-presbyopia",
+      canonicalHrefCN:
+        "https://smile.hkcmereye.com/cn/vision-correction-presbyopia",
+      browserTitle: "老花矯視 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "老花矫视 - 香港希玛微笑矫视中心",
     };
   },
   head() {

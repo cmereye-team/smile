@@ -1788,6 +1788,10 @@ export default {
           two: ["$31,000-$51,000"],
         },
       ],
+      canonicalHref: "https://smile.hkcmereye.com/fee",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/fee",
+      browserTitle: "收費詳情 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "收费详情 - 香港希玛微笑矫视中心",
     };
   },
   methods: {
