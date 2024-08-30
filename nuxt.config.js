@@ -10,7 +10,6 @@ export default {
     title: '香港希瑪微笑矯視中心',
     htmlAttrs: {
       lang: 'zh-HK',
-
     },
     script: [
       {
@@ -87,7 +86,38 @@ export default {
       '@nuxtjs/sitemap'
     ]
   ],
-  sitemap,
+  sitemap: {
+    hostname: 'https://smile.hkcmereye.com',
+    gizp: true,
+    exclude: [
+      "/",
+      "/group-profile",
+      "/our-medical-team",
+      "/medical-equipment",
+      "/smilePro",
+      "/vision-correction-icl",
+      "/vision-correction/relex-smile",
+      "/vision-correction-presbyopia",
+      "/vision-correction-lasik",
+      "/patient-info",
+      "/fee",
+      "/FreQuestions#faq-smile",
+      "/FreQuestions#faq-lasik",
+      "/FreQuestions#faq-icl",
+      "/FreQuestion#faq-presbyopia",
+      "/contact-us",
+      "/ophthalmicInfo/AppointForm",
+      "/booking",
+      "/eye-checkup",
+      "/video",
+      "/ophthalmicInfo/mediaCov",
+      "/flow-of-vision-correction",
+      "/post-corrective-care",
+      "/privacy-policy",
+      "/disclaimer",
+      "/blog"
+    ]
+  },
   gtm: {
     id: 'GTM-5M8VLLM'
   },

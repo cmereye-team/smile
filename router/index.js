@@ -270,7 +270,7 @@ export const $router = [
     name: 'follow-up-consultation',
     // 矯視後覆診
     title: '矯視後覆診',
-    component: resolve('pages/new-page/follow-up-consultation.vue') 
+    component: resolve('pages/new-page/follow-up-consultation.vue')
   },
   {
     path: '/vision-correction',
