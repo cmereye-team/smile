@@ -196,7 +196,92 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1441px) {
+  .Sidebar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-45%) translateX(76%);
+    transition: all 0.3s ease-in-out;
+    & > div:nth-child(1) {
+      width: 64px;
+      border-radius: 25px 0 0 25px;
+      background: #4570b6;
+      writing-mode: vertical-rl; /* 从上到下，从右到左 */
+      text-orientation: mixed; /* 允许混合方向 */
+      color: #fff;
+
+      text-align: center;
+      font-family: "Inter";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px; /* 150% */
+      letter-spacing: 4px;
+      padding: 22px 20px;
+      cursor: pointer;
+    }
+    & > div:nth-child(2) {
+      padding: 30px 18px;
+      background: #fff;
+      border-radius: 0 0 25px 25px;
+      box-shadow: -2px 0px 7px rgba(69, 112, 182, 0.25);
+      transition: all 0.3s ease-in-out;
+      // position: absolute;
+      // right: -310%;
+      & > a {
+        width: 160px;
+        height: 140px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        & > div:nth-child(1) {
+          margin-bottom: 18px;
+        }
+        & > div:nth-child(2) {
+          text-align: center;
+          text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+          font-family: "Inter";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 4px;
+        }
+      }
+      & > a:nth-child(1) {
+        background: #4570b6;
+        margin-bottom: 45px;
+        & > div:nth-child(2) {
+          color: #fff;
+        }
+      }
+      & > a:nth-child(1):hover {
+        box-shadow: 0px 0px 4px 3px #4570b6ba;
+      }
+      & > a:nth-child(2) {
+        background: #fff;
+        border: 1px solid #4570b6;
+        & > div:nth-child(2) {
+          color: #4570b6;
+        }
+      }
+      & > a:nth-child(2):hover {
+        box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  .Sidebar:hover {
+    transform: translateY(-50%) translateX(0) scale(1);
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media screen and (min-width: 769px) and  (max-width: 1440px) {
   .Sidebar {
     display: flex;
     align-items: center;
