@@ -83,40 +83,13 @@ export default {
       '@nuxtjs/i18n',
       i18n,
       '@nuxtjs/gtm',
-      '@nuxtjs/sitemap'
+      '@nuxtjs/sitemap',
+      '@nuxtjs/axios',
     ]
   ],
   sitemap: {
     hostname: 'https://smile.hkcmereye.com',
     gizp: true,
-    exclude: [
-      "/",
-      "/group-profile",
-      "/our-medical-team",
-      "/medical-equipment",
-      "/smilePro",
-      "/vision-correction-icl",
-      "/vision-correction/relex-smile",
-      "/vision-correction-presbyopia",
-      "/vision-correction-lasik",
-      "/patient-info",
-      "/fee",
-      "/FreQuestions#faq-smile",
-      "/FreQuestions#faq-lasik",
-      "/FreQuestions#faq-icl",
-      "/FreQuestion#faq-presbyopia",
-      "/contact-us",
-      "/ophthalmicInfo/AppointForm",
-      "/booking",
-      "/eye-checkup",
-      "/video",
-      "/ophthalmicInfo/mediaCov",
-      "/flow-of-vision-correction",
-      "/post-corrective-care",
-      "/privacy-policy",
-      "/disclaimer",
-      "/blog"
-    ]
   },
   gtm: {
     id: 'GTM-5M8VLLM'
