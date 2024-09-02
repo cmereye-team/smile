@@ -929,7 +929,7 @@ export default {
           id: 5,
           img: "https://static.cmereye.com/imgs/2024/04/2ab718080c0c7c14.png",
           title: ["Clear-", "Vision"],
-          desc: ["39以上有老花", " 同時有近視/遠視/", "散光問題"],
+          desc: ["39歲以上有老花", " 同時有近視/遠視/", "散光問題"],
           link: "/vision-correction-presbyopia",
         },
       ],
