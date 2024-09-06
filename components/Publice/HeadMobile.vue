@@ -54,7 +54,7 @@
           />
         </div>
         <div>
-          <div class="mb_menu_style">
+          <div class="mb_menu_style 2222">
             <DetailOption
               :group="groupList"
               :pcOrMobile="'mobile'"
@@ -71,6 +71,12 @@
               :group="diagnosisInstructionsList"
               :pcOrMobile="'mobile'"
               :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'"
+            />
+
+            <DetailOption
+              :group="newVideo"
+              :pcOrMobile="'mobile'"
+              :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'"
             />
 
             <DetailOption
@@ -108,7 +114,7 @@
               :pcOrMobile="'mobile'"
               :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'"
             />
-            <div style="minwidth: 140px"></div>
+            <!-- <div style="minwidth: 140px"></div> -->
           </div>
         </div>
       </div>
@@ -205,6 +211,17 @@ export default {
             child_item: this.$t("home.headers.orthopedicServicesChild_3"),
             link: "/vision-correction-lasik",
           },
+        ],
+      },
+      newVideo: {
+        main_nav: "矯視資訊",
+        link: "",
+        child_list: [
+          // {
+          //   child_item: "Blog",
+          //   link: "/blog",
+          // },
+          { child_item: this.$t("home.headers.casesSharing"), link: "/video" },
         ],
       },
       diagnosisInstructionsList: {
