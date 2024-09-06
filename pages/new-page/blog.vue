@@ -20,6 +20,7 @@
         >
           <div>
             <div><img :src="item.img" alt="" /></div>
+            <nuxt-link :to="`blog/${item.id}`">更多</nuxt-link>
           </div>
           <div>
             <div>
@@ -167,18 +168,26 @@ export default {
       position: relative;
       & > div:nth-child(1) {
         position: relative;
-        & > div:nth-child(2) {
+        & > a:nth-child(2) {
           position: absolute;
-          right: -24px;
+          right: -25px;
           bottom: 10px;
-          border-radius: 16px;
+          border-radius: 20px;
           background: #4570b6;
-          width: 105px;
-          height: 32px;
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 120% */
+          letter-spacing: 3.75px;
+          box-sizing: border-box;
+          padding: 5px 25px;
         }
-        & > div:nth-child(2):hover {
+        & > a:nth-child(2):hover {
           box-shadow: 0 0 5px 3px #89b0face;
-          transform: translate(10px, -10px) scale(1.1);
+          transform: translate(0, -10px) scale(1.1);
           transition: all 0.3s;
         }
       }
@@ -273,7 +282,7 @@ export default {
     align-items: center;
     gap: 6.92vw 0;
     & > a {
-      margin-bottom: 30px;
+      margin-bottom: 7.69vw;
       // max-width: 295px;
       margin: 0 auto;
       box-sizing: border-box;
@@ -281,34 +290,50 @@ export default {
       & > div:nth-child(1) {
         position: relative;
         & > div:nth-child(1) {
-          border-radius: 9px;
+          border-radius: 2.307vw;
           overflow: hidden;
           & > img {
-            width: 100%;
+            width: 98%;
+            margin: 0 auto;
           }
         }
-        & > div:nth-child(2) {
+        & > a:nth-child(2) {
           position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: -10px;
-          border-radius: 16px;
+          right: -3.846vw;
+          // transform: translateX(-50%);
+          bottom: 0;
+          border-radius: 5.128vw;
           background: #4570b6;
-          width: 92.332px;
-          height: 28.139px;
+          // width: 92.332px;
+          // height: 28.139px;
+          box-sizing: border-box;
+          padding: 0.769vw 3.076vw;
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 4.615vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 7.69vw; /* 166.667% */
+          letter-spacing: 0.69vw;
+        }
+        & > a:nth-child(2):hover {
+          box-shadow: 0 0 5px 3px #89b0face;
+          transform: translate(0, -10px) scale(1.1);
+          transition: all 0.3s;
         }
       }
       & > div:nth-child(2) {
-        margin-top: 30px;
-        padding-bottom: 17px;
+        margin-top: 7.69vw;
+        padding-bottom: 4.3589vw;
         border-bottom: 1px solid #afafaf;
         & > div:nth-child(1) {
           color: #4570b6;
           font-family: "Noto Sans HK";
-          font-size: 18px;
+          font-size: 4.615vw;
           font-style: normal;
           font-weight: 500;
-          line-height: 30px; /* 166.667% */
+          line-height: 7.69vw; /* 166.667% */
           letter-spacing: 3.6px;
           text-align: center;
         }
@@ -316,12 +341,12 @@ export default {
           color: #6d6e71;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 14px;
+          font-size: 3.589vw;
           font-style: normal;
           font-weight: 300;
-          line-height: 25px; /* 178.571% */
+          line-height: 6.4vw; /* 178.571% */
           letter-spacing: 2.8px;
-          padding: 0 29px;
+          padding: 0 7.435vw;
         }
       }
     }
@@ -332,22 +357,22 @@ export default {
     }
   }
   .blog-box {
-    margin-bottom: 60px;
+    margin-bottom: 15.3846vw;
   }
   .more-article {
     border-radius: 100px;
     background: #4570b6;
-    padding: 17px 30px;
+    padding: 4.3589vw 7.69vw;
     color: #fff;
     text-align: center;
     font-family: "Noto Sans HK";
-    font-size: 20px;
+    font-size: 5.128vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px; /* 100% */
-    letter-spacing: 6px;
+    line-height: 5.128vw; /* 100% */
+    letter-spacing: 1.538vw;
     display: flex;
-    margin: 55px auto 85px;
+    margin: 14.1025vw auto 21.79vw;
     width: fit-content;
     cursor: pointer;
   }
@@ -355,14 +380,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px auto;
+    margin: 6.4vw auto;
     & > i {
       display: inline-block;
       width: 4px;
       height: 4px;
       background: #4570b6;
       border-radius: 50%;
-      margin: 10px 0;
+      margin: 2.56vw 0;
     }
   }
   .banner-img {
@@ -370,34 +395,34 @@ export default {
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;
-    margin: 24px 30px 55px;
-    border-radius: 44px;
-    padding-left: 10px;
+    margin: 6.15vw 7.69vw 14.1025vw;
+    border-radius: 11.28vw;
+    padding-left: 2.564vw;
 
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 5.128vw;
     & > p {
-      max-width: 110px;
+      max-width: 28.2vw;
     }
     & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 14px;
+      font-size: 3.589vw;
       font-style: normal;
       font-weight: 700;
-      line-height: 21px; /* 169.167% */
+      line-height: 5.38vw; /* 169.167% */
       letter-spacing: 0.7px;
     }
     & > p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 10px;
+      font-size: 2.564vw;
       font-style: normal;
       font-weight: 500;
-      line-height: 18px; /* 290% */
+      line-height: 4.615vw; /* 290% */
       letter-spacing: 0.5px;
     }
   }
