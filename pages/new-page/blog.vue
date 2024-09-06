@@ -22,7 +22,10 @@
             <div><img :src="item.img" alt="" /></div>
           </div>
           <div>
-            <div v-html="item.headline"></div>
+            <div>
+              <div>{{ item.typeTag }}</div>
+              <div>{{ item.headline }}</div>
+            </div>
             <div>{{ item.desc }}</div>
           </div>
         </a>
@@ -106,7 +109,7 @@ export default {
     async getListBlog() {
       this.loading = true;
       await fetch(
-        `https://admin.hkcmereye.com/api.php/list/32/order/update_time`
+        `https://admin.hkcmereye.com/api.php/list/32`
       )
         .then((response) => response.json())
         .then((res) => {
@@ -116,6 +119,7 @@ export default {
               img: `https://admin.hkcmereye.com${item.ico}`,
               headline: item.title,
               desc: item.ext_list_des,
+              typeTag: item.ext_type_tags,
             };
           });
           this.loading = false;
