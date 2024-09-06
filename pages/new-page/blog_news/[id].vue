@@ -107,7 +107,13 @@ export default {
       font-weight: 300;
       line-height: 35px;
       letter-spacing: 3.75px;
-      text-decoration-line: underline;
+      // text-decoration-line: underline;
+      border-bottom: 1px solid #6d6e71;
+    }
+    & > a:hover {
+      color: #113d85;
+      border-bottom: 1px solid #113d85;
+      font-weight: 400;
     }
   }
   :deep(.content_box) {
@@ -180,7 +186,13 @@ export default {
       font-weight: 300;
       line-height: 30px;
       letter-spacing: 0.6px;
-      text-decoration-line: underline;
+      // text-decoration-line: underline;
+      border-bottom: 1px solid #6d6e71;
+    }
+    & > a:hover {
+      color: #113d85;
+      border-bottom: 1px solid #113d85;
+      font-weight: 400;
     }
   }
   :deep(.content_box) {
