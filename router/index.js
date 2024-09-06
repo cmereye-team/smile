@@ -303,12 +303,18 @@ export const $router = [
     title: '中心設備',
     component: resolve('pages/new-page/equipment.vue')
   },
-  // {
-  //   path: '/blog',
-  //   name: 'blog',
-  //   title: '科普知識',
-  //   component: resolve('pages/new-page/blog.vue')
-  // }
+  {
+    path: '/blog',
+    name: 'blog',
+    title: '科普知識',
+    component: resolve('pages/new-page/blog.vue')
+  },
+  {
+    path: '/blog/:slug',
+    name: 'blog:slug',
+    title: '科普知識',
+    component: resolve('pages/new-page/blog_news/[id].vue')
+  }
 ]
 
 

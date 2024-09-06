@@ -11,29 +11,25 @@
     </Banner>
     <div class="blog-box">
       <H2Tag :title="['科普知識']" />
-      <div class="blog-list">
+      <div class="blog-list" v-loading="loading">
         <a
-          v-for="item in newArray
-            ? newArray.length > 0
-              ? newArray
-              : blogList
-            : blogList"
+          v-for="item in newArray"
           target="_blank"
           :key="item.id"
+          @click="toDetail(item.id)"
         >
           <div>
             <div><img :src="item.img" alt="" /></div>
-            <div>{{ item.tag }}</div>
           </div>
           <div>
-            <div>{{ item.title }}</div>
-            <div>{{ item.text }}</div>
+            <div v-html="item.headline"></div>
+            <div>{{ item.desc }}</div>
           </div>
         </a>
       </div>
     </div>
-    <div class="blog-more" v-if="isMobile"><i></i><i></i><i></i></div>
-    <a class="more-article" @click="getMediaList"> 閱讀更多 </a>
+    <!-- <div class="blog-more" v-if="isMobile"><i></i><i></i><i></i></div> -->
+    <!-- <a class="more-article" @click="getMediaList"> 閱讀更多 </a> -->
     <businessHours />
     <Footer />
     <FooterMobile />
@@ -46,6 +42,7 @@ import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
+import { Loading } from "element-ui";
 export default {
   components: {
     Head,
@@ -89,24 +86,47 @@ export default {
         },
       ],
       newArray: [],
+      loading: true,
     };
   },
   methods: {
-    getMediaList() {
-      let list = this.blogList.slice(0, 4);
-      this.blogList = [...list, ...this.blogList];
-      this.getListArray(this.blogList);
+    // getMediaList() {
+    //   let list = this.blogList.slice(0, 4);
+    //   this.blogList = [...list, ...this.blogList];
+    //   this.getListArray(this.blogList);
+    // },
+    // getListArray(eeeee) {
+    //   this.newArray = eeeee.map((el, index) => {
+    //     return {
+    //       ...el,
+    //       id: index + 1,
+    //     };
+    //   });
+    // },
+    async getListBlog() {
+      this.loading = true;
+      await fetch(
+        `https://admin.hkcmereye.com/api.php/list/32/order/update_time`
+      )
+        .then((response) => response.json())
+        .then((res) => {
+          this.newArray = res.data.map((item, index) => {
+            return {
+              id: item.id,
+              img: `https://admin.hkcmereye.com${item.ico}`,
+              headline: item.title,
+              desc: item.ext_list_des,
+            };
+          });
+          this.loading = false;
+        });
     },
-    getListArray(eeeee) {
-      this.newArray = eeeee.map((el, index) => {
-        return {
-          ...el,
-          id: index + 1,
-        };
-      });
+    toDetail(id) {
+      this.$router.push({ path: `blog/${id}`, params: { id } });
     },
   },
   mounted() {
+    this.getListBlog();
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
@@ -134,9 +154,10 @@ export default {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 85px 50px;
-      max-width: 1270px;
+    max-width: 1270px;
     margin: 0 auto 85px;
     & > a {
+      cursor: pointer;
       max-width: 383px;
       display: flex;
       flex-direction: column;
@@ -172,6 +193,7 @@ export default {
           font-weight: 500;
           line-height: 30px; /* 120% */
           letter-spacing: 5px;
+          text-align: center;
         }
         & > div:nth-child(2) {
           color: #6d6e71;
@@ -247,9 +269,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5.128vw 0;
     & > a {
       margin-bottom: 30px;
-      max-width: 295px;
+      // max-width: 295px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 7.69vw;
       & > div:nth-child(1) {
         position: relative;
         & > div:nth-child(1) {
@@ -280,6 +306,7 @@ export default {
           font-weight: 500;
           line-height: 30px; /* 166.667% */
           letter-spacing: 3.6px;
+          text-align: center;
         }
         & > div:nth-child(2) {
           color: #6d6e71;
@@ -294,6 +321,9 @@ export default {
         }
       }
     }
+  }
+  .blog-box {
+    margin-bottom: 60px;
   }
   .more-article {
     border-radius: 100px;
