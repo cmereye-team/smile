@@ -108,9 +108,7 @@ export default {
     // },
     async getListBlog() {
       this.loading = true;
-      await fetch(
-        `https://admin.hkcmereye.com/api.php/list/32`
-      )
+      await fetch(`https://admin.hkcmereye.com/api.php/list/32`)
         .then((response) => response.json())
         .then((res) => {
           this.newArray = res.data.map((item, index) => {
@@ -273,7 +271,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5.128vw 0;
+    gap: 6.92vw 0;
     & > a {
       margin-bottom: 30px;
       // max-width: 295px;
@@ -302,6 +300,8 @@ export default {
       }
       & > div:nth-child(2) {
         margin-top: 30px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #afafaf;
         & > div:nth-child(1) {
           color: #4570b6;
           font-family: "Noto Sans HK";
@@ -323,6 +323,11 @@ export default {
           letter-spacing: 2.8px;
           padding: 0 29px;
         }
+      }
+    }
+    & > a:last-child {
+      & > div:nth-child(2) {
+        border-bottom: none;
       }
     }
   }

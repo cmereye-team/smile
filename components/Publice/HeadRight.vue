@@ -183,6 +183,24 @@ export default {
           ],
         },
         {
+          id: 7,
+          path: "",
+          name: "矯視資訊",
+          childType: true,
+          childList: [
+            {
+              id: 1,
+              path: "/video",
+              name: "個案分享",
+            },
+            // {
+            //   id: 2,
+            //   path: "/blog",
+            //   name: "Blog",
+            // },
+          ],
+        },
+        {
           id: 6,
           path: "/contact-us",
           name: "聯絡我們",

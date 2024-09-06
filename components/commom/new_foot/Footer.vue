@@ -18,11 +18,12 @@
         <DetailOption :group="OrthopedicList" />
         <DetailOption :group="diagnosisInstructionsList" />
         <DetailOption :group="faq" />
-        <DetailOption :group="contactUs" />
+        <DetailOption :group="newVideo" />
         <DetailOption :group="ophthalmicConsultation" />
         <DetailOption :group="reservationService" />
-        <DetailOption :group="video" />
-        <DetailOption :group="share" />
+        <!-- <DetailOption :group="video" /> -->
+        <!-- <DetailOption :group="share" /> -->
+        <DetailOption :group="contactUs" />
       </div>
       <div class="copyright">
         <div class="flex md:mb-5 justify-center items-center">
@@ -143,12 +144,13 @@
             <DetailOption :group="OrthopedicList" />
             <DetailOption :group="diagnosisInstructionsList" />
             <DetailOption :group="faq" />
+            <DetailOption :group="newVideo" />
             <DetailOption :group="contactUs" />
             <DetailOption :group="ophthalmicConsultation" />
             <DetailOption :group="reservationService" />
             <DetailOption :group="video" />
             <DetailOption :group="share" />
-            <div></div>
+            <!-- <div></div> -->
           </div>
           <div v-else class="pathLink">
             <!-- <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'" />
@@ -164,6 +166,7 @@
             <DetailOption :group="ophthalmicConsultation" />
             <DetailOption :group="OrthopedicList" />
             <DetailOption :group="reservationService" />
+            <DetailOption :group="newVideo" />
             <DetailOption :group="diagnosisInstructionsList" />
             <DetailOption :group="video" />
             <DetailOption :group="faq" />
@@ -351,6 +354,17 @@ export default {
       contactUs: {
         main_nav: this.$t("home.headers.contactUs"),
         link: "/contact-us",
+      },
+      newVideo: {
+        main_nav: "矯視資訊",
+        link: "",
+        child_list: [
+          {
+            child_item: "Blog",
+            link: "/blog",
+          },
+          { child_item: this.$t("home.headers.casesSharing"), link: "/video" },
+        ],
       },
       ophthalmicConsultation: {
         main_nav: this.$t("home.headers.ophthalmicConsultation"),
