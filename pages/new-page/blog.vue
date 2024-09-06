@@ -218,6 +218,23 @@ export default {
         }
       }
     }
+    & > a:hover {
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          transition: all 0.3s;
+          & > img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      &>div:nth-child(2) {
+        & > div:nth-child(1) {
+          background: #4570b6;
+          color: #fff;
+          padding-bottom: 3px;
+        }
+      }
+    }
   }
   .more-article {
     border-radius: 100px;
