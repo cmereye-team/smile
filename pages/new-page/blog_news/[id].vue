@@ -49,7 +49,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.description, 
+          content: this.description,
         },
         {
           hid: "keywords",
@@ -262,6 +262,15 @@ export default {
     }
   }
   :deep(.content_box) {
+    h2::before {
+      content: none !important;
+    }
+    h2::after {
+      content: none !important;
+    }
+    h2 {
+      border: none !important;
+    }
     max-width: 960px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -303,6 +312,50 @@ export default {
       letter-spacing: 8px;
       margin: 24px auto;
       text-align: center;
+    }
+    .table_box,
+    .table_box_2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .h3_box {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px; /* 120% */
+      letter-spacing: 2.25px;
+      text-align: left;
+    }
+    .firstRow {
+      & > td {
+        p {
+          color: #fff;
+          margin-bottom: 0;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+      & > td:nth-child(1) {
+        width: 120px;
+      }
+      & > td:nth-child(2) {
+        width: 140px;
+      }
+      & > td:nth-child(3) {
+        width: 140px;
+      }
+    }
+    ul > li {
+      p {
+        text-align: left;
+      }
+    }
+    .list-paddingleft-2 {
+      padding-left: 20px;
     }
   }
 }
