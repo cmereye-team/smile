@@ -4,7 +4,7 @@
     <div class="content_box" v-loading="loading">
       <div class="_data">{{ essay.content }}</div>
       <div v-html="essay.content"></div>
-      <div class="source">
+      <div v-if="essay.source" class="source">
         <div>資料來源：</div>
         <a :href="essay.source" target="_blank">{{ essay.author }}</a>
       </div>
@@ -37,6 +37,26 @@ export default {
         source: "",
       },
       loading: true,
+      browserTitle: "",
+      description: "",
+      keywords: "",
+    };
+  },
+  head() {
+    return {
+      title: this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.description, 
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: this.keywords,
+        },
+      ],
     };
   },
   created() {
@@ -54,6 +74,9 @@ export default {
         })
         .then((res) => {
           this.loading = false; // 加载完成
+          this.browserTitle = res.data.subtitle;
+          this.description = res.data.description;
+          this.keywords = res.data.keywords;
           this.essay = {
             essay_title: res.data.title,
             author: res.data.author,
@@ -126,7 +149,6 @@ export default {
     }
     p {
       color: #6d6e71;
-      text-align: center;
       font-family: "Noto Sans HK";
       font-size: 20px;
       font-style: normal;
@@ -155,6 +177,50 @@ export default {
       letter-spacing: 6.25px;
       margin: 54px auto;
       text-align: center;
+    }
+    .table_box,
+    .table_box_2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .h3_box {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 120% */
+      letter-spacing: 4.25px;
+      text-align: left;
+    }
+    .firstRow {
+      & > td {
+        p {
+          color: #fff;
+          margin-bottom: 0;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+      & > td:nth-child(1) {
+        width: 180px;
+      }
+      & > td:nth-child(2) {
+        width: 280px;
+      }
+      & > td:nth-child(3) {
+        width: 280px;
+      }
+    }
+    ul > li {
+      p {
+        text-align: left;
+      }
+    }
+    .list-paddingleft-2 {
+      padding-left: 40px;
     }
   }
 }
