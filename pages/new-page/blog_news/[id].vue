@@ -140,6 +140,15 @@ export default {
     }
   }
   :deep(.content_box) {
+    h2::before {
+      content: none !important;
+    }
+    h2::after {
+      content: none !important;
+    }
+    h2 {
+      border: none !important;
+    }
     max-width: 960px;
     margin: 0 auto;
     margin-top: 145px;
