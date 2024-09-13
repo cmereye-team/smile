@@ -40,7 +40,7 @@
         <client-only>
           <el-collapse v-model="activeNameThree" accordion>
             <el-collapse-item
-              v-for="(item, index) in listsThree"
+              v-for="(item, index) in listsFour"
               :key="index"
               :title="item.title"
               :name="`${index + 1}`"
@@ -55,7 +55,7 @@
         <client-only>
           <el-collapse v-model="activeNameFour" accordion>
             <el-collapse-item
-              v-for="(item, index) in listsFour"
+              v-for="(item, index) in listsThree"
               :key="index"
               :title="item.title"
               :name="`${index + 1}`"
