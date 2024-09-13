@@ -39,7 +39,8 @@ export default {
       { name: 'viewport', content: 'width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'google-site-verification', content: '9eEA_1KUjhpF1Is-gEyDoj-rqmZWl4qlc0qjkPZDoIM' }
+      { name: 'google-site-verification', content: '9eEA_1KUjhpF1Is-gEyDoj-rqmZWl4qlc0qjkPZDoIM' },
+      // { name: 'robots', content: 'noindex' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/static/favicon.ico' },

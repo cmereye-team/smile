@@ -294,6 +294,60 @@ export default {
           ],
         },
       ],
+      canonicalHref: "https://smile.hkcmereye.com/FreQuestions",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/FreQuestions",
+      browserTitle: "常見問題",
+      browserTitleCn: "常见问题",
+    };
+  },
+
+  head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
+    return {
+      title: "常見問題 ",
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "常見問題",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "常見問題",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/FreQuestions",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/FreQuestions",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/FreQuestions",
+        },
+      ],
     };
   },
   mounted() {

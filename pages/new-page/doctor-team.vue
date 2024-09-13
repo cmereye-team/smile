@@ -283,6 +283,39 @@ export default {
           ],
         },
       ],
+      canonicalHref: "https://smile.hkcmereye.com/our-medical-team",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/our-medical-team",
+      browserTitle: "醫生團隊 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "医生团队 - 香港希玛微笑矫视中心",
+    };
+  },
+  head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
+    return {
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "醫生團隊 - 香港希瑪微笑矯視中心",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "香港希瑪微笑矯視中心",
+        },
+      ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/our-medical-team" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/our-medical-team" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/our-medical-team" },
+      ]
     };
   },
 };

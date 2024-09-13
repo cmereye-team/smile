@@ -115,6 +115,12 @@ export default {
     share,
   },
   head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
     return {
       title:
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,

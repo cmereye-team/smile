@@ -336,6 +336,58 @@ export default {
         "https://static.cmereye.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
         "https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png",
       ],
+      canonicalHref: "https://smile.hkcmereye.com/group-profile",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/group-profile",
+      browserTitle: "集團簡介 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "集团简介 - 香港希玛微笑矫视中心",
+    };
+  },
+  head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
+    return {
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "集團簡介 - 香港希瑪微笑矯視中心",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "香港希瑪微笑矯視中心",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/group-profile",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/group-profile",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/group-profile",
+        },
+      ],
     };
   },
   mounted() {

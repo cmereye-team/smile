@@ -1053,6 +1053,12 @@ export default {
     };
   },
   head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
     return {
       title:
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
@@ -1835,7 +1841,6 @@ export default {
       margin: 0 auto;
       & > p:nth-child(2) {
         white-space: normal;
-        
       }
     }
   }

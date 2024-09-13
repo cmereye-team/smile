@@ -49,6 +49,12 @@ export default {
     }
   },
   head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
     return {
       title: "私隱政策 - 香港希瑪微笑矯視中心",
       meta: [

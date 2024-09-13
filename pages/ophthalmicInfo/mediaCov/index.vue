@@ -6,10 +6,8 @@
     <MainBanner />
     <media />
 
-
     <Footer />
     <footers />
-
   </div>
 </template>
 
@@ -22,7 +20,6 @@ import footers from "@/components/commom/foot/footers.vue";
 import MainBanner from "@/components/content/ophthalmicInfo/mediaCov/MainBanner.vue";
 import media from "@/components/content/ophthalmicInfo/mediaCov/media.vue";
 
-
 export default {
   components: { Header, Navbar, Footer, MainBanner, footers, media },
   data() {
@@ -31,21 +28,45 @@ export default {
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/ophthalmicInfo/mediaCov",
       browserTitle: "媒體報導 | 眼科資訊 - 香港希瑪微笑矯視中心",
       browserTitleCn: "媒体报导 | 眼科资讯 - 香港希玛微笑矫视中心",
-    }
-  },
-  head() {
-    return {
-      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
-      link: [
-        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov" },
-        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov" },
-        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/ophthalmicInfo/mediaCov" },
-      ]
     };
   },
-}
+  head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
 
+    return {
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
+      link: [
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/ophthalmicInfo/mediaCov",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 

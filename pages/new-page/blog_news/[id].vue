@@ -43,6 +43,12 @@ export default {
     };
   },
   head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
     return {
       title: this.browserTitle,
       meta: [

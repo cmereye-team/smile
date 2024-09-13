@@ -22,6 +22,12 @@ import eyeTest from "@/components/content/eye-checkup/index.vue";
 export default {
   components: { Header, Navbar, Footer, MainBanner, eyeTest, footers },
   head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
     return {
       title: "預約術前眼睛檢查 - 香港希瑪微笑矯視中心",
       meta: [

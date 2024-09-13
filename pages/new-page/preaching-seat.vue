@@ -301,6 +301,58 @@ export default {
       },
       isMobile: false,
       nowDayMonth: new Date().getMonth() + 1,
+      canonicalHref: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm",
+      browserTitle: "講座 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "講座 - 香港希玛微笑矫视中心",
+    };
+  },
+  head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
+    return {
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "講座 - 香港希瑪微笑矯視中心",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "講座 - 香港希瑪微笑矯視中心",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm",
+        },
+      ],
     };
   },
   computed: {},
@@ -403,7 +455,7 @@ export default {
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = [ "2024-09-07", "2024-09-21"];
+          this.allowedDates = ["2024-09-07", "2024-09-21"];
           break;
         case "clearVisionCentral":
           // clearVision 中环

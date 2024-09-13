@@ -95,6 +95,10 @@ export default {
     return {
       isMobile: false,
       equipmentList: Equipment,
+      canonicalHref: "https://smile.hkcmereye.com/medical-equipment",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/medical-equipment",
+      browserTitle: "中心設備 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "中心设备 - 香港希玛微笑矫视中心",
     };
   },
   methods: {
@@ -123,6 +127,34 @@ export default {
     } else {
       this.isMobile = false;
     }
+  },
+  head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+    return {
+      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "中心設備 - 香港希瑪微笑矯視中心",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "中心設備 - 香港希瑪微笑矯視中心",
+        },
+      ],
+      link: [
+        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/medical-equipment" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/medical-equipment" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/medical-equipment" },
+      ]
+    };
   },
 };
 </script>

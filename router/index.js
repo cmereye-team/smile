@@ -80,13 +80,13 @@ export const $router = [
     title: '常見問題',
     component: resolve('pages/FreQuestions/index.vue'),
   },
-  {
-    path: '/new2',
-    name: 'new2',
-    hash: '#new2',
-    title: '常見問題',
-    component: resolve('pages/FreQuestions/new2-problem.vue'),
-  },
+  // {
+  //   path: '/new2',
+  //   name: 'new2',
+  //   hash: '#new2',
+  //   title: '常見問題',
+  //   component: resolve('pages/FreQuestions/new2-problem.vue'),
+  // },
   {
     path: '/contact-us',
     name: 'contact-us',

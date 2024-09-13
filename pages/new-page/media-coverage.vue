@@ -70,6 +70,58 @@ export default {
           text: "香港人易啲深近視？做完激光矯視都可能有 嚴重眼疾",
         },
       ],
+      canonicalHref: "https://smile.hkcmereye.com/video",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/video",
+      browserTitle: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
+      browserTitleCn: "个案分享及矫视资讯影片 - 香港希玛微笑矫视中心",
+    };
+  },
+  head() {
+    if (this.$i18n.locale === "en") {
+      return {
+        meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      };
+    }
+
+    return {
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/video",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/video",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/video",
+        },
+      ],
     };
   },
   methods: {
