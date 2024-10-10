@@ -310,10 +310,10 @@ export const $router = [
     component: resolve('pages/new-page/blog.vue')
   },
   {
-    path: '/blog/:slug',
-    name: 'blog:slug',
+    path: `/blog/:id?`,
+    name: `blog-id`,
     title: '科普知識',
-    component: resolve('pages/new-page/blog_news/[id].vue')
+    component: resolve(`pages/new-page/blog_news/_id.vue`)
   }
 ]
 

@@ -193,11 +193,11 @@ export default {
               path: "/video",
               name: "個案分享",
             },
-            // {
-            //   id: 2,
-            //   path: "/blog",
-            //   name: "Blog",
-            // },
+            {
+              id: 2,
+              path: "/blog",
+              name: "科普知識",
+            },
           ],
         },
         {

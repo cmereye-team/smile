@@ -66,7 +66,13 @@ export default {
     };
   },
   created() {
-    this.id = this.$route.params.slug;
+    if (Number(this.$route.params.slug) || Number(this.$route.params.id)) {
+      this.id = this.$route.params.slug || this.$route.params.id;
+    } else if (Number(this.$route.path.split("/blog/")[1])) {
+      this.id = this.$route.path.split("/blog/")[1];
+    } else {
+      this.$router.push("/");
+    }
   },
   methods: {
     getArticle() {
@@ -109,6 +115,10 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  :deep(a:hover) {
+    color: #4570b6;
+    font-weight: 500;
+  }
   ._data {
     width: 1px;
     height: 1px;
@@ -140,9 +150,9 @@ export default {
       border-bottom: 1px solid #6d6e71;
     }
     & > a:hover {
-      color: #113d85;
-      border-bottom: 1px solid #113d85;
-      font-weight: 400;
+      color: #4570b6;
+      border-bottom: 1px solid #4570b6;
+      font-weight: 500;
     }
   }
   :deep(.content_box) {

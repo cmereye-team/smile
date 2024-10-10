@@ -217,11 +217,11 @@ export default {
         main_nav: "矯視資訊",
         link: "",
         child_list: [
-          // {
-          //   child_item: "Blog",
-          //   link: "/blog",
-          // },
           { child_item: this.$t("home.headers.casesSharing"), link: "/video" },
+          {
+            child_item: "科普知識",
+            link: "/blog",
+          },
         ],
       },
       diagnosisInstructionsList: {

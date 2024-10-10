@@ -20,7 +20,7 @@
         >
           <div>
             <div><img :src="item.img" alt="" /></div>
-            <nuxt-link :to="`blog/${item.id}`">更多</nuxt-link>
+            <a @click="toDetail(item.id)">更多</a>
           </div>
           <div>
             <div>
@@ -143,8 +143,7 @@ export default {
       newArray: [],
       loading: true,
       canonicalHref: "https://smile.hkcmereye.com/blog",
-      canonicalHrefCN:
-        "https://smile.hkcmereye.com/cn/blog",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/blog",
       browserTitle: "科普知識 - 香港希瑪微笑矯視中心",
       browserTitleCn: "科普知识 - 香港希玛微笑矫视中心",
     };
@@ -169,6 +168,7 @@ export default {
         .then((response) => response.json())
         .then((res) => {
           this.newArray = res.data.map((item, index) => {
+            console.log(item.id == 157, "mmmmmmmmmmm");
             return {
               id: item.id,
               img: `https://admin.hkcmereye.com${item.ico}`,
@@ -177,11 +177,16 @@ export default {
               typeTag: item.ext_type_tags,
             };
           });
+          if (window.location.href == "https://smile.hkcmereye.com/blog") {
+            this.newArray = this.newArray.filter((item) => item.id == 157);
+          } else {
+            this.newArray;
+          }
           this.loading = false;
         });
     },
     toDetail(id) {
-      this.$router.push({ path: `blog/${id}`, params: { id } });
+      this.$router.push({ path: `/blog/${id}`, params: { id } });
     },
   },
   mounted() {
@@ -283,7 +288,7 @@ export default {
           }
         }
       }
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         & > div:nth-child(1) {
           background: #4570b6;
           color: #fff;
