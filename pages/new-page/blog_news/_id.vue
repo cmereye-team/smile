@@ -4,7 +4,7 @@
     <div class="content_box" v-loading="loading">
       <div class="_data">{{ essay.content }}</div>
       <div v-html="essay.content"></div>
-      <div v-if="essay.source" class="source">
+      <div v-if="essay.source && delSource()" class="source">
         <div>資料來源：</div>
         <a :href="essay.source" target="_blank">{{ essay.author }}</a>
       </div>
@@ -68,6 +68,8 @@ export default {
   created() {
     if (Number(this.$route.params.slug) || Number(this.$route.params.id)) {
       this.id = this.$route.params.slug || this.$route.params.id;
+    } else if (Number(window.location.href.split("blog/")[1])) {
+      this.id = window.location.href.split("blog/")[1];
     } else if (Number(this.$route.path.split("/blog/")[1])) {
       this.id = this.$route.path.split("/blog/")[1];
     } else {
@@ -105,6 +107,11 @@ export default {
     // 滚动到页面顶部
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    // del 删除 来源部分
+    delSource() {
+      const articleIds = ["159"];
+      return articleIds.includes(this.id) ? false : true;
     },
   },
   mounted() {

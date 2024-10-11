@@ -43,11 +43,10 @@ export default {
       // { name: 'robots', content: 'noindex' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/asset/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: 'https://smile.hkcmereye.com/asset/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap' },
-
     ]
   },
 

@@ -168,7 +168,6 @@ export default {
         .then((response) => response.json())
         .then((res) => {
           this.newArray = res.data.map((item, index) => {
-            console.log(item.id == 157, "mmmmmmmmmmm");
             return {
               id: item.id,
               img: `https://admin.hkcmereye.com${item.ico}`,
@@ -177,8 +176,9 @@ export default {
               typeTag: item.ext_type_tags,
             };
           });
-          if (window.location.href == "https://smile.hkcmereye.com/blog") {
-            this.newArray = this.newArray.filter((item) => item.id == 157);
+          if (window.location.href == "https://smile.hkcmereye.com/blog" || window.location.href == "https://smile.hkcmereye.com/blog/") {
+            // this.newArray = this.newArray.filter((item) => item.id != 159);
+            this.newArray;
           } else {
             this.newArray;
           }
