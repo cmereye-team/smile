@@ -177,7 +177,7 @@ export default {
             };
           });
           if (window.location.href == "https://smile.hkcmereye.com/blog" || window.location.href == "https://smile.hkcmereye.com/blog/") {
-            // this.newArray = this.newArray.filter((item) => item.id != 159);
+            // this.newArray = this.newArray.filter((item) => item.id != 160);
             this.newArray;
           } else {
             this.newArray;

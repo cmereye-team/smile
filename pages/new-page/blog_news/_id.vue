@@ -133,9 +133,14 @@ export default {
     color: transparent;
     overflow: hidden;
   }
+  :deep(.businessHours) {
+    & > h2 {
+      margin: 80px 0 30px;
+    }
+  }
   .source {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     & > div {
       color: #6d6e71;
       font-family: "Noto Sans HK";
@@ -163,6 +168,40 @@ export default {
     }
   }
   :deep(.content_box) {
+    h1 {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 25px !important;
+      font-style: normal;
+      font-weight: 500 !important;
+      letter-spacing: 6.25px !important;
+      line-height: 30px !important;
+      margin: 80px auto 30px !important;
+      text-align: center;
+      border-bottom: none !important;
+      padding: 0 !important;
+    }
+    h3 {
+      span {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 4.25px;
+        line-height: 30px;
+        text-align: left;
+      }
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 4.25px;
+      line-height: 30px;
+      text-align: left;
+      margin: 30px 0;
+    }
     h2::before {
       content: none !important;
     }
@@ -187,8 +226,12 @@ export default {
       font-weight: 300;
       line-height: 35px; /* 175% */
       letter-spacing: 5px;
-      margin-bottom: 10px;
+      margin: 30px 0;
+      img {
+        margin: 0 auto;
+      }
     }
+
     .headline {
       color: #4570b6;
       font-family: "Noto Sans HK";
@@ -249,6 +292,7 @@ export default {
     ul > li {
       p {
         text-align: left;
+        margin: 0 !important;
       }
     }
     .list-paddingleft-2 {
@@ -306,8 +350,8 @@ export default {
     max-width: 960px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 15px;
-    margin-top: 145px;
+    padding: 0 30px;
+    margin-top: 65px;
     .img_context {
       margin: 30px auto;
       max-width: 870px;
@@ -388,6 +432,67 @@ export default {
     }
     .list-paddingleft-2 {
       padding-left: 20px;
+    }
+  }
+  :deep(.businessHours) {
+    & > h2 {
+      margin: 40px 0 25px;
+    }
+  }
+  :deep(.content_box) {
+    h1 {
+      font-weight: 500 !important;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px !important;
+      font-style: normal;
+      letter-spacing: 5px !important;
+      margin: 40px auto 25px !important;
+      text-align: center;
+      border-bottom: none !important;
+      padding: 0 !important;
+    }
+    h3 {
+      span {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 150% */
+        letter-spacing: 5px;
+        text-align: left;
+      }
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
+      letter-spacing: 5px;
+      text-align: left !important;
+      margin: 25px 0;
+    }
+    p {
+      color: #6d6e71;
+      font-family: "Noto Sans HK";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px; /* 214.286% */
+      letter-spacing: 0.7px;
+      margin: 25px 0;
+      text-align: left !important;
+      img {
+        margin: 0 auto;
+      }
+    }
+    ul > li {
+      p {
+        text-align: left;
+        margin: 0 !important;
+      }
     }
   }
 }
