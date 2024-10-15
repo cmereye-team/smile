@@ -66,15 +66,7 @@ export default {
     };
   },
   created() {
-    if (Number(this.$route.params.slug) || Number(this.$route.params.id)) {
-      this.id = this.$route.params.slug || this.$route.params.id;
-    } else if (Number(window.location.href.split("blog/")[1])) {
-      this.id = window.location.href.split("blog/")[1];
-    } else if (Number(this.$route.path.split("/blog/")[1])) {
-      this.id = this.$route.path.split("/blog/")[1];
-    } else {
-      this.$router.push("/");
-    }
+
   },
   methods: {
     getArticle() {
@@ -115,6 +107,11 @@ export default {
     },
   },
   mounted() {
+    if (Number(this.$route.params.slug) || Number(this.$route.params.id)) {
+      this.id = this.$route.params.slug || this.$route.params.id;
+    } else {
+      this.$router.push("/");
+    }
     this.getArticle(); // 直接在 mounted 钩子中发起请求
   },
 };
@@ -169,6 +166,19 @@ export default {
   }
   :deep(.content_box) {
     h1 {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 25px !important;
+      font-style: normal;
+      font-weight: 500 !important;
+      letter-spacing: 6.25px !important;
+      line-height: 30px !important;
+      margin: 80px auto 30px !important;
+      text-align: center;
+      border-bottom: none !important;
+      padding: 0 !important;
+    }
+    h2 {
       color: #4570b6;
       font-family: "Noto Sans HK";
       font-size: 25px !important;
@@ -441,6 +451,19 @@ export default {
   }
   :deep(.content_box) {
     h1 {
+      font-weight: 500 !important;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px !important;
+      font-style: normal;
+      letter-spacing: 5px !important;
+      margin: 40px auto 25px !important;
+      text-align: center;
+      border-bottom: none !important;
+      padding: 0 !important;
+    }
+    h2 {
       font-weight: 500 !important;
       color: #4570b6;
       text-align: center;
