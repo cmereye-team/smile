@@ -65,9 +65,7 @@ export default {
       ],
     };
   },
-  created() {
-
-  },
+  created() {},
   methods: {
     getArticle() {
       this.loading = true;
@@ -120,6 +118,10 @@ export default {
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   :deep(a:hover) {
+    color: #4570b6;
+    font-weight: 500;
+  }
+  :deep(a) {
     color: #4570b6;
     font-weight: 500;
   }
@@ -376,6 +378,24 @@ export default {
       line-height: 30px; /* 214.286% */
       letter-spacing: 0.7px;
       margin-bottom: 10px;
+      & > a {
+        // color: #6d6e71;
+        font-family: "Noto Sans HK";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+        // text-decoration-line: underline;
+        // border-bottom: 1px solid #6d6e71;
+        color: #113d85;
+        border-bottom: 1px solid #113d85;
+      }
+      & > a:hover {
+        color: #113d85;
+        border-bottom: 1px solid #113d85;
+        font-weight: 400;
+      }
     }
     .headline {
       color: #4570b6;
@@ -386,6 +406,24 @@ export default {
       font-weight: 500;
       line-height: 30px; /* 150% */
       letter-spacing: 3px;
+    }
+    a {
+      // color: #6d6e71;
+      font-family: "Noto Sans HK";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 0.6px;
+      // text-decoration-line: underline;
+      // border-bottom: 1px solid #6d6e71;
+      color: #113d85;
+      border-bottom: 1px solid #113d85;
+    }
+    a:hover {
+      color: #113d85;
+      border-bottom: 1px solid #113d85;
+      font-weight: 400;
     }
     .first_level_heading {
       color: #4570b6;
