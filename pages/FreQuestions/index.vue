@@ -296,6 +296,14 @@ export default {
     padding-top: 10vw;
   }
 }
+:deep(.questions) {
+  h2 {
+    position: relative;
+  }
+  h2::after {
+    bottom: 20px !important;
+  }
+}
 :deep(.el-collapse-item__header) {
   -webkit-background-clip: text;
   background-image: -webkit-linear-gradient(bottom, #81dbec, #4570b6);
@@ -383,7 +391,7 @@ export default {
 @media screen and (max-width: 768px) {
   .questions {
     max-width: 100%;
-    margin: 10vw auto 0;
+    margin: 10vw auto 10vw;
     box-sizing: border-box;
     padding: 0 25px;
     & > div {
