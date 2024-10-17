@@ -241,6 +241,7 @@ export default {
       margin: 30px 0;
       img {
         margin: 0 auto;
+        border-radius: 30px;
       }
     }
 
@@ -309,6 +310,9 @@ export default {
     }
     .list-paddingleft-2 {
       padding-left: 40px;
+    }
+    ul {
+      margin-top: -30px;
     }
   }
 }
@@ -383,16 +387,16 @@ export default {
         font-family: "Noto Sans HK";
         font-size: 12px;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 30px;
         letter-spacing: 0.6px;
         // text-decoration-line: underline;
         // border-bottom: 1px solid #6d6e71;
-        color: #113d85;
-        border-bottom: 1px solid #113d85;
+        color: #4570b6;
+        // border-bottom: 1px solid #113d85;
       }
       & > a:hover {
-        color: #113d85;
+        color: #4570b6;
         border-bottom: 1px solid #113d85;
         font-weight: 400;
       }
@@ -412,13 +416,13 @@ export default {
       font-family: "Noto Sans HK";
       font-size: 12px;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 500;
       line-height: 30px;
       letter-spacing: 0.6px;
       // text-decoration-line: underline;
       // border-bottom: 1px solid #6d6e71;
       color: #113d85;
-      border-bottom: 1px solid #113d85;
+      // border-bottom: 1px solid #113d85;
     }
     a:hover {
       color: #113d85;
@@ -488,6 +492,19 @@ export default {
     }
   }
   :deep(.content_box) {
+    h1:first-child {
+      font-weight: 500 !important;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px !important;
+      font-style: normal;
+      letter-spacing: 5px !important;
+      margin: 39px auto 25px !important;
+      text-align: center;
+      border-bottom: none !important;
+      padding: 0 !important;
+    }
     h1 {
       font-weight: 500 !important;
       color: #4570b6;
@@ -547,7 +564,11 @@ export default {
       text-align: left !important;
       img {
         margin: 0 auto;
+        border-radius: 15px;
       }
+    }
+    ul {
+      margin-top: -25px;
     }
     ul > li {
       p {

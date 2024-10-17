@@ -296,14 +296,14 @@ export default {
     padding-top: 10vw;
   }
 }
-:deep(.questions) {
-  h2 {
-    position: relative;
-  }
-  h2::after {
-    bottom: 20px !important;
-  }
-}
+// :deep(.questions) {
+//   h2 {
+//     position: relative;
+//   }
+//   h2::after {
+//     bottom: 20px !important;
+//   }
+// }
 :deep(.el-collapse-item__header) {
   -webkit-background-clip: text;
   background-image: -webkit-linear-gradient(bottom, #81dbec, #4570b6);

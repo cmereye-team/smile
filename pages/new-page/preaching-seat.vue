@@ -235,6 +235,14 @@
       </div>
       <div class="lecture-image">
         <img
+          src="https://static.cmereye.com/imgs/2024/10/833707d2636b7a97.jpg"
+          alt="11月 中环"
+        />
+        <img
+          src="https://static.cmereye.com/imgs/2024/10/78600558a61d40f7.jpg"
+          alt="11月 旺角"
+        />
+        <img
           src="https://static.cmereye.com/imgs/2024/09/8337078f712ec5ce.jpg"
           alt="10月 中环"
         />
@@ -242,14 +250,14 @@
           src="https://static.cmereye.com/imgs/2024/09/44ef512bfb92c5f1.jpg"
           alt="10月 旺角"
         />
-        <img
+        <!-- <img
           src="https://static.cmereye.com/imgs/2024/08/6d024e7e48e19947.jpg"
           alt="9月 中环"
         />
         <img
           src="https://static.cmereye.com/imgs/2024/08/b544afa210d8f2ef.jpg"
           alt="9月 旺角"
-        />
+        /> -->
       </div>
     </div>
     <businessHours />
@@ -442,35 +450,44 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-09-25",
-            "2024-09-28",
-            "2024-10-02",
-            "2024-10-05",
-            "2024-10-09",
-            "2024-10-12",
-            "2024-10-16",
             "2024-10-19",
             "2024-10-23",
             "2024-10-26",
             "2024-10-30",
+            "2024-11-02",
+            "2024-11-06",
+            "2024-11-09",
+            "2024-11-13",
+            "2024-11-16",
+            "2024-11-20",
+            "2024-11-23",
+            "2024-11-27",
+            "2024-11-30",
           ];
           break;
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2024-09-26",
-            "2024-09-28",
-            "2024-10-10",
-            "2024-10-12",
-            "2024-10-15",
+            "2024-10-24",
             "2024-10-24",
             "2024-10-26",
             "2024-10-29",
+            "2024-11-07",
+            "2024-11-09",
+            "2024-11-12",
+            "2024-11-21",
+            "2024-11-23",
+            "2024-11-26",
           ];
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = ["2024-10-05", "2024-10-19"];
+          this.allowedDates = [
+            "2024-10-19",
+            "2024-11-02",
+            "2024-11-16",
+            "2024-11-30",
+          ];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -479,12 +496,13 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2024-09-24",
-            "2024-10-03",
-            "2024-10-08",
             "2024-10-17",
             "2024-10-22",
             "2024-10-31",
+            "2024-11-05",
+            "2024-11-14",
+            "2024-11-19",
+            "2024-11-28",
           ];
           break;
         default:

@@ -1,8 +1,7 @@
-
 // $font_family_hk:  var(--font_family);
 // $font_family_yh: "微软雅黑";
 
-:root{
+:root {
   --font_family: "Noto Sans HK";
 }
 
@@ -11,60 +10,106 @@
 body {
   font-family: var(--font_family), sans-serif;
   font-size: 15px;
+
   ul {
     list-style-type: none;
   }
+
   .gradient_font {
     display: inline-block;
     background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .gradient_title_bg {
     display: inline-block;
     background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
     color: #ffffff;
   }
-  h2 {  
+
+  h2 {
     text-align: center;
-  //   border-left: 2px solid #dfdfdf;
-  //   border-right: 2px solid #dfdfdf; 
-  //   position: relative;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     height: 0;
-  //     border-top: 2px solid #dfdfdf;
-  //   }
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     height: 0;
-  //     border-top: 2px solid #dfdfdf;
-  //   }
+    position: relative;
+    margin-bottom: 30px;
+    //   border-left: 2px solid #dfdfdf;
+    //   border-right: 2px solid #dfdfdf; 
+    //   position: relative;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     height: 0;
+    //     border-top: 2px solid #dfdfdf;
+    //   }
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     height: 0;
+    //     border-top: 2px solid #dfdfdf;
+    //   }
   }
-}  
-      
+
+  h2::after {
+    bottom: 0 !important;
+  }
+}
+
 // pc端
 @media (min-width: 768px) {
-body {font-family: var(--font_family), sans-serif !important;min-width: 1200px;}
-caption {font-family:  var(--font_family), sans-serif !important;}
-h3 {font-family:  var(--font_family), sans-serif !important;}
-div {font-family:  var(--font_family), sans-serif !important;}
-a {font-family:  var(--font_family), sans-serif !important;}
-td {font-family:  var(--font_family), sans-serif !important;}
- 
-span {font-family:  var(--font_family), sans-serif !important;}
-h2 {font-family:  var(--font_family), sans-serif !important;}
-div {font-family:  var(--font_family), sans-serif !important;}
+  body {
+    font-family: var(--font_family), sans-serif !important;
+    min-width: 1200px;
+  }
 
-.nav-language{margin-left: 26px;}
-.nav-language-new{margin-left: 10px;margin-right: 10px;}
-.nav-bookingservice{min-width:129px;text-align:center;}
+  caption {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  h3 {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  div {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  a {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  td {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  span {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  h2 {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  div {
+    font-family: var(--font_family), sans-serif !important;
+  }
+
+  .nav-language {
+    margin-left: 26px;
+  }
+
+  .nav-language-new {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .nav-bookingservice {
+    min-width: 129px;
+    text-align: center;
+  }
+
   .pc_page_container {
     max-width: 1280px !important;
     margin-left: auto;
@@ -73,9 +118,11 @@ div {font-family:  var(--font_family), sans-serif !important;}
     padding-right: 1rem;
     width: 100%;
   }
+
   .page_container {
     max-width: 1280px !important;
   }
+
   .main_banner {
     .banner {
       max-width: 1280px;
@@ -83,13 +130,14 @@ div {font-family:  var(--font_family), sans-serif !important;}
       background-position: center;
       margin-top: 130px;
     }
-    .section {
 
-    }
+    .section {}
   }
+
   .mbShow {
     display: none !important;
   }
+
   body {
     font-size: 1vw;
     letter-spacing: 0.2vw;
@@ -128,40 +176,50 @@ div {font-family:  var(--font_family), sans-serif !important;}
 
 @media (max-width: 768px) {
   body {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   caption {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   h3 {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   div {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
 
   a {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   td {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   p {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   span {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   h2 {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   div {
-    font-family:  var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif !important;
   }
+
   .page_container {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
   }
+
   // 立即预约按钮
   .btn-yuyue {
     border: 1px solid transparent;
@@ -171,6 +229,7 @@ div {font-family:  var(--font_family), sans-serif !important;}
     background-image: linear-gradient(to right, #fff, #fff),
       linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
     padding: 2.5vw 5vw;
+
     span {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -189,12 +248,15 @@ div {font-family:  var(--font_family), sans-serif !important;}
       text-fill-color: transparent;
     }
   }
+
   .main_banner {
     // margin-top: 23vw;
   }
+
   .pcShow {
     display: none !important;
   }
+
   body {
     // h2 {
     //   font-size: 25px;
@@ -216,7 +278,7 @@ div {font-family:  var(--font_family), sans-serif !important;}
     //   }
     // }
   }
-  
+
   .gradient_font_en {
     max-width: 200px;
   }

@@ -6,7 +6,7 @@
       <template #banner>
         <div class="banner-img">
           <p>ICL<br v-if="isMobile" />植入式隱形眼鏡</p>
-          <p>(ICL implantable contact lenses)</p>
+          <p>(ICL implantable Collamer lenses)</p>
         </div>
       </template>
     </Banner>
@@ -14,7 +14,7 @@
       <H2Tag :title="['植入式隱形眼鏡']" />
       <div class="laser_technology-in">
         <p>
-          植入式隱形眼鏡Implantable Contact Lens
+          植入式隱形眼鏡Implantable Collamer Lens
           (ICL)，又名後房型可植入式隱形屈光晶體植入手術，專為深度近視、遠視、散光客人而設。
         </p>
         <p>
