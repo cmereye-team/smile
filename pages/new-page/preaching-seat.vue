@@ -121,6 +121,7 @@
                     value-format="timestamp"
                     @focus="focusSubDate"
                     clearable
+                    :editable="false"
                   >
                   </el-date-picker>
                 </el-form-item>
@@ -185,8 +186,9 @@
                 <el-form-item label="聯絡電話">
                   <el-input
                     placeholder="請填寫"
-                    type="numberSeat"
-                    v-model="form1.telphoneNumber"
+                    type="number"
+                    v-model.number="form1.telphoneNumber"
+                    number
                     clearable
                   ></el-input>
                 </el-form-item>
@@ -767,6 +769,17 @@ export default {
   .el-picker-panel {
     left: 32px !important;
   }
+  .el-date-picker__header {
+    .el-picker-panel__icon-btn {
+      font-size: 24px !important;
+    }
+  }
+  button[type="button"][aria-label="前一年"] {
+    display: none !important;
+  }
+  button[type="button"][aria-label="后一年"] {
+    display: none !important;
+  }
 }
 </style>
 <style lang="scss" scoped>
@@ -1279,6 +1292,10 @@ export default {
     height: 10.5vw;
     z-index: 9;
     padding: 0;
+  }
+  :deep(.el-picker-panel__icon-btn) {
+    font-size: 24px !important;
+    margin-right: 10px;
   }
   :deep(.el-form) {
     width: 100%;

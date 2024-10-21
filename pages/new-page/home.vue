@@ -958,11 +958,11 @@ export default {
           commit:
             "The service here is excellence with comprehensive assessment and follow up.The surgeon is professional with good explanation of procedures and great surgical outcome.I would definitely recommend this clinic for smile!",
         },
-        {
-          name: "Rosangel Li",
-          date: "4月30日18:26",
-          commit: "Smooth surgery, kind nurses and doctor.Recommend!",
-        },
+        // {
+        //   name: "Rosangel Li",
+        //   date: "4月30日18:26",
+        //   commit: "Smooth surgery, kind nurses and doctor.Recommend!",
+        // },
         {
           name: "覃森仲",
           date: "3月21日17:55",
