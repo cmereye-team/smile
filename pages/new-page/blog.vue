@@ -19,7 +19,7 @@
           @click="toDetail(item.id)"
         >
           <div>
-            <div><img :src="item.img" alt="" /></div>
+            <div><img :src="item.img" :srcset="`${item.imgM} 400w, ${item.img}`" :alt="item.typeTag" /></div>
             <a @click="toDetail(item.id)">更多</a>
           </div>
           <div>
@@ -171,12 +171,16 @@ export default {
             return {
               id: item.id,
               img: `https://admin.hkcmereye.com${item.ico}`,
+              imgM: `https://admin.hkcmereye.com${item.pics}`,
               headline: item.title,
               desc: item.ext_list_des,
               typeTag: item.ext_type_tags,
             };
           });
-          if (window.location.href == "https://smile.hkcmereye.com/blog" || window.location.href == "https://smile.hkcmereye.com/blog/") {
+          if (
+            window.location.href == "https://smile.hkcmereye.com/blog" ||
+            window.location.href == "https://smile.hkcmereye.com/blog/"
+          ) {
             // this.newArray = this.newArray.filter((item) => item.id != 160);
             this.newArray;
           } else {
