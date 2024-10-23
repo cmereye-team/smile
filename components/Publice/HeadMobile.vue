@@ -45,12 +45,12 @@
           />
         </div>
         <div>
-          <!-- <img
+          <img
             src="../../asset/image/common/slideVector.png"
             class="mr-5"
             alt=""
             @click="langDrawer = true"
-          /> -->
+          />
           <div @click="langDrawer = false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="52" height="41" viewBox="0 0 52 41" fill="none">
   <rect width="51.8574" height="41" rx="19" fill="#4570B6"/>
@@ -518,7 +518,8 @@ export default {
   }
 
   .mb_menu_slidefooter {
-        background: #4570B6;
+    background: #4570B6;
+     margin-bottom: 64px;
     &>div:nth-child(1){
       padding-left: 35px;
     margin-top: 43px;

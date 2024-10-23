@@ -15,8 +15,7 @@
               <div :class="$i18n.locale === 'en' ? 'engWidth' : ''">
                 {{ group.main_nav }}
               </div>
-              <span v-if="group.child_list && group.child_list.length > 0"
-                >
+              <span v-if="group.child_list && group.child_list.length > 0">
                 <!-- <img
                   src="https://static.cmereye.com/imgs/2024/10/1c76db8f0df27985.png"
                   alt=""
@@ -321,7 +320,7 @@ export default {
     left: 0;
     display: none;
   }
-  .title div:nth-child(2) div:nth-child(1):hover {
+  .title >div:nth-child(2) div:nth-child(1):hover {
     svg {
       -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
       -moz-transform: rotate(90deg); /* Firefox */
