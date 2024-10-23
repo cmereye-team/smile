@@ -15,7 +15,11 @@
           />
         </svg>
       </div>
-      <div @click="langDrawer = !langDrawer"><i></i><i></i><i></i></div>
+      <div @click="langDrawer = !langDrawer">
+
+        <i></i><i></i><i></i>
+
+        </div>
     </div>
     <div class="langBox" v-if="langBox">
       <nuxt-link
@@ -33,92 +37,128 @@
     </div>
     <div class="mb_menu_box" v-if="langDrawer">
       <div class="mb_menu_close">
-        <div style="padding: 10px">
-          <img class="head_logo" src="@/asset/image/common/Logo.svg" alt="" />
+        <div style="padding-top: 10px; padding-bottom: 10px">
+          <img
+            class="head_logo"
+            src="@/asset/image/common/sliderLogo.svg"
+            alt=""
+          />
         </div>
         <div>
-          <img
-            src="../../asset/image/common/Vector.png"
+          <!-- <img
+            src="../../asset/image/common/slideVector.png"
             class="mr-5"
             alt=""
             @click="langDrawer = true"
-          />
-          <div @click="langDrawer = false"><i></i><i></i></div>
+          /> -->
+          <div @click="langDrawer = false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="41" viewBox="0 0 52 41" fill="none">
+  <rect width="51.8574" height="41" rx="19" fill="#4570B6"/>
+  <path d="M14.6562 11.587H36.6393" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <path d="M14.6562 20.5001H36.6393" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <path d="M14.6562 29.4131H36.6393" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+        
+            
+            <!-- <i></i><i></i> -->
+            </div>
         </div>
       </div>
       <div class="mb_menu_list">
-        <div>
+        <!-- <div>
           <img
             src="https://static.cmereye.com/imgs/2023/08/6fad924059f2fcad.png"
             alt=""
           />
-        </div>
+        </div> -->
         <div>
           <div class="mb_menu_style 2222">
             <DetailOption
               :group="groupList"
               :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'"
+              :dataSrc="''"
             />
 
             <DetailOption
               :group="OrthopedicList"
               :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'"
+              :dataSrc="''"
             />
 
             <DetailOption
               :group="diagnosisInstructionsList"
               :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'"
+              :dataSrc="''"
             />
 
             <DetailOption
               :group="newVideo"
               :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'"
+              :dataSrc="''"
             />
 
-            <DetailOption
-              :group="faq"
-              :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'"
-            />
+            <DetailOption :group="faq" :pcOrMobile="'mobile'" :dataSrc="''" />
 
             <DetailOption
               :group="contactUs"
               :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png'"
+              :dataSrc="''"
             />
 
             <DetailOption
               :group="ophthalmicConsultation"
               :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'"
+              :dataSrc="''"
             />
 
             <DetailOption
               :group="reservationService"
               :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'"
+              :dataSrc="''"
             />
 
-            <DetailOption
-              :group="video"
-              :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"
-            />
+            <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="''" />
 
-            <DetailOption
-              :group="share"
-              :pcOrMobile="'mobile'"
-              :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'"
-            />
+            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="''" />
             <!-- <div style="minwidth: 140px"></div> -->
           </div>
         </div>
       </div>
-      <div class="mb_menu_footer">
+
+      <div class="mb_menu_slidefooter">
+        <div>
+          <a href="https://www.facebook.com/CMER.SMILE"
+            ><img src="@/asset/image/common/SliderFaceBook.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/cmer_smile/"
+            ><img src="@/asset/image/common/SliderIns.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/@cmersmileeyecenter6303"
+            ><img src="@/asset/image/common/SliderYouTuBe.png" alt=""
+          /></a>
+        </div>
+
+                <div>
+          <p>
+            <span
+              >©2023 {{ $t("home.footer.span1")
+              }}{{ $t("home.footer.span2") }}</span
+            >
+            <span>
+              <nuxt-link :to="localePath('/privacy-policy')">{{
+                $t("home.footer.span3")
+              }}</nuxt-link>
+            </span>
+            |
+            <span>
+              <nuxt-link :to="localePath('/disclaimer')">{{
+                $t("home.footer.span4")
+              }}</nuxt-link>
+            </span>
+          </p>
+        </div>
+      </div>
+      <!-- <div class="mb_menu_footer">
         <div>
           <nuxt-link :to="localePath('/')">
             <img class="foot_logo" src="@/asset/image/common/Logo.svg" alt="" />
@@ -154,13 +194,13 @@
             </span>
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import DetailOption from "@/components/commom/option/index.vue";
+import DetailOption from "@/components/commom/option/slide.vue";
 export default {
   components: {
     DetailOption,
@@ -296,12 +336,20 @@ export default {
   .HeadMobile {
     position: relative;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .mb_menu_box {
     position: fixed;
+    background: #4570b6;
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    overflow: auto;
+    padding-bottom: 100px;
+    /* 隐藏滚动条，但仍然可以滚动 */
+    scrollbar-width: none; /* Firefox */
+    // background: #fff;
     width: 100vw;
     height: 100vh;
     z-index: 999;
@@ -416,8 +464,9 @@ export default {
     & > div:nth-child(1) {
       margin: 12px 0;
       margin: 0 17px;
+      padding-left: 10px;
       display: flex;
-      justify-content: center;
+      justify-content: left;
     }
 
     & > div:nth-child(2) {
@@ -468,8 +517,37 @@ export default {
     }
   }
 
+  .mb_menu_slidefooter {
+        background: #4570B6;
+    &>div:nth-child(1){
+      padding-left: 35px;
+    margin-top: 43px;
+    margin-block: 43px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    }
+
+        & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      color: #FFF;
+      text-align: center;
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 222.222% */
+      letter-spacing: 0.9px;
+    }
+
+  }
+
   .mb_menu_footer {
     margin-bottom: 64px;
+    // background: #4570B6;
 
     & > div:nth-child(1) {
       padding: 25px 0;
