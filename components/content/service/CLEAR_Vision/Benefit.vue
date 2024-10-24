@@ -323,7 +323,7 @@ h2 {
   }
   .benefit_list_eng {
     position: relative;
-    z-index: 99;
+    z-index: 90;
     li {
       width: 60%;
       margin: 15px 0;

@@ -15,13 +15,9 @@
           />
         </svg>
       </div>
-      <div @click="langDrawer = !langDrawer">
-
-        <i></i><i></i><i></i>
-
-        </div>
+      <div @click="langDrawer = !langDrawer"><i></i><i></i><i></i></div>
     </div>
-    <div class="langBox" v-if="langBox">
+    <div class="langBox"  v-if="langBox">
       <nuxt-link
         :class="['text-center', $i18n.locale === 'hk' ? 'langBoxClass' : '']"
         :to="switchLocalePath('hk')"
@@ -37,7 +33,7 @@
     </div>
     <div class="mb_menu_box" v-if="langDrawer">
       <div class="mb_menu_close">
-        <div style="padding-top: 10px; padding-bottom: 10px">
+        <div style="padding: 15px 0">
           <img
             class="head_logo"
             src="@/asset/image/common/sliderLogo.svg"
@@ -45,23 +41,50 @@
           />
         </div>
         <div>
-          <img
-            src="../../asset/image/common/slideVector.png"
-            class="mr-5"
-            alt=""
-            @click="langDrawer = true"
-          />
-          <div @click="langDrawer = false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="41" viewBox="0 0 52 41" fill="none">
-  <rect width="51.8574" height="41" rx="19" fill="#4570B6"/>
-  <path d="M14.6562 11.587H36.6393" stroke="white" stroke-width="3" stroke-linecap="round"/>
-  <path d="M14.6562 20.5001H36.6393" stroke="white" stroke-width="3" stroke-linecap="round"/>
-  <path d="M14.6562 29.4131H36.6393" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          <div style="position:relation;">
+            <!-- <img
+              src="../../asset/image/common/slideVector.png"
+              class="mr-5"
+              alt=""
+              @click="langBox = !langBox"
+            /> -->
+            <div @click="langBox = !langBox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+  <path d="M13 0C10.4289 0 7.91543 0.762422 5.7776 2.19088C3.63976 3.61934 1.97351 5.64967 0.98957 8.02511C0.00563168 10.4005 -0.25181 13.0144 0.249797 15.5362C0.751405 18.0579 1.98953 20.3743 3.80761 22.1924C5.62569 24.0105 7.94208 25.2486 10.4638 25.7502C12.9856 26.2518 15.5994 25.9944 17.9749 25.0104C20.3503 24.0265 22.3806 22.3602 23.8091 20.2224C25.2376 18.0846 26 15.5712 26 13C26 9.55218 24.6303 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0ZM24.1731 12.0763H19.2811C19.1579 8.02578 18.2137 4.55 16.77 2.42211C18.8011 3.1499 20.5796 4.44747 21.8925 6.15961C23.2054 7.87174 23.9972 9.92591 24.1731 12.0763ZM13 24.18C10.9474 24.18 8.72367 19.9926 8.5184 13.8758H17.4816C17.2832 20.02 15.0321 24.2074 13 24.2074V24.18ZM8.5184 12.0763C8.72367 5.95947 10.9748 1.7721 13 1.7721C15.0253 1.7721 17.2832 5.95947 17.4816 12.0763H8.5184ZM9.23686 2.42211C7.79318 4.58422 6.84894 8.02578 6.72578 12.0763H1.8337C2.01471 9.93074 2.80882 7.88245 4.1214 6.1756C5.43399 4.46875 7.2097 3.17532 9.23686 2.44946V2.42211ZM1.8337 13.8758H6.69842C6.82158 17.9263 7.76578 21.3679 9.20946 23.53C7.18788 22.7991 5.41842 21.5037 4.11105 19.7973C2.80368 18.0909 2.0133 16.0453 1.8337 13.9032V13.8758ZM16.77 23.53C18.2137 21.3679 19.1579 17.9263 19.2811 13.8758H24.1731C24.0014 16.0308 23.2116 18.0904 21.8985 19.8077C20.5854 21.525 18.8046 22.8269 16.77 23.5574V23.53Z" fill="white"/>
 </svg>
-        
-            
-            <!-- <i></i><i></i> -->
             </div>
+            <div class="langBox" style="position:absolute;top:50px;border:1px solid white;overflow:hidden;" v-if="langBox">
+              <nuxt-link
+                :class="[
+                  'text-center',
+                  $i18n.locale === 'hk' ? 'langBoxClass' : '',
+                ]"
+                :to="switchLocalePath('hk')"
+              >
+                繁体
+              </nuxt-link>
+              <nuxt-link
+                :class="[
+                  'text-center',
+                  $i18n.locale === 'cn' ? 'langBoxClass' : '',
+                ]"
+                :to="switchLocalePath('cn')"
+              >
+                简体
+              </nuxt-link>
+            </div>
+          </div>
+
+          <div class="sliderTop" @click="langDrawer = false">
+       <svg xmlns="http://www.w3.org/2000/svg" width="52" height="41" viewBox="0 0 52 41" fill="none">
+  <rect width="51.8574" height="41" rx="19" fill="white"/>
+  <path d="M14.6562 11.587H36.6393" stroke="#4570B6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M14.6562 20.5001H36.6393" stroke="#4570B6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M14.6562 29.4131H36.6393" stroke="#4570B6" stroke-width="3" stroke-linecap="round"/>
+</svg>
+
+            <!-- <i></i><i></i> -->
+          </div>
         </div>
       </div>
       <div class="mb_menu_list">
@@ -72,8 +95,11 @@
           />
         </div> -->
         <div>
+
+        
           <div class="mb_menu_style 2222">
-            <DetailOption
+              <Slide/>
+            <!-- <DetailOption
               :group="groupList"
               :pcOrMobile="'mobile'"
               :dataSrc="''"
@@ -104,23 +130,18 @@
               :pcOrMobile="'mobile'"
               :dataSrc="''"
             />
-
             <DetailOption
               :group="ophthalmicConsultation"
               :pcOrMobile="'mobile'"
               :dataSrc="''"
             />
-
             <DetailOption
               :group="reservationService"
               :pcOrMobile="'mobile'"
               :dataSrc="''"
             />
-
             <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="''" />
-
-            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="''" />
-            <!-- <div style="minwidth: 140px"></div> -->
+            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="''" /> -->
           </div>
         </div>
       </div>
@@ -138,10 +159,10 @@
           /></a>
         </div>
 
-                <div>
+        <div>
           <p>
             <span
-              >©2023 {{ $t("home.footer.span1")
+              >©2024 {{ $t("home.footer.span1")
               }}{{ $t("home.footer.span2") }}</span
             >
             <span>
@@ -200,10 +221,13 @@
 </template>
 
 <script>
-import DetailOption from "@/components/commom/option/slide.vue";
+import DetailOption from "@/components/commom/option/index.vue";
+import Slide from "@/components/commom/option/side.vue";
+
 export default {
   components: {
     DetailOption,
+    Slide
   },
   data() {
     return {
@@ -335,10 +359,17 @@ export default {
 @media screen and (max-width: 767px) {
   .HeadMobile {
     position: relative;
+    z-index: 93;
   }
   ::-webkit-scrollbar {
     display: none;
   }
+//   .sliderTop{
+//     width: 51.857px;
+// height: 41px;
+// background: #FFF;
+
+//   }
   .mb_menu_box {
     position: fixed;
     background: #4570b6;
@@ -346,13 +377,15 @@ export default {
     left: 0;
     right: 0;
     overflow: auto;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    // padding-bottom: 100px;
     /* 隐藏滚动条，但仍然可以滚动 */
     scrollbar-width: none; /* Firefox */
     // background: #fff;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 93;
   }
   .mbHeaderBox {
     display: flex;
@@ -427,6 +460,8 @@ export default {
     & > div:nth-child(2) {
       display: flex;
       align-items: center;
+   justify-content: space-between;
+        width: 90px;
 
       & > div:nth-child(2) {
         width: 41px;
@@ -518,23 +553,26 @@ export default {
   }
 
   .mb_menu_slidefooter {
-    background: #4570B6;
-     margin-bottom: 64px;
-    &>div:nth-child(1){
-      padding-left: 35px;
-    margin-top: 43px;
-    margin-block: 43px;
+    flex: 1;
+    background: #4570b6;
+    height: auto;
     display: flex;
-    gap: 20px;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    & > div:nth-child(1) {
+      padding-left: 35px;
+      margin-top: 43px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
     }
 
-        & > div:nth-child(2) {
+    & > div:nth-child(2) {
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 42px;
-      color: #FFF;
+      color: #fff;
       text-align: center;
       font-size: 9px;
       font-style: normal;
@@ -543,11 +581,10 @@ export default {
       /* 222.222% */
       letter-spacing: 0.9px;
     }
-
   }
 
   .mb_menu_footer {
-    margin-bottom: 64px;
+    // margin-bottom: 64px;
     // background: #4570B6;
 
     & > div:nth-child(1) {
@@ -569,6 +606,8 @@ export default {
     }
 
     & > div:nth-child(2) {
+   
+
       display: flex;
       align-items: center;
       justify-content: center;

@@ -102,5 +102,9 @@ export default {
     nuxt: {
       host: '0.0.0.0',
     }
+  },
+  server: {
+    host: '0.0.0.0', // 监听所有网络接口
+    port: 3009       // 指定端口号
   }
 }

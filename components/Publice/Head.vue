@@ -101,7 +101,7 @@ export default {
   .head-bg {
     background: #fff;
     width: 100%;
-    z-index: 99;
+    z-index: 91;
     position: fixed;
     top: 0;
     right: 0;
@@ -143,7 +143,7 @@ export default {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 99;
+    z-index: 91;
     background: #fff;
     padding: 15px 20px;
     display: flex;

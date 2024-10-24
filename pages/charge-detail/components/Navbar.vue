@@ -138,7 +138,7 @@ $active_gradient: linear-gradient(#81dbec, #4570b6);
   }
   .nav_bar {
     // position: absolute;
-    z-index: 99;
+    z-index: 91;
     left: 10vw;
     top: 5vw;
   }

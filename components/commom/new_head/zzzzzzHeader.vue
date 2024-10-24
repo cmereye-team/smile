@@ -1325,7 +1325,7 @@ export default {
 .ball {
   position: fixed;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 90;
   width: 20px;
   height: 20px;
   background-color: #f5f7fa;
@@ -1337,7 +1337,7 @@ export default {
 
 .nav {
   position: relative;
-  z-index: 99;
+  z-index: 90;
 }
 
 .menu-line {
@@ -1420,7 +1420,7 @@ $active_gradient: #4570b6;
     .discounts-contact {
       letter-spacing: 0.1em;
       cursor: pointer;
-      z-index: 999;
+      z-index: 90;
       font-weight: 600;
       white-space: nowrap;
       display: flex;
@@ -1530,7 +1530,7 @@ $active_gradient: #4570b6;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 80;
   }
 
   .section_header {
@@ -1741,7 +1741,7 @@ $active_gradient: #4570b6;
   }
 
   .nav-language {
-    z-index: 99;
+    z-index: 80;
   }
 
   .nav-language-box {
@@ -2076,7 +2076,7 @@ $active_gradient: #4570b6;
 
   .section_header {
     position: fixed;
-    z-index: 99;
+    z-index: 80;
     background: #fff;
     width: 100%;
     margin-top: 0;
@@ -2333,7 +2333,7 @@ $active_gradient: #4570b6;
   // background: #4570B6;
   background: #6eb9db;
   border-radius: 32px;
-  z-index: 999;
+  z-index: 80;
   overflow: hidden;
 
   .couponBox {
