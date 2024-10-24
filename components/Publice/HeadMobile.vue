@@ -1,5 +1,5 @@
 <template>
-  <div class="HeadMobile">
+  <div class="HeadMobile"  @touchmove.stop.prevent>
     <div class="mbHeaderBox mb_menu">
       <div @click="langBox = !langBox">
         <svg
@@ -354,22 +354,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+body{
+  overflow: hidden !important;
+}
 @media screen and (min-width: 768px) {
 }
 @media screen and (max-width: 767px) {
   .HeadMobile {
     position: relative;
     z-index: 93;
+    overflow: hidden;
   }
   ::-webkit-scrollbar {
     display: none;
+     scrollbar-width: none; 
   }
-//   .sliderTop{
-//     width: 51.857px;
-// height: 41px;
-// background: #FFF;
-
-//   }
   .mb_menu_box {
     position: fixed;
     background: #4570b6;
@@ -379,13 +378,14 @@ export default {
     overflow: auto;
     display: flex;
     flex-direction: column;
-    // padding-bottom: 100px;
-    /* 隐藏滚动条，但仍然可以滚动 */
+
     scrollbar-width: none; /* Firefox */
-    // background: #fff;
     width: 100vw;
-    height: 100vh;
+    height: 100vh  ;
     z-index: 93;
+
+        height: 100%;
+      overflow: hidden;
   }
   .mbHeaderBox {
     display: flex;
@@ -555,6 +555,7 @@ export default {
   .mb_menu_slidefooter {
     flex: 1;
     background: #4570b6;
+
     height: auto;
     display: flex;
     flex-direction: column;
