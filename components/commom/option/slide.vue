@@ -1,30 +1,34 @@
 <template>
   <div>
-    <div class="optiond">
+    <div class="optiond"  >
       <div v-if="group.link !== '' && group.link.length > 0">
         <nuxt-link class="title" :to="localePath(group.link)">
           <div>
-            <!-- <img
-              v-if="pcOrMobile === 'mobile' && dataSrc.length > 0"
-              :src="dataSrc"
-              alt=""
-            /> -->
           </div>
           <div>
-            <div>
-              <div :class="$i18n.locale === 'en' ? 'engWidth' : ''">
+            <div class="cliHover">
+              <div
+                style="white-space: nowrap"
+                :class="$i18n.locale === 'en' ? 'engWidth' : ''"
+              >
                 {{ group.main_nav }}
               </div>
-              <span v-if="group.child_list && group.child_list.length > 0"
+              <span v-if="group.child_list && group.child_list.length > 0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="15"
+                  viewBox="0 0 8 15"
+                  fill="none"
                 >
-                <!-- <img
-                  src="https://static.cmereye.com/imgs/2024/10/1c76db8f0df27985.png"
-                  alt=""
-              /> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
-  <path d="M0.999999 0.999992L6.62289 7.19033L1 13.3807" stroke="white" stroke-width="1.65076" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-              
+                  <path
+                    d="M0.999999 0.999992L6.62289 7.19033L1 13.3807"
+                    stroke="white"
+                    stroke-width="1.65076"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </span>
             </div>
             <div
@@ -45,7 +49,7 @@
         </nuxt-link>
       </div>
       <div v-else>
-        <div class="title">
+        <div class="title" >
           <div>
             <img
               v-if="pcOrMobile === 'mobile' && dataSrc.length > 0"
@@ -54,23 +58,36 @@
             />
           </div>
           <div>
-            <div>
+            <div :class="clickOption==false?'':'cliHover'" @click="clickOption=!clickOption">
+              {{clickOption}}
               <div :class="$i18n.locale === 'en' ? 'engWidth' : ''">
-                {{ group.main_nav }}
+                 {{ group.main_nav }}
+                 
               </div>
               <div v-if="group.child_list && group.child_list.length > 0">
                 <!-- <img
                   src="https://static.cmereye.com/imgs/2024/10/1c76db8f0df27985.png"
                   alt=""
                 /> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
-  <path d="M0.999999 0.999992L6.62289 7.19033L1 13.3807" stroke="white" stroke-width="1.65076" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                <!-- > -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="15"
+                  viewBox="0 0 8 15"
+                  fill="none"
+                >
+                  <path
+                    d="M0.999999 0.999992L6.62289 7.19033L1 13.3807"
+                    stroke="white"
+                    stroke-width="1.65076"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
             </div>
             <div
-              class="isBlock"
+             :class="clickOption==false?'isBlock':'isBlock'" 
               v-if="group.child_list && group.child_list.length > 0"
             >
               <div :class="[$i18n.locale === 'en' ? 'navEng nav ' : 'nav']">
@@ -94,7 +111,10 @@ export default {
   name: "optiond",
   props: ["group", "pcOrMobile", "dataSrc"],
   data() {
-    return {};
+    return {
+   clickOption:false
+
+    };
   },
   mounted() {
     // const body_t = document.getElementsByTagName('body');
@@ -105,7 +125,7 @@ export default {
 };
 </script>
 
-<style  scoped lang='scss'>
+<style scoped lang='scss'>
 @media screen and (min-width: 789px) {
   .optiond {
     display: flex;
@@ -123,7 +143,8 @@ export default {
     letter-spacing: 2.4px;
     display: flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 99;
+    pointer-events: none;
     & > div:nth-child(2) {
       display: flex;
       align-items: flex-start;
@@ -240,19 +261,16 @@ export default {
         align-items: center;
         padding: 10px 0;
         & > div:nth-child(2) {
-            &>svg{
-                margin-top: 6px;
-                margin-left: 15px;
-            }
+          & > svg {
+            margin-top: 6px;
+            margin-left: 15px;
+          }
           & > img {
-              
-          width: 12px;
-          margin-top: 2px;
-      
+            width: 12px;
+            margin-top: 2px;
           }
         }
         & > span {
-    
           margin-left: 5px;
         }
       }
@@ -295,9 +313,11 @@ export default {
       transform: translateY(-50%);
     }
   }
-  .isBlock {
-    display: none;
+  .cliHover{
+
   }
+
+
   a {
     -webkit-tap-highlight-color: transparent;
   }
@@ -311,7 +331,7 @@ export default {
   .title div:nth-child(2) div:nth-child(1) > div:nth-child(1) {
     position: relative;
   }
-  .title div:nth-child(2) div:nth-child(1) > div:nth-child(1)::before {
+  .cliHover > div:nth-child(1)::before {
     content: "";
     width: 100%;
     height: 1px;
@@ -321,16 +341,30 @@ export default {
     left: 0;
     display: none;
   }
-  .title div:nth-child(2) div:nth-child(1):hover {
-    svg {
-      -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
-      -moz-transform: rotate(90deg); /* Firefox */
-      -ms-transform: rotate(90deg); /* IE 9 */
-      -o-transform: rotate(90deg); /* Opera */
-      transform: rotate(90deg);
-    }
-    & > div:nth-child(1)::before {
-      display: block;
+
+.isBlock{
+  display: none;
+}
+
+
+.title:hover  {
+.isBlock{
+  display: block;
+}
+}
+  .title:hover {
+    .cliHover {
+      svg {
+        -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
+        -moz-transform: rotate(90deg); /* Firefox */
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -o-transform: rotate(90deg); /* Opera */
+        transform: rotate(90deg);
+        transition: all 0.3s ease-in-out;
+      }
+      & > div:nth-child(1)::before {
+        display: block;
+      }
     }
   }
 }
