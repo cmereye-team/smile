@@ -221,7 +221,7 @@ export default {
     margin: 75px auto 80px;
     letter-spacing: 0.1em;
     cursor: pointer;
-    z-index: 99;
+    z-index: 90;
     font-weight: 500;
     white-space: nowrap;
     display: flex;

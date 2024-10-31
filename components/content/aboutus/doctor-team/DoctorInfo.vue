@@ -233,7 +233,7 @@ export default {
 .img_con {
   h3 {
     background: linear-gradient(#4570b6, #81dbec);
-    z-index: 98;
+    z-index: 90;
   }
 }
 
@@ -302,7 +302,7 @@ h2 {
     .overlay {
       width: 100%;
       text-align: center;
-      z-index: 98;
+      z-index: 90;
       box-shadow: -2px 2px 15px rgb(194, 226, 255);
       background: #fff;
       height: 100%;

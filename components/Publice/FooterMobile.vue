@@ -311,7 +311,7 @@ export default {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 2001;
+    z-index: 89;
     padding: 0;
     width: 100vw;
     // overflow-y: hidden;
@@ -362,7 +362,7 @@ export default {
     bottom: 160px;
     right: 15px;
     background: #4570b6;
-    z-index: 9990;
+    z-index: 91;
     display: flex;
     flex-direction: column;
     justify-content: center;

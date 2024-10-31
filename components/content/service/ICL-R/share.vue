@@ -133,7 +133,7 @@ export default {
       margin: 130px auto 75px;
       letter-spacing: 0.1em;
       cursor: pointer;
-      z-index: 999;
+      z-index: 90;
       font-weight: 600;
       white-space: nowrap;
 

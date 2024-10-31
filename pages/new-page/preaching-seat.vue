@@ -782,7 +782,7 @@ export default {
     background: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 91;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1076,7 +1076,7 @@ export default {
     background: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 91;
     display: flex;
     justify-content: center;
     align-items: center;
