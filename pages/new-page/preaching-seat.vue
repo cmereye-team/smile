@@ -244,14 +244,14 @@
           src="https://static.cmereye.com/imgs/2024/10/78600558a61d40f7.jpg"
           alt="11月 旺角"
         />
-        <img
+        <!-- <img
           src="https://static.cmereye.com/imgs/2024/09/8337078f712ec5ce.jpg"
           alt="10月 中环"
         />
         <img
           src="https://static.cmereye.com/imgs/2024/09/44ef512bfb92c5f1.jpg"
           alt="10月 旺角"
-        />
+        /> -->
         <!-- <img
           src="https://static.cmereye.com/imgs/2024/08/6d024e7e48e19947.jpg"
           alt="9月 中环"
@@ -452,10 +452,6 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-10-19",
-            "2024-10-23",
-            "2024-10-26",
-            "2024-10-30",
             "2024-11-02",
             "2024-11-06",
             "2024-11-09",
@@ -470,10 +466,6 @@ export default {
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2024-10-24",
-            "2024-10-24",
-            "2024-10-26",
-            "2024-10-29",
             "2024-11-07",
             "2024-11-09",
             "2024-11-12",
@@ -485,7 +477,6 @@ export default {
         case "smileProMongKok":
           // smilePro 旺角
           this.allowedDates = [
-            "2024-10-19",
             "2024-11-02",
             "2024-11-16",
             "2024-11-30",
@@ -498,8 +489,6 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2024-10-17",
-            "2024-10-22",
             "2024-10-31",
             "2024-11-05",
             "2024-11-14",
