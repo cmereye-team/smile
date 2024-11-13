@@ -263,7 +263,7 @@
       </div>
     </div>
     <businessHours />
-    <div class="dialog-win" v-if="test">
+    <!-- <div class="dialog-win" v-if="test">
       <div>
         <h3>提交信息, 是否继续?</h3>
         <div>
@@ -272,7 +272,7 @@
         </div>
         <div @click="isOpenDialog(1)"><i></i><i></i></div>
       </div>
-    </div>
+    </div> -->
     <Footer />
     <FooterMobile />
   </div>
@@ -394,28 +394,32 @@ export default {
       if (
         this.form1.numberSeat == "" ||
         this.form1.name == "" ||
-        this.form1.telphoneNumber == "" ||
-        this.form1.source == ""
+        this.form1.telphoneNumber == ""
       ) {
         this.$message({
-          message: "请檢查預留位置、聯絡電話、來源資料不能為空！",
+          message: "请檢查預留位置、聯絡電話不能為空！",
           type: "warning",
         });
         return;
       }
       // 郵件不为空，檢查郵箱格式
-      if (
-        this.form1.email !== "" &&
-        (!this.form1.email.includes("@") || !this.form1.email.includes(".com"))
-      ) {
-        this.$message({
-          message: "請檢查郵件格式是否正確！",
-          type: "warning",
-        });
-        return;
-      }
+      // this.form1.email !== "" &&
+      if (this.form1.email !== "") {
+        if (
+          !this.form1.email.includes("@") ||
+          !this.form1.email.includes(".com")
+        ) {
+          this.$message({
+            message: "請檢查郵件格式是否正確！",
+            type: "warning",
+          });
+          return;
+        }
+      } 
+
       console.log(this.form1, this.form, "form");
-      this.isOpenDialog(0);
+      // this.isOpenDialog(0);
+      this.submitForm()
     },
     disabledDate(time) {
       try {
@@ -476,11 +480,7 @@ export default {
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = [
-            "2024-11-02",
-            "2024-11-16",
-            "2024-11-30",
-          ];
+          this.allowedDates = ["2024-11-02", "2024-11-16", "2024-11-30"];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -576,7 +576,7 @@ export default {
       this.form1.siteSource = this.getUrl();
       let dataList = new FormData();
       let _dataList = { ...this.form, ...this.form1 };
-      console.log(_dataList);
+
       _dataList.address = this.getName(_dataList.address);
       _dataList.sex = _dataList.sex == "0" ? "女" : "男";
       _dataList.subdate = `${this.getYearMonthDay(_dataList.subdate)} ${
