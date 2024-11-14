@@ -170,6 +170,12 @@ body {
       padding: 0.2vw 0.5vw;
     }
   }
+  #wati-capi-img{
+    position: fixed !important;
+    bottom: 30px !important;
+    right: auto !important;
+    left: 15px!important;
+  }
 }
 
 // mb端
@@ -281,5 +287,11 @@ body {
 
   .gradient_font_en {
     max-width: 200px;
+  }
+  #wati-capi-img{
+    position: fixed !important;
+    bottom: 120px !important;
+    right: auto !important;
+    left: 15px!important;
   }
 }

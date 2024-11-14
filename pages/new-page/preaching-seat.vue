@@ -244,14 +244,14 @@
           src="https://static.cmereye.com/imgs/2024/10/78600558a61d40f7.jpg"
           alt="11月 旺角"
         />
-        <img
+        <!-- <img
           src="https://static.cmereye.com/imgs/2024/09/8337078f712ec5ce.jpg"
           alt="10月 中环"
         />
         <img
           src="https://static.cmereye.com/imgs/2024/09/44ef512bfb92c5f1.jpg"
           alt="10月 旺角"
-        />
+        /> -->
         <!-- <img
           src="https://static.cmereye.com/imgs/2024/08/6d024e7e48e19947.jpg"
           alt="9月 中环"
@@ -263,7 +263,7 @@
       </div>
     </div>
     <businessHours />
-    <div class="dialog-win" v-if="test">
+    <!-- <div class="dialog-win" v-if="test">
       <div>
         <h3>提交信息, 是否继续?</h3>
         <div>
@@ -272,7 +272,7 @@
         </div>
         <div @click="isOpenDialog(1)"><i></i><i></i></div>
       </div>
-    </div>
+    </div> -->
     <Footer />
     <FooterMobile />
   </div>
@@ -394,28 +394,32 @@ export default {
       if (
         this.form1.numberSeat == "" ||
         this.form1.name == "" ||
-        this.form1.telphoneNumber == "" ||
-        this.form1.source == ""
+        this.form1.telphoneNumber == ""
       ) {
         this.$message({
-          message: "请檢查預留位置、聯絡電話、來源資料不能為空！",
+          message: "请檢查預留位置、聯絡電話不能為空！",
           type: "warning",
         });
         return;
       }
       // 郵件不为空，檢查郵箱格式
-      if (
-        this.form1.email !== "" &&
-        (!this.form1.email.includes("@") || !this.form1.email.includes(".com"))
-      ) {
-        this.$message({
-          message: "請檢查郵件格式是否正確！",
-          type: "warning",
-        });
-        return;
-      }
+      // this.form1.email !== "" &&
+      if (this.form1.email !== "") {
+        if (
+          !this.form1.email.includes("@") ||
+          !this.form1.email.includes(".com")
+        ) {
+          this.$message({
+            message: "請檢查郵件格式是否正確！",
+            type: "warning",
+          });
+          return;
+        }
+      } 
+
       console.log(this.form1, this.form, "form");
-      this.isOpenDialog(0);
+      // this.isOpenDialog(0);
+      this.submitForm()
     },
     disabledDate(time) {
       try {
@@ -452,10 +456,6 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-10-19",
-            "2024-10-23",
-            "2024-10-26",
-            "2024-10-30",
             "2024-11-02",
             "2024-11-06",
             "2024-11-09",
@@ -470,10 +470,6 @@ export default {
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2024-10-24",
-            "2024-10-24",
-            "2024-10-26",
-            "2024-10-29",
             "2024-11-07",
             "2024-11-09",
             "2024-11-12",
@@ -484,12 +480,7 @@ export default {
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = [
-            "2024-10-19",
-            "2024-11-02",
-            "2024-11-16",
-            "2024-11-30",
-          ];
+          this.allowedDates = ["2024-11-02", "2024-11-16", "2024-11-30"];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -498,8 +489,6 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2024-10-17",
-            "2024-10-22",
             "2024-10-31",
             "2024-11-05",
             "2024-11-14",
@@ -587,7 +576,7 @@ export default {
       this.form1.siteSource = this.getUrl();
       let dataList = new FormData();
       let _dataList = { ...this.form, ...this.form1 };
-      console.log(_dataList);
+
       _dataList.address = this.getName(_dataList.address);
       _dataList.sex = _dataList.sex == "0" ? "女" : "男";
       _dataList.subdate = `${this.getYearMonthDay(_dataList.subdate)} ${
