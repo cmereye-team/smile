@@ -34,13 +34,14 @@ export default {
       {
         src: "https://unpkg.com/vue-i18n/dist/vue-i18n.js",
       },
-      {
-        src: "https://demo.leeapps.dev/wati-capi.sdk.js",
-        "data-phone": "69408568",
-        "data-width": "60",
-        "data-height": "60",
-        "data-welcome": "Hello, (WA-01)我想了解更多矯視資訊😎",
-        "data-end": "",
+      {       
+        src: 'https://demo.leeapps.dev/wati-capi.sdk.js',
+        'data-phone': "+85269408569",
+        'data-width': "60",
+        'data-height': "60",
+        'data-welcome': "Hello, (WA-01)我想了解更多矯視資訊",
+        'data-end': "",
+        'data-site':'https://cmersmile.com'
       },
     ],
     meta: [
