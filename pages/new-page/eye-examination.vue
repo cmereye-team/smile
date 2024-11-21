@@ -1774,10 +1774,10 @@ export default {
   data() {
     return {
       isMobile: false,
-      canonicalHref: "https://smile.hkcmereye.com/patient-info",
-      canonicalHrefCN: "https://smile.hkcmereye.com/cn/patient-info",
-      browserTitle: "診症須知 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "诊症须知 - 香港希玛微笑矫视中心",
+      canonicalHref: "https://smile.hkcmereye.com/eye-examination/",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/eye-examination/",
+      browserTitle: "診症須知 - 希瑪微笑矯視中心",
+      browserTitleCn: "诊症须知 - 希玛微笑矫视中心",
     };
   },
   head() {
@@ -1792,19 +1792,19 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "診症須知 - 香港希瑪微笑矯視中心",
+          content: "診症須知 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "診症須知 - 香港希瑪微笑矯視中心",
+          content: "診症須知 - 希瑪微笑矯視中心",
         },
       ],
       link: [
         { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/patient-info" },
-        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/patient-info" },
-        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/patient-info" },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/eye-examination/" },
+        { rel: "alternate", hreflang: "zh-Hant", href: "https://smile.hkcmereye.com/eye-examination/" },
+        { rel: "alternate", hreflang: "zh-Hans", href: "https://smile.hkcmereye.com/cn/eye-examination/" },
 
       ]
     };

@@ -26,8 +26,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/ophthalmicInfo/mediaCov",
-      browserTitle: "媒體報導 | 眼科資訊 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "媒体报导 | 眼科资讯 - 香港希玛微笑矫视中心",
+      browserTitle: "媒體報導 | 眼科資訊 - 希瑪微笑矯視中心",
+      browserTitleCn: "媒体报导 | 眼科资讯 - 希玛微笑矫视中心",
     };
   },
   head() {

@@ -303,7 +303,7 @@
                 </div>
                 <div
                     :class="[$i18n.locale === 'en' ? 'smilePro-prove-in-box smilePro-prove-in-boxEng' : 'smilePro-prove-in-box']">
-                    <div :class="[$i18n.locale === 'en' ? 'smileProSwiper-in smileProSwiper-inEng1' : 'smileProSwiper-in']">
+                    <div :class="[$i18n. === 'en' ? 'smileProSwiper-in smileProSwiper-inEng1' : 'smileProSwiper-in']">
                         <div
                             :class="[$i18n.locale === 'en' ? 'smileProSwiper-in-name smileProSwiper-in-nameEngMb' : 'smileProSwiper-in-name']">
                             {{ $t('service.smilePro.smileProProve.lists[0].name') }}</div>

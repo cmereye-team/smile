@@ -21,7 +21,9 @@
         </div>
         <div>3892 5099</div>
       </a>
-      <nuxt-link to="/booking">預約服務</nuxt-link>
+      <nuxt-link to="/booking">{{
+        $t("home.headers.reservationService")
+      }}</nuxt-link>
       <div class="language">
         <!-- <div class="language-icon">
           <svg
@@ -89,121 +91,121 @@ export default {
         {
           id: 1,
           path: "",
-          name: "關於希瑪",
+          name: this.$t("home.headers.aboutSmile"),
           childType: true,
           childList: [
             {
               id: 1,
               path: "/group-profile",
-              name: "集團及中心簡介",
+              name: this.$t("home.headers.aboutSmileChild_1"),
             },
             {
               id: 2,
               path: "/our-medical-team",
-              name: "醫生團隊",
+              name: this.$t("home.headers.aboutSmileChild_2"),
             },
             {
               id: 3,
               path: "/medical-equipment",
-              name: "中心設備",
+              name: this.$t("home.headers.aboutSmileChild_3"),
             },
           ],
         },
         {
           id: 2,
           path: "",
-          name: "矯視服務",
+          name: this.$t("home.headers.orthopedicServices"),
           childType: true,
           childList: [
             {
               id: 2,
               path: "/smilePro",
-              name: "SMILE Pro微笑激光矯視",
+              name: this.$t("home.headers.orthopedicServicesChild_5"),
             },
             {
               id: 5,
               path: "/vision-correction-icl",
-              name: "ICL植入式隱形眼鏡",
+              name: this.$t("home.headers.orthopedicServicesChild_4"),
             },
             {
               id: 1,
               path: "/vision-correction/relex-smile",
-              name: "SMILE 微笑激光矯視",
+              name: this.$t("home.headers.orthopedicServicesChild_1"),
             },
             {
               id: 3,
               path: "/vision-correction-presbyopia",
-              name: "CMER CLEAR-Vision",
+              name: this.$t("home.headers.orthopedicServicesChild_2"),
             },
             {
               id: 4,
               path: "/vision-correction-lasik",
-              name: "LASIK 激光矯視",
+              name: this.$t("home.headers.orthopedicServicesChild_3"),
             },
           ],
         },
         {
           id: 3,
           path: "/patient-info",
-          name: "診症須知",
+          name: this.$t("home.headers.diagnosisInstructions"),
           childType: false,
         },
         {
           id: 4,
           path: "/fee",
-          name: "收費詳情",
+          name: this.$t("home.headers.feeConsultation"),
           childType: false,
         },
         {
           id: 5,
           path: "",
-          name: "常見問題",
+          name: this.$t("home.headers.commonProblem"),
           childType: true,
           childList: [
             {
               id: 1,
               path: "/FreQuestions#faq-smile",
-              name: "SMILE 微笑激光矯視",
+              name: this.$t("home.headers.commonProblemChild_1"),
             },
             {
               id: 2,
               path: "/FreQuestions#faq-lasik",
-              name: "LASIK 激光矯視",
+              name: this.$t("home.headers.commonProblemChild_2"),
             },
             {
               id: 3,
               path: "/FreQuestions#faq-icl",
-              name: "ICL植入式隱形眼鏡",
+              name: this.$t("home.headers.commonProblemChild_3"),
             },
             {
               id: 4,
               path: "/FreQuestions#faq-presbyopia",
-              name: "CLEAR-Vision",
+              name: this.$t("home.headers.commonProblemChild_4"),
             },
           ],
         },
         {
           id: 7,
           path: "",
-          name: "矯視資訊",
+          name: this.$t("home.headers.feign"),
           childType: true,
           childList: [
             {
               id: 1,
               path: "/video",
-              name: "個案分享",
+              name: this.$t("home.headers.casesSharing"),
             },
             {
               id: 2,
               path: "/blog",
-              name: "科普知識",
+              name: this.$t("home.headers.feign_knowledge"),
             },
           ],
         },
         {
           id: 6,
           path: "/contact-us",
-          name: "聯絡我們",
+          name: this.$t("home.headers.contactUs"),
           childType: false,
         },
       ],
@@ -216,16 +218,23 @@ export default {
       console.log("点击的语言类型： --->", _type);
       // console.log('路径打印',this.switchLocalePath(_type))
       let _path = this.switchLocalePath(_type);
+      localStorage.setItem("lang", _type);
+      console.log("准备跳转的路径： --->", _path);
       this.$router.push(_path);
       var _text = "";
       if (_type === "cn") {
-        _text = "微软雅黑";
+        _text = "Microsoft YaHei";
       } else _text = "Noto Sans HK";
       console.log("准备设置的字体： ===>", _text);
       // console.log(document.documentElement.style)
       document.documentElement.style.setProperty("--font_family", _text); //var(--font_family)
+      var htmlElement = document.documentElement;
+
+      // 更改lang属性
+      htmlElement.setAttribute("lang", "zh-CN");
     },
   },
+
   mounted() {
     // 获取屏幕宽度
     window.addEventListener("resize", () => {

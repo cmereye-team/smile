@@ -1273,7 +1273,7 @@ export default {
       this.$router.push(_path);
       var _text = "";
       if (_type === "cn") {
-        _text = "微软雅黑";
+        _text = "Microsoft YaHei";
       } else _text = "Noto Sans HK";
       console.log("准备设置的字体： ===>", _text);
       // console.log(document.documentElement.style)

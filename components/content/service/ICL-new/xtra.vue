@@ -10,11 +10,11 @@
         </div>
         <div>
           ICL <br />
-          <span>矯視的好處</span>
+          <span>{{$t('Correct.icl.xtra.title')}}</span>
         </div>
       </div>
       <div class="xtra-in-lists">
-        <h2 v-if="isTitleShow" class="title-content">ICL矯視的好處</h2>
+        <h2 v-if="isTitleShow" class="title-content">{{$t('Correct.icl.xtra.title')}}</h2>
         <div class="lists-box">
           <div>
             <div>
@@ -77,12 +77,12 @@
                   />
                 </svg>
               </div>
-              <h3>術後復原快</h3>
+              <h3>{{$t('Correct.icl.xtra.content1.title')}}</h3>
             </div>
             <div>
-              手術以微創技術進<br class="mbShow" />行<span class="mbShow"
+              {{$t('Correct.icl.xtra.content1.text1')}}<br class="mbShow" />行<span class="mbShow"
                 >，</span
-              ><br class="pcShow" />術後復原期短
+              ><br class="pcShow" />{{$t('Correct.icl.xtra.content1.text2')}}
             </div>
           </div>
           <div>
@@ -156,9 +156,9 @@
                   </defs>
                 </svg>
               </div>
-              <h3>手術時間短</h3>
+              <h3>{{$t('Correct.icl.xtra.content2.title')}}</h3>
             </div>
-            <div>最快20-30分鐘<br />內完成矯視</div>
+            <div>{{$t('Correct.icl.xtra.content2.text1')}} <br/> {{$t('Correct.icl.xtra.content2.text2')}}</div>
           </div>
           <div>
             <div>
@@ -193,8 +193,8 @@
                   />
                 </svg>
               </div>
-              <!-- <h3>爲生活<br class="mbShow" />帶來便利</h3> -->
-              <h3>
+              <h3>{{$t('Correct.icl.xtra.optionContent1.text1')}}<br />{{$t('Correct.icl.xtra.optionContent1.text2')}}</h3>
+              <!-- <h3>
                 <svg
                   v-if="isMobile"
                   width="83"
@@ -221,9 +221,9 @@
                     fill="#4570B6"
                   />
                 </svg>
-              </h3>
+              </h3> -->
             </div>
-            <div>矯視後可減低對眼鏡<br />或隱形眼鏡的依賴</div>
+            <div>{{$t('Correct.icl.xtra.content3.text1')}}<br />{{$t('Correct.icl.xtra.content3.text2')}}</div>
           </div>
           <div>
             <div>
@@ -257,9 +257,9 @@
                   />
                 </svg>
               </div>
-              <h3>物料安全</h3>
+              <h3>{{$t('Correct.icl.xtra.content4.title')}}</h3>
             </div>
-            <div>2005年已通過美國<br />FDA認證</div>
+            <div>{{$t('Correct.icl.xtra.content4.text1')}}<br />{{$t('Correct.icl.xtra.content4.text2')}}</div>
           </div>
           <div>
             <div>
@@ -294,12 +294,12 @@
                   />
                 </svg>
               </div>
-              <h3>不會導致<br />乾眼症</h3>
+              <h3>{{$t('Correct.icl.xtra.content5.title')}}<br />{{$t('Correct.icl.xtra.content5.title2')}}</h3>
             </div>
             <div>
-              過程無須切削角<br class="mbShow" />膜，<br
+              {{$t('Correct.icl.xtra.content5.text1')}}<br class="mbShow" />膜，<br
                 class="pcShow"
-              />因此不會導<br class="mbShow" />致乾眼症
+              />{{$t('Correct.icl.xtra.content5.text2')}}<br class="mbShow" />{{$t('Correct.icl.xtra.content5.text3')}}
             </div>
           </div>
           <div>
@@ -370,9 +370,9 @@
                   />
                 </svg>
               </div>
-              <h3>度身訂造<br />治療方案</h3>
+              <h3>{{$t('Correct.icl.xtra.content6.title')}}<br />{{$t('Correct.icl.xtra.content6.title2')}}</h3>
             </div>
-            <div>是一項可還原技術<br />客人可按需要選擇<br />取出ICL</div>
+            <div>{{$t('Correct.icl.xtra.content6.text1')}}<br />{{$t('Correct.icl.xtra.content6.text2')}}<br />{{$t('Correct.icl.xtra.content6.text3')}}</div>
           </div>
         </div>
       </div>

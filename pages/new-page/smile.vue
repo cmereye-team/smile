@@ -5,24 +5,22 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>SMILE 微笑激光矯視</p>
+          <p>{{$t('Correct.smile.bannertitle')}}</p>
           <p>Small Incision Lenticule Extraction</p>
         </div>
       </template>
     </Banner>
     <div class="smile-banner-context">
-      <H2Tag :title="['SMILE矯正原理']" />
+      <H2Tag :title="[$t('Correct.smile.small_title1')]" />
       <div>
-        SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用
-        Carl Zeiss VisuMax
-        激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。
+        {{$t('Correct.smile.small_title1_text1')}}
       </div>
       <div class="smile-pro-btn">
         <a
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
           target="_blank"
           rel="noopener noreferrer"
-          >預約諮詢</a
+          >{{$t('Correct.smile.btn1')}}</a
         >
       </div>
     </div>
@@ -34,7 +32,7 @@
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         target="_blank"
         rel="noopener noreferrer"
-        >預約諮詢</a
+        >{{$t('Correct.smile.btn1')}}</a
       >
     </div>
     <Xtra />
@@ -75,8 +73,8 @@ export default {
         "https://smile.hkcmereye.com/vision-correction/relex-smile",
       canonicalHrefCN:
         "https://smile.hkcmereye.com/cn/vision-correction/relex-smile",
-      browserTitle: "SMILE 微笑激光矯視 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "SMILE 微笑激光矫视 - 香港希玛微笑矫视中心",
+      browserTitle: "SMILE 微笑激光矯視 - 希瑪微笑矯視中心",
+      browserTitleCn: "SMILE 微笑激光矫视 - 希玛微笑矫视中心",
     };
   },
   head() {
@@ -94,7 +92,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "SMILE微笑激光矯視是一種全新近視矯正技術，比LASIK激光矯視更安全、更快捷。香港希瑪微笑矯視中心為你提供免費講座，助你了解更多矯視資訊。",
+            "SMILE微笑激光矯視是一種全新近視矯正技術，比LASIK激光矯視更安全、更快捷。希瑪微笑矯視中心為你提供免費講座，助你了解更多矯視資訊。",
         },
         {
           hid: "keywords",

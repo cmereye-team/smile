@@ -16,10 +16,16 @@
       max-width: 1270px;
     margin-top: 145px;
   }
+  .banner-img > p{
+    font-family:"Microsoft YaHei"!important
+  }
 }
 @media screen and (max-width:767px) {
   .Banner{
     margin-top: 80px;
+  }
+    .banner-img > p{
+    font-family:"Microsoft YaHei" !important
   }
 }
 </style>

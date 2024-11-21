@@ -192,7 +192,7 @@ export default {
           ],
         },
         {
-          main_nav: "矯視資訊",
+          main_nav: this.$t("home.headers.feign"),
           link: "",
           child_list: [
             {
@@ -200,7 +200,7 @@ export default {
               link: "/video",
             },
             {
-              child_item: "科普知識",
+              child_item: this.$t("home.headers.feign_knowledge"),
               link: "/blog",
             },
           ],

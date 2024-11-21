@@ -2,7 +2,7 @@
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-20 mt-10 share-suitable_box">
       <H2Tag
-        :title="['更多ICL植入式', '隱形眼鏡真實個案分享']"
+        :title="[$t('Correct.icl.small_title1'), $t('Correct.icl.small_title2')]"
         class="title-content"
       />
     </div>

@@ -4,7 +4,7 @@
     <Navbar />
     <div class="questions">
       <div id="faq-smile">
-        <H2Tag :title="['SMILE 微笑激光矯視']" />
+        <H2Tag :title="[$t('freQuestios.firstProblem.title')]" />
         <client-only>
           <el-collapse v-model="activeName" accordion>
             <el-collapse-item
@@ -21,7 +21,7 @@
         </client-only>
       </div>
       <div id="faq-lasik">
-        <H2Tag :title="['LASIK 激光矯視']" />
+        <H2Tag :title="[$t('freQuestios.secondProblem.title')]" />
         <client-only>
           <el-collapse v-model="activeNameTwo" accordion>
             <el-collapse-item
@@ -36,7 +36,7 @@
         </client-only>
       </div>
       <div id="faq-icl">
-        <H2Tag :title="['ICL植入式隱形眼鏡']" />
+        <H2Tag :title="[$t('freQuestios.thirtProblem.title')]" />
         <client-only>
           <el-collapse v-model="activeNameThree" accordion>
             <el-collapse-item

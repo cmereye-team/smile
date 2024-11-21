@@ -4,13 +4,13 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>科普知識</p>
+          <p>{{ $t("home.headers.feign_knowledge") }}</p>
           <p>blog</p>
         </div>
       </template>
     </Banner>
     <div class="blog-box">
-      <H2Tag :title="['科普知識']" />
+      <H2Tag :title="[$t('home.headers.feign_knowledge')]" />
       <div class="blog-list" v-loading="loading">
         <a
           v-for="item in newArray"
@@ -19,7 +19,13 @@
           @click="toDetail(item.id)"
         >
           <div>
-            <div><img :src="item.img" :srcset="`${item.imgM} 400w, ${item.img}`" :alt="item.typeTag" /></div>
+            <div>
+              <img
+                :src="item.img"
+                :srcset="`${item.imgM} 400w, ${item.img}`"
+                :alt="item.typeTag"
+              />
+            </div>
             <a @click="toDetail(item.id)">更多</a>
           </div>
           <div>
@@ -72,7 +78,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "香港希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，為受老花困擾人士度身訂造矯視方案，讓客人回復高清視力，改善老花問題。",
+            "希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，為受老花困擾人士度身訂造矯視方案，讓客人回復高清視力，改善老花問題。",
         },
         {
           hid: "keywords",
@@ -144,8 +150,8 @@ export default {
       loading: true,
       canonicalHref: "https://smile.hkcmereye.com/blog",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/blog",
-      browserTitle: "科普知識 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "科普知识 - 香港希玛微笑矫视中心",
+      browserTitle: "科普知識 - 希瑪微笑矯視中心",
+      browserTitleCn: "科普知识 - 希玛微笑矫视中心",
     };
   },
   methods: {
@@ -164,7 +170,15 @@ export default {
     // },
     async getListBlog() {
       this.loading = true;
-      await fetch(`https://admin.hkcmereye.com/api.php/list/32`)
+      let blogUrl = "";
+      if (this.$i18n.locale === "hk") {
+        blogUrl = "https://admin.hkcmereye.com/api.php/list/32";
+      }else{
+        blogUrl = "https://admin.hkcmereye.com/api.php/list/35";
+
+      }
+
+      await fetch(blogUrl)
         .then((response) => response.json())
         .then((res) => {
           this.newArray = res.data.map((item, index) => {

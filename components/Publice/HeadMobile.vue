@@ -283,7 +283,7 @@ export default {
         child_list: [
           { child_item: this.$t("home.headers.casesSharing"), link: "/video" },
           {
-            child_item: "科普知識",
+            child_item:this.$t("home.headers.feign_knowledge"),
             link: "/blog",
           },
         ],
@@ -363,7 +363,7 @@ body{
   .HeadMobile {
     position: relative;
     z-index: 93;
-    overflow: hidden;
+    // overflow: hidden;
   }
   ::-webkit-scrollbar {
     display: none;

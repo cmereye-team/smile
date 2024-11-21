@@ -13,4 +13,5 @@ export default {
         // messages: { cn, hk, en }
         messages: { cn, hk }
     },
+    
 }

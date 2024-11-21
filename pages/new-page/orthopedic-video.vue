@@ -4,13 +4,13 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>矯視資訊影片</p>
+          <p>{{$t('home.headers.videos')}}</p>
           <p>Orthopedic information video</p>
         </div>
       </template>
     </Banner>
     <div class="share-video">
-      <H2Tag :title="['個案分享及矯視資訊影片']" />
+      <H2Tag :title="[$t('home.headers.ophthalmicConsultationChild_1')]" />
       <shareVideo />
     </div>
     <businessHours />
@@ -40,10 +40,10 @@ export default {
   },
   data() {
     return {
-      canonicalHref: "https://smile.hkcmereye.com/video",
-      canonicalHrefCN: "https://smile.hkcmereye.com/cn/video",
-      browserTitle: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "个案分享及矫视资讯影片 - 香港希玛微笑矫视中心",
+      canonicalHref: "https://smile.hkcmereye.com/video/",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/video/",
+      browserTitle: "個案分享及矯視資訊影片 - 希瑪微笑矯視中心",
+      browserTitleCn: "个案分享及矫视资讯影片 - 希玛微笑矫视中心",
     };
   },
   head() {
@@ -60,12 +60,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
+          content: "個案分享及矯視資訊影片 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "個案分享及矯視資訊影片 - 香港希瑪微笑矯視中心",
+          content: "個案分享及矯視資訊影片 - 希瑪微笑矯視中心",
         },
       ],
       link: [
@@ -79,17 +79,17 @@ export default {
         {
           rel: "alternate",
           hreflang: "x-default",
-          href: "https://smile.hkcmereye.com/video",
+          href: "https://smile.hkcmereye.com/video/",
         },
         {
           rel: "alternate",
-          hreflang: "zh-Hant-HK",
-          href: "https://smile.hkcmereye.com/video",
+          hreflang: "zh-Hant",
+          href: "https://smile.hkcmereye.com/video/",
         },
         {
           rel: "alternate",
-          hreflang: "zh-Hans-CN",
-          href: "https://smile.hkcmereye.com/cn/video",
+          hreflang: "zh-Hans",
+          href: "https://smile.hkcmereye.com/cn/video/",
         },
       ],
     };

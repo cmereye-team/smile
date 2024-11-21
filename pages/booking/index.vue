@@ -30,8 +30,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/booking",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/booking",
-      browserTitle: "預約講座 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "预约讲座 - 香港希玛微笑矫视中心",
+      browserTitle: "預約講座 - 希瑪微笑矯視中心",
+      browserTitleCn: "预约讲座 - 希玛微笑矫视中心",
     }
   },
   head() {
@@ -47,12 +47,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "預約講座 - 香港希瑪微笑矯視中心",
+          content: "預約講座 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "預約講座 - 香港希瑪微笑矯視中心",
+          content: "預約講座 - 希瑪微笑矯視中心",
         },
       ],
       link: [

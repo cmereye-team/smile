@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>CMER<br />CLEAR-Vision<br v-if="!isMobile" />老花矯視</p>
+          <p>CMER<br />CLEAR-Vision<br v-if="!isMobile" />{{$t('Correct.correction_presbyopia.bannerTitle2')}}</p>
           <p>(C-MER Lens Exchange Achieving Renewed Vision)</p>
         </div>
       </template>
@@ -15,7 +15,7 @@
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         target="_blank"
         rel="noopener noreferrer"
-        >預約咨詢</a
+        >{{$t('Correct.correction_presbyopia.btn')}}</a
       >
     </div>
     <businessHours />
@@ -47,8 +47,8 @@ export default {
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-presbyopia",
       canonicalHrefCN:
         "https://smile.hkcmereye.com/cn/vision-correction-presbyopia",
-      browserTitle: "老花矯視 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "老花矫视 - 香港希玛微笑矫视中心",
+      browserTitle: "老花矯視 - 希瑪微笑矯視中心",
+      browserTitleCn: "老花矫视 - 希玛微笑矫视中心",
     };
   },
   head() {
@@ -66,7 +66,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "香港希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，為受老花困擾人士度身訂造矯視方案，讓客人回復高清視力，改善老花問題。",
+            "希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，為受老花困擾人士度身訂造矯視方案，讓客人回復高清視力，改善老花問題。",
         },
         {
           hid: "keywords",

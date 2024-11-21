@@ -611,13 +611,20 @@ export default {
     handleLang(_type) {
       console.log('当前的语言类型： --->', this.$i18n.locale)
       if (this.$i18n.locale === _type) return
+      
       console.log('点击的语言类型： --->', _type)
       // console.log('路径打印',this.switchLocalePath(_type))
+
       let _path = this.switchLocalePath(_type)
-      this.$router.push(_path)
+      if(_type=='cn'){
+        _path = '/cn'+_path
+          this.$router.push(_path)
+      }
+
+    
       var _text = ''
       if (_type === 'cn') {
-        _text = '微软雅黑'
+        _text = 'Microsoft YaHei'
       } else (
         _text = 'Noto Sans HK'
       )

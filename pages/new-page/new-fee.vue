@@ -7,62 +7,62 @@
       </template>
     </Banner>
     <div class="new_title_style">
-      <H2Tag :title="['收費詳情']" />
-      <p class="title_sub">本診所絕無其他額外收費</p>
+      <H2Tag :title="[$t('fee.table.title')]" />
+      <p class="title_sub">{{$t('fee.table.sub_title')}}</p>
     </div>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div class="table_left">
           <div></div>
           <div>
-            <div>價錢(單眼)</div>
-            <div>限時優惠 由即日起</div>
+            <div>{{$t('fee.table.content1.text1')}}</div>
+            <div>{{$t('fee.table.content1.text2')}}</div>
           </div>
           <div>
-            <div>價錢(雙眼)</div>
-            <div>限時優惠 由即日起</div>
+            <div>{{$t('fee.table.content2.text1')}}</div>
+            <div>{{$t('fee.table.content2.text2')}}</div>
           </div>
           <div>
-            <div>術前檢查費用</div>
+            <div>{{$t('fee.table.content3.text1')}}</div>
           </div>
           <div>
-            <div>眼睛水潤護理</div>
+            <div>{{$t('fee.table.content4.text1')}}</div>
           </div>
           <div>
-            <div>術後眼部</div>
-            <div>彩光護理</div>
+            <div>{{$t('fee.table.content5.text1')}}</div>
+            <div>{{$t('fee.table.content5.text2')}}</div>
           </div>
           <div>
-            <div>眼科專科醫生</div>
-            <div>檢查</div>
+            <div>{{$t('fee.table.content6.text1')}}</div>
+            <div>{{$t('fee.table.content6.text2')}}</div>
           </div>
           <div>
-            <div>術後覆診</div>
+            <div>{{$t('fee.table.content7.text1')}}</div>
           </div>
           <div>
-            <div>增進手術</div>
+            <div>{{$t('fee.table.content8.text1')}}</div>
           </div>
           <div>
-            <div>無限視光檢查</div>
+            <div>{{$t('fee.table.content9.text1')}}</div>
           </div>
         </div>
         <div class="table_right">
           <div>
             <div>SMILE</div>
-            <div>微笑激光矯視</div>
+            <div>{{$t('fee.table.contentRight.content1.text1')}}</div>
           </div>
           <div>
             <div>SMILE Pro</div>
-            <div>微笑激光矯視</div>
+            <div>{{$t('fee.table.contentRight.content1.text1')}}</div>
           </div>
           <div>
             <div>ICL</div>
-            <div>植入式隱形眼鏡</div>
+            <div>{{$t('fee.table.contentRight.content3.text1')}}</div>
           </div>
           <div>
-            <div>LASIK激光矯視/</div>
-            <div>TPRK經上皮激光</div>
-            <div>角膜切削手術</div>
+            <div>{{$t('fee.table.contentRight.content4.text1')}}</div>
+            <div>{{$t('fee.table.contentRight.content4.text2')}}</div>
+            <div>{{$t('fee.table.contentRight.content4.text3')}}</div>
           </div>
           <div>
             <div>$12,000<sup>^</sup></div>
@@ -71,9 +71,9 @@
             <div>$16,500<sup>^</sup></div>
           </div>
           <div>
-            <div>不帶散光</div>
+            <div>{{$t('fee.table.contentRight.content5.text1')}}</div>
             <div>$38,000<sup>^^</sup></div>
-            <div>帶散光</div>
+            <div>{{$t('fee.table.contentRight.content5.text2')}}</div>
             <div>$42,000<sup>^^</sup></div>
           </div>
           <div>
@@ -87,9 +87,9 @@
             <div>$26,000<sup>^</sup></div>
           </div>
           <div>
-            <div>不帶散光</div>
+            <div>{{$t('fee.table.contentRight.content6.text1')}}</div>
             <div>$64,000<sup>^^</sup></div>
-            <div>帶散光</div>
+            <div>{{$t('fee.table.contentRight.content6.text2')}}</div>
             <div>$68,000<sup>^^</sup></div>
           </div>
           <div>
@@ -238,34 +238,34 @@
         <div class="clear_vision_left">
           <div></div>
           <div>
-            <span>單焦點</span>
-            <span>人工晶體價錢</span>
-            <span>(單眼)</span>
+            <span>{{$t('fee.table.contentLeft.content1.text1')}}</span>
+            <span>{{$t('fee.table.contentLeft.content1.text2')}}</span>
+            <span>{{$t('fee.table.contentLeft.content1.text3')}}</span>
           </div>
           <div>
-            <span>多焦點</span>
-            <span>人工晶體價錢</span>
-            <span>(單眼)</span>
+            <span>{{$t('fee.table.contentLeft.content2.text1')}}</span>
+            <span>{{$t('fee.table.contentLeft.content2.text2')}}</span>
+            <span>{{$t('fee.table.contentLeft.content2.text3')}}</span>
           </div>
-          <div>術前檢查費用</div>
+          <div>{{$t('fee.table.contentLeft.content2.text4')}}</div>
         </div>
         <div class="clear_vision_right">
-          <div>Clear-Vision(老花矯視)</div>
+          <div>{{$t('fee.table.vision_right.title')}}</div>
           <div>
             <span>$20,000 - $35,000</span>
-            <span>(不帶散光)</span>
+            <span>{{$t('fee.table.vision_right.textNoS')}}</span>
           </div>
           <div>
             <span>$23,000 - $41,000</span>
-            <span>(帶散光)</span>
+            <span>{{$t('fee.table.vision_right.textS')}}</span>
           </div>
           <div>
             <span>$26,000 - $51,000</span>
-            <span>(不帶散光)</span>
+            <span>{{$t('fee.table.vision_right.textNoS')}}</span>
           </div>
           <div>
             <span>$31,000 - $51,000</span>
-            <span>(帶散光)</span>
+            <span>{{$t('fee.table.vision_right.textS')}}</span>
           </div>
           <div>$650</div>
         </div>
@@ -276,39 +276,34 @@
         class="meal-btn"
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-14)%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96"
-        >立即預約</a
+        >{{$t('fee.table.btn')}}</a
       >
     </div>
     <div class="ellipse_explain_bg">
       <div class="ellipse_explain">
-        <p>以上為非指定醫生價錢</p>
+        <p>{{$t('fee.textList.text1')}}</p>
         <p>
-          ^指定信用卡（東亞/渣打/滙豐）可享6/12個月免息分期<br />
-          矯視費用已包括術前檢查費用
-          $100(若沒有預約進行矯視，需另外繳付術前檢查費用)<br />
+          {{$t('fee.textList.text2')}}<br />
+          {{$t('fee.textList.text2_1')}}
+          {{$t('fee.textList.text2_2')}}<br />
         </p>
         <p>
-          ^^指定信用卡（東亞/渣打/滙豐）可享6/12/18/24/36個月免息分期<br />
-          矯視費用已包括術前檢查費用
-          $500 (若沒有預約進行矯視，需另外繳付術前檢查費用)<br />
-          #需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費
-        </p>
-        <br />
-        <p>
-          SMILE、SMILE Pro微笑激光矯視及LASIK
-          激光矯視/TPRK經上皮激光角膜切削手術的增進手術需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。
+          {{$t('fee.textList.text3')}}<br />
+          {{$t('fee.textList.text3_1')}}
+          {{$t('fee.textList.text3_2')}}<br />
+          {{$t('fee.textList.text3_3')}}
         </p>
         <br />
         <p>
-          SMILE微笑激光矯視、  LASIK
-          激光矯視/TPRK經上皮激光角膜切削手術及ICL植入式隱形眼鏡的無限視光檢查需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費；SMILE
-          Pro微笑激光矯視的無限視光檢查需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。
+          {{$t('fee.textList.text4')}}
         </p>
         <br />
         <p>
-          SMILE、SMILE Pro微笑激光矯視及LASIK
-          激光矯視/TPRK經上皮激光角膜切削手術當日藥費已包括在矯視套餐收費內，
-          ICL植入式隱形眼鏡的藥費需另外收費。
+         {{$t('fee.textList.text5')}}
+        </p>
+        <br />
+        <p>
+       {{$t('fee.textList.text6')}}
         </p>
       </div>
     </div>
@@ -343,8 +338,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/fee",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/fee",
-      browserTitle: "收費詳情 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "收费详情 - 香港希玛微笑矫视中心",
+      browserTitle: "收費詳情 - 希瑪微笑矯視中心",
+      browserTitleCn: "收费详情 - 希玛微笑矫视中心",
     };
   },
   methods: {
@@ -369,7 +364,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "香港希瑪微笑矯視中心價目清晰，絕無其他額外收費。立即查看各項激光矯視價錢。",
+            "希瑪微笑矯視中心價目清晰，絕無其他額外收費。立即查看各項激光矯視價錢。",
         },
         {
           hid: "keywords",

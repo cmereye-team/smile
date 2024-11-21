@@ -1,0 +1,182 @@
+:root {
+  --font_family: "Noto Sans HK";
+}
+
+body {
+  font-size: 15px;
+}
+body ul {
+  list-style-type: none;
+}
+body .gradient_font {
+  display: inline-block;
+  background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .gradient_title_bg {
+  display: inline-block;
+  background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
+  color: #ffffff;
+}
+body h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+body h2::after {
+  bottom: 0 !important;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-family: var(--font_family), sans-serif !important;
+    min-width: 1200px;
+  }
+  caption {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  h3 {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  div {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  a {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  td {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  span {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  h2 {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  div {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  .nav-language {
+    margin-left: 26px;
+  }
+  .nav-language-new {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .nav-bookingservice {
+    min-width: 129px;
+    text-align: center;
+  }
+  .pc_page_container {
+    max-width: 1280px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+  .page_container {
+    max-width: 1280px !important;
+  }
+  .main_banner .banner {
+    max-width: 1280px;
+    margin: auto;
+    background-position: center;
+    margin-top: 130px;
+  }
+  .mbShow {
+    display: none !important;
+  }
+  body {
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+  }
+  body h3,
+  body .h3 {
+    font-size: 1.2vw;
+    font-weight: 400;
+  }
+  body .gradient_title_bg {
+    padding: 0.2vw 0.5vw;
+  }
+  #wati-capi-img {
+    display: none;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: auto !important;
+    left: 15px !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  caption {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  h3 {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  div {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  a {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  td {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  p {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  span {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  h2 {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  div {
+    font-family: var(--font_family), sans-serif !important;
+  }
+  .page_container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  .btn-yuyue {
+    border: 1px solid transparent;
+    border-radius: 99px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to right, #fff, #fff), linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
+    padding: 2.5vw 5vw;
+  }
+  .btn-yuyue span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 71% */
+    text-align: center;
+    letter-spacing: 0.1em;
+    background: linear-gradient(90deg, #4671b7 -23.33%, #7cd2e7 122.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .pcShow {
+    display: none !important;
+  }
+  .gradient_font_en {
+    max-width: 200px;
+  }
+  #wati-capi-img {
+    display: none !important;
+    position: fixed !important;
+    bottom: 120px !important;
+    right: auto !important;
+    left: 15px !important;
+  }
+}
