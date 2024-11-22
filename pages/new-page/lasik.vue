@@ -5,15 +5,15 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>LASIK<br v-if="isMobile" />激光矯視</p>
+          <p>LASIK<br v-if="isMobile" />{{$t('Correct.lasik.bannerTitle')}}</p>
           <p>Laser-Assisted <br v-if="isMobile" />in Situ Keratomileusis</p>
         </div>
       </template>
     </Banner>
     <div class="laser_technology">
-      <H2Tag :title="['激光技術']" />
+      <H2Tag :title="[$t('service.lasik.mainBanner.title')]" />
       <p class="laser_technology-in">
-        超過20年的歷史，也是流行的矯視方式；利用激光技術，重塑角膜弧度以改善眼睛折射光線能力，從而矯正視力，減低客人對眼鏡和隱形眼鏡的依賴。
+        {{$t('service.lasik.mainBanner.span')}}
       </p>
     </div>
     <div class="principle">
@@ -28,7 +28,7 @@
         </div>
         <h3>
           LASIK<br />
-          激光矯視原理
+          {{$t('service.lasik.principle.title')}}
         </h3>
       </div>
       <div class="principle-img">
@@ -59,13 +59,12 @@
       </div>
       <div class="principle-text">
         <p>
-          LASIK (Laser-Assisted in Situ
-          Keratomileusis)是準分子激光原位角膜磨鑲術，通過激光「打磨」角膜，改變角膜弧度，從而矯正視力。過程中，醫生會先用飛秒激光製作角膜瓣；掀開角膜瓣後，用準分子激光進行角膜切削，再把角膜瓣復位，從而矯正視力。
+          {{$t('service.lasik.principle.span')}}
         </p>
       </div>
     </div>
     <div class="benefits">
-      <H2Tag :title="['LASIK激光矯視的好處']" />
+      <H2Tag :title="[$t('Correct.lasik.small_title1')]" />
       <div class="benefits-lists">
         <div
           class="benefits-lists-in"
@@ -88,7 +87,7 @@
           title="合適對象"
         />
         <!-- <h2>合適對象</h2> -->
-        <H2Tag :title="['合適對象']" />
+        <H2Tag :title="[$t('Correct.lasik.small_title2')]" />
       </div>
       <div class="suitable_object-lists">
         <div
@@ -122,7 +121,7 @@
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-07)%20LASIK%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         target="_blank"
         rel="noopener noreferrer"
-        >預約咨詢</a
+        >{{$t('Correct.icl.iclBtn')}}</a
       >
     </div>
     <businessHours />
@@ -151,52 +150,52 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-lasik",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-lasik",
-      browserTitle: "LASIK激光矯視 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "LASIK激光矫视 - 香港希玛微笑矫视中心",
+      browserTitle: "LASIK激光矯視 - 希瑪微笑矯視中心",
+      browserTitleCn: "LASIK激光矫视 - 希玛微笑矫视中心",
       benefits: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/71f07f2e49ae92d7.png",
-          title: "術後恢復快",
-          text: "最快術後數天可如常生活、工作",
+          title: this.$t('Correct.lasik.benefits.content1.title'),
+          text: this.$t('Correct.lasik.benefits.content1.text'),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/c8c583239e65a1a7.png",
-          title: "手術時間短",
-          text: "大約20至30分鐘完成",
+          title: this.$t('Correct.lasik.benefits.content2.title'),
+          text: this.$t('Correct.lasik.benefits.content2.text'),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/515c3b6fb8d3871d.png",
-          title: "矯視過程輕鬆",
-          text: "快捷、安全少有不適",
+          title: this.$t('Correct.lasik.benefits.content3.title'),
+          text: this.$t('Correct.lasik.benefits.content3.text'),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/a200f81d4d1872a1.png",
-          title: "效果穩定",
-          text: "視力改善滿意度高",
+          title: this.$t('Correct.lasik.benefits.content4.title'),
+          text: this.$t('Correct.lasik.benefits.content4.text'),
         },
       ],
       suitable_object: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
-          text: ["近視1,400度以下", "遠視/散光600度以下"],
-          mbText: ["近視1,400度以下", "遠視/散光600度", "以下"],
+          text: [this.$t('Correct.lasik.suitable_object.content1.text1'), this.$t('Correct.lasik.suitable_object.content1.text2')],
+          mbText: [this.$t('Correct.lasik.suitable_object.content1.mbText1'), this.$t('Correct.lasik.suitable_object.content1.mbText2'), "以下"],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
-          text: ["投考或從事紀律部隊/", "航空業界人士"],
+          text: [this.$t('Correct.lasik.suitable_object.content2.text1'), this.$t('Correct.lasik.suitable_object.content2.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/56f73174b86b2288.png",
-          text: ["熱愛運動"],
+          text: [this.$t('Correct.lasik.suitable_object.content3.text1')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/9f4ca0776e175624.png",
-          text: ["不愛戴隱形眼鏡", "或眼鏡人士"],
+          text: [this.$t('Correct.lasik.suitable_object.content4.text1'), this.$t('Correct.lasik.suitable_object.content4.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
-          text: ["擔心長期配戴隱形眼鏡", "影響眼睛健康人士"],
-          mbText: ["擔心長期配戴", "隱形眼鏡影響眼睛", "健康人士"],
+          text: [this.$t('Correct.lasik.suitable_object.content5.text1'), this.$t('Correct.lasik.suitable_object.content5.text2')],
+          mbText: [this.$t('Correct.lasik.suitable_object.content5.mbText1'), this.$t('Correct.lasik.suitable_object.content5.mbText2'),this.$t('Correct.lasik.suitable_object.content5.mbText3')],
         },
       ],
       isMobile: false,

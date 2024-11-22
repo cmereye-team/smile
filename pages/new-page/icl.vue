@@ -5,34 +5,34 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>ICL<br v-if="isMobile" />植入式隱形眼鏡</p>
+          <p>ICL<br v-if="isMobile" />{{$t('Correct.icl.bannerTitle')}}</p>
           <p>(ICL implantable Collamer lenses)</p>
         </div>
       </template>
     </Banner>
     <div class="laser_technology">
-      <H2Tag :title="['植入式隱形眼鏡']" />
+      <H2Tag :title="[$t('Correct.icl.bannerTitle')]" />
       <div class="laser_technology-in">
+
+     
         <p>
-          植入式隱形眼鏡Implantable Collamer Lens
-          (ICL)，又名後房型可植入式隱形屈光晶體植入手術，專為深度近視、遠視、散光客人而設。
+          {{$t('Correct.icl.content1.p1')}}
         </p>
         <p>
-          手術過程無須切削角膜，把ICL晶體植入眼內，便可獲取高清視力。植入式隱形眼鏡以非激光原理，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料，矯正高度近視、遠視及散光。
+            {{$t('Correct.icl.content1.p2')}}
+          
         </p>
       </div>
     </div>
     <div class="laser_technology">
-      <H2Tag :title="['為何選擇希瑪?']" />
+      <H2Tag :title="[$t('Correct.icl.small_title2')]" />
       <div class="laser_technology-in">
-        <p>希瑪自創辦以來與STAAR Surgical公司建立良好的合作關係逾10年。</p>
+        <p>{{$t('Correct.icl.content2.p1')}}</p>
         <p>
-          2023年，STAAR
-          Surgical公司對希瑪眼科集團的醫療技術、手術品質及服務作出認可，宣佈將希瑪微笑矯視中心設立為首間官方認證EVO
-          ICL 國際培訓中心。
+         {{$t('Correct.icl.content2.p2')}}
         </p>
         <p>
-          希瑪微笑矯視中心往後會繼續致力於ICL方面發展，成為大眾選擇ICL植入式隱形眼鏡的首選!
+         {{$t('Correct.icl.content2.p3')}}
         </p>
       </div>
     </div>
@@ -40,17 +40,14 @@
       <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-        >預約咨詢</a
+        >{{$t('Correct.icl.iclBtn')}}</a
       >
     </div>
     <div class="characteristic">
-      <H2Tag :title="['EVO Visian ICL鏡片', '7大特色']" />
+      <H2Tag :title="[$t('Correct.icl.small_title3'), $t('Correct.icl.small_title3_1')]" />
       <div class="characteristic-text">
         <p>
-          EVO Visian ICL以STAAR Surgical
-          專用的生物相容Collamer專利材質製成。這種材質含有自然存在於體內的膠原蛋白。EVO
-          Visian ICL Collamer
-          技術的獨特優勢使其成為視力矯正鏡片的理想材質，其中包含抗紫外線功能。
+          {{$t('Correct.icl.content3.p1')}}
         </p>
       </div>
       <div class="characteristic-lists">
@@ -129,7 +126,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "香港希瑪微笑矯視中心提供植入式隱形眼鏡 ICL 矯視服務，以創新技術和具生物兼容特質的人工晶體矯正視力，專為深度近視、遠視、散光客人而設。"
+            "希瑪微笑矯視中心提供植入式隱形眼鏡 ICL 矯視服務，以創新技術和具生物兼容特質的人工晶體矯正視力，專為深度近視、遠視、散光客人而設。"
         },
         {
           hid: "keywords",
@@ -170,89 +167,90 @@ export default {
       characteristic: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/e8b1b4b4e7337083.png",
-          title: "紫外線防護",
-          text: ["鏡片有紫外線", "防護功能"],
+          title: this.$t('Correct.icl.characteristic.content1.title'),
+          text: [this.$t('Correct.icl.characteristic.content1.text1'), this.$t('Correct.icl.characteristic.content1.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/b3fc1aae883e10c5.png",
-          title: "與時俱進的靈活度",
-          text: ["ICL鏡片既可永久", "存放眼內亦可還原"],
+          title: this.$t('Correct.icl.characteristic.content2.title'),
+          text: [this.$t('Correct.icl.characteristic.content2.text1'), this.$t('Correct.icl.characteristic.content2.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/9c2e5ca8b04dfc42.png",
-          title: "手術與恢復皆快速",
-          text: ["手術時間短<br />", "復原期短，手術過程", "最快只需20-30分鐘"],
+          title: this.$t('Correct.icl.characteristic.content3.title'),
+          // text: ["手術時間短<br />", "復原期短，手術過程", "最快只需20-30分鐘"],
+          text:[this.$t('Correct.icl.characteristic.content3.text1'),this.$t('Correct.icl.characteristic.content3.text2'),this.$t('Correct.icl.characteristic.content3.text3')]
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/d6dc807847e807c6.png",
-          title: "柔軟服貼",
-          text: ["鏡片柔軟靈活", "易於植入"],
+          title: this.$t('Correct.icl.characteristic.content4.title'),
+          text: [this.$t('Correct.icl.characteristic.content4.text1'), this.$t('Correct.icl.characteristic.content4.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/78bb710a2eee5ce3.png",
-          title: "生物相容性",
-          text: ["ICL鏡片由含有", "膠原蛋白材質製成，", "與眼球互相兼容"],
+          title: this.$t('Correct.icl.characteristic.content5.title'),
+          text: [this.$t('Correct.icl.characteristic.content5.text1'), this.$t('Correct.icl.characteristic.content5.text2'), this.$t('Correct.icl.characteristic.content5.text3')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/bb006854352668ac.png",
-          title: "可取出",
-          text: ["可按需要", "選擇取出鏡片"],
+          title: this.$t('Correct.icl.characteristic.content6.title'),
+          text: [this.$t('Correct.icl.characteristic.content6.text1'), this.$t('Correct.icl.characteristic.content6.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/4fe5d9f2a1065ba4.png",
-          title: "夜間視力",
-          text: ["提供絕佳夜間視力"],
+          title: this.$t('Correct.icl.characteristic.content7.title'),
+          text: [this.$t('Correct.icl.characteristic.content7.text1')],
         },
       ],
       benefits: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/71f07f2e49ae92d7.png",
-          title: "術後恢復快",
-          text: "最快術後數天可如常生活、工作",
+          title: this.$t('Correct.icl.benefits.content1.title'),
+          text:  this.$t('Correct.icl.benefits.content1.text1'),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/c8c583239e65a1a7.png",
-          title: "手術時間短",
-          text: "大約10至15分鐘完成",
+          title: this.$t('Correct.icl.benefits.content2.title'),
+          text: this.$t('Correct.icl.benefits.content2.text1'),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/515c3b6fb8d3871d.png",
-          title: "矯視過程輕鬆",
-          text: "快捷、安全少有不適",
+          title: this.$t('Correct.icl.benefits.content3.title'),
+          text: this.$t('Correct.icl.benefits.content3.text1'),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/a200f81d4d1872a1.png",
-          title: "效果穩定",
-          text: "視力改善滿意度高",
+          title: this.$t('Correct.icl.benefits.content4.title'),
+          text: this.$t('Correct.icl.benefits.content4.text1'),
         },
       ],
       suitable_object: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
-          text: ["近視1,400度以下", "遠視 / 散光600度以下"],
+          text: [this.$t('Correct.icl.suitable_object.content1.text1'), this.$t('Correct.icl.suitable_object.content1.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
-          text: ["投考或從事紀律部隊/", "航空業界人士"],
+          text: [this.$t('Correct.icl.suitable_object.content2.text1'), this.$t('Correct.icl.suitable_object.content2.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/56f73174b86b2288.png",
-          text: ["熱愛運動"],
+          text: [this.$t('Correct.icl.suitable_object.content3.text1')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/9f4ca0776e175624.png",
-          text: ["不愛戴隱形眼鏡", "或眼鏡人士"],
+          text: [this.$t('Correct.icl.suitable_object.content4.text1'), this.$t('Correct.icl.suitable_object.content4.text2')],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
-          text: ["擔心長期配戴隱形眼鏡", "影響眼睛健康人士"],
-          mbText: ["不愛佩戴眼鏡或", "隱形眼鏡"],
+          text: [this.$t('Correct.icl.suitable_object.content5.text1'),this.$t('Correct.icl.suitable_object.content5.text2')],
+          mbText: [this.$t('Correct.icl.suitable_object.content5.mbText1'), this.$t('Correct.icl.suitable_object.content5.mbText2')],
         },
       ],
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-icl",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-icl",
-      browserTitle: "ICL植入式隱形眼鏡 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "ICL植入式隐形眼镜 - 香港希玛微笑矫视中心",
+      browserTitle: "ICL植入式隱形眼鏡 - 希瑪微笑矯視中心",
+      browserTitleCn: "ICL植入式隐形眼镜 - 希玛微笑矫视中心",
     };
   },
   mounted() {

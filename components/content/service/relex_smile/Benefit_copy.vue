@@ -44,32 +44,32 @@ export default {
       benefitList: [
         {
           index: "https://static.cmereye.com/imgs/2023/10/354142daabe14d8c.png",
-          text: "手術簡單",
+          text: this.$t("service.relexSmile.benefit.titleList.title1"),
           des: this.$t("service.relexSmile.benefit.des1"),
         },
         {
           index: "https://static.cmereye.com/imgs/2023/11/b7c2ae0052ddab4b.png",
-          text: "術後復原快",
+          text:  this.$t("service.relexSmile.benefit.titleList.title2"),
           des: this.$t("service.relexSmile.benefit.des2"),
         },
         {
           index: "https://static.cmereye.com/imgs/2023/10/02557c41a9f23654.png",
-          text: "手術時間短",
+          text:  this.$t("service.relexSmile.benefit.titleList.title3"),
           des: this.$t("service.relexSmile.benefit.des3"),
         },
         {
           index: "https://static.cmereye.com/imgs/2023/10/0ae516b4778a67d1.png",
-          text: "術後影響少",
+          text:  this.$t("service.relexSmile.benefit.titleList.title4"),
           des: this.$t("service.relexSmile.benefit.des4"),
         },
         {
           index: "https://static.cmereye.com/imgs/2023/10/cf3f4cd33d880c99.png",
-          text: "微創",
+          text:  this.$t("service.relexSmile.benefit.titleList.title5"),
           des: this.$t("service.relexSmile.benefit.des5"),
         },
         {
           index: "https://static.cmereye.com/imgs/2023/10/615a8a469b1bfa28.png",
-          text: "效果穩定",
+          text:  this.$t("service.relexSmile.benefit.titleList.title6"),
           des: this.$t("service.relexSmile.benefit.des6"),
         },
       ],

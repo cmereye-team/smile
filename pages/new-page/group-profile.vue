@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>集團簡介</p>
+          <p>{{$t('group_profile.bannerTitle')}}</p>
           <p>Group Profile</p>
         </div>
       </template>
@@ -12,20 +12,20 @@
     <div class="group-profile-box">
       <div class="group-profile-explain">
         <div>
-          <H2Tag :title="['集團簡介']" />
+          <H2Tag :title="[$t('group_profile.bannerTitle')]" />
           <div class="explain-header">
             <div class="small-text">
-              香港希瑪國際眼科醫療集團（簡稱：希瑪眼科，股份代碼：3309.HK），由眼科醫生林順潮教授於2012年創辦，總部設於香港，旗下擁有15間醫療機構，包括香港中環眼科中心、旺角中心，和沙田、銅鑼灣、觀塘、元朗和荃灣診所，還有內地深圳、北京、上海、昆明，惠州和珠海的分院。集團員工人數超過900人，是香港首間大型連鎖上市眼科集團。
+              {{$t('group_profile.explain_header.p1')}}
+    
             </div>
             <div>
-              <div class="small-title">希瑪眼科中心</div>
+              <div class="small-title">{{$t('group_profile.explain_header.small_title1')}}</div>
               <div class="small-text">
-                希瑪眼科中心擴展至全港擁有8間眼科診所、2間微笑矯視中心、
-                2間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心（希瑪全資附屬公司）。眼科診所及中心遍佈港、九、新界，交通便利，環境舒適。
+               {{$t('group_profile.explain_header.p2')}}
               </div>
             </div>
             <div>
-              <span>有關希瑪眼科中心資料，詳情請瀏覽: </span
+              <span>{{$t('group_profile.explain_header.p3')}} </span
               ><a
                 href="https://www.hkcmereye.com"
                 target="_blank"
@@ -34,9 +34,9 @@
               >
             </div>
             <div>
-              <div class="small-title">經營理念</div>
+              <div class="small-title">{{$t('group_profile.explain_header.small_title2')}}</div>
               <div class="small-text">
-                我們的集團名稱「希瑪」、「C-MER」，正正反映著我們的理念與執著：
+                {{$t('group_profile.explain_header.small_title2_p1')}}
               </div>
             </div>
           </div>
@@ -44,48 +44,47 @@
             <div>
               <div>C</div>
               <div>
-                <p>專業臨床服務</p>
+                <p> {{$t('group_profile.explain_second.p1')}}</p>
                 <p>Professional Clinical Services</p>
               </div>
             </div>
             <div>
               <div>M</div>
               <div>
-                <p>現代化管理</p>
+                <p>{{$t('group_profile.explain_second.p2')}}</p>
                 <p>Modern Management</p>
               </div>
             </div>
             <div>
               <div>E</div>
               <div>
-                <p>優質教育</p>
+                <p>{{$t('group_profile.explain_second.p3')}}</p>
                 <p>Quality Education</p>
               </div>
             </div>
             <div>
               <div>R</div>
               <div>
-                <p>開創性科研</p>
+                <p>{{$t('group_profile.explain_second.p4')}}</p>
                 <p>Pioneering Research</p>
               </div>
             </div>
             <div>
-              <div style="letter-spacing: 25px">希瑪</div>
+              <div style="letter-spacing: 25px">{{$t('group_profile.explain_second.p5_1')}}</div>
               <div>
-                「希」望為眼睛帶來希望之光；「希瑪」 與 「喜瑪」
-                同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意希瑪眼科憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念
+                {{$t('group_profile.explain_second.p5_2')}}
               </div>
             </div>
             <div>
-              <div>憑藉醫療技術和服務聲譽，我們榮獲：</div>
+              <div> {{$t('group_profile.explain_second.honor')}}</div>
               <div>
                 <p>
-                  2018年香港上市公開招股認購超過1500倍<br
+                  {{$t('group_profile.explain_second.honor_1')}}<br
                     v-if="isMobile"
-                  />(全港十大之一)
+                  />({{$t('group_profile.explain_second.honor_1_2')}})
                 </p>
-                <p>2019年大健康產業創新獎</p>
-                <p>2020年港股「最佳價值醫藥及醫療股公司」大獎</p>
+                <p>{{$t('group_profile.explain_second.honor_2')}}</p>
+                <p>{{$t('group_profile.explain_second.honor_3')}}</p>
               </div>
             </div>
           </div>
@@ -149,39 +148,38 @@
                 />
               </svg>
             </div>
-            <div>中心簡介</div>
+            <div>{{$t('group_profile.profile_center.title')}}</div>
           </div>
           <div>
             <div>
-              「希瑪微笑矯視中心」是上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心，位於中環及旺角港鐵站直達，交通便利。中心環境舒適，為客人提供優質矯視服務。
+              {{$t('group_profile.profile_center.p1')}}
             </div>
             <div>
-              中心團隊由最早將LASIK矯視技術引進香港的林順潮教授帶領，加上11名眼科專科<br
+               {{$t('group_profile.profile_center.p2')}}<br
                 v-if="!isMobile"
-              />醫生、多名註冊視光師及護士組成。醫生經驗豐富，其中有3名為<br
+              />{{$t('group_profile.profile_center.p2_1')}}<br
                 v-if="!isMobile"
-              />「香港十大傑出青年」，在安全、技術各方面都有良好口碑。
+              />{{$t('group_profile.profile_center.p2_2')}}
             </div>
             <div>
-              作為率先引入激光矯視技術的眼科中心，中心符合FDA激光矯視標準：設有符合國際標準的無菌手術室，配備先進的眼科檢查和矯視儀器；為客人作全面、準確的眼科檢查，並根據不同情況定制嚴格且有針對性的矯視方案。
+             {{$t('group_profile.profile_center.p3')}}
             </div>
             <div>
-              中心秉持「度身訂造」原則，提供品質服務：包括SMILE
-              Pro微笑激光矯視、LASIK激光矯視、植入式隱形眼鏡(ICL)，及人工晶體置換術，舒緩有近視、遠視、散光、老花以及白內障客人的困擾，讓客人改善視力，實踐「希．望見美好」的理想。
+             {{$t('group_profile.profile_center.p4')}}
             </div>
           </div>
         </div>
       </div>
       <div class="group-profile-swiper">
-        <H2Tag :title="['中心環境']" />
+        <H2Tag :title="[$t('group_profile.group_profile_swiper.title')]" />
         <div class="swiper-element">
           <swiperhj />
         </div>
         <div>
           <div>
-            <div class="swiper-small-title">希瑪微笑矯視中心位於</div>
+            <div class="swiper-small-title">{{$t('group_profile.group_profile_swiper.p1')}}</div>
             <div class="swiper-small-text">
-              中環中建大廈、旺角雅蘭中心，交通便利易達。
+              {{$t('group_profile.group_profile_swiper.p2')}}
             </div>
           </div>
           <!-- <div>
@@ -252,7 +250,7 @@
                 />
               </svg>
             </div>
-            <div>獲得獎項</div>
+            <div>{{$t('group_profile.group_profile_award.title')}}</div>
           </div>
           <div>
             <div>
@@ -336,10 +334,10 @@ export default {
         "https://static.cmereye.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
         "https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png",
       ],
-      canonicalHref: "https://smile.hkcmereye.com/group-profile",
-      canonicalHrefCN: "https://smile.hkcmereye.com/cn/group-profile",
-      browserTitle: "集團簡介 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "集团简介 - 香港希玛微笑矫视中心",
+      canonicalHref: "https://smile.hkcmereye.com/group-profile/",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/group-profile/",
+      browserTitle: "集團簡介 - 希瑪微笑矯視中心",
+      browserTitleCn: "集团简介 - 希玛微笑矫视中心",
     };
   },
   head() {
@@ -356,12 +354,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "集團簡介 - 香港希瑪微笑矯視中心",
+          content: "集團簡介 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "香港希瑪微笑矯視中心",
+          content: "希瑪微笑矯視中心",
         },
       ],
       link: [
@@ -375,17 +373,17 @@ export default {
         {
           rel: "alternate",
           hreflang: "x-default",
-          href: "https://smile.hkcmereye.com/group-profile",
+          href: "https://smile.hkcmereye.com/group-profile/",
         },
         {
           rel: "alternate",
-          hreflang: "zh-Hant-HK",
-          href: "https://smile.hkcmereye.com/group-profile",
+          hreflang: "zh-Hant",
+          href: "https://smile.hkcmereye.com/group-profile/",
         },
         {
           rel: "alternate",
-          hreflang: "zh-Hans-CN",
-          href: "https://smile.hkcmereye.com/cn/group-profile",
+          hreflang: "zh-Hans",
+          href: "https://smile.hkcmereye.com/cn/group-profile/",
         },
       ],
     };

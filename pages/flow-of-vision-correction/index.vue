@@ -36,12 +36,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "矯視流程 - 香港希瑪微笑矯視中心",
+          content: "矯視流程 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "矯視流程 - 香港希瑪微笑矯視中心",
+          content: "矯視流程 - 希瑪微笑矯視中心",
         },
       ],
       link: [
@@ -56,8 +56,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/flow-of-vision-correction",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/flow-of-vision-correction",
-      browserTitle: "矯視流程 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "矫视流程 - 香港希玛微笑矫视中心",
+      browserTitle: "矯視流程 - 希瑪微笑矯視中心",
+      browserTitleCn: "矫视流程 - 希玛微笑矫视中心",
     }
   },
 };

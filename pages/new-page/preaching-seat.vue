@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>講座</p>
+          <p>{{$t('appointFroms.title')}}</p>
           <p>Lecture</p>
         </div>
       </template>
@@ -58,28 +58,28 @@
                 />
               </svg>
             </div>
-            <div>講座</div>
+            <div>{{$t('appointFroms.title')}}</div>
           </div>
           <div class="lecture-content">
             <div>
-              <p>SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，</p>
-              <p>CMER CLEAR-VISION 老花講座！</p>
+              <p>{{$t('appointFroms.title1')}}</p>
+              <p>{{$t('appointFroms.title2')}}</p>
             </div>
             <div>
-              <p>中環診所：中環畢打街1-3號中建大廈1512室</p>
+              <p>{{$t('appointFroms.p1')}}</p>
               <!-- <p>旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室</p> -->
               <!-- <p>旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室</p> -->
-              <p>旺角診所：旺角彌敦道625及639號雅蘭中心一期1725B室</p>
+              <p>{{$t('appointFroms.p2')}}</p>
               <!-- <p>
                 尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室
               </p> -->
             </div>
             <div class="lecture-form">
               <el-form ref="form" :model="form" label-width="180px">
-                <el-form-item label="選擇地點">
+                <el-form-item :label="$t('appointFroms.title4')">
                   <el-select
                     v-model="form.address"
-                    placeholder="選擇地點"
+                    :placeholder="$t('appointFroms.title4')"
                     @change="changeLocation"
                     clearable
                   >
@@ -88,15 +88,15 @@
                       value="smilerProTsui"
                     ></el-option> -->
                     <el-option
-                      label="Smile Pro 講座-旺角"
+                      :label="$t('appointFroms.content1.title1')"
                       value="smileProMongKok"
                     ></el-option>
                     <el-option
-                      label="Smile講座-中環"
+                      :label="$t('appointFroms.content1.title2')"
                       value="smileCentral"
                     ></el-option>
                     <el-option
-                      label="Smile講座-旺角"
+                      :label="$t('appointFroms.content1.title3')"
                       value="smileMongKok"
                     ></el-option>
                     <!-- <el-option
@@ -104,19 +104,19 @@
                       value="clearVisionCentral"
                     ></el-option> -->
                     <el-option
-                      label="老花講座-旺角"
+                      :label="$t('appointFroms.content1.title4')"
                       value="clearVisionMongKok"
                     ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="預約日期" v-if="form.address !== ''">
+                <el-form-item :label="$t('appointFroms.content1.date')" v-if="form.address !== ''">
                   <el-date-picker
                     v-model="form.subdate"
                     type="date"
                     ref="subdate"
                     popper-class="date-picker-class"
                     :picker-options="startPickerOptions"
-                    placeholder="預約日期"
+                    :placeholder="$t('appointFroms.content1.date')"
                     format=" MM 月 dd 日 yyyy 年"
                     value-format="timestamp"
                     @focus="focusSubDate"
@@ -127,10 +127,9 @@
                 </el-form-item>
               </el-form>
               <p v-if="form.address && form.subdate" class="form-data">
-                您正預約在
+                {{$t('appointFroms.content2.p1')}}
                 <span>{{ nowDayTime }} {{ morningOrAfternoon }}</span> 的
-                <span>{{ getName(form.address) }}</span> 全飛秒SMILE
-                微笑激光矯視講座請填寫以下表格:
+                <span>{{ getName(form.address) }}</span> {{$t('appointFroms.content2.p2')}}
               </p>
               <el-form
                 ref="form"
@@ -139,7 +138,7 @@
                 label-width="180px"
                 v-if="form.address && form.subdate"
               >
-                <el-form-item label="預留位置">
+                <el-form-item :label="$t('appointFroms.content2.local')">
                   <el-select
                     v-model="form1.numberSeat"
                     placeholder="0"
@@ -155,7 +154,7 @@
                 </el-form-item>
                 <el-form-item label="姓名">
                   <el-input
-                    placeholder="請填寫姓名"
+                    :placeholder="$t('appointFroms.content3.name')"
                     v-model="form1.name"
                     clearable
                   ></el-input>
@@ -167,67 +166,67 @@
                     <el-option label="男" value="1"></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="年齡">
-                  <el-select v-model="form1.age" placeholder="請選擇" clearable>
+                <el-form-item :label="$t('appointFroms.content3.age')">
+                  <el-select v-model="form1.age" :placeholder="$t('appointFroms.content3.choose')" clearable>
                     <el-option
-                      label="17歲或以下"
+                      :label="$t('appointFroms.content3.age1')"
                       value="17歲或以下"
                     ></el-option>
-                    <el-option label="18-25歲" value="18-25歲"></el-option>
-                    <el-option label="26-35歲" value="26-35歲"></el-option>
-                    <el-option label="36-45歲" value="36-45歲"></el-option>
-                    <el-option label="46-55歲" value="46-55歲"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age2')" value="18-25歲"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age2')" value="26-35歲"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age3')" value="36-45歲"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age4')" value="46-55歲"></el-option>
                     <el-option
-                      label="56歲或以上"
+                      :label="$t('appointFroms.content3.age5')"
                       value="56歲或以上"
                     ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="聯絡電話">
+                <el-form-item :label="$t('appointFroms.content3.phone')">
                   <el-input
-                    placeholder="請填寫"
+                    :placeholder="$t('appointFroms.content3.phoneText')"
                     type="number"
                     v-model.number="form1.telphoneNumber"
                     number
                     clearable
                   ></el-input>
                 </el-form-item>
-                <el-form-item label="電郵地址">
+                <el-form-item :label="$t('appointFroms.content3.email')">
                   <el-input
-                    placeholder="請填寫"
+                    :placeholder="$t('appointFroms.content3.phoneText')"
                     type="email"
                     v-model="form1.email"
                     clearable
                   ></el-input>
                 </el-form-item>
-                <el-form-item label="從何得知">
+                <el-form-item :label="$t('appointFroms.content3.soure')">
                   <el-select
                     v-model="form1.source"
-                    placeholder="請選擇"
+                    :placeholder="$t('appointFroms.content3.choose')"
                     clearable
                   >
                     <el-option
-                      label="Google搜尋引擎"
+                      :label="$t('appointFroms.content4.p1')"
                       value="Google搜尋引擎"
                     ></el-option>
                     <el-option
-                      label="Yahoo搜尋引擎"
+                      :label="$t('appointFroms.content4.p2')"
                       value="Yahoo搜尋引擎"
                     ></el-option>
                     <el-option label="Facebook" value="Facebook"></el-option>
                     <el-option label="Instagram" value="Instagram"></el-option>
                     <el-option label="YouTube" value="YouTube"></el-option>
-                    <el-option label="討論區" value="討論區"></el-option>
-                    <el-option label="報章" value="報章"></el-option>
-                    <el-option label="診所單張" value="診所單張"></el-option>
-                    <el-option label="親友介紹" value="親友介紹"></el-option>
-                    <el-option label="員工介紹" value="員工介紹"></el-option>
+                    <el-option :label="$t('appointFroms.content4.p3')" value="討論區"></el-option>
+                    <el-option :label="$t('appointFroms.content4.p4')" value="報章"></el-option>
+                    <el-option :label="$t('appointFroms.content4.p5')" value="診所單張"></el-option>
+                    <el-option :label="$t('appointFroms.content4.p6')" value="親友介紹"></el-option>
+                    <el-option :label="$t('appointFroms.content4.p7')" value="員工介紹"></el-option>
                     <el-option label="其他" value="其他"></el-option>
                   </el-select>
                 </el-form-item>
                 <el-form-item label-width="0">
                   <el-button type="primary" @click="onSubmit"
-                    >提交預約</el-button
+                    >{{$t('appointFroms.btn')}}</el-button
                   >
                 </el-form-item>
               </el-form>
@@ -327,11 +326,11 @@ export default {
       },
       isMobile: false,
       nowDayMonth: new Date().getMonth() + 1,
-      canonicalHref: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm",
+      canonicalHref: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm/",
       canonicalHrefCN:
-        "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm",
-      browserTitle: "講座 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "講座 - 香港希玛微笑矫视中心",
+        "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm/",
+      browserTitle: "講座 - 希瑪微笑矯視中心",
+      browserTitleCn: "講座 - 希玛微笑矫视中心",
     };
   },
   head() {
@@ -348,12 +347,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "講座 - 香港希瑪微笑矯視中心",
+          content: "講座 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "講座 - 香港希瑪微笑矯視中心",
+          content: "講座 - 希瑪微笑矯視中心",
         },
       ],
       link: [
@@ -367,17 +366,17 @@ export default {
         {
           rel: "alternate",
           hreflang: "x-default",
-          href: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm",
+          href: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm/",
         },
         {
           rel: "alternate",
-          hreflang: "zh-Hant-HK",
-          href: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm",
+          hreflang: "zh-Hant",
+          href: "https://smile.hkcmereye.com/ophthalmicInfo/AppointForm/",
         },
         {
           rel: "alternate",
-          hreflang: "zh-Hans-CN",
-          href: "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm",
+          hreflang: "zh-Hans",
+          href: "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm/",
         },
       ],
     };

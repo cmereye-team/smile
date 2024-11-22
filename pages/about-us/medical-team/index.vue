@@ -33,8 +33,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/about-us/medical-team",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/about-us/medical-team",
-      browserTitle: "醫生團隊 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "医生团队 - 香港希玛微笑矫视中心",
+      browserTitle: "醫生團隊 - 希瑪微笑矯視中心",
+      browserTitleCn: "医生团队 - 希玛微笑矫视中心",
     }
   },
   head() {

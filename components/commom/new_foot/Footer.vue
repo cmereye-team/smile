@@ -356,11 +356,11 @@ export default {
         link: "/contact-us",
       },
       newVideo: {
-        main_nav: "矯視資訊",
+        main_nav: this.$t("home.headers.feign"),
         link: "",
         child_list: [
           {
-            child_item: "Blog",
+            child_item: this.$t("home.headers.feign_knowledge"),
             link: "/blog",
           },
           { child_item: this.$t("home.headers.casesSharing"), link: "/video" },

@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>醫生團隊</p>
+          <p>{{ $t("doctor_team.bannnertitle") }}</p>
           <p>Doctor team</p>
         </div>
       </template>
@@ -19,26 +19,26 @@
         </div>
         <div>
           <div>
-            <p>香港希瑪國際眼科醫療集團創辦人</p>
-            <p>林順潮醫生</p>
+            <p>{{ $t("doctor_team.intro") }}</p>
+            <p>{{ $t("doctor_team.doctor1.name") }}</p>
           </div>
           <div>
             <span
-              >創辦人林順潮教授是亞太眼科主要領導者之一，連續3屆被評<br
-                class="pcShow"
-              />為「世界眼科100位最具影響力人物之一」，並獲</span
+              >{{ $t("doctor_team.doctor1.title1") }}<br class="pcShow" />{{
+                $t("doctor_team.doctor1.title2")
+              }}</span
             >
-            <span>「世界十大傑出青年」、「香港十大傑出青年」、</span>
-            <span>「亞太最佳眼科臨床教授獎」、「亞太眼科傑出成就獎」、</span>
-            <span>「亞太眼科學術最高成就獎」等殊榮。</span>
+            <span>{{ $t("doctor_team.doctor1.title3") }}</span>
+            <span>{{ $t("doctor_team.doctor1.title4") }}</span>
+            <span>{{ $t("doctor_team.doctor1.title5") }}</span>
           </div>
           <div>
-            <span>香港大學內外全科醫學士</span>
-            <span>香港醫學專科學院院士(眼科)</span>
-            <span>香港眼科醫學院院士</span>
-            <span>愛丁堡皇家外科醫學院院士(眼科)</span>
-            <span>英國皇家眼科醫學院院士</span>
-            <span>香港中文大學醫學博士</span>
+            <span>{{ $t("doctor_team.doctor1.intro1") }}</span>
+            <span>{{ $t("doctor_team.doctor1.intro2") }}</span>
+            <span>{{ $t("doctor_team.doctor1.intro3") }}</span>
+            <span>{{ $t("doctor_team.doctor1.intro4") }}</span>
+            <span>{{ $t("doctor_team.doctor1.intro5") }}</span>
+            <span>{{ $t("doctor_team.doctor1.intro6") }}</span>
           </div>
         </div>
       </div>
@@ -85,13 +85,17 @@
               />
             </svg>
           </div>
-          <div><span>眼科</span><span>醫療團隊</span></div>
+          <div>
+            <span>眼科</span><span>{{ $t("doctor_team.title2") }}</span>
+          </div>
         </div>
         <div>
           <div v-for="doctor in doctorList" :key="doctor.id">
             <div><img :src="doctor.img" :alt="doctor.name" /></div>
             <div>
-              <div>{{ doctor.name }}<span>醫生</span></div>
+              <div>
+                {{ doctor.name }}<span>{{ $t("doctor_team.doctor") }}</span>
+              </div>
               <div>
                 <span v-for="(item, index) in doctor.title" :key="index">{{
                   item
@@ -129,164 +133,164 @@ export default {
       doctorList: [
         {
           id: 1,
-          name: "李佑榮",
+          name: this.$t("doctor_team.doctor2.name"),
           img: "https://statichk.cmermedical.com/smile/our-medical-team/e4fe994560f1f0cb.webp",
           title: [
-            "香港中文大學內外全科醫學士",
-            "香港醫學專科學院院士(眼科)",
-            "香港眼科醫學院院士",
-            "英國愛丁堡皇家外科醫學院院士",
-            "香港外科醫學院院士",
-            "香港中文大學流行病學與生物統計學理學碩士",
-            "香港中文大學流行病學與生物統計學學士後文憑",
+            this.$t("doctor_team.doctor2.intro1"),
+            this.$t("doctor_team.doctor2.intro2"),
+            this.$t("doctor_team.doctor2.intro3"),
+            this.$t("doctor_team.doctor2.intro4"),
+            this.$t("doctor_team.doctor2.intro5"),
+            this.$t("doctor_team.doctor2.intro6"),
+            this.$t("doctor_team.doctor2.intro7"),
           ],
         },
         {
           id: 8,
-          name: "范  愷",
+          name: this.$t("doctor_team.doctor3.name"),
           img: "https://static.cmereye.com/imgs/2024/04/97a0a764a2e54197.png",
           title: [
-            "香港大學內外全科醫學士",
-            "香港醫學專科學院院士(眼科)",
-            "香港眼科醫學院院士",
-            "愛丁堡皇家外科醫學院院士(眼科)",
-            "英國皇家眼科醫學院院士",
-            "新加坡國立大學眼科醫學碩士",
+            this.$t("doctor_team.doctor3.intro1"),
+            this.$t("doctor_team.doctor3.intro2"),
+            this.$t("doctor_team.doctor3.intro3"),
+            this.$t("doctor_team.doctor3.intro4"),
+            this.$t("doctor_team.doctor3.intro5"),
+            this.$t("doctor_team.doctor3.intro6"),
           ],
         },
         {
           id: 2,
-          name: "黎浩樺",
+          name: this.$t("doctor_team.doctor4.name"),
           img: "https://static.cmereye.com/imgs/2024/04/4fa9ad28827023df.png",
           title: [
-            "香港中文大學內外全科醫學士",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
-            "英國愛丁堡皇家外科醫學院院員",
+            this.$t("doctor_team.doctor4.intro1"),
+            this.$t("doctor_team.doctor4.intro2"),
+            this.$t("doctor_team.doctor4.intro3"),
+            this.$t("doctor_team.doctor4.intro4"),
           ],
         },
         {
           id: 3,
-          name: "李德倫",
+          name: this.$t("doctor_team.doctor5.name"),
           img: "https://static.cmereye.com/imgs/2024/04/35a8ebff87489352.png",
           title: [
-            "香港大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
+            this.$t("doctor_team.doctor5.intro1"),
+            this.$t("doctor_team.doctor5.intro2"),
+            this.$t("doctor_team.doctor5.intro3"),
+            this.$t("doctor_team.doctor5.intro4"),
           ],
         },
         {
           id: 4,
-          name: "黃禮文",
+          name: this.$t("doctor_team.doctor6.name"),
           img: "https://static.cmereye.com/imgs/2024/04/23dd6d5e7647a6b5.png",
           title: [
-            "香港大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
+            this.$t("doctor_team.doctor6.intro1"),
+            this.$t("doctor_team.doctor6.intro2"),
+            this.$t("doctor_team.doctor6.intro3"),
+            this.$t("doctor_team.doctor6.intro4"),
           ],
         },
         {
           id: 5,
-          name: "張瀞之",
+          name: this.$t("doctor_team.doctor7.name"),
           img: "https://static.cmereye.com/imgs/2024/04/5dea1f2a9eaa115d.png",
           title: [
-            "香港大學內外全科醫學士",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
-            "愛丁堡皇家外科醫學院院士(眼科)",
-            "英國格拉斯哥皇家醫學院外科院士",
-            "英國愛丁堡皇家外科醫學院院員",
+            this.$t("doctor_team.doctor7.intro1"),
+            this.$t("doctor_team.doctor7.intro2"),
+            this.$t("doctor_team.doctor7.intro3"),
+            this.$t("doctor_team.doctor7.intro4"),
+            this.$t("doctor_team.doctor7.intro5"),
+            this.$t("doctor_team.doctor7.intro6"),
           ],
         },
         {
           id: 6,
-          name: "林寶生",
+          name: this.$t("doctor_team.doctor8.name"),
           img: "https://static.cmereye.com/imgs/2024/04/d2d8ef48f7e7d66f.png",
           title: [
-            "香港中文大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
+            this.$t("doctor_team.doctor8.intro1"),
+            this.$t("doctor_team.doctor8.intro2"),
+            this.$t("doctor_team.doctor8.intro3"),
+            this.$t("doctor_team.doctor8.intro4"),
           ],
         },
         {
           id: 7,
-          name: "林己明",
+          name: this.$t("doctor_team.doctor9.name"),
           img: "https://static.cmereye.com/imgs/2024/04/12f6f365602dfa65.png",
           title: [
-            "香港大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港醫學專科學院院士(眼科)",
-            "香港眼科醫學院院士",
+            this.$t("doctor_team.doctor9.intro1"),
+            this.$t("doctor_team.doctor9.intro2"),
+            this.$t("doctor_team.doctor9.intro3"),
+            this.$t("doctor_team.doctor9.intro4"),
           ],
         },
-      
+
         {
           id: 9,
-          name: "陳偉樂",
+          name: this.$t("doctor_team.doctor10.name"),
           img: "https://static.cmereye.com/imgs/2024/04/49af412bf2fd0d24.png",
           title: [
-            "香港大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
-            "香港中文大學醫療管理學理學碩士",
+            this.$t("doctor_team.doctor10.intro1"),
+            this.$t("doctor_team.doctor10.intro2"),
+            this.$t("doctor_team.doctor10.intro3"),
+            this.$t("doctor_team.doctor10.intro4"),
+            this.$t("doctor_team.doctor10.intro5"),
           ],
         },
         {
           id: 10,
-          name: "梁苑珊",
+          name: this.$t("doctor_team.doctor11.name"),
           img: "https://static.cmereye.com/imgs/2024/04/a7d90bf031d2130e.png",
           title: [
-            "澳洲雪梨大學內外全科醫學士",
-            "新加坡國立大學眼科醫學碩士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
+            this.$t("doctor_team.doctor11.intro1"),
+            this.$t("doctor_team.doctor11.intro2"),
+            this.$t("doctor_team.doctor11.intro3"),
+            this.$t("doctor_team.doctor11.intro4"),
+            this.$t("doctor_team.doctor11.intro5"),
           ],
         },
         {
           id: 11,
-          name: "鄒樞韻",
+          name: this.$t("doctor_team.doctor12.name"),
           img: "https://static.cmereye.com/imgs/2024/04/3b91d69903c22a94.png",
           title: [
-            "香港大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)",
+            this.$t("doctor_team.doctor12.intro1"),
+             this.$t("doctor_team.doctor12.intro2"),
+             this.$t("doctor_team.doctor12.intro3"),
+             this.$t("doctor_team.doctor12.intro4"),
           ],
         },
         {
           id: 12,
-          name: "尹浩柟",
+          name: this.$t("doctor_team.doctor13.name"),
           img: "https://static.cmereye.com/imgs/2024/05/5e65910e0c55b6a4.png",
           title: [
-            "香港中文大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "英國皇家外科醫學院院員",
-            "英國格拉斯哥皇家醫學院外科院員",
-            "香港眼科醫學院院士",
-            "香港醫學專科學院院士(眼科)"
+            this.$t("doctor_team.doctor13.intro1"),
+            this.$t("doctor_team.doctor13.intro2"),
+            this.$t("doctor_team.doctor13.intro3"),
+            this.$t("doctor_team.doctor13.intro4"),
+            this.$t("doctor_team.doctor13.intro5"),
+            this.$t("doctor_team.doctor13.intro6")
           ],
         },
         {
           id: 13,
-          name: "鄒樂韻",
+          name: this.$t("doctor_team.doctor14.name"),
           img: "https://static.cmereye.com/imgs/2024/05/3f1a1dea7d3a56a9.png",
           title: [
-            "香港大學內外全科醫學士",
-            "英國愛丁堡皇家外科醫學院院員",
-            "香港醫學專科學院院士(眼科)",
-            "香港眼科醫學院院士",
+            this.$t("doctor_team.doctor14.intro1"),
+            this.$t("doctor_team.doctor14.intro2"),
+            this.$t("doctor_team.doctor14.intro3"),
+            this.$t("doctor_team.doctor14.intro4"),
           ],
         },
       ],
-      canonicalHref: "https://smile.hkcmereye.com/our-medical-team",
-      canonicalHrefCN: "https://smile.hkcmereye.com/cn/our-medical-team",
-      browserTitle: "醫生團隊 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "医生团队 - 香港希玛微笑矫视中心",
+      canonicalHref: "https://smile.hkcmereye.com/our-medical-team/",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/our-medical-team/",
+      browserTitle: "醫生團隊 - 希瑪微笑矯視中心",
+      browserTitleCn: "医生团队 - 希玛微笑矫视中心",
     };
   },
   head() {
@@ -297,25 +301,44 @@ export default {
     }
 
     return {
-      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "醫生團隊 - 香港希瑪微笑矯視中心",
+          content: "醫生團隊 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "香港希瑪微笑矯視中心",
+          content: "希瑪微笑矯視中心",
         },
       ],
       link: [
-        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/our-medical-team" },
-        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/our-medical-team" },
-        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/our-medical-team" },
-      ]
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/our-medical-team/",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant",
+          href: "https://smile.hkcmereye.com/our-medical-team/",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans",
+          href: "https://smile.hkcmereye.com/cn/our-medical-team/",
+        },
+      ],
     };
   },
 };

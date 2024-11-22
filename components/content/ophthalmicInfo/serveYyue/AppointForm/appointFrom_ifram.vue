@@ -11,12 +11,12 @@
       </div>
       <div class="left_container">
         <div>
-          <div class="left_title">SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，CMER CLEAR-VISION 老花講座！</div>
+          <div class="left_title">{{$t('appointFrom_ifram.title')}}</div>
           <ul class="left_list">
-            <li>中環診所：中環畢打街1-3號中建大廈1512室</li>
-            <li>旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室</li>
-            <li>旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室</li>
-            <li>尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室</li>
+            <li>{{$t('appointFrom_ifram.p1')}}</li>
+            <li>{{$t('appointFrom_ifram.p2')}}</li>
+            <li>{{$t('appointFrom_ifram.p3')}}</li>
+            <li>{{$t('appointFrom_ifram.p4')}}</li>
           </ul>
         </div>
         <div>
@@ -39,12 +39,12 @@
         </div>
         <div class="bookingifram_box">
           <div class="text—mb">
-            <div class="left_title">SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，CMER CLEAR-VISION 老花講座！</div>
+            <div class="left_title">{{$t('appointFrom_ifram.title')}}</div>
             <ul class="left_list">
-              <li>中環診所：中環畢打街1-3號中建大廈1512室</li>
-              <li>旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室</li>
-              <li>旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室</li>
-              <li>尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室</li>
+              <li>{{$t('appointFrom_ifram.p1')}}</li>
+              <li>{{$t('appointFrom_ifram.p2')}}</li>
+              <li>{{$t('appointFrom_ifram.p3')}}</li>
+              <li>{{$t('appointFrom_ifram.p4')}}</li>
             </ul>
           </div>
           <iframe v-if="$i18n.locale === 'en'" width="100%" height="1140"

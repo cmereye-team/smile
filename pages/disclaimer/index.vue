@@ -56,7 +56,7 @@ export default {
     }
 
     return {
-      title: "私隱政策 - 香港希瑪微笑矯視中心",
+      title: "私隱政策 - 希瑪微笑矯視中心",
       meta: [
         {
           hid: "description",

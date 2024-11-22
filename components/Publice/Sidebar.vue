@@ -1,7 +1,7 @@
 
 <template>
   <div class="Sidebar">
-    <div>了 解 更 多 ・ 預 約</div>
+    <div>{{$t('home.konwALL')}}</div>
     <div>
       <nuxt-link to="/ophthalmicInfo/AppointForm">
         <div>
@@ -40,7 +40,7 @@
             />
           </svg>
         </div>
-        <div>講座</div>
+        <div>{{$t('home.Fullhouse')}}</div>
       </nuxt-link>
       <nuxt-link to="/patient-info">
         <div>
@@ -179,7 +179,7 @@
             />
           </svg>
         </div>
-        <div>術前檢查</div>
+        <div>{{$t('home.CheckBefore')}}</div>
       </nuxt-link>
     </div>
   </div>

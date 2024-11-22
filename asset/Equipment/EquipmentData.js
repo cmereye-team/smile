@@ -250,7 +250,61 @@
 //   }
 // ]
 
-export default [
+
+
+
+
+
+// {
+//   id: 1,
+//   img: "https://statichk.cmermedical.com/smile/medical-equipment/590ceebe95a7c289.jpg",
+//   name: [
+//     "ZEISS VISUMAX 800",
+//     "SMILE®pro"
+//   ],
+//   // remark: "VISUMAX 800新增的智能眼球與旋轉偵測和視覺中心定位功能可以實現更準確和個性化的治療，以滿足每位病人的需求。最新的技術可以在不到10秒鐘的時間內完成晶狀體切割，從而縮短整個吸附時間。",
+//   remark:this.$t('medical_equipment.content1.remark'),
+//   source: this.$t('medical_equipment.content1.source'),
+//   isShow: false
+// },
+// {
+//   id: 2,
+//   img: "https://static.cmereye.com/imgs/2024/05/f434fa3c9560d7c6.png",
+//   name: [
+//     "Carl Zeiss Visumax",
+//     this.$t('medical_equipment.content2.name')
+//   ],
+//   // remark: "SMall Incision Lenticule Extraction (SMILE 微笑激光矯視) 透過使用飛秒激光，在角膜內注入極微細的激光氣泡，直接切割角膜的中層部分，同時會開一個2毫米的小切口，醫生將已切割的角膜部份從切口取出，令角膜弧度改變以達至矯視效果。",
+//   // source: "資料及圖片來源： Carl Zeiss",
+
+//   remark:this.$t('medical_equipment.content2.remark'),
+//   source: this.$t('medical_equipment.content2.source'),
+//   isShow: false
+// },
+// {
+//   id: 3,
+//   img: "https://static.cmereye.com/imgs/2024/05/4e22294924611584.png",
+//   name: [
+//     this.$t('medical_equipment.content3.name')`<br class="mbShow" />`+this.$t('medical_equipment.content3.name2'),
+//     "（IOL Master 700）"
+//   ],
+//   remark:this.$t('medical_equipment.content3.remark'),
+//   source: this.$t('medical_equipment.content3.source'),
+//   isShow: false
+// },
+
+
+
+export default 
+
+
+
+
+
+
+
+
+[
   {
     id: 1,
     img: "https://statichk.cmermedical.com/smile/medical-equipment/590ceebe95a7c289.jpg",

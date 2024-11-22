@@ -76,8 +76,8 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/privacy-policy",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/privacy-policy",
-      browserTitle: "私隱政策 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "隐私政策 - 香港希玛微笑矫视中心",
+      browserTitle: "私隱政策 - 希瑪微笑矯視中心",
+      browserTitleCn: "隐私政策 - 希玛微笑矫视中心",
     }
   },
   head() {

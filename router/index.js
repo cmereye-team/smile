@@ -1,5 +1,6 @@
 import path from 'path'
 
+
 const resolve = (pagePath) => path.resolve(process.cwd(), `./${pagePath}`)
 
 export const $router = [
@@ -319,8 +320,11 @@ export const $router = [
 
 
 const extendRoutes = (routes) => {
+
   routes.length = 0 // 清除 nuxt 自己生成的路由，这里不要用 空数组 赋值
+  
   routes.push(...$router)
 }
+
 
 export default { base: '/', extendRoutes }

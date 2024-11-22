@@ -1,6 +1,6 @@
 <template>
   <div class="businessHours">
-    <H2Tag :title="['營業時間']" />
+    <H2Tag :title="[$t('home.footer.businessHours.title')]" />
     <div class="businessHours-img">
       <img
         v-if="isMobile"
@@ -16,16 +16,16 @@
     <div class="businessHours-time">
       <!-- <div>  -->
       <div>
-        <h3>星期一至五</h3>
+        <h3>{{$t('home.footer.businessHours.weekday')}}</h3>
         <div>9:00-19:00</div>
       </div>
       <div>
-        <h3>星期六</h3>
+        <h3>{{$t('home.footer.businessHours.saturday')}}</h3>
         <div>9:00-18:00</div>
       </div>
       <div>
-        <h3>星期日及公眾假期</h3>
-        <div>休息</div>
+        <h3>{{$t('home.footer.businessHours.publicHolidayAndSunday')}}</h3>
+        <div>{{$t('home.footer.businessHours.rest')}}</div>
       </div>
       <!-- </div> -->
       <!-- <div

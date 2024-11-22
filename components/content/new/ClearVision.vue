@@ -1,23 +1,22 @@
 <template>
   <div class="clear-vision">
     <div class="vision-max-width">
-      <H2Tag :title="['甚麼是老花？']" />
+      <H2Tag :title="[$t('Correct.correction_presbyopia.content1.title')]" />
       <div>
         <p>
-          隨著年紀增長，人們可能會遇到老花的問題，這是一種影響近視力的視力狀況。由於在眼睛中的晶狀體彈性降低，使眼睛調節焦距的能力下降，導致看近處物體時會出現視覺模糊。
+          {{$t('Correct.correction_presbyopia.content1.p1')}}
         </p>
         <p>
-          老花並非疾病，而是隨著年齡增長而自然出現的現象。一般在40歲開始出現，到60歲時會達到較為穩定的狀態。為了改善老花帶來的視力問題，人們可以選擇配戴老花眼鏡、使用隱形眼鏡或接受老花矯視手術等方式，這些方法都可幫助改善近距離的視力，使日常生活中的閱讀和近距離工作變得更加容易，而進行老花矯視更是受大眾歡迎的選項。
+          {{$t('Correct.correction_presbyopia.content1.p2')}}
         </p>
         <H2Tag style="margin-top: 60px" :title="['CMER CLEAR-Vision']" />
         <p>
-          坊間稱之為人工晶體置換術。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，一次過解決近視、遠視、散光、老花等問題。
-          希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業咨詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
+          {{$t('Correct.correction_presbyopia.content1.p3')}}
         </p>
       </div>
     </div>
     <div class="vision-max-width">
-      <H2Tag :title="['人工晶體']" />
+      <H2Tag :title="[$t('Correct.correction_presbyopia.content2.title')]" />
       <div>
         <div>
           <img
@@ -27,10 +26,10 @@
         </div>
         <div>
           <p>
-            多焦距人工晶體以多個細小壓環把進入眼睛的光線分為兩至三束主要光線，產生不同焦點，形成遠、中、近的影像，讓眼睛可以不依靠眼內肌肉對焦，藉此解決近視、遠視、散光、老花等視力問題。
+            {{$t('Correct.correction_presbyopia.content2.p1')}}
           </p>
           <p>
-            除了多焦距人工晶體外，亦有基本的單焦距人工晶體、散光多焦距人工晶體等選項。建議請先預約檢查諮詢眼科專科醫生專業意見，再選擇合適自己的人工晶體。
+             {{$t('Correct.correction_presbyopia.content2.p2')}}
           </p>
         </div>
       </div>
@@ -39,7 +38,7 @@
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
           target="_blank"
           rel="noopener noreferrer"
-          >預約咨詢</a
+          >{{$t('Correct.correction_presbyopia.btn')}}</a
         >
       </div>
     </div>
@@ -74,11 +73,11 @@
               />
             </svg>
           </div>
-          <div v-if="isMobile"><span>人工晶體</span></div>
-          <div v-else><span>人工晶體置換術</span><span>的好處</span></div>
+          <div v-if="isMobile"><span>{{$t('Correct.correction_presbyopia.content3.title1')}}</span></div>
+          <div v-else><span>{{$t('Correct.correction_presbyopia.content3.title2')}}</span><span>{{$t('Correct.correction_presbyopia.content3.title3')}}</span></div>
         </div>
         <div class="mobile-title" v-if="isMobile">
-          <H2Tag :title="['人工晶體置換術的好處']" />
+          <H2Tag :title="[$t('Correct.correction_presbyopia.content3.list1.title')]" />
         </div>
         <div>
           <div>
@@ -142,9 +141,9 @@
                   />
                 </svg>
               </div>
-              <div>術後復原快</div>
+              <div>{{$t('Correct.correction_presbyopia.content3.list1.text1')}}</div>
             </div>
-            <div><span>最快術後一天可如常</span><span>生活或工作</span></div>
+            <div><span>{{$t('Correct.correction_presbyopia.content3.list1.text2')}}</span><span>{{$t('Correct.correction_presbyopia.content3.list1.text3')}}</span></div>
           </div>
           <div>
             <div>
@@ -217,10 +216,10 @@
                   </defs>
                 </svg>
               </div>
-              <div>手術時間短</div>
+              <div>{{$t('Correct.correction_presbyopia.content3.list2.text1')}}</div>
             </div>
             <div>
-              <span>大約15至20分鐘完成</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list2.text2')}}</span>
             </div>
           </div>
           <div>
@@ -286,8 +285,8 @@
               </div>
             </div>
             <div>
-              <span>不需依賴眼鏡/</span>
-              <span>隱形眼鏡</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list3.text1')}}</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list3.text2')}}</span>
             </div>
           </div>
           <div>
@@ -325,7 +324,7 @@
               <div><span>物料具</span><span>生物兼容性</span></div>
             </div>
             <div>
-              <span>人工晶體物料<br />與眼球兼容</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list4.text3')}}<br />{{$t('Correct.correction_presbyopia.content3.list4.text4')}}</span>
             </div>
           </div>
           <div>
@@ -391,8 +390,8 @@
               </div>
             </div>
             <div>
-              <span>同時處理近視、遠視、</span>
-              <span>散光、老花等問題</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list5.text1')}}</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list5.text2')}}</span>
             </div>
           </div>
           <div>
@@ -493,16 +492,16 @@
               </div>
             </div>
             <div>
-              <span>根據個人眼睛實際</span>
-              <span>狀況和生活需要，</span>
-              <span>製訂合適的矯視方案</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list6.text1')}}</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list6.text2')}}</span>
+              <span>{{$t('Correct.correction_presbyopia.content3.list6.text3')}}</span>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="vision-max-width">
-      <H2Tag :title="['合適對象']" />
+      <H2Tag :title="[$t('Correct.correction_presbyopia.content4.title')]" />
       <div>
         <div>
           <div>
@@ -530,7 +529,7 @@
               />
             </svg>
           </div>
-          <div>40歲或以上</div>
+          <div>{{$t('Correct.correction_presbyopia.content4.text1')}}</div>
         </div>
         <div>
           <div>
@@ -563,7 +562,7 @@
               />
             </svg>
           </div>
-          <div>熱愛運動</div>
+          <div>{{$t('Correct.correction_presbyopia.content4.text2')}}</div>
         </div>
         <div>
           <div>
@@ -612,8 +611,8 @@
             </svg>
           </div>
           <div>
-            <span>佩戴多副矯正度數眼鏡</span
-            ><span>(近視、遠視、散光、老花)</span>
+            <span>{{$t('Correct.correction_presbyopia.content4.text3')}}</span
+            ><span>{{$t('Correct.correction_presbyopia.content4.text3_1')}}</span>
           </div>
         </div>
         <div>
@@ -623,7 +622,7 @@
               alt=""
             />
           </div>
-          <div><span>不愛佩戴眼鏡</span><span>或隱形眼鏡</span></div>
+          <div><span>{{$t('Correct.correction_presbyopia.content4.text4')}}</span><span>{{$t('Correct.correction_presbyopia.content4.text4_1')}}</span></div>
         </div>
       </div>
     </div>

@@ -4,29 +4,29 @@
     <BannerSlider class="banner-box" />
     <div>
       <div class="home-referral">
-        <H2Tag :title="['希瑪微笑矯視中心']" />
-        <!-- <div>
-          香港希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心。團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。於香港擁有3間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。提供一站式眼科專科醫療及矯視服務，包括：SMILE
-          微笑激光矯視、LASIK激光矯視、ICL植入式隱形眼鏡、老花矯視等。
-        </div> -->
+        <H2Tag :title="[$t('home.home_referral.title')]" />
+    
         <div>
           <p>
-            希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心。
+            {{$t('home.home_referral.content_text_1')}}
+ 
           </p>
           <p>
-            中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。
+                   {{$t('home.home_referral.content_text_2')}}
+          
           </p>
           <p>
-            於香港擁有2間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。
+                {{$t('home.home_referral.content_text_3')}}
+         
           </p>
           <p>
-            提供一站式眼科專科醫療及矯視服務，包括：SMILE
-            Pro微笑激光矯視、SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。
+                {{$t('home.home_referral.content_text_4')}}
+          
           </p>
         </div>
       </div>
       <div class="home-referral-service">
-        <H2Tag :title="['矯視中心服務']" />
+        <H2Tag :title="[$t('home.home_referral_service.title')]" />
         <div>
           <nuxt-link
             :to="item.link"
@@ -52,7 +52,7 @@
             </div>
           </nuxt-link>
         </div>
-        <nuxt-link to="/eye-examination">診症須知</nuxt-link>
+        <nuxt-link to="/eye-examination">{{$t('home.headers.diagnosisInstructions')}}</nuxt-link>
       </div>
       <div class="home-contact-us">
         <div>
@@ -95,7 +95,7 @@
                 />
               </svg>
             </div>
-            <div>關於我們</div>
+            <div>{{$t('home.contact_us.title')}}</div>
           </div>
           <div>
             <div>
@@ -158,8 +158,8 @@
                   />
                 </svg>
               </div>
-              <div>超過<span>35,000</span>隻</div>
-              <div>眼睛完成微笑矯視</div>
+              <div>{{$t('home.contact_us.content_text_1')}}<span>35,000</span>{{$t('home.contact_us.content_text_1_1')}}</div>
+              <div>{{$t('home.contact_us.content_text_1_2')}}</div>
             </div>
             <div>
               <div v-if="isMobile">
@@ -337,7 +337,7 @@
                   </svg>
                 </div>
               </div>
-              <div>第<span>1</span>間</div>
+              <div>第<span>1</span>{{$t('home.contact_us.content_text_2')}}</div>
               <div>香港上市眼科中心</div>
             </div>
             <div>
@@ -415,7 +415,7 @@
                 </svg>
               </div>
               <div><span>11</span>位</div>
-              <div>眼科專科醫生</div>
+              <div>{{$t('home.contact_us.content_text_3')}}</div>
             </div>
             <div>
               <div>
@@ -425,19 +425,19 @@
                 />
               </div>
               <div><span>8,000</span>尺</div>
-              <div>寬敞、舒適中心環境</div>
+              <div>{{$t('home.contact_us.content_text_4')}}</div>
             </div>
           </div>
         </div>
       </div>
       <div class="home-share">
-        <H2Tag :title="['用戶分享']" />
+        <H2Tag :title="[$t('home.home_share.title')]" />
         <div>
           <div>
             <div>
               <p>
-                每一次擘大眼都<br />
-                <span>懷疑自己係咪唔記得除</span>Con既感覺
+                {{$t('home.home_share.content_text_1')}}<br />
+                <span>{{$t('home.home_share.content_text_1_1')}}</span>{{$t('home.home_share.content_text_1_2')}}
               </p>
             </div>
             <div>
@@ -446,11 +446,11 @@
                 alt=""
               />
             </div>
-            <div>姜咏鑫 Ada</div>
+            <div>{{$t('home.home_share.name1')}}</div>
           </div>
           <div>
             <div>
-              <p>從未試過<br /><span>全日都睇得清！</span></p>
+              <p>{{$t('home.home_share.content_text_2')}}<br /><span>{{$t('home.home_share.content_text_2_1')}}</span></p>
             </div>
             <div>
               <img
@@ -458,11 +458,11 @@
                 alt=""
               />
             </div>
-            <div>胡鴻鈞 Hubert</div>
+            <div>{{$t('home.home_share.name2')}}</div>
           </div>
           <div>
             <div>
-              <p><span>做完SMILE Pro</span><br />上舞台都唔會驚光</p>
+              <p><span>{{$t('home.home_share.content_text_3')}}</span><br />{{$t('home.home_share.content_text_3_1')}}</p>
             </div>
             <div>
               <img
@@ -470,11 +470,11 @@
                 alt=""
               />
             </div>
-            <div>細貓</div>
+            <div>{{$t('home.home_share.name3')}}</div>
           </div>
           <div>
             <div>
-              <p>以後可以戴<br /><span>唔會縮細我眼睛</span><br />嘅平光鏡！</p>
+              <p>{{$t('home.home_share.content_text_4')}}<br /><span>{{$t('home.home_share.content_text_4_1')}}</span><br />{{$t('home.home_share.content_text_4_2')}}</p>
             </div>
             <div>
               <img
@@ -482,7 +482,7 @@
                 alt=""
               />
             </div>
-            <div>陳欣妍 Shirley</div>
+            <div>{{$t('home.home_share.name4')}}</div>
           </div>
         </div>
       </div>
@@ -512,7 +512,7 @@
                 />
               </svg>
             </div>
-            <div>Facebook<br />用户評分</div>
+            <div>Facebook<br />{{$t('home.race')}}</div>
           </div>
           <div v-if="isMobile">
             <CarouselList :list="evaluateList" />
@@ -628,10 +628,9 @@
       </div>
       <div class="home-service">
         <div>
-          <H2Tag :title="['預約服務']" />
+          <H2Tag :title="[$t('home.home_service.title')]" />
           <p>
-            矯視前先要進行全面術前眼睛檢查，包括屈光檢查、全面眼底檢查、醫生會診為你的眼睛狀況評估及提供矯視方案建議等。如有興趣進行矯視，立即WhatsApp預約我們的術前眼睛檢查服務。如想了解更多有關SMILE
-            微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式有疑問，歡迎預約我們矯視中心的講座了解更多。
+            {{$t('home.home_service.content_text_1')}}
           </p>
         </div>
         <div>
@@ -672,7 +671,7 @@
                 />
               </svg>
             </div>
-            <div>講座</div>
+            <div>{{$t('home.serve.p2')}}</div>
           </nuxt-link>
           <nuxt-link to="/patient-info">
             <div>
@@ -811,7 +810,7 @@
                 />
               </svg>
             </div>
-            <div>術前眼睛檢查</div>
+            <div>{{$t('home.serve.p1')}}</div>
           </nuxt-link>
         </div>
       </div>
@@ -894,42 +893,42 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn",
-      browserTitle: "主頁 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "主页 - 香港希玛微笑矫视中心",
+      browserTitle: "主頁 - 希瑪微笑矯視中心",
+      browserTitleCn: "主页 - 希玛微笑矫视中心",
       bgReferralServiceImg: [
         {
           id: 1,
           img: "https://static.cmereye.com/imgs/2024/04/14d1bbdf1e9fceaf.png",
           title: ["SMILE"],
-          desc: ["1000 度近視", "500 度散光"],
+          desc: [this.$t('home.home_referral_service.content_text_1'), this.$t('home.home_referral_service.content_text_1_1')],
           link: "/vision-correction/relex-smile",
         },
         {
           id: 2,
           img: "https://static.cmereye.com/imgs/2024/04/1f353fd16dd57c69.png",
           title: ["SMILE", "PRO"],
-          desc: ["擔心眼睛", "無法對焦太久"],
+          desc: [this.$t('home.home_referral_service.content_text_2'), this.$t('home.home_referral_service.content_text_2_1')],
           link: "/smilePro",
         },
         {
           id: 3,
           img: "https://static.cmereye.com/imgs/2024/04/15a5f9b61fcd20de.png",
           title: ["LASIK"],
-          desc: ["1400 度近視", "600 度散光"],
+          desc: [this.$t('home.home_referral_service.content_text_3'),this.$t('home.home_referral_service.content_text_3_1')],
           link: "/vision-correction-lasik",
         },
         {
           id: 4,
           img: "https://static.cmereye.com/imgs/2024/04/e28a1feb9db867c2.png",
           title: ["ICL"],
-          desc: ["1800 度近視", "1000 度遠視", "600 度散光"],
+          desc: [this.$t('home.home_referral_service.content_text_4'), this.$t('home.home_referral_service.content_text_4_1'), this.$t('home.home_referral_service.content_text_4_2')],
           link: "/vision-correction-icl",
         },
         {
           id: 5,
           img: "https://static.cmereye.com/imgs/2024/04/2ab718080c0c7c14.png",
           title: ["Clear-", "Vision"],
-          desc: ["39歲以上有老花", " 同時有近視/遠視/", "散光問題"],
+          desc: [this.$t('home.home_referral_service.content_text_5'), this.$t('home.home_referral_service.content_text_5_1'), this.$t('home.home_referral_service.content_text_5_2')],
           link: "/vision-correction-presbyopia",
         },
       ],
@@ -966,7 +965,7 @@ export default {
         {
           name: "覃森仲",
           date: "3月21日17:55",
-          commit: "非常耐心講解，滿意！",
+          commit:this.$t('home.evaluateList[4].commit')
         },
         {
           name: "Helen Tsui",
@@ -988,7 +987,7 @@ export default {
         {
           name: "Siu Chun Wong",
           date: "1月22日15:46",
-          commit: "好滿意服務 醫生姑娘都很好",
+          commit: this.$t('home.evaluateList[8].commit'),
         },
         {
           name: "Bear Teddy",
@@ -1003,9 +1002,9 @@ export default {
             "The doctors and the staff are amazing - felt very cared for throughout the process, both pre - op and post - op.Dr Chow and the nurses are very professional and know how to ease the patients’ anxiety.",
         },
         {
-          name: "歐陽彥",
+          name: this.$t('home.evaluateList[11].name'),
           date: "2023年11月22日  16:43",
-          commit: "服務態度非常好，手術總算成功",
+          commit: this.$t('home.evaluateList[11].commit'),
         },
         {
           name: "Kalok Tang",
@@ -1014,22 +1013,22 @@ export default {
             "the checking is good and the process is smooth that I don’t have any uncomfortable after doing the surgery.The doctor gave suggestions in details and I had a good experience.",
         },
         {
-          name: "周軒軒",
+          name: this.$t('home.evaluateList[13].name'),
           date: "2023年7月25日 12:36",
-          commit: "做完手術後看清了很多東西！沒有帶眼鏡的煩惱！服務態度",
+          commit:this.$t('home.evaluateList[13].commit'),
         },
         {
           name: "Grace Leung",
           date: "2023年6月9日  16:45",
-          commit: "醫生服務很好，很親切，詳細解答疑問。",
+          commit: this.$t('home.evaluateList[14].commit'),
         },
         {
-          name: "崔劍",
+          name: this.$t('home.evaluateList[15].name'),
           date: "2023年11月9日 11:26",
           commit: "Smooth procedures and good effects.",
         },
         {
-          name: "司徒露嬅",
+          name: this.$t('home.evaluateList[16].name'),
           date: "2023年11月28日  11:04",
           commit: "Doctor Chow is nice.The nurses are also very nice.",
         },
@@ -1047,7 +1046,7 @@ export default {
         {
           name: "Quanxiang Xian",
           date: "2023年7月6日  11:39",
-          commit: "Smile 鐳射手術，效果不錯，推薦",
+          commit: this.$t('home.evaluateList[19].commit'),
         },
       ],
     };
@@ -1067,7 +1066,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "香港希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心，提供一站式眼科專科醫療及矯視服務，包括：SMILE 微笑激光矯視。",
+            "希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心，提供一站式眼科專科醫療及矯視服務，包括：SMILE 微笑激光矯視。",
         },
         {
           hid: "keywords",

@@ -4,7 +4,7 @@
     <Banner>
       <template #banner>
         <div class="banner-img">
-          <p>SMILE PRO 微笑激光矯視</p>
+          <p>{{$t('smile_pro.bannerTitle')}}</p>
           <p>Small Incision Lenticule Extraction</p>
         </div>
       </template>
@@ -89,7 +89,7 @@
           : 'smilePro-descVideo page_container',
       ]"
     >
-      <H2Tag :title="['如你符合以上描述，', '你應考慮選擇SMILE PRO!']" />
+      <H2Tag :title="[$t('smile_pro.title2'), $t('smile_pro.title2_1')]" />
       <div class="smilePro-descVideo-in">
         <!-- <img src="https://static.cmereye.com/imgs/2023/05/822d9485daa1f2fa.jpg" />  -->
         <iframe
@@ -925,7 +925,7 @@
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
           target="_blank"
           rel="noopener noreferrer"
-          >預約咨詢</a
+          >{{$t('service.smilePro.smileProContrast.smileProBtn')}}</a
         >
       </div>
     </div>
@@ -960,12 +960,12 @@
           </div>
           <div>
             <p>SMILE PRO</p>
-            <p>三大特點</p>
+            <p>{{$t('smile_pro.smile_pro_trait.title2')}}</p>
           </div>
         </div>
         <div>
           <p>ZEISS VISUMAX 800 SMILE®pro</p>
-          <p>以德國蔡司光學與諾貝爾獎激光技術進行矯視</p>
+          <p>{{$t('service.smilePro.smileProFeatures.context')}}</p>
         </div>
         <div>
           <div>
@@ -997,9 +997,9 @@
                   />
                 </svg>
               </div>
-              <div>極小光點</div>
+              <div>{{$t('service.smilePro.smileProFeatures.lists[0].span1')}}</div>
             </div>
-            <div>2-2.5mm微創切口</div>
+            <div>{{$t('smile_pro.smile_pro_trait.content1.p1')}}</div>
           </div>
           <div>
             <div>
@@ -1038,9 +1038,9 @@
                   />
                 </svg>
               </div>
-              <div>極低能量</div>
+              <div>{{$t('smile_pro.smile_pro_trait.content2.p1')}}</div>
             </div>
-            <div>復原時間相對快</div>
+            <div>{{$t('smile_pro.smile_pro_trait.content2.p2')}}</div>
           </div>
           <div>
             <div>
@@ -1084,9 +1084,9 @@
                   />
                 </svg>
               </div>
-              <div>極速脈衝</div>
+              <div>{{$t('smile_pro.smile_pro_trait.content3.p1')}}</div>
             </div>
-            <div>過程短而精準</div>
+            <div>{{$t('smile_pro.smile_pro_trait.content3.p2')}}</div>
           </div>
         </div>
       </div>
@@ -1127,7 +1127,7 @@
           href="https://www.youtube.com/watch?v=iHBGkRh-CXw&list=PLWVonQr1f7XhXd4GDFI3zRtOe9RHb1jdb"
           target="_blank"
           rel="noopener noreferrer"
-          >瞭解更多</a
+          >{{$t('service.smilePro.smileProCases.smileProBtn')}}</a
         >
       </div>
     </div>
@@ -1172,7 +1172,7 @@
               />
             </svg>
           </div>
-          <div>用家見證</div>
+          <div>{{$t('service.smilePro.smileProProve.title')}}</div>
         </div>
         <div class="swiper-pc-share">
           <div v-if="isMobile">
@@ -1180,49 +1180,49 @@
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                      >好細心</span
-                    >講解同鼓勵我，<br />令我好安心
+                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
+                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
+                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
                   </div>
-                  <div class="name-title">Macy, 文員</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
-                      >第 2 日已經睇得清，</span
-                    ><br />如常生活架喇!
+                    {{$t('service.smilePro.smileProProve.lists[1].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[1].span2')}}<br /><span
+                      >{{$t('service.smilePro.smileProProve.lists[1].span3')}}</span
+                    ><br />{{$t('service.smilePro.smileProProve.lists[1].span4')}}
                   </div>
-                  <div class="name-title">Agnes, 行政人員</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[1].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
-                    ><br />會推薦比朋友
+                    {{$t('service.smilePro.smileProProve.lists[2].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[2].span2')}}<br /><span>{{$t('service.smilePro.smileProProve.lists[2].span3')}}</span
+                    ><br />{{$t('service.smilePro.smileProProve.lists[2].span4')}}
                   </div>
-                  <div class="name-title">Vivien, 家庭主婦</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[2].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
-                    10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
+                    {{$t('service.smilePro.smileProProve.lists[3].span1')}}<span>SMILE PRO</span><br />{{$t('service.smilePro.smileProProve.lists[3].span3')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span4')}}
+                    {{$t('service.smilePro.smileProProve.lists[3].span5')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span6')}}
                   </div>
-                  <div class="name-title">阿聲, 咖啡師</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[3].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                      >好細心</span
-                    >講解同鼓勵我，<br />令我好安心
+                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
+                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
+                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
                   </div>
-                  <div class="name-title">Macy, 文員</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
                 </div>
               </div>
             </div>
@@ -1232,49 +1232,49 @@
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                      >好細心</span
-                    >講解同鼓勵我，<br />令我好安心
+                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
+                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
+                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
                   </div>
-                  <div class="name-title">Macy, 文員</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    一直擔心做完需要好耐先回復<br />正常生活，原來做完<br /><span
-                      >第 2 日已經睇得清，</span
-                    ><br />如常生活架喇!
+                    {{$t('service.smilePro.smileProProve.lists[1].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[1].span2')}}<br /><span
+                      >{{$t('service.smilePro.smileProProve.lists[1].span3')}}</span
+                    ><br />{{$t('service.smilePro.smileProProve.lists[1].span4')}}
                   </div>
-                  <div class="name-title">Agnes, 行政人員</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[1].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    我係好怕痛既人黎，<br />但真係<br /><span>完全無痛!</span
-                    ><br />會推薦比朋友
+                    {{$t('service.smilePro.smileProProve.lists[2].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[2].span2')}}<br /><span>{{$t('service.smilePro.smileProProve.lists[2].span3')}}</span
+                    ><br />{{$t('service.smilePro.smileProProve.lists[2].span4')}}
                   </div>
-                  <div class="name-title">Vivien, 家庭主婦</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[2].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    做完<span>SMILE PRO</span><br />好似重新感受世界咁! 只係<br />短短
-                    10 秒就有咁大改變,<br />好後悔自己 無早 d 做!
+                    {{$t('service.smilePro.smileProProve.lists[3].span1')}}<span>SMILE PRO</span><br />{{$t('service.smilePro.smileProProve.lists[3].span3')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span4')}}
+                    {{$t('service.smilePro.smileProProve.lists[3].span5')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span6')}}
                   </div>
-                  <div class="name-title">阿聲, 咖啡師</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[3].name')}}</div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    第一次做眼部手術，<br />本身好緊張，但醫生同職員都<br /><span
-                      >好細心</span
-                    >講解同鼓勵我，<br />令我好安心
+                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
+                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
+                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
                   </div>
-                  <div class="name-title">Macy, 文員</div>
+                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
                 </div>
               </div>
             </div>
@@ -1319,7 +1319,7 @@
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         target="_blank"
         rel="noopener noreferrer"
-        >預約咨詢</a
+        >{{$t('service.smilePro.smileProContrast.smileProBtn')}}</a
       >
     </div>
     <businessHours />
@@ -1348,64 +1348,64 @@ export default {
     return {
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
-      browserTitle: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
-      browserTitleCn: "SMILE PRO 微笑矫视 - 香港希玛微笑矫视中心",
-      titleName: ["一圖看清SMILE,", "SMILE PRO, LASIK大不同"],
-      titleName1: ["真實明星用家個案分享"],
+      browserTitle: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
+      browserTitleCn: "SMILE PRO 微笑矫视 - 希玛微笑矫视中心",
+      titleName: [this.$t('smile_pro.table.title1'), "SMILE PRO, LASIK大不同"],
+      titleName1: [this.$t('smile_pro.table.title2')],
       contrastTable: [
         [
           [""],
-          ["SMILE PRO", "微笑矯視"],
-          ["SMILE", "微笑矯視"],
-          ["LASIK", "激光矯視"],
+          ["SMILE PRO", this.$t('smile_pro.table.headersName1')],
+          ["SMILE", this.$t('smile_pro.table.headersName1')],
+          ["LASIK", this.$t('smile_pro.table.headersName2')],
         ],
         [
-          ["激光時間", "（單一眼睛）"],
-          ["timepiece", "約10-16秒"],
-          ["timepiece1", "約23-25秒"],
-          ["timepiece2", ["平均30秒或以上", "（視乎情況）"]],
+          [this.$t('smile_pro.table.content1.p1'), this.$t('smile_pro.table.content1.p1_1')],
+          ["timepiece", this.$t('smile_pro.table.content1.p2')],
+          ["timepiece1", this.$t('smile_pro.table.content1.p3')],
+          ["timepiece2", [this.$t('smile_pro.table.content1.p4'), this.$t('smile_pro.table.content1.p4_1')]],
         ],
         [
-          ["傷口大小"],
-          ["eye", "約 2mm"],
-          ["eye", "約 2mm"],
-          ["eyes", "約 20mm"],
+          [this.$t('smile_pro.table.content2.p1')],
+          ["eye", this.$t('smile_pro.table.content2.p2')],
+          ["eye", this.$t('smile_pro.table.content2.p3')],
+          ["eyes", this.$t('smile_pro.table.content2.p4')],
         ],
         [
-          ["術後眼乾情況"],
-          ["teardrop", "輕微"],
-          ["teardrop", "輕微"],
-          ["teardrops", "一般"],
+          [this.$t('smile_pro.table.content3.p1')],
+          ["teardrop", this.$t('smile_pro.table.content3.p2')],
+          ["teardrop", this.$t('smile_pro.table.content3.p3')],
+          ["teardrops", this.$t('smile_pro.table.content3.p4')],
         ],
         [
-          ["矯視", "過程痛楚"],
-          ["cavityEye", "無"],
-          ["cavityEye", "無"],
-          ["cavityEye", "無"],
+          [this.$t('smile_pro.table.content4.p1'), this.$t('smile_pro.table.content4.p1_1')],
+          ["cavityEye", this.$t('smile_pro.table.content4.p2')],
+          ["cavityEye", this.$t('smile_pro.table.content4.p2')],
+          ["cavityEye", this.$t('smile_pro.table.content4.p2')],
         ],
         [
-          ["矯視準確度"],
-          ["accurate", "極高"],
-          ["accurate", "極高"],
-          ["accurate-1", "高"],
+          [this.$t('smile_pro.table.content5.p1')],
+          ["accurate", this.$t('smile_pro.table.content5.p2')],
+          ["accurate", this.$t('smile_pro.table.content5.p3')],
+          ["accurate-1", this.$t('smile_pro.table.content5.p4')],
         ],
         [
-          ["角膜自然", "癒合需時間"],
-          ["date", "數天"],
-          ["date", "數天"],
-          ["date+1", "數周至數月"],
+          [this.$t('smile_pro.table.content6.p1'), this.$t('smile_pro.table.content6.p1_1')],
+          ["date", this.$t('smile_pro.table.content6.p2')],
+          ["date", this.$t('smile_pro.table.content6.p3')],
+          ["date+1", this.$t('smile_pro.table.content6.p4')],
         ],
         [
-          ["術後不適感"],
-          ["slight", "輕微"],
-          ["slight", "輕微"],
-          ["ordinary", "一般"],
+          [this.$t('smile_pro.table.content7.p1')],
+          ["slight", this.$t('smile_pro.table.content7.p2')],
+          ["slight", this.$t('smile_pro.table.content7.p3')],
+          ["ordinary", this.$t('smile_pro.table.content7.p4')],
         ],
         [
-          ["角膜瓣", "移位機會"],
-          ["result-ok", "無"],
-          ["result-ok", "無"],
-          ["result", "有"],
+          [this.$t('smile_pro.table.content8.p1'), this.$t('smile_pro.table.content8.p1_1')],
+          ["result-ok", this.$t('smile_pro.table.content8.p2')],
+          ["result-ok", this.$t('smile_pro.table.content8.p3')],
+          ["result", this.$t('smile_pro.table.content8.p4')],
         ],
       ],
       isMobile: false,
@@ -1433,12 +1433,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
+          content: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "SMILE PRO 微笑矯視 - 香港希瑪微笑矯視中心",
+          content: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
         },
       ],
       link: [

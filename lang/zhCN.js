@@ -2,6 +2,11 @@ module.exports = {
   home: {
     navbar: "立即预约",
     divit: `了解 <br /> Divit 赢里数`,
+    race:"用戶评分",
+    konwALL: "了 解 更 多 ・ 预 约",
+    Fullhouse:"讲座",
+    CheckBefore:"术前检查",
+    seeALL:"观看更多",
     headers: {
       aboutSmile: "关于希玛",
       orthopedicServices: "矫视服务",
@@ -13,8 +18,9 @@ module.exports = {
       consumptionDivit: "FPS by divit 详情",
       contactUs: "联络我们",
       reservationService: "预约服务",
-      videos: '矫视信息影片',
-      casesSharing: '个案分享',
+      videos: "矫视信息影片",
+      casesSharing: "个案分享",
+      feign: "矫视资讯",
 
       aboutSmileChild_1: "集团及中心简介",
       aboutSmileChild_2: "医生团队",
@@ -39,6 +45,8 @@ module.exports = {
       ophthalmicConsultationChild_2: "媒体报导",
       ophthalmicConsultationChild_3: "婚展专区",
 
+      feign_knowledge: "科普知识",
+
       reservationServiceChild_1: "矫视前检查",
       reservationServiceChild_2: "讲座",
 
@@ -49,6 +57,75 @@ module.exports = {
 
       togLang: "选择语言",
     },
+    home_referral: {
+      title: "希玛微笑矫视中心",
+      content_text_1:
+        "希玛微笑矫视中心为上市公司「香港希玛眼科集团」旗下的屈光矫视医疗中心。",
+      content_text_2:
+        "中心团队由林顺潮教授带领，加上11名眼科专科医生、多名注册视光师及护士组成。",
+      content_text_3:
+        "于香港拥有2间微笑矫视中心，均符合FDA激光矫视标准，交通便利，环境舒适。",
+      content_text_4:
+        "提供一站式眼科专科医疗及矫视服务，包括：SMILE Pro微笑激光矫视、SMILE微笑激光矫视、ICL植入式隐形眼镜、老花矫视、LASIK激光矫视等。",
+    },
+    home_referral_service: {
+      title: "矫视中心服务",
+      content_text_1: "1000 度近视",
+      content_text_1_1: "500 度散光",
+
+      content_text_2: "担心眼睛",
+      content_text_2_1: "无法对焦太久",
+
+      content_text_3: "1400 度近视",
+      content_text_3_1: "600 度散光",
+
+      content_text_4: "1800 度近视",
+      content_text_4_1: "1000 度远视",
+      content_text_4_2: "600 度散光",
+
+      content_text_5: "39岁以上有老花",
+      content_text_5_1: "同时有近视/远视/",
+      content_text_5_2: "散光问题",
+    },
+
+    contact_us: {
+      title: "关于我们",
+      content_text_1: "超过",
+      content_text_1_1: "只",
+      content_text_1_2: "眼睛完成微笑矫视",
+      content_text_2: "间",
+      content_text_3: "眼科专科医生",
+      content_text_4: "宽敞、舒适中心环境",
+    },
+
+    home_share: {
+      title: "用户分享",
+      name1:"姜咏鑫 Ada",
+      name2:"胡鸿钧 Hubert",
+      name3:"细猫",
+      name4:"陈欣妍 Shirley",
+
+      content_text_1: "每一次睁眼都",
+      content_text_1_1: "怀疑自己是否忘记摘",
+      content_text_1_2: "隐形眼镜的感觉",
+
+      content_text_2: "从未试过",
+      content_text_2_1: "全日都看得清！",
+
+      content_text_3: "做完SMILE Pro",
+      content_text_3_1: "上舞台都不会怕光",
+
+      content_text_4: "以后可以戴",
+      content_text_4_1: "不会缩小我的眼睛",
+      content_text_4_2: "的平光镜！",
+    },
+
+    home_service: {
+      title: "预约服务",
+      content_text_1:
+        "矫视前先要进行全面术前眼睛检查，包括屈光检查、全面眼底检查、医生会诊为你的眼睛状况评估及提供矫视方案建议等。如有兴趣进行矫视，立即WhatsApp预约我们的术前眼睛检查服务。如想了解更多有关SMILE微笑激光矫视、ICL植入式隐形眼镜、老花矫视等资讯，或对以上的矫视方式有疑问，欢迎预约我们矫视中心的讲座了解更多。",
+    },
+
     cmerInfo: [
       {
         h4: `超过<br class="mbShow"/><strong>30,000</strong>只`,
@@ -103,17 +180,834 @@ module.exports = {
       title2: "在线对话",
       title3: "预约服务",
       businessHours: {
-        title: '营业时间',
-        weekday: '星期一至五',
-        Saturday: '星期六',
+        title: "营业时间",
+        weekday: "星期一至五",
+        Saturday: "星期六",
         publicHolidayAndSunday: `星期日及公众假期`,
-        rest: '休息',
-        Center: '中环',
-        MongKok: '旺角',
-        TsimShaTsui: '尖沙咀'
-      }
+        rest: "休息",
+        Center: "中环",
+        MongKok: "旺角",
+        TsimShaTsui: "尖沙咀",
+      },
+    },
+
+    evaluateList: [
+      {
+        name: "Wylie Kwong",
+        date: "2月1日12:07",
+        commit: "Good service and outcome",
+      },
+      {
+        name: "Kathy Cheung",
+        date: "5月3日11:42",
+        commit:
+          "Really good experience overall! Clear explanation before, during and after operation.Staff was friendly and patient! Already recommended CMER to my family members",
+      },
+      {
+        name: "Marco Lau",
+        date: "4月24日11:41",
+        commit:
+          "Very professional service, clear explanation from the doctor and great follow up! Highly recommended!",
+      },
+      {
+        name: "Kei Kei Tam",
+        date: "3月27日 15:44",
+        commit:
+          "The service here is excellence with comprehensive assessment and follow up.The surgeon is professional with good explanation of procedures and great surgical outcome.I would definitely recommend this clinic for smile!",
+      },
+
+      {
+        name: "覃森仲",
+        date: "3月21日17:55",
+        commit: "非常耐心讲解，满意！",
+      },
+      {
+        name: "Helen Tsui",
+        date: "3月2日11:07",
+        commit:
+          "The procedure was very professional and would definitely recommend to my friends.",
+      },
+      {
+        name: "Gary Wong",
+        date: "3月6日15:45",
+        commit: "Excellent services and the doctor has been perfect.",
+      },
+      {
+        name: "June Wong",
+        date: "1月10日12:30",
+        commit:
+          "My son had a great experience and they provided a very supportive environment for his recovery.",
+      },
+      {
+        name: "Siu Chun Wong",
+        date: "1月22日15:46",
+        commit: "好满意服务 医生姑娘都很好",
+      },
+      {
+        name: "Bear Teddy",
+        date: "2023年12月18日17:40",
+        commit:
+          "Everything has been great and handled professionally.Im glad that my vision has been greatly improved.Would definately recommend this clinic to everyone.",
+      },
+      {
+        name: "Stephanie Man",
+        date: "2023年8月12日  16:16",
+        commit:
+          "The doctors and the staff are amazing - felt very cared for throughout the process, both pre - op and post - op.Dr Chow and the nurses are very professional and know how to ease the patients’ anxiety.",
+      },
+      {
+        name: "欧阳彦",
+        date: "2023年11月22日  16:43",
+        commit: "服务态度非常好，手术总算成功",
+      },
+      {
+        name: "Kalok Tang",
+        date: "2023年11月15日  10:37",
+        commit:
+          "the checking is good and the process is smooth that I don’t have any uncomfortable after doing the surgery.The doctor gave suggestions in details and I had a good experience.",
+      },
+      {
+        name: "周轩轩",
+        date: "2023年7月25日 12:36",
+        commit: "做完手术后看清了很多东西！没有带眼镜的烦恼！服务态度",
+      },
+      {
+        name: "Grace Leung",
+        date: "2023年6月9日  16:45",
+        commit: "医生服务很好，很亲切，详细解答疑问。",
+      },
+      {
+        name: "崔剑",
+        date: "2023年11月9日 11:26",
+        commit: "Smooth procedures and good effects.",
+      },
+      {
+        name: "司徒露嬅",
+        date: "2023年11月28日  11:04",
+        commit: "Doctor Chow is nice.The nurses are also very nice.",
+      },
+      {
+        name: "Jane Ross",
+        date: "2023年11月27日 12:42",
+        commit:
+          "Thanks for providing the professional service! Highly recommended!!!",
+      },
+      {
+        name: "Twining Snow",
+        date: "2023年10月11日  15:35",
+        commit: "The result is absolutely amazing!",
+      },
+      {
+        name: "Quanxiang Xian",
+        date: "2023年7月6日  11:39",
+        commit: "Smile 镭射手术，效果不错，推荐",
+      },
+    ],
+  },
+
+  group_profile: {
+    bannerTitle: "集团简介",
+    explain_header: {
+      p1: "香港希玛国际眼科医疗集团（简称：希玛眼科，股份代码：3309.HK），由眼科医生林顺潮教授于2012年创办，总部设于香港，旗下拥有15间医疗机构，包括香港中环眼科中心、旺角中心，和沙田、铜锣湾、观塘、元朗和荃湾诊所，还有内地深圳、北京、上海、昆明，惠州和珠海的分院。集团员工人数超过900人，是香港首间大型连锁上市眼科集团。",
+      small_title1: "希玛眼科中心",
+      p2: "希玛眼科中心扩展至全港拥有8间眼科诊所、2间微笑矫视中心、2间视光中心，以及2间嘉宾眼科专科及激光矫视手术中心（希玛全资附属公司）。眼科诊所及中心遍布港、九、新界，交通便利，环境舒适。",
+      p3: "有关希玛眼科中心资料，详情请浏览:",
+      small_title2: "经营理念",
+      small_title2_p1:
+        "我们的集团名称「希玛」、「C-MER」，正正反映著我们的理念与执著：",
+    },
+
+    explain_second: {
+      p1: "专业临床服务",
+      p2: "现代化管理",
+      p3: "优质教育",
+      p4: "开创性科研",
+      p5_1: "希玛",
+      p5_2: "「希」望为眼睛带来希望之光；「希玛」 与 「喜玛」同音，喜马拉雅山脉为世界海拔最高的山脉，寓意希玛眼科凭着优质临床服务、现代化管理、优质教学与培训以及领先研究，不断追求卓越，攀登高峰的理念",
+
+      honor: "凭借医疗技术和服务声誉，我们荣获：",
+      honor_1: "2018年香港上市公开招股认购超过1500倍",
+      honor_1_2: "全港十大之一",
+
+      honor_2: "2019年大健康产业创新奖",
+      honor_3: "2020年港股「最佳价值医药及医疗股公司」大奖",
+    },
+
+    profile_center: {
+      title: "中心简介",
+      p1: "「希玛微笑矫视中心」是上市公司「香港希玛眼科集团」旗下的屈光矫视医疗中心，位于中环及旺角港铁站直达，交通便利。中心环境舒适，为客人提供优质矫视服务。",
+      p2: "中心团队由最早将LASIK矫视技术引进香港的林顺潮教授带领，加上11名眼科专科",
+      p2_1: "医生、多名注册视光师及护士组成。医生经验丰富，其中有3名为",
+      p2_2: "「香港十大杰出青年」，在安全、技术各方面都有良好口碑。",
+      p3: "作为率先引入激光矫视技术的眼科中心，中心符合FDA激光矫视标准：设有符合国际标准的无菌手术室，配备先进的眼科检查和矫视仪器；为客人作全面、准确的眼科检查，并根据不同情况定制严格且有针对性的矫视方案。",
+      p4: "中心秉持「度身订造」原则，提供品质服务：包括SMILE Pro微笑激光矫视、LASIK激光矫视、植入式隐形眼镜(ICL)，及人工晶体置换术，舒缓有近视、远视、散光、老花以及白内障客人的困扰，让客人改善视力，实践「希．望见美好」的理想。",
+    },
+
+    group_profile_swiper: {
+      title: "中心环境",
+      p1: "希玛微笑矫视中心位于",
+      p2: "中环中建大厦、旺角雅兰中心，交通便利易达。",
+    },
+    group_profile_award: {
+      title: "获得奖项",
     },
   },
+
+  doctor_team: {
+    bannnertitle: "医生团队",
+    intro: "香港希玛国际眼科医疗集团创办人",
+    title2: "医疗团队",
+    doctor: "医生",
+    doctor1: {
+      name: "林顺潮医生",
+      title1: "创办人林顺潮教授是亚太眼科主要领导者之一，连续3届被评",
+      title2: "为「世界眼科100位最具影响力人物之一」，并获",
+      title3: "世界十大杰出青年」、「香港十大杰出青年」、",
+      title4: "「亚太最佳眼科临床教授奖」、「亚太眼科杰出成就奖」、",
+      title5: "「亚太眼科学术最高成就奖」等殊荣。",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "香港医学专科学院院士(眼科)",
+      intro3: "香港眼科医学院院士",
+      intro4: "爱丁堡皇家外科医学院院士(眼科)",
+      intro5: "英国皇家眼科医学院院士",
+      intro6: "香港中文大学医学博士",
+    },
+
+    doctor2: {
+      name: "李佑荣",
+
+      intro1: "香港中文大学内外全科医学士",
+      intro2: "香港医学专科学院院士(眼科)",
+      intro3: "香港眼科医学院院士",
+      intro4: "英国爱丁堡皇家外科医学院院士",
+      intro5: "香港外科医学院院士",
+      intro6: "香港中文大学流行病学与生物统计学理学硕士",
+      intro7: "香港中文大学流行病学与生物统计学学士后文凭",
+    },
+
+    doctor3: {
+      name: "范  恺",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "香港医学专科学院院士(眼科)",
+      intro3: "香港眼科医学院院士",
+      intro4: "爱丁堡皇家外科医学院院士(眼科)",
+      intro5: "英国皇家眼科医学院院士",
+      intro6: "新加坡国立大学眼科医学硕士",
+    },
+
+    doctor4: {
+      name: "黎浩桦",
+
+      intro1: "香港中文大学内外全科医学士",
+      intro2: "香港眼科医学院院士",
+      intro3: "香港医学专科学院院士(眼科)",
+      intro4: "英国爱丁堡皇家外科医学院院员",
+    },
+
+    doctor5: {
+      name: "李德伦",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "香港眼科医学院院士",
+      intro4: "香港医学专科学院院士(眼科)",
+    },
+
+    doctor6: {
+      name: "黄礼文",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "香港眼科医学院院士",
+      intro4: "香港医学专科学院院士(眼科)",
+    },
+    doctor7: {
+      name: "张瀞之",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "香港眼科医学院院士",
+      intro3: "香港医学专科学院院士(眼科)",
+      intro4: "爱丁堡皇家外科医学院院士(眼科)",
+      intro5: "英国格拉斯哥皇家医学院外科院士",
+      intro6: "英国爱丁堡皇家外科医学院院员",
+    },
+
+    doctor8: {
+      name: "林宝生",
+
+      intro1: "香港中文大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "香港眼科医学院院士",
+      intro4: "香港医学专科学院院士(眼科)",
+    },
+
+    doctor9: {
+      name: "林己明",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "香港医学专科学院院士(眼科)",
+      intro4: "香港眼科医学院院士",
+    },
+
+    doctor10: {
+      name: "陈伟乐",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "香港眼科医学院院士",
+      intro4: "香港医学专科学院院士(眼科)",
+      intro5: "香港中文大学医疗管理学理学硕士",
+    },
+
+    doctor11: {
+      name: "梁苑珊",
+
+      intro1: "澳洲雪梨大学内外全科医学士",
+      intro2: "新加坡国立大学眼科医学硕士",
+      intro3: "英国爱丁堡皇家外科医学院院员",
+      intro4: "香港眼科医学院院士",
+      intro5: "香港医学专科学院院士(眼科)",
+    },
+
+    doctor12: {
+      name: "邹枢韵",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "香港眼科医学院院士",
+      intro4: "香港医学专科学院院士(眼科)",
+    },
+
+    doctor13: {
+      name: "尹浩柟",
+
+      intro1: "香港中文大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "英国皇家外科医学院院员",
+      intro4: "英国格拉斯哥皇家医学院外科院员",
+      intro5: "香港眼科医学院院士",
+      intro6: "香港医学专科学院院士(眼科)",
+    },
+
+    doctor14: {
+      name: "邹乐韵",
+
+      intro1: "香港大学内外全科医学士",
+      intro2: "英国爱丁堡皇家外科医学院院员",
+      intro3: "香港医学专科学院院士(眼科)",
+      intro4: "香港眼科医学院院士",
+    },
+  },
+
+
+  smile_pro: {
+    bannerTitle: "SMILE PRO 微笑激光矫视",
+
+    title2: "如你符合以上描述，",
+    title2_1: "你应考虑选择SMILE PRO!",
+    table: {
+      title1: "一图看清SMILE",
+      title2: "真实明星用家个案分享",
+
+      headersName1: "微笑矫视",
+      headersName2: "激光矫视",
+
+      content1: {
+        p1: "激光时间",
+        p1_1: "（单一眼睛）",
+
+        p2: "约10-16秒",
+        p3: "约23-25秒",
+
+        p4: "平均30秒或以上",
+        p4_1: "（视乎情况）",
+      },
+
+      content2: {
+        p1: "伤口大小",
+        p2: "约 2mm",
+        p3: "约 2mm",
+        p4: "约 20mm",
+      },
+
+      content3: {
+        p1: "术后眼干情况",
+        p2: "轻微",
+        p3: "轻微",
+        p4: "一般",
+      },
+
+      content4: {
+        p1: "矫视",
+        p1_1: "过程痛楚",
+        p2: "无",
+      },
+
+      content5: {
+        p1: "矫视准确度",
+        p2: "极高",
+        p3: "极高",
+        p4: "高",
+      },
+
+      content6: {
+        p1: "角膜自然",
+        p1_1: "愈合需时间",
+
+        p2: "数天",
+        p3: "数天",
+        p4: "数周至数月",
+      },
+
+      content7: {
+        p1: "术后不适感",
+        p2: "轻微",
+        p3: "轻微",
+        p4: "一般",
+      },
+      content8: {
+        p1: "角膜瓣",
+        p1_1: "移位机会",
+        p2: "无",
+        p3: "无",
+        p4: "有",
+      },
+    },
+
+    smile_pro_trait: {
+      title2: "三大特点",
+
+      content1: {
+        p1: "2-2.5mm微创切口",
+      },
+
+      content2: {
+        p1: "极低能量",
+        p2: "复原时间相对快",
+      },
+
+      content3: {
+        p1: "极速脉冲",
+        p2: "过程短而精准",
+      },
+    },
+  },
+
+  Correct: {
+    icl: {
+      
+      small_title1:"更多ICL植入式",
+      small_title2:"隐形眼镜真实个案分享",
+      bannerTitle: "植入式隐形眼镜",
+      iclBtn: "预约咨询",
+      content1: {
+        p1: "植入式隐形眼镜Implantable Collamer Lens (ICL)，又名后房型可植入式隐形屈光晶体植入手术，专为深度近视、远视、散光客人而设。",
+        p2: "手术过程无须切削角膜，把ICL晶体植入眼内，便可获取高清视力。植入式隐形眼镜以非激光原理，用创新技术和具生物兼容特质、柔软及具紫外线防护的晶体材料，矫正高度近视、远视及散光。",
+      },
+      small_title2: "为何选择希玛?",
+      content2: {
+        p1: "希玛自创办以来与STAAR Surgical公司建立良好的合作关系逾10年。",
+        p2: "2023年，STAAR Surgical公司对希玛眼科集团的医疗技术、手术品质及服务作出认可，宣布将希玛微笑矫视中心设立为首间官方认证EVO ICL 国际培训中心。",
+        p3: "希玛微笑矫视中心往后会继续致力于ICL方面发展，成为大众选择ICL植入式隐形眼镜的首选!",
+      },
+      small_title3: "EVO Visian ICL镜片?",
+      small_title3_1: "7大特色",
+      content3: {
+        p1: "EVO Visian ICL以STAAR Surgical 专用的生物相容Collamer专利材质制成。这种材质含有自然存在于体内的胶原蛋白。EVO Visian ICL Collamer技术的独特优势使其成为视力矫正镜片的理想材质，其中包含抗紫外线功能。",
+      },
+
+      characteristic: {
+        content1: {
+          title: "紫外线防护",
+          text1: "镜片有紫外线",
+          text2: "防护功能",
+        },
+
+        content2: {
+          title: "与时俱进的灵活度",
+          text1: "ICL镜片既可永久",
+          text2: "存放眼内亦可还原",
+        },
+
+        content3: {
+          title: "手术与恢复皆快速",
+          text1: "手术时间短",
+          text2: "复原期短，手术过程",
+          text3: "最快只需20-30分钟",
+        },
+
+        content4: {
+          title: "柔软服贴",
+          text1: "镜片柔软灵活",
+          text2: "易于植入",
+        },
+
+        content5: {
+          title: "生物相容性",
+          text1: "ICL镜片由含有",
+          text2: "胶原蛋白材质制成，",
+          text3: "与眼球互相兼容",
+        },
+
+        content6: {
+          title: "可取出",
+          text1: "可按需要",
+          text2: "选择取出镜片",
+        },
+
+        content7: {
+          title: "夜间视力",
+          text1: "提供绝佳夜间视力",
+        },
+      },
+
+      benefits: {
+        content1: {
+          title: "术后恢复快",
+          text1: "最快术后数天可如常生活、工作",
+        },
+
+        content2: {
+          title: "手术时间短",
+          text1: "大约10至15分钟完成",
+        },
+
+        content3: {
+          title: "矫视过程轻松",
+          text1: "快捷、安全少有不适",
+        },
+
+        content4: {
+          title: "效果稳定",
+          text1: "视力改善满意度高",
+        },
+      },
+
+      suitable_object: {
+        content1: {
+          text1: "近視1,400度以下",
+          text2: "遠視 / 散光600度以下",
+        },
+
+        content2: {
+          text1: "投考或從事紀律部隊/",
+          text2: "航空業界人士",
+        },
+
+        content3: {
+          text1: "熱愛運動",
+        },
+
+        content4: {
+          text1: "不愛戴隱形眼鏡",
+          text2: "或眼鏡人士",
+        },
+        content5: {
+          text1: "擔心長期配戴隱形眼鏡",
+          text2: "影響眼睛健康人士",
+          mbText1: "不愛佩戴眼鏡或",
+          mbText2: "隱形眼鏡",
+        },
+      },
+
+      xtra: {
+        title: "矫视的好处",
+        title_content: "ICL矫视的好处",
+        optionContent1:{
+          text1:"为生活",
+          text2:"带来便利"
+        },
+
+        optionContent2:{
+          text1:"爲生活",
+          text2:"帶來便利"
+        },
+
+
+        content1: {
+          title: "术后复原快",
+          text1: "手术以微创技术进",
+          text2: "术后复原期短",
+        },
+
+        content2: {
+          title: "手术时间短",
+          text1: "最快20-30分钟",
+          text2: "内完成矫视",
+        },
+
+        content3: {
+          text1: "矫视后可减低对眼镜",
+          text2: "或隐形眼镜的依赖",
+        },
+
+        content4: {
+          title: "物料安全",
+          text1: "2005年已通过美国",
+          text2: "FDA认证",
+        },
+
+        content5: {
+          title: "不会导致",
+          title2: "干眼症",
+          text1: "过程无须切削角",
+
+          text2: "因此不会导",
+          text3: "致干眼症",
+        },
+
+        content6: {
+          title: "量身定制",
+          title2: "治疗方案",
+          text1: "是一项可还原技术",
+
+          text2: "客人可按需要选择",
+          text3: "取出ICL",
+        },
+      },
+    },
+
+    smile: {
+      bannertitle: "SMILE 微笑激光矫视",
+      small_title1: "SMILE矫正原理",
+      btn1: "预约咨询",
+      small_title1_text1:
+        "SMILE微笑矫视是一项突破性的微创矫正技术。本中心的 SMILE 微笑矫视使用Carl Zeiss VisuMax激光最新3.0系统，原理是在不用打开角膜瓣的情况下，以全飞秒激光扫描制作角膜组织膜片，再通过2-2.5mm的小切口把膜片取出，以达到视力矫正的效果。此技术可以为客人矫正近视、散光及老花问题，减低对眼镜的依赖。",
+    },
+
+    correction_presbyopia: {
+      bannerTitle: "",
+      bannerTitle2:"老花矫视",
+      btn: "预约咨询",
+
+      content1: {
+        title: "甚么是老花？",
+        p1: "随著年纪增长，人们可能会遇到老花的问题，这是一种影响近视力的视力状况。由于在眼睛中的晶状体弹性降低，使眼睛调节焦距的能力下降，导致看近处物体时会出现视觉模糊。",
+        p2: "老花并非疾病，而是随著年龄增长而自然出现的现象。一般在40岁开始出现，到60岁时会达到较为稳定的状态。为了改善老花带来的视力问题，人们可以选择配戴老花眼镜、使用隐形眼镜或接受老花矫视手术等方式，这些方法都可帮助改善近距离的视力，使日常生活中的阅读和近距离工作变得更加容易，而进行老花矫视更是受大众欢迎的选项。",
+        p3: "坊间称之为人工晶体置换术。透过更换人工晶体，致力为客人视野带来焕然一新的感觉，一次过解决近视、远视、散光、老花等问题。希玛微笑矫视中心针对客人眼睛实际状况、职业、生活需要等因素，度身订造矫视方案；专业咨询过后，眼科专科医生按客人视力需求选取及植入合适之人工晶体，以替代原有已老化和混浊的晶体。",
+      },
+
+      content2: {
+        title: "人工晶体",
+        p1: "多焦距人工晶体以多个细小压环把进入眼睛的光线分为两至三束主要光线，产生不同焦点，形成远、中、近的影像，让眼睛可以不依靠眼内肌肉对焦，借此解决近视、远视、散光、老花等视力问题。",
+        p2: "除了多焦距人工晶体外，亦有基本的单焦距人工晶体、散光多焦距人工晶体等选项。建议请先预约检查咨询眼科专科医生专业意见，再选择合适自己的人工晶体。",
+      },
+
+      content3: {
+        title1: "人工晶体",
+        title2: "人工晶体置换术",
+        title3: "的好处",
+
+        list1: {
+          title: "人工晶体置换术的好处",
+          text1:"术后复原快",
+          text2:"最快术后一天可如常",
+          text3:"生活或工作"
+        },
+        list2:{
+    
+          text1:"手术时间短",
+          text2:"大约15至20分钟完成"
+        },
+        list3:{
+          text1:"不需依赖眼镜/",
+          text2:"隐形眼镜"
+        },
+        list4:{
+          text1:"物料具",
+          text2:"生物兼容性",
+          text3:"人工晶体物料",
+          text4:"与眼球兼容"
+        },
+        list5:{
+          text1:"同时处理近视、远视、",
+          text2:"散光、老花等问题"
+        },
+        list6:{
+          text1:"根据个人眼睛实际",
+          text2:"状况和生活需要，",
+          text3:"制订合适的矫视方案"
+        }
+      },
+
+      content4:{
+        title:"合适对象",
+        text1:"40岁或以上",
+        text2:"热爱运动",
+        text3:"佩戴多副矫正度数眼镜",
+        text3_1:"(近视、远视、散光、老花)",
+        text4:"不爱佩戴眼镜",
+        text4_1:"或隐形眼镜"
+      }
+      
+    },
+    lasik: {
+      bannerTitle: "激光矫视",
+      small_title1: "LASIK激光矫视的好处",
+      small_title2: "合适对象",
+      btn:"预约咨询",
+      benefits: {
+        content1: {
+          title: "术后恢复快",
+          text: "最快术后数天可如常生活、工作",
+        },
+        content2: {
+          title: "手术时间短",
+          text: "大约20至30分钟完成",
+        },
+        content3: {
+          title: "矫视过程轻松",
+          text: "快捷、安全少有不适",
+        },
+        content4: {
+          title: "效果稳定",
+          text: "视力改善满意度高",
+        },
+      },
+      suitable_object: {
+        content1: {
+          text1: "近视1,400度以下",
+          text2: "远视/散光600度以下",
+          mbText1: "近视1,400度以下",
+          mbText2: "远视/散光600度",
+        },
+        content2: {
+          text1: "投考或从事纪律部队/",
+          text2: "航空业界人士",
+        },
+        content3: {
+          text1: "热爱运动",
+        },
+        content4: {
+          text1: "不爱戴隐形眼镜",
+          text2: "或眼镜人士",
+        },
+        content5: {
+          text1: "担心长期配戴隐形眼镜",
+          text2: "影响眼睛健康人士",
+          mbText1: "担心长期配戴",
+          mbText2: "隐形眼镜影响眼睛",
+          mbText3: "健康人士",
+        },
+      },
+    },
+
+
+  },
+
+  fee: {
+    table: {
+      title: "收费详情",
+      sub_title: "本诊所绝无其他额外收费",
+      btn:"立即预约",
+
+      content1: {
+        text1: "价钱(单眼)",
+        text2: "限时优惠 由即日起",
+      },
+      content2: {
+        text1: "价钱(双眼)",
+        text2: "限时优惠 由即日起",
+      },
+
+      content3: {
+        text1: "术前检查费用",
+      },
+
+      content4: {
+        text1: "眼睛水润护理",
+      },
+
+      content5: {
+        text1: "术后眼部",
+        text2:"彩光护理"
+      },
+
+      content6: {
+        text1: "眼科专科医生",
+        text2:"检查"
+      },
+
+      content7: {
+        text1: "术后覆诊",
+      },
+      content8: {
+        text1: "术后覆诊",
+      },
+      content9: {
+        text1: "无限视光检查",
+      },
+
+
+
+      contentRight:{
+        content1:{
+          text1:"微笑激光矫视",
+        },
+        content2:{
+          text1:"微笑激光矫视",
+        },
+        content3:{
+          text1:"植入式隐形眼镜",
+        },
+        content4:{
+          text1:"LASIK激光矫视/",
+          text2:"TPRK经上皮激光",
+          text3:"角膜切削手术"
+        },
+        content5:{
+          text1:"不带散光",
+          text2:"带散光"
+        },
+        content6:{
+          text1:"不带散光",
+          text2:"带散光"
+        }
+      },
+
+      contentLeft:{
+        content1:{
+          text1:"单焦点",
+          text2:"人工晶体价钱",
+          text3:"(单眼)"
+        },
+        content2:{
+          text1:"多焦点",
+          text2:"人工晶体价钱",
+          text3:"(单眼)",
+          text4:"术前检查费用"
+        }
+      },
+      vision_right:{
+        title:"Clear-Vision(老花矫视)",
+        textS:"(带散光)",
+        textNoS:"(不带散光)"
+      }
+    },
+
+    textList:{
+      text1:"以上为非指定医生价钱",
+      text2:"^指定信用卡（东亚/渣打/汇丰）可享6/12个月免息分期",
+      text2_1:"矫视费用已包括术前检查费用",
+      text2_2:"$100(若没有预约进行矫视，需另外缴付术前检查费用)",
+
+      text3:"^^指定信用卡（东亚/渣打/汇丰）可享6/12/18/24/36个月免息分期",
+      text3_1:"矫视费用已包括术前检查费用",
+      text3_2:"$500 (若没有预约进行矫视，需另外缴付术前检查费用)",
+      text3_3:"#需要术后一年内完成。如超过一年，需另作预约，诊金按正常（非矫视套餐）收费",
+
+
+      text4:"SMILE、SMILE Pro微笑激光矫视及LASIK激光矫视/TPRK经上皮激光角膜切削手术的增进手术需要术后两年内完成。如超过两年，需另作预约，诊金按正常（非矫视套餐）收费。",
+    
+      text5:"SMILE微笑激光矫视、LASIK激光矫视/TPRK经上皮激光角膜切削手术及ICL植入式隐形眼镜的无限视光检查需要术后一年内完成。如超过一年，需另作预约，诊金按正常（非矫视套餐）收费；SMILEPro微笑激光矫视的无限视光检查需要术后两年内完成。如超过两年，需另作预约，诊金按正常（非矫视套餐）收费。",
+
+      text6:" SMILE、SMILE Pro微笑激光矫视及LASIK激光矫视/TPRK经上皮激光角膜切削手术当日药费已包括在矫视套餐收费内，ICL植入式隐形眼镜的药费需另外收费。"
+    }
+  },
+
   aboutUs: {
     centreIntroduction: {
       Se2ComIntro: {
@@ -417,7 +1311,7 @@ module.exports = {
     td1_3: "享受无镜生活限时优惠 ",
     td1_4: "由",
     td1_5: "限时优惠 由即日起",
-    td1_5_1: '至31.1.2024',
+    td1_5_1: "至31.1.2024",
     td2: "术前检查费用",
     span1: "*指定信用卡（东亚/渣打/滙丰）可享6/12个月免息分期",
     span2: "^完成矫视后可退回术前检查费用",
@@ -589,6 +1483,7 @@ module.exports = {
   },
   freQuestios: {
     firstProblem: {
+      title:"SMILE 微笑激光矫视",
       problem1: {
         title: "SMILE微笑激光矫视后可达至零度近视的效果？",
         content: `有很多人以为矫视后会达致零度近视或散光，甚或较术前配戴眼镜或隐型眼镜有更清晰的视力，但其实这是错误的观念。<br />
@@ -663,6 +1558,7 @@ module.exports = {
       },
     },
     secondProblem: {
+      title:"LASIK 激光矫视",
       problem1: {
         title: "进行LASIK激光矫视过程要多久？",
         content: `LASIK激光矫视过程每只眼大概10分钟，但因事前的准备及检查需时，矫视当日患者需于中心逗留大概两至三小时。`,
@@ -729,6 +1625,8 @@ module.exports = {
       },
     },
     thirtProblem: {
+      title:"ICL植入式隐形眼镜",
+
       problem1: {
         title: "ICL植入式隐形眼镜的适用矫正范围是？",
         content: `ICL植入式隐形眼镜可用于矫正近视1800度以下、远视1000度以下和散光600度以下。`,
@@ -1197,7 +2095,7 @@ module.exports = {
           link: "https://youtu.be/jBAIJeUQGz0",
           img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
           meida: `<span>SMILE PRO微笑矫视-莎比亚（完整版）</span>`,
-        }
+        },
       ],
       mediaBujuLists_2_2: [
         {
@@ -1340,7 +2238,6 @@ module.exports = {
           meida: `<span>SMILE后几时先可以化眼妆💡</span>`,
         },
       ],
-
     },
     consumption: {
       title: "消费券详情",
@@ -1536,6 +2433,7 @@ module.exports = {
       },
       mainBanner: {
         p: "LASIK 激光矫视",
+        title:"激光技术",
         span: "超过20年的历史，也是流行的矫视方式；利用激光技术，重塑角膜弧度以改善眼睛折射光线能力，从而矫正视力，减低客人对眼镜和隐形眼镜的依赖。",
       },
       suitable: {
@@ -1548,6 +2446,7 @@ module.exports = {
       },
       principle: {
         h2: "LASIK 激光矫视原理",
+        title:"激光矫视原理",
         span: `LASIK (Laser-Assisted in Situ
   Keratomileusis)是准分子激光原位角膜磨镶术，通过激光「打磨」角膜，改变角膜弧度，从而矫正视力。过程中，医生会先用飞秒激光制作角膜瓣；掀开角膜瓣后，用准分子激光进行角膜切削，再把角膜瓣复位，从而矫正视力。`,
       },
@@ -1561,6 +2460,15 @@ module.exports = {
         des4: `减低术后眼干及感染的可能性`,
         des5: `伤口只有约2-2.5mm`,
         des6: `视力改善显著`,
+
+        titleList: {
+          title1: "手术简单",
+          title2: "术后复原快",
+          title3: "手术时间短",
+          title4: "术后影响少",
+          title5: "微创",
+          title6: "效果稳定",
+        },
       },
       fit: {
         h3: "你适合接受SMILE 微笑矫视吗？",
@@ -1854,26 +2762,26 @@ module.exports = {
           },
           {
             name: "Agnes, 行政人员",
-            span1: "一直担心做完需要好耐先回复",
+            span1: "一直担心做完需要好久才回复",
             span2: "正常生活，原来做完",
-            span3: "第 2 日已经睇得清",
-            span4: "如常生活架喇!",
+            span3: "第 2 日已经看得清",
+            span4: "如常生活啦!",
           },
           {
             name: "Vivien, 家庭主妇",
-            span1: "我系好怕痛既人黎，",
-            span2: "但真系",
+            span1: "我是很怕痛的人，",
+            span2: "但真的",
             span3: "完全无痛!",
-            span4: "会推荐比朋友!",
+            span4: "会推荐给朋友!",
           },
           {
             name: "阿声, 咖啡师",
             span1: "做完",
             span2: " SMILE PRO ",
-            span3: "好似重新感受世界咁! 只系",
+            span3: "好似重新感受世界这样! 只是",
             span4: "短短 10 秒",
-            span5: "就有咁大改",
-            span6: "变, 好后悔自己 无早 d 做!",
+            span5: "就有这么大的改变",
+            span6: "变, 好后悔自己不早点做!",
           },
         ],
       },
@@ -1976,4 +2884,243 @@ module.exports = {
       ],
     },
   },
+
+  contactUs: {
+    bannerTitle: "联络我们",
+    tableTitle1: "矫视中心",
+    tableTitle2: "眼科诊所",
+
+    phoneLink:{
+      title:"服务热线",
+      content1:{
+        text1:"服务中心",
+        text2:"电话热线",
+        text4:"希玛眼科中心",
+        text5:"希玛微笑矫视中心",
+        text6:"希玛眼科视光中心"
+      }
+    },
+
+    table1: {
+      content1: {
+        title1: "中环",
+        title2: "希玛微笑矫视中心",
+        address1: "毕打街1-3号中建大厦1512室",
+        address2: "(港铁站G出口，置地广场楼上)",
+        mobileAddress1: "毕打街1-3号中建大厦1512室",
+        mobileAddress2: "(港铁站G出口，置地广场楼上)",
+      },
+      content2: {
+        title1: "旺角",
+        title2: "希玛微笑矫视中心",
+        address1: "弥敦道625及639号雅兰中心",
+        address2: "一期1725B室 (港铁站E1出口)",
+
+        mobileAddress1: "弥敦道625及639号雅兰中心",
+        mobileAddress2: "一期1725B室 (港铁站E1出口)",
+      },
+    },
+  },
+
+  medical_equipment: {
+    content1: {
+      remark:
+        "VISUMAX 800新增的智能眼球与旋转侦测和视觉中心定位功能可以实现更准确和个性化的治疗，以满足每位病人的需求。最新的技术可以在不到10秒钟的时间内完成晶状体切割，从而缩短整个吸附时间。",
+      source: "资料及图片来源： Carl Zeiss",
+    },
+    content2: {
+      name2: "全飞秒激光3.0系统",
+      remark:
+        "SMall Incision Lenticule Extraction (SMILE 微笑激光矫视) 透过使用飞秒激光，在角膜内注入极微细的激光气泡，直接切割角膜的中层部分，同时会开一个2毫米的小切口，医生将已切割的角膜部份从切口取出，令角膜弧度改变以达至矫视效果。",
+      source: "资料及图片来源： Carl Zeiss",
+    },
+    content3: {
+      name1: "德国蔡司扫频<br class='mbShow' />OCT生物测量仪",
+      remark:
+        "蔡司IOLMaster 700具有扫频生物测量技术，建立在近20年的光学生物测量经验的基础上。凭借全角膜曲率测量（TK），获得专利的角膜到视网膜扫描显示了贯穿整个眼睛的纵向切面的解剖细节。在白内障手术过程中，获取一个参考图像，并将其用于术中图像的匹配。",
+      source: "资料及图片来源： Carl Zeiss",
+    },
+    content4: {
+      name1: "Icare回弹式眼压计",
+      remark:
+        "Icare眼压计是一种自用型掌上型设备，采用回弹法检测。眼压计使用一个小且轻的一次性探头与眼睛进行很短暂的接触。眼压计测量探头的减速和回弹时间，并根据这些参数计算眼压。",
+      source: "资料及图片来源：Icare Finland",
+    },
+
+    content5: {
+      name1: "日本尼德克",
+      name2: "综合电脑验光仪",
+      remark:
+        "日本尼德克综合电脑验光仪具有「四合一」的检查功能，其检查项目分别是：视力、电脑验光、角膜曲率、眼压，快速获得病人屈光状态的性质和范围，提供准确的球镜、柱镜、柱镜轴位。 资料来日本尼德克综合电脑验光仪具有「四合一」的检查功能，其检查项目分别是：视力、电脑验光、角膜曲率、眼压，快速获得病人屈光状态的性质和范围，提供准确的球镜、柱镜、柱镜轴位。",
+      source: "资料及图片来源：NIDEK",
+    },
+
+    content6: {
+      name1: "日本尼德克",
+      name2: "手持综合电脑验光仪",
+      remark:
+        "手持设电脑验光仪，使用灵活，可进行卧式验光，台式验光及手持验光，适用于从儿童到成人全年龄段，准确检查角膜屈光度、角膜散光度、角膜散光轴度、球面度、柱面度、最小瞳孔直径等数据。",
+      source: "资料及图片来源：NIDEK",
+    },
+
+    content7: {
+      name1: "天狼星三维角膜地形图",
+      name2: "及眼前节分析系统",
+      remark:
+        "将Placido环和Scheimpflug相机三维扫描技术相结合三维断层扫描角膜及前房，获取角膜前后表面和前房精确的图像数据，并且可以提供瞳孔直径测量模拟不同光强测量瞳孔直径。",
+      source: "资料及图片来源： CSO",
+    },
+
+    content8: {
+      name1: "三维眼前节分析诊断系统",
+      remark:
+        "德国欧科路公司生产的Pentacam®，采用的Scheimpflug技术，专利的旋转360°扫描，获取眼前节多重图像，生成眼前节三维立体图，计算角膜、前房和晶状体的各种测量值。可广泛应用于准分子矫视、视光RGP、角膜病、青光眼和白内障等疾病的诊疗。",
+      source: "资料及图片来源：Oculus",
+    },
+
+    content9: {
+      name1: "德国蔡司眼前节",
+      name2: "OCT分析系统",
+      remark:
+        "眼前节OCT高解析度图像可显示角膜厚度及基质内反射的改变，可定量测量角膜上皮分布，以帮助检查角膜基质层异常及比较激光矫视术后的角膜上皮复原情况。也可以用于监测ICL植入术后的晶体位置。同时也对诊断圆锥角膜、基质角膜炎、角膜水肿等角膜疾病有重要帮助。",
+      source: "资料及图片来源：Carl Zeiss",
+    },
+
+    content10: {
+      name1: "德国蔡司角膜地形图系统",
+      remark:
+        "通过将Atlas® Placido环技术和Visante OCT角膜测厚技术融合在一起，Visante omni可提供全面的角膜前表面和角膜后表面地形图资讯。SmartCapture™智能图像分析技术会在拍摄过程中分析多张图像，并自动选择好品质的图像。MasterFit™ II角膜接触镜软体无缝验配RGP接触镜。",
+      source: "资料及图片来源：Carl Zeiss",
+    },
+
+    content11: {
+      name1: "德国蔡司光学<br class='mbShow' />相干断层扫描仪",
+      remark:
+        "蔡司相干光学断层扫描器(OCT)，是一种新的光学诊断技术，具有非侵入性、非接触性的特点。OCT对青光眼的早期诊断和临床追踪观察有较大帮助。OCT对眼底疾病的诊断也有其不可或缺的作用，尤其对视神经（如视神经炎、视神经萎缩），黄斑疾病（如特发性黄斑裂孔、黄斑前膜），视网膜脱离等有较大的辅助诊断作用。",
+      source: "资料及图片来源： Carl Zeiss",
+    },
+
+    content12: {
+      name1: "德国蔡司免散瞳彩色",
+      name2: "眼底照相机(VISUCAM500)",
+
+      remark:
+        "VISUCAM® 500 具备经典蔡司光学的免散瞳彩色眼底照相及血管造影仪。眼底影像及血管造影是一种检查而并非治疗，运用染色追踪的方法去评估眼底视网膜之血液循环。检查进行时，萤光剂会被注射入血管。当它随血液流到视网膜时,就即时对眼底进行一连串的拍摄。透过观察萤光剂流动的形态就可帮助诊断眼底疾病。",
+      source: "资料及图片来源： Carl Zeiss",
+    },
+
+    content13: {
+      name1: "A型及B型超声波扫描仪",
+      remark:
+        "A型超声用于眼轴长短的测量，眼部异常组织织标准超声的检测； B型超声用于玻璃体混浊、玻璃体积血、视网膜脉络膜脱离等病变的检查。",
+      source: "资料及图片来源：Quantel Medical",
+    },
+
+    content14: {
+      name1: "全视网膜扫描相机",
+      remark:
+        "Daytona可在不用放大瞳孔的情况下扫描80%的眼底视网膜，比传统眼底相机检查范围多4倍，并且可以快速的检查周边视网膜，尽早发现视网膜病变及排除潜在的风险。",
+      source: "资料及图片来源： Optos",
+    },
+
+    content15: {
+      name1: "角膜内皮层细胞分析仪",
+      remark:
+        "角膜内皮细胞分析仪用作检查角膜内皮层细胞,是一项重要的筛选角膜疾病的工具，在进行白内障手术或ICL晶体植入手术前进行角膜健康评估,对于处理戴隐形眼镜导致眼角膜缺氧，Fuchs角膜内皮营养不良，锥形角膜和角膜创伤等的个案，提供了清晰的图像资料及准确的数据。",
+      source: "资料及图片来源：Konan",
+    },
+
+    content16: {
+      name1: "德国蔡司视野分析仪",
+      remark:
+        "Humphery HFA3是全电脑控制的视野检查和分析系统，作为视野测量的标准，用于诊断和跟进青光眼、视网膜色素病变和其他影响视野的病症所引起的视野缺损 (如脑神经肿瘤)，从而诊断及观察视觉及脑神经各种症状情况，是一项重要的检查。",
+      source: "资料及图片来源：Carl Zeiss",
+    },
+
+    content17: {
+      name1: "FORUM – 眼科专业化",
+      name2: "数据管理平台",
+      remark:
+        "FORUM是蔡司为眼科专门提供的数据存储及眼科专业化数据管理系统，可连结来自不同检查设备的患者资料，有效甄别、管理每个患者的详尽数据。特别是眼底疾病及青光眼专科工作平台，可对治疗前后的多模影像进行对比，并提供精确的定量分析，有利于对病患进行个性化治疗与跟进。",
+      source: "资料及图片来源：Carl Zeiss",
+    },
+
+    content18: {
+      name1: "Haag-Streit BQ900<br class='mbShow' />裂隙灯",
+      name2: "&IM900裂隙灯照相系统",
+      remark:
+        "Haag-Streit BQ900高清晰裂隙灯及IM 900照相系统，帮助医生用于临床检查眼睑、结膜、角膜，虹膜、前房、晶状体、视网膜、黄斑点、视神经等的健康。",
+      source: "资料及图片来源：Haag-Streit",
+    },
+
+    content19: {
+      name1: "眼底镭射治疗仪",
+      remark:
+        "矩阵式多波长点阵扫描眼底激光治疗仪可为有适应症之糖尿病及其他视网膜病变患者, 提供更佳疗效。矩阵式点阵扫描镭射, 达到治疗效果的同时，同时是微创技术，降低风险, 减少患者的疼痛和不适感，且配合多波长, 可针对不同眼睛状况, 提供更有效率治疗。",
+      source: "资料及图片来源：Ellex",
+    },
+
+    content20: {
+      remark:
+        "角膜胶原交联术(Corneal Collagen Cross-Linking) 一般应用在临床锥形角膜或可疑圆锥角膜，亦可以应用在接受激光矫视的人士。 角膜局部予核黄素（Riboflavin；即维生素B2，用于增加能量吸收并释出活性氧），再经本仪器发出紫外线（UVA）照射，令角膜组织释放一些粒子，使纤维中的胶原蛋白紧扣一起，因此而变得坚韧稳定，巩固角膜基质强度，减少术后角膜变形的可能性,深度近视或散光的情况下可能减少度数反弹的机会和程度。",
+      source: "资料及图片来源：Peschke   ",
+    },
+
+    content21: {
+      name1: "激光治疗仪",
+      remark:
+        "Tango ReflexEllex 的新型 Tango Reflex™ 激光治疗仪结合了多种治疗平台 — — 可进行青光眼选择性小梁整型激光(Selective Laser Trabeculoplasty, SLT) 治疗，YAG后囊激光切开治疗，以及微创玻璃体消融术。",
+      source: "资料及图片来源：Ellex ",
+    },
+
+    content22: {
+      name1: "飞秒激光白内障矫视仪",
+      remark:
+        "飞秒激光白内障矫视仪是新一代飞秒激光白内障手术仪，集三维影像及导航技术于一身，能分析眼部结构及为眼睛描绘出立体三维图，帮助为手术作出精密的计算及预测。新一代飞秒激光辅助矫视白内障手术采用全电脑控制的红外线激光进行三个步骤，包括角膜切口，撕囊及击碎晶体。使医生可以精确地进行切割及均匀地击碎晶体，不論在切割形狀及深度上更趋精细，以准确地植入人工晶体，使晶体位置较准确，提高多焦晶体的精准度及术后视力质量，由于新技术安全、可靠及精准度极高，可以减低手术创伤、术后感染、发炎等并发症。",
+      source: "资料及图片来源：Alcon",
+    },
+
+    content23: {
+      name1: "徕卡Proveo8融合光学",
+      name2: "眼科手术显微镜",
+      remark:
+        "徕卡Proveo8融合光学眼科手术显微镜采用Fusion Optics融合光学技术增加安全性，打破显微镜的传统光学，使镜下景深和清晰度同时达到较佳状态，使得医生在手术过程中，即使大倍数下，眼内结构由角膜到视网膜依然清晰可见，增加安全性；广角、扩大的视野对患者伤害更小，增加安全的同时，提高手术效率，LED低功率柔光照明减少对患者的光毒性伤害，较能保护眼睛。",
+      source: "资料及图片来源：Leica",
+    },
+
+    content24: {
+      name1: "白内障超声乳化仪（Alcon",
+
+      remark:
+        "爱尔康主动液流白内障晶体超声乳化仪为新一代白内障超声乳化仪，旋切式白内障乳化术(OZil Torsional), 进阶微创伤口治疗。提高超音波乳化效率，缩短手术时间，减少对角膜的热伤害，增加手术安全。新一代高效率主动稳压系统，较能使眼内压稳定、安全。 配备AutoSert晶体自动植入手柄，协助进行自动化人工晶体植入。",
+      source: "资料及图片来源：Alcon",
+    },
+
+    content25: {
+      name1: "高速率玻切超声乳化一体机",
+
+      remark:
+        "美国爱尔康公司Constellation Vision System 微创玻璃体超声乳化一体机能协助进行微创视网膜手术。作为眼科的尖端手术，其创伤小，安全性高，并且可同时进行白内障、视网膜联合手术，减少手术次数，避免多次手术对眼睛结构的损伤，伤口也不需要缝合，复原速度大为缩短。",
+      source: "资料及图片来源：Alcon",
+    },
+  },
+  appointFrom_ifram:{
+    title:"SMILE 微笑激光矫视，SMILE PRO 微笑激光矫视，CMER CLEAR-VISION 老花讲座！",
+    p1:"中环诊所：中环毕打街1-3号中建大厦1512室",
+    p2:"旺角诊所(星期一至五)：旺角弥敦道625及639号雅兰中心一期702室",
+    p3:"旺角诊所(星期六)：旺角弥敦道625及639号雅兰中心一期1208室",
+    p4:"尖沙咀诊所︰尖沙咀梳士巴利道18-24号K11 ATELIER办公大楼1906室"
+
+  },
+  appointFroms:{
+    title:"讲座",
+    title1:"SMILE 微笑激光矫视，SMILE PRO 微笑激光矫视，",
+    title2:"CMER CLEAR-VISION 老花讲座！",
+
+    p1:"中环诊所：中环毕打街1-3号中建大厦1512室",
+    p2:"旺角诊所：旺角弥敦道625及639号雅兰中心一期1725B室",
+
+
+    title4:"选择地点"
+  }
 };
