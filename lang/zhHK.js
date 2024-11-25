@@ -774,6 +774,7 @@ module.exports = {
 
     correction_presbyopia: {
       bannerTitle: "",
+      bannerTitle2:"老花矯視",
       btn: "預約咨詢",
 
       content1: {

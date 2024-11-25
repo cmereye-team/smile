@@ -182,7 +182,7 @@ module.exports = {
       businessHours: {
         title: "营业时间",
         weekday: "星期一至五",
-        Saturday: "星期六",
+        saturday: "星期六",
         publicHolidayAndSunday: `星期日及公众假期`,
         rest: "休息",
         Center: "中环",
