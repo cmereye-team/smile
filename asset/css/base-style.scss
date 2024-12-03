@@ -172,7 +172,7 @@ body {
   }
   #wati-capi-img{
     
-    display: none;
+    display: block;
     position: fixed !important;
     bottom: 30px !important;
     right: auto !important;
@@ -291,7 +291,7 @@ body {
     max-width: 200px;
   }
   #wati-capi-img{
-    display: none !important;
+    display: block !important;
     position: fixed !important;
     bottom: 90px !important;
     right: auto !important;
