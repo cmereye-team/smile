@@ -8,72 +8,80 @@
     </Banner>
     <div class="new_title_style">
       <H2Tag :title="[$t('fee.table.title')]" />
-      <p class="title_sub">{{$t('fee.table.sub_title')}}</p>
+      <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
     </div>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div class="table_left">
           <div></div>
           <div>
-            <div>{{$t('fee.table.content1.text1')}}</div>
-            <div>{{$t('fee.table.content1.text2')}}</div>
+            <div>{{ $t("fee.table.content1.text1") }}</div>
+            <div>{{ $t("fee.table.content1.text2") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content2.text1')}}</div>
-            <div>{{$t('fee.table.content2.text2')}}</div>
+            <div>{{ $t("fee.table.content2.text1") }}</div>
+            <div>{{ $t("fee.table.content2.text2") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content3.text1')}}</div>
+            <div>{{ $t("fee.table.content3.text1") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content4.text1')}}</div>
+            <div>{{ $t("fee.table.content4.text1") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content5.text1')}}</div>
-            <div>{{$t('fee.table.content5.text2')}}</div>
+            <div>{{ $t("fee.table.content5.text1") }}</div>
+            <div>{{ $t("fee.table.content5.text2") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content6.text1')}}</div>
-            <div>{{$t('fee.table.content6.text2')}}</div>
+            <div>{{ $t("fee.table.content6.text1") }}</div>
+            <div>{{ $t("fee.table.content6.text2") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content7.text1')}}</div>
+            <div>{{ $t("fee.table.content7.text1") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content8.text1')}}</div>
+            <div>{{ $t("fee.table.content8.text1") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.content9.text1')}}</div>
+            <div>{{ $t("fee.table.content9.text1") }}</div>
           </div>
+          <div></div>
         </div>
         <div class="table_right">
           <div>
             <div>SMILE</div>
-            <div>{{$t('fee.table.contentRight.content1.text1')}}</div>
+            <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
           </div>
           <div>
             <div>SMILE Pro</div>
-            <div>{{$t('fee.table.contentRight.content1.text1')}}</div>
+            <div>微笑激光矯視</div>
+          </div>
+          <div>
+            <div>SMILE Pro Care</div>
+            <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
           </div>
           <div>
             <div>ICL</div>
-            <div>{{$t('fee.table.contentRight.content3.text1')}}</div>
+            <div>{{ $t("fee.table.contentRight.content3.text1") }}</div>
           </div>
           <div>
-            <div>{{$t('fee.table.contentRight.content4.text1')}}</div>
-            <div>{{$t('fee.table.contentRight.content4.text2')}}</div>
-            <div>{{$t('fee.table.contentRight.content4.text3')}}</div>
+            <div>{{ $t("fee.table.contentRight.content4.text1") }}</div>
+            <div>{{ $t("fee.table.contentRight.content4.text2") }}</div>
+            <div>{{ $t("fee.table.contentRight.content4.text3") }}</div>
           </div>
           <div>
             <div>$12,000<sup>^</sup></div>
           </div>
           <div>
+            <div>$15,000<sup>^</sup></div>
+          </div>
+          <div>
             <div>$16,500<sup>^</sup></div>
           </div>
           <div>
-            <div>{{$t('fee.table.contentRight.content5.text1')}}</div>
+            <div>{{ $t("fee.table.contentRight.content5.text1") }}</div>
             <div>$38,000<sup>^^</sup></div>
-            <div>{{$t('fee.table.contentRight.content5.text2')}}</div>
+            <div>{{ $t("fee.table.contentRight.content5.text2") }}</div>
             <div>$42,000<sup>^^</sup></div>
           </div>
           <div>
@@ -84,18 +92,24 @@
             <div>$19,000^</div>
           </div>
           <div>
+            <div>$24,000<sup>^</sup></div>
+          </div>
+          <div>
             <div>$26,000<sup>^</sup></div>
           </div>
           <div>
-            <div>{{$t('fee.table.contentRight.content6.text1')}}</div>
+            <div>{{ $t("fee.table.contentRight.content6.text1") }}</div>
             <div>$64,000<sup>^^</sup></div>
-            <div>{{$t('fee.table.contentRight.content6.text2')}}</div>
+            <div>{{ $t("fee.table.contentRight.content6.text2") }}</div>
             <div>$68,000<sup>^^</sup></div>
           </div>
           <div>
             <div>$19,000<sup>^</sup></div>
           </div>
 
+          <div>
+            <div>$100</div>
+          </div>
           <div>
             <div>$100</div>
           </div>
@@ -116,12 +130,18 @@
             <div>1次</div>
           </div>
           <div>
+            <div>1次</div>
+          </div>
+          <div>
             <div class="line_green"><span></span></div>
           </div>
           <div>
             <div>1次</div>
           </div>
 
+          <div>
+            <div class="line_blue"><span></span></div>
+          </div>
           <div>
             <div class="line_blue"><span></span></div>
           </div>
@@ -135,6 +155,11 @@
             <div class="line_blue"><span></span></div>
           </div>
 
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -160,6 +185,9 @@
             <div>3次<sup>#</sup></div>
           </div>
           <div>
+            <div>3次<sup>#</sup></div>
+          </div>
+          <div>
             <div>5次<sup>#</sup></div>
           </div>
           <div>
@@ -180,6 +208,11 @@
             </div>
           </div>
           <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
+          <div>
             <div class="line_green"><span></span></div>
           </div>
           <div>
@@ -187,7 +220,11 @@
               <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
-
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
+            </div>
+          </div>
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -232,42 +269,66 @@
             <img src="../../asset/image/free/blue.svg" alt="" />
           </div>
         </div> -->
+          <div>*SMILE Pro Care 另送價值$1,000 Trip.com電子禮品卡</div>
         </div>
       </div>
       <div class="clear_vision">
         <div class="clear_vision_left">
           <div></div>
           <div>
-            <span>{{$t('fee.table.contentLeft.content1.text1')}}</span>
-            <span>{{$t('fee.table.contentLeft.content1.text2')}}</span>
-            <span>{{$t('fee.table.contentLeft.content1.text3')}}</span>
+            <span>{{ $t("fee.table.contentLeft.content1.text1") }}</span>
+            <span>{{ $t("fee.table.contentLeft.content1.text2") }}</span>
+            <span>{{ $t("fee.table.contentLeft.content1.text3") }}</span>
           </div>
           <div>
-            <span>{{$t('fee.table.contentLeft.content2.text1')}}</span>
-            <span>{{$t('fee.table.contentLeft.content2.text2')}}</span>
-            <span>{{$t('fee.table.contentLeft.content2.text3')}}</span>
+            <span>{{ $t("fee.table.contentLeft.content2.text1") }}</span>
+            <span>{{ $t("fee.table.contentLeft.content2.text2") }}</span>
+            <span>{{ $t("fee.table.contentLeft.content2.text3") }}</span>
           </div>
-          <div>{{$t('fee.table.contentLeft.content2.text4')}}</div>
+          <div>{{ $t("fee.table.contentLeft.content2.text4") }}</div>
         </div>
         <div class="clear_vision_right">
-          <div>{{$t('fee.table.vision_right.title')}}</div>
+          <div>{{ $t("fee.table.vision_right.title") }}</div>
           <div>
             <span>$20,000 - $35,000</span>
-            <span>{{$t('fee.table.vision_right.textNoS')}}</span>
+            <span>{{ $t("fee.table.vision_right.textNoS") }}</span>
           </div>
           <div>
             <span>$23,000 - $41,000</span>
-            <span>{{$t('fee.table.vision_right.textS')}}</span>
+            <span>{{ $t("fee.table.vision_right.textS") }}</span>
           </div>
           <div>
             <span>$26,000 - $51,000</span>
-            <span>{{$t('fee.table.vision_right.textNoS')}}</span>
+            <span>{{ $t("fee.table.vision_right.textNoS") }}</span>
           </div>
           <div>
             <span>$31,000 - $51,000</span>
-            <span>{{$t('fee.table.vision_right.textS')}}</span>
+            <span>{{ $t("fee.table.vision_right.textS") }}</span>
           </div>
           <div>$650</div>
+        </div>
+      </div>
+      <div class="smile_xtra">
+        <div class="smile_xtra_left">
+          <div></div>
+          <div>
+            <span>額外項目</span>
+          </div>
+        </div>
+        <div class="smile_xtra_right">
+          <div>SMILE XTRA角膜膠原交聯術</div>
+          <div>
+            <span>單眼</span>
+          </div>
+          <div>
+            <span>$3,000</span>
+          </div>
+          <div>
+            <span>雙眼</span>
+          </div>
+          <div>
+            <span>$5,000</span>
+          </div>
         </div>
       </div>
     </div>
@@ -276,34 +337,34 @@
         class="meal-btn"
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-14)%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96"
-        >{{$t('fee.table.btn')}}</a
+        >{{ $t("fee.table.btn") }}</a
       >
     </div>
     <div class="ellipse_explain_bg">
       <div class="ellipse_explain">
-        <p>{{$t('fee.textList.text1')}}</p>
+        <p>{{ $t("fee.textList.text1") }}</p>
         <p>
-          {{$t('fee.textList.text2')}}<br />
-          {{$t('fee.textList.text2_1')}}
-          {{$t('fee.textList.text2_2')}}<br />
+          {{ $t("fee.textList.text2") }}<br />
+          {{ $t("fee.textList.text2_1") }}
+          {{ $t("fee.textList.text2_2") }}<br />
         </p>
         <p>
-          {{$t('fee.textList.text3')}}<br />
-          {{$t('fee.textList.text3_1')}}
-          {{$t('fee.textList.text3_2')}}<br />
-          {{$t('fee.textList.text3_3')}}
-        </p>
-        <br />
-        <p>
-          {{$t('fee.textList.text4')}}
+          {{ $t("fee.textList.text3") }}<br />
+          {{ $t("fee.textList.text3_1") }}
+          {{ $t("fee.textList.text3_2") }}<br />
+          {{ $t("fee.textList.text3_3") }}
         </p>
         <br />
         <p>
-         {{$t('fee.textList.text5')}}
+          {{ $t("fee.textList.text4") }}
         </p>
         <br />
         <p>
-       {{$t('fee.textList.text6')}}
+          {{ $t("fee.textList.text5") }}
+        </p>
+        <br />
+        <p>
+          {{ $t("fee.textList.text6") }}
         </p>
       </div>
     </div>
@@ -438,7 +499,7 @@ export default {
   .fee-table-container {
     max-width: 1270px;
     margin: 0 auto;
-    padding-left: 200px;
+    padding-left: 100px;
   }
   .title_sub {
     color: #6d6e71;
@@ -458,11 +519,12 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 9px 0;
-    width: 209px;
-    max-width: 209px;
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
     & > div:nth-child(1) {
       margin-top: 3px;
-      height: 150.5px;
+      height: 145.5px;
     }
     & > div:nth-child(2),
     & > div:nth-child(3) {
@@ -486,7 +548,7 @@ export default {
         color: #4570b6;
         text-align: center;
         font-family: "Noto Sans HK";
-        font-size: 25px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 400;
         line-height: 35px; /* 140% */
@@ -503,13 +565,13 @@ export default {
         font-style: normal;
         font-weight: 350;
         line-height: 40px; /* 200% */
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
     }
   }
   .table_right {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 9px 7px;
 
     & > div {
@@ -527,20 +589,30 @@ export default {
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 28px;
       font-style: normal;
       font-weight: 700;
       line-height: 35px; /* 116.667% */
       letter-spacing: 6px;
+      background: #d7eef6 !important;
     }
     & > div:nth-child(2),
-    & > div:nth-child(4) {
+    & > div:nth-child(5) {
       border-radius: 25px;
-      background: #719ad8;
+      background: #719ad8 !important;
+      color: #fff !important;
     }
     & > div:nth-child(3) {
       border-radius: 25px;
-      background: #86d2c4;
+      background: #71bfd8 !important;
+      color: #fff !important;
+      font-size: 24px !important;
+      letter-spacing: 2px !important;
+    }
+    & > div:nth-child(4) {
+      border-radius: 25px;
+      background: #86d2c4 !important;
+      color: #fff !important;
     }
     & > div:nth-child(2),
     & > div:nth-child(4),
@@ -548,11 +620,21 @@ export default {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 26px;
       font-style: normal;
       font-weight: 700;
       line-height: 35px; /* 116.667% */
       letter-spacing: 5px;
+    }
+    & > div:nth-child(5) {
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 24px !important;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px !important; /* 116.667% */
+      letter-spacing: 2px !important;
     }
     & > div:nth-child(21),
     & > div:nth-child(22),
@@ -564,62 +646,83 @@ export default {
     & > div:nth-child(28) {
       height: 98px;
     }
-    & > div:nth-child(4n + 1) {
+    & > div:nth-child(5n + 1) {
       border-radius: 14px;
       background: #fafcfc;
-      width: 240px;
-      max-width: 240px;
+      // width: 210px;
+      // max-width: 210px;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 26px;
       font-style: normal;
       font-weight: 400;
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
-    & > div:nth-child(4n + 2) {
+    & > div:nth-child(5n + 2) {
       border-radius: 14px;
       background: #f1f5fc;
-      width: 240px;
-      max-width: 240px;
+      // width: 210px;
+      // max-width: 210px;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 26px;
       font-style: normal;
       font-weight: 400;
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
-    & > div:nth-child(4n + 3) {
+    & > div:nth-child(5n + 3) {
       border-radius: 14px;
       background: #fafcfc;
-      width: 277px;
-      max-width: 277px;
+      background: #71bfd81a;
+      // width: 237px;
+      // max-width: 237px;
+      color: #4570B6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 133.333% */
+      letter-spacing: 4.5px;
+    }
+    & > div:nth-child(5n + 4) {
+      border-radius: 14px;
+      background: #fafcfc;
+      // width: 237px;
+      // max-width: 237px;
       color: #15967f;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 26px;
       font-style: normal;
       font-weight: 400;
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
-    & > div:nth-child(4n + 4) {
+    & > div:nth-child(5n + 5) {
       border-radius: 14px;
       background: #f1f5fc;
-      width: 277px;
-      max-width: 277px;
+      // width: 237px;
+      // max-width: 237px;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 26px;
       font-style: normal;
       font-weight: 400;
       line-height: 40px; /* 133.333% */
       letter-spacing: 4.5px;
     }
+  }
+  .table_right > div:last-child {
+    grid-column: span 5;
+    border-radius: 10px;
+    background: #71bfd8;
+    color: #fff;
   }
   .clear_vision {
     margin-top: 8px;
@@ -627,7 +730,7 @@ export default {
     gap: 8px 6px;
   }
   .clear_vision_left {
-    width: 209px;
+    width: 180px;
     & > div:nth-child(1) {
       background: transparent;
       margin-bottom: 8px;
@@ -642,8 +745,8 @@ export default {
     }
     & > div {
       background: #fff;
-      width: 209px;
-      max-width: 209px;
+      width: 180px;
+      max-width: 180px;
       font-size: 25px;
       font-style: normal;
       font-weight: 400;
@@ -668,6 +771,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px 6px;
+    width: 100%;
     & > div:nth-child(1) {
       border-radius: 10px;
       background: #cca9dd;
@@ -707,7 +811,81 @@ export default {
     max-width: 100%;
     grid-column: span 2;
   }
+  .smile_xtra {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px 6px;
+  }
+  .smile_xtra_left {
+    width: 209px;
+    & > div:nth-child(1) {
+      background: transparent;
+      margin-bottom: 8px;
+      height: 62px;
+    }
+    & > div:nth-child(2) {
+      height: 67px;
+    }
 
+    & > div {
+      background: #fff;
+      width: 209px;
+      max-width: 209px;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px; /* 140% */
+      letter-spacing: 4px;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px; /* 140% */
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .smile_xtra_right {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px 6px;
+    & > div {
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 133.333% */
+      letter-spacing: 4.5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & > div:not(:nth-child(1)):nth-child(n) {
+      border-radius: 7px;
+      background: #f1f5fc;
+    }
+    & > div:not(:nth-child(1)):nth-child(2n) {
+      border-radius: 7px;
+      background: #fafcfc;
+    }
+    & > div:nth-child(1) {
+      border-radius: 10px;
+      background: #d7eef6;
+    }
+  }
+  .smile_xtra_right > div:nth-child(1) {
+    width: 100%;
+    max-width: 100%;
+    grid-column: span 4;
+  }
   .line_green {
     display: flex;
     align-items: center;
@@ -743,10 +921,10 @@ export default {
     p {
       color: #6d6e71;
       font-family: "Noto Sans HK";
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 300;
-      line-height: 30px; /* 150% */
+      line-height: 24px; /* 150% */
       letter-spacing: 5px;
     }
   }
@@ -855,7 +1033,7 @@ export default {
   .table_new_fee_box {
     display: flex;
     gap: 0 4px;
-    width: 582px;
+    width: 782px;
   }
   .table_left {
     position: sticky;
@@ -864,8 +1042,8 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 3.66px 3.65px;
-    width: 134px;
-    min-width: 134px;
+    width: 114px;
+    min-width: 114px;
     background: #fff;
     & > div:nth-child(1) {
       margin-top: 0;
@@ -873,21 +1051,18 @@ export default {
     }
     & > div:nth-child(2),
     & > div:nth-child(3) {
-      height: 103.4px;
+      // height: 103.4px;
+      height: 89.4px;
     }
     & > div:nth-child(4),
     & > div:nth-child(5),
-    & > div:nth-child(8) {
-      height: 40.8px;
-    }
+    & > div:nth-child(8),
     & > div:nth-child(6),
-    & > div:nth-child(7) {
-      height: 78px;
-    }
-
+    & > div:nth-child(7),
     & > div:nth-child(10),
     & > div:nth-child(9) {
-      height: 24px;
+      // height: 24px;
+      min-height: 40px;
     }
     & > div {
       border-radius: 14px;
@@ -901,11 +1076,11 @@ export default {
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 40px; /* 218.75% */
-      letter-spacing: 3.2px;
+      line-height: 25px; /* 218.75% */
+      letter-spacing: 2.2px;
       & > div {
         display: inline;
         line-height: 1;
@@ -920,17 +1095,17 @@ export default {
         color: #b64545;
         text-align: center;
         font-family: "Noto Sans HK";
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 350;
         line-height: 20px; /* 285.714% */
-        letter-spacing: 1.4px;
+        letter-spacing: 1.2px;
       }
     }
   }
   .table_right {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 3.66px 3.65px;
 
     img {
@@ -946,8 +1121,9 @@ export default {
       justify-content: center;
       align-items: center;
       padding: 0 0;
+      min-height: 40px;
     }
-    & > div:nth-child(4n + 1) {
+    & > div:nth-child(5n + 1) {
       border-radius: 14px;
       background: #fafcfc;
       width: 132.348px;
@@ -961,7 +1137,7 @@ export default {
       line-height: 40px; /* 250% */
       letter-spacing: 2.4px;
     }
-    & > div:nth-child(4n + 2) {
+    & > div:nth-child(5n + 2) {
       border-radius: 14px;
       background: #f1f5fc;
       width: 132.348px;
@@ -975,7 +1151,21 @@ export default {
       line-height: 22px; /* 250% */
       letter-spacing: 2.4px;
     }
-    & > div:nth-child(4n + 3) {
+    & > div:nth-child(5n + 3) {
+      border-radius: 14px;
+      background: #fafcfc;
+      width: 152.752px;
+      max-width: 152.752px;
+      color: #4570B6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px; /* 250% */
+      letter-spacing: 2.4px;
+    }
+    & > div:nth-child(5n + 4) {
       border-radius: 14px;
       background: #fafcfc;
       width: 152.752px;
@@ -989,7 +1179,7 @@ export default {
       line-height: 22px; /* 250% */
       letter-spacing: 2.4px;
     }
-    & > div:nth-child(4n + 4) {
+    & > div:nth-child(5n + 5) {
       border-radius: 14px;
       background: #f1f5fc;
       width: 152.752px;
@@ -1005,8 +1195,6 @@ export default {
     }
 
     & > div:nth-child(1) {
-      border-radius: 12px;
-      background: #d7eef6;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
@@ -1016,18 +1204,26 @@ export default {
       line-height: 25px; /* 156.25% */
       letter-spacing: 2.4px;
       height: 90.42px;
+      border-radius: 12px;
+      background: #d7eef6;
     }
     & > div:nth-child(2),
-    & > div:nth-child(4) {
+    & > div:nth-child(5) {
       border-radius: 12px;
       background: #719ad8;
+      color: #fff;
     }
     & > div:nth-child(3) {
+      border-radius: 12px;
+      background: #71bfd8;
+    }
+    & > div:nth-child(4) {
       border-radius: 12px;
       background: #86d2c4;
     }
     & > div:nth-child(2),
     & > div:nth-child(4),
+    & > div:nth-child(5),
     & > div:nth-child(3) {
       color: #fff;
       text-align: center;
@@ -1040,7 +1236,6 @@ export default {
       height: 90.42px;
     }
 
-    & > div:nth-child(5),
     & > div:nth-child(6),
     & > div:nth-child(7),
     & > div:nth-child(8),
@@ -1048,7 +1243,7 @@ export default {
     & > div:nth-child(10),
     & > div:nth-child(11),
     & > div:nth-child(12) {
-      height: 103.4px;
+      // height: 103.4px;
     }
 
     & > div:nth-child(21),
@@ -1059,23 +1254,30 @@ export default {
     & > div:nth-child(26),
     & > div:nth-child(27),
     & > div:nth-child(28) {
-      height: 78px;
+      // height: 78px;
     }
     & > div:nth-child(n + 33) {
-      height: 24px;
+      // height: 24px;
     }
   }
-
+  .table_right > div:last-child {
+    grid-column: span 5;
+    border-radius: 10px;
+    background: #71bfd8;
+    color: #fff;
+    width: 100%;
+    max-width: 100%;
+  }
   .clear_vision {
     margin-top: 8px;
     display: flex;
     gap: 8px 6px;
-    width: 582px;
+    width: 855px;
   }
   .clear_vision_left {
     position: sticky;
     left: 0;
-    width: 134px;
+    width: 114px;
     z-index: 10;
     background: #fff;
     & > div:nth-child(1) {
@@ -1091,17 +1293,16 @@ export default {
       height: 65px;
     }
     & > div {
-      width: 132px;
-      max-width: 132px;
-
+      width: 112px;
+      max-width: 112px;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: 25px; /* 156.25% */
-      letter-spacing: 2.4px;
+      letter-spacing: 1.8px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1112,6 +1313,8 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4.35px 3.5px;
+    width: 100%;
+    max-width: 100%;
     & > div:nth-child(1) {
       border-radius: 10px;
       background: #cca9dd;
@@ -1127,8 +1330,8 @@ export default {
       height: 42px;
     }
     & > div {
-      width: 289.512px;
-      max-width: 289.512px;
+      // width: 289.512px;
+      // max-width: 289.512px;
       border-radius: 14px;
       background: #fafcfc;
       display: flex;
@@ -1160,6 +1363,89 @@ export default {
     grid-column: span 2;
     width: 100%;
     max-width: 100%;
+  }
+  .smile_xtra {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px 6px;
+    width: 855px;
+  }
+  .smile_xtra_left {
+    position: sticky;
+    left: 0;
+    width: 114px;
+    z-index: 10;
+    background: #fff;
+    width: 114px;
+    & > div:nth-child(1) {
+      background: transparent;
+      margin-bottom: 8px;
+      height: 42px;
+    }
+    & > div:nth-child(2) {
+      height: 85.88px;
+    }
+
+    & > div {
+      width: 114px;
+      max-width: 114px;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; /* 156.25% */
+      letter-spacing: 2.4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .smile_xtra_right {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4.35px 3.5px;
+    & > div {
+      color: #4570b6;
+      border-radius: 14px;
+      background: #fafcfc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 250% */
+      letter-spacing: 2.4px;
+    }
+    & > div:not(:nth-child(1)):nth-child(n) {
+      border-radius: 6px;
+      background: #e6f8fe;
+      // width: 144px;
+    }
+    & > div:not(:nth-child(1)):nth-child(2n) {
+      border-radius: 6px;
+      background: #e1f5fe;
+      // width: 144px;
+    }
+    & > div:nth-child(1) {
+      border-radius: 8px;
+      background: #9ed1e7;
+      color: #fff;
+    }
+  }
+  .smile_xtra_right > div:nth-child(1) {
+    width: 100%;
+    max-width: 100%;
+    grid-column: span 4;
   }
   .line_green {
     display: flex;
