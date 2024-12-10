@@ -40,7 +40,7 @@
             <div>{{ $t("fee.table.content7.text1") }}</div>
           </div>
           <div>
-            <div>{{ $t("fee.table.content8.text1") }}</div>
+            <div>增進手術</div>
           </div>
           <div>
             <div>{{ $t("fee.table.content9.text1") }}</div>
@@ -272,6 +272,29 @@
           <div>*SMILE Pro Care 另送價值$1,000 Trip.com電子禮品卡</div>
         </div>
       </div>
+      <div class="smile_xtra">
+        <div class="smile_xtra_left">
+          <div></div>
+          <div>
+            <span>額外項目</span>
+          </div>
+        </div>
+        <div class="smile_xtra_right">
+          <div>SMILE XTRA角膜膠原交聯術</div>
+          <div>
+            <span>單眼</span>
+          </div>
+          <div>
+            <span>$3,000</span>
+          </div>
+          <div>
+            <span>雙眼</span>
+          </div>
+          <div>
+            <span>$5,000</span>
+          </div>
+        </div>
+      </div>
       <div class="clear_vision">
         <div class="clear_vision_left">
           <div></div>
@@ -306,29 +329,6 @@
             <span>{{ $t("fee.table.vision_right.textS") }}</span>
           </div>
           <div>$650</div>
-        </div>
-      </div>
-      <div class="smile_xtra">
-        <div class="smile_xtra_left">
-          <div></div>
-          <div>
-            <span>額外項目</span>
-          </div>
-        </div>
-        <div class="smile_xtra_right">
-          <div>SMILE XTRA角膜膠原交聯術</div>
-          <div>
-            <span>單眼</span>
-          </div>
-          <div>
-            <span>$3,000</span>
-          </div>
-          <div>
-            <span>雙眼</span>
-          </div>
-          <div>
-            <span>$5,000</span>
-          </div>
         </div>
       </div>
     </div>
@@ -680,7 +680,7 @@ export default {
       background: #71bfd81a;
       // width: 237px;
       // max-width: 237px;
-      color: #4570B6;
+      color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 26px;
@@ -812,12 +812,13 @@ export default {
     grid-column: span 2;
   }
   .smile_xtra {
-    margin-top: 8px;
+    margin-top: 15px;
     display: flex;
     gap: 8px 6px;
+    margin-bottom: 65px;
   }
   .smile_xtra_left {
-    width: 209px;
+    width: 180px;
     & > div:nth-child(1) {
       background: transparent;
       margin-bottom: 8px;
@@ -829,8 +830,8 @@ export default {
 
     & > div {
       background: #fff;
-      width: 209px;
-      max-width: 209px;
+      width: 180px;
+      max-width: 180px;
       font-size: 25px;
       font-style: normal;
       font-weight: 400;
@@ -1156,7 +1157,7 @@ export default {
       background: #fafcfc;
       width: 152.752px;
       max-width: 152.752px;
-      color: #4570B6;
+      color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 16px;
@@ -1293,8 +1294,8 @@ export default {
       height: 65px;
     }
     & > div {
-      width: 112px;
-      max-width: 112px;
+      width: 114px;
+      max-width: 114px;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
@@ -1365,7 +1366,8 @@ export default {
     max-width: 100%;
   }
   .smile_xtra {
-    margin-top: 8px;
+    margin-top: 26px;
+    margin-bottom: 22px;
     display: flex;
     gap: 8px 6px;
     width: 855px;
