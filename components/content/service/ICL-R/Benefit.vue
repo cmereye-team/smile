@@ -5,202 +5,182 @@
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/10/368edbe7444178f4.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <span>日期</span> <span class="mbShow">:</span>
-          <span>2023年11月12日</span>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/10/ee300cf1d7577c38.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <span>時間</span> <span class="mbShow">:</span>
-          <span>14:00－16:00</span>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/10/c98d7cd61642bbe1.png"
+            src="https://static.cmereye.com/imgs/2024/12/a9b5cbf5270023eb.png"
             alt=""
           />
         </div>
         <div>
           <span>地點</span> <span class="mbShow">:</span>
-          <span>The Ritz-Carlton</span>
+          <span>香港康得思酒店(朗豪坊)</span>
         </div>
       </div>
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/10/5764eb5376b11cb7.png"
+            src="https://static.cmereye.com/imgs/2024/12/24c5062453b92747.png"
             alt=""
           />
         </div>
         <div>
-          <span>名額有限</span> <span class="mbShow">，</span>
-          <span>先到先得</span>
+          <span>時間</span> <span class="mbShow">:</span>
+          <span>2:00－5:00pm</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            src="https://static.cmereye.com/imgs/2024/12/cd50e814ebff98ed.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <span>日期</span> <span class="mbShow">:</span>
+          <span>2025年1月19日</span>
         </div>
       </div>
     </div>
-    <div class="activity-banner">
-      <img
-        data-src="https://static.cmereye.com/imgs/2023/10/c840f99d925fbea6.png"
-        srcset="
-        https://static.cmereye.com/imgs/2023/10/d8860a8c86c76dbe.png 768w,
-          https://static.cmereye.com/imgs/2023/10/c840f99d925fbea6.png"
-        src="https://static.cmereye.com/imgs/2023/10/c840f99d925fbea6.png"
-        alt="星級家用"
-      />
-    </div>
+    <BtnCommon :title="'名額有限 先到先得'" :icon="false" :duration="2" :link="toLink"/>
     <div class="activity-support">
-      <div>星級主持及眼科醫生</div>
+      <div>活動嘉賓及<br class="mbShow" />名人真實用家</div>
       <div>
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/10/ed712f709a510a2f.png"
+              src="https://static.cmereye.com/imgs/2024/12/2fb6c05215a4d699.png"
               alt=""
             />
           </div>
-          <div>胡瀞詩</div>
+          <div>麥沛東</div>
         </div>
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/10/495b308bad8768b9.png"
+              src="https://static.cmereye.com/imgs/2024/12/f60d1519f379700a.png"
               alt=""
             />
           </div>
-          <div>Dr. Scott</div>
+          <div>Kathy仔王頌恩</div>
         </div>
         <div>
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="144"
-              height="162"
-              viewBox="0 0 144 162"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_4043_126)">
-                <path
-                  d="M37.5001 47.34C37.4201 43.96 37.2301 36.15 37.0501 33.49C37.0401 24.34 39.4101 5.73001 56.5401 5.69001C62.0001 5.67001 60.4701 2.00001 70.9901 2.00001C103.19 1.98001 105.86 23.34 105.86 33.49C105.54 35.97 105.47 43.69 105.45 47.37"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M71.4599 90.52C73.2399 90.52 74.2499 90.42 75.6399 90.21C76.0299 90.15 76.2699 90.11 76.2699 90.11C79.3499 89.66 81.8899 89.26 84.4499 87.33C85.8199 86.3 87.1899 85.13 88.5199 83.88C92.3599 80.29 95.8599 76.04 97.7799 72.43L100.38 65.38C100.64 64.68 101.05 64.07 101.6 63.58C106.51 59.16 109.72 49.13 104.28 46.61C104.28 46.61 102.03 47.8 100.28 45.33C99.3199 43.98 98.1999 42.03 97.6099 39.32C97.4899 38.74 96.9399 38.37 96.3599 38.45C75.6499 41.53 59.6699 30.96 54.5299 26.96C54.0999 26.62 53.5299 26.51 52.9899 26.64C52.4599 26.77 51.8899 27.11 51.7899 27.65C51.3299 30.11 50.7199 32.43 49.9399 34.61C48.0999 39.8 45.8799 43.37 42.6699 46.75C40.9099 48.59 38.6299 46.61 38.6299 46.61C33.1899 49.13 36.3999 59.16 41.3099 63.58C41.8499 64.07 42.2699 64.69 42.5299 65.39L45.1299 72.44C47.0499 76.06 50.5499 80.31 54.3899 83.89C55.7299 85.14 57.0999 86.31 58.4599 87.34C61.0099 89.27 63.5599 89.66 66.6299 90.12C66.6299 90.12 66.8799 90.16 67.2599 90.22C68.6599 90.43 69.6799 90.53 71.4499 90.53"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M89.1299 83.32C89.3999 88.39 89.6799 91.94 90.6399 95.84L96.3599 100.16L127.49 112.04C131.11 113.49 133.89 116.29 135.13 119.74C137.11 125.25 139.79 143.9 141.24 159.23"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M2 159.23C3.46 143.87 6.15 125.21 8.12 119.71C9.36 116.28 12.11 113.49 15.7 112.04L46.56 100.1L52.03 95.84C52.98 91.93 53.52 88.39 53.79 83.32"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M90.63 95.84L71.46 143.69L90.8 121.16L88.29 116.38L96.53 114.93V100.23"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M52.0299 95.84L71.4599 143.69L52.1199 121.16L54.6299 116.38L46.3899 114.93V100.23"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M56.02 105.68C66.96 115.06 75.27 115.44 86.82 105.35"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M2 159.23H141.23"
-                  stroke="#3B786C"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M108.22 155.31H111.48C112.55 155.29 113.57 154.82 114.27 154C114.97 153.18 115.28 152.09 115.13 151.02L113.56 140.06C112.88 134.37 109.45 130.4 103.88 130.44C98.31 130.4 94.88 134.37 94.2 140.06L92.63 151.02C92.48 152.09 92.79 153.18 93.49 154C94.19 154.82 95.21 155.3 96.28 155.3H99.55"
-                  stroke="#09DCB2"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M97.05 100.43C99.94 103 102.09 106.39 103.15 110.24C103.63 111.98 103.88 113.81 103.88 115.7V130.45"
-                  stroke="#09DCB2"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M38.8301 130.53V115.65C38.8301 113.88 39.0501 112.16 39.4701 110.52C40.4901 106.57 42.6401 103.09 45.5601 100.48"
-                  stroke="#09DCB2"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M49.8401 97.54C49.8401 97.54 49.8401 97.54 49.8501 97.54"
-                  stroke="#09DCB2"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M38.75 146.25C43.05 146.25 46.53 142.73 46.53 138.39C46.53 134.05 43.05 130.53 38.75 130.53C34.45 130.53 30.97 134.05 30.97 138.39C30.97 142.73 34.45 146.25 38.75 146.25Z"
-                  stroke="#09DCB2"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_4043_126">
-                  <rect width="143.24" height="161.23" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+            <img
+              src="https://static.cmereye.com/imgs/2024/12/5244f52e15cdd387.png"
+              alt=""
+            />
           </div>
-          <div>眼科醫生</div>
+          <div>賽車手李莉Lily</div>
+        </div>
+      </div>
+      <div class="activity-benefit">
+        <div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2024/12/d267b0afce620645.png"
+              alt=""
+            />
+          </div>
+          <div>名人真實<br class="mbShow" />用家<br class="pcShow" />分享</div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2024/12/71fc2dd9441b9074.png"
+              alt=""
+            />
+          </div>
+          <div>ICL會場<br />優惠</div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2024/12/f15948f5b4d76136.png"
+              alt=""
+            />
+          </div>
+          <div>ICL技術<br />展覽</div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2024/12/47fd84cd15ccb0cb.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <span>眼科醫生</span>
+            <span>講解ICL技術</span>
+            <span>及個案分享</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2024/12/2ace672492bbbf00.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <span>即場</span>
+            <span>免費檢查</span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="activity-banner">
+      <div>
+        <p>現場參加人士將專享以</p>
+        <p>會場優惠價預約進行ICL</p>
+        <p>由於今次活動只招待已預約人士</p>
+        <p>名額有限，請把握機會預約!</p>
+      </div>
+      <!-- <a
+        href=" https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3(Event-ICLW02)%20CMER%20x%20STAAR%20Surgical%20ICL%E5%B0%88%E9%A1%8C%E8%AC%9B%E5%BA%A7%E6%9C%83%E5%A0%B4%E5%84%AA%E6%83%A0"
+        target="_blank"
+      >
+        <span>了解優惠詳情</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="9"
+          height="17"
+          viewBox="0 0 9 17"
+          fill="none"
+        >
+          <line
+            x1="0.772306"
+            y1="1.28001"
+            x2="8.62664"
+            y2="9.05394"
+            stroke="#297492"
+            stroke-width="1.00464"
+          />
+          <line
+            x1="8.48104"
+            y1="8.40263"
+            x2="0.707107"
+            y2="16.257"
+            stroke="#297492"
+            stroke-width="1.00464"
+          />
+        </svg>
+      </a> -->
+      <BtnCommon :title="'了解優惠詳情'" :icon="true" :link="toLink2" />
+    </div>
+    <nuxt-link to="/vision-correction-icl" class="activity-detail">
+      <span>詳細了解ICL</span>
+      <span>>>></span>
+    </nuxt-link>
   </div>
 </template>
 <script>
+import BtnCommon from "./BtnCommon.vue";
 export default {
+  components: { BtnCommon },
+
   data() {
-    return {};
+    return {
+        toLink:'https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(Event-ICLW01)%20CMER%20x%20STAAR%20Surgical%20ICL%E5%B0%88%E9%A1%8C%E8%AC%9B%E5%BA%A7',
+        toLink2:'https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3(Event-ICLW02)%20CMER%20x%20STAAR%20Surgical%20ICL%E5%B0%88%E9%A1%8C%E8%AC%9B%E5%BA%A7%E6%9C%83%E5%A0%B4%E5%84%AA%E6%83%A0',
+    };
   },
   created() {},
   methods: {},
@@ -213,29 +193,24 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     .activity-title {
-      padding: 10px 124px;
       width: fit-content;
-      color: #fff;
-      background: linear-gradient(
-        90deg,
-        rgba(59, 173, 108, 0) 0%,
-        rgba(30, 186, 160, 0.8) 52%,
-        rgba(59, 173, 108, 0.03) 100%
-      );
+      color: #297492;
       font-family: "Noto Sans HK";
       font-size: 30px;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 30px; /* 100% */
       letter-spacing: 9px;
       margin-bottom: 92px;
     }
     .activity-time {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0 145px;
       margin-bottom: 92px;
       & > div {
         // flex: 1;
@@ -246,28 +221,39 @@ export default {
         // padding: 0 35px;
         position: relative;
         & > div:nth-child(1) {
-          min-height: 58px;
+          // min-height: 58px;
           display: flex;
           align-items: center;
           justify-content: center;
-          & > img {
-            width: 50%;
-            margin: auto;
-          }
+          width: 135px;
+          max-height: 135px;
+          min-height: 135px;
         }
         & > div:nth-child(2) {
           margin-top: 25px;
           display: flex;
           flex-direction: column;
-          color: #3b786c;
-          font-family: "Noto Sans";
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 180%; /* 36px */
-          letter-spacing: 0.4px;
           align-items: center;
           white-space: nowrap;
+          & > span:first-child {
+            color: #297492;
+            text-align: justify;
+            font-family: "Noto Sans HK";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 100% */
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+          }
+          color: #6d6e71;
+          text-align: justify;
+          font-family: "Noto Sans HK";
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 115.385% */
+          letter-spacing: 1.3px;
         }
       }
       & > div:nth-child(1) {
@@ -282,32 +268,164 @@ export default {
       & > div:nth-child(4) {
         padding: 0 60px;
       }
-      & > div::before {
-        content: "";
-        width: 2px;
-        height: 80px;
-        position: absolute;
-        right: auto;
-        left: 0;
-        bottom: 0;
-        background: #3b786c4d;
-      }
-      & > div:last-child:after {
-        content: "";
-        width: 2px;
-        height: 80px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background: #3b786c4d;
-      }
+    }
+    .activity-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      box-sizing: border-box;
+      padding: 12px 24px;
+      color: #fff;
+      font-family: "Noto Sans HK";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.2; /* 83.333% */
+      letter-spacing: 9px;
+      background: #297492;
+      margin: 55px auto 65px;
     }
     .activity-banner {
-      margin-bottom: 86px;
+      background: url("https://static.cmereye.com/imgs/2024/12/5d2af511d2cbd071.png")
+        no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      min-width: 100%;
+      min-height: 33.698vw;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7.59vw;
+        P {
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 29.232px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 55.871px; /* 256.125% */
+          letter-spacing: 2.923px;
+        }
+        p:nth-child(2) {
+          color: #fff;
+          text-align: center;
+          text-shadow: 0px 5.823px 8.319px rgba(0, 0, 0, 0.25);
+          font-family: "Noto Sans HK";
+          font-size: 49.914px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 55.871px; /* 150% */
+          letter-spacing: 4.991px;
+          margin-top: 10px;
+        }
+      }
+      & > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #297492;
+        font-family: "Noto Sans HK";
+        font-size: 27.45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22.875px; /* 83.333% */
+        letter-spacing: 6.862px;
+        gap: 0 10px;
+        padding: 17px 33px;
+        box-sizing: border-box;
+        width: fit-content;
+        background: #fff;
+        margin: 30px auto 0 !important;
+      }
     }
+    .activity-detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #297492;
+      font-family: "Noto Sans HK";
+      font-size: 27.45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22.875px; /* 83.333% */
+      letter-spacing: 6.862px;
+      gap: 0 10px;
+      padding: 17px 33px;
+      box-sizing: border-box;
+      width: fit-content;
+      border: 2px solid #297492;
+      margin: 60px auto;
+
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      // padding-block: 0.5rem;
+      // padding-inline: 0rem;
+      background-color: #fff;
+      // border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #297492;
+      // gap: 10px;
+      font-weight: bold;
+      // border: 3px solid #ffffff4d;
+      outline: none;
+      overflow: hidden;
+      // font-size: 15px;
+      cursor: pointer;
+    }
+    .activity-detail:hover {
+      transform: scale(1.05);
+      border-color: #fff9;
+    }
+
+    .activity-detail:hover .icon {
+      transform: translate(4px);
+    }
+
+    .activity-detail:hover::before {
+      animation: shine 2s ease-in-out infinite;
+    }
+
+    .activity-detail::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      background-image: linear-gradient(
+        120deg,
+        #12796e00 30%,
+        #12796ecc,
+        #12796e00 70%
+      );
+      top: 0;
+      left: -100px;
+      opacity: 0.6;
+    }
+
+    @keyframes shine {
+      0% {
+        left: -100px;
+      }
+
+      60% {
+        left: 100%;
+      }
+
+      to {
+        left: 100%;
+      }
+    }
+
     .activity-support {
+      margin: 55px auto 65px;
       & > div:nth-child(1) {
-        color: #3b786c;
+        color: #297492;
         font-family: "Noto Sans HK";
         font-size: 30px;
         font-style: normal;
@@ -328,7 +446,7 @@ export default {
           justify-content: space-between;
           & > div:nth-child(2) {
             margin-top: 20px;
-            color: #3b786c;
+            color: #297492;
             text-align: justify;
             font-family: "Noto Sans HK";
             font-size: 20px;
@@ -339,7 +457,37 @@ export default {
           }
         }
         & > div:nth-child(2) {
-          padding: 0 260px;
+          padding: 0 150px;
+        }
+      }
+    }
+    .activity-benefit {
+      max-width: 1280px;
+      margin: 55px auto 65px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0 10px;
+      & > div {
+        & > div:nth-child(1) {
+          width: 246px;
+          height: 246px;
+          & > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        & > div:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          color: #6d6e71;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 150% */
+          letter-spacing: 1px;
         }
       }
     }
@@ -351,116 +499,316 @@ export default {
     flex-direction: column;
     align-items: center;
     .activity-title {
-      margin-top: 50px;
-      margin-bottom: 37px;
-      padding: 0px 84px;
+      margin-top: 12.82vw;
+      margin-bottom: 9.48vw;
+      padding: 0px 21.536vw;
       width: fit-content;
       color: #fff;
-      background: linear-gradient(
-        90deg,
-        rgba(59, 173, 108, 0) 0%,
-        rgba(30, 186, 160, 0.8) 52%,
-        rgba(59, 173, 108, 0.03) 100%
-      );
+      color: #297492;
       font-family: "Noto Sans HK";
-      font-size: 18px;
+      font-size: 6.15vw;
       font-style: normal;
-      font-weight: 500;
-      line-height: 30px; /* 166.667% */
-      letter-spacing: 5.4px;
+      font-weight: 700;
+      line-height: 7.69vw; /* 125% */
+      letter-spacing: 1.8vw;
     }
 
     .activity-time {
-      margin-bottom: 48px;
+      margin-bottom: 6.4vw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 6.15vw 2.128vw;
+      width: 100vw;
+      box-sizing: border-box;
+      justify-items: center;
+      justify-content: center;
       & > div {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        border-top: 2px solid rgba(59, 120, 108, 0.3);
-        padding: 24px 0;
+        width: fit-content;
+        // border-top: 2px solid rgba(59, 120, 108, 0.3);
         & > div:nth-child(1) {
-          min-width: 40px;
+          width: 17.98vw;
+          height: 15.38vw;
           display: flex;
+          align-items: center;
           justify-content: center;
-          margin-right: 15px;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         & > div:nth-child(2) {
-          color: #3b786c;
-          text-align: justify;
-          font-family: "Noto Sans HK";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 30px; /* 187.5% */
-          letter-spacing: 0.8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 3.58vw;
+          span:first-child {
+            color: #297492;
+            text-align: justify;
+            font-family: "Noto Sans HK";
+            font-size: 4.32vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 4.32vw; /* 100% */
+            letter-spacing: 0.843px;
+          }
+          span:nth-child(2) {
+            display: none;
+          }
+          span:last-child {
+            margin-top: 1.28vw;
+            color: #6d6e71;
+            font-family: "Noto Sans HK";
+            font-size: 3.07vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 4.32vw; /* 120.481% */
+            letter-spacing: 0.7px;
+            max-width: 25.64vw;
+            text-align: center;
+          }
         }
       }
-      & > div:nth-child(1) {
-        img {
-          width: 40px;
-          height: 42px;
-        }
-      }
-      & > div:nth-child(2) {
-        img {
-          width: 40px;
-          height: 40px;
-        }
-      }
-      & > div:nth-child(3) {
-        img {
-          width: 32px;
-          height: 42px;
-        }
-      }
-      & > div:nth-child(4) {
-        img {
-          width: 40px;
-          height: 38px;
-        }
-      }
-      & > div:last-child {
-        border-bottom: 2px solid rgba(59, 120, 108, 0.3);
-      }
+    }
+    a {
+      color: #fff;
+      font-family: "Noto Sans HK";
+      font-size: 6.65vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 5.549vw; /* 83.246% */
+      letter-spacing: 1.665vw;
+      box-sizing: border-box;
+      padding: 4.1vw 4.615vw;
+      background: #297492;
+      display: flex;
+      gap: 0 1.28vw;
+      align-items: center;
     }
     .activity-banner {
       img {
-        width: 347px;
+        width: 88.974vw;
       }
     }
     .activity-support {
-      margin-top: 44px;
+      margin-top: 11.28vw;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 14.1vw;
       & > div:nth-child(1) {
-        color: #3b786c;
+        color: #297492;
+        text-align: center;
         font-family: "Noto Sans HK";
-        font-size: 18px;
+        font-size: 6.15vw;
         font-style: normal;
-        font-weight: 500;
-        line-height: 30px; /* 166.667% */
-        letter-spacing: 1.8px;
-        margin-bottom: 46px;
+        font-weight: 700;
+        line-height: 8.97vw; /* 145.833% */
+        letter-spacing: 1.84vw;
+        margin-bottom: 11.79vw;
+        max-width: 51.28vw;
       }
       & > div:nth-child(2) {
         & > div {
           display: flex;
           align-items: center;
           flex-direction: column;
-          margin-bottom: 32px;
+          margin-bottom: 8.2vw;
+          & > div:nth-child(1) {
+            width: 41.28vw;
+            height: 41.28vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
           & > div:nth-child(2) {
-            margin-top: 35px;
-            color: #3b786c;
-            text-align: justify;
+            margin-top: 8.974vw;
+            color: #297492;
+            text-align: center;
             font-family: "Noto Sans HK";
-            font-size: 20px;
+            font-size: 4.61vw;
             font-style: normal;
             font-weight: 500;
-            line-height: 30px; /* 150% */
-            letter-spacing: 3px;
+            line-height: 6.565vw; /* 142.276% */
+            letter-spacing: 0.9px;
           }
         }
+      }
+    }
+    .activity-banner {
+      background: url(https://static.cmereye.com/imgs/2024/12/5c40d1f50833a745.png)
+        no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 97.17vw;
+      padding-top: 21.02vw;
+      & > div {
+        p {
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 4.615vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 8.6vw; /* 235.685% */
+          letter-spacing: 0.46vw;
+        }
+        p:nth-child(2) {
+          color: #fff;
+          text-align: center;
+          text-shadow: 0px 0.846vw 1.21vw rgba(0, 0, 0, 0.25);
+          font-family: "Noto Sans HK";
+          font-size: 7.17vw;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 10.135vw; /* 151.511% */
+          letter-spacing: 0.35vw;
+        }
+      }
+      a {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 6.65vw;
+        background: #fff;
+        color: #297492;
+        font-family: "Noto Sans HK";
+        font-size: 6.65vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 5.47vw; /* 82.134% */
+        letter-spacing: 1.665vw;
+      }
+    }
+    // .activity-detail {
+    //   margin: 6.4vw auto;
+    //   background: #fff;
+    //   border: #297492 1px solid;
+    //   color: #297492;
+    // }
+    .activity-detail {
+      margin: 7.6vw auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #297492;
+      font-family: "Noto Sans HK";
+      font-size: 24.45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24.875px; /* 83.333% */
+      letter-spacing: 1.862px;
+      gap: 0 10px;
+      // padding: 17px 33px;
+      box-sizing: border-box;
+      width: fit-content;
+      border: 1px solid #297492;
+      // margin: 60px auto;
+
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      // padding-block: 0.5rem;
+      // padding-inline: 0rem;
+      background-color: #fff;
+      // border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #297492;
+      // gap: 10px;
+      font-weight: bold;
+      // border: 3px solid #ffffff4d;
+      outline: none;
+      overflow: hidden;
+      // font-size: 15px;
+      cursor: pointer;
+    }
+
+    // .activity-detail .icon {
+    //   transform: translate(4px);
+    // }
+
+    // .activity-detail::before {
+    //   animation: shine 1.5s ease-out infinite;
+    // }
+
+    // .activity-detail::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100px;
+    //   height: 100%;
+    //   background-image: linear-gradient(
+    //     120deg,
+    //     #12796e00 30%,
+    //     #12796ecc,
+    //     #12796e00 70%
+    //   );
+    //   top: 0;
+    //   left: -100px;
+    //   opacity: 0.6;
+    // }
+
+    // @keyframes shine {
+    //   0% {
+    //     left: -100px;
+    //   }
+
+    //   60% {
+    //     left: 100%;
+    //   }
+
+    //   to {
+    //     left: 100%;
+    //   }
+    // }
+    .activity-benefit {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0 2.564vw;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 31%;
+        & > div:nth-child(1) {
+          width: 30.25vw;
+          height: 30.25vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        & > div:nth-child(2) {
+          color: #6d6e71;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 3.58vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 4.1vw; /* 114.286% */
+          letter-spacing: 0.7px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      & > div:nth-child(4),
+      & > div:nth-child(5) {
+        width: 35%;
       }
     }
   }

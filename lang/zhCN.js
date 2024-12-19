@@ -613,7 +613,7 @@ module.exports = {
         p2: "2023年，STAAR Surgical公司对希玛眼科集团的医疗技术、手术品质及服务作出认可，宣布将希玛微笑矫视中心设立为首间官方认证EVO ICL 国际培训中心。",
         p3: "希玛微笑矫视中心往后会继续致力于ICL方面发展，成为大众选择ICL植入式隐形眼镜的首选!",
       },
-      small_title3: "EVO Visian ICL镜片?",
+      small_title3: "EVO Visian ICL镜片",
       small_title3_1: "7大特色",
       content3: {
         p1: "EVO Visian ICL以STAAR Surgical 专用的生物相容Collamer专利材质制成。这种材质含有自然存在于体内的胶原蛋白。EVO Visian ICL Collamer技术的独特优势使其成为视力矫正镜片的理想材质，其中包含抗紫外线功能。",

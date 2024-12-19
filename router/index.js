@@ -315,7 +315,14 @@ export const $router = [
     name: `blog-id`,
     title: '科普知識',
     component: resolve(`pages/new-page/blog_news/_id.vue`)
-  }
+  },
+  // 活动route 
+  {
+    path: '/icl-event',
+    name: 'icl-event',
+    title: '活動',
+    component: resolve('pages/smilepro-event/del-index.vue')
+  },
 ]
 
 

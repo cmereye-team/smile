@@ -13,8 +13,6 @@
     <div class="laser_technology">
       <H2Tag :title="[$t('Correct.icl.bannerTitle')]" />
       <div class="laser_technology-in">
-
-     
         <p>
           {{$t('Correct.icl.content1.p1')}}
         </p>

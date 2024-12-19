@@ -1,15 +1,14 @@
 <template>
-  <div>
+  <div class="icl">
     <Header />
     <Navbar />
 
     <MainBanner />
     <film />
     <Benefit />
-    <suitable />
-    <share />
 
-    <Footer />
+    <businessHoursIcl />
+    <FooterIcl />
     <footers />
   </div>
 </template>
@@ -17,7 +16,7 @@
 <script>
 import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
+import FooterIcl from "@/components/commom/new_foot/ICLFooter.vue";
 
 import MainBanner from "@/components/content/service/ICL-R/MainBanner.vue";
 import film from "@/components/content/service/ICL-R/film.vue";
@@ -25,16 +24,18 @@ import Benefit from "@/components/content/service/ICL-R/Benefit.vue";
 import suitable from "@/components/content/service/ICL-R/suitable.vue";
 import share from "@/components/content/service/ICL-R/share.vue";
 import footers from "@/components/commom/foot/footers.vue";
+import businessHoursIcl from "@/components/commom/business/business-hours-icl.vue";
 
 export default {
   components: {
     Header,
     Navbar,
-    Footer,
+    FooterIcl,
     MainBanner,
     film,
     Benefit,
     suitable,
+    businessHoursIcl,
     share,
     footers,
   },
@@ -63,5 +64,26 @@ export default {
 <style lang="scss" scoped>
 .section.vedio_box {
   margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .icl {
+    max-width: calc(100vw - 20px);
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  :deep(.footer_new) {
+    .title {
+      color: #fff !important;
+    }
+    .nav {
+      color: #fff !important;
+    }
+  }
 }
 </style>

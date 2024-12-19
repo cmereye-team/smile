@@ -14,10 +14,10 @@
       <div class="table_new_fee_box">
         <div class="table_left">
           <div></div>
-          <div>
+          <!-- <div>
             <div>{{ $t("fee.table.content1.text1") }}</div>
             <div>{{ $t("fee.table.content1.text2") }}</div>
-          </div>
+          </div> -->
           <div>
             <div>{{ $t("fee.table.content2.text1") }}</div>
             <div>{{ $t("fee.table.content2.text2") }}</div>
@@ -49,7 +49,7 @@
         </div>
         <div class="table_right">
           <div>
-            <div>SMILE</div>
+            <div>SMILE Pro Care</div>
             <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
           </div>
           <div>
@@ -57,19 +57,19 @@
             <div>微笑激光矯視</div>
           </div>
           <div>
-            <div>SMILE Pro Care</div>
-            <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
-          </div>
-          <div>
             <div>ICL</div>
             <div>{{ $t("fee.table.contentRight.content3.text1") }}</div>
+          </div>
+          <div>
+            <div>SMILE</div>
+            <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
           </div>
           <div>
             <div>{{ $t("fee.table.contentRight.content4.text1") }}</div>
             <div>{{ $t("fee.table.contentRight.content4.text2") }}</div>
             <div>{{ $t("fee.table.contentRight.content4.text3") }}</div>
           </div>
-          <div>
+          <!-- <div>
             <div>$12,000<sup>^</sup></div>
           </div>
           <div>
@@ -86,22 +86,22 @@
           </div>
           <div>
             <div>$12,000<sup>^</sup></div>
-          </div>
+          </div> -->
 
           <div>
-            <div>$19,000^</div>
+            <div>$26,000<sup>^</sup></div>
           </div>
           <div>
             <div>$24,000<sup>^</sup></div>
-          </div>
-          <div>
-            <div>$26,000<sup>^</sup></div>
           </div>
           <div>
             <div>{{ $t("fee.table.contentRight.content6.text1") }}</div>
             <div>$64,000<sup>^^</sup></div>
             <div>{{ $t("fee.table.contentRight.content6.text2") }}</div>
             <div>$68,000<sup>^^</sup></div>
+          </div>
+          <div>
+            <div>$19,000^</div>
           </div>
           <div>
             <div>$19,000<sup>^</sup></div>
@@ -114,18 +114,15 @@
             <div>$100</div>
           </div>
           <div>
-            <div>$100</div>
-          </div>
-          <div>
             <div>$500</div>
           </div>
           <div>
             <div>$100</div>
           </div>
-
           <div>
-            <div>1次</div>
+            <div>$100</div>
           </div>
+
           <div>
             <div>1次</div>
           </div>
@@ -138,15 +135,15 @@
           <div>
             <div>1次</div>
           </div>
-
-          <div>
-            <div class="line_blue"><span></span></div>
-          </div>
-          <div>
-            <div class="line_blue"><span></span></div>
-          </div>
           <div>
             <div>1次</div>
+          </div>
+
+          <div>
+            <div>1次</div>
+          </div>
+          <div>
+            <div class="line_blue"><span></span></div>
           </div>
           <div>
             <div class="line_green"><span></span></div>
@@ -154,12 +151,10 @@
           <div>
             <div class="line_blue"><span></span></div>
           </div>
-
           <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
+            <div class="line_blue"><span></span></div>
           </div>
+
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -180,28 +175,28 @@
               <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
-
-          <div>
-            <div>3次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>3次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>5次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>5次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>3次<sup>#</sup></div>
-          </div>
-
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
+
+          <div>
+            <div>5次<sup>#</sup></div>
+          </div>
+          <div>
+            <div>3次<sup>#</sup></div>
+          </div>
+          <div>
+            <div>5次<sup>#</sup></div>
+          </div>
+          <div>
+            <div>3次<sup>#</sup></div>
+          </div>
+          <div>
+            <div>3次<sup>#</sup></div>
+          </div>
+
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -225,6 +220,7 @@
               <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
+
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -238,6 +234,11 @@
           <div>
             <div>
               <img src="../../asset/image/free/green.svg" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
           <div>
@@ -524,15 +525,14 @@ export default {
     min-width: 180px;
     & > div:nth-child(1) {
       margin-top: 3px;
-      height: 145.5px;
+      height: 105.5px;
     }
-    & > div:nth-child(2),
-    & > div:nth-child(3) {
+    & > div:nth-child(2) {
       height: 180.5px;
     }
-    & > div:nth-child(4),
-    & > div:nth-child(5) {
-      height: 70.5px;
+    & > div:nth-child(3),
+    & > div:nth-child(4) {
+      height: 66.2px;
     }
 
     & > div {
@@ -572,7 +572,8 @@ export default {
   .table_right {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 9px 7px;
+    gap: 9px 7.6px;
+    width: 100%;
 
     & > div {
       border-radius: 14px;
@@ -584,35 +585,37 @@ export default {
       padding: 14px 0;
     }
     & > div:nth-child(1) {
-      border-radius: 25px;
-      background: #d7eef6;
-      color: #4570b6;
+      color: #fff !important;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 28px;
+      font-size: 26px;
       font-style: normal;
       font-weight: 700;
       line-height: 35px; /* 116.667% */
-      letter-spacing: 6px;
-      background: #d7eef6 !important;
+      letter-spacing: 2px !important;
+      border-radius: 25px;
+      background: #71bfd8 !important;
+      & > div:nth-child(1) {
+        font-size: 24px;
+      }
     }
     & > div:nth-child(2),
     & > div:nth-child(5) {
+      color: #fff !important;
       border-radius: 25px;
       background: #719ad8 !important;
-      color: #fff !important;
     }
     & > div:nth-child(3) {
-      border-radius: 25px;
-      background: #71bfd8 !important;
       color: #fff !important;
-      font-size: 24px !important;
+      font-size: 25px !important;
       letter-spacing: 2px !important;
+      border-radius: 25px;
+      background: #86d2c4 !important;
     }
     & > div:nth-child(4) {
       border-radius: 25px;
-      background: #86d2c4 !important;
-      color: #fff !important;
+      background: #d7eef6 !important;
+      color: #4570b6 !important;
     }
     & > div:nth-child(2),
     & > div:nth-child(4),
@@ -620,21 +623,25 @@ export default {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 26px;
+      font-size: 28px;
       font-style: normal;
       font-weight: 700;
       line-height: 35px; /* 116.667% */
       letter-spacing: 5px;
+      box-sizing: border-box;
+      padding: 0 10px;
     }
     & > div:nth-child(5) {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 24px !important;
+      font-size: 22px !important;
       font-style: normal;
       font-weight: 700;
       line-height: 30px !important; /* 116.667% */
-      letter-spacing: 2px !important;
+      letter-spacing: 1px !important;
+      box-sizing: border-box;
+      padding: 0 11px;
     }
     & > div:nth-child(21),
     & > div:nth-child(22),
@@ -648,7 +655,7 @@ export default {
     }
     & > div:nth-child(5n + 1) {
       border-radius: 14px;
-      background: #fafcfc;
+      background: rgba(113, 191, 216, 0.1);
       // width: 210px;
       // max-width: 210px;
       color: #4570b6;
@@ -680,7 +687,7 @@ export default {
       background: #71bfd81a;
       // width: 237px;
       // max-width: 237px;
-      color: #4570b6;
+      color: #15967f;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 26px;
@@ -694,7 +701,7 @@ export default {
       background: #fafcfc;
       // width: 237px;
       // max-width: 237px;
-      color: #15967f;
+      color: #4570b6 !important;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 26px;
@@ -772,6 +779,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px 6px;
     width: 100%;
+    justify-content: space-between;
     & > div:nth-child(1) {
       border-radius: 10px;
       background: #cca9dd;
@@ -800,11 +808,10 @@ export default {
       font-style: normal;
       font-weight: 400;
       line-height: 40px;
-      width: 525px;
-      max-width: 525px;
+      // width: 525px;
+      // max-width: 525px;
     }
   }
-
   .clear_vision_right > div:nth-child(1),
   .clear_vision_right > div:nth-child(6) {
     width: 100%;
@@ -917,7 +924,7 @@ export default {
     margin-bottom: 95px;
   }
   .ellipse_explain {
-    max-width: 1270px;
+    max-width: 1140px;
     margin: 0 auto;
     p {
       color: #6d6e71;
@@ -930,10 +937,10 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://statichk.cmermedical.com/smile/1f675e433a2f0f10.webp")
+    background: url("https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: contain;
+    height: 480px;
     width: 100%;
     border-radius: 55px;
     padding-top: 23%;
@@ -943,6 +950,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding-left: 70px;
+    margin-bottom: 64px;
     & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
@@ -1048,19 +1056,18 @@ export default {
     background: #fff;
     & > div:nth-child(1) {
       margin-top: 0;
-      height: 90.42px;
+      height: 80.42px;
     }
-    & > div:nth-child(2),
-    & > div:nth-child(3) {
+    & > div:nth-child(2) {
       // height: 103.4px;
       height: 89.4px;
     }
+    & > div:nth-child(3),
     & > div:nth-child(4),
     & > div:nth-child(5),
     & > div:nth-child(8),
     & > div:nth-child(6),
     & > div:nth-child(7),
-    & > div:nth-child(10),
     & > div:nth-child(9) {
       // height: 24px;
       min-height: 40px;
@@ -1126,7 +1133,7 @@ export default {
     }
     & > div:nth-child(5n + 1) {
       border-radius: 14px;
-      background: #fafcfc;
+      background: #71bfd81a;
       width: 132.348px;
       max-width: 132.348px;
       color: #4570b6;
@@ -1157,7 +1164,7 @@ export default {
       background: #fafcfc;
       width: 152.752px;
       max-width: 152.752px;
-      color: #4570b6;
+      color: #15967f;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 16px;
@@ -1171,7 +1178,7 @@ export default {
       background: #fafcfc;
       width: 152.752px;
       max-width: 152.752px;
-      color: #15967f;
+      color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 16px;
@@ -1185,7 +1192,7 @@ export default {
       background: #f1f5fc;
       width: 152.752px;
       max-width: 152.752px;
-      color: #4570b6;
+      color: #4b69a6;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 16px;
@@ -1196,7 +1203,7 @@ export default {
     }
 
     & > div:nth-child(1) {
-      color: #4570b6;
+      color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
       font-size: 16px;
@@ -1204,9 +1211,9 @@ export default {
       font-weight: 700;
       line-height: 25px; /* 156.25% */
       letter-spacing: 2.4px;
-      height: 90.42px;
+      height: 80.42px;
       border-radius: 12px;
-      background: #d7eef6;
+      background: #71bfd8;
     }
     & > div:nth-child(2),
     & > div:nth-child(5) {
@@ -1216,11 +1223,12 @@ export default {
     }
     & > div:nth-child(3) {
       border-radius: 12px;
-      background: #71bfd8;
+      background: #86d2c4;
     }
     & > div:nth-child(4) {
       border-radius: 12px;
-      background: #86d2c4;
+      background: #d7eef6;
+      color: #4570b6 !important;
     }
     & > div:nth-child(2),
     & > div:nth-child(4),
@@ -1229,12 +1237,12 @@ export default {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 700;
-      line-height: 25px; /* 156.25% */
+      line-height: 20px; /* 156.25% */
       letter-spacing: 2.4px;
-      height: 90.42px;
+      height: 80.42px;
     }
 
     & > div:nth-child(6),
@@ -1268,6 +1276,12 @@ export default {
     color: #fff;
     width: 100%;
     max-width: 100%;
+  }
+  .table_right > div:nth-child(1) {
+    & > div:nth-child(1) {
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
   }
   .clear_vision {
     margin-top: 8px;
@@ -1385,7 +1399,7 @@ export default {
       height: 42px;
     }
     & > div:nth-child(2) {
-      height: 85.88px;
+      height: 55.88px;
     }
 
     & > div {
@@ -1430,18 +1444,20 @@ export default {
     }
     & > div:not(:nth-child(1)):nth-child(n) {
       border-radius: 6px;
-      background: #e6f8fe;
+      background: #F1F5FC;
+      color: #4570b6;
       // width: 144px;
     }
     & > div:not(:nth-child(1)):nth-child(2n) {
       border-radius: 6px;
-      background: #e1f5fe;
+      background: #fafcfc;
+      color: #4570b6;
       // width: 144px;
     }
     & > div:nth-child(1) {
       border-radius: 8px;
-      background: #9ed1e7;
-      color: #fff;
+      background: #d7eef6;
+      color: #4570b6;
     }
   }
   .smile_xtra_right > div:nth-child(1) {
@@ -1495,7 +1511,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/819f03987bcb2783.png")
+    background: url("https://statichk.cmermedical.com/smile/fee/08ef23b96b14.avif")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;
