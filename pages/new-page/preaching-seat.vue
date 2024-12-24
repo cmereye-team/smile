@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>{{$t('appointFroms.title')}}</p>
+          <p>{{ $t("appointFroms.title") }}</p>
           <p>Lecture</p>
         </div>
       </template>
@@ -58,18 +58,18 @@
                 />
               </svg>
             </div>
-            <div>{{$t('appointFroms.title')}}</div>
+            <div>{{ $t("appointFroms.title") }}</div>
           </div>
           <div class="lecture-content">
             <div>
-              <p>{{$t('appointFroms.title1')}}</p>
-              <p>{{$t('appointFroms.title2')}}</p>
+              <p>{{ $t("appointFroms.title1") }}</p>
+              <p>{{ $t("appointFroms.title2") }}</p>
             </div>
             <div>
-              <p>{{$t('appointFroms.p1')}}</p>
+              <p>{{ $t("appointFroms.p1") }}</p>
               <!-- <p>旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室</p> -->
               <!-- <p>旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室</p> -->
-              <p>{{$t('appointFroms.p2')}}</p>
+              <p>{{ $t("appointFroms.p2") }}</p>
               <!-- <p>
                 尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室
               </p> -->
@@ -109,7 +109,10 @@
                     ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item :label="$t('appointFroms.content1.date')" v-if="form.address !== ''">
+                <el-form-item
+                  :label="$t('appointFroms.content1.date')"
+                  v-if="form.address !== ''"
+                >
                   <el-date-picker
                     v-model="form.subdate"
                     type="date"
@@ -127,9 +130,10 @@
                 </el-form-item>
               </el-form>
               <p v-if="form.address && form.subdate" class="form-data">
-                {{$t('appointFroms.content2.p1')}}
+                {{ $t("appointFroms.content2.p1") }}
                 <span>{{ nowDayTime }} {{ morningOrAfternoon }}</span> 的
-                <span>{{ getName(form.address) }}</span> {{$t('appointFroms.content2.p2')}}
+                <span>{{ getName(form.address) }}</span>
+                {{ $t("appointFroms.content2.p2") }}
               </p>
               <el-form
                 ref="form"
@@ -167,15 +171,31 @@
                   </el-select>
                 </el-form-item>
                 <el-form-item :label="$t('appointFroms.content3.age')">
-                  <el-select v-model="form1.age" :placeholder="$t('appointFroms.content3.choose')" clearable>
+                  <el-select
+                    v-model="form1.age"
+                    :placeholder="$t('appointFroms.content3.choose')"
+                    clearable
+                  >
                     <el-option
                       :label="$t('appointFroms.content3.age1')"
                       value="17歲或以下"
                     ></el-option>
-                    <el-option :label="$t('appointFroms.content3.age2')" value="18-25歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age2')" value="26-35歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age3')" value="36-45歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age4')" value="46-55歲"></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age2')"
+                      value="18-25歲"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age2')"
+                      value="26-35歲"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age3')"
+                      value="36-45歲"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age4')"
+                      value="46-55歲"
+                    ></el-option>
                     <el-option
                       :label="$t('appointFroms.content3.age5')"
                       value="56歲或以上"
@@ -216,18 +236,33 @@
                     <el-option label="Facebook" value="Facebook"></el-option>
                     <el-option label="Instagram" value="Instagram"></el-option>
                     <el-option label="YouTube" value="YouTube"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p3')" value="討論區"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p4')" value="報章"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p5')" value="診所單張"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p6')" value="親友介紹"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p7')" value="員工介紹"></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p3')"
+                      value="討論區"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p4')"
+                      value="報章"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p5')"
+                      value="診所單張"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p6')"
+                      value="親友介紹"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p7')"
+                      value="員工介紹"
+                    ></el-option>
                     <el-option label="其他" value="其他"></el-option>
                   </el-select>
                 </el-form-item>
                 <el-form-item label-width="0">
-                  <el-button type="primary" @click="onSubmit"
-                    >{{$t('appointFroms.btn')}}</el-button
-                  >
+                  <el-button type="primary" @click="onSubmit">{{
+                    $t("appointFroms.btn")
+                  }}</el-button>
                 </el-form-item>
               </el-form>
             </div>
@@ -236,6 +271,14 @@
       </div>
       <div class="lecture-image">
         <img
+          src="https://statichk.cmermedical.com/smile/e7458a6d7e35.png"
+          alt="1月 中环"
+        />
+        <img
+          src="https://statichk.cmermedical.com/smile/4ff6c787fe9a.png"
+          alt="1月 旺角"
+        />
+        <img
           src="https://static.cmereye.com/imgs/2024/11/cbeab541a25873c4.jpg"
           alt="12月 中环"
         />
@@ -243,7 +286,7 @@
           src="https://static.cmereye.com/imgs/2024/11/1320cbb266f59bfd.jpg"
           alt="12月 旺角"
         />
-        <img
+        <!--<img
           src="https://static.cmereye.com/imgs/2024/10/833707d2636b7a97.jpg"
           alt="11月 中环"
         />
@@ -251,7 +294,7 @@
           src="https://static.cmereye.com/imgs/2024/10/78600558a61d40f7.jpg"
           alt="11月 旺角"
         />
-        <!-- <img
+        <img
           src="https://static.cmereye.com/imgs/2024/09/8337078f712ec5ce.jpg"
           alt="10月 中环"
         />
@@ -463,34 +506,31 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-11-23",
-            "2024-11-27",
-            "2024-11-30",
-            "2024-12-04",
-            "2024-12-07",
-            "2024-12-11",
-            "2024-12-14",
-            "2024-12-18",
-            "2024-12-21",
             "2024-12-28",
+            "2025-01-04",
+            "2025-01-08",
+            "2025-01-11",
+            "2025-01-15",
+            "2025-01-18",
+            "2025-01-22",
+            "2025-01-25",
           ];
           break;
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2024-11-23",
-            "2024-11-26",
-            "2024-12-05",
-            "2024-12-07",
-            "2024-12-10",
-            "2024-12-19",
-            "2024-12-21",
             "2024-12-24",
+            "2025-01-04",
+            "2025-01-09",
+            "2025-01-14",
+            "2025-01-18",
+            "2025-01-23",
+            "2025-01-28",
           ];
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = ["2024-11-30", "2024-12-14", "2024-12-28"];
+          this.allowedDates = ["2025-01-11", "2025-01-25"];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -499,11 +539,11 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2024-11-28",
-            "2024-12-03",
-            "2024-12-12",
-            "2024-12-17",
             "2024-12-31",
+            "2025-01-02",
+            "2025-01-07",
+            "2025-01-16",
+            "2025-01-21",
           ];
           break;
         default:
