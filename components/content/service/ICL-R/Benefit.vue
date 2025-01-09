@@ -107,7 +107,7 @@
             />
           </div>
           <div>
-            <span>眼科醫生</span>
+            <!-- <span>眼科醫生</span> -->
             <span>講解ICL技術</span>
             <span>及個案分享</span>
           </div>

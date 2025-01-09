@@ -3,13 +3,13 @@
     <div class="head mbShow">
       <HeadLeft />
       <HeadMobile />
-      <nuxt-link to="/icl-event" class="btn-icl_event">
+      <!-- <nuxt-link to="/icl-event" class="btn-icl_event">
         <img
           src="https://static.cmereye.com/imgs/2024/12/d826363f36195d26.png"
           alt=""
         />
         <span>ICL<br />專題講座</span>
-      </nuxt-link>
+      </nuxt-link> -->
     </div>
     <div class="head pcShow">
       <HeadLeft />
@@ -18,13 +18,13 @@
         <div class="sidebar-box">
           <Sidebar />
         </div>
-        <nuxt-link to="/icl-event"  class="btn-icl_event">
+        <!-- <nuxt-link to="/icl-event"  class="btn-icl_event">
           <img
             src="https://static.cmereye.com/imgs/2024/12/d826363f36195d26.png"
             alt=""
           />
           <span>ICL植入式隱形眼鏡<br />專題講座</span>
-        </nuxt-link>
+        </nuxt-link> -->
       </div>
     </div>
   </div>

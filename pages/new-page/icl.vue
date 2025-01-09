@@ -570,11 +570,6 @@ export default {
   :deep(.xtra) {
     .lists-box {
       & > div {
-        & > div:nth-child(1) {
-          & > h3 {
-            font-weight: 600 !important;
-          }
-        }
         & > div:nth-child(2) {
           font-size: 14px !important;
         }

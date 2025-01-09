@@ -10,11 +10,13 @@
         </div>
         <div>
           ICL <br />
-          <span>{{$t('Correct.icl.xtra.title')}}</span>
+          <span>{{ $t("Correct.icl.xtra.title") }}</span>
         </div>
       </div>
       <div class="xtra-in-lists">
-        <h2 v-if="isTitleShow" class="title-content">{{$t('Correct.icl.xtra.title')}}</h2>
+        <h2 v-if="isTitleShow" class="title-content">
+          {{ $t("Correct.icl.xtra.title") }}
+        </h2>
         <div class="lists-box">
           <div>
             <div>
@@ -77,12 +79,12 @@
                   />
                 </svg>
               </div>
-              <h3>{{$t('Correct.icl.xtra.content1.title')}}</h3>
+              <h3>{{ $t("Correct.icl.xtra.content1.title") }}</h3>
             </div>
             <div>
-              {{$t('Correct.icl.xtra.content1.text1')}}<br class="mbShow" />行<span class="mbShow"
-                >，</span
-              ><br class="pcShow" />{{$t('Correct.icl.xtra.content1.text2')}}
+              {{ $t("Correct.icl.xtra.content1.text1")
+              }}<br class="mbShow" />行<span class="mbShow">，</span
+              ><br class="pcShow" />{{ $t("Correct.icl.xtra.content1.text2") }}
             </div>
           </div>
           <div>
@@ -156,9 +158,12 @@
                   </defs>
                 </svg>
               </div>
-              <h3>{{$t('Correct.icl.xtra.content2.title')}}</h3>
+              <h3>{{ $t("Correct.icl.xtra.content2.title") }}</h3>
             </div>
-            <div>{{$t('Correct.icl.xtra.content2.text1')}} <br/> {{$t('Correct.icl.xtra.content2.text2')}}</div>
+            <div>
+              {{ $t("Correct.icl.xtra.content2.text1") }} <br />
+              {{ $t("Correct.icl.xtra.content2.text2") }}
+            </div>
           </div>
           <div>
             <div>
@@ -193,7 +198,11 @@
                   />
                 </svg>
               </div>
-              <h3>{{$t('Correct.icl.xtra.optionContent1.text1')}}<br />{{$t('Correct.icl.xtra.optionContent1.text2')}}</h3>
+              <h3>
+                {{ $t("Correct.icl.xtra.optionContent1.text1") }}<br />{{
+                  $t("Correct.icl.xtra.optionContent1.text2")
+                }}
+              </h3>
               <!-- <h3>
                 <svg
                   v-if="isMobile"
@@ -223,7 +232,11 @@
                 </svg>
               </h3> -->
             </div>
-            <div>{{$t('Correct.icl.xtra.content3.text1')}}<br />{{$t('Correct.icl.xtra.content3.text2')}}</div>
+            <div>
+              {{ $t("Correct.icl.xtra.content3.text1") }}<br />{{
+                $t("Correct.icl.xtra.content3.text2")
+              }}
+            </div>
           </div>
           <div>
             <div>
@@ -257,9 +270,13 @@
                   />
                 </svg>
               </div>
-              <h3>{{$t('Correct.icl.xtra.content4.title')}}</h3>
+              <h3>{{ $t("Correct.icl.xtra.content4.title") }}</h3>
             </div>
-            <div>{{$t('Correct.icl.xtra.content4.text1')}}<br />{{$t('Correct.icl.xtra.content4.text2')}}</div>
+            <div>
+              {{ $t("Correct.icl.xtra.content4.text1") }}<br />{{
+                $t("Correct.icl.xtra.content4.text2")
+              }}
+            </div>
           </div>
           <div>
             <div>
@@ -294,12 +311,17 @@
                   />
                 </svg>
               </div>
-              <h3>{{$t('Correct.icl.xtra.content5.title')}}<br />{{$t('Correct.icl.xtra.content5.title2')}}</h3>
+              <h3>
+                {{ $t("Correct.icl.xtra.content5.title") }}<br />{{
+                  $t("Correct.icl.xtra.content5.title2")
+                }}
+              </h3>
             </div>
             <div>
-              {{$t('Correct.icl.xtra.content5.text1')}}<br class="mbShow" />膜，<br
-                class="pcShow"
-              />{{$t('Correct.icl.xtra.content5.text2')}}<br class="mbShow" />{{$t('Correct.icl.xtra.content5.text3')}}
+              {{ $t("Correct.icl.xtra.content5.text1")
+              }}<br class="mbShow" />膜，<br class="pcShow" />{{
+                $t("Correct.icl.xtra.content5.text2")
+              }}<br class="mbShow" />{{ $t("Correct.icl.xtra.content5.text3") }}
             </div>
           </div>
           <div>
@@ -370,9 +392,17 @@
                   />
                 </svg>
               </div>
-              <h3>{{$t('Correct.icl.xtra.content6.title')}}<br />{{$t('Correct.icl.xtra.content6.title2')}}</h3>
+              <h3>
+                {{ $t("Correct.icl.xtra.content6.title") }}<br />{{
+                  $t("Correct.icl.xtra.content6.title2")
+                }}
+              </h3>
             </div>
-            <div>{{$t('Correct.icl.xtra.content6.text1')}}<br />{{$t('Correct.icl.xtra.content6.text2')}}<br />{{$t('Correct.icl.xtra.content6.text3')}}</div>
+            <div>
+              {{ $t("Correct.icl.xtra.content6.text1") }}<br />{{
+                $t("Correct.icl.xtra.content6.text2")
+              }}<br />{{ $t("Correct.icl.xtra.content6.text3") }}
+            </div>
           </div>
         </div>
       </div>
@@ -498,7 +528,7 @@ export default {
               justify-content: center;
             }
             & > h3 {
-              margin-top: 22px;
+              margin-top: 12px;
               color: #4570b6;
               font-family: Noto Sans HK;
               font-size: 25px;
@@ -506,7 +536,7 @@ export default {
               font-weight: 700;
               line-height: 30px; /* 120% */
               letter-spacing: 8.75px;
-              height: 55px;
+              height: 40px;
               text-align: center;
             }
           }
@@ -709,6 +739,10 @@ export default {
           & > div:nth-child(1) {
             width: 62.702px;
             height: 64.856px;
+            & > svg {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
@@ -717,6 +751,10 @@ export default {
           & > div:nth-child(1) {
             width: 65px;
             height: 59px;
+            & > svg {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
@@ -725,6 +763,10 @@ export default {
           & > div:nth-child(1) {
             width: 59.101px;
             height: 57.818px;
+            & > svg {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
@@ -733,6 +775,10 @@ export default {
           & > div:nth-child(1) {
             width: 54.314px;
             height: 64.671px;
+            & > svg {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
@@ -741,6 +787,10 @@ export default {
           & > div:nth-child(1) {
             width: 79px;
             height: 54px;
+            & > svg {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
@@ -749,6 +799,10 @@ export default {
           & > div:nth-child(1) {
             width: 49.313px;
             height: 65.268px;
+            & > svg {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
