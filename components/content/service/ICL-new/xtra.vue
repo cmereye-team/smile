@@ -709,17 +709,26 @@ export default {
             display: flex;
             align-items: center;
             justify-content: center;
+            height: auto;
+            width: 80px !important;
+            height: 65.5px !important;
+            & > svg {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
           }
 
           & > h3 {
             color: #4570b6;
             font-family: Noto Sans HK;
-            font-size: 18px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 20px; /* 111.111% */
             letter-spacing: 3.6px;
             text-align: center;
+            height: fit-content;
           }
         }
         & > div:nth-child(2) {
@@ -732,78 +741,6 @@ export default {
           font-weight: 300;
           line-height: 22px; /* 146.667% */
           letter-spacing: 3px;
-        }
-      }
-      & > div:nth-child(1) {
-        & > div:nth-child(1) {
-          & > div:nth-child(1) {
-            width: 62.702px;
-            height: 64.856px;
-            & > svg {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-      }
-      & > div:nth-child(2) {
-        & > div:nth-child(1) {
-          & > div:nth-child(1) {
-            width: 65px;
-            height: 59px;
-            & > svg {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-      }
-      & > div:nth-child(3) {
-        & > div:nth-child(1) {
-          & > div:nth-child(1) {
-            width: 59.101px;
-            height: 57.818px;
-            & > svg {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-      }
-      & > div:nth-child(4) {
-        & > div:nth-child(1) {
-          & > div:nth-child(1) {
-            width: 54.314px;
-            height: 64.671px;
-            & > svg {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-      }
-      & > div:nth-child(5) {
-        & > div:nth-child(1) {
-          & > div:nth-child(1) {
-            width: 79px;
-            height: 54px;
-            & > svg {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-      }
-      & > div:nth-child(6) {
-        & > div:nth-child(1) {
-          & > div:nth-child(1) {
-            width: 49.313px;
-            height: 65.268px;
-            & > svg {
-              width: 100%;
-              height: 100%;
-            }
-          }
         }
       }
     }
