@@ -271,44 +271,24 @@
       </div>
       <div class="lecture-image">
         <img
+          v-if="isBeforeFeb28()"
+          src="https://statichk.cmermedical.com/smile/68910b3cec5d.webp"
+          alt="2月 中环"
+        />
+        <img
+          v-if="isBeforeFeb28()"
+          src="https://statichk.cmermedical.com/smile/017b8163c9ac.webp"
+          alt="2月 旺角"
+        />
+        <!-- <img
+          v-if="isBeforeFeb31()"
           src="https://statichk.cmermedical.com/smile/e7458a6d7e35.png"
           alt="1月 中环"
         />
         <img
+          v-if="isBeforeFeb31()"
           src="https://statichk.cmermedical.com/smile/4ff6c787fe9a.png"
           alt="1月 旺角"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/11/cbeab541a25873c4.jpg"
-          alt="12月 中环"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/11/1320cbb266f59bfd.jpg"
-          alt="12月 旺角"
-        />
-        <!--<img
-          src="https://static.cmereye.com/imgs/2024/10/833707d2636b7a97.jpg"
-          alt="11月 中环"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/10/78600558a61d40f7.jpg"
-          alt="11月 旺角"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/09/8337078f712ec5ce.jpg"
-          alt="10月 中环"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/09/44ef512bfb92c5f1.jpg"
-          alt="10月 旺角"
-        /> -->
-        <!-- <img
-          src="https://static.cmereye.com/imgs/2024/08/6d024e7e48e19947.jpg"
-          alt="9月 中环"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2024/08/b544afa210d8f2ef.jpg"
-          alt="9月 旺角"
         /> -->
       </div>
     </div>
@@ -422,10 +402,21 @@ export default {
           href: "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm/",
         },
       ],
+      nowMonth: this.nowDayMonth,
     };
   },
   computed: {},
   methods: {
+    isBeforeFeb28() {
+      const today = new Date();
+      const targetDate = new Date(today.getFullYear(), 1, 28); // 2月28日，注意月份从0开始
+      return today < targetDate;
+    },
+    isBeforeFeb31() {
+      const today = new Date();
+      const targetDate = new Date(today.getFullYear(), 0, 31); // 2月28日，注意月份从0开始
+      return today < targetDate;
+    },
     isOpenDialog(index) {
       // index ==0  1  0开 1关
       if (index == 0) {
@@ -506,31 +497,34 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2024-12-28",
-            "2025-01-04",
-            "2025-01-08",
-            "2025-01-11",
-            "2025-01-15",
-            "2025-01-18",
             "2025-01-22",
             "2025-01-25",
+            "2025-02-01",
+            "2025-02-05",
+            "2025-02-08",
+            "2025-02-12",
+            "2025-02-15",
+            "2025-02-19",
+            "2025-02-22",
+            "2025-02-26",
           ];
           break;
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2024-12-24",
-            "2025-01-04",
-            "2025-01-09",
-            "2025-01-14",
-            "2025-01-18",
             "2025-01-23",
             "2025-01-28",
+            "2025-02-01",
+            "2025-02-06",
+            "2025-02-11",
+            "2025-02-15",
+            "2025-02-20",
+            "2025-02-25",
           ];
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = ["2025-01-11", "2025-01-25"];
+          this.allowedDates = ["2025-01-25", "2025-02-08", "2025-02-22"];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -539,11 +533,11 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2024-12-31",
-            "2025-01-02",
-            "2025-01-07",
-            "2025-01-16",
             "2025-01-21",
+            "2025-02-04",
+            "2025-02-13",
+            "2025-02-18",
+            "2025-02-27",
           ];
           break;
         default:

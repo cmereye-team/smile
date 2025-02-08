@@ -10,14 +10,11 @@
       <H2Tag :title="[$t('fee.table.title')]" />
       <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
     </div>
+    <span style="display: none !important;"> {{ isMobile }}</span>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
-        <div class="table_left">
+        <div class="table_left" v-if="isMobile">
           <div></div>
-          <!-- <div>
-            <div>{{ $t("fee.table.content1.text1") }}</div>
-            <div>{{ $t("fee.table.content1.text2") }}</div>
-          </div> -->
           <div>
             <div>{{ $t("fee.table.content2.text1") }}</div>
             <div>{{ $t("fee.table.content2.text2") }}</div>
@@ -45,9 +42,10 @@
           <div>
             <div>{{ $t("fee.table.content9.text1") }}</div>
           </div>
-          <div></div>
+          <!-- <div></div> -->
         </div>
         <div class="table_right">
+          <div v-if="!isMobile"></div>
           <div>
             <div>SMILE Pro Care</div>
             <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
@@ -69,25 +67,10 @@
             <div>{{ $t("fee.table.contentRight.content4.text2") }}</div>
             <div>{{ $t("fee.table.contentRight.content4.text3") }}</div>
           </div>
-          <!-- <div>
-            <div>$12,000<sup>^</sup></div>
+          <div v-if="!isMobile">
+            <div>{{ $t("fee.table.content2.text1") }}</div>
+            <div>{{ $t("fee.table.content2.text2") }}</div>
           </div>
-          <div>
-            <div>$15,000<sup>^</sup></div>
-          </div>
-          <div>
-            <div>$16,500<sup>^</sup></div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.contentRight.content5.text1") }}</div>
-            <div>$38,000<sup>^^</sup></div>
-            <div>{{ $t("fee.table.contentRight.content5.text2") }}</div>
-            <div>$42,000<sup>^^</sup></div>
-          </div>
-          <div>
-            <div>$12,000<sup>^</sup></div>
-          </div> -->
-
           <div>
             <div>$26,000<sup>^</sup></div>
           </div>
@@ -106,7 +89,9 @@
           <div>
             <div>$19,000<sup>^</sup></div>
           </div>
-
+          <div v-if="!isMobile">
+            <div>{{ $t("fee.table.content3.text1") }}</div>
+          </div>
           <div>
             <div>$100</div>
           </div>
@@ -122,7 +107,9 @@
           <div>
             <div>$100</div>
           </div>
-
+          <div v-if="!isMobile">
+            <div>{{ $t("fee.table.content4.text1") }}</div>
+          </div>
           <div>
             <div>1次</div>
           </div>
@@ -138,7 +125,10 @@
           <div>
             <div>1次</div>
           </div>
-
+          <div v-if="!isMobile">
+            <div>{{ $t("fee.table.content5.text1") }}</div>
+            <div>{{ $t("fee.table.content5.text2") }}</div>
+          </div>
           <div>
             <div>1次</div>
           </div>
@@ -154,7 +144,10 @@
           <div>
             <div class="line_blue"><span></span></div>
           </div>
-
+          <div v-if="!isMobile">
+            <div>{{ $t("fee.table.content6.text1") }}</div>
+            <div>{{ $t("fee.table.content6.text2") }}</div>
+          </div>
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -180,12 +173,8 @@
               <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
-
-          <div>
-            <div>5次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>3次<sup>#</sup></div>
+          <div v-if="!isMobile">
+            <div>{{ $t("fee.table.content7.text1") }}</div>
           </div>
           <div>
             <div>5次<sup>#</sup></div>
@@ -194,9 +183,17 @@
             <div>3次<sup>#</sup></div>
           </div>
           <div>
+            <div>5次<sup>#</sup></div>
+          </div>
+          <div>
             <div>3次<sup>#</sup></div>
           </div>
-
+          <div>
+            <div>3次<sup>#</sup></div>
+          </div>
+          <div v-if="!isMobile">
+            <div>增進手術</div>
+          </div>
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -220,7 +217,9 @@
               <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
-
+          <div v-if="!isMobile">
+            <div>{{ $t("fee.table.content9.text1") }}</div>
+          </div>
           <div>
             <div>
               <img src="../../asset/image/free/blue.svg" alt="" />
@@ -270,7 +269,7 @@
             <img src="../../asset/image/free/blue.svg" alt="" />
           </div>
         </div> -->
-          <div>*SMILE Pro Care 另送價值$1,000 Trip.com電子禮品卡</div>
+          <!-- <div>*SMILE Pro Care 另送價值$1,000 Trip.com電子禮品卡<span class="bold_font">(最後100個名額)</span></div> -->
         </div>
       </div>
       <div class="smile_xtra">
@@ -489,18 +488,18 @@ export default {
     }
   }
   .table_new_fee {
-    max-width: 1270px;
+    max-width: 66.14vw;
     margin: 85px auto 95px;
   }
   .new_title_style {
-    max-width: 1270px;
+    max-width: 66.14vw;
     margin: 0 auto;
-    padding-left: 130px;
+    padding-left: 6.678vw;
   }
   .fee-table-container {
-    max-width: 1270px;
+    max-width: 66.14vw;
     margin: 0 auto;
-    padding-left: 100px;
+    padding-left: 5.208vw;
   }
   .title_sub {
     color: #6d6e71;
@@ -520,39 +519,47 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 9px 0;
-    width: 180px;
-    max-width: 180px;
-    min-width: 180px;
+    width: 9.375vw;
+    max-width: 9.375vw;
+    min-width: 9.375vw;
     & > div:nth-child(1) {
       margin-top: 3px;
-      height: 105.5px;
+      height: 5.4948vw;
     }
     & > div:nth-child(2) {
-      height: 180.5px;
+      height: 9.401vw;
     }
     & > div:nth-child(3),
     & > div:nth-child(4) {
-      height: 66.2px;
+      height: 3.552vw;
     }
-
+    & > div:nth-child(5),
+    & > div:nth-child(6) {
+      height: 4.99vw;
+    }
+    & > div:nth-child(7),
+    & > div:nth-child(8),
+    & > div:nth-child(9) {
+      height: 3.239vw;
+    }
     & > div {
-      border-radius: 14px;
+      border-radius: 0.729vw;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 14px 0;
-      margin-top: 3px;
+      padding: 0.729vw 0;
+      margin-top: 0.15625vw;
       & > div {
         color: #4570b6;
         text-align: center;
         font-family: "Noto Sans HK";
-        font-size: 22px;
+        font-size: 1.145vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 35px; /* 140% */
-        letter-spacing: 5px;
+        line-height: 1.823vw; /* 140% */
+        letter-spacing: 0.2vw;
       }
     }
     & > div:nth-child(2),
@@ -561,87 +568,90 @@ export default {
         color: #b64545;
         text-align: center;
         font-family: "Noto Sans HK";
-        font-size: 20px;
+        font-size: 1.04vw;
         font-style: normal;
         font-weight: 350;
-        line-height: 40px; /* 200% */
+        line-height: 2.083vw; /* 200% */
         letter-spacing: 1px;
       }
     }
   }
   .table_right {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 9px 7.6px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.46875vw 0.3958vw;
     width: 100%;
 
     & > div {
-      border-radius: 14px;
+      border-radius: 0.729vw;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 14px 0;
+      padding: 0.729vw 0;
     }
     & > div:nth-child(1) {
+      background: transparent !important;
+    }
+    & > div:nth-child(2) {
       color: #fff !important;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 26px;
+      font-size: 1.354vw;
       font-style: normal;
       font-weight: 700;
-      line-height: 35px; /* 116.667% */
-      letter-spacing: 2px !important;
-      border-radius: 25px;
+      line-height: 1.829vw; /* 116.667% */
+      letter-spacing: 0.1042vw !important;
+      border-radius: 1.30208vw;
       background: #71bfd8 !important;
       & > div:nth-child(1) {
-        font-size: 24px;
+        font-size: 1.25vw;
       }
     }
-    & > div:nth-child(2),
-    & > div:nth-child(5) {
+    & > div:nth-child(3),
+    & > div:nth-child(6) {
       color: #fff !important;
-      border-radius: 25px;
+      border-radius: 1.3vw;
       background: #719ad8 !important;
     }
-    & > div:nth-child(3) {
+    & > div:nth-child(4) {
       color: #fff !important;
-      font-size: 25px !important;
-      letter-spacing: 2px !important;
-      border-radius: 25px;
+      font-size: 1.2vw !important;
+      letter-spacing: 0.1vw !important;
+      border-radius: 1.3vw;
       background: #86d2c4 !important;
     }
-    & > div:nth-child(4) {
-      border-radius: 25px;
+    & > div:nth-child(5) {
+      border-radius: 1.3vw;
       background: #d7eef6 !important;
       color: #4570b6 !important;
     }
-    & > div:nth-child(2),
-    & > div:nth-child(4),
-    & > div:nth-child(3) {
+    & > div:nth-child(3),
+    & > div:nth-child(5),
+    & > div:nth-child(4) {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 28px;
+      font-size: 1.4583vw;
       font-style: normal;
       font-weight: 700;
-      line-height: 35px; /* 116.667% */
-      letter-spacing: 5px;
+      line-height: 1.829vw; /* 116.667% */
+      letter-spacing: 0.26vw;
       box-sizing: border-box;
-      padding: 0 10px;
+      padding: 0 0.502vw;
     }
-    & > div:nth-child(5) {
+    & > div:nth-child(6) {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 22px !important;
+      font-size: 1.145vw !important;
       font-style: normal;
       font-weight: 700;
-      line-height: 30px !important; /* 116.667% */
+      line-height: 1.5625vw !important; /* 116.667% */
       letter-spacing: 1px !important;
       box-sizing: border-box;
-      padding: 0 11px;
+      padding: 0 0.57vw;
     }
     & > div:nth-child(21),
     & > div:nth-child(22),
@@ -651,93 +661,65 @@ export default {
     & > div:nth-child(26),
     & > div:nth-child(27),
     & > div:nth-child(28) {
-      height: 98px;
+      height: 5.1046vw;
     }
-    & > div:nth-child(5n + 1) {
-      border-radius: 14px;
-      background: rgba(113, 191, 216, 0.1);
-      // width: 210px;
-      // max-width: 210px;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 26px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 40px; /* 133.333% */
-      letter-spacing: 4.5px;
+    & > div:nth-child(6n + 1) {
+      border-radius: 0.729vw;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.729vw 0;
+      margin-top: 0.15625vw;
+      & > div {
+        color: #4570b6;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 1.145vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.823vw; /* 140% */
+        letter-spacing: 0.2vw;
+      }
     }
-    & > div:nth-child(5n + 2) {
-      border-radius: 14px;
+    & > div:nth-child(7) {
+      & > div:nth-child(2) {
+        color: #b64545;
+        text-align: center;
+        font-family: "Noto Sans HK";
+        font-size: 1.04vw;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 2.083vw; /* 200% */
+        letter-spacing: 1px;
+      }
+    }
+    & > div:nth-child(6n + 2),
+    & > div:nth-child(6n + 3),
+    & > div:nth-child(6n + 4),
+    & > div:nth-child(6n + 5),
+    & > div:nth-child(6n + 6) {
+      border-radius: clamp(0.729vw, 0.729vw, 14px);
       background: #f1f5fc;
-      // width: 210px;
-      // max-width: 210px;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 26px;
+      font-size: clamp(1.354vw, 1.354vw, 26px);
       font-style: normal;
       font-weight: 400;
-      line-height: 40px; /* 133.333% */
-      letter-spacing: 4.5px;
-    }
-    & > div:nth-child(5n + 3) {
-      border-radius: 14px;
-      background: #fafcfc;
-      background: #71bfd81a;
-      // width: 237px;
-      // max-width: 237px;
-      color: #15967f;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 26px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 40px; /* 133.333% */
-      letter-spacing: 4.5px;
-    }
-    & > div:nth-child(5n + 4) {
-      border-radius: 14px;
-      background: #fafcfc;
-      // width: 237px;
-      // max-width: 237px;
-      color: #4570b6 !important;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 26px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 40px; /* 133.333% */
-      letter-spacing: 4.5px;
-    }
-    & > div:nth-child(5n + 5) {
-      border-radius: 14px;
-      background: #f1f5fc;
-      // width: 237px;
-      // max-width: 237px;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 26px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 40px; /* 133.333% */
-      letter-spacing: 4.5px;
+      line-height: clamp(2.083vw, 2.083vw, 40px); /* 133.333% */
+      letter-spacing: clamp(0.23vw, 0.23vw, 4.5px);
     }
   }
-  .table_right > div:last-child {
-    grid-column: span 5;
-    border-radius: 10px;
-    background: #71bfd8;
-    color: #fff;
-  }
+
   .clear_vision {
     margin-top: 8px;
     display: flex;
     gap: 8px 6px;
   }
   .clear_vision_left {
-    width: 180px;
+    width: 10.675vw;
     & > div:nth-child(1) {
       background: transparent;
       margin-bottom: 8px;
@@ -752,8 +734,8 @@ export default {
     }
     & > div {
       background: #fff;
-      width: 180px;
-      max-width: 180px;
+      width: 10.675vw;
+      max-width: 10.675vw;
       font-size: 25px;
       font-style: normal;
       font-weight: 400;
@@ -808,8 +790,6 @@ export default {
       font-style: normal;
       font-weight: 400;
       line-height: 40px;
-      // width: 525px;
-      // max-width: 525px;
     }
   }
   .clear_vision_right > div:nth-child(1),
@@ -818,6 +798,10 @@ export default {
     max-width: 100%;
     grid-column: span 2;
   }
+  .bold_font {
+    font-weight: 600;
+    font-size: 30px;
+  }
   .smile_xtra {
     margin-top: 15px;
     display: flex;
@@ -825,7 +809,6 @@ export default {
     margin-bottom: 65px;
   }
   .smile_xtra_left {
-    width: 180px;
     & > div:nth-child(1) {
       background: transparent;
       margin-bottom: 8px;
@@ -837,8 +820,8 @@ export default {
 
     & > div {
       background: #fff;
-      width: 180px;
-      max-width: 180px;
+      width: 10.675vw;
+      max-width: 10.675vw;
       font-size: 25px;
       font-style: normal;
       font-weight: 400;
@@ -995,16 +978,16 @@ export default {
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .table_new_fee {
-    max-width: 99.21875vw !important;
+    max-width: 66.21875vw !important;
   }
   .new_title_style {
-    max-width: 99.21875vw !important;
+    max-width: 66.21875vw !important;
   }
   .fee-table-container {
-    max-width: 99.21875vw !important;
+    max-width: 66.21875vw !important;
   }
   .ellipse_explain {
-    max-width: 99.21875vw !important;
+    max-width: 66.21875vw !important;
   }
 }
 
@@ -1046,7 +1029,7 @@ export default {
   }
   .table_left {
     position: sticky;
-    left: 0;
+    left: -1px;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -1056,11 +1039,11 @@ export default {
     background: #fff;
     & > div:nth-child(1) {
       margin-top: 0;
-      height: 80.42px;
+      height: 20.62vw;
     }
     & > div:nth-child(2) {
       // height: 103.4px;
-      height: 89.4px;
+      height: 24.92vw;
     }
     & > div:nth-child(3),
     & > div:nth-child(4),
@@ -1070,7 +1053,7 @@ export default {
     & > div:nth-child(7),
     & > div:nth-child(9) {
       // height: 24px;
-      min-height: 40px;
+      min-height: 11.25vw;
     }
     & > div {
       border-radius: 14px;
@@ -1114,119 +1097,80 @@ export default {
   .table_right {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 3.66px 3.65px;
+    gap: 0.923vw 0.835vw;
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 5.128vw;
+      height: 5.128vw;
     }
 
     & > div {
-      border-radius: 14px;
+      border-radius: 3.589vw;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 0 0;
-      min-height: 40px;
+      min-height: 10.258vw;
+      min-width: 40vw;
     }
     & > div:nth-child(5n + 1) {
-      border-radius: 14px;
       background: #71bfd81a;
-      width: 132.348px;
-      max-width: 132.348px;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 40px; /* 250% */
-      letter-spacing: 2.4px;
     }
     & > div:nth-child(5n + 2) {
-      border-radius: 14px;
       background: #f1f5fc;
-      width: 132.348px;
-      max-width: 132.348px;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 22px; /* 250% */
-      letter-spacing: 2.4px;
     }
     & > div:nth-child(5n + 3) {
-      border-radius: 14px;
       background: #fafcfc;
-      width: 152.752px;
-      max-width: 152.752px;
-      color: #15967f;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 22px; /* 250% */
-      letter-spacing: 2.4px;
     }
     & > div:nth-child(5n + 4) {
-      border-radius: 14px;
       background: #fafcfc;
-      width: 152.752px;
-      max-width: 152.752px;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 22px; /* 250% */
-      letter-spacing: 2.4px;
     }
     & > div:nth-child(5n + 5) {
-      border-radius: 14px;
       background: #f1f5fc;
-      width: 152.752px;
-      max-width: 152.752px;
+    }
+    & > div:nth-child(5n + 1),
+    & > div:nth-child(5n + 2),
+    & > div:nth-child(5n + 3),
+    & > div:nth-child(5n + 4),
+    & > div:nth-child(5n + 5) {
+      border-radius: 3.58vw;
       color: #4b69a6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 16px;
+      font-size: 3.4vw;
       font-style: normal;
       font-weight: 400;
-      line-height: 40px; /* 250% */
-      letter-spacing: 2.4px;
+      line-height: 5.25vw; /* 250% */
+      letter-spacing: 0.615vw;
     }
 
     & > div:nth-child(1) {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 16px;
+      font-size: 4.1vw;
       font-style: normal;
       font-weight: 700;
-      line-height: 25px; /* 156.25% */
-      letter-spacing: 2.4px;
-      height: 80.42px;
-      border-radius: 12px;
+      line-height: 6.4vw; /* 156.25% */
+      letter-spacing: 0.615vw;
+      height: 20.6vw;
+      border-radius: 3.07vw;
       background: #71bfd8;
     }
     & > div:nth-child(2),
     & > div:nth-child(5) {
-      border-radius: 12px;
+      border-radius: 3.07vw;
       background: #719ad8;
       color: #fff;
     }
     & > div:nth-child(3) {
-      border-radius: 12px;
+      border-radius: 3.07vw;
       background: #86d2c4;
     }
     & > div:nth-child(4) {
-      border-radius: 12px;
+      border-radius: 3.07vw;
       background: #d7eef6;
       color: #4570b6 !important;
     }
@@ -1237,12 +1181,12 @@ export default {
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 14px;
+      font-size: 3.589vw;
       font-style: normal;
       font-weight: 700;
-      line-height: 20px; /* 156.25% */
-      letter-spacing: 2.4px;
-      height: 80.42px;
+      line-height: 5.128vw; /* 156.25% */
+      letter-spacing: 0.615vw;
+      height: 20.6vw;
     }
 
     & > div:nth-child(6),
@@ -1269,18 +1213,20 @@ export default {
       // height: 24px;
     }
   }
-  .table_right > div:last-child {
-    grid-column: span 5;
-    border-radius: 10px;
-    background: #71bfd8;
-    color: #fff;
-    width: 100%;
-    max-width: 100%;
-  }
+  // .table_right > div:last-child {
+  //   padding: 10px 0;
+  //   grid-column: span 5;
+  //   border-radius: 10px;
+  //   background: #71bfd8;
+  //   color: #fff;
+  //   width: 100%;
+  //   max-width: 100%;
+  //   line-height: 1.4;
+  // }
   .table_right > div:nth-child(1) {
     & > div:nth-child(1) {
-      font-size: 14px;
-      letter-spacing: 1px;
+      font-size: 3.589vw;
+      letter-spacing: 0.25vw;
     }
   }
   .clear_vision {
@@ -1291,7 +1237,7 @@ export default {
   }
   .clear_vision_left {
     position: sticky;
-    left: 0;
+    left: -1px;
     width: 114px;
     z-index: 10;
     background: #fff;
@@ -1379,6 +1325,11 @@ export default {
     width: 100%;
     max-width: 100%;
   }
+  .bold_font {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+  }
   .smile_xtra {
     margin-top: 26px;
     margin-bottom: 22px;
@@ -1444,7 +1395,7 @@ export default {
     }
     & > div:not(:nth-child(1)):nth-child(n) {
       border-radius: 6px;
-      background: #F1F5FC;
+      background: #f1f5fc;
       color: #4570b6;
       // width: 144px;
     }
