@@ -3,7 +3,7 @@
     <div class="main_footer">
       <div
         class="logo_footer"
-        :style="{ minWidth: $i18n.locale == 'en' ? '250px' : '' }"
+        :style="{ minWidth: $i18n.locale == 'en' ? '250px' : '100%' }"
       >
         <nuxt-link :to="localePath('/')">
           <img
@@ -578,15 +578,15 @@ export default {
   }
 
   .main_footer {
-    background: url("https://static.cmereye.com/imgs/2023/08/dc5cf7af0b7775a9.png");
+    background: url("https://statichk.cmermedical.com/smile/2025020814231901.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     padding: 2.4vw 0 0;
     position: relative;
-    width: 120%;
+    // width: 120%;
     border-radius: 100% 100% 0 0;
-    margin-left: -10%;
+    // margin-left: -10%;
 
     & > div {
       max-width: 1280px;

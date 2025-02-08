@@ -3,14 +3,23 @@
     <Head />
     <Banner class="banner-box">
       <template #banner>
-        <div class="banner-img"></div>
+        <div class="banner-img">
+          <img
+            src="https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif"
+            srcset="
+              https://statichk.cmermedical.com/smile/fee/08ef23b96b14.avif 768w,
+              https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif
+            "
+            alt=""
+          />
+        </div>
       </template>
     </Banner>
     <div class="new_title_style">
       <H2Tag :title="[$t('fee.table.title')]" />
       <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
     </div>
-    <span style="display: none !important;"> {{ isMobile }}</span>
+    <span style="color: #ffffff12;"> {{ isMobile }}</span>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div class="table_left" v-if="isMobile">
@@ -42,7 +51,6 @@
           <div>
             <div>{{ $t("fee.table.content9.text1") }}</div>
           </div>
-          <!-- <div></div> -->
         </div>
         <div class="table_right">
           <div v-if="!isMobile"></div>
@@ -245,31 +253,6 @@
               <img src="../../asset/image/free/blue.svg" alt="" />
             </div>
           </div>
-          <!-- <div>
-          <div>手術當日藥費</div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/green.svg" alt="" />
-          </div>
-          <div>藥費另外收費</div>
-        </div>
-        <div>
-          <div>
-            <img src="../../asset/image/free/blue.svg" alt="" />
-          </div>
-        </div> -->
-          <!-- <div>*SMILE Pro Care 另送價值$1,000 Trip.com電子禮品卡<span class="bold_font">(最後100個名額)</span></div> -->
         </div>
       </div>
       <div class="smile_xtra">
@@ -342,30 +325,30 @@
     </div>
     <div class="ellipse_explain_bg">
       <div class="ellipse_explain">
-        <p>{{ $t("fee.textList.text1") }}</p>
-        <p>
+        <span>{{ $t("fee.textList.text1") }}</span>
+        <span>
           {{ $t("fee.textList.text2") }}<br />
           {{ $t("fee.textList.text2_1") }}
           {{ $t("fee.textList.text2_2") }}<br />
-        </p>
-        <p>
+        </span>
+        <span>
           {{ $t("fee.textList.text3") }}<br />
           {{ $t("fee.textList.text3_1") }}
           {{ $t("fee.textList.text3_2") }}<br />
           {{ $t("fee.textList.text3_3") }}
-        </p>
+        </span>
         <br />
-        <p>
+        <span>
           {{ $t("fee.textList.text4") }}
-        </p>
+        </span>
         <br />
-        <p>
+        <span>
           {{ $t("fee.textList.text5") }}
-        </p>
+        </span>
         <br />
-        <p>
+        <span>
           {{ $t("fee.textList.text6") }}
-        </p>
+        </span>
       </div>
     </div>
     <businessHours />
@@ -401,6 +384,7 @@ export default {
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/fee",
       browserTitle: "收費詳情 - 希瑪微笑矯視中心",
       browserTitleCn: "收费详情 - 希玛微笑矫视中心",
+      isMobile: false,
     };
   },
   methods: {
@@ -461,7 +445,8 @@ export default {
     };
   },
   mounted() {
-    // 获取屏幕宽度
+    // 获取屏幕宽度 判断是否是移动端
+    this.isMobile = false;
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
         this.isMobile = true;
@@ -482,24 +467,36 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  :deep(.businessHours) {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
   .fee {
+    max-width: 100vw;
+    margin: 0 auto;
     :deep(h2) {
       margin-bottom: 20px;
     }
   }
+  :deep(.footer_new) {
+    max-width: 100vw;
+  }
   .table_new_fee {
     max-width: 66.14vw;
+    min-width: 55.29vw;
     margin: 85px auto 95px;
   }
   .new_title_style {
     max-width: 66.14vw;
-    margin: 0 auto;
-    padding-left: 6.678vw;
+    min-width: 55.29vw;
+    margin: 120px auto 0;
+    // padding-left: 6.678vw;
   }
   .fee-table-container {
     max-width: 66.14vw;
+    min-width: 55.29vw;
     margin: 0 auto;
-    padding-left: 5.208vw;
+    // padding-left: 5.208vw;
   }
   .title_sub {
     color: #6d6e71;
@@ -716,40 +713,35 @@ export default {
   .clear_vision {
     margin-top: 8px;
     display: flex;
-    gap: 8px 6px;
+    gap: 0.4165vw 0.3125vw;
   }
   .clear_vision_left {
     width: 10.675vw;
     & > div:nth-child(1) {
       background: transparent;
-      margin-bottom: 8px;
-      height: 62px;
+      margin-bottom: 0.4165vw;
+      height: 3.229vw;
     }
     & > div:nth-child(2),
     & > div:nth-child(3) {
-      height: 139px;
+      height: 7.2395vw;
     }
     & > div:nth-child(4) {
-      height: 67px;
+      height: 3.48vw;
     }
     & > div {
       background: #fff;
       width: 10.675vw;
       max-width: 10.675vw;
-      font-size: 25px;
+      font-size: 1.302vw;
       font-style: normal;
       font-weight: 400;
-      line-height: 35px; /* 140% */
-      letter-spacing: 4px;
+      line-height: 1.822vw; /* 140% */
+      letter-spacing: 0.208vw;
 
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 25px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 35px; /* 140% */
-      letter-spacing: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -759,37 +751,37 @@ export default {
   .clear_vision_right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px 6px;
+    gap: 0.4165vw 0.3125vw;
     width: 100%;
     justify-content: space-between;
     & > div:nth-child(1) {
-      border-radius: 10px;
+      border-radius: 0.5208vw;
       background: #cca9dd;
-      margin-bottom: 8px;
+      margin-bottom: 0.4165vw;
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 1.5625vw;
       font-style: normal;
       font-weight: 500;
-      line-height: 30px; /* 100% */
-      letter-spacing: 4.5px;
+      line-height: 1.5625vw; /* 100% */
+      letter-spacing: 0.234375vw;
     }
     & > div {
-      border-radius: 14px;
+      border-radius: 0.729vw;
       background: #fafcfc;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 16px;
+      padding: 0.873vw;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 1.5625vw;
       font-style: normal;
       font-weight: 400;
-      line-height: 40px;
+      line-height: 2.08vw;
     }
   }
   .clear_vision_right > div:nth-child(1),
@@ -800,41 +792,38 @@ export default {
   }
   .bold_font {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.5625vw;
   }
   .smile_xtra {
-    margin-top: 15px;
+    margin-top: 0.78125vw;
     display: flex;
-    gap: 8px 6px;
-    margin-bottom: 65px;
+    gap: 0.4165vw 0.3125vw;
+    margin-bottom: 3.385415vw;
   }
   .smile_xtra_left {
     & > div:nth-child(1) {
       background: transparent;
-      margin-bottom: 8px;
-      height: 62px;
+      margin-bottom: 0.4165vw;
+      height: 3.22vw;
     }
     & > div:nth-child(2) {
-      height: 67px;
+      height: 3.4895vw;
     }
 
     & > div {
       background: #fff;
       width: 10.675vw;
       max-width: 10.675vw;
-      font-size: 25px;
+      font-size: 1.302vw;
       font-style: normal;
       font-weight: 400;
-      line-height: 35px; /* 140% */
-      letter-spacing: 4px;
+      line-height: 1.829vw; /* 140% */
+      letter-spacing: 0.208vw;
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 25px;
       font-style: normal;
       font-weight: 400;
-      line-height: 35px; /* 140% */
-      letter-spacing: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -845,30 +834,30 @@ export default {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px 6px;
+    gap: 0.4165vw 0.3125vw;
     & > div {
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 1.5625vw;
       font-style: normal;
       font-weight: 400;
-      line-height: 40px; /* 133.333% */
-      letter-spacing: 4.5px;
+      line-height: 2.083vw; /* 133.333% */
+      letter-spacing: 0.234vw;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     & > div:not(:nth-child(1)):nth-child(n) {
-      border-radius: 7px;
+      border-radius: 0.364vw;
       background: #f1f5fc;
     }
     & > div:not(:nth-child(1)):nth-child(2n) {
-      border-radius: 7px;
+      border-radius: 0.364vw;
       background: #fafcfc;
     }
     & > div:nth-child(1) {
-      border-radius: 10px;
+      border-radius: 0.52vw;
       background: #d7eef6;
     }
   }
@@ -882,8 +871,8 @@ export default {
     align-items: center;
     justify-content: center;
     & > span {
-      width: 28px;
-      height: 3px;
+      width: 1.4583vw;
+      height: 0.15625vw;
       display: inline-block;
       background: #15967f;
     }
@@ -893,8 +882,8 @@ export default {
     align-items: center;
     justify-content: center;
     & > span {
-      width: 28px;
-      height: 3px;
+      width: 1.4583vw;
+      height: 0.15625vw;
       display: inline-block;
       background: #4b69a6;
     }
@@ -903,91 +892,86 @@ export default {
     background: url("https://static.cmereye.com/imgs/2024/08/0c425451fe0b646d.png")
       no-repeat;
     background-size: 100% 100%;
-    padding: 75px 0;
-    margin-bottom: 95px;
+    padding: 3.90625vw 0;
+    max-width: 100vw;
+    margin-bottom: 4.947vw;
   }
   .ellipse_explain {
-    max-width: 1140px;
+    max-width: 85%;
     margin: 0 auto;
-    p {
+    span {
       color: #6d6e71;
       font-family: "Noto Sans HK";
-      font-size: 18px;
+      font-size: clamp(16px, 1.08vw, 20px);
       font-style: normal;
       font-weight: 300;
-      line-height: 24px; /* 150% */
-      letter-spacing: 5px;
+      line-height: 140%; /* 150% */
+      letter-spacing: 0.26vw;
     }
   }
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 100vw;
+  }
   .banner-img {
-    background: url("https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif")
-      no-repeat;
-    background-size: contain;
-    height: 480px;
+    // background: url("https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif")
+    //   no-repeat;
+    // background-size: cover;
+    // height: 37.5vw;
+    // min-height: 25vw;
+    // width: 100%;
+    border-radius: 2.864vw;
     width: 100%;
-    border-radius: 55px;
-    padding-top: 23%;
-
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 70px;
-    margin-bottom: 64px;
-    & > p:nth-child(1) {
-      color: #4570b6;
-      font-family: "Noto Sans HK";
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 50.75px; /* 169.167% */
-      letter-spacing: 7.5px;
-    }
-    & > p:nth-child(2) {
-      color: #4570b6;
-      font-family: "Noto Sans HK";
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 43.5px; /* 290% */
-      letter-spacing: 0.45px;
-      margin-top: -10px;
+    // display: flex;
+    // align-items: flex-start;
+    // flex-direction: column;
+    // justify-content: center;
+    overflow: hidden;
+    & > img {
+      margin: 0 auto;
+      object-fit: cover;
+      border-radius: 2.864vw;
     }
   }
   .fee-table-container {
-    margin-bottom: 80px;
+    margin-bottom: 4.165vw;
     & > a {
       margin: 0 auto;
-      margin-top: 55px;
+      margin-top: 2.864vw;
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 30px;
+      font-size: 1.5625vw;
       font-style: normal;
       font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 7.5px;
+      line-height: 1.5625vw;
+      letter-spacing: 0.390625vw;
       background: #4570b6;
       width: -moz-max-content;
       width: max-content;
-      border-radius: 100px;
+      border-radius: 5.208vw;
       display: block;
-      padding: 12px 53px 14px 62px;
+      padding: 0.625vw 2.76vw 0.729vw 3.229vw;
     }
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .table_new_fee {
     max-width: 66.21875vw !important;
+    min-width: 50vw;
   }
   .new_title_style {
     max-width: 66.21875vw !important;
+    min-width: 50vw;
   }
   .fee-table-container {
     max-width: 66.21875vw !important;
+    min-width: 50vw;
   }
   .ellipse_explain {
-    max-width: 66.21875vw !important;
+    // max-width: 66.21875vw !important;
+    // min-width: 50vw;
   }
 }
 
@@ -1442,7 +1426,6 @@ export default {
     background: url("https://static.cmereye.com/imgs/2024/08/523108db1c129793.png")
       no-repeat;
     background-size: 100% 100%;
-    // padding: 75px 0;
     box-sizing: border-box;
     padding: 40px 35px;
     margin-bottom: 55px;
@@ -1462,20 +1445,26 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://statichk.cmermedical.com/smile/fee/08ef23b96b14.avif")
-      no-repeat;
-    background-size: 100% 100%;
+    // background: url("https://statichk.cmermedical.com/smile/fee/08ef23b96b14.avif")
+    //   no-repeat;
+    // background-size: 100% 100%;
     height: 84.6vw;
     margin: 24px 30px 55px;
     border-radius: 44px;
-    padding-left: 10px;
-    padding-top: 70%;
-
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
+    // padding-left: 10px;
+    // padding-top: 70%;
+    & > img {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      object-fit: cover;
+      border-radius: 44px;
+    }
+    // display: flex;
+    // align-items: flex-start;
+    // flex-direction: column;
+    // justify-content: center;
+    // padding-left: 20px;
     & > p {
       max-width: 110px;
     }

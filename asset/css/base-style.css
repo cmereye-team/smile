@@ -31,7 +31,7 @@ body h2::after {
 @media (min-width: 768px) {
   body {
     font-family: var(--font_family), sans-serif !important;
-    min-width: 1200px;
+    /* min-width: 1200px; */
   }
   caption {
     font-family: var(--font_family), sans-serif !important;

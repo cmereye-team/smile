@@ -4,7 +4,7 @@
     <Banner>
       <template #banner>
         <div class="banner-img">
-          <p>{{$t('smile_pro.bannerTitle')}}</p>
+          <p>{{ $t("smile_pro.bannerTitle") }}</p>
           <p>Small Incision Lenticule Extraction</p>
         </div>
       </template>
@@ -925,7 +925,7 @@
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
           target="_blank"
           rel="noopener noreferrer"
-          >{{$t('service.smilePro.smileProContrast.smileProBtn')}}</a
+          >{{ $t("service.smilePro.smileProContrast.smileProBtn") }}</a
         >
       </div>
     </div>
@@ -960,12 +960,12 @@
           </div>
           <div>
             <p>SMILE PRO</p>
-            <p>{{$t('smile_pro.smile_pro_trait.title2')}}</p>
+            <p>{{ $t("smile_pro.smile_pro_trait.title2") }}</p>
           </div>
         </div>
         <div>
           <p>ZEISS VISUMAX 800 SMILE®pro</p>
-          <p>{{$t('service.smilePro.smileProFeatures.context')}}</p>
+          <p>{{ $t("service.smilePro.smileProFeatures.context") }}</p>
         </div>
         <div>
           <div>
@@ -997,9 +997,11 @@
                   />
                 </svg>
               </div>
-              <div>{{$t('service.smilePro.smileProFeatures.lists[0].span1')}}</div>
+              <div>
+                {{ $t("service.smilePro.smileProFeatures.lists[0].span1") }}
+              </div>
             </div>
-            <div>{{$t('smile_pro.smile_pro_trait.content1.p1')}}</div>
+            <div>{{ $t("smile_pro.smile_pro_trait.content1.p1") }}</div>
           </div>
           <div>
             <div>
@@ -1038,9 +1040,9 @@
                   />
                 </svg>
               </div>
-              <div>{{$t('smile_pro.smile_pro_trait.content2.p1')}}</div>
+              <div>{{ $t("smile_pro.smile_pro_trait.content2.p1") }}</div>
             </div>
-            <div>{{$t('smile_pro.smile_pro_trait.content2.p2')}}</div>
+            <div>{{ $t("smile_pro.smile_pro_trait.content2.p2") }}</div>
           </div>
           <div>
             <div>
@@ -1084,9 +1086,9 @@
                   />
                 </svg>
               </div>
-              <div>{{$t('smile_pro.smile_pro_trait.content3.p1')}}</div>
+              <div>{{ $t("smile_pro.smile_pro_trait.content3.p1") }}</div>
             </div>
-            <div>{{$t('smile_pro.smile_pro_trait.content3.p2')}}</div>
+            <div>{{ $t("smile_pro.smile_pro_trait.content3.p2") }}</div>
           </div>
         </div>
       </div>
@@ -1094,14 +1096,14 @@
     <div class="smile-pro-share">
       <H2Tag :title="titleName1" />
       <div>
-        <a href="https://youtu.be/r4rbUUVtjzM" target="_blank">
+        <a href="https://youtu.be/VoGlE1dJPhc" target="_blank">
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/05/886347330efd4cb0.png"
+              src="https://statichk.cmermedical.com/smile/2025020815551301.png"
               alt="名人用家檔案"
             />
           </div>
-          <div>米姬 Maggie</div>
+          <div>Pinky</div>
         </a>
         <a href="https://youtu.be/1p5Qm_772jI" target="_blank">
           <div>
@@ -1127,7 +1129,7 @@
           href="https://www.youtube.com/watch?v=iHBGkRh-CXw&list=PLWVonQr1f7XhXd4GDFI3zRtOe9RHb1jdb"
           target="_blank"
           rel="noopener noreferrer"
-          >{{$t('service.smilePro.smileProCases.smileProBtn')}}</a
+          >{{ $t("service.smilePro.smileProCases.smileProBtn") }}</a
         >
       </div>
     </div>
@@ -1172,7 +1174,7 @@
               />
             </svg>
           </div>
-          <div>{{$t('service.smilePro.smileProProve.title')}}</div>
+          <div>{{ $t("service.smilePro.smileProProve.title") }}</div>
         </div>
         <div class="swiper-pc-share">
           <div v-if="isMobile">
@@ -1180,49 +1182,94 @@
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
-                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
-                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
+                    {{ $t("service.smilePro.smileProProve.lists[0].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[0].span3")
+                    }}</span
+                    >{{ $t("service.smilePro.smileProProve.lists[0].span4")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span5")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[0].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[1].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[1].span2')}}<br /><span
-                      >{{$t('service.smilePro.smileProProve.lists[1].span3')}}</span
-                    ><br />{{$t('service.smilePro.smileProProve.lists[1].span4')}}
+                    {{ $t("service.smilePro.smileProProve.lists[1].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[1].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[1].span3")
+                    }}</span
+                    ><br />{{
+                      $t("service.smilePro.smileProProve.lists[1].span4")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[1].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[1].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[2].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[2].span2')}}<br /><span>{{$t('service.smilePro.smileProProve.lists[2].span3')}}</span
-                    ><br />{{$t('service.smilePro.smileProProve.lists[2].span4')}}
+                    {{ $t("service.smilePro.smileProProve.lists[2].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[2].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[2].span3")
+                    }}</span
+                    ><br />{{
+                      $t("service.smilePro.smileProProve.lists[2].span4")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[2].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[2].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[3].span1')}}<span>SMILE PRO</span><br />{{$t('service.smilePro.smileProProve.lists[3].span3')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span4')}}
-                    {{$t('service.smilePro.smileProProve.lists[3].span5')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span6')}}
+                    {{ $t("service.smilePro.smileProProve.lists[3].span1")
+                    }}<span>SMILE PRO</span><br />{{
+                      $t("service.smilePro.smileProProve.lists[3].span3")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[3].span4")
+                    }}
+                    {{ $t("service.smilePro.smileProProve.lists[3].span5")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[3].span6")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[3].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[3].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
-                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
-                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
+                    {{ $t("service.smilePro.smileProProve.lists[0].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[0].span3")
+                    }}</span
+                    >{{ $t("service.smilePro.smileProProve.lists[0].span4")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span5")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[0].name") }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -1232,49 +1279,94 @@
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
-                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
-                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
+                    {{ $t("service.smilePro.smileProProve.lists[0].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[0].span3")
+                    }}</span
+                    >{{ $t("service.smilePro.smileProProve.lists[0].span4")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span5")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[0].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[1].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[1].span2')}}<br /><span
-                      >{{$t('service.smilePro.smileProProve.lists[1].span3')}}</span
-                    ><br />{{$t('service.smilePro.smileProProve.lists[1].span4')}}
+                    {{ $t("service.smilePro.smileProProve.lists[1].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[1].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[1].span3")
+                    }}</span
+                    ><br />{{
+                      $t("service.smilePro.smileProProve.lists[1].span4")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[1].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[1].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[2].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[2].span2')}}<br /><span>{{$t('service.smilePro.smileProProve.lists[2].span3')}}</span
-                    ><br />{{$t('service.smilePro.smileProProve.lists[2].span4')}}
+                    {{ $t("service.smilePro.smileProProve.lists[2].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[2].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[2].span3")
+                    }}</span
+                    ><br />{{
+                      $t("service.smilePro.smileProProve.lists[2].span4")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[2].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[2].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[3].span1')}}<span>SMILE PRO</span><br />{{$t('service.smilePro.smileProProve.lists[3].span3')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span4')}}
-                    {{$t('service.smilePro.smileProProve.lists[3].span5')}}<br />{{$t('service.smilePro.smileProProve.lists[3].span6')}}
+                    {{ $t("service.smilePro.smileProProve.lists[3].span1")
+                    }}<span>SMILE PRO</span><br />{{
+                      $t("service.smilePro.smileProProve.lists[3].span3")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[3].span4")
+                    }}
+                    {{ $t("service.smilePro.smileProProve.lists[3].span5")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[3].span6")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[3].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[3].name") }}
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide swiper-two">
                 <div class="swiper-two-box">
                   <div class="speech">
-                    {{$t('service.smilePro.smileProProve.lists[0].span1')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span2')}}<br /><span
-                      >{{$t('service.smilePro.smileProProve.lists[0].span3')}}</span
-                    >{{$t('service.smilePro.smileProProve.lists[0].span4')}}<br />{{$t('service.smilePro.smileProProve.lists[0].span5')}}
+                    {{ $t("service.smilePro.smileProProve.lists[0].span1")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span2")
+                    }}<br /><span>{{
+                      $t("service.smilePro.smileProProve.lists[0].span3")
+                    }}</span
+                    >{{ $t("service.smilePro.smileProProve.lists[0].span4")
+                    }}<br />{{
+                      $t("service.smilePro.smileProProve.lists[0].span5")
+                    }}
                   </div>
-                  <div class="name-title">{{$t('service.smilePro.smileProProve.lists[0].name')}}</div>
+                  <div class="name-title">
+                    {{ $t("service.smilePro.smileProProve.lists[0].name") }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -1319,7 +1411,7 @@
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         target="_blank"
         rel="noopener noreferrer"
-        >{{$t('service.smilePro.smileProContrast.smileProBtn')}}</a
+        >{{ $t("service.smilePro.smileProContrast.smileProBtn") }}</a
       >
     </div>
     <businessHours />
@@ -1350,62 +1442,80 @@ export default {
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
       browserTitle: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
       browserTitleCn: "SMILE PRO 微笑矫视 - 希玛微笑矫视中心",
-      titleName: [this.$t('smile_pro.table.title1'), "SMILE PRO, LASIK大不同"],
-      titleName1: [this.$t('smile_pro.table.title2')],
+      titleName: [this.$t("smile_pro.table.title1"), "SMILE PRO, LASIK大不同"],
+      titleName1: [this.$t("smile_pro.table.title2")],
       contrastTable: [
         [
           [""],
-          ["SMILE PRO", this.$t('smile_pro.table.headersName1')],
-          ["SMILE", this.$t('smile_pro.table.headersName1')],
-          ["LASIK", this.$t('smile_pro.table.headersName2')],
+          ["SMILE PRO", this.$t("smile_pro.table.headersName1")],
+          ["SMILE", this.$t("smile_pro.table.headersName1")],
+          ["LASIK", this.$t("smile_pro.table.headersName2")],
         ],
         [
-          [this.$t('smile_pro.table.content1.p1'), this.$t('smile_pro.table.content1.p1_1')],
-          ["timepiece", this.$t('smile_pro.table.content1.p2')],
-          ["timepiece1", this.$t('smile_pro.table.content1.p3')],
-          ["timepiece2", [this.$t('smile_pro.table.content1.p4'), this.$t('smile_pro.table.content1.p4_1')]],
+          [
+            this.$t("smile_pro.table.content1.p1"),
+            this.$t("smile_pro.table.content1.p1_1"),
+          ],
+          ["timepiece", this.$t("smile_pro.table.content1.p2")],
+          ["timepiece1", this.$t("smile_pro.table.content1.p3")],
+          [
+            "timepiece2",
+            [
+              this.$t("smile_pro.table.content1.p4"),
+              this.$t("smile_pro.table.content1.p4_1"),
+            ],
+          ],
         ],
         [
-          [this.$t('smile_pro.table.content2.p1')],
-          ["eye", this.$t('smile_pro.table.content2.p2')],
-          ["eye", this.$t('smile_pro.table.content2.p3')],
-          ["eyes", this.$t('smile_pro.table.content2.p4')],
+          [this.$t("smile_pro.table.content2.p1")],
+          ["eye", this.$t("smile_pro.table.content2.p2")],
+          ["eye", this.$t("smile_pro.table.content2.p3")],
+          ["eyes", this.$t("smile_pro.table.content2.p4")],
         ],
         [
-          [this.$t('smile_pro.table.content3.p1')],
-          ["teardrop", this.$t('smile_pro.table.content3.p2')],
-          ["teardrop", this.$t('smile_pro.table.content3.p3')],
-          ["teardrops", this.$t('smile_pro.table.content3.p4')],
+          [this.$t("smile_pro.table.content3.p1")],
+          ["teardrop", this.$t("smile_pro.table.content3.p2")],
+          ["teardrop", this.$t("smile_pro.table.content3.p3")],
+          ["teardrops", this.$t("smile_pro.table.content3.p4")],
         ],
         [
-          [this.$t('smile_pro.table.content4.p1'), this.$t('smile_pro.table.content4.p1_1')],
-          ["cavityEye", this.$t('smile_pro.table.content4.p2')],
-          ["cavityEye", this.$t('smile_pro.table.content4.p2')],
-          ["cavityEye", this.$t('smile_pro.table.content4.p2')],
+          [
+            this.$t("smile_pro.table.content4.p1"),
+            this.$t("smile_pro.table.content4.p1_1"),
+          ],
+          ["cavityEye", this.$t("smile_pro.table.content4.p2")],
+          ["cavityEye", this.$t("smile_pro.table.content4.p2")],
+          ["cavityEye", this.$t("smile_pro.table.content4.p2")],
         ],
         [
-          [this.$t('smile_pro.table.content5.p1')],
-          ["accurate", this.$t('smile_pro.table.content5.p2')],
-          ["accurate", this.$t('smile_pro.table.content5.p3')],
-          ["accurate-1", this.$t('smile_pro.table.content5.p4')],
+          [this.$t("smile_pro.table.content5.p1")],
+          ["accurate", this.$t("smile_pro.table.content5.p2")],
+          ["accurate", this.$t("smile_pro.table.content5.p3")],
+          ["accurate-1", this.$t("smile_pro.table.content5.p4")],
         ],
         [
-          [this.$t('smile_pro.table.content6.p1'), this.$t('smile_pro.table.content6.p1_1')],
-          ["date", this.$t('smile_pro.table.content6.p2')],
-          ["date", this.$t('smile_pro.table.content6.p3')],
-          ["date+1", this.$t('smile_pro.table.content6.p4')],
+          [
+            this.$t("smile_pro.table.content6.p1"),
+            this.$t("smile_pro.table.content6.p1_1"),
+          ],
+          ["date", this.$t("smile_pro.table.content6.p2")],
+          ["date", this.$t("smile_pro.table.content6.p3")],
+          ["date+1", this.$t("smile_pro.table.content6.p4")],
         ],
         [
-          [this.$t('smile_pro.table.content7.p1')],
-          ["slight", this.$t('smile_pro.table.content7.p2')],
-          ["slight", this.$t('smile_pro.table.content7.p3')],
-          ["ordinary", this.$t('smile_pro.table.content7.p4')],
+          [this.$t("smile_pro.table.content7.p1")],
+          ["slight", this.$t("smile_pro.table.content7.p2")],
+          ["slight", this.$t("smile_pro.table.content7.p3")],
+          ["ordinary", this.$t("smile_pro.table.content7.p4")],
         ],
         [
-          [this.$t('smile_pro.table.content8.p1'), this.$t('smile_pro.table.content8.p1_1')],
-          ["result-ok", this.$t('smile_pro.table.content8.p2')],
-          ["result-ok", this.$t('smile_pro.table.content8.p3')],
-          ["result", this.$t('smile_pro.table.content8.p4')],
+          [
+            this.$t("smile_pro.table.content8.p1"),
+            this.$t("smile_pro.table.content8.p1_1"),
+          ],
+          ["result-ok", this.$t("smile_pro.table.content8.p2")],
+          ["result-ok", this.$t("smile_pro.table.content8.p3")],
+          ["result", this.$t("smile_pro.table.content8.p4")],
         ],
       ],
       isMobile: false,
@@ -1989,8 +2099,20 @@ export default {
     margin-top: 80px;
     & > div:nth-child(2) {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 0 clamp(20px, 1.4565vw, 35px);
       & > a {
+        & > div:nth-child(1) {
+          width: 27.09375vw;
+          height: 15.875vw;
+          overflow: hidden;
+          border-radius: 25px;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
         & > div:nth-child(2) {
           margin-top: 15px;
           color: #6d6e71;

@@ -1366,8 +1366,8 @@ export default {
     width: 100vw;
     background: #f4fafc;
     border-radius: 50% 50% 0 0;
-    width: 150%;
-    margin-left: calc(-50% / 2);
+    // width: 150%;
+    // margin-left: calc(-50% / 2);
     position: relative;
     padding: 220px 0 100px;
     margin-top: 165px;
