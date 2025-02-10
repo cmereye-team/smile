@@ -5,7 +5,9 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>LASIK<br v-if="isMobile" />{{$t('Correct.lasik.bannerTitle')}}</p>
+          <p>
+            LASIK<br v-if="isMobile" />{{ $t("Correct.lasik.bannerTitle") }}
+          </p>
           <p>Laser-Assisted <br v-if="isMobile" />in Situ Keratomileusis</p>
         </div>
       </template>
@@ -13,7 +15,7 @@
     <div class="laser_technology">
       <H2Tag :title="[$t('service.lasik.mainBanner.title')]" />
       <p class="laser_technology-in">
-        {{$t('service.lasik.mainBanner.span')}}
+        {{ $t("service.lasik.mainBanner.span") }}
       </p>
     </div>
     <div class="principle">
@@ -28,7 +30,7 @@
         </div>
         <h3>
           LASIK<br />
-          {{$t('service.lasik.principle.title')}}
+          {{ $t("service.lasik.principle.title") }}
         </h3>
       </div>
       <div class="principle-img">
@@ -59,7 +61,7 @@
       </div>
       <div class="principle-text">
         <p>
-          {{$t('service.lasik.principle.span')}}
+          {{ $t("service.lasik.principle.span") }}
         </p>
       </div>
     </div>
@@ -116,12 +118,12 @@
         </div>
       </div>
     </div>
-    <div class="smile-pro-btn"   :class="[isMobile ? 'smile-pro-btn-mb' : '']">
+    <div class="smile-pro-btn" :class="[isMobile ? 'smile-pro-btn-mb' : '']">
       <a
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-07)%20LASIK%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         target="_blank"
         rel="noopener noreferrer"
-        >{{$t('Correct.icl.iclBtn')}}</a
+        >{{ $t("Correct.icl.iclBtn") }}</a
       >
     </div>
     <businessHours />
@@ -155,47 +157,67 @@ export default {
       benefits: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/71f07f2e49ae92d7.png",
-          title: this.$t('Correct.lasik.benefits.content1.title'),
-          text: this.$t('Correct.lasik.benefits.content1.text'),
+          title: this.$t("Correct.lasik.benefits.content1.title"),
+          text: this.$t("Correct.lasik.benefits.content1.text"),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/c8c583239e65a1a7.png",
-          title: this.$t('Correct.lasik.benefits.content2.title'),
-          text: this.$t('Correct.lasik.benefits.content2.text'),
+          title: this.$t("Correct.lasik.benefits.content2.title"),
+          text: this.$t("Correct.lasik.benefits.content2.text"),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/515c3b6fb8d3871d.png",
-          title: this.$t('Correct.lasik.benefits.content3.title'),
-          text: this.$t('Correct.lasik.benefits.content3.text'),
+          title: this.$t("Correct.lasik.benefits.content3.title"),
+          text: this.$t("Correct.lasik.benefits.content3.text"),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/a200f81d4d1872a1.png",
-          title: this.$t('Correct.lasik.benefits.content4.title'),
-          text: this.$t('Correct.lasik.benefits.content4.text'),
+          title: this.$t("Correct.lasik.benefits.content4.title"),
+          text: this.$t("Correct.lasik.benefits.content4.text"),
         },
       ],
       suitable_object: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
-          text: [this.$t('Correct.lasik.suitable_object.content1.text1'), this.$t('Correct.lasik.suitable_object.content1.text2')],
-          mbText: [this.$t('Correct.lasik.suitable_object.content1.mbText1'), this.$t('Correct.lasik.suitable_object.content1.mbText2'), "以下"],
+          text: [
+            this.$t("Correct.lasik.suitable_object.content1.text1"),
+            this.$t("Correct.lasik.suitable_object.content1.text2"),
+          ],
+          mbText: [
+            this.$t("Correct.lasik.suitable_object.content1.mbText1"),
+            this.$t("Correct.lasik.suitable_object.content1.mbText2"),
+            "以下",
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
-          text: [this.$t('Correct.lasik.suitable_object.content2.text1'), this.$t('Correct.lasik.suitable_object.content2.text2')],
+          text: [
+            this.$t("Correct.lasik.suitable_object.content2.text1"),
+            this.$t("Correct.lasik.suitable_object.content2.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/56f73174b86b2288.png",
-          text: [this.$t('Correct.lasik.suitable_object.content3.text1')],
+          text: [this.$t("Correct.lasik.suitable_object.content3.text1")],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/9f4ca0776e175624.png",
-          text: [this.$t('Correct.lasik.suitable_object.content4.text1'), this.$t('Correct.lasik.suitable_object.content4.text2')],
+          text: [
+            this.$t("Correct.lasik.suitable_object.content4.text1"),
+            this.$t("Correct.lasik.suitable_object.content4.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
-          text: [this.$t('Correct.lasik.suitable_object.content5.text1'), this.$t('Correct.lasik.suitable_object.content5.text2')],
-          mbText: [this.$t('Correct.lasik.suitable_object.content5.mbText1'), this.$t('Correct.lasik.suitable_object.content5.mbText2'),this.$t('Correct.lasik.suitable_object.content5.mbText3')],
+          text: [
+            this.$t("Correct.lasik.suitable_object.content5.text1"),
+            this.$t("Correct.lasik.suitable_object.content5.text2"),
+          ],
+          mbText: [
+            this.$t("Correct.lasik.suitable_object.content5.mbText1"),
+            this.$t("Correct.lasik.suitable_object.content5.mbText2"),
+            this.$t("Correct.lasik.suitable_object.content5.mbText3"),
+          ],
         },
       ],
       isMobile: false,
@@ -292,12 +314,21 @@ export default {
       letter-spacing: 6px;
     }
   }
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/8764882bb5d61bd6.webp")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: top;
     border-radius: 55px;
 
     display: flex;
@@ -664,7 +695,7 @@ export default {
       letter-spacing: 0.3px;
     }
   }
-  .smile-pro-btn-mb{
+  .smile-pro-btn-mb {
     margin-bottom: 55px;
   }
   .laser_technology {

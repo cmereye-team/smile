@@ -5,7 +5,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>{{$t('Correct.smile.bannertitle')}}</p>
+          <p>{{ $t("Correct.smile.bannertitle") }}</p>
           <p>Small Incision Lenticule Extraction</p>
         </div>
       </template>
@@ -13,14 +13,14 @@
     <div class="smile-banner-context">
       <H2Tag :title="[$t('Correct.smile.small_title1')]" />
       <div>
-        {{$t('Correct.smile.small_title1_text1')}}
+        {{ $t("Correct.smile.small_title1_text1") }}
       </div>
       <div class="smile-pro-btn">
         <a
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
           target="_blank"
           rel="noopener noreferrer"
-          >{{$t('Correct.smile.btn1')}}</a
+          >{{ $t("Correct.smile.btn1") }}</a
         >
       </div>
     </div>
@@ -32,7 +32,7 @@
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         target="_blank"
         rel="noopener noreferrer"
-        >{{$t('Correct.smile.btn1')}}</a
+        >{{ $t("Correct.smile.btn1") }}</a
       >
     </div>
     <Xtra />
@@ -132,12 +132,21 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://statichk.cmermedical.com/smile/97c8be06acc98273.webp")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: center;
     border-radius: 55px;
 
     display: flex;

@@ -257,9 +257,9 @@ export default {
           img: "https://static.cmereye.com/imgs/2024/04/3b91d69903c22a94.png",
           title: [
             this.$t("doctor_team.doctor12.intro1"),
-             this.$t("doctor_team.doctor12.intro2"),
-             this.$t("doctor_team.doctor12.intro3"),
-             this.$t("doctor_team.doctor12.intro4"),
+            this.$t("doctor_team.doctor12.intro2"),
+            this.$t("doctor_team.doctor12.intro3"),
+            this.$t("doctor_team.doctor12.intro4"),
           ],
         },
         {
@@ -272,7 +272,7 @@ export default {
             this.$t("doctor_team.doctor13.intro3"),
             this.$t("doctor_team.doctor13.intro4"),
             this.$t("doctor_team.doctor13.intro5"),
-            this.$t("doctor_team.doctor13.intro6")
+            this.$t("doctor_team.doctor13.intro6"),
           ],
         },
         {
@@ -345,12 +345,21 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://statichk.cmermedical.com/smile/323517741e434c1d.webp")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: center;
     border-radius: 55px;
     display: flex;
     align-items: flex-start;

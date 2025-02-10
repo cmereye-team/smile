@@ -5,23 +5,18 @@
     <div>
       <div class="home-referral">
         <H2Tag :title="[$t('home.home_referral.title')]" />
-    
         <div>
           <p>
-            {{$t('home.home_referral.content_text_1')}}
- 
+            {{ $t("home.home_referral.content_text_1") }}
           </p>
           <p>
-                   {{$t('home.home_referral.content_text_2')}}
-          
+            {{ $t("home.home_referral.content_text_2") }}
           </p>
           <p>
-                {{$t('home.home_referral.content_text_3')}}
-         
+            {{ $t("home.home_referral.content_text_3") }}
           </p>
           <p>
-                {{$t('home.home_referral.content_text_4')}}
-          
+            {{ $t("home.home_referral.content_text_4") }}
           </p>
         </div>
       </div>
@@ -52,7 +47,9 @@
             </div>
           </nuxt-link>
         </div>
-        <nuxt-link to="/eye-examination">{{$t('home.headers.diagnosisInstructions')}}</nuxt-link>
+        <nuxt-link to="/eye-examination">{{
+          $t("home.headers.diagnosisInstructions")
+        }}</nuxt-link>
       </div>
       <div class="home-contact-us">
         <div>
@@ -95,7 +92,7 @@
                 />
               </svg>
             </div>
-            <div>{{$t('home.contact_us.title')}}</div>
+            <div>{{ $t("home.contact_us.title") }}</div>
           </div>
           <div>
             <div>
@@ -158,8 +155,11 @@
                   />
                 </svg>
               </div>
-              <div>{{$t('home.contact_us.content_text_1')}}<span>35,000</span>{{$t('home.contact_us.content_text_1_1')}}</div>
-              <div>{{$t('home.contact_us.content_text_1_2')}}</div>
+              <div>
+                {{ $t("home.contact_us.content_text_1") }}<span>35,000</span
+                >{{ $t("home.contact_us.content_text_1_1") }}
+              </div>
+              <div>{{ $t("home.contact_us.content_text_1_2") }}</div>
             </div>
             <div>
               <div v-if="isMobile">
@@ -337,7 +337,9 @@
                   </svg>
                 </div>
               </div>
-              <div>第<span>1</span>{{$t('home.contact_us.content_text_2')}}</div>
+              <div>
+                第<span>1</span>{{ $t("home.contact_us.content_text_2") }}
+              </div>
               <div>香港上市眼科中心</div>
             </div>
             <div>
@@ -415,7 +417,7 @@
                 </svg>
               </div>
               <div><span>11</span>位</div>
-              <div>{{$t('home.contact_us.content_text_3')}}</div>
+              <div>{{ $t("home.contact_us.content_text_3") }}</div>
             </div>
             <div>
               <div>
@@ -425,7 +427,7 @@
                 />
               </div>
               <div><span>8,000</span>尺</div>
-              <div>{{$t('home.contact_us.content_text_4')}}</div>
+              <div>{{ $t("home.contact_us.content_text_4") }}</div>
             </div>
           </div>
         </div>
@@ -436,8 +438,9 @@
           <div>
             <div>
               <p>
-                {{$t('home.home_share.content_text_1')}}<br />
-                <span>{{$t('home.home_share.content_text_1_1')}}</span>{{$t('home.home_share.content_text_1_2')}}
+                {{ $t("home.home_share.content_text_1") }}<br />
+                <span>{{ $t("home.home_share.content_text_1_1") }}</span
+                >{{ $t("home.home_share.content_text_1_2") }}
               </p>
             </div>
             <div>
@@ -446,11 +449,15 @@
                 alt=""
               />
             </div>
-            <div>{{$t('home.home_share.name1')}}</div>
+            <div>{{ $t("home.home_share.name1") }}</div>
           </div>
           <div>
             <div>
-              <p>{{$t('home.home_share.content_text_2')}}<br /><span>{{$t('home.home_share.content_text_2_1')}}</span></p>
+              <p>
+                {{ $t("home.home_share.content_text_2") }}<br /><span>{{
+                  $t("home.home_share.content_text_2_1")
+                }}</span>
+              </p>
             </div>
             <div>
               <img
@@ -458,11 +465,14 @@
                 alt=""
               />
             </div>
-            <div>{{$t('home.home_share.name2')}}</div>
+            <div>{{ $t("home.home_share.name2") }}</div>
           </div>
           <div>
             <div>
-              <p><span>{{$t('home.home_share.content_text_3')}}</span><br />{{$t('home.home_share.content_text_3_1')}}</p>
+              <p>
+                <span>{{ $t("home.home_share.content_text_3") }}</span
+                ><br />{{ $t("home.home_share.content_text_3_1") }}
+              </p>
             </div>
             <div>
               <img
@@ -470,11 +480,16 @@
                 alt=""
               />
             </div>
-            <div>{{$t('home.home_share.name3')}}</div>
+            <div>{{ $t("home.home_share.name3") }}</div>
           </div>
           <div>
             <div>
-              <p>{{$t('home.home_share.content_text_4')}}<br /><span>{{$t('home.home_share.content_text_4_1')}}</span><br />{{$t('home.home_share.content_text_4_2')}}</p>
+              <p>
+                {{ $t("home.home_share.content_text_4") }}<br /><span>{{
+                  $t("home.home_share.content_text_4_1")
+                }}</span
+                ><br />{{ $t("home.home_share.content_text_4_2") }}
+              </p>
             </div>
             <div>
               <img
@@ -482,7 +497,7 @@
                 alt=""
               />
             </div>
-            <div>{{$t('home.home_share.name4')}}</div>
+            <div>{{ $t("home.home_share.name4") }}</div>
           </div>
         </div>
       </div>
@@ -512,7 +527,7 @@
                 />
               </svg>
             </div>
-            <div>Facebook<br />{{$t('home.race')}}</div>
+            <div>Facebook<br />{{ $t("home.race") }}</div>
           </div>
           <div v-if="isMobile">
             <CarouselList :list="evaluateList" />
@@ -630,7 +645,7 @@
         <div>
           <H2Tag :title="[$t('home.home_service.title')]" />
           <p>
-            {{$t('home.home_service.content_text_1')}}
+            {{ $t("home.home_service.content_text_1") }}
           </p>
         </div>
         <div>
@@ -671,7 +686,7 @@
                 />
               </svg>
             </div>
-            <div>{{$t('home.serve.p2')}}</div>
+            <div>{{ $t("home.serve.p2") }}</div>
           </nuxt-link>
           <nuxt-link to="/patient-info">
             <div>
@@ -810,7 +825,7 @@
                 />
               </svg>
             </div>
-            <div>{{$t('home.serve.p1')}}</div>
+            <div>{{ $t("home.serve.p1") }}</div>
           </nuxt-link>
         </div>
       </div>
@@ -900,35 +915,52 @@ export default {
           id: 1,
           img: "https://static.cmereye.com/imgs/2024/04/14d1bbdf1e9fceaf.png",
           title: ["SMILE"],
-          desc: [this.$t('home.home_referral_service.content_text_1'), this.$t('home.home_referral_service.content_text_1_1')],
+          desc: [
+            this.$t("home.home_referral_service.content_text_1"),
+            this.$t("home.home_referral_service.content_text_1_1"),
+          ],
           link: "/vision-correction/relex-smile",
         },
         {
           id: 2,
           img: "https://static.cmereye.com/imgs/2024/04/1f353fd16dd57c69.png",
           title: ["SMILE", "PRO"],
-          desc: [this.$t('home.home_referral_service.content_text_2'), this.$t('home.home_referral_service.content_text_2_1')],
+          desc: [
+            this.$t("home.home_referral_service.content_text_2"),
+            this.$t("home.home_referral_service.content_text_2_1"),
+          ],
           link: "/smilePro",
         },
         {
           id: 3,
           img: "https://static.cmereye.com/imgs/2024/04/15a5f9b61fcd20de.png",
           title: ["LASIK"],
-          desc: [this.$t('home.home_referral_service.content_text_3'),this.$t('home.home_referral_service.content_text_3_1')],
+          desc: [
+            this.$t("home.home_referral_service.content_text_3"),
+            this.$t("home.home_referral_service.content_text_3_1"),
+          ],
           link: "/vision-correction-lasik",
         },
         {
           id: 4,
           img: "https://static.cmereye.com/imgs/2024/04/e28a1feb9db867c2.png",
           title: ["ICL"],
-          desc: [this.$t('home.home_referral_service.content_text_4'), this.$t('home.home_referral_service.content_text_4_1'), this.$t('home.home_referral_service.content_text_4_2')],
+          desc: [
+            this.$t("home.home_referral_service.content_text_4"),
+            this.$t("home.home_referral_service.content_text_4_1"),
+            this.$t("home.home_referral_service.content_text_4_2"),
+          ],
           link: "/vision-correction-icl",
         },
         {
           id: 5,
           img: "https://static.cmereye.com/imgs/2024/04/2ab718080c0c7c14.png",
           title: ["Clear-", "Vision"],
-          desc: [this.$t('home.home_referral_service.content_text_5'), this.$t('home.home_referral_service.content_text_5_1'), this.$t('home.home_referral_service.content_text_5_2')],
+          desc: [
+            this.$t("home.home_referral_service.content_text_5"),
+            this.$t("home.home_referral_service.content_text_5_1"),
+            this.$t("home.home_referral_service.content_text_5_2"),
+          ],
           link: "/vision-correction-presbyopia",
         },
       ],
@@ -965,7 +997,7 @@ export default {
         {
           name: "覃森仲",
           date: "3月21日17:55",
-          commit:this.$t('home.evaluateList[4].commit')
+          commit: this.$t("home.evaluateList[4].commit"),
         },
         {
           name: "Helen Tsui",
@@ -987,7 +1019,7 @@ export default {
         {
           name: "Siu Chun Wong",
           date: "1月22日15:46",
-          commit: this.$t('home.evaluateList[8].commit'),
+          commit: this.$t("home.evaluateList[8].commit"),
         },
         {
           name: "Bear Teddy",
@@ -1002,9 +1034,9 @@ export default {
             "The doctors and the staff are amazing - felt very cared for throughout the process, both pre - op and post - op.Dr Chow and the nurses are very professional and know how to ease the patients’ anxiety.",
         },
         {
-          name: this.$t('home.evaluateList[11].name'),
+          name: this.$t("home.evaluateList[11].name"),
           date: "2023年11月22日  16:43",
-          commit: this.$t('home.evaluateList[11].commit'),
+          commit: this.$t("home.evaluateList[11].commit"),
         },
         {
           name: "Kalok Tang",
@@ -1013,22 +1045,22 @@ export default {
             "the checking is good and the process is smooth that I don’t have any uncomfortable after doing the surgery.The doctor gave suggestions in details and I had a good experience.",
         },
         {
-          name: this.$t('home.evaluateList[13].name'),
+          name: this.$t("home.evaluateList[13].name"),
           date: "2023年7月25日 12:36",
-          commit:this.$t('home.evaluateList[13].commit'),
+          commit: this.$t("home.evaluateList[13].commit"),
         },
         {
           name: "Grace Leung",
           date: "2023年6月9日  16:45",
-          commit: this.$t('home.evaluateList[14].commit'),
+          commit: this.$t("home.evaluateList[14].commit"),
         },
         {
-          name: this.$t('home.evaluateList[15].name'),
+          name: this.$t("home.evaluateList[15].name"),
           date: "2023年11月9日 11:26",
           commit: "Smooth procedures and good effects.",
         },
         {
-          name: this.$t('home.evaluateList[16].name'),
+          name: this.$t("home.evaluateList[16].name"),
           date: "2023年11月28日  11:04",
           commit: "Doctor Chow is nice.The nurses are also very nice.",
         },
@@ -1046,7 +1078,7 @@ export default {
         {
           name: "Quanxiang Xian",
           date: "2023年7月6日  11:39",
-          commit: this.$t('home.evaluateList[19].commit'),
+          commit: this.$t("home.evaluateList[19].commit"),
         },
       ],
     };

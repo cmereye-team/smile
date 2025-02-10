@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>{{$t('home.headers.videos')}}</p>
+          <p>{{ $t("home.headers.videos") }}</p>
           <p>Orthopedic information video</p>
         </div>
       </template>
@@ -272,12 +272,21 @@ export default {
       }
     }
   }
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/d17daac53c331624.png")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: center;
     border-radius: 55px;
     display: flex;
     align-items: flex-start;

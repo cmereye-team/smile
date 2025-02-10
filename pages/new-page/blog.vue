@@ -173,9 +173,8 @@ export default {
       let blogUrl = "";
       if (this.$i18n.locale === "hk") {
         blogUrl = "https://admin.hkcmereye.com/api.php/list/32";
-      }else{
+      } else {
         blogUrl = "https://admin.hkcmereye.com/api.php/list/35";
-
       }
 
       await fetch(blogUrl)
@@ -332,12 +331,21 @@ export default {
     width: fit-content;
     cursor: pointer;
   }
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/05/ab7f3a79d8c7379e.png")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: center;
     border-radius: 55px;
     display: flex;
     align-items: flex-start;

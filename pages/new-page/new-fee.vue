@@ -19,7 +19,7 @@
       <H2Tag :title="[$t('fee.table.title')]" />
       <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
     </div>
-    <span style="color: #ffffff12;"> {{ isMobile }}</span>
+    <span style="color: #ffffff12"> {{ isMobile }}</span>
     <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div class="table_left" v-if="isMobile">
@@ -483,18 +483,18 @@ export default {
   }
   .table_new_fee {
     max-width: 66.14vw;
-    min-width: 55.29vw;
+    min-width: 680px;
     margin: 85px auto 95px;
   }
   .new_title_style {
     max-width: 66.14vw;
-    min-width: 55.29vw;
+    min-width: 680px;
     margin: 120px auto 0;
     // padding-left: 6.678vw;
   }
   .fee-table-container {
     max-width: 66.14vw;
-    min-width: 55.29vw;
+    min-width: 680px;
     margin: 0 auto;
     // padding-left: 5.208vw;
   }
@@ -912,21 +912,11 @@ export default {
   :deep(.banner-box) {
     box-sizing: border-box;
     padding: 0 3vw;
-    max-width: 100vw;
+    max-width: 1270px;
   }
   .banner-img {
-    // background: url("https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif")
-    //   no-repeat;
-    // background-size: cover;
-    // height: 37.5vw;
-    // min-height: 25vw;
-    // width: 100%;
     border-radius: 2.864vw;
     width: 100%;
-    // display: flex;
-    // align-items: flex-start;
-    // flex-direction: column;
-    // justify-content: center;
     overflow: hidden;
     & > img {
       margin: 0 auto;

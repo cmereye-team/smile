@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>{{$t('group_profile.bannerTitle')}}</p>
+          <p>{{ $t("group_profile.bannerTitle") }}</p>
           <p>Group Profile</p>
         </div>
       </template>
@@ -15,17 +15,18 @@
           <H2Tag :title="[$t('group_profile.bannerTitle')]" />
           <div class="explain-header">
             <div class="small-text">
-              {{$t('group_profile.explain_header.p1')}}
-    
+              {{ $t("group_profile.explain_header.p1") }}
             </div>
             <div>
-              <div class="small-title">{{$t('group_profile.explain_header.small_title1')}}</div>
+              <div class="small-title">
+                {{ $t("group_profile.explain_header.small_title1") }}
+              </div>
               <div class="small-text">
-               {{$t('group_profile.explain_header.p2')}}
+                {{ $t("group_profile.explain_header.p2") }}
               </div>
             </div>
             <div>
-              <span>{{$t('group_profile.explain_header.p3')}} </span
+              <span>{{ $t("group_profile.explain_header.p3") }} </span
               ><a
                 href="https://www.hkcmereye.com"
                 target="_blank"
@@ -34,9 +35,11 @@
               >
             </div>
             <div>
-              <div class="small-title">{{$t('group_profile.explain_header.small_title2')}}</div>
+              <div class="small-title">
+                {{ $t("group_profile.explain_header.small_title2") }}
+              </div>
               <div class="small-text">
-                {{$t('group_profile.explain_header.small_title2_p1')}}
+                {{ $t("group_profile.explain_header.small_title2_p1") }}
               </div>
             </div>
           </div>
@@ -44,47 +47,50 @@
             <div>
               <div>C</div>
               <div>
-                <p> {{$t('group_profile.explain_second.p1')}}</p>
+                <p>{{ $t("group_profile.explain_second.p1") }}</p>
                 <p>Professional Clinical Services</p>
               </div>
             </div>
             <div>
               <div>M</div>
               <div>
-                <p>{{$t('group_profile.explain_second.p2')}}</p>
+                <p>{{ $t("group_profile.explain_second.p2") }}</p>
                 <p>Modern Management</p>
               </div>
             </div>
             <div>
               <div>E</div>
               <div>
-                <p>{{$t('group_profile.explain_second.p3')}}</p>
+                <p>{{ $t("group_profile.explain_second.p3") }}</p>
                 <p>Quality Education</p>
               </div>
             </div>
             <div>
               <div>R</div>
               <div>
-                <p>{{$t('group_profile.explain_second.p4')}}</p>
+                <p>{{ $t("group_profile.explain_second.p4") }}</p>
                 <p>Pioneering Research</p>
               </div>
             </div>
             <div>
-              <div style="letter-spacing: 25px">{{$t('group_profile.explain_second.p5_1')}}</div>
+              <div style="letter-spacing: 25px">
+                {{ $t("group_profile.explain_second.p5_1") }}
+              </div>
               <div>
-                {{$t('group_profile.explain_second.p5_2')}}
+                {{ $t("group_profile.explain_second.p5_2") }}
               </div>
             </div>
             <div>
-              <div> {{$t('group_profile.explain_second.honor')}}</div>
+              <div>{{ $t("group_profile.explain_second.honor") }}</div>
               <div>
                 <p>
-                  {{$t('group_profile.explain_second.honor_1')}}<br
-                    v-if="isMobile"
-                  />({{$t('group_profile.explain_second.honor_1_2')}})
+                  {{ $t("group_profile.explain_second.honor_1")
+                  }}<br v-if="isMobile" />({{
+                    $t("group_profile.explain_second.honor_1_2")
+                  }})
                 </p>
-                <p>{{$t('group_profile.explain_second.honor_2')}}</p>
-                <p>{{$t('group_profile.explain_second.honor_3')}}</p>
+                <p>{{ $t("group_profile.explain_second.honor_2") }}</p>
+                <p>{{ $t("group_profile.explain_second.honor_3") }}</p>
               </div>
             </div>
           </div>
@@ -148,24 +154,25 @@
                 />
               </svg>
             </div>
-            <div>{{$t('group_profile.profile_center.title')}}</div>
+            <div>{{ $t("group_profile.profile_center.title") }}</div>
           </div>
           <div>
             <div>
-              {{$t('group_profile.profile_center.p1')}}
+              {{ $t("group_profile.profile_center.p1") }}
             </div>
             <div>
-               {{$t('group_profile.profile_center.p2')}}<br
-                v-if="!isMobile"
-              />{{$t('group_profile.profile_center.p2_1')}}<br
-                v-if="!isMobile"
-              />{{$t('group_profile.profile_center.p2_2')}}
+              {{ $t("group_profile.profile_center.p2")
+              }}<br v-if="!isMobile" />{{
+                $t("group_profile.profile_center.p2_1")
+              }}<br v-if="!isMobile" />{{
+                $t("group_profile.profile_center.p2_2")
+              }}
             </div>
             <div>
-             {{$t('group_profile.profile_center.p3')}}
+              {{ $t("group_profile.profile_center.p3") }}
             </div>
             <div>
-             {{$t('group_profile.profile_center.p4')}}
+              {{ $t("group_profile.profile_center.p4") }}
             </div>
           </div>
         </div>
@@ -177,9 +184,11 @@
         </div>
         <div>
           <div>
-            <div class="swiper-small-title">{{$t('group_profile.group_profile_swiper.p1')}}</div>
+            <div class="swiper-small-title">
+              {{ $t("group_profile.group_profile_swiper.p1") }}
+            </div>
             <div class="swiper-small-text">
-              {{$t('group_profile.group_profile_swiper.p2')}}
+              {{ $t("group_profile.group_profile_swiper.p2") }}
             </div>
           </div>
           <!-- <div>
@@ -250,7 +259,7 @@
                 />
               </svg>
             </div>
-            <div>{{$t('group_profile.group_profile_award.title')}}</div>
+            <div>{{ $t("group_profile.group_profile_award.title") }}</div>
           </div>
           <div>
             <div>
@@ -791,13 +800,22 @@ export default {
       padding-bottom: 40px;
     }
   }
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
 
   .banner-img {
     background: url("https://statichk.cmermedical.com/smile/e90f833293170c68.webp")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: center;
     border-radius: 55px;
     display: flex;
     align-items: flex-start;

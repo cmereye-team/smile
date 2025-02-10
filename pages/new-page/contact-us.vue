@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>{{$t('contactUs.bannerTitle') }}</p>
+          <p>{{ $t("contactUs.bannerTitle") }}</p>
           <p>Contact us</p>
         </div>
       </template>
@@ -26,17 +26,17 @@
               />
             </svg>
           </div>
-          <div>{{$t('contactUs.phoneLink.title')}}</div>
+          <div>{{ $t("contactUs.phoneLink.title") }}</div>
         </div>
         <div v-if="!isMobile">
           <div class="contact-us-table">
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text1')}}</div>
-              <div>{{$t('contactUs.phoneLink.content1.text2')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text1") }}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text2") }}</div>
               <div>WhatsApp</div>
             </div>
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text4')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text4") }}</div>
               <div>
                 <div>
                   <svg
@@ -75,7 +75,7 @@
               </div>
             </div>
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text5')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text5") }}</div>
               <div>
                 <div>
                   <svg
@@ -114,7 +114,7 @@
               </div>
             </div>
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text6')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text6") }}</div>
               <div>
                 <div>
                   <svg
@@ -157,14 +157,14 @@
         <div v-else>
           <div class="contact-us-table">
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text1')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text1") }}</div>
               <div>
-                <div>{{$t('contactUs.phoneLink.content1.text2')}}</div>
+                <div>{{ $t("contactUs.phoneLink.content1.text2") }}</div>
                 <div>WhatsApp</div>
               </div>
             </div>
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text4')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text4") }}</div>
               <div>
                 <div>
                   <div>
@@ -205,7 +205,7 @@
               </div>
             </div>
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text5')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text5") }}</div>
               <div>
                 <div>
                   <div>
@@ -246,7 +246,7 @@
               </div>
             </div>
             <div>
-              <div>{{$t('contactUs.phoneLink.content1.text6')}}</div>
+              <div>{{ $t("contactUs.phoneLink.content1.text6") }}</div>
               <div>
                 <div>
                   <div>
@@ -305,13 +305,13 @@
           @click="switchMode(0)"
           :class="[isSmile == true ? 'maps-title-active-left' : '']"
         >
-          {{$t('contactUs.tableTitle1') }}
+          {{ $t("contactUs.tableTitle1") }}
         </div>
         <div
           @click="switchMode(1)"
           :class="[isSmile == false ? 'maps-title-active-right' : '']"
         >
-        {{$t('contactUs.tableTitle2')}}
+          {{ $t("contactUs.tableTitle2") }}
         </div>
       </div>
       <div v-if="isSmile" class="maps-paper">
@@ -427,21 +427,33 @@ export default {
       mapSmileList: [
         {
           id: 1,
-          title: [this.$t('contactUs.table1.content1.title1'), this.$t('contactUs.table1.content1.title2')],
-          address: [this.$t('contactUs.table1.content1.address1'), this.$t('contactUs.table1.content1.address2')],
+          title: [
+            this.$t("contactUs.table1.content1.title1"),
+            this.$t("contactUs.table1.content1.title2"),
+          ],
+          address: [
+            this.$t("contactUs.table1.content1.address1"),
+            this.$t("contactUs.table1.content1.address2"),
+          ],
           mobileAddress: [
-            this.$t('contactUs.table1.content1.mobileAddress1'),
-            this.$t('contactUs.table1.content1.mobileAddress1'),
+            this.$t("contactUs.table1.content1.mobileAddress1"),
+            this.$t("contactUs.table1.content1.mobileAddress1"),
           ],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.914943384991!2d114.15266089678956!3d22.281211600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064e98df11d%3A0x56ad3d7801270f90!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUg5Lit55Kw6Ki65omA!5e0!3m2!1szh-CN!2sus!4v1714981663044!5m2!1szh-CN!2sus",
         },
         {
           id: 2,
-          title: [this.$t('contactUs.table1.content2.title1'), this.$t('contactUs.table1.content2.title2')],
-          address: [this.$t('contactUs.table1.content2.address1'), this.$t('contactUs.table1.content2.address2')],
+          title: [
+            this.$t("contactUs.table1.content2.title1"),
+            this.$t("contactUs.table1.content2.title2"),
+          ],
+          address: [
+            this.$t("contactUs.table1.content2.address1"),
+            this.$t("contactUs.table1.content2.address2"),
+          ],
           mobileAddress: [
-            this.$t('contactUs.table1.content2.mobileAddress1'),
-            this.$t('contactUs.table1.content2.mobileAddress2'),
+            this.$t("contactUs.table1.content2.mobileAddress1"),
+            this.$t("contactUs.table1.content2.mobileAddress2"),
           ],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1845.4693074412746!2d114.1687243589092!3d22.3181611945183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401f0afd81927%3A0xa2a84e559299307!2z5biM55Gq5b6u56yR55-v6KaW5omL6KGT5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBTdXJnZXJ5IENlbnRyZSAtIOaXuuinkuWIhuW6lw!5e0!3m2!1sen!2stw!4v1718257266902!5m2!1sen!2stw",
         },
@@ -549,7 +561,8 @@ export default {
     }
 
     return {
-      title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,
+      title:
+        this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
       meta: [
         {
           hid: "description",
@@ -563,11 +576,29 @@ export default {
         },
       ],
       link: [
-        { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/contact-us" },
-        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/contact-us" },
-        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/contact-us" },
-      ]
+        {
+          rel: "canonical",
+          href:
+            this.$i18n.locale === "cn"
+              ? this.canonicalHrefCN
+              : this.canonicalHref,
+        },
+        {
+          rel: "alternate",
+          hreflang: "x-default",
+          href: "https://smile.hkcmereye.com/contact-us",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hant-HK",
+          href: "https://smile.hkcmereye.com/contact-us",
+        },
+        {
+          rel: "alternate",
+          hreflang: "zh-Hans-CN",
+          href: "https://smile.hkcmereye.com/cn/contact-us",
+        },
+      ],
     };
   },
   methods: {
@@ -816,13 +847,21 @@ export default {
       }
     }
   }
-
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://statichk.cmermedical.com/smile/contact-us/6839f5bebcf0b8ba.webp")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: center;
     border-radius: 55px;
     display: flex;
     align-items: flex-start;

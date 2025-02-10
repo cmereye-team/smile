@@ -1618,12 +1618,25 @@ export default {
   .smile-pro {
     overflow: hidden;
   }
+  :deep(.Banner) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+  }
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://statichk.cmermedical.com/smile/97390f8ba27fb627.webp")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+      background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: center;
     border-radius: 55px;
 
     display: flex;

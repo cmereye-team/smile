@@ -1,7 +1,12 @@
 <template>
   <div class="main_banner">
     <div class="banner pcShow">
-      <div class="swiper gallery-top" v-if="optionList > 1" v-swiper:pcBannerSwiper="swiperOptionTop" ref="bannerSwiper">
+      <div
+        class="swiper gallery-top"
+        v-if="optionList > 1"
+        v-swiper:pcBannerSwiper="swiperOptionTop"
+        ref="bannerSwiper"
+      >
         <div class="swiper-wrapper">
           <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
             <img src="https://static.cmereye.com/imgs/2023/04/47b5b8d44b95666e.jpg" alt="">
@@ -10,12 +15,24 @@
             <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
           </nuxt-link> -->
 
-          <section v-for="(banner, index) in bannerLists" :key="index" class="swiper-slide">
+          <section
+            v-for="(banner, index) in bannerLists"
+            :key="index"
+            class="swiper-slide"
+          >
             <a v-if="banner.isRouterPath" :href="banner.link">
-              <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
+              <img
+                :class="banner.className"
+                :src="banner[`pc_${$i18n.locale}Img`]"
+                alt=""
+              />
             </a>
             <a v-else :href="localePath(banner.link)">
-              <img :class="banner.className" :src="banner[`pc_${$i18n.locale}Img`]" alt="">
+              <img
+                :class="banner.className"
+                :src="banner[`pc_${$i18n.locale}Img`]"
+                alt=""
+              />
             </a>
           </section>
 
@@ -42,7 +59,12 @@
       </div>
     </div>
     <div class="banner mbShow">
-      <div class="swiper gallery-top" v-if="optionList > 1" v-swiper:mbBannerSwiper="swiperOptionTop" ref="bannerSwiper">
+      <div
+        class="swiper gallery-top"
+        v-if="optionList > 1"
+        v-swiper:mbBannerSwiper="swiperOptionTop"
+        ref="bannerSwiper"
+      >
         <div class="swiper-wrapper">
           <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
             <img src="https://static.cmereye.com/imgs/2023/04/4b25734d8dbba59a.jpg" alt="">
@@ -54,13 +76,26 @@
             class="swiper-slide" :to="localePath(banner.link)">
             <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
           </nuxt-link> -->
-          <section v-for="(banner, index) in bannerLists.filter(item => item.mb_cnImg !== '')" :key="index"
-            class="swiper-slide">
+          <section
+            v-for="(banner, index) in bannerLists.filter(
+              (item) => item.mb_cnImg !== ''
+            )"
+            :key="index"
+            class="swiper-slide"
+          >
             <a v-if="banner.isRouterPath" :href="banner.link">
-              <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
+              <img
+                :class="banner.className"
+                :src="banner[`mb_${$i18n.locale}Img`]"
+                alt=""
+              />
             </a>
             <a v-else :href="localePath(banner.link)">
-              <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
+              <img
+                :class="banner.className"
+                :src="banner[`mb_${$i18n.locale}Img`]"
+                alt=""
+              />
             </a>
           </section>
         </div>
@@ -137,28 +172,30 @@ export default {
         // }
       ],
       optionList: 0,
-      link: 'https://api.whatsapp.com/send/?phone=85260610511&amp;text=我想了解(W-Xmas01) Smile Pro矯視聖誕優惠 将连接中的&amp; 用js 替换为 &    ',
-      num:5
-    }
+      link: "https://api.whatsapp.com/send/?phone=85260610511&amp;text=我想了解(W-Xmas01) Smile Pro矯視聖誕優惠 将连接中的&amp; 用js 替换为 &    ",
+      num: 5,
+    };
   },
   filters: {
     a(_lists) {
-      let newLists = []
+      let newLists = [];
       if (_lists.length) {
-        newLists = _lists.filter(item => item.mb_cnImg === '')
+        newLists = _lists.filter((item) => item.mb_cnImg === "");
       }
-      return newLists
-    }
+      return newLists;
+    },
   },
   created() {
-    this.getBannerList()
+    this.getBannerList();
   },
   methods: {
     async getBannerList() {
-      let List = []
-      let that = this
-      if (this.$i18n.locale === 'hk') {
-        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/1/num/${this.num}`)
+      let List = [];
+      let that = this;
+      if (this.$i18n.locale === "hk") {
+        await fetch(
+          `https://admin.hkcmereye.com/api.php/cms/slide/gid/1/num/${this.num}`
+        )
           .then(function (response) {
             return response.json();
           })
@@ -170,12 +207,14 @@ export default {
                 mb_hkImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
                 link: that.replaceAmp(item.link),
-                isRouterPath: item.title == 'link' ? true : false
-              }
-            })
+                isRouterPath: item.title == "link" ? true : false,
+              };
+            });
           });
-      } else if (this.$i18n.locale === 'cn') {
-        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/2/num/${this.num}`)
+      } else if (this.$i18n.locale === "cn") {
+        await fetch(
+          `https://admin.hkcmereye.com/api.php/cms/slide/gid/2/num/${this.num}`
+        )
           .then(function (response) {
             return response.json();
           })
@@ -187,12 +226,14 @@ export default {
                 mb_cnImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
                 link: that.replaceAmp(item.link),
-                isRouterPath: item.title == 'link' ? true : false
-              }
-            })
+                isRouterPath: item.title == "link" ? true : false,
+              };
+            });
           });
       } else {
-        await fetch(`https://admin.hkcmereye.com/api.php/cms/slide/gid/3/num/${this.num}`)
+        await fetch(
+          `https://admin.hkcmereye.com/api.php/cms/slide/gid/3/num/${this.num}`
+        )
           .then(function (response) {
             return response.json();
           })
@@ -204,23 +245,23 @@ export default {
                 mb_enImg: `https://admin.hkcmereye.com${item.mobilepic}`,
                 gid: item.gid,
                 link: that.replaceAmp(item.link),
-                isRouterPath: item.title == 'link' ? true : false
-              }
-            })
-          })
+                isRouterPath: item.title == "link" ? true : false,
+              };
+            });
+          });
       }
-      this.bannerLists = List
+      this.bannerLists = List;
       this.$nextTick(() => {
-        this.optionList = List.length
-      })
+        this.optionList = List.length;
+      });
     },
     // 转换 &amp;
     replaceAmp(str) {
-      if (str.indexOf('&amp;') > -1) {
-        str = str.replace(/&amp;/g, '&')
+      if (str.indexOf("&amp;") > -1) {
+        str = str.replace(/&amp;/g, "&");
       }
-      return str
-    }
+      return str;
+    },
   },
 };
 </script>
@@ -234,6 +275,15 @@ export default {
 .banner {
   width: 100vw;
   overflow: hidden;
+  :deep(.swiper-wrapper) {
+    img {
+      box-sizing: border-box;
+      padding: 0 3vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .anim {
@@ -265,7 +315,7 @@ export default {
     height: 80px;
     margin: 0 auto;
 
-    &>div {
+    & > div {
       width: 100%;
       color: #fff;
       font-size: 35px;

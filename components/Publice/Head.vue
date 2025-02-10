@@ -105,8 +105,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   max-width: 1270px;
-  margin: 0 auto;
+  margin: 0 3vw;
   padding: 25px 0;
+  width: 1270px;
 }
 .btn-icl_event {
   position: fixed !important;
@@ -170,8 +171,9 @@ export default {
     justify-content: space-between;
     align-items: center;
     max-width: 1270px;
-    margin: 0 auto;
+    margin: 0 3vw;
     padding: 25px 0;
+    width: 1270px;
   }
   .btn-icl_event {
     position: fixed !important;

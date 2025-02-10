@@ -5,7 +5,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
-          <p>ICL<br v-if="isMobile" />{{$t('Correct.icl.bannerTitle')}}</p>
+          <p>ICL<br v-if="isMobile" />{{ $t("Correct.icl.bannerTitle") }}</p>
           <p>(ICL implantable Collamer lenses)</p>
         </div>
       </template>
@@ -14,23 +14,22 @@
       <H2Tag :title="[$t('Correct.icl.bannerTitle')]" />
       <div class="laser_technology-in">
         <p>
-          {{$t('Correct.icl.content1.p1')}}
+          {{ $t("Correct.icl.content1.p1") }}
         </p>
         <p>
-            {{$t('Correct.icl.content1.p2')}}
-          
+          {{ $t("Correct.icl.content1.p2") }}
         </p>
       </div>
     </div>
     <div class="laser_technology">
       <H2Tag :title="[$t('Correct.icl.small_title2')]" />
       <div class="laser_technology-in">
-        <p>{{$t('Correct.icl.content2.p1')}}</p>
+        <p>{{ $t("Correct.icl.content2.p1") }}</p>
         <p>
-         {{$t('Correct.icl.content2.p2')}}
+          {{ $t("Correct.icl.content2.p2") }}
         </p>
         <p>
-         {{$t('Correct.icl.content2.p3')}}
+          {{ $t("Correct.icl.content2.p3") }}
         </p>
       </div>
     </div>
@@ -38,14 +37,19 @@
       <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-        >{{$t('Correct.icl.iclBtn')}}</a
+        >{{ $t("Correct.icl.iclBtn") }}</a
       >
     </div>
     <div class="characteristic">
-      <H2Tag :title="[$t('Correct.icl.small_title3'), $t('Correct.icl.small_title3_1')]" />
+      <H2Tag
+        :title="[
+          $t('Correct.icl.small_title3'),
+          $t('Correct.icl.small_title3_1'),
+        ]"
+      />
       <div class="characteristic-text">
         <p>
-          {{$t('Correct.icl.content3.p1')}}
+          {{ $t("Correct.icl.content3.p1") }}
         </p>
       </div>
       <div class="characteristic-lists">
@@ -124,7 +128,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "希瑪微笑矯視中心提供植入式隱形眼鏡 ICL 矯視服務，以創新技術和具生物兼容特質的人工晶體矯正視力，專為深度近視、遠視、散光客人而設。"
+            "希瑪微笑矯視中心提供植入式隱形眼鏡 ICL 矯視服務，以創新技術和具生物兼容特質的人工晶體矯正視力，專為深度近視、遠視、散光客人而設。",
         },
         {
           hid: "keywords",
@@ -165,84 +169,119 @@ export default {
       characteristic: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/e8b1b4b4e7337083.png",
-          title: this.$t('Correct.icl.characteristic.content1.title'),
-          text: [this.$t('Correct.icl.characteristic.content1.text1'), this.$t('Correct.icl.characteristic.content1.text2')],
+          title: this.$t("Correct.icl.characteristic.content1.title"),
+          text: [
+            this.$t("Correct.icl.characteristic.content1.text1"),
+            this.$t("Correct.icl.characteristic.content1.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/b3fc1aae883e10c5.png",
-          title: this.$t('Correct.icl.characteristic.content2.title'),
-          text: [this.$t('Correct.icl.characteristic.content2.text1'), this.$t('Correct.icl.characteristic.content2.text2')],
+          title: this.$t("Correct.icl.characteristic.content2.title"),
+          text: [
+            this.$t("Correct.icl.characteristic.content2.text1"),
+            this.$t("Correct.icl.characteristic.content2.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/9c2e5ca8b04dfc42.png",
-          title: this.$t('Correct.icl.characteristic.content3.title'),
+          title: this.$t("Correct.icl.characteristic.content3.title"),
           // text: ["手術時間短<br />", "復原期短，手術過程", "最快只需20-30分鐘"],
-          text:[this.$t('Correct.icl.characteristic.content3.text1'),this.$t('Correct.icl.characteristic.content3.text2'),this.$t('Correct.icl.characteristic.content3.text3')]
+          text: [
+            this.$t("Correct.icl.characteristic.content3.text1"),
+            this.$t("Correct.icl.characteristic.content3.text2"),
+            this.$t("Correct.icl.characteristic.content3.text3"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/d6dc807847e807c6.png",
-          title: this.$t('Correct.icl.characteristic.content4.title'),
-          text: [this.$t('Correct.icl.characteristic.content4.text1'), this.$t('Correct.icl.characteristic.content4.text2')],
+          title: this.$t("Correct.icl.characteristic.content4.title"),
+          text: [
+            this.$t("Correct.icl.characteristic.content4.text1"),
+            this.$t("Correct.icl.characteristic.content4.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/78bb710a2eee5ce3.png",
-          title: this.$t('Correct.icl.characteristic.content5.title'),
-          text: [this.$t('Correct.icl.characteristic.content5.text1'), this.$t('Correct.icl.characteristic.content5.text2'), this.$t('Correct.icl.characteristic.content5.text3')],
+          title: this.$t("Correct.icl.characteristic.content5.title"),
+          text: [
+            this.$t("Correct.icl.characteristic.content5.text1"),
+            this.$t("Correct.icl.characteristic.content5.text2"),
+            this.$t("Correct.icl.characteristic.content5.text3"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/bb006854352668ac.png",
-          title: this.$t('Correct.icl.characteristic.content6.title'),
-          text: [this.$t('Correct.icl.characteristic.content6.text1'), this.$t('Correct.icl.characteristic.content6.text2')],
+          title: this.$t("Correct.icl.characteristic.content6.title"),
+          text: [
+            this.$t("Correct.icl.characteristic.content6.text1"),
+            this.$t("Correct.icl.characteristic.content6.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/4fe5d9f2a1065ba4.png",
-          title: this.$t('Correct.icl.characteristic.content7.title'),
-          text: [this.$t('Correct.icl.characteristic.content7.text1')],
+          title: this.$t("Correct.icl.characteristic.content7.title"),
+          text: [this.$t("Correct.icl.characteristic.content7.text1")],
         },
       ],
       benefits: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/71f07f2e49ae92d7.png",
-          title: this.$t('Correct.icl.benefits.content1.title'),
-          text:  this.$t('Correct.icl.benefits.content1.text1'),
+          title: this.$t("Correct.icl.benefits.content1.title"),
+          text: this.$t("Correct.icl.benefits.content1.text1"),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/c8c583239e65a1a7.png",
-          title: this.$t('Correct.icl.benefits.content2.title'),
-          text: this.$t('Correct.icl.benefits.content2.text1'),
+          title: this.$t("Correct.icl.benefits.content2.title"),
+          text: this.$t("Correct.icl.benefits.content2.text1"),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/515c3b6fb8d3871d.png",
-          title: this.$t('Correct.icl.benefits.content3.title'),
-          text: this.$t('Correct.icl.benefits.content3.text1'),
+          title: this.$t("Correct.icl.benefits.content3.title"),
+          text: this.$t("Correct.icl.benefits.content3.text1"),
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/a200f81d4d1872a1.png",
-          title: this.$t('Correct.icl.benefits.content4.title'),
-          text: this.$t('Correct.icl.benefits.content4.text1'),
+          title: this.$t("Correct.icl.benefits.content4.title"),
+          text: this.$t("Correct.icl.benefits.content4.text1"),
         },
       ],
       suitable_object: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
-          text: [this.$t('Correct.icl.suitable_object.content1.text1'), this.$t('Correct.icl.suitable_object.content1.text2')],
+          text: [
+            this.$t("Correct.icl.suitable_object.content1.text1"),
+            this.$t("Correct.icl.suitable_object.content1.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
-          text: [this.$t('Correct.icl.suitable_object.content2.text1'), this.$t('Correct.icl.suitable_object.content2.text2')],
+          text: [
+            this.$t("Correct.icl.suitable_object.content2.text1"),
+            this.$t("Correct.icl.suitable_object.content2.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/56f73174b86b2288.png",
-          text: [this.$t('Correct.icl.suitable_object.content3.text1')],
+          text: [this.$t("Correct.icl.suitable_object.content3.text1")],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/9f4ca0776e175624.png",
-          text: [this.$t('Correct.icl.suitable_object.content4.text1'), this.$t('Correct.icl.suitable_object.content4.text2')],
+          text: [
+            this.$t("Correct.icl.suitable_object.content4.text1"),
+            this.$t("Correct.icl.suitable_object.content4.text2"),
+          ],
         },
         {
           img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
-          text: [this.$t('Correct.icl.suitable_object.content5.text1'),this.$t('Correct.icl.suitable_object.content5.text2')],
-          mbText: [this.$t('Correct.icl.suitable_object.content5.mbText1'), this.$t('Correct.icl.suitable_object.content5.mbText2')],
+          text: [
+            this.$t("Correct.icl.suitable_object.content5.text1"),
+            this.$t("Correct.icl.suitable_object.content5.text2"),
+          ],
+          mbText: [
+            this.$t("Correct.icl.suitable_object.content5.mbText1"),
+            this.$t("Correct.icl.suitable_object.content5.mbText2"),
+          ],
         },
       ],
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-icl",
@@ -272,12 +311,21 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
+  :deep(.banner-box) {
+    box-sizing: border-box;
+    padding: 0 3vw;
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+  }
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/a5d210497d854b68.webp")
       no-repeat;
-    background-size: 100% 100%;
-    height: 616px;
+    background-size: cover;
+    height: 32.08vw;
     width: 100%;
+    max-width: 1270px;
+    background-position: top;
     border-radius: 55px;
 
     display: flex;
