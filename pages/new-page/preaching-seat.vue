@@ -271,6 +271,16 @@
       </div>
       <div class="lecture-image">
         <img
+          v-if="isBeforeFeb32()"
+          src="https://statichk.cmermedical.com/smile/2025021916045001.webp"
+          alt="3月 中环"
+        />
+        <img
+          v-if="isBeforeFeb32()"
+          src="https://statichk.cmermedical.com/smile/2025021916044001.webp"
+          alt="3月 旺角"
+        />
+        <img
           v-if="isBeforeFeb28()"
           src="https://statichk.cmermedical.com/smile/68910b3cec5d.webp"
           alt="2月 中环"
@@ -407,14 +417,19 @@ export default {
   },
   computed: {},
   methods: {
+    isBeforeFeb32() {
+      const today = new Date();
+      const targetDate = new Date(today.getFullYear(), 2, 28); // 3月
+      return today < targetDate;
+    },
     isBeforeFeb28() {
       const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 1, 28); // 2月28日，注意月份从0开始
+      const targetDate = new Date(today.getFullYear(), 1, 28); // 2月
       return today < targetDate;
     },
     isBeforeFeb31() {
       const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 0, 31); // 2月28日，注意月份从0开始
+      const targetDate = new Date(today.getFullYear(), 0, 31); // 1月
       return today < targetDate;
     },
     isOpenDialog(index) {
@@ -497,34 +512,37 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2025-01-22",
-            "2025-01-25",
-            "2025-02-01",
-            "2025-02-05",
-            "2025-02-08",
-            "2025-02-12",
-            "2025-02-15",
             "2025-02-19",
             "2025-02-22",
             "2025-02-26",
+            "2025-03-01",
+            "2025-03-05",
+            "2025-03-08",
+            "2025-03-12",
+            "2025-03-15",
+            "2025-03-19",
+            "2025-03-22",
+            "2025-03-26",
+            "2025-03-29",
           ];
           break;
         case "smileMongKok":
           // smile 旺角
           this.allowedDates = [
-            "2025-01-23",
-            "2025-01-28",
-            "2025-02-01",
-            "2025-02-06",
-            "2025-02-11",
-            "2025-02-15",
             "2025-02-20",
             "2025-02-25",
+            "2025-03-01",
+            "2025-03-06",
+            "2025-03-11",
+            "2025-03-15",
+            "2025-03-20",
+            "2025-03-25",
+            "2025-03-29",
           ];
           break;
         case "smileProMongKok":
           // smilePro 旺角
-          this.allowedDates = ["2025-01-25", "2025-02-08", "2025-02-22"];
+          this.allowedDates = ["2025-02-22", "2025-03-08", "2025-03-22"];
           break;
         case "clearVisionCentral":
           // clearVision 中环
@@ -538,6 +556,10 @@ export default {
             "2025-02-13",
             "2025-02-18",
             "2025-02-27",
+            "2025-03-04",
+            "2025-03-13",
+            "2025-03-18",
+            "2025-03-27",
           ];
           break;
         default:
@@ -896,7 +918,8 @@ export default {
     background-size: cover;
     height: 32.08vw;
     width: 100%;
-    max-width: 1270px;
+    max-width: 1150px;
+    max-height: 556px;
     background-position: center;
     border-radius: 55px;
 

@@ -75,7 +75,7 @@ export default {
 }
 .step_list {
   width: 100%;
-  max-width: 1175px;
+  max-width: 1150px;
   margin: 41px auto 0;
   .text {
     color: #6d6e71;

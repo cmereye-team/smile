@@ -814,7 +814,8 @@ export default {
     background-size: cover;
     height: 32.08vw;
     width: 100%;
-    max-width: 1270px;
+    max-width: 1150px;
+    max-height: 556px;
     background-position: center;
     border-radius: 55px;
     display: flex;

@@ -324,7 +324,8 @@ export default {
     background-size: cover;
     height: 32.08vw;
     width: 100%;
-    max-width: 1270px;
+    max-width: 1150px;
+    max-height: 556px;
     background-position: top;
     border-radius: 55px;
 
@@ -444,7 +445,7 @@ export default {
   }
   &-lists {
     width: 100%;
-    max-width: 1360px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;

@@ -1625,7 +1625,7 @@ export default {
   :deep(.banner-box) {
     box-sizing: border-box;
     padding: 0 3vw;
-    max-width: 1270px;
+    max-width: 1150px;
     display: flex;
     justify-content: center;
   }
@@ -1635,7 +1635,8 @@ export default {
       background-size: cover;
     height: 32.08vw;
     width: 100%;
-    max-width: 1270px;
+    max-width: 1150px;
+    max-height: 556px;
     background-position: center;
     border-radius: 55px;
 
@@ -1697,13 +1698,13 @@ export default {
   //   }
   // }
   .swiper-pc-share {
-    max-width: 1270px;
+    max-width: 1150px;
     position: relative;
     margin: 0 auto;
   }
 
   .smilePro-desc {
-    max-width: 1270px;
+    max-width: 1150px;
     margin-right: auto;
     margin-left: auto;
     &-one {
@@ -1775,7 +1776,7 @@ export default {
   }
 
   .smilePro-descVideo {
-    max-width: 1270px;
+    max-width: 1150px !important;
     margin: 0 auto;
     margin-top: 66px;
     h2 {
@@ -1830,7 +1831,7 @@ export default {
   }
   .smilePro-table {
     margin: 85px auto;
-    max-width: 1270px;
+    max-width: 1150px;
   }
   .table {
     width: 100%;
@@ -2003,7 +2004,7 @@ export default {
     background: rgba(199, 232, 239, 0.2);
     position: relative;
     & > div {
-      max-width: 1270px;
+      max-width: 1150px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -2107,7 +2108,7 @@ export default {
   .smile-pro-share {
     display: flex;
     flex-direction: column;
-    max-width: 1270px;
+    max-width: 1150px;
     margin: 0 auto;
     margin-top: 80px;
     & > div:nth-child(2) {
@@ -2150,7 +2151,7 @@ export default {
     background: rgba(199, 232, 239, 0.2);
     position: relative;
     & > div {
-      max-width: 1270px;
+      max-width: 1150px;
       margin: 0 auto;
       & > div:nth-child(1) {
         position: absolute;

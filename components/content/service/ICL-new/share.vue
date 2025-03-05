@@ -2,7 +2,10 @@
   <div class="page_container suitable_box">
     <div class="flex justify-center md:mt-20 mt-10 share-suitable_box">
       <H2Tag
-        :title="[$t('Correct.icl.small_title1'), $t('Correct.icl.small_title2')]"
+        :title="[
+          $t('Correct.icl.small_title1'),
+          $t('Correct.icl.small_title4'),
+        ]"
         class="title-content"
       />
     </div>

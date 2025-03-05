@@ -680,7 +680,7 @@ export default {
     overflow: hidden;
   }
   .vision-max-width {
-    max-width: 1270px;
+    max-width: 1150px;
     margin: 0 auto;
   }
   .clear-vision {
@@ -694,7 +694,7 @@ export default {
         padding-bottom: 32px;
       }
       & > div:nth-child(2) {
-        padding: 0 150px;
+        padding: 0 90px;
         color: #6d6e71;
         text-align: center;
         font-family: "Noto Sans HK";

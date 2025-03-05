@@ -1223,7 +1223,7 @@ export default {
   }
   .home-referral-service,
   .home-referral {
-    max-width: 1270px;
+    max-width: 1150px;
     margin: 0 auto;
   }
   .home-referral {
@@ -1404,7 +1404,7 @@ export default {
     padding: 220px 0 100px;
     margin-top: 165px;
     & > div {
-      max-width: 1270px;
+      max-width: 1150px;
       margin: 0 auto;
       & > div:nth-child(1) {
         width: 307px;
@@ -1502,7 +1502,7 @@ export default {
     }
   }
   .home-share {
-    max-width: 1270px;
+    max-width: 1150px;
     margin: 75px auto 55px;
     & > div:nth-child(2) {
       display: flex;
@@ -1612,7 +1612,7 @@ export default {
     margin-bottom: 85px;
     position: relative;
     & > div {
-      max-width: 1270px;
+      max-width: 1150px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -1711,7 +1711,7 @@ export default {
     }
   }
   .home-service {
-    max-width: 1270px;
+    max-width: 1150px;
     margin: 0 auto 100px;
     & > div:nth-child(1) {
       :deep(h2) {
@@ -1790,7 +1790,7 @@ export default {
       gap: 0 32px;
     }
 
-    max-width: 1270px;
+    max-width: 1150px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {

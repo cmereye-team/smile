@@ -235,7 +235,7 @@ export default {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 85px 50px;
-    max-width: 1270px;
+    max-width: 1150px;
     margin: 0 auto 85px;
     & > a {
       cursor: pointer;
@@ -334,7 +334,7 @@ export default {
   :deep(.banner-box) {
     box-sizing: border-box;
     padding: 0 3vw;
-    max-width: 1270px;
+    max-width: 1150px;
     display: flex;
     justify-content: center;
   }
@@ -345,6 +345,7 @@ export default {
     height: 32.08vw;
     width: 100%;
     max-width: 1270px;
+    max-height: 556px;
     background-position: center;
     border-radius: 55px;
     display: flex;

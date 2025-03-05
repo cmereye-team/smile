@@ -650,7 +650,7 @@ export default {
     overflow: hidden;
   }
   .contact-us-maps {
-    max-width: 1270px;
+    max-width: 1150px;
     margin: 85px auto 70px;
   }
   .maps-table {
@@ -860,7 +860,8 @@ export default {
     background-size: cover;
     height: 32.08vw;
     width: 100%;
-    max-width: 1270px;
+    max-width: 1150px;
+    max-height: 556px;
     background-position: center;
     border-radius: 55px;
     display: flex;

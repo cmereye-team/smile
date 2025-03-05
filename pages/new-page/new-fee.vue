@@ -332,7 +332,7 @@
           {{ $t("fee.textList.text2_2") }}<br />
         </span>
         <span>
-          {{ $t("fee.textList.text3") }}<br />
+          {{ $t("fee.textList.text3") }}<br /><br class="mbShow" />
           {{ $t("fee.textList.text3_1") }}
           {{ $t("fee.textList.text3_2") }}<br />
           {{ $t("fee.textList.text3_3") }}
@@ -482,18 +482,21 @@ export default {
     max-width: 100vw;
   }
   .table_new_fee {
-    max-width: 66.14vw;
+    max-width: 1150px;
+    width: 100%;
     min-width: 680px;
     margin: 85px auto 95px;
   }
   .new_title_style {
-    max-width: 66.14vw;
+    max-width: 1150px;
+    width: 100%;
     min-width: 680px;
     margin: 120px auto 0;
     // padding-left: 6.678vw;
   }
   .fee-table-container {
-    max-width: 66.14vw;
+    max-width: 1150px;
+    width: 100%;
     min-width: 680px;
     margin: 0 auto;
     // padding-left: 5.208vw;
@@ -603,7 +606,10 @@ export default {
       border-radius: 1.30208vw;
       background: #71bfd8 !important;
       & > div:nth-child(1) {
-        font-size: 1.25vw;
+        font-size: 1.15vw;
+      }
+      & > div:nth-child(2) {
+        font-size: 1.15vw;
       }
     }
     & > div:nth-child(3),
@@ -611,6 +617,12 @@ export default {
       color: #fff !important;
       border-radius: 1.3vw;
       background: #719ad8 !important;
+      & > div:nth-child(1) {
+        font-size: 1.15vw;
+      }
+      & > div:nth-child(2) {
+        font-size: 1.15vw;
+      }
     }
     & > div:nth-child(4) {
       color: #fff !important;
@@ -637,6 +649,12 @@ export default {
       letter-spacing: 0.26vw;
       box-sizing: border-box;
       padding: 0 0.502vw;
+      & > div:nth-child(1) {
+        font-size: 1.05vw;
+      }
+      & > div:nth-child(2) {
+        font-size: 1.05vw;
+      }
     }
     & > div:nth-child(6) {
       color: #fff;
@@ -649,6 +667,12 @@ export default {
       letter-spacing: 1px !important;
       box-sizing: border-box;
       padding: 0 0.57vw;
+      & > div:nth-child(1) {
+        font-size: 1.05vw;
+      }
+      & > div:nth-child(2) {
+        font-size: 1.05vw;
+      }
     }
     & > div:nth-child(21),
     & > div:nth-child(22),
@@ -702,7 +726,7 @@ export default {
       color: #4570b6;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: clamp(1.354vw, 1.354vw, 26px);
+      font-size: clamp(1.254vw, 1.254vw, 26px);
       font-style: normal;
       font-weight: 400;
       line-height: clamp(2.083vw, 2.083vw, 40px); /* 133.333% */
@@ -892,13 +916,15 @@ export default {
     background: url("https://static.cmereye.com/imgs/2024/08/0c425451fe0b646d.png")
       no-repeat;
     background-size: 100% 100%;
-    padding: 3.90625vw 0;
+    padding: 3.90625vw 3vw;
     max-width: 100vw;
     margin-bottom: 4.947vw;
   }
   .ellipse_explain {
-    max-width: 85%;
+    max-width: 1150px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     span {
       color: #6d6e71;
       font-family: "Noto Sans HK";
@@ -948,19 +974,22 @@ export default {
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .table_new_fee {
-    max-width: 66.21875vw !important;
+    max-width: 1150px;
+    width: 80.34vw !important;
     min-width: 50vw;
   }
   .new_title_style {
-    max-width: 66.21875vw !important;
+    max-width: 1150px;
+    width: 80.34vw !important;
     min-width: 50vw;
   }
   .fee-table-container {
-    max-width: 66.21875vw !important;
+    max-width: 1150px;
+    width: 80.34vw !important;
     min-width: 50vw;
   }
   .ellipse_explain {
-    // max-width: 66.21875vw !important;
+    // max-width: 60.34vw; !important;
     // min-width: 50vw;
   }
 }
@@ -1417,14 +1446,16 @@ export default {
       no-repeat;
     background-size: 100% 100%;
     box-sizing: border-box;
-    padding: 40px 35px;
+    padding: 40px 7.69vw;
     margin-bottom: 55px;
   }
   .ellipse_explain {
     max-width: 1270px;
     margin: 0 auto;
     box-sizing: border-box;
-    p {
+    display: flex;
+    flex-direction: column;
+    span {
       color: #6d6e71;
       font-family: "Noto Sans HK";
       font-size: 16px;

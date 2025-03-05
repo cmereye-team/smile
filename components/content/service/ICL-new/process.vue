@@ -58,6 +58,7 @@ export default {
 <style lang="scss" scoped>
 .page_container {
   padding: 0;
+  max-width: 1150px !important;
 }
 .step {
   margin-top: 70px;
@@ -103,6 +104,8 @@ export default {
     margin: 0 auto;
   }
   li {
+    box-sizing: border-box;
+    padding: 0 10px;
     img {
       border-radius: 29px;
       margin-bottom: 26px;
