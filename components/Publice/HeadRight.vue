@@ -148,7 +148,24 @@ export default {
           id: 3,
           path: "/patient-info",
           name: this.$t("home.headers.diagnosisInstructions"),
-          childType: false,
+          childType: true,
+          childList: [
+            {
+              id:1,
+              name: this.$t("home.headers.diagnosisInstructionsChild_1"),
+              path: "/patient-info",
+            },
+            {
+              id:1,
+              name: this.$t("home.headers.diagnosisInstructionsChild_2"),
+              path: "/flow-of-vision-correction",
+            },
+            {
+              id:1,
+              name: this.$t("home.headers.diagnosisInstructionsChild_3"),
+              path: "/post-corrective-care",
+            },
+          ],
         },
         {
           id: 4,

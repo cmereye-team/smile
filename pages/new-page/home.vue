@@ -6,9 +6,7 @@
       <div class="home-referral">
         <H2Tag :title="[$t('home.home_referral.title')]" />
         <div>
-          <p>
-            {{ $t("home.home_referral.content_text_1") }}
-          </p>
+          <p v-html="$t('home.home_referral.content_text_1')"></p>
           <p>
             {{ $t("home.home_referral.content_text_2") }}
           </p>
@@ -1162,23 +1160,22 @@ export default {
 
 <style lang="scss" scoped>
 @font-face {
-  font-family: "Orbitron";
-  src: url("https://static.cmereye.com/static/font/Orbitron-Bold-900.woff2")
-    format("woff2");
+  font-family: 'Orbitron';
+  font-style: normal;
   font-weight: 900;
-  font-style: normal;
   font-display: swap;
-}
-@font-face {
-  font-family: "Orbitron-bold";
-  src: url("https://static.cmereye.com/static/font/Orbitron-Bold-700.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nysimBoWgz.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 .orbitron-nine {
-  font-family: "Orbitron-bold", sans-serif !important;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.orbitron-nine {
+  font-family: "Orbitron", sans-serif !important;
+  font-weight: 900;
 }
 @media screen and (min-width: 768px) {
   .home {
@@ -1533,7 +1530,7 @@ export default {
             font-family: Inter;
             font-size: 18px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 1.8; /* 222.222% */
             letter-spacing: 1.44px;
             text-align: center;
@@ -2205,6 +2202,39 @@ export default {
           position: absolute;
           top: 36px;
           left: 0;
+        }
+      }
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          & > p {
+            padding-bottom: 15px;
+          }
+          // background: firebrick !important;
+        }
+      }
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > p {
+            padding-bottom: 0;
+            padding-top: 15px;
+          }
+          // background: firebrick !important;
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(1) {
+          & > p {
+            padding-bottom: 25px;
+          }
+        }
+      }
+      &>div:nth-child(4) {
+        &>div:nth-child(1) {
+          &> p {
+            padding-bottom: 0;
+            padding-top: 20px;
+          }
+          // background: firebrick !important;
         }
       }
     }
