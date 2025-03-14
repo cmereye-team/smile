@@ -612,7 +612,11 @@ export default {
         //   }
         //   return "Smile Pro 講座-尖沙咀";
         case "smileProMongKok":
-          if (weekday == "周六") {
+          if (weekday == "周二") {
+            this.morningOrAfternoon = "1:30 下午";
+          } else if (weekday == "周四") {
+            this.morningOrAfternoon = "6:30 下午";
+          } else if (weekday == "周六") {
             this.morningOrAfternoon = "2:30 下午";
           }
           return "Smile Pro 講座-旺角";
