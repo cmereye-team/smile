@@ -6,7 +6,7 @@
       <template #banner>
         <div class="banner-img">
           <p>ICL<br v-if="isMobile" />{{ $t("Correct.icl.bannerTitle") }}</p>
-          <p>(ICL implantable Collamer lenses)</p>
+          <p>(ICL Implantable Collamer Lens)</p>
         </div>
       </template>
     </Banner>

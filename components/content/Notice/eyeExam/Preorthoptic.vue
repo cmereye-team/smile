@@ -1,14 +1,14 @@
 <template>
   <div class="page_container">
-    <div class="flex justify-center md:mt-28 mt-10">
+    <div class="flex video_mb justify-center md:mt-28 mt-10">
       <h2 v-html="$t('notice.eyeExam.preorthoptic.h2')"></h2>
+      <div class="video-ytb mbShow">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/chqX2VLCqio?si=QkWTQqFCYJs_HFY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
     <div>
-      <div class="flex justify-center pcShow">
-        <img
-          src="https://static.cmereye.com/imgs/2022/12/af21e2a1ef419d29.jpg"
-          alt=""
-        />
+      <div class="flex justify-center video-ytb pcShow">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/chqX2VLCqio?si=QkWTQqFCYJs_HFY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div class="flex preorth_box">
         <div class="preorth flex justify-evenly flex-col justify-center">
@@ -148,7 +148,11 @@ h2 {
       color: #6D6E71;
     }
   }
-
+  .video-ytb {
+    width: 605px;
+    height: 343px;
+    margin: 0 auto;
+  }
   .preorth_box {
     display: flex;
     justify-content: space-evenly;
@@ -391,6 +395,15 @@ h2 {
     .arrow-botom_eng {
       padding: 30px 30px;
     }
+  }
+  .video_mb {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 50px;
+  }
+  .video-ytb {
+    width: 100%;
+    height: 50.665vw;
   }
   .preorth_box {
     display: flex;

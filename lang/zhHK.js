@@ -60,7 +60,7 @@ module.exports = {
     home_referral: {
       title: "希瑪微笑矯視中心",
       content_text_1:
-        "希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的屈光<br />矯視醫療中心。",
+        "希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的<br />屈光矯視醫療中心。",
       content_text_2:
         "中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。",
       content_text_3:
@@ -100,8 +100,8 @@ module.exports = {
       name3:"細貓",
       name4:"陳欣妍 Shirley",
       content_text_1: "每一次擘大眼都",
-      content_text_1_1: "懷疑自己係咪唔記得除",
-      content_text_1_2: "Con既感覺",
+      content_text_1_1: "懷疑自己係咪唔記得",
+      content_text_1_2: "除Con既感覺",
 
       content_text_2: "從未試過",
       content_text_2_1: "全日都睇得清！",

@@ -45,7 +45,7 @@
             </div>
           </nuxt-link>
         </div>
-        <nuxt-link to="/eye-examination">{{
+        <nuxt-link to="/patient-info">{{
           $t("home.headers.diagnosisInstructions")
         }}</nuxt-link>
       </div>
@@ -437,7 +437,7 @@
             <div>
               <p>
                 {{ $t("home.home_share.content_text_1") }}<br />
-                <span>{{ $t("home.home_share.content_text_1_1") }}</span
+                <span>{{ $t("home.home_share.content_text_1_1") }}<br /></span
                 >{{ $t("home.home_share.content_text_1_2") }}
               </p>
             </div>
