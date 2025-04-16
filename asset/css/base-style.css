@@ -30,32 +30,32 @@ body h2::after {
 
 @media (min-width: 768px) {
   body {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
     /* min-width: 1200px; */
   }
   caption {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   h3 {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   div {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   a {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   td {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   span {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   h2 {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   div {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   .nav-language {
     margin-left: 26px;
@@ -110,34 +110,34 @@ body h2::after {
 }
 @media (max-width: 768px) {
   body {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   caption {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   h3 {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   div {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   a {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   td {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   p {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   span {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   h2 {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   div {
-    font-family: var(--font_family), sans-serif !important;
+    font-family: var(--font_family), sans-serif ;
   }
   .page_container {
     padding-left: 1.25rem !important;

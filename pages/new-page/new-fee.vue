@@ -311,7 +311,7 @@
             <span>$31,000 - $51,000</span>
             <span>{{ $t("fee.table.vision_right.textS") }}</span>
           </div>
-          <div>$650</div>
+          <div>$680</div>
         </div>
       </div>
     </div>

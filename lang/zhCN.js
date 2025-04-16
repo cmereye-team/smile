@@ -18,8 +18,11 @@ module.exports = {
       consumptionDivit: "FPS by divit 详情",
       contactUs: "联络我们",
       reservationService: "预约服务",
+      reservationServiceV2: "預約講座",
+
       videos: "矫视信息影片",
       casesSharing: "个案分享",
+      medicalTeam:"醫生介紹",
       feign: "矫视资讯",
 
       aboutSmileChild_1: "集团及中心简介",
@@ -188,6 +191,11 @@ module.exports = {
         Center: "中环",
         MongKok: "旺角",
         TsimShaTsui: "尖沙咀",
+        centerAddress1:"毕打街1-3号中建大厦1512室",
+        centerAddress2:"(港铁站G出口，置地广场楼上)",
+        mongKokAddress1:"弥敦道625及639号雅兰中心",
+        mongKokAddress2:"一期",
+        mongKokAddress3:"1725B室(港铁站E1出口)"
       },
     },
 
@@ -596,7 +604,143 @@ module.exports = {
     },
   },
 
+  smile_proV2:{
+    Bannertitle:"微笑激光矫视",
+    Bannertilte2:"Small Incision Lenticule Extraction",
+
+    Bannertext1:"1,000度以下的近视",
+    Bannertext2:"500度以下的散光", 
+
+
+    CenterTile:"微笑激光矫视",
+
+      p_text1:"SMILE Pro微笑矫视是现时最新的",
+      p_text2:"微创",
+      p_text3:"激光矫正技术。本中心的SMILE Pro微笑矫视使用",
+      p_text4:"，原理是在",
+      p_text5:"不用打开角膜瓣",
+      p_text6:"的情况下，以全飞秒激光扫描制作角膜组织膜片，再通过",
+      p_text6_1:"2-2.5mm的小切口把膜片取出，以达到视力矫正的效果。此技术可以为客人",
+      p_text7:"矫正近视、散光及老花",
+      p_text8:"问题，减低对眼镜的依赖。",
+
+      WhyChoose_p_text1:"希玛微笑矫视中心以尖端科技和卓越的客户体验；同时作为",
+      WhyChoose_p_text1_1:"首间获Zeiss蔡司颁发《全飞秒屈光手术 卓越手术中心》",
+      WhyChoose_p_text1_2:"认证的香港矫视中心，成为了大众的SMILE Pro矫视首选。",
+      WhyChoose_p_text2:"中心采用",
+      WhyChoose_p_text3:"已获美国FDA认证",
+      WhyChoose_p_text4:"的ZEISS VISUMAX 800 SMILE®pro设备，结合德国蔡司光学与诺贝尔奖激光技术，为SMILE Pro矫视服务带来更高的",
+      WhyChoose_p_text5:"精确度",
+      WhyChoose_p_text6:"与",
+      WhyChoose_p_text7:"安全保障",
+      WhyChoose_p_text8:"。此外，众多客户对术后效果表示满意，视力稳定，让日常生活更轻松便利。",
+
+      four_feature:{
+        title:"四大特点",
+        smallTilte:"以德国蔡司光学与诺贝尔奖激光技术进行矫视",
+
+        item1_title1:"矫视过程短",
+        item1_p1_1:"激光时间最短约10-16秒",
+        item1_p1_2:"单一眼睛",
+
+        item1_title2:"精准度更高",
+        item1_p2_1:"具有视轴及散光轴",
+        item1_p2_2:"辅助导航定位功能",
+
+        item1_title3:"微创",
+        item1_p3_1:"约2MM的微创切口",
+
+        item1_title4:"康复时间短",
+        item1_p4_1:"最快翌日可如常生活、工作",
+      }
+
+ },
+
   Correct: {
+    newIcl:{
+      menuone:"主页",
+      menuTwo:"矫视服务",
+      menuthree:"植入式隐形眼镜",
+      small_title1:"植入式隐形眼镜",
+      apt_btn:"预约咨询",
+      titleList:{
+        title1:"可矫正",
+        title2:"1,800度以下的近视",
+        title3:"1,000度以下的远视",
+        title4:"600度以下的散光"
+      },
+      section1:{
+        title:"植入式隐形眼镜",
+        text1: "植入式隐形眼镜Implantable Collamer Lens (ICL)，又名有晶体眼后房型植入式隐形眼镜植入手术，",
+        text2:"专为深度近视、远视、散光客人而设",
+        text2_1:"手术过程",
+        text2_2:"无须切削角膜",
+        text3:"把ICL晶体植入",
+        text3_1:"眼内，便可获取高清视力。植入式隐形眼镜以",
+        text4:"非激光原理",
+        text5:"，用创新技术和具生物兼容特质、柔软及具紫外线防护的晶体材料，矫正高度近视、远视及散光。"
+      },
+      section2:{
+        title:"为何选择希玛?",
+        one:{
+          text1: "希玛自创办以来与STAAR Surgical公司建立良好的合作关系",
+          text2:"逾10年。",
+          text3:"2023年，STAAR Surgical公司对希玛眼科集团的",
+          text4: "医疗技术、手术品质及服务作出认可",
+          text5: '宣布将希玛微笑矫视中心设立为',
+          text6:"首间官方认证EVO ICL 国际培训中心",
+          text7:"希玛微笑矫视中心往后会继续致力于ICL方面发展，成为大众选择ICL植入式隐形眼镜的首选!",
+          text8:"希玛微笑矫视中心在矫视技术领域不断追求突破，近期我们在ICL植入式隐形眼镜的术前检查和矫视过程中引入了新的技术项目，以提升服务的质量和精准度。"
+        },
+        two:{
+          title:"UBM眼科检查",
+          text1:"在ICL植入式隐形眼镜术前检查中，新增了UBM眼科检查(眼科超声生物显微镜检查)。UBM检查是一种非侵入性技术，主要用于检查房角，具有较高分辨率和较深穿透范围，能够清楚地观察到眼睛的细微结构，有效克服传统房角镜检查的盲区，为客户提供更准确的诊断资讯。"
+        },
+        three:{
+          title:"Verion技术",
+          text1:"在ICL植入式隐形眼镜矫视过程中则引入了Verion技术。该技术通过测量散光轴度，能够更精准地计算和规划人工晶体植入方案。Verion技术在手术显微镜下进行「动态追踪定位」，进一步提升植入人工晶体过程的精准度，从而提高了矫视的安全性和效果。"
+        }
+      },
+      section3:{
+        title:"矫视的好处",
+        text1_title1:"术后复原快",
+        text1_con1:"手术以微创技术进行",
+        text1_con2:"术后复原期短",
+
+        text2_title1:"手术时间短",
+        text2_con1:"最快20-30分钟",
+        text2_con2:"内完成矫视",
+
+        text3_title1:"为生活带来便利",
+        text3_con1:"矫视后可减低对眼镜",
+        text3_con2:"或隐形眼镜的依赖",
+
+        text4_title1:"物料安全",
+        text4_con1:"2005年已通过",
+        text4_con2:"美国FDA认证",
+
+        text5_title1:"不会导致干眼症",
+        text5_con1:"过程无须切削角膜",
+        text5_con2:"因此不会导致干眼症",
+
+        text6_title1:"量身订造治疗方案",
+        text6_con1:"是一项可还原技术，客人",
+        text6_con2:"可按需要选择取出ICL",
+      },
+      section4:{
+        title:"镜片7大特色",
+        content_text:"EVO Visian ICL以STAAR Surgical 专用的生物相容Collamer专利材质制成。这种材质含有自然存在于体内的胶原蛋白。EVO Visian ICL Collamer 技术的独特优势使其成为视力矫正镜片的理想材质，其中包含抗紫外线功能。",
+
+        item1_title:"夜间视力",
+        item2_title:"可取出",
+        item3_title:"生物相容性",
+        item4_title:"紫外线防护",
+        item5_title:"手术与恢复皆快速",
+        item6_title:"与时俱进的灵活度",
+        item7_title:"柔软服贴",
+      }
+
+    },
     icl: {
       
       small_title1:"更多ICL植入式",

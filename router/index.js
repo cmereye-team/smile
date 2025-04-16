@@ -166,6 +166,14 @@ export const $router = [
     // component: resolve('pages/smilePro/index.vue'),
     component: resolve('pages/new-page/smile-pro.vue')
   },
+
+  {
+    path: '/smileProV2',
+    name: 'smileProV2',
+    title: 'SMILE Pro 微笑激光矯視',
+    // component: resolve('pages/smilePro/index.vue'),
+    component: resolve('pages/new-page/smile-proV2.vue')
+  },
   {
     path: '/vision-correction-presbyopia',
     name: 'vision-correction-presbyopia',
@@ -180,12 +188,19 @@ export const $router = [
     // component: resolve('pages/vision-correction-lasik/index.vue'),
     component: resolve('pages/new-page/lasik.vue')
   },
+  // {
+  //   path: '/vision-correction-icl',
+  //   name: 'vision-correction-icl',
+  //   title: 'ICL 植入式隱形眼鏡',
+  //   // component: resolve('pages/vision-correction-icl/index.vue'),
+  //   component: resolve('pages/new-page/icl.vue')
+  // },
   {
     path: '/vision-correction-icl',
     name: 'vision-correction-icl',
     title: 'ICL 植入式隱形眼鏡',
     // component: resolve('pages/vision-correction-icl/index.vue'),
-    component: resolve('pages/new-page/icl.vue')
+    component: resolve('pages/new-page/iclV2.vue')
   },
   // 新版本路由
   {

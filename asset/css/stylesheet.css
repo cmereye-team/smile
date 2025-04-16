@@ -11,3 +11,10 @@
     font-family: 'Orbitron';
     src: url(../fonts/Orbitron.woff2) format('woff2');
 }
+
+@font-face {
+    font-family: 'ITCAvantGardeProBold';
+    src: url('../fonts/ITCAvantGardePro-Bold.woff') format('woff'); 
+    font-weight: bold;
+    font-style: normal;
+}

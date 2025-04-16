@@ -87,6 +87,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 @media screen and (min-width: 768px) {
   .mbShow {
     display: none;
@@ -94,7 +95,7 @@ export default {
   .head-bg {
     background: #fff;
     width: 100%;
-    z-index: 90;
+    z-index: 102;
     position: fixed;
     top: 0;
     right: 0;

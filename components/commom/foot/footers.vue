@@ -269,6 +269,7 @@ export default {
 //mb
 @media only screen and (max-width: 760px) {
   .foot {
+
     width: 100%;
     display: flex;
     height: 102px;
@@ -311,7 +312,7 @@ export default {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 89;
+    z-index: 102;
     padding: 0;
     width: 100vw;
     // overflow-y: hidden;

@@ -162,7 +162,7 @@
         <div>
           <p>
             <span
-              >©2024 {{ $t("home.footer.span1")
+              >©2025 {{ $t("home.footer.span1")
               }}{{ $t("home.footer.span2") }}</span
             >
             <span>

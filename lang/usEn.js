@@ -15,8 +15,11 @@ module.exports = {
       consumptionDivit: 'DIVIT',
       contactUs: 'Contact Us',
       reservationService: 'Book NOW',
+      reservationServiceV2: "Book NOW",
+
       videos: 'Videos',
       casesSharing: 'Cases Sharing',
+      medicalTeam:"Doctor's referral",
 
       aboutSmileChild_1: 'About the Group & Center',
       aboutSmileChild_2: 'Medical Team',

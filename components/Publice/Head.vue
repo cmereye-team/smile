@@ -154,7 +154,7 @@ export default {
   .head-bg {
     background: #fff;
     width: 100%;
-    z-index: 91;
+    z-index: 102;
     position: fixed;
     top: 0;
     right: 0;
