@@ -139,6 +139,8 @@
         </div>
       </div>
       <div class="lecture-image">
+        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_CT.jpg" alt="5月 中环" />
+        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_MK.jpg" alt="5月 旺角" />
         <img v-if="isBeforeFeb34()" src="https://statichk.cmermedical.com/smile/2025042310325502.webp" alt="5月 中环" />
         <img v-if="isBeforeFeb34()" src="https://statichk.cmermedical.com/smile/2025042310325501.webp" alt="5月 旺角" />
         <img v-if="isBeforeFeb33()" src="https://statichk.cmermedical.com/smile/2025031414400701.webp" alt="4月 中环" />
@@ -274,6 +276,11 @@ export default {
   },
   computed: {},
   methods: {
+    isBeforeFeb35() {
+      const today = new Date();
+      const targetDate = new Date(today.getFullYear(), 5, 30); // 6月
+      return today < targetDate;
+    },
     isBeforeFeb34() {
       const today = new Date();
       const targetDate = new Date(today.getFullYear(), 4, 31); // 5月
@@ -379,14 +386,18 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2025-05-03",
-            "2025-05-07",
-            // "2025-05-10",
             "2025-05-14",
             "2025-05-17",
             '2025-05-21',
             '2025-05-24',
             '2025-05-28',
+            '2025-06-04',
+            '2025-06-07',
+            '2025-06-11',
+            '2025-06-14',
+            '2025-06-21',
+            '2025-06-25',
+            '2025-06-28',
           ];
           break;
         case "smileMongKok":
@@ -396,13 +407,19 @@ export default {
         case "smileProMongKok":
           // smilePro 旺角
           this.allowedDates = [
-            "2025-04-29",
-            "2025-05-10",
             "2025-05-13",
             "2025-05-17",
             "2025-05-19",
             "2025-05-24",
             "2025-05-27",
+            "2025-06-02",
+            "2025-06-07",
+            "2025-06-10",
+            "2025-06-14",
+            "2025-06-16",
+            "2025-06-21",
+            "2025-06-24",
+            "2025-06-28",
           ];
           break;
         case "clearVisionCentral":
@@ -412,11 +429,14 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2025-05-03",
-            "2025-05-06",
             "2025-05-12",
             "2025-05-20",
             "2025-05-26",
+            "2025-06-03",
+            "2025-06-09",
+            "2025-06-17",
+            "2025-06-23",
+            "2025-06-30",
           ];
           break;
         default:
@@ -456,7 +476,11 @@ export default {
           } else if (weekday == "周四") {
             this.morningOrAfternoon = "6:30 下午";
           } else if (weekday == "周六") {
-            this.morningOrAfternoon = "1:30 下午";
+            if (nowDay[5] == 6) {
+              this.morningOrAfternoon = "2:30 下午";
+            } else {
+              this.morningOrAfternoon = "1:30 下午";
+            }
           } else if (weekday == "周一") {
             this.morningOrAfternoon = "6:30 下午";
           }
@@ -465,7 +489,11 @@ export default {
           if (weekday == "周三") {
             this.morningOrAfternoon = "1:30 下午";
           } else if (weekday == "周六") {
-            this.morningOrAfternoon = "3:30 下午";
+            if (nowDay[5] == 6) {
+              this.morningOrAfternoon = "1:30 下午";
+            } else {
+              this.morningOrAfternoon = "3:30 下午";
+            }
           } else if (weekday == "周一") {
             this.morningOrAfternoon = "6:30 下午";
           } else if (weekday == "周二") {
