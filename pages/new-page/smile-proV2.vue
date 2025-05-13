@@ -1056,7 +1056,7 @@
               </div>
             </div>
 
-            <div class="swiper-pagination d-none d-lg-block">
+            <div class="swiper-pagination">
               <div class="swiper-button-next">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -2625,8 +2625,13 @@ i {
           border-radius: 20px;
           z-index: 3;
         }
-
+     .swiper-overflow {
+          overflow: hidden;
+        }
         .swiperWrap {
+          z-index: auto !important;
+          overflow: unset;
+          position: relative;
           .swiper-wrapper {
             align-items: center;
             .swiperWrap-item {
@@ -2723,6 +2728,30 @@ i {
                   line-height: 1.14;
                   letter-spacing: 0.84px;
                 }
+              }
+            }
+          }
+          .swiper-pagination {
+            width:clamp(93px,47.69vw,186px);
+            max-width: 186px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+            & > div {
+              z-index: 9;
+              pointer-events: auto;
+              background-image: none;
+            }
+            .swiper-button-next {
+              right: 0;
+              svg{
+                width: clamp(20px,10.26vw,40px);
+              }
+            }
+            .swiper-button-prev {
+              left: clamp(-16px,-4.10vw,-8px);
+              svg{
+                    width: clamp(20px,10.26vw,40px);
               }
             }
           }
