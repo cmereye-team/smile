@@ -41,7 +41,7 @@
         sizes=" (max-width: 992px) 100vw,1216px"
       />
 
-<!-- <svg width="529" height="529" viewBox="0 0 529 529" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- <svg width="529" height="529" viewBox="0 0 529 529" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_10394_1957)">
 <g opacity="0.4">
 <path d="M223.944 248.847L238.761 241.805L236.584 237.224L217.194 246.44L227.064 267.207L231.637 265.033L223.944 248.847Z" fill="#4570B6"/>
@@ -67,8 +67,6 @@
 </clipPath>
 </defs>
 </svg> -->
-
-
 
       <div class="smile-NewBanner-Title">
         <span>SMILE Pro</span>
@@ -112,8 +110,7 @@
                 }}<span>ZEISS VISUMAX 800 SMILE®pro</span
                 >{{ $t("smile_proV2.p_text4")
                 }}<span class="let">{{ $t("smile_proV2.p_text5") }}</span
-                >{{ $t("smile_proV2.p_text6")
-                }}{{ $t("smile_proV2.p_text6_1")
+                >{{ $t("smile_proV2.p_text6") }}{{ $t("smile_proV2.p_text6_1")
                 }}<span>{{ $t("smile_proV2.p_text7") }}</span
                 >{{ $t("smile_proV2.p_text8") }}
               </p>
@@ -160,12 +157,18 @@
         </div>
         <div class="icl-WhatChoose-content-one-text">
           <p>
-            {{ $t("smile_proV2.WhyChoose_p_text1") }}<span>{{ $t("smile_proV2.WhyChoose_p_text1_1") }}</span>{{ $t("smile_proV2.WhyChoose_p_text1_2") }}
+            {{ $t("smile_proV2.WhyChoose_p_text1")
+            }}<span>{{ $t("smile_proV2.WhyChoose_p_text1_1") }}</span
+            >{{ $t("smile_proV2.WhyChoose_p_text1_2") }}
           </p>
           <p>
             {{ $t("smile_proV2.WhyChoose_p_text2")
-            }}<span>{{ $t("smile_proV2.WhyChoose_p_text3") }}</span>{{ $t("smile_proV2.WhyChoose_p_text4")
-            }}<span>{{ $t("smile_proV2.WhyChoose_p_text5") }}</span>{{ $t("smile_proV2.WhyChoose_p_text6")}}<span>{{ $t("smile_proV2.WhyChoose_p_text7") }}</span>{{ $t("smile_proV2.WhyChoose_p_text8") }}
+            }}<span>{{ $t("smile_proV2.WhyChoose_p_text3") }}</span
+            >{{ $t("smile_proV2.WhyChoose_p_text4")
+            }}<span>{{ $t("smile_proV2.WhyChoose_p_text5") }}</span
+            >{{ $t("smile_proV2.WhyChoose_p_text6")
+            }}<span>{{ $t("smile_proV2.WhyChoose_p_text7") }}</span
+            >{{ $t("smile_proV2.WhyChoose_p_text8") }}
           </p>
         </div>
       </div>
@@ -310,8 +313,8 @@
     <section class="smilepro-difference">
       <div class="smilepro-difference-title">
         <div>
-          SMILE/SMILE PRO/<br class="d-lg-none" />
-          ICL大不同
+          SMILE/SMILE PRO/ICL<br class="d-lg-none" />
+          大不同
         </div>
       </div>
 
@@ -355,15 +358,15 @@
             <td>無</td>
           </tr>
 
-          <tr>
+          <!-- <tr>
             <td>矯視過程<br />痛楚</td>
             <td>無</td>
             <td>無</td>
             <td>無</td>
-          </tr>
+          </tr>  -->
 
           <tr>
-            <td>矯視<br />準確度</td>
+            <td>矯視<br class="d-lg-none" />準確度</td>
             <td>極高</td>
             <td>極高</td>
             <td>極高</td>
@@ -379,7 +382,7 @@
             <td>數天</td>
           </tr>
 
-          <tr>
+          <!-- <tr>
             <td>
               術後<br />
               不適感
@@ -387,7 +390,7 @@
             <td>輕微</td>
             <td>輕微</td>
             <td>無</td>
-          </tr>
+          </tr> -->
 
           <tr>
             <td>
@@ -484,7 +487,10 @@
                   alt=""
                 />
 
-                <p class="content-area-text" v-html="steps[activeStep].text"></p>
+                <p
+                  class="content-area-text"
+                  v-html="steps[activeStep].text"
+                ></p>
               </div>
             </div>
           </div>
@@ -647,13 +653,17 @@
       /></a> -->
     </section>
 
-<!-- 用家见证 -->
+    <!-- 用家见证 -->
     <section class="smile-pro-evaluateV2">
       <div class="smile-pro-evaluateV2-Box">
         <div class="smile-pro-evaluateV2-Box-title">用家見證</div>
 
         <div class="smile-pro-evaluateV2-Box-content">
-          <div v-swiper:mySwiper="swiperOption1" class="swiperWrap">
+          <div
+            v-swiper:mySwiper="swiperOption1"
+            class="swiperWrap"
+            ref="swiperContainer"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide swiperWrap-item">
                 <div>
@@ -1034,7 +1044,6 @@
                       </clipPath>
                     </defs>
                   </svg>
-
                   <p class="swiperWrap-item-text">
                     過程好快好安全，術後康復又快，眼睛兩三日後都已經清，感覺好神奇！
                   </p>
@@ -1044,6 +1053,55 @@
                     <p>Agnes</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination d-none d-lg-block">
+              <div class="swiper-button-next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <circle cx="20" cy="20" r="20" fill="#4570B6" />
+                  <path
+                    d="M11.0008 19.9878L26.9763 19.9878"
+                    stroke="white"
+                    stroke-width="2.69573"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M21.4066 27.3379L28.5027 20.2418L21.6405 13.3796"
+                    stroke="white"
+                    stroke-width="2.42615"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <circle cx="20" cy="20" r="20" fill="#4570B6" />
+                  <path
+                    d="M28.502 20.2598L12.5265 20.2598"
+                    stroke="white"
+                    stroke-width="2.69573"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M19.0961 27.3379L12 20.2418L18.8622 13.3796"
+                    stroke="white"
+                    stroke-width="2.42615"
+                    stroke-linecap="round"
+                  />
+                </svg>
               </div>
             </div>
           </div>
@@ -1333,7 +1391,11 @@ export default {
         loop: true,
         autoplay: {
           delay: 4000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         on: {
           init: function () {
@@ -1350,7 +1412,7 @@ export default {
           992: {
             autoplay: {
               delay: 2500,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             },
             loop: true,
             slidesPerGroup: 1,
@@ -1365,10 +1427,10 @@ export default {
         slidesPerView: 5,
         slidesPerGroup: 1,
         loop: true,
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       },
 
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
@@ -1442,6 +1504,28 @@ export default {
         this.activeStepTimer = null;
       }
     },
+
+    wrapSwiperWrapper() {
+      const container = this.$refs.swiperContainer;
+      const wrapper = container.querySelector(".swiperWrap .swiper-wrapper");
+      const pagination = container.querySelector(
+        ".swiperWrap .swiper-pagination"
+      );
+
+      if (!wrapper) return;
+
+      // 创建新的包裹层
+      const overflowDiv = document.createElement("div");
+      overflowDiv.className = "swiper-overflow";
+      overflowDiv.style.overflow = "hidden";
+      // 将 wrapper 插入到新的包裹层中
+      overflowDiv.appendChild(wrapper);
+      overflowDiv.appendChild(pagination);
+
+      // 清空容器并插入新的结构
+      container.innerHTML = "";
+      container.appendChild(overflowDiv);
+    },
   },
 
   // beforeDestroy() {
@@ -1464,6 +1548,9 @@ export default {
         this.isMobile = false;
       }
     });
+    if (window.innerWidth > 992) {
+      this.wrapSwiperWrapper();
+    }
 
     // this.checkDeviceType();
     // window.addEventListener("resize", this.checkDeviceType);
@@ -1507,7 +1594,7 @@ body {
 i {
   font-style: normal;
 }
-.changehang{
+.changehang {
   display: none;
 }
 @media screen and (min-width: 1139px) {
@@ -1527,7 +1614,6 @@ i {
 }
 
 @media screen and (max-width: 1140px) {
-
   .smile-NewBanner {
     padding: 0 15px;
     margin-top: 80px;
@@ -2046,7 +2132,7 @@ i {
               font-style: normal;
               font-weight: 700;
             }
-            .let{
+            .let {
               letter-spacing: 6.94px;
             }
           }
@@ -2092,8 +2178,8 @@ i {
       // 内容
       .smilepro-four-feature-Box-List {
         margin-top: 40px;
-        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-four-feature/smilepro-four-feature-mobileBg4.avif");       
-       background-repeat: no-repeat;
+        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-four-feature/smilepro-four-feature-mobileBg4.avif");
+        background-repeat: no-repeat;
         background-position: right top;
         background-size: 72%;
 
@@ -2534,10 +2620,10 @@ i {
           top: 0;
           background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
           background-repeat: no-repeat;
-          background-color: white;
           width: 180.251px !important;
           height: 333px;
           border-radius: 20px;
+          z-index: 3;
         }
 
         .swiperWrap {
@@ -2548,11 +2634,14 @@ i {
               & > div {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg.png");
                 background-repeat: no-repeat;
+                background-color: white;
+
                 width: 165px !important;
                 height: 302px;
                 padding: 40px 23.5px 43px;
                 text-align: center;
                 position: relative;
+                z-index: 1;
                 svg {
                   margin: 0 auto;
                   width: 69px;
@@ -2592,8 +2681,8 @@ i {
                 border-radius: 20px;
                 // background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
                 // background-repeat: no-repeat;
-                // background-color: white;
-                background: none;
+                background-color: white;
+                background-image: none;
                 width: 180.251px !important;
                 height: 333px;
                 padding: 48px 29px 46px;
@@ -3170,10 +3259,11 @@ i {
           background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
           background-repeat: no-repeat;
           background-size: cover;
-          background-color: white;
+
           width: 46.22vw !important;
           height: 85.38vw;
-                  border-radius: 5.13vw;
+          border-radius: 5.13vw;
+          z-index: 3;
         }
 
         .swiperWrap {
@@ -3184,12 +3274,13 @@ i {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg.png");
                 background-repeat: no-repeat;
                 background-size: cover;
-
+                background-color: white;
                 width: 42.31vw !important;
                 height: 77.44vw;
                 padding: 10.26vw 6.03vw 11.03vw;
                 text-align: center;
                 position: relative;
+                z-index: 1;
                 svg {
                   margin: 0 auto;
                   width: 17.69vw;
@@ -3231,13 +3322,15 @@ i {
                 // background-repeat: no-repeat;
                 // background-size: cover;
                 // background-color: white;
+                background-color: white;
 
-                background: none;
+                background-image: none;
                 width: 46.22vw !important;
                 height: 85.38vw;
                 padding: 12.31vw 7.44vw 11.79vw;
                 text-align: center;
                 position: relative;
+                z-index: 1;
                 svg {
                   margin: 0 auto;
                   width: 18.97vw;
@@ -3416,7 +3509,7 @@ i {
 
 // pc端
 @media screen and (min-width: 992px) {
-  .changehon{
+  .changehon {
     display: block;
   }
   .d-lg-none {
@@ -3519,8 +3612,8 @@ i {
               font-style: normal;
               font-weight: 700;
             }
-            .let{
-              letter-spacing: clamp(5.45px,0.57vw,10.9px);
+            .let {
+              letter-spacing: clamp(5.45px, 0.57vw, 10.9px);
             }
           }
         }
@@ -3725,14 +3818,14 @@ i {
     }
 
     .custom-comparison-table tbody tr td {
-   color: #60605F;
-text-align: center;
-font-family: "Noto Sans TC";
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-line-height: 1.125; 
-letter-spacing: 1px;
+      color: #60605f;
+      text-align: center;
+      font-family: "Noto Sans TC";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.125;
+      letter-spacing: 1px;
     }
 
     .custom-comparison-table tbody tr > td:nth-child(1) {
@@ -3749,9 +3842,8 @@ letter-spacing: 1px;
 
     .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #5a8ad6;
-
+      font-weight: 700;
       color: #fff;
- 
     }
     // 按钮
     .icl-btn {
@@ -4051,14 +4143,23 @@ letter-spacing: 1px;
           top: 0;
           background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc-active.png");
           background-repeat: no-repeat;
-          background-color: white;
+          // background-color: white;
           width: 300.502px !important;
           height: 552.006px;
           overflow: hidden;
-                  border-radius: 35px;
+          border-radius: 35px;
+          z-index: 3;
         }
-
+        .swiper-overflow {
+          overflow: hidden;
+        }
         .swiperWrap {
+          z-index: auto !important;
+          overflow: unset;
+          .overflow-swiper {
+            overflow: hidden;
+          }
+
           .swiper-wrapper {
             align-items: center;
             width: 100%;
@@ -4075,6 +4176,7 @@ letter-spacing: 1px;
               & > div {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc.png");
                 background-repeat: no-repeat;
+
                 width: 206.662px !important;
                 height: 378.96px;
                 flex-shrink: 0;
@@ -4124,7 +4226,9 @@ letter-spacing: 1px;
                 // background-repeat: no-repeat;
                 background-image: none;
                 // background-color: white;
-                width:274px !important;
+                background-color: white;
+
+                width: 274px !important;
                 height: 552.006px;
                 flex-shrink: 0;
                 padding: 79px 36px 77px;
@@ -4170,6 +4274,23 @@ letter-spacing: 1px;
               }
             }
           }
+          .swiper-pagination {
+            width: 300.502px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+            & > div {
+              z-index: 9;
+              pointer-events: auto;
+              background-image: none;
+            }
+            .swiper-button-next {
+              right: 0;
+            }
+            .swiper-button-prev {
+              left: -14px;
+            }
+          }
         }
       }
     }
@@ -4177,12 +4298,12 @@ letter-spacing: 1px;
 }
 
 @media screen and (min-width: 1140px) {
-   .head-bg{
+  .head-bg {
     position: fixed;
-      top: 0;
+    top: 0;
     right: 0;
     left: 0;
-   }
+  }
   .d-xl-none {
     display: none;
   }
@@ -4198,9 +4319,9 @@ letter-spacing: 1px;
     img {
       width: 500px;
       position: absolute;
-            top: -27px;
-        left: inherit;
-        right: 239px;
+      top: -27px;
+      left: inherit;
+      right: 239px;
     }
 
     .smile-NewBanner-Title {
@@ -4255,6 +4376,8 @@ letter-spacing: 1px;
         font-weight: 700;
         line-height: 30px; /* 150% */
         letter-spacing: 4px;
+        position: relative;
+        top: 2px;
       }
       & > div:nth-child(2) {
         border-radius: 5px;

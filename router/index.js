@@ -159,20 +159,28 @@ export const $router = [
     // component: resolve('pages/vision-correction/relex-smile/index.vue'),
     component: resolve('pages/new-page/smile.vue')
   },
+  // {
+  //   path: '/smilePro',
+  //   name: 'smilePro',
+  //   title: 'SMILE Pro 微笑激光矯視',
+  //   // component: resolve('pages/smilePro/index.vue'),
+  //   component: resolve('pages/new-page/smile-pro.vue')
+  // },
+
   {
     path: '/smilePro',
     name: 'smilePro',
     title: 'SMILE Pro 微笑激光矯視',
     // component: resolve('pages/smilePro/index.vue'),
-    component: resolve('pages/new-page/smile-pro.vue')
+    component: resolve('pages/new-page/smile-proV2.vue')
   },
 
   {
-    path: '/smileProV2',
-    name: 'smileProV2',
-    title: 'SMILE Pro 微笑激光矯視',
+    path: '/cmerCerter',
+    name: 'cmerCerter',
+    title: '矯視中心',
     // component: resolve('pages/smilePro/index.vue'),
-    component: resolve('pages/new-page/smile-proV2.vue')
+    component: resolve('pages/new-page/cmerCerter.vue')
   },
   {
     path: '/vision-correction-presbyopia',
@@ -180,6 +188,13 @@ export const $router = [
     title: 'CMER CLEAR-Vision',
     // component: resolve('pages/vision-correction-presbyopia/index.vue'),
     component: resolve('pages/new-page/clear-vision.vue')
+  },
+  {
+    path: '/vision-correction-presbyopiaV2',
+    name: 'vision-correction-presbyopiaV2',
+    title: 'CMER CLEAR-Vision',
+    // component: resolve('pages/vision-correction-presbyopia/index.vue'),
+    component: resolve('pages/new-page/clear-visionV2.vue')
   },
   {
     path: '/vision-correction-lasik',
@@ -213,7 +228,7 @@ export const $router = [
     path: '/smile-pro',
     name: 'new-page/smile-pro',
     title: 'SMILE-Pro  微笑激光矯視',
-    component: resolve('pages/new-page/smile-pro.vue')
+    component: resolve('pages/new-page/smile-proV2.vue')
   },
   {
     path: '/clear-vision',

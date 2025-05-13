@@ -400,7 +400,7 @@ export default {
       const targetArea = this.$refs.targetArea;
       targetArea.classList.remove("d-none");
       gsap.set(targetArea, {
-        x: 0,
+
         rotation: 0,
       });
 
@@ -501,7 +501,7 @@ export default {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%) ;
       svg {
         margin: 0 auto;
       }
@@ -672,7 +672,7 @@ export default {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) ;
+      transform: translate(-50%, -50%) translate(0px, -0.125px) !important;
       svg {
         margin: 0 auto;
       }

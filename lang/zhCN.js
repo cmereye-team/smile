@@ -517,7 +517,7 @@ module.exports = {
     title2: "如你符合以上描述，",
     title2_1: "你应考虑选择SMILE PRO!",
     table: {
-      title1: "一图看清SMILE",
+      title1: "一图看清SMILE,",
       title2: "真实明星用家个案分享",
 
       headersName1: "微笑矫视",
