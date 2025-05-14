@@ -1578,6 +1578,7 @@ export default {
 <style >
 body {
   overflow-x: hidden;
+    background: white;
 }
 </style>
 <style lang="scss" scoped>
@@ -1597,6 +1598,7 @@ i {
 .changehang {
   display: none;
 }
+
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
