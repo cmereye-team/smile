@@ -16,6 +16,20 @@ export const $router = [
   //   title: '集團及中心簡介',
   //   component: resolve('pages/group-profile/index.vue'),
   // },
+
+  {
+    path: "/error",
+    name: "404",
+    title: "404",
+    component: resolve("pages/newError.vue"),
+  },
+    {
+    path: "*",
+    name: "404",
+    title: "404",
+    component: resolve("pages/newError.vue"),
+  },
+
   {
     path: "/our-medical-team",
     name: "our-medical-team",

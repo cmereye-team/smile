@@ -13,6 +13,13 @@ $color-primary: #4d007d;
 $color-yellow: #facc15;
 $color-stone-50: #fafaf9;
 $color-stone-800: #292524;
+@media screen and (min-width:768px) {
+   .head-bg{
+  position: fixed;
+  top: 0;
+}
+}
+
 
 /* 404页面容器 */
 .newErrorPage {
@@ -344,7 +351,8 @@ $color-stone-800: #292524;
 
 
 <template>
-  <div class="lasik">
+<no-ssr>
+ <div class="lasik">
     <!-- <Head /> -->
     <HeadV2 />
 
@@ -385,6 +393,8 @@ $color-stone-800: #292524;
     <!-- <Footer /> -->
     <FooterMobile />
   </div>
+</no-ssr>
+ 
 </template>
 <script>
 import Head from "@/components/Publice/Head.vue";

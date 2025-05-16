@@ -116,6 +116,7 @@ export default {
     { src: "~plugins/wow.js", ssr: false },
 
     { src: "./router/beforeEach.js", ssr: false },
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
