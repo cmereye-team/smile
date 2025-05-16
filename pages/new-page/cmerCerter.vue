@@ -896,10 +896,11 @@
                 <h5>用戶評分</h5>
                 <div v-swiper:mySwiper="swiperOptions" class="swiperWrapList">
                   <div class="swiper-wrapper">
-                    <div
+                    <a
                       class="swiper-slide"
                       v-for="(item, index) in evaluateList"
                       :key="index"
+                      :href="item.href"
                     >
                       <div class="swiperWrapList-item">
                         <p class="swiperWrapList-item-text">
@@ -970,7 +971,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1189,8 +1190,7 @@
 
     <MarqueeCarousel></MarqueeCarousel>
 
-
-        <section class="CaseSharingV2">
+    <section class="CaseSharingV2">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -1428,98 +1428,134 @@ export default {
       },
       userShare: [
         {
-          type: "SMILE",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
-        },
-        {
           type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
-        },
-
-        {
-          type: "CLEAR-Vision",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
-        },
-
-        {
-          type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
+          href: "https://youtu.be/fNSShYa7nKk",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem1.avif",
+          text: ["依家一擘大眼就見到", "好清楚嘅世界，好立體"],
           nameEn: "Kathy",
           nameCn: "王頌茵",
         },
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
+          href: "https://youtu.be/TBI6J31JwJQ",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem2.avif",
+          text: ["做咗就可以好似我依家", "咁方便㗎喇"],
+          nameEn: "Carmen",
+          nameCn: "倪嘉雯",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/vxeN1wXeZ5M",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem3.avif",
+          text: ["好舒服之下就完成咗成", "個過程"],
+          nameEn: "Maggie",
+          nameCn: "米姬",
         },
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
+          href: "https://youtu.be/I2sl4GWqg1w",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif",
+          text: ["眼鏡由「必須品」", "變「奢侈品」"],
+          nameEn: "",
+          nameCn: "麥沛東",
         },
 
         {
-          type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
+          type: "SMILE Pro",
+          href: "",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem5.avif",
+          text: ["無哂Con帶嚟嘅麻煩，", "促進咗眼神交流"],
+          nameEn: "",
+          nameCn: "Anson Au",
         },
+
         {
-          type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
+          type: "SMILE",
+          href: "https://www.youtube.com/watch?v=JCzzO4Y0kko",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem6.avif",
           text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
+          nameEn: "Ada",
+          nameCn: "姜咏鑫",
         },
+
         {
-          type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
+          type: "SMILE Pro",
+          href: "https://www.youtube.com/watch?v=1p5Qm_772jI",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem7.avif",
+          text: ["做完SMILE Pro", "上舞台都唔會驚光"],
+          nameEn: "",
+          nameCn: "細貓",
         },
+
+
+
+        
         {
-          type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
+          type: "SMILE Pro",
+          href: "https://youtu.be/kVEJ-PN4AJo",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem8.avif",
+          text: ["我問自己點解唔早啲做", "SMILE Pro呢!"],
+          nameEn: "",
+          nameCn: "Cindy Wong",
         },
+        
         {
-          type: "ICL",
-          href: "https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-item2.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
+          type: "SMILE Pro",
+          href: "https://youtu.be/VoGlE1dJPhc",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem9.avif",
+          text: ["做完幾個月視力都維持", "到非常之清"],
+          nameEn: "",
+          nameCn: "Pinky",
         },
+        
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/1Ic0z7wiVv8",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem10.avif",
+          text: ["唔洗花時間戴Con，可", "以直接出門練習，非常","方便"],
+          nameEn: "Tiffany",
+          nameCn: "鄧伊程",
+        },
+        
+        {
+          type: "SMILE",
+          href: "https://youtu.be/tLsWfdZy4P4",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem11.avif",
+          text: ["一行出去已經感受到，", "原來我望嘢可以","咁清楚!"],
+          nameEn: "",
+          nameCn: "馬燕茹",
+        },
+        
+        {
+          type: "SMILE",
+          href: "https://youtu.be/_wk_gZGzB1s",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem12.avif",
+          text: ["睇嘢清咗，一個簡單", "眼神已經可以即刻傳波","俾隊友，射波亦","更容易集中"],
+          nameEn: "",
+          nameCn: "李旭川",
+        },
+        
+        {
+          type: "SMILE",
+          href: "https://youtu.be/TGxol6pNXSY",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem13.avif",
+          text: ["就算落雨都唔會再影響", "到我跑步嘅心情"],
+          nameEn: "",
+          nameCn: "黃啟樂",
+        },
+        
+        {
+          type: "SMILE",
+          href: "https://youtu.be/CJEE6UQKPes",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem14.avif",
+          text: ["唔洗戴Con係一種", "解脫!可以好瀟灑咁","出門口"],
+          nameEn: "",
+          nameCn: "尹焯熙",
+        },
+      
       ],
 
       swiperOptions: {
@@ -1538,115 +1574,53 @@ export default {
 
       evaluateList: [
         {
-          name: "Wylie Kwong",
+          name: "Kate",
+          href:"https://g.co/kgs/Ais2ge6",
           date: "2月1日12:07",
-          commit: "Good service and outcome",
-        },
-        {
-          name: "Kathy Cheung",
-          date: "5月3日11:42",
-          commit:
-            "Really good experience overall! Clear explanation before, during and after operation.Staff was friendly and patient! Already recommended CMER to my family members",
-        },
-        {
-          name: "Marco Lau",
-          date: "4月24日11:41",
-          commit:
-            "Very professional service, clear explanation from the doctor and great follow up! Highly recommended!",
-        },
-        {
-          name: "Kei Kei Tam",
-          date: "3月27日 15:44",
-          commit:
-            "The service here is excellence with comprehensive assessment and follow up.The surgeon is professional with good explanation of procedures and great surgical outcome.I would definitely recommend this clinic for smile!",
+          commit: "推薦 Smile Pro 手術，醫生和診所護士十分專業和細心。術前檢查充足，手術過程迅速，術後都有專人跟進情況，十分安心。",
         },
 
-        {
-          name: "覃森仲",
-          date: "3月21日17:55",
-          commit: this.$t("home.evaluateList[4].commit"),
+               {
+          name: "Andy",
+          href:"https://g.co/kgs/yAzUwfK",
+          date: "2月1日12:07",
+          commit: "做手術過程好smooth, 術後嘅護理同複診都跟進得足。視力已經完全去翻正常人程度",
         },
-        {
-          name: "Helen Tsui",
-          date: "3月2日11:07",
-          commit:
-            "The procedure was very professional and would definitely recommend to my friends.",
+
+
+               {
+          name: "Milk",
+          href:"https://g.co/kgs/7kMRjJ5",
+          date: "2月1日12:07",
+          commit: "由預約到術後覆診流程都十分順暢。診所內職員每一個步驟講解十分清楚，令手術當日都沒有太大緊張感",
         },
-        {
-          name: "Gary Wong",
-          date: "3月6日15:45",
-          commit: "Excellent services and the doctor has been perfect.",
+
+               {
+          name: "Eileen",
+          href:"https://g.co/kgs/vECv4wB",
+          date: "2月1日12:07",
+          commit: "診所位置方便，旺角及中環都有手術過程安全及快捷醫生講解亦十分細心是你選擇矯視中心的一個安心的選擇",
         },
-        {
-          name: "June Wong",
-          date: "1月10日12:30",
-          commit:
-            "My son had a great experience and they provided a very supportive environment for his recovery.",
+               {
+          name: "Nam",
+          href:"https://g.co/kgs/CyiwQGb",
+          date: "2月1日12:07",
+          commit: "術前檢查全面、準備充足；術間操作穩定專業，十分安心；術後貼心跟進。",
         },
-        {
-          name: "Siu Chun Wong",
-          date: "1月22日15:46",
-          commit: this.$t("home.evaluateList[8].commit"),
+               {
+          name: "Bobo",
+          href:"https://g.co/kgs/S3w8ubm",
+          date: "2月1日12:07",
+          commit: "環境幾好👍🏻 術後檢查做得很足。so far 做完icl 一個月後 都暫時沒有好唔舒服。無後悔做呢個選擇",
         },
-        {
-          name: "Bear Teddy",
-          date: "2023年12月18日17:40",
-          commit:
-            "Everything has been great and handled professionally.Im glad that my vision has been greatly improved.Would definately recommend this clinic to everyone.",
+               {
+          name: "Vincy",
+          href:"https://g.co/kgs/vjM7NyN",
+          date: "2月1日12:07",
+          commit: "好開心唔需要再戴眼鏡，生活便利，特別係大熱天時👍🏻",
         },
-        {
-          name: "Stephanie Man",
-          date: "2023年8月12日  16:16",
-          commit:
-            "The doctors and the staff are amazing - felt very cared for throughout the process, both pre - op and post - op.Dr Chow and the nurses are very professional and know how to ease the patients’ anxiety.",
-        },
-        {
-          name: this.$t("home.evaluateList[11].name"),
-          date: "2023年11月22日  16:43",
-          commit: this.$t("home.evaluateList[11].commit"),
-        },
-        {
-          name: "Kalok Tang",
-          date: "2023年11月15日  10:37",
-          commit:
-            "the checking is good and the process is smooth that I don’t have any uncomfortable after doing the surgery.The doctor gave suggestions in details and I had a good experience.",
-        },
-        {
-          name: this.$t("home.evaluateList[13].name"),
-          date: "2023年7月25日 12:36",
-          commit: this.$t("home.evaluateList[13].commit"),
-        },
-        {
-          name: "Grace Leung",
-          date: "2023年6月9日  16:45",
-          commit: this.$t("home.evaluateList[14].commit"),
-        },
-        {
-          name: this.$t("home.evaluateList[15].name"),
-          date: "2023年11月9日 11:26",
-          commit: "Smooth procedures and good effects.",
-        },
-        {
-          name: this.$t("home.evaluateList[16].name"),
-          date: "2023年11月28日  11:04",
-          commit: "Doctor Chow is nice.The nurses are also very nice.",
-        },
-        {
-          name: "Jane Ross",
-          date: "2023年11月27日 12:42",
-          commit:
-            "Thanks for providing the professional service! Highly recommended!!!",
-        },
-        {
-          name: "Twining Snow",
-          date: "2023年10月11日  15:35",
-          commit: "The result is absolutely amazing!",
-        },
-        {
-          name: "Quanxiang Xian",
-          date: "2023年7月6日  11:39",
-          commit: this.$t("home.evaluateList[19].commit"),
-        },
+
+       
       ],
 
       isMobile: false,
@@ -1742,8 +1716,7 @@ export default {
       }
     },
 
-
-   async copyCurrentUrl() {
+    async copyCurrentUrl() {
       try {
         const textArea = document.createElement("textarea");
         textArea.value = window.location.href;
@@ -1761,9 +1734,6 @@ export default {
         console.error("复制失败:", error);
       }
     },
-
-
-
   },
   beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
@@ -2527,8 +2497,7 @@ i {
     }
   }
 
-
-    .CaseSharingV2 {
+  .CaseSharingV2 {
     width: fit-content;
 
     margin: 0 auto;
@@ -2663,7 +2632,7 @@ i {
 
   // 矯視中心服務
   .centerSevice-service {
-    margin-top: clamp(97px, 10.1vw, 194px);
+    margin-top: clamp(50px, 5.21vw, 100px);
     .centerSevice-service-title {
       text-align: center;
       color: #4570b6;
@@ -3357,7 +3326,7 @@ i {
   }
 
   // 分享给朋友
-  .CaseSharingV2{
+  .CaseSharingV2 {
     display: none;
   }
 }
@@ -3374,6 +3343,7 @@ i {
         .UserShareBox-list {
           max-width: calc(100vw - calc(100vw - 1320px) / 2);
           width: fit-content;
+          padding-right: 85px;
         }
       }
     }

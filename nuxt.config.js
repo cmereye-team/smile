@@ -6,7 +6,6 @@ import beforeRouter from "./router/beforeEach.js";
 
 export default {
   router,
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "希瑪微笑矯視中心",
