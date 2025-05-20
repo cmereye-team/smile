@@ -170,14 +170,18 @@
           <p>您的視力 • 我們的使命</p>
         </div>
         <div class="centerIntroBox-bottom">
-          香港希瑪微笑矯視中心為上市公司「香港希瑪眼科集團」旗下的屈光矯視醫療中心。
+          希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的屈光矯視醫療中心。
           <br
             class="d-none d-lg-block"
-          />團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。<br
+          />中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。<br
             class="d-none d-lg-block"
-          />於香港擁有3間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。<br
+          />於香港擁有2間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。
+          <br
             class="d-none d-lg-block"
-          />提供一站式眼科專科醫療及矯視服務，包括：SMILE微笑激光矯視、LASIK激光矯視、ICL植入式隱形眼鏡、老花矯視等。
+          />提供一站式眼科專科醫療及矯視服務，包括：SMILE / SMILE
+          Pro微笑激光矯視、<br
+            class="d-none d-lg-block"
+          />ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。
         </div>
       </div>
     </section>
@@ -208,32 +212,62 @@
             </a>
           </div>
 
-          <nuxt-link
-            to="/patient-info"
-            class="centerSevice-btn d-none d-lg-block"
-          >
-            <span> 診症須知 </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="29"
-              height="29"
-              viewBox="0 0 29 29"
-              fill="none"
+          <div class="centerSevice-btn-List">
+            <nuxt-link
+              to="/patient-info"
+              class="centerSevice-btn d-none d-lg-block"
             >
-              <path
-                d="M2.8501 26.0597L25.4787 3.43115"
-                stroke="white"
-                stroke-width="5.4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M6.14746 2.71118H26.2501V22.1512"
-                stroke="white"
-                stroke-width="4.86"
-                stroke-linecap="round"
-              />
-            </svg>
-          </nuxt-link>
+              <span> 診症須知 </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="29"
+                viewBox="0 0 29 29"
+                fill="none"
+              >
+                <path
+                  d="M2.8501 26.0597L25.4787 3.43115"
+                  stroke="white"
+                  stroke-width="5.4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6.14746 2.71118H26.2501V22.1512"
+                  stroke="white"
+                  stroke-width="4.86"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </nuxt-link>
+
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-15)%E7%9F%AF%E8%A6%96%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+              class="centerSevice-btn centerSevice-btnTwo d-none d-lg-block"
+            >
+              <span>預約術前諮詢</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="29"
+                viewBox="0 0 29 29"
+                fill="none"
+              >
+                <path
+                  d="M2.8501 26.0597L25.4787 3.43115"
+                  stroke="white"
+                  stroke-width="5.4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6.14746 2.71118H26.2501V22.1512"
+                  stroke="white"
+                  stroke-width="4.86"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="centerSevice-mb">
           <div class="centerSevice-mb-List">
@@ -248,9 +282,44 @@
                 <p v-for="(text, i) in item.textmb" :key="i">{{ text }}</p>
               </div>
             </a>
+
+            <div class="centerSevice-mb-newbtn">
+              <nuxt-link to="/patient-info" class="centerSevice-mb-btn-xuzhi">
+              
+                <p>診症須知</p>
+              </nuxt-link>
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-15)%E7%9F%AF%E8%A6%96%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+                class="centerSevice-btn centerSevice-btn-zixun"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                >
+                  <path
+                    d="M2.8501 26.0597L25.4787 3.43115"
+                    stroke="white"
+                    stroke-width="5.4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6.14746 2.71118H26.2501V22.1512"
+                    stroke="white"
+                    stroke-width="4.86"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span>預約術前諮詢</span>
+              
+              </a>
+            </div>
           </div>
 
-          <nuxt-link to="/patient-info" class="centerSevice-mb-btn">
+          <!-- <nuxt-link to="/patient-info" class="centerSevice-mb-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -272,7 +341,7 @@
               />
             </svg>
             <p>診症須知</p>
-          </nuxt-link>
+          </nuxt-link> -->
         </div>
       </div>
     </div>
@@ -745,19 +814,18 @@
               class="fourFeature-Box-List-svg-top d-lg-none"
               xmlns="http://www.w3.org/2000/svg"
               width="2"
-              height="158"
-              viewBox="0 0 2 158"
+              height="184"
+              viewBox="0 0 2 184"
               fill="none"
             >
               <path
-                d="M0.964844 1.04248L0.964837 157.037"
+                d="M0.832031 0.783325L0.832023 183"
                 stroke="#4570B6"
                 stroke-width="1.43995"
                 stroke-linecap="round"
                 stroke-dasharray="0.48 4.32"
               />
             </svg>
-
             <svg
               class="fourFeature-Box-List-svg-bottom d-none d-lg-block"
               xmlns="http://www.w3.org/2000/svg"
@@ -779,12 +847,12 @@
               class="fourFeature-Box-List-svg-bottom d-lg-none"
               xmlns="http://www.w3.org/2000/svg"
               width="2"
-              height="158"
-              viewBox="0 0 2 158"
+              height="185"
+              viewBox="0 0 2 185"
               fill="none"
             >
               <path
-                d="M0.964844 1.19592L0.964837 157.19"
+                d="M0.832031 1.54761L0.832023 183.764"
                 stroke="#4570B6"
                 stroke-width="1.43995"
                 stroke-linecap="round"
@@ -812,13 +880,13 @@
             <svg
               class="fourFeature-Box-List-svg-center d-lg-none"
               xmlns="http://www.w3.org/2000/svg"
-              width="334"
+              width="390"
               height="2"
-              viewBox="0 0 334 2"
+              viewBox="0 0 390 2"
               fill="none"
             >
               <path
-                d="M0.892578 1.11621H333.04"
+                d="M1 1H389"
                 stroke="#4570B6"
                 stroke-width="1.43995"
                 stroke-linecap="round"
@@ -834,19 +902,37 @@
       <div class="new-container container UserShareContainer">
         <div class="UserShareBox">
           <div class="UserShareBox-title">
-            <h3>用戶分享</h3>
+            <h3>用家分享</h3>
             <div class="UserShareBox-title-text">
               <img
+                class="d-block wow fadeInLeft"
+                decoding="async"
+                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png"
+                alt=""
+                loading="lazy"
+                width="100%"
+                height="100%"
+                srcset="
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 400w,
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 640w,
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png
+                "
+                sizes=" (max-width: 992px) 100vw,1216px"
+              />
+
+              <!-- 
+
+              <img
                 class="d-lg-none"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-title-mb.png"
+                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.png"
                 alt=""
               />
               <img
                 class="d-none d-lg-block"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-title-pc.png"
+                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png"
                 alt=""
-              />
-              <p>聽聽各位星級名人的用後感。</p>
+              /> -->
+              <p>聽聽各位真實用家親身感受</p>
             </div>
           </div>
 
@@ -894,7 +980,11 @@
             <div class="new-container">
               <div class="UserRatingBox-top-content">
                 <h5>用戶評分</h5>
-                <div v-swiper:mySwiper="swiperOptions" class="swiperWrapList">
+                <div
+                  v-swiper:mySwiper="swiperOptions"
+                  ref="evaluateList"
+                  class="swiperWrapList"
+                >
                   <div class="swiper-wrapper">
                     <a
                       class="swiper-slide"
@@ -982,7 +1072,8 @@
               <h4>預約服務</h4>
 
               <p class="UserRatingBox-bottom-content">
-                矯視前先要進行全面術前眼睛檢查，包括屈光檢查、全面眼底檢查、醫生會診為你的眼睛狀況評估及提供矯視方案建議等。如有興趣進行矯視，立即WhatsApp預約我們的術前眼睛檢查服務。如想了解更多有關SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式有疑問，歡迎預約我們矯視中心的講座了解更多。
+                矯視前先要進行全面術前眼睛檢查，包括屈光檢查、全面眼底檢查、醫生會診為你的眼睛狀況評估及提供矯視方案建議等。如有興趣進行矯視，立即WhatsApp預約我們的術前眼睛檢查服務。如想了解更多有關SMILE
+                Pro/SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式有疑問，歡迎預約我們矯視中心的講座了解更多。
               </p>
 
               <div class="UserRatingBox-Link">
@@ -1172,7 +1263,7 @@
               </div>
             </div>
             <div class="UserRatingBox-bottom-bottom">
-              <img
+              <!-- <img
                 class="d-lg-none"
                 src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-img-mb.webp"
                 alt=""
@@ -1181,7 +1272,17 @@
                 class="d-none d-lg-block"
                 src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-img-pc.avif"
                 alt=""
-              />
+              /> -->
+
+       <img  decoding="async"
+                    src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-pc.avif" alt="" loading="lazy"
+                  width="100%" height="100%" srcset="
+            https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-mb.avif 400w,
+            https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-mb.avif 640w,
+            https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-pc.avif,
+" sizes=" (max-width: 992px) 100vw,1216px">
+
+
             </div>
           </div>
         </div>
@@ -1390,30 +1491,28 @@ export default {
 
         {
           title: "SMILE<br/>PRO",
-          text: ["適合", "擔心眼睛無法對焦太久"],
-          textmb: ["適合", "擔心眼睛無法對焦太久"],
+          text: ["適合", "擔心眼睛無法", "對焦太久"],
+          textmb: ["適合", "擔心眼睛無法", "對焦太久"],
           link: "/smilePro",
         },
 
         {
           title: "ICL",
-          text: ["適合", "1400度以下近視", "600度以下散光"],
-          textmb: ["適合", "1400度以下近視", "600度以下散光"],
-          link: "/vision-correction-icl",
-        },
-
-        {
-          title: "LASIK",
           text: ["適合", "1800度以下近視", "1000度以遠視", "600度以下散光"],
           textmb: ["適合", "1800度以下近視", "1000度以遠視", "600度以下散光"],
-          link: "/vision-correction-lasik",
+          link: "/vision-correction-icl",
         },
-
         {
           title: "CLEAR<br/>VISION",
-          text: ["適合", "39歲以上有老花", "同時有近視/遠視/散光問題"],
+          text: ["適合", "39歲以上有老花", "同時有近視/遠視/", "散光問題"],
           textmb: ["適合", "39歲以上有老花", "同時有近視/", "遠視/散光問題"],
           link: "/vision-correction-presbyopia",
+        },
+        {
+          title: "LASIK",
+          text: ["適合", "1400度以下近視", "600度以下遠視", "600度以下散光"],
+          textmb: ["適合", "1400度以下近視", "600度以下遠視", "600度以下散光"],
+          link: "/vision-correction-lasik",
         },
       ],
       isDragging: false,
@@ -1465,7 +1564,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "",
+          href: "https://youtu.be/10KYv_gGgWM",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem5.avif",
           text: ["無哂Con帶嚟嘅麻煩，", "促進咗眼神交流"],
           nameEn: "",
@@ -1490,9 +1589,6 @@ export default {
           nameCn: "細貓",
         },
 
-
-
-        
         {
           type: "SMILE Pro",
           href: "https://youtu.be/kVEJ-PN4AJo",
@@ -1501,7 +1597,7 @@ export default {
           nameEn: "",
           nameCn: "Cindy Wong",
         },
-        
+
         {
           type: "SMILE Pro",
           href: "https://youtu.be/VoGlE1dJPhc",
@@ -1510,34 +1606,39 @@ export default {
           nameEn: "",
           nameCn: "Pinky",
         },
-        
+
         {
           type: "SMILE Pro",
           href: "https://youtu.be/1Ic0z7wiVv8",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem10.avif",
-          text: ["唔洗花時間戴Con，可", "以直接出門練習，非常","方便"],
+          text: ["唔洗花時間戴Con，可", "以直接出門練習，非常", "方便"],
           nameEn: "Tiffany",
           nameCn: "鄧伊程",
         },
-        
+
         {
           type: "SMILE",
           href: "https://youtu.be/tLsWfdZy4P4",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem11.avif",
-          text: ["一行出去已經感受到，", "原來我望嘢可以","咁清楚!"],
+          text: ["一行出去已經感受到，", "原來我望嘢可以", "咁清楚!"],
           nameEn: "",
           nameCn: "馬燕茹",
         },
-        
+
         {
           type: "SMILE",
           href: "https://youtu.be/_wk_gZGzB1s",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem12.avif",
-          text: ["睇嘢清咗，一個簡單", "眼神已經可以即刻傳波","俾隊友，射波亦","更容易集中"],
+          text: [
+            "睇嘢清咗，一個簡單",
+            "眼神已經可以即刻傳波",
+            "俾隊友，射波亦",
+            "更容易集中",
+          ],
           nameEn: "",
           nameCn: "李旭川",
         },
-        
+
         {
           type: "SMILE",
           href: "https://youtu.be/TGxol6pNXSY",
@@ -1546,22 +1647,22 @@ export default {
           nameEn: "",
           nameCn: "黃啟樂",
         },
-        
+
         {
           type: "SMILE",
           href: "https://youtu.be/CJEE6UQKPes",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem14.avif",
-          text: ["唔洗戴Con係一種", "解脫!可以好瀟灑咁","出門口"],
+          text: ["唔洗戴Con係一種", "解脫!可以好瀟灑咁", "出門口"],
           nameEn: "",
           nameCn: "尹焯熙",
         },
-      
       ],
 
       swiperOptions: {
         loop: true, // 开启无限循环
         slidesPerView: "auto",
         spaceBetween: 0,
+        pauseOnHover: true,
         autoplay: {
           delay: 0, // 延迟时间为 0，立即开始滚动
           disableOnInteraction: false, // 用户操作后不停止自动播放
@@ -1570,57 +1671,99 @@ export default {
         freeMode: true, // 启用自由模式
         allowTouchMove: true, // 禁用触摸滑动
         direction: "vertical", // 水平方向滚动
+        on: {
+          init: function () {
+            const swiper = this;
+            // 绑定鼠标事件（需要在 DOM 上操作）
+            const container = document.querySelector(".swiperWrapList");
+            if (container) {
+              container.addEventListener("mouseenter", () => {
+                swiper.autoplay.stop();
+              });
+
+              container.addEventListener("mouseleave", () => {
+                swiper.autoplay.start();
+              });
+            }
+          },
+        },
       },
 
       evaluateList: [
         {
+          name: "Yee",
+          href: "https://g.co/kgs/vjM7NyN",
+          date: "2月1日12:07",
+          commit:
+            "成個手術都有清楚指引👍🏻醫生同姑娘們都超好 勁有耐性so far 術後以黎都完全無問題👍🏻👍🏻👍🏻",
+        },
+        {
+          name: "Wing",
+          href: "https://g.co/kgs/rgifBJJ",
+          date: "2月1日12:07",
+          commit:
+            "手術過程順暢✨隻眼都復原好快術後嘅跟進都好貼🙆🏻‍♀️想做矯視都可以考慮一下呢間✨",
+        },
+
+        {
+          name: "Benedict",
+          href: "https://g.co/kgs/5BgAuFF",
+          date: "2月1日12:07",
+          commit:
+            "過程好順利，工作人員都解釋得好清楚有啲咩突發嘢手術人員都處理得好瞬速同有效可能效果因人而異，但係起碼我眼乾情況唔算嚴重😃可以接受嘅同埋都恢復得快",
+        },
+
+        {
           name: "Kate",
-          href:"https://g.co/kgs/Ais2ge6",
+          href: "https://g.co/kgs/Ais2ge6",
           date: "2月1日12:07",
-          commit: "推薦 Smile Pro 手術，醫生和診所護士十分專業和細心。術前檢查充足，手術過程迅速，術後都有專人跟進情況，十分安心。",
+          commit:
+            "推薦 Smile Pro 手術，醫生和診所護士十分專業和細心。術前檢查充足，手術過程迅速，術後都有專人跟進情況，十分安心。",
         },
 
-               {
+        {
           name: "Andy",
-          href:"https://g.co/kgs/yAzUwfK",
+          href: "https://g.co/kgs/yAzUwfK",
           date: "2月1日12:07",
-          commit: "做手術過程好smooth, 術後嘅護理同複診都跟進得足。視力已經完全去翻正常人程度",
+          commit:
+            "做手術過程好smooth, 術後嘅護理同複診都跟進得足。視力已經完全去翻正常人程度",
         },
 
-
-               {
+        {
           name: "Milk",
-          href:"https://g.co/kgs/7kMRjJ5",
+          href: "https://g.co/kgs/7kMRjJ5",
           date: "2月1日12:07",
-          commit: "由預約到術後覆診流程都十分順暢。診所內職員每一個步驟講解十分清楚，令手術當日都沒有太大緊張感",
+          commit:
+            "由預約到術後覆診流程都十分順暢。診所內職員每一個步驟講解十分清楚，令手術當日都沒有太大緊張感",
         },
 
-               {
+        {
           name: "Eileen",
-          href:"https://g.co/kgs/vECv4wB",
+          href: "https://g.co/kgs/vECv4wB",
           date: "2月1日12:07",
-          commit: "診所位置方便，旺角及中環都有手術過程安全及快捷醫生講解亦十分細心是你選擇矯視中心的一個安心的選擇",
+          commit:
+            "診所位置方便，旺角及中環都有手術過程安全及快捷醫生講解亦十分細心是你選擇矯視中心的一個安心的選擇",
         },
-               {
+        {
           name: "Nam",
-          href:"https://g.co/kgs/CyiwQGb",
+          href: "https://g.co/kgs/CyiwQGb",
           date: "2月1日12:07",
-          commit: "術前檢查全面、準備充足；術間操作穩定專業，十分安心；術後貼心跟進。",
+          commit:
+            "術前檢查全面、準備充足；術間操作穩定專業，十分安心；術後貼心跟進。",
         },
-               {
+        {
           name: "Bobo",
-          href:"https://g.co/kgs/S3w8ubm",
+          href: "https://g.co/kgs/S3w8ubm",
           date: "2月1日12:07",
-          commit: "環境幾好👍🏻 術後檢查做得很足。so far 做完icl 一個月後 都暫時沒有好唔舒服。無後悔做呢個選擇",
+          commit:
+            "環境幾好👍🏻 術後檢查做得很足。so far 做完icl 一個月後 都暫時沒有好唔舒服。無後悔做呢個選擇",
         },
-               {
+        {
           name: "Vincy",
-          href:"https://g.co/kgs/vjM7NyN",
+          href: "https://g.co/kgs/vjM7NyN",
           date: "2月1日12:07",
           commit: "好開心唔需要再戴眼鏡，生活便利，特別係大熱天時👍🏻",
         },
-
-       
       ],
 
       isMobile: false,
@@ -1814,6 +1957,7 @@ i {
     padding: 0 15px;
   }
 }
+
 @media screen and (max-width: 992px) {
   // 希瑪微笑矯視中心
   .centerIntro {
@@ -1845,7 +1989,7 @@ i {
         width: clamp(80px, 41.03vw, 160px);
         height: clamp(80px, 41.03vw, 160px);
         left: clamp(-65px, -16.67vw, -32.5px);
-        bottom: clamp(-95px, -24.36vw, -47.5px);
+        bottom: clamp(-116px, -29.74vw, -58px);
       }
 
       .centerIntroBox-top {
@@ -1884,10 +2028,10 @@ i {
         }
       }
       .centerIntroBox-bottom {
-        max-width: 330px;
+        max-width: clamp(166px, 85.13vw, 332px);
         margin: clamp(14px, 7.18vw, 28px) auto 0;
         color: #6d6e71;
-        text-align: center;
+        text-align: justify;
         font-family: "Noto Sans HK";
         font-size: clamp(7px, 3.59vw, 14px);
         font-style: normal;
@@ -1918,12 +2062,15 @@ i {
     // 移动端
     .centerSevice-mb {
       margin-top: 28px;
-      padding-bottom: 5px;
+      padding-bottom: 8px;
       position: relative;
       .centerSevice-mb-List {
+        max-width: 600px;
+        margin: 0 auto;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         gap: clamp(11px, 5.64vw, 22px);
         .centerSevice-mb-List-item {
@@ -1986,7 +2133,53 @@ i {
               letter-spacing: clamp(1.4px, 0.72vw, 2.8px);
             }
           }
+
+  
         }
+                // 按钮
+          .centerSevice-mb-newbtn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:clamp(6.5px,3.33vw,13px);
+            .centerSevice-mb-btn-xuzhi,
+            .centerSevice-btn-zixun {
+              color: #fff;
+              text-align: justify;
+              font-family: "Noto Sans TC";
+              font-size: clamp(9px,4.62vw,18px);
+              font-style: normal;
+              font-weight: 900;
+              line-height: 0.75;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: clamp(7px,3.59vw,14px);
+              width: clamp(83px,42.56vw,166px);
+              border-radius: clamp(5px,2.56vw,10px);
+              border: 0.347px solid #4570b6;
+              background: #4570b6;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                top: clamp(4px,2.05vw,8px);
+                left:clamp(3px,1.54vw,6px);
+                width: 100%;
+                height: 100%;
+                border: 1px solid #4570b6;
+                border-radius: clamp(5px,2.56vw,10px);
+              }
+            }
+            .centerSevice-mb-btn-xuzhi {
+              height: clamp(30.5px,15.64vw,61px);
+            }
+            .centerSevice-btn-zixun {
+              height: clamp(61.5px,31.54vw,123px);
+            }
+          }
       }
       .centerSevice-mb-btn {
         position: absolute;
@@ -2074,11 +2267,13 @@ i {
         }
       }
       .fourFeature-Box-List {
-        margin: clamp(20px, 10.26vw, 40px) auto 0;
+        margin: 0 auto;
+        margin-top: clamp(20px, 10.26vw, 40px);
         position: relative;
         max-width: clamp(165px, 84.62vw, 330px);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
         & > .fourFeature-Box-List-item:nth-child(2),
         & > .fourFeature-Box-List-item:nth-child(3) {
           background: white;
@@ -2098,22 +2293,23 @@ i {
           transform: translateX(-50%);
         }
         .fourFeature-Box-List-svg-center {
+          width: fit-content;
           position: absolute;
           top: 50%;
-          left: 0;
-          transform: translateY(-50%);
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         .fourFeature-Box-List-item {
-          width: clamp(83.5px, 42.82vw, 167px);
-          height: clamp(83px, 42.56vw, 166px);
+          width: clamp(97.5px, 50vw, 195px);
+          height: clamp(97.5px, 50vw, 195px);
           text-align: center;
-          padding: clamp(7.5px, 3.85vw, 15px) 0;
+          padding: clamp(9.5px, 4.87vw, 19px) 0;
           background: #f9f9f9;
 
           h5 {
-            width: clamp(33px, 16.92vw, 66px);
-            height: clamp(12px, 6.15vw, 24px);
+            width: clamp(38.5px, 19.74vw, 77px);
+            height: clamp(14px, 7.18vw, 28px);
             margin: 0 auto;
             color: #fff;
             text-align: center;
@@ -2121,7 +2317,7 @@ i {
             font-size: clamp(7px, 3.59vw, 14px);
             font-style: normal;
             font-weight: 700;
-            line-height: clamp(12px, 6.15vw, 24px);
+            line-height: clamp(14px, 7.18vw, 28px);
             letter-spacing: clamp(1.75px, 0.9vw, 3.5px);
             border-radius: clamp(33px, 16.92vw, 66px);
             background: #4570b6;
@@ -2162,6 +2358,34 @@ i {
     }
   }
 
+  // 按钮
+  // .centerSevice-btnTwo {
+  //   width: fit-content;
+  //   padding: 6px 28px;
+  //   flex-shrink: 0;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 15px;
+  //   background: #4570b6;
+  //   border-radius: 50px;
+  //   margin: 46px auto 0;
+  //   svg {
+  //     width: 17px;
+  //     height: 17px;
+  //   }
+  //   span {
+  //     color: #fff;
+  //     text-align: justify;
+  //     font-family: "Noto Sans TC";
+  //     font-size: 20px;
+  //     font-style: normal;
+  //     font-weight: 700;
+  //     line-height: 1.75;
+  //     letter-spacing: 1px;
+  //   }
+  // }
+
   // 用户分享
   .UserShare {
     width: 100vw;
@@ -2199,6 +2423,7 @@ i {
           }
           .UserShareBox-title-text {
             img {
+              width: 300px;
               margin: 18px auto 0;
             }
             p {
@@ -2317,7 +2542,7 @@ i {
           background-position: 0 center;
           padding-top: clamp(21.5px, 11.03vw, 43px);
           .UserRatingBox-top-content {
-            padding: clamp(19px, 9.74vw, 38px) clamp(15px, 7.69vw, 30px) 0;
+            padding: clamp(24px, 12.31vw, 48px) clamp(15px, 7.69vw, 30px) 0;
 
             margin: 0 auto 0;
             width: clamp(180.5px, 92.56vw, 361px);
@@ -2347,10 +2572,11 @@ i {
               font-weight: 900;
               line-height: 1;
               letter-spacing: clamp(1px, 0.51vw, 2px);
+              padding-bottom: clamp(8.5px, 4.36vw, 17px);
             }
 
             .swiperWrapList {
-              height: clamp(188px, 96.41vw, 376px);
+              height: clamp(174px, 89.23vw, 348px);
               overflow: hidden;
               .swiper-wrapper {
                 -webkit-transition-timing-function: linear;
@@ -2499,8 +2725,8 @@ i {
 
   .CaseSharingV2 {
     width: fit-content;
-
     margin: 0 auto;
+    margin-top: 50px;
     & > div:nth-child(1) {
       display: flex;
       align-items: center;
@@ -2534,6 +2760,14 @@ i {
   }
 }
 
+@media screen and (max-width: 390px) {
+  .centerSevice-service
+    .centerSevice-mb
+    .centerSevice-mb-List
+    .centerSevice-mb-List-item {
+    width: clamp(83px, 41.56vw, 166px);
+  }
+}
 @media screen and (min-width: 992px) {
   .d-lg-none {
     display: none;
@@ -2573,8 +2807,8 @@ i {
         top: clamp(-130px, -6.77vw, -65px);
       }
       .centerSevice-svg-bottom {
-        width: clamp(132.5px, 13.8vw, 265px);
-        height: clamp(115px, 11.98vw, 230px);
+        width: clamp(132.5px, 15.8vw, 374px);
+        height: clamp(115px, 12.98vw, 284px);
         left: clamp(-36px, -1.88vw, -18px);
         bottom: clamp(-210px, -10.94vw, -105px);
       }
@@ -2653,7 +2887,7 @@ i {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: clamp(25px, 2.6vw, 50px);
+      gap: clamp(25px, 4vw, 66px);
       .pushable {
         position: relative;
         background: transparent;
@@ -2738,6 +2972,14 @@ i {
             }
             .after-text {
               display: block;
+              color: #4570b6;
+              text-align: center;
+              font-family: "Noto Sans HK";
+              font-size: clamp(15px, 1.56vw, 30px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1.33;
+              letter-spacing: clamp(4.5px, 0.47vw, 9px);
             }
           }
 
@@ -2767,8 +3009,17 @@ i {
         }
       }
     }
+    .centerSevice-btn-List {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      margin-top: clamp(44px, 4.58vw, 88px);
+      margin-bottom: clamp(97.5px, 10.16vw, 195px);
+    }
     .centerSevice-btn {
-      width: clamp(152px, 15.83vw, 304px);
+      width: fit-content;
+      padding: 0 clamp(28.5px, 2.97vw, 57px);
       height: clamp(43px, 4.48vw, 86px);
       flex-shrink: 0;
       display: flex;
@@ -2777,7 +3028,7 @@ i {
       gap: clamp(7.5px, 0.78vw, 15px);
       background: #4570b6;
       border-radius: clamp(25px, 2.6vw, 50px);
-      margin: clamp(85px, 8.85vw, 170px) auto 0;
+      // margin: clamp(85px, 8.85vw, 170px) auto 0;
       svg {
         width: clamp(11.5px, 1.2vw, 23px);
         height: clamp(11.5px, 1.2vw, 23px);
@@ -2792,6 +3043,10 @@ i {
         line-height: 1.75;
         letter-spacing: clamp(0.9px, 0.09vw, 1.8px);
       }
+    }
+    .centerSevice-btnTwo {
+      // margin-top: 30px;
+      cursor: pointer;
     }
   }
 
@@ -2951,7 +3206,7 @@ i {
 
   // 用户分享
   .UserShare {
-    width: 100vw;
+    // width: 100vw;
     background: #f2f7ff;
     margin-top: 100px;
     .UserShareContainer {
@@ -3117,7 +3372,7 @@ i {
     .UserRatingContainer {
       .UserRatingBox {
         .UserRatingBox-top {
-          width: 100vw;
+          //width: 100vw;
           height: clamp(379px, 39.48vw, 758px);
           background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-top-pc.avif")
             no-repeat;

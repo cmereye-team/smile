@@ -39,7 +39,7 @@ module.exports = {
       diagnosisInstructionsChild_2: "矫视流程",
       diagnosisInstructionsChild_3: "矫视后覆诊",
 
-      commonProblemChild_1: "SMILE 微笑激光矫视",
+      commonProblemChild_1: "SMILE Pro/SMILE微笑激光矫视",
       commonProblemChild_2: "LASIK 激光矫视",
       commonProblemChild_3: "ICL植入式隐形眼镜",
       commonProblemChild_4: "CLEAR-Vision",
@@ -1627,7 +1627,7 @@ module.exports = {
   },
   freQuestios: {
     firstProblem: {
-      title:"SMILE 微笑激光矫视",
+      title:"SMILE Pro/SMILE微笑激光矫视",
       problem1: {
         title: "SMILE微笑激光矫视后可达至零度近视的效果？",
         content: `有很多人以为矫视后会达致零度近视或散光，甚或较术前配戴眼镜或隐型眼镜有更清晰的视力，但其实这是错误的观念。<br />

@@ -39,7 +39,7 @@ module.exports = {
       diagnosisInstructionsChild_2: "矯視流程",
       diagnosisInstructionsChild_3: "矯視後覆診",
 
-      commonProblemChild_1: "SMILE 微笑激光矯視",
+      commonProblemChild_1: "SMILE Pro/SMILE微笑激光矯視",
       commonProblemChild_2: "LASIK 激光矯視",
       commonProblemChild_3: "ICL植入式隱形眼鏡",
       commonProblemChild_4: "CLEAR-Vision",
@@ -1631,7 +1631,7 @@ module.exports = {
   },
   freQuestios: {
     firstProblem: {
-      title: "SMILE 微笑激光矯視",
+      title: "SMILE Pro/SMILE微笑激光矯視",
 
       problem1: {
         title: "SMILE微笑激光矯視後可達至零度近視的效果？",
