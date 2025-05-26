@@ -549,6 +549,7 @@ export default {
       _dataList.sex = _dataList.sex == "0" ? "女" : "男";
       _dataList.subdate = `${this.getYearMonthDay(_dataList.subdate)} ${this.morningOrAfternoon
         }`;
+      window.localStorage.setItem("form", JSON.stringify(_dataList));
       for (const key in _dataList) {
         dataList.append(key, _dataList[key]);
       }
@@ -563,6 +564,7 @@ export default {
         .then((res) => res.json())
         .then((res) => {
           if (res.code === 1) {
+            this.$router.push({ path: "/messageFrom/" });
             this.$message({
               showClose: true,
               message: "講座預約已提交成功！",

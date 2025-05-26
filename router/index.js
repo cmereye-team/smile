@@ -129,6 +129,13 @@ export const $router = [
     component: resolve("pages/new-page/preaching-seat.vue"),
   },
   {
+    path: "/messageFrom",
+    name: "messageFrom",
+    title: "講座預約表單",
+    // component: resolve('pages/ophthalmicInfo/AppointForm/index.vue')
+    component: resolve("pages/new-page/message-from.vue"),
+  },
+  {
     path: "/smilepro-event",
     name: "smilepro-event",
     title: "CMERxZEISS 講座活動詳情",
