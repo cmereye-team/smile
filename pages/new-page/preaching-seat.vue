@@ -99,10 +99,10 @@
                   <el-select v-model="form1.age" :placeholder="$t('appointFroms.content3.choose')" clearable>
                     <el-option :label="$t('appointFroms.content3.age1')" value="17歲或以下"></el-option>
                     <el-option :label="$t('appointFroms.content3.age2')" value="18-25歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age2')" value="26-35歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age3')" value="36-45歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age4')" value="46-55歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age5')" value="56歲或以上"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age3')" value="26-35歲"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age4')" value="36-45歲"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age5')" value="46-55歲"></el-option>
+                    <el-option :label="$t('appointFroms.content3.age6')" value="56歲或以上"></el-option>
                   </el-select>
                 </el-form-item>
                 <el-form-item :label="$t('appointFroms.content3.phone')">

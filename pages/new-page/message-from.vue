@@ -2,35 +2,46 @@
     <div class="message">
 
         <Head />
-        <div class="message-from">
-            <H2Tag :title="'講座預約表單'"></H2Tag>
-            <div class="from-first">
-                <div class="from-text"><span class="from-title">姓名：</span><span class="from-msg">{{ dataFrom.name
+        <ClientOnly>
+            <div class="message-from">
+                <H2Tag :title="'講座預約表單'"></H2Tag>
+                <div class="from-first">
+                    <div class="from-text"><span class="from-title">姓名：</span><span class="from-msg">{{ dataFrom.name ||
+                            ''
+                            }}</span></div>
+                    <div class="from-text"><span class="from-title">性別：</span><span class="from-msg">{{ dataFrom.sex ||
+                            ''
+                            }}</span></div>
+                    <div class="from-text"><span class="from-title">年齡：</span><span class="from-msg">{{ dataFrom.age ||
+                            ''
+                            }}</span></div>
+                </div>
+                <div class="from-text"><span class="from-title">選擇地點：</span><span class="from-msg">{{ dataFrom.address
+                        || ''
                         }}</span></div>
-                <div class="from-text"><span class="from-title">性別：</span><span class="from-msg">{{ dataFrom.sex
+                <div class="from-text"><span class="from-title">預約日期：</span><span class="from-msg">{{ dataFrom.subdate
+                        || ''
                         }}</span></div>
-                <div class="from-text"><span class="from-title">年齡：</span><span class="from-msg">{{ dataFrom.age
+                <div class="from-text"><span class="from-title">預留位置：</span><span class="from-msg">{{
+                    dataFrom.numberSeat ||
+                        ''
                         }}</span></div>
+                <div class="from-text"><span class="from-title">聯絡電話：</span><span class="from-msg">+852 {{
+                    dataFrom.telphoneNumber || '' }}</span></div>
+                <div class="from-text"><span class="from-title">電郵地址：</span><span class="from-msg">{{ dataFrom.email ||
+                        ''
+                        }}</span></div>
+                <div class="from-text"><span class="from-title">從何得知：</span><span class="from-msg">{{ dataFrom.source ||
+                        ''
+                        }}</span></div>
+                <br />
+                <div v-if="dataFrom.subdate" class="from-msg message-msg">您正預約在 <span class="from-title">{{
+                    dataFrom.subdate
+                        }}</span> 的<span class="from-title">{{ dataFrom.address }}</span> {{
+                            isContainSmile(dataFrom.address) ?
+                                '全飛秒SMILE微笑激光矯視' : '老花' }}講座。</div>
             </div>
-            <div class="from-text"><span class="from-title">選擇地點：</span><span class="from-msg">{{ dataFrom.address
-                    }}</span></div>
-            <div class="from-text"><span class="from-title">預約日期：</span><span class="from-msg">{{ dataFrom.subdate
-                    }}</span></div>
-            <div class="from-text"><span class="from-title">預留位置：</span><span class="from-msg">{{ dataFrom.numberSeat
-                    }}</span></div>
-            <div class="from-text"><span class="from-title">聯絡電話：</span><span class="from-msg">+852 {{
-                dataFrom.telphoneNumber }}</span></div>
-            <div class="from-text"><span class="from-title">電郵地址：</span><span class="from-msg">{{ dataFrom.email
-                    }}</span></div>
-            <div class="from-text"><span class="from-title">從何得知：</span><span class="from-msg">{{ dataFrom.source
-                    }}</span></div>
-            <br />
-            <div class="from-msg message-msg">您正預約在 <span class="from-title">{{ dataFrom.subdate }}</span> 的<span
-                    class="from-title">{{ dataFrom.address }}</span> {{
-                        isContainSmile(dataFrom.address) ?
-                            '全飛秒SMILE微笑激光矯視' : '老花' }}講座。</div>
-        </div>
-
+        </ClientOnly>
         <businessHours />
         <Footer />
         <FooterMobile />
@@ -67,8 +78,11 @@ export default {
         }
     },
     created() {
-        // 獲取 localStorage 中的值
-        this.dataFrom = JSON.parse(window.localStorage.getItem("form"));
+        if (process.client) {
+            console.log(window.innerWidth);
+            // 獲取 localStorage 中的值
+            this.dataFrom = JSON.parse(window.localStorage.getItem("form"));
+        }
         this.$message({
             showClose: true,
             message: "已经成功預約，我們將會在10小時內與您聯絡確認預約詳情。",
