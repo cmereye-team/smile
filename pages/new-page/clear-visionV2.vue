@@ -656,7 +656,7 @@ i {
         max-width: 463px;
       }
       & > div:nth-child(2) {
-        max-width: 415px;
+        max-width: 467px;
         text-align: justify;
       }
 
@@ -667,16 +667,16 @@ i {
           font-size: 20px;
           font-style: normal;
           font-weight: 300;
-          line-height: 1.95;
-          letter-spacing: 4px;
+          line-height: 1.75;
+          letter-spacing: 5px;
           span {
             color: #4570b6;
             font-family: "Noto Sans TC";
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
-            line-height: 45px;
-            letter-spacing: 4px;
+            line-height: 1.75;
+            letter-spacing: 6px;
           }
         }
       }

@@ -178,10 +178,9 @@
           />於香港擁有2間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。
           <br
             class="d-none d-lg-block"
-          />提供一站式眼科專科醫療及矯視服務，包括：SMILE / SMILE
-          Pro微笑激光矯視、<br
+          />提供一站式眼科專科醫療及矯視服務，包括：SMILE Pro微笑激光矯視、<br
             class="d-none d-lg-block"
-          />ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。
+          />SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。
         </div>
       </div>
     </section>
@@ -1450,7 +1449,7 @@ export default {
           hid: "keywords",
           name: "keywords",
           content:
-            "smile 矯 視, 矯視中心,希瑪微笑矯視中心,香港 激光 矯 視 中心,SMILE 微笑激光矯視, LASIK激光矯視, 激光矯視, LASIK 香港, 激光矯視 散光, 激光矯視 近視, 激光矯視 價錢, 微笑矯視 安全, 微笑矯視, 微笑香港矯視, 微笑矯視 原理, 微笑矯視 價錢, 微笑矯視 收費, 近視矯正 散光, 眼鏡, 微笑矯視 講座, 隱形眼鏡, 眼科手術, 眼睛健康, 眼睛檢查, 眼睛治療, ICL, 植入式隱形眼鏡, 老花, 近視",
+            "smile 矯視, 矯視中心,希瑪微笑矯視中心,香港激光矯視中心,SMILE 微笑激光矯視, LASIK激光矯視, 激光矯視, LASIK 香港, 激光矯視散光, 激光矯視近視, 激光矯視價錢, 微笑矯視安全, 微笑矯視, 微笑香港矯視, 微笑矯視 原理, 微笑矯視 價錢, 微笑矯視 收費, 近視矯正 散光, 眼鏡, 微笑矯視 講座, 隱形眼鏡, 眼科手術, 眼睛健康, 眼睛檢查, 眼睛治療, ICL, 植入式隱形眼鏡, 老花, 近視",
         },
       ],
       link: [
@@ -2649,6 +2648,7 @@ i {
               font-weight: 300;
               line-height: 2.14;
               letter-spacing: 0.7px;
+              text-align: justify;
             }
 
             .UserRatingBox-Link {
@@ -3486,6 +3486,8 @@ i {
               font-weight: 300;
               line-height: 1.75;
               letter-spacing: clamp(3px, 0.31vw, 6px);
+              text-align: justify;
+
             }
 
             .UserRatingBox-Link {
