@@ -139,16 +139,16 @@
         </div>
       </div>
       <div class="lecture-image">
-        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_CT.jpg" alt="5月 中环" />
-        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_MK.jpg" alt="5月 旺角" />
-        <img v-if="isBeforeFeb34()" src="https://statichk.cmermedical.com/smile/2025042310325502.webp" alt="5月 中环" />
+        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_CT.jpg" alt="6月 中环" />
+        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_MK.jpg" alt="6月 旺角" />
+        <!-- <img v-if="isBeforeFeb34()" src="https://statichk.cmermedical.com/smile/2025042310325502.webp" alt="5月 中环" />
         <img v-if="isBeforeFeb34()" src="https://statichk.cmermedical.com/smile/2025042310325501.webp" alt="5月 旺角" />
         <img v-if="isBeforeFeb33()" src="https://statichk.cmermedical.com/smile/2025031414400701.webp" alt="4月 中环" />
         <img v-if="isBeforeFeb33()" src="https://statichk.cmermedical.com/smile/2025031414400702.webp" alt="4月 旺角" />
         <img v-if="isBeforeFeb32()" src="https://statichk.cmermedical.com/smile/2025021916045001.webp" alt="3月 中环" />
         <img v-if="isBeforeFeb32()" src="https://statichk.cmermedical.com/smile/2025021916044001.webp" alt="3月 旺角" />
         <img v-if="isBeforeFeb28()" src="https://statichk.cmermedical.com/smile/68910b3cec5d.webp" alt="2月 中环" />
-        <img v-if="isBeforeFeb28()" src="https://statichk.cmermedical.com/smile/017b8163c9ac.webp" alt="2月 旺角" />
+        <img v-if="isBeforeFeb28()" src="https://statichk.cmermedical.com/smile/017b8163c9ac.webp" alt="2月 旺角" /> -->
         <!-- <img
           v-if="isBeforeFeb31()"
           src="https://statichk.cmermedical.com/smile/e7458a6d7e35.png"
