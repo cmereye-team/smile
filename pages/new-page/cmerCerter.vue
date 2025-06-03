@@ -170,17 +170,30 @@
           <p>您的視力 • 我們的使命</p>
         </div>
         <div class="centerIntroBox-bottom">
-          希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的屈光矯視醫療中心。
-          <br
-            class="d-none d-lg-block"
-          />中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。<br
-            class="d-none d-lg-block"
-          />於香港擁有2間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。
-          <br
-            class="d-none d-lg-block"
-          />提供一站式眼科專科醫療及矯視服務，包括：SMILE Pro微笑激光矯視、<br
-            class="d-none d-lg-block"
-          />SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。
+          <p>
+            希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的屈光矯視醫療中心。<br
+              class="d-none d-lg-block"
+            />中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。<br
+              class="d-none d-lg-block"
+            />於香港擁有2間微笑矯視中心，<span>均符合FDA激光矯視標準</span>，交通便利，環境舒適。<br
+              class="d-none d-lg-block"
+            />提供一站式眼科專科醫療及矯視服務，包括：SMILE Pro微笑激光矯視、<br
+              class="d-none d-lg-block"
+            />SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。
+          </p>
+          <br />
+          <p>
+            希瑪一直與STAAR Surgical及Zeiss蔡司保持良好的合作關係。於2023年，
+            <span>STAAR <br class="d-none d-lg-block" />Surgical</span
+            >公司宣佈將希瑪微笑矯視中心設立為<span
+              >首間官方認證EVO ICL國際培訓中心</span
+            >。<br class="d-none d-lg-block" />
+          </p>
+          <p>
+            同年，本中心亦獲得<span>Zeiss蔡司頒發《全飛秒屈光手術卓越手術中心》</span>，而且更是首個<br
+              class="d-none d-lg-block"
+            />香港矯視中心被評為卓越手術中心。
+          </p>
         </div>
       </div>
     </section>
@@ -188,9 +201,9 @@
     <!-- 中心服务 -->
     <div class="centerSevice-service">
       <h3 class="centerSevice-service-title">矯視中心服務</h3>
-      <div class="new-container">
+      <div class="">
         <div class="centerSevice">
-          <div class="centerSeviceList">
+          <!-- <div class="centerSeviceList">
             <a
               class="pushable"
               v-for="(item, index) in serverList"
@@ -209,13 +222,49 @@
                 </div>
               </div>
             </a>
+          </div> -->
+          <div class="centerSeviceNewList">
+            <a
+              v-for="(item, index) in serverList"
+              :key="index"
+              :href="item.link"
+              class="centerSeviceNewItem"
+            >
+              <h4 v-html="item.title"></h4>
+              <div class="centerSeviceNewItem-text">
+                <div class="centerSeviceNewItem-textList" v-if="!isMobile">
+                  <p v-for="(text, i) in item.text" :key="i">{{ text }}</p>
+                </div>
+                <div class="centerSeviceNewItem-textList" v-else>
+                  <p v-for="(text, i) in item.textmb" :key="i">{{ text }}</p>
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="30"
+                  viewBox="0 0 29 30"
+                  fill="none"
+                >
+                  <path
+                    d="M3 26.3485L25.6286 3.71997"
+                    stroke="white"
+                    stroke-width="5.4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6.29736 3.00012H26.4V22.4401"
+                    stroke="white"
+                    stroke-width="4.86"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </a>
           </div>
 
           <div class="centerSevice-btn-List">
-            <nuxt-link
-              to="/patient-info"
-              class="centerSevice-btn d-none d-lg-block"
-            >
+            <nuxt-link to="/patient-info" class="centerSevice-btn">
               <span> 診症須知 </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +291,7 @@
             <a
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-15)%E7%9F%AF%E8%A6%96%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-              class="centerSevice-btn centerSevice-btnTwo d-none d-lg-block"
+              class="centerSevice-btn centerSevice-btnTwo"
             >
               <span>預約術前諮詢</span>
               <svg
@@ -267,80 +316,6 @@
               </svg>
             </a>
           </div>
-        </div>
-        <div class="centerSevice-mb">
-          <div class="centerSevice-mb-List">
-            <a
-              :href="item.link"
-              class="centerSevice-mb-List-item"
-              v-for="(item, index) in serverList"
-              :key="index"
-            >
-              <h4 v-html="item.title"></h4>
-              <div class="centerSevice-mb-List-item-text">
-                <p v-for="(text, i) in item.textmb" :key="i">{{ text }}</p>
-              </div>
-            </a>
-
-            <div class="centerSevice-mb-newbtn">
-              <nuxt-link to="/patient-info" class="centerSevice-mb-btn-xuzhi">
-              
-                <p>診症須知</p>
-              </nuxt-link>
-              <a
-                target="_blank"
-                href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-15)%E7%9F%AF%E8%A6%96%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-                class="centerSevice-btn centerSevice-btn-zixun"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                >
-                  <path
-                    d="M2.8501 26.0597L25.4787 3.43115"
-                    stroke="white"
-                    stroke-width="5.4"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M6.14746 2.71118H26.2501V22.1512"
-                    stroke="white"
-                    stroke-width="4.86"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <span>預約術前諮詢</span>
-              
-              </a>
-            </div>
-          </div>
-
-          <!-- <nuxt-link to="/patient-info" class="centerSevice-mb-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              viewBox="0 0 26 26"
-              fill="none"
-            >
-              <path
-                d="M1.65137 23.9102L23.2766 2.28503"
-                stroke="white"
-                stroke-width="2.59036"
-                stroke-linecap="round"
-              />
-              <path
-                d="M4.80273 1.59644H24.014V20.1744"
-                stroke="white"
-                stroke-width="2.59036"
-                stroke-linecap="round"
-              />
-            </svg>
-            <p>診症須知</p>
-          </nuxt-link> -->
         </div>
       </div>
     </div>
@@ -1069,10 +1044,9 @@
           <div class="UserRatingBox-bottom">
             <div class="UserRatingBox-bottom-top new-container">
               <h4>預約服務</h4>
-
               <p class="UserRatingBox-bottom-content">
-                矯視前先要進行全面術前眼睛檢查，包括屈光檢查、全面眼底檢查、醫生會診為你的眼睛狀況評估及提供矯視方案建議等。如有興趣進行矯視，立即WhatsApp預約我們的術前眼睛檢查服務。如想了解更多有關SMILE
-                Pro/SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式有疑問，歡迎預約我們矯視中心的講座了解更多。
+                矯視前先要進行全面術前眼睛檢查，包括屈光檢查、全面眼底檢查、醫生會診為你的眼睛狀況評估及提供矯視方案建議等。如有興趣<span>進行矯視，立即WhatsApp預約</span>我們的<span>術前眼睛檢查服務</span>。如想了解更多有關SMILE
+                Pro/SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式<span>有疑問，歡迎預約</span>我們矯視中心的<span>講座了解更多</span>。
               </p>
 
               <div class="UserRatingBox-Link">
@@ -1262,26 +1236,38 @@
               </div>
             </div>
             <div class="UserRatingBox-bottom-bottom">
-              <!-- <img
-                class="d-lg-none"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-img-mb.webp"
-                alt=""
-              />
+              <!-- 
               <img
-                class="d-none d-lg-block"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-img-pc.avif"
+                decoding="async"
+                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-pc.avif"
                 alt=""
+                loading="lazy"
+                width="100%"
+                height="100%"
+                srcset="
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-mb.avif 400w,
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-mb.avif 640w,
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-pc.avif
+                "
+                sizes=" (max-width: 992px) 100vw,1216px"
               /> -->
-
-       <img  decoding="async"
-                    src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-pc.avif" alt="" loading="lazy"
-                  width="100%" height="100%" srcset="
-            https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-mb.avif 400w,
-            https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-mb.avif 640w,
-            https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-bottom-newimg-pc.avif,
-" sizes=" (max-width: 992px) 100vw,1216px">
-
-
+              <div
+                v-swiper:environmentImgSwiper="environmentImg"
+                ref="evaluateList"
+                class="environmentImgList"
+              >
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide"
+                    v-for="(item, index) in environmentImgList"
+                    :key="index"
+                  >
+                    <div class="swiperWrapList-item">
+                      <img :src="item.img" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1481,6 +1467,12 @@ export default {
   data() {
     return {
       serverList: [
+             {
+          title: "SMILE<br/>PRO",
+          text: ["適合", "擔心眼睛無法", "對焦太久"],
+          textmb: ["適合", "擔心眼睛無法對焦太久"],
+          link: "/smilePro",
+        },
         {
           title: "SMILE",
           text: ["適合", "1000度以下近視", "500度以下散光"],
@@ -1488,12 +1480,7 @@ export default {
           link: "/vision-correction/relex-smile",
         },
 
-        {
-          title: "SMILE<br/>PRO",
-          text: ["適合", "擔心眼睛無法", "對焦太久"],
-          textmb: ["適合", "擔心眼睛無法", "對焦太久"],
-          link: "/smilePro",
-        },
+   
 
         {
           title: "ICL",
@@ -1504,7 +1491,7 @@ export default {
         {
           title: "CLEAR<br/>VISION",
           text: ["適合", "39歲以上有老花", "同時有近視/遠視/", "散光問題"],
-          textmb: ["適合", "39歲以上有老花", "同時有近視/", "遠視/散光問題"],
+          textmb: ["適合", "39歲以上有老花同時有近視/", "遠視/散光問題"],
           link: "/vision-correction-presbyopia",
         },
         {
@@ -1687,6 +1674,51 @@ export default {
           },
         },
       },
+
+      environmentImg: {
+        loop: true, // 开启无限循环
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        pauseOnHover: true,
+        autoplay: {
+          delay: 0, // 延迟时间为 0，立即开始滚动
+          disableOnInteraction: false, // 用户操作后不停止自动播放
+        },
+        speed: 5000, // 滚动速度（单位：毫秒）
+        freeMode: true, // 启用自由模式
+        allowTouchMove: true, // 禁用触摸滑动
+        on: {
+          init: function () {
+            const swiper = this;
+            // 绑定鼠标事件（需要在 DOM 上操作）
+            const container = document.querySelector(".swiperWrapList");
+            if (container) {
+              container.addEventListener("mouseenter", () => {
+                swiper.autoplay.stop();
+              });
+
+              container.addEventListener("mouseleave", () => {
+                swiper.autoplay.start();
+              });
+            }
+          },
+        },
+      },
+
+      environmentImgList: [
+        {
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/index-environmentImgList-1.avif",
+        },
+        {
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/index-environmentImgList-2.avif",
+        },
+        {
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/index-environmentImgList-3.avif",
+        },
+        {
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/index-environmentImgList-4.avif",
+        },
+      ],
 
       evaluateList: [
         {
@@ -2037,6 +2069,9 @@ i {
         font-weight: 300;
         line-height: 2.14;
         letter-spacing: clamp(0.35px, 0.18vw, 0.7px);
+        span {
+          font-weight: 700;
+        }
       }
     }
   }
@@ -2044,8 +2079,8 @@ i {
   // 矯視中心服務
   .centerSevice-service {
     margin-top: 40px;
-    padding: 0 15px;
-    overflow: hidden;
+    // padding: 0 15px;
+    // overflow: hidden;
 
     .centerSevice-service-title {
       text-align: center;
@@ -2100,7 +2135,7 @@ i {
           h4 {
             color: #4570b6;
             text-align: center;
-            font-family: "ITC Avant Garde Gothic Pro";
+            font-family: "Poppins",sans-serif;
             font-size: clamp(14.5px, 7.44vw, 29px);
             font-style: normal;
             font-weight: 700;
@@ -2132,53 +2167,51 @@ i {
               letter-spacing: clamp(1.4px, 0.72vw, 2.8px);
             }
           }
-
-  
         }
-                // 按钮
-          .centerSevice-mb-newbtn {
+        // 按钮
+        .centerSevice-mb-newbtn {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: clamp(6.5px, 3.33vw, 13px);
+          .centerSevice-mb-btn-xuzhi,
+          .centerSevice-btn-zixun {
+            color: #fff;
+            text-align: justify;
+            font-family: "Noto Sans TC";
+            font-size: clamp(9px, 4.62vw, 18px);
+            font-style: normal;
+            font-weight: 900;
+            line-height: 0.75;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap:clamp(6.5px,3.33vw,13px);
-            .centerSevice-mb-btn-xuzhi,
-            .centerSevice-btn-zixun {
-              color: #fff;
-              text-align: justify;
-              font-family: "Noto Sans TC";
-              font-size: clamp(9px,4.62vw,18px);
-              font-style: normal;
-              font-weight: 900;
-              line-height: 0.75;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              gap: clamp(7px,3.59vw,14px);
-              width: clamp(83px,42.56vw,166px);
-              border-radius: clamp(5px,2.56vw,10px);
-              border: 0.347px solid #4570b6;
-              background: #4570b6;
-              position: relative;
-              &::after {
-                content: "";
-                position: absolute;
-                top: clamp(4px,2.05vw,8px);
-                left:clamp(3px,1.54vw,6px);
-                width: 100%;
-                height: 100%;
-                border: 1px solid #4570b6;
-                border-radius: clamp(5px,2.56vw,10px);
-              }
-            }
-            .centerSevice-mb-btn-xuzhi {
-              height: clamp(30.5px,15.64vw,61px);
-            }
-            .centerSevice-btn-zixun {
-              height: clamp(61.5px,31.54vw,123px);
+            gap: clamp(7px, 3.59vw, 14px);
+            width: clamp(83px, 42.56vw, 166px);
+            border-radius: clamp(5px, 2.56vw, 10px);
+            border: 0.347px solid #4570b6;
+            background: #4570b6;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              top: clamp(4px, 2.05vw, 8px);
+              left: clamp(3px, 1.54vw, 6px);
+              width: 100%;
+              height: 100%;
+              border: 1px solid #4570b6;
+              border-radius: clamp(5px, 2.56vw, 10px);
             }
           }
+          .centerSevice-mb-btn-xuzhi {
+            height: clamp(30.5px, 15.64vw, 61px);
+          }
+          .centerSevice-btn-zixun {
+            height: clamp(61.5px, 31.54vw, 123px);
+          }
+        }
       }
       .centerSevice-mb-btn {
         position: absolute;
@@ -2207,11 +2240,102 @@ i {
     }
   }
   .centerSevice {
-    padding: 0 15px;
+    // padding: 0 15px;
     max-width: 100vw;
-    overflow: hidden;
-    .centerSeviceList {
-      display: none;
+    // overflow: hidden;
+    .centerSeviceNewList {
+      margin-top: 11.28vw;
+
+      .centerSeviceNewItem {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        background: #4570b6;
+        border-bottom: 0.26vw solid #fff;
+        h4 {
+          width: 33.33vw;
+          height: 27.69vw;
+          border-right: 0.26vw solid #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: #fff;
+          text-align: center;
+          font-family: "Poppins",sans-serif;
+          font-size: 5.13vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.5;
+          letter-spacing: 0.31vw;
+        }
+        .centerSeviceNewItem-text {
+          width: -webkit-fill-available;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 6.15vw;
+          color: #fff;
+          font-family: "Noto Sans HK";
+          font-size: 3.59vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.42;
+          letter-spacing: 0.72vw;
+        }
+        svg {
+          width: 3.59vw;
+          height: 3.59vw;
+          position: absolute;
+          right: 5.13vw;
+          bottom: 5.13vw;
+        }
+      }
+    }
+    .centerSevice-btn-List {
+      margin-top: 4.1vw;
+      // margin-bottom: 15.38vw;
+      display: flex;
+      justify-content: center;
+      gap: 5.9vw;
+      & > a:nth-child(1) {
+        width: 30.77vw;
+      }
+      & > a:nth-child(2) {
+        width: 54.36vw;
+      }
+      a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15.64vw;
+        border-radius: 2.56vw;
+        border: 0.347px solid #4570b6;
+        background: #4570b6;
+        color: #fff;
+        text-align: justify;
+        font-family: "Noto Sans TC";
+        font-size: 4.62vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 0.71;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 2.05vw;
+          top: 2.05vw;
+          width: 100%;
+          height: 100%;
+          border: 0.26vw solid #4570b6;
+          border-radius: 2.56vw;
+        }
+        svg {
+          display: none;
+        }
+      }
     }
   }
 
@@ -2336,7 +2460,7 @@ i {
             letter-spacing: 0.84px;
             span {
               color: #4570b6;
-              font-family: "ITC Avant Garde Gothic Pro";
+              font-family: "Poppins",sans-serif;
               font-size: clamp(13px, 6.67vw, 26px);
               font-style: normal;
               font-weight: 700;
@@ -2475,7 +2599,7 @@ i {
                 padding: 3px 12px;
 
                 color: #fff;
-                font-family: "ITC Avant Garde Gothic Pro";
+                font-family:"Poppins",sans-serif;
                 font-size: 14.989px;
                 font-style: normal;
                 font-weight: 700;
@@ -2516,7 +2640,7 @@ i {
                     font-weight: 600;
                   }
                   & > span:nth-child(2) {
-                    font-family: "ITC Avant Garde Gothic Pro";
+                    font-family:"Poppins",sans-serif;
                     font-weight: 700;
                   }
                 }
@@ -2626,6 +2750,7 @@ i {
           background: #4570b6;
           .UserRatingBox-bottom-top {
             position: relative;
+            z-index: 2;
             padding-bottom: clamp(115px, 58.97vw, 230px);
             h4 {
               text-align: center;
@@ -2649,6 +2774,9 @@ i {
               line-height: 2.14;
               letter-spacing: 0.7px;
               text-align: justify;
+              span {
+                font-weight: 700;
+              }
             }
 
             .UserRatingBox-Link {
@@ -2714,8 +2842,23 @@ i {
           }
 
           .UserRatingBox-bottom-bottom {
-            img {
-              width: 100vw;
+            .environmentImgList {
+              .swiper-wrapper {
+                -webkit-transition-timing-function: linear;
+                -moz-transition-timing-function: linear;
+                -ms-transition-timing-function: linear;
+                -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+                .swiper-slide {
+                  width: fit-content;
+                  img {
+                    width: 374px;
+                    aspect-ratio: 16 / 9;
+                
+                    height: auto;
+                  }
+                }
+              }
             }
           }
         }
@@ -2860,6 +3003,9 @@ i {
         font-weight: 300;
         line-height: 1.75;
         letter-spacing: clamp(3px, 0.31vw, 6px);
+        span {
+          font-weight: 700;
+        }
       }
     }
   }
@@ -2882,133 +3028,225 @@ i {
     }
   }
   .centerSevice {
-    margin-top: clamp(55px, 5.73vw, 110px);
-    .centerSeviceList {
+    margin-top: clamp(35px, 3.65vw, 70px);
+
+ .centerSeviceNewList {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-top: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
+  height: clamp(185.5px, 19.32vw, 371px);
+  background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/centerSevice/centerSeviceNewList-bg.avif");
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  
+  .centerSeviceNewItem {
+    width: clamp(135.5px, 14.11vw, 271px);
+    height: clamp(76.5px, 7.97vw, 153px);
+    border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
+    border-top: none;
+    padding-top: clamp(23.5px, 2.45vw, 47px);
+    transition: all 0.5s ease;
+    transform: translateY(0);
+    position: relative;
+    overflow: hidden;
+    
+    h4 {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: clamp(25px, 4vw, 66px);
-      .pushable {
-        position: relative;
-        background: transparent;
-        padding: 0px;
-        border: none;
-        cursor: pointer;
-        outline-offset: clamp(2px, 0.21vw, 4px);
-        outline-color: deeppink;
-        transition: filter 250ms;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        .shadow {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background: #4570b6;
-          border-radius: clamp(100px, 10.42vw, 200px);
-          will-change: transform;
-          transform: translateY(2px);
-          transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-        }
-
-        .edge {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          border-radius: clamp(100px, 10.42vw, 200px);
-          background: #4570b6;
-        }
-
-        .front {
-          display: block;
-          position: relative;
-          width: clamp(197.5px, 20.57vw, 395px);
-          height: clamp(115px, 11.98vw, 230px);
-          border-radius: clamp(100px, 10.42vw, 200px);
-          background: #4570b6;
-          border: 1px solid #4570b6;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-
-          color: #fff;
-          text-align: center;
-          font-family: "ITC Avant Garde Gothic Pro";
-          font-size: clamp(30px, 3.13vw, 60px);
-          font-style: normal;
-          font-weight: 700;
-          line-height: 1.2;
-          letter-spacing: clamp(1.8px, 0.19vw, 3.6px);
-          transform: translateY(-4px);
-          transition: all 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-          overflow: hidden;
-
-          .after-text {
-            display: none;
-          }
-        }
-
-        &:hover {
-          filter: brightness(110%);
-          .front {
-            transform: translate(-6px, -6px);
-            transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-            background: white;
-            border: 1px solid #4570b6;
-            color: #4570b6;
-            text-align: center;
-            font-family: "Noto Sans HK";
-            font-size: clamp(10px, 1.04vw, 20px);
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.75;
-            letter-spacing: clamp(3px, 0.31vw, 6px);
-
-            .front-text {
-              display: none;
-            }
-            .after-text {
-              display: block;
-              color: #4570b6;
-              text-align: center;
-              font-family: "Noto Sans HK";
-              font-size: clamp(15px, 1.56vw, 30px);
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.33;
-              letter-spacing: clamp(4.5px, 0.47vw, 9px);
-            }
-          }
-
-          .shadow {
-            transform: translate(
-              clamp(5.5px, 0.57vw, 11px),
-              clamp(5.5px, 0.57vw, 11px)
-            );
-            transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-          }
-        }
-
-        &:active {
-          .front {
-            transform: translate(-2px, -2px);
-            transition: transform 34ms;
-          }
-
-          .shadow {
-            transform: translate(1px, 1px);
-            transition: transform 34ms;
-          }
-        }
-
-        &:focus:not(:focus-visible) {
-          outline: none;
-        }
+      align-items: center;
+      height: clamp(32px, 3.33vw, 64px);
+      color: #4570b6;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(15px, 1.56vw, 30px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      transition: color 0.3s ease;
+      letter-spacing: 0;
+    }
+    
+    .centerSeviceNewItem-text {
+      position: absolute;
+      top:clamp(61.5px,6.41vw,123px);
+      left: 0;
+      width: 100%;
+      height: -webkit-fill-available;
+    
+      margin-top: 0;
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: clamp(10px, 1.04vw, 20px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 151%;
+      letter-spacing: clamp(1px, 0.1vw, 2px);
+      opacity: 0;
+      // transform: translateY(20px);
+      transition: all 0.4s ease 0.1s;
+    }
+    
+    svg {
+      width: clamp(15px, 1.56vw, 30px);
+      height: clamp(15px, 1.56vw, 30px);
+      position: absolute;
+      bottom: clamp(15px, 1.56vw, 30px);
+      right: clamp(15px, 1.56vw, 30px);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease 0.2s;
+    }
+    
+    &:hover {
+      transform: translateY(-clamp(40px, 4.17vw, 80px));
+      background: #4570b6;
+      height: clamp(150px, 15.63vw, 302px); /* 增加悬停时的高度 */
+      
+      h4 {
+        color: #fff;
+      }
+      
+      .centerSeviceNewItem-text {
+        opacity: 1;
+        transform: translateY(-clamp(76.5px, 7.97vw, 153px)); /* 向上移动到可见区域 */
+      }
+      
+      svg {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
+  }
+}
+
+    // .centerSeviceList {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   justify-content: center;
+    //   gap: clamp(25px, 4vw, 66px);
+    //   .pushable {
+    //     position: relative;
+    //     background: transparent;
+    //     padding: 0px;
+    //     border: none;
+    //     cursor: pointer;
+    //     outline-offset: clamp(2px, 0.21vw, 4px);
+    //     outline-color: deeppink;
+    //     transition: filter 250ms;
+    //     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    //     .shadow {
+    //       position: absolute;
+    //       top: 0;
+    //       left: 0;
+    //       height: 100%;
+    //       width: 100%;
+    //       background: #4570b6;
+    //       border-radius: clamp(100px, 10.42vw, 200px);
+    //       will-change: transform;
+    //       transform: translateY(2px);
+    //       transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+    //     }
+
+    //     .edge {
+    //       position: absolute;
+    //       top: 0;
+    //       left: 0;
+    //       height: 100%;
+    //       width: 100%;
+    //       border-radius: clamp(100px, 10.42vw, 200px);
+    //       background: #4570b6;
+    //     }
+
+    //     .front {
+    //       display: block;
+    //       position: relative;
+    //       width: clamp(197.5px, 20.57vw, 395px);
+    //       height: clamp(115px, 11.98vw, 230px);
+    //       border-radius: clamp(100px, 10.42vw, 200px);
+    //       background: #4570b6;
+    //       border: 1px solid #4570b6;
+    //       display: flex;
+    //       flex-direction: column;
+    //       align-items: center;
+    //       justify-content: center;
+
+    //       color: #fff;
+    //       text-align: center;
+    //       font-family: "ITC Avant Garde Gothic Pro";
+    //       font-size: clamp(30px, 3.13vw, 60px);
+    //       font-style: normal;
+    //       font-weight: 700;
+    //       line-height: 1.2;
+    //       letter-spacing: clamp(1.8px, 0.19vw, 3.6px);
+    //       transform: translateY(-4px);
+    //       transition: all 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+    //       overflow: hidden;
+
+    //       .after-text {
+    //         display: none;
+    //       }
+    //     }
+
+    //     &:hover {
+    //       filter: brightness(110%);
+    //       .front {
+    //         transform: translate(-6px, -6px);
+    //         transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    //         background: white;
+    //         border: 1px solid #4570b6;
+    //         color: #4570b6;
+    //         text-align: center;
+    //         font-family: "Noto Sans HK";
+    //         font-size: clamp(10px, 1.04vw, 20px);
+    //         font-style: normal;
+    //         font-weight: 700;
+    //         line-height: 1.75;
+    //         letter-spacing: clamp(3px, 0.31vw, 6px);
+
+    //         .front-text {
+    //           display: none;
+    //         }
+    //         .after-text {
+    //           display: block;
+    //           color: #4570b6;
+    //           text-align: center;
+    //           font-family: "Noto Sans HK";
+    //           font-size: clamp(15px, 1.56vw, 30px);
+    //           font-style: normal;
+    //           font-weight: 700;
+    //           line-height: 1.33;
+    //           letter-spacing: clamp(4.5px, 0.47vw, 9px);
+    //         }
+    //       }
+
+    //       .shadow {
+    //         transform: translate(
+    //           clamp(5.5px, 0.57vw, 11px),
+    //           clamp(5.5px, 0.57vw, 11px)
+    //         );
+    //         transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    //       }
+    //     }
+
+    //     &:active {
+    //       .front {
+    //         transform: translate(-2px, -2px);
+    //         transition: transform 34ms;
+    //       }
+
+    //       .shadow {
+    //         transform: translate(1px, 1px);
+    //         transition: transform 34ms;
+    //       }
+    //     }
+
+    //     &:focus:not(:focus-visible) {
+    //       outline: none;
+    //     }
+    //   }
+    // }
     .centerSevice-btn-List {
       display: flex;
       justify-content: center;
@@ -3045,7 +3283,6 @@ i {
       }
     }
     .centerSevice-btnTwo {
-      // margin-top: 30px;
       cursor: pointer;
     }
   }
@@ -3183,7 +3420,7 @@ i {
             letter-spacing: clamp(0.875px, 0.09vw, 1.75px);
             span {
               color: #4570b6;
-              font-family: "ITC Avant Garde Gothic Pro";
+              font-family: "Poppins",sans-serif;
               font-size: clamp(27.5px, 2.86vw, 55px);
               font-style: normal;
               font-weight: 700;
@@ -3305,20 +3542,19 @@ i {
               // 右上角
               .UserShareBox-list-item-link-title {
                 pointer-events: none;
-
                 position: absolute;
                 right: 14px;
                 top: 14px;
                 border-radius: 75px;
                 background: #eb981a;
                 padding: 2px 18px;
-
                 color: #fff;
-                font-family: "ITC Avant Garde Gothic Pro";
+                font-family: "Poppins",sans-serif;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 1.75;
+                letter-spacing: 0;
               }
               .UserShareBox-list-item-link-text {
                 position: absolute;
@@ -3355,7 +3591,7 @@ i {
                     font-weight: 600;
                   }
                   & > span:nth-child(2) {
-                    font-family: "ITC Avant Garde Gothic Pro";
+                    font-family: "Poppins",sans-serif;
                     font-weight: 700;
                   }
                 }
@@ -3464,6 +3700,7 @@ i {
           background: #4570b6;
           .UserRatingBox-bottom-top {
             position: relative;
+            z-index: 2;
             padding-bottom: clamp(50px, 5.21vw, 100px);
             h4 {
               text-align: center;
@@ -3487,7 +3724,9 @@ i {
               line-height: 1.75;
               letter-spacing: clamp(3px, 0.31vw, 6px);
               text-align: justify;
-
+              span {
+                font-weight: 700;
+              }
             }
 
             .UserRatingBox-Link {
@@ -3573,8 +3812,21 @@ i {
           }
 
           .UserRatingBox-bottom-bottom {
-            img {
-              width: 100vw;
+            .environmentImgList {
+              .swiper-wrapper {
+                -webkit-transition-timing-function: linear;
+                -moz-transition-timing-function: linear;
+                -ms-transition-timing-function: linear;
+                -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+                .swiper-slide {
+                  width: fit-content;
+                  img {
+                    max-width: 961px;
+                    height: auto;
+                  }
+                }
+              }
             }
           }
         }

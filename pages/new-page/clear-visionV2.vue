@@ -277,7 +277,7 @@ i {
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 100vw;
-        margin-top: clamp(5px,2.56vw,10px);
+        margin-top: clamp(5px, 2.56vw, 10px);
         p {
           color: #6d6e71;
           font-family: "Noto Sans TC" !important;
@@ -294,6 +294,184 @@ i {
             font-weight: 700;
             line-height: 1.75;
             letter-spacing: clamp(2.4px, 1.23vw, 4.8px);
+          }
+        }
+      }
+    }
+  }
+
+  // 合適對象
+  .SuitableObject {
+    position: relative;
+    padding-top: 10px;
+    .SuitableObject-bg-right {
+      position: absolute;
+      right: -50px;
+      top: -55px;
+      width: 122px;
+      height: auto;
+    }
+    .SuitableObject-Box {
+      position: relative;
+      padding-bottom: 216px;
+      margin: 0 auto;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -18px;
+        left: -100px;
+        background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-mb-line.svg")
+          no-repeat;
+        background-size: 100% auto;
+        width: 681px;
+        height: 300px;
+        z-index: -1;
+      }
+
+      .SuitableObject-Box-title {
+        width: 313px;
+        height: 313px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        border: 1.115px solid #4570b6;
+        background: linear-gradient(210deg, #fff 13.8%, #f2f7ff 70.44%);
+        text-align: center;
+        padding-top: 66px;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -17px;
+          left: -17px;
+          background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-man-mb.svg");
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          width: 83px;
+          height: 181px;
+        }
+
+        h3 {
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 0.83;
+        }
+        p {
+          max-width: 202px;
+          margin: 21px auto 0;
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1.394;
+          letter-spacing: 3.5px;
+        }
+      }
+      .SuitableObject-Box-List {
+        width: 313px;
+        min-height: 320px;
+        margin: 0 auto;
+        position: absolute;
+        top: 184px;
+        left: 50%;
+        transform: translateX(-50%);
+        .SuitableObject-Box-List-item {
+          width: 174px;
+          height: 174px;
+          border-radius: 50%;
+          flex-shrink: 0;
+          border: 1px solid #4570b6;
+          background: #fff;
+          text-align: center;
+          img {
+            max-width: 74px;
+            position: absolute;
+
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          p {
+            position: absolute;
+
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            color: #6d6e71;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.394;
+            letter-spacing: 3.5px;
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+
+        & > .SuitableObject-Box-List-item:nth-child(1) {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          img {
+            top: 38px;
+          }
+          p {
+            top: 110px;
+            white-space: nowrap;
+          }
+        }
+        & > .SuitableObject-Box-List-item:nth-child(2) {
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 4;
+
+          img {
+            top: 43px;
+            max-width: 56px;
+          }
+          p {
+            top: 110px;
+            white-space: nowrap;
+          }
+        }
+        & > .SuitableObject-Box-List-item:nth-child(3) {
+          position: absolute;
+          left: 0;
+          top: 150px;
+          z-index: 3;
+
+          img {
+            top: 35px;
+          }
+          p {
+            top: 100px;
+            letter-spacing: 0;
+          }
+        }
+        & > .SuitableObject-Box-List-item:nth-child(4) {
+          position: absolute;
+          right: 0;
+          top: 150px;
+          z-index: 2;
+
+          img {
+            max-width: 56px;
+
+            top: 31px;
+          }
+          p {
+            top: 108px;
           }
         }
       }
@@ -635,7 +813,7 @@ i {
   }
 
   .icl-WhatChoose {
-    padding: 123px 0px;
+    padding: 98px 0px 120px;
     .icl-WhatChoose-title {
       max-width: 908px;
       color: #4570b6;
@@ -677,6 +855,200 @@ i {
             font-weight: 700;
             line-height: 1.75;
             letter-spacing: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  // 合適對象
+  .SuitableObject {
+    position: relative;
+    width: 100vw;
+
+    .SuitableObject-bg-right {
+      position: absolute;
+      right: -110px;
+      top: -275px;
+      width: 428px;
+      height: auto;
+    }
+    .SuitableObject-Box {
+      position: relative;
+      padding-bottom: 112px;
+      margin: 0 auto;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -383px;
+        left: -445px;
+        background: url(https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-line.svg)
+          no-repeat;
+        background-size: 100% auto;
+        width: 2089px;
+        height: 940px;
+        transform: rotate(1.996deg);
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      .SuitableObject-Box-title {
+        width: 562px;
+        height: 562px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        border: 2px solid #4570b6;
+        background: linear-gradient(210deg, #fff 13.8%, #f2f7ff 70.44%);
+        text-align: center;
+        padding-top: 132px;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -32px;
+          left: -32px;
+          background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-man-mb.svg");
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          width: 149px;
+          height: 326px;
+          z-index: 5;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 142px;
+          right: -40px;
+          background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-woman-mb.svg");
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          width: 224px;
+          height: 261px;
+
+          z-index: 5;
+        }
+
+        h3 {
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 1;
+        }
+        p {
+          max-width: 363px;
+          margin: 8px auto 0;
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1.75;
+          letter-spacing: 5px;
+        }
+      }
+      .SuitableObject-Box-List {
+        width: 1032px;
+        min-height: 435px;
+        margin: 0 auto;
+        position: absolute;
+        top: 238px;
+        left: 50%;
+        transform: translateX(-50%);
+        .SuitableObject-Box-List-item {
+          width: 313px;
+          height: 313px;
+          border-radius: 50%;
+          flex-shrink: 0;
+          border: 2px solid #4570b6;
+          background: #fff;
+          text-align: center;
+          img {
+            max-width: 134px;
+            position: absolute;
+
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          p {
+            position: absolute;
+
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            color: #6d6e71;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.75;
+            letter-spacing: 5px;
+          }
+        }
+
+        & > .SuitableObject-Box-List-item:nth-child(1) {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          img {
+            top: 68px;
+          }
+          p {
+            top: 190px;
+            white-space: nowrap;
+          }
+        }
+        & > .SuitableObject-Box-List-item:nth-child(2) {
+          position: absolute;
+          left: 240px;
+          top: 122px;
+          z-index: 2;
+
+          img {
+            top: 77px;
+            max-width: 100px;
+          }
+          p {
+            top: 201px;
+            white-space: nowrap;
+          }
+        }
+        & > .SuitableObject-Box-List-item:nth-child(3) {
+          position: absolute;
+          right: 240px;
+          top: 122px;
+          z-index: 3;
+
+          img {
+            top: 64px;
+            max-width: 132px;
+          }
+          p {
+            top: 190px;
+            letter-spacing: 0;
+          }
+        }
+        & > .SuitableObject-Box-List-item:nth-child(4) {
+          position: absolute;
+          right: 0;
+          top: 0px;
+          z-index: 4;
+
+          img {
+            max-width: 101px;
+
+            top: 56px;
+          }
+          p {
+            top: 198px;
           }
         }
       }
@@ -770,7 +1142,7 @@ i {
 
 
 <template>
-  <div class="lasik">
+  <div class="lasik" style="overflow-x: hidden;">
     <HeadV2 />
 
     <div class="new-container container center-Banner">
@@ -918,13 +1290,81 @@ i {
         </div>
         <div class="icl-WhatChoose-content-one-text">
           <p>
-            希瑪自創辦以來與STAAR Surgical公司建立良好的合作關係<span>逾10年</span>。<br/>
-            2023年，STAAR Surgical公司對希瑪眼科集團的<span>醫療技術、手術品質及服務作出認可</span>，宣佈將希瑪微笑矯視中心設立為<span>首間官方認證EVOICL 國際培訓中心</span>。希瑪微笑矯視中心往後會繼續致力於ICL方面發展，成為大眾選擇ICL植入式隱形眼鏡的首選!
+            希瑪自創辦以來與STAAR
+            Surgical公司建立良好的合作關係<span>逾10年</span>。<br />
+            2023年，STAAR
+            Surgical公司對希瑪眼科集團的<span>醫療技術、手術品質及服務作出認可</span>，宣佈將希瑪微笑矯視中心設立為<span
+              >首間官方認證EVOICL 國際培訓中心</span
+            >。希瑪微笑矯視中心往後會繼續致力於ICL方面發展，成為大眾選擇ICL植入式隱形眼鏡的首選!
           </p>
           <br />
           <p>
             希瑪微笑矯視中心在矯視技術領域不斷追求突破，近期我們在ICL植入式隱形眼鏡的術前檢查和矯視過程中引入了新的技術項目，以提升服務的質量和精準度。
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 合適對象-->
+    <section class="SuitableObject">
+      <img
+        class="SuitableObject-bg-right"
+        decoding="async"
+        src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgRight.svg"
+        alt=""
+        loading="lazy"
+        width="100%"
+        height="100%"
+        srcset="
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-mb-bgRight.svg 400w,
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-mb-bgRight.svg 640w,
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgRight.svg
+        "
+        sizes=" (max-width: 992px) 100vw,1216px"
+      />
+
+      <div class="SuitableObject-Box container">
+        <div class="SuitableObject-Box-title">
+          <h3>合適對象</h3>
+          <p>無論你追求效率還是悠閒自在，矯視都讓你的生活更清晰。</p>
+        </div>
+
+        <div class="SuitableObject-Box-List">
+          <div class="SuitableObject-Box-List-item">
+            <img
+              src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-1.svg"
+              alt=""
+            />
+            <p>40歲或以上</p>
+          </div>
+
+          <div class="SuitableObject-Box-List-item">
+            <img
+              src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-2.svg"
+              alt=""
+            />
+            <p>熱愛運動</p>
+          </div>
+
+          <div class="SuitableObject-Box-List-item">
+            <img
+              src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-3.svg"
+              alt=""
+            />
+            <p>
+              佩戴多副矯正度數眼鏡<br /><span
+                >(近視、遠視、<br />散光、老花)</span
+              >
+            </p>
+          </div>
+
+          <div class="SuitableObject-Box-List-item">
+            <img
+              src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-4.svg"
+              alt=""
+            />
+            <p>不愛佩戴眼鏡<br />或隱形眼鏡</p>
+          </div>
         </div>
       </div>
     </section>
