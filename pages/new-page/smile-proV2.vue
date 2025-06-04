@@ -501,7 +501,7 @@
     <drow />
 
     <!-- ICL植入式隱形眼鏡真實個案分享 -->
-    <section class="CaseSharing">
+    <!-- <section class="CaseSharing">
       <div class="new-container CaseSharing-Box">
         <h3>SMILE Pro微笑激光矯視<br />真實個案分享</h3>
         <div class="CaseSharing-list" ref="caseSharingList">
@@ -643,15 +643,9 @@
         </a>
       </div>
 
-      <!-- <a
-        target="_blank"
-        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-        class="CaseSharing-btn"
-        ><img
-          src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-share-btn.avif"
-          alt=""
-      /></a> -->
-    </section>
+
+    </section> -->
+   <userShare :user-share="ShareData"></userShare>
 
     <!-- 用家见证 -->
     <section class="smile-pro-evaluateV2">
@@ -1238,7 +1232,7 @@ import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
 
 import drow from "@/components/content/service/SmileProV2/drow.vue";
-
+import UserShare from "@/components/commom/UserShare/UserShare.vue";
 export default {
   components: {
     Head,
@@ -1255,6 +1249,7 @@ export default {
     FooterV2,
     HeadV2,
     drow,
+        UserShare
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -1432,6 +1427,79 @@ export default {
           prevEl: ".swiper-button-prev",
         },
       },
+
+      ShareData: [
+
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/TBI6J31JwJQ",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem2.avif",
+          text: ["做咗就可以好似我依家", "咁方便㗎喇"],
+          nameEn: "Carmen",
+          nameCn: "倪嘉雯",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/vxeN1wXeZ5M",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem3.avif",
+          text: ["好舒服之下就完成咗成", "個過程"],
+          nameEn: "Maggie",
+          nameCn: "米姬",
+        },
+
+
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/10KYv_gGgWM",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem5.avif",
+          text: ["無哂Con帶嚟嘅麻煩，", "促進咗眼神交流"],
+          nameEn: " ",
+          nameCn: "Anson Au",
+        },
+
+
+
+        {
+          type: "SMILE Pro",
+          href: "https://www.youtube.com/watch?v=1p5Qm_772jI",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem7.avif",
+          text: ["做完SMILE Pro", "上舞台都唔會驚光"],
+          nameEn: " ",
+          nameCn: "細貓",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/kVEJ-PN4AJo",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem8.avif",
+          text: ["我問自己點解唔早啲做", "SMILE Pro呢!"],
+          nameEn: " ",
+          nameCn: "Cindy Wong",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/VoGlE1dJPhc",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem9.avif",
+          text: ["做完幾個月視力都維持", "到非常之清"],
+          nameEn: "Pinky",
+          nameCn: "",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/1Ic0z7wiVv8",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem10.avif",
+          text: ["唔洗花時間戴Con，可", "以直接出門練習，非常", "方便"],
+          nameEn: "Tiffany",
+          nameCn: "鄧伊程",
+        },
+
+      ],
+
 
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
@@ -2575,6 +2643,7 @@ i {
 
   .smile-pro-evaluateV2 {
     background: #f4fafc;
+    margin-top: 40px;
     padding-top: 44px;
     padding-bottom: 30px;
     margin-bottom: 40px;
@@ -4100,6 +4169,7 @@ i {
     width: 100vw;
 
     background: #f4fafc;
+    margin-top: 90px;
     padding-top: 62px;
     padding-bottom: 93px;
     position: relative;

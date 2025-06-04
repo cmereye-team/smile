@@ -1311,6 +1311,7 @@ i {
   }
 
   .latestNews {
+        margin-top: 40px;
     margin-bottom: 40px;
     background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-newdongtai-mobile.jpg")
       no-repeat;
@@ -3541,7 +3542,7 @@ i {
     .top-btnV2new {
       display: none;
     }
-
+    margin-top: 70px;
     margin-bottom: 60px;
 
     background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-newdongtai-pc.png")
@@ -3581,6 +3582,7 @@ i {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+  
       .latestNews-title {
         color: #c13550;
         font-family: "Poppins", sans-serif;
@@ -4206,7 +4208,7 @@ i {
     </section>
 
     <!-- ICL植入式隱形眼鏡真實個案分享 -->
-    <section class="CaseSharing">
+    <!-- <section class="CaseSharing">
       <div class="new-container CaseSharing-Box">
         <h3>
           ICL植入式隱形眼鏡<br />
@@ -4262,7 +4264,6 @@ i {
             </a>
           </div>
 
-          <!-- 2 -->
           <div class="CaseSharing-list-item">
             <a
               href="https://www.youtube.com/watch?v=r0yDL98l0Zo"
@@ -4392,26 +4393,10 @@ i {
         </div>
       </div>
 
-      <!-- <a
-        target="_blank"
-        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-        class="CaseSharing-btn"
-        ><img
-          src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-share-btn.avif"
-          alt=""
-      /></a>
+    </section> -->
+    <UserShare :user-share="ShareData"></UserShare>
 
-            <a
-        target="_blank"
-        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-        class="CaseSharing-btn"
-      >
-        <p>
-          馬上了解<br />
-          ICL V6
-        </p>
-      </a> -->
-    </section>
+
 
     <!-- 最新动态 -->
     <section class="latestNews">
@@ -4571,7 +4556,7 @@ import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
 import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
-
+import UserShare from "@/components/commom/UserShare/UserShare.vue";
 export default {
   components: {
     Head,
@@ -4588,6 +4573,7 @@ export default {
     FooterV2,
     HeadV2,
     goTop,
+    UserShare
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -5013,6 +4999,79 @@ export default {
           ],
         },
       ],
+// 用家分享
+    ShareData: [
+        {
+          type: "ICL",
+          href: "https://youtu.be/fNSShYa7nKk",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem1.avif",
+          text: ["依家一擘大眼就見到", "好清楚嘅世界，好立體"],
+          nameEn: "Kathy",
+          nameCn: "王頌茵",
+        },
+
+                {
+          type: "ICL",
+          href: "https://www.youtube.com/watch?v=T9g2qoFI9nU",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl1.avif",
+          text: ["夜間高清視力對", "夜晚揸車好重要"],
+          nameEn: "Lily Lee",
+          nameCn: "",
+        },
+
+        {
+          type: "ICL",
+          href: "https://youtu.be/I2sl4GWqg1w",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif",
+          text: ["眼鏡由「必須品」", "變「奢侈品」"],
+          nameEn: " ",
+          nameCn: "麥沛東",
+        },
+
+                           {
+          type: "ICL",
+          href: "https://www.youtube.com/watch?v=2t7JjTab4xA",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl2.avif",
+          text: ["好Surprise 做完之後", "24小時都睇得咁清"],
+          nameEn: "",
+          nameCn: "林奕匡",
+        },
+
+
+                                   {
+          type: "ICL",
+          href: "https://www.youtube.com/watch?v=5ihrzFvOy38",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl3.avif",
+          text: ["好Surprise 做完之後", "24小時都睇得咁清"],
+          nameEn: "",
+          nameCn: "林宣妤",
+        },
+                                           {
+          type: "ICL",
+          href: "https://www.youtube.com/watch?v=CEbbKFeFdnc",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl4.avif",
+          text: ["好Surprise 做完之後", "24小時都睇得咁清"],
+          nameEn: "",
+          nameCn: "吳業坤",
+        },
+
+         {
+          type: "ICL",
+          href: "https://www.youtube.com/watch?v=e-c_qRuvWTA",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl5.avif",
+          text: ["好Surprise 做完之後", "24小時都睇得咁清"],
+          nameEn: "Tiffany Poon",
+          nameCn: "",
+        },
+
+
+
+        
+
+
+      ],
+
+
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-icl",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-icl",
       browserTitle: "ICL植入式隱形眼鏡 - 希瑪微笑矯視中心",

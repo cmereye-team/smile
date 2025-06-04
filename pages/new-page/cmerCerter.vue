@@ -175,7 +175,7 @@
               class="d-none d-lg-block"
             />中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。<br
               class="d-none d-lg-block"
-            />於香港擁有2間微笑矯視中心，<span>均符合FDA激光矯視標準</span>，交通便利，環境舒適。<br
+            />於香港擁有2間微笑矯視中心，均<span>符合FDA激光矯視標準</span>，交通便利，環境舒適。<br
               class="d-none d-lg-block"
             />提供一站式眼科專科醫療及矯視服務，包括：SMILE Pro微笑激光矯視、<br
               class="d-none d-lg-block"
@@ -190,7 +190,7 @@
             >。<br class="d-none d-lg-block" />
           </p>
           <p>
-            同年，本中心亦獲得<span>Zeiss蔡司頒發《全飛秒屈光手術卓越手術中心》</span>，而且更是首個<br
+            同年，本中心亦獲得<span>Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》</span>，而且更是首個<br
               class="d-none d-lg-block"
             />香港矯視中心被評為卓越手術中心。
           </p>
@@ -872,79 +872,7 @@
       </div>
     </section>
 
-    <section class="UserShare">
-      <div class="new-container container UserShareContainer">
-        <div class="UserShareBox">
-          <div class="UserShareBox-title">
-            <h3>用家分享</h3>
-            <div class="UserShareBox-title-text">
-              <img
-                class="d-block wow fadeInLeft"
-                decoding="async"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png"
-                alt=""
-                loading="lazy"
-                width="100%"
-                height="100%"
-                srcset="
-                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 400w,
-                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 640w,
-                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png
-                "
-                sizes=" (max-width: 992px) 100vw,1216px"
-              />
-
-              <!-- 
-
-              <img
-                class="d-lg-none"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.png"
-                alt=""
-              />
-              <img
-                class="d-none d-lg-block"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png"
-                alt=""
-              /> -->
-              <p>聽聽各位真實用家親身感受</p>
-            </div>
-          </div>
-
-          <ul class="UserShareBox-list" ref="UserShareBoxlist">
-            <li
-              class="UserShareBox-list-item"
-              v-for="(item, index) in userShare"
-              :key="index"
-            >
-              <a
-                class="UserShareBox-list-item-link"
-                :href="item.href"
-                target="_blank"
-                @click.prevent="handleLinkClick(item, $event)"
-              >
-                <img :src="item.img" alt="" />
-                <span
-                  class="UserShareBox-list-item-link-title"
-                  :style="{ backgroundColor: getColor(item.type) }"
-                  >{{ item.type }}</span
-                >
-                <div class="UserShareBox-list-item-link-text">
-                  <p v-for="(text, i) in item.text" :key="i">
-                    {{ text }}
-                  </p>
-                  <i :style="{ backgroundColor: getColor(item.type) }"></i>
-                  <div class="UserShareBox-list-item-link-text-name">
-                    <span>{{ item.nameCn }}</span
-                    >&nbsp;
-                    <span>{{ item.nameEn }}</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <UserShare :user-share="ShareData"></UserShare>
 
     <!-- 用户评分 -->
     <section class="UserRating">
@@ -1395,6 +1323,8 @@ import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
 
 import MarqueeCarousel from "@/components/commom/MarqueeCarousel/MarqueeCarousel.vue";
+import UserShare from "@/components/commom/UserShare/UserShare.vue";
+import Share from "../../components/content/service/ICL/share.vue";
 
 export default {
   components: {
@@ -1413,6 +1343,7 @@ export default {
     HeadV2,
     MarqueeCarousel,
     BannerSlider,
+    UserShare,
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -1467,7 +1398,7 @@ export default {
   data() {
     return {
       serverList: [
-             {
+        {
           title: "SMILE<br/>PRO",
           text: ["適合", "擔心眼睛無法", "對焦太久"],
           textmb: ["適合", "擔心眼睛無法對焦太久"],
@@ -1479,8 +1410,6 @@ export default {
           textmb: ["適合", "1000度以下近視", "500度以下散光"],
           link: "/vision-correction/relex-smile",
         },
-
-   
 
         {
           title: "ICL",
@@ -1499,148 +1428,6 @@ export default {
           text: ["適合", "1400度以下近視", "600度以下遠視", "600度以下散光"],
           textmb: ["適合", "1400度以下近視", "600度以下遠視", "600度以下散光"],
           link: "/vision-correction-lasik",
-        },
-      ],
-      isDragging: false,
-      startX: 0,
-      startScrollLeft: 0,
-      hasDragged: false, //用于判断是否进行了拖动操作,
-      colorMap: {
-        "SMILE Pro": "#4570B6",
-        ICL: "#EB981A",
-        "CLEAR-Vision": "#5FB947",
-        SMILE: "#30ABE2",
-      },
-      userShare: [
-        {
-          type: "ICL",
-          href: "https://youtu.be/fNSShYa7nKk",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem1.avif",
-          text: ["依家一擘大眼就見到", "好清楚嘅世界，好立體"],
-          nameEn: "Kathy",
-          nameCn: "王頌茵",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/TBI6J31JwJQ",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem2.avif",
-          text: ["做咗就可以好似我依家", "咁方便㗎喇"],
-          nameEn: "Carmen",
-          nameCn: "倪嘉雯",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/vxeN1wXeZ5M",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem3.avif",
-          text: ["好舒服之下就完成咗成", "個過程"],
-          nameEn: "Maggie",
-          nameCn: "米姬",
-        },
-
-        {
-          type: "ICL",
-          href: "https://youtu.be/I2sl4GWqg1w",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif",
-          text: ["眼鏡由「必須品」", "變「奢侈品」"],
-          nameEn: "",
-          nameCn: "麥沛東",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/10KYv_gGgWM",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem5.avif",
-          text: ["無哂Con帶嚟嘅麻煩，", "促進咗眼神交流"],
-          nameEn: "",
-          nameCn: "Anson Au",
-        },
-
-        {
-          type: "SMILE",
-          href: "https://www.youtube.com/watch?v=JCzzO4Y0kko",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem6.avif",
-          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
-          nameEn: "Ada",
-          nameCn: "姜咏鑫",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://www.youtube.com/watch?v=1p5Qm_772jI",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem7.avif",
-          text: ["做完SMILE Pro", "上舞台都唔會驚光"],
-          nameEn: "",
-          nameCn: "細貓",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/kVEJ-PN4AJo",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem8.avif",
-          text: ["我問自己點解唔早啲做", "SMILE Pro呢!"],
-          nameEn: "",
-          nameCn: "Cindy Wong",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/VoGlE1dJPhc",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem9.avif",
-          text: ["做完幾個月視力都維持", "到非常之清"],
-          nameEn: "",
-          nameCn: "Pinky",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/1Ic0z7wiVv8",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem10.avif",
-          text: ["唔洗花時間戴Con，可", "以直接出門練習，非常", "方便"],
-          nameEn: "Tiffany",
-          nameCn: "鄧伊程",
-        },
-
-        {
-          type: "SMILE",
-          href: "https://youtu.be/tLsWfdZy4P4",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem11.avif",
-          text: ["一行出去已經感受到，", "原來我望嘢可以", "咁清楚!"],
-          nameEn: "",
-          nameCn: "馬燕茹",
-        },
-
-        {
-          type: "SMILE",
-          href: "https://youtu.be/_wk_gZGzB1s",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem12.avif",
-          text: [
-            "睇嘢清咗，一個簡單",
-            "眼神已經可以即刻傳波",
-            "俾隊友，射波亦",
-            "更容易集中",
-          ],
-          nameEn: "",
-          nameCn: "李旭川",
-        },
-
-        {
-          type: "SMILE",
-          href: "https://youtu.be/TGxol6pNXSY",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem13.avif",
-          text: ["就算落雨都唔會再影響", "到我跑步嘅心情"],
-          nameEn: "",
-          nameCn: "黃啟樂",
-        },
-
-        {
-          type: "SMILE",
-          href: "https://youtu.be/CJEE6UQKPes",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem14.avif",
-          text: ["唔洗戴Con係一種", "解脫!可以好瀟灑咁", "出門口"],
-          nameEn: "",
-          nameCn: "尹焯熙",
         },
       ],
 
@@ -1797,6 +1584,139 @@ export default {
         },
       ],
 
+      ShareData: [
+        {
+          type: "ICL",
+          href: "https://youtu.be/fNSShYa7nKk",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem1.avif",
+          text: ["依家一擘大眼就見到", "好清楚嘅世界，好立體"],
+          nameEn: "Kathy",
+          nameCn: "王頌茵",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/TBI6J31JwJQ",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem2.avif",
+          text: ["做咗就可以好似我依家", "咁方便㗎喇"],
+          nameEn: "Carmen",
+          nameCn: "倪嘉雯",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/vxeN1wXeZ5M",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem3.avif",
+          text: ["好舒服之下就完成咗成", "個過程"],
+          nameEn: "Maggie",
+          nameCn: "米姬",
+        },
+
+        {
+          type: "ICL",
+          href: "https://youtu.be/I2sl4GWqg1w",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif",
+          text: ["眼鏡由「必須品」", "變「奢侈品」"],
+          nameEn: " ",
+          nameCn: "麥沛東",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/10KYv_gGgWM",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem5.avif",
+          text: ["無哂Con帶嚟嘅麻煩，", "促進咗眼神交流"],
+          nameEn: " ",
+          nameCn: "Anson Au",
+        },
+
+        {
+          type: "SMILE",
+          href: "https://www.youtube.com/watch?v=JCzzO4Y0kko",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem6.avif",
+          text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
+          nameEn: "Ada",
+          nameCn: "姜咏鑫",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://www.youtube.com/watch?v=1p5Qm_772jI",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem7.avif",
+          text: ["做完SMILE Pro", "上舞台都唔會驚光"],
+          nameEn: " ",
+          nameCn: "細貓",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/kVEJ-PN4AJo",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem8.avif",
+          text: ["我問自己點解唔早啲做", "SMILE Pro呢!"],
+          nameEn: " ",
+          nameCn: "Cindy Wong",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/VoGlE1dJPhc",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem9.avif",
+          text: ["做完幾個月視力都維持", "到非常之清"],
+          nameEn: "Pinky",
+          nameCn: "",
+        },
+
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/1Ic0z7wiVv8",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem10.avif",
+          text: ["唔洗花時間戴Con，可", "以直接出門練習，非常", "方便"],
+          nameEn: "Tiffany",
+          nameCn: "鄧伊程",
+        },
+
+        {
+          type: "SMILE",
+          href: "https://youtu.be/tLsWfdZy4P4",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem11.avif",
+          text: ["一行出去已經感受到，", "原來我望嘢可以", "咁清楚!"],
+          nameEn: " ",
+          nameCn: "馬燕茹",
+        },
+
+        {
+          type: "SMILE",
+          href: "https://youtu.be/_wk_gZGzB1s",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem12.avif",
+          text: [
+            "睇嘢清咗，一個簡單",
+            "眼神已經可以即刻傳波",
+            "俾隊友，射波亦",
+            "更容易集中",
+          ],
+          nameEn: " ",
+          nameCn: "李旭川",
+        },
+
+        {
+          type: "SMILE",
+          href: "https://youtu.be/TGxol6pNXSY",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem13.avif",
+          text: ["就算落雨都唔會再影響", "到我跑步嘅心情"],
+          nameEn: " ",
+          nameCn: "黃啟樂",
+        },
+
+        {
+          type: "SMILE",
+          href: "https://youtu.be/CJEE6UQKPes",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem14.avif",
+          text: ["唔洗戴Con係一種", "解脫!可以好瀟灑咁", "出門口"],
+          nameEn: " ",
+          nameCn: "尹焯熙",
+        },
+      ],
+
       isMobile: false,
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
@@ -1815,46 +1735,6 @@ export default {
         top: 0,
         behavior: "smooth",
       });
-    },
-    onMouseDown(e) {
-      if (window.innerWidth > 992) {
-        this.isDragging = true;
-        this.hasDragged = false; // 鼠标按下时，重置拖动标志位
-        this.$refs.UserShareBoxlist.style.cursor = "grabbing";
-        this.startX = e.pageX;
-        this.startScrollLeft = this.$refs.UserShareBoxlist.scrollLeft;
-      }
-    },
-    onMouseMove(e) {
-      if (window.innerWidth > 992) {
-        if (this.isDragging) {
-          this.hasDragged = true; // 只要鼠标移动了，就认为进行了拖动操作
-          const x = e.pageX;
-          const walk = x - this.startX;
-          this.$refs.UserShareBoxlist.scrollLeft = this.startScrollLeft - walk;
-        }
-      }
-    },
-
-    onMouseUp() {
-      if (window.innerWidth > 992) {
-        this.isDragging = false;
-        this.$refs.UserShareBoxlist.style.cursor = "grab";
-      }
-    },
-
-    handleLinkClick(item, event) {
-      if (this.hasDragged) {
-        event.preventDefault(); // 如果进行了拖动操作，阻止 a 标签的默认点击行为
-      } else {
-        // 如果没有拖动，正常跳转
-        window.open(item.href, "_blank");
-      }
-      this.hasDragged = false; // 处理完点击事件后，重置拖动标志位
-    },
-    // 获取背景颜色
-    getColor(type) {
-      return this.colorMap[type] || "white";
     },
 
     handleScroll() {
@@ -1911,14 +1791,6 @@ export default {
   },
   beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
-    if (this.$refs.UserShareBoxlist) {
-      this.$refs.UserShareBoxlist.removeEventListener("mousedown", (e) => {
-        e.preventDefault();
-        this.onMouseDown(e);
-      });
-      document.removeEventListener("mousemove", this.onMouseMove);
-      document.removeEventListener("mouseup", this.onMouseUp);
-    }
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -1937,17 +1809,6 @@ export default {
         this.isMobile = true;
       } else {
         this.isMobile = false;
-      }
-    });
-    this.$nextTick(() => {
-      if (this.$refs.UserShareBoxlist) {
-        this.$refs.UserShareBoxlist.addEventListener("mousedown", (e) => {
-          // 阻止 a 标签等元素的默认行为
-          e.preventDefault();
-          this.onMouseDown(e);
-        });
-        document.addEventListener("mousemove", this.onMouseMove);
-        document.addEventListener("mouseup", this.onMouseUp);
       }
     });
   },
@@ -2135,7 +1996,7 @@ i {
           h4 {
             color: #4570b6;
             text-align: center;
-            font-family: "Poppins",sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: clamp(14.5px, 7.44vw, 29px);
             font-style: normal;
             font-weight: 700;
@@ -2245,31 +2106,41 @@ i {
     // overflow: hidden;
     .centerSeviceNewList {
       margin-top: 11.28vw;
-
+   &>.centerSeviceNewItem:nth-child(1){
+    h4,.centerSeviceNewItem-text{
+       border-top: 0.26vw solid #4570B6;
+    }
+   }
       .centerSeviceNewItem {
         display: flex;
         justify-content: flex-start;
         align-content: center;
         background: #4570b6;
-        border-bottom: 0.26vw solid #fff;
+         border: none;
+
+        
         h4 {
-          width: 33.33vw;
+          flex-shrink: 0;
+          width: 32.31vw;
           height: 27.69vw;
           border-right: 0.26vw solid #fff;
           display: flex;
           justify-content: center;
           align-items: center;
 
-          color: #fff;
+          color: #4570B6;;
           text-align: center;
-          font-family: "Poppins",sans-serif;
+          font-family: "Poppins", sans-serif;
           font-size: 5.13vw;
           font-style: normal;
           font-weight: 700;
           line-height: 1.5;
           letter-spacing: 0.31vw;
+          background: #FFF;
+          border-bottom: 0.26vw solid #4570B6;
         }
         .centerSeviceNewItem-text {
+                  border-bottom: 0.26vw solid #fff;
           width: -webkit-fill-available;
           position: relative;
           display: flex;
@@ -2460,7 +2331,7 @@ i {
             letter-spacing: 0.84px;
             span {
               color: #4570b6;
-              font-family: "Poppins",sans-serif;
+              font-family: "Poppins", sans-serif;
               font-size: clamp(13px, 6.67vw, 26px);
               font-style: normal;
               font-weight: 700;
@@ -2508,149 +2379,6 @@ i {
   //     letter-spacing: 1px;
   //   }
   // }
-
-  // 用户分享
-  .UserShare {
-    width: 100vw;
-    background: #f2f7ff;
-
-    margin-top: 40px;
-    .UserShareContainer {
-      margin: 0 auto;
-      .UserShareBox {
-        padding-bottom: 40px;
-        .UserShareBox-title {
-          padding-top: 27px;
-          position: relative;
-          &::after {
-            content: "";
-            position: absolute;
-            left: 50px;
-            top: -7px;
-            width: 50px;
-            height: 45px;
-            background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-title-bg.png")
-              no-repeat;
-            background-size: contain;
-          }
-
-          text-align: center;
-          h3 {
-            color: #4570b6;
-            font-family: "Noto Sans HK";
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 1.16;
-            letter-spacing: 5px;
-          }
-          .UserShareBox-title-text {
-            img {
-              width: 300px;
-              margin: 18px auto 0;
-            }
-            p {
-              color: #6d6e71;
-              font-family: "Noto Sans HK";
-              font-size: 10px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 1.66;
-              letter-spacing: 2.5px;
-            }
-          }
-        }
-
-        .UserShareBox-list {
-          margin-top: 26px;
-          padding-bottom: 30px;
-          display: flex;
-          gap: 3.75px;
-          max-width: 100vw;
-          overflow-x: scroll;
-
-          &::-webkit-scrollbar {
-            height: 3px; /* 设置滚动条的高度（宽度） */
-          }
-          &::-webkit-scrollbar-thumb {
-            background-color: #4570b6;
-            border: 0px solid rgba(0, 0, 0, 0);
-          }
-          &::-webkit-scrollbar-track {
-            background-color: #fff;
-            width: 50%;
-          }
-          .UserShareBox-list-item {
-            .UserShareBox-list-item-link {
-              position: relative;
-              display: block;
-              width: 200px;
-              height: 330px;
-              img {
-                width: 100%;
-              }
-              // 右上角
-              .UserShareBox-list-item-link-title {
-                position: absolute;
-                right: 10px;
-                top: 10px;
-                border-radius: 75px;
-                background: #eb981a;
-                padding: 3px 12px;
-
-                color: #fff;
-                font-family:"Poppins",sans-serif;
-                font-size: 14.989px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.75;
-              }
-              .UserShareBox-list-item-link-text {
-                position: absolute;
-                left: 18px;
-                bottom: 18px;
-                p {
-                  color: #fff;
-                  font-family: "Noto Sans TC";
-                  font-size: 13.5px;
-                  font-style: normal;
-                  font-weight: 700;
-                  line-height: 1.4444;
-                  letter-spacing: 0.674px;
-                }
-                i {
-                  display: block;
-                  margin: 10px 0;
-                  width: 50px;
-                  height: 2px;
-                  background: #eb981a;
-                }
-                .UserShareBox-list-item-link-text-name {
-                  span {
-                    color: #fff;
-
-                    font-size: 14.989px;
-                    font-style: normal;
-
-                    line-height: normal;
-                    letter-spacing: 0.899px;
-                  }
-                  & > span:nth-child(1) {
-                    font-family: "Noto Sans TC";
-                    font-weight: 600;
-                  }
-                  & > span:nth-child(2) {
-                    font-family:"Poppins",sans-serif;
-                    font-weight: 700;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 
   // 用户评分
   .UserRating {
@@ -2854,7 +2582,7 @@ i {
                   img {
                     width: 374px;
                     aspect-ratio: 16 / 9;
-                
+
                     height: auto;
                   }
                 }
@@ -3030,96 +2758,98 @@ i {
   .centerSevice {
     margin-top: clamp(35px, 3.65vw, 70px);
 
- .centerSeviceNewList {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  border-top: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
-  height: clamp(185.5px, 19.32vw, 371px);
-  background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/centerSevice/centerSeviceNewList-bg.avif");
-  background-repeat: no-repeat;
-  background-position: center 100%;
-  
-  .centerSeviceNewItem {
-    width: clamp(135.5px, 14.11vw, 271px);
-    height: clamp(76.5px, 7.97vw, 153px);
-    border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
-    border-top: none;
-    padding-top: clamp(23.5px, 2.45vw, 47px);
-    transition: all 0.5s ease;
-    transform: translateY(0);
-    position: relative;
-    overflow: hidden;
-    
-    h4 {
+    .centerSeviceNewList {
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: clamp(32px, 3.33vw, 64px);
-      color: #4570b6;
-      text-align: center;
-      font-family: "Poppins", sans-serif;
-      font-size: clamp(15px, 1.56vw, 30px);
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1;
-      transition: color 0.3s ease;
-      letter-spacing: 0;
-    }
-    
-    .centerSeviceNewItem-text {
-      position: absolute;
-      top:clamp(61.5px,6.41vw,123px);
-      left: 0;
-      width: 100%;
-      height: -webkit-fill-available;
-    
-      margin-top: 0;
-      color: #fff;
-      text-align: center;
-      font-family: "Noto Sans HK";
-      font-size: clamp(10px, 1.04vw, 20px);
-      font-style: normal;
-      font-weight: 700;
-      line-height: 151%;
-      letter-spacing: clamp(1px, 0.1vw, 2px);
-      opacity: 0;
-      // transform: translateY(20px);
-      transition: all 0.4s ease 0.1s;
-    }
-    
-    svg {
-      width: clamp(15px, 1.56vw, 30px);
-      height: clamp(15px, 1.56vw, 30px);
-      position: absolute;
-      bottom: clamp(15px, 1.56vw, 30px);
-      right: clamp(15px, 1.56vw, 30px);
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease 0.2s;
-    }
-    
-    &:hover {
-      transform: translateY(-clamp(40px, 4.17vw, 80px));
-      background: #4570b6;
-      height: clamp(150px, 15.63vw, 302px); /* 增加悬停时的高度 */
-      
-      h4 {
-        color: #fff;
-      }
-      
-      .centerSeviceNewItem-text {
-        opacity: 1;
-        transform: translateY(-clamp(76.5px, 7.97vw, 153px)); /* 向上移动到可见区域 */
-      }
-      
-      svg {
-        opacity: 1;
+      align-items: flex-start;
+      border-top: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
+      height: clamp(185.5px, 19.32vw, 371px);
+      background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/centerSevice/centerSeviceNewList-bg.avif");
+      background-repeat: no-repeat;
+      background-position: center 100%;
+
+      .centerSeviceNewItem {
+        width: clamp(135.5px, 14.11vw, 271px);
+        height: clamp(76.5px, 7.97vw, 153px);
+        border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
+        border-top: none;
+        padding-top: clamp(23.5px, 2.45vw, 47px);
+        transition: all 0.5s ease;
         transform: translateY(0);
+        position: relative;
+        overflow: hidden;
+
+        h4 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: clamp(32px, 3.33vw, 64px);
+          color: #4570b6;
+          text-align: center;
+          font-family: "Poppins", sans-serif;
+          font-size: clamp(15px, 1.56vw, 30px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1;
+          transition: color 0.3s ease;
+          letter-spacing: 0;
+        }
+
+        .centerSeviceNewItem-text {
+          position: absolute;
+          top: clamp(61.5px, 6.41vw, 123px);
+          left: 0;
+          width: 100%;
+          height: -webkit-fill-available;
+
+          margin-top: 0;
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: clamp(10px, 1.04vw, 20px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 151%;
+          letter-spacing: clamp(1px, 0.1vw, 2px);
+          opacity: 0;
+          // transform: translateY(20px);
+          transition: all 0.4s ease 0.1s;
+        }
+
+        svg {
+          width: clamp(15px, 1.56vw, 30px);
+          height: clamp(15px, 1.56vw, 30px);
+          position: absolute;
+          bottom: clamp(15px, 1.56vw, 30px);
+          right: clamp(15px, 1.56vw, 30px);
+          opacity: 0;
+          transform: translateY(10px);
+          transition: all 0.3s ease 0.2s;
+        }
+
+        &:hover {
+          transform: translateY(-clamp(40px, 4.17vw, 80px));
+          background: #4570b6;
+          height: clamp(150px, 15.63vw, 302px); /* 增加悬停时的高度 */
+
+          h4 {
+            color: #fff;
+          }
+
+          .centerSeviceNewItem-text {
+            opacity: 1;
+            transform: translateY(
+              -clamp(76.5px, 7.97vw, 153px)
+            ); /* 向上移动到可见区域 */
+          }
+
+          svg {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
       }
     }
-  }
-}
 
     // .centerSeviceList {
     //   display: flex;
@@ -3265,8 +2995,22 @@ i {
       align-items: center;
       gap: clamp(7.5px, 0.78vw, 15px);
       background: #4570b6;
-      border-radius: clamp(25px, 2.6vw, 50px);
+      border-radius: 10px;
       // margin: clamp(85px, 8.85vw, 170px) auto 0;
+      border: 1px solid #4570b6;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #fff;
+        span {
+          color: #4570b6;
+        }
+        svg {
+          path {
+            stroke: #4570b6;
+          }
+        }
+      }
       svg {
         width: clamp(11.5px, 1.2vw, 23px);
         height: clamp(11.5px, 1.2vw, 23px);
@@ -3420,7 +3164,7 @@ i {
             letter-spacing: clamp(0.875px, 0.09vw, 1.75px);
             span {
               color: #4570b6;
-              font-family: "Poppins",sans-serif;
+              font-family: "Poppins", sans-serif;
               font-size: clamp(27.5px, 2.86vw, 55px);
               font-style: normal;
               font-weight: 700;
@@ -3435,168 +3179,6 @@ i {
             font-weight: 400;
             line-height: 1.75;
             letter-spacing: clamp(2.5px, 0.26vw, 5px);
-          }
-        }
-      }
-    }
-  }
-
-  // 用户分享
-  .UserShare {
-    // width: 100vw;
-    background: #f2f7ff;
-    margin-top: 100px;
-    .UserShareContainer {
-      margin: 0 auto;
-      .UserShareBox {
-        padding-bottom: 40px;
-        .UserShareBox-title {
-          padding-top: 70px;
-          position: relative;
-          display: flex;
-          align-items: center;
-          gap: 94px;
-
-          &::after {
-            content: "";
-            position: absolute;
-            left: -160px;
-            top: -42px;
-            width: 110px;
-            height: 98px;
-            background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-title-bg.png")
-              no-repeat;
-            background-size: contain;
-          }
-          h3 {
-            color: #4570b6;
-            font-family: "Noto Sans TC";
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 1;
-            letter-spacing: 3px;
-          }
-          .UserShareBox-title-text {
-            p {
-              color: #6d6e71;
-              font-family: "Noto Sans HK";
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 1.75;
-              letter-spacing: 5px;
-            }
-          }
-        }
-
-        .UserShareBox-list {
-          cursor: grab;
-          margin-top: 35px;
-          padding-bottom: 77px;
-          display: flex;
-          gap: 5px;
-          max-width: 1544px;
-          width: 1544px;
-          overflow-x: scroll;
-
-          &:active {
-            cursor: grabbing;
-          }
-          &::-webkit-scrollbar {
-            height: 3px; /* 设置滚动条的高度（宽度） */
-          }
-          &::-webkit-scrollbar-thumb {
-            background-color: #4570b6;
-            border: 0px solid rgba(0, 0, 0, 0);
-          }
-          &::-webkit-scrollbar-track {
-            background-color: #fff;
-            width: 50%;
-          }
-
-          // &:hover {
-          //   .UserShareBox-list-item {
-          //     filter: blur(3px);
-          //     opacity: 0.5;
-          //     transform: scale(0.98);
-          //     &:hover {
-          //       transform: scale(1);
-          //       filter: blur(0px);
-          //       opacity: 1;
-          //     }
-          //   }
-          // }
-
-          .UserShareBox-list-item {
-            .UserShareBox-list-item-link {
-              position: relative;
-              display: block;
-              width: 265px;
-              height: 439px;
-
-              img {
-                width: 100%;
-                pointer-events: none;
-              }
-              // 右上角
-              .UserShareBox-list-item-link-title {
-                pointer-events: none;
-                position: absolute;
-                right: 14px;
-                top: 14px;
-                border-radius: 75px;
-                background: #eb981a;
-                padding: 2px 18px;
-                color: #fff;
-                font-family: "Poppins",sans-serif;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.75;
-                letter-spacing: 0;
-              }
-              .UserShareBox-list-item-link-text {
-                position: absolute;
-                pointer-events: none;
-
-                left: 24px;
-                bottom: 24px;
-                p {
-                  color: #fff;
-                  font-family: "Noto Sans TC";
-                  font-size: 18px;
-                  font-style: normal;
-                  font-weight: 700;
-                  line-height: 26px;
-                  letter-spacing: 0.9px;
-                }
-                i {
-                  display: block;
-                  margin: 12px 0;
-                  width: 68px;
-                  height: 3px;
-                  background: #eb981a;
-                }
-                .UserShareBox-list-item-link-text-name {
-                  span {
-                    color: #fff;
-                    font-size: 20px;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: 1.2px;
-                  }
-                  & > span:nth-child(1) {
-                    font-family: "Noto Sans TC";
-                    font-weight: 600;
-                  }
-                  & > span:nth-child(2) {
-                    font-family: "Poppins",sans-serif;
-                    font-weight: 700;
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -3788,6 +3370,11 @@ i {
                 top: clamp(113px, 11.77vw, 226px);
                 left: clamp(149px, 15.52vw, 298px);
                 background: #fff;
+                &:hover {
+                  svg {
+                    animation: shake 0.5s ease-in-out;
+                  }
+                }
                 span {
                   color: #4570b6;
                 }
@@ -3834,6 +3421,24 @@ i {
     }
   }
 
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0) scale(1) rotate(0deg);
+    }
+    20% {
+      transform: translateX(-4px) scale(1.05) rotate(-1deg);
+    }
+    40% {
+      transform: translateX(4px) scale(1.05) rotate(1deg);
+    }
+    60% {
+      transform: translateX(-3px) scale(1.05) rotate(-0.5deg);
+    }
+    80% {
+      transform: translateX(3px) scale(1.05) rotate(0.5deg);
+    }
+  }
   // 分享给朋友
   .CaseSharingV2 {
     display: none;
@@ -3845,17 +3450,6 @@ i {
     max-width: 1140px !important;
     margin-left: auto;
     margin-right: auto;
-  }
-  .UserShare {
-    .UserShareContainer {
-      .UserShareBox {
-        .UserShareBox-list {
-          max-width: calc(100vw - calc(100vw - 1320px) / 2);
-          width: fit-content;
-          padding-right: 85px;
-        }
-      }
-    }
   }
 }
 

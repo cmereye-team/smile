@@ -130,8 +130,63 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios"],
+    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios",'@nuxtjs/pwa'],
   ],
+
+ workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: '/*', // 所有页面请求
+        handler: 'networkFirst',
+        strategyOptions: {
+          cacheName: 'pages-cache-v1', // 自定义缓存名，用于版本控制
+          cacheExpiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存一周
+          },
+        },
+        strategyPlugins: [
+          {
+            use: 'cacheableResponse',
+            config: {
+              statuses: [0, 200], // 只缓存成功响应
+            },
+          },
+        ],
+      },
+      {
+        urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/, // 图片资源
+        handler: 'cacheFirst',
+        strategyOptions: {
+          cacheName: 'images-cache-v1',
+          cacheExpiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存一周
+          },
+        },
+      },
+    ],
+  },
+
+  manifest: {
+    name: 'My PWA App',
+    short_name: 'PWA App',
+    lang: 'zh-CN',
+    display: 'standalone',
+    background_color: '#ffffff',
+    theme_color: '#000000',
+    icons: [
+      {
+        src: '/wapIcon.png', 
+        sizes: '512x512',
+        type: 'image/png'
+      }
+    ]
+  },
+
+
+
+
   sitemap: {
     hostname: "https://smile.hkcmereye.com",
     gizp: true,
