@@ -303,12 +303,14 @@
       <div class="maps-title">
         <div
           @click="switchMode(0)"
+          class="clickable-item-center"
           :class="[isSmile == true ? 'maps-title-active-left' : '']"
         >
           {{ $t("contactUs.tableTitle1") }}
         </div>
         <div
           @click="switchMode(1)"
+          class="clickable-item-eye"
           :class="[isSmile == false ? 'maps-title-active-right' : '']"
         >
           {{ $t("contactUs.tableTitle2") }}
