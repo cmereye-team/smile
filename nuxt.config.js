@@ -5,8 +5,10 @@ import router from "./router/index.js";
 import beforeRouter from "./router/beforeEach.js";
 
 export default {
+  mode: "universal",
   router,
   // Global page headers: https://go.nuxtjs.dev/config-head
+
   head: {
     title: "希瑪微笑矯視中心",
     htmlAttrs: {
@@ -95,6 +97,7 @@ export default {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,800;1,300&display=swap",
       },
+      { rel: "manifest", href: "/app-manifest.json" },
     ],
   },
 
@@ -114,9 +117,7 @@ export default {
     { src: "~/plugins/vue-swiper.js", ssr: false },
     { src: "~plugins/element-ui/element-ui.js", ssr: false },
     { src: "~plugins/wow.js", ssr: false },
-
     { src: "./router/beforeEach.js", ssr: false },
-
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -130,62 +131,35 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios",'@nuxtjs/pwa'],
+    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios"],
   ],
-
- workbox: {
+  workbox: {
+    enabled: true,
+    // 添加预缓存配置
+    preCaching: [{ url: "/", revision: "v1" }],
     runtimeCaching: [
       {
-        urlPattern: '/*', // 所有页面请求
-        handler: 'networkFirst',
+        urlPattern: "^https://smile.hkcmereye.com/.*",
+        handler: "networkFirst",
         strategyOptions: {
-          cacheName: 'pages-cache-v1', // 自定义缓存名，用于版本控制
+          cacheName: "pages-cache-v1",
           cacheExpiration: {
-            maxEntries: 50,
-            maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存一周
+            maxAgeSeconds: 7 * 24 * 60 * 60,
           },
         },
-        strategyPlugins: [
-          {
-            use: 'cacheableResponse',
-            config: {
-              statuses: [0, 200], // 只缓存成功响应
-            },
-          },
-        ],
       },
       {
-        urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/, // 图片资源
-        handler: 'cacheFirst',
+        urlPattern: "/_nuxt/.*",
+        handler: "cacheFirst",
         strategyOptions: {
-          cacheName: 'images-cache-v1',
+          cacheName: "static-cache-v1",
           cacheExpiration: {
-            maxEntries: 50,
-            maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存一周
+            maxAgeSeconds: 7 * 24 * 60 * 60,
           },
         },
       },
     ],
   },
-
-  manifest: {
-    name: 'My PWA App',
-    short_name: 'PWA App',
-    lang: 'zh-CN',
-    display: 'standalone',
-    background_color: '#ffffff',
-    theme_color: '#000000',
-    icons: [
-      {
-        src: '/wapIcon.png', 
-        sizes: '512x512',
-        type: 'image/png'
-      }
-    ]
-  },
-
-
-
 
   sitemap: {
     hostname: "https://smile.hkcmereye.com",
