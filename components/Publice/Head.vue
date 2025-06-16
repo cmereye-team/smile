@@ -280,7 +280,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 94vw;
+    // max-width: 94vw;
+    margin: 0;
   }
   .btn-icl_event {
     position: fixed !important;
