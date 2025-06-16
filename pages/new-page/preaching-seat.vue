@@ -139,26 +139,10 @@
         </div>
       </div>
       <div class="lecture-image">
-        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_CT.jpg" alt="6月 中环" />
-        <img v-if="isBeforeFeb35()" src="https://statichk.cmermedical.com/smile/20250512_6月講座_MK.jpg" alt="6月 旺角" />
-        <!-- <img v-if="isBeforeFeb34()" src="https://statichk.cmermedical.com/smile/2025042310325502.webp" alt="5月 中环" />
-        <img v-if="isBeforeFeb34()" src="https://statichk.cmermedical.com/smile/2025042310325501.webp" alt="5月 旺角" />
-        <img v-if="isBeforeFeb33()" src="https://statichk.cmermedical.com/smile/2025031414400701.webp" alt="4月 中环" />
-        <img v-if="isBeforeFeb33()" src="https://statichk.cmermedical.com/smile/2025031414400702.webp" alt="4月 旺角" />
-        <img v-if="isBeforeFeb32()" src="https://statichk.cmermedical.com/smile/2025021916045001.webp" alt="3月 中环" />
-        <img v-if="isBeforeFeb32()" src="https://statichk.cmermedical.com/smile/2025021916044001.webp" alt="3月 旺角" />
-        <img v-if="isBeforeFeb28()" src="https://statichk.cmermedical.com/smile/68910b3cec5d.webp" alt="2月 中环" />
-        <img v-if="isBeforeFeb28()" src="https://statichk.cmermedical.com/smile/017b8163c9ac.webp" alt="2月 旺角" /> -->
-        <!-- <img
-          v-if="isBeforeFeb31()"
-          src="https://statichk.cmermedical.com/smile/e7458a6d7e35.png"
-          alt="1月 中环"
-        />
-        <img
-          v-if="isBeforeFeb31()"
-          src="https://statichk.cmermedical.com/smile/4ff6c787fe9a.png"
-          alt="1月 旺角"
-        /> -->
+        <img src="https://statichk.cmermedical.com/smile/CT_20250612_7月講座.jpg?ver=7" alt="7月 中环" />
+        <img src="https://statichk.cmermedical.com/smile/MK_20250612_7月講座.jpg?ver=7" alt="7月 旺角" />
+        <img src="https://statichk.cmermedical.com/smile/20250512_6月講座_CT.jpg?ver=6" alt="6月 中环" />
+        <img src="https://statichk.cmermedical.com/smile/20250512_6月講座_MK.jpg?ver=6" alt="6月 旺角" />
       </div>
     </div>
     <businessHours />
@@ -276,37 +260,7 @@ export default {
   },
   computed: {},
   methods: {
-    isBeforeFeb35() {
-      const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 5, 30); // 6月
-      return today < targetDate;
-    },
-    isBeforeFeb34() {
-      const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 4, 31); // 5月
-      return today < targetDate;
-    },
-    isBeforeFeb33() {
-      const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 3, 30); // 4月
-      return today < targetDate;
-    },
-    isBeforeFeb32() {
-      const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 2, 28); // 3月
-      return today < targetDate;
-    },
-    isBeforeFeb28() {
-      const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 1, 28); // 2月
-      return today < targetDate;
-    },
-    isBeforeFeb31() {
-      const today = new Date();
-      const targetDate = new Date(today.getFullYear(), 0, 31); // 1月
-      return today < targetDate;
-    },
-    isOpenDialog(index) {
+      isOpenDialog(index) {
       // index ==0  1  0开 1关
       if (index == 0) {
         this.test = true;
@@ -386,18 +340,16 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            "2025-05-14",
-            "2025-05-17",
-            '2025-05-21',
-            '2025-05-24',
-            '2025-05-28',
-            '2025-06-04',
-            '2025-06-07',
-            '2025-06-11',
-            '2025-06-14',
             '2025-06-21',
             '2025-06-25',
             '2025-06-28',
+            '2025-07-02',
+            '2025-07-09',
+            '2025-07-12',
+            '2025-07-16',
+            '2025-07-23',
+            '2025-07-26',
+            '2025-07-30',
           ];
           break;
         case "smileMongKok":
@@ -407,19 +359,18 @@ export default {
         case "smileProMongKok":
           // smilePro 旺角
           this.allowedDates = [
-            "2025-05-13",
-            "2025-05-17",
-            "2025-05-19",
-            "2025-05-24",
-            "2025-05-27",
-            "2025-06-02",
-            "2025-06-07",
-            "2025-06-10",
-            "2025-06-14",
             "2025-06-16",
             "2025-06-21",
             "2025-06-24",
             "2025-06-28",
+            "2025-07-05",
+            "2025-07-07",
+            "2025-07-12",
+            "2025-07-15",
+            "2025-07-19",
+            "2025-07-21",
+            "2025-07-26",
+            "2025-07-29",
           ];
           break;
         case "clearVisionCentral":
@@ -429,14 +380,13 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2025-05-12",
-            "2025-05-20",
-            "2025-05-26",
-            "2025-06-03",
-            "2025-06-09",
             "2025-06-17",
             "2025-06-23",
             "2025-06-30",
+            "2025-07-08",
+            "2025-07-14",
+            "2025-07-22",
+            "2025-07-28", 
           ];
           break;
         default:
@@ -476,11 +426,7 @@ export default {
           } else if (weekday == "周四") {
             this.morningOrAfternoon = "6:30 下午";
           } else if (weekday == "周六") {
-            if (nowDay[5] == 6) {
-              this.morningOrAfternoon = "2:30 下午";
-            } else {
-              this.morningOrAfternoon = "1:30 下午";
-            }
+            this.morningOrAfternoon = "2:30 下午";
           } else if (weekday == "周一") {
             this.morningOrAfternoon = "6:30 下午";
           }
@@ -489,11 +435,7 @@ export default {
           if (weekday == "周三") {
             this.morningOrAfternoon = "1:30 下午";
           } else if (weekday == "周六") {
-            if (nowDay[5] == 6) {
-              this.morningOrAfternoon = "1:30 下午";
-            } else {
-              this.morningOrAfternoon = "3:30 下午";
-            }
+            this.morningOrAfternoon = "1:30 下午";
           } else if (weekday == "周一") {
             this.morningOrAfternoon = "6:30 下午";
           } else if (weekday == "周二") {
@@ -507,7 +449,7 @@ export default {
           } else if (weekday == "周四") {
             this.morningOrAfternoon = "6:30 下午";
           } else if (weekday == "周六") {
-            this.morningOrAfternoon = "3:30 下午";
+            this.morningOrAfternoon = "1:30 下午";
           } else if (weekday == "周三") {
             this.morningOrAfternoon = "1:30 下午";
           }
