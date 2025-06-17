@@ -42,7 +42,7 @@
         </div>
         <div>{{$t('home.Fullhouse')}}</div>
       </nuxt-link>
-      <nuxt-link to="/patient-info">
+      <nuxt-link to="/eye-checkup">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

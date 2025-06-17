@@ -105,9 +105,10 @@ export default {
   justify-content: space-between;
   align-items: center;
   max-width: 1270px;
-  margin: 0 3vw;
+  margin: 0 auto;
   padding: 25px 0;
   width: 1270px;
+
 }
 .btn-icl_event {
   position: fixed !important;
@@ -282,6 +283,8 @@ export default {
     align-items: center;
     // max-width: 94vw;
     margin: 0;
+    width: 100%;
+    max-width: 100%;
   }
   .btn-icl_event {
     position: fixed !important;
