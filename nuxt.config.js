@@ -133,6 +133,9 @@ export default {
   modules: [
     ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios"],
   ],
+
+
+  
   workbox: {
     enabled: true,
     // 添加预缓存配置

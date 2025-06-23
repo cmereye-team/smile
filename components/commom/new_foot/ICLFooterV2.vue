@@ -444,7 +444,7 @@
 </style>
 <template>
   <div class="new-Footer-v2">
-    <section class="new-container">
+    <section class="new-container marginTop">
       <div class="new-Footer-v2-address">
         <a class="new-Footer-v2-logo" href="/">
           <!-- <img

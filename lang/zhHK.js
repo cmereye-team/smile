@@ -7,10 +7,12 @@ module.exports = {
     Fullhouse:"講座",
     CheckBefore:"術前檢查",
     seeALL:"觀看更多",
+
     headers: {
       aboutSmile: "關於希瑪",
       orthopedicServices: "矯視服務",
       diagnosisInstructions: "診症須知",
+      AppointmentConsultation:"預約術前諮詢",
       commonProblem: "常見問題",
       ophthalmicConsultation: "眼科資訊",
       feeConsultation: "收費詳情",
@@ -62,10 +64,27 @@ module.exports = {
     },
     home_referral: {
       title: "希瑪微笑矯視中心",
+      p1_text1:"希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的屈光矯視醫療中心。",
+      p1_text2:"中心團隊由林順潮教授帶領，加上13名眼科專科醫生、多名註冊視光師及護士組成。",
+      p1_text3:"於香港擁有2間微笑矯視中心，均",
+      p1_text4:"符合FDA激光矯視標準",
+      p1_text5:"，交通便利，環境舒適。",
+      p1_text6:"提供一站式眼科專科醫療及矯視服務，包括：SMILE Pro微笑激光矯視、",
+      p1_text7:"SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。",
+
+      p2_text1:"希瑪一直與STAAR Surgical及Zeiss蔡司保持良好的合作關係。於2023年，",
+      p2_text2:"公司宣佈將希瑪微笑矯視中心設立為",
+      p2_text3:"首間官方認證EVO ICL國際培訓中心",
+      p2_text4:"同年，本中心亦獲得",
+      p2_text5:"Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》",
+      p2_text6:"，而且更是首個",
+      p2_text7:"香港矯視中心被評為卓越手術中心。",
+
+
       content_text_1:
         "希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的<br />屈光矯視醫療中心。",
       content_text_2:
-        "中心團隊由林順潮教授帶領，加上11名眼科專科醫生、多名註冊視光師及護士組成。",
+        "中心團隊由林順潮教授帶領，加上13名眼科專科醫生、多名註冊視光師及護士組成。",
       content_text_3:
         "於香港擁有2間微笑矯視中心，均符合FDA激光矯視標準，交通便利，環境舒適。",
       content_text_4:
@@ -73,6 +92,7 @@ module.exports = {
     },
     home_referral_service: {
       title: "矯視中心服務",
+      sub_title: "您的視力 • 我們的使命",
       content_text_1: "1000 度近視",
       content_text_1_1: "500 度散光",
       content_text_2: "擔心眼睛",

@@ -23,38 +23,182 @@ i {
   margin-right: auto;
 }
 
+// 常见问题
+.question-mencare {
+  margin-top: 9.49vw;
+  padding: 0 2.56vw;
+  padding-bottom: 6.67vw;
+  max-width: 85.13vw;
+  margin: 0 auto;
+  .publicTitle-mencare {
+    text-align: center;
+    color: #4570b6;
+    font-family: "Noto Sans TC";
+    font-size: 5.13vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 195%;
+  }
+}
+.question-section {
+  padding-top: 11.54vw;
+  padding-bottom: 7.18vw;
+  background: #6096c5;
+  .pubilc-title {
+    h2 {
+      color: #fff;
+
+      &::after {
+        background: #fff;
+      }
+    }
+  }
+  &-Box {
+    margin-top: 5.38vw;
+
+    .card {
+      margin: 1.28vw 0;
+      border: none;
+      overflow: hidden;
+      border-radius: 2.56vw;
+      &-header {
+        padding: 0;
+        border: none;
+        .header-title {
+          span {
+            display: inline-block;
+          }
+          svg {
+            transition: all 0.3s linear;
+          }
+
+          svg {
+            position: absolute;
+            width: 3.33vw;
+            height: 1.79vw;
+            right: 4.62vw;
+            top: 50%;
+            transform: translateY(-50%);
+            path {
+              stroke: white;
+            }
+          }
+        }
+        .header-title[aria-expanded="false"] {
+          background: #4570b6;
+          border: clamp(0.5px, 0.05vw, 1px) solid #a6e1d6;
+          border-radius: 2.56vw;
+          display: block;
+          width: 100%;
+          color: #fff;
+          font-family: "Noto Sans HK";
+          font-size: 3.59vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 156.602%;
+          letter-spacing: 0.54vw;
+          padding: 2.82vw 9.49vw 3.33vw 4.87vw;
+          overflow: hidden;
+          & > span:nth-child(1) {
+            color: white;
+          }
+        }
+
+        .card-body {
+          padding: 0;
+
+          span {
+            border-bottom-left-radius: 2.56vw;
+            border-bottom-right-radius: 2.56vw;
+            display: block;
+            padding: 2.05vw 14.36vw 4.62vw 4.87vw;
+            background: white;
+            color: var(--Grey-Deep, #4d4d4d);
+            font-family: "Noto Sans HK";
+            font-size: 3.59vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.54vw;
+            background: #fff;
+          }
+        }
+      }
+    }
+    & > div > .card:nth-child(1) {
+      margin-top: 0;
+    }
+    & > div > .card:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.collapse {
+  visibility: visible;
+}
+.card:has(.collapse.show) {
+  box-shadow: 0px 0px 3.85vw 0px rgba(0, 0, 0, 0.3);
+  .header-title {
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.card .header-title[aria-expanded="true"] {
+  color: #fff;
+  font-family: "Noto Sans HK";
+  font-size: 3.59vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 156.602%;
+  letter-spacing: 0.54vw;
+  padding: 2.82vw 9.49vw 3.33vw 4.87vw;
+  background: #4570b6;
+
+  svg {
+    transition: all 0.3s linear;
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    top: 40%;
+    path {
+      stroke: white;
+    }
+  }
+}
+
 @media screen and (max-width: 991px) {
   // 按钮
   .publicBtn-booking {
     width: fit-content;
-    padding: 6px 29px;
+    padding: 1.54vw 7.44vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border-radius: 100px;
-    border: 2px solid #4570b6;
+    border-radius: 25.64vw;
+    border: 0.51vw solid #4570b6;
     background: #4570b6;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 3.08vw;
     span {
       color: #fff;
       text-align: justify;
       font-family: "Noto Sans TC";
-      font-size: 20px;
+      font-size: 5.13vw;
       font-style: normal;
       font-weight: 700;
       line-height: 1.75;
-      letter-spacing: 1px;
+      letter-spacing: 0.26vw;
     }
     svg {
-      width: 17px;
+      width: 4.36vw;
     }
   }
 
   .ClearVisionBanner {
+    margin-top: 88px;
     .ClearVisionBanner-Box {
       display: flex;
       flex-direction: column;
@@ -68,20 +212,20 @@ i {
           text-align: center;
           color: #4570b6;
           font-family: "Noto Sans TC";
-          font-size: 40.541px;
+          font-size: 10.26vw;
           font-style: normal;
           font-weight: 250;
-          line-height: 0.68;
-          letter-spacing: 27.973px;
+          line-height: 1;
+          // letter-spacing:7.15vw;
         }
         .ClearVisionBanner-Box-content-title {
           p {
-            margin-top: 10px;
+            margin-top: 2.56vw;
 
             text-align: center;
             color: #6d6e71;
             font-family: "Noto Sans TC";
-            font-size: 13.432px;
+            font-size: 3.44vw;
             font-style: normal;
             font-weight: 250;
             line-height: 1.3;
@@ -89,72 +233,77 @@ i {
         }
       }
       .ClearVisionBanner-Box-content-img {
-        margin-top: 44px;
+        margin-top: 11.28vw;
         max-width: 100vw;
         overflow: hidden;
         position: relative;
 
         display: flex;
         justify-content: center;
-        border-bottom: 1px solid #4570b6;
+        border-bottom: 0.26vw solid #4570b6;
 
         img {
-          min-width: 510px;
+          min-width: 130.77vw;
           text-align: center;
         }
         p {
           position: absolute;
-          bottom: 8.65px;
+          bottom: 2.22vw;
           left: 50%;
           transform: translateX(-50%);
           width: max-content;
           span {
             color: #4570b6;
             font-family: "Noto Sans TC";
-            font-size: 14px;
+            font-size: 3.59vw;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 900;
             line-height: 1.17;
+            i {
+              font-style: normal;
+              // letter-spacing: -5.32px;
+            }
           }
         }
       }
       .ClearVisionBanner-Box-text {
-        margin-top: 45px;
+        margin-top: 11.54vw;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 2.05vw;
         span {
           position: relative;
           width: fit-content;
           display: inline-block;
-          border-radius: 100px;
-          border: 1px solid #4570b6;
+          border-radius: 25.64vw;
+          border: 0.26vw solid #4570b6;
           background: #f2f7ff;
-          padding: 4px 25px;
+          padding: 1.03vw 6.41vw;
           color: #6d6e71;
           font-family: "Noto Sans HK";
-          font-size: 14px;
+          font-size: 3.59vw;
           font-style: normal;
           font-weight: 300;
           line-height: 2.5;
-          letter-spacing: 4.2px;
+          letter-spacing: 1.08vw;
+          white-space: nowrap;
         }
         & > span:nth-child(1) {
-          left: 5px;
+          left: 1.28vw;
         }
         & > span:nth-child(2) {
-          right: 10px;
+          right: 2.56vw;
         }
 
         & > span:nth-child(3) {
-          left: 66px;
+          left: 16.92vw;
         }
         & > span:nth-child(4) {
-          left: 22px;
+          left: 5.64vw;
         }
 
         & > span:nth-child(5) {
-          left: 86px;
+          left: 22.05vw;
         }
       }
     }
@@ -162,33 +311,168 @@ i {
 
   // 什么事老花
   .WhatLaoHua {
-    margin-top: 40px;
+    margin-top: 10.26vw;
     .WhatLaoHuaBox {
       text-align: center;
       h3 {
         color: #4570b6;
         font-family: "Noto Sans TC";
-        font-size: 20px;
+        font-size: 5.13vw;
         font-style: normal;
         font-weight: 900;
         line-height: 1.95;
       }
       .WhatLaoHuaBox-text {
-        margin-top: 10px;
+        margin-top: 2.56vw;
 
         p {
           margin: 0 auto;
-          max-width: 330px;
+          max-width: 84.62vw;
           color: #6d6e71;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 14px;
+          font-size: 3.59vw;
           font-style: normal;
           font-weight: 300;
           line-height: 2.5;
-          letter-spacing: 4.2px;
+          letter-spacing: 1.08vw;
           span {
             color: #4570b6;
+          }
+        }
+      }
+    }
+  }
+
+  // 矫视方案
+  .CorrectionProgram {
+    margin-top: 15.38vw;
+    margin-bottom: 19.74vw;
+    position: relative;
+    overflow: hidden;
+    height: 222.05vw;
+
+    .CorrectionProgram-Box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      .CorrectionProgram-Box-show {
+        opacity: 1;
+        z-index: 2;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .CorrectionProgram-Box-show,
+      .CorrectionProgram-Box-hide {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-out;
+      }
+
+      .CorrectionProgram-Box-hide {
+        background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mbBg.avif")
+          no-repeat;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 12.82vw;
+        & > .CorrectionProgram-Box-hide-item:nth-child(2) {
+          background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-mbItemBg2.png")
+            no-repeat;
+          background-size: 100% auto;
+          width: 86.92vw;
+          height: 87.18vw;
+        }
+        .CorrectionProgram-Box-hide-item {
+          background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-mbItemBg.avif")
+            no-repeat;
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          width: 86.92vw;
+          height: 105.13vw;
+          position: relative;
+          .CorrectionProgram-Box-hide-item-top {
+            position: relative;
+            border-radius: 11px;
+            overflow: hidden;
+          }
+          .CorrectionProgram-Box-hide-item-bottom {
+            padding: 6.41vw 6.15vw 0 6.92vw;
+
+            .CorrectionProgram-Box-hide-item-top-text {
+              position: absolute;
+              top: 10.26vw;
+              left: -4.36vw;
+              background: #4570b6;
+              padding: 2.05vw 1.54vw 3.08vw 2.05vw;
+              border-radius: 5px;
+              border-top-left-radius: 0px;
+
+              color: #fff;
+              font-family: "Noto Sans TC";
+              font-size: 3.08vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1.5;
+              letter-spacing: 0.62vw;
+
+              &::after {
+                position: absolute;
+                top: -6.41vw;
+                left: 0;
+                content: "可矯正";
+                width: fit-content;
+                background: #4570b6;
+                padding: 1.03vw 2.05vw 0px 2.05vw;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+                color: #fff;
+                font-family: "Noto Sans TC";
+                font-size: 3.08vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 6.1vw;
+                letter-spacing: 0.62vw;
+              }
+            }
+            h4 {
+              text-align: center;
+              color: #4570b6;
+              font-family: "ITC Avant Garde Gothic Pro";
+              font-size: 5.13vw;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1;
+              letter-spacing: 0.26vw;
+            }
+            .CorrectionProgram-Box-hide-item-bottom-text {
+              margin-top: 3.59vw;
+              color: #6d6e71;
+              text-align: justify;
+              font-family: "Noto Sans HK";
+              font-size: 3.59vw;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 1.285;
+              letter-spacing: 0.72vw;
+              span {
+                color: #4570b6;
+              }
+            }
           }
         }
       }
@@ -202,11 +486,11 @@ i {
       text-align: center;
       color: #4570b6;
       font-family: "Noto Sans TC";
-      font-size: 20px;
+      font-size: 5.13vw;
       font-style: normal;
       font-weight: 900;
       line-height: 1.95;
-      margin-bottom: 20px;
+      margin-bottom: 5.13vw;
     }
     .icl-Good-List {
       display: flex;
@@ -215,9 +499,9 @@ i {
       .icl-Good-List-item {
         z-index: 99;
         opacity: 1;
-        width: 194px;
-        height: 194px;
-        border: 1.04px solid #4570b6;
+        width: 49.74vw;
+        height: 49.74vw;
+        border: 0.26vw solid #4570b6;
         background: #fff;
         text-align: center;
         display: flex;
@@ -225,35 +509,48 @@ i {
         justify-content: center;
         align-items: center;
         img {
-          width: 59px;
-          height: 44px;
+          width: 15.13vw;
+          height: 11.28vw;
         }
         h4 {
-          margin-top: 25px;
-          margin-bottom: 11px;
+          margin-top: 6.41vw;
+          margin-bottom: 2.82vw;
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans TC";
-          font-size: 18px;
+          font-size: 4.62vw;
           font-style: normal;
           font-weight: 700;
-          line-height: 0.57; /* 57.766% */
-          letter-spacing: 1.8px;
+          line-height: 57.766%; /* 57.766% */
+          letter-spacing: 0.46vw;
         }
         p {
           color: #6d6e71;
           text-align: center;
           font-family: "Noto Sans TC";
-          font-size: 16px;
+          font-size: 4.1vw;
           font-style: normal;
           font-weight: 300;
           line-height: 1.125;
         }
       }
 
+      & > .icl-Good-List-item:nth-child(1),
+      & > .icl-Good-List-item:nth-child(2),
+      & > .icl-Good-List-item:nth-child(3),
+      & > .icl-Good-List-item:nth-child(4) {
+        border-bottom: none;
+      }
+
+      & > .icl-Good-List-item:nth-child(1),
+      & > .icl-Good-List-item:nth-child(3),
+      & > .icl-Good-List-item:nth-child(5) {
+        border-right: none;
+      }
+
       & > .icl-Good-List-item:nth-child(6) {
         justify-content: flex-end;
-        padding-bottom: 14px;
+        padding-bottom: 3.59vw;
       }
     }
   }
@@ -300,98 +597,254 @@ i {
     }
   }
 
+  // 不同老花矯視技術好處對比
+  .visionBattle {
+    position: relative;
+    padding-top: 10.26vw;
+    margin-top: 12.05vw;
+    margin-bottom: 17.95vw;
+    .visionBattle-Bg {
+      position: absolute;
+      min-width: 233.33vw;
+      height: 233.33vw;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    .visionBattle-Box {
+      h3 {
+        text-align: center;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 5.13vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1.95;
+      }
+
+      .visionBattle-Box-list {
+        .visionBattle-Box-list-item {
+          h4 {
+            display: table;
+            margin: 7.69vw auto 0;
+            text-align: center;
+            color: #4570b6;
+            font-family: "ITC Avant Garde Gothic Pro";
+            font-size: 5.13vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2;
+            letter-spacing: 0.26vw;
+            padding: 0 6.41vw;
+
+            flex-shrink: 0;
+            background: linear-gradient(
+              90deg,
+              rgba(69, 112, 182, 0.2) 24.52%,
+              rgba(162, 183, 219, 0.1) 48.32%,
+              rgba(69, 112, 182, 0.2) 72.12%
+            );
+          }
+
+          .visionBattle-Box-list-item-content {
+            width: fit-content;
+            margin: 17.95vw auto 0;
+            p {
+              display: flex;
+              align-items: flex-start;
+              gap: 1.28vw;
+              img {
+                width: 4.36vw;
+                height: 4.36vw;
+                margin-top: 0.77vw;
+              }
+              span {
+                display: inline-block;
+                color: #4570b6;
+                font-family: "Noto Sans HK";
+                font-size: 3.59vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 165.171%;
+                letter-spacing: 0.18vw;
+              }
+            }
+          }
+        }
+        & > .visionBattle-Box-list-item:nth-child(1) {
+          padding-bottom: 15.38vw;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -10.26vw;
+            left: -7.69vw;
+            width: 115.64vw;
+            height: 94.36vw;
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-mbBg1.avif");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            z-index: -1;
+          }
+        }
+        & > .visionBattle-Box-list-item:nth-child(2) {
+          position: relative;
+          border-top: 0.26vw solid #809dcd;
+          padding-bottom: 46.15vw;
+          p {
+            span {
+              letter-spacing: 0.72vw;
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 103.08vw;
+            height: 90.26vw;
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-mbBg2.avif");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            z-index: -1;
+          }
+
+          h4 {
+            margin-top: 20.51vw;
+          }
+          .visionBattle-Box-list-item-content {
+            margin-top: 7.69vw;
+          }
+          .visionBattle-Box-list-item-VS {
+            position: absolute;
+            top: -8.97vw;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 21.03vw;
+            height: 17.95vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              width: 8.72vw;
+              height: 14.62vw;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              background: #ecf2ff;
+              filter: blur(5px);
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
+
   // 合適對象
   .SuitableObject {
     position: relative;
-    padding-top: 10px;
+    padding-top: 2.56vw;
     .SuitableObject-bg-right {
       position: absolute;
-      right: -50px;
-      top: -55px;
-      width: 122px;
+      right: -12.82vw;
+      top: -14.1vw;
+      width: 31.28vw;
       height: auto;
     }
+    .SuitableObject-bgLeft1,
+    .SuitableObject-bgLeft2 {
+      display: none;
+    }
+
     .SuitableObject-Box {
       position: relative;
-      padding-bottom: 216px;
+      padding-bottom: 55.38vw;
       margin: 0 auto;
 
       &::after {
         content: "";
         position: absolute;
-        top: -18px;
-        left: -100px;
+        top: -4.62vw;
+        left: -25.64vw;
         background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-mb-line.svg")
           no-repeat;
         background-size: 100% auto;
-        width: 681px;
-        height: 300px;
+        width: 174.62vw;
+        height: 76.92vw;
         z-index: -1;
       }
 
       .SuitableObject-Box-title {
-        width: 313px;
-        height: 313px;
+        width: 80.26vw;
+        height: 80.26vw;
         flex-shrink: 0;
         border-radius: 50%;
-        border: 1.115px solid #4570b6;
+        border: 0.28vw solid #4570b6;
         background: linear-gradient(210deg, #fff 13.8%, #f2f7ff 70.44%);
         text-align: center;
-        padding-top: 66px;
+        padding-top: 16.92vw;
         margin: 0 auto;
         position: relative;
 
         &::before {
           content: "";
           position: absolute;
-          top: -17px;
-          left: -17px;
+          top: -4.36vw;
+          left: -4.36vw;
           background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-man-mb.svg");
           background-size: 100% auto;
           background-repeat: no-repeat;
-          width: 83px;
-          height: 181px;
+          width: 21.28vw;
+          height: 46.41vw;
         }
 
         h3 {
           color: #4570b6;
           font-family: "Noto Sans TC";
-          font-size: 20px;
+          font-size: 5.13vw;
           font-style: normal;
           font-weight: 900;
           line-height: 0.83;
         }
         p {
-          max-width: 202px;
-          margin: 21px auto 0;
+          max-width: 51.79vw;
+          margin: 5.38vw auto 0;
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 14px;
+          font-size: 3.59vw;
           font-style: normal;
           font-weight: 300;
           line-height: 1.394;
-          letter-spacing: 3.5px;
+          letter-spacing: 0.9vw;
         }
       }
       .SuitableObject-Box-List {
-        width: 313px;
-        min-height: 320px;
+        width: 80.26vw;
+        min-height: 82.05vw;
         margin: 0 auto;
         position: absolute;
-        top: 184px;
+        top: 47.18vw;
         left: 50%;
         transform: translateX(-50%);
         .SuitableObject-Box-List-item {
-          width: 174px;
-          height: 174px;
+          width: 44.62vw;
+          height: 44.62vw;
           border-radius: 50%;
           flex-shrink: 0;
-          border: 1px solid #4570b6;
+          border: 0.26vw solid #4570b6;
           background: #fff;
           text-align: center;
           img {
-            max-width: 74px;
+            max-width: 18.97vw;
             position: absolute;
 
             left: 50%;
@@ -406,13 +859,13 @@ i {
             color: #6d6e71;
             text-align: center;
             font-family: "Noto Sans HK";
-            font-size: 14px;
+            font-size: 3.59vw;
             font-style: normal;
             font-weight: 300;
             line-height: 1.394;
-            letter-spacing: 3.5px;
+            letter-spacing: 0.9vw;
             span {
-              font-size: 12px;
+              font-size: 3.08vw;
             }
           }
         }
@@ -423,10 +876,10 @@ i {
           top: 0;
           z-index: 1;
           img {
-            top: 38px;
+            top: 9.74vw;
           }
           p {
-            top: 110px;
+            top: 28.21vw;
             white-space: nowrap;
           }
         }
@@ -437,43 +890,153 @@ i {
           z-index: 4;
 
           img {
-            top: 43px;
-            max-width: 56px;
+            top: 11.03vw;
+            max-width: 14.36vw;
           }
           p {
-            top: 110px;
+            top: 28.21vw;
             white-space: nowrap;
           }
         }
         & > .SuitableObject-Box-List-item:nth-child(3) {
           position: absolute;
           left: 0;
-          top: 150px;
+          top: 38.46vw;
           z-index: 3;
 
           img {
-            top: 35px;
+            top: 8.97vw;
           }
           p {
-            top: 100px;
+            top: 25.64vw;
             letter-spacing: 0;
           }
         }
         & > .SuitableObject-Box-List-item:nth-child(4) {
           position: absolute;
           right: 0;
-          top: 150px;
+          top: 38.46vw;
           z-index: 2;
 
           img {
-            max-width: 56px;
+            max-width: 14.36vw;
 
-            top: 31px;
+            top: 7.95vw;
           }
           p {
-            top: 108px;
+            top: 27.69vw;
           }
         }
+      }
+    }
+  }
+
+  // 预约
+  .clearAppointment {
+    width: 100vw;
+    margin-top: 13.59vw;
+    height: 153.08vw;
+    background: url("https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/clearAppointment-mbBg.avif")
+      no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .clearAppointment-Box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8.97vw;
+      & > .clearAppointment-Box-item:nth-child(1) {
+        img {
+          width: 21.28vw;
+          height: 15.64vw;
+          margin-bottom: 7.18vw;
+        }
+      }
+      & > .clearAppointment-Box-item:nth-child(2) {
+        img {
+          width: 21.79vw;
+          height: 21.79vw;
+          margin-bottom: 4.62vw;
+        }
+      }
+      .clearAppointment-Box-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 87.18vw;
+        height: 53.85vw;
+        border-radius: 4.36vw;
+        border: 0.13vw solid #4570b6;
+        background: #fff;
+        box-shadow: 1.49vw 1.49vw 0px 0px #4570b6;
+        p {
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans TC";
+          font-size: 5.13vw;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 0.73;
+        }
+
+        .clearAppointment-Box-item-icon {
+          position: absolute;
+          bottom: 5.13vw;
+          right: 5.13vw;
+          width: 13.85vw;
+          height: 13.85vw;
+          border-radius: 50%;
+          background: #4570b6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 7.69vw;
+          }
+        }
+      }
+    }
+  }
+
+  .CaseSharingV2 {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    & > div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7.58px;
+      span {
+        color: #000;
+        text-align: center;
+        font-family: "Noto Sans TC";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.82px; /* 82.478% */
+      }
+    }
+    & > div:nth-child(2) {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        border: 1px solid #4570b6;
       }
     }
   }
@@ -561,36 +1124,37 @@ i {
   // 按钮
   .publicBtn-booking {
     width: fit-content;
-    padding: 10px 64px;
+    padding: clamp(5px, 0.52vw, 10px) clamp(32px, 3.33vw, 64px);
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border-radius: 100px;
-    border: 2px solid #4570b6;
+    border-radius: clamp(50px, 5.21vw, 100px);
+    border: clamp(1px, 0.1vw, 2px) solid #4570b6;
     background: #4570b6;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: clamp(12px, 1.25vw, 24px);
     span {
       color: #fff;
       text-align: justify;
       font-family: "Noto Sans TC";
-      font-size: 36px;
+      font-size: clamp(18px, 1.88vw, 36px);
       font-style: normal;
       font-weight: 700;
       line-height: 1.75;
-      letter-spacing: 1.8px;
+      letter-spacing: clamp(0.9px, 0.09vw, 1.8px);
     }
     svg {
-      width: 30px;
-      height: 30px;
+      width: clamp(15px, 1.56vw, 30px);
+      height: clamp(15px, 1.56vw, 30px);
     }
   }
 
   .ClearVisionBanner {
-    border-bottom: 2px solid #4570b6;
+    margin-top: 217px;
+    border-bottom: clamp(1px, 0.1vw, 2px) solid #4570b6;
     .ClearVisionBanner-Box {
       display: flex;
       flex-direction: column;
@@ -603,18 +1167,18 @@ i {
         h3 {
           color: #4570b6;
           font-family: "Noto Sans TC";
-          font-size: 96px;
+          font-size: clamp(48px, 5vw, 96px);
           font-style: normal;
           font-weight: 100;
           line-height: normal;
-          letter-spacing: 66.24px;
+          // letter-spacing: 66.24px;
         }
         .ClearVisionBanner-Box-content-title {
           text-align: center;
           p {
             color: #6d6e71;
             font-family: "Noto Sans TC";
-            font-size: 31.806px;
+            font-size: clamp(15.9px, 1.66vw, 31.8px);
             font-style: normal;
             font-weight: 100;
             line-height: 1.31;
@@ -622,72 +1186,74 @@ i {
         }
       }
       .ClearVisionBanner-Box-content-img {
-        margin-top: 32px;
+        margin-top: clamp(16px, 1.67vw, 32px);
         max-width: 100vw;
         overflow: hidden;
         position: relative;
         img {
-          min-width: 510px;
+          min-width: clamp(255px, 26.56vw, 510px);
           text-align: center;
         }
         p {
           position: absolute;
-          bottom: 17px;
+          bottom: clamp(8.5px, 0.89vw, 17px);
           left: 50%;
           transform: translateX(-50%);
           width: max-content;
+          text-shadow: 0px 0px 10.8px #fff, 0px 0px 10.8px #fff,
+            0px 0px 10.8px #fff, 0px 0px 10.8px #fff;
           span {
             color: #4570b6;
             font-family: "Noto Sans TC";
-            font-size: 40px;
+            font-size: clamp(20px, 2.08vw, 40px);
             font-style: normal;
             font-weight: 900;
             line-height: 0.97;
-            letter-spacing: 4px;
+            letter-spacing: clamp(2px, 0.21vw, 4px);
           }
         }
       }
       .ClearVisionBanner-Box-text {
-        max-width: 1920px;
+        max-width: clamp(960px, 100vw, 1920px);
         width: 100vw;
         position: relative;
         span {
           position: absolute;
           width: fit-content;
           display: inline-block;
-          border-radius: 100px;
-          border: 1px solid #4570b6;
+          border-radius: clamp(50px, 5.21vw, 100px);
+          border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
           background: #f2f7ff;
-          padding: 4px 25px;
+          padding: clamp(2px, 0.21vw, 4px) clamp(12.5px, 1.3vw, 25px);
           color: #6d6e71;
           font-family: "Noto Sans HK";
-          font-size: 14px;
+          font-size: clamp(10px, 1.04vw, 20px);
           font-style: normal;
           font-weight: 300;
           line-height: 2.5;
-          letter-spacing: 4.2px;
+          letter-spacing: clamp(2px, 0.21vw, 4px);
         }
         & > span:nth-child(1) {
-          right: 144px;
-          bottom: 167px;
+          right: clamp(72px, 7.5vw, 144px);
+          bottom: clamp(83.5px, 8.7vw, 167px);
         }
         & > span:nth-child(2) {
-          left: 178px;
-          bottom: 298px;
+          left: clamp(89px, 9.27vw, 178px);
+          bottom: clamp(149px, 15.52vw, 298px);
         }
 
         & > span:nth-child(3) {
-          left: 262px;
-          bottom: 642px;
+          left: clamp(131px, 13.65vw, 262px);
+          bottom: clamp(321px, 33.44vw, 642px);
         }
         & > span:nth-child(4) {
-          right: 372px;
-          bottom: 750px;
+          right: clamp(186px, 19.38vw, 372px);
+          bottom: clamp(375px, 39.06vw, 750px);
         }
 
         & > span:nth-child(5) {
-          right: 164px;
-          bottom: 409px;
+          right: clamp(82px, 8.54vw, 164px);
+          bottom: clamp(204.5px, 21.3vw, 409px);
         }
       }
     }
@@ -695,31 +1261,166 @@ i {
 
   // 什么事老花
   .WhatLaoHua {
-    margin-top: 76px;
+    margin-top: clamp(38px, 3.96vw, 76px);
     .WhatLaoHuaBox {
       display: flex;
       justify-content: center;
-      gap: 123px;
+      gap: clamp(61.5px, 6.41vw, 123px);
       h3 {
         color: #4570b6;
         font-family: "Noto Sans TC";
-        font-size: 30px;
+        font-size: clamp(15px, 1.56vw, 30px);
         font-style: normal;
         font-weight: 900;
         line-height: 1.3;
       }
       .WhatLaoHuaBox-text {
-        max-width: 811px;
+        max-width: clamp(405.5px, 42.24vw, 811px);
         p {
           color: #6d6e71;
           font-family: "Noto Sans HK";
-          font-size: 20px;
+          font-size: clamp(10px, 1.04vw, 20px);
           font-style: normal;
           font-weight: 300;
           line-height: 1.75;
-          letter-spacing: 6px;
+          letter-spacing: clamp(3px, 0.31vw, 6px);
           span {
             color: #4570b6;
+          }
+        }
+      }
+    }
+  }
+
+  // 矫视方案
+  .CorrectionProgram {
+    margin-top: clamp(60px, 6.25vw, 120px);
+    margin-bottom: clamp(40px, 4.17vw, 80px);
+    position: relative;
+    overflow: hidden;
+    height: clamp(419.5px, 43.7vw, 839px);
+
+    .CorrectionProgram-Box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      .CorrectionProgram-Box-show {
+        opacity: 1;
+        z-index: 2;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .CorrectionProgram-Box-show,
+      .CorrectionProgram-Box-hide {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-out;
+      }
+
+      .CorrectionProgram-Box-hide {
+        background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-pc.avif")
+          no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(30px, 3.13vw, 60px);
+        width: 100vw;
+        & > .CorrectionProgram-Box-hide-item:nth-child(2) {
+          background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcItemBg2.avif")
+            no-repeat;
+          background-size: 100% auto;
+        }
+        .CorrectionProgram-Box-hide-item {
+          background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcItemBg.avif")
+            no-repeat;
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          width: clamp(383px, 39.9vw, 766px);
+          height: clamp(362px, 37.71vw, 724px);
+          position: relative;
+          .CorrectionProgram-Box-hide-item-top {
+            position: relative;
+            border-radius: clamp(14.5px, 1.51vw, 29px);
+            overflow: hidden;
+          }
+          .CorrectionProgram-Box-hide-item-bottom {
+            padding: clamp(12.5px, 1.3vw, 25px) clamp(41.5px, 4.32vw, 83px) 0;
+
+            .CorrectionProgram-Box-hide-item-top-text {
+              position: absolute;
+              top: clamp(41.5px, 4.32vw, 83px);
+              left: clamp(-22px, -1.15vw, -11px);
+              background: #4570b6;
+              padding: clamp(10px, 1.04vw, 20px) clamp(17.5px, 1.82vw, 35px)
+                clamp(14px, 1.46vw, 28px) clamp(11px, 1.15vw, 22px);
+              border-radius: 5px;
+              border-top-left-radius: 0px;
+
+              color: #fff;
+              font-family: "Noto Sans TC";
+              font-size: clamp(10px, 1.04vw, 20px);
+              font-style: normal;
+              font-weight: 400;
+              line-height: 2.2;
+              letter-spacing: clamp(2px, 0.21vw, 4px);
+
+              &::after {
+                position: absolute;
+                top: clamp(-39px, -2.03vw, -19.5px);
+                left: 0;
+                content: "可矯正";
+                width: fit-content;
+                background: #4570b6;
+                padding: clamp(5px, 0.52vw, 10px) clamp(11px, 1.15vw, 22px) 0
+                  clamp(11px, 1.15vw, 22px);
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+                color: #fff;
+                font-family: "Noto Sans TC";
+                font-size: clamp(10px, 1.04vw, 20px);
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.5;
+                letter-spacing: clamp(2px, 0.21vw, 4px);
+              }
+            }
+            h4 {
+              text-align: center;
+              color: #4570b6;
+              font-family: "ITC Avant Garde Gothic Pro";
+              font-size: clamp(15px, 1.56vw, 30px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1;
+              letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
+            }
+            .CorrectionProgram-Box-hide-item-bottom-text {
+              margin-top: clamp(18.5px, 1.93vw, 37px);
+              color: #6d6e71;
+              text-align: justify;
+              font-family: "Noto Sans HK";
+              font-size: clamp(10px, 1.04vw, 20px);
+              font-style: normal;
+              font-weight: 300;
+              line-height: 1.75;
+              letter-spacing: clamp(2px, 0.21vw, 4px);
+              span {
+                color: #4570b6;
+              }
+            }
           }
         }
       }
@@ -759,7 +1460,7 @@ i {
 
       & > .icl-Good-List-item:last-child,
       & > .icl-Good-List-item:nth-child(3) {
-        border-right: 2px solid #4570b6;
+        border-right: clamp(1px, 0.1vw, 2px) solid #4570b6;
       }
       & > .icl-Good-List-item:nth-child(6) {
         padding-bottom: 15px;
@@ -773,7 +1474,7 @@ i {
         padding-top: clamp(41px, 4.27vw, 82px);
         padding-bottom: clamp(27.5px, 2.86vw, 55px);
         box-sizing: border-box;
-        border: 2px solid #4570b6;
+        border: clamp(1px, 0.1vw, 2px) solid #4570b6;
         border-right: none;
         background: #fff;
         text-align: center;
@@ -861,6 +1562,173 @@ i {
     }
   }
 
+  // 不同老花矯視技術好處對比
+  .visionBattle {
+    position: relative;
+    padding-top: clamp(109px, 11.35vw, 218px);
+    margin-bottom: clamp(145px, 15.1vw, 290px);
+    .visionBattle-Bg {
+      position: absolute;
+      width: clamp(953.5px, 99.32vw, 1907px);
+      height: clamp(953.5px, 99.32vw, 1907px);
+      top: clamp(-272px, -14.17vw, -136px);
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    .visionBattle-Box {
+      h3 {
+        text-align: center;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(15px, 1.56vw, 30px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      .visionBattle-Box-list {
+        display: flex;
+        justify-content: center;
+        margin-top: clamp(28px, 2.92vw, 56px);
+
+        .visionBattle-Box-list-item {
+          height: clamp(433px, 45.1vw, 866px);
+          h4 {
+            padding-top: clamp(7px, 0.73vw, 14px);
+            padding-bottom: clamp(7px, 0.73vw, 14px);
+            margin-top: clamp(11px, 1.15vw, 22px);
+
+            display: table;
+
+            text-align: center;
+            color: #4570b6;
+            font-family: "ITC Avant Garde Gothic Pro";
+            font-size: clamp(15px, 1.56vw, 30px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
+            width: 400px;
+          }
+
+          .visionBattle-Box-list-item-content {
+            width: fit-content;
+            margin: clamp(90px, 9.38vw, 180px) auto 0;
+            p {
+              display: flex;
+              align-items: flex-start;
+              gap: clamp(4px, 0.42vw, 8px);
+              img {
+                width: clamp(14px, 1.46vw, 28px);
+                height: clamp(14px, 1.46vw, 28px);
+                margin-top: clamp(1.5px, 0.16vw, 3px);
+              }
+              span {
+                display: inline-block;
+                color: #4570b6;
+                font-family: "Noto Sans HK";
+                font-size: clamp(10px, 1.04vw, 20px);
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.8;
+                letter-spacing: clamp(1.7px, 0.18vw, 3.4px);
+              }
+            }
+          }
+        }
+        & > .visionBattle-Box-list-item:nth-child(1) {
+          h4 {
+            margin-left: auto;
+            background: linear-gradient(
+              90deg,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(69, 112, 182, 0.2) 72.12%
+            );
+          }
+          .visionBattle-Box-list-item-content {
+            padding-right: clamp(26px, 2.71vw, 52px);
+          }
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: clamp(-24px, -1.25vw, -12px);
+            right: clamp(-158px, -8.23vw, -79px);
+            width: clamp(474.5px, 49.43vw, 949px);
+            height: clamp(474.5px, 49.43vw, 949px);
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-pcBg1.avif");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            z-index: -1;
+          }
+        }
+        & > .visionBattle-Box-list-item:nth-child(2) {
+          position: relative;
+          border-left: clamp(0.5px, 0.05vw, 1px) solid #809dcd;
+
+          p {
+            span {
+              letter-spacing: clamp(2px, 0.21vw, 4px);
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: clamp(-60px, -3.13vw, -30px);
+            left: clamp(-233px, -12.14vw, -116.5px);
+            width: clamp(538.5px, 56.09vw, 1077px);
+            height: clamp(472.5px, 49.22vw, 945px);
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-pcBg2.avif");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            z-index: -1;
+          }
+
+          h4 {
+            text-align: left;
+            padding-left: clamp(16px, 1.67vw, 32px);
+            background: linear-gradient(
+              -90deg,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(69, 112, 182, 0.2) 72.12%
+            );
+          }
+          .visionBattle-Box-list-item-content {
+            padding-left: clamp(64px, 6.67vw, 128px);
+          }
+          .visionBattle-Box-list-item-VS {
+            position: absolute;
+            top: 50%;
+            left: clamp(-70px, -3.65vw, -35px);
+            transform: translateY(-50%);
+            width: clamp(70px, 7.29vw, 140px);
+            height: clamp(70px, 7.29vw, 140px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              width: clamp(35px, 3.65vw, 70px);
+              height: clamp(59px, 6.15vw, 118px);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              background: #ecf2ff;
+              filter: blur(clamp(2.5px, 0.26vw, 5px));
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
+
   // 合適對象
   .SuitableObject {
     position: relative;
@@ -868,66 +1736,81 @@ i {
 
     .SuitableObject-bg-right {
       position: absolute;
-      right: -110px;
-      top: -275px;
-      width: 428px;
+      right: clamp(-110px, -5.73vw, -55px);
+      top: clamp(-275px, -14.32vw, -137.5px);
+      width: clamp(214px, 22.29vw, 428px);
       height: auto;
+    }
+    .SuitableObject-bgLeft1 {
+      position: absolute;
+      width: clamp(124px, 12.92vw, 248px);
+      height: clamp(104.5px, 10.89vw, 209px);
+      left: clamp(-40px, -2.08vw, -20px);
+      top: clamp(-30px, -1.56vw, -15px);
+    }
+
+    .SuitableObject-bgLeft2 {
+      position: absolute;
+      width: clamp(102.5px, 10.68vw, 205px);
+      height: clamp(112px, 11.67vw, 224px);
+      left: clamp(82px, 8.54vw, 164px);
+      top: clamp(207.5px, 21.61vw, 415px);
     }
     .SuitableObject-Box {
       position: relative;
-      padding-bottom: 112px;
+      padding-bottom: clamp(56px, 5.83vw, 112px);
       margin: 0 auto;
 
       &::after {
         content: "";
         position: absolute;
-        top: -383px;
-        left: -445px;
+        top: clamp(-383px, -19.95vw, -191.5px);
+        left: clamp(-445px, -23.18vw, -222.5px);
         background: url(https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-line.svg)
           no-repeat;
         background-size: 100% auto;
-        width: 2089px;
-        height: 940px;
+        width: clamp(1044.5px, 108.8vw, 2089px);
+        height: clamp(470px, 48.96vw, 940px);
         transform: rotate(1.996deg);
         z-index: -1;
         pointer-events: none;
       }
 
       .SuitableObject-Box-title {
-        width: 562px;
-        height: 562px;
+        width: clamp(281px, 29.27vw, 562px);
+        height: clamp(281px, 29.27vw, 562px);
         flex-shrink: 0;
         border-radius: 50%;
-        border: 2px solid #4570b6;
+        border: clamp(1px, 0.1vw, 2px) solid #4570b6;
         background: linear-gradient(210deg, #fff 13.8%, #f2f7ff 70.44%);
         text-align: center;
-        padding-top: 132px;
+        padding-top: clamp(66px, 6.88vw, 132px);
         margin: 0 auto;
         position: relative;
 
         &::before {
           content: "";
           position: absolute;
-          top: -32px;
-          left: -32px;
+          top: clamp(-32px, -1.67vw, -16px);
+          left: clamp(-32px, -1.67vw, -16px);
           background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-man-mb.svg");
           background-size: 100% auto;
           background-repeat: no-repeat;
-          width: 149px;
-          height: 326px;
+          width: clamp(74.5px, 7.76vw, 149px);
+          height: clamp(163px, 16.98vw, 326px);
           z-index: 5;
         }
 
         &::after {
           content: "";
           position: absolute;
-          top: 142px;
-          right: -40px;
+          top: clamp(71px, 7.4vw, 142px);
+          right: clamp(-40px, -2.08vw, -20px);
           background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-woman-mb.svg");
           background-size: 100% auto;
           background-repeat: no-repeat;
-          width: 224px;
-          height: 261px;
+          width: clamp(112px, 11.67vw, 224px);
+          height: clamp(130.5px, 13.59vw, 261px);
 
           z-index: 5;
         }
@@ -935,42 +1818,42 @@ i {
         h3 {
           color: #4570b6;
           font-family: "Noto Sans TC";
-          font-size: 30px;
+          font-size: clamp(15px, 1.56vw, 30px);
           font-style: normal;
           font-weight: 900;
           line-height: 1;
         }
         p {
-          max-width: 363px;
-          margin: 8px auto 0;
+          max-width: clamp(181.5px, 18.91vw, 363px);
+          margin: clamp(4px, 0.42vw, 8px) auto 0;
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 20px;
+          font-size: clamp(10px, 1.04vw, 20px);
           font-style: normal;
           font-weight: 300;
           line-height: 1.75;
-          letter-spacing: 5px;
+          letter-spacing: clamp(2.5px, 0.26vw, 5px);
         }
       }
       .SuitableObject-Box-List {
-        width: 1032px;
-        min-height: 435px;
+        width: clamp(516px, 53.75vw, 1032px);
+        min-height: clamp(217.5px, 22.66vw, 435px);
         margin: 0 auto;
         position: absolute;
-        top: 238px;
+        top: clamp(119px, 12.4vw, 238px);
         left: 50%;
         transform: translateX(-50%);
         .SuitableObject-Box-List-item {
-          width: 313px;
-          height: 313px;
+          width: clamp(156.5px, 16.3vw, 313px);
+          height: clamp(156.5px, 16.3vw, 313px);
           border-radius: 50%;
           flex-shrink: 0;
-          border: 2px solid #4570b6;
+          border: clamp(1px, 0.1vw, 2px) solid #4570b6;
           background: #fff;
           text-align: center;
           img {
-            max-width: 134px;
+            max-width: clamp(67px, 6.98vw, 134px);
             position: absolute;
 
             left: 50%;
@@ -985,11 +1868,11 @@ i {
             color: #6d6e71;
             text-align: center;
             font-family: "Noto Sans HK";
-            font-size: 20px;
+            font-size: clamp(10px, 1.04vw, 20px);
             font-style: normal;
             font-weight: 300;
             line-height: 1.75;
-            letter-spacing: 5px;
+            letter-spacing: clamp(2.5px, 0.26vw, 5px);
           }
         }
 
@@ -999,40 +1882,40 @@ i {
           top: 0;
           z-index: 1;
           img {
-            top: 68px;
+            top: clamp(34px, 3.54vw, 68px);
           }
           p {
-            top: 190px;
+            top: clamp(95px, 9.9vw, 190px);
             white-space: nowrap;
           }
         }
         & > .SuitableObject-Box-List-item:nth-child(2) {
           position: absolute;
-          left: 240px;
-          top: 122px;
+          left: clamp(120px, 12.5vw, 240px);
+          top: clamp(61px, 6.35vw, 122px);
           z-index: 2;
 
           img {
-            top: 77px;
-            max-width: 100px;
+            top: clamp(38.5px, 4.01vw, 77px);
+            max-width: clamp(50px, 5.21vw, 100px);
           }
           p {
-            top: 201px;
+            top: clamp(100.5px, 10.47vw, 201px);
             white-space: nowrap;
           }
         }
         & > .SuitableObject-Box-List-item:nth-child(3) {
           position: absolute;
-          right: 240px;
-          top: 122px;
+          right: clamp(120px, 12.5vw, 240px);
+          top: clamp(61px, 6.35vw, 122px);
           z-index: 3;
 
           img {
-            top: 64px;
-            max-width: 132px;
+            top: clamp(32px, 3.33vw, 64px);
+            max-width: clamp(66px, 6.88vw, 132px);
           }
           p {
-            top: 190px;
+            top: clamp(95px, 9.9vw, 190px);
             letter-spacing: 0;
           }
         }
@@ -1043,12 +1926,224 @@ i {
           z-index: 4;
 
           img {
-            max-width: 101px;
+            max-width: clamp(50.5px, 5.26vw, 101px);
 
-            top: 56px;
+            top: clamp(28px, 2.92vw, 56px);
           }
           p {
-            top: 198px;
+            top: clamp(99px, 10.31vw, 198px);
+          }
+        }
+      }
+    }
+  }
+
+  // 常见问题
+  .question-mencare {
+    margin: initial;
+    margin-top: clamp(66.5px, 6.93vw, 133px);
+    padding: 0;
+    padding-bottom: clamp(28px, 2.92vw, 56px);
+    max-width: none;
+
+    .publicTitle-mencare {
+      color: #4570b6;
+      font-family: "Noto Sans TC";
+      font-size: clamp(15px, 1.56vw, 30px);
+      font-style: normal;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .container {
+      max-width: clamp(635px, 66.15vw, 1270px);
+      padding: 0;
+    }
+  }
+  .question-section {
+    padding-top: clamp(30px, 3.13vw, 60px);
+    padding-bottom: clamp(16px, 1.67vw, 32px);
+    background: #e8e0d5;
+
+    .pubilc-title {
+      h2 {
+        color: #005bab;
+
+        &::after {
+          background: #005bab;
+        }
+      }
+    }
+
+    &-Box {
+      margin-top: clamp(28.5px, 2.97vw, 57px);
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .card {
+        margin: clamp(6.5px, 0.68vw, 13px) 0;
+        border-radius: 10px;
+        &-header {
+          .header-title {
+            display: flex;
+            align-items: center;
+            span {
+              display: inline-block;
+            }
+
+            svg {
+              position: absolute;
+              width: clamp(14px, 1.46vw, 28px);
+              height: clamp(7px, 0.73vw, 14px);
+              right: clamp(27px, 2.81vw, 54px);
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+
+          .header-title[aria-expanded="false"] {
+            color: #fff;
+            font-family: "Noto Sans HK";
+            font-size: clamp(15px, 1.56vw, 30px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 166.667%;
+            letter-spacing: clamp(3.75px, 0.39vw, 7.5px);
+            border-radius: 10px;
+            padding: clamp(6.5px, 0.68vw, 13px) clamp(15px, 1.56vw, 30px)
+              clamp(6.5px, 0.68vw, 13px) clamp(26.5px, 2.76vw, 53px);
+          }
+
+          .card-body {
+            padding: 0;
+
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            span {
+              color: #4d4d4d;
+              box-sizing: content-box;
+
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+              padding: clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px)
+                clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px);
+
+              font-size: clamp(12px, 1.25vw, 24px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: clamp(1.2px, 0.13vw, 2.4px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card .header-title[aria-expanded="true"] {
+    color: #fff;
+    font-family: "Noto Sans HK";
+    font-size: clamp(15px, 1.56vw, 30px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.667%;
+    letter-spacing: clamp(3.75px, 0.39vw, 7.5px);
+    padding: clamp(6.5px, 0.68vw, 13px) clamp(15px, 1.56vw, 30px)
+      clamp(6.5px, 0.68vw, 13px) clamp(26.5px, 2.76vw, 53px);
+    svg {
+      transition: all 0.3s linear;
+      transform: rotate(180deg);
+      transform-origin: 50% 50%;
+      top: 40%;
+      path {
+        stroke: white;
+      }
+    }
+  }
+
+  // 预约
+  .clearAppointment {
+    margin-top: clamp(40px, 4.17vw, 80px);
+    margin-bottom: -175px;
+    width: 100vw;
+    height: clamp(309px, 32.19vw, 618px);
+    background: url("https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/clearAppointment-mbPc.avif")
+      no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .clearAppointment-Box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(18px, 1.88vw, 36px);
+      & > .clearAppointment-Box-item:nth-child(1) {
+        img {
+          width: clamp(70.5px, 7.34vw, 141px);
+          height: clamp(52px, 5.42vw, 104px);
+          margin-bottom: clamp(23px, 2.4vw, 46px);
+        }
+      }
+      & > .clearAppointment-Box-item:nth-child(2) {
+        img {
+          width: clamp(72.5px, 7.55vw, 145px);
+          height: clamp(72.5px, 7.55vw, 145px);
+
+          margin-bottom: clamp(15.5px, 1.61vw, 31px);
+        }
+      }
+      .clearAppointment-Box-item {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: clamp(289.5px, 30.16vw, 579px);
+        height: clamp(179px, 18.65vw, 358px);
+        border-radius: clamp(15px, 1.56vw, 30px);
+        border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
+        background: #fff;
+        box-shadow: clamp(5px, 0.52vw, 10px) clamp(5px, 0.52vw, 10px) 0px 0px
+          #4570b6;
+        p {
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans TC";
+          font-size: clamp(17.5px, 1.82vw, 35px);
+          font-style: normal;
+          font-weight: 900;
+          line-height: 0.71;
+        }
+
+        &:hover {
+          .clearAppointment-Box-item-icon {
+            background: white;
+            box-shadow: 0 clamp(1px, 0.1vw, 2px) clamp(2.5px, 0.26vw, 5px)
+              rgba(0, 0, 0, 0.25);
+            svg {
+              path {
+                stroke: #4570b6;
+              }
+            }
+          }
+        }
+
+        .clearAppointment-Box-item-icon {
+          position: absolute;
+          bottom: clamp(17.5px, 1.82vw, 35px);
+          right: clamp(17.5px, 1.82vw, 35px);
+          width: clamp(46.5px, 4.84vw, 93px);
+          height: clamp(46.5px, 4.84vw, 93px);
+          border-radius: 50%;
+          background: #4570b6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease-in-out;
+          svg {
+            width: clamp(24.5px, 2.55vw, 49px);
           }
         }
       }
@@ -1118,7 +2213,7 @@ i {
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(2),
       & > .icl-Good-List-item:nth-child(3) {
-        border-bottom: 2px solid #4570b6;
+        border-bottom: clamp(1px, 0.1vw, 2px) solid #4570b6;
       }
 
       .icl-Good-List-item {
@@ -1126,7 +2221,7 @@ i {
         height: 16.4vw;
         border-collapse: collapse;
         box-sizing: border-box;
-        border: 2px solid #4570b6;
+        border: clamp(1px, 0.1vw, 2px) solid #4570b6;
         border-right: none;
         background: #fff;
         text-align: center;
@@ -1142,10 +2237,10 @@ i {
 
 
 <template>
-  <div class="lasik" style="overflow-x: hidden;">
+  <div class="lasik" style="overflow-x: hidden">
     <HeadV2 />
 
-    <div class="new-container container center-Banner">
+    <!-- <div class="new-container container center-Banner">
       <img
         class="d-block mx-auto"
         decoding="async"
@@ -1161,14 +2256,14 @@ i {
         "
         sizes=" (max-width: 992px) 100vw,1216px"
       />
-    </div>
+    </div> -->
 
     <section class="ClearVisionBanner">
       <div class="new-container container">
         <div class="ClearVisionBanner-Box">
           <div class="ClearVisionBanner-Box-content">
             <div class="ClearVisionBanner-Box-content-title">
-              <h3>老花</h3>
+              <h3>老&nbsp;&nbsp;&nbsp;花</h3>
               <p>Presbyopia</p>
             </div>
 
@@ -1188,7 +2283,10 @@ i {
                 sizes=" (max-width: 992px) 100vw,1216px"
               />
 
-              <p><span>「6」字同「8」字</span><span>不能夠一眼分清？</span></p>
+              <p>
+                <span><i>「</i>6<i>」</i>字同<i>「</i> 8<i>」</i>字</span>
+                &nbsp; <span>不能夠一眼分清？</span>
+              </p>
             </div>
           </div>
           <div class="ClearVisionBanner-Box-text">
@@ -1218,9 +2316,76 @@ i {
       </div>
     </section>
 
-    <!-- 按钮 -->
+    <div class="CorrectionProgram" ref="correctionProgram">
+      <div class="CorrectionProgram-Box">
+        <div class="CorrectionProgram-Box-show" ref="boxShow">
+          <img
+            decoding="async"
+            src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-show-pc.avif"
+            alt=""
+            loading="lazy"
+            width="100%"
+            height="100%"
+            srcset="
+              https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mb.avif 400w,
+              https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mb.avif 640w,
+              https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-show-pc.avif
+            "
+            sizes=" (max-width: 992px) 100vw,1216px"
+          />
+        </div>
+        <div class="CorrectionProgram-Box-hide">
+          <div class="CorrectionProgram-Box-hide-item">
+            <div class="CorrectionProgram-Box-hide-item-top">
+              <img
+                src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcimg1.avif"
+                alt=""
+              />
+            </div>
+            <div class="CorrectionProgram-Box-hide-item-bottom">
+              <div class="CorrectionProgram-Box-hide-item-top-text">
+                <p>• 39歲以上有老花</p>
+                <p>• 同時有近視/遠視/散光問題</p>
+              </div>
+              <h4>CMER CLEAR-Vision</h4>
+              <p class="CorrectionProgram-Box-hide-item-bottom-text">
+                坊間稱之為<span>人工晶體置換術</span>。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，
+                <span>一次過解決近視、遠視、散光、老花</span
+                >等問題。希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業諮詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
+              </p>
+            </div>
+          </div>
+          <div class="CorrectionProgram-Box-hide-item">
+            <div class="CorrectionProgram-Box-hide-item-top">
+              <img
+                src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcimg2.avif"
+                alt=""
+              />
+            </div>
+            <div class="CorrectionProgram-Box-hide-item-bottom">
+              <div class="CorrectionProgram-Box-hide-item-top-text">
+                <p>• 39歲或以上</p>
+                <p>• 同時有近視/遠視/散光問題</p>
+                <p>• 未有白內障</p>
+              </div>
+              <h4>ICL Viva V6</h4>
+              <p class="CorrectionProgram-Box-hide-item-bottom-text">
+                是有晶體眼後房型植入式隱形眼鏡植入手術的一種，而ICL Viva (ICL
+                V6)
+                則是一種擴展景深，專為矯正老花而設的植入式隱形眼鏡，適合未有白內障，而正受近視及老花困擾的人士。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <a href="" class="publicBtn-booking">
+    <!-- 按钮 -->
+    <a
+      target="_blank"
+      href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+      class="publicBtn-booking"
+    >
       <span> 預約諮詢合適矯視方案 </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1266,7 +2431,7 @@ i {
     </section>
 
     <!-- 為何選擇希瑪? -->
-    <section class="icl-WhatChoose">
+    <!-- <section class="icl-WhatChoose">
       <h3 class="icl-WhatChoose-title">
         {{ $t("Correct.newIcl.section2.title") }}
       </h3>
@@ -1303,6 +2468,154 @@ i {
           </p>
         </div>
       </div>
+    </section> -->
+
+    <section class="visionBattle">
+      <img
+        class="visionBattle-Bg"
+        decoding="async"
+        src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-pcBg.avif"
+        alt=""
+        loading="lazy"
+        width="100%"
+        height="100%"
+        srcset="
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-mbBg.avif 400w,
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-mbBg.avif 640w,
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-pcBg.avif
+        "
+        sizes=" (max-width: 992px) 100vw,1216px"
+      />
+      <div class="visionBattle-Box">
+        <h3>不同老花矯視技術好處對比</h3>
+        <div class="visionBattle-Box-list">
+          <div class="visionBattle-Box-list-item">
+            <h4>CMER CLEAR-Vision</h4>
+            <div class="visionBattle-Box-list-item-content">
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>不需依賴眼鏡/隱形眼鏡</span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>晶體物料具生物兼容性 </span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>預防白內障</span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span
+                  >根據個人眼睛實際狀況和生活需要，<br />度身訂造治療方案</span
+                >
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>術後復原快: 最快術後一天可如常生活或工作</span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>手術時間短: 大約15至20分鐘完成</span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span
+                  >有不同人工晶體可供選擇，包括多焦距人工<br />晶體、單焦距人工晶體、散光多焦距人工晶體等</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="visionBattle-Box-list-item">
+            <h4>ICL Viva V6</h4>
+            <div class="visionBattle-Box-list-item-content">
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>不需依賴眼鏡/隱形眼鏡</span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>同時矯正老花及1800度近視</span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>無須切削角膜，不會導致乾眼症</span>
+              </p>
+              <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>可按需要選擇取出鏡片</span>
+              </p>
+            </div>
+            <div class="visionBattle-Box-list-item-VS">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="70"
+                height="118"
+                viewBox="0 0 70 118"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_12727_103)">
+                  <path
+                    d="M0 32.7129H13.2108L19.0441 62.3103L37.402 32.7129H50.098L22.4755 77.7147H9.77941L0 32.7129Z"
+                    fill="#4570B6"
+                  />
+                  <path
+                    d="M70.0005 0L45.123 33.2321H49.7554L70.0005 0Z"
+                    fill="#4570B6"
+                  />
+                  <path
+                    d="M2.89453 118L27.772 84.7678H23.1396L2.89453 118Z"
+                    fill="#4570B6"
+                  />
+                  <path
+                    d="M65.7109 47.5981C65.7109 47.5981 51.1275 41.0209 41.005 46.0404C31.0218 50.9913 23.7945 65.451 36.8373 70.4957C37.2054 70.6363 37.5807 70.7481 37.9596 70.8491C39.2607 71.1916 42.6063 72.0895 45.6338 73.0379C49.494 74.2495 51.8495 74.217 50.9524 78.49C49.9444 83.2931 38.4279 81.3459 34.9965 80.2209C31.5651 79.0958 28.1338 76.0668 28.1338 76.0668L22.6436 85.6297C22.6436 85.6297 34.6534 93.2887 49.2367 89.9136C63.82 86.5384 64.1632 75.288 62.4475 70.5282C62.4475 70.5282 61.9113 68.4511 58.7695 66.3525C56.6999 64.9714 54.3123 64.1529 51.846 63.8788C48.4432 63.4966 41.895 62.2346 41.2623 58.1527C40.4045 52.614 50.863 53.0611 54.3015 54.0852C58.4406 55.3184 62.0436 56.7463 62.0436 56.7463L66.2256 47.9407L65.7109 47.5945V47.5981Z"
+                    fill="#4570B6"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_12727_103">
+                    <rect width="70" height="118" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 合適對象-->
@@ -1323,6 +2636,17 @@ i {
         sizes=" (max-width: 992px) 100vw,1216px"
       />
 
+      <img
+        class="SuitableObject-bgLeft1"
+        src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgLeft1.svg"
+        alt=""
+      />
+      <img
+        class="SuitableObject-bgLeft2"
+        src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgLeft2.svg"
+        alt=""
+      />
+
       <div class="SuitableObject-Box container">
         <div class="SuitableObject-Box-title">
           <h3>合適對象</h3>
@@ -1335,7 +2659,7 @@ i {
               src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-1.svg"
               alt=""
             />
-            <p>40歲或以上</p>
+            <p>39歲以上</p>
           </div>
 
           <div class="SuitableObject-Box-List-item">
@@ -1369,6 +2693,381 @@ i {
       </div>
     </section>
 
+    <!-- 常见问题 -->
+
+    <section class="question-mencare">
+      <div class="container">
+        <h3 class="publicTitle-mencare">常見問題</h3>
+        <div class="question-section-Box">
+          <div id="accordion">
+            <div class="card collapseActive expanded">
+              <div class="card-header d-flex flex-column-reverse">
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <span class="text-justify">
+                      醫生會為你進行全面的檢查與溝通，來評估何種老花矯視是否適合你。
+                    </span>
+                  </div>
+                </div>
+                <a
+                  data-bs-toggle="collapse"
+                  id="toCSC"
+                  class="d-flex header-title position-relative"
+                  href="#collapseOne"
+                  aria-expanded="true"
+                >
+                  <!-- <span> Q1 </span> -->
+                  <span> 如何判斷哪種老花矯視方式適合我？ </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="14"
+                    viewBox="0 0 28 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.7441 1L13.879 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M1 1L13.8652 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="card collapseActive expanded">
+              <div class="card-header d-flex flex-column-reverse">
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <span class="text-justify">
+                      老花是眼睛機能衰退的自然現象，由於眼睛晶體逐漸硬化及眼內肌肉老化令晶體的變焦功能衰退所致，令人看近物時難以聚焦，模糊視野。一般人約在40至50歲左右就會開始出現老花症狀，故有近視的人也會有老花。
+                    </span>
+                  </div>
+                </div>
+                <a
+                  data-bs-toggle="collapse"
+                  id="toCSC"
+                  class="d-flex header-title position-relative"
+                  href="#collapseTwo"
+                  aria-expanded="false"
+                >
+                  <!-- <span> Q2 </span> -->
+                  <span> 有近視就不會出現老花？</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="14"
+                    viewBox="0 0 28 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.7441 1L13.879 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M1 1L13.8652 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="card collapseActive expanded">
+              <div class="card-header d-flex flex-column-reverse">
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <span class="text-justify">
+                      三焦晶體主要用於40至50歲老花眼人群。如客人覺得老花眼已經影響正常生活或閱讀，需配戴老花眼鏡，此時，三焦晶體便是矯正遠中近視力的不錯選擇。而最合適自己的老花矯視方案，還是需由醫生進行全面檢查後制定。
+                    </span>
+                  </div>
+                </div>
+                <a
+                  data-bs-toggle="collapse"
+                  id="toCSC"
+                  class="d-flex header-title position-relative"
+                  href="#collapseThree"
+                  aria-expanded="false"
+                >
+                  <span>何時做三焦晶體植入術比較好？</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="14"
+                    viewBox="0 0 28 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.7441 1L13.879 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M1 1L13.8652 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card collapseActive expanded">
+              <div class="card-header d-flex flex-column-reverse">
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <span class="text-justify">
+                      在光學上，老花是遠視的一種，但它們的成因不同。遠視主要成因是眼球過短，令景物聚焦了在視網膜後面。至於老花，則是由於晶體退化變硬，失去彈性及連繫著晶狀體的韌帶老化，令晶體的偏置功能下降，使近物時難以聚焦，出現模糊感。
+                    </span>
+                  </div>
+                </div>
+                <a
+                  data-bs-toggle="collapse"
+                  id="toCSC"
+                  class="d-flex header-title position-relative"
+                  href="#collapseFour"
+                  aria-expanded="false"
+                >
+                  <span>老花等於遠視嗎？</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="14"
+                    viewBox="0 0 28 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.7441 1L13.879 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M1 1L13.8652 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card collapseActive expanded">
+              <div class="card-header d-flex flex-column-reverse">
+                <div
+                  id="collapseFive"
+                  class="collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <span class="text-justify">
+                      現時尚未有有效的方法去防止其出現或惡化，但保持良好的用眼習慣有助減輕老花的徵狀和所造成的困擾。
+                    </span>
+                  </div>
+                </div>
+                <a
+                  data-bs-toggle="collapse"
+                  id="toCSC"
+                  class="d-flex header-title position-relative"
+                  href="#collapseFive"
+                  aria-expanded="false"
+                >
+                  <span>老花可以預防嗎？</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="14"
+                    viewBox="0 0 28 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.7441 1L13.879 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M1 1L13.8652 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card collapseActive expanded">
+              <div class="card-header d-flex flex-column-reverse">
+                <div
+                  id="collapseSix"
+                  class="collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <span class="text-justify">
+                      治療完成後第二天你就可以獲得良好的近距離視力，不戴老花鏡也可以輕鬆閱讀。中、遠距離的視力恢復通常在術後一週達到。之後經過數周，你的視野將會更清晰，並逐步適應多焦視覺狀態。
+                    </span>
+                  </div>
+                </div>
+                <a
+                  data-bs-toggle="collapse"
+                  id="toCSC"
+                  class="d-flex header-title position-relative"
+                  href="#collapseSix"
+                  aria-expanded="false"
+                >
+                  <span>術後視力多久可以恢復？</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="14"
+                    viewBox="0 0 28 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.7441 1L13.879 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M1 1L13.8652 12.0273"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 按钮 -->
+
+    <a href="/fee" class="publicBtn-booking">
+      <span> 了解老花矯視價格 </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="29"
+        viewBox="0 0 30 29"
+        fill="none"
+      >
+        <path
+          d="M3.19922 26.0597L25.8278 3.43115"
+          stroke="white"
+          stroke-width="5.4"
+          stroke-linecap="round"
+        />
+        <path
+          d="M6.49707 2.71118H26.5997V22.1512"
+          stroke="white"
+          stroke-width="4.86"
+          stroke-linecap="round"
+        />
+      </svg>
+    </a>
+
+    <section class="clearAppointment">
+      <div class="clearAppointment-Box">
+        <a href="/ophthalmicInfo/AppointForm" class="clearAppointment-Box-item">
+          <img
+            src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/laohua.svg"
+            alt=""
+          />
+          <p>預約老花講座</p>
+
+          <div class="clearAppointment-Box-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="49"
+              height="42"
+              viewBox="0 0 49 42"
+              fill="none"
+            >
+              <path
+                d="M3.57595 20.4719L40.719 20.472"
+                stroke="white"
+                stroke-width="6.26756"
+                stroke-linecap="round"
+              />
+              <path
+                d="M27.7695 37.561L44.268 21.0626L28.3134 5.10799"
+                stroke="white"
+                stroke-width="5.64081"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+          class="clearAppointment-Box-item"
+        >
+          <img
+            src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/zixun.svg"
+            alt=""
+          />
+          <p>預約諮詢</p>
+          <div class="clearAppointment-Box-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="49"
+              height="42"
+              viewBox="0 0 49 42"
+              fill="none"
+            >
+              <path
+                d="M3.57595 20.4719L40.719 20.472"
+                stroke="white"
+                stroke-width="6.26756"
+                stroke-linecap="round"
+              />
+              <path
+                d="M27.7695 37.561L44.268 21.0626L28.3134 5.10799"
+                stroke="white"
+                stroke-width="5.64081"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <div class="top-btnV2" @click="scrollToTopV2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1387,6 +3086,83 @@ i {
       </svg>
     </div>
 
+    <section class="CaseSharingV2">
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="21"
+          height="19"
+          viewBox="0 0 21 19"
+          fill="none"
+        >
+          <path
+            d="M1 0.77832L19.4751 17.9337"
+            stroke="#4570B6"
+            stroke-width="1.97947"
+          />
+        </svg>
+        <span> 同朋友分享一下啦！ </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="21"
+          height="19"
+          viewBox="0 0 21 19"
+          fill="none"
+        >
+          <path
+            d="M20 0.77832L1.52493 17.9337"
+            stroke="#4570B6"
+            stroke-width="1.97947"
+          />
+        </svg>
+      </div>
+      <div>
+        <a id="shareCurrentPageIcl">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="22"
+            viewBox="0 0 21 22"
+            fill="none"
+          >
+            <path
+              d="M0.28309 11.3923C0.282266 9.41405 1.74115 7.78777 3.63606 7.6221C4.78751 7.52154 5.78565 7.88504 6.60988 8.69859C6.74258 8.82964 6.83243 8.84118 6.99233 8.74475C8.88558 7.59654 10.7838 6.45411 12.6836 5.31745C12.832 5.22843 12.8518 5.15177 12.799 4.99022C12.0968 2.83806 13.5441 0.523527 15.7852 0.202064C17.9084 -0.10209 19.8083 1.36263 20.0539 3.49335C20.2781 5.44027 18.853 7.28415 16.9053 7.55945C15.6327 7.73914 14.553 7.34679 13.6604 6.43186C13.5647 6.33377 13.4996 6.32058 13.3826 6.39147C11.463 7.55039 9.54167 8.70601 7.61957 9.85915C7.50665 9.92674 7.47203 9.99351 7.51819 10.1237C7.75227 10.7864 7.79595 11.4632 7.61627 12.1457C7.57423 12.3064 7.63028 12.3814 7.7671 12.4515C9.44029 13.3046 11.1118 14.1618 12.7842 15.019C12.9185 15.0875 13.0554 15.1534 13.1831 15.2317C13.3101 15.3092 13.3966 15.2977 13.4963 15.1765C14.0972 14.4487 14.8662 14.0134 15.7992 13.8626C17.2161 13.6335 18.7129 14.311 19.4811 15.5359C20.888 17.7779 19.6467 20.6776 17.0545 21.2035C15.0006 21.6206 12.9688 20.1831 12.6663 18.1018C12.5996 17.6419 12.5971 17.1844 12.7347 16.7376C12.7982 16.5324 12.7413 16.4401 12.5518 16.3436C10.7607 15.4345 8.9746 14.5154 7.18932 13.5939C7.05991 13.5271 6.98491 13.5436 6.89424 13.6541C6.06342 14.663 4.98945 15.1147 3.68799 15.0454C2.07332 14.9589 0.560032 13.565 0.328423 11.9495C0.298751 11.7451 0.275672 11.5415 0.283915 11.3915L0.28309 11.3923Z"
+              fill="#4570B6"
+            />
+          </svg>
+        </a>
+        <a >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_10302_1589)">
+              <path
+                d="M9.10331 5.96582C10.8881 5.96788 12.1819 6.48567 13.3123 7.46166C13.4906 7.61577 13.6719 7.76576 13.8462 7.92295C14.1998 8.2404 14.2685 8.71402 13.9826 9.09722C13.644 9.55132 13.2864 9.99206 12.9169 10.4205C12.6102 10.7759 12.1381 10.7985 11.7725 10.5016C11.5445 10.3167 11.3283 10.1153 11.1003 9.92939C10.0614 9.08489 8.5107 9.12599 7.55356 10.0701C6.53466 11.0759 5.5337 12.1043 4.56062 13.1574C3.81463 13.9649 3.6493 14.9511 3.98793 15.998C4.32657 17.0449 5.06658 17.6788 6.11037 17.8699C6.97788 18.0281 7.77666 17.8031 8.43998 17.1744C8.65412 16.972 8.85232 16.7521 9.06148 16.5446C9.44493 16.1655 9.89611 16.1501 10.2826 16.5251C10.663 16.8949 11.0325 17.2771 11.3921 17.6685C11.7078 18.0127 11.7218 18.4883 11.423 18.8356C10.3951 20.0335 9.17403 20.8883 7.61033 21.1821C4.42019 21.781 1.21312 19.4828 0.680264 16.184C0.335653 14.0481 0.911332 12.204 2.37244 10.6598C3.2997 9.67974 4.24091 8.71299 5.19008 7.75549C6.35838 6.57607 7.76769 5.98123 9.10231 5.96685L9.10331 5.96582Z"
+                fill="#4570B6"
+              />
+              <path
+                d="M12.3093 15.4664C10.7307 15.4592 9.43492 14.9445 8.30647 13.9664C8.13516 13.8175 7.96186 13.6716 7.79055 13.5216C7.42104 13.1969 7.34734 12.7213 7.63916 12.3309C7.97879 11.8768 8.33635 11.4371 8.70487 11.0087C9.00964 10.6542 9.48373 10.6337 9.84925 10.9306C10.0644 11.1052 10.2666 11.2963 10.4837 11.4679C11.651 12.3915 13.1539 12.3021 14.1977 11.2388C15.131 10.2885 16.0602 9.33406 16.9785 8.36834C17.7345 7.57316 17.9635 6.61155 17.6667 5.55131C17.364 4.47258 16.6429 3.79863 15.5782 3.57672C14.6818 3.38974 13.8641 3.61165 13.1768 4.25889C12.9627 4.46025 12.7655 4.68216 12.5553 4.88866C12.1729 5.26467 11.7177 5.27906 11.3333 4.9051C10.9528 4.53525 10.5833 4.15307 10.2247 3.76061C9.91698 3.42467 9.89407 2.95105 10.1819 2.61408C11.147 1.48398 12.2824 0.636403 13.7426 0.306619C17.2036 -0.474177 20.5641 1.973 20.9874 5.60473C21.2095 7.51152 20.6826 9.19331 19.4117 10.5844C18.348 11.7484 17.2644 12.898 16.109 13.9664C15.0085 14.9846 13.6858 15.451 12.3083 15.4654L12.3093 15.4664Z"
+                fill="#4570B6"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_10302_1589">
+                <rect
+                  width="20.4545"
+                  height="21.1144"
+                  fill="white"
+                  transform="translate(0.583496 0.162109)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </section>
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -1406,7 +3182,16 @@ import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
-
+function throttle(fn, delay) {
+  let lastCall = 0;
+  return (...args) => {
+    const now = Date.now();
+    if (now - lastCall >= delay) {
+      lastCall = now;
+      fn(...args);
+    }
+  };
+}
 export default {
   components: {
     Head,
@@ -1471,11 +3256,29 @@ export default {
           hreflang: "zh-Hans-CN",
           href: "https://smile.hkcmereye.com/cn/vision-correction-presbyopia",
         },
+        {
+          rel: "stylesheet",
+          href: "/css/bootstrap.min.css",
+        },
+      ],
+      script: [
+        {
+          src: "/bootstrap.min.js",
+          async: true,
+        },
       ],
     };
   },
   data() {
     return {
+      lockScroll: false,
+      ticking: false,
+      animationOffset: 0,
+      maxOffset: 100,
+      scrollSensitivity: 2,
+      targetTop: 0,
+      isAnimating: false,
+
       isMobile: false,
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-presbyopia",
       canonicalHrefCN:
@@ -1540,10 +3343,118 @@ export default {
         behavior: "smooth",
       });
     },
-  },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+   initPcScrollHandler() {
+      const section = this.$refs.correctionProgram;
+      if (!section) return;
 
+      // 获取模块距离顶部的距离
+      this.targetTop = section.offsetTop;
+
+      // 计算触发点（比如模块顶部还剩 200px 时开始拦截）
+      const triggerPoint = this.targetTop - window.innerHeight + 839;
+      console.log("triggerPoint"+triggerPoint);
+      
+
+      const throttledScroll = throttle(() => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (!this.isAnimating && scrollTop >= triggerPoint && scrollTop < this.targetTop) {
+          this.lockScroll = true;
+          this.isAnimating = true;
+          this.animateBoxShow();
+        }
+
+        if (this.lockScroll && scrollTop >= this.targetTop) {
+          // 模块已经到达顶部，解锁滚动
+          this.lockScroll = false;
+          this.isAnimating = false;
+        }
+      }, 50);
+
+      window.addEventListener("scroll", throttledScroll);
+
+      // 阻止原生滚动（关键）
+      window.addEventListener("wheel", (e) => {
+        if (this.lockScroll) {
+          e.preventDefault();
+        }
+      }, { passive: false });
+
+      // 同样阻止触摸板滚动
+      window.addEventListener("touchmove", (e) => {
+        if (this.lockScroll) {
+          e.preventDefault();
+        }
+      }, { passive: false });
+    },
+
+    animateBoxShow() {
+      const showEl = this.$refs.boxShow;
+      const animate = () => {
+        if (this.animationOffset >= this.maxOffset) return;
+
+        this.animationOffset += Math.min(
+          this.scrollSensitivity,
+          this.maxOffset - this.animationOffset
+        );
+
+        this.updateAnimation(showEl);
+
+        if (this.animationOffset < this.maxOffset) {
+          requestAnimationFrame(animate);
+        } else {
+          // 动画结束，解锁页面滚动
+          this.lockScroll = false;
+        }
+      };
+
+      requestAnimationFrame(animate);
+    },
+
+    updateAnimation(showEl) {
+      if (this.ticking) return;
+      requestAnimationFrame(() => {
+        showEl.style.transform = `translateY(-${this.animationOffset}%)`;
+        this.ticking = false;
+      });
+      this.ticking = true;
+    },
+  
+
+    initMobileScrollHandler() {
+      const section = this.$refs.correctionProgram;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.startMobileAnimation();
+              observer.unobserve(section); // 只执行一次
+            }
+          });
+        },
+        { threshold: [0.1] }
+      );
+
+      observer.observe(section);
+    },
+
+    startMobileAnimation() {
+      const showEl = this.$refs.boxShow;
+      setTimeout(() => {
+        showEl.style.transform = "translateY(-100%)";
+      }, 1000);
+    },
+  },
+
+  beforeUnmount() {
+    // 清理 scroll 监听器
+    if (this.throttledCheck) {
+      window.removeEventListener("scroll", this.throttledCheck);
+    }
+  },
+
+  mounted() {
     this.windowWidth = window.innerWidth;
 
     if (window.innerWidth < 768) {
@@ -1552,6 +3463,11 @@ export default {
       this.isMobile = false;
     }
 
+    if (this.isMobile) {
+      this.initMobileScrollHandler();
+    } else {
+      this.initPcScrollHandler();
+    }
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {

@@ -67,6 +67,15 @@ export const $router = [
     // component: resolve('pages/fee/index.vue'),
     component: resolve("pages/new-page/new-fee.vue"),
   },
+
+  {
+    path: "/feeV2",
+    name: "feeV2",
+    title: "收費詳情",
+    // component: resolve('pages/fee/index.vue'),
+    component: resolve("pages/new-page/new-feeV2.vue"),
+  },
+
   {
     path: "/FreQuestions",
     name: "FreQuestions-smile",
@@ -196,13 +205,6 @@ export const $router = [
     component: resolve("pages/new-page/smile-proV2.vue"),
   },
 
-  {
-    path: "/cmerCerter",
-    name: "cmerCerter",
-    title: "矯視中心",
-    // component: resolve('pages/smilePro/index.vue'),
-    component: resolve("pages/new-page/cmerCerter.vue"),
-  },
   {
     path: "/vision-correction-presbyopia",
     name: "vision-correction-presbyopia",
