@@ -1,27 +1,42 @@
 <template>
   <div class="fee">
     <HeadV2 />
-    <Banner class="banner-box">
-      <template #banner>
-        <div class="banner-img">
-          <img
-            src="https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif"
-            srcset="
-              https://statichk.cmermedical.com/smile/fee/08ef23b96b14.avif 768w,
-              https://statichk.cmermedical.com/smile/fee/122f3ee787e4.avif
-            "
-            alt=""
-          />
-        </div>
-      </template>
-    </Banner>
 
     <section class="fee-Banner">
       <div class="fee-Banner-Box new-container">
         <div class="fee-Banner-Box-Title">
           <h2>PRICE</h2>
           <span>收費詳情</span>
-          <p><a href="/">主頁 </a>><a href="/fee">收費詳情</a></p>
+          <p><a href="/">主頁 > </a><a href="/fee">收費詳情</a></p>
+        </div>
+      </div>
+
+      <div class="fee-img">
+        <div class="fee-img-Box new-container">
+          <div class="fee-img-Box-image">
+            <div class="fee-img-Box-image-name">
+              <h4>希瑪微笑閃亮大使</h4>
+              <p><span> MAGGIE</span>米姬</p>
+            </div>
+
+            <img
+              decoding="async"
+              src="https://statichk.cmermedical.com/smile/feeV2/fee-img-PC.webp"
+              loading="lazy"
+              width="100%"
+              height="100%"
+              srcset="
+                https://statichk.cmermedical.com/smile/feeV2/fee-img-mb.webp 400w,
+                https://statichk.cmermedical.com/smile/feeV2/fee-img-mb.webp 992w,
+                https://statichk.cmermedical.com/smile/feeV2/fee-img-PC.webp
+              "
+              sizes=" (max-width: 992px) 100vw,1216px"
+            />
+
+            <div class="fee-img-Box-image-tip">
+              本診所絕無<br class="d-lg-none" />其他額外收費
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -31,287 +46,290 @@
       <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
     </div>
     -->
+    <div class="feeV2-Bg">
+      <section class="smilepro-difference">
+        <table class="table custom-comparison-table new-container">
+          <thead>
+            <tr>
+              <th>此為<br class="d-lg-none" />香港價錢 </th>
 
-    <section class="smilepro-difference">
-      <table class="table custom-comparison-table new-container">
-        <thead>
-          <tr>
-            <th>此為<br class="d-lg-none" />香港價錢 </th>
+              <th>
+                <span>SMILE Pro</span><br class="d-lg-none" />
+                <span>Care</span><br />
+                微笑激光<br class="d-lg-none" />矯視
+              </th>
+              <th>
+                <span>SMILE</span> <br class="d-lg-none" /><span>Pro</span
+                ><br />微笑激光<br class="d-lg-none" />矯視
+              </th>
 
-            <th>
-              <span>SMILE Pro</span><br class="d-lg-none" />
-              <span>Care</span><br />
-              微笑激光<br class="d-lg-none" />矯視
-            </th>
-            <th>
-              <span>SMILE</span> <br class="d-lg-none" /><span>Pro</span
-              ><br />微笑激光<br class="d-lg-none" />矯視
-            </th>
+              <th>
+                <span>ICL</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
+              </th>
+              <th>
+                <span>SMILE</span> <br />微笑激光<br class="d-lg-none" />矯視
+              </th>
+              <th>
+                <span>LASIK</span><br class="d-lg-none" />激光矯視/<br />
+                <span>TPRK</span><br class="d-lg-none" />經上皮<br
+                  class="d-lg-none"
+                />激光<br class="d-none d-lg-block" />角膜<br
+                  class="d-lg-none"
+                />切削手術
+              </th>
+            </tr>
+          </thead>
 
-            <th>
-              <span>ICL</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
-            </th>
-            <th>
-              <span>SMILE</span> <br />微笑激光<br class="d-lg-none" />矯視
-            </th>
-            <th>
-              <span>LASIK</span><br class="d-lg-none" />激光矯視/<br />
-              <span>TPRK</span><br class="d-lg-none" />經上皮<br
-                class="d-lg-none"
-              />激光<br class="d-none d-lg-block" />角膜<br
-                class="d-lg-none"
-              />切削手術
-            </th>
-          </tr>
-        </thead>
+          <tbody>
+            <tr>
+              <td>
+                價錢(雙眼)
+                <p>即日起<br class="d-lg-none" />限時優惠</p>
+              </td>
+              <td>$26,000^</td>
+              <td>$24,000^</td>
+              <td>不帶散光<br />$64,000^^<br />帶散光<br />$68,000^^</td>
+              <td>$19,000^</td>
+              <td>$19,000^</td>
+            </tr>
 
-        <tbody>
-          <tr>
-            <td>
-              價錢(雙眼)
-              <p>即日起<br class="d-lg-none" />限時優惠</p>
-            </td>
-            <td>$26,000^</td>
-            <td>$24,000^</td>
-            <td>不帶散光<br />$64,000^^<br />帶散光<br />$68,000^^</td>
-            <td>$19,000^</td>
-            <td>$19,000^</td>
-          </tr>
+            <tr>
+              <td>術前檢查<br class="d-lg-block" />費用</td>
+              <td>$100</td>
+              <td>$100</td>
+              <td>$500</td>
+              <td>$100</td>
+              <td>$100</td>
+            </tr>
 
-          <tr>
-            <td>術前檢查<br class="d-lg-block" />費用</td>
-            <td>$100</td>
-            <td>$100</td>
-            <td>$500</td>
-            <td>$100</td>
-            <td>$100</td>
-          </tr>
+            <tr>
+              <td>眼睛水潤<br class="d-lg-block" />護理</td>
+              <td>1次</td>
+              <td>1次</td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                  alt=""
+                />
+              </td>
+              <td>1次</td>
+              <td>1次</td>
+            </tr>
 
-          <tr>
-            <td>眼睛水潤<br class="d-lg-block" />護理</td>
-            <td>1次</td>
-            <td>1次</td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                alt=""
-              />
-            </td>
-            <td>1次</td>
-            <td>1次</td>
-          </tr>
+            <tr>
+              <td>術後眼部<br />彩光護理</td>
+              <td>1次</td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                  alt=""
+                />
+              </td>
+            </tr>
 
-          <tr>
-            <td>術後眼部<br />彩光護理</td>
-            <td>1次</td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                alt=""
-              />
-            </td>
-          </tr>
+            <tr>
+              <td>眼科專科<br />醫生檢查</td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+            </tr>
 
-          <tr>
-            <td>眼科專科<br />醫生檢查</td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-          </tr>
+            <tr>
+              <td>術後覆診</td>
+              <td>5次#</td>
+              <td>3次#</td>
+              <td>5次#</td>
+              <td>3次#</td>
+              <td>3次#</td>
+            </tr>
 
-          <tr>
-            <td>術後覆診</td>
-            <td>5次#</td>
-            <td>3次#</td>
-            <td>5次#</td>
-            <td>3次#</td>
-            <td>3次#</td>
-          </tr>
+            <tr>
+              <td>增進手術</td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+            </tr>
 
-          <tr>
-            <td>增進手術</td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-          </tr>
+            <tr>
+              <td>無限視光<br class="d-lg-block" />檢查</td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt=""
+                />
+              </td>
+            </tr>
 
-          <tr>
-            <td>無限視光<br class="d-lg-block" />檢查</td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-            <td>
-              <img
-                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                alt=""
-              />
-            </td>
-          </tr>
+            <tr class="custom-comparison-table-extra">
+              <td></td>
+              <td colspan="5">
+                <div>
+                  <span>
+                    SMILE XTRA<br class="d-none d-lg-block" />
+                    角膜膠原交聯術
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr class="custom-comparison-table-extraTwo">
+              <td></td>
+              <td colspan="5">
+                <div>
+                  <div>單眼</div>
+                  <div>雙眼</div>
+                </div>
+              </td>
+            </tr>
+            <tr class="custom-comparison-table-extraThree">
+              <td></td>
+              <td colspan="5">
+                <div>
+                  <div>$3,000</div>
+                  <div>$5,000</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-          <tr class="custom-comparison-table-extra">
-            <td></td>
-            <td colspan="5">
-              <div>
-                SMILE XTRA<br class="d-none d-lg-block" />
-                角膜膠原交聯術
-              </div>
-            </td>
-          </tr>
-          <tr class="custom-comparison-table-extraTwo">
-            <td></td>
-            <td colspan="5">
-              <div>
-                <div>單眼</div>
-                <div>雙眼</div>
-              </div>
-            </td>
-          </tr>
-          <tr class="custom-comparison-table-extraThree">
-            <td></td>
-            <td colspan="5">
-              <div>
-                <div>$3,000</div>
-                <div>$5,000</div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!-- 表格二 -->
 
-    <!-- 表格二 -->
-    <section class="smilepro-difference">
-      <table
-        class="table custom-comparison-table custom-table-extro new-container"
-      >
-        <thead>
-          <tr>
-            <th>此為香港價錢 </th>
-            <th colspan="2" class="tablePink">Clear-Vision<br />老花矯視</th>
-          </tr>
-        </thead>
+      <section class="smilepro-difference smilepro-difference-two">
+        <table
+          class="table custom-comparison-table custom-table-extro new-container"
+        >
+          <thead>
+            <tr>
+              <th>此為<br class="d-lg-none" />香港價錢 </th>
+              <th colspan="2" class="tablePink">Clear-Vision<br />老花矯視</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-            <td></td>
-            <td class="tablePinkZero">不帶散光</td>
-            <td class="tablePinkZero">不帶散光</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td></td>
+              <td class="tablePinkZero">不帶散光</td>
+              <td class="tablePinkZero">帶散光</td>
+            </tr>
 
-          <tr>
-            <td>單焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-            <td>$20,000 - $35,000</td>
-            <td>$23,000 - $41,000</td>
-          </tr>
+            <tr>
+              <td>單焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
+              <td>$20,000 - $35,000</td>
+              <td>$23,000 - $41,000</td>
+            </tr>
 
-          <tr>
-            <td>多焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-            <td>$26,000 - $51,000</td>
-            <td>$31,000 - $51,000</td>
-          </tr>
+            <tr>
+              <td>多焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
+              <td>$26,000 - $51,000</td>
+              <td>$31,000 - $51,000</td>
+            </tr>
 
-          <tr>
-            <td>術前檢查<br class="d-lg-none" />費用</td>
-            <td colspan="2">$680</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+            <tr>
+              <td>術前檢查<br class="d-lg-none" />費用</td>
+              <td colspan="2">$680</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <!-- <div class="table_new_fee">
+      <!-- <div class="table_new_fee">
       <div class="table_new_fee_box">
         <div class="table_left" v-if="isMobile">
           <div>此為香港價錢</div>
@@ -607,64 +625,65 @@
       </div>
     </div> -->
 
-    <div class="fee-table-container">
-      <a
-        class="meal-btn"
-        target="_blank"
-        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-14)%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96"
-        >{{ $t("fee.table.btn") }}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="29"
-          viewBox="0 0 30 29"
-          fill="none"
-        >
-          <path
-            d="M3.19922 26.0597L25.8278 3.43115"
-            stroke="white"
-            stroke-width="5.4"
-            stroke-linecap="round"
-          />
-          <path
-            d="M6.49609 2.71118H26.5987V22.1512"
-            stroke="white"
-            stroke-width="4.86"
-            stroke-linecap="round"
-          />
-        </svg>
-      </a>
-    </div>
+      <div class="fee-table-container">
+        <a
+          class="meal-btn"
+          target="_blank"
+          href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-14)%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96"
+          >{{ $t("fee.table.btn") }}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="29"
+            viewBox="0 0 30 29"
+            fill="none"
+          >
+            <path
+              d="M3.19922 26.0597L25.8278 3.43115"
+              stroke="white"
+              stroke-width="5.4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M6.49609 2.71118H26.5987V22.1512"
+              stroke="white"
+              stroke-width="4.86"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
+      </div>
 
-    <div class="ellipse_explain_bg">
-      <div class="ellipse_explain">
-        <span>{{ $t("fee.textList.text1") }}</span>
-        <span>
-          {{ $t("fee.textList.text2") }}<br />
-          {{ $t("fee.textList.text2_1") }}
-          {{ $t("fee.textList.text2_2") }}<br />
-        </span>
-        <span>
-          {{ $t("fee.textList.text3") }}<br /><br class="mbShow" />
-          {{ $t("fee.textList.text3_1") }}
-          {{ $t("fee.textList.text3_2") }}<br />
-          {{ $t("fee.textList.text3_3") }}
-        </span>
-        <br />
-        <span>
-          {{ $t("fee.textList.text4") }}
-        </span>
-        <br />
-        <span>
-          {{ $t("fee.textList.text5") }}
-        </span>
-        <br />
-        <span>
-          {{ $t("fee.textList.text6") }}
-        </span>
+      <div class="ellipse_explain_bg">
+        <div class="ellipse_explain">
+          <span>{{ $t("fee.textList.text1") }}</span>
+          <span>
+            {{ $t("fee.textList.text2") }}<br />
+            {{ $t("fee.textList.text2_1") }}
+            {{ $t("fee.textList.text2_2") }}<br />
+          </span>
+          <span>
+            {{ $t("fee.textList.text3") }}<br /><br class="mbShow" />
+            {{ $t("fee.textList.text3_1") }}
+            {{ $t("fee.textList.text3_2") }}<br />
+            {{ $t("fee.textList.text3_3") }}
+          </span>
+          <br />
+          <span>
+            {{ $t("fee.textList.text4") }}
+          </span>
+          <br />
+          <span>
+            {{ $t("fee.textList.text5") }}
+          </span>
+          <br />
+          <span>
+            {{ $t("fee.textList.text6") }}
+          </span>
+        </div>
       </div>
     </div>
-    <businessHours />
+    <!-- <businessHours /> -->
 
     <FooterV2 />
     <FooterMobile />
@@ -782,7 +801,11 @@ export default {
 };
 </script>
 
-
+<style>
+  body{
+    overflow-x: hidden;
+  }
+</style>
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   :deep(.businessHours) {
@@ -1231,7 +1254,8 @@ export default {
     }
   }
   .ellipse_explain_bg {
-    padding: 3.90625vw 3vw;
+
+    padding-top: clamp(67px,6.98vw,134px);
     max-width: 100vw;
     margin-bottom: 4.947vw;
   }
@@ -1280,14 +1304,14 @@ export default {
     }
   }
   .fee-table-container {
-    margin-bottom: 4.165vw;
+    // margin-bottom: 4.165vw;
     & > a {
       margin: 0 auto;
-      margin-top: 2.864vw;
+      margin-top: clamp(51.5px,5.36vw,103px);
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 1.5625vw;
+      font-size: 36px;
       font-style: normal;
       font-weight: 700;
       line-height: 1.5625vw;
@@ -1297,7 +1321,13 @@ export default {
       width: max-content;
       border-radius: 5.208vw;
       display: flex;
+      align-items: center;
+      gap: 15px;
       padding: 29px 2.76vw 29px 3.229vw;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
@@ -1791,7 +1821,7 @@ export default {
         no-repeat;
       background-size: 100% auto;
       bottom: 0;
-      right: 0;
+      right: -30px;
       z-index: -1;
     }
 
@@ -1849,9 +1879,12 @@ export default {
     }
   }
   .fee-table-container {
-    margin-bottom: 55px;
+    margin-top: 38px;
     & > a {
-      display: block;
+      display: flex;
+      gap: 9px;
+      align-items: center;
+
       width: max-content;
       margin: 0 auto;
       color: #fff;
@@ -1861,11 +1894,15 @@ export default {
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
-      line-height: 30px; /* 150% */
+      line-height: 150%;
       letter-spacing: 1px;
       background: #4570b6;
       border-radius: 100px;
       padding: 5px 30px 6px 30px;
+      svg {
+        width: 17px;
+        height: 17px;
+      }
     }
   }
 }
@@ -1875,16 +1912,154 @@ export default {
     display: none;
   }
 
+  // Banner
+  .fee-Banner {
+    position: relative;
+    margin-top: 90px;
+    height: 61.54vw;
+    z-index: 3;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20.51vw;
+      height: 28.21vw;
+      background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-after.avif")
+        no-repeat;
+      background-size: 100% auto;
+      right: -8.72vw;
+      top: 0;
+    }
+
+    .fee-Banner-Box {
+      padding-top: 9.74vw;
+      .fee-Banner-Box-Title {
+        padding-left: 8.21vw;
+
+        h2 {
+          margin-bottom: 0;
+          text-align: left;
+          color: #4570b6;
+          font-family: "Poppins", sans-serif;
+          font-size: 11.66vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 109.4%;
+        }
+        span {
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 6.29vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 109.4%;
+        }
+
+        p {
+          margin-top: 23.08vw;
+          height: 11.28vw;
+          a {
+            color: #6d6e71;
+            font-family: "Noto Sans TC";
+            font-size: 3.08vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 362.5%;
+            letter-spacing: 0.09vw;
+          }
+          & > a:last-child {
+            color: #4570b6;
+          }
+        }
+      }
+    }
+  }
+
+  .fee-img {
+    background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-Bg.avif")
+      no-repeat;
+    background-size: 230.77vw auto;
+    background-position: 42% 1.54vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    .fee-img-Box {
+      .fee-img-Box-image {
+        width: 100vw;
+        margin: 0 auto;
+        position: relative;
+        .fee-img-Box-image-name {
+          position: absolute;
+          bottom: 41.79vw;
+          left: 34.36vw;
+          h4,
+          p {
+            color: #4570b6;
+            font-family: "Noto Sans TC";
+            font-size: 3.59vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 152.349%;
+          }
+          p {
+            span {
+              font-family: "Poppins", sans-serif;
+              font-weight: 700;
+            }
+          }
+        }
+        img {
+          width: 62.31vw;
+          // height: 90vw;
+          margin-left: auto;
+        }
+
+        .fee-img-Box-image-tip {
+          position: absolute;
+          bottom: 7.69vw;
+          left: 8.72vw;
+          width: 35.9vw;
+          height: 15.38vw;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background: #4570b6;
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: 3.59vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 152.349%;
+          letter-spacing: 0.9vw;
+
+          &::after {
+            position: absolute;
+            content: "";
+            bottom: -2.82vw;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-left: 3.85vw solid transparent;
+            border-top: 3.33vw solid #4570b6;
+          }
+        }
+      }
+    }
+  }
+
   // 表格
   .smilepro-difference {
-    margin-top: 23.85vw;
+    margin-top: 30.77vw;
     overflow: scroll;
     position: relative;
     &::-webkit-scrollbar {
       display: none;
     }
     .custom-comparison-table {
-      margin-top: 7.69vw;
+      // margin-top: 7.69vw;
       width: max-content;
       border-collapse: collapse;
       border-spacing: 0;
@@ -1903,12 +2078,12 @@ export default {
     }
 
     .custom-comparison-table thead th {
-      background: #f4fafc;
+      // background: #f4fafc;
       width: 15.9vw;
       height: 27.44vw;
       color: #fff;
       text-align: center;
-      font-family: "ITC Avant Garde Gothic Pro";
+      font-family: "Poppins", sans-serif;
       font-size: 13px;
       font-style: normal;
       font-weight: 700;
@@ -1929,7 +2104,8 @@ export default {
       border-bottom: none;
     }
     .custom-comparison-table thead tr > th:nth-child(1) {
-      background: white;
+      background: #f6fafd;
+      opacity: 1;
       color: #4570b6;
       font-family: "Noto Sans HK";
       font-size: 12px;
@@ -1998,11 +2174,46 @@ export default {
       background: #8fd3ea;
       color: #fff;
       text-align: center;
-      font-family: "ITC Avant Garde Gothic Pro";
+      font-family: "Poppins", sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
       line-height: 116.164%;
+      div {
+        position: relative;
+        span {
+          position: relative;
+          padding-left: 55px;
+        }
+        span::after {
+          position: absolute;
+          left: 0px;
+          top: -20px;
+          content: "額外項目";
+          background: white;
+          padding: 5px;
+          border-radius: 5px;
+          color: #8fd3ea;
+          text-align: center;
+          font-family: "Noto Sans TC";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120.359%;
+          transform: rotate(-15deg);
+        }
+        span::before {
+          content: "";
+          position: absolute;
+          left: 46px;
+          top: -1px;
+          width: 0;
+          height: 0;
+          transform: rotate(-15deg);
+          border-left: 8px solid transparent;
+          border-top: 8px solid white;
+        }
+      }
     }
 
     .custom-comparison-table
@@ -2051,7 +2262,8 @@ export default {
       justify-content: center;
       flex-direction: column;
 
-      background: #f8f8f8;
+      background: white;
+      opacity: 1;
 
       color: #4570b6;
       text-align: center;
@@ -2061,6 +2273,7 @@ export default {
       font-weight: 700;
       line-height: 107.143%;
       height: inherit;
+
 
       p {
         color: #ff7e36;
@@ -2089,6 +2302,9 @@ export default {
   }
 
   // 表格二
+  .smilepro-difference-two {
+    margin-top: 70px;
+  }
   .smilepro-difference {
     .custom-table-extro {
       width: 100vw;
@@ -2099,7 +2315,7 @@ export default {
             height: 76px;
 
             text-align: center;
-            font-family: "ITC Avant Garde Gothic Pro";
+            font-family: "Poppins", sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
@@ -2146,9 +2362,163 @@ export default {
   .d-lg-block {
     display: block;
   }
+
+  // Banner
+  .fee-Banner {
+    position: relative;
+    margin-top: 160px;
+    height: clamp(245px, 25.52vw, 490px);
+    z-index: 3;
+    &::before {
+      position: absolute;
+      content: "";
+      width: clamp(128.5px, 13.39vw, 257px);
+      height: clamp(154px, 16.04vw, 308px);
+      background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-beforePc.avif")
+        no-repeat;
+      background-size: 100% auto;
+      left: clamp(-94px, -4.9vw, -47px);
+      top: clamp(35px, 3.65vw, 70px);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: clamp(135px, 14.06vw, 270px);
+      height: clamp(184px, 19.17vw, 368px);
+      background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-afterPc.avif")
+        no-repeat;
+      background-size: 100% auto;
+      right: clamp(-106px, -5.52vw, -53px);
+      top: 0;
+    }
+
+    .fee-Banner-Box {
+      padding-top: clamp(80px, 8.33vw, 160px);
+      .fee-Banner-Box-Title {
+        padding-left: clamp(39px, 4.06vw, 78px);
+        h2 {
+          margin-bottom: 0;
+          text-align: left;
+          color: #4570b6;
+          font-family: "Poppins", sans-serif;
+          font-size: clamp(68.5px, 7.14vw, 137px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 109.4%;
+        }
+        span {
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: clamp(37px, 3.85vw, 74px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 109.4%;
+        }
+
+        p {
+          margin-top: clamp(32.5px, 3.39vw, 65px);
+          height: clamp(22px, 2.29vw, 44px);
+          a {
+            color: #6d6e71;
+            font-family: "Noto Sans TC";
+            font-size: clamp(10px, 1.04vw, 20px);
+            font-style: normal;
+            font-weight: 300;
+            line-height: 217.5%;
+            letter-spacing: clamp(0.3px, 0.03vw, 0.6px);
+          }
+          & > a:last-child {
+            color: #4570b6;
+          }
+        }
+      }
+    }
+  }
+
+  .fee-img {
+    background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-PCBg.webp")
+      no-repeat;
+    background-size: clamp(1045px, 108.85vw, 2090px) auto;
+    background-position: calc(50% + clamp(20px,2.08vw,40px)) clamp(15px,1.56vw,30px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    .fee-img-Box {
+      .fee-img-Box-image {
+        width: clamp(442px, 46.04vw, 884px);
+        margin-left: auto;
+        position: relative;
+        .fee-img-Box-image-name {
+          position: absolute;
+          right: clamp(15px, 1.56vw, 30px);
+          bottom: clamp(122px, 12.71vw, 244px);
+          h4,
+          p {
+            color: #4570b6;
+            font-family: "Noto Sans HK";
+            font-size: clamp(10px, 1.04vw, 20px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: clamp(1px, 0.1vw, 2px);
+          }
+          p {
+            font-weight: 900;
+            span {
+              font-family: "Poppins", sans-serif;
+              font-weight: 700;
+            }
+          }
+        }
+        img {
+          width: clamp(301px, 31.35vw, 602px);
+          // height: 691px;
+          margin-left: auto;
+        }
+
+        .fee-img-Box-image-tip {
+          position: absolute;
+          display: inline-block;
+          padding: clamp(3px, 0.31vw, 6px) clamp(9px, 0.94vw, 18px);
+          bottom: clamp(75px, 7.81vw, 150px);
+          left: clamp(17px, 1.77vw, 34px);
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background: #4570b6;
+          color: #fff;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: clamp(10px, 1.04vw, 20px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: clamp(2.5px, 0.26vw, 5px);
+
+          &::after {
+            position: absolute;
+            content: "";
+            bottom: clamp(-18px, -0.94vw, -9px);
+            left: 70%;
+            width: 0;
+            height: 0;
+            border-left: clamp(10px, 1.04vw, 20px) solid transparent;
+            border-top: clamp(10px, 1.04vw, 20px) solid #4570b6;
+          }
+        }
+      }
+    }
+  }
+
   // 表格
   .smilepro-difference {
-    margin-top: 93px;
+    position: relative;
+    margin-top: clamp(100.5px, 10.47vw, 201px);
+
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
@@ -2192,7 +2562,6 @@ export default {
     }
 
     .custom-comparison-table {
-      margin-top: 30px;
       width: 100%;
       border-collapse: collapse;
       border-spacing: 0;
@@ -2217,13 +2586,13 @@ export default {
       height: 148px;
       color: #fff;
       text-align: center;
-      font-family: "ITC Avant Garde Gothic Pro";
+      font-family: "Poppins", sans-serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
       line-height: 130%;
       span {
-        font-family: "ITC Avant Garde Gothic Pro";
+        font-family: "Poppins", sans-serif;
       }
     }
 
@@ -2305,11 +2674,46 @@ export default {
       background: #8fd3ea;
       color: #fff;
       text-align: center;
-      font-family: "ITC Avant Garde Gothic Pro";
+      font-family: "Poppins", sans-serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
       line-height: 130%;
+      height: 148px;
+      div {
+        position: relative;
+        span {
+          position: relative;
+        }
+        span::after {
+          position: absolute;
+          left: -83px;
+          top: -26px;
+          content: "額外項目";
+          background: white;
+          padding: 8px;
+          border-radius: 5px;
+          color: #8fd3ea;
+          text-align: center;
+          font-family: "Noto Sans TC";
+          font-size: 15.542px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 130%;
+          transform: rotate(-15deg);
+        }
+        span::before {
+          content: "";
+          position: absolute;
+          left: -25px;
+          top: 2px;
+          width: 0;
+          height: 0;
+          transform: rotate(-15deg);
+          border-left: 15px solid transparent;
+          border-top: 15px solid white;
+        }
+      }
     }
 
     .custom-comparison-table
@@ -2389,6 +2793,9 @@ export default {
   }
 
   // 表格二
+  .smilepro-difference-two {
+    margin-top: 136px;
+  }
   .smilepro-difference {
     .custom-table-extro {
       thead {
@@ -2418,8 +2825,9 @@ export default {
         }
         & > tr:nth-child(1) {
           border-bottom: none;
-          height: 60px;
+       
           td {
+               height: 60px;
             color: #4570b6;
             text-align: center;
             font-family: "Noto Sans HK";
@@ -2456,5 +2864,8 @@ export default {
 }
 .tablePinkZero {
   background: #fbf4ff !important;
+}
+.feeV2-Bg {
+  background: linear-gradient(180deg, #f6fafd 0%, rgba(246, 250, 253, 0) 100%);
 }
 </style>

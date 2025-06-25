@@ -219,7 +219,7 @@
 </template>
 
 <style lang="scss" scoped>
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
   .HeaderLeft {
     width: 329px;
     height: 104px;
@@ -231,7 +231,7 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .HeaderLeft {
     width: 158px;
     height: 50px;

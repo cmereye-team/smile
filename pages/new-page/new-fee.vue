@@ -26,7 +26,7 @@
           <div></div>
           <div>
             <div>{{ $t("fee.table.content2.text1") }}</div>
-            <div>{{ $t("fee.table.content2.text2") }}</div>
+            
           </div>
           <div>
             <div>{{ $t("fee.table.content3.text1") }}</div>
@@ -77,7 +77,7 @@
           </div>
           <div v-if="!isMobile">
             <div>{{ $t("fee.table.content2.text1") }}</div>
-            <div>{{ $t("fee.table.content2.text2") }}</div>
+         
           </div>
           <div>
             <div>$26,000<sup>^</sup></div>
