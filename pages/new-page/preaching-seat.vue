@@ -141,8 +141,6 @@
       <div class="lecture-image">
         <img src="https://statichk.cmermedical.com/smile/CT_20250612_7月講座.webp?ver=7" alt="7月 中環" />
         <img src="https://statichk.cmermedical.com/smile/MK_20250612_7月講座.webp?ver=7" alt="7月 旺角" />
-        <img src="https://statichk.cmermedical.com/smile/20250512_6月講座_CT.jpg?ver=6" alt="6月 中環" />
-        <img src="https://statichk.cmermedical.com/smile/20250512_6月講座_MK.jpg?ver=6" alt="6月 旺角" />
       </div>
     </div>
     <businessHours />
