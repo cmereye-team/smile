@@ -16,19 +16,19 @@
           <div class="fee-img-Box-image">
             <div class="fee-img-Box-image-name">
               <h4>希瑪微笑閃亮大使</h4>
-              <p><span> MAGGIE</span>米姬</p>
+              <p><span> MAGGIE米姬</span></p>
             </div>
 
             <img
               decoding="async"
-              src="https://statichk.cmermedical.com/smile/feeV2/fee-img-PC.webp"
+              src="https://statichk.cmermedical.com/smile/feeV2/fee-img-newPC.avif"
               loading="lazy"
               width="100%"
               height="100%"
               srcset="
-                https://statichk.cmermedical.com/smile/feeV2/fee-img-mb.webp 400w,
-                https://statichk.cmermedical.com/smile/feeV2/fee-img-mb.webp 992w,
-                https://statichk.cmermedical.com/smile/feeV2/fee-img-PC.webp
+                https://statichk.cmermedical.com/smile/feeV2/fee-img-newMB.avif 400w,
+                https://statichk.cmermedical.com/smile/feeV2/fee-img-newMB.avif 992w,
+                https://statichk.cmermedical.com/smile/feeV2/fee-img-newPC.avif
               "
               sizes=" (max-width: 992px) 100vw,1216px"
             />
@@ -82,10 +82,7 @@
 
           <tbody>
             <tr>
-              <td>
-                價錢(雙眼)
-                <p>即日起<br class="d-lg-none" />限時優惠</p>
-              </td>
+              <td>價錢(雙眼)</td>
               <td>$26,000^</td>
               <td>$24,000^</td>
               <td>不帶散光<br />$64,000^^<br />帶散光<br />$68,000^^</td>
@@ -179,13 +176,23 @@
               </td>
             </tr>
 
-            <tr>
+            <tr class="custom-comparison-table-tipIcon">
               <td>術後覆診</td>
-              <td>5次#</td>
-              <td>3次#</td>
-              <td>5次#</td>
-              <td>3次#</td>
-              <td>3次#</td>
+              <td>
+                <span>5次<i>#</i></span>
+              </td>
+              <td>
+                <span>3次<i>#</i></span>
+              </td>
+              <td>
+                <span>5次<i>#</i></span>
+              </td>
+              <td>
+                <span>3次<i>#</i></span>
+              </td>
+              <td>
+                <span>3次<i>#</i></span>
+              </td>
             </tr>
 
             <tr>
@@ -802,9 +809,9 @@ export default {
 </script>
 
 <style>
-  body{
-    overflow-x: hidden;
-  }
+body {
+  overflow-x: hidden;
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
@@ -1254,14 +1261,13 @@ export default {
     }
   }
   .ellipse_explain_bg {
-
-    padding-top: clamp(67px,6.98vw,134px);
+    padding-top: clamp(67px, 6.98vw, 134px);
     max-width: 100vw;
     margin-bottom: 4.947vw;
   }
   .ellipse_explain {
     position: relative;
-    max-width: 1143px;
+    max-width: 1282px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1273,7 +1279,7 @@ export default {
       background: url("https://statichk.cmermedical.com/cph-hk/newFee/ellipse_explain_bgPc.avif")
         no-repeat;
       background-size: 100% auto;
-      bottom: 0px;
+      bottom: -60px;
       right: -36px;
       z-index: -1;
     }
@@ -1307,7 +1313,7 @@ export default {
     // margin-bottom: 4.165vw;
     & > a {
       margin: 0 auto;
-      margin-top: clamp(51.5px,5.36vw,103px);
+      margin-top: clamp(51.5px, 5.36vw, 103px);
       color: #fff;
       text-align: center;
       font-family: "Noto Sans HK";
@@ -1962,7 +1968,7 @@ export default {
             font-family: "Noto Sans TC";
             font-size: 3.08vw;
             font-style: normal;
-            font-weight: 300;
+            font-weight: 500;
             line-height: 362.5%;
             letter-spacing: 0.09vw;
           }
@@ -1981,7 +1987,7 @@ export default {
     background-position: 42% 1.54vw;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 2px;
     z-index: -1;
     .fee-img-Box {
       .fee-img-Box-image {
@@ -2060,7 +2066,8 @@ export default {
     }
     .custom-comparison-table {
       // margin-top: 7.69vw;
-      width: max-content;
+     // width: max-content;
+     width: 100%;
       border-collapse: collapse;
       border-spacing: 0;
     }
@@ -2090,6 +2097,20 @@ export default {
       line-height: 123.077%;
       letter-spacing: -0.65px;
       color: white;
+    }
+    .custom-comparison-table-tipIcon {
+      td {
+        span {
+          position: relative;
+          i {
+            position: absolute;
+            font-size: 12px;
+            top: 2px;
+            font-style: normal;
+            right: -8px;
+          }
+        }
+      }
     }
 
     .custom-comparison-table thead th:nth-child(1),
@@ -2274,7 +2295,6 @@ export default {
       line-height: 107.143%;
       height: inherit;
 
-
       p {
         color: #ff7e36;
         font-family: "Noto Sans TC";
@@ -2440,7 +2460,8 @@ export default {
     background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-PCBg.webp")
       no-repeat;
     background-size: clamp(1045px, 108.85vw, 2090px) auto;
-    background-position: calc(50% + clamp(20px,2.08vw,40px)) clamp(15px,1.56vw,30px);
+    background-position: calc(50% + clamp(20px, 2.08vw, 40px))
+      clamp(15px, 1.56vw, 30px);
     width: 100%;
     position: absolute;
     top: 0;
@@ -2453,7 +2474,7 @@ export default {
         .fee-img-Box-image-name {
           position: absolute;
           right: clamp(15px, 1.56vw, 30px);
-          bottom: clamp(122px, 12.71vw, 244px);
+          bottom: clamp(108px,11.25vw,216px);
           h4,
           p {
             color: #4570b6;
@@ -2474,8 +2495,10 @@ export default {
         }
         img {
           width: clamp(301px, 31.35vw, 602px);
-          // height: 691px;
+          aspect-ratio: 602/691;
+          object-fit: cover;
           margin-left: auto;
+          margin-right: clamp(25px,2.60vw,50px);
         }
 
         .fee-img-Box-image-tip {
@@ -2593,6 +2616,21 @@ export default {
       line-height: 130%;
       span {
         font-family: "Poppins", sans-serif;
+      }
+    }
+
+    .custom-comparison-table-tipIcon {
+      td {
+        span {
+          position: relative;
+          i {
+            position: absolute;
+            font-size: 14px;
+            top: 0px;
+            font-style: normal;
+            right: -10px;
+          }
+        }
       }
     }
 
@@ -2825,9 +2863,9 @@ export default {
         }
         & > tr:nth-child(1) {
           border-bottom: none;
-       
+
           td {
-               height: 60px;
+            height: 60px;
             color: #4570b6;
             text-align: center;
             font-family: "Noto Sans HK";
