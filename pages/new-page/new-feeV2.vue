@@ -665,12 +665,12 @@
         <div class="ellipse_explain">
           <span>{{ $t("fee.textList.text1") }}</span>
           <span>
-            {{ $t("fee.textList.text2") }}<br />
+            {{ $t("fee.textList.text2") }}<br  />
             {{ $t("fee.textList.text2_1") }}
             {{ $t("fee.textList.text2_2") }}<br />
           </span>
           <span>
-            {{ $t("fee.textList.text3") }}<br /><br class="mbShow" />
+            {{ $t("fee.textList.text3") }}<br />
             {{ $t("fee.textList.text3_1") }}
             {{ $t("fee.textList.text3_2") }}<br />
             {{ $t("fee.textList.text3_3") }}
@@ -2063,7 +2063,7 @@ body {
     position: relative;
     &::-webkit-scrollbar {
       display: none;
-    }
+    } 
     .custom-comparison-table {
       // margin-top: 7.69vw;
      // width: max-content;
