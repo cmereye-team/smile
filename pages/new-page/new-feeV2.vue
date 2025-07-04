@@ -16,7 +16,9 @@
           <div class="fee-img-Box-image">
             <div class="fee-img-Box-image-name">
               <h4>希瑪微笑閃亮大使</h4>
-              <p><span> MAGGIE米姬</span></p>
+              <p>
+                <span> MAGGIE<i>米姬</i></span>
+              </p>
             </div>
 
             <img
@@ -336,302 +338,6 @@
         </table>
       </section>
 
-      <!-- <div class="table_new_fee">
-      <div class="table_new_fee_box">
-        <div class="table_left" v-if="isMobile">
-          <div>此為香港價錢</div>
-          <div>
-            <div>{{ $t("fee.table.content2.text1") }}</div>
-            <div>{{ $t("fee.table.content2.text2") }}</div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.content3.text1") }}</div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.content4.text1") }}</div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.content5.text1") }}</div>
-            <div>{{ $t("fee.table.content5.text2") }}</div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.content6.text1") }}</div>
-            <div>{{ $t("fee.table.content6.text2") }}</div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.content7.text1") }}</div>
-          </div>
-          <div>
-            <div>增進手術</div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.content9.text1") }}</div>
-          </div>
-        </div>
-        <div class="table_right">
-          <div v-if="!isMobile"></div>
-          <div>
-            <div>SMILE Pro Care</div>
-            <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
-          </div>
-          <div>
-            <div>SMILE Pro</div>
-            <div>微笑激光矯視</div>
-          </div>
-          <div>
-            <div>ICL</div>
-            <div>{{ $t("fee.table.contentRight.content3.text1") }}</div>
-          </div>
-          <div>
-            <div>SMILE</div>
-            <div>{{ $t("fee.table.contentRight.content1.text1") }}</div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.contentRight.content4.text1") }}</div>
-            <div>{{ $t("fee.table.contentRight.content4.text2") }}</div>
-            <div>{{ $t("fee.table.contentRight.content4.text3") }}</div>
-          </div>
-          <div v-if="!isMobile">
-            <div>{{ $t("fee.table.content2.text1") }}</div>
-            <div>{{ $t("fee.table.content2.text2") }}</div>
-          </div>
-          <div>
-            <div>$26,000<sup>^</sup></div>
-          </div>
-          <div>
-            <div>$24,000<sup>^</sup></div>
-          </div>
-          <div>
-            <div>{{ $t("fee.table.contentRight.content6.text1") }}</div>
-            <div>$64,000<sup>^^</sup></div>
-            <div>{{ $t("fee.table.contentRight.content6.text2") }}</div>
-            <div>$68,000<sup>^^</sup></div>
-          </div>
-          <div>
-            <div>$19,000^</div>
-          </div>
-          <div>
-            <div>$19,000<sup>^</sup></div>
-          </div>
-          <div v-if="!isMobile">
-            <div>{{ $t("fee.table.content3.text1") }}</div>
-          </div>
-          <div>
-            <div>$100</div>
-          </div>
-          <div>
-            <div>$100</div>
-          </div>
-          <div>
-            <div>$500</div>
-          </div>
-          <div>
-            <div>$100</div>
-          </div>
-          <div>
-            <div>$100</div>
-          </div>
-          <div v-if="!isMobile">
-            <div>{{ $t("fee.table.content4.text1") }}</div>
-          </div>
-          <div>
-            <div>1次</div>
-          </div>
-          <div>
-            <div>1次</div>
-          </div>
-          <div>
-            <div class="line_green"><span></span></div>
-          </div>
-          <div>
-            <div>1次</div>
-          </div>
-          <div>
-            <div>1次</div>
-          </div>
-          <div v-if="!isMobile">
-            <div>{{ $t("fee.table.content5.text1") }}</div>
-            <div>{{ $t("fee.table.content5.text2") }}</div>
-          </div>
-          <div>
-            <div>1次</div>
-          </div>
-          <div>
-            <div class="line_blue"><span></span></div>
-          </div>
-          <div>
-            <div class="line_green"><span></span></div>
-          </div>
-          <div>
-            <div class="line_blue"><span></span></div>
-          </div>
-          <div>
-            <div class="line_blue"><span></span></div>
-          </div>
-          <div v-if="!isMobile">
-            <div>{{ $t("fee.table.content6.text1") }}</div>
-            <div>{{ $t("fee.table.content6.text2") }}</div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/green.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div v-if="!isMobile">
-            <div>{{ $t("fee.table.content7.text1") }}</div>
-          </div>
-          <div>
-            <div>5次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>3次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>5次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>3次<sup>#</sup></div>
-          </div>
-          <div>
-            <div>3次<sup>#</sup></div>
-          </div>
-          <div v-if="!isMobile">
-            <div>增進手術</div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div class="line_green"><span></span></div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div v-if="!isMobile">
-            <div>{{ $t("fee.table.content9.text1") }}</div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/green.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="../../asset/image/free/blue.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="smile_xtra">
-        <div class="smile_xtra_left">
-          <div></div>
-          <div>
-            <span>額外項目</span>
-          </div>
-        </div>
-        <div class="smile_xtra_right">
-          <div>SMILE XTRA角膜膠原交聯術</div>
-          <div>
-            <span>單眼</span>
-          </div>
-          <div>
-            <span>$3,000</span>
-          </div>
-          <div>
-            <span>雙眼</span>
-          </div>
-          <div>
-            <span>$5,000</span>
-          </div>
-        </div>
-      </div>
-      <div class="clear_vision">
-        <div class="clear_vision_left">
-          <div></div>
-          <div>
-            <span>{{ $t("fee.table.contentLeft.content1.text1") }}</span>
-            <span>{{ $t("fee.table.contentLeft.content1.text2") }}</span>
-            <span>{{ $t("fee.table.contentLeft.content1.text3") }}</span>
-          </div>
-          <div>
-            <span>{{ $t("fee.table.contentLeft.content2.text1") }}</span>
-            <span>{{ $t("fee.table.contentLeft.content2.text2") }}</span>
-            <span>{{ $t("fee.table.contentLeft.content2.text3") }}</span>
-          </div>
-          <div>{{ $t("fee.table.contentLeft.content2.text4") }}</div>
-        </div>
-        <div class="clear_vision_right">
-          <div>{{ $t("fee.table.vision_right.title") }}</div>
-          <div>
-            <span>$20,000 - $35,000</span>
-            <span>{{ $t("fee.table.vision_right.textNoS") }}</span>
-          </div>
-          <div>
-            <span>$23,000 - $41,000</span>
-            <span>{{ $t("fee.table.vision_right.textS") }}</span>
-          </div>
-          <div>
-            <span>$26,000 - $51,000</span>
-            <span>{{ $t("fee.table.vision_right.textNoS") }}</span>
-          </div>
-          <div>
-            <span>$31,000 - $51,000</span>
-            <span>{{ $t("fee.table.vision_right.textS") }}</span>
-          </div>
-          <div>$680</div>
-        </div>
-      </div>
-    </div> -->
-
       <div class="fee-table-container">
         <a
           class="meal-btn"
@@ -665,7 +371,7 @@
         <div class="ellipse_explain">
           <span>{{ $t("fee.textList.text1") }}</span>
           <span>
-            {{ $t("fee.textList.text2") }}<br  />
+            {{ $t("fee.textList.text2") }}<br />
             {{ $t("fee.textList.text2_1") }}
             {{ $t("fee.textList.text2_2") }}<br />
           </span>
@@ -1899,7 +1605,7 @@ body {
       font-family: "Noto Sans HK";
       font-size: 20px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 150%;
       letter-spacing: 1px;
       background: #4570b6;
@@ -1998,6 +1704,7 @@ body {
           position: absolute;
           bottom: 41.79vw;
           left: 34.36vw;
+
           h4,
           p {
             color: #4570b6;
@@ -2011,6 +1718,12 @@ body {
             span {
               font-family: "Poppins", sans-serif;
               font-weight: 700;
+              i {
+                font-style: normal;
+                font-family: "Noto Sans TC";
+
+                font-weight: 900;
+              }
             }
           }
         }
@@ -2025,6 +1738,7 @@ body {
           bottom: 7.69vw;
           left: 8.72vw;
           width: 35.9vw;
+
           height: 15.38vw;
           border-radius: 5px;
           display: flex;
@@ -2063,11 +1777,11 @@ body {
     position: relative;
     &::-webkit-scrollbar {
       display: none;
-    } 
+    }
     .custom-comparison-table {
       // margin-top: 7.69vw;
-     // width: max-content;
-     width: 100%;
+      // width: max-content;
+      width: 100%;
       border-collapse: collapse;
       border-spacing: 0;
     }
@@ -2473,8 +2187,11 @@ body {
         position: relative;
         .fee-img-Box-image-name {
           position: absolute;
-          right: clamp(15px, 1.56vw, 30px);
-          bottom: clamp(108px,11.25vw,216px);
+          // right: clamp(15px, 1.56vw, 30px);
+          // bottom: clamp(108px,11.25vw,216px);
+
+          bottom: clamp(11.5px, 1.2vw, 23px);
+          left: clamp(54px, 5.63vw, 108px);
           h4,
           p {
             color: #4570b6;
@@ -2490,6 +2207,12 @@ body {
             span {
               font-family: "Poppins", sans-serif;
               font-weight: 700;
+              i {
+                font-style: normal;
+                font-family: "Noto Sans TC";
+
+                font-weight: 900;
+              }
             }
           }
         }
@@ -2498,15 +2221,15 @@ body {
           aspect-ratio: 602/691;
           object-fit: cover;
           margin-left: auto;
-          margin-right: clamp(25px,2.60vw,50px);
+          margin-right: clamp(25px, 2.6vw, 50px);
         }
 
         .fee-img-Box-image-tip {
           position: absolute;
           display: inline-block;
           padding: clamp(3px, 0.31vw, 6px) clamp(9px, 0.94vw, 18px);
-          bottom: clamp(75px, 7.81vw, 150px);
-          left: clamp(17px, 1.77vw, 34px);
+          bottom: clamp(65px, 6.77vw, 130px);
+          left: clamp(67.5px, 7.03vw, 135px);
           border-radius: 5px;
           display: flex;
           justify-content: center;
