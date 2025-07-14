@@ -738,10 +738,12 @@ module.exports = {
         text3_con2:"或隱形眼鏡的依賴",
 
         text4_title1:"物料安全",
+          text4_title1_clear:"物料具生物兼容性",
         text4_con1:"2005年已通過",
         text4_con2:"美國FDA認證",
 
         text5_title1:"不會導致乾眼症",
+           text5_title1_clear:"預防白內障",
         text5_con1:"過程無須切削角膜",
         text5_con2:"因此不會導致乾眼症",
 

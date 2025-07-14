@@ -25,11 +25,11 @@ i {
 
 // 常见问题
 .question-mencare {
-  margin-top: 9.49vw;
   padding: 0 2.56vw;
-  padding-bottom: 6.67vw;
   max-width: 85.13vw;
   margin: 0 auto;
+  margin-top: 11.28vw;
+
   .publicTitle-mencare {
     text-align: center;
     color: #4570b6;
@@ -338,6 +338,7 @@ i {
           letter-spacing: 1.08vw;
           span {
             color: #4570b6;
+            font-weight: 700;
           }
         }
       }
@@ -471,6 +472,7 @@ i {
               letter-spacing: 0.72vw;
               span {
                 color: #4570b6;
+                font-weight: 700;
               }
             }
           }
@@ -691,7 +693,7 @@ i {
         & > .visionBattle-Box-list-item:nth-child(2) {
           position: relative;
           border-top: 0.26vw solid #809dcd;
-          padding-bottom: 46.15vw;
+          padding-bottom: 23.08vw;
           p {
             span {
               letter-spacing: 0.72vw;
@@ -751,11 +753,11 @@ i {
   // 合適對象
   .SuitableObject {
     position: relative;
-    padding-top: 2.56vw;
+    padding-top: 8.46vw;
     .SuitableObject-bg-right {
       position: absolute;
       right: -12.82vw;
-      top: -14.1vw;
+      top: -5.64vw;
       width: 31.28vw;
       height: auto;
     }
@@ -766,7 +768,7 @@ i {
 
     .SuitableObject-Box {
       position: relative;
-      padding-bottom: 55.38vw;
+      padding-bottom: 58.38vw;
       margin: 0 auto;
 
       &::after {
@@ -934,8 +936,8 @@ i {
   // 预约
   .clearAppointment {
     width: 100vw;
-    margin-top: 13.59vw;
-    height: 153.08vw;
+    // margin-top: 13.59vw;
+    height: 85.64vw;
     background: url("https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/clearAppointment-mbBg.avif")
       no-repeat;
     background-size: 100% auto;
@@ -952,16 +954,16 @@ i {
       gap: 8.97vw;
       & > .clearAppointment-Box-item:nth-child(1) {
         img {
-          width: 21.28vw;
-          height: 15.64vw;
-          margin-bottom: 7.18vw;
+          width: 12.56vw;
+          height: 9.23vw;
+          margin-bottom: 4.1vw;
         }
       }
       & > .clearAppointment-Box-item:nth-child(2) {
         img {
-          width: 21.79vw;
-          height: 21.79vw;
-          margin-bottom: 4.62vw;
+          width: 12.82vw;
+          height: 12.82vw;
+          margin-bottom: 2.82vw;
         }
       }
       .clearAppointment-Box-item {
@@ -970,8 +972,10 @@ i {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 87.18vw;
-        height: 53.85vw;
+
+        width: 81.03vw;
+        height: 32.05vw;
+
         border-radius: 4.36vw;
         border: 0.13vw solid #4570b6;
         background: #fff;
@@ -988,7 +992,7 @@ i {
 
         .clearAppointment-Box-item-icon {
           position: absolute;
-          bottom: 5.13vw;
+
           right: 5.13vw;
           width: 13.85vw;
           height: 13.85vw;
@@ -1286,6 +1290,7 @@ i {
           letter-spacing: clamp(3px, 0.31vw, 6px);
           span {
             color: #4570b6;
+            font-weight: 700;
           }
         }
       }
@@ -1419,6 +1424,7 @@ i {
               letter-spacing: clamp(2px, 0.21vw, 4px);
               span {
                 color: #4570b6;
+                font-weight: 700;
               }
             }
           }
@@ -1566,7 +1572,8 @@ i {
   .visionBattle {
     position: relative;
     padding-top: clamp(109px, 11.35vw, 218px);
-    margin-bottom: clamp(145px, 15.1vw, 290px);
+    margin-bottom: clamp(40px, 4.17vw, 80px);
+
     .visionBattle-Bg {
       position: absolute;
       width: clamp(953.5px, 99.32vw, 1907px);
@@ -1733,11 +1740,12 @@ i {
   .SuitableObject {
     position: relative;
     width: 100vw;
+    margin-top: clamp(69px, 7.19vw, 138px);
 
     .SuitableObject-bg-right {
       position: absolute;
-      right: clamp(-110px, -5.73vw, -55px);
-      top: clamp(-275px, -14.32vw, -137.5px);
+      right: clamp(11.5px, 1.2vw, 23px);
+      top: clamp(-223px, -11.61vw, -111.5px);
       width: clamp(214px, 22.29vw, 428px);
       height: auto;
     }
@@ -1758,7 +1766,7 @@ i {
     }
     .SuitableObject-Box {
       position: relative;
-      padding-bottom: clamp(56px, 5.83vw, 112px);
+      padding-bottom: clamp(83px, 8.65vw, 166px);
       margin: 0 auto;
 
       &::after {
@@ -1941,9 +1949,9 @@ i {
   // 常见问题
   .question-mencare {
     margin: initial;
-    margin-top: clamp(66.5px, 6.93vw, 133px);
+    margin-top: clamp(30px, 3.13vw, 60px);
     padding: 0;
-    padding-bottom: clamp(28px, 2.92vw, 56px);
+    padding-bottom: 0;
     max-width: none;
 
     .publicTitle-mencare {
@@ -2019,7 +2027,6 @@ i {
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             span {
-              color: #4d4d4d;
               box-sizing: content-box;
 
               border-bottom-left-radius: 10px;
@@ -2027,11 +2034,13 @@ i {
               padding: clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px)
                 clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px);
 
-              font-size: clamp(12px, 1.25vw, 24px);
+              color: #6d6e71;
+              font-family: "Noto Sans TC";
+              font-size: clamp(11.5px, 1.2vw, 23px);
               font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-              letter-spacing: clamp(1.2px, 0.13vw, 2.4px);
+              font-weight: 300;
+              line-height: 152.174%;
+              letter-spacing: clamp(2.3px, 0.24vw, 4.6px);
             }
           }
         }
@@ -2062,10 +2071,10 @@ i {
 
   // 预约
   .clearAppointment {
-    margin-top: clamp(40px, 4.17vw, 80px);
-    margin-bottom: -175px;
+    // margin-top: clamp(40px, 4.17vw, 80px);
+    // margin-bottom: -175px;
     width: 100vw;
-    height: clamp(309px, 32.19vw, 618px);
+    height: clamp(213px, 22.19vw, 426px);
     background: url("https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/clearAppointment-mbPc.avif")
       no-repeat;
     background-size: 100% auto;
@@ -2082,15 +2091,21 @@ i {
         img {
           width: clamp(70.5px, 7.34vw, 141px);
           height: clamp(52px, 5.42vw, 104px);
-          margin-bottom: clamp(23px, 2.4vw, 46px);
+          margin-bottom: clamp(18px, 1.88vw, 36px);
         }
       }
       & > .clearAppointment-Box-item:nth-child(2) {
         img {
           width: clamp(72.5px, 7.55vw, 145px);
-          height: clamp(72.5px, 7.55vw, 145px);
+          height: clamp(55px, 5.73vw, 110px);
 
           margin-bottom: clamp(15.5px, 1.61vw, 31px);
+        }
+      }
+      .clearAppointment-Box-item:nth-child(1) {
+        p {
+          padding-right: clamp(10px, 1.04vw, 20px);
+          padding-bottom: clamp(7.5px, 0.78vw, 15px);
         }
       }
       .clearAppointment-Box-item {
@@ -2100,8 +2115,9 @@ i {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: clamp(289.5px, 30.16vw, 579px);
-        height: clamp(179px, 18.65vw, 358px);
+        width: clamp(221px, 23.02vw, 442px);
+        height: clamp(137px, 14.27vw, 274px);
+
         border-radius: clamp(15px, 1.56vw, 30px);
         border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
         background: #fff;
@@ -2111,10 +2127,10 @@ i {
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans TC";
-          font-size: clamp(17.5px, 1.82vw, 35px);
+          font-size: clamp(18px, 1.88vw, 36px);
           font-style: normal;
           font-weight: 900;
-          line-height: 0.71;
+          line-height: 69.444%;
         }
 
         &:hover {
@@ -2132,10 +2148,11 @@ i {
 
         .clearAppointment-Box-item-icon {
           position: absolute;
-          bottom: clamp(17.5px, 1.82vw, 35px);
-          right: clamp(17.5px, 1.82vw, 35px);
-          width: clamp(46.5px, 4.84vw, 93px);
-          height: clamp(46.5px, 4.84vw, 93px);
+          bottom: clamp(12.5px, 1.3vw, 25px);
+          right: clamp(12.5px, 1.3vw, 25px);
+
+          width: clamp(35.5px, 3.7vw, 71px);
+          height: clamp(35.5px, 3.7vw, 71px);
           border-radius: 50%;
           background: #4570b6;
           display: flex;
@@ -2143,7 +2160,7 @@ i {
           justify-content: center;
           transition: all 0.3s ease-in-out;
           svg {
-            width: clamp(24.5px, 2.55vw, 49px);
+            width: clamp(38.5px, 4.01vw, 77px);
           }
         }
       }
@@ -2290,7 +2307,7 @@ i {
             </div>
           </div>
           <div class="ClearVisionBanner-Box-text">
-            <span>頻繁眨眼睛或搓眼睛以嘗試改善焦點</span>
+            <span>頻繁眨眼/搓眼睛以嘗試改善焦點</span>
             <span>難以看清電子屏幕細小文字</span>
             <span>需將物件拉遠才能看清</span>
             <span>老花眼鏡難以配合穿搭</span>
@@ -2372,7 +2389,7 @@ i {
               <p class="CorrectionProgram-Box-hide-item-bottom-text">
                 是有晶體眼後房型植入式隱形眼鏡植入手術的一種，而ICL Viva (ICL
                 V6)
-                則是一種擴展景深，專為矯正老花而設的植入式隱形眼鏡，適合未有白內障，而正受近視及老花困擾的人士。
+                則是一種<span>擴展景深</span>，專為矯正老花而設的<span>植入式隱形眼鏡，適合未有白內障</span>，而正受近視及老花困擾的人士。
               </p>
             </div>
           </div>
@@ -2618,6 +2635,75 @@ i {
       </div>
     </section>
 
+    <section class="clearAppointment">
+      <div class="clearAppointment-Box">
+        <a href="/ophthalmicInfo/AppointForm" class="clearAppointment-Box-item">
+          <img
+            src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/laohua.svg"
+            alt=""
+          />
+          <p>預約老花講座</p>
+
+          <div class="clearAppointment-Box-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="49"
+              height="42"
+              viewBox="0 0 49 42"
+              fill="none"
+            >
+              <path
+                d="M3.57595 20.4719L40.719 20.472"
+                stroke="white"
+                stroke-width="6.26756"
+                stroke-linecap="round"
+              />
+              <path
+                d="M27.7695 37.561L44.268 21.0626L28.3134 5.10799"
+                stroke="white"
+                stroke-width="5.64081"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+          class="clearAppointment-Box-item"
+        >
+          <img
+            src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/zixun.svg"
+            alt=""
+          />
+          <p>預約諮詢</p>
+          <div class="clearAppointment-Box-item-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="49"
+              height="42"
+              viewBox="0 0 49 42"
+              fill="none"
+            >
+              <path
+                d="M3.57595 20.4719L40.719 20.472"
+                stroke="white"
+                stroke-width="6.26756"
+                stroke-linecap="round"
+              />
+              <path
+                d="M27.7695 37.561L44.268 21.0626L28.3134 5.10799"
+                stroke="white"
+                stroke-width="5.64081"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <!-- 合適對象-->
     <section class="SuitableObject">
       <img
@@ -2650,13 +2736,17 @@ i {
       <div class="SuitableObject-Box container">
         <div class="SuitableObject-Box-title">
           <h3>合適對象</h3>
-          <p>無論你追求效率還是悠閒自在，矯視都讓你的生活更清晰。</p>
+          <p>
+            無論追求效率還是悠閒自在，老花矯視都讓你清楚見證<br
+              class="d-none d-lg-block"
+            />往後每一刻。
+          </p>
         </div>
 
         <div class="SuitableObject-Box-List">
           <div class="SuitableObject-Box-List-item">
             <img
-              src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-1.svg"
+              src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-10.svg"
               alt=""
             />
             <p>39歲以上</p>
@@ -2692,6 +2782,32 @@ i {
         </div>
       </div>
     </section>
+
+    <!-- 按钮 -->
+
+    <a href="/fee" class="publicBtn-booking">
+      <span> 了解老花矯視價格 </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="29"
+        viewBox="0 0 30 29"
+        fill="none"
+      >
+        <path
+          d="M3.19922 26.0597L25.8278 3.43115"
+          stroke="white"
+          stroke-width="5.4"
+          stroke-linecap="round"
+        />
+        <path
+          d="M6.49707 2.71118H26.5997V22.1512"
+          stroke="white"
+          stroke-width="4.86"
+          stroke-linecap="round"
+        />
+      </svg>
+    </a>
 
     <!-- 常见问题 -->
 
@@ -2845,7 +2961,8 @@ i {
                 >
                   <div class="card-body">
                     <span class="text-justify">
-                      在光學上，老花是遠視的一種，但它們的成因不同。遠視主要成因是眼球過短，令景物聚焦了在視網膜後面。至於老花，則是由於晶體退化變硬，失去彈性及連繫著晶狀體的韌帶老化，令晶體的偏置功能下降，使近物時難以聚焦，出現模糊感。
+                      在光學上，老花是遠視的一種，但它們的成因不同。遠視主要成因是眼球過短，令景物聚焦了在視網膜後面。至於老花，則是由於晶體退化變硬，失去彈性及連繫著晶狀體的韌帶老化，令晶體的偏置功能下降，使看近物時
+                      難以聚焦，出現模糊感。
                     </span>
                   </div>
                 </div>
@@ -2933,7 +3050,7 @@ i {
                 >
                   <div class="card-body">
                     <span class="text-justify">
-                      治療完成後第二天你就可以獲得良好的近距離視力，不戴老花鏡也可以輕鬆閱讀。中、遠距離的視力恢復通常在術後一週達到。之後經過數周，你的視野將會更清晰，並逐步適應多焦視覺狀態。
+                      治療完成後第二天你就可以獲得良好的近距離視力，不戴老花鏡也可以輕鬆閱讀。中、遠距離的視力恢復通常在術後一週達到。之後經過數周，你的視力將會進一步改善，並逐步適應多焦視覺狀態。
                     </span>
                   </div>
                 </div>
@@ -2970,101 +3087,6 @@ i {
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- 按钮 -->
-
-    <a href="/fee" class="publicBtn-booking">
-      <span> 了解老花矯視價格 </span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="29"
-        viewBox="0 0 30 29"
-        fill="none"
-      >
-        <path
-          d="M3.19922 26.0597L25.8278 3.43115"
-          stroke="white"
-          stroke-width="5.4"
-          stroke-linecap="round"
-        />
-        <path
-          d="M6.49707 2.71118H26.5997V22.1512"
-          stroke="white"
-          stroke-width="4.86"
-          stroke-linecap="round"
-        />
-      </svg>
-    </a>
-
-    <section class="clearAppointment">
-      <div class="clearAppointment-Box">
-        <a href="/ophthalmicInfo/AppointForm" class="clearAppointment-Box-item">
-          <img
-            src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/laohua.svg"
-            alt=""
-          />
-          <p>預約老花講座</p>
-
-          <div class="clearAppointment-Box-item-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="49"
-              height="42"
-              viewBox="0 0 49 42"
-              fill="none"
-            >
-              <path
-                d="M3.57595 20.4719L40.719 20.472"
-                stroke="white"
-                stroke-width="6.26756"
-                stroke-linecap="round"
-              />
-              <path
-                d="M27.7695 37.561L44.268 21.0626L28.3134 5.10799"
-                stroke="white"
-                stroke-width="5.64081"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-        </a>
-
-        <a
-          target="_blank"
-          href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-          class="clearAppointment-Box-item"
-        >
-          <img
-            src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/zixun.svg"
-            alt=""
-          />
-          <p>預約諮詢</p>
-          <div class="clearAppointment-Box-item-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="49"
-              height="42"
-              viewBox="0 0 49 42"
-              fill="none"
-            >
-              <path
-                d="M3.57595 20.4719L40.719 20.472"
-                stroke="white"
-                stroke-width="6.26756"
-                stroke-linecap="round"
-              />
-              <path
-                d="M27.7695 37.561L44.268 21.0626L28.3134 5.10799"
-                stroke="white"
-                stroke-width="5.64081"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-        </a>
       </div>
     </section>
 
@@ -3131,7 +3153,7 @@ i {
             />
           </svg>
         </a>
-        <a >
+        <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -3307,13 +3329,13 @@ export default {
         },
         {
           img: "https://statichk.cmermedical.com/smile/vision-correction-iclV2/good/icl-good-4.svg",
-          title: "Correct.newIcl.section3.text4_title1",
+          title: "Correct.newIcl.section3.text4_title1_clear",
           text: ["人工晶體物料與", "眼球兼容"],
           mbText: ["人工晶體物料與", "眼球兼容"],
         },
         {
           img: "https://statichk.cmermedical.com/smile/vision-correction-iclV2/good/icl-good-5.svg",
-          title: "Correct.newIcl.section3.text5_title1",
+          title: "Correct.newIcl.section3.text5_title1_clear",
           text: ["同時處理近視、遠視、", "散光、老花等問題"],
           mbText: ["同時處理近視、遠視、", "散光、老花等問題"],
         },
@@ -3343,7 +3365,7 @@ export default {
         behavior: "smooth",
       });
     },
-   initPcScrollHandler() {
+    initPcScrollHandler() {
       const section = this.$refs.correctionProgram;
       if (!section) return;
 
@@ -3351,14 +3373,17 @@ export default {
       this.targetTop = section.offsetTop;
 
       // 计算触发点（比如模块顶部还剩 200px 时开始拦截）
-      const triggerPoint = this.targetTop - window.innerHeight + 839;
-      console.log("triggerPoint"+triggerPoint);
-      
+      const triggerPoint = this.targetTop - window.innerHeight + 600;
+      console.log("triggerPoint" + triggerPoint);
 
       const throttledScroll = throttle(() => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-        if (!this.isAnimating && scrollTop >= triggerPoint && scrollTop < this.targetTop) {
+        if (
+          !this.isAnimating &&
+          scrollTop >= triggerPoint &&
+          scrollTop < this.targetTop
+        ) {
           this.lockScroll = true;
           this.isAnimating = true;
           this.animateBoxShow();
@@ -3374,18 +3399,26 @@ export default {
       window.addEventListener("scroll", throttledScroll);
 
       // 阻止原生滚动（关键）
-      window.addEventListener("wheel", (e) => {
-        if (this.lockScroll) {
-          e.preventDefault();
-        }
-      }, { passive: false });
+      window.addEventListener(
+        "wheel",
+        (e) => {
+          if (this.lockScroll) {
+            e.preventDefault();
+          }
+        },
+        { passive: false }
+      );
 
       // 同样阻止触摸板滚动
-      window.addEventListener("touchmove", (e) => {
-        if (this.lockScroll) {
-          e.preventDefault();
-        }
-      }, { passive: false });
+      window.addEventListener(
+        "touchmove",
+        (e) => {
+          if (this.lockScroll) {
+            e.preventDefault();
+          }
+        },
+        { passive: false }
+      );
     },
 
     animateBoxShow() {
@@ -3419,7 +3452,6 @@ export default {
       });
       this.ticking = true;
     },
-  
 
     initMobileScrollHandler() {
       const section = this.$refs.correctionProgram;
