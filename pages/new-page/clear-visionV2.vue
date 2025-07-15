@@ -2961,8 +2961,7 @@ i {
                 >
                   <div class="card-body">
                     <span class="text-justify">
-                      在光學上，老花是遠視的一種，但它們的成因不同。遠視主要成因是眼球過短，令景物聚焦了在視網膜後面。至於老花，則是由於晶體退化變硬，失去彈性及連繫著晶狀體的韌帶老化，令晶體的偏置功能下降，使看近物時
-                      難以聚焦，出現模糊感。
+                      在光學上，老花是遠視的一種，但它們的成因不同。遠視主要成因是眼球過短，令景物聚焦了在視網膜後面。至於老花，則是由於晶體退化變硬，失去彈性及連繫著晶狀體的韌帶老化，令晶體的偏置功能下降，使看近物時難以聚焦，出現模糊感。
                     </span>
                   </div>
                 </div>
@@ -3323,7 +3322,7 @@ export default {
         },
         {
           img: "https://statichk.cmermedical.com/smile/vision-correction-iclV2/good/icl-good-3.svg",
-          title: "Correct.newIcl.section3.text3_title1",
+          title: "Correct.newIcl.section3.text3_newtitle1",
           text: ["不需依賴眼鏡/", "隱形眼鏡"],
           mbText: ["不需依賴眼鏡/", "隱形眼鏡"],
         },

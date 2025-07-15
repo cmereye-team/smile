@@ -731,6 +731,9 @@ module.exports = {
         text2_con2:"内完成矫视",
 
         text3_title1:"为生活带来便利",
+        text3_newtitle1:"为生活带来方便",
+
+
         text3_con1:"矫视后可减低对眼镜",
         text3_con2:"或隐形眼镜的依赖",
 
