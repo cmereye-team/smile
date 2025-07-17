@@ -25,6 +25,11 @@
     }
   }
 }
+@media screen and (max-width: 762px) {
+  .new-Footer-v2 {
+    padding-bottom: 102px;
+  }
+}
 
 @media screen and (max-width: 991px) {
   // 新的底部
@@ -829,7 +834,7 @@ export default {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
             link: "/patient-info",
           },
-                 {
+          {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
             link: "/post-corrective-care",
           },
@@ -837,7 +842,6 @@ export default {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
             link: "/flow-of-vision-correction",
           },
-   
         ],
       },
       faq: {

@@ -380,7 +380,7 @@ i {
   // 矫视方案
   .CorrectionProgram {
     margin-top: 15.38vw;
-    margin-bottom: 19.74vw;
+    margin-bottom: 40px;
     position: relative;
     overflow: hidden;
     height: 222.05vw;
@@ -515,7 +515,7 @@ i {
 
   // icl好处
   .icl-Good {
-    margin-top: 115px;
+    margin-top: 40px;
     .icl-Good-title {
       text-align: center;
       color: #4570b6;
@@ -1218,7 +1218,7 @@ i {
             font-size:clamp(59px,6.15vw,118px);
             font-style: normal;
             font-weight: 700;
-            line-height: 109.4%;
+            line-height: 109.4%; 
                     text-decoration: none;
           }
           h3 {
@@ -1256,7 +1256,7 @@ i {
         }
       }
       .ClearVisionBanner-Box-content-img {
-        margin-top: clamp(31.5px, 3.28vw, 63px);
+        margin-top: clamp(50px,5.21vw,100px);
         max-width: 100vw;
         overflow: hidden;
         position: relative;
@@ -1314,11 +1314,11 @@ i {
 
         & > span:nth-child(3) {
           left: clamp(131px, 13.65vw, 262px);
-          bottom: clamp(321px, 33.44vw, 642px);
+          bottom: clamp(300px,31.25vw,600px);
         }
         & > span:nth-child(4) {
           right: clamp(186px, 19.38vw, 372px);
-          bottom: clamp(350px, 36.46vw, 700px);
+          bottom:clamp(340px,35.42vw,680px);
         }
 
         & > span:nth-child(5) {
@@ -2590,7 +2590,7 @@ i {
         sizes=" (max-width: 992px) 100vw,1216px"
       />
       <div class="visionBattle-Box">
-        <h3>不同老花矯視技術好處對比</h3>
+        <h3>老花矯視技術好處對比</h3>
         <div class="visionBattle-Box-list">
           <div class="visionBattle-Box-list-item">
             <h4>CMER CLEAR-Vision</h4>
@@ -2823,7 +2823,7 @@ i {
         <div class="SuitableObject-Box-title">
           <h3>合適對象</h3>
           <p>
-            無論追求效率還是悠閒自在，老花矯視都讓你清楚見證<br
+            無論追求效率還是悠閒自在，<br class="d-none d-lg-block" />老花矯視都讓你清楚見證<br
               class="d-none d-lg-block"
             />往後每一刻。
           </p>
