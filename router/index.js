@@ -48,6 +48,13 @@ export const $router = [
     title: "診症須知",
     component: resolve("pages/patient-info/index.vue"),
   },
+
+    {
+    path: "/patient-infoV2", 
+    name: "patient-infoV2",
+    title: "診症須知",
+    component: resolve("pages/new-page/patient-info.vue"),
+  },
   {
     path: "/flow-of-vision-correction",
     name: "flow-of-vision-correction",
@@ -60,17 +67,17 @@ export const $router = [
     title: "矯視後覆診",
     component: resolve("pages/post-corrective-care/index.vue"),
   },
+  // {
+  //   path: "/fee",
+  //   name: "fee",
+  //   title: "收費詳情",
+  //   // component: resolve('pages/fee/index.vue'),
+  //   component: resolve("pages/new-page/new-fee.vue"),
+  // },
+
   {
     path: "/fee",
     name: "fee",
-    title: "收費詳情",
-    // component: resolve('pages/fee/index.vue'),
-    component: resolve("pages/new-page/new-fee.vue"),
-  },
-
-  {
-    path: "/feeV2",
-    name: "feeV2",
     title: "收費詳情",
     // component: resolve('pages/fee/index.vue'),
     component: resolve("pages/new-page/new-feeV2.vue"),

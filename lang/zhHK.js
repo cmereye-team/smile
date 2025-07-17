@@ -2,17 +2,17 @@ module.exports = {
   home: {
     navbar: "立即預約",
     divit: `了解 <br /> Divit 贏里數`,
-    race:"用户評分",
+    race: "用户評分",
     konwALL: "了 解 更 多 ・ 預 約",
-    Fullhouse:"講座",
-    CheckBefore:"術前檢查",
-    seeALL:"觀看更多",
+    Fullhouse: "講座",
+    CheckBefore: "術前檢查",
+    seeALL: "觀看更多",
 
     headers: {
       aboutSmile: "關於希瑪",
       orthopedicServices: "矯視服務",
       diagnosisInstructions: "診症須知",
-      AppointmentConsultation:"預約術前諮詢",
+      AppointmentConsultation: "預約術前諮詢",
       commonProblem: "常見問題",
       ophthalmicConsultation: "眼科資訊",
       feeConsultation: "收費詳情",
@@ -24,7 +24,7 @@ module.exports = {
 
       videos: "矯視資訊影片",
       casesSharing: "個案分享",
-      medicalTeam:"醫生介紹",
+      medicalTeam: "醫生介紹",
       feign: "矯視資訊",
 
       aboutSmileChild_1: "集團及中心簡介",
@@ -64,22 +64,26 @@ module.exports = {
     },
     home_referral: {
       title: "希瑪微笑矯視中心",
-      p1_text1:"希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的屈光矯視醫療中心。",
-      p1_text2:"中心團隊由林順潮教授帶領，加上13名眼科專科醫生、多名註冊視光師及護士組成。",
-      p1_text3:"於香港擁有2間微笑矯視中心，均",
-      p1_text4:"符合FDA激光矯視標準",
-      p1_text5:"，交通便利，環境舒適。",
-      p1_text6:"提供一站式眼科專科醫療及矯視服務，包括：SMILE Pro微笑激光矯視、",
-      p1_text7:"SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。",
+      p1_text1:
+        "希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的屈光矯視醫療中心。",
+      p1_text2:
+        "中心團隊由林順潮教授帶領，加上13名眼科專科醫生、多名註冊視光師及護士組成。",
+      p1_text3: "於香港擁有2間微笑矯視中心，均",
+      p1_text4: "符合FDA激光矯視標準",
+      p1_text5: "，交通便利，環境舒適。",
+      p1_text6:
+        "提供一站式眼科專科醫療及矯視服務，包括：SMILE Pro微笑激光矯視、",
+      p1_text7:
+        "SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視、LASIK激光矯視等。",
 
-      p2_text1:"希瑪一直與STAAR Surgical及Zeiss蔡司保持良好的合作關係。於2023年，",
-      p2_text2:"公司宣佈將希瑪微笑矯視中心設立為",
-      p2_text3:"首間官方認證EVO ICL國際培訓中心",
-      p2_text4:"同年，本中心亦獲得",
-      p2_text5:"Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》",
-      p2_text6:"，而且更是首個",
-      p2_text7:"香港矯視中心被評為卓越手術中心。",
-
+      p2_text1:
+        "希瑪一直與STAAR Surgical及Zeiss蔡司保持良好的合作關係。於2023年，",
+      p2_text2: "公司宣佈將希瑪微笑矯視中心設立為",
+      p2_text3: "首間官方認證EVO ICL國際培訓中心",
+      p2_text4: "同年，本中心亦獲得",
+      p2_text5: "Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》",
+      p2_text6: "，而且更是首個",
+      p2_text7: "香港矯視中心被評為卓越手術中心。",
 
       content_text_1:
         "希瑪微笑矯視中心為上市公司「希瑪醫療控股有限公司」旗下的<br />屈光矯視醫療中心。",
@@ -118,10 +122,10 @@ module.exports = {
 
     home_share: {
       title: "用戶分享",
-      name1:"姜咏鑫 Ada",
-      name2:"胡鴻鈞 Hubert",
-      name3:"細貓",
-      name4:"陳欣妍 Shirley",
+      name1: "姜咏鑫 Ada",
+      name2: "胡鴻鈞 Hubert",
+      name3: "細貓",
+      name4: "陳欣妍 Shirley",
       content_text_1: "每一次擘大眼都",
       content_text_1_1: "懷疑自己係咪唔記得",
       content_text_1_2: "除Con既感覺",
@@ -205,16 +209,13 @@ module.exports = {
         center: "中環",
         mongKok: "旺角",
         tsimShaTsui: "尖沙咀",
-        centerAddress1:"畢打街1-3號中建大廈1512室",
-        centerAddress2:"(港鐵站G出口，置地廣場樓上)",
-        mongKokAddress1:"彌敦道625及639號雅蘭中心",
-        mongKokAddress2:"一期",
-        mongKokAddress3:"1725B室 (港鐵站E1出口)",
-  
-
+        centerAddress1: "畢打街1-3號中建大廈1512室",
+        centerAddress2: "(港鐵站G出口，置地廣場樓上)",
+        mongKokAddress1: "彌敦道625及639號雅蘭中心",
+        mongKokAddress2: "一期",
+        mongKokAddress3: "1725B室 (港鐵站E1出口)",
       },
     },
-
 
     evaluateList: [
       {
@@ -619,155 +620,160 @@ module.exports = {
     },
   },
 
+  smile_proV2: {
+    Bannertitle: "微笑激光矯視",
+    Bannertilte2: "Small Incision Lenticule Extraction",
 
-  smile_proV2:{
-     Bannertitle:"微笑激光矯視",
-     Bannertilte2:"Small Incision Lenticule Extraction",
+    Bannertext1: "1,000度以下的近視",
+    Bannertext2: "500度以下的散光",
 
-     Bannertext1:"1,000度以下的近視",
-     Bannertext2:"500度以下的散光", 
-      
-     CenterTile:"微笑激光矯視",
+    CenterTile: "微笑激光矯視",
 
-      p_text1:"SMILE Pro微笑矯視是現時最新的",
-      p_text2:"微創",
-      p_text3:"激光矯正技術。本中心的SMILE Pro微笑矯視使用",
-      p_text4:"，原理是在",
-      p_text5:"不用打開角膜瓣",
-      p_text6:"的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過",
-      p_text6_1:"2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人",
-      p_text7:"矯正近視、散光及老花",
-      p_text8:"問題，減低對眼鏡的依賴。",
+    p_text1: "SMILE Pro微笑矯視是現時最新的",
+    p_text2: "微創",
+    p_text3: "激光矯正技術。本中心的SMILE Pro微笑矯視使用",
+    p_text4: "，原理是在",
+    p_text5: "不用打開角膜瓣",
+    p_text6: "的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過",
+    p_text6_1:
+      "2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人",
+    p_text7: "矯正近視、散光及老花",
+    p_text8: "問題，減低對眼鏡的依賴。",
 
-      WhyChoose_p_text1:"希瑪微笑矯視中心以尖端科技和卓越的客戶體驗；同時作為",
-      WhyChoose_p_text1_1:"首間獲Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》",
-      WhyChoose_p_text1_2:"認證的香港矯視中心，成為了大眾的SMILE Pro矯視首選。",
-      WhyChoose_p_text2:"中心採用",
-      WhyChoose_p_text3:"已獲美國FDA認證",
-      WhyChoose_p_text4:"的ZEISS VISUMAX 800 SMILE®pro設備，結合德國蔡司光學與諾貝爾獎激光技術，為SMILE Pro矯視服務帶來更高的",
-      WhyChoose_p_text5:"精確度",
-      WhyChoose_p_text6:"與",
-      WhyChoose_p_text7:"安全保障",
-      WhyChoose_p_text8:"。此外，眾多客戶對術後效果表示滿意，視力穩定，讓日常生活更輕鬆便利。",
+    WhyChoose_p_text1: "希瑪微笑矯視中心以尖端科技和卓越的客戶體驗；同時作為",
+    WhyChoose_p_text1_1: "首間獲Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》",
+    WhyChoose_p_text1_2: "認證的香港矯視中心，成為了大眾的SMILE Pro矯視首選。",
+    WhyChoose_p_text2: "中心採用",
+    WhyChoose_p_text3: "已獲美國FDA認證",
+    WhyChoose_p_text4:
+      "的ZEISS VISUMAX 800 SMILE®pro設備，結合德國蔡司光學與諾貝爾獎激光技術，為SMILE Pro矯視服務帶來更高的",
+    WhyChoose_p_text5: "精確度",
+    WhyChoose_p_text6: "與",
+    WhyChoose_p_text7: "安全保障",
+    WhyChoose_p_text8:
+      "。此外，眾多客戶對術後效果表示滿意，視力穩定，讓日常生活更輕鬆便利。",
 
-      four_feature:{
-        title:"四大特點",
-        smallTilte:"以德國蔡司光學與諾貝爾獎激光技術進行矯視",
+    four_feature: {
+      title: "四大特點",
+      smallTilte: "以德國蔡司光學與諾貝爾獎激光技術進行矯視",
 
-        item1_title1:"矯視過程短",
-        item1_p1_1:"激光時間最短約10-16秒",
-        item1_p1_2:"單一眼睛",
+      item1_title1: "矯視過程短",
+      item1_p1_1: "激光時間最短約10-16秒",
+      item1_p1_2: "單一眼睛",
 
-        item1_title2:"精準度更高",
-        item1_p2_1:"具有視軸及散光軸",
-        item1_p2_2:"輔助導航定位功能",
+      item1_title2: "精準度更高",
+      item1_p2_1: "具有視軸及散光軸",
+      item1_p2_2: "輔助導航定位功能",
 
-        item1_title3:"微創",
-        item1_p3_1:"約2MM的微創切口",
+      item1_title3: "微創",
+      item1_p3_1: "約2MM的微創切口",
 
-        item1_title4:"康復時間短",
-        item1_p4_1:"最快翌日可如常生活、工作",
-
-
-      }
-       
-
+      item1_title4: "康復時間短",
+      item1_p4_1: "最快翌日可如常生活、工作",
+    },
   },
 
   Correct: {
-    newIcl:{
-      menuone:"主頁",
-      menuTwo:"矯視服務",
-      menuthree:"植入式隱形眼鏡",
-      small_title1:"植入式隱形眼鏡",
-      apt_btn:"預約諮詢",
-      titleList:{
-        title1:"可矯正",
-        title2:"1,800度以下的近視",
-        title3:"1,000度以下的遠視",
-        title4:"600度以下的散光"
+    newIcl: {
+      menuone: "主頁",
+      menuTwo: "矯視服務",
+      menuthree: "植入式隱形眼鏡",
+      small_title1: "植入式隱形眼鏡",
+      apt_btn: "預約諮詢",
+      titleList: {
+        title1: "可矯正",
+        title2: "1,800度以下的近視",
+        title3: "1,000度以下的遠視",
+        title4: "600度以下的散光",
       },
 
-      section1:{
-        title:"植入式隱形眼鏡",
-        text1: "植入式隱形眼鏡Implantable Collamer Lens (ICL)，又名有晶體眼後房型植入式隱形眼鏡植入手術，",
-        text2:"專為深度近視、遠視、散光客人而設",
+      section1: {
+        title: "植入式隱形眼鏡",
+        text1:
+          "植入式隱形眼鏡Implantable Collamer Lens (ICL)，又名有晶體眼後房型植入式隱形眼鏡植入手術，",
+        text2: "專為深度近視、遠視、散光客人而設",
 
-        text2_1:"手術過程",
-        text2_2:"無須切削角膜",
-        text3:"把ICL晶體植入",
-        text3_1:"眼內，便可獲取高清視力。植入式隱形眼鏡以",
-        text4:"非激光原理",
-        text5:"，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料，矯正高度近視、遠視及散光。"
+        text2_1: "手術過程",
+        text2_2: "無須切削角膜",
+        text3: "把ICL晶體植入",
+        text3_1: "眼內，便可獲取高清視力。植入式隱形眼鏡以",
+        text4: "非激光原理",
+        text5:
+          "，用創新技術和具生物兼容特質、柔軟及具紫外線防護的晶體材料，矯正高度近視、遠視及散光。",
       },
-      section2:{
-        title:"為何選擇希瑪?",
-        one:{
+      section2: {
+        title: "為何選擇希瑪?",
+        one: {
           text1: "希瑪自創辦以來與STAAR Surgical公司建立良好的合作關係",
-          text2:"逾10年。",
-          text3:"2023年，STAAR Surgical公司對希瑪眼科集團的",
+          text2: "逾10年。",
+          text3: "2023年，STAAR Surgical公司對希瑪眼科集團的",
           text4: "醫療技術、手術品質及服務作出認可",
-          text5: '宣佈將希瑪微笑矯視中心設立為',
-          text6:"首間官方認證EVO ICL 國際培訓中心",
-          text7:"希瑪微笑矯視中心往後會繼續致力於ICL方面發展，成為大眾選擇ICL植入式隱形眼鏡的首選!",
-          text8:"希瑪微笑矯視中心在矯視技術領域不斷追求突破，近期我們在ICL植入式隱形眼鏡的術前檢查和矯視過程中引入了新的技術項目，以提升服務的質量和精準度。"
+          text5: "宣佈將希瑪微笑矯視中心設立為",
+          text6: "首間官方認證EVO ICL 國際培訓中心",
+          text7:
+            "希瑪微笑矯視中心往後會繼續致力於ICL方面發展，成為大眾選擇ICL植入式隱形眼鏡的首選!",
+          text8:
+            "希瑪微笑矯視中心在矯視技術領域不斷追求突破，近期我們在ICL植入式隱形眼鏡的術前檢查和矯視過程中引入了新的技術項目，以提升服務的質量和精準度。",
         },
-        two:{
-          title:"UBM眼科檢查",
-          text1:"在ICL植入式隱形眼鏡術前檢查中，新增了UBM眼科檢查(眼科超聲生物顯微鏡檢查)。UBM檢查是一種非侵入性技術，主要用於檢查房角，具有較高分辨率和較深穿透範圍，能夠清楚地觀察到眼睛的細微結構，有效克服傳統房角鏡檢查的盲區，為客戶提供更準確的診斷資訊。"
+        two: {
+          title: "UBM眼科檢查",
+          text1:
+            "在ICL植入式隱形眼鏡術前檢查中，新增了UBM眼科檢查(眼科超聲生物顯微鏡檢查)。UBM檢查是一種非侵入性技術，主要用於檢查房角，具有較高分辨率和較深穿透範圍，能夠清楚地觀察到眼睛的細微結構，有效克服傳統房角鏡檢查的盲區，為客戶提供更準確的診斷資訊。",
         },
-        three:{
-          title:"Verion技術",
-          text1:"在ICL植入式隱形眼鏡矯視過程中則引入了Verion技術。該技術通過測量散光軸度，能夠更精準地計算和規劃人工晶體植入方案。Verion技術在手術顯微鏡下進行「動態追蹤定位」，進一步提升植入人工晶體過程的精準度，從而提高了矯視的安全性和效果。"
-        }
+        three: {
+          title: "Verion技術",
+          text1:
+            "在ICL植入式隱形眼鏡矯視過程中則引入了Verion技術。該技術通過測量散光軸度，能夠更精準地計算和規劃人工晶體植入方案。Verion技術在手術顯微鏡下進行「動態追蹤定位」，進一步提升植入人工晶體過程的精準度，從而提高了矯視的安全性和效果。",
+        },
       },
 
+      section3: {
+        title: "矯視的好處",
+        text1_title1: "術後復原快",
+        text1_con1: "手術以微創技術進行",
+        text1_con2: "術後復原期短",
 
-      section3:{
-        title:"矯視的好處",
-        text1_title1:"術後復原快",
-        text1_con1:"手術以微創技術進行",
-        text1_con2:"術後復原期短",
+        text2_title1: "手術時間短",
+        text2_con1: "最快20-30分鐘",
+        text2_con2: "內完成矯視",
 
-        text2_title1:"手術時間短",
-        text2_con1:"最快20-30分鐘",
-        text2_con2:"內完成矯視",
+        text3_title1: "為生活帶來便利",
+        text3_newtitle1: "為生活帶來方便",
+        text3_con1: "矯視後可減低對眼鏡",
+        text3_con2: "或隱形眼鏡的依賴",
 
-        text3_title1:"為生活帶來便利",
-        text3_con1:"矯視後可減低對眼鏡",
-        text3_con2:"或隱形眼鏡的依賴",
+        text4_title1: "物料安全",
+        text4_title1_clear: "物料具生物兼容性",
+        text4_con1: "2005年已通過",
+        text4_con2: "美國FDA認證",
 
-        text4_title1:"物料安全",
-        text4_con1:"2005年已通過",
-        text4_con2:"美國FDA認證",
+        text5_title1: "不會導致乾眼症",
+        text5_title1_clear: "預防白內障",
+        text5_con1: "過程無須切削角膜",
+        text5_con2: "因此不會導致乾眼症",
 
-        text5_title1:"不會導致乾眼症",
-        text5_con1:"過程無須切削角膜",
-        text5_con2:"因此不會導致乾眼症",
-
-        text6_title1:"度身訂造治療方案",
-        text6_con1:"是一項可還原技術，客人",
-        text6_con2:"可按需要選擇取出ICL",
+        text6_title1: "度身訂造治療方案",
+        text6_con1: "是一項可還原技術，客人",
+        text6_con2: "可按需要選擇取出ICL",
       },
 
-      section4:{
-        title:"鏡片7大特色",
-        content_text:"EVO Visian ICL以STAAR Surgical 專用的生物相容Collamer專利材質製成。這種材質含有自然存在於體內的膠原蛋白。EVO Visian ICL Collamer 技術的獨特優勢使其成為視力矯正鏡片的理想材質，其中包含抗紫外線功能。",
+      section4: {
+        title: "鏡片7大特色",
+        content_text:
+          "EVO Visian ICL以STAAR Surgical 專用的生物相容Collamer專利材質製成。這種材質含有自然存在於體內的膠原蛋白。EVO Visian ICL Collamer 技術的獨特優勢使其成為視力矯正鏡片的理想材質，其中包含抗紫外線功能。",
 
-        item1_title:"夜間視力",
-        item2_title:"可取出",
-        item3_title:"生物相容性",
-        item4_title:"紫外線防護",
-        item5_title:"手術與恢復皆快速",
-        item6_title:"與時俱進的靈活度",
-        item7_title:"柔軟服貼",
-      }
-      
-
+        item1_title: "夜間視力",
+        item2_title: "可取出",
+        item3_title: "生物相容性",
+        item4_title: "紫外線防護",
+        item5_title: "手術與恢復皆快速",
+        item6_title: "與時俱進的靈活度",
+        item7_title: "柔軟服貼",
+      },
     },
     icl: {
-      small_title1:"更多ICL植入式",
-      small_title4:"隱形眼鏡真實個案分享",
+      small_title1: "更多ICL植入式",
+      small_title4: "隱形眼鏡真實個案分享",
       bannerTitle: "植入式隱形眼鏡",
       iclBtn: "預約諮詢",
       content1: {
@@ -883,16 +889,15 @@ module.exports = {
       xtra: {
         title: "矯視的好處",
         title_content: "ICL矯視的好處",
-        optionContent1:{
-          text1:"爲生活",
-          text2:"帶來便利"
+        optionContent1: {
+          text1: "爲生活",
+          text2: "帶來便利",
         },
 
-        optionContent2:{
-          text1:"爲生活",
-          text2:"帶來便利"
+        optionContent2: {
+          text1: "爲生活",
+          text2: "帶來便利",
         },
-
 
         content1: {
           title: "術後復原快",
@@ -946,10 +951,9 @@ module.exports = {
         "SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用Carl Zeiss VisuMax激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。",
     },
 
-
     correction_presbyopia: {
       bannerTitle: "",
-      bannerTitle2:"老花矯視",
+      bannerTitle2: "老花矯視",
       btn: "預約諮詢",
 
       content1: {
@@ -3276,66 +3280,61 @@ module.exports = {
     },
   },
 
-  appointFrom_ifram:{
-    title:"SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，CMER CLEAR-VISION 老花講座！",
-    p1:"中環診所：中環畢打街1-3號中建大廈1512室",
-    p2:"旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室",
-    p3:"旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室",
-    p4:"尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室"
-
+  appointFrom_ifram: {
+    title:
+      "SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，CMER CLEAR-VISION 老花講座！",
+    p1: "中環診所：中環畢打街1-3號中建大廈1512室",
+    p2: "旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室",
+    p3: "旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室",
+    p4: "尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室",
   },
 
-  appointFroms:{
-    title:"講座",
-    title1:"SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，",
-    title2:"CMER CLEAR-VISION 老花講座！",
+  appointFroms: {
+    title: "講座",
+    title1: "SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，",
+    title2: "CMER CLEAR-VISION 老花講座！",
 
-    p1:"中環診所：中環畢打街1-3號中建大廈1512室",
-    p2:"旺角診所：旺角彌敦道625及639號雅蘭中心一期1725B室",
+    p1: "中環診所：中環畢打街1-3號中建大廈1512室",
+    p2: "旺角診所：旺角彌敦道625及639號雅蘭中心一期1725B室",
 
+    title4: "選擇地點",
 
-    title4:"選擇地點",
-
-
-    content1:{
-     title1:"Smile Pro 講座-旺角",
-     title2:"Smile講座-中環",
-     title3:"Smile講座-旺角",
-     title4:"老花講座-旺角",
-     date:"預約日期",
-
-    }
-,
-content2:{
-  p1:"您正預約在",
-  p2:"全飛秒SMILE微笑激光矯視講座請填寫以下表格:",
-  local:"預留位置"
-},
-content3:{
-  name:"請填寫姓名",
-  age:"年齡",
-  choose:"請選擇",
-  age1:"17歲或以下",
-  age2:"18-25歲",
-  age3:"26-35歲",
-  age4:"36-45歲",
-  age5:"46-55歲",
-  age6:"56歲或以上",
-  phone:"聯絡電話",
-  phoneText:"請填寫",
-  email:"電郵地址",
-  soure:"從何得知"
-
-},
-content4:{
-  p1:"Google搜尋引擎",
-  p2:"Yahoo搜尋引擎",
-  p3:"討論區",
-  p4:"報章",
-  p5:"診所單張",
-  p6:"親友介紹",
-  p7:"員工介紹"
-},
-btn:"提交預約"
-  }
+    content1: {
+      title1: "Smile Pro 講座-旺角",
+      title2: "Smile講座-中環",
+      title3: "Smile講座-旺角",
+      title4: "老花講座-旺角",
+      date: "預約日期",
+    },
+    content2: {
+      p1: "您正預約在",
+      p2: "全飛秒SMILE微笑激光矯視講座請填寫以下表格:",
+      local: "預留位置",
+    },
+    content3: {
+      name: "請填寫姓名",
+      age: "年齡",
+      choose: "請選擇",
+      age1: "17歲或以下",
+      age2: "18-25歲",
+      age3: "26-35歲",
+      age4: "36-45歲",
+      age5: "46-55歲",
+      age6: "56歲或以上",
+      phone: "聯絡電話",
+      phoneText: "請填寫",
+      email: "電郵地址",
+      soure: "從何得知",
+    },
+    content4: {
+      p1: "Google搜尋引擎",
+      p2: "Yahoo搜尋引擎",
+      p3: "討論區",
+      p4: "報章",
+      p5: "診所單張",
+      p6: "親友介紹",
+      p7: "員工介紹",
+    },
+    btn: "提交預約",
+  },
 };
