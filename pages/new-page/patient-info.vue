@@ -22,9 +22,7 @@
     </div>
 
     <!-- 轮播位置 -->
-    <div
-      class="container new-container mx-auto smile-NewBanner position-relative"
-    >
+    <div class="new-container mx-auto smile-NewBanner position-relative">
       <img
         class=""
         decoding="async"
@@ -41,1018 +39,108 @@
         sizes=" (max-width: 992px) 100vw,1216px"
       />
       <div class="smile-NewBanner-Title">
-        <span>Information Notes</span>
+        <span
+          >Information<br />
+          Notes</span
+        >
         <h3>診症須知</h3>
       </div>
     </div>
 
-    <!-- 中心介绍 -->
-    <section class="smile-newCenter">
-      <div class="container new-container mx-auto">
-        <div class="smile-newCenter-menu">
-          <a href="/">{{ $t("Correct.newIcl.menuone") }} </a>&nbsp;>&nbsp;<a
-            >診症須知</a
-          >
-        </div>
-      </div>
-    </section>
+    <!-- 面包屑 -->
+    <div class="new-container mx-auto menu-breadcrumb">
+      <a href="/">主頁 > </a><a href="/patient-info">診症須知</a>
+    </div>
 
-    <!-- 為何選擇希瑪? -->
-    <section class="icl-WhatChoose">
-      <h3 class="icl-WhatChoose-title">
-        {{ $t("Correct.newIcl.section2.title") }}
-      </h3>
-      <div class="icl-WhatChoose-content-one container new-container">
-        <div class="icl-WhatChoose-content-one-img">
+    <!-- 眼睛檢查及矯視前 -->
+    <section class="check-eye">
+      <div class="check-eye-title mx-auto">
+        <h2>眼睛檢查及矯視前</h2>
+        <p class="check-eye-title-subtitle">
+          由於隱形眼鏡有機會把角膜擠壓，令量度出來的數據不準確，<br
+            class="d-none d-lg-block"
+          />故進行眼睛檢查及矯視前，請提前停止佩戴。
+        </p>
+        <p class="check-eye-title-date">以下為不同隱形眼鏡的停止佩戴日數：</p>
+      </div>
+      <ul class="check-eye-list d-flex flex-wrap">
+        <li>
           <img
-            class=""
-            decoding="async"
-            src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-why-pc-.avif"
+            src="https://statichk.cmermedical.com/smile/patient-info/check-eye-list1.png"
             alt=""
-            loading="lazy"
-            width="100%"
-            height="100%"
-            srcset="
-              https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-why-mobile.avif 400w,
-              https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-why-mobile.avif 640w,
-              https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-why-pc.avif
-            "
-            sizes=" (max-width: 992px) 100vw,1216px"
           />
-        </div>
-        <div class="icl-WhatChoose-content-one-text">
-          <p>
-            {{ $t("smile_proV2.WhyChoose_p_text1")
-            }}<span>{{ $t("smile_proV2.WhyChoose_p_text1_1") }}</span
-            >{{ $t("smile_proV2.WhyChoose_p_text1_2") }}
-          </p>
-          <p>
-            {{ $t("smile_proV2.WhyChoose_p_text2")
-            }}<span>{{ $t("smile_proV2.WhyChoose_p_text3") }}</span
-            >{{ $t("smile_proV2.WhyChoose_p_text4")
-            }}<span>{{ $t("smile_proV2.WhyChoose_p_text5") }}</span
-            >{{ $t("smile_proV2.WhyChoose_p_text6")
-            }}<span>{{ $t("smile_proV2.WhyChoose_p_text7") }}</span
-            >{{ $t("smile_proV2.WhyChoose_p_text8") }}
-          </p>
-        </div>
-      </div>
-
-      <a
-        target="_blank"
-        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-        class="mx-auto icl-btn"
-      >
-        <span>{{ $t("Correct.newIcl.apt_btn") }}</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="17"
-          height="17"
-          viewBox="0 0 17 17"
-          fill="none"
-        >
-          <path
-            d="M2 14.5399L14.5714 1.96851"
-            stroke="white"
-            stroke-width="3"
-            stroke-linecap="round"
+        </li>
+        <li>
+          <img
+            src="https://statichk.cmermedical.com/smile/patient-info/check-eye-list2.png"
+            alt=""
           />
-          <path
-            d="M3.83179 1.5686H14.9999V12.3686"
-            stroke="white"
-            stroke-width="2.7"
-            stroke-linecap="round"
+        </li>
+        <li>
+          <img
+            src="https://statichk.cmermedical.com/smile/patient-info/check-eye-list3.png"
+            alt=""
           />
-        </svg>
-      </a>
+        </li>
+        <li>
+          <img
+            src="https://statichk.cmermedical.com/smile/patient-info/check-eye-list4.png"
+            alt=""
+          />
+        </li>
+      </ul>
     </section>
 
-    <!-- 四大特点 -->
-    <section class="smilepro-four-feature">
-      <div class="">
-        <div class="smilepro-four-feature-Box">
-          <div class="smilepro-four-feature-Box-top">
-            <h3>
-              <span>SMILE Pro </span><br class="d-none d-lg-block" />{{
-                $t("smile_proV2.four_feature.title")
-              }}
-            </h3>
-            <p>
-              ZEISS VISUMAX 800 SMILE®pro<br />
-              {{ $t("smile_proV2.four_feature.smallTilte") }}
-            </p>
-          </div>
-          <div class="smilepro-four-feature-Box-List">
-            <div
-              class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div class="smilepro-four-feature-Box-List-item-number">01</div>
-              <div class="smilepro-four-feature-Box-List-item-text">
-                <h4>{{ $t("smile_proV2.four_feature.item1_title1") }}</h4>
-                <p>
-                  {{ $t("smile_proV2.four_feature.item1_p1_1")
-                  }}<br class="d-lg-none" />({{
-                    $t("smile_proV2.four_feature.item1_p1_2")
-                  }})
-                </p>
-              </div>
-            </div>
+    <!-- 矯視前停con知多啲 -->
+    <section class="CorrectedVisionBefore new-container">
+      <div class="CorrectedVisionBefore-iframe">
+        <img
+          src="https://statichk.cmermedical.com/smile/patient-info/LightBulb.svg"
+          alt=""
+        />
 
-            <div
-              class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
-              data-wow-delay="0.2s"
-            >
-              <div class="smilepro-four-feature-Box-List-item-number d-lg-none">
-                02
-              </div>
-              <div class="smilepro-four-feature-Box-List-item-text d-lg-none">
-                <h4>{{ $t("smile_proV2.four_feature.item1_title2") }}</h4>
-                <p>
-                  {{ $t("smile_proV2.four_feature.item1_p2_1")
-                  }}<br class="d-lg-none" />{{
-                    $t("smile_proV2.four_feature.item1_p2_2")
-                  }}
-                </p>
-              </div>
-
-              <div
-                class="smilepro-four-feature-Box-List-item-number d-none d-lg-block"
-              >
-                03
-              </div>
-              <div
-                class="smilepro-four-feature-Box-List-item-text d-none d-lg-block"
-              >
-                <h4>{{ $t("smile_proV2.four_feature.item1_title3") }}</h4>
-                <p>{{ $t("smile_proV2.four_feature.item1_p3_1") }}</p>
-              </div>
-            </div>
-
-            <div
-              class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div class="smilepro-four-feature-Box-List-item-number d-lg-none">
-                03
-              </div>
-              <div class="smilepro-four-feature-Box-List-item-text d-lg-none">
-                <h4>{{ $t("smile_proV2.four_feature.item1_title3") }}</h4>
-                <p>{{ $t("smile_proV2.four_feature.item1_p3_1") }}</p>
-              </div>
-
-              <div
-                class="smilepro-four-feature-Box-List-item-number d-none d-lg-block"
-              >
-                02
-              </div>
-              <div
-                class="smilepro-four-feature-Box-List-item-text d-none d-lg-block"
-              >
-                <h4>{{ $t("smile_proV2.four_feature.item1_title2") }}</h4>
-                <p>
-                  {{ $t("smile_proV2.four_feature.item1_p2_1")
-                  }}<br class="d-lg-none" />{{
-                    $t("smile_proV2.four_feature.item1_p2_2")
-                  }}
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
-              data-wow-delay="0.4s"
-            >
-              <div class="smilepro-four-feature-Box-List-item-number">04</div>
-              <div class="smilepro-four-feature-Box-List-item-text">
-                <h4>{{ $t("smile_proV2.four_feature.item1_title4") }}</h4>
-                <p>{{ $t("smile_proV2.four_feature.item1_p4_1") }}</p>
-              </div>
-            </div>
-          </div>
+        <h2>矯視前停con知多啲</h2>
+        <div class="iframe-container">
+          <iframe
+            src="https://www.youtube.com/embed/chqX2VLCqio?si=EMeTCDqYcPEMdsrL"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-    </section>
-
-    <!-- 表格 -->
-    <section class="smilepro-difference">
-      <div class="smilepro-difference-title">
-        <div>
-          SMILE/SMILE PRO/ICL<br class="d-lg-none" />
-          大不同
-        </div>
-      </div>
-
-      <table class="table custom-comparison-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th><span>SMILE</span><br />微笑<br class="d-lg-none" />矯視</th>
-            <th>
-              <span
-                >SMILE<br class="d-lg-none" />
-                PRO</span
-              ><br />微笑矯視
-            </th>
-            <th>
-              <span>ICL</span><br />
-              植入式<br class="d-lg-none" />隱形眼鏡
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              激光時間
-              <p>(單一眼睛)</p>
-            </td>
-            <td>約23-25秒</td>
-            <td>約10-16秒</td>
-            <td>不適用</td>
-          </tr>
-          <tr>
-            <td>傷口大小</td>
-            <td>約2mm</td>
-            <td>約2mm</td>
-            <td>3mm</td>
-          </tr>
-          <tr>
-            <td>術後眼乾<br />情況</td>
-            <td>輕微</td>
-            <td>輕微</td>
-            <td>無</td>
-          </tr>
-
-          <!-- <tr>
-            <td>矯視過程<br />痛楚</td>
-            <td>無</td>
-            <td>無</td>
-            <td>無</td>
-          </tr>  -->
-
-          <tr>
-            <td>矯視<br class="d-lg-none" />準確度</td>
-            <td>極高</td>
-            <td>極高</td>
-            <td>極高</td>
-          </tr>
-
-          <tr>
-            <td>
-              角膜自然<br />
-              癒合需<br class="d-lg-none" />時間
-            </td>
-            <td>數天</td>
-            <td>數天</td>
-            <td>數天</td>
-          </tr>
-
-          <!-- <tr>
-            <td>
-              術後<br />
-              不適感
-            </td>
-            <td>輕微</td>
-            <td>輕微</td>
-            <td>無</td>
-          </tr> -->
-
-          <tr>
-            <td>
-              角膜瓣<br />
-              移位機會
-            </td>
-            <td>無</td>
-            <td>無</td>
-            <td>無</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <a
-        target="_blank"
-        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-        class="mx-auto icl-btn"
-      >
-        <span>{{ $t("Correct.newIcl.apt_btn") }}</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="17"
-          height="17"
-          viewBox="0 0 17 17"
-          fill="none"
-        >
-          <path
-            d="M2 14.5399L14.5714 1.96851"
-            stroke="white"
-            stroke-width="3"
-            stroke-linecap="round"
+      <div class="CorrectedVisionBefore-Process">
+        <div class="CorrectedVisionBefore-Process-item">
+          <img
+            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img1.svg"
+            alt=""
           />
-          <path
-            d="M3.83179 1.5686H14.9999V12.3686"
-            stroke="white"
-            stroke-width="2.7"
-            stroke-linecap="round"
+          <p>前台登記及<br />初步眼睛檢查</p>
+        </div>
+
+        <div class="CorrectedVisionBefore-Process-item">
+          <img
+            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img2.svg"
+            alt=""
           />
-        </svg>
-      </a>
-    </section>
-
-    <!-- 过程和介绍vedio -->
-    <section class="icl-introVedio">
-      <div class="icl-introVedio-intro new-container">
-        <div class="icl-introVedio-intro-number">
-          <!-- 左侧数字列表 -->
-          <div class="steps">
-            <div
-              v-for="(step, index) in steps"
-              :key="index"
-              @mouseover="highlightStep(index)"
-              :class="{ active: activeStep === index }"
-            >
-              {{ step.number }}
-            </div>
-          </div>
-
-          <!-- 右侧内容区域 -->
-          <div class="content-area">
-            <div v-if="activeStep >= 0">
-              <div class="content-area-title">
-                <p>
-                  SMILE Pro微笑激光<br />
-                  矯視過程
-                </p>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="20"
-                  viewBox="0 0 19 20"
-                  fill="none"
-                >
-                  <path
-                    d="M0.726577 1.2312L17.593 18.0976"
-                    stroke="#4570B6"
-                    stroke-width="1.34165"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M18.1296 3.68896L18.1296 18.6727L3.63983 18.6727"
-                    stroke="#4570B6"
-                    stroke-width="1.34165"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <div class="content-area-img">
-                <img class="d-xl-none" :src="steps[activeStep].image" alt="" />
-                <img
-                  class="d-none d-xl-block"
-                  :src="steps[activeStep].imagePc"
-                  alt=""
-                />
-
-                <p
-                  class="content-area-text"
-                  v-html="steps[activeStep].text"
-                ></p>
-              </div>
-            </div>
-          </div>
+          <p>詳細屈光檢查</p>
         </div>
-      </div>
-    </section>
-
-    <drow />
-
-    <!-- ICL植入式隱形眼鏡真實個案分享 -->
-    <!-- <section class="CaseSharing">
-      <div class="new-container CaseSharing-Box">
-        <h3>SMILE Pro微笑激光矯視<br />真實個案分享</h3>
-        <div class="CaseSharing-list" ref="caseSharingList">
-          <div class="CaseSharing-list-item">
-            <a
-              href="https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_maggie.avif"
-                alt=""
-              />
-              <span>Maggie米姬</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-
-            <a
-              class="d-lg-none-imp"
-              href="https://www.youtube.com/embed/TBI6J31JwJQ?si=bp9WtPjKg-wowh39"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_carmen.avif"
-                alt=""
-              />
-
-              <span>Carmen Ngai</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-          </div>
-
-          <div class="CaseSharing-list-item">
-            <a
-              href="https://www.youtube.com/embed/1p5Qm_772jI?si=5eV0Co5EhluQwgDJ"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/share/smilepro-pc-share02.avif"
-                alt=""
-              />
-
-              <span>細猫</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-
-            <div></div>
-          </div>
-
-          <div class="CaseSharing-list-item d-none d-lg-block">
-            <a
-              href="https://www.youtube.com/embed/TBI6J31JwJQ?si=bp9WtPjKg-wowh39"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_carmen.avif"
-                alt=""
-              />
-
-              <span>Carmen Ngai</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-          </div>
+        <div class="CorrectedVisionBefore-Process-item">
+          <img
+            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img4.svg"
+            alt=""
+          />
+          <p>全面眼底檢查</p>
         </div>
-
-        <a
-          target="_blank"
-          href="https://www.youtube.com/watch?v=iHBGkRh-CXw&list=PLWVonQr1f7XhXd4GDFI3zRtOe9RHb1jdb"
-          class="mx-auto icl-btn"
-        >
-          <span>更多分享</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="17"
-            height="17"
-            viewBox="0 0 17 17"
-            fill="none"
-          >
-            <path
-              d="M2 14.5399L14.5714 1.96851"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="M3.83179 1.5686H14.9999V12.3686"
-              stroke="white"
-              stroke-width="2.7"
-              stroke-linecap="round"
-            />
-          </svg>
-        </a>
-      </div>
-
-
-    </section> -->
-    <userShare :user-share="ShareData"></userShare>
-
-    <!-- 用家见证 -->
-    <section class="smile-pro-evaluateV2">
-      <div class="smile-pro-evaluateV2-Box">
-        <div class="smile-pro-evaluateV2-Box-title">用家見證</div>
-
-        <div class="smile-pro-evaluateV2-Box-content">
-          <div
-            v-swiper:mySwiper="swiperOption1"
-            class="swiperWrap"
-            ref="swiperContainer"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide swiperWrap-item">
-                <div>
-                  <svg
-                    width="69"
-                    height="69"
-                    viewBox="0 0 69 69"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <mask
-                      id="mask0_11050_282"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="69"
-                      height="69"
-                    >
-                      <circle
-                        cx="34.5"
-                        cy="34.5"
-                        r="33.75"
-                        fill="white"
-                        stroke="#4570B6"
-                        stroke-width="1.5"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_11050_282)">
-                      <g clip-path="url(#clip0_11050_282)">
-                        <path
-                          d="M48.6468 23.2356C48.6468 30.9551 42.3889 37.2129 34.6695 37.2129C26.95 37.2129 20.6921 30.9551 20.6921 23.2356C20.6921 15.5162 26.95 9.2583 34.6695 9.2583C42.3889 9.2583 48.6468 15.5162 48.6468 23.2356Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M58.7327 61.0778V64.7353C58.511 64.8658 58.1743 65.0535 57.718 65.2797C56.7839 65.743 55.3481 66.3683 53.3706 66.9963C49.4166 68.252 43.29 69.5204 34.6695 69.5204C26.049 69.5204 19.9229 68.252 15.9694 66.9963C13.9921 66.3683 12.5565 65.743 11.6226 65.2798C11.1665 65.0535 10.8299 64.8659 10.6082 64.7354V61.0778C10.6082 56.6603 13.0628 52.1833 17.3356 48.7867C21.6006 45.3963 27.6368 43.1221 34.6695 43.1221C41.7023 43.1221 47.739 45.3959 52.0044 48.7861C56.2776 52.1824 58.7327 56.6594 58.7327 61.0778Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                      </g>
-                    </g>
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <defs>
-                      <clipPath id="clip0_11050_282">
-                        <rect
-                          width="49.6246"
-                          height="61.7623"
-                          fill="white"
-                          transform="translate(9.85815 8.5083)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                  <p class="swiperWrap-item-text">
-                    做完SMILE Pro之後生活方便咗好多!
-                    好享受無需戴眼鏡的感覺，推薦！
-                  </p>
-
-                  <div class="swiperWrap-item-name">
-                    <i>文員</i>
-                    <p>Macy</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide swiperWrap-item">
-                <div>
-                  <svg
-                    width="69"
-                    height="69"
-                    viewBox="0 0 69 69"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <mask
-                      id="mask0_11050_282"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="69"
-                      height="69"
-                    >
-                      <circle
-                        cx="34.5"
-                        cy="34.5"
-                        r="33.75"
-                        fill="white"
-                        stroke="#4570B6"
-                        stroke-width="1.5"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_11050_282)">
-                      <g clip-path="url(#clip0_11050_282)">
-                        <path
-                          d="M48.6468 23.2356C48.6468 30.9551 42.3889 37.2129 34.6695 37.2129C26.95 37.2129 20.6921 30.9551 20.6921 23.2356C20.6921 15.5162 26.95 9.2583 34.6695 9.2583C42.3889 9.2583 48.6468 15.5162 48.6468 23.2356Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M58.7327 61.0778V64.7353C58.511 64.8658 58.1743 65.0535 57.718 65.2797C56.7839 65.743 55.3481 66.3683 53.3706 66.9963C49.4166 68.252 43.29 69.5204 34.6695 69.5204C26.049 69.5204 19.9229 68.252 15.9694 66.9963C13.9921 66.3683 12.5565 65.743 11.6226 65.2798C11.1665 65.0535 10.8299 64.8659 10.6082 64.7354V61.0778C10.6082 56.6603 13.0628 52.1833 17.3356 48.7867C21.6006 45.3963 27.6368 43.1221 34.6695 43.1221C41.7023 43.1221 47.739 45.3959 52.0044 48.7861C56.2776 52.1824 58.7327 56.6594 58.7327 61.0778Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                      </g>
-                    </g>
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <defs>
-                      <clipPath id="clip0_11050_282">
-                        <rect
-                          width="49.6246"
-                          height="61.7623"
-                          fill="white"
-                          transform="translate(9.85815 8.5083)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                  <p class="swiperWrap-item-text">
-                    完成SMILE Pro後，效果符合預期，係值得為自己做嘅投資
-                  </p>
-
-                  <div class="swiperWrap-item-name">
-                    <i>行政人員</i>
-                    <p>Ken</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide swiperWrap-item">
-                <div>
-                  <svg
-                    width="69"
-                    height="69"
-                    viewBox="0 0 69 69"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <mask
-                      id="mask0_11050_282"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="69"
-                      height="69"
-                    >
-                      <circle
-                        cx="34.5"
-                        cy="34.5"
-                        r="33.75"
-                        fill="white"
-                        stroke="#4570B6"
-                        stroke-width="1.5"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_11050_282)">
-                      <g clip-path="url(#clip0_11050_282)">
-                        <path
-                          d="M48.6468 23.2356C48.6468 30.9551 42.3889 37.2129 34.6695 37.2129C26.95 37.2129 20.6921 30.9551 20.6921 23.2356C20.6921 15.5162 26.95 9.2583 34.6695 9.2583C42.3889 9.2583 48.6468 15.5162 48.6468 23.2356Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M58.7327 61.0778V64.7353C58.511 64.8658 58.1743 65.0535 57.718 65.2797C56.7839 65.743 55.3481 66.3683 53.3706 66.9963C49.4166 68.252 43.29 69.5204 34.6695 69.5204C26.049 69.5204 19.9229 68.252 15.9694 66.9963C13.9921 66.3683 12.5565 65.743 11.6226 65.2798C11.1665 65.0535 10.8299 64.8659 10.6082 64.7354V61.0778C10.6082 56.6603 13.0628 52.1833 17.3356 48.7867C21.6006 45.3963 27.6368 43.1221 34.6695 43.1221C41.7023 43.1221 47.739 45.3959 52.0044 48.7861C56.2776 52.1824 58.7327 56.6594 58.7327 61.0778Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                      </g>
-                    </g>
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <defs>
-                      <clipPath id="clip0_11050_282">
-                        <rect
-                          width="49.6246"
-                          height="61.7623"
-                          fill="white"
-                          transform="translate(9.85815 8.5083)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                  <p class="swiperWrap-item-text">
-                    本身好驚，但醫療團隊講解步驟好清楚，喺矯視過程溫柔又細心令我安心哂!
-                  </p>
-
-                  <div class="swiperWrap-item-name">
-                    <i>家庭主婦</i>
-                    <p>Vivien</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide swiperWrap-item">
-                <div>
-                  <svg
-                    width="69"
-                    height="69"
-                    viewBox="0 0 69 69"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <mask
-                      id="mask0_11050_282"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="69"
-                      height="69"
-                    >
-                      <circle
-                        cx="34.5"
-                        cy="34.5"
-                        r="33.75"
-                        fill="white"
-                        stroke="#4570B6"
-                        stroke-width="1.5"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_11050_282)">
-                      <g clip-path="url(#clip0_11050_282)">
-                        <path
-                          d="M48.6468 23.2356C48.6468 30.9551 42.3889 37.2129 34.6695 37.2129C26.95 37.2129 20.6921 30.9551 20.6921 23.2356C20.6921 15.5162 26.95 9.2583 34.6695 9.2583C42.3889 9.2583 48.6468 15.5162 48.6468 23.2356Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M58.7327 61.0778V64.7353C58.511 64.8658 58.1743 65.0535 57.718 65.2797C56.7839 65.743 55.3481 66.3683 53.3706 66.9963C49.4166 68.252 43.29 69.5204 34.6695 69.5204C26.049 69.5204 19.9229 68.252 15.9694 66.9963C13.9921 66.3683 12.5565 65.743 11.6226 65.2798C11.1665 65.0535 10.8299 64.8659 10.6082 64.7354V61.0778C10.6082 56.6603 13.0628 52.1833 17.3356 48.7867C21.6006 45.3963 27.6368 43.1221 34.6695 43.1221C41.7023 43.1221 47.739 45.3959 52.0044 48.7861C56.2776 52.1824 58.7327 56.6594 58.7327 61.0778Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                      </g>
-                    </g>
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <defs>
-                      <clipPath id="clip0_11050_282">
-                        <rect
-                          width="49.6246"
-                          height="61.7623"
-                          fill="white"
-                          transform="translate(9.85815 8.5083)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                  <p class="swiperWrap-item-text">
-                    終於唔洗成日帶con搞到眼乾眼紅!做完SMILE
-                    Pro之後發現呢個世界好靚!
-                  </p>
-
-                  <div class="swiperWrap-item-name">
-                    <i>咖啡師</i>
-                    <p>阿聲</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide swiperWrap-item">
-                <div>
-                  <svg
-                    width="69"
-                    height="69"
-                    viewBox="0 0 69 69"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <mask
-                      id="mask0_11050_282"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="69"
-                      height="69"
-                    >
-                      <circle
-                        cx="34.5"
-                        cy="34.5"
-                        r="33.75"
-                        fill="white"
-                        stroke="#4570B6"
-                        stroke-width="1.5"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_11050_282)">
-                      <g clip-path="url(#clip0_11050_282)">
-                        <path
-                          d="M48.6468 23.2356C48.6468 30.9551 42.3889 37.2129 34.6695 37.2129C26.95 37.2129 20.6921 30.9551 20.6921 23.2356C20.6921 15.5162 26.95 9.2583 34.6695 9.2583C42.3889 9.2583 48.6468 15.5162 48.6468 23.2356Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M58.7327 61.0778V64.7353C58.511 64.8658 58.1743 65.0535 57.718 65.2797C56.7839 65.743 55.3481 66.3683 53.3706 66.9963C49.4166 68.252 43.29 69.5204 34.6695 69.5204C26.049 69.5204 19.9229 68.252 15.9694 66.9963C13.9921 66.3683 12.5565 65.743 11.6226 65.2798C11.1665 65.0535 10.8299 64.8659 10.6082 64.7354V61.0778C10.6082 56.6603 13.0628 52.1833 17.3356 48.7867C21.6006 45.3963 27.6368 43.1221 34.6695 43.1221C41.7023 43.1221 47.739 45.3959 52.0044 48.7861C56.2776 52.1824 58.7327 56.6594 58.7327 61.0778Z"
-                          stroke="#4570B6"
-                          stroke-width="1.5"
-                        />
-                      </g>
-                    </g>
-                    <circle
-                      cx="34.5"
-                      cy="34.5"
-                      r="33.75"
-                      stroke="#4570B6"
-                      stroke-width="1.5"
-                    />
-                    <defs>
-                      <clipPath id="clip0_11050_282">
-                        <rect
-                          width="49.6246"
-                          height="61.7623"
-                          fill="white"
-                          transform="translate(9.85815 8.5083)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p class="swiperWrap-item-text">
-                    過程好快好安全，術後康復又快，眼睛兩三日後都已經清，感覺好神奇！
-                  </p>
-
-                  <div class="swiperWrap-item-name">
-                    <i>店務員</i>
-                    <p>Agnes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination">
-              <div class="swiper-button-next">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                >
-                  <circle cx="20" cy="20" r="20" fill="#4570B6" />
-                  <path
-                    d="M11.0008 19.9878L26.9763 19.9878"
-                    stroke="white"
-                    stroke-width="2.69573"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M21.4066 27.3379L28.5027 20.2418L21.6405 13.3796"
-                    stroke="white"
-                    stroke-width="2.42615"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <div class="swiper-button-prev">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                >
-                  <circle cx="20" cy="20" r="20" fill="#4570B6" />
-                  <path
-                    d="M28.502 20.2598L12.5265 20.2598"
-                    stroke="white"
-                    stroke-width="2.69573"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M19.0961 27.3379L12 20.2418L18.8622 13.3796"
-                    stroke="white"
-                    stroke-width="2.42615"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
+        <div class="CorrectedVisionBefore-Process-item">
+          <img
+            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img3.svg"
+            alt=""
+          />
+          <p>散曈</p>
         </div>
-
-        <a
-          target="_blank"
-          href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-          class="mx-auto icl-btn"
-        >
-          <span>{{ $t("Correct.newIcl.apt_btn") }}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="17"
-            height="17"
-            viewBox="0 0 17 17"
-            fill="none"
-          >
-            <path
-              d="M2 14.5399L14.5714 1.96851"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="M3.83179 1.5686H14.9999V12.3686"
-              stroke="white"
-              stroke-width="2.7"
-              stroke-linecap="round"
-            />
-          </svg>
-        </a>
       </div>
     </section>
 
@@ -1139,10 +227,8 @@
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
 import HeadV2 from "@/components/Publice/HeadeV2.vue";
 
-import Footer from "@/components/commom/new_foot/Footer.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 
 import businessHours from "@/components/commom/business/business-hours.vue";
@@ -1160,8 +246,6 @@ import drow from "@/components/content/service/SmileProV2/drow.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
     FooterMobile,
     Banner,
@@ -1226,197 +310,6 @@ export default {
   data() {
     return {
       isMobile: false,
-      isPCNEW: true,
-      activeStep: 0, // 当前激活的步骤索引
-      activeStepTimer: null,
-      interval: 3000,
-      steps: [
-        {
-          number: "01",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro1.avif",
-          image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro1.avif",
-          text: "以「視軸輔助導航」功能為視軸中心點定位",
-        },
-        {
-          number: "02",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro2.avif",
-          image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro2.avif",
-          text: "全飛秒激光直接切割角膜中層",
-        },
-        {
-          number: "03",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro3.avif",
-          image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro3.avif",
-          text: "<style>@media screen and (min-width: 992px) {.changehon{display: block;}</style>製作一個約<span class='changehon'>2-2.5mm的小切口</span>",
-        },
-        {
-          number: "04",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro4.avif",
-          image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro4.avif",
-          text: "將切割了的角膜透鏡從切口抽出",
-        },
-      ],
-
-      suitable_object: [
-        {
-          img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content1.text1"),
-            this.$t("Correct.icl.suitable_object.content1.text2"),
-          ],
-        },
-        {
-          img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content2.text1"),
-            this.$t("Correct.icl.suitable_object.content2.text2"),
-          ],
-        },
-        {
-          img: "https://static.cmereye.com/imgs/2024/04/56f73174b86b2288.png",
-          text: [this.$t("Correct.icl.suitable_object.content3.text1")],
-        },
-        {
-          img: "https://static.cmereye.com/imgs/2024/04/9f4ca0776e175624.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content4.text1"),
-            this.$t("Correct.icl.suitable_object.content4.text2"),
-          ],
-        },
-        {
-          img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content5.text1"),
-            this.$t("Correct.icl.suitable_object.content5.text2"),
-          ],
-          mbText: [
-            this.$t("Correct.icl.suitable_object.content5.mbText1"),
-            this.$t("Correct.icl.suitable_object.content5.mbText2"),
-          ],
-        },
-      ],
-
-      swiperOption1: {
-        spaceBetween: 60,
-        slidesPerView: 5,
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        on: {
-          init: function () {
-            // 初始化时绑定事件
-            this.el.addEventListener("mouseenter", () => {
-              this.autoplay.stop(); // 鼠标移入时停止自动播放
-            });
-            this.el.addEventListener("mouseleave", () => {
-              this.autoplay.start(); // 鼠标移出时重新开始自动播放
-            });
-          },
-        },
-        breakpoints: {
-          992: {
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: true,
-            },
-            loop: true,
-            slidesPerGroup: 1,
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-        },
-      },
-      windowWidth: 0,
-      swiperOption2: {
-        spaceBetween: 60,
-        slidesPerView: 5,
-        slidesPerGroup: 1,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
-
-      ShareData: [
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/TBI6J31JwJQ",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem2.avif",
-          text: ["做咗就可以好似我依家", "咁方便㗎喇"],
-          nameEn: "Carmen",
-          nameCn: "倪嘉雯",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/vxeN1wXeZ5M",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem3.avif",
-          text: ["好舒服之下就完成咗成", "個過程"],
-          nameEn: "Maggie",
-          nameCn: "米姬",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/10KYv_gGgWM",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem5.avif",
-          text: ["無哂Con帶嚟嘅麻煩，", "促進咗眼神交流"],
-          nameEn: " ",
-          nameCn: "Anson Au",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://www.youtube.com/watch?v=1p5Qm_772jI",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem7.avif",
-          text: ["做完SMILE Pro", "上舞台都唔會驚光"],
-          nameEn: " ",
-          nameCn: "細貓",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/kVEJ-PN4AJo",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem8.avif",
-          text: ["我問自己點解唔早啲做", "SMILE Pro呢!"],
-          nameEn: " ",
-          nameCn: "Cindy Wong",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/VoGlE1dJPhc",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem9.avif",
-          text: ["做完幾個月視力都維持", "到非常之清"],
-          nameEn: "Pinky",
-          nameCn: "",
-        },
-
-        {
-          type: "SMILE Pro",
-          href: "https://youtu.be/1Ic0z7wiVv8",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem10.avif",
-          text: ["唔洗花時間戴Con，可", "以直接出門練習，非常", "方便"],
-          nameEn: "Tiffany",
-          nameCn: "鄧伊程",
-        },
-      ],
-
       canonicalHref: "https://smile.hkcmereye.com/eye-examination/",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/eye-examination/",
       browserTitle: "診症須知 - 希瑪微笑矯視中心",
@@ -1427,22 +320,6 @@ export default {
   methods: {
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
-    },
-    nextEl() {
-      this.mySwiper.slideNext();
-      console.log(1);
-    },
-    prevEl() {
-      this.mySwiper.slidePrev();
-    },
-
-    checkDeviceType() {
-      this.isDesktop = window.innerWidth > 768;
-    },
-
-    highlightStep(index) {
-      this.activeStep = index; // 更新当前激活的步骤
-      this.stopTimer();
     },
 
     async copyCurrentUrl() {
@@ -1470,51 +347,8 @@ export default {
         behavior: "smooth",
       });
     },
-    // 开始计时
-    startTimer(customInterval) {
-      if (!this.activeStepTimer) {
-        const interval = customInterval || this.interval;
-        this.activeStepTimer = setInterval(() => {
-          this.activeStep++;
-          if (this.activeStep > 3) {
-            this.activeStep = 0; // 超过 4 时回到 0
-          }
-        }, interval);
-      }
-    },
-    stopTimer() {
-      if (this.activeStepTimer) {
-        clearInterval(this.activeStepTimer);
-        this.activeStepTimer = null;
-      }
-    },
-
-    wrapSwiperWrapper() {
-      const container = this.$refs.swiperContainer;
-      const wrapper = container.querySelector(".swiperWrap .swiper-wrapper");
-      const pagination = container.querySelector(
-        ".swiperWrap .swiper-pagination"
-      );
-
-      if (!wrapper) return;
-
-      // 创建新的包裹层
-      const overflowDiv = document.createElement("div");
-      overflowDiv.className = "swiper-overflow";
-      overflowDiv.style.overflow = "hidden";
-      // 将 wrapper 插入到新的包裹层中
-      overflowDiv.appendChild(wrapper);
-      overflowDiv.appendChild(pagination);
-
-      // 清空容器并插入新的结构
-      container.innerHTML = "";
-      container.appendChild(overflowDiv);
-    },
   },
 
-  // beforeDestroy() {
-  //   window.removeEventListener("resize", this.checkDeviceType);
-  // },
   mounted() {
     this.windowWidth = window.innerWidth;
 
@@ -1532,27 +366,6 @@ export default {
         this.isMobile = false;
       }
     });
-    if (window.innerWidth > 992) {
-      this.wrapSwiperWrapper();
-    }
-
-    // this.checkDeviceType();
-    // window.addEventListener("resize", this.checkDeviceType);
-
-    // 启动计时
-    this.startTimer();
-    // 获取容器和内容
-
-    const shaerwidth = this.$refs.caseSharingList;
-    if (shaerwidth) {
-      const contentWidth = shaerwidth.scrollWidth; // 内容总宽度
-      const containerWidth = shaerwidth.clientWidth; // 容器可见宽度
-
-      // 计算滚动到中间的位置
-      const scrollLeft = (contentWidth - containerWidth) / 2;
-      // 设置滚动位置
-      shaerwidth.scrollLeft = scrollLeft;
-    }
   },
 };
 </script>
@@ -1600,123 +413,6 @@ i {
 }
 
 @media screen and (max-width: 1140px) {
-  .smile-NewBanner {
-    padding: 0 15px;
-    margin-top: 80px;
-    height: 203px;
-    position: relative;
-    img {
-      width: 200px;
-      position: absolute;
-      top: -59px;
-      right: 64px;
-      // z-index: 95;
-    }
-
-    .smile-NewBanner-Title {
-      position: absolute;
-      bottom: 58px;
-      left: 28px;
-      span {
-        font-style: normal;
-        color: #4570b6;
-        font-family: "Poppins", sans-serif;
-        font-size: 45.469px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 49.743px;
-      }
-      h3 {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 24.55px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26.858px; /* 109.4% */
-      }
-      p {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 9.82px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 21.358px; /* 217.5% */
-        letter-spacing: 0.295px;
-      }
-    }
-  }
-
-  .icl-WhatChoose {
-    padding: 40px 15px;
-    .icl-WhatChoose-title {
-      color: #4570b6;
-      font-family: "Noto Sans TC" !important;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 24.567px;
-    }
-    .icl-WhatChoose-content-one {
-      margin: 0 auto;
-      max-width: 100vw;
-      margin-top: 30px;
-
-      .icl-WhatChoose-content-one-img {
-      }
-      .icl-WhatChoose-content-one-text {
-        margin: 0 auto;
-        max-width: 100vw;
-        margin-top: 30px;
-        p {
-          color: #6d6e71;
-          font-family: "Noto Sans TC" !important;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 30px;
-          letter-spacing: 4.8px;
-          span {
-            color: #4570b6;
-            font-family: "Noto Sans TC" !important;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 30px;
-            letter-spacing: 4.8px;
-          }
-        }
-      }
-    }
-
-    .icl-WhatChoose-content-two {
-      margin: 0 auto;
-      max-width: 100vw;
-      & > div {
-        margin-top: 30px;
-        border-radius: 7.168px;
-        background: #f4fafc;
-        padding: 27px 32px 27px 34px;
-        h4 {
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 21.505px; /* 89.603% */
-          margin-bottom: 15px;
-        }
-        p {
-          color: #6d6e71;
-          font-family: "Noto Sans TC";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 25.089px; /* 156.805% */
-          letter-spacing: 4.8px;
-        }
-      }
-    }
-  }
   .icl-btn {
     margin-top: 30px;
     display: flex;
@@ -1755,221 +451,258 @@ i {
     text-align: center;
     margin: 0px auto 30px;
   }
+}
 
-  // 案例分享
-  .CaseSharing {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-mobile-share.avif")
-      no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 86px 0 110px;
+// 移动端
+@media screen and (max-width: 992px) {
+  .smile-NewBanner {
+    padding: 0 3.85vw;
+    margin-top: 80px;
+    height: 62.56vw;
     position: relative;
-
-    .CaseSharing-Box {
-      position: relative;
-      h3 {
-        position: absolute;
-        top: -40px;
-        right: 30px;
-        text-align: right;
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 20px;
-      }
-      .CaseSharing-list::-webkit-scrollbar {
-        display: none;
-      }
-      .CaseSharing-list {
-        display: flex;
-
-        justify-content: center;
-        gap: 13.26px;
-        width: 100vw;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scrollbar-width: none;
-
-        & > .CaseSharing-list-item:nth-child(2) {
-          padding-top: 121px;
-        }
-        & > .CaseSharing-list-item:nth-child(3) {
-          padding-top: 170px;
-        }
-        .CaseSharing-list-item {
-          & > a {
-            display: block;
-            width: 175px;
-            box-shadow: -1.768px 1.768px 0px 0px #4570b6;
-
-            position: relative;
-            margin-bottom: 13.26px;
-            span {
-              position: absolute;
-              left: 8px;
-              bottom: 8px;
-              color: #fff;
-              text-align: center;
-              font-family: "Noto Sans TC";
-              font-size: 13.263px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 0.83;
-              background: #4570b6;
-              padding: 4px 6px;
-            }
-            i {
-              position: absolute;
-              right: 8px;
-              bottom: 8px;
-              width: 23px;
-              height: 23px;
-              border-radius: 2.21px;
-              background: #f00;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              svg {
-                width: 11px;
-              }
-            }
-          }
-        }
-      }
+    img {
+      width: 46.92vw;
+      position: absolute;
+      top: 25.64vw;
+      right: 3.08vw;
     }
 
-    .CaseSharing-btn {
-      width: 114.287px;
-      height: 113.922px;
-
+    .smile-NewBanner-Title {
       position: absolute;
-      bottom: 0px;
-      right: 0;
+      top: 13.59vw;
+      left: 28px;
+      span {
+        font-style: normal;
+        color: #4570b6;
+        font-family: "Poppins", sans-serif;
+        font-size: 11.67vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12.74vw;
+      }
+      h3 {
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 6.28vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 109.4%;
+      }
+      p {
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 2.51vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 217.5%;
+        letter-spacing: 0.08vw;
+      }
     }
   }
 
-  .latestNews {
-    margin-bottom: 40px;
-    background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-newdongtai-mobile.jpg")
-      no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 209vw;
-    // padding-top: 130px;
-    padding-top: 33.33vw;
-
-    .top-btnV2new {
-      position: absolute;
-      bottom: 20px;
-      right: 15px;
-    }
-
-    .latestNews-tip {
-      position: absolute;
-      // top: 55px;
-      top: 14.1vw;
-      left: 0;
-      background: #c13550;
-      color: #fff;
+  // 面包屑
+  .menu-breadcrumb {
+    padding-left: 28px;
+    a {
+      color: #6d6e71;
       font-family: "Noto Sans TC";
-      // font-size: 20px;
-      font-size: 5.12vw;
+      font-size: 3.08vw;
       font-style: normal;
-      font-weight: 700;
-      line-height: 1.95;
-      padding: 5px 24px;
+      font-weight: 300;
+      line-height: 362.5%;
+      letter-spacing: 0.09vw;
     }
-
-    .latestNews-in {
-      // width: 252px;
-      width: 64.61vw;
-      margin: 0 auto;
-      .latestNews-title {
-        color: #c13550;
-        font-family: "Poppins", sans-serif;
-        // font-size: 20.81px;
-        font-size: 5.12vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.58;
-        i {
-          font-style: normal;
-          display: block;
-        }
-        span {
-          margin-left: 26px;
-          margin-right: 4px;
-          display: inline-block;
-          color: #fff;
-          font-family: "Poppins", sans-serif;
-          // font-size: 20.81px;
-          font-size: 5.1vw;
-          font-style: normal;
-          font-weight: 700;
-          // line-height: 33px;
-          line-height: 1.65;
-          background: #c13550;
-          padding: 0 5px;
-        }
-      }
-      p {
-        margin-top: 9px;
-        color: #6d6e71;
-        text-align: justify;
-        font-family: "Noto Sans TC";
-        // font-size: 16px;
-        font-size: 4.1vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.48;
-        letter-spacing: 3.2px;
-      }
+    & > a:last-child {
+      color: #4570b6;
+      font-weight: 500;
     }
+  }
 
-    .latestNews-btn {
-      border: 1px solid #c13550;
-      border-radius: 50%;
-      // width: 172px;
-      // height: 172px;
+  // 眼睛检查及矫视前
+  .check-eye {
+    background: #f4fafc;
+    padding-top: 7.69vw;
+    padding-bottom: 17.18vw;
+    .check-eye-title {
+      max-width: 84.62vw;
+      text-align: center;
 
-      width: 44.1vw;
-      height: 44.1vw;
-      margin-top: 24px;
-      margin-left: auto;
-      margin-right: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 17px;
-      svg {
-        // width: 19px;
-        // height: 19px;
-        width: 4.84vw;
-        height: 4.87vw;
-      }
-
-      span {
-        color: #c13550;
-        text-align: center;
+      h2 {
+        margin-bottom: 0;
+        color: #4570b6;
         font-family: "Noto Sans TC";
-        // font-size: 18.133px;
-        font-size: 4.6vw;
+        font-size: 5.13vw;
         font-style: normal;
         font-weight: 900;
-        line-height: 0.71;
+        line-height: 195%;
+      }
+
+      .check-eye-title-subtitle {
+        margin-top: 2.82vw;
+        margin-bottom: 7.69vw;
+        color: #6d6e71;
+        font-family: "Noto Sans HK";
+        font-size: 3.59vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 250%;
+        letter-spacing: 1.08vw;
+      }
+      .check-eye-title-date {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: 3.59vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5;
+        letter-spacing: 1.08vw;
+      }
+    }
+
+    .check-eye-list {
+      display: flex;
+      justify-content: center;
+      margin-top: 5.64vw;
+      gap: 6.15vw 5.64vw;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        width: 39.49vw;
+        height: 39.49vw;
+        flex-shrink: 0;
+        border-radius: 50%;
+        border: 0.5px solid #4570b6;
+        img {
+          width: 35.64vw;
+          height: auto;
+        }
+      }
+      li:nth-child(even) {
+        transform: translateY(7.69vw);
+      }
+    }
+  }
+
+  //矯視前停 con 知多啲
+  .CorrectedVisionBefore {
+    padding-top: 23px;
+    .CorrectedVisionBefore-iframe {
+      img {
+        width: 46px;
+        height: 48px;
+        margin: 0 auto;
+      }
+      h2 {
+        width: fit-content;
+        margin: 8px auto 17px;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 103.173%;
+        letter-spacing: 2px;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 34px;
+          height: 24px;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          left: -36px;
+          bottom: -4px;
+        }
+
+        &::after {
+          content: "";
+          width: 34px;
+          height: 24px;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          right: -36px;
+          bottom: -4px !important;
+        }
+      }
+      .iframe-container {
+        width: 100%;
+        aspect-ratio: 560/315;
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+
+    .CorrectedVisionBefore-Process {
+      margin-top: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px 16px;
+      .CorrectedVisionBefore-Process-item {
+        width: 161px;
+        height: 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        p {
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans TC";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 121.429%;
+        }
+      }
+      & > .CorrectedVisionBefore-Process-item:nth-child(1) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg1.avif");
+        background-size: 100% auto;
+        img {
+          width: 51px;
+          height: auto;
+        }
+      }
+      & > .CorrectedVisionBefore-Process-item:nth-child(2) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg2.avif");
+        background-size: 100% auto;
+        img {
+          width: 48px;
+          height: auto;
+        }
+      }
+      & > .CorrectedVisionBefore-Process-item:nth-child(3) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg3.avif");
+        background-size: 100% auto;
+        img {
+          width: 68px;
+          height: auto;
+        }
+      }
+      & > .CorrectedVisionBefore-Process-item:nth-child(4) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg4.avif");
+        background-size: 100% auto;
+        img {
+          width: 29px;
+          height: auto;
+        }
       }
     }
   }
 
   .CaseSharingV2 {
     width: fit-content;
-
     margin: 0 auto;
+    margin-top: 50px;
     & > div:nth-child(1) {
       display: flex;
       align-items: center;
@@ -2003,1392 +736,6 @@ i {
   }
 }
 
-// 移动端
-@media screen and (max-width: 992px) {
-  .smile-newCenter {
-    .smile-newCenter-menu {
-      padding: 0 15px;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      letter-spacing: 0.36px;
-      padding-left: 28px;
-      color: #6d6e71;
-      a {
-        color: #6d6e71;
-        font-family: "Noto Sans TC";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 3.6;
-        letter-spacing: 0.36px;
-      }
-      & > a:last-child {
-        color: #456db6;
-        font-weight: 500;
-      }
-    }
-  }
-  // 四大特点
-  .smilepro-four-feature {
-    padding: 0 15px;
-
-    .smilepro-four-feature-Box {
-      max-width: 332px;
-      margin: 0 auto;
-      .smilepro-four-feature-Box-top {
-        h3 {
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 1;
-        }
-        p {
-          margin-top: 13.75px;
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 1.42;
-          letter-spacing: 2.1px;
-        }
-      }
-
-      // 内容
-      .smilepro-four-feature-Box-List {
-        margin-top: 40px;
-        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-four-feature/smilepro-four-feature-mobileBg4.avif");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 72%;
-
-        .smilepro-four-feature-Box-List-item {
-          display: flex;
-          align-items: center;
-          gap: 20.32px;
-          margin-bottom: 34px;
-          min-width: 284px;
-
-          .smilepro-four-feature-Box-List-item-number {
-            width: 74px;
-            color: #4570b6;
-            font-family: "Poppins";
-            font-size: 60.224px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 0.3;
-          }
-          .smilepro-four-feature-Box-List-item-text {
-            h4 {
-              color: #4570b6;
-              leading-trim: both;
-              text-edge: cap;
-              font-family: "Noto Sans TC";
-              font-size: 14.501px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.5;
-            }
-            p {
-              color: #4570b6;
-              leading-trim: both;
-              text-edge: cap;
-              font-family: "Noto Sans TC";
-              font-size: 14.501px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 21.751px;
-            }
-          }
-        }
-        & > .smilepro-four-feature-Box-List-item:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
-  // 表格
-  .smilepro-difference {
-    margin-top: 93px;
-    .smilepro-difference-title {
-      display: flex;
-      justify-content: center;
-      & > div {
-        display: inline-block;
-        color: #4570b6;
-        text-align: center;
-        font-family: "Noto Sans TC";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 1.05;
-        position: relative;
-
-        &::after {
-          content: "";
-          background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png")
-            no-repeat;
-          width: 110.062px;
-          height: 49px;
-          position: absolute;
-          top: -100%;
-          right: -44px;
-        }
-
-        &::before {
-          content: "一圖看清";
-          position: absolute;
-          top: calc(-100% + 1px);
-          right: -32px;
-          color: #fff;
-          font-family: "Noto Sans HK";
-          font-size: 21.031px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 2;
-          transform: rotate(6deg);
-          z-index: 2;
-        }
-      }
-    }
-
-    .custom-comparison-table {
-      margin-top: 30px;
-      width: 100%;
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-
-    .custom-comparison-table tr {
-      position: relative;
-      z-index: 2;
-      height: 82px;
-    }
-    .custom-comparison-table th,
-    .custom-comparison-table td {
-      border-bottom: 1px solid #d0d0d0;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    .custom-comparison-table thead th {
-      background: #f4fafc;
-      width: 107px;
-      height: 85px;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 1.357;
-      width: 27.18vw;
-    }
-
-    .custom-comparison-table thead th:nth-child(1) {
-      width: 17.95vw;
-    }
-
-    .custom-comparison-table thead tr > th:nth-child(1) {
-      background: none;
-    }
-    .custom-comparison-table thead tr > th:nth-child(3) {
-      background: #4570b6;
-      color: #fff;
-      line-height: 1.357;
-    }
-
-    .custom-comparison-table tbody tr td {
-      color: #60605f;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 1.314;
-    }
-
-    .custom-comparison-table tbody tr > td:nth-child(1) {
-      background: #f8f8f8;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 21.031px;
-      p {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 21.031px;
-      }
-    }
-
-    .custom-comparison-table tbody tr > td:nth-child(3) {
-      background: #5a8ad6;
-
-      color: #fff;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.314;
-      letter-spacing: 0.6px;
-    }
-  }
-
-  .icl-introVedio {
-    position: relative;
-    &::before {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg1.png");
-      position: absolute;
-      left: 0;
-      top: -89px;
-      z-index: 1;
-      pointer-events: none;
-    }
-    &::after {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg2.png");
-      position: absolute;
-      right: -61px;
-      top: 15px;
-      z-index: 1;
-      pointer-events: none;
-    }
-    padding: 52px 15px 100px;
-    .icl-introVedio-intro {
-      .icl-introVedio-intro-number {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-
-        .steps {
-          width: 25px;
-          color: #6d6e71;
-          font-family: "Poppins", sans-serif;
-          font-size: 16.994px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          & > div:last-child {
-            margin-bottom: 0;
-          }
-          div {
-            position: relative;
-            z-index: 2;
-            border-right: 1px solid #6d6e71;
-            display: flex;
-            align-items: flex-start;
-            justify-content: end;
-            margin-bottom: 10px;
-            height: 65px;
-            padding-right: 8px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-
-            &:hover,
-            &.active {
-              color: #4570b6;
-              font-family: "Poppins";
-              font-size: 16.994px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.4;
-              border-right: 2px solid #4570b6;
-            }
-          }
-        }
-
-        .content-area {
-          position: relative;
-          .content-area-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            p {
-              color: #4570b6;
-              font-family: "Noto Sans TC";
-              font-size: 15.8px;
-              font-style: normal;
-              font-weight: 900;
-              line-height: 1.26;
-              letter-spacing: -0.79px;
-            }
-            svg {
-              position: absolute;
-              top: 20px;
-              left: 110px;
-            }
-          }
-
-          .content-area-img {
-            max-width: 290px;
-            position: relative;
-            z-index: 2;
-            img {
-              max-width: 100%;
-              height: auto;
-            }
-            .content-area-text {
-              position: absolute;
-              // bottom: 12px;
-              margin-top: 13px;
-              left: 50%;
-              transform: translateX(-50%);
-              width: 228px;
-              color: #6d6e71;
-              font-family: "Noto Sans TC";
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 1.28;
-              letter-spacing: 1.4px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .gameBox {
-    .gameBox-content {
-      padding-top: 52px;
-      // padding-top: 65px;
-      // max-width: 1654.98px;
-      // width: 86.14vw;
-      // height: 44.375vw;
-      // max-height: 852.5px;
-      -webkit-touch-callout: none; /* 禁用长按菜单 */
-      -webkit-user-select: none; /* 禁用文本选择 */
-      user-select: none;
-      touch-action: none; /* 禁用默认触摸行为 */
-
-      background-image: url("https://statichk.cmermedical.com/smile/smileproV2/game/smilepro-game-mobileBg.avif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-
-      .folder {
-        text-align: center;
-        transition: all 0.3s ease;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        img,
-        svg {
-          width: 116.492px;
-
-          margin-bottom: 10px;
-          transition: transform 0.3s ease;
-        }
-
-        button {
-          margin-top: 10px;
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: white;
-          border: none;
-          cursor: pointer;
-          transition: background-color 0.3s;
-
-          &:hover {
-            background-color: #0056b3;
-          }
-        }
-      }
-
-      .draggable {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: move;
-        transition: background-color 0.3s, box-shadow 0.3s;
-        user-select: none;
-        width: fit-content;
-
-        img {
-          width: 162.684px;
-          height: 162.684px;
-          flex-shrink: 0;
-          border-radius: 13px;
-        }
-
-        .draggable-item-text {
-          color: #6d6e71;
-          text-align: center;
-          font-family: "Noto Sans TC";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 1.48;
-          letter-spacing: 1.4px;
-        }
-
-        &:hover {
-          background-color: #e0e0e0;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-      }
-
-      & > .draggable:nth-child(1) {
-        position: absolute;
-        left: 22px;
-        top: 96px;
-      }
-    }
-  }
-
-  .smile-pro-evaluateV2 {
-    background: #f4fafc;
-    margin-top: 40px;
-    padding-top: 44px;
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-    .smile-pro-evaluateV2-Box {
-      .smile-pro-evaluateV2-Box-title {
-        margin: 0 auto;
-        width: 146.775px;
-        height: 120.004px;
-        flex-shrink: 0;
-        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/evaluate/smilepro-evaluate-title-mobile1.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 1.56;
-        letter-spacing: 2px;
-        &::after {
-          position: absolute;
-          content: "";
-          width: 90px;
-          height: 65px;
-          background-image: url("https://statichk.cmermedical.com/smile/smileproV2/evaluate/smilepro-evaluate-title-mobile2.png");
-          top: -28px;
-          left: -58px;
-        }
-      }
-
-      .smile-pro-evaluateV2-Box-content {
-        margin-top: 12px;
-        margin-left: 30px;
-        height: 333px;
-        position: relative;
-        &::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
-          background-repeat: no-repeat;
-          width: 180.251px !important;
-          height: 333px;
-          border-radius: 20px;
-          z-index: 3;
-        }
-        .swiper-overflow {
-          overflow: hidden;
-        }
-        .swiperWrap {
-          z-index: auto !important;
-          overflow: unset;
-          position: relative;
-          .swiper-wrapper {
-            align-items: center;
-            .swiperWrap-item {
-              transition: all 0.3s ease;
-              & > div {
-                background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg.png");
-                background-repeat: no-repeat;
-                background-color: white;
-
-                width: 165px !important;
-                height: 302px;
-                padding: 40px 23.5px 43px;
-                text-align: center;
-                position: relative;
-                z-index: 1;
-                svg {
-                  margin: 0 auto;
-                  width: 69px;
-                  height: 69px;
-                }
-
-                .swiperWrap-item-text {
-                  margin-top: 10px;
-                  color: #4570b6;
-                  text-align: justify;
-                  font-family: "Noto Sans TC";
-                  font-size: 12px;
-                  font-style: normal;
-                  font-weight: 300;
-                  line-height: 1.666;
-                }
-                .swiperWrap-item-name {
-                  position: absolute;
-                  left: 23.5px;
-                  bottom: 35px;
-                  text-align: left;
-                  i {
-                    font-style: normal;
-                  }
-                  color: #6d6e71;
-                  font-family: Inter;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 1.14;
-                  letter-spacing: 0.84px;
-                }
-              }
-            }
-            .swiper-slide-active {
-              & > div {
-                border-radius: 20px;
-                // background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
-                // background-repeat: no-repeat;
-                background-color: white;
-                background-image: none;
-                width: 180.251px !important;
-                height: 333px;
-                padding: 48px 29px 46px;
-                text-align: center;
-                position: relative;
-                svg {
-                  margin: 0 auto;
-                  width: 74px;
-                  height: 74px;
-                  flex-shrink: 0;
-                  path {
-                    fill: #4570b6;
-                  }
-                }
-
-                .swiperWrap-item-text {
-                  color: #4570b6;
-                  text-align: justify;
-                  font-family: "Noto Sans TC";
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 300;
-                  line-height: 1.714;
-                }
-                .swiperWrap-item-name {
-                  position: absolute;
-                  left: 29px;
-                  bottom: 46px;
-                  text-align: left;
-                  i {
-                    font-style: normal;
-                  }
-                  color: #6d6e71;
-                  font-family: Inter;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 1.14;
-                  letter-spacing: 0.84px;
-                }
-              }
-            }
-          }
-          .swiper-pagination {
-            width: clamp(93px, 47.69vw, 186px);
-            max-width: 186px;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 9;
-            & > div {
-              z-index: 9;
-              pointer-events: auto;
-              background-image: none;
-            }
-            .swiper-button-next {
-              right: 0;
-              svg {
-                width: clamp(20px, 10.26vw, 40px);
-              }
-            }
-            .swiper-button-prev {
-              left: clamp(-16px, -4.1vw, -8px);
-              svg {
-                width: clamp(20px, 10.26vw, 40px);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// 小于390
-@media screen and (max-width: 389px) {
-  .smile-NewBanner {
-    padding: 0 15px;
-    margin-top: 20.51vw;
-    height: 52.5vw;
-    position: relative;
-    img {
-      width: 51.28vw;
-      position: absolute;
-
-      top: -15.12vw;
-      right: 20.51vw;
-    }
-
-    .smile-NewBanner-Title {
-      position: absolute;
-      bottom: 14.87vw;
-      left: 7.179vw;
-      span {
-        font-style: normal;
-        color: #4570b6;
-        font-family: "Poppins", sans-serif;
-        font-size: 11.53vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.1;
-      }
-      h3 {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 6.29vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.09;
-      }
-      p {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 2.517vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 2.175;
-        letter-spacing: 0.295px;
-      }
-    }
-  }
-
-  .smile-newCenter {
-    .smile-newCenter-menu {
-      padding: 0 15px;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      letter-spacing: 0.36px;
-      padding-left: 28px;
-      color: #6d6e71;
-      a {
-        color: #6d6e71;
-        font-family: "Noto Sans TC";
-        font-size: 3.07vw;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 3.6;
-        letter-spacing: 0.36px;
-      }
-      & > a:last-child {
-        color: #456db6;
-        font-weight: 500;
-      }
-    }
-
-    // 内容
-  }
-
-  .icl-WhatChoose {
-    padding: 40px 15px;
-    .icl-WhatChoose-title {
-      color: #4570b6;
-      font-family: "Noto Sans TC" !important;
-      font-size: 5.12vw;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 1.2;
-    }
-    .icl-WhatChoose-content-one {
-      margin: 0 auto;
-      max-width: 92.3vw;
-      margin-top: 7.69vw;
-
-      .icl-WhatChoose-content-one-text {
-        margin: 0 auto;
-        max-width: 92.3vw;
-        margin-top: 7.69vw;
-        text-align: justify;
-
-        p {
-          color: #6d6e71;
-          font-family: "Noto Sans TC" !important;
-          font-size: 4.1vw;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 1.875;
-          letter-spacing: 1.23vw;
-          span {
-            color: #4570b6;
-            font-family: "Noto Sans TC" !important;
-            font-size: 4.1vw;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.875;
-            letter-spacing: 1.23vw;
-          }
-        }
-      }
-    }
-
-    .icl-WhatChoose-content-two {
-      margin: 0 auto;
-      max-width: 92.3vw;
-      & > div {
-        margin-top: 7.69vw;
-        border-radius: 1.837vw;
-        background: #f4fafc;
-        padding: 6.92vw 8.25vw 6.92vw 8.717vw;
-        h4 {
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: 6.15vw;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 0.89;
-          margin-bottom: 3.846vw;
-        }
-        p {
-          color: #6d6e71;
-          font-family: "Noto Sans TC";
-          font-size: 4.1vw;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 1.56;
-          letter-spacing: 1.23vw;
-        }
-      }
-    }
-  }
-
-  // 四大特点
-  .smilepro-four-feature {
-    padding: 0 15px;
-
-    .smilepro-four-feature-Box {
-      max-width: 85.13vw;
-      margin: 0 auto;
-      .smilepro-four-feature-Box-top {
-        h3 {
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: 5.13vw;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 1;
-        }
-        p {
-          margin-top: 3.53vw;
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: 3.59vw;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 1.42;
-          letter-spacing: 0.54vw;
-        }
-      }
-
-      // 内容
-      .smilepro-four-feature-Box-List {
-        margin-top: 40px;
-        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-four-feature/smilepro-four-feature-mobileBg4.avif");
-        background-repeat: no-repeat;
-        background-position: right top;
-
-        .smilepro-four-feature-Box-List-item {
-          display: flex;
-          align-items: center;
-          gap: 5.21vw;
-          margin-bottom: 8.72vw;
-          min-width: 72.82vw;
-
-          .smilepro-four-feature-Box-List-item-number {
-            width: 18.97vw;
-            color: #4570b6;
-            font-family: "Poppins";
-            font-size: 15.44vw;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 0.3;
-          }
-          .smilepro-four-feature-Box-List-item-text {
-            h4 {
-              color: #4570b6;
-              leading-trim: both;
-              text-edge: cap;
-              font-family: "Noto Sans TC";
-              font-size: 3.72vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.5;
-            }
-            p {
-              color: #4570b6;
-              leading-trim: both;
-              text-edge: cap;
-              font-family: "Noto Sans TC";
-              font-size: 3.72vw;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 1.44;
-            }
-          }
-        }
-        & > .smilepro-four-feature-Box-List-item:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
-  // 表格
-  .smilepro-difference {
-    margin-top: 23.85vw;
-    .smilepro-difference-title {
-      display: flex;
-      justify-content: center;
-      & > div {
-        display: inline-block;
-        color: #4570b6;
-        text-align: center;
-        font-family: "Noto Sans TC";
-        font-size: 5.13vw;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 1.05;
-        position: relative;
-
-        &::after {
-          content: "";
-          background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png")
-            no-repeat;
-          width: 110.062px;
-          height: 49px;
-          position: absolute;
-          top: calc(-100% - 4px);
-          right: -44px;
-        }
-
-        &::before {
-          content: "一圖看清";
-          position: absolute;
-          top: calc(-100% - 2px);
-          right: -32px;
-          color: #fff;
-          font-family: "Noto Sans HK";
-          font-size: 21.031px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 2;
-          transform: rotate(6deg);
-          z-index: 2;
-        }
-      }
-    }
-
-    .custom-comparison-table {
-      margin-top: 7.69vw;
-      width: 100%;
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-
-    .custom-comparison-table tr {
-      position: relative;
-      z-index: 2;
-      height: 21.03vw;
-    }
-    .custom-comparison-table th,
-    .custom-comparison-table td {
-      border-bottom: 1px solid #d0d0d0;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    .custom-comparison-table thead th {
-      background: #f4fafc;
-      width: 27.44vw;
-      height: 21.79vw;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 3.59vw;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 1.357;
-      width: 27.18vw;
-    }
-
-    .custom-comparison-table thead th:nth-child(1) {
-      width: 17.95vw;
-    }
-
-    .custom-comparison-table thead tr > th:nth-child(1) {
-      background: none;
-    }
-    .custom-comparison-table thead tr > th:nth-child(3) {
-      background: #4570b6;
-      color: #fff;
-      line-height: 1.357;
-    }
-
-    .custom-comparison-table tbody tr td {
-      color: #60605f;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 3.08vw;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 1.314;
-    }
-
-    .custom-comparison-table tbody tr > td:nth-child(1) {
-      background: #f8f8f8;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 3.59vw;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1.44;
-      p {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 3.08vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.75;
-      }
-    }
-
-    .custom-comparison-table tbody tr > td:nth-child(3) {
-      background: #5a8ad6;
-
-      color: #fff;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 3.08vw;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.314;
-      letter-spacing: 0.6px;
-    }
-  }
-
-  .icl-introVedio {
-    position: relative;
-    &::before {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg1.png");
-      position: absolute;
-      left: 0;
-      top: -22.82vw;
-      z-index: 1;
-      pointer-events: none;
-    }
-    &::after {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg2.png");
-      position: absolute;
-      right: -15.64vw;
-      top: 3.85vw;
-      z-index: 1;
-      pointer-events: none;
-    }
-    padding: 13.33vw 15px 25.64vw;
-    .icl-introVedio-intro {
-      .icl-introVedio-intro-number {
-        display: flex;
-        justify-content: center;
-        gap: 2.56vw;
-
-        .steps {
-          width: 6.41vw;
-          color: #6d6e71;
-          font-family: "Poppins", sans-serif;
-          font-size: 4.36vw;
-          font-style: normal;
-          font-weight: 200;
-          line-height: normal;
-          & > div:last-child {
-            margin-bottom: 0;
-          }
-          div {
-            position: relative;
-            z-index: 2;
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-            border-right: 1px solid #6d6e71;
-            display: flex;
-            align-items: flex-start;
-            justify-content: end;
-            margin-bottom: 2.56vw;
-            height: 16.67vw;
-            padding-right: 2.05vw;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-
-            &:hover,
-            &.active {
-              color: #4570b6;
-              font-family: "Poppins";
-              font-size: 4.36vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.4;
-              border-right: 2px solid #4570b6;
-            }
-          }
-        }
-
-        .content-area {
-          position: relative;
-          .content-area-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            p {
-              color: #4570b6;
-              font-family: "Noto Sans TC";
-              font-size: 4.05vw;
-              font-style: normal;
-              font-weight: 900;
-              line-height: 1.26;
-              letter-spacing: -0.2vw;
-            }
-            svg {
-              position: absolute;
-              top: 5.13vw;
-              left: 28.21vw;
-            }
-          }
-
-          .content-area-img {
-            max-width: 74.36vw;
-            position: relative;
-            z-index: 2;
-            img {
-              max-width: 100%;
-              height: auto;
-            }
-            .content-area-text {
-              position: absolute;
-              // bottom: 3.08vw;
-              margin-top: 3.33vw;
-              left: 50%;
-              transform: translateX(-50%);
-              width: 58.46vw;
-              color: #6d6e71;
-              font-family: "Noto Sans TC";
-              font-size: 3.59vw;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 1.28;
-              letter-spacing: 1.4px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .smile-pro-evaluateV2 {
-    background: #f4fafc;
-    padding-top: 11.28vw;
-    padding-bottom: 7.69vw;
-    margin-bottom: 10.26vw;
-    .smile-pro-evaluateV2-Box {
-      .smile-pro-evaluateV2-Box-content {
-        margin-top: 3.08vw;
-        margin-left: 7.69vw;
-        height: 85.38vw;
-        position: relative;
-        &::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-
-          width: 46.22vw !important;
-          height: 85.38vw;
-          border-radius: 5.13vw;
-          z-index: 3;
-        }
-
-        .swiperWrap {
-          .swiper-wrapper {
-            align-items: center;
-            .swiperWrap-item {
-              & > div {
-                background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: white;
-                width: 42.31vw !important;
-                height: 77.44vw;
-                padding: 10.26vw 6.03vw 11.03vw;
-                text-align: center;
-                position: relative;
-                z-index: 1;
-                svg {
-                  margin: 0 auto;
-                  width: 17.69vw;
-                  height: 17.69vw;
-                }
-
-                .swiperWrap-item-text {
-                  margin-top: 2.56vw;
-                  color: #4570b6;
-                  text-align: justify;
-                  font-family: "Noto Sans TC";
-                  font-size: 3.08vw;
-                  font-style: normal;
-                  font-weight: 300;
-                  line-height: 1.666;
-                }
-                .swiperWrap-item-name {
-                  position: absolute;
-                  left: 6.03vw;
-                  bottom: 8.97vw;
-                  text-align: left;
-                  i {
-                    font-style: normal;
-                  }
-                  color: #6d6e71;
-                  font-family: Inter;
-                  font-size: 3.59vw;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 1.14;
-                  letter-spacing: 0.22vw;
-                }
-              }
-            }
-            .swiper-slide-active {
-              & > div {
-                border-radius: 5.13vw;
-                // background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
-                // background-repeat: no-repeat;
-                // background-size: cover;
-                // background-color: white;
-                background-color: white;
-
-                background-image: none;
-                width: 46.22vw !important;
-                height: 85.38vw;
-                padding: 12.31vw 7.44vw 11.79vw;
-                text-align: center;
-                position: relative;
-                z-index: 1;
-                svg {
-                  margin: 0 auto;
-                  width: 18.97vw;
-                  height: 18.97vw;
-                  flex-shrink: 0;
-                  path {
-                    fill: #4570b6;
-                  }
-                }
-
-                .swiperWrap-item-text {
-                  color: #4570b6;
-                  text-align: justify;
-                  font-family: "Noto Sans TC";
-                  font-size: 3.59vw;
-                  font-style: normal;
-                  font-weight: 300;
-                  line-height: 1.714;
-                }
-                .swiperWrap-item-name {
-                  position: absolute;
-                  left: 7.44vw;
-                  bottom: 11.79vw;
-                  text-align: left;
-                  i {
-                    font-style: normal;
-                  }
-                  color: #6d6e71;
-                  font-family: Inter;
-                  font-size: 3.59vw;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 1.14;
-                  letter-spacing: 0.22vw;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // 案例分享
-  .CaseSharing {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-mobile-share.avif")
-      no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 22.05vw 0 28.21vw;
-    position: relative;
-
-    .CaseSharing-Box {
-      position: relative;
-      h3 {
-        position: absolute;
-        top: -10.26vw;
-        right: 7.69vw;
-        text-align: right;
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 4.1vw;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 1.25;
-      }
-      .CaseSharing-list::-webkit-scrollbar {
-        display: none;
-      }
-      .CaseSharing-list {
-        display: flex;
-
-        // justify-content: center;
-        gap: 3.4vw;
-        width: 100vw;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scrollbar-width: none;
-
-        & > .CaseSharing-list-item:nth-child(2) {
-          padding-top: 31.03vw;
-        }
-        & > .CaseSharing-list-item:nth-child(3) {
-          padding-top: 43.59vw;
-        }
-        .CaseSharing-list-item {
-          a {
-            display: block;
-            width: 44.87vw;
-            box-shadow: -1.768px 1.768px 0px 0px #4570b6;
-
-            position: relative;
-            margin-bottom: 3.4vw;
-            span {
-              position: absolute;
-              left: 2.05vw;
-              bottom: 2.05vw;
-              color: #fff;
-              text-align: center;
-              font-family: "Noto Sans TC";
-              font-size: 3.4vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 0.83;
-              background: #4570b6;
-              padding: 1.03vw 1.54vw;
-            }
-            i {
-              position: absolute;
-              right: 2.05vw;
-              bottom: 2.05vw;
-              width: 5.9vw;
-              height: 5.9vw;
-              border-radius: 2.21px;
-              background: #f00;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              svg {
-                width: 2.82vw;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .CaseSharing-btn {
-      width: 29.23vw;
-      height: 29.23vw;
-
-      position: absolute;
-      bottom: 0px;
-      right: 0;
-    }
-  }
-
-  .CaseSharingV2 {
-    width: fit-content;
-
-    margin: 0 auto;
-    & > div:nth-child(1) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.94vw;
-      span {
-        color: #000;
-        text-align: center;
-        font-family: "Noto Sans TC";
-        font-size: 5.13vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 0.82;
-      }
-    }
-    & > div:nth-child(2) {
-      margin-top: 5.13vw;
-      display: flex;
-      justify-content: center;
-      gap: 5.13vw;
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 13.85vw;
-        height: 13.85vw;
-        border-radius: 50%;
-        border: 1px solid #4570b6;
-      }
-    }
-  }
-}
-
 // pc端
 @media screen and (min-width: 992px) {
   .changehon {
@@ -3403,697 +750,199 @@ i {
   .d-lg-block {
     display: block;
   }
-  // 中心简介
-  .smile-newCenter {
+  .smile-NewBanner {
+    padding: 0px;
+    margin-top: 159px;
+    height: clamp(258px, 26.88vw, 516px);
     position: relative;
-    .smile-newCenter-menu {
-      padding: 0px;
-      margin-bottom: clamp(29px, 3.02vw, 58px);
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      letter-spacing: clamp(0.18px, 0.02vw, 0.36px);
-      padding-left: clamp(38.5px, 4.01vw, 77px);
+    img {
+      width: clamp(194px, 20.21vw, 388px);
+      position: absolute;
+      top: clamp(25.5px, 2.66vw, 51px);
+      left: inherit;
+      right: clamp(18px, 1.88vw, 36px);
+    }
+
+    .smile-NewBanner-Title {
+      position: absolute;
+      bottom: clamp(45px, 4.69vw, 90px);
+      left: clamp(38.5px, 4.01vw, 77px);
+      span {
+        color: #4570b6;
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(68.75px, 7.16vw, 137.5px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 109.4%;
+        letter-spacing: 0;
+      }
+      h3 {
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(37px, 3.85vw, 74px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.09;
+      }
+      p {
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(14.75px, 1.54vw, 29.5px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 217.5%;
+        letter-spacing: clamp(0.45px, 0.05vw, 0.9px);
+      }
+    }
+  }
+
+  // 面包屑
+  .menu-breadcrumb {
+    padding-left: clamp(38.5px, 4.01vw, 77px);
+    a {
       color: #6d6e71;
-      a {
+      font-family: "Noto Sans TC";
+      font-size: clamp(10px, 1.04vw, 20px);
+      font-style: normal;
+      font-weight: 300;
+      line-height: 217.5%;
+      letter-spacing: clamp(0.3px, 0.03vw, 0.6px);
+    }
+    & > a:last-child {
+      color: #4570b6;
+      font-weight: 500;
+    }
+  }
+
+  // 眼睛检查及矫视前
+  .check-eye {
+    margin-top: clamp(6px, 0.63vw, 12px);
+    background: #f4fafc;
+    padding-top: clamp(43px, 4.48vw, 86px);
+    padding-bottom: clamp(77px, 8.02vw, 154px);
+    .check-eye-title {
+      text-align: center;
+
+      h2 {
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(15px, 1.56vw, 30px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: clamp(1.5px, 0.16vw, 3px);
+      }
+
+      .check-eye-title-subtitle {
+        margin-top: clamp(18px, 1.88vw, 36px);
+        margin-bottom: clamp(22px, 2.29vw, 44px);
         color: #6d6e71;
-        font-family: "Noto Sans TC" !important;
+        text-align: center;
+        font-family: "Noto Sans HK";
         font-size: clamp(10px, 1.04vw, 20px);
         font-style: normal;
         font-weight: 300;
-        line-height: 2.175;
-        letter-spacing: clamp(0.3px, 0.03vw, 0.6px);
+        line-height: 175%;
+        letter-spacing: clamp(3px, 0.31vw, 6px);
       }
-      & > a:last-child {
-        color: #456db6;
+      .check-eye-title-date {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: clamp(10px, 1.04vw, 20px);
+        font-style: normal;
         font-weight: 500;
+        line-height: 1.45;
+        letter-spacing: clamp(3px, 0.31vw, 6px);
       }
     }
-  }
 
-  // 四大特点
-  .smilepro-four-feature {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-four-feature/smilepro-four-feature-pcBg.webp");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      right: 0;
-      top: -81px;
-      pointer-events: none;
-      width: clamp(324px, 33.75vw, 648px);
-      height: clamp(325px, 33.85vw, 650px);
-    }
-    .smilepro-four-feature-Box {
-      max-width: clamp(538px, 56.04vw, 1076px);
-      margin: 0 auto;
-
-      .smilepro-four-feature-Box-top {
-        display: flex;
-        gap: clamp(23.5px, 2.45vw, 47px);
-
-        h3 {
-          span {
-            font-family: "Poppins";
-            font-weight: 700;
-          }
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: clamp(15px, 1.56vw, 30px);
-          font-style: normal;
-          font-weight: 900;
-          line-height: 1;
-        }
-        p {
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: clamp(10px, 1.04vw, 20px);
-          font-style: normal;
-          font-weight: 500;
-          line-height: 1.8;
-          letter-spacing: clamp(2.5px, 0.26vw, 5px);
-        }
-      }
-
-      // 内容
-      .smilepro-four-feature-Box-List {
-        margin-top: clamp(50px, 5.21vw, 100px);
-        position: relative;
-        z-index: 2;
-
-        display: flex;
-        flex-wrap: wrap;
-        gap: clamp(59px, 6.15vw, 118px) clamp(8.5px, 0.89vw, 17px);
-
-        .smilepro-four-feature-Box-List-item {
-          display: flex;
-          align-items: center;
-          // gap: clamp(16.5px,1.72vw,33px);
-          gap: clamp(10px, 1.04vw, 20px);
-          min-width: clamp(262px, 27.29vw, 524px);
-
-          .smilepro-four-feature-Box-List-item-number {
-            color: #4570b6;
-            font-family: "Poppins";
-            font-size: clamp(41.5px, 4.32vw, 83px);
-            font-style: normal;
-            font-weight: 700;
-            line-height: 0.3;
-            width: clamp(52.5px, 5.47vw, 105px);
-          }
-          .smilepro-four-feature-Box-List-item-text {
-            h4 {
-              color: #4570b6;
-              leading-trim: both;
-              text-edge: cap;
-              font-family: "Noto Sans TC";
-              font-size: clamp(10px, 1.04vw, 20px);
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.5;
-            }
-            p {
-              color: #4570b6;
-              leading-trim: both;
-              text-edge: cap;
-              font-family: "Noto Sans TC";
-              font-size: clamp(10px, 1.04vw, 20px);
-              font-style: normal;
-              font-weight: 400;
-              line-height: 1.5;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // 表格
-  .smilepro-difference {
-    margin-top: 230px;
-    .smilepro-difference-title {
+    .check-eye-list {
       display: flex;
       justify-content: center;
-      & > div {
-        display: inline-block;
+      margin-top: clamp(10px, 1.04vw, 20px);
+      gap: clamp(25px, 2.6vw, 50px);
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        width: clamp(168.5px, 17.55vw, 337px);
+        height: clamp(168.5px, 17.55vw, 337px);
+        flex-shrink: 0;
+        border-radius: 50%;
+        border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
+        img {
+          width: clamp(151.5px, 15.78vw, 303px);
+          height: auto;
+        }
+      }
+      li:nth-child(even) {
+        transform: translateY(clamp(33.5px, 3.49vw, 67px));
+      }
+    }
+  }
+
+  //矯視前停 con 知多啲
+  .CorrectedVisionBefore {
+    padding-top: 83px;
+    .CorrectedVisionBefore-iframe {
+      img {
+        width: 116px;
+        height: 121px;
+        margin: 0 auto;
+      }
+      h2 {
+        width: fit-content;
+        margin: 14px auto 68px;
         color: #4570b6;
         font-family: "Noto Sans TC";
         font-size: 30px;
         font-style: normal;
         font-weight: 900;
         line-height: 1;
+        letter-spacing: 3px;
         position: relative;
-        span {
-          color: #4570b6;
-          font-family: "Poppins";
-          font-size: 30px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 1;
-        }
-        &::after {
-          content: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-pc-titleBg.png");
+
+        &::before {
+          content: "";
+          width: 50px;
+          height: 30px;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
+            no-repeat;
+          background-size: 100% auto;
           position: absolute;
-          top: -66px;
+          left: -50px;
+          bottom: -4px;
+        }
+
+        &::after {
+          content: "";
+          width: 50px;
+          height: 30px;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
           right: -50px;
+          bottom: -4px !important;
         }
       }
-    }
-
-    .custom-comparison-table {
-      margin: 0 auto;
-      margin-top: 67px;
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-    .custom-comparison-table tr th {
-      height: 148px;
-    }
-    .custom-comparison-table tr {
-      height: 117px;
-    }
-    .custom-comparison-table th,
-    .custom-comparison-table td {
-      border-bottom: 1.5px solid #d0d0d0;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    .custom-comparison-table thead th {
-      background: #f4fafc;
-      color: #4570b6;
-      font-family: "Noto Sans TC";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 26px;
-      width: 253px;
-
-      span {
-        text-align: center;
-        font-family: "Poppins";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.3;
-      }
-    }
-
-    .custom-comparison-table thead th:nth-child(1) {
-      width: 210px;
-      border: none;
-    }
-
-    .custom-comparison-table thead tr > th:nth-child(1) {
-      background: none;
-    }
-    .custom-comparison-table thead tr > th:nth-child(3) {
-      background: #4570b6;
-      color: #fff;
-      line-height: 1.357;
-    }
-
-    .custom-comparison-table tbody tr td {
-      color: #60605f;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 1.125;
-      letter-spacing: 1px;
-    }
-
-    .custom-comparison-table tbody tr > td:nth-child(1) {
-      background: #f8f8f8;
-      color: #4570b6;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1.5;
-      letter-spacing: 4px;
-    }
-
-    .custom-comparison-table tbody tr > td:nth-child(3) {
-      background: #5a8ad6;
-      font-weight: 700;
-      color: #fff;
-    }
-    // 按钮
-    .icl-btn {
-      margin-top: 63px;
-    }
-  }
-
-  // 流程
-  .icl-introVedio {
-    width: 100vw;
-    position: relative;
-    &::after {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/intro/smilepro-intro-pc-bg.avif");
-      position: absolute;
-      top: -520px;
-      right: 0;
-      pointer-events: none;
-    }
-
-    padding: 200px 0 86px;
-    .icl-introVedio-intro {
-      .icl-introVedio-intro-number {
-        position: relative;
-        z-index: 2;
-        &::after {
-          content: url("https://statichk.cmermedical.com/smile/smileproV2/intro/smilepro-pc-intro-ricto.png");
-          position: absolute;
-          left: -378px;
-          bottom: -178px;
-          pointer-events: none;
-        }
-
-        width: fit-content;
+      .iframe-container {
+        width: 605px;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        gap: 35px;
-
-        .steps {
-          width: 60px;
-          color: #6d6e71;
-          font-family: "Poppins", sans-serif;
-          font-size: 38px;
-          font-style: normal;
-
-          font-weight: 400;
-          line-height: normal;
-
-          div {
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-            border-right: 1px solid #6d6e71;
-            display: flex;
-            align-items: flex-start;
-            justify-content: end;
-            margin-bottom: 30px;
-            height: 140px;
-            padding-right: 13.5px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            &:hover,
-            &.active {
-              color: #4570b6;
-              font-family: "Poppins", sans-serif;
-              font-size: 38px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.4;
-              border-right: 5px solid #4570b6;
-            }
-          }
-          & > div:last-child {
-            margin-bottom: 0;
-          }
-        }
-
-        .content-area {
-          position: relative;
-          flex: 1;
-          .content-area-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            p {
-              color: #4570b6;
-              font-family: "Noto Sans TC";
-              font-size: 30px;
-              font-style: normal;
-              font-weight: 900;
-              line-height: 1.26;
-              letter-spacing: 0;
-            }
-            svg {
-              width: 32px;
-              height: 32px;
-              position: absolute;
-              top: 40px;
-              left: 240px;
-            }
-          }
-
-          .content-area-img {
-            position: relative;
-            display: flex;
-            gap: 80px;
-            z-index: 2;
-            align-items: center;
-
-            img {
-              max-width: 647px;
-              height: auto;
-            }
-            .content-area-text {
-              left: 50%;
-
-              width: 220px;
-
-              color: #6d6e71;
-              font-family: "Noto Sans TC";
-              font-size: 23px;
-              font-style: normal;
-              font-weight: 350;
-              line-height: 1.52;
-              letter-spacing: 8.05px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .gameBox {
-    .gameBox-content {
-      padding-top: 52px;
-      // padding-top: 65px;
-      // max-width: 1654.98px;
-      // width: 86.14vw;
-      // height: 44.375vw;
-      // max-height: 852.5px;
-      background-image: url("https://statichk.cmermedical.com/smile/smileproV2/game/smilepro-game-mobileBg.avif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-
-      .folder {
-        text-align: center;
-        transition: all 0.3s ease;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        img,
-        svg {
-          width: 116.492px;
-
-          margin-bottom: 10px;
-          transition: transform 0.3s ease;
-        }
-
-        button {
-          margin-top: 10px;
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: white;
+        aspect-ratio: 560/315;
+        iframe {
+          width: 100%;
+          height: 100%;
           border: none;
-          cursor: pointer;
-          transition: background-color 0.3s;
-
-          &:hover {
-            background-color: #0056b3;
-          }
         }
-      }
-
-      .draggable {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: move;
-        transition: background-color 0.3s, box-shadow 0.3s;
-        user-select: none;
-        width: fit-content;
-
-        img {
-          width: 162.684px;
-          height: 162.684px;
-          flex-shrink: 0;
-          border-radius: 13px;
-        }
-
-        .draggable-item-text {
-          color: #6d6e71;
-          text-align: center;
-          font-family: "Noto Sans TC";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 1.48;
-          letter-spacing: 1.4px;
-        }
-
-        &:hover {
-          background-color: #e0e0e0;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-      }
-
-      & > .draggable:nth-child(1) {
-        position: absolute;
-        left: 22px;
-        top: 96px;
       }
     }
   }
 
-  // 用家见证
-  .smile-pro-evaluateV2 {
-    max-width: 100vw;
-    width: 100vw;
-
-    background: #f4fafc;
-    margin-top: 90px;
-    padding-top: 62px;
-    padding-bottom: 93px;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -125px;
-      right: 28px;
-      background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-evaluate-title-pc03.png");
-      background-repeat: no-repeat;
-      width: clamp(400px, 31.4vw, 603px);
-      height: clamp(300px, 25.72vw, 494px);
-      background-size: cover;
-      z-index: 1;
-    }
-
-    .smile-pro-evaluateV2-Box {
-      max-width: 1760px;
-      overflow: hidden;
-      margin: 0 auto;
-      position: relative;
-      .smile-pro-evaluateV2-Box-title {
-        width: 285px;
-        height: 234px;
-        flex-shrink: 0;
-        flex-shrink: 0;
-        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-evaluate-title-pc1.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 194px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 1.16;
-        letter-spacing: 15.3px;
-        writing-mode: vertical-rl;
-        &::after {
-          position: absolute;
-          content: "";
-          width: 163px;
-          height: 118px;
-          flex-shrink: 0;
-          background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-evaluate-title-pc2.png");
-          top: -59px;
-          left: -84px;
-        }
-      }
-
-      .smile-pro-evaluateV2-Box-content {
-        max-width: 1362px;
-        position: relative;
-        // position: absolute;
-        // top: 50%;
-        // left: 396px;
-        transform: translateX(396px);
-        height: 552.006px;
-        z-index: 2;
-
-        &::after {
-          content: "";
-          position: absolute;
-          left: -1px;
-          top: 0;
-          background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc-active.png");
-          background-repeat: no-repeat;
-          // background-color: white;
-          width: 300.502px !important;
-          height: 552.006px;
-          overflow: hidden;
-          border-radius: 35px;
-          z-index: 3;
-        }
-        .swiper-overflow {
-          overflow: hidden;
-        }
-        .swiperWrap {
-          z-index: auto !important;
-          overflow: unset;
-          .overflow-swiper {
-            overflow: hidden;
-          }
-
-          .swiper-wrapper {
-            align-items: center;
-            width: 100%;
-            & > .swiper-slide-next {
-              margin-left: -20px;
-            }
-            .swiper-slide-active ~ .swiper-slide {
-              margin-left: -18px;
-            }
-
-            .swiperWrap-item {
-              // width: 206.662px !important;
-
-              & > div {
-                background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc.png");
-                background-repeat: no-repeat;
-
-                width: 206.662px !important;
-                height: 378.96px;
-                flex-shrink: 0;
-                padding: 40px 29px 43px;
-                text-align: center;
-                position: relative;
-                svg {
-                  margin: 0 auto;
-                  width: 89px;
-                  height: 89px;
-                  flex-shrink: 0;
-                }
-
-                .swiperWrap-item-text {
-                  margin-top: 29px;
-                  color: #4570b6;
-                  text-align: justify;
-                  font-family: "Noto Sans TC";
-                  font-size: 14.466px;
-                  font-style: normal;
-                  font-weight: 300;
-                  line-height: 1.75;
-                  letter-spacing: normal;
-                }
-                .swiperWrap-item-name {
-                  position: absolute;
-                  left: 29px;
-                  bottom: 43px;
-                  text-align: left;
-                  i {
-                    font-style: normal;
-                  }
-                  color: #6d6e71;
-                  font-family: Inter;
-                  font-size: 14.466px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 1.3a;
-                  letter-spacing: 0.868px;
-                }
-              }
-            }
-            .swiper-slide-active {
-              width: 300.502px !important;
-              & > div {
-                // background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc-active.png");
-                // background-repeat: no-repeat;
-                background-image: none;
-                // background-color: white;
-                background-color: white;
-
-                width: 274px !important;
-                height: 552.006px;
-                flex-shrink: 0;
-                padding: 79px 36px 77px;
-                text-align: center;
-                position: relative;
-                margin: 0 auto;
-                svg {
-                  margin: 0 auto;
-                  width: 123px;
-                  height: 123px;
-
-                  flex-shrink: 0;
-                  path {
-                    fill: #4570b6;
-                  }
-                }
-
-                .swiperWrap-item-text {
-                  color: #4570b6;
-                  text-align: justify;
-                  font-family: "Noto Sans TC";
-                  font-size: 20px;
-                  font-style: normal;
-                  font-weight: 300;
-                  line-height: 1.75;
-                }
-                .swiperWrap-item-name {
-                  position: absolute;
-                  left: 49px;
-                  bottom: 77px;
-                  text-align: left;
-                  i {
-                    font-style: normal;
-                  }
-                  color: #6d6e71;
-                  font-family: Inter;
-                  font-size: 20px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 1.3;
-                  letter-spacing: 1.2px;
-                }
-              }
-            }
-          }
-          .swiper-pagination {
-            width: 300.502px;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 9;
-            & > div {
-              z-index: 9;
-              pointer-events: auto;
-              background-image: none;
-            }
-            .swiper-button-next {
-              right: 0;
-            }
-            .swiper-button-prev {
-              left: -14px;
-            }
-          }
-        }
-      }
-    }
+  // 分享给朋友
+  .CaseSharingV2 {
+    display: none;
   }
 }
 
@@ -4111,130 +960,6 @@ i {
     display: block;
   }
 
-  .smile-NewBanner {
-    padding: 0px;
-    margin-top: 159px;
-    height: 529px; 
-    position: relative;
-    img {
-      width: 388px;
-      position: absolute; 
-      top: 51px;
-      left: inherit;
-      right: 36px;
-    }
-
-    .smile-NewBanner-Title {
-      position: absolute;
-      bottom: 90px;
-      left: 77px;
-      span {
-        color: #4570b6;
-        font-family: "Poppins", sans-serif;
-        font-size: 137.67px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150.611px; /* 109.4% */
-      }
-      h3 {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 74.332px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.09;
-      }
-      p {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 29.733px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 64.668px; /* 217.5% */
-        letter-spacing: 0.892px;
-      }
-    }
-  }
-
-  .smile-newCenter {
-    width: 100vw;
-    .smile-newCenter-menu {
-      padding: 0px;
-      margin-bottom: clamp(29px, 3.02vw, 58px);
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      letter-spacing: 0.36px;
-      padding-left: clamp(38.5px, 4.01vw, 77px);
-      color: #6d6e71;
-      a {
-        color: #6d6e71;
-        font-family: "Noto Sans TC" !important;
-        font-size: clamp(10px, 1.04vw, 20px);
-        font-style: normal;
-        font-weight: 300;
-        line-height: 2.175;
-        letter-spacing: clamp(0.3px, 0.03vw, 0.6px);
-      }
-      & > a:last-child {
-        color: #456db6;
-        font-weight: 500;
-      }
-    }
-
-    // 内容
-  }
-
-  .icl-WhatChoose {
-    padding: 123px 0px;
-    .icl-WhatChoose-title {
-      max-width: 908px;
-      color: #4570b6;
-      font-family: "Noto Sans TC" !important;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 1;
-      margin: 0 auto;
-    }
-    .icl-WhatChoose-content-one {
-      margin: 0 auto;
-      margin-top: 26px;
-      display: flex;
-      justify-content: center;
-      gap: 31px;
-      & > div:nth-child(1) {
-        max-width: 463px;
-      }
-      & > div:nth-child(2) {
-        max-width: 415px;
-        text-align: justify;
-      }
-      // .icl-WhatChoose-content-one-img{
-
-      // }
-      .icl-WhatChoose-content-one-text {
-        p {
-          color: #6d6e71;
-          font-family: "Noto Sans TC";
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 1.95;
-          letter-spacing: 4px;
-          span {
-            color: #4570b6;
-            font-family: "Noto Sans TC";
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 45px;
-            letter-spacing: 4px;
-          }
-        }
-      }
-    }
-  }
   .icl-btn {
     margin-top: 35px;
     display: flex;
@@ -4271,158 +996,6 @@ i {
     text-align: center;
     margin: 0px auto 0px;
   }
-
-  // 案例分享
-  .CaseSharing {
-    max-width: 100vw;
-    overflow: hidden;
-    margin-top: 104px;
-    margin-bottom: 80px;
-    // background: url("https://statichk.cmermedical.com/smile/smileproV2/share/smilepro-pc-share-bg.png")
-    //   no-repeat;
-    //   background-position: 50% 0;
-
-    padding: 149px 0 228px;
-    position: relative;
-
-    &::after {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-pc-share-newbg.png");
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .CaseSharing-Box {
-      position: relative;
-      z-index: 2;
-      h3 {
-        position: absolute;
-        top: -70px;
-        right: 10px;
-        text-align: right;
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 39px;
-        text-align: right;
-      }
-      .CaseSharing-list {
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-
-        & > .CaseSharing-list-item:nth-child(2) {
-          padding-top: 97px;
-        }
-        & > .CaseSharing-list-item:nth-child(3) {
-          padding-top: 207px;
-        }
-        .CaseSharing-list-item {
-          & > a {
-            display: block;
-            width: 396px;
-
-            box-shadow: -4px 4px 0px 0px #4570b6;
-            position: relative;
-            margin-bottom: 30px;
-            span {
-              position: absolute;
-              left: 20px;
-              bottom: 16px;
-              color: #fff;
-              text-align: center;
-              font-family: "Noto Sans TC";
-              font-size: 30px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 0.83;
-              background: #4570b6;
-              padding: 10px 15px;
-            }
-            i {
-              position: absolute;
-              right: 20px;
-              bottom: 16px;
-              width: 53px;
-              height: 53px;
-              border-radius: 5px;
-              background: #f00;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              svg {
-                width: 26px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .CaseSharing-btn {
-      width: 164.085px;
-      height: 163.562px;
-
-      position: absolute;
-      bottom: 60px;
-      right: -20px;
-    }
-    .icl-btn {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 0;
-    }
-  }
-
-  .CaseSharingV2 {
-    display: none;
-    width: fit-content;
-
-    margin: 0 auto;
-    & > div:nth-child(1) {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-      gap: 13px;
-      span {
-        color: #000;
-        text-align: center;
-        font-family: "Noto Sans TC";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 25px; /* 83.333% */
-      }
-    }
-    & > div:nth-child(2) {
-      margin-top: 49px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      a {
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 82px;
-        height: 82px;
-        border-radius: 50%;
-        border: 1px solid #4570b6;
-        svg {
-          width: 30px;
-        }
-      }
-    }
-  }
-
   // 向上
   .top-btnV2 {
     position: fixed;
@@ -4430,49 +1003,6 @@ i {
     bottom: 140px;
     z-index: 999;
     cursor: pointer;
-  }
-}
-
-@media screen and (min-width: 1319px) {
-  .icl-peculiarity {
-    .icl-peculiarity-list {
-      & > .icl-peculiarity-list-item:nth-child(1) {
-        margin-left: 45px;
-      }
-    }
-    &::after {
-      content: "";
-      background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-peculiarity-bg1.avif")
-        no-repeat;
-      pointer-events: none;
-      width: 660px;
-      height: 502px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-    .icl-peculiarity-text {
-      max-width: 330px;
-      margin-left: 0;
-      color: #6d6e71;
-      text-align: justify;
-      font-family: "Noto Sans TC";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 35px; /* 175% */
-      letter-spacing: 4px;
-    }
-
-    .icl-peculiarity-container {
-      gap: 0;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: center;
-      flex-wrap: nowrap;
-      margin-top: 64px;
-    }
   }
 }
 </style>

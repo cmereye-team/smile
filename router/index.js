@@ -171,6 +171,16 @@ export const $router = [
     title: "矯視資訊影片",
     component: resolve("pages/new-page/orthopedic-video.vue"),
   },
+
+  {
+    path: "/videoV2",
+    name: "videoV2",
+    // title: '個案分享及矯視資訊影片',
+    // component: resolve('pages/video/index.vue')
+    title: "矯視資訊影片",
+    component: resolve("pages/new-page/orthopedic-videoV2.vue"),
+  },
+
   {
     path: "/ophthalmicInfo/mediaCov",
     name: "ophthalmicInfo/mediaCov",
