@@ -139,6 +139,8 @@
         </div>
       </div>
       <div class="lecture-image">
+        <img src="https://statichk.cmermedical.com/smile/20250711_8月講座_CT.webp?ver=8" alt="8月 中環" />
+        <img src="https://statichk.cmermedical.com/smile/20250711_8月講座_MK.webp?ver=8" alt="8月 旺角" />
         <img src="https://statichk.cmermedical.com/smile/CT_20250612_7月講座.webp?ver=7" alt="7月 中環" />
         <img src="https://statichk.cmermedical.com/smile/MK_20250612_7月講座.webp?ver=7" alt="7月 旺角" />
       </div>
@@ -338,16 +340,18 @@ export default {
         case "smileCentral":
           // smile 中环
           this.allowedDates = [
-            '2025-06-21',
-            '2025-06-25',
-            '2025-06-28',
-            '2025-07-02',
-            '2025-07-09',
-            '2025-07-12',
-            '2025-07-16',
             '2025-07-23',
             '2025-07-26',
             '2025-07-30',
+            '2025-08-02',
+            '2025-08-06',
+            '2025-08-09',
+            '2025-08-13',
+            '2025-08-16',
+            '2025-08-20',
+            '2025-08-23',
+            '2025-08-27',
+            '2025-08-30',
           ];
           break;
         case "smileMongKok":
@@ -357,18 +361,19 @@ export default {
         case "smileProMongKok":
           // smilePro 旺角
           this.allowedDates = [
-            "2025-06-16",
-            "2025-06-21",
-            "2025-06-24",
-            "2025-06-28",
-            "2025-07-05",
-            "2025-07-07",
-            "2025-07-12",
-            "2025-07-15",
             "2025-07-19",
             "2025-07-21",
             "2025-07-26",
             "2025-07-29",
+            '2025-08-02',
+            '2025-08-05',
+            '2025-08-09',
+            '2025-08-11',
+            '2025-08-16',
+            '2025-08-18',
+            '2025-08-23',
+            '2025-08-26',
+            '2025-08-30',  
           ];
           break;
         case "clearVisionCentral":
@@ -378,13 +383,12 @@ export default {
         case "clearVisionMongKok":
           // clearVision 旺角
           this.allowedDates = [
-            "2025-06-17",
-            "2025-06-23",
-            "2025-06-30",
-            "2025-07-08",
-            "2025-07-14",
             "2025-07-22",
             "2025-07-28", 
+            '2025-08-04',
+            '2025-08-12',
+            '2025-08-18',
+            '2025-08-25',
           ];
           break;
         default:
