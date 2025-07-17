@@ -219,16 +219,48 @@ i {
           // letter-spacing:7.15vw;
         }
         .ClearVisionBanner-Box-content-title {
-          p {
-            margin-top: 2.56vw;
-
+          text-align: center;
+          a {
+            color: #4570b6;
             text-align: center;
-            color: #6d6e71;
-            font-family: "Noto Sans TC";
-            font-size: 3.44vw;
+            font-family: "Poppins", sans-serif;
+            font-size: 11.64vw;
             font-style: normal;
-            font-weight: 250;
-            line-height: 1.3;
+            font-weight: 700;
+            line-height: 109.4%;
+            text-decoration: none;
+          }
+          h3 {
+            color: #4570b6;
+            text-align: center;
+            font-family: "Noto Sans TC";
+            font-size: 6.29vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.8;
+          }
+          & > p:nth-of-type(1) {
+            // margin-top: 2.56vw;
+          }
+
+          p {
+            color: #6d6e71;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: 3.59vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 221.429%;
+            letter-spacing: 0.9vw;
+            span {
+              color: #6d6e71;
+              font-family: "Poppins", sans-serif;
+              font-size: 3.59vw;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 2.2;
+              letter-spacing: 0.36vw;
+            }
           }
         }
       }
@@ -270,7 +302,7 @@ i {
         margin-top: 11.54vw;
         display: flex;
         flex-direction: column;
-        gap: 2.05vw;
+        gap: 3.85vw;
         span {
           position: relative;
           width: fit-content;
@@ -453,7 +485,7 @@ i {
             h4 {
               text-align: center;
               color: #4570b6;
-              font-family: "ITC Avant Garde Gothic Pro";
+              font-family: "Poppins", sans-serif;
               font-size: 5.13vw;
               font-style: normal;
               font-weight: 700;
@@ -632,7 +664,7 @@ i {
             margin: 7.69vw auto 0;
             text-align: center;
             color: #4570b6;
-            font-family: "ITC Avant Garde Gothic Pro";
+            font-family: "Poppins", sans-serif;
             font-size: 5.13vw;
             font-style: normal;
             font-weight: 700;
@@ -643,9 +675,9 @@ i {
             flex-shrink: 0;
             background: linear-gradient(
               90deg,
-              rgba(69, 112, 182, 0.2) 24.52%,
-              rgba(162, 183, 219, 0.1) 48.32%,
-              rgba(69, 112, 182, 0.2) 72.12%
+              #dae2f0 0%,
+              #fff 44.23%,
+              #dae2f0 100%
             );
           }
 
@@ -684,7 +716,7 @@ i {
             left: -7.69vw;
             width: 115.64vw;
             height: 94.36vw;
-            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-mbBg1.avif");
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-newmbBg1.avif");
             background-repeat: no-repeat;
             background-size: 100% auto;
             z-index: -1;
@@ -706,7 +738,7 @@ i {
             left: 0px;
             width: 103.08vw;
             height: 90.26vw;
-            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-mbBg2.avif");
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-newmbBg2.avif");
             background-repeat: no-repeat;
             background-size: 100% auto;
             z-index: -1;
@@ -1179,18 +1211,52 @@ i {
         }
         .ClearVisionBanner-Box-content-title {
           text-align: center;
+          a {
+            color: #4570b6;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size:clamp(61px,6.35vw,122px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 109.4%;
+                    text-decoration: none;
+          }
+          h3 {
+            color: #4570b6;
+            text-align: center;
+            font-family: "Noto Sans TC";
+            font-size: clamp(37px, 3.85vw, 74px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.8;
+          }
+          & > p:nth-of-type(1) {
+            // margin-top: 30px;
+          }
+
           p {
             color: #6d6e71;
-            font-family: "Noto Sans TC";
-            font-size: clamp(15.9px, 1.66vw, 31.8px);
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: clamp(10px, 1.04vw, 20px);
             font-style: normal;
-            font-weight: 100;
-            line-height: 1.31;
+            font-weight: 300;
+            line-height: 175%;
+            letter-spacing: clamp(3px, 0.31vw, 6px);
+            span {
+              color: #6d6e71;
+              font-family: "Poppins", sans-serif;
+              font-size: clamp(10px, 1.04vw, 20px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1.75;
+              letter-spacing: clamp(1px, 0.1vw, 2px);
+            }
           }
         }
       }
       .ClearVisionBanner-Box-content-img {
-        margin-top: clamp(16px, 1.67vw, 32px);
+        margin-top: clamp(31.5px, 3.28vw, 63px);
         max-width: 100vw;
         overflow: hidden;
         position: relative;
@@ -1252,7 +1318,7 @@ i {
         }
         & > span:nth-child(4) {
           right: clamp(186px, 19.38vw, 372px);
-          bottom: clamp(375px, 39.06vw, 750px);
+          bottom: clamp(350px, 36.46vw, 700px);
         }
 
         & > span:nth-child(5) {
@@ -1299,6 +1365,7 @@ i {
 
   // 矫视方案
   .CorrectionProgram {
+    scroll-margin-top: 120px; 
     margin-top: clamp(60px, 6.25vw, 120px);
     margin-bottom: clamp(40px, 4.17vw, 80px);
     position: relative;
@@ -1405,7 +1472,7 @@ i {
             h4 {
               text-align: center;
               color: #4570b6;
-              font-family: "ITC Avant Garde Gothic Pro";
+              font-family: "Poppins", sans-serif;
               font-size: clamp(15px, 1.56vw, 30px);
               font-style: normal;
               font-weight: 700;
@@ -1610,7 +1677,7 @@ i {
 
             text-align: center;
             color: #4570b6;
-            font-family: "ITC Avant Garde Gothic Pro";
+            font-family: "Poppins", sans-serif;
             font-size: clamp(15px, 1.56vw, 30px);
             font-style: normal;
             font-weight: 700;
@@ -2280,8 +2347,23 @@ i {
         <div class="ClearVisionBanner-Box">
           <div class="ClearVisionBanner-Box-content">
             <div class="ClearVisionBanner-Box-content-title">
-              <h3>老&nbsp;&nbsp;&nbsp;花</h3>
-              <p>Presbyopia</p>
+              <nuxt-link  to="/vision-correction-presbyopiaV2#CorrectionProgram"
+                >CMER<br class="d-lg-none" />
+                CLEAR-Vision</nuxt-link
+              >
+
+              <h3>老花矯視</h3>
+              <p>
+                希瑪微笑矯視中心主要提供兩種<br
+                  class="d-lg-none"
+                />可矯正老花的矯視服務
+              </p>
+              <p><span>CMER CLEAR-Vision</span>及<span>ICL Viva V6</span></p>
+              <p>
+                如你正受以下老花問題困擾，<br
+                  class="d-lg-none"
+                />可參考本頁有關老花矯視服務的詳盡介紹。
+              </p>
             </div>
 
             <div class="ClearVisionBanner-Box-content-img">
@@ -2333,7 +2415,11 @@ i {
       </div>
     </section>
 
-    <div class="CorrectionProgram" ref="correctionProgram">
+    <div
+      class="CorrectionProgram"
+      id="CorrectionProgram"
+      ref="correctionProgram"
+    >
       <div class="CorrectionProgram-Box">
         <div class="CorrectionProgram-Box-show" ref="boxShow">
           <img
