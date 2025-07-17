@@ -1215,7 +1215,7 @@ i {
             color: #4570b6;
             text-align: center;
             font-family: "Poppins", sans-serif;
-            font-size:clamp(61px,6.35vw,122px);
+            font-size:clamp(59px,6.15vw,118px);
             font-style: normal;
             font-weight: 700;
             line-height: 109.4%;
