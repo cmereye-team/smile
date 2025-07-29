@@ -114,32 +114,183 @@
       <div class="CorrectedVisionBefore-Process">
         <div class="CorrectedVisionBefore-Process-item">
           <img
+            class="CorrectedVisionBefore-Process-item-content"
             src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img1.svg"
             alt=""
           />
           <p>前台登記及<br />初步眼睛檢查</p>
+          <img
+            class="CorrectedVisionBefore-Process-item-icon"
+            src="https://statichk.cmermedical.com/smile/patient-info/01.png"
+            alt=""
+          />
         </div>
 
         <div class="CorrectedVisionBefore-Process-item">
           <img
+            class="CorrectedVisionBefore-Process-item-content"
             src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img2.svg"
             alt=""
           />
           <p>詳細屈光檢查</p>
+          <img
+            class="CorrectedVisionBefore-Process-item-icon"
+            src="https://statichk.cmermedical.com/smile/patient-info/02.png"
+            alt=""
+          />
         </div>
         <div class="CorrectedVisionBefore-Process-item">
           <img
+            class="CorrectedVisionBefore-Process-item-content"
             src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img4.svg"
             alt=""
           />
           <p>全面眼底檢查</p>
+          <img
+            class="CorrectedVisionBefore-Process-item-icon"
+            src="https://statichk.cmermedical.com/smile/patient-info/04.png"
+            alt=""
+          />
         </div>
         <div class="CorrectedVisionBefore-Process-item">
           <img
+            class="CorrectedVisionBefore-Process-item-content"
             src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img3.svg"
             alt=""
           />
           <p>散曈</p>
+          <img
+            class="CorrectedVisionBefore-Process-item-icon"
+            src="https://statichk.cmermedical.com/smile/patient-info/03.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <img
+        class="CorrectedVisionBefore-line"
+        src="https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-line.png"
+        alt=""
+      />
+      <!-- 合适不合适 -->
+      <div class="CorrectedVisionBefore-suitable">
+        <div>
+          <h4>不合適</h4>
+          <p>應盡快接受相關治療</p>
+        </div>
+        <div>
+          <h4>合適</h4>
+          <p>預約第二次檢查及同日矯視</p>
+        </div>
+      </div>
+      <!-- 备注 -->
+      <div class="CorrectedVisionBefore-note">
+        <h4>備註:</h4>
+        <p>
+          <i>1.</i
+          ><span>基本檢查包括：屈光檢查、電腦驗光、 眼壓、角膜厚度等</span>
+        </p>
+        <p>
+          <i>2.</i
+          ><span
+            >詳細眼底檢查包括：淚水分泌測試、瞳孔測量、角膜地形掃描及像差、雙眼內皮細胞分析、散瞳眼底檢查、光學相干斷層
+            掃描(如需要)、掃描激光眼底檢查(如需要)</span
+          >
+        </p>
+
+        <p>
+          <i>3.</i
+          ><span>
+            散瞳/ 放大瞳孔後：<br />
+            ·觀看近物時視野變得模糊<br />·有輕微畏光情況，可帶備太陽眼鏡
+            <br />·切勿駕駛 <br />·請帶備太陽眼鏡
+            <br />
+            <b>·放大瞳孔的效果一般會在4至6小時後消失</b>
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- 矫视流程 -->
+    <section class="visionProcess">
+      <h2>矯視流程</h2>
+      <p>
+        經過詳細的眼睛檢查和診症，醫護人員會告知客人是否適合矯視，才進行矯視程序。
+      </p>
+
+      <div class="visionProcess_Pcs">
+        <div class="visionProcess_Pcs-item">
+          <div class="visionProcess_Pcs-item-img">
+            <img
+              src="https://statichk.cmermedical.com/smile/patient-info/visonProcess/visionProcess_Pcs-item1.svg"
+              alt=""
+            />
+            <div>
+              <span>Step</span>
+              <i>1</i>
+            </div>
+          </div>
+          <p>屈光檢查</p>
+        </div>
+
+        <div class="visionProcess_Pcs-item">
+          <div class="visionProcess_Pcs-item-img">
+            <img
+              src="https://statichk.cmermedical.com/smile/patient-info/visonProcess/visionProcess_Pcs-item2.svg"
+              alt=""
+            />
+            <div>
+              <span>Step</span>
+              <i>2</i>
+            </div>
+          </div>
+          <p>術前準備</p>
+        </div>
+
+        <div class="visionProcess_Pcs-item">
+          <div class="visionProcess_Pcs-item-img">
+            <img
+              src="https://statichk.cmermedical.com/smile/patient-info/visonProcess/visionProcess_Pcs-item3.svg"
+              alt=""
+            />
+            <div>
+              <span>Step</span>
+              <i>3</i>
+            </div>
+          </div>
+          <p>預約翌日覆診</p>
+        </div>
+
+        <div class="visionProcess_Pcs-item">
+          <div class="visionProcess_Pcs-item-img">
+            <img
+              src="https://statichk.cmermedical.com/smile/patient-info/visonProcess/visionProcess_Pcs-item4.svg"
+              alt=""
+            />
+            <div>
+              <span>Step</span>
+              <i>4</i>
+            </div>
+          </div>
+          <p>矯視療程</p>
+        </div>
+      </div>
+
+      <!-- 注意事项 -->
+      <div class="visionProcess-Notice">
+        <img
+          src="https://statichk.cmermedical.com/smile/patient-info/visonProcess/visonProcess-Notice.png"
+          alt=""
+        />
+        <h2>注意事項</h2>
+
+        <div class="visionProcess-Notice-Card">
+          <div class="visionProcess-Notice-Card-item">
+            <h4>矯視前</h4>
+            <div class="visionProcess-Notice-Card-item-List">
+              <img src="" alt="" />
+              <p>預先洗頭<br />避免術後雙眼入水</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -587,47 +738,48 @@ i {
 
   //矯視前停 con 知多啲
   .CorrectedVisionBefore {
-    padding-top: 23px;
+    padding-top: 5.9vw;
+    padding-bottom: 30px;
     .CorrectedVisionBefore-iframe {
       img {
-        width: 46px;
-        height: 48px;
+        width: 11.79vw;
+        height: 12.31vw;
         margin: 0 auto;
       }
       h2 {
         width: fit-content;
-        margin: 8px auto 17px;
+        margin: 2.05vw auto 4.36vw;
         color: #4570b6;
         font-family: "Noto Sans TC";
-        font-size: 20px;
+        font-size: 5.13vw;
         font-style: normal;
         font-weight: 900;
         line-height: 103.173%;
-        letter-spacing: 2px;
+        letter-spacing: 0.51vw;
         position: relative;
 
         &::before {
           content: "";
-          width: 34px;
-          height: 24px;
+          width: 8.72vw;
+          height: 6.15vw;
           background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
             no-repeat;
           background-size: 100% auto;
           position: absolute;
-          left: -36px;
-          bottom: -4px;
+          left: -9.23vw;
+          bottom: -1.03vw;
         }
 
         &::after {
           content: "";
-          width: 34px;
-          height: 24px;
+          width: 8.72vw;
+          height: 6.15vw;
           background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
             no-repeat;
           background-size: 100% auto;
           position: absolute;
-          right: -36px;
-          bottom: -4px !important;
+          right: -9.23vw;
+          bottom: -1.03vw !important;
         }
       }
       .iframe-container {
@@ -642,14 +794,15 @@ i {
     }
 
     .CorrectedVisionBefore-Process {
-      margin-top: 35px;
+      margin-top: 8.97vw;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 40px 16px;
+      gap: 10.26vw 4.1vw;
       .CorrectedVisionBefore-Process-item {
-        width: 161px;
-        height: 128px;
+        position: relative;
+        width: 41.28vw;
+        height: 32.82vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -658,42 +811,346 @@ i {
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans TC";
-          font-size: 14px;
+          font-size: 3.59vw;
           font-style: normal;
           font-weight: 500;
           line-height: 121.429%;
         }
+        .CorrectedVisionBefore-Process-item-icon {
+          position: absolute;
+          width: 11.28vw;
+          left: 2.56vw;
+          top: -3.59vw;
+        }
       }
+
+      & > .CorrectedVisionBefore-Process-item:nth-child(1),
+      & > .CorrectedVisionBefore-Process-item:nth-child(3) {
+        &::after {
+          content: "";
+          width: 4.1vw;
+          height: 0.13vw;
+          background: #4570b6;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -4.1vw;
+          z-index: -1;
+        }
+      }
+
       & > .CorrectedVisionBefore-Process-item:nth-child(1) {
         background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg1.avif");
         background-size: 100% auto;
-        img {
-          width: 51px;
+        .CorrectedVisionBefore-Process-item-content {
+          width: 13.08vw;
           height: auto;
         }
       }
       & > .CorrectedVisionBefore-Process-item:nth-child(2) {
         background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg2.avif");
         background-size: 100% auto;
-        img {
-          width: 48px;
+        .CorrectedVisionBefore-Process-item-content {
+          width: 12.31vw;
           height: auto;
+        }
+        &::after {
+          content: "";
+          width: 0.13vw;
+          height: 10.26vw;
+          background: #4570b6;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -10.26vw;
+          z-index: -1;
         }
       }
       & > .CorrectedVisionBefore-Process-item:nth-child(3) {
         background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg3.avif");
         background-size: 100% auto;
-        img {
-          width: 68px;
+        .CorrectedVisionBefore-Process-item-content {
+          width: 17.44vw;
           height: auto;
         }
       }
       & > .CorrectedVisionBefore-Process-item:nth-child(4) {
         background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg4.avif");
         background-size: 100% auto;
-        img {
-          width: 29px;
+        .CorrectedVisionBefore-Process-item-content {
+          width: 7.44vw;
           height: auto;
+        }
+      }
+    }
+    .CorrectedVisionBefore-line {
+      width: 21.03vw;
+      height: 13.33vw;
+      margin: 0 auto;
+      transform: translateX(-50%);
+    }
+    // 合适，不合适
+    .CorrectedVisionBefore-suitable {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 84.62vw;
+      margin: 0 auto 4.62vw;
+      border: 0.307px solid #4471b7;
+
+      & > div:nth-child(2) {
+        background: #4471b7;
+        h4,
+        p {
+          color: #fff;
+        }
+      }
+      div {
+        padding: 2.05vw 0 3.08vw;
+        text-align: center;
+        width: 42.31vw;
+        h4 {
+          color: #4570b6;
+          font-family: "Noto Sans HK";
+          font-size: 3.59vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 114.286%;
+          letter-spacing: 1.08vw;
+        }
+        p {
+          color: #6d6e71;
+          font-family: "Noto Sans HK";
+          font-size: 3.08vw;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 4.1vw;
+        }
+      }
+    }
+    .CorrectedVisionBefore-note {
+      max-width: 84.62vw;
+      margin: 4.62vw auto 0;
+      h4 {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: 3.59vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 214.286%;
+        letter-spacing: 0.72vw;
+      }
+      p {
+        display: flex;
+        align-items: flex-start;
+        font-style: normal;
+        font-weight: 300;
+        font-family: "Noto Sans HK";
+        color: #6d6e71;
+        font-size: 3.59vw;
+        line-height: 2.14;
+        i {
+          letter-spacing: 0.72vw;
+        }
+        span {
+          letter-spacing: 0.9vw;
+          b {
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 0.43vw;
+          }
+        }
+      }
+    }
+  }
+
+  // 矫视流程
+  .visionProcess {
+    padding-top: 30px;
+    background: #f4fafc;
+    & > h2 {
+      color: #4570b6;
+      font-family: "Noto Sans TC";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 195%;
+    }
+    & > p {
+      max-width: 336px;
+      margin: 17px auto 36px;
+      color: #6d6e71;
+      font-family: "Noto Sans HK";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 214.286%;
+      letter-spacing: 2.8px;
+    }
+    .visionProcess_Pcs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 37px 40px;
+      .visionProcess_Pcs-item {
+        width: 149px;
+        flex-shrink: 0;
+        text-align: center;
+        .visionProcess_Pcs-item-img {
+          height: 149px;
+          border-radius: 43.75px;
+          border: 0.625px solid #4570b6;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 41px;
+            height: 41px;
+
+            position: absolute;
+            top: -10px;
+            left: 6px;
+            background: #4570b6;
+            border-radius: 50%;
+            span {
+              color: #fff;
+              text-align: center;
+              font-family: "Noto Sans HK";
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 162.5%;
+            }
+            i {
+              color: #fff;
+              font-family: "Noto Sans HK";
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 1;
+            }
+          }
+        }
+        & > p {
+          margin-top: 10px;
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 133.929%;
+          letter-spacing: 3.5px;
+        }
+      }
+
+      & > .visionProcess_Pcs-item:nth-child(1) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 64px;
+            height: 74px;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 34px;
+            background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
+              no-repeat;
+            background-size: 100% auto;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      & > .visionProcess_Pcs-item:nth-child(2) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 84px;
+            height: 77px;
+          }
+        }
+      }
+
+      & > .visionProcess_Pcs-item:nth-child(3) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 71px;
+            height: 74px;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 34px;
+            background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
+              no-repeat;
+            background-size: 100% auto;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      & > .visionProcess_Pcs-item:nth-child(4) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 90px;
+            height: 50px;
+          }
+        }
+      }
+    }
+
+    .visionProcess-Notice {
+      img {
+        width: 11.79vw;
+        height: 12.31vw;
+        margin: 0 auto;
+      }
+      h2 {
+        width: fit-content;
+        margin: 2.05vw auto 4.36vw;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 5.13vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 103.173%;
+        letter-spacing: 0.51vw;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 8.72vw;
+          height: 6.15vw;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          left: -9.23vw;
+          bottom: -1.03vw;
+        }
+
+        &::after {
+          content: "";
+          width: 8.72vw;
+          height: 6.15vw;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          right: -9.23vw;
+          bottom: -1.03vw !important;
         }
       }
     }
@@ -884,57 +1341,373 @@ i {
 
   //矯視前停 con 知多啲
   .CorrectedVisionBefore {
-    padding-top: 83px;
+    padding-top: clamp(41.5px, 4.32vw, 83px);
+    padding-bottom: clamp(50px, 5.21vw, 100px);
     .CorrectedVisionBefore-iframe {
       img {
-        width: 116px;
-        height: 121px;
+        width: clamp(58px, 6.04vw, 116px);
+        height: clamp(60.5px, 6.3vw, 121px);
         margin: 0 auto;
       }
       h2 {
         width: fit-content;
-        margin: 14px auto 68px;
+        margin: clamp(7px, 0.73vw, 14px) auto clamp(34px, 3.54vw, 68px);
         color: #4570b6;
         font-family: "Noto Sans TC";
-        font-size: 30px;
+        font-size: clamp(15px, 1.56vw, 30px);
         font-style: normal;
         font-weight: 900;
         line-height: 1;
-        letter-spacing: 3px;
+        letter-spacing: clamp(1.5px, 0.16vw, 3px);
         position: relative;
 
         &::before {
           content: "";
-          width: 50px;
-          height: 30px;
+          width: clamp(25px, 2.6vw, 50px);
+          height: clamp(15px, 1.56vw, 30px);
           background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
             no-repeat;
           background-size: 100% auto;
           position: absolute;
-          left: -50px;
-          bottom: -4px;
+          left: clamp(-50px, -2.6vw, -25px);
+          bottom: clamp(-4px, -0.21vw, -2px);
         }
 
         &::after {
           content: "";
-          width: 50px;
-          height: 30px;
+          width: clamp(25px, 2.6vw, 50px);
+          height: clamp(15px, 1.56vw, 30px);
           background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
             no-repeat;
           background-size: 100% auto;
           position: absolute;
-          right: -50px;
-          bottom: -4px !important;
+          right: clamp(-50px, -2.6vw, -25px);
+          bottom: clamp(-4px, -0.21vw, -2px) !important;
         }
       }
       .iframe-container {
-        width: 605px;
+        width: clamp(302.5px, 31.51vw, 605px);
         margin: 0 auto;
         aspect-ratio: 560/315;
         iframe {
           width: 100%;
           height: 100%;
           border: none;
+        }
+      }
+    }
+
+    .CorrectedVisionBefore-Process {
+      margin-top: clamp(78.5px, 8.18vw, 157px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: clamp(68px, 7.08vw, 136px) clamp(60px, 6.25vw, 120px);
+      max-width: clamp(540px, 56.25vw, 1080px);
+      margin-left: auto;
+      margin-right: auto;
+      .CorrectedVisionBefore-Process-item {
+        position: relative;
+        width: clamp(235px, 24.48vw, 470px);
+        height: clamp(186.5px, 19.43vw, 373px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        p {
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans TC";
+          font-size: clamp(12.5px, 1.3vw, 25px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+          letter-spacing: clamp(3.125px, 0.33vw, 6.25px);
+        }
+        .CorrectedVisionBefore-Process-item-icon {
+          position: absolute;
+          width: clamp(62px, 6.46vw, 124px);
+          left: clamp(-18px, -0.94vw, -9px);
+          top: 0px;
+          transform: translateY(-50%);
+        }
+      }
+
+      & > .CorrectedVisionBefore-Process-item:nth-child(1),
+      & > .CorrectedVisionBefore-Process-item:nth-child(3) {
+        &::after {
+          content: "";
+          width: clamp(52.5px, 5.47vw, 105px);
+          height: clamp(0.5px, 0.05vw, 1px);
+          background: #4570b6;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: clamp(-110px, -5.73vw, -55px);
+          z-index: -1;
+        }
+      }
+
+      & > .CorrectedVisionBefore-Process-item:nth-child(1) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg1.avif");
+        background-size: 100% auto;
+        .CorrectedVisionBefore-Process-item-content {
+          width: clamp(91px, 9.48vw, 182px);
+          height: auto;
+        }
+      }
+      & > .CorrectedVisionBefore-Process-item:nth-child(2) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg2.avif");
+        background-size: 100% auto;
+        .CorrectedVisionBefore-Process-item-content {
+          width: clamp(79.5px, 8.28vw, 159px);
+          height: auto;
+        }
+        &::after {
+          content: "";
+          width: clamp(0.5px, 0.05vw, 1px);
+          height: clamp(52.5px, 5.47vw, 105px);
+          background: #4570b6;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: clamp(-115px, -5.99vw, -57.5px);
+          z-index: -1;
+        }
+      }
+      & > .CorrectedVisionBefore-Process-item:nth-child(3) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg3.avif");
+        background-size: 100% auto;
+        .CorrectedVisionBefore-Process-item-content {
+          width: clamp(99px, 10.31vw, 198px);
+          height: auto;
+        }
+      }
+      & > .CorrectedVisionBefore-Process-item:nth-child(4) {
+        background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg4.avif");
+        background-size: 100% auto;
+        .CorrectedVisionBefore-Process-item-content {
+          width: clamp(42px, 4.38vw, 84px);
+          height: auto;
+        }
+      }
+    }
+    .CorrectedVisionBefore-line {
+      width: clamp(150.5px, 15.68vw, 301px);
+      height: clamp(63px, 6.56vw, 126px);
+      margin: clamp(5.5px, 0.57vw, 11px) auto clamp(8.5px, 0.89vw, 17px);
+      transform: translateX(-50%);
+    }
+    // 合适，不合适
+    .CorrectedVisionBefore-suitable {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: clamp(540px, 56.25vw, 1080px);
+      margin: 0 auto clamp(26px, 2.71vw, 52px);
+      border: clamp(0.5px, 0.05vw, 1px) solid #4471b7;
+
+      & > div:nth-child(2) {
+        background: #4471b7;
+        h4,
+        p {
+          color: #fff;
+        }
+      }
+      div {
+        padding: clamp(13px, 1.35vw, 26px) 0;
+        text-align: center;
+        width: clamp(270px, 28.13vw, 540px);
+        h4 {
+          color: #4570b6;
+          text-align: center;
+          font-family: "Noto Sans HK";
+          font-size: clamp(13px, 1.35vw, 26px);
+          font-style: normal;
+          font-weight: 500;
+          line-height: 134.615%;
+          letter-spacing: clamp(3.9px, 0.41vw, 7.8px);
+        }
+        p {
+          color: #6d6e71;
+          font-family: "Noto Sans HK";
+          font-size: clamp(10px, 1.04vw, 20px);
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1.75;
+          letter-spacing: clamp(3px, 0.31vw, 6px);
+        }
+      }
+    }
+    .CorrectedVisionBefore-note {
+      max-width: clamp(515.5px, 53.7vw, 1031px);
+      margin: 0 auto;
+      h4 {
+        color: #4570b6;
+        font-family: "Noto Sans HK";
+        font-size: clamp(10px, 1.04vw, 20px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%;
+        letter-spacing: clamp(2.5px, 0.26vw, 5px);
+      }
+      p {
+        display: flex;
+        align-items: flex-start;
+        color: #6d6e71;
+        font-family: "Noto Sans HK";
+        font-size: clamp(10px, 1.04vw, 20px);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.8;
+        letter-spacing: clamp(2.5px, 0.26vw, 5px);
+
+        span {
+          b {
+            font-weight: 300;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+
+  // 矫视流程
+  .visionProcess {
+    background: #f4fafc;
+    padding-top: 95px;
+    & > h2 {
+      color: #4570b6;
+      font-family: "Noto Sans TC";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 3px;
+    }
+    & > p {
+      margin: 36px auto 60px;
+      color: #6d6e71;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 175%;
+      letter-spacing: 6px;
+    }
+    .visionProcess_Pcs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 57px;
+      .visionProcess_Pcs-item {
+        width: 228px;
+        flex-shrink: 0;
+        text-align: center;
+        .visionProcess_Pcs-item-img {
+          height: 228px;
+          border-radius: 66.981px;
+          border: 0.957px solid #4570b6;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 34px;
+            background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
+              no-repeat;
+            background-size: 100% auto;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 63px;
+            height: 63px;
+
+            position: absolute;
+            top: -16px;
+            left: 9px;
+            background: #4570b6;
+            border-radius: 50%;
+            span {
+              color: #fff;
+              text-align: center;
+              font-family: "Noto Sans HK";
+              font-size: 15.31px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 1.2;
+              letter-spacing: 0;
+            }
+            i {
+              color: #fff;
+              font-family: "Noto Sans HK";
+              font-size: 22.965px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 1.1;
+            }
+          }
+        }
+        & > p {
+          margin-top: 16px;
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130.482%;
+          letter-spacing: 5.5px;
+        }
+      }
+
+      & > .visionProcess_Pcs-item:nth-child(1) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 98px;
+            height: 113px;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      & > .visionProcess_Pcs-item:nth-child(2) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 130px;
+            height: 118px;
+          }
+        }
+      }
+
+      & > .visionProcess_Pcs-item:nth-child(3) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 109px;
+            height: 114px;
+          }
+        }
+      }
+      & > .visionProcess_Pcs-item:nth-child(4) {
+        .visionProcess_Pcs-item-img {
+          img {
+            width: 138px;
+            height: 77px;
+          }
+           &::after {
+            content: none;}
         }
       }
     }

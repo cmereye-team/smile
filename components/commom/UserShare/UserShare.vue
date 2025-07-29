@@ -20,19 +20,6 @@
               "
               sizes=" (max-width: 992px) 100vw,1216px"
             />
-
-            <!-- 
-
-              <img
-                class="d-lg-none"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.png"
-                alt=""
-              />
-              <img
-                class="d-none d-lg-block"
-                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png"
-                alt=""
-              /> -->
             <p>聽聽各位真實用家親身感受</p>
           </div>
         </div>

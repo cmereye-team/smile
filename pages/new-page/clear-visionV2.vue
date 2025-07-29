@@ -220,7 +220,7 @@ i {
         }
         .ClearVisionBanner-Box-content-title {
           text-align: center;
-          a {
+          & > a {
             color: #4570b6;
             text-align: center;
             font-family: "Poppins", sans-serif;
@@ -252,7 +252,7 @@ i {
             font-weight: 300;
             line-height: 221.429%;
             letter-spacing: 0.9vw;
-            span {
+            a {
               color: #6d6e71;
               font-family: "Poppins", sans-serif;
               font-size: 3.59vw;
@@ -1211,15 +1211,15 @@ i {
         }
         .ClearVisionBanner-Box-content-title {
           text-align: center;
-          a {
+          & > a {
             color: #4570b6;
             text-align: center;
             font-family: "Poppins", sans-serif;
-            font-size:clamp(59px,6.15vw,118px);
+            font-size: clamp(59px, 6.15vw, 118px);
             font-style: normal;
             font-weight: 700;
-            line-height: 109.4%; 
-                    text-decoration: none;
+            line-height: 109.4%;
+            text-decoration: none;
           }
           h3 {
             color: #4570b6;
@@ -1243,7 +1243,7 @@ i {
             font-weight: 300;
             line-height: 175%;
             letter-spacing: clamp(3px, 0.31vw, 6px);
-            span {
+            a {
               color: #6d6e71;
               font-family: "Poppins", sans-serif;
               font-size: clamp(10px, 1.04vw, 20px);
@@ -1256,7 +1256,7 @@ i {
         }
       }
       .ClearVisionBanner-Box-content-img {
-        margin-top: clamp(50px,5.21vw,100px);
+        margin-top: clamp(50px, 5.21vw, 100px);
         max-width: 100vw;
         overflow: hidden;
         position: relative;
@@ -1314,11 +1314,11 @@ i {
 
         & > span:nth-child(3) {
           left: clamp(131px, 13.65vw, 262px);
-          bottom: clamp(300px,31.25vw,600px);
+          bottom: clamp(300px, 31.25vw, 600px);
         }
         & > span:nth-child(4) {
           right: clamp(186px, 19.38vw, 372px);
-          bottom:clamp(340px,35.42vw,680px);
+          bottom: clamp(340px, 35.42vw, 680px);
         }
 
         & > span:nth-child(5) {
@@ -1365,7 +1365,7 @@ i {
 
   // 矫视方案
   .CorrectionProgram {
-    scroll-margin-top: 120px; 
+    scroll-margin-top: 200px;
     margin-top: clamp(60px, 6.25vw, 120px);
     margin-bottom: clamp(40px, 4.17vw, 80px);
     position: relative;
@@ -1638,19 +1638,20 @@ i {
   // 不同老花矯視技術好處對比
   .visionBattle {
     position: relative;
-    padding-top: clamp(109px, 11.35vw, 218px);
+    padding-top: clamp(66px, 6.88vw, 132px);
     margin-bottom: clamp(40px, 4.17vw, 80px);
 
     .visionBattle-Bg {
       position: absolute;
       width: clamp(953.5px, 99.32vw, 1907px);
       height: clamp(953.5px, 99.32vw, 1907px);
-      top: clamp(-272px, -14.17vw, -136px);
+      top: clamp(-653px, -34.01vw, -326.5px);
       left: 50%;
       transform: translateX(-50%);
       z-index: -1;
     }
     .visionBattle-Box {
+               scroll-margin-top: 120px;
       h3 {
         text-align: center;
         color: #4570b6;
@@ -1662,6 +1663,7 @@ i {
       }
 
       .visionBattle-Box-list {
+
         display: flex;
         justify-content: center;
         margin-top: clamp(28px, 2.92vw, 56px);
@@ -1727,11 +1729,11 @@ i {
           &::before {
             content: "";
             position: absolute;
-            bottom: clamp(-24px, -1.25vw, -12px);
+            bottom: clamp(-32px, -1.67vw, -16px);
             right: clamp(-158px, -8.23vw, -79px);
             width: clamp(474.5px, 49.43vw, 949px);
             height: clamp(474.5px, 49.43vw, 949px);
-            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-pcBg1.avif");
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-newpcBg1.avif");
             background-repeat: no-repeat;
             background-size: 100% auto;
             z-index: -1;
@@ -1753,7 +1755,7 @@ i {
             left: clamp(-233px, -12.14vw, -116.5px);
             width: clamp(538.5px, 56.09vw, 1077px);
             height: clamp(472.5px, 49.22vw, 945px);
-            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-pcBg2.avif");
+            background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-item-newpcBg2.avif");
             background-repeat: no-repeat;
             background-size: 100% auto;
             z-index: -1;
@@ -2347,9 +2349,11 @@ i {
         <div class="ClearVisionBanner-Box">
           <div class="ClearVisionBanner-Box-content">
             <div class="ClearVisionBanner-Box-content-title">
-              <nuxt-link  to="/vision-correction-presbyopiaV2#CorrectionProgram"
+              <a
+                href="/vision-correction-presbyopiaV2#CorrectionProgram"
+                @click.prevent="scrollTo('CorrectionProgram')"
                 >CMER<br class="d-lg-none" />
-                CLEAR-Vision</nuxt-link
+                CLEAR-Vision</a
               >
 
               <h3>老花矯視</h3>
@@ -2358,7 +2362,17 @@ i {
                   class="d-lg-none"
                 />可矯正老花的矯視服務
               </p>
-              <p><span>CMER CLEAR-Vision</span>及<span>ICL Viva V6</span></p>
+              <p>
+                <a
+                  href="/vision-correction-presbyopiaV2#CorrectionProgram"
+                  @click.prevent="scrollTo('CorrectionProgram')"
+                  >CMER CLEAR-Vision</a
+                >及<a
+                  href="/vision-correction-presbyopiaV2#CorrectionProgram"
+                  @click.prevent="scrollTo('CorrectionProgram')"
+                  >ICL Viva V6</a
+                >
+              </p>
               <p>
                 如你正受以下老花問題困擾，<br
                   class="d-lg-none"
@@ -2405,11 +2419,11 @@ i {
         <h3>什麼是老花？</h3>
         <div class="WhatLaoHuaBox-text">
           <p>
-            隨著年紀增長，人們可能會遇到老花的問題，這是一種影響近視力的視力狀況。由於在眼睛中的晶狀體彈性降低，使眼睛調節焦距的能力下降，導致<span>看近處物體時會出現視覺模糊</span>。
+            隨著年紀增長，人們可能會遇到老花的問題，這是一種影響近視力的視力狀況。由於在眼睛中的晶狀體彈性降低，使眼睛調節焦距的能力下降，導致<span >看近處物體時會出現視覺模糊</span>。
           </p>
           <br />
           <p>
-            老花並非疾病，而是隨著年齡增長而自然出現的現象。一般在40歲開始出現，到60歲時會達到較為穩定的狀態。為了改善老花帶來的視力問題，人們可以選擇配戴老花眼鏡、使用隱形眼鏡或接受老花矯視手術等方式，這些方法都可幫助改善近距離的視力，使日常生活中的閱讀和近距離工作變得更加容易，而進行<span>老花矯視更是受大眾歡迎的選項</span>。
+            老花並非疾病，而是隨著年齡增長而自然出現的現象。一般在40歲開始出現，到60歲時會達到較為穩定的狀態。為了改善老花帶來的視力問題，人們可以選擇配戴老花眼鏡、使用隱形眼鏡或接受老花矯視手術等方式，這些方法都可幫助改善近距離的視力，使日常生活中的閱讀和近距離工作變得更加容易，而進行<span id="CorrectionProgram">老花矯視更是受大眾歡迎的選項</span>。
           </p>
         </div>
       </div>
@@ -2417,7 +2431,7 @@ i {
 
     <div
       class="CorrectionProgram"
-      id="CorrectionProgram"
+      
       ref="correctionProgram"
     >
       <div class="CorrectionProgram-Box">
@@ -2448,7 +2462,7 @@ i {
             <div class="CorrectionProgram-Box-hide-item-bottom">
               <div class="CorrectionProgram-Box-hide-item-top-text">
                 <p>• 39歲以上有老花</p>
-                <p>• 同時有近視/遠視/散光問題</p>
+                <p>• 同時有近視/遠視問題</p>
               </div>
               <h4>CMER CLEAR-Vision</h4>
               <p class="CorrectionProgram-Box-hide-item-bottom-text">
@@ -2577,19 +2591,19 @@ i {
       <img
         class="visionBattle-Bg"
         decoding="async"
-        src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-pcBg.avif"
+        src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-newpcBg.avif"
         alt=""
         loading="lazy"
         width="100%"
         height="100%"
         srcset="
-          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-mbBg.avif 400w,
-          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-mbBg.avif 640w,
-          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-pcBg.avif
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-mbBg.avif    400w,
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-mbBg.avif    640w,
+          https://statichk.cmermedical.com/smile/vision-correction-iclV2/visionBattle/visionBattle-newpcBg.avif
         "
         sizes=" (max-width: 992px) 100vw,1216px"
       />
-      <div class="visionBattle-Box">
+      <div class="visionBattle-Box" id="visionBattle-Box-list">
         <h3>老花矯視技術好處對比</h3>
         <div class="visionBattle-Box-list">
           <div class="visionBattle-Box-list-item">
@@ -2601,6 +2615,14 @@ i {
                   alt=""
                 />
                 <span>不需依賴眼鏡/隱形眼鏡</span>
+              </p>
+
+                     <p>
+                <img
+                  src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                  alt=""
+                />
+                <span>同時矯正老花及深近視</span>
               </p>
               <p>
                 <img
@@ -2680,7 +2702,7 @@ i {
                   src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
                   alt=""
                 />
-                <span>可按需要選擇取出鏡片</span>
+                <span>有需要可逆轉</span>
               </p>
             </div>
             <div class="visionBattle-Box-list-item-VS">
@@ -2823,9 +2845,9 @@ i {
         <div class="SuitableObject-Box-title">
           <h3>合適對象</h3>
           <p>
-            無論追求效率還是悠閒自在，<br class="d-none d-lg-block" />老花矯視都讓你清楚見證<br
+            無論追求效率還是悠閒自在，<br
               class="d-none d-lg-block"
-            />往後每一刻。
+            />老花矯視都讓你清楚見證<br class="d-none d-lg-block" />往後每一刻。
           </p>
         </div>
 
@@ -3439,7 +3461,36 @@ export default {
     };
   },
 
+  watch: {
+    "$route.hash": {
+      immediate: true,
+      handler(newHash) {
+        this.handleHashScroll();
+      },
+    },
+  },
+
   methods: {
+    handleHashScroll() {
+      const hash = this.$route.hash;
+      if (hash) {
+        const element = document.getElementById(hash.replace("#", ""));
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: "smooth" });
+          }, 100);
+        }
+      }
+    },
+    scrollTo(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      // 更新 URL 的 hash（不刷新页面）
+      this.$router.replace({ hash: `#${id}` });
+    },
+
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
@@ -3469,41 +3520,47 @@ export default {
           scrollTop >= triggerPoint &&
           scrollTop < this.targetTop
         ) {
-          this.lockScroll = true;
+          // this.lockScroll = true;
           this.isAnimating = true;
           this.animateBoxShow();
         }
 
-        if (this.lockScroll && scrollTop >= this.targetTop) {
+        if (scrollTop >= this.targetTop) {
           // 模块已经到达顶部，解锁滚动
-          this.lockScroll = false;
+          // this.lockScroll = false;
           this.isAnimating = false;
         }
+
+        // if (this.lockScroll && scrollTop >= this.targetTop) {
+        //   // 模块已经到达顶部，解锁滚动
+        //   this.lockScroll = false;
+        //   this.isAnimating = false;
+        // }
       }, 50);
 
       window.addEventListener("scroll", throttledScroll);
 
       // 阻止原生滚动（关键）
-      window.addEventListener(
-        "wheel",
-        (e) => {
-          if (this.lockScroll) {
-            e.preventDefault();
-          }
-        },
-        { passive: false }
-      );
+      // window.addEventListener(
+      //   "wheel",
+      //   (e) => {
+      //     if (this.lockScroll) {
+      //       e.preventDefault();
+      //     }
+      //   },
+      //   { passive: false }
+      // );
 
       // 同样阻止触摸板滚动
-      window.addEventListener(
-        "touchmove",
-        (e) => {
-          if (this.lockScroll) {
-            e.preventDefault();
-          }
-        },
-        { passive: false }
-      );
+      // window.addEventListener(
+      //   "touchmove",
+      //   (e) => {
+      //     if (this.lockScroll) {
+      //       e.preventDefault();
+      //     }
+      //   },
+      //   { passive: false }
+      // );
     },
 
     animateBoxShow() {
@@ -3522,7 +3579,7 @@ export default {
           requestAnimationFrame(animate);
         } else {
           // 动画结束，解锁页面滚动
-          this.lockScroll = false;
+          //this.lockScroll = false;
         }
       };
 
@@ -3573,7 +3630,7 @@ export default {
 
   mounted() {
     this.windowWidth = window.innerWidth;
-
+    this.handleHashScroll();
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
