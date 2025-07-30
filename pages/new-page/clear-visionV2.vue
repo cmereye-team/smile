@@ -2462,7 +2462,7 @@ i {
             <div class="CorrectionProgram-Box-hide-item-bottom">
               <div class="CorrectionProgram-Box-hide-item-top-text">
                 <p>• 39歲以上有老花</p>
-                <p>• 同時有近視/遠視問題</p>
+                <p>• 同時有近視/遠視/散光問題</p> 
               </div>
               <h4>CMER CLEAR-Vision</h4>
               <p class="CorrectionProgram-Box-hide-item-bottom-text">
@@ -2482,7 +2482,7 @@ i {
             <div class="CorrectionProgram-Box-hide-item-bottom">
               <div class="CorrectionProgram-Box-hide-item-top-text">
                 <p>• 39歲或以上</p>
-                <p>• 同時有近視/遠視/散光問題</p>
+                <p>• 同時有近視/遠視問題</p>
                 <p>• 未有白內障</p>
               </div>
               <h4>ICL Viva V6</h4>

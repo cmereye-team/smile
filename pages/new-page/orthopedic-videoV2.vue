@@ -161,7 +161,7 @@ export default {
       userShare: [
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/AT7ZVZ4lFgM?si=WT0aMa21whcNUyoP",
+          href: "https://youtu.be/AT7ZVZ4lFgM",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro1.avif",
           text: ["咸淡水活動都咁方便"],
           nameEn: "Karen",
@@ -188,7 +188,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/WyrC9G4XL68?si=rva4FIIwClhV-4U2",
+          href: "https://youtu.be/WyrC9G4XL68",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro4.avif",
           text: ["SMILE Pro真係", "好神奇!"],
           nameEn: "Mimi Lau",
@@ -215,7 +215,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/C4yu0L5xfy8?si=SDOsourEYRin1Mm3",
+          href: "https://youtu.be/C4yu0L5xfy8",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro7.avif",
           text: ["做完SMILE Pro", "慳咗好多Con錢"],
           nameEn: "Fish",
@@ -224,7 +224,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/U4rueCW0hIg?si=6eK7H4emaenBcdjf",
+          href: "https://youtu.be/U4rueCW0hIg",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro8.avif",
           text: ["一瞓醒清楚望到全世界", "真係好開心!"],
           nameEn: "Belle",
@@ -232,7 +232,7 @@ export default {
         },
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/VoGlE1dJPhc?si=EFfYk6MvR4lWQ-RG",
+          href: "https://youtu.be/VoGlE1dJPhc",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro9.avif",
           text: ["我都做咗", "SMILE Pro啦!"],
           nameEn: "Pinky",
@@ -241,7 +241,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/RzeaU0Y0zMI?si=k-nAUzozfJnqTukD",
+          href: "https://youtu.be/RzeaU0Y0zMI",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro10.avif",
           text: ["20秒解決人生", "一大問題"],
           nameEn: "Killer",
@@ -250,7 +250,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/IWGVOHwyUQc?si=kommCjdO7Q0h-Imy",
+          href: "https://youtu.be/IWGVOHwyUQc",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro11.avif",
           text: ["行出沙灘都有自信啲"],
           nameEn: "Jay",
@@ -259,7 +259,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/1p5Qm_772jI?si=Ts57553U5zS9uLC0",
+          href: "https://youtu.be/1p5Qm_772jI",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro12.avif",
           text: ["做完SMILE Pro", "上舞台都唔會驚光"],
           nameEn: "",
@@ -268,7 +268,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/pEZotzT-TeU?si=aCXqW7I-tESE0kyz",
+          href: "https://youtu.be/4ELnbQjUCsA",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro13.avif",
           text: ["婚禮To-Do List要有", "做SMILE Pro"],
           nameEn: "Mina",
@@ -277,7 +277,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/g9XwsIASJa4?si=7eMY6zkRXpkHG97T",
+          href: "https://youtu.be/r4rbUUVtjzM",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro14.avif",
           text: ["唔洗戴Con戴一世"],
           nameEn: "Maggie",
@@ -304,7 +304,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/33vCgmDh-UQ?si=1DJikbD_lp5m3t9k",
+          href: "https://youtu.be/33vCgmDh-UQ",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro17.avif",
           text: ["做完一出嚟問題解決哂"],
           nameEn: "",
@@ -312,7 +312,7 @@ export default {
         },
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/iHBGkRh-CXw?si=X6rWNiKmIcYifelG",
+          href: "https://youtu.be/iHBGkRh-CXw",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro18.avif",
           text: ["教瑜伽堂專注咗", "效率高咗"],
           nameEn: "Sandy To",
@@ -321,7 +321,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/jBAIJeUQGz0?si=L_r2vQunEESQ5mdZ",
+          href: "https://youtu.be/jBAIJeUQGz0",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro19.avif",
           text: ["無咗副Con", "生活自主返"],
           nameEn: "SAPIAH",
@@ -463,14 +463,14 @@ export default {
           nameCn: "李偉志",
         },
 
-        {
-          type: "SMILE",
-          href: "",
-          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile16.avif",
-          text: ["唔再俾Con霸住行李"],
-          nameEn: "Giann Chan",
-          nameCn: "",
-        },
+        // {
+        //   type: "SMILE",
+        //   href: "",
+        //   img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile16.avif",
+        //   text: ["唔再俾Con霸住行李"],
+        //   nameEn: "Giann Chan",
+        //   nameCn: "",
+        // },
         {
           type: "SMILE",
           href: "https://www.youtube.com/embed/dYYyN9YZGQg?si=zzOIgO3wRJ8i-SWP",
@@ -960,6 +960,7 @@ export default {
             font-style: normal;
             font-weight: 700;
             line-height: 1.75;
+            letter-spacing: 0;
           }
           .UserShareBox-list-item-link-text {
             position: absolute;
@@ -1165,7 +1166,7 @@ export default {
           // 右上角
           .UserShareBox-list-item-link-title {
             position: absolute;
-            right: 2px;
+            right:12px;
             top: 14px;
             border-radius: 75px;
             background: #eb981a;
@@ -1176,6 +1177,7 @@ export default {
             font-style: normal;
             font-weight: 700;
             line-height: 1.75;
+            letter-spacing: 0;
           }
           .UserShareBox-list-item-link-text {
             position: absolute;

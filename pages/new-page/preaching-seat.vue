@@ -139,10 +139,8 @@
         </div>
       </div>
       <div class="lecture-image">
-        <img src="https://statichk.cmermedical.com/smile/20250711_8月講座_CT.webp?ver=8" alt="8月 中環" />
-        <img src="https://statichk.cmermedical.com/smile/20250711_8月講座_MK.webp?ver=8" alt="8月 旺角" />
-        <img src="https://statichk.cmermedical.com/smile/CT_20250612_7月講座.webp?ver=7" alt="7月 中環" />
-        <img src="https://statichk.cmermedical.com/smile/MK_20250612_7月講座.webp?ver=7" alt="7月 旺角" />
+
+        <img src="https://statichk.cmermedical.com/smile/preaching-seat/timeArrangement.webp" alt="">
       </div>
     </div>
     <businessHours />
