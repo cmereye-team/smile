@@ -5015,14 +5015,14 @@ export default {
           href: "https://www.youtube.com/watch?v=T9g2qoFI9nU",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl1.avif",
           text: ["夜間高清視力對", "夜晚揸車好重要"],
-          nameEn: "Lily Lee",
+          nameEn: "Lily",
           nameCn: "",
         },
 
         {
           type: "ICL",
           href: "https://youtu.be/I2sl4GWqg1w",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif",
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif", 
           text: ["眼鏡由「必須品」", "變「奢侈品」"],
           nameEn: " ",
           nameCn: "麥沛東",
@@ -5033,7 +5033,7 @@ export default {
           href: "https://www.youtube.com/watch?v=2t7JjTab4xA",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl2.avif",
           text: ["好Surprise 做完之後", "24小時都睇得咁清"],
-          nameEn: "",
+          nameEn: "Phil",
           nameCn: "林奕匡",
         },
 
@@ -5043,7 +5043,7 @@ export default {
           href: "https://www.youtube.com/watch?v=5ihrzFvOy38",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl3.avif",
           text: ["每日起身唔洗戴Con", "慳好多時間 好方便"],
-          nameEn: "",
+          nameEn: "Serene Lim ",
           nameCn: "林宣妤",
         },
                                            {
@@ -5051,7 +5051,7 @@ export default {
           href: "https://www.youtube.com/watch?v=CEbbKFeFdnc",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl4.avif",
           text: ["眼鏡選擇多好多,", "世界限制少好多"],
-          nameEn: "",
+          nameEn: "Kwan Gor",
           nameCn: "吳業坤",
         },
 

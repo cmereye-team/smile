@@ -52,8 +52,21 @@
       <a href="/">主頁 > </a><a href="/patient-info">診症須知</a>
     </div>
 
+    <section class="navgation-link">
+      <ul class="new-container mx-auto">
+        <li
+          v-for="(item, index) in tabs"
+          :key="item.id"
+          :class="{ active: activeIndex == index }"
+          @click="scrollToLink(item.id, index)"
+        >
+          <a href="javascript:void(0)">{{ item.label }}</a>
+        </li>
+      </ul>
+    </section>
+
     <!-- 眼睛檢查及矯視前 -->
-    <section class="check-eye">
+    <section class="check-eye" id="beforeJiaoShi">
       <div class="check-eye-title mx-auto">
         <h2>眼睛檢查及矯視前</h2>
         <p class="check-eye-title-subtitle">
@@ -211,13 +224,13 @@
     </section>
 
     <!-- 矫视流程 -->
-    <section class="visionProcess">
+    <section class="visionProcess" id="inJiaoShi">
       <h2>矯視流程</h2>
       <p>
         經過詳細的眼睛檢查和診症，醫護人員會告知客人是否適合矯視，才進行矯視程序。
       </p>
 
-      <div class="visionProcess_Pcs">
+      <!-- <div class="visionProcess_Pcs">
         <div class="visionProcess_Pcs-item">
           <div class="visionProcess_Pcs-item-img">
             <img
@@ -273,26 +286,313 @@
           </div>
           <p>矯視療程</p>
         </div>
+      </div> -->
+
+      <div class="visionProcess_Plc">
+        <ul>
+          <li>
+            <h4>Step 1</h4>
+            <i></i>
+            <p>屈光檢查</p>
+          </li>
+
+          <li>
+            <h4>Step 2</h4>
+            <i></i>
+            <p>術前準備</p>
+          </li>
+
+          <li>
+            <h4>Step 3</h4>
+            <i></i>
+            <p>預約翌日覆診</p>
+          </li>
+
+          <li>
+            <h4>Step 4</h4>
+            <i></i>
+            <p>取藥及講解術後<br />藥水用法</p>
+          </li>
+
+          <li>
+            <h4>Step 5</h4>
+            <i></i>
+            <p>矯視療程</p>
+          </li>
+        </ul>
       </div>
 
       <!-- 注意事项 -->
       <div class="visionProcess-Notice">
         <img
-          src="https://statichk.cmermedical.com/smile/patient-info/visonProcess/visonProcess-Notice.png"
+          src="https://statichk.cmermedical.com/smile/patient-info/yellowWarning.svg"
           alt=""
         />
-        <h2>注意事項</h2>
+        <h2>矯視當日注意事項</h2>
 
         <div class="visionProcess-Notice-Card">
-          <div class="visionProcess-Notice-Card-item">
-            <h4>矯視前</h4>
-            <div class="visionProcess-Notice-Card-item-List">
-              <img src="" alt="" />
+          <h4>矯視前</h4>
+          <ul>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item1-1.avif"
+                alt=""
+              />
               <p>預先洗頭<br />避免術後雙眼入水</p>
+            </li>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item1-2.avif"
+                alt=""
+              />
+              <p>穿著寬鬆、開扣的<br />襯衫,避免術後換衣服<br />會觸碰雙眼</p>
+            </li>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item1-3.avif"
+                alt=""
+              />
+              <p>建議矯視當日由親友陪同</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 矯視過程中 -->
+        <div
+          class="visionProcess-Notice-Card visionProcess-Notice-Card-section2"
+        >
+          <h4>矯視過程中</h4>
+          <ul>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item2-1.avif"
+                alt=""
+              />
+              <p>不要郁動和說話</p>
+            </li>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item2-2.avif"
+                alt=""
+              />
+              <p>請遵照醫生指示</p>
+            </li>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item2-3.avif"
+                alt=""
+              />
+              <p>放鬆心情，不要緊張</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 請勿使用  -->
+        <div
+          class="visionProcess-Notice-Card visionProcess-Notice-Card-section3"
+        >
+          <h4>請勿使用</h4>
+          <ul>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item3-1.avif"
+                alt=""
+              />
+              <p>眼部化妝品</p>
+            </li>
+            <li>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/Notice-item3-2.avif"
+                alt=""
+              />
+              <p>任何香水、香薰或<br />揮發性用品</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 矯視後覆診 -->
+    <section class="section-last" id="afterJiaoShi">
+      <div class="section-last-1">
+        <h2>矯視後覆診</h2>
+        <ul>
+          <li>
+            <div>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/section-last-img1.avif"
+                alt="翌日"
+              />
+            </div>
+            <p>翌日</p>
+          </li>
+          <li>
+            <div>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/section-last-img2.avif"
+                alt="一星期"
+              />
+            </div>
+            <p>一星期</p>
+          </li>
+
+          <li>
+            <div>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/section-last-img3.avif"
+                alt="一個月"
+              />
+            </div>
+            <p>一個月</p>
+          </li>
+
+          <li>
+            <div>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/section-last-img4.avif"
+                alt="三個月 "
+              />
+            </div>
+            <p>三個月</p>
+          </li>
+
+          <li>
+            <div>
+              <img
+                src="https://statichk.cmermedical.com/smile/patient-info/section-last-img5.avif"
+                alt="六個月"
+              />
+            </div>
+            <p>六個月</p>
+            <span>（或按醫生之需要覆診指示）</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-last-2">
+        <h2>矯視後護理及注意事項</h2>
+        <div class="iframe-container">
+          <iframe
+            src="https://www.youtube.com/embed/xqyN2Scg_OA?si=ZCNws4P2XJgDv2EM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p>
+          <span>備註：</span> <br /><i>*</i>
+          已包含的覆診次數因不同矯視服務及不同矯視套餐而有所不同，詳情可參考收費詳情頁或聯絡查詢
+        </p>
+      </div>
+
+      <div class="section-last-3">
+        <img
+          src="https://statichk.cmermedical.com/smile/patient-info/section-last-3-title.avif"
+          alt=""
+        />
+        <h2>矯視後護理</h2>
+      </div>
+
+      <div class="section-last-4">
+        <div class="section-last-4-item">
+          <h3>完成SMILE/SMILE Pro矯視後</h3>
+          <div class="section-last-4-item-content">
+            <div class="section-last-4-item-content-text">
+              <h4>矯視後當天內</h4>
+              <div>
+                <p>
+                  <i>1</i
+                  ><span
+                    >矯視後流眼水或少許異物感等不適是正常
+                    現象，不適感覺在兩至三小時後逐漸減少</span
+                  >
+                </p>
+
+                <p>
+                  <i>2</i><span>按醫生指示定時服藥或滴眼藥水，維持四星期</span>
+                </p>
+
+                <p><i>3</i><span>避免揉擦眼睛</span></p>
+              </div>
+            </div>
+
+            <div class="section-last-4-item-content-text">
+              <h4>矯視後一星期內</h4>
+              <div>
+                <p><i>1</i><span>避免使用眼部化妝品</span></p>
+              </div>
+            </div>
+
+            <div class="section-last-4-item-content-text">
+              <h4>矯視後兩星期內</h4>
+              <div>
+                <p><i>1</i><span>避免使用眼部化妝品</span></p>
+                <p><i>2</i><span>避免梘水、自來水或污水進入眼睛</span></p>
+              </div>
+            </div>
+
+            <div class="section-last-4-item-content-text">
+              <h4>矯視後一個月內</h4>
+              <div>
+                <p>
+                  <i>1</i
+                  ><span
+                    >如有需要可配戴太陽眼鏡以防止紫外線的刺激或沙塵入眼</span
+                  >
+                </p>
+                <p><i>2</i><span>不可進行水上活動或浸熱水浴</span></p>
+
+                <p><i>3</i><span>不可進行碰撞性運動，如足球、籃球等</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-last-4-item">
+          <h3>完成ICL矯視後</h3>
+          <div class="section-last-4-item-content">
+            <div class="section-last-4-item-content-text">
+              <h4>矯視後當天內</h4>
+              <div>
+                <p>
+                  <i>1</i
+                  ><span
+                    >矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span
+                  >
+                </p>
+
+                <p><i>2</i><span>避免梘水、自來水或污水進入眼睛</span></p>
+
+                <p><i>3</i><span>按醫生指示定時服藥或滴眼藥水</span></p>
+                <p><i>4</i><span>避免揉擦眼睛</span></p>
+              </div>
+            </div>
+
+            <div class="section-last-4-item-content-text">
+              <h4>矯視後一星期內</h4>
+              <div>
+                <p><i>1</i><span>避免使用眼部化妝品</span></p>
+                <p><i>2</i><span>睡覺時可佩戴眼罩(如有需要)</span></p>
+              </div>
+            </div>
+
+            <div class="section-last-4-item-content-text">
+              <h4>矯視後一個月內</h4>
+              <div>
+                <p><i>1</i><span>不可游泳或進行劇烈運動</span></p>
+                <p><i>2</i><span>外出時可配戴太陽眼鏡(如有需要)</span></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <p class="section-last-5">
+        *任何時候若眼睛突然出現劇痛或視力明顯下降等情況，必須盡快求醫。
+      </p>
     </section>
 
     <section class="CaseSharingV2">
@@ -372,7 +672,6 @@
         </a>
       </div>
     </section>
-
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -394,7 +693,7 @@ import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
 
 import drow from "@/components/content/service/SmileProV2/drow.vue";
-import UserShare from "@/components/commom/UserShare/UserShare.vue";
+
 export default {
   components: {
     businessHours,
@@ -409,7 +708,6 @@ export default {
     FooterV2,
     HeadV2,
     drow,
-    UserShare,
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -460,6 +758,26 @@ export default {
   },
   data() {
     return {
+      activeIndex: 0,
+
+      // tab 列表数据
+      tabs: [
+        {
+          label: "矯視前",
+          href: "/patient-infoV2#beforeJiaoShi",
+          id: "beforeJiaoShi",
+        },
+        {
+          label: "矯視流程",
+          href: "/patient-infoV2#inJiaoShi",
+          id: "inJiaoShi",
+        },
+        {
+          label: "矯視後",
+          href: "/patient-infoV2#afterJiaoShi",
+          id: "afterJiaoShi",
+        },
+      ],
       isMobile: false,
       canonicalHref: "https://smile.hkcmereye.com/eye-examination/",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/eye-examination/",
@@ -471,6 +789,20 @@ export default {
   methods: {
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+
+    scrollToLink(id, idx) {
+      this.activeIndex = idx;
+      console.log(this.activeIndex);
+      this.$forceUpdate();
+
+      this.$nextTick(() => {
+        const target = document.getElementById(id);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+        history.pushState(null, null, `/patient-infoV2#${id}`);
+      });
     },
 
     async copyCurrentUrl() {
@@ -517,6 +849,13 @@ export default {
         this.isMobile = false;
       }
     });
+    // console.log(window.location);
+
+    const hash = window.location.hash;
+    const matchedIndex = this.tabs.findIndex((tab) => tab.href.includes(hash));
+    if (matchedIndex !== -1) {
+      this.activeIndex = matchedIndex;
+    }
   },
 };
 </script>
@@ -669,10 +1008,51 @@ i {
     }
   }
 
+  // 锚链接导航
+  .navgation-link {
+    position: sticky;
+    top: 80px;
+    opacity: 1;
+    z-index: 9;
+    ul {
+      display: flex;
+      border: 1px solid #4570b6;
+      width: fit-content;
+
+      li {
+        a {
+          display: block;
+          width: 33.33vw;
+          text-align: center;
+          box-sizing: border-box;
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 5.13vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2;
+          background: #fff;
+        }
+      }
+      & > li:nth-child(2) a {
+        border-left: 0.26vw solid #4570b6;
+        border-right: 0.26vw solid #4570b6;
+      }
+      .active {
+        a {
+          font-weight: 900;
+          color: #fff;
+          background: #4570b6;
+        }
+      }
+    }
+  }
+
   // 眼睛检查及矫视前
   .check-eye {
-    background: #f4fafc;
-    padding-top: 7.69vw;
+        scroll-margin-top: 30.77vw;
+    // background: #f4fafc;
+    padding-top: 6.41vw;
     padding-bottom: 17.18vw;
     .check-eye-title {
       max-width: 84.62vw;
@@ -966,160 +1346,542 @@ i {
 
   // 矫视流程
   .visionProcess {
-    padding-top: 30px;
+        scroll-margin-top: 30.77vw;
+
+    padding-top: 7.69vw;
     background: #f4fafc;
     & > h2 {
       color: #4570b6;
       font-family: "Noto Sans TC";
-      font-size: 20px;
+      font-size: 5.13vw;
       font-style: normal;
       font-weight: 900;
       line-height: 195%;
     }
     & > p {
-      max-width: 336px;
-      margin: 17px auto 36px;
+      max-width: 86.15vw;
+      margin: 4.36vw auto 9.23vw;
       color: #6d6e71;
       font-family: "Noto Sans HK";
-      font-size: 14px;
+      font-size: 3.59vw;
       font-style: normal;
       font-weight: 300;
       line-height: 214.286%;
-      letter-spacing: 2.8px;
+      letter-spacing: 0.7vw;
     }
-    .visionProcess_Pcs {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 37px 40px;
-      .visionProcess_Pcs-item {
-        width: 149px;
-        flex-shrink: 0;
-        text-align: center;
-        .visionProcess_Pcs-item-img {
-          height: 149px;
-          border-radius: 43.75px;
-          border: 0.625px solid #4570b6;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          & > div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 41px;
-            height: 41px;
+    // .visionProcess_Pcs {
+    //   display: flex;
+    //   justify-content: center;
+    //   flex-wrap: wrap;
+    //   gap: 37px 40px;
+    //   .visionProcess_Pcs-item {
+    //     width: 149px;
+    //     flex-shrink: 0;
+    //     text-align: center;
+    //     .visionProcess_Pcs-item-img {
+    //       height: 149px;
+    //       border-radius: 43.75px;
+    //       border: 0.625px solid #4570b6;
+    //       background: #fff;
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       position: relative;
+    //       & > div {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //         width: 41px;
+    //         height: 41px;
 
-            position: absolute;
-            top: -10px;
-            left: 6px;
+    //         position: absolute;
+    //         top: -10px;
+    //         left: 6px;
+    //         background: #4570b6;
+    //         border-radius: 50%;
+    //         span {
+    //           color: #fff;
+    //           text-align: center;
+    //           font-family: "Noto Sans HK";
+    //           font-size: 10px;
+    //           font-style: normal;
+    //           font-weight: 300;
+    //           line-height: 162.5%;
+    //         }
+    //         i {
+    //           color: #fff;
+    //           font-family: "Noto Sans HK";
+    //           font-size: 15px;
+    //           font-style: normal;
+    //           font-weight: 500;
+    //           line-height: 1;
+    //         }
+    //       }
+    //     }
+    //     & > p {
+    //       margin-top: 10px;
+    //       color: #4570b6;
+    //       font-family: "Noto Sans TC";
+    //       font-size: 14px;
+    //       font-style: normal;
+    //       font-weight: 500;
+    //       line-height: 133.929%;
+    //       letter-spacing: 3.5px;
+    //     }
+    //   }
+
+    //   & > .visionProcess_Pcs-item:nth-child(1) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 64px;
+    //         height: 74px;
+    //       }
+
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         width: 20px;
+    //         height: 34px;
+    //         background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
+    //           no-repeat;
+    //         background-size: 100% auto;
+    //         right: -30px;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //       }
+    //     }
+    //   }
+
+    //   & > .visionProcess_Pcs-item:nth-child(2) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 84px;
+    //         height: 77px;
+    //       }
+    //     }
+    //   }
+
+    //   & > .visionProcess_Pcs-item:nth-child(3) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 71px;
+    //         height: 74px;
+    //       }
+
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         width: 20px;
+    //         height: 34px;
+    //         background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
+    //           no-repeat;
+    //         background-size: 100% auto;
+    //         right: -30px;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //       }
+    //     }
+    //   }
+    //   & > .visionProcess_Pcs-item:nth-child(4) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 90px;
+    //         height: 50px;
+    //       }
+    //     }
+    //   }
+    // }
+    .visionProcess_Plc {
+      ul {
+        max-width: 86.15vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8.97vw 11.28vw;
+        justify-content: center;
+        li {
+          h4 {
+            color: #4570b6;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: 3.56vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 103.661%;
+            letter-spacing: 0;
+          }
+          i {
+            margin: 3.08vw auto 2.56vw;
+            display: block;
+            width: 3.08vw;
+            height: 3.08vw;
             background: #4570b6;
             border-radius: 50%;
-            span {
-              color: #fff;
-              text-align: center;
-              font-family: "Noto Sans HK";
-              font-size: 10px;
-              font-style: normal;
-              font-weight: 300;
-              line-height: 162.5%;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              right: -1.03vw;
+              top: 50%;
+              transform: translate(100%, -50%);
+              width: 24.2vw;
+              height: 0.26vw;
+
+              background: linear-gradient(
+                to right,
+                #4570b6 50%,
+                transparent 50%
+              );
+              background-size: 1.54vw 0.26vw;
+              background-position: 0 0;
+              background-repeat: repeat-x;
             }
-            i {
-              color: #fff;
-              font-family: "Noto Sans HK";
-              font-size: 15px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 1;
+          }
+          p {
+            text-align: center;
+            color: #4570b6;
+            font-family: "Noto Sans TC";
+            font-size: 3.59vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 118.804%;
+            letter-spacing: 0.9vw;
+          }
+        }
+
+        & > li:nth-child(2) {
+          i {
+            &::after {
+              width: 26.15vw;
             }
           }
         }
-        & > p {
-          margin-top: 10px;
-          color: #4570b6;
-          font-family: "Noto Sans TC";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 133.929%;
-          letter-spacing: 3.5px;
-        }
-      }
 
-      & > .visionProcess_Pcs-item:nth-child(1) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 64px;
-            height: 74px;
-          }
-
-          &::after {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 34px;
-            background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
-              no-repeat;
-            background-size: 100% auto;
-            right: -30px;
-            top: 50%;
-            transform: translateY(-50%);
+        & > li:nth-child(3) {
+          p {
+            letter-spacing: 0;
           }
         }
-      }
-
-      & > .visionProcess_Pcs-item:nth-child(2) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 84px;
-            height: 77px;
+        & > li:nth-child(4) {
+          i {
+            &::after {
+              width: 30.77vw;
+            }
           }
         }
-      }
-
-      & > .visionProcess_Pcs-item:nth-child(3) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 71px;
-            height: 74px;
-          }
-
-          &::after {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 34px;
-            background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
-              no-repeat;
-            background-size: 100% auto;
-            right: -30px;
-            top: 50%;
-            transform: translateY(-50%);
-          }
-        }
-      }
-      & > .visionProcess_Pcs-item:nth-child(4) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 90px;
-            height: 50px;
+        & > li:nth-child(3),
+        & > li:nth-child(5) {
+          i {
+            &::after {
+              content: none;
+            }
           }
         }
       }
     }
 
     .visionProcess-Notice {
-      img {
+      margin-top: 9.23vw;
+      padding-bottom: 10.26vw;
+
+      & > img {
         width: 11.79vw;
         height: 12.31vw;
         margin: 0 auto;
       }
       h2 {
         width: fit-content;
-        margin: 2.05vw auto 4.36vw;
+        margin: 2.05vw auto 9.23vw;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 5.13vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 103.173%;
+        letter-spacing: 0.51vw;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 8.72vw;
+          height: 6.15vw;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          left: -9.23vw;
+          bottom: -1.03vw;
+        }
+
+        &::after {
+          content: "";
+          width: 8.72vw;
+          height: 6.15vw;
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          right: -9.23vw;
+          bottom: -1.03vw !important;
+        }
+      }
+
+      .visionProcess-Notice-Card {
+        max-width: 86.15vw;
+        margin: 0 auto;
+        padding: 5.38vw 4.62vw 0 5.9vw;
+        border-radius: 23.404px;
+        border: 0.12vw solid #4570b6;
+        background: #fff;
+        h4 {
+          text-align: center;
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 4.1vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 95.395%;
+          letter-spacing: 0.41vw;
+        }
+        ul {
+          margin-top: 6.15vw;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            position: relative;
+
+            gap: 3.59vw;
+            height: 38.21vw;
+            width: 50%;
+
+            img {
+              width: 13.08vw;
+              height: auto;
+            }
+            p {
+              color: #4570b6;
+              text-align: center;
+              font-family: "Noto Sans TC";
+              font-size: 3.59vw;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 128.571%;
+            }
+          }
+          & > li:nth-child(2) {
+            padding-top: 2.82vw;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 0.26vw;
+              background: linear-gradient(
+                to bottom,
+                #cdcdcd 50%,
+                transparent 50%
+              );
+              background-size: 0.26vw 1.54vw;
+              background-position: 0 0;
+              background-repeat: repeat-y;
+            }
+          }
+          & > li:nth-child(3) {
+            width: 100%;
+            padding-top: 5.38vw;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 0.26vw;
+              width: 100%;
+              background: linear-gradient(
+                to right,
+                #cdcdcd 50%,
+                transparent 50%
+              );
+              background-size: 1.54vw 0.26vw;
+              background-position: 0 0;
+              background-repeat: repeat-x;
+            }
+          }
+        }
+      }
+      .visionProcess-Notice-Card-section2 {
+        margin: 5.13vw auto;
+        ul {
+          li {
+            padding-top: 3.59vw;
+            height: 33.33vw;
+          }
+          & > li:nth-child(2) {
+            padding-top: 3.59vw;
+          }
+        }
+      }
+      .visionProcess-Notice-Card-section3 {
+        padding-bottom: 6.41vw;
+        ul {
+          li {
+            padding-top: 2.82vw;
+            height: 31.54vw;
+          }
+          & > li:nth-child(2) {
+            padding-top: 2.82vw;
+          }
+        }
+      }
+    }
+  }
+
+  //矯視後覆診
+  .section-last {
+        scroll-margin-top:30.77vw;
+
+    background: #def1ff;
+    padding-top: 10.26vw;
+    padding-bottom: 7.69vw;
+    .section-last-1 {
+      h2 {
+        text-align: center;
+        margin-bottom: 2.82vw;
+
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 5.13vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 195%;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7.69vw 8.46vw;
+
+        li {
+          width: 22.82vw;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -5.13vw;
+            transform: translateY(-50%);
+            background: url("https://statichk.cmermedical.com/smile/patient-info/section-last-toright.svg")
+              no-repeat;
+            background-size: 100% auto;
+            width: 2.05vw;
+            height: 3.59vw;
+          }
+
+          & > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 22.82vw;
+            width: 22.82vw;
+            border-radius: 50%;
+            border: 0.09vw solid #4570b6;
+            background: #fff;
+            img {
+              width: 11.03vw;
+            }
+          }
+          p {
+            margin-top: 1.54vw;
+            color: #4570b6;
+            text-align: center;
+            font-family: "Noto Sans TC";
+            font-size: 3.59vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 91.392%;
+            letter-spacing: 0.9vw;
+          }
+          span {
+            position: absolute;
+            white-space: nowrap;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #4570b6;
+            font-family: "Noto Sans TC";
+            font-size: 3.08vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 4.62vw;
+          }
+        }
+        & > li:nth-child(3),
+        & > li:last-child {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .section-last-2 {
+      h2 {
+        margin: 12.82vw auto 1.54vw;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 5.13vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 195%;
+      }
+      .iframe-container {
+        width: 100vw;
+        margin: 0 auto;
+        aspect-ratio: 560/315;
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+
+      & > p {
+        max-width: 86.15vw;
+        margin: 5.13vw auto 0;
+        color: #6d6e71;
+        font-family: "Noto Sans HK";
+        font-size: 3.59vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.1;
+        letter-spacing: 0.72vw;
+        span {
+          color: #4570b6;
+          font-weight: 500;
+        }
+        i {
+          color: #4570b6;
+        }
+      }
+    }
+    .section-last-3 {
+      margin-top: 12.82vw;
+      margin-bottom: 7.69vw;
+
+      & > img {
+        width: 11.79vw;
+
+        margin: 0 auto;
+      }
+      h2 {
+        width: fit-content;
+        margin: 5.13vw auto 0vw;
         color: #4570b6;
         font-family: "Noto Sans TC";
         font-size: 5.13vw;
@@ -1154,12 +1916,138 @@ i {
         }
       }
     }
+    .section-last-4 {
+      display: flex;
+      flex-direction: column;
+      gap: 10.26vw;
+      align-items: center;
+      .section-last-4-item {
+        width: 87.18vw;
+
+        border-radius: 12px 12px 28px 28px;
+        overflow: hidden;
+        h3 {
+          background: #d0e2ff;
+          padding: 3.59vw 0;
+          text-align: center;
+
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: 4.62vw;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 101.494%;
+          letter-spacing: 0.46vw;
+        }
+        // 列表
+        .section-last-4-item-content {
+          background: #fff;
+          padding: 3.85vw 7.95vw 0px 6.15vw;
+          .section-last-4-item-content-text {
+            padding-bottom: 9.49vw;
+            h4 {
+              color: #4570b6;
+              font-family: "Noto Sans TC";
+              font-size: 4.62vw;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 101.494%;
+              letter-spacing: 0.46vw;
+              padding-bottom: 2.56vw;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 0.26vw;
+                width: 100%;
+                background: linear-gradient(
+                  to right,
+                  #cdcdcd 50%,
+                  transparent 50%
+                );
+                background-size: 1.54vw 0.26vw;
+                background-position: 0 0;
+                background-repeat: repeat-x;
+              }
+            }
+            & > div {
+              margin-top: 3.08vw;
+              display: flex;
+              flex-direction: column;
+              gap: 4.1vw;
+              p {
+                display: flex;
+                gap: 2.49vw;
+
+                i {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 6.15vw;
+                  height: 6.15vw;
+                  background: #4570b6;
+                  border-radius: 50%;
+                  flex-shrink: 0;
+                  color: #fff;
+                  font-family: "Noto Sans TC";
+                  font-size: 3.43vw;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 130.482%;
+                }
+                span {
+                  color: #6d6e71;
+                  font-family: "Noto Sans TC";
+                  font-size: 3.59vw;
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: 130.492%;
+                }
+              }
+            }
+          }
+        }
+      }
+      & > .section-last-4-item:nth-child(2) {
+        h3 {
+          color: #09a1b5;
+          background: #afebe7;
+        }
+        .section-last-4-item-content {
+          .section-last-4-item-content-text {
+            h4 {
+              color: #09a1b5;
+            }
+            & > div {
+              i {
+                background: #09a1b5;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-last-5 {
+      width: 86.15vw;
+      margin: 7.95vw auto 0px;
+
+      color: #6d6e71;
+      font-family: "Noto Sans HK";
+      font-size: 3.59vw;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 214.286%;
+      letter-spacing: 0.72vw;
+    }
   }
 
+  // 分享
   .CaseSharingV2 {
     width: fit-content;
-    margin: 0 auto;
-    margin-top: 50px;
+
+    margin: 44px auto 0;
     & > div:nth-child(1) {
       display: flex;
       align-items: center;
@@ -1271,10 +2159,55 @@ i {
     }
   }
 
+  // 锚链接导航
+  .navgation-link {
+    position: sticky;
+    top: 160px;
+    opacity: 1;
+    z-index: 9;
+    margin-top: 72px;
+
+    ul {
+      display: flex;
+      border: 1px solid #4570b6;
+      width: fit-content;
+
+      li {
+        a {
+          display: block;
+          width: clamp(201px, 20.94vw, 402px);
+          padding: clamp(14px, 1.46vw, 28px) 0;
+          text-align: center;
+          box-sizing: border-box;
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: clamp(15px, 1.56vw, 30px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1;
+          letter-spacing: clamp(3.75px, 0.39vw, 7.5px);
+          background: #fff;
+        }
+      }
+      & > li:nth-child(2) a {
+        border-left: 1px solid #4570b6;
+        border-right: 1px solid #4570b6;
+      }
+      .active {
+        a {
+          font-weight: 900;
+          color: #fff;
+          background: #4570b6;
+        }
+      }
+    }
+  }
+
   // 眼睛检查及矫视前
   .check-eye {
+    scroll-margin-top: clamp(125px,13.02vw,250px);
     margin-top: clamp(6px, 0.63vw, 12px);
-    background: #f4fafc;
+    // background: #f4fafc;
     padding-top: clamp(43px, 4.48vw, 86px);
     padding-bottom: clamp(77px, 8.02vw, 154px);
     .check-eye-title {
@@ -1574,148 +2507,674 @@ i {
 
   // 矫视流程
   .visionProcess {
+    scroll-margin-top: clamp(125px,13.02vw,250px);
     background: #f4fafc;
-    padding-top: 95px;
+    padding-top: clamp(47.5px, 4.95vw, 95px);
+    padding-bottom: clamp(75px, 7.81vw, 150px);
     & > h2 {
       color: #4570b6;
       font-family: "Noto Sans TC";
-      font-size: 30px;
+      font-size: clamp(15px, 1.56vw, 30px);
       font-style: normal;
       font-weight: 900;
       line-height: 1;
-      letter-spacing: 3px;
+      letter-spacing: clamp(1.5px, 0.16vw, 3px);
     }
     & > p {
-      margin: 36px auto 60px;
+      margin: clamp(18px, 1.88vw, 36px) auto clamp(40px, 4.17vw, 80px);
       color: #6d6e71;
       text-align: center;
       font-family: "Noto Sans HK";
-      font-size: 20px;
+      font-size: clamp(10px, 1.04vw, 20px);
       font-style: normal;
       font-weight: 300;
       line-height: 175%;
-      letter-spacing: 6px;
+      letter-spacing: clamp(3px, 0.31vw, 6px);
     }
-    .visionProcess_Pcs {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 57px;
-      .visionProcess_Pcs-item {
-        width: 228px;
-        flex-shrink: 0;
-        text-align: center;
-        .visionProcess_Pcs-item-img {
-          height: 228px;
-          border-radius: 66.981px;
-          border: 0.957px solid #4570b6;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
+    // .visionProcess_Pcs {
+    //   display: flex;
+    //   justify-content: center;
+    //   flex-wrap: wrap;
+    //   gap: 57px;
+    //   .visionProcess_Pcs-item {
+    //     width: 228px;
+    //     flex-shrink: 0;
+    //     text-align: center;
+    //     .visionProcess_Pcs-item-img {
+    //       height: 228px;
+    //       border-radius: 66.981px;
+    //       border: 0.957px solid #4570b6;
+    //       background: #fff;
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       position: relative;
 
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         width: 20px;
+    //         height: 34px;
+    //         background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
+    //           no-repeat;
+    //         background-size: 100% auto;
+    //         right: -40px;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //       }
+
+    //       & > div {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //         width: 63px;
+    //         height: 63px;
+
+    //         position: absolute;
+    //         top: -16px;
+    //         left: 9px;
+    //         background: #4570b6;
+    //         border-radius: 50%;
+    //         span {
+    //           color: #fff;
+    //           text-align: center;
+    //           font-family: "Noto Sans HK";
+    //           font-size: 15.31px;
+    //           font-style: normal;
+    //           font-weight: 300;
+    //           line-height: 1.2;
+    //           letter-spacing: 0;
+    //         }
+    //         i {
+    //           color: #fff;
+    //           font-family: "Noto Sans HK";
+    //           font-size: 22.965px;
+    //           font-style: normal;
+    //           font-weight: 500;
+    //           line-height: 1.1;
+    //         }
+    //       }
+    //     }
+    //     & > p {
+    //       margin-top: 16px;
+    //       color: #4570b6;
+    //       font-family: "Noto Sans TC";
+    //       font-size: 22px;
+    //       font-style: normal;
+    //       font-weight: 500;
+    //       line-height: 130.482%;
+    //       letter-spacing: 5.5px;
+    //     }
+    //   }
+
+    //   & > .visionProcess_Pcs-item:nth-child(1) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 98px;
+    //         height: 113px;
+    //         flex-shrink: 0;
+    //       }
+    //     }
+    //   }
+
+    //   & > .visionProcess_Pcs-item:nth-child(2) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 130px;
+    //         height: 118px;
+    //       }
+    //     }
+    //   }
+
+    //   & > .visionProcess_Pcs-item:nth-child(3) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 109px;
+    //         height: 114px;
+    //       }
+    //     }
+    //   }
+    //   & > .visionProcess_Pcs-item:nth-child(4) {
+    //     .visionProcess_Pcs-item-img {
+    //       img {
+    //         width: 138px;
+    //         height: 77px;
+    //       }
+    //       &::after {
+    //         content: none;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .visionProcess_Plc {
+      ul {
+        max-width: clamp(543.5px, 56.61vw, 1087px);
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 clamp(40px, 4.17vw, 80px);
+        justify-content: center;
+        li {
+          h4 {
+            color: #4570b6;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: clamp(12px, 1.25vw, 24px);
+            font-style: normal;
+            font-weight: 900;
+            line-height: 103.661%;
+            letter-spacing: 0;
+          }
+          i {
+            margin: clamp(12px, 1.25vw, 24px) auto clamp(9px, 0.94vw, 18px);
+            display: block;
+            width: clamp(10px, 1.04vw, 20px);
+            height: clamp(10px, 1.04vw, 20px);
+            background: #4570b6;
+            border-radius: 50%;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              right: clamp(-8px, -0.42vw, -4px);
+              top: 50%;
+              transform: translate(100%, -50%);
+              width: clamp(78px, 8.13vw, 156px);
+              height: 1px;
+
+              background: linear-gradient(
+                to right,
+                #4570b6 50%,
+                transparent 50%
+              );
+              background-size: 6px 1px;
+              background-position: 0 0;
+              background-repeat: repeat-x;
+            }
+          }
+          p {
+            text-align: center;
+            color: #4570b6;
+            font-family: "Noto Sans TC";
+            font-size: clamp(11px, 1.15vw, 22px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130.482%;
+            letter-spacing: clamp(2.75px, 0.29vw, 5.5px);
+          }
+        }
+
+        & > li:nth-child(2) {
+          i {
+            &::after {
+              width: clamp(82.5px, 8.59vw, 165px);
+            }
+          }
+        }
+        & > li:nth-child(4) {
+          i {
+            &::after {
+              width: clamp(98px, 10.21vw, 196px);
+            }
+          }
+        }
+        & > li:nth-child(3) {
+          i {
+            &::after {
+              width: clamp(103.5px, 10.78vw, 207px);
+            }
+          }
+          p {
+            letter-spacing: 0;
+          }
+        }
+        & > li:nth-child(5) {
+          i {
+            &::after {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+
+    .visionProcess-Notice {
+      margin-top: clamp(18px, 1.88vw, 36px);
+      & > img {
+        width: clamp(58.5px, 6.09vw, 117px);
+        height: clamp(58.5px, 6.09vw, 117px);
+        margin: 0 auto;
+      }
+      h2 {
+        width: fit-content;
+        margin: 0 auto clamp(16.5px, 1.72vw, 33px);
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(15px, 1.56vw, 30px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: clamp(1.5px, 0.16vw, 3px);
+        position: relative;
+
+        &::before {
+          content: "";
+          width: clamp(25px, 2.6vw, 50px);
+          height: clamp(19.5px, 2.03vw, 39px);
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          left: clamp(-55px, -2.86vw, -27.5px);
+          bottom: -10px clamp(-10px, -0.52vw, -5px);
+        }
+
+        &::after {
+          content: "";
+          width: clamp(25px, 2.6vw, 50px);
+          height: clamp(19.5px, 2.03vw, 39px);
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          right: clamp(-55px, -2.86vw, -27.5px);
+          bottom: -10px clamp(-10px, -0.52vw, -5px) !important;
+        }
+      }
+
+      .visionProcess-Notice-Card {
+        max-width: clamp(600px, 62.5vw, 1200px);
+        margin: 0 auto;
+        padding: clamp(31px, 3.23vw, 62px) 0px clamp(26.5px, 2.76vw, 53px);
+        border-radius: clamp(23px, 2.4vw, 46px);
+        border: 1px solid #4570b6;
+        background: #fff;
+        h4 {
+          text-align: center;
+          color: #4570b6;
+          font-family: "Noto Sans TC";
+          font-size: clamp(15px, 1.56vw, 30px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1;
+          letter-spacing: clamp(1.5px, 0.16vw, 3px);
+        }
+        ul {
+          margin-top: clamp(12px, 1.25vw, 24px);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            position: relative;
+            gap: clamp(19px, 1.98vw, 38px);
+            height: clamp(112.5px, 11.72vw, 225px);
+            width: clamp(188px, 19.58vw, 376px);
+            padding-top: clamp(11px, 1.15vw, 22px);
+
+            img {
+              width: auto;
+              height: clamp(46px, 4.79vw, 92px);
+            }
+            p {
+              color: #4570b6;
+              text-align: center;
+              font-family: "Noto Sans TC";
+              font-size: clamp(11px, 1.15vw, 22px);
+              font-style: normal;
+              font-weight: 300;
+              line-height: 130.482%;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 100%;
+              width: 1px;
+              background: linear-gradient(
+                to bottom,
+                #cdcdcd 50%,
+                transparent 50%
+              );
+              background-size: 1px 6px;
+              background-position: 0 0;
+              background-repeat: repeat-y;
+            }
+          }
+          & > li:last-child {
+            &::after {
+              content: none;
+            }
+          }
+        }
+      }
+      .visionProcess-Notice-Card-section2 {
+        margin: clamp(20px, 2.08vw, 40px) auto;
+      }
+    }
+  }
+
+  //矯視後覆診
+  .section-last {
+    scroll-margin-top: clamp(125px,13.02vw,250px);
+    background: #def1ff;
+    padding-top: clamp(50px, 5.21vw, 100px);
+    padding-bottom: clamp(50px, 5.21vw, 100px);
+    .section-last-1 {
+      h2 {
+        text-align: center;
+        margin-bottom: clamp(20px, 2.08vw, 40px);
+
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(15px, 1.56vw, 30px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: clamp(1.5px, 0.16vw, 3px);
+      }
+      ul {
+        display: flex;
+
+        justify-content: center;
+        gap: 0 clamp(59.5px, 6.2vw, 119px);
+
+        li {
+          width: clamp(100px, 10.42vw, 200px);
+          position: relative;
           &::after {
             content: "";
             position: absolute;
-            width: 20px;
-            height: 34px;
-            background: url("https://statichk.cmermedical.com/smile/patient-info/right.png")
+            top: 50%;
+            right: clamp(-40px, -2.08vw, -20px);
+            transform: translateY(-50%);
+            background: url("https://statichk.cmermedical.com/smile/patient-info/section-last-toright.svg")
               no-repeat;
             background-size: 100% auto;
-            right: -40px;
-            top: 50%;
-            transform: translateY(-50%);
+            width: clamp(9px, 0.94vw, 18px);
+            height: clamp(15px, 1.56vw, 30px);
           }
 
           & > div {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            width: 63px;
-            height: 63px;
-
-            position: absolute;
-            top: -16px;
-            left: 9px;
-            background: #4570b6;
+            justify-content: center;
+            text-align: center;
+            height: clamp(100px, 10.42vw, 200px);
+            width: clamp(100px, 10.42vw, 200px);
             border-radius: 50%;
-            span {
-              color: #fff;
-              text-align: center;
-              font-family: "Noto Sans HK";
-              font-size: 15.31px;
-              font-style: normal;
-              font-weight: 300;
-              line-height: 1.2;
-              letter-spacing: 0;
-            }
-            i {
-              color: #fff;
-              font-family: "Noto Sans HK";
-              font-size: 22.965px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 1.1;
+            border: clamp(0.4px, 0.04vw, 0.8px) solid #4570b6;
+            background: #fff;
+            img {
+              width: clamp(49px, 5.1vw, 98px);
             }
           }
+          p {
+            margin-top: clamp(7px, 0.73vw, 14px);
+            color: #4570b6;
+            text-align: center;
+            font-family: "Noto Sans TC";
+            font-size: clamp(11px, 1.15vw, 22px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130.482%;
+            letter-spacing: clamp(2.75px, 0.29vw, 5.5px);
+          }
+          span {
+            position: absolute;
+            white-space: nowrap;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #4570b6;
+            font-family: "Noto Sans TC";
+            font-size: clamp(9px, 0.94vw, 18px);
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.5;
+          }
         }
-        & > p {
-          margin-top: 16px;
+
+        & > li:last-child {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .section-last-2 {
+      h2 {
+        margin: clamp(50px, 5.21vw, 100px) auto clamp(26px, 2.71vw, 52px);
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(15px, 1.56vw, 30px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: clamp(1.5px, 0.16vw, 3px);
+      }
+      .iframe-container {
+        width: clamp(302.5px, 31.51vw, 605px);
+        margin: 0 auto;
+        aspect-ratio: 560/315;
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+
+      & > p {
+        max-width: clamp(556px, 57.92vw, 1112px);
+        margin: clamp(20px, 2.08vw, 40px) auto 0;
+        color: #6d6e71;
+        font-family: "Noto Sans HK";
+        font-size: clamp(10px, 1.04vw, 20px);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.8;
+        letter-spacing: clamp(2.5px, 0.26vw, 5px);
+        span {
+          color: #4570b6;
+          font-weight: 500;
+        }
+        i {
+          color: #4570b6;
+        }
+      }
+    }
+
+    .section-last-3 {
+      padding-top: clamp(20px, 2.08vw, 40px);
+      padding-bottom: clamp(35px, 3.65vw, 70px);
+
+      & > img {
+        width: clamp(33.5px, 3.49vw, 67px);
+        margin: 0 auto;
+      }
+      h2 {
+        width: fit-content;
+        margin: clamp(13.5px, 1.41vw, 27px) auto 0px;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(15px, 1.56vw, 30px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: clamp(1.5px, 0.16vw, 3px);
+        position: relative;
+
+        &::before {
+          content: "";
+          width: clamp(25px, 2.6vw, 50px);
+          height: clamp(19.5px, 2.03vw, 39px);
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-left.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          left: clamp(-55px, -2.86vw, -27.5px);
+          bottom: clamp(-10px, -0.52vw, -5px);
+        }
+
+        &::after {
+          content: "";
+          width: clamp(25px, 2.6vw, 50px);
+          height: clamp(19.5px, 2.03vw, 39px);
+          background: url("https://statichk.cmermedical.com/smile/patient-info/title-right.svg")
+            no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          right: clamp(-55px, -2.86vw, -27.5px);
+          bottom: clamp(-10px, -0.52vw, -5px) !important;
+        }
+      }
+    }
+
+    .section-last-4 {
+      display: flex;
+      gap: clamp(11px, 1.15vw, 22px);
+      justify-content: center;
+      align-items: center;
+      .section-last-4-item {
+        width: clamp(279px, 29.06vw, 558px);
+        border-radius: clamp(10px, 1.04vw, 20px) clamp(10px, 1.04vw, 20px)
+          clamp(23px, 2.4vw, 46px) clamp(23px, 2.4vw, 46px);
+        overflow: hidden;
+        h3 {
+          background: #d0e2ff;
+          padding: clamp(11px, 1.15vw, 22px) 0;
+          text-align: center;
+
           color: #4570b6;
           font-family: "Noto Sans TC";
-          font-size: 22px;
+          font-size: clamp(15px, 1.56vw, 30px);
           font-style: normal;
-          font-weight: 500;
-          line-height: 130.482%;
-          letter-spacing: 5.5px;
+          font-weight: 900;
+          line-height: 1;
+          letter-spacing: clamp(1.5px, 0.16vw, 3px);
         }
-      }
+        // 列表
+        .section-last-4-item-content {
+          background: #fff;
+          padding: clamp(13px, 1.35vw, 26px) clamp(25.5px, 2.66vw, 51px) 0px
+            clamp(20px, 2.08vw, 40px);
+          .section-last-4-item-content-text {
+            padding-bottom: clamp(31.5px, 3.28vw, 63px);
+            h4 {
+              color: #4570b6;
+              font-family: "Noto Sans TC";
+              font-size: clamp(15px, 1.56vw, 30px);
+              font-style: normal;
+              font-weight: 500;
+              line-height: 1;
+              letter-spacing: clamp(1.5px, 0.16vw, 3px);
+              padding-bottom: clamp(9.5px, 0.99vw, 19px);
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                background: linear-gradient(
+                  to right,
+                  #cdcdcd 50%,
+                  transparent 50%
+                );
+                background-size: 6px 1px;
+                background-position: 0 0;
+                background-repeat: repeat-x;
+              }
+            }
+            & > div {
+              margin-top: clamp(10px, 1.04vw, 20px);
+              display: flex;
+              flex-direction: column;
+              gap: clamp(14.5px, 1.51vw, 29px);
+              p {
+                display: flex;
+                gap: clamp(8px, 0.83vw, 16px);
 
-      & > .visionProcess_Pcs-item:nth-child(1) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 98px;
-            height: 113px;
-            flex-shrink: 0;
-          }
-        }
-      }
+                i {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: clamp(20px, 2.08vw, 40px);
+                  height: clamp(20px, 2.08vw, 40px);
+                  flex-shrink: 0;
+                  background: #4570b6;
+                  border-radius: 50%;
 
-      & > .visionProcess_Pcs-item:nth-child(2) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 130px;
-            height: 118px;
+                  color: #fff;
+                  font-family: "Noto Sans TC";
+                  font-size: clamp(11px, 1.15vw, 22px);
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 130.482%;
+                }
+                span {
+                  color: #6d6e71;
+                  font-family: "Noto Sans TC";
+                  font-size: clamp(11px, 1.15vw, 22px);
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: 136.364%;
+                }
+              }
+            }
           }
         }
       }
+      & > .section-last-4-item:nth-child(2) {
+        height: -webkit-fill-available;
+        h3 {
+          color: #09a1b5;
+          background: #afebe7;
+        }
+        .section-last-4-item-content {
+          height: 100%;
 
-      & > .visionProcess_Pcs-item:nth-child(3) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 109px;
-            height: 114px;
+          .section-last-4-item-content-text {
+            h4 {
+              color: #09a1b5;
+            }
+            & > div {
+              i {
+                background: #09a1b5;
+              }
+            }
           }
         }
       }
-      & > .visionProcess_Pcs-item:nth-child(4) {
-        .visionProcess_Pcs-item-img {
-          img {
-            width: 138px;
-            height: 77px;
-          }
-           &::after {
-            content: none;}
-        }
-      }
+    }
+
+    .section-last-5 {
+      margin: clamp(18.5px, 1.93vw, 37px) auto 0px;
+      color: #6d6e71;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: clamp(10px, 1.04vw, 20px);
+      font-style: normal;
+      font-weight: 300;
+      line-height: 175%;
+      letter-spacing: clamp(3px, 0.31vw, 6px);
     }
   }
 
   // 分享给朋友
   .CaseSharingV2 {
     display: none;
+  }
+  .new-Footer-v2 {
+    margin-top: 0 !important;
   }
 }
 

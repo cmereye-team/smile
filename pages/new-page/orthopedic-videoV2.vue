@@ -28,10 +28,10 @@
     <!-- 搜索 -->
     <div class="new-container mx-auto search-box">
       <div class="search-box-meua">
-        <p><a href="/">主頁 > </a><a href="/video">診症須知</a></p>
+        <p><a href="/">主頁 > </a><a href="/video">個案分享</a></p>
       </div>
       <div class="search-box-input">
-        <div class="search-button">
+        <div class="search-button" @click="search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -75,7 +75,11 @@
         </li>
       </ul>
       <div class="videoList-box">
-        <ul class="UserShareBox-list" ref="UserShareBoxlist">
+        <ul
+          class="UserShareBox-list"
+          v-if="!searchBoolean"
+          ref="UserShareBoxlist"
+        >
           <li
             class="UserShareBox-list-item"
             v-for="(item, index) in userShare.filter(
@@ -100,8 +104,39 @@
                 </p>
                 <i :style="{ backgroundColor: getColor(item.type) }"></i>
                 <div class="UserShareBox-list-item-link-text-name">
-                  <span v-if="item.nameCn">{{ item.nameCn }}&nbsp;</span
-                  >
+                  <span v-if="item.nameCn">{{ item.nameCn }}&nbsp;</span>
+                  <span class="UserShareBox-list-item-link-text-name-en">{{
+                    item.nameEn
+                  }}</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="UserShareBox-list" v-else ref="UserShareBoxlist">
+          <li
+            class="UserShareBox-list-item"
+            v-for="(item, index) in searchList"
+            :key="index"
+          >
+            <a
+              class="UserShareBox-list-item-link"
+              :href="item.href"
+              target="_blank"
+            >
+              <img :src="item.img" alt="" loading="lazy" />
+              <span
+                class="UserShareBox-list-item-link-title"
+                :style="{ backgroundColor: getColor(item.type) }"
+                >{{ item.type }}</span
+              >
+              <div class="UserShareBox-list-item-link-text">
+                <p v-for="(text, i) in item.text" :key="i">
+                  {{ text }}
+                </p>
+                <i :style="{ backgroundColor: getColor(item.type) }"></i>
+                <div class="UserShareBox-list-item-link-text-name">
+                  <span v-if="item.nameCn">{{ item.nameCn }}&nbsp;</span>
                   <span class="UserShareBox-list-item-link-text-name-en">{{
                     item.nameEn
                   }}</span>
@@ -640,8 +675,8 @@ export default {
           href: "https://www.youtube.com/watch?v=T9g2qoFI9nU",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl1.avif",
           text: ["夜間高清視力對", "夜晚揸車好重要"],
-          nameEn: "Lily Lee",
-          nameCn: "",
+          nameEn: "Lily",
+          nameCn: "李莉",
         },
 
         {
@@ -676,7 +711,7 @@ export default {
           href: "https://www.youtube.com/watch?v=CEbbKFeFdnc",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl4.avif",
           text: ["眼鏡選擇多好多,", "世界限制少好多"],
-          nameEn: "",
+          nameEn: "Kwan Gor",
           nameCn: "吳業坤",
         },
 
@@ -685,7 +720,7 @@ export default {
           href: "https://www.youtube.com/watch?v=2t7JjTab4xA",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl2.avif",
           text: ["好Surprise 做完之後", "24小時都睇得咁清"],
-          nameEn: "",
+          nameEn: "Phil",
           nameCn: "林奕匡",
         },
 
@@ -694,7 +729,7 @@ export default {
           href: "https://www.youtube.com/watch?v=5ihrzFvOy38",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl3.avif",
           text: ["每日起身唔洗戴Con", "慳好多時間 好方便"],
-          nameEn: "",
+          nameEn: "Serene Lim",
           nameCn: "林宣妤",
         },
 
@@ -707,8 +742,8 @@ export default {
           nameCn: "",
         },
       ],
-      userShareData:[],
-
+      userShareData: [],
+      searchBoolean: false,
       canonicalHref: "https://smile.hkcmereye.com/video/",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/video/",
       browserTitle: "個案分享及矯視資訊影片 - 希瑪微笑矯視中心",
@@ -763,27 +798,30 @@ export default {
       ],
     };
   },
+  mounted() {
+    this.userShareData = this.userShare;
+  },
   methods: {
     // search回车
     search() {
+      this.searchList = [];
       if (this.searchTerm == "") {
-        this.searchList = [];
-          this.userShare=this.userShareData
+        this.searchBoolean = false;
         return false;
       }
 
-      this.userShare.forEach((item) => {
+      this.userShareData.forEach((item) => {
         if (
-          item.nameEn.includes(this.searchTerm) ||
+          item.nameEn.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
           item.nameCn.includes(this.searchTerm)
         ) {
           this.searchList.push(item);
+        } else {
         }
-      }); 
-      this.activeTab=this.searchList[0].type
-
-      this.userShareData=this.userShare
-      this.userShare=this.searchList
+      });
+      
+      this.activeTab = this.searchList[0].type;
+      this.searchBoolean = true;
     },
     // 获取背景颜色
     getColor(type) {
@@ -991,10 +1029,10 @@ export default {
 
                 line-height: normal;
                 letter-spacing: 0.21vw;
-                    font-family: "Noto Sans TC";
+                font-family: "Noto Sans TC";
                 font-weight: 600;
               }
-     
+
               & > .UserShareBox-list-item-link-text-name-en {
                 font-family: "Poppins", sans-serif;
                 font-weight: 700;
@@ -1141,7 +1179,6 @@ export default {
       .active {
         color: #fff;
         background: #4570b6;
-
       }
     }
 
@@ -1166,7 +1203,7 @@ export default {
           // 右上角
           .UserShareBox-list-item-link-title {
             position: absolute;
-            right:12px;
+            right: 12px;
             top: 14px;
             border-radius: 75px;
             background: #eb981a;
@@ -1206,10 +1243,10 @@ export default {
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: 1.2px;
-                     font-family: "Noto Sans TC";
+                font-family: "Noto Sans TC";
                 font-weight: 600;
               }
-       
+
               & > .UserShareBox-list-item-link-text-name-en {
                 font-family: "Poppins", sans-serif;
                 font-weight: 700;

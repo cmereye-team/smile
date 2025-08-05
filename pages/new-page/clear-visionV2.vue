@@ -466,7 +466,7 @@ i {
                 position: absolute;
                 top: -6.41vw;
                 left: 0;
-                content: "可矯正";
+                content: "適合";
                 width: fit-content;
                 background: #4570b6;
                 padding: 1.03vw 2.05vw 0px 2.05vw;
@@ -1452,7 +1452,7 @@ i {
                 position: absolute;
                 top: clamp(-39px, -2.03vw, -19.5px);
                 left: 0;
-                content: "可矯正";
+                content: "適合";
                 width: fit-content;
                 background: #4570b6;
                 padding: clamp(5px, 0.52vw, 10px) clamp(11px, 1.15vw, 22px) 0
@@ -2481,7 +2481,7 @@ i {
             </div>
             <div class="CorrectionProgram-Box-hide-item-bottom">
               <div class="CorrectionProgram-Box-hide-item-top-text">
-                <p>• 39歲或以上</p>
+                <p>• 39歲或以上有老花</p>
                 <p>• 同時有近視/遠視問題</p>
                 <p>• 未有白內障</p>
               </div>
