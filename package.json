@@ -18,7 +18,7 @@
     "core-js": "^3.19.3",
     "element-ui": "^2.15.9",
     "gsap": "^3.11.5",
-    "js-cookie": "^3.0.1",
+    "js-cookie": "^3.0.1", 
     "node-sass": "^6.0.1",
     "nuxt": "^2.15.8",
     "nuxt-storage": "^1.2.2", 

@@ -163,18 +163,18 @@ export const $router = [
     title: "消費券詳情",
     component: resolve("pages/divit/index.vue"),
   },
+  // {
+  //   path: "/video",
+  //   name: "video",
+  //   // title: '個案分享及矯視資訊影片',
+  //   // component: resolve('pages/video/index.vue')
+  //   title: "矯視資訊影片",
+  //   component: resolve("pages/new-page/orthopedic-video.vue"),
+  // },
+
   {
     path: "/video",
     name: "video",
-    // title: '個案分享及矯視資訊影片',
-    // component: resolve('pages/video/index.vue')
-    title: "矯視資訊影片",
-    component: resolve("pages/new-page/orthopedic-video.vue"),
-  },
-
-  {
-    path: "/videoV2",
-    name: "videoV2",
     // title: '個案分享及矯視資訊影片',
     // component: resolve('pages/video/index.vue')
     title: "矯視資訊影片",
@@ -222,16 +222,16 @@ export const $router = [
     component: resolve("pages/new-page/smile-proV2.vue"),
   },
 
+  // {
+  //   path: "/vision-correction-presbyopia",
+  //   name: "vision-correction-presbyopia",
+  //   title: "CMER CLEAR-Vision",
+  //   // component: resolve('pages/vision-correction-presbyopia/index.vue'),
+  //   component: resolve("pages/new-page/clear-vision.vue"),
+  // },
   {
     path: "/vision-correction-presbyopia",
     name: "vision-correction-presbyopia",
-    title: "CMER CLEAR-Vision",
-    // component: resolve('pages/vision-correction-presbyopia/index.vue'),
-    component: resolve("pages/new-page/clear-vision.vue"),
-  },
-  {
-    path: "/vision-correction-presbyopiaV2",
-    name: "vision-correction-presbyopiaV2",
     title: "CMER CLEAR-Vision",
     // component: resolve('pages/vision-correction-presbyopia/index.vue'),
     component: resolve("pages/new-page/clear-visionV2.vue"),

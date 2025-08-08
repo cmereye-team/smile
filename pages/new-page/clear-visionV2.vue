@@ -3,6 +3,9 @@
 body {
   overflow-x: hidden;
 }
+a {
+  text-decoration: none;
+}
 </style>
 <style lang="scss" scoped>
 :deep(.mt-20) {
@@ -2350,7 +2353,7 @@ i {
           <div class="ClearVisionBanner-Box-content">
             <div class="ClearVisionBanner-Box-content-title">
               <a
-                href="/vision-correction-presbyopiaV2#CorrectionProgram"
+                href="/vision-correction-presbyopia#CorrectionProgram"
                 @click.prevent="scrollTo('CorrectionProgram')"
                 >CMER<br class="d-lg-none" />
                 CLEAR-Vision</a
@@ -2364,12 +2367,12 @@ i {
               </p>
               <p>
                 <a
-                  href="/vision-correction-presbyopiaV2#CorrectionProgram"
+                  href="/vision-correction-presbyopia#CorrectionProgram"
                   @click.prevent="scrollTo('CorrectionProgram')"
                   >CMER CLEAR-Vision</a
                 >及<a
-                  href="/vision-correction-presbyopiaV2#CorrectionProgram"
-                  @click.prevent="scrollTo('CorrectionProgram')"
+                  :href="!isMobile ? '/vision-correction-presbyopia#CorrectionProgram': '/vision-correction-presbyopia#CorrectionProgramTwo' "
+                  @click.prevent="!isMobile?scrollTo('CorrectionProgram'):scrollTo('CorrectionProgramTwo')"
                   >ICL Viva V6</a
                 >
               </p>
@@ -2465,14 +2468,14 @@ i {
                 <p>• 同時有近視/遠視/散光問題</p> 
               </div>
               <h4>CMER CLEAR-Vision</h4>
-              <p class="CorrectionProgram-Box-hide-item-bottom-text">
+              <p class="CorrectionProgram-Box-hide-item-bottom-text" id="CorrectionProgramTwo">
                 坊間稱之為<span>人工晶體置換術</span>。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，
-                <span>一次過解決近視、遠視、散光、老花</span
+                <span >一次過解決近視、遠視、散光、老花</span
                 >等問題。希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業諮詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
               </p>
             </div>
           </div>
-          <div class="CorrectionProgram-Box-hide-item">
+          <div class="CorrectionProgram-Box-hide-item" >
             <div class="CorrectionProgram-Box-hide-item-top">
               <img
                 src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcimg2.avif"
