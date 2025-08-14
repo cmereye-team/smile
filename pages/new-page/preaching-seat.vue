@@ -139,10 +139,10 @@
         </div>
       </div>
       <div class="lecture-image">
-
-        <!-- <img src="https://statichk.cmermedical.com/smile/preaching-seat/timeArrangement.webp" alt=""> -->
-        <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar1.avif" alt="">
+          <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar1.avif" alt="">
         <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar2.avif" alt="">
+        <img src="https://statichk.cmermedical.com/smile/preaching-seat/timeArrangement.webp" alt="">
+ 
 
       </div>
     </div>
