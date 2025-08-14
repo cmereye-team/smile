@@ -501,7 +501,7 @@
           <h3>完成SMILE/SMILE Pro矯視後</h3>
           <div class="section-last-4-item-content">
             <div class="section-last-4-item-content-text">
-              <h4>矯視後當天內</h4>
+              <h4>矯視後<span>當天內</span></h4>
               <div>
                 <p>
                   <i>1</i
@@ -520,22 +520,22 @@
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後一星期內</h4>
+              <h4>矯視後<span>一星期內</span> </h4>
               <div>
                 <p><i>1</i><span>避免使用眼部化妝品</span></p>
               </div>
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後兩星期內</h4>
+              <h4>矯視後<span>兩星期內</span></h4>
               <div>
-                <p><i>1</i><span>避免使用眼部化妝品</span></p>
-                <p><i>2</i><span>避免梘水、自來水或污水進入眼睛</span></p>
+         
+                <p><i>1</i><span>避免梘水、自來水或污水進入眼睛</span></p>
               </div>
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後一個月內</h4>
+              <h4>矯視後<span>一個月內</span></h4>
               <div>
                 <p>
                   <i>1</i
@@ -555,7 +555,7 @@
           <h3>完成ICL矯視後</h3>
           <div class="section-last-4-item-content">
             <div class="section-last-4-item-content-text">
-              <h4>矯視後當天內</h4>
+              <h4>矯視後<span>當天內</span> </h4>
               <div>
                 <p>
                   <i>1</i
@@ -572,7 +572,7 @@
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後一星期內</h4>
+              <h4>矯視後<span>一星期內</span> </h4>
               <div>
                 <p><i>1</i><span>避免使用眼部化妝品</span></p>
                 <p><i>2</i><span>睡覺時可佩戴眼罩(如有需要)</span></p>
@@ -580,7 +580,7 @@
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後一個月內</h4>
+              <h4>矯視後<span>一個月內</span> </h4>
               <div>
                 <p><i>1</i><span>不可游泳或進行劇烈運動</span></p>
                 <p><i>2</i><span>外出時可配戴太陽眼鏡(如有需要)</span></p>
@@ -1950,11 +1950,14 @@ i {
               font-family: "Noto Sans TC";
               font-size: 4.62vw;
               font-style: normal;
-              font-weight: 500;
+              font-weight: 400;
               line-height: 101.494%;
               letter-spacing: 0.46vw;
               padding-bottom: 2.56vw;
               position: relative;
+              span{
+                font-weight: 700;
+              }
               &::after {
                 content: "";
                 position: absolute;
@@ -2162,7 +2165,7 @@ i {
   // 锚链接导航
   .navgation-link {
     position: sticky;
-    top: 160px;
+    top: 159px;
     opacity: 1;
     z-index: 9;
     margin-top: 72px;
@@ -3072,11 +3075,14 @@ i {
               font-family: "Noto Sans TC";
               font-size: clamp(15px, 1.56vw, 30px);
               font-style: normal;
-              font-weight: 500;
+              font-weight: 400;
               line-height: 1;
               letter-spacing: clamp(1.5px, 0.16vw, 3px);
               padding-bottom: clamp(9.5px, 0.99vw, 19px);
               position: relative;
+              span{
+                font-weight: 700;
+              }
               &::after {
                 content: "";
                 position: absolute;

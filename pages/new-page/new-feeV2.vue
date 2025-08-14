@@ -108,7 +108,7 @@
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                  alt=""
+                  alt="不包括"
                 />
               </td>
               <td>1次</td>
@@ -121,25 +121,25 @@
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                  alt=""
+                  alt="不包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                  alt=""
+                  alt="不包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                  alt=""
+                  alt="不包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                  alt=""
+                  alt="不包括"
                 />
               </td>
             </tr>
@@ -149,31 +149,31 @@
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
             </tr>
@@ -202,31 +202,31 @@
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                  alt=""
+                  alt="不包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
             </tr>
@@ -236,31 +236,31 @@
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
               <td>
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                  alt=""
+                  alt="包括"
                 />
               </td>
             </tr>

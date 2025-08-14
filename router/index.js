@@ -206,6 +206,14 @@ export const $router = [
     // component: resolve('pages/vision-correction/relex-smile/index.vue'),
     component: resolve("pages/new-page/smile.vue"),
   },
+
+    {
+    path: "/vision-correction/relex-smileV2",
+    name: "vision-correction/relex-smileV2",
+    title: "SMILE 微笑激光矯視",
+    // component: resolve('pages/vision-correction/relex-smile/index.vue'),
+    component: resolve("pages/new-page/smileV2.vue"),
+  },
   // {
   //   path: '/smilePro',
   //   name: 'smilePro',
