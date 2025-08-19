@@ -468,8 +468,11 @@
           </li>
         </ul>
       </div>
-
       <div class="section-last-2">
+        <p>
+          <span>備註：</span> <br /><i>*</i>
+          已包含的覆診次數因不同矯視服務及不同矯視套餐而有所不同，詳情可參考收費詳情頁或聯絡查詢
+        </p>
         <h2>矯視後護理及注意事項</h2>
         <div class="iframe-container">
           <iframe
@@ -481,11 +484,6 @@
             allowfullscreen
           ></iframe>
         </div>
-
-        <p>
-          <span>備註：</span> <br /><i>*</i>
-          已包含的覆診次數因不同矯視服務及不同矯視套餐而有所不同，詳情可參考收費詳情頁或聯絡查詢
-        </p>
       </div>
 
       <div class="section-last-3">
