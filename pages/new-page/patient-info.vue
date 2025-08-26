@@ -1,4 +1,3 @@
-
 <template>
   <div class="lasik">
     <HeadV2 />
@@ -124,6 +123,7 @@
           ></iframe>
         </div>
       </div>
+      <div class="CorrectedVisionBefore-Process-title">矯視前檢查流程</div>
       <div class="CorrectedVisionBefore-Process">
         <div class="CorrectedVisionBefore-Process-item">
           <img
@@ -195,6 +195,35 @@
           <p>預約第二次檢查及同日矯視</p>
         </div>
       </div>
+      <div class="CorrectedVisionBefore-button">
+        <a
+          href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-16)%E7%9F%AF%E8%A6%96%E5%89%8D%E6%AA%A2%E6%9F%A5"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span>預約矯視前檢查</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="29"
+            viewBox="0 0 30 29"
+            fill="none"
+          >
+            <path
+              d="M3.19922 26.0597L25.8278 3.43115"
+              stroke="#ffffff"
+              stroke-width="5.4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M6.49609 2.71118H26.5987V22.1512"
+              stroke="#ffffff"
+              stroke-width="4.86"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
+      </div>
       <!-- 备注 -->
       <div class="CorrectedVisionBefore-note">
         <h4>備註:</h4>
@@ -205,8 +234,10 @@
         <p>
           <i>2.</i
           ><span
-            >詳細眼底檢查包括：淚水分泌測試、瞳孔測量、角膜地形掃描及像差、雙眼內皮細胞分析、散瞳眼底檢查、光學相干斷層
-            掃描(如需要)、掃描激光眼底檢查(如需要)</span
+            >SMILE/ SMILE
+            Pro微笑激光矯視的詳細眼底檢查包括：淚水分泌測試、瞳孔測量、角膜地形掃描及像差、雙眼內皮細胞分析、散瞳眼底檢查、光學相干斷層掃描(如需要)、掃描激光眼底檢查(如需要);
+            ICL植入式隱形眼鏡的眼底檢查額外包括:
+            內皮細胞的密度測量及眼科超聲生物顯微鏡</span
           >
         </p>
 
@@ -214,8 +245,8 @@
           <i>3.</i
           ><span>
             散瞳/ 放大瞳孔後：<br />
-            ·觀看近物時視野變得模糊<br />·有輕微畏光情況，可帶備太陽眼鏡
-            <br />·切勿駕駛 <br />·請帶備太陽眼鏡
+            ·觀看近物時視野變得模糊<br />·有輕微畏光情況 <br />·切勿駕駛
+            <br />·請帶備太陽眼鏡
             <br />
             <b>·放大瞳孔的效果一般會在4至6小時後消失</b>
           </span>
@@ -345,7 +376,7 @@
                 src="https://statichk.cmermedical.com/smile/patient-info/Notice-item1-2.avif"
                 alt=""
               />
-              <p>穿著寬鬆、開扣的<br />襯衫,避免術後換衣服<br />會觸碰雙眼</p>
+              <p>穿著寬鬆、開扣的<br />衣服,避免術後換衣服<br />會觸碰雙眼</p>
             </li>
             <li>
               <img
@@ -518,7 +549,7 @@
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後<span>一星期內</span> </h4>
+              <h4>矯視後<span>一星期內</span></h4>
               <div>
                 <p><i>1</i><span>避免使用眼部化妝品</span></p>
               </div>
@@ -527,7 +558,6 @@
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>兩星期內</span></h4>
               <div>
-         
                 <p><i>1</i><span>避免梘水、自來水或污水進入眼睛</span></p>
               </div>
             </div>
@@ -553,7 +583,7 @@
           <h3>完成ICL矯視後</h3>
           <div class="section-last-4-item-content">
             <div class="section-last-4-item-content-text">
-              <h4>矯視後<span>當天內</span> </h4>
+              <h4>矯視後<span>當天內</span></h4>
               <div>
                 <p>
                   <i>1</i
@@ -570,7 +600,7 @@
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後<span>一星期內</span> </h4>
+              <h4>矯視後<span>一星期內</span></h4>
               <div>
                 <p><i>1</i><span>避免使用眼部化妝品</span></p>
                 <p><i>2</i><span>睡覺時可佩戴眼罩(如有需要)</span></p>
@@ -578,7 +608,7 @@
             </div>
 
             <div class="section-last-4-item-content-text">
-              <h4>矯視後<span>一個月內</span> </h4>
+              <h4>矯視後<span>一個月內</span></h4>
               <div>
                 <p><i>1</i><span>不可游泳或進行劇烈運動</span></p>
                 <p><i>2</i><span>外出時可配戴太陽眼鏡(如有需要)</span></p>
@@ -858,9 +888,7 @@ export default {
 };
 </script>
 
-
-
-<style >
+<style>
 body {
   overflow-x: hidden;
   background: white;
@@ -1048,7 +1076,7 @@ i {
 
   // 眼睛检查及矫视前
   .check-eye {
-        scroll-margin-top: 30.77vw;
+    scroll-margin-top: 30.77vw;
     // background: #f4fafc;
     padding-top: 6.41vw;
     padding-bottom: 17.18vw;
@@ -1170,13 +1198,24 @@ i {
         }
       }
     }
-
     .CorrectedVisionBefore-Process {
       margin-top: 8.97vw;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10.26vw 4.1vw;
+      &-title {
+        width: fit-content;
+        margin: 5.05vw auto 6.36vw;
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: 5.13vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 103.173%;
+        letter-spacing: 0.51vw;
+        position: relative;
+      }
       .CorrectedVisionBefore-Process-item {
         position: relative;
         width: 41.28vw;
@@ -1273,9 +1312,8 @@ i {
       justify-content: center;
       align-items: center;
       width: 84.62vw;
-      margin: 0 auto 4.62vw;
+      margin: 0 auto 8.62vw;
       border: 0.307px solid #4471b7;
-
       & > div:nth-child(2) {
         background: #4471b7;
         h4,
@@ -1306,9 +1344,32 @@ i {
         }
       }
     }
+    // 預約按鈕
+    .CorrectedVisionBefore-button {
+      width: fit-content;
+      margin: 0 auto;
+      a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 2vw 8vw;
+        border-radius: 100px;
+        font-size: 5.5vw;
+        line-height: 7.5vw;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background-color: #4570b6;
+        border: 2px solid #4570b6;
+        gap: 9px;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
     .CorrectedVisionBefore-note {
       max-width: 84.62vw;
-      margin: 4.62vw auto 0;
+      margin: 8.62vw auto 0;
       h4 {
         color: #4570b6;
         font-family: "Noto Sans HK";
@@ -1344,7 +1405,7 @@ i {
 
   // 矫视流程
   .visionProcess {
-        scroll-margin-top: 30.77vw;
+    scroll-margin-top: 30.77vw;
 
     padding-top: 7.69vw;
     background: #f4fafc;
@@ -1742,7 +1803,7 @@ i {
 
   //矯視後覆診
   .section-last {
-        scroll-margin-top:30.77vw;
+    scroll-margin-top: 30.77vw;
 
     background: #def1ff;
     padding-top: 10.26vw;
@@ -1953,7 +2014,7 @@ i {
               letter-spacing: 0.46vw;
               padding-bottom: 2.56vw;
               position: relative;
-              span{
+              span {
                 font-weight: 700;
               }
               &::after {
@@ -2206,7 +2267,7 @@ i {
 
   // 眼睛检查及矫视前
   .check-eye {
-    scroll-margin-top: clamp(125px,13.02vw,250px);
+    scroll-margin-top: clamp(125px, 13.02vw, 250px);
     margin-top: clamp(6px, 0.63vw, 12px);
     // background: #f4fafc;
     padding-top: clamp(43px, 4.48vw, 86px);
@@ -2340,6 +2401,18 @@ i {
       max-width: clamp(540px, 56.25vw, 1080px);
       margin-left: auto;
       margin-right: auto;
+      &-title {
+        width: fit-content;
+        margin: clamp(34px, 3.54vw, 68px) auto clamp(34px, 3.54vw, 68px);
+        color: #4570b6;
+        font-family: "Noto Sans TC";
+        font-size: clamp(15px, 1.56vw, 30px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: clamp(1.5px, 0.16vw, 3px);
+        position: relative;
+      }
       .CorrectedVisionBefore-Process-item {
         position: relative;
         width: clamp(235px, 24.48vw, 470px);
@@ -2473,6 +2546,35 @@ i {
         }
       }
     }
+    // 預約按鈕
+    .CorrectedVisionBefore-button {
+      margin: 95px 0;
+      display: flex;
+      justify-content: center;
+      a {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 9px;
+        padding: 7px 32px;
+        background-color: #4570b6;
+        border-radius: 80px;
+        span {
+          color: #fff;
+          text-align: justify;
+          font-family: "Noto Sans TC";
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 63px; /* 175% */
+          letter-spacing: 1.8px;
+        }
+        svg {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
     .CorrectedVisionBefore-note {
       max-width: clamp(515.5px, 53.7vw, 1031px);
       margin: 0 auto;
@@ -2508,7 +2610,7 @@ i {
 
   // 矫视流程
   .visionProcess {
-    scroll-margin-top: clamp(125px,13.02vw,250px);
+    scroll-margin-top: clamp(125px, 13.02vw, 250px);
     background: #f4fafc;
     padding-top: clamp(47.5px, 4.95vw, 95px);
     padding-bottom: clamp(75px, 7.81vw, 150px);
@@ -2864,7 +2966,7 @@ i {
 
   //矯視後覆診
   .section-last {
-    scroll-margin-top: clamp(125px,13.02vw,250px);
+    scroll-margin-top: clamp(125px, 13.02vw, 250px);
     background: #def1ff;
     padding-top: clamp(50px, 5.21vw, 100px);
     padding-bottom: clamp(50px, 5.21vw, 100px);
@@ -3078,7 +3180,7 @@ i {
               letter-spacing: clamp(1.5px, 0.16vw, 3px);
               padding-bottom: clamp(9.5px, 0.99vw, 19px);
               position: relative;
-              span{
+              span {
                 font-weight: 700;
               }
               &::after {
@@ -3242,5 +3344,3 @@ i {
   }
 }
 </style>
-
- 
