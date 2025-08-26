@@ -108,7 +108,7 @@ export default {
     "asset/css/base-style.scss",
     "asset/css/tailwind.css",
     "element-ui/lib/theme-chalk/index.css",
-    { src: "swiper/dist/css/swiper.css" },
+    // { src: "swiper/dist/css/swiper.css" },
     { src: "animate.css/animate.css" },
   ],
 
@@ -118,6 +118,7 @@ export default {
     { src: "~plugins/element-ui/element-ui.js", ssr: false },
     { src: "~plugins/wow.js", ssr: false },
     { src: "./router/beforeEach.js", ssr: false },
+    { src: "~/plugins/nuxt-swiper.js", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -131,11 +132,16 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios"],
+    [
+      "@nuxtjs/i18n",
+      i18n,
+      "@nuxtjs/gtm",
+      "@nuxtjs/sitemap",
+      "@nuxtjs/axios",
+      "nuxt-swiper",
+    ],
   ],
 
-
-  
   workbox: {
     enabled: true,
     // 添加预缓存配置
@@ -163,7 +169,6 @@ export default {
       },
     ],
   },
-
   sitemap: {
     hostname: "https://smile.hkcmereye.com",
     gizp: true,
@@ -174,6 +179,17 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包
   build: {
     vendor: ["element-ui"],
+    extend(config, { isClient }) {
+      if (isClient) {
+        config.resolve.alias["swiper/vue"] = require.resolve("swiper/vue");
+        config.resolve.alias["swiper"] = require.resolve("swiper");
+      }
+    },
+  },
+  swiper: {
+    prefix: "Swiper", // 默认导入 Swiper 模块
+    styleLang: "css", // 使用 CSS 样式
+    modules: ["pagination", "autoplay"], // 仅导入所需模块
   },
   config: {
     nuxt: {
