@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-26 15:51:45
+ * @LastEditTime: 2025-08-26 18:04:30
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -10,12 +10,14 @@ import HeadV3 from "@/components/Publice/HeadV3.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
+import SwiperRound from "@/components/commom/swiper/SwiperRound.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
     UserShare,
     SwiperCard,
+    SwiperRound,
   },
   data() {
     return {
@@ -118,26 +120,26 @@ export default {
           row: 2,
         },
       ],
-      kolList: [
-        {
-          id: 1,
-          name: "Kathy仔",
-          image:
-            "https://statichk.cmermedical.com/smile/smileV2/smile-kol-001.avif",
-        },
-        {
-          id: 2,
-          name: "姜咏鑫Ada",
-          image:
-            "https://statichk.cmermedical.com/smile/smileV2/smile-kol-002.avif",
-        },
-        {
-          id: 3,
-          name: "胡鴻鈞",
-          image:
-            "https://statichk.cmermedical.com/smile/smileV2/smile-kol-003.avif",
-        },
-      ],
+      // kolList: [
+      //   {
+      //     id: 1,
+      //     name: "Kathy仔",
+      //     image:
+      //       "https://statichk.cmermedical.com/smile/smileV2/smile-kol-001.avif",
+      //   },
+      //   {
+      //     id: 2,
+      //     name: "姜咏鑫Ada",
+      //     image:
+      //       "https://statichk.cmermedical.com/smile/smileV2/smile-kol-002.avif",
+      //   },
+      //   {
+      //     id: 3,
+      //     name: "胡鴻鈞",
+      //     image:
+      //       "https://statichk.cmermedical.com/smile/smileV2/smile-kol-003.avif",
+      //   },
+      // ],
       conditionList: [
         "1,000 度以下近視",
         "500 度以下散光",
@@ -270,14 +272,6 @@ export default {
           nameEn: "Anthony",
           nameCn: "李偉志",
         },
-        // {
-        //   type: "SMILE",
-        //   href: "",
-        //   img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile16.avif",
-        //   text: ["唔再俾Con霸住行李"],
-        //   nameEn: "Giann Chan",
-        //   nameCn: "",
-        // },
         {
           type: "SMILE",
           href: "https://www.youtube.com/embed/dYYyN9YZGQg?si=zzOIgO3wRJ8i-SWP",
@@ -504,18 +498,7 @@ export default {
       <div class="smile">
         <div class="smile-bg">
           <div class="smile-left pcShow">
-            <div class="kol-pc">
-              <div class="kol-list">
-                <div class="kol-item" v-for="kol in kolList" :key="kol.id">
-                  <div class="kol-name">{{ kol.name }}</div>
-                  <div class="kol-avatar">
-                    <div class="kol-avatar-pos">
-                      <img :src="kol.image" :alt="kol.name" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <SwiperRound :shareList="ShareData" imageKey="img" nameKey="nameCn" hrefKey="href"></SwiperRound>
           </div>
           <div class="smile-right pcShow">
             <div class="smile-right-title">

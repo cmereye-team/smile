@@ -72,6 +72,10 @@ export default {
     },
   },
   methods: {
+    /**
+     * @description: 获取图片的key
+     * @param {Object|string} item
+     */
     getImageSrc(item) {
       const src = typeof item === "string" ? item : item[this.imageKey];
       if (!src) {
@@ -80,6 +84,10 @@ export default {
       }
       return src;
     },
+    /**
+     * @description: 获取轮播图样式
+     * @param {number} index 索引
+     */
     getSlideStyle(index) {
       let transform = "";
       let zIndex = 0;
@@ -110,6 +118,10 @@ export default {
         transition: this.isDragging ? "none" : "transform 0.5s ease, opacity 0.5s ease",
       };
     },
+    /**
+     * @description: 拖拽样式
+     * @param {number} index
+     */
     dragSlideStyle(index) {
       if (this.isDragging && (
         index === this.activeIndex ||
@@ -123,6 +135,10 @@ export default {
       }
       return {};
     },
+    /**
+     * @description: 减小压力只显示3张，判断是否显示
+     * @param {number} index
+     */
     shouldShowSlide(index) {
       return (
         index === this.activeIndex ||
@@ -134,6 +150,10 @@ export default {
       console.error(`Image load failed at index ${index}:`, event.target.src);
       event.target.src = "https://picsum.photos/400/400";
     },
+    /**
+     * @description: 开始拖拽图片
+     * @param {*} event
+     */
     startDrag(event) {
       event.preventDefault();
       event.stopPropagation();
@@ -143,11 +163,20 @@ export default {
       this.pauseAutoPlay();
       console.log("Drag started at:", this.startX);
     },
+    /**
+     * @description: 正在拖拽图片
+     * @param {*} event
+     * @return {*}
+     */
     onDrag(event) {
       if (!this.isDragging) return;
       this.deltaX = event.clientX - this.startX;
       console.log("Dragging, deltaX:", this.deltaX);
     },
+    /**
+     * @description: 结束拖拽图片
+     * @param {*} event
+     */
     endDrag() {
       if (!this.isDragging) return;
       this.isDragging = false;
@@ -162,6 +191,9 @@ export default {
       this.deltaX = 0;
       this.resumeAutoPlay();
     },
+    /**
+     * @description: 下一张
+     */
     nextSlide() {
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
       console.log(`Active slide changed to: ${this.activeIndex}`);
@@ -170,17 +202,26 @@ export default {
       this.activeIndex = index;
       console.log(`Set active slide to: ${index}`);
     },
+    /**
+     * @description: 开始自动轮播
+     */
     startAutoPlay() {
       if (this.autoPlay && !this.timer) {
         this.timer = setInterval(this.nextSlide, this.interval);
         console.log(`Auto-play started with interval: ${this.interval}ms`);
       }
     },
+    /**
+     * @description: 暂停自动轮播
+     */
     pauseAutoPlay() {
       clearInterval(this.timer);
       this.timer = null;
       console.log("Auto-play paused");
     },
+    /**
+     * @description: 继续自动轮播
+     */
     resumeAutoPlay() {
       this.startAutoPlay();
     },
