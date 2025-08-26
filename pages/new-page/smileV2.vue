@@ -1,122 +1,41 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-26 11:42:41
+ * @LastEditTime: 2025-08-26 15:51:45
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
 <script>
-import 'swiper/swiper-bundle.min.css';
-import { Swiper, SwiperSlide } from "swiper/vue";
 import HeadV3 from "@/components/Publice/HeadV3.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
+import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
     UserShare,
-    Swiper,
-    SwiperSlide,
+    SwiperCard,
   },
   data() {
     return {
-      swiperOptions: {
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          bulletClass: "swiper-pagination-bullet",
-          bulletActiveClass: "swiper-pagination-bullet-active",
-        },
-        effect: "custom",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 1,
-        on: {
-          init: function () {
-            this.setCustomTranslate();
-          },
-          slideChange: function () {
-            this.setCustomTranslate();
-          },
-          imagesReady: function () {
-            this.setCustomTranslate();
-          },
-          slideChangeTransitionEnd: function () {
-            console.log("Active slide:", this.activeIndex);
-            console.log(
-              "Slides:",
-              Array.from(this.slides).map((s) => ({
-                class: s.className,
-                transform: s.style.transform,
-                zIndex: s.style.zIndex,
-                opacity: s.style.opacity,
-              }))
-            );
-          },
-        },
-        setCustomTranslate: function () {
-          const slides = this.slides;
-          const activeIndex = this.activeIndex;
-          const totalSlides = slides.length;
-
-          slides.forEach((slide, index) => {
-            let transform = "";
-            let zIndex = 0;
-            let opacity = 1;
-
-            if (index === activeIndex) {
-              transform = `translateY(0) rotateY(-3.774deg) translateZ(0)`;
-              zIndex = 2;
-              opacity = 1;
-            } else if (
-              index ===
-              (activeIndex - 1 + totalSlides) % totalSlides
-            ) {
-              transform = `translateY(20px) rotateY(2.925deg) translateZ(-100px)`;
-              zIndex = 1;
-              opacity = 0.8;
-            } else if (index === (activeIndex + 1) % totalSlides) {
-              transform = `translateY(-20px) rotateY(-7.548deg) translateZ(-100px)`;
-              zIndex = 1;
-              opacity = 0.8;
-            } else {
-              transform = `translateY(0) translateZ(-200px)`;
-              zIndex = 0;
-              opacity = 0;
-            }
-
-            slide.style.transform = transform;
-            slide.style.zIndex = zIndex;
-            slide.style.opacity = opacity;
-          });
-        },
-      },
       xtraActive: false,
+      activeStep: 0, // 当前激活的矫视步骤索引
+      activeStepTimer: null,
       awardsList: [
         {
           imgUrl:
-            "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-1.avif",
+            "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-01.avif",
         },
         {
           imgUrl:
-            "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-1.avif",
+            "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-02.avif",
         },
         {
           imgUrl:
-            "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-1.avif",
+            "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-03.avif",
         },
       ],
-      // swiper: null, // 保存实例
-      // isSwiperLoaded: false, // 标记 Swiper 是否已加载
-      // activeStep: 0, // 当前激活的步骤索引
-      // activeStepTimer: null,
-      // interval: 3000,
       steps: [
         {
           number: "01",
@@ -498,6 +417,25 @@ export default {
       ],
     };
   },
+  methods: {
+    /**
+     * @description: 更新矫视步骤的激活
+     * @param {index} index
+     */
+    highlightStep(index) {
+      this.activeStep = index; // 更新当前激活的步骤
+      this.stopTimer();
+    },
+    /**
+     * @description: 矫视步骤结束计时
+     */
+    stopTimer() {
+      if (this.activeStepTimer) {
+        clearInterval(this.activeStepTimer);
+        this.activeStepTimer = null;
+      }
+    },
+  },
   computed: {
     firstBenefit() {
       return this.benefitList.filter((i) => i.row === 1);
@@ -555,134 +493,6 @@ export default {
       ],
     };
   },
-  // 页面挂载后初始化
-  mounted() {
-    this.$nextTick(() => {
-      this.initSwiper();
-    });
-  },
-  // 组件销毁前清理
-  beforeDestroy() {
-    if (this.swiper) {
-      this.swiper.destroy();
-      this.swiper = null;
-    }
-  },
-  methods: {
-    // /**
-    //  * @description: 更新矫视步骤的激活
-    //  * @param {index} index
-    //  */
-    // highlightStep(index) {
-    //   console.log("index");
-
-    //   this.activeStep = index; // 更新当前激活的步骤
-    //   this.stopTimer();
-    // },
-    // /**
-    //  * @description: 开始计时
-    //  * @param {*} customInterval
-    //  */
-    // startTimer(customInterval) {
-    //   if (!this.activeStepTimer) {
-    //     const interval = customInterval || this.interval;
-    //     this.activeStepTimer = setInterval(() => {
-    //       this.activeStep++;
-    //       if (this.activeStep > 3) {
-    //         this.activeStep = 0; // 超过 4 时回到 0
-    //       }
-    //     }, interval);
-    //   }
-    // },
-    // /**
-    //  * @description: 结束计时
-    //  */
-    // stopTimer() {
-    //   if (this.activeStepTimer) {
-    //     clearInterval(this.activeStepTimer);
-    //     this.activeStepTimer = null;
-    //   }
-    // },
-    // /**
-    //  * @description: 动态加载 Swiper CDN 资源
-    //  */
-    // async loadSwiperCDN() {
-    //   const cssUrl =
-    //     "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css";
-    //   const jsUrl =
-    //     "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js";
-
-    //   // 1. 加载 CSS
-    //   await this.loadCSS(cssUrl);
-
-    //   // 2. 加载 JS 并初始化
-    //   await this.loadScript(jsUrl)
-    //     .then(() => {
-    //       this.initSwiper();
-    //     })
-    //     .catch((err) => {
-    //       console.error("Swiper CDN 加载失败:", err);
-    //     });
-    // },
-    // /**
-    //  * 动态加载 CSS
-    //  */
-    // loadCSS(href) {
-    //   return new Promise((resolve, reject) => {
-    //     // 避免重复加载
-    //     if (document.querySelector(`link[href="${href}"]`)) {
-    //       resolve();
-    //       return;
-    //     }
-    //     const link = document.createElement("link");
-    //     link.rel = "stylesheet";
-    //     link.href = href;
-    //     link.onload = () => resolve();
-    //     link.onerror = () => reject(new Error(`CSS 加载失败: ${href}`));
-    //     document.head.appendChild(link);
-    //   });
-    // },
-    // /**
-    //  * 动态加载 JS
-    //  */
-    // loadScript(src) {
-    //   return new Promise((resolve, reject) => {
-    //     // 避免重复加载
-    //     if (document.querySelector(`script[src="${src}"]`)) {
-    //       resolve();
-    //       return;
-    //     }
-
-    //     const script = document.createElement("script");
-    //     script.src = src;
-    //     script.defer = true;
-    //     script.onload = () => resolve();
-    //     script.onerror = () => reject(new Error(`Script 加载失败: ${src}`));
-    //     document.head.appendChild(script);
-    //   });
-    // },
-    /**
-     * @description: 初始化 Swiper
-     */
-    initSwiper() {
-      const swiper = this.$refs.mySwiper;
-      if (swiper && swiper.$swiper) {
-        swiper.$swiper.setCustomTranslate();
-        swiper.$swiper.on('slideChange', () => {
-          swiper.$swiper.setCustomTranslate();
-        });
-      } else {
-        console.error('Swiper 初始化失败');
-      }
-    },
-    /**
-     * @description: 已弃用，控制好处的显示，改成了hover
-     * @param {Object} benefit
-     */
-    toggleBenefit(benefit) {
-      benefit.active = !benefit.active;
-    },
-  },
 };
 </script>
 <template>
@@ -713,16 +523,7 @@ export default {
               <p>CATCH UP WITH US</p>
             </div>
             <div class="smile-right-swiper">
-              <swiper
-                ref="mySwiper"
-                :options="swiperOptions"
-                class="swiper-container"
-              >
-                <swiper-slide v-for="(slide, index) in awardsList" :key="index">
-                  <img :src="slide.imgUrl" alt="" />
-                </swiper-slide>
-                <div class="swiper-pagination" slot="pagination"></div>
-              </swiper>
+              <SwiperCard :images="awardsList" imageKey="imgUrl"></SwiperCard>
             </div>
           </div>
         </div>
@@ -1209,14 +1010,14 @@ $text-color: #6d6e71;
     }
   }
   &-right {
-    width: 30vw; /* 576 / 1920 * 100 ≈ 30 */
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    width: 30vw;
+    position: relative;
+    height: 100vh;
 
     &-title {
-      padding-left: 5.2083vw; /* 100 / 1920 * 100 ≈ 5.2083 */
-      margin-bottom: 1.25vw; /* 24 / 1920 * 100 = 1.25 */
+      // padding-left: 5.2083vw; /* 100 / 1920 * 100 ≈ 5.2083 */
+      // padding-bottom: 1.25vw; /* 24 / 1920 * 100 = 1.25 */
+      padding: 200px 0 1.25vw 5.2083vw;
 
       h4 {
         color: #000;
@@ -1250,90 +1051,16 @@ $text-color: #6d6e71;
         letter-spacing: 1.16px; /* 1.161 / 1920 * 100 ≈ 0.6047 */
       }
     }
+    &-swiper {
+      width: 100%;
+      height: 500px;
+    }
   }
   &-footer {
     position: relative;
     z-index: 5;
     margin-top: 0 !important;
   }
-}
-// 轮播图样式覆盖
-.swiper {
-  overflow: visible;
-  &-container {
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-    .mySwiper {
-      width: 20.8333vw;
-    }
-  }
-  &-wrapper {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    // height: 300px;
-    // overflow: visible;
-  }
-  &-slide {
-    height: 400px;
-    width: 400px;
-    width: 100%;
-    // overflow: visible;
-    transition: all 0.5s ease; // 修复：添加平滑过渡
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    transform-style: preserve-3d;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 20px;
-      // box-shadow: 0 4px 8px rgba($color: #000000, $alpha: 0.2);
-    }
-
-    &-prev {
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    &-active {
-      z-index: 2;
-      opacity: 1;
-    }
-
-    &-next {
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    // // 修复：使用更精确的旋转角度和定位
-    // &:nth-child(3n + 1) {
-    //   transform: rotate(-5deg) translateY(10px);
-    // }
-    // &:nth-child(3n + 2) {
-    //   transform: rotate(0deg); // 中间的不旋转
-    // }
-    // &:nth-child(3n + 3) {
-    //   transform: rotate(5deg) translateY(10px);
-    // }
-  }
-  &-pagination {
-    bottom: #{"clamp(-3.375rem, -3.784rem + 2.05vw, -2.25rem)"} !important;
-    gap: #{"clamp(1.375rem, 1.102rem + 1.36vw, 2.125rem)"};
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 20px;
-  }
-}
-:deep(.swiper-3d .swiper-slide-shadow) {
-  display: none !important;
 }
 .kol {
   &-mobile {
@@ -1969,10 +1696,10 @@ $text-color: #6d6e71;
 }
 @media screen and (min-width: 1200px) {
   .mbShow {
-    display: none;
+    visibility: hidden;
   }
   .pcShow {
-    display: block;
+    visibility: visible;
   }
   .main {
     width: 40vw;
@@ -1981,13 +1708,13 @@ $text-color: #6d6e71;
 }
 @media screen and (max-width: 767px) {
   .mbShow {
-    display: block;
+    visibility: visible;
   }
   .benefit {
     padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 1.75rem;
   }
   .pcShow {
-    display: none;
+    visibility: hidden;
   }
   .benefit {
     &-row {

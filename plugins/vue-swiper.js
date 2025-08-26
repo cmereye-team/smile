@@ -1,15 +1,12 @@
 /*
- * @Author: 谭洁莹
  * @Date: 2025-03-25 16:47:42
- * @LastEditTime: 2025-08-26 11:58:56
+ * @LastEditTime: 2025-08-26 13:38:38
  * @FilePath: /plugins/vue-swiper.js
- * @Description: 
+ * @Description: vue-awesome-swiper
  */
-// plugins/vue-swiper.js
-import Vue from 'vue';
-import VueAwesomeSwiper from 'vue-awesome-swiper';
-import 'swiper/dist/css/swiper.min.css'; // Swiper 4.5.1 CSS
+import Vue from 'vue'
 
 if (process.browser) {
-  Vue.use(VueAwesomeSwiper);
+    const VueAwesomeSwiper = require("vue-awesome-swiper/dist/ssr");
+    Vue.use(VueAwesomeSwiper);
 }
