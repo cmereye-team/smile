@@ -3,7 +3,7 @@
     <div class="new-container container UserShareContainer">
       <div class="UserShareBox">
         <div class="UserShareBox-title">
-          <h3>用家分享</h3>
+          <h3>{{ title }}</h3>
           <div class="UserShareBox-title-text">
             <img
               class="d-block wow fadeInLeft"
@@ -50,7 +50,9 @@
                 <div class="UserShareBox-list-item-link-text-name">
                   <span>{{ item.nameCn }}</span
                   >&nbsp;
-                  <span class="UserShareBox-list-item-link-text-name-en">{{ item.nameEn }}</span>
+                  <span class="UserShareBox-list-item-link-text-name-en">{{
+                    item.nameEn
+                  }}</span>
                 </div>
               </div>
             </a>
@@ -61,17 +63,19 @@
   </section>
 </template>
 
-
-
-<script >
+<script>
 export default {
-    props: {
-
+  props: {
+    title: {
+      type: String,
+      require: false,
+      default: "用家分享",
+    },
     userShare: {
       type: Array,
       required: true,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   data() {
     return {
@@ -85,7 +89,6 @@ export default {
         "CLEAR-Vision": "#5FB947",
         SMILE: "#30ABE2",
       },
-     
     };
   },
   methods: {
@@ -144,8 +147,6 @@ export default {
   },
 
   mounted() {
-
-
     this.$nextTick(() => {
       if (this.$refs.UserShareBoxlist) {
         this.$refs.UserShareBoxlist.addEventListener("mousedown", (e) => {
@@ -162,7 +163,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media screen  and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .UserShare {
     width: 100vw;
     background: #f2f7ff;
@@ -234,6 +235,13 @@ export default {
             width: 50%;
           }
           .UserShareBox-list-item {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(to bottom,transparent,rgba(0,0,0,0.2));
+            }
             .UserShareBox-list-item-link {
               position: relative;
               display: block;
@@ -242,6 +250,8 @@ export default {
               overflow: hidden;
               img {
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
               }
               // 右上角
               .UserShareBox-list-item-link-title {
@@ -263,6 +273,7 @@ export default {
                 position: absolute;
                 left: 18px;
                 bottom: 18px;
+                z-index: 1;
                 p {
                   color: #fff;
                   font-family: "Noto Sans TC";
@@ -293,7 +304,7 @@ export default {
                     font-family: "Noto Sans TC";
                     font-weight: 600;
                   }
-                  &>.UserShareBox-list-item-link-text-name-en {
+                  & > .UserShareBox-list-item-link-text-name-en {
                     font-family: "Poppins", sans-serif;
                     font-weight: 700;
                   }
@@ -304,11 +315,11 @@ export default {
         }
       }
     }
-  }  
+  }
 }
 
 @media screen and (min-width: 992px) {
-    // 用户分享
+  // 用户分享
   .UserShare {
     // width: 100vw;
     background: #f2f7ff;
@@ -458,7 +469,7 @@ export default {
                     font-family: "Noto Sans TC";
                     font-weight: 600;
                   }
-                  &>.UserShareBox-list-item-link-text-name-en {
+                  & > .UserShareBox-list-item-link-text-name-en {
                     font-family: "Poppins", sans-serif;
                     font-weight: 700;
                   }
@@ -470,12 +481,10 @@ export default {
       }
     }
   }
-  
 }
-  
 
-  @media screen  and (min-width: 1139px) {
-      .UserShare {
+@media screen and (min-width: 1139px) {
+  .UserShare {
     .UserShareContainer {
       .UserShareBox {
         .UserShareBox-list {
@@ -486,5 +495,5 @@ export default {
       }
     }
   }
-  }
+}
 </style>
