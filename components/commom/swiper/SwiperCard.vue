@@ -1,22 +1,26 @@
 <template>
-  <div
-    class="swiper-card"
-    @mouseover="pauseAutoPlay"
-    @mouseleave="resumeAutoPlay"
-  >
-    <div class="swiper-card-container">
+  <div class="swiper-card" @mouseover="pauseAutoPlay" @mouseleave="resumeAutoPlay">
+    <div
+      class="swiper-card-container"
+      @mousedown.prevent="startDrag"
+      @mousemove="onDrag"
+      @mouseup="endDrag"
+      @mouseleave="endDrag"
+    >
       <div class="swiper-card-wrap">
         <div
           class="swiper-card-slide"
           v-for="(item, index) in images"
           :key="index"
-          :style="getSlideStyle(index)"
+          :style="[getSlideStyle(index), dragSlideStyle(index)]"
+          v-show="shouldShowSlide(index)"
         >
           <img
             :src="getImageSrc(item)"
             alt="Image"
             @error="handleImageError($event, index)"
           />
+          <div class="overlay" v-if="index !== activeIndex"></div>
         </div>
       </div>
       <div class="swiper-card-pagination">
@@ -57,6 +61,9 @@ export default {
     return {
       activeIndex: 0,
       timer: null,
+      isDragging: false,
+      startX: 0,
+      deltaX: 0,
     };
   },
   computed: {
@@ -68,10 +75,7 @@ export default {
     getImageSrc(item) {
       const src = typeof item === "string" ? item : item[this.imageKey];
       if (!src) {
-        console.warn(
-          `Image source is invalid for index ${this.activeIndex}:`,
-          item
-        );
+        console.warn(`Image source is invalid for index ${this.activeIndex}:`, item);
         return "https://picsum.photos/400/400";
       }
       return src;
@@ -82,18 +86,15 @@ export default {
       let opacity = 1;
 
       if (index === this.activeIndex) {
-        transform = `translateY(0) rotateY(-3.774deg) translateZ(0)`;
+        transform = `translateY(0) rotate(-3.774deg) translateZ(0)`;
         zIndex = 2;
         opacity = 1;
-      } else if (
-        index ===
-        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
-      ) {
-        transform = `translateY(20px) rotateY(2.925deg) translateZ(-100px)`;
+      } else if (index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides) {
+        transform = `translateY(20px) rotate(2.925deg) translateZ(-100px)`;
         zIndex = 1;
         opacity = 0.8;
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
-        transform = `translateY(-20px) rotateY(-7.548deg) translateZ(-100px)`;
+        transform = `translateY(-20px) rotate(-7.548deg) translateZ(-100px)`;
         zIndex = 1;
         opacity = 0.8;
       } else {
@@ -106,12 +107,60 @@ export default {
         transform,
         zIndex,
         opacity,
-        transition: "all 0.5s ease",
+        transition: this.isDragging ? "none" : "transform 0.5s ease, opacity 0.5s ease",
       };
+    },
+    dragSlideStyle(index) {
+      if (this.isDragging && (
+        index === this.activeIndex ||
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index === (this.activeIndex + 1) % this.totalSlides
+      )) {
+        return {
+          transform: `${this.getSlideStyle(index).transform} translateX(${this.deltaX}px)`,
+          transition: "none",
+        };
+      }
+      return {};
+    },
+    shouldShowSlide(index) {
+      return (
+        index === this.activeIndex ||
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index === (this.activeIndex + 1) % this.totalSlides
+      );
     },
     handleImageError(event, index) {
       console.error(`Image load failed at index ${index}:`, event.target.src);
       event.target.src = "https://picsum.photos/400/400";
+    },
+    startDrag(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      this.isDragging = true;
+      this.startX = event.clientX;
+      this.deltaX = 0;
+      this.pauseAutoPlay();
+      console.log("Drag started at:", this.startX);
+    },
+    onDrag(event) {
+      if (!this.isDragging) return;
+      this.deltaX = event.clientX - this.startX;
+      console.log("Dragging, deltaX:", this.deltaX);
+    },
+    endDrag() {
+      if (!this.isDragging) return;
+      this.isDragging = false;
+      const threshold = 50; // 降低阈值到 50px
+      if (this.deltaX < -threshold) {
+        this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
+        console.log(`Drag ended, switched to next slide: ${this.activeIndex}`);
+      } else if (this.deltaX > threshold) {
+        this.activeIndex = (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
+        console.log(`Drag ended, switched to prev slide: ${this.activeIndex}`);
+      }
+      this.deltaX = 0;
+      this.resumeAutoPlay();
     },
     nextSlide() {
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
@@ -147,7 +196,7 @@ export default {
     images: {
       handler(newImages) {
         console.log("Images prop updated:", newImages);
-        this.activeIndex = 0; // 重置索引
+        this.activeIndex = 0;
         this.pauseAutoPlay();
         this.startAutoPlay();
       },
@@ -178,6 +227,16 @@ export default {
     width: 400px;
     height: 400px;
     margin: 0 auto;
+    cursor: grab;
+    user-select: none;
+    &:active {
+      cursor: grabbing;
+    }
+  }
+  &-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   &-slide {
     position: absolute;
@@ -191,6 +250,16 @@ export default {
       height: 100%;
       object-fit: cover;
       border-radius: 20px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.80) 100%);
+      border-radius: 20px;
+      transition: opacity 0.5s ease;
     }
   }
   &-pagination {
@@ -214,6 +283,16 @@ export default {
       background: #4570b6;
       opacity: 1;
     }
+  }
+}
+@media screen and (max-width: 767px) {
+  .swiper-card-pagination {
+    bottom: -50px;
+  }
+  .swiper-card-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
   }
 }
 </style>
