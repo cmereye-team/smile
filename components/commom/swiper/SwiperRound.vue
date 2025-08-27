@@ -1,6 +1,6 @@
 <template>
-  <div class="smile-left-swiper" @wheel.prevent="handleWheel">
-    <div class="swiper-container">
+  <div class="smile-left-swiper">
+    <div class="swiper-container" @wheel="handleWheel">
       <div class="swiper-wrap">
         <div
           class="swiper-slide"
@@ -9,10 +9,10 @@
           :class="{ active: index === activeIndex }"
           :style="getSlideStyle(index)"
           v-show="shouldShowSlide(index)"
+          @click="handleSlideClick(index, item[hrefKey])"
         >
           <div
             class="avatar-container"
-            @click="handleSlideClick(index, item[hrefKey])"
             :class="{ 'overlay-mask': shouldApplyMask(index) }"
           >
             <img
@@ -21,14 +21,14 @@
               @error="handleImageError($event, index)"
             />
           </div>
-          
+
           <!-- Play按钮 -->
-          <div 
-            class="play-button" 
-            v-if="index === activeIndex" 
+          <div
+            class="play-button"
+            v-if="index === activeIndex"
             @click="handlePlayClick(item[hrefKey])"
           ></div>
-          
+
           <!-- 导航按钮 -->
           <div
             class="swiper-prev"
@@ -42,7 +42,7 @@
           ></div>
         </div>
       </div>
-      
+
       <!-- 垂直排列的名字 -->
       <div class="name-list">
         <div
@@ -54,11 +54,11 @@
           {{ item.nameCn || item.nameEn }}
         </div>
       </div>
-      
+
       <!-- 可视化圆环路径（调试用） -->
       <div class="ring-path" v-if="false"></div>
     </div>
-    
+
     <div id="youtube-popover" popover class="youtube-popover">
       <button class="close-button" @click="closePopover">×</button>
       <iframe
@@ -136,9 +136,12 @@ export default {
         height = "208px";
         transform = `translate(-50%, -50%)`; // 中心对齐路径
         zIndex = 3;
-        left = "70%"
+        left = "70%";
         top = "50%"; // 中间项
-      } else if (index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides) {
+      } else if (
+        index ===
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+      ) {
         width = "93px";
         height = "93px";
         transform = `translate(-50%, -50%)`; // 中心对齐路径
@@ -166,28 +169,33 @@ export default {
         top,
         left,
         transition: "all 0.5s ease",
-        position: 'absolute',
+        position: "absolute",
       };
     },
     shouldShowSlide(index) {
       return (
         index === this.activeIndex ||
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
     getNameStyle(index) {
       let top = 0;
       const baseTop = 50;
-      const spacing = 30; // 均匀间距
+      const spacing = 20;
       const isVisible =
         index === this.activeIndex ||
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides;
 
       if (index === this.activeIndex) {
         top = `${baseTop}%`;
-      } else if (index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides) {
+      } else if (
+        index ===
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+      ) {
         top = `${baseTop - spacing}%`;
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
         top = `${baseTop + spacing}%`;
@@ -216,7 +224,8 @@ export default {
           letterSpacing: "1.75px",
         });
       } else if (
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       ) {
         Object.assign(style, {
@@ -234,7 +243,8 @@ export default {
     },
     shouldApplyMask(index) {
       return (
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
@@ -247,7 +257,10 @@ export default {
       this.debugInfo = `点击幻灯片: ${index}, URL: ${url}`;
       if (index === this.activeIndex) {
         this.handlePlayClick(url);
-      } else if (index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides) {
+      } else if (
+        index ===
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+      ) {
         this.handlePrevClick();
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
         this.handleNextClick();
@@ -261,7 +274,8 @@ export default {
     handlePrevClick() {
       console.log("上一张按钮触发");
       this.debugInfo = "上一张点击";
-      this.activeIndex = (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
+      this.activeIndex =
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
       console.log(`活跃幻灯片更改为: ${this.activeIndex}`);
     },
     handleNextClick() {
@@ -272,7 +286,7 @@ export default {
     },
     handleWheel(event) {
       console.log("鼠标滚轮触发，方向:", event.deltaY);
-      this.debugInfo = `滚轮事件, 方向: ${event.deltaY > 0 ? '向下' : '向上'}`;
+      this.debugInfo = `滚轮事件, 方向: ${event.deltaY > 0 ? "向下" : "向上"}`;
       event.preventDefault(); // 防止页面滚动
       if (event.deltaY > 0) {
         this.handleNextClick();
@@ -284,7 +298,7 @@ export default {
       console.log(`显示弹出窗口触发，URL: ${url}`);
       this.debugInfo = `弹出窗口显示, URL: ${url}`;
       this.popoverUrl = url;
-      const popover = document.getElementById('youtube-popover');
+      const popover = document.getElementById("youtube-popover");
       if (popover) {
         popover.showPopover();
         console.log("显示YouTube弹出窗口:", url);
@@ -292,7 +306,7 @@ export default {
     },
     closePopover() {
       this.popoverUrl = null;
-      const popover = document.getElementById('youtube-popover');
+      const popover = document.getElementById("youtube-popover");
       if (popover) {
         popover.hidePopover();
         console.log("YouTube弹出窗口关闭");
@@ -301,7 +315,9 @@ export default {
     startAutoPlay() {
       if (this.autoPlay && this.timer === null) {
         this.timer = setInterval(this.handleNextClick, this.interval);
-        console.log(`自动播放开始，间隔: ${this.interval}ms, timer: ${this.timer}`);
+        console.log(
+          `自动播放开始，间隔: ${this.interval}ms, timer: ${this.timer}`
+        );
         this.debugInfo = "自动播放开始";
       }
     },
@@ -374,8 +390,6 @@ $primary-color: #4570b6;
   width: 100%;
   height: 100%;
   position: relative;
-  pointer-events: auto;
-  overflow: hidden; // 防止滚轮影响页面
 }
 
 .swiper-container {
@@ -390,24 +404,14 @@ $primary-color: #4570b6;
   height: 100%;
 }
 
-.ring-path {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background-color: rgba(255, 0, 0, 0.5); // 红色虚线，调试用
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
 .swiper-slide {
   position: absolute;
   transform-origin: center;
   z-index: 2;
+  cursor: pointer;
 
   &.active .avatar-container {
-    outline: 2px solid green; // 活跃项高亮
+    box-shadow: 3px 2px 0 0 #4570b6; // 活跃项高亮
   }
 
   .avatar-container {
@@ -416,20 +420,13 @@ $primary-color: #4570b6;
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
-    pointer-events: auto; // 确保事件生效
     cursor: pointer;
-    outline: 1px dashed red; // 可视化调试
-
-    &:hover {
-      outline: 2px solid green; // 悬停高亮
-    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover; // 保持比例填充
       object-position: center; // 居中对齐，防止扭曲
-      pointer-events: none; // 防止图片拦截点击
     }
 
     &.overlay-mask:before {
@@ -439,10 +436,14 @@ $primary-color: #4570b6;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.70) 100%);
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.7) 0%,
+        rgba(255, 255, 255, 0.7) 100%
+      );
       border-radius: 50%;
-      pointer-events: none; // 确保不拦截点击
       z-index: 1; // 确保蒙版在图片上方
+      pointer-events: none;
     }
   }
 
@@ -453,9 +454,7 @@ $primary-color: #4570b6;
     width: 55px;
     height: 42px;
     z-index: 5; // 提高层级
-    pointer-events: auto;
     cursor: pointer;
-    outline: 1px dotted blue; // 可视化调试
 
     &:before {
       content: "";
@@ -469,7 +468,7 @@ $primary-color: #4570b6;
     }
   }
 
-  .swiper-prev {
+  %swiper-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -478,8 +477,10 @@ $primary-color: #4570b6;
     height: 32px;
     z-index: 5; // 提高层级
     cursor: pointer;
-    pointer-events: auto;
-    outline: 1px dotted yellow; // 可视化调试
+  }
+
+  .swiper-prev {
+    @extend %swiper-button;
 
     &:before {
       background-image: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjM1IiBoZWlnaHQ9IjM1IiB2aWV3Qm94PSIwIDAgMzUgMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMS42NTA0IDExLjY0OTdMMzIuOTQ2OCAzMi45NDYyIiBzdHJva2U9IiM0NTcwQjYiIHN0cm9rZS13aWR0aD0iMy40NjE1NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik05LjkxMDEyIDI4LjYzODRMMTAuMTE4MiAxMC4xMTgxTDI4LjYzODUgOS45MDk5NiIgc3Ryb2tlPSIjNDU3MEI2IiBzdHJva2Utd2lkdGg9IjMuNDYxNTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K");
@@ -488,16 +489,7 @@ $primary-color: #4570b6;
   }
 
   .swiper-next {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 32px;
-    height: 32px;
-    z-index: 5; // 提高层级
-    cursor: pointer;
-    pointer-events: auto;
-    outline: 1px dotted yellow; // 可视化调试
+    @extend %swiper-button;
 
     &:before {
       background-image: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjM1IiBoZWlnaHQ9IjM1IiB2aWV3Qm94PSIwIDAgMzUgMzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMS42NTA0IDIzLjYzNDlMMzIuOTQ2OCAyLjMzODUiIHN0cm9rZT0iIzQ1NzBCNiIgc3Ryb2tlLXdpZHRoPSIzLjQ2MTU0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTkuOTEwMTIgNi42NDYyM0wxMC4xMTgyIDI1LjE2NjZMMjguNjM4NSAyNS4zNzQ2IiBzdHJva2U9IiM0NTcwQjYiIHN0cm9rZS13aWR0aD0iMy40NjE1NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=");
@@ -515,7 +507,6 @@ $primary-color: #4570b6;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  pointer-events: none;
   z-index: 1; // 降低层级，避免干扰
 }
 
@@ -532,13 +523,13 @@ $primary-color: #4570b6;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  
+
   iframe {
     width: 100%;
     height: calc(100% - 40px);
     border: none;
   }
-  
+
   .close-button {
     position: absolute;
     top: 10px;
@@ -557,11 +548,11 @@ $primary-color: #4570b6;
       width: 93px;
       height: 93px;
     }
-    
+
     .play-button {
       width: 40px;
       height: 30px;
-      
+
       &:before {
         width: 40px;
         height: 30px;
@@ -569,23 +560,23 @@ $primary-color: #4570b6;
       }
     }
   }
-  
+
   .swiper-prev,
   .swiper-next {
     width: 20px;
     height: 20px;
-    
+
     &:before {
       width: 20px;
       height: 20px;
       background-size: cover;
     }
   }
-  
+
   .name-list {
     width: 150px;
   }
-  
+
   .youtube-popover {
     width: 90vw;
     height: 50vh;

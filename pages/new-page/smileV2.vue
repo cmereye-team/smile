@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-26 18:04:30
+ * @LastEditTime: 2025-08-27 09:53:47
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -957,7 +957,6 @@ $text-color: #6d6e71;
     left: 0;
     display: flex;
     align-items: center;
-    // gap: 40vw;
     justify-content: space-between;
     background: url("https://statichk.cmermedical.com/smile/smileV2/smile-bg.avif")
       no-repeat;
@@ -979,6 +978,7 @@ $text-color: #6d6e71;
       z-index: 2;
       background: transparent;
       border-radius: 50%;
+      pointer-events: none;
     }
     &::before {
       content: "";
@@ -990,6 +990,7 @@ $text-color: #6d6e71;
       position: absolute;
       top: 10%;
       right: 25%;
+      pointer-events: none;
     }
   }
   &-right {

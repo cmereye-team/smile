@@ -196,11 +196,11 @@ export default {
      */
     nextSlide() {
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
-      console.log(`Active slide changed to: ${this.activeIndex}`);
+      // console.log(`Active slide changed to: ${this.activeIndex}`);
     },
     setActiveIndex(index) {
       this.activeIndex = index;
-      console.log(`Set active slide to: ${index}`);
+      // console.log(`Set active slide to: ${index}`);
     },
     /**
      * @description: 开始自动轮播
@@ -208,7 +208,7 @@ export default {
     startAutoPlay() {
       if (this.autoPlay && !this.timer) {
         this.timer = setInterval(this.nextSlide, this.interval);
-        console.log(`Auto-play started with interval: ${this.interval}ms`);
+        // console.log(`Auto-play started with interval: ${this.interval}ms`);
       }
     },
     /**
@@ -217,7 +217,7 @@ export default {
     pauseAutoPlay() {
       clearInterval(this.timer);
       this.timer = null;
-      console.log("Auto-play paused");
+      // console.log("Auto-play paused");
     },
     /**
      * @description: 继续自动轮播
@@ -227,7 +227,7 @@ export default {
     },
   },
   mounted() {
-    console.log("SwiperCard mounted with images:", this.images);
+    // console.log("SwiperCard mounted with images:", this.images);
     this.startAutoPlay();
   },
   beforeDestroy() {
@@ -236,7 +236,7 @@ export default {
   watch: {
     images: {
       handler(newImages) {
-        console.log("Images prop updated:", newImages);
+        // console.log("Images prop updated:", newImages);
         this.activeIndex = 0;
         this.pauseAutoPlay();
         this.startAutoPlay();
