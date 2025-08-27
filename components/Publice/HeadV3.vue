@@ -54,7 +54,6 @@ $text-color: #6d6e71;
 @media screen and (min-width: 1200px) {
   .headV3 {
     height: 180px;
-    width: calc(40vw - 3px);
     max-width: 768px;
   }
 }

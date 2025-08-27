@@ -106,7 +106,6 @@ export default {
       activeIndex: 0,
       timer: null,
       popoverUrl: null,
-      debugInfo: "", // 调试信息
     };
   },
   computed: {
@@ -254,7 +253,6 @@ export default {
     },
     handleSlideClick(index, url) {
       console.log(`点击幻灯片触发，索引 ${index}，URL: ${url}`);
-      this.debugInfo = `点击幻灯片: ${index}, URL: ${url}`;
       if (index === this.activeIndex) {
         this.handlePlayClick(url);
       } else if (
@@ -268,25 +266,21 @@ export default {
     },
     handlePlayClick(url) {
       console.log(`播放按钮触发，URL: ${url}`);
-      this.debugInfo = `播放点击, URL: ${url}`;
       this.showPopover(url);
     },
     handlePrevClick() {
-      console.log("上一张按钮触发");
-      this.debugInfo = "上一张点击";
+      // console.log("上一张按钮触发");
       this.activeIndex =
         (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
-      console.log(`活跃幻灯片更改为: ${this.activeIndex}`);
+      // console.log(`活跃幻灯片更改为: ${this.activeIndex}`);
     },
     handleNextClick() {
-      console.log("下一张按钮触发");
-      this.debugInfo = "下一张点击";
+      // console.log("下一张按钮触发");
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
-      console.log(`活跃幻灯片更改为: ${this.activeIndex}`);
+      // console.log(`活跃幻灯片更改为: ${this.activeIndex}`);
     },
     handleWheel(event) {
       console.log("鼠标滚轮触发，方向:", event.deltaY);
-      this.debugInfo = `滚轮事件, 方向: ${event.deltaY > 0 ? "向下" : "向上"}`;
       event.preventDefault(); // 防止页面滚动
       if (event.deltaY > 0) {
         this.handleNextClick();
@@ -296,7 +290,6 @@ export default {
     },
     showPopover(url) {
       console.log(`显示弹出窗口触发，URL: ${url}`);
-      this.debugInfo = `弹出窗口显示, URL: ${url}`;
       this.popoverUrl = url;
       const popover = document.getElementById("youtube-popover");
       if (popover) {
@@ -318,7 +311,6 @@ export default {
         console.log(
           `自动播放开始，间隔: ${this.interval}ms, timer: ${this.timer}`
         );
-        this.debugInfo = "自动播放开始";
       }
     },
   },
@@ -357,7 +349,6 @@ export default {
           clearInterval(this.timer);
           this.timer = null;
           console.log("自动播放停止");
-          this.debugInfo = "自动播放停止";
         }
       }
     },

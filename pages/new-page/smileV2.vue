@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-27 11:06:43
+ * @LastEditTime: 2025-08-27 15:06:16
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -120,26 +120,6 @@ export default {
           row: 2,
         },
       ],
-      // kolList: [
-      //   {
-      //     id: 1,
-      //     name: "Kathy仔",
-      //     image:
-      //       "https://statichk.cmermedical.com/smile/smileV2/smile-kol-001.avif",
-      //   },
-      //   {
-      //     id: 2,
-      //     name: "姜咏鑫Ada",
-      //     image:
-      //       "https://statichk.cmermedical.com/smile/smileV2/smile-kol-002.avif",
-      //   },
-      //   {
-      //     id: 3,
-      //     name: "胡鴻鈞",
-      //     image:
-      //       "https://statichk.cmermedical.com/smile/smileV2/smile-kol-003.avif",
-      //   },
-      // ],
       conditionList: [
         "1,000 度以下近視",
         "500 度以下散光",
@@ -497,7 +477,7 @@ export default {
     <div class="page-smile">
       <div class="smile">
         <div class="smile-bg">
-          <div class="smile-left pcShow">
+          <div class="smile-left hidden lg:block">
             <SwiperRound
               :shareList="ShareData"
               imageKey="img"
@@ -505,7 +485,7 @@ export default {
               hrefKey="href"
             ></SwiperRound>
           </div>
-          <div class="smile-right pcShow">
+          <div class="smile-right hidden lg:block">
             <div class="smile-right-title">
               <h4>最新情報</h4>
               <p>CATCH UP WITH US</p>
@@ -572,7 +552,7 @@ export default {
             </svg>
           </a>
         </section>
-        <section class="steps bg-primary">
+        <section class="steps">
           <div class="steps-bg bg-white">
             <!-- 矫视步骤数字区 -->
             <div class="steps-number">
@@ -652,7 +632,7 @@ export default {
             </p>
           </div>
         </section>
-        <section class="kol-mobile mbShow">
+        <section class="kol-mobile block lg:hidden">
           <userShare title="SMILE用家分享" :user-share="ShareData"></userShare>
         </section>
         <section class="benefit">
@@ -662,7 +642,6 @@ export default {
               <div
                 class="benefit-item"
                 :class="{ active: benefit.active }"
-                @click="toggleBenefit(benefit)"
                 v-for="benefit in firstBenefit"
                 :key="benefit.id"
               >
@@ -837,7 +816,7 @@ export default {
             <p>②交替遮著左右眼，各邊30秒。注意被遮著的眼睛仍需保持睜開。</p>
           </div>
         </section>
-        <section class="share mbShow">
+        <section class="share block lg:hidden">
           <div class="share-title">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1052,9 +1031,6 @@ $text-color: #6d6e71;
   }
 }
 .kol {
-  &-mobile {
-    display: none;
-  }
   &-pc {
     border-radius: 50%;
     width: 100%;
@@ -1236,14 +1212,25 @@ $text-color: #6d6e71;
 // 矫视步骤
 .steps {
   position: relative;
+  background: linear-gradient(
+    to bottom,
+    $primary-color 0 50px,
+    white 50px 100%
+  );
   .subtitle {
-    line-height: #{"clamp(1.5rem, 0.909rem + 2.95vw, 3.125rem)"};
-    font-size: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
+    font-size: #{"clamp(1.25rem, 0.931rem + 1.31vw, 2.5rem)"};
+    line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
     span {
-      font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
+      font-size: #{"clamp(1.25rem, 1.091rem + 0.65vw, 1.875rem)"};
+      line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
     }
   }
   &-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    // gap: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
+    gap: #{"clamp(2.065rem, 1.572rem + 2.02vw, 4rem)"};
     svg {
       width: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
       height: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
@@ -1251,7 +1238,8 @@ $text-color: #6d6e71;
   }
   &-bg {
     border-radius: 1rem 1rem 0 0;
-    padding: #{"clamp(4.25rem, 3.705rem + 2.73vw, 5.75rem)"} #{"clamp(2rem, 1.455rem + 2.73vw, 3.5rem)"};
+    padding: #{"clamp(4.337rem, 3.881rem + 1.87vw, 6.125rem)"} #{"clamp(1.688rem, 1.21rem + 1.96vw, 3.563rem)"}
+      #{"clamp(3.984rem, 2.594rem + 5.7vw, 9.438rem)"};
   }
   &-number {
     display: flex;
@@ -1288,12 +1276,6 @@ $text-color: #6d6e71;
       }
     }
   }
-  &-title {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    gap: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
-  }
   &-content {
     color: $text-color;
     position: relative;
@@ -1301,6 +1283,7 @@ $text-color: #6d6e71;
       width: 100%;
     }
     &-text {
+      position: absolute;
       font-family: "Noto Sans TC";
       font-weight: 400;
       font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
@@ -1310,7 +1293,7 @@ $text-color: #6d6e71;
   }
 }
 .whyChoose {
-  padding: #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"} #{"clamp(2rem, 1.455rem + 2.73vw, 3.5rem)"};
+  padding: 0 #{"clamp(1.688rem, 1.21rem + 1.96vw, 3.563rem)"} #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"};
   img {
     width: 100%;
   }
@@ -1328,7 +1311,7 @@ $text-color: #6d6e71;
 }
 // 好处
 .benefit {
-  padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 1rem;
+  padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
   h3 {
     font-family: "Noto Sans TC";
     text-align: center;
@@ -1343,7 +1326,7 @@ $text-color: #6d6e71;
     display: flex;
     justify-content: center;
     position: relative;
-    width: 100%;
+    width: 96%;
     &:first-child {
       margin-top: 0;
       z-index: 1;
@@ -1608,96 +1591,101 @@ $text-color: #6d6e71;
     }
   }
 }
+:deep(.UserShareBox-list::-webkit-scrollbar-track) {
+  margin: 0 59px;
+}
+// 手机和平板
+@media screen and (max-width: 1199px) {
+}
+// 平板和电脑
 @media screen and (min-width: 768px) {
-  .smile {
-    &-bg {
-      height: 100vh;
-    }
-    &-footer {
-      background-color: #f4fafc;
-      padding-bottom: 10px;
-      width: 100vw;
-    }
-  }
-  .main {
-    border-left: 1.5px solid $primary-color;
-    border-right: 1.5px solid $primary-color;
-  }
   .principles {
-    p {
-      font-weight: 400;
-      span {
-        font-weight: 900;
-      }
-    }
     .more-button {
       bottom: -6%;
     }
   }
-  .steps {
-    &-content {
-      &-text {
-        position: absolute;
-        bottom: -50px;
-        margin-left: 40px;
-        white-space: pre-line;
-      }
-      &-02 {
-        color: #fff;
-        bottom: 28px;
-        margin-left: 44px;
-      }
-      &-03 {
-        bottom: 28px;
-        margin-left: 44px;
-      }
-    }
-  }
-  .condition {
-    margin-right: 14rem;
-    &-desc {
-      span {
-        display: block;
-      }
-    }
-  }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .smile {
-    &-left {
-      display: none;
-    }
-    &-right {
-      display: none;
-    }
-  }
-}
+// 电脑端
 @media screen and (min-width: 1200px) {
-  .mbShow {
-    visibility: hidden;
-  }
-  .pcShow {
-    visibility: visible;
-  }
   .main {
-    width: 40vw;
-    max-width: 768px;
+    width: 768px;
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
+  }
+  .benefit {
+    padding: 0;
   }
 }
+// 手机端
 @media screen and (max-width: 767px) {
-  .mbShow {
-    visibility: visible;
-  }
-  .benefit {
-    padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 1.75rem;
-  }
-  .pcShow {
-    visibility: hidden;
-  }
-  .benefit {
-    &-row {
-      width: 96%;
-    }
-  }
 }
+// 平板端
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+// @media screen and (min-width: 768px) {
+//   .smile {
+//     &-bg {
+//       height: 100vh;
+//     }
+//     &-footer {
+//       background-color: #f4fafc;
+//       padding-bottom: 10px;
+//       width: 100vw;
+//     }
+//   }
+//   .main {
+//     border-left: 1.5px solid $primary-color;
+//     border-right: 1.5px solid $primary-color;
+//   }
+//   .principles {
+//     p {
+//       font-weight: 400;
+//       span {
+//         font-weight: 900;
+//       }
+//     }
+//     .more-button {
+//       bottom: -6%;
+//     }
+//   }
+//   .steps {
+//     &-content {
+//       &-text {
+//         bottom: -50px;
+//         margin-left: 40px;
+//         white-space: pre-line;
+//       }
+//       &-02 {
+//         color: #fff;
+//         bottom: 28px;
+//         margin-left: 44px;
+//       }
+//       &-03 {
+//         bottom: 28px;
+//         margin-left: 44px;
+//       }
+//     }
+//   }
+//   .condition {
+//     margin-right: 14rem;
+//     &-desc {
+//       span {
+//         display: block;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .mbShow {
+//     visibility: visible;
+//   }
+//   .pcShow {
+//     visibility: hidden;
+//   }
+//   // .benefit {
+//   //   &-row {
+//   //     width: 96%;
+//   //   }
+//   // }
+// }
 </style>
