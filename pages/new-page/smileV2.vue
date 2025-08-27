@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-27 09:53:47
+ * @LastEditTime: 2025-08-27 11:06:43
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -106,7 +106,7 @@ export default {
         {
           id: 5,
           icon: "https://statichk.cmermedical.com/smile/smileV2/smile-benefit-5.svg",
-          title: "術後復原快",
+          title: "微創",
           desc: "傷口只有約\n2-2.5mm",
           active: true,
           row: 2,
@@ -498,7 +498,12 @@ export default {
       <div class="smile">
         <div class="smile-bg">
           <div class="smile-left pcShow">
-            <SwiperRound :shareList="ShareData" imageKey="img" nameKey="nameCn" hrefKey="href"></SwiperRound>
+            <SwiperRound
+              :shareList="ShareData"
+              imageKey="img"
+              nameKey="nameCn"
+              hrefKey="href"
+            ></SwiperRound>
           </div>
           <div class="smile-right pcShow">
             <div class="smile-right-title">
@@ -1473,6 +1478,7 @@ $text-color: #6d6e71;
   background-size: cover;
   &-title {
     text-align: center;
+    margin-bottom: #{"clamp(1.404rem, 0.725rem + 3.4vw, 3.272rem)"};
     p {
       color: $primary-color;
       font-family: "ITC Avant Garde Gothic Pro";
@@ -1498,19 +1504,6 @@ $text-color: #6d6e71;
         #{"clamp(2rem, 1.545rem + 2.27vw, 3.25rem)"};
       z-index: 2;
       &:nth-child(2) {
-        // transform: translate(#{'clamp(3rem, 1.909rem + 5.45vw, 6rem)'}, #{'clamp(-3rem, -3.364rem + 1.82vw, -2rem)'});
-        // position: relative;
-        // &::after {
-        //   z-index: 1;
-        //   content: "";
-        //   position: absolute;
-        //   width: #{'clamp(3rem, 1.909rem + 5.45vw, 6rem)'};
-        //   height: #{'clamp(2rem, 1.636rem + 1.82vw, 3rem)'};
-        //   left: #{'clamp(-6rem, -7.091rem + 5.45vw, -3rem)'};
-        //   top: 0;
-        //   background-color: #dbdbdd;
-        //   clip-path: polygon(100% 0, 100% 100%, 0 100%);
-        // }
         // 上面的定位效果不理想，换回传统单位px
         transform: translate(88px, -44px);
         position: relative;
@@ -1645,17 +1638,18 @@ $text-color: #6d6e71;
     &-content {
       &-text {
         position: absolute;
-        bottom: -44px;
-        margin-left: 24px;
+        bottom: -50px;
+        margin-left: 40px;
+        white-space: pre-line;
       }
       &-02 {
         color: #fff;
-        position: absolute;
-        bottom: 24px;
+        bottom: 28px;
+        margin-left: 44px;
       }
       &-03 {
-        position: absolute;
-        bottom: 24px;
+        bottom: 28px;
+        margin-left: 44px;
       }
     }
   }
