@@ -54,6 +54,9 @@
           {{ item.nameCn || item.nameEn }}
         </div>
       </div>
+      
+      <!-- 可视化圆环路径（调试用） -->
+      <div class="ring-path" v-if="false"></div>
     </div>
     
     <div id="youtube-popover" popover class="youtube-popover">
@@ -121,51 +124,49 @@ export default {
       return src;
     },
     getSlideStyle(index) {
-      let width = 93;
+      let width = "93px";
+      let height = "93px";
       let transform = "";
       let zIndex = 2;
-      let top = 0;
-      let left = 0;
-      let bottom = 0
-
-      const radius = 40;
-      // const offsetX = 25;
+      let top = "50%";
+      let left = "55%"; // 保持左对齐，路径为垂直线
 
       if (index === this.activeIndex) {
-        width = 208;
-        transform = `translate(0, -50%)`;
+        width = "208px";
+        height = "208px";
+        transform = `translate(-50%, -50%)`; // 中心对齐路径
         zIndex = 3;
-        top = 50;
-        left = 55;
+        left = "70%"
+        top = "50%"; // 中间项
       } else if (index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides) {
-        width = 93;
-        transform = `translate(0, -${radius}%)`;
+        width = "93px";
+        height = "93px";
+        transform = `translate(-50%, -50%)`; // 中心对齐路径
         zIndex = 2;
-        top = 22;
-        left = 44;
+        top = "25%"; // 上方项
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
-        width = 93;
-        transform = `translate(0, ${radius}%)`;
+        width = "93px";
+        height = "93px";
+        transform = `translate(-50%, -50%)`; // 中心对齐路径
         zIndex = 2;
-        top = 70;
-        left = 42;
+        top = "75%"; // 下方项
       } else {
-        width = 93;
-        transform = `translate(0, 0)`;
+        width = "93px";
+        height = "93px";
+        transform = `translate(-50%, -50%)`;
         zIndex = 0;
-        top = 50;
-        left = 0;
+        top = "50%";
       }
 
       return {
-        width: `${width}px`,
-        height: `${width}px`, // 保持圆形
+        width,
+        height,
         transform,
         zIndex,
-        top: `${top}%`,
-        left: `${left}%`,
+        top,
+        left,
         transition: "all 0.5s ease",
-        position: 'absolute', // 确保绝对定位
+        position: 'absolute',
       };
     },
     shouldShowSlide(index) {
@@ -178,7 +179,7 @@ export default {
     getNameStyle(index) {
       let top = 0;
       const baseTop = 50;
-      const spacing = 20;
+      const spacing = 30; // 均匀间距
       const isVisible =
         index === this.activeIndex ||
         index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
@@ -387,6 +388,17 @@ $primary-color: #4570b6;
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.ring-path {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5); // 红色虚线，调试用
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .swiper-slide {
