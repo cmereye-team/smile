@@ -1,5 +1,5 @@
 <template>
-  <div class="smile-left-swiper">
+  <div class="swiper-round">
     <div class="swiper-container" @wheel="handleWheel">
       <div class="swiper-wrap">
         <div
@@ -377,7 +377,7 @@ $primary-color: #4570b6;
   background-size: cover;
 }
 
-.smile-left-swiper {
+.swiper-round {
   width: 100%;
   height: 100%;
   position: relative;

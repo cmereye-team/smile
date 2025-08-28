@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-27 15:06:16
+ * @LastEditTime: 2025-08-28 10:58:14
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      xtraActive: false,
+      xtraActive: false, // 是否展开状态
       activeStep: 0, // 当前激活的矫视步骤索引
       activeStepTimer: null,
       awardsList: [
@@ -409,6 +409,9 @@ export default {
         this.activeStepTimer = null;
       }
     },
+    toggleUnfold(hover) {
+      this.xtraActive = hover;
+    },
   },
   computed: {
     firstBenefit() {
@@ -481,7 +484,6 @@ export default {
             <SwiperRound
               :shareList="ShareData"
               imageKey="img"
-              nameKey="nameCn"
               hrefKey="href"
             ></SwiperRound>
           </div>
@@ -658,7 +660,6 @@ export default {
               <div
                 class="benefit-item"
                 :class="{ active: benefit.active }"
-                @click="toggleBenefit(benefit)"
                 v-for="benefit in secondBenefit"
                 :key="benefit.id"
               >
@@ -738,8 +739,13 @@ export default {
             <p>Comeal Collagen Cross-Linking</p>
             <span>可與SMILE微笑激光矯視同時進行</span>
           </div>
-          <div class="xtra-paper" :class="{ unfolded: xtraActive }">
-            <div class="xtra-paper-item">
+          <div
+            class="xtra-paper"
+            :class="{ unfolded: xtraActive }"
+            @mouseover="toggleUnfold(true)"
+            @mouseleave="toggleUnfold(false)"
+          >
+            <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
               <div class="xtra-paper-title">
                 <h4>什麼是 <span>SMILE XTRA</span>？</h4>
               </div>
@@ -754,7 +760,7 @@ export default {
                 />
               </div>
             </div>
-            <div class="xtra-paper-item">
+            <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
               <div class="xtra-paper-title">
                 <h4>我需要接受 <span>SMILE XTRA</span>？</h4>
               </div>
@@ -901,6 +907,34 @@ export default {
 <style lang="scss" scoped>
 $primary-color: #4570b6;
 $text-color: #6d6e71;
+@keyframes xtraBottom {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-72px, 0);
+  }
+}
+
+@keyframes xtraTop {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(72px, 328px);
+  }
+}
+
+@keyframes xtraTriangle {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 144px;
+    height: 48px;
+  }
+}
 .subtitle {
   color: $primary-color;
   font-weight: 900;
@@ -1028,115 +1062,6 @@ $text-color: #6d6e71;
     position: relative;
     z-index: 5;
     margin-top: 0 !important;
-  }
-}
-.kol {
-  &-pc {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    z-index: 1;
-  }
-  &-list {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    height: 100%;
-    padding: 10% 0;
-  }
-  &-avatar {
-    width: 93px;
-    height: 93px;
-    position: relative;
-    &-pos {
-      position: relative;
-    }
-  }
-  &-name {
-    color: #4570b6;
-    font-family: "Noto Sans TC";
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 100;
-    line-height: 43px; /* 122.857% */
-    letter-spacing: 1.75px;
-    position: absolute;
-    left: 100px;
-  }
-  &-item {
-    display: flex;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    &:nth-child(2) {
-      .kol-avatar {
-        width: 206px;
-        height: 206px;
-        position: absolute;
-        left: 16.5vw;
-      }
-      .kol-name {
-        color: #4570b6;
-        font-family: "Noto Sans TC";
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 50.452px; /* 144.149% */
-        letter-spacing: 1.75px;
-      }
-      .kol-avatar-pos {
-        &::after {
-          content: "";
-          background-image: url("https://statichk.cmermedical.com/smile/smileV2/smile-icon-play.svg");
-          position: absolute;
-          bottom: 20px;
-          right: 10px;
-          width: 55px;
-          height: 42px;
-        }
-      }
-    }
-    &:nth-child(1),
-    &:nth-child(3) {
-      .kol-avatar {
-        position: absolute;
-        left: 10vw;
-      }
-    }
-    %avater-btn {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 32px;
-      height: 32px;
-      background-size: cover;
-    }
-    &:nth-child(1) {
-      .kol-name {
-        top: 300px;
-      }
-      .kol-avatar-pos {
-        &::before {
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjY1MDQgMTEuNjQ5N0wzMi45NDY4IDMyLjk0NjIiIHN0cm9rZT0iIzQ1NzBCNiIgc3Ryb2tlLXdpZHRoPSIzLjQ2MTU0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTkuOTEwMTIgMjguNjM4NEwxMC4xMTgyIDEwLjExODFMMjguNjM4NSA5LjkwOTk2IiBzdHJva2U9IiM0NTcwQjYiIHN0cm9rZS13aWR0aD0iMy40NjE1NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=");
-          @extend %avater-btn;
-        }
-      }
-    }
-    &:nth-child(3) {
-      .kol-name {
-        bottom: 300px;
-      }
-      .kol-avatar-pos {
-        &::before {
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjY1MDQgMjMuNjM0OUwzMi45NDY4IDIuMzM4NSIgc3Ryb2tlPSIjNDU3MEI2IiBzdHJva2Utd2lkdGg9IjMuNDYxNTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8cGF0aCBkPSJNOS45MTAxMiA2LjY0NjIzTDEwLjExODIgMjUuMTY2NkwyOC42Mzg1IDI1LjM3NDYiIHN0cm9rZT0iIzQ1NzBCNiIgc3Ryb2tlLXdpZHRoPSIzLjQ2MTU0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==");
-          @extend %avater-btn;
-        }
-      }
-    }
   }
 }
 .main {
@@ -1461,7 +1386,7 @@ $text-color: #6d6e71;
   background-size: cover;
   &-title {
     text-align: center;
-    margin-bottom: #{"clamp(1.404rem, 0.725rem + 3.4vw, 3.272rem)"};
+    padding-bottom: #{'clamp(1.4rem, 0.922rem + 1.96vw, 3.275rem)'};
     p {
       color: $primary-color;
       font-family: "ITC Avant Garde Gothic Pro";
@@ -1479,37 +1404,46 @@ $text-color: #6d6e71;
   }
   &-paper {
     position: relative;
-    width: 80%;
     &-item {
       border: 1px solid #000;
       background-color: #fff;
-      padding: #{"clamp(1.375rem, 0.875rem + 2.5vw, 2.75rem)"} #{"clamp(1.25rem, 0.614rem + 3.18vw, 3rem)"}
-        #{"clamp(2rem, 1.545rem + 2.27vw, 3.25rem)"};
-      z-index: 2;
+      position: absolute;
+      left: 72px;
+      width: #{"clamp(18.063rem, 13.632rem + 18.17vw, 35.442rem)"};
+      padding: #{"clamp(1.804rem, 1.384rem + 1.72vw, 3.451rem)"} #{"clamp(1.375rem, 0.97rem + 1.66vw, 2.962rem)"}
+        #{"clamp(2.138rem, 1.758rem + 1.56vw, 3.625rem)"};
+      &:nth-child(1) {
+        z-index: 1;
+        &.unfolded {
+          animation: xtraBottom 1s ease forwards;
+          &::after {
+            content: "";
+            z-index: 2;
+            width: 0;
+            height: 0;
+            background-color: #dbdbdb;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+            animation: xtraTriangle 1s ease forwards;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+          }
+        }
+      }
       &:nth-child(2) {
-        // 上面的定位效果不理想，换回传统单位px
-        transform: translate(88px, -44px);
-        position: relative;
-        &::after {
-          z-index: 1;
-          content: "";
-          position: absolute;
-          width: 88px;
-          height: 44px;
-          left: -88px;
-          top: 0;
-          background-color: #dbdbdd;
-          clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        z-index: 3;
+        &.unfolded {
+          animation: xtraTop 1s ease forwards;
         }
       }
     }
     &-title {
       color: $primary-color;
-      font-weight: 700px;
+      font-weight: 700;
       font-family: "Noto Sans TC";
-      font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
-      line-height: #{"clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem)"};
-      margin-bottom: #{"clamp(1rem, 0.636rem + 1.82vw, 2rem)"};
+      font-size: #{"clamp(1rem, 0.857rem + 0.59vw, 1.563rem)"};
+      line-height: #{"clamp(0.636rem, 0.48rem + 0.64vw, 1.25rem)"};
+      margin-bottom: #{"clamp(1.018rem, 0.752rem + 1.09vw, 2.063rem)"};
       span {
         font-family: "ITC Avant Garde Gothic Pro";
       }
@@ -1518,15 +1452,15 @@ $text-color: #6d6e71;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: #{"clamp(0.375rem, -0.352rem + 3.64vw, 2.375rem)"};
+      gap: #{"clamp(0.5rem, 0.022rem + 1.96vw, 2.375rem)"};
       p {
         color: $text-color;
         text-align: justify;
         font-family: "Noto Sans TC";
         font-weight: 400;
-        font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
-        line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
-        letter-spacing: #{"clamp(0.219rem, 0.207rem + 0.06vw, 0.25rem)"};
+        font-size: #{"clamp(0.875rem, 0.779rem + 0.39vw, 1.25rem)"};
+        line-height: #{"clamp(1.113rem, 0.839rem + 1.12vw, 2.188rem)"};
+        letter-spacing: #{"clamp(0.219rem, 0.211rem + 0.03vw, 0.25rem)"};
       }
     }
     &-icon {
