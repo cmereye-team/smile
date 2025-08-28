@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-28 15:50:29
+ * @LastEditTime: 2025-08-28 17:06:06
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -391,6 +391,21 @@ export default {
       ],
     };
   },
+  mounted() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          this.xtraActive = true; // 进入视区
+        } else {
+          this.xtraActive = false; // 离开视区
+        }
+      },
+      { threshold: 0.3 } // 当可见比例达到 20% 时触发
+    );
+
+    observer.observe(this.$refs.xtraAnimateBox);
+  },
   methods: {
     /**
      * @description: 更新矫视步骤的激活
@@ -499,8 +514,8 @@ export default {
         </div>
       </div>
       <main class="main">
-        <section class="newCenter bg-primary">
-          <div class="newCenter-card bg-white">
+        <section class="newCenter">
+          <div class="newCenter-card">
             <div class="newCenter-card-title text-primary">
               <span>SMILE</span>
               <h3>微笑激光矯視</h3>
@@ -509,7 +524,7 @@ export default {
             <div class="newCenter-card-nav text-text">
               <a href="/">{{ $t("Correct.newIcl.menuone") }} </a
               >&nbsp;>&nbsp;<a>{{ $t("Correct.newIcl.menuTwo") }}</a
-              >&nbsp;>&nbsp;<a class="text-primary" href=""
+              >&nbsp;>&nbsp;<a class="text-primary font-medium" href=""
                 >SMILE微笑激光矯視</a
               >
             </div>
@@ -733,7 +748,7 @@ export default {
             </svg>
           </a>
         </section>
-        <section class="xtra" ref="xtraSection">
+        <section class="xtra" ref="xtraAnimateBox">
           <div class="xtra-title">
             <h3 class="subtitle">SMILE XTRA角膜膠原交聯術</h3>
             <p>Comeal Collagen Cross-Linking</p>
@@ -1045,7 +1060,12 @@ $text-color: #6d6e71;
 }
 .newCenter {
   position: relative;
+  background: linear-gradient(to top, $primary-color, 0 50px, white 50px 100%);
+
   &-card {
+    background: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIHZpZXdCb3g9IjAgMCA3NjggNzM5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8bWFzayBpZD0ibWFzazBfMTAyMzJfMTciIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI3NjgiIGhlaWdodD0iNzM5Ij4KPHJlY3Qgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8xMDIzMl8xNykiPgo8cGF0aCBkPSJNLTUgMTcxLjA3OEw4NDYgMzUzLjc3OSIgc3Ryb2tlPSIjNUQ4NUMzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTYwNC4xNzggODMuMDY2N0w0NDguOTQ5IDc4OC45NDUiIHN0cm9rZT0idXJsKCNwYWludDBfbGluZWFyXzEwMjMyXzE3KSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik01NTQuMTU1IDMxMi42MjJDNTY1LjQzNCAzMTUuMDQ4IDU3Ni41NjYgMzA3Ljk3MiA1NzkuMDE5IDI5Ni44MTlDNTgxLjQ3MiAyODUuNjY1IDU3NC4zMTcgMjc0LjY1NyA1NjMuMDM4IDI3Mi4yMzFDNTUxLjc1OSAyNjkuODA2IDU0MC42MjcgMjc2Ljg4MSA1MzguMTc0IDI4OC4wMzVDNTM1LjcyMSAyOTkuMTg5IDU0Mi44NzYgMzEwLjE5NyA1NTQuMTU1IDMxMi42MjJaIiBzdHJva2U9IiM1RDg1QzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTAyMzJfMTciIHgxPSI2MDQuNjY3IiB5MT0iODMuMTcxOCIgeDI9IjQ1Mi43MTYiIHkyPSI3ODkuNzU1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1RDg1QzMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSJ3aGl0ZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=")
+      no-repeat;
+    background-size: cover;
     font-family: "Noto Sans TC";
     font-weight: 400;
     border-radius: 0 0 1rem 1rem;
@@ -1056,7 +1076,7 @@ $text-color: #6d6e71;
         font-size: #{"clamp(4.375rem, 2.83rem + 7.73vw, 8.625rem)"};
         line-height: #{"clamp(4.75rem, 3.068rem + 8.41vw, 9.375rem)"};
         font-weight: 700;
-        font-family: "ITC Avant Garde Gothic Pro";
+        font-family: "Poppins", sans-serif;
       }
       h3 {
         font-size: #{"clamp(2.375rem, 1.557rem + 4.09vw, 4.625rem)"};
@@ -1068,6 +1088,11 @@ $text-color: #6d6e71;
       }
     }
     &-nav {
+      font-size: 12px;
+      line-height: 21.88px;
+      letter-spacing: 0.36px;
+      font-family: "Noto Sans TC";
+      font-weight: normal;
       margin-top: #{"clamp(2rem, 1.182rem + 4.09vw, 4.25rem)"};
     }
   }
@@ -1201,6 +1226,9 @@ $text-color: #6d6e71;
     font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
     line-height: 30px;
     letter-spacing: #{"clamp(0.156rem, 0.077rem + 0.4vw, 0.375rem)"};
+    p {
+      margin-bottom: 30px;
+    }
     span {
       color: $primary-color;
       font-weight: 700;
@@ -1314,8 +1342,9 @@ $text-color: #6d6e71;
   h3 {
     white-space: nowrap;
     font-family: "Noto Sans HK";
+    text-align: right;
     span {
-      font-family: "ITC Avant Garde Gothic Pro";
+      font-family: "Poppins", sans-serif;
     }
   }
   &-list {
@@ -1426,7 +1455,7 @@ $text-color: #6d6e71;
       line-height: #{"clamp(0.636rem, 0.48rem + 0.64vw, 1.25rem)"};
       margin-bottom: #{"clamp(1.018rem, 0.752rem + 1.09vw, 2.063rem)"};
       span {
-        font-family: "ITC Avant Garde Gothic Pro";
+        font-family: "Poppins", sans-serif;
       }
     }
     &-intro {
@@ -1552,6 +1581,30 @@ $text-color: #6d6e71;
     width: 768px;
     border-left: 1.5px solid $primary-color;
     border-right: 1.5px solid $primary-color;
+  }
+  .newCenter {
+    &-card {
+      &-title {
+        span {
+          font-size: 137.67px;
+          line-height: 150.611px;
+        }
+        h3 {
+          font-size: 74.332px;
+          line-height: 81.319px;
+        }
+        p {
+          font-size: 29.733px;
+          line-height: 64.668px;
+          letter-spacing: 0.892px;
+        }
+      }
+    }
+    &-nav {
+      font-size: 20px;
+      line-height: 43.5px;
+      letter-spacing: 0.6px;
+    }
   }
   .benefit {
     padding: 0;
@@ -1698,6 +1751,15 @@ $text-color: #6d6e71;
     }
     100% {
       height: #{"clamp(41.25rem, 27.886rem + 27.84vw, 48.75rem)"}; // 740-790
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  .smile {
+    &-right {
+      &-swiper {
+        margin-left: #{"clamp(-6.25rem, -14.931rem + 6.94vw, 0rem)"};
+      }
     }
   }
 }
