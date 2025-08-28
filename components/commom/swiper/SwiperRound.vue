@@ -48,7 +48,6 @@
         <div
           v-for="(item, index) in shareList"
           :key="index"
-          class="swiper-name"
           :style="getNameStyle(index)"
         >
           {{ item.nameCn || item.nameEn }}
@@ -91,7 +90,7 @@ export default {
     },
     autoPlay: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     interval: {
       type: Number,
@@ -120,16 +119,16 @@ export default {
       return src;
     },
     getSlideStyle(index) {
-      let width = "93px";
-      let height = "93px";
+      let width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
+      let height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
       let transform = "";
       let zIndex = 2;
       let top = "50%";
-      let left = "55%"; // 保持左对齐，路径为垂直线
+      let left = "55%";
 
       if (index === this.activeIndex) {
-        width = "208px";
-        height = "208px";
+        width = "clamp(8.625rem, -4.5rem + 14.58vw, 13rem)";
+        height = "clamp(8.625rem, -4.5rem + 14.58vw, 13rem)";
         transform = `translate(-50%, -50%)`; // 中心对齐路径
         zIndex = 3;
         left = "70%";
@@ -138,20 +137,20 @@ export default {
         index ===
         (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
-        width = "93px";
-        height = "93px";
+        width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
+        height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
         transform = `translate(-50%, -50%)`; // 中心对齐路径
         zIndex = 2;
         top = "25%"; // 上方项
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
-        width = "93px";
-        height = "93px";
+        width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
+        height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
         transform = `translate(-50%, -50%)`; // 中心对齐路径
         zIndex = 2;
         top = "75%"; // 下方项
       } else {
-        width = "93px";
-        height = "93px";
+        width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
+        height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
         transform = `translate(-50%, -50%)`;
         zIndex = 0;
         top = "50%";
@@ -213,7 +212,7 @@ export default {
         Object.assign(style, {
           color: "#4570B6",
           fontFamily: '"Noto Sans TC"',
-          fontSize: "35px",
+          fontSize: "clamp(1.75rem, 0.438rem + 1.46vw, 2.188rem)",
           fontStyle: "normal",
           fontWeight: "700",
           lineHeight: "50.452px",
@@ -227,7 +226,7 @@ export default {
         Object.assign(style, {
           color: "#4570B6",
           fontFamily: '"Noto Sans TC"',
-          fontSize: "35px",
+          fontSize: "clamp(1.75rem, 0.438rem + 1.46vw, 2.188rem)",
           fontStyle: "normal",
           fontWeight: "100",
           lineHeight: "43px",
@@ -437,10 +436,10 @@ $primary-color: #4570b6;
 
   .play-button {
     position: absolute;
-    bottom: 20px;
-    right: 10px;
-    width: 55px;
-    height: 42px;
+    bottom: #{'clamp(0.375rem, -0.375rem + 0.83vw, 0.625rem)'};
+    right: 0;
+    width: #{'clamp(2.25rem, -1.313rem + 3.96vw, 3.438rem)'};
+    height: #{'clamp(1.75rem, -0.875rem + 2.92vw, 2.625rem)'};
     z-index: 5; // 提高层级
     cursor: pointer;
 
@@ -450,8 +449,8 @@ $primary-color: #4570b6;
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 55px;
-      height: 42px;
+      width: #{'clamp(2.25rem, -1.313rem + 3.96vw, 3.438rem)'};
+      height: #{'clamp(1.75rem, -0.875rem + 2.92vw, 2.625rem)'};
       background-size: cover;
     }
   }
@@ -461,8 +460,8 @@ $primary-color: #4570b6;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 32px;
-    height: 32px;
+    width: #{'clamp(1.313rem, -0.75rem + 2.29vw, 2rem)'};
+    height: #{'clamp(1.313rem, -0.75rem + 2.29vw, 2rem)'};
     z-index: 5; // 提高层级
     cursor: pointer;
   }
@@ -489,7 +488,7 @@ $primary-color: #4570b6;
 .name-list {
   position: absolute;
   top: 0;
-  left: 50px;
+  // left: 50px;
   width: 200px;
   height: 100%;
   display: flex;

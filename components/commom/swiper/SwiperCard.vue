@@ -16,6 +16,13 @@
           class="swiper-card-slide"
           v-for="(item, index) in images"
           :key="index"
+          :class="[
+            { active: index === activeIndex },
+            index === (activeIndex - 1 + totalSlides) % totalSlides
+              ? 'prev'
+              : '',
+            index === (activeIndex + 1) % totalSlides ? 'next' : '',
+          ]"
           :style="[getSlideStyle(index), dragSlideStyle(index)]"
           v-show="shouldShowSlide(index)"
         >
@@ -54,7 +61,7 @@ export default {
     },
     autoPlay: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     interval: {
       type: Number,
@@ -108,13 +115,13 @@ export default {
         index ===
         (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
-        transform = `translateY(20px) rotate(2.925deg) translateZ(-100px)`;
+        transform = `rotate(2.925deg) translateZ(-100px)`; // 前一张
         zIndex = 1;
         opacity = 0.8;
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
-        transform = `translateY(-20px) rotate(-7.548deg) translateZ(-100px)`;
+        transform = `rotate(-7.548deg) translateZ(-100px)`; // 后一张
         zIndex = 1;
-        opacity = 0.8;
+        opacity = 0.2;
       } else {
         transform = `translateY(0) translateZ(-200px)`;
         zIndex = 0;
@@ -214,11 +221,9 @@ export default {
      */
     nextSlide() {
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
-      // console.log(`Active slide changed to: ${this.activeIndex}`);
     },
     setActiveIndex(index) {
       this.activeIndex = index;
-      // console.log(`Set active slide to: ${index}`);
     },
     /**
      * @description: 开始自动轮播
@@ -226,7 +231,6 @@ export default {
     startAutoPlay() {
       if (this.autoPlay && !this.timer) {
         this.timer = setInterval(this.nextSlide, this.interval);
-        // console.log(`Auto-play started with interval: ${this.interval}ms`);
       }
     },
     /**
@@ -235,7 +239,6 @@ export default {
     pauseAutoPlay() {
       clearInterval(this.timer);
       this.timer = null;
-      // console.log("Auto-play paused");
     },
     /**
      * @description: 继续自动轮播
@@ -245,7 +248,6 @@ export default {
     },
   },
   mounted() {
-    // console.log("SwiperCard mounted with images:", this.images);
     this.startAutoPlay();
   },
   beforeDestroy() {
@@ -254,7 +256,6 @@ export default {
   watch: {
     images: {
       handler(newImages) {
-        // console.log("Images prop updated:", newImages);
         this.activeIndex = 0;
         this.pauseAutoPlay();
         this.startAutoPlay();
@@ -283,8 +284,8 @@ export default {
   perspective: 1000px;
   &-container {
     position: relative;
-    width: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
-    height: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
+    width: #{("clamp(9.375rem, -6.78rem + 26.48vw, 25rem);")};
+    height: #{("clamp(9.375rem, -6.78rem + 26.48vw, 25rem);")};
     margin: 0 auto;
     cursor: grab;
     user-select: none;
@@ -301,8 +302,8 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
-    height: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
+    width: #{("clamp(9.375rem, -6.78rem + 26.48vw, 25rem);")};
+    height: #{("clamp(9.375rem, -6.78rem + 26.48vw, 25rem);")};
     transform-style: preserve-3d;
     img {
       width: 100%;
@@ -310,19 +311,26 @@ export default {
       object-fit: cover;
       border-radius: 20px;
     }
+    &.active .overlay {
+      display: none; // 活跃项无遮罩
+    }
     .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.8) 0%,
-        rgba(255, 255, 255, 0.8) 100%
-      );
-      border-radius: 20px;
-      transition: opacity 0.5s ease;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.5) 0%,
+          rgba(255, 255, 255, 0.5) 100%
+        );
+        border-radius: 20px;
+        transition: opacity 0.5s ease;
+      }
     }
   }
   &-pagination {

@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-28 11:34:33
+ * @LastEditTime: 2025-08-28 15:50:29
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -907,34 +907,6 @@ export default {
 <style lang="scss" scoped>
 $primary-color: #4570b6;
 $text-color: #6d6e71;
-@keyframes xtraBottom {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-72px, 0);
-  }
-}
-
-@keyframes xtraTop {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(72px, 328px);
-  }
-}
-
-@keyframes xtraTriangle {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  100% {
-    width: 144px;
-    height: 48px;
-  }
-}
 .subtitle {
   color: $primary-color;
   font-weight: 900;
@@ -1378,6 +1350,9 @@ $text-color: #6d6e71;
     font-weight: 400;
     margin-top: #{"clamp(0.75rem, -0.205rem + 4.77vw, 3.375rem)"};
     margin-bottom: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
+    span {
+      white-space: nowrap;
+    }
   }
 }
 .xtra {
@@ -1385,6 +1360,7 @@ $text-color: #6d6e71;
   background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzY5IiBoZWlnaHQ9IjExODEiIHZpZXdCb3g9IjAgMCA3NjkgMTE4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTc2OCAxTDEgMTE4MCIgc3Ryb2tlPSIjNDU3MEI2Ii8+CjxwYXRoIGQ9Ik0wLjk5OTk4NSAxTDc2OCAxMTgwIiBzdHJva2U9IiM0NTcwQjYiLz4KPC9zdmc+Cg==")
     no-repeat;
   background-size: cover;
+  background-position: top;
   &-title {
     text-align: center;
     padding-bottom: #{"clamp(1.4rem, 0.922rem + 1.96vw, 3.275rem)"};
@@ -1405,6 +1381,10 @@ $text-color: #6d6e71;
   }
   &-paper {
     position: relative;
+    height: 488px;
+    &.unfolded {
+      animation: xtraHeight 1s ease forwards;
+    }
     &-item {
       border: 1px solid #000;
       background-color: #fff;
@@ -1539,10 +1519,16 @@ $text-color: #6d6e71;
     }
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
+@media screen and (min-width: 1440px) and (max-width: 1744px) {
   .smile {
     &-left {
       width: 22vw;
+      &::after {
+        width: 300%;
+      }
+      &::before {
+        width: 200%;
+      }
     }
     &-right {
       width: 25vw;
@@ -1570,11 +1556,149 @@ $text-color: #6d6e71;
   .benefit {
     padding: 0;
   }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-72px, 0);
+    }
+  }
+
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(
+        72px,
+        #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
+      ); // 294-328
+    }
+  }
+
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 144px; //294-328
+      height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
+    }
+  }
+
+  @keyframes xtraHeight {
+    0% {
+      height: 488px;
+    }
+    100% {
+      height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"}; // 740-790
+    }
+  }
 }
 // 手机端
 @media screen and (max-width: 767px) {
+  .xtra {
+    &-paper {
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
+      &-item {
+        left: 36px;
+      }
+    }
+  }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
+    }
+  }
+
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      //8-32
+      transform: translate(
+        #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
+        #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
+      ); //208-230
+    }
+  }
+
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      //40-60
+      width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
+      height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
+    } //42-48
+  }
+
+  @keyframes xtraHeight {
+    0% {
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"}; //288-312
+    }
+    100% {
+      height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"}; // 740-790
+    }
+  }
 }
 // 平板端
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .xtra {
+    &-paper {
+      height: #{"clamp(24.875rem, 14.852rem + 20.88vw, 30.5rem)"};
+      &-item {
+        left: #{"clamp(12.5rem, -5.319rem + 37.12vw, 22.5rem)"}; //200-360
+      }
+    }
+  }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-72px, 0);
+    }
+  }
+
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(
+        72px,
+        #{"clamp(15.25rem, 8.791rem + 13.46vw, 18.875rem)"}
+      ); // 294-328
+    }
+  }
+
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 144px; //294-328
+      height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
+    }
+  }
+
+  @keyframes xtraHeight {
+    0% {
+      height: #{"clamp(24.875rem, 14.852rem + 20.88vw, 30.5rem)"}; //398-488
+    }
+    100% {
+      height: #{"clamp(41.25rem, 27.886rem + 27.84vw, 48.75rem)"}; // 740-790
+    }
+  }
 }
 </style>
