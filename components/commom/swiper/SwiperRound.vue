@@ -54,9 +54,6 @@
           {{ item.nameCn || item.nameEn }}
         </div>
       </div>
-
-      <!-- 可视化圆环路径（调试用） -->
-      <div class="ring-path" v-if="false"></div>
     </div>
 
     <div id="youtube-popover" popover class="youtube-popover">

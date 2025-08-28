@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-28 10:58:14
+ * @LastEditTime: 2025-08-28 11:34:33
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -480,14 +480,14 @@ export default {
     <div class="page-smile">
       <div class="smile">
         <div class="smile-bg">
-          <div class="smile-left hidden lg:block">
+          <div class="smile-left hidden">
             <SwiperRound
               :shareList="ShareData"
               imageKey="img"
               hrefKey="href"
             ></SwiperRound>
           </div>
-          <div class="smile-right hidden lg:block">
+          <div class="smile-right hidden">
             <div class="smile-right-title">
               <h4>最新情報</h4>
               <p>CATCH UP WITH US</p>
@@ -970,6 +970,7 @@ $text-color: #6d6e71;
   position: absolute;
   &-bg {
     width: 100vw;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -1055,7 +1056,7 @@ $text-color: #6d6e71;
     }
     &-swiper {
       width: 100%;
-      height: 500px;
+      // height: 500px;
     }
   }
   &-footer {
@@ -1386,7 +1387,7 @@ $text-color: #6d6e71;
   background-size: cover;
   &-title {
     text-align: center;
-    padding-bottom: #{'clamp(1.4rem, 0.922rem + 1.96vw, 3.275rem)'};
+    padding-bottom: #{"clamp(1.4rem, 0.922rem + 1.96vw, 3.275rem)"};
     p {
       color: $primary-color;
       font-family: "ITC Avant Garde Gothic Pro";
@@ -1528,6 +1529,26 @@ $text-color: #6d6e71;
 :deep(.UserShareBox-list::-webkit-scrollbar-track) {
   margin: 0 59px;
 }
+@media screen and (min-width: 1440px) {
+  .smile {
+    &-left {
+      display: block;
+    }
+    &-right {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .smile {
+    &-left {
+      width: 22vw;
+    }
+    &-right {
+      width: 25vw;
+    }
+  }
+}
 // 手机和平板
 @media screen and (max-width: 1199px) {
 }
@@ -1556,70 +1577,4 @@ $text-color: #6d6e71;
 // 平板端
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 }
-// @media screen and (min-width: 768px) {
-//   .smile {
-//     &-bg {
-//       height: 100vh;
-//     }
-//     &-footer {
-//       background-color: #f4fafc;
-//       padding-bottom: 10px;
-//       width: 100vw;
-//     }
-//   }
-//   .main {
-//     border-left: 1.5px solid $primary-color;
-//     border-right: 1.5px solid $primary-color;
-//   }
-//   .principles {
-//     p {
-//       font-weight: 400;
-//       span {
-//         font-weight: 900;
-//       }
-//     }
-//     .more-button {
-//       bottom: -6%;
-//     }
-//   }
-//   .steps {
-//     &-content {
-//       &-text {
-//         bottom: -50px;
-//         margin-left: 40px;
-//         white-space: pre-line;
-//       }
-//       &-02 {
-//         color: #fff;
-//         bottom: 28px;
-//         margin-left: 44px;
-//       }
-//       &-03 {
-//         bottom: 28px;
-//         margin-left: 44px;
-//       }
-//     }
-//   }
-//   .condition {
-//     margin-right: 14rem;
-//     &-desc {
-//       span {
-//         display: block;
-//       }
-//     }
-//   }
-// }
-// @media screen and (max-width: 767px) {
-//   .mbShow {
-//     visibility: visible;
-//   }
-//   .pcShow {
-//     visibility: hidden;
-//   }
-//   // .benefit {
-//   //   &-row {
-//   //     width: 96%;
-//   //   }
-//   // }
-// }
 </style>

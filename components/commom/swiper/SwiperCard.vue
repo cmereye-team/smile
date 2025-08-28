@@ -1,5 +1,9 @@
 <template>
-  <div class="swiper-card" @mouseover="pauseAutoPlay" @mouseleave="resumeAutoPlay">
+  <div
+    class="swiper-card"
+    @mouseover="pauseAutoPlay"
+    @mouseleave="resumeAutoPlay"
+  >
     <div
       class="swiper-card-container"
       @mousedown.prevent="startDrag"
@@ -79,7 +83,10 @@ export default {
     getImageSrc(item) {
       const src = typeof item === "string" ? item : item[this.imageKey];
       if (!src) {
-        console.warn(`Image source is invalid for index ${this.activeIndex}:`, item);
+        console.warn(
+          `Image source is invalid for index ${this.activeIndex}:`,
+          item
+        );
         return "https://picsum.photos/400/400";
       }
       return src;
@@ -97,7 +104,10 @@ export default {
         transform = `translateY(0) rotate(-3.774deg) translateZ(0)`;
         zIndex = 2;
         opacity = 1;
-      } else if (index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides) {
+      } else if (
+        index ===
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+      ) {
         transform = `translateY(20px) rotate(2.925deg) translateZ(-100px)`;
         zIndex = 1;
         opacity = 0.8;
@@ -115,7 +125,9 @@ export default {
         transform,
         zIndex,
         opacity,
-        transition: this.isDragging ? "none" : "transform 0.5s ease, opacity 0.5s ease",
+        transition: this.isDragging
+          ? "none"
+          : "transform 0.5s ease, opacity 0.5s ease",
       };
     },
     /**
@@ -123,13 +135,17 @@ export default {
      * @param {number} index
      */
     dragSlideStyle(index) {
-      if (this.isDragging && (
-        index === this.activeIndex ||
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
-        index === (this.activeIndex + 1) % this.totalSlides
-      )) {
+      if (
+        this.isDragging &&
+        (index === this.activeIndex ||
+          index ===
+            (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+          index === (this.activeIndex + 1) % this.totalSlides)
+      ) {
         return {
-          transform: `${this.getSlideStyle(index).transform} translateX(${this.deltaX}px)`,
+          transform: `${this.getSlideStyle(index).transform} translateX(${
+            this.deltaX
+          }px)`,
           transition: "none",
         };
       }
@@ -142,7 +158,8 @@ export default {
     shouldShowSlide(index) {
       return (
         index === this.activeIndex ||
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
@@ -185,7 +202,8 @@ export default {
         this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
         console.log(`Drag ended, switched to next slide: ${this.activeIndex}`);
       } else if (this.deltaX > threshold) {
-        this.activeIndex = (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
+        this.activeIndex =
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
         console.log(`Drag ended, switched to prev slide: ${this.activeIndex}`);
       }
       this.deltaX = 0;
@@ -265,8 +283,8 @@ export default {
   perspective: 1000px;
   &-container {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
+    height: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
     margin: 0 auto;
     cursor: grab;
     user-select: none;
@@ -283,8 +301,8 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 400px;
-    height: 400px;
+    width: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
+    height: #{"clamp(9.375rem, -6.78rem + 26.48vw, 25rem)"};
     transform-style: preserve-3d;
     img {
       width: 100%;
@@ -298,7 +316,11 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.80) 100%);
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
       border-radius: 20px;
       transition: opacity 0.5s ease;
     }
