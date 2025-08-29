@@ -139,12 +139,9 @@
         </div>
       </div>
       <div class="lecture-image">
-          <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar1.avif" alt="">
-        <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar2.avif" alt="">
-        <img src="https://statichk.cmermedical.com/smile/preaching-seat/timeArrangement.webp" alt="">
- 
-
-      </div>
+        <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar1.avif" alt="希瑪眼科九月中環預約">
+        <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar2.avif" alt="希瑪眼科九月旺角預約">
+       </div>
     </div>
     <businessHours />
     <!-- <div class="dialog-win" v-if="test">
