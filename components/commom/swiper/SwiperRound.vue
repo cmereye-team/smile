@@ -2,7 +2,10 @@
   <div
     class="swiper-round"
     @mouseenter="pauseAutoPlay"
-    @mouseleave="startAutoPlay"
+    @mouseleave="handleMouseLeave"
+    @mousedown="handleMouseDown"
+    @mousemove="handleMouseMove"
+    @mouseup="handleMouseUp"
   >
     <div class="swiper-container" @wheel="handleWheel">
       <div class="swiper-wrap">
@@ -19,7 +22,7 @@
             class="avatar-container"
             :class="{ 'overlay-mask': shouldApplyMask(index) }"
           >
-            <img :src="item[imageKey]" :alt="item[nameKey] || item.nameEn" />
+            <img :src="item[imageKey]" :alt="item[nameKey] || item.nameEn" @dragstart.prevent />
           </div>
 
           <!-- Play按钮 -->
@@ -120,6 +123,8 @@ export default {
       activeIndex: 0,
       timer: null,
       popoverUrl: null,
+      isDragging: false,
+      startY: 0,
     };
   },
   computed: {
@@ -139,25 +144,24 @@ export default {
       if (index === this.activeIndex) {
         width = "clamp(8.625rem, -4.5rem + 14.58vw, 13rem)";
         height = "clamp(8.625rem, -4.5rem + 14.58vw, 13rem)";
-        transform = `translate(-50%, -50%)`; // 中心对齐路径
+        transform = `translate(-50%, -50%)`;
         zIndex = 3;
         left = "70%";
-        top = "50%"; // 中间项
+        top = "50%";
       } else if (
-        index ===
-        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
         width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
         height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
-        transform = `translate(-50%, -50%)`; // 中心对齐路径
+        transform = `translate(-50%, -50%)`;
         zIndex = 2;
-        top = "25%"; // 上方项
+        top = "25%";
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
         width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
         height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
-        transform = `translate(-50%, -50%)`; // 中心对齐路径
+        transform = `translate(-50%, -50%)`;
         zIndex = 2;
-        top = "75%"; // 下方项
+        top = "75%";
       } else {
         width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
         height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
@@ -180,8 +184,7 @@ export default {
     shouldShowSlide(index) {
       return (
         index === this.activeIndex ||
-        index ===
-          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
@@ -191,15 +194,13 @@ export default {
       const spacing = 20;
       const isVisible =
         index === this.activeIndex ||
-        index ===
-          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides;
 
       if (index === this.activeIndex) {
         top = `${baseTop}%`;
       } else if (
-        index ===
-        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
         top = `${baseTop - spacing}%`;
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
@@ -229,8 +230,7 @@ export default {
           letterSpacing: "1.75px",
         });
       } else if (
-        index ===
-          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       ) {
         Object.assign(style, {
@@ -248,18 +248,16 @@ export default {
     },
     shouldApplyMask(index) {
       return (
-        index ===
-          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
     handleSlideClick(index, url) {
-      console.log(`点击幻灯片触发，索引 ${index}，URL: ${url}`);
+      console.log(`點擊幻燈片觸發，索引 ${index}，URL: ${url}`);
       if (index === this.activeIndex) {
         this.handlePlayClick(url);
       } else if (
-        index ===
-        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
         this.handlePrevClick();
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
@@ -267,24 +265,59 @@ export default {
       }
     },
     handlePlayClick(url) {
-      console.log(`播放按钮触发，URL: ${url}`);
+      console.log(`播放按鈕觸發，URL: ${url}`);
       this.showPopover(url);
     },
     handlePrevClick() {
-      this.activeIndex =
-        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
+      this.activeIndex = (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
     },
     handleNextClick() {
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
     },
     handleWheel(event) {
-      console.log("鼠标滚轮触发，方向:", event.deltaY);
+      console.log("滑鼠滾輪觸發，方向:", event.deltaY);
       event.preventDefault();
       if (event.deltaY > 0) {
         this.handleNextClick();
       } else {
         this.handlePrevClick();
       }
+    },
+    handleMouseDown(event) {
+      this.isDragging = true;
+      this.startY = event.clientY;
+      this.pauseAutoPlay();
+      document.querySelector(".swiper-round").style.cursor = "grabbing";
+      console.log("滑鼠按下，開始拖拽，起始Y:", this.startY);
+    },
+    handleMouseMove(event) {
+      if (!this.isDragging) return;
+      const deltaY = event.clientY - this.startY;
+      const threshold = 50; // 拖拽閾值，單位像素
+      if (deltaY < -threshold) {
+        this.handleNextClick();
+        this.isDragging = false;
+        document.querySelector(".swiper-round").style.cursor = "grab";
+        console.log("向上拖拽，切換到下一張");
+      } else if (deltaY > threshold) {
+        this.handlePrevClick();
+        this.isDragging = false;
+        document.querySelector(".swiper-round").style.cursor = "grab";
+        console.log("向下拖拽，切換到上一張");
+      }
+    },
+    handleMouseUp() {
+      if (this.isDragging) {
+        this.isDragging = false;
+        document.querySelector(".swiper-round").style.cursor = "grab";
+        this.startAutoPlay();
+        console.log("滑鼠鬆開，結束拖拽");
+      }
+    },
+    handleMouseLeave() {
+      this.handleMouseUp();
+      this.startAutoPlay();
+      console.log("滑鼠離開，恢復自動播放");
     },
     showPopover(url) {
       this.popoverUrl = url;
@@ -309,7 +342,7 @@ export default {
       if (this.autoPlay && this.timer === null) {
         this.timer = setInterval(this.handleNextClick, this.interval);
         console.log(
-          `自动播放开始，间隔: ${this.interval}ms, timer: ${this.timer}`
+          `自動播放開始，間隔: ${this.interval}ms, timer: ${this.timer}`
         );
       }
     },
@@ -317,19 +350,20 @@ export default {
       if (this.timer !== null) {
         clearInterval(this.timer);
         this.timer = null;
-        console.log("自动播放暂停");
+        console.log("自動播放暫停");
       }
     },
   },
   mounted() {
-    console.log("SwiperRound挂载，shareList:", this.shareList);
+    console.log("SwiperRound掛載，shareList:", this.shareList);
     this.startAutoPlay();
+    document.querySelector(".swiper-round").style.cursor = "grab";
   },
   beforeDestroy() {
     if (this.timer !== null) {
       clearInterval(this.timer);
       this.timer = null;
-      console.log("组件销毁，自动播放停止");
+      console.log("組件銷毀，自動播放停止");
     }
   },
   watch: {
@@ -355,7 +389,7 @@ export default {
         if (this.timer !== null) {
           clearInterval(this.timer);
           this.timer = null;
-          console.log("自动播放停止");
+          console.log("自動播放停止");
         }
       }
     },
@@ -388,6 +422,7 @@ $primary-color: #4570b6;
   width: 100%;
   height: 100%;
   position: relative;
+  cursor: grab; // 默認抓手樣式
 }
 
 .swiper-container {
@@ -409,11 +444,11 @@ $primary-color: #4570b6;
   cursor: pointer;
 
   &.active .avatar-container {
-    box-shadow: 3px 2px 0 0 #4570b6; // 活跃项高亮
+    box-shadow: 3px 2px 0 0 #4570b6; // 活躍項高亮
   }
 
   .avatar-container {
-    position: absolute; // 确保相对于 swiper-slide 定位
+    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -423,8 +458,8 @@ $primary-color: #4570b6;
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover; // 保持比例填充
-      object-position: center; // 居中对齐，防止扭曲
+      object-fit: cover;
+      object-position: center;
     }
 
     &.overlay-mask:before {
@@ -440,7 +475,7 @@ $primary-color: #4570b6;
         rgba(255, 255, 255, 0.7) 100%
       );
       border-radius: 50%;
-      z-index: 1; // 确保蒙版在图片上方
+      z-index: 1;
       pointer-events: none;
     }
   }
@@ -451,7 +486,7 @@ $primary-color: #4570b6;
     right: 0;
     width: #{"clamp(2.25rem, -1.313rem + 3.96vw, 3.438rem)"};
     height: #{"clamp(1.75rem, -0.875rem + 2.92vw, 2.625rem)"};
-    z-index: 5; // 提高层级
+    z-index: 5;
     cursor: pointer;
 
     &:before {
@@ -473,7 +508,7 @@ $primary-color: #4570b6;
     transform: translate(-50%, -50%);
     width: #{"clamp(1.313rem, -0.75rem + 2.29vw, 2rem)"};
     height: #{"clamp(1.313rem, -0.75rem + 2.29vw, 2rem)"};
-    z-index: 5; // 提高层级
+    z-index: 5;
     cursor: pointer;
   }
 
@@ -504,7 +539,7 @@ $primary-color: #4570b6;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 1; // 降低层级，避免干扰
+  z-index: 1;
 }
 
 .popover {
