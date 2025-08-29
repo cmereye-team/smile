@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-28 17:06:06
+ * @LastEditTime: 2025-08-28 18:19:45
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -969,8 +969,9 @@ $text-color: #6d6e71;
     background-size: cover;
   }
   &-left {
-    width: 28.75vw;
-    height: 100vh;
+    // width: 28.75vw;
+    width: 540px;
+    height: 900px;
     position: relative;
     &::after {
       content: "";
@@ -1343,7 +1344,10 @@ $text-color: #6d6e71;
     white-space: nowrap;
     font-family: "Noto Sans HK";
     text-align: right;
+    position: absolute;
+    right: 30px;
     span {
+      font-weight: 700;
       font-family: "Poppins", sans-serif;
     }
   }
@@ -1352,6 +1356,16 @@ $text-color: #6d6e71;
     justify-content: space-between;
     gap: 10px;
     margin-bottom: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
+    &:nth-child(2) {
+      .condition-item {
+        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"};
+      }
+    }
+    &:nth-child(3) {
+      .condition-item {
+        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.425rem + 3.5vw, 2rem)"};
+      }
+    }
     &:nth-child(4) {
       margin-left: #{"clamp(2.5rem, 1.591rem + 4.55vw, 5rem)"};
     }
@@ -1379,9 +1393,6 @@ $text-color: #6d6e71;
     font-weight: 400;
     margin-top: #{"clamp(0.75rem, -0.205rem + 4.77vw, 3.375rem)"};
     margin-bottom: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
-    span {
-      white-space: nowrap;
-    }
   }
 }
 .xtra {
@@ -1566,6 +1577,15 @@ $text-color: #6d6e71;
 }
 // 手机和平板
 @media screen and (max-width: 1199px) {
+  .condition {
+    &-list {
+      &:nth-child(2) {
+        .condition-item {
+          margin-right: 200px;
+        }
+      }
+    }
+  }
 }
 // 平板和电脑
 @media screen and (min-width: 768px) {
@@ -1608,6 +1628,27 @@ $text-color: #6d6e71;
   }
   .benefit {
     padding: 0;
+  }
+  .condition {
+    padding: 100px 30px 0 30px;
+    h3 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &-item {
+      font-size: 20px;
+      line-height: 35px;
+      letter-spacing: 2px;
+    }
+    &-item {
+      white-space: nowrap;
+    }
+    &-desc {
+      span {
+        display: block;
+        white-space: nowrap;
+      }
+    }
   }
   @keyframes xtraBottom {
     0% {
