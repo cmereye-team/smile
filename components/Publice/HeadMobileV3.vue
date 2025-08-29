@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 09:55:03
- * @LastEditTime: 2025-08-25 16:31:47
+ * @LastEditTime: 2025-08-29 08:58:25
  * @FilePath: /components/Publice/HeadMobileV3.vue
  * @Description: 移动端第三版头部的菜单
 -->
@@ -11,7 +11,8 @@
     :class="{ 'h-screen': showMenu }"
     @touchmove.stop.prevent
   >
-    <div class="icon icon-whatsapp">
+    <a href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-G01)%20%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5/%E7%9F%AF%E8%A6%96%E8%AC%9B%E5%BA%A7" target="_blank">
+      <div class="icon icon-whatsapp">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
@@ -26,7 +27,9 @@
       </svg>
       <p><span>WhatsApp</span><br />預約</p>
     </div>
-    <div class="icon icon-lecture">
+    </a>
+    <a href="/booking" target="_blank">
+      <div class="icon icon-lecture">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="93"
@@ -43,8 +46,9 @@
           fill="white"
         />
       </svg>
-      <p>預約講座</p>
+      <p>{{ $t("home.headers.reservationServiceV2") }}</p>
     </div>
+    </a>
     <div class="icon-menu" v-show="!showMenu" @click="showMenu = true">
       <svg
         xmlns="http://www.w3.org/2000/svg"

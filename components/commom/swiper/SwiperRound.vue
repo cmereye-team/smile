@@ -1,5 +1,9 @@
 <template>
-  <div class="swiper-round">
+  <div
+    class="swiper-round"
+    @mouseenter="pauseAutoPlay"
+    @mouseleave="startAutoPlay"
+  >
     <div class="swiper-container" @wheel="handleWheel">
       <div class="swiper-wrap">
         <div
@@ -15,11 +19,7 @@
             class="avatar-container"
             :class="{ 'overlay-mask': shouldApplyMask(index) }"
           >
-            <img
-              :src="getImageSrc(item)"
-              :alt="item[nameKey] || item.nameEn"
-              @error="handleImageError($event, index)"
-            />
+            <img :src="item[imageKey]" :alt="item[nameKey] || item.nameEn" />
           </div>
 
           <!-- Play按钮 -->
@@ -54,16 +54,34 @@
         </div>
       </div>
     </div>
-
-    <div id="youtube-popover" popover class="youtube-popover">
-      <button class="close-button" @click="closePopover">×</button>
-      <iframe
-        v-if="popoverUrl"
-        :src="popoverUrl"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+    <div id="popover" class="popover" popover @click="handleBackdropClick">
+      <div class="popover-container">
+        <iframe
+          v-if="popoverUrl"
+          :src="popoverUrl"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <button class="popover-close" @click="closePopover">
+          <svg
+            t="1756432879876"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="4417"
+            width="200"
+            height="200"
+          >
+            <path
+              d="M548.992 503.744L885.44 167.328a31.968 31.968 0 1 0-45.248-45.248L503.744 458.496 167.328 122.08a31.968 31.968 0 1 0-45.248 45.248l336.416 336.416L122.08 840.16a31.968 31.968 0 1 0 45.248 45.248l336.416-336.416L840.16 885.44a31.968 31.968 0 1 0 45.248-45.248L548.992 503.744z"
+              p-id="4418"
+              fill="#ffffff"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -110,14 +128,6 @@ export default {
     },
   },
   methods: {
-    getImageSrc(item) {
-      const src = item[this.imageKey];
-      if (!src) {
-        console.warn(`图片源无效，索引 ${this.activeIndex}：`, item);
-        return "https://picsum.photos/80/80";
-      }
-      return src;
-    },
     getSlideStyle(index) {
       let width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
       let height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
@@ -243,10 +253,6 @@ export default {
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
-    handleImageError(event, index) {
-      console.error(`图片加载失败，索引 ${index}：`, event.target.src);
-      event.target.src = "https://picsum.photos/80/80";
-    },
     handleSlideClick(index, url) {
       console.log(`点击幻灯片触发，索引 ${index}，URL: ${url}`);
       if (index === this.activeIndex) {
@@ -265,19 +271,15 @@ export default {
       this.showPopover(url);
     },
     handlePrevClick() {
-      // console.log("上一张按钮触发");
       this.activeIndex =
         (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
-      // console.log(`活跃幻灯片更改为: ${this.activeIndex}`);
     },
     handleNextClick() {
-      // console.log("下一张按钮触发");
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
-      // console.log(`活跃幻灯片更改为: ${this.activeIndex}`);
     },
     handleWheel(event) {
       console.log("鼠标滚轮触发，方向:", event.deltaY);
-      event.preventDefault(); // 防止页面滚动
+      event.preventDefault();
       if (event.deltaY > 0) {
         this.handleNextClick();
       } else {
@@ -285,20 +287,22 @@ export default {
       }
     },
     showPopover(url) {
-      console.log(`显示弹出窗口触发，URL: ${url}`);
       this.popoverUrl = url;
-      const popover = document.getElementById("youtube-popover");
+      const popover = document.getElementById("popover");
       if (popover) {
         popover.showPopover();
-        console.log("显示YouTube弹出窗口:", url);
       }
     },
     closePopover() {
       this.popoverUrl = null;
-      const popover = document.getElementById("youtube-popover");
+      const popover = document.getElementById("popover");
       if (popover) {
         popover.hidePopover();
-        console.log("YouTube弹出窗口关闭");
+      }
+    },
+    handleBackdropClick(event) {
+      if (event.target.classList.contains('popover')) {
+        this.closePopover();
       }
     },
     startAutoPlay() {
@@ -307,6 +311,13 @@ export default {
         console.log(
           `自动播放开始，间隔: ${this.interval}ms, timer: ${this.timer}`
         );
+      }
+    },
+    pauseAutoPlay() {
+      if (this.timer !== null) {
+        clearInterval(this.timer);
+        this.timer = null;
+        console.log("自动播放暂停");
       }
     },
   },
@@ -436,10 +447,10 @@ $primary-color: #4570b6;
 
   .play-button {
     position: absolute;
-    bottom: #{'clamp(0.375rem, -0.375rem + 0.83vw, 0.625rem)'};
+    bottom: #{"clamp(0.375rem, -0.375rem + 0.83vw, 0.625rem)"};
     right: 0;
-    width: #{'clamp(2.25rem, -1.313rem + 3.96vw, 3.438rem)'};
-    height: #{'clamp(1.75rem, -0.875rem + 2.92vw, 2.625rem)'};
+    width: #{"clamp(2.25rem, -1.313rem + 3.96vw, 3.438rem)"};
+    height: #{"clamp(1.75rem, -0.875rem + 2.92vw, 2.625rem)"};
     z-index: 5; // 提高层级
     cursor: pointer;
 
@@ -449,8 +460,8 @@ $primary-color: #4570b6;
       position: absolute;
       bottom: 0;
       right: 0;
-      width: #{'clamp(2.25rem, -1.313rem + 3.96vw, 3.438rem)'};
-      height: #{'clamp(1.75rem, -0.875rem + 2.92vw, 2.625rem)'};
+      width: #{"clamp(2.25rem, -1.313rem + 3.96vw, 3.438rem)"};
+      height: #{"clamp(1.75rem, -0.875rem + 2.92vw, 2.625rem)"};
       background-size: cover;
     }
   }
@@ -460,8 +471,8 @@ $primary-color: #4570b6;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: #{'clamp(1.313rem, -0.75rem + 2.29vw, 2rem)'};
-    height: #{'clamp(1.313rem, -0.75rem + 2.29vw, 2rem)'};
+    width: #{"clamp(1.313rem, -0.75rem + 2.29vw, 2rem)"};
+    height: #{"clamp(1.313rem, -0.75rem + 2.29vw, 2rem)"};
     z-index: 5; // 提高层级
     cursor: pointer;
   }
@@ -488,7 +499,6 @@ $primary-color: #4570b6;
 .name-list {
   position: absolute;
   top: 0;
-  // left: 50px;
   width: 200px;
   height: 100%;
   display: flex;
@@ -497,35 +507,48 @@ $primary-color: #4570b6;
   z-index: 1; // 降低层级，避免干扰
 }
 
-.youtube-popover {
-  width: 80vw;
-  max-width: 800px;
-  height: 60vh;
-  max-height: 450px;
-  background: white;
-  border-radius: 10px;
-  padding: 10px;
+.popover {
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-
-  iframe {
-    width: 100%;
-    height: calc(100% - 40px);
-    border: none;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba($color: #000000, $alpha: 0.7);
+  z-index: 103;
+  &[popover]:not(:popover-open) {
+    display: none;
   }
-
-  .close-button {
+  &-container {
+    z-index: 104;
+    position: relative;
+    width: 80vw;
+    max-width: 800px;
+    height: 60vh;
+    max-height: 450px;
+  }
+  &-close {
+    z-index: 105;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -40px;
+    right: 0;
     font-size: 20px;
     cursor: pointer;
     background: none;
     border: none;
-    color: $primary-color;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
   }
 }
 
@@ -564,7 +587,7 @@ $primary-color: #4570b6;
     width: 150px;
   }
 
-  .youtube-popover {
+  .popover {
     width: 90vw;
     height: 50vh;
     max-height: 300px;
