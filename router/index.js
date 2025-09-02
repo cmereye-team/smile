@@ -206,8 +206,7 @@ export const $router = [
     // component: resolve('pages/vision-correction/relex-smile/index.vue'),
     component: resolve("pages/new-page/smile.vue"),
   },
-
-    {
+  {
     path: "/vision-correction/relex-smileV2",
     name: "vision-correction/relex-smileV2",
     title: "SMILE 微笑激光矯視",
@@ -264,6 +263,12 @@ export const $router = [
     title: "ICL 植入式隱形眼鏡",
     // component: resolve('pages/vision-correction-icl/index.vue'),
     component: resolve("pages/new-page/iclV2.vue"),
+  },
+  {
+    path: "/testicl",
+    name: "testicl",
+    title: "9月講座專題",
+    component: resolve("pages/new-page/icl2509.vue"),
   },
   // 新版本路由
   {

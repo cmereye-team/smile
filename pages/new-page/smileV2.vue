@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-08-28 18:19:45
+ * @LastEditTime: 2025-09-02 09:18:09
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -922,6 +922,9 @@ export default {
 <style lang="scss" scoped>
 $primary-color: #4570b6;
 $text-color: #6d6e71;
+:deep(.headV3) {
+  max-width: 765px;
+}
 .subtitle {
   color: $primary-color;
   font-weight: 900;

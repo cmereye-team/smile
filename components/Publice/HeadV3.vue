@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-08-27 15:16:10
+ * @LastEditTime: 2025-09-02 10:13:35
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -54,7 +54,7 @@ $text-color: #6d6e71;
 @media screen and (min-width: 1200px) {
   .headV3 {
     height: 180px;
-    max-width: 765px;
+    max-width: 768px;
   }
 }
 </style>
