@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-09-02 10:13:35
+ * @LastEditTime: 2025-09-02 15:48:21
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -51,7 +51,7 @@ $text-color: #6d6e71;
     left: #{"clamp(1rem, 0.045rem + 4.77vw, 3.625rem)"};
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .headV3 {
     height: 180px;
     max-width: 768px;

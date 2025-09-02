@@ -1,18 +1,18 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-02 10:37:52
+ * @LastEditTime: 2025-09-02 17:03:16
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
 <template>
   <div class="page bg-[#050D1A]">
     <HeadV3 />
-    <div class="page-bg w-screen flex flex-col md:flex-row md:justify-center">
+    <div class="page-bg w-full flex flex-col md:flex-row md:justify-center">
       <main
         class="page-main w-full md:max-w-3xl pt-[87px] md:pt-[180px] order-1 md:order-2"
       >
-        <section class="banner">
+        <section id="intro" class="intro pb-[10.1px] md:pb-0">
           <picture>
             <source
               media="(max-width: 768px)"
@@ -32,81 +32,155 @@
             />
           </picture>
         </section>
-        <section class="detail bg-[#01ABCC] rounded-[10.1px] md:rounded-[20px]">
-          <div>
-            <h3>ICL植入式隱形眼鏡</h3>
-            <p>會為你的生活體驗帶來嶄新選擇!</p>
-            <p>
-              作為首間官方認證EVO
-              ICL國際培訓中心，希瑪微笑矯視中心今次為ICL矯視服務開辦講座專場，將深入講解ICL技術原理，並即場解答你最關心的問題。
-            </p>
-            <p>
-              無論你是初次接觸ICL植入式隱形眼鏡，或已在考慮進行矯視，這場講座活動都能為你提供最全面的講解。
-            </p>
-          </div>
-          <div>
-            <p>
-              <span>講座將由希瑪醫療團隊主講，</span>
-              <span>深入剖析ICL技術、安全性及術後效果。</span>
-            </p>
-            <p>
-              <span>現場更設有互動環節，</span>
-              <span>解答你對ICL矯視服務的所有疑問。</span>
-            </p>
-          </div>
-        </section>
-        <section class="gift bg-[#000034] relative z-1">
-          <p>參加者即場預約ICL矯視前檢查<br />可獲專場專享禮品</p>
-          <p>術前檢查費用(價值:$500)可於手術費用中扣除</p>
-        </section>
         <section
-          class="book text-center font-black pt-11 md:pt-21 pb-[50.65px] md:pb-[110px] -my-5"
+          id="detail"
+          class="detail rounded-[10.1px] md:rounded-[20px] -my-5 relative z-2 pt-4 md:pt-[34px] pb-[30.5px] md:pb-12"
         >
-          <div
-            class="tracking-[1px] md:tracking-[1.5px] text-xl md:text-3xl leading-[23.845px] md:leading-[47px] mb-5"
-          >
-            <p class="text-[#ff7300]">名額有限</p>
-            <p class="text-[#000]">活動只招待已預約人士</p>
-            <p class="text-[#81accd]">請即登記預約!</p>
-          </div>
-          <button
-            class="book-button text-xl md:text-4xl leading-[31.962px] md:leading-[63px] tracking-[1px] md:tracking-[1.8px]"
-          >
-            立即預約
-          </button>
-        </section>
-        <section class="what">
-          <div class="rounded-t-[10.1px] md:rounded-t-[20px] relative z-1">
-            <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-m.webp
-              "
-            />
-            <source
-              media="(min-width: 769px)"
-              srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-pc.webp
-              "
-            />
-            <img
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-pc.webp"
-              alt="ICL九月講座"
-            />
-          </picture>
-          </div>
-          <div class="what-desc -mt-5 bg-[#000034] text-center rounded-t-[10.1px] md:rounded-t-[20px] relative z-2 py-[34px] md:py-[66px]">
-            <h3 class="font-black text-xl md:text-3xl leading-[15.22px] md:leading-[30px] mb-4 md:mb-[34px]">ICL植入式隱形眼鏡是什麼?</h3>
-            <div class="what-desc-text text-sm md:text-xl font-normal leading-[22px] md:leading-[35px] md:tracking-[1px]">
-              <p>
-              ICL植入式隱形眼鏡以非激光原理矯正<br />
-              1,800度以下近視、1,000度以下遠視、600度以下散光。
-            </p>
-            <p>矯視後，無須再依賴眼鏡/隱形眼鏡，早晚享受高清視力。</p>
+          <div class="detail-main relative">
+            <div class="detail-question">
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-t1.svg"
+                alt="你是否正受近視、遠視或散光困擾?"
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-t2.svg"
+                alt="甚至因此影響工作表現或生活質素?"
+              />
             </div>
-            <h4 class="mt-10 md:mt-13 mb-5 md:mb-10 text-xl md:text-3xl">適合人士</h4>
-            <div class="what-card flex justify-between mb-[34px]">
+            <div
+              class="detail-cover relative flex justify-end px-14 md:px-[120px]"
+            >
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-m.webp
+                  "
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp
+                  "
+                />
+                <img
+                  class="w-[202px] h-[140.05px] md:w-[367px] md:h-[263px]"
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp"
+                  alt="ICL九月講座"
+                />
+              </picture>
+            </div>
+            <div
+              class="detail-text mt-12 ml-[64px] mr-[106.13px] md:mt-[58px] md:ml-[148px] md:mr-[259px]"
+            >
+              <h3
+                class="text-sm md:text-xl font-bold leading-[20px] md:leading-[35px] tracking-[0.84px] md:tracking-[1px] text-justify"
+              >
+                ICL植入式隱形眼鏡
+              </h3>
+              <p>會為你的生活體驗帶來嶄新選擇!</p>
+              <p>
+                作為首間官方認證EVO
+                ICL國際培訓中心，希瑪微笑矯視中心今次為ICL矯視服務開辦講座專場，將深入講解ICL技術原理，並即場解答你最關心的問題。
+              </p>
+              <p>
+                無論你是初次接觸ICL植入式隱形眼鏡，或已在考慮進行矯視，這場講座活動都能為你提供最全面的講解。
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <p>
+              <span class="block md:inline">講座將由希瑪醫療團隊主講，</span>
+              <span class="block md:inline"
+                >深入剖析ICL技術、安全性及術後效果。</span
+              >
+            </p>
+            <p>
+              <span class="block md:inline">現場更設有互動環節，</span>
+              <span class="block md:inline"
+                >解答你對ICL矯視服務的所有疑問。</span
+              >
+            </p>
+          </div>
+        </section>
+        <section id="highlight" class="highlight">
+          <div
+            class="highlight-gift bg-[#000034] relative z-1 -mb-5 rounded-b-[10.1px] md:rounded-b-[20px] text-center py-7 md:pt-11 md:pb-[58px]"
+          >
+            <p
+              class="text-xl md:text-3xl leading-[23.845px] md:leading-[47px] tracking-[1px] md:traceing-[1.5px]"
+            >
+              <span
+                class="block text-sm md:text-xl tracking-[0.7px] traceing-[1px]"
+                >參加者即場預約ICL矯視前檢查</span
+              >可獲專場專享禮品
+            </p>
+            <p><span>術前檢查費用</span>(價值:$500)可於手術費用中扣除</p>
+          </div>
+          <div
+            class="highlight-book text-center font-black pt-11 md:pt-21 pb-[50.65px] md:pb-[110px] -my-5"
+          >
+            <div
+              class="tracking-[1px] md:tracking-[1.5px] text-xl md:text-3xl leading-[23.845px] md:leading-[47px] mb-5"
+            >
+              <p class="text-[#ff7300]">名額有限</p>
+              <p class="text-[#000]">活動只招待已預約人士</p>
+              <p class="text-[#81accd]">請即登記預約!</p>
+            </div>
+            <button
+              class="highlight-book-button text-xl md:text-4xl leading-[31.962px] md:leading-[63px] tracking-[1px] md:tracking-[1.8px] w-[170px] h-[40px] md:w-[335px] md:h-[77px]"
+            >
+              立即預約
+            </button>
+          </div>
+        </section>
+        <section id="what" class="what">
+          <div
+            class="rounded-t-[10.1px] md:rounded-t-[20px] relative z-1 bg-[#E8EEF2] h-[178.61px] md:h-[323px]"
+          >
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-m.webp
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-pc.webp
+                "
+              />
+              <img
+                class="w-full h-auto"
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-pc.webp"
+                alt="ICL九月講座"
+              />
+            </picture>
+          </div>
+          <div
+            class="what-desc -mt-5 bg-[#000034] text-center rounded-t-[10.1px] md:rounded-t-[20px] relative z-2 py-[34px] md:py-[66px]"
+          >
+            <h3
+              class="font-black text-xl md:text-3xl leading-[15.22px] md:leading-[30px] mb-4 md:mb-[34px]"
+            >
+              ICL植入式隱形眼鏡是什麼?
+            </h3>
+            <div
+              class="what-desc-text text-sm md:text-xl font-normal leading-[22px] md:leading-[35px] md:tracking-[1px]"
+            >
+              <p>
+                ICL植入式隱形眼鏡以非激光原理矯正<br />
+                1,800度以下近視、1,000度以下遠視、600度以下散光。
+              </p>
+              <p>矯視後，無須再依賴眼鏡/隱形眼鏡，早晚享受高清視力。</p>
+            </div>
+            <h4 class="mt-6 md:mt-13 mb-5 md:mb-10 text-xl md:text-3xl">
+              適合人士
+            </h4>
+            <div
+              class="what-card flex justify-between mb-[34px] mx-[6px] md:mx-5 text-center gap-[10px] md:gap-[26.67px]"
+            >
               <div class="what-card-item">
                 <p>熱愛<span>運動</span>/<br />注重<span>儀表</span></p>
               </div>
@@ -119,10 +193,15 @@
                 </p>
               </div>
             </div>
-            <div class="what-join text-sm md:text-xl font-normal leading-[30px] md:leading-[50px] tracking-[0.7px] md:tracking-[1px]">
+            <div
+              class="what-join text-sm md:text-xl font-normal leading-[30px] md:leading-[50px] tracking-[0.7px] md:tracking-[1px]"
+            >
               <p>想更詳細了解ICL植入式隱形眼鏡?</p>
               <p class="font-black">
-                <span class="text-[#3bd7f1] text-lg md:text-3xl tracking-[0.9px] md:tracking-[1.5px]">立即登記</span>
+                <span
+                  class="text-[#3bd7f1] text-lg md:text-3xl tracking-[0.9px] md:tracking-[1.5px]"
+                  >立即登記</span
+                >
                 參與ICL植入式隱形眼鏡講座專場!
               </p>
             </div>
@@ -206,10 +285,16 @@
           </div>
         </section>
       </main>
-      <aside class="page-left flex-1 hidden md:block order-2 md:order-1">
-        左侧栏
+      <aside class="page-left flex-1 hidden xl:block order-2 xl:order-1">
+        <div class="fixed top0">
+          左侧栏
+        </div>
       </aside>
-      <aside class="page-right flex-1 hidden md:block order-3">右侧栏</aside>
+      <aside class="page-right flex-1 hidden xl:block order-3">
+        <div class="pl-9 fixed top-0">
+          <PageNavigation :navList="navList"></PageNavigation>
+        </div>
+      </aside>
     </div>
     <FooterV2 />
   </div>
@@ -227,9 +312,99 @@ $primary-color: #3bd7f1;
   color: #fff;
   font-family: "Noto Sans TC";
 }
-.book {
-  background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-reserve.webp")
-    no-repeat;
+.detail {
+  background: linear-gradient(180deg, #00ABCC 71.63%, #008098 100%);
+  &-question {
+    img {
+      &:nth-child(1) {
+        position: absolute;
+        top: 8px;
+        left: 22.34px;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 106px;
+        right: 30px;
+      }
+    }
+  }
+  &-cover {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 13.77px;
+      width: 49px;
+      height: 42px;
+      background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjMiIGhlaWdodD0iNTQiIHZpZXdCb3g9IjAgMCA2MyA1NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkuNzA3MTYgMzMuNTE1NkwwIDQwLjYzNzlMMTEuNDA4NyA0MC4xOTY3TDMxLjI1IDU0TDUyLjc5NSA0Ni4xOTg2TDYzIDM3LjMxMTRMNTUuNjc0NiAxMS43MzM1TDM4LjA1NDEgMEwxMi4xNDY4IDExLjc0TDkuNzA3MTYgMzMuNTE1NloiIGZpbGw9IiNBRENGRDYiLz4KPHBhdGggZD0iTTMyLjYwNjUgMTguMjY1NUMzNC45MDA2IDE5LjkzMzUgMzYuMTczIDIzLjA5IDM2LjIwMDggMjYuMTg2N0MzNi4yMjg3IDI5LjI4MzMgMzUuMTI5OCAzMi4yOTQ0IDMzLjUyMzMgMzQuNzk0NEMzMi4xNTg4IDM2LjkxMzcgMjkuOTU0NyAzOC44NjgzIDI3LjczMTIgMzguMTU0QzI2LjEzNTQgMzcuNjQwOCAyNS4wOTQ0IDM1LjkwODUgMjQuMzg1NCAzNC4yMDJDMjMuMzQ4NyAzMS43MDYzIDIyLjcyNTMgMjguNzkxNCAyMy41NDM2IDI2LjE5MzFDMjQuNDc5NiAyMy4yMTYyIDI3LjA3NzkgMjEuMzM2NCAyOS42NzYyIDIwLjIyMDFDMzMuNzEzOSAxOC40ODM2IDM4LjE3NzkgMTguMDQ1MiA0Mi40MTkxIDE4Ljk2NjlDNDMuNDAyMyAxOS4xODA4IDQ0LjQ2MDUgMTkuNTMzNiA0NS4wMTk2IDIwLjQ3NjdDNDUuNzU2NCAyMS43MjE0IDQ1LjMwMDIgMjMuNDIxNSA0NC42MzYyIDI0LjcxOTZDNDIuNTM0OCAyOC44Mjc4IDM4LjU3ODUgMzEuNDk2NyAzNC40NDAxIDMyLjE1MzJDMzAuMzAxNyAzMi44MDk4IDI2LjAzMjYgMzEuNTgwMSAyMi4zOTc2IDI5LjIzNjNDMjAuMTgwNiAyNy44MDc3IDE3Ljk0ODYgMjUuMzkxMSAxOC4zMTA2IDIyLjUyMzNDMTguNjY4MyAxOS43MDA0IDIxLjI5ODcgMTguMTE1OCAyMy42MzU3IDE3LjA4NUMyNS45MTI3IDE2LjA3OTkgMjguMjkwMyAxNS4xNTYgMzAuNzMwMSAxNS4yNTQ0QzMzLjE3MiAxNS4zNTA2IDM1LjcxNDYgMTYuNjc0NCAzNi44MDcgMTkuMTU5NEMzNy40Nzk2IDIwLjY4NjMgMzcuNTQxNyAyMi40NjU2IDM3LjQ1ODIgMjQuMTdDMzcuMzY0IDI2LjA4NCAzNy4wODU1IDI4LjA0NTEgMzYuMjA1MSAyOS42Nzg5QzM1LjMyNDcgMzEuMzEyOCAzMy43Mzc1IDMyLjU2MzggMzIuMDU2IDMyLjQ0NjJDMjkuNzQ5IDMyLjI4MzcgMjguMDQ0IDI5LjQ3NzkgMjguMjM4OSAyNi44NTgyQzI4LjQzMzggMjQuMjM4NCAzMC4xMzQ2IDIxLjk5OTQgMzIuMTc2IDIwLjc2NzZDMzQuMjE3MyAxOS41MzU4IDM2LjU2NSAxOS4xNTUxIDM4Ljg2OTggMTguOTM0OEM0MC43NDE5IDE4Ljc1NTIgNDIuODQxMSAxOC43NTUyIDQ0LjIyMDYgMjAuMjA1MUM0Ni40ODA0IDIyLjU4MzIgNDUuMjMzOCAyNi44NDk2IDQzLjY4MDggMjkuODczNUM0Mi4yMjY0IDMyLjcwMjkgNDAuMzQzNSAzNS42NjY5IDM3LjUyNDYgMzYuMzQ3QzM1LjMzMTIgMzYuODc3MyAzMy4wMjIxIDM1LjgzOCAzMS4zMTcgMzQuMTc2M0MyOS42MTQxIDMyLjUxNjggMjguNDE2NyAzMC4yOTcgMjcuMzAwNyAyOC4wODM2QzI1LjkyNzcgMjUuMzU0OCAyNC42ODEgMjEuNzQ3IDI2LjQwNTMgMTkuMjg5OEMyNy41NjYzIDE3LjYzODkgMjkuNjE2MiAxNy4yNzMyIDMxLjQ3MTIgMTcuMTQyN0MzMy42MjE4IDE2Ljk5MDkgMzUuOTc1OSAxNy4wNjU3IDM3LjY0MjQgMTguNjE2MkMzOS43NzggMjAuNjAwOCAzOS45ODE1IDI0LjIyNTYgMzkuNTgxIDI3LjMzMDhDMzkuMjcwNCAyOS43NDk1IDM4LjcwMjcgMzIuMTI1NCAzNy44OTMgMzQuMzkwMkMzNy40MjE4IDM1LjcwOTcgMzYuNzg1NiAzNy4wODY5IDM1LjY1MDMgMzcuNjg3OEMzNC40MTY1IDM4LjMzNzkgMzIuOTAyMSAzNy44NTA0IDMxLjg1MDQgMzYuODcwOUMzMC43OTg2IDM1Ljg5MTQgMzAuMTE3NSAzNC40OTcxIDI5LjQ5NDEgMzMuMTI0MUMyNy44ODk4IDI5LjU4OTEgMjYuNTA2IDI1LjIzMDcgMjguMjY0NiAyMS43OTE5QzI5LjQ5ODQgMTkuMzgxOCAzMS45NTEgMTguMTY3MSAzNC4zMDk0IDE3LjQxMjJDMzYuMTA4NyAxNi44MzY5IDM4LjM1NzkgMTYuNTg2NyAzOS41NDg4IDE4LjIyN0M0MC40NTA2IDE5LjQ2OTUgNDAuMzI4NSAyMS4yNzQ0IDQwLjA4NDMgMjIuODYxMkMzOC45NDI2IDMwLjIyIDM2LjEwNDQgMzcuMjMwMiAzMS45MjUzIDQzQzI4LjEwODIgMzguMzQyMiAyNS41NDY0IDMyLjM3MTQgMjQuNjY2IDI2LjA4MTlDMjQuNDE1NCAyNC4yODc2IDI0LjMxMDQgMjIuMzcxNSAyNC45ODA5IDIwLjcyMjdDMjYuMDE5OCAxOC4xNjcxIDI4LjU4NTkgMTYuOTU0NSAzMC45ODA3IDE2LjI1MDlDMzQuMjY0NCAxNS4yODY0IDM4LjI3NDMgMTUuMDgzMyA0MC41MDg1IDE3Ljk4NzRDNDEuNjAwOSAxOS40MDc0IDQyLjA0IDIxLjMyMTUgNDIuMjk3MSAyMy4xODQxQzQzLjA1NTMgMjguNjg0NSA0Mi40ODEzIDM0LjQxMzcgNDAuNjU2MyAzOS41ODA1QzQwLjM2MDcgNDAuNDE4OCAzOS45OTAxIDQxLjI5NzcgMzkuMjk4MiA0MS43NDA0QzM4LjEyNDQgNDIuNDk1MyAzNi42Njk5IDQxLjY2MzQgMzUuNTczMiA0MC43NzE2QzMxLjI2MzUgMzcuMjY4NyAyNy43Mzk4IDMyLjUyNzUgMjUuNDIyMSAyNy4xMTA1QzIzLjQ4MzYgMjIuNTUzMyAyMS43ODcxIDE1LjIyNDQgMjcuNjcxMyAxMi44MzU3QzI4Ljk1NDMgMTIuMzEzOSAzMC4zNTk1IDEyLjE4OTggMzEuNzQzMyAxMi4xMDIxQzM2LjI1MDEgMTEuODE3NyA0MS4wOTMyIDExLjk3ODEgNDQuNzk0NyAxNC41NTkzQzQ3LjU1MTUgMTYuNDc5OCA0OS4zMDc5IDE5LjQ5OTQgNTAuODM3MyAyMi40ODdDNTQuNjQ4IDI5LjkzMzQgNDguNDQ0NyAzMy4xMDA2IDQxLjU5NjYgMzEuMTg4OEMzNy41ODI0IDMwLjA2ODEgMzQuMDEzOCAyNy4yODggMzEuMjY3NyAyMy43NzQ0QzMwLjc0MjkgMjMuMTAyOSAzMC4yMTM5IDIyLjE3OSAzMC41NTg3IDIxLjM2ODVDMzAuNzYyMiAyMC44ODczIDMxLjIxODUgMjAuNjIgMzEuNjQ2OSAyMC40MDRDMzQuNDMzNyAxOS4wMDU0IDM3LjU2OTYgMTguMzE2OCA0MC41NTU2IDE4Ljk5NDdDNDMuNTQxNiAxOS42NzI2IDQ2LjM0MTIgMjEuODUxOCA0Ny41NzA3IDI1LjAyMzNDNDguODAwMyAyOC4xOTQ4IDQ4LjE4NTUgMzIuMzA3MiA0NS44MjA3IDM0LjQ5MDdDNDQuMDMyMSAzNi4xNDE3IDQxLjYwNzMgMzYuNTI2NiAzOS4zMDg5IDM2LjcxMDVDMzIuMTYxIDM3LjI4MzYgMjQuOTI5NSAzNi41MDczIDE4IDM0LjQyNDRDMTggMzIuMTE0NyAxOS4zNTU5IDMwLjExOTUgMjAuNzI2OCAyOC40MTcyQzIzLjM1MjkgMjUuMTQ5NSAyNi4yODMyIDIyLjE5NjEgMjkuNDUxMyAxOS42MjM0QzMwLjU3OCAxOC43MDgxIDMxLjc0NTQgMTcuODMzNSAzMy4wMzQ5IDE3LjI1ODJDMzQuMjA4NyAxNi43MzQyIDM1LjQ1OTcgMTYuNDcxMiAzNi42OTk5IDE2LjIwODJDNDEuNTA0NSAxNS4xOTY2IDQ2LjMwOTEgMTQuMTg1MSA1MS4xMTM3IDEzLjE3MzYiIHN0cm9rZT0iIzA1MEQxOSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+Cjwvc3ZnPgo=");
+    }
+  }
+  &-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.84px;
+  }
+}
+@keyframes buttonShine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.highlight {
+  &-book {
+    background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-reserve.webp")
+      no-repeat;
+    &-button {
+      background-image: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjMzNSIgaGVpZ2h0PSI3NyIgdmlld0JveD0iMCAwIDMzNSA3NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMEgzMzVWMzkuMzI2OEMzMzUgNjAuMTIgMzE4LjIzOCA3NyAyOTcuNTkgNzdIMFYwWiIgZmlsbD0iIzAwMDAzNCIvPgo8cGF0aCBkPSJNMzM1IDBIMTg2VjdIMzM1VjBaIiBmaWxsPSIjMDBBQkNDIi8+Cjwvc3ZnPgo=");
+      background-position: top;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+      border-bottom-right-radius: 17px;
+      &::after {
+        content: "";
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        background: linear-gradient(
+          120deg,
+          rgba(#fff, 0) 0%,
+          rgba(#fff, 0.3) 50%,
+          rgba(#fff, 0) 100%
+        );
+        transform: skewX(-20deg);
+        animation: buttonShine 3s linear infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 97% 100%, 0 100%);
+      }
+    }
+  }
+}
+.what {
+  &-card {
+    &-item {
+      flex: 1;
+      background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-card-m.avif")
+        no-repeat center / cover;
+      height: 158px;
+      border-radius: 15px;
+      overflow: hidden;
+      p {
+        font-size: 14px;
+        line-height: 17.757px;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+      }
+      span {
+        font-weight: 900;
+      }
+    }
+  }
 }
 .share {
   padding: 24px 0 10px;
@@ -259,17 +434,83 @@ $primary-color: #3bd7f1;
     }
   }
 }
+@media screen and (max-width: 767px) {
+  :deep(.headV3) {
+    border-radius: 0;
+  }
+  .detail {
+    img {
+      &:nth-child(1) {
+        width: 105px;
+      }
+      &:nth-child(2) {
+        width: 53px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .detail {
+    &-question {
+      img {
+        &:nth-child(1) {
+          top: 12px;
+          left: 77px;
+        }
+        &:nth-child(2) {
+          top: 200px;
+          right: 126px;
+        }
+      }
+    }
+    &-cover {
+      &::before {
+        top: 36px;
+        right: 39px;
+        width: 63px;
+        height: 54px;
+      }
+    }
+    &-text {
+      font-size: 20px;
+      line-height: 35px;
+      letter-spacing: 1px;
+    }
+  }
+  .what {
+    &-card {
+      &-item {
+        background-image: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-card-pc.avif");
+        height: 312px;
+        p {
+          font-size: 20px;
+          line-height: 35px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
 </style>
 <script>
 import HeadV3 from "@/components/Publice/HeadV3.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
+import PageNavigation from "@/components/commom/PageNavigation/PageNavigation.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
+    PageNavigation,
   },
   data() {
-    return {};
+    return {
+      navList: [
+        { id: "intro", label: "講座活動簡介" },
+        { id: "detail", label: "講座活動詳情" },
+        { id: "highlight", label: "講座活動亮點" },
+        { id: "what", label: "ICL植入式隱形眼鏡是什麼?" },
+      ],
+    };
   },
 };
 </script>
