@@ -407,6 +407,13 @@ export default {
           // }
 
           .UserShareBox-list-item {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(to bottom,transparent,rgba(0,0,0,0.2));
+            }
             .UserShareBox-list-item-link {
               position: relative;
               display: block;

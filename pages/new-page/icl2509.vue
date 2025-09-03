@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-03 10:38:33
+ * @LastEditTime: 2025-09-03 15:25:05
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -120,6 +120,30 @@
                   alt="活動內容"
                 />
               </div>
+              <div class="detail-content flex flex-col items-center">
+                <div class="detail-content-row">
+                  <div class="detail-content-item">
+                    <img
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-c1.svg"
+                      alt="ICL技術講解"
+                    />
+                  </div>
+                </div>
+                <div class="detail-content-row">
+                  <div class="detail-content-item">
+                    <img
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-c2.svg"
+                      alt="常見問題Q&A"
+                    />
+                  </div>
+                  <div class="detail-content-item">
+                    <img
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-c3.svg"
+                      alt="專場專享禮品"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="text-center">
@@ -190,7 +214,7 @@
             </div>
             <a
               class="highlight-book-button block mx-auto text-xl md:text-4xl leading-[31.962px] md:leading-[63px] tracking-[1px] md:tracking-[1.8px] w-[170px] h-[40px] md:w-[335px] md:h-[77px]"
-              href=" https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICLtalk-land_01)STAAR%20X%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
+              href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICLtalk-land_01)STAAR%20X%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
               target="_blank"
               >立即預約</a
             >
@@ -243,16 +267,65 @@
             <div
               class="what-card flex justify-between mb-[34px] mx-[6px] md:mx-5 text-center gap-[10px] md:gap-[26.67px]"
             >
-              <div class="what-card-item">
-                <p>熱愛<span>運動</span>/<br />注重<span>儀表</span></p>
+              <div class="what-card-item" ref="card1">
+                <div class="what-card-inner" :class="{ flipped: flipped[0] }">
+                  <div class="front">
+                    <img
+                      class="w-[53px] md:w-[105px]"
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-star.svg"
+                      alt="大星星"
+                    />
+                  </div>
+                  <div class="back gap-[46.19px] md:gap-[90.64px]">
+                    <img
+                      class="w-[25px] md:w-[43.37px]"
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-star.svg"
+                      alt="小星星"
+                    />
+                    <p>熱愛<span>運動</span>/<br />注重<span>儀表</span></p>
+                  </div>
+                </div>
               </div>
-              <div class="what-card-item">
-                <p>因佩戴隱形眼鏡<br />導致<span>乾眼症</span></p>
+              <div class="what-card-item" ref="card2">
+                <div class="what-card-inner" :class="{ flipped: flipped[1] }">
+                  <div class="front">
+                    <img
+                      class="w-[53px] md:w-[105px]"
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-star.svg"
+                      alt="大星星"
+                    />
+                  </div>
+                  <div class="back gap-[46.19px] md:gap-[90.64px]">
+                    <img
+                      class="w-[25px] md:w-[43.37px]"
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-star.svg"
+                      alt="小星星"
+                    />
+                    <p>因佩戴隱形眼鏡<br />導致<span>乾眼症</span></p>
+                  </div>
+                </div>
               </div>
-              <div class="what-card-item">
-                <p>
-                  希望<span>減低</span>對眼鏡或<br />隱形眼鏡的<span>依賴</span>
-                </p>
+              <div class="what-card-item" ref="card3">
+                <div class="what-card-inner" :class="{ flipped: flipped[2] }">
+                  <div class="front">
+                    <img
+                      class="w-[53px] md:w-[105px]"
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-star.svg"
+                      alt="大星星"
+                    />
+                  </div>
+                  <div class="back gap-[46.19px] md:gap-[90.64px]">
+                    <img
+                      class="w-[25px] md:w-[43.37px]"
+                      src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-star.svg"
+                      alt="小星星"
+                    />
+                    <p>
+                      希望<span>減低</span>對眼鏡或<br />
+                      隱形眼鏡的<span>依賴</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -410,6 +483,7 @@
       </aside>
     </div>
     <FooterV2 />
+    <div class="h-[1000px]"></div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -480,6 +554,31 @@ $primary-color: #3bd7f1;
       }
     }
   }
+  &-content {
+    &-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:nth-child(2) {
+        margin-top: -20%;
+        .detail-content-item {
+          margin: 0 -8%;
+        }
+      }
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 144.589px;
+      aspect-ratio: 1/1;
+      background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-ball.webp")
+        no-repeat center / cover;
+      img {
+        width: 60px;
+      }
+    }
+  }
 }
 @keyframes buttonShine {
   0%,
@@ -535,6 +634,17 @@ $primary-color: #3bd7f1;
     }
   }
 }
+%card-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .what {
   &-card {
     &-item {
@@ -544,6 +654,16 @@ $primary-color: #3bd7f1;
       height: 158px;
       border-radius: 15px;
       overflow: hidden;
+      perspective: 2000px;
+      position: relative;
+      .front {
+        @extend %card-item;
+      }
+      .back {
+        @extend %card-item;
+        flex-direction: column;
+        transform: rotateY(180deg);
+      }
       p {
         font-size: 14px;
         line-height: 17.757px;
@@ -552,6 +672,29 @@ $primary-color: #3bd7f1;
       }
       span {
         font-weight: 900;
+      }
+    }
+    &-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform-origin: center;
+    }
+  }
+  &-join {
+    span {
+      padding-bottom: 2px;
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #3bd7f1;
       }
     }
   }
@@ -634,6 +777,14 @@ $primary-color: #3bd7f1;
       line-height: 35px;
       letter-spacing: 1px;
     }
+    &-content {
+      &-item {
+        width: 285px;
+        img {
+          width: 120px;
+        }
+      }
+    }
   }
   .what {
     &-card {
@@ -662,6 +813,7 @@ export default {
   },
   data() {
     return {
+      flipped: [false, false, false], // 控制每张卡片的翻转状态
       navList: [
         { id: "intro", label: "講座活動簡介" },
         { id: "detail", label: "講座活動詳情" },
@@ -669,6 +821,55 @@ export default {
         { id: "what", label: "ICL植入式隱形眼鏡是什麼?" },
       ],
     };
+  },
+  mounted() {
+    console.log('GSAP:', this.$gsap);
+    console.log('ScrollTrigger:', this.$ScrollTrigger);
+    if (this.$gsap && this.$ScrollTrigger) {
+      this.$gsap.registerPlugin(this.$ScrollTrigger);
+      this.setupAnimations();
+    } else {
+      console.error('GSAP or ScrollTrigger not available');
+    }
+  },
+  methods: {
+    setupAnimations() {
+      const cards = [this.$refs.card1, this.$refs.card2, this.$refs.card3];
+      cards.forEach((card, index) => {
+        const front = card.querySelector('.front');
+        const back = card.querySelector('.back');
+        this.$gsap.set(front, { rotationY: 0, opacity: 1 });
+        this.$gsap.set(back, { rotationY: 180, opacity: 0 });
+        this.$ScrollTrigger.create({
+          trigger: card,
+          start: 'top 90%',
+          end: 'bottom 10%',
+          onEnter: () => {
+            this.$gsap.to(front, {
+              rotationY: -180,
+              opacity: 0,
+              duration: 0.6,
+              ease: 'power2.out',
+              delay: index * 0.2,
+              overwrite: 'auto',
+            });
+            this.$gsap.to(back, {
+              rotationY: 0,
+              opacity: 1,
+              duration: 0.6,
+              ease: 'power2.out',
+              delay: index * 0.2,
+              overwrite: 'auto',
+              onComplete: () => {
+                this.$set(this.flipped, index, true);
+                console.log(`Card ${index + 1} flipped`);
+              },
+            });
+          },
+          once: true,
+        });
+      });
+    },
   },
 };
 </script>
