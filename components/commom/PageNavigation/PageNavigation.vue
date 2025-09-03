@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-02 16:04:36
- * @LastEditTime: 2025-09-02 17:00:06
+ * @LastEditTime: 2025-09-03 08:55:05
  * @FilePath: /components/commom/PageNavigation/PageNavigation.vue
  * @Description: 页面大纲，页面内滚动导航
 -->
@@ -15,6 +15,7 @@
         :class="{ active: activeSection === item.id }"
         :style="{
           color: activeSection === item.id ? activeColor : inactiveColor,
+          '--separator-color': separatorColor,
         }"
         @click="scrollToSection(item.id)"
       >
@@ -113,6 +114,7 @@ export default {
         width: 54px;
         bottom: 24px;
         left: 0;
+        background-color: var(--separator-color);
       }
     }
   }

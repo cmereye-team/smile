@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-02 17:03:16
+ * @LastEditTime: 2025-09-03 10:38:33
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -87,6 +87,40 @@
                 無論你是初次接觸ICL植入式隱形眼鏡，或已在考慮進行矯視，這場講座活動都能為你提供最全面的講解。
               </p>
             </div>
+            <div class="detail-title relative">
+              <!-- <div class="absolute inset-0 bg-gradient-to-r from-white/0 to-white h-11 md:h-[86px]">
+                <img class="z-1" src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-title.svg" alt="講座活動詳情">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#00abcc]/0 to-[#0099b6] transform rotate-[-172.903deg] h-11 md:h-[86px]"></div> -->
+            </div>
+            <div
+              class="detail-desc px-[53.28px] md:px-[105px] flex flex-col gap-6 md:gap-[50px]"
+            >
+              <div class="detail-desc-row h-[73.64px] md:h-[145.5px]">
+                <img
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-date.svg"
+                  alt="日期：2025-10-14/2025-10-21/2025-10-28，星期二"
+                />
+              </div>
+              <div
+                class="detail-desc-row h-[38.18px] md:h-[72.45px] flex justify-between"
+              >
+                <img
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-time.svg"
+                  alt="時間：19:15"
+                />
+                <img
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-address.svg"
+                  alt="地點：旺角希瑪微笑矯視中心"
+                />
+              </div>
+              <div class="detail-desc-row h-[19.348px] md:h-[38.14px]">
+                <img
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-activity.svg"
+                  alt="活動內容"
+                />
+              </div>
+            </div>
           </div>
           <div class="text-center">
             <p>
@@ -107,15 +141,42 @@
           <div
             class="highlight-gift bg-[#000034] relative z-1 -mb-5 rounded-b-[10.1px] md:rounded-b-[20px] text-center py-7 md:pt-11 md:pb-[58px]"
           >
-            <p
-              class="text-xl md:text-3xl leading-[23.845px] md:leading-[47px] tracking-[1px] md:traceing-[1.5px]"
-            >
-              <span
-                class="block text-sm md:text-xl tracking-[0.7px] traceing-[1px]"
-                >參加者即場預約ICL矯視前檢查</span
-              >可獲專場專享禮品
-            </p>
-            <p><span>術前檢查費用</span>(價值:$500)可於手術費用中扣除</p>
+            <div class="highlight-gift-bg">
+              <p
+                class="text-xl md:text-3xl leading-[23.845px] md:leading-[47px] tracking-[1px] md:traceing-[1.5px]"
+              >
+                <span
+                  class="block text-sm md:text-xl tracking-[0.7px] traceing-[1px]"
+                  >參加者即場預約ICL矯視前檢查</span
+                >可獲專場專享禮品
+              </p>
+              <div class="relative flex justify-center">
+                <picture class="w-[277.244px] md:w-[387.817px]">
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
+                    "
+                  />
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
+                    "
+                  />
+                  <img
+                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
+                    alt="送不鏽鋼保溫杯+飲管套"
+                  />
+                </picture>
+              </div>
+              <p
+                class="mt-[18px] md:mt-[14.5px] text-sm md:text-xl leading-[23.845px] md:leading-[47px] tracking-[0.7px] md:tracking-[1px]"
+              >
+                <span class="font-black">術前檢查費用</span
+                >(價值:$500)可於手術費用中扣除
+              </p>
+            </div>
           </div>
           <div
             class="highlight-book text-center font-black pt-11 md:pt-21 pb-[50.65px] md:pb-[110px] -my-5"
@@ -127,11 +188,12 @@
               <p class="text-[#000]">活動只招待已預約人士</p>
               <p class="text-[#81accd]">請即登記預約!</p>
             </div>
-            <button
-              class="highlight-book-button text-xl md:text-4xl leading-[31.962px] md:leading-[63px] tracking-[1px] md:tracking-[1.8px] w-[170px] h-[40px] md:w-[335px] md:h-[77px]"
+            <a
+              class="highlight-book-button block mx-auto text-xl md:text-4xl leading-[31.962px] md:leading-[63px] tracking-[1px] md:tracking-[1.8px] w-[170px] h-[40px] md:w-[335px] md:h-[77px]"
+              href=" https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICLtalk-land_01)STAAR%20X%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
+              target="_blank"
+              >立即預約</a
             >
-              立即預約
-            </button>
           </div>
         </section>
         <section id="what" class="what">
@@ -159,7 +221,7 @@
             </picture>
           </div>
           <div
-            class="what-desc -mt-5 bg-[#000034] text-center rounded-t-[10.1px] md:rounded-t-[20px] relative z-2 py-[34px] md:py-[66px]"
+            class="what-desc -mt-5 bg-[#000034] text-center rounded-t-[10.1px] md:rounded-t-[20px] relative z-2 py-[34px] md:pt-[66px] md:pb-[140px]"
           >
             <h3
               class="font-black text-xl md:text-3xl leading-[15.22px] md:leading-[30px] mb-4 md:mb-[34px]"
@@ -284,14 +346,65 @@
             </div>
           </div>
         </section>
+        <el-backtop>
+          <div
+            class="backtop text-white w-[32.972px] h-[66.812px] md:w-[32.5px] md:h-[65.855px] rounded-[43.39px] md:rounded-[42.763px] bg-gradient-to-b from-[#00d6ff] to-[#008098] flex flex-col justify-center items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+            >
+              <path
+                d="M9.70312 6.76538V18.3683"
+                stroke="white"
+                stroke-width="1.48026"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4.60093 10.9194L9.70281 5.93091L14.8047 10.9194"
+                stroke="white"
+                stroke-width="1.48026"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span
+              class="text-[9.546px] md:text-[9.408px] font-bold font-[ITC Avant Garde Gothic Pro] text-center"
+              >TOP</span
+            >
+          </div>
+        </el-backtop>
       </main>
-      <aside class="page-left flex-1 hidden xl:block order-2 xl:order-1">
-        <div class="fixed top0">
-          左侧栏
+      <aside
+        class="page-left flex-1 hidden xl:block order-2 xl:order-1 relative"
+      >
+        <div
+          class="page-left-container sticky top-1/2 -translate-y-1/2 pr-[14%]"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
+              "
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
+              "
+            />
+            <img
+              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
+              alt="ICL九月講座"
+            />
+          </picture>
         </div>
       </aside>
       <aside class="page-right flex-1 hidden xl:block order-3">
-        <div class="pl-9 fixed top-0">
+        <div class="pl-9 sticky top-1/2 -translate-y-1/2">
           <PageNavigation :navList="navList"></PageNavigation>
         </div>
       </aside>
@@ -308,12 +421,27 @@ $primary-color: #3bd7f1;
 :deep(.icon-lecture) {
   background-image: linear-gradient(180deg, #000034 62.5%, #01abcc 100%);
 }
+:deep(.new-Footer-v2) {
+  margin-top: 0;
+}
+:deep(.el-backtop) {
+  width: auto;
+  height: auto;
+}
 .page {
   color: #fff;
   font-family: "Noto Sans TC";
+  &-left {
+    &-container {
+      background: transparent
+        url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-icl.svg")
+        no-repeat left bottom;
+      background-size: 30% auto;
+    }
+  }
 }
 .detail {
-  background: linear-gradient(180deg, #00ABCC 71.63%, #008098 100%);
+  background: linear-gradient(180deg, #00abcc 71.63%, #008098 100%);
   &-question {
     img {
       &:nth-child(1) {
@@ -345,19 +473,40 @@ $primary-color: #3bd7f1;
     font-weight: 400;
     letter-spacing: 0.84px;
   }
+  &-desc {
+    &-row {
+      img {
+        height: 100%;
+      }
+    }
+  }
 }
 @keyframes buttonShine {
-  0% {
-    left: -50%;
-  }
+  0%,
+  70%,
   100% {
-    left: 100%;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.6;
   }
 }
 .highlight {
+  &-gift {
+    &-bg {
+      background: #000034
+        url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-icl.svg")
+        no-repeat left bottom;
+      background-size: 25% auto;
+    }
+  }
   &-book {
-    background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-reserve.webp")
-      no-repeat;
+    background: #fff
+      url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-reserve.webp")
+      no-repeat center / cover;
     &-button {
       background-image: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjMzNSIgaGVpZ2h0PSI3NyIgdmlld0JveD0iMCAwIDMzNSA3NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMEgzMzVWMzkuMzI2OEMzMzUgNjAuMTIgMzE4LjIzOCA3NyAyOTcuNTkgNzdIMFYwWiIgZmlsbD0iIzAwMDAzNCIvPgo8cGF0aCBkPSJNMzM1IDBIMTg2VjdIMzM1VjBaIiBmaWxsPSIjMDBBQkNDIi8+Cjwvc3ZnPgo=");
       background-position: top;
@@ -371,15 +520,16 @@ $primary-color: #3bd7f1;
         width: 50%;
         position: absolute;
         top: 0;
-        left: -50%;
-        background: linear-gradient(
-          120deg,
-          rgba(#fff, 0) 0%,
-          rgba(#fff, 0.3) 50%,
-          rgba(#fff, 0) 100%
+        left: 10%;
+        background: radial-gradient(
+          circle at center,
+          rgba(255, 255, 255, 0.5) 0%,
+          rgba(255, 255, 255, 0.2) 100%,
+          rgba(255, 255, 255, 0) 100%
         );
         transform: skewX(-20deg);
-        animation: buttonShine 3s linear infinite;
+        opacity: 0;
+        animation: buttonShine 3s ease-in-out infinite;
         clip-path: polygon(0 0, 100% 0, 100% 95%, 97% 100%, 0 100%);
       }
     }
@@ -439,17 +589,25 @@ $primary-color: #3bd7f1;
     border-radius: 0;
   }
   .detail {
-    img {
-      &:nth-child(1) {
-        width: 105px;
-      }
-      &:nth-child(2) {
-        width: 53px;
+    &-question {
+      img {
+        &:nth-child(1) {
+          width: 105px;
+        }
+        &:nth-child(2) {
+          width: 53px;
+        }
       }
     }
   }
 }
 @media screen and (min-width: 768px) {
+  .page {
+    &-bg {
+      background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-banner.avif")
+        no-repeat center / contain fixed;
+    }
+  }
   .detail {
     &-question {
       img {
