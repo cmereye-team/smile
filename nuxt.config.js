@@ -117,7 +117,7 @@ export default {
     { src: "~/plugins/vue-swiper.js", ssr: false },
     { src: "~plugins/element-ui/element-ui.js", ssr: false },
     { src: "~plugins/wow.js", ssr: false },
-    { src: '~/plugins/gsap.js', mode: 'client' },
+    { src: '~/plugins/gsap.js', ssr: false },
     { src: "./router/beforeEach.js", ssr: false },
   ],
 

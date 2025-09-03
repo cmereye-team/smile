@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-03 15:25:05
+ * @LastEditTime: 2025-09-03 16:49:45
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -71,7 +71,7 @@
               </picture>
             </div>
             <div
-              class="detail-text mt-12 ml-[64px] mr-[106.13px] md:mt-[58px] md:ml-[148px] md:mr-[259px]"
+              class="detail-activity mt-12 ml-[64px] mr-[106.13px] md:mt-[58px] md:ml-[148px] md:mr-[259px]"
             >
               <h3
                 class="text-sm md:text-xl font-bold leading-[20px] md:leading-[35px] tracking-[0.84px] md:tracking-[1px] text-justify"
@@ -88,13 +88,12 @@
               </p>
             </div>
             <div class="detail-title relative">
-              <!-- <div class="absolute inset-0 bg-gradient-to-r from-white/0 to-white h-11 md:h-[86px]">
-                <img class="z-1" src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-title.svg" alt="講座活動詳情">
+              <div class="detail-title-text w-full h-[166.86px] md:h-[347px]">
+                <img src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-tit.svg" alt="講座活動詳情">
               </div>
-              <div class="absolute inset-0 bg-gradient-to-r from-[#00abcc]/0 to-[#0099b6] transform rotate-[-172.903deg] h-11 md:h-[86px]"></div> -->
             </div>
             <div
-              class="detail-desc px-[53.28px] md:px-[105px] flex flex-col gap-6 md:gap-[50px]"
+              class="detail-desc px-[53.28px] md:px-[105px] pt-[80px] md:pt-[168px] flex flex-col gap-6 md:gap-[50px] relative z-1"
             >
               <div class="detail-desc-row h-[73.64px] md:h-[145.5px]">
                 <img
@@ -122,7 +121,7 @@
               </div>
               <div class="detail-content flex flex-col items-center">
                 <div class="detail-content-row">
-                  <div class="detail-content-item">
+                  <div class="detail-content-item -pb-[10%]">
                     <img
                       src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-c1.svg"
                       alt="ICL技術講解"
@@ -516,6 +515,11 @@ $primary-color: #3bd7f1;
 }
 .detail {
   background: linear-gradient(180deg, #00abcc 71.63%, #008098 100%);
+  &-main {
+    background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-lens.svg") no-repeat;
+    background-position: 146.25px center;
+    background-size: 347px;
+  }
   &-question {
     img {
       &:nth-child(1) {
@@ -541,7 +545,16 @@ $primary-color: #3bd7f1;
       background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjMiIGhlaWdodD0iNTQiIHZpZXdCb3g9IjAgMCA2MyA1NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkuNzA3MTYgMzMuNTE1NkwwIDQwLjYzNzlMMTEuNDA4NyA0MC4xOTY3TDMxLjI1IDU0TDUyLjc5NSA0Ni4xOTg2TDYzIDM3LjMxMTRMNTUuNjc0NiAxMS43MzM1TDM4LjA1NDEgMEwxMi4xNDY4IDExLjc0TDkuNzA3MTYgMzMuNTE1NloiIGZpbGw9IiNBRENGRDYiLz4KPHBhdGggZD0iTTMyLjYwNjUgMTguMjY1NUMzNC45MDA2IDE5LjkzMzUgMzYuMTczIDIzLjA5IDM2LjIwMDggMjYuMTg2N0MzNi4yMjg3IDI5LjI4MzMgMzUuMTI5OCAzMi4yOTQ0IDMzLjUyMzMgMzQuNzk0NEMzMi4xNTg4IDM2LjkxMzcgMjkuOTU0NyAzOC44NjgzIDI3LjczMTIgMzguMTU0QzI2LjEzNTQgMzcuNjQwOCAyNS4wOTQ0IDM1LjkwODUgMjQuMzg1NCAzNC4yMDJDMjMuMzQ4NyAzMS43MDYzIDIyLjcyNTMgMjguNzkxNCAyMy41NDM2IDI2LjE5MzFDMjQuNDc5NiAyMy4yMTYyIDI3LjA3NzkgMjEuMzM2NCAyOS42NzYyIDIwLjIyMDFDMzMuNzEzOSAxOC40ODM2IDM4LjE3NzkgMTguMDQ1MiA0Mi40MTkxIDE4Ljk2NjlDNDMuNDAyMyAxOS4xODA4IDQ0LjQ2MDUgMTkuNTMzNiA0NS4wMTk2IDIwLjQ3NjdDNDUuNzU2NCAyMS43MjE0IDQ1LjMwMDIgMjMuNDIxNSA0NC42MzYyIDI0LjcxOTZDNDIuNTM0OCAyOC44Mjc4IDM4LjU3ODUgMzEuNDk2NyAzNC40NDAxIDMyLjE1MzJDMzAuMzAxNyAzMi44MDk4IDI2LjAzMjYgMzEuNTgwMSAyMi4zOTc2IDI5LjIzNjNDMjAuMTgwNiAyNy44MDc3IDE3Ljk0ODYgMjUuMzkxMSAxOC4zMTA2IDIyLjUyMzNDMTguNjY4MyAxOS43MDA0IDIxLjI5ODcgMTguMTE1OCAyMy42MzU3IDE3LjA4NUMyNS45MTI3IDE2LjA3OTkgMjguMjkwMyAxNS4xNTYgMzAuNzMwMSAxNS4yNTQ0QzMzLjE3MiAxNS4zNTA2IDM1LjcxNDYgMTYuNjc0NCAzNi44MDcgMTkuMTU5NEMzNy40Nzk2IDIwLjY4NjMgMzcuNTQxNyAyMi40NjU2IDM3LjQ1ODIgMjQuMTdDMzcuMzY0IDI2LjA4NCAzNy4wODU1IDI4LjA0NTEgMzYuMjA1MSAyOS42Nzg5QzM1LjMyNDcgMzEuMzEyOCAzMy43Mzc1IDMyLjU2MzggMzIuMDU2IDMyLjQ0NjJDMjkuNzQ5IDMyLjI4MzcgMjguMDQ0IDI5LjQ3NzkgMjguMjM4OSAyNi44NTgyQzI4LjQzMzggMjQuMjM4NCAzMC4xMzQ2IDIxLjk5OTQgMzIuMTc2IDIwLjc2NzZDMzQuMjE3MyAxOS41MzU4IDM2LjU2NSAxOS4xNTUxIDM4Ljg2OTggMTguOTM0OEM0MC43NDE5IDE4Ljc1NTIgNDIuODQxMSAxOC43NTUyIDQ0LjIyMDYgMjAuMjA1MUM0Ni40ODA0IDIyLjU4MzIgNDUuMjMzOCAyNi44NDk2IDQzLjY4MDggMjkuODczNUM0Mi4yMjY0IDMyLjcwMjkgNDAuMzQzNSAzNS42NjY5IDM3LjUyNDYgMzYuMzQ3QzM1LjMzMTIgMzYuODc3MyAzMy4wMjIxIDM1LjgzOCAzMS4zMTcgMzQuMTc2M0MyOS42MTQxIDMyLjUxNjggMjguNDE2NyAzMC4yOTcgMjcuMzAwNyAyOC4wODM2QzI1LjkyNzcgMjUuMzU0OCAyNC42ODEgMjEuNzQ3IDI2LjQwNTMgMTkuMjg5OEMyNy41NjYzIDE3LjYzODkgMjkuNjE2MiAxNy4yNzMyIDMxLjQ3MTIgMTcuMTQyN0MzMy42MjE4IDE2Ljk5MDkgMzUuOTc1OSAxNy4wNjU3IDM3LjY0MjQgMTguNjE2MkMzOS43NzggMjAuNjAwOCAzOS45ODE1IDI0LjIyNTYgMzkuNTgxIDI3LjMzMDhDMzkuMjcwNCAyOS43NDk1IDM4LjcwMjcgMzIuMTI1NCAzNy44OTMgMzQuMzkwMkMzNy40MjE4IDM1LjcwOTcgMzYuNzg1NiAzNy4wODY5IDM1LjY1MDMgMzcuNjg3OEMzNC40MTY1IDM4LjMzNzkgMzIuOTAyMSAzNy44NTA0IDMxLjg1MDQgMzYuODcwOUMzMC43OTg2IDM1Ljg5MTQgMzAuMTE3NSAzNC40OTcxIDI5LjQ5NDEgMzMuMTI0MUMyNy44ODk4IDI5LjU4OTEgMjYuNTA2IDI1LjIzMDcgMjguMjY0NiAyMS43OTE5QzI5LjQ5ODQgMTkuMzgxOCAzMS45NTEgMTguMTY3MSAzNC4zMDk0IDE3LjQxMjJDMzYuMTA4NyAxNi44MzY5IDM4LjM1NzkgMTYuNTg2NyAzOS41NDg4IDE4LjIyN0M0MC40NTA2IDE5LjQ2OTUgNDAuMzI4NSAyMS4yNzQ0IDQwLjA4NDMgMjIuODYxMkMzOC45NDI2IDMwLjIyIDM2LjEwNDQgMzcuMjMwMiAzMS45MjUzIDQzQzI4LjEwODIgMzguMzQyMiAyNS41NDY0IDMyLjM3MTQgMjQuNjY2IDI2LjA4MTlDMjQuNDE1NCAyNC4yODc2IDI0LjMxMDQgMjIuMzcxNSAyNC45ODA5IDIwLjcyMjdDMjYuMDE5OCAxOC4xNjcxIDI4LjU4NTkgMTYuOTU0NSAzMC45ODA3IDE2LjI1MDlDMzQuMjY0NCAxNS4yODY0IDM4LjI3NDMgMTUuMDgzMyA0MC41MDg1IDE3Ljk4NzRDNDEuNjAwOSAxOS40MDc0IDQyLjA0IDIxLjMyMTUgNDIuMjk3MSAyMy4xODQxQzQzLjA1NTMgMjguNjg0NSA0Mi40ODEzIDM0LjQxMzcgNDAuNjU2MyAzOS41ODA1QzQwLjM2MDcgNDAuNDE4OCAzOS45OTAxIDQxLjI5NzcgMzkuMjk4MiA0MS43NDA0QzM4LjEyNDQgNDIuNDk1MyAzNi42Njk5IDQxLjY2MzQgMzUuNTczMiA0MC43NzE2QzMxLjI2MzUgMzcuMjY4NyAyNy43Mzk4IDMyLjUyNzUgMjUuNDIyMSAyNy4xMTA1QzIzLjQ4MzYgMjIuNTUzMyAyMS43ODcxIDE1LjIyNDQgMjcuNjcxMyAxMi44MzU3QzI4Ljk1NDMgMTIuMzEzOSAzMC4zNTk1IDEyLjE4OTggMzEuNzQzMyAxMi4xMDIxQzM2LjI1MDEgMTEuODE3NyA0MS4wOTMyIDExLjk3ODEgNDQuNzk0NyAxNC41NTkzQzQ3LjU1MTUgMTYuNDc5OCA0OS4zMDc5IDE5LjQ5OTQgNTAuODM3MyAyMi40ODdDNTQuNjQ4IDI5LjkzMzQgNDguNDQ0NyAzMy4xMDA2IDQxLjU5NjYgMzEuMTg4OEMzNy41ODI0IDMwLjA2ODEgMzQuMDEzOCAyNy4yODggMzEuMjY3NyAyMy43NzQ0QzMwLjc0MjkgMjMuMTAyOSAzMC4yMTM5IDIyLjE3OSAzMC41NTg3IDIxLjM2ODVDMzAuNzYyMiAyMC44ODczIDMxLjIxODUgMjAuNjIgMzEuNjQ2OSAyMC40MDRDMzQuNDMzNyAxOS4wMDU0IDM3LjU2OTYgMTguMzE2OCA0MC41NTU2IDE4Ljk5NDdDNDMuNTQxNiAxOS42NzI2IDQ2LjM0MTIgMjEuODUxOCA0Ny41NzA3IDI1LjAyMzNDNDguODAwMyAyOC4xOTQ4IDQ4LjE4NTUgMzIuMzA3MiA0NS44MjA3IDM0LjQ5MDdDNDQuMDMyMSAzNi4xNDE3IDQxLjYwNzMgMzYuNTI2NiAzOS4zMDg5IDM2LjcxMDVDMzIuMTYxIDM3LjI4MzYgMjQuOTI5NSAzNi41MDczIDE4IDM0LjQyNDRDMTggMzIuMTE0NyAxOS4zNTU5IDMwLjExOTUgMjAuNzI2OCAyOC40MTcyQzIzLjM1MjkgMjUuMTQ5NSAyNi4yODMyIDIyLjE5NjEgMjkuNDUxMyAxOS42MjM0QzMwLjU3OCAxOC43MDgxIDMxLjc0NTQgMTcuODMzNSAzMy4wMzQ5IDE3LjI1ODJDMzQuMjA4NyAxNi43MzQyIDM1LjQ1OTcgMTYuNDcxMiAzNi42OTk5IDE2LjIwODJDNDEuNTA0NSAxNS4xOTY2IDQ2LjMwOTEgMTQuMTg1MSA1MS4xMTM3IDEzLjE3MzYiIHN0cm9rZT0iIzA1MEQxOSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+Cjwvc3ZnPgo=");
     }
   }
-  &-text {
+  &-title {
+    &-text {
+      // background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-detailtitle.svg");
+      position: absolute;
+      left: 0;
+      top: -28px;
+      // background-size: cover;
+    }
+  }
+  &-activity {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -752,6 +765,10 @@ $primary-color: #3bd7f1;
     }
   }
   .detail {
+    &-main {
+      background-position: 288px center;
+      background-size: auto;
+    }
     &-question {
       img {
         &:nth-child(1) {
@@ -772,7 +789,12 @@ $primary-color: #3bd7f1;
         height: 54px;
       }
     }
-    &-text {
+    &-title {
+      &-text {
+        top: -50px;
+      }
+    }
+    &-activity {
       font-size: 20px;
       line-height: 35px;
       letter-spacing: 1px;
