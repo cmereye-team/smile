@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-04 10:26:38
+ * @LastEditTime: 2025-09-04 10:57:28
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -76,7 +76,7 @@
                 </picture>
                 <img
                   ref="shakeImages1"
-                  class="absolute top-0 right-[13.77px] md:top-9 md:right-10 w-[50px] md:w-[64px]"
+                  class="shake absolute top-0 right-[13.77px] md:top-9 md:right-10 w-[50px] md:w-[64px]"
                   src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-think.svg"
                   alt=""
                 />
@@ -199,7 +199,10 @@
                 >可獲專場專享禮品
               </p>
               <div class="relative flex justify-center">
-                <picture class="w-[277.244px] md:w-[387.817px]" ref="shakeImages2">
+                <picture
+                  class="w-[277.244px] md:w-[387.817px]"
+                  ref="shakeImages2"
+                >
                   <source
                     media="(max-width: 768px)"
                     type="image/webp"
@@ -481,9 +484,7 @@
       <aside
         class="page-left flex-1 hidden xl:block order-2 xl:order-1 relative"
       >
-        <div
-          class="page-left-container sticky top-1/2 -translate-y-1/2"
-        >
+        <div class="page-left-container sticky top-1/2 -translate-y-1/2">
           <picture class="pl-[24%] pr-[14%]">
             <source
               media="(max-width: 768px)"
@@ -530,6 +531,42 @@ $primary-color: #3bd7f1;
 :deep(.el-backtop) {
   width: auto;
   height: auto;
+}
+@keyframes ShakeImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes buttonShine {
+  0%,
+  70%,
+  100% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.6;
+  }
+}
+.shake {
+  animation: ShakeImage 0.4s ease-in-out forwards;
 }
 .page {
   color: #fff;
@@ -609,19 +646,6 @@ $primary-color: #3bd7f1;
         width: 60px;
       }
     }
-  }
-}
-@keyframes buttonShine {
-  0%,
-  70%,
-  100% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0.6;
   }
 }
 .highlight {
@@ -866,25 +890,36 @@ export default {
     this.$nextTick(() => {
       if (this.$gsap && this.$ScrollTrigger) {
         this.$gsap.registerPlugin(this.$ScrollTrigger);
-        console.log('GSAP and ScrollTrigger loaded, refs:', this.$refs);
+        console.log("GSAP and ScrollTrigger loaded, refs:", this.$refs);
         this.setupAnimations();
       } else {
-        console.error('GSAP or ScrollTrigger not available');
+        console.error("GSAP or ScrollTrigger not available");
       }
     });
   },
   methods: {
     setupAnimations() {
-      console.log('Setting up animations, refs:', this.$refs);
-      const shakeImages = [this.$refs.shakeImages1, this.$refs.shakeImages2].filter(Boolean);
-      this.setupCardFlip([this.$refs.card1, this.$refs.card2, this.$refs.card3]);
+      console.log("Setting up animations, refs:", this.$refs);
+      const shakeImages = [
+        this.$refs.shakeImages1,
+        this.$refs.shakeImages2,
+      ].filter(Boolean);
+      this.setupCardFlip([
+        this.$refs.card1,
+        this.$refs.card2,
+        this.$refs.card3,
+      ]);
       this.setupShakeImages(shakeImages);
       this.setupRowImages([
         this.$refs.detailImage1,
         this.$refs.detailImage2,
         this.$refs.detailImage3,
       ]);
-      this.setupMultiRowImages([this.$refs.row1, this.$refs.row2, this.$refs.row3]);
+      this.setupMultiRowImages([
+        this.$refs.row1,
+        this.$refs.row2,
+        this.$refs.row3,
+      ]);
       this.setupZoomInBounce([this.$refs.zoomInElement]);
     },
     setupCardFlip(cards) {
@@ -931,10 +966,15 @@ export default {
         });
       });
     },
-    setupShakeImages(shakeImages) {
-      console.log('Shake images refs:', shakeImages);
-      const images = Array.isArray(shakeImages) ? shakeImages : [shakeImages].filter(Boolean);
-      console.log('Processed shake images:', images);
+    setupShakeImages(
+      shakeImages,
+      options = { useScrollTrigger: true, delay: 0 }
+    ) {
+      console.log("Shake images refs:", shakeImages, "Options:", options);
+      const images = Array.isArray(shakeImages)
+        ? shakeImages
+        : [shakeImages].filter(Boolean);
+      console.log("Processed shake images:", images);
       images.forEach((element, index) => {
         if (!element) {
           console.warn(`Shake image ${index + 1} ref not found`);
@@ -942,30 +982,59 @@ export default {
         }
         console.log(`Shake image index=${index + 1}, element=`, element);
         this.$gsap.set(element, { rotation: 0 });
-        this.$ScrollTrigger.create({
-          trigger: element,
-          start: 'top 85%',
-          onEnter: () => {
-            console.log(`Shake image ${index + 1} entered viewport`);
-            this.$gsap.to(element, {
-              keyframes: [
-                { rotation: 0, duration: 0 },
-                { rotation: -8, duration: 0.08 },
-                { rotation: 8, duration: 0.08 },
-                { rotation: -4, duration: 0.08 },
-                { rotation: 4, duration: 0.08 },
-                { rotation: 0, duration: 0.08 },
-              ],
-              ease: 'power1.inOut',
-              delay: index * 0.2,
-              overwrite: 'auto',
-            });
-          },
-          onUpdate: (self) => {
-            console.log(`Shake image ${index + 1} ScrollTrigger progress:`, self.progress);
-          },
-          once: true,
-        });
+        const shakeAnimation = () => {
+          // Skip GSAP animation if CSS animation has been triggered for shakeImages1
+          if (
+            element === this.$refs.shakeImages1 &&
+            element.classList.contains("shake-image-triggered")
+          ) {
+            console.log(
+              `Shake image ${
+                index + 1
+              } skipped GSAP animation due to CSS trigger`
+            );
+            return;
+          }
+          this.$gsap.to(element, {
+            keyframes: [
+              { rotation: 0, duration: 0 },
+              { rotation: -8, duration: 0.08 },
+              { rotation: 8, duration: 0.08 },
+              { rotation: -4, duration: 0.08 },
+              { rotation: 4, duration: 0.08 },
+              { rotation: 0, duration: 0.08 },
+            ],
+            ease: "power1.inOut",
+            delay: options.delay + index * 0.2,
+            overwrite: "auto",
+          });
+        };
+        if (options.useScrollTrigger) {
+          // const isInViewport = element.getBoundingClientRect().top < window.innerHeight * 0.85;
+          // if (isInViewport && element !== this.$refs.shakeImages1) {
+          //   console.log(`Shake image ${index + 1} is in viewport on load`);
+          //   shakeAnimation();
+          // } else if (!isInViewport) {
+          this.$ScrollTrigger.create({
+            trigger: element,
+            start: "top 85%",
+            onEnter: () => {
+              console.log(`Shake image ${index + 1} entered viewport`);
+              shakeAnimation();
+            },
+            onUpdate: (self) => {
+              console.log(
+                `Shake image ${index + 1} ScrollTrigger progress:`,
+                self.progress
+              );
+            },
+            once: true,
+          });
+          // }
+        } else {
+          console.log(`Shake image ${index + 1} triggered directly`);
+          shakeAnimation();
+        }
       });
     },
     setupRowImages(images) {
