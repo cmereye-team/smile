@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-04 10:57:28
+ * @LastEditTime: 2025-09-04 11:52:53
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -532,6 +532,7 @@ $primary-color: #3bd7f1;
   width: auto;
   height: auto;
 }
+// 图片抖动动画
 @keyframes ShakeImage {
   0% {
     transform: rotate(0deg);
@@ -552,17 +553,54 @@ $primary-color: #3bd7f1;
     transform: rotate(0deg);
   }
 }
-@keyframes buttonShine {
-  0%,
-  70%,
-  100% {
-    opacity: 0;
+// 按钮打光动画
+// @keyframes ButtonShine {
+//   0%,
+//   70%,
+//   100% {
+//     opacity: 0;
+//   }
+//   80% {
+//     opacity: 1;
+//   }
+//   90% {
+//     opacity: 0.6;
+//   }
+// }
+@keyframes ButtonShine {
+  0% {
+    left: -50%;
   }
-  80% {
+  100% {
+    left: 100%;
+  }
+}
+// 按钮蓝条动画
+@keyframes ButtonFlow {
+  0% {
+    width: 45%;
+    right: 0;
+    opacity: 0.7;
+  }
+  25% {
+    width: 80%;
     opacity: 1;
   }
-  90% {
-    opacity: 0.6;
+  50% {
+    width: 70%;
+    opacity: 0.8;
+  }
+  75% {
+    width: 90%;
+    opacity: 0.9;
+  }
+  80% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 50%;
+    opacity: 0.7;
   }
 }
 .shake {
@@ -662,28 +700,37 @@ $primary-color: #3bd7f1;
       url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-reserve.webp")
       no-repeat center / cover;
     &-button {
-      background-image: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjMzNSIgaGVpZ2h0PSI3NyIgdmlld0JveD0iMCAwIDMzNSA3NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMEgzMzVWMzkuMzI2OEMzMzUgNjAuMTIgMzE4LjIzOCA3NyAyOTcuNTkgNzdIMFYwWiIgZmlsbD0iIzAwMDAzNCIvPgo8cGF0aCBkPSJNMzM1IDBIMTg2VjdIMzM1VjBaIiBmaWxsPSIjMDBBQkNDIi8+Cjwvc3ZnPgo=");
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMzUiIGhlaWdodD0iNzciIHZpZXdCb3g9IjAgMCAzMzUgNzciIGZpbGw9Im5vbmUiPgogIDxwYXRoIGQ9Ik0wIDBIMzM1VjM5LjMyNjhDMzM1IDYwLjEyIDMxOC4yMzggNzcgMjk3LjU5IDc3SDBWMFoiIGZpbGw9IiMwMDAwMzQiLz4KPC9zdmc+");
       background-position: top;
       background-size: cover;
       overflow: hidden;
       position: relative;
       border-bottom-right-radius: 17px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 3.5px;
+        width: 50%;
+        background-color: #00abcc;
+        animation: ButtonFlow 2.5s ease infinite;
+      }
       &::after {
         content: "";
         height: 100%;
         width: 50%;
         position: absolute;
         top: 0;
-        left: 10%;
-        background: radial-gradient(
-          circle at center,
-          rgba(255, 255, 255, 0.5) 0%,
-          rgba(255, 255, 255, 0.2) 100%,
-          rgba(255, 255, 255, 0) 100%
+        left: -50%;
+        background: linear-gradient(
+          120deg,
+          rgba(#fff, 0) 0%,
+          rgba(#fff, 0.3) 50%,
+          rgba(#fff, 0) 100%
         );
         transform: skewX(-20deg);
-        opacity: 0;
-        animation: buttonShine 3s ease-in-out infinite;
+        animation: ButtonShine 3s ease-in-out infinite;
         clip-path: polygon(0 0, 100% 0, 100% 95%, 97% 100%, 0 100%);
       }
     }
@@ -846,6 +893,15 @@ $primary-color: #3bd7f1;
         width: 285px;
         img {
           width: 120px;
+        }
+      }
+    }
+  }
+  .highlight {
+    &-book {
+      &-button {
+        &::before {
+          height: 7px;
         }
       }
     }
