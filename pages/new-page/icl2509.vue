@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-04 09:46:12
+ * @LastEditTime: 2025-09-04 10:26:38
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -142,7 +142,7 @@
                 />
               </div>
               <div
-                class="detail-content flex flex-col items-center"
+                class="detail-content flex flex-col items-center -mt-[30px] md:-mt-[50px]"
                 ref="zoomInElement"
               >
                 <div class="detail-content-row">
@@ -482,9 +482,9 @@
         class="page-left flex-1 hidden xl:block order-2 xl:order-1 relative"
       >
         <div
-          class="page-left-container sticky top-1/2 -translate-y-1/2 pr-[14%]"
+          class="page-left-container sticky top-1/2 -translate-y-1/2"
         >
-          <picture>
+          <picture class="pl-[24%] pr-[14%]">
             <source
               media="(max-width: 768px)"
               type="image/webp"
@@ -513,7 +513,6 @@
       </aside>
     </div>
     <FooterV2 />
-    <div class="h-[1000px]"></div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -540,7 +539,7 @@ $primary-color: #3bd7f1;
       background: transparent
         url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-icl.svg")
         no-repeat left bottom;
-      background-size: 30% auto;
+      background-size: 28% auto;
     }
   }
 }
