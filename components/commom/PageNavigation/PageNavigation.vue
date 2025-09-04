@@ -1,10 +1,4 @@
-<!--
- * @Author: 谭洁莹
- * @Date: 2025-09-02 16:04:36
- * @LastEditTime: 2025-09-03 08:55:05
- * @FilePath: /components/commom/PageNavigation/PageNavigation.vue
- * @Description: 页面大纲，页面内滚动导航
--->
+<!-- PageNavigation.vue -->
 <template>
   <div class="navigation">
     <nav class="navigation-container">
@@ -54,25 +48,39 @@ export default {
   data() {
     return {
       activeSection: "",
+      headerHeight: 0,
     };
   },
   mounted() {
+    this.updateHeaderHeight();
     window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", this.updateHeaderHeight);
     this.handleScroll();
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("resize", this.updateHeaderHeight);
   },
   methods: {
+    updateHeaderHeight() {
+      // Determine header height based on viewport width
+      this.headerHeight = window.innerWidth >= 768 ? 180 : 87;
+    },
     scrollToSection(id) {
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        const offsetTop = element.offsetTop - this.headerHeight; // 10px buffer for visual comfort
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
         this.activeSection = id;
       }
     },
     handleScroll() {
-      const scrollPosition = window.scrollY + 100; // 偏移量调整
+      const scrollPosition = window.scrollY + this.headerHeight; // Adjust for header height + buffer
+      let foundSection = null;
+
       this.navList.forEach((item) => {
         const element = document.getElementById(item.id);
         if (element) {
@@ -81,10 +89,18 @@ export default {
             scrollPosition >= offsetTop &&
             scrollPosition < offsetTop + offsetHeight
           ) {
-            this.activeSection = item.id;
+            foundSection = item.id;
           }
         }
       });
+
+      // Update active section only if a matching section is found
+      if (foundSection) {
+        this.activeSection = foundSection;
+      } else if (scrollPosition < this.headerHeight) {
+        // If scrolled above the first section, clear active section
+        this.activeSection = "";
+      }
     },
   },
 };

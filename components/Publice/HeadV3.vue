@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-09-02 15:48:21
+ * @LastEditTime: 2025-09-04 17:42:07
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -29,7 +29,7 @@ $text-color: #6d6e71;
 .headV3 {
   z-index: 102;
   height: 87px;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
@@ -55,6 +55,9 @@ $text-color: #6d6e71;
   .headV3 {
     height: 180px;
     max-width: 768px;
+    margin: 0 auto;
+    left: 0;
+    transform: none;
   }
 }
 </style>

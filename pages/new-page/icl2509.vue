@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-04 15:51:43
+ * @LastEditTime: 2025-09-04 17:48:10
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -9,9 +9,7 @@
   <div class="page bg-[#050D1A]">
     <HeadV3 />
     <div class="page-bg w-full flex flex-col md:flex-row md:justify-center">
-      <main
-        class="page-main w-full md:max-w-3xl pt-[87px] md:pt-[180px] order-1 md:order-2"
-      >
+      <main class="page-main w-full md:max-w-3xl order-1 md:order-2">
         <section id="intro" class="intro pb-[10.1px] md:pb-0">
           <picture>
             <source
@@ -486,27 +484,41 @@
       <aside
         class="page-left flex-1 hidden xl:block order-2 xl:order-1 relative"
       >
-        <div class="page-left-container sticky top-1/2 -translate-y-1/2">
-          <picture class="pl-[24%] pr-[14%]">
-            <source
-              media="(max-width: 768px)"
-              type="image/webp"
-              srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
-              "
-            />
-            <source
-              media="(min-width: 769px)"
-              type="image/webp"
-              srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
-              "
-            />
-            <img
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
-              alt="ICL九月講座"
-            />
-          </picture>
+        <div
+          class="page-left-container fixed h-screen w-[calc(50vw-384px)] z-1"
+        >
+          <div class="mx-auto text-center flex flex-col items-center pt-[5%]">
+            <p class="text-[10px] leading-[23.5px] tracking-[0.5px]">
+              參加者即場預約ICL矯視前檢查
+            </p>
+            <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
+              可獲專場專享禮品
+            </p>
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                type="image/webp"
+                srcset="
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                type="image/webp"
+                srcset="
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
+                "
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
+                alt="ICL九月講座"
+              />
+            </picture>
+            <p class="text-[10px] leading-[23.5px] tracking-[0.5px]">
+              <span class="font-black">術前檢查費用</span
+              >(價值:$500)可於手術費用中扣除
+            </p>
+          </div>
         </div>
       </aside>
       <aside class="page-right flex-1 hidden xl:block order-3">
@@ -522,13 +534,18 @@
 $primary-color: #3bd7f1;
 // 样式覆盖
 :deep(.icon-whatsapp) {
-  display: none;
+  display: none !important;
 }
 :deep(.icon-lecture) {
   background-image: linear-gradient(180deg, #000034 62.5%, #01abcc 100%);
 }
 :deep(.new-Footer-v2) {
-  margin-top: 0;
+  margin-top: 0 !important;
+  position: relative;
+  z-index: 2;
+}
+:deep(.new-Footer-v2 section) {
+  margin-top: 0 !important;
 }
 :deep(.el-backtop) {
   width: auto;
@@ -617,7 +634,7 @@ $primary-color: #3bd7f1;
     &-container {
       background: transparent
         url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-icl.svg")
-        no-repeat left bottom;
+        no-repeat left bottom 30%;
       background-size: 28% auto;
     }
   }
@@ -808,7 +825,7 @@ $primary-color: #3bd7f1;
   }
 }
 .share {
-  padding: 24px 0 10px;
+  padding: 24px 0 70px;
   background-color: #000034;
   &-title {
     display: flex;
@@ -837,7 +854,7 @@ $primary-color: #3bd7f1;
 }
 @media screen and (max-width: 767px) {
   :deep(.headV3) {
-    border-radius: 0;
+    border-radius: 0 !important;
   }
   .detail {
     &-question {
@@ -855,23 +872,21 @@ $primary-color: #3bd7f1;
     &-card {
       &-item {
         p {
-          font-size: #{'clamp(0.625rem, 0.357rem + 1.34vw, 1rem)'};
+          font-size: #{"clamp(0.625rem, 0.357rem + 1.34vw, 1rem)"};
         }
       }
     }
   }
 }
-@media screen and (min-width:991px) {
+@media screen and (min-width: 991px) {
   :deep(.el-backtop) {
     left: calc(50% - 400.25px);
   }
 }
 @media screen and (min-width: 768px) {
   .page {
-    &-bg {
-      background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-banner.avif")
-        no-repeat center / contain fixed;
-    }
+    background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-banner.avif")
+      no-repeat center / cover fixed;
   }
   .detail {
     &-main {
