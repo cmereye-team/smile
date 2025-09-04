@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-04 11:52:53
+ * @LastEditTime: 2025-09-04 15:51:43
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -170,7 +170,9 @@
               </div>
             </div>
           </div>
-          <div class="text-center">
+          <div
+            class="text-center text-sm md:text-xl leading-[17.757px] md:leading-[35px] tracking-[0.7px] md:tracking-[1px]"
+          >
             <p>
               <span class="block md:inline">講座將由希瑪醫療團隊主講，</span>
               <span class="block md:inline"
@@ -531,6 +533,8 @@ $primary-color: #3bd7f1;
 :deep(.el-backtop) {
   width: auto;
   height: auto;
+  left: 5px;
+  right: auto !important;
 }
 // 图片抖动动画
 @keyframes ShakeImage {
@@ -627,6 +631,7 @@ $primary-color: #3bd7f1;
     background-size: 347px;
   }
   &-question {
+    z-index: 1;
     img {
       &:nth-child(1) {
         position: absolute;
@@ -707,7 +712,7 @@ $primary-color: #3bd7f1;
       position: relative;
       border-bottom-right-radius: 17px;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -771,6 +776,7 @@ $primary-color: #3bd7f1;
         line-height: 17.757px;
         font-weight: 400;
         letter-spacing: 0.7px;
+        white-space: nowrap;
       }
       span {
         font-weight: 900;
@@ -844,6 +850,20 @@ $primary-color: #3bd7f1;
         }
       }
     }
+  }
+  .what {
+    &-card {
+      &-item {
+        p {
+          font-size: #{'clamp(0.625rem, 0.357rem + 1.34vw, 1rem)'};
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:991px) {
+  :deep(.el-backtop) {
+    left: calc(50% - 400.25px);
   }
 }
 @media screen and (min-width: 768px) {
