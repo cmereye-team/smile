@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-03 18:13:04
+ * @LastEditTime: 2025-09-04 09:46:12
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -16,12 +16,14 @@
           <picture>
             <source
               media="(max-width: 768px)"
+              type="image/webp"
               srcset="
                 https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m.webp
               "
             />
             <source
               media="(min-width: 769px)"
+              type="image/webp"
               srcset="
                 https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc.webp
               "
@@ -39,7 +41,7 @@
           <div class="detail-main relative">
             <div class="detail-question">
               <img
-              ref="detailImage1"
+                ref="detailImage1"
                 src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-t1.svg"
                 alt="你是否正受近視、遠視或散光困擾?"
               />
@@ -49,30 +51,35 @@
                 alt="甚至因此影響工作表現或生活質素?"
               />
             </div>
-            <div ref="detailImage2"
-              class="detail-cover flex justify-end px-14 md:px-[120px]"
-            >
+            <div class="detail-cover flex justify-end px-14 md:px-[120px]">
               <div class="detail-cover-container relative">
-                <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="
-                    https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-m.webp
-                  "
-                />
-                <source
-                  media="(min-width: 769px)"
-                  srcset="
-                    https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp
-                  "
-                />
+                <picture ref="detailImage2">
+                  <source
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                    srcset="
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-m.webp
+                    "
+                  />
+                  <source
+                    media="(min-width: 769px)"
+                    type="image/webp"
+                    srcset="
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp
+                    "
+                  />
+                  <img
+                    class="w-[202px] h-[140.05px] md:w-[367px] md:h-[263px]"
+                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp"
+                    alt="ICL九月講座"
+                  />
+                </picture>
                 <img
-                  class="w-[202px] h-[140.05px] md:w-[367px] md:h-[263px]"
-                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp"
-                  alt="ICL九月講座"
+                  ref="shakeImages1"
+                  class="absolute top-0 right-[13.77px] md:top-9 md:right-10 w-[50px] md:w-[64px]"
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-think.svg"
+                  alt=""
                 />
-              </picture>
-              <img ref="shakeImages" class="absolute top-0 right-[13.77px] md:top-9 md:right-10 w-[50px] md:w-[64px]" src="https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-think.svg" alt="思考">
               </div>
             </div>
             <div
@@ -94,20 +101,27 @@
             </div>
             <div class="detail-title relative">
               <div class="detail-title-text w-full h-[166.86px] md:h-[347px]">
-                <img src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-tit.svg" alt="講座活動詳情">
+                <img
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-tit.svg"
+                  alt="講座活動詳情"
+                />
               </div>
             </div>
             <div
               class="detail-desc px-[53.28px] md:px-[105px] pt-[80px] md:pt-[168px] flex flex-col gap-6 md:gap-[50px] relative z-1"
             >
-              <div class="detail-desc-row h-[73.64px] md:h-[145.5px]" ref="row1">
+              <div
+                class="detail-desc-row h-[73.64px] md:h-[145.5px]"
+                ref="row1"
+              >
                 <img
                   src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-date.svg"
                   alt="日期：2025-10-14/2025-10-21/2025-10-28，星期二"
                 />
               </div>
               <div
-                class="detail-desc-row h-[38.18px] md:h-[72.45px] flex justify-between" ref="row2"
+                class="detail-desc-row h-[38.18px] md:h-[72.45px] flex justify-between"
+                ref="row2"
               >
                 <img
                   src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-time.svg"
@@ -118,13 +132,19 @@
                   alt="地點：旺角希瑪微笑矯視中心"
                 />
               </div>
-              <div class="detail-desc-row h-[19.348px] md:h-[38.14px]" ref="row3">
+              <div
+                class="detail-desc-row h-[19.348px] md:h-[38.14px]"
+                ref="row3"
+              >
                 <img
                   src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-activity.svg"
                   alt="活動內容"
                 />
               </div>
-              <div class="detail-content flex flex-col items-center">
+              <div
+                class="detail-content flex flex-col items-center"
+                ref="zoomInElement"
+              >
                 <div class="detail-content-row">
                   <div class="detail-content-item -pb-[10%]">
                     <img
@@ -179,15 +199,17 @@
                 >可獲專場專享禮品
               </p>
               <div class="relative flex justify-center">
-                <picture class="w-[277.244px] md:w-[387.817px]" ref="shakeImages">
+                <picture class="w-[277.244px] md:w-[387.817px]" ref="shakeImages2">
                   <source
                     media="(max-width: 768px)"
+                    type="image/webp"
                     srcset="
                       https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
                     "
                   />
                   <source
                     media="(min-width: 769px)"
+                    type="image/webp"
                     srcset="
                       https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
                     "
@@ -231,12 +253,14 @@
             <picture>
               <source
                 media="(max-width: 768px)"
+                type="image/webp"
                 srcset="
                   https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-m.webp
                 "
               />
               <source
                 media="(min-width: 769px)"
+                type="image/webp"
                 srcset="
                   https://statichk.cmermedical.com/smile/icl2509/icl2509-lens-pc.webp
                 "
@@ -463,12 +487,14 @@
           <picture>
             <source
               media="(max-width: 768px)"
+              type="image/webp"
               srcset="
                 https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
               "
             />
             <source
               media="(min-width: 769px)"
+              type="image/webp"
               srcset="
                 https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
               "
@@ -521,7 +547,8 @@ $primary-color: #3bd7f1;
 .detail {
   background: linear-gradient(180deg, #00abcc 71.63%, #008098 100%);
   &-main {
-    background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-lens.svg") no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-lens.svg")
+      no-repeat;
     background-position: 146.25px center;
     background-size: 347px;
   }
@@ -837,19 +864,29 @@ export default {
     };
   },
   mounted() {
-    if (this.$gsap && this.$ScrollTrigger) {
-      this.$gsap.registerPlugin(this.$ScrollTrigger);
-      this.setupAnimations();
-    } else {
-      console.error('GSAP or ScrollTrigger not available');
-    }
+    this.$nextTick(() => {
+      if (this.$gsap && this.$ScrollTrigger) {
+        this.$gsap.registerPlugin(this.$ScrollTrigger);
+        console.log('GSAP and ScrollTrigger loaded, refs:', this.$refs);
+        this.setupAnimations();
+      } else {
+        console.error('GSAP or ScrollTrigger not available');
+      }
+    });
   },
   methods: {
     setupAnimations() {
+      console.log('Setting up animations, refs:', this.$refs);
+      const shakeImages = [this.$refs.shakeImages1, this.$refs.shakeImages2].filter(Boolean);
       this.setupCardFlip([this.$refs.card1, this.$refs.card2, this.$refs.card3]);
-      this.setupShakeImages(this.$refs.shakeImages);
-      this.setupRowImages([this.$refs.detailImage1, this.$refs.detailImage2, this.$refs.detailImage3]);
+      this.setupShakeImages(shakeImages);
+      this.setupRowImages([
+        this.$refs.detailImage1,
+        this.$refs.detailImage2,
+        this.$refs.detailImage3,
+      ]);
       this.setupMultiRowImages([this.$refs.row1, this.$refs.row2, this.$refs.row3]);
+      this.setupZoomInBounce([this.$refs.zoomInElement]);
     },
     setupCardFlip(cards) {
       cards.forEach((card, index) => {
@@ -857,8 +894,8 @@ export default {
           console.warn(`Card ${index + 1} ref not found`);
           return;
         }
-        const front = card.querySelector('.front');
-        const back = card.querySelector('.back');
+        const front = card.querySelector(".front");
+        const back = card.querySelector(".back");
         if (!front || !back) {
           console.warn(`Front or back not found for card ${index + 1}`);
           return;
@@ -867,24 +904,24 @@ export default {
         this.$gsap.set(back, { rotationY: 180, opacity: 0 });
         this.$ScrollTrigger.create({
           trigger: card,
-          start: 'top 90%',
+          start: "top 90%",
           onEnter: () => {
             console.log(`Card ${index + 1} entered viewport`);
             this.$gsap.to(front, {
               rotationY: -180,
               opacity: 0,
               duration: 0.6,
-              ease: 'power2.out',
+              ease: "power2.out",
               delay: index * 0.2,
-              overwrite: 'auto',
+              overwrite: "auto",
             });
             this.$gsap.to(back, {
               rotationY: 0,
               opacity: 1,
               duration: 0.6,
-              ease: 'power2.out',
+              ease: "power2.out",
               delay: index * 0.2,
-              overwrite: 'auto',
+              overwrite: "auto",
               onComplete: () => {
                 this.$set(this.flipped, index, true);
                 console.log(`Card ${index + 1} flipped`);
@@ -896,26 +933,37 @@ export default {
       });
     },
     setupShakeImages(shakeImages) {
-      Array.from(shakeImages || []).forEach((img, index) => {
-        if (!img) {
+      console.log('Shake images refs:', shakeImages);
+      const images = Array.isArray(shakeImages) ? shakeImages : [shakeImages].filter(Boolean);
+      console.log('Processed shake images:', images);
+      images.forEach((element, index) => {
+        if (!element) {
           console.warn(`Shake image ${index + 1} ref not found`);
           return;
         }
-        this.$gsap.set(img, { rotation: 0, scale: 1 });
+        console.log(`Shake image index=${index + 1}, element=`, element);
+        this.$gsap.set(element, { rotation: 0 });
         this.$ScrollTrigger.create({
-          trigger: img,
-          start: 'top 90%',
+          trigger: element,
+          start: 'top 85%',
           onEnter: () => {
             console.log(`Shake image ${index + 1} entered viewport`);
-            this.$gsap.to(img, {
-              rotation: 10,
-              scale: 1.1,
-              duration: 0.2,
-              yoyo: true,
-              repeat: 3,
+            this.$gsap.to(element, {
+              keyframes: [
+                { rotation: 0, duration: 0 },
+                { rotation: -8, duration: 0.08 },
+                { rotation: 8, duration: 0.08 },
+                { rotation: -4, duration: 0.08 },
+                { rotation: 4, duration: 0.08 },
+                { rotation: 0, duration: 0.08 },
+              ],
               ease: 'power1.inOut',
+              delay: index * 0.2,
               overwrite: 'auto',
             });
+          },
+          onUpdate: (self) => {
+            console.log(`Shake image ${index + 1} ScrollTrigger progress:`, self.progress);
           },
           once: true,
         });
@@ -930,15 +978,15 @@ export default {
         this.$gsap.set(img, { opacity: 0 });
         this.$ScrollTrigger.create({
           trigger: img,
-          start: 'top 90%',
+          start: "top 90%",
           onEnter: () => {
             console.log(`Detail image ${index + 1} entered viewport`);
             this.$gsap.to(img, {
               opacity: 1,
               duration: 0.5,
-              ease: 'power2.out',
+              ease: "power2.out",
               delay: index * 0.3,
-              overwrite: 'auto',
+              overwrite: "auto",
             });
           },
           once: true,
@@ -951,18 +999,46 @@ export default {
           console.warn(`Row ${index + 1} ref not found`);
           return;
         }
-        this.$gsap.set(row, { opacity: 0 });
+        const rowChildren = row.querySelectorAll("img");
+        this.$gsap.set(rowChildren, { y: 20, opacity: 0 });
         this.$ScrollTrigger.create({
           trigger: row,
-          start: 'top 90%',
+          start: "top 90%",
           onEnter: () => {
             console.log(`Row ${index + 1} entered viewport`);
-            this.$gsap.to(row, {
+            this.$gsap.to(rowChildren, {
+              y: 0,
               opacity: 1,
               duration: 0.5,
-              ease: 'power2.out',
+              ease: "power2.out",
+              stagger: 0.2,
               delay: index * 0.3,
-              overwrite: 'auto',
+              overwrite: "auto",
+            });
+          },
+          once: true,
+        });
+      });
+    },
+    setupZoomInBounce(zoomElements) {
+      zoomElements.forEach((el, index) => {
+        if (!el) {
+          console.warn(`ZoomIn element ${index + 1} ref not found`);
+          return;
+        }
+        this.$gsap.set(el, { scale: 0, opacity: 0 });
+        this.$ScrollTrigger.create({
+          trigger: el,
+          start: "top 90%",
+          onEnter: () => {
+            console.log(`ZoomIn element ${index + 1} entered viewport`);
+            this.$gsap.to(el, {
+              scale: 1,
+              opacity: 1,
+              duration: 0.6,
+              ease: "back.out(4)",
+              delay: index * 0.2,
+              overwrite: "auto",
             });
           },
           once: true,

@@ -265,8 +265,8 @@ export const $router = [
     component: resolve("pages/new-page/iclV2.vue"),
   },
   {
-    path: "/testicl",
-    name: "testicl",
+    path: "/ICLtalk2025",
+    name: "ICLtalk2025",
     title: "9月講座專題",
     component: resolve("pages/new-page/icl2509.vue"),
   },
