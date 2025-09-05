@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-04 17:48:10
+ * @LastEditTime: 2025-09-05 08:48:45
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -853,9 +853,6 @@ $primary-color: #3bd7f1;
   }
 }
 @media screen and (max-width: 767px) {
-  :deep(.headV3) {
-    border-radius: 0 !important;
-  }
   .detail {
     &-question {
       img {
@@ -1061,17 +1058,17 @@ export default {
       shakeImages,
       options = { useScrollTrigger: true, delay: 0 }
     ) {
-      console.log("Shake images refs:", shakeImages, "Options:", options);
+      // console.log("Shake images refs:", shakeImages, "Options:", options);
       const images = Array.isArray(shakeImages)
         ? shakeImages
         : [shakeImages].filter(Boolean);
-      console.log("Processed shake images:", images);
+      // console.log("Processed shake images:", images);
       images.forEach((element, index) => {
         if (!element) {
-          console.warn(`Shake image ${index + 1} ref not found`);
+          // console.warn(`Shake image ${index + 1} ref not found`);
           return;
         }
-        console.log(`Shake image index=${index + 1}, element=`, element);
+        // console.log(`Shake image index=${index + 1}, element=`, element);
         this.$gsap.set(element, { rotation: 0 });
         const shakeAnimation = () => {
           // Skip GSAP animation if CSS animation has been triggered for shakeImages1
@@ -1101,11 +1098,6 @@ export default {
           });
         };
         if (options.useScrollTrigger) {
-          // const isInViewport = element.getBoundingClientRect().top < window.innerHeight * 0.85;
-          // if (isInViewport && element !== this.$refs.shakeImages1) {
-          //   console.log(`Shake image ${index + 1} is in viewport on load`);
-          //   shakeAnimation();
-          // } else if (!isInViewport) {
           this.$ScrollTrigger.create({
             trigger: element,
             start: "top 85%",

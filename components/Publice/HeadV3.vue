@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-09-04 17:42:07
+ * @LastEditTime: 2025-09-05 09:16:13
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -31,14 +31,10 @@ $text-color: #6d6e71;
   height: 87px;
   position: sticky;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background: #f6fafd;
-  z-index: 102;
-  border-radius: 0 0 20px 20px;
   width: 100%;
   &-bg {
     width: 100%;
+    height: 100%;
     padding: #{"clamp(1.125rem, 0.67rem + 2.27vw, 2.375rem)"} #{"clamp(1rem, 0.045rem + 4.77vw, 3.625rem)"};
     background: #f6fafd;
     display: flex;
@@ -58,6 +54,9 @@ $text-color: #6d6e71;
     margin: 0 auto;
     left: 0;
     transform: none;
+    &-bg {
+      border-radius: 0 0 20px 20px;
+    }
   }
 }
 </style>

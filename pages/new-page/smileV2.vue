@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-02 09:18:09
+ * @LastEditTime: 2025-09-05 09:06:40
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -489,9 +489,7 @@ export default {
 </script>
 <template>
   <div class="page">
-    <div class="page-header">
-      <HeadV3 />
-    </div>
+    <HeadV3 />
     <div class="page-smile">
       <div class="smile">
         <div class="smile-bg">
@@ -515,7 +513,9 @@ export default {
       </div>
       <main class="main">
         <section class="newCenter">
-          <div class="newCenter-card">
+          <div
+            class="newCenter-card pt-20 md:pt-[142px] pl-8 md:pl-[57px] pb-5 md:pb-[30px]"
+          >
             <div class="newCenter-card-title text-primary">
               <span>SMILE</span>
               <h3>微笑激光矯視</h3>
@@ -1070,11 +1070,10 @@ $text-color: #6d6e71;
     background: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIHZpZXdCb3g9IjAgMCA3NjggNzM5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8bWFzayBpZD0ibWFzazBfMTAyMzJfMTciIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI3NjgiIGhlaWdodD0iNzM5Ij4KPHJlY3Qgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8xMDIzMl8xNykiPgo8cGF0aCBkPSJNLTUgMTcxLjA3OEw4NDYgMzUzLjc3OSIgc3Ryb2tlPSIjNUQ4NUMzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTYwNC4xNzggODMuMDY2N0w0NDguOTQ5IDc4OC45NDUiIHN0cm9rZT0idXJsKCNwYWludDBfbGluZWFyXzEwMjMyXzE3KSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik01NTQuMTU1IDMxMi42MjJDNTY1LjQzNCAzMTUuMDQ4IDU3Ni41NjYgMzA3Ljk3MiA1NzkuMDE5IDI5Ni44MTlDNTgxLjQ3MiAyODUuNjY1IDU3NC4zMTcgMjc0LjY1NyA1NjMuMDM4IDI3Mi4yMzFDNTUxLjc1OSAyNjkuODA2IDU0MC42MjcgMjc2Ljg4MSA1MzguMTc0IDI4OC4wMzVDNTM1LjcyMSAyOTkuMTg5IDU0Mi44NzYgMzEwLjE5NyA1NTQuMTU1IDMxMi42MjJaIiBzdHJva2U9IiM1RDg1QzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTAyMzJfMTciIHgxPSI2MDQuNjY3IiB5MT0iODMuMTcxOCIgeDI9IjQ1Mi43MTYiIHkyPSI3ODkuNzU1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1RDg1QzMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSJ3aGl0ZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=")
       no-repeat;
     background-size: cover;
+    background-position: center;
     font-family: "Noto Sans TC";
     font-weight: 400;
     border-radius: 0 0 1rem 1rem;
-    padding: #{"clamp(9rem, 4.955rem + 20.23vw, 20.125rem)"} 0 #{"clamp(1.375rem, 1.193rem + 0.91vw, 1.875rem)"}
-      #{"clamp(2rem, 1.409rem + 2.95vw, 3.625rem)"};
     &-title {
       span {
         font-size: #{"clamp(4.375rem, 2.83rem + 7.73vw, 8.625rem)"};
@@ -1144,6 +1143,7 @@ $text-color: #6d6e71;
     $primary-color 0 50px,
     white 50px 100%
   );
+  border: inherit;
   .subtitle {
     font-size: #{"clamp(1.25rem, 0.931rem + 1.31vw, 2.5rem)"};
     line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
@@ -1596,6 +1596,11 @@ $text-color: #6d6e71;
     .more-button {
       bottom: -6%;
     }
+  }
+  :deep(.headV3) {
+    max-width: 765px;
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
   }
 }
 // 电脑端
