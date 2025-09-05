@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-05 09:32:18
+ * @LastEditTime: 2025-09-05 15:06:17
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -9,32 +9,51 @@
   <div class="page bg-[#050D1A]">
     <HeadV3 />
     <div class="page-bg w-full flex flex-col md:flex-row md:justify-center">
-      <main class="page-main w-full md:max-w-3xl order-1 md:order-2">
+      <main class="page-main w-full md:max-w-3xl order-1 md:order-2 bg-[#000034]">
         <section id="intro" class="intro pb-[10.1px] md:pb-0">
           <picture>
             <source
               media="(max-width: 768px)"
+              type="image/avif"
+              srcset="
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@1x.avif 1x,
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@2x.avif 2x
+              "
+            />
+            <source
+              media="(max-width: 768px)"
               type="image/webp"
               srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m.webp
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@1x.webp 1x,
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 769px)"
+              type="image/avif"
+              srcset="
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.avif 1x,
+                ttps://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.avif  2x
               "
             />
             <source
               media="(min-width: 769px)"
               type="image/webp"
               srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc.webp
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.webp 1x,
+                ttps://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.webp  2x
               "
             />
             <img
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc.webp"
-              alt="ICL九月講座"
+              class="w-full"
+              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.jpg 2x"
+              alt="ICL植入式隱形眼鏡講座專場"
             />
           </picture>
         </section>
         <section
           id="detail"
-          class="detail rounded-[10.1px] md:rounded-[20px] -my-5 relative z-2 pt-4 md:pt-[34px] pb-[30.5px] md:pb-12"
+          class="detail rounded-[10.1px] md:rounded-[20px] -mt-5 relative z-[2] pt-4 md:pt-[34px] pb-[30.5px] md:pb-11"
         >
           <div class="detail-main relative">
             <div class="detail-question">
@@ -81,10 +100,10 @@
               </div>
             </div>
             <div
-              class="detail-activity mt-12 ml-[64px] mr-[106.13px] md:mt-[58px] md:ml-[148px] md:mr-[259px]"
+              class="detail-activity mt-[87px] ml-[64px] mr-[106.13px] md:mt-[140px] md:ml-[148px] md:mr-[259px]"
             >
               <h3
-                class="text-sm md:text-xl font-bold leading-[20px] md:leading-[35px] tracking-[0.84px] md:tracking-[1px] text-justify"
+                class="detail-activity-title relative text-sm md:text-xl font-bold leading-[20px] md:leading-[35px] tracking-[0.84px] md:tracking-[1px] text-justify px-[6px] py-1 md:px-3 md:py-2"
               >
                 ICL植入式隱形眼鏡
               </h3>
@@ -187,7 +206,7 @@
         </section>
         <section id="highlight" class="highlight">
           <div
-            class="highlight-gift bg-[#000034] relative z-1 -mb-5 rounded-b-[10.1px] md:rounded-b-[20px] text-center py-7 md:pt-11 md:pb-[58px]"
+            class="highlight-gift bg-[#000034] relative z-1 -mb-5 rounded-b-[10.1px] md:rounded-b-[20px] text-center pt-[42.27px] pb-7 md:pt-11 md:pb-[58px]"
           >
             <div class="highlight-gift-bg">
               <p
@@ -207,19 +226,21 @@
                     media="(max-width: 768px)"
                     type="image/webp"
                     srcset="
-                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@1x.webp 1x,
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@2x.webp 2x
                     "
                   />
                   <source
                     media="(min-width: 769px)"
                     type="image/webp"
                     srcset="
-                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.webp 1x,
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.webp 2x
                     "
                   />
                   <img
-                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
-                    alt="送不鏽鋼保溫杯+飲管套"
+                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x"
+                    alt="送不鏽鋼保溫杯+希瑪仔飲管套"
                   />
                 </picture>
               </div>
@@ -239,11 +260,11 @@
             >
               <p class="text-[#ff7300]">名額有限</p>
               <p class="text-[#000]">活動只招待已預約人士</p>
-              <p class="text-[#81accd]">請即登記預約!</p>
+              <p class="text-[#01ACCD]">請即登記預約!</p>
             </div>
             <a
               class="highlight-book-button block mx-auto text-xl md:text-4xl leading-[31.962px] md:leading-[63px] tracking-[1px] md:tracking-[1.8px] w-[170px] h-[40px] md:w-[335px] md:h-[77px]"
-              href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICLtalk-land_01)STAAR%20X%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
+              href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICLtalk-land_01)Lansheng%20x%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
               target="_blank"
               >立即預約</a
             >
@@ -364,9 +385,11 @@
             >
               <p>想更詳細了解ICL植入式隱形眼鏡?</p>
               <p class="font-black">
-                <span
+                <a
                   class="text-[#3bd7f1] text-lg md:text-3xl tracking-[0.9px] md:tracking-[1.5px]"
-                  >立即登記</span
+                  href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E7%99%BB%E8%A8%98(ICLtalk-land_03)Lansheng%20x%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
+                  target="_blank"
+                  ><span>立即登記</span></a
                 >
                 參與ICL植入式隱形眼鏡講座專場!
               </p>
@@ -388,7 +411,7 @@
                 stroke-width="1.97947"
               />
             </svg>
-            <span>同朋友分享一下啦！</span>
+            <span>同朋友一齊聽講座啦！</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -488,10 +511,10 @@
           class="page-left-container fixed h-screen w-[calc(50vw-384px)] z-1"
         >
           <div class="mx-auto text-center flex flex-col items-center pt-[5%]">
-            <p class="text-[10px] leading-[23.5px] tracking-[0.5px]">
+            <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
               參加者即場預約ICL矯視前檢查
             </p>
-            <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
+            <p class="text-xl leading-[23.5px] tracking-[1px]">
               可獲專場專享禮品
             </p>
             <picture>
@@ -499,22 +522,24 @@
                 media="(max-width: 768px)"
                 type="image/webp"
                 srcset="
-                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@1x.webp 1x,
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@2x.webp 2x
                 "
               />
               <source
                 media="(min-width: 769px)"
                 type="image/webp"
                 srcset="
-                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.webp 1x,
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.webp 2x
                 "
               />
               <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
-                alt="ICL九月講座"
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x"
+                alt="送不鏽鋼保溫杯+希瑪仔飲管套"
               />
             </picture>
-            <p class="text-[10px] leading-[23.5px] tracking-[0.5px]">
+            <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
               <span class="font-black">術前檢查費用</span
               >(價值:$500)可於手術費用中扣除
             </p>
@@ -528,6 +553,7 @@
       </aside>
     </div>
     <FooterV2 />
+    <FooterMobile />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -674,6 +700,19 @@ $primary-color: #3bd7f1;
     line-height: 20px;
     font-weight: 400;
     letter-spacing: 0.84px;
+    &-title {
+      z-index: 1;
+      &::before {
+        content: '';
+        width: 65%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #000034;
+      }
+    }
   }
   &-desc {
     &-row {
@@ -853,6 +892,9 @@ $primary-color: #3bd7f1;
   }
 }
 @media screen and (max-width: 767px) {
+  :deep(.new-Footer-v2) {
+    padding-bottom: 0 !important;
+  }
   .detail {
     &-question {
       img {
@@ -957,10 +999,12 @@ $primary-color: #3bd7f1;
 import HeadV3 from "@/components/Publice/HeadV3.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import PageNavigation from "@/components/commom/PageNavigation/PageNavigation.vue";
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
+    FooterMobile,
     PageNavigation,
   },
   data() {
