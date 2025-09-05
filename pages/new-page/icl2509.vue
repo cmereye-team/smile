@@ -1,13 +1,13 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-05 15:06:17
+ * @LastEditTime: 2025-09-05 15:51:04
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
 <template>
   <div class="page bg-[#050D1A]">
-    <HeadV3 />
+    <HeadV3 isICLTalk />
     <div class="page-bg w-full flex flex-col md:flex-row md:justify-center">
       <main class="page-main w-full md:max-w-3xl order-1 md:order-2 bg-[#000034]">
         <section id="intro" class="intro pb-[10.1px] md:pb-0">
@@ -473,7 +473,7 @@
             </div>
           </div>
         </section>
-        <el-backtop>
+        <el-backtop :bottom="120">
           <div
             class="backtop text-white w-[32.972px] h-[66.812px] md:w-[32.5px] md:h-[65.855px] rounded-[43.39px] md:rounded-[42.763px] bg-gradient-to-b from-[#00d6ff] to-[#008098] flex flex-col justify-center items-center"
           >
@@ -561,9 +561,6 @@ $primary-color: #3bd7f1;
 // 样式覆盖
 :deep(.icon-whatsapp) {
   display: none !important;
-}
-:deep(.icon-lecture) {
-  background-image: linear-gradient(180deg, #000034 62.5%, #01abcc 100%);
 }
 :deep(.new-Footer-v2) {
   margin-top: 0 !important;
@@ -892,9 +889,6 @@ $primary-color: #3bd7f1;
   }
 }
 @media screen and (max-width: 767px) {
-  :deep(.new-Footer-v2) {
-    padding-bottom: 0 !important;
-  }
   .detail {
     &-question {
       img {
@@ -1076,17 +1070,17 @@ export default {
             this.$gsap.to(front, {
               rotationY: -180,
               opacity: 0,
-              duration: 0.6,
+              duration: 1,
               ease: "power2.out",
-              delay: index * 0.2,
+              delay: index * 0.5,
               overwrite: "auto",
             });
             this.$gsap.to(back, {
               rotationY: 0,
               opacity: 1,
-              duration: 0.6,
+              duration: 1,
               ease: "power2.out",
-              delay: index * 0.2,
+              delay: index * 0.5,
               overwrite: "auto",
               onComplete: () => {
                 this.$set(this.flipped, index, true);
@@ -1166,9 +1160,9 @@ export default {
             // 进入视区开始动画
             this.$gsap.to(img, {
               opacity: 1,
-              duration: 0.5,
+              duration: 1,
               ease: "power2.out",
-              delay: index * 0.3,
+              delay: index * 0.5,
               overwrite: "auto",
             });
           },

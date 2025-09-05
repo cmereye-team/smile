@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-05 10:38:27
+ * @LastEditTime: 2025-09-05 15:21:03
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -11,10 +11,12 @@ import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
 import SwiperRound from "@/components/commom/swiper/SwiperRound.vue";
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
+    FooterMobile,
     UserShare,
     SwiperCard,
     SwiperRound,
@@ -517,9 +519,18 @@ export default {
             class="newCenter-card pt-20 md:pt-[142px] pl-8 md:pl-[57px] pb-5 md:pb-[30px]"
           >
             <div class="newCenter-card-title text-primary">
-              <span class="font-bold text-[69.064px] md:text-[137.67px] leading-[75.556px] md:leading-[150.611px] font-en">SMILE</span>
-              <h1 class="text-[37.289px] md:text-[74.332] leading-[40.795px] md:leading-[81.319px]">微笑激光矯視</h1>
-              <p class="text-sm md:text-3xl leading-8 md:leading-[64.668px]">Small Incision Lenticule Extraction</p>
+              <span
+                class="font-bold text-[69.064px] md:text-[137.67px] leading-[75.556px] md:leading-[150.611px] font-en"
+                >SMILE</span
+              >
+              <h1
+                class="text-[37.289px] md:text-[74.332] leading-[40.795px] md:leading-[81.319px]"
+              >
+                微笑激光矯視
+              </h1>
+              <p class="text-sm md:text-3xl leading-8 md:leading-[64.668px]">
+                Small Incision Lenticule Extraction
+              </p>
             </div>
             <div class="newCenter-card-nav text-text">
               <a href="/">{{ $t("Correct.newIcl.menuone") }} </a
@@ -917,6 +928,7 @@ export default {
       </main>
     </div>
     <FooterV2 class="smile-footer" />
+    <FooterMobile />
   </div>
 </template>
 <style lang="scss" scoped>
