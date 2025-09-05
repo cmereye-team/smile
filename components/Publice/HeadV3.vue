@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-09-05 09:16:13
+ * @LastEditTime: 2025-09-05 09:41:00
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -34,7 +34,7 @@ $text-color: #6d6e71;
   width: 100%;
   &-bg {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     padding: #{"clamp(1.125rem, 0.67rem + 2.27vw, 2.375rem)"} #{"clamp(1rem, 0.045rem + 4.77vw, 3.625rem)"};
     background: #f6fafd;
     display: flex;

@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-05 08:48:45
+ * @LastEditTime: 2025-09-05 09:32:18
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -1058,20 +1058,16 @@ export default {
       shakeImages,
       options = { useScrollTrigger: true, delay: 0 }
     ) {
-      // console.log("Shake images refs:", shakeImages, "Options:", options);
       const images = Array.isArray(shakeImages)
         ? shakeImages
         : [shakeImages].filter(Boolean);
-      // console.log("Processed shake images:", images);
       images.forEach((element, index) => {
         if (!element) {
-          // console.warn(`Shake image ${index + 1} ref not found`);
           return;
         }
-        // console.log(`Shake image index=${index + 1}, element=`, element);
         this.$gsap.set(element, { rotation: 0 });
+        // 定义抖动动画
         const shakeAnimation = () => {
-          // Skip GSAP animation if CSS animation has been triggered for shakeImages1
           if (
             element === this.$refs.shakeImages1 &&
             element.classList.contains("shake-image-triggered")
@@ -1102,20 +1098,12 @@ export default {
             trigger: element,
             start: "top 85%",
             onEnter: () => {
-              console.log(`Shake image ${index + 1} entered viewport`);
+              // 进入视区开始动画
               shakeAnimation();
-            },
-            onUpdate: (self) => {
-              console.log(
-                `Shake image ${index + 1} ScrollTrigger progress:`,
-                self.progress
-              );
             },
             once: true,
           });
-          // }
         } else {
-          console.log(`Shake image ${index + 1} triggered directly`);
           shakeAnimation();
         }
       });
@@ -1131,7 +1119,7 @@ export default {
           trigger: img,
           start: "top 90%",
           onEnter: () => {
-            console.log(`Detail image ${index + 1} entered viewport`);
+            // 进入视区开始动画
             this.$gsap.to(img, {
               opacity: 1,
               duration: 0.5,
@@ -1156,7 +1144,7 @@ export default {
           trigger: row,
           start: "top 90%",
           onEnter: () => {
-            console.log(`Row ${index + 1} entered viewport`);
+            // 进入视区开始动画
             this.$gsap.to(rowChildren, {
               y: 0,
               opacity: 1,
@@ -1182,7 +1170,7 @@ export default {
           trigger: el,
           start: "top 90%",
           onEnter: () => {
-            console.log(`ZoomIn element ${index + 1} entered viewport`);
+            // 进入视区开始动画
             this.$gsap.to(el, {
               scale: 1,
               opacity: 1,
