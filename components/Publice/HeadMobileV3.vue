@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 09:55:03
- * @LastEditTime: 2025-09-05 15:40:56
+ * @LastEditTime: 2025-09-05 17:34:05
  * @FilePath: /components/Publice/HeadMobileV3.vue
  * @Description: 移动端第三版头部的菜单
 -->
@@ -31,7 +31,7 @@
         <p><span>WhatsApp</span><br />預約</p>
       </div>
     </a>
-    <a href="/booking" target="_blank" v-if="isICLTalk">
+    <a href="https://api.whatsapp.com/send/?phone=85297962992&text=我想登記(ICLtalk-land_04)Lansheng x CMER ICL植入式隱形眼鏡講座專場" target="_blank" v-if="isICLTalk">
       <div class="icon icon-icl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -308,6 +308,9 @@ $text-color: #6d6e71;
       right: 220px;
     }
     &-lecture {
+      right: 120px;
+    }
+    &-icl {
       right: 120px;
     }
   }

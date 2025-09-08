@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 10:06:43
- * @LastEditTime: 2025-08-25 14:52:01
+ * @LastEditTime: 2025-09-05 18:42:31
  * @FilePath: /components/commom/option/SideV2.vue
  * @Description: 菜单栏
 -->
@@ -243,8 +243,7 @@ export default {
 </template>
 <style scoped lang="scss">
 .menu {
-  // padding-top: #{'clamp(8.25rem, 7.159rem + 5.45vw, 11.25rem)'};
-  padding-top: #{"clamp(8.25rem, 6.25rem + 10vw, 13.75rem)"};
+  padding-top: 90px;
   display: flex;
   justify-content: space-between;
   gap: #{"clamp(0.625rem, -0.966rem + 7.95vw, 5rem)"};
@@ -254,8 +253,7 @@ export default {
   &-list {
     letter-spacing: 3px;
     font-family: "Noto Sans TC";
-    // font-size: 20px;
-    font-size: #{"clamp(1rem, 0.909rem + 0.45vw, 1.25rem)"};
+    font-size: 12px;
     margin-bottom: 20px;
     &-title {
       font-weight: 500;
@@ -266,6 +264,14 @@ export default {
   }
   &-item {
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-top: #{"clamp(8.25rem, 6.25rem + 10vw, 13.75rem)"};
+    &-list {
+      font-size: #{"clamp(1rem, 0.909rem + 0.45vw, 1.25rem)"};
+    }
   }
 }
 </style>
