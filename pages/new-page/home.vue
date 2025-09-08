@@ -1270,7 +1270,7 @@
         />
       </svg>
     </div>
-
+    <ActivityButton />
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -1296,6 +1296,7 @@ import share from "@/components/content/service/ICL-new/share.vue";
 import MarqueeCarousel from "@/components/commom/MarqueeCarousel/MarqueeCarousel.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import Share from "../../components/content/service/ICL/share.vue";
+import ActivityButton from "@/components/content/icl/ActivityButton.vue";
 
 export default {
   components: {
@@ -1315,6 +1316,7 @@ export default {
     MarqueeCarousel,
     BannerSlider,
     UserShare,
+    ActivityButton,
   },
   head() {
     if (this.$i18n.locale === "en") {

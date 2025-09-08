@@ -108,7 +108,7 @@ export default {
     "asset/css/base-style.scss",
     "asset/css/tailwind.css",
     "element-ui/lib/theme-chalk/index.css",
-    { src: "swiper/dist/css/swiper.css" },
+    { src: "vue-awesome-swiper/node_modules/swiper/dist/css/swiper.min.css" },
     { src: "animate.css/animate.css" },
   ],
 
@@ -117,6 +117,7 @@ export default {
     { src: "~/plugins/vue-swiper.js", ssr: false },
     { src: "~plugins/element-ui/element-ui.js", ssr: false },
     { src: "~plugins/wow.js", ssr: false },
+    { src: '~/plugins/gsap.js', ssr: false },
     { src: "./router/beforeEach.js", ssr: false },
   ],
 
@@ -134,8 +135,6 @@ export default {
     ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios"],
   ],
 
-
-  
   workbox: {
     enabled: true,
     // 添加预缓存配置
@@ -163,7 +162,6 @@ export default {
       },
     ],
   },
-
   sitemap: {
     hostname: "https://smile.hkcmereye.com",
     gizp: true,
