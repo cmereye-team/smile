@@ -62,14 +62,20 @@ export default {
     window.removeEventListener("resize", this.updateHeaderHeight);
   },
   methods: {
+    /**
+     * @description: 更新页头高度
+     */
     updateHeaderHeight() {
-      // Determine header height based on viewport width
       this.headerHeight = window.innerWidth >= 768 ? 180 : 87;
     },
+    /**
+     * @description: 点击事件，跳转到指定id
+     * @param {string} id
+     */
     scrollToSection(id) {
       const element = document.getElementById(id);
       if (element) {
-        const offsetTop = element.offsetTop - this.headerHeight; // 10px buffer for visual comfort
+        const offsetTop = element.offsetTop - this.headerHeight;
         window.scrollTo({
           top: offsetTop,
           behavior: "smooth",
@@ -77,8 +83,11 @@ export default {
         this.activeSection = id;
       }
     },
+    /**
+     * @description: 滚动事件，用于高亮toc
+     */
     handleScroll() {
-      const scrollPosition = window.scrollY + this.headerHeight; // Adjust for header height + buffer
+      const scrollPosition = window.scrollY + this.headerHeight;
       let foundSection = null;
 
       this.navList.forEach((item) => {

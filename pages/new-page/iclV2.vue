@@ -4531,7 +4531,7 @@ i {
         </a>
       </div>
     </section>
-
+    <ActivityButton />
     <!-- <businessHours /> -->
     <FooterV2 />
     <!-- <Footer /> -->
@@ -4557,6 +4557,7 @@ import film from "@/components/content/service/ICL-new/film.vue";
 import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
+import ActivityButton from "@/components/content/icl/ActivityButton.vue";
 export default {
   components: {
     Head,
@@ -4573,7 +4574,8 @@ export default {
     FooterV2,
     HeadV2,
     goTop,
-    UserShare
+    UserShare,
+    ActivityButton,
   },
   head() {
     if (this.$i18n.locale === "en") {

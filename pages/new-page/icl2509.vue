@@ -1,40 +1,61 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-05 09:32:18
+ * @LastEditTime: 2025-09-05 18:58:58
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
 <template>
   <div class="page bg-[#050D1A]">
-    <HeadV3 />
+    <HeadV3 isICLTalk />
     <div class="page-bg w-full flex flex-col md:flex-row md:justify-center">
-      <main class="page-main w-full md:max-w-3xl order-1 md:order-2">
+      <main
+        class="page-main w-full md:max-w-3xl order-1 md:order-2 bg-[#000034]"
+      >
         <section id="intro" class="intro pb-[10.1px] md:pb-0">
           <picture>
             <source
               media="(max-width: 768px)"
+              type="image/avif"
+              srcset="
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@1x.avif 1x,
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@2x.avif 2x
+              "
+            />
+            <source
+              media="(max-width: 768px)"
               type="image/webp"
               srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m.webp
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@1x.webp 1x,
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 769px)"
+              type="image/avif"
+              srcset="
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.avif 1x,
+                ttps://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.avif  2x
               "
             />
             <source
               media="(min-width: 769px)"
               type="image/webp"
               srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc.webp
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.webp 1x,
+                ttps://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.webp  2x
               "
             />
             <img
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc.webp"
-              alt="ICL九月講座"
+              class="w-full"
+              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.jpg 2x"
+              alt="ICL植入式隱形眼鏡講座專場"
             />
           </picture>
         </section>
         <section
           id="detail"
-          class="detail rounded-[10.1px] md:rounded-[20px] -my-5 relative z-2 pt-4 md:pt-[34px] pb-[30.5px] md:pb-12"
+          class="detail rounded-[10.1px] md:rounded-[20px] -mt-5 relative z-[2] pt-4 md:pt-[34px] pb-[30.5px] md:pb-11"
         >
           <div class="detail-main relative">
             <div class="detail-question">
@@ -67,7 +88,7 @@
                     "
                   />
                   <img
-                    class="w-[202px] h-[140.05px] md:w-[367px] md:h-[263px]"
+                    class="pl-5 md:pl-0 h-[140.05px] md:h-[263px]"
                     src="https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp"
                     alt="ICL九月講座"
                   />
@@ -81,21 +102,23 @@
               </div>
             </div>
             <div
-              class="detail-activity mt-12 ml-[64px] mr-[106.13px] md:mt-[58px] md:ml-[148px] md:mr-[259px]"
+              class="detail-activity mt-[87px] ml-[64px] mr-[106.13px] md:mt-[140px] md:ml-[148px] md:mr-[259px]"
             >
               <h3
-                class="text-sm md:text-xl font-bold leading-[20px] md:leading-[35px] tracking-[0.84px] md:tracking-[1px] text-justify"
+                class="detail-activity-title bg-[#000034] w-fit text-sm md:text-xl font-bold leading-[20px] md:leading-[35px] tracking-[0.84px] md:tracking-[1px] text-justify px-[6px] py-1 md:px-3 md:py-2"
               >
                 ICL植入式隱形眼鏡
               </h3>
-              <p>會為你的生活體驗帶來嶄新選擇!</p>
-              <p>
-                作為首間官方認證EVO
-                ICL國際培訓中心，希瑪微笑矯視中心今次為ICL矯視服務開辦講座專場，將深入講解ICL技術原理，並即場解答你最關心的問題。
-              </p>
-              <p>
-                無論你是初次接觸ICL植入式隱形眼鏡，或已在考慮進行矯視，這場講座活動都能為你提供最全面的講解。
-              </p>
+              <div class="text-sm text-justify md:text-xl leading-5 md:leading-[35px] tracking-[0.84px] md:tracking-[1px]">
+                <p>會為你的生活體驗帶來嶄新選擇!</p>
+                <p>
+                  作為首間官方認證EVO
+                  ICL國際培訓中心，希瑪微笑矯視中心今次為ICL矯視服務開辦講座專場，將深入講解ICL技術原理，並即場解答你最關心的問題。
+                </p>
+                <p>
+                  無論你是初次接觸ICL植入式隱形眼鏡，或已在考慮進行矯視，這場講座活動都能為你提供最全面的講解。
+                </p>
+              </div>
             </div>
             <div class="detail-title relative">
               <div class="detail-title-text w-full h-[166.86px] md:h-[347px]">
@@ -187,7 +210,7 @@
         </section>
         <section id="highlight" class="highlight">
           <div
-            class="highlight-gift bg-[#000034] relative z-1 -mb-5 rounded-b-[10.1px] md:rounded-b-[20px] text-center py-7 md:pt-11 md:pb-[58px]"
+            class="highlight-gift bg-[#000034] relative z-1 -mb-5 rounded-b-[10.1px] md:rounded-b-[20px] text-center pt-[42.27px] pb-7 md:pt-11 md:pb-[58px]"
           >
             <div class="highlight-gift-bg">
               <p
@@ -207,19 +230,21 @@
                     media="(max-width: 768px)"
                     type="image/webp"
                     srcset="
-                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@1x.webp 1x,
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@2x.webp 2x
                     "
                   />
                   <source
                     media="(min-width: 769px)"
                     type="image/webp"
                     srcset="
-                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.webp 1x,
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.webp 2x
                     "
                   />
                   <img
-                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
-                    alt="送不鏽鋼保溫杯+飲管套"
+                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x"
+                    alt="送不鏽鋼保溫杯+希瑪仔飲管套"
                   />
                 </picture>
               </div>
@@ -239,11 +264,11 @@
             >
               <p class="text-[#ff7300]">名額有限</p>
               <p class="text-[#000]">活動只招待已預約人士</p>
-              <p class="text-[#81accd]">請即登記預約!</p>
+              <p class="text-[#01ACCD]">請即登記預約!</p>
             </div>
             <a
               class="highlight-book-button block mx-auto text-xl md:text-4xl leading-[31.962px] md:leading-[63px] tracking-[1px] md:tracking-[1.8px] w-[170px] h-[40px] md:w-[335px] md:h-[77px]"
-              href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICLtalk-land_01)STAAR%20X%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
+              href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(ICLtalk-land_01)Lansheng%20x%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
               target="_blank"
               >立即預約</a
             >
@@ -364,9 +389,11 @@
             >
               <p>想更詳細了解ICL植入式隱形眼鏡?</p>
               <p class="font-black">
-                <span
+                <a
                   class="text-[#3bd7f1] text-lg md:text-3xl tracking-[0.9px] md:tracking-[1.5px]"
-                  >立即登記</span
+                  href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E7%99%BB%E8%A8%98(ICLtalk-land_03)Lansheng%20x%20CMER%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%AC%9B%E5%BA%A7%E5%B0%88%E5%A0%B4"
+                  target="_blank"
+                  ><span>立即登記</span></a
                 >
                 參與ICL植入式隱形眼鏡講座專場!
               </p>
@@ -388,7 +415,7 @@
                 stroke-width="1.97947"
               />
             </svg>
-            <span>同朋友分享一下啦！</span>
+            <span>同朋友一齊聽講座啦！</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -404,55 +431,59 @@
             </svg>
           </div>
           <div class="share-group">
-            <div class="share-group-item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="22"
-                viewBox="0 0 21 22"
-                fill="none"
-              >
-                <path
-                  d="M0.282114 11.5524C0.28129 9.57421 1.74018 7.94793 3.63508 7.78225C4.78653 7.68169 5.78468 8.04519 6.60891 8.85874C6.74161 8.9898 6.83145 9.00134 6.99135 8.9049C8.88461 7.7567 10.7828 6.61427 12.6827 5.47761C12.831 5.38859 12.8508 5.31193 12.7981 5.15037C12.0958 2.99822 13.5432 0.683684 15.7842 0.36222C17.9075 0.0580664 19.8073 1.52279 20.0529 3.65351C20.2771 5.60042 18.852 7.4443 16.9044 7.71961C15.6318 7.8993 14.552 7.50695 13.6594 6.59201C13.5638 6.49393 13.4987 6.48074 13.3816 6.55163C11.462 7.71054 9.5407 8.86616 7.61859 10.0193C7.50567 10.0869 7.47105 10.1537 7.51721 10.2839C7.75129 10.9466 7.79497 11.6233 7.61529 12.3058C7.57326 12.4666 7.6293 12.5416 7.76613 12.6116C9.43931 13.4647 11.1109 14.322 12.7832 15.1792C12.9176 15.2476 13.0544 15.3136 13.1821 15.3919C13.3091 15.4693 13.3956 15.4578 13.4954 15.3366C14.0962 14.6088 14.8652 14.1736 15.7983 14.0228C17.2151 13.7936 18.7119 14.4712 19.4801 15.696C20.8871 17.938 19.6458 20.8378 17.0536 21.3637C14.9996 21.7807 12.9678 20.3432 12.6654 18.262C12.5986 17.802 12.5961 17.3445 12.7338 16.8978C12.7972 16.6926 12.7404 16.6002 12.5508 16.5038C10.7597 15.5946 8.97362 14.6756 7.18834 13.7541C7.05894 13.6873 6.98393 13.7038 6.89327 13.8142C6.06244 14.8231 4.98847 15.2748 3.68701 15.2056C2.07234 15.119 0.559055 13.7252 0.327446 12.1096C0.297774 11.9052 0.274696 11.7016 0.282938 11.5516L0.282114 11.5524Z"
-                  fill="#3BD7F1"
-                />
-              </svg>
-            </div>
-            <div class="share-group-item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_11479_977)">
+            <a id="shareCurrentPageIcl">
+              <div class="share-group-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                  fill="none"
+                >
                   <path
-                    d="M9.10209 6.12598C10.8869 6.12803 12.1807 6.64582 13.3111 7.62182C13.4894 7.77592 13.6707 7.92592 13.845 8.0831C14.1985 8.40056 14.2673 8.87417 13.9814 9.25738C13.6428 9.71147 13.2852 10.1522 12.9157 10.5806C12.609 10.9361 12.1369 10.9587 11.7713 10.6618C11.5432 10.4769 11.3271 10.2755 11.099 10.0895C10.0602 9.24505 8.50948 9.28615 7.55234 10.2303C6.53344 11.2361 5.53248 12.2645 4.5594 13.3175C3.81341 14.125 3.64808 15.1113 3.98671 16.1582C4.32535 17.2051 5.06536 17.8389 6.10915 18.03C6.97666 18.1882 7.77544 17.9633 8.43876 17.3345C8.6529 17.1321 8.8511 16.9123 9.06026 16.7047C9.44371 16.3256 9.89489 16.3102 10.2813 16.6852C10.6618 17.0551 11.0313 17.4372 11.3909 17.8287C11.7066 18.1728 11.7205 18.6485 11.4217 18.9958C10.3939 20.1937 9.1728 21.0484 7.60911 21.3423C4.41897 21.9412 1.2119 19.643 0.679043 16.3441C0.334432 14.2082 0.910112 12.3641 2.37122 10.82C3.29848 9.83989 4.23969 8.87315 5.18886 7.91564C6.35715 6.73623 7.76647 6.14139 9.10109 6.127L9.10209 6.12598Z"
+                    d="M0.282114 11.5524C0.28129 9.57421 1.74018 7.94793 3.63508 7.78225C4.78653 7.68169 5.78468 8.04519 6.60891 8.85874C6.74161 8.9898 6.83145 9.00134 6.99135 8.9049C8.88461 7.7567 10.7828 6.61427 12.6827 5.47761C12.831 5.38859 12.8508 5.31193 12.7981 5.15037C12.0958 2.99822 13.5432 0.683684 15.7842 0.36222C17.9075 0.0580664 19.8073 1.52279 20.0529 3.65351C20.2771 5.60042 18.852 7.4443 16.9044 7.71961C15.6318 7.8993 14.552 7.50695 13.6594 6.59201C13.5638 6.49393 13.4987 6.48074 13.3816 6.55163C11.462 7.71054 9.5407 8.86616 7.61859 10.0193C7.50567 10.0869 7.47105 10.1537 7.51721 10.2839C7.75129 10.9466 7.79497 11.6233 7.61529 12.3058C7.57326 12.4666 7.6293 12.5416 7.76613 12.6116C9.43931 13.4647 11.1109 14.322 12.7832 15.1792C12.9176 15.2476 13.0544 15.3136 13.1821 15.3919C13.3091 15.4693 13.3956 15.4578 13.4954 15.3366C14.0962 14.6088 14.8652 14.1736 15.7983 14.0228C17.2151 13.7936 18.7119 14.4712 19.4801 15.696C20.8871 17.938 19.6458 20.8378 17.0536 21.3637C14.9996 21.7807 12.9678 20.3432 12.6654 18.262C12.5986 17.802 12.5961 17.3445 12.7338 16.8978C12.7972 16.6926 12.7404 16.6002 12.5508 16.5038C10.7597 15.5946 8.97362 14.6756 7.18834 13.7541C7.05894 13.6873 6.98393 13.7038 6.89327 13.8142C6.06244 14.8231 4.98847 15.2748 3.68701 15.2056C2.07234 15.119 0.559055 13.7252 0.327446 12.1096C0.297774 11.9052 0.274696 11.7016 0.282938 11.5516L0.282114 11.5524Z"
                     fill="#3BD7F1"
                   />
-                  <path
-                    d="M12.3086 15.6265C10.73 15.6194 9.43419 15.1046 8.30574 14.1266C8.13443 13.9776 7.96113 13.8317 7.78982 13.6817C7.42031 13.3571 7.34661 12.8814 7.63843 12.491C7.97806 12.0369 8.33562 11.5972 8.70413 11.1688C9.00891 10.8144 9.48299 10.7938 9.84852 11.0907C10.0637 11.2654 10.2658 11.4565 10.483 11.628C11.6503 12.5516 13.1532 12.4623 14.197 11.3989C15.1302 10.4486 16.0595 9.49422 16.9778 8.52849C17.7337 7.73332 17.9628 6.7717 17.666 5.71146C17.3632 4.63273 16.6421 3.95878 15.5774 3.73687C14.681 3.54989 13.8633 3.7718 13.1761 4.41904C12.962 4.6204 12.7648 4.84232 12.5546 5.04882C12.1722 5.42483 11.717 5.43921 11.3325 5.06525C10.9521 4.6954 10.5826 4.31322 10.224 3.92077C9.91625 3.58482 9.89334 3.11121 10.1812 2.77423C11.1463 1.64413 12.2817 0.796559 13.7418 0.466776C17.2029 -0.31402 20.5633 2.13316 20.9866 5.76489C21.2087 7.67167 20.6819 9.35347 19.411 10.7445C18.3473 11.9085 17.2636 13.0581 16.1083 14.1266C15.0077 15.1447 13.6851 15.6111 12.3076 15.6255L12.3086 15.6265Z"
-                    fill="#3BD7F1"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_11479_977">
-                    <rect
-                      width="20.4545"
-                      height="21.1144"
-                      fill="white"
-                      transform="translate(0.582031 0.322266)"
+                </svg>
+              </div>
+            </a>
+            <div class="share-group-item">
+              <a @click="copyCurrentUrl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_11479_977)">
+                    <path
+                      d="M9.10209 6.12598C10.8869 6.12803 12.1807 6.64582 13.3111 7.62182C13.4894 7.77592 13.6707 7.92592 13.845 8.0831C14.1985 8.40056 14.2673 8.87417 13.9814 9.25738C13.6428 9.71147 13.2852 10.1522 12.9157 10.5806C12.609 10.9361 12.1369 10.9587 11.7713 10.6618C11.5432 10.4769 11.3271 10.2755 11.099 10.0895C10.0602 9.24505 8.50948 9.28615 7.55234 10.2303C6.53344 11.2361 5.53248 12.2645 4.5594 13.3175C3.81341 14.125 3.64808 15.1113 3.98671 16.1582C4.32535 17.2051 5.06536 17.8389 6.10915 18.03C6.97666 18.1882 7.77544 17.9633 8.43876 17.3345C8.6529 17.1321 8.8511 16.9123 9.06026 16.7047C9.44371 16.3256 9.89489 16.3102 10.2813 16.6852C10.6618 17.0551 11.0313 17.4372 11.3909 17.8287C11.7066 18.1728 11.7205 18.6485 11.4217 18.9958C10.3939 20.1937 9.1728 21.0484 7.60911 21.3423C4.41897 21.9412 1.2119 19.643 0.679043 16.3441C0.334432 14.2082 0.910112 12.3641 2.37122 10.82C3.29848 9.83989 4.23969 8.87315 5.18886 7.91564C6.35715 6.73623 7.76647 6.14139 9.10109 6.127L9.10209 6.12598Z"
+                      fill="#3BD7F1"
                     />
-                  </clipPath>
-                </defs>
-              </svg>
+                    <path
+                      d="M12.3086 15.6265C10.73 15.6194 9.43419 15.1046 8.30574 14.1266C8.13443 13.9776 7.96113 13.8317 7.78982 13.6817C7.42031 13.3571 7.34661 12.8814 7.63843 12.491C7.97806 12.0369 8.33562 11.5972 8.70413 11.1688C9.00891 10.8144 9.48299 10.7938 9.84852 11.0907C10.0637 11.2654 10.2658 11.4565 10.483 11.628C11.6503 12.5516 13.1532 12.4623 14.197 11.3989C15.1302 10.4486 16.0595 9.49422 16.9778 8.52849C17.7337 7.73332 17.9628 6.7717 17.666 5.71146C17.3632 4.63273 16.6421 3.95878 15.5774 3.73687C14.681 3.54989 13.8633 3.7718 13.1761 4.41904C12.962 4.6204 12.7648 4.84232 12.5546 5.04882C12.1722 5.42483 11.717 5.43921 11.3325 5.06525C10.9521 4.6954 10.5826 4.31322 10.224 3.92077C9.91625 3.58482 9.89334 3.11121 10.1812 2.77423C11.1463 1.64413 12.2817 0.796559 13.7418 0.466776C17.2029 -0.31402 20.5633 2.13316 20.9866 5.76489C21.2087 7.67167 20.6819 9.35347 19.411 10.7445C18.3473 11.9085 17.2636 13.0581 16.1083 14.1266C15.0077 15.1447 13.6851 15.6111 12.3076 15.6255L12.3086 15.6265Z"
+                      fill="#3BD7F1"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11479_977">
+                      <rect
+                        width="20.4545"
+                        height="21.1144"
+                        fill="white"
+                        transform="translate(0.582031 0.322266)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
             </div>
           </div>
         </section>
-        <el-backtop>
+        <el-backtop :bottom="120">
           <div
-            class="backtop text-white w-[32.972px] h-[66.812px] md:w-[32.5px] md:h-[65.855px] rounded-[43.39px] md:rounded-[42.763px] bg-gradient-to-b from-[#00d6ff] to-[#008098] flex flex-col justify-center items-center"
+            class="backtop text-white w-[32.972px] h-[66.812px] md:w-[32.5px] md:h-[65.855px] rounded-[43.39px] md:rounded-[42.763px] bg-gradient-to-b from-[#00d6ff] to-[#008098] flex flex-col justify-center items-center tracking-[0.75px]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -488,10 +519,10 @@
           class="page-left-container fixed h-screen w-[calc(50vw-384px)] z-1"
         >
           <div class="mx-auto text-center flex flex-col items-center pt-[5%]">
-            <p class="text-[10px] leading-[23.5px] tracking-[0.5px]">
+            <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
               參加者即場預約ICL矯視前檢查
             </p>
-            <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
+            <p class="text-xl leading-[23.5px] tracking-[1px]">
               可獲專場專享禮品
             </p>
             <picture>
@@ -499,22 +530,24 @@
                 media="(max-width: 768px)"
                 type="image/webp"
                 srcset="
-                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m.webp
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@1x.webp 1x,
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-m@2x.webp 2x
                 "
               />
               <source
                 media="(min-width: 769px)"
                 type="image/webp"
                 srcset="
-                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.webp 1x,
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.webp 2x
                 "
               />
               <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc.webp"
-                alt="ICL九月講座"
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x"
+                alt="送不鏽鋼保溫杯+希瑪仔飲管套"
               />
             </picture>
-            <p class="text-[10px] leading-[23.5px] tracking-[0.5px]">
+            <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
               <span class="font-black">術前檢查費用</span
               >(價值:$500)可於手術費用中扣除
             </p>
@@ -528,6 +561,7 @@
       </aside>
     </div>
     <FooterV2 />
+    <FooterMobile />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -535,9 +569,6 @@ $primary-color: #3bd7f1;
 // 样式覆盖
 :deep(.icon-whatsapp) {
   display: none !important;
-}
-:deep(.icon-lecture) {
-  background-image: linear-gradient(180deg, #000034 62.5%, #01abcc 100%);
 }
 :deep(.new-Footer-v2) {
   margin-top: 0 !important;
@@ -644,7 +675,7 @@ $primary-color: #3bd7f1;
   &-main {
     background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-deco-lens.svg")
       no-repeat;
-    background-position: 146.25px center;
+    background-position: 146.25px 410px;
     background-size: 347px;
   }
   &-question {
@@ -668,12 +699,6 @@ $primary-color: #3bd7f1;
       left: 0;
       top: -28px;
     }
-  }
-  &-activity {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    letter-spacing: 0.84px;
   }
   &-desc {
     &-row {
@@ -853,6 +878,9 @@ $primary-color: #3bd7f1;
   }
 }
 @media screen and (max-width: 767px) {
+  :deep(.new-Footer-v2) {
+    padding-bottom: 0 !important;
+  }
   .detail {
     &-question {
       img {
@@ -887,8 +915,8 @@ $primary-color: #3bd7f1;
   }
   .detail {
     &-main {
-      background-position: 288px center;
-      background-size: auto;
+      background-position: 310px 690px;
+      background-size: 550px;
     }
     &-question {
       img {
@@ -914,11 +942,6 @@ $primary-color: #3bd7f1;
       &-text {
         top: -50px;
       }
-    }
-    &-activity {
-      font-size: 20px;
-      line-height: 35px;
-      letter-spacing: 1px;
     }
     &-content {
       &-item {
@@ -957,10 +980,12 @@ $primary-color: #3bd7f1;
 import HeadV3 from "@/components/Publice/HeadV3.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import PageNavigation from "@/components/commom/PageNavigation/PageNavigation.vue";
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
+    FooterMobile,
     PageNavigation,
   },
   data() {
@@ -986,6 +1011,26 @@ export default {
     });
   },
   methods: {
+    async copyCurrentUrl() {
+      try {
+        const textArea = document.createElement("textarea");
+        textArea.value = window.location.href;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+        this.$message({
+          showClose: true,
+          message: "複製成功",
+          type: "success",
+        });
+      } catch (error) {
+        console.error("复制失败:", error);
+      }
+    },
+    /**
+     * @description: 统一调用动画
+     */
     setupAnimations() {
       console.log("Setting up animations, refs:", this.$refs);
       const shakeImages = [
@@ -1010,6 +1055,10 @@ export default {
       ]);
       this.setupZoomInBounce([this.$refs.zoomInElement]);
     },
+    /**
+     * @description: 卡片翻转动画
+     * @param {*} cards
+     */
     setupCardFlip(cards) {
       cards.forEach((card, index) => {
         if (!card) {
@@ -1032,17 +1081,17 @@ export default {
             this.$gsap.to(front, {
               rotationY: -180,
               opacity: 0,
-              duration: 0.6,
+              duration: 1,
               ease: "power2.out",
-              delay: index * 0.2,
+              delay: index * 0.5,
               overwrite: "auto",
             });
             this.$gsap.to(back, {
               rotationY: 0,
               opacity: 1,
-              duration: 0.6,
+              duration: 1,
               ease: "power2.out",
-              delay: index * 0.2,
+              delay: index * 0.5,
               overwrite: "auto",
               onComplete: () => {
                 this.$set(this.flipped, index, true);
@@ -1054,6 +1103,12 @@ export default {
         });
       });
     },
+    /**
+     * @description: 抖动动画，主要依靠旋转
+     * @param {*} shakeImages
+     * @param {*} options
+     * @param {*} delay
+     */
     setupShakeImages(
       shakeImages,
       options = { useScrollTrigger: true, delay: 0 }
@@ -1108,6 +1163,10 @@ export default {
         }
       });
     },
+    /**
+     * @description: 同行从左到右出现的动画
+     * @param {*} images
+     */
     setupRowImages(images) {
       images.forEach((img, index) => {
         if (!img) {
@@ -1122,9 +1181,9 @@ export default {
             // 进入视区开始动画
             this.$gsap.to(img, {
               opacity: 1,
-              duration: 0.5,
+              duration: 1,
               ease: "power2.out",
-              delay: index * 0.3,
+              delay: index * 0.5,
               overwrite: "auto",
             });
           },
@@ -1132,6 +1191,10 @@ export default {
         });
       });
     },
+    /**
+     * @description: 多行从上到下出现的动画
+     * @param {*} rows
+     */
     setupMultiRowImages(rows) {
       rows.forEach((row, index) => {
         if (!row) {
@@ -1159,6 +1222,10 @@ export default {
         });
       });
     },
+    /**
+     * @description: 弹出动画
+     * @param {*} zoomElements
+     */
     setupZoomInBounce(zoomElements) {
       zoomElements.forEach((el, index) => {
         if (!el) {

@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-09-05 09:41:00
+ * @LastEditTime: 2025-09-05 15:27:09
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -9,7 +9,7 @@
   <div class="headV3">
     <div class="headV3-bg">
       <HeadLeftV2 class="headV3-logo" />
-      <HeadMobileV3 />
+      <HeadMobileV3 :isICLTalk="isICLTalk" />
     </div>
   </div>
 </template>
@@ -21,6 +21,12 @@ export default {
     HeadLeftV2,
     HeadMobileV3,
   },
+  props:{
+    isICLTalk:{
+      type:Boolean,
+      default:false
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

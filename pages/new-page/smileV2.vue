@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-05 09:06:40
+ * @LastEditTime: 2025-09-05 16:03:34
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -11,10 +11,12 @@ import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
 import SwiperRound from "@/components/commom/swiper/SwiperRound.vue";
+import FooterMobile from "@/components/Publice/FooterMobile.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
+    FooterMobile,
     UserShare,
     SwiperCard,
     SwiperRound,
@@ -517,9 +519,18 @@ export default {
             class="newCenter-card pt-20 md:pt-[142px] pl-8 md:pl-[57px] pb-5 md:pb-[30px]"
           >
             <div class="newCenter-card-title text-primary">
-              <span>SMILE</span>
-              <h3>微笑激光矯視</h3>
-              <p>Small Incision Lenticule Extraction</p>
+              <span
+                class="font-bold text-[69.064px] md:text-[137.67px] leading-[75.556px] md:leading-[150.611px] font-en"
+                >SMILE</span
+              >
+              <h1
+                class="text-[37.289px] md:text-[74.332] leading-[40.795px] md:leading-[81.319px]"
+              >
+                微笑激光矯視
+              </h1>
+              <p class="text-sm md:text-3xl leading-8 md:leading-[64.668px]">
+                Small Incision Lenticule Extraction
+              </p>
             </div>
             <div class="newCenter-card-nav text-text">
               <a href="/">{{ $t("Correct.newIcl.menuone") }} </a
@@ -917,6 +928,7 @@ export default {
       </main>
     </div>
     <FooterV2 class="smile-footer" />
+    <FooterMobile />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -924,6 +936,9 @@ $primary-color: #4570b6;
 $text-color: #6d6e71;
 :deep(.headV3) {
   max-width: 765px;
+}
+.page {
+  font-family: "Noto Sans TC";
 }
 .subtitle {
   color: $primary-color;
@@ -943,7 +958,6 @@ $text-color: #6d6e71;
     width: fit-content;
     margin: 0 auto;
     span {
-      font-family: "Noto Sans TC";
       font-size: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
       font-weight: 700;
       line-height: #{"clamp(2.25rem, 1.614rem + 3.18vw, 4rem)"};
@@ -1016,7 +1030,6 @@ $text-color: #6d6e71;
       h4 {
         color: #000;
         text-align: left;
-        font-family: "Noto Sans TC";
         font-size: 1.3139vw; /* 25.226 / 1920 * 100 ≈ 1.3139 */
         font-style: normal;
         font-weight: 300;
@@ -1071,30 +1084,28 @@ $text-color: #6d6e71;
       no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: "Noto Sans TC";
     font-weight: 400;
     border-radius: 0 0 1rem 1rem;
     &-title {
       span {
-        font-size: #{"clamp(4.375rem, 2.83rem + 7.73vw, 8.625rem)"};
-        line-height: #{"clamp(4.75rem, 3.068rem + 8.41vw, 9.375rem)"};
-        font-weight: 700;
+        // font-size: #{"clamp(4.375rem, 2.83rem + 7.73vw, 8.625rem)"};
+        // line-height: #{"clamp(4.75rem, 3.068rem + 8.41vw, 9.375rem)"};
+        // font-weight: 700;
         font-family: "Poppins", sans-serif;
       }
-      h3 {
-        font-size: #{"clamp(2.375rem, 1.557rem + 4.09vw, 4.625rem)"};
-        line-height: #{"clamp(2.5rem, 1.545rem + 4.77vw, 5.125rem)"};
-      }
-      p {
-        font-size: #{"clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem)"};
-        line-height: #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"};
-      }
+      // h3 {
+      //   font-size: #{"clamp(2.375rem, 1.557rem + 4.09vw, 4.625rem)"};
+      //   line-height: #{"clamp(2.5rem, 1.545rem + 4.77vw, 5.125rem)"};
+      // }
+      // p {
+      //   font-size: #{"clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem)"};
+      //   line-height: #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"};
+      // }
     }
     &-nav {
       font-size: 12px;
       line-height: 21.88px;
       letter-spacing: 0.36px;
-      font-family: "Noto Sans TC";
       font-weight: normal;
       margin-top: #{"clamp(2rem, 1.182rem + 4.09vw, 4.25rem)"};
     }
@@ -1211,7 +1222,6 @@ $text-color: #6d6e71;
     }
     &-text {
       position: absolute;
-      font-family: "Noto Sans TC";
       font-weight: 400;
       font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
       line-height: #{"clamp(1.125rem, 0.739rem + 1.93vw, 2.188rem)"};
@@ -1243,7 +1253,6 @@ $text-color: #6d6e71;
 .benefit {
   padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
   h3 {
-    font-family: "Noto Sans TC";
     text-align: center;
     padding-bottom: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"};
   }
@@ -1389,7 +1398,6 @@ $text-color: #6d6e71;
   &-desc {
     color: $text-color;
     text-align: center;
-    font-family: "Noto Sans TC";
     font-size: #{"clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem)"};
     line-height: #{"clamp(1.375rem, 1.011rem + 1.82vw, 2.375rem)"};
     letter-spacing: #{"clamp(0rem, -0.036rem + 0.18vw, 0.1rem)"};
@@ -1464,7 +1472,6 @@ $text-color: #6d6e71;
     &-title {
       color: $primary-color;
       font-weight: 700;
-      font-family: "Noto Sans TC";
       font-size: #{"clamp(1rem, 0.857rem + 0.59vw, 1.563rem)"};
       line-height: #{"clamp(0.636rem, 0.48rem + 0.64vw, 1.25rem)"};
       margin-bottom: #{"clamp(1.018rem, 0.752rem + 1.09vw, 2.063rem)"};
@@ -1480,7 +1487,6 @@ $text-color: #6d6e71;
       p {
         color: $text-color;
         text-align: justify;
-        font-family: "Noto Sans TC";
         font-weight: 400;
         font-size: #{"clamp(0.875rem, 0.779rem + 0.39vw, 1.25rem)"};
         line-height: #{"clamp(1.113rem, 0.839rem + 1.12vw, 2.188rem)"};
@@ -1494,7 +1500,6 @@ $text-color: #6d6e71;
 }
 // 小练习
 .exercise {
-  font-family: "Noto Sans TC";
   padding: #{"clamp(1.5rem, 1.364rem + 0.68vw, 1.875rem)"} 0 #{"clamp(3.75rem, 2.568rem + 5.91vw, 7rem)"};
   &-title {
     text-align: center;
@@ -1530,7 +1535,6 @@ $text-color: #6d6e71;
     span {
       color: #000;
       text-align: center;
-      font-family: "Noto Sans TC";
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
@@ -1611,23 +1615,23 @@ $text-color: #6d6e71;
     border-right: 1.5px solid $primary-color;
   }
   .newCenter {
-    &-card {
-      &-title {
-        span {
-          font-size: 137.67px;
-          line-height: 150.611px;
-        }
-        h3 {
-          font-size: 74.332px;
-          line-height: 81.319px;
-        }
-        p {
-          font-size: 29.733px;
-          line-height: 64.668px;
-          letter-spacing: 0.892px;
-        }
-      }
-    }
+    // &-card {
+    //   &-title {
+    //     span {
+    //       font-size: 137.67px;
+    //       line-height: 150.611px;
+    //     }
+    //     h3 {
+    //       font-size: 74.332px;
+    //       line-height: 81.319px;
+    //     }
+    //     p {
+    //       font-size: 29.733px;
+    //       line-height: 64.668px;
+    //       letter-spacing: 0.892px;
+    //     }
+    //   }
+    // }
     &-nav {
       font-size: 20px;
       line-height: 43.5px;

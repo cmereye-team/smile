@@ -19,6 +19,11 @@ module.exports = {
           DEFAULT: "#6D6E71",
         },
       },
+      fontFamily: {
+        tc: ['"Noto Sans TC"', "sans-serif"],
+        hk: ['"Noto Sans HK"', "sans-serif"],
+        en: ["Poppins", "sans-serif"],
+      },
     },
   },
   variants: {
