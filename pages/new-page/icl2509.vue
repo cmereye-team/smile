@@ -1,12 +1,12 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-05 18:58:58
+ * @LastEditTime: 2025-09-09 09:33:33
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
 <template>
-  <div class="page bg-[#050D1A]">
+  <div class="page relative bg-[#050D1A]">
     <HeadV3 isICLTalk />
     <div class="page-bg w-full flex flex-col md:flex-row md:justify-center">
       <main
@@ -35,7 +35,7 @@
               type="image/avif"
               srcset="
                 https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.avif 1x,
-                ttps://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.avif  2x
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.avif 2x
               "
             />
             <source
@@ -43,7 +43,7 @@
               type="image/webp"
               srcset="
                 https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.webp 1x,
-                ttps://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.webp  2x
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.webp 2x
               "
             />
             <img
@@ -57,8 +57,8 @@
           id="detail"
           class="detail rounded-[10.1px] md:rounded-[20px] -mt-5 relative z-[2] pt-4 md:pt-[34px] pb-[30.5px] md:pb-11"
         >
-          <div class="detail-main relative">
-            <div class="detail-question">
+          <div class="detail-main">
+            <div class="detail-question relative z-[2]">
               <img
                 ref="detailImage1"
                 src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-t1.svg"
@@ -70,18 +70,12 @@
                 alt="甚至因此影響工作表現或生活質素?"
               />
             </div>
-            <div class="detail-cover flex justify-end px-14 md:px-[120px]">
+            <div
+              class="detail-cover flex justify-end px-14 md:px-[120px] z-[1] relative"
+            >
               <div class="detail-cover-container relative">
                 <picture ref="detailImage2">
                   <source
-                    media="(max-width: 768px)"
-                    type="image/webp"
-                    srcset="
-                      https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-m.webp
-                    "
-                  />
-                  <source
-                    media="(min-width: 769px)"
                     type="image/webp"
                     srcset="
                       https://statichk.cmermedical.com/smile/icl2509/icl2509-bookman-pc.webp
@@ -109,7 +103,9 @@
               >
                 ICL植入式隱形眼鏡
               </h3>
-              <div class="text-sm text-justify md:text-xl leading-5 md:leading-[35px] tracking-[0.84px] md:tracking-[1px]">
+              <div
+                class="text-sm text-justify md:text-xl leading-5 md:leading-[35px] tracking-[0.84px] md:tracking-[1px]"
+              >
                 <p>會為你的生活體驗帶來嶄新選擇!</p>
                 <p>
                   作為首間官方認證EVO
@@ -481,36 +477,6 @@
             </div>
           </div>
         </section>
-        <el-backtop :bottom="120">
-          <div
-            class="backtop text-white w-[32.972px] h-[66.812px] md:w-[32.5px] md:h-[65.855px] rounded-[43.39px] md:rounded-[42.763px] bg-gradient-to-b from-[#00d6ff] to-[#008098] flex flex-col justify-center items-center tracking-[0.75px]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="19"
-              height="20"
-              viewBox="0 0 19 20"
-              fill="none"
-            >
-              <path
-                d="M9.70312 6.76538V18.3683"
-                stroke="white"
-                stroke-width="1.48026"
-                stroke-linecap="round"
-              />
-              <path
-                d="M4.60093 10.9194L9.70281 5.93091L14.8047 10.9194"
-                stroke="white"
-                stroke-width="1.48026"
-                stroke-linecap="round"
-              />
-            </svg>
-            <span
-              class="text-[9.546px] md:text-[9.408px] font-bold font-[ITC Avant Garde Gothic Pro] text-center"
-              >TOP</span
-            >
-          </div>
-        </el-backtop>
       </main>
       <aside
         class="page-left flex-1 hidden xl:block order-2 xl:order-1 relative"
@@ -560,6 +526,38 @@
         </div>
       </aside>
     </div>
+    <div class="backtop">
+      <el-backtop :bottom="150" ref="backtop" class="backtop-main">
+        <div
+          class="w-[32.972px] h-[66.812px] md:w-[32.5px] md:h-[65.855px] rounded-[43.39px] md:rounded-[42.763px] text-white bg-gradient-to-b from-[#00d6ff] to-[#008098] flex flex-col justify-center items-center tracking-[0.75px]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="20"
+            viewBox="0 0 19 20"
+            fill="none"
+          >
+            <path
+              d="M9.70312 6.76538V18.3683"
+              stroke="white"
+              stroke-width="1.48026"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4.60093 10.9194L9.70281 5.93091L14.8047 10.9194"
+              stroke="white"
+              stroke-width="1.48026"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span
+            class="text-[9.546px] md:text-[9.408px] font-bold font-[ITC Avant Garde Gothic Pro] text-center"
+            >TOP</span
+          >
+        </div>
+      </el-backtop>
+    </div>
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -578,11 +576,18 @@ $primary-color: #3bd7f1;
 :deep(.new-Footer-v2 section) {
   margin-top: 0 !important;
 }
-:deep(.el-backtop) {
-  width: auto;
-  height: auto;
-  left: 5px;
-  right: auto !important;
+.backtop {
+  position: sticky;
+  bottom: 150px;
+  height: 0;
+  z-index: 10;
+  &-main {
+    background: transparent;
+    box-shadow: none;
+    left: 5px;
+    right: auto !important;
+    position: relative;
+  }
 }
 // 图片抖动动画
 @keyframes ShakeImage {
@@ -606,19 +611,6 @@ $primary-color: #3bd7f1;
   }
 }
 // 按钮打光动画
-// @keyframes ButtonShine {
-//   0%,
-//   70%,
-//   100% {
-//     opacity: 0;
-//   }
-//   80% {
-//     opacity: 1;
-//   }
-//   90% {
-//     opacity: 0.6;
-//   }
-// }
 @keyframes ButtonShine {
   0% {
     left: -50%;
@@ -679,7 +671,6 @@ $primary-color: #3bd7f1;
     background-size: 347px;
   }
   &-question {
-    z-index: 1;
     img {
       &:nth-child(1) {
         position: absolute;
@@ -903,11 +894,6 @@ $primary-color: #3bd7f1;
     }
   }
 }
-@media screen and (min-width: 991px) {
-  :deep(.el-backtop) {
-    left: calc(50% - 400.25px);
-  }
-}
 @media screen and (min-width: 768px) {
   .page {
     background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-banner.avif")
@@ -975,6 +961,13 @@ $primary-color: #3bd7f1;
     }
   }
 }
+@media screen and (min-width: 991px) {
+  .backtop {
+    &-main {
+      left: calc(50% - 400.25px);
+    }
+  }
+}
 </style>
 <script>
 import HeadV3 from "@/components/Publice/HeadV3.vue";
@@ -1003,12 +996,16 @@ export default {
     this.$nextTick(() => {
       if (this.$gsap && this.$ScrollTrigger) {
         this.$gsap.registerPlugin(this.$ScrollTrigger);
-        console.log("GSAP and ScrollTrigger loaded, refs:", this.$refs);
+        // console.log("GSAP and ScrollTrigger loaded, refs:", this.$refs);
         this.setupAnimations();
       } else {
         console.error("GSAP or ScrollTrigger not available");
       }
+      window.addEventListener("scroll", this.handleScroll);
     });
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     async copyCurrentUrl() {

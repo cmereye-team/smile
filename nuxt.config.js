@@ -128,7 +128,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    "nuxt-schema-org",
   ],
   schemaOrg: {
     canonicalHost: 'https://smile.hkcmereye.com'  // 生产环境域名
@@ -136,7 +135,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios"],
+    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios", "nuxt-jsonld"],
   ],
 
   workbox: {
