@@ -196,13 +196,28 @@ export default {
       userShare: [
         {
           type: "SMILE Pro",
+          href: "https://youtu.be/Z5ut-9tIhmo",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-sarah@1x.avif",
+          text: ["唔洗矇查查周圍搵眼鏡"],
+          nameEn: "Sarah",
+          nameCn: "李蒨怡",
+        },
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/857FwJQu7OA",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-jay@1x.avif",
+          text: ["形象都會專業好多"],
+          nameEn: "Jay",
+          nameCn: "沈以諾",
+        },
+        {
+          type: "SMILE Pro",
           href: "https://youtu.be/AT7ZVZ4lFgM",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro1.avif",
           text: ["咸淡水活動都咁方便"],
           nameEn: "Karen",
           nameCn: "譚凱琳",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/10KYv_gGgWM",
