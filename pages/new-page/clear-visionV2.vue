@@ -394,7 +394,6 @@ i {
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none;
       .CorrectionProgram-Box-show {
         opacity: 1;
         z-index: 2;
@@ -1381,7 +1380,6 @@ i {
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none;
       .CorrectionProgram-Box-show {
         opacity: 1;
         z-index: 2;
