@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-17 17:06:18
+ * @LastEditTime: 2025-09-08 19:02:49
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -557,7 +557,7 @@ export default {
 };
 </script>
 <template>
-  <div class="page font-tc">
+  <div class="page">
     <HeadV3 />
     <div class="page-smile">
       <main class="main">
@@ -998,10 +998,862 @@ export default {
   </div>
 </template>
 <style lang="scss" scoped>
-@media screen and (max-width:991px) {
-  :deep(.footer-bottom){
-    margin-bottom: 0;
-    background-color: #f4fafc;
+$primary-color: #4570b6;
+$text-color: #6d6e71;
+.page {
+  font-family: "Noto Sans TC";
+}
+.subtitle {
+  color: $primary-color;
+  font-weight: 900;
+  font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
+  line-height: #{"clamp(1.531rem, 1.406rem + 0.63vw, 1.875rem)"};
+}
+.more {
+  &-button {
+    padding: #{"clamp(0.375rem, 0.239rem + 0.68vw, 0.75rem)"} #{"clamp(2rem, 1.455rem + 2.73vw, 3.5rem)"};
+    display: flex;
+    gap: #{"clamp(0.563rem, 0.403rem + 0.8vw, 1rem)"};
+    align-items: center;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: #{"clamp(6.25rem, 4.432rem + 9.09vw, 11.25rem)"};
+    width: fit-content;
+    margin: 0 auto;
+    span {
+      font-size: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
+      font-weight: 700;
+      line-height: #{"clamp(2.25rem, 1.614rem + 3.18vw, 4rem)"};
+      letter-spacing: #{"clamp(0.063rem, 0.044rem + 0.09vw, 0.113rem)"};
+      text-align: justify;
+    }
+    svg {
+      width: #{"clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem)"};
+      height: #{"clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem)"};
+    }
+  }
+}
+.smile {
+  position: absolute;
+  &-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url("https://statichk.cmermedical.com/smile/smileV2/smile-bg.avif")
+      no-repeat;
+    background-size: cover;
+  }
+  &-left {
+    // width: 28.75vw;
+    width: 540px;
+    height: 900px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 1px solid $primary-color;
+      width: 200%;
+      height: 100%;
+      z-index: 2;
+      background: transparent;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    &::before {
+      content: "";
+      border: 2px dashed $primary-color;
+      z-index: 1;
+      width: 180%;
+      height: 80%;
+      border-radius: 50%;
+      position: absolute;
+      top: 10%;
+      right: 25%;
+      pointer-events: none;
+    }
+  }
+  &-right {
+    width: 30vw;
+    position: relative;
+    height: 100vh;
+
+    &-title {
+      // padding-left: 5.2083vw; /* 100 / 1920 * 100 ≈ 5.2083 */
+      // padding-bottom: 1.25vw; /* 24 / 1920 * 100 = 1.25 */
+      padding: 200px 0 1.25vw 5.2083vw;
+
+      h2 {
+        color: #000;
+        text-align: left;
+        font-size: 1.3139vw; /* 25.226 / 1920 * 100 ≈ 1.3139 */
+        font-style: normal;
+        font-weight: 300;
+        line-height: 200%; /* 保持不变 */
+        letter-spacing: 0.6568vw; /* 1.261 / 1920 * 100 ≈ 0.6568 */
+        margin-bottom: 0;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          margin-right: 0.5208vw; /* 10 / 1920 * 100 ≈ 0.5208 */
+          width: 0.78125vw; /* 15 / 1920 * 100 = 0.78125 */
+          height: 0.78125vw; /* 15 / 1920 * 100 = 0.78125 */
+          flex-shrink: 0;
+          background: #4570b6;
+          border-radius: 50%;
+        }
+      }
+
+      p {
+        color: $primary-color;
+        font-family: "ITC Avant Garde Gothic Pro";
+        font-size: 1.2104vw; /* 23.23 / 1920 * 100 ≈ 1.2104 */
+        font-style: normal;
+        font-weight: 700;
+        line-height: 217%; /* 保持不变 */
+        letter-spacing: 1.16px; /* 1.161 / 1920 * 100 ≈ 0.6047 */
+      }
+    }
+    &-swiper {
+      width: 100%;
+      // height: 500px;
+    }
+  }
+  &-footer {
+    position: relative;
+    z-index: 5;
+    margin-top: 0 !important;
+  }
+}
+.main {
+  z-index: 3;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+.newCenter {
+  position: relative;
+  background: linear-gradient(to top, $primary-color, 0 50px, white 50px 100%);
+
+  &-card {
+    background: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIHZpZXdCb3g9IjAgMCA3NjggNzM5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8bWFzayBpZD0ibWFzazBfMTAyMzJfMTciIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI3NjgiIGhlaWdodD0iNzM5Ij4KPHJlY3Qgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8xMDIzMl8xNykiPgo8cGF0aCBkPSJNLTUgMTcxLjA3OEw4NDYgMzUzLjc3OSIgc3Ryb2tlPSIjNUQ4NUMzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTYwNC4xNzggODMuMDY2N0w0NDguOTQ5IDc4OC45NDUiIHN0cm9rZT0idXJsKCNwYWludDBfbGluZWFyXzEwMjMyXzE3KSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik01NTQuMTU1IDMxMi42MjJDNTY1LjQzNCAzMTUuMDQ4IDU3Ni41NjYgMzA3Ljk3MiA1NzkuMDE5IDI5Ni44MTlDNTgxLjQ3MiAyODUuNjY1IDU3NC4zMTcgMjc0LjY1NyA1NjMuMDM4IDI3Mi4yMzFDNTUxLjc1OSAyNjkuODA2IDU0MC42MjcgMjc2Ljg4MSA1MzguMTc0IDI4OC4wMzVDNTM1LjcyMSAyOTkuMTg5IDU0Mi44NzYgMzEwLjE5NyA1NTQuMTU1IDMxMi42MjJaIiBzdHJva2U9IiM1RDg1QzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTAyMzJfMTciIHgxPSI2MDQuNjY3IiB5MT0iODMuMTcxOCIgeDI9IjQ1Mi43MTYiIHkyPSI3ODkuNzU1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1RDg1QzMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSJ3aGl0ZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=")
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: 400;
+    border-radius: 0 0 1rem 1rem;
+    // &-title {
+    //   span {
+    //     // font-size: #{"clamp(4.375rem, 2.83rem + 7.73vw, 8.625rem)"};
+    //     // line-height: #{"clamp(4.75rem, 3.068rem + 8.41vw, 9.375rem)"};
+    //     // font-weight: 700;
+    //     font-family: "Poppins", sans-serif;
+    //   }
+    //   // h3 {
+    //   //   font-size: #{"clamp(2.375rem, 1.557rem + 4.09vw, 4.625rem)"};
+    //   //   line-height: #{"clamp(2.5rem, 1.545rem + 4.77vw, 5.125rem)"};
+    //   // }
+    //   // p {
+    //   //   font-size: #{"clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem)"};
+    //   //   line-height: #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"};
+    //   // }
+    // }
+    // &-nav {
+    //   font-size: 12px;
+    //   line-height: 21.88px;
+    //   letter-spacing: 0.36px;
+    //   font-weight: normal;
+    //   margin-top: #{"clamp(2rem, 1.182rem + 4.09vw, 4.25rem)"};
+    // }
+  }
+}
+// 矫视原理
+.principles {
+  padding: #{"clamp(2rem, 0.545rem + 7.27vw, 6rem)"} #{"clamp(1rem, -1rem + 10vw, 6.5rem)"};
+  position: relative;
+  h2 {
+    text-align: center;
+    font-weight: 900;
+    line-height: 30px;
+    font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
+    margin-bottom: #{"clamp(1rem, 0.727rem + 1.36vw, 1.75rem)"};
+    span {
+      font-weight: 700;
+    }
+  }
+  p {
+    font-weight: 300;
+    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
+    line-height: 35px;
+    letter-spacing: #{"clamp(0.044rem, 0.037rem + 0.03vw, 0.063rem)"};
+    span {
+      font-weight: 700;
+    }
+  }
+  .more {
+    &-button {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: #fff;
+      color: $primary-color;
+      border: 2px solid $primary-color;
+    }
+  }
+}
+// 矫视步骤
+.steps {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    $primary-color 0 50px,
+    white 50px 100%
+  );
+  border: inherit;
+  .subtitle {
+    font-size: #{"clamp(1.25rem, 0.931rem + 1.31vw, 2.5rem)"};
+    line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
+    span {
+      font-size: #{"clamp(1.25rem, 1.091rem + 0.65vw, 1.875rem)"};
+      line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
+    }
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    // gap: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
+    gap: #{"clamp(2.065rem, 1.572rem + 2.02vw, 4rem)"};
+    svg {
+      width: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
+      height: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
+    }
+  }
+  &-bg {
+    border-radius: 1rem 1rem 0 0;
+    padding: #{"clamp(4.337rem, 3.881rem + 1.87vw, 6.125rem)"} #{"clamp(1.688rem, 1.21rem + 1.96vw, 3.563rem)"}
+      #{"clamp(3.984rem, 2.594rem + 5.7vw, 9.438rem)"};
+  }
+  &-number {
+    display: flex;
+    justify-content: space-between;
+    .step {
+      cursor: pointer;
+      text-align: right;
+      width: 30%;
+      color: $text-color;
+      font-size: #{"clamp(1.25rem, 0.841rem + 2.05vw, 2.375rem)"};
+      margin-bottom: #{"clamp(1.25rem, 0.977rem + 1.36vw, 2rem)"};
+      position: relative;
+      border-bottom: none;
+      &.active {
+        color: $primary-color;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        /* 伪元素在active状态下的样式 */
+        &::after {
+          height: #{"clamp(0.156rem, 0.099rem + 0.28vw, 0.313rem)"};
+          background: $primary-color;
+        }
+      }
+      /* 非active状态下的伪元素样式 */
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: #{"clamp(0.031rem, 0.02rem + 0.06vw, 0.063rem)"};
+        background: $text-color;
+        transition: all 0.3s ease; /* 过渡伪元素的高度和背景色 */
+      }
+    }
+  }
+  &-content {
+    color: $text-color;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &-text {
+      position: absolute;
+      font-weight: 400;
+      font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
+      line-height: #{"clamp(1.125rem, 0.739rem + 1.93vw, 2.188rem)"};
+      margin-top: #{"clamp(0.563rem, 0.358rem + 1.02vw, 1.125rem)"};
+    }
+  }
+}
+.whyChoose {
+  padding: 0 #{"clamp(1.688rem, 1.21rem + 1.96vw, 3.563rem)"} #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"};
+  img {
+    width: 100%;
+  }
+  &-intro {
+    color: $text-color;
+    font-weight: 300;
+    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
+    line-height: 30px;
+    letter-spacing: #{"clamp(0.156rem, 0.077rem + 0.4vw, 0.375rem)"};
+    p {
+      margin-bottom: 30px;
+    }
+    span {
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+}
+// 好处
+.benefit {
+  padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
+  h2 {
+    text-align: center;
+    padding-bottom: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"};
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 96%;
+    &:first-child {
+      margin-top: 0;
+      z-index: 1;
+    }
+    &:last-child {
+      margin-top: #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
+      z-index: 2;
+    }
+  }
+  &-item {
+    flex: 1;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    margin: 0 #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
+    position: relative;
+    text-align: center;
+    &-title {
+      font-weight: 700;
+      color: $primary-color;
+      font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
+      line-height: #{"clamp(0.531rem, 0.27rem + 1.31vw, 1.25rem)"};
+      letter-spacing: #{"clamp(0.25rem, 0.199rem + 0.26vw, 0.391rem)"};
+    }
+    &-icon {
+      width: #{"clamp(3.25rem, -1.886rem + 25.68vw, 17.375rem)"};
+      margin: 0 auto 2px;
+    }
+    &-content {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      img {
+        margin: 0 auto;
+      }
+      p {
+        color: #fff;
+        font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
+        line-height: #{"clamp(1rem, 0.909rem + 0.45vw, 1.25rem)"};
+        font-weight: 400;
+        white-space: pre-line;
+        line-height: 1.2;
+      }
+    }
+    &.acive {
+      .benefit-item-title {
+        opacity: 0;
+        height: 0;
+      }
+      .benefit-item-content {
+        opacity: 1;
+        height: auto;
+      }
+    }
+    &:hover {
+      background-color: $primary-color;
+      transition: all 0.4s ease;
+      .benefit-item-title {
+        opacity: 0;
+        height: 0;
+      }
+      .benefit-item-content {
+        opacity: 1;
+        height: auto;
+      }
+    }
+  }
+}
+// 是否适合
+.condition {
+  padding: #{"clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"}
+    0;
+  position: relative;
+  width: 100%;
+  background: url("https://statichk.cmermedical.com/smile/smileV2/smile-condition-bg.svg")
+    no-repeat;
+  background-size: #{"clamp(4.375rem, 2.557rem + 9.09vw, 9.375rem)"} auto;
+  background-position: 0;
+  h2 {
+    white-space: nowrap;
+    font-family: "Noto Sans HK";
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    span {
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
+    &:nth-child(2) {
+      .condition-item {
+        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"};
+      }
+    }
+    &:nth-child(3) {
+      .condition-item {
+        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.425rem + 3.5vw, 2rem)"};
+      }
+    }
+    &:nth-child(4) {
+      margin-left: #{"clamp(2.5rem, 1.591rem + 4.55vw, 5rem)"};
+    }
+  }
+  &-item {
+    flex: 1;
+    color: $text-color;
+    font-weight: 400;
+    background-color: #fff;
+    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
+    line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
+    flex: 0 1 auto;
+    padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.125rem + 2.5vw, 2rem)"};
+    border: 2px solid $primary-color;
+    box-shadow: 3px #{"clamp(0.25rem, 0.182rem + 0.34vw, 0.438rem)"} 2px $primary-color;
+    border-radius: #{"clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem)"};
+  }
+  &-desc {
+    color: $text-color;
+    text-align: center;
+    font-size: #{"clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem)"};
+    line-height: #{"clamp(1.375rem, 1.011rem + 1.82vw, 2.375rem)"};
+    letter-spacing: #{"clamp(0rem, -0.036rem + 0.18vw, 0.1rem)"};
+    font-weight: 400;
+    margin-top: #{"clamp(0.75rem, -0.205rem + 4.77vw, 3.375rem)"};
+    margin-bottom: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
+  }
+}
+.xtra {
+  padding: #{"clamp(3.5rem, 2.864rem + 3.18vw, 5.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"};
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzY5IiBoZWlnaHQ9IjExODEiIHZpZXdCb3g9IjAgMCA3NjkgMTE4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTc2OCAxTDEgMTE4MCIgc3Ryb2tlPSIjNDU3MEI2Ii8+CjxwYXRoIGQ9Ik0wLjk5OTk4NSAxTDc2OCAxMTgwIiBzdHJva2U9IiM0NTcwQjYiLz4KPC9zdmc+Cg==")
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+  &-title {
+    text-align: center;
+    padding-bottom: #{"clamp(1.4rem, 0.922rem + 1.96vw, 3.275rem)"};
+    p {
+      color: $primary-color;
+      font-family: "ITC Avant Garde Gothic Pro";
+      font-weight: 700;
+      font-size: #{"clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem)"};
+      line-height: #{"clamp(1.5rem, 0.909rem + 2.95vw, 3.125rem)"};
+    }
+    span {
+      color: $text-color;
+      font-weight: 500;
+      font-size: #{"clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem)"};
+      line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
+      letter-spacing: #{"clamp(0.075rem, 0.057rem + 0.09vw, 0.125rem)"};
+    }
+  }
+  &-paper {
+    position: relative;
+    height: 488px;
+    &.unfolded {
+      animation: xtraHeight 1s ease forwards;
+    }
+    &-item {
+      border: 1px solid #000;
+      background-color: #fff;
+      position: absolute;
+      left: 72px;
+      width: #{"clamp(18.063rem, 13.632rem + 18.17vw, 35.442rem)"};
+      padding: #{"clamp(1.804rem, 1.384rem + 1.72vw, 3.451rem)"} #{"clamp(1.375rem, 0.97rem + 1.66vw, 2.962rem)"}
+        #{"clamp(2.138rem, 1.758rem + 1.56vw, 3.625rem)"};
+      &:nth-child(1) {
+        z-index: 1;
+        &.unfolded {
+          animation: xtraBottom 1s ease forwards;
+          &::after {
+            content: "";
+            z-index: 2;
+            width: 0;
+            height: 0;
+            background-color: #dbdbdb;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+            animation: xtraTriangle 1s ease forwards;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        z-index: 3;
+        &.unfolded {
+          animation: xtraTop 1s ease forwards;
+        }
+      }
+    }
+    &-title {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: #{"clamp(1rem, 0.857rem + 0.59vw, 1.563rem)"};
+      line-height: #{"clamp(0.636rem, 0.48rem + 0.64vw, 1.25rem)"};
+      margin-bottom: #{"clamp(1.018rem, 0.752rem + 1.09vw, 2.063rem)"};
+      span {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    &-intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: #{"clamp(0.5rem, 0.022rem + 1.96vw, 2.375rem)"};
+      p {
+        color: $text-color;
+        text-align: justify;
+        font-weight: 400;
+        font-size: #{"clamp(0.875rem, 0.779rem + 0.39vw, 1.25rem)"};
+        line-height: #{"clamp(1.113rem, 0.839rem + 1.12vw, 2.188rem)"};
+        letter-spacing: #{"clamp(0.219rem, 0.211rem + 0.03vw, 0.25rem)"};
+      }
+    }
+    &-icon {
+      height: #{"clamp(5.125rem, 3.898rem + 6.14vw, 8.5rem)"};
+    }
+  }
+}
+// 小练习
+.exercise {
+  padding: #{"clamp(1.5rem, 1.364rem + 0.68vw, 1.875rem)"} 0 #{"clamp(3.75rem, 2.568rem + 5.91vw, 7rem)"};
+  &-title {
+    text-align: center;
+    h2 {
+      font-weight: 900;
+      font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
+      line-height: #{"clamp(1.375rem, 1.193rem + 0.91vw, 1.875rem)"};
+    }
+    p {
+      font-weight: 400;
+      font-size: #{"clamp(0.875rem, 0.648rem + 1.14vw, 1.5rem)"};
+      line-height: #{"clamp(1.375rem, 1.193rem + 0.91vw, 1.875rem)"};
+      margin-top: #{"clamp(0.25rem, -0.068rem + 1.59vw, 1.125rem)"};
+      margin-bottom: #{"clamp(1.875rem, 1.739rem + 0.68vw, 2.25rem)"};
+    }
+  }
+  &-image {
+    padding: 0 #{"clamp(2.125rem, -0.739rem + 14.32vw, 10rem)"};
+    display: flex;
+    justify-content: center;
+  }
+  &-intro {
+    padding: #{"clamp(1.5rem, 1.182rem + 1.59vw, 2.375rem)"} #{"clamp(2.375rem, 2.011rem + 1.82vw, 3.375rem)"}
+      0;
+  }
+}
+.share {
+  padding: 24px 0 10px;
+  &-title {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    span {
+      color: #000;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16.496px; /* 82.478% */
+    }
+  }
+  &-group {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    &-item {
+      border-radius: 50%;
+      padding: 16px;
+      border: 1px solid $primary-color;
+    }
+  }
+}
+:deep(.UserShareBox-list::-webkit-scrollbar-track) {
+  margin: 0 59px;
+}
+@media screen and (min-width: 1440px) {
+  .smile {
+    &-left {
+      display: block;
+    }
+    &-right {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1744px) {
+  .smile {
+    &-left {
+      width: 22vw;
+      &::after {
+        width: 300%;
+      }
+      &::before {
+        width: 200%;
+      }
+    }
+    &-right {
+      width: 25vw;
+    }
+  }
+}
+// 手机和平板
+@media screen and (max-width: 1199px) {
+  .condition {
+    &-list {
+      &:nth-child(2) {
+        .condition-item {
+          margin-right: 200px;
+        }
+      }
+    }
+  }
+}
+// 平板和电脑
+@media screen and (min-width: 768px) {
+  .main {
+    width: 768px;
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
+  }
+  .principles {
+    .more-button {
+      bottom: -6%;
+    }
+  }
+  :deep(.headV3) {
+    // max-width: 765px;
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
+  }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-72px, 0);
+    }
+  }
+
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(
+        72px,
+        #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
+      ); // 294-328
+    }
+  }
+
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 144px; //294-328
+      height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
+    }
+  }
+
+  @keyframes xtraHeight {
+    0% {
+      height: 488px;
+    }
+    100% {
+      height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"}; // 740-790
+    }
+  }
+}
+// 电脑端
+@media screen and (min-width: 1200px) {
+  .benefit {
+    padding: 0;
+  }
+  .condition {
+    padding: 100px 30px 0 30px;
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &-item {
+      font-size: 20px;
+      line-height: 35px;
+      letter-spacing: 2px;
+    }
+    &-item {
+      white-space: nowrap;
+    }
+    &-desc {
+      span {
+        display: block;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+// 手机端
+@media screen and (max-width: 767px) {
+  .xtra {
+    &-paper {
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
+      &-item {
+        left: 36px;
+      }
+    }
+  }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
+    }
+  }
+
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      //8-32
+      transform: translate(
+        #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
+        #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
+      ); //208-230
+    }
+  }
+
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      //40-60
+      width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
+      height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
+    } //42-48
+  }
+
+  @keyframes xtraHeight {
+    0% {
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"}; //288-312
+    }
+    100% {
+      height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"}; // 740-790
+    }
+  }
+}
+// 平板端
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  // .xtra {
+  //   &-paper {
+  //     height: #{"clamp(24.875rem, 14.852rem + 20.88vw, 30.5rem)"};
+  //     &-item {
+  //       left: #{"clamp(12.5rem, -5.319rem + 37.12vw, 22.5rem)"}; //200-360
+  //     }
+  //   }
+  // }
+  // @keyframes xtraBottom {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
+  //   100% {
+  //     transform: translate(-72px, 0);
+  //   }
+  // }
+
+  // @keyframes xtraTop {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
+  //   100% {
+  //     transform: translate(
+  //       72px,
+  //       #{"clamp(15.25rem, 8.791rem + 13.46vw, 18.875rem)"}
+  //     ); // 294-328
+  //   }
+  // }
+
+  // @keyframes xtraTriangle {
+  //   0% {
+  //     width: 0;
+  //     height: 0;
+  //   }
+  //   100% {
+  //     width: 144px; //294-328
+  //     height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
+  //   }
+  // }
+
+  // @keyframes xtraHeight {
+  //   0% {
+  //     height: #{"clamp(24.875rem, 14.852rem + 20.88vw, 30.5rem)"}; //398-488
+  //   }
+  //   100% {
+  //     height: #{"clamp(41.25rem, 27.886rem + 27.84vw, 48.75rem)"}; // 740-790
+  //   }
+  // }
+}
+@media screen and (min-width: 2000px) {
+  .smile {
+    &-right {
+      &-swiper {
+        margin-left: #{"clamp(-6.25rem, -14.931rem + 6.94vw, 0rem)"};
+      }
+    }
   }
 }
 </style>
