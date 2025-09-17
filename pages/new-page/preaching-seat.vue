@@ -87,10 +87,12 @@
                       label="Smile Pro 講座-尖沙咀"
                       value="smilerProTsui"
                     ></el-option> -->
+                    <!-- Smile Pro 講座-旺角 -->
                     <el-option
                       :label="$t('appointFroms.content1.title1')"
                       value="smileProMongKok"
                     ></el-option>
+                    <!-- Smile講座-中環 -->
                     <el-option
                       :label="$t('appointFroms.content1.title2')"
                       value="smileCentral"
@@ -100,6 +102,12 @@
                       label="老花講座-中環"
                       value="clearVisionCentral"
                     ></el-option> -->
+                    <!-- Smile講座-旺角 -->
+                    <el-option
+                      :label="$t('appointFroms.content1.title3')"
+                      value="smileMongKok"
+                    ></el-option>
+                    <!-- 老花講座-旺角 -->
                     <el-option
                       :label="$t('appointFroms.content1.title4')"
                       value="clearVisionMongKok"
@@ -270,6 +278,44 @@
         </div>
       </div>
       <div class="lecture-image">
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25101.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25101.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25101.png"
+            alt="希瑪眼科十月中環預約"
+            title="希瑪眼科十月中環"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25102.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25102.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25102.png"
+            alt="希瑪眼科十月旺角預約"
+            title="希瑪眼科十月旺角"
+          />
+        </picture>
         <img
           src="https://statichk.cmermedical.com/smile/preaching-seat/calendar1.avif"
           alt="希瑪眼科九月中環預約"
@@ -310,74 +356,74 @@
         <div
           class="applyDialog-main relative text-center px-4 md:px-12 flex justify-center items-center"
         >
-        <div>
-          <div
-            class="applyDialog-main-icon mb-2 md:mb-8 w-[22px] md:w-[58px] mx-auto"
-          >
-            <svg
-              class="w-full h-full"
-              xmlns="http://www.w3.org/2000/svg"
-              width="58"
-              height="58"
-              viewBox="0 0 58 58"
-              fill="none"
-            >
-              <path
-                d="M0.000672084 28.9966C-0.103591 13.0757 13.0993 -0.00452954 29.0086 1.17666e-06C44.8567 0.0045319 58.0165 13.0553 58.0029 29.0329C57.9893 44.9289 44.8748 58.0566 28.8885 58C13.0064 57.9434 -0.108125 44.8564 0.000672084 28.9966ZM45.9152 20.7801C45.8744 20.3588 45.6273 20.053 45.344 19.7698C44.145 18.5692 42.9482 17.3685 41.7469 16.1724C40.8675 15.2957 40.3937 15.298 39.5143 16.1792C34.5572 21.1358 29.5957 26.0879 24.6499 31.0558C24.2782 31.4296 24.072 31.4183 23.7116 31.0513C21.93 29.2345 20.1235 27.4448 18.3216 25.6484C17.5917 24.9212 17.0818 24.9258 16.3474 25.6575C15.1053 26.8944 13.8655 28.1335 12.6302 29.3749C11.8618 30.1451 11.8686 30.5959 12.646 31.373C16.1343 34.8661 19.6226 38.3593 23.1132 41.8525C23.9949 42.736 24.3621 42.7337 25.2642 41.8321C29.9832 37.1179 34.7023 32.4037 39.4214 27.6872C41.4205 25.6892 43.4196 23.6911 45.4211 21.6931C45.6794 21.4348 45.9129 21.1698 45.922 20.7779L45.9152 20.7801Z"
-                fill="#4570B6"
-              />
-            </svg>
-          </div>
-          <div class="applyDialog-main-text">
-            <p
-              class="text-sm md:text-[40px] font-black leading-[10.654px] md:leading-[30px] text-primary font-tc tracking-[1.421px] md:tracking-[1px] mb-[10.66px] md:mb-[31px]"
-            >
-              報名成功
-            </p>
+          <div>
             <div
-              class="text-[7.103px] md:text-xl text-text font-hk font-light leading-[12.43px] md:leading-[35px] tracking-[1.421px] md:tracking-[4px] mb-[12.43px] md:mb-9 whitespace-nowrap"
+              class="applyDialog-main-icon mb-2 md:mb-8 w-[22px] md:w-[58px] mx-auto"
             >
-              <p>感謝您的填寫。</p>
-              <p>我們已收到您的表單。</p>
-              <p class="font-bold">真人客戶服務員將在辦公時間回覆您！</p>
+              <svg
+                class="w-full h-full"
+                xmlns="http://www.w3.org/2000/svg"
+                width="58"
+                height="58"
+                viewBox="0 0 58 58"
+                fill="none"
+              >
+                <path
+                  d="M0.000672084 28.9966C-0.103591 13.0757 13.0993 -0.00452954 29.0086 1.17666e-06C44.8567 0.0045319 58.0165 13.0553 58.0029 29.0329C57.9893 44.9289 44.8748 58.0566 28.8885 58C13.0064 57.9434 -0.108125 44.8564 0.000672084 28.9966ZM45.9152 20.7801C45.8744 20.3588 45.6273 20.053 45.344 19.7698C44.145 18.5692 42.9482 17.3685 41.7469 16.1724C40.8675 15.2957 40.3937 15.298 39.5143 16.1792C34.5572 21.1358 29.5957 26.0879 24.6499 31.0558C24.2782 31.4296 24.072 31.4183 23.7116 31.0513C21.93 29.2345 20.1235 27.4448 18.3216 25.6484C17.5917 24.9212 17.0818 24.9258 16.3474 25.6575C15.1053 26.8944 13.8655 28.1335 12.6302 29.3749C11.8618 30.1451 11.8686 30.5959 12.646 31.373C16.1343 34.8661 19.6226 38.3593 23.1132 41.8525C23.9949 42.736 24.3621 42.7337 25.2642 41.8321C29.9832 37.1179 34.7023 32.4037 39.4214 27.6872C41.4205 25.6892 43.4196 23.6911 45.4211 21.6931C45.6794 21.4348 45.9129 21.1698 45.922 20.7779L45.9152 20.7801Z"
+                  fill="#4570B6"
+                />
+              </svg>
+            </div>
+            <div class="applyDialog-main-text">
+              <p
+                class="text-sm md:text-[40px] font-black leading-[10.654px] md:leading-[30px] text-primary font-tc tracking-[1.421px] md:tracking-[1px] mb-[10.66px] md:mb-[31px]"
+              >
+                報名成功
+              </p>
+              <div
+                class="text-[7.103px] md:text-xl text-text font-hk font-light leading-[12.43px] md:leading-[35px] tracking-[1.421px] md:tracking-[4px] mb-[12.43px] md:mb-9 whitespace-nowrap"
+              >
+                <p>感謝您的填寫。</p>
+                <p>我們已收到您的表單。</p>
+                <p class="font-bold">真人客戶服務員將在辦公時間回覆您！</p>
+              </div>
+            </div>
+            <div
+              class="applyDialog-main-button flex justify-center w-[106.186px] md:w-[291px] mx-auto bg-primary"
+            >
+              <nuxt-link
+                to="/"
+                class="text-justify text-white font-tc fong-bold text-[12.785px] md:text-4xl leading-[22.374px] md:leading-[63px] tracking-[0.639px] md:tracking-[1.8px]"
+                >返回主頁</nuxt-link
+              >
+            </div>
+            <div
+              class="applyDialog-close absolute right-[10px] top-[10px] md:right-[28px] md:top-[30px] w-[8.5px] md:w-6"
+              @click="applySuccess = false"
+            >
+              <svg
+                class="w-full h-full"
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+              >
+                <path
+                  d="M2 25.9468L25.2083 2.73853"
+                  stroke="#4570B6"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M26 25.9468L2.79168 2.73853"
+                  stroke="#4570B6"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </svg>
             </div>
           </div>
-          <div
-            class="applyDialog-main-button flex justify-center w-[106.186px] md:w-[291px] mx-auto bg-primary"
-          >
-            <nuxt-link
-              to="/"
-              class="text-justify text-white font-tc fong-bold text-[12.785px] md:text-4xl leading-[22.374px] md:leading-[63px] tracking-[0.639px] md:tracking-[1.8px]"
-              >返回主頁</nuxt-link
-            >
-          </div>
-          <div
-            class="applyDialog-close absolute right-[10px] top-[10px] md:right-[28px] md:top-[30px] w-[8.5px] md:w-6"
-            @click="applySuccess = false"
-          >
-            <svg
-              class="w-full h-full"
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
-              fill="none"
-            >
-              <path
-                d="M2 25.9468L25.2083 2.73853"
-                stroke="#4570B6"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M26 25.9468L2.79168 2.73853"
-                stroke="#4570B6"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-        </div>
         </div>
       </div>
     </div>
@@ -598,11 +644,27 @@ export default {
             "2025-09-20",
             "2025-09-24",
             "2025-09-27",
+            "2025-10-04",
+            "2025-10-08",
+            "2025-10-11",
+            "2025-10-15",
+            "2025-10-18",
+            "2025-10-22",
+            "2025-10-25",
+            "2025-10-29",
+            "2025-11-01",
           ];
           break;
         case "smileMongKok":
           // smile 旺角
-          this.allowedDates = [];
+          this.allowedDates = [
+            "2025-10-04",
+            "2025-10-09",
+            "2025-10-14",
+            "2025-10-18",
+            "2025-10-23",
+            "2025-10-28",
+          ];
           break;
         case "smileProMongKok":
           // smilePro 旺角
@@ -629,6 +691,8 @@ export default {
             "2025-09-23",
             "2025-09-27",
             "2025-09-29",
+            "2025-10-11",
+            "2025-10-25",
           ];
           break;
         case "clearVisionCentral":
@@ -649,6 +713,10 @@ export default {
             "2025-09-16",
             "2025-09-22",
             "2025-09-30",
+            "2025-10-07",
+            "2025-10-16",
+            "2025-10-21",
+            "2025-10-30",
           ];
           break;
         default:
@@ -776,7 +844,7 @@ export default {
         .then((res) => res.json())
         .then((res) => {
           if (res.code === 1) {
-            this.applySuccess = true
+            this.applySuccess = true;
             // this.$router.push({ path: "/messageFrom/" });
             // this.$message({
             //   showClose: true,
@@ -1235,7 +1303,7 @@ export default {
     align-items: center;
     margin: 85px 0;
 
-    & > img {
+    img {
       width: 952px;
     }
   }
@@ -1629,7 +1697,7 @@ export default {
   .lecture-image {
     margin: 0 auto;
 
-    & > img {
+    img {
       width: 100%;
     }
   }
