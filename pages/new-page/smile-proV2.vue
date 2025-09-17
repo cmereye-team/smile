@@ -1411,7 +1411,7 @@ export default {
           type: "SMILE Pro",
           href: "https://youtu.be/857FwJQu7OA",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-jay@1x.avif",
-          text: ["形象都會專業好多"],
+          text: ["無咗眼鏡都一樣做到唔","同活動"],
           nameEn: "Jay",
           nameCn: "沈以諾",
         },
