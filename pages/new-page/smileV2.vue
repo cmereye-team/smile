@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 11:08:16
+ * @LastEditTime: 2025-09-18 11:26:45
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -1039,7 +1039,7 @@ $text-color: #6d6e71;
   &-footer {
     position: relative;
     z-index: 5;
-    margin-top: 0 !important;
+    margin-top: 0;
   }
 }
 .main {
@@ -1596,6 +1596,14 @@ $text-color: #6d6e71;
   :deep(.footer-bottom) {
     margin-bottom: 0;
     background-color: #f4fafc;
+  }
+  .share {
+    padding-bottom: 70px;
+  }
+  .smile {
+    &-footer {
+      margin-top: -60px;
+    }
   }
 }
 // 手机和平板
