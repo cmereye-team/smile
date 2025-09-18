@@ -37,7 +37,8 @@
             <img
               :src="getImageSrc(item)"
               :style="dragImageStyle(index)"
-              alt="Image"
+              alt=""
+              @error="handleImageError($event)"
             />
           </nuxt-link>
           <a
@@ -50,7 +51,8 @@
             <img
               :src="getImageSrc(item)"
               :style="dragImageStyle(index)"
-              alt="Image"
+              alt=""
+              @error="handleImageError($event)"
             />
           </a>
           <div class="overlay" v-if="index !== activeIndex"></div>
@@ -112,6 +114,10 @@ export default {
     totalSlides() {
       return this.images.length;
     },
+    // 内联 SVG 白色占位图
+    placeholderImage() {
+      return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect width="400" height="400" fill="white"/%3E%3C/svg%3E';
+    },
   },
   methods: {
     /**
@@ -125,9 +131,17 @@ export default {
           `Image source is invalid for index ${this.activeIndex}:`,
           item
         );
-        return "https://picsum.photos/400/400";
+        return this.placeholderImage; // 返回白色占位图
       }
       return src;
+    },
+    /**
+     * @description: 处理图片加载失败
+     * @param {Event} event
+     */
+    handleImageError(event) {
+      event.target.src = this.placeholderImage; // 加载失败时显示白色占位图
+      console.log('Image failed to load, using placeholder for index:', this.activeIndex);
     },
     /**
      * @description: 获取轮播图样式
