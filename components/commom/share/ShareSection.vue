@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-18 08:55:13
- * @LastEditTime: 2025-09-18 09:26:43
+ * @LastEditTime: 2025-09-18 19:38:39
  * @FilePath: /components/commom/share/ShareSection.vue
  * @Description: 移动端分享
 -->
@@ -93,7 +93,7 @@
 </template>
 <style lang="scss" scoped>
 .share {
-  padding: 24px 0 10px;
+  padding: 24px 0 70px;
   &-title {
     display: flex;
     justify-content: center;

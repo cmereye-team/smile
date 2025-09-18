@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 17:37:45
+ * @LastEditTime: 2025-09-18 19:44:03
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -453,18 +453,37 @@ export default {
     this.getBannerList();
   },
   mounted() {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          this.xtraActive = true; // 进入视区
-        } else {
-          this.xtraActive = false; // 离开视区
-        }
-      },
-      { threshold: 0.3 } // 当可见比例达到 20% 时触发
-    );
-    observer.observe(this.$refs.xtraAnimateBox);
+    // 创建防抖函数，限制频繁触发
+    const debounce = (fn, delay) => {
+      let timer = null;
+      return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this, args), delay);
+      };
+    };
+    // IntersectionObserver 回调
+    const handleIntersection = debounce((entries) => {
+      const entry = entries[0];
+      // 当元素进入视区且可见比例达到 0.3 时触发展开
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+        this.xtraActive = true; // 进入视区
+        // 可选：如果只需要触发一次，取消观察
+        // observer.unobserve(this.$refs.xtraAnimateBox);
+      } else if (!entry.isIntersecting && entry.intersectionRatio < 0.1) {
+        this.xtraActive = false; // 离开视区
+      }
+    }, 200); // 200ms 防抖延迟
+
+    // 配置 IntersectionObserver
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: [0.1, 0.3, 0.5], // 设置多个阈值，平滑过渡
+      rootMargin: "50px 0px", // 增加 50px 的触发余量，减少边界抖动
+    });
+
+    // 确保 refs 存在再观察
+    if (this.$refs.xtraAnimateBox) {
+      observer.observe(this.$refs.xtraAnimateBox);
+    }
   },
   computed: {
     firstBenefit() {
@@ -755,7 +774,7 @@ export default {
         <section class="kol-mobile block lg:hidden">
           <userShare title="SMILE用家分享" :user-share="ShareData"></userShare>
         </section>
-        <section class="benefit">
+        <section class="benefit mb-[30px] md:mb-[100px]">
           <h2 class="subtitle mb-0">SMILE微笑激光矯視的好處</h2>
           <div class="benefit-list">
             <div class="benefit-row">
@@ -793,37 +812,54 @@ export default {
           </div>
         </section>
         <section class="condition">
-          <div class="condition-list">
-            <div class="condition-item">1,000 度以下近視</div>
-            <div class="condition-item">500 度以下散光</div>
-            <div class="condition-item">角膜厚度正常</div>
+          <div class="condition-list md:px-[30px] gap-1 md:gap-7">
+            <div class="condition-item py-[10px]">1,000 度以下近視</div>
+            <div class="condition-item py-[10px]">500 度以下散光</div>
+            <div class="condition-item py-[10px]">角膜厚度正常</div>
           </div>
-          <div class="condition-list">
-            <div class="condition-item">沒有患上眼疾，如青光眼或視網膜疾病</div>
-            <h2
-              class="text-primary mb-0 text-base md:text-3xl leading-[20.159px] md:leading-10 font-black font-hk"
+          <div class="condition-list relative">
+            <div
+              class="condition-item mr-[172px] md:mr-[300px] py-1 md:py-[13px]"
             >
-              你適合接受<br /><span class="font-en font-bold">SMILE</span
-              >微笑矯視嗎?
-            </h2>
-          </div>
-          <div class="condition-list">
-            <div class="condition-item">發育成熟，近視度數穩定</div>
-            <div class="condition-item">非懷孕或哺乳期間</div>
-          </div>
-          <div class="condition-list">
-            <div class="condition-item">
-              沒有患上自體免疫疾病，如風濕性關節炎或紅斑狼瘡
+              沒有患上眼疾，如青光眼或<br class="block md:hidden" />視網膜疾病
+            </div>
+            <div
+              class="condition-title flex absolute right-[17px] h-full justify-center items-center"
+            >
+              <h2
+                class="text-primary mb-0 text-base md:text-3xl leading-[20.159px] md:leading-10 font-black font-hk text-right"
+              >
+                你適合接受<br /><span class="font-en font-bold">SMILE</span
+                >微笑矯視嗎?
+              </h2>
             </div>
           </div>
+          <div class="condition-list gap-[13px] md:gap-[26px]">
+            <div class="condition-item py-3">發育成熟，近視度數穩定</div>
+            <div class="condition-item py-3">非懷孕或哺乳期間</div>
+          </div>
           <div class="condition-list">
-            <div class="condition-item">不需要長期服用類固醇</div>
-            <div class="condition-item">角膜沒受感染，例如發炎或曾受傷</div>
+            <div
+              class="condition-item ml-[72px] md:ml-[108px] py-2 md:py-[13px]"
+            >
+              沒有患上自體免疫疾病，如風濕性關<br
+                class="block md:hidden"
+              />節炎或紅斑狼瘡
+            </div>
+          </div>
+          <div class="condition-list gap-3 md:gap-[21px]">
+            <div class="condition-item py-1 md:py-[13px]">
+              不需要長期服用<br class="block md:hidden" />類固醇
+            </div>
+            <div class="condition-item py-1 md:py-[13px]">
+              角膜沒受感染，例如發炎<br class="block md:hidden" />或曾受傷
+            </div>
           </div>
           <p class="condition-desc">
-            <span
+            <span class="inline md:block"
               >如以上條件都與你的情況相符，你已符合進行SMILE微笑矯視的基本條件。</span
-            ><span>若不確定，歡迎預約諮詢。</span>
+            >
+            <span class="inline md:block">若不確定，歡迎預約諮詢。</span>
           </p>
           <a
             href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -1334,56 +1370,61 @@ $text-color: #6d6e71;
 }
 // 是否适合
 .condition {
-  padding: #{"clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"}
-    0;
+  // padding: #{"clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"} 0;
   position: relative;
   width: 100%;
   background: url("https://statichk.cmermedical.com/smile/smileV2/smile-condition-bg.svg")
     no-repeat;
   background-size: #{"clamp(4.375rem, 2.557rem + 9.09vw, 9.375rem)"} auto;
-  background-position: 0;
-  h2 {
-    white-space: nowrap;
-    font-family: "Noto Sans HK";
-    text-align: right;
-    position: absolute;
-    right: 30px;
-    span {
-      font-weight: 700;
-      font-family: "Poppins", sans-serif;
-    }
-  }
+  background-position: left calc(50% + 5px);
+  // &-title {
+  //   white-space: nowrap;
+  //   font-family: "Noto Sans HK";
+  //   text-align: right;
+  //   position: absolute;
+  //   right: 30px;
+  //   span {
+  //     font-weight: 700;
+  //     font-family: "Poppins", sans-serif;
+  //   }
+  // }
   &-list {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
-    &:nth-child(2) {
-      .condition-item {
-        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"};
-      }
-    }
-    &:nth-child(3) {
-      .condition-item {
-        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.425rem + 3.5vw, 2rem)"};
-      }
-    }
-    &:nth-child(4) {
-      margin-left: #{"clamp(2.5rem, 1.591rem + 4.55vw, 5rem)"};
-    }
+    justify-content: center;
+    padding-left: #{"clamp(0.25rem, -0.33rem + 2.9vw, 1.063rem)"};
+    padding-right: #{"clamp(0.25rem, -0.33rem + 2.9vw, 1.063rem)"};
+    margin-bottom: 18px;
+    // margin-bottom: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
+    // &:nth-child(2) {
+    //   .condition-item {
+    //     padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"};
+    //   }
+    // }
+    // &:nth-child(3) {
+    //   .condition-item {
+    //     padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.425rem + 3.5vw, 2rem)"};
+    //   }
+    // }
+    // &:nth-child(4) {
+    //   margin-left: #{"clamp(2.5rem, 1.591rem + 4.55vw, 5rem)"};
+    // }
   }
   &-item {
-    flex: 1;
+    flex: auto;
     color: $text-color;
     font-weight: 400;
     background-color: #fff;
     font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
     line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
-    flex: 0 1 auto;
-    padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.125rem + 2.5vw, 2rem)"};
+    // flex: 0 1 auto;
+    // padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.125rem + 2.5vw, 2rem)"};
     border: 2px solid $primary-color;
     box-shadow: 3px #{"clamp(0.25rem, 0.182rem + 0.34vw, 0.438rem)"} 2px $primary-color;
     border-radius: #{"clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem)"};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
   }
   &-desc {
     color: $text-color;
@@ -1581,6 +1622,12 @@ $text-color: #6d6e71;
       }
     }
   }
+  .condition {
+    background-position: left calc(50% - 20px);
+    &-list {
+      margin-bottom: 36px;
+    }
+  }
   .main {
     width: 768px;
     border-left: 1.5px solid $primary-color;
@@ -1638,11 +1685,8 @@ $text-color: #6d6e71;
 }
 @media screen and (max-width: 991px) {
   :deep(.footer-bottom) {
-    margin-bottom: 0;
-    background-color: #f4fafc;
-  }
-  .share {
-    padding-bottom: 70px;
+    margin-bottom: 0 !important;
+    background-color: #f4fafc !important;
   }
   .smile {
     &-footer {
@@ -1651,43 +1695,44 @@ $text-color: #6d6e71;
   }
 }
 // 手机和平板
-@media screen and (max-width: 1199px) {
-  .condition {
-    &-list {
-      &:nth-child(2) {
-        .condition-item {
-          margin-right: 200px;
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 1199px) {
+//   .condition {
+//     &-list {
+//       &:nth-child(2) {
+//         .condition-item {
+//           margin-right: 172px;
+//           padding: 10px 4px;
+//         }
+//       }
+//     }
+//   }
+// }
 // 电脑端
 @media screen and (min-width: 1200px) {
   .benefit {
     padding: 0;
   }
-  .condition {
-    padding: 100px 30px 0 30px;
-    h2 {
-      font-size: 30px;
-      line-height: 40px;
-    }
-    &-item {
-      font-size: 20px;
-      line-height: 35px;
-      letter-spacing: 2px;
-    }
-    &-item {
-      white-space: nowrap;
-    }
-    &-desc {
-      span {
-        display: block;
-        white-space: nowrap;
-      }
-    }
-  }
+  // .condition {
+  //   padding: 100px 30px 0 30px;
+  //   h2 {
+  //     font-size: 30px;
+  //     line-height: 40px;
+  //   }
+  //   &-item {
+  //     font-size: 20px;
+  //     line-height: 35px;
+  //     letter-spacing: 2px;
+  //   }
+  //   &-item {
+  //     white-space: nowrap;
+  //   }
+  //   &-desc {
+  //     span {
+  //       display: block;
+  //       white-space: nowrap;
+  //     }
+  //   }
+  // }
 }
 @media screen and (min-width: 1440px) {
   .smile {

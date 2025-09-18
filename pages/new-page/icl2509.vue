@@ -838,9 +838,6 @@ $primary-color: #3bd7f1;
     }
   }
 }
-.share {
-  padding: 24px 0 70px;
-}
 @media screen and (max-width: 767px) {
   :deep(.new-Footer-v2) {
     padding-bottom: 0 !important;
