@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 11:34:23
+ * @LastEditTime: 2025-09-18 15:50:32
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -25,9 +25,10 @@ export default {
   },
   data() {
     return {
+      swiperCardNum: 5,
       activeStep: 0, // 当前激活的矫视步骤索引
       activeStepTimer: null,
-      awardsList: [
+      bannerList: [
         {
           imgUrl:
             "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-01.avif",
@@ -412,6 +413,44 @@ export default {
         this.activeStepTimer = null;
       }
     },
+    /**
+     * @description: 转换链接去除&amp;
+     * @param {string} str 原始链接
+     * @return {string} 已处理的链接
+     */
+    transLink(str) {
+      if (str.indexOf("&amp;") > -1) {
+        str = str.replace(/&amp;/g, "&");
+      }
+      return str;
+    },
+    /**
+     * @description: 请求banner列表
+     */
+    async getBannerList() {
+      const { locale } = this.$i18n;
+      const baseUrl = "https://admin.hkcmereye.com";
+      const num = 5;
+      const gidMap = { hk: 1, cn: 2, en: 3 };
+      const url = `${baseUrl}/api.php/cms/slide/gid/${gidMap[locale]}/num/${num}`;
+      try {
+        const response = await fetch(url);
+        const { data } = await response.json();
+        this.bannerList = data.map((item) => ({
+          pic: `${baseUrl}${item.pic}`,
+          mbpic: `${baseUrl}${item.mobilepic}`,
+          link: this.transLink(item.link),
+          linkType: item.title === "link" ? "a" : "nuxt",
+        }));
+      } catch (error) {
+        console.error("Banner获取失败:", error);
+        this.bannerList = [];
+      }
+      console.log(`length=${this.bannerList.length},banner=`,this.bannerList)
+    },
+  },
+  created() {
+    this.getBannerList();
   },
   computed: {
     firstBenefit() {
@@ -898,7 +937,7 @@ export default {
               <p>CATCH UP WITH US</p>
             </div>
             <div class="smile-right-swiper">
-              <SwiperCard :images="awardsList" imageKey="imgUrl"></SwiperCard>
+              <SwiperCard :images="bannerList" imageKey="pic"></SwiperCard>
             </div>
           </div>
         </div>

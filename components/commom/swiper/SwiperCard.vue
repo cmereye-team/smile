@@ -26,11 +26,18 @@
           :style="[getSlideStyle(index), dragSlideStyle(index)]"
           v-show="shouldShowSlide(index)"
         >
-          <img
-            :src="getImageSrc(item)"
-            alt="Image"
-            @error="handleImageError($event, index)"
-          />
+          <nuxt-link :to="item[linkKey]" v-if="item[linkTypeKey] === 'nuxt'">
+            <img
+              :src="getImageSrc(item)"
+              alt="Image"
+            />
+          </nuxt-link>
+          <a :href="item[linkKey]" v-else>
+            <img
+              :src="getImageSrc(item)"
+              alt="Image"
+            />
+          </a>
           <div class="overlay" v-if="index !== activeIndex"></div>
         </div>
       </div>
@@ -58,6 +65,14 @@ export default {
     imageKey: {
       type: String,
       default: "imgUrl",
+    },
+    linkKey: {
+      type: String,
+      default: "link",
+    },
+    linkTypeKey: {
+      type: String,
+      default: "linkType",
     },
     autoPlay: {
       type: Boolean,
