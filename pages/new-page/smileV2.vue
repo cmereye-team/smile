@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 16:28:38
+ * @LastEditTime: 2025-09-18 17:37:45
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      swiperCardNum: 5,
+      xtraActive: false, // 是否展开状态
       activeStep: 0, // 当前激活的矫视步骤索引
       activeStepTimer: null,
       bannerList: [
@@ -446,11 +446,25 @@ export default {
         console.error("Banner获取失败:", error);
         this.bannerList = [];
       }
-      console.log(`length=${this.bannerList.length},banner=`,this.bannerList)
+      // console.log(`length=${this.bannerList.length},banner=`, this.bannerList);
     },
   },
   created() {
     this.getBannerList();
+  },
+  mounted() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          this.xtraActive = true; // 进入视区
+        } else {
+          this.xtraActive = false; // 离开视区
+        }
+      },
+      { threshold: 0.3 } // 当可见比例达到 20% 时触发
+    );
+    observer.observe(this.$refs.xtraAnimateBox);
   },
   computed: {
     firstBenefit() {
@@ -673,7 +687,9 @@ export default {
             <!-- 矫视步骤内容区 -->
             <template v-if="activeStep >= 0">
               <div class="steps-title text-primary">
-                <h2 class="mb-0 text-xl md:text-[40px] font-black leading-6 md:leading-[50px] text-left">
+                <h2
+                  class="mb-0 text-xl md:text-[40px] font-black leading-6 md:leading-[50px] text-left"
+                >
                   <span class="block md:text-3xl font-bold font-en">SMILE</span>
                   矯正步驟
                 </h2>
@@ -844,8 +860,8 @@ export default {
             <p>Comeal Collagen Cross-Linking</p>
             <span>可與SMILE微笑激光矯視同時進行</span>
           </div>
-          <div class="xtra-paper">
-            <div class="xtra-paper-item">
+          <div class="xtra-paper" :class="{ unfolded: xtraActive }">
+            <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
               <h3 class="xtra-paper-title">什麼是 <span>SMILE XTRA</span>？</h3>
               <div class="xtra-paper-intro">
                 <p>
@@ -858,7 +874,7 @@ export default {
                 />
               </div>
             </div>
-            <div class="xtra-paper-item">
+            <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
               <h3 class="xtra-paper-title">
                 我需要接受 <span>SMILE XTRA</span>？
               </h3>
@@ -1407,9 +1423,9 @@ $text-color: #6d6e71;
   &-paper {
     position: relative;
     height: 488px;
-    // &.unfolded {
-    //   animation: xtraHeight 1s ease forwards;
-    // }
+    &.unfolded {
+      animation: xtraHeight 1s ease forwards;
+    }
     &-item {
       border: 1px solid #000;
       background-color: #fff;
@@ -1420,28 +1436,27 @@ $text-color: #6d6e71;
         #{"clamp(2.138rem, 1.758rem + 1.56vw, 3.625rem)"};
       &:nth-child(1) {
         z-index: 1;
-        // &.unfolded {
-        // animation: xtraBottom 1s ease forwards;
-        &::after {
-          content: "";
-          z-index: 2;
-          width: 0;
-          height: 0;
-          background-color: #dbdbdb;
-          clip-path: polygon(0 100%, 100% 100%, 100% 0);
-          // animation: xtraTriangle 1s ease forwards;
-          position: absolute;
-          left: 0;
-          bottom: -1px;
-          opacity: 0;
+        &.unfolded {
+          animation: xtraBottom 1s ease forwards;
+          &::after {
+            content: "";
+            z-index: 2;
+            width: 0;
+            height: 0;
+            background-color: #dbdbdb;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+            animation: xtraTriangle 1s ease forwards;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+          }
         }
-        // }
       }
       &:nth-child(2) {
         z-index: 3;
-        // &.unfolded {
-        //   animation: xtraTop 1s ease forwards;
-        // }
+        &.unfolded {
+          animation: xtraTop 1s ease forwards;
+        }
       }
     }
     &-title {
@@ -1511,46 +1526,46 @@ $text-color: #6d6e71;
       }
     }
   }
-  // @keyframes xtraBottom {
-  //   0% {
-  //     transform: translate(0, 0);
-  //   }
-  //   100% {
-  //     transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
-  //   }
-  // }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
+    }
+  }
 
-  // @keyframes xtraTop {
-  //   0% {
-  //     transform: translate(0, 0);
-  //   }
-  //   100% {
-  //     transform: translate(
-  //       #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
-  //       #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
-  //     ); //208-230
-  //   }
-  // }
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(
+        #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
+        #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
+      );
+    }
+  }
 
-  // @keyframes xtraTriangle {
-  //   0% {
-  //     width: 0;
-  //     height: 0;
-  //   }
-  //   100% {
-  //     width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
-  //     height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
-  //   }
-  // }
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
+      height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
+    }
+  }
 
-  // @keyframes xtraHeight {
-  //   0% {
-  //     height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
-  //   }
-  //   100% {
-  //     height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"};
-  //   }
-  // }
+  @keyframes xtraHeight {
+    0% {
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
+    }
+    100% {
+      height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"};
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .subtitle {
@@ -1580,46 +1595,46 @@ $text-color: #6d6e71;
     border-left: 1.5px solid $primary-color;
     border-right: 1.5px solid $primary-color;
   }
-  // @keyframes xtraBottom {
-  //   0% {
-  //     transform: translate(0, 0);
-  //   }
-  //   100% {
-  //     transform: translate(-72px, 0);
-  //   }
-  // }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-72px, 0);
+    }
+  }
 
-  // @keyframes xtraTop {
-  //   0% {
-  //     transform: translate(0, 0);
-  //   }
-  //   100% {
-  //     transform: translate(
-  //       72px,
-  //       #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
-  //     );
-  //   }
-  // }
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(
+        72px,
+        #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
+      );
+    }
+  }
 
-  // @keyframes xtraTriangle {
-  //   0% {
-  //     width: 0;
-  //     height: 0;
-  //   }
-  //   100% {
-  //     width: 144px;
-  //     height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
-  //   }
-  // }
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 144px;
+      height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
+    }
+  }
 
-  // @keyframes xtraHeight {
-  //   0% {
-  //     height: 488px;
-  //   }
-  //   100% {
-  //     height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"};
-  //   }
-  // }
+  @keyframes xtraHeight {
+    0% {
+      height: 488px;
+    }
+    100% {
+      height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"};
+    }
+  }
 }
 @media screen and (max-width: 991px) {
   :deep(.footer-bottom) {
