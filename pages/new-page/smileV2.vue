@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 11:26:45
+ * @LastEditTime: 2025-09-18 11:34:23
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -807,9 +807,7 @@ export default {
           </div>
           <div class="xtra-paper">
             <div class="xtra-paper-item">
-              <div class="xtra-paper-title">
-                <h3>什麼是 <span>SMILE XTRA</span>？</h3>
-              </div>
+              <h3 class="xtra-paper-title">什麼是 <span>SMILE XTRA</span>？</h3>
               <div class="xtra-paper-intro">
                 <p>
                   透過在角膜局部加入維生素B2，再經紫外線V2照射，使角膜裡面的膠原蛋白緊扣，令角膜變得更加堅韌和穩定，降低角膜變形／反彈的可能
@@ -822,9 +820,9 @@ export default {
               </div>
             </div>
             <div class="xtra-paper-item">
-              <div class="xtra-paper-title">
-                <h3>我需要接受 <span>SMILE XTRA</span>？</h3>
-              </div>
+              <h3 class="xtra-paper-title">
+                我需要接受 <span>SMILE XTRA</span>？
+              </h3>
               <div class="xtra-paper-intro">
                 <p>
                   如果你的眼晴度數較深、角膜比較薄，希望強化角膜以減低角膜變形及度數反彈的機會，經評估後，醫生會作出判斷是否需要接受SMILE
@@ -1392,20 +1390,20 @@ $text-color: #6d6e71;
       &:nth-child(1) {
         z-index: 1;
         // &.unfolded {
-          // animation: xtraBottom 1s ease forwards;
-          &::after {
-            content: "";
-            z-index: 2;
-            width: 0;
-            height: 0;
-            background-color: #dbdbdb;
-            clip-path: polygon(0 100%, 100% 100%, 100% 0);
-            // animation: xtraTriangle 1s ease forwards;
-            position: absolute;
-            left: 0;
-            bottom: -1px;
-            opacity: 0;
-          }
+        // animation: xtraBottom 1s ease forwards;
+        &::after {
+          content: "";
+          z-index: 2;
+          width: 0;
+          height: 0;
+          background-color: #dbdbdb;
+          clip-path: polygon(0 100%, 100% 100%, 100% 0);
+          // animation: xtraTriangle 1s ease forwards;
+          position: absolute;
+          left: 0;
+          bottom: -1px;
+          opacity: 0;
+        }
         // }
       }
       &:nth-child(2) {
