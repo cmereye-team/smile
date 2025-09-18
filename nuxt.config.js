@@ -175,6 +175,14 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包
   build: {
     vendor: ["element-ui"],
+    terser: {
+      terserOptions: {
+        compress: {
+          drop_console: true,   // 去掉 console.*
+          drop_debugger: true,  // 去掉 debugger
+        },
+      },
+    },
   },
   config: {
     nuxt: {
