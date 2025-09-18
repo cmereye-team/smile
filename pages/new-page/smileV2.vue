@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 09:21:01
+ * @LastEditTime: 2025-09-18 10:48:50
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -25,7 +25,6 @@ export default {
   },
   data() {
     return {
-      xtraActive: false, // 是否展开状态
       activeStep: 0, // 当前激活的矫视步骤索引
       activeStepTimer: null,
       awardsList: [
@@ -395,21 +394,6 @@ export default {
       ],
     };
   },
-  mounted() {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          this.xtraActive = true; // 进入视区
-        } else {
-          this.xtraActive = false; // 离开视区
-        }
-      },
-      { threshold: 0.3 } // 当可见比例达到 20% 时触发
-    );
-
-    observer.observe(this.$refs.xtraAnimateBox);
-  },
   methods: {
     /**
      * @description: 更新矫视步骤的激活
@@ -427,9 +411,6 @@ export default {
         clearInterval(this.activeStepTimer);
         this.activeStepTimer = null;
       }
-    },
-    toggleUnfold(hover) {
-      this.xtraActive = hover;
     },
   },
   computed: {
@@ -581,7 +562,9 @@ export default {
                 Small Incision Lenticule Extraction
               </p>
             </div>
-            <div class="newCenter-card-nav mt-8 md:mt-[68.39px] text-text font-tc text-sm md:text-xl font-light leading-[21.822px] md:leading-[43.5px] tracking-[0.36px] md:tracking-[0.6px]">
+            <div
+              class="newCenter-card-nav mt-8 md:mt-[68.39px] text-text font-tc text-sm md:text-xl font-light leading-[21.822px] md:leading-[43.5px] tracking-[0.36px] md:tracking-[0.6px]"
+            >
               <a href="/">{{ $t("Correct.newIcl.menuone") }} </a
               >&nbsp;>&nbsp;<a>{{ $t("Correct.newIcl.menuTwo") }}</a
               >&nbsp;>&nbsp;<a class="text-primary font-medium" href=""
@@ -594,10 +577,15 @@ export default {
         <section
           class="principles bg-primary text-white py-13 px-4 md:py16 md:px-24"
         >
-          <h2><span>SMILE</span>矯正原理</h2>
+          <h2
+            class="text-white font-hk text-xl md:text-3xl font-black leading-[30px]"
+          >
+            <span class="font-en font-bold">SMILE</span>矯正原理
+          </h2>
           <p>
             SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE
-            微笑矯視使用<span>Carl Zeiss VisuMax</span>激光最新3.0系統，原理是在<span>不用打開角膜瓣</span>的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人<span>矯正近視、散光及老花</span>問題，減低對眼鏡的依賴。
+            微笑矯視使用<span>Carl Zeiss VisuMax</span
+            >激光最新3.0系統，原理是在<span>不用打開角膜瓣</span>的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人<span>矯正近視、散光及老花</span>問題，減低對眼鏡的依賴。
           </p>
           <a
             href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -688,10 +676,11 @@ export default {
             </template>
           </div>
         </section>
-        <section class="whyChoose">
-          <h2 class="subtitle mb-4 md:mb-8 lg:mb-12 text-left">為何選擇希瑪?</h2>
+        <section class="whyChoose px-7 md:px-14">
+          <h2 class="subtitle mb-7 md:mb-12 text-left">為何選擇希瑪?</h2>
           <div class="whyChoose-img">
             <img
+              class="w-full rounded-[8.19px]"
               src="https://statichk.cmermedical.com/smile/smileV2/smile-why.avif"
               alt="為何選擇希瑪"
             />
@@ -756,8 +745,11 @@ export default {
           </div>
           <div class="condition-list">
             <div class="condition-item">沒有患上眼疾，如青光眼或視網膜疾病</div>
-            <h2 class="subtitle mb-0">
-              你適合接受<br /><span>SMILE</span>微笑矯視嗎?
+            <h2
+              class="text-primary mb-0 text-base md:text-3xl leading-[20.159px] md:leading-10 font-black font-hk"
+            >
+              你適合接受<br /><span class="font-en font-bold">SMILE</span
+              >微笑矯視嗎?
             </h2>
           </div>
           <div class="condition-list">
@@ -813,13 +805,8 @@ export default {
             <p>Comeal Collagen Cross-Linking</p>
             <span>可與SMILE微笑激光矯視同時進行</span>
           </div>
-          <div
-            class="xtra-paper"
-            :class="{ unfolded: xtraActive }"
-            @mouseover="toggleUnfold(true)"
-            @mouseleave="toggleUnfold(false)"
-          >
-            <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
+          <div class="xtra-paper">
+            <div class="xtra-paper-item">
               <div class="xtra-paper-title">
                 <h3>什麼是 <span>SMILE XTRA</span>？</h3>
               </div>
@@ -834,7 +821,7 @@ export default {
                 />
               </div>
             </div>
-            <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
+            <div class="xtra-paper-item">
               <div class="xtra-paper-title">
                 <h3>我需要接受 <span>SMILE XTRA</span>？</h3>
               </div>
@@ -924,10 +911,767 @@ export default {
   </div>
 </template>
 <style lang="scss" scoped>
-@media screen and (max-width:991px) {
-  :deep(.footer-bottom){
+$primary-color: #4570b6;
+$text-color: #6d6e71;
+:deep(.UserShareBox-list::-webkit-scrollbar-track) {
+  margin: 0 59px;
+}
+.subtitle {
+  color: $primary-color;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 12.824px;
+}
+.more {
+  &-button {
+    padding: #{"clamp(0.375rem, 0.239rem + 0.68vw, 0.75rem)"} #{"clamp(2rem, 1.455rem + 2.73vw, 3.5rem)"};
+    display: flex;
+    gap: #{"clamp(0.563rem, 0.403rem + 0.8vw, 1rem)"};
+    align-items: center;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: #{"clamp(6.25rem, 4.432rem + 9.09vw, 11.25rem)"};
+    width: fit-content;
+    margin: 0 auto;
+    span {
+      font-size: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
+      font-weight: 700;
+      line-height: #{"clamp(2.25rem, 1.614rem + 3.18vw, 4rem)"};
+      letter-spacing: #{"clamp(0.063rem, 0.044rem + 0.09vw, 0.113rem)"};
+      text-align: justify;
+    }
+    svg {
+      width: #{"clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem)"};
+      height: #{"clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem)"};
+    }
+  }
+}
+.smile {
+  position: absolute;
+  &-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url("https://statichk.cmermedical.com/smile/smileV2/smile-bg.avif")
+      no-repeat;
+    background-size: cover;
+  }
+  &-left {
+    width: 540px;
+    height: 900px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 1px solid $primary-color;
+      width: 200%;
+      height: 100%;
+      z-index: 2;
+      background: transparent;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    &::before {
+      content: "";
+      border: 2px dashed $primary-color;
+      z-index: 1;
+      width: 180%;
+      height: 80%;
+      border-radius: 50%;
+      position: absolute;
+      top: 10%;
+      right: 25%;
+      pointer-events: none;
+    }
+  }
+  &-right {
+    width: 30vw;
+    position: relative;
+    height: 100vh;
+
+    &-title {
+      padding: 200px 0 1.25vw 5.2083vw;
+
+      h2 {
+        color: #000;
+        text-align: left;
+        font-size: 1.3139vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 200%;
+        letter-spacing: 0.6568vw;
+        margin-bottom: 0;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          margin-right: 0.5208vw;
+          width: 0.78125vw;
+          height: 0.78125vw;
+          flex-shrink: 0;
+          background: #4570b6;
+          border-radius: 50%;
+        }
+      }
+
+      p {
+        color: $primary-color;
+        font-family: "ITC Avant Garde Gothic Pro";
+        font-size: 1.2104vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 217%;
+        letter-spacing: 1.16px;
+      }
+    }
+    &-swiper {
+      width: 100%;
+    }
+  }
+  &-footer {
+    position: relative;
+    z-index: 5;
+    margin-top: 0 !important;
+  }
+}
+.main {
+  z-index: 3;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+.newCenter {
+  position: relative;
+  background: linear-gradient(to top, $primary-color, 0 50px, white 50px 100%);
+
+  &-card {
+    background: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIHZpZXdCb3g9IjAgMCA3NjggNzM5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8bWFzayBpZD0ibWFzazBfMTAyMzJfMTciIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI3NjgiIGhlaWdodD0iNzM5Ij4KPHJlY3Qgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8xMDIzMl8xNykiPgo8cGF0aCBkPSJNLTUgMTcxLjA3OEw4NDYgMzUzLjc3OSIgc3Ryb2tlPSIjNUQ4NUMzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTYwNC4xNzggODMuMDY2N0w0NDguOTQ5IDc4OC45NDUiIHN0cm9rZT0idXJsKCNwYWludDBfbGluZWFyXzEwMjMyXzE3KSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik01NTQuMTU1IDMxMi42MjJDNTY1LjQzNCAzMTUuMDQ4IDU3Ni41NjYgMzA3Ljk3MiA1NzkuMDE5IDI5Ni44MTlDNTgxLjQ3MiAyODUuNjY1IDU3NC4zMTcgMjc0LjY1NyA1NjMuMDM4IDI3Mi4yMzFDNTUxLjc1OSAyNjkuODA2IDU0MC42MjcgMjc2Ljg4MSA1MzguMTc0IDI4OC4wMzVDNTM1LjcyMSAyOTkuMTg5IDU0Mi44NzYgMzEwLjE5NyA1NTQuMTU1IDMxMi42MjJaIiBzdHJva2U9IiM1RDg1QzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTAyMzJfMTciIHgxPSI2MDQuNjY3IiB5MT0iODMuMTcxOCIgeDI9IjQ1Mi43MTYiIHkyPSI3ODkuNzU1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1RDg1QzMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSJ3aGl0ZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=")
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: 400;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+// 矫视原理
+.principles {
+  padding: #{"clamp(2rem, 0.545rem + 7.27vw, 6rem)"} #{"clamp(1rem, -1rem + 10vw, 6.5rem)"};
+  position: relative;
+  h2 {
+    text-align: center;
+    font-weight: 900;
+    line-height: 30px;
+    font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
+    margin-bottom: #{"clamp(1rem, 0.727rem + 1.36vw, 1.75rem)"};
+    span {
+      font-weight: 700;
+    }
+  }
+  p {
+    font-weight: 300;
+    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
+    line-height: 35px;
+    letter-spacing: #{"clamp(0.044rem, 0.037rem + 0.03vw, 0.063rem)"};
+    span {
+      font-weight: 700;
+    }
+  }
+  .more {
+    &-button {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: #fff;
+      color: $primary-color;
+      border: 2px solid $primary-color;
+    }
+  }
+}
+// 矫视步骤
+.steps {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    $primary-color 0 50px,
+    white 50px 100%
+  );
+  border: inherit;
+  .subtitle {
+    font-size: #{"clamp(1.25rem, 0.931rem + 1.31vw, 2.5rem)"};
+    line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
+    span {
+      font-size: #{"clamp(1.25rem, 1.091rem + 0.65vw, 1.875rem)"};
+      line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
+    }
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: #{"clamp(2.065rem, 1.572rem + 2.02vw, 4rem)"};
+    svg {
+      width: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
+      height: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
+    }
+  }
+  &-bg {
+    border-radius: 1rem 1rem 0 0;
+    padding: #{"clamp(4.337rem, 3.881rem + 1.87vw, 6.125rem)"} #{"clamp(1.688rem, 1.21rem + 1.96vw, 3.563rem)"}
+      #{"clamp(3.984rem, 2.594rem + 5.7vw, 9.438rem)"};
+  }
+  &-number {
+    display: flex;
+    justify-content: space-between;
+    .step {
+      cursor: pointer;
+      text-align: right;
+      width: 30%;
+      color: $text-color;
+      font-size: #{"clamp(1.25rem, 0.841rem + 2.05vw, 2.375rem)"};
+      margin-bottom: #{"clamp(1.25rem, 0.977rem + 1.36vw, 2rem)"};
+      position: relative;
+      border-bottom: none;
+      &.active {
+        color: $primary-color;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        /* 伪元素在active状态下的样式 */
+        &::after {
+          height: #{"clamp(0.156rem, 0.099rem + 0.28vw, 0.313rem)"};
+          background: $primary-color;
+        }
+      }
+      /* 非active状态下的伪元素样式 */
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: #{"clamp(0.031rem, 0.02rem + 0.06vw, 0.063rem)"};
+        background: $text-color;
+        transition: all 0.3s ease; /* 过渡伪元素的高度和背景色 */
+      }
+    }
+  }
+  &-content {
+    color: $text-color;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &-text {
+      position: absolute;
+      font-weight: 400;
+      font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
+      line-height: #{"clamp(1.125rem, 0.739rem + 1.93vw, 2.188rem)"};
+      margin-top: #{"clamp(0.563rem, 0.358rem + 1.02vw, 1.125rem)"};
+    }
+  }
+}
+.whyChoose {
+  &-intro {
+    p {
+      color: $text-color;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 2.52px;
+      margin-bottom: 30px;
+    }
+    span {
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+}
+// 好处
+.benefit {
+  padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
+  h2 {
+    text-align: center;
+    padding-bottom: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"};
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 96%;
+    &:first-child {
+      margin-top: 0;
+      z-index: 1;
+    }
+    &:last-child {
+      margin-top: #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
+      z-index: 2;
+    }
+  }
+  &-item {
+    flex: 1;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    margin: 0 #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
+    position: relative;
+    text-align: center;
+    &-title {
+      font-weight: 700;
+      color: $primary-color;
+      font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
+      line-height: #{"clamp(0.531rem, 0.27rem + 1.31vw, 1.25rem)"};
+      letter-spacing: #{"clamp(0.25rem, 0.199rem + 0.26vw, 0.391rem)"};
+    }
+    &-icon {
+      width: #{"clamp(3.25rem, -1.886rem + 25.68vw, 17.375rem)"};
+      margin: 0 auto 2px;
+    }
+    &-content {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      img {
+        margin: 0 auto;
+      }
+      p {
+        color: #fff;
+        font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
+        line-height: #{"clamp(1rem, 0.909rem + 0.45vw, 1.25rem)"};
+        font-weight: 400;
+        white-space: pre-line;
+        line-height: 1.2;
+      }
+    }
+    &.acive {
+      .benefit-item-title {
+        opacity: 0;
+        height: 0;
+      }
+      .benefit-item-content {
+        opacity: 1;
+        height: auto;
+      }
+    }
+    &:hover {
+      background-color: $primary-color;
+      transition: all 0.4s ease;
+      .benefit-item-title {
+        opacity: 0;
+        height: 0;
+      }
+      .benefit-item-content {
+        opacity: 1;
+        height: auto;
+      }
+    }
+  }
+}
+// 是否适合
+.condition {
+  padding: #{"clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"}
+    0;
+  position: relative;
+  width: 100%;
+  background: url("https://statichk.cmermedical.com/smile/smileV2/smile-condition-bg.svg")
+    no-repeat;
+  background-size: #{"clamp(4.375rem, 2.557rem + 9.09vw, 9.375rem)"} auto;
+  background-position: 0;
+  h2 {
+    white-space: nowrap;
+    font-family: "Noto Sans HK";
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    span {
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
+    &:nth-child(2) {
+      .condition-item {
+        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"};
+      }
+    }
+    &:nth-child(3) {
+      .condition-item {
+        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.425rem + 3.5vw, 2rem)"};
+      }
+    }
+    &:nth-child(4) {
+      margin-left: #{"clamp(2.5rem, 1.591rem + 4.55vw, 5rem)"};
+    }
+  }
+  &-item {
+    flex: 1;
+    color: $text-color;
+    font-weight: 400;
+    background-color: #fff;
+    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
+    line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
+    flex: 0 1 auto;
+    padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.125rem + 2.5vw, 2rem)"};
+    border: 2px solid $primary-color;
+    box-shadow: 3px #{"clamp(0.25rem, 0.182rem + 0.34vw, 0.438rem)"} 2px $primary-color;
+    border-radius: #{"clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem)"};
+  }
+  &-desc {
+    color: $text-color;
+    text-align: center;
+    font-size: #{"clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem)"};
+    line-height: #{"clamp(1.375rem, 1.011rem + 1.82vw, 2.375rem)"};
+    letter-spacing: #{"clamp(0rem, -0.036rem + 0.18vw, 0.1rem)"};
+    font-weight: 400;
+    margin-top: #{"clamp(0.75rem, -0.205rem + 4.77vw, 3.375rem)"};
+    margin-bottom: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
+  }
+}
+.xtra {
+  padding: #{"clamp(3.5rem, 2.864rem + 3.18vw, 5.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"};
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzY5IiBoZWlnaHQ9IjExODEiIHZpZXdCb3g9IjAgMCA3NjkgMTE4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTc2OCAxTDEgMTE4MCIgc3Ryb2tlPSIjNDU3MEI2Ii8+CjxwYXRoIGQ9Ik0wLjk5OTk4NSAxTDc2OCAxMTgwIiBzdHJva2U9IiM0NTcwQjYiLz4KPC9zdmc+Cg==")
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+  &-title {
+    text-align: center;
+    padding-bottom: #{"clamp(1.4rem, 0.922rem + 1.96vw, 3.275rem)"};
+    p {
+      color: $primary-color;
+      font-family: "ITC Avant Garde Gothic Pro";
+      font-weight: 700;
+      font-size: #{"clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem)"};
+      line-height: #{"clamp(1.5rem, 0.909rem + 2.95vw, 3.125rem)"};
+    }
+    span {
+      color: $text-color;
+      font-weight: 500;
+      font-size: #{"clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem)"};
+      line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
+      letter-spacing: #{"clamp(0.075rem, 0.057rem + 0.09vw, 0.125rem)"};
+    }
+  }
+  &-paper {
+    position: relative;
+    height: 488px;
+    &.unfolded {
+      animation: xtraHeight 1s ease forwards;
+    }
+    &-item {
+      border: 1px solid #000;
+      background-color: #fff;
+      position: absolute;
+      left: 72px;
+      width: #{"clamp(18.063rem, 13.632rem + 18.17vw, 35.442rem)"};
+      padding: #{"clamp(1.804rem, 1.384rem + 1.72vw, 3.451rem)"} #{"clamp(1.375rem, 0.97rem + 1.66vw, 2.962rem)"}
+        #{"clamp(2.138rem, 1.758rem + 1.56vw, 3.625rem)"};
+      &:nth-child(1) {
+        z-index: 1;
+        &.unfolded {
+          animation: xtraBottom 1s ease forwards;
+          &::after {
+            content: "";
+            z-index: 2;
+            width: 0;
+            height: 0;
+            background-color: #dbdbdb;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+            animation: xtraTriangle 1s ease forwards;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        z-index: 3;
+        &.unfolded {
+          animation: xtraTop 1s ease forwards;
+        }
+      }
+    }
+    &-title {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: #{"clamp(1rem, 0.857rem + 0.59vw, 1.563rem)"};
+      line-height: #{"clamp(0.636rem, 0.48rem + 0.64vw, 1.25rem)"};
+      margin-bottom: #{"clamp(1.018rem, 0.752rem + 1.09vw, 2.063rem)"};
+      span {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    &-intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: #{"clamp(0.5rem, 0.022rem + 1.96vw, 2.375rem)"};
+      p {
+        color: $text-color;
+        text-align: justify;
+        font-weight: 400;
+        font-size: #{"clamp(0.875rem, 0.779rem + 0.39vw, 1.25rem)"};
+        line-height: #{"clamp(1.113rem, 0.839rem + 1.12vw, 2.188rem)"};
+        letter-spacing: #{"clamp(0.219rem, 0.211rem + 0.03vw, 0.25rem)"};
+      }
+    }
+    &-icon {
+      height: #{"clamp(5.125rem, 3.898rem + 6.14vw, 8.5rem)"};
+    }
+  }
+}
+// 小练习
+.exercise {
+  padding: #{"clamp(1.5rem, 1.364rem + 0.68vw, 1.875rem)"} 0 #{"clamp(3.75rem, 2.568rem + 5.91vw, 7rem)"};
+  &-title {
+    text-align: center;
+    h2 {
+      font-weight: 900;
+      font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
+      line-height: #{"clamp(1.375rem, 1.193rem + 0.91vw, 1.875rem)"};
+    }
+    p {
+      font-weight: 400;
+      font-size: #{"clamp(0.875rem, 0.648rem + 1.14vw, 1.5rem)"};
+      line-height: #{"clamp(1.375rem, 1.193rem + 0.91vw, 1.875rem)"};
+      margin-top: #{"clamp(0.25rem, -0.068rem + 1.59vw, 1.125rem)"};
+      margin-bottom: #{"clamp(1.875rem, 1.739rem + 0.68vw, 2.25rem)"};
+    }
+  }
+  &-image {
+    padding: 0 #{"clamp(2.125rem, -0.739rem + 14.32vw, 10rem)"};
+    display: flex;
+    justify-content: center;
+  }
+  &-intro {
+    padding: #{"clamp(1.5rem, 1.182rem + 1.59vw, 2.375rem)"} #{"clamp(2.375rem, 2.011rem + 1.82vw, 3.375rem)"}
+      0;
+  }
+}
+// 手机端
+@media screen and (max-width: 767px) {
+  .xtra {
+    &-paper {
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
+      &-item {
+        left: 36px;
+      }
+    }
+  }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
+    }
+  }
+
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      //8-32
+      transform: translate(
+        #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
+        #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
+      ); //208-230
+    }
+  }
+
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      //40-60
+      width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
+      height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
+    } //42-48
+  }
+
+  @keyframes xtraHeight {
+    0% {
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"}; //288-312
+    }
+    100% {
+      height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"}; // 740-790
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .whyChoose {
+    &-intro {
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 6px;
+      }
+    }
+  }
+  .main {
+    width: 768px;
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
+  }
+  .principles {
+    .more-button {
+      bottom: -6%;
+    }
+  }
+  :deep(.headV3) {
+    // max-width: 765px;
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
+  }
+  @keyframes xtraBottom {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-72px, 0);
+    }
+  }
+
+  @keyframes xtraTop {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(
+        72px,
+        #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
+      ); // 294-328
+    }
+  }
+
+  @keyframes xtraTriangle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 144px; //294-328
+      height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
+    }
+  }
+
+  @keyframes xtraHeight {
+    0% {
+      height: 488px;
+    }
+    100% {
+      height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"}; // 740-790
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  :deep(.footer-bottom) {
     margin-bottom: 0;
     background-color: #f4fafc;
+  }
+}
+// 手机和平板
+@media screen and (max-width: 1199px) {
+  .condition {
+    &-list {
+      &:nth-child(2) {
+        .condition-item {
+          margin-right: 200px;
+        }
+      }
+    }
+  }
+}
+// 电脑端
+@media screen and (min-width: 1200px) {
+  .benefit {
+    padding: 0;
+  }
+  .condition {
+    padding: 100px 30px 0 30px;
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &-item {
+      font-size: 20px;
+      line-height: 35px;
+      letter-spacing: 2px;
+    }
+    &-item {
+      white-space: nowrap;
+    }
+    &-desc {
+      span {
+        display: block;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .smile {
+    &-left {
+      display: block;
+    }
+    &-right {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1744px) {
+  .smile {
+    &-left {
+      width: 22vw;
+      &::after {
+        width: 300%;
+      }
+      &::before {
+        width: 200%;
+      }
+    }
+    &-right {
+      width: 25vw;
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  .smile {
+    &-right {
+      &-swiper {
+        margin-left: #{"clamp(-6.25rem, -14.931rem + 6.94vw, 0rem)"};
+      }
+    }
   }
 }
 </style>
