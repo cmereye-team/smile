@@ -7,9 +7,12 @@
     <div
       class="swiper-card-container"
       @mousedown.prevent="startDrag"
-      @mousemove="onDrag"
-      @mouseup="endDrag"
-      @mouseleave="endDrag"
+      @mousemove.prevent="onDrag"
+      @mouseup.prevent="endDrag"
+      @mouseleave.prevent="endDrag"
+      @touchstart.prevent="startDrag"
+      @touchmove.prevent="onDrag"
+      @touchend.prevent="endDrag"
     >
       <div class="swiper-card-wrap">
         <div
@@ -26,13 +29,23 @@
           :style="[getSlideStyle(index), dragSlideStyle(index)]"
           v-show="shouldShowSlide(index)"
         >
-          <nuxt-link :to="item[linkKey]" v-if="item[linkTypeKey] === 'nuxt'">
+          <nuxt-link
+            :to="item[linkKey] || '/'"
+            v-if="item[linkTypeKey] === 'nuxt'"
+            :event="isDragging || !isClick ? '' : 'click'"
+          >
             <img
               :src="getImageSrc(item)"
               alt="Image"
             />
           </nuxt-link>
-          <a :href="item[linkKey]" v-else>
+          <a
+            :href="item[linkKey] || '#'"
+            v-else
+            target="_blank"
+            rel="noopener noreferrer"
+            @click="handleLinkClick($event)"
+          >
             <img
               :src="getImageSrc(item)"
               alt="Image"
@@ -90,6 +103,7 @@ export default {
       isDragging: false,
       startX: 0,
       deltaX: 0,
+      isClick: true, // 新增：标记是否为点击
     };
   },
   computed: {
@@ -185,9 +199,25 @@ export default {
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
-    handleImageError(event, index) {
-      console.error(`Image load failed at index ${index}:`, event.target.src);
-      event.target.src = "https://picsum.photos/400/400";
+    /**
+     * @description: 处理链接点击，区分拖拽和点击
+     * @param {Event} event
+     */
+    handleLinkClick(event) {
+      console.log(`handleLinkClick: isClick=${this.isClick}, isDragging=${this.isDragging}`);
+      if (!this.isClick || this.isDragging) {
+        event.preventDefault();
+        event.stopPropagation();
+        console.log('Link click prevented due to drag or non-click action', {
+          isClick: this.isClick,
+          isDragging: this.isDragging,
+          link: event.currentTarget.href
+        });
+      } else {
+        console.log('Link click allowed', {
+          link: event.currentTarget.href
+        });
+      }
     },
     /**
      * @description: 开始拖拽图片
@@ -197,7 +227,8 @@ export default {
       event.preventDefault();
       event.stopPropagation();
       this.isDragging = true;
-      this.startX = event.clientX;
+      this.isClick = true;
+      this.startX = event.clientX || (event.touches && event.touches[0].clientX);
       this.deltaX = 0;
       this.pauseAutoPlay();
       console.log("Drag started at:", this.startX);
@@ -205,18 +236,21 @@ export default {
     /**
      * @description: 正在拖拽图片
      * @param {*} event
-     * @return {*}
      */
     onDrag(event) {
       if (!this.isDragging) return;
-      this.deltaX = event.clientX - this.startX;
-      console.log("Dragging, deltaX:", this.deltaX);
+      const clientX = event.clientX || (event.touches && event.touches[0].clientX);
+      this.deltaX = clientX - this.startX;
+      if (Math.abs(this.deltaX) > 5) { // 降低阈值到 5px，增加拖拽敏感性
+        this.isClick = false;
+      }
+      console.log("Dragging, deltaX:", this.deltaX, "isClick:", this.isClick);
     },
     /**
      * @description: 结束拖拽图片
      * @param {*} event
      */
-    endDrag() {
+    endDrag(event) {
       if (!this.isDragging) return;
       this.isDragging = false;
       const threshold = 50; // 降低阈值到 50px
@@ -229,6 +263,12 @@ export default {
         console.log(`Drag ended, switched to prev slide: ${this.activeIndex}`);
       }
       this.deltaX = 0;
+      // 延迟重置 isClick，防止 click 事件误触发
+      setTimeout(() => {
+        this.isClick = true;
+        console.log('isClick reset to true after delay');
+      }, 100);
+      console.log('endDrag state', { isClick: this.isClick, isDragging: this.isDragging, deltaX: this.deltaX });
       this.resumeAutoPlay();
     },
     /**
@@ -237,6 +277,10 @@ export default {
     nextSlide() {
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
     },
+    /**
+     * @description: 点击页码更新当前项
+     * @param {number} index 索引值
+     */
     setActiveIndex(index) {
       this.activeIndex = index;
     },
