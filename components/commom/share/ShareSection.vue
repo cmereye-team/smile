@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-18 08:55:13
- * @LastEditTime: 2025-09-18 09:20:49
+ * @LastEditTime: 2025-09-18 09:26:43
  * @FilePath: /components/commom/share/ShareSection.vue
  * @Description: 移动端分享
 -->
@@ -25,7 +25,7 @@
         />
       </svg>
       <slot name="title">
-        <span :style="{ color: color }">同朋友分享一下啦！</span>
+        <span :style="{ color: titleColor }">{{ title }}</span>
       </slot>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +123,7 @@
 export default {
   props: {
     // 标题字体色
-    color: {
+    titleColor: {
       type: String,
       default: "#000",
     },
@@ -136,6 +136,11 @@ export default {
     bgColor: {
       type: String,
       default: "#ffffff",
+    },
+    // 标题文本
+    title: {
+      type: String,
+      default: "同朋友分享一下啦！",
     },
   },
 };

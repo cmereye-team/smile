@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-17 14:47:11
+ * @LastEditTime: 2025-09-18 09:35:31
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -391,7 +391,14 @@
             </div>
           </div>
         </section>
-        <section class="share block md:hidden">
+        <ShareSection
+          class="share"
+          themeColor="#3BD7F1"
+          bgColor="#000034"
+          titleColor="#fff"
+          title="同朋友一齊聽講座啦！"
+        />
+        <!-- <section class="share block md:hidden">
           <div class="share-title">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -467,7 +474,7 @@
               </svg>
             </a>
           </div>
-        </section>
+        </section> -->
       </main>
       <aside
         class="page-left flex-1 hidden xl:block order-2 xl:order-1 relative"
@@ -833,31 +840,6 @@ $primary-color: #3bd7f1;
 }
 .share {
   padding: 24px 0 70px;
-  background-color: #000034;
-  &-title {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-    span {
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 16.496px; /* 82.478% */
-    }
-  }
-  &-group {
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    &-item {
-      border-radius: 50%;
-      padding: 16px;
-      border: 1px solid $primary-color;
-    }
-  }
 }
 @media screen and (max-width: 767px) {
   :deep(.new-Footer-v2) {
@@ -965,12 +947,14 @@ import HeadV3 from "@/components/Publice/HeadV3.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import PageNavigation from "@/components/commom/PageNavigation/PageNavigation.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
+import ShareSection from "@/components/commom/share/ShareSection.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
     FooterMobile,
     PageNavigation,
+    ShareSection,
   },
   data() {
     return {
@@ -979,7 +963,7 @@ export default {
         { id: "intro", label: "講座活動簡介" },
         { id: "detail", label: "講座活動詳情" },
         { id: "highlight", label: "講座活動亮點" },
-        { id: "what", label: "ICL植入式隱形眼鏡是什麼?" }
+        { id: "what", label: "ICL植入式隱形眼鏡是什麼?" },
       ],
     };
   },
