@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 10:48:50
+ * @LastEditTime: 2025-09-18 11:08:16
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -1378,9 +1378,9 @@ $text-color: #6d6e71;
   &-paper {
     position: relative;
     height: 488px;
-    &.unfolded {
-      animation: xtraHeight 1s ease forwards;
-    }
+    // &.unfolded {
+    //   animation: xtraHeight 1s ease forwards;
+    // }
     &-item {
       border: 1px solid #000;
       background-color: #fff;
@@ -1391,8 +1391,8 @@ $text-color: #6d6e71;
         #{"clamp(2.138rem, 1.758rem + 1.56vw, 3.625rem)"};
       &:nth-child(1) {
         z-index: 1;
-        &.unfolded {
-          animation: xtraBottom 1s ease forwards;
+        // &.unfolded {
+          // animation: xtraBottom 1s ease forwards;
           &::after {
             content: "";
             z-index: 2;
@@ -1400,18 +1400,19 @@ $text-color: #6d6e71;
             height: 0;
             background-color: #dbdbdb;
             clip-path: polygon(0 100%, 100% 100%, 100% 0);
-            animation: xtraTriangle 1s ease forwards;
+            // animation: xtraTriangle 1s ease forwards;
             position: absolute;
             left: 0;
             bottom: -1px;
+            opacity: 0;
           }
-        }
+        // }
       }
       &:nth-child(2) {
         z-index: 3;
-        &.unfolded {
-          animation: xtraTop 1s ease forwards;
-        }
+        // &.unfolded {
+        //   animation: xtraTop 1s ease forwards;
+        // }
       }
     }
     &-title {
@@ -1481,48 +1482,46 @@ $text-color: #6d6e71;
       }
     }
   }
-  @keyframes xtraBottom {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
-    }
-  }
+  // @keyframes xtraBottom {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
+  //   100% {
+  //     transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
+  //   }
+  // }
 
-  @keyframes xtraTop {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      //8-32
-      transform: translate(
-        #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
-        #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
-      ); //208-230
-    }
-  }
+  // @keyframes xtraTop {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
+  //   100% {
+  //     transform: translate(
+  //       #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
+  //       #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
+  //     ); //208-230
+  //   }
+  // }
 
-  @keyframes xtraTriangle {
-    0% {
-      width: 0;
-      height: 0;
-    }
-    100% {
-      //40-60
-      width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
-      height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
-    } //42-48
-  }
+  // @keyframes xtraTriangle {
+  //   0% {
+  //     width: 0;
+  //     height: 0;
+  //   }
+  //   100% {
+  //     width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
+  //     height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
+  //   }
+  // }
 
-  @keyframes xtraHeight {
-    0% {
-      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"}; //288-312
-    }
-    100% {
-      height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"}; // 740-790
-    }
-  }
+  // @keyframes xtraHeight {
+  //   0% {
+  //     height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
+  //   }
+  //   100% {
+  //     height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"};
+  //   }
+  // }
 }
 @media screen and (min-width: 768px) {
   .subtitle {
@@ -1549,50 +1548,49 @@ $text-color: #6d6e71;
     }
   }
   :deep(.headV3) {
-    // max-width: 765px;
     border-left: 1.5px solid $primary-color;
     border-right: 1.5px solid $primary-color;
   }
-  @keyframes xtraBottom {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-72px, 0);
-    }
-  }
+  // @keyframes xtraBottom {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
+  //   100% {
+  //     transform: translate(-72px, 0);
+  //   }
+  // }
 
-  @keyframes xtraTop {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(
-        72px,
-        #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
-      ); // 294-328
-    }
-  }
+  // @keyframes xtraTop {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
+  //   100% {
+  //     transform: translate(
+  //       72px,
+  //       #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
+  //     );
+  //   }
+  // }
 
-  @keyframes xtraTriangle {
-    0% {
-      width: 0;
-      height: 0;
-    }
-    100% {
-      width: 144px; //294-328
-      height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
-    }
-  }
+  // @keyframes xtraTriangle {
+  //   0% {
+  //     width: 0;
+  //     height: 0;
+  //   }
+  //   100% {
+  //     width: 144px;
+  //     height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
+  //   }
+  // }
 
-  @keyframes xtraHeight {
-    0% {
-      height: 488px;
-    }
-    100% {
-      height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"}; // 740-790
-    }
-  }
+  // @keyframes xtraHeight {
+  //   0% {
+  //     height: 488px;
+  //   }
+  //   100% {
+  //     height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"};
+  //   }
+  // }
 }
 @media screen and (max-width: 991px) {
   :deep(.footer-bottom) {
