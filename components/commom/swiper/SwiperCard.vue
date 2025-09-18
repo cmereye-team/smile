@@ -26,7 +26,7 @@
               : '',
             index === (activeIndex + 1) % totalSlides ? 'next' : '',
           ]"
-          :style="[getSlideStyle(index), dragSlideStyle(index)]"
+          :style="getSlideStyle(index)"
           v-show="shouldShowSlide(index)"
         >
           <nuxt-link
@@ -36,6 +36,7 @@
           >
             <img
               :src="getImageSrc(item)"
+              :style="dragImageStyle(index)"
               alt="Image"
             />
           </nuxt-link>
@@ -48,6 +49,7 @@
           >
             <img
               :src="getImageSrc(item)"
+              :style="dragImageStyle(index)"
               alt="Image"
             />
           </a>
@@ -167,21 +169,13 @@ export default {
       };
     },
     /**
-     * @description: 拖拽样式
-     * @param {number} index
+     * @description: 拖拽图片样式（仅对活跃项图片应用translateX）
+     * @param {number} index 索引
      */
-    dragSlideStyle(index) {
-      if (
-        this.isDragging &&
-        (index === this.activeIndex ||
-          index ===
-            (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
-          index === (this.activeIndex + 1) % this.totalSlides)
-      ) {
+    dragImageStyle(index) {
+      if (this.isDragging && index === this.activeIndex) {
         return {
-          transform: `${this.getSlideStyle(index).transform} translateX(${
-            this.deltaX
-          }px)`,
+          transform: `translateX(${this.deltaX}px)`,
           transition: "none",
         };
       }
@@ -254,15 +248,27 @@ export default {
       if (!this.isDragging) return;
       this.isDragging = false;
       const threshold = 50; // 降低阈值到 50px
+      let shouldSwitch = false;
+      let direction = 0;
       if (this.deltaX < -threshold) {
         this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
+        shouldSwitch = true;
+        direction = 1;
         console.log(`Drag ended, switched to next slide: ${this.activeIndex}`);
       } else if (this.deltaX > threshold) {
         this.activeIndex =
           (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
+        shouldSwitch = true;
+        direction = -1;
         console.log(`Drag ended, switched to prev slide: ${this.activeIndex}`);
       }
-      this.deltaX = 0;
+      if (shouldSwitch) {
+        // 切换时，模拟最终位移以实现跟进效果
+        this.deltaX = direction * this.thresholdDistance(threshold);
+      } else {
+        // 不切换时，恢复原位
+        this.deltaX = 0;
+      }
       // 延迟重置 isClick，防止 click 事件误触发
       setTimeout(() => {
         this.isClick = true;
@@ -270,6 +276,13 @@ export default {
       }, 100);
       console.log('endDrag state', { isClick: this.isClick, isDragging: this.isDragging, deltaX: this.deltaX });
       this.resumeAutoPlay();
+    },
+    /**
+     * @description: 计算切换时的阈值距离（用于跟进动画）
+     * @param {number} threshold 阈值
+     */
+    thresholdDistance(threshold) {
+      return threshold * 2; // 示例：阈值50px时，位移100px，让下一张跟进来一半
     },
     /**
      * @description: 下一张
@@ -364,11 +377,14 @@ export default {
     width: #{("clamp(9.375rem, -6.78rem + 26.48vw, 25rem);")};
     height: #{("clamp(9.375rem, -6.78rem + 26.48vw, 25rem);")};
     transform-style: preserve-3d;
+    overflow: hidden; // 隐藏超出框的部分
+    border-radius: 20px; // 确保圆角生效于超出部分
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 20px;
+      display: block;
     }
     &.active .overlay {
       display: none; // 活跃项无遮罩
