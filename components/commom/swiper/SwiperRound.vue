@@ -22,7 +22,11 @@
             class="avatar-container"
             :class="{ 'overlay-mask': shouldApplyMask(index) }"
           >
-            <img :src="item[imageKey]" :alt="item[nameKey] || item.nameEn" @dragstart.prevent />
+            <img
+              :src="item[imageKey]"
+              :alt="item[nameKey] || item.nameEn"
+              @dragstart.prevent
+            />
           </div>
 
           <!-- Play按钮 -->
@@ -133,6 +137,10 @@ export default {
     },
   },
   methods: {
+    /**
+     * @description: 幻灯片的样式，主要是位置和大小
+     * @param {number} index 索引值
+     */
     getSlideStyle(index) {
       let width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
       let height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
@@ -149,7 +157,8 @@ export default {
         left = "70%";
         top = "50%";
       } else if (
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+        index ===
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
         width = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
         height = "clamp(3.875rem, -1.938rem + 6.46vw, 5.813rem)";
@@ -181,26 +190,37 @@ export default {
         position: "absolute",
       };
     },
+    /**
+     * @description: 是否显示该幻灯片，节约性能只显示3张
+     * @param {number} index 索引值
+     */
     shouldShowSlide(index) {
       return (
         index === this.activeIndex ||
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
+    /**
+     * @description: 人名的样式，当前和上下
+     * @param {number} index 索引值
+     */
     getNameStyle(index) {
       let top = 0;
       const baseTop = 50;
       const spacing = 20;
       const isVisible =
         index === this.activeIndex ||
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides;
 
       if (index === this.activeIndex) {
         top = `${baseTop}%`;
       } else if (
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+        index ===
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
         top = `${baseTop - spacing}%`;
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
@@ -230,7 +250,8 @@ export default {
           letterSpacing: "1.75px",
         });
       } else if (
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       ) {
         Object.assign(style, {
@@ -243,39 +264,61 @@ export default {
           letterSpacing: "1.75px",
         });
       }
-
       return style;
     },
+    /**
+     * @description: 判断是否需要蒙版，该蒙版用于上一张和下一张的图片
+     * @param {number} index
+     */
     shouldApplyMask(index) {
       return (
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
+        index ===
+          (this.activeIndex - 1 + this.totalSlides) % this.totalSlides ||
         index === (this.activeIndex + 1) % this.totalSlides
       );
     },
+    /**
+     * @description: 点击上下按钮触发切换
+     * @param {number} index 触发点击的幻灯片索引
+     * @param {string} url 如果有视频链接则会传递进来
+     */
     handleSlideClick(index, url) {
-      console.log(`點擊幻燈片觸發，索引 ${index}，URL: ${url}`);
       if (index === this.activeIndex) {
         this.handlePlayClick(url);
       } else if (
-        index === (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
+        index ===
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides
       ) {
         this.handlePrevClick();
       } else if (index === (this.activeIndex + 1) % this.totalSlides) {
         this.handleNextClick();
       }
     },
+    /**
+     * @description: 点击播放图标，触发打开视频弹窗
+     * @param {string} url 视频链接
+     */
     handlePlayClick(url) {
-      console.log(`播放按鈕觸發，URL: ${url}`);
       this.showPopover(url);
     },
+    /**
+     * @description: 切换上一张
+     */
     handlePrevClick() {
-      this.activeIndex = (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
+      this.activeIndex =
+        (this.activeIndex - 1 + this.totalSlides) % this.totalSlides;
     },
+    /**
+     * @description: 切换下一张
+     */
     handleNextClick() {
       this.activeIndex = (this.activeIndex + 1) % this.totalSlides;
     },
+    /**
+     * @description: 鼠标滚轮事件，上下滚动切换上一张和下一张
+     * @param {*} event
+     */
     handleWheel(event) {
-      console.log("滑鼠滾輪觸發，方向:", event.deltaY);
       event.preventDefault();
       if (event.deltaY > 0) {
         this.handleNextClick();
@@ -283,13 +326,21 @@ export default {
         this.handlePrevClick();
       }
     },
+    /**
+     * @description: 开始拖拽
+     * @param {*} event
+     */
     handleMouseDown(event) {
       this.isDragging = true;
       this.startY = event.clientY;
       this.pauseAutoPlay();
       document.querySelector(".swiper-round").style.cursor = "grabbing";
-      console.log("滑鼠按下，開始拖拽，起始Y:", this.startY);
+      // console.log("滑鼠按下，開始拖拽，起始Y:", this.startY);
     },
+    /**
+     * @description: 鼠标拖拽中
+     * @param {*} event
+     */
     handleMouseMove(event) {
       if (!this.isDragging) return;
       const deltaY = event.clientY - this.startY;
@@ -298,27 +349,35 @@ export default {
         this.handleNextClick();
         this.isDragging = false;
         document.querySelector(".swiper-round").style.cursor = "grab";
-        console.log("向上拖拽，切換到下一張");
+        // console.log("向上拖拽，切換到下一張");
       } else if (deltaY > threshold) {
         this.handlePrevClick();
         this.isDragging = false;
         document.querySelector(".swiper-round").style.cursor = "grab";
-        console.log("向下拖拽，切換到上一張");
+        // console.log("向下拖拽，切換到上一張");
       }
     },
+    /**
+     * @description: 鼠标松开，拖拽结束
+     */
     handleMouseUp() {
       if (this.isDragging) {
         this.isDragging = false;
         document.querySelector(".swiper-round").style.cursor = "grab";
         this.startAutoPlay();
-        console.log("滑鼠鬆開，結束拖拽");
       }
     },
+    /**
+     * @description: 鼠标离开，恢复自动播放
+     */
     handleMouseLeave() {
       this.handleMouseUp();
       this.startAutoPlay();
-      console.log("滑鼠離開，恢復自動播放");
     },
+    /**
+     * @description: 展示视频弹窗
+     * @param {string} url 视频链接
+     */
     showPopover(url) {
       this.popoverUrl = url;
       const popover = document.getElementById("popover");
@@ -326,6 +385,9 @@ export default {
         popover.showPopover();
       }
     },
+    /**
+     * @description: 关闭视频弹窗
+     */
     closePopover() {
       this.popoverUrl = null;
       const popover = document.getElementById("popover");
@@ -334,42 +396,51 @@ export default {
       }
     },
     handleBackdropClick(event) {
-      if (event.target.classList.contains('popover')) {
+      if (event.target.classList.contains("popover")) {
         this.closePopover();
       }
     },
+    /**
+     * @description: 开始自动播放
+     */
     startAutoPlay() {
       if (this.autoPlay && this.timer === null) {
         this.timer = setInterval(this.handleNextClick, this.interval);
-        console.log(
-          `自動播放開始，間隔: ${this.interval}ms, timer: ${this.timer}`
-        );
+        // console.log(
+        //   `自動播放開始，間隔: ${this.interval}ms, timer: ${this.timer}`
+        // );
       }
     },
+    /**
+     * @description: 暂停自动播放
+     */
     pauseAutoPlay() {
       if (this.timer !== null) {
         clearInterval(this.timer);
         this.timer = null;
-        console.log("自動播放暫停");
       }
     },
   },
+  /**
+   * @description: 组件挂载开始自动播放
+   */
   mounted() {
-    console.log("SwiperRound掛載，shareList:", this.shareList);
     this.startAutoPlay();
     document.querySelector(".swiper-round").style.cursor = "grab";
   },
+  /**
+   * @description: 组件销毁关闭自动播放
+   */
   beforeDestroy() {
     if (this.timer !== null) {
       clearInterval(this.timer);
       this.timer = null;
-      console.log("組件銷毀，自動播放停止");
     }
   },
   watch: {
     shareList: {
       handler(newList) {
-        console.log("分享列表更新:", newList);
+        // console.log("分享列表更新:", newList);
         this.activeIndex = 0;
         if (this.timer !== null) {
           clearInterval(this.timer);
@@ -389,7 +460,7 @@ export default {
         if (this.timer !== null) {
           clearInterval(this.timer);
           this.timer = null;
-          console.log("自動播放停止");
+          // console.log("自動播放停止");
         }
       }
     },
