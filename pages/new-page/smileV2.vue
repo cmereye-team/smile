@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 15:50:32
+ * @LastEditTime: 2025-09-18 16:28:38
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -642,13 +642,13 @@ export default {
             >
               <path
                 d="M3.19922 26.0597L25.8278 3.43115"
-                stroke="#4570B6"
+                stroke="currentColor"
                 stroke-width="5.4"
                 stroke-linecap="round"
               />
               <path
                 d="M6.49609 2.71118H26.5987V22.1512"
-                stroke="#4570B6"
+                stroke="currentColor"
                 stroke-width="4.86"
                 stroke-linecap="round"
               />
@@ -672,9 +672,9 @@ export default {
             </div>
             <!-- 矫视步骤内容区 -->
             <template v-if="activeStep >= 0">
-              <div class="steps-title">
-                <h2 class="subtitle mb-0">
-                  <span>SMILE</span><br />
+              <div class="steps-title text-primary">
+                <h2 class="mb-0 text-xl md:text-[40px] font-black leading-6 md:leading-[50px] text-left">
+                  <span class="block md:text-3xl font-bold font-en">SMILE</span>
                   矯正步驟
                 </h2>
                 <svg
@@ -686,13 +686,13 @@ export default {
                 >
                   <path
                     d="M0.726577 1.2312L17.593 18.0976"
-                    stroke="#4570B6"
+                    stroke="currentColor"
                     stroke-width="1.34165"
                     stroke-linecap="round"
                   />
                   <path
                     d="M18.1296 3.68896L18.1296 18.6727L3.63983 18.6727"
-                    stroke="#4570B6"
+                    stroke="currentColor"
                     stroke-width="1.34165"
                     stroke-linecap="round"
                   />
@@ -1142,14 +1142,6 @@ $text-color: #6d6e71;
     white 50px 100%
   );
   border: inherit;
-  .subtitle {
-    font-size: #{"clamp(1.25rem, 0.931rem + 1.31vw, 2.5rem)"};
-    line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
-    span {
-      font-size: #{"clamp(1.25rem, 1.091rem + 0.65vw, 1.875rem)"};
-      line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
-    }
-  }
   &-title {
     display: flex;
     align-items: center;
