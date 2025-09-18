@@ -103,10 +103,10 @@
                       value="clearVisionCentral"
                     ></el-option> -->
                     <!-- Smile講座-旺角 -->
-                    <el-option
+                    <!-- <el-option
                       :label="$t('appointFroms.content1.title3')"
                       value="smileMongKok"
-                    ></el-option>
+                    ></el-option> -->
                     <!-- 老花講座-旺角 -->
                     <el-option
                       :label="$t('appointFroms.content1.title4')"
@@ -651,20 +651,11 @@ export default {
             "2025-10-18",
             "2025-10-22",
             "2025-10-25",
-            "2025-10-29",
-            "2025-11-01",
           ];
           break;
         case "smileMongKok":
           // smile 旺角
-          this.allowedDates = [
-            "2025-10-04",
-            "2025-10-09",
-            "2025-10-14",
-            "2025-10-18",
-            "2025-10-23",
-            "2025-10-28",
-          ];
+          this.allowedDates = [];
           break;
         case "smileProMongKok":
           // smilePro 旺角
@@ -691,8 +682,13 @@ export default {
             "2025-09-23",
             "2025-09-27",
             "2025-09-29",
+            "2025-10-04",
             "2025-10-11",
+            "2025-10-13",
+            "2025-10-18",
+            "2025-10-21",
             "2025-10-25",
+            "2025-10-27",
           ];
           break;
         case "clearVisionCentral":
@@ -713,10 +709,10 @@ export default {
             "2025-09-16",
             "2025-09-22",
             "2025-09-30",
-            "2025-10-07",
-            "2025-10-16",
-            "2025-10-21",
-            "2025-10-30",
+            "2025-10-06",
+            "2025-10-14",
+            "2025-10-20",
+            "2025-10-28",
           ];
           break;
         default:
@@ -771,7 +767,6 @@ export default {
           } else if (weekday == "周二") {
             this.morningOrAfternoon = "1:30 下午";
           }
-
           return "Smile講座-中環";
         case "smileMongKok":
           if (weekday == "周二") {
