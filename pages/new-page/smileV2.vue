@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-18 19:44:03
+ * @LastEditTime: 2025-09-19 10:55:34
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -13,6 +13,7 @@ import ShareSection from "@/components/commom/share/ShareSection.vue";
 import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
 import SwiperRound from "@/components/commom/swiper/SwiperRound.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
+import Backtop from "@/components/commom/Backtop/Backtop.vue";
 export default {
   components: {
     HeadV3,
@@ -22,6 +23,7 @@ export default {
     ShareSection,
     SwiperCard,
     SwiperRound,
+    Backtop,
   },
   data() {
     return {
@@ -812,14 +814,14 @@ export default {
           </div>
         </section>
         <section class="condition">
-          <div class="condition-list md:px-[30px] gap-1 md:gap-7">
+          <div class="condition-list md:px-[30px] gap-[5px] md:gap-7">
             <div class="condition-item py-[10px]">1,000 度以下近視</div>
             <div class="condition-item py-[10px]">500 度以下散光</div>
             <div class="condition-item py-[10px]">角膜厚度正常</div>
           </div>
           <div class="condition-list relative">
             <div
-              class="condition-item mr-[172px] md:mr-[300px] py-1 md:py-[13px]"
+              class="condition-item mr-[142px] md:mr-[314px] py-1 md:py-[13px]"
             >
               沒有患上眼疾，如青光眼或<br class="block md:hidden" />視網膜疾病
             </div>
@@ -840,7 +842,7 @@ export default {
           </div>
           <div class="condition-list">
             <div
-              class="condition-item ml-[72px] md:ml-[108px] py-2 md:py-[13px]"
+              class="condition-item ml-[55px] md:ml-[108px] py-2 md:py-[13px]"
             >
               沒有患上自體免疫疾病，如風濕性關<br
                 class="block md:hidden"
@@ -956,7 +958,7 @@ export default {
             </svg>
           </a>
         </section>
-        <section class="exercise bg-black text-white">
+        <section class="exercise bg-black text-white py-6 md:pt-[30px] md:pb-[136px]">
           <div class="exercise-title">
             <h2>SMILE微笑矯視前小練習</h2>
             <p>以下為模擬手術提示，矯視前可跟指示多進行注視練習</p>
@@ -995,6 +997,7 @@ export default {
         </div>
       </div>
     </div>
+    <Backtop />
     <FooterV2 class="smile-footer" />
     <FooterMobile />
   </div>
@@ -1128,7 +1131,6 @@ $text-color: #6d6e71;
   &-footer {
     position: relative;
     z-index: 5;
-    margin-top: 0;
   }
 }
 .main {
@@ -1370,57 +1372,28 @@ $text-color: #6d6e71;
 }
 // 是否适合
 .condition {
-  // padding: #{"clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"} 0;
   position: relative;
   width: 100%;
   background: url("https://statichk.cmermedical.com/smile/smileV2/smile-condition-bg.svg")
     no-repeat;
   background-size: #{"clamp(4.375rem, 2.557rem + 9.09vw, 9.375rem)"} auto;
-  background-position: left calc(50% + 5px);
-  // &-title {
-  //   white-space: nowrap;
-  //   font-family: "Noto Sans HK";
-  //   text-align: right;
-  //   position: absolute;
-  //   right: 30px;
-  //   span {
-  //     font-weight: 700;
-  //     font-family: "Poppins", sans-serif;
-  //   }
-  // }
+  background-position: 0;
   &-list {
     display: flex;
     justify-content: center;
-    padding-left: #{"clamp(0.25rem, -0.33rem + 2.9vw, 1.063rem)"};
-    padding-right: #{"clamp(0.25rem, -0.33rem + 2.9vw, 1.063rem)"};
+    padding: 0 17px;
     margin-bottom: 18px;
-    // margin-bottom: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
-    // &:nth-child(2) {
-    //   .condition-item {
-    //     padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"};
-    //   }
-    // }
-    // &:nth-child(3) {
-    //   .condition-item {
-    //     padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.425rem + 3.5vw, 2rem)"};
-    //   }
-    // }
-    // &:nth-child(4) {
-    //   margin-left: #{"clamp(2.5rem, 1.591rem + 4.55vw, 5rem)"};
-    // }
   }
   &-item {
     flex: auto;
     color: $text-color;
     font-weight: 400;
     background-color: #fff;
-    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
-    line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
-    // flex: 0 1 auto;
-    // padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.125rem + 2.5vw, 2rem)"};
-    border: 2px solid $primary-color;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 50.4px;
+    border: 1px solid $primary-color;
     box-shadow: 3px #{"clamp(0.25rem, 0.182rem + 0.34vw, 0.438rem)"} 2px $primary-color;
-    border-radius: #{"clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem)"};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1531,7 +1504,6 @@ $text-color: #6d6e71;
 }
 // 小练习
 .exercise {
-  padding: #{"clamp(1.5rem, 1.364rem + 0.68vw, 1.875rem)"} 0 #{"clamp(3.75rem, 2.568rem + 5.91vw, 7rem)"};
   &-title {
     text-align: center;
     h2 {
@@ -1627,6 +1599,11 @@ $text-color: #6d6e71;
     &-list {
       margin-bottom: 36px;
     }
+    &-item {
+      font-size: 20px;
+      line-height: 35px;
+      letter-spacing: 2px;
+    }
   }
   .main {
     width: 768px;
@@ -1694,45 +1671,18 @@ $text-color: #6d6e71;
     }
   }
 }
-// 手机和平板
-// @media screen and (max-width: 1199px) {
-//   .condition {
-//     &-list {
-//       &:nth-child(2) {
-//         .condition-item {
-//           margin-right: 172px;
-//           padding: 10px 4px;
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width: 992px) {
+  .smile {
+    &-footer {
+      margin-top: 0 !important;
+    }
+  }
+}
 // 电脑端
 @media screen and (min-width: 1200px) {
   .benefit {
     padding: 0;
   }
-  // .condition {
-  //   padding: 100px 30px 0 30px;
-  //   h2 {
-  //     font-size: 30px;
-  //     line-height: 40px;
-  //   }
-  //   &-item {
-  //     font-size: 20px;
-  //     line-height: 35px;
-  //     letter-spacing: 2px;
-  //   }
-  //   &-item {
-  //     white-space: nowrap;
-  //   }
-  //   &-desc {
-  //     span {
-  //       display: block;
-  //       white-space: nowrap;
-  //     }
-  //   }
-  // }
 }
 @media screen and (min-width: 1440px) {
   .smile {

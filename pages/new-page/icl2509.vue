@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-18 09:35:31
+ * @LastEditTime: 2025-09-19 10:49:32
  * @FilePath: /pages/new-page/icl2509.vue
  * @Description: 9月广告专用讲座专题
 -->
@@ -524,38 +524,11 @@
         </div>
       </aside>
     </div>
-    <div class="backtop">
-      <el-backtop :bottom="150" ref="backtop" class="backtop-main">
-        <div
-          class="w-[32.972px] h-[66.812px] md:w-[32.5px] md:h-[65.855px] rounded-[43.39px] md:rounded-[42.763px] text-white bg-gradient-to-b from-[#00d6ff] to-[#008098] flex flex-col justify-center items-center tracking-[0.75px]"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="19"
-            height="20"
-            viewBox="0 0 19 20"
-            fill="none"
-          >
-            <path
-              d="M9.70312 6.76538V18.3683"
-              stroke="white"
-              stroke-width="1.48026"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4.60093 10.9194L9.70281 5.93091L14.8047 10.9194"
-              stroke="white"
-              stroke-width="1.48026"
-              stroke-linecap="round"
-            />
-          </svg>
-          <span
-            class="text-[9.546px] md:text-[9.408px] font-bold font-[ITC Avant Garde Gothic Pro] text-center"
-            >TOP</span
-          >
-        </div>
-      </el-backtop>
-    </div>
+    <Backtop
+      background="linear-gradient(180deg, #00d6ff 15%, #008098 100%)"
+      text="TOP"
+      :bottom="150"
+    />
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -573,19 +546,6 @@ $primary-color: #3bd7f1;
 }
 :deep(.new-Footer-v2 section) {
   margin-top: 0 !important;
-}
-.backtop {
-  position: sticky;
-  bottom: 150px;
-  height: 0;
-  z-index: 10;
-  &-main {
-    background: transparent;
-    box-shadow: none;
-    left: 5px;
-    right: auto !important;
-    position: relative;
-  }
 }
 // 图片抖动动画
 @keyframes ShakeImage {
@@ -931,13 +891,6 @@ $primary-color: #3bd7f1;
     }
   }
 }
-@media screen and (min-width: 991px) {
-  .backtop {
-    &-main {
-      left: calc(50% - 400.25px);
-    }
-  }
-}
 </style>
 <script>
 import HeadV3 from "@/components/Publice/HeadV3.vue";
@@ -945,6 +898,7 @@ import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import PageNavigation from "@/components/commom/PageNavigation/PageNavigation.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import ShareSection from "@/components/commom/share/ShareSection.vue";
+import Backtop from "@/components/commom/Backtop/Backtop.vue";
 export default {
   components: {
     HeadV3,
@@ -952,6 +906,7 @@ export default {
     FooterMobile,
     PageNavigation,
     ShareSection,
+    Backtop,
   },
   data() {
     return {
