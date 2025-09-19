@@ -1,6 +1,13 @@
 <template>
   <div class="backtop">
-    <el-backtop :bottom="bottom" ref="backtop" class="backtop-main">
+    <el-backtop
+      :bottom="bottom"
+      :visibility-height="visibilityHeight"
+      ref="backtop"
+      class="backtop-main"
+      :class="{ 'is-visible': isBacktopVisible }"
+      @click="handleClick"
+    >
       <div
         class="backtop-container"
         :style="{ background: backgroundStyle }"
@@ -25,9 +32,7 @@
             stroke-linecap="round"
           />
         </svg>
-        <span
-          class="backtop-text font-en"
-        >
+        <span class="backtop-text font-en">
           {{ text }}
         </span>
       </div>
@@ -51,10 +56,45 @@ export default {
       type: Number,
       default: 150,
     },
+    visibilityHeight: {
+      type: Number,
+      default: 200,
+    },
+  },
+  data() {
+    return {
+      isBacktopVisible: false,
+    };
   },
   computed: {
     backgroundStyle() {
       return this.background;
+    },
+  },
+  mounted() {
+    this.$nextTick(() => {
+      // 初始检查 visible 状态
+      this.isBacktopVisible = this.$refs.backtop?.visible || false;
+      // 监听 el-backtop 的 visible 属性变化
+      this.$watch(
+        () => this.$refs.backtop?.visible,
+        (newVal) => {
+          this.isBacktopVisible = newVal || false;
+          console.log('Backtop visible:', newVal); // 调试用
+        },
+        { immediate: true }
+      );
+    });
+  },
+  methods: {
+    handleClick() {
+      // 点击返回顶部后，检查滚动位置
+      this.$nextTick(() => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop < this.visibilityHeight) {
+          this.isBacktopVisible = false; // 强制隐藏
+        }
+      });
     },
   },
 };
@@ -66,13 +106,24 @@ export default {
   bottom: 150px;
   height: 0;
   z-index: 10;
+
   &-main {
     background: transparent;
     box-shadow: none;
     left: 5px;
     right: auto !important;
     position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease-out, visibility 0.1s ease-out; /* 优化过渡 */
+    display: block;
+
+    &.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
   }
+
   &-container {
     width: 32.972px;
     height: 66.812px;
@@ -89,12 +140,14 @@ export default {
       border-radius: 42.763px;
     }
   }
+
   &-text {
     font-size: #{'clamp(0.5966rem, 0.5681rem + 0.1425vw, 0.675rem)'};
     font-weight: bold;
     text-align: center;
   }
 }
+
 @media screen and (min-width: 991px) {
   .backtop {
     &-main {

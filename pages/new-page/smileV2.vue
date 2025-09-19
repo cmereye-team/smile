@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-19 10:55:34
+ * @LastEditTime: 2025-09-19 14:01:28
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -487,14 +487,14 @@ export default {
       observer.observe(this.$refs.xtraAnimateBox);
     }
   },
-  computed: {
-    firstBenefit() {
-      return this.benefitList.filter((i) => i.row === 1);
-    },
-    secondBenefit() {
-      return this.benefitList.filter((i) => i.row === 2);
-    },
-  },
+  // computed: {
+  //   firstBenefit() {
+  //     return this.benefitList.filter((i) => i.row === 1);
+  //   },
+  //   secondBenefit() {
+  //     return this.benefitList.filter((i) => i.row === 2);
+  //   },
+  // },
   head() {
     if (this.$i18n.locale === "en") {
       return {
@@ -752,7 +752,7 @@ export default {
             </template>
           </div>
         </section>
-        <section class="whyChoose px-7 md:px-14">
+        <section class="whyChoose px-7 md:px-14 md:mb-[60px]">
           <h2 class="subtitle mb-7 md:mb-12 text-left">為何選擇希瑪?</h2>
           <div class="whyChoose-img">
             <img
@@ -776,26 +776,26 @@ export default {
         <section class="kol-mobile block lg:hidden">
           <userShare title="SMILE用家分享" :user-share="ShareData"></userShare>
         </section>
-        <section class="benefit mb-[30px] md:mb-[100px]">
+        <section class="benefit mb-[30px] md:mb-[100px] py-7">
           <h2 class="subtitle mb-0">SMILE微笑激光矯視的好處</h2>
-          <div class="benefit-list">
-            <div class="benefit-row">
-              <div
-                class="benefit-item"
-                :class="{ active: benefit.active }"
-                v-for="benefit in firstBenefit"
-                :key="benefit.id"
-              >
-                <h3 class="benefit-item-title">{{ benefit.title }}</h3>
-                <div class="benefit-item-content">
-                  <div class="benefit-item-icon">
-                    <img :src="benefit.icon" :alt="benefit.title" />
-                  </div>
-                  <p class="benefit-item-desc">{{ benefit.desc }}</p>
+          <div class="benefit-list pl-[47px] pr-[27px]">
+            <!-- <div class="benefit-row"> -->
+            <div
+              class="benefit-item"
+              :class="{ active: benefit.active }"
+              v-for="benefit in benefitList"
+              :key="benefit.id"
+            >
+              <h3 class="benefit-item-title">{{ benefit.title }}</h3>
+              <div class="benefit-item-content">
+                <div class="benefit-item-icon">
+                  <img :src="benefit.icon" :alt="benefit.title" />
                 </div>
+                <p class="benefit-item-desc">{{ benefit.desc }}</p>
               </div>
             </div>
-            <div class="benefit-row">
+            <!-- </div> -->
+            <!-- <div class="benefit-row">
               <div
                 class="benefit-item"
                 :class="{ active: benefit.active }"
@@ -810,7 +810,7 @@ export default {
                   <p class="benefit-item-desc">{{ benefit.desc }}</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <section class="condition">
@@ -958,7 +958,9 @@ export default {
             </svg>
           </a>
         </section>
-        <section class="exercise bg-black text-white py-6 md:pt-[30px] md:pb-[136px]">
+        <section
+          class="exercise bg-black text-white py-6 md:pt-[30px] md:pb-[136px]"
+        >
           <div class="exercise-title">
             <h2>SMILE微笑矯視前小練習</h2>
             <p>以下為模擬手術提示，矯視前可跟指示多進行注視練習</p>
@@ -1279,32 +1281,20 @@ $text-color: #6d6e71;
 }
 // 好处
 .benefit {
-  padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
+  // padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
   h2 {
     text-align: center;
     padding-bottom: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"};
   }
   &-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &-row {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 96%;
-    &:first-child {
-      margin-top: 0;
-      z-index: 1;
-    }
-    &:last-child {
-      margin-top: #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
-      z-index: 2;
-    }
+    flex-wrap: wrap;
   }
   &-item {
-    flex: 1;
+    z-index: 1;
+    flex: 0 0 calc(33.33% + 20px);
+    margin-left: -20px;
+    margin-top: -30px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: #fff;
@@ -1316,19 +1306,16 @@ $text-color: #6d6e71;
     cursor: pointer;
     transition: all 0.4s ease;
     overflow: hidden;
-    margin: 0 #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
     position: relative;
     text-align: center;
+    &:nth-child(-n + 3) {
+      margin-top: 0;
+    }
     &-title {
       font-weight: 700;
       color: $primary-color;
-      font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
-      line-height: #{"clamp(0.531rem, 0.27rem + 1.31vw, 1.25rem)"};
-      letter-spacing: #{"clamp(0.25rem, 0.199rem + 0.26vw, 0.391rem)"};
-    }
-    &-icon {
-      width: #{"clamp(3.25rem, -1.886rem + 25.68vw, 17.375rem)"};
-      margin: 0 auto 2px;
+      font-size: 16px;
+      line-height: 8.549px;
     }
     &-content {
       opacity: 0;
@@ -1339,12 +1326,16 @@ $text-color: #6d6e71;
       }
       p {
         color: #fff;
-        font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
-        line-height: #{"clamp(1rem, 0.909rem + 0.45vw, 1.25rem)"};
+        font-size: 16px;
+        line-height: 16px;
         font-weight: 400;
         white-space: pre-line;
         line-height: 1.2;
       }
+    }
+    &-icon {
+      margin: 0 auto 4px;
+      width: 53px;
     }
     &.acive {
       .benefit-item-title {
@@ -1358,7 +1349,8 @@ $text-color: #6d6e71;
     }
     &:hover {
       background-color: $primary-color;
-      transition: all 0.4s ease;
+      transition: all 0.8s ease;
+      z-index: 5;
       .benefit-item-title {
         opacity: 0;
         height: 0;
@@ -1591,6 +1583,32 @@ $text-color: #6d6e71;
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 6px;
+      }
+    }
+  }
+  .benefit {
+    &-list {
+      padding-left: 40px;
+      padding-right: 0;
+    }
+    &-item {
+      flex: 0 0 calc(33.33% + 40px);
+      margin-left: -40px;
+      margin-top: -60px;
+      &-title {
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 6.25px;
+      }
+      &-icon {
+        width: 125px;
+      }
+      &-content {
+        p {
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 3.36px;
+        }
       }
     }
   }
