@@ -129,10 +129,13 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
   ],
+  schemaOrg: {
+    canonicalHost: 'https://smile.hkcmereye.com'  // 生产环境域名
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios"],
+    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios", "nuxt-jsonld"],
   ],
 
   workbox: {
@@ -172,6 +175,14 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包
   build: {
     vendor: ["element-ui"],
+    terser: {
+      terserOptions: {
+        compress: {
+          drop_console: true,   // 去掉 console.*
+          drop_debugger: true,  // 去掉 debugger
+        },
+      },
+    },
   },
   config: {
     nuxt: {

@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-05 16:03:34
+ * @LastEditTime: 2025-09-19 14:01:28
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -9,24 +9,28 @@
 import HeadV3 from "@/components/Publice/HeadV3.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
+import ShareSection from "@/components/commom/share/ShareSection.vue";
 import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
 import SwiperRound from "@/components/commom/swiper/SwiperRound.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
+import Backtop from "@/components/commom/Backtop/Backtop.vue";
 export default {
   components: {
     HeadV3,
     FooterV2,
     FooterMobile,
     UserShare,
+    ShareSection,
     SwiperCard,
     SwiperRound,
+    Backtop,
   },
   data() {
     return {
       xtraActive: false, // 是否展开状态
       activeStep: 0, // 当前激活的矫视步骤索引
       activeStepTimer: null,
-      awardsList: [
+      bannerList: [
         {
           imgUrl:
             "https://statichk.cmermedical.com/smile/smileV2/smile-swiper-01.avif",
@@ -393,21 +397,6 @@ export default {
       ],
     };
   },
-  mounted() {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          this.xtraActive = true; // 进入视区
-        } else {
-          this.xtraActive = false; // 离开视区
-        }
-      },
-      { threshold: 0.3 } // 当可见比例达到 20% 时触发
-    );
-
-    observer.observe(this.$refs.xtraAnimateBox);
-  },
   methods: {
     /**
      * @description: 更新矫视步骤的激活
@@ -426,18 +415,86 @@ export default {
         this.activeStepTimer = null;
       }
     },
-    toggleUnfold(hover) {
-      this.xtraActive = hover;
+    /**
+     * @description: 转换链接去除&amp;
+     * @param {string} str 原始链接
+     * @return {string} 已处理的链接
+     */
+    transLink(str) {
+      if (str.indexOf("&amp;") > -1) {
+        str = str.replace(/&amp;/g, "&");
+      }
+      return str;
+    },
+    /**
+     * @description: 请求banner列表
+     */
+    async getBannerList() {
+      const { locale } = this.$i18n;
+      const baseUrl = "https://admin.hkcmereye.com";
+      const num = 5;
+      const gidMap = { hk: 1, cn: 2, en: 3 };
+      const url = `${baseUrl}/api.php/cms/slide/gid/${gidMap[locale]}/num/${num}`;
+      try {
+        const response = await fetch(url);
+        const { data } = await response.json();
+        this.bannerList = data.map((item) => ({
+          pic: `${baseUrl}${item.pic}`,
+          mbpic: `${baseUrl}${item.mobilepic}`,
+          link: this.transLink(item.link),
+          linkType: item.title === "link" ? "a" : "nuxt",
+        }));
+      } catch (error) {
+        console.error("Banner获取失败:", error);
+        this.bannerList = [];
+      }
+      // console.log(`length=${this.bannerList.length},banner=`, this.bannerList);
     },
   },
-  computed: {
-    firstBenefit() {
-      return this.benefitList.filter((i) => i.row === 1);
-    },
-    secondBenefit() {
-      return this.benefitList.filter((i) => i.row === 2);
-    },
+  created() {
+    this.getBannerList();
   },
+  mounted() {
+    // 创建防抖函数，限制频繁触发
+    const debounce = (fn, delay) => {
+      let timer = null;
+      return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this, args), delay);
+      };
+    };
+    // IntersectionObserver 回调
+    const handleIntersection = debounce((entries) => {
+      const entry = entries[0];
+      // 当元素进入视区且可见比例达到 0.3 时触发展开
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+        this.xtraActive = true; // 进入视区
+        // 可选：如果只需要触发一次，取消观察
+        // observer.unobserve(this.$refs.xtraAnimateBox);
+      } else if (!entry.isIntersecting && entry.intersectionRatio < 0.1) {
+        this.xtraActive = false; // 离开视区
+      }
+    }, 200); // 200ms 防抖延迟
+
+    // 配置 IntersectionObserver
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: [0.1, 0.3, 0.5], // 设置多个阈值，平滑过渡
+      rootMargin: "50px 0px", // 增加 50px 的触发余量，减少边界抖动
+    });
+
+    // 确保 refs 存在再观察
+    if (this.$refs.xtraAnimateBox) {
+      observer.observe(this.$refs.xtraAnimateBox);
+    }
+  },
+  // computed: {
+  //   firstBenefit() {
+  //     return this.benefitList.filter((i) => i.row === 1);
+  //   },
+  //   secondBenefit() {
+  //     return this.benefitList.filter((i) => i.row === 2);
+  //   },
+  // },
   head() {
     if (this.$i18n.locale === "en") {
       return {
@@ -485,34 +542,81 @@ export default {
           href: "https://smile.hkcmereye.com/cn/vision-correction/relex-smile",
         },
       ],
+      script: [
+        {
+          type: "application/ld+json",
+          json: {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "SMILE矯正原理",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用Carl Zeiss VisuMax激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "SMILE矯正步驟",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "以全飛秒激光直接切割角膜中層，製作一個約2-2.5mm的小切口，將切割了的角膜透鏡從切口抽出。",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "為何選擇希瑪?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "希瑪微笑矯視中心一直致力為客戶提供高效、安全的視力矯正方案。作為香港首間獲Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》認證的矯視中心，希瑪在SMILE微笑矯視領域具備領先地位，深受信賴。中心採用已獲美國FDA認證的Carl Zeiss Visumax設備，結合德國蔡司光學技術與創新激光科技，令SMILE微笑矯視過程精準又溫和。來自不同行業及身份的SMILE真實用家均表示矯視後效果符合預期，恢復迅速，生活質素顯著提升；配合希瑪團隊全程細心的跟進，亦確保每位真實用家都能安心體驗矯視服務。",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "SMILE微笑激光矯視的好處",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "手術簡單，無需製造角膜瓣；術後復原快，最快術後翌日生活、工作；手術時間短，最快10-15分鐘完成；術後影響少，減低術後眼乾及感染的可能性；微創，傷口只有約2-2.5mm；效果穩定，視力改善顯著。",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "你適合接受SMILE微笑矯視嗎?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "1,000 度以下近視；500 度以下散光；角膜厚度正常；沒有患上眼疾，如青光眼或視網膜疾病；發育成熟，近視度數穩定；非懷孕或哺乳期間；沒有患上自體免疫疾病，如風濕性關節炎或紅斑狼瘡；不需要長期服用類固醇；角膜沒受感染，例如發炎或曾受傷。",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "什麼是 SMILE XTRA？",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "透過在角膜局部加入維生素B2，再經紫外線V2照射，使角膜裡面的膠原蛋白緊扣，令角膜變得更加堅韌和穩定，降低角膜變形／反彈的可能。",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "我需要接受 SMILE XTRA？",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "如果你的眼晴度數較深、角膜比較薄，希望強化角膜以減低角膜變形及度數反彈的機會，經評估後，醫生會作出判斷是否需要接受SMILE XTRA角膜膠原交聯術。",
+                },
+              },
+            ],
+          },
+        },
+      ],
     };
   },
 };
 </script>
 <template>
-  <div class="page">
+  <div class="page font-tc">
     <HeadV3 />
     <div class="page-smile">
-      <div class="smile">
-        <div class="smile-bg">
-          <div class="smile-left hidden">
-            <SwiperRound
-              :shareList="ShareData"
-              imageKey="img"
-              hrefKey="href"
-            ></SwiperRound>
-          </div>
-          <div class="smile-right hidden">
-            <div class="smile-right-title">
-              <h4>最新情報</h4>
-              <p>CATCH UP WITH US</p>
-            </div>
-            <div class="smile-right-swiper">
-              <SwiperCard :images="awardsList" imageKey="imgUrl"></SwiperCard>
-            </div>
-          </div>
-        </div>
-      </div>
       <main class="main">
         <section class="newCenter">
           <div
@@ -532,7 +636,9 @@ export default {
                 Small Incision Lenticule Extraction
               </p>
             </div>
-            <div class="newCenter-card-nav text-text">
+            <div
+              class="newCenter-card-nav mt-8 md:mt-[68.39px] text-text font-tc text-sm md:text-xl font-light leading-[21.822px] md:leading-[43.5px] tracking-[0.36px] md:tracking-[0.6px]"
+            >
               <a href="/">{{ $t("Correct.newIcl.menuone") }} </a
               >&nbsp;>&nbsp;<a>{{ $t("Correct.newIcl.menuTwo") }}</a
               >&nbsp;>&nbsp;<a class="text-primary font-medium" href=""
@@ -545,7 +651,11 @@ export default {
         <section
           class="principles bg-primary text-white py-13 px-4 md:py16 md:px-24"
         >
-          <h3><span>SMILE</span>矯正原理</h3>
+          <h2
+            class="text-white font-hk text-xl md:text-3xl font-black leading-[30px]"
+          >
+            <span class="font-en font-bold">SMILE</span>矯正原理
+          </h2>
           <p>
             SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE
             微笑矯視使用<span>Carl Zeiss VisuMax</span
@@ -567,13 +677,13 @@ export default {
             >
               <path
                 d="M3.19922 26.0597L25.8278 3.43115"
-                stroke="#4570B6"
+                stroke="currentColor"
                 stroke-width="5.4"
                 stroke-linecap="round"
               />
               <path
                 d="M6.49609 2.71118H26.5987V22.1512"
-                stroke="#4570B6"
+                stroke="currentColor"
                 stroke-width="4.86"
                 stroke-linecap="round"
               />
@@ -597,11 +707,13 @@ export default {
             </div>
             <!-- 矫视步骤内容区 -->
             <template v-if="activeStep >= 0">
-              <div class="steps-title">
-                <h3 class="subtitle">
-                  <span>SMILE</span><br />
+              <div class="steps-title text-primary">
+                <h2
+                  class="mb-0 text-xl md:text-[40px] font-black leading-6 md:leading-[50px] text-left"
+                >
+                  <span class="block md:text-3xl font-bold font-en">SMILE</span>
                   矯正步驟
-                </h3>
+                </h2>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"
@@ -611,13 +723,13 @@ export default {
                 >
                   <path
                     d="M0.726577 1.2312L17.593 18.0976"
-                    stroke="#4570B6"
+                    stroke="currentColor"
                     stroke-width="1.34165"
                     stroke-linecap="round"
                   />
                   <path
                     d="M18.1296 3.68896L18.1296 18.6727L3.63983 18.6727"
-                    stroke="#4570B6"
+                    stroke="currentColor"
                     stroke-width="1.34165"
                     stroke-linecap="round"
                   />
@@ -640,10 +752,11 @@ export default {
             </template>
           </div>
         </section>
-        <section class="whyChoose">
-          <h3 class="subtitle mb-4 md:mb-8 lg:mb-12">為何選擇希瑪?</h3>
+        <section class="whyChoose px-7 md:px-14 md:mb-[60px]">
+          <h2 class="subtitle mb-7 md:mb-12 text-left">為何選擇希瑪?</h2>
           <div class="whyChoose-img">
             <img
+              class="w-full rounded-[8.19px]"
               src="https://statichk.cmermedical.com/smile/smileV2/smile-why.avif"
               alt="為何選擇希瑪"
             />
@@ -663,33 +776,33 @@ export default {
         <section class="kol-mobile block lg:hidden">
           <userShare title="SMILE用家分享" :user-share="ShareData"></userShare>
         </section>
-        <section class="benefit">
-          <h3 class="subtitle">SMILE微笑激光矯視的好處</h3>
-          <div class="benefit-list">
-            <div class="benefit-row">
-              <div
-                class="benefit-item"
-                :class="{ active: benefit.active }"
-                v-for="benefit in firstBenefit"
-                :key="benefit.id"
-              >
-                <div class="benefit-item-title">{{ benefit.title }}</div>
-                <div class="benefit-item-content">
-                  <div class="benefit-item-icon">
-                    <img :src="benefit.icon" :alt="benefit.title" />
-                  </div>
-                  <p class="benefit-item-desc">{{ benefit.desc }}</p>
+        <section class="benefit mb-[30px] md:mb-[100px] py-7">
+          <h2 class="subtitle mb-0">SMILE微笑激光矯視的好處</h2>
+          <div class="benefit-list pl-[47px] pr-[27px]">
+            <!-- <div class="benefit-row"> -->
+            <div
+              class="benefit-item"
+              :class="{ active: benefit.active }"
+              v-for="benefit in benefitList"
+              :key="benefit.id"
+            >
+              <h3 class="benefit-item-title">{{ benefit.title }}</h3>
+              <div class="benefit-item-content">
+                <div class="benefit-item-icon">
+                  <img :src="benefit.icon" :alt="benefit.title" />
                 </div>
+                <p class="benefit-item-desc">{{ benefit.desc }}</p>
               </div>
             </div>
-            <div class="benefit-row">
+            <!-- </div> -->
+            <!-- <div class="benefit-row">
               <div
                 class="benefit-item"
                 :class="{ active: benefit.active }"
                 v-for="benefit in secondBenefit"
                 :key="benefit.id"
               >
-                <div class="benefit-item-title">{{ benefit.title }}</div>
+                <h3 class="benefit-item-title">{{ benefit.title }}</h3>
                 <div class="benefit-item-content">
                   <div class="benefit-item-icon">
                     <img :src="benefit.icon" :alt="benefit.title" />
@@ -697,38 +810,58 @@ export default {
                   <p class="benefit-item-desc">{{ benefit.desc }}</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <section class="condition">
-          <div class="condition-list">
-            <div class="condition-item">1,000 度以下近視</div>
-            <div class="condition-item">500 度以下散光</div>
-            <div class="condition-item">角膜厚度正常</div>
+          <div class="condition-list md:px-[30px] gap-[5px] md:gap-7">
+            <div class="condition-item py-[10px]">1,000 度以下近視</div>
+            <div class="condition-item py-[10px]">500 度以下散光</div>
+            <div class="condition-item py-[10px]">角膜厚度正常</div>
           </div>
-          <div class="condition-list">
-            <div class="condition-item">沒有患上眼疾，如青光眼或視網膜疾病</div>
-            <h3 class="subtitle">
-              你適合接受<br /><span>SMILE</span>微笑矯視嗎?
-            </h3>
-          </div>
-          <div class="condition-list">
-            <div class="condition-item">發育成熟，近視度數穩定</div>
-            <div class="condition-item">非懷孕或哺乳期間</div>
-          </div>
-          <div class="condition-list">
-            <div class="condition-item">
-              沒有患上自體免疫疾病，如風濕性關節炎或紅斑狼瘡
+          <div class="condition-list relative">
+            <div
+              class="condition-item mr-[142px] md:mr-[314px] py-1 md:py-[13px]"
+            >
+              沒有患上眼疾，如青光眼或<br class="block md:hidden" />視網膜疾病
+            </div>
+            <div
+              class="condition-title flex absolute right-[17px] h-full justify-center items-center"
+            >
+              <h2
+                class="text-primary mb-0 text-base md:text-3xl leading-[20.159px] md:leading-10 font-black font-hk text-right"
+              >
+                你適合接受<br /><span class="font-en font-bold">SMILE</span
+                >微笑矯視嗎?
+              </h2>
             </div>
           </div>
+          <div class="condition-list gap-[13px] md:gap-[26px]">
+            <div class="condition-item py-3">發育成熟，近視度數穩定</div>
+            <div class="condition-item py-3">非懷孕或哺乳期間</div>
+          </div>
           <div class="condition-list">
-            <div class="condition-item">不需要長期服用類固醇</div>
-            <div class="condition-item">角膜沒受感染，例如發炎或曾受傷</div>
+            <div
+              class="condition-item ml-[55px] md:ml-[108px] py-2 md:py-[13px]"
+            >
+              沒有患上自體免疫疾病，如風濕性關<br
+                class="block md:hidden"
+              />節炎或紅斑狼瘡
+            </div>
+          </div>
+          <div class="condition-list gap-3 md:gap-[21px]">
+            <div class="condition-item py-1 md:py-[13px]">
+              不需要長期服用<br class="block md:hidden" />類固醇
+            </div>
+            <div class="condition-item py-1 md:py-[13px]">
+              角膜沒受感染，例如發炎<br class="block md:hidden" />或曾受傷
+            </div>
           </div>
           <p class="condition-desc">
-            <span
+            <span class="inline md:block"
               >如以上條件都與你的情況相符，你已符合進行SMILE微笑矯視的基本條件。</span
-            ><span>若不確定，歡迎預約諮詢。</span>
+            >
+            <span class="inline md:block">若不確定，歡迎預約諮詢。</span>
           </p>
           <a
             href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -761,20 +894,13 @@ export default {
         </section>
         <section class="xtra" ref="xtraAnimateBox">
           <div class="xtra-title">
-            <h3 class="subtitle">SMILE XTRA角膜膠原交聯術</h3>
+            <h2 class="subtitle mb-0">SMILE XTRA角膜膠原交聯術</h2>
             <p>Comeal Collagen Cross-Linking</p>
             <span>可與SMILE微笑激光矯視同時進行</span>
           </div>
-          <div
-            class="xtra-paper"
-            :class="{ unfolded: xtraActive }"
-            @mouseover="toggleUnfold(true)"
-            @mouseleave="toggleUnfold(false)"
-          >
+          <div class="xtra-paper" :class="{ unfolded: xtraActive }">
             <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
-              <div class="xtra-paper-title">
-                <h4>什麼是 <span>SMILE XTRA</span>？</h4>
-              </div>
+              <h3 class="xtra-paper-title">什麼是 <span>SMILE XTRA</span>？</h3>
               <div class="xtra-paper-intro">
                 <p>
                   透過在角膜局部加入維生素B2，再經紫外線V2照射，使角膜裡面的膠原蛋白緊扣，令角膜變得更加堅韌和穩定，降低角膜變形／反彈的可能
@@ -787,9 +913,9 @@ export default {
               </div>
             </div>
             <div class="xtra-paper-item" :class="{ unfolded: xtraActive }">
-              <div class="xtra-paper-title">
-                <h4>我需要接受 <span>SMILE XTRA</span>？</h4>
-              </div>
+              <h3 class="xtra-paper-title">
+                我需要接受 <span>SMILE XTRA</span>？
+              </h3>
               <div class="xtra-paper-intro">
                 <p>
                   如果你的眼晴度數較深、角膜比較薄，希望強化角膜以減低角膜變形及度數反彈的機會，經評估後，醫生會作出判斷是否需要接受SMILE
@@ -832,9 +958,11 @@ export default {
             </svg>
           </a>
         </section>
-        <section class="exercise bg-black text-white">
+        <section
+          class="exercise bg-black text-white py-6 md:pt-[30px] md:pb-[136px]"
+        >
           <div class="exercise-title">
-            <h3>SMILE微笑矯視前小練習</h3>
+            <h2>SMILE微笑矯視前小練習</h2>
             <p>以下為模擬手術提示，矯視前可跟指示多進行注視練習</p>
           </div>
           <div class="exercise-image">
@@ -848,85 +976,30 @@ export default {
             <p>②交替遮著左右眼，各邊30秒。注意被遮著的眼睛仍需保持睜開。</p>
           </div>
         </section>
-        <section class="share block lg:hidden">
-          <div class="share-title">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="19"
-              viewBox="0 0 21 19"
-              fill="none"
-            >
-              <path
-                d="M1 0.938477L19.4751 18.0939"
-                stroke="#4570B6"
-                stroke-width="1.97947"
-              />
-            </svg>
-            <span>同朋友分享一下啦！</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="19"
-              viewBox="0 0 21 19"
-              fill="none"
-            >
-              <path
-                d="M20 0.938477L1.52493 18.0939"
-                stroke="#4570B6"
-                stroke-width="1.97947"
-              />
-            </svg>
-          </div>
-          <div class="share-group">
-            <div class="share-group-item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="22"
-                viewBox="0 0 21 22"
-                fill="none"
-              >
-                <path
-                  d="M0.282114 11.5524C0.28129 9.57421 1.74018 7.94793 3.63508 7.78225C4.78653 7.68169 5.78468 8.04519 6.60891 8.85874C6.74161 8.9898 6.83145 9.00134 6.99135 8.9049C8.88461 7.7567 10.7828 6.61427 12.6827 5.47761C12.831 5.38859 12.8508 5.31193 12.7981 5.15037C12.0958 2.99822 13.5432 0.683684 15.7842 0.36222C17.9075 0.0580664 19.8073 1.52279 20.0529 3.65351C20.2771 5.60042 18.852 7.4443 16.9044 7.71961C15.6318 7.8993 14.552 7.50695 13.6594 6.59201C13.5638 6.49393 13.4987 6.48074 13.3816 6.55163C11.462 7.71054 9.5407 8.86616 7.61859 10.0193C7.50567 10.0869 7.47105 10.1537 7.51721 10.2839C7.75129 10.9466 7.79497 11.6233 7.61529 12.3058C7.57326 12.4666 7.6293 12.5416 7.76613 12.6116C9.43931 13.4647 11.1109 14.322 12.7832 15.1792C12.9176 15.2476 13.0544 15.3136 13.1821 15.3919C13.3091 15.4693 13.3956 15.4578 13.4954 15.3366C14.0962 14.6088 14.8652 14.1736 15.7983 14.0228C17.2151 13.7936 18.7119 14.4712 19.4801 15.696C20.8871 17.938 19.6458 20.8378 17.0536 21.3637C14.9996 21.7807 12.9678 20.3432 12.6654 18.262C12.5986 17.802 12.5961 17.3445 12.7338 16.8978C12.7972 16.6926 12.7404 16.6002 12.5508 16.5038C10.7597 15.5946 8.97362 14.6756 7.18834 13.7541C7.05894 13.6873 6.98393 13.7038 6.89327 13.8142C6.06244 14.8231 4.98847 15.2748 3.68701 15.2056C2.07234 15.119 0.559055 13.7252 0.327446 12.1096C0.297774 11.9052 0.274696 11.7016 0.282938 11.5516L0.282114 11.5524Z"
-                  fill="#4570B6"
-                />
-              </svg>
-            </div>
-            <div class="share-group-item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_11479_977)">
-                  <path
-                    d="M9.10209 6.12598C10.8869 6.12803 12.1807 6.64582 13.3111 7.62182C13.4894 7.77592 13.6707 7.92592 13.845 8.0831C14.1985 8.40056 14.2673 8.87417 13.9814 9.25738C13.6428 9.71147 13.2852 10.1522 12.9157 10.5806C12.609 10.9361 12.1369 10.9587 11.7713 10.6618C11.5432 10.4769 11.3271 10.2755 11.099 10.0895C10.0602 9.24505 8.50948 9.28615 7.55234 10.2303C6.53344 11.2361 5.53248 12.2645 4.5594 13.3175C3.81341 14.125 3.64808 15.1113 3.98671 16.1582C4.32535 17.2051 5.06536 17.8389 6.10915 18.03C6.97666 18.1882 7.77544 17.9633 8.43876 17.3345C8.6529 17.1321 8.8511 16.9123 9.06026 16.7047C9.44371 16.3256 9.89489 16.3102 10.2813 16.6852C10.6618 17.0551 11.0313 17.4372 11.3909 17.8287C11.7066 18.1728 11.7205 18.6485 11.4217 18.9958C10.3939 20.1937 9.1728 21.0484 7.60911 21.3423C4.41897 21.9412 1.2119 19.643 0.679043 16.3441C0.334432 14.2082 0.910112 12.3641 2.37122 10.82C3.29848 9.83989 4.23969 8.87315 5.18886 7.91564C6.35715 6.73623 7.76647 6.14139 9.10109 6.127L9.10209 6.12598Z"
-                    fill="#4570B6"
-                  />
-                  <path
-                    d="M12.3086 15.6265C10.73 15.6194 9.43419 15.1046 8.30574 14.1266C8.13443 13.9776 7.96113 13.8317 7.78982 13.6817C7.42031 13.3571 7.34661 12.8814 7.63843 12.491C7.97806 12.0369 8.33562 11.5972 8.70413 11.1688C9.00891 10.8144 9.48299 10.7938 9.84852 11.0907C10.0637 11.2654 10.2658 11.4565 10.483 11.628C11.6503 12.5516 13.1532 12.4623 14.197 11.3989C15.1302 10.4486 16.0595 9.49422 16.9778 8.52849C17.7337 7.73332 17.9628 6.7717 17.666 5.71146C17.3632 4.63273 16.6421 3.95878 15.5774 3.73687C14.681 3.54989 13.8633 3.7718 13.1761 4.41904C12.962 4.6204 12.7648 4.84232 12.5546 5.04882C12.1722 5.42483 11.717 5.43921 11.3325 5.06525C10.9521 4.6954 10.5826 4.31322 10.224 3.92077C9.91625 3.58482 9.89334 3.11121 10.1812 2.77423C11.1463 1.64413 12.2817 0.796559 13.7418 0.466776C17.2029 -0.31402 20.5633 2.13316 20.9866 5.76489C21.2087 7.67167 20.6819 9.35347 19.411 10.7445C18.3473 11.9085 17.2636 13.0581 16.1083 14.1266C15.0077 15.1447 13.6851 15.6111 12.3076 15.6255L12.3086 15.6265Z"
-                    fill="#4570B6"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_11479_977">
-                    <rect
-                      width="20.4545"
-                      height="21.1144"
-                      fill="white"
-                      transform="translate(0.582031 0.322266)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </section>
+        <ShareSection />
       </main>
+      <div class="smile">
+        <div class="smile-bg">
+          <div class="smile-left hidden">
+            <SwiperRound
+              :shareList="ShareData"
+              imageKey="img"
+              hrefKey="href"
+            ></SwiperRound>
+          </div>
+          <div class="smile-right hidden">
+            <div class="smile-right-title">
+              <h2>最新情報</h2>
+              <p>CATCH UP WITH US</p>
+            </div>
+            <div class="smile-right-swiper">
+              <SwiperCard :images="bannerList" imageKey="pic"></SwiperCard>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <Backtop />
     <FooterV2 class="smile-footer" />
     <FooterMobile />
   </div>
@@ -934,17 +1007,14 @@ export default {
 <style lang="scss" scoped>
 $primary-color: #4570b6;
 $text-color: #6d6e71;
-:deep(.headV3) {
-  max-width: 765px;
-}
-.page {
-  font-family: "Noto Sans TC";
+:deep(.UserShareBox-list::-webkit-scrollbar-track) {
+  margin: 0 59px;
 }
 .subtitle {
   color: $primary-color;
   font-weight: 900;
-  font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
-  line-height: #{"clamp(1.531rem, 1.406rem + 0.63vw, 1.875rem)"};
+  font-size: 20px;
+  line-height: 12.824px;
 }
 .more {
   &-button {
@@ -986,7 +1056,6 @@ $text-color: #6d6e71;
     background-size: cover;
   }
   &-left {
-    // width: 28.75vw;
     width: 540px;
     height: 900px;
     position: relative;
@@ -1023,25 +1092,24 @@ $text-color: #6d6e71;
     height: 100vh;
 
     &-title {
-      // padding-left: 5.2083vw; /* 100 / 1920 * 100 ≈ 5.2083 */
-      // padding-bottom: 1.25vw; /* 24 / 1920 * 100 = 1.25 */
       padding: 200px 0 1.25vw 5.2083vw;
 
-      h4 {
+      h2 {
         color: #000;
         text-align: left;
-        font-size: 1.3139vw; /* 25.226 / 1920 * 100 ≈ 1.3139 */
+        font-size: 1.3139vw;
         font-style: normal;
         font-weight: 300;
-        line-height: 200%; /* 保持不变 */
-        letter-spacing: 0.6568vw; /* 1.261 / 1920 * 100 ≈ 0.6568 */
+        line-height: 200%;
+        letter-spacing: 0.6568vw;
+        margin-bottom: 0;
 
         &::before {
           content: "";
           display: inline-block;
-          margin-right: 0.5208vw; /* 10 / 1920 * 100 ≈ 0.5208 */
-          width: 0.78125vw; /* 15 / 1920 * 100 = 0.78125 */
-          height: 0.78125vw; /* 15 / 1920 * 100 = 0.78125 */
+          margin-right: 0.5208vw;
+          width: 0.78125vw;
+          height: 0.78125vw;
           flex-shrink: 0;
           background: #4570b6;
           border-radius: 50%;
@@ -1051,22 +1119,20 @@ $text-color: #6d6e71;
       p {
         color: $primary-color;
         font-family: "ITC Avant Garde Gothic Pro";
-        font-size: 1.2104vw; /* 23.23 / 1920 * 100 ≈ 1.2104 */
+        font-size: 1.2104vw;
         font-style: normal;
         font-weight: 700;
-        line-height: 217%; /* 保持不变 */
-        letter-spacing: 1.16px; /* 1.161 / 1920 * 100 ≈ 0.6047 */
+        line-height: 217%;
+        letter-spacing: 1.16px;
       }
     }
     &-swiper {
       width: 100%;
-      // height: 500px;
     }
   }
   &-footer {
     position: relative;
     z-index: 5;
-    margin-top: 0 !important;
   }
 }
 .main {
@@ -1086,36 +1152,13 @@ $text-color: #6d6e71;
     background-position: center;
     font-weight: 400;
     border-radius: 0 0 1rem 1rem;
-    &-title {
-      span {
-        // font-size: #{"clamp(4.375rem, 2.83rem + 7.73vw, 8.625rem)"};
-        // line-height: #{"clamp(4.75rem, 3.068rem + 8.41vw, 9.375rem)"};
-        // font-weight: 700;
-        font-family: "Poppins", sans-serif;
-      }
-      // h3 {
-      //   font-size: #{"clamp(2.375rem, 1.557rem + 4.09vw, 4.625rem)"};
-      //   line-height: #{"clamp(2.5rem, 1.545rem + 4.77vw, 5.125rem)"};
-      // }
-      // p {
-      //   font-size: #{"clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem)"};
-      //   line-height: #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"};
-      // }
-    }
-    &-nav {
-      font-size: 12px;
-      line-height: 21.88px;
-      letter-spacing: 0.36px;
-      font-weight: normal;
-      margin-top: #{"clamp(2rem, 1.182rem + 4.09vw, 4.25rem)"};
-    }
   }
 }
 // 矫视原理
 .principles {
   padding: #{"clamp(2rem, 0.545rem + 7.27vw, 6rem)"} #{"clamp(1rem, -1rem + 10vw, 6.5rem)"};
   position: relative;
-  h3 {
+  h2 {
     text-align: center;
     font-weight: 900;
     line-height: 30px;
@@ -1155,19 +1198,10 @@ $text-color: #6d6e71;
     white 50px 100%
   );
   border: inherit;
-  .subtitle {
-    font-size: #{"clamp(1.25rem, 0.931rem + 1.31vw, 2.5rem)"};
-    line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
-    span {
-      font-size: #{"clamp(1.25rem, 1.091rem + 0.65vw, 1.875rem)"};
-      line-height: #{"clamp(1.5rem, 1.086rem + 1.7vw, 3.125rem)"};
-    }
-  }
   &-title {
     display: flex;
     align-items: center;
     position: absolute;
-    // gap: #{"clamp(1rem, 0.136rem + 4.32vw, 3.375rem)"};
     gap: #{"clamp(2.065rem, 1.572rem + 2.02vw, 4rem)"};
     svg {
       width: #{"clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem)"};
@@ -1230,17 +1264,13 @@ $text-color: #6d6e71;
   }
 }
 .whyChoose {
-  padding: 0 #{"clamp(1.688rem, 1.21rem + 1.96vw, 3.563rem)"} #{"clamp(2rem, 1.273rem + 3.64vw, 4rem)"};
-  img {
-    width: 100%;
-  }
   &-intro {
-    color: $text-color;
-    font-weight: 300;
-    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
-    line-height: 30px;
-    letter-spacing: #{"clamp(0.156rem, 0.077rem + 0.4vw, 0.375rem)"};
     p {
+      color: $text-color;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 2.52px;
       margin-bottom: 30px;
     }
     span {
@@ -1251,32 +1281,20 @@ $text-color: #6d6e71;
 }
 // 好处
 .benefit {
-  padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
-  h3 {
+  // padding: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"} 27px;
+  h2 {
     text-align: center;
     padding-bottom: #{"clamp(1.5rem, 1.091rem + 2.05vw, 2.625rem)"};
   }
   &-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &-row {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 96%;
-    &:first-child {
-      margin-top: 0;
-      z-index: 1;
-    }
-    &:last-child {
-      margin-top: #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
-      z-index: 2;
-    }
+    flex-wrap: wrap;
   }
   &-item {
-    flex: 1;
+    z-index: 1;
+    flex: 0 0 calc(33.33% + 20px);
+    margin-left: -20px;
+    margin-top: -30px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: #fff;
@@ -1288,19 +1306,16 @@ $text-color: #6d6e71;
     cursor: pointer;
     transition: all 0.4s ease;
     overflow: hidden;
-    margin: 0 #{"clamp(-1.5rem, -1.682rem + 0.91vw, -1rem)"};
     position: relative;
     text-align: center;
+    &:nth-child(-n + 3) {
+      margin-top: 0;
+    }
     &-title {
       font-weight: 700;
       color: $primary-color;
-      font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
-      line-height: #{"clamp(0.531rem, 0.27rem + 1.31vw, 1.25rem)"};
-      letter-spacing: #{"clamp(0.25rem, 0.199rem + 0.26vw, 0.391rem)"};
-    }
-    &-icon {
-      width: #{"clamp(3.25rem, -1.886rem + 25.68vw, 17.375rem)"};
-      margin: 0 auto 2px;
+      font-size: 16px;
+      line-height: 8.549px;
     }
     &-content {
       opacity: 0;
@@ -1311,12 +1326,16 @@ $text-color: #6d6e71;
       }
       p {
         color: #fff;
-        font-size: #{"clamp(1rem, 0.818rem + 0.91vw, 1.5rem)"};
-        line-height: #{"clamp(1rem, 0.909rem + 0.45vw, 1.25rem)"};
+        font-size: 16px;
+        line-height: 16px;
         font-weight: 400;
         white-space: pre-line;
         line-height: 1.2;
       }
+    }
+    &-icon {
+      margin: 0 auto 4px;
+      width: 53px;
     }
     &.acive {
       .benefit-item-title {
@@ -1330,7 +1349,8 @@ $text-color: #6d6e71;
     }
     &:hover {
       background-color: $primary-color;
-      transition: all 0.4s ease;
+      transition: all 0.8s ease;
+      z-index: 5;
       .benefit-item-title {
         opacity: 0;
         height: 0;
@@ -1344,56 +1364,32 @@ $text-color: #6d6e71;
 }
 // 是否适合
 .condition {
-  padding: #{"clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem)"} #{"clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem)"}
-    0;
   position: relative;
   width: 100%;
   background: url("https://statichk.cmermedical.com/smile/smileV2/smile-condition-bg.svg")
     no-repeat;
   background-size: #{"clamp(4.375rem, 2.557rem + 9.09vw, 9.375rem)"} auto;
   background-position: 0;
-  h3 {
-    white-space: nowrap;
-    font-family: "Noto Sans HK";
-    text-align: right;
-    position: absolute;
-    right: 30px;
-    span {
-      font-weight: 700;
-      font-family: "Poppins", sans-serif;
-    }
-  }
   &-list {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: #{"clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem)"};
-    &:nth-child(2) {
-      .condition-item {
-        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"};
-      }
-    }
-    &:nth-child(3) {
-      .condition-item {
-        padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.425rem + 3.5vw, 2rem)"};
-      }
-    }
-    &:nth-child(4) {
-      margin-left: #{"clamp(2.5rem, 1.591rem + 4.55vw, 5rem)"};
-    }
+    justify-content: center;
+    padding: 0 17px;
+    margin-bottom: 18px;
   }
   &-item {
-    flex: 1;
+    flex: auto;
     color: $text-color;
     font-weight: 400;
     background-color: #fff;
-    font-size: #{"clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem)"};
-    line-height: #{"clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem)"};
-    flex: 0 1 auto;
-    padding: #{"clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem)"} #{"clamp(0.625rem, 0.125rem + 2.5vw, 2rem)"};
-    border: 2px solid $primary-color;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 50.4px;
+    border: 1px solid $primary-color;
     box-shadow: 3px #{"clamp(0.25rem, 0.182rem + 0.34vw, 0.438rem)"} 2px $primary-color;
-    border-radius: #{"clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem)"};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
   }
   &-desc {
     color: $text-color;
@@ -1500,10 +1496,9 @@ $text-color: #6d6e71;
 }
 // 小练习
 .exercise {
-  padding: #{"clamp(1.5rem, 1.364rem + 0.68vw, 1.875rem)"} 0 #{"clamp(3.75rem, 2.568rem + 5.91vw, 7rem)"};
   &-title {
     text-align: center;
-    h3 {
+    h2 {
       font-weight: 900;
       font-size: #{"clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem)"};
       line-height: #{"clamp(1.375rem, 1.193rem + 0.91vw, 1.875rem)"};
@@ -1524,183 +1519,6 @@ $text-color: #6d6e71;
   &-intro {
     padding: #{"clamp(1.5rem, 1.182rem + 1.59vw, 2.375rem)"} #{"clamp(2.375rem, 2.011rem + 1.82vw, 3.375rem)"}
       0;
-  }
-}
-.share {
-  padding: 24px 0 10px;
-  &-title {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-    span {
-      color: #000;
-      text-align: center;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 16.496px; /* 82.478% */
-    }
-  }
-  &-group {
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    &-item {
-      border-radius: 50%;
-      padding: 16px;
-      border: 1px solid $primary-color;
-    }
-  }
-}
-:deep(.UserShareBox-list::-webkit-scrollbar-track) {
-  margin: 0 59px;
-}
-@media screen and (min-width: 1440px) {
-  .smile {
-    &-left {
-      display: block;
-    }
-    &-right {
-      display: block;
-    }
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 1744px) {
-  .smile {
-    &-left {
-      width: 22vw;
-      &::after {
-        width: 300%;
-      }
-      &::before {
-        width: 200%;
-      }
-    }
-    &-right {
-      width: 25vw;
-    }
-  }
-}
-// 手机和平板
-@media screen and (max-width: 1199px) {
-  .condition {
-    &-list {
-      &:nth-child(2) {
-        .condition-item {
-          margin-right: 200px;
-        }
-      }
-    }
-  }
-}
-// 平板和电脑
-@media screen and (min-width: 768px) {
-  .principles {
-    .more-button {
-      bottom: -6%;
-    }
-  }
-  :deep(.headV3) {
-    max-width: 765px;
-    border-left: 1.5px solid $primary-color;
-    border-right: 1.5px solid $primary-color;
-  }
-}
-// 电脑端
-@media screen and (min-width: 1200px) {
-  .main {
-    width: 768px;
-    border-left: 1.5px solid $primary-color;
-    border-right: 1.5px solid $primary-color;
-  }
-  .newCenter {
-    // &-card {
-    //   &-title {
-    //     span {
-    //       font-size: 137.67px;
-    //       line-height: 150.611px;
-    //     }
-    //     h3 {
-    //       font-size: 74.332px;
-    //       line-height: 81.319px;
-    //     }
-    //     p {
-    //       font-size: 29.733px;
-    //       line-height: 64.668px;
-    //       letter-spacing: 0.892px;
-    //     }
-    //   }
-    // }
-    &-nav {
-      font-size: 20px;
-      line-height: 43.5px;
-      letter-spacing: 0.6px;
-    }
-  }
-  .benefit {
-    padding: 0;
-  }
-  .condition {
-    padding: 100px 30px 0 30px;
-    h3 {
-      font-size: 30px;
-      line-height: 40px;
-    }
-    &-item {
-      font-size: 20px;
-      line-height: 35px;
-      letter-spacing: 2px;
-    }
-    &-item {
-      white-space: nowrap;
-    }
-    &-desc {
-      span {
-        display: block;
-        white-space: nowrap;
-      }
-    }
-  }
-  @keyframes xtraBottom {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-72px, 0);
-    }
-  }
-
-  @keyframes xtraTop {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(
-        72px,
-        #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
-      ); // 294-328
-    }
-  }
-
-  @keyframes xtraTriangle {
-    0% {
-      width: 0;
-      height: 0;
-    }
-    100% {
-      width: 144px; //294-328
-      height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
-    }
-  }
-
-  @keyframes xtraHeight {
-    0% {
-      height: 488px;
-    }
-    100% {
-      height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"}; // 740-790
-    }
   }
 }
 // 手机端
@@ -1727,11 +1545,10 @@ $text-color: #6d6e71;
       transform: translate(0, 0);
     }
     100% {
-      //8-32
       transform: translate(
         #{"clamp(0.5rem, -7.214rem + 34.29vw, 2rem)"},
         #{"clamp(13rem, 5.929rem + 31.43vw, 14.375rem)"}
-      ); //208-230
+      );
     }
   }
 
@@ -1741,30 +1558,84 @@ $text-color: #6d6e71;
       height: 0;
     }
     100% {
-      //40-60
       width: #{"clamp(2.5rem, -3.929rem + 28.57vw, 3.75rem)"};
       height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
-    } //42-48
+    }
   }
 
   @keyframes xtraHeight {
     0% {
-      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"}; //288-312
+      height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
     }
     100% {
-      height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"}; // 740-790
+      height: #{"clamp(31.25rem, 21.607rem + 42.86vw, 33.125rem)"};
     }
   }
 }
-// 平板端
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .xtra {
-    &-paper {
-      height: #{"clamp(24.875rem, 14.852rem + 20.88vw, 30.5rem)"};
-      &-item {
-        left: #{"clamp(12.5rem, -5.319rem + 37.12vw, 22.5rem)"}; //200-360
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .whyChoose {
+    &-intro {
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 6px;
       }
     }
+  }
+  .benefit {
+    &-list {
+      padding-left: 40px;
+      padding-right: 0;
+    }
+    &-item {
+      flex: 0 0 calc(33.33% + 40px);
+      margin-left: -40px;
+      margin-top: -60px;
+      &-title {
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 6.25px;
+      }
+      &-icon {
+        width: 125px;
+      }
+      &-content {
+        p {
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 3.36px;
+        }
+      }
+    }
+  }
+  .condition {
+    background-position: left calc(50% - 20px);
+    &-list {
+      margin-bottom: 36px;
+    }
+    &-item {
+      font-size: 20px;
+      line-height: 35px;
+      letter-spacing: 2px;
+    }
+  }
+  .main {
+    width: 768px;
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
+  }
+  .principles {
+    .more-button {
+      bottom: -6%;
+    }
+  }
+  :deep(.headV3) {
+    border-left: 1.5px solid $primary-color;
+    border-right: 1.5px solid $primary-color;
   }
   @keyframes xtraBottom {
     0% {
@@ -1782,8 +1653,8 @@ $text-color: #6d6e71;
     100% {
       transform: translate(
         72px,
-        #{"clamp(15.25rem, 8.791rem + 13.46vw, 18.875rem)"}
-      ); // 294-328
+        #{"clamp(18.375rem, 16.178rem + 3.6vw, 20.5rem)"}
+      );
     }
   }
 
@@ -1793,17 +1664,67 @@ $text-color: #6d6e71;
       height: 0;
     }
     100% {
-      width: 144px; //294-328
+      width: 144px;
       height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
     }
   }
 
   @keyframes xtraHeight {
     0% {
-      height: #{"clamp(24.875rem, 14.852rem + 20.88vw, 30.5rem)"}; //398-488
+      height: 488px;
     }
     100% {
-      height: #{"clamp(41.25rem, 27.886rem + 27.84vw, 48.75rem)"}; // 740-790
+      height: #{"clamp(46.25rem, 43.019rem + 5.3vw, 49.375rem)"};
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  :deep(.footer-bottom) {
+    margin-bottom: 0 !important;
+    background-color: #f4fafc !important;
+  }
+  .smile {
+    &-footer {
+      margin-top: -60px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .smile {
+    &-footer {
+      margin-top: 0 !important;
+    }
+  }
+}
+// 电脑端
+@media screen and (min-width: 1200px) {
+  .benefit {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .smile {
+    &-left {
+      display: block;
+    }
+    &-right {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1744px) {
+  .smile {
+    &-left {
+      width: 22vw;
+      &::after {
+        width: 300%;
+      }
+      &::before {
+        width: 200%;
+      }
+    }
+    &-right {
+      width: 25vw;
     }
   }
 }

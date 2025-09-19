@@ -1,5 +1,5 @@
 
-<style >
+<style>
 body {
   overflow-x: hidden;
 }
@@ -394,7 +394,6 @@ i {
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none;
       .CorrectionProgram-Box-show {
         opacity: 1;
         z-index: 2;
@@ -464,12 +463,16 @@ i {
               font-weight: 400;
               line-height: 1.5;
               letter-spacing: 0.62vw;
+              
+              p {
+                margin-bottom: 0;
+              }
 
-              &::after {
+              .CorrectionProgram-Box-hide-item-sub {
                 position: absolute;
                 top: -6.41vw;
                 left: 0;
-                content: "適合";
+                //content: "適合";
                 width: fit-content;
                 background: #4570b6;
                 padding: 1.03vw 2.05vw 0px 2.05vw;
@@ -1381,7 +1384,6 @@ i {
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none;
       .CorrectionProgram-Box-show {
         opacity: 1;
         z-index: 2;
@@ -1442,7 +1444,6 @@ i {
                 clamp(14px, 1.46vw, 28px) clamp(11px, 1.15vw, 22px);
               border-radius: 5px;
               border-top-left-radius: 0px;
-
               color: #fff;
               font-family: "Noto Sans TC";
               font-size: clamp(10px, 1.04vw, 20px);
@@ -1451,18 +1452,21 @@ i {
               line-height: 2.2;
               letter-spacing: clamp(2px, 0.21vw, 4px);
 
-              &::after {
+              p {
+                margin-bottom: 0;
+              }
+
+              .CorrectionProgram-Box-hide-item-sub {
                 position: absolute;
                 top: clamp(-39px, -2.03vw, -19.5px);
                 left: 0;
-                content: "適合";
+                // content: "適合";
                 width: fit-content;
                 background: #4570b6;
                 padding: clamp(5px, 0.52vw, 10px) clamp(11px, 1.15vw, 22px) 0
                   clamp(11px, 1.15vw, 22px);
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-
                 color: #fff;
                 font-family: "Noto Sans TC";
                 font-size: clamp(10px, 1.04vw, 20px);
@@ -2464,6 +2468,7 @@ i {
             </div>
             <div class="CorrectionProgram-Box-hide-item-bottom">
               <div class="CorrectionProgram-Box-hide-item-top-text">
+                <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
                 <p>• 39歲以上有老花</p>
                 <p>• 同時有近視/遠視/散光問題</p> 
               </div>
@@ -2484,6 +2489,7 @@ i {
             </div>
             <div class="CorrectionProgram-Box-hide-item-bottom">
               <div class="CorrectionProgram-Box-hide-item-top-text">
+                <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
                 <p>• 39歲或以上有老花</p>
                 <p>• 同時有近視/遠視問題</p>
                 <p>• 未有白內障</p>

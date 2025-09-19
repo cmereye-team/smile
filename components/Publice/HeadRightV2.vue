@@ -189,12 +189,12 @@ export default {
               path: "/patient-info",
             },
             {
-              id: 1,
+              id: 2,
               name: this.$t("home.headers.diagnosisInstructionsChild_2"),
               path: "/flow-of-vision-correction",
             },
             {
-              id: 1,
+              id: 3,
               name: this.$t("home.headers.diagnosisInstructionsChild_3"),
               path: "/post-corrective-care",
             },

@@ -1,4 +1,3 @@
-
 <template>
   <div class="lasik">
     <HeadV2 />
@@ -21,7 +20,7 @@
       </svg>
     </div>
 
-    <!-- 轮播位置 -->   
+    <!-- 轮播位置 -->
     <div
       class="container new-container mx-auto smile-NewBanner position-relative"
     >
@@ -617,7 +616,7 @@
 
 
     </section> -->
-   <userShare :user-share="ShareData"></userShare>
+    <userShare :user-share="ShareData"></userShare>
 
     <!-- 用家见证 -->
     <section class="smile-pro-evaluateV2">
@@ -1180,7 +1179,6 @@
         </a>
       </div>
     </section>
-
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -1221,7 +1219,7 @@ export default {
     FooterV2,
     HeadV2,
     drow,
-        UserShare
+    UserShare,
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -1401,8 +1399,22 @@ export default {
       },
 
       ShareData: [
-
-
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/Z5ut-9tIhmo",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-sarah@1x.avif",
+          text: ["唔洗矇查查周圍搵眼鏡"],
+          nameEn: "Sarah",
+          nameCn: "李蒨怡",
+        },
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/857FwJQu7OA",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-jay@1x.avif",
+          text: ["無咗眼鏡都一樣做到唔","同活動"],
+          nameEn: "Jay",
+          nameCn: "沈以諾",
+        },
         {
           type: "SMILE Pro",
           href: "https://youtu.be/TBI6J31JwJQ",
@@ -1421,8 +1433,6 @@ export default {
           nameCn: "米姬",
         },
 
-
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/10KYv_gGgWM",
@@ -1431,8 +1441,6 @@ export default {
           nameEn: " ",
           nameCn: "Anson Au",
         },
-
-
 
         {
           type: "SMILE Pro",
@@ -1469,9 +1477,7 @@ export default {
           nameEn: "Tiffany",
           nameCn: "鄧伊程",
         },
-
       ],
-
 
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
@@ -1613,12 +1619,10 @@ export default {
 };
 </script>
 
-
-
-<style >
+<style>
 body {
   overflow-x: hidden;
-    background: white;
+  background: white;
 }
 </style>
 <style lang="scss" scoped>
@@ -2668,7 +2672,7 @@ i {
           border-radius: 20px;
           z-index: 3;
         }
-     .swiper-overflow {
+        .swiper-overflow {
           overflow: hidden;
         }
         .swiperWrap {
@@ -2775,7 +2779,7 @@ i {
             }
           }
           .swiper-pagination {
-            width:clamp(93px,47.69vw,186px);
+            width: clamp(93px, 47.69vw, 186px);
             max-width: 186px;
             top: 50%;
             transform: translateY(-50%);
@@ -2787,14 +2791,14 @@ i {
             }
             .swiper-button-next {
               right: 0;
-              svg{
-                width: clamp(20px,10.26vw,40px);
+              svg {
+                width: clamp(20px, 10.26vw, 40px);
               }
             }
             .swiper-button-prev {
-              left: clamp(-16px,-4.10vw,-8px);
-              svg{
-                    width: clamp(20px,10.26vw,40px);
+              left: clamp(-16px, -4.1vw, -8px);
+              svg {
+                width: clamp(20px, 10.26vw, 40px);
               }
             }
           }
@@ -4788,4 +4792,3 @@ i {
   }
 }
 </style>
-
