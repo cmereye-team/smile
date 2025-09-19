@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-09-19 10:07:10
+ * @LastEditTime: 2025-09-19 14:22:13
+ * @FilePath: /components/commom/Backtop/Backtop.vue
+ * @Description: 返回顶部组件
+-->
 <template>
   <div class="backtop">
     <el-backtop

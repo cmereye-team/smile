@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-09-08 10:16:01
+ * @LastEditTime: 2025-09-19 14:19:43
+ * @FilePath: /components/commom/swiper/SwiperCard.vue
+ * @Description: 堆叠式卡片轮播图
+-->
 <template>
   <div
     class="swiper-card"
