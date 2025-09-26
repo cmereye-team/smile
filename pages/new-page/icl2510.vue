@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-17 14:40:00
+ * @LastEditTime: 2025-09-19 16:36:32
  * @FilePath: /pages/new-page/icl2510.vue
  * @Description: 10月广告专用讲座专题-暂时只有学生计划是确定的
 -->
@@ -411,7 +411,7 @@
               <img
                 src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-t3.svg"
                 alt="升級視力，為未來做好準備"
-                class="absolute left-[12.5%] -bottom-[30px] md:-bottom-[48px] z-10 w-[50.185px] md:w-[99px]"
+                class="absolute left-[8.5%] -bottom-[30px] md:-bottom-[48px] z-10 w-[50.185px] md:w-[99px]"
               />
               <picture>
                 <source

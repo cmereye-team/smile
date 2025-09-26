@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2025-09-19 14:01:28
+ * @LastEditTime: 2025-09-19 16:34:06
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -993,7 +993,7 @@ export default {
               <p>CATCH UP WITH US</p>
             </div>
             <div class="smile-right-swiper">
-              <SwiperCard :images="bannerList" imageKey="pic"></SwiperCard>
+              <SwiperCard :images="bannerList" imageKey="mbpic"></SwiperCard>
             </div>
           </div>
         </div>
