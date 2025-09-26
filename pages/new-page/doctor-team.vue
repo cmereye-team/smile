@@ -3,7 +3,7 @@
     <Head />
     <Banner class="banner-box">
       <template #banner>
-        <div class="banner-img">
+        <div class="banner-img banner-text-default">
           <p>{{ $t("doctor_team.bannnertitle") }}</p>
           <p>Doctor team</p>
         </div>
@@ -584,25 +584,18 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
-    & > p {
-      max-width: 110px;
-    }
     & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 14px;
       font-style: normal;
       font-weight: 700;
-      line-height: 21px; /* 169.167% */
       letter-spacing: 0.7px;
     }
     & > p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 10px;
       font-style: normal;
       font-weight: 500;
-      line-height: 18px; /* 290% */
       letter-spacing: 0.5px;
     }
   }

@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2025-07-03 17:29:35
+ * @LastEditTime: 2025-09-26 16:42:58
+ * @FilePath: /pages/new-page/patient-info.vue
+ * @Description: 诊症须知
+-->
 <template>
   <div class="lasik">
     <HeadV2 />
@@ -768,17 +774,17 @@ export default {
         {
           rel: "alternate",
           hreflang: "x-default",
-          href: "https://smile.hkcmereye.com/eye-examination/",
+          href: "https://smile.hkcmereye.com/patient-info/",
         },
         {
           rel: "alternate",
           hreflang: "zh-Hant",
-          href: "https://smile.hkcmereye.com/eye-examination/",
+          href: "https://smile.hkcmereye.com/patient-info/",
         },
         {
           rel: "alternate",
           hreflang: "zh-Hans",
-          href: "https://smile.hkcmereye.com/cn/eye-examination/",
+          href: "https://smile.hkcmereye.com/cn/patient-info/",
         },
       ],
     };

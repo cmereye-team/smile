@@ -4,7 +4,7 @@
     <Head />
     <Banner class="banner-box">
       <template #banner>
-        <div class="banner-img">
+        <div class="banner-img banner-text-default">
           <p>{{ $t("contactUs.bannerTitle") }}</p>
           <p>Contact us</p>
         </div>
@@ -307,7 +307,7 @@ export default {
           ],
           mobileAddress: [
             this.$t("contactUs.table1.content1.mobileAddress1"),
-            this.$t("contactUs.table1.content1.mobileAddress1"),
+            this.$t("contactUs.table1.content1.mobileAddress2"),
           ],
           src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.914943384991!2d114.15266089678956!3d22.281211600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064e98df11d%3A0x56ad3d7801270f90!2z5biM55Gq5b6u56yR55-v6KaW5Lit5b-DIENtZXIgU01JTEUgUmVmcmFjdGl2ZSBDZW50cmUg5Lit55Kw6Ki65omA!5e0!3m2!1szh-CN!2sus!4v1714981663044!5m2!1szh-CN!2sus",
         },
@@ -793,7 +793,6 @@ export default {
       font-style: normal;
       font-weight: 500;
       line-height: 43.5px;
-      /* 290% */
       letter-spacing: 0.45px;
       margin-top: -10px;
     }
@@ -1086,29 +1085,19 @@ export default {
     justify-content: center;
     padding-left: 20px;
 
-    &>p {
-      max-width: 110px;
-    }
-
     &>p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 14px;
       font-style: normal;
       font-weight: 700;
-      line-height: 21px;
-      /* 169.167% */
       letter-spacing: 0.7px;
     }
 
     &>p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 10px;
       font-style: normal;
       font-weight: 500;
-      line-height: 18px;
-      /* 290% */
       letter-spacing: 0.5px;
     }
   }

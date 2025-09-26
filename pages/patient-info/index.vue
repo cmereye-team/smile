@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-03-25 16:47:42
+ * @LastEditTime: 2025-09-26 16:43:24
+ * @FilePath: /pages/patient-info/index.vue
+ * @Description: 旧版-诊症须知（还在使用）
+-->
 <template>
   <div>
     <Header />
@@ -62,9 +69,9 @@ export default {
       ],
       link: [
         { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/eye-examination/" },
-        { rel: "alternate", hreflang: "zh-Hant", href: "https://smile.hkcmereye.com/eye-examination/" },
-        { rel: "alternate", hreflang: "zh-Hans", href: "https://smile.hkcmereye.com/cn/eye-examination/" },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/patient-info/" },
+        { rel: "alternate", hreflang: "zh-Hant", href: "https://smile.hkcmereye.com/patient-info/" },
+        { rel: "alternate", hreflang: "zh-Hans", href: "https://smile.hkcmereye.com/cn/patient-info/" },
 
       ]
     };

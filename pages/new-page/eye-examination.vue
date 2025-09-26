@@ -1,9 +1,16 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-03-25 16:47:42
+ * @LastEditTime: 2025-09-26 17:05:18
+ * @FilePath: /pages/new-page/eye-examination.vue
+ * @Description: 待检查是否为eye-checkup旧版
+-->
 <template>
   <div class="eye-examination">
     <Head />
     <Banner class="banner-box">
       <template #banner>
-        <div class="banner-img">
+        <div class="banner-img banner-text-default">
           <p>眼睛檢查<br v-if="isMobile" />及矯視前</p>
           <p>Eye examination and before vision correction</p>
         </div>
@@ -1802,9 +1809,9 @@ export default {
       ],
       link: [
         { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/eye-examination/" },
-        { rel: "alternate", hreflang: "zh-Hant", href: "https://smile.hkcmereye.com/eye-examination/" },
-        { rel: "alternate", hreflang: "zh-Hans", href: "https://smile.hkcmereye.com/cn/eye-examination/" },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/patient-info/" },
+        { rel: "alternate", hreflang: "zh-Hant", href: "https://smile.hkcmereye.com/patient-info/" },
+        { rel: "alternate", hreflang: "zh-Hans", href: "https://smile.hkcmereye.com/cn/patient-info/" },
 
       ]
     };
@@ -2770,26 +2777,22 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
-    & > p {
-      max-width: 110px;
-    }
     & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 14px;
       font-style: normal;
       font-weight: 700;
-      line-height: 21px; /* 169.167% */
       letter-spacing: 0.7px;
     }
     & > p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 10px;
       font-style: normal;
       font-weight: 500;
-      line-height: 18px; /* 290% */
       letter-spacing: 0.5px;
+      font-size: 14px !important;
+      line-height: 18px !important;
+      width: 120px;
     }
   }
 }

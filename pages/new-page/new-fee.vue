@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2025-03-25 16:47:42
+ * @LastEditTime: 2025-09-26 16:17:35
+ * @FilePath: /pages/new-page/new-fee.vue
+ * @Description: 旧版
+-->
 <template>
   <div class="fee">
     <Head />

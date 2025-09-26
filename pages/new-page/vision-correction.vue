@@ -3,7 +3,7 @@
     <Head />
     <Banner class="banner-box">
       <template #banner>
-        <div class="banner-img">
+        <div class="banner-img banner-text-default">
           <p>矯視流程</p>
           <p>Vision correction <br v-if="isMobile" />process</p>
         </div>
@@ -1612,31 +1612,23 @@ export default {
     margin: 24px 30px 55px;
     border-radius: 44px;
     padding-left: 10px;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
-    & > p {
-      max-width: 110px;
-    }
     & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 14px;
       font-style: normal;
       font-weight: 700;
-      line-height: 21px; /* 169.167% */
       letter-spacing: 0.7px;
     }
     & > p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 10px;
       font-style: normal;
       font-weight: 500;
-      line-height: 18px; /* 290% */
       letter-spacing: 0.5px;
     }
   }
