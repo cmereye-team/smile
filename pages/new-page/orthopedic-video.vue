@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-03-25 16:47:42
+ * @LastEditTime: 2025-09-26 16:18:15
+ * @FilePath: /pages/new-page/orthopedic-video.vue
+ * @Description: 旧版-矫视资讯影片
+-->
 <template>
   <div class="orthopedic-video">
     <Head />

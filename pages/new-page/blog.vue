@@ -3,7 +3,7 @@
     <Head />
     <Banner class="banner-box">
       <template #banner>
-        <div class="banner-img">
+        <div class="banner-img banner-text-default">
           <p>{{ $t("home.headers.feign_knowledge") }}</p>
           <p>blog</p>
         </div>
@@ -503,31 +503,23 @@ export default {
     margin: 6.15vw 7.69vw 14.1025vw;
     border-radius: 11.28vw;
     padding-left: 2.564vw;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     padding-left: 5.128vw;
-    & > p {
-      max-width: 28.2vw;
-    }
     & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 3.589vw;
       font-style: normal;
       font-weight: 700;
-      line-height: 5.38vw; /* 169.167% */
       letter-spacing: 0.7px;
     }
     & > p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
-      font-size: 2.564vw;
       font-style: normal;
       font-weight: 500;
-      line-height: 4.615vw; /* 290% */
       letter-spacing: 0.5px;
     }
   }

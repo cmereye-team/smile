@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-03-25 16:47:42
+ * @LastEditTime: 2025-09-26 16:21:56
+ * @FilePath: /pages/new-page/trext.vue
+ * @Description: 不知道干啥的，路由里也没有
+-->
 <template>
   <div class="">
     <Head />

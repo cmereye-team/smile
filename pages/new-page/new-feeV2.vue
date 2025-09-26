@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2025-06-19 09:34:21
+ * @LastEditTime: 2025-09-26 16:03:50
+ * @FilePath: /pages/new-page/new-feeV2.vue
+ * @Description: 收费详情
+-->
 <template>
   <div class="fee">
     <HeadV2 />
