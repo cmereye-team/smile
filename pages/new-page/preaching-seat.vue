@@ -604,113 +604,76 @@ export default {
         console.error("disabledDate encountered an error:", error);
       }
     },
+    /**
+     * @description: 切换地点后调整可选日期
+     */
     changeLocation() {
       this.clearFrom();
-      //  在选定地址的时候 给allowedDates 赋值  数组为当前月份可选择日期
-      // allowedDates 每个地区的日期每个月都可以更改
-      switch (this.form.address) {
-        case "smilerProTsui":
-          // smile 尖沙咀
-          this.allowedDates = [];
-          break;
-        case "smileCentral":
-          // smile 中环
-          this.allowedDates = [
-            "2025-07-23",
-            "2025-07-26",
-            "2025-07-30",
-            "2025-08-02",
-            "2025-08-06",
-            "2025-08-09",
-            "2025-08-13",
-            "2025-08-16",
-            "2025-08-20",
-            "2025-08-23",
-            "2025-08-27",
-            "2025-08-30",
-            "2025-09-03",
-            "2025-09-06",
-            "2025-09-10",
-            "2025-09-13",
-            "2025-09-17",
-            "2025-09-20",
-            "2025-09-24",
-            "2025-09-27",
-            "2025-10-04",
-            "2025-10-08",
-            "2025-10-11",
-            "2025-10-15",
-            "2025-10-18",
-            "2025-10-22",
-            "2025-10-25",
-          ];
-          break;
-        case "smileMongKok":
-          // smile 旺角
-          this.allowedDates = [];
-          break;
-        case "smileProMongKok":
-          // smilePro 旺角
-          this.allowedDates = [
-            "2025-07-19",
-            "2025-07-21",
-            "2025-07-26",
-            "2025-07-29",
-            "2025-08-02",
-            "2025-08-05",
-            "2025-08-09",
-            "2025-08-11",
-            "2025-08-16",
-            "2025-08-18",
-            "2025-08-23",
-            "2025-08-26",
-            "2025-08-30",
-            "2025-09-01",
-            "2025-09-06",
-            "2025-09-09",
-            "2025-09-13",
-            "2025-09-15",
-            "2025-09-20",
-            "2025-09-23",
-            "2025-09-27",
-            "2025-09-29",
-            "2025-10-04",
-            "2025-10-11",
-            "2025-10-13",
-            "2025-10-18",
-            "2025-10-21",
-            "2025-10-25",
-            "2025-10-27",
-          ];
-          break;
-        case "clearVisionCentral":
-          // clearVision 中环
-          this.allowedDates = [];
-          break;
-        case "clearVisionMongKok":
-          // clearVision 旺角
-          this.allowedDates = [
-            "2025-07-22",
-            "2025-07-28",
-            "2025-08-04",
-            "2025-08-12",
-            "2025-08-19",
-            "2025-08-25",
-            "2025-09-02",
-            "2025-09-08",
-            "2025-09-16",
-            "2025-09-22",
-            "2025-09-30",
-            "2025-10-06",
-            "2025-10-14",
-            "2025-10-20",
-            "2025-10-28",
-          ];
-          break;
-        default:
-          break;
+      if (!this.form.address) {
+        console.warn("changeLocation: address is empty");
+        this.allowedDates = [];
+        return;
       }
+      const dateConfigs = {
+        smilerProTsui: [],
+        // 中环-smile
+        smileCentral: [
+          "2025-09-03",
+          "2025-09-06",
+          "2025-09-10",
+          "2025-09-13",
+          "2025-09-17",
+          "2025-09-20",
+          "2025-09-24",
+          "2025-09-27",
+          "2025-10-04",
+          "2025-10-08",
+          "2025-10-11",
+          "2025-10-15",
+          "2025-10-18",
+          "2025-10-22",
+          "2025-10-25",
+        ],
+        smileMongKok: [],
+        // 旺角-SmilePro
+        smileProMongKok: [
+          "2025-09-01",
+          "2025-09-06",
+          "2025-09-09",
+          "2025-09-13",
+          "2025-09-15",
+          "2025-09-20",
+          "2025-09-23",
+          "2025-09-27",
+          "2025-09-29",
+          "2025-10-04",
+          "2025-10-11",
+          "2025-10-13",
+          "2025-10-18",
+          "2025-10-21",
+          "2025-10-25",
+          "2025-10-27",
+        ],
+        clearVisionCentral: [],
+        // 旺角-老花矫视
+        clearVisionMongKok: [
+          "2025-09-02",
+          "2025-09-08",
+          "2025-09-16",
+          "2025-09-22",
+          "2025-09-30",
+          "2025-10-06",
+          "2025-10-14",
+          "2025-10-20",
+          "2025-10-28",
+        ],
+      };
+      this.allowedDates = dateConfigs[this.form.address] || [];
     },
+    /**
+     * @description: 时间戳转换为字符串
+     * @param {number} timestamp
+     */
     timestampToWeekday(timestamp) {
       const date = new Date(timestamp); // 时间戳通常是秒为单位的，而 Date 构造函数需要毫秒为单位的参数
       const dayOfWeek = date.getDay();
@@ -728,66 +691,66 @@ export default {
         weekday,
       };
     },
+    /**
+     * @description: 根据日期匹配预约时间
+     * @param {string} nameAddress 选择地点
+     */
     getName(nameAddress) {
-      // morningOrAfternoon 可以随着日期不同更改赋值
+      if (!this.form.subdate || !nameAddress) return null;
+
       const { nowDay, weekday } = this.timestampToWeekday(this.form.subdate);
       this.nowDayTime = nowDay;
-      switch (nameAddress) {
-        // case "smilerProTsui":
-        //   if (weekday == "周六") {
-        //     this.morningOrAfternoon = "2:30 下午";
-        //   }
-        //   return "Smile Pro 講座-尖沙咀";
-        case "smileProMongKok":
-          if (weekday == "周二") {
-            this.morningOrAfternoon = "1:30 下午";
-          } else if (weekday == "周四") {
-            this.morningOrAfternoon = "6:30 下午";
-          } else if (weekday == "周六") {
-            this.morningOrAfternoon = "2:30 下午";
-          } else if (weekday == "周一") {
-            this.morningOrAfternoon = "6:30 下午";
-          }
-          return "Smile Pro 講座-旺角";
-        case "smileCentral":
-          if (weekday == "周三") {
-            this.morningOrAfternoon = "1:30 下午";
-          } else if (weekday == "周六") {
-            this.morningOrAfternoon = "1:30 下午";
-          } else if (weekday == "周一") {
-            this.morningOrAfternoon = "6:30 下午";
-          } else if (weekday == "周二") {
-            this.morningOrAfternoon = "1:30 下午";
-          }
-          return "Smile講座-中環";
-        case "smileMongKok":
-          if (weekday == "周二") {
-            this.morningOrAfternoon = "1:30 下午";
-          } else if (weekday == "周四") {
-            this.morningOrAfternoon = "6:30 下午";
-          } else if (weekday == "周六") {
-            this.morningOrAfternoon = "1:30 下午";
-          } else if (weekday == "周三") {
-            this.morningOrAfternoon = "1:30 下午";
-          }
-          return "Smile講座-旺角";
-        case "clearVisionCentral":
-          this.morningOrAfternoon = "";
-          return "老花講座-中環";
-        case "clearVisionMongKok":
-          if (weekday == "周二") {
-            this.morningOrAfternoon = "1:30 下午";
-          } else if (weekday == "周一") {
-            this.morningOrAfternoon = "6:30 下午";
-          } else if (weekday == "周四") {
-            this.morningOrAfternoon = "6:30 下午";
-          } else if (weekday == "周六") {
-            this.morningOrAfternoon = "1:30 下午";
-          }
-          return "老花講座-旺角";
-        default:
-          break;
-      }
+
+      const schedules = {
+        smileProMongKok: {
+          name: "Smile Pro 講座-旺角",
+          times: {
+            周二: "1:30 下午",
+            周四: "6:30 下午",
+            周六: "2:30 下午",
+            周一: "6:30 下午",
+          },
+        },
+        smileCentral: {
+          name: "Smile講座-中環",
+          times: {
+            周三: "1:30 下午",
+            周六: "1:30 下午",
+            周一: "6:30 下午",
+            周二: "1:30 下午",
+          },
+        },
+        smileMongKok: {
+          name: "Smile講座-旺角",
+          times: {
+            周二: "1:30 下午",
+            周四: "6:30 下午",
+            周六: "1:30 下午",
+            周三: "1:30 下午",
+          },
+        },
+        clearVisionCentral: {
+          name: "老花講座-中環",
+          times: {},
+        },
+        clearVisionMongKok: {
+          name: "老花講座-旺角",
+          times: {
+            周二: "1:30 下午",
+            周六: "1:30 下午",
+            周一: "6:30 下午",
+            周四: "6:30 下午",
+            "2025年10月6日": "1:30 下午",
+          },
+        },
+      };
+
+      const config = schedules[nameAddress];
+      if (!config) return null;
+
+      this.morningOrAfternoon =
+        config.times[nowDay] || config.times[weekday] || "";
+      return config.name;
     },
     formatDate(time) {
       const year = date.getFullYear();
