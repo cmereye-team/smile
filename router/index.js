@@ -268,13 +268,7 @@ export const $router = [
     path: "/ICLtalk2025",
     name: "ICLtalk2025",
     title: "9月講座專題",
-    component: resolve("pages/new-page/icl2509.vue"),
-  },
-  {
-    path: "/ICLtalk2025_v2",
-    name: "ICLtalk2025_v2",
-    title: "9月講座專題",
-    component: resolve("pages/new-page/icl2510.vue"),
+    component: resolve("pages/new-page/icltalk-2025.vue"),
   },
   // 新版本路由
   {

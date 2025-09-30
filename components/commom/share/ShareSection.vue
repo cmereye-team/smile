@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-18 08:55:13
- * @LastEditTime: 2025-09-18 19:38:39
+ * @LastEditTime: 2025-09-30 10:20:45
  * @FilePath: /components/commom/share/ShareSection.vue
  * @Description: 移动端分享
 -->
@@ -43,7 +43,11 @@
     </div>
     <div class="share-group">
       <slot name="icon">
-        <div class="share-group-item" :style="{ borderColor: themeColor }">
+        <a
+          class="share-group-item"
+          :id="shareId"
+          :style="{ borderColor: themeColor }"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"
@@ -56,8 +60,12 @@
               fill="currentColor"
             />
           </svg>
-        </div>
-        <div class="share-group-item" :style="{ borderColor: themeColor }">
+        </a>
+        <a
+          class="share-group-item"
+          :style="{ borderColor: themeColor }"
+          @click="copyCurrentUrl"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -86,7 +94,7 @@
               </clipPath>
             </defs>
           </svg>
-        </div>
+        </a>
       </slot>
     </div>
   </section>
@@ -141,6 +149,33 @@ export default {
     title: {
       type: String,
       default: "同朋友分享一下啦！",
+    },
+    shareId: {
+      type: String,
+      default: "shareCurrentPageIcl",
+    },
+  },
+  methods: {
+    /**
+     * @description: 复制当前页面链接到剪贴板
+     */
+    async copyCurrentUrl() {
+      try {
+        const textArea = document.createElement("textarea");
+        textArea.value = window.location.href;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+        this.$message({
+          showClose: true,
+          message: "複製成功",
+          type: "success",
+        });
+        // console.log(`链接复制成功，${textArea.value}`)
+      } catch (error) {
+        console.error("复制失败:", error);
+      }
     },
   },
 };

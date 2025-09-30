@@ -1,9 +1,9 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-19 10:49:32
- * @FilePath: /pages/new-page/icl2509.vue
- * @Description: 9月广告专用讲座专题
+ * @LastEditTime: 2025-09-30 16:07:41
+ * @FilePath: /pages/new-page/icl-talk-2025.vue
+ * @Description: 广告专用讲座专题-ver202510
 -->
 <template>
   <div class="page relative bg-[#050D1A]">
@@ -292,7 +292,7 @@
             </picture>
           </div>
           <div
-            class="what-desc -mt-5 bg-[#000034] text-center rounded-t-[10.1px] md:rounded-t-[20px] relative z-2 pt-[34px] md:pt-[66px] md:pb-[140px]"
+            class="what-desc -mt-5 bg-[#000034] text-center rounded-t-[10.1px] md:rounded-t-[20px] relative z-2 pt-[34px] md:pt-[66px]"
           >
             <h3
               class="font-black text-xl md:text-3xl leading-[15.22px] md:leading-[30px] mb-4 md:mb-[34px]"
@@ -391,6 +391,104 @@
             </div>
           </div>
         </section>
+        <section
+          id="student"
+          class="student pb-[74px] md:pb-[136px] md:mb-20 pt-[91.14px] md:pt-[172.21px]"
+        >
+          <div class="student-intro">
+            <img
+              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-t1.svg"
+              alt="CMER ICL"
+              class="mb-3 md:mb-6 ml-[60px] md:ml-[114px] w-[210.875px] md:w-[415.986px]"
+            />
+            <img
+              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-t2.svg"
+              alt="植入式隱形眼鏡-大學生及舊生特別計劃"
+              class="ml-[50px] md:ml-[98px] w-[219.495px] md:w-[429.774px]"
+            />
+            <!-- <div class="flex relative justify-end -mt-[76px] md:-mt-[146px]"> -->
+            <div class="relative -mt-[76px] md:-mt-[146px] pl-[11%]">
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-t3.svg"
+                alt="升級視力，為未來做好準備"
+                class="absolute left-[8.5%] -bottom-[30px] md:-bottom-[48px] z-10 w-[50.185px] md:w-[99px]"
+              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.webp 1x,
+                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@2x.webp 2x
+                  "
+                />
+                <img
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@2x.png 2x"
+                  alt=""
+                  class="w-full mr-2"
+                />
+              </picture>
+            </div>
+            <p
+              class="text-justify text-sm md:text-xl leading-[17.742px] md:leading-[35px] tracking-[0.7px] md:tracking-[1px] mt-1 ml-[90px] md:ml-[178px] mr-[64px] md:mr-[228px]"
+            >
+              希瑪微笑矯視中心正式推出「ICL植入式隱形眼鏡大學生及舊生特別計劃」，讓你在選擇改善視力方式時有更大自由度，為迎接學業、職場及生活上的每一個挑戰做好準備。
+            </p>
+          </div>
+          <div class="student-title h-[185.039px] md:h-[365.029px] md:-mt-14">
+            <img
+              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-tit.svg"
+              alt="特別計劃詳情"
+              class="pt-11 md:pt-[84px] pl-[42px] md:pl-[82px] w-[168.933px] md:w-[333.256px]"
+            />
+          </div>
+          <div
+            class="student-desc pl-[58px] md:pl-[108px] pr-[32px] md:pr-[128px] -mt-[30px] md:-mt-20"
+          >
+            <p
+              class="text-justify text-sm md:text-xl leading-[17.742px] md:leading-[35px] tracking-[0.7px] md:tracking-[1px]"
+            >
+              凡於2025年11月30日或之前成功預約術前檢查，並於2025年12月31日前完成ICL植入式隱形眼鏡手術，即可享有特定Offer。預約時，需要出示學生證或舊生證。
+            </p>
+            <div class="mt-6 md:mt-16 mb-10 md:mb-20">
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1t.svg"
+                alt="合資格人士"
+                class="mb-[6.52px] md:mb-[12.85px]"
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1i1.svg"
+                alt="現正就讀全日製香港大學的大學生"
+                class="mb-[11.76px] md:mb-[23.19px]"
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1i2.svg"
+                alt="於2014年或之後入學的全日制大學畢業生"
+                class="mb-[31.04px] md:mb-[61.24px]"
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s2t.svg"
+                alt="有效期"
+                class="mb-[4.56px] md:mb-[8.99px]"
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s2i1.svg"
+                alt="即日起至2025年12月31日"
+              />
+            </div>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=85297962992&text=我想查詢(ICLtalk-land_02)CMER ICL植入式隱形眼鏡大學生及舊生特別計劃"
+            target="_blank"
+            class="student-button font-black text-[#04abc8] text-center block mx-auto text-[18.249px] md:text-4xl leading-[31.936px] md:leading-[63px] tracking-[0.912px] md:tracking-[1.8px] w-[197.698px] h-[40px] md:w-[390px] md:h-[77px] mb-[18px] md:mb-9"
+          >
+            按此查詢特別計劃
+          </a>
+          <p
+            class="text-[10.138px] md:text-xl leading-[17.742px] md:leading-[35px] tracking-[0.507px] md:tracking-[1px] text-center whitespace-nowrap"
+          >
+            *如有任何爭議，希瑪醫療控股有限公司保留最終決定權
+          </p>
+        </section>
         <ShareSection
           class="share"
           themeColor="#3BD7F1"
@@ -398,83 +496,6 @@
           titleColor="#fff"
           title="同朋友一齊聽講座啦！"
         />
-        <!-- <section class="share block md:hidden">
-          <div class="share-title">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="19"
-              viewBox="0 0 21 19"
-              fill="none"
-            >
-              <path
-                d="M1 0.938477L19.4751 18.0939"
-                stroke="#3BD7F1"
-                stroke-width="1.97947"
-              />
-            </svg>
-            <span>同朋友一齊聽講座啦！</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="19"
-              viewBox="0 0 21 19"
-              fill="none"
-            >
-              <path
-                d="M20 0.938477L1.52493 18.0939"
-                stroke="#3BD7F1"
-                stroke-width="1.97947"
-              />
-            </svg>
-          </div>
-          <div class="share-group">
-            <a class="share-group-item" id="shareCurrentPageIcl">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="22"
-                viewBox="0 0 21 22"
-                fill="none"
-              >
-                <path
-                  d="M0.282114 11.5524C0.28129 9.57421 1.74018 7.94793 3.63508 7.78225C4.78653 7.68169 5.78468 8.04519 6.60891 8.85874C6.74161 8.9898 6.83145 9.00134 6.99135 8.9049C8.88461 7.7567 10.7828 6.61427 12.6827 5.47761C12.831 5.38859 12.8508 5.31193 12.7981 5.15037C12.0958 2.99822 13.5432 0.683684 15.7842 0.36222C17.9075 0.0580664 19.8073 1.52279 20.0529 3.65351C20.2771 5.60042 18.852 7.4443 16.9044 7.71961C15.6318 7.8993 14.552 7.50695 13.6594 6.59201C13.5638 6.49393 13.4987 6.48074 13.3816 6.55163C11.462 7.71054 9.5407 8.86616 7.61859 10.0193C7.50567 10.0869 7.47105 10.1537 7.51721 10.2839C7.75129 10.9466 7.79497 11.6233 7.61529 12.3058C7.57326 12.4666 7.6293 12.5416 7.76613 12.6116C9.43931 13.4647 11.1109 14.322 12.7832 15.1792C12.9176 15.2476 13.0544 15.3136 13.1821 15.3919C13.3091 15.4693 13.3956 15.4578 13.4954 15.3366C14.0962 14.6088 14.8652 14.1736 15.7983 14.0228C17.2151 13.7936 18.7119 14.4712 19.4801 15.696C20.8871 17.938 19.6458 20.8378 17.0536 21.3637C14.9996 21.7807 12.9678 20.3432 12.6654 18.262C12.5986 17.802 12.5961 17.3445 12.7338 16.8978C12.7972 16.6926 12.7404 16.6002 12.5508 16.5038C10.7597 15.5946 8.97362 14.6756 7.18834 13.7541C7.05894 13.6873 6.98393 13.7038 6.89327 13.8142C6.06244 14.8231 4.98847 15.2748 3.68701 15.2056C2.07234 15.119 0.559055 13.7252 0.327446 12.1096C0.297774 11.9052 0.274696 11.7016 0.282938 11.5516L0.282114 11.5524Z"
-                  fill="#3BD7F1"
-                />
-              </svg>
-            </a>
-            <a class="share-group-item" @click="copyCurrentUrl">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_11479_977)">
-                  <path
-                    d="M9.10209 6.12598C10.8869 6.12803 12.1807 6.64582 13.3111 7.62182C13.4894 7.77592 13.6707 7.92592 13.845 8.0831C14.1985 8.40056 14.2673 8.87417 13.9814 9.25738C13.6428 9.71147 13.2852 10.1522 12.9157 10.5806C12.609 10.9361 12.1369 10.9587 11.7713 10.6618C11.5432 10.4769 11.3271 10.2755 11.099 10.0895C10.0602 9.24505 8.50948 9.28615 7.55234 10.2303C6.53344 11.2361 5.53248 12.2645 4.5594 13.3175C3.81341 14.125 3.64808 15.1113 3.98671 16.1582C4.32535 17.2051 5.06536 17.8389 6.10915 18.03C6.97666 18.1882 7.77544 17.9633 8.43876 17.3345C8.6529 17.1321 8.8511 16.9123 9.06026 16.7047C9.44371 16.3256 9.89489 16.3102 10.2813 16.6852C10.6618 17.0551 11.0313 17.4372 11.3909 17.8287C11.7066 18.1728 11.7205 18.6485 11.4217 18.9958C10.3939 20.1937 9.1728 21.0484 7.60911 21.3423C4.41897 21.9412 1.2119 19.643 0.679043 16.3441C0.334432 14.2082 0.910112 12.3641 2.37122 10.82C3.29848 9.83989 4.23969 8.87315 5.18886 7.91564C6.35715 6.73623 7.76647 6.14139 9.10109 6.127L9.10209 6.12598Z"
-                    fill="#3BD7F1"
-                  />
-                  <path
-                    d="M12.3086 15.6265C10.73 15.6194 9.43419 15.1046 8.30574 14.1266C8.13443 13.9776 7.96113 13.8317 7.78982 13.6817C7.42031 13.3571 7.34661 12.8814 7.63843 12.491C7.97806 12.0369 8.33562 11.5972 8.70413 11.1688C9.00891 10.8144 9.48299 10.7938 9.84852 11.0907C10.0637 11.2654 10.2658 11.4565 10.483 11.628C11.6503 12.5516 13.1532 12.4623 14.197 11.3989C15.1302 10.4486 16.0595 9.49422 16.9778 8.52849C17.7337 7.73332 17.9628 6.7717 17.666 5.71146C17.3632 4.63273 16.6421 3.95878 15.5774 3.73687C14.681 3.54989 13.8633 3.7718 13.1761 4.41904C12.962 4.6204 12.7648 4.84232 12.5546 5.04882C12.1722 5.42483 11.717 5.43921 11.3325 5.06525C10.9521 4.6954 10.5826 4.31322 10.224 3.92077C9.91625 3.58482 9.89334 3.11121 10.1812 2.77423C11.1463 1.64413 12.2817 0.796559 13.7418 0.466776C17.2029 -0.31402 20.5633 2.13316 20.9866 5.76489C21.2087 7.67167 20.6819 9.35347 19.411 10.7445C18.3473 11.9085 17.2636 13.0581 16.1083 14.1266C15.0077 15.1447 13.6851 15.6111 12.3076 15.6255L12.3086 15.6265Z"
-                    fill="#3BD7F1"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_11479_977">
-                    <rect
-                      width="20.4545"
-                      height="21.1144"
-                      fill="white"
-                      transform="translate(0.582031 0.322266)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-        </section> -->
       </main>
       <aside
         class="page-left flex-1 hidden xl:block order-2 xl:order-1 relative"
@@ -798,6 +819,50 @@ $primary-color: #3bd7f1;
     }
   }
 }
+.student {
+  background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-bg-student.png")
+    no-repeat;
+  background-position: top center;
+  background-size: cover;
+  &-title {
+    background: url("https://statichk.cmermedical.com/smile/icl2509/icl2509-student-bgtit.png")
+      no-repeat;
+    background-size: contain;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 210.499px;
+      height: 206.811px;
+      right: 0;
+      top: -40px;
+      background: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjM5NSIgaGVpZ2h0PSI1NTkiIHZpZXdCb3g9IjAgMCAzOTUgNTU5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMTQ1NzZfNzMxOSkiPgo8cGF0aCBkPSJNNDgxLjIzNiAyOTEuNjExQzQ4MS4yMzYgMjkxLjYxMSA0ODEuMDI0IDI5MS41MDUgNDgwLjc4OSAyOTEuMzIzQzQ4MC42NiAyOTEuMTkyIDQ4MC40NDcgMjkxLjA4NSA0ODAuMzQzIDI5MS4wMzZDNDc3LjI0NCAyODguODI0IDQ2Ni45MTEgMjgwLjYwMyA0NjEuNDM0IDI2My45OThDNDU0LjkxOSAyNDQuMjMxIDQ0Ny4xOTcgMjIyLjQxMiA0NDcuMTk3IDIyMi40MTJDNDQ3LjE5NyAyMjIuNDEyIDQ0MC4zOTYgMjAwLjE5NyA0MzMuOTA2IDE4MC41MTNDNDI4LjQzNCAxNjMuOTEgNDMxLjgzNiAxNTEuMTAzIDQzMy4wMDIgMTQ3LjQ2M0M0MzMuMDMyIDE0Ny4yNzggNDMzLjE1OSAxNDcuMTQ1IDQzMy4xODkgMTQ2Ljk2QzQzMy4zNDUgMTQ2LjY0MSA0MzMuMzc1IDE0Ni40NTYgNDMzLjM3NSAxNDYuNDU2TDQzMy4zNDcgMTQ2LjM3OUM0MzQuNjc1IDE0Mi40MjQgNDM0Ljc5MiAxMzcuOTk1IDQzMy4zODYgMTMzLjcyOEM0MjkuODk0IDEyMy4xMzQgNDE4LjQ0MyAxMTcuMzkyIDQwNy44NiAxMjAuOTI2QzMzMS4wOTQgMTQ4LjY3NSAyOTEuMzk4IDE1Mi45ODggMjkxLjM5OCAxNTIuOTg4QzI3Ny4zNTIgMTUzLjk5OCAyNTkuMDY3IDE1Ny44MjIgMjM5LjcxNyAxNjQuMjg2QzIyMC4zNjYgMTcwLjc1IDIwMy40MzcgMTc4LjY4OSAxOTEuNTc5IDE4Ni4zMzhDMTkxLjU3OSAxODYuMzM4IDE1Ny4yMDIgMjA2Ljc3NyA3OS4xODU2IDIzMC43MzFDNjguNjAzMSAyMzQuMjY1IDYyLjgzNjkgMjQ1Ljc2IDY2LjMyODcgMjU2LjM1NEM2Ny43MzUgMjYwLjYyMSA3MC40NTkgMjY0LjEwMSA3My44NzE5IDI2Ni40NzNMNzMuODk5NSAyNjYuNTUxQzczLjg5OTUgMjY2LjU1MSA3NC4xMTE2IDI2Ni42NTcgNzQuMzQ2NSAyNjYuODM4Qzc0LjQ3NjQgMjY2Ljk3IDc0LjY4ODUgMjY3LjA3NyA3NC43OTM0IDI2Ny4xMjZDNzcuODkxOSAyNjkuMzM4IDg4LjIyNSAyNzcuNTU5IDkzLjcwMTkgMjk0LjE2NEMxMDAuMjE3IDMxMy45MyAxMDcuOTM5IDMzNS43NSAxMDcuOTM5IDMzNS43NUMxMDcuOTM5IDMzNS43NSAxMTQuNzQgMzU3Ljk2NSAxMjEuMjMgMzc3LjY0OUMxMjYuNzAyIDM5NC4yNTEgMTIzLjMgNDA3LjA1OSAxMjIuMTM0IDQxMC42OTlDMTIyLjEwNCA0MTAuODg0IDEyMS45NzcgNDExLjAxNyAxMjEuOTQ3IDQxMS4yMDJDMTIxLjc5MSA0MTEuNTIgMTIxLjc2MSA0MTEuNzA1IDEyMS43NjEgNDExLjcwNUwxMjEuNzg5IDQxMS43ODNDMTIwLjQ2MSA0MTUuNzM4IDEyMC4zNDQgNDIwLjE2NyAxMjEuNzUgNDI0LjQzNEMxMjUuMjQyIDQzNS4wMjggMTM2LjY5MyA0NDAuNzcgMTQ3LjI3NiA0MzcuMjM2QzIyNC4wNDIgNDA5LjQ4NiAyNjMuNzM4IDQwNS4xNzQgMjYzLjczOCA0MDUuMTc0QzI3Ny43ODMgNDA0LjE2NCAyOTYuMDY5IDQwMC4zNCAzMTUuNDE5IDM5My44NzZDMzM0Ljc3IDM4Ny40MTIgMzUxLjY5OSAzNzkuNDczIDM2My41NTcgMzcxLjgyNEMzNjMuNTU3IDM3MS44MjQgMzk3LjkzNCAzNTEuMzg1IDQ3NS45NSAzMjcuNDMxQzQ4Ni41MzMgMzIzLjg5NyA0OTIuMjk5IDMxMi40MDIgNDg4LjgwNyAzMDEuODA4QzQ4Ny40MDEgMjk3LjU0MSA0ODQuNjc3IDI5NC4wNjEgNDgxLjIzNiAyOTEuNjExWiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTg4LjgxOTIgMjQ5LjkwOUM4OS43NDk2IDI0OC4xNTkgODkuMDkwNCAyNDUuOTg4IDg3LjM0NjggMjQ1LjA2MkM4NS42MDMxIDI0NC4xMzUgODMuNDM1NCAyNDQuODAzIDgyLjUwNSAyNDYuNTUzQzgxLjU3NDYgMjQ4LjMwNCA4Mi4yMzM4IDI1MC40NzQgODMuOTc3NCAyNTEuNDAxQzg1LjcyMTEgMjUyLjMyOCA4Ny44ODg4IDI1MS42NiA4OC44MTkyIDI0OS45MDlaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utb3BhY2l0eT0iMC41IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMzU5LjU2NyAzMjIuNjY5QzM4My43NjIgMjc3LjE0OCAzNjYuNjE5IDIyMC43MDkgMzIxLjI3NiAxOTYuNjA5QzI3NS45MzQgMTcyLjUwOSAyMTkuNTYzIDE4OS44NzMgMTk1LjM2OCAyMzUuMzkzQzE3MS4xNzMgMjgwLjkxNCAxODguMzE2IDMzNy4zNTMgMjMzLjY1OCAzNjEuNDUzQzI3OSAzODUuNTUzIDMzNS4zNzIgMzY4LjE4OSAzNTkuNTY3IDMyMi42NjlaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utb3BhY2l0eT0iMC41IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMzk1LjUyNiAxNTYuMDU0QzQxNC43NzggMTc0LjU4IDQyOS45MzcgMTk3Ljk2MiA0MzguOTA4IDIyNS4xODJDNDUxLjc4NCAyNjQuMjM4IDQ0OS43NzMgMzA0LjY2NSA0MzUuOTE4IDM0MC4yNzgiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0zNjcuNjYzIDEzNC4zNkMzNzcuNjMyIDE0MC41NzQgMzg2Ljk4IDE0Ny44MzkgMzk1LjUxNyAxNTYuMDUzIiBzdHJva2U9IndoaXRlIiBzdHJva2Utb3BhY2l0eT0iMC41IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTg3LjI5MiA0MjMuNzc4QzE1NC44NDggNDAzLjU0OCAxMjkuMDA3IDM3Mi4yNDggMTE2LjA1MSAzMzIuOTU1QzEwMy4xNzQgMjkzLjg5OCAxMDUuMTg1IDI1My40NzEgMTE5LjA0IDIxNy44NTgiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xNzkuNTUgMzExLjc0NUMxNzguOTMgMzA5Ljg2NyAxNzYuOTA3IDMwOC44NTIgMTc1LjAzIDMwOS40NzhDMTczLjE1MyAzMTAuMTA1IDE3Mi4xMzQgMzEyLjEzNyAxNzIuNzUzIDMxNC4wMTZDMTczLjM3MyAzMTUuODk0IDE3NS4zOTYgMzE2LjkwOSAxNzcuMjczIDMxNi4yODJDMTc5LjE1IDMxNS42NTYgMTgwLjE2OSAzMTMuNjI0IDE3OS41NSAzMTEuNzQ1WiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTM4Mi4xOTggMjQ0LjA1MUMzODEuNTc5IDI0Mi4xNzIgMzc5LjU1NSAyNDEuMTU3IDM3Ny42NzkgMjQxLjc4NEMzNzUuODAyIDI0Mi40MTEgMzc0Ljc4MiAyNDQuNDQyIDM3NS40MDIgMjQ2LjMyMUMzNzYuMDIxIDI0OC4yIDM3OC4wNDUgMjQ5LjIxNCAzNzkuOTIyIDI0OC41ODhDMzgxLjc5OCAyNDcuOTYxIDM4Mi44MTggMjQ1LjkyOSAzODIuMTk4IDI0NC4wNTFaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utb3BhY2l0eT0iMC41IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMjgwLjk4MyAyNzcuOTUyQzI4MC4zNjQgMjc2LjA3NCAyNzguMzQgMjc1LjA1OSAyNzYuNDY0IDI3NS42ODZDMjc0LjU4NyAyNzYuMzEyIDI3My41NjggMjc4LjM0NCAyNzQuMTg3IDI4MC4yMjNDMjc0LjgwNiAyODIuMTAxIDI3Ni44MyAyODMuMTE2IDI3OC43MDcgMjgyLjQ4OUMyODAuNTg0IDI4MS44NjMgMjgxLjYwMyAyNzkuODMxIDI4MC45ODMgMjc3Ljk1MloiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0zNDUuNDggMTQyLjAzN0MzNDUuNDggMTQyLjAzNyAzNDEuOTc4IDE1MS44OTMgMzE0LjAyMyAxNjEuMjM3QzI4Ni4wNzEgMTcwLjU3NSAyNzUuODI4IDE2NS4wNDIgMjQ2Ljc2NyAxNzQuNzUxQzIxNy43MDYgMTg0LjQ1OSAyMTIuNzg2IDE5NS4wNTUgMTg0LjgyNyAyMDQuMzk2QzE1Ni44NzUgMjEzLjczNCAxNDguMjA3IDIwNy45NDEgMTQ4LjIwNyAyMDcuOTQxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utb3BhY2l0eT0iMC41IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNDEzLjU0MiAzNDguNDU5QzQxMy41NDIgMzQ4LjQ1OSA0MDQuODgxIDM0Mi42NjQgMzc2LjkyMiAzNTIuMDA0QzM0OC45NyAzNjEuMzQyIDM0NC4wNDMgMzcxLjk0MSAzMTQuOTgyIDM4MS42NDlDMjg1LjkyMSAzOTEuMzU4IDI3NS42ODIgMzg1LjgyOCAyNDcuNzI2IDM5NS4xNjRDMjE5Ljc3NCA0MDQuNTAyIDIxNi4yNjkgNDE0LjM2MyAyMTYuMjY5IDQxNC4zNjMiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMTQ1NzZfNzMxOSI+CjxyZWN0IHdpZHRoPSI0MTUuMjUzIiBoZWlnaHQ9IjQwNy45NzkiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDM2Ni42NzYpIHJvdGF0ZSgtNjIuMDA4NCkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K")
+        no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &-button {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOTAiIGhlaWdodD0iNzciIHZpZXdCb3g9IjAgMCAzOTAgNzciIGZpbGw9Im5vbmUiPgogIDxwYXRoIGQ9Ik0wIDBMMzkwIDBWMzkuMzI2OEMzOTAgNjAuMTIgMzczLjIzOCA3NyAzNTIuNTkgNzdIMFYwWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+");
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    border-bottom-right-radius: 17px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 3.5px;
+      width: 50%;
+      background-color: #000034;
+      animation: ButtonFlow 2.5s ease infinite;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   :deep(.new-Footer-v2) {
     padding-bottom: 0 !important;
@@ -890,6 +955,15 @@ $primary-color: #3bd7f1;
       }
     }
   }
+  .student {
+    &-title {
+      &::before {
+        width: 415.253px;
+        height: 407.979px;
+        top: -90px;
+      }
+    }
+  }
 }
 </style>
 <script>
@@ -916,6 +990,7 @@ export default {
         { id: "detail", label: "講座活動詳情" },
         { id: "highlight", label: "講座活動亮點" },
         { id: "what", label: "ICL植入式隱形眼鏡是什麼?" },
+        { id: "student", label: "ICL 大學生及舊生計劃" },
       ],
     };
   },
@@ -935,23 +1010,6 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
-    async copyCurrentUrl() {
-      try {
-        const textArea = document.createElement("textarea");
-        textArea.value = window.location.href;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textArea);
-        this.$message({
-          showClose: true,
-          message: "複製成功",
-          type: "success",
-        });
-      } catch (error) {
-        console.error("复制失败:", error);
-      }
-    },
     /**
      * @description: 统一调用动画
      */
