@@ -316,14 +316,6 @@
             title="希瑪眼科十月旺角"
           />
         </picture>
-        <img
-          src="https://statichk.cmermedical.com/smile/preaching-seat/calendar1.avif"
-          alt="希瑪眼科九月中環預約"
-        />
-        <img
-          src="https://statichk.cmermedical.com/smile/preaching-seat/calendar2.avif"
-          alt="希瑪眼科九月旺角預約"
-        />
       </div>
     </div>
     <businessHours />
