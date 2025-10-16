@@ -1,8 +1,8 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-09-30 16:07:41
- * @FilePath: /pages/new-page/icl-talk-2025.vue
+ * @LastEditTime: 2025-10-16 13:35:55
+ * @FilePath: /pages/new-page/icltalk-2025.vue
  * @Description: 广告专用讲座专题-ver202510
 -->
 <template>
@@ -214,7 +214,7 @@
               >
                 <span
                   class="block text-sm md:text-xl tracking-[0.7px] traceing-[1px]"
-                  >參加者即場預約ICL矯視前檢查</span
+                  >參加者即場預繳ICL矯視前檢查費用</span
                 >可獲專場專享禮品
               </p>
               <div class="relative flex justify-end md:justify-center">
@@ -505,7 +505,7 @@
         >
           <div class="mx-auto text-center flex flex-col items-center pt-[5%]">
             <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
-              參加者即場預約ICL矯視前檢查
+              參加者即場預繳ICL矯視前檢查費用
             </p>
             <p class="text-xl leading-[23.5px] tracking-[1px]">
               可獲專場專享禮品
