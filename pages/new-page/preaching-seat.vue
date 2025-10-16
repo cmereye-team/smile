@@ -298,8 +298,8 @@
           />
           <img
             src="https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25111.jpg"
-            alt="希瑪眼科十月中環預約"
-            title="希瑪眼科十月中環"
+            alt="希瑪眼科十一月中環預約日歷"
+            title="希瑪眼科十一月中環預約日歷"
           />
         </picture>
         <picture>
@@ -317,8 +317,8 @@
           />
           <img
             src="https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25112.jpg"
-            alt="希瑪眼科十月旺角預約"
-            title="希瑪眼科十月旺角"
+            alt="希瑪眼科十一月旺角預約日歷"
+            title="希瑪眼科十一月旺角預約日歷"
           />
         </picture>
         <picture>
@@ -384,7 +384,6 @@
             />
             <img
               src="https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.jpg 2x"
-              alt=""
             />
           </picture>
         </div>
