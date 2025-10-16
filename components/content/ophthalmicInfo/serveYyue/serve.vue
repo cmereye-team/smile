@@ -1,22 +1,22 @@
 <template>
   <div class="page_container serve-page">
-    <div class="flex justify-center md:mt-28 mt-10">
-      <h2>{{$t('home.headers.reservationService')}}</h2>
-    </div>
+    <!-- <div class="flex justify-center md:mt-28 mt-10">
+      <H2Tag :title="[$t('home.headers.reservationService')]" />
+    </div> -->
     <div class="flex md:justify-center flex-col items-center md:flex-row">
-      <div class="serve-box" @click="serveForm('/eye-checkup')">
-        <img
-          src="https://static.cmereye.com/imgs/2023/01/a1441d1e7e65eb40.png"
-          alt=""
-        />
-        <p>{{$t('home.serve.p1')}}</p>
-      </div>
       <div class="serve-box" @click="serveForm('/ophthalmicInfo/AppointForm')">
         <img
           src="https://static.cmereye.com/imgs/2023/01/df076d9e71e08870.png"
           alt=""
         />
         <p>{{$t('home.serve.p2')}}</p>
+      </div>
+      <div class="serve-box" @click="serveForm('/eye-checkup')">
+        <img
+          src="https://static.cmereye.com/imgs/2023/01/a1441d1e7e65eb40.png"
+          alt=""
+        />
+        <p>{{$t('home.serve.p1')}}</p>
       </div>
     </div>
     <div class="flex justify-center my-10">
@@ -40,7 +40,11 @@
 </template>
 
 <script>
+// import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
+  // components:{
+  //   H2Tag
+  // },
   data() {
     return {};
   },

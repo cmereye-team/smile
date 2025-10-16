@@ -88,15 +88,13 @@ export default {
         font-style: normal;
         font-weight: 500;
         font-size: 38px;
-
-        /* identical to box height, or 87% */
-
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.15em;
 
         background: linear-gradient(90.57deg, #4570b6 0, #81dbec 60%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -152,9 +150,29 @@ export default {
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .section {
+    padding-left: 24px;
+    .des_box {
+      h3 {
+        font-family: var(--font_family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.15em;
+        background: linear-gradient(90.57deg, #4570b6 0, #81dbec 60%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
   .gradient_process_en {
     background: linear-gradient(90.57deg, #4570b6 -11.77%, #81dbec 111.92%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 24px;
