@@ -71,9 +71,6 @@ h2 {
   .serve-box {
     cursor: pointer;
   }
-  .serve-page {
-    margin-bottom: 800px;
-  }
   .more-btn {
     display: flex;
     justify-content: center;
