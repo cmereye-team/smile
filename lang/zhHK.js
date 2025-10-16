@@ -3304,6 +3304,7 @@ module.exports = {
       title2: "Smile講座-中環",
       title3: "Smile講座-旺角",
       title4: "老花講座-旺角",
+      title5: "Smile Pro 講座-中環",
       date: "預約日期",
     },
     content2: {

@@ -92,6 +92,11 @@
                       :label="$t('appointFroms.content1.title1')"
                       value="smileProMongKok"
                     ></el-option>
+                    <!-- Smile Pro 講座-中環 -->
+                    <el-option
+                      :label="$t('appointFroms.content1.title5')"
+                      value="smileProCentral"
+                    ></el-option>
                     <!-- Smile講座-中環 -->
                     <el-option
                       :label="$t('appointFroms.content1.title2')"
@@ -278,6 +283,44 @@
         </div>
       </div>
       <div class="lecture-image">
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25111.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25111.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25111.jpg"
+            alt="希瑪眼科十月中環預約"
+            title="希瑪眼科十月中環"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25112.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25112.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25112.jpg"
+            alt="希瑪眼科十月旺角預約"
+            title="希瑪眼科十月旺角"
+          />
+        </picture>
         <picture>
           <source
             srcset="
@@ -633,6 +676,18 @@ export default {
           "2025-10-18",
           "2025-10-22",
           "2025-10-25",
+          "2025-11-05",
+          "2025-11-12",
+          "2025-11-19",
+          "2025-11-26",
+        ],
+        // 中环-smilePro
+        smileProCentral: [
+          "2025-11-01",
+          "2025-11-08",
+          "2025-11-15",
+          "2025-11-22",
+          "2025-11-29",
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -653,6 +708,15 @@ export default {
           "2025-10-21",
           "2025-10-25",
           "2025-10-27",
+          "2025-11-01",
+          "2025-11-04",
+          "2025-11-08",
+          "2025-11-10",
+          "2025-11-15",
+          "2025-11-18",
+          "2025-11-22",
+          "2025-11-24",
+          "2025-11-29",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -666,6 +730,10 @@ export default {
           "2025-10-14",
           "2025-10-20",
           "2025-10-28",
+          "2025-11-03",
+          "2025-11-11",
+          "2025-11-17",
+          "2025-11-25",
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -709,6 +777,12 @@ export default {
             周四: "6:30 下午",
             周六: "2:30 下午",
             周一: "6:30 下午",
+          },
+        },
+        smileProCentral: {
+          name: "Smile Pro 講座-中環",
+          times: {
+            周六: "1:30 下午",
           },
         },
         smileCentral: {
