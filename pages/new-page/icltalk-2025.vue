@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-10-16 13:35:55
+ * @LastEditTime: 2025-10-20 16:08:02
  * @FilePath: /pages/new-page/icltalk-2025.vue
  * @Description: 广告专用讲座专题-ver202510
 -->
@@ -48,7 +48,11 @@
             />
             <img
               class="w-full"
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.jpg 2x"
+              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.jpg"
+              srcset="
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.jpg 1x,
+                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.jpg 2x
+              "
               alt="ICL植入式隱形眼鏡講座專場"
             />
           </picture>
@@ -236,7 +240,11 @@
                     "
                   />
                   <img
-                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x"
+                    src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png"
+                    srcset="
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,
+                      https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x
+                    "
                     alt="送不鏽鋼保溫杯+希瑪仔飲管套"
                   />
                 </picture>
@@ -422,8 +430,11 @@
                   "
                 />
                 <img
-                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@2x.png 2x"
-                  alt=""
+                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.png"
+                  srcset="
+                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.png 1x,
+                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@2x.png 2x
+                  "
                   class="w-full mr-2"
                 />
               </picture>
@@ -449,22 +460,38 @@
             >
               凡於2025年11月30日或之前成功預約術前檢查，並於2025年12月31日前完成ICL植入式隱形眼鏡手術，即可享有特定Offer。預約時，需要出示學生證或舊生證。
             </p>
-            <div class="mt-6 md:mt-16 mb-10 md:mb-20">
+            <div
+              class="mt-6 md:mt-16 mb-10 md:mb-20 font-zen-antique whitespace-nowrap"
+            >
               <img
                 src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1t.svg"
                 alt="合資格人士"
                 class="mb-[6.52px] md:mb-[12.85px]"
               />
-              <img
+              <ul
+                class="space-y-3 md:space-y-6 text-sm md:text-2xl mb-8 md:mb-15"
+              >
+                <li
+                  class="mb-3 md:mb-6 pl-4 lg:pl-7 relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:content-[''] before:w-1 before:h-1 md:before:w-[6.5px] md:before:h-[6.5px] before:bg-white"
+                >
+                  <p>現正就讀香港全日制大學的學生</p>
+                </li>
+                <li
+                  class="pl-4 lg:pl-7 relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:content-[''] before:w-1 before:h-1 md:before:w-[6.5px] md:before:h-[6.5px] before:bg-white"
+                >
+                  <p>於2014年或之後入學的全日制大學畢業生</p>
+                </li>
+              </ul>
+              <!-- <img
                 src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1i1.svg"
                 alt="現正就讀全日製香港大學的大學生"
                 class="mb-[11.76px] md:mb-[23.19px]"
-              />
-              <img
+              /> -->
+              <!-- <img
                 src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1i2.svg"
                 alt="於2014年或之後入學的全日制大學畢業生"
                 class="mb-[31.04px] md:mb-[61.24px]"
-              />
+              /> -->
               <img
                 src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s2t.svg"
                 alt="有效期"
@@ -528,7 +555,11 @@
                 "
               />
               <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x"
+                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png"
+                srcset="
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@1x.png 1x,
+                  https://statichk.cmermedical.com/smile/icl2509/icl2509-gift-pc@2x.png 2x
+                "
                 alt="送不鏽鋼保溫杯+希瑪仔飲管套"
               />
             </picture>
@@ -639,6 +670,11 @@ $primary-color: #3bd7f1;
         no-repeat left bottom 30%;
       background-size: 28% auto;
     }
+  }
+}
+.font {
+  &-zen-antique {
+    font-family: "Zen Antique", serif;
   }
 }
 .detail {
@@ -993,6 +1029,23 @@ export default {
         { id: "student", label: "ICL 大學生及舊生計劃" },
       ],
     };
+  },
+  head: {
+    link: [
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: true,
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap",
+      },
+    ],
   },
   mounted() {
     this.$nextTick(() => {
