@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-10-20 16:08:02
+ * @LastEditTime: 2025-10-27 10:04:27
  * @FilePath: /pages/new-page/icltalk-2025.vue
  * @Description: 广告专用讲座专题-ver202510
 -->
@@ -275,7 +275,7 @@
             >
           </div>
         </section>
-        <section id="what" class="what">
+        <section id="what" class="what md:mb-20">
           <div
             class="rounded-t-[10.1px] md:rounded-t-[20px] relative z-1 bg-[#E8EEF2] h-[178.61px] md:h-[323px] overflow-hidden"
           >
@@ -398,123 +398,6 @@
               </p>
             </div>
           </div>
-        </section>
-        <section
-          id="student"
-          class="student pb-[74px] md:pb-[136px] md:mb-20 pt-[91.14px] md:pt-[172.21px]"
-        >
-          <div class="student-intro">
-            <img
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-t1.svg"
-              alt="CMER ICL"
-              class="mb-3 md:mb-6 ml-[60px] md:ml-[114px] w-[210.875px] md:w-[415.986px]"
-            />
-            <img
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-t2.svg"
-              alt="植入式隱形眼鏡-大學生及舊生特別計劃"
-              class="ml-[50px] md:ml-[98px] w-[219.495px] md:w-[429.774px]"
-            />
-            <!-- <div class="flex relative justify-end -mt-[76px] md:-mt-[146px]"> -->
-            <div class="relative -mt-[76px] md:-mt-[146px] pl-[11%]">
-              <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-t3.svg"
-                alt="升級視力，為未來做好準備"
-                class="absolute left-[8.5%] -bottom-[30px] md:-bottom-[48px] z-10 w-[50.185px] md:w-[99px]"
-              />
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.webp 1x,
-                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@2x.webp 2x
-                  "
-                />
-                <img
-                  src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.png"
-                  srcset="
-                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@1x.png 1x,
-                    https://statichk.cmermedical.com/smile/icl2509/icl2509-student-person@2x.png 2x
-                  "
-                  class="w-full mr-2"
-                />
-              </picture>
-            </div>
-            <p
-              class="text-justify text-sm md:text-xl leading-[17.742px] md:leading-[35px] tracking-[0.7px] md:tracking-[1px] mt-1 ml-[90px] md:ml-[178px] mr-[64px] md:mr-[228px]"
-            >
-              希瑪微笑矯視中心正式推出「ICL植入式隱形眼鏡大學生及舊生特別計劃」，讓你在選擇改善視力方式時有更大自由度，為迎接學業、職場及生活上的每一個挑戰做好準備。
-            </p>
-          </div>
-          <div class="student-title h-[185.039px] md:h-[365.029px] md:-mt-14">
-            <img
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-tit.svg"
-              alt="特別計劃詳情"
-              class="pt-11 md:pt-[84px] pl-[42px] md:pl-[82px] w-[168.933px] md:w-[333.256px]"
-            />
-          </div>
-          <div
-            class="student-desc pl-[58px] md:pl-[108px] pr-[32px] md:pr-[128px] -mt-[30px] md:-mt-20"
-          >
-            <p
-              class="text-justify text-sm md:text-xl leading-[17.742px] md:leading-[35px] tracking-[0.7px] md:tracking-[1px]"
-            >
-              凡於2025年11月30日或之前成功預約術前檢查，並於2025年12月31日前完成ICL植入式隱形眼鏡手術，即可享有特定Offer。預約時，需要出示學生證或舊生證。
-            </p>
-            <div
-              class="mt-6 md:mt-16 mb-10 md:mb-20 font-zen-antique whitespace-nowrap"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1t.svg"
-                alt="合資格人士"
-                class="mb-[6.52px] md:mb-[12.85px]"
-              />
-              <ul
-                class="space-y-3 md:space-y-6 text-sm md:text-2xl mb-8 md:mb-15"
-              >
-                <li
-                  class="mb-3 md:mb-6 pl-4 lg:pl-7 relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:content-[''] before:w-1 before:h-1 md:before:w-[6.5px] md:before:h-[6.5px] before:bg-white"
-                >
-                  <p>現正就讀香港全日制大學的學生</p>
-                </li>
-                <li
-                  class="pl-4 lg:pl-7 relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:content-[''] before:w-1 before:h-1 md:before:w-[6.5px] md:before:h-[6.5px] before:bg-white"
-                >
-                  <p>於2014年或之後入學的全日制大學畢業生</p>
-                </li>
-              </ul>
-              <!-- <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1i1.svg"
-                alt="現正就讀全日製香港大學的大學生"
-                class="mb-[11.76px] md:mb-[23.19px]"
-              /> -->
-              <!-- <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s1i2.svg"
-                alt="於2014年或之後入學的全日制大學畢業生"
-                class="mb-[31.04px] md:mb-[61.24px]"
-              /> -->
-              <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s2t.svg"
-                alt="有效期"
-                class="mb-[4.56px] md:mb-[8.99px]"
-              />
-              <img
-                src="https://statichk.cmermedical.com/smile/icl2509/icl2509-student-s2i1.svg"
-                alt="即日起至2025年12月31日"
-              />
-            </div>
-          </div>
-          <a
-            href="https://api.whatsapp.com/send/?phone=85297962992&text=我想查詢(ICLtalk-land_02)CMER ICL植入式隱形眼鏡大學生及舊生特別計劃"
-            target="_blank"
-            class="student-button font-black text-[#04abc8] text-center block mx-auto text-[18.249px] md:text-4xl leading-[31.936px] md:leading-[63px] tracking-[0.912px] md:tracking-[1.8px] w-[197.698px] h-[40px] md:w-[390px] md:h-[77px] mb-[18px] md:mb-9"
-          >
-            按此查詢特別計劃
-          </a>
-          <p
-            class="text-[10.138px] md:text-xl leading-[17.742px] md:leading-[35px] tracking-[0.507px] md:tracking-[1px] text-center whitespace-nowrap"
-          >
-            *如有任何爭議，希瑪醫療控股有限公司保留最終決定權
-          </p>
         </section>
         <ShareSection
           class="share"
@@ -1026,7 +909,6 @@ export default {
         { id: "detail", label: "講座活動詳情" },
         { id: "highlight", label: "講座活動亮點" },
         { id: "what", label: "ICL植入式隱形眼鏡是什麼?" },
-        { id: "student", label: "ICL 大學生及舊生計劃" },
       ],
     };
   },
