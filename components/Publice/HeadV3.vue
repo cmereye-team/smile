@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-09-05 15:27:09
+ * @LastEditTime: 2025-10-27 10:13:36
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -21,12 +21,12 @@ export default {
     HeadLeftV2,
     HeadMobileV3,
   },
-  props:{
-    isICLTalk:{
-      type:Boolean,
-      default:false
-    }
-  }
+  props: {
+    isICLTalk: {
+      type: Boolean,
+      default: false,
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -53,7 +53,12 @@ $text-color: #6d6e71;
     left: #{"clamp(1rem, 0.045rem + 4.77vw, 3.625rem)"};
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .headV3 {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
   .headV3 {
     height: 180px;
     max-width: 768px;
