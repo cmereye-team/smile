@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-01 10:37:18
- * @LastEditTime: 2025-10-27 10:04:27
+ * @LastEditTime: 2025-10-28 14:51:43
  * @FilePath: /pages/new-page/icltalk-2025.vue
  * @Description: 广告专用讲座专题-ver202510
 -->
@@ -15,44 +15,20 @@
         <section id="intro" class="intro pb-[10.1px] md:pb-0">
           <picture>
             <source
-              media="(max-width: 767px)"
               type="image/avif"
               srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@1x.avif 1x,
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@2x.avif 2x
+                https://statichk.cmermedical.com/smile/icl2509/icltalk-banner@1x.avif
               "
             />
             <source
-              media="(max-width: 767px)"
               type="image/webp"
               srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@1x.webp 1x,
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-m@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              type="image/avif"
-              srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.avif 1x,
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.avif 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              type="image/webp"
-              srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.webp 1x,
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.webp 2x
+                https://statichk.cmermedical.com/smile/icl2509/icltalk-banner@1x.webp
               "
             />
             <img
               class="w-full"
-              src="https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.jpg"
-              srcset="
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@1x.jpg 1x,
-                https://statichk.cmermedical.com/smile/icl2509/icl2509-banner-pc@2x.jpg 2x
-              "
+              src="https://statichk.cmermedical.com/smile/icl2509/icltalk-banner@1x.jpg"
               alt="ICL植入式隱形眼鏡講座專場"
             />
           </picture>
@@ -184,7 +160,7 @@
                   <div class="detail-content-item">
                     <img
                       src="https://statichk.cmermedical.com/smile/icl2509/icl2509-detail-c3.svg"
-                      alt="專場專享禮品"
+                      alt="即場預約禮品"
                     />
                   </div>
                 </div>
@@ -219,7 +195,7 @@
                 <span
                   class="block text-sm md:text-xl tracking-[0.7px] traceing-[1px]"
                   >參加者即場預繳ICL矯視前檢查費用</span
-                >可獲專場專享禮品
+                >可獲即場預約禮品
               </p>
               <div class="relative flex justify-end md:justify-center">
                 <picture ref="shakeImages2" class="max-w-[90%]">
@@ -252,8 +228,7 @@
               <p
                 class="mt-[18px] md:mt-[14.5px] text-sm md:text-xl leading-[23.845px] md:leading-[47px] tracking-[0.7px] md:tracking-[1px]"
               >
-                <span class="font-black">術前檢查費用</span
-                >(價值:$500)可於手術費用中扣除
+                <span class="font-black">成功預約手術</span>可於手術費減$500
               </p>
             </div>
           </div>
@@ -418,7 +393,7 @@
               參加者即場預繳ICL矯視前檢查費用
             </p>
             <p class="text-xl leading-[23.5px] tracking-[1px]">
-              可獲專場專享禮品
+              可獲即場預約禮品
             </p>
             <picture>
               <source
@@ -447,8 +422,7 @@
               />
             </picture>
             <p class="text-[15px] leading-[23.5px] tracking-[0.75px]">
-              <span class="font-black">術前檢查費用</span
-              >(價值:$500)可於手術費用中扣除
+              <span class="font-black">成功預約手術</span>可於手術費減$500
             </p>
           </div>
         </div>
