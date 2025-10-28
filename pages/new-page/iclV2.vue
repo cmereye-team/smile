@@ -583,7 +583,7 @@ i {
         border-radius: 7.168px;
         background: #f4fafc;
         padding: 27px 32px 27px 34px;
-        h4 {
+        .icl-WhatChoose-content-two-title {
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: 24px;
@@ -1142,10 +1142,6 @@ i {
         display: flex;
         flex-direction: column;
         border-top: 1.327px solid #4570b6;
-        & > li:nth-child(1) .CheckObject-description {
-          color: #4570b6;
-          font-weight: 900;
-        }
         li {
           display: flex;
           align-items: flex-start;
@@ -1673,7 +1669,7 @@ i {
         border-radius: 1.837vw;
         background: #f4fafc;
         padding: 6.92vw 8.25vw 6.92vw 8.717vw;
-        h4 {
+        .icl-WhatChoose-content-two-title {
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: 6.15vw;
@@ -2194,10 +2190,6 @@ i {
         display: flex;
         flex-direction: column;
         border-top: 1.327px solid #4570b6;
-        & > li:nth-child(1) .CheckObject-description {
-          color: #4570b6;
-          font-weight: 900;
-        }
         li {
           display: flex;
           align-items: flex-start;
@@ -2733,7 +2725,7 @@ i {
         border-radius: 10px;
         background: #f4fafc;
         padding: 63px 53px 58px 46px;
-        h4 {
+        .icl-WhatChoose-content-two-title {
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: 30px;
@@ -3362,10 +3354,6 @@ i {
         display: flex;
         flex-direction: column;
         border-left: 2px solid #4570b6;
-        & > li:nth-child(1) .CheckObject-description {
-          color: #4570b6;
-          font-weight: 900;
-        }
         li {
           display: flex;
           align-items: flex-start;
@@ -3924,14 +3912,22 @@ i {
 
       <div class="icl-WhatChoose-content-two container new-container">
         <div>
-          <h4>{{ $t("Correct.newIcl.section2.two.title") }}</h4>
-          <p>
+          <div class="flex items-center icl-WhatChoose-content-two-title">
+            <h4>{{ $t("Correct.newIcl.section2.two.title") }}</h4>
+            <span class="text-base lg:text-2xl bg-primary text-white font-bold ml-2 lg:ml-4 p-1 lg:p-2">NEW!</span>
+          </div>
+          <div>
+            <p>
             {{ $t("Correct.newIcl.section2.two.text1") }}
           </p>
+          </div>
         </div>
 
         <div>
-          <h4>{{ $t("Correct.newIcl.section2.three.title") }}</h4>
+          <div class="flex items-center icl-WhatChoose-content-two-title">
+            <h4>{{ $t("Correct.newIcl.section2.three.title") }}</h4>
+            <span class="text-base lg:text-2xl bg-primary text-white font-bold ml-2 lg:ml-4 p-1 lg:p-2">NEW!</span>
+          </div>
           <p>
             {{ $t("Correct.newIcl.section2.three.text1") }}
           </p>
@@ -4173,7 +4169,7 @@ i {
           <li v-for="(item, index) in items" :key="index">
             <span class="CheckObject-number">{{ item.number }}</span>
             <span class="CheckObject-description">{{ item.description }}</span>
-            <span class="CheckObject-new" v-if="index == 0">NEW!</span>
+            <!-- <span class="CheckObject-new" v-if="index == 0">NEW!</span> -->
           </li>
         </ul>
       </div>
@@ -4845,40 +4841,39 @@ export default {
       ],
 
       items: [
-        { number: "1.", description: "Verion 眼科超聲生物顯微鏡" },
         {
-          number: "2.",
+          number: "1.",
           description: "屈光檢查",
         },
 
         {
-          number: "3.",
+          number: "2.",
           description: "Sirius：角膜結構及瞳孔測量",
         },
 
         {
-          number: "4.",
+          number: "3.",
           description: "Pentacam：360全面角膜結構測量",
         },
         {
-          number: "5.",
+          number: "4.",
           description: "淚水分泌測試",
         },
 
         {
-          number: "6.",
+          number: "5.",
           description: "Specular Microscopy內皮細胞的密度測量",
         },
         {
-          number: "7.",
+          number: "6.",
           description: "OCT：黃斑及視網膜掃瞄 (如有需要)",
         },
         {
-          number: "8.",
+          number: "7.",
           description: "SLO：360全面眼底檢查",
         },
         {
-          number: "9.",
+          number: "8.",
           description: "醫生會診：眼睛狀況評估及矯視方案建議",
         },
       ],
