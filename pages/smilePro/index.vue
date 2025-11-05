@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="smilePro">
+       
         <Header />
         <Navbar />
         <MainBanner />
@@ -406,10 +407,11 @@ import Navbar from "@/components/commom/new_head/Navbar.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import footers from "@/components/commom/foot/footers.vue";
 
+
 import MainBanner from "@/components/content/service/SMILEPRO/MainBanner.vue";
 
 export default {
-    components: { Header, Navbar, Footer, MainBanner, footers },
+    components: { Header, Navbar, Footer, MainBanner, footers, },
 
     data() {
         return {
@@ -714,7 +716,9 @@ export default {
 };
 </script>
 
+
 <style lang="scss" scoped>
+
 .smileProBtn {
     width: 227.5px;
     height: 45.7px;

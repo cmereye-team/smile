@@ -1,5 +1,6 @@
 <template>
-  <div class="lasik">
+  <div class="lasik simleProV2">
+      <topNotice></topNotice>
     <HeadV2 />
 
     <div class="top-btnV2" @click="scrollToTopV2">
@@ -1203,6 +1204,7 @@ import share from "@/components/content/service/ICL-new/share.vue";
 
 import drow from "@/components/content/service/SmileProV2/drow.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
+import topNotice from '@/components/Publice/topNotice.vue'
 export default {
   components: {
     Head,
@@ -1220,6 +1222,7 @@ export default {
     HeadV2,
     drow,
     UserShare,
+    topNotice,
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -1620,6 +1623,14 @@ export default {
 </script>
 
 <style>
+.simleProV2 .head-bg {
+    top:54px !important;
+}
+
+.simleProV2 .headV2 {
+    top:37px !important;
+}
+
 body {
   overflow-x: hidden;
   background: white;
@@ -1662,7 +1673,7 @@ i {
 @media screen and (max-width: 1140px) {
   .smile-NewBanner {
     padding: 0 15px;
-    margin-top: 80px;
+    margin-top: 150px;
     height: 203px;
     position: relative;
     img {
@@ -4390,7 +4401,7 @@ i {
 
   .smile-NewBanner {
     padding: 0px;
-    margin-top: 159px;
+    margin-top: 213px;
     height: 529px;
     position: relative;
     img {

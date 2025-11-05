@@ -1,5 +1,6 @@
 <template>
   <div class="head-bg">
+      
     <div class="headV2 mbShow">
       <HeadLeftV2 />
       <HeadMobileV2 />
