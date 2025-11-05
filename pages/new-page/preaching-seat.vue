@@ -321,44 +321,6 @@
             title="希瑪眼科十一月旺角預約日歷"
           />
         </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25101.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25101.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25101.png"
-            alt="希瑪眼科十月中環預約"
-            title="希瑪眼科十月中環"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25102.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25102.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/seat_calendar_25102.png"
-            alt="希瑪眼科十月旺角預約"
-            title="希瑪眼科十月旺角"
-          />
-        </picture>
       </div>
     </div>
     <businessHours />
