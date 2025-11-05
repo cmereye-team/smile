@@ -709,7 +709,7 @@ module.exports = {
           text3: "2023年，STAAR Surgical公司對希瑪眼科集團的",
           text4: "醫療技術、手術品質及服務作出認可",
           text5: "宣佈將希瑪微笑矯視中心設立為",
-          text6: "首間官方認證EVO ICL 國際培訓中心",
+          text6: "全港首間及唯一官方認證EVO ICL 國際培訓中心",
           text7:
             "希瑪微笑矯視中心往後會繼續致力於ICL方面發展，成為大眾選擇ICL植入式隱形眼鏡的首選!",
           text8:

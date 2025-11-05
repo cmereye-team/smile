@@ -399,6 +399,12 @@ export const $router = [
     title: "科普知識",
     component: resolve(`pages/new-page/blog_news/_id.vue`),
   },
+    {
+    path: `/smileProCare`,
+    name: `smileProCare`,
+    title: "SMILE Pro Care限時禮品限量版便攜式咖啡機",
+    component: resolve(`pages/smileProCare/index.vue`),
+  },
   // // 活动route
   // {
   //   path: '/icl-event',
