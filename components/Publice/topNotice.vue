@@ -5,9 +5,9 @@
 <div>
     <div class="banner-container">
   <!-- 移动端按钮：固定左侧，仅小屏显示 -->
-  <a href="/smileProCare" class="btn-mobile">
+ <nuxt-link to="/smileProCare" class="btn-mobile">
     點擊了解詳情
-  </a>
+  </nuxt-link>
   
   <!-- 中间容器：PC端包裹文字+按钮并居中，移动端仅包裹文字 -->
   <div class="content-wrapper">
@@ -19,9 +19,9 @@
     </div>
     
     <!-- PC端按钮：仅大屏显示，紧跟文字形成整体 -->
-    <a href="/smileProCare" class="btn-desktop">
+    <nuxt-link to="/smileProCare" class="btn-desktop">
       點擊了解詳情
-    </a>
+    </nuxt-link>
   </div>
 </div>
 

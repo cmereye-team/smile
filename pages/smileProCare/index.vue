@@ -86,7 +86,7 @@
             <img
               src="https://statichk.cmermedical.com/smile/smileProCare/banner-img2.png"
               alt="下滑指示"
-              class="smile-banner__scroll-icon"
+              class="smile-banner__scroll-icon animate-bounce"
             />
           </div>
         </div>
@@ -967,7 +967,9 @@ i {
 .changehang {
   display: none;
 }
-
+.smile-banner__title {
+font-family: Poppins, sans-serif;
+}   
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
@@ -4517,6 +4519,7 @@ i {
   .smile-banner__gift-text {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     position: absolute;
     top: 50%;
@@ -4549,8 +4552,9 @@ i {
     flex-direction: column;
     align-items: center;
     position: absolute;
+    gap:24px;
     left: 50%;
-    bottom: 16px;
+    bottom: 42px;
     transform: translateX(-50%);
   }
 
