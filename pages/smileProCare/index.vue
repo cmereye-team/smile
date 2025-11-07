@@ -276,18 +276,7 @@
     <!-- start SMILE Pro Care 專享福利-->
     <section class="benefits-section">
       <div class="benefits-section__wrapper">
-        <img
-          class="benefits-section__background"
-          decoding="async"
-          alt="SMILE Pro Care 專享福利背景"
-          loading="lazy"
-          srcset="
-            https://statichk.cmermedical.com/smile/smileProCare/s4-bg-mobile.webp 400w,
-            https://statichk.cmermedical.com/smile/smileProCare/s4-bg-mobile.webp 768w,
-            https://statichk.cmermedical.com/smile/smileProCare/s4-bg-pc.webp
-          "
-          sizes="(max-width: 992px) 100vw, 1216px"
-        />
+       
 
         <div class="benefits-section__content">
           <div class="benefits-section__header">
@@ -4826,6 +4815,7 @@ font-family: Poppins, sans-serif;
 
 .benefits-section__wrapper {
   position: relative;
+  
 }
 
 .benefits-section__background {
@@ -4906,18 +4896,7 @@ font-family: Poppins, sans-serif;
   justify-content: center;
 }
 
-.benefits-section__gift-card {
-  aspect-ratio: 1 / 1;
-  height: 100%;
-  border: 1px solid #f5f5f7;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-//   background: url(https://statichk.cmermedical.com/smile/smileProCare/1.gif);
-//   background-size: 100% 100%;
-}
+
 
 .benefits-section__gift-info {
   position: absolute;
@@ -4972,6 +4951,11 @@ font-family: Poppins, sans-serif;
 
 /* 桌面端样式 (768px及以上) */
 @media (min-width: 768px) {
+  .benefits-section__wrapper{
+        height: 798px;
+    background: linear-gradient(96deg, #DEDBDE 60.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray 1039.304px -71px / 46.042% 110.777% no-repeat;
+
+  }
   .benefits-section__content {
     top: 144px;
     left: 389px;
@@ -5007,8 +4991,21 @@ font-family: Poppins, sans-serif;
     height: 74px;
     font-size: 24px;
   }
+  .benefits-section__gift-card {
+
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+//   background: url(https://statichk.cmermedical.com/smile/smileProCare/1.gif);
+//   background-size: 100% 100%;
+}
 
   .benefits-section__gift-card {
+    aspect-ratio: 1 / 1;
+  height: 100%;
+  border: 1px solid #f5f5f7;
+  border-radius: 50%;
+  position: absolute;
     aspect-ratio: 1 / 1;
     height: 100%;
     right: 27px;
@@ -5017,7 +5014,7 @@ font-family: Poppins, sans-serif;
   }
 
   .benefits-section__gift-info--left {
-    left: 8px;
+    left: 16px;
     top: 321px;
     bottom: auto;
   }
@@ -5047,6 +5044,10 @@ font-family: Poppins, sans-serif;
 
 /* 中等屏幕调整 (992px以下) */
 @media (max-width: 768px) {
+     .benefits-section__wrapper{
+       
+    background: linear-gradient(179deg, #DEDBDE 30.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray bottom / 100% auto no-repeat;
+  }
   .benefits-section__benefit-item {
     width: 155px;
     height: 155px;
@@ -5063,18 +5064,48 @@ font-family: Poppins, sans-serif;
     top: 0;
     right: 10px;
   }
-  .benefits-section__benefit-badge {
-  }
+    
+
 
   .benefits-section__gift-card {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  border: 1px solid #f5f5f7;
+  border-radius: 50%;
     width: 90%;
     height: auto;
     aspect-ratio: 1 / 1;
+    position: relative;
+    margin-top: 50px;
+    pointer-events: none;
+            margin-left: auto;
+        margin-right: AUTO;
   }
 
   .benefits-section__limited-badge {
-    right: 0;
-    top: 5px;
+    right: 5%;
+    top: 0;
+    pointer-events: auto;
+    position: absolute;
+  }
+  
+  .benefits-section__gift-info--left{
+    bottom: 41%;
+    left: 16px;
+  }
+  .benefits-section__gift-info--right{
+    right: 32px;
+    bottom: 28%;
+  }
+
+  .benefits-section__content{
+
+ 
+
+    text-align: center;
+    // background: linear-gradient(180deg, #C9C8CD 0%, #DEDEDE 48.56%, #DEDCDE 100%);
+    width: 100%;
+    position: relative;
   }
 }
 @media (max-width: 350px) {

@@ -1,24 +1,10 @@
 <template>
   <div class="lasik">
-    <HeadV2 />
+   
+  <HeadV2 />
+   
 
-    <div class="top-btnV2" @click="scrollToTopV2">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="36"
-        height="36"
-        viewBox="0 0 36 36"
-        fill="none"
-      >
-        <circle cx="18" cy="18" r="17.5" stroke="#4570B6" />
-        <path d="M12.24 12.96H23.76" stroke="#4570B6" />
-        <path
-          d="M12.8159 24.7681L17.9999 16.9921L23.1839 24.7681"
-          stroke="#4570B6"
-          stroke-linecap="round"
-        />
-      </svg>
-    </div>
+   
 
     <div class="smile-banner">
       <img
@@ -100,7 +86,7 @@
             <img
               src="https://statichk.cmermedical.com/smile/smileProCare/banner-img2.png"
               alt="下滑指示"
-              class="smile-banner__scroll-icon"
+              class="smile-banner__scroll-icon animate-bounce"
             />
           </div>
         </div>
@@ -473,10 +459,28 @@
     <FooterV2 />
  
     <FooterMobile />
+     <div class="top-btnV2" @click="scrollToTopV2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        fill="none"
+      >
+        <circle cx="18" cy="18" r="17.5" stroke="#4570B6" />
+        <path d="M12.24 12.96H23.76" stroke="#4570B6" />
+        <path
+          d="M12.8159 24.7681L17.9999 16.9921L23.1839 24.7681"
+          stroke="#4570B6"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
   </div>
 </template>
 <script>
 import Head from "@/components/Publice/Head.vue";
+import topNotice from '@/components/Publice/topNotice.vue'
 import HeadV2 from "@/components/Publice/HeadeV2.vue";
 
 import Footer from "@/components/commom/new_foot/Footer.vue";
@@ -497,6 +501,7 @@ import drow from "@/components/content/service/SmileProV2/drow.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 export default {
   components: {
+    topNotice,
     Head,
     Footer,
     businessHours,
@@ -784,13 +789,7 @@ export default {
     };
   },
   watch: {
-    interval(newVal) {
-      // 如果定時器正在運行，重新啟動以應用新的間隔
-      if (this.timer) {
-        this.stopRandom();
-        this.startRandom();
-      }
-    }
+   
   },
   methods: {
      generateRandom() {
@@ -916,7 +915,7 @@ export default {
     }
 
     this.generateRandom();
-    this.startRandom();
+ 
 
     // 启动计时
     this.startTimer();
@@ -935,6 +934,10 @@ export default {
   },
   beforeUnmount(){
     this.stopRandom();
+
+    // 清理動態添加的樣式
+
+  
   }
 };
 </script>
@@ -945,6 +948,7 @@ body {
   overflow-x: hidden;
   background: white;
 }
+
 </style>
 <style lang="scss" scoped>
 :deep(.mt-20) {
@@ -963,7 +967,9 @@ i {
 .changehang {
   display: none;
 }
-
+.smile-banner__title {
+font-family: Poppins, sans-serif;
+}   
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
@@ -1034,6 +1040,7 @@ i {
 
 @media screen and (max-width: 1140px) {
   .smile-NewBanner {
+    // 80
     margin-top: 80px;
     position: relative;
     img {
@@ -4407,7 +4414,7 @@ i {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    margin-top: 159px;
+    margin-top:159px;// 159px;
   }
 
   .smile-banner__image {
@@ -4512,6 +4519,7 @@ i {
   .smile-banner__gift-text {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     position: absolute;
     top: 50%;
@@ -4544,8 +4552,9 @@ i {
     flex-direction: column;
     align-items: center;
     position: absolute;
+    gap:24px;
     left: 50%;
-    bottom: 16px;
+    bottom: 42px;
     transform: translateX(-50%);
   }
 

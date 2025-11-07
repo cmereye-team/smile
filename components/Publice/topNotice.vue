@@ -10,7 +10,7 @@
   </nuxt-link>
   
   <!-- 中间容器：PC端包裹文字+按钮并居中，移动端仅包裹文字 -->
-  <div class="content-wrapper">
+  <nuxt-link to="/smileProCare" class="content-wrapper">
     <!-- 文字区域 -->
     <div class="text-container">
       <p class="promo-text mobile-scroll">
@@ -19,10 +19,10 @@
     </div>
     
     <!-- PC端按钮：仅大屏显示，紧跟文字形成整体 -->
-    <nuxt-link to="/smileProCare" class="btn-desktop">
+    <div class="btn-desktop">
       點擊了解詳情
-    </nuxt-link>
-  </div>
+    </div>
+  </nuxt-link>
 </div>
 
 
