@@ -1,9 +1,9 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-05 17:31:45
- * @LastEditTime: 2025-09-08 09:24:57
+ * @LastEditTime: 2025-11-10 10:53:50
  * @FilePath: /components/content/icl/ActivityButton.vue
- * @Description: 悬浮引流，用于在首页和ICL页面跳转到活动页
+ * @Description: 悬浮引流，用于在首页和ICL页面跳转到活动页。2025-11-10活动已过期取消引用。
 -->
 <template>
   <div class="activity z-[100] relative">
