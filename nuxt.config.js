@@ -36,16 +36,6 @@ export default {
         src: "https://unpkg.com/vue-i18n/dist/vue-i18n.js",
       },
       {
-        src: "https://demo.leeapps.dev/wati-capi.sdk.js",
-        "data-phone": "+85269408569",
-        "data-width": "60",
-        "data-height": "60",
-        "data-welcome": "Hello, (WA-01)我想了解更多矯視資訊",
-        "data-end": "",
-        "data-site": "https://cmersmile.com",
-      },
-
-      {
         src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js",
       },
       {
@@ -117,7 +107,7 @@ export default {
     { src: "~/plugins/vue-swiper.js", ssr: false },
     { src: "~plugins/element-ui/element-ui.js", ssr: false },
     { src: "~plugins/wow.js", ssr: false },
-    { src: '~/plugins/gsap.js', ssr: false },
+    { src: "~/plugins/gsap.js", ssr: false },
     { src: "./router/beforeEach.js", ssr: false },
   ],
 
@@ -130,12 +120,19 @@ export default {
     "@nuxtjs/tailwindcss",
   ],
   schemaOrg: {
-    canonicalHost: 'https://smile.hkcmereye.com'  // 生产环境域名
+    canonicalHost: "https://smile.hkcmereye.com", // 生产环境域名
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ["@nuxtjs/i18n", i18n, "@nuxtjs/gtm", "@nuxtjs/sitemap", "@nuxtjs/axios", "nuxt-jsonld"],
+    [
+      "@nuxtjs/i18n",
+      i18n,
+      "@nuxtjs/gtm",
+      "@nuxtjs/sitemap",
+      "@nuxtjs/axios",
+      "nuxt-jsonld",
+    ],
   ],
 
   workbox: {
@@ -178,8 +175,8 @@ export default {
     terser: {
       terserOptions: {
         compress: {
-          drop_console: true,   // 去掉 console.*
-          drop_debugger: true,  // 去掉 debugger
+          drop_console: true, // 去掉 console.*
+          drop_debugger: true, // 去掉 debugger
         },
       },
     },
