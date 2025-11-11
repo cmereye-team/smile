@@ -224,7 +224,7 @@ export default {
           img: "https://statichk.cmermedical.com/smile/medical-equipment/8d48fd9571a47602.webp",
           name: [
             this.$t("medical_equipment.content13.name1"),
-            this.$t("medical_equipment.content13.name2"),
+            // this.$t("medical_equipment.content13.name2"),
           ],
           remark: this.$t("medical_equipment.content13.remark"),
           source: this.$t("medical_equipment.content13.source"),
@@ -257,12 +257,13 @@ export default {
           img: "https://static.cmereye.com/imgs/2024/05/a01cb16a551eb1ce.png",
           name: [
             this.$t("medical_equipment.content16.name1"),
-            this.$t("medical_equipment.content16.name2"),
+            // this.$t("medical_equipment.content16.name2"),
           ],
           remark: this.$t("medical_equipment.content16.remark"),
           source: this.$t("medical_equipment.content16.source"),
           isShow: false,
         },
+        
         {
           id: 17,
           img: "https://static.cmereye.com/imgs/2024/05/c7a828125d9153ac.png",

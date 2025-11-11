@@ -321,6 +321,20 @@
             title="希瑪眼科十一月旺角預約日歷"
           />
         </picture>
+ 
+        
+          <img
+            src="https://statichk.cmermedical.com/cmermedical/image/20251110/CT_202512.webp"
+            alt="希瑪眼科十二月中環預約日歷"
+            title="希瑪眼科十二月中環預約日歷"
+          />
+         <img
+            src="https://statichk.cmermedical.com/cmermedical/image/20251110/MK_202512.webp"
+            alt="希瑪眼科十二月旺角預約日歷"
+            title="希瑪眼科十二月旺角預約日歷"
+          />
+
+        
       </div>
     </div>
     <businessHours />
@@ -641,6 +655,13 @@ export default {
           "2025-11-12",
           "2025-11-19",
           "2025-11-26",
+
+          "2025-12-03",
+          "2025-12-10",
+          "2025-12-17",
+          "2025-12-24",
+          "2025-12-31",
+
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -649,6 +670,13 @@ export default {
           "2025-11-15",
           "2025-11-22",
           "2025-11-29",
+
+          "2025-12-06",
+          "2025-12-13",
+          "2025-12-20",
+          "2025-12-27",
+
+        
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -678,6 +706,15 @@ export default {
           "2025-11-22",
           "2025-11-24",
           "2025-11-29",
+
+          "2025-12-02",
+          "2025-12-06",
+          "2025-12-08",
+          "2025-12-13",
+          "2025-12-16",
+          "2025-12-20",
+          "2025-12-22",
+          "2025-12-27",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -695,6 +732,13 @@ export default {
           "2025-11-11",
           "2025-11-17",
           "2025-11-25",
+
+          "2025-12-01",
+          "2025-12-09",
+          "2025-12-15",
+          "2025-12-23",
+          "2025-12-29",
+
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -1401,6 +1445,17 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .Banner {
+    position: relative;
+    z-index: 2;
+  }
+  .Banner .banner-text-default p:nth-child(1){
+    font-size: 20px;
+    line-height: 1;
+  }
+  .Banner .banner-text-default p:nth-child(2){
+    font-size: 16px;
+  }
   .dialog-win {
     position: fixed;
     top: 0;
@@ -1475,12 +1530,12 @@ export default {
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/d226e2e185d53c48.png")
       no-repeat;
-    background-size: 100% 100%;
-    height: 84.6vw;
-    margin: 24px 30px;
-    border-radius: 44px;
+    background-size:cover;
+    background-position: center;
+    height: 30vw;
+    margin: 20px 20px 0 20px;
+    border-radius: 10px;
     margin-top: 80px;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -1514,8 +1569,9 @@ export default {
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 115px 0 40px;
+    z-index: -1;
 
     & > div {
       display: flex;
