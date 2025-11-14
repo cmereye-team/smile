@@ -498,9 +498,9 @@
         </a>
 
         <div class="new-Footer-v2-addressTime">
-          <h4 class="new-Footer-v2-addressTime-title">
+          <h2 class="new-Footer-v2-addressTime-title">
             {{ $t("home.footer.businessHours.title") }}
-          </h4>
+          </h2>
           <div class="new-Footer-v2-addressTime-item">
             <div>{{ $t("home.footer.businessHours.weekday") }}</div>
             <div>9:00-19:00</div>
@@ -522,7 +522,7 @@
         <div class="new-Footer-v2-loction">
           <div class="new-Footer-v2-loction-item">
             <div>
-              <h4>{{ $t("home.footer.businessHours.center") }}</h4>
+              <h2>{{ $t("home.footer.businessHours.center") }}</h2>
               <a
                 ><img
                   src="https://statichk.cmermedical.com/smile/new-footerV2-address-pc.avif"
@@ -537,7 +537,7 @@
 
           <div class="new-Footer-v2-loction-item">
             <div>
-              <h4>{{ $t("home.footer.businessHours.mongKok") }}</h4>
+              <h2>{{ $t("home.footer.businessHours.mongKok") }}</h2>
               <a
                 ><img
                   src="https://statichk.cmermedical.com/smile/new-footerV2-address-pc.avif"

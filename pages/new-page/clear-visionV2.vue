@@ -2363,7 +2363,7 @@ i {
                 CLEAR-Vision</a
               >
 
-              <h3>老花矯視</h3>
+              <h1>老花矯視</h1>
               <p>
                 希瑪微笑矯視中心主要提供兩種<br
                   class="d-lg-none"
@@ -2423,7 +2423,7 @@ i {
     <!-- 什麼是老花？ -->
     <section class="WhatLaoHua">
       <div class="new-container container WhatLaoHuaBox">
-        <h3>什麼是老花？</h3>
+        <h2>什麼是老花？</h2>
         <div class="WhatLaoHuaBox-text">
           <p>
             隨著年紀增長，人們可能會遇到老花的問題，這是一種影響近視力的視力狀況。由於在眼睛中的晶狀體彈性降低，使眼睛調節焦距的能力下降，導致<span >看近處物體時會出現視覺模糊</span>。
@@ -2472,7 +2472,7 @@ i {
                 <p>• 39歲以上有老花</p>
                 <p>• 同時有近視/遠視/散光問題</p> 
               </div>
-              <h4>CMER CLEAR-Vision</h4>
+              <h3>CMER CLEAR-Vision</h3>
               <p class="CorrectionProgram-Box-hide-item-bottom-text" id="CorrectionProgramTwo">
                 坊間稱之為<span>人工晶體置換術</span>。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，
                 <span >一次過解決近視、遠視、散光、老花</span
@@ -2494,7 +2494,7 @@ i {
                 <p>• 同時有近視/遠視問題</p>
                 <p>• 未有白內障</p>
               </div>
-              <h4>ICL Viva V6</h4>
+              <h3>ICL Viva V6</h3>
               <p class="CorrectionProgram-Box-hide-item-bottom-text">
                 是有晶體眼後房型植入式隱形眼鏡植入手術的一種，而ICL Viva (ICL
                 V6)
@@ -2537,7 +2537,7 @@ i {
 
     <!-- 人工晶體置換術的好處 -->
     <section class="icl-Good">
-      <h3 class="icl-Good-title">人工晶體置換術的好處</h3>
+      <h2 class="icl-Good-title">人工晶體置換術的好處</h2>
       <div class="icl-Good-List">
         <div
           class="icl-Good-List-item"
@@ -2545,7 +2545,7 @@ i {
           :key="index"
         >
           <img :src="item.img" alt="" />
-          <h4>{{ $t(item.title) }}</h4>
+          <h3>{{ $t(item.title) }}</h3>
           <div v-if="!isMobile">
             <p v-for="(i, idx) in item.text" :key="idx">{{ $t(i) }}</p>
           </div>
@@ -2558,9 +2558,9 @@ i {
 
     <!-- 為何選擇希瑪? -->
     <!-- <section class="icl-WhatChoose">
-      <h3 class="icl-WhatChoose-title">
+      <h2 class="icl-WhatChoose-title">
         {{ $t("Correct.newIcl.section2.title") }}
-      </h3>
+      </h2>
       <div class="icl-WhatChoose-content-one container new-container">
         <div class="icl-WhatChoose-content-one-img">
           <img
@@ -2613,10 +2613,10 @@ i {
         sizes=" (max-width: 992px) 100vw,1216px"
       />
       <div class="visionBattle-Box" id="visionBattle-Box-list">
-        <h3>老花矯視技術好處對比</h3>
+        <h2>老花矯視技術好處對比</h2>
         <div class="visionBattle-Box-list">
           <div class="visionBattle-Box-list-item">
-            <h4>CMER CLEAR-Vision</h4>
+            <h3>CMER CLEAR-Vision</h3>
             <div class="visionBattle-Box-list-item-content">
               <p>
                 <img
@@ -2683,7 +2683,7 @@ i {
           </div>
 
           <div class="visionBattle-Box-list-item">
-            <h4>ICL Viva V6</h4>
+            <h3>ICL Viva V6</h3>
             <div class="visionBattle-Box-list-item-content">
               <p>
                 <img
@@ -2852,7 +2852,7 @@ i {
 
       <div class="SuitableObject-Box container">
         <div class="SuitableObject-Box-title">
-          <h3>合適對象</h3>
+          <h2>合適對象</h2>
           <p>
             無論追求效率還是悠閒自在，<br
               class="d-none d-lg-block"
@@ -2930,7 +2930,7 @@ i {
 
     <section class="question-mencare">
       <div class="container">
-        <h3 class="publicTitle-mencare">常見問題</h3>
+        <h2 class="publicTitle-mencare">常見問題</h2>
         <div class="question-section-Box">
           <div id="accordion">
             <div class="card collapseActive expanded">
