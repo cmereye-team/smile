@@ -1,13 +1,11 @@
 
-<style>
+<style lang="scss" scoped>
 body {
   overflow-x: hidden;
 }
 a {
   text-decoration: none;
 }
-</style>
-<style lang="scss" scoped>
 :deep(.mt-20) {
   margin-top: 0;
 }
@@ -233,7 +231,7 @@ i {
             line-height: 109.4%;
             text-decoration: none;
           }
-          h3 {
+          h1 {
             color: #4570b6;
             text-align: center;
             font-family: "Noto Sans TC";
@@ -242,10 +240,6 @@ i {
             font-weight: 400;
             line-height: 1.8;
           }
-          & > p:nth-of-type(1) {
-            // margin-top: 2.56vw;
-          }
-
           p {
             color: #6d6e71;
             text-align: center;
@@ -349,7 +343,7 @@ i {
     margin-top: 10.26vw;
     .WhatLaoHuaBox {
       text-align: center;
-      h3 {
+      h2 {
         color: #4570b6;
         font-family: "Noto Sans TC";
         font-size: 5.13vw;
@@ -488,7 +482,7 @@ i {
                 letter-spacing: 0.62vw;
               }
             }
-            h4 {
+            h3 {
               text-align: center;
               color: #4570b6;
               font-family: "Poppins", sans-serif;
@@ -653,7 +647,7 @@ i {
       z-index: -1;
     }
     .visionBattle-Box {
-      h3 {
+      h2 {
         text-align: center;
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -665,7 +659,7 @@ i {
 
       .visionBattle-Box-list {
         .visionBattle-Box-list-item {
-          h4 {
+          h3 {
             display: table;
             margin: 7.69vw auto 0;
             text-align: center;
@@ -750,7 +744,7 @@ i {
             z-index: -1;
           }
 
-          h4 {
+          h3 {
             margin-top: 20.51vw;
           }
           .visionBattle-Box-list-item-content {
@@ -846,7 +840,7 @@ i {
           height: 46.41vw;
         }
 
-        h3 {
+        h2 {
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: 5.13vw;
@@ -1227,7 +1221,7 @@ i {
             line-height: 109.4%;
             text-decoration: none;
           }
-          h3 {
+          h1 {
             color: #4570b6;
             text-align: center;
             font-family: "Noto Sans TC";
@@ -1236,10 +1230,6 @@ i {
             font-weight: 400;
             line-height: 1.8;
           }
-          & > p:nth-of-type(1) {
-            // margin-top: 30px;
-          }
-
           p {
             color: #6d6e71;
             text-align: center;
@@ -1342,7 +1332,7 @@ i {
       display: flex;
       justify-content: center;
       gap: clamp(61.5px, 6.41vw, 123px);
-      h3 {
+      h2 {
         color: #4570b6;
         font-family: "Noto Sans TC";
         font-size: clamp(15px, 1.56vw, 30px);
@@ -1476,7 +1466,7 @@ i {
                 letter-spacing: clamp(2px, 0.21vw, 4px);
               }
             }
-            h4 {
+            h3 {
               text-align: center;
               color: #4570b6;
               font-family: "Poppins", sans-serif;
@@ -1658,8 +1648,8 @@ i {
       z-index: -1;
     }
     .visionBattle-Box {
-               scroll-margin-top: 120px;
-      h3 {
+      scroll-margin-top: 120px;
+      h2 {
         text-align: center;
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -1677,7 +1667,7 @@ i {
 
         .visionBattle-Box-list-item {
           height: clamp(433px, 45.1vw, 866px);
-          h4 {
+          h3 {
             padding-top: clamp(7px, 0.73vw, 14px);
             padding-bottom: clamp(7px, 0.73vw, 14px);
             margin-top: clamp(11px, 1.15vw, 22px);
@@ -1721,7 +1711,7 @@ i {
           }
         }
         & > .visionBattle-Box-list-item:nth-child(1) {
-          h4 {
+          h3 {
             margin-left: auto;
             background: linear-gradient(
               90deg,
@@ -1768,7 +1758,7 @@ i {
             z-index: -1;
           }
 
-          h4 {
+          h3 {
             text-align: left;
             padding-left: clamp(16px, 1.67vw, 32px);
             background: linear-gradient(
@@ -1895,11 +1885,10 @@ i {
           background-repeat: no-repeat;
           width: clamp(112px, 11.67vw, 224px);
           height: clamp(130.5px, 13.59vw, 261px);
-
           z-index: 5;
         }
 
-        h3 {
+        h2 {
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: clamp(15px, 1.56vw, 30px);
@@ -2852,7 +2841,7 @@ i {
 
       <div class="SuitableObject-Box container">
         <div class="SuitableObject-Box-title">
-          <h2>合適對象</h2>
+          <h2>老花矯視的合適對象</h2>
           <p>
             無論追求效率還是悠閒自在，<br
               class="d-none d-lg-block"
@@ -2930,7 +2919,7 @@ i {
 
     <section class="question-mencare">
       <div class="container">
-        <h2 class="publicTitle-mencare">常見問題</h2>
+        <h2 class="publicTitle-mencare">老花矯視的常見問題</h2>
         <div class="question-section-Box">
           <div id="accordion">
             <div class="card collapseActive expanded">

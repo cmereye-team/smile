@@ -66,8 +66,6 @@
         bottom: -10px;
         z-index: 1;
       }
-      .new-Footer-v2-logo {
-      }
       .new-Footer-v2-addressTime {
         margin-top: 34px;
         .new-Footer-v2-addressTime-title {
@@ -119,7 +117,7 @@
         .new-Footer-v2-loction-item {
           & > div {
             position: relative;
-            h4 {
+            strong {
               color: #4570b6;
               font-family: "Noto Sans";
               font-size: 18px;
@@ -498,9 +496,9 @@
         </a>
 
         <div class="new-Footer-v2-addressTime">
-          <h2 class="new-Footer-v2-addressTime-title">
+          <strong class="new-Footer-v2-addressTime-title">
             {{ $t("home.footer.businessHours.title") }}
-          </h2>
+          </strong>
           <div class="new-Footer-v2-addressTime-item">
             <div>{{ $t("home.footer.businessHours.weekday") }}</div>
             <div>9:00-19:00</div>
@@ -522,7 +520,7 @@
         <div class="new-Footer-v2-loction">
           <div class="new-Footer-v2-loction-item">
             <div>
-              <h2>{{ $t("home.footer.businessHours.center") }}</h2>
+              <strong>{{ $t("home.footer.businessHours.center") }}</strong>
               <a
                 ><img
                   src="https://statichk.cmermedical.com/smile/new-footerV2-address-pc.avif"
@@ -537,7 +535,7 @@
 
           <div class="new-Footer-v2-loction-item">
             <div>
-              <h2>{{ $t("home.footer.businessHours.mongKok") }}</h2>
+              <strong>{{ $t("home.footer.businessHours.mongKok") }}</strong>
               <a
                 ><img
                   src="https://statichk.cmermedical.com/smile/new-footerV2-address-pc.avif"
