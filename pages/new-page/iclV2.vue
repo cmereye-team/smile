@@ -3824,7 +3824,6 @@ i {
         </div>
       </div>
     </div>
-
     <!-- 中心介绍 -->
     <section class="smile-newCenter">
       <div class="container new-container mx-auto">
@@ -3864,7 +3863,7 @@ i {
         </div>
       </div>
     </section>
-
+    <Activity2025 />
     <!-- 為何選擇希瑪? -->
     <section class="icl-WhatChoose">
       <h3 class="icl-WhatChoose-title">
@@ -4552,6 +4551,7 @@ import film from "@/components/content/service/ICL-new/film.vue";
 import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
+import Activity2025 from "@/components/content/icl/Activity2025.vue";
 export default {
   components: {
     Head,
@@ -4569,6 +4569,7 @@ export default {
     HeadV2,
     goTop,
     UserShare,
+    Activity2025,
   },
   head() {
     if (this.$i18n.locale === "en") {
