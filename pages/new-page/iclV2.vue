@@ -4034,7 +4034,7 @@ i {
     </section>
 
     <!-- 过程和介绍vedio -->
-    <section class="icl-introVedio">
+    <section class="icl-introVedio overflow-hidden">
       <div class="icl-introVedio-intro new-container">
         <div class="icl-introVedio-intro-number">
           <!-- 左侧数字列表 -->

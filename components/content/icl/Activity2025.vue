@@ -1,13 +1,13 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-11-19 13:47:22
- * @LastEditTime: 2025-11-19 20:54:22
+ * @LastEditTime: 2025-11-20 10:23:45
  * @FilePath: /components/content/icl/Activity2025.vue
  * @Description: ICL2025年终活动
 -->
 <template>
   <section
-    class="activity snow-container bg-[#E6F8FD] text-[#6D6E71] border-[#5BC6BF] border-t-[12px] bg-[url(https://statichk.cmermedical.com/smile/activity/activity-christmas-tree.png)] bg-no-repeat"
+    class="activity relative snow-container bg-[#E6F8FD] text-[#6D6E71] border-[#5BC6BF] border-t-[12px] bg-[url(https://statichk.cmermedical.com/smile/activity/activity-christmas-tree.png)] bg-no-repeat"
   >
     <div class="activity-bg relative">
       <div
@@ -16,10 +16,10 @@
         <div class="[grid-area:text] mb-4 lg:mb-12 lg:pt-5">
           <div class="flex relative gap-4 items-center mb-5 lg:mb-12">
             <div
-              class="size-[27.692vw] lg:size-[8.438vw] bg-white border-[#5BC6BF] text-[#4AA2AA] border-1 rounded-full shadow-[2.6px_2.6px_0_#5BC6BF] lg:shadow-[4px_4px_0_#5BC6BF] lg:absolute lg:-top-[128px] lg:-left-[8.888vw]"
+              class="size-[27.692vw] lg:size-40 bg-white border-[#5BC6BF] text-[#4AA2AA] border-1 rounded-full shadow-[2.6px_2.6px_0_#5BC6BF] lg:shadow-[4px_4px_0_#5BC6BF] lg:absolute lg:-top-[128px] lg:-left-[clamp(8.75rem,-2.6rem_+_15.93vw,11rem)]"
             >
               <div
-                class="flex flex-col justify-center items-center text-xl lg:text-[1.563vw] font-black -rotate-[12deg] size-full"
+                class="flex flex-col justify-center items-center text-[5.128vw] lg:text-3xl leading-[6.154vw] lg:leading-9 font-black -rotate-[12deg] size-full"
               >
                 <div><span class="font-en">2025</span>年</div>
                 <div>最後驚喜</div>
@@ -74,7 +74,7 @@
           <a
             target="_blank"
             href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-            class="bg-[#5BC6BF] text-white flex justify-center items-center w-fit py-2 px-8 lg:py-3 lg:px-14 font-black text-xl lg:text-4xl leading-[1.75] tracking-wider rounded-[100px]"
+            class="bg-[#5BC6BF] text-white flex justify-center items-center w-fit py-4 px-8 lg:py-6 lg:px-14 font-black text-xl lg:text-4xl tracking-wider rounded-[100px]"
           >
             <span>查詢詳情</span>
             <svg
@@ -103,7 +103,7 @@
             如有任何爭議，希瑪醫療控股有限公司保留最終決定權
           </p>
         </div>
-        <div class="[grid-area:image] relative mb-4 lg:mb-0 activity-image">
+        <div class="[grid-area:image] relative mb-4 xl:mb-0 activity-image">
           <img
             src="https://statichk.cmermedical.com/smile/activity/activity-icl-cup.png"
             alt=""
@@ -118,7 +118,7 @@
               送
             </div>
             <div
-              class="flex flex-col text-sm lg:text-xl -translate-x-[40%] -translate-y-[20%] md:-translate-x-[30%] lg:-translate-x-[40%] lg:-translate-y-[80%]"
+              class="flex flex-col text-sm lg:text-xl -translate-x-[40%] -translate-y-[20%] md:-translate-x-[30%] lg:translate-x-[clamp(-2.5rem,-6.071rem_+_13.39vw,-10rem)] lg:-translate-y-[80%]"
             >
               <span>先到先得</span>
               <span>送完即止</span>
@@ -136,7 +136,7 @@
       </div>
     </div>
     <!-- 底部 -->
-    <div class="activity-foot h-[60px] lg:h-[92px] relative"></div>
+    <div class="activity-foot h-[60px] lg:h-[4.792vw] relative"></div>
   </section>
 </template>
 <style lang="scss" scoped>
@@ -242,6 +242,16 @@
     }
   }
 }
+@media screen and (min-width: 1024px) {
+  .activity {
+    &-image {
+      &::after {
+        right: -8%;
+        bottom: 12%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1139px) {
   .activity {
     background-position: -20px calc(100% - 108px);
@@ -253,7 +263,7 @@
 }
 @media screen and (min-width: 1140px) {
   .activity {
-    background-position: 10vw 60px;
+    background-position: #{'clamp(-5rem, -29.846rem + 34.87vw, 12rem)'} 60px;
     &::before {
       width: 192px;
       height: 192px;

@@ -1,5 +1,5 @@
 <template>
-  <section class="UserShare">
+  <section class="UserShare overflow-hidden">
     <div class="new-container container UserShareContainer">
       <div class="UserShareBox">
         <div class="UserShareBox-title">
