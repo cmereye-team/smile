@@ -1,6 +1,6 @@
 
 <template>
-  <div class="Sidebar">
+  <div class="Sidebar z-60">
     <div>{{$t('home.konwALL')}}</div>
     <div>
       <nuxt-link to="/ophthalmicInfo/AppointForm">
