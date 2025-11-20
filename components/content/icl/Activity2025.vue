@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-11-19 13:47:22
- * @LastEditTime: 2025-11-20 10:23:45
+ * @LastEditTime: 2025-11-20 15:40:11
  * @FilePath: /components/content/icl/Activity2025.vue
  * @Description: ICL2025年终活动
 -->
@@ -11,12 +11,12 @@
   >
     <div class="activity-bg relative">
       <div
-        class="activity-main grid p-4 lg:px-0 lg:pt-[52px] w-fit mx-auto relative"
+        class="activity-main grid p-4 lg:px-0 lg:pt-[52px] w-fit mx-auto relative xl:before:absolute xl:before:content-[''] xl:before:size-[300px] xl:before:z-10 xl:before:bg-[url(https://statichk.cmermedical.com/smile/activity/activity-lens.svg)] xl:before:bg-no-repeat xl:before:bg-contain xl:before:-right-[40%] xl:before:-bottom-[30%]"
       >
         <div class="[grid-area:text] mb-4 lg:mb-12 lg:pt-5">
           <div class="flex relative gap-4 items-center mb-5 lg:mb-12">
             <div
-              class="size-[27.692vw] lg:size-40 bg-white border-[#5BC6BF] text-[#4AA2AA] border-1 rounded-full shadow-[2.6px_2.6px_0_#5BC6BF] lg:shadow-[4px_4px_0_#5BC6BF] lg:absolute lg:-top-[128px] lg:-left-[clamp(8.75rem,-2.6rem_+_15.93vw,11rem)]"
+              class="size-[27.692vw] lg:size-40 bg-white border-[#5BC6BF] text-[#4AA2AA] border-1 rounded-full shadow-[2.6px_2.6px_0_#5BC6BF] lg:shadow-[4px_4px_0_#5BC6BF] lg:absolute lg:-top-[128px] lg:-left-[clamp(8.75rem,-2.6rem_+_15.93vw,11rem)] animate-floating"
             >
               <div
                 class="flex flex-col justify-center items-center text-[5.128vw] lg:text-3xl leading-[6.154vw] lg:leading-9 font-black -rotate-[12deg] size-full"
@@ -25,15 +25,17 @@
                 <div>最後驚喜</div>
               </div>
             </div>
-            <p class="flex-1 text-[3.59vw] lg:text-xl">
-              <span>由即日起於2025年12月31日或之前</span>
-              <br />
-              <span class="text-[5.128vw] lg:text-3xl"
-                >完成<strong class="font-black">ICL</strong
-                >植入式隱形眼鏡<br />矯視手術</span
-              >
-              <span>可獲贈</span>
-            </p>
+            <div class="flex-1 text-[3.59vw] lg:text-xl">
+              <p>由即日起於2025年12月31日或之前</p>
+              <p>
+                <span class="text-[5.128vw] lg:text-3xl"
+                  >完成<strong class="font-black">ICL</strong>植入式隱形眼鏡<br
+                    class="block lg:hidden"
+                  />矯視手術</span
+                >
+                <span>可獲贈</span>
+              </p>
+            </div>
           </div>
           <div
             class="flex text-[6.667vw] lg:text-5xl font-bold mb-4 lg:mb-0 justify-center lg:justify-start items-center"
@@ -73,7 +75,7 @@
         >
           <a
             target="_blank"
-            href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+            href="https://api.whatsapp.com/send/?phone=85297962992&text=我想了解(W-ICLC 25) 希瑪2025年ICL最後驚喜詳情"
             class="bg-[#5BC6BF] text-white flex justify-center items-center w-fit py-4 px-8 lg:py-6 lg:px-14 font-black text-xl lg:text-4xl tracking-wider rounded-[100px]"
           >
             <span>查詢詳情</span>
@@ -105,7 +107,7 @@
         </div>
         <div class="[grid-area:image] relative mb-4 xl:mb-0 activity-image">
           <img
-            src="https://statichk.cmermedical.com/smile/activity/activity-icl-cup.png"
+            src="https://statichk.cmermedical.com/smile/activity/activity-cup@2x.png"
             alt=""
             class="w-3/5 lg:w-full ml-[15%] lg:ml-0 lg:max-h-[380px] object-contain"
           />
@@ -113,7 +115,7 @@
             class="absolute left-[70%] top-0 lg:top-1/10 lg:left-[90%] h-full flex flex-col justify-between whitespace-nowrap"
           >
             <div
-              class="text-[#5BC6BF] size-[22.564vw] lg:size-[6.042vw] rounded-full border-[#5BC6BF] border text-[11.282vw] lg:text-[3.125vw] font-extrabold flex justify-center items-center"
+              class="text-[#5BC6BF] bg-[#E6F8FD] size-[22.564vw] lg:size-[6.042vw] rounded-full border-[#5BC6BF] border text-[11.282vw] lg:text-[3.125vw] font-extrabold flex justify-center items-center"
             >
               送
             </div>
@@ -165,6 +167,26 @@
     transform: translateY(110vh) translateX(var(--swing)) rotate(360deg);
   }
 }
+@keyframes FloatHeavy {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+  }
+  25% {
+    transform: translateY(-10px);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  }
+  55% {
+    transform: translateY(20px);
+    animation-timing-function: cubic-bezier(0.34, 0.1, 0.7, 1);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.animate-floating {
+  animation: FloatHeavy 4s infinite;
+}
 .snow {
   position: absolute;
   top: 0;
@@ -184,26 +206,28 @@
   }
 }
 .activity {
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    animation: RotateImage 3s linear infinite;
-    background-size: contain;
-  }
-  &::before {
-    background-image: url("https://statichk.cmermedical.com/smile/activity/activity-snowflake-1.png");
-    width: 20.513vw;
-    height: 20.513vw;
-    right: 8%;
-    top: 10%;
-  }
-  &::after {
-    background-image: url("https://statichk.cmermedical.com/smile/activity/activity-snowflake-2.png");
-    width: 21.538vw;
-    height: 21.538vw;
-    right: -10%;
-    top: 15%;
+  &-bg {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      animation: RotateImage 10s linear infinite;
+      background-size: contain;
+    }
+    &::before {
+      background-image: url("https://statichk.cmermedical.com/smile/activity/activity-snowflake-01.png");
+      width: 20.513vw;
+      height: 20.513vw;
+      right: 8%;
+      top: 10%;
+    }
+    &::after {
+      background-image: url("https://statichk.cmermedical.com/smile/activity/activity-snowflake-02.png");
+      width: 21.538vw;
+      height: 21.538vw;
+      right: -10%;
+      top: 15%;
+    }
   }
   &-image {
     &::before,
@@ -231,7 +255,7 @@
   &-foot {
     background: linear-gradient(to bottom, #e6f8fd 0%, #fff 100%);
     &::before {
-      background: url("https://statichk.cmermedical.com/smile/activity/activity-bg-snows.png");
+      background: url("https://statichk.cmermedical.com/smile/activity/activity-bg-snows@2x.webp");
       background-size: cover;
       position: absolute;
       top: 0;
@@ -239,6 +263,7 @@
       width: 100%;
       height: 100%;
       content: "";
+      background-position: 2%;
     }
   }
 }
@@ -249,6 +274,9 @@
         right: -8%;
         bottom: 12%;
       }
+    }
+    &foot {
+      background-position: left;
     }
   }
 }
@@ -263,18 +291,21 @@
 }
 @media screen and (min-width: 1140px) {
   .activity {
-    background-position: #{'clamp(-5rem, -29.846rem + 34.87vw, 12rem)'} 60px;
-    &::before {
-      width: 192px;
-      height: 192px;
-      right: 15%;
-      top: 0;
-    }
-    &::after {
-      width: 204px;
-      height: 204px;
-      right: 8%;
-      top: 4%;
+    background-position: #{"clamp(-5rem, -29.846rem + 34.87vw, 12rem)"} 60px;
+    background-size: auto calc(100% - 7vw);
+    &-bg {
+      &::before {
+        width: 192px;
+        height: 192px;
+        right: 15%;
+        top: 0;
+      }
+      &::after {
+        width: 204px;
+        height: 204px;
+        right: 8%;
+        top: 4%;
+      }
     }
     &-main {
       grid-template-areas: "text image" "button image";
@@ -290,6 +321,20 @@
         height: 108px;
         right: -22%;
         bottom: 25%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1921px) {
+  .activity {
+    background-position: #{"clamp(12rem, -49.5rem + 51.25vw, 32.5rem)"} 60px;
+    background-size: auto calc(100% - clamp(8.438rem, 3.74rem + 3.91vw, 10rem));
+    &-bg {
+      &::before {
+        right: #{"clamp(17.875rem, -32rem + 41.56vw, 34.5rem)"};
+      }
+      &::after {
+        right: #{"clamp(9.625rem, -36.5rem + 38.44vw, 25rem)"};
       }
     }
   }
