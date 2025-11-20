@@ -3702,8 +3702,7 @@ i {
   .icl-Good {
     .icl-Good-List {
       max-width: 100vw;
-      display: flex;
-      flex-wrap: wrap;
+      grid-template-columns: repeat(6, 1fr);
       & > .icl-Good-List-item:nth-child(3) {
         border-right: none;
       }
