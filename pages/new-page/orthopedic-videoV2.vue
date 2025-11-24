@@ -418,7 +418,7 @@ export default {
         {
           type: "SMILE",
           href: "https://www.youtube.com/embed/qBsPhkIaVfo?si=eoL0GFtYOpQ7wX6M",
-          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile5.avif",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-005.avif",
           text: ["想做就去做啦!"],
           nameEn: "",
           nameCn: "游嘉欣",
@@ -675,7 +675,22 @@ export default {
         },
 
         // icl
-
+        {
+          type: "ICL",
+          href: "https://youtu.be/D91jSXnpeNc",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl-011.avif",
+          text: ["ICL矯視過程講解及", "注意事項"],
+          nameEn: "Ting Yan",
+          nameCn: "梁庭欣",
+        },
+        {
+          type: "ICL",
+          href: "https://youtu.be/PmZk2TtrNBc",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl-010.avif",
+          text: ["ICL矯視過程講解及", "注意事項"],
+          nameEn: "Ting Yan",
+          nameCn: "梁庭欣",
+        },
         {
           type: "ICL",
           href: "https://youtu.be/fNSShYa7nKk",

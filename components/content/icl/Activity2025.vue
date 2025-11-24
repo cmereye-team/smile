@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-11-19 13:47:22
- * @LastEditTime: 2025-11-20 15:40:11
+ * @LastEditTime: 2025-11-21 15:28:23
  * @FilePath: /components/content/icl/Activity2025.vue
  * @Description: ICL2025年终活动
 -->
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="flex-1 text-[3.59vw] lg:text-xl">
-              <p>由即日起於2025年12月31日或之前</p>
+              <p>由2025年11月24日起經網上預約<br class="block lg:hidden"/>並於2025年12月31日前</p>
               <p>
                 <span class="text-[5.128vw] lg:text-3xl"
                   >完成<strong class="font-black">ICL</strong>植入式隱形眼鏡<br
@@ -172,10 +172,10 @@
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
   }
-  25% {
-    transform: translateY(-10px);
-    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
-  }
+  // 25% {
+  //   transform: translateY(-10px);
+  //   animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  // }
   55% {
     transform: translateY(20px);
     animation-timing-function: cubic-bezier(0.34, 0.1, 0.7, 1);
