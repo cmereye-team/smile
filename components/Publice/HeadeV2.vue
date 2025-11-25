@@ -1,7 +1,7 @@
 <template>
   <div class="head-bg">
       
-    <div class="headV2 mbShow">
+    <div class="headV2 flex md:hidden">
       <HeadLeftV2 />
       <HeadMobileV2 />
       <!-- <nuxt-link to="/icl-event" class="btn-icl_event">
@@ -12,7 +12,7 @@
         <span>ICL<br />專題講座</span>
       </nuxt-link> -->
     </div>
-    <div class="headV2 pcShow">
+    <div class="headV2 hidden md:flex">
       <HeadLeftV2 />
       <div>
         <HeadRightV2 />
@@ -95,7 +95,7 @@ export default {
 
 <style lang="scss" scoped>
 .headV2 {
-  display: flex;
+  // display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1320px;
@@ -170,7 +170,7 @@ export default {
     transform: translateY(-50%);
   }
   .headV2 {
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     // max-width: 1270px;
@@ -280,7 +280,7 @@ export default {
     z-index: 102;
     background: #fff;
     padding: 15px 15px;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100vw !important;

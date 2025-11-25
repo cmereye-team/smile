@@ -281,7 +281,7 @@ export default {
     transition: all 0.3s ease-in-out;
   }
 }
-@media screen and (min-width: 769px) and  (max-width: 1440px) {
+@media screen and (min-width: 768px) and  (max-width: 1440px) {
   .Sidebar {
     display: flex;
     align-items: center;
