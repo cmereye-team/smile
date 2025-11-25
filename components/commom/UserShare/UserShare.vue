@@ -1,5 +1,5 @@
 <template>
-  <section class="UserShare overflow-hidden">
+  <section class="UserShare">
     <div class="new-container container UserShareContainer">
       <div class="UserShareBox">
         <div class="UserShareBox-title">
@@ -179,11 +179,11 @@ export default {
           &::after {
             content: "";
             position: absolute;
-            left: 50px;
-            top: -7px;
+            left: 11.282vw;
+            top: -12px;
             width: 50px;
             height: 45px;
-            background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-title-bg.png")
+            background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-title-eyes.svg")
               no-repeat;
             background-size: contain;
           }
