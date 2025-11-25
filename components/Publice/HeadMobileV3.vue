@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 09:55:03
- * @LastEditTime: 2025-09-05 17:34:05
+ * @LastEditTime: 2025-11-25 17:03:12
  * @FilePath: /components/Publice/HeadMobileV3.vue
  * @Description: 移动端第三版头部的菜单
 -->
@@ -116,7 +116,7 @@
         <p>預約講座專場</p>
       </div>
     </a>
-    <a href="/booking" target="_blank" v-else>
+    <nuxt-link :to="localePath('/ophthalmicInfo/AppointForm')" v-else>
       <div class="icon icon-lecture">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@
           }}
         </p>
       </div>
-    </a>
+    </nuxt-link>
     <div class="icon-menu" v-show="!showMenu" @click="showMenu = true">
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-10-27 10:13:36
+ * @LastEditTime: 2025-11-25 16:56:08
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -53,6 +53,13 @@ $text-color: #6d6e71;
     left: #{"clamp(1rem, 0.045rem + 4.77vw, 3.625rem)"};
   }
 }
+@media screen and (min-width:768px) {
+  .headV3 {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .headV3 {
     height: 100px;
@@ -61,8 +68,6 @@ $text-color: #6d6e71;
 @media screen and (min-width: 1024px) {
   .headV3 {
     height: 180px;
-    max-width: 768px;
-    margin: 0 auto;
     left: 0;
     transform: none;
     &-bg {
