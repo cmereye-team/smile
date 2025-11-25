@@ -48,8 +48,7 @@ export const $router = [
     title: "診症須知",
     component: resolve("pages/patient-info/index.vue"),
   },
-
-    {
+  {
     path: "/patient-infoV2", 
     name: "patient-infoV2",
     title: "診症須知",
@@ -244,10 +243,17 @@ export const $router = [
     component: resolve("pages/new-page/clear-visionV2.vue"),
   },
   {
+    path: "/vision-correction-lasikV2",
+    name: "vision-correction-lasikV2",
+    title: "LASIK 激光矯視",
+    component: resolve("pages/vision-correction-lasik/index.vue"),
+    // component: resolve("pages/new-page/lasik.vue"),
+  },
+  {
     path: "/vision-correction-lasik",
     name: "vision-correction-lasik",
     title: "LASIK 激光矯視",
-    // component: resolve('pages/vision-correction-lasik/index.vue'),
+    // component: resolve("pages/vision-correction-lasik/index.vue"),
     component: resolve("pages/new-page/lasik.vue"),
   },
   // {

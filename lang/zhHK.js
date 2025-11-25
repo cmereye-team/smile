@@ -1,4 +1,9 @@
 module.exports = {
+  breadcrumb: {
+    home: "主頁",
+    services: "矯視服務",
+    lasik: "LASIK激光矯視",
+  },
   home: {
     navbar: "立即預約",
     divit: `了解 <br /> Divit 贏里數`,
@@ -1015,32 +1020,42 @@ module.exports = {
         text4_1: "或隱形眼鏡",
       },
     },
-
     lasik: {
+      enTitle: "Laser-Assisted in Situ Keratomileusis",
+      pageTitle: "LASIK激光矯視",
       bannerTitle: "激光矯視",
-      small_title1: "LASIK激光矯視的好處",
-      small_title2: "合適對象",
+      suitableTitle: "合適對象",
+      introDesc:
+        "超過20年的歷史，也是流行的矯視方式；利用激光技術，重塑角膜弧度以改善眼睛折射光線能力，從而矯正視力，減低客人對眼鏡和隱形眼鏡的依賴。",
+      principleTitle: "LASIK激光矯視原理",
+      principleDesc:
+        "LASlK(Laser-Assisted in Situ Keratomileusis)是準分子激光原位角膜鑲術，通過激光「打磨」角膜,改變角膜弧度,從而矯正視力。過程中，醫生會先用飛秒激光製作角膜瓣;掀開角膜瓣後，用準分子激光进行角膜切削，再把角膜瓣復位，從而矯正視力。",
       btn: "預約諮詢",
-
+      benefitsTitle: "LASIK激光矯視的好處",
       benefits: {
         content1: {
           title: "術後恢復快",
-          text: "最快術後數天可如常生活、工作",
+          text: "最快術後數天可如常\n生活、工作",
         },
         content2: {
           title: "手術時間短",
-          text: "大約20至30分鐘完成",
+          text: "最快20-30分鐘\n內完成矯視",
         },
         content3: {
           title: "矯視過程輕鬆",
-          text: "快捷、安全少有不適",
+          text: "快捷、安全少有\n不適",
         },
         content4: {
           title: "效果穩定",
-          text: "視力改善滿意度高",
+          text: "視力改善\n滿意度高",
         },
       },
-      suitable_object: {
+      correct: {
+        text1: "1,400度以下的近視",
+        text2: "600度以下的遠視",
+        text3: "600度以下的散光",
+      },
+      suitable: {
         content1: {
           text1: "近視1,400度以下",
           text2: "遠視/散光600度以下",
@@ -3186,7 +3201,7 @@ module.exports = {
 
     content13: {
       name1: "A型及B型超聲波掃描儀",
-      name2:"",
+      name2: "",
       remark:
         "A型超聲用於眼軸長短的測量，眼部異常組織織標準超聲的檢測； B型超聲用於玻璃體混濁、玻璃體積血、視網膜脈絡膜脫離等病變的檢查。",
       source: "資料及圖片來源：Quantel Medical",
@@ -3208,7 +3223,7 @@ module.exports = {
 
     content16: {
       name1: "德國蔡司視野分析儀",
-      name2:"",
+      name2: "",
       remark:
         "Humphery HFA3是全電腦控制的視野檢查和分析系統，作為視野測量的標準，用於診斷和跟進青光眼、視網膜色素病變和其他影響視野的病症所引起的視野缺損 (如腦神經腫瘤)，從而診斷及觀察視覺及腦神經各種症狀情況，是一項重要的檢查。",
       source: "資料及圖片來源：Carl Zeiss",
