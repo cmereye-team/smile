@@ -2791,9 +2791,9 @@ i {
     .icl-Good-List {
       margin: 0 auto;
       max-width: 992px;
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
+      // display: flex;
+      // flex-wrap: wrap;
+      width: fit-content;
       display: grid;
       height: auto;
       grid-template-columns: repeat(3, 1fr);
@@ -2811,8 +2811,14 @@ i {
         border-right: 2px solid #4570b6;
       }
       .icl-Good-List-item {
+        &:first-child {
+          img {
+            height: 80px;
+          }
+        }
         z-index: 99;
         opacity: 1;
+        aspect-ratio: 1/1;
         // width: 16.5vw;
         // height: 16.4vw;
         padding-top: 82px;
@@ -2837,6 +2843,7 @@ i {
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: clamp(15px, 1.3vw, 25px);
+          // font-size: 1.354vw;
           font-style: normal;
           font-weight: 700;
           line-height: 0.8;
@@ -2847,6 +2854,7 @@ i {
           text-align: center;
           font-family: "Noto Sans TC";
           font-size: clamp(12px, 1.19vw, 23px);
+          // font-size: 1.25vw;
           font-style: normal;
           font-weight: 300;
           line-height: 35px;
@@ -3972,7 +3980,9 @@ i {
           v-for="(item, index) in iclGoodList"
           :key="index"
         >
-          <img :src="item.img" alt="" />
+          <div class="lg:size-20 flex justify-center items-center">
+            <img :src="item.img" alt="" />
+          </div>
           <h4>{{ $t(item.title) }}</h4>
           <div>
             <p v-for="(i, idx) in item.text" :key="idx">{{ $t(i) }}</p>
@@ -4993,7 +5003,7 @@ export default {
           ],
         },
       ],
-// 用家分享
+    // 用家分享
     ShareData: [
         {
           type: "ICL",
@@ -5007,7 +5017,7 @@ export default {
           type: "ICL",
           href: "https://youtu.be/PmZk2TtrNBc",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl-010.avif",
-          text: ["ICL矯視過程講解及", "注意事項"],
+          text: ["一個「選擇」", "睇見自己嘅光芒"],
           nameEn: "Ting Yan",
           nameCn: "梁庭欣",
         },

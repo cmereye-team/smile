@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-11-19 13:47:22
- * @LastEditTime: 2025-11-21 15:28:23
+ * @LastEditTime: 2025-11-25 11:47:43
  * @FilePath: /components/content/icl/Activity2025.vue
  * @Description: ICL2025年终活动
 -->
@@ -9,7 +9,7 @@
   <section
     class="activity relative snow-container bg-[#E6F8FD] text-[#6D6E71] border-[#5BC6BF] border-t-[12px] bg-[url(https://statichk.cmermedical.com/smile/activity/activity-christmas-tree.png)] bg-no-repeat"
   >
-    <div class="activity-bg relative">
+    <div class="activity-bg relative overflow-hidden lg:overflow-visible">
       <div
         class="activity-main grid p-4 lg:px-0 lg:pt-[52px] w-fit mx-auto relative xl:before:absolute xl:before:content-[''] xl:before:size-[300px] xl:before:z-10 xl:before:bg-[url(https://statichk.cmermedical.com/smile/activity/activity-lens.svg)] xl:before:bg-no-repeat xl:before:bg-contain xl:before:-right-[40%] xl:before:-bottom-[30%]"
       >
