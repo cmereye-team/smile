@@ -325,7 +325,7 @@
         .new-Footer-v2-loction-item {
           & > div {
             position: relative;
-            h4 {
+            strong {
               color: #4570b6;
               font-family: "Noto Sans";
               font-size: 24px;

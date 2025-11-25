@@ -431,7 +431,7 @@ letter-spacing: 1.8px;
     display: flex;
     margin-top: 34px;
     & > div {
-      margin-left: 25px;
+      margin-left: #{'clamp(0.75rem, -1.5rem + 4.69vw, 1.5rem)'};
       position: relative;
       a {
         width: 100%;
