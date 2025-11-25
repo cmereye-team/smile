@@ -1405,7 +1405,7 @@ export default {
         {
           type: "SMILE Pro",
           href: "https://youtu.be/Z5ut-9tIhmo",
-          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-sarah@1x.avif",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-021.avif",
           text: ["唔洗矇查查周圍搵眼鏡"],
           nameEn: "Sarah",
           nameCn: "李蒨怡",
@@ -1413,7 +1413,7 @@ export default {
         {
           type: "SMILE Pro",
           href: "https://youtu.be/857FwJQu7OA",
-          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-jay@1x.avif",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-020.avif",
           text: ["無咗眼鏡都一樣做到唔","同活動"],
           nameEn: "Jay",
           nameCn: "沈以諾",

@@ -197,7 +197,7 @@ export default {
         {
           type: "SMILE Pro",
           href: "https://youtu.be/Z5ut-9tIhmo",
-          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-sarah@1x.avif",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-021.avif",
           text: ["唔洗矇查查周圍搵眼鏡"],
           nameEn: "Sarah",
           nameCn: "李蒨怡",
@@ -205,7 +205,7 @@ export default {
         {
           type: "SMILE Pro",
           href: "https://youtu.be/857FwJQu7OA",
-          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-jay@1x.avif",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-020.avif",
           text: ["無咗眼鏡都一樣做到唔","同活動"],
           nameEn: "Jay",
           nameCn: "沈以諾",
@@ -271,13 +271,28 @@ export default {
           nameEn: "Fish",
           nameCn: "梁梓瑜",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/U4rueCW0hIg",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro8.avif",
           text: ["一瞓醒清楚望到全世界", "真係好開心!"],
           nameEn: "Belle",
+          nameCn: "",
+        },
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/uHFshgSiP4o",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-022.avif",
+          text: ["希瑪矯視旅程"],
+          nameEn: "Belle",
+          nameCn: "",
+        },
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/M6mkwCRqXII",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-023.avif",
+          text: ["SMILE Pro VS", "SMILE矯視"],
+          nameEn: "Pinky",
           nameCn: "",
         },
         {
@@ -687,7 +702,7 @@ export default {
           type: "ICL",
           href: "https://youtu.be/PmZk2TtrNBc",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl-010.avif",
-          text: ["ICL矯視過程講解及", "注意事項"],
+          text: ["一個「選擇」", "睇見自己嘅光芒"],
           nameEn: "Ting Yan",
           nameCn: "梁庭欣",
         },
