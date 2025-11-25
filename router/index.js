@@ -198,16 +198,16 @@ export const $router = [
     title: " 免責條款",
     component: resolve("pages/disclaimer/index.vue"),
   },
+  // {
+  //   path: "/vision-correction/relex-smile",
+  //   name: "vision-correction/relex-smile",
+  //   title: "SMILE 微笑激光矯視",
+  //   // component: resolve('pages/vision-correction/relex-smile/index.vue'),
+  //   component: resolve("pages/new-page/smile.vue"),
+  // },
   {
     path: "/vision-correction/relex-smile",
     name: "vision-correction/relex-smile",
-    title: "SMILE 微笑激光矯視",
-    // component: resolve('pages/vision-correction/relex-smile/index.vue'),
-    component: resolve("pages/new-page/smile.vue"),
-  },
-  {
-    path: "/vision-correction/relex-smileV2",
-    name: "vision-correction/relex-smileV2",
     title: "SMILE 微笑激光矯視",
     // component: resolve('pages/vision-correction/relex-smile/index.vue'),
     component: resolve("pages/new-page/smileV2.vue"),
