@@ -5,7 +5,9 @@
       <section
         class="banner wrapper mt-20 md:mt-40 pb-4 md:pb-7 px-5 flex justify-between items-end"
       >
-        <div class="">
+        <div
+          class="banner-bg relative before:absolute before:aspect-[1.37/1] before:w-[37.982vw] xl:before:w-[22.083vw] before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:-z-[1]"
+        >
           <div class="text-primary pt-10 md:pt-40 mb-16 md:mb-24">
             <p class="flex flex-col pb-2 md:pb-5">
               <span
@@ -17,7 +19,7 @@
               }}</span>
             </p>
             <p class="text-xs md:text-3xl">
-              Laser-Assisted in Situ Keratomileusis
+              Laser-Assisted in Situ Keratomileusis
             </p>
           </div>
           <div
@@ -31,7 +33,7 @@
           </div>
         </div>
         <div
-          class="h-fit mb-[52px] md:mb-[72px] text-white text-sm md:text-2xl font-light whitespace-nowrap"
+          class="h-fit mb-[52px] md:mb-[72px] text-white text-xs md:text-xl font-light whitespace-nowrap"
         >
           <p
             class="bg-primary w-fit pb-1 -mb-1 pt-1 px-5 md:pt-2 md:px-9 rounded-t-sm md:rounded-t-md"
@@ -51,7 +53,7 @@
         class="intro aspect-[77/100] md:aspect-[30/13] flex justify-center items-center md:justify-end bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-bg-m.avif)] md:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-bg-pc.avif)] bg-no-repeat bg-cover"
       >
         <div
-          class="size-[118vw] md:size-[35vw] md:mr-[8%] flex justify-center items-center bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-textbg-m.svg)] md:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-textbg-pc.svg)] bg-no-repeat bg-contain bg-center"
+          class="size-[118vw] md:size-[35vw] md:min-w-[440px] md:min-h-[440px] lg:min-w-[480px] lg:min-h-[480px] md:mr-[8%] flex justify-center items-center bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-textbg-m.svg)] md:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-textbg-pc.svg)] bg-no-repeat bg-contain bg-center"
         >
           <div class="w-[65%]">
             <h1 class="title-normal text-center pb-2 md:pb-4">
@@ -63,34 +65,142 @@
           </div>
         </div>
       </section>
-      <section class="principle bg-[#F6FAFD]">
+      <section class="principle bg-[#F6FAFD] pt-10 pb-8 md:py-[72px] mb-16">
         <div class="wrapper">
           <h2 class="title-normal">{{ $t("lasik.principleTitle") }}</h2>
-          <p>{{ $t("lasik.principleDesc") }}</p>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 mb-5 md:mb-[72px]"
+            role="list"
+          >
+            <div
+              class="principle-item"
+              role="listitem"
+              v-for="(item, index) in principleList"
+              :key="index"
+            >
+              <span class="principle-num font-en">{{
+                String(index + 1).padStart(2, "0")
+              }}</span>
+              <img :src="item" :alt="`步驟${index + 1}`" />
+            </div>
+          </div>
+          <p
+            class="w-[85%] md:w-1/2 mx-auto text-text text-base md:text-xl font-light tracking-[0.3em]"
+          >
+            {{ $t("lasik.principleDesc") }}
+          </p>
         </div>
       </section>
-      <section class="benefits wrapper">
-        <h2 class="title-normal mb-8 md:mb-11">
+      <section id="lasik-benefits" class="benefits wrapper">
+        <h2 class="title-normal mb-7 md:mb-[52px]">
           {{ $t("lasik.benefitsTitle") }}
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-4">
-          <div></div>
-        </div>
+        <ul
+          class="grid grid-cols-2 md:grid-cols-4 border-[#4570B6] border md:border-2"
+        >
+          <li
+            v-for="(item, index) in benefitsList"
+            :key="index"
+            class="benefits-item aspect-square flex justify-center items-center flex-col"
+          >
+            <figure>
+              <div
+                class="size-[68px] md:size-[92px] flex justify-center items-center mb-3 md:mb-4 mx-auto"
+              >
+                <img
+                  :src="item.icon"
+                  :alt="item.title"
+                  :title="item.title"
+                  loading="lazy"
+                  class="size-full object-contain"
+                />
+              </div>
+              <figcaption>
+                <h3
+                  class="pb-2 md:pb-3 tracking-widest md:tracking-[0.35em] text-lg md:text-3xl text-primary font-bold text-center"
+                >
+                  {{ $t(item.title) }}
+                </h3>
+                <p
+                  class="text-base md:text-2xl font-light text-text text-center tracking-[0.15em] md:tracking-[0.2em] leading-[18px] md:leading-normal"
+                  v-html="$t(item.text).join('<br/>')"
+                ></p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
       <section
-        class="suitable relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate.svg)] before:w-[175vw] before:h-[70vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-[24%] md:before:w-[120vw] md:before:left-0 before:-z-[1]"
+        id="lasik-suitable"
+        class="suitable pt-20 md:mb-[152px] relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate.svg)] before:w-[175vw] before:h-[70vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-[24%] md:before:w-[120vw] md:before:left-0 before:-z-[1]"
       >
-        <div class="wrapper text-base md:text-xl font-light">
+        <div class="wrapper text-base md:text-xl font-light mb-8 md:mb-16">
           <div
             class="border-primary border-1 md:border-2 bg-[linear-gradient(210deg,#FFF_13.8%,#F2F7FF_70.44%)] rounded-full size-[80vw] md:size-[30vw]"
           >
             <h2 class="title-normal mb-6">
               {{ $t("lasik.suitableTitle") }}
             </h2>
-            <p>{{ $t("lasik.suitableDesc") }}</p>
+            <p
+              class="whitespace-pre-line text-primary text-center tracking-[0.25em]"
+            >
+              {{ $t("lasik.suitableDesc") }}
+            </p>
           </div>
-          <ul></ul>
+          <ul role="list" class="suitable-list flex flex-wrap">
+            <li
+              role="listitem"
+              v-for="(item, index) in suitableList"
+              :key="index"
+              class="suitable-item"
+            >
+              <figure>
+                <div
+                  class="flex justify-center items-center size-[16.41vw] md:size-[6.25vw] mx-auto mb-3"
+                >
+                  <img
+                    :src="item.icon"
+                    alt=""
+                    class="size-full object-contain"
+                  />
+                </div>
+                <figcaption>
+                  <p
+                    v-html="formatText(item)"
+                    class="text-text text-center"
+                  ></p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
+        <a
+          href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-07)%20LASIK%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+          target="_blank"
+          class="flex justify-center items-center gap-2 md:gap-4 bg-primary text-white text-xl md:text-4xl w-fit mx-auto rounded-[100px] md:rounded-[180px] py-3 px-8 md:py-7 md:px-14"
+        >
+          <span>{{ $t("lasik.btn") }}</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29"
+            height="29"
+            viewBox="0 0 29 29"
+            fill="none"
+          >
+            <path
+              d="M2.69922 25.7785L25.3278 3.1499"
+              stroke="white"
+              stroke-width="5.4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M5.99609 2.42993H26.0987V21.8699"
+              stroke="white"
+              stroke-width="4.86"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
       </section>
       <ShareSection />
     </main>
@@ -128,10 +238,126 @@ export default {
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
     };
   },
+  data() {
+    return {
+      isMobile: true,
+      principleList: [
+        "https://statichk.cmermedical.com/smile/lasik/lasik-principle-01.svg",
+        "https://statichk.cmermedical.com/smile/lasik/lasik-principle-02.svg",
+        "https://statichk.cmermedical.com/smile/lasik/lasik-principle-03.svg",
+        "https://statichk.cmermedical.com/smile/lasik/lasik-principle-04.svg",
+      ],
+      benefitsList: [
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-benefits-01.svg",
+          title: "lasik.benefits.content1.title",
+          text: "lasik.benefits.content1.text",
+        },
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-benefits-02.svg",
+          title: "lasik.benefits.content2.title",
+          text: "lasik.benefits.content2.text",
+        },
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-benefits-03.svg",
+          title: "lasik.benefits.content3.title",
+          text: "lasik.benefits.content3.text",
+        },
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-benefits-04.svg",
+          title: "lasik.benefits.content4.title",
+          text: "lasik.benefits.content4.text",
+        },
+      ],
+      suitableList: [
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-suitable-01.svg",
+          text: "lasik.suitable.content1.text",
+          pcText: "lasik.suitable.content1.pcText",
+          mbText: "lasik.suitable.content1.mbText",
+        },
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-suitable-02.svg",
+          text: "lasik.suitable.content2.text",
+          pcText: "lasik.suitable.content2.pcText",
+          mbText: "lasik.suitable.content2.mbText",
+        },
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-suitable-03.svg",
+          text: "lasik.suitable.content3.text",
+          pcText: "lasik.suitable.content3.pcText",
+          mbText: "lasik.suitable.content3.mbText",
+        },
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-suitable-04.svg",
+          text: "lasik.suitable.content4.text",
+          pcText: "lasik.suitable.content4.pcText",
+          mbText: "lasik.suitable.content4.mbText",
+        },
+        {
+          icon: "https://statichk.cmermedical.com/smile/lasik/lasik-suitable-05.svg",
+          text: "lasik.suitable.content5.text",
+          pcText: "lasik.suitable.content5.pcText",
+          mbText: "lasik.suitable.content5.mbText",
+        },
+      ],
+    };
+  },
+  mounted() {
+    this.checkScreen();
+    this.onResize = this.debounce(this.checkScreen, 200);
+    window.addEventListener("resize", this.onResize);
+  },
+  beforeDestroy() {
+    if (process.client && this.onResize) {
+      window.removeEventListener("resize", this.onResize);
+    }
+  },
+  methods: {
+    /**
+     * @description: 监测屏幕大小判断是否移动端
+     * @return {boolean}
+     */
+    checkScreen() {
+      this.isMobile = window.innerWidth < 768;
+    },
+    /**
+     * @description: 防抖函数
+     * @param {Function} fn 需加持的函数
+     * @param {number} delay 防抖毫秒
+     * @return {Function}
+     */
+    debounce(fn, delay) {
+      let timer = null;
+      return function (...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this, args), delay);
+      };
+    },
+    /**
+     * @description: 格式化合适对象的描述文本
+     * @param {Array} item
+     * @return {string}
+     */
+    formatText(item) {
+      const key = this.isMobile ? item.mbText : item.pcText;
+      const content = this.$t(key);
+      return Array.isArray(content) ? content.join("<br/>") : content;
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
 $primary-color: #4570b6;
+:deep(.new-Footer-v2) {
+  margin-top: 0;
+}
+:deep(.new-Footer-v2 section) {
+  margin-top: 33px;
+}
+:deep(.share) {
+  padding: 72px 0 32px;
+}
 .title-normal {
   font-size: 20px;
   font-weight: 900;
@@ -146,16 +372,83 @@ $primary-color: #4570b6;
     background-size: contain;
     aspect-ratio: 1.37 / 1;
   }
+  &-bg {
+    &::before {
+      rotate: -10deg;
+    }
+  }
+}
+.benefits {
+  &-item {
+    &:nth-child(-n + 2) {
+      border-bottom: 1px solid $primary-color;
+    }
+    &:nth-child(odd) {
+      border-right: 1px solid $primary-color;
+    }
+  }
+}
+.principle {
+  &-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &-num {
+    font-size: 48px;
+    font-weight: 700;
+    -webkit-text-stroke-color: $primary-color;
+    -webkit-text-stroke-width: 0.5px;
+    color: transparent;
+  }
+}
+.suitable {
+  &-item {
+    width: 54%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid $primary-color;
+    &:nth-child(2) {
+      margin-left: -6%;
+    }
+    &:nth-child(3) {
+      margin-right: -6%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-normal {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+  }
+  .benefits {
+    &-item {
+      border-width: 0;
+      &:not(:last-child) {
+        border-right: 2px solid $primary-color;
+      }
+    }
+  }
+  .principle {
+    &-num {
+      font-size: 100px;
+      -webkit-text-stroke-width: 1px;
+    }
+  }
+  .suitable {
+    &-item {
+      width: 27%;
+      border-width: 2px;
+      &:nth-child(even) {
+        margin-left: -12%;
+      }
+    }
+  }
 }
 @media screen and (min-width: 1024px) {
   .wrapper {
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .title-normal {
-    font-size: 30px;
-    letter-spacing: 0.1em;
   }
 }
 </style>

@@ -593,6 +593,71 @@ module.exports = {
       item1_p4_1: "最快翌日可如常生活、工作",
     },
   },
+  lasik: {
+    pageTitle: "LASIK激光矫视",
+    bannerTitle: "激光矫视",
+    introDesc:
+      "超過20年的歷史，也是流行的矯視方式；利用激光技術，重塑角膜弧度以改善眼睛折射光線能力，從而矯正視力，減低客人對眼鏡和隱形眼鏡的依賴。",
+    principleTitle: "LASIK激光矯視原理",
+    principleDesc:
+      "LASlK(Laser-Assisted in Situ Keratomileusis)是準分子激光原位角膜鑲術，通過激光「打磨」角膜,改變角膜弧度,從而矯正視力。過程中，醫生會先用飛秒激光製作角膜瓣;掀開角膜瓣後，用準分子激光进行角膜切削，再把角膜瓣復位，從而矯正視力。",
+    step: "步骤",
+    btn: "预约咨询",
+    benefitsTitle: "LASIK激光矫视的好处",
+    benefits: {
+      content1: {
+        title: "术后恢复快",
+        text: ["最快术后数天可如常", "生活、工作"],
+      },
+      content2: {
+        title: "手术时间短",
+        text: ["最快20-30分钟", "内完成矫视"],
+      },
+      content3: {
+        title: "矫视过程轻松",
+        text: ["快捷、安全少有", "不适"],
+      },
+      content4: {
+        title: "效果稳定",
+        text: ["视力改善", "满意度高"],
+      },
+    },
+    conditions: {
+      title: "可矫正",
+      text1: "1,400度以下的近视",
+      text2: "600度以下的远视",
+      text3: "600度以下的散光",
+    },
+    suitableTitle: "适合对象",
+    suitableDesc:
+      "無論追求效率還是悠閒自在，\nLASIK激光矯視都讓你清楚\n見證往後每一刻。",
+    suitable: {
+      content1: {
+        text1: "近视1,400度以下",
+        text2: "远视/散光600度以下",
+        mbText1: "近视1,400度以下",
+        mbText2: "远视/散光600度",
+      },
+      content2: {
+        text1: "投考或從事紀律部隊/",
+        text2: "航空業界人士",
+      },
+      content3: {
+        text1: "熱愛運動",
+      },
+      content4: {
+        text1: "不愛戴隱形眼鏡",
+        text2: "或眼鏡人士",
+      },
+      content5: {
+        text1: "擔心長期配戴隱形眼鏡",
+        text2: "影響眼睛健康人士",
+        mbText1: "擔心長期配戴",
+        mbText2: "隱形眼鏡影響眼睛",
+        mbText3: "健康人士",
+      },
+    },
+  },
   Correct: {
     newIcl: {
       menuone: "主页",
