@@ -199,7 +199,7 @@ i {
   }
 
   .ClearVisionBanner {
-    margin-top: 88px;
+    // margin-top: 88px;
     .ClearVisionBanner-Box {
       display: flex;
       flex-direction: column;
@@ -1189,7 +1189,7 @@ i {
   }
 
   .ClearVisionBanner {
-    margin-top: 217px;
+    // margin-top: 217px;
     border-bottom: clamp(1px, 0.1vw, 2px) solid #4570b6;
     .ClearVisionBanner-Box {
       display: flex;
@@ -2340,7 +2340,7 @@ i {
       />
     </div> -->
 
-    <section class="ClearVisionBanner">
+    <section class="ClearVisionBanner mt-22 md:mt-[216px]">
       <div class="new-container container">
         <div class="ClearVisionBanner-Box">
           <div class="ClearVisionBanner-Box-content">

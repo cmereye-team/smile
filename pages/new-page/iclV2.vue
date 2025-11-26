@@ -97,9 +97,6 @@ body {
     letter-spacing: 7.5px;
   }
 }
-:deep(.mt-20) {
-  margin-top: 0;
-}
 :deep(.share-img) {
   margin-top: 0;
 }
@@ -369,7 +366,7 @@ i {
   }
   .smile-NewBanner {
     padding: 0 15px;
-    margin-top: 80px;
+    // margin-top: 80px;
     height: 203px;
     position: relative;
     img {
@@ -2486,7 +2483,7 @@ i {
 
   .smile-NewBanner {
     padding: 0px;
-    margin-top: 80px;
+    // margin-top: 80px;
     height: 529px;
     position: relative;
     img {
@@ -3797,7 +3794,7 @@ i {
 
     <!-- 轮播位置 -->
     <div
-      class="container new-container mx-auto smile-NewBanner position-relative"
+      class="container new-container mx-auto smile-NewBanner position-relative mt-20 md:mt-40"
     >
       <img
         class=""

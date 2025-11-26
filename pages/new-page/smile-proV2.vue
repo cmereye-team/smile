@@ -23,7 +23,7 @@
 
     <!-- 轮播位置 -->
     <div
-      class="container new-container mx-auto smile-NewBanner position-relative"
+      class="container new-container mx-auto smile-NewBanner position-relative mt-20 md:mt-40 xl:mt-[216px]"
     >
       <img
         class=""
@@ -1637,9 +1637,6 @@ body {
 }
 </style>
 <style lang="scss" scoped>
-:deep(.mt-20) {
-  margin-top: 0;
-}
 :deep(.share-img) {
   margin-top: 0;
 }
@@ -1673,7 +1670,7 @@ i {
 @media screen and (max-width: 1140px) {
   .smile-NewBanner {
     padding: 0 15px;
-    margin-top: 150px;
+    // margin-top: 150px;
     height: 203px;
     position: relative;
     img {
@@ -4401,7 +4398,7 @@ i {
 
   .smile-NewBanner {
     padding: 0px;
-    margin-top: 213px;
+    // margin-top: 213px;
     height: 529px;
     position: relative;
     img {
