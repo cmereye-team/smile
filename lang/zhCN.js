@@ -8,6 +8,7 @@ module.exports = {
     CheckBefore: "术前检查",
     seeALL: "观看更多",
     headers: {
+      home: "主页",
       aboutSmile: "关于希玛",
       orthopedicServices: "矫视服务",
       diagnosisInstructions: "诊症须知",

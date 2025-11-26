@@ -8,6 +8,7 @@ module.exports = {
     CheckBefore: "術前檢查",
     seeALL: "觀看更多",
     headers: {
+      home: "主頁",
       aboutSmile: "關於希瑪",
       orthopedicServices: "矯視服務",
       diagnosisInstructions: "診症須知",
@@ -590,6 +591,70 @@ module.exports = {
       item1_p3_1: "約2MM的微創切口",
       item1_title4: "康復時間短",
       item1_p4_1: "最快翌日可如常生活、工作",
+    },
+  },
+  lasik: {
+    pageTitle: "LASIK激光矯視",
+    bannerTitle: "激光矯視",
+    introDesc:
+      "超過20年的歷史，也是流行的矯視方式；利用激光技術，重塑角膜弧度以改善眼睛折射光線能力，從而矯正視力，減低客人對眼鏡和隱形眼鏡的依賴。",
+    principleTitle: "LASIK激光矯視原理",
+    principleDesc:
+      "LASlK(Laser-Assisted in Situ Keratomileusis)是準分子激光原位角膜鑲術，通過激光「打磨」角膜,改變角膜弧度,從而矯正視力。過程中，醫生會先用飛秒激光製作角膜瓣;掀開角膜瓣後，用準分子激光进行角膜切削，再把角膜瓣復位，從而矯正視力。",
+    btn: "預約諮詢",
+    benefitsTitle: "LASIK激光矯視的好處",
+    benefits: {
+      content1: {
+        title: "術後恢復快",
+        text: "最快術後數天可如常\n生活、工作",
+      },
+      content2: {
+        title: "手術時間短",
+        text: "最快20-30分鐘\n內完成矯視",
+      },
+      content3: {
+        title: "矯視過程輕鬆",
+        text: "快捷、安全少有\n不適",
+      },
+      content4: {
+        title: "效果穩定",
+        text: "視力改善\n滿意度高",
+      },
+    },
+    conditions: {
+      title: "可矯正",
+      text1: "1,400度以下的近視",
+      text2: "600度以下的遠視",
+      text3: "600度以下的散光",
+    },
+    suitableTitle: "合適對象",
+    suitableDesc:
+      "無論追求效率還是悠閒自在，\nLASIK激光矯視都讓你清楚\n見證往後每一刻。",
+    suitable: {
+      content1: {
+        text1: "近視1,400度以下",
+        text2: "遠視/散光600度以下",
+        mbText1: "近視1,400度以下",
+        mbText2: "遠視/散光600度",
+      },
+      content2: {
+        text1: "投考或從事紀律部隊/",
+        text2: "航空業界人士",
+      },
+      content3: {
+        text1: "熱愛運動",
+      },
+      content4: {
+        text1: "不愛戴隱形眼鏡",
+        text2: "或眼鏡人士",
+      },
+      content5: {
+        text1: "擔心長期配戴隱形眼鏡",
+        text2: "影響眼睛健康人士",
+        mbText1: "擔心長期配戴",
+        mbText2: "隱形眼鏡影響眼睛",
+        mbText3: "健康人士",
+      },
     },
   },
   Correct: {

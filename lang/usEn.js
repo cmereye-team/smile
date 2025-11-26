@@ -3,6 +3,7 @@
     navbar: "Book NOW",
     divit: `More About<br />  Divit’s Lucky<br />  Draw`,
     headers: {
+      home: "Home",
       aboutSmile: "About Us",
       orthopedicServices: "Vision Correction",
       diagnosisInstructions: "Patient Info",
