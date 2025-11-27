@@ -6,7 +6,7 @@
         class="banner wrapper relative mt-20 md:mt-40 pb-4 md:pb-7 px-5 flex justify-between items-end"
       >
         <div
-          class="banner-bg before:absolute before:aspect-[1.37/1] before:w-[37.982vw] xl:before:w-[22.083vw] before:max-w-[220px] before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:-z-[1]"
+          class="banner-bg before:absolute before:aspect-[1.37/1] before:w-[37.982vw] xl:before:w-[22.083vw] before:max-w-[220px] xl:before:max-w-none before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:-z-[1]"
         >
           <div class="text-primary pt-10 md:pt-40 mb-16 md:mb-24">
             <p class="flex flex-col pb-2 md:pb-5">
@@ -18,7 +18,9 @@
                 $t("lasik.bannerTitle")
               }}</span>
             </p>
-            <p class="text-xs md:text-3xl">
+            <p
+              class="text-xs md:text-[clamp(1.25rem,-0.625rem_+_3.91vw,1.875rem)]"
+            >
               Laser-Assisted in Situ Keratomileusis
             </p>
           </div>
@@ -33,7 +35,7 @@
           </div>
         </div>
         <div
-          class="h-fit mb-[52px] -ml-10 md:ml-0 md:mb-[72px] text-white text-xs md:text-xl font-light whitespace-nowrap"
+          class="h-fit text-white text-xs md:text-xl font-light whitespace-nowrap absolute right-3 bottom-[52px] md:bottom-[72px]"
         >
           <p
             class="bg-primary w-fit pb-1 -mb-1 pt-1 px-5 md:pt-2 md:px-9 rounded-t-sm md:rounded-t-md"
@@ -349,34 +351,29 @@ export default {
 </script>
 <style lang="scss" scoped>
 $primary-color: #4570b6;
-// $min-x: -68;
-// $max-x: -220;
-// $min-w: 320;
-// $max-w: 767;
-// $coef: ($max-x - $min-x) / ($max-w - $min-w) * 100; // 转换成vw单位
-// $base: $min-x - $coef * $min-w / 100;
 @keyframes moveAiming {
-  0%,
-  57.12%,
-  100% {
-    rotate: 10deg;
-    transform: translate(0, 0);
-  }
   14.28% {
-    rotate: -10deg;
-    transform: translateY(60px);
+    rotate: 10deg;
+    transform: translate(#{"clamp(7.5rem, 3.026rem + 22.37vw, 13.75rem)"}, 0);
   }
   28.56% {
-    // left: 120px;
-    // right: auto;
-    transform: translate(calc(#{$coef}vw + #{$base}px), 60px);
-    rotate: 10deg;
+    transform: translate(
+      #{"clamp(7.5rem, 3.026rem + 22.37vw, 13.75rem)"},
+      100px
+    );
+    rotate: -10deg;
   }
   42.84% {
-    // left: 120px;
-    // right: auto;
-    transform: translate(calc(#{$coef}vw + #{$base}px), 0);
+    transform: translate(0, 80px);
+    rotate: 10deg;
+  }
+  57.12% {
     rotate: -10deg;
+    transform: translate(0, 0);
+  }
+  100% {
+    rotate: -10deg;
+    transform: translate(0, 0);
   }
 }
 :deep(.new-Footer-v2) {
@@ -395,19 +392,13 @@ $primary-color: #4570b6;
 }
 .banner {
   position: relative;
-  // &::before {
-  //   position: absolute;
-  //   background-image: url("https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg");
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   aspect-ratio: 1.37 / 1;
-  // }
   &-bg {
     &::before {
       animation: moveAiming 7s linear infinite;
-      right: 12px;
+      // right: 12px;
       top: -8px;
-      rotate: 10deg;
+      left: #{"clamp(7.5rem, 3.026rem + 22.37vw, 13.75rem)"};
+      rotate: -10deg;
     }
   }
 }
@@ -495,6 +486,15 @@ $primary-color: #4570b6;
     font-size: 30px;
     letter-spacing: 0.1em;
   }
+  .banner {
+    &-bg {
+      &::before {
+        left: auto;
+        right: 20%;
+        top: 16px;
+      }
+    }
+  }
   .benefits {
     &-item {
       border-width: 0;
@@ -532,6 +532,13 @@ $primary-color: #4570b6;
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .banner {
+    &-bg {
+      &::before {
+        top: 48px;
+      }
+    }
   }
 }
 </style>
