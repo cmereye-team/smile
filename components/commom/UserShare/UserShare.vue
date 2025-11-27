@@ -241,6 +241,7 @@ export default {
               position: absolute;
               inset: 0;
               background: linear-gradient(to bottom,transparent,rgba(0,0,0,0.2));
+              pointer-events: none;
             }
             .UserShareBox-list-item-link {
               position: relative;
@@ -413,6 +414,7 @@ export default {
               position: absolute;
               inset: 0;
               background: linear-gradient(to bottom,transparent,rgba(0,0,0,0.2));
+              pointer-events: none;
             }
             .UserShareBox-list-item-link {
               position: relative;
