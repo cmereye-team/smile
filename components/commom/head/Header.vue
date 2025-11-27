@@ -78,7 +78,7 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="3-1">
-                    <nuxt-link :to="localePath('/patient-info/#beforeJiaoShi')">
+                    <nuxt-link :to="localePath('/patient-info#beforeJiaoShi')">
                       {{
                         $t("home.headers.diagnosisInstructionsChild_1")
                       }}</nuxt-link>

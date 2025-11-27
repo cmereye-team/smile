@@ -186,7 +186,7 @@ export default {
             {
               id: 1,
               name: this.$t("home.headers.diagnosisInstructionsChild_1"),
-              path: "/patient-info/#beforeJiaoShi",
+              path: "/patient-info#beforeJiaoShi",
             },
             {
               id: 2,

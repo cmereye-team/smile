@@ -317,7 +317,7 @@ export default {
         child_list: [
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
-            link: "/patient-info/#beforeJiaoShi",
+            link: "/patient-info#beforeJiaoShi",
           },
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
@@ -433,7 +433,7 @@ export default {
           child_list: [
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
-              link: "/patient-info/#beforeJiaoShi",
+              link: "/patient-info#beforeJiaoShi",
             },
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
