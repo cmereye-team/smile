@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-20 15:05:37
- * @LastEditTime: 2025-11-25 16:56:08
+ * @LastEditTime: 2025-11-27 14:05:03
  * @FilePath: /components/Publice/HeadV3.vue
  * @Description: 第三版页头
 -->
@@ -38,6 +38,9 @@ $text-color: #6d6e71;
   position: sticky;
   top: 0;
   width: 100%;
+  &-logo {
+    background: #f6fafd;
+  }
   &-bg {
     width: 100%;
     min-height: 100%;

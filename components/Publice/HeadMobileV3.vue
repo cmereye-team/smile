@@ -1,13 +1,13 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 09:55:03
- * @LastEditTime: 2025-11-25 17:03:12
+ * @LastEditTime: 2025-11-27 14:03:17
  * @FilePath: /components/Publice/HeadMobileV3.vue
  * @Description: 移动端第三版头部的菜单
 -->
 <template>
   <div
-    class="HeadMobile"
+    class="HeadMobile w-full"
     :class="{ 'h-screen': showMenu }"
     @touchmove.stop.prevent
   >
@@ -239,7 +239,8 @@ $text-color: #6d6e71;
   &-whatsapp {
     @extend %icon;
     background-color: #67ad5b;
-    right: 162px;
+    // right: 162px;
+    right: #{'clamp(8.5rem, 4.742rem + 18.79vw, 13.75rem)'};
     top: 50px;
     width: 70px;
     height: 70px;
@@ -256,7 +257,8 @@ $text-color: #6d6e71;
   }
   &-lecture {
     @extend %icon;
-    right: 68px;
+    // right: 68px;
+    right: #{'clamp(3.5rem, 0.636rem + 14.32vw, 7.5rem)'};
     top: 0;
     background-color: $primary-color;
     width: 88px;
@@ -271,7 +273,8 @@ $text-color: #6d6e71;
   }
   &-icl {
     @extend %icon;
-    right: 68px;
+    // right: 68px;
+    right: #{'clamp(3.5rem, 0.636rem + 14.32vw, 7.5rem)'};
     top: 0;
     background-image: linear-gradient(180deg, #000034 62.5%, #01abcc 100%);
     width: 88px;
@@ -299,19 +302,6 @@ $text-color: #6d6e71;
     svg {
       width: #{"clamp(1rem, 0.636rem + 1.82vw, 2rem)"};
       height: #{"clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem)"};
-    }
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .icon {
-    &-whatsapp {
-      right: 220px;
-    }
-    &-lecture {
-      right: 120px;
-    }
-    &-icl {
-      right: 120px;
     }
   }
 }
