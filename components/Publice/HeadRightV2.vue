@@ -186,17 +186,17 @@ export default {
             {
               id: 1,
               name: this.$t("home.headers.diagnosisInstructionsChild_1"),
-              path: "/patient-info",
+              path: "/patient-info#beforeJiaoShi",
             },
             {
               id: 2,
               name: this.$t("home.headers.diagnosisInstructionsChild_2"),
-              path: "/flow-of-vision-correction",
+              path: "/patient-info#inJiaoShi",
             },
             {
               id: 3,
               name: this.$t("home.headers.diagnosisInstructionsChild_3"),
-              path: "/post-corrective-care",
+              path: "/patient-info#afterJiaoShi",
             },
           ],
         },

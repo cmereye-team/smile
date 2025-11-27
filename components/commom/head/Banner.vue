@@ -32,7 +32,7 @@
         ]"
         :style="{
           maxWidth:
-            $i18n.locale == 'en' && $route.path == '/en/post-corrective-care'
+            $i18n.locale == 'en' && $route.path == '/en/patient-info#afterJiaoShi'
               ? '350px'
               : 'initial',
           maxWidth:
@@ -41,11 +41,11 @@
               : 'initial',
           maxWidth:
             $i18n.locale == 'en' &&
-            $route.path == '/en/flow-of-vision-correction'
+            $route.path == '/en/patient-info#inJiaoShi'
               ? '240px'
               : 'initial',
           maxWidth:
-            $i18n.locale == 'en' && $route.path == '/en/post-corrective-care'
+            $i18n.locale == 'en' && $route.path == '/en/patient-info#afterJiaoShi'
               ? '380px'
               : 'initial',
           lineHeight:

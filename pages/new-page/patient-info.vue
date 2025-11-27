@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-07-03 17:29:35
- * @LastEditTime: 2025-09-26 16:42:58
+ * @LastEditTime: 2025-11-27 17:01:09
  * @FilePath: /pages/new-page/patient-info.vue
  * @Description: 诊症须知
 -->
@@ -797,17 +797,17 @@ export default {
       tabs: [
         {
           label: "矯視前",
-          href: "/patient-infoV2#beforeJiaoShi",
+          href: "/patient-info#beforeJiaoShi",
           id: "beforeJiaoShi",
         },
         {
           label: "矯視流程",
-          href: "/patient-infoV2#inJiaoShi",
+          href: "/patient-info#inJiaoShi",
           id: "inJiaoShi",
         },
         {
           label: "矯視後",
-          href: "/patient-infoV2#afterJiaoShi",
+          href: "/patient-info#afterJiaoShi",
           id: "afterJiaoShi",
         },
       ],
@@ -834,7 +834,7 @@ export default {
         if (target) {
           target.scrollIntoView({ behavior: "smooth" });
         }
-        history.pushState(null, null, `/patient-infoV2#${id}`);
+        history.pushState(null, null, `/patient-info#${id}`);
       });
     },
 

@@ -1098,17 +1098,17 @@ export default {
         {
           rel: "alternate",
           hreflang: "x-default",
-          href: "https://smile.hkcmereye.com/flow-of-vision-correction",
+          href: "https://smile.hkcmereye.com/patient-info#inJiaoShi",
         },
         {
           rel: "alternate",
           hreflang: "zh-Hant-HK",
-          href: "https://smile.hkcmereye.com/flow-of-vision-correction",
+          href: "https://smile.hkcmereye.com/patient-info#inJiaoShi",
         },
         {
           rel: "alternate",
           hreflang: "zh-Hans-CN",
-          href: "https://smile.hkcmereye.com/cn/flow-of-vision-correction",
+          href: "https://smile.hkcmereye.com/cn/patient-info#inJiaoShi",
         },
       ],
     };
@@ -1116,9 +1116,9 @@ export default {
   data() {
     return {
       isMobile: false,
-      canonicalHref: "https://smile.hkcmereye.com/flow-of-vision-correction",
+      canonicalHref: "https://smile.hkcmereye.com/patient-info#inJiaoShi",
       canonicalHrefCN:
-        "https://smile.hkcmereye.com/cn/flow-of-vision-correction",
+        "https://smile.hkcmereye.com/cn/patient-info#inJiaoShi",
       browserTitle: "矯視流程 - 香港希瑪微笑矯視中心",
       browserTitleCn: "矫视流程 - 香港希玛微笑矫视中心",
     };

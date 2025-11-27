@@ -568,7 +568,6 @@
                 <nuxt-link
                   class="new-Footer-v2-menu-item-link"
                   :to="item.link"
-                  href=""
                   >{{ item.child_item }}</nuxt-link
                 >
               </li>
@@ -590,7 +589,6 @@
                 <nuxt-link
                   class="new-Footer-v2-menu-item-link"
                   :to="item.link"
-                  href=""
                   >{{ item.child_item }}</nuxt-link
                 >
               </li>
@@ -612,7 +610,6 @@
                 <nuxt-link
                   class="new-Footer-v2-menu-item-link"
                   :to="item.link"
-                  href=""
                   >{{ item.child_item }}</nuxt-link
                 >
               </li>
@@ -656,7 +653,6 @@
                 <nuxt-link
                   class="new-Footer-v2-menu-item-link"
                   :to="item.link"
-                  href=""
                   >{{ item.child_item }}</nuxt-link
                 >
               </li>
@@ -826,19 +822,19 @@ export default {
       },
       diagnosisInstructionsList: {
         main_nav: this.$t("home.headers.diagnosisInstructions"),
-        link: "",
+        link: "/patient-info",
         child_list: [
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
-            link: "/patient-info",
+            link: "/patient-info#beforeJiaoShi",
           },
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
-            link: "/post-corrective-care",
+            link: "/patient-info#afterJiaoShi",
           },
           {
             child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
-            link: "/flow-of-vision-correction",
+            link: "/patient-info#inJiaoShi",
           },
         ],
       },
@@ -946,19 +942,19 @@ export default {
         },
         {
           main_nav: this.$t("home.headers.diagnosisInstructions"),
-          link: "#",
+          link: "/patient-info",
           child_list: [
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
-              link: "/patient-info",
+              link: "/patient-info#beforeJiaoShi",
             },
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
-              link: "/flow-of-vision-correction",
+              link: "/patient-info#inJiaoShi",
             },
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
-              link: "/post-corrective-care",
+              link: "/patient-info#afterJiaoShi",
             },
           ],
         },

@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 10:06:43
- * @LastEditTime: 2025-11-27 15:47:47
+ * @LastEditTime: 2025-11-27 17:22:49
  * @FilePath: /components/commom/option/SideV2.vue
  * @Description: 菜单栏
 -->
@@ -57,19 +57,19 @@ export default {
         },
         {
           main_nav: this.$t("home.headers.diagnosisInstructions"),
-          link: "",
+          link: "/patient-info",
           child_list: [
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
-              link: "/patient-info",
+              link: "/patient-info#beforeJiaoShi",
             },
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
-              link: "/flow-of-vision-correction",
+              link: "/patient-info#inJiaoShi",
             },
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
-              link: "/post-corrective-care",
+              link: "/patient-info#afterJiaoShi",
             },
           ],
         },

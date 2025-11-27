@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 09:55:03
- * @LastEditTime: 2025-11-27 16:15:57
+ * @LastEditTime: 2025-11-27 17:39:47
  * @FilePath: /components/Publice/HeadMobileV3.vue
  * @Description: 移动端第三版头部的菜单
 -->
@@ -209,6 +209,7 @@ export default {
   },
   data() {
     return {
+      isMobile: false,
       showMenu: false,
       originalStyles: [],
     };
@@ -218,6 +219,16 @@ export default {
       lecture: this.getStyle(".icon-lecture"),
       whatsapp: this.getStyle(".icon-whatsapp"),
     };
+    if (process.client) {
+      const debouncedUpdate = this.debounce(this.updateMobile, 200);
+      debouncedUpdate();
+      window.addEventListener("resize", debouncedUpdate);
+    }
+  },
+  beforeDestroy() {
+    if (process.client) {
+      window.removeEventListener("resize", this.debouncedUpdate);
+    }
   },
   methods: {
     /**
@@ -237,12 +248,34 @@ export default {
       };
     },
     /**
+     * @description: 判断是否为移动端
+     * @return {boolean}
+     */
+    updateMobile() {
+      this.isMobile = window.matchMedia("(max-width: 767px)").matches;
+    },
+    /**
+     * @description: 防抖函数
+     * @param {Function} fn 函数
+     * @param {number} delay 延迟ms
+     * @return {Function}
+     */
+    debounce(fn, delay = 300) {
+      let timer = null;
+      return function (...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          fn.apply(this, args);
+        }, delay);
+      };
+    },
+    /**
      * @description: 开启或关闭菜单，改变icon并触发动画
      * @param {boolean} status
      */
     toggleMenu(status) {
       this.showMenu = status;
-      if (window.innerWidth > 767) return;
+      if (!this.isMobile) return;
       if (status) {
         gsap.to([".icon-lecture", ".icon-whatsapp"], {
           width: "50px",
