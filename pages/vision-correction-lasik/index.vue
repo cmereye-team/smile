@@ -66,14 +66,14 @@
         </div>
       </section>
       <section class="principle bg-[#F6FAFD] pt-10 pb-8 md:py-[72px] mb-16">
-        <div class="wrapper">
+        <div class="wrapper px-6 xl:px-3 2xl:px-0">
           <h2 class="title-normal">{{ $t("lasik.principleTitle") }}</h2>
           <div
-            class="grid grid-cols-2 md:grid-cols-4 mb-5 md:mb-[72px]"
+            class="grid grid-cols-2 md:grid-cols-4 mb-5 md:mb-[72px] gap-x-[21.538vw] gap-y-14 md:gap-[7%]"
             role="list"
           >
             <div
-              class="principle-item"
+              class="principle-item relative flex flex-col justify-between w-full"
               role="listitem"
               v-for="(item, index) in principleList"
               :key="index"
@@ -81,11 +81,11 @@
               <span class="principle-num font-en">{{
                 String(index + 1).padStart(2, "0")
               }}</span>
-              <img :src="item" :alt="`步驟${index + 1}`" />
+              <img :src="item" :alt="`步驟${index + 1}`" class="w-full" />
             </div>
           </div>
           <p
-            class="w-[85%] md:w-1/2 mx-auto text-text text-base md:text-xl font-light tracking-[0.3em]"
+            class="w-full md:w-2/3 mx-auto text-text text-base md:text-xl font-light tracking-[0.3em]"
           >
             {{ $t("lasik.principleDesc") }}
           </p>
@@ -105,24 +105,24 @@
           >
             <figure>
               <div
-                class="size-[68px] md:size-[92px] flex justify-center items-center mb-3 md:mb-4 mx-auto"
+                class="size-[68px] md:size-[4.792vw] flex justify-center items-center mb-3 md:mb-[0.625vw] mx-auto"
               >
                 <img
                   :src="item.icon"
-                  :alt="item.title"
-                  :title="item.title"
+                  :alt="$t(item.title)"
+                  :title="$t(item.title)"
                   loading="lazy"
                   class="size-full object-contain"
                 />
               </div>
               <figcaption>
                 <h3
-                  class="pb-2 md:pb-3 tracking-widest md:tracking-[0.35em] text-lg md:text-3xl text-primary font-bold text-center"
+                  class="mb-2 md:mb-[0.625vw] tracking-widest md:tracking-[0.35em] text-lg md:text-[clamp(1.25rem,0.833rem_+_0.87vw,1.875rem)] text-primary font-bold text-center"
                 >
                   {{ $t(item.title) }}
                 </h3>
                 <p
-                  class="text-base md:text-2xl font-light text-text text-center tracking-[0.15em] md:tracking-[0.2em] leading-[18px] md:leading-normal"
+                  class="text-base md:text-[clamp(1rem,0.667rem_+_0.69vw,1.5rem)] font-light text-text text-center tracking-[0.15em] md:tracking-[0.2em] leading-[18px] md:leading-normal"
                   v-html="$t(item.text).join('<br/>')"
                 ></p>
               </figcaption>
@@ -132,7 +132,7 @@
       </section>
       <section
         id="lasik-suitable"
-        class="suitable pt-20 md:mb-[152px] relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate.svg)] before:w-[175vw] before:h-[70vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-[24%] md:before:w-[120vw] md:before:left-0 before:-z-[1]"
+        class="suitable overflow-hidden pt-20 lg:mb-[152px] relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate.svg)] before:w-[175vw] before:h-[70vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-[24%] md:before:w-[120vw] md:before:left-0 before:-z-[1]"
       >
         <div class="wrapper text-base md:text-xl font-light mb-8 md:mb-16">
           <div
@@ -156,7 +156,7 @@
             >
               <figure>
                 <div
-                  class="flex justify-center items-center size-[16.41vw] md:size-[6.25vw] mx-auto mb-3"
+                  class="flex justify-center items-center size-[16.41vw] xl:size-[6.25vw] mx-auto mb-3"
                 >
                   <img
                     :src="item.icon"
@@ -390,15 +390,20 @@ $primary-color: #4570b6;
 }
 .principle {
   &-item {
-    display: flex;
-    flex-direction: column;
+    &:nth-child(3) {
+      order: 4;
+    }
+    &:nth-child(4) {
+      order: 3;
+    }
   }
   &-num {
-    font-size: 48px;
+    font-size: 12.308vw;
     font-weight: 700;
     -webkit-text-stroke-color: $primary-color;
     -webkit-text-stroke-width: 0.5px;
     color: transparent;
+    line-height: 1;
   }
 }
 .suitable {
@@ -412,6 +417,43 @@ $primary-color: #4570b6;
     }
     &:nth-child(3) {
       margin-right: -6%;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .principle {
+    &-item {
+      &::before {
+        content: "";
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 27.692vw;
+        height: 3.077vw;
+      }
+      &:nth-child(1) {
+        &::before {
+          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTAiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMTAgMTMiIGZpbGw9Im5vbmUiPgogIDxwYXRoIGQ9Ik0xMDguODc1IDEyLjM5ODNMOTYuNzEwOSAwLjIzMzk0OCIgc3Ryb2tlPSIjNDU3MEI2IiBzdHJva2Utd2lkdGg9IjAuNDY3ODYxIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iLTIuMDQ1MDllLTA4IiB5MT0iMTIuNDA2NSIgeDI9IjEwOC44NzYiIHkyPSIxMi40MDY1IiBzdHJva2U9IiM0NTcwQjYiIHN0cm9rZS13aWR0aD0iMC40Njc4NjEiLz4KPC9zdmc+");
+          left: 100%;
+          top: 60%;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSI3MyIgdmlld0JveD0iMCAwIDE0IDczIiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMS4xNTM0NCA3Mi4yMTI5TDEyLjExMDQgNTguOTUwNiIgc3Ryb2tlPSIjNDU3MEI2IiBzdHJva2Utd2lkdGg9IjAuNDY3ODYxIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMC43MDI2ODEiIHkxPSItMS4wMjI1NGUtMDgiIHgyPSIwLjcwMjY4NCIgeTI9IjcyLjUxODUiIHN0cm9rZT0iIzQ1NzBCNiIgc3Ryb2tlLXdpZHRoPSIwLjQ2Nzg2MSIvPgo8L3N2Zz4=");
+          width: 3.59vw;
+          height: 18.462vw;
+          bottom: -20vw;
+          right: 35%;
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDUiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMDUgMTMiIGZpbGw9Im5vbmUiPgogIDxwYXRoIGQ9Ik0wLjIzNDA0NyAxMi4zOTgzTDEyLjM5ODQgMC4yMzM4ODciIHN0cm9rZT0iIzQ1NzBCNiIgc3Ryb2tlLXdpZHRoPSIwLjQ2Nzg2MSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjAuMjM0Mzc1IiB5MT0iMTIuNjMyMyIgeDI9IjEwNC43OSIgeTI9IjEyLjYzMjMiIHN0cm9rZT0iIzQ1NzBCNiIgc3Ryb2tlLXdpZHRoPSIwLjQ2Nzg2MSIvPgo8L3N2Zz4=");
+          right: 90%;
+          top: 55%;
+        }
+      }
     }
   }
 }
@@ -429,8 +471,16 @@ $primary-color: #4570b6;
     }
   }
   .principle {
+    &-item {
+      &:nth-child(3) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+    }
     &-num {
-      font-size: 100px;
+      font-size: #{"clamp(3.75rem, 2.083rem + 3.47vw, 6.25rem)"};
       -webkit-text-stroke-width: 1px;
     }
   }
