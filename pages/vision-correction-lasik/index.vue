@@ -3,10 +3,10 @@
     <Header />
     <main>
       <section
-        class="banner wrapper mt-20 md:mt-40 pb-4 md:pb-7 px-5 flex justify-between items-end"
+        class="banner wrapper relative mt-20 md:mt-40 pb-4 md:pb-7 px-5 flex justify-between items-end"
       >
         <div
-          class="banner-bg relative before:absolute before:aspect-[1.37/1] before:w-[37.982vw] xl:before:w-[22.083vw] before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:-z-[1]"
+          class="banner-bg before:absolute before:aspect-[1.37/1] before:w-[37.982vw] xl:before:w-[22.083vw] before:max-w-[220px] before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:-z-[1]"
         >
           <div class="text-primary pt-10 md:pt-40 mb-16 md:mb-24">
             <p class="flex flex-col pb-2 md:pb-5">
@@ -23,7 +23,7 @@
             </p>
           </div>
           <div
-            class="tracking-wide text-text text-xs md:text-xl font-light leading-[3] md:leading-loose"
+            class="tracking-wide text-text text-xs md:text-xl font-light leading-[3] md:leading-loose whitespace-nowrap"
           >
             <a href="/">{{ $t("home.headers.home") }}</a>
             &gt;&nbsp;<span>{{ $t("home.headers.orthopedicServices") }}</span>
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div
-          class="h-fit mb-[52px] md:mb-[72px] text-white text-xs md:text-xl font-light whitespace-nowrap"
+          class="h-fit mb-[52px] -ml-10 md:ml-0 md:mb-[72px] text-white text-xs md:text-xl font-light whitespace-nowrap"
         >
           <p
             class="bg-primary w-fit pb-1 -mb-1 pt-1 px-5 md:pt-2 md:px-9 rounded-t-sm md:rounded-t-md"
@@ -349,6 +349,36 @@ export default {
 </script>
 <style lang="scss" scoped>
 $primary-color: #4570b6;
+// $min-x: -68;
+// $max-x: -220;
+// $min-w: 320;
+// $max-w: 767;
+// $coef: ($max-x - $min-x) / ($max-w - $min-w) * 100; // 转换成vw单位
+// $base: $min-x - $coef * $min-w / 100;
+@keyframes moveAiming {
+  0%,
+  57.12%,
+  100% {
+    rotate: 10deg;
+    transform: translate(0, 0);
+  }
+  14.28% {
+    rotate: -10deg;
+    transform: translateY(60px);
+  }
+  28.56% {
+    // left: 120px;
+    // right: auto;
+    transform: translate(calc(#{$coef}vw + #{$base}px), 60px);
+    rotate: 10deg;
+  }
+  42.84% {
+    // left: 120px;
+    // right: auto;
+    transform: translate(calc(#{$coef}vw + #{$base}px), 0);
+    rotate: -10deg;
+  }
+}
 :deep(.new-Footer-v2) {
   margin-top: 0;
 }
@@ -365,16 +395,19 @@ $primary-color: #4570b6;
 }
 .banner {
   position: relative;
-  &::before {
-    position: absolute;
-    background-image: url("https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    aspect-ratio: 1.37 / 1;
-  }
+  // &::before {
+  //   position: absolute;
+  //   background-image: url("https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   aspect-ratio: 1.37 / 1;
+  // }
   &-bg {
     &::before {
-      rotate: -10deg;
+      animation: moveAiming 7s linear infinite;
+      right: 12px;
+      top: -8px;
+      rotate: 10deg;
     }
   }
 }
