@@ -34,8 +34,8 @@ export default {
   },
   data() {
     return {
-      canonicalHref: "https://smile.hkcmereye.com/post-corrective-care",
-      canonicalHrefCN: "https://smile.hkcmereye.com/cn/post-corrective-care",
+      canonicalHref: "https://smile.hkcmereye.com/patient-info#afterJiaoShi",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/patient-info#afterJiaoShi",
       browserTitle: "術後護理 - 希瑪微笑矯視中心",
       browserTitleCn: "术后护理 - 希玛微笑矫视中心",
     }
@@ -63,9 +63,9 @@ export default {
       ],
       link: [
         { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/post-corrective-care" },
-        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/post-corrective-care" },
-        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/post-corrective-care" },
+        { rel: "alternate", hreflang:"x-default", href:"https://smile.hkcmereye.com/patient-info#afterJiaoShi" },
+        { rel: "alternate", hreflang:"zh-Hant-HK", href:"https://smile.hkcmereye.com/patient-info#afterJiaoShi" },
+        { rel: "alternate", hreflang:"zh-Hans-CN", href:"https://smile.hkcmereye.com/cn/patient-info#afterJiaoShi" },
       ]
     };
   },

@@ -28,7 +28,7 @@
         :class="$i18n.locale == 'en' ? 'gradient_font_en' : 'gradient_font'"
         :style="{
           maxWidth:
-            $i18n.locale == 'en' && $route.path == '/en/post-corrective-care'
+            $i18n.locale == 'en' && $route.path == '/en/patient-info#afterJiaoShi'
               ? '350px'
               : 'initial',
         }"

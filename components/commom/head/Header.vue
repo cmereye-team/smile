@@ -78,17 +78,17 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="3-1">
-                    <nuxt-link :to="localePath('/patient-info')">
+                    <nuxt-link :to="localePath('/patient-info/#beforeJiaoShi')">
                       {{
                         $t("home.headers.diagnosisInstructionsChild_1")
                       }}</nuxt-link>
                   </el-menu-item>
                   <el-menu-item index="3-2">
-                    <nuxt-link :to="localePath('/flow-of-vision-correction')">{{
+                    <nuxt-link :to="localePath('/patient-info#inJiaoShi')">{{
                       $t("home.headers.diagnosisInstructionsChild_2")
                     }}</nuxt-link></el-menu-item>
                   <el-menu-item index="3-3">
-                    <nuxt-link :to="localePath('/post-corrective-care')">{{
+                    <nuxt-link :to="localePath('/patient-info#afterJiaoShi')">{{
                       $t("home.headers.diagnosisInstructionsChild_3")
                     }}</nuxt-link>
                   </el-menu-item>
@@ -412,19 +412,19 @@ export default {
         },
         {
           main_nav: this.$t("home.headers.diagnosisInstructions"),
-          link: "",
+          link: "/patient-info",
           child_list: [
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_1"),
-              link: "/patient-info",
+              link: "/patient-info#beforeJiaoShi",
             },
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_2"),
-              link: "/flow-of-vision-correction",
+              link: "/patient-info#inJiaoShi",
             },
             {
               child_item: this.$t("home.headers.diagnosisInstructionsChild_3"),
-              link: "/post-corrective-care",
+              link: "/patient-info#afterJiaoShi",
             },
           ],
         },

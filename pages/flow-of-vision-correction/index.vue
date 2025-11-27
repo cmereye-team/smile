@@ -46,16 +46,16 @@ export default {
       ],
       link: [
         { rel: 'canonical', href: this.$i18n.locale === 'cn' ? this.canonicalHrefCN : this.canonicalHref },
-        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/flow-of-vision-correction" },
-        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/flow-of-vision-correction" },
-        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/flow-of-vision-correction" },
+        { rel: "alternate", hreflang: "x-default", href: "https://smile.hkcmereye.com/patient-info#inJiaoShi" },
+        { rel: "alternate", hreflang: "zh-Hant-HK", href: "https://smile.hkcmereye.com/patient-info#inJiaoShi" },
+        { rel: "alternate", hreflang: "zh-Hans-CN", href: "https://smile.hkcmereye.com/cn/patient-info#inJiaoShi" },
       ]
     };
   },
   data() {
     return {
-      canonicalHref: "https://smile.hkcmereye.com/flow-of-vision-correction",
-      canonicalHrefCN: "https://smile.hkcmereye.com/cn/flow-of-vision-correction",
+      canonicalHref: "https://smile.hkcmereye.com/patient-info#inJiaoShi",
+      canonicalHrefCN: "https://smile.hkcmereye.com/cn/patient-info#inJiaoShi",
       browserTitle: "矯視流程 - 希瑪微笑矯視中心",
       browserTitleCn: "矫视流程 - 希玛微笑矫视中心",
     }
