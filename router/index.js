@@ -42,15 +42,15 @@ export const $router = [
     title: "中心設備",
     component: resolve("pages/new-page/equipment.vue"),
   },
+  // {
+  //   path: "/patient-info",
+  //   name: "patient-info",
+  //   title: "診症須知",
+  //   component: resolve("pages/patient-info/index.vue"),
+  // },
   {
-    path: "/patient-info",
+    path: "/patient-info", 
     name: "patient-info",
-    title: "診症須知",
-    component: resolve("pages/patient-info/index.vue"),
-  },
-  {
-    path: "/patient-infoV2", 
-    name: "patient-infoV2",
     title: "診症須知",
     component: resolve("pages/new-page/patient-info.vue"),
   },
