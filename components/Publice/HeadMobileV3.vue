@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 09:55:03
- * @LastEditTime: 2025-11-27 14:03:17
+ * @LastEditTime: 2025-11-27 16:15:57
  * @FilePath: /components/Publice/HeadMobileV3.vue
  * @Description: 移动端第三版头部的菜单
 -->
@@ -31,7 +31,11 @@
         <p><span>WhatsApp</span><br />預約</p>
       </div>
     </a>
-    <a href="https://api.whatsapp.com/send/?phone=85297962992&text=我想登記(ICLtalk-land_04)Lansheng x CMER ICL植入式隱形眼鏡講座專場" target="_blank" v-if="isICLTalk">
+    <a
+      href="https://api.whatsapp.com/send/?phone=85297962992&text=我想登記(ICLtalk-land_04)Lansheng x CMER ICL植入式隱形眼鏡講座專場"
+      target="_blank"
+      v-if="isICLTalk"
+    >
       <div class="icon icon-icl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +145,7 @@
         </p>
       </div>
     </nuxt-link>
-    <div class="icon-menu" v-show="!showMenu" @click="showMenu = true">
+    <div class="icon-menu" v-show="!showMenu" @click="toggleMenu(true)">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="33"
@@ -166,7 +170,7 @@
         />
       </svg>
     </div>
-    <div class="icon-menu close" v-show="showMenu" @click="showMenu = false">
+    <div class="icon-menu close" v-show="showMenu" @click="toggleMenu(false)">
       <svg
         width="25"
         height="24"
@@ -206,7 +210,72 @@ export default {
   data() {
     return {
       showMenu: false,
+      originalStyles: [],
     };
+  },
+  mounted() {
+    this.originalStyles = {
+      lecture: this.getStyle(".icon-lecture"),
+      whatsapp: this.getStyle(".icon-whatsapp"),
+    };
+  },
+  methods: {
+    /**
+     * @description: 获取按钮原来的大小和位置
+     * @param {string} selector css选择器
+     * @return {Object}
+     */
+    getStyle(selector) {
+      const el = document.querySelector(selector);
+      const styles = getComputedStyle(el);
+      return {
+        width: el.offsetWidth + "px",
+        height: el.offsetHeight + "px",
+        top: styles.top,
+        right: styles.right,
+        fontSize: styles.fontSize,
+      };
+    },
+    /**
+     * @description: 开启或关闭菜单，改变icon并触发动画
+     * @param {boolean} status
+     */
+    toggleMenu(status) {
+      this.showMenu = status;
+      if (window.innerWidth > 767) return;
+      if (status) {
+        gsap.to([".icon-lecture", ".icon-whatsapp"], {
+          width: "50px",
+          height: "50px",
+          top: "12px",
+          fontSize: "8px",
+          duration: 0.4,
+        });
+        gsap.to(".icon-whatsapp", {
+          right: "clamp(7rem, 2.168rem + 24.16vw, 13.75rem)",
+          duration: 0.4,
+          ease: "power2.out",
+        });
+        gsap.to([".icon-whatsapp p", ".icon-lecture p"], {
+          marginTop: "0px",
+          duration: 0.4,
+        });
+      } else {
+        gsap.to(".icon-lecture", {
+          ...this.originalStyles.lecture,
+          duration: 0.4,
+        });
+        gsap.to(".icon-whatsapp", {
+          ...this.originalStyles.whatsapp,
+          duration: 0.4,
+          ease: "power2.inOut",
+        });
+        gsap.to(".icon p", {
+          marginTop: "clamp(.25rem,.159rem + .45vw,.5rem)",
+          duration: 0.4,
+        });
+      }
+    },
   },
 };
 </script>
@@ -240,13 +309,13 @@ $text-color: #6d6e71;
     @extend %icon;
     background-color: #67ad5b;
     // right: 162px;
-    right: #{'clamp(8.5rem, 4.742rem + 18.79vw, 13.75rem)'};
+    right: #{"clamp(8.5rem, 4.742rem + 18.79vw, 13.75rem)"};
     top: 50px;
     width: 70px;
     height: 70px;
     svg {
-      width: 28px;
-      height: 28px;
+      width: 40%;
+      height: 40%;
     }
     p {
       @extend %icon-text;
@@ -258,14 +327,14 @@ $text-color: #6d6e71;
   &-lecture {
     @extend %icon;
     // right: 68px;
-    right: #{'clamp(3.5rem, 0.636rem + 14.32vw, 7.5rem)'};
+    right: #{"clamp(3.5rem, 0.636rem + 14.32vw, 7.5rem)"};
     top: 0;
     background-color: $primary-color;
     width: 88px;
     height: 88px;
     svg {
-      width: 40px;
-      height: 44px;
+      width: 45%;
+      height: 50%;
     }
     p {
       @extend %icon-text;
@@ -274,7 +343,7 @@ $text-color: #6d6e71;
   &-icl {
     @extend %icon;
     // right: 68px;
-    right: #{'clamp(3.5rem, 0.636rem + 14.32vw, 7.5rem)'};
+    right: #{"clamp(3.5rem, 0.636rem + 14.32vw, 7.5rem)"};
     top: 0;
     background-image: linear-gradient(180deg, #000034 62.5%, #01abcc 100%);
     width: 88px;

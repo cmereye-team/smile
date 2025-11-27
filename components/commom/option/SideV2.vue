@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 10:06:43
- * @LastEditTime: 2025-11-27 14:39:56
+ * @LastEditTime: 2025-11-27 15:47:47
  * @FilePath: /components/commom/option/SideV2.vue
  * @Description: 菜单栏
 -->
@@ -190,7 +190,7 @@ export default {
   <div class="side">
     <template v-if="isMobile">
       <div
-        class="menu flex flex-wrap items-start content-start overflow-y-auto pointer-events-auto h-[calc(100vh_-_120px)]"
+        class="menu flex flex-wrap items-start content-start overflow-y-auto pointer-events-auto h-[calc(100vh_-_188px)]"
       >
         <!-- 左侧列表 -->
         <div class="flex-1 space-y-5">
@@ -555,7 +555,7 @@ export default {
 }
 @media screen and (max-width: 767px) {
   .menu {
-    padding-top: 120px;
+    margin-top: 72px;
     scrollbar-width: none;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
@@ -573,7 +573,7 @@ export default {
 }
 @media screen and (min-width: 768px) {
   .menu {
-    padding-top: #{"clamp(8.25rem, 6.25rem + 10vw, 13.75rem)"};
+    margin-top: #{"clamp(8.25rem, 6.25rem + 10vw, 13.75rem)"};
     &-list {
       // 16-20
       font-size: #{"clamp(1rem, 0.25rem + 1.56vw, 1.25rem)"};
