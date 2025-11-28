@@ -55,15 +55,22 @@
         class="intro aspect-[77/100] md:aspect-[30/13] flex justify-center items-center md:justify-end bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-bg-m.avif)] md:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-bg-pc.avif)] bg-no-repeat bg-cover"
       >
         <div
-          class="size-[118vw] md:size-[35vw] md:min-w-[440px] md:min-h-[440px] lg:min-w-[480px] lg:min-h-[480px] md:mr-[8%] flex justify-center items-center bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-textbg-m.svg)] md:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-textbg-pc.svg)] bg-no-repeat bg-contain bg-center"
+          class="intro-main relative size-[110vw] md:size-[35vw] aspect-square md:min-w-[440px] md:min-h-[440px] lg:min-w-[480px] lg:min-h-[480px] md:mr-[8%] border-primary border-[2px] rounded-full flex justify-center items-center"
         >
-          <div class="w-[65%]">
-            <h1 class="title-normal text-center pb-2 md:pb-4">
-              {{ $t("lasik.pageTitle") }}
-            </h1>
-            <p class="text-text text-justify text-base lg:text-xl font-light">
-              {{ $t("lasik.introDesc") }}
-            </p>
+          <div
+            class="size-[88%] bg-white rounded-full relative flex justify-center items-center"
+          >
+            <div
+              class="size-full absolute before:absolute before:animate-bounce before:size-full before:content-[''] before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-crosshair-m.svg)] md:before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-intro-crosshair-pc.svg)] before:bg-no-repeat before:bg-cover before:bg-center"
+            ></div>
+            <div class="w-[65%] z-10">
+              <h1 class="title-normal text-center pb-2 md:pb-4">
+                {{ $t("lasik.pageTitle") }}
+              </h1>
+              <p class="text-text text-justify text-base lg:text-xl font-light">
+                {{ $t("lasik.introDesc") }}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -100,6 +107,7 @@
         <ul
           class="grid grid-cols-2 md:grid-cols-4 border-[#4570B6] border md:border-2"
         >
+          <!-- FIXME:移动端箭头消失 -->
           <li
             v-for="(item, index) in benefitsList"
             :key="index"
@@ -390,6 +398,58 @@ $primary-color: #4570b6;
     transform: translate(0, 0);
   }
 }
+@keyframes rotateCenter {
+  // 0% (0s) -> 6.25% (0.5s): 旋转 90 度
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  6.25% {
+    /* 0.5s / 8s = 6.25% */
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  // 6.25% -> 25% (2s): 暂停 1.5 秒
+  25% {
+    /* 2s / 8s = 25% */
+    transform: translate(-50%, -50%) rotate(90deg); /* 保持在 90 度 */
+  }
+
+  // 25% (2s) -> 31.25% (2.5s): 旋转到 180 度
+  31.25% {
+    /* 2.5s / 8s = 31.25% */
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  // 31.25% -> 50% (4s): 暂停 1.5 秒
+  50% {
+    /* 4s / 8s = 50% */
+    transform: translate(-50%, -50%) rotate(180deg); /* 保持在 180 度 */
+  }
+
+  // 50% (4s) -> 56.25% (4.5s): 旋转到 270 度
+  56.25% {
+    /* 4.5s / 8s = 56.25% */
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+
+  // 56.25% -> 75% (6s): 暂停 1.5 秒
+  75% {
+    /* 6s / 8s = 75% */
+    transform: translate(-50%, -50%) rotate(270deg); /* 保持在 270 度 */
+  }
+
+  // 75% (6s) -> 81.25% (6.5s): 旋转到 360 度
+  81.25% {
+    /* 6.5s / 8s = 81.25% */
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+
+  // 81.25% -> 100% (8s): 暂停 1.5 秒，等待循环
+  100% {
+    /* 8s / 8s = 100% */
+    transform: translate(-50%, -50%) rotate(360deg); /* 保持在 360 度 */
+  }
+}
 :deep(.new-Footer-v2) {
   margin-top: 0;
 }
@@ -412,6 +472,27 @@ $primary-color: #4570b6;
       top: -8px;
       left: #{"clamp(7.5rem, 3.026rem + 22.37vw, 13.75rem)"};
       rotate: -10deg;
+    }
+  }
+}
+.intro {
+  .intro-main {
+    &::before {
+      @include pseudo-bg(1, 107%, 107%);
+      animation: rotateCenter 10s linear infinite;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzYzIiBoZWlnaHQ9Ijc2MyIgdmlld0JveD0iMCAwIDc2MyA3NjMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zODEuMjUxIDBMMzUxLjQ2MSAxNS42OEg0MTEuMDMxTDM4MS4yNTEgMFoiIGZpbGw9IiM0NTcwQjYiLz4KPHBhdGggZD0iTTM4MS4yNTEgNzYyLjQ5TDM1MS40NjEgNzQ2LjgySDQxMS4wMzFMMzgxLjI1MSA3NjIuNDlaIiBmaWxsPSIjNDU3MEI2Ii8+CjxwYXRoIGQ9Ik0wIDM4MS4yNUwxNS42OCA0MTEuMDNWMzUxLjQ2TDAgMzgxLjI1WiIgZmlsbD0iIzQ1NzBCNiIvPgo8cGF0aCBkPSJNNzYyLjUgMzgxLjI1TDc0Ni44MiA0MTEuMDNWMzUxLjQ2TDc2Mi41IDM4MS4yNVoiIGZpbGw9IiM0NTcwQjYiLz4KPC9zdmc+Cg==");
+    }
+    &::after {
+      @include pseudo-bg(1, 95%, 95%);
+      animation: rotateCenter 10s linear infinite;
+      animation-delay: 0.5s;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjc0IiBoZWlnaHQ9IjY3NCIgdmlld0JveD0iMCAwIDY3NCA2NzQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNjYuNjMxIDBIMzA3LjA2MVY0LjkzMDAxSDM2Ni42MzFWMFoiIGZpbGw9IiM0NTcwQjYiLz4KPHBhdGggZD0iTTM2Ni42MzEgNjY4Ljc2SDMwNy4wNjFWNjczLjY5SDM2Ni42MzFWNjY4Ljc2WiIgZmlsbD0iIzQ1NzBCNiIvPgo8cGF0aCBkPSJNMCAzMDcuMDdMMCAzNjYuNjRINC45Mjk5OUw0LjkyOTk5IDMwNy4wN0gwWiIgZmlsbD0iIzQ1NzBCNiIvPgo8cGF0aCBkPSJNNjY4Ljc3IDMwNy4wNlYzNjYuNjNINjczLjdWMzA3LjA2SDY2OC43N1oiIGZpbGw9IiM0NTcwQjYiLz4KPC9zdmc+Cg==");
     }
   }
 }
@@ -494,7 +575,7 @@ $primary-color: #4570b6;
     .principle-item {
       &::before {
         position: absolute;
-        contain: "";
+        content: "";
         background-repeat: no-repeat;
         background-size: contain;
         width: 27.692vw;
