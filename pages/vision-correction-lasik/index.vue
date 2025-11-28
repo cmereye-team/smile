@@ -134,10 +134,10 @@
       </section>
       <section
         id="lasik-suitable"
-        class="suitable overflow-hidden pt-20 md:pt-40 xl:pt-[220px] lg:mb-[152px] relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate-m.svg)] md:before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate-pc.svg)] before:w-[120vw] before:h-[80vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-0 md:before:w-[120vw] before:-z-[1] after:absolute after:bg-[url(https://statichk.cmermedical.com/smile/lasik/tumbling-e.svg)] after:bg-contain after:bg-no-repeat after:size-[22.564vw] md:after:size-[9.375vw] after:-rotate-[42deg] md:after:-rotate-15 after:top-0 after:right-1"
+        class="suitable overflow-hidden pt-20 md:pt-40 xl:pt-[220px] lg:mb-[152px] relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate-m.svg)] md:before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate-pc.svg)] before:w-[120vw] before:h-[80vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-0 md:before:w-[120vw] before:-z-[1] md:before:-left-[12vw] md:before:top-[5%]"
       >
         <div
-          class="wrapper text-base md:text-xl font-light mb-8 md:mb-[188px] relative"
+          class="suitable-bg wrapper text-base md:text-xl font-light mb-8 md:mb-[clamp(15rem,-2.391rem_+_36.23vw,27.5rem)] relative after:absolute after:bg-[url(https://statichk.cmermedical.com/smile/lasik/tumbling-e.svg)] after:bg-contain after:bg-no-repeat after:size-[22.564vw] md:after:size-[9.375vw] after:-rotate-[42deg] md:after:-rotate-[15deg] after:-top-20 after:right-1 md:after:-top-24 after:max-w-[180px] after:max-h-[180px]"
         >
           <div
             class="suitable-intro border-primary border md:border-[2px] bg-[linear-gradient(210deg,#FFF_13.8%,#F2F7FF_70.44%)] rounded-full aspect-square h-auto w-[80vw] md:w-[55vw] lg:w-[45vw] xl:w-1/2 pt-[15%] md:pt-[8%] xl:pt-[15%] -mb-[30%] md:-mb-[40%] mx-auto"
@@ -409,7 +409,6 @@ $primary-color: #4570b6;
   .banner-bg {
     &::before {
       animation: moveAiming 7s linear infinite;
-      // right: 12px;
       top: -8px;
       left: #{"clamp(7.5rem, 3.026rem + 22.37vw, 13.75rem)"};
       rotate: -10deg;
@@ -468,6 +467,8 @@ $primary-color: #4570b6;
       rotate: 22deg;
       left: -30px;
       bottom: 8%;
+      max-width: 388px;
+      max-height: 300px;
     }
     &::after {
       @include pseudo-bg(10, 21.538vw, 28.718vw);
@@ -486,15 +487,6 @@ $primary-color: #4570b6;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-// 小屏特殊优化
-@media screen and (max-width: 359px) {
-  .suitable {
-    .suitable-desc {
-      margin-top: -12px;
-      letter-spacing: 0.1em;
-    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -591,22 +583,33 @@ $primary-color: #4570b6;
   .suitable {
     .suitable-intro {
       &::before {
-        @include pseudo-bg(10, 8.646vw, 17.344vw);
+        @include pseudo-bg(10, 16vw, 26vw);
+        max-width: 166px;
+        max-height: 333px;
+        left: -44px;
+        top: -80px;
       }
       &::after {
-        @include pseudo-bg(-1, 6.823vw, 18.906vw);
+        @include pseudo-bg(-1, 14vw, 30vw);
+        max-width: 132px;
+        max-height: 364px;
       }
     }
     .suitable-list {
       &::before {
         @include pseudo-bg(10, 17.969vw, 9.531vw);
-        max-width: 388px;
-        max-height: 300px;
+        max-width: 344px;
+        max-height: 182px;
         left: -12px;
         bottom: -60%;
       }
       &::after {
-        @include pseudo-bg(10, 8.75vw, 12.76vw);
+        @include pseudo-bg(10, 16vw, 20vw);
+        rotate: 2deg;
+        right: 27%;
+        bottom: -10%;
+        max-width: 232px;
+        max-height: 288px;
       }
     }
     .suitable-item {
@@ -647,13 +650,38 @@ $primary-color: #4570b6;
       }
     }
   }
+  .suitable {
+    .suitable-intro {
+      &::after {
+        top: -100px;
+      }
+    }
+  }
 }
+// 小屏优化
+@media screen and (max-width: 359px) {
+  .suitable {
+    .suitable-desc {
+      margin-top: -12px;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+// 大屏优化 1080P
 @media screen and (min-width: 1920px) {
   .suitable {
     .suitable-list {
       &::before {
         left: -15%;
       }
+    }
+  }
+}
+// 大屏优化 2k
+@media screen and (min-width: 2560px) {
+  .suitable {
+    &::before {
+      top: -8vw;
     }
   }
 }
