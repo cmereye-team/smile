@@ -134,22 +134,27 @@
       </section>
       <section
         id="lasik-suitable"
-        class="suitable overflow-hidden pt-20 lg:mb-[152px] relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate.svg)] before:w-[175vw] before:h-[70vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-[24%] md:before:w-[120vw] md:before:left-0 before:-z-[1]"
+        class="suitable overflow-hidden pt-20 md:pt-40 xl:pt-[220px] lg:mb-[152px] relative before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate-m.svg)] md:before:bg-[url(https://statichk.cmermedical.com/smile/lasik/line-animate-pc.svg)] before:w-[120vw] before:h-[80vw] before:bg-no-repeat before:bg-contain before:rotate-[2deg] md:before:-rotate-[10deg] before:-left-0 md:before:w-[120vw] before:-z-[1] after:absolute after:bg-[url(https://statichk.cmermedical.com/smile/lasik/tumbling-e.svg)] after:bg-contain after:bg-no-repeat after:size-[22.564vw] md:after:size-[9.375vw] after:-rotate-[42deg] md:after:-rotate-15 after:top-0 after:right-1"
       >
-        <div class="wrapper text-base md:text-xl font-light mb-8 md:mb-16">
+        <div
+          class="wrapper text-base md:text-xl font-light mb-8 md:mb-[188px] relative"
+        >
           <div
-            class="border-primary border-1 md:border-2 bg-[linear-gradient(210deg,#FFF_13.8%,#F2F7FF_70.44%)] rounded-full size-[80vw] md:size-[30vw]"
+            class="suitable-intro border-primary border md:border-[2px] bg-[linear-gradient(210deg,#FFF_13.8%,#F2F7FF_70.44%)] rounded-full aspect-square h-auto w-[80vw] md:w-[55vw] lg:w-[45vw] xl:w-1/2 pt-[15%] md:pt-[8%] xl:pt-[15%] -mb-[30%] md:-mb-[40%] mx-auto"
           >
-            <h2 class="title-normal mb-6">
+            <h2 class="title-normal mb-0">
               {{ $t("lasik.suitableTitle") }}
             </h2>
             <p
-              class="whitespace-pre-line text-primary text-center tracking-[0.25em]"
+              class="suitable-desc whitespace-pre-line text-primary text-center tracking-[0.25em]"
             >
               {{ $t("lasik.suitableDesc") }}
             </p>
           </div>
-          <ul role="list" class="suitable-list flex flex-wrap">
+          <ul
+            role="list"
+            class="suitable-list flex flex-wrap justify-center px-3"
+          >
             <li
               role="listitem"
               v-for="(item, index) in suitableList"
@@ -158,7 +163,7 @@
             >
               <figure>
                 <div
-                  class="flex justify-center items-center size-[16.41vw] xl:size-[6.25vw] mx-auto mb-3"
+                  class="flex justify-center items-center size-[16.41vw] md:size-[6.25vw] md:max-w-[120px] md:max-h-[120px] mx-auto mb-2 md:mb-2"
                 >
                   <img
                     :src="item.icon"
@@ -169,7 +174,7 @@
                 <figcaption>
                   <p
                     v-html="formatText(item)"
-                    class="text-text text-center"
+                    class="text-text text-center leading-[1.1] lg:leading-relaxed"
                   ></p>
                 </figcaption>
               </figure>
@@ -321,7 +326,7 @@ export default {
      * @return {boolean}
      */
     checkScreen() {
-      this.isMobile = window.innerWidth < 768;
+      this.isMobile = window.innerWidth < 1024;
     },
     /**
      * @description: 防抖函数
@@ -430,17 +435,65 @@ $primary-color: #4570b6;
     line-height: 1;
   }
 }
+@mixin pseudo-bg($z: 0, $w: auto, $h: auto) {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: $w;
+  height: $h;
+  z-index: $z;
+}
 .suitable {
+  &-intro {
+    position: relative;
+    &::before {
+      @include pseudo-bg(10, 25.641vw, 51.282vw);
+      top: -18%;
+      left: -12%;
+      background-image: url("https://statichk.cmermedical.com/smile/lasik/playing-basketball.svg");
+    }
+    &::after {
+      @include pseudo-bg(-1, 20vw, 55.385vw);
+      top: -68px;
+      left: 18%;
+      background-image: url("https://statichk.cmermedical.com/smile/lasik/basketball-stick.svg");
+    }
+  }
+  &-list {
+    position: relative;
+    &::before {
+      @include pseudo-bg(10, 34.872vw, 18.462vw);
+      background-image: url("https://statichk.cmermedical.com/smile/lasik/optometry.svg");
+      rotate: 22deg;
+      left: -30px;
+      bottom: 8%;
+    }
+    &::after {
+      @include pseudo-bg(10, 21.538vw, 28.718vw);
+      background-image: url("https://statichk.cmermedical.com/smile/lasik/reading.svg");
+      rotate: 5deg;
+      right: 18px;
+      bottom: 22%;
+    }
+  }
   &-item {
     width: 54%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 1px solid $primary-color;
-    &:nth-child(2) {
-      margin-left: -6%;
-    }
-    &:nth-child(3) {
-      margin-right: -6%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+// 小屏特殊优化
+@media screen and (max-width: 359px) {
+  .suitable {
+    &-desc {
+      margin-top: -12px;
+      letter-spacing: 0.1em;
     }
   }
 }
@@ -448,10 +501,10 @@ $primary-color: #4570b6;
   .principle {
     &-item {
       &::before {
-        content: "";
-        background-size: contain;
-        background-repeat: no-repeat;
         position: absolute;
+        contain: "";
+        background-repeat: no-repeat;
+        background-size: contain;
         width: 27.692vw;
         height: 3.077vw;
       }
@@ -477,6 +530,24 @@ $primary-color: #4570b6;
           right: 90%;
           top: 55%;
         }
+      }
+    }
+  }
+  .suitable {
+    &-item {
+      &:nth-child(2) {
+        margin-left: -8%;
+        z-index: 10;
+      }
+      &:nth-child(3) {
+        margin-right: -8%;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-top: -8%;
+      }
+      &:nth-child(5) {
+        margin-top: -6%;
       }
     }
   }
@@ -518,11 +589,45 @@ $primary-color: #4570b6;
     }
   }
   .suitable {
+    &-intro {
+      &::before {
+        @include pseudo-bg(10, 8.646vw, 17.344vw);
+      }
+      &::after {
+        @include pseudo-bg(-1, 6.823vw, 18.906vw);
+      }
+    }
+    &-list {
+      &::before {
+        @include pseudo-bg(10, 17.969vw, 9.531vw);
+        left: -12px;
+        bottom: -60%;
+      }
+      &::after {
+        @include pseudo-bg(10, 8.75vw, 12.76vw);
+      }
+    }
     &-item {
       width: 27%;
       border-width: 2px;
       &:nth-child(even) {
-        margin-left: -12%;
+        margin: 0 -9%;
+        z-index: 10;
+      }
+      &:nth-child(1) {
+        transform: translate(5%, 0);
+      }
+      &:nth-child(5) {
+        transform: translate(-5%, 0);
+      }
+      &:nth-child(2) {
+        transform: translate(-15%, 75%);
+      }
+      &:nth-child(4) {
+        transform: translate(15%, 75%);
+      }
+      &:nth-child(3) {
+        transform: translate(0, 100%);
       }
     }
   }
@@ -537,6 +642,15 @@ $primary-color: #4570b6;
     &-bg {
       &::before {
         top: 48px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .suitable {
+    &-list {
+      &::before {
+        left: -15%;
       }
     }
   }
