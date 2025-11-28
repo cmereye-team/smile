@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-07-03 17:29:35
- * @LastEditTime: 2025-11-27 17:01:09
+ * @LastEditTime: 2025-11-28 10:59:23
  * @FilePath: /pages/new-page/patient-info.vue
  * @Description: 诊症须知
 -->
@@ -532,23 +532,18 @@
 
       <div class="section-last-4">
         <div class="section-last-4-item">
-          <h3>完成SMILE/SMILE Pro矯視後</h3>
+          <h3>完成SMILE/SMILE Pro矯視後</h3>
           <div class="section-last-4-item-content">
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>當天內</span></h4>
               <div>
                 <p>
-                  <i>1</i
-                  ><span
-                    >矯視後流眼水或少許異物感等不適是正常
-                    現象，不適感覺在兩至三小時後逐漸減少</span
-                  >
+                  <i>1</i>
+                  <span>矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span>
                 </p>
-
                 <p>
                   <i>2</i><span>按醫生指示定時服藥或滴眼藥水，維持四星期</span>
                 </p>
-
                 <p><i>3</i><span>避免揉擦眼睛</span></p>
               </div>
             </div>
@@ -571,19 +566,15 @@
               <h4>矯視後<span>一個月內</span></h4>
               <div>
                 <p>
-                  <i>1</i
-                  ><span
-                    >如有需要可配戴太陽眼鏡以防止紫外線的刺激或沙塵入眼</span
-                  >
+                  <i>1</i>
+                  <span>如有需要可配戴太陽眼鏡以防止紫外線的刺激或沙塵入眼</span>
                 </p>
                 <p><i>2</i><span>不可進行水上活動或浸熱水浴</span></p>
-
                 <p><i>3</i><span>不可進行碰撞性運動，如足球、籃球等</span></p>
               </div>
             </div>
           </div>
         </div>
-
         <div class="section-last-4-item">
           <h3>完成ICL矯視後</h3>
           <div class="section-last-4-item-content">
@@ -591,19 +582,14 @@
               <h4>矯視後<span>當天內</span></h4>
               <div>
                 <p>
-                  <i>1</i
-                  ><span
-                    >矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span
-                  >
+                  <i>1</i>
+                  <span>矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span>
                 </p>
-
                 <p><i>2</i><span>避免梘水、自來水或污水進入眼睛</span></p>
-
                 <p><i>3</i><span>按醫生指示定時服藥或滴眼藥水</span></p>
                 <p><i>4</i><span>避免揉擦眼睛</span></p>
               </div>
             </div>
-
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>一星期內</span></h4>
               <div>
@@ -611,7 +597,6 @@
                 <p><i>2</i><span>睡覺時可佩戴眼罩(如有需要)</span></p>
               </div>
             </div>
-
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>一個月內</span></h4>
               <div>
@@ -622,7 +607,6 @@
           </div>
         </div>
       </div>
-
       <p class="section-last-5">
         *任何時候若眼睛突然出現劇痛或視力明顯下降等情況，必須盡快求醫。
       </p>
