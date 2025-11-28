@@ -356,6 +356,15 @@ export default {
 </script>
 <style lang="scss" scoped>
 $primary-color: #4570b6;
+@mixin pseudo-bg($z: 0, $w: auto, $h: auto) {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: $w;
+  height: $h;
+  z-index: $z;
+}
 @keyframes moveAiming {
   14.28% {
     rotate: 10deg;
@@ -397,7 +406,7 @@ $primary-color: #4570b6;
 }
 .banner {
   position: relative;
-  &-bg {
+  .banner-bg {
     &::before {
       animation: moveAiming 7s linear infinite;
       // right: 12px;
@@ -408,7 +417,7 @@ $primary-color: #4570b6;
   }
 }
 .benefits {
-  &-item {
+  .benefits-item {
     &:nth-child(-n + 2) {
       border-bottom: 1px solid $primary-color;
     }
@@ -418,7 +427,7 @@ $primary-color: #4570b6;
   }
 }
 .principle {
-  &-item {
+  .principle-item {
     &:nth-child(3) {
       order: 4;
     }
@@ -426,7 +435,7 @@ $primary-color: #4570b6;
       order: 3;
     }
   }
-  &-num {
+  .principle-num {
     font-size: 12.308vw;
     font-weight: 700;
     -webkit-text-stroke-color: $primary-color;
@@ -435,17 +444,8 @@ $primary-color: #4570b6;
     line-height: 1;
   }
 }
-@mixin pseudo-bg($z: 0, $w: auto, $h: auto) {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: $w;
-  height: $h;
-  z-index: $z;
-}
 .suitable {
-  &-intro {
+  .suitable-intro {
     position: relative;
     &::before {
       @include pseudo-bg(10, 25.641vw, 51.282vw);
@@ -460,7 +460,7 @@ $primary-color: #4570b6;
       background-image: url("https://statichk.cmermedical.com/smile/lasik/basketball-stick.svg");
     }
   }
-  &-list {
+  .suitable-list {
     position: relative;
     &::before {
       @include pseudo-bg(10, 34.872vw, 18.462vw);
@@ -477,7 +477,7 @@ $primary-color: #4570b6;
       bottom: 22%;
     }
   }
-  &-item {
+  .suitable-item {
     width: 54%;
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -491,7 +491,7 @@ $primary-color: #4570b6;
 // 小屏特殊优化
 @media screen and (max-width: 359px) {
   .suitable {
-    &-desc {
+    .suitable-desc {
       margin-top: -12px;
       letter-spacing: 0.1em;
     }
@@ -499,7 +499,7 @@ $primary-color: #4570b6;
 }
 @media screen and (max-width: 767px) {
   .principle {
-    &-item {
+    .principle-item {
       &::before {
         position: absolute;
         contain: "";
@@ -534,7 +534,7 @@ $primary-color: #4570b6;
     }
   }
   .suitable {
-    &-item {
+    .suitable-item {
       &:nth-child(2) {
         margin-left: -8%;
         z-index: 10;
@@ -558,7 +558,7 @@ $primary-color: #4570b6;
     letter-spacing: 0.1em;
   }
   .banner {
-    &-bg {
+    .banner-bg {
       &::before {
         left: auto;
         right: 20%;
@@ -567,7 +567,7 @@ $primary-color: #4570b6;
     }
   }
   .benefits {
-    &-item {
+    .benefits-item {
       border-width: 0;
       &:not(:last-child) {
         border-right: 2px solid $primary-color;
@@ -575,7 +575,7 @@ $primary-color: #4570b6;
     }
   }
   .principle {
-    &-item {
+    .principle-item {
       &:nth-child(3) {
         order: 3;
       }
@@ -583,13 +583,13 @@ $primary-color: #4570b6;
         order: 4;
       }
     }
-    &-num {
+    .principle-num {
       font-size: #{"clamp(3.75rem, 2.083rem + 3.47vw, 6.25rem)"};
       -webkit-text-stroke-width: 1px;
     }
   }
   .suitable {
-    &-intro {
+    .suitable-intro {
       &::before {
         @include pseudo-bg(10, 8.646vw, 17.344vw);
       }
@@ -597,9 +597,11 @@ $primary-color: #4570b6;
         @include pseudo-bg(-1, 6.823vw, 18.906vw);
       }
     }
-    &-list {
+    .suitable-list {
       &::before {
         @include pseudo-bg(10, 17.969vw, 9.531vw);
+        max-width: 388px;
+        max-height: 300px;
         left: -12px;
         bottom: -60%;
       }
@@ -607,7 +609,7 @@ $primary-color: #4570b6;
         @include pseudo-bg(10, 8.75vw, 12.76vw);
       }
     }
-    &-item {
+    .suitable-item {
       width: 27%;
       border-width: 2px;
       &:nth-child(even) {
@@ -639,7 +641,7 @@ $primary-color: #4570b6;
     margin-right: auto;
   }
   .banner {
-    &-bg {
+    .banner-bg {
       &::before {
         top: 48px;
       }
@@ -648,7 +650,7 @@ $primary-color: #4570b6;
 }
 @media screen and (min-width: 1920px) {
   .suitable {
-    &-list {
+    .suitable-list {
       &::before {
         left: -15%;
       }
