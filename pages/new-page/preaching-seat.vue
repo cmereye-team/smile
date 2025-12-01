@@ -286,55 +286,29 @@
         <picture>
           <source
             srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25111.avif
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2512-1.avif
             "
             type="image/avif"
           />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25111.webp
-            "
-            type="image/webp"
-          />
           <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25111.jpg"
-            alt="希瑪眼科十一月中環預約日歷"
-            title="希瑪眼科十一月中環預約日歷"
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2512-1.jpg"
+            alt="希瑪眼科十二月中環預約日歷"
+            title="希瑪眼科十二月中環預約日歷"
           />
         </picture>
         <picture>
           <source
             srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25112.avif
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2512-2.avif
             "
             type="image/avif"
           />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25112.webp
-            "
-            type="image/webp"
-          />
           <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/seat-calendar-25112.jpg"
-            alt="希瑪眼科十一月旺角預約日歷"
-            title="希瑪眼科十一月旺角預約日歷"
-          />
-        </picture>
- 
-        
-          <img
-            src="https://statichk.cmermedical.com/cmermedical/image/20251110/CT_202512.webp"
-            alt="希瑪眼科十二月中環預約日歷"
-            title="希瑪眼科十二月中環預約日歷"
-          />
-         <img
-            src="https://statichk.cmermedical.com/cmermedical/image/20251110/MK_202512.webp"
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2512-2.jpg"
             alt="希瑪眼科十二月旺角預約日歷"
             title="希瑪眼科十二月旺角預約日歷"
           />
-
-        
+        </picture>
       </div>
     </div>
     <businessHours />
@@ -661,7 +635,6 @@ export default {
           "2025-12-17",
           "2025-12-24",
           "2025-12-31",
-
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -675,8 +648,6 @@ export default {
           "2025-12-13",
           "2025-12-20",
           "2025-12-27",
-
-        
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -738,7 +709,6 @@ export default {
           "2025-12-15",
           "2025-12-23",
           "2025-12-29",
-
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -1449,11 +1419,11 @@ export default {
     position: relative;
     z-index: 2;
   }
-  .Banner .banner-text-default p:nth-child(1){
+  .Banner .banner-text-default p:nth-child(1) {
     font-size: 20px;
     line-height: 1;
   }
-  .Banner .banner-text-default p:nth-child(2){
+  .Banner .banner-text-default p:nth-child(2) {
     font-size: 16px;
   }
   .dialog-win {
@@ -1530,7 +1500,7 @@ export default {
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/d226e2e185d53c48.png")
       no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     height: 30vw;
     margin: 20px 20px 0 20px;

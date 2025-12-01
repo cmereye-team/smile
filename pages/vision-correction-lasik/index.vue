@@ -19,7 +19,7 @@
               }}</span>
             </p>
             <p
-              class="text-xs md:text-[clamp(1.25rem,-0.625rem_+_3.91vw,1.875rem)]"
+              class="text-[clamp(0.438rem,0.214rem_+_1.12vw,0.75rem)] md:text-[clamp(1.25rem,-0.625rem_+_3.91vw,1.875rem)]"
             >
               Laser-Assisted in Situ Keratomileusis
             </p>
