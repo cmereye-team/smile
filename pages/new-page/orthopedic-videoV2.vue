@@ -206,7 +206,7 @@ export default {
           type: "SMILE Pro",
           href: "https://youtu.be/857FwJQu7OA",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-020.avif",
-          text: ["無咗眼鏡都一樣做到唔","同活動"],
+          text: ["無咗眼鏡都一樣做到唔", "同活動"],
           nameEn: "Jay",
           nameCn: "沈以諾",
         },
@@ -351,7 +351,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/kVEJ-PN4AJo?si=0WNMW3YgQOeTKlp3",
+          href: "https://www.youtube.com/embed/kVEJ-PN4AJo",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro15.avif",
           text: ["我問自己點解唔早啲做", "SMILE Pro呢!"],
           nameEn: "Cindy Wong",
@@ -360,7 +360,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/I6Yv4PTTSC4?si=fJdFww6xWseW9KVJ",
+          href: "https://www.youtube.com/embed/I6Yv4PTTSC4",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro16.avif",
           text: ["湊住仔仔都咁方便"],
           nameEn: "Cindy Wong",
@@ -394,11 +394,11 @@ export default {
         },
 
         // smile
-
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/TGxol6pNXSY?si=smsLpfhLJBxqitx7",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-001.avif",
+          href: "https://www.youtube.com/embed/TGxol6pNXSY",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-001.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-001.avif",
           text: ["就算落雨都唔會再影響", "到我跑步嘅心情"],
           nameEn: "",
@@ -406,8 +406,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/TGxol6pNXSY?si=smsLpfhLJBxqitx7",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-002.avif",
+          href: "https://www.youtube.com/embed/CJEE6UQKPes",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-002.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-002.avif",
           text: ["唔洗戴Con係一種", "解脫!可以瀟灑出門口"],
           nameEn: "",
@@ -415,8 +416,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/tLsWfdZy4P4?si=AjVzygcOPjWeGkh0",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-003.avif",
+          href: "https://www.youtube.com/embed/tLsWfdZy4P4",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-003.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-003.avif",
           text: ["一行出去已經感受到", "原來我望嘢可以咁清楚"],
           nameEn: "",
@@ -424,8 +426,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/_wk_gZGzB1s?si=lrRm3juyJA4LCmqU",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-004.avif",
+          href: "https://www.youtube.com/embed/_wk_gZGzB1s",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-004.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-004.avif",
           text: ["做完多咗眼神交流", "傳波都準咗"],
           nameEn: "",
@@ -433,8 +436,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/qBsPhkIaVfo?si=eoL0GFtYOpQ7wX6M",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-005.avif",
+          href: "https://www.youtube.com/embed/qBsPhkIaVfo",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-005.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-005.avif",
           text: ["想做就去做啦!"],
           nameEn: "",
@@ -442,8 +446,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/oHDOFYMEUsk?si=01mWE78jZEidTIiL",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-006.avif",
+          href: "https://www.youtube.com/embed/oHDOFYMEUsk",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-006.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-006.avif",
           text: ["終於可以掉咗", "縮細眼嘅眼鏡"],
           nameEn: "Shirley Chan",
@@ -451,8 +456,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/nrsLktnnW_I?si=81-m7f4tvpUaT3Xy",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-007.avif",
+          href: "https://www.youtube.com/embed/nrsLktnnW_I",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-007.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-007.avif",
           text: ["過程好似打機咁", "好神奇有趣!"],
           nameEn: "Kathy Ngai",
@@ -460,8 +466,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/XSOzqZD6N8Q?si=ir3S4DM1ELTcLvb5",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-008.avif",
+          href: "https://www.youtube.com/embed/XSOzqZD6N8Q",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-008.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-008.avif",
           text: ["過程咩感覺都無", "好快 好神奇!"],
           nameEn: "Donald",
@@ -469,8 +476,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/sw1fxUXMqes?si=e4M947UUr4AM8F0Q",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-009.avif",
+          href: "https://www.youtube.com/embed/sw1fxUXMqes",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-009.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-009.avif",
           text: ["視力仲好過未矯視之前"],
           nameEn: "",
@@ -478,8 +486,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/HfA2NBsMVWQ?si=MyRyoCPm2WcwYqVh",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-010.avif",
+          href: "https://www.youtube.com/embed/HfA2NBsMVWQ",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-010.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-010.avif",
           text: ["做完好似戴咗Con咁，", "連瞓覺都feel到自己睇", "得好清楚咁"],
           nameEn: "Jacky Tong",
@@ -487,8 +496,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/dyzeGWTk8Dk?si=2dpnlA9N-7wE43Ez",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-011.avif",
+          href: "https://www.youtube.com/embed/dyzeGWTk8Dk",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-011.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-011.avif",
           text: ["做咗SMILE有", "更多精力應付工作"],
           nameEn: "Charlotte",
@@ -496,8 +506,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/g0sWFw1YAs0?si=Kf6ZHKdxEs0GiOvp",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-012.avif",
+          href: "https://www.youtube.com/embed/g0sWFw1YAs0",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-012.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-012.avif",
           text: ["彈結他幾投入睇嘢", "都唔矇"],
           nameEn: "Cath Wong",
@@ -505,26 +516,29 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/1WR18ptmCuQ?si=XTlisgHBsX_eevjT",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-013.avif",
+          href: "https://www.youtube.com/embed/1WR18ptmCuQ",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-013.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-013.avif",
           text: ["做SMILE過程", "都無感覺"],
           nameEn: "Aka",
-          nameCn: "趙慧珊 ",
+          nameCn: "趙慧珊",
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/bwQMHStnXCk?si=MyvOKeK7HBTp0ZpP",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-014.avif",
+          href: "https://www.youtube.com/embed/bwQMHStnXCk",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-014.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-014.avif",
           text: ["就算以後唔可以戴Con", "都唔怕 因為我已經做", "咗SMILE"],
           nameEn: "",
-          nameCn: "張名雅 ",
+          nameCn: "張名雅",
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/inD-CATvEl4?si=792lMz0KR-ECOaG-",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-015.avif",
+          href: "https://www.youtube.com/embed/inD-CATvEl4",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-015.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-015.avif",
           text: ["同學生對打都唔怕Con", "移位"],
           nameEn: "Anthony",
@@ -532,8 +546,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/dYYyN9YZGQg?si=zzOIgO3wRJ8i-SWP",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-017.avif",
+          href: "https://www.youtube.com/embed/dYYyN9YZGQg",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-017.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-017.avif",
           text: ["做SMILE原來", "早做早享受"],
           nameEn: "",
@@ -541,8 +556,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/T3K97UlXpHg?si=7sO2CgYMDJ4XD7qs",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-018.avif",
+          href: "https://www.youtube.com/embed/T3K97UlXpHg",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-018.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-018.avif",
           text: ["以後跳繩集中", "都唔怕眼乾"],
           nameEn: "",
@@ -550,8 +566,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/WlFqNfq5jkI?si=CLUy7xgVR91JKigx",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-019.avif",
+          href: "https://www.youtube.com/embed/WlFqNfq5jkI",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-019.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-019.avif",
           text: ["原來世界可以咁清楚"],
           nameEn: "",
@@ -559,8 +576,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/Z9s3c5Thu7w?si=_pzRK7p7IQ6-_rt8",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-020.avif",
+          href: "https://www.youtube.com/embed/Z9s3c5Thu7w",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-020.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-020.avif",
           text: ["過程比我想像中快"],
           nameEn: "Ceci Wu",
@@ -568,8 +586,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/o2n03FVGWbk?si=jTrcw8XArqyyonXO",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-021.avif",
+          href: "https://www.youtube.com/embed/o2n03FVGWbk",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-021.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-021.avif",
           text: ["做完成個世界唔同咗"],
           nameEn: "",
@@ -577,8 +596,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/05NSqdF7nz0?si=w5Q_utrbhZL1p1U6",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-022.avif",
+          href: "https://www.youtube.com/embed/05NSqdF7nz0",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-022.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-022.avif",
           text: ["做完好感動", "開心到想喊"],
           nameEn: "Mandy",
@@ -586,8 +606,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/nagwW6CP1iU?si=XWckgpCMdtbMvYya",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-023.avif",
+          href: "https://www.youtube.com/embed/nagwW6CP1iU",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-023.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-023.avif",
           text: ["早啲做SMILE慳好多", "買Con錢 好抵!"],
           nameEn: "Natalie",
@@ -595,8 +616,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/tJ3MHvKagMk?si=mHt2LqB73V_NwHYa",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-024.avif",
+          href: "https://www.youtube.com/embed/tJ3MHvKagMk",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-024.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-024.avif",
           text: ["長期長時間戴Con人士", "要做SMILE!"],
           nameEn: "",
@@ -604,8 +626,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/c6dwJ1Cbgxw?si=tekKXwPLkDc92uv5",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-025.avif",
+          href: "https://www.youtube.com/embed/c6dwJ1Cbgxw",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-025.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-025.avif",
           text: ["好似瞓一覺就做完咁"],
           nameEn: "kelly Ng",
@@ -613,8 +636,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/L5GFWM7Fxqs?si=cYLRMHXMzoP5FH2n",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-026.avif",
+          href: "https://www.youtube.com/embed/L5GFWM7Fxqs",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-026.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-026.avif",
           text: ["拍嘢睇Mon唔洗再俾", "眼鏡壓住"],
           nameEn: "Dominic Ho",
@@ -622,8 +646,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/Udnsv_lOr74?si=Xn5Ig0PliVCcfys3",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-027.avif",
+          href: "https://www.youtube.com/embed/Udnsv_lOr74",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-027.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-027.avif",
           text: ["做咗SMILE就唔會再", "錯過同囡囡每個", "珍貴Moment"],
           nameEn: "Daniel Chau",
@@ -631,8 +656,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/JCzzO4Y0kko?si=LKVCHmyBvkgLNuoy",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-028.avif",
+          href: "https://www.youtube.com/embed/JCzzO4Y0kko",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-028.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-028.avif",
           text: ["每一次擘大眼都", "懷疑自己係咪唔記得除", "Con既感覺"],
           nameEn: "Ada",
@@ -640,8 +666,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/JD5GGTg01to?si=zwrN5KrcBe4sWWLI",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-029.avif",
+          href: "https://www.youtube.com/embed/JD5GGTg01to",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-029.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-029.avif",
           text: ["做完好似重生", "換咗對新嘅眼咁!"],
           nameEn: "Hubert",
@@ -649,17 +676,19 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/NF_S1R9DhNk?si=5ki2MXpyk8TtJKxy",
+          href: "https://www.youtube.com/embed/NF_S1R9DhNk",
           text: ["唔止視力穩定 心理上", "都穩定咗"],
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-033.avif",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-033.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-033.avif",
           nameEn: "Scarlett",
           nameCn: "莎拉",
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/7T_ATu8-Vn8?si=1tseMCvC-rZE0Hpu",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-030.avif",
+          href: "https://www.youtube.com/embed/7T_ATu8-Vn8",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-030.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-030.avif",
           text: ["揸車唔洗換眼鏡", "安全好多"],
           nameEn: "Brian Wong",
@@ -667,8 +696,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/KslMZ0PY2fg?si=ef_eVnM9ENSXfAGY",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-031.avif",
+          href: "https://www.youtube.com/embed/KslMZ0PY2fg",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-031.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-031.avif",
           text: ["原來做SMILE唔痛", "仲好快"],
           nameEn: "Judy Mok",
@@ -676,8 +706,9 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/jO_h9YqCJzs?si=6tE41PFSmyROUS24",
-          squareimg: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-032.avif",
+          href: "https://www.youtube.com/embed/jO_h9YqCJzs",
+          squareimg:
+            "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-032.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-032.avif",
           text: ["長時間專注整蛋糕都唔", "眼乾"],
           nameEn: "Jimmy",
@@ -730,7 +761,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/embed/r0yDL98l0Zo?si=J9g_LkGpHRT0kGcY",
+          href: "https://www.youtube.com/embed/r0yDL98l0Zo",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl4.avif",
           text: ["原來眼角膜薄都有機會", "可以做矯視!"],
           nameEn: "",
@@ -739,7 +770,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/embed/B12IjJ3tFHE?si=LMujYjc_BmEXP5EI",
+          href: "https://www.youtube.com/embed/B12IjJ3tFHE",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl5.avif",
           text: ["麥沛東與結婚這回事"],
           nameEn: "",
@@ -859,7 +890,7 @@ export default {
         } else {
         }
       });
-      
+
       this.activeTab = this.searchList[0].type;
       this.searchBoolean = true;
     },
@@ -870,7 +901,6 @@ export default {
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 @media screen and (max-width: 992px) {
