@@ -286,6 +286,32 @@
         <picture>
           <source
             srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2601-1.avif
+            "
+            type="image/avif"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2601-1.jpg"
+            alt="希瑪眼科一月中環預約日歷"
+            title="希瑪眼科一月中環預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2601-2.avif
+            "
+            type="image/avif"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2601-2.jpg"
+            alt="希瑪眼科一月旺角預約日歷"
+            title="希瑪眼科一月旺角預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
               https://statichk.cmermedical.com/smile/preaching-seat/calendar-2512-1.avif
             "
             type="image/avif"
@@ -629,12 +655,16 @@ export default {
           "2025-11-12",
           "2025-11-19",
           "2025-11-26",
-
           "2025-12-03",
           "2025-12-10",
           "2025-12-17",
           "2025-12-24",
           "2025-12-31",
+          "2026-01-03",
+          "2026-01-07",
+          "2026-01-14",
+          "2026-01-21",
+          "2026-01-28",
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -643,11 +673,14 @@ export default {
           "2025-11-15",
           "2025-11-22",
           "2025-11-29",
-
           "2025-12-06",
           "2025-12-13",
           "2025-12-20",
           "2025-12-27",
+          "2026-01-10",
+          "2026-01-17",
+          "2026-01-24",
+          "2026-01-31",
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -677,7 +710,6 @@ export default {
           "2025-11-22",
           "2025-11-24",
           "2025-11-29",
-
           "2025-12-02",
           "2025-12-06",
           "2025-12-08",
@@ -686,6 +718,14 @@ export default {
           "2025-12-20",
           "2025-12-22",
           "2025-12-27",
+          "2026-01-05",
+          "2026-01-10",
+          "2026-01-13",
+          "2026-01-17",
+          "2026-01-19",
+          "2026-01-24",
+          "2026-01-27",
+          "2026-01-31",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -703,12 +743,16 @@ export default {
           "2025-11-11",
           "2025-11-17",
           "2025-11-25",
-
           "2025-12-01",
           "2025-12-09",
           "2025-12-15",
           "2025-12-23",
           "2025-12-29",
+          "2026-01-03",
+          "2026-01-06",
+          "2026-01-12",
+          "2026-01-20",
+          "2026-01-26",
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -764,7 +808,7 @@ export default {
           name: "Smile講座-中環",
           times: {
             周三: "1:30 下午",
-            周六: "1:30 下午",
+            周六: "3:30 下午",
             周一: "6:30 下午",
             周二: "1:30 下午",
           },
