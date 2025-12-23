@@ -2534,11 +2534,11 @@ i {
           :key="index"
         >
           <img :src="item.img" alt="" />
-          <h3>{{ $t(item.title) }}</h3>
-          <div v-if="!isMobile">
+          <h3 class="text-primary mt-3 lg:mt-7 font-bold leading-[0.35em] lg:leading-[0.25em] text-lg lg:text-2xl">{{ $t(item.title) }}</h3>
+          <div v-if="!isMobile" class="mt-3">
             <p v-for="(i, idx) in item.text" :key="idx">{{ $t(i) }}</p>
           </div>
-          <div v-else>
+          <div v-else class="mt-3">
             <p v-for="(i, idx) in item.mbText" :key="idx">{{ $t(i) }}</p>
           </div>
         </div>
