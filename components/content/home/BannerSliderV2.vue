@@ -8,53 +8,38 @@
         ref="bannerSwiper"
       >
         <div class="swiper-wrapper">
-          <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
-            <img src="https://static.cmereye.com/imgs/2023/04/47b5b8d44b95666e.jpg" alt="">
-          </nuxt-link>
-          <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
-            <img src="https://static.cmereye.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
-          </nuxt-link> -->
-
           <section
             v-for="(banner, index) in bannerLists"
             :key="index"
             class="swiper-slide"
           >
-            <a v-if="banner.isRouterPath" :href="banner.link">
+            <a
+              v-if="isExternal(banner.link)"
+              :href="banner.link"
+              :data-banner-title="banner.subtitle"
+              :data-banner-id="index + 1"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 :class="banner.className"
                 :src="banner[`pc_${$i18n.locale}Img`]"
                 alt=""
               />
             </a>
-            <a v-else :href="localePath(banner.link)">
+            <nuxt-link
+              v-else
+              :to="localePath(banner.link)"
+              :data-banner-title="banner.subtitle"
+              :data-banner-id="index + 1"
+            >
               <img
                 :class="banner.className"
                 :src="banner[`pc_${$i18n.locale}Img`]"
                 alt=""
               />
-            </a>
+            </nuxt-link>
           </section>
-
-          <!-- <div class="anim">
-            <div class="a"></div>
-            <div class="b">
-              <div class="b1">SMILE PRO</div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="c">
-              <div>可能是現實最快完成矯視的方法</div>
-              <div>仲有限時優惠，立即瞭解更多</div>
-            </div>
-            <div class="d">
-              <div class="d1"></div>
-              <div class="d2"></div>
-              <div class="d3"></div>
-            </div>
-            <div class="e"></div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -66,16 +51,6 @@
         ref="bannerSwiper"
       >
         <div class="swiper-wrapper">
-          <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
-            <img src="https://static.cmereye.com/imgs/2023/04/4b25734d8dbba59a.jpg" alt="">
-          </nuxt-link>
-          <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
-            <img src="https://static.cmereye.com/imgs/2023/02/699e0cf835f76a5d.jpg" alt="">
-          </nuxt-link> -->
-          <!-- <nuxt-link v-for="(banner, index) in bannerLists.filter(item => item.mb_cnImg !== '')" :key="index"
-            class="swiper-slide" :to="localePath(banner.link)">
-            <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
-          </nuxt-link> -->
           <section
             v-for="(banner, index) in bannerLists.filter(
               (item) => item.mb_cnImg !== ''
@@ -83,20 +58,32 @@
             :key="index"
             class="swiper-slide"
           >
-            <a v-if="banner.isRouterPath" :href="banner.link">
+            <a
+              v-if="isExternal(banner.link)"
+              :href="banner.link"
+              :data-banner-title="banner.subtitle"
+              :data-banner-id="index + 1"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 :class="banner.className"
                 :src="banner[`mb_${$i18n.locale}Img`]"
                 alt=""
               />
             </a>
-            <a v-else :href="localePath(banner.link)">
+            <nuxt-link
+              v-else
+              :to="localePath(banner.link)"
+              :data-banner-title="banner.subtitle"
+              :data-banner-id="index + 1"
+            >
               <img
                 :class="banner.className"
                 :src="banner[`mb_${$i18n.locale}Img`]"
                 alt=""
               />
-            </a>
+            </nuxt-link>
           </section>
         </div>
       </div>
@@ -189,6 +176,23 @@ export default {
     this.getBannerList();
   },
   methods: {
+    /**
+     * @description: 判断是否为外部链接
+     * @param {string} url 链接地址
+     */
+    isExternal(url) {
+      // 如果为空或只是 # 开头，视为内部
+      if (!url || url.startsWith("#")) return false;
+
+      // 任何带协议的都视为外部（包含 http/https/tel/mailto/whatsapp: 等）
+      return (
+        /^[a-z][a-z0-9+.-]*:\/\//i.test(url) ||
+        /^\/\//.test(url) || // 协议相对链接 //example.com
+        url.startsWith("tel:") ||
+        url.startsWith("mailto:") ||
+        url.startsWith("whatsapp:")
+      );
+    },
     async getBannerList() {
       let List = [];
       let that = this;
@@ -208,6 +212,8 @@ export default {
                 gid: item.gid,
                 link: that.replaceAmp(item.link),
                 isRouterPath: item.title == "link" ? true : false,
+                title: item.title,
+                subtitle: `home-banner-${item.subtitle}`,
               };
             });
           });
@@ -227,6 +233,8 @@ export default {
                 gid: item.gid,
                 link: that.replaceAmp(item.link),
                 isRouterPath: item.title == "link" ? true : false,
+                title: item.title,
+                subtitle: `home-banner-${item.subtitle}`,
               };
             });
           });
@@ -246,6 +254,8 @@ export default {
                 gid: item.gid,
                 link: that.replaceAmp(item.link),
                 isRouterPath: item.title == "link" ? true : false,
+                title: item.title,
+                subtitle: `home-banner-${item.subtitle}`,
               };
             });
           });
@@ -273,14 +283,14 @@ export default {
   .center-Banner {
     margin-top: 80px;
     padding: 0 15px;
-    .gallery-top{
+    .gallery-top {
       border-radius: 10px;
     }
   }
 }
 @media screen and (min-width: 768px) {
   .center-Banner {
-    margin-top: #{'clamp(10rem, 2.5rem + 15.63vw, 15rem)'};
+    margin-top: #{"clamp(10rem, 2.5rem + 15.63vw, 15rem)"};
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -294,7 +304,7 @@ export default {
     // margin: 160px auto 0;
     margin-top: 160px;
     max-width: 1320px;
-    .gallery-top{
+    .gallery-top {
       border-radius: 15px;
     }
   }
