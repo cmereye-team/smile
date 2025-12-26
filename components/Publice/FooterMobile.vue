@@ -2,20 +2,20 @@
   <div class="footerBox">
     <div class="online footer mbShow">
       <div class="foot">
-        <div v-for="item in footerLists" :key="item.title">
-          <a v-if="isExternal(item.link)" :href="item.link" target="_blank">
-            <div class="box">
-              <img :src="item.img" alt="" />
-              <p>{{ item.title }}</p>
-            </div>
-          </a>
-          <nuxt-link v-else :to="item.link">
-            <div class="box">
-              <img :src="item.img" alt="" />
-              <p>{{ item.title }}</p>
-            </div>
-          </nuxt-link>
-        </div>
+        <component
+          v-for="item in footerLists"
+          :key="item.title"
+          :is="isExternal(item.link) ? 'a' : 'NuxtLink'"
+          :href="isExternal(item.link) ? item.link : undefined"
+          :to="!isExternal(item.link) ? item.link : undefined"
+          :target="isExternal(item.link) ? '_blank' : undefined"
+          :rel="isExternal(item.link) ? 'noopener noreferrer' : undefined"
+        >
+          <div class="box">
+            <img :src="item.img" alt="" />
+            <p>{{ item.title }}</p>
+          </div>
+        </component>
       </div>
     </div>
   </div>
@@ -97,7 +97,8 @@ export default {
     align-items: center;
     .box {
       height: 62%;
-      width: 95px;
+      width: 100%;
+      // width: 95px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -118,9 +119,6 @@ export default {
         color: #d9eaed;
       }
     }
-    div:nth-child(4) .box {
-      border: 0;
-    }
   }
   .face-primary {
     .what {
@@ -134,15 +132,17 @@ export default {
     z-index: 102;
     padding: 0;
     width: 100vw;
-    // overflow-y: hidden;
   }
   a {
     margin: 0;
-    // transform: scale(0.7);
-    padding: 10px !important;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(4) .box {
+      border: 0;
+    }
   }
   .face-button1 {
     width: 50%;
@@ -196,10 +196,6 @@ export default {
       justify-content: center;
       position: relative;
       top: -5px;
-      img {
-        // width: ;
-        // height: 25px;
-      }
       span {
         display: block;
         width: 100%;
