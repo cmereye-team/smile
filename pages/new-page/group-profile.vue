@@ -177,6 +177,63 @@
           </div>
         </div>
       </div>
+      <div
+        class="group-profile-care -mt-10 lg:-mt-25 container mx-auto flex flex-col lg:flex-row gap-5 lg:gap-10 rounded-3xl lg:rounded-[52px] py-7 lg:py-14 px-12 lg:px-24"
+      >
+        <div class="flex flex-col gap-5 lg:gap-11">
+          <div>
+            <h2
+              class="text-left text-primary mb-3 lg:mb-8 text-lg lg:text-3xl font-black leading-none"
+            >
+              希瑪關懷大使
+            </h2>
+            <div
+              class="font-light text-text text-base lg:text-xl leading-[1.75] tracking-[0.3em]"
+            >
+              <p>
+                為了讓每位矯視者有<span class="text-primary font-bold"
+                  >更安心、放心</span
+                >的體驗，希瑪特別設立「希瑪關懷大使」，提供一對一貼心的<span
+                  class="text-primary font-bold"
+                  >術前、術後支援</span
+                >。
+              </p>
+              <p>
+                「希瑪關懷大使」會向矯視者主動提供矯視相關實用資訊,
+                解答各項查詢, 致力提供最細緻、關懷的跟進服務給予矯視者。
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center lg:justify-start gap-3 lg:gap-5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="67"
+              height="67"
+              viewBox="0 0 67 67"
+              fill="none"
+            >
+              <path
+                d="M14.998 61.0916L2.20355 65.1791L6.34324 52.807C-3.56542 39.2226 -1.65199 20.3464 10.5898 8.93616C24.0673 -3.62629 45.175 -2.8312 57.6853 10.6124C70.1878 24.0481 69.4839 45.148 55.9439 57.7183C44.8413 68.0258 27.8811 69.6394 14.998 61.0942V61.0916ZM44.9013 38.1642C43.9002 37.6846 42.954 38.0469 42.37 38.8603C41.5306 40.0308 40.7251 41.1543 39.7814 42.2518C39.26 42.8566 38.3268 42.9817 37.5682 42.6976C31.6298 40.4765 27.477 36.4463 24.1924 31.1023C23.8014 30.4636 23.963 29.7884 24.4479 29.2384C25.2377 28.3416 26.0511 27.4579 26.7732 26.5298C27.3128 25.8338 27.3962 25.083 27.0756 24.3114L23.8561 16.5977C23.4651 15.6618 22.8238 15.2421 21.8071 15.2448C20.5402 15.25 19.1038 15.1509 18.0037 15.9512C15.4516 17.8073 14.1221 20.7765 13.9709 23.8917C13.7858 27.7316 15.6732 31.4125 17.8238 34.4729C19.9745 37.5334 22.4432 40.5964 25.3368 43.2033C27.6413 45.281 30.0448 47.0771 32.8446 48.4431C35.6443 49.8091 38.4545 50.8179 41.4342 51.5791C43.9889 52.2335 46.4706 51.9806 48.7881 50.7606C50.1697 50.0307 51.5227 49.1495 52.3126 47.7575C52.9617 46.6157 54.1348 42.5985 52.7531 41.9364L44.9039 38.1642H44.9013Z"
+                fill="#4CAF51"
+              />
+            </svg>
+            <div class="flex flex-col text-[#4CAF51] font-bold tracking-widest">
+              <p class="text-base lg:text-xl lg:leading-9">
+                「希瑪關懷大使」聯繫方式
+              </p>
+              <p class="font-en text-lg lg:text-3xl lg:leading-9">
+                WhatsApp 9603 6825
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="https://statichk.cmermedical.com/smile/group-profile/cmer-care-ambassador.svg"
+          alt="希瑪關懷大使"
+        />
+      </div>
       <div class="group-profile-swiper">
         <H2Tag :title="[$t('group_profile.group_profile_swiper.title')]" />
         <div class="swiper-element">
@@ -417,6 +474,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.group-profile-care {
+  border: 1px solid rgba(255, 255, 255, 0.93);
+
+  background: linear-gradient(
+    180deg,
+    rgba(187, 215, 255, 0.8) 6.61%,
+    rgba(217, 232, 255, 0.72) 30.85%,
+    rgba(238, 245, 255, 0.72) 52.41%,
+    rgba(250, 252, 255, 0.72) 63.18%,
+    rgba(253, 253, 255, 0.73) 74.18%,
+    rgba(255, 255, 255, 0.74) 100%
+  );
+}
 @media screen and (min-width: 768px) {
   .group-profile-box {
     margin: 85px auto;
