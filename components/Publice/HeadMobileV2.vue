@@ -215,7 +215,7 @@
         <div>
           <p>
             <span
-              >©2025 {{ $t("home.footer.span1")
+              >©2026 {{ $t("home.footer.span1")
               }}{{ $t("home.footer.span2") }}</span
             >
             <span>
