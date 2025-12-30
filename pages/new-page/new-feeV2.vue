@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2025-09-26 16:03:50
+ * @LastEditTime: 2025-12-30 16:31:18
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -193,7 +193,7 @@
                 <span>3次<i>#</i></span>
               </td>
               <td>
-                <span>5次<i>#</i></span>
+                <span>6次<i>#</i></span>
               </td>
               <td>
                 <span>3次<i>#</i></span>
