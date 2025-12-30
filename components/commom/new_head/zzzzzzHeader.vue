@@ -1902,9 +1902,9 @@ $active_gradient: #4570b6;
   .mb_menu_style {
     margin-top: 20px;
   }
-  .foot_logo {
-    max-width: 139px;
-  }
+  // .foot_logo {
+  //   max-width: 139px;
+  // }
   .mb_menu {
     display: flex;
     align-items: center;

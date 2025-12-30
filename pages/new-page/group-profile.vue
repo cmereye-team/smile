@@ -4,7 +4,7 @@
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
-          <p>{{ $t("group_profile.bannerTitle") }}</p>
+          <h1>{{ $t("group_profile.bannerTitle") }}</h1>
           <p>Group Profile</p>
         </div>
       </template>
@@ -18,9 +18,9 @@
               {{ $t("group_profile.explain_header.p1") }}
             </div>
             <div>
-              <div class="small-title">
+              <h3 class="small-title">
                 {{ $t("group_profile.explain_header.small_title1") }}
-              </div>
+              </h3>
               <div class="small-text">
                 {{ $t("group_profile.explain_header.p2") }}
               </div>
@@ -35,9 +35,9 @@
               >
             </div>
             <div>
-              <div class="small-title">
+              <h3 class="small-title">
                 {{ $t("group_profile.explain_header.small_title2") }}
-              </div>
+              </h3>
               <div class="small-text">
                 {{ $t("group_profile.explain_header.small_title2_p1") }}
               </div>
@@ -154,7 +154,7 @@
                 />
               </svg>
             </div>
-            <div>{{ $t("group_profile.profile_center.title") }}</div>
+            <h2>{{ $t("group_profile.profile_center.title") }}</h2>
           </div>
           <div>
             <div>
@@ -182,11 +182,11 @@
       >
         <div class="flex flex-col gap-5 lg:gap-11">
           <div>
-            <h2
+            <h3
               class="text-left text-primary mb-3 lg:mb-8 text-lg lg:text-3xl font-black leading-none"
             >
               希瑪關懷大使
-            </h2>
+            </h3>
             <div
               class="font-light text-text text-base lg:text-xl leading-[1.75] tracking-[0.3em]"
             >
@@ -232,6 +232,8 @@
         <img
           src="https://statichk.cmermedical.com/smile/group-profile/cmer-care-ambassador.svg"
           alt="希瑪關懷大使"
+          loading="lazy"
+          class="max-h-[352px]"
         />
       </div>
       <div class="group-profile-swiper">
@@ -316,7 +318,7 @@
                 />
               </svg>
             </div>
-            <div>{{ $t("group_profile.group_profile_award.title") }}</div>
+            <h2>{{ $t("group_profile.group_profile_award.title") }}</h2>
           </div>
           <div>
             <div>
@@ -516,6 +518,32 @@ export default {
     margin-top: 185px;
     position: relative;
 
+    h2 {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      /* 100% */
+      letter-spacing: 7.5px;
+      padding-bottom: 30px;
+      position: relative;
+      margin-top: 18px;
+      margin-bottom: 0;
+      &::before {
+        width: 40px;
+        border-radius: 5px;
+        height: 5px;
+        background: #a6e1d6;
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+
     & > div {
       & > div:nth-child(1) {
         position: absolute;
@@ -530,32 +558,6 @@ export default {
         height: 307px;
         border-radius: 50%;
         background-color: #fff;
-
-        & > div:nth-child(2) {
-          color: #4570b6;
-          font-family: "Noto Sans HK";
-          font-size: 30px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 30px;
-          /* 100% */
-          letter-spacing: 7.5px;
-          padding-bottom: 30px;
-          position: relative;
-          margin-top: 18px;
-        }
-
-        & > div:nth-child(2)::before {
-          width: 40px;
-          border-radius: 5px;
-          height: 5px;
-          background: #a6e1d6;
-          position: absolute;
-          content: "";
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 0;
-        }
       }
 
       & > div:nth-child(2) {
@@ -648,6 +650,20 @@ export default {
     margin: 0 auto;
     padding: 0 130px;
 
+    h2 {
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans HK";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 50px;
+      /* 166.667% */
+      letter-spacing: 7.5px;
+      position: relative;
+      top: 30px;
+    }
+
     & > div:nth-child(1) {
       position: absolute;
       top: -17%;
@@ -661,20 +677,6 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
-      & > div:nth-child(2) {
-        color: #4570b6;
-        text-align: center;
-        font-family: "Noto Sans HK";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 50px;
-        /* 166.667% */
-        letter-spacing: 7.5px;
-        position: relative;
-        top: 30px;
-      }
     }
 
     & > div:nth-child(2) {
@@ -894,7 +896,7 @@ export default {
     justify-content: center;
     padding-left: 70px;
 
-    & > p:nth-child(1) {
+    h1 {
       color: #fff;
       font-family: "Noto Sans HK";
       font-size: 30px;
@@ -920,10 +922,8 @@ export default {
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .group-profile-award {
-    & > div {
-      & > div:nth-child(2) {
-        max-width: 99.21875vw !important;
-      }
+    h2 {
+      max-width: 99.21875vw !important;
     }
   }
   .group-profile-swiper {
@@ -987,6 +987,31 @@ export default {
     position: relative;
     margin-top: 125px;
 
+    h2 {
+      color: #4570b6;
+      font-family: "Noto Sans HK";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23.305px;
+      /* 116.525% */
+      letter-spacing: 1px;
+      padding-bottom: 10px;
+      position: relative;
+      margin-bottom: 0;
+      &::after {
+        content: none;
+        width: 30px;
+        height: 3.8px;
+        background: #a6e1d6;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
     & > div {
       padding: 0 10px;
 
@@ -1003,31 +1028,6 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        & > div:nth-child(2) {
-          color: #4570b6;
-          font-family: "Noto Sans HK";
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 23.305px;
-          /* 116.525% */
-          letter-spacing: 1px;
-          padding-bottom: 10px;
-          position: relative;
-        }
-
-        & > div:nth-child(2)::after {
-          content: none;
-          width: 30px;
-          height: 3.8px;
-          background: #a6e1d6;
-          border-radius: 3px;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        }
       }
 
       & > div:nth-child(2) {
@@ -1130,6 +1130,18 @@ export default {
     padding: 120px 0 50px;
     margin-top: 120px;
     position: relative;
+    h2 {
+      margin-top: 8px;
+      color: #4570b6;
+      text-align: center;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px;
+      /* 175% */
+      letter-spacing: 1px;
+    }
 
     & > div {
       padding: 0 20px;
@@ -1157,19 +1169,6 @@ export default {
           & > svg {
             width: 65%;
           }
-        }
-
-        & > div:nth-child(2) {
-          margin-top: 8px;
-          color: #4570b6;
-          text-align: center;
-          font-family: "Noto Sans";
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 35px;
-          /* 175% */
-          letter-spacing: 1px;
         }
       }
 
@@ -1336,7 +1335,7 @@ export default {
     justify-content: center;
     padding-left: 20px;
 
-    & > p:nth-child(1) {
+    h1 {
       color: #fff;
       font-family: "Noto Sans HK";
       font-style: normal;
