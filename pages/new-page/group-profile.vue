@@ -188,11 +188,15 @@
               >
                 {{ $t("group_profile.care.title") }}
               </h3>
+              <img
+                src="https://statichk.cmermedical.com/smile/group-profile/cmer-group-care-ambassador.svg"
+                class="h-[124px] float-right ml-4 -mt-[68px] block lg:hidden"
+              />
               <div
                 class="font-light text-text text-sm lg:text-xl leading-[30px] tracking-widest"
               >
                 <!-- prettier-ignore -->
-                <p class="pr-24 lg:pr-0">{{ $t("group_profile.care.p1_1") }}<span class="text-primary font-bold">{{ $t("group_profile.care.p1_2") }}</span>{{ $t("group_profile.care.p1_3") }}<span class="text-primary font-bold">{{ $t("group_profile.care.p1_4") }}</span>{{ $t("group_profile.care.p1_5") }}</p>
+                <p>{{ $t("group_profile.care.p1_1") }}<span class="text-primary font-bold">{{ $t("group_profile.care.p1_2") }}</span>{{ $t("group_profile.care.p1_3") }}<span class="text-primary font-bold">{{ $t("group_profile.care.p1_4") }}</span>{{ $t("group_profile.care.p1_5") }}</p>
                 <p>{{ $t("group_profile.care.p2") }}</p>
               </div>
             </div>
@@ -228,7 +232,7 @@
             src="https://statichk.cmermedical.com/smile/group-profile/cmer-group-care-ambassador.svg"
             alt="希瑪關懷大使"
             loading="lazy"
-            class="h-[124px] lg:h-auto max-h-[352px] absolute lg:relative top-4 right-4 lg:inset-0"
+            class="max-h-[352px] hidden lg:block"
           />
         </div>
       </div>
