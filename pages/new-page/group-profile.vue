@@ -185,23 +185,14 @@
             <h3
               class="text-left text-primary mb-3 lg:mb-8 text-lg lg:text-3xl font-black leading-none"
             >
-              希瑪關懷大使
+              {{ $t("group_profile.care.title") }}
             </h3>
             <div
               class="font-light text-text text-base lg:text-xl leading-[1.75] tracking-[0.3em]"
             >
-              <p>
-                為了讓每位矯視者有<span class="text-primary font-bold"
-                  >更安心、放心</span
-                >的體驗，希瑪特別設立「希瑪關懷大使」，提供一對一貼心的<span
-                  class="text-primary font-bold"
-                  >術前、術後支援</span
-                >。
-              </p>
-              <p>
-                「希瑪關懷大使」會向矯視者主動提供矯視相關實用資訊,
-                解答各項查詢, 致力提供最細緻、關懷的跟進服務給予矯視者。
-              </p>
+              <!-- prettier-ignore -->
+              <p>{{ $t("group_profile.care.p1_1") }}<span class="text-primary font-bold">{{ $t("group_profile.care.p1_2") }}</span>{{ $t("group_profile.care.p1_3") }}<span class="text-primary font-bold">{{ $t("group_profile.care.p1_4") }}</span>{{ $t("group_profile.care.p1_5") }}</p>
+              <p>{{ $t("group_profile.care.p2") }}</p>
             </div>
           </div>
           <div
@@ -221,7 +212,7 @@
             </svg>
             <div class="flex flex-col text-[#4CAF51] font-bold tracking-widest">
               <p class="text-base lg:text-xl lg:leading-9">
-                「希瑪關懷大使」聯繫方式
+                {{ $t("group_profile.care.contact") }}
               </p>
               <p class="font-en text-lg lg:text-3xl lg:leading-9">
                 WhatsApp 9603 6825
@@ -230,7 +221,7 @@
           </div>
         </div>
         <img
-          src="https://statichk.cmermedical.com/smile/group-profile/cmer-care-ambassador.svg"
+          src="https://statichk.cmermedical.com/smile/group-profile/ambassador.svg"
           alt="希瑪關懷大使"
           loading="lazy"
           class="max-h-[352px]"
@@ -477,8 +468,8 @@ export default {
 
 <style lang="scss" scoped>
 .group-profile-care {
-  border: 1px solid rgba(255, 255, 255, 0.93);
-
+  border: 1px solid #ffffffed;
+  box-shadow: 0 0 0 1px rgba(187, 215, 255, 0.35) inset, 0 1px 1px #d9e8ffe5;
   background: linear-gradient(
     180deg,
     rgba(187, 215, 255, 0.8) 6.61%,
