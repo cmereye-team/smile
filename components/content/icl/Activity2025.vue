@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-11-19 13:47:22
- * @LastEditTime: 2025-12-30 16:38:29
+ * @LastEditTime: 2026-01-04 09:46:23
  * @FilePath: /components/content/icl/Activity2025.vue
  * @Description: ICL2025年终活动
 -->
@@ -19,14 +19,18 @@
               class="size-[27.692vw] lg:size-40 bg-white border-[#5BC6BF] text-[#4AA2AA] border-1 rounded-full shadow-[2.6px_2.6px_0_#5BC6BF] lg:shadow-[4px_4px_0_#5BC6BF] lg:absolute lg:-top-[128px] lg:-left-[clamp(8.75rem,-2.6rem_+_15.93vw,11rem)] animate-floating"
             >
               <div
-                class="flex flex-col justify-center items-center text-[5.128vw] lg:text-3xl leading-[6.154vw] lg:leading-9 font-black -rotate-[12deg] size-full"
+                class="flex flex-col justify-center items-center text-[5.128vw] lg:text-4xl leading-[6.154vw] font-black -rotate-[12deg] size-full"
               >
-                <div><span class="font-en">2025</span>年</div>
-                <div>最後驚喜</div>
+                <div>特別</div>
+                <div>加推</div>
               </div>
             </div>
             <div class="flex-1 text-[3.59vw] lg:text-xl">
-              <p>由2025年11月24日起經網上預約<br class="block lg:hidden"/>並於2026年1月31日前</p>
+              <p>
+                由即日起起經網上預約<br
+                  class="block lg:hidden"
+                />並於2026年1月31日前
+              </p>
               <p>
                 <span class="text-[5.128vw] lg:text-3xl"
                   >完成<strong class="font-black">ICL</strong>植入式隱形眼鏡<br
