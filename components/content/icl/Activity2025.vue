@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-11-19 13:47:22
- * @LastEditTime: 2026-01-04 09:46:23
+ * @LastEditTime: 2026-01-04 10:08:44
  * @FilePath: /components/content/icl/Activity2025.vue
  * @Description: ICL2025年终活动
 -->
@@ -27,7 +27,7 @@
             </div>
             <div class="flex-1 text-[3.59vw] lg:text-xl">
               <p>
-                由即日起起經網上預約<br
+                由即日起經網上預約<br
                   class="block lg:hidden"
                 />並於2026年1月31日前
               </p>
