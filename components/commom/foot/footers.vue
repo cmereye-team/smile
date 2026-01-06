@@ -39,7 +39,7 @@ export default {
         },
         {
           type: "href",
-          link: "https://wa.me/85269408569",
+          link: "https://api.whatsapp.com/send/?phone=85269408569&text=我想(WM-BAW01)聯絡希瑪團隊了解矯視服務更多",
           img: "https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png",
           title: "Whatsapp",
         },
