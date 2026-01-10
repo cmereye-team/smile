@@ -145,19 +145,19 @@ export default {
             this.$t("doctor_team.doctor2.intro7"),
           ],
         },
-        {
-          id: 8,
-          name: this.$t("doctor_team.doctor3.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/97a0a764a2e54197.png",
-          title: [
-            this.$t("doctor_team.doctor3.intro1"),
-            this.$t("doctor_team.doctor3.intro2"),
-            this.$t("doctor_team.doctor3.intro3"),
-            this.$t("doctor_team.doctor3.intro4"),
-            this.$t("doctor_team.doctor3.intro5"),
-            this.$t("doctor_team.doctor3.intro6"),
-          ],
-        },
+        // {
+        //   id: 8,
+        //   name: this.$t("doctor_team.doctor3.name"),
+        //   img: "https://static.cmereye.com/imgs/2024/04/97a0a764a2e54197.png",
+        //   title: [
+        //     this.$t("doctor_team.doctor3.intro1"),
+        //     this.$t("doctor_team.doctor3.intro2"),
+        //     this.$t("doctor_team.doctor3.intro3"),
+        //     this.$t("doctor_team.doctor3.intro4"),
+        //     this.$t("doctor_team.doctor3.intro5"),
+        //     this.$t("doctor_team.doctor3.intro6"),
+        //   ],
+        // },
         {
           id: 2,
           name: this.$t("doctor_team.doctor4.name"),
