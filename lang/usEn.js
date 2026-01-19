@@ -382,7 +382,7 @@
         doctor5: "DR. CHEUNG JING CHEE, JANICE",
         doctor6: "DR. LAM PO SANG, CAROL",
         doctor7: "DR. LAM KEE MING, JASMINE",
-        doctor8: "DR. FAN HOI, ALEX",
+        // doctor8: "DR. FAN HOI, ALEX", 范愷
         // doctor9: '李琬微',
         // doctor10: '邱俊源',
         doctor11: "DR CHAN WAI LOK, LEO",

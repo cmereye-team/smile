@@ -128,19 +128,19 @@ export default {
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo15') },
           ],
         },
-        {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor08.jpg",
-          des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor8'),
-          doctorName: "范愷醫生",
-          doctorInfo: [
-            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
-            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo14') },
-            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo15') },
-            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo17') },
-            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo18') },
-            { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo2') },
-          ],
-        },
+        // {
+        //   src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor08.jpg",
+        //   des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor8'),
+        //   doctorName: "范愷醫生",
+        //   doctorInfo: [
+        //     { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
+        //     { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo14') },
+        //     { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo15') },
+        //     { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo17') },
+        //     { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo18') },
+        //     { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo2') },
+        //   ],
+        // },
         // {
         //   src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor09.jpg",
         //   des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor9'),
