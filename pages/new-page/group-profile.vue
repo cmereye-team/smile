@@ -200,7 +200,9 @@
                 <p>{{ $t("group_profile.care.p2") }}</p>
               </div>
             </div>
-            <div
+            <a
+              href="https://api.whatsapp.com/send/?phone=85296036825&text=Hello 希瑪關懷大使"
+              target="_blank"
               class="gap-y-1 gap-x-3 lg:gap-x-5 lg:gap-y-0 w-fit mx-auto lg:ml-0 grid [grid-template-areas:'title_title'_'icon_desc'] lg:[grid-template-areas:'icon_title'_'icon_desc']"
             >
               <svg
@@ -226,7 +228,7 @@
               >
                 WhatsApp <br class="block lg:hidden" />9603 6825
               </p>
-            </div>
+            </a>
           </div>
           <img
             src="https://statichk.cmermedical.com/smile/group-profile/cmer-group-care-ambassador.svg"

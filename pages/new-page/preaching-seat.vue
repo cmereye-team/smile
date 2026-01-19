@@ -286,6 +286,44 @@
         <picture>
           <source
             srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-1.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-1.jpg"
+            alt="希瑪眼科二月中環預約日歷"
+            title="希瑪眼科二月中環預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-2.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-2.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-2.jpg"
+            alt="希瑪眼科二月旺角預約日歷"
+            title="希瑪眼科二月旺角預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
               https://statichk.cmermedical.com/smile/preaching-seat/calendar-2601-1.avif
             "
             type="image/avif"
@@ -639,6 +677,9 @@ export default {
           "2026-01-14",
           "2026-01-21",
           "2026-01-28",
+          "2026-02-04",
+          "2026-02-11",
+          "2026-02-25",
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -655,6 +696,9 @@ export default {
           "2026-01-17",
           "2026-01-24",
           "2026-01-31",
+          "2026-02-07",
+          "2026-02-21",
+          "2026-02-28",
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -700,6 +744,13 @@ export default {
           "2026-01-24",
           "2026-01-27",
           "2026-01-31",
+          "2026-02-02",
+          "2026-02-07",
+          "2026-02-10",
+          "2026-02-14",
+          "2026-02-21",
+          "2026-02-24",
+          "2026-02-28",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -727,6 +778,9 @@ export default {
           "2026-01-12",
           "2026-01-20",
           "2026-01-26",
+          "2026-02-03",
+          "2026-02-09",
+          "2026-02-23",
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
