@@ -61,7 +61,7 @@ export default {
       {
         rel: "icon",
         type: "image/x-icon",
-        href: "https://smile.hkcmereye.com/asset/favicon.ico",
+        href: "/favicon.ico",
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
