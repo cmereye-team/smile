@@ -1221,6 +1221,7 @@ export default {
       line-height: 50.75px;
       /* 169.167% */
       letter-spacing: 7.5px;
+      display: none;
     }
 
     & > p:nth-child(2) {
@@ -1232,6 +1233,7 @@ export default {
       line-height: 43.5px;
       /* 290% */
       letter-spacing: 0.45px;
+      display: none;
     }
   }
 
@@ -1243,6 +1245,7 @@ export default {
     margin: 0 auto;
     margin-top: 175px;
     position: relative;
+    transform: translateY(-260px);
   }
 
   .lecture-title {
@@ -1453,13 +1456,20 @@ export default {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .lecture-box {
+    transform: translateY(-372px);
+  }
   .lecture-title {
     & > div {
       max-width: 99.21875vw !important;
     }
   }
 }
-
+@media screen and (min-width: 1280px) {
+  .lecture-box {
+    transform: translateY(-445px);
+  }
+}
 @media screen and (max-width: 767px) {
   .Banner {
     position: relative;
@@ -1586,7 +1596,7 @@ export default {
     background-size: 100% 100%;
     width: 100%;
     margin-top: 50px;
-    padding: 115px 0 40px;
+    padding: 92px 0 40px;
     z-index: -1;
 
     & > div {
@@ -1607,6 +1617,7 @@ export default {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        z-index: 10;
 
         & > div:nth-child(1) {
           position: relative;
@@ -1638,26 +1649,26 @@ export default {
           font-size: 3.5vw;
           font-style: normal;
           font-weight: 700;
-          line-height: 7.5vw;
+          line-height: 6vw;
           /* 214.286% */
           letter-spacing: 0.7px;
         }
 
         & > div:nth-child(2) {
-          margin-bottom: 50px;
+          margin-bottom: 32px;
           color: #6d6e71;
           text-align: center;
           font-family: "Noto Sans HK";
           font-size: 3.1vw;
           font-style: normal;
           font-weight: 300;
-          line-height: 6.4vw;
+          line-height: 5.5vw;
           /* 208.333% */
           letter-spacing: 0.6px;
 
-          & > p:nth-child(2) {
-            padding: 0 40px;
-          }
+          // & > p:nth-child(2) {
+          //   padding: 0 40px;
+          // }
 
           & > p:nth-child(3) {
             padding: 0 55px;
