@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-02-04 13:55:59
+ * @LastEditTime: 2026-02-04 14:15:01
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -1662,7 +1662,7 @@ body {
         }
         span {
           color: #4570b6;
-          font-family: "Noto Sans TC";
+          font-family: "Noto Sans HK";
           font-size: 6.29vw;
           font-style: normal;
           font-weight: 400;
@@ -1674,7 +1674,7 @@ body {
           height: 11.28vw;
           a {
             color: #6d6e71;
-            font-family: "Noto Sans TC";
+            font-family: "Noto Sans HK";
             font-size: 3.08vw;
             font-style: normal;
             font-weight: 500;
@@ -1711,7 +1711,7 @@ body {
           h4,
           p {
             color: #4570b6;
-            font-family: "Noto Sans TC";
+            font-family: "Noto Sans HK";
             font-size: 3.59vw;
             font-style: normal;
             font-weight: 400;
@@ -1723,7 +1723,7 @@ body {
               font-weight: 700;
               i {
                 font-style: normal;
-                font-family: "Noto Sans TC";
+                font-family: "Noto Sans HK";
 
                 font-weight: 900;
               }
@@ -1871,7 +1871,7 @@ body {
     .custom-comparison-table tbody tr td {
       color: #60605f;
       text-align: center;
-      font-family: "Noto Sans TC";
+      font-family: "Noto Sans HK";
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -1933,7 +1933,7 @@ body {
           border-radius: 5px;
           color: #8fd3ea;
           text-align: center;
-          font-family: "Noto Sans TC";
+          font-family: "Noto Sans HK";
           font-size: 12px;
           font-style: normal;
           font-weight: 700;
@@ -1985,7 +1985,7 @@ body {
         justify-content: space-around;
         color: #60605f;
         text-align: center;
-        font-family: "Noto Sans TC";
+        font-family: "Noto Sans HK";
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -2014,7 +2014,7 @@ body {
 
       p {
         color: #ff7e36;
-        font-family: "Noto Sans TC";
+        font-family: "Noto Sans HK";
         font-size: 12px;
         font-style: normal;
         font-weight: 700;
@@ -2146,7 +2146,7 @@ body {
         }
         span {
           color: #4570b6;
-          font-family: "Noto Sans TC";
+          font-family: "Noto Sans HK";
           font-size: clamp(37px, 3.85vw, 74px);
           font-style: normal;
           font-weight: 400;
@@ -2158,7 +2158,7 @@ body {
           height: clamp(22px, 2.29vw, 44px);
           a {
             color: #6d6e71;
-            font-family: "Noto Sans TC";
+            font-family: "Noto Sans HK";
             font-size: clamp(10px, 1.04vw, 20px);
             font-style: normal;
             font-weight: 300;
@@ -2212,7 +2212,7 @@ body {
               font-weight: 700;
               i {
                 font-style: normal;
-                font-family: "Noto Sans TC";
+                font-family: "Noto Sans HK";
 
                 font-weight: 900;
               }
@@ -2275,7 +2275,7 @@ body {
         display: inline-block;
         color: #4570b6;
         text-align: center;
-        font-family: "Noto Sans TC";
+        font-family: "Noto Sans HK";
         font-size: 20px;
         font-style: normal;
         font-weight: 900;
@@ -2396,7 +2396,7 @@ body {
     .custom-comparison-table tbody tr td {
       color: #60605f;
       text-align: center;
-      font-family: "Noto Sans TC";
+      font-family: "Noto Sans HK";
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
@@ -2459,7 +2459,7 @@ body {
           border-radius: 5px;
           color: #8fd3ea;
           text-align: center;
-          font-family: "Noto Sans TC";
+          font-family: "Noto Sans HK";
           font-size: 15.542px;
           font-style: normal;
           font-weight: 700;
@@ -2510,7 +2510,7 @@ body {
         justify-content: space-around;
         color: #60605f;
         text-align: center;
-        font-family: "Noto Sans TC";
+        font-family: "Noto Sans HK";
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -2530,7 +2530,7 @@ body {
       letter-spacing: 4px;
       p {
         color: #ff7e36;
-        font-family: "Noto Sans TC";
+        font-family: "Noto Sans HK";
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
