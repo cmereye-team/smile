@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2025-12-30 16:31:18
+ * @LastEditTime: 2026-02-04 13:55:59
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -59,7 +59,7 @@
         <table class="table custom-comparison-table new-container">
           <thead>
             <tr>
-              <th>此為<br class="d-lg-none" />香港價錢 </th>
+              <th>此為<br class="d-lg-none" />香港價錢</th>
 
               <th>
                 <span>SMILE Pro</span><br class="d-lg-none" />
@@ -70,7 +70,6 @@
                 <span>SMILE</span> <br class="d-lg-none" /><span>Pro</span
                 ><br />微笑激光<br class="d-lg-none" />矯視
               </th>
-
               <th>
                 <span>ICL</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
               </th>
@@ -91,20 +90,20 @@
           <tbody>
             <tr>
               <td>價錢(雙眼)</td>
-              <td>$26,000^</td>
-              <td>$24,000^</td>
-              <td>不帶散光<br />$64,000^^<br />帶散光<br />$68,000^^</td>
-              <td>$19,000^</td>
-              <td>$19,000^</td>
+              <td>港幣$26,000^</td>
+              <td>港幣$24,000^</td>
+              <td>不帶散光<br />港幣$64,000^^<br />帶散光<br />港幣$68,000^^</td>
+              <td>港幣$19,000^</td>
+              <td>港幣$19,000^</td>
             </tr>
 
             <tr>
               <td>術前檢查<br class="d-lg-block" />費用</td>
-              <td>$100</td>
-              <td>$100</td>
-              <td>$500</td>
-              <td>$100</td>
-              <td>$100</td>
+              <td>港幣$100</td>
+              <td>港幣$100</td>
+              <td>港幣$500</td>
+              <td>港幣$100</td>
+              <td>港幣$100</td>
             </tr>
 
             <tr>
@@ -295,8 +294,8 @@
               <td></td>
               <td colspan="5">
                 <div>
-                  <div>$3,000</div>
-                  <div>$5,000</div>
+                  <div>港幣$3,000</div>
+                  <div>港幣$5,000</div>
                 </div>
               </td>
             </tr>
@@ -326,19 +325,19 @@
 
             <tr>
               <td>單焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-              <td>$25,000 - $28,000</td>
-              <td>$30,000 - $35,000</td>
+              <td>港幣$25,000 - $28,000</td>
+              <td>港幣$30,000 - $35,000</td>
             </tr>
 
             <tr>
               <td>多焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-              <td>$35,000 - $45,000</td>
-              <td>$43,000 - $51,000</td>
+              <td>港幣$35,000 - $45,000</td>
+              <td>港幣$43,000 - $51,000</td>
             </tr>
 
             <tr>
               <td>術前檢查<br class="d-lg-none" />費用</td>
-              <td colspan="2">$680</td>
+              <td colspan="2">港幣$680</td>
             </tr>
           </tbody>
         </table>
@@ -378,13 +377,11 @@
           <span>{{ $t("fee.textList.text1") }}</span>
           <span>
             {{ $t("fee.textList.text2") }}<br />
-            {{ $t("fee.textList.text2_1") }}
-            {{ $t("fee.textList.text2_2") }}<br />
+            {{ $t("fee.textList.text2_1") }}{{ $t("fee.textList.text2_2") }}<br />
           </span>
           <span>
             {{ $t("fee.textList.text3") }}<br />
-            {{ $t("fee.textList.text3_1") }}
-            {{ $t("fee.textList.text3_2") }}<br />
+            {{ $t("fee.textList.text3_1") }}{{ $t("fee.textList.text3_2") }}<br />
             {{ $t("fee.textList.text3_3") }}
           </span>
           <br />
