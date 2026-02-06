@@ -7,14 +7,14 @@
       <div class="serve-box" @click="serveForm('/ophthalmicInfo/AppointForm')">
         <img
           src="https://static.cmereye.com/imgs/2023/01/df076d9e71e08870.png"
-          alt=""
+          :alt="$t('home.serve.p2')"
         />
         <p>{{$t('home.serve.p2')}}</p>
       </div>
-      <div class="serve-box" @click="serveForm('/eye-checkup')">
+      <div class="serve-box" @click="serveForm('/patient-info#inJiaoShi')">
         <img
           src="https://static.cmereye.com/imgs/2023/01/a1441d1e7e65eb40.png"
-          alt=""
+          :alt="$t('home.serve.p1')"
         />
         <p>{{$t('home.serve.p1')}}</p>
       </div>
