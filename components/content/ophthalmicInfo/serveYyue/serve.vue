@@ -11,7 +11,7 @@
         />
         <p>{{$t('home.serve.p2')}}</p>
       </div>
-      <div class="serve-box" @click="serveForm('/patient-info#inJiaoShi')">
+      <div class="serve-box" @click="serveForm('/patient-info#PreCorrection')">
         <img
           src="https://static.cmereye.com/imgs/2023/01/a1441d1e7e65eb40.png"
           :alt="$t('home.serve.p1')"

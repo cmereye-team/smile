@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-07-03 17:29:35
- * @LastEditTime: 2025-11-28 10:59:23
+ * @LastEditTime: 2026-02-10 09:26:44
  * @FilePath: /pages/new-page/patient-info.vue
  * @Description: 诊症须知
 -->
@@ -129,60 +129,65 @@
           ></iframe>
         </div>
       </div>
-      <div class="CorrectedVisionBefore-Process-title">矯視前檢查流程</div>
-      <div class="CorrectedVisionBefore-Process">
-        <div class="CorrectedVisionBefore-Process-item">
-          <img
-            class="CorrectedVisionBefore-Process-item-content"
-            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img1.svg"
-            alt=""
-          />
-          <p>前台登記及<br />初步眼睛檢查</p>
-          <img
-            class="CorrectedVisionBefore-Process-item-icon"
-            src="https://statichk.cmermedical.com/smile/patient-info/01.png"
-            alt=""
-          />
-        </div>
+      <div
+        class="pt-8 lg:pt-15 scroll-mt-[112px] md:scroll-mt-[140px] lg:scroll-mt-[180px] xl:scroll-mt-[208px] 2xl:scroll-mt-[284px]"
+        id="PreCorrection"
+      >
+        <div class="CorrectedVisionBefore-Process-title">矯視前檢查流程</div>
+        <div class="CorrectedVisionBefore-Process">
+          <div class="CorrectedVisionBefore-Process-item">
+            <img
+              class="CorrectedVisionBefore-Process-item-content"
+              src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img1.svg"
+              alt=""
+            />
+            <p>前台登記及<br />初步眼睛檢查</p>
+            <img
+              class="CorrectedVisionBefore-Process-item-icon"
+              src="https://statichk.cmermedical.com/smile/patient-info/01.png"
+              alt=""
+            />
+          </div>
 
-        <div class="CorrectedVisionBefore-Process-item">
-          <img
-            class="CorrectedVisionBefore-Process-item-content"
-            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img2.svg"
-            alt=""
-          />
-          <p>詳細屈光檢查</p>
-          <img
-            class="CorrectedVisionBefore-Process-item-icon"
-            src="https://statichk.cmermedical.com/smile/patient-info/02.png"
-            alt=""
-          />
-        </div>
-        <div class="CorrectedVisionBefore-Process-item">
-          <img
-            class="CorrectedVisionBefore-Process-item-content"
-            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img4.svg"
-            alt=""
-          />
-          <p>全面眼底檢查</p>
-          <img
-            class="CorrectedVisionBefore-Process-item-icon"
-            src="https://statichk.cmermedical.com/smile/patient-info/04.png"
-            alt=""
-          />
-        </div>
-        <div class="CorrectedVisionBefore-Process-item">
-          <img
-            class="CorrectedVisionBefore-Process-item-content"
-            src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img3.svg"
-            alt=""
-          />
-          <p>散曈</p>
-          <img
-            class="CorrectedVisionBefore-Process-item-icon"
-            src="https://statichk.cmermedical.com/smile/patient-info/03.png"
-            alt=""
-          />
+          <div class="CorrectedVisionBefore-Process-item">
+            <img
+              class="CorrectedVisionBefore-Process-item-content"
+              src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img2.svg"
+              alt=""
+            />
+            <p>詳細屈光檢查</p>
+            <img
+              class="CorrectedVisionBefore-Process-item-icon"
+              src="https://statichk.cmermedical.com/smile/patient-info/02.png"
+              alt=""
+            />
+          </div>
+          <div class="CorrectedVisionBefore-Process-item">
+            <img
+              class="CorrectedVisionBefore-Process-item-content"
+              src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img4.svg"
+              alt=""
+            />
+            <p>全面眼底檢查</p>
+            <img
+              class="CorrectedVisionBefore-Process-item-icon"
+              src="https://statichk.cmermedical.com/smile/patient-info/04.png"
+              alt=""
+            />
+          </div>
+          <div class="CorrectedVisionBefore-Process-item">
+            <img
+              class="CorrectedVisionBefore-Process-item-content"
+              src="http://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-img3.svg"
+              alt=""
+            />
+            <p>散曈</p>
+            <img
+              class="CorrectedVisionBefore-Process-item-icon"
+              src="https://statichk.cmermedical.com/smile/patient-info/03.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <img
@@ -251,7 +256,8 @@
           <i>3.</i
           ><span>
             散瞳/ 放大瞳孔後：<br />
-            ·觀看近物時視野變得模糊<br />·有輕微畏光情況，可帶備太陽眼鏡 <br />·切勿駕駛
+            ·觀看近物時視野變得模糊<br />·有輕微畏光情況，可帶備太陽眼鏡
+            <br />·切勿駕駛
             <br />
             <b>·放大瞳孔的效果一般會在4至6小時後消失</b>
           </span>
@@ -539,7 +545,9 @@
               <div>
                 <p>
                   <i>1</i>
-                  <span>矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span>
+                  <span
+                    >矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span
+                  >
                 </p>
                 <p>
                   <i>2</i><span>按醫生指示定時服藥或滴眼藥水，維持四星期</span>
@@ -567,7 +575,9 @@
               <div>
                 <p>
                   <i>1</i>
-                  <span>如有需要可配戴太陽眼鏡以防止紫外線的刺激或沙塵入眼</span>
+                  <span
+                    >如有需要可配戴太陽眼鏡以防止紫外線的刺激或沙塵入眼</span
+                  >
                 </p>
                 <p><i>2</i><span>不可進行水上活動或浸熱水浴</span></p>
                 <p><i>3</i><span>不可進行碰撞性運動，如足球、籃球等</span></p>
@@ -583,7 +593,9 @@
               <div>
                 <p>
                   <i>1</i>
-                  <span>矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span>
+                  <span
+                    >矯視後流眼水或少許異物感等不適是正常現象，不適感覺在兩至三小時後逐漸減少</span
+                  >
                 </p>
                 <p><i>2</i><span>避免梘水、自來水或污水進入眼睛</span></p>
                 <p><i>3</i><span>按醫生指示定時服藥或滴眼藥水</span></p>
