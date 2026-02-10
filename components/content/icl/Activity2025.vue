@@ -1,9 +1,9 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-11-19 13:47:22
- * @LastEditTime: 2026-01-04 10:08:44
+ * @LastEditTime: 2026-02-10 09:33:50
  * @FilePath: /components/content/icl/Activity2025.vue
- * @Description: ICL2025年终活动
+ * @Description: ICL2025年终活动，活动已结束，该组件仅备份无使用
 -->
 <template>
   <section
