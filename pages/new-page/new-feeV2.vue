@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-02-04 14:15:01
+ * @LastEditTime: 2026-02-12 11:07:21
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -186,19 +186,19 @@
             <tr class="custom-comparison-table-tipIcon">
               <td>術後覆診</td>
               <td>
-                <span>5次<i>#</i></span>
+                <span>5次<sup>#</sup></span>
               </td>
               <td>
-                <span>3次<i>#</i></span>
+                <span>3次<sup>#</sup></span>
               </td>
               <td>
-                <span>6次<i>#</i></span>
+                <span>6次<sup>##</sup></span>
               </td>
               <td>
-                <span>3次<i>#</i></span>
+                <span>3次<sup>#</sup></span>
               </td>
               <td>
-                <span>3次<i>#</i></span>
+                <span>3次<sup>#</sup></span>
               </td>
             </tr>
 
@@ -382,7 +382,8 @@
           <span>
             {{ $t("fee.textList.text3") }}<br />
             {{ $t("fee.textList.text3_1") }}{{ $t("fee.textList.text3_2") }}<br />
-            {{ $t("fee.textList.text3_3") }}
+            {{ $t("fee.textList.text3_3") }}<br />
+            {{ $t("fee.textList.text3_4") }}
           </span>
           <br />
           <span>
