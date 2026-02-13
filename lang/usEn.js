@@ -506,7 +506,7 @@
       address9: "Room 1614-15, Hang Lung Centre, 2-20 Paterson Street",
       address10: "Room 1601, 16/F, Crocodile Centre, 79 Hoi Yuen Road",
       address11: "Shop 5A, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street",
-      address12: "Shop 1C—1F, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street",
+      address12: "Shop 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street",
       address13: "G/F, Sing Shun Building, 45 & 47 Castle Peak Road, Yuen Long",
       address14: "G/F, Sze Yuen Mansion, No. 255 Sha Tsui Road",
       address15:
