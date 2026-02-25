@@ -494,6 +494,32 @@ $primary-color: #4570b6;
   height: 100%;
   position: relative;
   cursor: grab; // 默認抓手樣式
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    top: 104px;
+    left: 60%;
+    @media screen and (min-width: 1440px) and (max-width: 1744px) {
+      left: 42%;
+    }
+  }
+  &::after {
+    content: "用家分享";
+    position: absolute;
+    top: 92px;
+    left: calc(60% + 24px);
+    font-size: 24px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 100;
+    width: 120px;
+    @media screen and (min-width: 1440px) and (max-width: 1744px) {
+      left: calc(42% + 24px);
+    }
+  }
 }
 
 .swiper-container {
