@@ -431,9 +431,6 @@
 
   .footer-bottom {
     position: absolute;
-    bottom: 70px;
-    left: 24px;
-
     color: #6d6e71;
     text-align: center;
     font-family: "Noto Sans TC";
@@ -442,6 +439,16 @@
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 1.6px;
+    bottom: 0;
+    width: 120%;
+    left: -240px;
+  }
+}
+@media screen and (min-width: 1365px) {
+  .footer-bottom {
+    bottom: 72px;
+    left: -12px;
+    width: 100%;
   }
 }
 </style>
