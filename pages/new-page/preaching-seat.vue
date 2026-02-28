@@ -309,44 +309,6 @@
             title="希瑪眼科三月旺角預約日歷"
           />
         </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-1.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-1.jpg"
-            alt="希瑪眼科二月中環預約日歷"
-            title="希瑪眼科二月中環預約日歷"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-2.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-2.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2602-2.jpg"
-            alt="希瑪眼科二月旺角預約日歷"
-            title="希瑪眼科二月旺角預約日歷"
-          />
-        </picture>
       </div>
     </div>
     <businessHours />
