@@ -1,6 +1,7 @@
 <template>
-  <div class="lasik simleProV2">
-      <topNotice></topNotice>
+  <div class="lasik">
+    <!-- simleProV2 -->
+      <!-- <topNotice></topNotice> -->
     <HeadV2 />
 
     <div class="top-btnV2" @click="scrollToTopV2">

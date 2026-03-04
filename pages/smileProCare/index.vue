@@ -13,9 +13,9 @@
         alt="SMILE Pro Care 限時禮品"
         loading="lazy"
         srcset="
-          https://statichk.cmermedical.com/smile/smileProCare/banner-mobile.webp?V2 400w,
-          https://statichk.cmermedical.com/smile/smileProCare/banner-mobile.webp?V2 768w,
-          https://statichk.cmermedical.com/smile/smileProCare/banner-pc.webp
+          https://statichk.cmermedical.com/cmermedical/image/20260304/e54f190605fe428b94ae.webp 400w,
+          https://statichk.cmermedical.com/cmermedical/image/20260304/e54f190605fe428b94ae.webp 768w,
+          https://statichk.cmermedical.com/cmermedical/image/20260304/1bd7769d95f4416c853352c41172.webp
         "
         sizes="(max-width: 992px) 100vw, 1216px"
         style="pointer-events: none"
@@ -27,10 +27,10 @@
           <div class="smile-banner__title">
             <div class="smile-banner__title-row">
               <span class="smile-banner__title-main">SMILE Pro Care</span>
-              <span class="smile-banner__title-sub">限時禮品</span>
+              <!-- <span class="smile-banner__title-sub">限時禮品</span> -->
             </div>
 
-            <h3 class="smile-banner__heading">限量版便攜式咖啡機</h3>
+            <!-- <h3 class="smile-banner__heading">限量版便攜式咖啡機</h3> -->
 
             <p class="smile-banner__description">
               是希瑪微笑矯視中心為對SMILE
@@ -38,7 +38,7 @@
             </p>
 
             <!-- 剩餘數量顯示 -->
-            <div class="smile-banner__counter">
+            <!-- <div class="smile-banner__counter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -57,7 +57,7 @@
                 >{{ randomNumber }}</span
               >
               <span class="smile-banner__counter-unit">部</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="smile-banner__gift-link">
@@ -67,21 +67,21 @@
             >
               <img
                 src="https://statichk.cmermedical.com/smile/smileProCare/banner-img.png"
-                alt="立即了解 SMILE Pro Care 禮品計劃"
+                alt="立即了解 SMILE Pro Care 計劃"
                 class="smile-banner__gift-image"
               />
               <div class="smile-banner__gift-text">
                 <span class="smile-banner__gift-text-main">立即了解</span>
                 <span class="smile-banner__gift-text-sub">SMILE Pro Care</span>
-                <span class="smile-banner__gift-text-detail">禮品計劃</span>
+                <span class="smile-banner__gift-text-detail">計劃</span>
               </div>
             </a>
           </div>
 
           <div href="#" @click="scrollToSection('section2')"  class="smile-banner__scroll-indicator">
             <div class="smile-banner__scroll-text">
-              <span>下滑了解</span>
-              <span>禮品計劃</span>
+              <span></span>
+              <span>了解計劃詳情</span>
             </div>
             <img
               src="https://statichk.cmermedical.com/smile/smileProCare/banner-img2.png"
@@ -304,7 +304,7 @@
           </div>
         </div>
 
-        <div class="benefits-section__gift-card">
+        <!-- <div class="benefits-section__gift-card">
           <div>
             <div
               class="benefits-section__gift-info benefits-section__gift-info--left"
@@ -338,7 +338,7 @@
 
             <div class="benefits-section__limited-badge">限量版</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- end SMILE Pro Care 專享福利 -->
@@ -4403,7 +4403,7 @@ font-family: Poppins, sans-serif;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    margin-top:159px;// 159px;
+    // margin-top:159px;// 159px;
   }
 
   .smile-banner__image {
@@ -4574,6 +4574,7 @@ font-family: Poppins, sans-serif;
     .smile-banner__text-wrap {
       top: 168px; /* 14vw在1200px时约为168px */
       height: calc(100% - 168px);
+      width: 50%;
     }
   }
 
@@ -4952,8 +4953,10 @@ font-family: Poppins, sans-serif;
 /* 桌面端样式 (768px及以上) */
 @media (min-width: 768px) {
   .benefits-section__wrapper{
-        height: 798px;
-    background: linear-gradient(96deg, #DEDBDE 60.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray 1039.304px -71px / 46.042% 110.777% no-repeat;
+        // height: 798px;
+        height: 580px;
+    // background: linear-gradient(96deg, #DEDBDE 60.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray 1039.304px -71px / 46.042% 110.777% no-repeat;
+ background: linear-gradient(96deg, #DEDBDE 60.79%, #DEDBDE 100%);
 
   }
   .benefits-section__content {
@@ -5045,8 +5048,8 @@ font-family: Poppins, sans-serif;
 /* 中等屏幕调整 (992px以下) */
 @media (max-width: 768px) {
      .benefits-section__wrapper{
-       
-    background: linear-gradient(179deg, #DEDBDE 30.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray bottom / 100% auto no-repeat;
+        // background: linear-gradient(179deg, #DEDBDE 30.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray bottom / 100% auto no-repeat;
+    background: #DEDBDE;
   }
   .benefits-section__benefit-item {
     width: 155px;
@@ -5106,6 +5109,8 @@ font-family: Poppins, sans-serif;
     // background: linear-gradient(180deg, #C9C8CD 0%, #DEDEDE 48.56%, #DEDCDE 100%);
     width: 100%;
     position: relative;
+            background: #DEDBDE;
+            padding-bottom: 15px;
   }
 }
 @media (max-width: 350px) {
