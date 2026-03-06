@@ -4493,7 +4493,7 @@ font-family: Poppins, sans-serif;
   .smile-banner__gift-link {
     position: absolute;
     left: 20px;
-    bottom: -71px;
+    bottom: -46px;
     width: 36.667vw;
     display: flex;
     flex-direction: column;
@@ -4624,7 +4624,7 @@ font-family: Poppins, sans-serif;
   .smile-banner__gift-link {
     width: 237px;
     left: calc(-237px / 2);
-    bottom: -70px;
+    bottom: -40px;
     position: absolute;
   }
 
@@ -4666,7 +4666,7 @@ font-family: Poppins, sans-serif;
   .smile-banner__gift-link {
     width: 250px;
     left: calc(-250px / 2);
-    bottom: -70px;
+    bottom: -40px;
     position: absolute;
   }
 }
