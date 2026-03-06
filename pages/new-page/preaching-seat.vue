@@ -488,21 +488,21 @@ export default {
         // Smile Pro 講座-旺角
         if (this.serviceVal == 1 && this.addressVal == 1) {
           this.form.address = "smileProMongKok";
-        }else if (this.serviceVal == 1 && this.addressVal == 2) {
-           // Smile Pro 講座-中環
+        } else if (this.serviceVal == 1 && this.addressVal == 2) {
+          // Smile Pro 講座-中環
           this.form.address = "smileProCentral";
-        }else if (this.serviceVal == 2 && this.addressVal == 2) {
+        } else if (this.serviceVal == 2 && this.addressVal == 2) {
           // Smile講座-中環
           this.form.address = "smileCentral";
-        }else if (this.serviceVal == 3 && this.addressVal == 1) {
+        } else if (this.serviceVal == 3 && this.addressVal == 1) {
           // 老花講座-旺角
           this.form.address = "clearVisionMongKok";
-        }else{
-this.form.address = "";
+        } else {
+          this.form.address = "";
         }
 
-       
-        
+
+
 
       } else {
         // 当其中一个值为空时，清空 form1.address
@@ -1359,8 +1359,12 @@ this.form.address = "";
       .el-form-item__content {
         padding-left: 50px;
       }
+
+      
     }
+  
   }
+
 
   :deep(.el-button) {
     color: #fff;
@@ -1381,12 +1385,17 @@ this.form.address = "";
   :deep(.el-button:hover) {
     box-shadow: 0px 0px 8px 6px #d5d5d5f7;
   }
+
+ .el-select-dropdown__item {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .lecture-box {
     // transform: translateY(-372px);
   }
+  
 
   .lecture-title {
     &>div {

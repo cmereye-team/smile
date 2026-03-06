@@ -3201,9 +3201,9 @@ module.exports = {
     service: "選擇服務",
     title4: "選擇地點",
     content0: {
-      title1: "Smile Pro 講座",
-      title2: "Smile講座",
-      title3: "老花講座",
+      title1: "Smile Pro",
+      title2: "Smile + ICL",
+      title3: "老花 Clear-Vision",
     },
     content1: {
       title1: "旺角",
