@@ -3189,10 +3189,11 @@ module.exports = {
   },
   appointFroms: {
     title: "讲座",
-    title1: "SMILE 微笑激光矫视，SMILE PRO 微笑激光矫视，",
-    title2: "CMER CLEAR-VISION 老花讲座！",
+   title1: "SMILE Pro 微笑激光矫视、ICL植入式隐形眼镜、SMILE 微笑激光矫视、",
+    title2: "CMER CLEAR-VISION 老花讲座",
     p1: "中环诊所：中环毕打街1-3号中建大厦1512室",
     p2: "旺角诊所：旺角弥敦道625及639号雅兰中心一期1725B室",
+    service: "選擇服務",
     title4: "选择地点",
   },
 };

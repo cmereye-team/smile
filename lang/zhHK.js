@@ -3186,7 +3186,7 @@ module.exports = {
   },
   appointFrom_ifram: {
     title:
-      "SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，CMER CLEAR-VISION 老花講座！",
+      "SMILE Pro 微笑激光矯視、ICL植入式隱形眼鏡、SMILE 微笑激光矯視、CMER CLEAR-VISION 老花講座",
     p1: "中環診所：中環畢打街1-3號中建大廈1512室",
     p2: "旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室",
     p3: "旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室",
@@ -3194,19 +3194,31 @@ module.exports = {
   },
   appointFroms: {
     title: "講座",
-    title1: "SMILE 微笑激光矯視，SMILE PRO 微笑激光矯視，",
-    title2: "CMER CLEAR-VISION 老花講座！",
+    title1: "SMILE Pro 微笑激光矯視、ICL植入式隱形眼鏡、SMILE 微笑激光矯視、",
+    title2: "CMER CLEAR-VISION 老花講座",
     p1: "中環診所：中環畢打街1-3號中建大廈1512室",
     p2: "旺角診所：旺角彌敦道625及639號雅蘭中心一期1725B室",
+    service: "選擇服務",
     title4: "選擇地點",
+    content0: {
+      title1: "Smile Pro 講座",
+      title2: "Smile講座",
+      title3: "老花講座",
+    },
     content1: {
-      title1: "Smile Pro 講座-旺角",
-      title2: "Smile講座-中環",
-      title3: "Smile講座-旺角",
-      title4: "老花講座-旺角",
-      title5: "Smile Pro 講座-中環",
+      title1: "旺角",
+      title2: "中環",
+      title3: "旺角",
       date: "預約日期",
     },
+    // content1: {
+    //   title1: "Smile Pro 講座-旺角",
+    //   title2: "Smile講座-中環",
+    //   title3: "Smile講座-旺角",
+    //   title4: "老花講座-旺角",
+    //   title5: "Smile Pro 講座-中環",
+    //   date: "預約日期",
+    // },
     content2: {
       p1: "您正預約在",
       p2: "全飛秒SMILE微笑激光矯視講座請填寫以下表格:",
