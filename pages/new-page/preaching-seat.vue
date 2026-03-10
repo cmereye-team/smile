@@ -220,6 +220,8 @@
           </div>
         </div>
       </div>
+
+      <h2 class="lectureCalendar">{{ $t("appointFroms.LectureCalendar") }}</h2>
       <div class="lecture-image">
         <picture>
           <source srcset="
@@ -922,6 +924,49 @@ export default {
 </script>
 
 <style lang="scss">
+/* 修改下拉選單樣式 */
+.el-select-dropdown__item {
+  height: auto !important;
+  line-height: 1.5 !important;
+  padding: 10px 15px !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.el-select-dropdown__item:last-child {
+  border-bottom: none;
+}
+
+/* 選中狀態 */
+ .el-select-dropdown__item.selected {
+  font-weight: bold;
+  color: #409EFF;
+}
+
+/* 懸停效果 */
+ .el-select-dropdown__item:hover {
+  background-color: #f5f7fa;
+}
+
+// .el-popper .popper__arrow,
+// .el-popper .popper__arrow::after {
+//   display: none;
+// }
+// .el-popper[x-placement^=bottom]{
+//   margin-top: -2px;
+// }
+// .el-select-dropdown__list{
+//   padding: 0;
+  
+//   border-left: 2px solid #4570b6;
+//   border-right: 2px solid #4570b6;
+//   border-bottom: 2px solid #4570b6;
+//   border-top: 2px solid white;
+//   z-index: 9;
+// }
+
+
+
+
 .date-picker-class {
   .el-picker-panel__content {
     .el-date-table {
@@ -1194,6 +1239,17 @@ export default {
     }
   }
 
+  .lectureCalendar{
+    color: #4570B6;
+font-family: "Noto Sans TC";
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 39px; /* 130% */
+margin: 52px 0 0 0;
+
+  }
+
   .title-img {
     // position: absolute;
     // top: -25%;
@@ -1277,6 +1333,10 @@ export default {
     justify-content: space-between;
   }
 
+
+
+
+
   :deep(.el-form) {
     max-width: 1200px;
     margin: 0 auto;
@@ -1287,7 +1347,9 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 85px 0;
+    // margin: 85px 0;
+    margin-top: 61px;
+    gap: 77px;
 
     img {
       width: 952px;
@@ -1436,10 +1498,20 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .lectureCalendar{
+    color: #4570B6;
+font-family: "Noto Sans TC";
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 39px; /* 195% */
+margin:10px 0;
+  }
   .Banner {
     position: relative;
     z-index: 2;
   }
+
 
   .Banner .banner-text-default p:nth-child(1) {
     font-size: 20px;
@@ -1617,12 +1689,13 @@ export default {
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 3.5vw;
+          font-size: 18px;
           font-style: normal;
           font-weight: 700;
           line-height: 6vw;
           /* 214.286% */
           letter-spacing: 0.7px;
+          padding: 0 10px;
         }
 
         &>div:nth-child(2) {
@@ -1630,7 +1703,7 @@ export default {
           color: #6d6e71;
           text-align: center;
           font-family: "Noto Sans HK";
-          font-size: 3.1vw;
+          font-size: 16px;
           font-style: normal;
           font-weight: 300;
           line-height: 5.5vw;
@@ -1639,14 +1712,14 @@ export default {
           gap: 20px;
         display: flex;
         flex-direction: column;
-        margin: 20px 30px;
+        margin: 20px 10px;
 
           // & > p:nth-child(2) {
           //   padding: 0 40px;
           // }
 
           &>p:nth-child(3) {
-            padding: 0 55px;
+            padding: 0 10px;
           }
 
           &>p:nth-child(4) {
@@ -1740,6 +1813,9 @@ export default {
 
   .lecture-image {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     img {
       width: 100%;

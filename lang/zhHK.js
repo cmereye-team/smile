@@ -3253,5 +3253,6 @@ module.exports = {
       p7: "員工介紹",
     },
     btn: "提交預約",
+    LectureCalendar: "講座月曆",
   },
 };
