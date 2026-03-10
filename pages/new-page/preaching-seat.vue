@@ -924,28 +924,28 @@ export default {
 </script>
 
 <style lang="scss">
-/* 修改下拉選單樣式 */
-.el-select-dropdown__item {
-  height: auto !important;
-  line-height: 1.5 !important;
-  padding: 10px 15px !important;
-  border-bottom: 1px solid #f0f0f0;
-}
+// /* 修改下拉選單樣式 */
+// .el-select-dropdown__item {
+//   height: auto !important;
+//   line-height: 1.5 !important;
+//   padding: 10px 15px !important;
+//   border-bottom: 1px solid #f0f0f0;
+// }
 
-.el-select-dropdown__item:last-child {
-  border-bottom: none;
-}
+// .el-select-dropdown__item:last-child {
+//   border-bottom: none;
+// }
 
-/* 選中狀態 */
- .el-select-dropdown__item.selected {
-  font-weight: bold;
-  color: #409EFF;
-}
+// /* 選中狀態 */
+//  .el-select-dropdown__item.selected {
+//   font-weight: bold;
+//   color: #409EFF;
+// }
 
-/* 懸停效果 */
- .el-select-dropdown__item:hover {
-  background-color: #f5f7fa;
-}
+// /* 懸停效果 */
+//  .el-select-dropdown__item:hover {
+//   background-color: #f5f7fa;
+// }
 
 // .el-popper .popper__arrow,
 // .el-popper .popper__arrow::after {
