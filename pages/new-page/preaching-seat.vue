@@ -947,22 +947,41 @@ export default {
 //   background-color: #f5f7fa;
 // }
 
-// .el-popper .popper__arrow,
+
+// .lecture-form__service-wrap .el-popper .popper__arrow,
 // .el-popper .popper__arrow::after {
 //   display: none;
 // }
+// .el-popper .popper__arrow, .el-popper .popper__arrow::after{
+//   display: none;
+// }
 // .el-popper[x-placement^=bottom]{
-//   margin-top: -2px;
+//   margin-top: -8px;
 // }
-// .el-select-dropdown__list{
-//   padding: 0;
+.el-select-dropdown__item{
+  min-height: 44px;
+}
+.el-select-dropdown__list{
+  padding: 0;
   
-//   border-left: 2px solid #4570b6;
-//   border-right: 2px solid #4570b6;
-//   border-bottom: 2px solid #4570b6;
-//   border-top: 2px solid white;
-//   z-index: 9;
+  // border-left: 2px solid #4570b6;
+  // border-right: 2px solid #4570b6;
+  // border-bottom: 2px solid #4570b6;
+  // border-top: 2px solid white;
+  // z-index: 9;
+  // box-shadow: none;
+}
+// .el-select-dropdown{
+//   border: none;
+//   box-shadow: none;
 // }
+// .el-range-editor.is-active, .el-range-editor.is-active:hover, .el-select .el-input.is-focus .el-input__inner{
+//   border-top: 2px solid #4570B6;
+//   border-left: 2px solid #4570B6;
+//   border-right: 2px solid #4570B6;
+//   border-bottom: 2px solid transparent;
+// }
+
 
 
 
