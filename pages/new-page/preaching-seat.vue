@@ -67,20 +67,24 @@
               <p>{{ $t("appointFroms.title2") }}</p>
             </div>
             <div>
-              <p>{{ $t("appointFroms.p1") }}</p>
+              <!-- <p>{{ $t("appointFroms.p1") }}</p> -->
               <!-- <p>旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室</p> -->
               <!-- <p>旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室</p> -->
-              <p>{{ $t("appointFroms.p2") }}</p>
+              <!-- <p>{{ $t("appointFroms.p2") }}</p> -->
+
+              <p v-html="$t('appointFroms.p3')"></p>
+              <p v-html="$t('appointFroms.p4')"></p>
+              <p v-html="$t('appointFroms.p5')"></p>
               <!-- <p>
                 尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室
               </p> -->
             </div>
             <div class="lecture-form">
 
-              <el-form ref="form" :model="form" label-width="180px">
+              <el-form ref="form" class="form0" :model="form" label-width="150px">
                 <div class="lecture-form__service-wrap">
                   <el-form-item :label="$t('appointFroms.service')">
-                    <el-select v-model="serviceVal" :placeholder="$t('appointFroms.service')" @change="changeLocation"
+                    <el-select v-model="serviceVal" :placeholder="$t('appointFroms.sectionPlace')" @change="changeLocation"
                       clearable>
                       <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
@@ -110,7 +114,7 @@
                     </el-select>
                   </el-form-item>
                   <el-form-item :label="$t('appointFroms.title4')">
-                    <el-select v-model="addressVal" :placeholder="$t('appointFroms.title4')" @change="changeLocation"
+                    <el-select v-model="addressVal" :placeholder="$t('appointFroms.sectionPlace')" @change="changeLocation"
                       clearable>
                       <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
@@ -1174,7 +1178,8 @@ export default {
   }
 
   .lecture-title {
-    background: url("https://static.cmereye.com/imgs/2024/04/03634579600959fb.png") no-repeat;
+    // background: url("https://static.cmereye.com/imgs/2024/04/03634579600959fb.png") no-repeat;
+    background: #F6FAFD;
     background-size: 100% 100%;
     width: 100vw;
     height: auto;
@@ -1233,17 +1238,18 @@ export default {
         color: #4570b6;
         text-align: center;
         font-family: "Noto Sans HK";
-        font-size: 20px;
+        font-size: 26px;
         font-style: normal;
         font-weight: 700;
         line-height: 45px;
         /* 225% */
-        letter-spacing: 6px;
+        letter-spacing: 2.6px;
       }
     }
 
     &>div:nth-child(2) {
       margin-top: 20px;
+      gap: 23px;
 
       P {
         color: #6d6e71;
@@ -1252,9 +1258,9 @@ export default {
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
-        line-height: 45px;
+        line-height: 30px;
         /* 225% */
-        letter-spacing: 6px;
+        letter-spacing: 2px;
       }
     }
   }
@@ -1264,7 +1270,11 @@ export default {
   }
 
   .lecture-form__service-wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   :deep(.el-form) {
@@ -1327,9 +1337,10 @@ export default {
     line-height: 2.5;
     /* 100% */
     letter-spacing: 6px;
-    position: relative;
+    // position: relative;
     z-index: 9;
     padding: 0;
+    height: 100%;
   }
 
   :deep(.el-input__inner) {
@@ -1338,20 +1349,34 @@ export default {
     background: #fff;
     color: #87898c;
     font-family: "Noto Sans HK";
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 2.5;
     /* 100% */
-    letter-spacing: 6px;
-    padding: 23px 0 23px 60px;
+    letter-spacing: 2px;
+    padding: 10px 0 10px 23px;
+    height: 50px;
   }
+ .form0{
+ :deep(.el-form-item:first-of-type .el-input__inner) {
+    text-align: center;
+  }
+  :deep(.el-form-item:nth-of-type(2) .el-input__inner) {
+  text-align: center;
+} 
+:deep(.el-form-item:nth-of-type(3) .el-input__inner) {
+  text-align: center;
+} 
+ }
+
 
   :deep(.el-form-item__content) {
-    left: -50px;
+    // left: -50px;
   }
 
   :deep(.form1) {
+   
     &>div:last-child {
       display: flex;
       justify-content: center;
@@ -1536,7 +1561,8 @@ export default {
   }
 
   .lecture-title {
-    background: url(https://static.cmereye.com/imgs/2024/04/d7625f69f04ff1b8.png) no-repeat;
+    // background: url(https://static.cmereye.com/imgs/2024/04/d7625f69f04ff1b8.png) no-repeat;
+    background: #F6FAFD;
     background-size: 100% 100%;
     width: 100%;
     margin-top: 50px;
@@ -1610,6 +1636,10 @@ export default {
           line-height: 5.5vw;
           /* 208.333% */
           letter-spacing: 0.6px;
+          gap: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 30px;
 
           // & > p:nth-child(2) {
           //   padding: 0 40px;
@@ -1650,7 +1680,7 @@ export default {
     width: 30.76vw !important;
     color: #fff;
     background: #4570b6;
-    border-radius: 55px;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1676,9 +1706,20 @@ export default {
     width: 100%;
     padding: 0 5.6vw;
   }
+   .form0 {
+ :deep(.el-form-item:first-of-type .el-input__inner) {
+    text-align: center;
+  }
+  :deep(.el-form-item:nth-of-type(2) .el-input__inner) {
+  text-align: center;
+} 
+ :deep(.el-form-item:nth-of-type(3) .el-input__inner) {
+  text-align: center;
+} 
+ }
 
   :deep(.el-input__inner) {
-    border-radius: 100px;
+    border-radius: 0px;
     border: 0.5vw solid #4570b6;
     background: #fff;
     color: #c0c4cc;
@@ -1750,6 +1791,7 @@ export default {
   :deep(.el-date-editor) {
     width: 100%;
   }
+
 }
 
 :deep(.el-message-box) {
