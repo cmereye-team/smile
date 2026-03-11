@@ -253,10 +253,10 @@
                 https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.webp 2x
               " type="image/webp" />
             <img
-              src="https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.jpg 2x" />
+              src="https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.jpg 2x" class="h-full object-cover" />
           </picture>
         </div>
-        <div class="applyDialog-main relative text-center px-4 md:px-12 flex justify-center items-center">
+        <div class="applyDialog-main relative text-center py-4 md:px-12 flex justify-center items-center">
           <div>
             <div class="applyDialog-main-icon mb-2 md:mb-8 w-[22px] md:w-[58px] mx-auto">
               <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58"
@@ -266,21 +266,21 @@
                   fill="#4570B6" />
               </svg>
             </div>
-            <div class="applyDialog-main-text">
+            <div class="applyDialog-main-text flex flex-col gap-2 m-2">
               <p
-                class="text-sm md:text-[40px] font-black leading-[10.654px] md:leading-[30px] text-primary font-tc tracking-[1.421px] md:tracking-[1px] mb-[10.66px] md:mb-[31px]">
+                class="text-2xl md:text-[40px] font-black leading-[10.654px] md:leading-[30px] text-primary font-tc tracking-[1.421px] md:tracking-[1px] mb-[10.66px] md:mb-[31px]">
                 報名成功
               </p>
               <div
-                class="text-[7.103px] md:text-xl text-text font-hk font-light leading-[12.43px] md:leading-[35px] tracking-[1.421px] md:tracking-[4px] mb-[12.43px] md:mb-9 whitespace-nowrap">
+                class="text-base md:text-xl text-text font-hk font-light leading-[12.43px] md:leading-[35px] tracking-[1.421px] md:tracking-[4px] mb-[12.43px] md:mb-9 whitespace-nowrap flex flex-col gap-2">
                 <p>感謝您的填寫。</p>
                 <p>我們已收到您的表單。</p>
-                <p class="font-bold">真人客戶服務員將在辦公時間回覆您！</p>
+                <p class="font-bold text-xs md:text-xl">真人客戶服務員將在辦公時間回覆您！</p>
               </div>
             </div>
-            <div class="applyDialog-main-button flex justify-center w-[106.186px] md:w-[291px] mx-auto bg-primary">
+            <div class="applyDialog-main-button flex justify-center w-[106.186px] md:w-[291px] mx-auto bg-primary py-1">
               <nuxt-link to="/"
-                class="text-justify text-white font-tc fong-bold text-[12.785px] md:text-4xl leading-[22.374px] md:leading-[63px] tracking-[0.639px] md:tracking-[1.8px]">返回主頁</nuxt-link>
+                class="text-justify text-white font-tc fong-bold text-xl md:text-4xl leading-[22.374px] md:leading-[63px] tracking-[0.639px] md:tracking-[1.8px]">返回主頁</nuxt-link>
             </div>
             <div
               class="applyDialog-close absolute right-[10px] top-[10px] md:right-[28px] md:top-[30px] w-[8.5px] md:w-6"
@@ -969,7 +969,10 @@ export default {
 //   margin-top: -8px;
 // }
 .el-select-dropdown__item{
-  min-height: 44px;
+
+    height: 50px;
+    line-height: 50px;
+  
 }
 .el-select-dropdown__list{
   padding: 0;
@@ -1107,6 +1110,9 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+  .businessHours{
+    margin-top: 30px;
+  }
   .applyDialog {
     &-main {
       background-position: bottom right;
@@ -1541,6 +1547,8 @@ margin:10px 0;
     z-index: 2;
   }
 
+ 
+
 
   .Banner .banner-text-default p:nth-child(1) {
     font-size: 20px;
@@ -1778,6 +1786,8 @@ margin:10px 0;
     margin-top: 20px;
   }
 
+ 
+
   :deep(.el-form-item__label) {
     width: 30.76vw !important;
     color: #fff;
@@ -1798,6 +1808,8 @@ margin:10px 0;
     z-index: 9;
     padding: 0;
   }
+
+ 
 
   :deep(.el-picker-panel__icon-btn) {
     font-size: 24px !important;
