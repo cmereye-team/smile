@@ -988,6 +988,10 @@ export default {
   .el-select-dropdown__list{
    padding: 0;
   }
+  .el-scrollbar__wrap{
+    margin-bottom: 0 !important;
+    overflow: auto;
+  }
   
 }
 // .el-select-dropdown{
