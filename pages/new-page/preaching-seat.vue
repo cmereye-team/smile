@@ -984,6 +984,12 @@ export default {
   // z-index: 9;
   // box-shadow: none;
 }
+@media screen and (max-width: 768px) {
+  .el-select-dropdown__list{
+   padding: 0;
+  }
+  
+}
 // .el-select-dropdown{
 //   border: none;
 //   box-shadow: none;
