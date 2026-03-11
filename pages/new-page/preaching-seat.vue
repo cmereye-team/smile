@@ -84,7 +84,7 @@
               <el-form ref="form" class="form0" :model="form" label-width="150px">
                 <div class="lecture-form__service-wrap">
                   <el-form-item :label="$t('appointFroms.service')">
-                    <el-select v-model="serviceVal" :placeholder="$t('appointFroms.sectionPlace')" @change="changeLocation"
+                    <el-select v-model="serviceVal" :placeholder="$t('appointFroms.sectionPlace')" @change="handleServiceChange"
                       clearable>
                       <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
@@ -121,14 +121,14 @@
                       value="smilerProTsui"
                     ></el-option> -->
                       <!-- Smile Pro 講座-旺角 -->
-                      <el-option :label="$t('appointFroms.content1.title1')" value="1"></el-option>
+                      <el-option :label="$t('appointFroms.content1.title1')" value="1" v-if="serviceVal != '2'"></el-option>
                       <!-- Smile Pro 講座-中環 -->
                       <!-- <el-option
                       :label="$t('appointFroms.content1.title5')"
                       value="smileProCentral"
                     ></el-option> -->
                       <!-- Smile講座-中環 -->
-                      <el-option :label="$t('appointFroms.content1.title2')" value="2"></el-option>
+                      <el-option :label="$t('appointFroms.content1.title2')" value="2" v-if="serviceVal != '3'"></el-option>
                       <!-- <el-option :label="$t('appointFroms.content1.title3')" value="smileMongKok"></el-option> -->
                       <!-- <el-option
                       label="老花講座-中環"
@@ -483,6 +483,13 @@ export default {
       }
     },
     /**
+     * @description: 处理服务类型改变
+     */
+    handleServiceChange() {
+      this.addressVal = "";
+      this.changeLocation();
+    },
+    /**
      * @description: 切换地点后调整可选日期
      */
     changeLocation() {
@@ -490,6 +497,8 @@ export default {
 
       console.log(this.serviceVal, this.addressVal, "changeLocation");
       // 当 serviceVal 和 addressVal 都不为空时，拼接它们并赋值给 form1.address
+      
+      
       if (this.serviceVal && this.addressVal) {
         // Smile Pro 講座-旺角
         if (this.serviceVal == 1 && this.addressVal == 1) {
@@ -836,6 +845,7 @@ export default {
     },
     clearFrom() {
       // this.form.address = "";
+
       this.form.subdate = "";
       this.morningOrAfternoon = "";
       this.form1.numberSeat = "";
