@@ -81,7 +81,7 @@
             </div>
             <div class="lecture-form">
 
-              <el-form ref="form" class="form0" :model="form" label-width="150px">
+              <el-form ref="form" class="form0" :model="form" label-width="150px" size="medium">
                 <div class="lecture-form__service-wrap">
                   <el-form-item :label="$t('appointFroms.service')">
                     <el-select v-model="serviceVal" :placeholder="$t('appointFroms.sectionPlace')" @change="handleServiceChange"
@@ -1814,7 +1814,7 @@ margin:10px 0;
     /* 125% */
     letter-spacing: 0.8px;
     position: relative;
-    height: 10.5vw;
+    height: 50px;
     z-index: 9;
     padding: 0;
   }
@@ -1855,7 +1855,7 @@ margin:10px 0;
     /* 142.857% */
     letter-spacing: 0.7px;
     padding: 4.5vw 0 4.5vw 12.89vw;
-    height: 10.5vw;
+    height: 50px;
   }
 
   .lecture-form {
