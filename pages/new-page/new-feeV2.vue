@@ -54,7 +54,7 @@
       <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
     </div>
     -->
-    <div class="feeV2-Bg">
+    <div class="feeV2-Bg" id="table1">
       <section class="smilepro-difference">
         <table class="table custom-comparison-table new-container">
           <thead>
@@ -305,7 +305,7 @@
 
       <!-- 表格二 -->
 
-      <section class="smilepro-difference smilepro-difference-two">
+      <section class="smilepro-difference smilepro-difference-two" id="table2">
         <table
           class="table custom-comparison-table custom-table-extro new-container"
         >
@@ -522,8 +522,13 @@ export default {
 body {
   overflow-x: hidden;
 }
+html {
+  scroll-padding-top: 280px; /* 所有锚点都预留80px空间 */
+  scroll-behavior: smooth;
+}
 </style>
 <style lang="scss" scoped>
+
 @media screen and (min-width: 768px) {
   :deep(.businessHours) {
     max-width: 100vw;

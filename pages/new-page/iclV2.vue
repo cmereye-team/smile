@@ -4045,13 +4045,13 @@ i {
       </div>
 
       <div class="mt-8 md:mt-12 flex flex-col items-center">
-        <button class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
+        <a href="/fee#table1" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
           查看矯視費用詳情
           <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
   <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
   <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
 </svg>
-        </button>
+        </a>
 
         
         <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">

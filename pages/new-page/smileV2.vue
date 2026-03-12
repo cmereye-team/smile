@@ -840,6 +840,62 @@ export default {
         <section class="kol-mobile block lg:hidden overflow-hidden">
           <userShare title="SMILE用家分享" :user-share="ShareData"></userShare>
         </section>
+        <!-- start SMILE微笑激光矯視費用 -->
+
+<div class="bg-[#F6FAFD] py-8 px-2  md:px-2 md:pb-15 md:pt-20 mb-8 mt-[50px] md:mb-22 md:mt-[166px]">
+<div class="w-full  flex flex-col items-center mx-auto ">
+    
+    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
+SMILE微笑激光矯視費用
+    </h2>
+
+    <div class="w-full">
+   
+
+      <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+           SMILE
+<br/>
+            <span class="">微笑激光矯視</span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+           <span class="text-2xl md:text-5xl"> 港幣$19,000</span>
+          </div>
+        </div>
+
+       
+
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+            <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-5xl">$100</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-12 flex flex-col items-center">
+        <a href="/fee#table1" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
+          查看矯視費用詳情
+          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
+  <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
+  <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
+</svg>
+        </a>
+
+      
+
+        <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
+          <p class="">此為香港價錢，雙眼價錢</p>
+
+          <p>矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+        <!-- end SMILE微笑激光矯視費用 -->
         <section class="benefit mb-[30px] md:mb-[100px] py-7">
           <h2 class="subtitle mb-0">SMILE微笑激光矯視的好處</h2>
           <div
