@@ -6,7 +6,11 @@
 -->
 <template>
   <div class="fee">
-    <HeadV2 />
+      <HeadV2 />
+    <div class="fee-wrap">
+
+    
+  
 
     <section class="fee-Banner">
       <div class="fee-Banner-Box new-container">
@@ -405,6 +409,7 @@
     <FooterV2 />
     <FooterMobile />
   </div>
+  </div>
 </template>
 
 <script>
@@ -514,6 +519,11 @@ export default {
     } else {
       this.isMobile = false;
     }
+
+
+
+
+
   },
 };
 </script>
@@ -523,13 +533,27 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  scroll-padding-top: 280px; /* 所有锚点都预留80px空间 */
+
+.fee-wrap {
+   height: 100vh;
+  overflow-y: auto;
+  scroll-padding-top: 280px;
   scroll-behavior: smooth;
 }
+@media screen and (min-width: 768px) {
+  .head-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+}
 @media screen and (max-width: 768px) {
-  html {
-  scroll-padding-top: 120px; /* 所有锚点都预留80px空间 */
+  .fee-wrap {
+     height: 100vh;
+  overflow-y: auto;
+  scroll-padding-top: 120px; 
   scroll-behavior: smooth;
 }
 }
