@@ -306,7 +306,7 @@ SMILE Pro 微笑激光矯視費用
             <span class="">微笑激光矯視</span>
           </div>
           <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-           <span class="text-2xl md:text-5xl"> 港幣</span><span class="text-2xl md:text-6xl">$24,000</span>
+           <span class="text-2xl md:text-5xl"> 港幣</span><span class="text-2xl md:text-5xl">$24,000</span>
           </div>
         </div>
 
@@ -315,7 +315,7 @@ SMILE Pro 微笑激光矯視費用
         <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
           <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
           <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-            <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-6xl">$100</span>
+            <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-5xl">$100</span>
           </div>
         </div>
       </div>
@@ -1187,7 +1187,7 @@ SMILE Pro 微笑激光矯視費用
         <div class="relative z-10 text-white font-avant-garde text-3xl font-bold not-italic leading-[44.25px]">
           <p class="">想了解 </p>
           <p>
-           SMILE Pro 同 <br class="block md:hidden">SMILE Pro Care <br class="hidden md:block"/>
+           SMILE Pro 同 <br class="block md:hidden">SMILE Pro Care <br class=""/>
             有咩分別？
           </p>
         </div>
