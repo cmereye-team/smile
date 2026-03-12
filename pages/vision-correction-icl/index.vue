@@ -2,10 +2,13 @@
   <div>
     <Header />
     <Navbar />
-
+ 
     <MainBanner />
+
+
     <Benefit />
     <film />
+   
     <process />
     <xtar />
     <suitable />

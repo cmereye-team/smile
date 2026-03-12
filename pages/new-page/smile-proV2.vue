@@ -105,6 +105,7 @@
       </div>
     </section>
 
+
     <!-- 為何選擇希瑪? -->
     <section class="icl-WhatChoose">
       <h3 class="icl-WhatChoose-title">
@@ -174,6 +175,8 @@
         </svg>
       </a>
     </section>
+
+    
 
     <!-- 四大特点 -->
     <section class="smilepro-four-feature">
@@ -281,6 +284,64 @@
         </div>
       </div>
     </section>
+
+
+
+        <!-- start  SMILE Pro 微笑激光矯視費用-->
+<div class="bg-[#F6FAFD] py-8 px-2  md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]">
+<div class="w-full  flex flex-col items-center mx-auto ">
+    
+    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
+SMILE Pro 微笑激光矯視費用
+    </h2>
+
+    <div class="w-full">
+   
+
+      <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+            SMILE Pro
+<br/>
+            <span class="">微笑激光矯視</span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+           <span class="text-2xl md:text-5xl"> 港幣</span><span class="text-2xl md:text-6xl">$24,000</span>
+          </div>
+        </div>
+
+       
+
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+            <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-6xl">$100</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-12 flex flex-col items-center">
+        <button class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
+          查看矯視費用詳情
+          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
+  <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
+  <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
+</svg>
+        </button>
+
+      
+
+        <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
+          <p class="">此為香港價錢，雙眼價錢</p>
+          <p>矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+    <!-- end SMILE Pro 微笑激光矯視費用 -->
 
     <!-- 表格 -->
     <section class="smilepro-difference">
@@ -1104,6 +1165,59 @@
       </div>
     </section>
 
+
+    <!-- start了解更多 -->
+  <div class="w-full  mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
+    
+    <a href="/" class="group relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8] ">
+      
+      <picture>
+        <source media="(min-width: 768px)" srcset="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-pc.webp">
+        <img 
+          src="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-mobile.webp" 
+          alt="SMILE Pro" 
+          class="absolute  w-full h-full object-cover"
+        />
+      </picture>
+
+      <div class="absolute left-1/2 -translate-x-1/2  bottom-2 md:left-auto md:translate-x-0 md:-translate-y-1/2 md:right-[5%] md:h-full md:top-1/2 md:-translate-y-1/2 md:flex md:items-center  w-[calc(100vw-100px)] mx-auto md:w-auto py-6 md:py-[5%]  ">
+    
+
+
+        <div class="relative z-10 text-white font-avant-garde text-3xl font-bold not-italic leading-[44.25px]">
+          <p class="">想了解 </p>
+          <p>
+           SMILE Pro 同 <br class="block md:hidden">SMILE Pro Care <br class="hidden md:block"/>
+            有咩分別？
+          </p>
+        </div>
+
+        <div class="relative z-10 mt-8 md:mt-0 md:ml-[72px] h-full">
+          <div class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center">
+         <svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  class="w-[44px] aspect-[1/1] md:w-[28px]" 
+  viewBox="0 0 44 44"
+  fill="none"
+>
+  <path d="M2.5 40.8844L39.6998 3.68457" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <path d="M7.92065 2.5H40.968V34.458" stroke="white" stroke-width="5" stroke-linecap="round"/>
+</svg>
+            <span class="text-white text-center  text-[35px] font-black not-italic leading-[25px] mt-6">了解更多</span>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-500 pointer-events-none"></div>
+    </a>
+
+  </div>
+
+    <!-- end了解更多 -->
+
     <section class="CaseSharingV2">
       <div>
         <svg
@@ -1181,6 +1295,9 @@
         </a>
       </div>
     </section>
+
+
+    
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -1624,6 +1741,7 @@ export default {
 </script>
 
 <style>
+
 .simleProV2 .head-bg {
     top:54px !important;
 }
@@ -1653,6 +1771,9 @@ i {
 }
 
 @media screen and (min-width: 1139px) {
+  .new-Footer-v2{
+  margin-top: 0 !important;
+}
   .new-container {
     max-width: 1140px !important;
     margin-left: auto;
@@ -3329,7 +3450,7 @@ i {
     background: #f4fafc;
     padding-top: 11.28vw;
     padding-bottom: 7.69vw;
-    margin-bottom: 10.26vw;
+    margin-bottom: 0;
     .smile-pro-evaluateV2-Box {
       .smile-pro-evaluateV2-Box-content {
         margin-top: 3.08vw;
