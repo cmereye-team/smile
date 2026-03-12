@@ -522,9 +522,16 @@ export default {
 body {
   overflow-x: hidden;
 }
+
 html {
   scroll-padding-top: 280px; /* 所有锚点都预留80px空间 */
   scroll-behavior: smooth;
+}
+@media screen and (max-width: 768px) {
+  html {
+  scroll-padding-top: 120px; /* 所有锚点都预留80px空间 */
+  scroll-behavior: smooth;
+}
 }
 </style>
 <style lang="scss" scoped>
