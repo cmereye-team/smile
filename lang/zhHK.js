@@ -3205,7 +3205,7 @@ module.exports = {
     title4: "選擇地點",
     sectionPlace: "請選擇",
     content0: {
-      title1: "Smile Pro",
+      title1: "SMILE Pro",
       title2: "SMILE+ICL",
       title3: "CMER CLEAR-VISION（老花矯視）",
     },

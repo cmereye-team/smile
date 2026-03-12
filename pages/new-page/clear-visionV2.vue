@@ -207,6 +207,7 @@ i {
       align-items: center;
       .ClearVisionBanner-Box-content {
         overflow: hidden;
+        margin-top: 100px;
         // width: 100vw;
 
         h3 {
@@ -2599,7 +2600,7 @@ CMER CLEAR-Vision 老花矯視費用
 
 
         
-        <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
+        <!-- <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
           <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
        Presbyond LBV
 
@@ -2613,7 +2614,7 @@ CMER CLEAR-Vision 老花矯視費用
            <span class="text-2xl md:text-5xl"> 港幣$??,000-
 </span><span class="text-2xl md:text-5xl">港幣$??,000</span>
           </div>
-        </div>
+        </div> -->
 
         <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
           <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">

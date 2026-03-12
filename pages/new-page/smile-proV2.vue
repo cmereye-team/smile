@@ -1169,7 +1169,7 @@ SMILE Pro 微笑激光矯視費用
     <!-- start了解更多 -->
   <div class="w-full  mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
     
-    <a href="/fee#table1" class="group relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8] ">
+    <a href="/smileProCare" class="group relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8] ">
       
       <picture>
         <source media="(min-width: 768px)" srcset="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-pc.webp">

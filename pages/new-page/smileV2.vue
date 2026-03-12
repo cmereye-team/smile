@@ -846,7 +846,7 @@ export default {
 <div class="w-full  flex flex-col items-center mx-auto ">
     
     <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
-SMILE微笑激光矯視費用2
+SMILE微笑激光矯視費用
     </h2>
 
     <div class="w-full">
