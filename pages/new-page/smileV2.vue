@@ -842,11 +842,11 @@ export default {
         </section>
         <!-- start SMILE微笑激光矯視費用 -->
 
-<div class="bg-[#F6FAFD] py-8 px-2  md:px-2 md:pb-15 md:pt-20 mb-8 mt-[50px] md:mb-22 md:mt-[166px]">
+<div class="md:bg-[#F6FAFD] py-8 px-2  md:px-2 md:pb-15 md:pt-20 mb-8 md:mt-[50px] md:mb-22 md:mt-[166px]">
 <div class="w-full  flex flex-col items-center mx-auto ">
     
     <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
-SMILE微笑激光矯視費用
+SMILE微笑激光矯視費用2
     </h2>
 
     <div class="w-full">
