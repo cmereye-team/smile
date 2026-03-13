@@ -1,44 +1,37 @@
 <template>
   <div class="lasik">
-   
-  <HeadV2 />
-   
 
-   
+    <HeadV2 />
+
+
+
 
     <div class="smile-banner">
-      <img
-        class="smile-banner__image"
-        decoding="async"
-        alt="SMILE Pro Care 限時禮品"
-        loading="lazy"
-        srcset="
-          https://statichk.cmermedical.com/cmermedical/image/20260304/e54f190605fe428b94ae.webp 400w,
-          https://statichk.cmermedical.com/cmermedical/image/20260304/e54f190605fe428b94ae.webp 768w,
-          https://statichk.cmermedical.com/cmermedical/image/20260304/1bd7769d95f4416c853352c41172.webp
-        "
-        sizes="(max-width: 992px) 100vw, 1216px"
-        style="pointer-events: none"
-      />
+      <img class="smile-banner__image" decoding="async" alt="SMILE Pro Care 限時禮品" loading="lazy" srcset="
+          https://statichk.cmermedical.com/cmermedical/image/20260311/smileProCare-mobile.webp 400w,
+          https://statichk.cmermedical.com/cmermedical/image/20260311/smileProCare-mobile.webp 768w,
+           https://statichk.cmermedical.com/cmermedical/image/20260311/smileProCare-pc2.webp
+        " sizes="(max-width: 992px) 100vw, 1216px" style="pointer-events: none" />
 
-     <div>
-         <div class="smile-banner__text-wrap">
-        <div class="smile-banner__container">
-          <div class="smile-banner__title">
-            <div class="smile-banner__title-row">
-              <span class="smile-banner__title-main">SMILE Pro Care</span>
-              <!-- <span class="smile-banner__title-sub">限時禮品</span> -->
-            </div>
+      <div class="smile-banner__content">
+        <div class="smile-banner__text-wrap">
+          <div class="smile-banner__container">
+            <div class="smile-banner__gift-wrap">
+              <div class="smile-banner__title">
+                <div class="smile-banner__title-row">
+                  <span class="smile-banner__title-main">SMILE Pro Care</span>
+                  <!-- <span class="smile-banner__title-sub">限時禮品</span> -->
+                </div>
 
-            <!-- <h3 class="smile-banner__heading">限量版便攜式咖啡機</h3> -->
+                <!-- <h3 class="smile-banner__heading">限量版便攜式咖啡機</h3> -->
 
-            <p class="smile-banner__description">
-              是希瑪微笑矯視中心為對SMILE
-              Pro微笑激光矯視有興趣的人而設的另一個選擇。
-            </p>
+                <p class="smile-banner__description">
+                  是希瑪微笑矯視中心為對SMILE
+                  Pro微笑激光矯視有興趣的人而設的另一個選擇。
+                </p>
 
-            <!-- 剩餘數量顯示 -->
-            <!-- <div class="smile-banner__counter">
+                <!-- 剩餘數量顯示 -->
+                <!-- <div class="smile-banner__counter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -58,40 +51,34 @@
               >
               <span class="smile-banner__counter-unit">部</span>
             </div> -->
-          </div>
-
-          <div class="smile-banner__gift-link">
-            <a
-              href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3(WSPC-2025)%20%E5%B8%8C%E7%91%AASMILE%20Pro%20Care%E7%9F%AF%E8%A6%96%E7%A6%AE%E5%93%81%E8%A8%88%E5%8A%83"
-              class="smile-banner__gift-link-inner"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileProCare/banner-img.png"
-                alt="立即了解 SMILE Pro Care 計劃"
-                class="smile-banner__gift-image"
-              />
-              <div class="smile-banner__gift-text">
-                <span class="smile-banner__gift-text-main">立即了解</span>
-                <span class="smile-banner__gift-text-sub">SMILE Pro Care</span>
-                <span class="smile-banner__gift-text-detail">計劃</span>
               </div>
-            </a>
-          </div>
 
-          <div href="#" @click="scrollToSection('section2')"  class="smile-banner__scroll-indicator">
-            <div class="smile-banner__scroll-text">
-              <span></span>
-              <span>了解計劃詳情</span>
+              <div class="smile-banner__gift-link">
+                <a href="https://api.whatsapp.com/send/?phone=85297962992&text=%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3(WSPC-2025)%20%E5%B8%8C%E7%91%AASMILE%20Pro%20Care%E7%9F%AF%E8%A6%96%E7%A6%AE%E5%93%81%E8%A8%88%E5%8A%83"
+                  class="smile-banner__gift-link-inner">
+                  <img src="https://statichk.cmermedical.com/smile/smileProCare/banner-img.png"
+                    alt="立即了解 SMILE Pro Care 計劃" class="smile-banner__gift-image" />
+                  <div class="smile-banner__gift-text">
+                    <span class="smile-banner__gift-text-main">立即了解</span>
+                    <span class="smile-banner__gift-text-sub">SMILE Pro Care</span>
+                    <span class="smile-banner__gift-text-detail">計劃</span>
+                  </div>
+                </a>
+              </div>
             </div>
-            <img
-              src="https://statichk.cmermedical.com/smile/smileProCare/banner-img2.png"
-              alt="下滑指示"
-              class="smile-banner__scroll-icon animate-bounce"
-            />
+
+            <div href="#" @click="scrollToSection('section2')" class="smile-banner__scroll-indicator">
+              <div class="smile-banner__scroll-text">
+                <span> <span class="md:hidden">下滑</span>了解</span>
+                <span>
+                  禮品計劃</span>
+              </div>
+              <img src="https://statichk.cmermedical.com/smile/smileProCare/banner-img2.png" alt="下滑指示"
+                class="smile-banner__scroll-icon animate-bounce" />
+            </div>
           </div>
         </div>
       </div>
-     </div>
     </div>
 
     <!-- start 服務介紹-->
@@ -105,25 +92,16 @@
           <p class="about-section__description">
             是希瑪微笑矯視中心為對SMILE
             Pro微笑激光矯視有興趣的人而設的另一個選擇。<br />
-            SMILE Pro Care微笑激光矯視與SMILE Pro微笑激光<br
-              class="md:hidden"
-            />矯視使用同樣的技術進行矯視過程，所以
+            SMILE Pro Care微笑激光矯視與SMILE Pro微笑激光<br class="md:hidden" />矯視使用同樣的技術進行矯視過程，所以
             <br class="hidden md:block" />
-            SMILE Pro Care同樣可矯正近視、散光及老花；<br
-              class="md:hidden"
-            />同時可感受矯視過程短及<br class="md:hidden" />康復時間短的特點。
+            SMILE Pro Care同樣可矯正近視、散光及老花；<br class="md:hidden" />同時可感受矯視過程短及<br class="md:hidden" />康復時間短的特點。
           </p>
           <div class="about-section__image">
-            <img
-              class=""
-              srcset="
+            <img class="" srcset="
                 https://pic1.imgdb.cn/item/690a6fe83203f7be00d20d88.png               400w,
                 https://pic1.imgdb.cn/item/690a6fe83203f7be00d20d88.png               768w,
                 https://statichk.cmermedical.com/smile/smileProCare/section2-img.webp
-              "
-              sizes="(max-width: 992px) 100vw, 1216px"
-              style="pointer-events: none"
-            />
+              " sizes="(max-width: 992px) 100vw, 1216px" style="pointer-events: none" />
           </div>
         </div>
       </div>
@@ -134,9 +112,7 @@
     <section class="py-16 md:py-24 bg-[#F5F5F7]">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center md:mb-16">
-          <h2
-            class="text-xl md:text-4xl font-bold text-[#0A2342] mb-6 md:text-nowrap"
-          >
+          <h2 class="text-xl md:text-4xl font-bold text-[#0A2342] mb-6 md:text-nowrap">
             SMILE Pro Care與SMILE Pro <br class="md:hidden" />有什麼分別?
           </h2>
         </div>
@@ -146,19 +122,15 @@
             <thead>
               <tr class="bg-zeissBlue text-white">
                 <th
-                  class="px-2 py-2 md:px-6 md:py-4 text-center rounded-tl-xl bg-[#0A2342] text-base md:text-lg text-nowrap md:text-start"
-                >
-                  
+                  class="px-2 py-2 md:px-6 md:py-4 text-center rounded-tl-xl bg-[#0A2342] text-base md:text-lg text-nowrap md:text-start">
+
                 </th>
-                <th
-                  class="px-2 py-2 md:px-6 md:py-4 text-center bg-[#4570B6] text-base md:text-lg text-nowrap"
-                >
+                <th class="px-2 py-2 md:px-6 md:py-4 text-center bg-[#4570B6] text-base md:text-lg text-nowrap">
                   SMILE Pro Care<br class="md:hidden" />
                   微笑激光矯視
                 </th>
                 <th
-                  class="px-2 py-2 md:px-6 md:py-4 text-center rounded-tr-xl bg-[#0A2342] text-base md:text-lg text-nowrap"
-                >
+                  class="px-2 py-2 md:px-6 md:py-4 text-center rounded-tr-xl bg-[#0A2342] text-base md:text-lg text-nowrap">
                   SMILE Pro<br class="md:hidden" />微笑激光矯視
                 </th>
               </tr>
@@ -166,13 +138,10 @@
             <tbody class="divide-y divide-gray-200">
               <tr class="hover:bg-gray-50 transition-colors">
                 <td
-                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base text-center md:text-lg text-nowrap md:text-start "
-                >
+                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base text-center md:text-lg text-nowrap md:text-start ">
                   眼睛<br class="md:hidden" />水潤護理
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center bg-red text-lg text-[#333333] font-bold"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center bg-red text-lg text-[#333333] font-bold">
                   1次
                 </td>
                 <td class="px-2 py-2 md:px-6 md:py-4 text-center text-lg text-[#333333]">
@@ -180,89 +149,59 @@
                 </td>
               </tr>
               <tr class="hover:bg-gray-50 transition-colors">
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start">
                   術後眼部彩光護理
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center  text-base md:text-lg text-[#165DFF] font-bold"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center  text-base md:text-lg text-[#165DFF] font-bold">
                   1次
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]">
                   /
                 </td>
               </tr>
-              <tr
-                class="hover:bg-gray-50 transition-colors text-base md:text-lg"
-              >
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start"
-                >
+              <tr class="hover:bg-gray-50 transition-colors text-base md:text-lg">
+                <td class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start">
                   眼科專科醫生檢查
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333] font-bold"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333] font-bold">
                   包含
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]">
                   包含
                 </td>
               </tr>
               <tr class="hover:bg-gray-50 transition-colors">
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start">
                   術後覆診(一年內)
                 </td>
                 <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-zeissLightBlue font-medium text-base md:text-lg text-[#165DFF] font-bold"
-                >
+                  class="px-2 py-2 md:px-6 md:py-4 text-center text-zeissLightBlue font-medium text-base md:text-lg text-[#165DFF] font-bold">
                   5次
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]">
                   3次
                 </td>
               </tr>
               <tr class="hover:bg-gray-50 transition-colors">
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] text-base md:text-lg md:text-start">
                   增進手術
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333] font-bold"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333] font-bold">
                   包含
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]">
                   包含
                 </td>
               </tr>
               <tr class="hover:bg-gray-50 transition-colors">
                 <td
-                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] rounded-bl-xl text-base md:text-lg text-center md:text-start"
-                >
+                  class="px-2 py-2 md:px-6 md:py-4 font-medium text-[#0A2342] rounded-bl-xl text-base md:text-lg text-center md:text-start">
                   無限<br class="md:hidden" />視光檢查
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333] font-bold"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333] font-bold">
                   包含
                 </td>
-                <td
-                  class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]"
-                >
+                <td class="px-2 py-2 md:px-6 md:py-4 text-center text-base md:text-lg text-[#333333]">
                   包含
                 </td>
               </tr>
@@ -276,7 +215,7 @@
     <!-- start SMILE Pro Care 專享福利-->
     <section class="benefits-section">
       <div class="benefits-section__wrapper">
-       
+
 
         <div class="benefits-section__content">
           <div class="benefits-section__header">
@@ -351,94 +290,51 @@
         又希望一個價錢有更長遠的保障，讓眼睛享受更多的你。
       </p>
 
-      <a
-        href="https://api.whatsapp.com/send/?phone=85297962992&amp;text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(WSPC-01)%20%E5%B8%8C%E7%91%AASMILE%20Pro%20Care%E7%9F%AF%E8%A6%96"
-        class="how-to-choose__button"
-      >
+      <a href="https://api.whatsapp.com/send/?phone=85297962992&amp;text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(WSPC-01)%20%E5%B8%8C%E7%91%AASMILE%20Pro%20Care%E7%9F%AF%E8%A6%96"
+        class="how-to-choose__button">
         立即預約SMILE Pro Care
       </a>
     </div>
 
     <div class="service-tip">
- 
+
       <div class="service-tip__right">
-        * 由於SMILE Pro
-        Care限時禮品「限量版便攜式咖啡機」數量有限，將以先到先得形式派發，並將於完成手術後派發。如有任何爭議，希瑪醫療控股有限公司保留最終決定權。
+
       </div>
     </div>
     <!-- end 如何選擇 -->
 
     <section class="CaseSharingV2">
       <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="21"
-          height="19"
-          viewBox="0 0 21 19"
-          fill="none"
-        >
-          <path
-            d="M1 0.77832L19.4751 17.9337"
-            stroke="#4570B6"
-            stroke-width="1.97947"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+          <path d="M1 0.77832L19.4751 17.9337" stroke="#4570B6" stroke-width="1.97947" />
         </svg>
         <span> 同朋友分享一下啦！ </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="21"
-          height="19"
-          viewBox="0 0 21 19"
-          fill="none"
-        >
-          <path
-            d="M20 0.77832L1.52493 17.9337"
-            stroke="#4570B6"
-            stroke-width="1.97947"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+          <path d="M20 0.77832L1.52493 17.9337" stroke="#4570B6" stroke-width="1.97947" />
         </svg>
       </div>
       <div>
         <a id="shareCurrentPageIcl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="21"
-            height="22"
-            viewBox="0 0 21 22"
-            fill="none"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
             <path
               d="M0.28309 11.3923C0.282266 9.41405 1.74115 7.78777 3.63606 7.6221C4.78751 7.52154 5.78565 7.88504 6.60988 8.69859C6.74258 8.82964 6.83243 8.84118 6.99233 8.74475C8.88558 7.59654 10.7838 6.45411 12.6836 5.31745C12.832 5.22843 12.8518 5.15177 12.799 4.99022C12.0968 2.83806 13.5441 0.523527 15.7852 0.202064C17.9084 -0.10209 19.8083 1.36263 20.0539 3.49335C20.2781 5.44027 18.853 7.28415 16.9053 7.55945C15.6327 7.73914 14.553 7.34679 13.6604 6.43186C13.5647 6.33377 13.4996 6.32058 13.3826 6.39147C11.463 7.55039 9.54167 8.70601 7.61957 9.85915C7.50665 9.92674 7.47203 9.99351 7.51819 10.1237C7.75227 10.7864 7.79595 11.4632 7.61627 12.1457C7.57423 12.3064 7.63028 12.3814 7.7671 12.4515C9.44029 13.3046 11.1118 14.1618 12.7842 15.019C12.9185 15.0875 13.0554 15.1534 13.1831 15.2317C13.3101 15.3092 13.3966 15.2977 13.4963 15.1765C14.0972 14.4487 14.8662 14.0134 15.7992 13.8626C17.2161 13.6335 18.7129 14.311 19.4811 15.5359C20.888 17.7779 19.6467 20.6776 17.0545 21.2035C15.0006 21.6206 12.9688 20.1831 12.6663 18.1018C12.5996 17.6419 12.5971 17.1844 12.7347 16.7376C12.7982 16.5324 12.7413 16.4401 12.5518 16.3436C10.7607 15.4345 8.9746 14.5154 7.18932 13.5939C7.05991 13.5271 6.98491 13.5436 6.89424 13.6541C6.06342 14.663 4.98945 15.1147 3.68799 15.0454C2.07332 14.9589 0.560032 13.565 0.328423 11.9495C0.298751 11.7451 0.275672 11.5415 0.283915 11.3915L0.28309 11.3923Z"
-              fill="#4570B6"
-            />
+              fill="#4570B6" />
           </svg>
         </a>
         <a @click="copyCurrentUrl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 22 22"
-            fill="none"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
             <g clip-path="url(#clip0_10302_1589)">
               <path
                 d="M9.10331 5.96582C10.8881 5.96788 12.1819 6.48567 13.3123 7.46166C13.4906 7.61577 13.6719 7.76576 13.8462 7.92295C14.1998 8.2404 14.2685 8.71402 13.9826 9.09722C13.644 9.55132 13.2864 9.99206 12.9169 10.4205C12.6102 10.7759 12.1381 10.7985 11.7725 10.5016C11.5445 10.3167 11.3283 10.1153 11.1003 9.92939C10.0614 9.08489 8.5107 9.12599 7.55356 10.0701C6.53466 11.0759 5.5337 12.1043 4.56062 13.1574C3.81463 13.9649 3.6493 14.9511 3.98793 15.998C4.32657 17.0449 5.06658 17.6788 6.11037 17.8699C6.97788 18.0281 7.77666 17.8031 8.43998 17.1744C8.65412 16.972 8.85232 16.7521 9.06148 16.5446C9.44493 16.1655 9.89611 16.1501 10.2826 16.5251C10.663 16.8949 11.0325 17.2771 11.3921 17.6685C11.7078 18.0127 11.7218 18.4883 11.423 18.8356C10.3951 20.0335 9.17403 20.8883 7.61033 21.1821C4.42019 21.781 1.21312 19.4828 0.680264 16.184C0.335653 14.0481 0.911332 12.204 2.37244 10.6598C3.2997 9.67974 4.24091 8.71299 5.19008 7.75549C6.35838 6.57607 7.76769 5.98123 9.10231 5.96685L9.10331 5.96582Z"
-                fill="#4570B6"
-              />
+                fill="#4570B6" />
               <path
                 d="M12.3093 15.4664C10.7307 15.4592 9.43492 14.9445 8.30647 13.9664C8.13516 13.8175 7.96186 13.6716 7.79055 13.5216C7.42104 13.1969 7.34734 12.7213 7.63916 12.3309C7.97879 11.8768 8.33635 11.4371 8.70487 11.0087C9.00964 10.6542 9.48373 10.6337 9.84925 10.9306C10.0644 11.1052 10.2666 11.2963 10.4837 11.4679C11.651 12.3915 13.1539 12.3021 14.1977 11.2388C15.131 10.2885 16.0602 9.33406 16.9785 8.36834C17.7345 7.57316 17.9635 6.61155 17.6667 5.55131C17.364 4.47258 16.6429 3.79863 15.5782 3.57672C14.6818 3.38974 13.8641 3.61165 13.1768 4.25889C12.9627 4.46025 12.7655 4.68216 12.5553 4.88866C12.1729 5.26467 11.7177 5.27906 11.3333 4.9051C10.9528 4.53525 10.5833 4.15307 10.2247 3.76061C9.91698 3.42467 9.89407 2.95105 10.1819 2.61408C11.147 1.48398 12.2824 0.636403 13.7426 0.306619C17.2036 -0.474177 20.5641 1.973 20.9874 5.60473C21.2095 7.51152 20.6826 9.19331 19.4117 10.5844C18.348 11.7484 17.2644 12.898 16.109 13.9664C15.0085 14.9846 13.6858 15.451 12.3083 15.4654L12.3093 15.4664Z"
-                fill="#4570B6"
-              />
+                fill="#4570B6" />
             </g>
             <defs>
               <clipPath id="clip0_10302_1589">
-                <rect
-                  width="20.4545"
-                  height="21.1144"
-                  fill="white"
-                  transform="translate(0.583496 0.162109)"
-                />
+                <rect width="20.4545" height="21.1144" fill="white" transform="translate(0.583496 0.162109)" />
               </clipPath>
             </defs>
           </svg>
@@ -446,23 +342,13 @@
       </div>
     </section>
     <FooterV2 />
- 
+
     <FooterMobile />
-     <div class="top-btnV2" @click="scrollToTopV2">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="36"
-        height="36"
-        viewBox="0 0 36 36"
-        fill="none"
-      >
+    <div class="top-btnV2" @click="scrollToTopV2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
         <circle cx="18" cy="18" r="17.5" stroke="#4570B6" />
         <path d="M12.24 12.96H23.76" stroke="#4570B6" />
-        <path
-          d="M12.8159 24.7681L17.9999 16.9921L23.1839 24.7681"
-          stroke="#4570B6"
-          stroke-linecap="round"
-        />
+        <path d="M12.8159 24.7681L17.9999 16.9921L23.1839 24.7681" stroke="#4570B6" stroke-linecap="round" />
       </svg>
     </div>
   </div>
@@ -557,7 +443,7 @@ export default {
   },
   data() {
     return {
-         randomNumber: 0,
+      randomNumber: 0,
       minValue: 1,
       maxValue: 40,
       interval: 1000,
@@ -778,27 +664,27 @@ export default {
     };
   },
   watch: {
-   
+
   },
   methods: {
-     generateRandom() {
+    generateRandom() {
       const range = this.maxValue - this.minValue + 1;
       this.randomNumber = Math.floor(Math.random() * range) + this.minValue;
-      
+
       // 添加到歷史記錄
       this.history.unshift(this.randomNumber);
       if (this.history.length > 10) {
         this.history.pop();
       }
     },
-    
+
     startRandom() {
       if (this.timer) return;
       this.timer = setInterval(() => {
         this.generateRandom();
       }, this.interval);
     },
-    
+
     stopRandom() {
       if (this.timer) {
         clearInterval(this.timer);
@@ -806,10 +692,10 @@ export default {
       }
     },
     scrollToSection(sectionId) {
-        console.log(9999)
+      console.log(9999)
       const element = document.getElementById(sectionId)
       if (element) {
-        element.scrollIntoView({ 
+        element.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         })
@@ -904,7 +790,7 @@ export default {
     }
 
     this.generateRandom();
- 
+
 
     // 启动计时
     this.startTimer();
@@ -921,28 +807,29 @@ export default {
       shaerwidth.scrollLeft = scrollLeft;
     }
   },
-  beforeUnmount(){
+  beforeUnmount() {
     this.stopRandom();
 
     // 清理動態添加的樣式
 
-  
+
   }
 };
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   overflow-x: hidden;
   background: white;
 }
-
 </style>
 <style lang="scss" scoped>
 :deep(.mt-20) {
   margin-top: 0;
 }
+
 :deep(.share-img) {
   margin-top: 0;
 }
@@ -950,31 +837,36 @@ body {
 .d-none {
   display: none;
 }
+
 i {
   font-style: normal;
 }
+
 .changehang {
   display: none;
 }
+
 .smile-banner__title {
-font-family: Poppins, sans-serif;
-}   
+  font-family: Poppins, sans-serif;
+}
+
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
     margin-left: auto;
     margin-right: auto;
   }
+
   .service-tip {
     display: flex;
     gap: 45px;
     margin-bottom: -134px;
- 
-    
+
+
   }
-  .service-tip__left {
- 
-  }
+
+  .service-tip__left {}
+
   .service-tip__right {
     color: #4b5563;
     font-family: Inter;
@@ -991,8 +883,9 @@ font-family: Poppins, sans-serif;
     margin-left: auto;
     margin-right: auto;
   }
-  .service-tip {
-  }
+
+  .service-tip {}
+
   .service-tip__left {
     max-width: 684px;
     width: 558.38px;
@@ -1032,14 +925,15 @@ font-family: Poppins, sans-serif;
     // 80
     margin-top: 80px;
     position: relative;
-    img {
-    }
+
+    img {}
 
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 58px;
       left: 28px;
       top: 31px;
+
       //   span {
       //     font-style: normal;
       //     color: #4570b6;
@@ -1049,20 +943,21 @@ font-family: Poppins, sans-serif;
       //     font-weight: 700;
       //     line-height: 49.743px;
       //   }
-      h3 {
-      }
-      p {
-      }
+      h3 {}
+
+      p {}
     }
 
     .smile-NewBanner-Tip {
       position: absolute;
       right: 15px;
       bottom: 0;
+
       div {
         background: #4570b6;
       }
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
 
@@ -1075,7 +970,8 @@ font-family: Poppins, sans-serif;
         font-weight: 300;
         line-height: 25px;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         border-radius: 5px;
         border-top-left-radius: 0px;
         padding: 5px 20px 11px 10px;
@@ -1092,6 +988,7 @@ font-family: Poppins, sans-serif;
 
   .icl-WhatChoose {
     padding: 40px 15px;
+
     .icl-WhatChoose-title {
       color: #4570b6;
       font-family: "Noto Sans TC" !important;
@@ -1100,17 +997,19 @@ font-family: Poppins, sans-serif;
       font-weight: 900;
       line-height: 24.567px;
     }
+
     .icl-WhatChoose-content-one {
       margin: 0 auto;
       max-width: 100vw;
       margin-top: 30px;
 
-      .icl-WhatChoose-content-one-img {
-      }
+      .icl-WhatChoose-content-one-img {}
+
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 100vw;
         margin-top: 30px;
+
         p {
           color: #6d6e71;
           font-family: "Noto Sans TC" !important;
@@ -1119,6 +1018,7 @@ font-family: Poppins, sans-serif;
           font-weight: 300;
           line-height: 30px;
           letter-spacing: 4.8px;
+
           span {
             color: #4570b6;
             font-family: "Noto Sans TC" !important;
@@ -1135,32 +1035,38 @@ font-family: Poppins, sans-serif;
     .icl-WhatChoose-content-two {
       margin: 0 auto;
       max-width: 100vw;
-      & > div {
+
+      &>div {
         margin-top: 30px;
         border-radius: 7.168px;
         background: #f4fafc;
         padding: 27px 32px 27px 34px;
+
         h4 {
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: 24px;
           font-style: normal;
           font-weight: 900;
-          line-height: 21.505px; /* 89.603% */
+          line-height: 21.505px;
+          /* 89.603% */
           margin-bottom: 15px;
         }
+
         p {
           color: #6d6e71;
           font-family: "Noto Sans TC";
           font-size: 16px;
           font-style: normal;
           font-weight: 300;
-          line-height: 25.089px; /* 156.805% */
+          line-height: 25.089px;
+          /* 156.805% */
           letter-spacing: 4.8px;
         }
       }
     }
   }
+
   .icl-btn {
     margin-top: 30px;
     display: flex;
@@ -1177,8 +1083,10 @@ font-family: Poppins, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 35px; /* 175% */
+    line-height: 35px;
+    /* 175% */
     letter-spacing: 1px;
+
     svg {
       width: 17px;
       height: 17px;
@@ -1190,6 +1098,7 @@ font-family: Poppins, sans-serif;
     span {
       font-family: "Poppins";
     }
+
     color: #4570b6;
     font-family: "Noto Sans TC";
     font-size: 20px;
@@ -1204,8 +1113,7 @@ font-family: Poppins, sans-serif;
   .CaseSharing {
     margin-top: 40px;
     margin-bottom: 30px;
-    background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-mobile-share.avif")
-      no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-mobile-share.avif") no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 86px 0 110px;
@@ -1213,6 +1121,7 @@ font-family: Poppins, sans-serif;
 
     .CaseSharing-Box {
       position: relative;
+
       h3 {
         position: absolute;
         top: -40px;
@@ -1225,9 +1134,11 @@ font-family: Poppins, sans-serif;
         font-weight: 900;
         line-height: 20px;
       }
+
       .CaseSharing-list::-webkit-scrollbar {
         display: none;
       }
+
       .CaseSharing-list {
         display: flex;
 
@@ -1238,20 +1149,23 @@ font-family: Poppins, sans-serif;
         overflow-x: auto;
         scrollbar-width: none;
 
-        & > .CaseSharing-list-item:nth-child(2) {
+        &>.CaseSharing-list-item:nth-child(2) {
           padding-top: 121px;
         }
-        & > .CaseSharing-list-item:nth-child(3) {
+
+        &>.CaseSharing-list-item:nth-child(3) {
           padding-top: 170px;
         }
+
         .CaseSharing-list-item {
-          & > a {
+          &>a {
             display: block;
             width: 175px;
             box-shadow: -1.768px 1.768px 0px 0px #4570b6;
 
             position: relative;
             margin-bottom: 13.26px;
+
             span {
               position: absolute;
               left: 8px;
@@ -1266,6 +1180,7 @@ font-family: Poppins, sans-serif;
               background: #4570b6;
               padding: 4px 6px;
             }
+
             i {
               position: absolute;
               right: 8px;
@@ -1277,6 +1192,7 @@ font-family: Poppins, sans-serif;
               display: flex;
               justify-content: center;
               align-items: center;
+
               svg {
                 width: 11px;
               }
@@ -1298,8 +1214,7 @@ font-family: Poppins, sans-serif;
 
   .latestNews {
     margin-bottom: 40px;
-    background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-newdongtai-mobile.jpg")
-      no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-newdongtai-mobile.jpg") no-repeat;
     background-size: cover;
     position: relative;
     height: 209vw;
@@ -1332,6 +1247,7 @@ font-family: Poppins, sans-serif;
       // width: 252px;
       width: 64.61vw;
       margin: 0 auto;
+
       .latestNews-title {
         color: #c13550;
         font-family: "Poppins", sans-serif;
@@ -1340,10 +1256,12 @@ font-family: Poppins, sans-serif;
         font-style: normal;
         font-weight: 700;
         line-height: 1.58;
+
         i {
           font-style: normal;
           display: block;
         }
+
         span {
           margin-left: 26px;
           margin-right: 4px;
@@ -1360,6 +1278,7 @@ font-family: Poppins, sans-serif;
           padding: 0 5px;
         }
       }
+
       p {
         margin-top: 9px;
         color: #6d6e71;
@@ -1390,6 +1309,7 @@ font-family: Poppins, sans-serif;
       justify-content: center;
       align-items: center;
       gap: 17px;
+
       svg {
         // width: 19px;
         // height: 19px;
@@ -1414,11 +1334,13 @@ font-family: Poppins, sans-serif;
     width: fit-content;
 
     margin: 0 auto;
-    & > div:nth-child(1) {
+
+    &>div:nth-child(1) {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 7.58px;
+
       span {
         color: #000;
         text-align: center;
@@ -1426,14 +1348,17 @@ font-family: Poppins, sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 0.82px; /* 82.478% */
+        line-height: 0.82px;
+        /* 82.478% */
       }
     }
-    & > div:nth-child(2) {
+
+    &>div:nth-child(2) {
       margin-top: 20px;
       display: flex;
       justify-content: center;
       gap: 20px;
+
       a {
         display: flex;
         justify-content: center;
@@ -1458,6 +1383,7 @@ font-family: Poppins, sans-serif;
       letter-spacing: 0.36px;
       padding-left: 28px;
       color: #6d6e71;
+
       a {
         color: #6d6e71;
         font-family: "Noto Sans TC";
@@ -1467,7 +1393,8 @@ font-family: Poppins, sans-serif;
         line-height: 3.6;
         letter-spacing: 0.36px;
       }
-      & > a:last-child {
+
+      &>a:last-child {
         color: #456db6;
         font-weight: 500;
       }
@@ -1485,7 +1412,7 @@ font-family: Poppins, sans-serif;
         justify-content: center;
         align-items: center;
 
-        & > div > div {
+        &>div>div {
           max-width: 299px;
           margin: 0 auto;
           position: relative;
@@ -1499,6 +1426,7 @@ font-family: Poppins, sans-serif;
             transform: translate(-50%, -50%);
             z-index: 1;
           }
+
           h3 {
             position: relative;
             z-index: 2;
@@ -1512,6 +1440,7 @@ font-family: Poppins, sans-serif;
             font-weight: 900;
             line-height: 20.359px;
           }
+
           p {
             position: relative;
             z-index: 2;
@@ -1523,26 +1452,31 @@ font-family: Poppins, sans-serif;
             font-weight: 300;
             line-height: 1.78;
             letter-spacing: 1.4px;
+
             span {
               color: #4570b6;
               font-style: normal;
               font-weight: 700;
             }
+
             .let {
               letter-spacing: 6.94px;
             }
           }
         }
       }
+
       .smilepro-Vedio {
         width: 100%;
         min-height: 221px;
+
         iframe {
           height: 221px;
         }
       }
     }
   }
+
   // 四大特点
   .smilepro-four-feature {
     padding: 0 15px;
@@ -1550,6 +1484,7 @@ font-family: Poppins, sans-serif;
     .smilepro-four-feature-Box {
       max-width: 332px;
       margin: 0 auto;
+
       .smilepro-four-feature-Box-top {
         h3 {
           color: #4570b6;
@@ -1559,6 +1494,7 @@ font-family: Poppins, sans-serif;
           font-weight: 900;
           line-height: 1;
         }
+
         p {
           margin-top: 13.75px;
           color: #4570b6;
@@ -1595,6 +1531,7 @@ font-family: Poppins, sans-serif;
             font-weight: 700;
             line-height: 0.3;
           }
+
           .smilepro-four-feature-Box-List-item-text {
             h4 {
               color: #4570b6;
@@ -1606,6 +1543,7 @@ font-family: Poppins, sans-serif;
               font-weight: 700;
               line-height: 1.5;
             }
+
             p {
               color: #4570b6;
               leading-trim: both;
@@ -1618,7 +1556,8 @@ font-family: Poppins, sans-serif;
             }
           }
         }
-        & > .smilepro-four-feature-Box-List-item:last-child {
+
+        &>.smilepro-four-feature-Box-List-item:last-child {
           margin-bottom: 0;
         }
       }
@@ -1628,10 +1567,12 @@ font-family: Poppins, sans-serif;
   // 表格
   .smilepro-difference {
     margin-top: 93px;
+
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
-      & > div {
+
+      &>div {
         display: inline-block;
         color: #4570b6;
         text-align: center;
@@ -1644,8 +1585,7 @@ font-family: Poppins, sans-serif;
 
         &::after {
           content: "";
-          background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png")
-            no-repeat;
+          background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png") no-repeat;
           width: 110.062px;
           height: 49px;
           position: absolute;
@@ -1682,6 +1622,7 @@ font-family: Poppins, sans-serif;
       z-index: 2;
       height: 82px;
     }
+
     .custom-comparison-table th,
     .custom-comparison-table td {
       border-bottom: 1px solid #d0d0d0;
@@ -1707,10 +1648,11 @@ font-family: Poppins, sans-serif;
       width: 17.95vw;
     }
 
-    .custom-comparison-table thead tr > th:nth-child(1) {
+    .custom-comparison-table thead tr>th:nth-child(1) {
       background: none;
     }
-    .custom-comparison-table thead tr > th:nth-child(3) {
+
+    .custom-comparison-table thead tr>th:nth-child(3) {
       background: #4570b6;
       color: #fff;
       line-height: 1.357;
@@ -1726,7 +1668,7 @@ font-family: Poppins, sans-serif;
       line-height: 1.314;
     }
 
-    .custom-comparison-table tbody tr > td:nth-child(1) {
+    .custom-comparison-table tbody tr>td:nth-child(1) {
       background: #f8f8f8;
       color: #4570b6;
       text-align: center;
@@ -1735,6 +1677,7 @@ font-family: Poppins, sans-serif;
       font-style: normal;
       font-weight: 700;
       line-height: 21.031px;
+
       p {
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -1745,7 +1688,7 @@ font-family: Poppins, sans-serif;
       }
     }
 
-    .custom-comparison-table tbody tr > td:nth-child(3) {
+    .custom-comparison-table tbody tr>td:nth-child(3) {
       background: #5a8ad6;
 
       color: #fff;
@@ -1761,6 +1704,7 @@ font-family: Poppins, sans-serif;
 
   .icl-introVedio {
     position: relative;
+
     &::before {
       content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg1.png");
       position: absolute;
@@ -1769,6 +1713,7 @@ font-family: Poppins, sans-serif;
       z-index: 1;
       pointer-events: none;
     }
+
     &::after {
       content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg2.png");
       position: absolute;
@@ -1777,7 +1722,9 @@ font-family: Poppins, sans-serif;
       z-index: 1;
       pointer-events: none;
     }
+
     padding: 52px 15px 100px;
+
     .icl-introVedio-intro {
       .icl-introVedio-intro-number {
         display: flex;
@@ -1792,9 +1739,11 @@ font-family: Poppins, sans-serif;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          & > div:last-child {
+
+          &>div:last-child {
             margin-bottom: 0;
           }
+
           div {
             position: relative;
             z-index: 2;
@@ -1826,10 +1775,12 @@ font-family: Poppins, sans-serif;
 
         .content-area {
           position: relative;
+
           .content-area-title {
             position: absolute;
             top: 0;
             left: 0;
+
             p {
               color: #4570b6;
               font-family: "Noto Sans TC";
@@ -1839,6 +1790,7 @@ font-family: Poppins, sans-serif;
               line-height: 1.26;
               letter-spacing: -0.79px;
             }
+
             svg {
               position: absolute;
               top: 20px;
@@ -1850,10 +1802,12 @@ font-family: Poppins, sans-serif;
             max-width: 290px;
             position: relative;
             z-index: 2;
+
             img {
               max-width: 100%;
               height: auto;
             }
+
             .content-area-text {
               position: absolute;
               // bottom: 12px;
@@ -1883,10 +1837,13 @@ font-family: Poppins, sans-serif;
       // width: 86.14vw;
       // height: 44.375vw;
       // max-height: 852.5px;
-      -webkit-touch-callout: none; /* 禁用长按菜单 */
-      -webkit-user-select: none; /* 禁用文本选择 */
+      -webkit-touch-callout: none;
+      /* 禁用长按菜单 */
+      -webkit-user-select: none;
+      /* 禁用文本选择 */
       user-select: none;
-      touch-action: none; /* 禁用默认触摸行为 */
+      touch-action: none;
+      /* 禁用默认触摸行为 */
 
       background-image: url("https://statichk.cmermedical.com/smile/smileproV2/game/smilepro-game-mobileBg.avif");
       background-repeat: no-repeat;
@@ -1959,7 +1916,7 @@ font-family: Poppins, sans-serif;
         }
       }
 
-      & > .draggable:nth-child(1) {
+      &>.draggable:nth-child(1) {
         position: absolute;
         left: 22px;
         top: 96px;
@@ -1973,6 +1930,7 @@ font-family: Poppins, sans-serif;
     padding-top: 44px;
     padding-bottom: 30px;
     margin-bottom: 40px;
+
     .smile-pro-evaluateV2-Box {
       .smile-pro-evaluateV2-Box-title {
         margin: 0 auto;
@@ -1994,6 +1952,7 @@ font-family: Poppins, sans-serif;
         font-weight: 900;
         line-height: 1.56;
         letter-spacing: 2px;
+
         &::after {
           position: absolute;
           content: "";
@@ -2010,6 +1969,7 @@ font-family: Poppins, sans-serif;
         margin-left: 30px;
         height: 333px;
         position: relative;
+
         &::after {
           content: "";
           position: absolute;
@@ -2022,18 +1982,23 @@ font-family: Poppins, sans-serif;
           border-radius: 20px;
           z-index: 3;
         }
+
         .swiper-overflow {
           overflow: hidden;
         }
+
         .swiperWrap {
           z-index: auto !important;
           overflow: unset;
           position: relative;
+
           .swiper-wrapper {
             align-items: center;
+
             .swiperWrap-item {
               transition: all 0.3s ease;
-              & > div {
+
+              &>div {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg.png");
                 background-repeat: no-repeat;
                 background-color: white;
@@ -2044,6 +2009,7 @@ font-family: Poppins, sans-serif;
                 text-align: center;
                 position: relative;
                 z-index: 1;
+
                 svg {
                   margin: 0 auto;
                   width: 69px;
@@ -2060,14 +2026,17 @@ font-family: Poppins, sans-serif;
                   font-weight: 300;
                   line-height: 1.666;
                 }
+
                 .swiperWrap-item-name {
                   position: absolute;
                   left: 23.5px;
                   bottom: 35px;
                   text-align: left;
+
                   i {
                     font-style: normal;
                   }
+
                   color: #6d6e71;
                   font-family: Inter;
                   font-size: 14px;
@@ -2078,8 +2047,9 @@ font-family: Poppins, sans-serif;
                 }
               }
             }
+
             .swiper-slide-active {
-              & > div {
+              &>div {
                 border-radius: 20px;
                 // background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
                 // background-repeat: no-repeat;
@@ -2090,11 +2060,13 @@ font-family: Poppins, sans-serif;
                 padding: 48px 29px 46px;
                 text-align: center;
                 position: relative;
+
                 svg {
                   margin: 0 auto;
                   width: 74px;
                   height: 74px;
                   flex-shrink: 0;
+
                   path {
                     fill: #4570b6;
                   }
@@ -2109,14 +2081,17 @@ font-family: Poppins, sans-serif;
                   font-weight: 300;
                   line-height: 1.714;
                 }
+
                 .swiperWrap-item-name {
                   position: absolute;
                   left: 29px;
                   bottom: 46px;
                   text-align: left;
+
                   i {
                     font-style: normal;
                   }
+
                   color: #6d6e71;
                   font-family: Inter;
                   font-size: 14px;
@@ -2128,25 +2103,31 @@ font-family: Poppins, sans-serif;
               }
             }
           }
+
           .swiper-pagination {
             width: clamp(93px, 47.69vw, 186px);
             max-width: 186px;
             top: 50%;
             transform: translateY(-50%);
             z-index: 9;
-            & > div {
+
+            &>div {
               z-index: 9;
               pointer-events: auto;
               background-image: none;
             }
+
             .swiper-button-next {
               right: 0;
+
               svg {
                 width: clamp(20px, 10.26vw, 40px);
               }
             }
+
             .swiper-button-prev {
               left: clamp(-16px, -4.1vw, -8px);
+
               svg {
                 width: clamp(20px, 10.26vw, 40px);
               }
@@ -2161,11 +2142,13 @@ font-family: Poppins, sans-serif;
     display: flex;
     gap: 45px;
   }
+
   .service-tip__left {
     max-width: 684px;
     width: 488.86px;
     display: none;
   }
+
   .service-tip__right {
     color: #4b5563;
     font-family: Inter;
@@ -2230,10 +2213,12 @@ font-family: Poppins, sans-serif;
       position: absolute;
       right: 15px;
       bottom: 0;
+
       div {
         background: #4570b6;
       }
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         padding: 5px 10px 0px 10px;
@@ -2242,7 +2227,8 @@ font-family: Poppins, sans-serif;
         font-weight: 300;
         line-height: 2;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         border-radius: 5px;
         border-top-left-radius: 0px;
         padding: 5px 10px 11px 10px;
@@ -2266,6 +2252,7 @@ font-family: Poppins, sans-serif;
       letter-spacing: 0.36px;
       padding-left: 28px;
       color: #6d6e71;
+
       a {
         color: #6d6e71;
         font-family: "Noto Sans TC";
@@ -2275,7 +2262,8 @@ font-family: Poppins, sans-serif;
         line-height: 3.6;
         letter-spacing: 0.36px;
       }
-      & > a:last-child {
+
+      &>a:last-child {
         color: #456db6;
         font-weight: 500;
       }
@@ -2286,6 +2274,7 @@ font-family: Poppins, sans-serif;
 
   .icl-WhatChoose {
     padding: 40px 15px;
+
     .icl-WhatChoose-title {
       color: #4570b6;
       font-family: "Noto Sans TC" !important;
@@ -2294,6 +2283,7 @@ font-family: Poppins, sans-serif;
       font-weight: 900;
       line-height: 1.2;
     }
+
     .icl-WhatChoose-content-one {
       margin: 0 auto;
       max-width: 92.3vw;
@@ -2313,6 +2303,7 @@ font-family: Poppins, sans-serif;
           font-weight: 300;
           line-height: 1.875;
           letter-spacing: 1.23vw;
+
           span {
             color: #4570b6;
             font-family: "Noto Sans TC" !important;
@@ -2329,11 +2320,13 @@ font-family: Poppins, sans-serif;
     .icl-WhatChoose-content-two {
       margin: 0 auto;
       max-width: 92.3vw;
-      & > div {
+
+      &>div {
         margin-top: 7.69vw;
         border-radius: 1.837vw;
         background: #f4fafc;
         padding: 6.92vw 8.25vw 6.92vw 8.717vw;
+
         h4 {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -2343,6 +2336,7 @@ font-family: Poppins, sans-serif;
           line-height: 0.89;
           margin-bottom: 3.846vw;
         }
+
         p {
           color: #6d6e71;
           font-family: "Noto Sans TC";
@@ -2363,6 +2357,7 @@ font-family: Poppins, sans-serif;
     .smilepro-four-feature-Box {
       max-width: 85.13vw;
       margin: 0 auto;
+
       .smilepro-four-feature-Box-top {
         h3 {
           color: #4570b6;
@@ -2372,6 +2367,7 @@ font-family: Poppins, sans-serif;
           font-weight: 900;
           line-height: 1;
         }
+
         p {
           margin-top: 3.53vw;
           color: #4570b6;
@@ -2407,6 +2403,7 @@ font-family: Poppins, sans-serif;
             font-weight: 700;
             line-height: 0.3;
           }
+
           .smilepro-four-feature-Box-List-item-text {
             h4 {
               color: #4570b6;
@@ -2418,6 +2415,7 @@ font-family: Poppins, sans-serif;
               font-weight: 700;
               line-height: 1.5;
             }
+
             p {
               color: #4570b6;
               leading-trim: both;
@@ -2430,7 +2428,8 @@ font-family: Poppins, sans-serif;
             }
           }
         }
-        & > .smilepro-four-feature-Box-List-item:last-child {
+
+        &>.smilepro-four-feature-Box-List-item:last-child {
           margin-bottom: 0;
         }
       }
@@ -2440,10 +2439,12 @@ font-family: Poppins, sans-serif;
   // 表格
   .smilepro-difference {
     margin-top: 23.85vw;
+
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
-      & > div {
+
+      &>div {
         display: inline-block;
         color: #4570b6;
         text-align: center;
@@ -2456,8 +2457,7 @@ font-family: Poppins, sans-serif;
 
         &::after {
           content: "";
-          background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png")
-            no-repeat;
+          background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png") no-repeat;
           width: 110.062px;
           height: 49px;
           position: absolute;
@@ -2494,6 +2494,7 @@ font-family: Poppins, sans-serif;
       z-index: 2;
       height: 21.03vw;
     }
+
     .custom-comparison-table th,
     .custom-comparison-table td {
       border-bottom: 1px solid #d0d0d0;
@@ -2519,10 +2520,11 @@ font-family: Poppins, sans-serif;
       width: 17.95vw;
     }
 
-    .custom-comparison-table thead tr > th:nth-child(1) {
+    .custom-comparison-table thead tr>th:nth-child(1) {
       background: none;
     }
-    .custom-comparison-table thead tr > th:nth-child(3) {
+
+    .custom-comparison-table thead tr>th:nth-child(3) {
       background: #4570b6;
       color: #fff;
       line-height: 1.357;
@@ -2538,7 +2540,7 @@ font-family: Poppins, sans-serif;
       line-height: 1.314;
     }
 
-    .custom-comparison-table tbody tr > td:nth-child(1) {
+    .custom-comparison-table tbody tr>td:nth-child(1) {
       background: #f8f8f8;
       color: #4570b6;
       text-align: center;
@@ -2547,6 +2549,7 @@ font-family: Poppins, sans-serif;
       font-style: normal;
       font-weight: 700;
       line-height: 1.44;
+
       p {
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -2557,7 +2560,7 @@ font-family: Poppins, sans-serif;
       }
     }
 
-    .custom-comparison-table tbody tr > td:nth-child(3) {
+    .custom-comparison-table tbody tr>td:nth-child(3) {
       background: #5a8ad6;
 
       color: #fff;
@@ -2573,6 +2576,7 @@ font-family: Poppins, sans-serif;
 
   .icl-introVedio {
     position: relative;
+
     &::before {
       content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg1.png");
       position: absolute;
@@ -2581,6 +2585,7 @@ font-family: Poppins, sans-serif;
       z-index: 1;
       pointer-events: none;
     }
+
     &::after {
       content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg2.png");
       position: absolute;
@@ -2589,7 +2594,9 @@ font-family: Poppins, sans-serif;
       z-index: 1;
       pointer-events: none;
     }
+
     padding: 13.33vw 15px 25.64vw;
+
     .icl-introVedio-intro {
       .icl-introVedio-intro-number {
         display: flex;
@@ -2604,9 +2611,11 @@ font-family: Poppins, sans-serif;
           font-style: normal;
           font-weight: 200;
           line-height: normal;
-          & > div:last-child {
+
+          &>div:last-child {
             margin-bottom: 0;
           }
+
           div {
             position: relative;
             z-index: 2;
@@ -2638,10 +2647,12 @@ font-family: Poppins, sans-serif;
 
         .content-area {
           position: relative;
+
           .content-area-title {
             position: absolute;
             top: 0;
             left: 0;
+
             p {
               color: #4570b6;
               font-family: "Noto Sans TC";
@@ -2651,6 +2662,7 @@ font-family: Poppins, sans-serif;
               line-height: 1.26;
               letter-spacing: -0.2vw;
             }
+
             svg {
               position: absolute;
               top: 5.13vw;
@@ -2662,10 +2674,12 @@ font-family: Poppins, sans-serif;
             max-width: 74.36vw;
             position: relative;
             z-index: 2;
+
             img {
               max-width: 100%;
               height: auto;
             }
+
             .content-area-text {
               position: absolute;
               // bottom: 3.08vw;
@@ -2692,12 +2706,14 @@ font-family: Poppins, sans-serif;
     padding-top: 11.28vw;
     padding-bottom: 7.69vw;
     margin-bottom: 10.26vw;
+
     .smile-pro-evaluateV2-Box {
       .smile-pro-evaluateV2-Box-content {
         margin-top: 3.08vw;
         margin-left: 7.69vw;
         height: 85.38vw;
         position: relative;
+
         &::after {
           content: "";
           position: absolute;
@@ -2716,8 +2732,9 @@ font-family: Poppins, sans-serif;
         .swiperWrap {
           .swiper-wrapper {
             align-items: center;
+
             .swiperWrap-item {
-              & > div {
+              &>div {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg.png");
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -2728,6 +2745,7 @@ font-family: Poppins, sans-serif;
                 text-align: center;
                 position: relative;
                 z-index: 1;
+
                 svg {
                   margin: 0 auto;
                   width: 17.69vw;
@@ -2744,14 +2762,17 @@ font-family: Poppins, sans-serif;
                   font-weight: 300;
                   line-height: 1.666;
                 }
+
                 .swiperWrap-item-name {
                   position: absolute;
                   left: 6.03vw;
                   bottom: 8.97vw;
                   text-align: left;
+
                   i {
                     font-style: normal;
                   }
+
                   color: #6d6e71;
                   font-family: Inter;
                   font-size: 3.59vw;
@@ -2762,8 +2783,9 @@ font-family: Poppins, sans-serif;
                 }
               }
             }
+
             .swiper-slide-active {
-              & > div {
+              &>div {
                 border-radius: 5.13vw;
                 // background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
                 // background-repeat: no-repeat;
@@ -2778,11 +2800,13 @@ font-family: Poppins, sans-serif;
                 text-align: center;
                 position: relative;
                 z-index: 1;
+
                 svg {
                   margin: 0 auto;
                   width: 18.97vw;
                   height: 18.97vw;
                   flex-shrink: 0;
+
                   path {
                     fill: #4570b6;
                   }
@@ -2797,14 +2821,17 @@ font-family: Poppins, sans-serif;
                   font-weight: 300;
                   line-height: 1.714;
                 }
+
                 .swiperWrap-item-name {
                   position: absolute;
                   left: 7.44vw;
                   bottom: 11.79vw;
                   text-align: left;
+
                   i {
                     font-style: normal;
                   }
+
                   color: #6d6e71;
                   font-family: Inter;
                   font-size: 3.59vw;
@@ -2825,8 +2852,7 @@ font-family: Poppins, sans-serif;
   .CaseSharing {
     margin-top: 40px;
     margin-bottom: 30px;
-    background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-mobile-share.avif")
-      no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-mobile-share.avif") no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 22.05vw 0 28.21vw;
@@ -2834,6 +2860,7 @@ font-family: Poppins, sans-serif;
 
     .CaseSharing-Box {
       position: relative;
+
       h3 {
         position: absolute;
         top: -10.26vw;
@@ -2846,9 +2873,11 @@ font-family: Poppins, sans-serif;
         font-weight: 900;
         line-height: 1.25;
       }
+
       .CaseSharing-list::-webkit-scrollbar {
         display: none;
       }
+
       .CaseSharing-list {
         display: flex;
 
@@ -2859,12 +2888,14 @@ font-family: Poppins, sans-serif;
         overflow-x: auto;
         scrollbar-width: none;
 
-        & > .CaseSharing-list-item:nth-child(2) {
+        &>.CaseSharing-list-item:nth-child(2) {
           padding-top: 31.03vw;
         }
-        & > .CaseSharing-list-item:nth-child(3) {
+
+        &>.CaseSharing-list-item:nth-child(3) {
           padding-top: 43.59vw;
         }
+
         .CaseSharing-list-item {
           a {
             display: block;
@@ -2873,6 +2904,7 @@ font-family: Poppins, sans-serif;
 
             position: relative;
             margin-bottom: 3.4vw;
+
             span {
               position: absolute;
               left: 2.05vw;
@@ -2887,6 +2919,7 @@ font-family: Poppins, sans-serif;
               background: #4570b6;
               padding: 1.03vw 1.54vw;
             }
+
             i {
               position: absolute;
               right: 2.05vw;
@@ -2898,6 +2931,7 @@ font-family: Poppins, sans-serif;
               display: flex;
               justify-content: center;
               align-items: center;
+
               svg {
                 width: 2.82vw;
               }
@@ -2921,11 +2955,13 @@ font-family: Poppins, sans-serif;
     width: fit-content;
 
     margin: 0 auto;
-    & > div:nth-child(1) {
+
+    &>div:nth-child(1) {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 1.94vw;
+
       span {
         color: #000;
         text-align: center;
@@ -2936,11 +2972,13 @@ font-family: Poppins, sans-serif;
         line-height: 0.82;
       }
     }
-    & > div:nth-child(2) {
+
+    &>div:nth-child(2) {
       margin-top: 5.13vw;
       display: flex;
       justify-content: center;
       gap: 5.13vw;
+
       a {
         display: flex;
         justify-content: center;
@@ -2960,21 +2998,27 @@ font-family: Poppins, sans-serif;
     height: calc(100% - 270px);
     width: 1024px;
   }
+
   .changehon {
     display: block;
   }
+
   .d-lg-none {
     display: none;
   }
+
   .d-lg-none-imp {
     display: none !important;
   }
+
   .d-lg-block {
     display: block;
   }
+
   // 中心简介
   .smile-newCenter {
     position: relative;
+
     .smile-newCenter-menu {
       padding: 0px;
       margin-bottom: clamp(29px, 3.02vw, 58px);
@@ -2984,6 +3028,7 @@ font-family: Poppins, sans-serif;
       letter-spacing: clamp(0.18px, 0.02vw, 0.36px);
       padding-left: clamp(38.5px, 4.01vw, 77px);
       color: #6d6e71;
+
       a {
         color: #6d6e71;
         font-family: "Noto Sans TC" !important;
@@ -2993,7 +3038,8 @@ font-family: Poppins, sans-serif;
         line-height: 2.175;
         letter-spacing: clamp(0.3px, 0.03vw, 0.6px);
       }
-      & > a:last-child {
+
+      &>a:last-child {
         color: #456db6;
         font-weight: 500;
       }
@@ -3009,11 +3055,10 @@ font-family: Poppins, sans-serif;
         justify-content: center;
         align-items: center;
 
-        & > div > div {
+        &>div>div {
           width: clamp(312.5px, 32.55vw, 625px);
           height: clamp(312.5px, 32.55vw, 625px);
-          padding: clamp(59px, 6.15vw, 118px) clamp(34px, 3.54vw, 68px)
-            clamp(73px, 7.6vw, 146px) clamp(42px, 4.38vw, 84px);
+          padding: clamp(59px, 6.15vw, 118px) clamp(34px, 3.54vw, 68px) clamp(73px, 7.6vw, 146px) clamp(42px, 4.38vw, 84px);
 
           text-align: center;
           background-color: white;
@@ -3033,6 +3078,7 @@ font-family: Poppins, sans-serif;
             width: clamp(381px, 39.69vw, 762px);
             height: clamp(381px, 39.69vw, 762px);
           }
+
           h3 {
             position: relative;
             z-index: 2;
@@ -3046,6 +3092,7 @@ font-family: Poppins, sans-serif;
             font-weight: 900;
             line-height: 1;
           }
+
           p {
             max-width: clamp(236.5px, 24.64vw, 473px);
             position: relative;
@@ -3058,17 +3105,20 @@ font-family: Poppins, sans-serif;
             font-weight: 300;
             line-height: 1.75;
             letter-spacing: clamp(2px, 0.21vw, 4px);
+
             span {
               color: #4570b6;
               font-style: normal;
               font-weight: 700;
             }
+
             .let {
               letter-spacing: clamp(5.45px, 0.57vw, 10.9px);
             }
           }
         }
       }
+
       .smilepro-Vedio {
         position: absolute;
         right: clamp(44.5px, 4.64vw, 89px);
@@ -3076,6 +3126,7 @@ font-family: Poppins, sans-serif;
         width: 100%;
         width: clamp(252px, 26.25vw, 504px);
         height: clamp(142px, 14.79vw, 284px);
+
         iframe {
           height: clamp(142px, 14.79vw, 284px);
         }
@@ -3099,6 +3150,7 @@ font-family: Poppins, sans-serif;
       width: clamp(324px, 33.75vw, 648px);
       height: clamp(325px, 33.85vw, 650px);
     }
+
     .smilepro-four-feature-Box {
       max-width: clamp(538px, 56.04vw, 1076px);
       margin: 0 auto;
@@ -3112,6 +3164,7 @@ font-family: Poppins, sans-serif;
             font-family: "Poppins";
             font-weight: 700;
           }
+
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: clamp(15px, 1.56vw, 30px);
@@ -3119,6 +3172,7 @@ font-family: Poppins, sans-serif;
           font-weight: 900;
           line-height: 1;
         }
+
         p {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -3156,6 +3210,7 @@ font-family: Poppins, sans-serif;
             line-height: 0.3;
             width: clamp(52.5px, 5.47vw, 105px);
           }
+
           .smilepro-four-feature-Box-List-item-text {
             h4 {
               color: #4570b6;
@@ -3167,6 +3222,7 @@ font-family: Poppins, sans-serif;
               font-weight: 700;
               line-height: 1.5;
             }
+
             p {
               color: #4570b6;
               leading-trim: both;
@@ -3186,10 +3242,12 @@ font-family: Poppins, sans-serif;
   // 表格
   .smilepro-difference {
     margin-top: 230px;
+
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
-      & > div {
+
+      &>div {
         display: inline-block;
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -3198,6 +3256,7 @@ font-family: Poppins, sans-serif;
         font-weight: 900;
         line-height: 1;
         position: relative;
+
         span {
           color: #4570b6;
           font-family: "Poppins";
@@ -3206,6 +3265,7 @@ font-family: Poppins, sans-serif;
           font-weight: 700;
           line-height: 1;
         }
+
         &::after {
           content: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-pc-titleBg.png");
           position: absolute;
@@ -3221,12 +3281,15 @@ font-family: Poppins, sans-serif;
       border-collapse: collapse;
       border-spacing: 0;
     }
+
     .custom-comparison-table tr th {
       height: 148px;
     }
+
     .custom-comparison-table tr {
       height: 117px;
     }
+
     .custom-comparison-table th,
     .custom-comparison-table td {
       border-bottom: 1.5px solid #d0d0d0;
@@ -3259,10 +3322,11 @@ font-family: Poppins, sans-serif;
       border: none;
     }
 
-    .custom-comparison-table thead tr > th:nth-child(1) {
+    .custom-comparison-table thead tr>th:nth-child(1) {
       background: none;
     }
-    .custom-comparison-table thead tr > th:nth-child(3) {
+
+    .custom-comparison-table thead tr>th:nth-child(3) {
       background: #4570b6;
       color: #fff;
       line-height: 1.357;
@@ -3279,7 +3343,7 @@ font-family: Poppins, sans-serif;
       letter-spacing: 1px;
     }
 
-    .custom-comparison-table tbody tr > td:nth-child(1) {
+    .custom-comparison-table tbody tr>td:nth-child(1) {
       background: #f8f8f8;
       color: #4570b6;
       text-align: center;
@@ -3291,11 +3355,12 @@ font-family: Poppins, sans-serif;
       letter-spacing: 4px;
     }
 
-    .custom-comparison-table tbody tr > td:nth-child(3) {
+    .custom-comparison-table tbody tr>td:nth-child(3) {
       background: #5a8ad6;
       font-weight: 700;
       color: #fff;
     }
+
     // 按钮
     .icl-btn {
       margin-top: 63px;
@@ -3306,6 +3371,7 @@ font-family: Poppins, sans-serif;
   .icl-introVedio {
     width: 100vw;
     position: relative;
+
     &::after {
       content: url("https://statichk.cmermedical.com/smile/smileproV2/intro/smilepro-intro-pc-bg.avif");
       position: absolute;
@@ -3315,10 +3381,12 @@ font-family: Poppins, sans-serif;
     }
 
     padding: 200px 0 86px;
+
     .icl-introVedio-intro {
       .icl-introVedio-intro-number {
         position: relative;
         z-index: 2;
+
         &::after {
           content: url("https://statichk.cmermedical.com/smile/smileproV2/intro/smilepro-pc-intro-ricto.png");
           position: absolute;
@@ -3356,6 +3424,7 @@ font-family: Poppins, sans-serif;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
+
             &:hover,
             &.active {
               color: #4570b6;
@@ -3367,7 +3436,8 @@ font-family: Poppins, sans-serif;
               border-right: 5px solid #4570b6;
             }
           }
-          & > div:last-child {
+
+          &>div:last-child {
             margin-bottom: 0;
           }
         }
@@ -3375,10 +3445,12 @@ font-family: Poppins, sans-serif;
         .content-area {
           position: relative;
           flex: 1;
+
           .content-area-title {
             position: absolute;
             top: 0;
             left: 0;
+
             p {
               color: #4570b6;
               font-family: "Noto Sans TC";
@@ -3388,6 +3460,7 @@ font-family: Poppins, sans-serif;
               line-height: 1.26;
               letter-spacing: 0;
             }
+
             svg {
               width: 32px;
               height: 32px;
@@ -3408,6 +3481,7 @@ font-family: Poppins, sans-serif;
               max-width: 647px;
               height: auto;
             }
+
             .content-area-text {
               left: 50%;
 
@@ -3506,7 +3580,7 @@ font-family: Poppins, sans-serif;
         }
       }
 
-      & > .draggable:nth-child(1) {
+      &>.draggable:nth-child(1) {
         position: absolute;
         left: 22px;
         top: 96px;
@@ -3524,6 +3598,7 @@ font-family: Poppins, sans-serif;
     padding-top: 62px;
     padding-bottom: 93px;
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -3542,6 +3617,7 @@ font-family: Poppins, sans-serif;
       overflow: hidden;
       margin: 0 auto;
       position: relative;
+
       .smile-pro-evaluateV2-Box-title {
         width: 285px;
         height: 234px;
@@ -3566,6 +3642,7 @@ font-family: Poppins, sans-serif;
         line-height: 1.16;
         letter-spacing: 15.3px;
         writing-mode: vertical-rl;
+
         &::after {
           position: absolute;
           content: "";
@@ -3602,12 +3679,15 @@ font-family: Poppins, sans-serif;
           border-radius: 35px;
           z-index: 3;
         }
+
         .swiper-overflow {
           overflow: hidden;
         }
+
         .swiperWrap {
           z-index: auto !important;
           overflow: unset;
+
           .overflow-swiper {
             overflow: hidden;
           }
@@ -3615,17 +3695,19 @@ font-family: Poppins, sans-serif;
           .swiper-wrapper {
             align-items: center;
             width: 100%;
-            & > .swiper-slide-next {
+
+            &>.swiper-slide-next {
               margin-left: -20px;
             }
-            .swiper-slide-active ~ .swiper-slide {
+
+            .swiper-slide-active~.swiper-slide {
               margin-left: -18px;
             }
 
             .swiperWrap-item {
               // width: 206.662px !important;
 
-              & > div {
+              &>div {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc.png");
                 background-repeat: no-repeat;
 
@@ -3635,6 +3717,7 @@ font-family: Poppins, sans-serif;
                 padding: 40px 29px 43px;
                 text-align: center;
                 position: relative;
+
                 svg {
                   margin: 0 auto;
                   width: 89px;
@@ -3653,14 +3736,17 @@ font-family: Poppins, sans-serif;
                   line-height: 1.75;
                   letter-spacing: normal;
                 }
+
                 .swiperWrap-item-name {
                   position: absolute;
                   left: 29px;
                   bottom: 43px;
                   text-align: left;
+
                   i {
                     font-style: normal;
                   }
+
                   color: #6d6e71;
                   font-family: Inter;
                   font-size: 14.466px;
@@ -3671,9 +3757,11 @@ font-family: Poppins, sans-serif;
                 }
               }
             }
+
             .swiper-slide-active {
               width: 300.502px !important;
-              & > div {
+
+              &>div {
                 // background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc-active.png");
                 // background-repeat: no-repeat;
                 background-image: none;
@@ -3687,12 +3775,14 @@ font-family: Poppins, sans-serif;
                 text-align: center;
                 position: relative;
                 margin: 0 auto;
+
                 svg {
                   margin: 0 auto;
                   width: 123px;
                   height: 123px;
 
                   flex-shrink: 0;
+
                   path {
                     fill: #4570b6;
                   }
@@ -3707,14 +3797,17 @@ font-family: Poppins, sans-serif;
                   font-weight: 300;
                   line-height: 1.75;
                 }
+
                 .swiperWrap-item-name {
                   position: absolute;
                   left: 49px;
                   bottom: 77px;
                   text-align: left;
+
                   i {
                     font-style: normal;
                   }
+
                   color: #6d6e71;
                   font-family: Inter;
                   font-size: 20px;
@@ -3726,19 +3819,23 @@ font-family: Poppins, sans-serif;
               }
             }
           }
+
           .swiper-pagination {
             width: 300.502px;
             top: 50%;
             transform: translateY(-50%);
             z-index: 9;
-            & > div {
+
+            &>div {
               z-index: 9;
               pointer-events: auto;
               background-image: none;
             }
+
             .swiper-button-next {
               right: 0;
             }
+
             .swiper-button-prev {
               left: -14px;
             }
@@ -3757,11 +3854,13 @@ font-family: Poppins, sans-serif;
     gap: 45px;
     margin-bottom: -134px;
   }
+
   .service-tip__left {
     max-width: 684px;
     width: 488.86px;
     display: block;
   }
+
   .service-tip__right {
     color: #4b5563;
     font-family: Inter;
@@ -3779,9 +3878,11 @@ font-family: Poppins, sans-serif;
     right: 0;
     left: 0;
   }
+
   .d-xl-none {
     display: none;
   }
+
   .d-xl-block {
     display: block;
   }
@@ -3836,10 +3937,12 @@ font-family: Poppins, sans-serif;
       position: absolute;
       right: 15px;
       bottom: 0;
+
       div {
         background: #4570b6;
       }
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         border-bottom: 1px solid #4570b6;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -3851,12 +3954,14 @@ font-family: Poppins, sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 30px; /* 150% */
+        line-height: 30px;
+        /* 150% */
         letter-spacing: 4px;
         position: relative;
         top: 2px;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         border-radius: 5px;
         border-top-left-radius: 0px;
         padding: 8px 35px 23px 22px;
@@ -3874,6 +3979,7 @@ font-family: Poppins, sans-serif;
 
   .smile-newCenter {
     width: 100vw;
+
     .smile-newCenter-menu {
       padding: 0px;
       margin-bottom: clamp(29px, 3.02vw, 58px);
@@ -3883,6 +3989,7 @@ font-family: Poppins, sans-serif;
       letter-spacing: 0.36px;
       padding-left: clamp(38.5px, 4.01vw, 77px);
       color: #6d6e71;
+
       a {
         color: #6d6e71;
         font-family: "Noto Sans TC" !important;
@@ -3892,7 +3999,8 @@ font-family: Poppins, sans-serif;
         line-height: 2.175;
         letter-spacing: clamp(0.3px, 0.03vw, 0.6px);
       }
-      & > a:last-child {
+
+      &>a:last-child {
         color: #456db6;
         font-weight: 500;
       }
@@ -3903,6 +4011,7 @@ font-family: Poppins, sans-serif;
 
   .icl-WhatChoose {
     padding: 123px 0px;
+
     .icl-WhatChoose-title {
       max-width: 908px;
       color: #4570b6;
@@ -3913,19 +4022,23 @@ font-family: Poppins, sans-serif;
       line-height: 1;
       margin: 0 auto;
     }
+
     .icl-WhatChoose-content-one {
       margin: 0 auto;
       margin-top: 26px;
       display: flex;
       justify-content: center;
       gap: 31px;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         max-width: 463px;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         max-width: 415px;
         text-align: justify;
       }
+
       // .icl-WhatChoose-content-one-img{
 
       // }
@@ -3938,6 +4051,7 @@ font-family: Poppins, sans-serif;
           font-weight: 300;
           line-height: 1.95;
           letter-spacing: 4px;
+
           span {
             color: #4570b6;
             font-family: "Noto Sans TC";
@@ -3951,6 +4065,7 @@ font-family: Poppins, sans-serif;
       }
     }
   }
+
   .icl-btn {
     margin-top: 35px;
     display: flex;
@@ -3970,6 +4085,7 @@ font-family: Poppins, sans-serif;
     font-weight: 700;
     line-height: 1.75;
     letter-spacing: 1.8px;
+
     svg {
       width: 29px;
       height: 29px;
@@ -4014,6 +4130,7 @@ font-family: Poppins, sans-serif;
     .CaseSharing-Box {
       position: relative;
       z-index: 2;
+
       h3 {
         position: absolute;
         top: -70px;
@@ -4027,6 +4144,7 @@ font-family: Poppins, sans-serif;
         line-height: 39px;
         text-align: right;
       }
+
       .CaseSharing-list {
         display: flex;
         justify-content: center;
@@ -4034,20 +4152,23 @@ font-family: Poppins, sans-serif;
         flex-wrap: nowrap;
         overflow-x: auto;
 
-        & > .CaseSharing-list-item:nth-child(2) {
+        &>.CaseSharing-list-item:nth-child(2) {
           padding-top: 97px;
         }
-        & > .CaseSharing-list-item:nth-child(3) {
+
+        &>.CaseSharing-list-item:nth-child(3) {
           padding-top: 207px;
         }
+
         .CaseSharing-list-item {
-          & > a {
+          &>a {
             display: block;
             width: 396px;
 
             box-shadow: -4px 4px 0px 0px #4570b6;
             position: relative;
             margin-bottom: 30px;
+
             span {
               position: absolute;
               left: 20px;
@@ -4062,6 +4183,7 @@ font-family: Poppins, sans-serif;
               background: #4570b6;
               padding: 10px 15px;
             }
+
             i {
               position: absolute;
               right: 20px;
@@ -4073,6 +4195,7 @@ font-family: Poppins, sans-serif;
               display: flex;
               justify-content: center;
               align-items: center;
+
               svg {
                 width: 26px;
               }
@@ -4090,6 +4213,7 @@ font-family: Poppins, sans-serif;
       bottom: 60px;
       right: -20px;
     }
+
     .icl-btn {
       position: absolute;
       left: 50%;
@@ -4103,11 +4227,13 @@ font-family: Poppins, sans-serif;
     width: fit-content;
 
     margin: 0 auto;
-    & > div:nth-child(1) {
+
+    &>div:nth-child(1) {
       display: flex;
       align-items: baseline;
       justify-content: center;
       gap: 13px;
+
       span {
         color: #000;
         text-align: center;
@@ -4115,14 +4241,17 @@ font-family: Poppins, sans-serif;
         font-size: 30px;
         font-style: normal;
         font-weight: 700;
-        line-height: 25px; /* 83.333% */
+        line-height: 25px;
+        /* 83.333% */
       }
     }
-    & > div:nth-child(2) {
+
+    &>div:nth-child(2) {
       margin-top: 49px;
       display: flex;
       justify-content: center;
       gap: 20px;
+
       a {
         cursor: pointer;
         display: flex;
@@ -4132,6 +4261,7 @@ font-family: Poppins, sans-serif;
         height: 82px;
         border-radius: 50%;
         border: 1px solid #4570b6;
+
         svg {
           width: 30px;
         }
@@ -4152,14 +4282,14 @@ font-family: Poppins, sans-serif;
 @media screen and (min-width: 1319px) {
   .icl-peculiarity {
     .icl-peculiarity-list {
-      & > .icl-peculiarity-list-item:nth-child(1) {
+      &>.icl-peculiarity-list-item:nth-child(1) {
         margin-left: 45px;
       }
     }
+
     &::after {
       content: "";
-      background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-peculiarity-bg1.avif")
-        no-repeat;
+      background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-peculiarity-bg1.avif") no-repeat;
       pointer-events: none;
       width: 660px;
       height: 502px;
@@ -4167,6 +4297,7 @@ font-family: Poppins, sans-serif;
       left: 0;
       bottom: 0;
     }
+
     .icl-peculiarity-text {
       max-width: 330px;
       margin-left: 0;
@@ -4176,7 +4307,8 @@ font-family: Poppins, sans-serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 300;
-      line-height: 35px; /* 175% */
+      line-height: 35px;
+      /* 175% */
       letter-spacing: 4px;
     }
 
@@ -4194,6 +4326,7 @@ font-family: Poppins, sans-serif;
 
 // 新css
 @media (max-width: 768px) {
+
   /* 轮播图 */
   .smile-banner {
     max-width: 1920px;
@@ -4207,17 +4340,28 @@ font-family: Poppins, sans-serif;
     display: block;
   }
 
-  .smile-banner__text-wrap {
-    max-width: 1024px;
+  .smile-banner__content {
     position: absolute;
     left: 0;
-    top: 0;
-    height: 100%;
+    bottom: 0;
     width: 100%;
   }
 
+  .smile-banner__text-wrap {
+    max-width: 1024px;
+
+  }
+
   .smile-banner__container {
-    padding: 30px;
+    padding: 0 15px;
+    display: flex;
+
+  }
+
+  .smile-banner__gift-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
   }
 
   .smile-banner__title {
@@ -4252,9 +4396,9 @@ font-family: Poppins, sans-serif;
   }
 
   .smile-banner__description {
-    display: none;
+
     color: #4b5563;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     max-width: 455px;
   }
@@ -4293,10 +4437,9 @@ font-family: Poppins, sans-serif;
   }
 
   .smile-banner__gift-link {
-    position: absolute;
-    left: 20px;
-    bottom: -71px;
-    width: 36.667vw;
+    position: relative;
+
+    width: 143px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4342,8 +4485,8 @@ font-family: Poppins, sans-serif;
     align-items: center;
     position: absolute;
     left: 50%;
-    bottom: 16px;
-    transform: translateX(-50%);
+    bottom: 0;
+    transform: translate(-50%, -5%);
   }
 
   .smile-banner__scroll-text {
@@ -4373,6 +4516,7 @@ font-family: Poppins, sans-serif;
     font-weight: 300;
     color: #0a2342;
   }
+
   .smile-banner__counter-value {
     font-size: 16px;
   }
@@ -4382,12 +4526,12 @@ font-family: Poppins, sans-serif;
     font-weight: 900;
     color: #0a2342;
   }
+
   .smile-banner__counter {
     padding: 13px 20px;
   }
 
   .smile-banner__description {
-    display: none;
     color: #4b5563;
     font-size: 20px;
     font-weight: 400;
@@ -4397,12 +4541,14 @@ font-family: Poppins, sans-serif;
 
 /* 桌面端样式 */
 @media (min-width: 768px) {
+
   /* 轮播图 */
   .smile-banner {
     // max-width: 1920px;
-    margin: 0 auto;
+    margin: 10rem auto 0 auto;
     position: relative;
     overflow: hidden;
+
     // margin-top:159px;// 159px;
   }
 
@@ -4412,12 +4558,29 @@ font-family: Poppins, sans-serif;
     display: block;
   }
 
-  .smile-banner__text-wrap {
+  .smile-banner__content {
     position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .smile-banner__text-wrap {
+    // position: absolute;
   }
 
   .smile-banner__container {
     max-width: 1024px;
+    display: flex;
+  }
+
+  .smile-banner__gift-wrap {
+    transform: translate(-60%, 10%);
+    display: flex;
+    flex-direction: column;
+    gap: 13%;
+    justify-content: center;
+    align-items: center;
   }
 
   .smile-banner__title {
@@ -4491,10 +4654,8 @@ font-family: Poppins, sans-serif;
   }
 
   .smile-banner__gift-link {
-    position: absolute;
-    left: 20px;
-    bottom: -46px;
-    width: 36.667vw;
+
+    width: 337px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4508,7 +4669,7 @@ font-family: Poppins, sans-serif;
   .smile-banner__gift-text {
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
     position: absolute;
     top: 50%;
@@ -4541,9 +4702,8 @@ font-family: Poppins, sans-serif;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    gap:24px;
+    bottom: 5%;
     left: 50%;
-    bottom: 42px;
     transform: translateX(-50%);
   }
 
@@ -4561,29 +4721,9 @@ font-family: Poppins, sans-serif;
   }
 
   /* 修复有问题的代码 */
-  .smile-banner__text-wrap {
-    left: 50%;
-    transform: translateX(-50%);
-    /* 移除有问题的min函数，使用媒体查询替代 */
-    top: 14vw;
-    height: calc(100% - 14vw);
-  }
+  .smile-banner__text-wrap {}
 
-  /* 在较大屏幕上限制最大高度 */
-  @media (min-width: 1200px) {
-    .smile-banner__text-wrap {
-      top: 168px; /* 14vw在1200px时约为168px */
-      height: calc(100% - 168px);
-      width: 50%;
-    }
-  }
 
-  @media (min-width: 1920px) {
-    .smile-banner__text-wrap {
-      top: 270px; /* 最大限制270px */
-      height: calc(100% - 270px);
-    }
-  }
 
   .smile-banner__title {
     align-items: center;
@@ -4596,12 +4736,13 @@ font-family: Poppins, sans-serif;
   /* 修复clamp函数中的单位问题 */
   .smile-banner__title-main,
   .smile-banner__title-sub {
-    font-size: 60px; 
-    text-wrap:nowrap;
+    font-size: 60px;
+    text-wrap: nowrap;
   }
 
   .smile-banner__heading {
-    font-size: 60px; /* 使用vw单位 */
+    font-size: 60px;
+    /* 使用vw单位 */
   }
 
   .smile-banner__description {
@@ -4621,25 +4762,13 @@ font-family: Poppins, sans-serif;
     font-size: 36px;
   }
 
-  .smile-banner__gift-link {
-    width: 237px;
-    left: calc(-237px / 2);
-    bottom: -40px;
-    position: absolute;
-  }
+
 
   /* 修复有问题的min函数 */
-  .smile-banner__gift-text {
-    top: 4.427vw;
-    transform: translateX(-50%);
-  }
+
 
   /* 在较大屏幕上限制最大位置 */
-  @media (min-width: 1920px) {
-    .smile-banner__gift-text {
-      top: 85px; /* 4.427vw在1920px时约为85px */
-    }
-  }
+
 
   .smile-banner__gift-text-main {
     font-size: 43px;
@@ -4662,30 +4791,14 @@ font-family: Poppins, sans-serif;
   }
 }
 
-@media (min-width: 1024px) {
-  .smile-banner__gift-link {
-    width: 250px;
-    left: calc(-250px / 2);
-    bottom: -40px;
-    position: absolute;
-  }
-}
 
-@media (min-width: 1920px) {
-  .smile-banner__gift-link {
-    width: 337px;
-    left: calc(-337px / 2);
-    bottom: -70px;
-    position: absolute;
-  }
-}
 
 // start
 
 @media (max-width: 767px) {
+
   /* 服务介绍区块样式 */
-  .about-section {
-  }
+  .about-section {}
 
   .about-section__container {
     max-width: 1200px;
@@ -4720,7 +4833,7 @@ font-family: Poppins, sans-serif;
 
   .about-section__image {
     width: 100%;
-    margin-top:-20%;
+    margin-top: -20%;
   }
 
   .about-section__image img {
@@ -4812,11 +4925,13 @@ font-family: Poppins, sans-serif;
 .benefits-section {
   max-width: 1920px;
   margin: 0 auto;
+  background-image: url('https://statichk.cmermedical.com/cmermedical/image/20260311/section-bg2.webp');
+  background-repeat: no-repeat;
 }
 
 .benefits-section__wrapper {
   position: relative;
-  
+
 }
 
 .benefits-section__background {
@@ -4826,11 +4941,9 @@ font-family: Poppins, sans-serif;
 }
 
 .benefits-section__content {
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .benefits-section__header {
@@ -4952,19 +5065,16 @@ font-family: Poppins, sans-serif;
 
 /* 桌面端样式 (768px及以上) */
 @media (min-width: 768px) {
-  .benefits-section__wrapper{
-        // height: 798px;
-        height: 580px;
-    // background: linear-gradient(96deg, #DEDBDE 60.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray 1039.304px -71px / 46.042% 110.777% no-repeat;
- background: linear-gradient(96deg, #DEDBDE 60.79%, #DEDBDE 100%);
+  .benefits-section__wrapper {
+
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
-  .benefits-section__content {
-    top: 144px;
-    left: 389px;
-    transform: none;
-    text-align: left;
-  }
+
+  .benefits-section__content {}
 
   .benefits-section__title {
     font-size: 38px;
@@ -4994,21 +5104,22 @@ font-family: Poppins, sans-serif;
     height: 74px;
     font-size: 24px;
   }
+
   .benefits-section__gift-card {
 
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-//   background: url(https://statichk.cmermedical.com/smile/smileProCare/1.gif);
-//   background-size: 100% 100%;
-}
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    //   background: url(https://statichk.cmermedical.com/smile/smileProCare/1.gif);
+    //   background-size: 100% 100%;
+  }
 
   .benefits-section__gift-card {
     aspect-ratio: 1 / 1;
-  height: 100%;
-  border: 1px solid #f5f5f7;
-  border-radius: 50%;
-  position: absolute;
+    height: 100%;
+    border: 1px solid #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
     aspect-ratio: 1 / 1;
     height: 100%;
     right: 27px;
@@ -5047,10 +5158,11 @@ font-family: Poppins, sans-serif;
 
 /* 中等屏幕调整 (992px以下) */
 @media (max-width: 768px) {
-     .benefits-section__wrapper{
-        // background: linear-gradient(179deg, #DEDBDE 30.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray bottom / 100% auto no-repeat;
+  .benefits-section__wrapper {
+    // background: linear-gradient(179deg, #DEDBDE 30.79%, rgba(216, 221, 230, 0.00) 68.1%), url(https://statichk.cmermedical.com/smile/smileProCare/20251106/g.gif) lightgray bottom / 100% auto no-repeat;
     background: #DEDBDE;
   }
+
   .benefits-section__benefit-item {
     width: 155px;
     height: 155px;
@@ -5067,22 +5179,22 @@ font-family: Poppins, sans-serif;
     top: 0;
     right: 10px;
   }
-    
+
 
 
   .benefits-section__gift-card {
-  aspect-ratio: 1 / 1;
-  height: 100%;
-  border: 1px solid #f5f5f7;
-  border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    border: 1px solid #f5f5f7;
+    border-radius: 50%;
     width: 90%;
     height: auto;
     aspect-ratio: 1 / 1;
     position: relative;
     margin-top: 50px;
     pointer-events: none;
-            margin-left: auto;
-        margin-right: AUTO;
+    margin-left: auto;
+    margin-right: AUTO;
   }
 
   .benefits-section__limited-badge {
@@ -5091,34 +5203,34 @@ font-family: Poppins, sans-serif;
     pointer-events: auto;
     position: absolute;
   }
-  
-  .benefits-section__gift-info--left{
+
+  .benefits-section__gift-info--left {
     bottom: 41%;
     left: 16px;
   }
-  .benefits-section__gift-info--right{
+
+  .benefits-section__gift-info--right {
     right: 32px;
     bottom: 28%;
   }
 
-  .benefits-section__content{
-
- 
-
+  .benefits-section__content {
     text-align: center;
-    // background: linear-gradient(180deg, #C9C8CD 0%, #DEDEDE 48.56%, #DEDCDE 100%);
+    padding: 27px 0 42px 0;
     width: 100%;
     position: relative;
-            background: #DEDBDE;
-            padding-bottom: 15px;
+    background: linear-gradient(81deg, #DEDBDE 3.15%, rgba(216, 221, 230, 0.50) 93.3%);
+
   }
 }
+
 @media (max-width: 350px) {
   .benefits-section__benefit-item {
     width: 90px;
     height: 90px;
   }
 }
+
 // end
 
 // start
@@ -5138,7 +5250,8 @@ font-family: Poppins, sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
   }
 
   .how-to-choose__description {
@@ -5147,19 +5260,23 @@ font-family: Poppins, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
+    /* 171.429% */
     margin-top: 26px;
   }
+
   .how-to-choose__description--bold {
     font-weight: 700;
   }
+
   .how-to-choose__button {
     color: #fff;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22.43px; /* 160.217% */
+    line-height: 22.43px;
+    /* 160.217% */
     border-radius: 7.477px;
     border: 0 solid #e5e7eb;
     background: #0a2342;
@@ -5189,7 +5306,7 @@ font-family: Poppins, sans-serif;
 @media (max-width: 768px) {
   .how-to-choose {
     text-align: center;
-    margin:30px 30px 0 30px;
+    margin: 30px 30px 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -5201,7 +5318,8 @@ font-family: Poppins, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
   }
 
   .how-to-choose__description {
@@ -5210,19 +5328,23 @@ font-family: Poppins, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
+    /* 171.429% */
     margin-top: 20px;
   }
+
   .how-to-choose__description--bold {
     font-weight: 700;
   }
+
   .how-to-choose__button {
     color: #fff;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22.43px; /* 160.217% */
+    line-height: 22.43px;
+    /* 160.217% */
     border-radius: 7.477px;
     border: 0 solid #e5e7eb;
     background: #0a2342;
@@ -5241,11 +5363,10 @@ font-family: Poppins, sans-serif;
   }
 
   .service-tip {
-    margin-top: 30px;
+    // margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
   }
 }
 
-// end
-</style>
+// end</style>
