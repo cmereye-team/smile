@@ -4361,7 +4361,8 @@ i {
   .smile-banner__gift-wrap {
     display: flex;
     flex-direction: column;
-    gap: 20%;
+    // gap: 20%;
+    height: 100%;
   }
 
   .smile-banner__title {
@@ -4443,6 +4444,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translate(0px, 30%);
   }
 
   .smile-banner__gift-image {
