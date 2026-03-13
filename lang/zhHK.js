@@ -182,6 +182,7 @@ module.exports = {
       title1: "致電查詢",
       title2: "線上對話",
       title3: "預約服務",
+      title4: "預約講座",
       businessHours: {
         title: "營業時間",
         weekday: "星期一至五",

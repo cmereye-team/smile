@@ -21,7 +21,7 @@
         </div>
         <div>3892 5099</div>
       </a>
-      <nuxt-link to="/booking">{{
+      <nuxt-link to="/ophthalmicInfo/AppointForm">{{
         $t("home.headers.reservationService")
       }}</nuxt-link>
       <div class="language">

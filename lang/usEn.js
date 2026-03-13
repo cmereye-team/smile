@@ -101,6 +101,7 @@
       title1: "Call Now",
       title2: "Chat Now",
       title3: "Booking",
+      title4: "Booking Seminar",
       businessHours: {
         title: "Business Hours",
         weekday: "Monday-Friday",

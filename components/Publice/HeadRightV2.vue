@@ -43,7 +43,7 @@
         <span> Whatsapp 預約 </span>
       </a>
 
-      <nuxt-link to="/booking">
+      <nuxt-link to="/ophthalmicInfo/AppointForm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="29"
