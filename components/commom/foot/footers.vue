@@ -1,5 +1,8 @@
 <template>
   <div class="footerBox">
+    <a href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3(WM-BAW01)%E4%BA%86%E8%A7%A3%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96%E6%9C%8D%E5%8B%99" target="_blank" class="whatsapp-ficon">
+      <img src="https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png" alt="">
+    </a>
     <div class="online footer mbShow">
       <div class="foot">
         <component
@@ -37,18 +40,31 @@ export default {
           img: "https://static.cmereye.com/imgs/2023/03/935a17da94382a86.png",
           title: this.$t("home.footer.title2"),
         },
-        {
-          type: "href",
-          link: "https://api.whatsapp.com/send/?phone=85269408569&text=我想(WM-BAW01)聯絡希瑪團隊了解矯視服務更多",
-          img: "https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png",
-          title: "Whatsapp",
-        },
-        {
+        // {
+        //   type: "href",
+        //   link: "https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3(WM-BAW01)%E4%BA%86%E8%A7%A3%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96%E6%9C%8D%E5%8B%99",
+        //   img: "https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png",
+        //   title: "Whatsapp",
+        // },
+        // {
+        //   type: "link",
+        //   link: "/booking",
+        //   img: "https://static.cmereye.com/imgs/2023/03/aa60fde6a44f6099.png",
+        //   title: this.$t("home.footer.title3"),
+        // },
+         {
           type: "link",
           link: "/booking",
-          img: "https://static.cmereye.com/imgs/2023/03/aa60fde6a44f6099.png",
+          img: "https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png",
           title: this.$t("home.footer.title3"),
         },
+         {
+          type: "link",
+          link: "/ophthalmicInfo/AppointForm",
+          img: "https://statichk.cmermedical.com/cmermedical/image/20260311/booking.png",
+          title: this.$t("home.footer.title4"),
+        },
+        	
       ],
     };
   },
@@ -86,6 +102,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.footerBox {
+  .whatsapp-ficon {
+    display: none;
+  }
+}
 //mb
 @media only screen and (max-width: 760px) {
   .foot {
@@ -132,6 +153,24 @@ export default {
     z-index: 102;
     padding: 0;
     width: 100vw;
+
+    .whatsapp-ficon {
+      position: absolute;
+      left: 15px;
+      bottom: 92px;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 60px;
+      background-color: #65CE5A;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 13px;
+    }
   }
   a {
     margin: 0;
