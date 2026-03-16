@@ -3789,6 +3789,8 @@ font-family: Poppins, sans-serif;
     top: 0;
     right: 0;
     left: 0;
+    background: #ffffff;
+    z-index: 102;
   }
   .d-xl-none {
     display: none;

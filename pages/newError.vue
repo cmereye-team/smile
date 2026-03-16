@@ -18,6 +18,7 @@ $color-stone-800: #292524;
   position: fixed;
   top: 0;
    background: #ffffff;
+   z-index: 102;
 }
 }
 

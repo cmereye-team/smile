@@ -546,7 +546,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-   background: #ffffff;
+  background: #ffffff;
+  z-index: 102;
 
 }
 }
