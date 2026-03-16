@@ -1167,7 +1167,7 @@ SMILE Pro 微笑激光矯視費用
 
 
     <!-- start了解更多 -->
-  <div class="w-full  mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
+  <div class="group w-full  mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
     
     <a href="/smileProCare" class=" relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8] ">
       
@@ -1193,7 +1193,7 @@ SMILE Pro 微笑激光矯視費用
         </div>
 
         <div class="relative z-10 mt-8 md:mt-0 md:ml-[72px] h-full">
-          <div class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center group  hover:bg-white">
+          <div class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center   group-hover:bg-white">
          <svg 
   xmlns="http://www.w3.org/2000/svg" 
   class="w-[44px] aspect-[1/1] md:w-[28px] group-hover:text-[#0A2342]" 
