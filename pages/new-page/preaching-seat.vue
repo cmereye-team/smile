@@ -2,9 +2,14 @@
   <div class="preaching-seat" v-loading.fullscreen.lock="fullscreenLoading">
 
     <!-- <Head /> -->
-    <HeadV2 />
 
-    <Banner class="banner-box">
+     <HeadV2 />
+
+
+    
+
+  <div class="preaching-seat-banner">
+      <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
           <!-- <p>{{ $t("appointFroms.title") }}</p>
@@ -12,6 +17,7 @@
         </div>
       </template>
     </Banner>
+  </div>
     <div class="lecture-box">
       <div class="lecture-title">
         <div>
@@ -261,7 +267,7 @@
 
       </div>
     </div>
-    <businessHours />
+    <!-- <businessHours /> -->
     <div v-show="applySuccess" class="applyDialog">
       <div class="applyDialog-wrap rounded-[1.78px] md:rounded-[5px] w-[90%] md:w-auto">
         <div class="applyDialog-person">
@@ -330,7 +336,7 @@
     </div> -->
     <!-- <Footer /> -->
      <FooterV2 />
-     
+
     <FooterMobile />
   </div>
 </template>
@@ -1002,9 +1008,13 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+  
   .preaching-seat {
+    .banner-box{
+      margin-top: 166px !important;
+    }
     .header-top a:nth-child(2) {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -1148,6 +1158,18 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+  .head-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 102;
+
+}
+  .preaching-seat-banner {
+    // margin-top: 166px;
+  }
   .businessHours {
     margin-top: 30px;
   }
@@ -1238,6 +1260,8 @@ export default {
     max-width: 1270px;
     display: flex;
     justify-content: center;
+    
+    
   }
 
   .banner-img {
