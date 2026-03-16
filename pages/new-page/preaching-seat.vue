@@ -1,7 +1,9 @@
 <template>
   <div class="preaching-seat" v-loading.fullscreen.lock="fullscreenLoading">
 
-    <Head />
+    <!-- <Head /> -->
+    <HeadV2 />
+
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -84,8 +86,8 @@
               <el-form ref="form" class="form0" :model="form" label-width="150px" size="medium">
                 <div class="lecture-form__service-wrap">
                   <el-form-item :label="$t('appointFroms.service')">
-                    <el-select v-model="serviceVal" :placeholder="$t('appointFroms.sectionPlace')" @change="handleServiceChange"
-                      clearable>
+                    <el-select v-model="serviceVal" :placeholder="$t('appointFroms.sectionPlace')"
+                      @change="handleServiceChange" clearable>
                       <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
                       value="smilerProTsui"
@@ -114,21 +116,23 @@
                     </el-select>
                   </el-form-item>
                   <el-form-item :label="$t('appointFroms.title4')">
-                    <el-select v-model="addressVal" :placeholder="$t('appointFroms.sectionPlace')" @change="changeLocation"
-                      clearable>
+                    <el-select v-model="addressVal" :placeholder="$t('appointFroms.sectionPlace')"
+                      @change="changeLocation" clearable>
                       <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
                       value="smilerProTsui"
                     ></el-option> -->
                       <!-- Smile Pro 講座-旺角 -->
-                      <el-option :label="$t('appointFroms.content1.title1')" value="1" v-if="serviceVal != '2'"></el-option>
+                      <el-option :label="$t('appointFroms.content1.title1')" value="1"
+                        v-if="serviceVal != '2'"></el-option>
                       <!-- Smile Pro 講座-中環 -->
                       <!-- <el-option
                       :label="$t('appointFroms.content1.title5')"
                       value="smileProCentral"
                     ></el-option> -->
                       <!-- Smile講座-中環 -->
-                      <el-option :label="$t('appointFroms.content1.title2')" value="2" v-if="serviceVal != '3'"></el-option>
+                      <el-option :label="$t('appointFroms.content1.title2')" value="2"
+                        v-if="serviceVal != '3'"></el-option>
                       <!-- <el-option :label="$t('appointFroms.content1.title3')" value="smileMongKok"></el-option> -->
                       <!-- <el-option
                       label="老花講座-中環"
@@ -238,23 +242,23 @@
             title="希瑪眼科三月旺角預約日歷" />
         </picture>
 
-         <picture>
+        <picture>
           <source srcset="
               https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp
             " type="image/webp" />
-          <img src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp" alt="希瑪眼科三月旺角預約日歷"
-            title="希瑪眼科四月中環預約日歷" />
+          <img src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp"
+            alt="希瑪眼科三月旺角預約日歷" title="希瑪眼科四月中環預約日歷" />
         </picture>
 
         <picture>
           <source srcset="
               https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp
             " type="image/webp" />
-          <img src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp" alt="希瑪眼科三月旺角預約日歷"
-            title="希瑪眼科四月旺角預約日歷" />
+          <img src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp"
+            alt="希瑪眼科三月旺角預約日歷" title="希瑪眼科四月旺角預約日歷" />
         </picture>
 
-        
+
       </div>
     </div>
     <businessHours />
@@ -271,7 +275,8 @@
                 https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.webp 2x
               " type="image/webp" />
             <img
-              src="https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.jpg 2x" class="h-full object-cover" />
+              src="https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.jpg 2x"
+              class="h-full object-cover" />
           </picture>
         </div>
         <div class="applyDialog-main relative text-center py-4 md:px-12 flex justify-center items-center">
@@ -323,13 +328,17 @@
         <div @click="isOpenDialog(1)"><i></i><i></i></div>
       </div>
     </div> -->
-    <Footer />
+    <!-- <Footer /> -->
+     <FooterV2 />
+     
     <FooterMobile />
   </div>
 </template>
 <script>
 import Head from "@/components/Publice/Head.vue";
+import HeadV2 from "@/components/Publice/HeadeV2.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
+import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
@@ -342,6 +351,8 @@ export default {
     FooterMobile,
     Banner,
     H2Tag,
+    HeadV2,
+    FooterV2,
   },
   data() {
     return {
@@ -515,8 +526,8 @@ export default {
 
       console.log(this.serviceVal, this.addressVal, "changeLocation");
       // 当 serviceVal 和 addressVal 都不为空时，拼接它们并赋值给 form1.address
-      
-      
+
+
       if (this.serviceVal && this.addressVal) {
         // Smile Pro 講座-旺角
         if (this.serviceVal == 1 && this.addressVal == 1) {
@@ -972,49 +983,16 @@ export default {
 </script>
 
 <style lang="scss">
-// /* 修改下拉選單樣式 */
-// .el-select-dropdown__item {
-//   height: auto !important;
-//   line-height: 1.5 !important;
-//   padding: 10px 15px !important;
-//   border-bottom: 1px solid #f0f0f0;
-// }
+.el-select-dropdown__item {
 
-// .el-select-dropdown__item:last-child {
-//   border-bottom: none;
-// }
+  height: 50px;
+  line-height: 50px;
 
-// /* 選中狀態 */
-//  .el-select-dropdown__item.selected {
-//   font-weight: bold;
-//   color: #409EFF;
-// }
-
-// /* 懸停效果 */
-//  .el-select-dropdown__item:hover {
-//   background-color: #f5f7fa;
-// }
-
-
-// .lecture-form__service-wrap .el-popper .popper__arrow,
-// .el-popper .popper__arrow::after {
-//   display: none;
-// }
-// .el-popper .popper__arrow, .el-popper .popper__arrow::after{
-//   display: none;
-// }
-// .el-popper[x-placement^=bottom]{
-//   margin-top: -8px;
-// }
-.el-select-dropdown__item{
-
-    height: 50px;
-    line-height: 50px;
-  
 }
-.el-select-dropdown__list{
+
+.el-select-dropdown__list {
   padding: 0;
-  
+
   // border-left: 2px solid #4570b6;
   // border-right: 2px solid #4570b6;
   // border-bottom: 2px solid #4570b6;
@@ -1022,16 +1000,28 @@ export default {
   // z-index: 9;
   // box-shadow: none;
 }
-@media screen and (max-width: 768px) {
-  .el-select-dropdown__list{
-   padding: 0;
+
+@media screen and (min-width: 768px) {
+  .preaching-seat {
+    .header-top a:nth-child(2) {
+      display: none;
+    }
   }
-  .el-scrollbar__wrap{
+
+}
+
+@media screen and (max-width: 768px) {
+  .el-select-dropdown__list {
+    padding: 0;
+  }
+
+  .el-scrollbar__wrap {
     margin-bottom: 0 !important;
     overflow: auto;
   }
-  
+
 }
+
 // .el-select-dropdown{
 //   border: none;
 //   box-shadow: none;
@@ -1158,9 +1148,10 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
-  .businessHours{
+  .businessHours {
     margin-top: 30px;
   }
+
   .applyDialog {
     &-main {
       background-position: bottom right;
@@ -1322,14 +1313,15 @@ export default {
     }
   }
 
-  .lectureCalendar{
+  .lectureCalendar {
     color: #4570B6;
-font-family: "Noto Sans TC";
-font-size: 30px;
-font-style: normal;
-font-weight: 900;
-line-height: 39px; /* 130% */
-margin: 52px 0 0 0;
+    font-family: "Noto Sans TC";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 39px;
+    /* 130% */
+    margin: 52px 0 0 0;
 
   }
 
@@ -1503,17 +1495,20 @@ margin: 52px 0 0 0;
     padding: 10px 0 10px 23px;
     height: 50px;
   }
- .form0{
- :deep(.el-form-item:first-of-type .el-input__inner) {
-    text-align: center;
+
+  .form0 {
+    :deep(.el-form-item:first-of-type .el-input__inner) {
+      text-align: center;
+    }
+
+    :deep(.el-form-item:nth-of-type(2) .el-input__inner) {
+      text-align: center;
+    }
+
+    :deep(.el-form-item:nth-of-type(3) .el-input__inner) {
+      text-align: center;
+    }
   }
-  :deep(.el-form-item:nth-of-type(2) .el-input__inner) {
-  text-align: center;
-} 
-:deep(.el-form-item:nth-of-type(3) .el-input__inner) {
-  text-align: center;
-} 
- }
 
 
   :deep(.el-form-item__content) {
@@ -1521,7 +1516,7 @@ margin: 52px 0 0 0;
   }
 
   :deep(.form1) {
-   
+
     &>div:last-child {
       display: flex;
       justify-content: center;
@@ -1530,9 +1525,9 @@ margin: 52px 0 0 0;
         padding-left: 50px;
       }
 
-      
+
     }
-  
+
   }
 
 
@@ -1556,7 +1551,7 @@ margin: 52px 0 0 0;
     box-shadow: 0px 0px 8px 6px #d5d5d5f7;
   }
 
- .el-select-dropdown__item {
+  .el-select-dropdown__item {
     text-align: center;
   }
 }
@@ -1565,7 +1560,7 @@ margin: 52px 0 0 0;
   .lecture-box {
     // transform: translateY(-372px);
   }
-  
+
 
   .lecture-title {
     &>div {
@@ -1581,21 +1576,23 @@ margin: 52px 0 0 0;
 }
 
 @media screen and (max-width: 767px) {
-  .lectureCalendar{
+  .lectureCalendar {
     color: #4570B6;
-font-family: "Noto Sans TC";
-font-size: 20px;
-font-style: normal;
-font-weight: 900;
-line-height: 39px; /* 195% */
-margin:10px 0;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 39px;
+    /* 195% */
+    margin: 10px 0;
   }
+
   .Banner {
     position: relative;
     z-index: 2;
   }
 
- 
+
 
 
   .Banner .banner-text-default p:nth-child(1) {
@@ -1795,9 +1792,9 @@ margin:10px 0;
           /* 208.333% */
           letter-spacing: 0.6px;
           gap: 20px;
-        display: flex;
-        flex-direction: column;
-        margin: 20px 10px;
+          display: flex;
+          flex-direction: column;
+          margin: 20px 10px;
 
           // & > p:nth-child(2) {
           //   padding: 0 40px;
@@ -1834,7 +1831,7 @@ margin:10px 0;
     margin-top: 20px;
   }
 
- 
+
 
   :deep(.el-form-item__label) {
     width: 30.76vw !important;
@@ -1857,7 +1854,7 @@ margin:10px 0;
     padding: 0;
   }
 
- 
+
 
   :deep(.el-picker-panel__icon-btn) {
     font-size: 24px !important;
@@ -1868,17 +1865,20 @@ margin:10px 0;
     width: 100%;
     padding: 0 5.6vw;
   }
-   .form0 {
- :deep(.el-form-item:first-of-type .el-input__inner) {
-    text-align: center;
+
+  .form0 {
+    :deep(.el-form-item:first-of-type .el-input__inner) {
+      text-align: center;
+    }
+
+    :deep(.el-form-item:nth-of-type(2) .el-input__inner) {
+      text-align: center;
+    }
+
+    :deep(.el-form-item:nth-of-type(3) .el-input__inner) {
+      text-align: center;
+    }
   }
-  :deep(.el-form-item:nth-of-type(2) .el-input__inner) {
-  text-align: center;
-} 
- :deep(.el-form-item:nth-of-type(3) .el-input__inner) {
-  text-align: center;
-} 
- }
 
   :deep(.el-input__inner) {
     border-radius: 0px;
