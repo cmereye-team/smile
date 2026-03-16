@@ -1169,7 +1169,7 @@ SMILE Pro 微笑激光矯視費用
     <!-- start了解更多 -->
   <div class="w-full  mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
     
-    <a href="/smileProCare" class="group relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8] ">
+    <a href="/smileProCare" class=" relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8] ">
       
       <picture>
         <source media="(min-width: 768px)" srcset="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-pc.webp">
@@ -1184,7 +1184,7 @@ SMILE Pro 微笑激光矯視費用
     
 
 
-        <div class="relative z-10 text-white font-avant-garde text-3xl font-bold not-italic leading-[44.25px]">
+        <div class="relative z-10 text-white font-avant-garde text-3xl font-bold not-italic leading-[44.25px] ">
           <p class="">想了解 </p>
           <p>
            SMILE Pro 同 <br class="block md:hidden">SMILE Pro Care <br class=""/>
@@ -1193,17 +1193,17 @@ SMILE Pro 微笑激光矯視費用
         </div>
 
         <div class="relative z-10 mt-8 md:mt-0 md:ml-[72px] h-full">
-          <div class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center">
+          <div class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center group  hover:bg-white">
          <svg 
   xmlns="http://www.w3.org/2000/svg" 
-  class="w-[44px] aspect-[1/1] md:w-[28px]" 
+  class="w-[44px] aspect-[1/1] md:w-[28px] group-hover:text-[#0A2342]" 
   viewBox="0 0 44 44"
   fill="none"
 >
-  <path d="M2.5 40.8844L39.6998 3.68457" stroke="white" stroke-width="5" stroke-linecap="round"/>
-  <path d="M7.92065 2.5H40.968V34.458" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <path d="M2.5 40.8844L39.6998 3.68457"  class="stroke-white group-hover:stroke-[#0A2342]" stroke-width="5" stroke-linecap="round"/>
+  <path d="M7.92065 2.5H40.968V34.458" class="stroke-white group-hover:stroke-[#0A2342]" stroke-width="5" stroke-linecap="round"/>
 </svg>
-            <span class="text-white text-center  text-[35px] font-black not-italic leading-[25px] mt-6">了解更多</span>
+            <span class="text-white text-center  text-[35px] font-black not-italic leading-[25px] mt-6 group-hover:text-[#0A2342]">了解更多</span>
           </div>
         </div>
 

@@ -61,7 +61,7 @@ export default {
          {
           type: "link",
           link: "/ophthalmicInfo/AppointForm",
-          img: "https://statichk.cmermedical.com/cmermedical/image/20260311/booking.png",
+          img: "https://statichk.cmermedical.com/cmermedical/image/20260311/booking.svg",
           title: this.$t("home.footer.title4"),
         },
         	
@@ -113,7 +113,7 @@ export default {
     width: 100%;
     display: flex;
     height: 102px;
-    background: #4570b6;
+    background: #4F6FB1;
     justify-content: center;
     align-items: center;
     .box {
