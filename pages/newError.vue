@@ -17,6 +17,7 @@ $color-stone-800: #292524;
    .head-bg{
   position: fixed;
   top: 0;
+   background: #ffffff;
 }
 }
 

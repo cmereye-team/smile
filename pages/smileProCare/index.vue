@@ -3877,6 +3877,7 @@ i {
     top: 0;
     right: 0;
     left: 0;
+     background: #ffffff;
   }
 
   .d-xl-none {
