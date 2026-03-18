@@ -295,7 +295,7 @@ export default {
 
   margin-bottom: 20px;
   border-radius: 8px;
-  overflow: hidden;
+//   overflow: hidden;
 
 }
 
@@ -416,6 +416,9 @@ export default {
   .lbv-swiper-button-prev::after,
   .lbv-swiper-button-next::after {
     font-size: 16px;
+  }
+  .lbv-slide {
+    padding: 20px 15px;
   }
 }
 

@@ -1786,7 +1786,7 @@ i {
         margin-top: clamp(28px, 2.92vw, 56px);
 
         .visionBattle-Box-list-item {
-          height: clamp(433px, 45.1vw, 866px);
+          height: clamp(433px, 45.1vw, 566px);
           padding: 0 clamp(70px, 1.67vw, 80px);
           h3 {
             padding-top: clamp(7px, 0.73vw, 14px);
@@ -2873,7 +2873,7 @@ Blended Vision <br>
                   src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
                   alt=""
                 />
-                <span>有不同人工晶體可供選擇，包括多焦距人工<br />晶體、單焦距人工晶體、散光多焦距人工晶體等</span>
+                <span>有不同人工晶體可供選擇，包括多焦距人工<br />晶體、單焦距人工晶體、散光多焦距人工<br class="hidden md:block">晶體等</span>
               </p>
               
             </div>
