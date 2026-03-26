@@ -1,4 +1,4 @@
-<style >
+<style>
 body {
   overflow-x: hidden;
 }
@@ -1304,7 +1304,7 @@ i {
   }
 
   .latestNews {
-        margin-top: 40px;
+    margin-top: 40px;
     margin-bottom: 40px;
     background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-newdongtai-mobile.jpg")
       no-repeat;
@@ -2627,7 +2627,6 @@ i {
           border-radius: 50%;
 
           p {
-         
             color: #6d6e71;
             text-align: justify;
             font-family: "Noto Sans TC";
@@ -2739,7 +2738,7 @@ i {
           font-size: 20px;
           font-style: normal;
           font-weight: 300;
-          line-height: 1.75; 
+          line-height: 1.75;
           letter-spacing: 6px;
         }
       }
@@ -3577,7 +3576,7 @@ i {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-  
+
       .latestNews-title {
         color: #c13550;
         font-family: "Poppins", sans-serif;
@@ -3918,19 +3917,25 @@ i {
         <div>
           <div class="flex items-center icl-WhatChoose-content-two-title">
             <h4>{{ $t("Correct.newIcl.section2.two.title") }}</h4>
-            <span class="text-base lg:text-2xl bg-primary text-white font-bold ml-2 lg:ml-4 p-1 lg:p-2">NEW!</span>
+            <span
+              class="text-base lg:text-2xl bg-primary text-white font-bold ml-2 lg:ml-4 p-1 lg:p-2"
+              >NEW!</span
+            >
           </div>
           <div>
             <p>
-            {{ $t("Correct.newIcl.section2.two.text1") }}
-          </p>
+              {{ $t("Correct.newIcl.section2.two.text1") }}
+            </p>
           </div>
         </div>
 
         <div>
           <div class="flex items-center icl-WhatChoose-content-two-title">
             <h4>{{ $t("Correct.newIcl.section2.three.title") }}</h4>
-            <span class="text-base lg:text-2xl bg-primary text-white font-bold ml-2 lg:ml-4 p-1 lg:p-2">NEW!</span>
+            <span
+              class="text-base lg:text-2xl bg-primary text-white font-bold ml-2 lg:ml-4 p-1 lg:p-2"
+              >NEW!</span
+            >
           </div>
           <p>
             {{ $t("Correct.newIcl.section2.three.text1") }}
@@ -3967,102 +3972,156 @@ i {
       </a>
     </section>
 
-
-    
-
     <!-- start  ICL植入式隱形眼鏡費用-->
-<div class="bg-[#F6FAFD] py-8 px-2  md:px-0 md:pb-32 md:pt-24 mb-8 md:mb-22">
-<div class="w-full  flex flex-col items-center mx-auto ">
-    
-    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
-  ICL植入式隱形眼鏡費用
-    </h2>
+    <div class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 md:mb-22">
+      <div class="w-full flex flex-col items-center mx-auto">
+        <h2
+          class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
+        >
+          ICL植入式隱形眼鏡費用
+        </h2>
 
-    <div class="w-full">
-      <div class="relative mx-auto bg-[#D4E4FF] rounded-3xl md:rounded-[2rem] p-5 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-[900px]">
-        
-        <div class="flex items-center gap-3 md:gap-5 ">
-          <div class="">
-           <svg xmlns="http://www.w3.org/2000/svg"class="w-[38px] h-[35px] md:w-[82px] md:h-[82px]" viewBox="0 0 82 82" fill="none">
-  <g clip-path="url(#clip0_16451_1152)">
-    <path d="M39.8793 62.7031C41.1987 62.7031 42.464 62.179 43.397 61.2461C44.3299 60.3132 44.854 59.0478 44.854 57.7285C44.854 56.4091 44.3299 55.1438 43.397 54.2109C42.464 53.2779 41.1987 52.7538 39.8793 52.7538C38.56 52.7538 37.2946 53.2779 36.3617 54.2109C35.4288 55.1438 34.9047 56.4091 34.9047 57.7285C34.9047 59.0478 35.4288 60.3132 36.3617 61.2461C37.2946 62.179 38.56 62.7031 39.8793 62.7031ZM20.3497 62.7031C21.669 62.7031 22.9344 62.179 23.8673 61.2461C24.8002 60.3132 25.3243 59.0478 25.3243 57.7285C25.3243 56.4091 24.8002 55.1438 23.8673 54.2109C22.9344 53.2779 21.669 52.7538 20.3497 52.7538C19.0303 52.7538 17.765 53.2779 16.832 54.2109C15.8991 55.1438 15.375 56.4091 15.375 57.7285C15.375 59.0478 15.8991 60.3132 16.832 61.2461C17.765 62.179 19.0303 62.7031 20.3497 62.7031ZM59.8873 47.0821C61.2067 47.0821 62.472 46.558 63.405 45.6251C64.3379 44.6922 64.862 43.4268 64.862 42.1075C64.862 40.7881 64.3379 39.5228 63.405 38.5899C62.472 37.6569 61.2067 37.1328 59.8873 37.1328C58.568 37.1328 57.3026 37.6569 56.3697 38.5899C55.4368 39.5228 54.9127 40.7881 54.9127 42.1075C54.9127 43.4268 55.4368 44.6922 56.3697 45.6251C57.3026 46.558 58.568 47.0821 59.8873 47.0821ZM39.8793 47.0821C41.1987 47.0821 42.464 46.558 43.397 45.6251C44.3299 44.6922 44.854 43.4268 44.854 42.1075C44.854 40.7881 44.3299 39.5228 43.397 38.5899C42.464 37.6569 41.1987 37.1328 39.8793 37.1328C38.56 37.1328 37.2946 37.6569 36.3617 38.5899C35.4288 39.5228 34.9047 40.7881 34.9047 42.1075C34.9047 43.4268 35.4288 44.6922 36.3617 45.6251C37.2946 46.558 38.56 47.0821 39.8793 47.0821ZM20.3497 47.0821C21.669 47.0821 22.9344 46.558 23.8673 45.6251C24.8002 44.6922 25.3243 43.4268 25.3243 42.1075C25.3243 40.7881 24.8002 39.5228 23.8673 38.5899C22.9344 37.6569 21.669 37.1328 20.3497 37.1328C19.0303 37.1328 17.765 37.6569 16.832 38.5899C15.8991 39.5228 15.375 40.7881 15.375 42.1075C15.375 43.4268 15.8991 44.6922 16.832 45.6251C17.765 46.558 19.0303 47.0821 20.3497 47.0821Z" fill="#5675B9"/>
-    <path d="M72.816 6.13609H64.042C64.0711 5.56709 63.9841 4.99812 63.7863 4.46379C63.5886 3.92946 63.2842 3.44094 62.8918 3.02793C62.4993 2.61491 62.027 2.28604 61.5034 2.06132C60.9799 1.83659 60.4161 1.7207 59.8463 1.7207C59.2766 1.7207 58.7128 1.83659 58.1893 2.06132C57.6657 2.28604 57.1933 2.61491 56.8009 3.02793C56.4084 3.44094 56.1041 3.92946 55.9063 4.46379C55.7086 4.99812 55.6216 5.56709 55.6507 6.13609H26.4723C26.413 5.06281 25.9453 4.0529 25.1652 3.31342C24.3851 2.57394 23.3516 2.16094 22.2767 2.15908C21.2004 2.16074 20.1653 2.57329 19.383 3.31246C18.6006 4.05162 18.13 5.06161 18.0673 6.13609H9.184C4.11367 6.13609 0 10.2498 0 15.3201V69.0164C0 74.0731 4.11367 78.2004 9.184 78.2004H72.8297C77.8863 78.2004 82.0137 74.0867 82.0137 69.0164V15.3201C82 10.2498 77.8863 6.13609 72.816 6.13609ZM75.5083 28.1121V68.6474C75.5083 70.1644 74.2783 71.3944 72.7613 71.3944H9.102C7.585 71.3944 6.34133 70.1644 6.34133 68.6474V28.1121H75.5083ZM75.5767 15.3201V22.0578H6.42333V15.3201C6.42333 13.8031 7.65333 12.5731 9.17033 12.5731H18.0537C18.1149 13.6462 18.5843 14.6553 19.3657 15.3934C20.1471 16.1315 21.1813 16.5427 22.2562 16.5427C23.331 16.5427 24.3652 16.1315 25.1466 15.3934C25.928 14.6553 26.3974 13.6462 26.4587 12.5731H55.637C55.6079 13.1421 55.6949 13.711 55.8927 14.2454C56.0904 14.7797 56.3947 15.2682 56.7872 15.6812C57.1797 16.0943 57.652 16.4231 58.1756 16.6479C58.6991 16.8726 59.2629 16.9885 59.8327 16.9885C60.4024 16.9885 60.9662 16.8726 61.4897 16.6479C62.0133 16.4231 62.4857 16.0943 62.8781 15.6812C63.2706 15.2682 63.5749 14.7797 63.7727 14.2454C63.9704 13.711 64.0574 13.1421 64.0283 12.5731H72.8023C74.3467 12.5594 75.5767 13.8031 75.5767 15.3201Z" fill="#0C1531"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_16451_1152">
-      <rect width="82" height="82" fill="white"/>
-    </clipPath>
-  </defs>
-</svg>
+        <div class="w-full">
+          <div
+            class="relative mx-auto bg-[#D4E4FF] rounded-3xl md:rounded-[2rem] p-5 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-[900px]"
+          >
+            <div class="flex items-center gap-3 md:gap-5">
+              <div class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[38px] h-[35px] md:w-[82px] md:h-[82px]"
+                  viewBox="0 0 82 82"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_16451_1152)">
+                    <path
+                      d="M39.8793 62.7031C41.1987 62.7031 42.464 62.179 43.397 61.2461C44.3299 60.3132 44.854 59.0478 44.854 57.7285C44.854 56.4091 44.3299 55.1438 43.397 54.2109C42.464 53.2779 41.1987 52.7538 39.8793 52.7538C38.56 52.7538 37.2946 53.2779 36.3617 54.2109C35.4288 55.1438 34.9047 56.4091 34.9047 57.7285C34.9047 59.0478 35.4288 60.3132 36.3617 61.2461C37.2946 62.179 38.56 62.7031 39.8793 62.7031ZM20.3497 62.7031C21.669 62.7031 22.9344 62.179 23.8673 61.2461C24.8002 60.3132 25.3243 59.0478 25.3243 57.7285C25.3243 56.4091 24.8002 55.1438 23.8673 54.2109C22.9344 53.2779 21.669 52.7538 20.3497 52.7538C19.0303 52.7538 17.765 53.2779 16.832 54.2109C15.8991 55.1438 15.375 56.4091 15.375 57.7285C15.375 59.0478 15.8991 60.3132 16.832 61.2461C17.765 62.179 19.0303 62.7031 20.3497 62.7031ZM59.8873 47.0821C61.2067 47.0821 62.472 46.558 63.405 45.6251C64.3379 44.6922 64.862 43.4268 64.862 42.1075C64.862 40.7881 64.3379 39.5228 63.405 38.5899C62.472 37.6569 61.2067 37.1328 59.8873 37.1328C58.568 37.1328 57.3026 37.6569 56.3697 38.5899C55.4368 39.5228 54.9127 40.7881 54.9127 42.1075C54.9127 43.4268 55.4368 44.6922 56.3697 45.6251C57.3026 46.558 58.568 47.0821 59.8873 47.0821ZM39.8793 47.0821C41.1987 47.0821 42.464 46.558 43.397 45.6251C44.3299 44.6922 44.854 43.4268 44.854 42.1075C44.854 40.7881 44.3299 39.5228 43.397 38.5899C42.464 37.6569 41.1987 37.1328 39.8793 37.1328C38.56 37.1328 37.2946 37.6569 36.3617 38.5899C35.4288 39.5228 34.9047 40.7881 34.9047 42.1075C34.9047 43.4268 35.4288 44.6922 36.3617 45.6251C37.2946 46.558 38.56 47.0821 39.8793 47.0821ZM20.3497 47.0821C21.669 47.0821 22.9344 46.558 23.8673 45.6251C24.8002 44.6922 25.3243 43.4268 25.3243 42.1075C25.3243 40.7881 24.8002 39.5228 23.8673 38.5899C22.9344 37.6569 21.669 37.1328 20.3497 37.1328C19.0303 37.1328 17.765 37.6569 16.832 38.5899C15.8991 39.5228 15.375 40.7881 15.375 42.1075C15.375 43.4268 15.8991 44.6922 16.832 45.6251C17.765 46.558 19.0303 47.0821 20.3497 47.0821Z"
+                      fill="#5675B9"
+                    />
+                    <path
+                      d="M72.816 6.13609H64.042C64.0711 5.56709 63.9841 4.99812 63.7863 4.46379C63.5886 3.92946 63.2842 3.44094 62.8918 3.02793C62.4993 2.61491 62.027 2.28604 61.5034 2.06132C60.9799 1.83659 60.4161 1.7207 59.8463 1.7207C59.2766 1.7207 58.7128 1.83659 58.1893 2.06132C57.6657 2.28604 57.1933 2.61491 56.8009 3.02793C56.4084 3.44094 56.1041 3.92946 55.9063 4.46379C55.7086 4.99812 55.6216 5.56709 55.6507 6.13609H26.4723C26.413 5.06281 25.9453 4.0529 25.1652 3.31342C24.3851 2.57394 23.3516 2.16094 22.2767 2.15908C21.2004 2.16074 20.1653 2.57329 19.383 3.31246C18.6006 4.05162 18.13 5.06161 18.0673 6.13609H9.184C4.11367 6.13609 0 10.2498 0 15.3201V69.0164C0 74.0731 4.11367 78.2004 9.184 78.2004H72.8297C77.8863 78.2004 82.0137 74.0867 82.0137 69.0164V15.3201C82 10.2498 77.8863 6.13609 72.816 6.13609ZM75.5083 28.1121V68.6474C75.5083 70.1644 74.2783 71.3944 72.7613 71.3944H9.102C7.585 71.3944 6.34133 70.1644 6.34133 68.6474V28.1121H75.5083ZM75.5767 15.3201V22.0578H6.42333V15.3201C6.42333 13.8031 7.65333 12.5731 9.17033 12.5731H18.0537C18.1149 13.6462 18.5843 14.6553 19.3657 15.3934C20.1471 16.1315 21.1813 16.5427 22.2562 16.5427C23.331 16.5427 24.3652 16.1315 25.1466 15.3934C25.928 14.6553 26.3974 13.6462 26.4587 12.5731H55.637C55.6079 13.1421 55.6949 13.711 55.8927 14.2454C56.0904 14.7797 56.3947 15.2682 56.7872 15.6812C57.1797 16.0943 57.652 16.4231 58.1756 16.6479C58.6991 16.8726 59.2629 16.9885 59.8327 16.9885C60.4024 16.9885 60.9662 16.8726 61.4897 16.6479C62.0133 16.4231 62.4857 16.0943 62.8781 15.6812C63.2706 15.2682 63.5749 14.7797 63.7727 14.2454C63.9704 13.711 64.0574 13.1421 64.0283 12.5731H72.8023C74.3467 12.5594 75.5767 13.8031 75.5767 15.3201Z"
+                      fill="#0C1531"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_16451_1152">
+                      <rect width="82" height="82" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span
+                class="text-[#6D6E71] text-2xl md:text-3xl font-bold md:tracking-[10px]"
+                >網上預約專享</span
+              >
+            </div>
+
+            <span class="bg-[#4570B6] w-1 h-[81px] hidden md:block"></span>
+
+            <div class="py-2 md:px-8 md:py-3 transform md:-translate-x-4">
+              <span
+                class="text-3xl md:text-3xl font-black text-[#4570B6] md:tracking-[10px]"
+              >
+                免費升級V5鏡片
+              </span>
+            </div>
+
+            <div
+              class="absolute -right-2 -top-7 md:-right-20 md:-top-20 bg-[#F59E0B] w-[97px] h-[97px] md:w-[173px] md:h-[173px] rounded-full flex flex-col items-center justify-center text-white font-bold leading-tight z-10"
+            >
+              <span class="text-2xl md:text-5xl">不設 </span>
+              <span class="text-2xl md:text-5xl">限額</span>
+            </div>
           </div>
-          <span class="text-[#6D6E71] text-2xl md:text-3xl font-bold md:tracking-[10px]">網上預約專享</span>
-        </div>
 
-        <span class="bg-[#4570B6] w-1 h-[81px] hidden md:block"></span>
-        
-        <div class=" py-2 md:px-8 md:py-3 transform md:-translate-x-4">
-          <span class="text-3xl md:text-3xl font-black  text-[#4570B6] md:tracking-[10px]">
-           免費升級V5鏡片
-          </span>
-        </div>
+          <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+            <div
+              class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                ICL植入式隱形眼鏡
+                <br />
+                <span class="">(不帶散光)</span>
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+              >
+                <span class="text-2xl md:text-5xl"> 港幣</span
+                ><span class="text-2xl md:text-6xl">$64,000</span>
+              </div>
+            </div>
 
-        <div class="absolute -right-2 -top-7 md:-right-20 md:-top-20 bg-[#F59E0B] w-[97px] h-[97px] md:w-[173px] md:h-[173px] rounded-full flex flex-col items-center justify-center text-white font-bold leading-tight  z-10">
-          <span class="text-2xl md:text-5xl">不設
-</span>
-          <span class="text-2xl md:text-5xl">限額</span>
+            <div
+              class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                ICL植入式隱形眼鏡
+                <br />
+                <span class="">(帶散光)</span>
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+              >
+                <span class="text-2xl md:text-5xl">港幣</span
+                ><span class="text-2xl md:text-6xl">$68,000</span>
+              </div>
+            </div>
+
+            <div
+              class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                術前檢查費用
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+              >
+                <span class="text-2xl md:text-5xl">港幣</span
+                ><span class="text-2xl md:text-6xl">$500</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 md:mt-12 flex flex-col items-center">
+            <a
+              href="/fee#table1"
+              class="md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3"
+            >
+              查看矯視費用詳情
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]"
+                viewBox="0 0 34 34"
+                fill="none"
+              >
+                <path
+                  d="M3.18018 30.3632L29.8334 3.70996"
+                  stroke="white"
+                  stroke-width="6.36042"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M7.06396 2.8623H30.742V25.7598"
+                  stroke="white"
+                  stroke-width="5.72438"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+
+            <div
+              class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base md:text-2xl leading-relaxed"
+            >
+              <p class="">此為香港價錢，雙眼價錢</p>
+              <p>
+                矯視費用已包括術前檢查費用港幣$500
+                (若沒有預約進行矯視，需另外繳付術前檢查費用)
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-            ICL植入式隱形眼鏡
-<br/>
-            <span class="">(不帶散光)</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-           <span class="text-2xl md:text-5xl"> 港幣</span><span class="text-2xl md:text-6xl">$64,000</span>
-          </div>
-        </div>
-
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-          ICL植入式隱形眼鏡
-<br/>
-            <span class="">(帶散光)</span>
-          </div>
-          <div class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform">
-            <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-6xl">$68,000</span>
-          </div>
-        </div>
-
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-            <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-6xl">$500</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-8 md:mt-12 flex flex-col items-center">
-        <a href="/fee#table1" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
-          查看矯視費用詳情
-          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
-  <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
-  <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
-</svg>
-        </a>
-
-        
-        <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
-          <p class="">此為香港價錢，雙眼價錢</p>
-          <p>矯視費用已包括術前檢查費用港幣$500 (若沒有預約進行矯視，需另外繳付術前檢查費用)</p>
-        </div>
-      </div>
-
     </div>
-  </div>
-  </div>
 
     <!-- end ICL植入式隱形眼鏡費用 -->
 
@@ -4308,8 +4367,6 @@ i {
       </a>
     </section>
 
-
-
     <!-- ICL植入式隱形眼鏡真實個案分享 -->
     <!-- <section class="CaseSharing">
       <div class="new-container CaseSharing-Box">
@@ -4498,8 +4555,6 @@ i {
 
     </section> -->
     <UserShare :user-share="ShareData"></UserShare>
-
-
 
     <!-- 最新动态 -->
     <section class="latestNews">
@@ -5104,8 +5159,24 @@ export default {
           ],
         },
       ],
-    // 用家分享
-    ShareData: [
+      // 用家分享
+      ShareData: [
+        {
+          type: "ICL",
+          href: "https://youtu.be/NtULZl7qUEg",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-027-v1.avif",
+          text: ["真實用家共同見證", "「真實」自己"],
+          nameEn: "",
+          nameCn: "群星",
+        },
+        {
+          type: "ICL",
+          href: "https://youtu.be/M4-FA9U3VPo",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl-012-v1.avif",
+          text: ["全天候高清視力", "我靠ICL!"],
+          nameEn: "Celina",
+          nameCn: "陳楨怡",
+        },
         {
           type: "ICL",
           href: "https://youtu.be/D91jSXnpeNc",
@@ -5131,7 +5202,7 @@ export default {
           nameCn: "王頌茵",
         },
 
-                {
+        {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=T9g2qoFI9nU",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl1.avif",
@@ -5143,13 +5214,13 @@ export default {
         {
           type: "ICL",
           href: "https://youtu.be/I2sl4GWqg1w",
-          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif", 
+          img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem4.avif",
           text: ["眼鏡由「必須品」", "變「奢侈品」"],
           nameEn: " ",
           nameCn: "麥沛東",
         },
 
-                           {
+        {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=2t7JjTab4xA",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl2.avif",
@@ -5158,8 +5229,7 @@ export default {
           nameCn: "林奕匡",
         },
 
-
-                                   {
+        {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=5ihrzFvOy38",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl3.avif",
@@ -5167,7 +5237,7 @@ export default {
           nameEn: "Serene Lim ",
           nameCn: "林宣妤",
         },
-                                           {
+        {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=CEbbKFeFdnc",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl4.avif",
@@ -5176,7 +5246,7 @@ export default {
           nameCn: "吳業坤",
         },
 
-         {
+        {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=e-c_qRuvWTA",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl5.avif",
@@ -5184,14 +5254,7 @@ export default {
           nameEn: "Tiffany Poon",
           nameCn: "",
         },
-
-
-
-        
-
-
       ],
-
 
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-icl",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-icl",
@@ -5289,4 +5352,3 @@ export default {
   },
 };
 </script>
-
