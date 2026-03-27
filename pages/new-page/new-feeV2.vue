@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-02-12 11:07:21
+ * @LastEditTime: 2026-03-27 09:45:22
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -15,8 +15,8 @@
     <section class="fee-Banner">
       <div class="fee-Banner-Box new-container">
         <div class="fee-Banner-Box-Title">
-          <h2>PRICE</h2>
-          <span>收費詳情</span>
+          <span>PRICE</span>
+          <h1>收費詳情</h1>
           <p><a href="/">主頁 > </a><a href="/fee">收費詳情</a></p>
         </div>
       </div>
@@ -25,7 +25,7 @@
         <div class="fee-img-Box new-container">
           <div class="fee-img-Box-image">
             <div class="fee-img-Box-image-name">
-              <h4>希瑪微笑閃亮大使</h4>
+              <h2>希瑪微笑閃亮大使</h2>
               <p>
                 <span> MAGGIE<i>米姬</i></span>
               </p>
@@ -90,7 +90,6 @@
               </th>
             </tr>
           </thead>
-
           <tbody>
             <tr>
               <td>價錢(雙眼)</td>
@@ -100,7 +99,6 @@
               <td>港幣$19,000^</td>
               <td>港幣$19,000^</td>
             </tr>
-
             <tr>
               <td>術前檢查<br class="d-lg-block" />費用</td>
               <td>港幣$100</td>
@@ -109,7 +107,6 @@
               <td>港幣$100</td>
               <td>港幣$100</td>
             </tr>
-
             <tr>
               <td>眼睛水潤<br class="d-lg-block" />護理</td>
               <td>1次</td>
@@ -123,7 +120,6 @@
               <td>1次</td>
               <td>1次</td>
             </tr>
-
             <tr>
               <td>術後眼部<br />彩光護理</td>
               <td>1次</td>
@@ -152,7 +148,6 @@
                 />
               </td>
             </tr>
-
             <tr>
               <td>眼科專科<br />醫生檢查</td>
               <td>
@@ -186,7 +181,6 @@
                 />
               </td>
             </tr>
-
             <tr class="custom-comparison-table-tipIcon">
               <td>術後覆診</td>
               <td>
@@ -205,7 +199,6 @@
                 <span>3次<sup>#</sup></span>
               </td>
             </tr>
-
             <tr>
               <td>增進手術</td>
               <td>
@@ -239,7 +232,6 @@
                 />
               </td>
             </tr>
-
             <tr>
               <td>無限視光<br class="d-lg-block" />檢查</td>
               <td>
@@ -307,46 +299,127 @@
         </table>
       </section>
 
-      <!-- 表格二 -->
+      <!-- 老花矫视 -->
 
       <section class="smilepro-difference smilepro-difference-two" id="table2">
+        <h2 class="clear-title font-black tracking-wider text-primary">{{ $t("fee.table.clear") }}</h2>
+        <table
+          class="table table-clear custom-comparison-table new-container"
+        >
+          <thead>
+            <tr>
+              <th>此為<br class="d-lg-none" />香港價錢</th>
+              <th colspan="2" class="tablePink">
+                <h3>CMER CLEAR-Vision<br />人工晶體置換術</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="clear-head"></td>
+              <td class="clear-head bg-clear-head">不帶散光</td>
+              <td class="clear-head bg-clear-head">帶散光</td>
+            </tr>
+            <tr>
+              <td>單焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
+              <td class="bg-clear-body">港幣$25,000 - $28,000</td>
+              <td class="bg-clear-body">港幣$30,000 - $35,000</td>
+            </tr>
+            <tr>
+              <td>多焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
+              <td class="bg-clear-body">港幣$35,000 - $45,000</td>
+              <td class="bg-clear-body">港幣$43,000 - $51,000</td>
+            </tr>
+            <tr>
+              <td>術前檢查<br class="d-lg-none" />費用</td>
+              <td class="bg-clear-body" colspan="2">港幣$680</td>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          class="table custom-comparison-table new-container"
+        >
+          <thead>
+            <tr>
+              <th>此為<br class="d-lg-none" />香港價錢</th>
+              <th colspan="2" class="bg-lbv-head">
+                <h3>Presbyond LBV<br />視覺融合老花激光手術</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>價錢<br class="d-lg-none" />(雙眼)</td>
+              <td class="bg-lbv-body">港幣$58,000※</td>
+            </tr>
+            <tr>
+              <td>術前檢查<br class="d-lg-none" />費用</td>
+              <td class="bg-lbv-body">港幣$100</td>
+            </tr>
+            <tr>
+              <td>眼睛水潤<br class="d-lg-none" />護理</td>
+              <td class="bg-lbv-body">1次</td>
+            </tr>
+            <tr>
+              <td>術後眼部<br/>彩光護理</td>
+              <td class="bg-lbv-body">1次</td>
+            </tr>
+            <tr>
+              <td>眼科專科<br/>醫生檢查</td>
+              <td class="bg-lbv-body">
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt="包括"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>術後覆診</td>
+              <td class="bg-lbv-body">5次//</td>
+            </tr>
+            <tr>
+              <td>增進手術</td>
+              <td class="bg-lbv-body">
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt="包括"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>無限視光<br class="d-lg-none" />檢查</td>
+              <td class="bg-lbv-body">
+                <img
+                  src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                  alt="包括"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <table
           class="table custom-comparison-table custom-table-extro new-container"
         >
           <thead>
             <tr>
-              <th>此為<br class="d-lg-none" />香港價錢 </th>
-              <th colspan="2" class="tablePink">Clear-Vision<br />老花矯視</th>
+              <th>此為<br class="d-lg-none" />香港價錢</th>
+              <th colspan="2" class="bg-icl-head">
+                <h3>ICL Viva V6<br />植入式隱形眼鏡</h3>
+              </th>
             </tr>
           </thead>
-
           <tbody>
             <tr>
-              <td></td>
-              <td class="tablePinkZero">不帶散光</td>
-              <td class="tablePinkZero">帶散光</td>
+              <td>價錢<br class="d-lg-none" />(雙眼)</td>
+              <td class="bg-icl-body">港幣$80,00</td>
             </tr>
-
-            <tr>
-              <td>單焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-              <td>港幣$25,000 - $28,000</td>
-              <td>港幣$30,000 - $35,000</td>
-            </tr>
-
-            <tr>
-              <td>多焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-              <td>港幣$35,000 - $45,000</td>
-              <td>港幣$43,000 - $51,000</td>
-            </tr>
-
             <tr>
               <td>術前檢查<br class="d-lg-none" />費用</td>
-              <td colspan="2">港幣$680</td>
+              <td class="bg-icl-body">港幣$500</td>
             </tr>
           </tbody>
         </table>
       </section>
-
       <div class="fee-table-container">
         <a
           class="meal-btn"
@@ -387,7 +460,9 @@
             {{ $t("fee.textList.text3") }}<br />
             {{ $t("fee.textList.text3_1") }}{{ $t("fee.textList.text3_2") }}<br />
             {{ $t("fee.textList.text3_3") }}<br />
-            {{ $t("fee.textList.text3_4") }}
+            {{ $t("fee.textList.text3_4") }}<br />
+            {{ $t("fee.textList.text3_5") }}<br />
+            {{ $t("fee.textList.text3_6") }}
           </span>
           <br />
           <span>
@@ -532,8 +607,6 @@ export default {
 body {
   overflow-x: hidden;
 }
-
-
 .fee-wrap {
    height: 100vh;
   overflow-y: auto;
@@ -561,7 +634,6 @@ body {
 }
 </style>
 <style lang="scss" scoped>
-
 @media screen and (min-width: 768px) {
   :deep(.businessHours) {
     max-width: 100vw;
@@ -570,9 +642,9 @@ body {
   .fee {
     max-width: 100vw;
     margin: 0 auto;
-    :deep(h2) {
-      margin-bottom: 20px;
-    }
+    // :deep(h2) {
+    //   margin-bottom: 20px;
+    // }
   }
   :deep(.footer_new) {
     max-width: 100vw;
@@ -1689,7 +1761,7 @@ body {
       .fee-Banner-Box-Title {
         padding-left: 8.21vw;
 
-        h2 {
+        span {
           margin-bottom: 0;
           text-align: left;
           color: #4570b6;
@@ -1699,7 +1771,7 @@ body {
           font-weight: 700;
           line-height: 109.4%;
         }
-        span {
+        h1 {
           color: #4570b6;
           font-family: "Noto Sans HK";
           font-size: 6.29vw;
@@ -1747,7 +1819,7 @@ body {
           bottom: 41.79vw;
           left: 34.36vw;
 
-          h4,
+          h2,
           p {
             color: #4570b6;
             font-family: "Noto Sans HK";
@@ -1755,6 +1827,7 @@ body {
             font-style: normal;
             font-weight: 400;
             line-height: 152.349%;
+            margin-bottom: 0;
           }
           p {
             span {
@@ -1853,6 +1926,10 @@ body {
       line-height: 123.077%;
       letter-spacing: -0.65px;
       color: white;
+      h3 {
+        font-size: 13px;
+        font-weight: 700;
+      }
     }
     .custom-comparison-table-tipIcon {
       td {
@@ -2116,7 +2193,7 @@ body {
           border-bottom: none;
           height: 31px;
           td {
-            color: #4570b6;
+            // color: #4570b6;
             text-align: center;
             font-family: "Noto Sans HK";
             font-size: 14px;
@@ -2173,7 +2250,7 @@ body {
       padding-top: clamp(80px, 8.33vw, 160px);
       .fee-Banner-Box-Title {
         padding-left: clamp(39px, 4.06vw, 78px);
-        h2 {
+        span {
           margin-bottom: 0;
           text-align: left;
           color: #4570b6;
@@ -2183,7 +2260,7 @@ body {
           font-weight: 700;
           line-height: 109.4%;
         }
-        span {
+        h1 {
           color: #4570b6;
           font-family: "Noto Sans HK";
           font-size: clamp(37px, 3.85vw, 74px);
@@ -2234,7 +2311,7 @@ body {
 
           bottom: clamp(11.5px, 1.2vw, 23px);
           left: clamp(54px, 5.63vw, 108px);
-          h4,
+          h2,
           p {
             color: #4570b6;
             font-family: "Noto Sans HK";
@@ -2243,6 +2320,7 @@ body {
             font-weight: 400;
             line-height: 1.5;
             letter-spacing: clamp(1px, 0.1vw, 2px);
+            margin-bottom: 0;
           }
           p {
             font-weight: 900;
@@ -2381,6 +2459,10 @@ body {
       line-height: 130%;
       span {
         font-family: "Poppins", sans-serif;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
       }
     }
 
@@ -2631,12 +2713,12 @@ body {
 
           td {
             height: 60px;
-            color: #4570b6;
+            // color: #4570b6;
             text-align: center;
             font-family: "Noto Sans HK";
             font-size: 20px;
             font-style: normal;
-            font-weight: 700;
+            // font-weight: 700;
             line-height: 150%;
             letter-spacing: 4px;
           }
@@ -2667,6 +2749,42 @@ body {
 }
 .tablePinkZero {
   background: #fbf4ff !important;
+}
+.clear-title {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.clear-head {
+  color: #4570B6 !important;
+  height: 32px !important;
+  font-weight: 700 !important;
+}
+.bg-clear-head {
+  background-color: #F5E1FF !important;
+}
+.bg-clear-body {
+  background-color: #FBF4FF !important;
+}
+.bg-lbv-head {
+  background-color: #F89B03 !important;
+}
+.bg-lbv-body {
+  background-color: #FFF7E0 !important;
+}
+.bg-icl-head {
+  background-color: #A9DDD7 !important;
+}
+.bg-icl-body {
+  background-color: #E8FFFC !important;
+}
+@media screen and (min-width: 992px) {
+  .clear-title {
+    font-size: 30px;
+    margin-bottom: 72px;
+  }
+  .clear-head {
+    height: 60px !important;
+  }
 }
 .feeV2-Bg {
   background: linear-gradient(180deg, #f6fafd 0%, rgba(246, 250, 253, 0) 100%);
