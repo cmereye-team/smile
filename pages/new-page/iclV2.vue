@@ -3983,7 +3983,7 @@ i {
 
         <div class="w-full">
           <div
-            class="relative mx-auto bg-[#D4E4FF] rounded-3xl md:rounded-[2rem] p-5 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-[900px]"
+            class="relative mx-auto bg-[#D4E4FF] rounded-[35.768px_11.923px] md:rounded-[60px_20px;] p-5 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-[900px]"
           >
             <div class="flex items-center gap-3 md:gap-5">
               <div class="">
@@ -4011,7 +4011,7 @@ i {
                 </svg>
               </div>
               <span
-                class="text-[#6D6E71] text-2xl md:text-3xl font-bold md:tracking-[10px]"
+                class="text-[#6D6E71] text-2xl md:text-3xl text-nowrap font-bold md:tracking-[10px]"
                 >網上預約專享</span
               >
             </div>
@@ -4020,7 +4020,7 @@ i {
 
             <div class="py-2 md:px-8 md:py-3 transform md:-translate-x-4">
               <span
-                class="text-3xl md:text-3xl font-black text-[#4570B6] md:tracking-[10px]"
+                class="text-3xl md:text-5xl text-nowrap font-black text-[#4570B6] tracking-[6.228px] md:tracking-[10px]"
               >
                 免費升級V5鏡片
               </span>
@@ -4112,8 +4112,8 @@ i {
             <div
               class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base md:text-2xl leading-relaxed"
             >
-              <p class="">此為香港價錢，雙眼價錢</p>
-              <p>
+              <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
+              <p class="text-[#6D6E71]">
                 矯視費用已包括術前檢查費用港幣$500
                 (若沒有預約進行矯視，需另外繳付術前檢查費用)
               </p>

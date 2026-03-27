@@ -332,8 +332,8 @@ SMILE Pro 微笑激光矯視費用
       
 
         <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
-          <p class="">此為香港價錢，雙眼價錢</p>
-          <p>矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
+          <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
+          <p class="text-[#6D6E71]">矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
         </div>
       </div>
 
