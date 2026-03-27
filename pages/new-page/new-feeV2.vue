@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-03-27 09:45:22
+ * @LastEditTime: 2026-03-27 10:18:57
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -315,7 +315,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="clear-head-tr">
               <td class="clear-head"></td>
               <td class="clear-head bg-clear-head">不帶散光</td>
               <td class="clear-head bg-clear-head">帶散光</td>
@@ -1905,6 +1905,9 @@ body {
       position: relative;
       z-index: 2;
       height: 21.03vw;
+      &.clear-head-tr {
+        height: 32px;
+      }
     }
     .custom-comparison-table th,
     .custom-comparison-table td {
@@ -2078,7 +2081,6 @@ body {
       div {
         display: flex;
         justify-content: space-around;
-
         color: #4570b6;
         text-align: center;
         font-family: "Noto Sans HK";
@@ -2198,7 +2200,7 @@ body {
             font-family: "Noto Sans HK";
             font-size: 14px;
             font-style: normal;
-            font-weight: 700;
+            // font-weight: 700;
             line-height: 110.333%;
             letter-spacing: 2.8px;
           }
