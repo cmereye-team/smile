@@ -3976,16 +3976,16 @@ i {
     <div class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 md:mb-22">
       <div class="w-full flex flex-col items-center mx-auto">
         <h2
-          class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
+          class="text-[#4A74B8] text-xl md:text-3xl font-black mb-[40px] md:mb-10 tracking-wider text-center"
         >
           ICL植入式隱形眼鏡費用
         </h2>
 
         <div class="w-full">
           <div
-            class="relative mx-auto bg-[#D4E4FF] rounded-[35.768px_11.923px] md:rounded-[60px_20px;] p-5 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-[900px]"
+            class="relative mx-auto bg-[#D4E4FF] rounded-[35.768px_11.923px] md:rounded-[60px_20px;] py-5 px-6 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-[900px]"
           >
-            <div class="flex items-center gap-3 md:gap-5">
+            <div class="flex items-center gap-1 md:gap-5">
               <div class="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -4011,23 +4011,23 @@ i {
                 </svg>
               </div>
               <span
-                class="text-[#6D6E71] text-2xl md:text-3xl text-nowrap font-bold md:tracking-[10px]"
+                class="text-[#6D6E71] text-[25px] md:text-3xl text-nowrap font-bold tracking-[6.228px] md:tracking-[10px]"
                 >網上預約專享</span
               >
             </div>
 
             <span class="bg-[#4570B6] w-1 h-[81px] hidden md:block"></span>
 
-            <div class="py-2 md:px-8 md:py-3 transform md:-translate-x-4">
+            <div class=" md:px-8 md:py-3 transform md:-translate-x-4">
               <span
-                class="text-3xl md:text-5xl text-nowrap font-black text-[#4570B6] tracking-[6.228px] md:tracking-[10px]"
+                class="text-3xl md:text-5xl text-nowrap font-bold md:font-black text-[#4570B6] tracking-[6.228px] md:tracking-[10px]"
               >
                 免費升級V5鏡片
               </span>
             </div>
 
             <div
-              class="absolute -right-2 -top-7 md:-right-20 md:-top-20 bg-[#F59E0B] w-[97px] h-[97px] md:w-[173px] md:h-[173px] rounded-full flex flex-col items-center justify-center text-white font-bold leading-tight z-10"
+              class="absolute -right-2 -top-10 md:-right-20 md:-top-20 bg-[#F89B03;] w-[97px] h-[97px] md:w-[173px] md:h-[173px] rounded-full flex flex-col items-center justify-center text-white font-bold leading-tight z-10"
             >
               <span class="text-2xl md:text-5xl">不設 </span>
               <span class="text-2xl md:text-5xl">限額</span>

@@ -467,12 +467,46 @@ i {
                 background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mbBg.avif") no-repeat;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
+               
+
+                .CorrectionProgram-Box-hide-title {
+                    color: #4570B6;
+                    font-family: "Noto Sans TC";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 39px;
+                    /* 195% */
+                    padding-top: 26px;
+                    margin-bottom: 26px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+//                 .CorrectionProgram-Box-hide-item__bottom-btn{
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     gap: 8px;
+//                     >span{
+//                         color: #FFF;
+// text-align: justify;
+// font-family: "Noto Sans TC";
+// font-size: 20px;
+// font-style: normal;
+// font-weight: 700;
+// line-height: 35px; /* 175% */
+// letter-spacing: 1px;
+//                     }
+//                 }
+                .CorrectionProgram-Box-hide-item-container{
+                  
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 gap: 12.82vw;
-                padding: 50px 0;
+                }
 
                 &>.CorrectionProgram-Box-hide-item:nth-child(2) {
                     //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-mbItemBg2.png")
@@ -555,6 +589,26 @@ i {
                                 line-height: 6.1vw;
                                 letter-spacing: 0.62vw;
                             }
+                        }
+                    }
+
+                    .CorrectionProgram-Box-hide-item-bottom2 {
+                        padding: 20px 20px 20px 20px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        h3 {
+                            text-align: center;
+                            color: #4570b6;
+                            font-family: "Poppins", sans-serif;
+                            font-size: 5.13vw;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1;
+                            letter-spacing: 0.26vw;
                         }
                     }
 
@@ -1629,13 +1683,32 @@ i {
                 background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-pc.avif") no-repeat;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                justify-content: center;
-                align-items: start;
-                gap: clamp(30px, 3.13vw, 60px);
+           
                 width: 100vw;
-                padding: 5% 7%;
+                padding: 0% 7%;
+
+                .CorrectionProgram-Box-hide-title {
+                    color: #4570B6;
+                    font-family: "Noto Sans TC";
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 30px;
+                    padding-top: 80px;
+                    margin-bottom: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* 100% */
+                }
+                .CorrectionProgram-Box-hide-item-container{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-content: center;
+                    align-items: start;
+                    gap: clamp(30px, 3.13vw, 60px);
+                    padding-bottom: 120px;
+                }
 
                 &>.CorrectionProgram-Box-hide-item:nth-child(2) {
                     //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcItemBg2.avif")
@@ -1719,6 +1792,27 @@ i {
                                 letter-spacing: clamp(2px, 0.21vw, 4px);
                             }
                         }
+                    }
+
+                    .CorrectionProgram-Box-hide-item-bottom2 {
+                        padding: 24px 30px 24px 30px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        h3 {
+                            text-align: center;
+                            color: #4570b6;
+                            font-family: "Poppins", sans-serif;
+                            font-size: clamp(15px, 1.56vw, 30px);
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1;
+                            letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
+                        }
+
+                        // background: #fff;
                     }
 
                     .CorrectionProgram-Box-hide-item-bottom {
@@ -2784,8 +2878,11 @@ i {
         </section>
 
         <div class="CorrectionProgram" ref="correctionProgram">
+
             <div class="CorrectionProgram-Box">
+
                 <div class="CorrectionProgram-Box-show" ref="boxShow">
+
                     <img decoding="async"
                         src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-show-pc.avif"
                         alt="" loading="lazy" width="100%" height="100%" srcset="
@@ -2795,7 +2892,10 @@ i {
             " sizes=" (max-width: 992px) 100vw,1216px" />
                 </div>
                 <div class="CorrectionProgram-Box-hide">
-                    <div class="CorrectionProgram-Box-hide-item">
+                    <div class="CorrectionProgram-Box-hide-title">新老花矯視方案</div>
+
+                    <div class="CorrectionProgram-Box-hide-item-container">
+                        <div class="CorrectionProgram-Box-hide-item">
                         <div class="CorrectionProgram-Box-hide-item-top">
                             <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/image21.webp"
                                 alt="" />
@@ -2857,6 +2957,43 @@ i {
                             </p>
                         </div>
                     </div>
+
+
+                    <div class="CorrectionProgram-Box-hide-item">
+
+                        <div class="CorrectionProgram-Box-hide-item-bottom2">
+                            <h3>Monovision <br>
+                                (SMILE/SMILE Pro/LASIK/PRK)<br>
+                                單眼視力矯正術</h3>
+
+
+                        </div>
+                    </div>
+
+                    <div class="CorrectionProgram-Box-hide-item">
+
+                        <div class="CorrectionProgram-Box-hide-item-bottom2">
+                            <h3>Cataract Surgery <br>
+                                白內障手術</h3>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="CorrectionProgram-Box-hide-item">
+
+                        <div class="CorrectionProgram-Box-hide-item-bottom2">
+                            <h3>藥物方案（暫時性）</h3>
+
+
+                        </div>
+                    </div>
+                    </div>
+
+
+                 
+
                 </div>
             </div>
         </div>
@@ -2935,6 +3072,170 @@ i {
         </div>
       </div>
     </section> -->
+
+
+           <!-- start  SMILE Pro 微笑激光矯視費用-->
+<div class="bg-[#F6FAFD] py-8 px-2  md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]">
+<div class="w-full  flex flex-col items-center mx-auto ">
+    
+    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center ">
+SMILE Pro 微笑激光矯視費用
+    </h2>
+
+    <div class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl ">人工晶體費用</div>
+
+    <div class="w-full">
+   
+
+      <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+         單焦點人工晶體(單眼)
+
+<br/>
+            <span class="">不帶散光</span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row text-nowrap">
+           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
+           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
+          </div>
+        </div>
+
+       
+
+          <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+         單焦點人工晶體(單眼)
+
+<br/>
+            <span class="">不帶散光</span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row text-nowrap">
+           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
+           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
+          </div>
+        </div>
+
+        
+          <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+         單焦點人工晶體(單眼)
+
+<br/>
+            <span class="">不帶散光</span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
+           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
+           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
+          </div>
+        </div>
+
+            <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+         單焦點人工晶體(單眼)
+
+<br/>
+            <span class="">不帶散光</span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
+           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
+           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
+          </div>
+        </div>
+
+          <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+         單焦點人工晶體(單眼)
+
+<br/>
+            <span class="">不帶散光</span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
+           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
+           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
+          </div>
+        </div>
+
+          
+      </div>
+
+
+
+       <div class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5">Presbyond LBV費用</div>
+
+
+       <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+           Presbyond LBV（雙眼）
+<br/>
+            <span class=""></span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+           <span class="text-2xl md:text-5xl"> 港幣$58,000*</span>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+
+
+      <div class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5">ICL Viva V6費用</div>
+
+
+       <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+          ICL Viva V6（雙眼）
+<br/>
+            <span class=""></span>
+          </div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+           <span class="text-2xl md:text-5xl">港幣$80,000</span>
+          </div>
+        </div>
+
+       
+
+        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
+          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
+          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+            <span class="text-2xl md:text-5xl">港幣$500</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="mt-8 md:mt-12 flex flex-col items-center">
+        <a href="/fee#table1" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
+          查看矯視費用詳情
+          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
+  <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
+  <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
+</svg>
+        </a>
+
+      
+
+        <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
+          <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
+          <p class="text-[#6D6E71]">矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </div>
+  </div>
+
+    <!-- end SMILE Pro 微笑激光矯視費用 -->
+
+
+
 
         <section class="visionBattle">
             <img class="visionBattle-Bg" decoding="async"

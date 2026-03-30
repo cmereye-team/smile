@@ -350,7 +350,7 @@
           <tbody>
             <tr>
               <td>價錢<br class="d-lg-none" />(雙眼)</td>
-              <td class="bg-lbv-body">港幣$58,000※</td>
+              <td class="bg-lbv-body">港幣$58,000<sup class="text-xs ml-0.5">※</sup></td>
             </tr>
             <tr>
               <td>術前檢查<br class="d-lg-none" />費用</td>
@@ -375,7 +375,7 @@
             </tr>
             <tr>
               <td>術後覆診</td>
-              <td class="bg-lbv-body">5次//</td>
+              <td class="bg-lbv-body">5次<sup class="text-xs ml-0.5">#</sup></td>
             </tr>
             <tr>
               <td>增進手術</td>
@@ -411,7 +411,7 @@
           <tbody>
             <tr>
               <td>價錢<br class="d-lg-none" />(雙眼)</td>
-              <td class="bg-icl-body">港幣$80,00</td>
+              <td class="bg-icl-body">港幣$80,000</td>
             </tr>
             <tr>
               <td>術前檢查<br class="d-lg-none" />費用</td>
@@ -2192,8 +2192,8 @@ body {
           }
         }
         & > tr:nth-child(1) {
-          border-bottom: none;
-          height: 31px;
+          // border-bottom: none;
+          // height: 31px;
           td {
             // color: #4570b6;
             text-align: center;
@@ -2711,10 +2711,10 @@ body {
           }
         }
         & > tr:nth-child(1) {
-          border-bottom: none;
+          // border-bottom: none;
 
           td {
-            height: 60px;
+            // height: 60px;
             // color: #4570b6;
             text-align: center;
             font-family: "Noto Sans HK";
