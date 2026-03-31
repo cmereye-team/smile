@@ -467,7 +467,7 @@ i {
                 background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mbBg.avif") no-repeat;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
-               
+
 
                 .CorrectionProgram-Box-hide-title {
                     color: #4570B6;
@@ -483,29 +483,31 @@ i {
                     justify-content: center;
                     align-items: center;
                 }
-//                 .CorrectionProgram-Box-hide-item__bottom-btn{
-//                     display: flex;
-//                     justify-content: center;
-//                     align-items: center;
-//                     gap: 8px;
-//                     >span{
-//                         color: #FFF;
-// text-align: justify;
-// font-family: "Noto Sans TC";
-// font-size: 20px;
-// font-style: normal;
-// font-weight: 700;
-// line-height: 35px; /* 175% */
-// letter-spacing: 1px;
-//                     }
-//                 }
-                .CorrectionProgram-Box-hide-item-container{
-                  
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                gap: 12.82vw;
+
+                //                 .CorrectionProgram-Box-hide-item__bottom-btn{
+                //                     display: flex;
+                //                     justify-content: center;
+                //                     align-items: center;
+                //                     gap: 8px;
+                //                     >span{
+                //                         color: #FFF;
+                // text-align: justify;
+                // font-family: "Noto Sans TC";
+                // font-size: 20px;
+                // font-style: normal;
+                // font-weight: 700;
+                // line-height: 35px; /* 175% */
+                // letter-spacing: 1px;
+                //                     }
+                //                 }
+                .CorrectionProgram-Box-hide-item-container {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 12.82vw;
+                    padding-bottom: 50px;
                 }
 
                 &>.CorrectionProgram-Box-hide-item:nth-child(2) {
@@ -1683,7 +1685,7 @@ i {
                 background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-pc.avif") no-repeat;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-           
+
                 width: 100vw;
                 padding: 0% 7%;
 
@@ -1701,7 +1703,8 @@ i {
                     align-items: center;
                     /* 100% */
                 }
-                .CorrectionProgram-Box-hide-item-container{
+
+                .CorrectionProgram-Box-hide-item-container {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     justify-content: center;
@@ -2035,7 +2038,7 @@ i {
                 margin-top: clamp(28px, 2.92vw, 56px);
 
                 .visionBattle-Box-list-item {
-                    height: clamp(433px, 45.1vw, 566px);
+                    height: clamp(433px, 45.1vw, 1000px);
                     padding: 0 clamp(70px, 1.67vw, 80px);
 
                     h3 {
@@ -2896,103 +2899,104 @@ i {
 
                     <div class="CorrectionProgram-Box-hide-item-container">
                         <div class="CorrectionProgram-Box-hide-item">
-                        <div class="CorrectionProgram-Box-hide-item-top">
-                            <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/image21.webp"
-                                alt="" />
-                            <div class="CorrectionProgram-Box-hide-item-top-text">
-                                <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
-                                <p>• 39歲以上有老花</p>
-                                <p>• 未有白內障</p>
+                            <div class="CorrectionProgram-Box-hide-item-top">
+                                <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/image21.webp"
+                                    alt="" />
+                                <div class="CorrectionProgram-Box-hide-item-top-text">
+                                    <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
+                                    <p>• 39歲以上有老花</p>
+                                    <p>• 未有白內障</p>
+                                </div>
+                            </div>
+                            <div class="CorrectionProgram-Box-hide-item-bottom">
+
+                                <h3>PRESBYOND Laser <br>
+                                    Blended Vision <br>
+                                    視覺融合老花激光手術</h3>
+                                <p class="CorrectionProgram-Box-hide-item-bottom-text" id="CorrectionProgramTwo">
+                                    又名視覺融合老花激光手術，是一項個性化的 <span>全距離視力</span>
+                                    老花矯視方案；透過結合Zeiss蔡司系統及準分子激光技術<span>矯正老花、近視、遠視、散光</span>
+                                    。希瑪更使用蔡司最新技術進行，縮短激光打磨所需時間，準確度更高。
+                                </p>
                             </div>
                         </div>
-                        <div class="CorrectionProgram-Box-hide-item-bottom">
 
-                            <h3>PRESBYOND Laser <br>
-                                Blended Vision <br>
-                                視覺融合老花激光手術</h3>
-                            <p class="CorrectionProgram-Box-hide-item-bottom-text" id="CorrectionProgramTwo">
-                                又名視覺融合老花激光手術，是一項個性化的 <span>全距離視力</span>
-                                老花矯視方案；透過結合Zeiss蔡司系統及準分子激光技術<span>矯正老花、近視、遠視、散光</span> 。希瑪更使用蔡司最新技術進行，縮短激光打磨所需時間，準確度更高。
-                            </p>
-                        </div>
-                    </div>
+                        <div class="CorrectionProgram-Box-hide-item">
+                            <div class="CorrectionProgram-Box-hide-item-top">
+                                <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/image22.webp"
+                                    alt="" />
+                                <div class="CorrectionProgram-Box-hide-item-top-text">
+                                    <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
+                                    <p>• 39歲以上有老花</p>
+                                    <p>• 同時有近視/遠視/散光問題</p>
+                                </div>
+                            </div>
+                            <div class="CorrectionProgram-Box-hide-item-bottom">
 
-                    <div class="CorrectionProgram-Box-hide-item">
-                        <div class="CorrectionProgram-Box-hide-item-top">
-                            <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/image22.webp"
-                                alt="" />
-                            <div class="CorrectionProgram-Box-hide-item-top-text">
-                                <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
-                                <p>• 39歲以上有老花</p>
-                                <p>• 同時有近視/遠視/散光問題</p>
+                                <h3>CMER CLEAR-Vision</h3>
+                                <p class="CorrectionProgram-Box-hide-item-bottom-text" id="CorrectionProgramTwo">
+                                    坊間稱之為<span>人工晶體置換術</span>。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，
+                                    <span>一次過解決近視、遠視、散光、老花</span>等問題。希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業諮詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
+                                </p>
                             </div>
                         </div>
-                        <div class="CorrectionProgram-Box-hide-item-bottom">
+                        <div class="CorrectionProgram-Box-hide-item">
+                            <div class="CorrectionProgram-Box-hide-item-top">
+                                <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/image23.webp"
+                                    alt="" />
+                                <div class="CorrectionProgram-Box-hide-item-top-text">
+                                    <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
+                                    <p>• 39歲或以上有老花</p>
+                                    <p>• 同時有近視/遠視問題</p>
+                                    <p>• 未有白內障</p>
+                                </div>
+                            </div>
+                            <div class="CorrectionProgram-Box-hide-item-bottom">
 
-                            <h3>CMER CLEAR-Vision</h3>
-                            <p class="CorrectionProgram-Box-hide-item-bottom-text" id="CorrectionProgramTwo">
-                                坊間稱之為<span>人工晶體置換術</span>。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，
-                                <span>一次過解決近視、遠視、散光、老花</span>等問題。希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業諮詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="CorrectionProgram-Box-hide-item">
-                        <div class="CorrectionProgram-Box-hide-item-top">
-                            <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/image23.webp"
-                                alt="" />
-                            <div class="CorrectionProgram-Box-hide-item-top-text">
-                                <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
-                                <p>• 39歲或以上有老花</p>
-                                <p>• 同時有近視/遠視問題</p>
-                                <p>• 未有白內障</p>
+                                <h3>ICL Viva V6</h3>
+                                <p class="CorrectionProgram-Box-hide-item-bottom-text">
+                                    是有晶體眼後房型植入式隱形眼鏡植入手術的一種，而ICL Viva (ICL
+                                    V6)
+                                    則是一種<span>擴展景深</span>，專為矯正老花而設的<span>植入式隱形眼鏡，適合未有白內障</span>，而正受近視及老花困擾的人士。
+                                </p>
                             </div>
                         </div>
-                        <div class="CorrectionProgram-Box-hide-item-bottom">
 
-                            <h3>ICL Viva V6</h3>
-                            <p class="CorrectionProgram-Box-hide-item-bottom-text">
-                                是有晶體眼後房型植入式隱形眼鏡植入手術的一種，而ICL Viva (ICL
-                                V6)
-                                則是一種<span>擴展景深</span>，專為矯正老花而設的<span>植入式隱形眼鏡，適合未有白內障</span>，而正受近視及老花困擾的人士。
-                            </p>
+
+                        <div class="CorrectionProgram-Box-hide-item">
+
+                            <div class="CorrectionProgram-Box-hide-item-bottom2">
+                                <h3>Monovision <br>
+                                    (SMILE/SMILE Pro/LASIK/PRK)<br>
+                                    單眼視力矯正術</h3>
+
+
+                            </div>
+                        </div>
+
+                        <div class="CorrectionProgram-Box-hide-item">
+
+                            <div class="CorrectionProgram-Box-hide-item-bottom2">
+                                <h3>Cataract Surgery <br>
+                                    白內障手術</h3>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="CorrectionProgram-Box-hide-item">
+
+                            <div class="CorrectionProgram-Box-hide-item-bottom2">
+                                <h3>藥物方案（暫時性）</h3>
+
+
+                            </div>
                         </div>
                     </div>
 
 
-                    <div class="CorrectionProgram-Box-hide-item">
 
-                        <div class="CorrectionProgram-Box-hide-item-bottom2">
-                            <h3>Monovision <br>
-                                (SMILE/SMILE Pro/LASIK/PRK)<br>
-                                單眼視力矯正術</h3>
-
-
-                        </div>
-                    </div>
-
-                    <div class="CorrectionProgram-Box-hide-item">
-
-                        <div class="CorrectionProgram-Box-hide-item-bottom2">
-                            <h3>Cataract Surgery <br>
-                                白內障手術</h3>
-
-
-                        </div>
-                    </div>
-
-
-                    <div class="CorrectionProgram-Box-hide-item">
-
-                        <div class="CorrectionProgram-Box-hide-item-bottom2">
-                            <h3>藥物方案（暫時性）</h3>
-
-
-                        </div>
-                    </div>
-                    </div>
-
-
-                 
 
                 </div>
             </div>
@@ -3074,165 +3078,202 @@ i {
     </section> -->
 
 
-           <!-- start  SMILE Pro 微笑激光矯視費用-->
-<div class="bg-[#F6FAFD] py-8 px-2  md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]">
-<div class="w-full  flex flex-col items-center mx-auto ">
-    
-    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center ">
-SMILE Pro 微笑激光矯視費用
-    </h2>
+        <!-- start  SMILE Pro 微笑激光矯視費用-->
+        <div class="bg-[#F6FAFD] py-8 px-2  md:px-0 md:pb-32 md:pt-8 mb-8 mt-[50px] md:mb-22 md:mt-[90px]">
+            <div class="w-full  flex flex-col items-center mx-auto ">
 
-    <div class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl ">人工晶體費用</div>
+                <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center ">
+                    SMILE Pro 微笑激光矯視費用
+                </h2>
 
-    <div class="w-full">
-   
+                <div
+                    class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl ">
+                    人工晶體費用</div>
 
-      <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-         單焦點人工晶體(單眼)
+                <div class="w-full">
 
-<br/>
-            <span class="">不帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row text-nowrap">
-           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
-           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
-          </div>
+
+                    <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                單焦點人工晶體(單眼)
+
+
+                                <br />不帶散光
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
+                                <span class="text-2xl md:text-5xl">港幣$25,000-</span>
+                                <span class="text-2xl md:text-5xl">港幣$28,000</span>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                單焦點人工晶體(單眼)
+
+
+                                <br />帶散光
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
+                                <span class="text-2xl md:text-5xl">港幣$30,000-</span>
+                                <span class="text-2xl md:text-5xl">港幣$35,000</span>
+
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                EDOF /多焦點人工晶體
+
+
+                                <br />(單眼)不帶散光
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
+                                <span class="text-2xl md:text-5xl"> 港幣$35,000-</span>
+                                <span class="text-2xl md:text-5xl">港幣$45,000</span>
+
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                EDOF /多焦點人工晶體
+
+                                <br />(單眼)帶散光
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
+                                <span class="text-2xl md:text-5xl"> 港幣$43,000-</span>
+                                <span class="text-2xl md:text-5xl">港幣$51,000</span>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                術前檢查費用
+                                <br />
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+                                <span class="text-2xl md:text-5xl"> 港幣$680</span>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <div
+                        class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5">
+                        Presbyond LBV費用</div>
+
+
+                    <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                Presbyond LBV（雙眼）
+                                <br />
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+                                <span class="text-2xl md:text-5xl"> 港幣$58,000*</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div
+                        class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5">
+                        ICL Viva V6費用</div>
+
+
+                    <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                ICL Viva V6（雙眼）
+                                <br />
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+                                <span class="text-2xl md:text-5xl">港幣$80,000</span>
+                            </div>
+                        </div>
+
+
+
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+                                <span class="text-2xl md:text-5xl">港幣$500</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mt-8 md:mt-12 flex flex-col items-center">
+                        <a href="/fee#table1"
+                            class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
+                            查看矯視費用詳情
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]"
+                                viewBox="0 0 34 34" fill="none">
+                                <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042"
+                                    stroke-linecap="round" />
+                                <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </a>
+
+
+
+                        <div
+                            class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
+                            <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
+                            <p class="text-[#6D6E71]">矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
         </div>
 
-       
-
-          <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-         單焦點人工晶體(單眼)
-
-<br/>
-            <span class="">不帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row text-nowrap">
-           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
-           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
-          </div>
-        </div>
-
-        
-          <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-         單焦點人工晶體(單眼)
-
-<br/>
-            <span class="">不帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
-           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
-           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
-          </div>
-        </div>
-
-            <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-         單焦點人工晶體(單眼)
-
-<br/>
-            <span class="">不帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
-           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
-           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
-          </div>
-        </div>
-
-          <div class="bg-white border border-[#4570B6] rounded-2xl p-3 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-         單焦點人工晶體(單眼)
-
-<br/>
-            <span class="">不帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row">
-           <span class="text-2xl md:text-5xl">港幣$25,000-</span>
-           <span  class="text-2xl md:text-5xl">港幣$28,000</span>
-          </div>
-        </div>
-
-          
-      </div>
-
-
-
-       <div class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5">Presbyond LBV費用</div>
-
-
-       <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-           Presbyond LBV（雙眼）
-<br/>
-            <span class=""></span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-           <span class="text-2xl md:text-5xl"> 港幣$58,000*</span>
-          </div>
-        </div>
-
-       
-
-      </div>
-
-
-
-      <div class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5">ICL Viva V6費用</div>
-
-
-       <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-          ICL Viva V6（雙眼）
-<br/>
-            <span class=""></span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-           <span class="text-2xl md:text-5xl">港幣$80,000</span>
-          </div>
-        </div>
-
-       
-
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-            <span class="text-2xl md:text-5xl">港幣$500</span>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="mt-8 md:mt-12 flex flex-col items-center">
-        <a href="/fee#table1" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
-          查看矯視費用詳情
-          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
-  <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
-  <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
-</svg>
-        </a>
-
-      
-
-        <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
-          <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
-          <p class="text-[#6D6E71]">矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
-        </div>
-      </div>
-
-    </div>
-
-    
-  </div>
-  </div>
-
-    <!-- end SMILE Pro 微笑激光矯視費用 -->
+        <!-- end SMILE Pro 微笑激光矯視費用 -->
 
 
 
@@ -3249,6 +3290,82 @@ SMILE Pro 微笑激光矯視費用
 
                 <h2>老花矯視技術好處對比</h2>
                 <div class="visionBattle-Box-list">
+                      <div class="visionBattle-Box-list-item">
+                        <h3>PRESBYOND <br>
+                            Laser Blended Vision <br>
+                            視覺融合老花激光手術</h3>
+                        <div class="visionBattle-Box-list-item-content">
+                            <p>
+                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                                    alt="" />
+                                <span>同時矯正老花、近視、遠視、散光</span>
+                            </p>
+                            <p>
+                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                                    alt="" />
+                                <span>提供遠、中、近「全距離高清視覺」</span>
+                            </p>
+                            <p>
+                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                                    alt="" />
+                                <span>保留良好立體視覺</span>
+                            </p>
+                            <p>
+                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                                    alt="" />
+                                <span>保留天然晶體</span>
+                            </p>
+                            <p>
+                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                                    alt="" />
+                                <span>準確度提升: 激光打磨速度升至<br>500Hz，比上一代提高一倍</span>
+                            </p>
+                            <p>
+                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                                    alt="" />
+                                <span>根據個人眼睛實際狀況和生活需要，度<br>身訂造治療方案</span>
+                            </p>
+                            <p>
+                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
+                                    alt="" />
+                                <span>將來進行白內障手術亦不影響效果</span>
+                            </p>
+
+
+                            <div class="mt-[31px]">
+                                <div class="flex items-center justify-center">
+                                    <div
+                                        class="flex items-center bg-[#4570B6] text-white px-4 py-2 md:px-8 md:py-10 rounded-sm shadow-md max-w-md">
+
+                                        <div class="flex-shrink-0 mr-2">
+                                            <img src="https://statichk.cmermedical.com/cmermedical/image/20260330/500Hz.svg"
+                                                alt="500Hz Logo" class="h-[48px] md:h-[72px] w-auto object-contain" />
+                                        </div>
+
+                                        <ul class="space-y-2 text-lg font-medium whitespace-nowrap">
+                                            <li class="flex items-center">
+                                                <span class="mr-2 text-base md:text-lg opacity-80">·</span>
+                                                比上一代快一倍
+                                            </li>
+                                            <li class="flex items-center">
+                                                <span class="mr-2 text-base md:text-lg opacity-80">·</span>
+                                                激光时间更短
+                                            </li>
+                                            <li class="flex items-center">
+                                                <span class="mr-2 text-base md:text-lg opacity-80">·</span>
+                                                精準度更高
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                    </div>
+
                     <div class="visionBattle-Box-list-item">
                         <h3>CMER CLEAR-Vision <br>
                             人工晶體置換術</h3>
@@ -3296,49 +3413,6 @@ SMILE Pro 微笑激光矯視費用
                             </p>
 
                         </div>
-                    </div>
-
-                    <div class="visionBattle-Box-list-item">
-                        <h3>PRESBYOND <br>
-                            Laser Blended Vision <br>
-                            視覺融合老花激光手術</h3>
-                        <div class="visionBattle-Box-list-item-content">
-                            <p>
-                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
-                                    alt="" />
-                                <span>同時矯正老花、近視、遠視、散光</span>
-                            </p>
-                            <p>
-                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
-                                    alt="" />
-                                <span>提供遠、中、近「全距離高清視覺」</span>
-                            </p>
-                            <p>
-                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
-                                    alt="" />
-                                <span>保留良好立體視覺</span>
-                            </p>
-                            <p>
-                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
-                                    alt="" />
-                                <span>保留天然晶體</span>
-                            </p>
-                            <p>
-                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
-                                    alt="" />
-                                <span>準確度提升: 激光打磨速度升至<br>500Hz，比上一代提高一倍</span>
-                            </p>
-                            <p>
-                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
-                                    alt="" />
-                                <span>根據個人眼睛實際狀況和生活需要，度<br>身訂造治療方案</span>
-                            </p>
-                            <p>
-                                <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
-                                    alt="" />
-                                <span>將來進行白內障手術亦不影響效果</span>
-                            </p>
-                        </div>
                         <div class="visionBattle-Box-list-item-VS">
                             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="118" viewBox="0 0 70 118"
                                 fill="none">
@@ -3360,6 +3434,8 @@ SMILE Pro 微笑激光矯視費用
                             </svg>
                         </div>
                     </div>
+
+                  
 
                     <div class="visionBattle-Box-list-item">
                         <h3>ICL Viva V6 <br>
@@ -4077,3 +4153,15 @@ export default {
     },
 };
 </script>
+
+<style>
+.lbv-item {
+    padding: 10px 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .lbv-item {
+        padding: 40px 50px;
+    }
+}
+</style>

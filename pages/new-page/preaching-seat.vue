@@ -233,20 +233,20 @@
 
       <h2 class="lectureCalendar">{{ $t("appointFroms.LectureCalendar") }}</h2>
       <div class="lecture-image">
-        <picture>
+        <!-- <picture>
           <source srcset="
               https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-1.webp
             " type="image/webp" />
           <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-1.jpg" alt="希瑪眼科三月中環預約日歷"
             title="希瑪眼科三月中環預約日歷" />
-        </picture>
-        <picture>
+        </picture> -->
+        <!-- <picture>
           <source srcset="
               https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-02.webp
             " type="image/webp" />
           <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-02.jpg" alt="希瑪眼科三月旺角預約日歷"
             title="希瑪眼科三月旺角預約日歷" />
-        </picture>
+        </picture> -->
 
         <picture>
           <source srcset="
