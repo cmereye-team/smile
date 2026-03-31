@@ -812,7 +812,7 @@ i {
                 .visionBattle-Box-list-item {
                     h3 {
                         display: table;
-                        margin: 7.69vw auto 0;
+                        margin: 7.69vw auto 47px auto;
                         text-align: center;
                         color: #4570b6;
                         font-family: "Poppins", sans-serif;
@@ -2012,9 +2012,10 @@ i {
             position: absolute;
             width: clamp(953.5px, 99.32vw, 1907px);
             height: clamp(953.5px, 99.32vw, 1907px);
-            top: clamp(-653px, -34.01vw, -326.5px);
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+
+            transform: translate(-50%, -50%);
             z-index: -1;
         }
 
@@ -2033,18 +2034,21 @@ i {
 
             .visionBattle-Box-list {
 
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+           
                 justify-content: center;
                 margin-top: clamp(28px, 2.92vw, 56px);
 
                 .visionBattle-Box-list-item {
-                    height: clamp(433px, 45.1vw, 1000px);
+                    height: clamp(433px, 45.1vw, 700px);
                     padding: 0 clamp(70px, 1.67vw, 80px);
 
                     h3 {
                         padding-top: clamp(7px, 0.73vw, 14px);
-                        padding-bottom: clamp(7px, 0.73vw, 14px);
+                        padding-bottom: 66px;
                         margin-top: clamp(11px, 1.15vw, 22px);
+                        
 
                         display: table;
 
@@ -2057,6 +2061,7 @@ i {
                         line-height: 1;
                         letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
                         width: 400px;
+                        
                     }
 
                     .visionBattle-Box-list-item-content {
@@ -2067,6 +2072,7 @@ i {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         text-wrap: nowrap;
+                        height: 100%;
 
                         p {
                             display: flex;
@@ -3309,8 +3315,11 @@ i {
 
                         <div
                             class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
-                            <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
-                            <p class="text-[#6D6E71]">矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
+                        
+                            <p class="text-[#6D6E71]">此為香港價錢</p> 
+<p class="text-[#6D6E71]">*矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p> 
+<p class="text-[#6D6E71]">#免責聲明：受條款及細則約束。優惠僅適用於以 EPS 全數支付之客戶。如有任何爭議，希瑪眼科將保留最終決定權。</p> 
+                           
                         </div>
                     </div>
 
@@ -3338,10 +3347,11 @@ i {
                 <h2>老花矯視技術好處對比</h2>
                 <div class="visionBattle-Box-list">
                       <div class="visionBattle-Box-list-item">
-                        <h3>PRESBYOND <br>
+                       
+                        <div class="visionBattle-Box-list-item-content">
+                             <h3>PRESBYOND <br>
                             Laser Blended Vision <br>
                             視覺融合老花激光手術</h3>
-                        <div class="visionBattle-Box-list-item-content">
                             <p>
                                 <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
                                     alt="" />
@@ -3414,9 +3424,10 @@ i {
                     </div>
 
                     <div class="visionBattle-Box-list-item">
-                        <h3>CMER CLEAR-Vision <br>
-                            人工晶體置換術</h3>
+                        
                         <div class="visionBattle-Box-list-item-content">
+                            <h3>CMER CLEAR-Vision <br>
+                            人工晶體置換術</h3>
                             <p>
                                 <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
                                     alt="" />
@@ -3485,9 +3496,10 @@ i {
                   
 
                     <div class="visionBattle-Box-list-item">
-                        <h3>ICL Viva V6 <br>
-                            植入式隱形眼鏡 </h3>
+                       
                         <div class="visionBattle-Box-list-item-content">
+                             <h3>ICL Viva V6 <br>
+                            植入式隱形眼鏡 </h3>
                             <p>
                                 <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
                                     alt="" />
