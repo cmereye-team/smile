@@ -56,7 +56,8 @@ Vision<br  />
             <td>視力效果</td>
             <td>提供遠、<br class="d-lg-none" />中、近<br  />
 「全距離高<br class="d-lg-none" />清視覺」<br>
-保留良好立<br class="d-lg-none" />體視覺</td>
+<span class="text-[#73CE93] font-black">保留良好立<br class="d-lg-none" />體視覺</span>
+</td>
             <td>視乎人工晶體<br class="d-lg-none" />選擇, <br class="hidden md:block" />
 單焦距<br class="d-lg-none" />人工晶體用<br class="d-lg-none" />Mono-Vision<br class="d-lg-none" />方式能提供遠/<br class="d-lg-none" />近距離高清<br class="d-lg-none" />視力; <br class="hidden md:block" />
 多焦距或<br class="d-lg-none" />延伸景深的<br class="d-lg-none" />人工晶體則能<br class="d-lg-none" />提供遠/中/近<br class="d-lg-none" />距離高清視力</td>
@@ -69,7 +70,7 @@ Vision<br  />
             </td>
             <td><img class="mx-auto" src="https://statichk.cmermedical.com/smile/feeV2/error.svg" alt="不包括"></td>
             <td><img class="mx-auto" src="https://statichk.cmermedical.com/smile/feeV2/error.svg" alt="不包括"></td>
-            <td>可逆轉（晶體可取出）</td>
+            <td ><div class="flex items-center justify-center gap-2"><img  src="https://statichk.cmermedical.com/smile/feeV2/success.svg" alt="包括">可逆轉（晶體可取出）</div></td>
           </tr>
 
           

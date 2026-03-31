@@ -3202,13 +3202,60 @@ i {
                             </div>
                             <div
                                 class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-                                <span class="text-2xl md:text-5xl"> 港幣$58,000*</span>
+                                <span class="text-2xl md:text-5xl text-nowrap"> 港幣$58,000*</span>
+                            </div>
+                        </div>
+
+ <div
+                            class="rounded-[20px] bg-[linear-gradient(272deg,#ED1C24_11.38%,#B1080F_88.62%)] border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold flex items-center justify-center">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="w-[47px] md:w-[135px] md:h-[82px] md:mr-8" viewBox="0 0 135 82" fill="none">
+  <g clip-path="url(#clip0_17756_168)">
+    <path d="M134.813 53.4316C135.081 57.7531 135.027 61.9144 134.84 66.2358C134.76 67.8097 134.278 69.5169 133.824 70.9307C129.785 83.6015 102.481 86.2423 92.9332 74.5052C91.2483 72.4245 90.1786 70.1571 89.8844 67.5963C89.8309 67.0894 89.2693 66.5826 89.3496 65.9691C89.8042 61.7277 88.0659 57.4863 88.8414 52.3646H107.615L107.695 63.2482C107.695 64.9287 107.883 67.1961 109.3 68.3432C110.236 69.0901 112.295 68.93 113.365 68.5566C116.307 67.5162 116.253 60.8741 115.799 58.6333L115.184 55.5657C114.702 53.1382 112.696 51.6444 110.771 50.3106L96.1424 40.1206C92.5855 37.6398 89.8844 33.4251 89.1089 29.1037C88.1996 24.0888 88.3868 18.727 89.1089 13.6587C90.0716 6.72312 94.8854 3.1753 101.17 1.09462C104.914 -0.132443 113.098 -0.159118 116.922 0.321038C123.126 1.14797 131.31 4.98922 132.46 11.498C132.593 12.3249 133.155 13.0719 132.941 14.0322C132.647 15.446 133.155 16.6463 133.422 17.9534C133.797 19.8741 133.503 21.8214 133.529 23.7687C133.529 24.5689 132.995 25.1291 132.166 25.1024L114.702 25.0224L114.542 15.7927C114.542 15.1525 113.98 14.2989 113.659 13.7387C113.071 12.6984 111.359 12.7517 110.423 12.9385C106.358 13.8188 107.428 21.6613 108.016 24.1688C108.631 26.8897 113.231 29.6639 115.531 30.9177C117.778 32.118 119.783 33.6919 121.95 35.0523C124.303 36.5195 126.229 38.12 128.314 39.9339C131.149 42.3881 133.155 45.4824 134.011 49.2703C134.305 50.5507 134.76 52.0712 134.813 53.4583V53.4316Z" fill="white"/>
+    <path d="M85.6324 18.7537L85.1243 13.6054C84.9103 11.578 83.7604 9.09723 82.5837 7.55006C80.4709 4.8025 77.5292 3.46873 74.3735 2.66847C73.0898 2.32169 71.9131 1.81486 70.4957 2.24167C68.3028 1.57478 66.1365 1.54811 63.8634 1.54811L41.7734 1.44141V80.027H61.9111L62.0448 48.1499C69.6132 47.9899 75.0955 49.297 81.3267 44.8955C84.0278 42.9749 85.5522 38.2801 85.258 37.1597C84.9638 36.0393 85.7661 35.1324 85.7661 34.092C85.8196 28.9437 86.194 23.9287 85.6859 18.7804L85.6324 18.7537ZM68.9713 27.2898C68.9981 29.5039 68.9178 32.2514 67.447 33.9853C66.2168 35.4258 63.8634 35.4258 61.9646 35.2924L61.9111 14.8324L65.4412 14.9125C69.9608 15.0192 68.9179 23.9821 68.9713 27.2898Z" fill="white"/>
+    <path d="M35.2744 64.7941L35.4081 78.852C35.3279 79.3855 35.1406 80.079 34.4186 80.079L0 80.0257V1.4668H32.4931C33.2151 1.4668 33.8035 1.81358 34.0174 2.45378L33.9105 16.8585L20.5923 16.9918C20.1644 16.9918 19.8435 18.0589 19.8435 18.459L19.897 31.6099C19.9505 32.0634 21.0202 32.6236 21.4481 32.6236H32.707L32.7605 46.7082L20.5923 46.8682C20.0307 46.8682 19.8435 48.122 19.8435 48.6021V64.6607L35.2476 64.7674L35.2744 64.7941Z" fill="white"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_17756_168">
+      <rect width="135" height="82" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
+                                <br />
+                                <span class="text-[#FFFFFF] md:text-[50px] font-bold">用戶專屬禮遇</span>
+                            </div>
+                            <div
+                                class="text-[#FFFFFF]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+                                <span class="text-2xl md:text-5xl flex"> 港幣$47,500<sup class="text-base md:text-2xl">#</sup></span>
                             </div>
                         </div>
 
 
 
+                 
+
+                        
+                        <div
+                            class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center   transition-all group">
+                            <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
+                                術前檢查費用
+                                <br />
+                                <span class=""></span>
+                            </div>
+                            <div
+                                class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
+                                <span class="text-2xl md:text-5xl"> 港幣$100</span>
+                            </div>
+                        </div>
+
                     </div>
+
+                       
+                       
+
+
+
+                  
 
 
 
@@ -3308,7 +3355,7 @@ i {
                             <p>
                                 <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
                                     alt="" />
-                                <span>保留良好立體視覺</span>
+                                <span >保留良好立體視覺</span>
                             </p>
                             <p>
                                 <img src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
@@ -3547,7 +3594,7 @@ i {
 
             <div class="SuitableObject-Box container">
                 <div class="SuitableObject-Box-title">
-                    <h2>老花矯視的合適對象</h2>
+                    <h2>合適對象</h2>
                     <p>
                         無論追求效率還是悠閒自在，<br class="d-none d-lg-block" />老花矯視都讓你清楚見證<br class="d-none d-lg-block" />往後每一刻。
                     </p>
@@ -3597,7 +3644,7 @@ i {
 
         <section class="question-mencare">
             <div class="container">
-                <h2 class="publicTitle-mencare">老花矯視的常見問題</h2>
+                <h2 class="publicTitle-mencare">常見問題</h2>
                 <div class="question-section-Box">
                     <div id="accordion">
                         <div class="card collapseActive expanded">
