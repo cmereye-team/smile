@@ -75,7 +75,7 @@ export default {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Boldonse&family=Noto+Sans:wght@700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Boldonse&family=Noto+Sans:wght@700&family=Noto+Sans+TC:wght@100..900&display=swap",
       },
 
       {
