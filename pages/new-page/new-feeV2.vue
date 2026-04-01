@@ -184,7 +184,7 @@
             <tr class="custom-comparison-table-tipIcon">
               <td>術後覆診
                 <br />
-                <span class="text-[#6D6E71] text-center text-[12px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap">由醫生進行<br>
+                <span class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap">由醫生進行<br>
 包檢查費及藥費</span>
               </td>
               <td>
@@ -380,7 +380,7 @@
             <tr>
               <td>術後覆診
                 <br>
-                <span class="text-[#6D6E71] text-center text-[12px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap">由醫生進行<br />
+                <span class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap">由醫生進行<br />
 包檢查費及藥費</span>
               </td>
               <td class="bg-lbv-body">5次<sup class="text-xs ml-0.5">#</sup></td>
