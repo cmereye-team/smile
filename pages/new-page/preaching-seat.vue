@@ -1267,7 +1267,8 @@ export default {
   .banner-img {
     // background: url("https://static.cmereye.com/imgs/2024/04/c26ba48972f2997c.png")
     //   no-repeat;
-    background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIvWkGoRaeS3NAunNB8SwFhjUFB9L5MUJgiE3zXS6AA_1988_745.webp") no-repeat;
+   // background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIvWkGoRaeS3NAunNB8SwFhjUFB9L5MUJgiE3zXS6AA_1988_745.webp") no-repeat;
+    background: url("https://statichk.cmermedical.com/cmermedical/image/20260330/banner-pc.webp") no-repeat;
     background-size: cover;
     // height: 32.08vw;
     width: 100%;
@@ -1702,8 +1703,10 @@ export default {
   .banner-img {
     // background: url("https://static.cmereye.com/imgs/2024/04/d226e2e185d53c48.png")
     //   no-repeat;
-    background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIuPgoUx5-S3NAprNApqwMAa15lNreZYJgiE3zXS6AQ_666_666.webp") no-repeat;
-    background-size: cover;
+    // background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIuPgoUx5-S3NAprNApqwMAa15lNreZYJgiE3zXS6AQ_666_666.webp") no-repeat;
+     background: url("https://statichk.cmermedical.com/cmermedical/image/20260330/banner-m.webp") no-repeat;
+
+    background-size: 100% 100%;
     background-position: center;
     // height: 30vw;
     aspect-ratio: 1 / 1;
