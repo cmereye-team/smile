@@ -2538,7 +2538,7 @@ CMER CLEAR-Vision 老花矯視費用
     <div class="w-full">
       <div class="space-y-7 lg:space-y-[60px]">
         <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">人工晶體費用</div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">人工晶體費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
               class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
@@ -2603,7 +2603,7 @@ CMER CLEAR-Vision 老花矯視費用
           </div>
         </div>
         <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">Presbyond LBV費用</div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">Presbyond LBV費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
               class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
@@ -2634,7 +2634,7 @@ CMER CLEAR-Vision 老花矯視費用
           </div>
         </div>
         <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">ICL Viva V6費用</div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">ICL Viva V6費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
               class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
@@ -2671,8 +2671,8 @@ CMER CLEAR-Vision 老花矯視費用
   <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
 </svg>
         </a>
-        <div class="mt-2 md:!mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
-          <p class="text-[#6D6E71]">此為香港價錢，單眼價錢</p>
+        <div class="mt-2 md:!mt-4 text-center font-light text-text text-sm md:text-2xl leading-relaxed">
+          <p>此為香港價錢，單眼價錢</p>
           <p>*矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
           <p>#免責聲明：受條款及細則約束。僅適用於以 EPS 全數支付之客戶。如有任何爭議，希瑪眼科將保留最終決定權。</p>
         </div>

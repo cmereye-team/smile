@@ -298,7 +298,7 @@ SMILE Pro 微笑激光矯視費用
     <div class="w-full">
       <div class="space-y-7 lg:space-y-[60px]">
         <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">SMILE Pro 費用</div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">SMILE Pro 費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
             <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
@@ -317,7 +317,7 @@ SMILE Pro 微笑激光矯視費用
           </div>
         </div>
         <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">SMILE Pro Care費用</div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">SMILE Pro Care費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
             <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
