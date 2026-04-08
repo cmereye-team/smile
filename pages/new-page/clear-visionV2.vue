@@ -2535,112 +2535,134 @@ i {
     <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
 CMER CLEAR-Vision 老花矯視費用
     </h2>
-
     <div class="w-full">
-   
-
-      <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
-        <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-           單焦點人工晶體(單眼)
-
-<br/>
-            <span class="">不帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row ">
-           <span class="text-2xl md:text-5xl"> 港幣$25,000-
-</span><span class="text-2xl md:text-5xl">港幣$28,000</span>
-          </div>
-        </div>
-
-
-        <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-           單焦點人工晶體(單眼)
-
-
-<br/>
-            <span class="">帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row ">
-           <span class="text-2xl md:text-5xl"> 港幣$30,000-
-</span><span class="text-2xl md:text-5xl">港幣$35,000</span>
-          </div>
-        </div>
-
-        <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-           多焦點人工晶體(單眼)
-
-
-
-<br/>
-            <span class="">不帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row ">
-           <span class="text-2xl md:text-5xl"> 港幣$35,000-
-</span><span class="text-2xl md:text-5xl">港幣$45,000</span>
-          </div>
-        </div>
-
-
-        <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-       多焦點人工晶體(單眼)
-
-
-
-
-<br/>
-            <span class="">帶散光</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row ">
-           <span class="text-2xl md:text-5xl"> 港幣$43,000-
-</span><span class="text-2xl md:text-5xl">港幣$51,000</span>
-          </div>
-        </div>
-
-
-        
-        <!-- <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-       Presbyond LBV
-
-
-
-
-<br/>
-            <span class=""></span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row ">
-           <span class="text-2xl md:text-5xl"> 港幣$??,000-
-</span><span class="text-2xl md:text-5xl">港幣$??,000</span>
-          </div>
-        </div> -->
-
-        <div class="border !border-[#4570B6] rounded-2xl py-[20px] px-2  md:!px-8  md:py-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
- 術前檢查費用
-
-
-
-
-<br/>
-            <span class=""></span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row ">
-           <span class="text-2xl md:text-5xl"> 港幣$680
-</span><span class="text-2xl md:text-5xl"></span>
+      <div class="space-y-7 lg:space-y-[60px]">
+        <div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">人工晶體費用</div>
+          <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                單焦點人工晶體(單眼)<br /><span>不帶散光</span>
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <span class="text-2xl md:text-5xl">港幣$25,000- </span><span class="text-2xl md:text-5xl">港幣$28,000</span>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                單焦點人工晶體(單眼)<br /><span>帶散光</span>
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <span class="text-2xl md:text-5xl">港幣$30,000- </span><span class="text-2xl md:text-5xl">港幣$35,000</span>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                EDOF /多焦點人工晶體<br /><span>(單眼)不帶散光</span>
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <span class="text-2xl md:text-5xl">港幣$35,000- </span><span class="text-2xl md:text-5xl">港幣$45,000</span>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                EDOF /多焦點人工晶體<br /><span>(單眼)帶散光</span>
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <span class="text-2xl md:text-5xl">港幣$43,000- </span><span class="text-2xl md:text-5xl">港幣$51,000</span>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                術前檢查費用
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <span class="text-2xl md:text-5xl">港幣$680 </span><span class="text-2xl md:text-5xl"></span>
+              </div>
+            </div>
           </div>
         </div>
-
-
-
-       
-
-        
+        <div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">Presbyond LBV費用</div>
+          <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                Presbyond LBV<br class="block sm:hidden"/>（雙眼）
+              </div>
+              <div
+                class="text-[#F59E0B] -ml-[68px] sm:ml-0 text-right font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col"
+              >
+                <p class="text-2xl md:text-5xl pb-1 md:pb-3">港幣$58,000*</p>
+                <p class="text-xs min-[360px]:text-sm md:text-xl">指定信用卡（東亞/渣打/滙豐）<br class="block sm:hidden"/>可享6/12/18/24/36個月免息分期</p>
+                <p class="text-text text-xs min-[360px]:text-sm md:text-xl">EPS用戶港幣$47,500#</p>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                術前檢查費用
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <span class="text-2xl md:text-5xl">港幣$100</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-3 max-w-3xl md:max-w-lg mx-auto mb-5">ICL Viva V6費用</div>
+          <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                ICL Viva V6（雙眼）
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <p class="text-2xl md:text-5xl">港幣$80,000</p>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                術前檢查費用
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+              >
+                <span class="text-2xl md:text-5xl">港幣$500</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
       <div class="mt-8 md:mt-12 flex flex-col items-center">
         <a href="/fee#table2" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
          查看矯視費用詳情
@@ -2649,15 +2671,12 @@ CMER CLEAR-Vision 老花矯視費用
   <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
 </svg>
         </a>
-
-      
-
-        <div class="text-[#6D6E71] mt-2 md:!mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
+        <div class="mt-2 md:!mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
           <p class="text-[#6D6E71]">此為香港價錢，單眼價錢</p>
-          <p></p>
+          <p>*矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
+          <p>#免責聲明：受條款及細則約束。僅適用於以 EPS 全數支付之客戶。如有任何爭議，希瑪眼科將保留最終決定權。</p>
         </div>
       </div>
-
     </div>
   </div>
   </div>

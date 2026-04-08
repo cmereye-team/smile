@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-03-27 10:18:57
+ * @LastEditTime: 2026-04-08 18:41:52
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -93,7 +93,10 @@
           <tbody>
             <tr>
               <td>價錢(雙眼)</td>
-              <td>港幣$26,000^</td>
+              <td>
+                <span class="block lg:pb-2">港幣$26,000^</span>
+                <span class="block bt-d0d0d0 lg:pt-2">EPS用戶<br />港幣$25,500*</span>
+              </td>
               <td>港幣$24,000^</td>
               <td>不帶散光<br />港幣$64,000^^<br />帶散光<br />港幣$68,000^^</td>
               <td>港幣$19,000^</td>
@@ -355,22 +358,23 @@
             <tr>
               <td>價錢<br class="d-lg-none" />(雙眼)</td>
               <td class="bg-lbv-body">港幣$58,000<sup class="text-xs ml-0.5">※</sup></td>
+              <td class="bg-lbv-body bl-d0d0d0">EPS用戶<br />港幣$47,500*</td>
             </tr>
             <tr>
               <td>術前檢查<br class="d-lg-none" />費用</td>
-              <td class="bg-lbv-body">港幣$100</td>
+              <td class="bg-lbv-body" colspan="2">港幣$100</td>
             </tr>
             <tr>
               <td>眼睛水潤<br class="d-lg-none" />護理</td>
-              <td class="bg-lbv-body">1次</td>
+              <td class="bg-lbv-body" colspan="2">1次</td>
             </tr>
             <tr>
               <td>術後眼部<br/>彩光護理</td>
-              <td class="bg-lbv-body">1次</td>
+              <td class="bg-lbv-body" colspan="2">1次</td>
             </tr>
             <tr>
               <td>眼科專科<br/>醫生檢查</td>
-              <td class="bg-lbv-body">
+              <td class="bg-lbv-body" colspan="2">
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
                   alt="包括"
@@ -383,11 +387,11 @@
                 <span class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap">由醫生進行<br />
 包檢查費及藥費</span>
               </td>
-              <td class="bg-lbv-body">5次<sup class="text-xs ml-0.5">#</sup></td>
+              <td class="bg-lbv-body" colspan="2">5次<sup class="text-xs ml-0.5">#</sup></td>
             </tr>
             <tr>
               <td>增進手術</td>
-              <td class="bg-lbv-body">
+              <td class="bg-lbv-body" colspan="2">
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
                   alt="包括"
@@ -396,7 +400,7 @@
             </tr>
             <tr>
               <td>無限視光<br class="d-lg-none" />檢查</td>
-              <td class="bg-lbv-body">
+              <td class="bg-lbv-body" colspan="2">
                 <img
                   src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
                   alt="包括"
@@ -464,6 +468,7 @@
             {{ $t("fee.textList.text2") }}<br />
             {{ $t("fee.textList.text2_1") }}{{ $t("fee.textList.text2_2") }}<br />
           </span>
+          <span>{{ $t("fee.textList.text2_3") }}</span>
           <span>
             {{ $t("fee.textList.text3") }}<br />
             {{ $t("fee.textList.text3_1") }}{{ $t("fee.textList.text3_2") }}<br />
@@ -2753,7 +2758,12 @@ body {
     margin-right: auto;
   }
 }
-
+.bt-d0d0d0 {
+  border-top: 1px solid #d0d0d0;
+}
+.bl-d0d0d0 {
+  border-left: 1px solid #d0d0d0;
+}
 .tablePink {
   background: #cca9dd !important;
 }

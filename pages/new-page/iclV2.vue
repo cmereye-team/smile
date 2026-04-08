@@ -3983,7 +3983,7 @@ i {
 
         <div class="w-full">
           <div
-            class="relative mx-auto bg-[#D4E4FF] rounded-[35.768px_11.923px] md:rounded-[60px_20px;] py-5 px-6 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-[900px]"
+            class="relative mx-auto bg-[#D4E4FF] rounded-[35.768px_11.923px] md:rounded-[60px_20px;] py-5 px-6 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-6xl"
           >
             <div class="flex items-center gap-1 md:gap-5">
               <div class="">
@@ -4034,7 +4034,7 @@ i {
             </div>
           </div>
 
-          <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+          <div class="space-y-2 md:space-y-4 max-w-6xl mx-auto">
             <div
               class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
             >
@@ -4044,10 +4044,11 @@ i {
                 <span class="">(不帶散光)</span>
               </div>
               <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                class="text-[#F59E0B] -ml-[60px] sm:ml-0 flex-1 font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
-                <span class="text-2xl md:text-5xl"> 港幣</span
-                ><span class="text-2xl md:text-6xl">$64,000</span>
+                <span class="text-2xl md:text-5xl"> 港幣</span>
+                <span class="text-lg min-[360px]:text-2xl md:text-6xl md:pb-2">$64,000</span>
+                <p class="text-xs min-[360px]:text-sm md:text-xl">指定信用卡（東亞/渣打/滙豐）<br class="block md:hidden"/>可享6/12/18/24/36個月免息分期</p>
               </div>
             </div>
 
@@ -4060,10 +4061,9 @@ i {
                 <span class="">(帶散光)</span>
               </div>
               <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                class="text-[#F59E0B] flex-1 font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
-                <span class="text-2xl md:text-5xl">港幣</span
-                ><span class="text-2xl md:text-6xl">$68,000</span>
+                <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-6xl">$68,000</span>
               </div>
             </div>
 
@@ -4074,7 +4074,7 @@ i {
                 術前檢查費用
               </div>
               <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
                 <span class="text-2xl md:text-5xl">港幣</span
                 ><span class="text-2xl md:text-6xl">$500</span>
