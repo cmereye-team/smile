@@ -2541,7 +2541,7 @@ CMER CLEAR-Vision 老花矯視費用
           <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">人工晶體費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 單焦點人工晶體(單眼)<br /><span>不帶散光</span>
@@ -2553,7 +2553,7 @@ CMER CLEAR-Vision 老花矯視費用
               </div>
             </div>
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 單焦點人工晶體(單眼)<br /><span>帶散光</span>
@@ -2565,7 +2565,7 @@ CMER CLEAR-Vision 老花矯視費用
               </div>
             </div>
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 EDOF /多焦點人工晶體<br /><span>(單眼)不帶散光</span>
@@ -2577,7 +2577,7 @@ CMER CLEAR-Vision 老花矯視費用
               </div>
             </div>
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 EDOF /多焦點人工晶體<br /><span>(單眼)帶散光</span>
@@ -2589,7 +2589,7 @@ CMER CLEAR-Vision 老花矯視費用
               </div>
             </div>
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 術前檢查費用
@@ -2606,7 +2606,7 @@ CMER CLEAR-Vision 老花矯視費用
           <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">Presbyond LBV費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 Presbyond LBV<br class="block sm:hidden"/>（雙眼）
@@ -2620,7 +2620,7 @@ CMER CLEAR-Vision 老花矯視費用
               </div>
             </div>
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 術前檢查費用
@@ -2637,7 +2637,7 @@ CMER CLEAR-Vision 老花矯視費用
           <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">ICL Viva V6費用</div>
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 ICL Viva V6（雙眼）
@@ -2649,7 +2649,7 @@ CMER CLEAR-Vision 老花矯視費用
               </div>
             </div>
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-2 md:!px-8 md:py-8 flex flex-row justify-between items-center transition-all group"
+              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 術前檢查費用
