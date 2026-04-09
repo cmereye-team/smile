@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-04-08 18:41:52
+ * @LastEditTime: 2026-04-09 10:59:56
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -465,17 +465,17 @@
         <div class="ellipse_explain">
           <span>{{ $t("fee.textList.text1") }}</span>
           <span>
-            {{ $t("fee.textList.text2") }}<br />
+            <sup>^</sup>{{ $t("fee.textList.text2") }}<br />
             {{ $t("fee.textList.text2_1") }}{{ $t("fee.textList.text2_2") }}<br />
           </span>
-          <span>{{ $t("fee.textList.text2_3") }}</span>
+          <span><sup>*</sup>{{ $t("fee.textList.text2_3") }}</span>
           <span>
-            {{ $t("fee.textList.text3") }}<br />
+            <sup>^^</sup>{{ $t("fee.textList.text3") }}<br />
             {{ $t("fee.textList.text3_1") }}{{ $t("fee.textList.text3_2") }}<br />
-            {{ $t("fee.textList.text3_3") }}<br />
-            {{ $t("fee.textList.text3_4") }}<br />
-            {{ $t("fee.textList.text3_5") }}<br />
-            {{ $t("fee.textList.text3_6") }}
+            <sup>#</sup>{{ $t("fee.textList.text3_3") }}<br />
+            <sup>##</sup>{{ $t("fee.textList.text3_4") }}<br />
+            <sup>※</sup>{{ $t("fee.textList.text3_5") }}<br />
+            <sup>//</sup>{{ $t("fee.textList.text3_6") }}
           </span>
           <br />
           <span>

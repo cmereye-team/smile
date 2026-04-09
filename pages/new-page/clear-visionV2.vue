@@ -2616,7 +2616,7 @@ CMER CLEAR-Vision 老花矯視費用
               >
                 <p class="text-2xl md:text-5xl pb-1 md:pb-3">港幣$58,000*</p>
                 <p class="text-xs min-[360px]:text-sm md:text-xl">指定信用卡（東亞/渣打/滙豐）<br class="block sm:hidden"/>可享6/12/18/24/36個月免息分期</p>
-                <p class="text-text text-xs min-[360px]:text-sm md:text-xl">EPS用戶港幣$47,500#</p>
+                <p class="text-text text-xs min-[360px]:text-sm md:text-xl">EPS用戶港幣$47,500<sup>#</sup></p>
               </div>
             </div>
             <div
@@ -2672,7 +2672,7 @@ CMER CLEAR-Vision 老花矯視費用
 </svg>
         </a>
         <div class="mt-2 md:!mt-4 text-center font-light text-text text-sm md:text-2xl leading-relaxed">
-          <p>此為香港價錢，單眼價錢</p>
+          <p>此為香港價錢</p>
           <p>*矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
           <p>#免責聲明：受條款及細則約束。僅適用於以 EPS 全數支付之客戶。如有任何爭議，希瑪眼科將保留最終決定權。</p>
         </div>
