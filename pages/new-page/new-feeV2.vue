@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-04-09 10:59:56
+ * @LastEditTime: 2026-04-09 11:28:25
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -617,8 +617,15 @@ export default {
 </script>
 
 <style>
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
 body {
   overflow-x: hidden;
+  -ms-overflow-style: none;
 }
 .fee-wrap {
    height: 100vh;
