@@ -818,7 +818,7 @@ export default {
             link: "/vision-correction/relex-smile",
           },
           {
-            child_item: "CMER CLEAR-Vision",
+            child_item: this.$t("home.headers.orthopedicServicesChild_2"),
             link: "/vision-correction-presbyopia",
           },
           {
@@ -934,7 +934,7 @@ export default {
               link: "/smilePro",
             },
             {
-              child_item: "CMER CLEAR-Vision",
+              child_item: this.$t("home.headers.orthopedicServicesChild_2"),
               link: "/vision-correction-presbyopia/CLEAR_Vision",
             },
             {

@@ -1,4 +1,3 @@
-
 <style lang="scss" scoped>
 body {
   overflow-x: hidden;
@@ -12,7 +11,6 @@ a {
 :deep(.share-img) {
   margin-top: 0;
 }
-
 .d-none {
   display: none;
 }
@@ -23,14 +21,12 @@ i {
   margin-left: auto;
   margin-right: auto;
 }
-
 // 常见问题
 .question-mencare {
   padding: 0 2.56vw;
   max-width: 85.13vw;
   margin: 0 auto;
   margin-top: 11.28vw;
-
   .publicTitle-mencare {
     text-align: center;
     color: #4570b6;
@@ -48,7 +44,6 @@ i {
   .pubilc-title {
     h2 {
       color: #fff;
-
       &::after {
         background: #fff;
       }
@@ -56,7 +51,6 @@ i {
   }
   &-Box {
     margin-top: 5.38vw;
-
     .card {
       margin: 1.28vw 0;
       border: none;
@@ -72,7 +66,6 @@ i {
           svg {
             transition: all 0.3s linear;
           }
-
           svg {
             position: absolute;
             width: 3.33vw;
@@ -104,10 +97,8 @@ i {
             color: white;
           }
         }
-
         .card-body {
           padding: 0;
-
           span {
             border-bottom-left-radius: 2.56vw;
             border-bottom-right-radius: 2.56vw;
@@ -144,7 +135,6 @@ i {
     border: none;
   }
 }
-
 .card .header-title[aria-expanded="true"] {
   color: #fff;
   font-family: "Noto Sans HK";
@@ -155,7 +145,6 @@ i {
   letter-spacing: 0.54vw;
   padding: 2.82vw 9.49vw 3.33vw 4.87vw;
   background: #4570b6;
-
   svg {
     transition: all 0.3s linear;
     transform: rotate(180deg);
@@ -166,7 +155,6 @@ i {
     }
   }
 }
-
 @media screen and (max-width: 991px) {
   // 按钮
   .publicBtn-booking {
@@ -178,7 +166,6 @@ i {
     border-radius: 25.64vw;
     border: 0.51vw solid #4570b6;
     background: #4570b6;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +184,6 @@ i {
       width: 4.36vw;
     }
   }
-
   .ClearVisionBanner {
     // margin-top: 88px;
     .ClearVisionBanner-Box {
@@ -209,7 +195,6 @@ i {
         overflow: hidden;
         margin-top: 100px;
         // width: 100vw;
-
         h3 {
           text-align: center;
           color: #4570b6;
@@ -267,11 +252,9 @@ i {
         max-width: 100vw;
         overflow: hidden;
         position: relative;
-
         display: flex;
         justify-content: center;
         border-bottom: 0.26vw solid #4570b6;
-
         img {
           min-width: 130.77vw;
           text-align: center;
@@ -324,21 +307,18 @@ i {
         & > span:nth-child(2) {
           right: 2.56vw;
         }
-
         & > span:nth-child(3) {
           left: 16.92vw;
         }
         & > span:nth-child(4) {
           left: 5.64vw;
         }
-
         & > span:nth-child(5) {
           left: 22.05vw;
         }
       }
     }
   }
-
   // 什么事老花
   .WhatLaoHua {
     margin-top: 10.26vw;
@@ -354,7 +334,6 @@ i {
       }
       .WhatLaoHuaBox-text {
         margin-top: 2.56vw;
-
         p {
           margin: 0 auto;
           max-width: 84.62vw;
@@ -374,7 +353,6 @@ i {
       }
     }
   }
-
   // 矫视方案
   .CorrectionProgram {
     margin-top: 15.38vw;
@@ -382,7 +360,6 @@ i {
     position: relative;
     overflow: hidden;
     height: 222.05vw;
-
     .CorrectionProgram-Box {
       position: absolute;
       top: 0;
@@ -398,7 +375,6 @@ i {
           object-fit: cover;
         }
       }
-
       .CorrectionProgram-Box-show,
       .CorrectionProgram-Box-hide {
         position: absolute;
@@ -408,7 +384,6 @@ i {
         height: 100%;
         transition: transform 0.3s ease-out;
       }
-
       .CorrectionProgram-Box-hide {
         background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mbBg.avif")
           no-repeat;
@@ -441,7 +416,6 @@ i {
           }
           .CorrectionProgram-Box-hide-item-bottom {
             padding: 6.41vw 6.15vw 0 6.92vw;
-
             .CorrectionProgram-Box-hide-item-top-text {
               position: absolute;
               top: 10.26vw;
@@ -450,7 +424,6 @@ i {
               padding: 2.05vw 1.54vw 3.08vw 2.05vw;
               border-radius: 5px;
               border-top-left-radius: 0px;
-
               color: #fff;
               font-family: "Noto Sans TC";
               font-size: 3.08vw;
@@ -458,11 +431,9 @@ i {
               font-weight: 400;
               line-height: 1.5;
               letter-spacing: 0.62vw;
-              
               p {
                 margin-bottom: 0;
               }
-
               .CorrectionProgram-Box-hide-item-sub {
                 position: absolute;
                 top: -6.41vw;
@@ -473,7 +444,6 @@ i {
                 padding: 1.03vw 2.05vw 0px 2.05vw;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-
                 color: #fff;
                 font-family: "Noto Sans TC";
                 font-size: 3.08vw;
@@ -513,7 +483,6 @@ i {
       }
     }
   }
-
   // icl好处
   .icl-Good {
     margin-top: 40px;
@@ -569,27 +538,23 @@ i {
           line-height: 1.125;
         }
       }
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(2),
       & > .icl-Good-List-item:nth-child(3),
       & > .icl-Good-List-item:nth-child(4) {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(3),
       & > .icl-Good-List-item:nth-child(5) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(6) {
         justify-content: flex-end;
         padding-bottom: 3.59vw;
       }
     }
   }
-
   // 为什么选择希玛
   .icl-WhatChoose {
     padding: clamp(20px, 10.26vw, 40px) clamp(7.5px, 3.85vw, 15px);
@@ -605,7 +570,6 @@ i {
       margin: 0 auto;
       max-width: 100vw;
       margin-top: clamp(15px, 7.69vw, 30px);
-
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 100vw;
@@ -631,7 +595,6 @@ i {
       }
     }
   }
-
   // 不同老花矯視技術好處對比
   .visionBattle {
     position: relative;
@@ -657,7 +620,6 @@ i {
         font-weight: 900;
         line-height: 1.95;
       }
-
       .visionBattle-Box-list {
         .visionBattle-Box-list-item {
           h3 {
@@ -672,7 +634,6 @@ i {
             line-height: 2;
             letter-spacing: 0.26vw;
             padding: 0 6.41vw;
-
             flex-shrink: 0;
             background: linear-gradient(
               90deg,
@@ -681,7 +642,6 @@ i {
               #dae2f0 100%
             );
           }
-
           .visionBattle-Box-list-item-content {
             width: fit-content;
             margin: 17.95vw auto 0;
@@ -744,7 +704,6 @@ i {
             background-size: 100% auto;
             z-index: -1;
           }
-
           h3 {
             margin-top: 20.51vw;
           }
@@ -782,7 +741,6 @@ i {
       }
     }
   }
-
   // 合適對象
   .SuitableObject {
     position: relative;
@@ -798,12 +756,10 @@ i {
     .SuitableObject-bgLeft2 {
       display: none;
     }
-
     .SuitableObject-Box {
       position: relative;
       padding-bottom: 58.38vw;
       margin: 0 auto;
-
       &::after {
         content: "";
         position: absolute;
@@ -816,7 +772,6 @@ i {
         height: 76.92vw;
         z-index: -1;
       }
-
       .SuitableObject-Box-title {
         width: 80.26vw;
         height: 80.26vw;
@@ -828,7 +783,6 @@ i {
         padding-top: 16.92vw;
         margin: 0 auto;
         position: relative;
-
         &::before {
           content: "";
           position: absolute;
@@ -840,7 +794,6 @@ i {
           width: 21.28vw;
           height: 46.41vw;
         }
-
         h2 {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -881,13 +834,11 @@ i {
           img {
             max-width: 18.97vw;
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
           }
           p {
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -904,7 +855,6 @@ i {
             }
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(1) {
           position: absolute;
           left: 0;
@@ -923,7 +873,6 @@ i {
           right: 0;
           top: 0;
           z-index: 4;
-
           img {
             top: 11.03vw;
             max-width: 14.36vw;
@@ -938,7 +887,6 @@ i {
           left: 0;
           top: 38.46vw;
           z-index: 3;
-
           img {
             top: 8.97vw;
           }
@@ -952,10 +900,8 @@ i {
           right: 0;
           top: 38.46vw;
           z-index: 2;
-
           img {
             max-width: 14.36vw;
-
             top: 7.95vw;
           }
           p {
@@ -965,7 +911,6 @@ i {
       }
     }
   }
-
   // 预约
   .clearAppointment {
     width: 100vw;
@@ -978,7 +923,6 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     .clearAppointment-Box {
       display: flex;
       flex-direction: column;
@@ -1005,10 +949,8 @@ i {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         width: 81.03vw;
         height: 32.05vw;
-
         border-radius: 4.36vw;
         border: 0.13vw solid #4570b6;
         background: #fff;
@@ -1022,10 +964,8 @@ i {
           font-weight: 900;
           line-height: 0.73;
         }
-
         .clearAppointment-Box-item-icon {
           position: absolute;
-
           right: 5.13vw;
           width: 13.85vw;
           height: 13.85vw;
@@ -1041,7 +981,6 @@ i {
       }
     }
   }
-
   .CaseSharingV2 {
     width: fit-content;
     margin: 0 auto;
@@ -1118,11 +1057,9 @@ i {
           line-height: 1.125;
         }
       }
-
       & > .icl-Good-List-item {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:nth-child(5) {
         border-bottom: 1px solid #4570b6;
       }
@@ -1130,15 +1067,12 @@ i {
         border-bottom: 1px solid #4570b6;
         padding-bottom: clamp(5px, 2.56vw, 10px);
       }
-
       & > .icl-Good-List-item:nth-child(1) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(3) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(5) {
         border-right: none;
       }
@@ -1152,12 +1086,10 @@ i {
   .d-lg-block {
     display: block;
   }
-
   // 分享给朋友
   .CaseSharingV2 {
     display: none;
   }
-
   // 按钮
   .publicBtn-booking {
     width: fit-content;
@@ -1168,7 +1100,6 @@ i {
     border-radius: clamp(50px, 5.21vw, 100px);
     border: clamp(1px, 0.1vw, 2px) solid #4570b6;
     background: #4570b6;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1188,7 +1119,6 @@ i {
       height: clamp(15px, 1.56vw, 30px);
     }
   }
-
   .ClearVisionBanner {
     // margin-top: 217px;
     border-bottom: clamp(1px, 0.1vw, 2px) solid #4570b6;
@@ -1200,7 +1130,6 @@ i {
       .ClearVisionBanner-Box-content {
         overflow: hidden;
         // width: 100vw;
-
         h3 {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -1308,7 +1237,6 @@ i {
           left: clamp(89px, 9.27vw, 178px);
           bottom: clamp(149px, 15.52vw, 298px);
         }
-
         & > span:nth-child(3) {
           left: clamp(131px, 13.65vw, 262px);
           bottom: clamp(300px, 31.25vw, 600px);
@@ -1317,7 +1245,6 @@ i {
           right: clamp(186px, 19.38vw, 372px);
           bottom: clamp(340px, 35.42vw, 680px);
         }
-
         & > span:nth-child(5) {
           right: clamp(82px, 8.54vw, 164px);
           bottom: clamp(204.5px, 21.3vw, 409px);
@@ -1325,7 +1252,6 @@ i {
       }
     }
   }
-
   // 什么事老花
   .WhatLaoHua {
     margin-top: clamp(38px, 3.96vw, 76px);
@@ -1359,7 +1285,6 @@ i {
       }
     }
   }
-
   // 矫视方案
   .CorrectionProgram {
     scroll-margin-top: 200px;
@@ -1368,7 +1293,6 @@ i {
     position: relative;
     overflow: hidden;
     height: clamp(419.5px, 43.7vw, 839px);
-
     .CorrectionProgram-Box {
       position: absolute;
       bottom: 0;
@@ -1384,7 +1308,6 @@ i {
           object-fit: cover;
         }
       }
-
       .CorrectionProgram-Box-show,
       .CorrectionProgram-Box-hide {
         position: absolute;
@@ -1394,7 +1317,6 @@ i {
         height: 100%;
         transition: transform 0.3s ease-out;
       }
-
       .CorrectionProgram-Box-hide {
         background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-pc.avif")
           no-repeat;
@@ -1425,7 +1347,6 @@ i {
           }
           .CorrectionProgram-Box-hide-item-bottom {
             padding: clamp(12.5px, 1.3vw, 25px) clamp(41.5px, 4.32vw, 83px) 0;
-
             .CorrectionProgram-Box-hide-item-top-text {
               position: absolute;
               top: clamp(41.5px, 4.32vw, 83px);
@@ -1442,11 +1363,9 @@ i {
               font-weight: 400;
               line-height: 2.2;
               letter-spacing: clamp(2px, 0.21vw, 4px);
-
               p {
                 margin-bottom: 0;
               }
-
               .CorrectionProgram-Box-hide-item-sub {
                 position: absolute;
                 top: clamp(-39px, -2.03vw, -19.5px);
@@ -1497,7 +1416,6 @@ i {
       }
     }
   }
-
   // icl好处
   .icl-Good {
     margin-top: 65px;
@@ -1522,13 +1440,11 @@ i {
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       margin-top: 49px;
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(2),
       & > .icl-Good-List-item:nth-child(3) {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:last-child,
       & > .icl-Good-List-item:nth-child(3) {
         border-right: clamp(1px, 0.1vw, 2px) solid #4570b6;
@@ -1536,7 +1452,6 @@ i {
       & > .icl-Good-List-item:nth-child(6) {
         padding-bottom: 15px;
       }
-
       .icl-Good-List-item {
         z-index: 99;
         opacity: 1;
@@ -1583,7 +1498,6 @@ i {
       }
     }
   }
-
   .icl-WhatChoose {
     padding: 98px 0px 120px;
     .icl-WhatChoose-title {
@@ -1609,7 +1523,6 @@ i {
         max-width: 467px;
         text-align: justify;
       }
-
       .icl-WhatChoose-content-one-text {
         p {
           color: #6d6e71;
@@ -1632,13 +1545,11 @@ i {
       }
     }
   }
-
   // 不同老花矯視技術好處對比
   .visionBattle {
     position: relative;
     padding-top: clamp(66px, 6.88vw, 132px);
     margin-bottom: clamp(40px, 4.17vw, 80px);
-
     .visionBattle-Bg {
       position: absolute;
       width: clamp(953.5px, 99.32vw, 1907px);
@@ -1659,22 +1570,17 @@ i {
         font-weight: 900;
         line-height: 1;
       }
-
       .visionBattle-Box-list {
-
         display: flex;
         justify-content: center;
         margin-top: clamp(28px, 2.92vw, 56px);
-
         .visionBattle-Box-list-item {
           height: clamp(433px, 45.1vw, 866px);
           h3 {
             padding-top: clamp(7px, 0.73vw, 14px);
             padding-bottom: clamp(7px, 0.73vw, 14px);
             margin-top: clamp(11px, 1.15vw, 22px);
-
             display: table;
-
             text-align: center;
             color: #4570b6;
             font-family: "Poppins", sans-serif;
@@ -1685,7 +1591,6 @@ i {
             letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
             width: 400px;
           }
-
           .visionBattle-Box-list-item-content {
             width: fit-content;
             margin: clamp(90px, 9.38vw, 180px) auto 0;
@@ -1740,7 +1645,6 @@ i {
         & > .visionBattle-Box-list-item:nth-child(2) {
           position: relative;
           border-left: clamp(0.5px, 0.05vw, 1px) solid #809dcd;
-
           p {
             span {
               letter-spacing: clamp(2px, 0.21vw, 4px);
@@ -1758,7 +1662,6 @@ i {
             background-size: 100% auto;
             z-index: -1;
           }
-
           h3 {
             text-align: left;
             padding-left: clamp(16px, 1.67vw, 32px);
@@ -1802,13 +1705,11 @@ i {
       }
     }
   }
-
   // 合適對象
   .SuitableObject {
     position: relative;
     width: 100vw;
     margin-top: clamp(69px, 7.19vw, 138px);
-
     .SuitableObject-bg-right {
       position: absolute;
       right: clamp(11.5px, 1.2vw, 23px);
@@ -1823,7 +1724,6 @@ i {
       left: clamp(-40px, -2.08vw, -20px);
       top: clamp(-30px, -1.56vw, -15px);
     }
-
     .SuitableObject-bgLeft2 {
       position: absolute;
       width: clamp(102.5px, 10.68vw, 205px);
@@ -1835,7 +1735,6 @@ i {
       position: relative;
       padding-bottom: clamp(83px, 8.65vw, 166px);
       margin: 0 auto;
-
       &::after {
         content: "";
         position: absolute;
@@ -1850,7 +1749,6 @@ i {
         z-index: -1;
         pointer-events: none;
       }
-
       .SuitableObject-Box-title {
         width: clamp(281px, 29.27vw, 562px);
         height: clamp(281px, 29.27vw, 562px);
@@ -1862,7 +1760,6 @@ i {
         padding-top: clamp(66px, 6.88vw, 132px);
         margin: 0 auto;
         position: relative;
-
         &::before {
           content: "";
           position: absolute;
@@ -1875,7 +1772,6 @@ i {
           height: clamp(163px, 16.98vw, 326px);
           z-index: 5;
         }
-
         &::after {
           content: "";
           position: absolute;
@@ -1888,7 +1784,6 @@ i {
           height: clamp(130.5px, 13.59vw, 261px);
           z-index: 5;
         }
-
         h2 {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -1929,13 +1824,11 @@ i {
           img {
             max-width: clamp(67px, 6.98vw, 134px);
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
           }
           p {
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -1949,7 +1842,6 @@ i {
             letter-spacing: clamp(2.5px, 0.26vw, 5px);
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(1) {
           position: absolute;
           left: 0;
@@ -1968,7 +1860,6 @@ i {
           left: clamp(120px, 12.5vw, 240px);
           top: clamp(61px, 6.35vw, 122px);
           z-index: 2;
-
           img {
             top: clamp(38.5px, 4.01vw, 77px);
             max-width: clamp(50px, 5.21vw, 100px);
@@ -1983,7 +1874,6 @@ i {
           right: clamp(120px, 12.5vw, 240px);
           top: clamp(61px, 6.35vw, 122px);
           z-index: 3;
-
           img {
             top: clamp(32px, 3.33vw, 64px);
             max-width: clamp(66px, 6.88vw, 132px);
@@ -1998,10 +1888,8 @@ i {
           right: 0;
           top: 0px;
           z-index: 4;
-
           img {
             max-width: clamp(50.5px, 5.26vw, 101px);
-
             top: clamp(28px, 2.92vw, 56px);
           }
           p {
@@ -2011,7 +1899,6 @@ i {
       }
     }
   }
-
   // 常见问题
   .question-mencare {
     margin: initial;
@@ -2019,7 +1906,6 @@ i {
     padding: 0;
     padding-bottom: 0;
     max-width: none;
-
     .publicTitle-mencare {
       color: #4570b6;
       font-family: "Noto Sans TC";
@@ -2037,22 +1923,18 @@ i {
     padding-top: clamp(30px, 3.13vw, 60px);
     padding-bottom: clamp(16px, 1.67vw, 32px);
     background: #e8e0d5;
-
     .pubilc-title {
       h2 {
         color: #005bab;
-
         &::after {
           background: #005bab;
         }
       }
     }
-
     &-Box {
       margin-top: clamp(28.5px, 2.97vw, 57px);
       padding-left: 0px;
       padding-right: 0px;
-
       .card {
         margin: clamp(6.5px, 0.68vw, 13px) 0;
         border-radius: 10px;
@@ -2063,7 +1945,6 @@ i {
             span {
               display: inline-block;
             }
-
             svg {
               position: absolute;
               width: clamp(14px, 1.46vw, 28px);
@@ -2073,7 +1954,6 @@ i {
               transform: translateY(-50%);
             }
           }
-
           .header-title[aria-expanded="false"] {
             color: #fff;
             font-family: "Noto Sans HK";
@@ -2086,20 +1966,16 @@ i {
             padding: clamp(6.5px, 0.68vw, 13px) clamp(15px, 1.56vw, 30px)
               clamp(6.5px, 0.68vw, 13px) clamp(26.5px, 2.76vw, 53px);
           }
-
           .card-body {
             padding: 0;
-
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             span {
               box-sizing: content-box;
-
               border-bottom-left-radius: 10px;
               border-bottom-right-radius: 10px;
               padding: clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px)
                 clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px);
-
               color: #6d6e71;
               font-family: "Noto Sans TC";
               font-size: clamp(11.5px, 1.2vw, 23px);
@@ -2113,7 +1989,6 @@ i {
       }
     }
   }
-
   .card .header-title[aria-expanded="true"] {
     color: #fff;
     font-family: "Noto Sans HK";
@@ -2134,7 +2009,6 @@ i {
       }
     }
   }
-
   // 预约
   .clearAppointment {
     // margin-top: clamp(40px, 4.17vw, 80px);
@@ -2147,7 +2021,6 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-
     .clearAppointment-Box {
       display: flex;
       justify-content: center;
@@ -2164,7 +2037,6 @@ i {
         img {
           width: clamp(72.5px, 7.55vw, 145px);
           height: clamp(55px, 5.73vw, 110px);
-
           margin-bottom: clamp(15.5px, 1.61vw, 31px);
         }
       }
@@ -2183,7 +2055,6 @@ i {
         align-items: center;
         width: clamp(221px, 23.02vw, 442px);
         height: clamp(137px, 14.27vw, 274px);
-
         border-radius: clamp(15px, 1.56vw, 30px);
         border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
         background: #fff;
@@ -2198,7 +2069,6 @@ i {
           font-weight: 900;
           line-height: 69.444%;
         }
-
         &:hover {
           .clearAppointment-Box-item-icon {
             background: white;
@@ -2211,12 +2081,10 @@ i {
             }
           }
         }
-
         .clearAppointment-Box-item-icon {
           position: absolute;
           bottom: clamp(12.5px, 1.3vw, 25px);
           right: clamp(12.5px, 1.3vw, 25px);
-
           width: clamp(35.5px, 3.7vw, 71px);
           height: clamp(35.5px, 3.7vw, 71px);
           border-radius: 50%;
@@ -2233,7 +2101,6 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
@@ -2251,7 +2118,6 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1310px) {
   .new-container {
     max-width: 1320px !important;
@@ -2259,7 +2125,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1140px) {
   .head-bg {
     position: fixed;
@@ -2275,7 +2140,6 @@ i {
   .d-xl-block {
     display: block;
   }
-
   // 向上
   .top-btnV2 {
     position: fixed;
@@ -2285,7 +2149,6 @@ i {
     cursor: pointer;
   }
 }
-
 @media screen and (min-width: 1319px) {
   .icl-Good {
     .icl-Good-List {
@@ -2300,7 +2163,6 @@ i {
       & > .icl-Good-List-item:nth-child(3) {
         border-bottom: clamp(1px, 0.1vw, 2px) solid #4570b6;
       }
-
       .icl-Good-List-item {
         width: 16.5vw;
         height: 16.4vw;
@@ -2319,12 +2181,9 @@ i {
   }
 }
 </style>
-
-
 <template>
   <div class="lasik" style="overflow-x: hidden">
     <HeadV2 />
-
     <!-- <div class="new-container container center-Banner">
       <img
         class="d-block mx-auto"
@@ -2342,7 +2201,6 @@ i {
         sizes=" (max-width: 992px) 100vw,1216px"
       />
     </div> -->
-
     <section class="ClearVisionBanner mt-22 md:mt-[216px]">
       <div class="new-container container">
         <div class="ClearVisionBanner-Box">
@@ -2351,34 +2209,45 @@ i {
               <a
                 href="/vision-correction-presbyopia#CorrectionProgram"
                 @click.prevent="scrollTo('CorrectionProgram')"
-                >CMER<br class="d-lg-none" />
-                CLEAR-Vision</a
               >
-
+                Presbyopia<br class="d-lg-none" />
+                Treatments
+              </a>
               <h1>老花矯視</h1>
               <p>
-                希瑪微笑矯視中心主要提供兩種<br
-                  class="d-lg-none"
-                />可矯正老花的矯視服務
+                希瑪微笑矯視中心主要提供兩種
+                <br class="d-lg-none" />
+                可矯正老花的矯視服務
               </p>
               <p>
+                <a href="/vision-correction-presbyopia#CorrectionProgram"
+                  >PRESBYOND Laser Blended Vision LBV</a
+                >
+                <span class="font-bold text-text leading-[1.75]">、</span>
                 <a
                   href="/vision-correction-presbyopia#CorrectionProgram"
                   @click.prevent="scrollTo('CorrectionProgram')"
-                  >CMER CLEAR-Vision</a
+                  >Presbyopia Treatments</a
                 >及<a
-                  :href="!isMobile ? '/vision-correction-presbyopia#CorrectionProgram': '/vision-correction-presbyopia#CorrectionProgramTwo' "
-                  @click.prevent="!isMobile?scrollTo('CorrectionProgram'):scrollTo('CorrectionProgramTwo')"
+                  :href="
+                    !isMobile
+                      ? '/vision-correction-presbyopia#CorrectionProgram'
+                      : '/vision-correction-presbyopia#CorrectionProgramTwo'
+                  "
+                  @click.prevent="
+                    !isMobile
+                      ? scrollTo('CorrectionProgram')
+                      : scrollTo('CorrectionProgramTwo')
+                  "
                   >ICL Viva V6</a
                 >
               </p>
               <p>
-                如你正受以下老花問題困擾，<br
-                  class="d-lg-none"
-                />可參考本頁有關老花矯視服務的詳盡介紹。
+                如你正受以下老花問題困擾，
+                <br class="d-lg-none" />
+                可參考本頁有關老花矯視服務的詳盡介紹。
               </p>
             </div>
-
             <div class="ClearVisionBanner-Box-content-img">
               <img
                 decoding="async"
@@ -2394,7 +2263,6 @@ i {
                 "
                 sizes=" (max-width: 992px) 100vw,1216px"
               />
-
               <p>
                 <span><i>「</i>6<i>」</i>字同<i>「</i> 8<i>」</i>字</span>
                 &nbsp; <span>不能夠一眼分清？</span>
@@ -2411,28 +2279,25 @@ i {
         </div>
       </div>
     </section>
-
     <!-- 什麼是老花？ -->
     <section class="WhatLaoHua">
       <div class="new-container container WhatLaoHuaBox">
         <h2>什麼是老花？</h2>
         <div class="WhatLaoHuaBox-text">
           <p>
-            隨著年紀增長，人們可能會遇到老花的問題，這是一種影響近視力的視力狀況。由於在眼睛中的晶狀體彈性降低，使眼睛調節焦距的能力下降，導致<span >看近處物體時會出現視覺模糊</span>。
+            隨著年紀增長，人們可能會遇到老花的問題，這是一種影響近視力的視力狀況。由於在眼睛中的晶狀體彈性降低，使眼睛調節焦距的能力下降，導致<span>看近處物體時會出現視覺模糊</span>。
           </p>
           <br />
           <p>
-            老花並非疾病，而是隨著年齡增長而自然出現的現象。一般在40歲開始出現，到60歲時會達到較為穩定的狀態。為了改善老花帶來的視力問題，人們可以選擇配戴老花眼鏡、使用隱形眼鏡或接受老花矯視手術等方式，這些方法都可幫助改善近距離的視力，使日常生活中的閱讀和近距離工作變得更加容易，而進行<span id="CorrectionProgram">老花矯視更是受大眾歡迎的選項</span>。
+            老花並非疾病，而是隨著年齡增長而自然出現的現象。一般在40歲開始出現，到60歲時會達到較為穩定的狀態。為了改善老花帶來的視力問題，人們可以選擇配戴老花眼鏡、使用隱形眼鏡或接受老花矯視手術等方式，這些方法都可幫助改善近距離的視力，使日常生活中的閱讀和近距離工作變得更加容易，而進行<span
+              id="CorrectionProgram"
+              >老花矯視更是受大眾歡迎的選項</span
+            >。
           </p>
         </div>
       </div>
     </section>
-
-    <div
-      class="CorrectionProgram"
-      
-      ref="correctionProgram"
-    >
+    <div class="CorrectionProgram" ref="correctionProgram">
       <div class="CorrectionProgram-Box">
         <div class="CorrectionProgram-Box-show" ref="boxShow">
           <img
@@ -2462,17 +2327,20 @@ i {
               <div class="CorrectionProgram-Box-hide-item-top-text">
                 <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
                 <p>• 39歲以上有老花</p>
-                <p>• 同時有近視/遠視/散光問題</p> 
+                <p>• 同時有近視/遠視/散光問題</p>
               </div>
-              <h3>CMER CLEAR-Vision</h3>
-              <p class="CorrectionProgram-Box-hide-item-bottom-text" id="CorrectionProgramTwo">
+              <h3>Presbyopia Treatments 老花矯視</h3>
+              <p
+                class="CorrectionProgram-Box-hide-item-bottom-text"
+                id="CorrectionProgramTwo"
+              >
                 坊間稱之為<span>人工晶體置換術</span>。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，
-                <span >一次過解決近視、遠視、散光、老花</span
+                <span>一次過解決近視、遠視、散光、老花</span
                 >等問題。希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業諮詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
               </p>
             </div>
           </div>
-          <div class="CorrectionProgram-Box-hide-item" >
+          <div class="CorrectionProgram-Box-hide-item">
             <div class="CorrectionProgram-Box-hide-item-top">
               <img
                 src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcimg2.avif"
@@ -2497,7 +2365,6 @@ i {
         </div>
       </div>
     </div>
-
     <!-- 按钮 -->
     <a
       target="_blank"
@@ -2526,162 +2393,213 @@ i {
         />
       </svg>
     </a>
-
-
     <!-- start CMER CLEAR-Vision 老花矯視費用 -->
-<div class="bg-[#F6FAFD] py-8 px-2  md:px-0 md:pb-20 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[110px]">
-<div class="w-full  flex flex-col items-center mx-auto ">
-    
-    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
-CMER CLEAR-Vision 老花矯視費用
-    </h2>
-    <div class="w-full">
-      <div class="space-y-7 lg:space-y-[60px]">
-        <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">人工晶體費用</div>
-          <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                單焦點人工晶體(單眼)<br /><span>不帶散光</span>
-              </div>
+    <div
+      class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-20 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[110px]"
+    >
+      <div class="w-full flex flex-col items-center mx-auto">
+        <h2
+          class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
+        >
+          Presbyopia Treatments 老花矯視費用
+        </h2>
+        <div class="w-full">
+          <div class="space-y-7 lg:space-y-[60px]">
+            <div>
               <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto"
               >
-                <span class="text-2xl md:text-5xl">港幣$25,000- </span><span class="text-2xl md:text-5xl">港幣$28,000</span>
+                人工晶體費用
+              </div>
+              <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    單焦點人工晶體(單眼)<br /><span>不帶散光</span>
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣$25,000- </span
+                    ><span class="text-2xl md:text-5xl">港幣$28,000</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    單焦點人工晶體(單眼)<br /><span>帶散光</span>
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣$30,000- </span
+                    ><span class="text-2xl md:text-5xl">港幣$35,000</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    EDOF /多焦點人工晶體<br /><span>(單眼)不帶散光</span>
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣$35,000- </span
+                    ><span class="text-2xl md:text-5xl">港幣$45,000</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    EDOF /多焦點人工晶體<br /><span>(單眼)帶散光</span>
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣$43,000- </span
+                    ><span class="text-2xl md:text-5xl">港幣$51,000</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    術前檢查費用
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣$680 </span
+                    ><span class="text-2xl md:text-5xl"></span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                單焦點人工晶體(單眼)<br /><span>帶散光</span>
-              </div>
+            <div>
               <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto"
               >
-                <span class="text-2xl md:text-5xl">港幣$30,000- </span><span class="text-2xl md:text-5xl">港幣$35,000</span>
+                Presbyond LBV費用
+              </div>
+              <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    Presbyond LBV<br class="block sm:hidden" />（雙眼）
+                  </div>
+                  <div
+                    class="text-[#F59E0B] -ml-[68px] sm:ml-0 text-right font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col"
+                  >
+                    <p class="text-2xl md:text-5xl pb-1 md:pb-3">
+                      港幣$58,000*
+                    </p>
+                    <p class="text-xs min-[360px]:text-sm md:text-xl">
+                      指定信用卡（東亞/渣打/滙豐）<br
+                        class="block sm:hidden"
+                      />可享6/12/18/24/36個月免息分期
+                    </p>
+                    <p class="text-text text-xs min-[360px]:text-sm md:text-xl">
+                      EPS用戶港幣$47,500<sup>#</sup>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    術前檢查費用
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣$100</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                EDOF /多焦點人工晶體<br /><span>(單眼)不帶散光</span>
-              </div>
+            <div>
               <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto"
               >
-                <span class="text-2xl md:text-5xl">港幣$35,000- </span><span class="text-2xl md:text-5xl">港幣$45,000</span>
+                ICL Viva V6費用
               </div>
-            </div>
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                EDOF /多焦點人工晶體<br /><span>(單眼)帶散光</span>
-              </div>
-              <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
-              >
-                <span class="text-2xl md:text-5xl">港幣$43,000- </span><span class="text-2xl md:text-5xl">港幣$51,000</span>
-              </div>
-            </div>
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                術前檢查費用
-              </div>
-              <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
-              >
-                <span class="text-2xl md:text-5xl">港幣$680 </span><span class="text-2xl md:text-5xl"></span>
+              <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    ICL Viva V6（雙眼）
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <p class="text-2xl md:text-5xl">港幣$80,000</p>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    術前檢查費用
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣$500</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">Presbyond LBV費用</div>
-          <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+          <div class="mt-8 md:mt-12 flex flex-col items-center">
+            <a
+              href="/fee#table2"
+              class="md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3"
             >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                Presbyond LBV<br class="block sm:hidden"/>（雙眼）
-              </div>
-              <div
-                class="text-[#F59E0B] -ml-[68px] sm:ml-0 text-right font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col"
+              查看矯視費用詳情
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]"
+                viewBox="0 0 34 34"
+                fill="none"
               >
-                <p class="text-2xl md:text-5xl pb-1 md:pb-3">港幣$58,000*</p>
-                <p class="text-xs min-[360px]:text-sm md:text-xl">指定信用卡（東亞/渣打/滙豐）<br class="block sm:hidden"/>可享6/12/18/24/36個月免息分期</p>
-                <p class="text-text text-xs min-[360px]:text-sm md:text-xl">EPS用戶港幣$47,500<sup>#</sup></p>
-              </div>
-            </div>
+                <path
+                  d="M3.18018 30.3632L29.8334 3.70996"
+                  stroke="white"
+                  stroke-width="6.36042"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M7.06396 2.8623H30.742V25.7598"
+                  stroke="white"
+                  stroke-width="5.72438"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
             <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
+              class="mt-2 md:!mt-4 text-center font-light text-text text-sm md:text-2xl leading-relaxed"
             >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                術前檢查費用
-              </div>
-              <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
-              >
-                <span class="text-2xl md:text-5xl">港幣$100</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">ICL Viva V6費用</div>
-          <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                ICL Viva V6（雙眼）
-              </div>
-              <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
-              >
-                <p class="text-2xl md:text-5xl">港幣$80,000</p>
-              </div>
-            </div>
-            <div
-              class="bg-white border border-[#4570b6] rounded-2xl py-[20px] px-[8px] md:py-[36px] md:px-[28px] lg:py-[48px] lg:px-[36px] flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                術前檢查費用
-              </div>
-              <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col md:flex-row"
-              >
-                <span class="text-2xl md:text-5xl">港幣$500</span>
-              </div>
+              <p>此為香港價錢</p>
+              <p>
+                *矯視費用已包括術前檢查費用港幣$100
+                （若沒有預約進行矯視，需另外繳付術前檢查費用）
+              </p>
+              <p>
+                #免責聲明：受條款及細則約束。僅適用於以 EPS
+                全數支付之客戶。如有任何爭議，希瑪眼科將保留最終決定權。
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="mt-8 md:mt-12 flex flex-col items-center">
-        <a href="/fee#table2" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
-         查看矯視費用詳情
-          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
-  <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
-  <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
-</svg>
-        </a>
-        <div class="mt-2 md:!mt-4 text-center font-light text-text text-sm md:text-2xl leading-relaxed">
-          <p>此為香港價錢</p>
-          <p>*矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
-          <p>#免責聲明：受條款及細則約束。僅適用於以 EPS 全數支付之客戶。如有任何爭議，希瑪眼科將保留最終決定權。</p>
         </div>
       </div>
     </div>
-  </div>
-  </div>
     <!-- end CMER CLEAR-Vision 老花矯視費用 -->
-
     <!-- 人工晶體置換術的好處 -->
     <section class="icl-Good">
       <h2 class="icl-Good-title">人工晶體置換術的好處</h2>
@@ -2692,7 +2610,11 @@ CMER CLEAR-Vision 老花矯視費用
           :key="index"
         >
           <img :src="item.img" alt="" />
-          <h3 class="text-primary mt-3 lg:mt-7 font-bold leading-[0.35em] lg:leading-[0.25em] text-lg lg:text-2xl">{{ $t(item.title) }}</h3>
+          <h3
+            class="text-primary mt-3 lg:mt-7 font-bold leading-[0.35em] lg:leading-[0.25em] text-lg lg:text-2xl"
+          >
+            {{ $t(item.title) }}
+          </h3>
           <div v-if="!isMobile" class="mt-3">
             <p v-for="(i, idx) in item.text" :key="idx">{{ $t(i) }}</p>
           </div>
@@ -2702,7 +2624,6 @@ CMER CLEAR-Vision 老花矯視費用
         </div>
       </div>
     </section>
-
     <!-- 為何選擇希瑪? -->
     <!-- <section class="icl-WhatChoose">
       <h2 class="icl-WhatChoose-title">
@@ -2742,7 +2663,6 @@ CMER CLEAR-Vision 老花矯視費用
         </div>
       </div>
     </section> -->
-
     <section class="visionBattle">
       <img
         class="visionBattle-Bg"
@@ -2763,7 +2683,7 @@ CMER CLEAR-Vision 老花矯視費用
         <h2>老花矯視技術好處對比</h2>
         <div class="visionBattle-Box-list">
           <div class="visionBattle-Box-list-item">
-            <h3>CMER CLEAR-Vision</h3>
+            <h3>Presbyopia Treatments</h3>
             <div class="visionBattle-Box-list-item-content">
               <p>
                 <img
@@ -2772,8 +2692,7 @@ CMER CLEAR-Vision 老花矯視費用
                 />
                 <span>不需依賴眼鏡/隱形眼鏡</span>
               </p>
-
-                     <p>
+              <p>
                 <img
                   src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
                   alt=""
@@ -2828,7 +2747,6 @@ CMER CLEAR-Vision 老花矯視費用
               </p>
             </div>
           </div>
-
           <div class="visionBattle-Box-list-item">
             <h3>ICL Viva V6</h3>
             <div class="visionBattle-Box-list-item-content">
@@ -2898,7 +2816,6 @@ CMER CLEAR-Vision 老花矯視費用
         </div>
       </div>
     </section>
-
     <section class="clearAppointment">
       <div class="clearAppointment-Box">
         <a href="/ophthalmicInfo/AppointForm" class="clearAppointment-Box-item">
@@ -2907,7 +2824,6 @@ CMER CLEAR-Vision 老花矯視費用
             alt=""
           />
           <p>預約老花講座</p>
-
           <div class="clearAppointment-Box-item-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -2931,7 +2847,6 @@ CMER CLEAR-Vision 老花矯視費用
             </svg>
           </div>
         </a>
-
         <a
           target="_blank"
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -2967,7 +2882,6 @@ CMER CLEAR-Vision 老花矯視費用
         </a>
       </div>
     </section>
-
     <!-- 合適對象-->
     <section class="SuitableObject">
       <img
@@ -2985,7 +2899,6 @@ CMER CLEAR-Vision 老花矯視費用
         "
         sizes=" (max-width: 992px) 100vw,1216px"
       />
-
       <img
         class="SuitableObject-bgLeft1"
         src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgLeft1.svg"
@@ -2996,7 +2909,6 @@ CMER CLEAR-Vision 老花矯視費用
         src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgLeft2.svg"
         alt=""
       />
-
       <div class="SuitableObject-Box container">
         <div class="SuitableObject-Box-title">
           <h2>老花矯視的合適對象</h2>
@@ -3006,7 +2918,6 @@ CMER CLEAR-Vision 老花矯視費用
             />老花矯視都讓你清楚見證<br class="d-none d-lg-block" />往後每一刻。
           </p>
         </div>
-
         <div class="SuitableObject-Box-List">
           <div class="SuitableObject-Box-List-item">
             <img
@@ -3015,7 +2926,6 @@ CMER CLEAR-Vision 老花矯視費用
             />
             <p>39歲以上</p>
           </div>
-
           <div class="SuitableObject-Box-List-item">
             <img
               src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-2.svg"
@@ -3023,7 +2933,6 @@ CMER CLEAR-Vision 老花矯視費用
             />
             <p>熱愛運動</p>
           </div>
-
           <div class="SuitableObject-Box-List-item">
             <img
               src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-3.svg"
@@ -3035,7 +2944,6 @@ CMER CLEAR-Vision 老花矯視費用
               >
             </p>
           </div>
-
           <div class="SuitableObject-Box-List-item">
             <img
               src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-4.svg"
@@ -3046,9 +2954,7 @@ CMER CLEAR-Vision 老花矯視費用
         </div>
       </div>
     </section>
-
     <!-- 按钮 -->
-
     <a href="/fee" class="publicBtn-booking">
       <span> 了解老花矯視價格 </span>
       <svg
@@ -3072,9 +2978,7 @@ CMER CLEAR-Vision 老花矯視費用
         />
       </svg>
     </a>
-
     <!-- 常见问题 -->
-
     <section class="question-mencare">
       <div class="container">
         <h2 class="publicTitle-mencare">老花矯視的常見問題</h2>
@@ -3125,7 +3029,6 @@ CMER CLEAR-Vision 老花矯視費用
                 </a>
               </div>
             </div>
-
             <div class="card collapseActive expanded">
               <div class="card-header d-flex flex-column-reverse">
                 <div
@@ -3171,7 +3074,6 @@ CMER CLEAR-Vision 老花矯視費用
                 </a>
               </div>
             </div>
-
             <div class="card collapseActive expanded">
               <div class="card-header d-flex flex-column-reverse">
                 <div
@@ -3352,7 +3254,6 @@ CMER CLEAR-Vision 老花矯視費用
         </div>
       </div>
     </section>
-
     <div class="top-btnV2" @click="scrollToTopV2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -3370,7 +3271,6 @@ CMER CLEAR-Vision 老花矯視費用
         />
       </svg>
     </div>
-
     <section class="CaseSharingV2">
       <div>
         <svg
@@ -3458,12 +3358,10 @@ import HeadV2 from "@/components/Publice/HeadeV2.vue";
 import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
-
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
@@ -3488,10 +3386,8 @@ export default {
     process,
     xtar,
     film,
-
     FooterV2,
     HeadV2,
-
     BannerSlider,
   },
   head() {
@@ -3500,7 +3396,6 @@ export default {
         meta: [{ hid: "robots", name: "robots", content: "noindex" }],
       };
     }
-
     return {
       title:
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
@@ -3563,14 +3458,12 @@ export default {
       scrollSensitivity: 2,
       targetTop: 0,
       isAnimating: false,
-
       isMobile: false,
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-presbyopia",
       canonicalHrefCN:
         "https://smile.hkcmereye.com/cn/vision-correction-presbyopia",
       browserTitle: "老花矯視 - 希瑪微笑矯視中心",
       browserTitleCn: "老花矫视 - 希玛微笑矫视中心",
-
       iclGoodList: [
         {
           img: "https://statichk.cmermedical.com/smile/vision-correction-iclV2/good/icl-good-1.svg",
@@ -3606,7 +3499,6 @@ export default {
           img: "https://statichk.cmermedical.com/smile/vision-correction-iclV2/good/icl-good-6.svg",
           title: "Correct.newIcl.section3.text6_title1",
           text: ["根據個人眼睛實際狀況和", "生活需要，製訂合適的", "矯視方案"],
-
           mbText: [
             "根據個人眼睛實際",
             "狀況和生活需要，",
@@ -3616,7 +3508,6 @@ export default {
       ],
     };
   },
-
   watch: {
     "$route.hash": {
       immediate: true,
@@ -3625,7 +3516,6 @@ export default {
       },
     },
   },
-
   methods: {
     handleHashScroll() {
       const hash = this.$route.hash;
@@ -3646,11 +3536,9 @@ export default {
       // 更新 URL 的 hash（不刷新页面）
       this.$router.replace({ hash: `#${id}` });
     },
-
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-
     scrollToTopV2() {
       window.scrollTo({
         top: 0,
@@ -3660,17 +3548,13 @@ export default {
     initPcScrollHandler() {
       const section = this.$refs.correctionProgram;
       if (!section) return;
-
       // 获取模块距离顶部的距离
       this.targetTop = section.offsetTop;
-
       // 计算触发点（比如模块顶部还剩 200px 时开始拦截）
       const triggerPoint = this.targetTop - window.innerHeight + 600;
       console.log("triggerPoint" + triggerPoint);
-
       const throttledScroll = throttle(() => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
         if (
           !this.isAnimating &&
           scrollTop >= triggerPoint &&
@@ -3680,22 +3564,18 @@ export default {
           this.isAnimating = true;
           this.animateBoxShow();
         }
-
         if (scrollTop >= this.targetTop) {
           // 模块已经到达顶部，解锁滚动
           // this.lockScroll = false;
           this.isAnimating = false;
         }
-
         // if (this.lockScroll && scrollTop >= this.targetTop) {
         //   // 模块已经到达顶部，解锁滚动
         //   this.lockScroll = false;
         //   this.isAnimating = false;
         // }
       }, 50);
-
       window.addEventListener("scroll", throttledScroll);
-
       // 阻止原生滚动（关键）
       // window.addEventListener(
       //   "wheel",
@@ -3706,7 +3586,6 @@ export default {
       //   },
       //   { passive: false }
       // );
-
       // 同样阻止触摸板滚动
       // window.addEventListener(
       //   "touchmove",
@@ -3718,19 +3597,15 @@ export default {
       //   { passive: false }
       // );
     },
-
     animateBoxShow() {
       const showEl = this.$refs.boxShow;
       const animate = () => {
         if (this.animationOffset >= this.maxOffset) return;
-
         this.animationOffset += Math.min(
           this.scrollSensitivity,
           this.maxOffset - this.animationOffset
         );
-
         this.updateAnimation(showEl);
-
         if (this.animationOffset < this.maxOffset) {
           requestAnimationFrame(animate);
         } else {
@@ -3738,10 +3613,8 @@ export default {
           //this.lockScroll = false;
         }
       };
-
       requestAnimationFrame(animate);
     },
-
     updateAnimation(showEl) {
       if (this.ticking) return;
       requestAnimationFrame(() => {
@@ -3750,10 +3623,8 @@ export default {
       });
       this.ticking = true;
     },
-
     initMobileScrollHandler() {
       const section = this.$refs.correctionProgram;
-
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -3765,10 +3636,8 @@ export default {
         },
         { threshold: [0.1] }
       );
-
       observer.observe(section);
     },
-
     startMobileAnimation() {
       const showEl = this.$refs.boxShow;
       setTimeout(() => {
@@ -3776,14 +3645,12 @@ export default {
       }, 1000);
     },
   },
-
   beforeUnmount() {
     // 清理 scroll 监听器
     if (this.throttledCheck) {
       window.removeEventListener("scroll", this.throttledCheck);
     }
   },
-
   mounted() {
     this.windowWidth = window.innerWidth;
     this.handleHashScroll();
@@ -3792,7 +3659,6 @@ export default {
     } else {
       this.isMobile = false;
     }
-
     if (this.isMobile) {
       this.initMobileScrollHandler();
     } else {
@@ -3809,5 +3675,3 @@ export default {
   },
 };
 </script>
-
-

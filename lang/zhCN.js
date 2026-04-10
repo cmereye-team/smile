@@ -29,7 +29,7 @@ module.exports = {
       aboutSmileChild_2: "医生团队",
       aboutSmileChild_3: "中心设备",
       orthopedicServicesChild_1: "SMILE 微笑激光矫视",
-      orthopedicServicesChild_2: "CMER CLEAR-Vision",
+      orthopedicServicesChild_2: "Presbyopia Treatments 老花矯視",
       orthopedicServicesChild_3: "LASIK 激光矫视",
       orthopedicServicesChild_4: "ICL植入式隐形眼镜",
       orthopedicServicesChild_5: "SMILE Pro微笑激光矫视",

@@ -22,7 +22,7 @@
       aboutSmileChild_2: "Medical Team",
       aboutSmileChild_3: "Medical Equipment",
       orthopedicServicesChild_1: "ReLEx SMILE",
-      orthopedicServicesChild_2: "CMER CLEAR-Vision",
+      orthopedicServicesChild_2: "Presbyopia Treatments",
       orthopedicServicesChild_3: "LASIK",
       orthopedicServicesChild_4: "Implantable Collamer Lens (ICL)",
       orthopedicServicesChild_5: "SMILE Pro",
