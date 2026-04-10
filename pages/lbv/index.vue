@@ -3003,7 +3003,7 @@ i {
                 <div class="CorrectionProgram-Box-hide-item-top-text">
                   <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
                   <p>• 39歲或以上有老花</p>
-                  <p>• 同時有近視/遠視問題</p>
+                  <p>• 有近視問題</p>
                   <p>• 未有白內障</p>
                 </div>
               </div>
