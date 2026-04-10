@@ -1,83 +1,159 @@
 <template>
-     <!-- 表格 -->
-    <section class="smilepro-difference">
-      <div class="smilepro-difference-title">
-        <div>
-          LBV/CLEAR-Vision/ICL Viva V6<br class="d-lg-none" />
-          大不同
-        </div>
+  <!-- 表格 -->
+  <section class="smilepro-difference">
+    <div class="smilepro-difference-title">
+      <div>
+        LBV/CLEAR-Vision/ICL Viva V6<br class="d-lg-none" />
+        大不同
       </div>
+    </div>
 
-      <table class="table custom-comparison-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>PRESB<br class="d-lg-none" />
-YOND <br class="d-lg-none" />
-LBV<br  />視覺融合<br class="d-lg-none" />老花激光<br class="d-lg-none" />手術</th>
-            <th>
-              CMER <br class="d-lg-none" />
-CLEAR<br class="d-lg-none" />
-Vision<br  /> 
-人工晶體<br class="d-lg-none" />
-置換術<br class="d-lg-none" />
-            </th>
-            <th>
-             ICL Viva<br class="d-lg-none" /> V6<br  />植入式<br class="d-lg-none" />隱形眼鏡
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-             技術<br class="d-lg-none" />類型
-            </td>
-            <td>準分子激光 + <br>
-全飛秒激光<br class="d-lg-none" />混合式老花<br class="d-lg-none" />矯視<br>(Laser<br class="d-lg-none" /> Blended<br class="d-lg-none" /> Vision)</td>
-            <td>人工<br class="d-lg-none" />晶體置換</td>
-            <td>植入式延伸<br class="d-lg-none" />景深(EDOF)<br /> 隱形眼鏡<br class="d-lg-none" />(非激光)</td>
-          </tr>
-          <tr>
-            <td>可矯正<br class="d-lg-none" />範圍</td>
-            <td>主要針對老花<br class="d-lg-none" />+近視1,200度/<br />遠視600度<br class="d-lg-none" />/散光500度</td>
-            <td>主要針對<br class="d-lg-none" />老花 + <br class="hidden md:block" /> 近視/<br class="d-lg-none" />遠視/散光</td>
-            <td>近視1,800 度<br class="d-lg-none" />以下、<br class="hidden md:block" />可<br class="d-lg-none" />同時矯正老花</td>
-          </tr>
-          <tr>
-            <td>保留<br class="d-lg-none" />天然晶體?</td>
-            <td><span class="flex items-center justify-center gap-2"><img  src="https://statichk.cmermedical.com/smile/feeV2/success.svg" alt="包括">保留</span></td>
-            <td><span class="flex items-center justify-center gap-2"><img  src="https://statichk.cmermedical.com/smile/feeV2/error.svg" alt="包括">不保留</span></td>
-            <td><span class="flex items-center justify-center gap-2"><img  src="https://statichk.cmermedical.com/smile/feeV2/success.svg" alt="包括">保留</span></td>
-          </tr>
+    <table class="table custom-comparison-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="bg-e5f9ff">
+            PRESB<br class="d-lg-none" />
+            YOND <br class="d-lg-none" />
+            LBV<br />視覺融合<br class="d-lg-none" />老花激光<br
+              class="d-lg-none"
+            />手術
+          </th>
+          <th class="bg-f8eeff">
+            CMER <br class="d-lg-none" />
+            CLEAR<br class="d-lg-none" />
+            Vision<br />
+            人工晶體<br class="d-lg-none" />
+            置換術<br class="d-lg-none" />
+          </th>
+          <th class="bg-e8fdf4">
+            ICL Viva<br class="d-lg-none" />
+            V6<br />植入式<br class="d-lg-none" />隱形眼鏡
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>技術<br class="d-lg-none" />類型</td>
+          <td>
+            準分子激光 + <br />
+            全飛秒激光<br class="d-lg-none" />混合式老花<br
+              class="d-lg-none"
+            />矯視<br />(Laser<br class="d-lg-none" />
+            Blended<br class="d-lg-none" />
+            Vision)
+          </td>
+          <td>人工<br class="d-lg-none" />晶體置換</td>
+          <td>
+            植入式延伸<br class="d-lg-none" />景深(EDOF)<br />
+            隱形眼鏡<br class="d-lg-none" />(非激光)
+          </td>
+        </tr>
+        <tr>
+          <td>可矯正<br class="d-lg-none" />範圍</td>
+          <td>
+            主要針對老花<br class="d-lg-none" />+近視1,200度/<br />遠視600度<br
+              class="d-lg-none"
+            />/散光500度
+          </td>
+          <td>
+            主要針對<br class="d-lg-none" />老花 +
+            <br class="hidden md:block" />
+            近視/<br class="d-lg-none" />遠視/散光
+          </td>
+          <td>
+            近視1,800 度<br class="d-lg-none" />以下、<br
+              class="hidden md:block"
+            />可<br class="d-lg-none" />同時矯正老花
+          </td>
+        </tr>
+        <tr>
+          <td>保留<br class="d-lg-none" />天然晶體?</td>
+          <td>
+            <span class="flex items-center justify-center gap-2"
+              ><img
+                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                alt="包括"
+              />保留</span
+            >
+          </td>
+          <td>
+            <span class="flex items-center justify-center gap-2"
+              ><img
+                src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                alt="包括"
+              />不保留</span
+            >
+          </td>
+          <td>
+            <span class="flex items-center justify-center gap-2"
+              ><img
+                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                alt="包括"
+              />保留</span
+            >
+          </td>
+        </tr>
 
-         
+        <tr>
+          <td>視力效果</td>
+          <td>
+            提供遠、<br class="d-lg-none" />中、近<br />
+            「全距離高<br class="d-lg-none" />清視覺」<br />
+            <span class="text-[#73CE93] font-black"
+              >保留良好立<br class="d-lg-none" />體視覺</span
+            >
+          </td>
+          <td>
+            視乎人工晶體<br class="d-lg-none" />選擇,
+            <br class="hidden md:block" />
+            單焦距<br class="d-lg-none" />人工晶體用<br
+              class="d-lg-none"
+            />Mono-Vision<br class="d-lg-none" />方式能提供遠/<br
+              class="d-lg-none"
+            />近距離高清<br class="d-lg-none" />視力;
+            <br class="hidden md:block" />
+            多焦距或<br class="d-lg-none" />延伸景深的<br
+              class="d-lg-none"
+            />人工晶體則能<br class="d-lg-none" />提供遠/中/近<br
+              class="d-lg-none"
+            />距離高清視力
+          </td>
+          <td>
+            提供遠/中/近<br class="d-lg-none" />距離高清視力，<br />
+            特別加強中近<br class="d-lg-none" />距離 EDOF 視力
+          </td>
+        </tr>
 
-          <tr>
-            <td>視力效果</td>
-            <td>提供遠、<br class="d-lg-none" />中、近<br  />
-「全距離高<br class="d-lg-none" />清視覺」<br>
-<span class="text-[#73CE93] font-black">保留良好立<br class="d-lg-none" />體視覺</span>
-</td>
-            <td>視乎人工晶體<br class="d-lg-none" />選擇, <br class="hidden md:block" />
-單焦距<br class="d-lg-none" />人工晶體用<br class="d-lg-none" />Mono-Vision<br class="d-lg-none" />方式能提供遠/<br class="d-lg-none" />近距離高清<br class="d-lg-none" />視力; <br class="hidden md:block" />
-多焦距或<br class="d-lg-none" />延伸景深的<br class="d-lg-none" />人工晶體則能<br class="d-lg-none" />提供遠/中/近<br class="d-lg-none" />距離高清視力</td>
-            <td>提供遠/中/近<br class="d-lg-none" />距離高清視力，<br> 特別加強中近<br class="d-lg-none" />距離 EDOF 視力</td>
-          </tr>
+        <tr>
+          <td>可逆轉?</td>
+          <td>
+            <img
+              class="mx-auto"
+              src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+              alt="不包括"
+            />
+          </td>
+          <td>
+            <img
+              class="mx-auto"
+              src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+              alt="不包括"
+            />
+          </td>
+          <td>
+            <div class="flex items-center justify-center gap-2">
+              <img
+                src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                alt="包括"
+              />可逆轉（晶體可取出）
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-          <tr>
-            <td>
-              可逆轉?
-            </td>
-            <td><img class="mx-auto" src="https://statichk.cmermedical.com/smile/feeV2/error.svg" alt="不包括"></td>
-            <td><img class="mx-auto" src="https://statichk.cmermedical.com/smile/feeV2/error.svg" alt="不包括"></td>
-            <td ><div class="flex items-center justify-center gap-2"><img  src="https://statichk.cmermedical.com/smile/feeV2/success.svg" alt="包括">可逆轉（晶體可取出）</div></td>
-          </tr>
-
-          
-        </tbody>
-      </table>
-
-      <a
+    <!-- <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
         class="mx-auto icl-btn"
@@ -103,10 +179,19 @@ Vision<br  />
             stroke-linecap="round"
           />
         </svg>
-      </a>
-    </section>
+      </a> -->
+  </section>
 </template>
 <style lang="scss" scoped>
+.bg-e5f9ff {
+  background-color: #e5f9ff;
+}
+.bg-f8eeff {
+  background-color: #f8eeff;
+}
+.bg-e8fdf4 {
+  background-color: #e8fdf4;
+}
 :deep(.share-img) {
   margin-top: 0;
 }
@@ -122,9 +207,9 @@ i {
 }
 
 @media screen and (min-width: 1139px) {
-  .new-Footer-v2{
-  margin-top: 0 !important;
-}
+  .new-Footer-v2 {
+    margin-top: 0 !important;
+  }
   .new-container {
     max-width: 1140px !important;
     margin-left: auto;
@@ -760,8 +845,8 @@ i {
   .smilepro-difference {
     margin-top: 93px;
     max-width: 1260px;
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
@@ -824,7 +909,6 @@ i {
     }
 
     .custom-comparison-table thead th {
-      background: #E6F9FF;
       width: 107px;
       height: 85px;
       color: #4570b6;
@@ -844,11 +928,12 @@ i {
     .custom-comparison-table thead tr > th:nth-child(1) {
       background: none;
     }
-    .custom-comparison-table thead tr > th:nth-child(3) {
-      background: #F8EEFF;
-      color: #4570B6;
-      line-height: 1.357;
-    }
+    // .custom-comparison-table thead tr > th:nth-child(3) {
+    //   background: #f8eeff;
+    // }
+    // .custom-comparison-table thead tr > th:nth-child(4) {
+    //   background: #e8fdf4;
+    // }
 
     .custom-comparison-table tbody tr td {
       color: #60605f;
@@ -882,12 +967,12 @@ i {
     .custom-comparison-table tbody tr > td:nth-child(3) {
       // background: #5a8ad6;
 
-      color: #60605F;
+      color: #60605f;
       text-align: center;
       font-family: "Noto Sans TC";
       font-size: 12px;
       font-style: normal;
-      font-weight: 500;
+      // font-weight: 500;
       line-height: 1.314;
       letter-spacing: 0.6px;
     }
@@ -1615,7 +1700,6 @@ i {
     }
 
     .custom-comparison-table thead th {
-      background: #E6F9FF;
       width: 27.44vw;
       height: 21.79vw;
       color: #4570b6;
@@ -1637,7 +1721,7 @@ i {
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
       // background: #4570b6;
-      color: #4570B6;
+      color: #4570b6;
       line-height: 1.357;
     }
 
@@ -1673,7 +1757,7 @@ i {
     .custom-comparison-table tbody tr > td:nth-child(3) {
       // background: #5a8ad6;
 
-      color: #60605F;
+      color: #60605f;
       text-align: center;
       font-family: "Noto Sans TC";
       font-size: 3.08vw;
@@ -2296,8 +2380,8 @@ i {
   .smilepro-difference {
     margin-top: 230px;
     max-width: 1260px;
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
@@ -2347,7 +2431,6 @@ i {
     }
 
     .custom-comparison-table thead th {
-      background: #E6F9FF;
       color: #4570b6;
       font-family: "Noto Sans TC";
       font-size: 20px;
@@ -2375,8 +2458,8 @@ i {
       background: none;
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
-      background: #F8EEFF;
-      color: #4570B6;
+      background: #f8eeff;
+      color: #4570b6;
       line-height: 1.357;
     }
 
@@ -2406,7 +2489,7 @@ i {
     .custom-comparison-table tbody tr > td:nth-child(3) {
       // background: #5a8ad6;
       font-weight: 300;
-      color: #60605F;
+      color: #60605f;
     }
     // 按钮
     .icl-btn {

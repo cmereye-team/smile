@@ -240,7 +240,7 @@ export const $router = [
     name: "vision-correction-presbyopia",
     title: "CMER CLEAR-Vision",
     // component: resolve('pages/vision-correction-presbyopia/index.vue'),
-    component: resolve("pages/new-page/clear-visionV2.vue"),
+    component: resolve("pages/lbv/index.vue"),
   },
   {
     path: "/vision-correction-lasikV2",
@@ -411,12 +411,12 @@ export const $router = [
     title: "SMILE Pro Care限時禮品限量版便攜式咖啡機",
     component: resolve(`pages/smileProCare/index.vue`),
   },
-  {
-    path: `/lbv`,
-    name: `lbv`,
-    title: "LBV",
-    component: resolve(`pages/lbv/index.vue`),
-  },
+  // {
+  //   path: `/lbv`,
+  //   name: `lbv`,
+  //   title: "LBV",
+  //   component: resolve(`pages/lbv/index.vue`),
+  // },
   // // 活动route
   // {
   //   path: '/icl-event',
