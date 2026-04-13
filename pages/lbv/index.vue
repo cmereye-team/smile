@@ -3263,17 +3263,10 @@ i {
                     class="block sm:hidden"
                   />可享6/12/18/24/36個月免息分期
                 </p>
-                <!-- <p class="text-text text-xs min-[360px]:text-sm md:text-xl">
-                      EPS用戶港幣$47,500<sup>#</sup>
-                    </p> -->
+                <p class="text-text text-xs min-[360px]:text-sm md:text-xl">
+                  EPS用戶港幣$47,500<sup>#</sup>
+                </p>
               </div>
-              <!-- <div
-                class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
-              >
-                <span class="text-2xl md:text-5xl text-nowrap">
-                  港幣$58,000*</span
-                >
-              </div> -->
             </div>
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
