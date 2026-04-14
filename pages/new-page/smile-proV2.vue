@@ -1,9 +1,8 @@
 <template>
   <div class="lasik">
     <!-- simleProV2 -->
-      <!-- <topNotice></topNotice> -->
+    <!-- <topNotice></topNotice> -->
     <HeadV2 />
-
     <div class="top-btnV2" @click="scrollToTopV2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +20,6 @@
         />
       </svg>
     </div>
-
     <!-- 轮播位置 -->
     <div
       class="container new-container mx-auto smile-NewBanner position-relative mt-20 md:mt-40 xl:mt-[216px]"
@@ -46,7 +44,6 @@
         <h3>{{ $t("smile_proV2.Bannertitle") }}</h3>
         <p>Small Incision Lenticule Extraction</p>
       </div>
-
       <div class="smile-NewBanner-Tip">
         <div class="smile-NewBanner-Tip-Title">
           <p>{{ $t("Correct.newIcl.titleList.title1") }}</p>
@@ -57,7 +54,6 @@
         </div>
       </div>
     </div>
-
     <!-- 中心介绍 -->
     <section class="smile-newCenter">
       <div class="container new-container mx-auto">
@@ -70,7 +66,6 @@
           </a>
         </div>
       </div>
-
       <div class="smilePro-newCenter-content">
         <div class="smilePro-newCenter-content-text">
           <div class="container new-container">
@@ -90,7 +85,6 @@
             </div>
           </div>
         </div>
-
         <div class="smilepro-Vedio">
           <iframe
             width="100%"
@@ -104,8 +98,6 @@
         </div>
       </div>
     </section>
-
-
     <!-- 為何選擇希瑪? -->
     <section class="icl-WhatChoose">
       <h3 class="icl-WhatChoose-title">
@@ -146,7 +138,6 @@
           </p>
         </div>
       </div>
-
       <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -175,9 +166,6 @@
         </svg>
       </a>
     </section>
-
-    
-
     <!-- 四大特点 -->
     <section class="smilepro-four-feature">
       <div class="">
@@ -209,7 +197,6 @@
                 </p>
               </div>
             </div>
-
             <div
               class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
               data-wow-delay="0.2s"
@@ -226,7 +213,6 @@
                   }}
                 </p>
               </div>
-
               <div
                 class="smilepro-four-feature-Box-List-item-number d-none d-lg-block"
               >
@@ -239,7 +225,6 @@
                 <p>{{ $t("smile_proV2.four_feature.item1_p3_1") }}</p>
               </div>
             </div>
-
             <div
               class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
               data-wow-delay="0.3s"
@@ -251,7 +236,6 @@
                 <h4>{{ $t("smile_proV2.four_feature.item1_title3") }}</h4>
                 <p>{{ $t("smile_proV2.four_feature.item1_p3_1") }}</p>
               </div>
-
               <div
                 class="smilepro-four-feature-Box-List-item-number d-none d-lg-block"
               >
@@ -269,7 +253,6 @@
                 </p>
               </div>
             </div>
-
             <div
               class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
               data-wow-delay="0.4s"
@@ -284,80 +267,137 @@
         </div>
       </div>
     </section>
-
-
-
-        <!-- start  SMILE Pro 微笑激光矯視費用-->
-<div class="bg-[#F6FAFD] py-8 px-2  md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]">
-<div class="w-full  flex flex-col items-center mx-auto ">
-    
-    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
-SMILE Pro 微笑激光矯視費用
-    </h2>
-
-    <div class="w-full">
-      <div class="space-y-7 lg:space-y-[60px]">
-        <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">SMILE Pro 費用</div>
-          <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-            <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-                SMILE Pro<br/><span>微笑激光矯視</span>
+    <!-- start  SMILE Pro 微笑激光矯視費用-->
+    <div
+      class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]"
+    >
+      <div class="w-full flex flex-col items-center mx-auto">
+        <h2
+          class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
+        >
+          SMILE Pro 微笑激光矯視費用
+        </h2>
+        <div class="w-full">
+          <div class="space-y-7 lg:space-y-[60px]">
+            <div>
+              <div
+                class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto"
+              >
+                SMILE Pro 費用
               </div>
-              <div class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform">
-                <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-5xl">$24,000</span>
+              <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+                <div
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    SMILE Pro<br /><span>微笑激光矯視</span>
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣</span
+                    ><span class="text-2xl md:text-5xl">$24,000</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    術前檢查費用
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣</span
+                    ><span class="text-2xl md:text-5xl">$100</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
-              <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-                <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-5xl">$100</span>
+            <div>
+              <div
+                class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto"
+              >
+                SMILE Pro Care費用
+              </div>
+              <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+                <div
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    SMILE Pro care<br /><span>微笑激光矯視</span>
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣</span
+                    ><span class="text-2xl md:text-5xl">$26,000*</span>
+                    <p class="text-[10px] md:text-xl text-text">
+                      EPS用戶港幣$25,500<sup>#</sup>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    術前檢查費用
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣</span
+                    ><span class="text-2xl md:text-5xl">$100</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto">SMILE Pro Care費用</div>
-          <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-            <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-                SMILE Pro care<br/><span>微笑激光矯視</span>
-              </div>
-              <div class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform">
-                <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-5xl">$26,000*</span>
-                <p class="text-[10px] md:text-xl text-text">EPS用戶港幣$25,500<sup>#</sup></p>
-              </div>
-            </div>
-            <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
-              <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-                <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-5xl">$100</span>
-              </div>
+          <div class="mt-8 md:mt-12 flex flex-col items-center">
+            <a
+              href="/fee#table1"
+              class="md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3"
+            >
+              查看矯視費用詳情
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]"
+                viewBox="0 0 34 34"
+                fill="none"
+              >
+                <path
+                  d="M3.18018 30.3632L29.8334 3.70996"
+                  stroke="white"
+                  stroke-width="6.36042"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M7.06396 2.8623H30.742V25.7598"
+                  stroke="white"
+                  stroke-width="5.72438"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <div
+              class="mt-2 md:mt-4 text-center font-light text-text text-base md:text-2xl leading-relaxed"
+            >
+              <p>此為香港價錢，雙眼價錢</p>
+              <p>
+                矯視費用已包括術前檢查費用港幣$100（若沒有預約進行矯視，需另外繳付術前檢查費用）
+              </p>
+              <p>
+                <sup>#</sup>免責聲明：受條款及細則約束。僅適用於以 EPS
+                全數支付之客戶。如有任何爭議，<br
+                  class="hidden lg:block"
+                />希瑪眼科將保留最終決定權。
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="mt-8 md:mt-12 flex flex-col items-center">
-        <a href="/fee#table1" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
-          查看矯視費用詳情
-          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
-            <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
-            <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
-          </svg>
-        </a>
-        <div class="mt-2 md:mt-4 text-center font-light text-text text-base  md:text-2xl leading-relaxed">
-          <p>此為香港價錢，雙眼價錢</p>
-          <p>矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用）</p>
-          <p>#免責聲明：受條款及細則約束。僅適用於以 EPS 全數支付之客戶。如有任何爭議，<br class="hidden lg:block"/>希瑪眼科將保留最終決定權。</p>
-        </div>
-      </div>
-
     </div>
-  </div>
-  </div>
-
     <!-- end SMILE Pro 微笑激光矯視費用 -->
-
     <!-- 表格 -->
     <section class="smilepro-difference">
       <div class="smilepro-difference-title">
@@ -366,21 +406,75 @@ SMILE Pro 微笑激光矯視費用
           大不同
         </div>
       </div>
-
       <table class="table custom-comparison-table">
         <thead>
           <tr>
             <th></th>
             <th class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto size-9 md:size-[52px]" viewBox="0 0 54 54" fill="none"><path d="M26.732 40.188c-3.451 0-6.713-1.3-9.23-3.68a13.36 13.36 0 0 1-4.193-9.391 13.34 13.34 0 0 1 3.677-9.602 13.36 13.36 0 0 1 9.388-4.193 13.33 13.33 0 0 1 9.602 3.676 13.36 13.36 0 0 1 4.193 9.391 13.34 13.34 0 0 1-3.677 9.602 13.36 13.36 0 0 1-9.391 4.193c-.123 0-.25.004-.372.004zm.021-26.519a13 13 0 0 0-9.51 4.084 13 13 0 0 0-3.579 9.353 13 13 0 0 0 4.08 9.145 12.97 12.97 0 0 0 9.354 3.578 13 13 0 0 0 9.145-4.08 13 13 0 0 0 3.578-9.353 13 13 0 0 0-4.08-9.145 13 13 0 0 0-8.988-3.585z" stroke="#4570b6"/><path d="M51.148.707 2.083 52.555l.255.242L51.403.948z" stroke="#4570b6"/><path d="m.948 1.707-.241.255 51.83 49.083.243-.255z" stroke="#4570b6"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mx-auto size-9 md:size-[52px]"
+                viewBox="0 0 54 54"
+                fill="none"
+              >
+                <path
+                  d="M26.732 40.188c-3.451 0-6.713-1.3-9.23-3.68a13.36 13.36 0 0 1-4.193-9.391 13.34 13.34 0 0 1 3.677-9.602 13.36 13.36 0 0 1 9.388-4.193 13.33 13.33 0 0 1 9.602 3.676 13.36 13.36 0 0 1 4.193 9.391 13.34 13.34 0 0 1-3.677 9.602 13.36 13.36 0 0 1-9.391 4.193c-.123 0-.25.004-.372.004zm.021-26.519a13 13 0 0 0-9.51 4.084 13 13 0 0 0-3.579 9.353 13 13 0 0 0 4.08 9.145 12.97 12.97 0 0 0 9.354 3.578 13 13 0 0 0 9.145-4.08 13 13 0 0 0 3.578-9.353 13 13 0 0 0-4.08-9.145 13 13 0 0 0-8.988-3.585z"
+                  stroke="#4570b6"
+                />
+                <path
+                  d="M51.148.707 2.083 52.555l.255.242L51.403.948z"
+                  stroke="#4570b6"
+                />
+                <path
+                  d="m.948 1.707-.241.255 51.83 49.083.243-.255z"
+                  stroke="#4570b6"
+                />
+              </svg>
               <span>SMILE</span><br />微笑<br class="d-lg-none" />矯視
             </th>
             <th class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto size-9 md:size-[52px]" viewBox="0 0 55 55" fill="none"><path d="M27.092 40.776c7.557 0 13.684-6.127 13.684-13.684 0-7.558-6.127-13.684-13.684-13.684-7.558 0-13.684 6.126-13.684 13.684s6.126 13.684 13.684 13.684ZM1.759 53.836 52.425.344M.344 1.758l53.492 50.666" stroke="#fff" stroke-miterlimit="10"/><path d="M27.092 37.275c5.624 0 10.183-4.56 10.183-10.184s-4.56-10.183-10.183-10.183-10.184 4.56-10.184 10.183 4.56 10.184 10.184 10.184Z" stroke="#fff" stroke-miterlimit="10"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mx-auto size-9 md:size-[52px]"
+                viewBox="0 0 55 55"
+                fill="none"
+              >
+                <path
+                  d="M27.092 40.776c7.557 0 13.684-6.127 13.684-13.684 0-7.558-6.127-13.684-13.684-13.684-7.558 0-13.684 6.126-13.684 13.684s6.126 13.684 13.684 13.684ZM1.759 53.836 52.425.344M.344 1.758l53.492 50.666"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M27.092 37.275c5.624 0 10.183-4.56 10.183-10.184s-4.56-10.183-10.183-10.183-10.184 4.56-10.184 10.183 4.56 10.184 10.184 10.184Z"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                />
+              </svg>
               <span>SMILE<br class="d-lg-none" />PRO</span><br />微笑矯視
             </th>
             <th class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto size-10 md:size-[52px]" viewBox="0 0 56 36" fill="none"><path d="M54.53 28.344s-.025-.024-.049-.06a.3.3 0 0 0-.048-.06c-.318-.435-1.341-1.998-1.341-4.463 0-2.935-.073-6.202-.073-6.202s.073-3.278.073-6.202c0-2.468 1.023-4.027 1.34-4.462.013-.024.037-.036.05-.06a.3.3 0 0 0 .047-.06v-.013c.355-.47.564-1.059.564-1.691a2.86 2.86 0 0 0-2.855-2.855c-11.51.282-17.02-.919-17.02-.919C33.295.802 30.673.5 27.798.5c-2.88 0-5.498.306-7.423.797 0 0-5.509 1.2-17.019.919A2.86 2.86 0 0 0 .5 5.07c0 .636.213 1.22.564 1.691v.012s.024.025.048.06c.012.025.036.05.048.061.319.435 1.342 1.998 1.342 4.462 0 2.936.072 6.202.072 6.202s-.072 3.279-.072 6.202c0 2.469-1.023 4.028-1.342 4.463-.012.024-.036.036-.048.06a.3.3 0 0 0-.048.06v.012A2.8 2.8 0 0 0 .5 30.048a2.86 2.86 0 0 0 2.855 2.855c11.51-.282 17.02.918 17.02.918 1.924.496 4.546.798 7.422.798 2.88 0 5.497-.306 7.422-.798 0 0 5.51-1.2 17.019-.918a2.86 2.86 0 0 0 2.855-2.855 2.9 2.9 0 0 0-.564-1.704Z" stroke="#4570b6" stroke-miterlimit="10"/><path d="M3.444 5.353a.503.503 0 1 0 0-1.007.503.503 0 0 0 0 1.007ZM52.31 30.785a.503.503 0 1 0 0-1.007.503.503 0 0 0 0 1.007Zm-24.525-.093c7.26 0 13.144-5.885 13.144-13.145S35.045 4.402 27.786 4.402 14.64 10.287 14.64 17.547s5.885 13.145 13.145 13.145ZM46.262 2.22a23.92 23.92 0 0 1 5.533 15.34 23.87 23.87 0 0 1-5.485 15.27m-37.002.057a23.92 23.92 0 0 1-5.534-15.34A23.87 23.87 0 0 1 9.26 2.276m3.45 15.774a.503.503 0 1 0 0-1.006.503.503 0 0 0 0 1.007Zm30.145 0a.503.503 0 1 0 0-1.006.503.503 0 0 0 0 1.007Z" stroke="#4570b6" stroke-miterlimit="10"/><path d="M27.793 18.05a.503.503 0 1 0 0-1.006.503.503 0 0 0 0 1.007ZM42.947 2.256s-.906 1.164-5.062 1.164-5.288-1.2-9.609-1.2-5.449 1.2-9.609 1.2-5.062-1.164-5.062-1.164m29.342 30.667s-.906-1.164-5.062-1.164c-4.16 0-5.288 1.2-9.609 1.2s-5.449-1.2-9.609-1.2-5.062 1.164-5.062 1.164" stroke="#4570b6" stroke-miterlimit="10"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mx-auto size-10 md:size-[52px]"
+                viewBox="0 0 56 36"
+                fill="none"
+              >
+                <path
+                  d="M54.53 28.344s-.025-.024-.049-.06a.3.3 0 0 0-.048-.06c-.318-.435-1.341-1.998-1.341-4.463 0-2.935-.073-6.202-.073-6.202s.073-3.278.073-6.202c0-2.468 1.023-4.027 1.34-4.462.013-.024.037-.036.05-.06a.3.3 0 0 0 .047-.06v-.013c.355-.47.564-1.059.564-1.691a2.86 2.86 0 0 0-2.855-2.855c-11.51.282-17.02-.919-17.02-.919C33.295.802 30.673.5 27.798.5c-2.88 0-5.498.306-7.423.797 0 0-5.509 1.2-17.019.919A2.86 2.86 0 0 0 .5 5.07c0 .636.213 1.22.564 1.691v.012s.024.025.048.06c.012.025.036.05.048.061.319.435 1.342 1.998 1.342 4.462 0 2.936.072 6.202.072 6.202s-.072 3.279-.072 6.202c0 2.469-1.023 4.028-1.342 4.463-.012.024-.036.036-.048.06a.3.3 0 0 0-.048.06v.012A2.8 2.8 0 0 0 .5 30.048a2.86 2.86 0 0 0 2.855 2.855c11.51-.282 17.02.918 17.02.918 1.924.496 4.546.798 7.422.798 2.88 0 5.497-.306 7.422-.798 0 0 5.51-1.2 17.019-.918a2.86 2.86 0 0 0 2.855-2.855 2.9 2.9 0 0 0-.564-1.704Z"
+                  stroke="#4570b6"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M3.444 5.353a.503.503 0 1 0 0-1.007.503.503 0 0 0 0 1.007ZM52.31 30.785a.503.503 0 1 0 0-1.007.503.503 0 0 0 0 1.007Zm-24.525-.093c7.26 0 13.144-5.885 13.144-13.145S35.045 4.402 27.786 4.402 14.64 10.287 14.64 17.547s5.885 13.145 13.145 13.145ZM46.262 2.22a23.92 23.92 0 0 1 5.533 15.34 23.87 23.87 0 0 1-5.485 15.27m-37.002.057a23.92 23.92 0 0 1-5.534-15.34A23.87 23.87 0 0 1 9.26 2.276m3.45 15.774a.503.503 0 1 0 0-1.006.503.503 0 0 0 0 1.007Zm30.145 0a.503.503 0 1 0 0-1.006.503.503 0 0 0 0 1.007Z"
+                  stroke="#4570b6"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M27.793 18.05a.503.503 0 1 0 0-1.006.503.503 0 0 0 0 1.007ZM42.947 2.256s-.906 1.164-5.062 1.164-5.288-1.2-9.609-1.2-5.449 1.2-9.609 1.2-5.062-1.164-5.062-1.164m29.342 30.667s-.906-1.164-5.062-1.164c-4.16 0-5.288 1.2-9.609 1.2s-5.449-1.2-9.609-1.2-5.062 1.164-5.062 1.164"
+                  stroke="#4570b6"
+                  stroke-miterlimit="10"
+                />
+              </svg>
               <span>ICL</span><br />植入式<br class="d-lg-none" />隱形眼鏡
             </th>
           </tr>
@@ -388,8 +482,41 @@ SMILE Pro 微笑激光矯視費用
         <tbody>
           <tr>
             <td>
-              <div class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-9 md:size-12 lg:size-[52px]" viewBox="0 0 50 46" fill="none"><g clip-path="url(#a)" fill="#4570b6"><path d="M28.935 45.195c-7.764 0-14.87-4.26-18.538-11.11a.867.867 0 0 1 .36-1.176.87.87 0 0 1 1.175.36 19.26 19.26 0 0 0 17.003 10.19c10.629 0 19.276-8.649 19.276-19.277S39.564 4.906 28.935 4.906c-7.118 0-13.632 3.9-17.002 10.183a.86.86 0 0 1-1.177.354.86.86 0 0 1-.353-1.176A21 21 0 0 1 28.94 3.163c11.592 0 21.02 9.428 21.02 21.019s-9.428 21.019-21.02 21.019zM8.788 25.048H.87a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743"/><path d="M13.31 29.801H5.393a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743m0-9.501H5.393a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743m24.176-7.965a.85.85 0 0 1-.488-.153 14.4 14.4 0 0 0-8.111-2.48c-2.901 0-5.71.86-8.112 2.48a.87.87 0 0 1-1.206-.231.87.87 0 0 1 .231-1.207 16.16 16.16 0 0 1 9.093-2.785c3.26 0 6.399.963 9.092 2.785.396.268.506.81.232 1.207a.87.87 0 0 1-.72.384zm-5.991 10.086a.9.9 0 0 1-.616-.25.87.87 0 0 1 0-1.23l6.332-6.388a.87.87 0 0 1 1.231 0 .87.87 0 0 1 0 1.231l-6.331 6.387a.87.87 0 0 1-.616.256z"/><path d="M28.941 28.71a4.54 4.54 0 0 1-4.534-4.534 4.54 4.54 0 0 1 4.534-4.534 4.54 4.54 0 0 1 4.534 4.534 4.54 4.54 0 0 1-4.534 4.534m0-7.326a2.795 2.795 0 0 0-2.79 2.792 2.8 2.8 0 0 0 2.79 2.79 2.8 2.8 0 0 0 2.792-2.79 2.8 2.8 0 0 0-2.792-2.791m1.494-19.642h-3.17a.871.871 0 1 1 0-1.743h3.17a.871.871 0 1 1 0 1.743"/><path d="M28.85 4.906a.87.87 0 0 1-.871-.872V.871a.871.871 0 1 1 1.742 0v3.17c0 .48-.39.87-.87.87zM43.257 6.55a.85.85 0 0 1-.476-.14l-2.657-1.724a.873.873 0 0 1 .951-1.463l2.657 1.725a.873.873 0 0 1-.475 1.603"/><path d="M40.204 8.349a.873.873 0 0 1-.731-1.347l1.724-2.657a.873.873 0 0 1 1.463.95l-1.725 2.658a.87.87 0 0 1-.731.396M14.54 6.6a.87.87 0 0 1-.73-.396.874.874 0 0 1 .255-1.207l2.658-1.724a.874.874 0 0 1 1.206.256.874.874 0 0 1-.256 1.206L15.016 6.46a.85.85 0 0 1-.475.14"/><path d="M17.594 8.392a.87.87 0 0 1-.731-.396l-1.725-2.657a.874.874 0 0 1 .256-1.207.874.874 0 0 1 1.207.256l1.724 2.657a.874.874 0 0 1-.731 1.347"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h49.948v45.195H0z"/></clipPath></defs></svg>
+              <div
+                class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-9 md:size-12 lg:size-[52px]"
+                  viewBox="0 0 50 46"
+                  fill="none"
+                >
+                  <g clip-path="url(#a)" fill="#4570b6">
+                    <path
+                      d="M28.935 45.195c-7.764 0-14.87-4.26-18.538-11.11a.867.867 0 0 1 .36-1.176.87.87 0 0 1 1.175.36 19.26 19.26 0 0 0 17.003 10.19c10.629 0 19.276-8.649 19.276-19.277S39.564 4.906 28.935 4.906c-7.118 0-13.632 3.9-17.002 10.183a.86.86 0 0 1-1.177.354.86.86 0 0 1-.353-1.176A21 21 0 0 1 28.94 3.163c11.592 0 21.02 9.428 21.02 21.019s-9.428 21.019-21.02 21.019zM8.788 25.048H.87a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743"
+                    />
+                    <path
+                      d="M13.31 29.801H5.393a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743m0-9.501H5.393a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743m24.176-7.965a.85.85 0 0 1-.488-.153 14.4 14.4 0 0 0-8.111-2.48c-2.901 0-5.71.86-8.112 2.48a.87.87 0 0 1-1.206-.231.87.87 0 0 1 .231-1.207 16.16 16.16 0 0 1 9.093-2.785c3.26 0 6.399.963 9.092 2.785.396.268.506.81.232 1.207a.87.87 0 0 1-.72.384zm-5.991 10.086a.9.9 0 0 1-.616-.25.87.87 0 0 1 0-1.23l6.332-6.388a.87.87 0 0 1 1.231 0 .87.87 0 0 1 0 1.231l-6.331 6.387a.87.87 0 0 1-.616.256z"
+                    />
+                    <path
+                      d="M28.941 28.71a4.54 4.54 0 0 1-4.534-4.534 4.54 4.54 0 0 1 4.534-4.534 4.54 4.54 0 0 1 4.534 4.534 4.54 4.54 0 0 1-4.534 4.534m0-7.326a2.795 2.795 0 0 0-2.79 2.792 2.8 2.8 0 0 0 2.79 2.79 2.8 2.8 0 0 0 2.792-2.79 2.8 2.8 0 0 0-2.792-2.791m1.494-19.642h-3.17a.871.871 0 1 1 0-1.743h3.17a.871.871 0 1 1 0 1.743"
+                    />
+                    <path
+                      d="M28.85 4.906a.87.87 0 0 1-.871-.872V.871a.871.871 0 1 1 1.742 0v3.17c0 .48-.39.87-.87.87zM43.257 6.55a.85.85 0 0 1-.476-.14l-2.657-1.724a.873.873 0 0 1 .951-1.463l2.657 1.725a.873.873 0 0 1-.475 1.603"
+                    />
+                    <path
+                      d="M40.204 8.349a.873.873 0 0 1-.731-1.347l1.724-2.657a.873.873 0 0 1 1.463.95l-1.725 2.658a.87.87 0 0 1-.731.396M14.54 6.6a.87.87 0 0 1-.73-.396.874.874 0 0 1 .255-1.207l2.658-1.724a.874.874 0 0 1 1.206.256.874.874 0 0 1-.256 1.206L15.016 6.46a.85.85 0 0 1-.475.14"
+                    />
+                    <path
+                      d="M17.594 8.392a.87.87 0 0 1-.731-.396l-1.725-2.657a.874.874 0 0 1 .256-1.207.874.874 0 0 1 1.207.256l1.724 2.657a.874.874 0 0 1-.731 1.347"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h49.948v45.195H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
                 <p>激光時間<span class="block">(單一眼睛)</span></p>
               </div>
             </td>
@@ -399,26 +526,111 @@ SMILE Pro 微笑激光矯視費用
           </tr>
           <tr>
             <td>
-              <div class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-9 md:size-12 lg:size-[52px]" viewBox="0 0 55 32" fill="none">
+              <div
+                class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-9 md:size-12 lg:size-[52px]"
+                  viewBox="0 0 55 32"
+                  fill="none"
+                >
                   <g clip-path="url(#clip0_17876_222)">
-                    <path d="M27.4266 0.849609C43.1171 0.849609 54.0036 15.8969 54.0036 15.8969C54.0036 15.8969 43.1171 30.9442 27.4266 30.9442C11.736 30.9442 0.849548 15.8969 0.849548 15.8969C0.849548 15.8969 11.736 0.849609 27.4266 0.849609Z" stroke="#4570B6" stroke-width="1.70178" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M2.79559 18.0411C6.5927 13.8097 15.658 5.34424 27.4266 5.34424C39.1952 5.34424 48.2604 13.8097 52.0576 18.0411" stroke="#4570B6" stroke-width="1.70178" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M27.5732 24.1047C32.6832 24.1047 36.8257 20.2113 36.8257 15.4086C36.8257 10.6058 32.6832 6.7124 27.5732 6.7124C22.4631 6.7124 18.3206 10.6058 18.3206 15.4086C18.3206 20.2113 22.4631 24.1047 27.5732 24.1047Z" stroke="#4570B6" stroke-width="1.37879" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M27.5731 19.219C29.8126 19.219 31.6281 17.5129 31.6281 15.4083C31.6281 13.3038 29.8126 11.5977 27.5731 11.5977C25.3337 11.5977 23.5182 13.3038 23.5182 15.4083C23.5182 17.5129 25.3337 19.219 27.5731 19.219Z" stroke="#4570B6" stroke-width="1.35708" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M7.0921 20.9421L9.19557 18.749C9.19557 18.749 13.2587 21.4985 15.6987 21.2542" stroke="#4570B6" stroke-width="1.35708" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M11.4538 19.2895L13.7473 16.7002" stroke="#4570B6" stroke-width="1.35708" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M47.6851 22.6441L45.2288 22.0117C45.2288 22.0117 45.6169 17.2157 44.6887 14.792" stroke="#4570B6" stroke-width="1.35708" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M41.4425 18.5703L44.6968 19.9681" stroke="#4570B6" stroke-width="1.35708" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M18.9502 28.406L18.9448 26.1722L17.8972 24.6089" stroke="#4570B6" stroke-width="1.14537" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20.595 25.0488L18.9448 26.1725" stroke="#4570B6" stroke-width="1.14537" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M41.3013 26.748L40.2346 24.7856L38.5709 23.9062" stroke="#4570B6" stroke-width="1.14537" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M41.1548 23.0132L40.2347 24.7855" stroke="#4570B6" stroke-width="1.14537" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M27.6437 27.0659L29.3374 28.594L31.0961 28.6564L31.2346 30.6079" stroke="#4570B6" stroke-width="1.14537" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path
+                      d="M27.4266 0.849609C43.1171 0.849609 54.0036 15.8969 54.0036 15.8969C54.0036 15.8969 43.1171 30.9442 27.4266 30.9442C11.736 30.9442 0.849548 15.8969 0.849548 15.8969C0.849548 15.8969 11.736 0.849609 27.4266 0.849609Z"
+                      stroke="#4570B6"
+                      stroke-width="1.70178"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.79559 18.0411C6.5927 13.8097 15.658 5.34424 27.4266 5.34424C39.1952 5.34424 48.2604 13.8097 52.0576 18.0411"
+                      stroke="#4570B6"
+                      stroke-width="1.70178"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M27.5732 24.1047C32.6832 24.1047 36.8257 20.2113 36.8257 15.4086C36.8257 10.6058 32.6832 6.7124 27.5732 6.7124C22.4631 6.7124 18.3206 10.6058 18.3206 15.4086C18.3206 20.2113 22.4631 24.1047 27.5732 24.1047Z"
+                      stroke="#4570B6"
+                      stroke-width="1.37879"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M27.5731 19.219C29.8126 19.219 31.6281 17.5129 31.6281 15.4083C31.6281 13.3038 29.8126 11.5977 27.5731 11.5977C25.3337 11.5977 23.5182 13.3038 23.5182 15.4083C23.5182 17.5129 25.3337 19.219 27.5731 19.219Z"
+                      stroke="#4570B6"
+                      stroke-width="1.35708"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.0921 20.9421L9.19557 18.749C9.19557 18.749 13.2587 21.4985 15.6987 21.2542"
+                      stroke="#4570B6"
+                      stroke-width="1.35708"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4538 19.2895L13.7473 16.7002"
+                      stroke="#4570B6"
+                      stroke-width="1.35708"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M47.6851 22.6441L45.2288 22.0117C45.2288 22.0117 45.6169 17.2157 44.6887 14.792"
+                      stroke="#4570B6"
+                      stroke-width="1.35708"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M41.4425 18.5703L44.6968 19.9681"
+                      stroke="#4570B6"
+                      stroke-width="1.35708"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.9502 28.406L18.9448 26.1722L17.8972 24.6089"
+                      stroke="#4570B6"
+                      stroke-width="1.14537"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.595 25.0488L18.9448 26.1725"
+                      stroke="#4570B6"
+                      stroke-width="1.14537"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M41.3013 26.748L40.2346 24.7856L38.5709 23.9062"
+                      stroke="#4570B6"
+                      stroke-width="1.14537"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M41.1548 23.0132L40.2347 24.7855"
+                      stroke="#4570B6"
+                      stroke-width="1.14537"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M27.6437 27.0659L29.3374 28.594L31.0961 28.6564L31.2346 30.6079"
+                      stroke="#4570B6"
+                      stroke-width="1.14537"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </g>
                   <defs>
                     <clipPath id="clip0_17876_222">
-                      <rect width="54.8558" height="31.7964" fill="white"/>
+                      <rect width="54.8558" height="31.7964" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
@@ -431,8 +643,35 @@ SMILE Pro 微笑激光矯視費用
           </tr>
           <tr>
             <td>
-              <div class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-9 md:size-12 lg:size-[52px]" viewBox="0 0 41 41" fill="none"><g clip-path="url(#a)" fill="#4570b6"><path d="M29.017 26.16a3.86 3.86 0 0 1-3.856-3.857c0-1.925 2.996-6.268 3.338-6.758a.636.636 0 0 1 1.037 0c.34.49 3.338 4.833 3.338 6.758a3.86 3.86 0 0 1-3.857 3.857m0-9.126c-1.163 1.77-2.592 4.274-2.592 5.27a2.596 2.596 0 0 0 2.592 2.591 2.595 2.595 0 0 0 2.592-2.592c0-.995-1.429-3.496-2.592-5.269"/><path d="M20.318 40.07C5.835 40.07.31 30.538.082 30.13a.64.64 0 0 1 0-.62c.228-.405 5.756-9.94 20.24-9.94v1.264c-12.306 0-17.869 7.368-18.94 8.986 1.074 1.612 6.666 8.986 18.94 8.986 12.273 0 17.97-7.358 19.076-8.986-.582-.86-2.44-3.325-5.839-5.44l.667-1.075c4.464 2.776 6.392 6.06 6.47 6.199a.63.63 0 0 1 0 .632c-.233.405-5.894 9.935-20.371 9.935z"/><path d="M20.388 40.07c-5.652 0-10.25-4.598-10.25-10.25s4.598-10.25 10.25-10.25c1.125 0 2.232.18 3.287.536l-.404 1.198a9 9 0 0 0-2.883-.47c-4.956 0-8.986 4.03-8.986 8.986s4.03 8.986 8.986 8.986 8.986-4.03 8.986-8.986a9 9 0 0 0-.404-2.674l1.207-.376c.307.983.462 2.01.462 3.047 0 5.651-4.6 10.25-10.251 10.25zm9.078-25.638a.63.63 0 0 1-.446-.186l-2.24-2.241a.627.627 0 0 1 0-.892l2.446-2.446q.613-.614 1.078-1.318l.62-.942c.353-.54.77-1.05 1.238-1.517L37.05 0l.895.894-4.89 4.89q-.612.614-1.078 1.318l-.62.942a9.6 9.6 0 0 1-1.239 1.517L28.12 11.56l1.347 1.347 1.998-1.998a9.6 9.6 0 0 1 1.517-1.24l.942-.619c.468-.306.91-.67 1.318-1.077l4.865-4.865L41 4l-4.864 4.865c-.468.468-.98.885-1.518 1.24l-.942.619c-.468.306-.91.67-1.318 1.078l-2.446 2.446a.63.63 0 0 1-.446.187z"/><path d="M20.388 34.565a4.748 4.748 0 0 1-4.42-6.47.63.63 0 0 1 .38-.364.63.63 0 0 1 .522.047c.237.136.509.209.79.209a1.623 1.623 0 0 0 1.561-2.052.632.632 0 0 1 .51-.809 4.748 4.748 0 0 1 5.405 4.697 4.75 4.75 0 0 1-4.745 4.745zm-3.42-5.396q-.06.318-.06.654a3.484 3.484 0 0 0 3.48 3.48 3.485 3.485 0 0 0 3.48-3.48 3.45 3.45 0 0 0-3.322-3.477v.022a2.89 2.89 0 0 1-3.578 2.8"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h41v40.071H0z"/></clipPath></defs></svg>
+              <div
+                class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-9 md:size-12 lg:size-[52px]"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                >
+                  <g clip-path="url(#a)" fill="#4570b6">
+                    <path
+                      d="M29.017 26.16a3.86 3.86 0 0 1-3.856-3.857c0-1.925 2.996-6.268 3.338-6.758a.636.636 0 0 1 1.037 0c.34.49 3.338 4.833 3.338 6.758a3.86 3.86 0 0 1-3.857 3.857m0-9.126c-1.163 1.77-2.592 4.274-2.592 5.27a2.596 2.596 0 0 0 2.592 2.591 2.595 2.595 0 0 0 2.592-2.592c0-.995-1.429-3.496-2.592-5.269"
+                    />
+                    <path
+                      d="M20.318 40.07C5.835 40.07.31 30.538.082 30.13a.64.64 0 0 1 0-.62c.228-.405 5.756-9.94 20.24-9.94v1.264c-12.306 0-17.869 7.368-18.94 8.986 1.074 1.612 6.666 8.986 18.94 8.986 12.273 0 17.97-7.358 19.076-8.986-.582-.86-2.44-3.325-5.839-5.44l.667-1.075c4.464 2.776 6.392 6.06 6.47 6.199a.63.63 0 0 1 0 .632c-.233.405-5.894 9.935-20.371 9.935z"
+                    />
+                    <path
+                      d="M20.388 40.07c-5.652 0-10.25-4.598-10.25-10.25s4.598-10.25 10.25-10.25c1.125 0 2.232.18 3.287.536l-.404 1.198a9 9 0 0 0-2.883-.47c-4.956 0-8.986 4.03-8.986 8.986s4.03 8.986 8.986 8.986 8.986-4.03 8.986-8.986a9 9 0 0 0-.404-2.674l1.207-.376c.307.983.462 2.01.462 3.047 0 5.651-4.6 10.25-10.251 10.25zm9.078-25.638a.63.63 0 0 1-.446-.186l-2.24-2.241a.627.627 0 0 1 0-.892l2.446-2.446q.613-.614 1.078-1.318l.62-.942c.353-.54.77-1.05 1.238-1.517L37.05 0l.895.894-4.89 4.89q-.612.614-1.078 1.318l-.62.942a9.6 9.6 0 0 1-1.239 1.517L28.12 11.56l1.347 1.347 1.998-1.998a9.6 9.6 0 0 1 1.517-1.24l.942-.619c.468-.306.91-.67 1.318-1.077l4.865-4.865L41 4l-4.864 4.865c-.468.468-.98.885-1.518 1.24l-.942.619c-.468.306-.91.67-1.318 1.078l-2.446 2.446a.63.63 0 0 1-.446.187z"
+                    />
+                    <path
+                      d="M20.388 34.565a4.748 4.748 0 0 1-4.42-6.47.63.63 0 0 1 .38-.364.63.63 0 0 1 .522.047c.237.136.509.209.79.209a1.623 1.623 0 0 0 1.561-2.052.632.632 0 0 1 .51-.809 4.748 4.748 0 0 1 5.405 4.697 4.75 4.75 0 0 1-4.745 4.745zm-3.42-5.396q-.06.318-.06.654a3.484 3.484 0 0 0 3.48 3.48 3.485 3.485 0 0 0 3.48-3.48 3.45 3.45 0 0 0-3.322-3.477v.022a2.89 2.89 0 0 1-3.578 2.8"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h41v40.071H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
                 <p>術後眼乾<br />情況</p>
               </div>
             </td>
@@ -440,18 +679,49 @@ SMILE Pro 微笑激光矯視費用
             <td>輕微</td>
             <td>無</td>
           </tr>
-
           <!-- <tr>
             <td>矯視過程<br />痛楚</td>
             <td>無</td>
             <td>無</td>
             <td>無</td>
           </tr>  -->
-
           <tr>
             <td>
-              <div class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-9 md:size-12 lg:size-[52px]" viewBox="0 0 40 34" fill="none"><g clip-path="url(#a)" stroke="#4570b6" stroke-width="1.188" stroke-linecap="round" stroke-linejoin="round"><path d="M21.913 10.68c9.955 1.395 16.68 11.283 16.68 11.283S30.81 33.409 19.592 33.409.594 21.963.594 21.963s6.931-10.192 17.139-11.34"/><path d="M17.733 14.074a8.16 8.16 0 0 0-6.068 7.888 8.158 8.158 0 1 0 16.316 0 8.16 8.16 0 0 0-6.068-7.888"/><path d="M25.481 21.66a4.68 4.68 0 0 0-1.989-3.831M24.752.594h-9.86c-.711 0-1.288.577-1.288 1.29v1.791c0 .712.577 1.289 1.289 1.289h9.86c.711 0 1.288-.577 1.288-1.289V1.883c0-.712-.577-1.289-1.289-1.289"/><path d="M20.546 7.702h-1.447c-.72 0-1.307-.586-1.307-1.307V4.961h4.061v1.434c0 .721-.586 1.307-1.307 1.307m-.723 0v14.26m0 2.824v.306m2.824-3.13h.306m-6.26 0h.306m4.821 1.998.215.214m-4.427-4.426.218.218m3.994 0 .215-.218m-4.427 4.427.218-.216"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h39.187v34H0z"/></clipPath></defs></svg>
+              <div
+                class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-9 md:size-12 lg:size-[52px]"
+                  viewBox="0 0 40 34"
+                  fill="none"
+                >
+                  <g
+                    clip-path="url(#a)"
+                    stroke="#4570b6"
+                    stroke-width="1.188"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21.913 10.68c9.955 1.395 16.68 11.283 16.68 11.283S30.81 33.409 19.592 33.409.594 21.963.594 21.963s6.931-10.192 17.139-11.34"
+                    />
+                    <path
+                      d="M17.733 14.074a8.16 8.16 0 0 0-6.068 7.888 8.158 8.158 0 1 0 16.316 0 8.16 8.16 0 0 0-6.068-7.888"
+                    />
+                    <path
+                      d="M25.481 21.66a4.68 4.68 0 0 0-1.989-3.831M24.752.594h-9.86c-.711 0-1.288.577-1.288 1.29v1.791c0 .712.577 1.289 1.289 1.289h9.86c.711 0 1.288-.577 1.288-1.289V1.883c0-.712-.577-1.289-1.289-1.289"
+                    />
+                    <path
+                      d="M20.546 7.702h-1.447c-.72 0-1.307-.586-1.307-1.307V4.961h4.061v1.434c0 .721-.586 1.307-1.307 1.307m-.723 0v14.26m0 2.824v.306m2.824-3.13h.306m-6.26 0h.306m4.821 1.998.215.214m-4.427-4.426.218.218m3.994 0 .215-.218m-4.427 4.427.218-.216"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h39.187v34H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
                 <p>矯視<br class="d-lg-none" />準確度</p>
               </div>
             </td>
@@ -461,8 +731,60 @@ SMILE Pro 微笑激光矯視費用
           </tr>
           <tr>
             <td>
-              <div class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-9 md:size-12 lg:size-[52px]" viewBox="0 0 39 42" fill="none"><path d="M38.323 7.898a1 1 0 0 1-.123-.01c-2.909-.534-4.336-2.41-5.04-4.116-.703 1.706-2.134 3.582-5.04 4.116a.68.68 0 1 1-.244-1.34C32.406 5.717 32.48.88 32.484.677a.679.679 0 0 1 1.36.004c0 .204.078 5.04 4.608 5.872.37.068.611.422.547.792a.68.68 0 0 1-.666.557z" fill="#4570b6"/><path d="M33.156 14.436a.68.68 0 0 1-.68-.676c0-.207-.078-5.043-4.608-5.872a.68.68 0 0 1-.547-.792.68.68 0 0 1 .792-.547c5.652 1.036 5.72 7.146 5.72 7.208a.68.68 0 0 1-.68.68z" fill="#4570b6"/><path d="M33.156 14.436a.677.677 0 0 1-.676-.68c0-.06.071-6.17 5.72-7.207a.68.68 0 1 1 .244 1.339c-4.53.832-4.605 5.668-4.608 5.872a.68.68 0 0 1-.68.676M9.12 31.401a1 1 0 0 1-.123-.01c-1.958-.36-3.11-1.543-3.745-2.807-.636 1.264-1.788 2.45-3.745 2.807a.68.68 0 1 1-.245-1.339c3.27-.601 3.31-4.081 3.31-4.23a.68.68 0 1 1 1.36 0c0 .145.06 3.632 3.31 4.227.37.068.611.421.547.792a.68.68 0 0 1-.666.557z" fill="#4570b6"/><path d="M5.252 36.298a.68.68 0 0 1-.68-.676c0-.157-.064-3.636-3.31-4.231a.68.68 0 1 1 .245-1.34c3.497.643 4.421 3.923 4.424 5.564a.68.68 0 0 1-.68.68z" fill="#4570b6"/><path d="M5.252 36.298a.68.68 0 0 1-.676-.68c0-1.644.927-4.924 4.424-5.566a.681.681 0 0 1 .245 1.339c-3.249.595-3.31 4.081-3.31 4.23a.68.68 0 0 1-.68.677zM.682 7.188a.68.68 0 0 1-.119-1.35c2.035-.373 2.08-2.579 2.08-2.674a.678.678 0 0 1 1.355.003c0 .092.048 2.298 2.08 2.671a.68.68 0 1 1-.244 1.34c-1.237-.228-2.03-.911-2.515-1.686C2.833 6.27 2.04 6.953.804 7.177a1 1 0 0 1-.122.01" fill="#4570b6"/><path d="M3.318 10.528a.68.68 0 0 1-.68-.676c0-.105-.05-2.3-2.08-2.675a.68.68 0 1 1 .245-1.339c2.525.463 3.195 2.825 3.195 4.007a.68.68 0 0 1-.68.68z" fill="#4570b6"/><path d="M3.318 10.529a.68.68 0 0 1-.68-.68c0-1.183.67-3.545 3.195-4.007a.681.681 0 0 1 .245 1.34c-2.053.376-2.08 2.579-2.08 2.67 0 .374-.306.68-.68.68zM35.793 38.5a1 1 0 0 1-.122-.01c-1.237-.227-2.029-.91-2.515-1.685-.486.778-1.278 1.461-2.515 1.685a.68.68 0 1 1-.244-1.339c2.035-.373 2.08-2.579 2.08-2.674a.678.678 0 0 1 1.355.003c0 .092.048 2.298 2.08 2.671a.68.68 0 0 1-.119 1.35" fill="#4570b6"/><path d="M33.156 41.838a.68.68 0 0 1-.68-.676c0-.106-.05-2.301-2.08-2.675a.68.68 0 1 1 .245-1.339c2.525.462 3.195 2.824 3.195 4.007a.68.68 0 0 1-.68.68z" fill="#4570b6"/><path d="M33.156 41.838h-.003a.68.68 0 0 1-.677-.68c0-1.183.67-3.544 3.195-4.007a.68.68 0 1 1 .245 1.34c-2.033.373-2.08 2.579-2.08 2.674a.68.68 0 0 1-.68.673m-16.074-5.152c-3.409 0-6.654-1.023-9.387-2.96l.785-1.108c2.502 1.774 5.475 2.708 8.602 2.708 7.945 0 14.409-6.15 14.409-13.712S25.027 7.9 17.081 7.9 2.674 14.05 2.674 21.611c0 1.787.356 3.527 1.056 5.168l-1.25.534a14.4 14.4 0 0 1-1.17-5.703c0-8.312 7.076-15.071 15.77-15.071 8.692 0 15.768 6.762 15.768 15.071s-7.078 15.073-15.77 15.073z" fill="#4570b6"/><path d="M24.354 32.04c-4.683 0-8.496-4.506-8.496-10.042s3.81-10.042 8.496-10.042c4.687 0 8.496 4.506 8.496 10.042S29.04 32.04 24.354 32.04m0-18.725c-3.935 0-7.136 3.895-7.136 8.683s3.201 8.683 7.136 8.683 7.137-3.895 7.137-8.683-3.201-8.683-7.137-8.683" fill="#4570b6"/><path d="M24.942 26.963c-2.297 0-4.163-2.226-4.163-4.965 0-1.142.333-2.26.935-3.14l1.121.768c-.448.66-.697 1.502-.697 2.372 0 1.988 1.258 3.606 2.804 3.606s2.807-1.618 2.807-3.606-1.257-3.605-2.807-3.605v-1.36c2.297 0 4.166 2.226 4.166 4.965 0 2.74-1.869 4.965-4.166 4.965" fill="#4570b6"/></svg>
+              <div
+                class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-9 md:size-12 lg:size-[52px]"
+                  viewBox="0 0 39 42"
+                  fill="none"
+                >
+                  <path
+                    d="M38.323 7.898a1 1 0 0 1-.123-.01c-2.909-.534-4.336-2.41-5.04-4.116-.703 1.706-2.134 3.582-5.04 4.116a.68.68 0 1 1-.244-1.34C32.406 5.717 32.48.88 32.484.677a.679.679 0 0 1 1.36.004c0 .204.078 5.04 4.608 5.872.37.068.611.422.547.792a.68.68 0 0 1-.666.557z"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M33.156 14.436a.68.68 0 0 1-.68-.676c0-.207-.078-5.043-4.608-5.872a.68.68 0 0 1-.547-.792.68.68 0 0 1 .792-.547c5.652 1.036 5.72 7.146 5.72 7.208a.68.68 0 0 1-.68.68z"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M33.156 14.436a.677.677 0 0 1-.676-.68c0-.06.071-6.17 5.72-7.207a.68.68 0 1 1 .244 1.339c-4.53.832-4.605 5.668-4.608 5.872a.68.68 0 0 1-.68.676M9.12 31.401a1 1 0 0 1-.123-.01c-1.958-.36-3.11-1.543-3.745-2.807-.636 1.264-1.788 2.45-3.745 2.807a.68.68 0 1 1-.245-1.339c3.27-.601 3.31-4.081 3.31-4.23a.68.68 0 1 1 1.36 0c0 .145.06 3.632 3.31 4.227.37.068.611.421.547.792a.68.68 0 0 1-.666.557z"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M5.252 36.298a.68.68 0 0 1-.68-.676c0-.157-.064-3.636-3.31-4.231a.68.68 0 1 1 .245-1.34c3.497.643 4.421 3.923 4.424 5.564a.68.68 0 0 1-.68.68z"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M5.252 36.298a.68.68 0 0 1-.676-.68c0-1.644.927-4.924 4.424-5.566a.681.681 0 0 1 .245 1.339c-3.249.595-3.31 4.081-3.31 4.23a.68.68 0 0 1-.68.677zM.682 7.188a.68.68 0 0 1-.119-1.35c2.035-.373 2.08-2.579 2.08-2.674a.678.678 0 0 1 1.355.003c0 .092.048 2.298 2.08 2.671a.68.68 0 1 1-.244 1.34c-1.237-.228-2.03-.911-2.515-1.686C2.833 6.27 2.04 6.953.804 7.177a1 1 0 0 1-.122.01"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M3.318 10.528a.68.68 0 0 1-.68-.676c0-.105-.05-2.3-2.08-2.675a.68.68 0 1 1 .245-1.339c2.525.463 3.195 2.825 3.195 4.007a.68.68 0 0 1-.68.68z"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M3.318 10.529a.68.68 0 0 1-.68-.68c0-1.183.67-3.545 3.195-4.007a.681.681 0 0 1 .245 1.34c-2.053.376-2.08 2.579-2.08 2.67 0 .374-.306.68-.68.68zM35.793 38.5a1 1 0 0 1-.122-.01c-1.237-.227-2.029-.91-2.515-1.685-.486.778-1.278 1.461-2.515 1.685a.68.68 0 1 1-.244-1.339c2.035-.373 2.08-2.579 2.08-2.674a.678.678 0 0 1 1.355.003c0 .092.048 2.298 2.08 2.671a.68.68 0 0 1-.119 1.35"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M33.156 41.838a.68.68 0 0 1-.68-.676c0-.106-.05-2.301-2.08-2.675a.68.68 0 1 1 .245-1.339c2.525.462 3.195 2.824 3.195 4.007a.68.68 0 0 1-.68.68z"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M33.156 41.838h-.003a.68.68 0 0 1-.677-.68c0-1.183.67-3.544 3.195-4.007a.68.68 0 1 1 .245 1.34c-2.033.373-2.08 2.579-2.08 2.674a.68.68 0 0 1-.68.673m-16.074-5.152c-3.409 0-6.654-1.023-9.387-2.96l.785-1.108c2.502 1.774 5.475 2.708 8.602 2.708 7.945 0 14.409-6.15 14.409-13.712S25.027 7.9 17.081 7.9 2.674 14.05 2.674 21.611c0 1.787.356 3.527 1.056 5.168l-1.25.534a14.4 14.4 0 0 1-1.17-5.703c0-8.312 7.076-15.071 15.77-15.071 8.692 0 15.768 6.762 15.768 15.071s-7.078 15.073-15.77 15.073z"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M24.354 32.04c-4.683 0-8.496-4.506-8.496-10.042s3.81-10.042 8.496-10.042c4.687 0 8.496 4.506 8.496 10.042S29.04 32.04 24.354 32.04m0-18.725c-3.935 0-7.136 3.895-7.136 8.683s3.201 8.683 7.136 8.683 7.137-3.895 7.137-8.683-3.201-8.683-7.137-8.683"
+                    fill="#4570b6"
+                  />
+                  <path
+                    d="M24.942 26.963c-2.297 0-4.163-2.226-4.163-4.965 0-1.142.333-2.26.935-3.14l1.121.768c-.448.66-.697 1.502-.697 2.372 0 1.988 1.258 3.606 2.804 3.606s2.807-1.618 2.807-3.606-1.257-3.605-2.807-3.605v-1.36c2.297 0 4.166 2.226 4.166 4.965 0 2.74-1.869 4.965-4.166 4.965"
+                    fill="#4570b6"
+                  />
+                </svg>
                 <p>角膜自然<br />癒合需<br class="d-lg-none" />時間</p>
               </div>
             </td>
@@ -470,11 +792,49 @@ SMILE Pro 微笑激光矯視費用
             <td>數天</td>
             <td>數天</td>
           </tr>
-
           <tr>
             <td>
-              <div class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-9 md:size-12 lg:size-[52px]" viewBox="0 0 38 38" fill="none"><g clip-path="url(#a)" fill="#4570b6"><path d="M1.053 27.63 0 27.068c.206-.385 5.076-9.433 11.52-12.767 8.961-4.64 11.114-6.868 9.6-9.924-1.286-2.595-2.213-3.501-2.222-3.51L19.715 0c.041.042 1.073 1.023 2.475 3.847 2.117 4.27-1.41 7.005-10.118 11.514C5.952 18.528 1.1 27.54 1.052 27.629"/><path d="m22.044 37.223-.394-1.128c.415-.146.683-.384.82-.736.203-.522.069-1.172-.092-1.467-.749-1.39-2.711-1.483-5.192-1.602-1.843-.09-3.934-.188-6.01-.853-4.976-1.59-9.39-5.979-9.575-6.164l.844-.84c.045.044 4.399 4.368 9.093 5.871 1.926.617 3.933.713 5.701.796 2.747.132 5.118.245 6.185 2.228.31.575.492 1.595.155 2.466-.262.677-.796 1.172-1.538 1.432z"/><path d="m21.865 32.424-1.145-.331c3.253-11.234-1.92-21.501-1.971-21.606l1.061-.545c.224.435 5.443 10.798 2.058 22.482z"/><path d="M21.847 30.385c-4.718-.284-8.559-4.381-8.559-9.135 0-4.031 2.932-7.753 6.97-8.847l.313 1.15c-3.528.958-6.09 4.194-6.09 7.697 0 4.134 3.337 7.697 7.438 7.942l-.072 1.19z"/><path d="M22.259 26.451a5.072 5.072 0 0 1-4.852-6.54.594.594 0 0 1 .686-.414 1.294 1.294 0 0 0 1.461-1.28c0-.163-.03-.324-.093-.473a.6.6 0 0 1 .251-.743 5 5 0 0 1 1.753-.626l.185 1.178q-.488.077-.936.271.03.194.03.39a2.49 2.49 0 0 1-2.3 2.479q-.06.345-.059.689a3.88 3.88 0 0 0 3.874 3.874zm10.434 2.684h-8.729v1.193h8.729z"/><path d="m30.6 32.67-.844-.845 2.096-2.093-2.096-2.097.844-.84 2.937 2.937zm2.093-18.446h-8.729v1.193h8.729z"/><path d="m30.6 17.758-.844-.844 2.096-2.094-2.096-2.096.844-.84 2.937 2.936zm6.059 3.922h-7.927v1.192h7.927z"/><path d="m34.562 25.213-.844-.844 2.097-2.093-2.097-2.096.844-.841 2.938 2.937z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h37.5v37.223H0z"/></clipPath></defs></svg>
+              <div
+                class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-9 md:size-12 lg:size-[52px]"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <g clip-path="url(#a)" fill="#4570b6">
+                    <path
+                      d="M1.053 27.63 0 27.068c.206-.385 5.076-9.433 11.52-12.767 8.961-4.64 11.114-6.868 9.6-9.924-1.286-2.595-2.213-3.501-2.222-3.51L19.715 0c.041.042 1.073 1.023 2.475 3.847 2.117 4.27-1.41 7.005-10.118 11.514C5.952 18.528 1.1 27.54 1.052 27.629"
+                    />
+                    <path
+                      d="m22.044 37.223-.394-1.128c.415-.146.683-.384.82-.736.203-.522.069-1.172-.092-1.467-.749-1.39-2.711-1.483-5.192-1.602-1.843-.09-3.934-.188-6.01-.853-4.976-1.59-9.39-5.979-9.575-6.164l.844-.84c.045.044 4.399 4.368 9.093 5.871 1.926.617 3.933.713 5.701.796 2.747.132 5.118.245 6.185 2.228.31.575.492 1.595.155 2.466-.262.677-.796 1.172-1.538 1.432z"
+                    />
+                    <path
+                      d="m21.865 32.424-1.145-.331c3.253-11.234-1.92-21.501-1.971-21.606l1.061-.545c.224.435 5.443 10.798 2.058 22.482z"
+                    />
+                    <path
+                      d="M21.847 30.385c-4.718-.284-8.559-4.381-8.559-9.135 0-4.031 2.932-7.753 6.97-8.847l.313 1.15c-3.528.958-6.09 4.194-6.09 7.697 0 4.134 3.337 7.697 7.438 7.942l-.072 1.19z"
+                    />
+                    <path
+                      d="M22.259 26.451a5.072 5.072 0 0 1-4.852-6.54.594.594 0 0 1 .686-.414 1.294 1.294 0 0 0 1.461-1.28c0-.163-.03-.324-.093-.473a.6.6 0 0 1 .251-.743 5 5 0 0 1 1.753-.626l.185 1.178q-.488.077-.936.271.03.194.03.39a2.49 2.49 0 0 1-2.3 2.479q-.06.345-.059.689a3.88 3.88 0 0 0 3.874 3.874zm10.434 2.684h-8.729v1.193h8.729z"
+                    />
+                    <path
+                      d="m30.6 32.67-.844-.845 2.096-2.093-2.096-2.097.844-.84 2.937 2.937zm2.093-18.446h-8.729v1.193h8.729z"
+                    />
+                    <path
+                      d="m30.6 17.758-.844-.844 2.096-2.094-2.096-2.096.844-.84 2.937 2.936zm6.059 3.922h-7.927v1.192h7.927z"
+                    />
+                    <path
+                      d="m34.562 25.213-.844-.844 2.097-2.093-2.097-2.096.844-.841 2.938 2.937z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h37.5v37.223H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
                 <p>角膜瓣<br />移位機會</p>
               </div>
             </td>
@@ -482,11 +842,49 @@ SMILE Pro 微笑激光矯視費用
             <td>無</td>
             <td>無</td>
           </tr>
-
           <tr>
             <td>
-              <div class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-9 md:size-12 lg:size-[52px]" viewBox="0 0 35 36" fill="none"><g clip-path="url(#a)" fill="#4570b6"><path d="M17.5 30.437c-7.437 0-14.28-3.993-17.435-10.174a.6.6 0 0 1 0-.546C3.221 13.538 10.063 9.544 17.5 9.544s14.279 3.994 17.435 10.175a.6.6 0 0 1 0 .545c-3.156 6.18-9.998 10.174-17.435 10.174M1.276 19.987c3.013 5.627 9.344 9.247 16.224 9.247s13.21-3.62 16.224-9.247C30.71 14.36 24.38 10.739 17.5 10.739s-13.21 3.62-16.224 9.248"/><path d="M17.5 30.437c-5.762 0-10.447-4.685-10.447-10.447S11.738 9.543 17.5 9.543 27.947 14.23 27.947 19.99c0 5.762-4.685 10.447-10.447 10.447m0-19.698c-5.1 0-9.248 4.147-9.248 9.248s4.147 9.247 9.248 9.247 9.248-4.147 9.248-9.247-4.148-9.248-9.248-9.248"/><path d="M17.5 24.111a4.126 4.126 0 0 1-4.12-4.12c0-.246.023-.504.073-.761a.6.6 0 0 1 .307-.42.61.61 0 0 1 .519-.022q.29.127.607.127c.85 0 1.542-.692 1.542-1.542q0-.311-.127-.607a.6.6 0 0 1 .442-.826 4 4 0 0 1 .757-.073 4.126 4.126 0 0 1 4.12 4.12 4.126 4.126 0 0 1-4.12 4.12zm-2.921-4.016a2.927 2.927 0 0 0 2.921 2.813c1.576 0 2.921-1.31 2.921-2.92a2.904 2.904 0 0 0-2.813-2.922 2.744 2.744 0 0 1-3.029 3.029"/><path d="M14.883 20.114c-1.511 0-2.74-1.23-2.74-2.74s1.229-2.741 2.74-2.741c1.51 0 2.74 1.23 2.74 2.74s-1.23 2.74-2.74 2.74m0-4.282c-.85 0-1.542.692-1.542 1.541 0 .85.692 1.542 1.542 1.542a1.542 1.542 0 0 0 0-3.083"/><path d="M17.5 17.066a.6.6 0 0 1-.6-.6V6.972a.6.6 0 0 1 1.2 0v9.494a.6.6 0 0 1-.6.6"/><path d="M20.214 7.572h-5.431a.6.6 0 0 1-.6-.6V4.518a.6.6 0 0 1 .6-.6h5.43a.6.6 0 0 1 .6.6v2.456a.6.6 0 0 1-.6.6m-4.828-1.199h4.232V5.116h-4.232z"/><path d="M20.96 5.116h-6.92a.6.6 0 0 1-.564-.4L12.092.8a.603.603 0 0 1 .565-.8h9.69a.6.6 0 0 1 .565.8l-1.384 3.917a.6.6 0 0 1-.565.4zm-6.497-1.2h6.073l.961-2.72h-7.994z"/><path d="M23.834 1.2H11.166a.6.6 0 0 1 0-1.2h12.672a.6.6 0 0 1 0 1.2zM17.5 35.653c-7.288 0-13.718-5.158-15.29-12.269a.6.6 0 0 1 1.172-.257c1.45 6.565 7.388 11.33 14.122 11.33s12.668-4.765 14.121-11.33a.6.6 0 0 1 .715-.458.604.604 0 0 1 .457.715c-1.572 7.111-8.002 12.27-15.29 12.27zm14.706-18.329a.6.6 0 0 1-.585-.47c-.98-4.423-4.04-8.182-8.187-10.054a.6.6 0 0 1-.3-.792.595.595 0 0 1 .792-.3c4.49 2.026 7.807 6.096 8.864 10.89a.598.598 0 0 1-.588.73zm-29.412-.001a.604.604 0 0 1-.588-.73C3.266 11.8 6.58 7.729 11.07 5.703a.6.6 0 0 1 .792.3.6.6 0 0 1-.3.792C7.415 8.667 4.356 12.422 3.376 16.85a.6.6 0 0 1-.585.469z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h35v35.653H0z"/></clipPath></defs></svg>
+              <div
+                class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-center py-[12px] lg:py-0 lg:pl-[12px] lg:text-justify"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-9 md:size-12 lg:size-[52px]"
+                  viewBox="0 0 35 36"
+                  fill="none"
+                >
+                  <g clip-path="url(#a)" fill="#4570b6">
+                    <path
+                      d="M17.5 30.437c-7.437 0-14.28-3.993-17.435-10.174a.6.6 0 0 1 0-.546C3.221 13.538 10.063 9.544 17.5 9.544s14.279 3.994 17.435 10.175a.6.6 0 0 1 0 .545c-3.156 6.18-9.998 10.174-17.435 10.174M1.276 19.987c3.013 5.627 9.344 9.247 16.224 9.247s13.21-3.62 16.224-9.247C30.71 14.36 24.38 10.739 17.5 10.739s-13.21 3.62-16.224 9.248"
+                    />
+                    <path
+                      d="M17.5 30.437c-5.762 0-10.447-4.685-10.447-10.447S11.738 9.543 17.5 9.543 27.947 14.23 27.947 19.99c0 5.762-4.685 10.447-10.447 10.447m0-19.698c-5.1 0-9.248 4.147-9.248 9.248s4.147 9.247 9.248 9.247 9.248-4.147 9.248-9.247-4.148-9.248-9.248-9.248"
+                    />
+                    <path
+                      d="M17.5 24.111a4.126 4.126 0 0 1-4.12-4.12c0-.246.023-.504.073-.761a.6.6 0 0 1 .307-.42.61.61 0 0 1 .519-.022q.29.127.607.127c.85 0 1.542-.692 1.542-1.542q0-.311-.127-.607a.6.6 0 0 1 .442-.826 4 4 0 0 1 .757-.073 4.126 4.126 0 0 1 4.12 4.12 4.126 4.126 0 0 1-4.12 4.12zm-2.921-4.016a2.927 2.927 0 0 0 2.921 2.813c1.576 0 2.921-1.31 2.921-2.92a2.904 2.904 0 0 0-2.813-2.922 2.744 2.744 0 0 1-3.029 3.029"
+                    />
+                    <path
+                      d="M14.883 20.114c-1.511 0-2.74-1.23-2.74-2.74s1.229-2.741 2.74-2.741c1.51 0 2.74 1.23 2.74 2.74s-1.23 2.74-2.74 2.74m0-4.282c-.85 0-1.542.692-1.542 1.541 0 .85.692 1.542 1.542 1.542a1.542 1.542 0 0 0 0-3.083"
+                    />
+                    <path
+                      d="M17.5 17.066a.6.6 0 0 1-.6-.6V6.972a.6.6 0 0 1 1.2 0v9.494a.6.6 0 0 1-.6.6"
+                    />
+                    <path
+                      d="M20.214 7.572h-5.431a.6.6 0 0 1-.6-.6V4.518a.6.6 0 0 1 .6-.6h5.43a.6.6 0 0 1 .6.6v2.456a.6.6 0 0 1-.6.6m-4.828-1.199h4.232V5.116h-4.232z"
+                    />
+                    <path
+                      d="M20.96 5.116h-6.92a.6.6 0 0 1-.564-.4L12.092.8a.603.603 0 0 1 .565-.8h9.69a.6.6 0 0 1 .565.8l-1.384 3.917a.6.6 0 0 1-.565.4zm-6.497-1.2h6.073l.961-2.72h-7.994z"
+                    />
+                    <path
+                      d="M23.834 1.2H11.166a.6.6 0 0 1 0-1.2h12.672a.6.6 0 0 1 0 1.2zM17.5 35.653c-7.288 0-13.718-5.158-15.29-12.269a.6.6 0 0 1 1.172-.257c1.45 6.565 7.388 11.33 14.122 11.33s12.668-4.765 14.121-11.33a.6.6 0 0 1 .715-.458.604.604 0 0 1 .457.715c-1.572 7.111-8.002 12.27-15.29 12.27zm14.706-18.329a.6.6 0 0 1-.585-.47c-.98-4.423-4.04-8.182-8.187-10.054a.6.6 0 0 1-.3-.792.595.595 0 0 1 .792-.3c4.49 2.026 7.807 6.096 8.864 10.89a.598.598 0 0 1-.588.73zm-29.412-.001a.604.604 0 0 1-.588-.73C3.266 11.8 6.58 7.729 11.07 5.703a.6.6 0 0 1 .792.3.6.6 0 0 1-.3.792C7.415 8.667 4.356 12.422 3.376 16.85a.6.6 0 0 1-.585.469z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h35v35.653H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
                 <p>術中定位</p>
               </div>
             </td>
@@ -496,7 +894,6 @@ SMILE Pro 微笑激光矯視費用
           </tr>
         </tbody>
       </table>
-
       <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -525,7 +922,6 @@ SMILE Pro 微笑激光矯視費用
         </svg>
       </a>
     </section>
-
     <!-- 过程和介绍vedio -->
     <section class="icl-introVedio">
       <div class="icl-introVedio-intro new-container">
@@ -541,7 +937,6 @@ SMILE Pro 微笑激光矯視費用
               {{ step.number }}
             </div>
           </div>
-
           <!-- 右侧内容区域 -->
           <div class="content-area">
             <div v-if="activeStep >= 0">
@@ -550,7 +945,6 @@ SMILE Pro 微笑激光矯視費用
                   SMILE Pro微笑激光<br />
                   矯視過程
                 </p>
-
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"
@@ -579,7 +973,6 @@ SMILE Pro 微笑激光矯視費用
                   :src="steps[activeStep].imagePc"
                   alt=""
                 />
-
                 <p
                   class="content-area-text"
                   v-html="steps[activeStep].text"
@@ -590,9 +983,7 @@ SMILE Pro 微笑激光矯視費用
         </div>
       </div>
     </section>
-
     <drow />
-
     <!-- ICL植入式隱形眼鏡真實個案分享 -->
     <!-- <section class="CaseSharing">
       <div class="new-container CaseSharing-Box">
@@ -622,7 +1013,6 @@ SMILE Pro 微笑激光矯視費用
                   /></svg
               ></i>
             </a>
-
             <a
               class="d-lg-none-imp"
               href="https://www.youtube.com/embed/TBI6J31JwJQ?si=bp9WtPjKg-wowh39"
@@ -632,7 +1022,6 @@ SMILE Pro 微笑激光矯視費用
                 src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_carmen.avif"
                 alt=""
               />
-
               <span>Carmen Ngai</span>
               <i
                 ><svg
@@ -649,7 +1038,6 @@ SMILE Pro 微笑激光矯視費用
               ></i>
             </a>
           </div>
-
           <div class="CaseSharing-list-item">
             <a
               href="https://www.youtube.com/embed/1p5Qm_772jI?si=5eV0Co5EhluQwgDJ"
@@ -659,7 +1047,6 @@ SMILE Pro 微笑激光矯視費用
                 src="https://statichk.cmermedical.com/smile/smileproV2/share/smilepro-pc-share02.avif"
                 alt=""
               />
-
               <span>細猫</span>
               <i
                 ><svg
@@ -675,10 +1062,8 @@ SMILE Pro 微笑激光矯視費用
                   /></svg
               ></i>
             </a>
-
             <div></div>
           </div>
-
           <div class="CaseSharing-list-item d-none d-lg-block">
             <a
               href="https://www.youtube.com/embed/TBI6J31JwJQ?si=bp9WtPjKg-wowh39"
@@ -688,7 +1073,6 @@ SMILE Pro 微笑激光矯視費用
                 src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_carmen.avif"
                 alt=""
               />
-
               <span>Carmen Ngai</span>
               <i
                 ><svg
@@ -706,7 +1090,6 @@ SMILE Pro 微笑激光矯視費用
             </a>
           </div>
         </div>
-
         <a
           target="_blank"
           href="https://www.youtube.com/watch?v=iHBGkRh-CXw&list=PLWVonQr1f7XhXd4GDFI3zRtOe9RHb1jdb"
@@ -735,16 +1118,12 @@ SMILE Pro 微笑激光矯視費用
           </svg>
         </a>
       </div>
-
-
     </section> -->
     <userShare :user-share="ShareData"></userShare>
-
     <!-- 用家见证 -->
     <section class="smile-pro-evaluateV2">
       <div class="smile-pro-evaluateV2-Box">
         <div class="smile-pro-evaluateV2-Box-title">用家見證</div>
-
         <div class="smile-pro-evaluateV2-Box-content">
           <div
             v-swiper:mySwiper="swiperOption1"
@@ -818,19 +1197,16 @@ SMILE Pro 微笑激光矯視費用
                       </clipPath>
                     </defs>
                   </svg>
-
                   <p class="swiperWrap-item-text">
                     做完SMILE Pro之後生活方便咗好多!
                     好享受無需戴眼鏡的感覺，推薦！
                   </p>
-
                   <div class="swiperWrap-item-name">
                     <i>文員</i>
                     <p>Macy</p>
                   </div>
                 </div>
               </div>
-
               <div class="swiper-slide swiperWrap-item">
                 <div>
                   <svg
@@ -897,11 +1273,9 @@ SMILE Pro 微笑激光矯視費用
                       </clipPath>
                     </defs>
                   </svg>
-
                   <p class="swiperWrap-item-text">
                     完成SMILE Pro後，效果符合預期，係值得為自己做嘅投資
                   </p>
-
                   <div class="swiperWrap-item-name">
                     <i>行政人員</i>
                     <p>Ken</p>
@@ -974,18 +1348,15 @@ SMILE Pro 微笑激光矯視費用
                       </clipPath>
                     </defs>
                   </svg>
-
                   <p class="swiperWrap-item-text">
                     本身好驚，但醫療團隊講解步驟好清楚，喺矯視過程溫柔又細心令我安心哂!
                   </p>
-
                   <div class="swiperWrap-item-name">
                     <i>家庭主婦</i>
                     <p>Vivien</p>
                   </div>
                 </div>
               </div>
-
               <div class="swiper-slide swiperWrap-item">
                 <div>
                   <svg
@@ -1052,19 +1423,16 @@ SMILE Pro 微笑激光矯視費用
                       </clipPath>
                     </defs>
                   </svg>
-
                   <p class="swiperWrap-item-text">
                     終於唔洗成日帶con搞到眼乾眼紅!做完SMILE
                     Pro之後發現呢個世界好靚!
                   </p>
-
                   <div class="swiperWrap-item-name">
                     <i>咖啡師</i>
                     <p>阿聲</p>
                   </div>
                 </div>
               </div>
-
               <div class="swiper-slide swiperWrap-item">
                 <div>
                   <svg
@@ -1134,7 +1502,6 @@ SMILE Pro 微笑激光矯視費用
                   <p class="swiperWrap-item-text">
                     過程好快好安全，術後康復又快，眼睛兩三日後都已經清，感覺好神奇！
                   </p>
-
                   <div class="swiperWrap-item-name">
                     <i>店務員</i>
                     <p>Agnes</p>
@@ -1142,7 +1509,6 @@ SMILE Pro 微笑激光矯視費用
                 </div>
               </div>
             </div>
-
             <div class="swiper-pagination">
               <div class="swiper-button-next">
                 <svg
@@ -1193,7 +1559,6 @@ SMILE Pro 微笑激光矯視費用
             </div>
           </div>
         </div>
-
         <a
           target="_blank"
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -1223,60 +1588,74 @@ SMILE Pro 微笑激光矯視費用
         </a>
       </div>
     </section>
-
-
     <!-- start了解更多 -->
-  <div class="group w-full  mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
-    
-    <a href="/smileProCare" class=" relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8] ">
-      
-      <picture>
-        <source media="(min-width: 768px)" srcset="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-pc.webp">
-        <img 
-          src="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-mobile.webp" 
-          alt="SMILE Pro" 
-          class="absolute  w-full h-full object-cover"
-        />
-      </picture>
-
-      <div class="absolute left-1/2 -translate-x-1/2  bottom-2 md:left-auto md:translate-x-0 md:-translate-y-1/2 md:right-[5%] md:h-full md:top-1/2 md:-translate-y-1/2 md:flex md:items-center  w-[calc(100vw-100px)] mx-auto md:w-auto py-6 md:py-[5%]  ">
-    
-
-
-        <div class="relative z-10 text-white font-avant-garde text-3xl font-bold not-italic leading-[44.25px] ">
-          <p class="">想了解 </p>
-          <p>
-           SMILE Pro 同 <br class="block md:hidden">SMILE Pro Care <br class=""/>
-            有咩分別？
-          </p>
-        </div>
-
-        <div class="relative z-10 mt-8 md:mt-0 md:ml-[72px] h-full">
-          <div class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center   group-hover:bg-white">
-         <svg 
-  xmlns="http://www.w3.org/2000/svg" 
-  class="w-[44px] aspect-[1/1] md:w-[28px] group-hover:text-[#0A2342]" 
-  viewBox="0 0 44 44"
-  fill="none"
->
-  <path d="M2.5 40.8844L39.6998 3.68457"  class="stroke-white group-hover:stroke-[#0A2342]" stroke-width="5" stroke-linecap="round"/>
-  <path d="M7.92065 2.5H40.968V34.458" class="stroke-white group-hover:stroke-[#0A2342]" stroke-width="5" stroke-linecap="round"/>
-</svg>
-            <span class="text-white text-center  text-[35px] font-black not-italic leading-[25px] mt-6 group-hover:text-[#0A2342]">了解更多</span>
+    <div class="group w-full mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
+      <a
+        href="/smileProCare"
+        class="relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8]"
+      >
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-pc.webp
+            "
+          />
+          <img
+            src="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-mobile.webp"
+            alt="SMILE Pro"
+            class="absolute w-full h-full object-cover"
+          />
+        </picture>
+        <div
+          class="absolute left-1/2 -translate-x-1/2 bottom-2 md:left-auto md:translate-x-0 md:-translate-y-1/2 md:right-[5%] md:h-full md:top-1/2 md:-translate-y-1/2 md:flex md:items-center w-[calc(100vw-100px)] mx-auto md:w-auto py-6 md:py-[5%]"
+        >
+          <div
+            class="relative z-10 text-white font-avant-garde text-3xl font-bold not-italic leading-[44.25px]"
+          >
+            <p class="">想了解</p>
+            <p>
+              SMILE Pro 同 <br class="block md:hidden" />SMILE Pro Care
+              <br class="" />
+              有咩分別？
+            </p>
+          </div>
+          <div class="relative z-10 mt-8 md:mt-0 md:ml-[72px] h-full">
+            <div
+              class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center group-hover:bg-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[44px] aspect-[1/1] md:w-[28px] group-hover:text-[#0A2342]"
+                viewBox="0 0 44 44"
+                fill="none"
+              >
+                <path
+                  d="M2.5 40.8844L39.6998 3.68457"
+                  class="stroke-white group-hover:stroke-[#0A2342]"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M7.92065 2.5H40.968V34.458"
+                  class="stroke-white group-hover:stroke-[#0A2342]"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span
+                class="text-white text-center text-[35px] font-black not-italic leading-[25px] mt-6 group-hover:text-[#0A2342]"
+                >了解更多</span
+              >
+            </div>
           </div>
         </div>
-
-        
-
-      </div>
-
-      <div class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-500 pointer-events-none"></div>
-    </a>
-
-  </div>
-
+        <div
+          class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-500 pointer-events-none"
+        ></div>
+      </a>
+    </div>
     <!-- end了解更多 -->
-
     <section class="CaseSharingV2">
       <div>
         <svg
@@ -1354,9 +1733,6 @@ SMILE Pro 微笑激光矯視費用
         </a>
       </div>
     </section>
-
-
-    
     <FooterV2 />
     <FooterMobile />
   </div>
@@ -1364,24 +1740,20 @@ SMILE Pro 微笑激光矯視費用
 <script>
 import Head from "@/components/Publice/Head.vue";
 import HeadV2 from "@/components/Publice/HeadeV2.vue";
-
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
-
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
 import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
-
 import drow from "@/components/content/service/SmileProV2/drow.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
-import topNotice from '@/components/Publice/topNotice.vue'
+import topNotice from "@/components/Publice/topNotice.vue";
 export default {
   components: {
     Head,
@@ -1407,7 +1779,6 @@ export default {
         meta: [{ hid: "robots", name: "robots", content: "noindex" }],
       };
     }
-
     return {
       title:
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
@@ -1490,7 +1861,6 @@ export default {
           text: "將切割了的角膜透鏡從切口抽出",
         },
       ],
-
       suitable_object: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
@@ -1529,7 +1899,6 @@ export default {
           ],
         },
       ],
-
       swiperOption1: {
         spaceBetween: 60,
         slidesPerView: 5,
@@ -1577,7 +1946,6 @@ export default {
           prevEl: ".swiper-button-prev",
         },
       },
-
       ShareData: [
         {
           type: "SMILE Pro",
@@ -1639,7 +2007,7 @@ export default {
           type: "SMILE Pro",
           href: "https://youtu.be/857FwJQu7OA",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-020.avif",
-          text: ["無咗眼鏡都一樣做到唔","同活動"],
+          text: ["無咗眼鏡都一樣做到唔", "同活動"],
           nameEn: "Jay",
           nameCn: "沈以諾",
         },
@@ -1651,7 +2019,6 @@ export default {
           nameEn: "Carmen",
           nameCn: "倪嘉雯",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/vxeN1wXeZ5M",
@@ -1660,7 +2027,6 @@ export default {
           nameEn: "Maggie",
           nameCn: "米姬",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/10KYv_gGgWM",
@@ -1669,7 +2035,6 @@ export default {
           nameEn: " ",
           nameCn: "Anson Au",
         },
-
         {
           type: "SMILE Pro",
           href: "https://www.youtube.com/watch?v=1p5Qm_772jI",
@@ -1678,7 +2043,6 @@ export default {
           nameEn: " ",
           nameCn: "細貓",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/kVEJ-PN4AJo",
@@ -1687,7 +2051,6 @@ export default {
           nameEn: " ",
           nameCn: "Cindy Wong",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/VoGlE1dJPhc",
@@ -1696,7 +2059,6 @@ export default {
           nameEn: "Pinky",
           nameCn: "",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/1Ic0z7wiVv8",
@@ -1706,14 +2068,12 @@ export default {
           nameCn: "鄧伊程",
         },
       ],
-
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
       browserTitle: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
       browserTitleCn: "SMILE PRO 微笑矫视 - 希玛微笑矫视中心",
     };
   },
-
   methods: {
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -1725,16 +2085,13 @@ export default {
     prevEl() {
       this.mySwiper.slidePrev();
     },
-
     checkDeviceType() {
       this.isDesktop = window.innerWidth > 768;
     },
-
     highlightStep(index) {
       this.activeStep = index; // 更新当前激活的步骤
       this.stopTimer();
     },
-
     async copyCurrentUrl() {
       try {
         const textArea = document.createElement("textarea");
@@ -1743,7 +2100,6 @@ export default {
         textArea.select();
         document.execCommand("copy");
         document.body.removeChild(textArea);
-
         this.$message({
           showClose: true,
           message: "複製成功",
@@ -1753,7 +2109,6 @@ export default {
         console.error("复制失败:", error);
       }
     },
-
     scrollToTopV2() {
       window.scrollTo({
         top: 0,
@@ -1778,16 +2133,13 @@ export default {
         this.activeStepTimer = null;
       }
     },
-
     wrapSwiperWrapper() {
       const container = this.$refs.swiperContainer;
       const wrapper = container.querySelector(".swiperWrap .swiper-wrapper");
       const pagination = container.querySelector(
         ".swiperWrap .swiper-pagination"
       );
-
       if (!wrapper) return;
-
       // 创建新的包裹层
       const overflowDiv = document.createElement("div");
       overflowDiv.className = "swiper-overflow";
@@ -1795,25 +2147,21 @@ export default {
       // 将 wrapper 插入到新的包裹层中
       overflowDiv.appendChild(wrapper);
       overflowDiv.appendChild(pagination);
-
       // 清空容器并插入新的结构
       container.innerHTML = "";
       container.appendChild(overflowDiv);
     },
   },
-
   // beforeDestroy() {
   //   window.removeEventListener("resize", this.checkDeviceType);
   // },
   mounted() {
     this.windowWidth = window.innerWidth;
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
       this.isMobile = false;
     }
-
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
@@ -1825,19 +2173,15 @@ export default {
     if (window.innerWidth > 992) {
       this.wrapSwiperWrapper();
     }
-
     // this.checkDeviceType();
     // window.addEventListener("resize", this.checkDeviceType);
-
     // 启动计时
     this.startTimer();
     // 获取容器和内容
-
     const shaerwidth = this.$refs.caseSharingList;
     if (shaerwidth) {
       const contentWidth = shaerwidth.scrollWidth; // 内容总宽度
       const containerWidth = shaerwidth.clientWidth; // 容器可见宽度
-
       // 计算滚动到中间的位置
       const scrollLeft = (contentWidth - containerWidth) / 2;
       // 设置滚动位置
@@ -1846,17 +2190,13 @@ export default {
   },
 };
 </script>
-
 <style>
-
 .simleProV2 .head-bg {
-    top:54px !important;
+  top: 54px !important;
 }
-
 .simleProV2 .headV2 {
-    top:37px !important;
+  top: 37px !important;
 }
-
 body {
   overflow-x: hidden;
   background: white;
@@ -1866,7 +2206,6 @@ body {
 :deep(.share-img) {
   margin-top: 0;
 }
-
 .d-none {
   display: none;
 }
@@ -1876,18 +2215,16 @@ i {
 .changehang {
   display: none;
 }
-
 @media screen and (min-width: 1139px) {
-  .new-Footer-v2{
-  margin-top: 0 !important;
-}
+  .new-Footer-v2 {
+    margin-top: 0 !important;
+  }
   .new-container {
     max-width: 1140px !important;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1310px) {
   .new-container {
     max-width: 1320px !important;
@@ -1895,7 +2232,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (max-width: 1140px) {
   .smile-NewBanner {
     padding: 0 15px;
@@ -1909,7 +2245,6 @@ i {
       right: 64px;
       // z-index: 95;
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 58px;
@@ -1941,7 +2276,6 @@ i {
         letter-spacing: 0.295px;
       }
     }
-
     .smile-NewBanner-Tip {
       position: absolute;
       right: 15px;
@@ -1952,7 +2286,6 @@ i {
       & > div:nth-child(1) {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-
         padding: 5px 20px 0px 10px;
         display: inline-block;
         color: #fff;
@@ -1976,7 +2309,6 @@ i {
       }
     }
   }
-
   .icl-WhatChoose {
     padding: 40px 15px;
     .icl-WhatChoose-title {
@@ -1991,7 +2323,6 @@ i {
       margin: 0 auto;
       max-width: 100vw;
       margin-top: 30px;
-
       .icl-WhatChoose-content-one-img {
       }
       .icl-WhatChoose-content-one-text {
@@ -2018,7 +2349,6 @@ i {
         }
       }
     }
-
     .icl-WhatChoose-content-two {
       margin: 0 auto;
       max-width: 100vw;
@@ -2072,7 +2402,6 @@ i {
       margin-left: 9px;
     }
   }
-
   .new-pubile-title {
     span {
       font-family: "Poppins";
@@ -2086,7 +2415,6 @@ i {
     text-align: center;
     margin: 0px auto 30px;
   }
-
   // 案例分享
   .CaseSharing {
     margin-top: 40px;
@@ -2097,7 +2425,6 @@ i {
     background-position: center center;
     padding: 86px 0 110px;
     position: relative;
-
     .CaseSharing-Box {
       position: relative;
       h3 {
@@ -2117,14 +2444,12 @@ i {
       }
       .CaseSharing-list {
         display: flex;
-
         justify-content: center;
         gap: 13.26px;
         width: 100vw;
         flex-wrap: nowrap;
         overflow-x: auto;
         scrollbar-width: none;
-
         & > .CaseSharing-list-item:nth-child(2) {
           padding-top: 121px;
         }
@@ -2136,7 +2461,6 @@ i {
             display: block;
             width: 175px;
             box-shadow: -1.768px 1.768px 0px 0px #4570b6;
-
             position: relative;
             margin-bottom: 13.26px;
             span {
@@ -2172,17 +2496,14 @@ i {
         }
       }
     }
-
     .CaseSharing-btn {
       width: 114.287px;
       height: 113.922px;
-
       position: absolute;
       bottom: 0px;
       right: 0;
     }
   }
-
   .latestNews {
     margin-bottom: 40px;
     background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-newdongtai-mobile.jpg")
@@ -2192,13 +2513,11 @@ i {
     height: 209vw;
     // padding-top: 130px;
     padding-top: 33.33vw;
-
     .top-btnV2new {
       position: absolute;
       bottom: 20px;
       right: 15px;
     }
-
     .latestNews-tip {
       position: absolute;
       // top: 55px;
@@ -2214,7 +2533,6 @@ i {
       line-height: 1.95;
       padding: 5px 24px;
     }
-
     .latestNews-in {
       // width: 252px;
       width: 64.61vw;
@@ -2260,13 +2578,11 @@ i {
         letter-spacing: 3.2px;
       }
     }
-
     .latestNews-btn {
       border: 1px solid #c13550;
       border-radius: 50%;
       // width: 172px;
       // height: 172px;
-
       width: 44.1vw;
       height: 44.1vw;
       margin-top: 24px;
@@ -2283,7 +2599,6 @@ i {
         width: 4.84vw;
         height: 4.87vw;
       }
-
       span {
         color: #c13550;
         text-align: center;
@@ -2296,10 +2611,8 @@ i {
       }
     }
   }
-
   .CaseSharingV2 {
     width: fit-content;
-
     margin: 0 auto;
     & > div:nth-child(1) {
       display: flex;
@@ -2333,7 +2646,6 @@ i {
     }
   }
 }
-
 // 移动端
 @media screen and (max-width: 992px) {
   .smile-newCenter {
@@ -2359,9 +2671,7 @@ i {
         font-weight: 500;
       }
     }
-
     // 内容
-
     .smilePro-newCenter-content {
       .smilePro-newCenter-content-text {
         background-image: url("https://statichk.cmermedical.com/smile/smileproV2/center/smilepro-mobile-center.avif");
@@ -2371,13 +2681,11 @@ i {
         display: flex;
         justify-content: center;
         align-items: center;
-
         & > div > div {
           max-width: 299px;
           margin: 0 auto;
           position: relative;
           z-index: 2;
-
           &::after {
             content: url("https://statichk.cmermedical.com/smile/smileproV2/center/smilepro-mobile-centerSmall2.webp");
             position: absolute;
@@ -2390,7 +2698,6 @@ i {
             position: relative;
             z-index: 2;
             text-align: center;
-
             margin-bottom: 10px;
             color: #4570b6;
             font-family: "Noto Sans TC";
@@ -2433,7 +2740,6 @@ i {
   // 四大特点
   .smilepro-four-feature {
     padding: 0 15px;
-
     .smilepro-four-feature-Box {
       max-width: 332px;
       margin: 0 auto;
@@ -2457,7 +2763,6 @@ i {
           letter-spacing: 2.1px;
         }
       }
-
       // 内容
       .smilepro-four-feature-Box-List {
         margin-top: 40px;
@@ -2465,14 +2770,12 @@ i {
         background-repeat: no-repeat;
         background-position: right top;
         background-size: 72%;
-
         .smilepro-four-feature-Box-List-item {
           display: flex;
           align-items: center;
           gap: 20.32px;
           margin-bottom: 34px;
           min-width: 284px;
-
           .smilepro-four-feature-Box-List-item-number {
             width: 74px;
             color: #4570b6;
@@ -2511,7 +2814,6 @@ i {
       }
     }
   }
-
   // 表格
   .smilepro-difference {
     margin-top: 93px;
@@ -2528,7 +2830,6 @@ i {
         font-weight: 900;
         line-height: 1.05;
         position: relative;
-
         &::after {
           content: "";
           background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png")
@@ -2539,7 +2840,6 @@ i {
           top: -100%;
           right: -44px;
         }
-
         &::before {
           content: "一圖看清";
           position: absolute;
@@ -2556,14 +2856,12 @@ i {
         }
       }
     }
-
     .custom-comparison-table {
       margin-top: 30px;
       width: 100%;
       border-collapse: collapse;
       border-spacing: 0;
     }
-
     .custom-comparison-table tr {
       position: relative;
       z-index: 2;
@@ -2575,7 +2873,6 @@ i {
       text-align: center;
       vertical-align: middle;
     }
-
     .custom-comparison-table thead th {
       background: #f4fafc;
       width: 107px;
@@ -2589,11 +2886,9 @@ i {
       line-height: 1.357;
       width: 27.18vw;
     }
-
     .custom-comparison-table thead th:nth-child(1) {
       width: 17.95vw;
     }
-
     .custom-comparison-table thead tr > th:nth-child(1) {
       background: none;
     }
@@ -2602,7 +2897,6 @@ i {
       color: #fff;
       line-height: 1.357;
     }
-
     .custom-comparison-table tbody tr td {
       color: #60605f;
       text-align: center;
@@ -2612,7 +2906,6 @@ i {
       font-weight: 300;
       line-height: 1.314;
     }
-
     .custom-comparison-table tbody tr > td:nth-child(1) {
       background: #f8f8f8;
       color: #4570b6;
@@ -2631,10 +2924,8 @@ i {
         line-height: 21.031px;
       }
     }
-
     .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #5a8ad6;
-
       color: #fff;
       text-align: center;
       font-family: "Noto Sans TC";
@@ -2645,7 +2936,6 @@ i {
       letter-spacing: 0.6px;
     }
   }
-
   .icl-introVedio {
     position: relative;
     &::before {
@@ -2670,7 +2960,6 @@ i {
         display: flex;
         justify-content: center;
         gap: 10px;
-
         .steps {
           width: 25px;
           color: #6d6e71;
@@ -2697,7 +2986,6 @@ i {
             transition: all 0.3s ease;
             font-family: "Poppins", sans-serif;
             font-weight: 200;
-
             &:hover,
             &.active {
               color: #4570b6;
@@ -2710,7 +2998,6 @@ i {
             }
           }
         }
-
         .content-area {
           position: relative;
           .content-area-title {
@@ -2732,7 +3019,6 @@ i {
               left: 110px;
             }
           }
-
           .content-area-img {
             max-width: 290px;
             position: relative;
@@ -2761,7 +3047,6 @@ i {
       }
     }
   }
-
   .gameBox {
     .gameBox-content {
       padding-top: 52px;
@@ -2774,12 +3059,10 @@ i {
       -webkit-user-select: none; /* 禁用文本选择 */
       user-select: none;
       touch-action: none; /* 禁用默认触摸行为 */
-
       background-image: url("https://statichk.cmermedical.com/smile/smileproV2/game/smilepro-game-mobileBg.avif");
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
-
       .folder {
         text-align: center;
         transition: all 0.3s ease;
@@ -2787,15 +3070,12 @@ i {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         img,
         svg {
           width: 116.492px;
-
           margin-bottom: 10px;
           transition: transform 0.3s ease;
         }
-
         button {
           margin-top: 10px;
           padding: 10px 20px;
@@ -2804,13 +3084,11 @@ i {
           border: none;
           cursor: pointer;
           transition: background-color 0.3s;
-
           &:hover {
             background-color: #0056b3;
           }
         }
       }
-
       .draggable {
         background-color: #fff;
         display: flex;
@@ -2821,14 +3099,12 @@ i {
         transition: background-color 0.3s, box-shadow 0.3s;
         user-select: none;
         width: fit-content;
-
         img {
           width: 162.684px;
           height: 162.684px;
           flex-shrink: 0;
           border-radius: 13px;
         }
-
         .draggable-item-text {
           color: #6d6e71;
           text-align: center;
@@ -2839,13 +3115,11 @@ i {
           line-height: 1.48;
           letter-spacing: 1.4px;
         }
-
         &:hover {
           background-color: #e0e0e0;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
       }
-
       & > .draggable:nth-child(1) {
         position: absolute;
         left: 22px;
@@ -2853,7 +3127,6 @@ i {
       }
     }
   }
-
   .smile-pro-evaluateV2 {
     background: #f4fafc;
     margin-top: 40px;
@@ -2873,7 +3146,6 @@ i {
         display: flex;
         justify-content: center;
         align-items: center;
-
         color: #4570b6;
         font-family: "Noto Sans TC";
         font-size: 20px;
@@ -2891,7 +3163,6 @@ i {
           left: -58px;
         }
       }
-
       .smile-pro-evaluateV2-Box-content {
         margin-top: 12px;
         margin-left: 30px;
@@ -2924,7 +3195,6 @@ i {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg.png");
                 background-repeat: no-repeat;
                 background-color: white;
-
                 width: 165px !important;
                 height: 302px;
                 padding: 40px 23.5px 43px;
@@ -2936,7 +3206,6 @@ i {
                   width: 69px;
                   height: 69px;
                 }
-
                 .swiperWrap-item-text {
                   margin-top: 10px;
                   color: #4570b6;
@@ -2986,7 +3255,6 @@ i {
                     fill: #4570b6;
                   }
                 }
-
                 .swiperWrap-item-text {
                   color: #4570b6;
                   text-align: justify;
@@ -3044,7 +3312,6 @@ i {
     }
   }
 }
-
 // 小于390
 @media screen and (max-width: 389px) {
   .smile-NewBanner {
@@ -3055,11 +3322,9 @@ i {
     img {
       width: 51.28vw;
       position: absolute;
-
       top: -15.12vw;
       right: 20.51vw;
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 14.87vw;
@@ -3091,7 +3356,6 @@ i {
         letter-spacing: 0.295px;
       }
     }
-
     .smile-NewBanner-Tip {
       position: absolute;
       right: 15px;
@@ -3122,7 +3386,6 @@ i {
       }
     }
   }
-
   .smile-newCenter {
     .smile-newCenter-menu {
       padding: 0 15px;
@@ -3146,10 +3409,8 @@ i {
         font-weight: 500;
       }
     }
-
     // 内容
   }
-
   .icl-WhatChoose {
     padding: 40px 15px;
     .icl-WhatChoose-title {
@@ -3164,13 +3425,11 @@ i {
       margin: 0 auto;
       max-width: 92.3vw;
       margin-top: 7.69vw;
-
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 92.3vw;
         margin-top: 7.69vw;
         text-align: justify;
-
         p {
           color: #6d6e71;
           font-family: "Noto Sans TC" !important;
@@ -3191,7 +3450,6 @@ i {
         }
       }
     }
-
     .icl-WhatChoose-content-two {
       margin: 0 auto;
       max-width: 92.3vw;
@@ -3221,11 +3479,9 @@ i {
       }
     }
   }
-
   // 四大特点
   .smilepro-four-feature {
     padding: 0 15px;
-
     .smilepro-four-feature-Box {
       max-width: 85.13vw;
       margin: 0 auto;
@@ -3249,21 +3505,18 @@ i {
           letter-spacing: 0.54vw;
         }
       }
-
       // 内容
       .smilepro-four-feature-Box-List {
         margin-top: 40px;
         background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-four-feature/smilepro-four-feature-mobileBg4.avif");
         background-repeat: no-repeat;
         background-position: right top;
-
         .smilepro-four-feature-Box-List-item {
           display: flex;
           align-items: center;
           gap: 5.21vw;
           margin-bottom: 8.72vw;
           min-width: 72.82vw;
-
           .smilepro-four-feature-Box-List-item-number {
             width: 18.97vw;
             color: #4570b6;
@@ -3302,7 +3555,6 @@ i {
       }
     }
   }
-
   // 表格
   .smilepro-difference {
     margin-top: 23.85vw;
@@ -3319,7 +3571,6 @@ i {
         font-weight: 900;
         line-height: 1.05;
         position: relative;
-
         &::after {
           content: "";
           background: url("https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-mobile-titleBgnew.png")
@@ -3330,7 +3581,6 @@ i {
           top: calc(-100% - 4px);
           right: -44px;
         }
-
         &::before {
           content: "一圖看清";
           position: absolute;
@@ -3347,14 +3597,12 @@ i {
         }
       }
     }
-
     .custom-comparison-table {
       margin-top: 7.69vw;
       width: 100%;
       border-collapse: collapse;
       border-spacing: 0;
     }
-
     .custom-comparison-table tr {
       position: relative;
       z-index: 2;
@@ -3366,7 +3614,6 @@ i {
       text-align: center;
       vertical-align: middle;
     }
-
     .custom-comparison-table thead th {
       background: #f4fafc;
       width: 27.44vw;
@@ -3380,11 +3627,9 @@ i {
       line-height: 1.357;
       width: 27.18vw;
     }
-
     .custom-comparison-table thead th:nth-child(1) {
       width: 17.95vw;
     }
-
     .custom-comparison-table thead tr > th:nth-child(1) {
       background: none;
     }
@@ -3393,7 +3638,6 @@ i {
       color: #fff;
       line-height: 1.357;
     }
-
     .custom-comparison-table tbody tr td {
       color: #60605f;
       text-align: center;
@@ -3403,7 +3647,6 @@ i {
       font-weight: 300;
       line-height: 1.314;
     }
-
     .custom-comparison-table tbody tr > td:nth-child(1) {
       background: #f8f8f8;
       color: #4570b6;
@@ -3422,10 +3665,8 @@ i {
         line-height: 1.75;
       }
     }
-
     .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #5a8ad6;
-
       color: #fff;
       text-align: center;
       font-family: "Noto Sans TC";
@@ -3436,7 +3677,6 @@ i {
       letter-spacing: 0.6px;
     }
   }
-
   .icl-introVedio {
     position: relative;
     &::before {
@@ -3461,7 +3701,6 @@ i {
         display: flex;
         justify-content: center;
         gap: 2.56vw;
-
         .steps {
           width: 6.41vw;
           color: #6d6e71;
@@ -3488,7 +3727,6 @@ i {
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-
             &:hover,
             &.active {
               color: #4570b6;
@@ -3501,7 +3739,6 @@ i {
             }
           }
         }
-
         .content-area {
           position: relative;
           .content-area-title {
@@ -3523,7 +3760,6 @@ i {
               left: 28.21vw;
             }
           }
-
           .content-area-img {
             max-width: 74.36vw;
             position: relative;
@@ -3552,7 +3788,6 @@ i {
       }
     }
   }
-
   .smile-pro-evaluateV2 {
     background: #f4fafc;
     padding-top: 11.28vw;
@@ -3572,13 +3807,11 @@ i {
           background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-active.png");
           background-repeat: no-repeat;
           background-size: cover;
-
           width: 46.22vw !important;
           height: 85.38vw;
           border-radius: 5.13vw;
           z-index: 3;
         }
-
         .swiperWrap {
           .swiper-wrapper {
             align-items: center;
@@ -3599,7 +3832,6 @@ i {
                   width: 17.69vw;
                   height: 17.69vw;
                 }
-
                 .swiperWrap-item-text {
                   margin-top: 2.56vw;
                   color: #4570b6;
@@ -3636,7 +3868,6 @@ i {
                 // background-size: cover;
                 // background-color: white;
                 background-color: white;
-
                 background-image: none;
                 width: 46.22vw !important;
                 height: 85.38vw;
@@ -3653,7 +3884,6 @@ i {
                     fill: #4570b6;
                   }
                 }
-
                 .swiperWrap-item-text {
                   color: #4570b6;
                   text-align: justify;
@@ -3686,7 +3916,6 @@ i {
       }
     }
   }
-
   // 案例分享
   .CaseSharing {
     margin-top: 40px;
@@ -3697,7 +3926,6 @@ i {
     background-position: center center;
     padding: 22.05vw 0 28.21vw;
     position: relative;
-
     .CaseSharing-Box {
       position: relative;
       h3 {
@@ -3717,14 +3945,12 @@ i {
       }
       .CaseSharing-list {
         display: flex;
-
         // justify-content: center;
         gap: 3.4vw;
         width: 100vw;
         flex-wrap: nowrap;
         overflow-x: auto;
         scrollbar-width: none;
-
         & > .CaseSharing-list-item:nth-child(2) {
           padding-top: 31.03vw;
         }
@@ -3736,7 +3962,6 @@ i {
             display: block;
             width: 44.87vw;
             box-shadow: -1.768px 1.768px 0px 0px #4570b6;
-
             position: relative;
             margin-bottom: 3.4vw;
             span {
@@ -3772,20 +3997,16 @@ i {
         }
       }
     }
-
     .CaseSharing-btn {
       width: 29.23vw;
       height: 29.23vw;
-
       position: absolute;
       bottom: 0px;
       right: 0;
     }
   }
-
   .CaseSharingV2 {
     width: fit-content;
-
     margin: 0 auto;
     & > div:nth-child(1) {
       display: flex;
@@ -3819,7 +4040,6 @@ i {
     }
   }
 }
-
 // pc端
 @media screen and (min-width: 992px) {
   .changehon {
@@ -3860,7 +4080,6 @@ i {
         font-weight: 500;
       }
     }
-
     .smilePro-newCenter-content {
       .smilePro-newCenter-content-text {
         background-image: url("https://statichk.cmermedical.com/smile/smileproV2/center/smilepro-pc-center.avif");
@@ -3870,18 +4089,15 @@ i {
         display: flex;
         justify-content: center;
         align-items: center;
-
         & > div > div {
           width: clamp(312.5px, 32.55vw, 625px);
           height: clamp(312.5px, 32.55vw, 625px);
           padding: clamp(59px, 6.15vw, 118px) clamp(34px, 3.54vw, 68px)
             clamp(73px, 7.6vw, 146px) clamp(42px, 4.38vw, 84px);
-
           text-align: center;
           background-color: white;
           border-radius: 50%;
           position: relative;
-
           &::after {
             content: "";
             position: absolute;
@@ -3899,7 +4115,6 @@ i {
             position: relative;
             z-index: 2;
             text-align: center;
-
             margin-bottom: clamp(8px, 0.83vw, 16px);
             color: #4570b6;
             font-family: "Noto Sans TC";
@@ -3944,11 +4159,9 @@ i {
       }
     }
   }
-
   // 四大特点
   .smilepro-four-feature {
     position: relative;
-
     &::after {
       content: "";
       position: absolute;
@@ -3964,11 +4177,9 @@ i {
     .smilepro-four-feature-Box {
       max-width: clamp(538px, 56.04vw, 1076px);
       margin: 0 auto;
-
       .smilepro-four-feature-Box-top {
         display: flex;
         gap: clamp(23.5px, 2.45vw, 47px);
-
         h3 {
           span {
             font-family: "Poppins";
@@ -3991,24 +4202,20 @@ i {
           letter-spacing: clamp(2.5px, 0.26vw, 5px);
         }
       }
-
       // 内容
       .smilepro-four-feature-Box-List {
         margin-top: clamp(50px, 5.21vw, 100px);
         position: relative;
         z-index: 2;
-
         display: flex;
         flex-wrap: wrap;
         gap: clamp(59px, 6.15vw, 118px) clamp(8.5px, 0.89vw, 17px);
-
         .smilepro-four-feature-Box-List-item {
           display: flex;
           align-items: center;
           // gap: clamp(16.5px,1.72vw,33px);
           gap: clamp(10px, 1.04vw, 20px);
           min-width: clamp(262px, 27.29vw, 524px);
-
           .smilepro-four-feature-Box-List-item-number {
             color: #4570b6;
             font-family: "Poppins";
@@ -4044,7 +4251,6 @@ i {
       }
     }
   }
-
   // 表格
   .smilepro-difference {
     margin-top: 230px;
@@ -4076,7 +4282,6 @@ i {
         }
       }
     }
-
     .custom-comparison-table {
       margin: 0 auto;
       margin-top: 67px;
@@ -4095,7 +4300,6 @@ i {
       text-align: center;
       vertical-align: middle;
     }
-
     .custom-comparison-table thead th {
       background: #f4fafc;
       color: #4570b6;
@@ -4105,7 +4309,6 @@ i {
       font-weight: 700;
       line-height: 26px;
       width: 253px;
-
       span {
         text-align: center;
         font-family: "Poppins";
@@ -4115,12 +4318,10 @@ i {
         line-height: 1.3;
       }
     }
-
     .custom-comparison-table thead th:nth-child(1) {
       width: 210px;
       border: none;
     }
-
     .custom-comparison-table thead tr > th:nth-child(1) {
       background: none;
     }
@@ -4129,7 +4330,6 @@ i {
       color: #fff;
       line-height: 1.357;
     }
-
     .custom-comparison-table tbody tr td {
       color: #60605f;
       text-align: center;
@@ -4140,7 +4340,6 @@ i {
       line-height: 1.125;
       letter-spacing: 1px;
     }
-
     .custom-comparison-table tbody tr > td:nth-child(1) {
       background: #f8f8f8;
       color: #4570b6;
@@ -4152,7 +4351,6 @@ i {
       line-height: 1.5;
       letter-spacing: 4px;
     }
-
     .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #5a8ad6;
       font-weight: 700;
@@ -4163,7 +4361,6 @@ i {
       margin-top: 63px;
     }
   }
-
   // 流程
   .icl-introVedio {
     width: 100vw;
@@ -4175,7 +4372,6 @@ i {
       right: 0;
       pointer-events: none;
     }
-
     padding: 200px 0 86px;
     .icl-introVedio-intro {
       .icl-introVedio-intro-number {
@@ -4188,23 +4384,19 @@ i {
           bottom: -178px;
           pointer-events: none;
         }
-
         width: fit-content;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         gap: 35px;
-
         .steps {
           width: 60px;
           color: #6d6e71;
           font-family: "Poppins", sans-serif;
           font-size: 38px;
           font-style: normal;
-
           font-weight: 400;
           line-height: normal;
-
           div {
             font-family: "Poppins", sans-serif;
             font-weight: 200;
@@ -4233,7 +4425,6 @@ i {
             margin-bottom: 0;
           }
         }
-
         .content-area {
           position: relative;
           flex: 1;
@@ -4258,23 +4449,19 @@ i {
               left: 240px;
             }
           }
-
           .content-area-img {
             position: relative;
             display: flex;
             gap: 80px;
             z-index: 2;
             align-items: center;
-
             img {
               max-width: 647px;
               height: auto;
             }
             .content-area-text {
               left: 50%;
-
               width: 220px;
-
               color: #6d6e71;
               font-family: "Noto Sans TC";
               font-size: 23px;
@@ -4288,7 +4475,6 @@ i {
       }
     }
   }
-
   .gameBox {
     .gameBox-content {
       padding-top: 52px;
@@ -4301,7 +4487,6 @@ i {
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
-
       .folder {
         text-align: center;
         transition: all 0.3s ease;
@@ -4309,15 +4494,12 @@ i {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         img,
         svg {
           width: 116.492px;
-
           margin-bottom: 10px;
           transition: transform 0.3s ease;
         }
-
         button {
           margin-top: 10px;
           padding: 10px 20px;
@@ -4326,13 +4508,11 @@ i {
           border: none;
           cursor: pointer;
           transition: background-color 0.3s;
-
           &:hover {
             background-color: #0056b3;
           }
         }
       }
-
       .draggable {
         background-color: #fff;
         display: flex;
@@ -4343,14 +4523,12 @@ i {
         transition: background-color 0.3s, box-shadow 0.3s;
         user-select: none;
         width: fit-content;
-
         img {
           width: 162.684px;
           height: 162.684px;
           flex-shrink: 0;
           border-radius: 13px;
         }
-
         .draggable-item-text {
           color: #6d6e71;
           text-align: center;
@@ -4361,13 +4539,11 @@ i {
           line-height: 1.48;
           letter-spacing: 1.4px;
         }
-
         &:hover {
           background-color: #e0e0e0;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
       }
-
       & > .draggable:nth-child(1) {
         position: absolute;
         left: 22px;
@@ -4375,12 +4551,10 @@ i {
       }
     }
   }
-
   // 用家见证
   .smile-pro-evaluateV2 {
     max-width: 100vw;
     width: 100vw;
-
     background: #f4fafc;
     margin-top: 90px;
     padding-top: 62px;
@@ -4398,7 +4572,6 @@ i {
       background-size: cover;
       z-index: 1;
     }
-
     .smile-pro-evaluateV2-Box {
       max-width: 1760px;
       overflow: hidden;
@@ -4439,7 +4612,6 @@ i {
           left: -84px;
         }
       }
-
       .smile-pro-evaluateV2-Box-content {
         max-width: 1362px;
         position: relative;
@@ -4449,7 +4621,6 @@ i {
         transform: translateX(396px);
         height: 552.006px;
         z-index: 2;
-
         &::after {
           content: "";
           position: absolute;
@@ -4473,7 +4644,6 @@ i {
           .overflow-swiper {
             overflow: hidden;
           }
-
           .swiper-wrapper {
             align-items: center;
             width: 100%;
@@ -4483,14 +4653,11 @@ i {
             .swiper-slide-active ~ .swiper-slide {
               margin-left: -18px;
             }
-
             .swiperWrap-item {
               // width: 206.662px !important;
-
               & > div {
                 background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-yjjz-bg-pc.png");
                 background-repeat: no-repeat;
-
                 width: 206.662px !important;
                 height: 378.96px;
                 flex-shrink: 0;
@@ -4503,7 +4670,6 @@ i {
                   height: 89px;
                   flex-shrink: 0;
                 }
-
                 .swiperWrap-item-text {
                   margin-top: 29px;
                   color: #4570b6;
@@ -4541,7 +4707,6 @@ i {
                 background-image: none;
                 // background-color: white;
                 background-color: white;
-
                 width: 274px !important;
                 height: 552.006px;
                 flex-shrink: 0;
@@ -4553,13 +4718,11 @@ i {
                   margin: 0 auto;
                   width: 123px;
                   height: 123px;
-
                   flex-shrink: 0;
                   path {
                     fill: #4570b6;
                   }
                 }
-
                 .swiperWrap-item-text {
                   color: #4570b6;
                   text-align: justify;
@@ -4610,7 +4773,6 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1140px) {
   .head-bg {
     position: fixed;
@@ -4626,7 +4788,6 @@ i {
   .d-xl-block {
     display: block;
   }
-
   .smile-NewBanner {
     padding: 0px;
     // margin-top: 213px;
@@ -4639,7 +4800,6 @@ i {
       left: inherit;
       right: 239px;
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 90px;
@@ -4670,7 +4830,6 @@ i {
         letter-spacing: 0.892px;
       }
     }
-
     .smile-NewBanner-Tip {
       position: absolute;
       right: 15px;
@@ -4682,7 +4841,6 @@ i {
         border-bottom: 1px solid #4570b6;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-
         padding: 8px 22px 0px 22px;
         display: inline-block;
         color: #fff;
@@ -4710,7 +4868,6 @@ i {
       }
     }
   }
-
   .smile-newCenter {
     width: 100vw;
     .smile-newCenter-menu {
@@ -4736,10 +4893,8 @@ i {
         font-weight: 500;
       }
     }
-
     // 内容
   }
-
   .icl-WhatChoose {
     padding: 123px 0px;
     .icl-WhatChoose-title {
@@ -4766,7 +4921,6 @@ i {
         text-align: justify;
       }
       // .icl-WhatChoose-content-one-img{
-
       // }
       .icl-WhatChoose-content-one-text {
         p {
@@ -4799,7 +4953,6 @@ i {
     padding: 10px 57px;
     border-radius: 100px;
     border: 2px solid #4570b6;
-
     background: #4570b6;
     color: #fff;
     text-align: justify;
@@ -4815,7 +4968,6 @@ i {
       margin-left: 15px;
     }
   }
-
   .new-pubile-title {
     color: #4570b6;
     font-family: "Noto Sans TC";
@@ -4826,7 +4978,6 @@ i {
     text-align: center;
     margin: 0px auto 0px;
   }
-
   // 案例分享
   .CaseSharing {
     max-width: 100vw;
@@ -4836,10 +4987,8 @@ i {
     // background: url("https://statichk.cmermedical.com/smile/smileproV2/share/smilepro-pc-share-bg.png")
     //   no-repeat;
     //   background-position: 50% 0;
-
     padding: 149px 0 228px;
     position: relative;
-
     &::after {
       content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-pc-share-newbg.png");
       position: absolute;
@@ -4849,7 +4998,6 @@ i {
       pointer-events: none;
       z-index: 1;
     }
-
     .CaseSharing-Box {
       position: relative;
       z-index: 2;
@@ -4872,7 +5020,6 @@ i {
         gap: 60px;
         flex-wrap: nowrap;
         overflow-x: auto;
-
         & > .CaseSharing-list-item:nth-child(2) {
           padding-top: 97px;
         }
@@ -4883,7 +5030,6 @@ i {
           & > a {
             display: block;
             width: 396px;
-
             box-shadow: -4px 4px 0px 0px #4570b6;
             position: relative;
             margin-bottom: 30px;
@@ -4920,11 +5066,9 @@ i {
         }
       }
     }
-
     .CaseSharing-btn {
       width: 164.085px;
       height: 163.562px;
-
       position: absolute;
       bottom: 60px;
       right: -20px;
@@ -4936,11 +5080,9 @@ i {
       bottom: 0;
     }
   }
-
   .CaseSharingV2 {
     display: none;
     width: fit-content;
-
     margin: 0 auto;
     & > div:nth-child(1) {
       display: flex;
@@ -4977,7 +5119,6 @@ i {
       }
     }
   }
-
   // 向上
   .top-btnV2 {
     position: fixed;
@@ -4987,7 +5128,6 @@ i {
     cursor: pointer;
   }
 }
-
 @media screen and (min-width: 1319px) {
   .icl-peculiarity {
     .icl-peculiarity-list {
@@ -5018,7 +5158,6 @@ i {
       line-height: 35px; /* 175% */
       letter-spacing: 4px;
     }
-
     .icl-peculiarity-container {
       gap: 0;
       display: flex;

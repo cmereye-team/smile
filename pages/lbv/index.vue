@@ -2,31 +2,24 @@
 body {
   overflow-x: hidden;
 }
-
 a {
   text-decoration: none;
 }
-
 :deep(.mt-20) {
   margin-top: 0;
 }
-
 :deep(.share-img) {
   margin-top: 0;
 }
-
 .d-none {
   display: none;
 }
-
 i {
   font-style: normal;
 }
-
 .lbv-item {
   padding: 10px 10px;
 }
-
 @media screen and (min-width: 768px) {
   .lbv-item {
     padding: 40px 50px;
@@ -36,14 +29,12 @@ i {
   margin-left: auto;
   margin-right: auto;
 }
-
 // 常见问题
 .question-mencare {
   padding: 0 2.56vw;
   max-width: 85.13vw;
   margin: 0 auto;
   margin-top: 11.28vw;
-
   .publicTitle-mencare {
     text-align: center;
     color: #4570b6;
@@ -54,44 +45,35 @@ i {
     line-height: 195%;
   }
 }
-
 .question-section {
   padding-top: 11.54vw;
   padding-bottom: 7.18vw;
   background: #6096c5;
-
   .pubilc-title {
     h2 {
       color: #fff;
-
       &::after {
         background: #fff;
       }
     }
   }
-
   &-Box {
     margin-top: 5.38vw;
-
     .card {
       margin: 1.28vw 0;
       border: none;
       overflow: hidden;
       border-radius: 2.56vw;
-
       &-header {
         padding: 0;
         border: none;
-
         .header-title {
           span {
             display: inline-block;
           }
-
           svg {
             transition: all 0.3s linear;
           }
-
           svg {
             position: absolute;
             width: 3.33vw;
@@ -99,13 +81,11 @@ i {
             right: 4.62vw;
             top: 50%;
             transform: translateY(-50%);
-
             path {
               stroke: white;
             }
           }
         }
-
         .header-title[aria-expanded="false"] {
           background: #4570b6;
           border: clamp(0.5px, 0.05vw, 1px) solid #a6e1d6;
@@ -121,15 +101,12 @@ i {
           letter-spacing: 0.54vw;
           padding: 2.82vw 9.49vw 3.33vw 4.87vw;
           overflow: hidden;
-
           & > span:nth-child(1) {
             color: white;
           }
         }
-
         .card-body {
           padding: 0;
-
           span {
             border-bottom-left-radius: 2.56vw;
             border-bottom-right-radius: 2.56vw;
@@ -148,30 +125,24 @@ i {
         }
       }
     }
-
     & > div > .card:nth-child(1) {
       margin-top: 0;
     }
-
     & > div > .card:last-child {
       margin-bottom: 0;
     }
   }
 }
-
 .collapse {
   visibility: visible;
 }
-
 .card:has(.collapse.show) {
   box-shadow: 0px 0px 3.85vw 0px rgba(0, 0, 0, 0.3);
-
   .header-title {
     border-radius: 0;
     border: none;
   }
 }
-
 .card .header-title[aria-expanded="true"] {
   color: #fff;
   font-family: "Noto Sans HK";
@@ -182,19 +153,16 @@ i {
   letter-spacing: 0.54vw;
   padding: 2.82vw 9.49vw 3.33vw 4.87vw;
   background: #4570b6;
-
   svg {
     transition: all 0.3s linear;
     transform: rotate(180deg);
     transform-origin: 50% 50%;
     top: 40%;
-
     path {
       stroke: white;
     }
   }
 }
-
 @media screen and (max-width: 991px) {
   // 按钮
   .publicBtn-booking {
@@ -206,12 +174,10 @@ i {
     border-radius: 25.64vw;
     border: 0.51vw solid #4570b6;
     background: #4570b6;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3.08vw;
-
     span {
       color: #fff;
       text-align: justify;
@@ -222,12 +188,10 @@ i {
       line-height: 1.75;
       letter-spacing: 0.26vw;
     }
-
     svg {
       width: 4.36vw;
     }
   }
-
   .ClearVisionBanner {
     // margin-top: 88px;
     .ClearVisionBanner-Box {
@@ -235,12 +199,10 @@ i {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       .ClearVisionBanner-Box-content {
         overflow: hidden;
         margin-top: 100px;
         // width: 100vw;
-
         h3 {
           text-align: center;
           color: #4570b6;
@@ -251,10 +213,8 @@ i {
           line-height: 1;
           // letter-spacing:7.15vw;
         }
-
         .ClearVisionBanner-Box-content-title {
           text-align: center;
-
           & > a {
             color: #4570b6;
             text-align: center;
@@ -265,7 +225,6 @@ i {
             line-height: 109.4%;
             text-decoration: none;
           }
-
           h1 {
             color: #4570b6;
             text-align: center;
@@ -275,7 +234,6 @@ i {
             font-weight: 400;
             line-height: 1.8;
           }
-
           p {
             color: #6d6e71;
             text-align: center;
@@ -285,7 +243,6 @@ i {
             font-weight: 300;
             line-height: 221.429%;
             letter-spacing: 0.9vw;
-
             a {
               color: #6d6e71;
               font-family: "Poppins", sans-serif;
@@ -298,29 +255,24 @@ i {
           }
         }
       }
-
       .ClearVisionBanner-Box-content-img {
         margin-top: 11.28vw;
         max-width: 100vw;
         overflow: hidden;
         position: relative;
-
         display: flex;
         justify-content: center;
         border-bottom: 0.26vw solid #4570b6;
-
         img {
           min-width: 130.77vw;
           text-align: center;
         }
-
         p {
           position: absolute;
           bottom: 2.22vw;
           left: 50%;
           transform: translateX(-50%);
           width: max-content;
-
           span {
             color: #4570b6;
             font-family: "Noto Sans TC";
@@ -328,7 +280,6 @@ i {
             font-style: normal;
             font-weight: 900;
             line-height: 1.17;
-
             i {
               font-style: normal;
               // letter-spacing: -5.32px;
@@ -336,13 +287,11 @@ i {
           }
         }
       }
-
       .ClearVisionBanner-Box-text {
         margin-top: 11.54vw;
         display: flex;
         flex-direction: column;
         gap: 3.85vw;
-
         span {
           position: relative;
           width: fit-content;
@@ -360,37 +309,29 @@ i {
           letter-spacing: 1.08vw;
           white-space: nowrap;
         }
-
         & > span:nth-child(1) {
           left: 1.28vw;
         }
-
         & > span:nth-child(2) {
           right: 2.56vw;
         }
-
         & > span:nth-child(3) {
           left: 16.92vw;
         }
-
         & > span:nth-child(4) {
           left: 5.64vw;
         }
-
         & > span:nth-child(5) {
           left: 22.05vw;
         }
       }
     }
   }
-
   // 什么事老花
   .WhatLaoHua {
     margin-top: 10.26vw;
-
     .WhatLaoHuaBox {
       text-align: center;
-
       h2 {
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -399,10 +340,8 @@ i {
         font-weight: 900;
         line-height: 1.95;
       }
-
       .WhatLaoHuaBox-text {
         margin-top: 2.56vw;
-
         p {
           margin: 0 auto;
           max-width: 84.62vw;
@@ -414,7 +353,6 @@ i {
           font-weight: 300;
           line-height: 2.5;
           letter-spacing: 1.08vw;
-
           span {
             color: #4570b6;
             font-weight: 700;
@@ -423,7 +361,6 @@ i {
       }
     }
   }
-
   // 矫视方案
   .CorrectionProgram {
     margin-top: 15.38vw;
@@ -431,25 +368,21 @@ i {
     position: relative;
     // overflow: hidden;
     // height: 222.05vw;
-
     .CorrectionProgram-Box {
       position: relative;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-
       .CorrectionProgram-Box-show {
         opacity: 1;
         z-index: 2;
-
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-
       .CorrectionProgram-Box-show {
         position: absolute;
         bottom: 0;
@@ -458,7 +391,6 @@ i {
         height: 100%;
         transition: transform 0.3s ease-out;
       }
-
       .CorrectionProgram-Box-hide {
         position: relative;
         bottom: 0;
@@ -467,13 +399,11 @@ i {
         height: 100%;
         transition: transform 0.3s ease-out;
       }
-
       .CorrectionProgram-Box-hide {
         background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mbBg.avif")
           no-repeat;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-
         .CorrectionProgram-Box-hide-title {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -488,7 +418,6 @@ i {
           justify-content: center;
           align-items: center;
         }
-
         //                 .CorrectionProgram-Box-hide-item__bottom-btn{
         //                     display: flex;
         //                     justify-content: center;
@@ -513,7 +442,6 @@ i {
           gap: 12.82vw;
           padding-bottom: 50px;
         }
-
         & > .CorrectionProgram-Box-hide-item:nth-child(2) {
           //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-mbItemBg2.png")
           //     no-repeat;
@@ -521,7 +449,6 @@ i {
           //   width: 86.92vw;
           //   height: 87.18vw;
         }
-
         .CorrectionProgram-Box-hide-item {
           //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-mbItemBg.avif")
           //     no-repeat;
@@ -531,7 +458,6 @@ i {
           background-color: #fff;
           position: relative;
           border-radius: 12px;
-
           &::after {
             content: "";
             position: absolute;
@@ -544,16 +470,13 @@ i {
             border-right: 15px solid transparent;
             border-top: 15px solid #fff;
           }
-
           .CorrectionProgram-Box-hide-item-top {
             position: relative;
             border-radius: 12px;
-
             // overflow: hidden;
             img {
               border-radius: 12px;
             }
-
             .CorrectionProgram-Box-hide-item-top-text {
               position: absolute;
               bottom: -10px;
@@ -562,7 +485,6 @@ i {
               padding: 2.05vw 1.54vw 3.08vw 2.05vw;
               border-radius: 5px;
               border-top-left-radius: 0px;
-
               color: #fff;
               font-family: "Noto Sans TC";
               font-size: 3.08vw;
@@ -570,11 +492,9 @@ i {
               font-weight: 400;
               line-height: 1.5;
               letter-spacing: 0.62vw;
-
               p {
                 margin-bottom: 0;
               }
-
               .CorrectionProgram-Box-hide-item-sub {
                 position: absolute;
                 top: -6.41vw;
@@ -585,7 +505,6 @@ i {
                 padding: 1.03vw 2.05vw 0px 2.05vw;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-
                 color: #fff;
                 font-family: "Noto Sans TC";
                 font-size: 3.08vw;
@@ -596,7 +515,6 @@ i {
               }
             }
           }
-
           .CorrectionProgram-Box-hide-item-bottom2 {
             padding: 20px 20px 20px 20px;
             height: 100%;
@@ -604,7 +522,6 @@ i {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
             h3 {
               text-align: center;
               color: #4570b6;
@@ -616,10 +533,8 @@ i {
               letter-spacing: 0.26vw;
             }
           }
-
           .CorrectionProgram-Box-hide-item-bottom {
             padding: 30px 20px 20px 20px;
-
             h3 {
               text-align: center;
               color: #4570b6;
@@ -630,7 +545,6 @@ i {
               line-height: 1;
               letter-spacing: 0.26vw;
             }
-
             .CorrectionProgram-Box-hide-item-bottom-text {
               margin-top: 3.59vw;
               color: #6d6e71;
@@ -641,7 +555,6 @@ i {
               font-weight: 300;
               line-height: 1.285;
               letter-spacing: 0.72vw;
-
               span {
                 color: #4570b6;
                 font-weight: 700;
@@ -652,11 +565,9 @@ i {
       }
     }
   }
-
   // icl好处
   .icl-Good {
     margin-top: 40px;
-
     .icl-Good-title {
       text-align: center;
       color: #4570b6;
@@ -667,12 +578,10 @@ i {
       line-height: 1.95;
       margin-bottom: 5.13vw;
     }
-
     .icl-Good-List {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-
       .icl-Good-List-item {
         z-index: 99;
         opacity: 1;
@@ -685,12 +594,10 @@ i {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         img {
           width: 15.13vw;
           height: 11.28vw;
         }
-
         h4 {
           margin-top: 6.41vw;
           margin-bottom: 2.82vw;
@@ -704,7 +611,6 @@ i {
           /* 57.766% */
           letter-spacing: 0.46vw;
         }
-
         p {
           color: #6d6e71;
           text-align: center;
@@ -715,31 +621,26 @@ i {
           line-height: 1.125;
         }
       }
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(2),
       & > .icl-Good-List-item:nth-child(3),
       & > .icl-Good-List-item:nth-child(4) {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(3),
       & > .icl-Good-List-item:nth-child(5) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(6) {
         justify-content: flex-end;
         padding-bottom: 3.59vw;
       }
     }
   }
-
   // 为什么选择希玛
   .icl-WhatChoose {
     padding: clamp(20px, 10.26vw, 40px) clamp(7.5px, 3.85vw, 15px);
-
     .icl-WhatChoose-title {
       color: #4570b6;
       font-family: "Noto Sans TC" !important;
@@ -748,17 +649,14 @@ i {
       font-weight: 900;
       line-height: 1.25;
     }
-
     .icl-WhatChoose-content-one {
       margin: 0 auto;
       max-width: 100vw;
       margin-top: clamp(15px, 7.69vw, 30px);
-
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 100vw;
         margin-top: clamp(5px, 2.56vw, 10px);
-
         p {
           color: #6d6e71;
           font-family: "Noto Sans TC" !important;
@@ -767,7 +665,6 @@ i {
           font-weight: 300;
           line-height: 1.75;
           letter-spacing: clamp(2.4px, 1.23vw, 4.8px);
-
           span {
             color: #4570b6;
             font-family: "Noto Sans TC" !important;
@@ -781,14 +678,12 @@ i {
       }
     }
   }
-
   // 不同老花矯視技術好處對比
   .visionBattle {
     position: relative;
     padding-top: 10.26vw;
     margin-top: 12.05vw;
     margin-bottom: 17.95vw;
-
     .visionBattle-Bg {
       position: absolute;
       min-width: 354vw;
@@ -798,7 +693,6 @@ i {
       transform: translateX(-50%);
       z-index: -1;
     }
-
     .visionBattle-Box {
       h2 {
         text-align: center;
@@ -810,7 +704,6 @@ i {
         line-height: 1.95;
         margin-bottom: 24px;
       }
-
       .visionBattle-Box-list {
         .visionBattle-Box-list-item {
           h3 {
@@ -826,25 +719,20 @@ i {
             line-height: 1.2;
             letter-spacing: 0.26vw;
             padding: 0 6.41vw;
-
             flex-shrink: 0;
           }
-
           .visionBattle-Box-list-item-content {
             width: fit-content;
             margin: 0 auto;
-
             p {
               display: flex;
               align-items: flex-start;
               gap: 1.28vw;
-
               img {
                 width: 4.36vw;
                 height: 4.36vw;
                 margin-top: 0.77vw;
               }
-
               span {
                 display: inline-block;
                 color: #4570b6;
@@ -858,11 +746,9 @@ i {
             }
           }
         }
-
         & > .visionBattle-Box-list-item:nth-child(1) {
           padding-bottom: 15.38vw;
           position: relative;
-
           &::before {
             content: "";
             position: absolute;
@@ -876,18 +762,15 @@ i {
             z-index: -1;
           }
         }
-
         & > .visionBattle-Box-list-item:nth-child(2) {
           position: relative;
           border-top: 0.26vw solid #809dcd;
           padding-bottom: 23.08vw;
-
           p {
             span {
               letter-spacing: 0.72vw;
             }
           }
-
           &::before {
             content: "";
             position: absolute;
@@ -901,15 +784,12 @@ i {
             z-index: -1;
             rotate: 5deg;
           }
-
           h3 {
             margin-top: 20.51vw;
           }
-
           .visionBattle-Box-list-item-content {
             margin-top: 7.69vw;
           }
-
           .visionBattle-Box-list-item-VS {
             position: absolute;
             top: -8.97vw;
@@ -920,12 +800,10 @@ i {
             display: flex;
             justify-content: center;
             align-items: center;
-
             svg {
               width: 8.72vw;
               height: 14.62vw;
             }
-
             &::before {
               content: "";
               position: absolute;
@@ -940,18 +818,15 @@ i {
             }
           }
         }
-
         & > .visionBattle-Box-list-item:nth-child(3) {
           position: relative;
           border-top: 0.26vw solid #809dcd;
           padding-bottom: 23.08vw;
-
           p {
             span {
               letter-spacing: 0.72vw;
             }
           }
-
           &::before {
             content: "";
             position: absolute;
@@ -964,15 +839,12 @@ i {
             background-size: 90% auto;
             z-index: -1;
           }
-
           h3 {
             margin-top: 20.51vw;
           }
-
           .visionBattle-Box-list-item-content {
             margin-top: 7.69vw;
           }
-
           .visionBattle-Box-list-item-VS {
             position: absolute;
             top: -8.97vw;
@@ -983,12 +855,10 @@ i {
             display: flex;
             justify-content: center;
             align-items: center;
-
             svg {
               width: 8.72vw;
               height: 14.62vw;
             }
-
             &::before {
               content: "";
               position: absolute;
@@ -1006,12 +876,10 @@ i {
       }
     }
   }
-
   // 合適對象
   .SuitableObject {
     position: relative;
     padding-top: 8.46vw;
-
     .SuitableObject-bg-right {
       position: absolute;
       right: -12.82vw;
@@ -1019,17 +887,14 @@ i {
       width: 31.28vw;
       height: auto;
     }
-
     .SuitableObject-bgLeft1,
     .SuitableObject-bgLeft2 {
       display: none;
     }
-
     .SuitableObject-Box {
       position: relative;
       padding-bottom: 58.38vw;
       margin: 0 auto;
-
       &::after {
         content: "";
         position: absolute;
@@ -1042,7 +907,6 @@ i {
         height: 76.92vw;
         z-index: -1;
       }
-
       .SuitableObject-Box-title {
         width: 80.26vw;
         height: 80.26vw;
@@ -1054,7 +918,6 @@ i {
         padding-top: 16.92vw;
         margin: 0 auto;
         position: relative;
-
         &::before {
           content: "";
           position: absolute;
@@ -1066,7 +929,6 @@ i {
           width: 21.28vw;
           height: 46.41vw;
         }
-
         h2 {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -1075,7 +937,6 @@ i {
           font-weight: 900;
           line-height: 0.83;
         }
-
         p {
           max-width: 51.79vw;
           margin: 5.38vw auto 0;
@@ -1089,7 +950,6 @@ i {
           letter-spacing: 0.9vw;
         }
       }
-
       .SuitableObject-Box-List {
         width: 80.26vw;
         min-height: 82.05vw;
@@ -1098,7 +958,6 @@ i {
         top: 47.18vw;
         left: 50%;
         transform: translateX(-50%);
-
         .SuitableObject-Box-List-item {
           width: 44.62vw;
           height: 44.62vw;
@@ -1107,18 +966,14 @@ i {
           border: 0.26vw solid #4570b6;
           background: #fff;
           text-align: center;
-
           img {
             max-width: 18.97vw;
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
           }
-
           p {
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -1130,74 +985,60 @@ i {
             font-weight: 300;
             line-height: 1.394;
             letter-spacing: 0.9vw;
-
             span {
               font-size: 3.08vw;
             }
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(1) {
           position: absolute;
           left: 0;
           top: 0;
           z-index: 1;
-
           img {
             top: 9.74vw;
           }
-
           p {
             top: 28.21vw;
             white-space: nowrap;
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(2) {
           position: absolute;
           right: 0;
           top: 0;
           z-index: 4;
-
           img {
             top: 11.03vw;
             max-width: 14.36vw;
           }
-
           p {
             top: 28.21vw;
             white-space: nowrap;
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(3) {
           position: absolute;
           left: 0;
           top: 38.46vw;
           z-index: 3;
-
           img {
             top: 8.97vw;
           }
-
           p {
             top: 25.64vw;
             letter-spacing: 0;
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(4) {
           position: absolute;
           right: 0;
           top: 38.46vw;
           z-index: 2;
-
           img {
             max-width: 14.36vw;
-
             top: 7.95vw;
           }
-
           p {
             top: 27.69vw;
           }
@@ -1205,7 +1046,6 @@ i {
       }
     }
   }
-
   // 预约
   .clearAppointment {
     width: 100vw;
@@ -1218,14 +1058,12 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     .clearAppointment-Box {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 8.97vw;
-
       & > .clearAppointment-Box-item:nth-child(1) {
         img {
           width: 12.56vw;
@@ -1233,7 +1071,6 @@ i {
           margin-bottom: 4.1vw;
         }
       }
-
       & > .clearAppointment-Box-item:nth-child(2) {
         img {
           width: 12.82vw;
@@ -1241,22 +1078,18 @@ i {
           margin-bottom: 2.82vw;
         }
       }
-
       .clearAppointment-Box-item {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         width: 81.03vw;
         height: 32.05vw;
-
         border-radius: 4.36vw;
         border: 0.13vw solid #4570b6;
         background: #fff;
         box-shadow: 1.49vw 1.49vw 0px 0px #4570b6;
-
         p {
           color: #4570b6;
           text-align: center;
@@ -1266,10 +1099,8 @@ i {
           font-weight: 900;
           line-height: 0.73;
         }
-
         .clearAppointment-Box-item-icon {
           position: absolute;
-
           right: 5.13vw;
           width: 13.85vw;
           height: 13.85vw;
@@ -1278,7 +1109,6 @@ i {
           display: flex;
           align-items: center;
           justify-content: center;
-
           svg {
             width: 7.69vw;
           }
@@ -1286,18 +1116,15 @@ i {
       }
     }
   }
-
   .CaseSharingV2 {
     width: fit-content;
     margin: 0 auto;
     margin-top: 50px;
-
     & > div:nth-child(1) {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 7.58px;
-
       span {
         color: #000;
         text-align: center;
@@ -1309,13 +1136,11 @@ i {
         /* 82.478% */
       }
     }
-
     & > div:nth-child(2) {
       margin-top: 20px;
       display: flex;
       justify-content: center;
       gap: 20px;
-
       a {
         display: flex;
         justify-content: center;
@@ -1328,7 +1153,6 @@ i {
     }
   }
 }
-
 @media screen and (max-width: 389px) {
   // icl好处
   .icl-Good {
@@ -1344,11 +1168,9 @@ i {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         img {
           width: clamp(26px, 13.33vw, 52px);
         }
-
         h4 {
           margin-top: clamp(12.5px, 6.41vw, 25px);
           margin-bottom: clamp(5.5px, 2.82vw, 11px);
@@ -1361,7 +1183,6 @@ i {
           line-height: 0.57;
           letter-spacing: 1.8px;
         }
-
         p {
           color: #6d6e71;
           text-align: center;
@@ -1372,49 +1193,39 @@ i {
           line-height: 1.125;
         }
       }
-
       & > .icl-Good-List-item {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:nth-child(5) {
         border-bottom: 1px solid #4570b6;
       }
-
       & > .icl-Good-List-item:nth-child(6) {
         border-bottom: 1px solid #4570b6;
         padding-bottom: clamp(5px, 2.56vw, 10px);
       }
-
       & > .icl-Good-List-item:nth-child(1) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(3) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(5) {
         border-right: none;
       }
     }
   }
 }
-
 @media screen and (min-width: 992px) {
   .d-lg-none {
     display: none;
   }
-
   .d-lg-block {
     display: block;
   }
-
   // 分享给朋友
   .CaseSharingV2 {
     display: none;
   }
-
   // 按钮
   .publicBtn-booking {
     width: fit-content;
@@ -1425,12 +1236,10 @@ i {
     border-radius: clamp(50px, 5.21vw, 100px);
     border: clamp(1px, 0.1vw, 2px) solid #4570b6;
     background: #4570b6;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: clamp(12px, 1.25vw, 24px);
-
     span {
       color: #fff;
       text-align: justify;
@@ -1441,27 +1250,22 @@ i {
       line-height: 1.75;
       letter-spacing: clamp(0.9px, 0.09vw, 1.8px);
     }
-
     svg {
       width: clamp(15px, 1.56vw, 30px);
       height: clamp(15px, 1.56vw, 30px);
     }
   }
-
   .ClearVisionBanner {
     // margin-top: 217px;
     border-bottom: clamp(1px, 0.1vw, 2px) solid #4570b6;
-
     .ClearVisionBanner-Box {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       .ClearVisionBanner-Box-content {
         overflow: hidden;
         // width: 100vw;
-
         h3 {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -1471,10 +1275,8 @@ i {
           line-height: normal;
           // letter-spacing: 66.24px;
         }
-
         .ClearVisionBanner-Box-content-title {
           text-align: center;
-
           & > a {
             color: #4570b6;
             text-align: center;
@@ -1486,7 +1288,6 @@ i {
             text-decoration: none;
             text-wrap: nowrap;
           }
-
           h1 {
             color: #4570b6;
             text-align: center;
@@ -1496,7 +1297,6 @@ i {
             font-weight: 400;
             line-height: 1.8;
           }
-
           p {
             color: #6d6e71;
             text-align: center;
@@ -1506,7 +1306,6 @@ i {
             font-weight: 300;
             line-height: 175%;
             letter-spacing: clamp(3px, 0.31vw, 6px);
-
             a {
               color: #6d6e71;
               font-family: "Poppins", sans-serif;
@@ -1519,18 +1318,15 @@ i {
           }
         }
       }
-
       .ClearVisionBanner-Box-content-img {
         margin-top: clamp(50px, 5.21vw, 100px);
         max-width: 100vw;
         overflow: hidden;
         position: relative;
-
         img {
           min-width: clamp(255px, 26.56vw, 510px);
           text-align: center;
         }
-
         p {
           position: absolute;
           bottom: clamp(8.5px, 0.89vw, 17px);
@@ -1539,7 +1335,6 @@ i {
           width: max-content;
           text-shadow: 0px 0px 10.8px #fff, 0px 0px 10.8px #fff,
             0px 0px 10.8px #fff, 0px 0px 10.8px #fff;
-
           span {
             color: #4570b6;
             font-family: "Noto Sans TC";
@@ -1551,12 +1346,10 @@ i {
           }
         }
       }
-
       .ClearVisionBanner-Box-text {
         max-width: clamp(960px, 100vw, 1920px);
         width: 100vw;
         position: relative;
-
         span {
           position: absolute;
           width: fit-content;
@@ -1573,27 +1366,22 @@ i {
           line-height: 2.5;
           letter-spacing: clamp(2px, 0.21vw, 4px);
         }
-
         & > span:nth-child(1) {
           right: clamp(72px, 7.5vw, 144px);
           bottom: clamp(83.5px, 8.7vw, 167px);
         }
-
         & > span:nth-child(2) {
           left: clamp(89px, 9.27vw, 178px);
           bottom: clamp(149px, 15.52vw, 298px);
         }
-
         & > span:nth-child(3) {
           left: clamp(131px, 13.65vw, 262px);
           bottom: clamp(300px, 31.25vw, 600px);
         }
-
         & > span:nth-child(4) {
           right: clamp(186px, 19.38vw, 372px);
           bottom: clamp(340px, 35.42vw, 680px);
         }
-
         & > span:nth-child(5) {
           right: clamp(82px, 8.54vw, 164px);
           bottom: clamp(204.5px, 21.3vw, 409px);
@@ -1601,16 +1389,13 @@ i {
       }
     }
   }
-
   // 什么事老花
   .WhatLaoHua {
     margin-top: clamp(38px, 3.96vw, 76px);
-
     .WhatLaoHuaBox {
       display: flex;
       justify-content: center;
       gap: clamp(61.5px, 6.41vw, 123px);
-
       h2 {
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -1619,10 +1404,8 @@ i {
         font-weight: 900;
         line-height: 1.3;
       }
-
       .WhatLaoHuaBox-text {
         max-width: clamp(405.5px, 42.24vw, 811px);
-
         p {
           color: #6d6e71;
           font-family: "Noto Sans HK";
@@ -1631,7 +1414,6 @@ i {
           font-weight: 300;
           line-height: 1.75;
           letter-spacing: clamp(3px, 0.31vw, 6px);
-
           span {
             color: #4570b6;
             font-weight: 700;
@@ -1640,7 +1422,6 @@ i {
       }
     }
   }
-
   // 矫视方案
   .CorrectionProgram {
     scroll-margin-top: 200px;
@@ -1649,25 +1430,21 @@ i {
     position: relative;
     overflow: hidden;
     // height: clamp(419.5px, 43.7vw, 839px);
-
     .CorrectionProgram-Box {
       position: relative;
       bottom: 0;
       left: 0;
       width: 100%;
       height: 100%;
-
       .CorrectionProgram-Box-show {
         opacity: 1;
         z-index: 2;
-
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-
       .CorrectionProgram-Box-show {
         position: absolute;
         bottom: 0;
@@ -1676,7 +1453,6 @@ i {
         height: 100%;
         transition: transform 0.3s ease-out;
       }
-
       .CorrectionProgram-Box-hide {
         position: relative;
         bottom: 0;
@@ -1685,16 +1461,13 @@ i {
         height: auto;
         transition: transform 0.3s ease-out;
       }
-
       .CorrectionProgram-Box-hide {
         background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-pc.avif")
           no-repeat;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-
         width: 100vw;
         padding: 0% 7%;
-
         .CorrectionProgram-Box-hide-title {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -1709,7 +1482,6 @@ i {
           align-items: center;
           /* 100% */
         }
-
         .CorrectionProgram-Box-hide-item-container {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -1718,13 +1490,11 @@ i {
           gap: clamp(30px, 3.13vw, 60px);
           padding-bottom: 120px;
         }
-
         & > .CorrectionProgram-Box-hide-item:nth-child(2) {
           //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcItemBg2.avif")
           //     no-repeat;
           //   background-size: 100% 100%;
         }
-
         .CorrectionProgram-Box-hide-item {
           //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcItemBg.avif")
           //     no-repeat;
@@ -1735,7 +1505,6 @@ i {
           position: relative;
           background: #fff;
           border-radius: 28px;
-
           &::after {
             content: "";
             position: absolute;
@@ -1748,11 +1517,9 @@ i {
             border-right: 20px solid transparent;
             border-top: 20px solid #fff;
           }
-
           .CorrectionProgram-Box-hide-item-top {
             position: relative;
             border-radius: clamp(14.5px, 1.51vw, 29px);
-
             // overflow: hidden;
             img {
               width: 100%;
@@ -1760,7 +1527,6 @@ i {
               object-fit: cover;
               border-radius: 28px;
             }
-
             .CorrectionProgram-Box-hide-item-top-text {
               position: absolute;
               bottom: -10px;
@@ -1777,11 +1543,9 @@ i {
               font-weight: 400;
               line-height: 2.2;
               letter-spacing: clamp(2px, 0.21vw, 4px);
-
               p {
                 margin-bottom: 0;
               }
-
               .CorrectionProgram-Box-hide-item-sub {
                 position: absolute;
                 top: clamp(-39px, -2.03vw, -19.5px);
@@ -1803,14 +1567,12 @@ i {
               }
             }
           }
-
           .CorrectionProgram-Box-hide-item-bottom2 {
             padding: 24px 30px 24px 30px;
             height: 100%;
             display: flex;
             justify-content: center;
             flex-direction: column;
-
             h3 {
               text-align: center;
               color: #4570b6;
@@ -1821,14 +1583,11 @@ i {
               line-height: 1;
               letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
             }
-
             // background: #fff;
           }
-
           .CorrectionProgram-Box-hide-item-bottom {
             padding: 54px 30px 24px 30px;
             // background: #fff;
-
             h3 {
               text-align: center;
               color: #4570b6;
@@ -1839,7 +1598,6 @@ i {
               line-height: 1;
               letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
             }
-
             .CorrectionProgram-Box-hide-item-bottom-text {
               margin-top: clamp(18.5px, 1.93vw, 37px);
               color: #6d6e71;
@@ -1850,7 +1608,6 @@ i {
               font-weight: 300;
               line-height: 1.75;
               letter-spacing: clamp(2px, 0.21vw, 4px);
-
               span {
                 color: #4570b6;
                 font-weight: 700;
@@ -1861,11 +1618,9 @@ i {
       }
     }
   }
-
   // icl好处
   .icl-Good {
     margin-top: 65px;
-
     .icl-Good-title {
       text-align: center;
       color: #4570b6;
@@ -1876,7 +1631,6 @@ i {
       line-height: 1.3;
       margin-bottom: 50px;
     }
-
     .icl-Good-List {
       margin: 0 auto;
       max-width: 992px;
@@ -1888,22 +1642,18 @@ i {
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       margin-top: 49px;
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(2),
       & > .icl-Good-List-item:nth-child(3) {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:last-child,
       & > .icl-Good-List-item:nth-child(3) {
         border-right: clamp(1px, 0.1vw, 2px) solid #4570b6;
       }
-
       & > .icl-Good-List-item:nth-child(6) {
         padding-bottom: 15px;
       }
-
       .icl-Good-List-item {
         z-index: 99;
         opacity: 1;
@@ -1920,12 +1670,10 @@ i {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         img {
           height: clamp(34px, 3.54vw, 68px);
           flex-shrink: 0;
         }
-
         h4 {
           margin-top: clamp(9px, 0.94vw, 18px);
           margin-bottom: clamp(5.5px, 0.57vw, 11px);
@@ -1939,7 +1687,6 @@ i {
           line-height: 0.8;
           letter-spacing: clamp(3.125px, 0.33vw, 6.25px);
         }
-
         p {
           color: #6d6e71;
           text-align: center;
@@ -1953,10 +1700,8 @@ i {
       }
     }
   }
-
   .icl-WhatChoose {
     padding: 98px 0px 120px;
-
     .icl-WhatChoose-title {
       max-width: 908px;
       color: #4570b6;
@@ -1967,23 +1712,19 @@ i {
       line-height: 1;
       margin: 0 auto;
     }
-
     .icl-WhatChoose-content-one {
       margin: 0 auto;
       margin-top: 26px;
       display: flex;
       justify-content: center;
       gap: 31px;
-
       & > div:nth-child(1) {
         max-width: 463px;
       }
-
       & > div:nth-child(2) {
         max-width: 467px;
         text-align: justify;
       }
-
       .icl-WhatChoose-content-one-text {
         p {
           color: #6d6e71;
@@ -1993,7 +1734,6 @@ i {
           font-weight: 300;
           line-height: 1.75;
           letter-spacing: 5px;
-
           span {
             color: #4570b6;
             font-family: "Noto Sans TC";
@@ -2007,13 +1747,11 @@ i {
       }
     }
   }
-
   // 不同老花矯視技術好處對比
   .visionBattle {
     position: relative;
     padding-top: clamp(66px, 6.88vw, 132px);
     margin-bottom: clamp(40px, 4.17vw, 80px);
-
     .visionBattle-Bg {
       position: absolute;
       width: clamp(953.5px, 99.32vw, 1907px);
@@ -2023,10 +1761,8 @@ i {
       transform: translate(-50%, -50%);
       z-index: -1;
     }
-
     .visionBattle-Box {
       scroll-margin-top: 120px;
-
       h2 {
         text-align: center;
         color: #4570b6;
@@ -2036,25 +1772,19 @@ i {
         font-weight: 900;
         line-height: 1;
       }
-
       .visionBattle-Box-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
         justify-content: center;
         margin-top: clamp(28px, 2.92vw, 56px);
-
         .visionBattle-Box-list-item {
           height: clamp(433px, 45.1vw, 700px);
           padding: 0 clamp(70px, 1.67vw, 80px);
-
           h3 {
             padding-top: clamp(7px, 0.73vw, 14px);
             padding-bottom: 66px;
             margin-top: clamp(11px, 1.15vw, 22px);
-
             display: table;
-
             text-align: center;
             color: #4570b6;
             font-family: "Poppins", sans-serif;
@@ -2065,7 +1795,6 @@ i {
             letter-spacing: clamp(0.75px, 0.08vw, 1.5px);
             width: 400px;
           }
-
           .visionBattle-Box-list-item-content {
             width: fit-content;
             margin: 0px auto 0;
@@ -2075,18 +1804,15 @@ i {
             transform: translate(-50%, -50%);
             text-wrap: nowrap;
             height: 100%;
-
             p {
               display: flex;
               align-items: flex-start;
               gap: clamp(4px, 0.42vw, 8px);
-
               img {
                 width: clamp(14px, 1.46vw, 28px);
                 height: clamp(14px, 1.46vw, 28px);
                 margin-top: clamp(1.5px, 0.16vw, 3px);
               }
-
               span {
                 display: inline-block;
                 color: #4570b6;
@@ -2100,14 +1826,11 @@ i {
             }
           }
         }
-
         & > .visionBattle-Box-list-item:nth-child(1) {
           h3 {
             text-align: center;
           }
-
           position: relative;
-
           &::before {
             content: "";
             position: absolute;
@@ -2122,17 +1845,14 @@ i {
             z-index: -1;
           }
         }
-
         & > .visionBattle-Box-list-item:nth-child(2) {
           position: relative;
           border-left: clamp(0.5px, 0.05vw, 1px) solid #809dcd;
-
           p {
             span {
               letter-spacing: clamp(2px, 0.21vw, 4px);
             }
           }
-
           &::before {
             content: "";
             position: absolute;
@@ -2146,11 +1866,9 @@ i {
             background-size: 100% 100%;
             z-index: -1;
           }
-
           h3 {
             text-align: center;
           }
-
           .visionBattle-Box-list-item-VS {
             position: absolute;
             top: 50%;
@@ -2161,12 +1879,10 @@ i {
             display: flex;
             justify-content: center;
             align-items: center;
-
             svg {
               width: clamp(35px, 3.65vw, 70px);
               height: clamp(59px, 6.15vw, 118px);
             }
-
             &::before {
               content: "";
               position: absolute;
@@ -2181,17 +1897,14 @@ i {
             }
           }
         }
-
         & > .visionBattle-Box-list-item:nth-child(3) {
           position: relative;
           border-left: clamp(0.5px, 0.05vw, 1px) solid #809dcd;
-
           p {
             span {
               letter-spacing: clamp(2px, 0.21vw, 4px);
             }
           }
-
           &::before {
             content: "";
             position: absolute;
@@ -2205,14 +1918,11 @@ i {
             background-size: 100% 100%;
             z-index: -1;
           }
-
           h3 {
             text-align: center;
           }
-
           .visionBattle-Box-list-item-content {
           }
-
           .visionBattle-Box-list-item-VS {
             position: absolute;
             top: 50%;
@@ -2223,12 +1933,10 @@ i {
             display: flex;
             justify-content: center;
             align-items: center;
-
             svg {
               width: clamp(35px, 3.65vw, 70px);
               height: clamp(59px, 6.15vw, 118px);
             }
-
             &::before {
               content: "";
               position: absolute;
@@ -2246,13 +1954,11 @@ i {
       }
     }
   }
-
   // 合適對象
   .SuitableObject {
     position: relative;
     width: 100vw;
     margin-top: clamp(69px, 7.19vw, 138px);
-
     .SuitableObject-bg-right {
       position: absolute;
       right: clamp(11.5px, 1.2vw, 23px);
@@ -2260,7 +1966,6 @@ i {
       width: clamp(214px, 22.29vw, 428px);
       height: auto;
     }
-
     .SuitableObject-bgLeft1 {
       position: absolute;
       width: clamp(124px, 12.92vw, 248px);
@@ -2268,7 +1973,6 @@ i {
       left: clamp(-40px, -2.08vw, -20px);
       top: clamp(-30px, -1.56vw, -15px);
     }
-
     .SuitableObject-bgLeft2 {
       position: absolute;
       width: clamp(102.5px, 10.68vw, 205px);
@@ -2276,12 +1980,10 @@ i {
       left: clamp(82px, 8.54vw, 164px);
       top: clamp(207.5px, 21.61vw, 415px);
     }
-
     .SuitableObject-Box {
       position: relative;
       padding-bottom: clamp(83px, 8.65vw, 166px);
       margin: 0 auto;
-
       &::after {
         content: "";
         position: absolute;
@@ -2296,7 +1998,6 @@ i {
         z-index: -1;
         pointer-events: none;
       }
-
       .SuitableObject-Box-title {
         width: clamp(281px, 29.27vw, 562px);
         height: clamp(281px, 29.27vw, 562px);
@@ -2308,7 +2009,6 @@ i {
         padding-top: clamp(66px, 6.88vw, 132px);
         margin: 0 auto;
         position: relative;
-
         &::before {
           content: "";
           position: absolute;
@@ -2321,7 +2021,6 @@ i {
           height: clamp(163px, 16.98vw, 326px);
           z-index: 5;
         }
-
         &::after {
           content: "";
           position: absolute;
@@ -2334,7 +2033,6 @@ i {
           height: clamp(130.5px, 13.59vw, 261px);
           z-index: 5;
         }
-
         h2 {
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -2343,7 +2041,6 @@ i {
           font-weight: 900;
           line-height: 1;
         }
-
         p {
           max-width: clamp(181.5px, 18.91vw, 363px);
           margin: clamp(4px, 0.42vw, 8px) auto 0;
@@ -2357,7 +2054,6 @@ i {
           letter-spacing: clamp(2.5px, 0.26vw, 5px);
         }
       }
-
       .SuitableObject-Box-List {
         width: clamp(516px, 53.75vw, 1032px);
         min-height: clamp(217.5px, 22.66vw, 435px);
@@ -2366,7 +2062,6 @@ i {
         top: clamp(119px, 12.4vw, 238px);
         left: 50%;
         transform: translateX(-50%);
-
         .SuitableObject-Box-List-item {
           width: clamp(156.5px, 16.3vw, 313px);
           height: clamp(156.5px, 16.3vw, 313px);
@@ -2375,18 +2070,14 @@ i {
           border: clamp(1px, 0.1vw, 2px) solid #4570b6;
           background: #fff;
           text-align: center;
-
           img {
             max-width: clamp(67px, 6.98vw, 134px);
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
           }
-
           p {
             position: absolute;
-
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -2400,69 +2091,56 @@ i {
             letter-spacing: clamp(2.5px, 0.26vw, 5px);
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(1) {
           position: absolute;
           left: 0;
           top: 0;
           z-index: 1;
-
           img {
             top: clamp(34px, 3.54vw, 68px);
           }
-
           p {
             top: clamp(95px, 9.9vw, 190px);
             white-space: nowrap;
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(2) {
           position: absolute;
           left: clamp(120px, 12.5vw, 240px);
           top: clamp(61px, 6.35vw, 122px);
           z-index: 2;
-
           img {
             top: clamp(38.5px, 4.01vw, 77px);
             max-width: clamp(50px, 5.21vw, 100px);
           }
-
           p {
             top: clamp(100.5px, 10.47vw, 201px);
             white-space: nowrap;
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(3) {
           position: absolute;
           right: clamp(120px, 12.5vw, 240px);
           top: clamp(61px, 6.35vw, 122px);
           z-index: 3;
-
           img {
             top: clamp(32px, 3.33vw, 64px);
             max-width: clamp(66px, 6.88vw, 132px);
           }
-
           p {
             top: clamp(95px, 9.9vw, 190px);
             letter-spacing: 0;
           }
         }
-
         & > .SuitableObject-Box-List-item:nth-child(4) {
           position: absolute;
           right: 0;
           top: 0px;
           z-index: 4;
-
           img {
             max-width: clamp(50.5px, 5.26vw, 101px);
-
             top: clamp(28px, 2.92vw, 56px);
           }
-
           p {
             top: clamp(99px, 10.31vw, 198px);
           }
@@ -2470,7 +2148,6 @@ i {
       }
     }
   }
-
   // 常见问题
   .question-mencare {
     margin: initial;
@@ -2478,7 +2155,6 @@ i {
     padding: 0;
     padding-bottom: 0;
     max-width: none;
-
     .publicTitle-mencare {
       color: #4570b6;
       font-family: "Noto Sans TC";
@@ -2487,46 +2163,37 @@ i {
       font-weight: 900;
       line-height: 1;
     }
-
     .container {
       max-width: clamp(635px, 66.15vw, 1270px);
       padding: 0;
     }
   }
-
   .question-section {
     padding-top: clamp(30px, 3.13vw, 60px);
     padding-bottom: clamp(16px, 1.67vw, 32px);
     background: #e8e0d5;
-
     .pubilc-title {
       h2 {
         color: #005bab;
-
         &::after {
           background: #005bab;
         }
       }
     }
-
     &-Box {
       margin-top: clamp(28.5px, 2.97vw, 57px);
       padding-left: 0px;
       padding-right: 0px;
-
       .card {
         margin: clamp(6.5px, 0.68vw, 13px) 0;
         border-radius: 10px;
-
         &-header {
           .header-title {
             display: flex;
             align-items: center;
-
             span {
               display: inline-block;
             }
-
             svg {
               position: absolute;
               width: clamp(14px, 1.46vw, 28px);
@@ -2536,7 +2203,6 @@ i {
               transform: translateY(-50%);
             }
           }
-
           .header-title[aria-expanded="false"] {
             color: #fff;
             font-family: "Noto Sans HK";
@@ -2549,21 +2215,16 @@ i {
             padding: clamp(6.5px, 0.68vw, 13px) clamp(15px, 1.56vw, 30px)
               clamp(6.5px, 0.68vw, 13px) clamp(26.5px, 2.76vw, 53px);
           }
-
           .card-body {
             padding: 0;
-
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-
             span {
               box-sizing: content-box;
-
               border-bottom-left-radius: 10px;
               border-bottom-right-radius: 10px;
               padding: clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px)
                 clamp(10px, 1.04vw, 20px) clamp(26.5px, 2.76vw, 53px);
-
               color: #6d6e71;
               font-family: "Noto Sans TC";
               font-size: clamp(11.5px, 1.2vw, 23px);
@@ -2577,7 +2238,6 @@ i {
       }
     }
   }
-
   .card .header-title[aria-expanded="true"] {
     color: #fff;
     font-family: "Noto Sans HK";
@@ -2588,19 +2248,16 @@ i {
     letter-spacing: clamp(3.75px, 0.39vw, 7.5px);
     padding: clamp(6.5px, 0.68vw, 13px) clamp(15px, 1.56vw, 30px)
       clamp(6.5px, 0.68vw, 13px) clamp(26.5px, 2.76vw, 53px);
-
     svg {
       transition: all 0.3s linear;
       transform: rotate(180deg);
       transform-origin: 50% 50%;
       top: 40%;
-
       path {
         stroke: white;
       }
     }
   }
-
   // 预约
   .clearAppointment {
     // margin-top: clamp(40px, 4.17vw, 80px);
@@ -2613,13 +2270,11 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-
     .clearAppointment-Box {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: clamp(18px, 1.88vw, 36px);
-
       & > .clearAppointment-Box-item:nth-child(1) {
         img {
           width: clamp(70.5px, 7.34vw, 141px);
@@ -2627,23 +2282,19 @@ i {
           margin-bottom: clamp(18px, 1.88vw, 36px);
         }
       }
-
       & > .clearAppointment-Box-item:nth-child(2) {
         img {
           width: clamp(72.5px, 7.55vw, 145px);
           height: clamp(55px, 5.73vw, 110px);
-
           margin-bottom: clamp(15.5px, 1.61vw, 31px);
         }
       }
-
       .clearAppointment-Box-item:nth-child(1) {
         p {
           padding-right: clamp(10px, 1.04vw, 20px);
           padding-bottom: clamp(7.5px, 0.78vw, 15px);
         }
       }
-
       .clearAppointment-Box-item {
         position: relative;
         cursor: pointer;
@@ -2653,13 +2304,11 @@ i {
         align-items: center;
         width: clamp(221px, 23.02vw, 442px);
         height: clamp(137px, 14.27vw, 274px);
-
         border-radius: clamp(15px, 1.56vw, 30px);
         border: clamp(0.5px, 0.05vw, 1px) solid #4570b6;
         background: #fff;
         box-shadow: clamp(5px, 0.52vw, 10px) clamp(5px, 0.52vw, 10px) 0px 0px
           #4570b6;
-
         p {
           color: #4570b6;
           text-align: center;
@@ -2669,13 +2318,11 @@ i {
           font-weight: 900;
           line-height: 69.444%;
         }
-
         &:hover {
           .clearAppointment-Box-item-icon {
             background: white;
             box-shadow: 0 clamp(1px, 0.1vw, 2px) clamp(2.5px, 0.26vw, 5px)
               rgba(0, 0, 0, 0.25);
-
             svg {
               path {
                 stroke: #4570b6;
@@ -2683,12 +2330,10 @@ i {
             }
           }
         }
-
         .clearAppointment-Box-item-icon {
           position: absolute;
           bottom: clamp(12.5px, 1.3vw, 25px);
           right: clamp(12.5px, 1.3vw, 25px);
-
           width: clamp(35.5px, 3.7vw, 71px);
           height: clamp(35.5px, 3.7vw, 71px);
           border-radius: 50%;
@@ -2697,7 +2342,6 @@ i {
           align-items: center;
           justify-content: center;
           transition: all 0.3s ease-in-out;
-
           svg {
             width: clamp(38.5px, 4.01vw, 77px);
           }
@@ -2706,14 +2350,12 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
     margin-left: auto;
     margin-right: auto;
   }
-
   .UserShare {
     .UserShareContainer {
       .UserShareBox {
@@ -2725,7 +2367,6 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1310px) {
   .new-container {
     max-width: 1320px !important;
@@ -2733,7 +2374,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1140px) {
   .head-bg {
     position: fixed;
@@ -2743,15 +2383,12 @@ i {
     background: #ffffff;
     z-index: 102;
   }
-
   .d-xl-none {
     display: none;
   }
-
   .d-xl-block {
     display: block;
   }
-
   // 向上
   .top-btnV2 {
     position: fixed;
@@ -2761,24 +2398,20 @@ i {
     cursor: pointer;
   }
 }
-
 @media screen and (min-width: 1319px) {
   .icl-Good {
     .icl-Good-List {
       max-width: 100vw;
       display: flex;
       flex-wrap: wrap;
-
       & > .icl-Good-List-item:nth-child(3) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(2),
       & > .icl-Good-List-item:nth-child(3) {
         border-bottom: clamp(1px, 0.1vw, 2px) solid #4570b6;
       }
-
       .icl-Good-List-item {
         width: 16.5vw;
         height: 16.4vw;
@@ -2797,11 +2430,9 @@ i {
   }
 }
 </style>
-
 <template>
   <div class="lasik" style="overflow-x: hidden">
     <HeadV2 />
-
     <!-- <div class="new-container container center-Banner">
       <img
         class="d-block mx-auto"
@@ -2819,7 +2450,6 @@ i {
         sizes=" (max-width: 992px) 100vw,1216px"
       />
     </div> -->
-
     <section class="ClearVisionBanner mt-22 md:mt-[216px]">
       <div class="new-container container">
         <div class="ClearVisionBanner-Box">
@@ -2831,7 +2461,6 @@ i {
                 >Presbyopia <br class="d-lg-none" />
                 Treatments</a
               >
-
               <h1>老花矯視</h1>
               <p>
                 希瑪微笑矯視中心主要提供三種<br
@@ -2863,7 +2492,6 @@ i {
                 />可參考本頁有關老花矯視服務的詳盡介紹。
               </p>
             </div>
-
             <div class="ClearVisionBanner-Box-content-img">
               <img
                 decoding="async"
@@ -2879,7 +2507,6 @@ i {
                 "
                 sizes=" (max-width: 992px) 100vw,1216px"
               />
-
               <p>
                 <span><i>「</i>6<i>」</i>字同<i>「</i> 8<i>」</i>字</span>
                 &nbsp; <span>不能夠一眼分清？</span>
@@ -2896,7 +2523,6 @@ i {
         </div>
       </div>
     </section>
-
     <!-- 什麼是老花？ -->
     <section class="WhatLaoHua">
       <div class="new-container container WhatLaoHuaBox">
@@ -2915,7 +2541,6 @@ i {
         </div>
       </div>
     </section>
-
     <div class="CorrectionProgram" ref="correctionProgram">
       <div class="CorrectionProgram-Box">
         <div class="CorrectionProgram-Box-show" ref="boxShow">
@@ -2936,7 +2561,6 @@ i {
         </div>
         <div class="CorrectionProgram-Box-hide">
           <div class="CorrectionProgram-Box-hide-title">老花矯視方案</div>
-
           <div class="CorrectionProgram-Box-hide-item-container">
             <div class="CorrectionProgram-Box-hide-item">
               <div class="CorrectionProgram-Box-hide-item-top">
@@ -2969,7 +2593,6 @@ i {
                 </p>
               </div>
             </div>
-
             <div class="CorrectionProgram-Box-hide-item">
               <div class="CorrectionProgram-Box-hide-item-top">
                 <img
@@ -3016,7 +2639,6 @@ i {
                 </p>
               </div>
             </div>
-
             <div class="CorrectionProgram-Box-hide-item">
               <div class="CorrectionProgram-Box-hide-item-bottom2">
                 <h3>
@@ -3026,7 +2648,6 @@ i {
                 </h3>
               </div>
             </div>
-
             <div class="CorrectionProgram-Box-hide-item">
               <div class="CorrectionProgram-Box-hide-item-bottom2">
                 <h3>
@@ -3035,7 +2656,6 @@ i {
                 </h3>
               </div>
             </div>
-
             <div class="CorrectionProgram-Box-hide-item">
               <div class="CorrectionProgram-Box-hide-item-bottom2">
                 <h3>藥物方案（暫時性）</h3>
@@ -3045,7 +2665,6 @@ i {
         </div>
       </div>
     </div>
-
     <!-- 按钮 -->
     <a
       target="_blank"
@@ -3074,7 +2693,6 @@ i {
         />
       </svg>
     </a>
-
     <!-- 人工晶體置換術的好處 -->
     <!-- <section class="icl-Good">
       <h2 class="icl-Good-title">人工晶體置換術的好處</h2>
@@ -3095,7 +2713,6 @@ i {
         </div>
       </div>
     </section> -->
-
     <!-- 為何選擇希瑪? -->
     <!-- <section class="icl-WhatChoose">
       <h2 class="icl-WhatChoose-title">
@@ -3135,7 +2752,6 @@ i {
         </div>
       </div>
     </section> -->
-
     <!-- start  SMILE Pro 微笑激光矯視費用-->
     <div
       class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-8 mb-8 mt-[50px] md:mb-22 md:mt-[90px]"
@@ -3146,13 +2762,11 @@ i {
         >
           老花矯視費用
         </h2>
-
         <div
           class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] mb-[20px] md:px-[139px] md:py-[11px] md:text-3xl"
         >
           人工晶體費用
         </div>
-
         <div class="w-full">
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
@@ -3160,7 +2774,6 @@ i {
             >
               <div class="text-text text-base md:text-3xl font-bold">
                 單焦點人工晶體(單眼)
-
                 <br />不帶散光
                 <span class=""></span>
               </div>
@@ -3171,13 +2784,11 @@ i {
                 <span class="text-2xl md:text-5xl">港幣$28,000</span>
               </div>
             </div>
-
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-text text-base md:text-3xl font-bold">
                 單焦點人工晶體(單眼)
-
                 <br />帶散光
                 <span class=""></span>
               </div>
@@ -3188,13 +2799,11 @@ i {
                 <span class="text-2xl md:text-5xl">港幣$35,000</span>
               </div>
             </div>
-
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-text text-base md:text-3xl font-bold">
                 EDOF /多焦點人工晶體
-
                 <br />(單眼)不帶散光
                 <span class=""></span>
               </div>
@@ -3205,13 +2814,11 @@ i {
                 <span class="text-2xl md:text-5xl">港幣$45,000</span>
               </div>
             </div>
-
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-text text-base md:text-3xl font-bold">
                 EDOF /多焦點人工晶體
-
                 <br />(單眼)帶散光
                 <span class=""></span>
               </div>
@@ -3222,7 +2829,6 @@ i {
                 <span class="text-2xl md:text-5xl">港幣$51,000</span>
               </div>
             </div>
-
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
             >
@@ -3238,13 +2844,11 @@ i {
               </div>
             </div>
           </div>
-
           <div
             class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5"
           >
             Presbyond LBV費用
           </div>
-
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
@@ -3283,13 +2887,11 @@ i {
               </div>
             </div>
           </div>
-
           <div
             class="text-base font-bold tracking-[4.8px] text-center text-[#4570B6] rounded-[5.005px] bg-[rgba(140,179,243,0.20)] px-[60px] py-[6px] md:px-[139px] md:py-[11px] md:text-3xl w-fit mx-auto mt-[25px] mb-[20px] md:mt-[58px] md:mb-5"
           >
             ICL Viva V6費用
           </div>
-
           <div class="space-y-2 md:space-y-4 max-w-[1187px] mx-auto">
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
@@ -3305,7 +2907,6 @@ i {
                 <span class="text-2xl md:text-5xl">港幣$80,000</span>
               </div>
             </div>
-
             <div
               class="bg-white border border-[#4570B6] rounded-2xl lbv-item flex flex-row justify-between items-center transition-all group"
             >
@@ -3319,7 +2920,6 @@ i {
               </div>
             </div>
           </div>
-
           <div class="mt-8 md:mt-12 flex flex-col items-center">
             <a
               href="/fee#table1"
@@ -3346,18 +2946,17 @@ i {
                 />
               </svg>
             </a>
-
             <div
               class="text-text mt-2 md:mt-4 text-center font-light text-base md:text-2xl leading-relaxed min-[360px]:tracking-wider min-[390px]:tracking-normal"
             >
               <p>此為香港價錢</p>
               <p>
-                *矯視費用已包括術前檢查費用港幣$100<br
+                <sup>*</sup>矯視費用已包括術前檢查費用港幣$100<br
                   class="block md:hidden"
                 />（若沒有預約進行矯視，需另外繳付術前檢查費用）
               </p>
               <p>
-                #免責聲明：受條款及細則約束。優惠僅適用於以 EPS
+                <sup>#</sup>免責聲明：受條款及細則約束。優惠僅適用於以 EPS
                 全數支付之客戶。<br
                   class="block md:hidden"
                 />如有任何爭議，希瑪眼科將保留最終決定權。
@@ -3367,9 +2966,7 @@ i {
         </div>
       </div>
     </div>
-
     <!-- end SMILE Pro 微笑激光矯視費用 -->
-
     <section class="visionBattle">
       <img
         class="visionBattle-Bg"
@@ -3449,7 +3046,6 @@ i {
                 />
                 <span>將來進行白內障手術亦不影響效果</span>
               </p>
-
               <div class="mt-[31px]">
                 <div class="flex items-center justify-center">
                   <div
@@ -3477,7 +3073,6 @@ i {
                         />
                       </svg>
                     </div>
-
                     <ul class="space-y-2 text-lg font-medium whitespace-nowrap">
                       <li class="flex items-center">
                         <span class="mr-2 text-base md:text-lg opacity-80"
@@ -3503,7 +3098,6 @@ i {
               </div>
             </div>
           </div>
-
           <div class="visionBattle-Box-list-item">
             <div class="visionBattle-Box-list-item-content">
               <h3>
@@ -3524,7 +3118,6 @@ i {
                 />
                 <span>同時矯正老花及深近視</span>
               </p>
-
               <p>
                 <img
                   src="https://statichk.cmermedical.com/smile/clear-visionV2/clearAppointment/success.svg"
@@ -3608,7 +3201,6 @@ i {
               </svg>
             </div>
           </div>
-
           <div class="visionBattle-Box-list-item">
             <div class="visionBattle-Box-list-item-content">
               <h3>
@@ -3681,11 +3273,8 @@ i {
         </div>
       </div>
     </section>
-
     <lbvTable />
-
     <lbvSwiper />
-
     <section class="clearAppointment">
       <div class="clearAppointment-Box">
         <a href="/ophthalmicInfo/AppointForm" class="clearAppointment-Box-item">
@@ -3694,7 +3283,6 @@ i {
             alt=""
           />
           <p>預約老花講座</p>
-
           <div class="clearAppointment-Box-item-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -3718,7 +3306,6 @@ i {
             </svg>
           </div>
         </a>
-
         <a
           target="_blank"
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-06)%20CMER%20CLEAR-Vision%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -3754,7 +3341,6 @@ i {
         </a>
       </div>
     </section>
-
     <!-- 合適對象-->
     <section class="SuitableObject">
       <img
@@ -3772,7 +3358,6 @@ i {
         "
         sizes=" (max-width: 992px) 100vw,1216px"
       />
-
       <img
         class="SuitableObject-bgLeft1"
         src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgLeft1.svg"
@@ -3783,7 +3368,6 @@ i {
         src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-pc-bgLeft2.svg"
         alt=""
       />
-
       <div class="SuitableObject-Box container">
         <div class="SuitableObject-Box-title">
           <h2>合適對象</h2>
@@ -3793,7 +3377,6 @@ i {
             />老花矯視都讓你清楚見證<br class="d-none d-lg-block" />往後每一刻。
           </p>
         </div>
-
         <div class="SuitableObject-Box-List">
           <div class="SuitableObject-Box-List-item">
             <img
@@ -3802,7 +3385,6 @@ i {
             />
             <p>39歲以上</p>
           </div>
-
           <div class="SuitableObject-Box-List-item">
             <img
               src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-2.svg"
@@ -3810,7 +3392,6 @@ i {
             />
             <p>熱愛運動</p>
           </div>
-
           <div class="SuitableObject-Box-List-item">
             <img
               src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-3.svg"
@@ -3822,7 +3403,6 @@ i {
               >
             </p>
           </div>
-
           <div class="SuitableObject-Box-List-item">
             <img
               src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/SuitableObject/SuitableObject-itemImg-4.svg"
@@ -3833,9 +3413,7 @@ i {
         </div>
       </div>
     </section>
-
     <!-- 按钮 -->
-
     <a href="/fee" class="publicBtn-booking">
       <span> 了解老花矯視價格 </span>
       <svg
@@ -3859,9 +3437,7 @@ i {
         />
       </svg>
     </a>
-
     <!-- 常见问题 -->
-
     <section class="question-mencare">
       <div class="container">
         <h2 class="publicTitle-mencare">常見問題</h2>
@@ -3912,7 +3488,6 @@ i {
                 </a>
               </div>
             </div>
-
             <div class="card collapseActive expanded">
               <div class="card-header d-flex flex-column-reverse">
                 <div
@@ -3958,7 +3533,6 @@ i {
                 </a>
               </div>
             </div>
-
             <div class="card collapseActive expanded">
               <div class="card-header d-flex flex-column-reverse">
                 <div
@@ -4139,7 +3713,6 @@ i {
         </div>
       </div>
     </section>
-
     <div class="top-btnV2" @click="scrollToTopV2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -4157,7 +3730,6 @@ i {
         />
       </svg>
     </div>
-
     <section class="CaseSharingV2">
       <div>
         <svg
@@ -4245,18 +3817,15 @@ import HeadV2 from "@/components/Publice/HeadeV2.vue";
 import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
-
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
 import lbvTable from "./components/lbvTable.vue";
 import lbvSwiper from "./components/lbvSwiper.vue";
-
 function throttle(fn, delay) {
   let lastCall = 0;
   return (...args) => {
@@ -4278,10 +3847,8 @@ export default {
     process,
     xtar,
     film,
-
     FooterV2,
     HeadV2,
-
     BannerSlider,
     lbvTable,
     lbvSwiper,
@@ -4292,7 +3859,6 @@ export default {
         meta: [{ hid: "robots", name: "robots", content: "noindex" }],
       };
     }
-
     return {
       title:
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
@@ -4355,14 +3921,12 @@ export default {
       scrollSensitivity: 2,
       targetTop: 0,
       isAnimating: false,
-
       isMobile: false,
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-presbyopia",
       canonicalHrefCN:
         "https://smile.hkcmereye.com/cn/vision-correction-presbyopia",
       browserTitle: "老花矯視 - 希瑪微笑矯視中心",
       browserTitleCn: "老花矫视 - 希玛微笑矫视中心",
-
       iclGoodList: [
         {
           img: "https://statichk.cmermedical.com/smile/vision-correction-iclV2/good/icl-good-1.svg",
@@ -4398,7 +3962,6 @@ export default {
           img: "https://statichk.cmermedical.com/smile/vision-correction-iclV2/good/icl-good-6.svg",
           title: "Correct.newIcl.section3.text6_title1",
           text: ["根據個人眼睛實際狀況和", "生活需要，製訂合適的", "矯視方案"],
-
           mbText: [
             "根據個人眼睛實際",
             "狀況和生活需要，",
@@ -4408,7 +3971,6 @@ export default {
       ],
     };
   },
-
   watch: {
     "$route.hash": {
       immediate: true,
@@ -4417,7 +3979,6 @@ export default {
       },
     },
   },
-
   methods: {
     handleHashScroll() {
       const hash = this.$route.hash;
@@ -4438,11 +3999,9 @@ export default {
       // 更新 URL 的 hash（不刷新页面）
       this.$router.replace({ hash: `#${id}` });
     },
-
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-
     scrollToTopV2() {
       window.scrollTo({
         top: 0,
@@ -4452,17 +4011,13 @@ export default {
     initPcScrollHandler() {
       const section = this.$refs.correctionProgram;
       if (!section) return;
-
       // 获取模块距离顶部的距离
       this.targetTop = section.offsetTop;
-
       // 计算触发点（比如模块顶部还剩 200px 时开始拦截）
       const triggerPoint = this.targetTop - window.innerHeight + 600;
       console.log("triggerPoint" + triggerPoint);
-
       const throttledScroll = throttle(() => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
         if (
           !this.isAnimating &&
           scrollTop >= triggerPoint &&
@@ -4472,22 +4027,18 @@ export default {
           this.isAnimating = true;
           this.animateBoxShow();
         }
-
         if (scrollTop >= this.targetTop) {
           // 模块已经到达顶部，解锁滚动
           // this.lockScroll = false;
           this.isAnimating = false;
         }
-
         // if (this.lockScroll && scrollTop >= this.targetTop) {
         //   // 模块已经到达顶部，解锁滚动
         //   this.lockScroll = false;
         //   this.isAnimating = false;
         // }
       }, 50);
-
       window.addEventListener("scroll", throttledScroll);
-
       // 阻止原生滚动（关键）
       // window.addEventListener(
       //   "wheel",
@@ -4498,7 +4049,6 @@ export default {
       //   },
       //   { passive: false }
       // );
-
       // 同样阻止触摸板滚动
       // window.addEventListener(
       //   "touchmove",
@@ -4510,19 +4060,15 @@ export default {
       //   { passive: false }
       // );
     },
-
     animateBoxShow() {
       const showEl = this.$refs.boxShow;
       const animate = () => {
         if (this.animationOffset >= this.maxOffset) return;
-
         this.animationOffset += Math.min(
           this.scrollSensitivity,
           this.maxOffset - this.animationOffset
         );
-
         this.updateAnimation(showEl);
-
         if (this.animationOffset < this.maxOffset) {
           requestAnimationFrame(animate);
         } else {
@@ -4530,10 +4076,8 @@ export default {
           //this.lockScroll = false;
         }
       };
-
       requestAnimationFrame(animate);
     },
-
     updateAnimation(showEl) {
       if (this.ticking) return;
       requestAnimationFrame(() => {
@@ -4542,10 +4086,8 @@ export default {
       });
       this.ticking = true;
     },
-
     initMobileScrollHandler() {
       const section = this.$refs.correctionProgram;
-
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -4557,10 +4099,8 @@ export default {
         },
         { threshold: [0.1] }
       );
-
       observer.observe(section);
     },
-
     startMobileAnimation() {
       const showEl = this.$refs.boxShow;
       setTimeout(() => {
@@ -4568,14 +4108,12 @@ export default {
       }, 1000);
     },
   },
-
   beforeUnmount() {
     // 清理 scroll 监听器
     if (this.throttledCheck) {
       window.removeEventListener("scroll", this.throttledCheck);
     }
   },
-
   mounted() {
     this.windowWidth = window.innerWidth;
     this.handleHashScroll();
@@ -4584,7 +4122,6 @@ export default {
     } else {
       this.isMobile = false;
     }
-
     if (this.isMobile) {
       this.initMobileScrollHandler();
     } else {

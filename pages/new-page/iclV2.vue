@@ -25,7 +25,6 @@ body {
     max-height: 556px;
     background-position: top;
     border-radius: 55px;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -208,7 +207,6 @@ i {
     margin: 24px 30px;
     border-radius: 44px;
     margin-top: 80px;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -217,7 +215,6 @@ i {
     & > p {
       max-width: 130px;
     }
-
     & > p:nth-child(1) {
       color: #fff;
       font-family: "Noto Sans TC";
@@ -339,11 +336,9 @@ i {
     font-weight: 400;
   }
 }
-
 .d-none {
   display: none;
 }
-
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
@@ -351,7 +346,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1310px) {
   .new-container {
     max-width: 1320px !important;
@@ -359,7 +353,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (max-width: 1140px) {
   .top-btnV2 {
     display: none;
@@ -376,7 +369,6 @@ i {
       right: 80px;
       // z-index: 95;
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 58px;
@@ -408,7 +400,6 @@ i {
         letter-spacing: 0.295px;
       }
     }
-
     .smile-NewBanner-Tip {
       position: absolute;
       right: 15px;
@@ -419,7 +410,6 @@ i {
       & > div:nth-child(1) {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-
         padding: 5px 20px 0px 10px;
         display: inline-block;
         color: #fff;
@@ -443,7 +433,6 @@ i {
       }
     }
   }
-
   .smile-newCenter {
     .smile-newCenter-menu {
       padding: 0 15px;
@@ -467,7 +456,6 @@ i {
         font-weight: 500;
       }
     }
-
     // 内容
     .smile-newCenter-content {
       overflow: hidden;
@@ -529,7 +517,6 @@ i {
       }
     }
   }
-
   .icl-WhatChoose {
     padding: 40px 15px;
     .icl-WhatChoose-title {
@@ -544,7 +531,6 @@ i {
       margin: 0 auto;
       max-width: 100vw;
       margin-top: 30px;
-
       .icl-WhatChoose-content-one-img {
       }
       .icl-WhatChoose-content-one-text {
@@ -571,7 +557,6 @@ i {
         }
       }
     }
-
     .icl-WhatChoose-content-two {
       margin: 0 auto;
       max-width: 100vw;
@@ -625,7 +610,6 @@ i {
       margin-left: 9px;
     }
   }
-
   .new-pubile-title {
     span {
       font-family: "Poppins", sans-serif;
@@ -685,7 +669,6 @@ i {
       }
     }
   }
-
   // tese
   .icl-peculiarity {
     padding-top: 40px;
@@ -710,7 +693,6 @@ i {
       justify-content: start;
       overflow-x: auto;
       overflow-y: hidden;
-
       & > .icl-peculiarity-list-item:nth-child(1) {
         transform: rotate(20deg);
         margin-right: 55px;
@@ -721,7 +703,6 @@ i {
         margin-right: 0px;
         margin-left: 0;
       }
-
       .icl-peculiarity-list-item {
         &:hover {
           background: #4570b6;
@@ -734,7 +715,6 @@ i {
             border-bottom: 1px solid #fff;
             padding-top: 23px;
           }
-
           .icl-peculiarity-list-item-text-title {
             display: none;
             writing-mode: none !important;
@@ -744,12 +724,10 @@ i {
           }
         }
         transition: all 0.3s ease;
-
         border-radius: 11.591px;
         border: 1.159px solid #4570b6;
         background: #fff;
         padding: 12px 11px 10px;
-
         width: fit-content;
         h4,
         .icl-peculiarity-list-item-footer {
@@ -765,7 +743,6 @@ i {
           margin-top: 6px;
           margin-bottom: 13px;
           width: 100%;
-
           height: 260px;
           border-top: 1px solid #4570b6;
           border-bottom: 1px solid #4570b6;
@@ -773,7 +750,6 @@ i {
           justify-content: center;
           align-items: flex-start;
           padding-top: 58px;
-
           .icl-peculiarity-list-item-text-title {
             writing-mode: vertical-rl;
             text-orientation: upright;
@@ -785,7 +761,6 @@ i {
             line-height: 1.2;
             letter-spacing: 5.071px;
           }
-
           .icl-peculiarity-list-item-text-show {
             display: none;
             .icl-peculiarity-list-item-text-show-box {
@@ -839,13 +814,11 @@ i {
       }
     }
   }
-
   .icl-introVedio {
     //     background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-bg.webp")
     //       no-repeat;
     //     background-size: cover;
     //  background-position: -30px -86px;
-
     padding: 40px 15px 0px;
     .icl-introVedio-intro {
       padding-bottom: 66px;
@@ -854,7 +827,6 @@ i {
         justify-content: center;
         gap: 12px;
         position: relative;
-
         &::before {
           content: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-bg.webp");
           position: absolute;
@@ -863,7 +835,6 @@ i {
           scale: 0.5;
           pointer-events: none;
         }
-
         &::after {
           background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-bg2.png")
             no-repeat;
@@ -873,24 +844,19 @@ i {
           position: absolute;
           top: -134px;
           left: -50px;
-
           width: 241.084px;
           height: 238.646px;
-
           flex-shrink: 0;
           pointer-events: none;
         }
-
         .steps {
           width: 25px;
-
           color: #6d6e71;
           font-family: "Poppins", sans-serif;
           font-size: 16.994px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-
           div {
             font-family: "Poppins", sans-serif;
             font-weight: 200;
@@ -904,7 +870,6 @@ i {
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-
             &:hover,
             &.active {
               color: #4570b6;
@@ -914,15 +879,12 @@ i {
               font-weight: 700;
               line-height: 13.416px;
               color: #4570b6;
-
               border-right: 2px solid #4570b6;
             }
           }
         }
-
         .content-area {
           position: relative;
-
           .content-area-title {
             position: absolute;
             top: 0;
@@ -941,7 +903,6 @@ i {
               left: 110px;
             }
           }
-
           .content-area-img {
             max-width: 290px;
             position: relative;
@@ -969,7 +930,6 @@ i {
         }
       }
     }
-
     // vedio
     .icl-introVedio-vedio {
       padding-top: 40px;
@@ -977,7 +937,6 @@ i {
       background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-vedio-mobile-bg2.webp")
         no-repeat;
       background-size: 100%;
-
       .icl-introVedio-vedio-list {
         display: flex;
         position: relative;
@@ -992,7 +951,6 @@ i {
       }
     }
   }
-
   .SuitableObject {
     display: flex;
     flex-wrap: wrap;
@@ -1016,7 +974,6 @@ i {
         margin: 0 auto;
       }
     }
-
     & > .SuitableObject-item:nth-child(1) {
       &::after {
         content: "";
@@ -1039,7 +996,6 @@ i {
         width: auto;
         height: none;
         background: none;
-
         color: #fff;
         font-family: "Noto Sans TC";
         font-size: 14px;
@@ -1063,7 +1019,6 @@ i {
       justify-content: center;
       padding-bottom: 25px;
       overflow: hidden;
-
       &:hover {
         &::before {
           content: "";
@@ -1095,7 +1050,6 @@ i {
         position: relative;
         z-index: 2;
       }
-
       .SuitableObject-image {
         position: absolute;
         top: 0;
@@ -1104,13 +1058,11 @@ i {
         width: 100%;
         height: 100%;
         object-fit: cover;
-
         opacity: 0;
         transition: all 0.3s ease;
       }
     }
   }
-
   // 检查项目
   .icl-CheckObject {
     margin-top: 40px;
@@ -1151,7 +1103,6 @@ i {
             line-height: 2.23;
             margin-right: 5px;
           }
-
           .CheckObject-description {
             white-space: nowrap;
             color: #6d6e71;
@@ -1161,7 +1112,6 @@ i {
             font-weight: 300;
             line-height: 35.838px;
           }
-
           .CheckObject-new {
             padding: 0 6px;
             margin-left: 10px;
@@ -1178,7 +1128,6 @@ i {
       }
     }
   }
-
   // 案例分享
   .CaseSharing {
     margin-top: 40px;
@@ -1189,7 +1138,6 @@ i {
     background-position: center center;
     padding: 86px 0 110px;
     position: relative;
-
     .CaseSharing-Box {
       position: relative;
       h3 {
@@ -1209,7 +1157,6 @@ i {
       }
       .CaseSharing-list {
         display: flex;
-
         // justify-content: center;
         gap: 13.26px;
         width: 100vw;
@@ -1233,7 +1180,6 @@ i {
             display: block;
             width: 175px;
             box-shadow: -1.768px 1.768px 0px 0px #4570b6;
-
             position: relative;
             margin-bottom: 13.26px;
             span {
@@ -1269,16 +1215,13 @@ i {
         }
       }
     }
-
     // .CaseSharing-btn {
     //   width: 114.287px;
     //   height: 113.922px;
-
     //   position: absolute;
     //   bottom: 0px;
     //   right: 0;
     // }
-
     // 按钮
     .CaseSharing-btn {
       position: absolute;
@@ -1302,7 +1245,6 @@ i {
       }
     }
   }
-
   .latestNews {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -1313,13 +1255,11 @@ i {
     height: 209vw;
     // padding-top: 130px;
     padding-top: 33.33vw;
-
     .top-btnV2new {
       position: absolute;
       bottom: 20px;
       right: 15px;
     }
-
     .latestNews-tip {
       position: absolute;
       // top: 55px;
@@ -1335,7 +1275,6 @@ i {
       line-height: 1.95;
       padding: 5px 24px;
     }
-
     .latestNews-in {
       // width: 252px;
       width: 64.61vw;
@@ -1381,13 +1320,11 @@ i {
         letter-spacing: 3.2px;
       }
     }
-
     .latestNews-btn {
       border: 1px solid #c13550;
       border-radius: 50%;
       // width: 172px;
       // height: 172px;
-
       width: 44.1vw;
       height: 44.1vw;
       margin-top: 24px;
@@ -1404,7 +1341,6 @@ i {
         width: 4.84vw;
         height: 4.87vw;
       }
-
       span {
         color: #c13550;
         text-align: center;
@@ -1417,10 +1353,8 @@ i {
       }
     }
   }
-
   .CaseSharingV2 {
     width: fit-content;
-
     margin: 0 auto;
     & > div:nth-child(1) {
       display: flex;
@@ -1463,11 +1397,9 @@ i {
     img {
       width: 51.28vw;
       position: absolute;
-
       top: -15.12vw;
       right: 20.51vw;
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 14.87vw;
@@ -1499,7 +1431,6 @@ i {
         letter-spacing: 0.295px;
       }
     }
-
     .smile-NewBanner-Tip {
       position: absolute;
       right: 15px;
@@ -1530,7 +1461,6 @@ i {
       }
     }
   }
-
   .smile-newCenter {
     .smile-newCenter-menu {
       padding: 0 15px;
@@ -1554,7 +1484,6 @@ i {
         font-weight: 500;
       }
     }
-
     // 内容
     .smile-newCenter-content {
       overflow: hidden;
@@ -1616,7 +1545,6 @@ i {
       }
     }
   }
-
   .icl-WhatChoose {
     padding: 40px 15px;
     .icl-WhatChoose-title {
@@ -1631,12 +1559,10 @@ i {
       margin: 0 auto;
       max-width: 92.3vw;
       margin-top: 7.69vw;
-
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 92.3vw;
         margin-top: 7.69vw;
-
         p {
           color: #6d6e71;
           font-family: "Noto Sans TC" !important;
@@ -1657,7 +1583,6 @@ i {
         }
       }
     }
-
     .icl-WhatChoose-content-two {
       margin: 0 auto;
       max-width: 92.3vw;
@@ -1687,7 +1612,6 @@ i {
       }
     }
   }
-
   // icl好处
   .icl-Good {
     .icl-Good-List {
@@ -1726,32 +1650,26 @@ i {
           line-height: 1.125;
         }
       }
-
       & > .icl-Good-List-item {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:nth-child(5) {
         border-bottom: 1px solid #4570b6;
       }
       & > .icl-Good-List-item:nth-child(6) {
         border-bottom: 1px solid #4570b6;
       }
-
       & > .icl-Good-List-item:nth-child(1) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(3) {
         border-right: none;
       }
-
       & > .icl-Good-List-item:nth-child(5) {
         border-right: none;
       }
     }
   }
-
   // tese
   .icl-peculiarity {
     padding-top: 40px;
@@ -1776,7 +1694,6 @@ i {
       justify-content: start;
       overflow-x: auto;
       overflow-y: hidden;
-
       & > .icl-peculiarity-list-item:nth-child(1) {
         transform: rotate(20deg);
         margin-right: 14.1vw;
@@ -1787,7 +1704,6 @@ i {
         margin-right: 0px;
         margin-left: 0;
       }
-
       .icl-peculiarity-list-item {
         &:hover {
           background: #4570b6;
@@ -1800,7 +1716,6 @@ i {
             border-bottom: 1px solid #fff;
             padding-top: 5.9vw;
           }
-
           .icl-peculiarity-list-item-text-title {
             display: none;
             writing-mode: none !important;
@@ -1810,12 +1725,10 @@ i {
           }
         }
         transition: all 0.3s ease;
-
         border-radius: 11.591px;
         border: 1.159px solid #4570b6;
         background: #fff;
         padding: 3.08vw 2.82vw 2.56vw;
-
         width: fit-content;
         h4,
         .icl-peculiarity-list-item-footer {
@@ -1831,7 +1744,6 @@ i {
           margin-top: 1.54vw;
           margin-bottom: 3.33vw;
           width: 100%;
-
           height: 66.67vw;
           border-top: 1px solid #4570b6;
           border-bottom: 1px solid #4570b6;
@@ -1839,7 +1751,6 @@ i {
           justify-content: center;
           align-items: flex-start;
           padding-top: 14.87vw;
-
           .icl-peculiarity-list-item-text-title {
             writing-mode: vertical-rl;
             text-orientation: upright;
@@ -1851,7 +1762,6 @@ i {
             line-height: 1.2;
             letter-spacing: 1.46vw;
           }
-
           .icl-peculiarity-list-item-text-show {
             display: none;
             .icl-peculiarity-list-item-text-show-box {
@@ -1905,13 +1815,11 @@ i {
       }
     }
   }
-
   .icl-introVedio {
     //     background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-bg.webp")
     //       no-repeat;
     //     background-size: cover;
     // background-position: -7.69vw -22.05vw;
-
     padding: 10.25vw 3.84vw 0px;
     .icl-introVedio-intro {
       padding-bottom: 66px;
@@ -1919,9 +1827,7 @@ i {
         display: flex;
         justify-content: center;
         gap: 3.07vw;
-
         position: relative;
-
         &::before {
           content: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-bg.webp");
           position: absolute;
@@ -1930,7 +1836,6 @@ i {
           scale: 0.5;
           pointer-events: none;
         }
-
         &::after {
           background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-bg2.png")
             no-repeat;
@@ -1940,24 +1845,19 @@ i {
           position: absolute;
           top: -134px;
           left: -50px;
-
           width: 241.084px;
           height: 238.646px;
-
           flex-shrink: 0;
           pointer-events: none;
         }
-
         .steps {
           width: 6.41vw;
-
           color: #6d6e71;
           font-family: "Poppins", sans-serif;
           font-size: 4.35vw;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-
           div {
             font-family: "Poppins", sans-serif;
             font-weight: 200;
@@ -1971,7 +1871,6 @@ i {
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-
             &:hover,
             &.active {
               color: #4570b6;
@@ -1984,10 +1883,8 @@ i {
             }
           }
         }
-
         .content-area {
           position: relative;
-
           .content-area-title {
             position: absolute;
             top: 0;
@@ -2007,7 +1904,6 @@ i {
               left: 92px;
             }
           }
-
           .content-area-img {
             max-width: 290px;
             position: relative;
@@ -2036,7 +1932,6 @@ i {
         }
       }
     }
-
     // vedio
     .icl-introVedio-vedio {
       padding-top: 40px;
@@ -2044,7 +1939,6 @@ i {
       background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-vedio-mobile-bg2.webp")
         no-repeat;
       background-size: 100%;
-
       .icl-introVedio-vedio-list {
         display: flex;
         justify-content: center;
@@ -2057,14 +1951,12 @@ i {
       }
     }
   }
-
   .SuitableObject {
     .SuitableObject-speical {
       span {
         font-size: 5.12vw;
       }
     }
-
     & > .SuitableObject-item:nth-child(1) {
       &::after {
         content: "";
@@ -2087,7 +1979,6 @@ i {
         width: auto;
         height: none;
         background: none;
-
         color: #fff;
         font-family: "Noto Sans TC";
         font-size: 14px;
@@ -2111,7 +2002,6 @@ i {
       justify-content: center;
       padding-bottom: 6.41vw;
       overflow: hidden;
-
       &:hover {
         &::before {
           content: "";
@@ -2143,7 +2033,6 @@ i {
         position: relative;
         z-index: 2;
       }
-
       .SuitableObject-image {
         position: absolute;
         top: 0;
@@ -2152,13 +2041,11 @@ i {
         width: 100%;
         height: 100%;
         object-fit: cover;
-
         opacity: 0;
         transition: all 0.3s ease;
       }
     }
   }
-
   // 检查项目
   .icl-CheckObject {
     margin-top: 40px;
@@ -2199,7 +2086,6 @@ i {
             line-height: 2.23;
             margin-right: 1.28vw;
           }
-
           .CheckObject-description {
             color: #6d6e71;
             font-family: "Noto Sans TC";
@@ -2209,7 +2095,6 @@ i {
             line-height: 2;
             white-space: nowrap;
           }
-
           .CheckObject-new {
             padding: 0 6px;
             margin-left: 2.56vw;
@@ -2227,7 +2112,6 @@ i {
       }
     }
   }
-
   // 案例分享
   .CaseSharing {
     margin-top: 40px;
@@ -2238,7 +2122,6 @@ i {
     background-position: center center;
     padding: 22.05vw 0 28.21vw;
     position: relative;
-
     .CaseSharing-Box {
       position: relative;
       h3 {
@@ -2258,7 +2141,6 @@ i {
       }
       .CaseSharing-list {
         display: flex;
-
         // justify-content: center;
         gap: 3.4vw;
         width: 100vw;
@@ -2282,7 +2164,6 @@ i {
             display: block;
             width: 44.87vw;
             box-shadow: -1.768px 1.768px 0px 0px #4570b6;
-
             position: relative;
             margin-bottom: 3.4vw;
             span {
@@ -2318,17 +2199,14 @@ i {
         }
       }
     }
-
     .CaseSharing-btn {
       width: 29.23vw;
       height: 29.23vw;
-
       position: absolute;
       bottom: 0px;
       right: 0;
     }
   }
-
   .latestNews {
     margin-bottom: 40px;
     background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-newdongtai-mobile.jpg")
@@ -2338,7 +2216,6 @@ i {
     height: 209vw;
     // padding-top: 130px;
     padding-top: 33.33vw;
-
     .latestNews-tip {
       position: absolute;
       // top: 55px;
@@ -2354,7 +2231,6 @@ i {
       line-height: 1.95;
       padding: 1.28vw 6.15vw;
     }
-
     .latestNews-in {
       // width: 252px;
       width: 64.61vw;
@@ -2400,13 +2276,11 @@ i {
         letter-spacing: 3.2px;
       }
     }
-
     .latestNews-btn {
       border: 1px solid #c13550;
       border-radius: 50%;
       // width: 172px;
       // height: 172px;
-
       width: 44.1vw;
       height: 44.1vw;
       margin-top: 6.15vw;
@@ -2423,7 +2297,6 @@ i {
         width: 4.84vw;
         height: 4.87vw;
       }
-
       span {
         color: #c13550;
         text-align: center;
@@ -2436,10 +2309,8 @@ i {
       }
     }
   }
-
   .CaseSharingV2 {
     width: fit-content;
-
     margin: 0 auto;
     & > div:nth-child(1) {
       display: flex;
@@ -2473,7 +2344,6 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1140px) {
   .d-xl-none {
     display: none;
@@ -2481,7 +2351,6 @@ i {
   .d-xl-block {
     display: block;
   }
-
   .smile-NewBanner {
     padding: 0px;
     // margin-top: 80px;
@@ -2494,7 +2363,6 @@ i {
       left: inherit;
       right: 190px;
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 90px;
@@ -2525,7 +2393,6 @@ i {
         letter-spacing: 0.892px;
       }
     }
-
     .smile-NewBanner-Tip {
       position: absolute;
       right: 15px;
@@ -2537,7 +2404,6 @@ i {
         border-bottom: 1px solid #4570b6;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-
         padding: 8px 22px 0px 22px;
         display: inline-block;
         color: #fff;
@@ -2563,7 +2429,6 @@ i {
       }
     }
   }
-
   .smile-newCenter {
     .smile-newCenter-menu {
       padding: 0px;
@@ -2588,7 +2453,6 @@ i {
         font-weight: 500;
       }
     }
-
     // 内容
     .smile-newCenter-content {
       // padding-top: 232px;
@@ -2599,7 +2463,6 @@ i {
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
-
       .smile-newCenter-content-text {
         background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-pc-center-centerTwo2.avif");
         background-repeat: no-repeat;
@@ -2625,7 +2488,6 @@ i {
           margin: 0 auto;
           padding: 137px 88px 0 88px;
           border-radius: 50%;
-
           p {
             color: #6d6e71;
             text-align: justify;
@@ -2645,7 +2507,6 @@ i {
               letter-spacing: 4px;
             }
           }
-
           // & > p:nth-child(3) {
           //   text-align: initial;
           // }
@@ -2662,7 +2523,6 @@ i {
       }
     }
   }
-
   .icl-WhatChoose {
     padding: 67px 0px;
     .icl-WhatChoose-title {
@@ -2685,7 +2545,6 @@ i {
         max-width: 468px;
       }
       // .icl-WhatChoose-content-one-img{
-
       // }
       .icl-WhatChoose-content-one-text {
         p {
@@ -2709,7 +2568,6 @@ i {
         }
       }
     }
-
     .icl-WhatChoose-content-two {
       margin: 0 auto;
       display: flex;
@@ -2717,7 +2575,6 @@ i {
       gap: 31px;
       & > div {
         max-width: 467px;
-
         margin-top: 30px;
         border-radius: 10px;
         background: #f4fafc;
@@ -2753,7 +2610,6 @@ i {
     padding: 10px 57px;
     border-radius: 100px;
     border: 2px solid #4570b6;
-
     background: #4570b6;
     color: #fff;
     text-align: justify;
@@ -2769,7 +2625,6 @@ i {
       margin-left: 15px;
     }
   }
-
   .new-pubile-title {
     color: #4570b6;
     font-family: "Noto Sans TC";
@@ -2796,13 +2651,11 @@ i {
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       margin-top: 49px;
-
       & > .icl-Good-List-item:nth-child(1),
       & > .icl-Good-List-item:nth-child(2),
       & > .icl-Good-List-item:nth-child(3) {
         border-bottom: none;
       }
-
       & > .icl-Good-List-item:last-child,
       & > .icl-Good-List-item:nth-child(3) {
         border-right: 2px solid #4570b6;
@@ -2860,7 +2713,6 @@ i {
       }
     }
   }
-
   // 特色
   .icl-peculiarity {
     width: 100vw;
@@ -2868,7 +2720,6 @@ i {
     padding-bottom: 160px;
     background: #f4fafc;
     position: relative;
-
     &::after {
       content: "";
       background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-peculiarity-bg1.png")
@@ -2880,7 +2731,6 @@ i {
       left: 0;
       bottom: 0;
     }
-
     .icl-peculiarity-container {
       display: flex;
       // justify-content: center;
@@ -2888,10 +2738,8 @@ i {
       flex-direction: column-reverse;
       align-items: center;
       gap: 158px;
-
       margin-top: 64px;
     }
-
     .icl-peculiarity-text {
       max-width: 783px;
       margin-left: 300px;
@@ -2913,18 +2761,14 @@ i {
       z-index: 2;
       & > .icl-peculiarity-list-item:nth-child(1) {
         transform: rotate(20deg);
-
         margin-right: 95px;
       }
       & > .icl-peculiarity-list-item:nth-child(1):hover {
         transform: rotate(0deg);
-
         margin-right: 0px;
       }
-
       .icl-peculiarity-list-item {
         cursor: pointer;
-
         &:hover {
           background: #4570b6;
           h4,
@@ -2936,7 +2780,6 @@ i {
             border-bottom: 1px solid #fff;
             padding-top: 41px;
           }
-
           .icl-peculiarity-list-item-text-title {
             display: none;
             writing-mode: none !important;
@@ -2946,13 +2789,10 @@ i {
           }
         }
         transition: all 0.3s ease;
-
         border-radius: 20px;
         border: 2px solid #4570b6;
-
         background: #fff;
         padding: 21px 20px 19px;
-
         width: fit-content;
         h4,
         .icl-peculiarity-list-item-footer {
@@ -2988,7 +2828,6 @@ i {
             line-height: 1.2;
             letter-spacing: 8.75px;
           }
-
           .icl-peculiarity-list-item-text-show {
             display: none;
             .icl-peculiarity-list-item-text-show-box {
@@ -3039,7 +2878,6 @@ i {
       }
     }
   }
-
   // vedio
   .icl-introVedio {
     width: 100vw;
@@ -3047,14 +2885,12 @@ i {
       no-repeat;
     // background-size: cover;
     background-position: 100% 0px;
-
     padding: 110px 0 0;
     .icl-introVedio-intro {
       // background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-pc-bg2.webp")
       //   no-repeat;
       // background-size: contain;
       // background-position: 0 120%;
-
       padding-bottom: 110px;
       .icl-introVedio-intro-number {
         position: relative;
@@ -3062,7 +2898,6 @@ i {
         &::after {
           background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-bg2.png")
             no-repeat;
-
           background-position: center;
           content: "";
           position: absolute;
@@ -3072,23 +2907,19 @@ i {
           height: 550px;
           pointer-events: none;
         }
-
         width: fit-content;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         gap: 40px;
-
         .steps {
           width: 60px;
           color: #6d6e71;
           font-family: "Poppins", sans-serif;
           font-size: 38px;
           font-style: normal;
-
           font-weight: 400;
           line-height: normal;
-
           div {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
@@ -3115,7 +2946,6 @@ i {
             }
           }
         }
-
         .content-area {
           position: relative;
           flex: 1;
@@ -3139,23 +2969,19 @@ i {
               left: 240px;
             }
           }
-
           .content-area-img {
             position: relative;
             display: flex;
             gap: 80px;
             z-index: 2;
             align-items: center;
-
             img {
               max-width: 647px;
               height: auto;
             }
             .content-area-text {
               left: 50%;
-
               width: 257px;
-
               color: #6d6e71;
               font-family: "Noto Sans TC";
               font-size: 23px;
@@ -3168,7 +2994,6 @@ i {
         }
       }
     }
-
     // vedio
     .icl-introVedio-vedio {
       position: relative;
@@ -3195,7 +3020,6 @@ i {
       }
     }
   }
-
   .SuitableObject {
     display: flex;
     flex-wrap: wrap;
@@ -3215,7 +3039,6 @@ i {
       font-weight: 900;
       line-height: 1.3;
     }
-
     .SuitableObject-speical {
       display: none;
     }
@@ -3234,7 +3057,6 @@ i {
         background-color: transparent;
       }
     }
-
     & > .SuitableObject-item:nth-child(5) {
       &::after {
         // content: "ICL矯視";
@@ -3243,11 +3065,9 @@ i {
         left: 50%;
         transform: translateX(-50%);
         right: auto;
-
         width: auto;
         height: none;
         background: none;
-
         color: #fff;
         font-family: "Noto Sans TC";
         font-size: 20px;
@@ -3278,7 +3098,6 @@ i {
         height: 100%;
         background-color: rgba(255, 255, 255, 0.5);
       }
-
       &:hover {
         &::before {
           content: "";
@@ -3310,7 +3129,6 @@ i {
         position: relative;
         z-index: 2;
       }
-
       .SuitableObject-image {
         position: absolute;
         top: 0;
@@ -3324,18 +3142,15 @@ i {
       }
     }
   }
-
   // 检查项目
   .icl-CheckObject {
     margin-top: 80px;
-
     .CheckObject {
       padding: 68px 0;
       border-radius: 20px;
       border: 1px solid #4570b6;
       background: #fff;
       display: flex;
-
       h3 {
         width: 544px;
         color: #4570b6;
@@ -3370,7 +3185,6 @@ i {
             font-weight: 700;
             line-height: 54px; /* 234.783% */
           }
-
           .CheckObject-description {
             color: #6d6e71;
             font-family: "Noto Sans TC";
@@ -3396,16 +3210,13 @@ i {
         }
       }
     }
-
     .icl-btn {
       margin-top: 65px;
     }
   }
-
   // 案例分享
   .CaseSharing {
     max-width: 100vw;
-
     margin-top: 104px;
     margin-bottom: 80px;
     background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-pc-share.avif")
@@ -3413,10 +3224,8 @@ i {
     background-position: center center;
     padding: 140px 0 140px;
     position: relative;
-
     .CaseSharing-Box {
       max-width: 1750px !important;
-
       position: relative;
       h3 {
         position: absolute;
@@ -3438,11 +3247,9 @@ i {
         gap: 60px;
         flex-wrap: nowrap;
         overflow-x: auto;
-
         & > .CaseSharing-list-item:nth-child(1) {
           padding-top: 94px;
         }
-
         & > .CaseSharing-list-item:nth-child(2) {
           padding-top: 0px;
         }
@@ -3456,7 +3263,6 @@ i {
           a {
             display: block;
             width: 396px;
-
             box-shadow: -4px 4px 0px 0px #4570b6;
             position: relative;
             margin-bottom: 30px;
@@ -3493,22 +3299,18 @@ i {
         }
       }
     }
-
     // .CaseSharing-btn {
     //   width: 164.085px;
     //   height: 163.562px;
-
     //   position: absolute;
     //   bottom: 60px;
     //   right: -20px;
     // }
-
     // 按钮
     .CaseSharing-btn {
       position: absolute;
       background: url("https://statichk.cmermedical.com/smile/smileproV2/icl-share-btn-pc.png");
       background-repeat: no-repeat;
-
       background-position: -58px -25px;
       width: 166.085px;
       height: 165.562px;
@@ -3530,7 +3332,6 @@ i {
       }
     }
   }
-
   // 最新资讯
   .latestNews {
     .top-btnV2new {
@@ -3538,7 +3339,6 @@ i {
     }
     margin-top: 70px;
     margin-bottom: 60px;
-
     background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-newdongtai-pc.png")
       no-repeat;
     background-size: cover;
@@ -3548,7 +3348,6 @@ i {
     height: 36.66vw;
     max-height: 800px;
     // padding-top: 260px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3559,7 +3358,6 @@ i {
       left: 0;
       background: #c13550;
       color: #fff;
-
       font-family: "Noto Sans TC";
       font-size: clamp(20px, 1.5625vw, 30px);
       font-style: normal;
@@ -3567,7 +3365,6 @@ i {
       line-height: 1.3;
       padding: 13px 30px;
     }
-
     .latestNews-in {
       width: 28.125vw;
       max-width: 540px;
@@ -3576,7 +3373,6 @@ i {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-
       .latestNews-title {
         color: #c13550;
         font-family: "Poppins", sans-serif;
@@ -3586,7 +3382,6 @@ i {
         line-height: 1.3;
         i {
           font-style: normal;
-
           font-family: "Poppins", sans-serif;
         }
         span {
@@ -3616,7 +3411,6 @@ i {
         letter-spacing: 4.6px;
       }
     }
-
     .latestNews-btn {
       border: 1px solid #c13550;
       border-radius: 50%;
@@ -3635,7 +3429,6 @@ i {
         width: 38px;
         height: 38px;
       }
-
       span {
         color: #c13550;
         text-align: center;
@@ -3645,10 +3438,8 @@ i {
         font-weight: 900;
         line-height: 0.71;
       }
-
       &:hover {
         border: 1px solid #c13550;
-
         background: #c13550;
         svg {
           path {
@@ -3661,11 +3452,9 @@ i {
       }
     }
   }
-
   .CaseSharingV2 {
     display: none;
     width: fit-content;
-
     margin: 0 auto;
     & > div:nth-child(1) {
       display: flex;
@@ -3703,7 +3492,6 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1319px) {
   .icl-Good {
     .icl-Good-List {
@@ -3717,7 +3505,6 @@ i {
       & > .icl-Good-List-item:nth-child(3) {
         border-bottom: 2px solid #4570b6;
       }
-
       .icl-Good-List-item {
         width: 16.5vw;
         height: 16.4vw;
@@ -3734,7 +3521,6 @@ i {
       }
     }
   }
-
   .icl-peculiarity {
     .icl-peculiarity-list {
       & > .icl-peculiarity-list-item:nth-child(1) {
@@ -3764,7 +3550,6 @@ i {
       line-height: 35px; /* 175% */
       letter-spacing: 4px;
     }
-
     .icl-peculiarity-container {
       gap: 0;
       display: flex;
@@ -3776,7 +3561,6 @@ i {
     }
   }
 }
-
 @media screen and (min-width: 1660px) {
   .icl-introVedio {
     background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/intro/icl-intro-pc-bg.webp")
@@ -3785,14 +3569,11 @@ i {
   }
 }
 </style>
-
 <template>
   <div class="lasik">
     <!-- <Head /> -->
     <HeadV2 />
-
     <goTop />
-
     <!-- 轮播位置 -->
     <div
       class="container new-container mx-auto smile-NewBanner position-relative mt-20 md:mt-40"
@@ -3817,7 +3598,6 @@ i {
         <h3>{{ $t("Correct.newIcl.small_title1") }}</h3>
         <p>ICL Implantable Collamer Lens</p>
       </div>
-
       <div class="smile-NewBanner-Tip">
         <div class="smile-NewBanner-Tip-Title">
           <p>{{ $t("Correct.newIcl.titleList.title1") }}</p>
@@ -3850,7 +3630,6 @@ i {
             <h3 class="text-center d-none d-xl-block">
               {{ $t("Correct.newIcl.section1.title") }}
             </h3>
-
             <p>
               {{ $t("Correct.newIcl.section1.text1")
               }}<span>{{ $t("Correct.newIcl.section1.text2") }}</span
@@ -3912,7 +3691,6 @@ i {
           </p>
         </div>
       </div>
-
       <div class="icl-WhatChoose-content-two container new-container">
         <div>
           <div class="flex items-center icl-WhatChoose-content-two-title">
@@ -3928,7 +3706,6 @@ i {
             </p>
           </div>
         </div>
-
         <div>
           <div class="flex items-center icl-WhatChoose-content-two-title">
             <h4>{{ $t("Correct.newIcl.section2.three.title") }}</h4>
@@ -3942,7 +3719,6 @@ i {
           </p>
         </div>
       </div>
-
       <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -3971,7 +3747,6 @@ i {
         </svg>
       </a>
     </section>
-
     <!-- start  ICL植入式隱形眼鏡費用-->
     <div class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 md:mb-22">
       <div class="w-full flex flex-col items-center mx-auto">
@@ -3980,7 +3755,6 @@ i {
         >
           ICL植入式隱形眼鏡費用
         </h2>
-
         <div class="w-full">
           <div
             class="relative mx-auto bg-[#D4E4FF] rounded-[35.768px_11.923px] md:rounded-[60px_20px;] py-5 px-6 md:p-8 mb-2 md:mb-5 flex flex-col md:flex-row md:items-center justify-between overflow-visible max-w-6xl"
@@ -4015,17 +3789,14 @@ i {
                 >網上預約專享</span
               >
             </div>
-
             <span class="bg-[#4570B6] w-1 h-[81px] hidden md:block"></span>
-
-            <div class=" md:px-8 md:py-3 transform md:-translate-x-4">
+            <div class="md:px-8 md:py-3 transform md:-translate-x-4">
               <span
                 class="text-3xl md:text-5xl text-nowrap font-bold md:font-black text-[#4570B6] tracking-[6.228px] md:tracking-[10px]"
               >
                 免費升級V5鏡片
               </span>
             </div>
-
             <div
               class="absolute -right-2 -top-10 md:-right-20 md:-top-20 bg-[#F89B03;] w-[97px] h-[97px] md:w-[173px] md:h-[173px] rounded-full flex flex-col items-center justify-center text-white font-bold leading-tight z-10"
             >
@@ -4033,7 +3804,6 @@ i {
               <span class="text-2xl md:text-5xl">限額</span>
             </div>
           </div>
-
           <div class="space-y-2 md:space-y-4 max-w-6xl mx-auto">
             <div
               class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
@@ -4047,11 +3817,16 @@ i {
                 class="text-[#F59E0B] -ml-[60px] sm:ml-0 flex-1 font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
                 <span class="text-2xl md:text-5xl"> 港幣</span>
-                <span class="text-lg min-[360px]:text-2xl md:text-6xl md:pb-2">$64,000</span>
-                <p class="text-xs min-[360px]:text-sm md:text-xl">指定信用卡（東亞/渣打/滙豐）<br class="block md:hidden"/>可享6/12/18/24/36個月免息分期</p>
+                <span class="text-lg min-[360px]:text-2xl md:text-6xl md:pb-2"
+                  >$64,000</span
+                >
+                <p class="text-xs min-[360px]:text-sm md:text-xl">
+                  指定信用卡（東亞/渣打/滙豐）<br
+                    class="block md:hidden"
+                  />可享6/12/18/24/36個月免息分期
+                </p>
               </div>
             </div>
-
             <div
               class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
             >
@@ -4063,10 +3838,10 @@ i {
               <div
                 class="text-[#F59E0B] flex-1 font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
-                <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-6xl">$68,000</span>
+                <span class="text-2xl md:text-5xl">港幣</span
+                ><span class="text-2xl md:text-6xl">$68,000</span>
               </div>
             </div>
-
             <div
               class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
             >
@@ -4081,7 +3856,6 @@ i {
               </div>
             </div>
           </div>
-
           <div class="mt-8 md:mt-12 flex flex-col items-center">
             <a
               href="/fee#table1"
@@ -4108,12 +3882,11 @@ i {
                 />
               </svg>
             </a>
-
             <div
-              class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base md:text-2xl leading-relaxed"
+              class="text-text mt-2 md:mt-4 text-center font-light text-base md:text-2xl leading-relaxed"
             >
-              <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
-              <p class="text-[#6D6E71]">
+              <p>此為香港價錢，雙眼價錢</p>
+              <p>
                 矯視費用已包括術前檢查費用港幣$500
                 (若沒有預約進行矯視，需另外繳付術前檢查費用)
               </p>
@@ -4122,9 +3895,7 @@ i {
         </div>
       </div>
     </div>
-
     <!-- end ICL植入式隱形眼鏡費用 -->
-
     <!-- ICL矯視的好處 -->
     <section class="icl-Good">
       <h3 class="new-pubile-title">
@@ -4146,7 +3917,6 @@ i {
         </div>
       </div>
     </section>
-
     <!-- EVO Visian ICL鏡片7大特色 -->
     <section class="icl-peculiarity">
       <h3 class="new-pubile-title">
@@ -4156,7 +3926,6 @@ i {
         <p class="icl-peculiarity-text">
           {{ $t("Correct.newIcl.section4.content_text") }}
         </p>
-
         <div class="icl-peculiarity-list">
           <div
             class="icl-peculiarity-list-item"
@@ -4168,11 +3937,9 @@ i {
               <p class="icl-peculiarity-list-item-text-title">
                 {{ $t(item.title) }}
               </p>
-
               <div class="icl-peculiarity-list-item-text-show">
                 <div class="icl-peculiarity-list-item-text-show-box">
                   <img :src="item.box.img" alt="" />
-
                   <div class="icl-peculiarity-list-item-box-title">
                     <p
                       v-for="(titleText, idx) in item.box.titleText"
@@ -4197,7 +3964,6 @@ i {
         </div>
       </div>
     </section>
-
     <!-- 过程和介绍vedio -->
     <section class="icl-introVedio overflow-hidden">
       <div class="icl-introVedio-intro new-container">
@@ -4214,7 +3980,6 @@ i {
               {{ step.number }}
             </div>
           </div>
-
           <!-- 右侧内容区域 -->
           <div class="content-area">
             <div v-if="activeStep >= 0">
@@ -4223,7 +3988,6 @@ i {
                   植入式隱形眼鏡<br />
                   植入過程
                 </p>
-
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"
@@ -4252,14 +4016,12 @@ i {
                   :src="steps[activeStep].imagePc"
                   alt=""
                 />
-
                 <p class="content-area-text">{{ steps[activeStep].text }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="icl-introVedio-vedio">
         <div class="new-container">
           <h3 class="new-pubile-title">
@@ -4294,7 +4056,6 @@ i {
         </div>
       </div>
     </section>
-
     <!-- 合适对象 -->
     <div class="SuitableObject">
       <div
@@ -4306,7 +4067,6 @@ i {
         <div class="SuitableObject-title" v-if="item.title">
           {{ item.title }}
         </div>
-
         <div class="SuitableObject-description">
           <p v-for="(i, idx) in item.description" :key="idx">
             {{ i }}
@@ -4321,7 +4081,6 @@ i {
         >
       </div>
     </div>
-
     <!-- 全面術前眼睛檢查項目 -->
     <section class="icl-CheckObject">
       <div class="CheckObject container new-container">
@@ -4337,7 +4096,6 @@ i {
           </li>
         </ul>
       </div>
-
       <a
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-13)%20ICL%E6%A4%8D%E5%85%A5%E5%BC%8F%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -4366,7 +4124,6 @@ i {
         </svg>
       </a>
     </section>
-
     <!-- ICL植入式隱形眼鏡真實個案分享 -->
     <!-- <section class="CaseSharing">
       <div class="new-container CaseSharing-Box">
@@ -4423,7 +4180,6 @@ i {
               ></i>
             </a>
           </div>
-
           <div class="CaseSharing-list-item">
             <a
               href="https://www.youtube.com/watch?v=r0yDL98l0Zo"
@@ -4472,7 +4228,6 @@ i {
               ></i>
             </a>
           </div>
-
           <div class="CaseSharing-list-item">
             <a
               href="https://www.youtube.com/watch?v=5ihrzFvOy38"
@@ -4482,7 +4237,6 @@ i {
                 src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-pc-share3.avif"
                 alt=""
               />
-
               <span>林宣妤</span>
               <i
                 ><svg
@@ -4506,7 +4260,6 @@ i {
                 src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-pc-share4.avif"
                 alt=""
               />
-
               <span>吳業坤</span>
               <i
                 ><svg
@@ -4523,7 +4276,6 @@ i {
               ></i>
             </a>
           </div>
-
           <div class="CaseSharing-list-item">
             <a
               href="https://www.youtube.com/watch?v=e-c_qRuvWTA"
@@ -4533,7 +4285,6 @@ i {
                 src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/share/icl-pc-share5.avif"
                 alt=""
               />
-
               <span>Tiffany Poon</span>
               <i
                 ><svg
@@ -4552,10 +4303,8 @@ i {
           </div>
         </div>
       </div>
-
     </section> -->
     <UserShare :user-share="ShareData"></UserShare>
-
     <!-- 最新动态 -->
     <section class="latestNews">
       <div class="latestNews-tip">最新動態</div>
@@ -4568,7 +4317,6 @@ i {
           是一種擴展景深，專為矯正老花而設的植入式隱形眼鏡，適合未有白內障，而正受近視及老花困擾的人士。
         </p>
       </div>
-
       <a href="/vision-correction-presbyopia" class="latestNews-btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -4592,7 +4340,6 @@ i {
         </svg>
         <span> 了解更多 </span>
       </a>
-
       <div class="top-btnV2new d-lg-none" @click="scrollToTopV2New">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -4611,7 +4358,6 @@ i {
         </svg>
       </div>
     </section>
-
     <section class="CaseSharingV2">
       <div>
         <svg
@@ -4699,15 +4445,12 @@ i {
 import Head from "@/components/Publice/Head.vue";
 import HeadV2 from "@/components/Publice/HeadeV2.vue";
 import goTop from "@/components/Publice/goTop.vue";
-
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
-
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
@@ -4738,7 +4481,6 @@ export default {
         meta: [{ hid: "robots", name: "robots", content: "noindex" }],
       };
     }
-
     return {
       title:
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
@@ -4835,7 +4577,6 @@ export default {
           ],
         },
       ],
-
       iclPeculiarityList: [
         {
           title: "Correct.newIcl.section4.item1_title",
@@ -4918,7 +4659,6 @@ export default {
           },
         },
       ],
-
       activeStep: 0, // 当前激活的步骤索引
       activeStepTimer: null,
       interval: 3000,
@@ -4964,7 +4704,6 @@ export default {
           text: "完成手術後，需按指示定期覆診以追蹤視力。",
         },
       ],
-
       SuitableObject: [
         {
           description: ["高度近遠視", "或深度數", "散光人士"],
@@ -4998,7 +4737,6 @@ export default {
             "https://statichk.cmermedical.com/smile/vision-correction-iclV2/hsdx/icl-heshiduixiang-pc5.avif",
         },
       ],
-
       items: [
         {
           number: "1.",
@@ -5008,12 +4746,10 @@ export default {
           number: "2.",
           description: "屈光檢查",
         },
-
         {
           number: "3.",
           description: "Sirius：角膜結構及瞳孔測量",
         },
-
         {
           number: "4.",
           description: "Pentacam：360全面角膜結構測量",
@@ -5022,7 +4758,6 @@ export default {
           number: "5.",
           description: "淚水分泌測試",
         },
-
         {
           number: "6.",
           description: "Specular Microscopy內皮細胞的密度測量",
@@ -5040,7 +4775,6 @@ export default {
           description: "醫生會診：眼睛狀況評估及矯視方案建議",
         },
       ],
-
       characteristic: [
         {
           img: "https://static.cmereye.com/imgs/2024/04/e8b1b4b4e7337083.png",
@@ -5201,7 +4935,6 @@ export default {
           nameEn: "Kathy",
           nameCn: "王頌茵",
         },
-
         {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=T9g2qoFI9nU",
@@ -5210,7 +4943,6 @@ export default {
           nameEn: "Lily",
           nameCn: "",
         },
-
         {
           type: "ICL",
           href: "https://youtu.be/I2sl4GWqg1w",
@@ -5219,7 +4951,6 @@ export default {
           nameEn: " ",
           nameCn: "麥沛東",
         },
-
         {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=2t7JjTab4xA",
@@ -5228,7 +4959,6 @@ export default {
           nameEn: "Phil",
           nameCn: "林奕匡",
         },
-
         {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=5ihrzFvOy38",
@@ -5245,7 +4975,6 @@ export default {
           nameEn: "Kwan Gor",
           nameCn: "吳業坤",
         },
-
         {
           type: "ICL",
           href: "https://www.youtube.com/watch?v=e-c_qRuvWTA",
@@ -5255,26 +4984,21 @@ export default {
           nameCn: "",
         },
       ],
-
       canonicalHref: "https://smile.hkcmereye.com/vision-correction-icl",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/vision-correction-icl",
       browserTitle: "ICL植入式隱形眼鏡 - 希瑪微笑矯視中心",
       browserTitleCn: "ICL植入式隐形眼镜 - 希玛微笑矫视中心",
     };
   },
-
   methods: {
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-
     highlightStep(index) {
       console.log("index");
-
       this.activeStep = index; // 更新当前激活的步骤
       this.stopTimer();
     },
-
     async copyCurrentUrl() {
       try {
         const textArea = document.createElement("textarea");
@@ -5283,7 +5007,6 @@ export default {
         textArea.select();
         document.execCommand("copy");
         document.body.removeChild(textArea);
-
         this.$message({
           showClose: true,
           message: "複製成功",
@@ -5293,7 +5016,6 @@ export default {
         console.error("复制失败:", error);
       }
     },
-
     scrollToTopV2() {
       window.scrollTo({
         top: 0,
@@ -5328,22 +5050,18 @@ export default {
         this.isMobile = false;
       }
     });
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
       this.isMobile = false;
     }
-
     // 启动计时
     this.startTimer();
     // 获取容器和内容
-
     // const shaerwidth = this.$refs.caseSharingList;
     // if (shaerwidth) {
     //   const contentWidth = shaerwidth.scrollWidth; // 内容总宽度
     //   const containerWidth = shaerwidth.clientWidth; // 容器可见宽度
-
     //   // 计算滚动到中间的位置
     //   const scrollLeft = (contentWidth - containerWidth) / 2;
     //   // 设置滚动位置

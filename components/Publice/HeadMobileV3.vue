@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-22 09:55:03
- * @LastEditTime: 2025-11-27 17:39:47
+ * @LastEditTime: 2026-04-14 08:56:42
  * @FilePath: /components/Publice/HeadMobileV3.vue
  * @Description: 移动端第三版头部的菜单
 -->
@@ -145,7 +145,11 @@
         </p>
       </div>
     </nuxt-link>
-    <div class="icon-menu" v-show="!showMenu" @click="toggleMenu(true)">
+    <div
+      class="icon-menu cursor-pointer"
+      v-show="!showMenu"
+      @click="toggleMenu(true)"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="33"
@@ -170,7 +174,11 @@
         />
       </svg>
     </div>
-    <div class="icon-menu close" v-show="showMenu" @click="toggleMenu(false)">
+    <div
+      class="icon-menu close cursor-pointer"
+      v-show="showMenu"
+      @click="toggleMenu(false)"
+    >
       <svg
         width="25"
         height="24"
