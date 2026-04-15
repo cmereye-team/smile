@@ -51,7 +51,7 @@
         </client-only>
       </div>
       <div id="faq-presbyopia">
-        <H2Tag :title="['CLEAR-Vision']" />
+        <H2Tag :title="[$t('freQuestios.fourProblem.title')]" />
         <client-only>
           <el-collapse v-model="activeNameFour" accordion>
             <el-collapse-item
