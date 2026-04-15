@@ -61,7 +61,7 @@ export default {
               link: "/service/relex_smile",
             },
             {
-              child_item: "- CLEAR-Vision",
+              child_item: "- 老花矯視",
               link: "",
             },
             {

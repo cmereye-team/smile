@@ -58,8 +58,11 @@
                     >
                   </el-menu-item> -->
                   <el-menu-item index="2-2">
-                    <nuxt-link :to="localePath('/vision-correction-presbyopia')">CMER
-                      CLEAR-Vision</nuxt-link></el-menu-item>
+                    <nuxt-link :to="localePath('/vision-correction-presbyopia')">
+                      {{
+                      $t("home.headers.orthopedicServicesChild_2")
+                    }}
+                    </nuxt-link></el-menu-item>
                   <el-menu-item index="2-3">
                     <nuxt-link :to="localePath('/vision-correction-lasik')">{{
                       $t("home.headers.orthopedicServicesChild_3")

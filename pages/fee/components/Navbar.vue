@@ -48,7 +48,7 @@ export default {
               child_item: "- SMILE 微笑激光矯視",
               link: "/service/relex_smile"
             }, {
-              child_item: "- CLEAR-Vision",
+              child_item: "- 老花矯視",
               link: ""
             }, {
               child_item: "- LASIK 激光矯視",

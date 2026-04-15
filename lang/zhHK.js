@@ -39,7 +39,7 @@ module.exports = {
       commonProblemChild_1: "SMILE Pro/SMILE微笑激光矯視",
       commonProblemChild_2: "LASIK 激光矯視",
       commonProblemChild_3: "ICL植入式隱形眼鏡",
-      commonProblemChild_4: "CLEAR-Vision",
+      commonProblemChild_4: "老花矯視",
       ophthalmicConsultationChild_1: "個案分享及矯視資訊影片",
       ophthalmicConsultationChild_2: "媒體報導",
       ophthalmicConsultationChild_3: "婚展專區",
@@ -1759,6 +1759,7 @@ module.exports = {
       },
     },
     fourProblem: {
+      title: '老花矯視',
       problem1: {
         title: "如何判斷哪種老花矯視方式適合我？",
         content: `醫生會為你進行全面的檢查與溝通，來評估何種老花矯視是否適合你。`,
