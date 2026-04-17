@@ -3183,6 +3183,13 @@ module.exports = {
         "美国爱尔康公司Constellation Vision System 微创玻璃体超声乳化一体机能协助进行微创视网膜手术。作为眼科的尖端手术，其创伤小，安全性高，并且可同时进行白内障、视网膜联合手术，减少手术次数，避免多次手术对眼睛结构的损伤，伤口也不需要缝合，复原速度大为缩短。",
       source: "资料及图片来源：Alcon",
     },
+    content26: {
+      name1: "ZEISS PRESBYOND",
+      name2: "500Hz MEL90",
+      remark:
+        "Zeiss PRESBYOND 500Hz MEL90 結合 MEL 90 準分子雷射與 PRESBYOND Laser Blended Vision 軟體，能提供雙眼切換視力矯正，讓患者在近距離、中距離及遠距離皆能清晰視物。系統採用 500Hz 高頻雷射，可在約 1.3 秒內完成 1D 近視的矯正，同時配備 1050Hz 眼球追蹤技術，大幅提升手術精準度與安全性，達成理想的矯視效果。",
+      source: "資料及圖片來源：Carl Zeiss",
+    },
   },
   appointFrom_ifram: {
     title:
