@@ -104,7 +104,7 @@ export default {
       equipmentList: [
         {
           id: 26,
-          img: "https://statichk.cmermedical.com/smile/equipment/equipment-026-v1.webp",
+          img: "https://statichk.cmermedical.com/smile/equipment/equipment-026-v2.webp",
           name: [this.$t("medical_equipment.content26.name1"), this.$t("medical_equipment.content26.name2")],
           remark: this.$t("medical_equipment.content26.remark"),
           source: this.$t("medical_equipment.content26.source"),
