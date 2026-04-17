@@ -2564,10 +2564,18 @@ i {
           <div class="CorrectionProgram-Box-hide-item-container">
             <div class="CorrectionProgram-Box-hide-item">
               <div class="CorrectionProgram-Box-hide-item-top">
-                <img
-                  src="https://statichk.cmermedical.com/cmermedical/image/20260317/image21.webp"
-                  alt=""
-                />
+                <picture>
+                  <source
+                    srcset="
+                      https://statichk.cmermedical.com/smile/clear-visionV2/clear-solution-01-v1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="https://statichk.cmermedical.com/smile/clear-visionV2/clear-solution-01-v1.jpg"
+                    alt="視覺融合老花激光手術設備"
+                  />
+                </picture>
                 <div class="CorrectionProgram-Box-hide-item-top-text">
                   <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
                   <p>• 39歲以上有老花</p>
@@ -2613,7 +2621,7 @@ i {
                 >
                   坊間稱之為<span>人工晶體置換術</span>。透過更換人工晶體，致力為客人視野帶來煥然一新的感覺，
                   <span>一次過解決近視、遠視、散光、老花</span
-                  >等問題。希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；專業諮詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
+                  >等問題。希瑪微笑矯視中心針對客人眼睛實際狀況、職業、生活需要等因素，度身訂造矯視方案；諮詢過後，眼科專科醫生按客人視力需求選取及植入合適之人工晶體，以替代原有已老化和混濁的晶體。
                 </p>
               </div>
             </div>
@@ -2626,7 +2634,7 @@ i {
                 <div class="CorrectionProgram-Box-hide-item-top-text">
                   <span class="CorrectionProgram-Box-hide-item-sub">適合</span>
                   <p>• 39歲或以上有老花</p>
-                  <p>• 有近視問題</p>
+                  <p>• 1,000度以下近視</p>
                   <p>• 未有白內障</p>
                 </div>
               </div>

@@ -2,7 +2,8 @@
   <div class="main_banner">
     <div class="banner lbv-banner">
       <div class="lbv-banner-container">
-        <h3 class="lbv-banner-title">{{ currentBannerTitle }}</h3>
+        <h2 class="text-xl lg:text-3xl font-black lg:font-bold text-[#4570B6]">第一視角預覽</h2>
+        <h3 class="lbv-banner-title text-[#4570B6] text-xl lg:text-3xl font-black md:mb-10 lg:mb-[68px]">{{ currentBannerTitle }}</h3>
         <div
           class="swiper gallery-top lbv-swiper"
           v-swiper:lbvBannerSwiper="swiperOptionTop"
@@ -15,7 +16,7 @@
             <div class="swiper-slide lbv-slide">
               <div class="lbv-slide-content">
                 <div class="lbv-slide-image">
-                  <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/banner2.webp" alt="室外场景" class="lbv-background-image">
+                  <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/banner2.webp" alt="室外場景" class="lbv-background-image">
                  
                 </div>
                
@@ -26,7 +27,7 @@
              <div class="swiper-slide lbv-slide">
               <div class="lbv-slide-content">
                 <div class="lbv-slide-image">
-                  <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/banner3.webp" alt="室内场景" class="lbv-background-image">
+                  <img src="https://statichk.cmermedical.com/cmermedical/image/20260317/banner3.webp" alt="室內場景" class="lbv-background-image">
                  
                 </div>
                
@@ -133,7 +134,7 @@ export default {
       link: "https://api.whatsapp.com/send/?phone=85260610511&amp;text=我想了解(W-Xmas01) Smile Pro矯視聖誕優惠 将连接中的&amp; 用js 替换为 &    ",
       num: 5,
       currentBannerTitle: '室外',
-      bannerTitles: ['室外', '室内'],
+      bannerTitles: ['室外', '室內'],
     };
   },
   filters: {
@@ -252,12 +253,12 @@ export default {
   text-align: center;
 }
 
-.lbv-banner-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 60px;
-}
+// .lbv-banner-title {
+//   font-size: 20px;
+//   font-weight: 900;
+//   color: #4570B6;
+//   margin-bottom: 60px;
+// }
 
 .lbv-swiper {
   position: relative;
@@ -385,22 +386,19 @@ export default {
 // }
 
 // 响应式设计
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .lbv-swiper {
     max-width: 90%;
   }
-  
-  
-  
   .lbv-phone-image {
     width: 100px;
     bottom: -15px;
   }
   
-  .lbv-banner-title {
-    font-size: 20px;
-    margin-bottom: 0px;
-  }
+  // .lbv-banner-title {
+  //   font-size: 20px;
+  //   margin-bottom: 0px;
+  // }
   
   .lbv-slide-title {
     font-size: 16px;
