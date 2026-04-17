@@ -3155,13 +3155,13 @@ module.exports = {
     content20: {
       remark:
         "角膜膠原交聯術(Corneal Collagen Cross-Linking) 一般應用在臨床錐形角膜或可疑圓錐角膜，亦可以應用在接受激光矯視的人士。 角膜局部予核黃素（Riboflavin；即維生素B2，用於增加能量吸收並釋出活性氧），再經本儀器發出紫外線（UVA）照射，令角膜組織釋放一些粒子，使纖維中的膠原蛋白緊扣一起，因此而變得堅韌穩定，鞏固角膜基質強度，減少術後角膜變形的可能性,深度近視或散光的情況下可能減少度數反彈的機會和程度。",
-      source: "資料及圖片來源：Peschke   ",
+      source: "資料及圖片來源：Peschke",
     },
     content21: {
       name1: "激光治療儀",
       remark:
         "Tango ReflexEllex 的新型 Tango Reflex™ 激光治療儀結合了多種治療平臺 — — 可進行青光眼選擇性小樑整型激光(Selective Laser Trabeculoplasty, SLT) 治療，YAG後囊激光切開治療，以及微創玻璃體消融術。",
-      source: "資料及圖片來源：Ellex ",
+      source: "資料及圖片來源：Ellex",
     },
     content22: {
       name1: "飛秒激光白內障矯視儀",
@@ -3187,6 +3187,13 @@ module.exports = {
       remark:
         "美國愛爾康公司Constellation Vision System 微創玻璃體超聲乳化一體機能協助進行微創視網膜手術。作為眼科的尖端手術，其創傷小，安全性高，並且可同時進行白內障、視網膜聯合手術，減少手術次數，避免多次手術對眼睛結構的損傷，傷口也不需要縫合，復原速度大為縮短。",
       source: "資料及圖片來源：Alcon",
+    },
+    content26: {
+      name1: "ZEISS PRESBYOND",
+      name2: "500Hz MEL90",
+      remark:
+        "Zeiss PRESBYOND 500Hz MEL90 結合 MEL 90 準分子雷射與 PRESBYOND Laser Blended Vision 軟體，能提供雙眼切換視力矯正，讓患者在近距離、中距離及遠距離皆能清晰視物。系統採用 500Hz 高頻雷射，可在約 1.3 秒內完成 1D 近視的矯正，同時配備 1050Hz 眼球追蹤技術，大幅提升手術精準度與安全性，達成理想的矯視效果。",
+      source: "資料及圖片來源：Carl Zeiss",
     },
   },
   appointFrom_ifram: {

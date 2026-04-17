@@ -62,9 +62,7 @@
             近視/<br class="d-lg-none" />遠視/散光
           </td>
           <td>
-            近視1,800 度<br class="d-lg-none" />以下、<br
-              class="hidden md:block"
-            />可<br class="d-lg-none" />同時矯正老花
+            主要針對矯正<br />1,000度以下<br class="block sm:hidden" />近視
           </td>
         </tr>
         <tr>

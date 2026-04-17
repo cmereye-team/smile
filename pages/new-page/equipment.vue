@@ -14,7 +14,9 @@
       <div class="equipment-items" v-if="!isMobile">
         <div v-for="(item, index) in equipmentList" :key="item.id">
           <div>
-            <div><img :src="item.img" :alt="item.name[0]" /></div>
+            <div>
+              <img :src="item.img" :alt="item.name[0]" />
+            </div>
             <div class="equipment-name">
               <div
                 @click="showRemark(index)"
@@ -23,6 +25,7 @@
                 ]"
               >
                 <svg
+                  class="cursor-pointer"
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="49"
@@ -100,8 +103,16 @@ export default {
       // equipmentList: Equipment,
       equipmentList: [
         {
+          id: 26,
+          img: "https://statichk.cmermedical.com/smile/equipment/equipment-026-v1.webp",
+          name: [this.$t("medical_equipment.content26.name1"), this.$t("medical_equipment.content26.name2")],
+          remark: this.$t("medical_equipment.content26.remark"),
+          source: this.$t("medical_equipment.content26.source"),
+          isShow: false,
+        },
+        {
           id: 1,
-          img: "https://statichk.cmermedical.com/smile/medical-equipment/590ceebe95a7c289.jpg",
+          img: "https://statichk.cmermedical.com/smile/equipment/equipment-001-v2.webp",
           name: ["ZEISS VISUMAX 800", "SMILE®pro"],
           remark: this.$t("medical_equipment.content1.remark"),
           source: this.$t("medical_equipment.content1.source"),
@@ -366,14 +377,19 @@ export default {
     };
   },
   methods: {
+    /**
+     * @description: 切换显示图片或介绍
+     * @param {number} index 索引值
+     */
     showRemark(index) {
-      this.equipmentList.forEach((element) => {
-        if (element.id == index + 1) {
-          element.isShow = !element.isShow;
-        } else {
-          element.isShow = false;
-        }
-      });
+      this.equipmentList[index].isShow = !this.equipmentList[index].isShow
+      // this.equipmentList.forEach((element) => {
+      //   if (element.id == index + 1) {
+      //     element.isShow = !element.isShow;
+      //   } else {
+      //     element.isShow = false;
+      //   }
+      // });
     },
   },
   mounted() {
