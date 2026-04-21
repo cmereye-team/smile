@@ -29,7 +29,7 @@ module.exports = {
       aboutSmileChild_2: "医生团队",
       aboutSmileChild_3: "中心设备",
       orthopedicServicesChild_1: "SMILE 微笑激光矫视",
-      orthopedicServicesChild_2: "Presbyopia Treatments 老花矯視",
+      orthopedicServicesChild_2: "老花矫视",
       orthopedicServicesChild_3: "LASIK 激光矫视",
       orthopedicServicesChild_4: "ICL植入式隐形眼镜",
       orthopedicServicesChild_5: "SMILE Pro微笑激光矫视",
@@ -39,7 +39,7 @@ module.exports = {
       commonProblemChild_1: "SMILE Pro/SMILE微笑激光矫视",
       commonProblemChild_2: "LASIK 激光矫视",
       commonProblemChild_3: "ICL植入式隐形眼镜",
-      commonProblemChild_4: "CLEAR-Vision",
+      commonProblemChild_4: "老花矫视",
       ophthalmicConsultationChild_1: "个案分享及矫视信息影片",
       ophthalmicConsultationChild_2: "媒体报导",
       ophthalmicConsultationChild_3: "婚展专区",
@@ -3193,7 +3193,7 @@ module.exports = {
   },
   appointFrom_ifram: {
     title:
-      "SMILE 微笑激光矫视，SMILE PRO 微笑激光矫视，CMER CLEAR-VISION 老花讲座！",
+      "SMILE Pro 微笑激光矫视、ICL植入式隐形眼镜、SMILE微笑激光矫视、老花矫视讲座",
     p1: "中环诊所：中环毕打街1-3号中建大厦1512室",
     p2: "旺角诊所(星期一至五)：旺角弥敦道625及639号雅兰中心一期702室",
     p3: "旺角诊所(星期六)：旺角弥敦道625及639号雅兰中心一期1208室",
@@ -3201,8 +3201,8 @@ module.exports = {
   },
   appointFroms: {
     title: "讲座",
-   title1: "SMILE Pro 微笑激光矫视、ICL植入式隐形眼镜、",
-    title2: "SMILE 微笑激光矫视、CMER CLEAR-VISION 老花讲座",
+    title1: "SMILE Pro 微笑激光矫视、ICL植入式隐形眼镜、",
+    title2: "SMILE 微笑激光矫视、老花矫视讲座",
     p1: "中环诊所：中环毕打街1-3号中建大厦1512室",
     p2: "旺角诊所：旺角弥敦道625及639号雅兰中心一期1725B室",
   
