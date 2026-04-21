@@ -1,23 +1,19 @@
 <template>
   <div class="preaching-seat" v-loading.fullscreen.lock="fullscreenLoading">
-
     <!-- <Head /> -->
 
-     <HeadV2 />
+    <HeadV2 />
 
-
-    
-
-  <div class="preaching-seat-banner">
+    <div class="preaching-seat-banner">
       <Banner class="banner-box">
-      <template #banner>
-        <div class="banner-img banner-text-default">
-          <!-- <p>{{ $t("appointFroms.title") }}</p>
+        <template #banner>
+          <div class="banner-img banner-text-default">
+            <!-- <p>{{ $t("appointFroms.title") }}</p>
           <p>Lecture</p> -->
-        </div>
-      </template>
-    </Banner>
-  </div>
+          </div>
+        </template>
+      </Banner>
+    </div>
     <div class="lecture-box">
       <div class="lecture-title">
         <div>
@@ -88,22 +84,41 @@
               </p> -->
             </div>
             <div class="lecture-form">
-
-              <el-form ref="form" class="form0" :model="form" label-width="150px" size="medium">
+              <el-form
+                ref="form"
+                class="form0"
+                :model="form"
+                label-width="150px"
+                size="medium"
+              >
                 <div class="lecture-form__service-wrap">
                   <el-form-item :label="$t('appointFroms.service')">
-                    <el-select v-model="serviceVal" :placeholder="$t('appointFroms.sectionPlace')"
-                      @change="handleServiceChange" clearable>
+                    <el-select
+                      v-model="serviceVal"
+                      :placeholder="$t('appointFroms.sectionPlace')"
+                      :popper-append-to-body="true"
+                      @change="handleServiceChange"
+                      clearable
+                    >
                       <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
                       value="smilerProTsui"
                     ></el-option> -->
                       <!-- Smile Pro 講座-旺角 -->
-                      <el-option :label="$t('appointFroms.content0.title1')" value="1"></el-option>
+                      <el-option
+                        :label="$t('appointFroms.content0.title1')"
+                        value="1"
+                      ></el-option>
                       <!-- Smile Pro 講座-中環 -->
-                      <el-option :label="$t('appointFroms.content0.title2')" value="2"></el-option>
+                      <el-option
+                        :label="$t('appointFroms.content0.title2')"
+                        value="2"
+                      ></el-option>
                       <!-- Smile講座-中環 -->
-                      <el-option :label="$t('appointFroms.content0.title3')" value="3"></el-option>
+                      <el-option
+                        :label="$t('appointFroms.content0.title3')"
+                        value="3"
+                      ></el-option>
                       <!-- <el-option :label="$t('appointFroms.content1.title3')" value="smileMongKok"></el-option> -->
                       <!-- <el-option
                       label="老花講座-中環"
@@ -122,23 +137,34 @@
                     </el-select>
                   </el-form-item>
                   <el-form-item :label="$t('appointFroms.title4')">
-                    <el-select v-model="addressVal" :placeholder="$t('appointFroms.sectionPlace')"
-                      @change="changeLocation" clearable>
+                    <el-select
+                      v-model="addressVal"
+                      :placeholder="$t('appointFroms.sectionPlace')"
+                      :popper-append-to-body="true"
+                      @change="changeLocation"
+                      clearable
+                    >
                       <!-- <el-option
                       label="Smile Pro 講座-尖沙咀"
                       value="smilerProTsui"
                     ></el-option> -->
                       <!-- Smile Pro 講座-旺角 -->
-                      <el-option :label="$t('appointFroms.content1.title1')" value="1"
-                        v-if="serviceVal != '2'"></el-option>
+                      <el-option
+                        :label="$t('appointFroms.content1.title1')"
+                        value="1"
+                        v-if="serviceVal != '2'"
+                      ></el-option>
                       <!-- Smile Pro 講座-中環 -->
                       <!-- <el-option
                       :label="$t('appointFroms.content1.title5')"
                       value="smileProCentral"
                     ></el-option> -->
                       <!-- Smile講座-中環 -->
-                      <el-option :label="$t('appointFroms.content1.title2')" value="2"
-                        v-if="serviceVal != '3'"></el-option>
+                      <el-option
+                        :label="$t('appointFroms.content1.title2')"
+                        value="2"
+                        v-if="serviceVal != '3'"
+                      ></el-option>
                       <!-- <el-option :label="$t('appointFroms.content1.title3')" value="smileMongKok"></el-option> -->
                       <!-- <el-option
                       label="老花講座-中環"
@@ -157,11 +183,23 @@
                     </el-select>
                   </el-form-item>
                 </div>
-                <el-form-item :label="$t('appointFroms.content1.date')" v-if="form.address !== ''">
-                  <el-date-picker v-model="form.subdate" type="date" ref="subdate" popper-class="date-picker-class"
-                    :picker-options="startPickerOptions" :placeholder="$t('appointFroms.content1.date')"
-                    format=" MM 月 dd 日 yyyy 年" value-format="timestamp" @focus="focusSubDate" clearable
-                    :editable="false">
+                <el-form-item
+                  :label="$t('appointFroms.content1.date')"
+                  v-if="form.address !== ''"
+                >
+                  <el-date-picker
+                    v-model="form.subdate"
+                    type="date"
+                    ref="subdate"
+                    popper-class="date-picker-class"
+                    :picker-options="startPickerOptions"
+                    :placeholder="$t('appointFroms.content1.date')"
+                    format=" MM 月 dd 日 yyyy 年"
+                    value-format="timestamp"
+                    @focus="focusSubDate"
+                    clearable
+                    :editable="false"
+                  >
                   </el-date-picker>
                 </el-form-item>
               </el-form>
@@ -171,14 +209,33 @@
                 <span>{{ getName(form.address) }}</span>
                 {{ $t("appointFroms.content2.p2") }}
               </p>
-              <el-form ref="form" :model="form1" class="form1" label-width="180px" v-if="form.address && form.subdate">
+              <el-form
+                ref="form"
+                :model="form1"
+                class="form1"
+                label-width="180px"
+                v-if="form.address && form.subdate"
+              >
                 <el-form-item :label="$t('appointFroms.content2.local')">
-                  <el-select v-model="form1.numberSeat" placeholder="0" clearable>
-                    <el-option v-for="(option, i) in 10" :label="option" :value="option" :key="i"></el-option>
+                  <el-select
+                    v-model="form1.numberSeat"
+                    placeholder="0"
+                    clearable
+                  >
+                    <el-option
+                      v-for="(option, i) in 10"
+                      :label="option"
+                      :value="option"
+                      :key="i"
+                    ></el-option>
                   </el-select>
                 </el-form-item>
                 <el-form-item label="姓名" required>
-                  <el-input :placeholder="$t('appointFroms.content3.name')" v-model="form1.name" clearable></el-input>
+                  <el-input
+                    :placeholder="$t('appointFroms.content3.name')"
+                    v-model="form1.name"
+                    clearable
+                  ></el-input>
                 </el-form-item>
                 <el-form-item label="性別">
                   <el-select v-model="form1.sex" placeholder="---" clearable>
@@ -188,35 +245,94 @@
                   </el-select>
                 </el-form-item>
                 <el-form-item :label="$t('appointFroms.content3.age')">
-                  <el-select v-model="form1.age" :placeholder="$t('appointFroms.content3.choose')" clearable>
-                    <el-option :label="$t('appointFroms.content3.age1')" value="17歲或以下"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age2')" value="18-25歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age3')" value="26-35歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age4')" value="36-45歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age5')" value="46-55歲"></el-option>
-                    <el-option :label="$t('appointFroms.content3.age6')" value="56歲或以上"></el-option>
+                  <el-select
+                    v-model="form1.age"
+                    :placeholder="$t('appointFroms.content3.choose')"
+                    clearable
+                  >
+                    <el-option
+                      :label="$t('appointFroms.content3.age1')"
+                      value="17歲或以下"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age2')"
+                      value="18-25歲"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age3')"
+                      value="26-35歲"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age4')"
+                      value="36-45歲"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age5')"
+                      value="46-55歲"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content3.age6')"
+                      value="56歲或以上"
+                    ></el-option>
                   </el-select>
                 </el-form-item>
-                <el-form-item :label="$t('appointFroms.content3.phone')" required>
-                  <el-input :placeholder="$t('appointFroms.content3.phoneText')" type="number"
-                    v-model.number="form1.telphoneNumber" number clearable></el-input>
+                <el-form-item
+                  :label="$t('appointFroms.content3.phone')"
+                  required
+                >
+                  <el-input
+                    :placeholder="$t('appointFroms.content3.phoneText')"
+                    type="number"
+                    v-model.number="form1.telphoneNumber"
+                    number
+                    clearable
+                  ></el-input>
                 </el-form-item>
                 <el-form-item :label="$t('appointFroms.content3.email')">
-                  <el-input :placeholder="$t('appointFroms.content3.phoneText')" type="email" v-model="form1.email"
-                    clearable></el-input>
+                  <el-input
+                    :placeholder="$t('appointFroms.content3.phoneText')"
+                    type="email"
+                    v-model="form1.email"
+                    clearable
+                  ></el-input>
                 </el-form-item>
                 <el-form-item :label="$t('appointFroms.content3.soure')">
-                  <el-select v-model="form1.source" :placeholder="$t('appointFroms.content3.choose')" clearable>
-                    <el-option :label="$t('appointFroms.content4.p1')" value="Google搜尋引擎"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p2')" value="Yahoo搜尋引擎"></el-option>
+                  <el-select
+                    v-model="form1.source"
+                    :placeholder="$t('appointFroms.content3.choose')"
+                    clearable
+                  >
+                    <el-option
+                      :label="$t('appointFroms.content4.p1')"
+                      value="Google搜尋引擎"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p2')"
+                      value="Yahoo搜尋引擎"
+                    ></el-option>
                     <el-option label="Facebook" value="Facebook"></el-option>
                     <el-option label="Instagram" value="Instagram"></el-option>
                     <el-option label="YouTube" value="YouTube"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p3')" value="討論區"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p4')" value="報章"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p5')" value="診所單張"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p6')" value="親友介紹"></el-option>
-                    <el-option :label="$t('appointFroms.content4.p7')" value="員工介紹"></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p3')"
+                      value="討論區"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p4')"
+                      value="報章"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p5')"
+                      value="診所單張"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p6')"
+                      value="親友介紹"
+                    ></el-option>
+                    <el-option
+                      :label="$t('appointFroms.content4.p7')"
+                      value="員工介紹"
+                    ></el-option>
                     <el-option label="其他" value="其他"></el-option>
                   </el-select>
                 </el-form-item>
@@ -233,91 +349,157 @@
 
       <h2 class="lectureCalendar">{{ $t("appointFroms.LectureCalendar") }}</h2>
       <div class="lecture-image">
-        <!-- <picture>
-          <source srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-1.webp
-            " type="image/webp" />
-          <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-1.jpg" alt="希瑪眼科三月中環預約日歷"
-            title="希瑪眼科三月中環預約日歷" />
-        </picture> -->
-        <!-- <picture>
-          <source srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-02.webp
-            " type="image/webp" />
-          <img src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2603-02.jpg" alt="希瑪眼科三月旺角預約日歷"
-            title="希瑪眼科三月旺角預約日歷" />
-        </picture> -->
-
         <picture>
-          <source srcset="
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-01-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-01-v1.jpg"
+            alt="希瑪眼科五月中環預約日歷"
+            title="希瑪眼科五月中環預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-02-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-02-v1.jpg"
+            alt="希瑪眼科五月旺角預約日歷"
+            title="希瑪眼科五月旺角預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
               https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp
-            " type="image/webp" />
-          <img src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp"
-            alt="希瑪眼科三月旺角預約日歷" title="希瑪眼科四月中環預約日歷" />
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp"
+            alt="希瑪眼科四月旺角預約日歷"
+            title="希瑪眼科四月中環預約日歷"
+          />
         </picture>
-
         <picture>
-          <source srcset="
+          <source
+            srcset="
               https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp
-            " type="image/webp" />
-          <img src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp"
-            alt="希瑪眼科三月旺角預約日歷" title="希瑪眼科四月旺角預約日歷" />
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp"
+            alt="希瑪眼科四月旺角預約日歷"
+            title="希瑪眼科四月旺角預約日歷"
+          />
         </picture>
-
-
       </div>
     </div>
     <!-- <businessHours /> -->
     <div v-show="applySuccess" class="applyDialog">
-      <div class="applyDialog-wrap rounded-[1.78px] md:rounded-[5px] w-[90%] md:w-auto">
+      <div
+        class="applyDialog-wrap rounded-[1.78px] md:rounded-[5px] w-[90%] md:w-auto"
+      >
         <div class="applyDialog-person">
           <picture>
-            <source srcset="
+            <source
+              srcset="
                 https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.avif 1x,
                 https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.avif 2x
-              " type="image/avif" />
-            <source srcset="
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
                 https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.webp 1x,
                 https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.webp 2x
-              " type="image/webp" />
+              "
+              type="image/webp"
+            />
             <img
               src="https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@1x.jpg 1x,https://statichk.cmermedical.com/smile/appointform/appointform-person-pc@2x.jpg 2x"
-              class="h-full object-cover" />
+              class="h-full object-cover"
+            />
           </picture>
         </div>
-        <div class="applyDialog-main relative text-center py-4 md:px-12 flex justify-center items-center">
+        <div
+          class="applyDialog-main relative text-center py-4 md:px-12 flex justify-center items-center"
+        >
           <div>
-            <div class="applyDialog-main-icon mb-2 md:mb-8 w-[22px] md:w-[58px] mx-auto">
-              <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58"
-                fill="none">
+            <div
+              class="applyDialog-main-icon mb-2 md:mb-8 w-[22px] md:w-[58px] mx-auto"
+            >
+              <svg
+                class="w-full h-full"
+                xmlns="http://www.w3.org/2000/svg"
+                width="58"
+                height="58"
+                viewBox="0 0 58 58"
+                fill="none"
+              >
                 <path
                   d="M0.000672084 28.9966C-0.103591 13.0757 13.0993 -0.00452954 29.0086 1.17666e-06C44.8567 0.0045319 58.0165 13.0553 58.0029 29.0329C57.9893 44.9289 44.8748 58.0566 28.8885 58C13.0064 57.9434 -0.108125 44.8564 0.000672084 28.9966ZM45.9152 20.7801C45.8744 20.3588 45.6273 20.053 45.344 19.7698C44.145 18.5692 42.9482 17.3685 41.7469 16.1724C40.8675 15.2957 40.3937 15.298 39.5143 16.1792C34.5572 21.1358 29.5957 26.0879 24.6499 31.0558C24.2782 31.4296 24.072 31.4183 23.7116 31.0513C21.93 29.2345 20.1235 27.4448 18.3216 25.6484C17.5917 24.9212 17.0818 24.9258 16.3474 25.6575C15.1053 26.8944 13.8655 28.1335 12.6302 29.3749C11.8618 30.1451 11.8686 30.5959 12.646 31.373C16.1343 34.8661 19.6226 38.3593 23.1132 41.8525C23.9949 42.736 24.3621 42.7337 25.2642 41.8321C29.9832 37.1179 34.7023 32.4037 39.4214 27.6872C41.4205 25.6892 43.4196 23.6911 45.4211 21.6931C45.6794 21.4348 45.9129 21.1698 45.922 20.7779L45.9152 20.7801Z"
-                  fill="#4570B6" />
+                  fill="#4570B6"
+                />
               </svg>
             </div>
             <div class="applyDialog-main-text flex flex-col gap-2 m-2">
               <p
-                class="text-2xl md:text-[40px] font-black leading-[10.654px] md:leading-[30px] text-primary font-tc tracking-[1.421px] md:tracking-[1px] mb-[10.66px] md:mb-[31px]">
+                class="text-2xl md:text-[40px] font-black leading-[10.654px] md:leading-[30px] text-primary font-tc tracking-[1.421px] md:tracking-[1px] mb-[10.66px] md:mb-[31px]"
+              >
                 報名成功
               </p>
               <div
-                class="text-base md:text-xl text-text font-hk font-light leading-[12.43px] md:leading-[35px] tracking-[1.421px] md:tracking-[4px] mb-[12.43px] md:mb-9 whitespace-nowrap flex flex-col gap-2">
+                class="text-base md:text-xl text-text font-hk font-light leading-[12.43px] md:leading-[35px] tracking-[1.421px] md:tracking-[4px] mb-[12.43px] md:mb-9 whitespace-nowrap flex flex-col gap-2"
+              >
                 <p>感謝您的填寫。</p>
                 <p>我們已收到您的表單。</p>
-                <p class="font-bold text-xs md:text-xl">真人客戶服務員將在辦公時間回覆您！</p>
+                <p class="font-bold text-xs md:text-xl">
+                  真人客戶服務員將在辦公時間回覆您！
+                </p>
               </div>
             </div>
-            <div class="applyDialog-main-button flex justify-center w-[106.186px] md:w-[291px] mx-auto bg-primary py-1">
-              <nuxt-link to="/"
-                class="text-justify text-white font-tc fong-bold text-xl md:text-4xl leading-[22.374px] md:leading-[63px] tracking-[0.639px] md:tracking-[1.8px]">返回主頁</nuxt-link>
+            <div
+              class="applyDialog-main-button flex justify-center w-[106.186px] md:w-[291px] mx-auto bg-primary py-1"
+            >
+              <nuxt-link
+                to="/"
+                class="text-justify text-white font-tc fong-bold text-xl md:text-4xl leading-[22.374px] md:leading-[63px] tracking-[0.639px] md:tracking-[1.8px]"
+                >返回主頁</nuxt-link
+              >
             </div>
             <div
               class="applyDialog-close absolute right-[10px] top-[10px] md:right-[28px] md:top-[30px] w-[8.5px] md:w-6"
-              @click="applySuccess = false">
-              <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
-                fill="none">
-                <path d="M2 25.9468L25.2083 2.73853" stroke="#4570B6" stroke-width="4" stroke-linecap="round" />
-                <path d="M26 25.9468L2.79168 2.73853" stroke="#4570B6" stroke-width="4" stroke-linecap="round" />
+              @click="applySuccess = false"
+            >
+              <svg
+                class="w-full h-full"
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+              >
+                <path
+                  d="M2 25.9468L25.2083 2.73853"
+                  stroke="#4570B6"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M26 25.9468L2.79168 2.73853"
+                  stroke="#4570B6"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
               </svg>
             </div>
           </div>
@@ -335,7 +517,7 @@
       </div>
     </div> -->
     <!-- <Footer /> -->
-     <FooterV2 />
+    <FooterV2 />
 
     <FooterMobile />
   </div>
@@ -533,7 +715,6 @@ export default {
       console.log(this.serviceVal, this.addressVal, "changeLocation");
       // 当 serviceVal 和 addressVal 都不为空时，拼接它们并赋值给 form1.address
 
-
       if (this.serviceVal && this.addressVal) {
         // Smile Pro 講座-旺角
         if (this.serviceVal == 1 && this.addressVal == 1) {
@@ -550,16 +731,11 @@ export default {
         } else {
           this.form.address = "";
         }
-
-
-
-
       } else {
         // 当其中一个值为空时，清空 form1.address
         this.form.address = "";
       }
       console.log(this.form1.address, "递四方速递");
-
 
       if (!this.form.address) {
         console.warn("changeLocation: address is empty");
@@ -606,11 +782,13 @@ export default {
           "2026-03-11",
           "2026-03-18",
           "2026-03-25",
-
           "2026-04-01",
           "2026-04-15",
           "2026-04-29",
-
+          "2026-05-06",
+          "2026-05-13",
+          "2026-05-20",
+          "2026-05-27",
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -634,11 +812,14 @@ export default {
           "2026-03-14",
           "2026-03-21",
           "2026-03-28",
-
           "2026-04-11",
           "2026-04-18",
           "2026-04-25",
-
+          "2026-05-02",
+          "2026-05-09",
+          "2026-05-16",
+          "2026-05-23",
+          "2026-05-30",
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -700,11 +881,10 @@ export default {
           "2026-03-24",
           "2026-03-28",
           "2026-03-30",
-
           "2026-04-18",
           "2026-04-21",
           "2026-04-27",
-
+          "2026-05-16",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -740,10 +920,14 @@ export default {
           "2026-03-17",
           "2026-03-23",
           "2026-03-31",
-
           "2026-04-11",
           "2026-04-14",
           "2026-04-20",
+          "2026-05-05",
+          "2026-05-11",
+          "2026-05-18",
+          "2026-05-23",
+          "2026-05-26",
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -826,6 +1010,7 @@ export default {
             周四: "6:30 下午",
             "2025年10月6日": "1:30 下午",
             "2026年4月11日": "2:30 下午",
+            "2026年5月23日": "2:30 下午",
           },
         },
       };
@@ -857,8 +1042,9 @@ export default {
 
       _dataList.address = this.getName(_dataList.address);
       _dataList.sex = _dataList.sex == "0" ? "女" : "男";
-      _dataList.subdate = `${this.getYearMonthDay(_dataList.subdate)} ${this.morningOrAfternoon
-        }`;
+      _dataList.subdate = `${this.getYearMonthDay(_dataList.subdate)} ${
+        this.morningOrAfternoon
+      }`;
       window.localStorage.setItem("form", JSON.stringify(_dataList));
       for (const key in _dataList) {
         dataList.append(key, _dataList[key]);
@@ -989,35 +1175,22 @@ export default {
 </script>
 
 <style lang="scss">
+.el-select-dropdown__wrap {
+  padding-bottom: 8px;
+}
 .el-select-dropdown__item {
-
   height: 50px;
   line-height: 50px;
-
 }
-
-.el-select-dropdown__list {
-  padding: 0;
-
-  // border-left: 2px solid #4570b6;
-  // border-right: 2px solid #4570b6;
-  // border-bottom: 2px solid #4570b6;
-  // border-top: 2px solid white;
-  // z-index: 9;
-  // box-shadow: none;
-}
-
 @media screen and (min-width: 768px) {
-  
   .preaching-seat {
-    .banner-box{
+    .banner-box {
       margin-top: 166px !important;
     }
     .header-top a:nth-child(2) {
       display: none !important;
     }
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -1029,7 +1202,6 @@ export default {
     margin-bottom: 0 !important;
     overflow: auto;
   }
-
 }
 
 // .el-select-dropdown{
@@ -1043,21 +1215,17 @@ export default {
 //   border-bottom: 2px solid transparent;
 // }
 
-
-
-
-
 .date-picker-class {
   .el-picker-panel__content {
     .el-date-table {
       .el-date-table__row {
         .available {
-          &>div {
+          & > div {
             background: #4570b6;
             color: #fff;
           }
 
-          &>div:hover {
+          & > div:hover {
             background: #b6e2eb;
             color: #fff;
             text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
@@ -1065,12 +1233,12 @@ export default {
         }
 
         td {
-          &>div {
+          & > div {
             background: #4570b6;
             color: #fff;
           }
 
-          &>div:hover {
+          & > div:hover {
             background: #b6e2eb;
             color: #fff;
             text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
@@ -1085,12 +1253,12 @@ export default {
       }
 
       .disabled {
-        &>div {
+        & > div {
           background-color: #f5f7fa !important;
           color: #c0c4cc !important;
         }
 
-        &>div:hover {
+        & > div:hover {
           background-color: #f5f7fa !important;
           color: #c0c4cc !important;
         }
@@ -1153,20 +1321,20 @@ export default {
   }
 
   &-main {
-    background: url("https://statichk.cmermedical.com/smile/appointform/appointform-bg-success.svg") no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/appointform/appointform-bg-success.svg")
+      no-repeat;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .head-bg{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #ffffff;
-  z-index: 102;
-
-}
+  .head-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 102;
+  }
   .preaching-seat-banner {
     // margin-top: 166px;
   }
@@ -1194,7 +1362,7 @@ export default {
     justify-content: center;
     align-items: center;
 
-    &>div {
+    & > div {
       border-radius: 15px;
       border: #4570b6 1px solid;
       box-shadow: 0px 0px 8px 6px #d5d5d5f7;
@@ -1206,7 +1374,7 @@ export default {
       width: 50%;
       position: relative;
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         padding: 0 6.5vw 50px 6.5vw;
         margin-top: 60px;
         display: flex;
@@ -1260,15 +1428,14 @@ export default {
     max-width: 1270px;
     display: flex;
     justify-content: center;
-    
-    
   }
 
   .banner-img {
     // background: url("https://static.cmereye.com/imgs/2024/04/c26ba48972f2997c.png")
     //   no-repeat;
-   // background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIvWkGoRaeS3NAunNB8SwFhjUFB9L5MUJgiE3zXS6AA_1988_745.webp") no-repeat;
-    background: url("https://statichk.cmermedical.com/cmermedical/image/20260330/banner-pc.webp") no-repeat;
+    // background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIvWkGoRaeS3NAunNB8SwFhjUFB9L5MUJgiE3zXS6AA_1988_745.webp") no-repeat;
+    background: url("https://statichk.cmermedical.com/cmermedical/image/20260330/banner-pc.webp")
+      no-repeat;
     background-size: cover;
     // height: 32.08vw;
     width: 100%;
@@ -1285,7 +1452,7 @@ export default {
     padding-left: 70px;
     margin-bottom: 30px;
 
-    &>p:nth-child(1) {
+    & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
       font-size: 30px;
@@ -1297,7 +1464,7 @@ export default {
       display: none;
     }
 
-    &>p:nth-child(2) {
+    & > p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
       font-size: 15px;
@@ -1323,13 +1490,13 @@ export default {
 
   .lecture-title {
     // background: url("https://static.cmereye.com/imgs/2024/04/03634579600959fb.png") no-repeat;
-    background: #F6FAFD;
+    background: #f6fafd;
     background-size: 100% 100%;
     width: 100vw;
     height: auto;
     padding: 0 0 85px;
 
-    &>div {
+    & > div {
       max-width: 1270px;
       margin: 0 auto;
       display: flex;
@@ -1339,7 +1506,7 @@ export default {
   }
 
   .lectureCalendar {
-    color: #4570B6;
+    color: #4570b6;
     font-family: "Noto Sans TC";
     font-size: 30px;
     font-style: normal;
@@ -1347,7 +1514,6 @@ export default {
     line-height: 39px;
     /* 130% */
     margin: 52px 0 0 0;
-
   }
 
   .title-img {
@@ -1365,7 +1531,7 @@ export default {
     justify-content: center;
     flex-direction: column;
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin-top: 10px;
       color: #4570b6;
       text-align: center;
@@ -1382,14 +1548,14 @@ export default {
   .lecture-content {
     margin-top: 4%;
 
-    &>div:nth-child(1),
-    &>div:nth-child(2) {
+    & > div:nth-child(1),
+    & > div:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       p {
         color: #4570b6;
         text-align: center;
@@ -1403,7 +1569,7 @@ export default {
       }
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin-top: 20px;
       gap: 23px;
 
@@ -1432,10 +1598,6 @@ export default {
     width: 100%;
     justify-content: space-between;
   }
-
-
-
-
 
   :deep(.el-form) {
     max-width: 1200px;
@@ -1535,26 +1697,20 @@ export default {
     }
   }
 
-
   :deep(.el-form-item__content) {
     // left: -50px;
   }
 
   :deep(.form1) {
-
-    &>div:last-child {
+    & > div:last-child {
       display: flex;
       justify-content: center;
 
       .el-form-item__content {
         padding-left: 50px;
       }
-
-
     }
-
   }
-
 
   :deep(.el-button) {
     color: #fff;
@@ -1582,27 +1738,16 @@ export default {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .lecture-box {
-    // transform: translateY(-372px);
-  }
-
-
   .lecture-title {
-    &>div {
+    & > div {
       max-width: 99.21875vw !important;
     }
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .lecture-box {
-    // transform: translateY(-445px);
-  }
-}
-
 @media screen and (max-width: 767px) {
   .lectureCalendar {
-    color: #4570B6;
+    color: #4570b6;
     font-family: "Noto Sans TC";
     font-size: 20px;
     font-style: normal;
@@ -1616,9 +1761,6 @@ export default {
     position: relative;
     z-index: 2;
   }
-
-
-
 
   .Banner .banner-text-default p:nth-child(1) {
     font-size: 20px;
@@ -1643,7 +1785,7 @@ export default {
     justify-content: center;
     align-items: center;
 
-    &>div {
+    & > div {
       border-radius: 15px;
       border: #4570b6 1px solid;
       box-shadow: 0px 0px 8px 6px #d5d5d5f7;
@@ -1668,7 +1810,7 @@ export default {
         border-bottom: 1px solid #87898c80;
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin-top: 30px;
         padding: 0 6.5vw 6.5vw 6.5vw;
 
@@ -1704,7 +1846,8 @@ export default {
     // background: url("https://static.cmereye.com/imgs/2024/04/d226e2e185d53c48.png")
     //   no-repeat;
     // background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIuPgoUx5-S3NAprNApqwMAa15lNreZYJgiE3zXS6AQ_666_666.webp") no-repeat;
-     background: url("https://statichk.cmermedical.com/cmermedical/image/20260330/banner-m.webp") no-repeat;
+    background: url("https://statichk.cmermedical.com/cmermedical/image/20260330/banner-m.webp")
+      no-repeat;
 
     background-size: 100% 100%;
     background-position: center;
@@ -1719,7 +1862,7 @@ export default {
     justify-content: center;
     padding-left: 20px;
 
-    &>p:nth-child(1) {
+    & > p:nth-child(1) {
       color: #4570b6;
       font-family: "Noto Sans HK";
       font-style: normal;
@@ -1727,7 +1870,7 @@ export default {
       letter-spacing: 3.5px;
     }
 
-    &>p:nth-child(2) {
+    & > p:nth-child(2) {
       color: #4570b6;
       font-family: "Noto Sans HK";
       font-style: normal;
@@ -1743,14 +1886,14 @@ export default {
 
   .lecture-title {
     // background: url(https://static.cmereye.com/imgs/2024/04/d7625f69f04ff1b8.png) no-repeat;
-    background: #F6FAFD;
+    background: #f6fafd;
     background-size: 100% 100%;
     width: 100%;
     margin-top: 50px;
     padding: 40px 0 40px;
     z-index: -1;
 
-    &>div {
+    & > div {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1770,12 +1913,12 @@ export default {
         flex-direction: column;
         z-index: 10;
 
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           position: relative;
           top: 15px;
         }
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           margin-top: 15px;
           color: #4570b6;
           text-align: center;
@@ -1792,9 +1935,8 @@ export default {
       }
 
       .lecture-content {
-
         // margin-top: -50px;
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           color: #4570b6;
           text-align: center;
           font-family: "Noto Sans HK";
@@ -1807,7 +1949,7 @@ export default {
           padding: 0 10px;
         }
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           margin-bottom: 32px;
           color: #6d6e71;
           text-align: center;
@@ -1827,11 +1969,11 @@ export default {
           //   padding: 0 40px;
           // }
 
-          &>p:nth-child(3) {
+          & > p:nth-child(3) {
             padding: 0 10px;
           }
 
-          &>p:nth-child(4) {
+          & > p:nth-child(4) {
             padding: 0 15px;
           }
         }
@@ -1858,8 +2000,6 @@ export default {
     margin-top: 20px;
   }
 
-
-
   :deep(.el-form-item__label) {
     width: 30.76vw !important;
     color: #fff;
@@ -1880,8 +2020,6 @@ export default {
     z-index: 9;
     padding: 0;
   }
-
-
 
   :deep(.el-picker-panel__icon-btn) {
     font-size: 24px !important;
@@ -1946,7 +2084,7 @@ export default {
   }
 
   :deep(.form1) {
-    &>div:last-child {
+    & > div:last-child {
       display: flex;
       justify-content: center;
 
@@ -1983,7 +2121,6 @@ export default {
   :deep(.el-date-editor) {
     width: 100%;
   }
-
 }
 
 :deep(.el-message-box) {

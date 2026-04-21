@@ -3198,7 +3198,7 @@ module.exports = {
   },
   appointFrom_ifram: {
     title:
-      "SMILE Pro 微笑激光矯視、ICL植入式隱形眼鏡、SMILE 微笑激光矯視、CMER CLEAR-VISION 老花講座",
+      "SMILE Pro 微笑激光矯視、ICL植入式隱形眼鏡、SMILE 微笑激光矯視、老花矯視講座",
     p1: "中環診所：中環畢打街1-3號中建大廈1512室",
     p2: "旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室",
     p3: "旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室",
@@ -3207,19 +3207,19 @@ module.exports = {
   appointFroms: {
     title: "講座",
     title1: "SMILE Pro 微笑激光矯視、ICL植入式隱形眼鏡、",
-    title2: "SMILE 微笑激光矯視、CMER CLEAR-VISION 老花講座",
+    title2: "SMILE 微笑激光矯視、老花矯視講座",
     p1: "中環診所：中環畢打街1-3號中建大廈1512室",
     p2: "旺角診所：旺角彌敦道625及639號雅蘭中心一期1725B室",
     p3: "希瑪微笑矯視中心定期舉辦免費矯視小班講座，由資深醫療團隊親自講解，協助您深入了解各項技術細節，<br />為自己作出最合適的選擇。",
-   p4: "無論您正考慮 SMILE Pro 微笑激光矯視、SMILE 微笑激光矯視、ICL 植入式隱形眼鏡，<br />或是 CMER CLEAR-VISION（老花矯視），我們的講座都已為您準備好所需的全面資訊。<br />講座重點內容包括：<span style='color: #4570B6;font-weight: 700;'>矯視服務簡介</span>、<span style='color: #4570B6;font-weight: 700;'>詳細技術分析及講解</span>，以及<span style='color: #4570B6;font-weight: 700;'>即時解答查詢</span>。",
-   p5: "請填寫下列表格免費預約您的席位，本中心將隨後聯絡並確認您的登記。",
+    p4: "無論您正考慮 SMILE Pro 微笑激光矯視、SMILE 微笑激光矯視、ICL 植入式隱形眼鏡，<br />或是老花矯視，我們的講座都已為您準備好所需的全面資訊。<br />講座重點內容包括：<span style='color: #4570B6;font-weight: 700;'>矯視服務簡介</span>、<span style='color: #4570B6;font-weight: 700;'>詳細技術分析及講解</span>，以及<span style='color: #4570B6;font-weight: 700;'>即時解答查詢</span>。",
+    p5: "請填寫下列表格免費預約您的席位，本中心將隨後聯絡並確認您的登記。",
     service: "選擇服務",
     title4: "選擇地點",
     sectionPlace: "請選擇",
     content0: {
       title1: "SMILE Pro",
       title2: "SMILE+ICL",
-      title3: "CMER CLEAR-VISION（老花矯視）",
+      title3: "老花矯視",
     },
     content1: {
       title1: "旺角",

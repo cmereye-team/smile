@@ -1388,7 +1388,7 @@ export default {
           link: "/vision-correction-icl",
         },
         {
-          title: "CLEAR<br/>VISION",
+          title: this.$t("home.headers.orthopedicServicesChild_2"),
           text: ["適合", "39歲以上有老花", "同時有近視/遠視/", "散光問題"],
           textmb: ["適合", "39歲以上有老花同時有近視/", "遠視/散光問題"],
           link: "/vision-correction-presbyopia",
