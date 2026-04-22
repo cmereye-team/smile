@@ -1,6 +1,6 @@
 <!--
  * @Date: 2026-04-22 09:56:22
- * @LastEditTime: 2026-04-22 14:13:02
+ * @LastEditTime: 2026-04-22 16:20:51
  * @FilePath: /components/layout/HeaderMobile.vue
  * @Description: 移动端页头
 -->
@@ -50,7 +50,7 @@
         </div>
         <div>
           <div style="position: relation">
-            <div @click="langBox = !langBox">
+            <div @click="langBox = true">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -296,6 +296,11 @@ export default {
       },
     };
   },
+  watch: {
+    $route() {
+      this.langDrawer = false;
+    },
+  }
 };
 </script>
 <style lang="scss" scoped>

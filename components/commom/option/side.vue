@@ -40,7 +40,6 @@
               </div>
             </nuxt-link>
           </div>
-
           <div
             v-else
             :class="clickOption == index ? 'cliHoverActive' : 'cliHover'"
@@ -69,7 +68,6 @@
               </svg>
             </span>
           </div>
-
           <!-- 二级菜单 -->
           <div
             :class="clickOption == index ? 'isBlock' : 'isNoneBlock'"
@@ -91,7 +89,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   //   name: "optiond",
@@ -99,7 +96,6 @@ export default {
   data() {
     return {
       clickOption: -1,
-
       caidanList: [
         {
           main_nav: this.$t("home.headers.aboutSmile"),
@@ -119,7 +115,6 @@ export default {
             },
           ],
         },
-
         {
           main_nav: this.$t("home.headers.orthopedicServices"),
           link: "",
@@ -146,7 +141,6 @@ export default {
             },
           ],
         },
-
         {
           main_nav: this.$t("home.headers.diagnosisInstructions"),
           link: "/patient-info",
@@ -213,7 +207,6 @@ export default {
         //   main_nav: this.$t("home.headers.ophthalmicConsultation"),
         //   link: "/ophthalmicInfo/mediaCov",
         // },
-
         // {
         //   main_nav: this.$t("home.headers.videos"),
         //   link: "/video",
@@ -241,8 +234,7 @@ export default {
   },
 };
 </script>
-
-<style scoped lang='scss'>
+<style scoped lang="scss">
 @media screen and (max-width: 789px) {
   .engWidth {
     min-width: 130px;
@@ -269,8 +261,8 @@ export default {
     // display: flex;
     flex-direction: row;
     align-items: flex-start;
-    svg{
-        margin-top:4px ;
+    svg {
+      margin-top: 4px;
     }
     // z-index: 10;
     & > div:nth-child(1) {
@@ -305,7 +297,6 @@ export default {
       }
     }
   }
-
   .nav {
     color: #fff;
     font-family: "Noto Sans HK";
@@ -360,7 +351,6 @@ export default {
     bottom: -4px;
     left: 0;
   }
-
   .isBlock {
     display: block;
     text-align: left;
@@ -369,7 +359,6 @@ export default {
     display: none !important;
     text-align: left;
   }
-
   .cliHoverActive {
     svg {
       -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
@@ -382,4 +371,3 @@ export default {
   }
 }
 </style>
-

@@ -12,7 +12,9 @@
           </div>
           <div>
             <div>
-              <div :class="$i18n.locale === 'en'? 'engWidth' : '' ">{{ group.main_nav }}</div>
+              <div :class="$i18n.locale === 'en' ? 'engWidth' : ''">
+                {{ group.main_nav }}
+              </div>
               <span v-if="group.child_list && group.child_list.length > 0"
                 ><img
                   src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
@@ -47,25 +49,26 @@
           </div>
           <div>
             <div>
-              <div :class="$i18n.locale === 'en'? 'engWidth' : '' "> 
+              <div :class="$i18n.locale === 'en' ? 'engWidth' : ''">
                 {{ group.main_nav }}
               </div>
-              <div v-if="group.child_list && group.child_list.length > 0"
-                ><img
+              <div v-if="group.child_list && group.child_list.length > 0">
+                <img
                   src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
                   alt=""
-              /></div>
+                />
+              </div>
             </div>
             <div
               class="isBlock"
               v-if="group.child_list && group.child_list.length > 0"
             >
-              <div :class="[$i18n.locale === 'en'? 'navEng nav ' : 'nav']">
+              <div :class="[$i18n.locale === 'en' ? 'navEng nav ' : 'nav']">
                 <nuxt-link
                   v-for="(item, index) in group.child_list"
                   :to="localePath(item.link)"
                   :key="index"
-                >{{ item.child_item }}
+                  >{{ item.child_item }}
                 </nuxt-link>
               </div>
             </div>
@@ -75,7 +78,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "optiond",
@@ -91,8 +93,7 @@ export default {
   methods: {},
 };
 </script>
-
-<style  scoped lang='scss'>
+<style scoped lang="scss">
 @media screen and (min-width: 789px) {
   .optiond {
     display: flex;
@@ -167,13 +168,13 @@ export default {
     color: #4570b6;
   }
   .pathLink {
-    &>div {
+    & > div {
       display: flex;
       align-items: center;
     }
-    &>div:nth-child(2),
-    &>div:nth-child(3),
-    &>div:nth-child(7) {
+    & > div:nth-child(2),
+    & > div:nth-child(3),
+    & > div:nth-child(7) {
       a {
         .engWidth {
           width: min-content;
@@ -224,8 +225,8 @@ export default {
       & > div:nth-child(1) {
         display: flex;
         align-items: center;
-        &>div:nth-child(2) {
-        &>img {
+        & > div:nth-child(2) {
+          & > img {
             min-width: 17px;
           }
         }
@@ -235,7 +236,6 @@ export default {
       }
     }
   }
-
   .nav {
     color: #6d6e71;
     text-align: center;
