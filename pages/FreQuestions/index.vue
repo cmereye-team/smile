@@ -1,6 +1,11 @@
+<!--
+ * @Date: 2023-04-03 18:04:37
+ * @LastEditTime: 2026-04-22 14:22:21
+ * @FilePath: /pages/FreQuestions/index.vue
+ * @Description: 常见问题
+-->
 <template>
   <div>
-    <Header />
     <Navbar />
     <div class="questions">
       <div id="faq-smile">
@@ -66,38 +71,25 @@
         </client-only>
       </div>
     </div>
-
-    <!-- <firstProblem />
-    <secondProblem />
-    <thirtProblem />
-    <fourProblem /> -->
-    <Footer />
-    <footers />
   </div>
 </template>
 
 <script>
-import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import firstProblem from "@/components/content/FreQuestions/firstProblem.vue";
 import secondProblem from "@/components/content/FreQuestions/secondProblem.vue";
 import thirtProblem from "@/components/content/FreQuestions/thirtProblem.vue";
 import fourProblem from "@/components/content/FreQuestions/fourProblem.vue";
-import footers from "@/components/commom/foot/footers.vue";
 
 export default {
   components: {
     H2Tag,
-    Header,
     Navbar,
-    Footer,
     firstProblem,
     secondProblem,
     thirtProblem,
     fourProblem,
-    footers,
   },
   data() {
     return {

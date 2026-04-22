@@ -1,7 +1,5 @@
 <template>
     <div class="message">
-
-        <Head />
         <ClientOnly>
             <div class="message-from">
                 <H2Tag :title="'講座預約表單'"></H2Tag>
@@ -43,23 +41,15 @@
             </div>
         </ClientOnly>
         <businessHours />
-        <Footer />
-        <FooterMobile />
     </div>
 </template>
 
-<script>
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
+<script>;
 import businessHours from "@/components/commom/business/business-hours.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
     components: {
-        Head,
-        Footer,
         businessHours,
-        FooterMobile,
         H2Tag
     },
     data() {

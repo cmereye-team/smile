@@ -1,13 +1,12 @@
 <!--
  * @Date: 2025-03-25 16:47:42
- * @LastEditTime: 2025-09-26 16:20:52
+ * @LastEditTime: 2026-04-22 15:24:09
  * @FilePath: /pages/new-page/smile.vue
  * @Description: 旧版-微笑矫视
 -->
 
 <template>
   <div class="smile">
-    <Head />
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img">
@@ -43,18 +42,12 @@
     </div>
     <Xtra />
     <businessHours />
-    <Footer />
-    <FooterMobile />
   </div>
 </template>
 <script>
 import H2Tag from "@/components/Publice/H2Tag.vue";
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
-
 import Step from "@/components/content/service/relex_smile/Step_copy.vue";
 import Benefit from "@/components/content/service/relex_smile/Benefit_copy.vue";
 import Fit from "@/components/content/service/relex_smile/Fit_copy.vue";
@@ -62,10 +55,7 @@ import Xtra from "@/components/content/service/relex_smile/Xtra_copy.vue";
 
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     Step,
     H2Tag,
@@ -138,9 +128,9 @@ export default {
 
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
-  :deep(.banner-box) {
+  .banner-box {
     box-sizing: border-box;
-    padding: 0 3vw;
+    padding: 16px 3vw 0;
     max-width: 1270px;
     display: flex;
     justify-content: center;

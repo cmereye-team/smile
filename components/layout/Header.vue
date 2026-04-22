@@ -1,45 +1,37 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2026-04-22 09:53:50
+ * @LastEditTime: 2026-04-22 14:13:14
+ * @FilePath: /components/layout/Header.vue
+ * @Description: 统一页头
+-->
 <template>
   <div class="head-bg">
-    <div class="head mbShow">
-      <HeadLeft />
-      <HeadMobile />
-      <!-- <nuxt-link to="/icl-event" class="btn-icl_event">
-        <img
-          src="https://static.cmereye.com/imgs/2024/12/d826363f36195d26.png"
-          alt=""
-        />
-        <span>ICL<br />專題講座</span>
-      </nuxt-link> -->
+    <div class="head flex md:hidden">
+      <HeaderLeft />
+      <HeaderMobile />
     </div>
-    <div class="head pcShow">
-      <HeadLeft />
+    <div class="head hidden md:flex">
+      <HeaderLeft />
       <div>
-        <HeadRight />
+        <HeaderRight />
         <div class="sidebar-box">
           <Sidebar />
         </div>
-        <!-- <nuxt-link to="/icl-event"  class="btn-icl_event">
-          <img
-            src="https://static.cmereye.com/imgs/2024/12/d826363f36195d26.png"
-            alt=""
-          />
-          <span>ICL植入式隱形眼鏡<br />專題講座</span>
-        </nuxt-link> -->
       </div>
     </div>
   </div>
 </template>
-
 <script>
-import HeadLeft from "../Publice/HeadLeft.vue";
-import HeadRight from "../Publice/HeadRight.vue";
-import HeadMobile from "../Publice/HeadMobile.vue";
-import Sidebar from "../Publice/Sidebar.vue";
+import HeaderLeft from "@/components/layout/HeaderLeft.vue";
+import HeaderRight from "@/components/layout/HeaderRight.vue";
+import HeaderMobile from "@/components/layout/HeaderMobile.vue";
+import Sidebar from "@/components/layout/Sidebar.vue";
 export default {
   components: {
-    HeadLeft,
-    HeadRight,
-    HeadMobile,
+    HeaderLeft,
+    HeaderRight,
+    HeaderMobile,
     Sidebar,
   },
   data() {
@@ -74,7 +66,6 @@ export default {
     this.$nextTick(() => {
       if (process.browser) {
         new WOW({
-          //可以添加自定义内容
           animateClass: "animate__animated",
           offset: 200,
         }).init();
@@ -89,7 +80,6 @@ export default {
         this.isMobile = false;
       }
     });
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
@@ -98,17 +88,13 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" scoped>
 .head {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1270px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 25px 0;
-  width: 1270px;
-
 }
 .btn-icl_event {
   position: fixed !important;
@@ -131,7 +117,7 @@ export default {
   & > span {
     color: #fff;
     text-align: center;
-    font-family: "Noto Sans HK";
+    font-family: "Noto Sans TC";
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
@@ -146,6 +132,11 @@ export default {
   }
   & > span {
     margin: 5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .head {
+    padding: 25px 0 !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -168,13 +159,10 @@ export default {
     transform: translateY(-50%);
   }
   .head {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1270px;
     margin: 0 3vw;
     padding: 25px 0;
-    width: 1270px;
   }
   .btn-icl_event {
     position: fixed !important;
@@ -193,11 +181,11 @@ export default {
     & > span {
       color: #fff;
       text-align: center;
-      font-family: "Noto Sans HK";
+      font-family: "Noto Sans TC";
       font-size: 11px;
       font-style: normal;
       font-weight: 400;
-      line-height: 15px; /* 136.364% */
+      line-height: 1.36;
       letter-spacing: 1.1px;
     }
   }
@@ -223,16 +211,15 @@ export default {
     & > span {
       color: #fff;
       text-align: center;
-      font-family: "Noto Sans HK";
+      font-family: "Noto Sans TC";
       font-size: 11px;
       font-style: normal;
       font-weight: 400;
-      line-height: 15px; /* 136.364% */
+      line-height: 1.36;
       letter-spacing: 1.1px;
     }
   }
 }
-
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .head {
     max-width: 1024px !important;
@@ -253,16 +240,15 @@ export default {
     & > span {
       color: #fff;
       text-align: center;
-      font-family: "Noto Sans HK";
+      font-family: "Noto Sans TC";
       font-size: 11px;
       font-style: normal;
       font-weight: 400;
-      line-height: 15px; /* 136.364% */
+      line-height: 1.36;
       letter-spacing: 1.1px;
     }
   }
 }
-
 @media screen and (max-width: 767px) {
   .pcShow {
     display: none;
@@ -275,16 +261,13 @@ export default {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 91;
+    z-index: 102;
     background: #fff;
-    padding: 15px 20px;
-    display: flex;
+    padding: 15px 15px;
     justify-content: space-between;
     align-items: center;
-    // max-width: 94vw;
-    margin: 0;
-    width: 100%;
-    max-width: 100%;
+    max-width: 100vw !important;
+    margin: 0 !important;
   }
   .btn-icl_event {
     position: fixed !important;
@@ -311,11 +294,11 @@ export default {
       margin-top: 6px;
       color: #fff;
       text-align: center;
-      font-family: "Noto Sans HK";
+      font-family: "Noto Sans TC";
       font-size: 2.665vw;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.2; /* 136.364% */
+      line-height: 1.2;
       letter-spacing: 0.16vw;
     }
   }

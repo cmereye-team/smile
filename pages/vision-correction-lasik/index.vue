@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <main>
       <section
         class="banner wrapper relative mt-20 md:mt-40 pb-4 md:pb-7 px-5 flex justify-between items-end"
@@ -219,23 +218,15 @@
       </section>
       <ShareSection />
     </main>
-    <Footer />
-    <FooterMobile />
     <goTop />
   </div>
 </template>
 <script>
 import goTop from "@/components/Publice/goTop.vue";
-import Header from "@/components/Publice/HeadeV2.vue";
-import Footer from "@/components/commom/new_foot/ICLFooterV2.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import ShareSection from "@/components/commom/share/ShareSection.vue";
 export default {
   components: {
     goTop,
-    Header,
-    Footer,
-    FooterMobile,
     ShareSection,
   },
   head() {

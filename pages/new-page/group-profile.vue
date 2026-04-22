@@ -1,6 +1,11 @@
+<!--
+ * @Date: 2024-05-09 13:36:25
+ * @LastEditTime: 2026-04-22 13:53:31
+ * @FilePath: /pages/new-page/group-profile.vue
+ * @Description: 集团简介
+-->
 <template>
   <div class="group-profile">
-    <Head />
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -328,63 +333,21 @@
                 <img :src="ele" alt="獲得獎項" />
               </div>
             </div>
-            <!-- <div>
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="32"
-                  viewBox="0 0 19 32"
-                  fill="none"
-                >
-                  <path
-                    d="M18 1L1.83662 15.79C1.39255 16.1964 1.40548 16.9001 1.86419 17.2898L18 31"
-                    stroke="#4570B6"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="32"
-                  viewBox="0 0 19 32"
-                  fill="none"
-                >
-                  <path
-                    d="M1 1L17.1634 15.79C17.6075 16.1964 17.5945 16.9001 17.1358 17.2898L1 31"
-                    stroke="#4570B6"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
     </div>
     <businessHours />
-    <Footer />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import swiperhj from "@/components/content/aboutus/centre-introduction/huanjswiper.vue";
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     swiperhj,
@@ -874,9 +837,9 @@ export default {
       padding-bottom: 40px;
     }
   }
-  :deep(.banner-box) {
+  .banner-box {
     box-sizing: border-box;
-    padding: 0 3vw;
+    padding: 16px 3vw 0;
     max-width: 1270px;
     display: flex;
     justify-content: center;

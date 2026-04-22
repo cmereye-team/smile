@@ -1,6 +1,5 @@
 <template>
   <div class="blog">
-    <Head />
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -41,24 +40,16 @@
     <!-- <div class="blog-more" v-if="isMobile"><i></i><i></i><i></i></div> -->
     <!-- <a class="more-article" @click="getMediaList"> 閱讀更多 </a> -->
     <businessHours />
-    <Footer />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import { Loading } from "element-ui";
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
   },

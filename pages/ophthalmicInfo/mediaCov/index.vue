@@ -1,27 +1,24 @@
+<!--
+ * @Date: 2023-04-03 18:04:37
+ * @LastEditTime: 2026-04-22 15:17:50
+ * @FilePath: /pages/ophthalmicInfo/mediaCov/index.vue
+ * @Description: 媒体报道，看起来年代古老，不确定是否在用
+-->
 <template>
   <div>
-    <Header />
     <Navbar />
-
     <MainBanner />
     <media />
-
-    <Footer />
-    <footers />
   </div>
 </template>
 
 <script>
-import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import footers from "@/components/commom/foot/footers.vue";
-
 import MainBanner from "@/components/content/ophthalmicInfo/mediaCov/MainBanner.vue";
 import media from "@/components/content/ophthalmicInfo/mediaCov/media.vue";
 
 export default {
-  components: { Header, Navbar, Footer, MainBanner, footers, media },
+  components: { Navbar, MainBanner, media },
   data() {
     return {
       canonicalHref: "https://smile.hkcmereye.com/ophthalmicInfo/mediaCov",

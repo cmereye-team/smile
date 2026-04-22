@@ -355,9 +355,6 @@ $color-stone-800: #292524;
 <template>
 <no-ssr>
  <div class="lasik">
-    <!-- <Head /> -->
-    <HeadV2 />
-
     <div class="newErrorPage">
       <div class="mars"></div>
       <img
@@ -390,27 +387,15 @@ $color-stone-800: #292524;
         class="spaceship"
       />
     </div>
-
-    <FooterV2 />
-    <!-- <Footer /> -->
-    <FooterMobile />
   </div>
 </no-ssr>
  
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
 import goTop from "@/components/Publice/goTop.vue";
-
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
-
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
@@ -419,10 +404,7 @@ import share from "@/components/content/service/ICL-new/share.vue";
 
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     process,
@@ -430,8 +412,6 @@ export default {
     film,
     suitable,
     share,
-    FooterV2,
-    HeadV2,
     goTop,
   },
   head() {

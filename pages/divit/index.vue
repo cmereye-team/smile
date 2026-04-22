@@ -1,26 +1,18 @@
 <template>
   <div>
-    <Header />
     <Navbar />
-
     <MainBanner />
     <AppointForm />
-
-    <Footer />
-    <footers />
   </div>
 </template>
 
 <script>
-import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import footers from "@/components/commom/foot/footers.vue";
 import MainBanner from "@/components/content/ophthalmicInfo/divit/MainBanner.vue";
 import AppointForm from "@/components/content/ophthalmicInfo/divit/index.vue";
 
 export default {
-  components: { Header, Navbar, Footer, MainBanner, AppointForm, footers },
+  components: { Navbar, MainBanner, AppointForm},
   head() {
     return {
       title: this.$i18n.locale === 'cn' ? this.browserTitleCn : this.browserTitle,

@@ -1,6 +1,5 @@
 <template>
   <div class="id_content">
-    <Head />
     <div class="content_box" v-loading="loading">
       <div class="_data">{{ essay.content }}</div>
       <div v-html="essay.content"></div>
@@ -16,17 +15,11 @@
 </template>
 
 <script>
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
   },
   data() {
     return {

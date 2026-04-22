@@ -11,34 +11,33 @@
 
     <BusinessHours />
     <Footer />  
-    <footers />
+    <FooterMobile />
   </div>
 </template>
 
 <script>
-import Header from "@/components/commom/new_head/Header.vue";
+import Header from "@/components/layout/Header.vue";
+import Footer from "@/components/layout/Footer.vue";
+import FooterMobile from "@/components/layout/FooterMobile.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-
 import MainBanner from "@/components/content/service/ICL-R/MainBanner.vue";
 import film from "@/components/content/service/ICL-R/film2.vue";
 import Merit from "@/components/content/service/ICL-R/merit.vue";
 import Benefit from "@/components/content/service/ICL-R/Benefit2.vue";
 import suitable from "@/components/content/service/ICL-R/suitable2.vue";
 import BusinessHours from "@/components/commom/business/business-hours.vue";
-import footers from "@/components/commom/foot/footers.vue";
 
 export default {
   components: {
     Header,
-    Navbar,
     Footer,
+    FooterMobile,
+    Navbar,
     MainBanner,
     film,
     Merit,
     Benefit,
     suitable,
-    footers,
     BusinessHours
   },
   head() {
