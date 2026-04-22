@@ -1,6 +1,5 @@
 <template>
   <div class="equipment">
-    <Header />
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -71,14 +70,9 @@
       </div>
     </div>
     <businessHours />
-    <Footer />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Header from "@/components/layout/Header.vue";
-import Footer from "@/components/layout/Footer.vue";
-import FooterMobile from "@/components/layout/FooterMobile.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
@@ -86,11 +80,9 @@ import equipmentM from "@/components/content/new/equipmentM.vue";
 import Equipment from "@/asset/Equipment/EquipmentData";
 
 export default {
+  layout: 'default',
   components: {
-    Header,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     equipmentM,
@@ -98,7 +90,6 @@ export default {
   data() {
     return {
       isMobile: false,
-      // equipmentList: Equipment,
       equipmentList: [
         {
           id: 26,

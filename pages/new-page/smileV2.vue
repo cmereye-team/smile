@@ -1,23 +1,24 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2026-02-13 14:44:58
+ * @LastEditTime: 2026-04-22 13:58:19
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
 <script>
 import HeadV3 from "@/components/Publice/HeadV3.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
+import Footer from "@/components/layout/Footer.vue";
+import FooterMobile from "@/components/layout/FooterMobile.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import ShareSection from "@/components/commom/share/ShareSection.vue";
 import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
 import SwiperRound from "@/components/commom/swiper/SwiperRound.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import Backtop from "@/components/commom/Backtop/Backtop.vue";
 export default {
+  layout: 'none',
   components: {
     HeadV3,
-    FooterV2,
+    Footer,
     FooterMobile,
     UserShare,
     ShareSection,
@@ -1122,7 +1123,7 @@ SMILE微笑激光矯視費用
       </div>
     </div>
     <Backtop />
-    <FooterV2 class="smile-footer" />
+    <Footer class="smile-footer" />
     <FooterMobile />
   </div>
 </template>

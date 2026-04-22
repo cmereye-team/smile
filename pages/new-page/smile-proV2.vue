@@ -1,8 +1,5 @@
 <template>
   <div class="lasik">
-    <!-- simleProV2 -->
-    <!-- <topNotice></topNotice> -->
-    <HeadV2 />
     <div class="top-btnV2" @click="scrollToTopV2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1733,18 +1730,11 @@
         </a>
       </div>
     </section>
-    <FooterV2 />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
@@ -1755,11 +1745,9 @@ import drow from "@/components/content/service/SmileProV2/drow.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import topNotice from "@/components/Publice/topNotice.vue";
 export default {
+  layout: 'default',
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     process,
@@ -1767,8 +1755,6 @@ export default {
     film,
     suitable,
     share,
-    FooterV2,
-    HeadV2,
     drow,
     UserShare,
     topNotice,

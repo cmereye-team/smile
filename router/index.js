@@ -34,16 +34,46 @@ export const $router = [
     component: resolve("pages/new-page/doctor-team.vue"),
   },
   {
-    path: "/new-equipment",
-    name: "new-equipment",
-    title: "中心設備",
-    component: resolve("pages/new-page/equipment.vue"),
-  },
-  {
     path: "/medical-equipment",
     name: "medical-equipment",
     title: "中心設備",
     component: resolve("pages/new-page/equipment.vue"),
+  },
+  {
+    path: "/smilePro",
+    name: "smilePro",
+    title: "SMILE Pro 微笑激光矯視",
+    component: resolve("pages/new-page/smile-proV2.vue"),
+  },
+  {
+    path: "/vision-correction-icl",
+    name: "vision-correction-icl",
+    title: "ICL 植入式隱形眼鏡",
+    component: resolve("pages/new-page/iclV2.vue"),
+  },
+  {
+    path: "/vision-correction/relex-smile",
+    name: "vision-correction/relex-smile",
+    title: "SMILE 微笑激光矯視",
+    component: resolve("pages/new-page/smileV2.vue"),
+  },
+  {
+    path: "/vision-correction-presbyopia",
+    name: "vision-correction-presbyopia",
+    title: "老花矯視",
+    component: resolve("pages/lbv/index.vue"),
+  },
+  {
+    path: "/vision-correction-lasikV2",
+    name: "vision-correction-lasikV2",
+    title: "LASIK 激光矯視",
+    component: resolve("pages/vision-correction-lasik/index.vue"),
+  },
+  {
+    path: "/vision-correction-lasik",
+    name: "vision-correction-lasik",
+    title: "LASIK 激光矯視",
+    component: resolve("pages/new-page/lasik.vue"),
   },
   {
     path: "/patient-info", 
@@ -129,12 +159,6 @@ export const $router = [
     component: resolve("pages/new-page/message-from.vue"),
   },
   {
-    path: "/smilepro-event",
-    name: "smilepro-event",
-    title: "CMERxZEISS 講座活動詳情",
-    component: resolve("pages/smilepro-event/index.vue"),
-  },
-  {
     path: "/divit",
     name: "divit",
     title: "消費券詳情",
@@ -162,50 +186,8 @@ export const $router = [
   {
     path: "/disclaimer",
     name: "disclaimer",
-    title: " 免責條款",
+    title: "免責條款",
     component: resolve("pages/disclaimer/index.vue"),
-  },
-  {
-    path: "/vision-correction/relex-smile",
-    name: "vision-correction/relex-smile",
-    title: "SMILE 微笑激光矯視",
-    component: resolve("pages/new-page/smileV2.vue"),
-  },
-  {
-    path: "/smilePro",
-    name: "smilePro",
-    title: "SMILE Pro 微笑激光矯視",
-    component: resolve("pages/new-page/smile-proV2.vue"),
-  },
-  {
-    path: "/vision-correction-presbyopia",
-    name: "vision-correction-presbyopia",
-    title: "CMER CLEAR-Vision",
-    component: resolve("pages/lbv/index.vue"),
-  },
-  {
-    path: "/vision-correction-lasikV2",
-    name: "vision-correction-lasikV2",
-    title: "LASIK 激光矯視",
-    component: resolve("pages/vision-correction-lasik/index.vue"),
-  },
-  {
-    path: "/vision-correction-lasik",
-    name: "vision-correction-lasik",
-    title: "LASIK 激光矯視",
-    component: resolve("pages/new-page/lasik.vue"),
-  },
-  {
-    path: "/vision-correction-icl",
-    name: "vision-correction-icl",
-    title: "ICL 植入式隱形眼鏡",
-    component: resolve("pages/new-page/iclV2.vue"),
-  },
-  {
-    path: "/ICLtalk2025",
-    name: "ICLtalk2025",
-    title: "9月講座專題",
-    component: resolve("pages/new-page/icltalk-2025.vue"),
   },
   {
     path: "/smile",

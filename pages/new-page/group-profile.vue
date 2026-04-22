@@ -1,12 +1,11 @@
 <!--
  * @Date: 2024-05-09 13:36:25
- * @LastEditTime: 2026-04-22 10:55:25
+ * @LastEditTime: 2026-04-22 13:53:31
  * @FilePath: /pages/new-page/group-profile.vue
  * @Description: 集团简介
 -->
 <template>
   <div class="group-profile">
-    <Header />
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -339,23 +338,15 @@
       </div>
     </div>
     <businessHours />
-    <Footer />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Header from "@/components/Publice/HeadeV2.vue";
-import Footer from "@/components/commom/foot/Footer.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import swiperhj from "@/components/content/aboutus/centre-introduction/huanjswiper.vue";
 export default {
   components: {
-    Header,
-    Footer,
-    FooterMobile,
     businessHours,
     Banner,
     H2Tag,

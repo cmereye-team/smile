@@ -2432,24 +2432,6 @@ i {
 </style>
 <template>
   <div class="lasik" style="overflow-x: hidden">
-    <HeadV2 />
-    <!-- <div class="new-container container center-Banner">
-      <img
-        class="d-block mx-auto"
-        decoding="async"
-        src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/center-Banner-pc.avif"
-        alt=""
-        loading="lazy"
-        width="100%"
-        height="100%"
-        srcset="
-          https://statichk.cmermedical.com/smile/VisionCorrectionCenter/center-Banner-mb.png  400w,
-          https://statichk.cmermedical.com/smile/VisionCorrectionCenter/center-Banner-mb.png  640w,
-          https://statichk.cmermedical.com/smile/VisionCorrectionCenter/center-Banner-pc.avif
-        "
-        sizes=" (max-width: 992px) 100vw,1216px"
-      />
-    </div> -->
     <section class="ClearVisionBanner mt-22 md:mt-[216px]">
       <div class="new-container container">
         <div class="ClearVisionBanner-Box">
@@ -3815,19 +3797,12 @@ i {
         </a>
       </div>
     </section>
-    <FooterV2 />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
 import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
@@ -3845,18 +3820,14 @@ function throttle(fn, delay) {
   };
 }
 export default {
+  layout: 'default',
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     process,
     xtar,
     film,
-    FooterV2,
-    HeadV2,
     BannerSlider,
     lbvTable,
     lbvSwiper,

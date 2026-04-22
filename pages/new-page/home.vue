@@ -1,12 +1,11 @@
 <!--
  * @Date: 2024-04-26 18:54:12
- * @LastEditTime: 2026-04-22 10:08:22
+ * @LastEditTime: 2026-04-22 11:43:41
  * @FilePath: /pages/new-page/home.vue
  * @Description: 首页
 -->
 <template>
   <div class="lasik">
-    <Header />
     <BannerSlider class="banner-box" />
     <!-- 希瑪微笑矯視中心 -->
     <section class="centerIntro">
@@ -1275,14 +1274,11 @@
         />
       </svg>
     </div>
-    <Footer />
-    <FooterMobile />
+    <!-- <Footer />
+    <FooterMobile /> -->
   </div>
 </template>
 <script>
-import Header from "@/components/layout/Header.vue";
-import Footer from "@/components/layout/Footer.vue";
-import FooterMobile from "@/components/layout/FooterMobile.vue";
 import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
@@ -1297,10 +1293,8 @@ import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import Share from "../../components/content/service/ICL/share.vue";
 
 export default {
+  layout: 'default',
   components: {
-    Header,
-    Footer,
-    FooterMobile,
     businessHours,
     Banner,
     H2Tag,

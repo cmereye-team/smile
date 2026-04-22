@@ -3571,8 +3571,6 @@ i {
 </style>
 <template>
   <div class="lasik">
-    <!-- <Head /> -->
-    <HeadV2 />
     <goTop />
     <!-- 轮播位置 -->
     <div
@@ -4435,21 +4433,12 @@ i {
         </a>
       </div>
     </section>
-    <!-- <businessHours /> -->
-    <FooterV2 />
-    <!-- <Footer /> -->
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
 import goTop from "@/components/Publice/goTop.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
@@ -4458,11 +4447,9 @@ import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 export default {
+  layout: 'default',
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     process,
@@ -4470,8 +4457,6 @@ export default {
     film,
     suitable,
     share,
-    FooterV2,
-    HeadV2,
     goTop,
     UserShare,
   },

@@ -1,12 +1,11 @@
 <!--
  * @Date: 2024-04-29 15:19:42
- * @LastEditTime: 2026-04-22 10:47:18
+ * @LastEditTime: 2026-04-22 13:39:40
  * @FilePath: /pages/new-page/doctor-team.vue
  * @Description: 医生团队
 -->
 <template>
   <div class="doctor-team">
-    <Header />
     <Banner class="banner-box md:px-[3vw] md:pt-4">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -113,24 +112,17 @@
       </div>
     </div>
     <businessHours />
-    <Footer />
-    <FooterMobile />
   </div>
 </template>
 
 <script>
-import Header from "@/components/layout/Header.vue";
-import Footer from "@/components/layout/Footer.vue";
-import FooterMobile from "@/components/layout/FooterMobile.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
+  layout: 'default',
   components: {
-    Header,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
   },
