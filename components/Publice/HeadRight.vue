@@ -1,4 +1,9 @@
-
+<!--
+ * @Date: 2025-03-25 16:47:42
+ * @LastEditTime: 2024-04-16 12:57:23
+ * @FilePath: /components/Publice/HeadRight.vue
+ * @Description: 【旧版】PC端导航栏，包括按钮和切换语言
+-->
 <template>
   <div class="HeaderRight">
     <div class="header-top" v-if="isMobile === false">
@@ -151,17 +156,17 @@ export default {
           childType: true,
           childList: [
             {
-              id:1,
+              id: 1,
               name: this.$t("home.headers.diagnosisInstructionsChild_1"),
               path: "/patient-info#beforeJiaoShi",
             },
             {
-              id:1,
+              id: 1,
               name: this.$t("home.headers.diagnosisInstructionsChild_2"),
               path: "/patient-info#inJiaoShi",
             },
             {
-              id:1,
+              id: 1,
               name: this.$t("home.headers.diagnosisInstructionsChild_3"),
               path: "/patient-info#afterJiaoShi",
             },

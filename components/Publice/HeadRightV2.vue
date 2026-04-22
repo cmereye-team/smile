@@ -1,4 +1,9 @@
-
+<!--
+ * @Date: 2025-04-16 17:42:08
+ * @LastEditTime: 2026-04-22 09:46:27
+ * @FilePath: /components/Publice/HeadRightV2.vue
+ * @Description: PC端导航栏，包括按钮和切换语言
+-->
 <template>
   <div class="HeaderRight">
     <div class="header-top" v-if="isMobile === false">
@@ -21,13 +26,7 @@
         </div>
         <div>3892 5099</div>
       </a> -->
-
-      <a 
-      :href="whatsappLink" 
-     
-     
-      target="_blank" class="header-top-whatsapp">
-
+      <a :href="whatsappLink" target="_blank" class="header-top-whatsapp">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -42,7 +41,6 @@
         </svg>
         <span> Whatsapp 預約 </span>
       </a>
-
       <nuxt-link to="/ophthalmicInfo/AppointForm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -75,9 +73,8 @@
                 fill="#6D6E71"
               />
             </svg>
-            <span v-if="$i18n.locale == 'hk'"  > 繁體中文 </span>
-            <span v-if="$i18n.locale == 'cn'"  > 簡體中文 </span>
-
+            <span v-if="$i18n.locale == 'hk'"> 繁體中文 </span>
+            <span v-if="$i18n.locale == 'cn'"> 簡體中文 </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="11"
@@ -88,10 +85,13 @@
               <path d="M1 1L5.5 6L10 1" stroke="#6D6E71" />
             </svg>
           </div>
-
           <ul class="language-list">
-            <li @click="handleLang('hk')" v-if="$i18n.locale != 'hk'">繁體中文</li>
-            <li @click="handleLang('cn')" v-if="$i18n.locale != 'cn'">簡體中文</li>
+            <li @click="handleLang('hk')" v-if="$i18n.locale != 'hk'">
+              繁體中文
+            </li>
+            <li @click="handleLang('cn')" v-if="$i18n.locale != 'cn'">
+              簡體中文
+            </li>
           </ul>
         </div>
       </div>
@@ -119,7 +119,8 @@ export default {
   data() {
     return {
       isMobile: false,
-      whatsappLink:"https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-G01)%20%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5/%E7%9F%AF%E8%A6%96%E8%AC%9B%E5%BA%A7",
+      whatsappLink:
+        "https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-G01)%20%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5/%E7%9F%AF%E8%A6%96%E8%AC%9B%E5%BA%A7",
       menuList: [
         {
           id: 1,
@@ -286,11 +287,11 @@ export default {
   },
 
   mounted() {
-      //  console.log(this.$route.path);
-      //  if (this.$route.path.includes("/vision-correction-icl")) {
-   
-      //   this.whatsappLink="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
-      // }
+    //  console.log(this.$route.path);
+    //  if (this.$route.path.includes("/vision-correction-icl")) {
+
+    //   this.whatsappLink="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
+    // }
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
@@ -323,18 +324,18 @@ a {
       min-width: 80px;
       display: flex;
       justify-content: center;
-  color: #6D6E71;
-text-align: center;
-font-family: "Noto Sans TC";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.8px;
+      color: #6d6e71;
+      text-align: center;
+      font-family: "Noto Sans TC";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.8px;
     }
     & > li:hover {
-     background: #4471b7;
-     color: white;
+      background: #4471b7;
+      color: white;
     }
   }
   .HeaderRight {
@@ -394,7 +395,7 @@ letter-spacing: 1.8px;
       align-items: center;
       justify-content: space-between;
       gap: 6px;
-         letter-spacing: normal;
+      letter-spacing: normal;
       color: #fff;
       text-align: center;
       font-family: "Noto Sans TC";
@@ -413,9 +414,9 @@ letter-spacing: 1.8px;
   .nav-language-newV2 {
     height: 100%;
     span {
-        display: inline-block;
-        margin-left: 8px;
-        margin-right: 12px;
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 12px;
       color: #6d6e71;
       text-align: center;
       font-family: "Noto Sans TC";
@@ -431,7 +432,7 @@ letter-spacing: 1.8px;
     display: flex;
     margin-top: 34px;
     & > div {
-      margin-left: #{'clamp(0.25rem, -3.5rem + 7.81vw, 1.5rem)'};
+      margin-left: #{"clamp(0.25rem, -3.5rem + 7.81vw, 1.5rem)"};
       position: relative;
       a {
         width: 100%;
@@ -478,7 +479,7 @@ letter-spacing: 1.8px;
     position: absolute;
     width: 5px;
     height: 5px;
-    background: #4570B6;
+    background: #4570b6;
     border-radius: 50%;
   }
   .child-menu-list {
@@ -526,10 +527,10 @@ letter-spacing: 1.8px;
       top: 20px;
       display: flex;
       flex-direction: column;
-    //   background: #fff;
+      //   background: #fff;
       left: 17px;
-    //   left: 50%;
-    //   transform: translateX(-50%);
+      //   left: 50%;
+      //   transform: translateX(-50%);
       & > div {
         padding: 10px 20px;
         width: max-content;

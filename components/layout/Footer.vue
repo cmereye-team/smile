@@ -1,8 +1,8 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-03-25 16:47:42
- * @LastEditTime: 2026-04-22 09:21:55
- * @FilePath: /components/commom/foot/Footer.vue
+ * @LastEditTime: 2026-04-22 09:53:47
+ * @FilePath: /components/layout/Footer.vue
  * @Description: 统一页脚
 -->
 <script>
