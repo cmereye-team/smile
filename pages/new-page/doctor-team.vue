@@ -1,7 +1,13 @@
+<!--
+ * @Date: 2024-04-29 15:19:42
+ * @LastEditTime: 2026-04-22 10:47:18
+ * @FilePath: /pages/new-page/doctor-team.vue
+ * @Description: 医生团队
+-->
 <template>
   <div class="doctor-team">
-    <Head />
-    <Banner class="banner-box">
+    <Header />
+    <Banner class="banner-box md:px-[3vw] md:pt-4">
       <template #banner>
         <div class="banner-img banner-text-default">
           <p>{{ $t("doctor_team.bannnertitle") }}</p>
@@ -113,15 +119,15 @@
 </template>
 
 <script>
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
+import Header from "@/components/layout/Header.vue";
+import Footer from "@/components/layout/Footer.vue";
+import FooterMobile from "@/components/layout/FooterMobile.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
-    Head,
+    Header,
     Footer,
     businessHours,
     FooterMobile,
@@ -347,7 +353,6 @@ export default {
 @media screen and (min-width: 768px) {
   :deep(.banner-box) {
     box-sizing: border-box;
-    padding: 0 3vw;
     max-width: 1270px;
     display: flex;
     justify-content: center;

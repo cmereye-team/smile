@@ -1,7 +1,12 @@
-
+<!--
+ * @Date: 2024-04-26 18:54:12
+ * @LastEditTime: 2026-04-22 10:08:22
+ * @FilePath: /pages/new-page/home.vue
+ * @Description: 首页
+-->
 <template>
   <div class="lasik">
-    <HeadV2 />
+    <Header />
     <BannerSlider class="banner-box" />
     <!-- 希瑪微笑矯視中心 -->
     <section class="centerIntro">
@@ -1270,38 +1275,33 @@
         />
       </svg>
     </div>
-    <FooterV2 />
+    <Footer />
     <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
+import Header from "@/components/layout/Header.vue";
+import Footer from "@/components/layout/Footer.vue";
+import FooterMobile from "@/components/layout/FooterMobile.vue";
 import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
-
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
 import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
-
 import MarqueeCarousel from "@/components/commom/MarqueeCarousel/MarqueeCarousel.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import Share from "../../components/content/service/ICL/share.vue";
 
 export default {
   components: {
-    Head,
+    Header,
     Footer,
-    businessHours,
     FooterMobile,
+    businessHours,
     Banner,
     H2Tag,
     process,
@@ -1309,8 +1309,6 @@ export default {
     film,
     suitable,
     share,
-    FooterV2,
-    HeadV2,
     MarqueeCarousel,
     BannerSlider,
     UserShare,
@@ -1785,9 +1783,7 @@ export default {
 };
 </script>
 
-
-
-<style >
+<style>
 body {
   overflow-x: hidden;
 }
@@ -3457,4 +3453,3 @@ i {
   }
 }
 </style>
-

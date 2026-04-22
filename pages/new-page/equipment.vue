@@ -1,6 +1,6 @@
 <template>
   <div class="equipment">
-    <Head />
+    <Header />
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -76,20 +76,18 @@
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
+import Header from "@/components/layout/Header.vue";
+import Footer from "@/components/layout/Footer.vue";
+import FooterMobile from "@/components/layout/FooterMobile.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import equipmentM from "@/components/content/new/equipmentM.vue";
-
-// 数据
 import Equipment from "@/asset/Equipment/EquipmentData";
 
 export default {
   components: {
-    Head,
+    Header,
     Footer,
     businessHours,
     FooterMobile,
@@ -578,9 +576,9 @@ export default {
     opacity: 0;
     display: none;
   }
-  :deep(.banner-box) {
+  .banner-box {
     box-sizing: border-box;
-    padding: 0 3vw;
+    padding: 16px 3vw 0;
     max-width: 1270px;
     display: flex;
     justify-content: center;

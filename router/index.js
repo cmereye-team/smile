@@ -9,14 +9,6 @@ export const $router = [
     title: "主页",
     component: resolve("pages/new-page/home.vue"),
   },
-
-  // {
-  //   path: '/group-profile',
-  //   name: 'group-profile',
-  //   title: '集團及中心簡介',
-  //   component: resolve('pages/group-profile/index.vue'),
-  // },
-
   {
     path: "/error",
     name: "404",
@@ -29,12 +21,23 @@ export const $router = [
     title: "404",
     component: resolve("pages/newError.vue"),
   },
-
+  {
+    path: "/group-profile",
+    name: "group-profile",
+    title: "集團及中心簡介",
+    component: resolve("pages/new-page/group-profile.vue"),
+  },
   {
     path: "/our-medical-team",
     name: "our-medical-team",
-    title: "醫療團隊",
+    title: "醫生團隊",
     component: resolve("pages/new-page/doctor-team.vue"),
+  },
+  {
+    path: "/new-equipment",
+    name: "new-equipment",
+    title: "中心設備",
+    component: resolve("pages/new-page/equipment.vue"),
   },
   {
     path: "/medical-equipment",
@@ -42,12 +45,6 @@ export const $router = [
     title: "中心設備",
     component: resolve("pages/new-page/equipment.vue"),
   },
-  // {
-  //   path: "/patient-info",
-  //   name: "patient-info",
-  //   title: "診症須知",
-  //   component: resolve("pages/patient-info/index.vue"),
-  // },
   {
     path: "/patient-info", 
     name: "patient-info",
@@ -66,19 +63,10 @@ export const $router = [
     title: "矯視後覆診",
     component: resolve("pages/post-corrective-care/index.vue"),
   },
-  // {
-  //   path: "/fee",
-  //   name: "fee",
-  //   title: "收費詳情",
-  //   // component: resolve('pages/fee/index.vue'),
-  //   component: resolve("pages/new-page/new-fee.vue"),
-  // },
-
   {
     path: "/fee",
     name: "fee",
     title: "收費詳情",
-    // component: resolve('pages/fee/index.vue'),
     component: resolve("pages/new-page/new-feeV2.vue"),
   },
 
@@ -110,18 +98,10 @@ export const $router = [
     title: "常見問題",
     component: resolve("pages/FreQuestions/index.vue"),
   },
-  // {
-  //   path: '/new2',
-  //   name: 'new2',
-  //   hash: '#new2',
-  //   title: '常見問題',
-  //   component: resolve('pages/FreQuestions/new2-problem.vue'),
-  // },
   {
     path: "/contact-us",
     name: "contact-us",
     title: "聯絡我們",
-    // component: resolve('pages/contact-us/index.vue')
     component: resolve("pages/new-page/contact-us.vue"),
   },
   {
@@ -140,14 +120,12 @@ export const $router = [
     path: "/ophthalmicInfo/AppointForm",
     name: "ophthalmicInfo/AppointForm",
     title: "講座",
-    // component: resolve('pages/ophthalmicInfo/AppointForm/index.vue')
     component: resolve("pages/new-page/preaching-seat.vue"),
   },
   {
     path: "/messageFrom",
     name: "messageFrom",
     title: "講座預約表單",
-    // component: resolve('pages/ophthalmicInfo/AppointForm/index.vue')
     component: resolve("pages/new-page/message-from.vue"),
   },
   {
@@ -162,20 +140,9 @@ export const $router = [
     title: "消費券詳情",
     component: resolve("pages/divit/index.vue"),
   },
-  // {
-  //   path: "/video",
-  //   name: "video",
-  //   // title: '個案分享及矯視資訊影片',
-  //   // component: resolve('pages/video/index.vue')
-  //   title: "矯視資訊影片",
-  //   component: resolve("pages/new-page/orthopedic-video.vue"),
-  // },
-
   {
     path: "/video",
     name: "video",
-    // title: '個案分享及矯視資訊影片',
-    // component: resolve('pages/video/index.vue')
     title: "矯視資訊影片",
     component: resolve("pages/new-page/orthopedic-videoV2.vue"),
   },
@@ -198,48 +165,22 @@ export const $router = [
     title: " 免責條款",
     component: resolve("pages/disclaimer/index.vue"),
   },
-  // {
-  //   path: "/vision-correction/relex-smile",
-  //   name: "vision-correction/relex-smile",
-  //   title: "SMILE 微笑激光矯視",
-  //   // component: resolve('pages/vision-correction/relex-smile/index.vue'),
-  //   component: resolve("pages/new-page/smile.vue"),
-  // },
   {
     path: "/vision-correction/relex-smile",
     name: "vision-correction/relex-smile",
     title: "SMILE 微笑激光矯視",
-    // component: resolve('pages/vision-correction/relex-smile/index.vue'),
     component: resolve("pages/new-page/smileV2.vue"),
   },
-  // {
-  //   path: '/smilePro',
-  //   name: 'smilePro',
-  //   title: 'SMILE Pro 微笑激光矯視',
-  //   // component: resolve('pages/smilePro/index.vue'),
-  //   component: resolve('pages/new-page/smile-pro.vue')
-  // },
-
   {
     path: "/smilePro",
     name: "smilePro",
     title: "SMILE Pro 微笑激光矯視",
-    // component: resolve('pages/smilePro/index.vue'),
     component: resolve("pages/new-page/smile-proV2.vue"),
   },
-
-  // {
-  //   path: "/vision-correction-presbyopia",
-  //   name: "vision-correction-presbyopia",
-  //   title: "CMER CLEAR-Vision",
-  //   // component: resolve('pages/vision-correction-presbyopia/index.vue'),
-  //   component: resolve("pages/new-page/clear-vision.vue"),
-  // },
   {
     path: "/vision-correction-presbyopia",
     name: "vision-correction-presbyopia",
     title: "CMER CLEAR-Vision",
-    // component: resolve('pages/vision-correction-presbyopia/index.vue'),
     component: resolve("pages/lbv/index.vue"),
   },
   {
@@ -247,27 +188,17 @@ export const $router = [
     name: "vision-correction-lasikV2",
     title: "LASIK 激光矯視",
     component: resolve("pages/vision-correction-lasik/index.vue"),
-    // component: resolve("pages/new-page/lasik.vue"),
   },
   {
     path: "/vision-correction-lasik",
     name: "vision-correction-lasik",
     title: "LASIK 激光矯視",
-    // component: resolve("pages/vision-correction-lasik/index.vue"),
     component: resolve("pages/new-page/lasik.vue"),
   },
-  // {
-  //   path: '/vision-correction-icl',
-  //   name: 'vision-correction-icl',
-  //   title: 'ICL 植入式隱形眼鏡',
-  //   // component: resolve('pages/vision-correction-icl/index.vue'),
-  //   component: resolve('pages/new-page/icl.vue')
-  // },
   {
     path: "/vision-correction-icl",
     name: "vision-correction-icl",
     title: "ICL 植入式隱形眼鏡",
-    // component: resolve('pages/vision-correction-icl/index.vue'),
     component: resolve("pages/new-page/iclV2.vue"),
   },
   {
@@ -276,7 +207,6 @@ export const $router = [
     title: "9月講座專題",
     component: resolve("pages/new-page/icltalk-2025.vue"),
   },
-  // 新版本路由
   {
     path: "/smile",
     name: "new-page/smile",
@@ -307,18 +237,6 @@ export const $router = [
     title: "ICL 植入式隱形眼鏡",
     component: resolve("pages/new-page/icl.vue"),
   },
-  // {
-  //   path: '/new-fee',
-  //   name: 'new-page/fee',
-  //   title: '收費詳情',
-  //   component: resolve('pages/new-page/new-fee.vue')
-  // },
-  // {
-  //   path: '/new-fee2',
-  //   name: 'new-page/fee2',
-  //   title: '收費詳情',
-  //   component: resolve('pages/new-page/new-fee.vue')
-  // },
   {
     path: "/new-home",
     name: "new-home",
@@ -358,7 +276,6 @@ export const $router = [
   {
     path: "/follow-up-consultation",
     name: "follow-up-consultation",
-    // 矯視後覆診
     title: "矯視後覆診",
     component: resolve("pages/new-page/follow-up-consultation.vue"),
   },
@@ -367,7 +284,6 @@ export const $router = [
     name: "vision-correction",
     title: "矯視流程",
     component: resolve("pages/new-page/vision-correction.vue"),
-    // 矯視流程
   },
   {
     path: "/common-problem",
@@ -382,18 +298,6 @@ export const $router = [
     component: resolve("pages/new-page/eye-examination.vue"),
   },
   {
-    path: "/group-profile",
-    name: "group-profile",
-    title: "集團簡介",
-    component: resolve("pages/new-page/group-profile.vue"),
-  },
-  {
-    path: "/new-equipment",
-    name: "new-equipment",
-    title: "中心設備",
-    component: resolve("pages/new-page/equipment.vue"),
-  },
-  {
     path: "/blog",
     name: "blog",
     title: "科普知識",
@@ -405,38 +309,11 @@ export const $router = [
     title: "科普知識",
     component: resolve(`pages/new-page/blog_news/_id.vue`),
   },
-    {
-    path: `/smileProCare`,
-    name: `smileProCare`,
-    title: "SMILE Pro Care限時禮品限量版便攜式咖啡機",
-    component: resolve(`pages/smileProCare/index.vue`),
-  },
-  // {
-  //   path: `/lbv`,
-  //   name: `lbv`,
-  //   title: "LBV",
-  //   component: resolve(`pages/lbv/index.vue`),
-  // },
-  // // 活动route
-  // {
-  //   path: '/icl-event',
-  //   name: 'icl-event',
-  //   title: '活動',
-  //   component: resolve('pages/smilepro-event/del-index.vue')
-  // },
 ];
 
 const extendRoutes = (routes) => {
-  routes.length = 0; // 清除 nuxt 自己生成的路由，这里不要用 空数组 赋值
-  // 移除默认的 404 路由
-  //  routes = routes.filter(route => route.path !== '*' && route.path !== '/*');
-  routes.push(...$router);
-  // routes.push({
-  //   path: "*",
-  //   name: "404",
-  //   title: "404",
-  //   component: resolve("pages/newError.vue"),
-  // });
+  routes.length = 0;
+  routes.push(...$router)
 };
 
 export default { base: "/", extendRoutes };
