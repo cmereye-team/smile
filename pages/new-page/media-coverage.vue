@@ -1,6 +1,5 @@
 <template>
   <div class="media-coverage">
-    <Head />
     <Banner class="banner-box">
       <template #banner>
         <div class="banner-img banner-text-default">
@@ -24,24 +23,16 @@
       <a class="more-article" @click="getMediaList"> 更多文章 </a>
     </div>
     <businessHours />
-    <Footer />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   name: "media-coverage",
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
   },

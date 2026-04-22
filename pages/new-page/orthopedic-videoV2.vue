@@ -1,6 +1,5 @@
 <template>
   <div class="orthopedic-video">
-    <HeadV2 />
 
     <!-- 轮播位置 -->
     <div class="new-container mx-auto smile-NewBanner position-relative">
@@ -147,38 +146,21 @@
         </ul>
       </div>
     </div>
-
-    <!-- <div class="share-video">
-      <shareVideo /> 
-    </div> -->
-
-    <FooterV2 />
-    <FooterMobile />
   </div>
 </template>
 
 <script>
-import Head from "@/components/Publice/Head.vue";
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import shareVideo from "@/components/content/new/shareVideo.vue";
 
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     shareVideo,
-    HeadV2,
-    FooterV2,
   },
   data() {
     return {

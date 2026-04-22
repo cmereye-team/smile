@@ -1,9 +1,5 @@
 <template>
   <div class="preaching-seat" v-loading.fullscreen.lock="fullscreenLoading">
-    <!-- <Head /> -->
-
-    <HeadV2 />
-
     <div class="preaching-seat-banner">
       <Banner class="banner-box">
         <template #banner>
@@ -517,30 +513,17 @@
       </div>
     </div> -->
     <!-- <Footer /> -->
-    <FooterV2 />
-
-    <FooterMobile />
   </div>
 </template>
 <script>
-import Head from "@/components/Publice/Head.vue";
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
-import Footer from "@/components/commom/new_foot/Footer.vue";
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
-    Head,
-    Footer,
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
-    HeadV2,
-    FooterV2,
   },
   data() {
     return {
@@ -735,7 +718,7 @@ export default {
         // 当其中一个值为空时，清空 form1.address
         this.form.address = "";
       }
-      console.log(this.form1.address, "递四方速递");
+      // console.log(this.form1.address, "递四方速递");
 
       if (!this.form.address) {
         console.warn("changeLocation: address is empty");
@@ -746,30 +729,6 @@ export default {
         smilerProTsui: [],
         // 中环-smile
         smileCentral: [
-          "2025-09-03",
-          "2025-09-06",
-          "2025-09-10",
-          "2025-09-13",
-          "2025-09-17",
-          "2025-09-20",
-          "2025-09-24",
-          "2025-09-27",
-          "2025-10-04",
-          "2025-10-08",
-          "2025-10-11",
-          "2025-10-15",
-          "2025-10-18",
-          "2025-10-22",
-          "2025-10-25",
-          "2025-11-05",
-          "2025-11-12",
-          "2025-11-19",
-          "2025-11-26",
-          "2025-12-03",
-          "2025-12-10",
-          "2025-12-17",
-          "2025-12-24",
-          "2025-12-31",
           "2026-01-03",
           "2026-01-07",
           "2026-01-14",
@@ -792,15 +751,6 @@ export default {
         ],
         // 中环-smilePro
         smileProCentral: [
-          "2025-11-01",
-          "2025-11-08",
-          "2025-11-15",
-          "2025-11-22",
-          "2025-11-29",
-          "2025-12-06",
-          "2025-12-13",
-          "2025-12-20",
-          "2025-12-27",
           "2026-01-10",
           "2026-01-17",
           "2026-01-24",
@@ -824,39 +774,6 @@ export default {
         smileMongKok: [],
         // 旺角-SmilePro
         smileProMongKok: [
-          "2025-09-01",
-          "2025-09-06",
-          "2025-09-09",
-          "2025-09-13",
-          "2025-09-15",
-          "2025-09-20",
-          "2025-09-23",
-          "2025-09-27",
-          "2025-09-29",
-          "2025-10-04",
-          "2025-10-11",
-          "2025-10-13",
-          "2025-10-18",
-          "2025-10-21",
-          "2025-10-25",
-          "2025-10-27",
-          "2025-11-01",
-          "2025-11-04",
-          "2025-11-08",
-          "2025-11-10",
-          "2025-11-15",
-          "2025-11-18",
-          "2025-11-22",
-          "2025-11-24",
-          "2025-11-29",
-          "2025-12-02",
-          "2025-12-06",
-          "2025-12-08",
-          "2025-12-13",
-          "2025-12-16",
-          "2025-12-20",
-          "2025-12-22",
-          "2025-12-27",
           "2026-01-05",
           "2026-01-10",
           "2026-01-13",
@@ -889,24 +806,6 @@ export default {
         clearVisionCentral: [],
         // 旺角-老花矫视
         clearVisionMongKok: [
-          "2025-09-02",
-          "2025-09-08",
-          "2025-09-16",
-          "2025-09-22",
-          "2025-09-30",
-          "2025-10-06",
-          "2025-10-14",
-          "2025-10-20",
-          "2025-10-28",
-          "2025-11-03",
-          "2025-11-11",
-          "2025-11-17",
-          "2025-11-25",
-          "2025-12-01",
-          "2025-12-09",
-          "2025-12-15",
-          "2025-12-23",
-          "2025-12-29",
           "2026-01-03",
           "2026-01-06",
           "2026-01-12",
@@ -948,9 +847,13 @@ export default {
       // 返回格式化后的字符串
       const nowDay = `${year}年${month}月${day}日`;
       const weekday = weekdays[dayOfWeek];
+      const isoDate = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Shanghai",
+      }).format(new Date(timestamp));
       return {
         nowDay,
         weekday,
+        isoDate,
       };
     },
     /**
@@ -959,10 +862,15 @@ export default {
      */
     getName(nameAddress) {
       if (!this.form.subdate || !nameAddress) return null;
-
-      const { nowDay, weekday } = this.timestampToWeekday(this.form.subdate);
+      // 初步处理讲座时间
+      const { nowDay, weekday, isoDate } = this.timestampToWeekday(
+        this.form.subdate
+      );
+      console.log(
+        `已进入getName函数,nameAddress=${nameAddress},subdate=${this.form.subdate},isoDate=${isoDate}`
+      );
       this.nowDayTime = nowDay;
-
+      // 映射表
       const schedules = {
         smileProMongKok: {
           name: "Smile Pro 講座-旺角",
@@ -1014,22 +922,20 @@ export default {
           },
         },
       };
-
+      // 处理时间
       const config = schedules[nameAddress];
       if (!config) return null;
-
       this.morningOrAfternoon =
         config.times[nowDay] || config.times[weekday] || "";
-      return config.name;
-    },
-    formatDate(time) {
-      const year = date.getFullYear();
-      const month = String(time.getMonth() + 1).padStart(2, "0");
-      const day = String(time.getDate()).padStart(2, "0");
-      return `${year}-${month}-${day}`;
+      // 处理讲座名称
+      const lbv = ["2026-05-23"];
+      const seatname =
+        nameAddress === "clearVisionMongKok" && lbv.includes(isoDate)
+          ? "老花講座 (LBV特別場)-旺角"
+          : config.name;
+      return seatname;
     },
     getUrl() {
-      // 获取当前页面url
       return window.location.href;
     },
     /**
@@ -1175,9 +1081,9 @@ export default {
 </script>
 
 <style lang="scss">
-.el-select-dropdown__wrap {
-  padding-bottom: 8px;
-}
+// .el-select-dropdown__wrap {
+//   padding-bottom: 8px;
+// }
 .el-select-dropdown__item {
   height: 50px;
   line-height: 50px;
