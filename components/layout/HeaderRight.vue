@@ -280,16 +280,13 @@ export default {
       // console.log(document.documentElement.style)
       document.documentElement.style.setProperty("--font_family", _text); //var(--font_family)
       var htmlElement = document.documentElement;
-
       // 更改lang属性
       htmlElement.setAttribute("lang", "zh-CN");
     },
   },
-
   mounted() {
     //  console.log(this.$route.path);
     //  if (this.$route.path.includes("/vision-correction-icl")) {
-
     //   this.whatsappLink="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
     // }
     // 获取屏幕宽度
@@ -300,7 +297,6 @@ export default {
         this.isMobile = false;
       }
     });
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
@@ -309,7 +305,6 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" scoped>
 a {
   text-decoration: none;
@@ -410,7 +405,6 @@ a {
       box-shadow: 0px 0px 5px 2px #adadad;
     }
   }
-
   .nav-language-newV2 {
     height: 100%;
     span {
@@ -427,7 +421,6 @@ a {
       letter-spacing: 1.8px;
     }
   }
-
   .header-bottom {
     display: flex;
     margin-top: 34px;
@@ -520,7 +513,6 @@ a {
     cursor: pointer;
     position: relative;
   }
-
   .language:hover {
     .language-list {
       position: absolute;

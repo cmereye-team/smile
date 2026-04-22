@@ -225,7 +225,6 @@
 import goTop from "@/components/Publice/goTop.vue";
 import ShareSection from "@/components/commom/share/ShareSection.vue";
 export default {
-  layout: 'default',
   components: {
     goTop,
     ShareSection,

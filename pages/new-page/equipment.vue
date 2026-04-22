@@ -80,7 +80,6 @@ import equipmentM from "@/components/content/new/equipmentM.vue";
 import Equipment from "@/asset/Equipment/EquipmentData";
 
 export default {
-  layout: 'default',
   components: {
     businessHours,
     Banner,

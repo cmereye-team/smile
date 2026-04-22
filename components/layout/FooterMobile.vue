@@ -77,7 +77,6 @@ export default {
     isExternal(url) {
       // 如果为空或只是 # 开头，视为内部
       if (!url || url.startsWith("#")) return false;
-
       // 任何带协议的都视为外部（包含 http/https/tel/mailto/whatsapp: 等）
       return (
         /^[a-z][a-z0-9+.-]*:\/\//i.test(url) ||
@@ -153,7 +152,6 @@ export default {
     z-index: 102;
     padding: 0;
     width: 100vw;
-
     .whatsapp-ficon {
       position: absolute;
       left: 15px;

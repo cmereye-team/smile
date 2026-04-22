@@ -1,7 +1,6 @@
 <!--
- * @Author: 谭洁莹
- * @Date: 2026-04-22 09:54:30
- * @LastEditTime: 2026-04-22 10:03:26
+ * @Date: 2024-04-18 11:40:54
+ * @LastEditTime: 2026-04-22 14:12:21
  * @FilePath: /components/layout/Sidebar.vue
  * @Description: PC端引流转化：预约讲座和术前检查
 -->
@@ -190,7 +189,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "Sidebar",
@@ -218,7 +216,6 @@ export default {
       writing-mode: vertical-rl; /* 从上到下，从右到左 */
       text-orientation: mixed; /* 允许混合方向 */
       color: #fff;
-
       text-align: center;
       font-family: "Inter";
       font-size: 20px;
@@ -303,7 +300,6 @@ export default {
       writing-mode: vertical-rl; /* 从上到下，从右到左 */
       text-orientation: mixed; /* 允许混合方向 */
       color: #fff;
-
       text-align: center;
       font-family: "Inter";
       font-size: 20px;

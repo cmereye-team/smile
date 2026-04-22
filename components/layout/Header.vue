@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-22 09:53:50
- * @LastEditTime: 2026-04-22 10:24:54
+ * @LastEditTime: 2026-04-22 14:13:14
  * @FilePath: /components/layout/Header.vue
  * @Description: 统一页头
 -->
@@ -80,7 +80,6 @@ export default {
         this.isMobile = false;
       }
     });
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
@@ -89,7 +88,6 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" scoped>
 .head {
   justify-content: space-between;
@@ -141,7 +139,6 @@ export default {
     padding: 25px 0 !important;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .mbShow {
     display: none;
@@ -223,7 +220,6 @@ export default {
     }
   }
 }
-
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .head {
     max-width: 1024px !important;
@@ -253,7 +249,6 @@ export default {
     }
   }
 }
-
 @media screen and (max-width: 767px) {
   .pcShow {
     display: none;

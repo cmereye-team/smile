@@ -1,7 +1,6 @@
 <!--
- * @Author: 谭洁莹
  * @Date: 2026-04-22 09:56:22
- * @LastEditTime: 2026-04-22 10:32:17
+ * @LastEditTime: 2026-04-22 14:13:02
  * @FilePath: /components/layout/HeaderMobile.vue
  * @Description: 移动端页头
 -->
@@ -95,7 +94,6 @@
               </nuxt-link>
             </div>
           </div>
-
           <div class="sliderTop" @click="langDrawer = false">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +132,6 @@
           </div>
         </div>
       </div>
-
       <div class="mb_menu_slidefooter">
         <div>
           <a href="https://www.facebook.com/CMER.SMILE"
@@ -147,7 +144,6 @@
             ><img src="@/asset/image/common/SliderYouTuBe.png" alt=""
           /></a>
         </div>
-
         <div>
           <p>
             <span
@@ -171,7 +167,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import DetailOption from "@/components/commom/option/index.vue";
 import Slide from "@/components/commom/option/side.vue";
@@ -303,7 +298,6 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" scoped>
 body {
   overflow: hidden !important;
@@ -327,7 +321,6 @@ body {
       }
     }
   }
-
   .HeadMobile {
     position: relative;
     z-index: 93;
@@ -346,7 +339,6 @@ body {
     overflow: auto;
     display: flex;
     flex-direction: column;
-
     scrollbar-width: none; /* Firefox */
     width: 100vw;
     height: 100vh;
@@ -375,7 +367,6 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       & > i {
         display: inline-block;
         width: 55%;
@@ -383,7 +374,6 @@ body {
         background: #fff;
         border-radius: 3px;
       }
-
       & > i:nth-child(2) {
         margin: 5px 0;
       }
@@ -398,7 +388,6 @@ body {
     text-align: center;
     line-height: 40px;
   }
-
   .langBox {
     box-sizing: border-box;
     display: flex;
@@ -423,13 +412,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     & > div:nth-child(2) {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 90px;
-
       & > div:nth-child(2) {
         width: 41px;
         height: 41px;
@@ -439,7 +426,6 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         & > i {
           display: inline-block;
           width: 55%;
@@ -448,12 +434,10 @@ body {
           border-radius: 3px;
           position: relative;
         }
-
         & > i:nth-child(1) {
           transform: rotate(45deg);
           top: 1.5px;
         }
-
         & > i:nth-child(2) {
           transform: rotate(-45deg);
           top: -1.5px;
@@ -461,7 +445,6 @@ body {
       }
     }
   }
-
   .mb_menu_list {
     & > div:nth-child(1) {
       margin: 12px 0;
@@ -470,7 +453,6 @@ body {
       display: flex;
       justify-content: left;
     }
-
     & > div:nth-child(2) {
       width: 85%;
       margin: auto;
@@ -480,7 +462,6 @@ body {
         // padding-left: 20px;
         justify-content: center;
         align-items: flex-start;
-
         & > div {
           display: flex;
           align-items: flex-start;
@@ -488,7 +469,6 @@ body {
           justify-content: center;
           // max-width: 42%;
           flex: 1;
-
           & > div:nth-child(1) {
             min-width: 22px;
             display: flex;
@@ -497,32 +477,26 @@ body {
             // margin-right: 10px;
           }
         }
-
         // & > div:nth-child(odd) {
         //   margin-right: 20px;
         // }
-
         a {
           -webkit-tap-highlight-color: transparent;
         }
       }
-
       & > div:nth-child(2) {
         display: flex;
         align-items: center;
         justify-content: center;
-
         & > a:nth-child(2) {
           margin: 0 24px;
         }
       }
     }
   }
-
   .mb_menu_slidefooter {
     flex: 1;
     background: #4570b6;
-
     height: auto;
     display: flex;
     flex-direction: column;
@@ -534,7 +508,6 @@ body {
       gap: 20px;
       align-items: center;
     }
-
     & > div:nth-child(2) {
       display: flex;
       align-items: center;
@@ -550,11 +523,9 @@ body {
       letter-spacing: 0.9px;
     }
   }
-
   .mb_menu_footer {
     // margin-bottom: 64px;
     // background: #4570B6;
-
     & > div:nth-child(1) {
       padding: 25px 0;
       display: flex;
@@ -572,7 +543,6 @@ body {
         }
       }
     }
-
     & > div:nth-child(2) {
       display: flex;
       align-items: center;

@@ -4447,7 +4447,6 @@ import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 export default {
-  layout: 'default',
   components: {
     businessHours,
     Banner,

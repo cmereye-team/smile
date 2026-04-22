@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-03-25 16:47:42
- * @LastEditTime: 2026-04-22 09:53:47
+ * @LastEditTime: 2026-04-22 14:11:30
  * @FilePath: /components/layout/Footer.vue
  * @Description: 统一页脚
 -->
@@ -251,7 +251,6 @@ export default {
         this.isMobile = false;
       }
     });
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
@@ -270,7 +269,6 @@ export default {
             src="https://statichk.cmermedical.com/smile/smileproV2/new-Smile-footer-mobile-LogoV2.svg"
             alt=""
           /> -->
-
           <svg
             class="d-lg-none"
             width="100%"
@@ -302,14 +300,12 @@ export default {
               />
             </defs>
           </svg>
-
           <img
             class="d-none d-lg-block"
             src="https://statichk.cmermedical.com/smile/smileproV2/Smile-footer-mobile-LogoV2.svg"
             alt=""
           />
         </a>
-
         <div class="new-Footer-v2-addressTime">
           <strong class="new-Footer-v2-addressTime-title">
             {{ $t("home.footer.businessHours.title") }}
@@ -318,12 +314,10 @@ export default {
             <div>{{ $t("home.footer.businessHours.weekday") }}</div>
             <div>9:00-19:00</div>
           </div>
-
           <div class="new-Footer-v2-addressTime-item">
             <div>{{ $t("home.footer.businessHours.saturday") }}</div>
             <div>9:00-18:00</div>
           </div>
-
           <div class="new-Footer-v2-addressTime-item">
             <div>
               {{ $t("home.footer.businessHours.publicHolidayAndSunday") }}
@@ -331,7 +325,6 @@ export default {
             <div>{{ $t("home.footer.businessHours.rest") }}</div>
           </div>
         </div>
-
         <div class="new-Footer-v2-loction">
           <div class="new-Footer-v2-loction-item">
             <div>
@@ -347,7 +340,6 @@ export default {
               {{ $t("home.footer.businessHours.centerAddress2") }}
             </p>
           </div>
-
           <div class="new-Footer-v2-loction-item">
             <div>
               <strong>{{ $t("home.footer.businessHours.mongKok") }}</strong>
@@ -368,7 +360,6 @@ export default {
           </div>
         </div>
       </div>
-
       <div class="new-Footer-v2-menu">
         <div class="new-Footer-v2-menu-left">
           <!-- 關於希瑪 -->
@@ -388,7 +379,6 @@ export default {
               </li>
             </ul>
           </div>
-
           <!--矯視服務  -->
           <div class="new-Footer-v2-menu-left-item">
             <nuxt-link
@@ -409,7 +399,6 @@ export default {
               </li>
             </ul>
           </div>
-
           <!-- 診症須知 -->
           <div class="new-Footer-v2-menu-left-item">
             <nuxt-link
@@ -431,7 +420,6 @@ export default {
             </ul>
           </div>
         </div>
-
         <div class="new-Footer-v2-menu-right">
           <!-- 收費詳情 -->
           <div class="new-Footer-v2-menu-left-item">
@@ -455,7 +443,6 @@ export default {
               faq.main_nav
             }}</nuxt-link>
           </div>
-
           <!-- 矯視資訊 -->
           <div class="new-Footer-v2-menu-left-item">
             <nuxt-link
@@ -473,7 +460,6 @@ export default {
               </li>
             </ul>
           </div>
-
           <!-- 聯絡我們 -->
           <div class="new-Footer-v2-menu-left-item">
             <nuxt-link
@@ -482,7 +468,6 @@ export default {
               >{{ contactUs.main_nav }}</nuxt-link
             >
           </div>
-
           <div class="new-Footer-v2-menu-right-url">
             <a target="_blank" href="https://www.facebook.com/CMER.SMILE">
               <svg
@@ -544,7 +529,6 @@ export default {
             </a>
           </div>
         </div>
-
         <div
           class="footer-bottom footer-bottom-mobile m-auto d-none d-lg-block"
         >
@@ -575,13 +559,13 @@ export default {
           }}{{ $t("home.footer.span2") }}</span
         >
         <span>
-          <nuxt-link :to="localePath('/privacy-policy')">{{
+          <nuxt-link :to="localePath('/privacy-policy')" class="text-[inherit]">{{
             $t("home.footer.span3")
           }}</nuxt-link>
         </span>
         |
         <span>
-          <nuxt-link :to="localePath('/disclaimer')">{{
+          <nuxt-link :to="localePath('/disclaimer')" class="text-[inherit]">{{
             $t("home.footer.span4")
           }}</nuxt-link>
         </span>
@@ -589,10 +573,12 @@ export default {
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
 .d-none {
   display: none;
+}
+a {
+  text-decoration: none;
 }
 @media screen and (min-width: 1139px) {
   .new-container {
@@ -601,7 +587,6 @@ export default {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1310px) {
   .new-container {
     max-width: 1320px !important;
@@ -609,7 +594,6 @@ export default {
     margin-right: auto;
   }
 }
-
 @media screen and (max-width: 390px) {
   .new-Footer-v2 {
     .new-Footer-v2-address {
@@ -622,7 +606,6 @@ export default {
     padding-bottom: 102px;
   }
 }
-
 @media screen and (max-width: 991px) {
   // 新的底部
   .footer-bottom-mobile {
@@ -635,7 +618,6 @@ export default {
       margin-top: 60px;
       background: #f4fafc;
     }
-
     .new-Footer-v2-address {
       max-width: 360px;
       margin: 0 auto;
@@ -643,7 +625,6 @@ export default {
       border: 0.484px solid #4570b6;
       background-color: #fff;
       padding: 35px clamp(15px, 17.94vw, 70px) 26px clamp(15px, 13.07vw, 51px);
-
       // padding: 35px 70px 26px 51px;
       position: relative;
       top: -33px;
@@ -698,7 +679,6 @@ export default {
           }
         }
       }
-
       .new-Footer-v2-loction {
         position: relative;
         z-index: 2;
@@ -740,14 +720,12 @@ export default {
         }
       }
     }
-
     // 菜单
     .new-Footer-v2-menu {
       display: flex;
       flex-wrap: nowrap;
       justify-content: center;
       gap: 30px;
-
       .new-Footer-v2-menu-left,
       .new-Footer-v2-menu-right {
         display: flex;
@@ -791,7 +769,6 @@ export default {
           }
         }
       }
-
       .new-Footer-v2-menu-right-url {
         display: flex;
         justify-content: space-between;
@@ -808,7 +785,6 @@ export default {
       }
     }
   }
-
   .footer-bottom {
     margin: auto;
     margin-bottom: 102px;
@@ -830,7 +806,6 @@ export default {
   .d-lg-none {
     display: none;
   }
-
   // 新的底部
   .new-Footer-v2 {
     width: 100vw;
@@ -841,13 +816,11 @@ export default {
       display: flex;
       gap: 95px;
     }
-
     .new-Footer-v2-address {
       max-width: 684px;
       border-radius: 30px;
       border: 1px solid #4570b6;
       background-color: #fff;
-
       padding: 74px 116px 85px 76px;
       position: relative;
       top: -74px;
@@ -883,7 +856,6 @@ export default {
         .new-Footer-v2-addressTime-item {
           display: flex;
           justify-content: space-between;
-
           & > div:nth-child(1) {
             color: #4570b6;
             font-family: "Noto Sans TC";
@@ -906,7 +878,6 @@ export default {
           }
         }
       }
-
       .new-Footer-v2-loction {
         position: relative;
         z-index: 2;
@@ -947,7 +918,6 @@ export default {
         }
       }
     }
-
     // 菜单
     .new-Footer-v2-menu {
       position: relative;
@@ -957,7 +927,6 @@ export default {
       justify-content: space-between;
       // gap: 184px;
       flex: 1;
-
       .new-Footer-v2-menu-left,
       .new-Footer-v2-menu-right {
         display: flex;
@@ -1003,7 +972,6 @@ export default {
           }
         }
       }
-
       .new-Footer-v2-menu-right-url {
         display: flex;
         justify-content: space-between;
@@ -1020,7 +988,6 @@ export default {
       }
     }
   }
-
   .footer-bottom {
     position: absolute;
     color: #6d6e71;

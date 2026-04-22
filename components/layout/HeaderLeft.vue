@@ -1,5 +1,4 @@
 <!--
- * @Author: 谭洁莹
  * @Date: 2026-04-22 09:55:45
  * @LastEditTime: 2026-04-22 10:01:20
  * @FilePath: /components/layout/HeaderLeft.vue
@@ -224,7 +223,6 @@
     </svg>
   </nuxt-link>
 </template>
-
 <style lang="scss" scoped>
 @media screen and (min-width: 991px) {
   .HeaderLeft {

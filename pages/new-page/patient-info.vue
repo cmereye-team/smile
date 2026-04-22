@@ -6,8 +6,6 @@
 -->
 <template>
   <div class="lasik">
-    <HeadV2 />
-
     <div class="top-btnV2" @click="scrollToTopV2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +23,6 @@
         />
       </svg>
     </div>
-
     <!-- 轮播位置 -->
     <div class="new-container mx-auto smile-NewBanner position-relative">
       <img
@@ -51,12 +48,10 @@
         <h3>診症須知</h3>
       </div>
     </div>
-
     <!-- 面包屑 -->
     <div class="new-container mx-auto menu-breadcrumb">
       <a href="/">主頁 > </a><a href="/patient-info">診症須知</a>
     </div>
-
     <section class="navgation-link">
       <ul class="new-container mx-auto">
         <li
@@ -69,7 +64,6 @@
         </li>
       </ul>
     </section>
-
     <!-- 眼睛檢查及矯視前 -->
     <section class="check-eye" id="beforeJiaoShi">
       <div class="check-eye-title mx-auto">
@@ -108,7 +102,6 @@
         </li>
       </ul>
     </section>
-
     <!-- 矯視前停con知多啲 -->
     <section class="CorrectedVisionBefore new-container">
       <div class="CorrectedVisionBefore-iframe">
@@ -116,7 +109,6 @@
           src="https://statichk.cmermedical.com/smile/patient-info/LightBulb.svg"
           alt=""
         />
-
         <h2>矯視前停con知多啲</h2>
         <div class="iframe-container">
           <iframe
@@ -148,7 +140,6 @@
               alt=""
             />
           </div>
-
           <div class="CorrectedVisionBefore-Process-item">
             <img
               class="CorrectedVisionBefore-Process-item-content"
@@ -251,7 +242,6 @@
             內皮細胞的密度測量及眼科超聲生物顯微鏡</span
           >
         </p>
-
         <p>
           <i>3.</i
           ><span>
@@ -264,14 +254,12 @@
         </p>
       </div>
     </section>
-
     <!-- 矫视流程 -->
     <section class="visionProcess" id="inJiaoShi">
       <h2>矯視流程</h2>
       <p>
         經過詳細的眼睛檢查和診症，醫護人員會告知客人是否適合矯視，才進行矯視程序。
       </p>
-
       <!-- <div class="visionProcess_Pcs">
         <div class="visionProcess_Pcs-item">
           <div class="visionProcess_Pcs-item-img">
@@ -286,7 +274,6 @@
           </div>
           <p>屈光檢查</p>
         </div>
-
         <div class="visionProcess_Pcs-item">
           <div class="visionProcess_Pcs-item-img">
             <img
@@ -300,7 +287,6 @@
           </div>
           <p>術前準備</p>
         </div>
-
         <div class="visionProcess_Pcs-item">
           <div class="visionProcess_Pcs-item-img">
             <img
@@ -314,7 +300,6 @@
           </div>
           <p>預約翌日覆診</p>
         </div>
-
         <div class="visionProcess_Pcs-item">
           <div class="visionProcess_Pcs-item-img">
             <img
@@ -329,7 +314,6 @@
           <p>矯視療程</p>
         </div>
       </div> -->
-
       <div class="visionProcess_Plc">
         <ul>
           <li>
@@ -337,25 +321,21 @@
             <i></i>
             <p>屈光檢查</p>
           </li>
-
           <li>
             <h4>Step 2</h4>
             <i></i>
             <p>術前準備</p>
           </li>
-
           <li>
             <h4>Step 3</h4>
             <i></i>
             <p>預約翌日覆診</p>
           </li>
-
           <li>
             <h4>Step 4</h4>
             <i></i>
             <p>取藥及講解術後<br />藥水用法</p>
           </li>
-
           <li>
             <h4>Step 5</h4>
             <i></i>
@@ -363,7 +343,6 @@
           </li>
         </ul>
       </div>
-
       <!-- 注意事项 -->
       <div class="visionProcess-Notice">
         <img
@@ -371,7 +350,6 @@
           alt=""
         />
         <h2>矯視當日注意事項</h2>
-
         <div class="visionProcess-Notice-Card">
           <h4>矯視前</h4>
           <ul>
@@ -398,7 +376,6 @@
             </li>
           </ul>
         </div>
-
         <!-- 矯視過程中 -->
         <div
           class="visionProcess-Notice-Card visionProcess-Notice-Card-section2"
@@ -428,7 +405,6 @@
             </li>
           </ul>
         </div>
-
         <!-- 請勿使用  -->
         <div
           class="visionProcess-Notice-Card visionProcess-Notice-Card-section3"
@@ -453,7 +429,6 @@
         </div>
       </div>
     </section>
-
     <!-- 矯視後覆診 -->
     <section class="section-last" id="afterJiaoShi">
       <div class="section-last-1">
@@ -477,7 +452,6 @@
             </div>
             <p>一星期</p>
           </li>
-
           <li>
             <div>
               <img
@@ -487,7 +461,6 @@
             </div>
             <p>一個月</p>
           </li>
-
           <li>
             <div>
               <img
@@ -497,7 +470,6 @@
             </div>
             <p>三個月</p>
           </li>
-
           <li>
             <div>
               <img
@@ -527,7 +499,6 @@
           ></iframe>
         </div>
       </div>
-
       <div class="section-last-3">
         <img
           src="https://statichk.cmermedical.com/smile/patient-info/section-last-3-title.avif"
@@ -535,7 +506,6 @@
         />
         <h2>矯視後護理</h2>
       </div>
-
       <div class="section-last-4">
         <div class="section-last-4-item">
           <h3>完成SMILE/SMILE Pro矯視後</h3>
@@ -555,21 +525,18 @@
                 <p><i>3</i><span>避免揉擦眼睛</span></p>
               </div>
             </div>
-
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>一星期內</span></h4>
               <div>
                 <p><i>1</i><span>避免使用眼部化妝品</span></p>
               </div>
             </div>
-
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>兩星期內</span></h4>
               <div>
                 <p><i>1</i><span>避免梘水、自來水或污水進入眼睛</span></p>
               </div>
             </div>
-
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>一個月內</span></h4>
               <div>
@@ -623,7 +590,6 @@
         *任何時候若眼睛突然出現劇痛或視力明顯下降等情況，必須盡快求醫。
       </p>
     </section>
-
     <section class="CaseSharingV2">
       <div>
         <svg
@@ -701,32 +667,21 @@
         </a>
       </div>
     </section>
-    <FooterV2 />
-    <FooterMobile />
   </div>
 </template>
 <script>
-import HeadV2 from "@/components/Publice/HeadeV2.vue";
-
-import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
-
 import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
-import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
-
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
 import suitable from "@/components/content/service/ICL-new/suitable.vue";
 import share from "@/components/content/service/ICL-new/share.vue";
-
 import drow from "@/components/content/service/SmileProV2/drow.vue";
-
 export default {
   components: {
     businessHours,
-    FooterMobile,
     Banner,
     H2Tag,
     process,
@@ -734,8 +689,6 @@ export default {
     film,
     suitable,
     share,
-    FooterV2,
-    HeadV2,
     drow,
   },
   head() {
@@ -788,7 +741,6 @@ export default {
   data() {
     return {
       activeIndex: 0,
-
       // tab 列表数据
       tabs: [
         {
@@ -814,17 +766,14 @@ export default {
       browserTitleCn: "诊症须知 - 希玛微笑矫视中心",
     };
   },
-
   methods: {
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-
     scrollToLink(id, idx) {
       this.activeIndex = idx;
       console.log(this.activeIndex);
       this.$forceUpdate();
-
       this.$nextTick(() => {
         const target = document.getElementById(id);
         if (target) {
@@ -833,7 +782,6 @@ export default {
         history.pushState(null, null, `/patient-info#${id}`);
       });
     },
-
     async copyCurrentUrl() {
       try {
         const textArea = document.createElement("textarea");
@@ -842,7 +790,6 @@ export default {
         textArea.select();
         document.execCommand("copy");
         document.body.removeChild(textArea);
-
         this.$message({
           showClose: true,
           message: "複製成功",
@@ -852,7 +799,6 @@ export default {
         console.error("复制失败:", error);
       }
     },
-
     scrollToTopV2() {
       window.scrollTo({
         top: 0,
@@ -860,16 +806,13 @@ export default {
       });
     },
   },
-
   mounted() {
     this.windowWidth = window.innerWidth;
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
       this.isMobile = false;
     }
-
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
@@ -879,7 +822,6 @@ export default {
       }
     });
     // console.log(window.location);
-
     const hash = window.location.hash;
     const matchedIndex = this.tabs.findIndex((tab) => tab.href.includes(hash));
     if (matchedIndex !== -1) {
@@ -888,7 +830,6 @@ export default {
   },
 };
 </script>
-
 <style>
 body {
   overflow-x: hidden;
@@ -902,7 +843,6 @@ body {
 :deep(.share-img) {
   margin-top: 0;
 }
-
 .d-none {
   display: none;
 }
@@ -912,7 +852,6 @@ i {
 .changehang {
   display: none;
 }
-
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
@@ -920,7 +859,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1310px) {
   .new-container {
     max-width: 1320px !important;
@@ -928,7 +866,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (max-width: 1140px) {
   .icl-btn {
     margin-top: 30px;
@@ -954,7 +891,6 @@ i {
       margin-left: 9px;
     }
   }
-
   .new-pubile-title {
     span {
       font-family: "Poppins";
@@ -969,7 +905,6 @@ i {
     margin: 0px auto 30px;
   }
 }
-
 // 移动端
 @media screen and (max-width: 992px) {
   .smile-NewBanner {
@@ -983,7 +918,6 @@ i {
       top: 25.64vw;
       right: 3.08vw;
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       top: 13.59vw;
@@ -1016,7 +950,6 @@ i {
       }
     }
   }
-
   // 面包屑
   .menu-breadcrumb {
     padding-left: 28px;
@@ -1034,7 +967,6 @@ i {
       font-weight: 500;
     }
   }
-
   // 锚链接导航
   .navgation-link {
     position: sticky;
@@ -1045,7 +977,6 @@ i {
       display: flex;
       border: 1px solid #4570b6;
       width: fit-content;
-
       li {
         a {
           display: block;
@@ -1074,7 +1005,6 @@ i {
       }
     }
   }
-
   // 眼睛检查及矫视前
   .check-eye {
     scroll-margin-top: 30.77vw;
@@ -1084,7 +1014,6 @@ i {
     .check-eye-title {
       max-width: 84.62vw;
       text-align: center;
-
       h2 {
         margin-bottom: 0;
         color: #4570b6;
@@ -1094,7 +1023,6 @@ i {
         font-weight: 900;
         line-height: 195%;
       }
-
       .check-eye-title-subtitle {
         margin-top: 2.82vw;
         margin-bottom: 7.69vw;
@@ -1116,7 +1044,6 @@ i {
         letter-spacing: 1.08vw;
       }
     }
-
     .check-eye-list {
       display: flex;
       justify-content: center;
@@ -1142,7 +1069,6 @@ i {
       }
     }
   }
-
   //矯視前停 con 知多啲
   .CorrectedVisionBefore {
     padding-top: 5.9vw;
@@ -1164,7 +1090,6 @@ i {
         line-height: 103.173%;
         letter-spacing: 0.51vw;
         position: relative;
-
         &::before {
           content: "";
           width: 8.72vw;
@@ -1176,7 +1101,6 @@ i {
           left: -9.23vw;
           bottom: -1.03vw;
         }
-
         &::after {
           content: "";
           width: 8.72vw;
@@ -1241,7 +1165,6 @@ i {
           top: -3.59vw;
         }
       }
-
       & > .CorrectedVisionBefore-Process-item:nth-child(1),
       & > .CorrectedVisionBefore-Process-item:nth-child(3) {
         &::after {
@@ -1256,7 +1179,6 @@ i {
           z-index: -1;
         }
       }
-
       & > .CorrectedVisionBefore-Process-item:nth-child(1) {
         background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg1.avif");
         background-size: 100% auto;
@@ -1403,11 +1325,9 @@ i {
       }
     }
   }
-
   // 矫视流程
   .visionProcess {
     scroll-margin-top: 30.77vw;
-
     padding-top: 7.69vw;
     background: #f4fafc;
     & > h2 {
@@ -1454,7 +1374,6 @@ i {
     //         align-items: center;
     //         width: 41px;
     //         height: 41px;
-
     //         position: absolute;
     //         top: -10px;
     //         left: 6px;
@@ -1490,14 +1409,12 @@ i {
     //       letter-spacing: 3.5px;
     //     }
     //   }
-
     //   & > .visionProcess_Pcs-item:nth-child(1) {
     //     .visionProcess_Pcs-item-img {
     //       img {
     //         width: 64px;
     //         height: 74px;
     //       }
-
     //       &::after {
     //         content: "";
     //         position: absolute;
@@ -1512,7 +1429,6 @@ i {
     //       }
     //     }
     //   }
-
     //   & > .visionProcess_Pcs-item:nth-child(2) {
     //     .visionProcess_Pcs-item-img {
     //       img {
@@ -1521,14 +1437,12 @@ i {
     //       }
     //     }
     //   }
-
     //   & > .visionProcess_Pcs-item:nth-child(3) {
     //     .visionProcess_Pcs-item-img {
     //       img {
     //         width: 71px;
     //         height: 74px;
     //       }
-
     //       &::after {
     //         content: "";
     //         position: absolute;
@@ -1587,7 +1501,6 @@ i {
               transform: translate(100%, -50%);
               width: 24.2vw;
               height: 0.26vw;
-
               background: linear-gradient(
                 to right,
                 #4570b6 50%,
@@ -1609,7 +1522,6 @@ i {
             letter-spacing: 0.9vw;
           }
         }
-
         & > li:nth-child(2) {
           i {
             &::after {
@@ -1617,7 +1529,6 @@ i {
             }
           }
         }
-
         & > li:nth-child(3) {
           p {
             letter-spacing: 0;
@@ -1640,11 +1551,9 @@ i {
         }
       }
     }
-
     .visionProcess-Notice {
       margin-top: 9.23vw;
       padding-bottom: 10.26vw;
-
       & > img {
         width: 11.79vw;
         height: 12.31vw;
@@ -1661,7 +1570,6 @@ i {
         line-height: 103.173%;
         letter-spacing: 0.51vw;
         position: relative;
-
         &::before {
           content: "";
           width: 8.72vw;
@@ -1673,7 +1581,6 @@ i {
           left: -9.23vw;
           bottom: -1.03vw;
         }
-
         &::after {
           content: "";
           width: 8.72vw;
@@ -1686,7 +1593,6 @@ i {
           bottom: -1.03vw !important;
         }
       }
-
       .visionProcess-Notice-Card {
         max-width: 86.15vw;
         margin: 0 auto;
@@ -1715,11 +1621,9 @@ i {
             align-items: center;
             justify-content: start;
             position: relative;
-
             gap: 3.59vw;
             height: 38.21vw;
             width: 50%;
-
             img {
               width: 13.08vw;
               height: auto;
@@ -1801,11 +1705,9 @@ i {
       }
     }
   }
-
   //矯視後覆診
   .section-last {
     scroll-margin-top: 30.77vw;
-
     background: #def1ff;
     padding-top: 10.26vw;
     padding-bottom: 7.69vw;
@@ -1813,7 +1715,6 @@ i {
       h2 {
         text-align: center;
         margin-bottom: 2.82vw;
-
         color: #4570b6;
         font-family: "Noto Sans TC";
         font-size: 5.13vw;
@@ -1826,7 +1727,6 @@ i {
         flex-wrap: wrap;
         justify-content: center;
         gap: 7.69vw 8.46vw;
-
         li {
           width: 22.82vw;
           position: relative;
@@ -1842,7 +1742,6 @@ i {
             width: 2.05vw;
             height: 3.59vw;
           }
-
           & > div {
             display: flex;
             align-items: center;
@@ -1889,7 +1788,6 @@ i {
         }
       }
     }
-
     .section-last-2 {
       h2 {
         margin: 12.82vw auto 1.54vw;
@@ -1910,7 +1808,6 @@ i {
           border: none;
         }
       }
-
       & > p {
         max-width: 86.15vw;
         margin: 5.13vw auto 0;
@@ -1933,10 +1830,8 @@ i {
     .section-last-3 {
       margin-top: 12.82vw;
       margin-bottom: 7.69vw;
-
       & > img {
         width: 11.79vw;
-
         margin: 0 auto;
       }
       h2 {
@@ -1950,7 +1845,6 @@ i {
         line-height: 103.173%;
         letter-spacing: 0.51vw;
         position: relative;
-
         &::before {
           content: "";
           width: 8.72vw;
@@ -1962,7 +1856,6 @@ i {
           left: -9.23vw;
           bottom: -1.03vw;
         }
-
         &::after {
           content: "";
           width: 8.72vw;
@@ -1983,14 +1876,12 @@ i {
       align-items: center;
       .section-last-4-item {
         width: 87.18vw;
-
         border-radius: 12px 12px 28px 28px;
         overflow: hidden;
         h3 {
           background: #d0e2ff;
           padding: 3.59vw 0;
           text-align: center;
-
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: 4.62vw;
@@ -2043,7 +1934,6 @@ i {
               p {
                 display: flex;
                 gap: 2.49vw;
-
                 i {
                   display: flex;
                   align-items: center;
@@ -2095,7 +1985,6 @@ i {
     .section-last-5 {
       width: 86.15vw;
       margin: 7.95vw auto 0px;
-
       color: #6d6e71;
       font-family: "Noto Sans HK";
       font-size: 3.59vw;
@@ -2105,11 +1994,9 @@ i {
       letter-spacing: 0.72vw;
     }
   }
-
   // 分享
   .CaseSharingV2 {
     width: fit-content;
-
     margin: 44px auto 0;
     & > div:nth-child(1) {
       display: flex;
@@ -2143,7 +2030,6 @@ i {
     }
   }
 }
-
 // pc端
 @media screen and (min-width: 992px) {
   .changehon {
@@ -2170,7 +2056,6 @@ i {
       left: inherit;
       right: clamp(18px, 1.88vw, 36px);
     }
-
     .smile-NewBanner-Title {
       position: absolute;
       bottom: clamp(45px, 4.69vw, 90px);
@@ -2203,7 +2088,6 @@ i {
       }
     }
   }
-
   // 面包屑
   .menu-breadcrumb {
     padding-left: clamp(38.5px, 4.01vw, 77px);
@@ -2221,7 +2105,6 @@ i {
       font-weight: 500;
     }
   }
-
   // 锚链接导航
   .navgation-link {
     position: sticky;
@@ -2229,12 +2112,10 @@ i {
     opacity: 1;
     z-index: 9;
     margin-top: 72px;
-
     ul {
       display: flex;
       border: 1px solid #4570b6;
       width: fit-content;
-
       li {
         a {
           display: block;
@@ -2265,7 +2146,6 @@ i {
       }
     }
   }
-
   // 眼睛检查及矫视前
   .check-eye {
     scroll-margin-top: clamp(125px, 13.02vw, 250px);
@@ -2275,7 +2155,6 @@ i {
     padding-bottom: clamp(77px, 8.02vw, 154px);
     .check-eye-title {
       text-align: center;
-
       h2 {
         color: #4570b6;
         font-family: "Noto Sans TC";
@@ -2285,7 +2164,6 @@ i {
         line-height: 1;
         letter-spacing: clamp(1.5px, 0.16vw, 3px);
       }
-
       .check-eye-title-subtitle {
         margin-top: clamp(18px, 1.88vw, 36px);
         margin-bottom: clamp(22px, 2.29vw, 44px);
@@ -2308,7 +2186,6 @@ i {
         letter-spacing: clamp(3px, 0.31vw, 6px);
       }
     }
-
     .check-eye-list {
       display: flex;
       justify-content: center;
@@ -2334,7 +2211,6 @@ i {
       }
     }
   }
-
   //矯視前停 con 知多啲
   .CorrectedVisionBefore {
     padding-top: clamp(41.5px, 4.32vw, 83px);
@@ -2356,7 +2232,6 @@ i {
         line-height: 1;
         letter-spacing: clamp(1.5px, 0.16vw, 3px);
         position: relative;
-
         &::before {
           content: "";
           width: clamp(25px, 2.6vw, 50px);
@@ -2368,7 +2243,6 @@ i {
           left: clamp(-50px, -2.6vw, -25px);
           bottom: clamp(-4px, -0.21vw, -2px);
         }
-
         &::after {
           content: "";
           width: clamp(25px, 2.6vw, 50px);
@@ -2392,7 +2266,6 @@ i {
         }
       }
     }
-
     .CorrectedVisionBefore-Process {
       margin-top: clamp(78.5px, 8.18vw, 157px);
       display: flex;
@@ -2440,7 +2313,6 @@ i {
           transform: translateY(-50%);
         }
       }
-
       & > .CorrectedVisionBefore-Process-item:nth-child(1),
       & > .CorrectedVisionBefore-Process-item:nth-child(3) {
         &::after {
@@ -2455,7 +2327,6 @@ i {
           z-index: -1;
         }
       }
-
       & > .CorrectedVisionBefore-Process-item:nth-child(1) {
         background: url("https://statichk.cmermedical.com/smile/patient-info/CorrectedVisionBefore-Process-bg1.avif");
         background-size: 100% auto;
@@ -2514,7 +2385,6 @@ i {
       width: clamp(540px, 56.25vw, 1080px);
       margin: 0 auto clamp(26px, 2.71vw, 52px);
       border: clamp(0.5px, 0.05vw, 1px) solid #4471b7;
-
       & > div:nth-child(2) {
         background: #4471b7;
         h4,
@@ -2598,7 +2468,6 @@ i {
         font-weight: 300;
         line-height: 1.8;
         letter-spacing: clamp(2.5px, 0.26vw, 5px);
-
         span {
           b {
             font-weight: 300;
@@ -2608,7 +2477,6 @@ i {
       }
     }
   }
-
   // 矫视流程
   .visionProcess {
     scroll-margin-top: clamp(125px, 13.02vw, 250px);
@@ -2653,7 +2521,6 @@ i {
     //       justify-content: center;
     //       align-items: center;
     //       position: relative;
-
     //       &::after {
     //         content: "";
     //         position: absolute;
@@ -2666,7 +2533,6 @@ i {
     //         top: 50%;
     //         transform: translateY(-50%);
     //       }
-
     //       & > div {
     //         display: flex;
     //         flex-direction: column;
@@ -2674,7 +2540,6 @@ i {
     //         align-items: center;
     //         width: 63px;
     //         height: 63px;
-
     //         position: absolute;
     //         top: -16px;
     //         left: 9px;
@@ -2711,7 +2576,6 @@ i {
     //       letter-spacing: 5.5px;
     //     }
     //   }
-
     //   & > .visionProcess_Pcs-item:nth-child(1) {
     //     .visionProcess_Pcs-item-img {
     //       img {
@@ -2721,7 +2585,6 @@ i {
     //       }
     //     }
     //   }
-
     //   & > .visionProcess_Pcs-item:nth-child(2) {
     //     .visionProcess_Pcs-item-img {
     //       img {
@@ -2730,7 +2593,6 @@ i {
     //       }
     //     }
     //   }
-
     //   & > .visionProcess_Pcs-item:nth-child(3) {
     //     .visionProcess_Pcs-item-img {
     //       img {
@@ -2751,7 +2613,6 @@ i {
     //     }
     //   }
     // }
-
     .visionProcess_Plc {
       ul {
         max-width: clamp(543.5px, 56.61vw, 1087px);
@@ -2787,7 +2648,6 @@ i {
               transform: translate(100%, -50%);
               width: clamp(78px, 8.13vw, 156px);
               height: 1px;
-
               background: linear-gradient(
                 to right,
                 #4570b6 50%,
@@ -2809,7 +2669,6 @@ i {
             letter-spacing: clamp(2.75px, 0.29vw, 5.5px);
           }
         }
-
         & > li:nth-child(2) {
           i {
             &::after {
@@ -2843,7 +2702,6 @@ i {
         }
       }
     }
-
     .visionProcess-Notice {
       margin-top: clamp(18px, 1.88vw, 36px);
       & > img {
@@ -2862,7 +2720,6 @@ i {
         line-height: 100%;
         letter-spacing: clamp(1.5px, 0.16vw, 3px);
         position: relative;
-
         &::before {
           content: "";
           width: clamp(25px, 2.6vw, 50px);
@@ -2874,7 +2731,6 @@ i {
           left: clamp(-55px, -2.86vw, -27.5px);
           bottom: -10px clamp(-10px, -0.52vw, -5px);
         }
-
         &::after {
           content: "";
           width: clamp(25px, 2.6vw, 50px);
@@ -2887,7 +2743,6 @@ i {
           bottom: -10px clamp(-10px, -0.52vw, -5px) !important;
         }
       }
-
       .visionProcess-Notice-Card {
         max-width: clamp(600px, 62.5vw, 1200px);
         margin: 0 auto;
@@ -2920,7 +2775,6 @@ i {
             height: clamp(112.5px, 11.72vw, 225px);
             width: clamp(188px, 19.58vw, 376px);
             padding-top: clamp(11px, 1.15vw, 22px);
-
             img {
               width: auto;
               height: clamp(46px, 4.79vw, 92px);
@@ -2934,7 +2788,6 @@ i {
               font-weight: 300;
               line-height: 130.482%;
             }
-
             &::after {
               content: "";
               position: absolute;
@@ -2964,7 +2817,6 @@ i {
       }
     }
   }
-
   //矯視後覆診
   .section-last {
     scroll-margin-top: clamp(125px, 13.02vw, 250px);
@@ -2975,7 +2827,6 @@ i {
       h2 {
         text-align: center;
         margin-bottom: clamp(20px, 2.08vw, 40px);
-
         color: #4570b6;
         font-family: "Noto Sans TC";
         font-size: clamp(15px, 1.56vw, 30px);
@@ -2986,10 +2837,8 @@ i {
       }
       ul {
         display: flex;
-
         justify-content: center;
         gap: 0 clamp(59.5px, 6.2vw, 119px);
-
         li {
           width: clamp(100px, 10.42vw, 200px);
           position: relative;
@@ -3005,7 +2854,6 @@ i {
             width: clamp(9px, 0.94vw, 18px);
             height: clamp(15px, 1.56vw, 30px);
           }
-
           & > div {
             display: flex;
             align-items: center;
@@ -3044,7 +2892,6 @@ i {
             line-height: 1.5;
           }
         }
-
         & > li:last-child {
           &::after {
             content: none;
@@ -3052,7 +2899,6 @@ i {
         }
       }
     }
-
     .section-last-2 {
       h2 {
         margin: clamp(50px, 5.21vw, 100px) auto clamp(26px, 2.71vw, 52px);
@@ -3074,7 +2920,6 @@ i {
           border: none;
         }
       }
-
       & > p {
         max-width: clamp(556px, 57.92vw, 1112px);
         margin: clamp(20px, 2.08vw, 40px) auto 0;
@@ -3094,11 +2939,9 @@ i {
         }
       }
     }
-
     .section-last-3 {
       padding-top: clamp(20px, 2.08vw, 40px);
       padding-bottom: clamp(35px, 3.65vw, 70px);
-
       & > img {
         width: clamp(33.5px, 3.49vw, 67px);
         margin: 0 auto;
@@ -3114,7 +2957,6 @@ i {
         line-height: 100%;
         letter-spacing: clamp(1.5px, 0.16vw, 3px);
         position: relative;
-
         &::before {
           content: "";
           width: clamp(25px, 2.6vw, 50px);
@@ -3126,7 +2968,6 @@ i {
           left: clamp(-55px, -2.86vw, -27.5px);
           bottom: clamp(-10px, -0.52vw, -5px);
         }
-
         &::after {
           content: "";
           width: clamp(25px, 2.6vw, 50px);
@@ -3140,7 +2981,6 @@ i {
         }
       }
     }
-
     .section-last-4 {
       display: flex;
       gap: clamp(11px, 1.15vw, 22px);
@@ -3155,7 +2995,6 @@ i {
           background: #d0e2ff;
           padding: clamp(11px, 1.15vw, 22px) 0;
           text-align: center;
-
           color: #4570b6;
           font-family: "Noto Sans TC";
           font-size: clamp(15px, 1.56vw, 30px);
@@ -3209,7 +3048,6 @@ i {
               p {
                 display: flex;
                 gap: clamp(8px, 0.83vw, 16px);
-
                 i {
                   display: flex;
                   align-items: center;
@@ -3219,7 +3057,6 @@ i {
                   flex-shrink: 0;
                   background: #4570b6;
                   border-radius: 50%;
-
                   color: #fff;
                   font-family: "Noto Sans TC";
                   font-size: clamp(11px, 1.15vw, 22px);
@@ -3248,7 +3085,6 @@ i {
         }
         .section-last-4-item-content {
           height: 100%;
-
           .section-last-4-item-content-text {
             h4 {
               color: #09a1b5;
@@ -3262,7 +3098,6 @@ i {
         }
       }
     }
-
     .section-last-5 {
       margin: clamp(18.5px, 1.93vw, 37px) auto 0px;
       color: #6d6e71;
@@ -3275,7 +3110,6 @@ i {
       letter-spacing: clamp(3px, 0.31vw, 6px);
     }
   }
-
   // 分享给朋友
   .CaseSharingV2 {
     display: none;
@@ -3284,7 +3118,6 @@ i {
     margin-top: 0 !important;
   }
 }
-
 @media screen and (min-width: 1140px) {
   .head-bg {
     position: fixed;
@@ -3300,7 +3133,6 @@ i {
   .d-xl-block {
     display: block;
   }
-
   .icl-btn {
     margin-top: 35px;
     display: flex;
@@ -3310,7 +3142,6 @@ i {
     padding: 10px 57px;
     border-radius: 100px;
     border: 2px solid #4570b6;
-
     background: #4570b6;
     color: #fff;
     text-align: justify;
@@ -3326,7 +3157,6 @@ i {
       margin-left: 15px;
     }
   }
-
   .new-pubile-title {
     color: #4570b6;
     font-family: "Noto Sans TC";

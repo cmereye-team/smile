@@ -81,18 +81,24 @@ export const $router = [
     title: "診症須知",
     component: resolve("pages/new-page/patient-info.vue"),
   },
-  {
-    path: "/flow-of-vision-correction",
-    name: "flow-of-vision-correction",
-    title: "矯視流程",
-    component: resolve("pages/flow-of-vision-correction/index.vue"),
-  },
-  {
-    path: "/post-corrective-care",
-    name: "post-corrective-care",
-    title: "矯視後覆診",
-    component: resolve("pages/post-corrective-care/index.vue"),
-  },
+  // {
+  //   path: "/eye-checkup",
+  //   name: "eye-checkup",
+  //   title: "眼睛檢查及矯視前",
+  //   component: resolve("pages/eye-checkup/index.vue"),
+  // },
+  // {
+  //   path: "/flow-of-vision-correction",
+  //   name: "flow-of-vision-correction",
+  //   title: "矯視流程",
+  //   component: resolve("pages/flow-of-vision-correction/index.vue"),
+  // },
+  // {
+  //   path: "/post-corrective-care",
+  //   name: "post-corrective-care",
+  //   title: "矯視後覆診",
+  //   component: resolve("pages/post-corrective-care/index.vue"),
+  // },
   {
     path: "/fee",
     name: "fee",
@@ -139,12 +145,6 @@ export const $router = [
     name: "booking",
     title: "預約服務",
     component: resolve("pages/booking/index.vue"),
-  },
-  {
-    path: "/eye-checkup",
-    name: "eye-checkup",
-    title: "眼睛檢查及矯視前",
-    component: resolve("pages/eye-checkup/index.vue"),
   },
   {
     path: "/ophthalmicInfo/AppointForm",

@@ -1745,7 +1745,6 @@ import drow from "@/components/content/service/SmileProV2/drow.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import topNotice from "@/components/Publice/topNotice.vue";
 export default {
-  layout: 'default',
   components: {
     businessHours,
     Banner,

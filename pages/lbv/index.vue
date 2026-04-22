@@ -3820,7 +3820,6 @@ function throttle(fn, delay) {
   };
 }
 export default {
-  layout: 'default',
   components: {
     businessHours,
     Banner,

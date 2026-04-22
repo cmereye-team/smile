@@ -1,6 +1,6 @@
 <!--
  * @Date: 2024-04-26 18:54:12
- * @LastEditTime: 2026-04-22 11:43:41
+ * @LastEditTime: 2026-04-22 14:14:55
  * @FilePath: /pages/new-page/home.vue
  * @Description: 首页
 -->
@@ -88,7 +88,6 @@
             </clipPath>
           </defs>
         </svg>
-
         <svg
           class="centerSevice-svg-bottom"
           width="332"
@@ -148,12 +147,10 @@
             stroke-miterlimit="10"
           />
         </svg>
-
         <div class="centerIntroBox-top">
           <h3 class="centerIntroBox-top-title">
             {{ $t("home.home_referral.title") }}
           </h3>
-
           <p>{{ $t("home.home_referral_service.sub_title") }}</p>
         </div>
         <div class="centerIntroBox-bottom">
@@ -190,7 +187,6 @@
         </div>
       </div>
     </section>
-
     <!-- 中心服务 -->
     <div class="centerSevice-service">
       <h3 class="centerSevice-service-title">
@@ -213,7 +209,6 @@
                 <div class="centerSeviceNewItem-textList" v-else>
                   <p v-for="(text, i) in item.textmb" :key="i">{{ text }}</p>
                 </div>
-
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="29"
@@ -237,7 +232,6 @@
               </div>
             </a>
           </div>
-
           <div class="centerSevice-btn-List">
             <nuxt-link to="/patient-info" class="centerSevice-btn">
               <span> {{ $t("home.headers.diagnosisInstructions") }} </span>
@@ -262,7 +256,6 @@
                 />
               </svg>
             </nuxt-link>
-
             <a
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-15)%E7%9F%AF%E8%A6%96%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -294,7 +287,6 @@
         </div>
       </div>
     </div>
-
     <!-- 四大特色 -->
     <section class="fourFeature" ref="fourFeature">
       <div class="container new-container">
@@ -367,7 +359,6 @@
                   fill="#4570B6"
                 />
               </svg>
-
               <p>
                 Reasons<br />
                 to choose us
@@ -391,7 +382,6 @@
               <span>大特色</span>
             </div>
           </div>
-
           <div class="fourFeature-Box-List">
             <div class="fourFeature-Box-List-item">
               <h5>案例</h5>
@@ -452,11 +442,9 @@
                   stroke-linejoin="round"
                 />
               </svg>
-
               <p>超過<span>35,000</span>隻</p>
               <i>眼睛完成微笑矯視</i>
             </div>
-
             <div class="fourFeature-Box-List-item">
               <h5>首間</h5>
               <svg
@@ -550,11 +538,9 @@
                   </clipPath>
                 </defs>
               </svg>
-
               <p>第<span>1</span>間</p>
               <i>香港上市眼科中心</i>
             </div>
-
             <div class="fourFeature-Box-List-item">
               <h5>醫生</h5>
               <svg
@@ -628,11 +614,9 @@
                   stroke-linejoin="round"
                 />
               </svg>
-
               <p><span>13位</span></p>
               <i>眼科專科醫生</i>
             </div>
-
             <div class="fourFeature-Box-List-item">
               <h5>面積</h5>
               <svg
@@ -737,11 +721,9 @@
                   </clipPath>
                 </defs>
               </svg>
-
               <p><span>8,000</span>尺</p>
               <i>寬敞、舒適中心環境</i>
             </div>
-
             <svg
               class="fourFeature-Box-List-svg-top d-none d-lg-block"
               xmlns="http://www.w3.org/2000/svg"
@@ -758,7 +740,6 @@
                 stroke-dasharray="1 9"
               />
             </svg>
-
             <svg
               class="fourFeature-Box-List-svg-top d-lg-none"
               xmlns="http://www.w3.org/2000/svg"
@@ -791,7 +772,6 @@
                 stroke-dasharray="1 9"
               />
             </svg>
-
             <svg
               class="fourFeature-Box-List-svg-bottom d-lg-none"
               xmlns="http://www.w3.org/2000/svg"
@@ -808,7 +788,6 @@
                 stroke-dasharray="0.48 4.32"
               />
             </svg>
-
             <svg
               class="fourFeature-Box-List-svg-center d-none d-lg-block"
               xmlns="http://www.w3.org/2000/svg"
@@ -825,7 +804,6 @@
                 stroke-dasharray="1 9"
               />
             </svg>
-
             <svg
               class="fourFeature-Box-List-svg-center d-lg-none"
               xmlns="http://www.w3.org/2000/svg"
@@ -846,9 +824,7 @@
         </div>
       </div>
     </section>
-
     <UserShare :user-share="ShareData"></UserShare>
-
     <!-- 用户评分 -->
     <section class="UserRating">
       <div class="UserRatingContainer">
@@ -905,7 +881,6 @@
                                 fill="#4570B6"
                               />
                             </svg>
-
                             <svg
                               class="d-none d-lg-block"
                               xmlns="http://www.w3.org/2000/svg"
@@ -951,7 +926,6 @@
                 矯視前先要進行全面術前眼睛檢查，包括屈光檢查、全面眼底檢查、醫生會診為你的眼睛狀況評估及提供矯視方案建議等。如有興趣<span>進行矯視，立即WhatsApp預約</span>我們的<span>術前眼睛檢查服務</span>。如想了解更多有關SMILE
                 Pro/SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式<span>有疑問，歡迎預約</span>我們矯視中心的<span>講座了解更多</span>。
               </p>
-
               <div class="UserRatingBox-Link">
                 <a href="/patient-info" class="UserShareBox-Link-btnone">
                   <svg
@@ -1176,9 +1150,7 @@
         </div>
       </div>
     </section>
-
     <MarqueeCarousel></MarqueeCarousel>
-
     <section class="CaseSharingV2">
       <div>
         <svg
@@ -1256,7 +1228,6 @@
         </a>
       </div>
     </section>
-
     <div class="top-btnV2" @click="scrollToTopV2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1291,9 +1262,7 @@ import share from "@/components/content/service/ICL-new/share.vue";
 import MarqueeCarousel from "@/components/commom/MarqueeCarousel/MarqueeCarousel.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import Share from "../../components/content/service/ICL/share.vue";
-
 export default {
-  layout: 'default',
   components: {
     businessHours,
     Banner,
@@ -1313,7 +1282,6 @@ export default {
         meta: [{ hid: "robots", name: "robots", content: "noindex" }],
       };
     }
-
     return {
       title:
         this.$i18n.locale === "cn" ? this.browserTitleCn : this.browserTitle,
@@ -1372,7 +1340,6 @@ export default {
           textmb: ["適合", "1000度以下近視", "500度以下散光"],
           link: "/vision-correction/relex-smile",
         },
-
         {
           title: "ICL",
           text: ["適合", "1800度以下近視", "1000度以下遠視", "600度以下散光"],
@@ -1392,7 +1359,6 @@ export default {
           link: "/vision-correction-lasik",
         },
       ],
-
       swiperOptions: {
         loop: true, // 开启无限循环
         slidesPerView: "auto",
@@ -1415,7 +1381,6 @@ export default {
               container.addEventListener("mouseenter", () => {
                 swiper.autoplay.stop();
               });
-
               container.addEventListener("mouseleave", () => {
                 swiper.autoplay.start();
               });
@@ -1423,7 +1388,6 @@ export default {
           },
         },
       },
-
       environmentImg: {
         loop: true, // 开启无限循环
         slidesPerView: "auto",
@@ -1445,7 +1409,6 @@ export default {
               container.addEventListener("mouseenter", () => {
                 swiper.autoplay.stop();
               });
-
               container.addEventListener("mouseleave", () => {
                 swiper.autoplay.start();
               });
@@ -1453,7 +1416,6 @@ export default {
           },
         },
       },
-
       environmentImgList: [
         {
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/index-environmentImgList-1.avif",
@@ -1468,7 +1430,6 @@ export default {
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/index-environmentImgList-4.avif",
         },
       ],
-
       evaluateList: [
         {
           name: "Yee",
@@ -1484,7 +1445,6 @@ export default {
           commit:
             "手術過程順暢✨隻眼都復原好快術後嘅跟進都好貼🙆🏻‍♀️想做矯視都可以考慮一下呢間✨",
         },
-
         {
           name: "Benedict",
           href: "https://g.co/kgs/5BgAuFF",
@@ -1492,7 +1452,6 @@ export default {
           commit:
             "過程好順利，工作人員都解釋得好清楚有啲咩突發嘢手術人員都處理得好瞬速同有效可能效果因人而異，但係起碼我眼乾情況唔算嚴重😃可以接受嘅同埋都恢復得快",
         },
-
         {
           name: "Kate",
           href: "https://g.co/kgs/Ais2ge6",
@@ -1500,7 +1459,6 @@ export default {
           commit:
             "推薦 Smile Pro 手術，醫生和診所護士十分專業和細心。術前檢查充足，手術過程迅速，術後都有專人跟進情況，十分安心。",
         },
-
         {
           name: "Andy",
           href: "https://g.co/kgs/yAzUwfK",
@@ -1508,7 +1466,6 @@ export default {
           commit:
             "做手術過程好smooth, 術後嘅護理同複診都跟進得足。視力已經完全去翻正常人程度",
         },
-
         {
           name: "Milk",
           href: "https://g.co/kgs/7kMRjJ5",
@@ -1516,7 +1473,6 @@ export default {
           commit:
             "由預約到術後覆診流程都十分順暢。診所內職員每一個步驟講解十分清楚，令手術當日都沒有太大緊張感",
         },
-
         {
           name: "Eileen",
           href: "https://g.co/kgs/vECv4wB",
@@ -1545,7 +1501,6 @@ export default {
           commit: "好開心唔需要再戴眼鏡，生活便利，特別係大熱天時👍🏻",
         },
       ],
-
       ShareData: [
         {
           type: "ICL",
@@ -1555,7 +1510,6 @@ export default {
           nameEn: "Kathy",
           nameCn: "王頌茵",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/TBI6J31JwJQ",
@@ -1564,7 +1518,6 @@ export default {
           nameEn: "Carmen",
           nameCn: "倪嘉雯",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/vxeN1wXeZ5M",
@@ -1573,7 +1526,6 @@ export default {
           nameEn: "Maggie",
           nameCn: "米姬",
         },
-
         {
           type: "ICL",
           href: "https://youtu.be/I2sl4GWqg1w",
@@ -1582,7 +1534,6 @@ export default {
           nameEn: " ",
           nameCn: "麥沛東",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/10KYv_gGgWM",
@@ -1591,7 +1542,6 @@ export default {
           nameEn: " ",
           nameCn: "Anson Au",
         },
-
         {
           type: "SMILE",
           href: "https://www.youtube.com/watch?v=JCzzO4Y0kko",
@@ -1600,7 +1550,6 @@ export default {
           nameEn: "Ada",
           nameCn: "姜咏鑫",
         },
-
         {
           type: "SMILE Pro",
           href: "https://www.youtube.com/watch?v=1p5Qm_772jI",
@@ -1609,7 +1558,6 @@ export default {
           nameEn: " ",
           nameCn: "細貓",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/kVEJ-PN4AJo",
@@ -1618,7 +1566,6 @@ export default {
           nameEn: " ",
           nameCn: "Cindy Wong",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/VoGlE1dJPhc",
@@ -1627,7 +1574,6 @@ export default {
           nameEn: "Pinky",
           nameCn: "",
         },
-
         {
           type: "SMILE Pro",
           href: "https://youtu.be/1Ic0z7wiVv8",
@@ -1636,7 +1582,6 @@ export default {
           nameEn: "Tiffany",
           nameCn: "鄧伊程",
         },
-
         {
           type: "SMILE",
           href: "https://youtu.be/tLsWfdZy4P4",
@@ -1645,7 +1590,6 @@ export default {
           nameEn: " ",
           nameCn: "馬燕茹",
         },
-
         {
           type: "SMILE",
           href: "https://youtu.be/_wk_gZGzB1s",
@@ -1659,7 +1603,6 @@ export default {
           nameEn: " ",
           nameCn: "李旭川",
         },
-
         {
           type: "SMILE",
           href: "https://youtu.be/TGxol6pNXSY",
@@ -1668,7 +1611,6 @@ export default {
           nameEn: " ",
           nameCn: "黃啟樂",
         },
-
         {
           type: "SMILE",
           href: "https://youtu.be/CJEE6UQKPes",
@@ -1678,7 +1620,6 @@ export default {
           nameCn: "尹焯熙",
         },
       ],
-
       isMobile: false,
       canonicalHref: "https://smile.hkcmereye.com",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn",
@@ -1686,19 +1627,16 @@ export default {
       browserTitleCn: "主页 - 希玛微笑矫视中心",
     };
   },
-
   methods: {
     scrollToTopV2New() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-
     scrollToTopV2() {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
     },
-
     handleScroll() {
       const box = this.$refs.fourFeature; // 获取 box 元素
       const boxItemLeft = this.$refs.boxItemLeft; // 获取 boxitem-left 元素
@@ -1706,13 +1644,11 @@ export default {
         return;
       }
       if (!box || !boxItemLeft) return;
-
       // 获取相关元素的高度和位置
       const boxTop = box.offsetTop;
       const boxHeight = box.offsetHeight;
       const boxItemLeftHeight = boxItemLeft.offsetHeight;
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
       // 动态调整 boxitem-left 的位置
       if (
         scrollTop > boxTop &&
@@ -1731,7 +1667,6 @@ export default {
         boxItemLeft.style.top = "160px";
       }
     },
-
     async copyCurrentUrl() {
       try {
         const textArea = document.createElement("textarea");
@@ -1740,7 +1675,6 @@ export default {
         textArea.select();
         document.execCommand("copy");
         document.body.removeChild(textArea);
-
         this.$message({
           showClose: true,
           message: "複製成功",
@@ -1756,15 +1690,12 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
-
     this.windowWidth = window.innerWidth;
-
     if (window.innerWidth < 768) {
       this.isMobile = true;
     } else {
       this.isMobile = false;
     }
-
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
@@ -1776,7 +1707,6 @@ export default {
   },
 };
 </script>
-
 <style>
 body {
   overflow-x: hidden;
@@ -1789,14 +1719,12 @@ body {
 :deep(.share-img) {
   margin-top: 0;
 }
-
 .d-none {
   display: none;
 }
 i {
   font-style: normal;
 }
-
 @media screen and (max-width: 768px) {
   .center-Banner {
     margin: 80px auto 0;
@@ -1809,7 +1737,6 @@ i {
     padding: 0 15px;
   }
 }
-
 @media screen and (max-width: 992px) {
   // 希瑪微笑矯視中心
   .centerIntro {
@@ -1823,7 +1750,6 @@ i {
         rgba(244, 250, 252, 0) 71.65%
       ),
       #f4fafc;
-
     .centerIntroBox {
       margin: 0 auto;
       position: relative;
@@ -1843,7 +1769,6 @@ i {
         left: clamp(-65px, -16.67vw, -32.5px);
         bottom: clamp(-116px, -29.74vw, -58px);
       }
-
       .centerIntroBox-top {
         text-align: center;
         .centerIntroBox-top-title {
@@ -1857,7 +1782,6 @@ i {
         }
         p {
           width: fit-content;
-
           margin: clamp(11px, 5.64vw, 22px) auto 0;
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -1896,13 +1820,11 @@ i {
       }
     }
   }
-
   // 矯視中心服務
   .centerSevice-service {
     margin-top: 40px;
     // padding: 0 15px;
     // overflow: hidden;
-
     .centerSevice-service-title {
       text-align: center;
       color: #4570b6;
@@ -1913,7 +1835,6 @@ i {
       line-height: 1.16;
       letter-spacing: clamp(2.5px, 1.28vw, 5px);
     }
-
     // 移动端
     .centerSevice-mb {
       margin-top: 28px;
@@ -1926,7 +1847,6 @@ i {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
         gap: clamp(11px, 5.64vw, 22px);
         .centerSevice-mb-List-item {
           width: clamp(83px, 42.56vw, 166px);
@@ -1936,12 +1856,10 @@ i {
           border: 0.5px solid #4570b6;
           background: white;
           position: relative;
-
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
-
           &::after {
             content: "";
             position: absolute;
@@ -1962,7 +1880,6 @@ i {
             font-weight: 700;
             line-height: 1.02;
             letter-spacing: clamp(0.875px, 0.45vw, 1.75px);
-
             position: relative;
             &::after {
               content: "";
@@ -1975,7 +1892,6 @@ i {
               transform: translateX(-50%);
             }
           }
-
           .centerSevice-mb-List-item-text {
             p {
               color: #4570b6;
@@ -2040,7 +1956,6 @@ i {
         right: clamp(-36px, -9.23vw, -18px);
         width: clamp(96.5px, 49.49vw, 193px);
         height: clamp(96.5px, 49.49vw, 193px);
-
         border-radius: 50%;
         background: #4570b6;
         display: flex;
@@ -2078,7 +1993,6 @@ i {
         align-content: center;
         background: #4570b6;
         border: none;
-
         h4 {
           flex-shrink: 0;
           width: 32.31vw;
@@ -2087,7 +2001,6 @@ i {
           display: flex;
           justify-content: center;
           align-items: center;
-
           color: #4570b6;
           text-align: center;
           font-family: "Poppins", sans-serif;
@@ -2152,7 +2065,6 @@ i {
         font-style: normal;
         font-weight: 900;
         line-height: 0.71;
-
         &::after {
           content: "";
           position: absolute;
@@ -2169,7 +2081,6 @@ i {
       }
     }
   }
-
   // 四大特色
   .fourFeature {
     margin-top: 60px;
@@ -2187,7 +2098,6 @@ i {
             height: clamp(69px, 35.38vw, 138px);
           }
         }
-
         .fourFeature-Box-title-right {
           .fourFeature-Box-title-right-svgone {
             width: 100%;
@@ -2232,14 +2142,12 @@ i {
         & > .fourFeature-Box-List-item:nth-child(3) {
           background: white;
         }
-
         .fourFeature-Box-List-svg-top {
           position: absolute;
           top: 0;
           left: 50%;
           transform: translateX(-50%);
         }
-
         .fourFeature-Box-List-svg-bottom {
           position: absolute;
           bottom: 0;
@@ -2253,14 +2161,12 @@ i {
           left: 50%;
           transform: translate(-50%, -50%);
         }
-
         .fourFeature-Box-List-item {
           width: clamp(97.5px, 50vw, 195px);
           height: clamp(97.5px, 50vw, 195px);
           text-align: center;
           padding: clamp(9.5px, 4.87vw, 19px) 0;
           background: #f9f9f9;
-
           h5 {
             width: clamp(38.5px, 19.74vw, 77px);
             height: clamp(14px, 7.18vw, 28px);
@@ -2311,7 +2217,6 @@ i {
       }
     }
   }
-
   // 按钮
   // .centerSevice-btnTwo {
   //   width: fit-content;
@@ -2339,7 +2244,6 @@ i {
   //     letter-spacing: 1px;
   //   }
   // }
-
   // 用户评分
   .UserRating {
     .UserRatingContainer {
@@ -2354,7 +2258,6 @@ i {
           padding-top: clamp(21.5px, 11.03vw, 43px);
           .UserRatingBox-top-content {
             padding: clamp(24px, 12.31vw, 48px) clamp(15px, 7.69vw, 30px) 0;
-
             margin: 0 auto 0;
             width: clamp(180.5px, 92.56vw, 361px);
             height: clamp(218px, 111.79vw, 436px);
@@ -2373,7 +2276,6 @@ i {
                 no-repeat;
               background-size: cover;
             }
-
             h5 {
               text-align: center;
               color: #4570b6;
@@ -2385,7 +2287,6 @@ i {
               letter-spacing: clamp(1px, 0.51vw, 2px);
               padding-bottom: clamp(8.5px, 4.36vw, 17px);
             }
-
             .swiperWrapList {
               height: clamp(174px, 89.23vw, 348px);
               overflow: hidden;
@@ -2432,7 +2333,6 @@ i {
             }
           }
         }
-
         .UserRatingBox-bottom {
           padding-top: clamp(28px, 14.36vw, 56px);
           background: #4570b6;
@@ -2450,7 +2350,6 @@ i {
               line-height: 1.16;
               letter-spacing: clamp(2.5px, 1.28vw, 5px);
             }
-
             p {
               padding: 0 clamp(15px, 7.69vw, 30px);
               color: #fff;
@@ -2466,7 +2365,6 @@ i {
                 font-weight: 700;
               }
             }
-
             .UserRatingBox-Link {
               position: absolute;
               bottom: clamp(25px, 12.82vw, 50px);
@@ -2512,7 +2410,6 @@ i {
                   width: clamp(32.5px, 16.67vw, 65px);
                   height: clamp(24px, 12.31vw, 48px);
                 }
-
                 &::after {
                   content: "";
                   position: absolute;
@@ -2528,7 +2425,6 @@ i {
               }
             }
           }
-
           .UserRatingBox-bottom-bottom {
             .environmentImgList {
               .swiper-wrapper {
@@ -2542,7 +2438,6 @@ i {
                   img {
                     width: 374px;
                     aspect-ratio: 16 / 9;
-
                     height: auto;
                   }
                 }
@@ -2553,7 +2448,6 @@ i {
       }
     }
   }
-
   .CaseSharingV2 {
     width: fit-content;
     margin: 0 auto;
@@ -2590,7 +2484,6 @@ i {
     }
   }
 }
-
 @media screen and (max-width: 390px) {
   .centerSevice-service
     .centerSevice-mb
@@ -2606,12 +2499,10 @@ i {
   .d-lg-block {
     display: block;
   }
-
   // banner
   .center-Banner {
     margin: 160px auto 0;
   }
-
   // 希瑪微笑矯視中心
   .centerIntro {
     margin-top: clamp(38px, 3.96vw, 76px);
@@ -2624,7 +2515,6 @@ i {
         rgba(244, 250, 252, 0) 71.65%
       ),
       #f4fafc;
-
     .centerIntroBox {
       position: relative;
       .centerSevice-svg-top,
@@ -2643,7 +2533,6 @@ i {
         left: clamp(-36px, -1.88vw, -18px);
         bottom: clamp(-210px, -10.94vw, -105px);
       }
-
       .centerIntroBox-top {
         text-align: center;
         .centerIntroBox-top-title {
@@ -2657,7 +2546,6 @@ i {
         }
         p {
           width: fit-content;
-
           margin: clamp(33px, 3.44vw, 66px) auto 0;
           color: #4570b6;
           font-family: "Noto Sans TC";
@@ -2665,7 +2553,6 @@ i {
           font-style: normal;
           font-weight: 250;
           line-height: 1.15;
-
           letter-spacing: clamp(1.3px, 0.14vw, 2.6px);
           position: relative;
           &::before {
@@ -2697,7 +2584,6 @@ i {
       }
     }
   }
-
   // 矯視中心服務
   .centerSevice-service {
     margin-top: clamp(50px, 5.21vw, 100px);
@@ -2717,7 +2603,6 @@ i {
   }
   .centerSevice {
     margin-top: clamp(35px, 3.65vw, 70px);
-
     .centerSeviceNewList {
       display: flex;
       justify-content: center;
@@ -2727,7 +2612,6 @@ i {
       background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/centerSevice/centerSeviceNewList-bg.avif");
       background-repeat: no-repeat;
       background-position: center 100%;
-
       .centerSeviceNewItem {
         width: clamp(135.5px, 14.11vw, 271px);
         height: clamp(76.5px, 7.97vw, 153px);
@@ -2738,7 +2622,6 @@ i {
         transform: translateY(0);
         position: relative;
         overflow: hidden;
-
         h4 {
           display: flex;
           justify-content: center;
@@ -2754,14 +2637,12 @@ i {
           transition: color 0.3s ease;
           letter-spacing: 0;
         }
-
         .centerSeviceNewItem-text {
           position: absolute;
           top: clamp(61.5px, 6.41vw, 123px);
           left: 0;
           width: 100%;
           height: -webkit-fill-available;
-
           margin-top: 0;
           color: #fff;
           text-align: center;
@@ -2775,7 +2656,6 @@ i {
           // transform: translateY(20px);
           transition: all 0.4s ease 0.1s;
         }
-
         svg {
           width: clamp(15px, 1.56vw, 30px);
           height: clamp(15px, 1.56vw, 30px);
@@ -2786,23 +2666,19 @@ i {
           transform: translateY(10px);
           transition: all 0.3s ease 0.2s;
         }
-
         &:hover {
           transform: translateY(-clamp(40px, 4.17vw, 80px));
           background: #4570b6;
           height: clamp(150px, 15.63vw, 302px); /* 增加悬停时的高度 */
-
           h4 {
             color: #fff;
           }
-
           .centerSeviceNewItem-text {
             opacity: 1;
             transform: translateY(
               -clamp(76.5px, 7.97vw, 153px)
             ); /* 向上移动到可见区域 */
           }
-
           svg {
             opacity: 1;
             transform: translateY(0);
@@ -2810,7 +2686,6 @@ i {
         }
       }
     }
-
     // .centerSeviceList {
     //   display: flex;
     //   flex-wrap: wrap;
@@ -2838,7 +2713,6 @@ i {
     //       transform: translateY(2px);
     //       transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
     //     }
-
     //     .edge {
     //       position: absolute;
     //       top: 0;
@@ -2848,7 +2722,6 @@ i {
     //       border-radius: clamp(100px, 10.42vw, 200px);
     //       background: #4570b6;
     //     }
-
     //     .front {
     //       display: block;
     //       position: relative;
@@ -2861,7 +2734,6 @@ i {
     //       flex-direction: column;
     //       align-items: center;
     //       justify-content: center;
-
     //       color: #fff;
     //       text-align: center;
     //       font-family: "ITC Avant Garde Gothic Pro";
@@ -2873,12 +2745,10 @@ i {
     //       transform: translateY(-4px);
     //       transition: all 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
     //       overflow: hidden;
-
     //       .after-text {
     //         display: none;
     //       }
     //     }
-
     //     &:hover {
     //       filter: brightness(110%);
     //       .front {
@@ -2894,7 +2764,6 @@ i {
     //         font-weight: 700;
     //         line-height: 1.75;
     //         letter-spacing: clamp(3px, 0.31vw, 6px);
-
     //         .front-text {
     //           display: none;
     //         }
@@ -2910,7 +2779,6 @@ i {
     //           letter-spacing: clamp(4.5px, 0.47vw, 9px);
     //         }
     //       }
-
     //       .shadow {
     //         transform: translate(
     //           clamp(5.5px, 0.57vw, 11px),
@@ -2919,19 +2787,16 @@ i {
     //         transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
     //       }
     //     }
-
     //     &:active {
     //       .front {
     //         transform: translate(-2px, -2px);
     //         transition: transform 34ms;
     //       }
-
     //       .shadow {
     //         transform: translate(1px, 1px);
     //         transition: transform 34ms;
     //       }
     //     }
-
     //     &:focus:not(:focus-visible) {
     //       outline: none;
     //     }
@@ -2959,7 +2824,6 @@ i {
       // margin: clamp(85px, 8.85vw, 170px) auto 0;
       border: 1px solid #4570b6;
       transition: all 0.3s ease-in-out;
-
       &:hover {
         background: #fff;
         span {
@@ -2990,11 +2854,9 @@ i {
       cursor: pointer;
     }
   }
-
   // 四大特色
   .fourFeature {
     margin-top: clamp(55px, 5.73vw, 110px);
-
     .fourFeature-Box {
       display: flex;
       flex-wrap: wrap;
@@ -3002,7 +2864,6 @@ i {
       align-items: flex-start;
       gap: clamp(40px, 4.17vw, 80px);
       position: relative;
-
       .fourFeature-Box-title {
         display: flex;
         justify-content: center;
@@ -3011,18 +2872,15 @@ i {
         position: sticky;
         top: 0; /* 初始时固定在顶部 */
         z-index: 1; /* 确保左侧元素不被右侧元素覆盖 */
-
         .fourFeature-Box-title-left {
           svg {
             width: clamp(88px, 9.17vw, 176px);
             height: clamp(111px, 11.56vw, 222px);
           }
         }
-
         .fourFeature-Box-title-right {
           .fourFeature-Box-title-right-svgone {
             width: 100%;
-
             height: clamp(40.5px, 4.22vw, 81px);
           }
           p {
@@ -3061,7 +2919,6 @@ i {
         & > .fourFeature-Box-List-item:nth-child(3) {
           background: white;
         }
-
         .fourFeature-Box-List-svg-top {
           position: absolute;
           max-height: clamp(173px, 18.02vw, 346px);
@@ -3069,11 +2926,9 @@ i {
           left: 50%;
           transform: translateX(-50%);
         }
-
         .fourFeature-Box-List-svg-bottom {
           position: absolute;
           max-height: clamp(173px, 18.02vw, 346px);
-
           bottom: 0;
           left: 50%;
           transform: translateX(-50%);
@@ -3085,14 +2940,12 @@ i {
           left: 0;
           transform: translateY(-50%);
         }
-
         .fourFeature-Box-List-item {
           width: clamp(172px, 17.92vw, 344px);
           height: clamp(173px, 18.02vw, 346px);
           text-align: center;
           padding: clamp(20.5px, 2.14vw, 41px) 0;
           background: #f9f9f9;
-
           h5 {
             width: clamp(49.5px, 5.16vw, 99px);
             height: clamp(18px, 1.88vw, 36px);
@@ -3144,7 +2997,6 @@ i {
       }
     }
   }
-
   // 用户评分
   .UserRating {
     .UserRatingContainer {
@@ -3163,7 +3015,6 @@ i {
             background: url("https://statichk.cmermedical.com/smile/VisionCorrectionCenter/UserRating/UserRating-top-rate-pc.avif")
               no-repeat;
             background-size: cover;
-
             position: relative;
             &::before {
               content: "";
@@ -3176,7 +3027,6 @@ i {
                 no-repeat;
               background-size: cover;
             }
-
             h5 {
               text-align: center;
               margin-bottom: clamp(12.5px, 1.3vw, 25px);
@@ -3188,7 +3038,6 @@ i {
               line-height: 1;
               letter-spacing: clamp(1.5px, 0.16vw, 3px);
             }
-
             .swiperWrapList {
               height: clamp(255px, 26.56vw, 510px);
               overflow: hidden;
@@ -3235,7 +3084,6 @@ i {
             }
           }
         }
-
         .UserRatingBox-bottom {
           padding-top: clamp(44.5px, 4.64vw, 89px);
           width: 100vw;
@@ -3254,7 +3102,6 @@ i {
               line-height: 1;
               letter-spacing: clamp(1.5px, 0.16vw, 3px);
             }
-
             p {
               margin-top: clamp(31px, 3.23vw, 62px);
               max-width: clamp(291.5px, 30.36vw, 583px);
@@ -3270,7 +3117,6 @@ i {
                 font-weight: 700;
               }
             }
-
             .UserRatingBox-Link {
               position: absolute;
               bottom: clamp(79px, 8.23vw, 158px);
@@ -3357,7 +3203,6 @@ i {
               }
             }
           }
-
           .UserRatingBox-bottom-bottom {
             .environmentImgList {
               .swiper-wrapper {
@@ -3380,7 +3225,6 @@ i {
       }
     }
   }
-
   @keyframes shake {
     0%,
     100% {
@@ -3404,7 +3248,6 @@ i {
     display: none;
   }
 }
-
 @media screen and (min-width: 1139px) {
   .new-container {
     max-width: 1140px !important;
@@ -3412,7 +3255,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1310px) {
   .new-container {
     max-width: 1320px !important;
@@ -3420,7 +3262,6 @@ i {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 1140px) {
   .head-bg {
     position: fixed;
@@ -3436,7 +3277,6 @@ i {
   .d-xl-block {
     display: block;
   }
-
   // 向上
   .top-btnV2 {
     position: fixed;
