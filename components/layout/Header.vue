@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-22 09:53:50
- * @LastEditTime: 2026-04-22 10:04:40
+ * @LastEditTime: 2026-04-22 10:24:54
  * @FilePath: /components/layout/Header.vue
  * @Description: 统一页头
 -->
@@ -10,13 +10,6 @@
     <div class="head flex md:hidden">
       <HeaderLeft />
       <HeaderMobile />
-      <!-- <nuxt-link to="/icl-event" class="btn-icl_event">
-        <img
-          src="https://static.cmereye.com/imgs/2024/12/d826363f36195d26.png"
-          alt=""
-        />
-        <span>ICL<br />專題講座</span>
-      </nuxt-link> -->
     </div>
     <div class="head hidden md:flex">
       <HeaderLeft />
