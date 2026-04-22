@@ -1,6 +1,6 @@
 <!--
  * @Date: 2026-04-22 09:56:22
- * @LastEditTime: 2026-04-22 16:20:51
+ * @LastEditTime: 2026-04-22 16:31:04
  * @FilePath: /components/layout/HeaderMobile.vue
  * @Description: 移动端页头
 -->
@@ -9,14 +9,14 @@
     <div class="mbHeaderBox mb_menu">
       <div class="mb_menu_langV2">
         <nuxt-link
-          v-if="$i18n.locale == 'hk'"
+          v-if="$i18n.locale == 'cn'"
           :class="['text-center', $i18n.locale === 'hk' ? 'langBoxClass' : '']"
           :to="switchLocalePath('hk')"
         >
           繁
         </nuxt-link>
         <nuxt-link
-          v-if="$i18n.locale == 'cn'"
+          v-if="$i18n.locale == 'hk'"
           :class="['text-center', $i18n.locale === 'cn' ? 'langBoxClass' : '']"
           :to="switchLocalePath('cn')"
         >
@@ -50,7 +50,7 @@
         </div>
         <div>
           <div style="position: relation">
-            <div @click="langBox = true">
+            <div @click="langBox = !langBox">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -299,6 +299,7 @@ export default {
   watch: {
     $route() {
       this.langDrawer = false;
+      this.langBox = false;
     },
   }
 };
