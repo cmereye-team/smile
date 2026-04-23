@@ -357,7 +357,6 @@
         </picture>
       </div>
     </div>
-    <businessHours />
     <div v-show="applySuccess" class="applyDialog">
       <div
         class="applyDialog-wrap rounded-[1.78px] md:rounded-[5px] w-[90%] md:w-auto"
@@ -474,7 +473,6 @@
 <script>
 import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
@@ -482,7 +480,6 @@ export default {
   components: {
     Head,
     Footer,
-    businessHours,
     FooterMobile,
     Banner,
     H2Tag,

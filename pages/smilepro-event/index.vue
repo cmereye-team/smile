@@ -9,7 +9,6 @@
     <Benefit />
     <suitable />
 
-    <BusinessHours />
     <Footer />  
     <FooterMobile />
   </div>
@@ -25,7 +24,6 @@ import film from "@/components/content/service/ICL-R/film2.vue";
 import Merit from "@/components/content/service/ICL-R/merit.vue";
 import Benefit from "@/components/content/service/ICL-R/Benefit2.vue";
 import suitable from "@/components/content/service/ICL-R/suitable2.vue";
-import BusinessHours from "@/components/commom/business/business-hours.vue";
 
 export default {
   components: {

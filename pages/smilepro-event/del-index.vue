@@ -2,12 +2,9 @@
   <div class="icl">
     <Header />
     <Navbar />
-
     <MainBanner />
     <film />
     <Benefit />
-
-    <businessHoursIcl />
     <FooterIcl />
     <footers />
   </div>
@@ -24,7 +21,6 @@ import Benefit from "@/components/content/service/ICL-R/Benefit.vue";
 import suitable from "@/components/content/service/ICL-R/suitable.vue";
 import share from "@/components/content/service/ICL-R/share.vue";
 import footers from "@/components/commom/foot/footers.vue";
-import businessHoursIcl from "@/components/commom/business/business-hours-icl.vue";
 
 export default {
   components: {
@@ -35,7 +31,6 @@ export default {
     film,
     Benefit,
     suitable,
-    businessHoursIcl,
     share,
     footers,
   },

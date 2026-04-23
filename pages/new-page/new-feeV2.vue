@@ -503,7 +503,6 @@
   </div>
 </template>
 <script>
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import FeeSetMeal from "@/components/content/new/FeeSetMeal.vue";
@@ -511,7 +510,6 @@ import FeeTableMobile from "@/components/content/new/FeeTableMobile.vue";
 // import Lasik from "./lasik.vue";
 export default {
   components: {
-    businessHours,
     Banner,
     H2Tag,
     FeeSetMeal,

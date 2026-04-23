@@ -1093,7 +1093,6 @@
         </div>
       </div>
     </div>
-    <businessHours />
     <Footer />
     <FooterMobile />
   </div>
@@ -1101,7 +1100,6 @@
 <script>
 import Head from "@/components/Publice/Head.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import FooterMobile from "@/components/Publice/FooterMobile.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
@@ -1109,7 +1107,6 @@ export default {
   components: {
     Head,
     Footer,
-    businessHours,
     FooterMobile,
     Banner,
     H2Tag,

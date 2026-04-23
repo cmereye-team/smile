@@ -39,17 +39,14 @@
     </div>
     <!-- <div class="blog-more" v-if="isMobile"><i></i><i></i><i></i></div> -->
     <!-- <a class="more-article" @click="getMediaList"> 閱讀更多 </a> -->
-    <businessHours />
   </div>
 </template>
 <script>
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import { Loading } from "element-ui";
 export default {
   components: {
-    businessHours,
     Banner,
     H2Tag,
   },

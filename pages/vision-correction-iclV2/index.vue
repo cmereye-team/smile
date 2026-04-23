@@ -11,7 +11,6 @@
     <suitable />
     <share /> -->
 
-    <BusinessHours />
     <Footer />
     <footers />
   </div>
@@ -21,7 +20,6 @@
 import Header from "@/components/commom/new_head/Header.vue";
 import Navbar from "@/components/commom/new_head/Navbar.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
-import BusinessHours from "@/components/commom/business/business-hours.vue";
 
 import MainBanner from "@/components/content/service/ICL-new/MainBanner.vue";
 import film from "@/components/content/service/ICL-new/film.vue";
@@ -45,7 +43,6 @@ export default {
     suitable,
     share,
     footers,
-    BusinessHours,
   },
   head() {
     return {

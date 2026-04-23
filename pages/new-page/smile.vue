@@ -41,12 +41,10 @@
       >
     </div>
     <Xtra />
-    <businessHours />
   </div>
 </template>
 <script>
 import H2Tag from "@/components/Publice/H2Tag.vue";
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import Step from "@/components/content/service/relex_smile/Step_copy.vue";
 import Benefit from "@/components/content/service/relex_smile/Benefit_copy.vue";
@@ -55,7 +53,6 @@ import Xtra from "@/components/content/service/relex_smile/Xtra_copy.vue";
 
 export default {
   components: {
-    businessHours,
     Banner,
     Step,
     H2Tag,

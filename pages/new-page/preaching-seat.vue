@@ -399,7 +399,6 @@
         </picture>
       </div>
     </div>
-    <!-- <businessHours /> -->
     <div v-show="applySuccess" class="applyDialog">
       <div
         class="applyDialog-wrap rounded-[1.78px] md:rounded-[5px] w-[90%] md:w-auto"
@@ -516,12 +515,10 @@
   </div>
 </template>
 <script>
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
-    businessHours,
     Banner,
     H2Tag,
   },

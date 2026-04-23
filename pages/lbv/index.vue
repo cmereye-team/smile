@@ -3801,7 +3801,6 @@ i {
 </template>
 <script>
 import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -3821,7 +3820,6 @@ function throttle(fn, delay) {
 }
 export default {
   components: {
-    businessHours,
     Banner,
     H2Tag,
     process,

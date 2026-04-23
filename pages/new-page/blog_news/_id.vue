@@ -8,18 +8,15 @@
         <a :href="essay.source" target="_blank">{{ essay.author }}</a>
       </div>
     </div>
-    <businessHours />
     <Footer />
     <FooterMobile />
   </div>
 </template>
 
 <script>
-import businessHours from "@/components/commom/business/business-hours.vue";
 
 export default {
   components: {
-    businessHours,
   },
   data() {
     return {

@@ -670,7 +670,6 @@
   </div>
 </template>
 <script>
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -681,7 +680,6 @@ import share from "@/components/content/service/ICL-new/share.vue";
 import drow from "@/components/content/service/SmileProV2/drow.vue";
 export default {
   components: {
-    businessHours,
     Banner,
     H2Tag,
     process,

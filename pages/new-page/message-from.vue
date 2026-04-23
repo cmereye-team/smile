@@ -40,16 +40,13 @@
                                 '全飛秒SMILE微笑激光矯視' : '老花' }}講座。</div>
             </div>
         </ClientOnly>
-        <businessHours />
     </div>
 </template>
 
 <script>;
-import businessHours from "@/components/commom/business/business-hours.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
     components: {
-        businessHours,
         H2Tag
     },
     data() {

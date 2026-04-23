@@ -4437,7 +4437,6 @@ i {
 </template>
 <script>
 import goTop from "@/components/Publice/goTop.vue";
-import businessHours from "@/components/commom/business/business-hours.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -4448,7 +4447,6 @@ import share from "@/components/content/service/ICL-new/share.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 export default {
   components: {
-    businessHours,
     Banner,
     H2Tag,
     process,
