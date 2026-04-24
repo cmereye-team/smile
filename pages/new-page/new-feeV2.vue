@@ -7,7 +7,7 @@
 <template>
   <div class="fee">
     <div class="fee-wrap">
-      <section class="fee-Banner">
+      <section class="fee-Banner overflow-x-hidden">
         <div class="fee-Banner-Box new-container">
           <div class="fee-Banner-Box-Title">
             <span>PRICE</span>
@@ -18,27 +18,22 @@
         <div class="fee-img">
           <div class="fee-img-Box new-container">
             <div class="fee-img-Box-image">
-              <div class="fee-img-Box-image-name">
+              <!-- <div class="fee-img-Box-image-name">
                 <h2>希瑪微笑閃亮大使</h2>
                 <p>
                   <span> MAGGIE<i>米姬</i></span>
                 </p>
-              </div>
-              <img
+              </div> -->
+              <!-- <img
                 decoding="async"
-                src="https://statichk.cmermedical.com/smile/feeV2/fee-img-newPC.avif"
+                src=""
                 loading="lazy"
                 width="100%"
                 height="100%"
-                srcset="
-                  https://statichk.cmermedical.com/smile/feeV2/fee-img-newMB.avif 400w,
-                  https://statichk.cmermedical.com/smile/feeV2/fee-img-newMB.avif 992w,
-                  https://statichk.cmermedical.com/smile/feeV2/fee-img-newPC.avif
-                "
                 sizes=" (max-width: 992px) 100vw,1216px"
-              />
+              /> -->
               <div class="fee-img-Box-image-tip">
-                本診所絕無<br class="d-lg-none" />其他額外收費
+                本診所絕無其他額外收費
               </div>
             </div>
           </div>
@@ -84,17 +79,17 @@
               <tr>
                 <td>價錢(雙眼)</td>
                 <td>
-                  <span class="block lg:pb-2">港幣$26,000^</span>
+                  <span class="block lg:pb-2">港幣$26,000<sup>^</sup></span>
                   <span class="block bt-d0d0d0 lg:pt-2"
-                    >EPS用戶<br />港幣$25,500*</span
+                    >EPS用戶<br />港幣$25,500<sup>*</sup></span
                   >
                 </td>
-                <td>港幣$24,000^</td>
+                <td>港幣$24,000<sup>^</sup></td>
                 <td>
-                  不帶散光<br />港幣$64,000^^<br />帶散光<br />港幣$68,000^^
+                  不帶散光<br />港幣$64,000<sup>^^</sup><br />帶散光<br />港幣$68,000<sup>^^</sup>
                 </td>
-                <td>港幣$19,000^</td>
-                <td>港幣$19,000^</td>
+                <td>港幣$19,000<sup>^</sup></td>
+                <td>港幣$19,000<sup>^</sup></td>
               </tr>
               <tr>
                 <td>術前檢查<br class="d-lg-block" />費用</td>
@@ -358,7 +353,7 @@
                 <td class="bg-lbv-body">
                   港幣$58,000<sup class="text-xs ml-0.5">※</sup>
                 </td>
-                <td class="bg-lbv-body bl-d0d0d0">EPS用戶<br />港幣$47,500*</td>
+                <td class="bg-lbv-body bl-d0d0d0">EPS用戶<br />港幣$47,500<sup>*</sup></td>
               </tr>
               <tr>
                 <td>術前檢查<br class="d-lg-none" />費用</td>
@@ -1724,7 +1719,8 @@ body {
   .fee-Banner {
     position: relative;
     margin-top: 90px;
-    height: 61.54vw;
+    // height: 61.54vw;
+    height: 300px;
     z-index: 3;
     &::after {
       position: absolute;
@@ -1779,11 +1775,10 @@ body {
     }
   }
   .fee-img {
-    background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-Bg.avif")
-      no-repeat;
-    background-size: 230.77vw auto;
-    background-position: 42% 1.54vw;
+    background: url("https://statichk.cmermedical.com/smile/feeV2/fee-banner-m-v1.webp")
+      no-repeat center / cover;
     width: 100%;
+    height: 332px;
     position: absolute;
     top: 2px;
     z-index: -1;
@@ -1791,7 +1786,7 @@ body {
       .fee-img-Box-image {
         width: 100vw;
         margin: 0 auto;
-        position: relative;
+        // position: relative;
         .fee-img-Box-image-name {
           position: absolute;
           bottom: 41.79vw;
@@ -1825,10 +1820,13 @@ body {
         }
         .fee-img-Box-image-tip {
           position: absolute;
-          bottom: 7.69vw;
-          left: 8.72vw;
-          width: 35.9vw;
-          height: 15.38vw;
+          bottom: 64px;
+          // left: 8.72vw;
+          // width: 35.9vw;
+          right: 12px;
+          width: fit-content;
+          padding: 8px 12px;
+          // height: 15.38vw;
           border-radius: 5px;
           display: flex;
           justify-content: center;
@@ -1840,25 +1838,24 @@ body {
           font-size: 3.59vw;
           font-style: normal;
           font-weight: 400;
-          line-height: 152.349%;
           letter-spacing: 0.9vw;
-          &::after {
-            position: absolute;
-            content: "";
-            bottom: -2.82vw;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-left: 3.85vw solid transparent;
-            border-top: 3.33vw solid #4570b6;
-          }
+          // &::after {
+          //   position: absolute;
+          //   content: "";
+          //   bottom: -2.82vw;
+          //   left: 50%;
+          //   width: 0;
+          //   height: 0;
+          //   border-left: 3.85vw solid transparent;
+          //   border-top: 3.33vw solid #4570b6;
+          // }
         }
       }
     }
   }
   // 表格
   .smilepro-difference {
-    margin-top: 30.77vw;
+    // margin-top: 30.77vw;
     overflow: scroll;
     position: relative;
     &::-webkit-scrollbar {
@@ -2178,6 +2175,7 @@ body {
     margin-top: 160px;
     height: clamp(245px, 25.52vw, 490px);
     z-index: 3;
+    height: clamp(300px, 30vw, 600px);
     &::before {
       position: absolute;
       content: "";
@@ -2242,20 +2240,21 @@ body {
     }
   }
   .fee-img {
-    background: url("https://statichk.cmermedical.com/smile/feeV2/fee-Banner-PCBg.webp")
-      no-repeat;
-    background-size: clamp(1045px, 108.85vw, 2090px) auto;
-    background-position: calc(50% + clamp(20px, 2.08vw, 40px))
-      clamp(15px, 1.56vw, 30px);
+    background: url("https://statichk.cmermedical.com/smile/feeV2/fee-banner-pc-v1.webp")
+      no-repeat 60% / contain;
+    // background-size: clamp(1045px, 108.85vw, 2090px) auto;
+    // background-position: calc(50% + clamp(20px, 2.08vw, 40px))
+    //   clamp(15px, 1.56vw, 30px);
     width: 100%;
     position: absolute;
     top: 0;
     z-index: -1;
+    height: clamp(300px, 30vw, 600px);
     .fee-img-Box {
       .fee-img-Box-image {
         width: clamp(442px, 46.04vw, 884px);
         margin-left: auto;
-        position: relative;
+        // position: relative;
         .fee-img-Box-image-name {
           position: absolute;
           // right: clamp(15px, 1.56vw, 30px);
@@ -2295,10 +2294,14 @@ body {
         }
         .fee-img-Box-image-tip {
           position: absolute;
+          width: fit-content;
           display: inline-block;
-          padding: clamp(3px, 0.31vw, 6px) clamp(9px, 0.94vw, 18px);
-          bottom: clamp(65px, 6.77vw, 130px);
-          left: clamp(67.5px, 7.03vw, 135px);
+          // padding: clamp(3px, 0.31vw, 6px) clamp(9px, 0.94vw, 18px);
+          padding: 6px 16px;
+          // bottom: clamp(65px, 6.77vw, 130px);
+          // left: clamp(67.5px, 7.03vw, 135px);
+          right: clamp(72px, calc((100vw - 1320px) / 2 + 1vw) ,700px);
+          bottom: 40px;
           border-radius: 5px;
           display: flex;
           justify-content: center;
@@ -2312,16 +2315,16 @@ body {
           font-weight: 400;
           line-height: 150%;
           letter-spacing: clamp(2.5px, 0.26vw, 5px);
-          &::after {
-            position: absolute;
-            content: "";
-            bottom: clamp(-18px, -0.94vw, -9px);
-            left: 70%;
-            width: 0;
-            height: 0;
-            border-left: clamp(10px, 1.04vw, 20px) solid transparent;
-            border-top: clamp(10px, 1.04vw, 20px) solid #4570b6;
-          }
+          // &::after {
+          //   position: absolute;
+          //   content: "";
+          //   bottom: clamp(-18px, -0.94vw, -9px);
+          //   left: 70%;
+          //   width: 0;
+          //   height: 0;
+          //   border-left: clamp(10px, 1.04vw, 20px) solid transparent;
+          //   border-top: clamp(10px, 1.04vw, 20px) solid #4570b6;
+          // }
         }
       }
     }
@@ -2329,7 +2332,7 @@ body {
   // 表格
   .smilepro-difference {
     position: relative;
-    margin-top: clamp(100.5px, 10.47vw, 201px);
+    // margin-top: clamp(100.5px, 10.47vw, 201px);
     .smilepro-difference-title {
       display: flex;
       justify-content: center;

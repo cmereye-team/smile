@@ -329,7 +329,7 @@
                   >
                     <span class="text-2xl md:text-5xl">港幣</span
                     ><span class="text-2xl md:text-5xl">$26,000*</span>
-                    <p class="text-[10px] md:text-xl text-text">
+                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">
                       EPS用戶港幣$25,500<sup>#</sup>
                     </p>
                   </div>
