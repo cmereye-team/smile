@@ -7,7 +7,7 @@
 <template>
   <div class="fee">
     <div class="fee-wrap">
-      <section class="fee-Banner overflow-x-hidden">
+      <section class="fee-Banner overflow-hidden">
         <div class="fee-Banner-Box new-container">
           <div class="fee-Banner-Box-Title">
             <span>PRICE</span>
@@ -44,7 +44,7 @@
       <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
     </div>
     -->
-      <div class="feeV2-Bg" id="table1">
+      <div class="feeV2-Bg overflow-hidden" id="table1">
         <section class="smilepro-difference">
           <table class="table custom-comparison-table new-container">
             <thead>
@@ -1732,6 +1732,15 @@ body {
       background-size: 100% auto;
       right: -8.72vw;
       top: 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -28px;
+      top: 112px;
+      width: 20.51vw;
+      height: 28.21vw;
+      background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzgiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA3OCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTUuODgyIDE3LjI1LjAwNi0uMDA1LS4wMzEtLjAzNCAzLjA2MS0yLjc0Ni40MzEuNDhjOS4yMTMtNC4zODUgMjMuMzY4LjMzOCAzMy43NTggMTEuOTIzczEzLjU1IDI2LjE3IDguMTkyIDM0Ljg1MmwuMzcuNDEzLTIuMjE4IDEuOTg5cS0uMzkyLjQxMi0uODIxLjc5NmMtOC43NTMgNy44NS0yNS40MiAzLjU0NC0zNy4yMjQtOS42MThDOS42MDEgNDIuMTM3IDcuMTI4IDI1LjEwMiAxNS44ODIgMTcuMjVaIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM0NTcwYjYiIHN0cm9rZS13aWR0aD0iLjczIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48cGF0aCBkPSJNNjEuOTgzIDYxLjg4MmM4Ljc1NC03Ljg1MSA2LjI4LTI0Ljg4Ni01LjUyNC0zOC4wNDlTMjcuOTg3IDYuMzY1IDE5LjIzMyAxNC4yMTZzLTYuMjggMjQuODg2IDUuNTI1IDM4LjA0OCAyOC40NzEgMTcuNDY5IDM3LjIyNSA5LjYxOFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzQ1NzBiNiIgc3Ryb2tlLXdpZHRoPSIuNzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjxwYXRoIGQ9Ik01OS4wNzQgNTguNjM3YzcuNTYyLTYuNzgyIDUuNDI1LTIxLjQ5Ny00Ljc3My0zMi44NjgtMTAuMTk4LTExLjM3LTI0LjU5NS0xNS4wOS0zMi4xNTYtOC4zMDgtNy41NjIgNi43ODEtNS40MjUgMjEuNDk3IDQuNzczIDMyLjg2N3MyNC41OTQgMTUuMDkgMzIuMTU2IDguMzA5WiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNDU3MGI2IiBzdHJva2Utd2lkdGg9Ii43MyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+PHBhdGggZD0iTTUwLjg4NyA0OC45MDFjLTIuMDkxIDEuNTktNC45MDMgMS43NjUtNy4wNSAxLjQ1OGwtLjIwNy0xLjNjMi4wOTQuMjk2IDQuODAzLjIxMyA2Ljc3Ny0xLjU1OCAyLjQ1Ni0yLjIwMyAyLjEyMi01LjIyMS0uMjY3LTcuODg1LTYuNTEyLTcuMjYxLTEyLjY3OCAyLjE2LTE5LjEwNS01LjAwNi0yLjYxNi0yLjkxNy0yLjg1MS02LjUzOS0uODUtOC43OTJsLTMuMS0zLjQ1Ni44Ni0uNzcyIDMuMDcxIDMuNDI1YzEuOTY1LTEuNDc2IDMuOTQxLTEuMzYgNS45ODgtLjk2M2wuMDcgMS4yNTFjLTIuMjMyLS40MDItMy43NzgtLjQ0NS01LjU3NSAxLjE2Ny0yIDEuNzk0LTEuNzE3IDQuODU3LjM4OCA3LjIwNCA1Ljc3MyA2LjQzNyAxMS44NTQtMy4wOCAxOS4xMzMgNS4wMzggMi45NTggMy4yOTcgMi45MzMgNy4wMzguNzI4IDkuNDE3bDMuMSAzLjQ1Ni0uODYuNzcxeiIgZmlsbD0iIzQ1NzBiNiIvPjwvc3ZnPg==") no-repeat;
     }
     .fee-Banner-Box {
       padding-top: 9.74vw;
