@@ -2525,7 +2525,7 @@ i {
     </section>
     <div class="CorrectionProgram" ref="correctionProgram">
       <div class="CorrectionProgram-Box">
-        <div class="CorrectionProgram-Box-show" ref="boxShow">
+        <div class="CorrectionProgram-Box-show hidden lg:block" ref="boxShow">
           <img
             decoding="async"
             src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-show-pc.avif"
@@ -2538,7 +2538,7 @@ i {
               https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-hide-mb.avif 640w,
               https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-show-pc.avif
             "
-            sizes=" (max-width: 992px) 100vw,1216px"
+            sizes="(max-width: 992px) 100vw,1216px"
           />
         </div>
         <div class="CorrectionProgram-Box-hide">

@@ -1394,18 +1394,18 @@ i {
     height: 52.5vw;
     position: relative;
     img {
-      width: 60vw;
+      width: 45vw;
       position: absolute;
-      top: -12vw;
-      right: 8vw;
-      z-index: 103;
+      top: -8px;
+      right: 14vw;
+      // z-index: 103;
       pointer-events: none;
     }
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 14.87vw;
       left: 7.179vw;
-      z-index: 104;
+      // z-index: 104;
       span {
         font-style: normal;
         color: #4570b6;
@@ -1437,7 +1437,7 @@ i {
       position: absolute;
       right: 15px;
       bottom: 0;
-      z-index: 104;
+      // z-index: 104;
       div {
         background: #4570b6;
       }
@@ -3589,8 +3589,8 @@ i {
         width="100%"
         height="100%"
         srcset="
-          https://statichk.cmermedical.com/smile/icl/banner-lens-m-v1.webp 400w,
-          https://statichk.cmermedical.com/smile/icl/banner-lens-m-v1.webp 640w,
+          https://statichk.cmermedical.com/smile/icl/banner-lens-m-v1.webp  400w,
+          https://statichk.cmermedical.com/smile/icl/banner-lens-m-v1.webp  640w,
           https://statichk.cmermedical.com/smile/icl/banner-lens-pc-v1.webp
         "
         sizes=" (max-width: 992px) 100vw,1216px"
