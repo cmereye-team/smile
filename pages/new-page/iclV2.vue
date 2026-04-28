@@ -367,7 +367,6 @@ i {
       position: absolute;
       top: -59px;
       right: 80px;
-      // z-index: 95;
     }
     .smile-NewBanner-Title {
       position: absolute;
@@ -1388,7 +1387,7 @@ i {
     }
   }
 }
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 450px) {
   .smile-NewBanner {
     padding: 0 15px;
     margin-top: 20.51vw;
