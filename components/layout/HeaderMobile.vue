@@ -301,7 +301,10 @@ export default {
       this.langDrawer = false;
       this.langBox = false;
     },
-  }
+    langDrawer(val) {
+      this.$emit("menuToggle", val);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

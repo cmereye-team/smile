@@ -7,9 +7,9 @@
 -->
 <template>
   <div class="head-bg">
-    <div class="head flex md:hidden">
+    <div :class="['head flex md:hidden', { 'is-active': isMenuOpen }]">
       <HeaderLeft />
-      <HeaderMobile />
+      <HeaderMobile @menuToggle="val => isMenuOpen = val" />
     </div>
     <div class="head hidden md:flex">
       <HeaderLeft />
@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       isMobile: true,
+      isMenuOpen: false,
     };
   },
   methods: {
@@ -151,6 +152,9 @@ export default {
     top: 0;
     right: 0;
     left: 0;
+    &.is-active {
+      z-index: 110; 
+    }
   }
   .sidebar-box {
     position: fixed;
@@ -268,6 +272,9 @@ export default {
     align-items: center;
     max-width: 100vw !important;
     margin: 0 !important;
+    &.is-active {
+      z-index: 110; 
+    }
   }
   .btn-icl_event {
     position: fixed !important;

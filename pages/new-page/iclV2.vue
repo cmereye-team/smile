@@ -1399,11 +1399,14 @@ i {
       position: absolute;
       top: -12vw;
       right: 8vw;
+      z-index: 103;
+      pointer-events: none;
     }
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 14.87vw;
       left: 7.179vw;
+      z-index: 104;
       span {
         font-style: normal;
         color: #4570b6;
@@ -1435,6 +1438,7 @@ i {
       position: absolute;
       right: 15px;
       bottom: 0;
+      z-index: 104;
       div {
         background: #4570b6;
       }
@@ -2362,6 +2366,7 @@ i {
       top: -64px;
       left: inherit;
       right: 160px;
+      pointer-events: none;
     }
     .smile-NewBanner-Title {
       position: absolute;
