@@ -371,32 +371,6 @@
             title="希瑪眼科五月旺角預約日歷"
           />
         </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-01.webp"
-            alt="希瑪眼科四月旺角預約日歷"
-            title="希瑪眼科四月中環預約日歷"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/cmermedical/image/20260311/calendar-2604-02.webp"
-            alt="希瑪眼科四月旺角預約日歷"
-            title="希瑪眼科四月旺角預約日歷"
-          />
-        </picture>
       </div>
     </div>
     <div v-show="applySuccess" class="applyDialog">
