@@ -70,7 +70,7 @@ export default {
       },
       faq: {
         main_nav: this.$t("home.headers.commonProblem"),
-        link: "",
+        link: "/FreQuestions",
         child_list: [
           {
             child_item: this.$t("home.headers.commonProblemChild_1"),

@@ -1,10 +1,9 @@
 <template>
   <div>
-    <div class="optiond"  >
+    <div class="optiond">
       <div v-if="group.link !== '' && group.link.length > 0">
         <nuxt-link class="title" :to="localePath(group.link)">
-          <div>
-          </div>
+          <div></div>
           <div>
             <div class="cliHover">
               <div
@@ -13,16 +12,26 @@
               >
                 {{ group.main_nav }}
               </div>
-              <span v-if="group.child_list && group.child_list.length > 0"
-                >
+              <span v-if="group.child_list && group.child_list.length > 0">
                 <!-- <img
                   src="https://static.cmereye.com/imgs/2024/10/1c76db8f0df27985.png"
                   alt=""
               /> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
-  <path d="M0.999999 0.999992L6.62289 7.19033L1 13.3807" stroke="white" stroke-width="1.65076" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-              
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="15"
+                  viewBox="0 0 8 15"
+                  fill="none"
+                >
+                  <path
+                    d="M0.999999 0.999992L6.62289 7.19033L1 13.3807"
+                    stroke="white"
+                    stroke-width="1.65076"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </span>
             </div>
             <div
@@ -43,7 +52,7 @@
         </nuxt-link>
       </div>
       <div v-else>
-        <div class="title" >
+        <div class="title">
           <div>
             <img
               v-if="pcOrMobile === 'mobile' && dataSrc.length > 0"
@@ -52,11 +61,13 @@
             />
           </div>
           <div>
-            <div :class="clickOption==false?'':'cliHover'" @click="clickOption=!clickOption">
-              {{clickOption}}
+            <div
+              :class="clickOption == false ? '' : 'cliHover'"
+              @click="clickOption = !clickOption"
+            >
+              {{ clickOption }}
               <div :class="$i18n.locale === 'en' ? 'engWidth' : ''">
-                 {{ group.main_nav }}
-                 
+                {{ group.main_nav }}
               </div>
               <div v-if="group.child_list && group.child_list.length > 0">
                 <!-- <img
@@ -81,7 +92,7 @@
               </div>
             </div>
             <div
-             :class="clickOption==false?'isBlock':'isBlock'" 
+              :class="clickOption == false ? 'isBlock' : 'isBlock'"
               v-if="group.child_list && group.child_list.length > 0"
             >
               <div :class="[$i18n.locale === 'en' ? 'navEng nav ' : 'nav']">
@@ -106,8 +117,7 @@ export default {
   props: ["group", "pcOrMobile", "dataSrc"],
   data() {
     return {
-   clickOption:false
-
+      clickOption: false,
     };
   },
   mounted() {
@@ -119,7 +129,7 @@ export default {
 };
 </script>
 
-<style scoped lang='scss'>
+<style scoped lang="scss">
 @media screen and (min-width: 789px) {
   .optiond {
     display: flex;
@@ -307,10 +317,8 @@ export default {
       transform: translateY(-50%);
     }
   }
-  .cliHover{
-
+  .cliHover {
   }
-
 
   a {
     -webkit-tap-highlight-color: transparent;
