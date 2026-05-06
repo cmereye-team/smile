@@ -1571,10 +1571,6 @@ export default {
     }
   }
 
-  :deep(.el-form-item__content) {
-    // left: -50px;
-  }
-
   :deep(.form1) {
     & > div:last-child {
       display: flex;

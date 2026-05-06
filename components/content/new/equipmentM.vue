@@ -350,6 +350,14 @@ export default {
         source: this.$t("medical_equipment.content25.source"),
         isShow: false,
       },
+      {
+        id: 27,
+        img: "https://statichk.cmermedical.com/smile/equipment/equipment-027-v1.webp",
+        name: [this.$t("medical_equipment.content27.name1"), this.$t("medical_equipment.content27.name2")],
+        remark: this.$t("medical_equipment.content27.remark"),
+        source: this.$t("medical_equipment.content27.source"),
+        isShow: false,
+      },
     ];
 
     this.groupedList = this.equipmentList.slice(0, 8);
