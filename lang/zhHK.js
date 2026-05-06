@@ -3195,6 +3195,13 @@ module.exports = {
         "Zeiss PRESBYOND 500Hz MEL90 結合 MEL 90 準分子雷射與 PRESBYOND Laser Blended Vision 軟體，能提供雙眼切換視力矯正，讓患者在近距離、中距離及遠距離皆能清晰視物。系統採用 500Hz 高頻雷射，可在約 1.3 秒內完成 1D 近視的矯正，同時配備 1050Hz 眼球追蹤技術，大幅提升手術精準度與安全性，達成理想的矯視效果。",
       source: "資料及圖片來源：Carl Zeiss",
     },
+    content27: {
+      name1: "威力揚影像導引系統",
+      name2: "（Alcon VERION Image Guided System）",
+      remark:
+        "整合「術前影像量測」、「手術規劃」及「術中導航」三大功能，透過數碼化系統處理，能大幅減少人手轉錄與標記所產生的誤差。系統專為提升手術精準度而設，能優化散光及多焦點人工水晶體的定位。",
+      source: "資料及圖片來源： Alcon",
+    },
   },
   appointFrom_ifram: {
     title:
