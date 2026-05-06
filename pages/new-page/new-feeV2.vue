@@ -635,7 +635,7 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss" scoped>
 ::-webkit-scrollbar {
   display: none;
 }
@@ -654,7 +654,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .head-bg {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -670,8 +669,6 @@ body {
     scroll-behavior: smooth;
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   :deep(.businessHours) {
     max-width: 100vw;

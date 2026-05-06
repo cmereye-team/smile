@@ -281,18 +281,18 @@ export default {
 }
 @media screen and (max-width: 767px) {
   .center-Banner {
-    margin-top: 80px;
+    // margin-top: 80px;
     padding: 0 15px;
     .gallery-top {
       border-radius: 10px;
     }
   }
 }
-@media screen and (min-width: 768px) {
-  .center-Banner {
-    margin-top: #{"clamp(10rem, 2.5rem + 15.63vw, 15rem)"};
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .center-Banner {
+//     margin-top: #{"clamp(10rem, 2.5rem + 15.63vw, 15rem)"};
+//   }
+// }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .center-Banner {
     // margin: 250px auto 0;
@@ -302,7 +302,7 @@ export default {
 @media screen and (min-width: 992px) {
   .center-Banner {
     // margin: 160px auto 0;
-    margin-top: 160px;
+    // margin-top: 160px;
     max-width: 1320px;
     .gallery-top {
       border-radius: 15px;

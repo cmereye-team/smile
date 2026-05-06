@@ -1205,7 +1205,6 @@ export default {
 
 @media screen and (min-width: 768px) {
   .head-bg {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
