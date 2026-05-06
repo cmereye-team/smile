@@ -32,9 +32,7 @@
                 height="100%"
                 sizes=" (max-width: 992px) 100vw,1216px"
               /> -->
-              <div class="fee-img-Box-image-tip">
-                本診所絕無其他額外收費
-              </div>
+              <div class="fee-img-Box-image-tip">本診所絕無其他額外收費</div>
             </div>
           </div>
         </div>
@@ -60,7 +58,10 @@
                   ><br />微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
-                  <span>ICL</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
+                  <span>ICL V4</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
+                </th>
+                <th>
+                  <span>ICL V5</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
                 </th>
                 <th>
                   <span>SMILE</span> <br />微笑激光<br class="d-lg-none" />矯視
@@ -86,7 +87,12 @@
                 </td>
                 <td>港幣$24,000<sup>^</sup></td>
                 <td>
-                  不帶散光<br />港幣$64,000<sup>^^</sup><br />帶散光<br />港幣$68,000<sup>^^</sup>
+                  不帶散光<br />港幣$59,000<sup>^^</sup
+                  ><br />帶散光<br />港幣$63,000<sup>^^</sup>
+                </td>
+                <td>
+                  不帶散光<br />港幣$64,000<sup>^^</sup
+                  ><br />帶散光<br />港幣$68,000<sup>^^</sup>
                 </td>
                 <td>港幣$19,000<sup>^</sup></td>
                 <td>港幣$19,000<sup>^</sup></td>
@@ -95,6 +101,7 @@
                 <td>術前檢查<br class="d-lg-block" />費用</td>
                 <td>港幣$100</td>
                 <td>港幣$100</td>
+                <td>港幣$500</td>
                 <td>港幣$500</td>
                 <td>港幣$100</td>
                 <td>港幣$100</td>
@@ -109,12 +116,24 @@
                     alt="不包括"
                   />
                 </td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                    alt="不包括"
+                  />
+                </td>
                 <td>1次</td>
                 <td>1次</td>
               </tr>
               <tr>
                 <td>術後眼部<br />彩光護理</td>
                 <td>1次</td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                    alt="不包括"
+                  />
+                </td>
                 <td>
                   <img
                     src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
@@ -172,6 +191,12 @@
                     alt="包括"
                   />
                 </td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
               </tr>
               <tr class="custom-comparison-table-tipIcon">
                 <td>
@@ -190,7 +215,10 @@
                   <span>3次<sup>#</sup></span>
                 </td>
                 <td>
-                  <span>6次<sup>##</sup></span>
+                  <span>6次<sup>##</sup><br/><span class="text-desc text-xs lg:text-base font-normal">延長至一年半內</span></span>
+                </td>
+                <td>
+                  <span>6次<sup>##</sup><br/><span class="text-desc text-xs lg:text-base font-normal">延長至一年半內</span></span>
                 </td>
                 <td>
                   <span>3次<sup>#</sup></span>
@@ -221,6 +249,12 @@
                 </td>
                 <td>
                   <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                    alt="不包括"
+                  />
+                </td>
+                <td>
+                  <img
                     src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
                     alt="包括"
                   />
@@ -234,6 +268,12 @@
               </tr>
               <tr>
                 <td>無限視光<br class="d-lg-block" />檢查</td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
                 <td>
                   <img
                     src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
@@ -353,7 +393,9 @@
                 <td class="bg-lbv-body">
                   港幣$58,000<sup class="text-xs ml-0.5">※</sup>
                 </td>
-                <td class="bg-lbv-body bl-d0d0d0">EPS用戶<br />港幣$47,500<sup>*</sup></td>
+                <td class="bg-lbv-body bl-d0d0d0">
+                  EPS用戶<br />港幣$47,500<sup>*</sup>
+                </td>
               </tr>
               <tr>
                 <td>術前檢查<br class="d-lg-none" />費用</td>
@@ -1160,10 +1202,6 @@ body {
     width: 80.34vw !important;
     min-width: 50vw;
   }
-  .ellipse_explain {
-    // max-width: 60.34vw; !important;
-    // min-width: 50vw;
-  }
 }
 @media screen and (max-width: 767px) {
   .fee {
@@ -1357,28 +1395,6 @@ body {
       line-height: 5.128vw; /* 156.25% */
       letter-spacing: 0.615vw;
       height: 20.6vw;
-    }
-    & > div:nth-child(6),
-    & > div:nth-child(7),
-    & > div:nth-child(8),
-    & > div:nth-child(9),
-    & > div:nth-child(10),
-    & > div:nth-child(11),
-    & > div:nth-child(12) {
-      // height: 103.4px;
-    }
-    & > div:nth-child(21),
-    & > div:nth-child(22),
-    & > div:nth-child(23),
-    & > div:nth-child(24),
-    & > div:nth-child(25),
-    & > div:nth-child(26),
-    & > div:nth-child(27),
-    & > div:nth-child(28) {
-      // height: 78px;
-    }
-    & > div:nth-child(n + 33) {
-      // height: 24px;
     }
   }
   // .table_right > div:last-child {
@@ -1734,13 +1750,14 @@ body {
       top: 0;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: -28px;
       top: 112px;
       width: 20.51vw;
       height: 28.21vw;
-      background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzgiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA3OCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTUuODgyIDE3LjI1LjAwNi0uMDA1LS4wMzEtLjAzNCAzLjA2MS0yLjc0Ni40MzEuNDhjOS4yMTMtNC4zODUgMjMuMzY4LjMzOCAzMy43NTggMTEuOTIzczEzLjU1IDI2LjE3IDguMTkyIDM0Ljg1MmwuMzcuNDEzLTIuMjE4IDEuOTg5cS0uMzkyLjQxMi0uODIxLjc5NmMtOC43NTMgNy44NS0yNS40MiAzLjU0NC0zNy4yMjQtOS42MThDOS42MDEgNDIuMTM3IDcuMTI4IDI1LjEwMiAxNS44ODIgMTcuMjVaIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM0NTcwYjYiIHN0cm9rZS13aWR0aD0iLjczIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48cGF0aCBkPSJNNjEuOTgzIDYxLjg4MmM4Ljc1NC03Ljg1MSA2LjI4LTI0Ljg4Ni01LjUyNC0zOC4wNDlTMjcuOTg3IDYuMzY1IDE5LjIzMyAxNC4yMTZzLTYuMjggMjQuODg2IDUuNTI1IDM4LjA0OCAyOC40NzEgMTcuNDY5IDM3LjIyNSA5LjYxOFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzQ1NzBiNiIgc3Ryb2tlLXdpZHRoPSIuNzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjxwYXRoIGQ9Ik01OS4wNzQgNTguNjM3YzcuNTYyLTYuNzgyIDUuNDI1LTIxLjQ5Ny00Ljc3My0zMi44NjgtMTAuMTk4LTExLjM3LTI0LjU5NS0xNS4wOS0zMi4xNTYtOC4zMDgtNy41NjIgNi43ODEtNS40MjUgMjEuNDk3IDQuNzczIDMyLjg2N3MyNC41OTQgMTUuMDkgMzIuMTU2IDguMzA5WiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNDU3MGI2IiBzdHJva2Utd2lkdGg9Ii43MyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+PHBhdGggZD0iTTUwLjg4NyA0OC45MDFjLTIuMDkxIDEuNTktNC45MDMgMS43NjUtNy4wNSAxLjQ1OGwtLjIwNy0xLjNjMi4wOTQuMjk2IDQuODAzLjIxMyA2Ljc3Ny0xLjU1OCAyLjQ1Ni0yLjIwMyAyLjEyMi01LjIyMS0uMjY3LTcuODg1LTYuNTEyLTcuMjYxLTEyLjY3OCAyLjE2LTE5LjEwNS01LjAwNi0yLjYxNi0yLjkxNy0yLjg1MS02LjUzOS0uODUtOC43OTJsLTMuMS0zLjQ1Ni44Ni0uNzcyIDMuMDcxIDMuNDI1YzEuOTY1LTEuNDc2IDMuOTQxLTEuMzYgNS45ODgtLjk2M2wuMDcgMS4yNTFjLTIuMjMyLS40MDItMy43NzgtLjQ0NS01LjU3NSAxLjE2Ny0yIDEuNzk0LTEuNzE3IDQuODU3LjM4OCA3LjIwNCA1Ljc3MyA2LjQzNyAxMS44NTQtMy4wOCAxOS4xMzMgNS4wMzggMi45NTggMy4yOTcgMi45MzMgNy4wMzguNzI4IDkuNDE3bDMuMSAzLjQ1Ni0uODYuNzcxeiIgZmlsbD0iIzQ1NzBiNiIvPjwvc3ZnPg==") no-repeat;
+      background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzgiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA3OCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTUuODgyIDE3LjI1LjAwNi0uMDA1LS4wMzEtLjAzNCAzLjA2MS0yLjc0Ni40MzEuNDhjOS4yMTMtNC4zODUgMjMuMzY4LjMzOCAzMy43NTggMTEuOTIzczEzLjU1IDI2LjE3IDguMTkyIDM0Ljg1MmwuMzcuNDEzLTIuMjE4IDEuOTg5cS0uMzkyLjQxMi0uODIxLjc5NmMtOC43NTMgNy44NS0yNS40MiAzLjU0NC0zNy4yMjQtOS42MThDOS42MDEgNDIuMTM3IDcuMTI4IDI1LjEwMiAxNS44ODIgMTcuMjVaIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM0NTcwYjYiIHN0cm9rZS13aWR0aD0iLjczIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48cGF0aCBkPSJNNjEuOTgzIDYxLjg4MmM4Ljc1NC03Ljg1MSA2LjI4LTI0Ljg4Ni01LjUyNC0zOC4wNDlTMjcuOTg3IDYuMzY1IDE5LjIzMyAxNC4yMTZzLTYuMjggMjQuODg2IDUuNTI1IDM4LjA0OCAyOC40NzEgMTcuNDY5IDM3LjIyNSA5LjYxOFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzQ1NzBiNiIgc3Ryb2tlLXdpZHRoPSIuNzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjxwYXRoIGQ9Ik01OS4wNzQgNTguNjM3YzcuNTYyLTYuNzgyIDUuNDI1LTIxLjQ5Ny00Ljc3My0zMi44NjgtMTAuMTk4LTExLjM3LTI0LjU5NS0xNS4wOS0zMi4xNTYtOC4zMDgtNy41NjIgNi43ODEtNS40MjUgMjEuNDk3IDQuNzczIDMyLjg2N3MyNC41OTQgMTUuMDkgMzIuMTU2IDguMzA5WiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNDU3MGI2IiBzdHJva2Utd2lkdGg9Ii43MyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+PHBhdGggZD0iTTUwLjg4NyA0OC45MDFjLTIuMDkxIDEuNTktNC45MDMgMS43NjUtNy4wNSAxLjQ1OGwtLjIwNy0xLjNjMi4wOTQuMjk2IDQuODAzLjIxMyA2Ljc3Ny0xLjU1OCAyLjQ1Ni0yLjIwMyAyLjEyMi01LjIyMS0uMjY3LTcuODg1LTYuNTEyLTcuMjYxLTEyLjY3OCAyLjE2LTE5LjEwNS01LjAwNi0yLjYxNi0yLjkxNy0yLjg1MS02LjUzOS0uODUtOC43OTJsLTMuMS0zLjQ1Ni44Ni0uNzcyIDMuMDcxIDMuNDI1YzEuOTY1LTEuNDc2IDMuOTQxLTEuMzYgNS45ODgtLjk2M2wuMDcgMS4yNTFjLTIuMjMyLS40MDItMy43NzgtLjQ0NS01LjU3NSAxLjE2Ny0yIDEuNzk0LTEuNzE3IDQuODU3LjM4OCA3LjIwNCA1Ljc3MyA2LjQzNyAxMS44NTQtMy4wOCAxOS4xMzMgNS4wMzggMi45NTggMy4yOTcgMi45MzMgNy4wMzguNzI4IDkuNDE3bDMuMSAzLjQ1Ni0uODYuNzcxeiIgZmlsbD0iIzQ1NzBiNiIvPjwvc3ZnPg==")
+        no-repeat;
     }
     .fee-Banner-Box {
       padding-top: 9.74vw;
@@ -1952,12 +1969,15 @@ body {
       background: #719ad8;
     }
     .custom-comparison-table thead tr > th:nth-child(4) {
-      background: #86d2c4;
+      background: #4bc0ab;
     }
     .custom-comparison-table thead tr > th:nth-child(5) {
-      background: #8fd3ea;
+      background: #86d2c4;
     }
     .custom-comparison-table thead tr > th:nth-child(6) {
+      background: #8fd3ea;
+    }
+    .custom-comparison-table thead tr > th:nth-child(7) {
       background: #d8bb71;
     }
     .custom-comparison-table tbody tr td {
@@ -2111,12 +2131,15 @@ body {
       background: #f1f5fc;
     }
     .custom-comparison-table tbody tr > td:nth-child(4) {
-      background: #f1fcf9;
+      background: #dffff9;
     }
     .custom-comparison-table tbody tr > td:nth-child(5) {
-      background: #e2f8ff;
+      background: #f1fcf9;
     }
     .custom-comparison-table tbody tr > td:nth-child(6) {
+      background: #e2f8ff;
+    }
+    .custom-comparison-table tbody tr > td:nth-child(7) {
       background: #fbfcf1;
     }
   }
@@ -2309,7 +2332,7 @@ body {
           padding: 6px 16px;
           // bottom: clamp(65px, 6.77vw, 130px);
           // left: clamp(67.5px, 7.03vw, 135px);
-          right: clamp(72px, calc((100vw - 1320px) / 2 + 1vw) ,700px);
+          right: clamp(72px, calc((100vw - 1320px) / 2 + 1vw), 700px);
           bottom: 40px;
           border-radius: 5px;
           display: flex;
@@ -2454,13 +2477,17 @@ body {
       background: #719ad8;
     }
     .custom-comparison-table thead tr > th:nth-child(4) {
-      background: #86d2c4;
+      background: #4bc0ab;
     }
     .custom-comparison-table thead tr > th:nth-child(5) {
-      background: #8fd3ea;
+      background: #86d2c4;
     }
     .custom-comparison-table thead tr > th:nth-child(6) {
+      background: #8fd3ea;
+    }
+    .custom-comparison-table thead tr > th:nth-child(7) {
       background: #d8bb71;
+      letter-spacing: 0.1em;
     }
     .custom-comparison-table tbody tr td {
       color: #60605f;
@@ -2609,12 +2636,15 @@ body {
       background: #f1f5fc;
     }
     .custom-comparison-table tbody tr > td:nth-child(4) {
-      background: #f1fcf9;
+      background: #dffff9;
     }
     .custom-comparison-table tbody tr > td:nth-child(5) {
-      background: #e2f8ff;
+      background: #f1fcf9;
     }
     .custom-comparison-table tbody tr > td:nth-child(6) {
+      background: #e2f8ff;
+    }
+    .custom-comparison-table tbody tr > td:nth-child(7) {
       background: #fbfcf1;
     }
   }
