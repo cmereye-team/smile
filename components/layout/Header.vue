@@ -93,6 +93,8 @@ export default {
 .head-bg {
   position: sticky;
   z-index: 102;
+  top: 0;
+  background-color: #fff;
 }
 .head {
   justify-content: space-between;
