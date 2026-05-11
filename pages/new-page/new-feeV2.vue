@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-04-22 14:10:51
+ * @LastEditTime: 2026-05-11 15:33:07
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -58,7 +58,7 @@
                   ><br />微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
-                  <span>ICL V4</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
+                  <span>ICL V4C</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
                 </th>
                 <th>
                   <span>ICL V5</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
@@ -1961,6 +1961,7 @@ body {
     }
     .custom-comparison-table thead tr > th:nth-child(2) {
       background: #5991e5;
+      white-space: nowrap;
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
       background: #719ad8;
@@ -2469,6 +2470,7 @@ body {
     }
     .custom-comparison-table thead tr > th:nth-child(2) {
       background: #5991e5;
+      letter-spacing: 0.1em;
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
       background: #719ad8;
