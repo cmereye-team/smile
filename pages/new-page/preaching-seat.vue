@@ -1721,7 +1721,7 @@ export default {
     aspect-ratio: 1 / 1;
     margin: 20px 20px 0 20px;
     border-radius: 10px;
-    margin-top: 80px;
+    // margin-top: 80px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;

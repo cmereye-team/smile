@@ -947,10 +947,8 @@ i {
 @media screen and (max-width: 1140px) {
   .smile-NewBanner {
     // 80
-    margin-top: 80px;
+    // margin-top: 80px;
     position: relative;
-    img {
-    }
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 58px;

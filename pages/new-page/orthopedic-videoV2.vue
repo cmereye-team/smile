@@ -950,7 +950,7 @@ export default {
 @media screen and (max-width: 992px) {
   .smile-NewBanner {
     padding: 0 3.85vw;
-    margin-top: 80px;
+    // margin-top: 80px;
     height: 50vw;
     position: relative;
     img {
@@ -962,7 +962,7 @@ export default {
 
     .smile-NewBanner-Title {
       position: absolute;
-      top: 13.59vw;
+      top: 10vw;
       left: 28px;
       span {
         font-style: normal;

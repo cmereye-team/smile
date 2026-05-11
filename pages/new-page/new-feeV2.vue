@@ -1731,7 +1731,7 @@ body {
   // Banner
   .fee-Banner {
     position: relative;
-    margin-top: 90px;
+    // margin-top: 90px;
     // height: 61.54vw;
     height: 300px;
     z-index: 3;

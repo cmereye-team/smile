@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-07-03 17:29:35
- * @LastEditTime: 2026-02-10 09:26:44
+ * @LastEditTime: 2026-05-11 16:56:33
  * @FilePath: /pages/new-page/patient-info.vue
  * @Description: 诊症须知
 -->
@@ -907,7 +907,7 @@ i {
 @media screen and (max-width: 992px) {
   .smile-NewBanner {
     padding: 0 3.85vw;
-    margin-top: 80px;
+    // margin-top: 80px;
     height: 62.56vw;
     position: relative;
     img {
@@ -918,7 +918,7 @@ i {
     }
     .smile-NewBanner-Title {
       position: absolute;
-      top: 13.59vw;
+      top: 10vw;
       left: 28px;
       span {
         font-style: normal;

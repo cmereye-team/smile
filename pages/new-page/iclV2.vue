@@ -206,7 +206,7 @@ i {
     height: 84.6vw;
     margin: 24px 30px;
     border-radius: 44px;
-    margin-top: 80px;
+    // margin-top: 80px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -1390,7 +1390,7 @@ i {
 @media screen and (max-width: 450px) {
   .smile-NewBanner {
     padding: 0 15px;
-    margin-top: 20.51vw;
+    // margin-top: 20.51vw;
     height: 52.5vw;
     position: relative;
     img {

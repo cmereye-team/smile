@@ -1379,7 +1379,7 @@ i {
 @media screen and (max-width: 389px) {
   .smile-NewBanner {
     padding: 0 15px;
-    margin-top: 20.51vw;
+    // margin-top: 20.51vw;
     height: 52.5vw;
     position: relative;
     img {

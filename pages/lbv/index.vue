@@ -201,7 +201,7 @@ i {
       align-items: center;
       .ClearVisionBanner-Box-content {
         overflow: hidden;
-        margin-top: 100px;
+        margin-top: 20px;
         // width: 100vw;
         h3 {
           text-align: center;

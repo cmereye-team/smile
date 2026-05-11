@@ -655,7 +655,7 @@ export default {
     height: 84.6vw;
     margin: 24px 30px;
     border-radius: 44px;
-    margin-top: 80px;
+    // margin-top: 80px;
 
     display: flex;
     align-items: flex-start;

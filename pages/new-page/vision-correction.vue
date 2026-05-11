@@ -1143,7 +1143,7 @@ export default {
 @media screen and (min-width: 768px) {
   .vision-correction-box {
     margin-bottom: 50px;
-    margin-top: 80px;
+    // margin-top: 80px;
   }
   .warn-text {
     margin-bottom: 35px;

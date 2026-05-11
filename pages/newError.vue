@@ -320,7 +320,7 @@ $color-stone-800: #292524;
   }
 
   .newErrorPage {
-    margin-top: 80px;
+    // margin-top: 80px;
     height: calc(100vh - 180px);
 
     .astronaut {
