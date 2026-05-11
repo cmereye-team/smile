@@ -2200,7 +2200,7 @@ i {
         sizes=" (max-width: 992px) 100vw,1216px"
       />
     </div> -->
-    <section class="ClearVisionBanner mt-22 md:mt-[216px]">
+    <section class="ClearVisionBanner">
       <div class="new-container container">
         <div class="ClearVisionBanner-Box">
           <div class="ClearVisionBanner-Box-content">

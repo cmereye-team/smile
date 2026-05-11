@@ -3535,7 +3535,7 @@ i {
   }
   .smile-NewBanner {
     padding: 0px;
-    margin-top: 159px;
+    // margin-top: 159px;
     // height: 529px;
     position: relative;
     overflow: hidden;

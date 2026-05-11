@@ -2201,7 +2201,7 @@ body {
   // Banner
   .fee-Banner {
     position: relative;
-    margin-top: 160px;
+    // margin-top: 160px;
     height: clamp(245px, 25.52vw, 490px);
     z-index: 3;
     height: clamp(300px, 30vw, 600px);

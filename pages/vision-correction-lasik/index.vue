@@ -2,7 +2,7 @@
   <div>
     <main>
       <section
-        class="banner wrapper relative mt-20 md:mt-40 pb-4 md:pb-7 px-5 flex justify-between items-end"
+        class="banner wrapper relative pb-4 md:pb-7 px-5 flex justify-between items-end"
       >
         <div
           class="banner-bg before:absolute before:aspect-[1.37/1] before:w-[37.982vw] xl:before:w-[22.083vw] before:max-w-[220px] xl:before:max-w-none before:bg-[url(https://statichk.cmermedical.com/smile/lasik/lasik-banner-bg.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:-z-[1]"

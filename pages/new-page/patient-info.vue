@@ -2044,7 +2044,7 @@ i {
   }
   .smile-NewBanner {
     padding: 0px;
-    margin-top: 159px;
+    // margin-top: 159px;
     height: clamp(258px, 26.88vw, 516px);
     position: relative;
     img {

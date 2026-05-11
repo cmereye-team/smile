@@ -1162,7 +1162,7 @@ export default {
 @media screen and (min-width: 992px) {
   .smile-NewBanner {
     padding: 0px;
-    margin-top: 159px;
+    // margin-top: 159px;
     height: clamp(216.5px, 22.55vw, 433px);
     position: relative;
     img {

@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <div class="page_container box">
-      <div class="flex justify-center md:mt-28 mt-10">
+      <div class="flex justify-center">
         <h2>{{$t('disclaimer.h2')}}</h2>
       </div>
       <p class="pb-4">

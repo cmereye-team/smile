@@ -2431,7 +2431,7 @@ i {
 </style>
 <template>
   <div class="lasik" style="overflow-x: hidden">
-    <section class="ClearVisionBanner mt-22 md:mt-[216px]">
+    <section class="ClearVisionBanner">
       <div class="new-container container">
         <div class="ClearVisionBanner-Box">
           <div class="ClearVisionBanner-Box-content">

@@ -3578,7 +3578,7 @@ i {
     <goTop />
     <!-- 轮播位置 -->
     <div
-      class="container new-container mx-auto smile-NewBanner position-relative mt-20 md:mt-40"
+      class="container new-container mx-auto smile-NewBanner position-relative"
     >
       <img
         class=""

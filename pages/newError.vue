@@ -25,7 +25,7 @@ $color-stone-800: #292524;
 
 /* 404页面容器 */
 .newErrorPage {
-  margin-top: 160px;
+  // margin-top: 160px;
   height: calc(100vh - 160px);
   background: url("https://statichk.cmermedical.com/smile/error/star.svg"),
     linear-gradient(to bottom, #05007a, #4d007d);

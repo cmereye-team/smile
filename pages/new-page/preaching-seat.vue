@@ -1061,9 +1061,6 @@ export default {
 }
 @media screen and (min-width: 768px) {
   .preaching-seat {
-    .banner-box {
-      margin-top: 166px !important;
-    }
     .header-top a:nth-child(2) {
       display: none !important;
     }
