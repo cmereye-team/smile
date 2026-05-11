@@ -1667,13 +1667,13 @@ i {
 }
 @media screen and (max-width: 768px) {
   .center-Banner {
-    margin: 80px auto 0;
+    margin: 0 auto;
     padding: 0 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .center-Banner {
-    margin: 250px auto 0;
+    margin: 0 auto;
     padding: 0 15px;
   }
 }
@@ -2441,7 +2441,7 @@ i {
   }
   // banner
   .center-Banner {
-    margin: 160px auto 0;
+    margin: 0 auto;
   }
   // 希瑪微笑矯視中心
   .centerIntro {
@@ -3204,7 +3204,6 @@ i {
 }
 @media screen and (min-width: 1140px) {
   .head-bg {
-    position: fixed;
     top: 0;
     right: 0;
     left: 0;

@@ -1,6 +1,6 @@
 /*
  * @Date: 2024-04-18 16:47:42
- * @LastEditTime: 2026-04-22 15:32:41
+ * @LastEditTime: 2026-05-11 11:34:12
  * @FilePath: /router/index.js
  * @Description: 路由入口
  */
@@ -19,7 +19,7 @@ export const $router = [
     title: "404",
     component: resolve("pages/newError.vue"),
   },
-    {
+  {
     path: "*",
     name: "404",
     title: "404",
@@ -48,6 +48,12 @@ export const $router = [
     name: "smilePro",
     title: "SMILE Pro 微笑激光矯視",
     component: resolve("pages/new-page/smile-proV2.vue"),
+  },
+  {
+    path: `/smileProCare`,
+    name: `smileProCare`,
+    title: "SMILE Pro Care限時禮品限量版便攜式咖啡機",
+    component: resolve(`pages/smileProCare/index.vue`),
   },
   {
     path: "/vision-correction-icl",
@@ -80,7 +86,7 @@ export const $router = [
     component: resolve("pages/new-page/lasik.vue"),
   },
   {
-    path: "/patient-info", 
+    path: "/patient-info",
     name: "patient-info",
     title: "診症須知",
     component: resolve("pages/new-page/patient-info.vue"),
@@ -176,6 +182,6 @@ export const $router = [
 ];
 const extendRoutes = (routes) => {
   routes.length = 0;
-  routes.push(...$router)
+  routes.push(...$router);
 };
 export default { base: "/", extendRoutes };

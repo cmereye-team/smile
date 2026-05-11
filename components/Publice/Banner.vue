@@ -17,7 +17,8 @@
 }
 @media screen and (max-width: 767px) {
   .Banner {
-    margin-top: 80px;
+    // margin-top: 80px;
+    margin: 0 auto;
   }
   .Banner .banner-text-default {
     p {

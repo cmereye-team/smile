@@ -88,6 +88,14 @@ export default {
       isMobile: false,
       equipmentList: [
         {
+          id: 27,
+          img: "https://statichk.cmermedical.com/smile/equipment/equipment-027-v1.webp",
+          name: [this.$t("medical_equipment.content27.name1"), this.$t("medical_equipment.content27.name2")],
+          remark: this.$t("medical_equipment.content27.remark"),
+          source: this.$t("medical_equipment.content27.source"),
+          isShow: false,
+        },
+        {
           id: 26,
           img: "https://statichk.cmermedical.com/smile/equipment/equipment-026-v2.webp",
           name: [this.$t("medical_equipment.content26.name1"), this.$t("medical_equipment.content26.name2")],
@@ -352,14 +360,6 @@ export default {
           ],
           remark: this.$t("medical_equipment.content25.remark"),
           source: this.$t("medical_equipment.content25.source"),
-          isShow: false,
-        },
-        {
-          id: 27,
-          img: "https://statichk.cmermedical.com/smile/equipment/equipment-027-v1.webp",
-          name: [this.$t("medical_equipment.content27.name1"), this.$t("medical_equipment.content27.name2")],
-          remark: this.$t("medical_equipment.content27.remark"),
-          source: this.$t("medical_equipment.content27.source"),
           isShow: false,
         },
       ],

@@ -4758,7 +4758,6 @@ i {
 }
 @media screen and (min-width: 1140px) {
   .head-bg {
-    position: fixed;
     top: 0;
     right: 0;
     left: 0;
