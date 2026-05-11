@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2024-04-16 12:45:40
+ * @LastEditTime: 2026-05-11 14:09:14
+ * @FilePath: /components/Publice/Banner.vue
+ * @Description: 公共Banner
+-->
 <script></script>
 <template>
   <div class="Banner">
@@ -9,7 +15,7 @@
   .Banner {
     margin: 0 auto;
     max-width: 1270px;
-    margin-top: 145px;
+    // margin-top: 145px;
   }
   .banner-img > p {
     font-family: "Microsoft YaHei" !important;
