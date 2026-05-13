@@ -198,6 +198,9 @@ i {
     }
   }
 }
+.d-none {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .banner-img {
     background: url("https://static.cmereye.com/imgs/2024/04/1e78ab899188f6b4.webp")
@@ -335,9 +338,6 @@ i {
   :deep(.title-content) {
     font-weight: 400;
   }
-}
-.d-none {
-  display: none;
 }
 @media screen and (min-width: 1139px) {
   .new-container {
@@ -4022,6 +4022,145 @@ i {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="icl-model">
+        <h2>{{ $t("service.icl.model.title") }}</h2>
+        <div
+          class="model-main w-fit mx-auto text-desc font-light text-base lg:text-xl leading-[1.2] tracking-wider"
+        >
+          <table class="model-table">
+            <thead>
+              <tr>
+                <th class="bg-[#EFEEEE]">
+                  {{ $t("service.icl.model.project.title") }}
+                </th>
+                <th class="bg-[#D4E4FF]">V4C</th>
+                <th class="bg-[#D4E4FF]">V5</th>
+                <th class="bg-[#D4E4FF]">V6</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>{{ $t("service.icl.model.range.title") }}</th>
+                <!-- <td>{{ $t("service.icl.model.range.v4c") }}</td> -->
+                <i18n tag="td" path="service.icl.model.range.v4c">
+                  <template #br>
+                    <br />
+                  </template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                  <template #strong1>
+                    <strong class="text-[#F89B03] font-bold">{{
+                      $t("service.icl.model.range.strong1")
+                    }}</strong>
+                  </template>
+                  <template #strong2>
+                    <strong class="text-[#F89B03] font-bold">{{
+                      $t("service.icl.model.range.strong2")
+                    }}</strong>
+                  </template>
+                </i18n>
+                <i18n tag="td" path="service.icl.model.range.v5">
+                  <template #br>
+                    <br />
+                  </template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+                <i18n tag="td" path="service.icl.model.range.v6">
+                  <template #br>
+                    <br />
+                  </template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+              </tr>
+              <tr>
+                <th>{{ $t("service.icl.model.technology.title") }}</th>
+                <i18n tag="td" path="service.icl.model.technology.v4c">
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+                <td>{{ $t("service.icl.model.technology.v5") }}</td>
+                <i18n
+                  tag="td"
+                  path="service.icl.model.technology.v6"
+                  class="text-[#F89B03] font-bold"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+              </tr>
+              <tr>
+                <th>{{ $t("service.icl.model.materials.title") }}</th>
+                <i18n tag="td" path="service.icl.model.materials.v4c">
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+                <i18n
+                  tag="td"
+                  colspan="2"
+                  path="service.icl.model.materials.intro"
+                >
+                  <template #br><br /></template>
+                </i18n>
+              </tr>
+              <tr>
+                <th>{{ $t("service.icl.model.audience.title") }}</th>
+                <i18n tag="td" path="service.icl.model.audience.v4c">
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+                <i18n
+                  tag="td"
+                  path="service.icl.model.audience.v5"
+                  class="text-[#F89B03] font-bold"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+                <i18n
+                  tag="td"
+                  path="service.icl.model.audience.v6"
+                  class="text-[#F89B03] font-bold"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n>
+              </tr>
+              <tr>
+                <th>{{ $t("service.icl.model.night.title") }}</th>
+                <td>{{ $t("service.icl.model.night.v4c") }}</td>
+                <i18n
+                  tag="td"
+                  colspan="2"
+                  path="service.icl.model.night.intro"
+                  class="text-[#F89B03] font-bold"
+                >
+                  <template #br><br /></template>
+                </i18n>
+              </tr>
+              <tr>
+                <th>{{ $t("service.icl.model.reversibility.title") }}</th>
+                <td colspan="3">
+                  <div class="flex items-center justify-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="27"
+                      height="28"
+                      viewBox="0 0 27 28"
+                      fill="none"
+                    >
+                      <path
+                        d="M.009 15.08c-.128-4.545 1.115-7.944 3.749-10.787S9.638.01 13.416 0c3.706-.009 6.907 1.369 9.545 4.111 2.632 2.736 3.933 6.05 3.961 9.89.026 3.486-1.12 6.562-3.318 9.18-2.24 2.664-5.074 4.314-8.457 4.718-4.638.554-8.577-1.028-11.751-4.595C1.433 21.099.01 17.83.009 15.08m11.206.075c-.089-.085-.167-.154-.24-.23-.828-.859-1.655-1.723-2.486-2.579-.339-.35-.559-.345-.892 0q-.9.931-1.8 1.869c-.302.316-.302.545 0 .861q2.468 2.582 4.937 5.16c.366.382.574.38.948-.007q.919-.95 1.838-1.904 3.768-3.908 7.534-7.818c.347-.36.347-.589.003-.947L19.35 7.787c-.409-.423-.603-.425-1.006-.007l-6.888 7.14c-.073.076-.151.147-.243.235z"
+                        fill="#f89b03"
+                      />
+                      <path
+                        d="M11.215 15.155c.091-.089.17-.16.243-.235l6.888-7.14c.402-.42.597-.418 1.006.007q.854.885 1.706 1.772c.343.359.343.587-.004.947q-3.766 3.91-7.533 7.818-.917.953-1.838 1.905c-.374.387-.583.389-.949.006l-4.936-5.159c-.302-.317-.302-.545 0-.862q.898-.936 1.8-1.868c.333-.346.553-.35.891 0 .832.857 1.658 1.72 2.487 2.58.073.075.152.143.24.229z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <span>{{
+                      $t("service.icl.model.reversibility.intro")
+                    }}</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="icl-introVedio-vedio">
