@@ -2510,7 +2510,7 @@ module.exports = {
         },
       },
       model:{
-        title: 'EVO ICL 產品系列介紹 — V4C｜V5｜V6 型號比較',
+        title: 'EVO ICL 產品系列介紹{mbr}V4C｜V5｜V6 型號比較',
         project: {
           title: '項目',
         },
@@ -2520,7 +2520,7 @@ module.exports = {
           strong2: '1800度',
           v4c: '{strong1}{mbr}50-{strong2}/{br}散光 ≤ 600度',
           v5: '近視{mbr}50-1400度/{br}散光 ≤ 600度',
-          v6: '近視{mbr}50-1000度/{br}散光 ≤ 300度{br}附加：老視矯正'
+          v6: '近視{mbr}50-1000度/{br}散光 ≤ 300度{br}附加：老花矯視'
         },
         technology: {
           title: '核心技術',
@@ -2537,7 +2537,7 @@ module.exports = {
           title: '適用人群',
           v4c: '尋求穩定的{mbr}視力方案',
           v5: '追求極致{mbr}視覺品質',
-          v6: '40 歲以上，{br}需同時處理{mbr}近視與老花'
+          v6: '40 歲以上{br}需同時處理{mbr}近視與老花'
         },
         night:{
           title: '夜間視覺',

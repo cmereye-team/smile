@@ -2504,6 +2504,46 @@ module.exports = {
           towdes: "客人可按需要选择取出ICL",
         },
       },
+      model:{
+        title: 'EVO ICL 产品系列介绍{mbr}V4C｜V5｜V6 型号比较',
+        project: {
+          title: '项目',
+        },
+        range: {
+          title: '矫正范围',
+          strong1: '近视',
+          strong2: '1800度',
+          v4c: '{strong1}{mbr}50-{strong2}/{br}散光 ≤ 600度',
+          v5: '近视{mbr}50-1400度/{br}散光 ≤ 600度',
+          v6: '近视{mbr}50-1000度/{br}散光 ≤ 300度{br}附加：老花矫视'
+        },
+        technology: {
+          title: '核心技术',
+          v4c: 'CentraFLOW®{mbr}专利技术',
+          v5: '特大光学区',
+          v6: 'EDoF 延展{mbr}景深技术'
+        },
+        materials: {
+          title: '材质',
+          v4c: 'CentraFLOW®{mbr}生物相容材质',
+          intro: 'Collamer®生物相容材质{br}纳米抗沉积涂层'
+        },
+        audience:{
+          title: '适用人群',
+          v4c: '寻求稳定的{mbr}视力方案',
+          v5: '追求极致{mbr}视觉品质',
+          v6: '40 岁以上{br}需同时处理{mbr}近视与老花'
+        },
+        night:{
+          title: '夜间视觉',
+          v4c: '提供稳定视觉',
+          intro: '显著提升夜间视觉，{br}减少眩光与光晕干扰'
+        },
+        reversibility:{
+          title: '可逆性',
+          intro: '可逆转，可按需取出晶体'
+        }
+      },
       film: {
         h2: `ICL 植入式隐形眼镜<br class="mbShow" />介绍影片`,
         title1: "【真正隐形嘅隐形眼镜 - ICL🤩】",

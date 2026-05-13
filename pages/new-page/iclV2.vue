@@ -3572,6 +3572,101 @@ i {
     background-position: 100% 0;
   }
 }
+.icl-model {
+  td {
+    height: 100px;
+  }
+  .model-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #4570b6;
+    text-align: center;
+  }
+  .line-bottom {
+    border-bottom: 1px solid #d0d0d0;
+  }
+  .line-project {
+    border-right: 1px solid #fff;
+  }
+  .line-right {
+    border-right: 1px solid #d0d0d0;
+  }
+  .model-main {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .model-table {
+    border-collapse: collapse;
+    min-width: 500px;
+  }
+  .project-name {
+    background-color: #d4e4ff;
+    color: #4570b6;
+    font-size: 20px;
+    font-weight: 700;
+    height: 100px;
+  }
+  .table-item {
+    background-color: #efeeee;
+    color: #4570b6;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 92px;
+    position: sticky;
+    left: 0;
+    z-index: 10;
+  }
+  .model-star {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNMTkuMDgzIDE1LjA0cS40MjMgMS45NjcuNzQ3IDMuNTYuMTUuNjczLjI3NCAxLjM0NXQuMjM3IDEuMjIuMTg2LjkzNC4xLjQ4NnEuMDc1LjQ5OC0uMjI0LjY2LS4zLjE2LS42NzIuMTYxLS4xMjUgMC0uMzYyLS4wODdhMTUgMTUgMCAwIDEtLjM2LS4xMzdsLTYuNS0zLjc4NXEtMS43NjcgMS4wNDctMy4yMTIgMS44NjgtLjYyMy4zNDktMS4yMzIuNjk3LS42MS4zNDktMS4xMDguNjQ4dC0uODYuNDk4cS0uMzYuMTk4LS40ODUuMjQ5YS44NS44NSAwIDAgMS0uNTEuMDg3IDEuMSAxLjEgMCAwIDEtLjQ3My0uMTg3LjkuOSAwIDAgMS0uMzEyLS4zNjEuNjYuNjYgMCAwIDEtLjA1LS40MzZsLjEyNS0uNDg1cS4xLS4zODcuMjI0LS45MjIuMTI1LS41MzUuMjg2LTEuMTgzLjE2Mi0uNjQ2LjMzNy0xLjMyLjM3My0xLjU0Mi44NDYtMy40ODVhNDU3IDQ1NyAwIDAgMC0zLjYyMy0zLjEgODEgODEgMCAwIDEtLjg3MS0uNzQ3IDcyIDcyIDAgMCAwLS42MzUtLjU0OHEtLjI1LS4yMTEtLjI3NC0uMjM3LS4zLS4yNzQtLjUxLS42MWExIDEgMCAwIDEtLjE2My0uNjg1Ljg3Ljg3IDAgMCAxIC4yNzQtLjU0N3EuMjI1LS4yLjQ5OC0uMjVsNy42OTUtLjY5N0wxMS4zMzkuOTcxcS4xNS0uMzk4LjQyMy0uNjg1LjI3NS0uMjg1Ljc0Ny0uMjg2YS44My44MyAwIDAgMSAuNDM2LjExMnEuMTg4LjExMi4zMTIuMjYyLjEyMy4xNS4yMTEuMjk4LjA4Ny4xNS4xMzcuMjVsMi43ODkgNi42NzMgNy42OTQuNzIycS40OTkuMTI0LjY5Ny4yOTkuMi4xNzQuMi41NDdhLjk0Ljk0IDAgMCAxLS4yMTIuNjFxLS4yMTIuMjYyLS41MzUuNjM1eiIgZmlsbD0iIzc1YmVlOSIvPjwvc3ZnPg==");
+      background-size: contain;
+      background-position: center;
+      width: 16px;
+      height: 16px;
+      top: 8px;
+      right: 8px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icl-model {
+    td {
+      height: 116px;
+    }
+    .model-title {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .line-bottom {
+      border-bottom-width: 1.5px;
+    }
+    .line-project,
+    .line-right {
+      border-right-width: 1.5px;
+    }
+    .project-name {
+      font-size: 30px;
+      height: 148px;
+    }
+    .table-item {
+      font-size: 20px;
+      width: 232px;
+    }
+    .model-star {
+      &::after {
+        width: 24px;
+        height: 24px;
+        top: 12px;
+        right: 12px;
+      }
+    }
+  }
+}
 </style>
 <template>
   <div class="lasik">
@@ -3750,7 +3845,7 @@ i {
       </a>
     </section>
     <!-- start  ICL植入式隱形眼鏡費用-->
-    <div class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 md:mb-22">
+    <div class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-9 md:mb-[72px]">
       <div class="w-full flex flex-col items-center mx-auto">
         <h2
           class="text-[#4A74B8] text-xl md:text-3xl font-black mb-[40px] md:mb-10 tracking-wider text-center"
@@ -3897,6 +3992,186 @@ i {
         </div>
       </div>
     </div>
+    <div class="icl-model mb-9 lg:mb-20 container max-7xl mx-auto">
+      <i18n
+        class="model-title mb-6 lg:mb-10"
+        tag="h2"
+        path="service.icl.model.title"
+      >
+        <template #mbr><span class="hidden md:inline"> — </span><br class="block md:hidden" /></template>
+      </i18n>
+      <div
+        class="model-main w-full text-desc text-center font-light text-base lg:text-xl leading-[1.2] tracking-wider"
+      >
+        <table class="model-table w-full">
+          <thead>
+            <tr class="line-bottom">
+              <th class="table-item">
+                {{ $t("service.icl.model.project.title") }}
+              </th>
+              <th class="project-name line-project">V4C</th>
+              <th class="project-name line-project">V5</th>
+              <th class="project-name">V6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="line-bottom">
+              <th class="table-item">
+                {{ $t("service.icl.model.range.title") }}
+              </th>
+              <i18n
+                class="line-right model-star"
+                tag="td"
+                path="service.icl.model.range.v4c"
+              >
+                <template #br>
+                  <br />
+                </template>
+                <template #mbr><br class="block md:hidden" /></template>
+                <template #strong1>
+                  <strong class="text-[#F89B03] font-bold">{{
+                    $t("service.icl.model.range.strong1")
+                  }}</strong>
+                </template>
+                <template #strong2>
+                  <strong class="text-[#F89B03] font-bold">{{
+                    $t("service.icl.model.range.strong2")
+                  }}</strong>
+                </template>
+              </i18n>
+              <i18n
+                class="line-right"
+                tag="td"
+                path="service.icl.model.range.v5"
+              >
+                <template #br>
+                  <br />
+                </template>
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+              <i18n tag="td" path="service.icl.model.range.v6">
+                <template #br>
+                  <br />
+                </template>
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+            </tr>
+            <tr class="line-bottom">
+              <th class="table-item">
+                {{ $t("service.icl.model.technology.title") }}
+              </th>
+              <i18n
+                class="line-right"
+                tag="td"
+                path="service.icl.model.technology.v4c"
+              >
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+              <td class="line-right">
+                {{ $t("service.icl.model.technology.v5") }}
+              </td>
+              <i18n
+                class="model-star text-[#F89B03] font-bold"
+                tag="td"
+                path="service.icl.model.technology.v6"
+              >
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+            </tr>
+            <tr class="line-bottom">
+              <th class="table-item">
+                {{ $t("service.icl.model.materials.title") }}
+              </th>
+              <i18n
+                class="line-right"
+                tag="td"
+                path="service.icl.model.materials.v4c"
+              >
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+              <i18n
+                tag="td"
+                colspan="2"
+                path="service.icl.model.materials.intro"
+              >
+                <template #br><br /></template>
+              </i18n>
+            </tr>
+            <tr class="line-bottom">
+              <th class="table-item">
+                {{ $t("service.icl.model.audience.title") }}
+              </th>
+              <i18n
+                class="line-right"
+                tag="td"
+                path="service.icl.model.audience.v4c"
+              >
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+              <i18n
+                class="line-right"
+                tag="td"
+                path="service.icl.model.audience.v5"
+              >
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+              <i18n
+                tag="td"
+                path="service.icl.model.audience.v6"
+                class="text-[#F89B03] font-bold"
+              >
+                <template #br
+                  ><span class="hidden md:inline">，</span><br
+                /></template>
+                <template #mbr><br class="block md:hidden" /></template>
+              </i18n>
+            </tr>
+            <tr class="line-bottom">
+              <th class="table-item">
+                {{ $t("service.icl.model.night.title") }}
+              </th>
+              <td class="line-right">
+                {{ $t("service.icl.model.night.v4c") }}
+              </td>
+              <i18n
+                tag="td"
+                colspan="2"
+                path="service.icl.model.night.intro"
+                class="text-[#F89B03] font-bold"
+              >
+                <template #br><br /></template>
+              </i18n>
+            </tr>
+            <tr class="line-bottom">
+              <th class="table-item">
+                {{ $t("service.icl.model.reversibility.title") }}
+              </th>
+              <td colspan="3">
+                <div class="flex items-center justify-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="28"
+                    viewBox="0 0 27 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M.009 15.08c-.128-4.545 1.115-7.944 3.749-10.787S9.638.01 13.416 0c3.706-.009 6.907 1.369 9.545 4.111 2.632 2.736 3.933 6.05 3.961 9.89.026 3.486-1.12 6.562-3.318 9.18-2.24 2.664-5.074 4.314-8.457 4.718-4.638.554-8.577-1.028-11.751-4.595C1.433 21.099.01 17.83.009 15.08m11.206.075c-.089-.085-.167-.154-.24-.23-.828-.859-1.655-1.723-2.486-2.579-.339-.35-.559-.345-.892 0q-.9.931-1.8 1.869c-.302.316-.302.545 0 .861q2.468 2.582 4.937 5.16c.366.382.574.38.948-.007q.919-.95 1.838-1.904 3.768-3.908 7.534-7.818c.347-.36.347-.589.003-.947L19.35 7.787c-.409-.423-.603-.425-1.006-.007l-6.888 7.14c-.073.076-.151.147-.243.235z"
+                      fill="#f89b03"
+                    />
+                    <path
+                      d="M11.215 15.155c.091-.089.17-.16.243-.235l6.888-7.14c.402-.42.597-.418 1.006.007q.854.885 1.706 1.772c.343.359.343.587-.004.947q-3.766 3.91-7.533 7.818-.917.953-1.838 1.905c-.374.387-.583.389-.949.006l-4.936-5.159c-.302-.317-.302-.545 0-.862q.898-.936 1.8-1.868c.333-.346.553-.35.891 0 .832.857 1.658 1.72 2.487 2.58.073.075.152.143.24.229z"
+                      fill="#fff"
+                    />
+                  </svg>
+                  <span>{{ $t("service.icl.model.reversibility.intro") }}</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <!-- end ICL植入式隱形眼鏡費用 -->
     <!-- ICL矯視的好處 -->
     <section class="icl-Good">
@@ -4022,145 +4297,6 @@ i {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="icl-model">
-        <h2>{{ $t("service.icl.model.title") }}</h2>
-        <div
-          class="model-main w-fit mx-auto text-desc font-light text-base lg:text-xl leading-[1.2] tracking-wider"
-        >
-          <table class="model-table">
-            <thead>
-              <tr>
-                <th class="bg-[#EFEEEE]">
-                  {{ $t("service.icl.model.project.title") }}
-                </th>
-                <th class="bg-[#D4E4FF]">V4C</th>
-                <th class="bg-[#D4E4FF]">V5</th>
-                <th class="bg-[#D4E4FF]">V6</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>{{ $t("service.icl.model.range.title") }}</th>
-                <!-- <td>{{ $t("service.icl.model.range.v4c") }}</td> -->
-                <i18n tag="td" path="service.icl.model.range.v4c">
-                  <template #br>
-                    <br />
-                  </template>
-                  <template #mbr><br class="block md:hidden" /></template>
-                  <template #strong1>
-                    <strong class="text-[#F89B03] font-bold">{{
-                      $t("service.icl.model.range.strong1")
-                    }}</strong>
-                  </template>
-                  <template #strong2>
-                    <strong class="text-[#F89B03] font-bold">{{
-                      $t("service.icl.model.range.strong2")
-                    }}</strong>
-                  </template>
-                </i18n>
-                <i18n tag="td" path="service.icl.model.range.v5">
-                  <template #br>
-                    <br />
-                  </template>
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-                <i18n tag="td" path="service.icl.model.range.v6">
-                  <template #br>
-                    <br />
-                  </template>
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-              </tr>
-              <tr>
-                <th>{{ $t("service.icl.model.technology.title") }}</th>
-                <i18n tag="td" path="service.icl.model.technology.v4c">
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-                <td>{{ $t("service.icl.model.technology.v5") }}</td>
-                <i18n
-                  tag="td"
-                  path="service.icl.model.technology.v6"
-                  class="text-[#F89B03] font-bold"
-                >
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-              </tr>
-              <tr>
-                <th>{{ $t("service.icl.model.materials.title") }}</th>
-                <i18n tag="td" path="service.icl.model.materials.v4c">
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-                <i18n
-                  tag="td"
-                  colspan="2"
-                  path="service.icl.model.materials.intro"
-                >
-                  <template #br><br /></template>
-                </i18n>
-              </tr>
-              <tr>
-                <th>{{ $t("service.icl.model.audience.title") }}</th>
-                <i18n tag="td" path="service.icl.model.audience.v4c">
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-                <i18n
-                  tag="td"
-                  path="service.icl.model.audience.v5"
-                  class="text-[#F89B03] font-bold"
-                >
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-                <i18n
-                  tag="td"
-                  path="service.icl.model.audience.v6"
-                  class="text-[#F89B03] font-bold"
-                >
-                  <template #br><br /></template>
-                  <template #mbr><br class="block md:hidden" /></template>
-                </i18n>
-              </tr>
-              <tr>
-                <th>{{ $t("service.icl.model.night.title") }}</th>
-                <td>{{ $t("service.icl.model.night.v4c") }}</td>
-                <i18n
-                  tag="td"
-                  colspan="2"
-                  path="service.icl.model.night.intro"
-                  class="text-[#F89B03] font-bold"
-                >
-                  <template #br><br /></template>
-                </i18n>
-              </tr>
-              <tr>
-                <th>{{ $t("service.icl.model.reversibility.title") }}</th>
-                <td colspan="3">
-                  <div class="flex items-center justify-center gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="27"
-                      height="28"
-                      viewBox="0 0 27 28"
-                      fill="none"
-                    >
-                      <path
-                        d="M.009 15.08c-.128-4.545 1.115-7.944 3.749-10.787S9.638.01 13.416 0c3.706-.009 6.907 1.369 9.545 4.111 2.632 2.736 3.933 6.05 3.961 9.89.026 3.486-1.12 6.562-3.318 9.18-2.24 2.664-5.074 4.314-8.457 4.718-4.638.554-8.577-1.028-11.751-4.595C1.433 21.099.01 17.83.009 15.08m11.206.075c-.089-.085-.167-.154-.24-.23-.828-.859-1.655-1.723-2.486-2.579-.339-.35-.559-.345-.892 0q-.9.931-1.8 1.869c-.302.316-.302.545 0 .861q2.468 2.582 4.937 5.16c.366.382.574.38.948-.007q.919-.95 1.838-1.904 3.768-3.908 7.534-7.818c.347-.36.347-.589.003-.947L19.35 7.787c-.409-.423-.603-.425-1.006-.007l-6.888 7.14c-.073.076-.151.147-.243.235z"
-                        fill="#f89b03"
-                      />
-                      <path
-                        d="M11.215 15.155c.091-.089.17-.16.243-.235l6.888-7.14c.402-.42.597-.418 1.006.007q.854.885 1.706 1.772c.343.359.343.587-.004.947q-3.766 3.91-7.533 7.818-.917.953-1.838 1.905c-.374.387-.583.389-.949.006l-4.936-5.159c-.302-.317-.302-.545 0-.862q.898-.936 1.8-1.868c.333-.346.553-.35.891 0 .832.857 1.658 1.72 2.487 2.58.073.075.152.143.24.229z"
-                        fill="#fff"
-                      />
-                    </svg>
-                    <span>{{
-                      $t("service.icl.model.reversibility.intro")
-                    }}</span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
       <div class="icl-introVedio-vedio">
