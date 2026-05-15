@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-05-11 15:33:07
+ * @LastEditTime: 2026-05-15 11:41:19
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -200,12 +200,11 @@
               </tr>
               <tr class="custom-comparison-table-tipIcon">
                 <td>
-                  術後覆診
+                  一年內<br class="block md:hidden"/>免費覆診
                   <br />
                   <span
                     class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap"
-                    >由醫生進行<br />
-                    包檢查費及藥費</span
+                    >由醫生進行</span
                   >
                 </td>
                 <td>
@@ -420,12 +419,11 @@
               </tr>
               <tr>
                 <td>
-                  術後覆診
+                  一年內<br class="block md:hidden"/>免費覆診
                   <br />
                   <span
                     class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap"
-                    >由醫生進行<br />
-                    包檢查費及藥費</span
+                    >由醫生進行</span
                   >
                 </td>
                 <td class="bg-lbv-body" colspan="2">

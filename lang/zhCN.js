@@ -3227,15 +3227,15 @@ module.exports = {
       name1: "ZEISS PRESBYOND",
       name2: "500Hz MEL90",
       remark:
-        "Zeiss PRESBYOND 500Hz MEL90 結合 MEL 90 準分子雷射與 PRESBYOND Laser Blended Vision 軟體，能提供雙眼切換視力矯正，讓患者在近距離、中距離及遠距離皆能清晰視物。系統採用 500Hz 高頻雷射，可在約 1.3 秒內完成 1D 近視的矯正，同時配備 1050Hz 眼球追蹤技術，大幅提升手術精準度與安全性，達成理想的矯視效果。",
-      source: "資料及圖片來源：Carl Zeiss",
+        "Zeiss PRESBYOND 500Hz MEL90 结合 MEL 90 准分子雷射与 PRESBYOND Laser Blended Vision 软体，能提供双眼切换视力矫正，让患者在近距离、中距离及远距离皆能清晰视物。系统采用 500Hz 高频雷射，可在约 1.3 秒内完成 1D 近视的矫正，同时配备 1050Hz 眼球追踪技术，大幅提升手术精准度与安全性，达成理想的矫视效果。",
+      source: "资料及图片来源：Carl Zeiss",
     },
     content27: {
-      name1: "威力揚影像導引系統",
+      name1: "Alcon VERION 中定位系统",
       name2: "（Alcon VERION Image Guided System）",
       remark:
-        "整合「術前影像量測」、「手術規劃」及「術中導航」三大功能，透過數碼化系統處理，能大幅減少人手轉錄與標記所產生的誤差。系統專為提升手術精準度而設，能優化散光及多焦點人工水晶體的定位。",
-      source: "資料及圖片來源： Alcon",
+        "整合「术前影像量测」、「手术规划」及「术中导航」三大功能，透过数码化系统处理，能大幅减少人手转录与标记所产生的误差。系统专为提升手术精准度而设，能优化散光及多焦点人工水晶体的定位。",
+      source: "资料及图片来源：Alcon",
     },
   },
   appointFrom_ifram: {

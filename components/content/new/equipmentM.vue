@@ -8,7 +8,7 @@
             <div
               @click="showRemark(index)"
               :class="[
-                item.isShow ? 'equipment-name-up-show ' : 'equipment-name-up',
+                item.isShow ? 'equipment-name-up-show' : 'equipment-name-up',
               ]"
             >
               <svg
@@ -33,7 +33,7 @@
                 />
               </svg>
             </div>
-            <div>
+            <div :class="`equipment-${item.id}`">
               <span
                 v-for="(el, index) in item.name"
                 :key="index"
@@ -84,7 +84,10 @@ export default {
       {
         id: 27,
         img: "https://statichk.cmermedical.com/smile/equipment/equipment-027-v1.webp",
-        name: [this.$t("medical_equipment.content27.name1"), this.$t("medical_equipment.content27.name2")],
+        name: [
+          this.$t("medical_equipment.content27.name1"),
+          this.$t("medical_equipment.content27.name2"),
+        ],
         remark: this.$t("medical_equipment.content27.remark"),
         source: this.$t("medical_equipment.content27.source"),
         isShow: false,
@@ -430,6 +433,9 @@ export default {
       font-weight: 500;
       line-height: 5.12vw; /* 178.571% */
       letter-spacing: 0.18vw;
+      &.equipment-27 {
+        font-size: 3.4vw;
+      }
     }
   }
   .equipment-name-up {
