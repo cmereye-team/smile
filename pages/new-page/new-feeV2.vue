@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-05-15 11:41:19
+ * @LastEditTime: 2026-05-15 16:39:15
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -58,10 +58,7 @@
                   ><br />微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
-                  <span>ICL V4C</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
-                </th>
-                <th>
-                  <span>ICL V5</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
+                  <span>ICL</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
                 </th>
                 <th>
                   <span>SMILE</span> <br />微笑激光<br class="d-lg-none" />矯視
@@ -87,10 +84,6 @@
                 </td>
                 <td>港幣$24,000<sup>^</sup></td>
                 <td>
-                  不帶散光<br />港幣$59,000<sup>^^</sup
-                  ><br />帶散光<br />港幣$63,000<sup>^^</sup>
-                </td>
-                <td>
                   不帶散光<br />港幣$64,000<sup>^^</sup
                   ><br />帶散光<br />港幣$68,000<sup>^^</sup>
                 </td>
@@ -101,7 +94,6 @@
                 <td>術前檢查<br class="d-lg-block" />費用</td>
                 <td>港幣$100</td>
                 <td>港幣$100</td>
-                <td>港幣$500</td>
                 <td>港幣$500</td>
                 <td>港幣$100</td>
                 <td>港幣$100</td>
@@ -116,24 +108,12 @@
                     alt="不包括"
                   />
                 </td>
-                <td>
-                  <img
-                    src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                    alt="不包括"
-                  />
-                </td>
                 <td>1次</td>
                 <td>1次</td>
               </tr>
               <tr>
                 <td>術後眼部<br />彩光護理</td>
                 <td>1次</td>
-                <td>
-                  <img
-                    src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                    alt="不包括"
-                  />
-                </td>
                 <td>
                   <img
                     src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
@@ -191,16 +171,10 @@
                     alt="包括"
                   />
                 </td>
-                <td>
-                  <img
-                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                    alt="包括"
-                  />
-                </td>
               </tr>
               <tr class="custom-comparison-table-tipIcon">
                 <td>
-                  一年內<br class="block md:hidden"/>免費覆診
+                  一年內<br class="block md:hidden" />免費覆診
                   <br />
                   <span
                     class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap"
@@ -214,10 +188,12 @@
                   <span>3次<sup>#</sup></span>
                 </td>
                 <td>
-                  <span>6次<sup>##</sup><br/><span class="text-desc text-xs lg:text-base font-normal">延長至一年半內</span></span>
-                </td>
-                <td>
-                  <span>6次<sup>##</sup><br/><span class="text-desc text-xs lg:text-base font-normal">延長至一年半內</span></span>
+                  <span
+                    >6次<sup>##</sup><br /><span
+                      class="text-desc text-xs lg:text-base font-normal"
+                      >延長至一年半內</span
+                    ></span
+                  >
                 </td>
                 <td>
                   <span>3次<sup>#</sup></span>
@@ -248,12 +224,6 @@
                 </td>
                 <td>
                   <img
-                    src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
-                    alt="不包括"
-                  />
-                </td>
-                <td>
-                  <img
                     src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
                     alt="包括"
                   />
@@ -267,12 +237,6 @@
               </tr>
               <tr>
                 <td>無限視光<br class="d-lg-block" />檢查</td>
-                <td>
-                  <img
-                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
-                    alt="包括"
-                  />
-                </td>
                 <td>
                   <img
                     src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
@@ -419,7 +383,7 @@
               </tr>
               <tr>
                 <td>
-                  一年內<br class="block md:hidden"/>免費覆診
+                  一年內<br class="block md:hidden" />免費覆診
                   <br />
                   <span
                     class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap"
@@ -1964,16 +1928,16 @@ body {
     .custom-comparison-table thead tr > th:nth-child(3) {
       background: #719ad8;
     }
+    //.custom-comparison-table thead tr > th:nth-child(4) {
+    //  background: #4bc0ab;
+    //}
     .custom-comparison-table thead tr > th:nth-child(4) {
-      background: #4bc0ab;
-    }
-    .custom-comparison-table thead tr > th:nth-child(5) {
       background: #86d2c4;
     }
-    .custom-comparison-table thead tr > th:nth-child(6) {
+    .custom-comparison-table thead tr > th:nth-child(5) {
       background: #8fd3ea;
     }
-    .custom-comparison-table thead tr > th:nth-child(7) {
+    .custom-comparison-table thead tr > th:nth-child(6) {
       background: #d8bb71;
     }
     .custom-comparison-table tbody tr td {
@@ -2126,16 +2090,16 @@ body {
     .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #f1f5fc;
     }
+    // .custom-comparison-table tbody tr > td:nth-child(4) {
+    //   background: #dffff9;
+    // }
     .custom-comparison-table tbody tr > td:nth-child(4) {
-      background: #dffff9;
-    }
-    .custom-comparison-table tbody tr > td:nth-child(5) {
       background: #f1fcf9;
     }
-    .custom-comparison-table tbody tr > td:nth-child(6) {
+    .custom-comparison-table tbody tr > td:nth-child(5) {
       background: #e2f8ff;
     }
-    .custom-comparison-table tbody tr > td:nth-child(7) {
+    .custom-comparison-table tbody tr > td:nth-child(6) {
       background: #fbfcf1;
     }
   }
@@ -2473,16 +2437,16 @@ body {
     .custom-comparison-table thead tr > th:nth-child(3) {
       background: #719ad8;
     }
+    // .custom-comparison-table thead tr > th:nth-child(4) {
+    //   background: #4bc0ab;
+    // }
     .custom-comparison-table thead tr > th:nth-child(4) {
-      background: #4bc0ab;
-    }
-    .custom-comparison-table thead tr > th:nth-child(5) {
       background: #86d2c4;
     }
-    .custom-comparison-table thead tr > th:nth-child(6) {
+    .custom-comparison-table thead tr > th:nth-child(5) {
       background: #8fd3ea;
     }
-    .custom-comparison-table thead tr > th:nth-child(7) {
+    .custom-comparison-table thead tr > th:nth-child(6) {
       background: #d8bb71;
       letter-spacing: 0.1em;
     }
@@ -2632,16 +2596,16 @@ body {
     .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #f1f5fc;
     }
+    // .custom-comparison-table tbody tr > td:nth-child(4) {
+    //   background: #dffff9;
+    // }
     .custom-comparison-table tbody tr > td:nth-child(4) {
-      background: #dffff9;
-    }
-    .custom-comparison-table tbody tr > td:nth-child(5) {
       background: #f1fcf9;
     }
-    .custom-comparison-table tbody tr > td:nth-child(6) {
+    .custom-comparison-table tbody tr > td:nth-child(5) {
       background: #e2f8ff;
     }
-    .custom-comparison-table tbody tr > td:nth-child(7) {
+    .custom-comparison-table tbody tr > td:nth-child(6) {
       background: #fbfcf1;
     }
   }
