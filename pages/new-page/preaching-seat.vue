@@ -348,6 +348,44 @@
         <picture>
           <source
             srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-01-v1.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-01-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-01-v1.jpg"
+            alt="希瑪眼科六月中環預約日歷"
+            title="希瑪眼科六月中環預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-02-v1.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-02-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-02-v1.jpg"
+            alt="希瑪眼科六月旺角預約日歷"
+            title="希瑪眼科六月旺角預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
               https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-01-v1.webp
             "
             type="image/webp"
@@ -719,6 +757,10 @@ export default {
           "2026-05-13",
           "2026-05-20",
           "2026-05-27",
+          "2026-06-03",
+          "2026-06-10",
+          "2026-06-17",
+          "2026-06-24",
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -741,6 +783,10 @@ export default {
           "2026-05-16",
           "2026-05-23",
           "2026-05-30",
+          "2026-06-06",
+          "2026-06-13",
+          "2026-06-20",
+          "2026-06-27",
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -773,6 +819,9 @@ export default {
           "2026-04-21",
           "2026-04-27",
           "2026-05-16",
+          "2026-06-06",
+          "2026-06-15",
+          "2026-06-27",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -798,6 +847,12 @@ export default {
           "2026-05-18",
           "2026-05-23",
           "2026-05-26",
+          "2026-06-02",
+          "2026-06-13",
+          "2026-06-16",
+          "2026-06-22",
+          "2026-06-29",
+          "2026-06-30",
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -884,7 +939,7 @@ export default {
           name: "老花講座-旺角",
           times: {
             周二: "1:30 下午",
-            周六: "1:30 下午",
+            周六: "2:30 下午",
             周一: "6:30 下午",
             周四: "6:30 下午",
             "2025年10月6日": "1:30 下午",
@@ -899,7 +954,7 @@ export default {
       this.morningOrAfternoon =
         config.times[nowDay] || config.times[weekday] || "";
       // 处理讲座名称
-      const lbv = ["2026-05-23"];
+      const lbv = ["2026-05-23", "2026-06-13", "2026-06-22"];
       const seatname =
         nameAddress === "clearVisionMongKok" && lbv.includes(isoDate)
           ? "老花講座 (LBV特別場)-旺角"
