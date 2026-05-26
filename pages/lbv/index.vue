@@ -3799,7 +3799,6 @@ i {
   </div>
 </template>
 <script>
-import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -3824,7 +3823,6 @@ export default {
     process,
     xtar,
     film,
-    BannerSlider,
     lbvTable,
     lbvSwiper,
   },

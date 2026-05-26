@@ -1,12 +1,12 @@
 <!--
  * @Date: 2024-04-26 18:54:12
- * @LastEditTime: 2026-04-22 14:14:55
+ * @LastEditTime: 2026-05-26 13:39:46
  * @FilePath: /pages/new-page/home.vue
  * @Description: 首页
 -->
 <template>
   <div class="lasik">
-    <BannerSlider class="banner-box" />
+    <BannerSlider :gid="bannerGid" class="banner-box" />
     <!-- 希瑪微笑矯視中心 -->
     <section class="centerIntro">
       <div class="new-container container centerIntroBox">
@@ -1192,7 +1192,7 @@
   </div>
 </template>
 <script>
-import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
+import BannerSlider from "@/components/commom/swiper/SwiperBanner.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -1267,6 +1267,7 @@ export default {
   },
   data() {
     return {
+      bannerGid: 1,
       serverList: [
         {
           title: "SMILE<br/>PRO",
@@ -1644,6 +1645,9 @@ export default {
         this.isMobile = false;
       }
     });
+    if(this.$i18n.locale === 'cn') {
+      this.bannerGid = 2;
+    }
   },
 };
 </script>

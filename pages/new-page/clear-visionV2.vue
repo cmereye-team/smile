@@ -3354,7 +3354,6 @@ i {
 <script>
 import Head from "@/components/Publice/Head.vue";
 import HeadV2 from "@/components/Publice/HeadeV2.vue";
-import BannerSlider from "@/components/content/home/BannerSliderV2.vue";
 import Footer from "@/components/commom/new_foot/Footer.vue";
 import FooterV2 from "@/components/commom/new_foot/ICLFooterV2.vue";
 import Banner from "@/components/Publice/Banner.vue";
@@ -3385,7 +3384,6 @@ export default {
     film,
     FooterV2,
     HeadV2,
-    BannerSlider,
   },
   head() {
     if (this.$i18n.locale === "en") {
