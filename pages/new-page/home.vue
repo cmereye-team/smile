@@ -1,6 +1,6 @@
 <!--
  * @Date: 2024-04-26 18:54:12
- * @LastEditTime: 2026-05-26 13:39:46
+ * @LastEditTime: 2026-05-26 15:47:35
  * @FilePath: /pages/new-page/home.vue
  * @Description: 首页
 -->
@@ -1170,30 +1170,10 @@
         </a>
       </div>
     </section>
-    <div class="top-btnV2" @click="scrollToTopV2">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="36"
-        height="36"
-        viewBox="0 0 36 36"
-        fill="none"
-      >
-        <circle cx="18" cy="18" r="17.5" stroke="#4570B6" />
-        <path d="M12.24 12.96H23.76" stroke="#4570B6" />
-        <path
-          d="M12.8159 24.7681L17.9999 16.9921L23.1839 24.7681"
-          stroke="#4570B6"
-          stroke-linecap="round"
-        />
-      </svg>
-    </div>
-    <!-- <Footer />
-    <FooterMobile /> -->
   </div>
 </template>
 <script>
 import BannerSlider from "@/components/commom/swiper/SwiperBanner.vue";
-import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
 import xtar from "@/components/content/service/ICL-new/xtra.vue";
@@ -1205,7 +1185,6 @@ import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import Share from "../../components/content/service/ICL/share.vue";
 export default {
   components: {
-    Banner,
     H2Tag,
     process,
     xtar,
@@ -1569,15 +1548,6 @@ export default {
     };
   },
   methods: {
-    scrollToTopV2New() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    },
-    scrollToTopV2() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    },
     handleScroll() {
       const box = this.$refs.fourFeature; // 获取 box 元素
       const boxItemLeft = this.$refs.boxItemLeft; // 获取 boxitem-left 元素
@@ -3219,14 +3189,6 @@ i {
   }
   .d-xl-block {
     display: block;
-  }
-  // 向上
-  .top-btnV2 {
-    position: fixed;
-    right: 165px;
-    bottom: 140px;
-    z-index: 999;
-    cursor: pointer;
   }
 }
 </style>

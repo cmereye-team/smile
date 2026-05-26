@@ -9,7 +9,7 @@
       </Banner>
     </div> -->
     <BannerSlider :gid="3" :num="1" class="banner-box" />
-    <div class="lecture-box mt-10 md:mt-12 xl:mt-16">
+    <div class="lecture-box mt-10 mb-[56px] md:mt-12 xl:mt-[64px]">
       <div class="lecture-title">
         <div>
           <!-- <div class="title-img">
@@ -1403,10 +1403,7 @@ export default {
   }
 
   .lecture-box {
-    margin: 0 auto;
-    // margin-top: 100px;
     position: relative;
-    // transform: translateY(-260px);
   }
 
   .lecture-title {
@@ -1793,7 +1790,6 @@ export default {
 
   .lecture-box {
     position: relative;
-    margin-bottom: 55px;
   }
 
   .lecture-title {

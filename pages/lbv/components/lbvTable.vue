@@ -517,14 +517,7 @@ i {
     background-size: cover;
     position: relative;
     height: 209vw;
-    // padding-top: 130px;
     padding-top: 33.33vw;
-
-    .top-btnV2new {
-      position: absolute;
-      bottom: 20px;
-      right: 15px;
-    }
 
     .latestNews-tip {
       position: absolute;
@@ -3306,15 +3299,6 @@ i {
         }
       }
     }
-  }
-
-  // 向上
-  .top-btnV2 {
-    position: fixed;
-    right: 165px;
-    bottom: 140px;
-    z-index: 999;
-    cursor: pointer;
   }
 }
 
