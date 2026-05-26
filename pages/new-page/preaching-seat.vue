@@ -1,16 +1,15 @@
 <template>
   <div class="preaching-seat" v-loading.fullscreen.lock="fullscreenLoading">
-    <div class="preaching-seat-banner">
+    <!-- <div class="preaching-seat-banner">
       <Banner class="banner-box">
         <template #banner>
           <div class="banner-img banner-text-default">
-            <!-- <p>{{ $t("appointFroms.title") }}</p>
-          <p>Lecture</p> -->
           </div>
         </template>
       </Banner>
-    </div>
-    <div class="lecture-box">
+    </div> -->
+    <BannerSlider :gid="3" :num="1" class="banner-box" />
+    <div class="lecture-box mt-10 mb-[56px] md:mt-12 xl:mt-[64px]">
       <div class="lecture-title">
         <div>
           <!-- <div class="title-img">
@@ -527,11 +526,11 @@
   </div>
 </template>
 <script>
-import Banner from "@/components/Publice/Banner.vue";
+import BannerSlider from "@/components/commom/swiper/SwiperBanner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
   components: {
-    Banner,
+    BannerSlider,
     H2Tag,
   },
   data() {
@@ -1347,20 +1346,17 @@ export default {
     }
   }
 
-  :deep(.banner-box) {
-    box-sizing: border-box;
-    padding: 0 3vw;
-    max-width: 1270px;
-    display: flex;
-    justify-content: center;
-  }
+  // .banner-box {
+  //   box-sizing: border-box;
+  //   padding: 0 3vw;
+  //   max-width: 1270px;
+  //   display: flex;
+  //   justify-content: center;
+  //   margin: 0 auto;
+  // }
 
   .banner-img {
-    // background: url("https://static.cmereye.com/imgs/2024/04/c26ba48972f2997c.png")
-    //   no-repeat;
-    // background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIvWkGoRaeS3NAunNB8SwFhjUFB9L5MUJgiE3zXS6AA_1988_745.webp") no-repeat;
-    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-260523-pc-v1.webp")
-      no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-2606-pc-v1.webp") no-repeat;
     background-size: cover;
     // height: 32.08vw;
     width: 100%;
@@ -1407,10 +1403,7 @@ export default {
   }
 
   .lecture-box {
-    margin: 0 auto;
-    // margin-top: 100px;
     position: relative;
-    // transform: translateY(-260px);
   }
 
   .lecture-title {
@@ -1764,12 +1757,7 @@ export default {
   }
 
   .banner-img {
-    // background: url("https://static.cmereye.com/imgs/2024/04/d226e2e185d53c48.png")
-    //   no-repeat;
-    // background: url("https://statichk.cmermedical.com/cmermedical/image/20260306/lQDPIuPgoUx5-S3NAprNApqwMAa15lNreZYJgiE3zXS6AQ_666_666.webp") no-repeat;
-    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-260523-m-v1.webp")
-      no-repeat;
-
+    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-2606-mb-v1.webp") no-repeat;
     background-size: 100% 100%;
     background-position: center;
     // height: 30vw;
@@ -1802,7 +1790,6 @@ export default {
 
   .lecture-box {
     position: relative;
-    margin-bottom: 55px;
   }
 
   .lecture-title {

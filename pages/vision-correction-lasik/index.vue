@@ -218,15 +218,12 @@
       </section>
       <ShareSection />
     </main>
-    <goTop />
   </div>
 </template>
 <script>
-import goTop from "@/components/Publice/goTop.vue";
 import ShareSection from "@/components/commom/share/ShareSection.vue";
 export default {
   components: {
-    goTop,
     ShareSection,
   },
   head() {

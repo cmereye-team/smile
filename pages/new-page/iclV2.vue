@@ -354,9 +354,6 @@ i {
   }
 }
 @media screen and (max-width: 1140px) {
-  .top-btnV2 {
-    display: none;
-  }
   .smile-NewBanner {
     padding: 0 15px;
     // margin-top: 80px;
@@ -1254,11 +1251,6 @@ i {
     height: 209vw;
     // padding-top: 130px;
     padding-top: 33.33vw;
-    .top-btnV2new {
-      position: absolute;
-      bottom: 20px;
-      right: 15px;
-    }
     .latestNews-tip {
       position: absolute;
       // top: 55px;
@@ -3338,9 +3330,6 @@ i {
   }
   // 最新资讯
   .latestNews {
-    .top-btnV2new {
-      display: none;
-    }
     margin-top: 70px;
     margin-bottom: 60px;
     background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-newdongtai-pc.png")
@@ -3670,7 +3659,6 @@ i {
 </style>
 <template>
   <div class="lasik">
-    <goTop />
     <!-- 轮播位置 -->
     <div
       class="container new-container mx-auto smile-NewBanner position-relative"
@@ -4617,23 +4605,6 @@ i {
         </svg>
         <span> 了解更多 </span>
       </a>
-      <div class="top-btnV2new d-lg-none" @click="scrollToTopV2New">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="36"
-          height="36"
-          viewBox="0 0 36 36"
-          fill="none"
-        >
-          <circle cx="18" cy="18" r="17.5" stroke="#4570B6" />
-          <path d="M12.24 12.96H23.76" stroke="#4570B6" />
-          <path
-            d="M12.8159 24.7681L17.9999 16.9921L23.1839 24.7681"
-            stroke="#4570B6"
-            stroke-linecap="round"
-          />
-        </svg>
-      </div>
     </section>
     <section class="CaseSharingV2">
       <div>
@@ -4715,7 +4686,6 @@ i {
   </div>
 </template>
 <script>
-import goTop from "@/components/Publice/goTop.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -4733,7 +4703,6 @@ export default {
     film,
     suitable,
     share,
-    goTop,
     UserShare,
   },
   head() {
@@ -5252,9 +5221,6 @@ export default {
     };
   },
   methods: {
-    scrollToTopV2New() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    },
     highlightStep(index) {
       console.log("index");
       this.activeStep = index; // 更新当前激活的步骤
@@ -5276,12 +5242,6 @@ export default {
       } catch (error) {
         console.error("复制失败:", error);
       }
-    },
-    scrollToTopV2() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
     },
     // 开始计时
     startTimer(customInterval) {

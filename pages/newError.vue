@@ -392,7 +392,6 @@ $color-stone-800: #292524;
  
 </template>
 <script>
-import goTop from "@/components/Publice/goTop.vue";
 import Banner from "@/components/Publice/Banner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 import process from "@/components/content/service/ICL-new/process.vue";
@@ -410,7 +409,6 @@ export default {
     film,
     suitable,
     share,
-    goTop,
   },
   head() {
     if (this.$i18n.locale === "en") {
