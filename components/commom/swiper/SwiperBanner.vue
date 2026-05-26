@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-26 11:48:06
- * @LastEditTime: 2026-05-26 14:55:36
+ * @LastEditTime: 2026-05-26 15:14:18
  * @FilePath: /components/commom/swiper/SwiperBanner.vue
  * @Description: 轮播图Banner
 -->
@@ -21,30 +21,20 @@ export default {
   data() {
     return {
       bannerLists: [],
+      swiperOption: {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        observer: true,
+        observeParents: true,
+      },
     };
   },
   computed: {
     bannerCount() {
       return this.bannerLists.length;
-    },
-    swiperOption() {
-      this.bannerLists.length > 1
-        ? {
-            loop: true,
-            autoplay: true,
-            observer: true,
-            observeParents: true,
-            duration: 5000,
-            onSlideChangeEnd: function (swiper) {
-              swiper.update();
-              mySwiper.startAutoplay();
-              mySwiper.reLoop();
-            },
-          }
-        : {
-            loop: false,
-            autoplay: false,
-          };
     },
   },
   methods: {
@@ -53,25 +43,17 @@ export default {
      * @param {string} url 链接地址
      */
     isExternal(url) {
-      // 如果为空或只是 # 或 / 开头，视为内部
-      console.log(
-        `判断链接: ${url}, 是否为内部: ${
-          !url || url.startsWith("#") || url.startsWith("/")
-        }`
-      );
       if (!url || url.startsWith("#") || url.startsWith("/")) return false;
-
-      // 任何带协议的都视为外部（包含 http/https/tel/mailto/whatsapp: 等）
       return (
         /^[a-z][a-z0-9+.-]*:\/\//i.test(url) ||
-        /^\/\//.test(url) || // 协议相对链接 //example.com
+        /^\/\//.test(url) ||
         url.startsWith("tel:") ||
         url.startsWith("mailto:") ||
         url.startsWith("whatsapp:")
       );
     },
     replaceAmp(str) {
-      if (str.indexOf("&amp;") > -1) {
+      if (str && str.indexOf("&amp;") > -1) {
         str = str.replace(/&amp;/g, "&");
       }
       return str;
@@ -79,8 +61,8 @@ export default {
     async getBannerList() {
       let List = [];
       let that = this;
-      console.log(`gid: ${this.gid}, num: ${this.num}`);
       const API = `https://admin.hkcmereye.com/api.php/cms/slide/gid/${this.gid}/num/${this.num}`;
+      console.log(`gid=${this.gid}, num=${this.num}, API=${API}`);
       const formatImgUrl = (url) => {
         if (!url) return "";
         const prefix = "https://admin.hkcmereye.com";
@@ -89,95 +71,114 @@ export default {
         }
         return url.startsWith("/") ? `${prefix}${url}` : `${prefix}/${url}`;
       };
-      await fetch(API)
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (res) {
-          List = res.data.map((item, index) => {
-            return {
-              id: Number(item.id),
-              className: `banner_${index + 1}`,
-              pc_img: formatImgUrl(item.pic),
-              mb_img: formatImgUrl(item.mobilepic),
-              gid: item.gid,
-              link: that.replaceAmp(item.link),
-              isExternal: that.isExternal(item.link),
-              title: item.subtitle,
-              subtitle: `home-banner-${item.subtitle}`,
-            };
-          });
-          that.bannerLists = List;
+
+      try {
+        const response = await fetch(API);
+        const res = await response.json();
+        const dataList = res.data || [];
+
+        List = dataList.map((item, index) => {
+          return {
+            id: Number(item.id),
+            className: `banner_${index + 1}`,
+            pc_img: formatImgUrl(item.pic),
+            mb_img: formatImgUrl(item.mobilepic),
+            gid: item.gid,
+            link: that.replaceAmp(item.link),
+            isExternal: that.isExternal(item.link),
+            title: item.subtitle,
+            subtitle: `home-banner-${item.subtitle}`,
+          };
         });
+
+        // 关键修改 2：如果只有一张图，动态关闭 loop
+        if (List.length <= 1) {
+          this.swiperOption.loop = false;
+          this.swiperOption.autoplay = false;
+        }
+
+        that.bannerLists = List;
+      } catch (error) {
+        console.error("获取 banner 失败:", error);
+      }
     },
   },
-  mounted() {
-    this.getBannerList();
+  watch: {
+    // 监听 gid 的变化，一旦父组件传过来的 gid 变了，重新获取列表
+    gid: {
+      handler(newVal) {
+        if (newVal) {
+          this.getBannerList();
+        }
+      },
+      immediate: true,
+    },
   },
 };
 </script>
+
 <template>
   <div class="main_banner">
     <div class="center-Banner container mx-auto">
       <div
-        class="swiper gallery-top"
-        v-if="bannerCount"
+        class="swiper rounded-xl"
+        v-if="bannerLists.length > 0"
         v-swiper:bannerSwiper="swiperOption"
         ref="bannerSwiper"
       >
         <div class="swiper-wrapper">
-          <nuxt-link
-            v-for="(banner, index) in bannerLists"
-            v-if="!banner.isExternal"
-            :key="`nuxt-${index}`"
-            class="swiper-slide"
-            :to="localePath(banner.link)"
-            :data-banner-title="banner.subtitle"
-            :data-banner-id="index + 1"
-          >
-            <picture>
-              <source media="(min-width: 768px)" :srcset="banner.pc_img" />
-              <img
-                :class="banner.className"
-                :src="banner.mb_img"
-                :alt="banner.title"
-                :title="banner.title"
-              />
-            </picture>
-          </nuxt-link>
-          <a
-            v-else
-            v-for="(banner, index) in bannerLists"
-            :key="`a-${index}`"
-            class="swiper-slide"
-            :href="banner.link"
-            target="_blank"
-            rel="noopener noreferrer"
-            :data-banner-title="banner.subtitle"
-            :data-banner-id="index + 1"
-          >
-            <picture>
-              <source media="(min-width: 768px)" :srcset="banner.pc_img" />
-              <img
-                :class="banner.className"
-                :src="banner.mb_img"
-                :alt="banner.title"
-                :title="banner.title"
-              />
-            </picture>
-          </a>
+          <template v-for="(banner, index) in bannerLists">
+            <nuxt-link
+              v-if="!banner.isExternal"
+              :key="`nuxt-${index}-${banner.id}`"
+              class="swiper-slide"
+              :to="localePath(banner.link)"
+              :data-banner-title="banner.subtitle"
+              :data-banner-id="index + 1"
+            >
+              <picture>
+                <source media="(min-width: 768px)" :srcset="banner.pc_img" />
+                <img
+                  class="rounded-xl"
+                  :class="banner.className"
+                  :src="banner.mb_img"
+                  :alt="banner.title"
+                  :title="banner.title"
+                />
+              </picture>
+            </nuxt-link>
+            <a
+              v-else
+              :key="`a-${index}-${banner.id}`"
+              class="swiper-slide"
+              :href="banner.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              :data-banner-title="banner.subtitle"
+              :data-banner-id="index + 1"
+            >
+              <picture>
+                <source media="(min-width: 768px)" :srcset="banner.pc_img" />
+                <img
+                  class="rounded-xl"
+                  :class="banner.className"
+                  :src="banner.mb_img"
+                  :alt="banner.title"
+                  :title="banner.title"
+                />
+              </picture>
+            </a>
+          </template>
         </div>
       </div>
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 @media screen and (max-width: 767px) {
   .center-Banner {
     padding: 0 15px;
-    .gallery-top {
-      border-radius: 10px;
-    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -188,9 +189,6 @@ export default {
 @media screen and (min-width: 992px) {
   .center-Banner {
     max-width: 1320px;
-    .gallery-top {
-      border-radius: 15px;
-    }
   }
 }
 .banner {
