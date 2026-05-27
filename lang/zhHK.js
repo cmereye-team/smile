@@ -2461,6 +2461,38 @@ module.exports = {
         span3: `佩戴多副矯正度數眼鏡<br />(近視、遠視、散光、老花)`,
         span4: `不愛佩戴眼鏡或<br />隱形眼鏡`,
       },
+      model:{
+        title: 'EVO ICL 產品系列介紹 — V6',
+        project: {
+          title: '項目',
+        },
+        range: {
+          title: '矯正範圍',
+          strong1: '近視',
+          strong2: '1800度',
+          v6: '近視50-1000度/散光 ≤ 300度{mbr}附加：老花矯視'
+        },
+        technology: {
+          title: '核心技術',
+          v6: 'EDoF 延展景深技術'
+        },
+        materials: {
+          title: '材質',
+          intro: 'Collamer®生物相容材質納米抗沉積塗層'
+        },
+        audience:{
+          title: '適用人群',
+          v6: '40 歲以上需同時處理近視與老花'
+        },
+        night:{
+          title: '夜間視覺',
+          intro: '顯著提升夜間視覺，減少眩光與光暈干擾'
+        },
+        reversibility:{
+          title: '可逆性',
+          intro: '可逆轉，可按需取出晶體'
+        }
+      },
     },
     icl: {
       small_title1: `ICL鏡片`,
