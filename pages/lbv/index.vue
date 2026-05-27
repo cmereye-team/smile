@@ -3349,7 +3349,9 @@ i {
       </div>
     </section>
     <div class="icl-model mb-9 lg:mb-20 container max-7xl mx-auto">
-      <h2 class="model-title mb-6 lg:mb-10">{{ $t('service.clearVision.model.title' )}}</h2>
+      <h2 class="model-title mb-6 lg:mb-10">
+        {{ $t("service.clearVision.model.title") }}
+      </h2>
       <div
         class="model-main w-full text-desc text-center font-light text-base lg:text-xl leading-[1.2] tracking-wider"
       >
@@ -3368,32 +3370,39 @@ i {
                 {{ $t("service.clearVision.model.range.title") }}
               </th>
               <i18n tag="td" path="service.clearVision.model.range.v6">
-                <template #mbr><span class="hidden lg:inline">&nbsp;</span><br class="block md:hidden" /></template>
+                <template #mbr
+                  ><span class="hidden lg:inline">&nbsp;</span
+                  ><br class="block md:hidden"
+                /></template>
               </i18n>
             </tr>
             <tr class="line-bottom">
               <th class="table-item">
                 {{ $t("service.clearVision.model.technology.title") }}
               </th>
-              <td class="model-star text-[#F89B03] font-bold">{{ $t('service.clearVision.model.technology.v6') }}</td>
+              <td class="model-star text-[#F89B03] font-bold">
+                {{ $t("service.clearVision.model.technology.v6") }}
+              </td>
             </tr>
             <tr class="line-bottom">
               <th class="table-item">
                 {{ $t("service.clearVision.model.materials.title") }}
               </th>
-              <td>{{ $t('service.clearVision.model.materials.intro') }}</td>
+              <td>{{ $t("service.clearVision.model.materials.intro") }}</td>
             </tr>
             <tr class="line-bottom">
               <th class="table-item">
                 {{ $t("service.clearVision.model.audience.title") }}
               </th>
-              <td>{{ $t('service.clearVision.model.audience.v6') }}</td>
+              <td>{{ $t("service.clearVision.model.audience.v6") }}</td>
             </tr>
             <tr class="line-bottom">
               <th class="table-item">
                 {{ $t("service.clearVision.model.night.title") }}
               </th>
-              <td class="text-[#F89B03] font-bold">{{ $t('service.clearVision.model.night.intro') }}</td>
+              <td class="text-[#F89B03] font-bold">
+                {{ $t("service.clearVision.model.night.intro") }}
+              </td>
             </tr>
             <tr class="line-bottom">
               <th class="table-item">
@@ -3417,7 +3426,9 @@ i {
                       fill="#fff"
                     />
                   </svg>
-                  <span>{{ $t("service.clearVision.model.reversibility.intro") }}</span>
+                  <span>{{
+                    $t("service.clearVision.model.reversibility.intro")
+                  }}</span>
                 </div>
               </td>
             </tr>
