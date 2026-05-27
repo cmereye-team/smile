@@ -537,13 +537,6 @@ i {
           gap: 12.82vw;
           padding-bottom: 50px;
         }
-        & > .CorrectionProgram-Box-hide-item:nth-child(2) {
-          //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-mbItemBg2.png")
-          //     no-repeat;
-          //   background-size: 100% 100%;
-          //   width: 86.92vw;
-          //   height: 87.18vw;
-        }
         .CorrectionProgram-Box-hide-item {
           //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-mbItemBg.avif")
           //     no-repeat;
@@ -1584,11 +1577,6 @@ i {
           gap: clamp(30px, 3.13vw, 60px);
           padding-bottom: 120px;
         }
-        & > .CorrectionProgram-Box-hide-item:nth-child(2) {
-          //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcItemBg2.avif")
-          //     no-repeat;
-          //   background-size: 100% 100%;
-        }
         .CorrectionProgram-Box-hide-item {
           //   background: url("https://statichk.cmermedical.com/smile/vision-correction-iclV2/CorrectionProgram/CorrectionProgram-Box-pcItemBg.avif")
           //     no-repeat;
@@ -2014,8 +2002,6 @@ i {
           }
           h3 {
             text-align: center;
-          }
-          .visionBattle-Box-list-item-content {
           }
           .visionBattle-Box-list-item-VS {
             position: absolute;
