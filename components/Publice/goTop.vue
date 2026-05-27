@@ -1,5 +1,5 @@
 <template>
-  <div class="top-btnV2 z-60" @click="scrollToTopV2">
+  <div class="top-btn z-60" @click="scrollToTop">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="36"
@@ -20,7 +20,14 @@
 
 <script>
 export default {
-  methods: {},
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
+  },
 };
 </script>
 

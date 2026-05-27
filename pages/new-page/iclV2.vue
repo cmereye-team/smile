@@ -3833,7 +3833,9 @@ i {
       </a>
     </section>
     <!-- start  ICL植入式隱形眼鏡費用-->
-    <div class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-9 md:mb-[72px]">
+    <div
+      class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-9 md:mb-[72px]"
+    >
       <div class="w-full flex flex-col items-center mx-auto">
         <h2
           class="text-[#4A74B8] text-xl md:text-3xl font-black mb-[40px] md:mb-10 tracking-wider text-center"
@@ -3940,6 +3942,19 @@ i {
                 ><span class="text-2xl md:text-6xl">$500</span>
               </div>
             </div>
+            <div
+              class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                ICL植入式隱形眼鏡 V4C
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
+              >
+                <span class="text-2xl md:text-5xl">港幣</span
+                ><span class="text-2xl md:text-6xl">$??,000</span>
+              </div>
+            </div>
           </div>
           <div class="mt-8 md:mt-12 flex flex-col items-center">
             <a
@@ -3986,7 +4001,9 @@ i {
         tag="h2"
         path="service.icl.model.title"
       >
-        <template #mbr><span class="hidden md:inline"> — </span><br class="block md:hidden" /></template>
+        <template #mbr
+          ><span class="hidden md:inline"> — </span><br class="block md:hidden"
+        /></template>
       </i18n>
       <div
         class="model-main w-full text-desc text-center font-light text-base lg:text-xl leading-[1.2] tracking-wider"
@@ -4103,11 +4120,7 @@ i {
               >
                 <template #mbr><br class="block md:hidden" /></template>
               </i18n>
-              <i18n
-                tag="td"
-                path="service.icl.model.audience.v6"
-                class="text-[#F89B03] font-bold"
-              >
+              <i18n tag="td" path="service.icl.model.audience.v6">
                 <template #br
                   ><span class="hidden md:inline">，</span><br
                 /></template>
