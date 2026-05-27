@@ -2567,7 +2567,7 @@ module.exports = {
         },
         materials: {
           title: "材質",
-          v4c: "CentraFLOW®{mbr}生物相容材質",
+          v4c: "Collamer®{mbr}生物相容材質",
           intro: "Collamer®生物相容材質{br}納米抗沉積塗層",
         },
         audience: {
