@@ -12,54 +12,6 @@
     <div class="lecture-box mt-10 mb-[56px] md:mt-12 xl:mt-[64px]">
       <div class="lecture-title">
         <div>
-          <!-- <div class="title-img">
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="38"
-                height="68"
-                viewBox="0 0 38 68"
-                fill="none"
-              >
-                <path
-                  d="M19.2806 16.6316C23.321 16.6316 26.5964 13.3562 26.5964 9.31578C26.5964 5.27539 23.321 2 19.2806 2C15.2402 2 11.9648 5.27539 11.9648 9.31578C11.9648 13.3562 15.2402 16.6316 19.2806 16.6316Z"
-                  stroke="#A6E1D6"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.31445 30.3962V24.7659C8.31445 23.6808 8.74551 22.6401 9.51281 21.8728C10.2801 21.1055 11.3208 20.6744 12.4059 20.6744H25.9749C27.06 20.6744 28.1007 21.1055 28.868 21.8728C29.6353 22.6401 30.0664 23.6808 30.0664 24.7659V30.1642"
-                  stroke="#A6E1D6"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16.2412 20.9306L19.1968 29.0403L21.8105 20.7596"
-                  stroke="#A6E1D6"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M25.6934 65.7501H12.6984L5.74902 38.8441H32.6428L25.6934 65.7501Z"
-                  stroke="#4570B6"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M36.3927 30.3967H2V38.8483H36.3927V30.3967Z"
-                  stroke="#4570B6"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <div>{{ $t("appointFroms.title") }}</div>
-          </div> -->
           <div class="lecture-content">
             <div>
               <p>{{ $t("appointFroms.title1") }}</p>
@@ -380,32 +332,6 @@
             src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-02-v1.jpg"
             alt="希瑪眼科六月旺角預約日歷"
             title="希瑪眼科六月旺角預約日歷"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-01-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-01-v1.jpg"
-            alt="希瑪眼科五月中環預約日歷"
-            title="希瑪眼科五月中環預約日歷"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-02-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2605-02-v1.jpg"
-            alt="希瑪眼科五月旺角預約日歷"
-            title="希瑪眼科五月旺角預約日歷"
           />
         </picture>
       </div>
