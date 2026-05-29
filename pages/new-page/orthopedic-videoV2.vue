@@ -1,6 +1,5 @@
 <template>
   <div class="orthopedic-video">
-
     <!-- 轮播位置 -->
     <div class="new-container mx-auto smile-NewBanner position-relative">
       <img
@@ -174,6 +173,14 @@ export default {
       searchTerm: "",
       searchList: [],
       userShare: [
+        {
+          type: "SMILE Pro",
+          href: "https://youtu.be/YAGjW1TSCqg",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-028-v1.avif",
+          text: ["同隱形眼鏡正式分手～"],
+          nameEn: "Cathy",
+          nameCn: "王嘉慧",
+        },
         {
           type: "SMILE Pro",
           href: "https://youtu.be/NtULZl7qUEg",
@@ -379,7 +386,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/kVEJ-PN4AJo",
+          href: "https://youtu.be/kVEJ-PN4AJo",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro15.avif",
           text: ["我問自己點解唔早啲做", "SMILE Pro呢!"],
           nameEn: "Cindy Wong",
@@ -388,7 +395,7 @@ export default {
 
         {
           type: "SMILE Pro",
-          href: "https://www.youtube.com/embed/I6Yv4PTTSC4",
+          href: "https://youtu.be/I6Yv4PTTSC4",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro16.avif",
           text: ["湊住仔仔都咁方便"],
           nameEn: "Cindy Wong",
@@ -424,7 +431,7 @@ export default {
         // smile
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/TGxol6pNXSY",
+          href: "https://youtu.be/TGxol6pNXSY",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-001.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-001.avif",
@@ -434,7 +441,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/CJEE6UQKPes",
+          href: "https://youtu.be/CJEE6UQKPes",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-002.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-002.avif",
@@ -444,7 +451,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/tLsWfdZy4P4",
+          href: "https://youtu.be/tLsWfdZy4P4",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-003.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-003.avif",
@@ -454,7 +461,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/_wk_gZGzB1s",
+          href: "https://youtu.be/_wk_gZGzB1s",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-004.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-004.avif",
@@ -464,7 +471,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/qBsPhkIaVfo",
+          href: "https://youtu.be/qBsPhkIaVfo",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-005.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-005.avif",
@@ -474,7 +481,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/oHDOFYMEUsk",
+          href: "https://youtu.be/oHDOFYMEUsk",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-006.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-006.avif",
@@ -484,7 +491,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/nrsLktnnW_I",
+          href: "https://youtu.be/nrsLktnnW_I",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-007.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-007.avif",
@@ -494,7 +501,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/XSOzqZD6N8Q",
+          href: "https://youtu.be/XSOzqZD6N8Q",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-008.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-008.avif",
@@ -504,7 +511,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/sw1fxUXMqes",
+          href: "https://youtu.be/sw1fxUXMqes",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-009.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-009.avif",
@@ -514,7 +521,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/HfA2NBsMVWQ",
+          href: "https://youtu.be/HfA2NBsMVWQ",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-010.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-010.avif",
@@ -524,7 +531,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/dyzeGWTk8Dk",
+          href: "https://youtu.be/dyzeGWTk8Dk",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-011.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-011.avif",
@@ -534,7 +541,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/g0sWFw1YAs0",
+          href: "https://youtu.be/g0sWFw1YAs0",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-012.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-012.avif",
@@ -544,7 +551,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/1WR18ptmCuQ",
+          href: "https://youtu.be/1WR18ptmCuQ",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-013.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-013.avif",
@@ -554,7 +561,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/bwQMHStnXCk",
+          href: "https://youtu.be/bwQMHStnXCk",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-014.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-014.avif",
@@ -564,7 +571,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/inD-CATvEl4",
+          href: "https://youtu.be/inD-CATvEl4",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-015.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-015.avif",
@@ -574,7 +581,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/dYYyN9YZGQg",
+          href: "https://youtu.be/dYYyN9YZGQg",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-017.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-017.avif",
@@ -584,7 +591,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/T3K97UlXpHg",
+          href: "https://youtu.be/T3K97UlXpHg",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-018.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-018.avif",
@@ -594,7 +601,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/WlFqNfq5jkI",
+          href: "https://youtu.be/WlFqNfq5jkI",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-019.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-019.avif",
@@ -604,7 +611,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/Z9s3c5Thu7w",
+          href: "https://youtu.be/Z9s3c5Thu7w",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-020.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-020.avif",
@@ -614,7 +621,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/o2n03FVGWbk",
+          href: "https://youtu.be/o2n03FVGWbk",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-021.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-021.avif",
@@ -624,7 +631,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/05NSqdF7nz0",
+          href: "https://youtu.be/05NSqdF7nz0",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-022.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-022.avif",
@@ -634,7 +641,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/nagwW6CP1iU",
+          href: "https://youtu.be/nagwW6CP1iU",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-023.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-023.avif",
@@ -644,7 +651,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/tJ3MHvKagMk",
+          href: "https://youtu.be/tJ3MHvKagMk",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-024.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-024.avif",
@@ -654,7 +661,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/c6dwJ1Cbgxw",
+          href: "https://youtu.be/c6dwJ1Cbgxw",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-025.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-025.avif",
@@ -664,7 +671,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/L5GFWM7Fxqs",
+          href: "https://youtu.be/L5GFWM7Fxqs",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-026.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-026.avif",
@@ -674,7 +681,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/Udnsv_lOr74",
+          href: "https://youtu.be/Udnsv_lOr74",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-027.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-027.avif",
@@ -684,7 +691,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/JCzzO4Y0kko",
+          href: "https://youtu.be/JCzzO4Y0kko",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-028.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-028.avif",
@@ -694,7 +701,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/JD5GGTg01to",
+          href: "https://youtu.be/JD5GGTg01to",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-029.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-029.avif",
@@ -704,7 +711,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/NF_S1R9DhNk",
+          href: "https://youtu.be/NF_S1R9DhNk",
           text: ["唔止視力穩定 心理上", "都穩定咗"],
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-033.avif",
@@ -714,7 +721,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/7T_ATu8-Vn8",
+          href: "https://youtu.be/7T_ATu8-Vn8",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-030.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-030.avif",
@@ -724,7 +731,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/KslMZ0PY2fg",
+          href: "https://youtu.be/KslMZ0PY2fg",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-031.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-031.avif",
@@ -734,7 +741,7 @@ export default {
         },
         {
           type: "SMILE",
-          href: "https://www.youtube.com/embed/jO_h9YqCJzs",
+          href: "https://youtu.be/jO_h9YqCJzs",
           squareimg:
             "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-square-032.avif",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smile/smile-032.avif",
@@ -787,7 +794,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/watch?v=T9g2qoFI9nU",
+          href: "https://youtu.be/T9g2qoFI9nU",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl1.avif",
           text: ["夜間高清視力對", "夜晚揸車好重要"],
           nameEn: "Lily",
@@ -805,7 +812,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/embed/r0yDL98l0Zo",
+          href: "https://youtu.be/r0yDL98l0Zo",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl4.avif",
           text: ["原來眼角膜薄都有機會", "可以做矯視!"],
           nameEn: "",
@@ -814,7 +821,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/embed/B12IjJ3tFHE",
+          href: "https://youtu.be/B12IjJ3tFHE",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/icl/icl5.avif",
           text: ["麥沛東與結婚這回事"],
           nameEn: "",
@@ -823,7 +830,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/watch?v=CEbbKFeFdnc",
+          href: "https://youtu.be/CEbbKFeFdnc",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl4.avif",
           text: ["眼鏡選擇多好多,", "世界限制少好多"],
           nameEn: "Kwan Gor",
@@ -832,7 +839,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/watch?v=2t7JjTab4xA",
+          href: "https://youtu.be/2t7JjTab4xA",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl2.avif",
           text: ["好Surprise 做完之後", "24小時都睇得咁清"],
           nameEn: "Phil",
@@ -841,7 +848,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/watch?v=5ihrzFvOy38",
+          href: "https://youtu.be/5ihrzFvOy38",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl3.avif",
           text: ["每日起身唔洗戴Con", "慳好多時間 好方便"],
           nameEn: "Serene Lim",
@@ -850,7 +857,7 @@ export default {
 
         {
           type: "ICL",
-          href: "https://www.youtube.com/watch?v=e-c_qRuvWTA",
+          href: "https://youtu.be/e-c_qRuvWTA",
           img: "https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShareItem-icl5.avif",
           text: ["做咗ICL 夜晚湊小朋友", "唔洗開燈都睇得清楚"],
           nameEn: "Tiffany Poon",
