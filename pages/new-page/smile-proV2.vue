@@ -1915,6 +1915,14 @@ export default {
       ShareData: [
         {
           type: "SMILE Pro",
+          href: "https://youtu.be/YAGjW1TSCqg",
+          img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-028-v1.avif",
+          text: ["同隱形眼鏡正式分手～"],
+          nameEn: "Cathy",
+          nameCn: "王嘉慧",
+        },
+        {
+          type: "SMILE Pro",
           href: "https://youtu.be/NtULZl7qUEg",
           img: "https://statichk.cmermedical.com/smile/orthopedic-video/smilepro/smilepro-027-v1.avif",
           text: ["真實用家共同見證", "「真實」自己"],
