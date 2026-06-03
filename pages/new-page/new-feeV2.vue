@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-05-15 16:39:15
+ * @LastEditTime: 2026-06-02 09:01:15
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -77,17 +77,17 @@
               <tr>
                 <td>價錢(雙眼)</td>
                 <td>
-                  <span class="block lg:pb-2">港幣$26,000<sup>^</sup></span>
+                  <span class="block lg:pb-2">港幣$24,500<sup>^</sup></span>
                   <span class="block bt-d0d0d0 lg:pt-2"
-                    >EPS用戶<br />港幣$25,500<sup>*</sup></span
+                    >EPS用戶<br />港幣$24,000<sup>*</sup></span
                   >
                 </td>
-                <td>港幣$24,000<sup>^</sup></td>
+                <td>港幣$22,000<sup>^</sup></td>
                 <td>
                   不帶散光<br />港幣$64,000<sup>^^</sup
                   ><br />帶散光<br />港幣$68,000<sup>^^</sup>
                 </td>
-                <td>港幣$19,000<sup>^</sup></td>
+                <td>港幣$17,800<sup>^</sup></td>
                 <td>港幣$19,000<sup>^</sup></td>
               </tr>
               <tr>

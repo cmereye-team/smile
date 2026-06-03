@@ -15,7 +15,7 @@ import SwiperCard from "@/components/commom/swiper/SwiperCard.vue";
 import SwiperRound from "@/components/commom/swiper/SwiperRound.vue";
 import Backtop from "@/components/commom/Backtop/Backtop.vue";
 export default {
-  layout: 'none',
+  layout: "none",
   components: {
     HeadV3,
     Footer,
@@ -540,13 +540,11 @@ export default {
         this.xtraActive = false; // 离开视区
       }
     }, 200); // 200ms 防抖延迟
-
     // 配置 IntersectionObserver
     const observer = new IntersectionObserver(handleIntersection, {
       threshold: [0.1, 0.3, 0.5], // 设置多个阈值，平滑过渡
       rootMargin: "50px 0px", // 增加 50px 的触发余量，减少边界抖动
     });
-
     // 确保 refs 存在再观察
     if (this.$refs.xtraAnimateBox) {
       observer.observe(this.$refs.xtraAnimateBox);
@@ -828,10 +826,13 @@ export default {
           </div>
           <div class="whyChoose-intro mt-8">
             <p>
-              希瑪微笑矯視中心一直致力為客戶提供高效、安全的視力矯正方案。作為香港首間獲<span>Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》</span>認證的矯視中心，希瑪在SMILE微笑矯視領域具備領先地位，深受信賴。
+              希瑪微笑矯視中心一直致力為客戶提供高效、安全的視力矯正方案。作為香港首間獲<span
+                >Zeiss蔡司頒發《全飛秒屈光手術 卓越手術中心》</span
+              >認證的矯視中心，希瑪在SMILE微笑矯視領域具備領先地位，深受信賴。
             </p>
             <p>
-              中心採用已獲<span>美國FDA認證的Carl Zeiss Visumax</span>設備，結合德國蔡司光學技術與創新激光科技。
+              中心採用已獲<span>美國FDA認證的Carl Zeiss Visumax</span
+              >設備，結合德國蔡司光學技術與創新激光科技。
             </p>
             <p>
               來自不同行業及身份的SMILE真實用家均表示矯視後效果符合預期，恢復迅速，生活質素顯著提升；配合希瑪團隊<span>全程細心的跟進</span>，亦確保每位真實用家都能安心體驗矯視服務。
@@ -842,60 +843,84 @@ export default {
           <userShare title="SMILE用家分享" :user-share="ShareData"></userShare>
         </section>
         <!-- start SMILE微笑激光矯視費用 -->
-
-<div class="md:bg-[#F6FAFD] py-8 px-2  md:px-2 md:pb-15 md:pt-20 mb-8 md:mt-[50px] md:mb-22 md:mt-[166px]">
-<div class="w-full  flex flex-col items-center mx-auto ">
-    
-    <h2 class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center">
-SMILE微笑激光矯視費用
-    </h2>
-
-    <div class="w-full">
-   
-
-      <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">
-           SMILE
-<br/>
-            <span class="">微笑激光矯視</span>
-          </div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-           <span class="text-2xl md:text-5xl"> 港幣$19,000</span>
+        <div
+          class="md:bg-[#F6FAFD] py-8 px-2 md:px-2 md:pb-15 md:pt-20 mb-8 md:mt-[50px] md:mb-22 md:mt-[166px]"
+        >
+          <div class="w-full flex flex-col items-center mx-auto">
+            <h2
+              class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
+            >
+              SMILE微笑激光矯視費用
+            </h2>
+            <div class="w-full">
+              <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
+                <div
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    SMILE
+                    <br />
+                    <span class="">微笑激光矯視</span>
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                  >
+                    <span class="text-2xl md:text-5xl"> 港幣$17,800</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                >
+                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                    術前檢查費用
+                  </div>
+                  <div
+                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                  >
+                    <span class="text-2xl md:text-5xl">港幣</span
+                    ><span class="text-2xl md:text-5xl">$100</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 md:mt-12 flex flex-col items-center">
+                <a
+                  href="/fee#table1"
+                  class="md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3"
+                >
+                  查看矯視費用詳情
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.18018 30.3632L29.8334 3.70996"
+                      stroke="white"
+                      stroke-width="6.36042"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M7.06396 2.8623H30.742V25.7598"
+                      stroke="white"
+                      stroke-width="5.72438"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+                <div
+                  class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base md:text-2xl leading-relaxed"
+                >
+                  <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
+                  <p class="text-[#6D6E71]">
+                    矯視費用已包括術前檢查費用港幣$100
+                    (若沒有預約進行矯視，需另外繳付術前檢查費用)
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-       
-
-        <div class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center   transition-all group">
-          <div class="text-[#6D6E71] text-base md:text-3xl font-bold ">術前檢查費用</div>
-          <div class="text-[#F59E0B]  font-bold tracking-tight group-hover:scale-105 transition-transform">
-            <span class="text-2xl md:text-5xl">港幣</span><span class="text-2xl md:text-5xl">$100</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-8 md:mt-12 flex flex-col items-center">
-        <a href="/fee#table1" class=" md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3 ">
-          查看矯視費用詳情
-          <svg xmlns="http://www.w3.org/2000/svg"  class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none">
-  <path d="M3.18018 30.3632L29.8334 3.70996" stroke="white" stroke-width="6.36042" stroke-linecap="round"/>
-  <path d="M7.06396 2.8623H30.742V25.7598" stroke="white" stroke-width="5.72438" stroke-linecap="round"/>
-</svg>
-        </a>
-
-      
-
-        <div class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base  md:text-2xl leading-relaxed">
-          <p class="text-[#6D6E71]">此為香港價錢，雙眼價錢</p>
-
-          <p class="text-[#6D6E71]">矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用)</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  </div>
         <!-- end SMILE微笑激光矯視費用 -->
         <section class="benefit mb-[30px] md:mb-[100px] py-7">
           <h2 class="subtitle mb-0">SMILE微笑激光矯視的好處</h2>
@@ -1216,10 +1241,8 @@ $text-color: #6d6e71;
     width: 30vw;
     position: relative;
     height: 100vh;
-
     &-title {
       padding: 200px 0 1.25vw 5.2083vw;
-
       h2 {
         color: #000;
         text-align: left;
@@ -1229,7 +1252,6 @@ $text-color: #6d6e71;
         line-height: 200%;
         letter-spacing: 0.6568vw;
         margin-bottom: 0;
-
         &::before {
           content: "";
           display: inline-block;
@@ -1241,7 +1263,6 @@ $text-color: #6d6e71;
           border-radius: 50%;
         }
       }
-
       p {
         color: $primary-color;
         font-size: 1.2104vw;
@@ -1269,7 +1290,6 @@ $text-color: #6d6e71;
 .newCenter {
   position: relative;
   background: linear-gradient(to top, $primary-color, 0 50px, white 50px 100%);
-
   &-card {
     background: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIHZpZXdCb3g9IjAgMCA3NjggNzM5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8bWFzayBpZD0ibWFzazBfMTAyMzJfMTciIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI3NjgiIGhlaWdodD0iNzM5Ij4KPHJlY3Qgd2lkdGg9Ijc2OCIgaGVpZ2h0PSI3MzkiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8xMDIzMl8xNykiPgo8cGF0aCBkPSJNLTUgMTcxLjA3OEw4NDYgMzUzLjc3OSIgc3Ryb2tlPSIjNUQ4NUMzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTYwNC4xNzggODMuMDY2N0w0NDguOTQ5IDc4OC45NDUiIHN0cm9rZT0idXJsKCNwYWludDBfbGluZWFyXzEwMjMyXzE3KSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik01NTQuMTU1IDMxMi42MjJDNTY1LjQzNCAzMTUuMDQ4IDU3Ni41NjYgMzA3Ljk3MiA1NzkuMDE5IDI5Ni44MTlDNTgxLjQ3MiAyODUuNjY1IDU3NC4zMTcgMjc0LjY1NyA1NjMuMDM4IDI3Mi4yMzFDNTUxLjc1OSAyNjkuODA2IDU0MC42MjcgMjc2Ljg4MSA1MzguMTc0IDI4OC4wMzVDNTM1LjcyMSAyOTkuMTg5IDU0Mi44NzYgMzEwLjE5NyA1NTQuMTU1IDMxMi42MjJaIiBzdHJva2U9IiM1RDg1QzMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTAyMzJfMTciIHgxPSI2MDQuNjY3IiB5MT0iODMuMTcxOCIgeDI9IjQ1Mi43MTYiIHkyPSI3ODkuNzU1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1RDg1QzMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSJ3aGl0ZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=")
       no-repeat;
@@ -1664,7 +1684,6 @@ $text-color: #6d6e71;
       transform: translate(#{"clamp(-2rem, -2.885rem + 3.93vw, -1rem)"}, 0);
     }
   }
-
   @keyframes xtraTop {
     0% {
       transform: translate(0, 0);
@@ -1676,7 +1695,6 @@ $text-color: #6d6e71;
       );
     }
   }
-
   @keyframes xtraTriangle {
     0% {
       width: 0;
@@ -1687,7 +1705,6 @@ $text-color: #6d6e71;
       height: #{"clamp(1.5rem, 0.214rem + 5.71vw, 1.75rem)"};
     }
   }
-
   @keyframes xtraHeight {
     0% {
       height: #{"clamp(18rem, 15.327rem + 5.57vw, 19.5rem)"};
@@ -1770,7 +1787,6 @@ $text-color: #6d6e71;
       transform: translate(-72px, 0);
     }
   }
-
   @keyframes xtraTop {
     0% {
       transform: translate(0, 0);
@@ -1782,7 +1798,6 @@ $text-color: #6d6e71;
       );
     }
   }
-
   @keyframes xtraTriangle {
     0% {
       width: 0;
@@ -1793,7 +1808,6 @@ $text-color: #6d6e71;
       height: #{"clamp(2.625rem, 2.237rem + 0.64vw, 3rem)"};
     }
   }
-
   @keyframes xtraHeight {
     0% {
       height: 488px;

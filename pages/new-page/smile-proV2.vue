@@ -276,7 +276,7 @@
                     class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
                   >
                     <span class="text-2xl md:text-5xl">港幣</span
-                    ><span class="text-2xl md:text-5xl">$24,000</span>
+                    ><span class="text-2xl md:text-5xl">$22,000</span>
                   </div>
                 </div>
                 <div
@@ -311,9 +311,9 @@
                     class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
                   >
                     <span class="text-2xl md:text-5xl">港幣</span
-                    ><span class="text-2xl md:text-5xl">$26,000*</span>
+                    ><span class="text-2xl md:text-5xl">$24,500*</span>
                     <p class="text-[10px] md:text-xl text-text md:pt-[4px]">
-                      EPS用戶港幣$25,500<sup>#</sup>
+                      EPS用戶港幣$24,000<sup>#</sup>
                     </p>
                   </div>
                 </div>
