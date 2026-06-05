@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-06-02 09:01:15
+ * @LastEditTime: 2026-06-05 10:30:21
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -354,7 +354,7 @@
               <tr>
                 <td>價錢<br class="d-lg-none" />(雙眼)</td>
                 <td class="bg-lbv-body">
-                  港幣$58,000<sup class="text-xs ml-0.5">※</sup>
+                  港幣$48,000<sup class="text-xs ml-0.5">※</sup>
                 </td>
                 <td class="bg-lbv-body bl-d0d0d0">
                   EPS用戶<br />港幣$47,500<sup>*</sup>

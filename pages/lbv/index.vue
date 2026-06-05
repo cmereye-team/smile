@@ -2922,7 +2922,7 @@ i {
               <div
                 class="text-[#F59E0B] -ml-[68px] sm:ml-0 text-right font-bold tracking-tight group-hover:scale-105 transition-transform flex flex-col"
               >
-                <p class="text-2xl md:text-5xl pb-1 md:pb-3">港幣$58,000*</p>
+                <p class="text-2xl md:text-5xl pb-1 md:pb-3">港幣$48,000*</p>
                 <p class="text-xs min-[360px]:text-sm md:text-xl">
                   指定信用卡（東亞/渣打/滙豐）<br
                     class="block sm:hidden"
