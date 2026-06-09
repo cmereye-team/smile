@@ -1,29 +1,29 @@
 <template>
   <div class="lasik">
     <div class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 pb-9 min-[992px]:pb-0">
-      <nuxt-link :to="('#price')">
-      <picture>
-        <source
-          media="(min-width: 992px)"
-          type="image/avif"
-          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.avif"></source>
-        <source
-          media="(min-width: 992px)"
-          type="image/webp"
-          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.webp"></source>
-        <source
-          media="(min-width: 992px)"
-          type="image/jpeg"
-          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.jpg"></source>
-        <source
-          type="image/avif"
-          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.avif"></source>
-        <source
-          type="image/webp"
-          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.webp"></source>
-        <img src="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.jpg" alt="微笑激光矯視夏日禮遇" class="rounded-lg">
-      </picture>
-    </nuxt-link>
+      <a href="#price">
+        <picture>
+          <source
+            media="(min-width: 992px)"
+            type="image/avif"
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.avif"></source>
+          <source
+            media="(min-width: 992px)"
+            type="image/webp"
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.webp"></source>
+          <source
+            media="(min-width: 992px)"
+            type="image/jpeg"
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.jpg"></source>
+          <source
+            type="image/avif"
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.avif"></source>
+          <source
+            type="image/webp"
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.webp"></source>
+          <img src="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.jpg" alt="微笑激光矯視夏日禮遇" class="rounded-lg">
+        </picture>
+      </a>
     </div>
     <!-- 轮播位置 -->
     <div
