@@ -1,7 +1,7 @@
 <template>
   <div class="lasik">
     <div class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 pb-9 min-[992px]:pb-0">
-      <nuxt-link to="#price">
+      <a href="javascript:void(0);" @click="scrollToPrice">
         <picture>
           <source
             media="(min-width: 992px)"
@@ -23,7 +23,7 @@
             srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.webp"></source>
           <img src="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.jpg" alt="微笑激光矯視夏日禮遇" class="rounded-lg">
         </picture>
-      </nuxt-link>
+      </a>
     </div>
     <!-- 轮播位置 -->
     <div
@@ -2141,6 +2141,15 @@ export default {
       container.innerHTML = "";
       container.appendChild(overflowDiv);
     },
+    scrollToPrice() {
+      const element = document.getElementById('price');
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth', // 平滑滚动
+          block: 'start'      // 滚动到元素的顶部
+        });
+      }
+    }
   },
   // beforeDestroy() {
   //   window.removeEventListener("resize", this.checkDeviceType);
