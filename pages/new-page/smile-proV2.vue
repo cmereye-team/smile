@@ -1,5 +1,30 @@
 <template>
   <div class="lasik">
+    <div class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 pb-9 min-[992px]:pb-0">
+      <nuxt-link :to="('#price')">
+      <picture>
+        <source
+          media="(min-width: 992px)"
+          type="image/avif"
+          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.avif"></source>
+        <source
+          media="(min-width: 992px)"
+          type="image/webp"
+          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.webp"></source>
+        <source
+          media="(min-width: 992px)"
+          type="image/jpeg"
+          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.jpg"></source>
+        <source
+          type="image/avif"
+          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.avif"></source>
+        <source
+          type="image/webp"
+          srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.webp"></source>
+        <img src="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.jpg" alt="微笑激光矯視夏日禮遇" class="rounded-lg">
+      </picture>
+    </nuxt-link>
+    </div>
     <!-- 轮播位置 -->
     <div
       class="container new-container mx-auto smile-NewBanner position-relative"
@@ -8,8 +33,7 @@
         class=""
         decoding="async"
         src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-banner-pc2.avif"
-        alt=""
-        loading="lazy"
+        alt="SMILE Pro Banner"
         width="100%"
         height="100%"
         srcset="
@@ -249,7 +273,8 @@
     </section>
     <!-- start  SMILE Pro 微笑激光矯視費用-->
     <div
-      class="bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]"
+      id="price"
+      class="scroll-mt-20 md:scroll-mt-[160px] bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]"
     >
       <div class="w-full flex flex-col items-center mx-auto">
         <h2
@@ -2168,6 +2193,54 @@ body {
 }
 </style>
 <style lang="scss" scoped>
+@keyframes elegantShine {
+	0% {
+		left: -100%;
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	65% {
+		opacity: 1;
+	}
+
+	80% {
+		left: 120%;
+		opacity: 1;
+	}
+
+	100% {
+		left: 100%;
+		opacity: 0;
+	}
+}
+
+.notice {
+	position: relative;
+	:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(
+                  115deg,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgba(255, 255, 255, 0.03) 30%,
+                  rgba(255, 255, 255, 0.25) 50%,
+                  rgba(255, 255, 255, 0.03) 70%,
+                  rgba(255, 255, 255, 0) 100%
+              );
+    animation: elegantShine 2.5s infinite;
+    z-index: 2;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+}
 :deep(.share-img) {
   margin-top: 0;
 }
@@ -2288,8 +2361,6 @@ i {
       margin: 0 auto;
       max-width: 100vw;
       margin-top: 30px;
-      .icl-WhatChoose-content-one-img {
-      }
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 100vw;
