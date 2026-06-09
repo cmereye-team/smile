@@ -1,7 +1,7 @@
 <template>
   <div class="lasik">
     <div class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 pb-9 min-[992px]:pb-0">
-      <a href="#price">
+      <nuxt-link to="#price">
         <picture>
           <source
             media="(min-width: 992px)"
@@ -23,7 +23,7 @@
             srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.webp"></source>
           <img src="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.jpg" alt="微笑激光矯視夏日禮遇" class="rounded-lg">
         </picture>
-      </a>
+      </nuxt-link>
     </div>
     <!-- 轮播位置 -->
     <div
