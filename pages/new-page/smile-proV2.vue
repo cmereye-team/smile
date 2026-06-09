@@ -274,11 +274,11 @@
     <!-- start  SMILE Pro 微笑激光矯視費用-->
     <div
       id="price"
-      class="scroll-mt-20 md:scroll-mt-[160px] bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px]"
+      class="scroll-mt-20 md:scroll-mt-[160px] bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px] bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-bg-mb-v1.webp)] min-[992px]:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-bg-pc-v1.webp)] bg-cover bg-center bg-no-repeat"
     >
       <div class="w-full flex flex-col items-center mx-auto">
         <h2
-          class="text-[#4A74B8] text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
+          class="text-white text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
         >
           SMILE Pro 微笑激光矯視費用
         </h2>
@@ -286,13 +286,13 @@
           <div class="space-y-7 lg:space-y-[60px]">
             <div>
               <div
-                class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto"
+                class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
               >
                 SMILE Pro 費用
               </div>
               <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
                 <div
-                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 min-[992px]:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
                 >
                   <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                     SMILE Pro<br /><span>微笑激光矯視</span>
@@ -321,13 +321,13 @@
             </div>
             <div>
               <div
-                class="bg-[#8CB3F333] text-[#4570B6] text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] max-w-3xl md:max-w-lg mx-auto"
+                class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
               >
                 SMILE Pro Care費用
               </div>
               <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
                 <div
-                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 lg:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
                 >
                   <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                     SMILE Pro care<br /><span>微笑激光矯視</span>
