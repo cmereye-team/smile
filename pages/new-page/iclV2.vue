@@ -3951,8 +3951,8 @@ i {
               <div
                 class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
-                <span class="text-2xl md:text-5xl">港幣</span
-                ><span class="text-2xl md:text-6xl">$??,000</span>
+                <span class="text-2xl md:text-5xl">港幣</span>
+                <span class="text-2xl md:text-6xl">$54,000</span>
               </div>
             </div>
           </div>
