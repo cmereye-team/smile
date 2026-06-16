@@ -299,6 +299,44 @@
         <picture>
           <source
             srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-01-v1.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-01-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-01-v1.jpg"
+            alt="希瑪眼科七月中環預約日歷"
+            title="希瑪眼科七月中環預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-02-v1.avif
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-02-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-02-v1.jpg"
+            alt="希瑪眼科七月旺角預約日歷"
+            title="希瑪眼科七月旺角預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
               https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-01-v1.avif
             "
             type="image/avif"
@@ -686,6 +724,10 @@ export default {
           "2026-06-10",
           "2026-06-17",
           "2026-06-24",
+          "2026-07-08",
+          "2026-07-15",
+          "2026-07-22",
+          "2026-07-29",
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -712,6 +754,10 @@ export default {
           "2026-06-13",
           "2026-06-20",
           "2026-06-27",
+          "2026-07-04",
+          "2026-07-11",
+          "2026-07-18",
+          "2026-07-25",
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -747,6 +793,9 @@ export default {
           "2026-06-06",
           "2026-06-15",
           "2026-06-27",
+          "2026-07-06",
+          "2026-07-18",
+          "2026-07-25",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -778,6 +827,11 @@ export default {
           "2026-06-22",
           "2026-06-29",
           "2026-06-30",
+          "2026-07-11",
+          "2026-07-14",
+          "2026-07-20",
+          "2026-07-27",
+          "2026-07-28",
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -879,7 +933,13 @@ export default {
       this.morningOrAfternoon =
         config.times[nowDay] || config.times[weekday] || "";
       // 处理讲座名称
-      const lbv = ["2026-05-23", "2026-06-13", "2026-06-22"];
+      const lbv = [
+        "2026-05-23",
+        "2026-06-13",
+        "2026-06-22",
+        "2026-07-11",
+        "2026-07-20",
+      ];
       const seatname =
         nameAddress === "clearVisionMongKok" && lbv.includes(isoDate)
           ? "老花講座 (LBV特別場)-旺角"
@@ -1282,7 +1342,8 @@ export default {
   // }
 
   .banner-img {
-    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-2606-pc-v1.webp") no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-2606-pc-v1.webp")
+      no-repeat;
     background-size: cover;
     // height: 32.08vw;
     width: 100%;
@@ -1683,7 +1744,8 @@ export default {
   }
 
   .banner-img {
-    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-2606-mb-v1.webp") no-repeat;
+    background: url("https://statichk.cmermedical.com/smile/preaching-seat/banner-2606-mb-v1.webp")
+      no-repeat;
     background-size: 100% 100%;
     background-position: center;
     // height: 30vw;
