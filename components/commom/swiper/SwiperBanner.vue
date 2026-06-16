@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-26 11:48:06
- * @LastEditTime: 2026-05-26 15:14:18
+ * @LastEditTime: 2026-06-16 16:44:56
  * @FilePath: /components/commom/swiper/SwiperBanner.vue
  * @Description: 轮播图Banner
 -->
@@ -62,7 +62,7 @@ export default {
       let List = [];
       let that = this;
       const API = `https://admin.hkcmereye.com/api.php/cms/slide/gid/${this.gid}/num/${this.num}`;
-      console.log(`gid=${this.gid}, num=${this.num}, API=${API}`);
+      // console.log(`gid=${this.gid}, num=${this.num}, API=${API}`);
       const formatImgUrl = (url) => {
         if (!url) return "";
         const prefix = "https://admin.hkcmereye.com";
