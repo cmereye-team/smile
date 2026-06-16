@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-06-05 10:30:21
+ * @LastEditTime: 2026-06-15 17:55:16
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -77,26 +77,26 @@
               <tr>
                 <td>價錢(雙眼)</td>
                 <td>
-                  <span class="block lg:pb-2">港幣$24,500<sup>^</sup></span>
+                  <span class="block lg:pb-2">HK$24,500<sup>^</sup></span>
                   <span class="block bt-d0d0d0 lg:pt-2"
-                    >EPS用戶<br />港幣$24,000<sup>*</sup></span
+                    >EPS用戶<br />HK$24,000<sup>*</sup></span
                   >
                 </td>
-                <td>港幣$22,000<sup>^</sup></td>
+                <td>HK$22,000<sup>^</sup></td>
                 <td>
-                  不帶散光<br />港幣$64,000<sup>^^</sup
-                  ><br />帶散光<br />港幣$68,000<sup>^^</sup>
+                  不帶散光<br />HK$64,000<sup>^^</sup
+                  ><br />帶散光<br />HK$68,000<sup>^^</sup>
                 </td>
-                <td>港幣$17,800<sup>^</sup></td>
-                <td>港幣$19,000<sup>^</sup></td>
+                <td>HK$17,800<sup>^</sup></td>
+                <td>HK$19,000<sup>^</sup></td>
               </tr>
               <tr>
                 <td>術前檢查<br class="d-lg-block" />費用</td>
-                <td>港幣$100</td>
-                <td>港幣$100</td>
-                <td>港幣$500</td>
-                <td>港幣$100</td>
-                <td>港幣$100</td>
+                <td>HK$100</td>
+                <td>HK$100</td>
+                <td>HK$500</td>
+                <td>HK$100</td>
+                <td>HK$100</td>
               </tr>
               <tr>
                 <td>眼睛水潤<br class="d-lg-block" />護理</td>
@@ -292,8 +292,8 @@
                 <td></td>
                 <td colspan="5">
                   <div>
-                    <div>港幣$3,000</div>
-                    <div>港幣$5,000</div>
+                    <div>HK$3,000</div>
+                    <div>HK$5,000</div>
                   </div>
                 </td>
               </tr>
@@ -327,17 +327,17 @@
               </tr>
               <tr>
                 <td>單焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-                <td class="bg-clear-body">港幣$25,000 - $28,000</td>
-                <td class="bg-clear-body">港幣$30,000 - $35,000</td>
+                <td class="bg-clear-body">HK$25,000 - $28,000</td>
+                <td class="bg-clear-body">HK$30,000 - $35,000</td>
               </tr>
               <tr>
                 <td>多焦點<br class="d-lg-none" />人工晶體<br />(單眼)</td>
-                <td class="bg-clear-body">港幣$35,000 - $45,000</td>
-                <td class="bg-clear-body">港幣$43,000 - $51,000</td>
+                <td class="bg-clear-body">HK$35,000 - $45,000</td>
+                <td class="bg-clear-body">HK$43,000 - $51,000</td>
               </tr>
               <tr>
                 <td>術前檢查<br class="d-lg-none" />費用</td>
-                <td class="bg-clear-body" colspan="2">港幣$680</td>
+                <td class="bg-clear-body" colspan="2">HK$680</td>
               </tr>
             </tbody>
           </table>
@@ -354,15 +354,15 @@
               <tr>
                 <td>價錢<br class="d-lg-none" />(雙眼)</td>
                 <td class="bg-lbv-body">
-                  港幣$48,000<sup class="text-xs ml-0.5">※</sup>
+                  HK$48,000<sup class="text-xs ml-0.5">※</sup>
                 </td>
                 <td class="bg-lbv-body bl-d0d0d0">
-                  EPS用戶<br />港幣$47,500<sup>*</sup>
+                  EPS用戶<br />HK$47,500<sup>*</sup>
                 </td>
               </tr>
               <tr>
                 <td>術前檢查<br class="d-lg-none" />費用</td>
-                <td class="bg-lbv-body" colspan="2">港幣$100</td>
+                <td class="bg-lbv-body" colspan="2">HK$100</td>
               </tr>
               <tr>
                 <td>眼睛水潤<br class="d-lg-none" />護理</td>
@@ -428,11 +428,11 @@
             <tbody>
               <tr>
                 <td>價錢<br class="d-lg-none" />(雙眼)</td>
-                <td class="bg-icl-body">港幣$80,000</td>
+                <td class="bg-icl-body">HK$80,000</td>
               </tr>
               <tr>
                 <td>術前檢查<br class="d-lg-none" />費用</td>
-                <td class="bg-icl-body">港幣$500</td>
+                <td class="bg-icl-body">HK$500</td>
               </tr>
             </tbody>
           </table>
