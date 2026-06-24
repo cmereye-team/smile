@@ -3273,7 +3273,7 @@ module.exports = {
       source: "資料及圖片來源：Carl Zeiss",
     },
     content27: {
-      name1: "Alcon VERION 中定位系統",
+      name1: "Alcon VERION 術中定位系統",
       name2: "（Alcon VERION Image Guided System）",
       remark:
         "整合「術前影像量測」、「手術規劃」及「術中導航」三大功能，透過數碼化系統處理，能大幅減少人手轉錄與標記所產生的誤差。系統專為提升手術精準度而設，能優化散光及多焦點人工水晶體的定位。",
