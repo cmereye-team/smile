@@ -434,7 +434,7 @@ export default {
       line-height: 5.12vw; /* 178.571% */
       letter-spacing: 0.18vw;
       &.equipment-27 {
-        font-size: 3.4vw;
+        font-size: 3.2vw;
       }
     }
   }
