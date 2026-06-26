@@ -865,7 +865,7 @@ export default {
                   <div
                     class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
                   >
-                    <span class="text-2xl md:text-5xl"> 港幣$17,800</span>
+                    <span class="text-2xl md:text-5xl"> 港幣$17,500</span>
                   </div>
                 </div>
                 <div

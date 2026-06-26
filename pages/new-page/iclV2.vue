@@ -3897,24 +3897,18 @@ i {
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
                 ICL植入式隱形眼鏡
-                <br />
-                <span class="">(不帶散光)</span>
               </div>
               <div
                 class="text-[#F59E0B] -ml-[60px] sm:ml-0 flex-1 font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
-                <span class="text-2xl md:text-5xl"> 港幣</span>
+                <span class="text-2xl md:text-5xl">港幣</span>
                 <span class="text-lg min-[360px]:text-2xl md:text-6xl md:pb-2"
-                  >$64,000</span
+                  >$63,600</span
                 >
-                <p class="text-xs min-[360px]:text-sm md:text-xl">
-                  指定信用卡（東亞/渣打/滙豐）<br
-                    class="block md:hidden"
-                  />可享6/12/18/24/36個月免息分期
-                </p>
+                <p class="text-xs min-[360px]:text-sm md:text-xl">(散光+$5,000)</p>
               </div>
             </div>
-            <div
+            <!-- <div
               class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
             >
               <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
@@ -3926,7 +3920,21 @@ i {
                 class="text-[#F59E0B] flex-1 font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
               >
                 <span class="text-2xl md:text-5xl">港幣</span
-                ><span class="text-2xl md:text-6xl">$68,000</span>
+                ><span class="text-2xl md:text-6xl">$68,600</span>
+              </div>
+            </div> -->
+            <div
+              class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
+            >
+              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
+                ICL植入式隱形眼鏡 V4C
+              </div>
+              <div
+                class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
+              >
+                <span class="text-2xl md:text-5xl">港幣</span>
+                <span class="text-2xl md:text-6xl">$53,600</span>
+                <p class="text-xs min-[360px]:text-sm md:text-xl">(散光+$5,000)</p>
               </div>
             </div>
             <div
@@ -3940,19 +3948,6 @@ i {
               >
                 <span class="text-2xl md:text-5xl">港幣</span
                 ><span class="text-2xl md:text-6xl">$500</span>
-              </div>
-            </div>
-            <div
-              class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
-            >
-              <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                ICL植入式隱形眼鏡 V4C
-              </div>
-              <div
-                class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
-              >
-                <span class="text-2xl md:text-5xl">港幣</span>
-                <span class="text-2xl md:text-6xl">$54,000</span>
               </div>
             </div>
           </div>
@@ -3990,6 +3985,7 @@ i {
                 矯視費用已包括術前檢查費用港幣$500
                 (若沒有預約進行矯視，需另外繳付術前檢查費用)
               </p>
+              <p>*指定信用卡（東亞/渣打/滙豐）可享6/12/18/24/36個月免息分期</p>
             </div>
           </div>
         </div>
