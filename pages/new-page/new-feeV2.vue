@@ -80,8 +80,8 @@
               <tr>
                 <td>價錢(雙眼)</td>
                 <td>
-                  <span class="block lg:pb-2">HK$23,500<sup>^</sup></span>
-                  <span class="block bt-d0d0d0 lg:pt-2"
+                  <span class="block pb-2">HK$23,500<sup>^</sup></span>
+                  <span class="block bt-d0d0d0 pt-1 lg:pt-2"
                     >EPS用戶<br />HK$23,000<sup>*</sup></span
                   >
                 </td>
