@@ -334,44 +334,6 @@
             title="希瑪眼科七月旺角預約日歷"
           />
         </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-01-v1.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-01-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-01-v1.jpg"
-            alt="希瑪眼科六月中環預約日歷"
-            title="希瑪眼科六月中環預約日歷"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-02-v1.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-02-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2606-02-v1.jpg"
-            alt="希瑪眼科六月旺角預約日歷"
-            title="希瑪眼科六月旺角預約日歷"
-          />
-        </picture>
       </div>
     </div>
     <div v-show="applySuccess" class="applyDialog">
