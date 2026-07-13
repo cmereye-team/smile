@@ -44,7 +44,7 @@
         sizes=" (max-width: 992px) 100vw,1216px"
       />
       <div class="smile-NewBanner-Title">
-        <span>SMILE Pro</span>
+        <span>SMILE Pro 2.0</span>
         <h3>{{ $t("smile_proV2.Bannertitle") }}</h3>
         <p>Small Incision Lenticule Extraction</p>
       </div>
@@ -66,15 +66,29 @@
             $t("Correct.newIcl.menuTwo")
           }}</a
           >&nbsp;>&nbsp;<a href="/smilePro"
-            >SMILE Pro {{ $t("smile_proV2.CenterTile") }}
+            >SMILE Pro 2.0 {{ $t("smile_proV2.CenterTile") }}
           </a>
+        </div>
+        <div class="mb-5 tracking-widest px-7 lg:pr-0 lg:pl-[clamp(16px,4vw,76px)] flex flex-col lg:flex-row gap-1 lg:gap-8">
+          <img src="https://statichk.cmermedical.com/smile/smileproV2/icon-smile-pro-2-v1.webp" alt="SMILE PRO 2.0" class="lg:w-2/5">
+          <div class="leading-[2]">
+            <h3 class="text-primary text-xl lg:text-3xl font-black mb-7 lg:mb-5 text-center lg:text-left">SMILE PRO 2.0 微笑激光矯視</h3>
+            <div class="mb-5 lg:mb-10 lg:text-xl">
+              <h4 class="text-primary font-bold">升級矯視數據平台</h4>
+              <p class="text-text font-light">全新配置虹膜數據測量儀器，捕捉每雙眼睛獨一無二的虹膜紋路。透過新增的激光矯視數據平台，同步個人矯視參數至激光設備，簡化整體矯視流程，同時提升運作效率與數據精準度。</p>
+            </div>
+            <div>
+              <h4 class="text-primary font-bold">虹膜辨識散光導航</h4>
+              <p class="text-text font-light">激光設備的智能輔助系統同步升級，進⼀步強化散光矯正的精準度與穩定性。SMILE pro 2.0 可在術中實時識別虹膜狀態，與預存的專屬虹膜影像對比。倘若眼球產生細微轉動，系統亦能夠即時追蹤並自動校正散光軸向，減低對人工調校的依賴。</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="smilePro-newCenter-content">
         <div class="smilePro-newCenter-content-text">
           <div class="container new-container">
             <div>
-              <h3>SMILE Pro {{ $t("smile_proV2.CenterTile") }}</h3>
+              <h3>SMILE Pro 2.0 {{ $t("smile_proV2.CenterTile") }}</h3>
               <p>
                 {{ $t("smile_proV2.p_text1")
                 }}<span>{{ $t("smile_proV2.p_text2") }}</span
@@ -176,7 +190,7 @@
         <div class="smilepro-four-feature-Box">
           <div class="smilepro-four-feature-Box-top">
             <h3>
-              <span>SMILE Pro </span><br class="d-none d-lg-block" />{{
+              <span>SMILE Pro 2.0 </span><br class="d-none d-lg-block" />{{
                 $t("smile_proV2.four_feature.title")
               }}
             </h3>
@@ -278,9 +292,9 @@
     >
       <div class="w-full flex flex-col items-center mx-auto">
         <h2
-          class="text-white text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
+          class="text-white text-lg xs:text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
         >
-          SMILE Pro 微笑激光矯視費用
+          SMILE Pro 2.0 微笑激光矯視費用
         </h2>
         <div class="w-full">
           <div class="space-y-7 lg:space-y-[60px]">
@@ -288,14 +302,14 @@
               <div
                 class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
               >
-                SMILE Pro 費用
+                SMILE Pro 2.0 費用
               </div>
               <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
                 <div
                   class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 min-[992px]:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
                 >
                   <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    SMILE Pro<br /><span>微笑激光矯視</span>
+                    SMILE Pro 2.0<br /><span>微笑激光矯視</span>
                   </div>
                   <div
                     class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
@@ -323,14 +337,14 @@
               <div
                 class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
               >
-                SMILE Pro Care費用
+                SMILE Pro Care 2.0費用
               </div>
               <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
                 <div
                   class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 lg:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
                 >
                   <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    SMILE Pro care<br /><span>微笑激光矯視</span>
+                    SMILE Pro care 2.0<br /><span>微笑激光矯視</span>
                   </div>
                   <div
                     class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
@@ -407,7 +421,7 @@
     <section class="smilepro-difference">
       <div class="smilepro-difference-title">
         <div>
-          SMILE/SMILE PRO/ICL<br class="d-lg-none" />
+          SMILE/SMILE PRO 2.0/ICL<br class="d-lg-none" />
           大不同
         </div>
       </div>
@@ -455,7 +469,7 @@
                   stroke-miterlimit="10"
                 />
               </svg>
-              <span>SMILE<br class="d-lg-none" />PRO</span><br />微笑矯視
+              <span>SMILE <br class="d-lg-none" />PRO 2.0</span><br />微笑矯視
             </th>
             <th class="">
               <svg
@@ -947,7 +961,7 @@
             <div v-if="activeStep >= 0">
               <div class="content-area-title">
                 <p>
-                  SMILE Pro微笑激光<br />
+                  SMILE Pro 2.0微笑激光<br />
                   矯視過程
                 </p>
                 <svg
@@ -1616,11 +1630,11 @@
           class="absolute left-1/2 -translate-x-1/2 bottom-2 md:left-auto md:translate-x-0 md:-translate-y-1/2 md:right-[5%] md:h-full md:top-1/2 md:-translate-y-1/2 md:flex md:items-center w-[calc(100vw-100px)] mx-auto md:w-auto py-6 md:py-[5%]"
         >
           <div
-            class="relative z-10 text-white font-avant-garde text-3xl font-bold not-italic leading-[44.25px]"
+            class="relative z-10 text-white font-avant-garde text-2xl md:text-3xl font-bold not-italic leading-[44.25px]"
           >
             <p class="">想了解</p>
             <p>
-              SMILE Pro 同 <br class="block md:hidden" />SMILE Pro Care
+              SMILE Pro 2.0 同 <br class="block md:hidden" />SMILE Pro Care 2.0
               <br class="" />
               有咩分別？
             </p>
@@ -3786,7 +3800,7 @@ i {
             p {
               color: #4570b6;
               font-family: "Noto Sans TC";
-              font-size: 4.05vw;
+              font-size: 3vw;
               font-style: normal;
               font-weight: 900;
               line-height: 1.26;
@@ -4473,7 +4487,7 @@ i {
             p {
               color: #4570b6;
               font-family: "Noto Sans TC";
-              font-size: 30px;
+              font-size: 24px;
               font-style: normal;
               font-weight: 900;
               line-height: 1.26;

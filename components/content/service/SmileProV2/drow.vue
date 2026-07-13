@@ -68,7 +68,7 @@
         </defs>
       </svg>
 
-      <p class="folderText">你適合做SMILE Pro嗎?</p>
+      <p class="folderText">你適合做SMILE Pro 2.0嗎?</p>
     </div>
 
     <!-- 成功后的内容 -->
@@ -132,7 +132,7 @@
           </linearGradient>
         </defs>
       </svg>
-      <h4>你已符合做SMILE Pro的<br class="d-lg-none" />基本條件了!</h4>
+      <h4>你已符合做SMILE Pro 2.0的<br class="d-lg-none" />基本條件了!</h4>
 
       <a
         target="_blank"
