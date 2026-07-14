@@ -4,7 +4,7 @@
       <img
         class="smile-banner__image"
         decoding="async"
-        alt="SMILE Pro Care 限時禮品"
+        alt="SMILE Pro 2.0 Care 限時禮品"
         loading="lazy"
         srcset="
           https://statichk.cmermedical.com/cmermedical/image/20260311/smileProCare-mobile.webp 400w,
@@ -20,7 +20,7 @@
             <div class="smile-banner__gift-wrap">
               <div class="smile-banner__title">
                 <div class="smile-banner__title-row">
-                  <span class="smile-banner__title-main">SMILE Pro Care</span>
+                  <span class="smile-banner__title-main">SMILE Pro 2.0 Care</span>
                   <!-- <span class="smile-banner__title-sub">限時禮品</span> -->
                 </div>
                 <!-- <h3 class="smile-banner__heading">限量版便攜式咖啡機</h3> -->
@@ -57,13 +57,13 @@
                 >
                   <img
                     src="https://statichk.cmermedical.com/smile/smileProCare/banner-img.png"
-                    alt="立即了解 SMILE Pro Care 計劃"
+                    alt="立即了解 SMILE Pro 2.0 Care 計劃"
                     class="smile-banner__gift-image"
                   />
                   <div class="smile-banner__gift-text">
                     <span class="smile-banner__gift-text-main">立即了解</span>
                     <span class="smile-banner__gift-text-sub"
-                      >SMILE Pro Care</span
+                      >SMILE Pro 2.0 Care</span
                     >
                     <span class="smile-banner__gift-text-detail">計劃</span>
                   </div>
@@ -94,17 +94,17 @@
       <div class="about-section__container">
         <div class="about-section__content">
           <h2 class="about-section__title">
-            <span>SMILE Pro Care</span>
+            <span>SMILE Pro 2.0 Care</span>
             <span>微笑激光矯視</span>
           </h2>
           <p class="about-section__description">
             是希瑪微笑矯視中心為對SMILE
-            Pro微笑激光矯視有興趣的人而設的另一個選擇。<br />
-            SMILE Pro Care微笑激光矯視與SMILE Pro微笑激光<br
+            Pro 2.0微笑激光矯視有興趣的人而設的另一個選擇。<br />
+            SMILE Pro 2.0 Care微笑激光矯視與SMILE Pro 2.0微笑激光<br
               class="md:hidden"
             />矯視使用同樣的技術進行矯視過程，所以
             <br class="hidden md:block" />
-            SMILE Pro Care同樣可矯正近視、散光及老花；<br
+            SMILE Pro 2.0 Care同樣可矯正近視、散光及老花；<br
               class="md:hidden"
             />同時可感受矯視過程短及<br class="md:hidden" />康復時間短的特點。
           </p>
@@ -131,7 +131,7 @@
           <h2
             class="text-xl md:text-4xl font-bold text-[#0A2342] mb-6 md:text-nowrap"
           >
-            SMILE Pro Care與SMILE Pro <br class="md:hidden" />有什麼分別?
+            SMILE Pro 2.0 Care與SMILE Pro 2.0 <br class="md:hidden" />有什麼分別?
           </h2>
         </div>
         <div class="max-w-5xl mx-auto overflow-x-auto">
@@ -144,13 +144,13 @@
                 <th
                   class="px-2 py-2 md:px-6 md:py-4 text-center bg-[#4570B6] text-base md:text-lg text-nowrap"
                 >
-                  SMILE Pro Care<br class="md:hidden" />
+                  SMILE Pro 2.0 Care<br class="md:hidden" />
                   微笑激光矯視
                 </th>
                 <th
                   class="px-2 py-2 md:px-6 md:py-4 text-center rounded-tr-xl bg-[#0A2342] text-base md:text-lg text-nowrap"
                 >
-                  SMILE Pro<br class="md:hidden" />微笑激光矯視
+                  SMILE Pro 2.0<br class="md:hidden" />微笑激光矯視
                 </th>
               </tr>
             </thead>
@@ -265,12 +265,12 @@
       </div>
     </section>
     <!-- 服務對比 -->
-    <!-- start SMILE Pro Care 專享福利-->
+    <!-- start SMILE Pro 2.0 Care 專享福利-->
     <section class="benefits-section">
       <div class="benefits-section__wrapper">
         <div class="benefits-section__content">
           <div class="benefits-section__header">
-            <div class="benefits-section__title">SMILE Pro Care 專享福利</div>
+            <div class="benefits-section__title">SMILE Pro 2.0 Care 專享福利</div>
             <div class="benefits-section__subtitle">
               選擇升級服務，即享三重額外福利，為您的矯視體驗加分！
             </div>
@@ -326,12 +326,12 @@
         </div> -->
       </div>
     </section>
-    <!-- end SMILE Pro Care 專享福利 -->
+    <!-- end SMILE Pro 2.0 Care 專享福利 -->
     <!-- start 如何選擇 -->
     <div class="how-to-choose">
       <h3 class="how-to-choose__title">如何選擇?</h3>
       <p class="how-to-choose__description">
-        SMILE Pro Care微笑激光矯視最適合<span
+        SMILE Pro 2.0 Care微笑激光矯視最適合<span
           class="how-to-choose__description--bold"
           >重視矯視體驗</span
         >， 又希望一個價錢有更長遠的保障，讓眼睛享受更多的你。
@@ -340,7 +340,7 @@
         href="https://api.whatsapp.com/send/?phone=85297962992&amp;text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(WSPC-01)%20%E5%B8%8C%E7%91%AASMILE%20Pro%20Care%E7%9F%AF%E8%A6%96"
         class="how-to-choose__button"
       >
-        立即預約SMILE Pro Care
+        立即預約SMILE Pro 2.0 Care
       </a>
     </div>
     <div class="service-tip">
@@ -463,12 +463,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
+          content: "SMILE PRO 2.0 Care 微笑矯視 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
+          content: "SMILE PRO 2.0 Care 微笑矯視 - 希瑪微笑矯視中心",
         },
       ],
       link: [
@@ -705,8 +705,8 @@ export default {
       ],
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
-      browserTitle: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
-      browserTitleCn: "SMILE PRO 微笑矫视 - 希玛微笑矫视中心",
+      browserTitle: "SMILE PRO 2.0 微笑矯視 - 希瑪微笑矯視中心",
+      browserTitleCn: "SMILE PRO 2.0 微笑矫视 - 希玛微笑矫视中心",
     };
   },
   watch: {},

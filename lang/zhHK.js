@@ -1191,7 +1191,7 @@ module.exports = {
     medicalEquipment: {
       equiCon25: {
         title: "ZEISS VISUMAX 800",
-        title2: "SMILE®pro",
+        title2: "SMILE®pro 2.0",
         content:
           "VISUMAX 800新增的智能眼球與旋轉偵測和視覺中心定位功能可以實現更準確和個性化的治療，以滿足每位病人的需求。最新的技術可以在不到10秒鐘的時間內完成晶狀體切割，從而縮短整個吸附時間。",
         from: "資料及圖片來源： Carl Zeiss",

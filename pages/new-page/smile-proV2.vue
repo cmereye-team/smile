@@ -100,7 +100,7 @@
                 {{ $t("smile_proV2.p_text1")
                 }}<span>{{ $t("smile_proV2.p_text2") }}</span
                 >{{ $t("smile_proV2.p_text3")
-                }}<span>ZEISS VISUMAX 800 SMILE®pro 2.0</span
+                }}<span>ZEISS VISUMAX 800 SMILE®pro</span
                 >{{ $t("smile_proV2.p_text4")
                 }}<span class="let">{{ $t("smile_proV2.p_text5") }}</span
                 >{{ $t("smile_proV2.p_text6") }}{{ $t("smile_proV2.p_text6_1")
