@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-03-25 16:47:42
- * @LastEditTime: 2026-04-22 14:11:30
+ * @LastEditTime: 2026-07-14 09:42:46
  * @FilePath: /components/layout/Footer.vue
  * @Description: 统一页脚
 -->
@@ -380,7 +380,7 @@ export default {
             </ul>
           </div>
           <!--矯視服務  -->
-          <div class="new-Footer-v2-menu-left-item">
+          <div class="new-Footer-v2-menu-left-item services">
             <nuxt-link
               :to="OrthopedicList.link"
               class="new-Footer-v2-menu-item-title"
@@ -559,9 +559,11 @@ export default {
           }}{{ $t("home.footer.span2") }}</span
         >
         <span>
-          <nuxt-link :to="localePath('/privacy-policy')" class="text-[inherit]">{{
-            $t("home.footer.span3")
-          }}</nuxt-link>
+          <nuxt-link
+            :to="localePath('/privacy-policy')"
+            class="text-[inherit]"
+            >{{ $t("home.footer.span3") }}</nuxt-link
+          >
         </span>
         |
         <span>
@@ -967,6 +969,9 @@ a {
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                [href="/smilePro"] {
+                  letter-spacing: 0em;
+                }
               }
             }
           }
@@ -1001,6 +1006,23 @@ a {
     bottom: 0;
     width: 120%;
     left: -240px;
+  }
+}
+.new-Footer-v2-menu-left-item {
+  &.services {
+    li {
+      &:nth-child(1) {
+        .new-Footer-v2-menu-item-link {
+          letter-spacing: 0em;
+          @media screen and (min-width: 992px) {
+            letter-spacing: -0.05em;
+          }
+          @media screen and (min-width: 1280px) {
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (min-width: 1365px) {

@@ -67,7 +67,6 @@
           </clipPath>
         </defs>
       </svg>
-
       <p class="folderText">你適合做SMILE Pro 2.0嗎?</p>
     </div>
 
@@ -132,7 +131,7 @@
           </linearGradient>
         </defs>
       </svg>
-      <h4>你已符合做SMILE Pro 2.0的<br class="d-lg-none" />基本條件了!</h4>
+      <h3>你已符合做SMILE Pro 2.0的<br class="d-lg-none" />基本條件了!</h3>
 
       <a
         target="_blank"
@@ -539,7 +538,7 @@ export default {
       & > svg {
         margin: 0 auto;
       }
-      & > h4 {
+      & > h3 {
         margin: 10px 0;
         color: #4570b6;
         text-align: center;
@@ -710,7 +709,7 @@ export default {
       & > svg {
         margin: 0 auto;
       }
-      & > h4 {
+      & > h3 {
         margin: 2.56vw 0;
         color: #4570b6;
         text-align: center;
@@ -882,7 +881,7 @@ export default {
         width: clamp(163px, 16.98vw, 326px);
         height: clamp(131.999px, 13.75vw, 263.998px);
       }
-      & > h4 {
+      & > h3 {
         margin: clamp(19.5px, 2.03vw, 39px) 0;
         color: #4570b6;
         font-family: "Noto Sans HK";

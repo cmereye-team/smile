@@ -1,35 +1,42 @@
 <template>
   <div class="lasik">
-    <div class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 pb-9 min-[992px]:pb-0">
+    <div class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 mb-2 lg:mb-3">
       <a href="javascript:void(0);" @click="scrollToPrice">
         <picture>
           <source
             media="(min-width: 992px)"
             type="image/avif"
-            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.avif"></source>
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/notice-smilepro-pc-v2.avif"></source>
           <source
             media="(min-width: 992px)"
             type="image/webp"
-            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.webp"></source>
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/notice-smilepro-pc-v2.webp"></source>
           <source
             media="(min-width: 992px)"
             type="image/jpeg"
-            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-v1.jpg"></source>
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/notice-smilepro-pc-v2.jpg"></source>
           <source
             type="image/avif"
-            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.avif"></source>
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/notice-smilepro-mb-v2.avif"></source>
           <source
             type="image/webp"
-            srcset="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.webp"></source>
-          <img src="https://statichk.cmermedical.com/smile/smileproV2/notice-smilepro-mb-v1.jpg" alt="微笑激光矯視夏日禮遇" class="rounded-lg">
+            srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/notice-smilepro-mb-v2.webp"></source>
+          <img src="https://statichk.cmermedical.com/smile/smileproV2/banner/notice-smilepro-mb-v2.jpg" alt="微笑激光矯視夏日禮遇" class="rounded-lg">
         </picture>
       </a>
     </div>
-    <!-- 轮播位置 -->
     <div
       class="container new-container mx-auto smile-NewBanner position-relative"
     >
-      <img
+      <picture class="w-full">
+        <source media="(min-width: 1024px)" srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.avif" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.jpg">
+        <source srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.avif" type="image/avif">
+        <source srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.webp" type="image/webp">
+        <img src="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.jpg" alt="希瑪率先引進SMILE PRO 2.0" title="全面升級更精華" class="w-full rounded-lg">
+      </picture>
+      <!-- <img
         class=""
         decoding="async"
         src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-banner-pc2.avif"
@@ -42,12 +49,12 @@
           https://statichk.cmermedical.com/smile/smileproV2/smilepro-banner-pc2.avif
         "
         sizes=" (max-width: 992px) 100vw,1216px"
-      />
-      <div class="smile-NewBanner-Title">
+      /> -->
+      <!-- <div class="smile-NewBanner-Title">
         <span>SMILE Pro 2.0</span>
         <h3>{{ $t("smile_proV2.Bannertitle") }}</h3>
         <p>Small Incision Lenticule Extraction</p>
-      </div>
+      </div> -->
       <div class="smile-NewBanner-Tip">
         <div class="smile-NewBanner-Tip-Title">
           <p>{{ $t("Correct.newIcl.titleList.title1") }}</p>
@@ -69,31 +76,31 @@
             >SMILE Pro 2.0 {{ $t("smile_proV2.CenterTile") }}
           </a>
         </div>
-        <div class="mb-5 tracking-widest px-7 lg:pr-0 lg:pl-[clamp(16px,4vw,76px)] flex flex-col lg:flex-row gap-1 lg:gap-8">
-          <img src="https://statichk.cmermedical.com/smile/smileproV2/icon-smile-pro-2-v1.webp" alt="SMILE PRO 2.0" class="lg:w-2/5">
-          <div class="leading-[2]">
-            <h3 class="text-primary text-xl lg:text-3xl font-black mb-7 lg:mb-5 text-center lg:text-left">SMILE PRO 2.0 微笑激光矯視</h3>
-            <div class="mb-5 lg:mb-10 lg:text-xl">
-              <h4 class="text-primary font-bold">升級矯視數據平台</h4>
+        <div class="mb-5 tracking-widest px-7 lg:pr-0 lg:pl-[clamp(16px,4vw,76px)] flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-8">
+          <img src="https://statichk.cmermedical.com/smile/smileproV2/icon-smile-pro-2-v1.webp" alt="SMILE PRO 2.0" class="h-fit lg:w-2/5 aspect-[45/16]">
+          <div class="text-base lg:text-xl leading-[2.5] lg:leading-[2] lg:flex-1">
+            <h1 class="text-primary text-xl lg:text-3xl font-black mb-7 lg:mb-5 text-center lg:text-left">SMILE PRO 2.0 微笑激光矯視</h1>
+            <div class="mb-5 lg:mb-10">
+              <h2 class="text-primary font-bold text-left mb-0">升級矯視數據平台</h2>
               <p class="text-text font-light">全新配置虹膜數據測量儀器，捕捉每雙眼睛獨一無二的虹膜紋路。透過新增的激光矯視數據平台，同步個人矯視參數至激光設備，簡化整體矯視流程，同時提升運作效率與數據精準度。</p>
             </div>
             <div>
-              <h4 class="text-primary font-bold">虹膜辨識散光導航</h4>
+              <h2 class="text-primary font-bold text-left mb-0">虹膜辨識散光導航</h2>
               <p class="text-text font-light">激光設備的智能輔助系統同步升級，進⼀步強化散光矯正的精準度與穩定性。SMILE pro 2.0 可在術中實時識別虹膜狀態，與預存的專屬虹膜影像對比。倘若眼球產生細微轉動，系統亦能夠即時追蹤並自動校正散光軸向，減低對人工調校的依賴。</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="smilePro-newCenter-content">
+      <div class="smilePro-newCenter-content overflow-hidden">
         <div class="smilePro-newCenter-content-text">
           <div class="container new-container">
             <div>
-              <h3>SMILE Pro 2.0 {{ $t("smile_proV2.CenterTile") }}</h3>
+              <h2>SMILE Pro {{ $t("smile_proV2.CenterTile") }}</h2>
               <p>
                 {{ $t("smile_proV2.p_text1")
                 }}<span>{{ $t("smile_proV2.p_text2") }}</span
                 >{{ $t("smile_proV2.p_text3")
-                }}<span>ZEISS VISUMAX 800 SMILE®pro</span
+                }}<span>ZEISS VISUMAX 800 SMILE®pro 2.0</span
                 >{{ $t("smile_proV2.p_text4")
                 }}<span class="let">{{ $t("smile_proV2.p_text5") }}</span
                 >{{ $t("smile_proV2.p_text6") }}{{ $t("smile_proV2.p_text6_1")
@@ -195,7 +202,7 @@
               }}
             </h3>
             <p>
-              ZEISS VISUMAX 800 SMILE®pro<br />
+              ZEISS VISUMAX 800 SMILE®pro 2.0<br />
               {{ $t("smile_proV2.four_feature.smallTilte") }}
             </p>
           </div>
@@ -337,14 +344,14 @@
               <div
                 class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
               >
-                SMILE Pro Care 2.0費用
+                SMILE Pro 2.0 Care費用
               </div>
               <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
                 <div
                   class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 lg:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
                 >
                   <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    SMILE Pro care 2.0<br /><span>微笑激光矯視</span>
+                    SMILE Pro 2.0 care<br /><span>微笑激光矯視</span>
                   </div>
                   <div
                     class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
@@ -942,7 +949,7 @@
       </a>
     </section>
     <!-- 过程和介绍vedio -->
-    <section class="icl-introVedio">
+    <section class="icl-introVedio overflow-hidden">
       <div class="icl-introVedio-intro new-container">
         <div class="icl-introVedio-intro-number">
           <!-- 左侧数字列表 -->
@@ -1140,7 +1147,7 @@
     </section> -->
     <userShare :user-share="ShareData"></userShare>
     <!-- 用家见证 -->
-    <section class="smile-pro-evaluateV2">
+    <section class="smile-pro-evaluateV2 overflow-hidden">
       <div class="smile-pro-evaluateV2-Box">
         <div class="smile-pro-evaluateV2-Box-title">用家見證</div>
         <div class="smile-pro-evaluateV2-Box-content">
@@ -1634,7 +1641,7 @@
           >
             <p class="">想了解</p>
             <p>
-              SMILE Pro 2.0 同 <br class="block md:hidden" />SMILE Pro Care 2.0
+              SMILE Pro 2.0 同 <br class="block md:hidden" />SMILE Pro 2.0 Care
               <br class="" />
               有咩分別？
             </p>
@@ -2299,13 +2306,12 @@ i {
     // margin-top: 150px;
     height: 203px;
     position: relative;
-    img {
-      width: 200px;
-      position: absolute;
-      top: -59px;
-      right: 64px;
-      // z-index: 95;
-    }
+    // img {
+    //   width: 200px;
+    //   position: absolute;
+    //   top: -59px;
+    //   right: 64px;
+    // }
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 58px;
@@ -2746,7 +2752,7 @@ i {
             transform: translate(-50%, -50%);
             z-index: 1;
           }
-          h3 {
+          h2 {
             position: relative;
             z-index: 2;
             text-align: center;
@@ -3369,14 +3375,17 @@ i {
   .smile-NewBanner {
     padding: 0 15px;
     // margin-top: 20.51vw;
-    height: 52.5vw;
+    // height: 52.5vw;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
     position: relative;
-    img {
-      width: 51.28vw;
-      position: absolute;
-      top: -15.12vw;
-      right: 20.51vw;
-    }
+    // img {
+    //   width: 51.28vw;
+    //   position: absolute;
+    //   top: -15.12vw;
+    //   right: 20.51vw;
+    // }
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 14.87vw;
@@ -4163,14 +4172,14 @@ i {
             width: clamp(381px, 39.69vw, 762px);
             height: clamp(381px, 39.69vw, 762px);
           }
-          h3 {
+          h2 {
             position: relative;
             z-index: 2;
             text-align: center;
             margin-bottom: clamp(8px, 0.83vw, 16px);
             color: #4570b6;
             font-family: "Noto Sans TC";
-            font-size: clamp(15px, 1.56vw, 30px);
+            font-size: clamp(16px, 1.56vw, 30px);
             font-style: normal;
             font-weight: 900;
             line-height: 1;
@@ -4844,13 +4853,13 @@ i {
     // margin-top: 213px;
     height: 529px;
     position: relative;
-    img {
-      width: 500px;
-      position: absolute;
-      top: -27px;
-      left: inherit;
-      right: 239px;
-    }
+    // img {
+    //   width: 500px;
+    //   position: absolute;
+    //   top: -27px;
+    //   left: inherit;
+    //   right: 239px;
+    // }
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 90px;
@@ -4921,6 +4930,7 @@ i {
   }
   .smile-newCenter {
     width: 100vw;
+    margin-top: -60px;
     .smile-newCenter-menu {
       padding: 0px;
       margin-bottom: clamp(29px, 3.02vw, 58px);
