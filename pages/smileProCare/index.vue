@@ -26,7 +26,7 @@
                 <!-- <h3 class="smile-banner__heading">限量版便攜式咖啡機</h3> -->
                 <p class="smile-banner__description">
                   是希瑪微笑矯視中心為對SMILE
-                  Pro微笑激光矯視有興趣的人而設的另一個選擇。
+                  Pro 2.0微笑激光矯視有興趣的人而設的另一個選擇。
                 </p>
                 <!-- 剩餘數量顯示 -->
                 <!-- <div class="smile-banner__counter">

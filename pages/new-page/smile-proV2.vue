@@ -1798,12 +1798,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
+          content: "SMILE PRO 2.0 微笑矯視 - 希瑪微笑矯視中心",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
+          content: "SMILE PRO 2.0,smile pro,微笑矯視,希瑪微笑矯視中心",
         },
       ],
       link: [
@@ -2090,8 +2090,8 @@ export default {
       ],
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
-      browserTitle: "SMILE PRO 微笑矯視 - 希瑪微笑矯視中心",
-      browserTitleCn: "SMILE PRO 微笑矫视 - 希玛微笑矫视中心",
+      browserTitle: "SMILE PRO 2.0 微笑矯視 - 希瑪微笑矯視中心",
+      browserTitleCn: "SMILE PRO 2.0 微笑矫视 - 希玛微笑矫视中心",
     };
   },
   methods: {

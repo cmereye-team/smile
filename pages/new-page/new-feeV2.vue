@@ -429,7 +429,7 @@
               </tr>
               <tr>
                 <td>
-                  一年內<br class="block md:hidden" />免費覆診
+                  半年內<br class="block md:hidden" />免費覆診
                   <br />
                   <span
                     class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap"
@@ -437,7 +437,7 @@
                   >
                 </td>
                 <td class="bg-lbv-body" colspan="2">
-                  5次<sup class="text-xs ml-0.5">#</sup>
+                  5次<sup class="text-xs ml-0.5">###</sup>
                 </td>
               </tr>
               <tr>
@@ -527,7 +527,8 @@
               <sup>#</sup>{{ $t("fee.textList.text3_3") }}<br />
               <sup>##</sup>{{ $t("fee.textList.text3_4") }}<br />
               <sup>※</sup>{{ $t("fee.textList.text3_5") }}<br />
-              <sup>//</sup>{{ $t("fee.textList.text3_6") }}
+              <sup>//</sup>{{ $t("fee.textList.text3_6") }}<br />
+              <sup>###</sup>{{ $t("fee.textList.text3_7") }}
             </span>
             <br />
             <span>
