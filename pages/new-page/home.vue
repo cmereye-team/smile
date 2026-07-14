@@ -1,6 +1,6 @@
 <!--
  * @Date: 2024-04-26 18:54:12
- * @LastEditTime: 2026-05-26 15:47:35
+ * @LastEditTime: 2026-07-14 17:46:05
  * @FilePath: /pages/new-page/home.vue
  * @Description: 首页
 -->
@@ -866,7 +866,7 @@
               <h4>預約服務</h4>
               <p class="UserRatingBox-bottom-content">
                 矯視前先要進行全面術前眼睛檢查，包括屈光檢查、全面眼底檢查、醫生會診為你的眼睛狀況評估及提供矯視方案建議等。如有興趣<span>進行矯視，立即WhatsApp預約</span>我們的<span>術前眼睛檢查服務</span>。如想了解更多有關SMILE
-                Pro/SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式<span>有疑問，歡迎預約</span>我們矯視中心的<span>講座了解更多</span>。
+                Pro 2.0/SMILE微笑激光矯視、ICL植入式隱形眼鏡、老花矯視等資訊，或對以上的矯視方式<span>有疑問，歡迎預約</span>我們矯視中心的<span>講座了解更多</span>。
               </p>
               <div class="UserRatingBox-Link">
                 <a href="/patient-info" class="UserShareBox-Link-btnone">
@@ -1249,7 +1249,7 @@ export default {
       bannerGid: 1,
       serverList: [
         {
-          title: "SMILE<br/>PRO",
+          title: "SMILE<br/>PRO 2.0",
           text: ["適合", "擔心眼睛無法", "對焦太久"],
           textmb: ["適合", "擔心眼睛無法對焦太久"],
           link: "/smilePro",

@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-07-03 17:29:35
- * @LastEditTime: 2026-05-26 15:51:36
+ * @LastEditTime: 2026-07-14 17:48:44
  * @FilePath: /pages/new-page/patient-info.vue
  * @Description: 诊症须知
 -->
@@ -220,7 +220,7 @@
           <i>2.</i
           ><span
             >SMILE/ SMILE
-            Pro微笑激光矯視的詳細眼底檢查包括：淚水分泌測試、瞳孔測量、角膜地形掃描及像差、雙眼內皮細胞分析、散瞳眼底檢查、光學相干斷層掃描(如需要)、掃描激光眼底檢查(如需要);
+            Pro 2.0微笑激光矯視的詳細眼底檢查包括：淚水分泌測試、瞳孔測量、角膜地形掃描及像差、雙眼內皮細胞分析、散瞳眼底檢查、光學相干斷層掃描(如需要)、掃描激光眼底檢查(如需要);
             ICL植入式隱形眼鏡的眼底檢查額外包括:
             內皮細胞的密度測量及眼科超聲生物顯微鏡</span
           >
@@ -491,7 +491,7 @@
       </div>
       <div class="section-last-4">
         <div class="section-last-4-item">
-          <h3>完成SMILE/SMILE Pro矯視後</h3>
+          <h3>完成SMILE/SMILE Pro 2.0矯視後</h3>
           <div class="section-last-4-item-content">
             <div class="section-last-4-item-content-text">
               <h4>矯視後<span>當天內</span></h4>
