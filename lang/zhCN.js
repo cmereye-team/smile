@@ -32,11 +32,11 @@ module.exports = {
       orthopedicServicesChild_2: "老花矫视",
       orthopedicServicesChild_3: "LASIK 激光矫视",
       orthopedicServicesChild_4: "ICL植入式隐形眼镜",
-      orthopedicServicesChild_5: "SMILE Pro微笑激光矫视",
+      orthopedicServicesChild_5: "SMILE Pro 2.0微笑激光矫视",
       diagnosisInstructionsChild_1: "眼睛检查及矫视前",
       diagnosisInstructionsChild_2: "矫视流程",
       diagnosisInstructionsChild_3: "矫视后覆诊",
-      commonProblemChild_1: "SMILE Pro/SMILE微笑激光矫视",
+      commonProblemChild_1: "SMILE Pro 2.0/SMILE微笑激光矫视",
       commonProblemChild_2: "LASIK 激光矫视",
       commonProblemChild_3: "ICL植入式隐形眼镜",
       commonProblemChild_4: "老花矫视",
@@ -567,7 +567,7 @@ module.exports = {
     Bannertext1: "1,000度以下的近视",
     Bannertext2: "500度以下的散光",
     CenterTile: "微笑激光矫视",
-    p_text1: "SMILE Pro微笑矫视是现时最新的",
+    p_text1: "SMILE Pro 微笑矫视是现时最新的",
     p_text2: "微创",
     p_text3: "激光矫正技术。本中心的SMILE Pro微笑矫视使用",
     p_text4: "，原理是在",
@@ -579,11 +579,11 @@ module.exports = {
     p_text8: "问题，减低对眼镜的依赖。",
     WhyChoose_p_text1: "希玛微笑矫视中心以尖端科技和卓越的客户体验；同时作为",
     WhyChoose_p_text1_1: "首间获Zeiss蔡司颁发《全飞秒屈光手术 卓越手术中心》",
-    WhyChoose_p_text1_2: "认证的香港矫视中心，成为了大众的SMILE Pro矫视首选。",
+    WhyChoose_p_text1_2: "认证的香港矫视中心，成为了大众的SMILE Pro 2.0矫视首选。",
     WhyChoose_p_text2: "中心采用",
     WhyChoose_p_text3: "已获美国FDA认证",
     WhyChoose_p_text4:
-      "的ZEISS VISUMAX 800 SMILE®pro设备，结合德国蔡司光学与诺贝尔奖激光技术，为SMILE Pro矫视服务带来更高的",
+      "的ZEISS VISUMAX 800 SMILE®pro 2.0设备，结合德国蔡司光学与诺贝尔奖激光技术，为SMILE Pro 2.0矫视服务带来更高的",
     WhyChoose_p_text5: "精确度",
     WhyChoose_p_text6: "与",
     WhyChoose_p_text7: "安全保障",
@@ -1118,11 +1118,11 @@ module.exports = {
       text3_6:
         "需要術後半年內完成。如超過半年，需另作預約，診金按正常（非矯視套餐）收費",
       text4:
-        "SMILE、SMILE Pro、SMILE Pro Care微笑激光矯視及LASIK激光矯視/TPRK經上皮激光角膜切削手術的增進手術需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。LBV視覺融合老花激光手術的增進手術需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費。",
+        "SMILE、SMILE Pro 2.0、SMILE Pro 2.0 Care微笑激光矯視及LASIK激光矯視/TPRK經上皮激光角膜切削手術的增進手術需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。LBV視覺融合老花激光手術的增進手術需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費。",
       text5:
-        "SMILE微笑激光矯視、LASIK激光矯視/TPRK經上皮激光角膜切削手術、ICL植入式隱形眼鏡及LBV視覺融合老花激光手術的無限視光檢查需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費；SMILE Pro微笑激光矯視及SMILE Pro Care微笑激光矯視無限視光檢查需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。",
+        "SMILE微笑激光矯視、LASIK激光矯視/TPRK經上皮激光角膜切削手術、ICL植入式隱形眼鏡及LBV視覺融合老花激光手術的無限視光檢查需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費；SMILE Pro 2.0微笑激光矯視及SMILE Pro 2.0 Care微笑激光矯視無限視光檢查需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。",
       text6:
-        "SMILE、SMILE Pro微笑激光矯視、ICL植入式隱形眼鏡及LASIK激光矯視/TPRK經上皮激光角膜切削手術當日藥費已包括在矯視套餐收費內。",
+        "SMILE、SMILE Pro 2.0微笑激光矯視、ICL植入式隱形眼鏡及LASIK激光矯視/TPRK經上皮激光角膜切削手術當日藥費已包括在矯視套餐收費內。",
     },
   },
   aboutUs: {
@@ -1596,7 +1596,7 @@ module.exports = {
   },
   freQuestios: {
     firstProblem: {
-      title: "SMILE Pro/SMILE微笑激光矫视",
+      title: "SMILE Pro 2.0/SMILE微笑激光矫视",
       problem1: {
         title: "SMILE微笑激光矫视后可达至零度近视的效果？",
         content: `有很多人以为矫视后会达致零度近视或散光，甚或较术前配戴眼镜或隐型眼镜有更清楚的视力，但其实这是错误的观念。<br />

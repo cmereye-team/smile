@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-06-26 14:04:47
+ * @LastEditTime: 2026-07-13 17:44:27
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -50,11 +50,11 @@
                 <th>此為<br class="d-lg-none" />香港價錢</th>
                 <th>
                   <span>SMILE Pro</span><br class="d-lg-none" />
-                  <span>Care</span><br />
+                  <span>2.0 Care</span><br />
                   微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
-                  <span>SMILE</span> <br class="d-lg-none" /><span>Pro</span
+                  <span>SMILE</span> <br class="d-lg-none" /><span>Pro 2.0</span
                   ><br />微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
@@ -2478,7 +2478,7 @@ body {
     }
     .custom-comparison-table thead tr > th:nth-child(2) {
       background: #5991e5;
-      letter-spacing: 0.1em;
+      letter-spacing: 0em;
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
       background: #719ad8;
