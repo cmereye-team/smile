@@ -3104,6 +3104,8 @@ module.exports = {
   },
   medical_equipment: {
     content1: {
+      name1: 'ZEISS VISUMAX 800',
+      name2: 'SMILE®pro 2.0',
       remark:
         "VISUMAX 800新增的智能眼球与旋转侦测和视觉中心定位功能可以实现更准确和个性化的治疗，以满足每位病人的需求。最新的技术可以在不到10秒钟的时间内完成晶状体切割，从而缩短整个吸附时间。",
       source: "资料及图片来源： Carl Zeiss",
@@ -3286,7 +3288,7 @@ module.exports = {
   },
   appointFroms: {
     title: "讲座",
-    title1: "SMILE Pro 微笑激光矫视、ICL植入式隐形眼镜、",
+    title1: "SMILE Pro 2.0 微笑激光矫视、ICL植入式隐形眼镜、",
     title2: "SMILE 微笑激光矫视、老花矫视讲座",
     p1: "中环诊所：中环毕打街1-3号中建大厦1512室",
     p2: "旺角诊所：旺角弥敦道625及639号雅兰中心一期1725B室",

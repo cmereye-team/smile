@@ -12,7 +12,7 @@
     <div class="equ_center_box page_container">
       <div class="equ_center" :class="$i18n.locale == 'en' ? 'equ_center_en_mobi' : ''" v-for="(item, index) in equi_con"
         :key="index">
-        <div class="top-equip" style="font-size: ;">
+        <div class="top-equip">
           <img :src="item.href" alt="" class="equi" />
           <span>{{ item.title }}</span>
           <span>{{ item.title2 }}</span>

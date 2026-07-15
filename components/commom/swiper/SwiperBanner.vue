@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-26 11:48:06
- * @LastEditTime: 2026-06-16 16:44:56
+ * @LastEditTime: 2026-07-15 09:18:45
  * @FilePath: /components/commom/swiper/SwiperBanner.vue
  * @Description: 轮播图Banner
 -->
@@ -17,6 +17,10 @@ export default {
       type: Number,
       default: 10,
     },
+    setStyle: {
+      type: String,
+      default: ''
+    }
   },
   data() {
     return {
@@ -118,7 +122,7 @@ export default {
 </script>
 
 <template>
-  <div class="main_banner">
+  <div class="main_banner" :class="bannerLists.length ? setStyle : ''">
     <div class="center-Banner container mx-auto">
       <div
         class="swiper rounded-xl"

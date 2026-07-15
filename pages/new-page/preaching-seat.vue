@@ -8,8 +8,8 @@
         </template>
       </Banner>
     </div> -->
-    <BannerSlider :gid="3" :num="1" class="banner-box" />
-    <div class="lecture-box mt-10 mb-[56px] md:mt-12 xl:mt-[64px]">
+    <BannerSlider :gid="3" :num="1" class="banner-box" setStyle="mb-10 md:mb-12 xl:mt-[64px]" />
+    <div class="lecture-box mb-[56px]">
       <div class="lecture-title">
         <div>
           <div class="lecture-content">
@@ -840,7 +840,7 @@ export default {
       // 映射表
       const schedules = {
         smileProMongKok: {
-          name: "Smile Pro 講座-旺角",
+          name: "Smile Pro 2.0 講座-旺角",
           times: {
             周二: "1:30 下午",
             周四: "6:30 下午",
@@ -849,7 +849,7 @@ export default {
           },
         },
         smileProCentral: {
-          name: "Smile Pro 講座-中環",
+          name: "Smile Pro 2.0 講座-中環",
           times: {
             周六: "1:30 下午",
           },

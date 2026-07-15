@@ -106,7 +106,7 @@ export default {
         {
           id: 1,
           img: "https://statichk.cmermedical.com/smile/equipment/equipment-001-v2.webp",
-          name: ["ZEISS VISUMAX 800", "SMILE®pro"],
+          name: [this.$t("medical_equipment.content1.name1"), this.$t("medical_equipment.content1.name2")],
           remark: this.$t("medical_equipment.content1.remark"),
           source: this.$t("medical_equipment.content1.source"),
           isShow: false,
