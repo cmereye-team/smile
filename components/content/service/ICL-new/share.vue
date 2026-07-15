@@ -25,7 +25,7 @@
             @click="shareForm('https://www.youtube.com/watch?v=5ihrzFvOy38')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/11/43b8892a6122243e.png"
+              src="https://statichk.cmermedical.com/imgs/2023/11/43b8892a6122243e.png"
               alt=""
             />
           </div>
@@ -43,7 +43,7 @@
             @click="shareForm('https://www.youtube.com/watch?v=2t7JjTab4xA')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/11/c02181abc25dbd8f.png"
+              src="https://statichk.cmermedical.com/imgs/2023/11/c02181abc25dbd8f.png"
               alt=""
             />
           </div>
@@ -52,7 +52,7 @@
             @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/11/2ffe61c23d75bf69.png"
+              src="https://statichk.cmermedical.com/imgs/2023/11/2ffe61c23d75bf69.png"
               alt=""
             />
           </div>
@@ -70,7 +70,7 @@
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/11/43b8892a6122243e.png"
+                src="https://statichk.cmermedical.com/imgs/2023/11/43b8892a6122243e.png"
                 alt=""
               />
             </div>
@@ -92,7 +92,7 @@
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/11/c02181abc25dbd8f.png"
+                src="https://statichk.cmermedical.com/imgs/2023/11/c02181abc25dbd8f.png"
                 alt=""
               />
             </div>
@@ -103,7 +103,7 @@
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/11/2ffe61c23d75bf69.png"
+                src="https://statichk.cmermedical.com/imgs/2023/11/2ffe61c23d75bf69.png"
                 alt=""
               />
             </div>
@@ -115,7 +115,7 @@
       <button>
         <div class="flex btn-yuyue">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
             alt=""
             style="width: 12vw"
           />
@@ -191,11 +191,11 @@ h2 {
     background-repeat: no-repeat;
   }
   .swiper-button-next {
-    background-image: url("https://static.cmereye.com/imgs/2023/11/a7c0239f4c5321f8.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/11/a7c0239f4c5321f8.png");
     right: -70px;
   }
   .swiper-button-prev {
-    background-image: url("https://static.cmereye.com/imgs/2023/11/4333213c7ff5339b.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/11/4333213c7ff5339b.png");
     left: -70px;
   }
 

@@ -4,7 +4,7 @@
       <div class="xtra-in-title">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/10/61db3e13ce5f4ccd.png"
+            src="https://statichk.cmermedical.com/imgs/2023/10/61db3e13ce5f4ccd.png"
             alt="icl"
           />
         </div>

@@ -12,7 +12,7 @@
         <p>
           <span :class="[$i18n.locale == 'en' ? 'text-center_p5' : '']"
             ><img
-              src="https://static.cmereye.com/imgs/2023/08/cb312fef9fc20f9f.png"
+              src="https://statichk.cmermedical.com/imgs/2023/08/cb312fef9fc20f9f.png"
               alt="" /></span
           >{{ $t("ophthalmicInfo.divit.contentText2") }}
         </p>
@@ -56,7 +56,7 @@
         <button>
           <div class="flex btn-yuyue">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
               alt=""
               style="width: 12vw"
             />

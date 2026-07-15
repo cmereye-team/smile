@@ -68,7 +68,7 @@
             <div class="font-title">{{ $t("home.headers.aboutSmile") }}</div>
             <div class="img-margin">
               <img
-                src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                src="https://statichk.cmermedical.com/imgs/2023/08/5cb3a72ab6bad56d.png"
                 alt=""
               />
             </div>
@@ -157,7 +157,7 @@
             </div>
             <div class="img-margin">
               <img
-                src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                src="https://statichk.cmermedical.com/imgs/2023/08/5cb3a72ab6bad56d.png"
                 alt=""
               />
             </div>
@@ -392,7 +392,7 @@
             </div>
             <div class="img-margin">
               <img
-                src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                src="https://statichk.cmermedical.com/imgs/2023/08/5cb3a72ab6bad56d.png"
                 alt=""
               />
             </div>
@@ -447,7 +447,7 @@
             <div class="font-title">{{ $t("home.headers.commonProblem") }}</div>
             <div class="img-margin">
               <img
-                src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                src="https://statichk.cmermedical.com/imgs/2023/08/5cb3a72ab6bad56d.png"
                 alt=""
               />
             </div>

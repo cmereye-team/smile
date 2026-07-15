@@ -31,7 +31,7 @@
       <div class="bg-feature">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/03/8034a12a685da9e0.png"
+            src="https://statichk.cmermedical.com/imgs/2024/03/8034a12a685da9e0.png"
             alt="SMILE Pro"
           />
         </div>
@@ -60,22 +60,22 @@ export default {
       featureList: [
         {
           id: 1,
-          img: "https://static.cmereye.com/imgs/2024/03/56cfa2166e117a03.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/56cfa2166e117a03.png",
           text: `新一代<br/>矯視科技`,
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/03/e7e2d0f5818c4023.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/e7e2d0f5818c4023.png",
           text: `10秒<br/>激光時間`,
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/03/b868f8f82a5f884a.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/b868f8f82a5f884a.png",
           text: `視軸<br/>輔助導航`,
         },
         {
           id: 4,
-          img: "https://static.cmereye.com/imgs/2024/03/4c701b8478cdcfcf.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/4c701b8478cdcfcf.png",
           text: `散光軸<br/>輔助導航`,
         },
       ],

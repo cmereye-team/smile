@@ -6,13 +6,13 @@
     <div class="flex md:flex-row justify-around mt-10 flex-col">
       <div>
         <img
-          src="https://static.cmereye.com/imgs/2023/01/001ff62faee8c6c2.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/01/001ff62faee8c6c2.jpg"
           alt=""
         />
       </div>
       <div class="md:mt-0 mt-5">
         <img
-          src="https://static.cmereye.com/imgs/2023/01/d1973cffe5540ca1.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/01/d1973cffe5540ca1.jpg"
           alt=""
         />
       </div>
@@ -248,7 +248,7 @@
         <button>
           <div class="flex btn-yuyue">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
               alt=""
               style="width: 12vw"
             />
@@ -307,7 +307,7 @@ h2 {
 }
 ::v-deep .el-icon-arrow-up:before {
   color: #ff161600;
-  background: url("https://static.cmereye.com/imgs/2023/01/918ee2a9b3b07245.png")
+  background: url("https://statichk.cmermedical.com/imgs/2023/01/918ee2a9b3b07245.png")
     no-repeat scroll right center transparent;
 }
 @media screen and (min-width: 768px) {

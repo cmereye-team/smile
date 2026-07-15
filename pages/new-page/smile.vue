@@ -246,7 +246,7 @@ export default {
     display: none !important;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/000c5714e8ad1fa2.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/000c5714e8ad1fa2.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

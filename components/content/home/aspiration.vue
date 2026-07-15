@@ -12,7 +12,7 @@
       </div>
       <div class="heart-box heart-box-1 wow animate__bounceIn">
         <img
-          src="https://static.cmereye.com/imgs/2023/03/af4243c0c7cd2fdd.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/03/af4243c0c7cd2fdd.jpg"
           alt=""
         />
         <div class="heart-text">
@@ -33,7 +33,7 @@
       </div>
       <div class="heart-box heart-box-2 wow animate__bounceIn">
         <img
-          src="https://static.cmereye.com/imgs/2023/03/5d0bbb754eb6eab3.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/03/5d0bbb754eb6eab3.jpg"
           alt=""
         />
         <div class="heart-text">
@@ -58,7 +58,7 @@
       </div>
       <div class="heart-box heart-box-3 wow animate__bounceIn">
         <img
-          src="https://static.cmereye.com/imgs/2023/03/c1bad1b15160015c.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/03/c1bad1b15160015c.jpg"
           alt=""
         />
         <div class="heart-text">
@@ -83,7 +83,7 @@
       </div>
       <div class="heart-box heart-box-4 wow animate__bounceIn">
         <img
-          src="https://static.cmereye.com/imgs/2023/03/53b6a1a03344c084.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/03/53b6a1a03344c084.jpg"
           alt=""
         />
         <div class="heart-text">

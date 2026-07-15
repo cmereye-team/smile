@@ -6,7 +6,7 @@
       <HeadMobileV2 />
       <!-- <nuxt-link to="/icl-event" class="btn-icl_event">
         <img
-          src="https://static.cmereye.com/imgs/2024/12/d826363f36195d26.png"
+          src="https://statichk.cmermedical.com/imgs/2024/12/d826363f36195d26.png"
           alt=""
         />
         <span>ICL<br />專題講座</span>

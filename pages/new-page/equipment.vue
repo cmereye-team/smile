@@ -113,7 +113,7 @@ export default {
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/05/f434fa3c9560d7c6.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/f434fa3c9560d7c6.png",
           name: [
             "Carl Zeiss Visumax",
             this.$t("medical_equipment.content2.name2"),
@@ -124,7 +124,7 @@ export default {
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/05/4e22294924611584.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/4e22294924611584.png",
           name: [
             this.$t("medical_equipment.content3.name1"),
             "（IOL Master 700）",
@@ -136,7 +136,7 @@ export default {
         },
         {
           id: 4,
-          img: "https://static.cmereye.com/imgs/2024/05/d9a4ebd0979eb0ad.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/d9a4ebd0979eb0ad.png",
           name: [this.$t("medical_equipment.content4.name1")],
           remark: this.$t("medical_equipment.content4.remark"),
           source: this.$t("medical_equipment.content4.source"),
@@ -144,7 +144,7 @@ export default {
         },
         {
           id: 5,
-          img: "https://static.cmereye.com/imgs/2024/05/17d09f2b2552fb10.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/17d09f2b2552fb10.png",
           name: [
             this.$t("medical_equipment.content5.name1"),
             this.$t("medical_equipment.content5.name2"),
@@ -155,7 +155,7 @@ export default {
         },
         {
           id: 6,
-          img: "https://static.cmereye.com/imgs/2024/05/91cae30bfe64c887.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/91cae30bfe64c887.png",
           name: [
             this.$t("medical_equipment.content6.name1"),
             this.$t("medical_equipment.content6.name2"),
@@ -166,7 +166,7 @@ export default {
         },
         {
           id: 7,
-          img: "https://static.cmereye.com/imgs/2024/05/e09ae8645106fe23.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/e09ae8645106fe23.png",
           name: [
             this.$t("medical_equipment.content7.name1"),
             this.$t("medical_equipment.content7.name2"),
@@ -177,7 +177,7 @@ export default {
         },
         {
           id: 8,
-          img: "https://static.cmereye.com/imgs/2024/05/a61d712eb35ef590.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/a61d712eb35ef590.png",
           name: ["Pentacam® ", this.$t("medical_equipment.content8.name1")],
           remark: this.$t("medical_equipment.content8.remark"),
           source: this.$t("medical_equipment.content8.source"),
@@ -185,7 +185,7 @@ export default {
         },
         {
           id: 9,
-          img: "https://static.cmereye.com/imgs/2024/05/1bb210c58784b1c0.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/1bb210c58784b1c0.png",
           name: [
             this.$t("medical_equipment.content9.name1"),
             this.$t("medical_equipment.content9.name2"),
@@ -196,7 +196,7 @@ export default {
         },
         {
           id: 10,
-          img: "https://static.cmereye.com/imgs/2024/05/2c4cff31c0a31522.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/2c4cff31c0a31522.png",
           name: [this.$t("medical_equipment.content10.name1"), "(ATLAS 9000)"],
           remark: this.$t("medical_equipment.content10.remark"),
           source: this.$t("medical_equipment.content10.source"),
@@ -204,7 +204,7 @@ export default {
         },
         {
           id: 11,
-          img: "https://static.cmereye.com/imgs/2024/05/bf7b6a0bef660626.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/bf7b6a0bef660626.png",
           name: [
             this.$t("medical_equipment.content11.name1"),
             "(CIRRUS HD-OCT5000)",
@@ -216,7 +216,7 @@ export default {
         },
         {
           id: 12,
-          img: "https://static.cmereye.com/imgs/2024/05/9215afd7f26f11e5.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/9215afd7f26f11e5.png",
           name: [
             this.$t("medical_equipment.content12.name1"),
             this.$t("medical_equipment.content12.name2"),
@@ -249,7 +249,7 @@ export default {
         },
         {
           id: 15,
-          img: "https://static.cmereye.com/imgs/2024/05/4b8f230a2d7a956d.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/4b8f230a2d7a956d.png",
           name: [
             this.$t("medical_equipment.content15.name1"),
             "(KONAN NSP-9900)",
@@ -260,7 +260,7 @@ export default {
         },
         {
           id: 16,
-          img: "https://static.cmereye.com/imgs/2024/05/a01cb16a551eb1ce.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/a01cb16a551eb1ce.png",
           name: [
             this.$t("medical_equipment.content16.name1"),
             // this.$t("medical_equipment.content16.name2"),
@@ -272,7 +272,7 @@ export default {
         
         {
           id: 17,
-          img: "https://static.cmereye.com/imgs/2024/05/c7a828125d9153ac.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/c7a828125d9153ac.png",
           name: [
             this.$t("medical_equipment.content17.name1"),
             this.$t("medical_equipment.content17.name2"),
@@ -283,7 +283,7 @@ export default {
         },
         {
           id: 18,
-          img: "https://static.cmereye.com/imgs/2024/05/993e14dfac448fa5.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/993e14dfac448fa5.png",
           name: [
             this.$t("medical_equipment.content18.name1"),
             this.$t("medical_equipment.content18.name2"),
@@ -306,7 +306,7 @@ export default {
         },
         {
           id: 20,
-          img: "https://static.cmereye.com/imgs/2024/05/9561a582b715533f.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/9561a582b715533f.png",
           name: ["PESCHKE Trade PXL", "Platinum 330"],
           remark: this.$t("medical_equipment.content20.remark"),
           source: this.$t("medical_equipment.content20.source"),
@@ -314,7 +314,7 @@ export default {
         },
         {
           id: 21,
-          img: "https://static.cmereye.com/imgs/2024/05/4bb384e3fe377bb6.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/4bb384e3fe377bb6.png",
           name: [
             "Ellex Tango Reflex",
             this.$t("medical_equipment.content21.name1"),
@@ -325,7 +325,7 @@ export default {
         },
         {
           id: 22,
-          img: "https://static.cmereye.com/imgs/2024/05/d11dd8d263f2f6a0.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/d11dd8d263f2f6a0.png",
           name: [this.$t("medical_equipment.content22.name1")],
           remark: this.$t("medical_equipment.content22.remark"),
           source: this.$t("medical_equipment.content22.source"),
@@ -344,7 +344,7 @@ export default {
         },
         {
           id: 24,
-          img: "https://static.cmereye.com/imgs/2024/05/bb7c87b456ee6118.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/bb7c87b456ee6118.png",
           name: [
             this.$t("medical_equipment.content24.name1"),
             "Centurion® vision system）",
@@ -355,7 +355,7 @@ export default {
         },
         {
           id: 25,
-          img: "https://static.cmereye.com/imgs/2024/05/ed06ff1c76aaed7d.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/ed06ff1c76aaed7d.png",
           name: [
             this.$t("medical_equipment.content25.name1"),
             "（Alcon Constellation®",
@@ -619,7 +619,7 @@ export default {
 }
 @media screen and (max-width: 767px) {
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/b1b778ced1d15d71.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/b1b778ced1d15d71.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

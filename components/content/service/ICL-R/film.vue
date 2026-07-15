@@ -3,7 +3,7 @@
     <div class="bg-photo">
       <!-- <img
         class="mbShow"
-        src="https://static.cmereye.com/imgs/2023/10/39c3a9da9fc3333f.png"
+        src="https://statichk.cmermedical.com/imgs/2023/10/39c3a9da9fc3333f.png"
         alt=""
       /> -->
       <div class="mbShow">
@@ -50,7 +50,7 @@
       <!-- <img
         class="mbShow"
         style="margin-top: -60px"
-        src="https://static.cmereye.com/imgs/2023/10/e2264d2d11f2efdd.png"
+        src="https://statichk.cmermedical.com/imgs/2023/10/e2264d2d11f2efdd.png"
         alt=""
       /> -->
     </div>
@@ -142,7 +142,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // background: url("https://static.cmereye.com/imgs/2023/10/7050f56423c13680.png");
+    // background: url("https://statichk.cmermedical.com/imgs/2023/10/7050f56423c13680.png");
     // background-repeat: no-repeat;
     // background-size: 100% 100%;
     width: 100%;

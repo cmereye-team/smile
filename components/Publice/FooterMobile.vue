@@ -1,7 +1,7 @@
 <template>
   <div class="footerBox">
     <a href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3(WM-BAW01)%E4%BA%86%E8%A7%A3%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96%E6%9C%8D%E5%8B%99" target="_blank" class="whatsapp-ficon">
-      <img src="https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png" alt="">
+      <img src="https://statichk.cmermedical.com/imgs/2023/03/e011cddb240290b9.png" alt="">
     </a>
     <div class="online footer mbShow">
       <div class="foot">
@@ -31,31 +31,31 @@ export default {
         {
           type: "tel",
           link: "tel:(+852)38925099",
-          img: "https://static.cmereye.com/imgs/2023/03/4f2e7a260618edb4.png",
+          img: "https://statichk.cmermedical.com/imgs/2023/03/4f2e7a260618edb4.png",
           title: this.$t("home.footer.title1"),
         },
         {
           type: "href",
           link: "https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&lng=big5&oname=CS_Katherine&r=&rf1=https%3A//smile.hkcmereye&rf2=.com/&p=https%3A//smile.hkcmereye.com/&cid=26ad3fcc05fa407b81167bda7abd1c92&sid=26ad3fcc05fa407b81167bda7abd1c92",
-          img: "https://static.cmereye.com/imgs/2023/03/935a17da94382a86.png",
+          img: "https://statichk.cmermedical.com/imgs/2023/03/935a17da94382a86.png",
           title: this.$t("home.footer.title2"),
         },
         // {
         //   type: "href",
         //   link: "https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3(WM-BAW01)%E4%BA%86%E8%A7%A3%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96%E6%9C%8D%E5%8B%99",
-        //   img: "https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png",
+        //   img: "https://statichk.cmermedical.com/imgs/2023/03/e011cddb240290b9.png",
         //   title: "Whatsapp",
         // },
         // {
         //   type: "link",
         //   link: "/booking",
-        //   img: "https://static.cmereye.com/imgs/2023/03/aa60fde6a44f6099.png",
+        //   img: "https://statichk.cmermedical.com/imgs/2023/03/aa60fde6a44f6099.png",
         //   title: this.$t("home.footer.title3"),
         // },
          {
           type: "link",
           link: "https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3(WM-BAW01)%E4%BA%86%E8%A7%A3%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96%E6%9C%8D%E5%8B%99",
-          img: "https://static.cmereye.com/imgs/2023/03/e011cddb240290b9.png",
+          img: "https://statichk.cmermedical.com/imgs/2023/03/e011cddb240290b9.png",
           title: this.$t("home.footer.title3"),
         },
          {

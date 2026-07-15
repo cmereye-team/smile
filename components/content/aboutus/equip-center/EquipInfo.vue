@@ -4,10 +4,10 @@
       <h2>{{ $t('home.headers.aboutSmileChild_3') }}</h2>
     </div>
     <div class="bacground-equi">
-      <img src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
+      <img src="https://statichk.cmermedical.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
     </div>
     <div class="bacground-equi-right pcShow">
-      <img src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
+      <img src="https://statichk.cmermedical.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
     </div>
     <div class="equ_center_box page_container">
       <div class="equ_center" :class="$i18n.locale == 'en' ? 'equ_center_en_mobi' : ''" v-for="(item, index) in equi_con"
@@ -16,11 +16,11 @@
           <img :src="item.href" alt="" class="equi" />
           <span>{{ item.title }}</span>
           <span>{{ item.title2 }}</span>
-          <img src="https://static.cmereye.com/imgs/2022/12/fab80faf49dedcb8.png" alt="" class="arrow"
+          <img src="https://statichk.cmermedical.com/imgs/2022/12/fab80faf49dedcb8.png" alt="" class="arrow"
             @click="showContainer(index)" />
         </div>
         <div class="equip-container">
-          <img src="https://static.cmereye.com/imgs/2022/12/fab80faf49dedcb8.png" alt="" class="arrow-contain"
+          <img src="https://statichk.cmermedical.com/imgs/2022/12/fab80faf49dedcb8.png" alt="" class="arrow-contain"
             @click="showEqui(index)" />
           <div class="equip-text">
             <span>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="bacground-equi-bottom pcShow">
-      <img src="https://static.cmereye.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
+      <img src="https://statichk.cmermedical.com/imgs/2022/12/98586ede06095ed1.png" alt="" />
     </div>
   </div>
 </template>
@@ -45,103 +45,103 @@ export default {
     return {
       equi_con: [
         {
-          href: "https://static.cmereye.com/imgs/2023/05/69f740310b86facd.png",
+          href: "https://statichk.cmermedical.com/imgs/2023/05/69f740310b86facd.png",
           ...this.$t('aboutUs.medicalEquipment.equiCon25')
         },
         {
-          href: "https://static.cmereye.com/imgs/2022/12/c02bca547710c859.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2022/12/c02bca547710c859.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon1')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/04/01124b4e13ce8ac6.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/04/01124b4e13ce8ac6.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon2')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/0ff06c25d8309386.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/0ff06c25d8309386.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon3')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/87835bc58909d528.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/87835bc58909d528.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon4')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/a361b6fabdea5689.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/a361b6fabdea5689.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon5')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/e0615ccf022ff1f3.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/e0615ccf022ff1f3.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon6')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/b969201be328307d.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/b969201be328307d.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon7')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/1ba64301fb4a1155.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/1ba64301fb4a1155.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon8')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/070e93deb1ae5d06.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/070e93deb1ae5d06.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon9')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/1b2ba35f86df518a.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/1b2ba35f86df518a.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon10')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/44c2cd7c92cd4b4e.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/44c2cd7c92cd4b4e.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon11')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/f86ca892a4239338.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/f86ca892a4239338.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon12')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/f81acb4c9ebe64a8.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/f81acb4c9ebe64a8.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon13')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/8b6eaae915fb2fe5.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/8b6eaae915fb2fe5.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon14')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/58770ae1a3317aef.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/58770ae1a3317aef.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon15')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/49693f58f391f52c.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/49693f58f391f52c.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon16')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/7425f0f1856072b2.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/7425f0f1856072b2.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon17')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/cccc9092efe3f003.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/cccc9092efe3f003.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon18')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/b5208571650d6726.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/b5208571650d6726.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon19')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/a77eb4b681c4349f.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/a77eb4b681c4349f.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon20')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/2755bf78d190a39c.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/2755bf78d190a39c.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon21')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/713b286109544952.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/713b286109544952.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon22')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/9c9d256865399386.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/9c9d256865399386.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon23')
         },
         {
-          href: "https://static.cmereye.com/imgs/2023/01/bb4caa732946322f.jpg",
+          href: "https://statichk.cmermedical.com/imgs/2023/01/bb4caa732946322f.jpg",
           ...this.$t('aboutUs.medicalEquipment.equiCon24')
         }
       ]

@@ -27,25 +27,25 @@
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/1998534f1a6df2fb.jpg"
+                src="https://statichk.cmermedical.com/imgs/2024/05/1998534f1a6df2fb.jpg"
                 alt="7天"
               />
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/f86e15dc9f4011c9.jpg"
+                src="https://statichk.cmermedical.com/imgs/2024/05/f86e15dc9f4011c9.jpg"
                 alt="14天"
               />
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/44dcb26c6f9da1ba.jpg"
+                src="https://statichk.cmermedical.com/imgs/2024/05/44dcb26c6f9da1ba.jpg"
                 alt="30天"
               />
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/b82b7186c5fab6aa.jpg"
+                src="https://statichk.cmermedical.com/imgs/2024/05/b82b7186c5fab6aa.jpg"
                 alt="90天"
               />
             </div>
@@ -426,42 +426,42 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/05/dd886a41ef768306.png"
+              src="https://statichk.cmermedical.com/imgs/2024/05/dd886a41ef768306.png"
               alt="Sirius: 角膜結構及瞳孔測量"
             />
             <div>Sirius:<br />角膜結構及瞳孔測量</div>
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/05/fb91934af4b90972.png"
+              src="https://statichk.cmermedical.com/imgs/2024/05/fb91934af4b90972.png"
               alt="Pentacam: 360全面角膜結構測量"
             />
             <div>Pentacam:<br />360全面角膜結構測量</div>
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/05/41b88ee09d951236.png"
+              src="https://statichk.cmermedical.com/imgs/2024/05/41b88ee09d951236.png"
               alt="淚水分泌測試"
             />
             <div>淚水分泌測試</div>
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/05/09037067ac88a035.png"
+              src="https://statichk.cmermedical.com/imgs/2024/05/09037067ac88a035.png"
               alt="OCT: 黃斑及視網膜掃描 (如有需要)"
             />
             <div>OCT:<br />黃斑及視網膜掃描<br />(如有需要)</div>
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/05/674cdd1fb45fcc89.png"
+              src="https://statichk.cmermedical.com/imgs/2024/05/674cdd1fb45fcc89.png"
               alt="SLO: 360全面眼底檢查"
             />
             <div>SLO:<br />360全面眼底檢查</div>
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/05/d633e15ef7351ec1.png"
+              src="https://statichk.cmermedical.com/imgs/2024/05/d633e15ef7351ec1.png"
               alt="醫生會診： 眼睛狀況評估及 矯視方案建議"
             />
             <div>醫生會診：<br />眼睛狀況評估及<br />矯視方案建議</div>
@@ -1839,7 +1839,7 @@ export default {
     margin-bottom: 102px;
   }
   .eye-examination-step {
-    background: url("https://static.cmereye.com/imgs/2024/05/cb8736934f197584.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/cb8736934f197584.png")
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -2181,7 +2181,7 @@ export default {
     }
   }
   .eye-examination-con {
-    background: url("https://static.cmereye.com/imgs/2024/05/59711aaf84df9d34.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/59711aaf84df9d34.png")
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -2291,7 +2291,7 @@ export default {
           }
         }
         & > div:nth-child(1) {
-          background: url("https://static.cmereye.com/imgs/2024/05/1b430ae2357a7d1b.png")
+          background: url("https://statichk.cmermedical.com/imgs/2024/05/1b430ae2357a7d1b.png")
             no-repeat;
           background-size: 100% 100%;
           background-position: center;
@@ -2300,7 +2300,7 @@ export default {
           margin-right: 7.5px;
         }
         & > div:nth-child(2) {
-          background: url("https://static.cmereye.com/imgs/2024/05/739937003478025d.png")
+          background: url("https://statichk.cmermedical.com/imgs/2024/05/739937003478025d.png")
             no-repeat;
           background-size: 100% 100%;
           background-position: center;
@@ -2312,7 +2312,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/4bdcd92ec881cda9.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/4bdcd92ec881cda9.png")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;
@@ -2359,7 +2359,7 @@ export default {
   }
   .eye-examination-step {
     margin-top: 100px;
-    background: url(https://static.cmereye.com/imgs/2024/05/22093c3908028f4b.png)
+    background: url(https://statichk.cmermedical.com/imgs/2024/05/22093c3908028f4b.png)
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -2414,7 +2414,7 @@ export default {
       & > div:nth-child(3) {
         max-width: 340px;
         margin: 0 auto;
-        background: url("https://static.cmereye.com/imgs/2024/05/dd43a1e9c57d5539.png")
+        background: url("https://statichk.cmermedical.com/imgs/2024/05/dd43a1e9c57d5539.png")
           no-repeat;
         background-size: 100% 100%;
         width: 90%;
@@ -2580,7 +2580,7 @@ export default {
     }
   }
   .eye-examination-con {
-    background: url("https://static.cmereye.com/imgs/2024/05/b438584380a5ac27.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/b438584380a5ac27.png")
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -2629,7 +2629,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background: url("https://static.cmereye.com/imgs/2024/05/a037790c713021bf.png")
+        background: url("https://statichk.cmermedical.com/imgs/2024/05/a037790c713021bf.png")
           no-repeat;
         height: 276px;
         background-position: right;
@@ -2713,11 +2713,11 @@ export default {
           }
         }
         & > div:nth-child(1) {
-          background: url("https://static.cmereye.com/imgs/2024/05/976b0a2b55c1182e.png");
+          background: url("https://statichk.cmermedical.com/imgs/2024/05/976b0a2b55c1182e.png");
           background-size: 100% 100%;
         }
         & > div:nth-child(2) {
-          background: url("https://static.cmereye.com/imgs/2024/05/35548009d2321975.png");
+          background: url("https://statichk.cmermedical.com/imgs/2024/05/35548009d2321975.png");
           background-size: 100% 100%;
         }
       }
@@ -2761,7 +2761,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/c0bd08949771a641.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/c0bd08949771a641.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

@@ -45,14 +45,14 @@
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
-              src="https://static.cmereye.com/imgs/2023/01/ed5d72922187f32e.jpg"
+              src="https://statichk.cmermedical.com/imgs/2023/01/ed5d72922187f32e.jpg"
               alt=""
             />
             <span class="mr-10"> 3956 2026 </span>
 
             <img
               style="width: 17px; height: 17px"
-              src="https://static.cmereye.com/imgs/2023/01/e18c1e32dde853ea.png"
+              src="https://statichk.cmermedical.com/imgs/2023/01/e18c1e32dde853ea.png"
               alt=""
             />
             <span> 9345 1508 </span>
@@ -63,14 +63,14 @@
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
-              src="https://static.cmereye.com/imgs/2023/01/ed5d72922187f32e.jpg"
+              src="https://statichk.cmermedical.com/imgs/2023/01/ed5d72922187f32e.jpg"
               alt=""
             />
             <span class="mr-10"> 3892 5099 </span>
 
             <img
               style="width: 17px; height: 17px"
-              src="https://static.cmereye.com/imgs/2023/01/e18c1e32dde853ea.png"
+              src="https://statichk.cmermedical.com/imgs/2023/01/e18c1e32dde853ea.png"
               alt=""
             />
             <span> 9796 2992 </span>
@@ -81,14 +81,14 @@
           <div class="flex justify-center phone-box items-center">
             <img
               style="width: 13px; height: 15px"
-              src="https://static.cmereye.com/imgs/2023/01/ed5d72922187f32e.jpg"
+              src="https://statichk.cmermedical.com/imgs/2023/01/ed5d72922187f32e.jpg"
               alt=""
             />
             <span class="mr-10"> 3892 5089</span>
 
             <img
               style="width: 17px; height: 17px"
-              src="https://static.cmereye.com/imgs/2023/01/e18c1e32dde853ea.png"
+              src="https://statichk.cmermedical.com/imgs/2023/01/e18c1e32dde853ea.png"
               alt=""
             />
             <span> 6918 0511 </span>

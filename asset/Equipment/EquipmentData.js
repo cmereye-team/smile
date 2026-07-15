@@ -1,7 +1,7 @@
 // export default  [
 //   {
 //     id: 1,
-//     img: "https://static.cmereye.com/imgs/2024/05/590ceebe95a7c289.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/590ceebe95a7c289.png",
 //     name: [
 //       "ZEISS VISUMAX 800",
 //       "SMILE®pro"
@@ -11,7 +11,7 @@
 //   },
 //   {
 //     id: 2,
-//     img: "https://static.cmereye.com/imgs/2024/05/f434fa3c9560d7c6.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/f434fa3c9560d7c6.png",
 //     name: [
 //       "Carl Zeiss Visumax",
 //       "全飛秒激光3.0系統"
@@ -21,7 +21,7 @@
 //   },
 //   {
 //     id: 3,
-//     img: "https://static.cmereye.com/imgs/2024/05/4e22294924611584.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/4e22294924611584.png",
 //     name: [
 //       "德國蔡司掃頻OCT生物測量儀",
 //       "（IOL Master 700）"
@@ -31,7 +31,7 @@
 //   },
 //   {
 //     id: 4,
-//     img: "https://static.cmereye.com/imgs/2024/05/d9a4ebd0979eb0ad.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/d9a4ebd0979eb0ad.png",
 //     name: [
 //       "Icare回彈式眼壓計",
 //     ],
@@ -40,7 +40,7 @@
 //   },
 //   {
 //     id: 5,
-//     img: "https://static.cmereye.com/imgs/2024/05/17d09f2b2552fb10.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/17d09f2b2552fb10.png",
 //     name: [
 //       "日本尼德克",
 //       "綜合電腦驗光儀"
@@ -50,7 +50,7 @@
 //   },
 //   {
 //     id: 6,
-//     img: "https://static.cmereye.com/imgs/2024/05/91cae30bfe64c887.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/91cae30bfe64c887.png",
 //     name: [
 //       "日本尼德克",
 //       "手持綜合電腦驗光儀"
@@ -60,7 +60,7 @@
 //   },
 //   {
 //     id: 7,
-//     img: "https://static.cmereye.com/imgs/2024/05/e09ae8645106fe23.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/e09ae8645106fe23.png",
 //     name: [
 //       "天狼星三維角膜地形圖",
 //       "及眼前節分析系統"
@@ -70,7 +70,7 @@
 //   },
 //   {
 //     id: 8,
-//     img: "https://static.cmereye.com/imgs/2024/05/a61d712eb35ef590.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/a61d712eb35ef590.png",
 //     name: [
 //       "Pentacam® ",
 //       "三維眼前節分析診斷系統"
@@ -80,7 +80,7 @@
 //   },
 //   {
 //     id: 9,
-//     img: "https://static.cmereye.com/imgs/2024/05/1bb210c58784b1c0.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/1bb210c58784b1c0.png",
 //     name: [
 //       "德國蔡司眼前節",
 //       "OCT分析系統"
@@ -90,7 +90,7 @@
 //   },
 //   {
 //     id: 10,
-//     img: "https://static.cmereye.com/imgs/2024/05/2c4cff31c0a31522.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/2c4cff31c0a31522.png",
 //     name: [
 //       "德國蔡司角膜地形圖系統 ",
 //       "(ATLAS 9000)"
@@ -100,7 +100,7 @@
 //   },
 //   {
 //     id: 11,
-//     img: "https://static.cmereye.com/imgs/2024/05/bf7b6a0bef660626.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/bf7b6a0bef660626.png",
 //     name: [
 //       "德國蔡司光學相干斷層掃描儀 ",
 //       "(CIRRUS HD-OCT5000)"
@@ -110,7 +110,7 @@
 //   },
 //   {
 //     id: 12,
-//     img: "https://static.cmereye.com/imgs/2024/05/8d48fd9571a47602.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/8d48fd9571a47602.png",
 //     name: [
 //       "德國蔡司免散瞳彩色",
 //       "眼底照相機(VISUCAM500)"
@@ -120,7 +120,7 @@
 //   },
 //   {
 //     id: 13,
-//     img: "https://static.cmereye.com/imgs/2024/05/9215afd7f26f11e5.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/9215afd7f26f11e5.png",
 //     name: [
 //       "A型及B型超聲波掃描儀",
 //       "（Quantel Compact Touch）"
@@ -130,7 +130,7 @@
 //   },
 //   {
 //     id: 14,
-//     img: "https://static.cmereye.com/imgs/2024/05/5aacde002af24ada.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/5aacde002af24ada.png",
 //     name: [
 //       "全視網膜掃描相機",
 //       "（Optos Daytona）"
@@ -140,7 +140,7 @@
 //   },
 //   {
 //     id: 15,
-//     img: "https://static.cmereye.com/imgs/2024/05/4b8f230a2d7a956d.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/4b8f230a2d7a956d.png",
 //     name: [
 //       "角膜內皮層細胞分析儀",
 //       "(KONAN NSP-9900)"
@@ -150,7 +150,7 @@
 //   },
 //   {
 //     id: 16,
-//     img: "https://static.cmereye.com/imgs/2024/05/a01cb16a551eb1ce.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/a01cb16a551eb1ce.png",
 //     name: [
 //       "德國蔡司視野分析儀",
 //       " (Humphrey HFA3)"
@@ -160,7 +160,7 @@
 //   },
 //   {
 //     id: 17,
-//     img: "https://static.cmereye.com/imgs/2024/05/c7a828125d9153ac.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/c7a828125d9153ac.png",
 //     name: [
 //       "FORUM – 眼科專業化",
 //       " 數據管理平臺"
@@ -170,7 +170,7 @@
 //   },
 //   {
 //     id: 18,
-//     img: "https://static.cmereye.com/imgs/2024/05/993e14dfac448fa5.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/993e14dfac448fa5.png",
 //     name: [
 //       "Haag-Streit BQ900裂隙燈",
 //       " &IM900裂隙燈照相系統"
@@ -180,7 +180,7 @@
 //   },
 //   {
 //     id: 19,
-//     img: "https://static.cmereye.com/imgs/2024/05/2a24a1b68dc187d6.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/2a24a1b68dc187d6.png",
 //     name: [
 //       "ELLEX Integre pro scan",
 //       "眼底鐳射治療儀"
@@ -190,7 +190,7 @@
 //   },
 //   {
 //     id: 20,
-//     img: "https://static.cmereye.com/imgs/2024/05/9561a582b715533f.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/9561a582b715533f.png",
 //     name: [
 //       "PESCHKE Trade PXL",
 //       "Platinum 330"
@@ -200,7 +200,7 @@
 //   },
 //   {
 //     id: 21,
-//     img: "https://static.cmereye.com/imgs/2024/05/4bb384e3fe377bb6.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/4bb384e3fe377bb6.png",
 //     name: [
 //       "Ellex Tango Reflex",
 //       "激光治療儀"
@@ -210,7 +210,7 @@
 //   },
 //   {
 //     id: 22,
-//     img: "https://static.cmereye.com/imgs/2024/05/d11dd8d263f2f6a0.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/d11dd8d263f2f6a0.png",
 //     name: [
 //       "飛秒激光白內障矯視儀",
 //     ],
@@ -219,7 +219,7 @@
 //   },
 //   {
 //     id: 23,
-//     img: "https://static.cmereye.com/imgs/2024/05/a50ca0c214529046.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/a50ca0c214529046.png",
 //     name: [
 //       "徠卡Proveo8融合光學",
 //       "眼科手術顯微鏡"
@@ -229,7 +229,7 @@
 //   },
 //   {
 //     id: 24,
-//     img: "https://static.cmereye.com/imgs/2024/05/bb7c87b456ee6118.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/bb7c87b456ee6118.png",
 //     name: [
 //       "白內障超聲乳化儀（Alcon",
 //       "Centurion® vision system）"
@@ -239,7 +239,7 @@
 //   },
 //   {
 //     id: 25,
-//     img: "https://static.cmereye.com/imgs/2024/05/ed06ff1c76aaed7d.png",
+//     img: "https://statichk.cmermedical.com/imgs/2024/05/ed06ff1c76aaed7d.png",
 //     name: [
 //       "高速率玻切超聲乳化一體機",
 //       "（Alcon Constellation®",
@@ -269,7 +269,7 @@
 // },
 // {
 //   id: 2,
-//   img: "https://static.cmereye.com/imgs/2024/05/f434fa3c9560d7c6.png",
+//   img: "https://statichk.cmermedical.com/imgs/2024/05/f434fa3c9560d7c6.png",
 //   name: [
 //     "Carl Zeiss Visumax",
 //     this.$t('medical_equipment.content2.name')
@@ -283,7 +283,7 @@
 // },
 // {
 //   id: 3,
-//   img: "https://static.cmereye.com/imgs/2024/05/4e22294924611584.png",
+//   img: "https://statichk.cmermedical.com/imgs/2024/05/4e22294924611584.png",
 //   name: [
 //     this.$t('medical_equipment.content3.name')`<br class="mbShow" />`+this.$t('medical_equipment.content3.name2'),
 //     "（IOL Master 700）"
@@ -318,7 +318,7 @@ export default
   },
   {
     id: 2,
-    img: "https://static.cmereye.com/imgs/2024/05/f434fa3c9560d7c6.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/f434fa3c9560d7c6.png",
     name: [
       "Carl Zeiss Visumax",
       "全飛秒激光3.0系統"
@@ -329,7 +329,7 @@ export default
   },
   {
     id: 3,
-    img: "https://static.cmereye.com/imgs/2024/05/4e22294924611584.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/4e22294924611584.png",
     name: [
       `德國蔡司掃頻<br class="mbShow" />OCT生物測量儀`,
       "（IOL Master 700）"
@@ -340,7 +340,7 @@ export default
   },
   {
     id: 4,
-    img: "https://static.cmereye.com/imgs/2024/05/d9a4ebd0979eb0ad.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/d9a4ebd0979eb0ad.png",
     name: [
       "Icare回彈式眼壓計"
     ],
@@ -350,7 +350,7 @@ export default
   },
   {
     id: 5,
-    img: "https://static.cmereye.com/imgs/2024/05/17d09f2b2552fb10.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/17d09f2b2552fb10.png",
     name: [
       "日本尼德克",
       "綜合電腦驗光儀"
@@ -361,7 +361,7 @@ export default
   },
   {
     id: 6,
-    img: "https://static.cmereye.com/imgs/2024/05/91cae30bfe64c887.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/91cae30bfe64c887.png",
     name: [
       "日本尼德克",
       "手持綜合電腦驗光儀"
@@ -372,7 +372,7 @@ export default
   },
   {
     id: 7,
-    img: "https://static.cmereye.com/imgs/2024/05/e09ae8645106fe23.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/e09ae8645106fe23.png",
     name: [
       "天狼星三維角膜地形圖",
       "及眼前節分析系統"
@@ -383,7 +383,7 @@ export default
   },
   {
     id: 8,
-    img: "https://static.cmereye.com/imgs/2024/05/a61d712eb35ef590.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/a61d712eb35ef590.png",
     name: [
       "Pentacam® ",
       "三維眼前節分析診斷系統"
@@ -394,7 +394,7 @@ export default
   },
   {
     id: 9,
-    img: "https://static.cmereye.com/imgs/2024/05/1bb210c58784b1c0.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/1bb210c58784b1c0.png",
     name: [
       "德國蔡司眼前節",
       "OCT分析系統"
@@ -405,7 +405,7 @@ export default
   },
   {
     id: 10,
-    img: "https://static.cmereye.com/imgs/2024/05/2c4cff31c0a31522.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/2c4cff31c0a31522.png",
     name: [
       "德國蔡司角膜地形圖系統 ",
       "(ATLAS 9000)"
@@ -416,7 +416,7 @@ export default
   },
   {
     id: 11,
-    img: "https://static.cmereye.com/imgs/2024/05/bf7b6a0bef660626.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/bf7b6a0bef660626.png",
     name: [
       `德國蔡司光學<br class="mbShow" />相干斷層掃描儀`,
       "(CIRRUS HD-OCT5000)"
@@ -427,7 +427,7 @@ export default
   },
   {
     id: 12,
-    img: "https://static.cmereye.com/imgs/2024/05/9215afd7f26f11e5.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/9215afd7f26f11e5.png",
     name: [
       "德國蔡司免散瞳彩色",
       "眼底照相機(VISUCAM500)"
@@ -460,7 +460,7 @@ export default
   },
   {
     id: 15,
-    img: "https://static.cmereye.com/imgs/2024/05/4b8f230a2d7a956d.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/4b8f230a2d7a956d.png",
     name: [
       "角膜內皮層細胞分析儀",
       "(KONAN NSP-9900)"
@@ -471,7 +471,7 @@ export default
   },
   {
     id: 16,
-    img: "https://static.cmereye.com/imgs/2024/05/a01cb16a551eb1ce.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/a01cb16a551eb1ce.png",
     name: [
       "德國蔡司視野分析儀",
       " (Humphrey HFA3)"
@@ -482,7 +482,7 @@ export default
   },
   {
     id: 17,
-    img: "https://static.cmereye.com/imgs/2024/05/c7a828125d9153ac.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/c7a828125d9153ac.png",
     name: [
       "FORUM – 眼科專業化",
       " 數據管理平臺"
@@ -493,7 +493,7 @@ export default
   },
   {
     id: 18,
-    img: "https://static.cmereye.com/imgs/2024/05/993e14dfac448fa5.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/993e14dfac448fa5.png",
     name: [
       `Haag-Streit BQ900<br class="mbShow" />裂隙燈`,
       " &IM900裂隙燈照相系統"
@@ -515,7 +515,7 @@ export default
   },
   {
     id: 20,
-    img: "https://static.cmereye.com/imgs/2024/05/9561a582b715533f.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/9561a582b715533f.png",
     name: [
       "PESCHKE Trade PXL",
       "Platinum 330"
@@ -526,7 +526,7 @@ export default
   },
   {
     id: 21,
-    img: "https://static.cmereye.com/imgs/2024/05/4bb384e3fe377bb6.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/4bb384e3fe377bb6.png",
     name: [
       "Ellex Tango Reflex",
       "激光治療儀"
@@ -537,7 +537,7 @@ export default
   },
   {
     id: 22,
-    img: "https://static.cmereye.com/imgs/2024/05/d11dd8d263f2f6a0.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/d11dd8d263f2f6a0.png",
     name: [
       "飛秒激光白內障矯視儀"
     ],
@@ -558,7 +558,7 @@ export default
   },
   {
     id: 24,
-    img: "https://static.cmereye.com/imgs/2024/05/bb7c87b456ee6118.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/bb7c87b456ee6118.png",
     name: [
       "白內障超聲乳化儀（Alcon",
       "Centurion® vision system）"
@@ -569,7 +569,7 @@ export default
   },
   {
     id: 25,
-    img: "https://static.cmereye.com/imgs/2024/05/ed06ff1c76aaed7d.png",
+    img: "https://statichk.cmermedical.com/imgs/2024/05/ed06ff1c76aaed7d.png",
     name: [
       "高速率玻切超聲乳化一體機",
       "（Alcon Constellation®",

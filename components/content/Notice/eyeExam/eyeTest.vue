@@ -10,25 +10,25 @@
       <div class="flex my-10 eyeTestBox justify-center">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2022/12/34fec583fc749905.jpg"
+            src="https://statichk.cmermedical.com/imgs/2022/12/34fec583fc749905.jpg"
             alt=""
           />
         </div>
         <div class="flex flex-col">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/664f1cecb550a7b0.jpg"
+            src="https://statichk.cmermedical.com/imgs/2022/12/664f1cecb550a7b0.jpg"
             alt=""
           />
         </div>
         <div class="flex items-end">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/7d0dc137be11ec54.jpg"
+            src="https://statichk.cmermedical.com/imgs/2022/12/7d0dc137be11ec54.jpg"
             alt=""
           />
         </div>
         <div class="flex flex-col">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/3b603c93806e85cf.jpg"
+            src="https://statichk.cmermedical.com/imgs/2022/12/3b603c93806e85cf.jpg"
             alt=""
           />
         </div>

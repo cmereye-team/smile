@@ -21,8 +21,8 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 768px) {
   .banner {
-    // background: url("https://static.cmereye.com/imgs/2023/04/550ed5acd6097671.jpg") no-repeat;
-    background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_pc.avif") no-repeat;
+    // background: url("https://statichk.cmermedical.com/imgs/2023/04/550ed5acd6097671.jpg") no-repeat;
+    background: url("https://statichk.cmermedical.com/static/lkximg/smile_image/ContactUsBanner_pc.avif") no-repeat;
   }
 }
 @media (max-width: 768px) {
@@ -35,7 +35,7 @@ export default {
     font-size: 20px;
   }
   .banner {
-    background: url("https://static.cmereye.com/static/lkximg/smile_image/ContactUsBanner_mb.avif") no-repeat;
+    background: url("https://statichk.cmermedical.com/static/lkximg/smile_image/ContactUsBanner_mb.avif") no-repeat;
     margin-top: 24vw;
   }
 }

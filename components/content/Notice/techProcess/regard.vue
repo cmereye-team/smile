@@ -9,7 +9,7 @@
         <div class="md:flex">
           <div class="regard" :class="[$i18n.locale == 'en' ? 'regard regardEng':'regard']">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/5281757b67f8c8b9.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/5281757b67f8c8b9.png"
               alt=""
               class="mb-5 ml-3"
             />
@@ -17,7 +17,7 @@
           </div>
           <div class="regard">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/be6d0ef7eff09012.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/be6d0ef7eff09012.png"
               alt=""
               class="mb-5"
             />
@@ -30,7 +30,7 @@
         <div class="md:flex">
           <div class="regard">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/57500ed5756e8c2b.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/57500ed5756e8c2b.png"
               alt=""
               class="mb-5"
             />
@@ -38,7 +38,7 @@
           </div>
           <div class="regard">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/5b456df938a879c8.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/5b456df938a879c8.png"
               alt=""
               class="mb-5"
             />
@@ -52,7 +52,7 @@
         <span class="title" :class="[$i18n.locale == 'en' ? 'title titleEng':'title']">{{$t('notice.techProcess.regard.title2')}}</span>
         <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/0db6827e5b69e9fb.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/0db6827e5b69e9fb.png"
             alt=""
             class="mb-5 ml-3"
           />
@@ -60,7 +60,7 @@
         </div>
         <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/8ef325fa917c3496.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/8ef325fa917c3496.png"
             alt=""
             class="mb-5"
           />
@@ -68,7 +68,7 @@
         </div>
         <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/368b6b768066c0eb.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/368b6b768066c0eb.png"
             alt=""
             class="mb-5"
           />
@@ -76,7 +76,7 @@
         </div>
         <div class="regard" :class="[$i18n.locale == 'en' ? 'boxRegardEng regard':'regard']">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/eb4f9240aa44c41f.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/eb4f9240aa44c41f.png"
             alt=""
             class="mb-5"
           />
@@ -90,7 +90,7 @@
         <button>
           <div class="flex btn-yuyue">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
               alt=""
               style="width: 12vw"
             />

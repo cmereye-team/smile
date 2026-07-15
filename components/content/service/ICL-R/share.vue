@@ -4,7 +4,7 @@
     <div class="discounts-content">
       <div>
         <img
-          src="https://static.cmereye.com/imgs/2023/10/1d061d968efce696.png"
+          src="https://statichk.cmermedical.com/imgs/2023/10/1d061d968efce696.png"
           alt=""
         />
       </div>
@@ -82,7 +82,7 @@ export default {
     }
     .discounts-title::before {
       content: "";
-      background: url("https://static.cmereye.com/imgs/2023/10/1c2a6b0b7fa551ec.png");
+      background: url("https://statichk.cmermedical.com/imgs/2023/10/1c2a6b0b7fa551ec.png");
       position: absolute;
       top: -130%;
       z-index: 5;
@@ -254,7 +254,7 @@ export default {
     }
     .discounts-title::before {
       content: "";
-      background: url("https://static.cmereye.com/imgs/2023/10/d44e053d9499c9de.png");
+      background: url("https://statichk.cmermedical.com/imgs/2023/10/d44e053d9499c9de.png");
       position: absolute;
       top: -70%;
       z-index: 5;

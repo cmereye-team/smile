@@ -25,15 +25,15 @@ export default {
     return {
       stepList: [
         {
-          src: "https://static.cmereye.com/imgs/2023/08/875bbbb3865fed2d.jpg",
+          src: "https://statichk.cmermedical.com/imgs/2023/08/875bbbb3865fed2d.jpg",
           des: this.$t("service.relexSmile.step.des1"),
         },
         {
-          src: "https://static.cmereye.com/imgs/2023/08/4bab72cb6026531d.jpg",
+          src: "https://statichk.cmermedical.com/imgs/2023/08/4bab72cb6026531d.jpg",
           des: this.$t("service.relexSmile.step.des2"),
         },
         {
-          src: "https://static.cmereye.com/imgs/2023/08/acb095ed28677439.jpg",
+          src: "https://statichk.cmermedical.com/imgs/2023/08/acb095ed28677439.jpg",
           des: this.$t("service.relexSmile.step.des3"),
         },
       ],

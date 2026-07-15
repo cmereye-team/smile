@@ -1356,7 +1356,7 @@ export default {
   }
 
   .lecture-title {
-    // background: url("https://static.cmereye.com/imgs/2024/04/03634579600959fb.png") no-repeat;
+    // background: url("https://statichk.cmermedical.com/imgs/2024/04/03634579600959fb.png") no-repeat;
     background: #f6fafd;
     background-size: 100% 100%;
     width: 100vw;
@@ -1743,7 +1743,7 @@ export default {
   }
 
   .lecture-title {
-    // background: url(https://static.cmereye.com/imgs/2024/04/d7625f69f04ff1b8.png) no-repeat;
+    // background: url(https://statichk.cmermedical.com/imgs/2024/04/d7625f69f04ff1b8.png) no-repeat;
     background: #f6fafd;
     background-size: 100% 100%;
     width: 100%;

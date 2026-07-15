@@ -5,7 +5,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/03/f220d5d1f1eae0cf.png"
+              src="https://statichk.cmermedical.com/imgs/2024/03/f220d5d1f1eae0cf.png"
               alt="優點"
             />
           </div>
@@ -31,22 +31,22 @@ export default {
       meritList: [
         {
           id: 1,
-          img: "https://static.cmereye.com/imgs/2024/03/b7e88811cfd7cf78.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/b7e88811cfd7cf78.png",
           text: `微創`,
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/03/4f236c579e6e264c.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/4f236c579e6e264c.png",
           text: `矯視過程<br />體驗感佳`,
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/03/7bd154bd99e87705.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/7bd154bd99e87705.png",
           text: `準確度高`,
         },
         {
           id: 4,
-          img: "https://static.cmereye.com/imgs/2024/03/1f51e3e9c613d99c.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/1f51e3e9c613d99c.png",
           text: `效果穩定`,
         },
       ],

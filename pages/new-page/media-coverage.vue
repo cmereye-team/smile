@@ -38,21 +38,21 @@ export default {
       mediaList: [
         {
           id: 1,
-          img: "https://static.cmereye.com/imgs/2024/05/614e584f4a72ba85.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/614e584f4a72ba85.png",
           title: "矯視",
           dateNow: "02.02.2019",
           text: "任何人都適合矯視？手術有風險嗎？一文了解SMILE微笑激光矯視手術過程、風險",
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/05/0b07c830ae3158da.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/0b07c830ae3158da.png",
           title: "白內障",
           dateNow: "07.01.2020",
           text: "50歲以上？視力模糊、有重影？一文了解白內障4大成因、徵狀和手術過程",
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/05/dc15efc17f513ba9.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/dc15efc17f513ba9.png",
           title: "醫家話你知",
           dateNow: "02.02.2019",
           text: "香港人易啲深近視？做完激光矯視都可能有 嚴重眼疾",
@@ -202,7 +202,7 @@ export default {
     box-shadow: 0 0 5px 1px rgba($color: #000000, $alpha: 0.5);
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/a9a70b055b306234.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/a9a70b055b306234.png")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;
@@ -320,7 +320,7 @@ export default {
     letter-spacing: 1px;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/cb0a8543994b55b1.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/cb0a8543994b55b1.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

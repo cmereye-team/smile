@@ -20,7 +20,7 @@
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/04/4138398a7115fc41.png"
+            src="https://statichk.cmermedical.com/imgs/2024/04/4138398a7115fc41.png"
             alt="人工晶體"
           />
         </div>
@@ -618,7 +618,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/04/c073e24dea3c0d97.png"
+              src="https://statichk.cmermedical.com/imgs/2024/04/c073e24dea3c0d97.png"
               alt=""
             />
           </div>

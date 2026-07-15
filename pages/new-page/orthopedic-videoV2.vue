@@ -1577,7 +1577,7 @@ export default {
     justify-content: center;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/d17daac53c331624.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/d17daac53c331624.png")
       no-repeat;
     background-size: cover;
     height: 32.08vw;
@@ -1836,7 +1836,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/2fa887bd2cfd7350.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/2fa887bd2cfd7350.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

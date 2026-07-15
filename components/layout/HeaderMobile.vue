@@ -540,7 +540,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: url("https://static.cmereye.com/imgs/2023/08/d6f27536cde86418.png");
+      background: url("https://statichk.cmermedical.com/imgs/2023/08/d6f27536cde86418.png");
       background-size: 100%, 100%;
       background-repeat: no-repeat;
       & > div:nth-child(2) {

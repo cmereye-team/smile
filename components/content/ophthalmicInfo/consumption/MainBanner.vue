@@ -35,7 +35,7 @@ export default {
   }
 }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2024/04/819f03987bcb2783.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2024/04/819f03987bcb2783.png");
     background-position: top;
     background-size: 100%;
     width: 100vw;

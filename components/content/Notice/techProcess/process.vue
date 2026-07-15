@@ -30,19 +30,19 @@ export default {
     return {
       stepLists: [
         {
-          img: 'https://static.cmereye.com/imgs/2022/12/06d8dc6309843ceb.png',
+          img: 'https://statichk.cmermedical.com/imgs/2022/12/06d8dc6309843ceb.png',
           text: this.$t('notice.techProcess.process.span2')
         },
         {
-          img: 'https://static.cmereye.com/imgs/2022/12/720c63a2c77fa1fd.png',
+          img: 'https://statichk.cmermedical.com/imgs/2022/12/720c63a2c77fa1fd.png',
           text: this.$t('notice.techProcess.process.span3')
         },
         {
-          img: 'https://static.cmereye.com/imgs/2022/12/8783c894fe4331d9.png',
+          img: 'https://statichk.cmermedical.com/imgs/2022/12/8783c894fe4331d9.png',
           text: this.$t('notice.techProcess.process.span4')
         },
         {
-          img: 'https://static.cmereye.com/imgs/2022/12/02280dc75fddbd20.png',
+          img: 'https://statichk.cmermedical.com/imgs/2022/12/02280dc75fddbd20.png',
           text: this.$t('notice.techProcess.process.span5')
         }
       ]

@@ -17,7 +17,7 @@
               </div>
               <span v-if="group.child_list && group.child_list.length > 0"
                 ><img
-                  src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/08/5cb3a72ab6bad56d.png"
                   alt=""
               /></span>
             </div>
@@ -54,7 +54,7 @@
               </div>
               <div v-if="group.child_list && group.child_list.length > 0">
                 <img
-                  src="https://static.cmereye.com/imgs/2023/08/5cb3a72ab6bad56d.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/08/5cb3a72ab6bad56d.png"
                   alt=""
                 />
               </div>

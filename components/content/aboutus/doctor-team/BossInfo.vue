@@ -5,7 +5,7 @@
         <div class="img_box">
           <div class="flex justify-center">
             <div class="img_box_in">
-              <img class="boss_img" src="https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/boss.jpg"
+              <img class="boss_img" src="https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/boss.jpg"
                 alt />
               <div class="my-3 mbShow"
                 :class="$i18n.locale == 'en' ? 'boss_text_name boss_text_name_en' : 'boss_text_name'">

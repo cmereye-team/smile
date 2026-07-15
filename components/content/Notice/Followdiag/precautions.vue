@@ -36,7 +36,7 @@
         <button>
           <div class="flex btn-yuyue">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
               alt=""
               style="width: 12vw"
             />

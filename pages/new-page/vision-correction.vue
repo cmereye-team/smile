@@ -96,7 +96,7 @@
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/cb5f9490e449604a.png"
+                src="https://statichk.cmermedical.com/imgs/2024/05/cb5f9490e449604a.png"
                 alt="術前準備"
               />
             </div>
@@ -1157,7 +1157,7 @@ export default {
     letter-spacing: 10.5px;
   }
   .vision-correction-warn {
-    background: url("https://static.cmereye.com/imgs/2024/05/a62b21f73f2c4c84.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/a62b21f73f2c4c84.png")
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -1322,7 +1322,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/f3bce0afd8e4f001.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/f3bce0afd8e4f001.png")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;
@@ -1371,7 +1371,7 @@ export default {
   }
   .vision-correction-warn {
     margin-top: 150px;
-    background: url("https://static.cmereye.com/imgs/2024/05/c7e836b85a1b73b2.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/c7e836b85a1b73b2.png")
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -1513,7 +1513,7 @@ export default {
       display: grid;
       grid-template-rows: auto auto;
       grid-template-columns: auto auto;
-      background: url("https://static.cmereye.com/imgs/2024/05/61742a5580b893b3.png")
+      background: url("https://statichk.cmermedical.com/imgs/2024/05/61742a5580b893b3.png")
         no-repeat;
       background-size: 253px 238px;
       width: 100%;
@@ -1602,7 +1602,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/f23d2e11504458c9.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/f23d2e11504458c9.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

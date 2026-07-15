@@ -20,22 +20,22 @@
     </div>
     <div class="activity-banner">
       <img
-        data-src="https://static.cmereye.com/imgs/2024/03/adbe3a875c41bae3.png"
+        data-src="https://statichk.cmermedical.com/imgs/2024/03/adbe3a875c41bae3.png"
         srcset="
-          https://static.cmereye.com/imgs/2024/03/b4a9654490716e79.png 768w,
-          https://static.cmereye.com/imgs/2024/03/adbe3a875c41bae3.png
+          https://statichk.cmermedical.com/imgs/2024/03/b4a9654490716e79.png 768w,
+          https://statichk.cmermedical.com/imgs/2024/03/adbe3a875c41bae3.png
         "
-        src="https://static.cmereye.com/imgs/2024/03/adbe3a875c41bae3.png"
+        src="https://statichk.cmermedical.com/imgs/2024/03/adbe3a875c41bae3.png"
         alt="会场"
       />
 
       <img
-        data-src="https://static.cmereye.com/imgs/2024/03/eaa4de61dded7e60.png"
+        data-src="https://statichk.cmermedical.com/imgs/2024/03/eaa4de61dded7e60.png"
         srcset="
-          https://static.cmereye.com/imgs/2024/03/2b199668236b10b3.png 768w,
-          https://static.cmereye.com/imgs/2024/03/eaa4de61dded7e60.png
+          https://statichk.cmermedical.com/imgs/2024/03/2b199668236b10b3.png 768w,
+          https://statichk.cmermedical.com/imgs/2024/03/eaa4de61dded7e60.png
         "
-        src="https://static.cmereye.com/imgs/2024/03/eaa4de61dded7e60.png"
+        src="https://statichk.cmermedical.com/imgs/2024/03/eaa4de61dded7e60.png"
         alt="星級家用"
       />
     </div>
@@ -48,19 +48,19 @@ export default {
       activityList: [
         {
           id: 1,
-          img: "https://static.cmereye.com/imgs/2024/03/b640157842f37702.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/b640157842f37702.png",
           title: "日期",
           text: `2024年4月21日`,
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/03/8c1a146f32018a2e.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/8c1a146f32018a2e.png",
           title: "時間",
           text: `2:30PM`,
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/03/4e6ddf0a49ba55b4.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/4e6ddf0a49ba55b4.png",
           title: "地點",
           text: `香港康得思酒店<br />(朗豪坊)`,
         },

@@ -25,7 +25,7 @@
       <button>
         <div class="flex btn-yuyue">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
             alt=""
             style="width: 12vw"
           />
@@ -52,7 +52,7 @@ export default {
   .xtra {
     max-width: 1280px;
     text-align: center;
-    background: url(("https://static.cmereye.com/imgs/smile/images/service/relex_smile/xtra_bg.jpg"));
+    background: url(("https://statichk.cmermedical.com/imgs/smile/images/service/relex_smile/xtra_bg.jpg"));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -146,7 +146,7 @@ export default {
   }
   .xtra {
     text-align: center;
-    background: url(("https://static.cmereye.com/imgs/smile/images/service/relex_smile/xtra_bg.jpg"));
+    background: url(("https://statichk.cmermedical.com/imgs/smile/images/service/relex_smile/xtra_bg.jpg"));
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 14vw;

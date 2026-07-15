@@ -82,7 +82,7 @@ export default {
     }
   }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/03/7ce7d7576dfc10e2.jpg");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/03/7ce7d7576dfc10e2.jpg");
     background-position: top;
     background-size: 100%;
     width: 100vw;
@@ -97,7 +97,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/03/98166c99909ffcca.jpg");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/03/98166c99909ffcca.jpg");
   }
   p {
     font-size: 28px !important;

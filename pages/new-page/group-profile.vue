@@ -102,7 +102,7 @@
           <div class="explain-img-list">
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/a62af78191160bc4.png"
+                src="https://statichk.cmermedical.com/imgs/2024/05/a62af78191160bc4.png"
               />
             </div>
             <div>
@@ -112,7 +112,7 @@
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/05/f7473e33c97b076f.png"
+                src="https://statichk.cmermedical.com/imgs/2024/05/f7473e33c97b076f.png"
               />
             </div>
           </div>
@@ -353,16 +353,16 @@ export default {
     return {
       isMobile: false,
       imgList: [
-        "https://static.cmereye.com/imgs/2024/08/2dc8e2cd2f95150f.png",
-        "https://static.cmereye.com/imgs/2024/05/9fb7b59c6d134014.png",
-        "https://static.cmereye.com/imgs/2024/05/86e300274d8bc4ef.png",
-        "https://static.cmereye.com/imgs/2024/05/788333406bba2c0f.png",
-        "https://static.cmereye.com/imgs/2024/05/29433265c4f65fdf.png",
-        "https://static.cmereye.com/imgs/2024/05/402f4a682ca2394a.png",
-        "https://static.cmereye.com/imgs/2024/05/16b586d7718ac0a6.png",
-        "https://static.cmereye.com/imgs/2024/07/8fab0d4a7e7ef4ac.png",
-        "https://static.cmereye.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
-        "https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png",
+        "https://statichk.cmermedical.com/imgs/2024/08/2dc8e2cd2f95150f.png",
+        "https://statichk.cmermedical.com/imgs/2024/05/9fb7b59c6d134014.png",
+        "https://statichk.cmermedical.com/imgs/2024/05/86e300274d8bc4ef.png",
+        "https://statichk.cmermedical.com/imgs/2024/05/788333406bba2c0f.png",
+        "https://statichk.cmermedical.com/imgs/2024/05/29433265c4f65fdf.png",
+        "https://statichk.cmermedical.com/imgs/2024/05/402f4a682ca2394a.png",
+        "https://statichk.cmermedical.com/imgs/2024/05/16b586d7718ac0a6.png",
+        "https://statichk.cmermedical.com/imgs/2024/07/8fab0d4a7e7ef4ac.png",
+        "https://statichk.cmermedical.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
+        "https://statichk.cmermedical.com/imgs/2024/08/64ae764b38e2a2a7.png",
       ],
       canonicalHref: "https://smile.hkcmereye.com/group-profile/",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/group-profile/",
@@ -473,7 +473,7 @@ export default {
   }
 
   .group-profile-award {
-    background: url("https://static.cmereye.com/imgs/2024/05/93c994737098887c.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/93c994737098887c.png")
       no-repeat;
     background-size: 100% 100%;
     padding: 230px 0 100px;
@@ -599,7 +599,7 @@ export default {
   }
 
   .group-profile-center {
-    background: url("https://static.cmereye.com/imgs/2024/05/e804c18e78e3c9c8.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/e804c18e78e3c9c8.png")
       no-repeat;
     background-size: 100% 100%;
     padding: 210px 0 95px;
@@ -817,7 +817,7 @@ export default {
   }
 
   .group-profile-explain {
-    background: url("https://static.cmereye.com/imgs/2024/05/cd3e81141f6876e8.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/cd3e81141f6876e8.png")
       no-repeat;
     background-size: 100%;
     background-position-x: center;
@@ -942,7 +942,7 @@ export default {
   }
 
   .group-profile-award {
-    background: url("https://static.cmereye.com/imgs/2024/05/1306a3173c344666.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/1306a3173c344666.png")
       no-repeat;
     background-size: 100% 100%;
     padding: 100px 0 50px;
@@ -1086,7 +1086,7 @@ export default {
   }
 
   .group-profile-center {
-    background: url("https://static.cmereye.com/imgs/2024/05/3667677d419ec9a0.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/3667677d419ec9a0.png")
       no-repeat;
     background-size: 100% 100%;
     padding: 120px 0 50px;
@@ -1283,7 +1283,7 @@ export default {
   }
 
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/eb36818dd076c639.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/eb36818dd076c639.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

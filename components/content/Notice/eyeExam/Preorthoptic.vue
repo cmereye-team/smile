@@ -13,46 +13,46 @@
       <div class="flex preorth_box">
         <div class="preorth flex justify-evenly flex-col justify-center">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/c07c6b4f21d225d5.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/c07c6b4f21d225d5.png"
             alt=""
           />
           <span class="pt-3" :style="{textAlign: $i18n.locale === 'en' ? 'center' : 'left' }" v-html="$t('notice.eyeExam.preorthoptic.arrowOne.span1')"></span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
             alt=""
           />
         </div>
         <div class="preorth flex justify-evenly flex-col justify-center">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/7b3798d7b61abfb9.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/7b3798d7b61abfb9.png"
             alt=""
           />
           <span class="pt-3" :style="{textAlign: $i18n.locale == 'en' ? 'center' : 'left' }">{{$t('notice.eyeExam.preorthoptic.arrowOne.span2')}}</span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
             alt=""
           />
         </div>
         <div class="preorth flex justify-evenly flex-col justify-center" :class="[$i18n.locale === 'en'? ' preorth':'preorth']">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/2f2d444c97114450.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/2f2d444c97114450.png"
             alt=""
           />
           <span class="pt-3" :style="{textAlign: $i18n.locale === 'en' ? 'center' : 'left' }">{{$t('notice.eyeExam.preorthoptic.arrowOne.span3')}}</span>
         </div>
         <div class="flex flex-col justify-center mt-1 mx-5 arrow">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
             alt=""
           />
         </div>
         <div class="preorth flex justify-evenly flex-col justify-center" :class="[$i18n.locale === 'en' ? 'preorthEng preorth':'preorth']">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/032341e288d255ad.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/032341e288d255ad.png"
             alt=""
           />
           <span class="pt-3" :style="{textAlign: $i18n.locale === 'en' ? 'center' : 'left' }">{{$t('notice.eyeExam.preorthoptic.arrowOne.span4')}}</span>
@@ -61,7 +61,7 @@
           <div class="Inappropriate">
             <div class="flex flex-col justify-center mt-1 mx-5 arrow-top">
               <img
-                src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+                src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
                 alt=""
               />
             </div>
@@ -80,7 +80,7 @@
             ]"
             >
               <img
-                src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+                src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
                 alt=""
               />
             </div>
@@ -101,7 +101,7 @@
           <button>
             <div class="flex btn-yuyue">
               <img
-                src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+                src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
                 alt=""
                 style="width: 12vw"
               />

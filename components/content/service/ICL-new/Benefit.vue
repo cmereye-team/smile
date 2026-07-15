@@ -28,42 +28,42 @@ export default {
     return {
       benefitList: [
         {
-          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9789.svg',
+          index: 'https://statichk.cmermedical.com/imgs/2023/11/svg/Group9789.svg',
           text: '紫外線防護',
           des: this.$t('service.icl.benefit_new.des5'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9788.svg',
+          index: 'https://statichk.cmermedical.com/imgs/2023/11/svg/Group9788.svg',
           text: '與時俱進的 <br /> 靈活度',
           des: this.$t('service.icl.benefit_new.des6'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9787.svg',
+          index: 'https://statichk.cmermedical.com/imgs/2023/11/svg/Group9787.svg',
           text: '手術與恢<br />復皆快速',
           des: this.$t('service.icl.benefit_new.des7'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9792.svg',
+          index: 'https://statichk.cmermedical.com/imgs/2023/11/svg/Group9792.svg',
           text: '柔軟服貼',
           des: this.$t('service.icl.benefit_new.des8'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9782.svg',
+          index: 'https://statichk.cmermedical.com/imgs/2023/11/svg/Group9782.svg',
           text: '生物相容性',
           des: this.$t('service.icl.benefit_new.des1'),
         },
         // {
-        //   index: 'https://static.cmereye.com/imgs/2023/10/bc9ad07eb1783b27.png',
+        //   index: 'https://statichk.cmermedical.com/imgs/2023/10/bc9ad07eb1783b27.png',
         //   text: '減少 <br /> 乾眼情況',
         //   des: this.$t('service.icl.benefit_new.des2'),
         // },
         {
-          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9790.svg',
+          index: 'https://statichk.cmermedical.com/imgs/2023/11/svg/Group9790.svg',
           text: '可取出',
           des: this.$t('service.icl.benefit_new.des3'),
         },
         {
-          index: 'https://static.cmereye.com/imgs/2023/11/svg/Group9785.svg',
+          index: 'https://statichk.cmermedical.com/imgs/2023/11/svg/Group9785.svg',
           text: '夜間視力',
           des: this.$t('service.icl.benefit_new.des4'),
         },

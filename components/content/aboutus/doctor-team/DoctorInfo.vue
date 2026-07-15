@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bac-diqiu pcShow">
-      <img src="https://static.cmereye.com/imgs/2022/12/9c96ba7bca90639a.png" alt="" />
+      <img src="https://statichk.cmermedical.com/imgs/2022/12/9c96ba7bca90639a.png" alt="" />
     </div>
     <div class="page_container">
       <div class="flex justify-center doctor">
@@ -37,7 +37,7 @@
       </ul>
     </div>
     <div class="bac-foot-diqiu pcShow">
-      <img src="https://static.cmereye.com/imgs/2022/12/7170402a61209e2d.png" alt="" />
+      <img src="https://statichk.cmermedical.com/imgs/2022/12/7170402a61209e2d.png" alt="" />
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
     return {
       doctorList: [
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor01.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor01.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor1'),
           doctorName: "李佑榮醫生",
           doctorInfo: [
@@ -61,7 +61,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor02.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor02.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor2'),
           doctorInfo: [
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo1') },
@@ -72,7 +72,7 @@ export default {
           doctorName: "黎浩樺醫生",
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor03.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor03.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor3'),
           doctorInfo: [
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
@@ -83,7 +83,7 @@ export default {
           doctorName: "李德倫醫生",
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor04.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor04.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor4'),
           doctorInfo: [
             { info: this.$t('aboutUs.medicalTeam.DoctorInfo.doctorInfo16') },
@@ -94,7 +94,7 @@ export default {
           doctorName: "黃禮文醫生",
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor05.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor05.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor5'),
           doctorName: "張瀞之醫生",
           doctorInfo: [
@@ -107,7 +107,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor06.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor06.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor6'),
           doctorName: "林寶生醫生",
           doctorInfo: [
@@ -118,7 +118,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor07.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor07.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor7'),
           doctorName: "林己明醫生",
           doctorInfo: [
@@ -129,7 +129,7 @@ export default {
           ],
         },
         // {
-        //   src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor08.jpg",
+        //   src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor08.jpg",
         //   des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor8'),
         //   doctorName: "范愷醫生",
         //   doctorInfo: [
@@ -142,7 +142,7 @@ export default {
         //   ],
         // },
         // {
-        //   src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor09.jpg",
+        //   src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor09.jpg",
         //   des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor9'),
         //   doctorName: "李琬微醫生",
         //   doctorInfo: [
@@ -155,7 +155,7 @@ export default {
         //   ],
         // },
         // {
-        //   src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor10.jpg",
+        //   src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor10.jpg",
         //   des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor10'),
         //   doctorName: "邱俊源醫生",
         //   doctorInfo: [
@@ -166,7 +166,7 @@ export default {
         //   ],
         // },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor11.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor11.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor11'),
           doctorName: "陳偉樂醫生",
           doctorInfo: [
@@ -178,7 +178,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor12.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor12.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor12'),
           doctorName: "梁苑珊醫生",
           doctorInfo: [
@@ -190,7 +190,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor13.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor13.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor13'),
           doctorName: "鄒樞韻醫生",
           doctorInfo: [
@@ -201,7 +201,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/doctor-team/doctor15.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/doctor-team/doctor15.jpg",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor15'),
           doctorName: "尹浩柟醫生",
           doctorInfo: [
@@ -212,7 +212,7 @@ export default {
           ],
         },
         {
-          src: "https://static.cmereye.com/imgs/2024/05/4442519761e80030.png",
+          src: "https://statichk.cmermedical.com/imgs/2024/05/4442519761e80030.png",
           des: this.$t('aboutUs.medicalTeam.DoctorInfo.doctor14'),
           doctorName: "鄒樂韻醫生",
           doctorInfo: [
@@ -274,7 +274,7 @@ h2 {
     content: "";
     width: 54px;
     height: 44px;
-    background-image: url(https://static.cmereye.com/imgs/2023/01/f5088f95fc1b32e4.png);
+    background-image: url(https://statichk.cmermedical.com/imgs/2023/01/f5088f95fc1b32e4.png);
     background-size: 100% 100%;
     display: block;
     position: absolute;
@@ -337,7 +337,7 @@ h2 {
       content: "";
       width: 44px;
       height: 34px;
-      background-image: url(https://static.cmereye.com/imgs/2023/01/f5088f95fc1b32e4.png);
+      background-image: url(https://statichk.cmermedical.com/imgs/2023/01/f5088f95fc1b32e4.png);
       background-size: 90% 90%;
       margin: 20px auto;
       display: block;
@@ -348,7 +348,7 @@ h2 {
       content: "";
       width: 44px;
       height: 34px;
-      background-image: url(https://static.cmereye.com/imgs/2023/01/f5088f95fc1b32e4.png);
+      background-image: url(https://statichk.cmermedical.com/imgs/2023/01/f5088f95fc1b32e4.png);
       background-size: 90% 90%;
       margin: 20px auto;
       display: block;
@@ -444,7 +444,7 @@ h2 {
     content: "";
     width: 54px;
     height: 44px;
-    background-image: url(https://static.cmereye.com/imgs/2023/01/f5088f95fc1b32e4.png);
+    background-image: url(https://statichk.cmermedical.com/imgs/2023/01/f5088f95fc1b32e4.png);
     background-size: 100% 100%;
     display: block;
     position: absolute;
@@ -496,7 +496,7 @@ h2 {
       content: "";
       width: 44px;
       height: 34px;
-      background-image: url(https://static.cmereye.com/imgs/2023/01/f5088f95fc1b32e4.png);
+      background-image: url(https://statichk.cmermedical.com/imgs/2023/01/f5088f95fc1b32e4.png);
       background-size: 90% 90%;
       margin: 20px auto;
       display: block;
@@ -507,7 +507,7 @@ h2 {
       content: "";
       width: 44px;
       height: 34px;
-      background-image: url(https://static.cmereye.com/imgs/2023/01/f5088f95fc1b32e4.png);
+      background-image: url(https://statichk.cmermedical.com/imgs/2023/01/f5088f95fc1b32e4.png);
       background-size: 90% 90%;
       margin: 20px auto;
       display: block;

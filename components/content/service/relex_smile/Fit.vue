@@ -104,7 +104,7 @@ export default {
   .fit {
     max-width: 1280px;
     margin: auto;
-    background-image: url("https://static.cmereye.com/imgs/smile/images/service/relex_smile/fit_bg.jpg");
+    background-image: url("https://statichk.cmermedical.com/imgs/smile/images/service/relex_smile/fit_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 44vw;
@@ -214,7 +214,7 @@ export default {
     white-space: break-spaces !important;
   }
   .fit {
-    background-image: url("https://static.cmereye.com/imgs/2022/12/a8f5b0b92f86d0e6.jpg");
+    background-image: url("https://statichk.cmermedical.com/imgs/2022/12/a8f5b0b92f86d0e6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vw;
@@ -303,7 +303,7 @@ export default {
     content: "";
     width: 12.5vw;
     height: 6.7vw;
-    background-image: url(https://static.cmereye.com/imgs/2022/12/43871fde827f43df.png);
+    background-image: url(https://statichk.cmermedical.com/imgs/2022/12/43871fde827f43df.png);
     bottom: 5vw;
     /* left: 0; */
     right: 5vw;

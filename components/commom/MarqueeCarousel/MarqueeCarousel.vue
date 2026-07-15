@@ -32,7 +32,7 @@ export default {
       awardsList: [
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/08/2dc8e2cd2f95150f.png",
+            "https://statichk.cmermedical.com/imgs/2024/08/2dc8e2cd2f95150f.png",
           //   year: "2024",
           //   des: "「健康Easy卓越大獎2024」",
           //   link: "https://01market.hk01.com/?popup=healtheasyawards2024",
@@ -42,7 +42,7 @@ export default {
         },
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/04/9fb7b59c6d134014.png",
+            "https://statichk.cmermedical.com/imgs/2024/04/9fb7b59c6d134014.png",
           //   year: "2024",
           //   des: "香港卓越服務名牌",
           //   link: "https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153",
@@ -52,7 +52,7 @@ export default {
         },
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/04/86e300274d8bc4ef.png",
+            "https://statichk.cmermedical.com/imgs/2024/04/86e300274d8bc4ef.png",
           //   year: "2024",
           //   des: "香港經濟日報企業大獎",
           //   link: "https://iet2.hket.com/event/hket_excellence_awards/zh/2024-winner-list.html#",
@@ -63,7 +63,7 @@ export default {
         },
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/04/788333406bba2c0f.png",
+            "https://statichk.cmermedical.com/imgs/2024/04/788333406bba2c0f.png",
           //   year: "2023",
           //   des: "「ESG約章」行動",
           //   link: "https://www.esgpledge.org.hk/",
@@ -74,7 +74,7 @@ export default {
         },
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/04/29433265c4f65fdf.png",
+            "https://statichk.cmermedical.com/imgs/2024/04/29433265c4f65fdf.png",
           //   year: "2023",
           //   des: "香港服務名牌",
           //   link: "https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153",
@@ -85,7 +85,7 @@ export default {
         },
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/04/402f4a682ca2394a.png",
+            "https://statichk.cmermedical.com/imgs/2024/04/402f4a682ca2394a.png",
           //   year: "2023",
           //   des: "香港公益金 -「公益卓越獎」",
           //   link: "https://www.commchest.org/tc/news/press-release/detail/1057",
@@ -95,7 +95,7 @@ export default {
         },
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/04/16b586d7718ac0a6.png",
+            "https://statichk.cmermedical.com/imgs/2024/04/16b586d7718ac0a6.png",
           //   year: "2023",
           //   des: "HKCT企業大獎 - 年度傑出綜合專科醫療服務",
           //   link: "https://hkct-awards.com/articles/59",
@@ -106,7 +106,7 @@ export default {
 
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/07/8fab0d4a7e7ef4ac.png",
+            "https://statichk.cmermedical.com/imgs/2024/07/8fab0d4a7e7ef4ac.png",
           //   year: "2022",
           //   des: "香港卓越服務名牌",
           //   link: "",
@@ -117,7 +117,7 @@ export default {
 
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
+            "https://statichk.cmermedical.com/imgs/2024/08/a1b0a5b199d5b9a7.png",
           //   year: "2022",
           //   des: "香港服務名牌",
           //   link: "https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153",
@@ -128,7 +128,7 @@ export default {
         },
         {
           imgUrl:
-            "https://static.cmereye.com/imgs/2024/08/64ae764b38e2a2a7.png",
+            "https://statichk.cmermedical.com/imgs/2024/08/64ae764b38e2a2a7.png",
           //   year: "2022",
           //   des: "社會資本動力獎-標誌獎",
           //   link: "https://features.hkej.com/template/features/html/2022_sc/winners.html",
@@ -139,7 +139,7 @@ export default {
         },
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/2023/08/3593bc6113653a80.png",
+        //     "https://statichk.cmermedical.com/imgs/2023/08/3593bc6113653a80.png",
         //   year: "2022",
         //   des: "香港最有價值品牌大獎",
         //   link: "",
@@ -149,7 +149,7 @@ export default {
         // },
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/2023/08/ebde2962cbd42e60.png",
+        //     "https://statichk.cmermedical.com/imgs/2023/08/ebde2962cbd42e60.png",
         //   year: "2022",
         //   des: "開心工作間",
         //   link: "",
@@ -159,7 +159,7 @@ export default {
         // },
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/2023/08/f4273176866baf9c.png",
+        //     "https://statichk.cmermedical.com/imgs/2023/08/f4273176866baf9c.png",
         //   year: "2022",
         //   des: "大灣區企業-傑出獎",
         //   link: "",
@@ -169,14 +169,14 @@ export default {
         // },
         // // {
         // //   imgUrl:
-        // //     'https://static.cmereye.com/imgs/2023/01/3b9de76f932cbe48.png',
+        // //     'https://statichk.cmermedical.com/imgs/2023/01/3b9de76f932cbe48.png',
         // //   year: 'pages.about_us.awards.awards_year_7',
         // //   des: 'pages.about_us.awards.awards_des_7',
         // //   link: 'https://corphub.asia/awards/?route=events&id=1'
         // // }
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg",
+        //     "https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards6.jpg",
         //   year: "2021",
         //   des: "香港服務名牌",
         //   link: "https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153",
@@ -186,7 +186,7 @@ export default {
         // },
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg",
+        //     "https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards1.jpg",
         //   year: "2021",
         //   des: "香港星級品牌企業獎",
         //   link: "https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153",
@@ -196,7 +196,7 @@ export default {
         // },
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards5.jpg",
+        //     "https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards5.jpg",
         //   year: "2020",
         //   des: "香港最優秀企業大獎",
         //   link: "https://corphub.asia/awards/?route=events&id=1",
@@ -206,7 +206,7 @@ export default {
         // },
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards4.jpg",
+        //     "https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards4.jpg",
         //   year: "2020",
         //   des: "香港旅遊業十優推介",
         //   link: "",
@@ -216,7 +216,7 @@ export default {
         // },
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards3.jpg",
+        //     "https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards3.jpg",
         //   year: "2020",
         //   des: "亞洲最佳價值服務大獎",
         //   link: "https://www.youtube.com/watch?v=7k0FhEoCXus",
@@ -227,7 +227,7 @@ export default {
 
         // {
         //   imgUrl:
-        //     "https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards2.jpg",
+        //     "https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards2.jpg",
         //   year: "2020-2021",
         //   des: "商界展關懷",
         //   link: "https://www.caringcompany.org.hk/b5_index.php",

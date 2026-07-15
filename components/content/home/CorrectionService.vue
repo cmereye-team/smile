@@ -16,7 +16,7 @@
           <!-- <p>39 歲以上<br />同時有近視／遠視／<br />散光問題</p> -->
           <span :class="['morelink', item.className]">{{ $i18n.locale === 'en' ? 'learn more': '了解更多' }}</span>
           <img class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-2"
-            :class="item.className" src="https://static.cmereye.com/imgs/2023/03/8462fdf2330efa37.png" alt="" />
+            :class="item.className" src="https://statichk.cmermedical.com/imgs/2023/03/8462fdf2330efa37.png" alt="" />
           <!-- </a> -->
         </div>
       </div>
@@ -128,7 +128,7 @@ export default {
   justify-content: center;
 
   .smileSerItem {
-    background-image: url(https://static.cmereye.com/imgs/2023/03/9e93dc0fbc3b1b9c.png);
+    background-image: url(https://statichk.cmermedical.com/imgs/2023/03/9e93dc0fbc3b1b9c.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

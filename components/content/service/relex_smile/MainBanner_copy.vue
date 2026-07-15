@@ -2,12 +2,12 @@
   <div class="main_banner">
     <div class="smile-banner">
       <img
-        data-src="https://static.cmereye.com/imgs/2023/10/5f9649b99482ebc1.png"
+        data-src="https://statichk.cmermedical.com/imgs/2023/10/5f9649b99482ebc1.png"
         srcset="
-          https://static.cmereye.com/imgs/2023/10/62bb3cec28a0360a.png 768w,
-          https://static.cmereye.com/imgs/2023/10/5f9649b99482ebc1.png
+          https://statichk.cmermedical.com/imgs/2023/10/62bb3cec28a0360a.png 768w,
+          https://statichk.cmermedical.com/imgs/2023/10/5f9649b99482ebc1.png
         "
-        src="https://static.cmereye.com/imgs/2023/10/5f9649b99482ebc1.png"
+        src="https://statichk.cmermedical.com/imgs/2023/10/5f9649b99482ebc1.png"
         alt=""
       />
       <div class="title_box">
@@ -21,28 +21,28 @@
         <a :href="localePath('/media')"
           ><span
             ><img
-              src="https://static.cmereye.com/static/loffee/svg/9621.svg"
+              src="https://statichk.cmermedical.com/static/loffee/svg/9621.svg"
               alt="" /></span
           ><span>媒 體 報 導</span></a
         >
         <!-- <a :href="localePath('/charge-detail')"
           ><span
             ><img
-              src="https://static.cmereye.com/imgs/2023/08/5fc1029d0c3be696.png"
+              src="https://statichk.cmermedical.com/imgs/2023/08/5fc1029d0c3be696.png"
               alt="" /></span
           ><span>收 費 詳 情</span></a
         > -->
         <a :href="localePath('/video')"
           ><span
             ><img
-              src="https://static.cmereye.com/static/loffee/svg/9631.svg"
+              src="https://statichk.cmermedical.com/static/loffee/svg/9631.svg"
               alt="" /></span
           ><span>矯 視 資 訊 影 片</span></a
         >
         <a :href="localePath('/video')"
           ><span
             ><img
-              src="https://static.cmereye.com/static/loffee/svg/9641.svg"
+              src="https://statichk.cmermedical.com/static/loffee/svg/9641.svg"
               alt="" /></span
           ><span>個 案 分 享</span></a
         >

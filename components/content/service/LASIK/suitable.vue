@@ -6,35 +6,35 @@
     <div class="flex justify-evenly suit_box mt-10">
       <div class="flex flex-col items-center suitable">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/6c23e8f2d3399087.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/6c23e8f2d3399087.png"
           alt=""
         />
         <span v-html="$t('service.lasik.suitable.span1')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/a8d803f942bc4256.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/a8d803f942bc4256.png"
           alt=""
         />
         <span v-html="$t('service.lasik.suitable.span2')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/324ad7198a9d2632.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/324ad7198a9d2632.png"
           alt=""
         />
         <span v-html="$t('service.lasik.suitable.span3')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/d2407e6ff4b3b56c.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/d2407e6ff4b3b56c.png"
           alt=""
         />
         <span v-html="$t('service.lasik.suitable.span4')"></span>
       </div>
       <div class="flex flex-col items-center suitable">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/af544fe01cbe5d65.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/af544fe01cbe5d65.png"
           alt=""
         />
         <span v-html="$t('service.lasik.suitable.span5')"></span>
@@ -44,7 +44,7 @@
       <button>
         <div class="flex btn-yuyue">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
             alt=""
             style="width: 12vw"
           />

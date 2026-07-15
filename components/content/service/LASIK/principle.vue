@@ -7,43 +7,43 @@
       <div class="flex pincile_box">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2022/12/562ae3599c4a424f.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/562ae3599c4a424f.png"
             alt=""
           />
         </div>
         <div class="flex flex-col justify-center mt-10 mx-5 arrow">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
             alt=""
           />
         </div>
         <div class="flex items-end">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/778635b3e6aa7b8a.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/778635b3e6aa7b8a.png"
             alt=""
           />
         </div>
         <div class="flex flex-col justify-center mt-10 mx-5 arrow">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
             alt=""
           />
         </div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2022/12/90b9549dc880c3c6.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/90b9549dc880c3c6.png"
             alt=""
           />
         </div>
         <div class="flex flex-col justify-center mt-10 mx-5 arrow">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/5dc8f0ff1a0bb90d.png"
             alt=""
           />
         </div>
         <div class="flex items-end">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/cd76fe9b1c473cb3.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/cd76fe9b1c473cb3.png"
             alt=""
           />
         </div>

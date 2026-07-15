@@ -10,7 +10,7 @@
             </div>
             <div class="smilePro-desc-in">
                 <div class="smilePro-desc-in-box">
-                    <img src="https://static.cmereye.com/imgs/2023/05/c9ade3fdcb092abc.jpg" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/05/c9ade3fdcb092abc.jpg" />
                     <div>
                         <span>{{ $t('service.smilePro.smileProDesc.desc[0].span1') }}</span>
                         <span>{{ $t('service.smilePro.smileProDesc.desc[0].span2') }}</span>
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="smilePro-desc-in-box">
-                    <img src="https://static.cmereye.com/imgs/2023/05/908e2ba8cd129d5b.jpg" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/05/908e2ba8cd129d5b.jpg" />
                     <div>
                         <span>{{ $t('service.smilePro.smileProDesc.desc[1].span1') }}</span>
                         <span>{{ $t('service.smilePro.smileProDesc.desc[1].span2') }}</span>
@@ -30,14 +30,14 @@
                     </div>
                 </div>
                 <div class="smilePro-desc-in-box">
-                    <img src="https://static.cmereye.com/imgs/2023/05/9f64d4fd52cd469e.jpg" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/05/9f64d4fd52cd469e.jpg" />
                     <div>
                         <span>{{ $t('service.smilePro.smileProDesc.desc[2].span1') }}</span>
                         <span v-if="$i18n.locale === 'en'">{{ $t('service.smilePro.smileProDesc.desc[2].span2') }}</span>
                     </div>
                 </div>
                 <div class="smilePro-desc-in-box">
-                    <img src="https://static.cmereye.com/imgs/2023/05/a3ade36153e14488.jpg" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/05/a3ade36153e14488.jpg" />
                     <div>
                         <span>{{ $t('service.smilePro.smileProDesc.desc[3].span1') }}</span>
                         <span v-if="$i18n.locale === 'en'">{{ $t('service.smilePro.smileProDesc.desc[3].span2') }}</span>
@@ -54,7 +54,7 @@
                 <span>SMILE PRO!</span>
             </div>
             <div class="smilePro-descVideo-in">
-                <!-- <img src="https://static.cmereye.com/imgs/2023/05/822d9485daa1f2fa.jpg" />  -->
+                <!-- <img src="https://statichk.cmermedical.com/imgs/2023/05/822d9485daa1f2fa.jpg" />  -->
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IxvWmeOd18c"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -134,19 +134,19 @@
             <div class="smilePro-cases-in">
                 <a href="https://youtu.be/oHDOFYMEUsk">
                     <div class="smilePro-cases-in-box">
-                        <img src="https://static.cmereye.com/imgs/2023/05/444e690917f7719d.jpg" />
+                        <img src="https://statichk.cmermedical.com/imgs/2023/05/444e690917f7719d.jpg" />
                         <div>{{ $t('service.smilePro.smileProCases.div1') }}</div>
                     </div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=5ihrzFvOy38">
                     <div class="smilePro-cases-in-box">
-                        <img src="https://static.cmereye.com/imgs/2023/05/9e8f394a8a4cd8cf.jpg" />
+                        <img src="https://statichk.cmermedical.com/imgs/2023/05/9e8f394a8a4cd8cf.jpg" />
                         <div>{{ $t('service.smilePro.smileProCases.div2') }}</div>
                     </div>
                 </a>
                 <a href="https://youtu.be/AJz2E7jEYqY">
                     <div class="smilePro-cases-in-box">
-                        <img src="https://static.cmereye.com/imgs/2023/05/4d46826756514953.jpg" />
+                        <img src="https://statichk.cmermedical.com/imgs/2023/05/4d46826756514953.jpg" />
                         <div>{{ $t('service.smilePro.smileProCases.div3') }}</div>
                     </div>
                 </a>
@@ -1034,7 +1034,7 @@ export default {
 }
 
 .smilePro-features {
-    background: url(https://static.cmereye.com/imgs/2023/05/006918ac3ee0a0bd.jpg)no-repeat;
+    background: url(https://statichk.cmermedical.com/imgs/2023/05/006918ac3ee0a0bd.jpg)no-repeat;
     background-size: 100% 100%;
     height: 600px;
     margin-top: 71px;
@@ -1497,7 +1497,7 @@ export default {
 
             &::before {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/9df0253b408ec7a0.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/9df0253b408ec7a0.png);
                 position: absolute;
                 left: 12px;
                 top: 69px;
@@ -1507,7 +1507,7 @@ export default {
 
             &::after {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/ba3b731c77500bc4.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/ba3b731c77500bc4.png);
                 right: 12px;
                 bottom: 18px;
                 position: absolute;
@@ -1548,7 +1548,7 @@ export default {
 
             &::before {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/9df0253b408ec7a0.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/9df0253b408ec7a0.png);
                 position: absolute;
                 left: 12px;
                 top: 69px;
@@ -1558,7 +1558,7 @@ export default {
 
             &::after {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/ba3b731c77500bc4.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/ba3b731c77500bc4.png);
                 right: 12px;
                 bottom: 18px;
                 position: absolute;
@@ -1599,7 +1599,7 @@ export default {
 
             &::before {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/9df0253b408ec7a0.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/9df0253b408ec7a0.png);
                 position: absolute;
                 left: 12px;
                 top: 48px;
@@ -1609,7 +1609,7 @@ export default {
 
             &::after {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/ba3b731c77500bc4.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/ba3b731c77500bc4.png);
                 right: 12px;
                 bottom: 18px;
                 position: absolute;
@@ -1650,7 +1650,7 @@ export default {
 
             &::before {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/9df0253b408ec7a0.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/9df0253b408ec7a0.png);
                 position: absolute;
                 left: 12px;
                 top: 54px !important;
@@ -1660,7 +1660,7 @@ export default {
 
             &::after {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/ba3b731c77500bc4.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/ba3b731c77500bc4.png);
                 right: 12px;
                 bottom: 16px !important;
                 position: absolute;
@@ -1701,7 +1701,7 @@ export default {
 
             &::before {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/9df0253b408ec7a0.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/9df0253b408ec7a0.png);
                 position: absolute;
                 left: 12px;
                 top: 50px;
@@ -1711,7 +1711,7 @@ export default {
 
             &::after {
                 content: '';
-                background: url(https://static.cmereye.com/imgs/2023/05/ba3b731c77500bc4.png);
+                background: url(https://statichk.cmermedical.com/imgs/2023/05/ba3b731c77500bc4.png);
                 right: 12px;
                 bottom: 18px;
                 position: absolute;
@@ -1742,7 +1742,7 @@ export default {
         }
 
         .smileProSwiper-next {
-            background-image: url("https://static.cmereye.com/imgs/2023/03/bcc35245d4a0fe42.png");
+            background-image: url("https://statichk.cmermedical.com/imgs/2023/03/bcc35245d4a0fe42.png");
             background-size: 100% 100%;
             position: absolute;
             top: 50%;
@@ -1753,7 +1753,7 @@ export default {
         }
 
         .smileProSwiper-prev {
-            background-image: url("https://static.cmereye.com/imgs/2023/03/c1cc233620b64f31.png");
+            background-image: url("https://statichk.cmermedical.com/imgs/2023/03/c1cc233620b64f31.png");
             background-size: 100% 100%;
             position: absolute;
             top: 50%;

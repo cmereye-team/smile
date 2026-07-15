@@ -1193,7 +1193,7 @@ export default {
     margin-bottom: 100px;
   }
   .follow-up-nursing {
-    background: url("https://static.cmereye.com/imgs/2024/05/a62b21f73f2c4c84.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/a62b21f73f2c4c84.png")
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -1451,7 +1451,7 @@ export default {
     overflow: hidden;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/f3bce0afd8e4f001.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/f3bce0afd8e4f001.png")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;
@@ -1502,7 +1502,7 @@ export default {
     margin-bottom: 50px;
   }
   .follow-up-nursing {
-    background: url("https://static.cmereye.com/imgs/2024/05/649c9372d69a4d85.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/649c9372d69a4d85.png")
       no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -1717,7 +1717,7 @@ export default {
       // padding: 0 30px;
       margin-top: 105px;
       & > div:nth-child(1) {
-        background: url("https://static.cmereye.com/imgs/2024/05/07feb20f2f951a2d.png")
+        background: url("https://statichk.cmermedical.com/imgs/2024/05/07feb20f2f951a2d.png")
           no-repeat;
         background-size: 100% 100%;
         height: 221px;
@@ -1797,7 +1797,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/f23d2e11504458c9.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/f23d2e11504458c9.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

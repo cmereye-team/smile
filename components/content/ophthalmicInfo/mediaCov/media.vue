@@ -9,7 +9,7 @@
           href="https://urbanlifehk.com/article/33149/%E7%9F%AF%E8%A6%96-%E4%BB%BB%E4%BD%95%E4%BA%BA%E9%83%BD%E9%81%A9%E5%90%88%E7%9F%AF%E8%A6%96-%E6%89%8B%E8%A1%93%E6%9C%89%E9%A2%A8%E9%9A%AA%E5%97%8E-%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3smile%E5%BE%AE%E7%AC%91%E6%BF%80%E5%85%89%E7%9F%AF%E8%A6%96%E6%89%8B%E8%A1%93%E9%81%8E%E7%A8%8B-%E9%A2%A8%E9%9A%AA"
         >
           <img
-            src="https://static.cmereye.com/imgs/2022/12/66538cb27950d31e.jpg"
+            src="https://statichk.cmermedical.com/imgs/2022/12/66538cb27950d31e.jpg"
             alt=""
           />
           <div class="meida">
@@ -28,7 +28,7 @@
           href="https://urbanlifehk.com/article/32361/%E7%99%BD%E5%85%A7%E9%9A%9C-50%E6%AD%B2%E4%BB%A5%E4%B8%8A-%E8%A6%96%E5%8A%9B%E6%A8%A1%E7%B3%8A-%E6%9C%89%E9%87%8D%E5%BD%B1-%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3%E7%99%BD%E5%85%A7%E9%9A%9C4%E5%A4%A7%E6%88%90%E5%9B%A0-%E5%BE%B5%E7%8B%80%E5%92%8C%E6%89%8B%E8%A1%93%E9%81%8E%E7%A8%8B"
         >
           <img
-            src="https://static.cmereye.com/imgs/2023/01/a4665ddaa1b1a3e4.jpg"
+            src="https://statichk.cmermedical.com/imgs/2023/01/a4665ddaa1b1a3e4.jpg"
             alt=""
           />
           <div class="meida">
@@ -47,7 +47,7 @@
           href="https://hk.lifestyle.appledaily.com/lifestyle/realtime/article/20190202/59211897"
         >
           <img
-            src="https://static.cmereye.com/imgs/2023/01/43378deace4197f5.jpg"
+            src="https://statichk.cmermedical.com/imgs/2023/01/43378deace4197f5.jpg"
             alt=""
           />
           <div class="meida">
@@ -68,7 +68,7 @@
         <button>
           <div class="flex btn-yuyue">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
               alt=""
               style="width: 12vw"
             />

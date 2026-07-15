@@ -170,7 +170,7 @@ export default {
       isMobile: false,
       characteristic: [
         {
-          img: "https://static.cmereye.com/imgs/2024/04/e8b1b4b4e7337083.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/e8b1b4b4e7337083.png",
           title: this.$t("Correct.icl.characteristic.content1.title"),
           text: [
             this.$t("Correct.icl.characteristic.content1.text1"),
@@ -178,7 +178,7 @@ export default {
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/b3fc1aae883e10c5.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/b3fc1aae883e10c5.png",
           title: this.$t("Correct.icl.characteristic.content2.title"),
           text: [
             this.$t("Correct.icl.characteristic.content2.text1"),
@@ -186,7 +186,7 @@ export default {
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/9c2e5ca8b04dfc42.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/9c2e5ca8b04dfc42.png",
           title: this.$t("Correct.icl.characteristic.content3.title"),
           // text: ["手術時間短<br />", "復原期短，手術過程", "最快只需20-30分鐘"],
           text: [
@@ -196,7 +196,7 @@ export default {
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/d6dc807847e807c6.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/d6dc807847e807c6.png",
           title: this.$t("Correct.icl.characteristic.content4.title"),
           text: [
             this.$t("Correct.icl.characteristic.content4.text1"),
@@ -204,7 +204,7 @@ export default {
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/78bb710a2eee5ce3.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/78bb710a2eee5ce3.png",
           title: this.$t("Correct.icl.characteristic.content5.title"),
           text: [
             this.$t("Correct.icl.characteristic.content5.text1"),
@@ -213,7 +213,7 @@ export default {
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/bb006854352668ac.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/bb006854352668ac.png",
           title: this.$t("Correct.icl.characteristic.content6.title"),
           text: [
             this.$t("Correct.icl.characteristic.content6.text1"),
@@ -221,61 +221,61 @@ export default {
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/4fe5d9f2a1065ba4.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/4fe5d9f2a1065ba4.png",
           title: this.$t("Correct.icl.characteristic.content7.title"),
           text: [this.$t("Correct.icl.characteristic.content7.text1")],
         },
       ],
       benefits: [
         {
-          img: "https://static.cmereye.com/imgs/2024/04/71f07f2e49ae92d7.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/71f07f2e49ae92d7.png",
           title: this.$t("Correct.icl.benefits.content1.title"),
           text: this.$t("Correct.icl.benefits.content1.text1"),
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/c8c583239e65a1a7.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/c8c583239e65a1a7.png",
           title: this.$t("Correct.icl.benefits.content2.title"),
           text: this.$t("Correct.icl.benefits.content2.text1"),
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/515c3b6fb8d3871d.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/515c3b6fb8d3871d.png",
           title: this.$t("Correct.icl.benefits.content3.title"),
           text: this.$t("Correct.icl.benefits.content3.text1"),
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/a200f81d4d1872a1.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/a200f81d4d1872a1.png",
           title: this.$t("Correct.icl.benefits.content4.title"),
           text: this.$t("Correct.icl.benefits.content4.text1"),
         },
       ],
       suitable_object: [
         {
-          img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/1acfa98b56345500.png",
           text: [
             this.$t("Correct.icl.suitable_object.content1.text1"),
             this.$t("Correct.icl.suitable_object.content1.text2"),
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/2c2272ff6b7052c6.png",
           text: [
             this.$t("Correct.icl.suitable_object.content2.text1"),
             this.$t("Correct.icl.suitable_object.content2.text2"),
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/56f73174b86b2288.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/56f73174b86b2288.png",
           text: [this.$t("Correct.icl.suitable_object.content3.text1")],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/9f4ca0776e175624.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/9f4ca0776e175624.png",
           text: [
             this.$t("Correct.icl.suitable_object.content4.text1"),
             this.$t("Correct.icl.suitable_object.content4.text2"),
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/7a55c233d701d0eb.png",
           text: [
             this.$t("Correct.icl.suitable_object.content5.text1"),
             this.$t("Correct.icl.suitable_object.content5.text2"),
@@ -321,7 +321,7 @@ export default {
     justify-content: center;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/a5d210497d854b68.webp")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/a5d210497d854b68.webp")
       no-repeat;
     background-size: cover;
     height: 32.08vw;
@@ -423,7 +423,7 @@ export default {
     padding-bottom: 200%;
     // background: rgba(199, 232, 239, 0.2);
     // border-radius: 50%/40%;
-    background: url(https://static.cmereye.com/imgs/2024/05/e102853c2e3b96d4.png)
+    background: url(https://statichk.cmermedical.com/imgs/2024/05/e102853c2e3b96d4.png)
       no-repeat;
     background-size: 100% 100%;
     top: 0;
@@ -506,7 +506,7 @@ export default {
 }
 @media screen and (max-width: 767px) {
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/1e78ab899188f6b4.webp")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/1e78ab899188f6b4.webp")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

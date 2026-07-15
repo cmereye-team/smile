@@ -93,7 +93,7 @@ export default {
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/4bdcd92ec881cda9.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/4bdcd92ec881cda9.png")
       no-repeat;
     background-size: 100% 100%;
     height: 616px;
@@ -129,7 +129,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/c0bd08949771a641.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/c0bd08949771a641.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

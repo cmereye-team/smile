@@ -35,25 +35,25 @@
       <div class="principle-img">
         <div class="principle-img-in">
           <img
-            src="https://static.cmereye.com/imgs/2024/05/1f20b33e3e858609.png"
+            src="https://statichk.cmermedical.com/imgs/2024/05/1f20b33e3e858609.png"
             alt=""
           />
         </div>
         <div class="principle-img-in">
           <img
-            src="https://static.cmereye.com/imgs/2024/04/334db04651a8d12d.png"
+            src="https://statichk.cmermedical.com/imgs/2024/04/334db04651a8d12d.png"
             alt=""
           />
         </div>
         <div class="principle-img-in">
           <img
-            src="https://static.cmereye.com/imgs/2024/04/e3237ebb2e10ea1c.png"
+            src="https://statichk.cmermedical.com/imgs/2024/04/e3237ebb2e10ea1c.png"
             alt=""
           />
         </div>
         <div class="principle-img-in">
           <img
-            src="https://static.cmereye.com/imgs/2024/04/8dd12144f4354a10.png"
+            src="https://statichk.cmermedical.com/imgs/2024/04/8dd12144f4354a10.png"
             alt=""
           />
         </div>
@@ -83,7 +83,7 @@
     <div class="suitable_object">
       <div class="suitable_object-top">
         <img
-          src="https://static.cmereye.com/imgs/2024/04/8e745e91012fcd70.png"
+          src="https://statichk.cmermedical.com/imgs/2024/04/8e745e91012fcd70.png"
           alt="合適對象"
           title="合適對象"
         />
@@ -144,29 +144,29 @@ export default {
       browserTitleCn: "LASIK激光矫视 - 希玛微笑矫视中心",
       benefits: [
         {
-          img: "https://static.cmereye.com/imgs/2024/04/71f07f2e49ae92d7.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/71f07f2e49ae92d7.png",
           title: this.$t("Correct.lasik.benefits.content1.title"),
           text: this.$t("Correct.lasik.benefits.content1.text"),
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/c8c583239e65a1a7.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/c8c583239e65a1a7.png",
           title: this.$t("Correct.lasik.benefits.content2.title"),
           text: this.$t("Correct.lasik.benefits.content2.text"),
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/515c3b6fb8d3871d.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/515c3b6fb8d3871d.png",
           title: this.$t("Correct.lasik.benefits.content3.title"),
           text: this.$t("Correct.lasik.benefits.content3.text"),
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/a200f81d4d1872a1.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/a200f81d4d1872a1.png",
           title: this.$t("Correct.lasik.benefits.content4.title"),
           text: this.$t("Correct.lasik.benefits.content4.text"),
         },
       ],
       suitable_object: [
         {
-          img: "https://static.cmereye.com/imgs/2024/04/1acfa98b56345500.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/1acfa98b56345500.png",
           text: [
             this.$t("Correct.lasik.suitable_object.content1.text1"),
             this.$t("Correct.lasik.suitable_object.content1.text2"),
@@ -178,25 +178,25 @@ export default {
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/2c2272ff6b7052c6.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/2c2272ff6b7052c6.png",
           text: [
             this.$t("Correct.lasik.suitable_object.content2.text1"),
             this.$t("Correct.lasik.suitable_object.content2.text2"),
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/56f73174b86b2288.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/56f73174b86b2288.png",
           text: [this.$t("Correct.lasik.suitable_object.content3.text1")],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/9f4ca0776e175624.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/9f4ca0776e175624.png",
           text: [
             this.$t("Correct.lasik.suitable_object.content4.text1"),
             this.$t("Correct.lasik.suitable_object.content4.text2"),
           ],
         },
         {
-          img: "https://static.cmereye.com/imgs/2024/04/7a55c233d701d0eb.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/7a55c233d701d0eb.png",
           text: [
             this.$t("Correct.lasik.suitable_object.content5.text1"),
             this.$t("Correct.lasik.suitable_object.content5.text2"),
@@ -310,7 +310,7 @@ export default {
     justify-content: center;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/8764882bb5d61bd6.webp")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/8764882bb5d61bd6.webp")
       no-repeat;
     background-size: cover;
     height: 32.08vw;
@@ -390,7 +390,7 @@ export default {
     width: 200%;
     height: 0;
     padding-bottom: 200%;
-    background: url(https://static.cmereye.com/imgs/2024/05/18206225b503de8f.png)
+    background: url(https://statichk.cmermedical.com/imgs/2024/05/18206225b503de8f.png)
       no-repeat;
     background-size: 100% 100%;
     top: 150px;
@@ -541,7 +541,7 @@ export default {
     padding-bottom: 200%;
     // background: rgba(199, 232, 239, 0.2);
     // border-radius: 50%/40%;
-    background: url(https://static.cmereye.com/imgs/2024/05/53bf2271c231b37d.png)
+    background: url(https://statichk.cmermedical.com/imgs/2024/05/53bf2271c231b37d.png)
       no-repeat;
     background-size: 100% 100%;
     bottom: 0;
@@ -649,7 +649,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/6fdcba3b3d5247bc.webp")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/6fdcba3b3d5247bc.webp")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

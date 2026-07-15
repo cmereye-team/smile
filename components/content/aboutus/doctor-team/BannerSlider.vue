@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 768px){
   .banner {
-  background: url("https://static.cmereye.com/imgs/2023/03/2e1a6f1385669d6f.jpg") no-repeat;
+  background: url("https://statichk.cmermedical.com/imgs/2023/03/2e1a6f1385669d6f.jpg") no-repeat;
 }
 }
 @media (max-width: 768px){
@@ -31,7 +31,7 @@ export default {
     margin-bottom: 10vw;
   }
   .banner {
-    background: url("https://static.cmereye.com/imgs/2022/12/efa3ddacc9443355.png") no-repeat;
+    background: url("https://statichk.cmermedical.com/imgs/2022/12/efa3ddacc9443355.png") no-repeat;
     margin-top: 24vw;
     width: 100vw;
     height: 100vw;

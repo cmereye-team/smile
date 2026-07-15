@@ -25,15 +25,15 @@ export default {
     return {
       stepList: [
         {
-          src: "https://static.cmereye.com/imgs/smile/images/service/relex_smile/Step1.png",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/service/relex_smile/Step1.png",
           des: this.$t('service.relexSmile.step.des1'),
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/service/relex_smile/Step2.png",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/service/relex_smile/Step2.png",
           des: this.$t('service.relexSmile.step.des2'),
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/service/relex_smile/Step3.png",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/service/relex_smile/Step3.png",
           des:this.$t('service.relexSmile.step.des3'),
         },
       ],

@@ -129,7 +129,7 @@ body .gradient_font {
     color: #4570b6;
   }
   .banner {
-    background: url("https://static.cmereye.com/imgs/2022/11/c8e8452497d5f740.jpg")
+    background: url("https://statichk.cmermedical.com/imgs/2022/11/c8e8452497d5f740.jpg")
       no-repeat;
       
   }
@@ -142,7 +142,7 @@ body .gradient_font {
     margin-top: 24vw;
   }
   .banner {
-    background: url("https://static.cmereye.com/imgs/2022/11/14b67f3baff1fe81.jpg")
+    background: url("https://statichk.cmermedical.com/imgs/2022/11/14b67f3baff1fe81.jpg")
       no-repeat;
       background-size: cover !important;
     background-repeat: no-repeat;

@@ -5,7 +5,7 @@
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/12/a9b5cbf5270023eb.png"
+            src="https://statichk.cmermedical.com/imgs/2024/12/a9b5cbf5270023eb.png"
             alt=""
           />
         </div>
@@ -17,7 +17,7 @@
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/12/24c5062453b92747.png"
+            src="https://statichk.cmermedical.com/imgs/2024/12/24c5062453b92747.png"
             alt=""
           />
         </div>
@@ -29,7 +29,7 @@
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/12/cd50e814ebff98ed.png"
+            src="https://statichk.cmermedical.com/imgs/2024/12/cd50e814ebff98ed.png"
             alt=""
           />
         </div>
@@ -46,7 +46,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/2fb6c05215a4d699.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/2fb6c05215a4d699.png"
               alt=""
             />
           </div>
@@ -55,7 +55,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/f60d1519f379700a.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/f60d1519f379700a.png"
               alt=""
             />
           </div>
@@ -64,7 +64,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/5244f52e15cdd387.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/5244f52e15cdd387.png"
               alt=""
             />
           </div>
@@ -75,7 +75,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/d267b0afce620645.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/d267b0afce620645.png"
               alt=""
             />
           </div>
@@ -84,7 +84,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/71fc2dd9441b9074.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/71fc2dd9441b9074.png"
               alt=""
             />
           </div>
@@ -93,7 +93,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/f15948f5b4d76136.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/f15948f5b4d76136.png"
               alt=""
             />
           </div>
@@ -102,7 +102,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/47fd84cd15ccb0cb.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/47fd84cd15ccb0cb.png"
               alt=""
             />
           </div>
@@ -115,7 +115,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/12/2ace672492bbbf00.png"
+              src="https://statichk.cmermedical.com/imgs/2024/12/2ace672492bbbf00.png"
               alt=""
             />
           </div>
@@ -287,7 +287,7 @@ export default {
       margin: 55px auto 65px;
     }
     .activity-banner {
-      background: url("https://static.cmereye.com/imgs/2024/12/5d2af511d2cbd071.png")
+      background: url("https://statichk.cmermedical.com/imgs/2024/12/5d2af511d2cbd071.png")
         no-repeat;
       background-size: cover;
       width: 100%;
@@ -644,7 +644,7 @@ export default {
       }
     }
     .activity-banner {
-      background: url(https://static.cmereye.com/imgs/2024/12/5c40d1f50833a745.png)
+      background: url(https://statichk.cmermedical.com/imgs/2024/12/5c40d1f50833a745.png)
         no-repeat;
       background-size: contain;
       width: 100%;

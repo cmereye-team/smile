@@ -559,19 +559,19 @@
         "經過詳細的眼睛檢查和診症，醫護人員會告知客人是否適合矯視，才進行矯視程序。",
       stepLists: [
         {
-          img: "https://static.cmereye.com/imgs/2022/12/06d8dc6309843ceb.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/06d8dc6309843ceb.png",
           text: "屈光檢查",
         },
         {
-          img: "https://static.cmereye.com/imgs/2022/12/720c63a2c77fa1fd.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/720c63a2c77fa1fd.png",
           text: "術前準備",
         },
         {
-          img: "https://static.cmereye.com/imgs/2022/12/8783c894fe4331d9.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/8783c894fe4331d9.png",
           text: "預約翌日覆診",
         },
         {
-          img: "https://static.cmereye.com/imgs/2022/12/02280dc75fddbd20.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/02280dc75fddbd20.png",
           text: "矯視療程",
         },
       ],

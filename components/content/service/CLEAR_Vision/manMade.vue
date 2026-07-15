@@ -15,7 +15,7 @@
     </div>
     <div class="madeBox1">
       <img
-        src="https://static.cmereye.com/imgs/2022/12/5867e965bfafc043.png"
+        src="https://statichk.cmermedical.com/imgs/2022/12/5867e965bfafc043.png"
         alt=""
       />
       <span
@@ -24,7 +24,7 @@
     </div>
     <div class="madeBox2">
       <img
-        src="https://static.cmereye.com/imgs/2022/12/19f9b730f426da71.png"
+        src="https://statichk.cmermedical.com/imgs/2022/12/19f9b730f426da71.png"
         alt=""
       />
       <span

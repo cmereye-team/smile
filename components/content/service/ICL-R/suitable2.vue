@@ -5,7 +5,7 @@
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/03/0924cbb6f7344bc4.png"
+              src="https://statichk.cmermedical.com/imgs/2024/03/0924cbb6f7344bc4.png"
               alt="重點內容"
             />
           </div>
@@ -53,42 +53,42 @@ export default {
       guestList: [
         {
           id: 1,
-          img: "https://static.cmereye.com/imgs/2024/03/e08b49d2f42377d8.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/e08b49d2f42377d8.png",
           text: `米姬<br class="mbShow" />Maggie`,
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/03/c39f57c9e9069e24.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/c39f57c9e9069e24.png",
           text: `游嘉欣`,
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/03/06b9d83ebbb63bc3.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/06b9d83ebbb63bc3.png",
           text: `胡瀞詩`,
         },
         {
           id: 4,
-          img: "https://static.cmereye.com/imgs/2024/03/533fecd42ee91784.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/533fecd42ee91784.png",
           text: `眼科<br class="mbShow" />專科醫生`,
         },
         {
           id: 5,
-          img: "https://static.cmereye.com/imgs/2024/03/4f01a2fe8f53518f.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/4f01a2fe8f53518f.png",
           text: `ZEISS<br class="mbShow" /> SMILE<sup>®</sup>pro<br />技術講解`,
         },
         {
           id: 6,
-          img: "https://static.cmereye.com/imgs/2024/03/dc417e9ba3221f85.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/dc417e9ba3221f85.png",
           text: `希瑪<br class="mbShow" />微笑閃亮大使<br />體驗分享`,
         },
         {
           id: 7,
-          img: "https://static.cmereye.com/imgs/2024/03/b2d15d4ff6852a8b.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/b2d15d4ff6852a8b.png",
           text: `即場<br />眼睛篩查`,
         },
         {
           id: 8,
-          img: "https://static.cmereye.com/imgs/2024/03/3313d33dc9593e92.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/03/3313d33dc9593e92.png",
           text: `會場獨家<br />矯視優惠`,
         },
       ],
@@ -326,7 +326,7 @@ export default {
   .bg-photo {
     // background: #c7e8ef80;
     // border-radius: 0 0 50% 50%;
-    background: url("https://static.cmereye.com/imgs/2024/03/90eaca0e1675b6be.png");
+    background: url("https://statichk.cmermedical.com/imgs/2024/03/90eaca0e1675b6be.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     // width: 300%;

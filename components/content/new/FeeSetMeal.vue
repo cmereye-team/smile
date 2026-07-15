@@ -47,7 +47,7 @@ export default {
 @media screen and (min-width: 768px) {
   .fee-set-meal {
     width: 100vw;
-    background: url("https://static.cmereye.com/imgs/2024/04/538f740780c91afc.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/538f740780c91afc.png")
       no-repeat;
     background-position: center;
     background-size: 100% 100%;

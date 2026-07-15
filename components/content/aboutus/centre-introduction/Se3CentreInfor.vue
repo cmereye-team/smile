@@ -8,10 +8,10 @@
         <p>{{ $t("aboutUs.centreIntroduction.Se3CentreInfor.p") }}</p>
       </div>
       <div class="md:flex pcShow page_container img_box">
-        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
+        <img class="flex-1" src="https://statichk.cmermedical.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
       </div>
       <div class="md:flex mbShow page_container img_box">
-        <img class="flex-1" src="https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
+        <img class="flex-1" src="https://statichk.cmermedical.com/imgs/2023/03/11041faf78b0d062.jpg" alt />
       </div>
       <div class="pcShow section_text shadow-lg" :style="{
         maxWidth: $i18n.locale === 'en' ? '888px' : 'max-content',
@@ -81,13 +81,13 @@ export default {
       isScreen: '',
       banners: [
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award1.jpg",
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award2.jpg",
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award3.jpg",
         },
       ],
       swiperOptionMb: {
@@ -126,7 +126,7 @@ export default {
     -ms-writing-mode: tb-lr;
   }
 
-  // background: url("https://static.cmereye.com/imgs/2022/11/97761e71d0339c78.png")
+  // background: url("https://statichk.cmermedical.com/imgs/2022/11/97761e71d0339c78.png")
   //   no-repeat;
   background-position-y: 70%;
   background-size: 100%;

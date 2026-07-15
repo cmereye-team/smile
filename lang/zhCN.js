@@ -1556,19 +1556,19 @@ module.exports = {
         "经过详细的眼睛检查和诊症，医护人员会告知客人是否适合矫视，才进行矫视程序。",
       stepLists: [
         {
-          img: "https://static.cmereye.com/imgs/2022/12/06d8dc6309843ceb.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/06d8dc6309843ceb.png",
           text: "屈光检查",
         },
         {
-          img: "https://static.cmereye.com/imgs/2022/12/720c63a2c77fa1fd.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/720c63a2c77fa1fd.png",
           text: "术前准备",
         },
         {
-          img: "https://static.cmereye.com/imgs/2022/12/8783c894fe4331d9.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/8783c894fe4331d9.png",
           text: "预约翌日覆诊",
         },
         {
-          img: "https://static.cmereye.com/imgs/2022/12/02280dc75fddbd20.png",
+          img: "https://statichk.cmermedical.com/imgs/2022/12/02280dc75fddbd20.png",
           text: "矫视疗程",
         },
       ],
@@ -1917,7 +1917,7 @@ module.exports = {
       mediaBujuLists_1_1: [
         {
           link: "https://www.youtube.com/watch?v=IQpaEi58v1E&list=PLWVonQr1f7Xjow3tYHO6H94hRtL5xzZV_&index=10",
-          img: "https://static.cmereye.com/imgs/2023/08/435ff83ed8fbf4f3.jpg",
+          img: "https://statichk.cmermedical.com/imgs/2023/08/435ff83ed8fbf4f3.jpg",
           meida: `<span>植入式隐形眼镜-麦沛东小剧场</span>`,
         },
         {
@@ -2062,12 +2062,12 @@ module.exports = {
       mediaBujuLists_1_2_1: [
         {
           link: "https://youtu.be/85OX0uADWEw",
-          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/0536cdb36af8d0aa.png",
           meida: `<span>微笑矫视 - 胡瀞诗Ceci Wu（精华版）</span>`,
         },
         {
           link: "https://youtu.be/cLVfjeX3WwA",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/b358621627598ede.png",
           meida: `<span>SMILE 微笑矫视-Jimmy（精华版）</span>`,
         },
       ],
@@ -2106,37 +2106,37 @@ module.exports = {
       mediaBujuLists_1_3: [
         {
           link: "https://youtu.be/Oagx6REZNIU",
-          img: "https://static.cmereye.com/imgs/2024/05/de057cc981178252.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/de057cc981178252.png",
           meida: `<span>SMILE PRO微笑矫视-应智越 细猫</span>`,
         },
         {
           link: "https://youtu.be/pEZotzT-TeU",
-          img: "https://static.cmereye.com/imgs/2024/05/b3a64f2297aa5d56.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/b3a64f2297aa5d56.png",
           meida: `<span>SMILE PRO微笑矫视-Mina</span>`,
         },
         {
           link: "https://youtu.be/g9XwsIASJa4",
-          img: "https://static.cmereye.com/imgs/2024/05/c165a2c28ef7f91d.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/c165a2c28ef7f91d.png",
           meida: `<span>SMILE PRO微笑矫视-米姬Maggie</span>`,
         },
         {
           link: "https://youtu.be/I6Yv4PTTSC4",
-          img: "https://static.cmereye.com/imgs/2024/05/aafe36df241e686b.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/aafe36df241e686b.png",
           meida: `<span>SMILE PRO微笑矫视-Cindy Wong</span>`,
         },
         {
           link: "https://youtu.be/Habf2htLhbQ",
-          img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/0fdec04c7aea12d2.png",
           meida: `<span>SMILE PRO微笑矫视-刘学铭（精华版）</span>`,
         },
         {
           link: "https://youtu.be/SvBWSkyXidU",
-          img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/5d9dd34273aaf722.png",
           meida: `<span>SMILE PRO微笑矫视-Sandy To（精华版）</span>`,
         },
         {
           link: "https://youtu.be/N1Uar7xC_vk",
-          img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/8fd322237c91b381.png",
           meida: `<span>SMILE PRO微笑矫视-莎比亚（精华版）</span>`,
         },
       ],
@@ -2165,61 +2165,61 @@ module.exports = {
       mediaBujuLists_2_1_1: [
         {
           link: "https://youtu.be/B12IjJ3tFHE",
-          img: "https://static.cmereye.com/imgs/2024/06/39341ae0c9762d92.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/06/39341ae0c9762d92.png",
           meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
         },
         {
           link: "https://youtu.be/r0yDL98l0Zo",
-          img: "https://static.cmereye.com/imgs/2024/06/5236038dbb63e3f6.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/06/5236038dbb63e3f6.png",
           meida: `<span>植入式隐形眼镜- 麦沛东（完整版）</span>`,
         },
       ],
       mediaBujuLists_2_3: [
         {
           link: "https://youtu.be/1p5Qm_772jI",
-          img: "https://static.cmereye.com/imgs/2024/05/5570a3ebeac02ae6.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/5570a3ebeac02ae6.png",
           meida: `<span>SMILE PRO微笑矫视-应智越 细猫</span>`,
         },
         {
           link: "https://youtu.be/4ELnbQjUCsA",
-          img: "https://static.cmereye.com/imgs/2024/05/e2ad3164b4b70c64.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/e2ad3164b4b70c64.png",
           meida: `<span>SMILE PRO微笑矫视-Mina</span>`,
         },
         {
           link: "https://youtu.be/r4rbUUVtjzM",
-          img: "https://static.cmereye.com/imgs/2024/05/0ba23b592be25e40.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/0ba23b592be25e40.png",
           meida: `<span>SMILE PRO微笑矫视-米姬Maggie</span>`,
         },
         {
           link: "https://youtu.be/kVEJ-PN4AJo",
-          img: "https://static.cmereye.com/imgs/2024/05/bb90fa03cbfbc945.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/bb90fa03cbfbc945.png",
           meida: `<span>SMILE PRO微笑矫视-Cindy Wong</span>`,
         },
         {
           link: "https://youtu.be/33vCgmDh-UQ",
-          img: "https://static.cmereye.com/imgs/2024/05/0fdec04c7aea12d2.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/0fdec04c7aea12d2.png",
           meida: `<span>SMILE PRO微笑矫视-刘学铭（完整版）</span>`,
         },
         {
           link: "https://youtu.be/iHBGkRh-CXw",
-          img: "https://static.cmereye.com/imgs/2024/05/5d9dd34273aaf722.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/5d9dd34273aaf722.png",
           meida: `<span>SMILE PRO微笑矫视-Sandy To（完整版）</span>`,
         },
         {
           link: "https://youtu.be/jBAIJeUQGz0",
-          img: "https://static.cmereye.com/imgs/2024/05/8fd322237c91b381.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/8fd322237c91b381.png",
           meida: `<span>SMILE PRO微笑矫视-莎比亚（完整版）</span>`,
         },
       ],
       mediaBujuLists_2_2: [
         {
           link: "https://youtu.be/inD-CATvEl4",
-          img: "https://static.cmereye.com/imgs/2024/05/7f62a4ec1d4e73cc.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/7f62a4ec1d4e73cc.png",
           meida: `<span>SMILE 微笑矫视-李伟志</span>`,
         },
         {
           link: "https://youtu.be/sw1fxUXMqes",
-          img: "https://static.cmereye.com/imgs/2024/05/3be8dd3495a5bc22.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/3be8dd3495a5bc22.png",
           meida: `<span>SMILE 微笑矫视-麦秋成</span>`,
         },
         {
@@ -2311,12 +2311,12 @@ module.exports = {
       mediaBujuLists_2_2_1: [
         {
           link: "https://youtu.be/Z9s3c5Thu7w",
-          img: "https://static.cmereye.com/imgs/2024/05/0536cdb36af8d0aa.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/0536cdb36af8d0aa.png",
           meida: `<span>SMILE 微笑矫视-胡瀞诗Ceci Wu (完整版)</span>`,
         },
         {
           link: "https://youtu.be/jO_h9YqCJzs",
-          img: "https://static.cmereye.com/imgs/2024/05/b358621627598ede.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/b358621627598ede.png",
           meida: `<span>SMILE 微笑矫视-Jimmy (完整版)</span>`,
         },
       ],

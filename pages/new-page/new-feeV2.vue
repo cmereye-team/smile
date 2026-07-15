@@ -1628,7 +1628,7 @@ body {
     }
   }
   .ellipse_explain_bg {
-    // background: url("https://static.cmereye.com/imgs/2024/08/523108db1c129793.png")
+    // background: url("https://statichk.cmermedical.com/imgs/2024/08/523108db1c129793.png")
     //   no-repeat;
     // background-size: 100% 100%;
     box-sizing: border-box;

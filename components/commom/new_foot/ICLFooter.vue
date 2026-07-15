@@ -8,7 +8,7 @@
         <nuxt-link :to="localePath('/')">
           <img
             class="foot_logo"
-            src="https://static.cmereye.com/imgs/2024/12/ff6e4445c2a79fba.png"
+            src="https://statichk.cmermedical.com/imgs/2024/12/ff6e4445c2a79fba.png"
             alt=""
           />
         </nuxt-link>
@@ -131,15 +131,15 @@
         </div>
         <div class="mbMenu">
           <div v-if="$i18n.locale !== 'en'" class="pathLink">
-            <!-- <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'" />
-            <DetailOption :group="OrthopedicList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'" />
-            <DetailOption :group="diagnosisInstructionsList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'" />
-            <DetailOption :group="faq"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'" />
-            <DetailOption :group="contactUs"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png'" />
-            <DetailOption :group="ophthalmicConsultation"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'" />
-            <DetailOption :group="reservationService" :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'" />
-            <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"  />
-            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'" /> -->
+            <!-- <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/13909e2daa8b7abc.png'" />
+            <DetailOption :group="OrthopedicList"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9c07e8cd808db657.png'" />
+            <DetailOption :group="diagnosisInstructionsList"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/1c9c69c68f3fa684.png'" />
+            <DetailOption :group="faq"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/416a83e2af388473.png'" />
+            <DetailOption :group="contactUs"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9dbc6d0f3f0e770e.png'" />
+            <DetailOption :group="ophthalmicConsultation"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/0252a55e616b5787.png'" />
+            <DetailOption :group="reservationService" :pcOrMobile="'mobile'"  :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/631190f31f38fc51.png'" />
+            <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9a02ae9a288315f6.png'"  />
+            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/82b23c1dc46ff323.png'" /> -->
             <DetailOption :group="groupList" />
             <DetailOption :group="OrthopedicList" />
             <DetailOption :group="diagnosisInstructionsList" />
@@ -153,15 +153,15 @@
             <!-- <div></div> -->
           </div>
           <div v-else class="pathLink">
-            <!-- <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'" />
-            <DetailOption :group="OrthopedicList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'" />
-            <DetailOption :group="diagnosisInstructionsList"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'" />
-            <DetailOption :group="faq"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'" />
-            <DetailOption :group="contactUs"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png'" />
-            <DetailOption :group="ophthalmicConsultation"  :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'" />
-            <DetailOption :group="reservationService" :pcOrMobile="'mobile'"  :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'" />
-            <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"  />
-            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'" /> -->
+            <!-- <DetailOption :group="groupList"  :pcOrMobile="'mobile'"  :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/13909e2daa8b7abc.png'" />
+            <DetailOption :group="OrthopedicList"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9c07e8cd808db657.png'" />
+            <DetailOption :group="diagnosisInstructionsList"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/1c9c69c68f3fa684.png'" />
+            <DetailOption :group="faq"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/416a83e2af388473.png'" />
+            <DetailOption :group="contactUs"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9dbc6d0f3f0e770e.png'" />
+            <DetailOption :group="ophthalmicConsultation"  :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/0252a55e616b5787.png'" />
+            <DetailOption :group="reservationService" :pcOrMobile="'mobile'"  :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/631190f31f38fc51.png'" />
+            <DetailOption :group="video" :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9a02ae9a288315f6.png'"  />
+            <DetailOption :group="share" :pcOrMobile="'mobile'" :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/82b23c1dc46ff323.png'" /> -->
             <DetailOption :group="groupList" />
             <DetailOption :group="ophthalmicConsultation" />
             <DetailOption :group="OrthopedicList" />

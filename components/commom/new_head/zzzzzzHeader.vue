@@ -176,7 +176,7 @@
               </a>
             </div>
             <!-- <div>
-              <img src="https://static.cmereye.com/imgs/2023/08/88c40669a540c35c.png" alt="+85260610511" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/08/88c40669a540c35c.png" alt="+85260610511" />
             </div> -->
           </div>
           <nuxt-link
@@ -323,7 +323,7 @@
             <a :href="localePath('/smilepro-event')">
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2024/03/ad4af21430a88d0f.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/03/ad4af21430a88d0f.png"
                   class="p-1"
                 />
               </div>
@@ -339,7 +339,7 @@
             >
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/10/09c8d2399ccf421a.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/10/09c8d2399ccf421a.png"
                   class="p-1"
                 />
               </div>
@@ -403,7 +403,7 @@
             <a :href="localePath('/')">
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/10/25ef70fdd54019c0.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/10/25ef70fdd54019c0.png"
                   class="p-1"
                 />
               </div>
@@ -547,7 +547,7 @@
           <div class="header_body">
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/10/224d72c8093ad89a.png"
+                src="https://statichk.cmermedical.com/imgs/2023/10/224d72c8093ad89a.png"
                 alt=""
               />
             </div>
@@ -581,7 +581,7 @@
         <div class="mb_menu_list">
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/08/6fad924059f2fcad.png"
+              src="https://statichk.cmermedical.com/imgs/2023/08/6fad924059f2fcad.png"
               alt=""
             />
           </div>
@@ -590,55 +590,55 @@
               <DetailOption
                 :group="groupList"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/13909e2daa8b7abc.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/13909e2daa8b7abc.png'"
               />
 
               <DetailOption
                 :group="OrthopedicList"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/9c07e8cd808db657.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9c07e8cd808db657.png'"
               />
 
               <DetailOption
                 :group="diagnosisInstructionsList"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/1c9c69c68f3fa684.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/1c9c69c68f3fa684.png'"
               />
 
               <DetailOption
                 :group="faq"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/416a83e2af388473.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/416a83e2af388473.png'"
               />
 
               <DetailOption
                 :group="contactUs"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/9dbc6d0f3f0e770e.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9dbc6d0f3f0e770e.png'"
               />
 
               <DetailOption
                 :group="ophthalmicConsultation"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/0252a55e616b5787.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/0252a55e616b5787.png'"
               />
 
               <DetailOption
                 :group="reservationService"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/631190f31f38fc51.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/631190f31f38fc51.png'"
               />
 
               <DetailOption
                 :group="video"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/9a02ae9a288315f6.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/9a02ae9a288315f6.png'"
               />
 
               <DetailOption
                 :group="share"
                 :pcOrMobile="'mobile'"
-                :dataSrc="'https://static.cmereye.com/imgs/2023/10/82b23c1dc46ff323.png'"
+                :dataSrc="'https://statichk.cmermedical.com/imgs/2023/10/82b23c1dc46ff323.png'"
               />
               <div style="minwidth: 140px"></div>
             </div>
@@ -2045,7 +2045,7 @@ $active_gradient: #4570b6;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: url("https://static.cmereye.com/imgs/2023/08/d6f27536cde86418.png");
+      background: url("https://statichk.cmermedical.com/imgs/2023/08/d6f27536cde86418.png");
       background-size: 100%, 100%;
       background-repeat: no-repeat;
       & > div:nth-child(2) {

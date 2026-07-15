@@ -1,7 +1,7 @@
 <template>
   <div class="fit">
     <div class="fit-l">
-      <img src="https://static.cmereye.com/imgs/2023/08/7a6327e26c0399a6.jpg" alt="">
+      <img src="https://statichk.cmermedical.com/imgs/2023/08/7a6327e26c0399a6.jpg" alt="">
     </div>
     <div class="fit-r">
       <div :class="[$i18n.locale === 'en'? 'fit-r-tEng fit-r-t' : 'fit-r-t']">

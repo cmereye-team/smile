@@ -174,17 +174,17 @@
       <div class="md:flex pcShow page_container img_box">
         <img
           class="flex-1"
-          src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
+          src="https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
           alt
         />
         <img
           class="flex-1"
-          src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
+          src="https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
           alt
         />
         <img
           class="flex-1"
-          src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
+          src="https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
           alt
         />
       </div>
@@ -193,17 +193,17 @@
     <div class="md:flex mbShow page_container img_box">
       <img
         class="flex-1"
-        src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
+        src="https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award1.jpg"
         alt
       />
       <img
         class="flex-1"
-        src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
+        src="https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award2.jpg"
         alt
       />
       <img
         class="flex-1"
-        src="https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
+        src="https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award3.jpg"
         alt
       />
     </div>
@@ -215,13 +215,13 @@ export default {
     return {
       banners: [
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award1.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award1.jpg",
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award2.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award2.jpg",
         },
         {
-          src: "https://static.cmereye.com/imgs/smile/images/about-us/centre-introduction/award3.jpg",
+          src: "https://statichk.cmermedical.com/imgs/smile/images/about-us/centre-introduction/award3.jpg",
         },
       ],
       swiperOptionMb: {
@@ -252,7 +252,7 @@ export default {
     -ms-writing-mode: tb-lr;
   }
 
-  // background: url("https://static.cmereye.com/imgs/2022/11/97761e71d0339c78.png")
+  // background: url("https://statichk.cmermedical.com/imgs/2022/11/97761e71d0339c78.png")
   //   no-repeat;
   background-position-y: 70%;
   background-size: 100%;
@@ -365,7 +365,7 @@ export default {
 
   .details_box {
     position: absolute;
-    background: url("https://static.cmereye.com/imgs/2023/03/a76a352cd7da7d4e.png")
+    background: url("https://statichk.cmermedical.com/imgs/2023/03/a76a352cd7da7d4e.png")
       no-repeat;
     background-size: 100% 100%;
     width: 202px;
@@ -453,7 +453,7 @@ export default {
 
   .company {
     position: relative;
-    background: url(https://static.cmereye.com/imgs/2023/03/0d3dadae028b6e8a.png)
+    background: url(https://statichk.cmermedical.com/imgs/2023/03/0d3dadae028b6e8a.png)
       no-repeat;
     background-size: 100% 95%;
     margin: 70px auto;
@@ -711,7 +711,7 @@ export default {
 
   .details_box {
     // position: absolute;
-    background: url(https://static.cmereye.com/imgs/2023/03/a76a352cd7da7d4e.png)
+    background: url(https://statichk.cmermedical.com/imgs/2023/03/a76a352cd7da7d4e.png)
       no-repeat;
     background-size: 93% 100%;
     width: 260px;
@@ -800,7 +800,7 @@ export default {
 
   .company {
     position: relative;
-    background: url("https://static.cmereye.com/imgs/2023/03/bb1a387f486a992b.png")
+    background: url("https://statichk.cmermedical.com/imgs/2023/03/bb1a387f486a992b.png")
       no-repeat;
     background-size: 100% 98%;
     background-position: bottom;

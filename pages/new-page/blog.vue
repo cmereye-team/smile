@@ -107,28 +107,28 @@ export default {
       blogList: [
         {
           id: 1,
-          img: "https://static.cmereye.com/imgs/2024/05/9a87d93ebad06d0e.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/9a87d93ebad06d0e.png",
           title: "ICL植入式隱形眼鏡要幾錢？",
           text: "高度近視者可以通過手術矯治，可以選擇的手術方式並不多",
           tag: "",
         },
         {
           id: 2,
-          img: "https://static.cmereye.com/imgs/2024/05/9a87d93ebad06d0e.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/9a87d93ebad06d0e.png",
           title: "ICL植入式隱形眼鏡要幾錢？",
           text: "高度近視者可以通過手術矯治，可以選擇的手術方式並不多",
           tag: "",
         },
         {
           id: 3,
-          img: "https://static.cmereye.com/imgs/2024/05/9a87d93ebad06d0e.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/9a87d93ebad06d0e.png",
           title: "ICL植入式隱形眼鏡要幾錢？",
           text: "高度近視者可以通過手術矯治，可以選擇的手術方式並不多",
           tag: "",
         },
         {
           id: 4,
-          img: "https://static.cmereye.com/imgs/2024/05/9a87d93ebad06d0e.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/9a87d93ebad06d0e.png",
           title: "ICL植入式隱形眼鏡要幾錢？",
           text: "高度近視者可以通過手術矯治，可以選擇的手術方式並不多",
           tag: "",
@@ -327,7 +327,7 @@ export default {
     justify-content: center;
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/ab7f3a79d8c7379e.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/ab7f3a79d8c7379e.png")
       no-repeat;
     background-size: cover;
     height: 32.08vw;
@@ -484,7 +484,7 @@ export default {
     }
   }
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/700a09eef040b407.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/700a09eef040b407.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

@@ -8,7 +8,7 @@
       <div class="mbShow mbHeaderBox">
         <img src="../../../asset/image/common/Vector.png" class="mr-5" alt="" @click="langDrawer = true" />
         <button @click="drawer = true">
-          <img src="https://static.cmereye.com/imgs/2022/12/31d945d3f5d8d4df.png" alt="" />
+          <img src="https://statichk.cmermedical.com/imgs/2022/12/31d945d3f5d8d4df.png" alt="" />
         </button>
         <el-drawer v-show="drawer" :visible.sync="drawer" :with-header="false" size="60%">
           <div style="padding: 10px">
@@ -258,7 +258,7 @@
 <!--          <button class="link_more shadow-lg">-->
 <!--            <div class="flex items-center justify-evenly">-->
 <!--              <div class="p-1 text-left">-->
-<!--                <img src="https://static.cmereye.com/imgs/2023/10/b99823c00b4de6ee.png" alt="">-->
+<!--                <img src="https://statichk.cmermedical.com/imgs/2023/10/b99823c00b4de6ee.png" alt="">-->
 <!--                <h3 class="text-xs font-normal text-center icl-r-size">ICL <br class="pcShow" />星級矯視講座</h3>-->
 <!--              </div>-->
 <!--            </div>-->
@@ -273,7 +273,7 @@
             <span></span>
             <span></span>
             <div class="flex items-center justify-evenly">
-              <img src="https://static.cmereye.com/imgs/2023/08/d119c3b5973e2b97.png"
+              <img src="https://statichk.cmermedical.com/imgs/2023/08/d119c3b5973e2b97.png"
                 style="max-width: 38px;max-height: 45px;" class="p-1" />
               <div class="p-1 text-left">
                 <h3 class="text-xs font-normal text-center" v-html="$t('home.divit')" ></h3>

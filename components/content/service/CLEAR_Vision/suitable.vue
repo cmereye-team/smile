@@ -6,28 +6,28 @@
     <div class="flex justify-evenly mt-10" :class="[$i18n.locale == 'en' ? 'suit_box suit_box_pc_eng' :'suit_box']">
       <div class="flex flex-col items-center" :class="[$i18n.locale == 'en' ? 'suitable suitable_eng':'suitable']">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/6d192401e3e64882.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/6d192401e3e64882.png"
           alt=""
         />
         <span v-html="$t('service.clearVision.suitable.span1')"></span>
       </div>
       <div class="flex flex-col items-center" :class="[$i18n.locale == 'en' ? 'suitable suitable_eng':'suitable']">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/324ad7198a9d2632.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/324ad7198a9d2632.png"
           alt=""
         />
         <span v-html="$t('service.clearVision.suitable.span2')"></span>
       </div>
       <div class="flex flex-col items-center" :class="[$i18n.locale == 'en' ? 'suitable suitable_eng':'suitable']">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/d2407e6ff4b3b56c.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/d2407e6ff4b3b56c.png"
           alt=""
         />
         <span v-html="$t('service.clearVision.suitable.span3')"></span>
       </div>
       <div class="flex flex-col items-center" :class="[$i18n.locale == 'en' ? 'suitable suitable_eng':'suitable']">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/af544fe01cbe5d65.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/af544fe01cbe5d65.png"
           alt=""
         />
         <span v-html="$t('service.clearVision.suitable.span4')"></span>
@@ -37,7 +37,7 @@
       <button>
         <div class="flex btn-yuyue">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
             alt=""
             style="width: 12vw"
           />

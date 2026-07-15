@@ -13,7 +13,7 @@
       <div class="serve-box serve-check" @click="serveForm2">
         <img
           class="serve-examineImg"
-          src="https://static.cmereye.com/imgs/2023/03/508bd47a29791e21.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/03/508bd47a29791e21.jpg"
           alt=""
         />
         <h3 class="serve_details serve-examineImg">{{ $t("home.serve.p1") }}</h3>
@@ -21,7 +21,7 @@
       <div class="serve-box ml-5 yuye" @click="serveForm">
         <img
           class="serve-lectureImg"
-          src="https://static.cmereye.com/imgs/2023/03/c5a46c2325efaff7.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/03/c5a46c2325efaff7.jpg"
           alt=""
         />
         <h3 class="serve_details serve-lectureImg">{{ $t("home.serve.p2") }}</h3>
@@ -38,8 +38,8 @@
         <img
           :src="
             $i18n.locale == 'en'
-              ? 'https://static.cmereye.com/imgs/2023/08/572656ab3d644c46.png'
-              : 'https://static.cmereye.com/imgs/2023/03/f25039e2bda3a90c.jpg'
+              ? 'https://statichk.cmermedical.com/imgs/2023/08/572656ab3d644c46.png'
+              : 'https://statichk.cmermedical.com/imgs/2023/03/f25039e2bda3a90c.jpg'
           "
           alt=""
           class="serve-examineImg"
@@ -50,8 +50,8 @@
           class="serve-lectureImg"
           :src="
             $i18n.locale == 'en'
-              ? 'https://static.cmereye.com/imgs/2023/08/677cb694ddc4a1f1.png'
-              : 'https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg'
+              ? 'https://statichk.cmermedical.com/imgs/2023/08/677cb694ddc4a1f1.png'
+              : 'https://statichk.cmermedical.com/imgs/2023/03/6de716cfde208174.jpg'
           "
           alt=""
           @click="serveForm"
@@ -59,7 +59,7 @@
       </div>
       <!-- <div class="serve-box ml-5 yuye" @click="serveForm">
         <img
-          src="https://static.cmereye.com/imgs/2023/03/6de716cfde208174.jpg "
+          src="https://statichk.cmermedical.com/imgs/2023/03/6de716cfde208174.jpg "
           alt=""
         />
       </div> -->

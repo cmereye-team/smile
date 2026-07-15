@@ -6,19 +6,19 @@
     <div class="flex mb-28 pcShow justify-center">
       <div class="px-2" @click="shareForm('https://www.youtube.com/watch?v=5ihrzFvOy38')">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/431d01020917af25.jpg"
+          src="https://statichk.cmermedical.com/imgs/2022/12/431d01020917af25.jpg"
           alt=""
         />
       </div>
       <div class="px-2" @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/cc1809d5c22d674e.jpg"
+          src="https://statichk.cmermedical.com/imgs/2022/12/cc1809d5c22d674e.jpg"
           alt=""
         />
       </div>
       <div class="px-2" @click="shareForm('https://www.youtube.com/watch?v=2t7JjTab4xA')">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
+          src="https://statichk.cmermedical.com/imgs/2022/12/762b14e792fbf3b7.jpg"
           alt=""
         />
       </div>
@@ -29,7 +29,7 @@
           <div class="swiper-slide" @click="shareForm('https://www.youtube.com/watch?v=5ihrzFvOy38')">
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2022/12/431d01020917af25.jpg"
+                src="https://statichk.cmermedical.com/imgs/2022/12/431d01020917af25.jpg"
                 alt=""
               />
             </div>
@@ -37,7 +37,7 @@
           <div class="swiper-slide" @click="shareForm('https://www.youtube.com/watch?v=e-c_qRuvWTA')">
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2022/12/cc1809d5c22d674e.jpg"
+                src="https://statichk.cmermedical.com/imgs/2022/12/cc1809d5c22d674e.jpg"
                 alt=""
               />
             </div>
@@ -45,7 +45,7 @@
           <div class="swiper-slide" @click="shareForm('https://www.youtube.com/watch?v=2t7JjTab4xA')">
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2022/12/762b14e792fbf3b7.jpg"
+                src="https://statichk.cmermedical.com/imgs/2022/12/762b14e792fbf3b7.jpg"
                 alt=""
               />
             </div>
@@ -57,7 +57,7 @@
       <button>
         <div class="flex btn-yuyue">
           <img
-            src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+            src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
             alt=""
             style="width: 12vw"
           />

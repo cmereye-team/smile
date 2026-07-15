@@ -34,7 +34,7 @@ export default {
     }
   }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/08/34ed60fc10ea00d7.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/08/34ed60fc10ea00d7.png");
     background-position: top;
     background-size: 100%;
     width: 100vw;
@@ -43,7 +43,7 @@ export default {
     margin-bottom: 10vw;
   }
   .banner_eng {
-    background-image: url("https://static.cmereye.com/imgs/2023/08/f5c567864335057b.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/08/f5c567864335057b.png");
     background-position: top;
     background-size: 100%;
     width: 100vw;
@@ -58,13 +58,13 @@ export default {
     margin-top: 130px;
   }
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/08/a5ffa7a66b536560.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/08/a5ffa7a66b536560.png");
     cursor: pointer;
     max-width: 1280px;
     margin: auto;
   }
   .banner_eng {
-    background-image: url("https://static.cmereye.com/imgs/2023/08/4607e6bbf214356d.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/08/4607e6bbf214356d.png");
     cursor: pointer;
     max-width: 1280px;
     margin: auto;

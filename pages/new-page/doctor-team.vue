@@ -142,7 +142,7 @@ export default {
         // {
         //   id: 8,
         //   name: this.$t("doctor_team.doctor3.name"),
-        //   img: "https://static.cmereye.com/imgs/2024/04/97a0a764a2e54197.png",
+        //   img: "https://statichk.cmermedical.com/imgs/2024/04/97a0a764a2e54197.png",
         //   title: [
         //     this.$t("doctor_team.doctor3.intro1"),
         //     this.$t("doctor_team.doctor3.intro2"),
@@ -155,7 +155,7 @@ export default {
         {
           id: 2,
           name: this.$t("doctor_team.doctor4.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/4fa9ad28827023df.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/4fa9ad28827023df.png",
           title: [
             this.$t("doctor_team.doctor4.intro1"),
             this.$t("doctor_team.doctor4.intro2"),
@@ -166,7 +166,7 @@ export default {
         {
           id: 3,
           name: this.$t("doctor_team.doctor5.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/35a8ebff87489352.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/35a8ebff87489352.png",
           title: [
             this.$t("doctor_team.doctor5.intro1"),
             this.$t("doctor_team.doctor5.intro2"),
@@ -177,7 +177,7 @@ export default {
         {
           id: 4,
           name: this.$t("doctor_team.doctor6.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/23dd6d5e7647a6b5.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/23dd6d5e7647a6b5.png",
           title: [
             this.$t("doctor_team.doctor6.intro1"),
             this.$t("doctor_team.doctor6.intro2"),
@@ -188,7 +188,7 @@ export default {
         {
           id: 5,
           name: this.$t("doctor_team.doctor7.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/5dea1f2a9eaa115d.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/5dea1f2a9eaa115d.png",
           title: [
             this.$t("doctor_team.doctor7.intro1"),
             this.$t("doctor_team.doctor7.intro2"),
@@ -201,7 +201,7 @@ export default {
         {
           id: 6,
           name: this.$t("doctor_team.doctor8.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/d2d8ef48f7e7d66f.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/d2d8ef48f7e7d66f.png",
           title: [
             this.$t("doctor_team.doctor8.intro1"),
             this.$t("doctor_team.doctor8.intro2"),
@@ -212,7 +212,7 @@ export default {
         {
           id: 7,
           name: this.$t("doctor_team.doctor9.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/12f6f365602dfa65.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/12f6f365602dfa65.png",
           title: [
             this.$t("doctor_team.doctor9.intro1"),
             this.$t("doctor_team.doctor9.intro2"),
@@ -224,7 +224,7 @@ export default {
         {
           id: 9,
           name: this.$t("doctor_team.doctor10.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/49af412bf2fd0d24.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/49af412bf2fd0d24.png",
           title: [
             this.$t("doctor_team.doctor10.intro1"),
             this.$t("doctor_team.doctor10.intro2"),
@@ -236,7 +236,7 @@ export default {
         {
           id: 10,
           name: this.$t("doctor_team.doctor11.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/a7d90bf031d2130e.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/a7d90bf031d2130e.png",
           title: [
             this.$t("doctor_team.doctor11.intro1"),
             this.$t("doctor_team.doctor11.intro2"),
@@ -248,7 +248,7 @@ export default {
         {
           id: 11,
           name: this.$t("doctor_team.doctor12.name"),
-          img: "https://static.cmereye.com/imgs/2024/04/3b91d69903c22a94.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/04/3b91d69903c22a94.png",
           title: [
             this.$t("doctor_team.doctor12.intro1"),
             this.$t("doctor_team.doctor12.intro2"),
@@ -259,7 +259,7 @@ export default {
         {
           id: 12,
           name: this.$t("doctor_team.doctor13.name"),
-          img: "https://static.cmereye.com/imgs/2024/05/5e65910e0c55b6a4.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/5e65910e0c55b6a4.png",
           title: [
             this.$t("doctor_team.doctor13.intro1"),
             this.$t("doctor_team.doctor13.intro2"),
@@ -272,7 +272,7 @@ export default {
         {
           id: 13,
           name: this.$t("doctor_team.doctor14.name"),
-          img: "https://static.cmereye.com/imgs/2024/05/3f1a1dea7d3a56a9.png",
+          img: "https://statichk.cmermedical.com/imgs/2024/05/3f1a1dea7d3a56a9.png",
           title: [
             this.$t("doctor_team.doctor14.intro1"),
             this.$t("doctor_team.doctor14.intro2"),
@@ -449,7 +449,7 @@ export default {
     }
   }
   .doctor-team-member {
-    background: url("https://static.cmereye.com/imgs/2024/04/7f498c9a45d803a7.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/7f498c9a45d803a7.png")
       no-repeat;
     width: 100vw;
     background-size: 100% 100%;
@@ -504,7 +504,7 @@ export default {
         & > div:nth-child(1)::before {
           content: "";
           position: absolute;
-          background: url("https://static.cmereye.com/imgs/2024/04/1d334823d7753246.png")
+          background: url("https://statichk.cmermedical.com/imgs/2024/04/1d334823d7753246.png")
             no-repeat;
           width: 292px;
           display: inline-block;
@@ -564,7 +564,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/04/c58f958bc4b6ee29.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/04/c58f958bc4b6ee29.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;
@@ -639,7 +639,7 @@ export default {
     }
   }
   .doctor-team-member {
-    background: url("https://static.cmereye.com/imgs/2024/05/c4109fd202815835.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/c4109fd202815835.png")
       no-repeat;
     width: 100vw;
     background-size: 100% 100%;
@@ -695,7 +695,7 @@ export default {
         }
         & > div:nth-child(1)::before {
           content: "";
-          background: url(https://static.cmereye.com/imgs/2024/04/e4ed6628ef1d18a5.png)
+          background: url(https://statichk.cmermedical.com/imgs/2024/04/e4ed6628ef1d18a5.png)
             no-repeat;
           background-size: 100% 95%;
           width: 41.28vw;
@@ -765,7 +765,7 @@ export default {
         }
         & > div:nth-child(1)::before {
           content: "";
-          background: url(https://static.cmereye.com/imgs/2024/04/3bdb9371c294cb1d.png)
+          background: url(https://statichk.cmermedical.com/imgs/2024/04/3bdb9371c294cb1d.png)
             no-repeat;
           background-size: 100% 95%;
           width: 41.28vw;

@@ -6,14 +6,14 @@
     <div class="flex md:justify-center flex-col items-center md:flex-row">
       <div class="serve-box" @click="serveForm('/ophthalmicInfo/AppointForm')">
         <img
-          src="https://static.cmereye.com/imgs/2023/01/df076d9e71e08870.png"
+          src="https://statichk.cmermedical.com/imgs/2023/01/df076d9e71e08870.png"
           :alt="$t('home.serve.p2')"
         />
         <p>{{$t('home.serve.p2')}}</p>
       </div>
       <div class="serve-box" @click="serveForm('/patient-info#PreCorrection')">
         <img
-          src="https://static.cmereye.com/imgs/2023/01/a1441d1e7e65eb40.png"
+          src="https://statichk.cmermedical.com/imgs/2023/01/a1441d1e7e65eb40.png"
           :alt="$t('home.serve.p1')"
         />
         <p>{{$t('home.serve.p1')}}</p>
@@ -24,7 +24,7 @@
         <button>
           <div class="flex btn-yuyue">
             <img
-              src="https://static.cmereye.com/imgs/2022/12/f3fcc54f4a9b0108.png"
+              src="https://statichk.cmermedical.com/imgs/2022/12/f3fcc54f4a9b0108.png"
               alt=""
               style="width: 12vw"
             />

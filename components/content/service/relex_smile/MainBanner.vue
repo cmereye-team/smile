@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("https://static.cmereye.com/imgs/2023/03/edaaa3deb3e5303a.jpg");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/03/edaaa3deb3e5303a.jpg");
   }
   span{
     letter-spacing: 1px;
@@ -84,7 +84,7 @@ export default {
     }
   }
   .banner {
-    background-image: url(https://static.cmereye.com/imgs/2022/12/367a0527dc35bfd2.jpg);
+    background-image: url(https://statichk.cmermedical.com/imgs/2022/12/367a0527dc35bfd2.jpg);
     background-position: top;
     background-size: 100%;
     width: 100vw;

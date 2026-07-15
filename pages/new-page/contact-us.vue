@@ -849,7 +849,7 @@ export default {
   }
 
   .contact-us-box {
-    background: url(https://static.cmereye.com/imgs/2024/05/55ff6541825e2b1d.png)
+    background: url(https://statichk.cmermedical.com/imgs/2024/05/55ff6541825e2b1d.png)
       no-repeat;
     background-size: 100% 100%;
     padding: 240px 0 100px;
@@ -957,7 +957,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .contact-us-box {
-    background: url("https://static.cmereye.com/imgs/2024/05/0494a17f8b314d6f.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/0494a17f8b314d6f.png")
       no-repeat;
     background-size: 100% 100%;
     padding: 115px 0 30px;
@@ -1217,7 +1217,7 @@ export default {
   }
 
   .banner-img {
-    background: url("https://static.cmereye.com/imgs/2024/05/5af12daebe688f16.png")
+    background: url("https://statichk.cmermedical.com/imgs/2024/05/5af12daebe688f16.png")
       no-repeat;
     background-size: 100% 100%;
     height: 84.6vw;

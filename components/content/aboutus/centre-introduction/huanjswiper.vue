@@ -51,28 +51,28 @@
         <div class="address_box">
           <div class="address">
             <img
-              src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
+              src="https://statichk.cmermedical.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
             <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p3") }}</p>
           </div>
           <!-- <div class="address">
             <img
-              src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
+              src="https://statichk.cmermedical.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
             <p>{{$t('aboutUs.centreIntroduction.huanjswiper.p4')}}</p>
           </div> -->
           <div class="address">
             <img
-              src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
+              src="https://statichk.cmermedical.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
             <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p5") }}</p>
           </div>
           <!-- <div class="address">
             <img
-              src="https://static.cmereye.com/imgs/2023/03/c83a4a5880ab1940.png"
+              src="https://statichk.cmermedical.com/imgs/2023/03/c83a4a5880ab1940.png"
               alt=""
             />
             <p>{{ $t("aboutUs.centreIntroduction.huanjswiper.p6") }}</p>
@@ -126,22 +126,22 @@ export default {
 
 <style lang="scss" scoped>
 .slide-1 {
-  background-image: url("https://static.cmereye.com/imgs/2024/06/d7bc3c3602b91d11.jpg");
+  background-image: url("https://statichk.cmermedical.com/imgs/2024/06/d7bc3c3602b91d11.jpg");
 }
 .slide-2 {
-  background-image: url("https://static.cmereye.com/imgs/2024/06/225f78a9419e18c9.jpg");
+  background-image: url("https://statichk.cmermedical.com/imgs/2024/06/225f78a9419e18c9.jpg");
 }
 .slide-3 {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg");
+  background-image: url("https://statichk.cmermedical.com/imgs/2023/03/11041faf78b0d062.jpg");
 }
 .slide-4 {
-  background-image: url("https://static.cmereye.com/imgs/2024/06/5bae94148ed686da.jpg");
+  background-image: url("https://statichk.cmermedical.com/imgs/2024/06/5bae94148ed686da.jpg");
 }
 .slide-5 {
   background-image: url("https://statichk.cmermedical.com/smile/group-profile/990a811af868c7ed.webp");
 }
 .slide-6 {
-  background-image: url("https://static.cmereye.com/imgs/2023/03/11041faf78b0d062.jpg");
+  background-image: url("https://statichk.cmermedical.com/imgs/2023/03/11041faf78b0d062.jpg");
 }
 @media screen and (min-width: 768px) {
   .box:nth-child(1) img {
@@ -151,13 +151,13 @@ export default {
   .swiper-container-rtl .swiper-button-next {
     left: -61px;
     right: auto;
-    background-image: url("https://static.cmereye.com/imgs/2023/03/bcc35245d4a0fe42.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/03/bcc35245d4a0fe42.png");
   }
   .swiper-button-next,
   .swiper-container-rtl .swiper-button-prev {
     right: -61px;
     left: auto;
-    background-image: url("https://static.cmereye.com/imgs/2023/03/c1cc233620b64f31.png");
+    background-image: url("https://statichk.cmermedical.com/imgs/2023/03/c1cc233620b64f31.png");
   }
   .swiper-button-prev,
   .swiper-button-next {
@@ -255,7 +255,7 @@ export default {
   .swiper-container-rtl .swiper-button-next {
     left: -26px;
     right: auto;
-    background: url("https://static.cmereye.com/imgs/2023/03/bcc35245d4a0fe42.png")
+    background: url("https://statichk.cmermedical.com/imgs/2023/03/bcc35245d4a0fe42.png")
       no-repeat;
     background-size: 56%;
   }
@@ -263,7 +263,7 @@ export default {
   .swiper-container-rtl .swiper-button-prev {
     right: -37px;
     left: auto;
-    background: url("https://static.cmereye.com/imgs/2023/03/c1cc233620b64f31.png")
+    background: url("https://statichk.cmermedical.com/imgs/2023/03/c1cc233620b64f31.png")
       no-repeat;
     background-size: 56%;
   }

@@ -24,12 +24,12 @@
       </ul>
       <img
         class="benefit_img benefit_eye"
-        src="https://static.cmereye.com/imgs/2022/12/4d5d4b7751efa3bf.jpg"
+        src="https://statichk.cmermedical.com/imgs/2022/12/4d5d4b7751efa3bf.jpg"
         alt=""
       />
       <img
         class="benefit_img benefit_light"
-        src="https://static.cmereye.com/imgs/smile/images/service/relex_smile/benefit_light.jpg"
+        src="https://statichk.cmermedical.com/imgs/smile/images/service/relex_smile/benefit_light.jpg"
         alt=""
       />
     </div>
@@ -147,7 +147,7 @@ p{
     }
   }
   .benefit_list {
-    background: url("https://static.cmereye.com/imgs/2022/12/28f52524aa3c4538.png");
+    background: url("https://statichk.cmermedical.com/imgs/2022/12/28f52524aa3c4538.png");
     background-repeat: no-repeat;
     background-size: 65% 100%;
     text-align: right;
@@ -236,7 +236,7 @@ p{
     width: 60%;
   }
   .benefit_list {
-    background: url(https://static.cmereye.com/imgs/2022/12/a2c6adf210ffc920.jpg)
+    background: url(https://statichk.cmermedical.com/imgs/2022/12/a2c6adf210ffc920.jpg)
       no-repeat;
     margin-top: 48vw;
     height: 95vw;

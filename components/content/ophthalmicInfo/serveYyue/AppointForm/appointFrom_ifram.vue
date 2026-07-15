@@ -4,9 +4,9 @@
     <div class="page_container bookingifram pc_show" style="margin-bottom: 260px;">
       <div class="right_container">
         <div class="pc_right_img">
-          <img src="https://static.cmereye.com/imgs/2024/05/c83bc174dc22083a.jpg" alt="中環">
-          <img src="https://static.cmereye.com/imgs/2024/05/9e56ff2e1edcde7b.jpg" alt="旺角">
-          <img src="https://static.cmereye.com/imgs/2024/05/e32cabcdd306bb24.jpg" alt="尖沙咀">
+          <img src="https://statichk.cmermedical.com/imgs/2024/05/c83bc174dc22083a.jpg" alt="中環">
+          <img src="https://statichk.cmermedical.com/imgs/2024/05/9e56ff2e1edcde7b.jpg" alt="旺角">
+          <img src="https://statichk.cmermedical.com/imgs/2024/05/e32cabcdd306bb24.jpg" alt="尖沙咀">
         </div>
       </div>
       <div class="left_container">
@@ -32,9 +32,9 @@
       <div>
         <div class="mb_img">
           <div class="mb_right_img">
-            <img src="https://static.cmereye.com/imgs/2024/05/c83bc174dc22083a.jpg" alt="中環">
-          <img src="https://static.cmereye.com/imgs/2024/05/9e56ff2e1edcde7b.jpg" alt="旺角">
-          <img src="https://static.cmereye.com/imgs/2024/05/e32cabcdd306bb24.jpg" alt="尖沙咀">
+            <img src="https://statichk.cmermedical.com/imgs/2024/05/c83bc174dc22083a.jpg" alt="中環">
+          <img src="https://statichk.cmermedical.com/imgs/2024/05/9e56ff2e1edcde7b.jpg" alt="旺角">
+          <img src="https://statichk.cmermedical.com/imgs/2024/05/e32cabcdd306bb24.jpg" alt="尖沙咀">
           </div>
         </div>
         <div class="bookingifram_box">

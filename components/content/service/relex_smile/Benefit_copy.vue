@@ -3,7 +3,7 @@
     <div class="benefit-bg">
       <div class="benefit-t">
         <img
-          src="https://static.cmereye.com/imgs/2023/08/223c37697c582ed6.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/08/223c37697c582ed6.jpg"
           alt=""
         />
         <span>SMILE</span>
@@ -43,64 +43,64 @@ export default {
     return {
       benefitList: [
         {
-          index: "https://static.cmereye.com/imgs/2023/10/354142daabe14d8c.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/354142daabe14d8c.png",
           text: this.$t("service.relexSmile.benefit.titleList.title1"),
           des: this.$t("service.relexSmile.benefit.des1"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/11/b7c2ae0052ddab4b.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/11/b7c2ae0052ddab4b.png",
           text:  this.$t("service.relexSmile.benefit.titleList.title2"),
           des: this.$t("service.relexSmile.benefit.des2"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/02557c41a9f23654.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/02557c41a9f23654.png",
           text:  this.$t("service.relexSmile.benefit.titleList.title3"),
           des: this.$t("service.relexSmile.benefit.des3"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/0ae516b4778a67d1.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/0ae516b4778a67d1.png",
           text:  this.$t("service.relexSmile.benefit.titleList.title4"),
           des: this.$t("service.relexSmile.benefit.des4"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/cf3f4cd33d880c99.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/cf3f4cd33d880c99.png",
           text:  this.$t("service.relexSmile.benefit.titleList.title5"),
           des: this.$t("service.relexSmile.benefit.des5"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/615a8a469b1bfa28.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/615a8a469b1bfa28.png",
           text:  this.$t("service.relexSmile.benefit.titleList.title6"),
           des: this.$t("service.relexSmile.benefit.des6"),
         },
       ],
       benefitListEng: [
         {
-          index: "https://static.cmereye.com/imgs/2023/10/354142daabe14d8c.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/354142daabe14d8c.png",
           text: "Simple Process",
           des: this.$t("service.relexSmile.benefit.des1"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/11/b7c2ae0052ddab4b.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/11/b7c2ae0052ddab4b.png",
           text: "Speedy Recovery",
           des: this.$t("service.relexSmile.benefit.des2"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/02557c41a9f23654.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/02557c41a9f23654.png",
           text: "Short Process",
           des: this.$t("service.relexSmile.benefit.des3"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/0ae516b4778a67d1.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/0ae516b4778a67d1.png",
           text: "Minimal Postoperative Impact",
           des: this.$t("service.relexSmile.benefit.des4"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/cf3f4cd33d880c99.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/cf3f4cd33d880c99.png",
           text: "Minimally Invasive Surgery",
           des: this.$t("service.relexSmile.benefit.des5"),
         },
         {
-          index: "https://static.cmereye.com/imgs/2023/10/615a8a469b1bfa28.png",
+          index: "https://statichk.cmermedical.com/imgs/2023/10/615a8a469b1bfa28.png",
           text: "Stable Effect",
           des: this.$t("service.relexSmile.benefit.des6"),
         },
@@ -424,7 +424,7 @@ export default {
 //   }
 // }
 // .benefit_list {
-//   background: url('https://static.cmereye.com/imgs/2022/12/28f52524aa3c4538.png');
+//   background: url('https://statichk.cmermedical.com/imgs/2022/12/28f52524aa3c4538.png');
 //   background-repeat: no-repeat;
 //   background-size: 65% 80%;
 //   text-align: right;
@@ -515,7 +515,7 @@ export default {
   //   top: -49vw !important;
   // }
   // .benefit_list {
-  //   background: url(("https://static.cmereye.com/imgs/2022/12/a2c6adf210ffc920.jpg"))
+  //   background: url(("https://statichk.cmermedical.com/imgs/2022/12/a2c6adf210ffc920.jpg"))
   //     no-repeat;
   //   margin-top: 50vw;
   //   height: 106vw;
