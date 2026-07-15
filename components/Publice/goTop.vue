@@ -1,5 +1,12 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-04-03 11:19:22
+ * @LastEditTime: 2026-07-15 09:52:58
+ * @FilePath: /components/Publice/goTop.vue
+ * @Description: 
+-->
 <template>
-  <div class="top-btn z-60" @click="scrollToTop">
+  <div class="gotop z-60" @click="scrollToTop">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="36"
@@ -32,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.top-btnV2 {
+.gotop {
   position: fixed;
   right: 15px;
   bottom: 200px;
@@ -42,7 +49,7 @@ export default {
 
 @media screen and (min-width: 1140px) {
   // 向上
-  .top-btnV2 {
+  .gotop {
     position: fixed;
     right: 165px;
     bottom: 140px;
