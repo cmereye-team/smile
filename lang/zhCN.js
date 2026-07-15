@@ -3118,6 +3118,7 @@ module.exports = {
     },
     content3: {
       name1: "德国蔡司扫频<br class='mbShow' />OCT生物测量仪",
+      alt: '德国蔡司扫频OCT生物测量仪',
       remark:
         "蔡司IOLMaster 700具有扫频生物测量技术，建立在近20年的光学生物测量经验的基础上。凭借全角膜曲率测量（TK），获得专利的角膜到视网膜扫描显示了贯穿整个眼睛的纵向切面的解剖细节。在白内障手术过程中，获取一个参考图像，并将其用于术中图像的匹配。",
       source: "资料及图片来源： Carl Zeiss",
@@ -3170,6 +3171,7 @@ module.exports = {
     },
     content11: {
       name1: "德国蔡司光学<br class='mbShow' />相干断层扫描仪",
+      alt: '德国蔡司光学相干断层扫描仪',
       remark:
         "蔡司相干光学断层扫描器(OCT)，是一种新的光学诊断技术，具有非侵入性、非接触性的特点。OCT对青光眼的早期诊断和临床追踪观察有较大帮助。OCT对眼底疾病的诊断也有其不可或缺的作用，尤其对视神经（如视神经炎、视神经萎缩），黄斑疾病（如特发性黄斑裂孔、黄斑前膜），视网膜脱离等有较大的辅助诊断作用。",
       source: "资料及图片来源： Carl Zeiss",
@@ -3217,6 +3219,7 @@ module.exports = {
     content18: {
       name1: "Haag-Streit BQ900<br class='mbShow' />裂隙灯",
       name2: "&IM900裂隙灯照相系统",
+      alt: 'Haag-Streit BQ900 裂隙灯',
       remark:
         "Haag-Streit BQ900高清晰裂隙灯及IM 900照相系统，帮助医生用于临床检查眼睑、结膜、角膜，虹膜、前房、晶状体、视网膜、黄斑点、视神经等的健康。",
       source: "资料及图片来源：Haag-Streit",

@@ -3,7 +3,7 @@
     <div class="equipment-mobile">
       <div v-for="(item, index) in groupedList" :key="item.id">
         <div>
-          <div><img :src="item.img" :alt="item.name[0]" /></div>
+          <div><img :src="item.img" :alt="item.alt || item.name[0]" /></div>
           <div class="equipment-name">
             <div
               @click="showRemark(index)"
@@ -129,6 +129,7 @@ export default {
           this.$t("medical_equipment.content3.name1"),
           "（IOL Master 700）",
         ],
+        alt: this.$t("medical_equipment.content3.alt"),
         remark: this.$t("medical_equipment.content3.remark"),
         source: this.$t("medical_equipment.content3.source"),
         isShow: false,
@@ -208,6 +209,7 @@ export default {
           this.$t("medical_equipment.content11.name1"),
           "(CIRRUS HD-OCT5000)",
         ],
+        alt: this.$t("medical_equipment.content11.alt"),
         remark: this.$t("medical_equipment.content11.remark"),
         source: this.$t("medical_equipment.content11.remark"),
         isShow: false,
@@ -285,6 +287,7 @@ export default {
           this.$t("medical_equipment.content18.name1"),
           this.$t("medical_equipment.content18.name2"),
         ],
+        alt: this.$t("medical_equipment.content18.alt"),
         remark: this.$t("medical_equipment.content18.remark"),
         source: this.$t("medical_equipment.content18.source"),
         isShow: false,
