@@ -80,12 +80,12 @@
               <tr>
                 <td>價錢(雙眼)</td>
                 <td>
-                  <span class="block pb-2">HK$23,500<sup>^</sup></span>
+                  <span class="block pb-2">HK$26,350<sup>^</sup></span>
                   <span class="block bt-d0d0d0 pt-1 lg:pt-2"
-                    >EPS用戶<br />HK$23,000<sup>*</sup></span
+                    >EPS用戶<br />HK$25,850<sup>*</sup></span
                   >
                 </td>
-                <td>HK$21,750<sup>^</sup></td>
+                <td>HK$24,600<sup>^</sup></td>
                 <td>
                   HK$53,600<sup>^^</sup><br />
                   <span class="whitespace-nowrap">(散光+$5,000)</span>
