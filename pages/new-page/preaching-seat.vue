@@ -299,6 +299,32 @@
         <picture>
           <source
             srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-ct-202608-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-ct-202608-v1.jpg"
+            alt="希瑪眼科八月中環預約日歷"
+            title="希瑪眼科八月中環預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://statichk.cmermedical.com/smile/preaching-seat/calendar-mk-202608-v1.webp
+            "
+            type="image/webp"
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-mk-202608-v1.jpg"
+            alt="希瑪眼科八月旺角預約日歷"
+            title="希瑪眼科八月旺角預約日歷"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
               https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-01-v1.avif
             "
             type="image/avif"
@@ -690,6 +716,10 @@ export default {
           "2026-07-15",
           "2026-07-22",
           "2026-07-29",
+          "2026-08-05",
+          "2026-08-12",
+          "2026-08-19",
+          "2026-08-26",
         ],
         // 中环-smilePro
         smileProCentral: [
@@ -720,6 +750,11 @@ export default {
           "2026-07-11",
           "2026-07-18",
           "2026-07-25",
+          "2026-08-01",
+          "2026-08-08",
+          "2026-08-15",
+          "2026-08-22",
+          "2026-08-29",
         ],
         smileMongKok: [],
         // 旺角-SmilePro
@@ -758,6 +793,10 @@ export default {
           "2026-07-06",
           "2026-07-18",
           "2026-07-25",
+          "2026-08-03",
+          "2026-08-08",
+          "2026-08-22",
+          "2026-08-31",
         ],
         clearVisionCentral: [],
         // 旺角-老花矫视
@@ -794,6 +833,11 @@ export default {
           "2026-07-20",
           "2026-07-27",
           "2026-07-28",
+          "2026-08-11",
+          "2026-08-15",
+          "2026-08-17",
+          "2026-08-24",
+          "2026-08-25",
         ],
       };
       this.allowedDates = dateConfigs[this.form.address] || [];
@@ -901,6 +945,8 @@ export default {
         "2026-06-22",
         "2026-07-11",
         "2026-07-20",
+        "2026-08-15",
+        "2026-08-24",
       ];
       const seatname =
         nameAddress === "clearVisionMongKok" && lbv.includes(isoDate)

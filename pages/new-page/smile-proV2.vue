@@ -301,7 +301,7 @@
         <h2
           class="text-white text-lg xs:text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
         >
-          SMILE Pro 2.0 微笑激光矯視費用
+          SMILE Pro 微笑激光矯視費用
         </h2>
         <div class="w-full">
           <div class="space-y-7 lg:space-y-[60px]">
@@ -309,20 +309,21 @@
               <div
                 class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
               >
-                SMILE Pro 2.0 費用
+                SMILE Pro 1.0 費用
               </div>
               <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
                 <div
                   class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 min-[992px]:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
                 >
                   <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    SMILE Pro 2.0<br /><span>微笑激光矯視</span>
+                    SMILE Pro 1.0<br /><span>微笑激光矯視</span>
                   </div>
                   <div
-                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
                   >
-                    <span class="text-2xl md:text-5xl">港幣</span
-                    ><span class="text-2xl md:text-5xl">$24,600</span>
+                    <span class="text-2xl md:text-5xl">港幣</span>
+                    <span class="text-2xl md:text-5xl">$21,750</span>
+                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">SMILE Pro 2.0 CARE 港幣$23,500 <br class="block lg:hidden"/>(EPS用戶港幣$23,000<sup>#</sup>) </p>
                   </div>
                 </div>
                 <div
@@ -332,10 +333,10 @@
                     術前檢查費用
                   </div>
                   <div
-                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
                   >
-                    <span class="text-2xl md:text-5xl">港幣</span
-                    ><span class="text-2xl md:text-5xl">$100</span>
+                    <span class="text-2xl md:text-5xl">港幣</span>
+                    <span class="text-2xl md:text-5xl">$100</span>
                   </div>
                 </div>
               </div>
@@ -344,22 +345,22 @@
               <div
                 class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
               >
-                SMILE Pro 2.0 Care費用
+                SMILE Pro 2.0 費用
               </div>
               <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
                 <div
                   class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 lg:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
                 >
                   <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    SMILE Pro 2.0 care<br /><span>微笑激光矯視</span>
+                    SMILE Pro 2.0<br /><span>微笑激光矯視</span>
                   </div>
                   <div
                     class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
                   >
-                    <span class="text-2xl md:text-5xl">港幣</span
-                    ><span class="text-2xl md:text-5xl">$26,350*</span>
+                    <span class="text-2xl md:text-5xl">港幣</span>
+                    <span class="text-2xl md:text-5xl">$24,600</span>
                     <p class="text-[10px] md:text-xl text-text md:pt-[4px]">
-                      EPS用戶港幣$25,850<sup>#</sup>
+                      SMILE Pro 2.0 CARE 港幣$26,350<br class="block lg:hidden"/> (EPS用戶港幣$25,850<sup>#</sup>) 
                     </p>
                   </div>
                 </div>
@@ -370,10 +371,10 @@
                     術前檢查費用
                   </div>
                   <div
-                    class="text-[#F59E0B] font-bold tracking-tight group-hover:scale-105 transition-transform"
+                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
                   >
-                    <span class="text-2xl md:text-5xl">港幣</span
-                    ><span class="text-2xl md:text-5xl">$100</span>
+                    <span class="text-2xl md:text-5xl">港幣</span>
+                    <span class="text-2xl md:text-5xl">$100</span>
                   </div>
                 </div>
               </div>
