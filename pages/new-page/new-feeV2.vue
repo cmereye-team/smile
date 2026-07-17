@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-07-13 17:44:27
+ * @LastEditTime: 2026-07-17 14:20:37
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -18,30 +18,11 @@
         <div class="fee-img">
           <div class="fee-img-Box new-container">
             <div class="fee-img-Box-image">
-              <!-- <div class="fee-img-Box-image-name">
-                <h2>希瑪微笑閃亮大使</h2>
-                <p>
-                  <span> MAGGIE<i>米姬</i></span>
-                </p>
-              </div> -->
-              <!-- <img
-                decoding="async"
-                src=""
-                loading="lazy"
-                width="100%"
-                height="100%"
-                sizes=" (max-width: 992px) 100vw,1216px"
-              /> -->
               <div class="fee-img-Box-image-tip">本診所絕無其他額外收費</div>
             </div>
           </div>
         </div>
       </section>
-      <!-- <div class="new_title_style">
-      <H2Tag :title="[$t('fee.table.title')]" />
-      <p class="title_sub">{{ $t("fee.table.sub_title") }}</p>
-    </div>
-    -->
       <div class="feeV2-Bg overflow-hidden" id="table1">
         <section class="smilepro-difference">
           <table class="table custom-comparison-table new-container">
@@ -49,19 +30,28 @@
               <tr>
                 <th>此為<br class="d-lg-none" />香港價錢</th>
                 <th>
-                  <span>SMILE Pro</span><br class="d-lg-none" />
-                  <span>2.0 Care</span><br />
+                  <span>SMILE Pro 1.0</span><br />
+                  <span>Care</span><br />
                   微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
-                  <span>SMILE</span> <br class="d-lg-none" /><span>Pro 2.0</span
+                  <span>SMILE </span><br class="d-lg-none" /><span>Pro 1.0</span
                   ><br />微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
-                  <span>ICL V4C</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
+                  <span>SMILE Pro 2.0</span><br />
+                  <span>Care</span><br />
+                  微笑激光<br class="d-lg-none" />矯視
                 </th>
                 <th>
-                  <span>ICL V5</span> <br />植入式<br class="d-lg-none" />隱形眼鏡
+                  <span>SMILE </span><br class="block lg:hidden" /><span>Pro 2.0</span
+                  ><br />微笑激光<br class="d-lg-none" />矯視
+                </th>
+                <th>
+                  <span>ICL V4C</span> <br />植入式<br class="d-lg-none" />隱形<br class="hidden lg:block"/>眼鏡
+                </th>
+                <th>
+                  <span>ICL V5</span> <br />植入式<br class="d-lg-none" />隱形<br class="hidden lg:block"/>眼鏡
                 </th>
                 <th>
                   <span>SMILE</span> <br />微笑激光<br class="d-lg-none" />矯視
@@ -79,6 +69,13 @@
             <tbody>
               <tr>
                 <td>價錢(雙眼)</td>
+                <td>
+                  <span class="block pb-2">HK$23,500<sup>^</sup></span>
+                  <span class="block bt-d0d0d0 pt-1 lg:pt-2"
+                    >EPS用戶<br />HK$23,000<sup>*</sup></span
+                  >
+                </td>
+                <td>HK$21,750<sup>^</sup></td>
                 <td>
                   <span class="block pb-2">HK$26,350<sup>^</sup></span>
                   <span class="block bt-d0d0d0 pt-1 lg:pt-2"
@@ -101,6 +98,8 @@
                 <td>術前檢查<br class="d-lg-block" />費用</td>
                 <td>HK$100</td>
                 <td>HK$100</td>
+                <td>HK$100</td>
+                <td>HK$100</td>
                 <td>HK$500</td>
                 <td>HK$500</td>
                 <td>HK$100</td>
@@ -108,6 +107,8 @@
               </tr>
               <tr>
                 <td>眼睛水潤<br class="d-lg-block" />護理</td>
+                <td>1次</td>
+                <td>1次</td>
                 <td>1次</td>
                 <td>1次</td>
                 <td>
@@ -127,6 +128,13 @@
               </tr>
               <tr>
                 <td>術後眼部<br />彩光護理</td>
+                <td>1次</td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/error.svg"
+                    alt="不包括"
+                  />
+                </td>
                 <td>1次</td>
                 <td>
                   <img
@@ -197,6 +205,18 @@
                     alt="包括"
                   />
                 </td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
               </tr>
               <tr class="custom-comparison-table-tipIcon">
                 <td>
@@ -206,6 +226,12 @@
                     class="text-[#6D6E71] text-center text-[10px] md:text-[16px] font-normal md:leading-[125%] md:tracking-[3.2px] text-nowrap"
                     >由醫生進行</span
                   >
+                </td>
+                <td>
+                  <span>5次<sup>#</sup></span>
+                </td>
+                <td>
+                  <span>3次<sup>#</sup></span>
                 </td>
                 <td>
                   <span>5次<sup>#</sup></span>
@@ -238,6 +264,18 @@
               </tr>
               <tr>
                 <td>增進手術</td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
                 <td>
                   <img
                     src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
@@ -313,10 +351,22 @@
                     alt="包括"
                   />
                 </td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://statichk.cmermedical.com/smile/feeV2/success.svg"
+                    alt="包括"
+                  />
+                </td>
               </tr>
               <tr class="custom-comparison-table-extra">
                 <td></td>
-                <td colspan="5">
+                <td colspan="8">
                   <div>
                     <span>
                       SMILE XTRA<br class="d-none d-lg-block" />
@@ -327,7 +377,7 @@
               </tr>
               <tr class="custom-comparison-table-extraTwo">
                 <td></td>
-                <td colspan="5">
+                <td colspan="8">
                   <div>
                     <div>單眼</div>
                     <div>雙眼</div>
@@ -336,7 +386,7 @@
               </tr>
               <tr class="custom-comparison-table-extraThree">
                 <td></td>
-                <td colspan="5">
+                <td colspan="8">
                   <div>
                     <div>HK$3,000</div>
                     <div>HK$5,000</div>
@@ -1969,22 +2019,29 @@ body {
       letter-spacing: 2.4px;
     }
     .custom-comparison-table thead tr > th:nth-child(2) {
-      background: #5991e5;
+      background: #8cb4f0;
       white-space: nowrap;
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
       background: #719ad8;
     }
     .custom-comparison-table thead tr > th:nth-child(4) {
-      background: #4bc0ab;
+      background: #3c76cd;
+      white-space: nowrap;
     }
     .custom-comparison-table thead tr > th:nth-child(5) {
-      background: #86d2c4;
+      background: #41609e;
     }
     .custom-comparison-table thead tr > th:nth-child(6) {
-      background: #8fd3ea;
+      background: #4bc0ab;
     }
     .custom-comparison-table thead tr > th:nth-child(7) {
+      background: #86d2c4;
+    }
+    .custom-comparison-table thead tr > th:nth-child(8) {
+      background: #8fd3ea;
+    }
+    .custom-comparison-table thead tr > th:nth-child(9) {
       background: #d8bb71;
     }
     .custom-comparison-table tbody tr td {
@@ -2132,21 +2189,27 @@ body {
       }
     }
     .custom-comparison-table tbody tr > td:nth-child(2) {
-      background: #e7f1ff;
-    }
-    .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #f1f5fc;
     }
+    .custom-comparison-table tbody tr > td:nth-child(3 ) {
+      background: #e3edff;
+    }
     .custom-comparison-table tbody tr > td:nth-child(4) {
-      background: #dffff9;
+      background: #e7f1ff;
     }
     .custom-comparison-table tbody tr > td:nth-child(5) {
-      background: #f1fcf9;
+      background: #d1e0f6;
     }
     .custom-comparison-table tbody tr > td:nth-child(6) {
-      background: #e2f8ff;
+      background: #dffff9;
     }
     .custom-comparison-table tbody tr > td:nth-child(7) {
+      background: #f1fcf9;
+    }
+    .custom-comparison-table tbody tr > td:nth-child(8) {
+      background: #e2f8ff;
+    }
+    .custom-comparison-table tbody tr > td:nth-child(9) {
       background: #fbfcf1;
     }
   }
@@ -2461,6 +2524,11 @@ body {
         }
       }
     }
+    .custom-comparison-table thead th {
+      border-bottom: none;
+      white-space: nowrap;
+      letter-spacing: 0.1em;
+    }
     .custom-comparison-table thead th:nth-child(1) {
       color: #4570b6;
       text-align: center;
@@ -2471,31 +2539,38 @@ body {
       line-height: 166.667%;
       letter-spacing: 3.6px;
     }
-    .custom-comparison-table thead th {
-      border-bottom: none;
-    }
     .custom-comparison-table thead tr > th:nth-child(1) {
       background: none;
     }
     .custom-comparison-table thead tr > th:nth-child(2) {
-      background: #5991e5;
+      background: #8cb4f0;
       letter-spacing: 0em;
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
       background: #719ad8;
     }
     .custom-comparison-table thead tr > th:nth-child(4) {
-      background: #4bc0ab;
+      background: #3c76cd;
+      letter-spacing: 0em;
     }
     .custom-comparison-table thead tr > th:nth-child(5) {
-      background: #86d2c4;
+      background: #41609e;
     }
     .custom-comparison-table thead tr > th:nth-child(6) {
-      background: #8fd3ea;
+      background: #4bc0ab;
     }
     .custom-comparison-table thead tr > th:nth-child(7) {
+      background: #86d2c4;
+    }
+    .custom-comparison-table thead tr > th:nth-child(8) {
+      background: #8fd3ea;
+    }
+    .custom-comparison-table thead tr > th:nth-child(9) {
       background: #d8bb71;
-      letter-spacing: 0.1em;
+      letter-spacing: 0em;
+    }
+    .custom-comparison-table thead tr > th:nth-child(1) {
+      background: none;
     }
     .custom-comparison-table tbody tr td {
       color: #60605f;
@@ -2638,21 +2713,27 @@ body {
       }
     }
     .custom-comparison-table tbody tr > td:nth-child(2) {
-      background: #e7f1ff;
-    }
-    .custom-comparison-table tbody tr > td:nth-child(3) {
       background: #f1f5fc;
     }
+    .custom-comparison-table tbody tr > td:nth-child(3 ) {
+      background: #e3edff;
+    }
     .custom-comparison-table tbody tr > td:nth-child(4) {
-      background: #dffff9;
+      background: #e7f1ff;
     }
     .custom-comparison-table tbody tr > td:nth-child(5) {
-      background: #f1fcf9;
+      background: #d1e0f6;
     }
     .custom-comparison-table tbody tr > td:nth-child(6) {
-      background: #e2f8ff;
+      background: #dffff9;
     }
     .custom-comparison-table tbody tr > td:nth-child(7) {
+      background: #f1fcf9;
+    }
+    .custom-comparison-table tbody tr > td:nth-child(8) {
+      background: #e2f8ff;
+    }
+    .custom-comparison-table tbody tr > td:nth-child(9) {
       background: #fbfcf1;
     }
   }
