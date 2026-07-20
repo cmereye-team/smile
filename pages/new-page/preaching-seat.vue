@@ -8,7 +8,7 @@
         </template>
       </Banner>
     </div> -->
-    <BannerSlider :gid="3" :num="1" class="banner-box" setStyle="mb-10 md:mb-12 xl:mt-[64px]" />
+    <BannerSlider :gid="3" :num="1" setStyle="-mb-6 md:mb-5" />
     <div class="lecture-box mb-[56px]">
       <div class="lecture-title">
         <div>
