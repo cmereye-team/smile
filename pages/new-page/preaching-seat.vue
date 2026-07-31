@@ -14,8 +14,7 @@
         <div>
           <div class="lecture-content">
             <div>
-              <p>{{ $t("appointFroms.title1") }}</p>
-              <p>{{ $t("appointFroms.title2") }}</p>
+              <p class="text-[clamp(14px,4.44vw,24px)]" v-html="$t('appointFroms.title')"></p>
             </div>
             <div>
               <!-- <p>{{ $t("appointFroms.p1") }}</p> -->
@@ -322,44 +321,6 @@
             title="希瑪眼科八月旺角預約日歷"
           />
         </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-01-v1.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-01-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-01-v1.jpg"
-            alt="希瑪眼科七月中環預約日歷"
-            title="希瑪眼科七月中環預約日歷"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-02-v1.avif
-            "
-            type="image/avif"
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-02-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-2607-02-v1.jpg"
-            alt="希瑪眼科七月旺角預約日歷"
-            title="希瑪眼科七月旺角預約日歷"
-          />
-        </picture>
       </div>
     </div>
     <div v-show="applySuccess" class="applyDialog">
@@ -395,19 +356,8 @@
             <div
               class="applyDialog-main-icon mb-2 md:mb-8 w-[22px] md:w-[58px] mx-auto"
             >
-              <svg
-                class="w-full h-full"
-                xmlns="http://www.w3.org/2000/svg"
-                width="58"
-                height="58"
-                viewBox="0 0 58 58"
-                fill="none"
-              >
-                <path
-                  d="M0.000672084 28.9966C-0.103591 13.0757 13.0993 -0.00452954 29.0086 1.17666e-06C44.8567 0.0045319 58.0165 13.0553 58.0029 29.0329C57.9893 44.9289 44.8748 58.0566 28.8885 58C13.0064 57.9434 -0.108125 44.8564 0.000672084 28.9966ZM45.9152 20.7801C45.8744 20.3588 45.6273 20.053 45.344 19.7698C44.145 18.5692 42.9482 17.3685 41.7469 16.1724C40.8675 15.2957 40.3937 15.298 39.5143 16.1792C34.5572 21.1358 29.5957 26.0879 24.6499 31.0558C24.2782 31.4296 24.072 31.4183 23.7116 31.0513C21.93 29.2345 20.1235 27.4448 18.3216 25.6484C17.5917 24.9212 17.0818 24.9258 16.3474 25.6575C15.1053 26.8944 13.8655 28.1335 12.6302 29.3749C11.8618 30.1451 11.8686 30.5959 12.646 31.373C16.1343 34.8661 19.6226 38.3593 23.1132 41.8525C23.9949 42.736 24.3621 42.7337 25.2642 41.8321C29.9832 37.1179 34.7023 32.4037 39.4214 27.6872C41.4205 25.6892 43.4196 23.6911 45.4211 21.6931C45.6794 21.4348 45.9129 21.1698 45.922 20.7779L45.9152 20.7801Z"
-                  fill="#4570B6"
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none"><path d="M0 28.997C-.103 13.076 13.1-.005 29.01 0c15.848.005 29.008 13.055 28.994 29.033C57.989 44.929 44.875 58.057 28.889 58 13.006 57.943-.108 44.856 0 28.997m45.915-8.217c-.04-.421-.288-.727-.571-1.01q-1.797-1.801-3.597-3.598c-.88-.876-1.353-.874-2.233.007-4.957 4.957-9.918 9.909-14.864 14.877-.372.374-.578.362-.938-.005-1.782-1.816-3.588-3.606-5.39-5.403-.73-.727-1.24-.722-1.975.01a1153 1153 0 0 0-3.717 3.717c-.768.77-.761 1.22.016 1.998l10.467 10.48c.882.883 1.25.88 2.151-.02l14.157-14.146 6-5.994c.258-.258.492-.523.501-.915z" fill="#4570b6"/></svg>
             </div>
             <div class="applyDialog-main-text flex flex-col gap-2 m-2">
               <p
@@ -438,27 +388,8 @@
               class="applyDialog-close absolute right-[10px] top-[10px] md:right-[28px] md:top-[30px] w-[8.5px] md:w-6"
               @click="applySuccess = false"
             >
-              <svg
-                class="w-full h-full"
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-              >
-                <path
-                  d="M2 25.9468L25.2083 2.73853"
-                  stroke="#4570B6"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M26 25.9468L2.79168 2.73853"
-                  stroke="#4570B6"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M2 25.947 25.208 2.739M26 25.947 2.792 2.739" stroke="#4570b6" stroke-width="4" stroke-linecap="round"/></svg>
             </div>
           </div>
         </div>
@@ -877,9 +808,9 @@ export default {
       const { nowDay, weekday, isoDate } = this.timestampToWeekday(
         this.form.subdate
       );
-      console.log(
-        `已进入getName函数,nameAddress=${nameAddress},subdate=${this.form.subdate},isoDate=${isoDate}`
-      );
+      // console.log(
+      //   `已进入getName函数,nameAddress=${nameAddress},subdate=${this.form.subdate},isoDate=${isoDate}`
+      // );
       this.nowDayTime = nowDay;
       // 映射表
       const schedules = {
@@ -1847,8 +1778,7 @@ export default {
           font-size: 18px;
           font-style: normal;
           font-weight: 700;
-          line-height: 6vw;
-          /* 214.286% */
+          line-height: 1.5;
           letter-spacing: 0.7px;
           padding: 0 10px;
         }
@@ -1861,8 +1791,7 @@ export default {
           font-size: 16px;
           font-style: normal;
           font-weight: 300;
-          line-height: 5.5vw;
-          /* 208.333% */
+          line-height: 1.25;
           letter-spacing: 0.6px;
           gap: 20px;
           display: flex;

@@ -579,7 +579,8 @@ module.exports = {
     p_text8: "问题，减低对眼镜的依赖。",
     WhyChoose_p_text1: "希玛微笑矫视中心以尖端科技和卓越的客户体验；同时作为",
     WhyChoose_p_text1_1: "首间获Zeiss蔡司颁发《全飞秒屈光手术 卓越手术中心》",
-    WhyChoose_p_text1_2: "认证的香港矫视中心，成为了大众的SMILE Pro 2.0矫视首选。",
+    WhyChoose_p_text1_2:
+      "认证的香港矫视中心，成为了大众的SMILE Pro 2.0矫视首选。",
     WhyChoose_p_text2: "中心采用",
     WhyChoose_p_text3: "已获美国FDA认证",
     WhyChoose_p_text4:
@@ -1117,7 +1118,8 @@ module.exports = {
         "矯視費用已包括術前檢查費用港幣$100 (若沒有預約進行矯視，需另外繳付術前檢查費用)",
       text3_6:
         "需要術後半年內完成。如超過半年，需另作預約，診金按正常（非矯視套餐）收費",
-      text3_7: '需要術後半年內完成。如超過半年，需另作預約，診金按正常（非矯視套餐）收費',
+      text3_7:
+        "需要術後半年內完成。如超過半年，需另作預約，診金按正常（非矯視套餐）收費",
       text4:
         "SMILE、SMILE Pro 2.0、SMILE Pro 2.0 Care微笑激光矯視及LASIK激光矯視/TPRK經上皮激光角膜切削手術的增進手術需要術後兩年內完成。如超過兩年，需另作預約，診金按正常（非矯視套餐）收費。LBV視覺融合老花激光手術的增進手術需要術後一年內完成。如超過一年，需另作預約，診金按正常（非矯視套餐）收費。",
       text5:
@@ -3104,8 +3106,8 @@ module.exports = {
   },
   medical_equipment: {
     content1: {
-      name1: 'ZEISS VISUMAX 800',
-      name2: 'SMILE®pro 2.0',
+      name1: "ZEISS VISUMAX 800",
+      name2: "SMILE®pro 2.0",
       remark:
         "VISUMAX 800新增的智能眼球与旋转侦测和视觉中心定位功能可以实现更准确和个性化的治疗，以满足每位病人的需求。最新的技术可以在不到10秒钟的时间内完成晶状体切割，从而缩短整个吸附时间。",
       source: "资料及图片来源： Carl Zeiss",
@@ -3118,7 +3120,7 @@ module.exports = {
     },
     content3: {
       name1: "德国蔡司扫频<br class='mbShow' />OCT生物测量仪",
-      alt: '德国蔡司扫频OCT生物测量仪',
+      alt: "德国蔡司扫频OCT生物测量仪",
       remark:
         "蔡司IOLMaster 700具有扫频生物测量技术，建立在近20年的光学生物测量经验的基础上。凭借全角膜曲率测量（TK），获得专利的角膜到视网膜扫描显示了贯穿整个眼睛的纵向切面的解剖细节。在白内障手术过程中，获取一个参考图像，并将其用于术中图像的匹配。",
       source: "资料及图片来源： Carl Zeiss",
@@ -3171,7 +3173,7 @@ module.exports = {
     },
     content11: {
       name1: "德国蔡司光学<br class='mbShow' />相干断层扫描仪",
-      alt: '德国蔡司光学相干断层扫描仪',
+      alt: "德国蔡司光学相干断层扫描仪",
       remark:
         "蔡司相干光学断层扫描器(OCT)，是一种新的光学诊断技术，具有非侵入性、非接触性的特点。OCT对青光眼的早期诊断和临床追踪观察有较大帮助。OCT对眼底疾病的诊断也有其不可或缺的作用，尤其对视神经（如视神经炎、视神经萎缩），黄斑疾病（如特发性黄斑裂孔、黄斑前膜），视网膜脱离等有较大的辅助诊断作用。",
       source: "资料及图片来源： Carl Zeiss",
@@ -3219,7 +3221,7 @@ module.exports = {
     content18: {
       name1: "Haag-Streit BQ900<br class='mbShow' />裂隙灯",
       name2: "&IM900裂隙灯照相系统",
-      alt: 'Haag-Streit BQ900 裂隙灯',
+      alt: "Haag-Streit BQ900 裂隙灯",
       remark:
         "Haag-Streit BQ900高清晰裂隙灯及IM 900照相系统，帮助医生用于临床检查眼睑、结膜、角膜，虹膜、前房、晶状体、视网膜、黄斑点、视神经等的健康。",
       source: "资料及图片来源：Haag-Streit",
@@ -3290,13 +3292,56 @@ module.exports = {
     p4: "尖沙咀诊所︰尖沙咀梳士巴利道18-24号K11 ATELIER办公大楼1906室",
   },
   appointFroms: {
-    title: "讲座",
-    title1: "SMILE Pro 2.0 微笑激光矫视、ICL植入式隐形眼镜、",
-    title2: "SMILE 微笑激光矫视、老花矫视讲座",
+    title: "SMILE Pro 1.0/2.0 微笑激光矫视、ICL植入式隐形眼镜、SMILE 微笑激光矫视、老花矫视讲座",
     p1: "中环诊所：中环毕打街1-3号中建大厦1512室",
     p2: "旺角诊所：旺角弥敦道625及639号雅兰中心一期1725B室",
-
-    service: "選擇服務",
+    p3: "希玛微笑矫视中心定期举办免费矫视小班讲座，由资深医疗团队亲自讲解，协助您深入了解各项技术细节，为自己作出最合适的选择。",
+    p4: "无论您正考虑 SMILE Pro 1.0/2.0 微笑激光矫视、SMILE 微笑激光矫视、ICL 植入式隐形眼镜，或是老花矫视，我们的讲座都已为您准备好所需的全面资讯。<br />讲座重点内容包括：<span style='color: #4570B6;font-weight: 700;'>矫视服务简介</span>、<span style='color: #4570B6;font-weight: 700;'>详细技术分析及讲解</span>，以及<span style='color: #4570B6;font-weight: 700;'>即时解答查询</span>。",
+    p5: "请填写下列表格免费预约您的席位，本中心将随后联络并确认您的登记。",
+    service: "选择服务",
     title4: "选择地点",
+    sectionPlace: "请选择",
+    content0: {
+      title1: "SMILE Pro 2.0",
+      title2: "SMILE+ICL",
+      title3: "老花矫视",
+    },
+    content1: {
+      title1: "旺角",
+      title2: "中环",
+      title3: "旺角",
+      date: "预约日期",
+    },
+    content2: {
+      p1: "您正预约在",
+      p2: "全飞秒SMILE微笑激光矫视讲座请填写以下表格:",
+      local: "预留位置",
+    },
+    content3: {
+      name: "请填写姓名",
+      age: "年龄",
+      choose: "请选择",
+      age1: "17岁或以下",
+      age2: "18-25岁",
+      age3: "26-35岁",
+      age4: "36-45岁",
+      age5: "46-55岁",
+      age6: "56岁或以上",
+      phone: "联络电话",
+      phoneText: "请填写",
+      email: "邮箱地址",
+      soure: "从何得知",
+    },
+    content4: {
+      p1: "Google搜寻引擎",
+      p2: "Yahoo搜寻引擎",
+      p3: "论坛",
+      p4: "报纸",
+      p5: "诊所传单",
+      p6: "亲友推荐",
+      p7: "员工推荐",
+    },
+    btn: "提交预约",
+    LectureCalendar: "讲座月历",
   },
 };
