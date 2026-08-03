@@ -59,7 +59,6 @@ export default {
         },
       },
       bannerLists: [],
-      num: 5,
     };
   },
   filters: {

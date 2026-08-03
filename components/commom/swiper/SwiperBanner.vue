@@ -39,7 +39,6 @@ export default {
   },
   methods: {
     async getBannerList() {
-      console.log(`gid=${this.gid}, num=${this.num}`);
       try {
         const res = await $api("/api/v1/slides", {
           params: { gid: this.gid, pageSize: this.num },
@@ -51,50 +50,6 @@ export default {
         console.error(error);
       }
     },
-    // async getBannerList() {
-    //   let List = [];
-    //   let that = this;
-    //   const API = `https://admin.hkcmereye.com/api.php/cms/slide/gid/${this.gid}/num/${this.num}`;
-    //   // console.log(`gid=${this.gid}, num=${this.num}, API=${API}`);
-    //   const formatImgUrl = (url) => {
-    //     if (!url) return "";
-    //     const prefix = "https://admin.hkcmereye.com";
-    //     if (/^(https?:)?\/\//.test(url)) {
-    //       return url;
-    //     }
-    //     return url.startsWith("/") ? `${prefix}${url}` : `${prefix}/${url}`;
-    //   };
-
-    //   try {
-    //     const response = await fetch(API);
-    //     const res = await response.json();
-    //     const dataList = res.data || [];
-
-    //     List = dataList.map((item, index) => {
-    //       return {
-    //         id: Number(item.id),
-    //         className: `banner_${index + 1}`,
-    //         pc_img: formatImgUrl(item.pic),
-    //         mb_img: formatImgUrl(item.mobilepic),
-    //         gid: item.gid,
-    //         link: that.replaceAmp(item.link),
-    //         isExternal: that.isExternal(item.link),
-    //         title: item.subtitle,
-    //         subtitle: `home-banner-${item.subtitle}`,
-    //       };
-    //     });
-
-    //     // 关键修改 2：如果只有一张图，动态关闭 loop
-    //     if (List.length <= 1) {
-    //       this.swiperOption.loop = false;
-    //       this.swiperOption.autoplay = false;
-    //     }
-
-    //     that.bannerLists = List;
-    //   } catch (error) {
-    //     console.error("获取 banner 失败:", error);
-    //   }
-    // },
   },
   watch: {
     // 监听 gid 的变化，一旦父组件传过来的 gid 变了，重新获取列表
