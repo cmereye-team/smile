@@ -1,102 +1,40 @@
 <template>
   <div class="main_banner">
-    <div class="banner pcShow">
+    <div class="banner">
       <div
         class="swiper gallery-top"
-        v-if="optionList > 1"
+        v-if="bannerLists.length > 1"
         v-swiper:pcBannerSwiper="swiperOptionTop"
         ref="bannerSwiper"
       >
         <div class="swiper-wrapper">
-          <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
-            <img src="https://statichk.cmermedical.com/imgs/2023/04/47b5b8d44b95666e.jpg" alt="">
-          </nuxt-link>
-          <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
-            <img src="https://statichk.cmermedical.com/imgs/2023/02/0c013e3465b3b38d.jpg" alt="">
-          </nuxt-link> -->
-
           <section
             v-for="(banner, index) in bannerLists"
             :key="index"
             class="swiper-slide"
           >
-            <a v-if="banner.isRouterPath" :href="banner.link">
-              <img
-                :class="banner.className"
-                :src="banner[`pc_${$i18n.locale}Img`]"
-                alt=""
-              />
-            </a>
-            <a v-else :href="localePath(banner.link)">
-              <img
-                :class="banner.className"
-                :src="banner[`pc_${$i18n.locale}Img`]"
-                alt=""
-              />
-            </a>
-          </section>
-
-          <!-- <div class="anim">
-            <div class="a"></div>
-            <div class="b">
-              <div class="b1">SMILE PRO</div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <NuxtLink v-if="banner.link" :to="banner.link">
+              <picture>
+                <source :srcset="banner.pic" media="(max-width: 768px)" />
+                <img
+                  :class="banner.className"
+                  :src="banner.pic_mobile"
+                  :alt="banner.title"
+                  :title="banner.subtitle"
+                />
+              </picture>
+            </NuxtLink>
+            <div v-else>
+              <picture>
+                <source :srcset="banner.pic" media="(max-width: 768px)" />
+                <img
+                  :class="banner.className"
+                  :src="banner.pic_mobile"
+                  :alt="banner.title"
+                  :title="banner.subtitle"
+                />
+              </picture>
             </div>
-            <div class="c">
-              <div>可能是現實最快完成矯視的方法</div>
-              <div>仲有限時優惠，立即瞭解更多</div>
-            </div>
-            <div class="d">
-              <div class="d1"></div>
-              <div class="d2"></div>
-              <div class="d3"></div>
-            </div>
-            <div class="e"></div>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    <div class="banner mbShow">
-      <div
-        class="swiper gallery-top"
-        v-if="optionList > 1"
-        v-swiper:mbBannerSwiper="swiperOptionTop"
-        ref="bannerSwiper"
-      >
-        <div class="swiper-wrapper">
-          <!-- <nuxt-link class="swiper-slide" :to="localePath('/vision-correction/relex-smile')">
-            <img src="https://statichk.cmermedical.com/imgs/2023/04/4b25734d8dbba59a.jpg" alt="">
-          </nuxt-link>
-          <nuxt-link class="swiper-slide" :to="localePath('/vision-correction-presbyopia')">
-            <img src="https://statichk.cmermedical.com/imgs/2023/02/699e0cf835f76a5d.jpg" alt="">
-          </nuxt-link> -->
-          <!-- <nuxt-link v-for="(banner, index) in bannerLists.filter(item => item.mb_cnImg !== '')" :key="index"
-            class="swiper-slide" :to="localePath(banner.link)">
-            <img :class="banner.className" :src="banner[`mb_${$i18n.locale}Img`]" alt="">
-          </nuxt-link> -->
-          <section
-            v-for="(banner, index) in bannerLists.filter(
-              (item) => item.mb_cnImg !== ''
-            )"
-            :key="index"
-            class="swiper-slide"
-          >
-            <a v-if="banner.isRouterPath" :href="banner.link">
-              <img
-                :class="banner.className"
-                :src="banner[`mb_${$i18n.locale}Img`]"
-                alt=""
-              />
-            </a>
-            <a v-else :href="localePath(banner.link)">
-              <img
-                :class="banner.className"
-                :src="banner[`mb_${$i18n.locale}Img`]"
-                alt=""
-              />
-            </a>
           </section>
         </div>
       </div>
@@ -104,6 +42,7 @@
   </div>
 </template>
 <script>
+import { $api } from "~/utils/api.js";
 export default {
   components: {},
   data() {
@@ -119,60 +58,7 @@ export default {
           mySwiper.reLoop();
         },
       },
-      bannerLists: [
-        // {
-        //   link: '/vision-correction/relex-smile',
-        //   className: 'banner_1',
-        //   pc_cnImg: 'https://statichk.cmermedical.com/static/loffee/imgs/2023_07_1689913503763.avif',
-        //   pc_hkImg: 'https://statichk.cmermedical.com/static/loffee/imgs/2023_07_1689913503764.avif',
-        //   pc_enImg: 'https://statichk.cmermedical.com/static/loffee/imgs/2023_07_1689913503764.avif',
-        //   mb_cnImg: 'https://statichk.cmermedical.com/imgs/2023/07/d9f55f7de0ce3890.jpg',
-        //   mb_hkImg: 'https://statichk.cmermedical.com/imgs/2023/07/43f38bca9b9f2baa.jpg',
-        //   isRouterPath: false
-        // },
-        // {
-        //   link: '/smilePro',
-        //   className: 'banner_5',
-        //   pc_cnImg: 'https://statichk.cmermedical.com/static/loffee/imgs/050623_1280-480SC.avif',
-        //   pc_hkImg: 'https://statichk.cmermedical.com/static/loffee/imgs/050623_1280-480TC.avif',
-        //   pc_enImg: 'https://statichk.cmermedical.com/static/loffee/imgs/050623_1280-480TC.avif',
-        //   mb_cnImg: 'https://statichk.cmermedical.com/imgs/2023/06/c778636bdc92a1b2.jpg',
-        //   mb_hkImg: 'https://statichk.cmermedical.com/imgs/2023/06/90f03c94953b46b5.jpg',
-        //   isRouterPath: false
-        // },
-        // {
-        //   link: 'https://api.whatsapp.com/send/?phone=85260610511&text=我想了解(W-02) Smile Pro矯視',
-        //   className: 'banner_4',
-        //   pc_cnImg: 'https://statichk.cmermedical.com/imgs/2023/05/9f295eeb364d5c18.jpg',
-        //   pc_hkImg: 'https://statichk.cmermedical.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
-        //   pc_enImg: 'https://statichk.cmermedical.com/imgs/2023/05/f98c9fee4d7f0f66.jpg',
-        //   mb_cnImg: 'https://statichk.cmermedical.com/imgs/2023/06/5617084c28916bb2.jpg',
-        //   mb_hkImg: 'https://statichk.cmermedical.com/imgs/2023/06/2f47a87064825e90.jpg',
-        //   isRouterPath: true
-        // },
-        // {
-        //   link: '/vision-correction-presbyopia',
-        //   className: 'banner_2',
-        //   pc_cnImg: 'https://statichk.cmermedical.com/imgs/2023/04/7a2b26fa29e337a3.jpg',
-        //   pc_hkImg: 'https://statichk.cmermedical.com/imgs/2023/02/0c013e3465b3b38d.jpg',
-        //   pc_enImg: 'https://statichk.cmermedical.com/imgs/2023/02/0c013e3465b3b38d.jpg',
-        //   mb_cnImg: 'https://statichk.cmermedical.com/imgs/2023/04/a7280ee58048f45f.jpg',
-        //   mb_hkImg: 'https://statichk.cmermedical.com/imgs/2023/02/699e0cf835f76a5d.jpg',
-        //   isRouterPath: false
-        // },
-        // {
-        //   link: '/',
-        //   className: 'banner_3',
-        //   pc_cnImg: 'https://statichk.cmermedical.com/imgs/2023/04/d87721cc7012fdd9.jpg',
-        //   pc_hkImg: 'https://statichk.cmermedical.com/imgs/2023/04/ed662418ca7b972a.jpg',
-        //   pc_enImg: 'https://statichk.cmermedical.com/imgs/2023/04/ed662418ca7b972a.jpg',
-        //   mb_cnImg: 'https://statichk.cmermedical.com/imgs/2023/04/eef9ad4d737ba85d.jpg',
-        //   mb_hkImg: 'https://statichk.cmermedical.com/imgs/2023/04/17a68f3a305077b9.jpg',
-        //   isRouterPath: false
-        // }
-      ],
-      optionList: 0,
-      link: "https://api.whatsapp.com/send/?phone=85260610511&amp;text=我想了解(W-Xmas01) Smile Pro矯視聖誕優惠 将连接中的&amp; 用js 替换为 &    ",
+      bannerLists: [],
       num: 5,
     };
   },
@@ -190,77 +76,16 @@ export default {
   },
   methods: {
     async getBannerList() {
-      let List = [];
-      let that = this;
-      if (this.$i18n.locale === "hk") {
-        await fetch(
-          `https://admin.hkcmereye.com/api.php/cms/slide/gid/1/num/${this.num}`
-        )
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (res) {
-            List = res.data.map((item, index) => {
-              return {
-                className: `banner_${index + 1}`,
-                pc_hkImg: `https://admin.hkcmereye.com${item.pic}`,
-                mb_hkImg: `https://admin.hkcmereye.com${item.mobilepic}`,
-                gid: item.gid,
-                link: that.replaceAmp(item.link),
-                isRouterPath: item.title == "link" ? true : false,
-              };
-            });
-          });
-      } else if (this.$i18n.locale === "cn") {
-        await fetch(
-          `https://admin.hkcmereye.com/api.php/cms/slide/gid/2/num/${this.num}`
-        )
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (res) {
-            List = res.data.map((item, index) => {
-              return {
-                className: `banner_${index + 1}`,
-                pc_cnImg: `https://admin.hkcmereye.com${item.pic}`,
-                mb_cnImg: `https://admin.hkcmereye.com${item.mobilepic}`,
-                gid: item.gid,
-                link: that.replaceAmp(item.link),
-                isRouterPath: item.title == "link" ? true : false,
-              };
-            });
-          });
-      } else {
-        await fetch(
-          `https://admin.hkcmereye.com/api.php/cms/slide/gid/3/num/${this.num}`
-        )
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (res) {
-            List = res.data.map((item, index) => {
-              return {
-                className: `banner_${index + 1}`,
-                pc_enImg: `https://admin.hkcmereye.com${item.pic}`,
-                mb_enImg: `https://admin.hkcmereye.com${item.mobilepic}`,
-                gid: item.gid,
-                link: that.replaceAmp(item.link),
-                isRouterPath: item.title == "link" ? true : false,
-              };
-            });
-          });
+      try {
+        const res = await $api("/api/v1/slides", {
+          params: { gid: 1 },
+        });
+        if (Array.isArray(res.data)) {
+          bannerList.value = res.data.map((item) => ({ ...item }));
+        }
+      } catch (error) {
+        console.error(error);
       }
-      this.bannerLists = List;
-      this.$nextTick(() => {
-        this.optionList = List.length;
-      });
-    },
-    // 转换 &amp;
-    replaceAmp(str) {
-      if (str.indexOf("&amp;") > -1) {
-        str = str.replace(/&amp;/g, "&");
-      }
-      return str;
     },
   },
 };
