@@ -181,12 +181,6 @@ export default {
       },
     },
   },
-  runtimeConfig: {
-    public: {
-      apiBase: "https://cms.cmermedical.com.hk",
-      siteId: "smile",
-    },
-  },
   config: {
     nuxt: {
       host: "0.0.0.0",
