@@ -1,10 +1,10 @@
 // G-XXXXXXXXXX 为自己生成的 Google Analytics 项目的ID
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag("js", new Date());
+// window.dataLayer = window.dataLayer || [];
+// function gtag() {
+//   dataLayer.push(arguments);
+// }
+// gtag("js", new Date());
 
-// gtag("config", "GTM-5M8VLLM"); 
-gtag("config", "G-FN8KFBR9XM"); 
+// // gtag("config", "GTM-5M8VLLM"); 
+// gtag("config", "G-FN8KFBR9XM"); 
 

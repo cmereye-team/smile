@@ -1197,7 +1197,7 @@ export default {
           offset: 200,
         }).init();
       }
-      this.taginits();
+      // this.taginits();
     });
     this.getScrollTop();
   },
