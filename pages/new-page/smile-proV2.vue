@@ -305,7 +305,7 @@
                   >
                     <span class="text-2xl md:text-5xl">港幣</span>
                     <span class="text-2xl md:text-5xl">$21,750</span>
-                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">SMILE Pro 2.0 CARE 港幣$23,500 <br class="block lg:hidden"/>(EPS用戶港幣$23,000<sup>#</sup>) </p>
+                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">SMILE Pro 1.0 CARE 港幣$23,500 <br class="block lg:hidden"/>(EPS用戶港幣$23,000<sup>#</sup>) </p>
                   </div>
                 </div>
                 <div
