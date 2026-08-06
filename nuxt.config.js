@@ -166,9 +166,9 @@ export default {
     hostname: "https://smile.hkcmereye.com",
     gizp: true,
   },
-  gtm: {
-    id: "GTM-5M8VLLM",
-  },
+  // gtm: {
+  //   id: "GTM-5M8VLLM",
+  // },
   // Build Configuration: https://go.nuxtjs.dev/config-build 防止多次打包
   build: {
     vendor: ["element-ui"],
