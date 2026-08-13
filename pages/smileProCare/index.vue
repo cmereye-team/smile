@@ -20,35 +20,13 @@
             <div class="smile-banner__gift-wrap">
               <div class="smile-banner__title">
                 <div class="smile-banner__title-row">
-                  <span class="smile-banner__title-main">SMILE Pro 2.0 Care</span>
-                  <!-- <span class="smile-banner__title-sub">限時禮品</span> -->
+                  <span class="smile-banner__title-main"
+                    >SMILE Pro Care 1.0/2.0</span
+                  >
                 </div>
-                <!-- <h3 class="smile-banner__heading">限量版便攜式咖啡機</h3> -->
                 <p class="smile-banner__description">
-                  是希瑪微笑矯視中心為對SMILE
-                  Pro 2.0微笑激光矯視有興趣的人而設的另一個選擇。
+                  希瑪專屬全方位矯視保障，為您帶來更極致、安心的體驗。
                 </p>
-                <!-- 剩餘數量顯示 -->
-                <!-- <div class="smile-banner__counter">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="19"
-                viewBox="0 0 21 19"
-                fill="none"
-                class="smile-banner__counter-icon"
-              >
-                <path
-                  d="M1.3125 17.0625C1.3125 17.7885 1.89902 18.375 2.625 18.375H9.1875V11.8125H1.3125V17.0625ZM11.8125 18.375H18.375C19.101 18.375 19.6875 17.7885 19.6875 17.0625V11.8125H11.8125V18.375ZM19.6875 5.25H17.9607C18.215 4.75371 18.375 4.2041 18.375 3.60938C18.375 1.62012 16.7549 0 14.7656 0C13.0594 0 11.9561 0.873633 10.541 2.80137C9.12598 0.873633 8.02266 0 6.31641 0C4.32715 0 2.70703 1.62012 2.70703 3.60938C2.70703 4.2041 2.86289 4.75371 3.12129 5.25H1.3125C0.586523 5.25 0 5.83652 0 6.5625V9.84375C0 10.2047 0.295312 10.5 0.65625 10.5H20.3438C20.7047 10.5 21 10.2047 21 9.84375V6.5625C21 5.83652 20.4135 5.25 19.6875 5.25ZM6.3123 5.25C5.40586 5.25 4.67168 4.51582 4.67168 3.60938C4.67168 2.70293 5.40586 1.96875 6.3123 1.96875C7.12852 1.96875 7.73145 2.1041 9.84375 5.25H6.3123ZM14.7656 5.25H11.2342C13.3424 2.1123 13.9289 1.96875 14.7656 1.96875C15.6721 1.96875 16.4062 2.70293 16.4062 3.60938C16.4062 4.51582 15.6721 5.25 14.7656 5.25Z"
-                  fill="#0A2342"
-                />
-              </svg>
-              <span class="smile-banner__counter-label">尚餘數量:</span>
-              <span class="smile-banner__counter-value" id="remaining-items"
-                >{{ randomNumber }}</span
-              >
-              <span class="smile-banner__counter-unit">部</span>
-            </div> -->
               </div>
               <div class="smile-banner__gift-link">
                 <a
@@ -65,7 +43,6 @@
                     <span class="smile-banner__gift-text-sub"
                       >SMILE Pro 2.0 Care</span
                     >
-                    <span class="smile-banner__gift-text-detail">計劃</span>
                   </div>
                 </a>
               </div>
@@ -94,12 +71,12 @@
       <div class="about-section__container">
         <div class="about-section__content">
           <h2 class="about-section__title">
-            <span>SMILE Pro 2.0 Care</span>
+            <span>SMILE Pro Care 1.0 / 2.0</span>
             <span>微笑激光矯視</span>
           </h2>
           <p class="about-section__description">
-            是希瑪微笑矯視中心為對SMILE
-            Pro 2.0微笑激光矯視有興趣的人而設的另一個選擇。<br />
+            是希瑪微笑矯視中心為對SMILE Pro
+            2.0微笑激光矯視有興趣的人而設的另一個選擇。<br />
             SMILE Pro 2.0 Care微笑激光矯視與SMILE Pro 2.0微笑激光<br
               class="md:hidden"
             />矯視使用同樣的技術進行矯視過程，所以
@@ -112,8 +89,8 @@
             <img
               class=""
               srcset="
-                https://pic1.imgdb.cn/item/690a6fe83203f7be00d20d88.png               400w,
-                https://pic1.imgdb.cn/item/690a6fe83203f7be00d20d88.png               768w,
+                https://pic1.imgdb.cn/item/690a6fe83203f7be00d20d88.png 400w,
+                https://pic1.imgdb.cn/item/690a6fe83203f7be00d20d88.png 768w,
                 https://statichk.cmermedical.com/smile/smileProCare/section2-img.webp
               "
               sizes="(max-width: 992px) 100vw, 1216px"
@@ -131,7 +108,8 @@
           <h2
             class="text-xl md:text-4xl font-bold text-[#0A2342] mb-6 md:text-nowrap"
           >
-            SMILE Pro 2.0 Care與SMILE Pro 2.0 <br class="md:hidden" />有什麼分別?
+            SMILE Pro 2.0 Care與SMILE Pro 2.0
+            <br class="md:hidden" />有什麼分別?
           </h2>
         </div>
         <div class="max-w-5xl mx-auto overflow-x-auto">
@@ -270,7 +248,9 @@
       <div class="benefits-section__wrapper">
         <div class="benefits-section__content">
           <div class="benefits-section__header">
-            <div class="benefits-section__title">SMILE Pro 2.0 Care 專享福利</div>
+            <div class="benefits-section__title">
+              SMILE Pro 2.0 Care 專享福利
+            </div>
             <div class="benefits-section__subtitle">
               選擇升級服務，即享三重額外福利，為您的矯視體驗加分！
             </div>
@@ -291,39 +271,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="benefits-section__gift-card">
-          <div>
-            <div
-              class="benefits-section__gift-info benefits-section__gift-info--left"
-            >
-              <span
-                class="benefits-section__gift-text benefits-section__gift-text--normal"
-                >便攜式咖啡機</span
-              >
-              <span
-                class="benefits-section__gift-text benefits-section__gift-text--bold"
-                >現時預約更有</span
-              >
-              <span
-                class="benefits-section__gift-text benefits-section__gift-text--thin"
-                >乙部</span
-              >
-            </div>
-            <div
-              class="benefits-section__gift-info benefits-section__gift-info--right"
-            >
-              <span
-                class="benefits-section__gift-text benefits-section__gift-text--thin"
-                >數量有限</span
-              >
-              <span
-                class="benefits-section__gift-text benefits-section__gift-text--thin"
-                >送完即止*</span
-              >
-            </div>
-            <div class="benefits-section__limited-badge">限量版</div>
-          </div>
-        </div> -->
       </div>
     </section>
     <!-- end SMILE Pro 2.0 Care 專享福利 -->
@@ -869,8 +816,6 @@ i {
     gap: 45px;
     margin-bottom: -134px;
   }
-  .service-tip__left {
-  }
   .service-tip__right {
     color: #4b5563;
     font-family: Inter;
@@ -886,61 +831,20 @@ i {
     margin-left: auto;
     margin-right: auto;
   }
-  .service-tip {
-  }
   .service-tip__left {
     max-width: 684px;
     width: 558.38px;
     display: block;
   }
 }
-// @media screen and (min-width:1000px){
-//     .new-container {
-//     max-width: 1010px !important;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-//      .service-tip{
-//   }
-//      .service-tip__left{
-//     max-width: 684px;
-//     width:488.86px;
-//     display: block;
-//   }
-//   .service-tip__right{
-//     color: #4B5563;
-// font-family: Inter;
-// font-size: 10px;
-// font-style: normal;
-// font-weight: 400;
-// line-height: 14px; /* 140% */
-//     max-width: 500px;
-//     margin-top: 64px;
-//   }
-// }
 @media screen and (max-width: 1140px) {
   .smile-NewBanner {
-    // 80
-    // margin-top: 80px;
     position: relative;
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 58px;
       left: 28px;
       top: 31px;
-      //   span {
-      //     font-style: normal;
-      //     color: #4570b6;
-      //     font-family: "Poppins", sans-serif;
-      //     font-size: 45.469px;
-      //     font-style: normal;
-      //     font-weight: 700;
-      //     line-height: 49.743px;
-      //   }
-      h3 {
-      }
-      p {
-      }
     }
     .smile-NewBanner-Tip {
       position: absolute;
@@ -989,8 +893,6 @@ i {
       margin: 0 auto;
       max-width: 100vw;
       margin-top: 30px;
-      .icl-WhatChoose-content-one-img {
-      }
       .icl-WhatChoose-content-one-text {
         margin: 0 auto;
         max-width: 100vw;
@@ -4001,11 +3903,6 @@ i {
     font-weight: 700;
     white-space: nowrap;
   }
-  .smile-banner__gift-text-detail {
-    font-size: 12px;
-    font-weight: 400;
-    white-space: nowrap;
-  }
   .smile-banner__scroll-indicator {
     display: flex;
     flex-direction: column;
@@ -4077,9 +3974,6 @@ i {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .smile-banner__text-wrap {
-    // position: absolute;
   }
   .smile-banner__container {
     max-width: 1024px;
@@ -4183,11 +4077,6 @@ i {
     font-weight: 700;
     white-space: nowrap;
   }
-  .smile-banner__gift-text-detail {
-    font-size: 12px;
-    font-weight: 400;
-    white-space: nowrap;
-  }
   .smile-banner__scroll-indicator {
     display: flex;
     flex-direction: column;
@@ -4209,8 +4098,6 @@ i {
     margin-top: 12px;
   }
   /* 修复有问题的代码 */
-  .smile-banner__text-wrap {
-  }
   .smile-banner__title {
     align-items: center;
   }
@@ -4250,55 +4137,12 @@ i {
     font-size: 31px;
     line-height: 45px;
   }
-  .smile-banner__gift-text-detail {
-    font-size: 27px;
-    line-height: 45px;
-  }
   .smile-banner__scroll-text {
     font-size: 16px;
     flex-direction: row;
   }
 }
 // start
-@media (max-width: 767px) {
-  /* 服务介绍区块样式 */
-  .about-section {
-  }
-  .about-section__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-  }
-  .about-section__content {
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    max-width: 768px;
-  }
-  .about-section__title {
-    font-size: 5.128vw;
-    color: #0a2342;
-    display: flex;
-    flex-direction: column;
-    margin-top: 6.923vw;
-    text-align: right;
-    font-weight: bold;
-    margin-bottom: 24px;
-  }
-  .about-section__description {
-    color: #4b5563;
-    text-align: left;
-    font-size: 3.59vw;
-    line-height: 1.625;
-  }
-  .about-section__image {
-    width: 100%;
-    margin-top: -20%;
-  }
-  .about-section__image img {
-    width: 100%;
-  }
-}
 /* 桌面端样式 (768px及以上) */
 @media (min-width: 768px) {
   .about-section {

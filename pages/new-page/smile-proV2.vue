@@ -131,10 +131,9 @@
       <div class="icl-WhatChoose-content-one container new-container">
         <div class="icl-WhatChoose-content-one-img">
           <img
-            class=""
             decoding="async"
             src="https://statichk.cmermedical.com/smile/vision-correction-iclV2/icl-why-pc-.avif"
-            alt=""
+            alt="希瑪眼科微笑矯視中心診所環境"
             loading="lazy"
             width="100%"
             height="100%"
@@ -575,26 +574,8 @@
                   SMILE Pro 2.0微笑激光<br />
                   矯視過程
                 </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="20"
-                  viewBox="0 0 19 20"
-                  fill="none"
-                >
-                  <path
-                    d="M0.726577 1.2312L17.593 18.0976"
-                    stroke="#4570B6"
-                    stroke-width="1.34165"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M18.1296 3.68896L18.1296 18.6727L3.63983 18.6727"
-                    stroke="#4570B6"
-                    stroke-width="1.34165"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <!-- prettier-ignore -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none"><path d="m.727 1.231 16.866 16.867m.537-14.409v14.984H3.64" stroke="#4570b6" stroke-width="1.342" stroke-linecap="round"/></svg>
               </div>
               <div class="content-area-img">
                 <img class="d-xl-none" :src="steps[activeStep].image" alt="" />
@@ -613,142 +594,6 @@
         </div>
       </div>
     </section>
-    <drow />
-    <!-- ICL植入式隱形眼鏡真實個案分享 -->
-    <!-- <section class="CaseSharing">
-      <div class="new-container CaseSharing-Box">
-        <h3>SMILE Pro微笑激光矯視<br />真實個案分享</h3>
-        <div class="CaseSharing-list" ref="caseSharingList">
-          <div class="CaseSharing-list-item">
-            <a
-              href="https://www.youtube.com/embed/vxeN1wXeZ5M?si=IUbNk8z1LKFNm9eA"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_maggie.avif"
-                alt=""
-              />
-              <span>Maggie米姬</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-            <a
-              class="d-lg-none-imp"
-              href="https://www.youtube.com/embed/TBI6J31JwJQ?si=bp9WtPjKg-wowh39"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_carmen.avif"
-                alt=""
-              />
-              <span>Carmen Ngai</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-          </div>
-          <div class="CaseSharing-list-item">
-            <a
-              href="https://www.youtube.com/embed/1p5Qm_772jI?si=5eV0Co5EhluQwgDJ"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/share/smilepro-pc-share02.avif"
-                alt=""
-              />
-              <span>細猫</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-            <div></div>
-          </div>
-          <div class="CaseSharing-list-item d-none d-lg-block">
-            <a
-              href="https://www.youtube.com/embed/TBI6J31JwJQ?si=bp9WtPjKg-wowh39"
-              target="_blank"
-            >
-              <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro_carmen.avif"
-                alt=""
-              />
-              <span>Carmen Ngai</span>
-              <i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="32"
-                  viewBox="0 0 26 32"
-                  fill="none"
-                >
-                  <path
-                    d="M24.479 13.3562C25.8404 14.209 26.2789 15.3059 25.8306 16.5753C25.5786 17.2881 25.0223 17.7145 24.4136 18.0921C18.6145 21.6985 12.8122 25.3049 7.0099 28.9081C6.13284 29.4549 5.24597 29.9887 4.37873 30.5518C3.4035 31.1833 2.38899 31.486 1.31231 30.8676C0.2389 30.2524 0 29.2076 0 28.0683C0.00327259 24.4359 0 20.8034 0 17.1709V3.5882C0.00327259 3.26597 -0.00654429 2.93397 0.039272 2.61499C0.363259 0.473259 2.23191 -0.438115 4.09074 0.697847C8.33857 3.29852 12.5569 5.94475 16.7851 8.57146C19.3509 10.1664 21.9231 11.7515 24.479 13.3562Z"
-                    fill="white"
-                  /></svg
-              ></i>
-            </a>
-          </div>
-        </div>
-        <a
-          target="_blank"
-          href="https://www.youtube.com/watch?v=iHBGkRh-CXw&list=PLWVonQr1f7XhXd4GDFI3zRtOe9RHb1jdb"
-          class="mx-auto icl-btn"
-        >
-          <span>更多分享</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="17"
-            height="17"
-            viewBox="0 0 17 17"
-            fill="none"
-          >
-            <path
-              d="M2 14.5399L14.5714 1.96851"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="M3.83179 1.5686H14.9999V12.3686"
-              stroke="white"
-              stroke-width="2.7"
-              stroke-linecap="round"
-            />
-          </svg>
-        </a>
-      </div>
-    </section> -->
     <userShare :user-share="ShareData"></userShare>
     <!-- 用家见证 -->
     <section class="smile-pro-evaluateV2 overflow-hidden">
@@ -1218,148 +1063,22 @@
         </a>
       </div>
     </section>
-    <!-- start了解更多 -->
-    <div class="group w-full mx-auto mb-[60px] md:mb-0 md:mt-[160px]">
-      <a
-        href="/smileProCare"
-        class="relative block w-full overflow-hidden aspect-[389/864] md:aspect-[27/8]"
-      >
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-pc.webp
-            "
-          />
-          <img
-            src="https://statichk.cmermedical.com/cmermedical/image/20260311/silme-bg-mobile.webp"
-            alt="SMILE Pro"
-            class="absolute w-full h-full object-cover"
-          />
-        </picture>
-        <div
-          class="absolute left-1/2 -translate-x-1/2 bottom-2 md:left-auto md:translate-x-0 md:-translate-y-1/2 md:right-[5%] md:h-full md:top-1/2 md:-translate-y-1/2 md:flex md:items-center w-[calc(100vw-100px)] mx-auto md:w-auto py-6 md:py-[5%]"
-        >
-          <div
-            class="relative z-10 text-white font-avant-garde text-2xl md:text-3xl font-bold not-italic leading-[44.25px]"
-          >
-            <p class="">想了解</p>
-            <p>
-              SMILE Pro 2.0 同 <br class="block md:hidden" />SMILE Pro 2.0 Care
-              <br class="" />
-              有咩分別？
-            </p>
-          </div>
-          <div class="relative z-10 mt-8 md:mt-0 md:ml-[72px] h-full">
-            <div
-              class="h-full aspect-[1/1] border-2 border-white rounded-full flex flex-col items-center justify-center group-hover:bg-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-[44px] aspect-[1/1] md:w-[28px] group-hover:text-[#0A2342]"
-                viewBox="0 0 44 44"
-                fill="none"
-              >
-                <path
-                  d="M2.5 40.8844L39.6998 3.68457"
-                  class="stroke-white group-hover:stroke-[#0A2342]"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M7.92065 2.5H40.968V34.458"
-                  class="stroke-white group-hover:stroke-[#0A2342]"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                />
-              </svg>
-              <span
-                class="text-white text-center text-[35px] font-black not-italic leading-[25px] mt-6 group-hover:text-[#0A2342]"
-                >了解更多</span
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-500 pointer-events-none"
-        ></div>
-      </a>
-    </div>
-    <!-- end了解更多 -->
     <section class="CaseSharingV2">
       <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="21"
-          height="19"
-          viewBox="0 0 21 19"
-          fill="none"
-        >
-          <path
-            d="M1 0.77832L19.4751 17.9337"
-            stroke="#4570B6"
-            stroke-width="1.97947"
-          />
-        </svg>
+        <!-- prettier-ignore -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none"><path d="m1 .778 18.475 17.156" stroke="#4570b6" stroke-width="1.979"/></svg>
         <span> 同朋友分享一下啦！ </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="21"
-          height="19"
-          viewBox="0 0 21 19"
-          fill="none"
-        >
-          <path
-            d="M20 0.77832L1.52493 17.9337"
-            stroke="#4570B6"
-            stroke-width="1.97947"
-          />
-        </svg>
+        <!-- prettier-ignore -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none"><path d="M20 .778 1.525 17.934" stroke="#4570b6" stroke-width="1.979"/></svg>
       </div>
       <div>
         <a id="shareCurrentPageIcl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="21"
-            height="22"
-            viewBox="0 0 21 22"
-            fill="none"
-          >
-            <path
-              d="M0.28309 11.3923C0.282266 9.41405 1.74115 7.78777 3.63606 7.6221C4.78751 7.52154 5.78565 7.88504 6.60988 8.69859C6.74258 8.82964 6.83243 8.84118 6.99233 8.74475C8.88558 7.59654 10.7838 6.45411 12.6836 5.31745C12.832 5.22843 12.8518 5.15177 12.799 4.99022C12.0968 2.83806 13.5441 0.523527 15.7852 0.202064C17.9084 -0.10209 19.8083 1.36263 20.0539 3.49335C20.2781 5.44027 18.853 7.28415 16.9053 7.55945C15.6327 7.73914 14.553 7.34679 13.6604 6.43186C13.5647 6.33377 13.4996 6.32058 13.3826 6.39147C11.463 7.55039 9.54167 8.70601 7.61957 9.85915C7.50665 9.92674 7.47203 9.99351 7.51819 10.1237C7.75227 10.7864 7.79595 11.4632 7.61627 12.1457C7.57423 12.3064 7.63028 12.3814 7.7671 12.4515C9.44029 13.3046 11.1118 14.1618 12.7842 15.019C12.9185 15.0875 13.0554 15.1534 13.1831 15.2317C13.3101 15.3092 13.3966 15.2977 13.4963 15.1765C14.0972 14.4487 14.8662 14.0134 15.7992 13.8626C17.2161 13.6335 18.7129 14.311 19.4811 15.5359C20.888 17.7779 19.6467 20.6776 17.0545 21.2035C15.0006 21.6206 12.9688 20.1831 12.6663 18.1018C12.5996 17.6419 12.5971 17.1844 12.7347 16.7376C12.7982 16.5324 12.7413 16.4401 12.5518 16.3436C10.7607 15.4345 8.9746 14.5154 7.18932 13.5939C7.05991 13.5271 6.98491 13.5436 6.89424 13.6541C6.06342 14.663 4.98945 15.1147 3.68799 15.0454C2.07332 14.9589 0.560032 13.565 0.328423 11.9495C0.298751 11.7451 0.275672 11.5415 0.283915 11.3915L0.28309 11.3923Z"
-              fill="#4570B6"
-            />
-          </svg>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none"><path d="M.283 11.392c0-1.978 1.458-3.604 3.353-3.77 1.152-.1 2.15.263 2.974 1.077.133.13.222.142.382.046q2.842-1.721 5.692-3.428c.148-.089.168-.165.115-.327-.702-2.152.745-4.466 2.986-4.788a3.726 3.726 0 0 1 4.269 3.291c.224 1.947-1.201 3.791-3.149 4.066-1.272.18-2.352-.212-3.245-1.127-.095-.098-.16-.111-.277-.04q-2.88 1.737-5.763 3.467c-.113.068-.148.135-.102.265.234.662.278 1.34.098 2.022-.042.16.014.235.151.305q2.51 1.281 5.017 2.568c.134.069.271.134.4.213.126.077.213.066.312-.055a3.65 3.65 0 0 1 2.303-1.314c1.417-.23 2.914.448 3.682 1.673a3.727 3.727 0 0 1-2.427 5.667c-2.053.418-4.085-1.02-4.388-3.101-.066-.46-.069-.918.069-1.364.063-.206.006-.298-.183-.394a884 884 0 0 1-5.363-2.75c-.13-.067-.204-.05-.295.06-.83 1.009-1.905 1.46-3.206 1.391C2.073 14.96.56 13.565.328 11.95a3 3 0 0 1-.044-.558" fill="#4570b6"/></svg>
         </a>
         <a @click="copyCurrentUrl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 22 22"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_10302_1589)">
-              <path
-                d="M9.10331 5.96582C10.8881 5.96788 12.1819 6.48567 13.3123 7.46166C13.4906 7.61577 13.6719 7.76576 13.8462 7.92295C14.1998 8.2404 14.2685 8.71402 13.9826 9.09722C13.644 9.55132 13.2864 9.99206 12.9169 10.4205C12.6102 10.7759 12.1381 10.7985 11.7725 10.5016C11.5445 10.3167 11.3283 10.1153 11.1003 9.92939C10.0614 9.08489 8.5107 9.12599 7.55356 10.0701C6.53466 11.0759 5.5337 12.1043 4.56062 13.1574C3.81463 13.9649 3.6493 14.9511 3.98793 15.998C4.32657 17.0449 5.06658 17.6788 6.11037 17.8699C6.97788 18.0281 7.77666 17.8031 8.43998 17.1744C8.65412 16.972 8.85232 16.7521 9.06148 16.5446C9.44493 16.1655 9.89611 16.1501 10.2826 16.5251C10.663 16.8949 11.0325 17.2771 11.3921 17.6685C11.7078 18.0127 11.7218 18.4883 11.423 18.8356C10.3951 20.0335 9.17403 20.8883 7.61033 21.1821C4.42019 21.781 1.21312 19.4828 0.680264 16.184C0.335653 14.0481 0.911332 12.204 2.37244 10.6598C3.2997 9.67974 4.24091 8.71299 5.19008 7.75549C6.35838 6.57607 7.76769 5.98123 9.10231 5.96685L9.10331 5.96582Z"
-                fill="#4570B6"
-              />
-              <path
-                d="M12.3093 15.4664C10.7307 15.4592 9.43492 14.9445 8.30647 13.9664C8.13516 13.8175 7.96186 13.6716 7.79055 13.5216C7.42104 13.1969 7.34734 12.7213 7.63916 12.3309C7.97879 11.8768 8.33635 11.4371 8.70487 11.0087C9.00964 10.6542 9.48373 10.6337 9.84925 10.9306C10.0644 11.1052 10.2666 11.2963 10.4837 11.4679C11.651 12.3915 13.1539 12.3021 14.1977 11.2388C15.131 10.2885 16.0602 9.33406 16.9785 8.36834C17.7345 7.57316 17.9635 6.61155 17.6667 5.55131C17.364 4.47258 16.6429 3.79863 15.5782 3.57672C14.6818 3.38974 13.8641 3.61165 13.1768 4.25889C12.9627 4.46025 12.7655 4.68216 12.5553 4.88866C12.1729 5.26467 11.7177 5.27906 11.3333 4.9051C10.9528 4.53525 10.5833 4.15307 10.2247 3.76061C9.91698 3.42467 9.89407 2.95105 10.1819 2.61408C11.147 1.48398 12.2824 0.636403 13.7426 0.306619C17.2036 -0.474177 20.5641 1.973 20.9874 5.60473C21.2095 7.51152 20.6826 9.19331 19.4117 10.5844C18.348 11.7484 17.2644 12.898 16.109 13.9664C15.0085 14.9846 13.6858 15.451 12.3083 15.4654L12.3093 15.4664Z"
-                fill="#4570B6"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_10302_1589">
-                <rect
-                  width="20.4545"
-                  height="21.1144"
-                  fill="white"
-                  transform="translate(0.583496 0.162109)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><g clip-path="url(#a)" fill="#4570b6"><path d="M9.103 5.966c1.785.002 3.079.52 4.21 1.496.178.154.359.304.533.461.354.317.422.791.137 1.174q-.51.68-1.066 1.324c-.307.355-.779.378-1.144.08-.229-.184-.445-.386-.673-.572-1.039-.844-2.59-.803-3.546.141a94 94 0 0 0-2.993 3.087c-.746.808-.912 1.794-.573 2.841s1.079 1.68 2.122 1.872c.868.158 1.667-.067 2.33-.696.214-.202.412-.422.621-.63.384-.378.835-.394 1.222-.019q.57.556 1.11 1.144c.315.344.329.82.03 1.167-1.028 1.198-2.249 2.052-3.813 2.346-3.19.599-6.397-1.7-6.93-4.998-.344-2.136.231-3.98 1.692-5.524Q3.765 9.19 5.19 7.755c1.168-1.179 2.578-1.774 3.912-1.788z"/><path d="M12.31 15.466c-1.58-.007-2.875-.521-4.004-1.5q-.257-.22-.515-.444c-.37-.325-.444-.8-.152-1.191q.511-.68 1.066-1.322c.305-.355.779-.375 1.144-.078.215.174.418.365.635.537 1.167.924 2.67.834 3.714-.23q1.401-1.423 2.78-2.87c.756-.795.985-1.756.689-2.817-.303-1.078-1.024-1.752-2.089-1.974-.896-.187-1.714.035-2.401.682-.214.201-.412.423-.622.63-.382.376-.837.39-1.222.016q-.57-.556-1.108-1.144c-.308-.336-.33-.81-.043-1.147.965-1.13 2.1-1.978 3.56-2.307 3.462-.781 6.822 1.666 7.245 5.298.223 1.907-.304 3.588-1.575 4.98-1.064 1.163-2.148 2.313-3.303 3.381-1.1 1.019-2.423 1.485-3.8 1.5"/></g><defs><clipPath id="a"><path fill="#fff" d="M.583.162h20.454v21.114H.583z"/></clipPath></defs></svg>
         </a>
       </div>
     </section>
