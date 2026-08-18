@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt  --p 3008",
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=8192 nuxt --p 3008",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -34,6 +34,7 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
     "autoprefixer": "^10.4.2",
+    "cross-env": "^10.1.0",
     "postcss": "^8.4.8",
     "tailwindcss": "^3.0.23",
     "wowjs": "^1.1.3"
