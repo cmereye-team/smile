@@ -1,20 +1,57 @@
 <template>
   <div class="lasik">
-    <div class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 mb-2 lg:mb-3 rounded-lg">
+    <div
+      class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 mb-2 lg:mb-3 rounded-lg"
+    >
       <a href="javascript:void(0);" @click="scrollToPrice">
-        <img src="https://statichk.cmermedical.com/smile/smileproV2/banner/smilepro-banner-01-v1.jpg" alt="暑假限定">
+        <img
+          src="https://statichk.cmermedical.com/smile/smileproV2/banner/smilepro-banner-01-v1.jpg"
+          alt="暑假限定"
+        />
       </a>
     </div>
     <div
       class="container new-container mx-auto smile-NewBanner position-relative"
     >
       <picture class="w-full">
-        <source media="(min-width: 1024px)" srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.avif" type="image/avif">
-        <source media="(min-width: 1024px)" srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.webp" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.jpg">
-        <source srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.avif" type="image/avif">
-        <source srcset="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.webp" type="image/webp">
-        <img src="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.jpg" alt="希瑪率先引進SMILE PRO 2.0" title="全面升級更精華" class="w-full rounded-lg">
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.avif
+          "
+          type="image/avif"
+        />
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.webp
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-v1.jpg
+          "
+        />
+        <source
+          srcset="
+            https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.avif
+          "
+          type="image/avif"
+        />
+        <source
+          srcset="
+            https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.webp
+          "
+          type="image/webp"
+        />
+        <img
+          src="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-v1.jpg"
+          alt="希瑪率先引進SMILE PRO 2.0"
+          title="全面升級更精華"
+          class="w-full rounded-lg"
+        />
       </picture>
       <div class="smile-NewBanner-Tip">
         <div class="smile-NewBanner-Tip-Title">
@@ -37,17 +74,39 @@
             >SMILE Pro 2.0 {{ $t("smile_proV2.CenterTile") }}
           </a>
         </div>
-        <div class="mb-5 tracking-widest px-7 lg:pr-0 lg:pl-[clamp(16px,4vw,76px)] flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-8">
-          <img src="https://statichk.cmermedical.com/smile/smileproV2/icon-smile-pro-2-v1.webp" alt="SMILE PRO 2.0" class="h-fit lg:w-2/5 aspect-[45/16]">
-          <div class="text-base lg:text-xl leading-[2.5] lg:leading-[2] lg:flex-1">
-            <h1 class="text-primary text-xl lg:text-3xl font-black mb-7 lg:mb-5 text-center lg:text-left">SMILE PRO 2.0 微笑激光矯視</h1>
+        <div
+          class="mb-5 tracking-widest px-7 lg:pr-0 lg:pl-[clamp(16px,4vw,76px)] flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-8"
+        >
+          <img
+            src="https://statichk.cmermedical.com/smile/smileproV2/icon-smile-pro-2-v1.webp"
+            alt="SMILE PRO 2.0"
+            class="h-fit lg:w-2/5 aspect-[45/16]"
+          />
+          <div
+            class="text-base lg:text-xl leading-[2.5] lg:leading-[2] lg:flex-1"
+          >
+            <h1
+              class="text-primary text-xl lg:text-3xl font-black mb-7 lg:mb-5 text-center lg:text-left"
+            >
+              SMILE PRO 2.0 微笑激光矯視
+            </h1>
             <div class="mb-5 lg:mb-10">
-              <h2 class="text-primary font-bold text-left mb-0">升級矯視數據平台</h2>
-              <p class="text-text font-light">全新配置虹膜數據測量儀器，捕捉每雙眼睛獨一無二的虹膜紋路。透過新增的激光矯視數據平台，同步個人矯視參數至激光設備，簡化整體矯視流程，同時提升運作效率與數據精準度。</p>
+              <h2 class="text-primary font-bold text-left mb-0">
+                升級矯視數據平台
+              </h2>
+              <p class="text-text font-light">
+                全新配置虹膜數據測量儀器，捕捉每雙眼睛獨一無二的虹膜紋路。透過新增的激光矯視數據平台，同步個人矯視參數至激光設備，簡化整體矯視流程，同時提升運作效率與數據精準度。
+              </p>
             </div>
             <div>
-              <h2 class="text-primary font-bold text-left mb-0">虹膜辨識散光導航</h2>
-              <p class="text-text font-light">激光設備的智能輔助系統同步升級，進⼀步強化散光矯正的精準度與穩定性。SMILE pro 2.0 可在術中實時識別虹膜狀態，與預存的專屬虹膜影像對比。倘若眼球產生細微轉動，系統亦能夠即時追蹤並自動校正散光軸向，減低對人工調校的依賴。</p>
+              <h2 class="text-primary font-bold text-left mb-0">
+                虹膜辨識散光導航
+              </h2>
+              <p class="text-text font-light">
+                激光設備的智能輔助系統同步升級，進⼀步強化散光矯正的精準度與穩定性。SMILE
+                pro 2.0
+                可在術中實時識別虹膜狀態，與預存的專屬虹膜影像對比。倘若眼球產生細微轉動，系統亦能夠即時追蹤並自動校正散光軸向，減低對人工調校的依賴。
+              </p>
             </div>
           </div>
         </div>
@@ -148,7 +207,9 @@
               {{ $t("smile_proV2.four_feature.smallTilte") }}
             </p>
           </div>
-          <div class="smilepro-four-feature-Box-List grid grid-cols-1 gap-6 lg:gap-10">
+          <div
+            class="smilepro-four-feature-Box-List grid grid-cols-1 gap-6 lg:gap-10"
+          >
             <div
               class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
               data-wow-delay="0.1s"
@@ -187,8 +248,7 @@
               <div class="smilepro-four-feature-Box-List-item-text">
                 <h3>{{ $t("smile_proV2.four_feature.item1_title3") }}</h3>
                 <p>
-                  {{ $t("smile_proV2.four_feature.item1_p3_1")
-                  }}
+                  {{ $t("smile_proV2.four_feature.item1_p3_1") }}
                 </p>
               </div>
             </div>
@@ -200,8 +260,7 @@
               <div class="smilepro-four-feature-Box-List-item-text">
                 <h3>{{ $t("smile_proV2.four_feature.item1_title4") }}</h3>
                 <p>
-                  {{ $t("smile_proV2.four_feature.item1_p4_1")
-                  }}
+                  {{ $t("smile_proV2.four_feature.item1_p4_1") }}
                 </p>
               </div>
             </div>
@@ -221,7 +280,7 @@
                   }}
                 </p>
               </div> -->
-              <!-- <div
+            <!-- <div
                 class="smilepro-four-feature-Box-List-item-number"
                 data-wow-delay="0.3s"
               >
@@ -280,7 +339,12 @@
                   >
                     <span class="text-2xl md:text-5xl">港幣</span>
                     <span class="text-2xl md:text-5xl">$21,750</span>
-                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">SMILE Pro 1.0 CARE 港幣$23,500 <br class="block lg:hidden"/>(EPS用戶港幣$23,000<sup>#</sup>) </p>
+                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">
+                      SMILE Pro 1.0 CARE 港幣$23,500
+                      <br
+                        class="block lg:hidden"
+                      />(EPS用戶港幣$23,000<sup>#</sup>)
+                    </p>
                   </div>
                 </div>
                 <div
@@ -317,7 +381,10 @@
                     <span class="text-2xl md:text-5xl">港幣</span>
                     <span class="text-2xl md:text-5xl">$24,600</span>
                     <p class="text-[10px] md:text-xl text-text md:pt-[4px]">
-                      SMILE Pro 2.0 CARE 港幣$26,350<br class="block lg:hidden"/> (EPS用戶港幣$25,850<sup>#</sup>) 
+                      SMILE Pro 2.0 CARE 港幣$26,350<br
+                        class="block lg:hidden"
+                      />
+                      (EPS用戶港幣$25,850<sup>#</sup>)
                     </p>
                   </div>
                 </div>
@@ -413,7 +480,7 @@
             <td>約23-25秒</td>
             <td>約10秒</td>
             <td>約10秒</td>
-            <td>不需使用激光<br/>（植入式）</td>
+            <td>不需使用激光<br />（植入式）</td>
           </tr>
           <tr>
             <td>
@@ -440,9 +507,9 @@
                 <p>術後眼乾<br />情況</p>
               </div>
             </td>
-            <td>暫時性<br/>（輕微）</td>
-            <td>暫時性<br/>（輕微）</td>
-            <td>暫時性<br/>（輕微）</td>
+            <td>暫時性<br />（輕微）</td>
+            <td>暫時性<br />（輕微）</td>
+            <td>暫時性<br />（輕微）</td>
             <td>無</td>
           </tr>
           <tr>
@@ -452,13 +519,18 @@
               >
                 <!-- prettier-ignore -->
                 <svg class="size-9 md:size-12 lg:size-[52px]" xmlns="http://www.w3.org/2000/svg" width="47" height="48" viewBox="0 0 47 48" fill="none"><g clip-path="url(#prefix__clip0_20416_1992)" fill="#4570b6"><path d="M23.5 40.874c-9.987 0-19.175-5.363-23.412-13.662a.8.8 0 0 1 0-.733c4.237-8.3 13.425-13.663 23.412-13.663S42.675 18.18 46.912 26.48c.119.232.119.5 0 .733-4.237 8.3-13.425 13.662-23.412 13.662M1.714 26.84C5.76 34.396 14.26 39.258 23.5 39.258s17.74-4.862 21.786-12.418C41.24 19.284 32.74 14.422 23.5 14.422S5.76 19.284 1.714 26.84"/><path d="M23.5 40.874c-7.737 0-14.029-6.292-14.029-14.029S15.763 12.816 23.5 12.816s14.029 6.292 14.029 14.03c0 7.736-6.292 14.028-14.029 14.028m0-26.452c-6.85 0-12.418 5.569-12.418 12.418 0 6.85 5.569 12.418 12.418 12.418 6.85 0 12.418-5.569 12.418-12.418 0-6.85-5.569-12.418-12.418-12.418"/><path d="M23.5 32.378a5.54 5.54 0 0 1-5.533-5.533c0-.33.03-.676.098-1.022a.8.8 0 0 1 .413-.563.82.82 0 0 1 .697-.03q.388.17.815.17c1.14 0 2.07-.93 2.07-2.07q0-.42-.17-.816a.806.806 0 0 1 .593-1.11 5.4 5.4 0 0 1 1.017-.097 5.54 5.54 0 0 1 5.533 5.533 5.54 5.54 0 0 1-5.533 5.533zm-3.923-5.394a3.93 3.93 0 0 0 3.923 3.778c2.116 0 3.923-1.76 3.923-3.922a3.9 3.9 0 0 0-3.778-3.923 3.685 3.685 0 0 1-4.067 4.067"/><path d="M19.985 27.01a3.685 3.685 0 0 1-3.68-3.68 3.685 3.685 0 0 1 3.68-3.68 3.685 3.685 0 0 1 3.68 3.68 3.685 3.685 0 0 1-3.68 3.68m0-5.75c-1.14 0-2.07.93-2.07 2.07 0 1.141.93 2.07 2.07 2.07s2.07-.929 2.07-2.07-.93-2.07-2.07-2.07"/><path d="M23.5 22.918a.806.806 0 0 1-.805-.805V9.363a.806.806 0 0 1 1.61 0v12.75a.806.806 0 0 1-.805.805"/><path d="M27.144 10.168H19.85a.806.806 0 0 1-.805-.805V6.065c0-.444.361-.805.805-.805h7.293c.444 0 .805.361.805.805v3.298a.806.806 0 0 1-.805.805m-6.483-1.61h5.683V6.87H20.66z"/><path d="M28.145 6.87h-9.29a.81.81 0 0 1-.759-.537l-1.858-5.26A.81.81 0 0 1 16.997 0h13.012c.263.001.505.13.655.342.15.211.191.485.103.733l-1.858 5.26a.81.81 0 0 1-.758.536zm-8.722-1.61h8.155l1.29-3.655H18.132z"/><path d="M32.006 1.61H14.994a.806.806 0 0 1 0-1.61h17.017a.806.806 0 0 1 0 1.61zM23.5 47.877c-9.786 0-18.421-6.927-20.532-16.475a.807.807 0 0 1 1.574-.346c1.946 8.815 9.92 15.216 18.963 15.216s17.012-6.4 18.963-15.216a.81.81 0 0 1 .96-.614.81.81 0 0 1 .614.96c-2.11 9.548-10.746 16.475-20.532 16.475zm19.748-24.614a.805.805 0 0 1-.785-.63c-1.316-5.94-5.425-10.989-10.994-13.502a.803.803 0 0 1-.402-1.063.8.8 0 0 1 1.063-.403c6.028 2.72 10.483 8.186 11.902 14.622a.803.803 0 0 1-.614.96 1 1 0 0 1-.176.02zm-39.496 0a.81.81 0 0 1-.79-.98C4.388 15.845 8.837 10.38 14.866 7.66c.408-.18.883 0 1.063.403.18.407 0 .882-.403 1.063-5.569 2.513-9.677 7.556-10.993 13.502a.804.804 0 0 1-.785.63z"/></g><defs><clipPath id="prefix__clip0_20416_1992"><path fill="#fff" d="M0 0h47v47.877H0z"/></clipPath></defs></svg>
-                <p>定位追蹤<br/>技術</p>
+                <p>定位追蹤<br />技術</p>
               </div>
             </td>
             <td>手動追蹤</td>
             <td>手動追蹤</td>
-            <td>自動追蹤
-              <img src="https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-up.svg" alt="SMILE PRO 2.0 精準度提升" class="w-[68px] lg:w-[144px] mx-auto mt-2">
+            <td>
+              自動追蹤
+              <img
+                src="https://statichk.cmermedical.com/smile/smileproV2/table/smilepro-table-up.svg"
+                alt="SMILE PRO 2.0 精準度提升"
+                class="w-[68px] lg:w-[144px] mx-auto mt-2"
+              />
             </td>
             <td>自動追蹤</td>
           </tr>
@@ -541,16 +613,19 @@
             ref="swiperContainer"
           >
             <div class="swiper-wrapper">
-              <div class="swiper-slide swiperWrap-item" v-for="review in userRating">
+              <div
+                class="swiper-slide swiperWrap-item"
+                v-for="review in userRating"
+              >
                 <div>
                   <!-- prettier-ignore -->
                   <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="34.5" cy="34.5" r="33.75" stroke="#4570b6" stroke-width="1.5"/><mask id="prefix__mask0_11050_282" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="69" height="69"><circle cx="34.5" cy="34.5" r="33.75" fill="#fff" stroke="#4570b6" stroke-width="1.5"/></mask><g clip-path="url(#prefix__clip0_11050_282)" stroke="#4570b6" stroke-width="1.5" mask="url(#prefix__mask0_11050_282)"><path d="M48.647 23.236c0 7.72-6.258 13.977-13.977 13.977s-13.978-6.258-13.978-13.977S26.95 9.258 34.67 9.258s13.977 6.258 13.977 13.978Zm10.086 37.842v3.657c-.222.13-.559.319-1.015.545-.934.463-2.37 1.088-4.347 1.716-3.954 1.256-10.081 2.524-18.702 2.524-8.62 0-14.746-1.268-18.7-2.524-1.977-.628-3.412-1.253-4.346-1.716a16 16 0 0 1-1.015-.545v-3.657c0-4.418 2.455-8.895 6.728-12.291 4.265-3.39 10.3-5.665 17.334-5.665 7.032 0 13.069 2.274 17.334 5.664 4.274 3.396 6.729 7.873 6.729 12.292Z"/></g><circle cx="34.5" cy="34.5" r="33.75" stroke="#4570b6" stroke-width="1.5"/><defs><clipPath id="prefix__clip0_11050_282"><path fill="#fff" d="M9.858 8.508h49.625V70.27H9.858z"/></clipPath></defs></svg>
                   <p class="swiperWrap-item-text">
-                    {{review.review}}
+                    {{ review.review }}
                   </p>
                   <div class="swiperWrap-item-name">
-                    <i>{{review.occupation}}</i>
-                    <p>{{review.name}}</p>
+                    <i>{{ review.occupation }}</i>
+                    <p>{{ review.name }}</p>
                   </div>
                 </div>
               </div>
@@ -944,7 +1019,37 @@ export default {
           nameCn: "鄧伊程",
         },
       ],
-      userRating:[{name: 'Macy', occupation: '文員', review: '做完SMILE Pro之後生活方便咗好多!好享受無需戴眼鏡的感覺，推薦！'},{name: 'Ken', occupation: '行政人員', review: '完成SMILE Pro後，效果符合預期，係值得為自己做嘅投資'},{name: 'Vivien', occupation: '家庭主婦', review: '本身好驚，但醫療團隊講解步驟好清楚，喺矯視過程溫柔又細心令我安心哂'},{name: '阿聲', occupation: '咖啡師', review: '終於唔洗成日帶con搞到眼乾眼紅!做完SMILE Pro之後發現呢個世界好靚'},{name: 'Agnes', occupation: '店務員', review: '過程好快好安全，術後康復又快，眼睛兩三日後都已經清，感覺好神奇！'},],
+      userRating: [
+        {
+          name: "Macy",
+          occupation: "文員",
+          review:
+            "做完SMILE Pro之後生活方便咗好多!好享受無需戴眼鏡的感覺，推薦！",
+        },
+        {
+          name: "Ken",
+          occupation: "行政人員",
+          review: "完成SMILE Pro後，效果符合預期，係值得為自己做嘅投資",
+        },
+        {
+          name: "Vivien",
+          occupation: "家庭主婦",
+          review:
+            "本身好驚，但醫療團隊講解步驟好清楚，喺矯視過程溫柔又細心令我安心哂",
+        },
+        {
+          name: "阿聲",
+          occupation: "咖啡師",
+          review:
+            "終於唔洗成日帶con搞到眼乾眼紅!做完SMILE Pro之後發現呢個世界好靚",
+        },
+        {
+          name: "Agnes",
+          occupation: "店務員",
+          review:
+            "過程好快好安全，術後康復又快，眼睛兩三日後都已經清，感覺好神奇！",
+        },
+      ],
       canonicalHref: "https://smile.hkcmereye.com/smilePro",
       canonicalHrefCN: "https://smile.hkcmereye.com/cn/smilePro",
       browserTitle: "SMILE PRO 2.0 微笑矯視 - 希瑪微笑矯視中心",
@@ -1020,14 +1125,14 @@ export default {
       container.appendChild(overflowDiv);
     },
     scrollToPrice() {
-      const element = document.getElementById('price');
+      const element = document.getElementById("price");
       if (element) {
         element.scrollIntoView({
-          behavior: 'smooth', // 平滑滚动
-          block: 'start'      // 滚动到元素的顶部
+          behavior: "smooth", // 平滑滚动
+          block: "start", // 滚动到元素的顶部
         });
       }
-    }
+    },
   },
   // beforeDestroy() {
   //   window.removeEventListener("resize", this.checkDeviceType);
@@ -1081,40 +1186,47 @@ body {
 </style>
 <style lang="scss" scoped>
 @keyframes elegantShine {
-	0% {
-		left: -100%;
-		opacity: 0;
-	}
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
 
-	30% {
-		opacity: 1;
-	}
+  30% {
+    opacity: 1;
+  }
 
-	65% {
-		opacity: 1;
-	}
+  65% {
+    opacity: 1;
+  }
 
-	80% {
-		left: 120%;
-		opacity: 1;
-	}
+  80% {
+    left: 120%;
+    opacity: 1;
+  }
 
-	100% {
-		left: 100%;
-		opacity: 0;
-	}
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
 }
 
 .notice {
-	position: relative;
-	:after {
+  position: relative;
+  :after {
     content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 80%;
     height: 100%;
-    background: linear-gradient(115deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 30%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.03) 70%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.03) 30%,
+      rgba(255, 255, 255, 0.25) 50%,
+      rgba(255, 255, 255, 0.03) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
     animation: elegantShine 2.5s infinite;
     z-index: 2;
     mix-blend-mode: overlay;
@@ -1136,8 +1248,8 @@ i {
 .smilepro-difference {
   .custom-comparison-table {
     thead tr > th:nth-child(2) {
-      background-color: #E0F0FF;
-      color: #4570B6;
+      background-color: #e0f0ff;
+      color: #4570b6;
     }
     thead tr > th:nth-child(3) {
       background-color: #afcdff;
@@ -1148,12 +1260,12 @@ i {
       color: #fff;
     }
     thead tr > th:nth-child(5) {
-      background-color: #DBF0F2;
-      color: #4596B6;
+      background-color: #dbf0f2;
+      color: #4596b6;
     }
     tbody tr > td:nth-child(1) {
       background-color: #f8f8f8;
-      color: #4570B6;
+      color: #4570b6;
     }
     tbody tr > td:nth-child(4) {
       background-color: #5a8ad6;
