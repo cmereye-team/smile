@@ -1,33 +1,20 @@
 <template>
   <div class="preaching-seat" v-loading.fullscreen.lock="fullscreenLoading">
-    <!-- <div class="preaching-seat-banner">
-      <Banner class="banner-box">
-        <template #banner>
-          <div class="banner-img banner-text-default">
-          </div>
-        </template>
-      </Banner>
-    </div> -->
-    <BannerSlider :gid="3" :num="1" setStyle="-mb-6 md:mb-5" />
+    <BannerSlider :gid="2" :num="1" setStyle="-mb-6 md:mb-5" />
     <div class="lecture-box mb-[56px]">
       <div class="lecture-title">
         <div>
           <div class="lecture-content">
             <div>
-              <p class="text-[clamp(14px,4.44vw,24px)]" v-html="$t('appointFroms.title')"></p>
+              <p
+                class="text-[clamp(14px,4.44vw,24px)]"
+                v-html="$t('appointFroms.title')"
+              ></p>
             </div>
             <div>
-              <!-- <p>{{ $t("appointFroms.p1") }}</p> -->
-              <!-- <p>旺角診所(星期一至五)：旺角彌敦道625及639號雅蘭中心一期702室</p> -->
-              <!-- <p>旺角診所(星期六)：旺角彌敦道625及639號雅蘭中心一期1208室</p> -->
-              <!-- <p>{{ $t("appointFroms.p2") }}</p> -->
-
               <p v-html="$t('appointFroms.p3')"></p>
               <p v-html="$t('appointFroms.p4')"></p>
               <p v-html="$t('appointFroms.p5')"></p>
-              <!-- <p>
-                尖沙咀診所︰尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室
-              </p> -->
             </div>
             <div class="lecture-form">
               <el-form
@@ -46,10 +33,6 @@
                       @change="handleServiceChange"
                       clearable
                     >
-                      <!-- <el-option
-                      label="Smile Pro 講座-尖沙咀"
-                      value="smilerProTsui"
-                    ></el-option> -->
                       <!-- Smile Pro 講座-旺角 -->
                       <el-option
                         :label="$t('appointFroms.content0.title1')"
@@ -65,21 +48,6 @@
                         :label="$t('appointFroms.content0.title3')"
                         value="3"
                       ></el-option>
-                      <!-- <el-option :label="$t('appointFroms.content1.title3')" value="smileMongKok"></el-option> -->
-                      <!-- <el-option
-                      label="老花講座-中環"
-                      value="clearVisionCentral"
-                    ></el-option> -->
-                      <!-- Smile講座-旺角 -->
-                      <!-- <el-option
-                      :label="$t('appointFroms.content1.title3')"
-                      value="smileMongKok"
-                    ></el-option> -->
-                      <!-- 老花講座-旺角 -->
-                      <!-- <el-option
-                      :label="$t('appointFroms.content1.title4')"
-                      value="clearVisionMongKok"
-                    ></el-option> -->
                     </el-select>
                   </el-form-item>
                   <el-form-item :label="$t('appointFroms.title4')">
@@ -90,42 +58,18 @@
                       @change="changeLocation"
                       clearable
                     >
-                      <!-- <el-option
-                      label="Smile Pro 講座-尖沙咀"
-                      value="smilerProTsui"
-                    ></el-option> -->
                       <!-- Smile Pro 講座-旺角 -->
                       <el-option
                         :label="$t('appointFroms.content1.title1')"
                         value="1"
                         v-if="serviceVal != '2'"
                       ></el-option>
-                      <!-- Smile Pro 講座-中環 -->
-                      <!-- <el-option
-                      :label="$t('appointFroms.content1.title5')"
-                      value="smileProCentral"
-                    ></el-option> -->
                       <!-- Smile講座-中環 -->
                       <el-option
                         :label="$t('appointFroms.content1.title2')"
                         value="2"
                         v-if="serviceVal != '3'"
                       ></el-option>
-                      <!-- <el-option :label="$t('appointFroms.content1.title3')" value="smileMongKok"></el-option> -->
-                      <!-- <el-option
-                      label="老花講座-中環"
-                      value="clearVisionCentral"
-                    ></el-option> -->
-                      <!-- Smile講座-旺角 -->
-                      <!-- <el-option
-                      :label="$t('appointFroms.content1.title3')"
-                      value="smileMongKok"
-                    ></el-option> -->
-                      <!-- 老花講座-旺角 -->
-                      <!-- <el-option
-                      :label="$t('appointFroms.content1.title4')"
-                      value="clearVisionMongKok"
-                    ></el-option> -->
                     </el-select>
                   </el-form-item>
                 </div>
@@ -292,35 +236,14 @@
           </div>
         </div>
       </div>
-
       <h2 class="lectureCalendar">{{ $t("appointFroms.LectureCalendar") }}</h2>
       <div class="lecture-image">
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-ct-202608-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-ct-202608-v1.jpg"
-            alt="希瑪眼科八月中環預約日歷"
-            title="希瑪眼科八月中環預約日歷"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/preaching-seat/calendar-mk-202608-v1.webp
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://statichk.cmermedical.com/smile/preaching-seat/calendar-mk-202608-v1.jpg"
-            alt="希瑪眼科八月旺角預約日歷"
-            title="希瑪眼科八月旺角預約日歷"
-          />
-        </picture>
+        <img
+          v-for="img in calendarList"
+          :key="img.id"
+          :src="img.pic"
+          :alt="img.title"
+        />
       </div>
     </div>
     <div v-show="applySuccess" class="applyDialog">
@@ -395,20 +318,10 @@
         </div>
       </div>
     </div>
-    <!-- <div class="dialog-win" v-if="test">
-      <div>
-        <h3>提交信息, 是否继续?</h3>
-        <div>
-          <button @click="submitForm()">确认提交</button>
-          <button @click="isOpenDialog(1)">取消</button>
-        </div>
-        <div @click="isOpenDialog(1)"><i></i><i></i></div>
-      </div>
-    </div> -->
-    <!-- <Footer /> -->
   </div>
 </template>
 <script>
+import { $api } from "~/utils/api.js";
 import BannerSlider from "@/components/commom/swiper/SwiperBanner.vue";
 import H2Tag from "@/components/Publice/H2Tag.vue";
 export default {
@@ -450,6 +363,7 @@ export default {
         "https://smile.hkcmereye.com/cn/ophthalmicInfo/AppointForm/",
       browserTitle: "講座 - 希瑪微笑矯視中心",
       browserTitleCn: "講座 - 希玛微笑矫视中心",
+      calendarList: [],
     };
   },
   head() {
@@ -503,6 +417,14 @@ export default {
   },
   computed: {},
   methods: {
+    async getCalendarList() {
+      try {
+        const res = await $api("/api/v1/booking/calendars");
+        this.calendarList = res.data;
+      } catch (error) {
+        console.error(error);
+      }
+    },
     isOpenDialog(index) {
       // index ==0  1  0开 1关
       if (index == 0) {
@@ -521,24 +443,25 @@ export default {
      */
     onSubmit() {
       // 对预留位置、姓名、联络电话校验不能为空，判断邮件格式是否正确
-      if (
-        this.form1.numberSeat == "" ||
-        this.form1.name == "" ||
-        this.form1.telphoneNumber == ""
-      ) {
+      const requiredFields = [
+        this.form1.numberSeat,
+        this.form1.name,
+        this.form1.telphoneNumber,
+      ];
+      const hasEmptyField = requiredFields.some(
+        (value) => !value || String(value).trim() === ""
+      );
+      if (hasEmptyField) {
         this.$message({
-          message: "请檢查預留位置、姓名、聯絡電話不能為空！",
+          message: "請檢查預留位置、姓名、聯絡電話不能為空！",
           type: "warning",
         });
         return;
       }
       // 郵件不为空，檢查郵箱格式
-      // this.form1.email !== "" &&
-      if (this.form1.email !== "") {
-        if (
-          !this.form1.email.includes("@") ||
-          !this.form1.email.includes(".com")
-        ) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (this.form1.email) {
+        if (!emailRegex.test(this.form1.email.trim())) {
           this.$message({
             message: "請檢查郵件格式是否正確！",
             type: "warning",
@@ -984,24 +907,9 @@ export default {
           item.style.disabled = true;
           item.style.cursor = "no-drop";
         });
-
         // elements elements1 切换年份直接禁用
-        // elements[0].style.color = "#303133";
-        // elements[0].style.disabled = true;
-        // elements[0].style.cursor = "no-drop";
         elements[0].style.display = "none";
         elements2[0].style.display = "none";
-
-        // elements1[0].style.color = "#303133";
-        // elements1[0].style.disabled = true;
-        // elements1[0].style.cursor = "no-drop";
-
-        // elements2[0].style.color = "#303133";
-        // elements2[0].style.disabled = true;
-        // elements2[0].style.cursor = "no-drop";
-        // elements3[0].style.color = "#303133";
-        // elements3[0].style.disabled = true;
-        // elements3[0].style.cursor = "no-drop";
       }, 500);
     },
     getNowMonth() {
@@ -1012,6 +920,7 @@ export default {
     },
   },
   mounted() {
+    this.getCalendarList();
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
@@ -1031,9 +940,6 @@ export default {
 </script>
 
 <style lang="scss">
-// .el-select-dropdown__wrap {
-//   padding-bottom: 8px;
-// }
 .el-select-dropdown__item {
   height: 50px;
   line-height: 50px;
@@ -1056,17 +962,6 @@ export default {
     overflow: auto;
   }
 }
-
-// .el-select-dropdown{
-//   border: none;
-//   box-shadow: none;
-// }
-// .el-range-editor.is-active, .el-range-editor.is-active:hover, .el-select .el-input.is-focus .el-input__inner{
-//   border-top: 2px solid #4570B6;
-//   border-left: 2px solid #4570B6;
-//   border-right: 2px solid #4570B6;
-//   border-bottom: 2px solid transparent;
-// }
 
 .date-picker-class {
   .el-picker-panel__content {
@@ -1118,14 +1013,6 @@ export default {
       }
     }
   }
-
-  // .el-date-picker__header {
-  //   & > button:nth-child(1):hover,
-  //   & > button:nth-child(2):hover {
-  //     color: #303133 !important;
-  //     cursor: no-drop;
-  //   }
-  // }
 }
 
 @media screen and (max-width: 767px) {
