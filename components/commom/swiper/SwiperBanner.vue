@@ -1,11 +1,12 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-26 11:48:06
- * @LastEditTime: 2026-07-15 09:18:45
+ * @LastEditTime: 2026-08-03 11:09:30
  * @FilePath: /components/commom/swiper/SwiperBanner.vue
  * @Description: 轮播图Banner
 -->
 <script>
+import { $api } from "~/utils/api.js";
 export default {
   name: "SwiperBanner",
   props: {
@@ -19,8 +20,8 @@ export default {
     },
     setStyle: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
   data() {
     return {
@@ -36,74 +37,17 @@ export default {
       },
     };
   },
-  computed: {
-    bannerCount() {
-      return this.bannerLists.length;
-    },
-  },
   methods: {
-    /**
-     * @description: 判断是否为外部链接
-     * @param {string} url 链接地址
-     */
-    isExternal(url) {
-      if (!url || url.startsWith("#") || url.startsWith("/")) return false;
-      return (
-        /^[a-z][a-z0-9+.-]*:\/\//i.test(url) ||
-        /^\/\//.test(url) ||
-        url.startsWith("tel:") ||
-        url.startsWith("mailto:") ||
-        url.startsWith("whatsapp:")
-      );
-    },
-    replaceAmp(str) {
-      if (str && str.indexOf("&amp;") > -1) {
-        str = str.replace(/&amp;/g, "&");
-      }
-      return str;
-    },
     async getBannerList() {
-      let List = [];
-      let that = this;
-      const API = `https://admin.hkcmereye.com/api.php/cms/slide/gid/${this.gid}/num/${this.num}`;
-      // console.log(`gid=${this.gid}, num=${this.num}, API=${API}`);
-      const formatImgUrl = (url) => {
-        if (!url) return "";
-        const prefix = "https://admin.hkcmereye.com";
-        if (/^(https?:)?\/\//.test(url)) {
-          return url;
-        }
-        return url.startsWith("/") ? `${prefix}${url}` : `${prefix}/${url}`;
-      };
-
       try {
-        const response = await fetch(API);
-        const res = await response.json();
-        const dataList = res.data || [];
-
-        List = dataList.map((item, index) => {
-          return {
-            id: Number(item.id),
-            className: `banner_${index + 1}`,
-            pc_img: formatImgUrl(item.pic),
-            mb_img: formatImgUrl(item.mobilepic),
-            gid: item.gid,
-            link: that.replaceAmp(item.link),
-            isExternal: that.isExternal(item.link),
-            title: item.subtitle,
-            subtitle: `home-banner-${item.subtitle}`,
-          };
+        const res = await $api("/api/v1/slides", {
+          params: { gid: this.gid, pageSize: this.num },
         });
-
-        // 关键修改 2：如果只有一张图，动态关闭 loop
-        if (List.length <= 1) {
-          this.swiperOption.loop = false;
-          this.swiperOption.autoplay = false;
+        if (Array.isArray(res.data)) {
+          this.bannerLists = res.data.map((item) => ({ ...item }));
         }
-
-        that.bannerLists = List;
       } catch (error) {
-        console.error("获取 banner 失败:", error);
+        console.error(error);
       }
     },
   },
@@ -131,48 +75,25 @@ export default {
         ref="bannerSwiper"
       >
         <div class="swiper-wrapper">
-          <template v-for="(banner, index) in bannerLists">
-            <nuxt-link
-              v-if="!banner.isExternal"
-              :key="`nuxt-${index}-${banner.id}`"
-              class="swiper-slide"
-              :to="localePath(banner.link)"
-              :data-banner-title="banner.subtitle"
-              :data-banner-id="index + 1"
-            >
-              <picture>
-                <source media="(min-width: 768px)" :srcset="banner.pc_img" />
-                <img
-                  class="rounded-xl"
-                  :class="banner.className"
-                  :src="banner.mb_img"
-                  :alt="banner.title"
-                  :title="banner.title"
-                />
-              </picture>
-            </nuxt-link>
-            <a
-              v-else
-              :key="`a-${index}-${banner.id}`"
-              class="swiper-slide"
-              :href="banner.link"
-              target="_blank"
-              rel="noopener noreferrer"
-              :data-banner-title="banner.subtitle"
-              :data-banner-id="index + 1"
-            >
-              <picture>
-                <source media="(min-width: 768px)" :srcset="banner.pc_img" />
-                <img
-                  class="rounded-xl"
-                  :class="banner.className"
-                  :src="banner.mb_img"
-                  :alt="banner.title"
-                  :title="banner.title"
-                />
-              </picture>
-            </a>
-          </template>
+          <nuxt-link
+            v-for="(banner, index) in bannerLists"
+            :key="`nuxt-${index}-${banner.id}`"
+            class="swiper-slide"
+            :to="localePath(banner.link)"
+            :data-banner-title="banner.subtitle"
+            :data-banner-id="index + 1"
+          >
+            <picture>
+              <source media="(min-width: 768px)" :srcset="banner.pic" />
+              <img
+                class="rounded-xl"
+                :class="banner.className"
+                :src="banner.pic_mobile"
+                :alt="banner.title"
+                :title="banner.subtitle"
+              />
+            </picture>
+          </nuxt-link>
         </div>
       </div>
     </div>

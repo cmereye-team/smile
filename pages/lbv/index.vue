@@ -3145,7 +3145,7 @@ i {
                         <span class="mr-2 text-base md:text-lg opacity-80"
                           >·</span
                         >
-                        激光时间更短
+                        激光時間更短
                       </li>
                       <li class="flex items-center">
                         <span class="mr-2 text-base md:text-lg opacity-80"
