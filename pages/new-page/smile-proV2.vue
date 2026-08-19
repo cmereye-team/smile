@@ -64,7 +64,7 @@
       </div>
     </div>
     <!-- 中心介绍 -->
-    <section class="smile-newCenter">
+    <section class="smile-newCenter new-container px-3 xl:px-0">
       <div class="smile-newCenter-menu">
         <a href="/">{{ $t("Correct.newIcl.menuone") }} </a>&nbsp;>&nbsp;<a>{{
           $t("Correct.newIcl.menuTwo")
@@ -74,7 +74,7 @@
         </a>
       </div>
       <div
-        class="summary overflow-hidden container flex flex-col lg:flex-row gap-10 xl:gap-[68px]"
+        class="summary overflow-hidden flex flex-col lg:flex-row gap-10 xl:gap-[68px] mb-23 lg:mb-[180px]"
       >
         <div class="lg:w-1/2 px-3 lg:px-0">
           <div class="new-container">
@@ -130,7 +130,7 @@
             <img
               src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-01-mb-v1.webp"
               alt=""
-              class="mb-6 lg:-mb-[60px]"
+              class="mb-6 lg:-mb-[60px] w-full max-w-lg ml-auto"
             />
           </picture>
           <div class="aspect-video w-full max-w-lg">
@@ -150,11 +150,17 @@
         <div
           class="mb-5 tracking-widest px-7 lg:pr-0 lg:pl-[clamp(16px,4vw,76px)] flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-8"
         >
-          <img
-            src="https://statichk.cmermedical.com/smile/smileproV2/icon-smile-pro-2-v1.webp"
-            alt="SMILE PRO 2.0"
-            class="h-fit lg:w-2/5 aspect-[45/16]"
-          />
+          <div class="lg:w-2/5 center flex-col">
+            <img
+              src="https://statichk.cmermedical.com/smile/smileproV2/icon-smile-pro-2-v1.webp"
+              alt="SMILE PRO 2.0"
+              class="w-full aspect-[45/16]"
+            />
+            <span
+              class="text-text text-sm lg:tex-xl font-light tracking-[0.3em]"
+              >蔡司ZEISS官方認證</span
+            >
+          </div>
           <div
             class="text-base lg:text-xl leading-[2.5] lg:leading-[2] lg:flex-1"
           >
@@ -328,12 +334,8 @@
             <div class="bg-[#033994]">
               <p><span>SMILE Pro 2.0 CARE</span><span>HK$26,350</span></p>
               <p><span>EPS用戶</span><span>HK$25,850#</span></p>
-              <a
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="price-what"
-                >什麼是SMILE Pro 2.0 Care？</a
+              <NuxtLink :to="localePath('/smileProCare')" class="price-what"
+                >什麼是SMILE Pro 2.0 Care？</NuxtLink
               >
             </div>
             <div class="border border-[#A2C2F5] text-white">
@@ -379,7 +381,7 @@
               <span>HK$100</span>
             </div>
             <NuxtLink
-              to="/fee#table1"
+              :to="localePath('/fee#table1')"
               class="center bg-gradient-to-r from-[#528BE9] to-[#4D80D4] rounded-xl lg:rounded-3xl"
             >
               <span>查看矯視費用詳情</span>
@@ -393,7 +395,7 @@
             SMILE Pro 1.0 費用
           </h3>
           <div
-            class="pt-6 px-5 pb-9 lg:pt-9 lg:px-8 lg:pb-[60px] border border-[#4570B64D] bg-white text-[#6D6E71] rounded-xl lg:rounded-3xl"
+            class="pt-6 px-5 pb-9 lg:pt-9 lg:px-8 lg:pb-[60px] border border-[#4570B64D] bg-white text-text rounded-xl lg:rounded-3xl"
           >
             <div>
               <p class="flex flex-col">
@@ -415,7 +417,7 @@
               <span>HK$100</span>
             </div>
             <NuxtLink
-              to="/fee#table1"
+              :to="localePath('/fee#table1')"
               class="center bg-gradient-to-r from-[#528BE9] to-[#4D80D4] rounded-xl lg:rounded-3xl"
             >
               <span>查看矯視費用詳情</span>
@@ -1342,6 +1344,10 @@ i {
       line-height: 1.5;
     }
   }
+}
+.icl-btn {
+  position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 1139px) {
   .new-Footer-v2 {
@@ -2718,7 +2724,7 @@ i {
       background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-four-feature/smilepro-four-feature-pcBg.webp");
       background-repeat: no-repeat;
       background-size: 100%;
-      right: 0;
+      right: #{"min((100vw - 1320px) / 2, 0)"};
       top: -81px;
       pointer-events: none;
       width: clamp(324px, 33.75vw, 648px);
