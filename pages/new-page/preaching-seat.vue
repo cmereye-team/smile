@@ -364,6 +364,7 @@ export default {
       browserTitle: "講座 - 希瑪微笑矯視中心",
       browserTitleCn: "講座 - 希玛微笑矫视中心",
       calendarList: [],
+      calendarDate: [],
     };
   },
   head() {
@@ -415,12 +416,51 @@ export default {
       nowMonth: this.nowDayMonth,
     };
   },
-  computed: {},
+  computed: {
+    // 讲座日期列表
+    groupedCalendarList() {
+      if (!Array.isArray(this.calendarDate)) return [];
+      const groups = this.calendarDate.reduce((acc, item) => {
+        const groupKey = `${item.service_type}_${item.location}`;
+        if (!acc[groupKey]) {
+          acc[groupKey] = {
+            service_type: item.service_type,
+            service_type_label: item.service_type_label,
+            location: item.location,
+            location_label: item.location_label,
+            schedules: [],
+          };
+        }
+        acc[groupKey].schedules.push(item);
+        return acc;
+      }, {});
+      return Object.values(groups);
+    },
+    // 当前选择的讲座分组
+    currentScheduleGroup() {
+      if (!this.serviceVal || !this.addressVal) return null;
+      return (
+        this.groupedCalendarList.find(
+          (item) =>
+            item.service_type === String(this.serviceVal) &&
+            item.location === String(this.addressVal)
+        ) || null
+      );
+    },
+  },
   methods: {
     async getCalendarList() {
       try {
         const res = await $api("/api/v1/booking/calendars");
         this.calendarList = res.data;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async getCalendarDate() {
+      try {
+        const res = await $api("/api/v1/booking/schedules");
+        this.calendarDate = res.data;
       } catch (error) {
         console.error(error);
       }
@@ -509,192 +549,23 @@ export default {
     changeLocation() {
       this.clearFrom();
 
-      console.log(this.serviceVal, this.addressVal, "changeLocation");
+      console.log(
+        `changeLocation: serviceVal=${this.serviceVal}, addressVal=${this.addressVal}`
+      );
       // 当 serviceVal 和 addressVal 都不为空时，拼接它们并赋值给 form1.address
-
       if (this.serviceVal && this.addressVal) {
-        // Smile Pro 講座-旺角
-        if (this.serviceVal == 1 && this.addressVal == 1) {
-          this.form.address = "smileProMongKok";
-        } else if (this.serviceVal == 1 && this.addressVal == 2) {
-          // Smile Pro 講座-中環
-          this.form.address = "smileProCentral";
-        } else if (this.serviceVal == 2 && this.addressVal == 2) {
-          // Smile講座-中環
-          this.form.address = "smileCentral";
-        } else if (this.serviceVal == 3 && this.addressVal == 1) {
-          // 老花講座-旺角
-          this.form.address = "clearVisionMongKok";
-        } else {
-          this.form.address = "";
-        }
+        this.form.address = `${this.serviceVal}_${this.addressVal}`;
       } else {
-        // 当其中一个值为空时，清空 form1.address
         this.form.address = "";
       }
-      // console.log(this.form1.address, "递四方速递");
-
-      if (!this.form.address) {
-        console.warn("changeLocation: address is empty");
+      if (!this.form.address || !this.currentScheduleGroup) {
         this.allowedDates = [];
         return;
       }
-      const dateConfigs = {
-        smilerProTsui: [],
-        // 中环-smile
-        smileCentral: [
-          "2026-01-03",
-          "2026-01-07",
-          "2026-01-14",
-          "2026-01-21",
-          "2026-01-28",
-          "2026-02-04",
-          "2026-02-11",
-          "2026-02-25",
-          "2026-03-04",
-          "2026-03-11",
-          "2026-03-18",
-          "2026-03-25",
-          "2026-04-01",
-          "2026-04-15",
-          "2026-04-29",
-          "2026-05-06",
-          "2026-05-13",
-          "2026-05-20",
-          "2026-05-27",
-          "2026-06-03",
-          "2026-06-10",
-          "2026-06-17",
-          "2026-06-24",
-          "2026-07-08",
-          "2026-07-15",
-          "2026-07-22",
-          "2026-07-29",
-          "2026-08-05",
-          "2026-08-12",
-          "2026-08-19",
-          "2026-08-26",
-        ],
-        // 中环-smilePro
-        smileProCentral: [
-          "2026-01-10",
-          "2026-01-17",
-          "2026-01-24",
-          "2026-01-31",
-          "2026-02-07",
-          "2026-02-21",
-          "2026-02-28",
-          "2026-03-07",
-          "2026-03-14",
-          "2026-03-21",
-          "2026-03-28",
-          "2026-04-11",
-          "2026-04-18",
-          "2026-04-25",
-          "2026-05-02",
-          "2026-05-09",
-          "2026-05-16",
-          "2026-05-23",
-          "2026-05-30",
-          "2026-06-06",
-          "2026-06-13",
-          "2026-06-20",
-          "2026-06-27",
-          "2026-07-04",
-          "2026-07-11",
-          "2026-07-18",
-          "2026-07-25",
-          "2026-08-01",
-          "2026-08-08",
-          "2026-08-15",
-          "2026-08-22",
-          "2026-08-29",
-        ],
-        smileMongKok: [],
-        // 旺角-SmilePro
-        smileProMongKok: [
-          "2026-01-05",
-          "2026-01-10",
-          "2026-01-13",
-          "2026-01-17",
-          "2026-01-19",
-          "2026-01-24",
-          "2026-01-27",
-          "2026-01-31",
-          "2026-02-02",
-          "2026-02-07",
-          "2026-02-10",
-          "2026-02-14",
-          "2026-02-21",
-          "2026-02-24",
-          "2026-02-28",
-          "2026-03-02",
-          "2026-03-07",
-          "2026-03-10",
-          "2026-03-14",
-          "2026-03-16",
-          "2026-03-21",
-          "2026-03-24",
-          "2026-03-28",
-          "2026-03-30",
-          "2026-04-18",
-          "2026-04-21",
-          "2026-04-27",
-          "2026-05-16",
-          "2026-06-06",
-          "2026-06-15",
-          "2026-06-27",
-          "2026-07-06",
-          "2026-07-18",
-          "2026-07-25",
-          "2026-08-03",
-          "2026-08-08",
-          "2026-08-22",
-          "2026-08-31",
-        ],
-        clearVisionCentral: [],
-        // 旺角-老花矫视
-        clearVisionMongKok: [
-          "2026-01-03",
-          "2026-01-06",
-          "2026-01-12",
-          "2026-01-20",
-          "2026-01-26",
-          "2026-02-03",
-          "2026-02-09",
-          "2026-02-23",
-          "2026-03-03",
-          "2026-03-09",
-          "2026-03-17",
-          "2026-03-23",
-          "2026-03-31",
-          "2026-04-11",
-          "2026-04-14",
-          "2026-04-20",
-          "2026-05-05",
-          "2026-05-11",
-          "2026-05-18",
-          "2026-05-23",
-          "2026-05-26",
-          "2026-06-02",
-          "2026-06-13",
-          "2026-06-16",
-          "2026-06-22",
-          "2026-06-29",
-          "2026-06-30",
-          "2026-07-11",
-          "2026-07-14",
-          "2026-07-20",
-          "2026-07-27",
-          "2026-07-28",
-          "2026-08-11",
-          "2026-08-15",
-          "2026-08-17",
-          "2026-08-24",
-          "2026-08-25",
-        ],
-      };
-      this.allowedDates = dateConfigs[this.form.address] || [];
+      // 动态获取当前组可选的日期列表
+      this.allowedDates = this.currentScheduleGroup.schedules.map(
+        (item) => item.booking_date
+      );
     },
     /**
      * @description: 时间戳转换为字符串
@@ -726,87 +597,26 @@ export default {
      * @param {string} nameAddress 选择地点
      */
     getName(nameAddress) {
-      if (!this.form.subdate || !nameAddress) return null;
-      // 初步处理讲座时间
-      const { nowDay, weekday, isoDate } = this.timestampToWeekday(
-        this.form.subdate
-      );
-      // console.log(
-      //   `已进入getName函数,nameAddress=${nameAddress},subdate=${this.form.subdate},isoDate=${isoDate}`
-      // );
+      if (!this.form.subdate || !nameAddress || !this.currentScheduleGroup)
+        return null;
+
+      // 格式化当前选中的时间戳为 "YYYY-MM-DD"
+      const { nowDay, isoDate } = this.timestampToWeekday(this.form.subdate);
       this.nowDayTime = nowDay;
-      // 映射表
-      const schedules = {
-        smileProMongKok: {
-          name: "Smile Pro 2.0 講座-旺角",
-          times: {
-            周二: "1:30 下午",
-            周四: "6:30 下午",
-            周六: "2:30 下午",
-            周一: "6:30 下午",
-          },
-        },
-        smileProCentral: {
-          name: "Smile Pro 2.0 講座-中環",
-          times: {
-            周六: "1:30 下午",
-          },
-        },
-        smileCentral: {
-          name: "Smile講座-中環",
-          times: {
-            周三: "1:30 下午",
-            周六: "3:30 下午",
-            周一: "6:30 下午",
-            周二: "1:30 下午",
-          },
-        },
-        smileMongKok: {
-          name: "Smile講座-旺角",
-          times: {
-            周二: "1:30 下午",
-            周四: "6:30 下午",
-            周六: "1:30 下午",
-            周三: "1:30 下午",
-          },
-        },
-        clearVisionCentral: {
-          name: "老花講座-中環",
-          times: {},
-        },
-        clearVisionMongKok: {
-          name: "老花講座-旺角",
-          times: {
-            周二: "1:30 下午",
-            周六: "2:30 下午",
-            周一: "6:30 下午",
-            周四: "6:30 下午",
-            "2025年10月6日": "1:30 下午",
-            "2026年4月11日": "2:30 下午",
-            "2026年5月23日": "2:30 下午",
-          },
-        },
-      };
-      // 处理时间
-      const config = schedules[nameAddress];
-      if (!config) return null;
-      this.morningOrAfternoon =
-        config.times[nowDay] || config.times[weekday] || "";
-      // 处理讲座名称
-      const lbv = [
-        "2026-05-23",
-        "2026-06-13",
-        "2026-06-22",
-        "2026-07-11",
-        "2026-07-20",
-        "2026-08-15",
-        "2026-08-24",
-      ];
-      const seatname =
-        nameAddress === "clearVisionMongKok" && lbv.includes(isoDate)
-          ? "老花講座 (LBV特別場)-旺角"
-          : config.name;
-      return seatname;
+
+      // 在当前分组中寻找匹配选中日期的项目
+      const matchItem = this.currentScheduleGroup.schedules.find(
+        (item) => item.booking_date === isoDate
+      );
+
+      if (matchItem) {
+        // 动态获取接口返回的时间显示 (例如: "1:30 下午")
+        this.morningOrAfternoon = matchItem.time_slot_display;
+        // 动态获取接口返回的讲座名称 (例如: "SMILE+ICL 講座-中環")
+        return matchItem.name;
+      }
+      this.morningOrAfternoon = "";
+      return null;
     },
     getUrl() {
       return window.location.href;
@@ -921,6 +731,7 @@ export default {
   },
   mounted() {
     this.getCalendarList();
+    this.getCalendarDate();
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
