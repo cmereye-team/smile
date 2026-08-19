@@ -23,7 +23,7 @@
           </div>
         </div>
       </section>
-      <div class="feeV2-Bg overflow-hidden" id="table1">
+      <div class="feeV2-Bg overflow-hidden scroll-mt-20 md:scroll-mt-40" id="table1">
         <section class="smilepro-difference">
           <table class="table custom-comparison-table new-container">
             <thead>

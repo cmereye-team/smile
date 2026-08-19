@@ -1,7 +1,7 @@
 <template>
   <div class="lasik">
     <div
-      class="notice max-w-[1320px] mx-auto px-4 min-[992px]:px-0 mb-2 lg:mb-3 rounded-lg"
+      class="notice new-container px-4 min-[992px]:px-0 mb-2 lg:mb-3 rounded-lg"
     >
       <a href="javascript:void(0);" @click="scrollToPrice">
         <img
@@ -65,15 +65,88 @@
     </div>
     <!-- 中心介绍 -->
     <section class="smile-newCenter">
-      <div class="container new-container mx-auto">
-        <div class="smile-newCenter-menu">
-          <a href="/">{{ $t("Correct.newIcl.menuone") }} </a>&nbsp;>&nbsp;<a>{{
-            $t("Correct.newIcl.menuTwo")
-          }}</a
-          >&nbsp;>&nbsp;<a href="/smilePro"
-            >SMILE Pro 2.0 {{ $t("smile_proV2.CenterTile") }}
-          </a>
+      <div class="smile-newCenter-menu">
+        <a href="/">{{ $t("Correct.newIcl.menuone") }} </a>&nbsp;>&nbsp;<a>{{
+          $t("Correct.newIcl.menuTwo")
+        }}</a
+        >&nbsp;>&nbsp;<a href="/smilePro"
+          >SMILE Pro 2.0 {{ $t("smile_proV2.CenterTile") }}
+        </a>
+      </div>
+      <div
+        class="summary overflow-hidden container flex flex-col lg:flex-row gap-10 xl:gap-[68px]"
+      >
+        <div class="lg:w-1/2 px-3 lg:px-0">
+          <div class="new-container">
+            <div class="flex items-end gap-2 lg:gap-3 mb-4 lg:mb-6">
+              <h2
+                class="text-lg lg:text-3xl font-bold text-primary whitespace-nowrap mb-0"
+              >
+                <span class="font-en tracking-normal">SMILE®Pro</span>
+                <strong class="font-black">{{
+                  $t("smile_proV2.CenterTile")
+                }}</strong>
+              </h2>
+              <img
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-full-upgraded-v2.svg"
+                alt="全面升級"
+                class="w-[132px] lg:w-[232px] flex-1 pb-1"
+              />
+            </div>
+            <div class="summary-desc space-y-5 lg:space-y-10">
+              <p>
+                <span>{{ $t("smile_proV2.p_text1") }}</span>
+                <strong>{{ $t("smile_proV2.strong1") }}</strong>
+                <span>{{ $t("smile_proV2.p_text2") }}</span>
+                <strong>{{ $t("smile_proV2.strong2") }}</strong>
+                <span>{{ $t("smile_proV2.p_text3") }}</span>
+                <strong>{{ $t("smile_proV2.strong3") }}</strong>
+                <span>{{ $t("smile_proV2.p_text4") }}</span>
+                <strong>{{ $t("smile_proV2.strong4") }}</strong>
+                <span>{{ $t("smile_proV2.p_text5") }}</span>
+                <strong>{{ $t("smile_proV2.strong5") }}</strong>
+                <span>{{ $t("smile_proV2.p_text6") }}</span>
+                <strong>{{ $t("smile_proV2.strong6") }}</strong>
+                <span>{{ $t("smile_proV2.p_text7") }}</span>
+              </p>
+              <p>
+                <span>{{ $t("smile_proV2.p_text8") }}</span>
+                <strong>{{ $t("smile_proV2.strong7") }}</strong>
+                <span>{{ $t("smile_proV2.p_text9") }}</span>
+                <strong>{{ $t("smile_proV2.strong8") }}</strong>
+                <span>{{ $t("smile_proV2.p_text10") }}</span>
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="flex-1">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-01-pc-v1.webp
+              "
+            />
+            <img
+              src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-01-mb-v1.webp"
+              alt=""
+              class="mb-6 lg:-mb-[60px]"
+            />
+          </picture>
+          <div class="aspect-video w-full max-w-lg">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/IxvWmeOd18c"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container new-container mx-auto">
         <div
           class="mb-5 tracking-widest px-7 lg:pr-0 lg:pl-[clamp(16px,4vw,76px)] flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-8"
         >
@@ -109,37 +182,6 @@
               </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="smilePro-newCenter-content overflow-hidden">
-        <div class="smilePro-newCenter-content-text">
-          <div class="container new-container">
-            <div>
-              <h2>SMILE Pro {{ $t("smile_proV2.CenterTile") }}</h2>
-              <p>
-                {{ $t("smile_proV2.p_text1")
-                }}<span>{{ $t("smile_proV2.p_text2") }}</span
-                >{{ $t("smile_proV2.p_text3")
-                }}<span>ZEISS VISUMAX 800 SMILE®pro</span
-                >{{ $t("smile_proV2.p_text4")
-                }}<span class="let">{{ $t("smile_proV2.p_text5") }}</span
-                >{{ $t("smile_proV2.p_text6") }}{{ $t("smile_proV2.p_text6_1")
-                }}<span>{{ $t("smile_proV2.p_text7") }}</span
-                >{{ $t("smile_proV2.p_text8") }}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="smilepro-Vedio">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/IxvWmeOd18c"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
         </div>
       </div>
     </section>
@@ -197,7 +239,7 @@
       <div class="">
         <div class="smilepro-four-feature-Box">
           <div class="smilepro-four-feature-Box-top">
-            <h2>
+            <h2 class="title-normal">
               <span>SMILE Pro 1.0/2.0</span><br class="d-none d-lg-block" />{{
                 $t("smile_proV2.four_feature.title")
               }}
@@ -264,176 +306,139 @@
                 </p>
               </div>
             </div>
-            <!-- <div
-              class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
-              data-wow-delay="0.2s"
-            >
-              <div class="smilepro-four-feature-Box-List-item-number">
-                02
-              </div>
-              <div class="smilepro-four-feature-Box-List-item-text">
-                <h4>{{ $t("smile_proV2.four_feature.item1_title2") }}</h4>
-                <p>
-                  {{ $t("smile_proV2.four_feature.item1_p2_1")
-                  }}<br class="d-lg-none" />{{
-                    $t("smile_proV2.four_feature.item1_p2_2")
-                  }}
-                </p>
-              </div> -->
-            <!-- <div
-                class="smilepro-four-feature-Box-List-item-number"
-                data-wow-delay="0.3s"
-              >
-                03
-              </div>
-              <div
-                class="smilepro-four-feature-Box-List-item-text"
-              >
-                <h4>{{ $t("smile_proV2.four_feature.item1_title3") }}</h4>
-                <p>{{ $t("smile_proV2.four_feature.item1_p3_1") }}</p>
-              </div> -->
-            <!-- </div>
-            <div></div>
-            <div
-              class="smilepro-four-feature-Box-List-item wow animate__fadeInUp"
-              data-wow-delay="0.4s"
-            >
-              <div class="smilepro-four-feature-Box-List-item-number">04</div>
-              <div class="smilepro-four-feature-Box-List-item-text">
-                <h4>{{ $t("smile_proV2.four_feature.item1_title4") }}</h4>
-                <p>{{ $t("smile_proV2.four_feature.item1_p4_1") }}</p>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
     </section>
     <!-- start  SMILE Pro 微笑激光矯視費用-->
-    <section
-      id="price"
-      class="scroll-mt-20 md:scroll-mt-[160px] bg-[#F6FAFD] py-8 px-2 md:px-0 md:pb-32 md:pt-24 mb-8 mt-[50px] md:mb-22 md:mt-[166px] bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-bg-mb-v1.webp)] min-[992px]:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-bg-pc-v1.webp)] bg-cover bg-center bg-no-repeat"
-    >
-      <div class="w-full flex flex-col items-center mx-auto">
-        <h2
-          class="text-white text-lg xs:text-xl md:text-3xl font-black mb-6 md:mb-10 tracking-wider text-center"
-        >
-          SMILE Pro 微笑激光矯視夏日禮遇
-        </h2>
-        <div class="w-full">
-          <div class="space-y-7 lg:space-y-[60px]">
+    <section id="price" class="new-container">
+      <h2 class="title-normal">SMILE Pro 微笑激光矯視夏日禮遇</h2>
+      <div class="flex flex-col lg:flex-row gap-5 lg:gap-8 mb-4 lg:mb-20">
+        <div class="price-item text-white">
+          <h3 class="bg-[#042562]">SMILE Pro 2.0 費用</h3>
+          <div
+            class="pt-6 px-5 pb-9 lg:pt-9 lg:px-8 lg:pb-[60px] bg-[#042562] rounded-xl lg:rounded-3xl"
+          >
             <div>
-              <div
-                class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
+              <p class="flex flex-col">
+                <span>SMILE Pro 2.0</span><span>微笑激光矯視</span>
+              </p>
+              <p>HK$24,600</p>
+            </div>
+            <div class="bg-[#033994]">
+              <p><span>SMILE Pro 2.0 CARE</span><span>HK$26,350</span></p>
+              <p><span>EPS用戶</span><span>HK$25,850#</span></p>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="price-what"
+                >什麼是SMILE Pro 2.0 Care？</a
               >
-                SMILE Pro 1.0 費用
+            </div>
+            <div class="border border-[#A2C2F5] text-white">
+              <div
+                class="flex justify-bewteen items-center border-b border-[#A2C2F5]"
+              >
+                <div class="center gap-2 lg:gap-3">
+                  <img
+                    src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-upgrade-01-v2.svg"
+                    loading="lazy"
+                    class="w-5 lg:w-9"
+                    alt="自動追蹤圖標"
+                  />
+                  <span>自動追蹤</span>
+                </div>
+                <img
+                  src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-upgrade.svg"
+                  loading="lazy"
+                  class="w-22 lg:w-[140px]"
+                  alt="升級點"
+                />
               </div>
-              <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-                <div
-                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 min-[992px]:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
-                >
-                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    SMILE Pro 1.0<br /><span>微笑激光矯視</span>
-                  </div>
-                  <div
-                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
-                  >
-                    <span class="text-2xl md:text-5xl">港幣</span>
-                    <span class="text-2xl md:text-5xl">$21,750</span>
-                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">
-                      SMILE Pro 1.0 CARE 港幣$23,500
-                      <br
-                        class="block lg:hidden"
-                      />(EPS用戶港幣$23,000<sup>#</sup>)
-                    </p>
-                  </div>
+              <div class="flex justify-bewteen items-center">
+                <div class="center gap-2 lg:gap-3">
+                  <img
+                    src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-upgrade-02-v2.svg"
+                    loading="lazy"
+                    class="w-5 lg:w-9"
+                    alt="精準度提升图标"
+                  />
+                  <span>精準度提升</span>
                 </div>
-                <div
-                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
-                >
-                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    術前檢查費用
-                  </div>
-                  <div
-                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
-                  >
-                    <span class="text-2xl md:text-5xl">港幣</span>
-                    <span class="text-2xl md:text-5xl">$100</span>
-                  </div>
-                </div>
+                <img
+                  src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-upgrade.svg"
+                  loading="lazy"
+                  class="w-22 lg:w-[140px]"
+                  alt="升級點"
+                />
               </div>
             </div>
-            <div>
-              <div
-                class="bg-[#4570b6] text-white text-base lg:text-3xl text-center font-bold rounded-xl py-[6px] md:py-[12px] mb-[20px] w-[65%] max-w-3xl md:max-w-lg mx-auto"
-              >
-                SMILE Pro 2.0 費用
-              </div>
-              <div class="space-y-2 md:space-y-4 max-w-[900px] mx-auto">
-                <div
-                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group relative before:content-[''] before:absolute before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-mb-v1.webp)] before:bg-contain before:bg-no-repeat before:bg-center before:w-[60px] before:h-[72px] before:-top-12 before:-right-2 before:sm:right-5 lg:before:bg-[url(https://statichk.cmermedical.com/smile/smileproV2/smilepro-price-summer-pc-v1.webp)] min-[992px]:before:h-[84px] min-[992px]:before:w-[176px] min-[992px]:before:-top-[60px] min-[992px]:before:-right-10 min-[1536px]:before:h-[124px] min-[1536px]:before:w-[264px] min-[1536px]:before:-top-[88px] min-[1536px]:before:-right-[92px]"
-                >
-                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    SMILE Pro 2.0<br /><span>微笑激光矯視</span>
-                  </div>
-                  <div
-                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
-                  >
-                    <span class="text-2xl md:text-5xl">港幣</span>
-                    <span class="text-2xl md:text-5xl">$24,600</span>
-                    <p class="text-[10px] md:text-xl text-text md:pt-[4px]">
-                      SMILE Pro 2.0 CARE 港幣$26,350<br
-                        class="block lg:hidden"
-                      />
-                      (EPS用戶港幣$25,850<sup>#</sup>)
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="bg-white border border-[#4570B6] rounded-2xl p-5 md:p-8 flex flex-row justify-between items-center transition-all group"
-                >
-                  <div class="text-[#6D6E71] text-base md:text-3xl font-bold">
-                    術前檢查費用
-                  </div>
-                  <div
-                    class="text-[#F59E0B] font-bold tracking-tight text-right group-hover:scale-105 transition-transform"
-                  >
-                    <span class="text-2xl md:text-5xl">港幣</span>
-                    <span class="text-2xl md:text-5xl">$100</span>
-                  </div>
-                </div>
-              </div>
+            <div class="flex">
+              <span>術前檢查費用</span>
+              <span>HK$100</span>
             </div>
-          </div>
-          <div class="mt-8 md:mt-12 flex flex-col items-center">
-            <a
-              href="/fee#table1"
-              class="md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3"
+            <NuxtLink
+              to="/fee#table1"
+              class="center bg-gradient-to-r from-[#528BE9] to-[#4D80D4] rounded-xl lg:rounded-3xl"
             >
-              查看矯視費用詳情
+              <span>查看矯視費用詳情</span>
               <!-- prettier-ignore -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none"><path d="M3.18 30.363 29.833 3.71" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M7.064 2.862h23.678V25.76" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
-            </a>
-            <div
-              class="mt-2 md:mt-4 text-center font-light text-text text-base md:text-2xl leading-relaxed"
-            >
-              <p>此為香港價錢，雙眼價錢</p>
-              <p>
-                矯視費用已包括術前檢查費用港幣$100（若沒有預約進行矯視，需另外繳付術前檢查費用）
-              </p>
-              <p>
-                <sup>#</sup>免責聲明：受條款及細則約束。僅適用於以 EPS
-                全數支付之客戶。如有任何爭議，<br
-                  class="hidden lg:block"
-                />希瑪眼科將保留最終決定權。
-              </p>
-            </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M3.18 28.804 28.323 3.661" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M6.844 2.862H29.18v21.6" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
+            </NuxtLink>
           </div>
         </div>
+        <div class="price-item">
+          <h3 class="bg-gradient-to-r from-[#528BE9] to-[#4D80D4] text-white">
+            SMILE Pro 1.0 費用
+          </h3>
+          <div
+            class="pt-6 px-5 pb-9 lg:pt-9 lg:px-8 lg:pb-[60px] border border-[#4570B64D] bg-white text-[#6D6E71] rounded-xl lg:rounded-3xl"
+          >
+            <div>
+              <p class="flex flex-col">
+                <span class="text-primary">SMILE Pro 1.0</span
+                ><span>微笑激光矯視</span>
+              </p>
+              <p>HK$21,750</p>
+            </div>
+            <div class="bg-[#f5f8fc] border border-[#4570B666]">
+              <p class="text-primary">
+                <span>SMILE Pro 1.0 CARE</span><span>HK$23,500 </span>
+              </p>
+              <p><span>EPS用戶</span><span>HK$23,000#</span></p>
+            </div>
+            <div
+              class="flex border-t border-dash border-[#7F7F7F] pt-3 lg:pt-6 pb-5 lg:pb-9"
+            >
+              <span>術前檢查費用</span>
+              <span>HK$100</span>
+            </div>
+            <NuxtLink
+              to="/fee#table1"
+              class="center bg-gradient-to-r from-[#528BE9] to-[#4D80D4] rounded-xl lg:rounded-3xl"
+            >
+              <span>查看矯視費用詳情</span>
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M3.18 28.804 28.323 3.661" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M6.844 2.862H29.18v21.6" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>此為香港價錢，雙眼價錢</p>
+        <p>
+          矯視費用已包括術前檢查費用港幣$100（若沒有預約進行矯視，需另外繳付術前檢查費用）
+        </p>
+        <p>
+          #免責聲明：受條款及細則約束。僅適用於以 EPS
+          全數支付之客戶。如有任何爭議，<br />希瑪眼科將保留最終決定權。
+        </p>
       </div>
     </section>
     <!-- end SMILE Pro 微笑激光矯視費用 -->
     <!-- 表格 -->
-    <section class="smilepro-difference">
+    <section class="smilepro-difference mb-10 lg:mb-[264px]">
       <div class="smilepro-difference-title">
         <div>
           SMILE/SMILE PRO/ICL<br class="d-lg-none" />
@@ -474,7 +479,9 @@
               >
                 <!-- prettier-ignore -->
                 <svg class="size-9 md:size-12 lg:size-[52px]" xmlns="http://www.w3.org/2000/svg" width="50" height="46" viewBox="0 0 50 46" fill="none"><g clip-path="url(#prefix__clip0_20416_1949)" fill="#4570b6"><path d="M28.935 45.194c-7.764 0-14.87-4.26-18.538-11.11a.868.868 0 1 1 1.536-.817 19.26 19.26 0 0 0 17.002 10.19c10.629 0 19.276-8.648 19.276-19.276S39.564 4.905 28.935 4.905c-7.118 0-13.632 3.9-17.002 10.183a.86.86 0 0 1-1.177.354.86.86 0 0 1-.353-1.176A21 21 0 0 1 28.94 3.162c11.592 0 21.02 9.428 21.02 21.02 0 11.59-9.428 21.018-21.02 21.018zM8.788 25.048H.87a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743"/><path d="M13.31 29.802H5.393a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.742m0-9.501H5.393a.871.871 0 1 1 0-1.743h7.917a.871.871 0 1 1 0 1.743m24.176-7.965a.85.85 0 0 1-.488-.153 14.4 14.4 0 0 0-8.111-2.48c-2.901 0-5.71.86-8.112 2.48a.87.87 0 0 1-1.206-.231.87.87 0 0 1 .231-1.207 16.16 16.16 0 0 1 9.093-2.785c3.26 0 6.399.963 9.092 2.785.396.268.506.81.232 1.207a.87.87 0 0 1-.72.384zM31.495 22.42a.9.9 0 0 1-.616-.25.87.87 0 0 1 0-1.23l6.332-6.387a.87.87 0 0 1 1.231 0 .87.87 0 0 1 0 1.23l-6.332 6.388a.87.87 0 0 1-.615.256z"/><path d="M28.941 28.709a4.54 4.54 0 0 1-4.534-4.534 4.54 4.54 0 0 1 4.534-4.534 4.54 4.54 0 0 1 4.534 4.534 4.54 4.54 0 0 1-4.534 4.534m0-7.325a2.795 2.795 0 0 0-2.79 2.79 2.8 2.8 0 0 0 2.79 2.792 2.8 2.8 0 0 0 2.792-2.791 2.8 2.8 0 0 0-2.792-2.791m1.494-19.641h-3.17a.871.871 0 1 1 0-1.743h3.17a.871.871 0 1 1 0 1.743"/><path d="M28.85 4.906a.87.87 0 0 1-.871-.872V.871a.871.871 0 1 1 1.742 0v3.17c0 .48-.39.87-.87.87zm14.407 1.646a.85.85 0 0 1-.476-.14l-2.657-1.725a.873.873 0 0 1 .951-1.463l2.657 1.725a.873.873 0 0 1-.475 1.603"/><path d="M40.204 8.35a.873.873 0 0 1-.731-1.347l1.724-2.657a.873.873 0 0 1 1.463.95l-1.725 2.657a.87.87 0 0 1-.731.396M14.54 6.6a.87.87 0 0 1-.73-.395.874.874 0 0 1 .255-1.207l2.658-1.725a.874.874 0 0 1 1.206.256.874.874 0 0 1-.256 1.207L15.016 6.46a.85.85 0 0 1-.475.14"/><path d="M17.594 8.392a.87.87 0 0 1-.731-.396L15.138 5.34a.874.874 0 0 1 .256-1.206.874.874 0 0 1 1.207.256l1.724 2.657a.874.874 0 0 1-.731 1.346"/></g><defs><clipPath id="prefix__clip0_20416_1949"><path fill="#fff" d="M0 0h49.948v45.195H0z"/></clipPath></defs></svg>
-                <p>激光時間<span class="block">(單一眼睛)</span></p>
+                <p class="whitespace-nowrap">
+                  激光時間<span class="block">(單一眼睛)</span>
+                </p>
               </div>
             </td>
             <td>約23-25秒</td>
@@ -558,47 +565,70 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M2 14.54 14.571 1.969" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M3.832 1.569H15v10.8" stroke="#fff" stroke-width="2.7" stroke-linecap="round"/></svg>
       </a>
     </section>
-    <!-- 过程和介绍vedio -->
-    <section class="icl-introVedio overflow-hidden">
-      <div class="icl-introVedio-intro new-container">
-        <div class="icl-introVedio-intro-number">
-          <!-- 左侧数字列表 -->
-          <div class="steps">
-            <div
-              v-for="(step, index) in steps"
-              :key="index"
-              @mouseover="highlightStep(index)"
-              :class="{ active: activeStep === index }"
-            >
-              {{ step.number }}
-            </div>
-          </div>
-          <!-- 右侧内容区域 -->
-          <div class="content-area">
-            <div v-if="activeStep >= 0">
-              <div class="content-area-title">
-                <p>
-                  SMILE Pro 2.0微笑激光<br />
-                  矯視過程
-                </p>
-                <!-- prettier-ignore -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none"><path d="m.727 1.231 16.866 16.867m.537-14.409v14.984H3.64" stroke="#4570b6" stroke-width="1.342" stroke-linecap="round"/></svg>
-              </div>
-              <div class="content-area-img">
-                <img class="d-xl-none" :src="steps[activeStep].image" alt="" />
-                <img
-                  class="d-none d-xl-block"
-                  :src="steps[activeStep].imagePc"
-                  alt=""
-                />
-                <p
-                  class="content-area-text"
-                  v-html="steps[activeStep].text"
-                ></p>
-              </div>
+    <!-- 过程 -->
+    <section
+      class="steps new-container px-3 xl:px-0 space-y-12 lg:space-y-[132px] mb-10 lg:mb-[180px]"
+    >
+      <div>
+        <h2 class="title-normal">SMILE Pro 2.0 微笑激光矯視過程</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
+          <div class="steps-item" v-for="(step, index) in steps2">
+            <img
+              :src="step.image"
+              :alt="`SMILE Pro 2.0 步驟${index + 1}`"
+              loading="lazy"
+              class="pic"
+            />
+            <div class="flex gap-2">
+              <span class="num">0{{ index + 1 }}</span>
+              <p class="desc">{{ step.text }}</p>
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <h2 class="title-normal">SMILE Pro 1.0 微笑激光矯視過程</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
+          <div class="steps-item" v-for="(step, index) in steps1">
+            <img
+              :src="step.image"
+              :alt="`SMILE Pro 1.0 步驟${index + 1}`"
+              loading="lazy"
+              class="pic"
+            />
+            <div class="flex gap-2">
+              <span class="num">0{{ index + 1 }}</span>
+              <p class="desc">{{ step.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="process new-container px-3 mb-18 lg:mb-[124px]">
+      <h2 class="title-normal mb-7 lg:mb-20">你適合做SMILE Pro 1.0/2.0嗎?</h2>
+      <div
+        class="center flex-col lg:flex-row gap-5 md:gap-12 lg:gap-20 w-full lg:w-fit mx-auto"
+      >
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="
+              https://statichk.cmermedical.com/smile/smileproV2/smilepro-process-cover-pc.webp
+            "
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-process-cover-mb.webp"
+            alt=""
+            class="w-full max-w-xl"
+          />
+        </picture>
+        <ol class="w-full lg:w-auto process-list space-y-2 lg:space-y-5">
+          <li>①年滿<strong>二十一歲</strong></li>
+          <li>②暗室瞳孔直徑<strong>偏大</strong></li>
+          <li>③追求<strong>更佳</strong>手術體驗感</li>
+          <li>④生活受<strong>近視</strong>或/及<strong>散光</strong>困擾</li>
+          <li>⑤擔心矯視<strong>過程</strong>，眼睛無法對焦太久</li>
+        </ol>
       </div>
     </section>
     <userShare :user-share="ShareData"></userShare>
@@ -648,48 +678,12 @@
           class="mx-auto icl-btn"
         >
           <span>{{ $t("Correct.newIcl.apt_btn") }}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="17"
-            height="17"
-            viewBox="0 0 17 17"
-            fill="none"
-          >
-            <path
-              d="M2 14.5399L14.5714 1.96851"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="M3.83179 1.5686H14.9999V12.3686"
-              stroke="white"
-              stroke-width="2.7"
-              stroke-linecap="round"
-            />
-          </svg>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M2 14.54 14.571 1.969" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M3.832 1.569H15v10.8" stroke="#fff" stroke-width="2.7" stroke-linecap="round"/></svg>
         </a>
       </div>
     </section>
-    <section class="CaseSharingV2">
-      <div>
-        <!-- prettier-ignore -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none"><path d="m1 .778 18.475 17.156" stroke="#4570b6" stroke-width="1.979"/></svg>
-        <span> 同朋友分享一下啦！ </span>
-        <!-- prettier-ignore -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none"><path d="M20 .778 1.525 17.934" stroke="#4570b6" stroke-width="1.979"/></svg>
-      </div>
-      <div>
-        <a id="shareCurrentPageIcl">
-          <!-- prettier-ignore -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none"><path d="M.283 11.392c0-1.978 1.458-3.604 3.353-3.77 1.152-.1 2.15.263 2.974 1.077.133.13.222.142.382.046q2.842-1.721 5.692-3.428c.148-.089.168-.165.115-.327-.702-2.152.745-4.466 2.986-4.788a3.726 3.726 0 0 1 4.269 3.291c.224 1.947-1.201 3.791-3.149 4.066-1.272.18-2.352-.212-3.245-1.127-.095-.098-.16-.111-.277-.04q-2.88 1.737-5.763 3.467c-.113.068-.148.135-.102.265.234.662.278 1.34.098 2.022-.042.16.014.235.151.305q2.51 1.281 5.017 2.568c.134.069.271.134.4.213.126.077.213.066.312-.055a3.65 3.65 0 0 1 2.303-1.314c1.417-.23 2.914.448 3.682 1.673a3.727 3.727 0 0 1-2.427 5.667c-2.053.418-4.085-1.02-4.388-3.101-.066-.46-.069-.918.069-1.364.063-.206.006-.298-.183-.394a884 884 0 0 1-5.363-2.75c-.13-.067-.204-.05-.295.06-.83 1.009-1.905 1.46-3.206 1.391C2.073 14.96.56 13.565.328 11.95a3 3 0 0 1-.044-.558" fill="#4570b6"/></svg>
-        </a>
-        <a @click="copyCurrentUrl">
-          <!-- prettier-ignore -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><g clip-path="url(#a)" fill="#4570b6"><path d="M9.103 5.966c1.785.002 3.079.52 4.21 1.496.178.154.359.304.533.461.354.317.422.791.137 1.174q-.51.68-1.066 1.324c-.307.355-.779.378-1.144.08-.229-.184-.445-.386-.673-.572-1.039-.844-2.59-.803-3.546.141a94 94 0 0 0-2.993 3.087c-.746.808-.912 1.794-.573 2.841s1.079 1.68 2.122 1.872c.868.158 1.667-.067 2.33-.696.214-.202.412-.422.621-.63.384-.378.835-.394 1.222-.019q.57.556 1.11 1.144c.315.344.329.82.03 1.167-1.028 1.198-2.249 2.052-3.813 2.346-3.19.599-6.397-1.7-6.93-4.998-.344-2.136.231-3.98 1.692-5.524Q3.765 9.19 5.19 7.755c1.168-1.179 2.578-1.774 3.912-1.788z"/><path d="M12.31 15.466c-1.58-.007-2.875-.521-4.004-1.5q-.257-.22-.515-.444c-.37-.325-.444-.8-.152-1.191q.511-.68 1.066-1.322c.305-.355.779-.375 1.144-.078.215.174.418.365.635.537 1.167.924 2.67.834 3.714-.23q1.401-1.423 2.78-2.87c.756-.795.985-1.756.689-2.817-.303-1.078-1.024-1.752-2.089-1.974-.896-.187-1.714.035-2.401.682-.214.201-.412.423-.622.63-.382.376-.837.39-1.222.016q-.57-.556-1.108-1.144c-.308-.336-.33-.81-.043-1.147.965-1.13 2.1-1.978 3.56-2.307 3.462-.781 6.822 1.666 7.245 5.298.223 1.907-.304 3.588-1.575 4.98-1.064 1.163-2.148 2.313-3.303 3.381-1.1 1.019-2.423 1.485-3.8 1.5"/></g><defs><clipPath id="a"><path fill="#fff" d="M.583.162h20.454v21.114H.583z"/></clipPath></defs></svg>
-        </a>
-      </div>
-    </section>
+    <ShareSection />
   </div>
 </template>
 <script>
@@ -703,6 +697,7 @@ import share from "@/components/content/service/ICL-new/share.vue";
 import drow from "@/components/content/service/SmileProV2/drow.vue";
 import UserShare from "@/components/commom/UserShare/UserShare.vue";
 import topNotice from "@/components/Publice/topNotice.vue";
+import ShareSection from "@/components/commom/share/ShareSection.vue";
 export default {
   components: {
     Banner,
@@ -715,6 +710,7 @@ export default {
     drow,
     UserShare,
     topNotice,
+    ShareSection,
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -770,76 +766,48 @@ export default {
       activeStep: 0, // 当前激活的步骤索引
       activeStepTimer: null,
       interval: 3000,
-      steps: [
+      steps2: [
         {
-          number: "01",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro1.avif",
           image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro1.avif",
-          text: "以「視軸輔助導航」功能為視軸中心點定位",
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0201-v1.webp",
+          text: "以「AI 虹膜自動追蹤」與視軸導航，自動校正散光定位",
         },
         {
-          number: "02",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro2.avif",
           image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro2.avif",
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0202-v1.webp",
           text: "全飛秒激光直接切割角膜中層",
         },
         {
-          number: "03",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro3.avif",
           image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro3.avif",
-          text: "<style>@media screen and (min-width: 992px) {.changehon{display: block;}</style>製作一個約<span class='changehon'>2-2.5mm的小切口</span>",
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0103-v1.webp",
+          text: "製作一個約 2-2.5mm 的小切口",
         },
         {
-          number: "04",
-          imagePc:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro4.avif",
           image:
-            "https://statichk.cmermedical.com/smile/smileproV2/intro/icl-pc-intro4.avif",
-          text: "將切割了的角膜透鏡從切口抽出",
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0104-v1.webp",
+          text: "將切割了的角膜 透鏡從切口抽出",
         },
       ],
-      suitable_object: [
+      steps1: [
         {
-          img: "https://statichk.cmermedical.com/imgs/2024/04/1acfa98b56345500.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content1.text1"),
-            this.$t("Correct.icl.suitable_object.content1.text2"),
-          ],
+          image:
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0101-v1.webp",
+          text: "以「視軸輔助導航」配合人手調校",
         },
         {
-          img: "https://statichk.cmermedical.com/imgs/2024/04/2c2272ff6b7052c6.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content2.text1"),
-            this.$t("Correct.icl.suitable_object.content2.text2"),
-          ],
+          image:
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0102-v1.webp",
+          text: "全飛秒激光直接切割角膜中層",
         },
         {
-          img: "https://statichk.cmermedical.com/imgs/2024/04/56f73174b86b2288.png",
-          text: [this.$t("Correct.icl.suitable_object.content3.text1")],
+          image:
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0103-v1.webp",
+          text: "製作一個約 2-2.5mm 的小切口",
         },
         {
-          img: "https://statichk.cmermedical.com/imgs/2024/04/9f4ca0776e175624.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content4.text1"),
-            this.$t("Correct.icl.suitable_object.content4.text2"),
-          ],
-        },
-        {
-          img: "https://statichk.cmermedical.com/imgs/2024/04/7a55c233d701d0eb.png",
-          text: [
-            this.$t("Correct.icl.suitable_object.content5.text1"),
-            this.$t("Correct.icl.suitable_object.content5.text2"),
-          ],
-          mbText: [
-            this.$t("Correct.icl.suitable_object.content5.mbText1"),
-            this.$t("Correct.icl.suitable_object.content5.mbText2"),
-          ],
+          image:
+            "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0104-v1.webp",
+          text: "將切割了的角膜透鏡從切口抽出",
         },
       ],
       swiperOption1: {
@@ -1172,19 +1140,19 @@ export default {
   },
 };
 </script>
-<style>
-.simleProV2 .head-bg {
-  top: 54px !important;
-}
-.simleProV2 .headV2 {
-  top: 37px !important;
-}
+<style lang="scss" scoped>
+$primary: #4570b6;
+$text-desc: #6d6e71;
+//.simleProV2 .head-bg {
+//  top: 54px !important;
+//}
+//.simleProV2 .headV2 {
+//  top: 37px !important;
+//}
 body {
   overflow-x: hidden;
   background: white;
 }
-</style>
-<style lang="scss" scoped>
 @keyframes elegantShine {
   0% {
     left: -100%;
@@ -1245,18 +1213,37 @@ i {
 .changehang {
   display: none;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-normal {
+  font-size: 20px;
+  font-weight: 900;
+  color: $primary;
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+  }
+}
 .smilepro-difference {
   .custom-comparison-table {
     thead tr > th:nth-child(2) {
       background-color: #e0f0ff;
-      color: #4570b6;
+      color: $primary;
     }
     thead tr > th:nth-child(3) {
       background-color: #afcdff;
       color: #fff;
     }
     thead tr > th:nth-child(4) {
-      background-color: #4570b6;
+      background-color: $primary;
       color: #fff;
     }
     thead tr > th:nth-child(5) {
@@ -1265,11 +1252,94 @@ i {
     }
     tbody tr > td:nth-child(1) {
       background-color: #f8f8f8;
-      color: #4570b6;
+      color: $primary;
     }
     tbody tr > td:nth-child(4) {
       background-color: #5a8ad6;
       color: #fff;
+    }
+  }
+}
+.summary {
+  .summary-desc {
+    font-size: 14px;
+    color: #6d6e71;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    strong {
+      color: $primary;
+      font-weight: 700;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 1.75;
+    }
+  }
+}
+.steps {
+  .steps-item {
+    .pic {
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .num {
+      color: $primary;
+      position: relative;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1;
+      height: fit-content;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #4570b64d;
+        z-index: -1;
+        left: 0;
+        bottom: -3px;
+      }
+    }
+    .desc {
+      color: $text-desc;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1024px) {
+      .pic {
+        border-radius: 20px;
+        margin-bottom: 24px;
+      }
+      .num {
+        font-size: 36px;
+        &::before {
+          height: 9px;
+          bottom: -5px;
+        }
+      }
+      .desc {
+        font-size: 24px;
+      }
+    }
+  }
+}
+.process {
+  .process-list {
+    font-size: 14px;
+    font-weight: 300;
+    color: $text-desc;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    strong {
+      font-weight: 500;
+      color: $primary;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 1.5;
     }
   }
 }
@@ -1308,7 +1378,7 @@ i {
       left: 28px;
       span {
         font-style: normal;
-        color: #4570b6;
+        color: $primary;
         font-family: "Poppins", sans-serif;
         font-size: 45.469px;
         font-style: normal;
@@ -1316,7 +1386,7 @@ i {
         line-height: 49.743px;
       }
       h3 {
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 24.55px;
         font-style: normal;
@@ -1324,7 +1394,7 @@ i {
         line-height: 26.858px; /* 109.4% */
       }
       p {
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 9.82px;
         font-style: normal;
@@ -1338,7 +1408,7 @@ i {
       right: 15px;
       bottom: 0;
       div {
-        background: #4570b6;
+        background: $primary;
       }
       & > div:nth-child(1) {
         border-top-left-radius: 5px;
@@ -1369,7 +1439,7 @@ i {
   .icl-WhatChoose {
     padding: 40px 15px;
     .icl-WhatChoose-title {
-      color: #4570b6;
+      color: $primary;
       font-family: "Noto Sans TC" !important;
       font-size: 20px;
       font-style: normal;
@@ -1393,7 +1463,7 @@ i {
           line-height: 30px;
           letter-spacing: 4.8px;
           span {
-            color: #4570b6;
+            color: $primary;
             font-family: "Noto Sans TC" !important;
             font-size: 16px;
             font-style: normal;
@@ -1413,7 +1483,7 @@ i {
         background: #f4fafc;
         padding: 27px 32px 27px 34px;
         h4 {
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: 24px;
           font-style: normal;
@@ -1434,15 +1504,13 @@ i {
     }
   }
   .icl-btn {
+    @include center;
     margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: fit-content;
     padding: 6px 32px;
     border-radius: 100px;
-    border: 2px solid #4570b6;
-    background: #4570b6;
+    border: 2px solid $primary;
+    background: $primary;
     color: #fff;
     text-align: justify;
     font-family: "Noto Sans TC";
@@ -1461,7 +1529,7 @@ i {
     span {
       font-family: "Poppins";
     }
-    color: #4570b6;
+    color: $primary;
     font-family: "Noto Sans TC";
     font-size: 20px;
     font-style: normal;
@@ -1487,7 +1555,7 @@ i {
         top: -40px;
         right: 30px;
         text-align: right;
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 16px;
         font-style: normal;
@@ -1515,7 +1583,7 @@ i {
           & > a {
             display: block;
             width: 175px;
-            box-shadow: -1.768px 1.768px 0px 0px #4570b6;
+            box-shadow: -1.768px 1.768px 0px 0px $primary;
             position: relative;
             margin-bottom: 13.26px;
             span {
@@ -1529,10 +1597,11 @@ i {
               font-style: normal;
               font-weight: 700;
               line-height: 0.83;
-              background: #4570b6;
+              background: $primary;
               padding: 4px 6px;
             }
             i {
+              @include center;
               position: absolute;
               right: 8px;
               bottom: 8px;
@@ -1540,9 +1609,6 @@ i {
               height: 23px;
               border-radius: 2.21px;
               background: #f00;
-              display: flex;
-              justify-content: center;
-              align-items: center;
               svg {
                 width: 11px;
               }
@@ -1636,10 +1702,8 @@ i {
       margin-top: 24px;
       margin-left: auto;
       margin-right: 15px;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include center;
       gap: 17px;
       svg {
         // width: 19px;
@@ -1656,40 +1720,6 @@ i {
         font-style: normal;
         font-weight: 900;
         line-height: 0.71;
-      }
-    }
-  }
-  .CaseSharingV2 {
-    width: fit-content;
-    margin: 0 auto;
-    & > div:nth-child(1) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7.58px;
-      span {
-        color: #000;
-        text-align: center;
-        font-family: "Noto Sans TC";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 0.82px; /* 82.478% */
-      }
-    }
-    & > div:nth-child(2) {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 54px;
-        height: 54px;
-        border-radius: 50%;
-        border: 1px solid #4570b6;
       }
     }
   }
@@ -1719,71 +1749,6 @@ i {
         font-weight: 500;
       }
     }
-    // 内容
-    .smilePro-newCenter-content {
-      .smilePro-newCenter-content-text {
-        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/center/smilepro-mobile-center.avif");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 503px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        & > div > div {
-          max-width: 299px;
-          margin: 0 auto;
-          position: relative;
-          z-index: 2;
-          &::after {
-            content: url("https://statichk.cmermedical.com/smile/smileproV2/center/smilepro-mobile-centerSmall2.webp");
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-          }
-          h2 {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            margin-bottom: 10px;
-            color: #4570b6;
-            font-family: "Noto Sans TC";
-            font-size: 20.359px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 20.359px;
-          }
-          p {
-            position: relative;
-            z-index: 2;
-            color: #6d6e71;
-            text-align: justify;
-            font-family: "Noto Sans TC";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 1.78;
-            letter-spacing: 1.4px;
-            span {
-              color: #4570b6;
-              font-style: normal;
-              font-weight: 700;
-            }
-            .let {
-              letter-spacing: 6.94px;
-            }
-          }
-        }
-      }
-      .smilepro-Vedio {
-        width: 100%;
-        min-height: 221px;
-        iframe {
-          height: 221px;
-        }
-      }
-    }
   }
   // 四大特点
   .smilepro-four-feature {
@@ -1793,7 +1758,7 @@ i {
       margin: 0 auto;
       .smilepro-four-feature-Box-top {
         h2 {
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: 20px;
           font-style: normal;
@@ -1802,7 +1767,7 @@ i {
         }
         p {
           margin-top: 13.75px;
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: 14px;
           font-style: normal;
@@ -1825,7 +1790,7 @@ i {
           min-width: 284px;
           .smilepro-four-feature-Box-List-item-number {
             width: 74px;
-            color: #4570b6;
+            color: $primary;
             font-family: "Poppins";
             font-size: 60.224px;
             font-style: normal;
@@ -1834,7 +1799,7 @@ i {
           }
           .smilepro-four-feature-Box-List-item-text {
             h3 {
-              color: #4570b6;
+              color: $primary;
               font-family: "Noto Sans TC";
               font-size: 14.501px;
               font-style: normal;
@@ -1842,7 +1807,7 @@ i {
               line-height: 1.5;
             }
             p {
-              color: #4570b6;
+              color: $primary;
               font-family: "Noto Sans TC";
               font-size: 14.501px;
               font-style: normal;
@@ -1865,7 +1830,7 @@ i {
       justify-content: center;
       & > div {
         display: inline-block;
-        color: #4570b6;
+        color: $primary;
         text-align: center;
         font-family: "Noto Sans TC";
         font-size: 20px;
@@ -1964,200 +1929,8 @@ i {
       letter-spacing: 0.6px;
     }
   }
-  .icl-introVedio {
-    position: relative;
-    &::before {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg1.png");
-      position: absolute;
-      left: 0;
-      top: -89px;
-      z-index: 1;
-      pointer-events: none;
-    }
-    &::after {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg2.png");
-      position: absolute;
-      right: -61px;
-      top: 15px;
-      z-index: 1;
-      pointer-events: none;
-    }
-    padding: 52px 15px 100px;
-    .icl-introVedio-intro {
-      .icl-introVedio-intro-number {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        .steps {
-          width: 25px;
-          color: #6d6e71;
-          font-family: "Poppins", sans-serif;
-          font-size: 16.994px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          & > div:last-child {
-            margin-bottom: 0;
-          }
-          div {
-            position: relative;
-            z-index: 2;
-            border-right: 1px solid #6d6e71;
-            display: flex;
-            align-items: flex-start;
-            justify-content: end;
-            margin-bottom: 10px;
-            height: 65px;
-            padding-right: 8px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-            &:hover,
-            &.active {
-              color: #4570b6;
-              font-family: "Poppins";
-              font-size: 16.994px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.4;
-              border-right: 2px solid #4570b6;
-            }
-          }
-        }
-        .content-area {
-          position: relative;
-          .content-area-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            p {
-              color: #4570b6;
-              font-family: "Noto Sans TC";
-              font-size: 15.8px;
-              font-style: normal;
-              font-weight: 900;
-              line-height: 1.26;
-              letter-spacing: -0.79px;
-            }
-            svg {
-              position: absolute;
-              top: 20px;
-              left: 110px;
-            }
-          }
-          .content-area-img {
-            max-width: 290px;
-            position: relative;
-            z-index: 2;
-            img {
-              max-width: 100%;
-              height: auto;
-            }
-            .content-area-text {
-              position: absolute;
-              // bottom: 12px;
-              margin-top: 13px;
-              left: 50%;
-              transform: translateX(-50%);
-              width: 228px;
-              color: #6d6e71;
-              font-family: "Noto Sans TC";
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 1.28;
-              letter-spacing: 1.4px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .gameBox {
-    .gameBox-content {
-      padding-top: 52px;
-      // padding-top: 65px;
-      // max-width: 1654.98px;
-      // width: 86.14vw;
-      // height: 44.375vw;
-      // max-height: 852.5px;
-      -webkit-touch-callout: none; /* 禁用长按菜单 */
-      -webkit-user-select: none; /* 禁用文本选择 */
-      user-select: none;
-      touch-action: none; /* 禁用默认触摸行为 */
-      background-image: url("https://statichk.cmermedical.com/smile/smileproV2/game/smilepro-game-mobileBg.avif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      .folder {
-        text-align: center;
-        transition: all 0.3s ease;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        img,
-        svg {
-          width: 116.492px;
-          margin-bottom: 10px;
-          transition: transform 0.3s ease;
-        }
-        button {
-          margin-top: 10px;
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: white;
-          border: none;
-          cursor: pointer;
-          transition: background-color 0.3s;
-          &:hover {
-            background-color: #0056b3;
-          }
-        }
-      }
-      .draggable {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: move;
-        transition: background-color 0.3s, box-shadow 0.3s;
-        user-select: none;
-        width: fit-content;
-        img {
-          width: 162.684px;
-          height: 162.684px;
-          flex-shrink: 0;
-          border-radius: 13px;
-        }
-        .draggable-item-text {
-          color: #6d6e71;
-          text-align: center;
-          font-family: "Noto Sans TC";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 1.48;
-          letter-spacing: 1.4px;
-        }
-        &:hover {
-          background-color: #e0e0e0;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-      }
-      & > .draggable:nth-child(1) {
-        position: absolute;
-        left: 22px;
-        top: 96px;
-      }
-    }
-  }
   .smile-pro-evaluateV2 {
     background: #f4fafc;
-    margin-top: 40px;
     padding-top: 44px;
     padding-bottom: 30px;
     margin-bottom: 40px;
@@ -2171,10 +1944,8 @@ i {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #4570b6;
+        @include center;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 20px;
         font-style: normal;
@@ -2236,7 +2007,7 @@ i {
                 }
                 .swiperWrap-item-text {
                   margin-top: 10px;
-                  color: #4570b6;
+                  color: $primary;
                   text-align: justify;
                   font-family: "Noto Sans TC";
                   font-size: 12px;
@@ -2280,11 +2051,11 @@ i {
                   height: 74px;
                   flex-shrink: 0;
                   path {
-                    fill: #4570b6;
+                    fill: $primary;
                   }
                 }
                 .swiperWrap-item-text {
-                  color: #4570b6;
+                  color: $primary;
                   text-align: justify;
                   font-family: "Noto Sans TC";
                   font-size: 14px;
@@ -2362,7 +2133,7 @@ i {
       left: 7.179vw;
       span {
         font-style: normal;
-        color: #4570b6;
+        color: $primary;
         font-family: "Poppins", sans-serif;
         font-size: 11.53vw;
         font-style: normal;
@@ -2370,7 +2141,7 @@ i {
         line-height: 1.1;
       }
       h3 {
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 6.29vw;
         font-style: normal;
@@ -2378,7 +2149,7 @@ i {
         line-height: 1.09;
       }
       p {
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 2.517vw;
         font-style: normal;
@@ -2392,7 +2163,7 @@ i {
       right: 15px;
       bottom: 0;
       div {
-        background: #4570b6;
+        background: $primary;
       }
       & > div:nth-child(1) {
         border-top-left-radius: 5px;
@@ -2445,7 +2216,7 @@ i {
   .icl-WhatChoose {
     padding: 40px 15px;
     .icl-WhatChoose-title {
-      color: #4570b6;
+      color: $primary;
       font-family: "Noto Sans TC" !important;
       font-size: 5.12vw;
       font-style: normal;
@@ -2470,7 +2241,7 @@ i {
           line-height: 1.875;
           letter-spacing: 1.23vw;
           span {
-            color: #4570b6;
+            color: $primary;
             font-family: "Noto Sans TC" !important;
             font-size: 4.1vw;
             font-style: normal;
@@ -2490,7 +2261,7 @@ i {
         background: #f4fafc;
         padding: 6.92vw 8.25vw 6.92vw 8.717vw;
         h4 {
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: 6.15vw;
           font-style: normal;
@@ -2518,7 +2289,7 @@ i {
       margin: 0 auto;
       .smilepro-four-feature-Box-top {
         h2 {
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: 5.13vw;
           font-style: normal;
@@ -2527,7 +2298,7 @@ i {
         }
         p {
           margin-top: 3.53vw;
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: 3.59vw;
           font-style: normal;
@@ -2549,7 +2320,7 @@ i {
           min-width: 72.82vw;
           .smilepro-four-feature-Box-List-item-number {
             width: 18.97vw;
-            color: #4570b6;
+            color: $primary;
             font-family: "Poppins";
             font-size: 15.44vw;
             font-style: normal;
@@ -2558,7 +2329,7 @@ i {
           }
           .smilepro-four-feature-Box-List-item-text {
             h3 {
-              color: #4570b6;
+              color: $primary;
               font-family: "Noto Sans TC";
               font-size: 3.72vw;
               font-style: normal;
@@ -2566,7 +2337,7 @@ i {
               line-height: 1.5;
             }
             p {
-              color: #4570b6;
+              color: $primary;
               font-family: "Noto Sans TC";
               font-size: 3.72vw;
               font-style: normal;
@@ -2589,7 +2360,7 @@ i {
       justify-content: center;
       & > div {
         display: inline-block;
-        color: #4570b6;
+        color: $primary;
         text-align: center;
         font-family: "Noto Sans TC";
         font-size: 5.13vw;
@@ -2644,7 +2415,7 @@ i {
       background: #f4fafc;
       width: 27.44vw;
       height: 21.79vw;
-      color: #4570b6;
+      color: $primary;
       text-align: center;
       font-family: "Noto Sans TC";
       font-size: 3.59vw;
@@ -2678,126 +2449,6 @@ i {
         font-style: normal;
         font-weight: 700;
         line-height: 1.75;
-      }
-    }
-    .custom-comparison-table tbody tr > td:nth-child(3) {
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 3.08vw;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.314;
-      letter-spacing: 0.6px;
-    }
-  }
-  .icl-introVedio {
-    position: relative;
-    &::before {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg1.png");
-      position: absolute;
-      left: 0;
-      top: -22.82vw;
-      z-index: 1;
-      pointer-events: none;
-    }
-    &::after {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-intro-mobile-bg2.png");
-      position: absolute;
-      right: -15.64vw;
-      top: 3.85vw;
-      z-index: 1;
-      pointer-events: none;
-    }
-    padding: 13.33vw 15px 25.64vw;
-    .icl-introVedio-intro {
-      .icl-introVedio-intro-number {
-        display: flex;
-        justify-content: center;
-        gap: 2.56vw;
-        .steps {
-          width: 6.41vw;
-          color: #6d6e71;
-          font-family: "Poppins", sans-serif;
-          font-size: 4.36vw;
-          font-style: normal;
-          font-weight: 200;
-          line-height: normal;
-          & > div:last-child {
-            margin-bottom: 0;
-          }
-          div {
-            position: relative;
-            z-index: 2;
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-            border-right: 1px solid #6d6e71;
-            display: flex;
-            align-items: flex-start;
-            justify-content: end;
-            margin-bottom: 2.56vw;
-            height: 16.67vw;
-            padding-right: 2.05vw;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            &:hover,
-            &.active {
-              color: #4570b6;
-              font-family: "Poppins";
-              font-size: 4.36vw;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.4;
-              border-right: 2px solid #4570b6;
-            }
-          }
-        }
-        .content-area {
-          position: relative;
-          .content-area-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            p {
-              color: #4570b6;
-              font-family: "Noto Sans TC";
-              font-size: 3vw;
-              font-style: normal;
-              font-weight: 900;
-              line-height: 1.26;
-              letter-spacing: -0.2vw;
-            }
-            svg {
-              position: absolute;
-              top: 5.13vw;
-              left: 28.21vw;
-            }
-          }
-          .content-area-img {
-            max-width: 74.36vw;
-            position: relative;
-            z-index: 2;
-            img {
-              max-width: 100%;
-              height: auto;
-            }
-            .content-area-text {
-              position: absolute;
-              // bottom: 3.08vw;
-              margin-top: 3.33vw;
-              left: 50%;
-              transform: translateX(-50%);
-              width: 58.46vw;
-              color: #6d6e71;
-              font-family: "Noto Sans TC";
-              font-size: 3.59vw;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 1.28;
-              letter-spacing: 1.4px;
-            }
-          }
-        }
       }
     }
   }
@@ -2847,7 +2498,7 @@ i {
                 }
                 .swiperWrap-item-text {
                   margin-top: 2.56vw;
-                  color: #4570b6;
+                  color: $primary;
                   text-align: justify;
                   font-family: "Noto Sans TC";
                   font-size: 3.08vw;
@@ -2894,11 +2545,11 @@ i {
                   height: 18.97vw;
                   flex-shrink: 0;
                   path {
-                    fill: #4570b6;
+                    fill: $primary;
                   }
                 }
                 .swiperWrap-item-text {
-                  color: #4570b6;
+                  color: $primary;
                   text-align: justify;
                   font-family: "Noto Sans TC";
                   font-size: 3.59vw;
@@ -2946,7 +2597,7 @@ i {
         top: -10.26vw;
         right: 7.69vw;
         text-align: right;
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 4.1vw;
         font-style: normal;
@@ -2974,7 +2625,7 @@ i {
           a {
             display: block;
             width: 44.87vw;
-            box-shadow: -1.768px 1.768px 0px 0px #4570b6;
+            box-shadow: -1.768px 1.768px 0px 0px $primary;
             position: relative;
             margin-bottom: 3.4vw;
             span {
@@ -2988,7 +2639,7 @@ i {
               font-style: normal;
               font-weight: 700;
               line-height: 0.83;
-              background: #4570b6;
+              background: $primary;
               padding: 1.03vw 1.54vw;
             }
             i {
@@ -2999,9 +2650,7 @@ i {
               height: 5.9vw;
               border-radius: 2.21px;
               background: #f00;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              @include center;
               svg {
                 width: 2.82vw;
               }
@@ -3016,40 +2665,6 @@ i {
       position: absolute;
       bottom: 0px;
       right: 0;
-    }
-  }
-  .CaseSharingV2 {
-    width: fit-content;
-    margin: 0 auto;
-    & > div:nth-child(1) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.94vw;
-      span {
-        color: #000;
-        text-align: center;
-        font-family: "Noto Sans TC";
-        font-size: 5.13vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 0.82;
-      }
-    }
-    & > div:nth-child(2) {
-      margin-top: 5.13vw;
-      display: flex;
-      justify-content: center;
-      gap: 5.13vw;
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 13.85vw;
-        height: 13.85vw;
-        border-radius: 50%;
-        border: 1px solid #4570b6;
-      }
     }
   }
 }
@@ -3093,84 +2708,6 @@ i {
         font-weight: 500;
       }
     }
-    .smilePro-newCenter-content {
-      .smilePro-newCenter-content-text {
-        background-image: url("https://statichk.cmermedical.com/smile/smileproV2/center/smilepro-pc-center.avif");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: clamp(420px, 43.75vw, 840px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        & > div > div {
-          width: clamp(312.5px, 32.55vw, 625px);
-          height: clamp(312.5px, 32.55vw, 625px);
-          padding: clamp(59px, 6.15vw, 118px) clamp(34px, 3.54vw, 68px)
-            clamp(73px, 7.6vw, 146px) clamp(42px, 4.38vw, 84px);
-          text-align: center;
-          background-color: white;
-          border-radius: 50%;
-          position: relative;
-          &::after {
-            content: "";
-            position: absolute;
-            background-image: url("https://statichk.cmermedical.com/smile/smileproV2/center/smilepro-pc-centerSmall1.webp");
-            background-repeat: no-repeat;
-            background-size: cover;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-            width: clamp(381px, 39.69vw, 762px);
-            height: clamp(381px, 39.69vw, 762px);
-          }
-          h2 {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            margin-bottom: clamp(8px, 0.83vw, 16px);
-            color: #4570b6;
-            font-family: "Noto Sans TC";
-            font-size: clamp(16px, 1.56vw, 30px);
-            font-style: normal;
-            font-weight: 900;
-            line-height: 1;
-          }
-          p {
-            max-width: clamp(236.5px, 24.64vw, 473px);
-            position: relative;
-            z-index: 2;
-            color: #6d6e71;
-            text-align: justify;
-            font-family: "Noto Sans TC";
-            font-size: clamp(10px, 1.04vw, 20px);
-            font-style: normal;
-            font-weight: 300;
-            line-height: 1.75;
-            letter-spacing: clamp(2px, 0.21vw, 4px);
-            span {
-              color: #4570b6;
-              font-style: normal;
-              font-weight: 700;
-            }
-            .let {
-              letter-spacing: clamp(5.45px, 0.57vw, 10.9px);
-            }
-          }
-        }
-      }
-      .smilepro-Vedio {
-        position: absolute;
-        right: clamp(44.5px, 4.64vw, 89px);
-        bottom: calc(-1 * clamp(69px, 7.19vw, 138px));
-        width: 100%;
-        width: clamp(252px, 26.25vw, 504px);
-        height: clamp(142px, 14.79vw, 284px);
-        iframe {
-          height: clamp(142px, 14.79vw, 284px);
-        }
-      }
-    }
   }
   // 四大特点
   .smilepro-four-feature {
@@ -3198,7 +2735,7 @@ i {
             font-family: "Poppins";
             font-weight: 700;
           }
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: clamp(15px, 1.56vw, 30px);
           font-style: normal;
@@ -3206,7 +2743,7 @@ i {
           line-height: 1;
         }
         p {
-          color: #4570b6;
+          color: $primary;
           font-family: "Noto Sans TC";
           font-size: clamp(10px, 1.04vw, 20px);
           font-style: normal;
@@ -3227,7 +2764,7 @@ i {
           gap: clamp(10px, 1.04vw, 20px);
           min-width: clamp(262px, 27.29vw, 524px);
           .smilepro-four-feature-Box-List-item-number {
-            color: #4570b6;
+            color: $primary;
             font-family: "Poppins";
             font-size: clamp(41.5px, 4.32vw, 83px);
             font-style: normal;
@@ -3237,7 +2774,7 @@ i {
           }
           .smilepro-four-feature-Box-List-item-text {
             h3 {
-              color: #4570b6;
+              color: $primary;
               font-family: "Noto Sans TC";
               font-size: clamp(10px, 1.04vw, 20px);
               font-style: normal;
@@ -3245,7 +2782,7 @@ i {
               line-height: 1.5;
             }
             p {
-              color: #4570b6;
+              color: $primary;
               font-family: "Noto Sans TC";
               font-size: clamp(10px, 1.04vw, 20px);
               font-style: normal;
@@ -3265,7 +2802,7 @@ i {
       justify-content: center;
       & > div {
         display: inline-block;
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 30px;
         font-style: normal;
@@ -3273,7 +2810,7 @@ i {
         line-height: 1;
         position: relative;
         span {
-          color: #4570b6;
+          color: $primary;
           font-family: "Poppins";
           font-size: 30px;
           font-style: normal;
@@ -3308,7 +2845,7 @@ i {
     }
     .custom-comparison-table thead th {
       background: #f4fafc;
-      color: #4570b6;
+      color: $primary;
       font-family: "Noto Sans TC";
       font-size: 20px;
       font-style: normal;
@@ -3332,7 +2869,7 @@ i {
       background: none;
     }
     .custom-comparison-table thead tr > th:nth-child(3) {
-      background: #4570b6;
+      background: $primary;
       color: #fff;
       line-height: 1.357;
     }
@@ -3348,7 +2885,7 @@ i {
     }
     .custom-comparison-table tbody tr > td:nth-child(1) {
       background: #f8f8f8;
-      color: #4570b6;
+      color: $primary;
       text-align: center;
       font-family: "Noto Sans TC";
       font-size: 20px;
@@ -3362,214 +2899,23 @@ i {
       margin-top: 63px;
     }
   }
-  // 流程
-  .icl-introVedio {
-    width: 100vw;
-    position: relative;
-    &::after {
-      content: url("https://statichk.cmermedical.com/smile/smileproV2/intro/smilepro-intro-pc-bg.avif");
-      position: absolute;
-      top: -520px;
-      right: 0;
-      pointer-events: none;
-    }
-    padding: 200px 0 86px;
-    .icl-introVedio-intro {
-      .icl-introVedio-intro-number {
-        position: relative;
-        z-index: 2;
-        &::after {
-          content: url("https://statichk.cmermedical.com/smile/smileproV2/intro/smilepro-pc-intro-ricto.png");
-          position: absolute;
-          left: -378px;
-          bottom: -178px;
-          pointer-events: none;
-        }
-        width: fit-content;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        gap: 35px;
-        .steps {
-          width: 60px;
-          color: #6d6e71;
-          font-family: "Poppins", sans-serif;
-          font-size: 38px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          div {
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-            border-right: 1px solid #6d6e71;
-            display: flex;
-            align-items: flex-start;
-            justify-content: end;
-            margin-bottom: 30px;
-            height: 140px;
-            padding-right: 13.5px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            &:hover,
-            &.active {
-              color: #4570b6;
-              font-family: "Poppins", sans-serif;
-              font-size: 38px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 1.4;
-              border-right: 5px solid #4570b6;
-            }
-          }
-          & > div:last-child {
-            margin-bottom: 0;
-          }
-        }
-        .content-area {
-          position: relative;
-          flex: 1;
-          .content-area-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            p {
-              color: #4570b6;
-              font-family: "Noto Sans TC";
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 900;
-              line-height: 1.26;
-              letter-spacing: 0;
-            }
-            svg {
-              width: 32px;
-              height: 32px;
-              position: absolute;
-              top: 40px;
-              left: 240px;
-            }
-          }
-          .content-area-img {
-            position: relative;
-            display: flex;
-            gap: 80px;
-            z-index: 2;
-            align-items: center;
-            img {
-              max-width: 647px;
-              height: auto;
-            }
-            .content-area-text {
-              left: 50%;
-              width: 220px;
-              color: #6d6e71;
-              font-family: "Noto Sans TC";
-              font-size: 23px;
-              font-style: normal;
-              font-weight: 350;
-              line-height: 1.52;
-              letter-spacing: 8.05px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .gameBox {
-    .gameBox-content {
-      padding-top: 52px;
-      // padding-top: 65px;
-      // max-width: 1654.98px;
-      // width: 86.14vw;
-      // height: 44.375vw;
-      // max-height: 852.5px;
-      background-image: url("https://statichk.cmermedical.com/smile/smileproV2/game/smilepro-game-mobileBg.avif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      .folder {
-        text-align: center;
-        transition: all 0.3s ease;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        img,
-        svg {
-          width: 116.492px;
-          margin-bottom: 10px;
-          transition: transform 0.3s ease;
-        }
-        button {
-          margin-top: 10px;
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: white;
-          border: none;
-          cursor: pointer;
-          transition: background-color 0.3s;
-          &:hover {
-            background-color: #0056b3;
-          }
-        }
-      }
-      .draggable {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: move;
-        transition: background-color 0.3s, box-shadow 0.3s;
-        user-select: none;
-        width: fit-content;
-        img {
-          width: 162.684px;
-          height: 162.684px;
-          flex-shrink: 0;
-          border-radius: 13px;
-        }
-        .draggable-item-text {
-          color: #6d6e71;
-          text-align: center;
-          font-family: "Noto Sans TC";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 1.48;
-          letter-spacing: 1.4px;
-        }
-        &:hover {
-          background-color: #e0e0e0;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-      }
-      & > .draggable:nth-child(1) {
-        position: absolute;
-        left: 22px;
-        top: 96px;
-      }
-    }
-  }
   // 用家见证
   .smile-pro-evaluateV2 {
     max-width: 100vw;
     width: 100vw;
     background: #f4fafc;
-    margin-top: 90px;
     padding-top: 62px;
     padding-bottom: 93px;
     position: relative;
     &::after {
       content: "";
       position: absolute;
-      bottom: -125px;
-      right: 28px;
+      bottom: 88px;
+      right: 156px;
       background-image: url("https://statichk.cmermedical.com/smile/smileproV2/smilepro-evaluate-title-pc03.png");
       background-repeat: no-repeat;
-      width: clamp(400px, 31.4vw, 603px);
-      height: clamp(300px, 25.72vw, 494px);
+      width: clamp(200px, 31.4vw, 328px);
+      height: clamp(150px, 25.72vw, 268px);
       background-size: cover;
       z-index: 1;
     }
@@ -3588,13 +2934,11 @@ i {
         background-size: cover;
         position: relative;
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         left: 194px;
         top: 50%;
         transform: translateY(-50%);
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 30px;
         font-style: normal;
@@ -3673,7 +3017,7 @@ i {
                 }
                 .swiperWrap-item-text {
                   margin-top: 29px;
-                  color: #4570b6;
+                  color: $primary;
                   text-align: justify;
                   font-family: "Noto Sans TC";
                   font-size: 14.466px;
@@ -3721,11 +3065,11 @@ i {
                   height: 123px;
                   flex-shrink: 0;
                   path {
-                    fill: #4570b6;
+                    fill: $primary;
                   }
                 }
                 .swiperWrap-item-text {
-                  color: #4570b6;
+                  color: $primary;
                   text-align: justify;
                   font-family: "Noto Sans TC";
                   font-size: 20px;
@@ -3805,7 +3149,7 @@ i {
       bottom: 90px;
       left: 77px;
       span {
-        color: #4570b6;
+        color: $primary;
         font-family: "Poppins", sans-serif;
         font-size: 137.67px;
         font-style: normal;
@@ -3813,7 +3157,7 @@ i {
         line-height: 150.611px; /* 109.4% */
       }
       h3 {
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 74.332px;
         font-style: normal;
@@ -3821,7 +3165,7 @@ i {
         line-height: 1.09;
       }
       p {
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 29.733px;
         font-style: normal;
@@ -3835,10 +3179,10 @@ i {
       right: 15px;
       bottom: 0;
       div {
-        background: #4570b6;
+        background: $primary;
       }
       & > div:nth-child(1) {
-        border-bottom: 1px solid #4570b6;
+        border-bottom: 1px solid $primary;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         padding: 8px 22px 0px 22px;
@@ -3900,7 +3244,7 @@ i {
     padding: 123px 0px;
     .icl-WhatChoose-title {
       max-width: 988px;
-      color: #4570b6;
+      color: $primary;
       font-family: "Noto Sans TC" !important;
       font-size: 30px;
       font-style: normal;
@@ -3932,7 +3276,7 @@ i {
           line-height: 1.95;
           letter-spacing: 4px;
           span {
-            color: #4570b6;
+            color: $primary;
             font-family: "Noto Sans TC";
             font-size: 20px;
             font-style: normal;
@@ -3946,14 +3290,12 @@ i {
   }
   .icl-btn {
     margin-top: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
     width: fit-content;
     padding: 10px 57px;
     border-radius: 100px;
-    border: 2px solid #4570b6;
-    background: #4570b6;
+    border: 2px solid $primary;
+    background: $primary;
     color: #fff;
     text-align: justify;
     font-family: "Noto Sans TC";
@@ -3969,7 +3311,7 @@ i {
     }
   }
   .new-pubile-title {
-    color: #4570b6;
+    color: $primary;
     font-family: "Noto Sans TC";
     font-size: 30px;
     font-style: normal;
@@ -4006,7 +3348,7 @@ i {
         top: -70px;
         right: 10px;
         text-align: right;
-        color: #4570b6;
+        color: $primary;
         font-family: "Noto Sans TC";
         font-size: 30px;
         font-style: normal;
@@ -4030,7 +3372,7 @@ i {
           & > a {
             display: block;
             width: 396px;
-            box-shadow: -4px 4px 0px 0px #4570b6;
+            box-shadow: -4px 4px 0px 0px $primary;
             position: relative;
             margin-bottom: 30px;
             span {
@@ -4044,7 +3386,7 @@ i {
               font-style: normal;
               font-weight: 700;
               line-height: 0.83;
-              background: #4570b6;
+              background: $primary;
               padding: 10px 15px;
             }
             i {
@@ -4055,9 +3397,7 @@ i {
               height: 53px;
               border-radius: 5px;
               background: #f00;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              @include center;
               svg {
                 width: 26px;
               }
@@ -4078,45 +3418,6 @@ i {
       left: 50%;
       transform: translateX(-50%);
       bottom: 0;
-    }
-  }
-  .CaseSharingV2 {
-    display: none;
-    width: fit-content;
-    margin: 0 auto;
-    & > div:nth-child(1) {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-      gap: 13px;
-      span {
-        color: #000;
-        text-align: center;
-        font-family: "Noto Sans TC";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 25px; /* 83.333% */
-      }
-    }
-    & > div:nth-child(2) {
-      margin-top: 49px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      a {
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 82px;
-        height: 82px;
-        border-radius: 50%;
-        border: 1px solid #4570b6;
-        svg {
-          width: 30px;
-        }
-      }
     }
   }
 }
