@@ -8,7 +8,7 @@ export default {
     return {
       browserTitle: "SMILE Pro Care 1.0/2.0 - 希瑪微笑矯視中心",
       browserTitleCn: "SMILE Pro Care 1.0/2.0 - 希玛微笑矫视中心",
-    }
+    };
   },
   head() {
     if (this.$i18n.locale === "en") {
@@ -204,17 +204,21 @@ export default {
       <p class="mb-10 lg:mb-12 text-xs lg:text-base text-[#4B5563] text-center">
         選擇升級護理服務，即享兩重額外福利，為您的矯視體驗加分！
       </p>
-      <div class="center gap-4 lg:gap-25">
+      <div class="center gap-4 lg:gap-[100px]">
         <div class="benefits-item">
           <span class="benefits-name">術後眼部<br />彩光護理</span>
           <div class="benefits-time">
-            <span>×</span><span>1</span><span>次</span>
+            <div class="flex items-end">
+              <span>×</span><span>1</span><span>次</span>
+            </div>
           </div>
         </div>
         <div class="benefits-item">
           <span class="benefits-name">術後覆診</span>
           <div class="benefits-time">
-            <span>×</span><span>5</span><span>次</span>
+            <div class="flex items-end">
+              <span>×</span><span>5</span><span>次</span>
+            </div>
           </div>
         </div>
       </div>
@@ -422,10 +426,12 @@ $scrollbar-thumb-hover: rgba(0, 0, 0, 0.35); // 悬停加深
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(10px, 3.2vw, 14px);
+    font-size: clamp(10px, 3.2vw, 16px);
+    line-height: 1;
+    letter-spacing: 0em;
     span {
       &:nth-child(2) {
-        font-size: clamp(12px, 4.5vw, 18px);
+        font-size: clamp(12px, 4.5vw, 20px);
       }
       &:nth-child(3) {
         font-weight: 400;

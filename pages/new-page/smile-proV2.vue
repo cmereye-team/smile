@@ -1,17 +1,61 @@
 <template>
   <div class="lasik">
-    <div
-      class="notice new-container px-4 min-[992px]:px-0 mb-2 lg:mb-3 rounded-lg"
-    >
-      <a href="javascript:void(0);" @click="scrollToPrice">
-        <img
-          src="https://statichk.cmermedical.com/smile/smileproV2/banner/smilepro-banner-01-v1.jpg"
-          alt="暑假限定"
-        />
+    <div class="notice new-container px-4 min-[992px]:px-0 mb-2 lg:mb-3">
+      <a
+        href="javascript:void(0);"
+        @click="scrollToPrice"
+        class="rounded-lg overflow-hidden flex relative min-h-[52px] md:h-auto"
+      >
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              https://statichk.cmermedical.com/smile/smileproV2/banner/smilepro-banner-01-v1.jpg
+            "
+          />
+          <img
+            src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-bg.webp"
+            alt="暑假限定"
+            class="h-full lg:h-auto w-full object-cover"
+          />
+        </picture>
+        <!-- 绝对定位层：限制可视区域 -->
+        <div
+          class="flex md:hidden absolute top-0 left-0 w-full h-full overflow-hidden items-center"
+        >
+          <div
+            class="marquee-wrapper relative flex w-full h-full overflow-hidden"
+          >
+            <div class="marquee-content flex items-center shrink-0">
+              <img
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-text.webp"
+                class="h-full w-auto object-contain pr-8"
+                alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-text.webp"
+                class="h-full w-auto object-contain pr-8"
+                alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
+              />
+            </div>
+            <div class="marquee-content flex items-center shrink-0">
+              <img
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-text.webp"
+                class="h-full w-auto object-contain pr-8"
+                alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
+              />
+              <img
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-text.webp"
+                class="h-full w-auto object-contain pr-8"
+                alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
+              />
+            </div>
+          </div>
+        </div>
       </a>
     </div>
     <div
-      class="container new-container mx-auto smile-NewBanner position-relative"
+      class="container new-container mx-auto smile-NewBanner position-relative px-4 xl:px-0 pb-8 md:pb-0"
     >
       <picture class="w-full">
         <source
@@ -164,10 +208,11 @@
           <div
             class="text-base lg:text-xl leading-[2.5] lg:leading-[2] lg:flex-1"
           >
-            <h2 class="title-normal">
-              SMILE PRO 2.0 微笑激光矯視
-            </h2>
-            <p class="text-text font-light mb-5">為了給您更精準的視覺體驗，希瑪矯視作為蔡司官方夥伴，已全面升級引入 <strong class="font-bold text-primary">SMILE® Pro 2.0</strong>！</p>
+            <h2 class="title-normal">SMILE PRO 2.0 微笑激光矯視</h2>
+            <p class="text-text font-light mb-5">
+              為了給您更精準的視覺體驗，希瑪矯視作為蔡司官方夥伴，已全面升級引入
+              <strong class="font-bold text-primary">SMILE® Pro 2.0</strong>！
+            </p>
             <div class="mb-5 lg:mb-10">
               <h3 class="text-primary font-bold text-left mb-0">
                 升級矯視數據平台
@@ -192,7 +237,7 @@
     </section>
     <!-- 為何選擇希瑪? -->
     <section class="icl-WhatChoose">
-      <h2 class="icl-WhatChoose-title">
+      <h2 class="icl-WhatChoose-title text-left">
         {{ $t("Correct.newIcl.section2.title") }}
       </h2>
       <div class="icl-WhatChoose-content-one container new-container">
@@ -325,9 +370,9 @@
         SMILE Pro 微笑激光矯視夏日禮遇
       </h2>
       <div
-        class="flex justify-center flex-col md:flex-row gap-5 lg:gap-8 mb-4 lg:mb-20 w-full"
+        class="flex justify-center items-center md:items-stretch flex-col md:flex-row gap-5 lg:gap-8 mb-4 lg:mb-20 w-full"
       >
-        <div class="price-item flex-1 flex flex-col max-w-xl text-white">
+        <div class="price-item flex-1 flex flex-col w-full max-w-xl text-white">
           <h3
             class="bg-[#042562] text-center text-lg lg:text-3xl font-bold tracking-widest py-2 lg:py-3 w-[70%] mx-auto min-w-[256px] rounded-t-xl lg:rounded-t-3xl"
           >
@@ -350,8 +395,11 @@
               <div
                 class="bg-[#033994] font-bold rounded-xl lg:rounded-3xl pt-2 pb-5 px-4 lg:pt-3 lg:pb-8 lg:px-7 mb-6 lg:mb-9"
               >
-                <p class="mb-1 lg:mb-2 flex justify-between item-end tracking-normal">
-                  <span class="text-sm lg:text-xl font-en">SMILE Pro 2.0 CARE</span
+                <p
+                  class="mb-1 lg:mb-2 flex justify-between item-end tracking-normal"
+                >
+                  <span class="text-sm lg:text-xl font-en"
+                    >SMILE Pro 2.0 CARE</span
                   ><span class="text-base lg:text-2xl">HK$26,350</span>
                 </p>
                 <p
@@ -422,12 +470,12 @@
               >
                 <span>查看矯視費用詳情</span>
                 <!-- prettier-ignore -->
-                <svg class="w-4 lg:w-6" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M3.18 28.804 28.323 3.661" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M6.844 2.862H29.18v21.6" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
+                <svg class="w-5 lg:w-7" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M3.18 28.804 28.323 3.661" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M6.844 2.862H29.18v21.6" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
               </NuxtLink>
             </div>
           </div>
         </div>
-        <div class="price-item flex-1 flex flex-col max-w-xl">
+        <div class="price-item flex-1 flex flex-col w-full max-w-xl">
           <h3
             class="py-2 text-center text-lg lg:text-3xl font-bold tracking-widest lg:py-3 w-[70%] mx-auto min-w-[256px] bg-gradient-to-r from-[#528BE9] to-[#4D80D4] text-white rounded-t-xl lg:rounded-t-3xl"
           >
@@ -453,8 +501,11 @@
               <div
                 class="bg-[#f5f8fc] font-bold rounded-xl lg:rounded-3xl pt-2 pb-5 px-4 lg:pt-3 lg:pb-8 lg:px-7 border border-[#4570B666]"
               >
-                <p class="text-primary flex justify-between item-end tracking-normal">
-                  <span class="text-sm lg:text-xl font-en">SMILE Pro 1.0 CARE</span
+                <p
+                  class="text-primary flex justify-between item-end tracking-normal"
+                >
+                  <span class="text-sm lg:text-xl font-en"
+                    >SMILE Pro 1.0 CARE</span
                   ><span class="text-base lg:text-2xl">HK$23,500 </span>
                 </p>
                 <p
@@ -480,7 +531,7 @@
               >
                 <span>查看矯視費用詳情</span>
                 <!-- prettier-ignore -->
-                <svg class="w-4 lg:w-6" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M3.18 28.804 28.323 3.661" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M6.844 2.862H29.18v21.6" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
+                <svg class="w-5 lg:w-7" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M3.18 28.804 28.323 3.661" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M6.844 2.862H29.18v21.6" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
               </NuxtLink>
             </div>
           </div>
@@ -1240,7 +1291,14 @@ body {
     opacity: 0;
   }
 }
-
+@keyframes marquee-smooth {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .notice {
   position: relative;
   :after {
@@ -1262,6 +1320,16 @@ body {
     z-index: 2;
     mix-blend-mode: overlay;
     pointer-events: none;
+  }
+  .marquee-wrapper {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .marquee-content {
+    display: flex;
+    min-width: 100%;
+    animation: marquee-smooth 20s linear infinite;
   }
 }
 :deep(.share-img) {
@@ -1441,6 +1509,8 @@ i {
     padding: 12px 12px;
     width: 100%;
     max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: 1024px) {
       border-radius: 20px;
       font-size: 36px;
@@ -1472,16 +1542,7 @@ i {
 }
 @media screen and (max-width: 1140px) {
   .smile-NewBanner {
-    padding: 0 15px;
-    // margin-top: 150px;
-    height: 203px;
     position: relative;
-    // img {
-    //   width: 200px;
-    //   position: absolute;
-    //   top: -59px;
-    //   right: 64px;
-    // }
     .smile-NewBanner-Title {
       position: absolute;
       bottom: 58px;
@@ -1515,8 +1576,8 @@ i {
     }
     .smile-NewBanner-Tip {
       position: absolute;
-      right: 15px;
-      bottom: 0;
+      right: 16px;
+      bottom: -32px;
       div {
         background: $primary;
       }
@@ -1838,12 +1899,12 @@ i {
 @media screen and (max-width: 992px) {
   .smile-newCenter {
     .smile-newCenter-menu {
-      padding: 0 15px;
+      padding: 0 12px;
       display: flex;
       justify-content: start;
       align-items: center;
       letter-spacing: 0.36px;
-      padding-left: 28px;
+      // padding-left: 28px;
       color: #6d6e71;
       a {
         color: #6d6e71;
@@ -1862,7 +1923,7 @@ i {
   }
   // 四大特点
   .smilepro-four-feature {
-    padding: 0 15px;
+    padding: 0 12px;
     .smilepro-four-feature-Box {
       max-width: 332px;
       margin: 0 auto;
@@ -2224,7 +2285,7 @@ i {
 // 小于390
 @media screen and (max-width: 389px) {
   .smile-NewBanner {
-    padding: 0 15px;
+    padding: 0 12px;
     // margin-top: 20.51vw;
     // height: 52.5vw;
     aspect-ratio: 1 / 1;
@@ -2300,7 +2361,7 @@ i {
   }
   .smile-newCenter {
     .smile-newCenter-menu {
-      padding: 0 15px;
+      padding: 0 12px;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -2393,7 +2454,7 @@ i {
   }
   // 四大特点
   .smilepro-four-feature {
-    padding: 0 15px;
+    padding: 0 12px;
     .smilepro-four-feature-Box {
       max-width: 85.13vw;
       margin: 0 auto;
