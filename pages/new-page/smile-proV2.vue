@@ -79,14 +79,14 @@
         <div class="lg:w-1/2 px-3 lg:px-0">
           <div class="new-container">
             <div class="flex items-end gap-2 lg:gap-3 mb-4 lg:mb-6">
-              <h2
+              <h1
                 class="text-[clamp(14px,4.44vw,30px)] lg:text-3xl font-bold text-primary whitespace-nowrap mb-0"
               >
                 <span class="font-en tracking-normal">SMILE®Pro</span>
                 <strong class="font-black">{{
                   $t("smile_proV2.CenterTile")
                 }}</strong>
-              </h2>
+              </h1>
               <img
                 src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-full-upgraded-v2.svg"
                 alt="全面升級"
@@ -164,21 +164,22 @@
           <div
             class="text-base lg:text-xl leading-[2.5] lg:leading-[2] lg:flex-1"
           >
-            <h1 class="title-normal mb-5 text-center lg:text-left">
+            <h2 class="title-normal">
               SMILE PRO 2.0 微笑激光矯視
-            </h1>
+            </h2>
+            <p class="text-text font-light mb-5">為了給您更精準的視覺體驗，希瑪矯視作為蔡司官方夥伴，已全面升級引入 <strong class="font-bold text-primary">SMILE® Pro 2.0</strong>！</p>
             <div class="mb-5 lg:mb-10">
-              <h2 class="text-primary font-bold text-left mb-0">
+              <h3 class="text-primary font-bold text-left mb-0">
                 升級矯視數據平台
-              </h2>
+              </h3>
               <p class="text-text font-light">
                 全新配置虹膜數據測量儀器，捕捉每雙眼睛獨一無二的虹膜紋路。透過新增的激光矯視數據平台，同步個人矯視參數至激光設備，簡化整體矯視流程，同時提升運作效率與數據精準度。
               </p>
             </div>
             <div>
-              <h2 class="text-primary font-bold text-left mb-0">
+              <h3 class="text-primary font-bold text-left mb-0">
                 虹膜辨識散光導航
-              </h2>
+              </h3>
               <p class="text-text font-light">
                 激光設備的智能輔助系統同步升級，進⼀步強化散光矯正的精準度與穩定性。SMILE
                 pro 2.0
@@ -349,12 +350,12 @@
               <div
                 class="bg-[#033994] font-bold rounded-xl lg:rounded-3xl pt-2 pb-5 px-4 lg:pt-3 lg:pb-8 lg:px-7 mb-6 lg:mb-9"
               >
-                <p class="mb-1 lg:mb-2 flex justify-between item-end">
-                  <span class="text-sm lg:text-xl">SMILE Pro 2.0 CARE</span
+                <p class="mb-1 lg:mb-2 flex justify-between item-end tracking-normal">
+                  <span class="text-sm lg:text-xl font-en">SMILE Pro 2.0 CARE</span
                   ><span class="text-base lg:text-2xl">HK$26,350</span>
                 </p>
                 <p
-                  class="mb-3 lg:mb-6 text-[13px] lg:text-xl flex justify-between item-end"
+                  class="mb-3 lg:mb-6 text-[13px] lg:text-xl flex justify-between item-end tracking-normal"
                 >
                   <span>EPS用戶</span><span>HK$25,850<sup>#</sup></span>
                 </p>
@@ -452,12 +453,12 @@
               <div
                 class="bg-[#f5f8fc] font-bold rounded-xl lg:rounded-3xl pt-2 pb-5 px-4 lg:pt-3 lg:pb-8 lg:px-7 border border-[#4570B666]"
               >
-                <p class="text-primary flex justify-between item-end">
-                  <span class="text-sm lg:text-xl">SMILE Pro 1.0 CARE</span
+                <p class="text-primary flex justify-between item-end tracking-normal">
+                  <span class="text-sm lg:text-xl font-en">SMILE Pro 1.0 CARE</span
                   ><span class="text-base lg:text-2xl">HK$23,500 </span>
                 </p>
                 <p
-                  class="text-text text-[13px] lg:text-xl flex justify-between item-end"
+                  class="text-text text-[13px] lg:text-xl flex justify-between item-end tracking-normal"
                 >
                   <span>EPS用戶</span><span>HK$23,000<sup>#</sup></span>
                 </p>
@@ -502,10 +503,10 @@
     <!-- 表格 -->
     <section class="smilepro-difference mb-10 lg:mb-[264px]">
       <div class="smilepro-difference-title">
-        <div>
+        <h2>
           SMILE/SMILE PRO/ICL<br class="d-lg-none" />
           大不同
-        </div>
+        </h2>
       </div>
       <table class="table custom-comparison-table">
         <thead>
@@ -697,7 +698,7 @@
     <!-- 用家见证 -->
     <section class="smile-pro-evaluateV2 overflow-hidden">
       <div class="smile-pro-evaluateV2-Box">
-        <div class="smile-pro-evaluateV2-Box-title">用家見證</div>
+        <h2 class="smile-pro-evaluateV2-Box-title">用家見證</h2>
         <div class="smile-pro-evaluateV2-Box-content">
           <div
             v-swiper:mySwiper="swiperOption1"
@@ -1937,7 +1938,7 @@ i {
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
-      & > div {
+      & > h2 {
         display: inline-block;
         color: $primary;
         text-align: center;
@@ -2467,7 +2468,7 @@ i {
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
-      & > div {
+      & > h2 {
         display: inline-block;
         color: $primary;
         text-align: center;
@@ -2909,7 +2910,7 @@ i {
     .smilepro-difference-title {
       display: flex;
       justify-content: center;
-      & > div {
+      & > h2 {
         display: inline-block;
         color: $primary;
         font-family: "Noto Sans TC";

@@ -4,6 +4,12 @@ export default {
   components: {
     ShareSection,
   },
+  data() {
+    return {
+      browserTitle: "SMILE Pro Care 1.0/2.0 - 希瑪微笑矯視中心",
+      browserTitleCn: "SMILE Pro Care 1.0/2.0 - 希玛微笑矫视中心",
+    }
+  },
   head() {
     if (this.$i18n.locale === "en") {
       return {
@@ -118,7 +124,9 @@ export default {
     </section>
     <section class="comparison">
       <div class="max-w-6xl mx-auto">
-        <h2 class="care-title flex flex-col lg:flex-row gap-1">
+        <h2
+          class="care-title center flex-col lg:flex-row gap-1 whitespace-nowrap"
+        >
           <span>SMILE Pro Care 1.0/2.0與</span>
           <span>SMILE Pro 1.0/2.0有什麼分別？</span>
         </h2>
@@ -276,6 +284,7 @@ $scrollbar-thumb-hover: rgba(0, 0, 0, 0.35); // 悬停加深
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0.025em;
   @media screen and (min-width: 1024px) {
     font-size: 36px;
     line-height: 40px;
@@ -328,17 +337,17 @@ $scrollbar-thumb-hover: rgba(0, 0, 0, 0.35); // 悬停加深
       min-width: 436px;
       white-space: nowrap;
     }
-    thead th {
-      height: 100px;
-    }
-    tbody td {
-      height: 64px;
-    }
     thead th,
     tbody td {
       border-bottom: 1px solid #d0d0d0;
       padding-left: 3vw;
       padding-right: 3vw;
+    }
+    thead th {
+      height: 100px;
+    }
+    tbody td {
+      height: 64px;
     }
     thead th:nth-child(1),
     tbody td:nth-child(1) {
@@ -429,24 +438,38 @@ $scrollbar-thumb-hover: rgba(0, 0, 0, 0.35); // 悬停加深
     background-image: url("https://statichk.cmermedical.com/smile/smileProCare/banner-smileprocare-pc-v1.webp");
     height: 600px;
     overflow: hidden;
-  }
-  .banner .button-round {
-    width: 336px;
-    height: 336px;
-    box-shadow: 10px 10px 0 0 rgba(99, 107, 122, 0.75);
-    left: #{"max((100vw - 1320px) / 2, 20px)"};
-    bottom: -140px;
-    span {
-      &:first-child {
-        font-size: 44px;
+    .button-round {
+      box-shadow: 10px 10px 0 0 rgba(99, 107, 122, 0.75);
+      left: #{"max((100vw - 1320px) / 2, 20px)"};
+      bottom: -140px;
+      span {
+        &:first-child {
+          font-size: 44px;
+        }
+        &:last-child {
+          font-size: 30px;
+        }
       }
-      &:last-child {
-        font-size: 30px;
+    }
+  }
+  .comparison {
+    .care-table {
+      thead th {
+        height: 152px;
+      }
+      tbody td {
+        height: 80px;
       }
     }
   }
 }
 @media screen and (min-width: 1024px) {
+  .banner {
+    .button-round {
+      width: 336px;
+      height: 336px;
+    }
+  }
   .intro {
     height: 344px;
     display: flex;
@@ -464,7 +487,7 @@ $scrollbar-thumb-hover: rgba(0, 0, 0, 0.35); // 悬停加深
       thead th {
         font-size: 20px;
         height: 184px;
-        width: 432px;
+        // width: 432px;
       }
       thead th:nth-child(1) {
         font-size: 26px;
