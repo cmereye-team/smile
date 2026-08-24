@@ -1,63 +1,65 @@
 <template>
-  <section class="UserShare">
-    <div class="new-container container UserShareContainer">
-      <div class="UserShareBox">
-        <div class="UserShareBox-title">
-          <h3>{{ title }}</h3>
-          <div class="UserShareBox-title-text">
-            <img
-              class="d-block wow fadeInLeft"
-              decoding="async"
-              src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png"
-              alt=""
-              loading="lazy"
-              width="100%"
-              height="100%"
-              srcset="
-                https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 400w,
-                https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 640w,
-                https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png
-              "
-              sizes=" (max-width: 992px) 100vw,1216px"
-            />
-            <p>聽聽各位真實用家親身感受</p>
+  <section class="UserShare overflow-hidden">
+    <div class="bg">
+      <div class="new-container container UserShareContainer">
+        <div class="UserShareBox">
+          <div class="UserShareBox-title">
+            <h3>{{ title }}</h3>
+            <div class="UserShareBox-title-text">
+              <img
+                class="d-block wow fadeInLeft"
+                decoding="async"
+                src="https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png"
+                alt=""
+                loading="lazy"
+                width="100%"
+                height="100%"
+                srcset="
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 400w,
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-mb.svg 640w,
+                  https://statichk.cmermedical.com/smile/VisionCorrectionCenter/userShare/boxShare-newtitle-pc.png
+                "
+                sizes=" (max-width: 992px) 100vw,1216px"
+              />
+              <p>聽聽各位真實用家親身感受</p>
+            </div>
           </div>
-        </div>
 
-        <ul class="UserShareBox-list" ref="UserShareBoxlist">
-          <li
-            class="UserShareBox-list-item"
-            v-for="(item, index) in userShare"
-            :key="index"
-          >
-            <a
-              class="UserShareBox-list-item-link"
-              :href="item.href"
-              target="_blank"
-              @click.prevent="handleLinkClick(item, $event)"
+          <ul class="UserShareBox-list" ref="UserShareBoxlist">
+            <li
+              class="UserShareBox-list-item"
+              v-for="(item, index) in userShare"
+              :key="index"
             >
-              <img :src="item.img" alt="" />
-              <span
-                class="UserShareBox-list-item-link-title"
-                :style="{ backgroundColor: getColor(item.type) }"
-                >{{ item.type }}</span
+              <a
+                class="UserShareBox-list-item-link"
+                :href="item.href"
+                target="_blank"
+                @click.prevent="handleLinkClick(item, $event)"
               >
-              <div class="UserShareBox-list-item-link-text">
-                <p v-for="(text, i) in item.text" :key="i">
-                  {{ text }}
-                </p>
-                <i :style="{ backgroundColor: getColor(item.type) }"></i>
-                <div class="UserShareBox-list-item-link-text-name">
-                  <span>{{ item.nameCn }}</span
-                  >&nbsp;
-                  <span class="UserShareBox-list-item-link-text-name-en">{{
-                    item.nameEn
-                  }}</span>
+                <img :src="item.img" alt="" />
+                <span
+                  class="UserShareBox-list-item-link-title"
+                  :style="{ backgroundColor: getColor(item.type) }"
+                  >{{ item.type }}</span
+                >
+                <div class="UserShareBox-list-item-link-text">
+                  <p v-for="(text, i) in item.text" :key="i">
+                    {{ text }}
+                  </p>
+                  <i :style="{ backgroundColor: getColor(item.type) }"></i>
+                  <div class="UserShareBox-list-item-link-text-name">
+                    <span>{{ item.nameCn }}</span
+                    >&nbsp;
+                    <span class="UserShareBox-list-item-link-text-name-en">{{
+                      item.nameEn
+                    }}</span>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -163,12 +165,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bg {
+  background-color: #f2f7ff;
+}
 @media screen and (max-width: 992px) {
   .UserShare {
     width: 100vw;
-    background: #f2f7ff;
-
-    margin-top: 40px;
+    padding-top: 40px;
     .UserShareContainer {
       margin: 0 auto;
       .UserShareBox {
@@ -240,7 +243,11 @@ export default {
               content: "";
               position: absolute;
               inset: 0;
-              background: linear-gradient(to bottom,transparent,rgba(0,0,0,0.2));
+              background: linear-gradient(
+                to bottom,
+                transparent,
+                rgba(0, 0, 0, 0.2)
+              );
               pointer-events: none;
             }
             .UserShareBox-list-item-link {
@@ -323,8 +330,7 @@ export default {
   // 用户分享
   .UserShare {
     // width: 100vw;
-    background: #f2f7ff;
-    margin-top: 100px;
+    padding-top: 100px;
     .UserShareContainer {
       margin: 0 auto;
       .UserShareBox {
@@ -413,7 +419,11 @@ export default {
               content: "";
               position: absolute;
               inset: 0;
-              background: linear-gradient(to bottom,transparent,rgba(0,0,0,0.2));
+              background: linear-gradient(
+                to bottom,
+                transparent,
+                rgba(0, 0, 0, 0.2)
+              );
               pointer-events: none;
             }
             .UserShareBox-list-item-link {

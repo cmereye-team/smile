@@ -1018,26 +1018,8 @@ export default {
             class="more-button"
           >
             <span>預約諮詢</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="29"
-              viewBox="0 0 30 29"
-              fill="none"
-            >
-              <path
-                d="M3.19922 26.0592L25.8278 3.43066"
-                stroke="white"
-                stroke-width="5.4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M6.49609 2.71094H26.5987V22.1509"
-                stroke="white"
-                stroke-width="4.86"
-                stroke-linecap="round"
-              />
-            </svg>
+            <!-- prettier-ignore -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none"><path d="M3.2 26.06 25.827 3.43" stroke="#fff" stroke-width="5.4" stroke-linecap="round"/><path d="M6.496 2.71H26.6v19.44" stroke="#fff" stroke-width="4.86" stroke-linecap="round"/></svg>
           </a>
         </section>
         <section class="xtra" ref="xtraAnimateBox">
@@ -1084,26 +1066,8 @@ export default {
             class="more-button"
           >
             <span>了解更多</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="29"
-              viewBox="0 0 30 29"
-              fill="none"
-            >
-              <path
-                d="M3.19922 26.0592L25.8278 3.43066"
-                stroke="white"
-                stroke-width="5.4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M6.49609 2.71094H26.5987V22.1509"
-                stroke="white"
-                stroke-width="4.86"
-                stroke-linecap="round"
-              />
-            </svg>
+            <!-- prettier-ignore -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none"><path d="M3.2 26.06 25.827 3.43" stroke="#fff" stroke-width="5.4" stroke-linecap="round"/><path d="M6.496 2.71H26.6v19.44" stroke="#fff" stroke-width="4.86" stroke-linecap="round"/></svg>
           </a>
         </section>
         <section
