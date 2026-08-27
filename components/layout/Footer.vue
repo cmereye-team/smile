@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-03-25 16:47:42
- * @LastEditTime: 2026-07-14 09:42:46
+ * @LastEditTime: 2026-08-27 15:44:28
  * @FilePath: /components/layout/Footer.vue
  * @Description: 统一页脚
 -->
@@ -969,8 +969,8 @@ a {
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                [href="/smilePro"] {
-                  letter-spacing: 0em;
+                &[href="/smilePro"] {
+                  letter-spacing: 0.025em;
                 }
               }
             }

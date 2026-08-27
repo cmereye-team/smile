@@ -884,7 +884,7 @@ export default {
         {
           image:
             "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0201-v1.webp",
-          text: "以「AI 虹膜自動追蹤」與視軸導航，自動校正散光定位",
+          text: "以「虹膜辨識」功能，即時追蹤並⾃動校正散光軸向",
         },
         {
           image:
@@ -906,7 +906,7 @@ export default {
         {
           image:
             "https://statichk.cmermedical.com/smile/smileproV2/smilepro-step-0101-v1.webp",
-          text: "以「視軸輔助導航」配合人手調校",
+          text: "以「視軸輔助導航」功能，精準輔助人手鎖定視軸中心點",
         },
         {
           image:
