@@ -32,7 +32,7 @@ module.exports = {
       orthopedicServicesChild_2: "老花矯視",
       orthopedicServicesChild_3: "LASIK 激光矯視",
       orthopedicServicesChild_4: "ICL植入式隱形眼鏡",
-      orthopedicServicesChild_5: "SMILE Pro 2.0微笑激光矯視",
+      orthopedicServicesChild_5: "SMILE Pro 1.0/2.0微笑激光矯視",
       diagnosisInstructionsChild_1: "眼睛檢查及矯視前",
       diagnosisInstructionsChild_2: "矯視流程",
       diagnosisInstructionsChild_3: "矯視後覆診",
