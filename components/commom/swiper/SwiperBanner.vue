@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-26 11:48:06
- * @LastEditTime: 2026-08-03 11:09:30
+ * @LastEditTime: 2026-08-31 17:50:57
  * @FilePath: /components/commom/swiper/SwiperBanner.vue
  * @Description: 轮播图Banner
 -->
@@ -50,6 +50,19 @@ export default {
         console.error(error);
       }
     },
+    isExternal(url) {
+      // 如果为空或只是 # 开头，视为内部
+      if (!url || url.startsWith("#")) return false;
+
+      // 任何带协议的都视为外部（包含 http/https/tel/mailto/whatsapp: 等）
+      return (
+        /^[a-z][a-z0-9+.-]*:\/\//i.test(url) ||
+        /^\/\//.test(url) || // 协议相对链接 //example.com
+        url.startsWith("tel:") ||
+        url.startsWith("mailto:") ||
+        url.startsWith("whatsapp:")
+      );
+    },
   },
   watch: {
     // 监听 gid 的变化，一旦父组件传过来的 gid 变了，重新获取列表
@@ -75,11 +88,15 @@ export default {
         ref="bannerSwiper"
       >
         <div class="swiper-wrapper">
-          <nuxt-link
+          <component
             v-for="(banner, index) in bannerLists"
             :key="`nuxt-${index}-${banner.id}`"
+            :is="isExternal(banner.link) ? 'a' : 'NuxtLink'"
+            :href="isExternal(banner.link) ? banner.link : undefined"
+            :to="!isExternal(banner.link) ? banner.link : undefined"
+            :target="isExternal(banner.link) ? '_blank' : undefined"
+            :rel="isExternal(banner.link) ? 'noopener noreferrer' : undefined"
             class="swiper-slide"
-            :to="localePath(banner.link)"
             :data-banner-title="banner.subtitle"
             :data-banner-id="index + 1"
           >
@@ -93,7 +110,7 @@ export default {
                 :title="banner.subtitle"
               />
             </picture>
-          </nuxt-link>
+          </component>
         </div>
       </div>
     </div>
