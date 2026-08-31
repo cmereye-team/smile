@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-08-31 17:31:04
+ * @LastEditTime: 2026-08-31 17:53:58
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -50,7 +50,7 @@
           href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-14)%E5%B8%8C%E7%91%AA%E7%9F%AF%E8%A6%96"
           target="_blank"
           rel="noopener noreferrer"
-          class="bg-primary w-fit mx-auto flex justify-center items-center gap-2 py-4 px-8 lg:py-7 lg:px-[56px] rounded-full my-10 md:my-20 lg:mt-[156px] lg:mb-[136px]"
+          class="bg-primary mx-auto flex justify-center items-center gap-2 w-[168px] h-12 lg:w-[300px] lg:h-[88px] rounded-full my-10 md:my-20 lg:mt-[156px] lg:mb-[136px]"
         >
           <span
             class="text-white text-xl lg:text-4xl font-bold leading-none tracking-wider"
@@ -153,12 +153,6 @@ body {
   overflow-x: hidden;
   -ms-overflow-style: none;
 }
-.fee-wrap {
-  height: 100vh;
-  overflow-y: auto;
-  scroll-padding-top: 280px;
-  scroll-behavior: smooth;
-}
 .fee-text {
   position: relative;
   &::before {
@@ -179,12 +173,6 @@ body {
     :deep(h2) {
       margin-bottom: 15px;
     }
-  }
-  .fee-wrap {
-    height: 100vh;
-    overflow-y: auto;
-    scroll-padding-top: 120px;
-    scroll-behavior: smooth;
   }
 }
 @media screen and (min-width: 768px) {
