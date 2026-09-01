@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-06-19 09:34:21
- * @LastEditTime: 2026-09-01 10:27:10
+ * @LastEditTime: 2026-09-01 10:31:31
  * @FilePath: /pages/new-page/new-feeV2.vue
  * @Description: 收费详情
 -->
@@ -705,12 +705,6 @@ body {
   overflow-x: hidden;
   -ms-overflow-style: none;
 }
-.fee-wrap {
-  height: 100vh;
-  overflow-y: auto;
-  scroll-padding-top: 280px;
-  scroll-behavior: smooth;
-}
 @media screen and (min-width: 768px) {
   .head-bg {
     top: 0;
@@ -718,14 +712,6 @@ body {
     width: 100%;
     background: #ffffff;
     z-index: 102;
-  }
-}
-@media screen and (max-width: 768px) {
-  .fee-wrap {
-    height: 100vh;
-    overflow-y: auto;
-    scroll-padding-top: 120px;
-    scroll-behavior: smooth;
   }
 }
 @media screen and (min-width: 768px) {
