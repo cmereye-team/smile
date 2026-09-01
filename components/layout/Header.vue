@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-22 09:53:50
- * @LastEditTime: 2026-04-22 14:13:14
+ * @LastEditTime: 2026-09-01 17:20:21
  * @FilePath: /components/layout/Header.vue
  * @Description: 统一页头
 -->
@@ -71,7 +71,7 @@ export default {
           offset: 200,
         }).init();
       }
-      // this.taginits();
+      this.taginits();
     });
     // 获取屏幕宽度
     window.addEventListener("resize", () => {
