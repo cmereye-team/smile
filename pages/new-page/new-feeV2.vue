@@ -33,7 +33,7 @@
               type="image/webp" />
             <img
               src="https://statichk.cmermedical.com/smile/feeV2/fee-01-v1.jpg"
-              alt=""
+              alt="希瑪矯視服務收費詳情"
           /></picture>
           <picture>
             <source
@@ -43,7 +43,7 @@
               type="image/webp" />
             <img
               src="https://statichk.cmermedical.com/smile/feeV2/fee-02-v1.jpg"
-              alt=""
+              alt="希瑪老花矯視服務收費詳情"
           /></picture>
         </div>
         <a
