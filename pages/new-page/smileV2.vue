@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-08-14 08:56:29
- * @LastEditTime: 2026-04-22 13:58:19
+ * @LastEditTime: 2026-09-17 09:37:42
  * @FilePath: /pages/new-page/smileV2.vue
  * @Description: 矫视服务-微笑激光矫视，第二版
 -->
@@ -617,7 +617,7 @@ export default {
                 name: "SMILE矯正原理",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用Carl Zeiss VisuMax激光最新3.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。",
+                  text: "SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE 微笑矯視使用Carl Zeiss VisuMax激光最新2.0系統，原理是在不用打開角膜瓣的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人矯正近視、散光及老花問題，減低對眼鏡的依賴。",
                 },
               },
               {
@@ -722,7 +722,7 @@ export default {
           <p>
             SMILE微笑矯視是一項突破性的微創矯正技術。本中心的 SMILE
             微笑矯視使用<span>Carl Zeiss VisuMax</span
-            >激光最新3.0系統，原理是在<span>不用打開角膜瓣</span>的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人<span>矯正近視、散光及老花</span>問題，減低對眼鏡的依賴。
+            >激光最新2.0系統，原理是在<span>不用打開角膜瓣</span>的情況下，以全飛秒激光掃描製作角膜組織膜片，再通過2-2.5mm的小切口把膜片取出，以達到視力矯正的效果。此技術可以為客人<span>矯正近視、散光及老花</span>問題，減低對眼鏡的依賴。
           </p>
           <a
             href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-04)%20SMILE%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2"
@@ -731,26 +731,8 @@ export default {
             class="more-button"
           >
             <span>預約諮詢</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="29"
-              viewBox="0 0 30 29"
-              fill="none"
-            >
-              <path
-                d="M3.19922 26.0597L25.8278 3.43115"
-                stroke="currentColor"
-                stroke-width="5.4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M6.49609 2.71118H26.5987V22.1512"
-                stroke="currentColor"
-                stroke-width="4.86"
-                stroke-linecap="round"
-              />
-            </svg>
+            <!-- prettier-ignore -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none"><path d="M3.2 26.06 25.827 3.43" stroke="currentColor" stroke-width="5.4" stroke-linecap="round"/><path d="M6.496 2.711H26.6v19.44" stroke="currentColor" stroke-width="4.86" stroke-linecap="round"/></svg>
           </a>
         </section>
         <section class="steps">
@@ -777,26 +759,8 @@ export default {
                   <span class="block md:text-3xl font-bold font-en">SMILE</span>
                   矯正步驟
                 </h2>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="20"
-                  viewBox="0 0 19 20"
-                  fill="none"
-                >
-                  <path
-                    d="M0.726577 1.2312L17.593 18.0976"
-                    stroke="currentColor"
-                    stroke-width="1.34165"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M18.1296 3.68896L18.1296 18.6727L3.63983 18.6727"
-                    stroke="currentColor"
-                    stroke-width="1.34165"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                <!-- prettier-ignore -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none"><path d="m.727 1.231 16.866 16.867m.537-14.409v14.984H3.64" stroke="currentColor" stroke-width="1.342" stroke-linecap="round"/></svg>
               </div>
               <div class="steps-content">
                 <img
@@ -888,25 +852,8 @@ export default {
                   class="md:w-auto bg-[#4570B6] text-white px-10 py-4 md:py-5 md:px-[100px] rounded-full text-2xl md:text-4xl font-bold flex items-center justify-center gap-3"
                 >
                   查看矯視費用詳情
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]"
-                    viewBox="0 0 34 34"
-                    fill="none"
-                  >
-                    <path
-                      d="M3.18018 30.3632L29.8334 3.70996"
-                      stroke="white"
-                      stroke-width="6.36042"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M7.06396 2.8623H30.742V25.7598"
-                      stroke="white"
-                      stroke-width="5.72438"
-                      stroke-linecap="round"
-                    />
-                  </svg>
+                  <!-- prettier-ignore -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[13px] w-[13px] md:h-[26px] md:w-[26px]" viewBox="0 0 34 34" fill="none"><path d="M3.18 30.363 29.833 3.71" stroke="#fff" stroke-width="6.36" stroke-linecap="round"/><path d="M7.064 2.862h23.678V25.76" stroke="#fff" stroke-width="5.724" stroke-linecap="round"/></svg>
                 </a>
                 <div
                   class="text-[#6D6E71] mt-2 md:mt-4 text-center font-light text-slate-400 text-base md:text-2xl leading-relaxed"
