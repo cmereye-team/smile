@@ -10,12 +10,12 @@
           <source
             media="(min-width: 768px)"
             srcset="
-              https://statichk.cmermedical.com/smile/smileproV2/smilepro-banner-02-pc-v1.webp
+              https://statichk.cmermedical.com/smile/smileproV2/smilepro-banner-03-pc-v1.webp
             "
           />
           <img
-            src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-banner-02-mb-v1.webp"
-            alt="秋日限定"
+            src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-banner-03-mb-v1.webp"
+            alt="冬日限定"
             class="h-full lg:h-auto w-full object-cover"
           />
         </picture>
@@ -28,24 +28,24 @@
           >
             <div class="marquee-content flex items-center shrink-0">
               <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-02-v3.webp"
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-03-v2.webp"
                 class="h-full w-auto object-contain pr-8"
                 alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
               />
               <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-02-v3.webp"
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-03-v2.webp"
                 class="h-full w-auto object-contain pr-8"
                 alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
               />
             </div>
             <div class="marquee-content flex items-center shrink-0">
               <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-02-v3.webp"
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-03-v2.webp"
                 class="h-full w-auto object-contain pr-8"
                 alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
               />
               <img
-                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-02-v3.webp"
+                src="https://statichk.cmermedical.com/smile/smileproV2/smilepro-notice-mb-03-v2.webp"
                 class="h-full w-auto object-contain pr-8"
                 alt="立即了解SMILE/SMILE PRO 1.0&2.0 微笑激光矯視"
               />
@@ -58,7 +58,7 @@
       class="container new-container mx-auto smile-NewBanner position-relative px-4 xl:px-0 pb-8 md:pb-0"
     >
       <a
-        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2%E7%A7%8B%E6%97%A5%E5%84%AA%E6%83%A0"
+        href="https://api.whatsapp.com/send/?phone=85269408569&text=%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84(W-05)%20SMILE%20Pro%E7%9F%AF%E8%A6%96%E8%A1%93%E5%89%8D%E6%AA%A2%E6%9F%A5%E5%8F%8A%E8%AB%AE%E8%A9%A2%E5%86%AC%E6%97%A5%E5%84%AA%E6%83%A0"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -66,25 +66,12 @@
           <source
             media="(min-width: 768px)"
             srcset="
-              https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-02-v1.webp
+              https://static.cmermedical.com.hk/smile/uploads/2026/11/11/gnjyyi02_iwEZAqNqcGcDAQTRBQAF0QHgBrDC7hFoTYc2XwrCvXZrxcoBB9.webp
             "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-pc-02-v1.jpg
-            "
-          />
-          <source
-            srcset="
-              https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-02-v1.webp
-            "
-            type="image/webp"
           />
           <img
-            src="https://statichk.cmermedical.com/smile/smileproV2/banner/banner-smilepro-mb-02-v1.jpg"
-            alt="SMILE PRO 1.0/2.0 秋日最新價格"
+            src="https://static.cmermedical.com.hk/smile/uploads/2026/11/11/trqms04n_iwEZAqNqcGcDAQTRAUsF0QFLBrBoxJln_el2TgrCvXZrxcoAB9.webp"
+            alt="SMILE PRO 1.0/2.0 冬日最新價格"
             title="秋日限定·睛采視界"
             class="w-full rounded-lg"
           />
